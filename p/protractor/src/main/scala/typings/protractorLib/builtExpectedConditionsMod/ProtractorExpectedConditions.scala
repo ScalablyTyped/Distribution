@@ -100,7 +100,7 @@ class ProtractorExpectedConditions protected () extends js.Object {
     * @returns {!function} An expected condition that returns a promise which
     *     evaluates to the result of the logical chain.
     */
-  def `logicalChain_`(defaultRet: scala.Boolean, fns: js.Array[js.Function]): js.Function = js.native
+  def logicalChain_(defaultRet: scala.Boolean, fns: js.Array[js.Function]): js.Function = js.native
   /**
     * Negates the result of a promise.
     *

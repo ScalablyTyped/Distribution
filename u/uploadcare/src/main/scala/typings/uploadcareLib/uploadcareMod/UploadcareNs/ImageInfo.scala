@@ -28,15 +28,8 @@ object ImageInfo {
     sequence: scala.Boolean,
     width: scala.Double
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datetime_original")(datetime_original)
-    __obj.updateDynamic("dpi")(dpi)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("geo_location")(geo_location)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("sequence")(sequence)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(datetime_original = datetime_original, dpi = dpi, format = format, geo_location = geo_location, height = height, orientation = orientation, sequence = sequence, width = width)
+  
     __obj.asInstanceOf[ImageInfo]
   }
 }

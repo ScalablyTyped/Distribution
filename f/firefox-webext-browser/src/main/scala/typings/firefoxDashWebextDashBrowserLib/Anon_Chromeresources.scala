@@ -20,9 +20,8 @@ object Anon_Chromeresources {
     ],
     version: java.lang.String
   ): Anon_Chromeresources = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chrome_resources")(chrome_resources)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(chrome_resources = chrome_resources, version = version)
+  
     __obj.asInstanceOf[Anon_Chromeresources]
   }
 }

@@ -23,9 +23,8 @@ object SignatureHelpCharacterTypedReason {
     kind: typescriptLib.typescriptLibStrings.characterTyped,
     triggerCharacter: SignatureHelpTriggerCharacter
   ): SignatureHelpCharacterTypedReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("triggerCharacter")(triggerCharacter)
+    val __obj = js.Dynamic.literal(kind = kind, triggerCharacter = triggerCharacter)
+  
     __obj.asInstanceOf[SignatureHelpCharacterTypedReason]
   }
 }

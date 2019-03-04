@@ -16,8 +16,8 @@ object Auth0LockFlashMessageOptions {
     text: java.lang.String,
     `type`: auth0DashLockLib.auth0DashLockLibStrings.success | auth0DashLockLib.auth0DashLockLibStrings.error
   ): Auth0LockFlashMessageOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockFlashMessageOptions]
   }
 }

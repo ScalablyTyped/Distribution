@@ -32,17 +32,8 @@ object Clock {
     stopTime: JulianDate,
     tick: js.Function0[JulianDate]
   ): Clock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canAnimate")(canAnimate)
-    __obj.updateDynamic("clockRange")(clockRange)
-    __obj.updateDynamic("clockStep")(clockStep)
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("multiplier")(multiplier)
-    __obj.updateDynamic("onTick")(onTick)
-    __obj.updateDynamic("shouldAnimate")(shouldAnimate)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("stopTime")(stopTime)
-    __obj.updateDynamic("tick")(tick)
+    val __obj = js.Dynamic.literal(canAnimate = canAnimate, clockRange = clockRange, clockStep = clockStep, currentTime = currentTime, multiplier = multiplier, onTick = onTick, shouldAnimate = shouldAnimate, startTime = startTime, stopTime = stopTime, tick = tick)
+  
     __obj.asInstanceOf[Clock]
   }
 }

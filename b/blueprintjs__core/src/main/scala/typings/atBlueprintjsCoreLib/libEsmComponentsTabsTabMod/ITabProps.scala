@@ -49,8 +49,7 @@ object ITabProps {
     panelClassName: java.lang.String = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null
   ): ITabProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

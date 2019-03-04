@@ -72,8 +72,7 @@ object Anon_AltCompletedMax {
     updatedMin: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCompletedMax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tasklist")(tasklist)
+    val __obj = js.Dynamic.literal(tasklist = tasklist)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (completedMax != null) __obj.updateDynamic("completedMax")(completedMax)
     if (completedMin != null) __obj.updateDynamic("completedMin")(completedMin)

@@ -136,15 +136,8 @@ object TimeLocaleDefinition {
     ],
     time: java.lang.String
   ): TimeLocaleDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dateTime")(dateTime)
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("periods")(periods)
-    __obj.updateDynamic("shortDays")(shortDays)
-    __obj.updateDynamic("shortMonths")(shortMonths)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(date = date, dateTime = dateTime, days = days, months = months, periods = periods, shortDays = shortDays, shortMonths = shortMonths, time = time)
+  
     __obj.asInstanceOf[TimeLocaleDefinition]
   }
 }

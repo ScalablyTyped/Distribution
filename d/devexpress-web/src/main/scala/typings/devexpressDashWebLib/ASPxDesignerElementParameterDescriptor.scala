@@ -45,11 +45,8 @@ object ASPxDesignerElementParameterDescriptor {
     value: js.Object,
     visible: scala.Boolean
   ): ASPxDesignerElementParameterDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(description = description, name = name, value = value, visible = visible)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ASPxDesignerElementParameterDescriptor]
   }
 }

@@ -12,8 +12,8 @@ trait CordovaPluginBadgeOptions extends js.Object {
 object CordovaPluginBadgeOptions {
   @scala.inline
   def apply(autoClear: scala.Boolean): CordovaPluginBadgeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoClear")(autoClear)
+    val __obj = js.Dynamic.literal(autoClear = autoClear)
+  
     __obj.asInstanceOf[CordovaPluginBadgeOptions]
   }
 }

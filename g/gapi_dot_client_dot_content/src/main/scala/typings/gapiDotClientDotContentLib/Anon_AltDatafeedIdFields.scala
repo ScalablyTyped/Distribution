@@ -40,9 +40,7 @@ object Anon_AltDatafeedIdFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDatafeedIdFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datafeedId")(datafeedId)
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(datafeedId = datafeedId, merchantId = merchantId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

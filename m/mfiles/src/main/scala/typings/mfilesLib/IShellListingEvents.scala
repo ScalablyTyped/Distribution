@@ -32,9 +32,7 @@ object IShellListingEvents {
     OnStarted: js.Function0[scala.Unit] = null,
     OnStop: js.Function0[scala.Unit] = null
   ): IShellListingEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnContentChanged != null) __obj.updateDynamic("OnContentChanged")(OnContentChanged)
     if (OnListingActivated != null) __obj.updateDynamic("OnListingActivated")(OnListingActivated)
     if (OnListingDeactivated != null) __obj.updateDynamic("OnListingDeactivated")(OnListingDeactivated)

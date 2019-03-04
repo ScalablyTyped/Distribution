@@ -33,8 +33,7 @@ object CreateSendingDomain {
     status: Status = null,
     tracking_domain: java.lang.String = null
   ): CreateSendingDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
     if (dkim != null) __obj.updateDynamic("dkim")(dkim)
     if (dkim_key_length != null) __obj.updateDynamic("dkim_key_length")(dkim_key_length.asInstanceOf[js.Any])
     if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim)

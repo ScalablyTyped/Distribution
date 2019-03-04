@@ -12,8 +12,8 @@ trait Anon_Array extends js.Object {
 object Anon_Array {
   @scala.inline
   def apply(`type`: waterlineLib.waterlineLibStrings.array): Anon_Array = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Array]
   }
 }

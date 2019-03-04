@@ -22,8 +22,8 @@ object InterfaceExtends {
     `type`: astDashTypesLib.astDashTypesLibStrings.InterfaceExtends,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): InterfaceExtends = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[InterfaceExtends]
   }

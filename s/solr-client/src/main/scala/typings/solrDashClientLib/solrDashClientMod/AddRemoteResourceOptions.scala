@@ -20,11 +20,8 @@ object AddRemoteResourceOptions {
     parameters: js.Object,
     path: java.lang.String
   ): AddRemoteResourceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(contentType = contentType, format = format, parameters = parameters, path = path)
+  
     __obj.asInstanceOf[AddRemoteResourceOptions]
   }
 }

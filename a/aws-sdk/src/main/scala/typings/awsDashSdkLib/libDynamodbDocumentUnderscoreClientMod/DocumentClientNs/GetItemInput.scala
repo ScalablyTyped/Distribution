@@ -44,9 +44,7 @@ object GetItemInput {
     ProjectionExpression: ProjectionExpression = null,
     ReturnConsumedCapacity: ReturnConsumedCapacity = null
   ): GetItemInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(Key = Key, TableName = TableName)
     if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
     if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)

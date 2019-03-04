@@ -12,8 +12,8 @@ trait BreadcrumbsItemProps extends js.Object {
 object BreadcrumbsItemProps {
   @scala.inline
   def apply(to: java.lang.String): BreadcrumbsItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(to = to)
+  
     __obj.asInstanceOf[BreadcrumbsItemProps]
   }
 }

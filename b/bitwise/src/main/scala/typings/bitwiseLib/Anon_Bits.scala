@@ -24,13 +24,8 @@ object Anon_Bits {
     nibble: Anon_Nibble,
     string: Anon_String
   ): Anon_Bits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bits")(bits)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("byte")(byte)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("nibble")(nibble)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(bits = bits, buffer = buffer, byte = byte, integer = integer, nibble = nibble, string = string)
+  
     __obj.asInstanceOf[Anon_Bits]
   }
 }

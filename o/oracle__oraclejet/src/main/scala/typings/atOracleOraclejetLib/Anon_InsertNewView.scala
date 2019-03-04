@@ -30,16 +30,8 @@ object Anon_InsertNewView {
     oldViewParent: stdLib.Node,
     removeOldView: js.Function0[js.UndefOr[scala.Nothing]]
   ): Anon_InsertNewView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insertNewView")(insertNewView)
-    __obj.updateDynamic("isInitial")(isInitial)
-    __obj.updateDynamic("newViewModel")(newViewModel)
-    __obj.updateDynamic("newViewParent")(newViewParent)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("oldDomNodes")(oldDomNodes)
-    __obj.updateDynamic("oldViewModel")(oldViewModel)
-    __obj.updateDynamic("oldViewParent")(oldViewParent)
-    __obj.updateDynamic("removeOldView")(removeOldView)
+    val __obj = js.Dynamic.literal(insertNewView = insertNewView, isInitial = isInitial, newViewModel = newViewModel, newViewParent = newViewParent, node = node, oldDomNodes = oldDomNodes, oldViewModel = oldViewModel, oldViewParent = oldViewParent, removeOldView = removeOldView)
+  
     __obj.asInstanceOf[Anon_InsertNewView]
   }
 }

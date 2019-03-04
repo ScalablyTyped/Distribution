@@ -85,26 +85,8 @@ object ColumnSettings {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ColumnSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Align")(Align)
-    __obj.updateDynamic("ControlDefault")(ControlDefault)
-    __obj.updateDynamic("ControlModel")(ControlModel)
-    __obj.updateDynamic("FormatKey")(FormatKey)
-    __obj.updateDynamic("HelpText")(HelpText)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Width")(Width)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Align = Align, ControlDefault = ControlDefault, ControlModel = ControlModel, FormatKey = FormatKey, HelpText = HelpText, Hidden = Hidden, Position = Position, PropertySetInfo = PropertySetInfo, Width = Width, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[ColumnSettings]
   }
 }

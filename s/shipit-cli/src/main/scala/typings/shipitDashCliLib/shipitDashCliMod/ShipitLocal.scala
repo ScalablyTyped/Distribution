@@ -18,10 +18,8 @@ object ShipitLocal {
     stderr: nodeLib.fsMod.WriteStream,
     stdout: nodeLib.fsMod.WriteStream
   ): ShipitLocal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("child")(child)
-    __obj.updateDynamic("stderr")(stderr)
-    __obj.updateDynamic("stdout")(stdout)
+    val __obj = js.Dynamic.literal(child = child, stderr = stderr, stdout = stdout)
+  
     __obj.asInstanceOf[ShipitLocal]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Height {
     mp4_size: java.lang.String,
     width: java.lang.String
   ): Anon_Height = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("mp4")(mp4)
-    __obj.updateDynamic("mp4_size")(mp4_size)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, mp4 = mp4, mp4_size = mp4_size, width = width)
+  
     __obj.asInstanceOf[Anon_Height]
   }
 }

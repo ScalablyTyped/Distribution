@@ -10,6 +10,7 @@ trait TimePickerProps extends js.Object {
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var clearText: js.UndefOr[java.lang.String] = js.undefined
   var defaultOpenValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
   var defaultValue: js.UndefOr[
@@ -65,6 +66,7 @@ object TimePickerProps {
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
     allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
+    clearIcon: reactLib.reactMod.ReactNs.ReactNode = null,
     clearText: java.lang.String = null,
     defaultOpenValue: momentLib.momentMod.momentNs.Moment = null,
     defaultValue: momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = null,
@@ -107,6 +109,7 @@ object TimePickerProps {
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
     if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
     if (clearText != null) __obj.updateDynamic("clearText")(clearText)
     if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])

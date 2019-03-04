@@ -20,8 +20,7 @@ object AdminCreateTopicsOptions {
     validateOnly: js.UndefOr[scala.Boolean] = js.undefined,
     waitForLeaders: js.UndefOr[scala.Boolean] = js.undefined
   ): AdminCreateTopicsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topics")(topics)
+    val __obj = js.Dynamic.literal(topics = topics)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly)
     if (!js.isUndefined(waitForLeaders)) __obj.updateDynamic("waitForLeaders")(waitForLeaders)

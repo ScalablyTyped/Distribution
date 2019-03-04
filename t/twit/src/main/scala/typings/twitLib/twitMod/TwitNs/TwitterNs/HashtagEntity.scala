@@ -13,9 +13,8 @@ trait HashtagEntity extends js.Object {
 object HashtagEntity {
   @scala.inline
   def apply(indices: js.Tuple2[scala.Double, scala.Double], text: java.lang.String): HashtagEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(indices = indices, text = text)
+  
     __obj.asInstanceOf[HashtagEntity]
   }
 }

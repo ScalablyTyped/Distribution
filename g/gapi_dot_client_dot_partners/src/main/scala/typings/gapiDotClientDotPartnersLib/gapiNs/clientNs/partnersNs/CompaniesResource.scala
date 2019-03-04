@@ -26,10 +26,8 @@ object CompaniesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListCompaniesResponse]
     ]
   ): CompaniesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("leads")(leads)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, leads = leads, list = list)
+  
     __obj.asInstanceOf[CompaniesResource]
   }
 }

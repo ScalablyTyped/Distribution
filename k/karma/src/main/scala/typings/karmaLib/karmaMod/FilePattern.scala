@@ -43,8 +43,7 @@ object FilePattern {
     served: js.UndefOr[scala.Boolean] = js.undefined,
     watched: js.UndefOr[scala.Boolean] = js.undefined
   ): FilePattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern)
     if (!js.isUndefined(included)) __obj.updateDynamic("included")(included)
     if (!js.isUndefined(nocache)) __obj.updateDynamic("nocache")(nocache)
     if (!js.isUndefined(served)) __obj.updateDynamic("served")(served)

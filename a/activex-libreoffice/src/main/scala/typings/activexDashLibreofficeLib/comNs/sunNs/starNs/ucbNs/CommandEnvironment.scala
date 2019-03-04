@@ -33,15 +33,8 @@ object CommandEnvironment {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): CommandEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InteractionHandler")(InteractionHandler)
-    __obj.updateDynamic("ProgressHandler")(ProgressHandler)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("getInteractionHandler")(getInteractionHandler)
-    __obj.updateDynamic("getProgressHandler")(getProgressHandler)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(InteractionHandler = InteractionHandler, ProgressHandler = ProgressHandler, acquire = acquire, create = create, getInteractionHandler = getInteractionHandler, getProgressHandler = getProgressHandler, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[CommandEnvironment]
   }
 }

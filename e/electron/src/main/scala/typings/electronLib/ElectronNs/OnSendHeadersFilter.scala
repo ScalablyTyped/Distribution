@@ -16,8 +16,8 @@ trait OnSendHeadersFilter extends js.Object {
 object OnSendHeadersFilter {
   @scala.inline
   def apply(urls: js.Array[java.lang.String]): OnSendHeadersFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(urls = urls)
+  
     __obj.asInstanceOf[OnSendHeadersFilter]
   }
 }

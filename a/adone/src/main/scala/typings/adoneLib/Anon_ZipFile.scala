@@ -12,8 +12,8 @@ trait Anon_ZipFile extends js.Object {
 object Anon_ZipFile {
   @scala.inline
   def apply(ZipFile: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.archiveNs.zipNs.packNs.ZipFile]): Anon_ZipFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ZipFile")(ZipFile)
+    val __obj = js.Dynamic.literal(ZipFile = ZipFile)
+  
     __obj.asInstanceOf[Anon_ZipFile]
   }
 }

@@ -95,22 +95,8 @@ object JobAttributes {
     repeatTimezone: java.lang.String,
     `type`: java.lang.String
   ): JobAttributes[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("failCount")(failCount)
-    __obj.updateDynamic("failReason")(failReason)
-    __obj.updateDynamic("failedAt")(failedAt)
-    __obj.updateDynamic("lastFinishedAt")(lastFinishedAt)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("lastRunAt")(lastRunAt)
-    __obj.updateDynamic("lockedAt")(lockedAt)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nextRunAt")(nextRunAt)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("repeatInterval")(repeatInterval.asInstanceOf[js.Any])
-    __obj.updateDynamic("repeatTimezone")(repeatTimezone)
+    val __obj = js.Dynamic.literal(_id = _id, data = data.asInstanceOf[js.Any], disabled = disabled, failCount = failCount, failReason = failReason, failedAt = failedAt, lastFinishedAt = lastFinishedAt, lastModifiedBy = lastModifiedBy, lastRunAt = lastRunAt, lockedAt = lockedAt, name = name, nextRunAt = nextRunAt, priority = priority, repeatInterval = repeatInterval.asInstanceOf[js.Any], repeatTimezone = repeatTimezone)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JobAttributes[T]]
   }
 }

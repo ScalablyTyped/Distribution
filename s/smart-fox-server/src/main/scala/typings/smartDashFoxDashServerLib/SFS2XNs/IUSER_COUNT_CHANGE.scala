@@ -18,10 +18,8 @@ object IUSER_COUNT_CHANGE {
     sCount: scala.Double,
     uCount: scala.Double
   ): IUSER_COUNT_CHANGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("sCount")(sCount)
-    __obj.updateDynamic("uCount")(uCount)
+    val __obj = js.Dynamic.literal(room = room, sCount = sCount, uCount = uCount)
+  
     __obj.asInstanceOf[IUSER_COUNT_CHANGE]
   }
 }

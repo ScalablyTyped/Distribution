@@ -23,8 +23,7 @@ trait ResourceParameter extends js.Object {
 object ResourceParameter {
   @scala.inline
   def apply(resource: java.lang.String, id: java.lang.String = null): ResourceParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(resource = resource)
     if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[ResourceParameter]
   }

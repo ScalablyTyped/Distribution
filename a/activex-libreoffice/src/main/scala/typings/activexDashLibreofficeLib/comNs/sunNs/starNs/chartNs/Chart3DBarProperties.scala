@@ -50,19 +50,8 @@ object Chart3DBarProperties {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Chart3DBarProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SolidType")(SolidType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, SolidType = SolidType, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[Chart3DBarProperties]
   }
 }

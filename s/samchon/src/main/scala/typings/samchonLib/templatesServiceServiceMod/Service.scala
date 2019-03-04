@@ -19,11 +19,11 @@ abstract class Service protected ()
   /**
     * @hidden
     */
-  var `client_`: js.Any = js.native
+  var client_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `path_`: js.Any = js.native
+  var path_ : js.Any = js.native
   /**
     * Default Destructor.
     *

@@ -20,9 +20,7 @@ object OptionsPolicyId {
     qualifiers: js.Array[OptionsPolicyUserNotice | java.lang.String] = null,
     transforms: js.Array[xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform] = null
   ): OptionsPolicyId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], identifier = identifier)
     if (qualifiers != null) __obj.updateDynamic("qualifiers")(qualifiers)
     if (transforms != null) __obj.updateDynamic("transforms")(transforms)
     __obj.asInstanceOf[OptionsPolicyId]

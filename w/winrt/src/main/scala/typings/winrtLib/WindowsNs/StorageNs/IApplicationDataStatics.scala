@@ -12,8 +12,8 @@ trait IApplicationDataStatics extends js.Object {
 object IApplicationDataStatics {
   @scala.inline
   def apply(current: ApplicationData): IApplicationDataStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
+    val __obj = js.Dynamic.literal(current = current)
+  
     __obj.asInstanceOf[IApplicationDataStatics]
   }
 }

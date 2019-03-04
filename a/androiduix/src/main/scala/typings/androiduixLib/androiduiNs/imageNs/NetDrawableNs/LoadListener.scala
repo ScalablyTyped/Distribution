@@ -16,9 +16,8 @@ object LoadListener {
     onError: js.Function1[androiduixLib.androiduiNs.imageNs.NetDrawable, js.Any],
     onLoad: js.Function1[androiduixLib.androiduiNs.imageNs.NetDrawable, js.Any]
   ): LoadListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onLoad")(onLoad)
+    val __obj = js.Dynamic.literal(onError = onError, onLoad = onLoad)
+  
     __obj.asInstanceOf[LoadListener]
   }
 }

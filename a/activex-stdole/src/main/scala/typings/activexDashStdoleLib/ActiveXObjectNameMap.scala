@@ -16,9 +16,8 @@ object ActiveXObjectNameMap {
     StdFont: activexDashStdoleLib.stdoleNs.StdFont,
     StdPicture: activexDashStdoleLib.stdoleNs.StdPicture
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StdFont")(StdFont)
-    __obj.updateDynamic("StdPicture")(StdPicture)
+    val __obj = js.Dynamic.literal(StdFont = StdFont, StdPicture = StdPicture)
+  
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

@@ -13,11 +13,8 @@ import scala.scalajs.js.annotation._
 object HSVA {
   @scala.inline
   def apply(a: scala.Double, h: scala.Double, s: scala.Double, v: scala.Double): HSVA = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(a = a, h = h, s = s, v = v)
+  
     __obj.asInstanceOf[HSVA]
   }
 }

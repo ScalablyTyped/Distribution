@@ -14,8 +14,8 @@ object IStorageFolder2 {
   def apply(
     tryGetItemAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IStorageItem]]
   ): IStorageFolder2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tryGetItemAsync")(tryGetItemAsync)
+    val __obj = js.Dynamic.literal(tryGetItemAsync = tryGetItemAsync)
+  
     __obj.asInstanceOf[IStorageFolder2]
   }
 }

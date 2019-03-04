@@ -20,11 +20,8 @@ object Anon_Delay {
     timingFunction: java.lang.String,
     transformOrigin: java.lang.String
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("timingFunction")(timingFunction)
-    __obj.updateDynamic("transformOrigin")(transformOrigin)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration, timingFunction = timingFunction, transformOrigin = transformOrigin)
+  
     __obj.asInstanceOf[Anon_Delay]
   }
 }

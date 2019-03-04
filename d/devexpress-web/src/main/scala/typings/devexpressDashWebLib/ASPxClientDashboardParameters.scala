@@ -32,10 +32,8 @@ object ASPxClientDashboardParameters {
     GetParameterByName: js.Function1[java.lang.String, ASPxClientDashboardParameter],
     GetParameterList: js.Function0[js.Array[ASPxClientDashboardParameter]]
   ): ASPxClientDashboardParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetParameterByIndex")(GetParameterByIndex)
-    __obj.updateDynamic("GetParameterByName")(GetParameterByName)
-    __obj.updateDynamic("GetParameterList")(GetParameterList)
+    val __obj = js.Dynamic.literal(GetParameterByIndex = GetParameterByIndex, GetParameterByName = GetParameterByName, GetParameterList = GetParameterList)
+  
     __obj.asInstanceOf[ASPxClientDashboardParameters]
   }
 }

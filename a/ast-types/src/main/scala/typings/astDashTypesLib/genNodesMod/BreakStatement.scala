@@ -21,7 +21,8 @@ object BreakStatement {
     `type`: astDashTypesLib.astDashTypesLibStrings.BreakStatement,
     label: astDashTypesLib.genKindsMod.IdentifierKind = null
   ): BreakStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[BreakStatement]
   }

@@ -16,9 +16,8 @@ object Anon_BlurSteps {
     blurSteps: js.Array[babylonjsLib.BABYLONNs.PostProcess],
     circleOfConfusion: babylonjsLib.BABYLONNs.PostProcess
   ): Anon_BlurSteps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blurSteps")(blurSteps)
-    __obj.updateDynamic("circleOfConfusion")(circleOfConfusion)
+    val __obj = js.Dynamic.literal(blurSteps = blurSteps, circleOfConfusion = circleOfConfusion)
+  
     __obj.asInstanceOf[Anon_BlurSteps]
   }
 }

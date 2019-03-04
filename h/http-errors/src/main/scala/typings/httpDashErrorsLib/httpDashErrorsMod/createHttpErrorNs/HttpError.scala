@@ -26,12 +26,7 @@ object HttpError {
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     stack: java.lang.String = null
   ): HttpError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expose")(expose)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(expose = expose, message = message, name = name, status = status, statusCode = statusCode)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (stack != null) __obj.updateDynamic("stack")(stack)

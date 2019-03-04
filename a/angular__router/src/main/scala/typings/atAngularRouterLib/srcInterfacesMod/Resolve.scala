@@ -21,8 +21,8 @@ object Resolve {
       rxjsLib.rxjsMod.Observable[T] | js.Promise[T] | T
     ]
   ): Resolve[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(resolve = resolve)
+  
     __obj.asInstanceOf[Resolve[T]]
   }
 }

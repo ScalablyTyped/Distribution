@@ -37,11 +37,7 @@ object EachAlwaysResult {
     error: js.Any = null,
     value: js.Any = null
   ): EachAlwaysResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("promise")(promise)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, promise = promise, propertyIsEnumerable = propertyIsEnumerable)
     if (error != null) __obj.updateDynamic("error")(error)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[EachAlwaysResult]

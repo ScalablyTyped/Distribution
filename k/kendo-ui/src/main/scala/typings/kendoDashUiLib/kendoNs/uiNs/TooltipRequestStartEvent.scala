@@ -19,10 +19,7 @@ object TooltipRequestStartEvent {
     options: js.Any = null,
     target: kendoDashUiLib.JQuery = null
   ): TooltipRequestStartEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (options != null) __obj.updateDynamic("options")(options)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[TooltipRequestStartEvent]

@@ -22,9 +22,7 @@ object Anon_AdDomainJoinPassword {
     adDomainJoinUser: java.lang.String = null,
     crossRealmTrustPrincipalPassword: java.lang.String = null
   ): Anon_AdDomainJoinPassword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kdcAdminPassword")(kdcAdminPassword)
-    __obj.updateDynamic("realm")(realm)
+    val __obj = js.Dynamic.literal(kdcAdminPassword = kdcAdminPassword, realm = realm)
     if (adDomainJoinPassword != null) __obj.updateDynamic("adDomainJoinPassword")(adDomainJoinPassword)
     if (adDomainJoinUser != null) __obj.updateDynamic("adDomainJoinUser")(adDomainJoinUser)
     if (crossRealmTrustPrincipalPassword != null) __obj.updateDynamic("crossRealmTrustPrincipalPassword")(crossRealmTrustPrincipalPassword)

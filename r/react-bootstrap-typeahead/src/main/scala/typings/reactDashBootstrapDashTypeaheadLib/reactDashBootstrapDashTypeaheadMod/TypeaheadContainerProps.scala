@@ -28,12 +28,7 @@ object TypeaheadContainerProps {
     activeItem: T = null,
     initialItem: T = null
   ): TypeaheadContainerProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("showMenu")(showMenu)
-    __obj.updateDynamic("shownResults")(shownResults)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(isFocused = isFocused, selected = selected, showMenu = showMenu, shownResults = shownResults, text = text)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
     if (initialItem != null) __obj.updateDynamic("initialItem")(initialItem.asInstanceOf[js.Any])

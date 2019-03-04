@@ -30,12 +30,8 @@ object ContinuousRendererResultSize {
     sizeScheme: SizeScheme,
     visualVariables: js.Array[SizeVariable]
   ): ContinuousRendererResultSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sizeScheme")(sizeScheme)
-    __obj.updateDynamic("visualVariables")(visualVariables)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, visualVariables = visualVariables)
+  
     __obj.asInstanceOf[ContinuousRendererResultSize]
   }
 }

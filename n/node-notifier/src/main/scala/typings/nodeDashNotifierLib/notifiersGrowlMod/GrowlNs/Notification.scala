@@ -32,9 +32,7 @@ object Notification {
     title: java.lang.String = null,
     wait: js.UndefOr[scala.Boolean] = js.undefined
   ): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(label = label, priority = priority)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (message != null) __obj.updateDynamic("message")(message)
     if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)

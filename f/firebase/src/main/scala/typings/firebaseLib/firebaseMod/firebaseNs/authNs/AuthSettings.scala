@@ -12,8 +12,8 @@ trait AuthSettings extends js.Object {
 object AuthSettings {
   @scala.inline
   def apply(appVerificationDisabledForTesting: scala.Boolean): AuthSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appVerificationDisabledForTesting")(appVerificationDisabledForTesting)
+    val __obj = js.Dynamic.literal(appVerificationDisabledForTesting = appVerificationDisabledForTesting)
+  
     __obj.asInstanceOf[AuthSettings]
   }
 }

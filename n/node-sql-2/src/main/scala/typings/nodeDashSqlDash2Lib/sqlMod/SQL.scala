@@ -12,8 +12,8 @@ trait SQL extends js.Object {
 object SQL {
   @scala.inline
   def apply(functions: nodeDashSqlDash2Lib.Anon_C): SQL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functions")(functions)
+    val __obj = js.Dynamic.literal(functions = functions)
+  
     __obj.asInstanceOf[SQL]
   }
 }

@@ -22,9 +22,7 @@ object Anon_AccountId {
     encryption: Anon_SseKms = null,
     prefix: java.lang.String = null
   ): Anon_AccountId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketArn")(bucketArn)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(bucketArn = bucketArn, format = format)
     if (accountId != null) __obj.updateDynamic("accountId")(accountId)
     if (encryption != null) __obj.updateDynamic("encryption")(encryption)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

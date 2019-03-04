@@ -16,9 +16,8 @@ object ConvexHullGrahamScan {
     addPoint: js.Function2[scala.Double, scala.Double, scala.Unit],
     getHull: js.Function0[js.Array[grahamUnderscoreScanLib.Anon_X]]
   ): ConvexHullGrahamScan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPoint")(addPoint)
-    __obj.updateDynamic("getHull")(getHull)
+    val __obj = js.Dynamic.literal(addPoint = addPoint, getHull = getHull)
+  
     __obj.asInstanceOf[ConvexHullGrahamScan]
   }
 }

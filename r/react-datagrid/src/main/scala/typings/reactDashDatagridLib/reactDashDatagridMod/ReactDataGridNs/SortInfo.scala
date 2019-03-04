@@ -13,9 +13,8 @@ trait SortInfo extends js.Object {
 object SortInfo {
   @scala.inline
   def apply(dir: java.lang.String, name: java.lang.String): SortInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(dir = dir, name = name)
+  
     __obj.asInstanceOf[SortInfo]
   }
 }

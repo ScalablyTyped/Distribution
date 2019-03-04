@@ -18,10 +18,8 @@ object Settings {
     samplingInterval: scala.Double,
     serialport: firmataLib.Anon_BaudRate
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reportVersionTimeout")(reportVersionTimeout)
-    __obj.updateDynamic("samplingInterval")(samplingInterval)
-    __obj.updateDynamic("serialport")(serialport)
+    val __obj = js.Dynamic.literal(reportVersionTimeout = reportVersionTimeout, samplingInterval = samplingInterval, serialport = serialport)
+  
     __obj.asInstanceOf[Settings]
   }
 }

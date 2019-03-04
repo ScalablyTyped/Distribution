@@ -21,8 +21,7 @@ object Anon_CountExtent {
     count: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     extent: (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): Anon_CountExtent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CountExtent]

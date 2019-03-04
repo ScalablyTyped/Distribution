@@ -47,14 +47,8 @@ object Order {
     Time: scala.Double,
     Type: VOrderType
   ): Order = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Amount")(Amount)
-    __obj.updateDynamic("DealAmount")(DealAmount)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Price")(Price)
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("Time")(Time)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Amount = Amount, DealAmount = DealAmount, Id = Id, Price = Price, Status = Status, Time = Time, Type = Type)
+  
     __obj.asInstanceOf[Order]
   }
 }

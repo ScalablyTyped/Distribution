@@ -32,12 +32,8 @@ object XPersistanceHolder {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPersistanceHolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("connectPersistance")(connectPersistance)
-    __obj.updateDynamic("disconnectPersistence")(disconnectPersistence)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, connectPersistance = connectPersistance, disconnectPersistence = disconnectPersistence, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPersistanceHolder]
   }
 }

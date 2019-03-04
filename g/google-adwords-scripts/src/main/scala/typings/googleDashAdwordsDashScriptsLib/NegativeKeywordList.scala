@@ -27,14 +27,7 @@ object NegativeKeywordList {
     setName: js.Function0[java.lang.String],
     getEntityType: js.Function0[java.lang.String] = null
   ): NegativeKeywordList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNegativeKeyword")(addNegativeKeyword)
-    __obj.updateDynamic("addNegativeKeywords")(addNegativeKeywords)
-    __obj.updateDynamic("campaigns")(campaigns)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("negativeKeywords")(negativeKeywords)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(addNegativeKeyword = addNegativeKeyword, addNegativeKeywords = addNegativeKeywords, campaigns = campaigns, getId = getId, getName = getName, negativeKeywords = negativeKeywords, setName = setName)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[NegativeKeywordList]
   }

@@ -12,8 +12,8 @@ trait PluginCollapseGroups extends js.Object {
 object PluginCollapseGroups {
   @scala.inline
   def apply(collapseGroups: scala.Boolean | js.Object): PluginCollapseGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseGroups")(collapseGroups.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collapseGroups = collapseGroups.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginCollapseGroups]
   }
 }

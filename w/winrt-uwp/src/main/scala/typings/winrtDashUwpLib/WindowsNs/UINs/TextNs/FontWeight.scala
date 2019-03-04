@@ -14,8 +14,8 @@ trait FontWeight extends js.Object {
 object FontWeight {
   @scala.inline
   def apply(weight: scala.Double): FontWeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(weight = weight)
+  
     __obj.asInstanceOf[FontWeight]
   }
 }

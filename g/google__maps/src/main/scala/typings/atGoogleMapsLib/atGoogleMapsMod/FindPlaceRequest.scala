@@ -43,9 +43,7 @@ object FindPlaceRequest {
     language: Language = null,
     locationbias: java.lang.String = null
   ): FindPlaceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("inputtype")(inputtype.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(input = input, inputtype = inputtype.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (language != null) __obj.updateDynamic("language")(language)
     if (locationbias != null) __obj.updateDynamic("locationbias")(locationbias)

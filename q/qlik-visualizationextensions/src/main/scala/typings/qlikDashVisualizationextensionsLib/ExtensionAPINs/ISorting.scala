@@ -12,8 +12,8 @@ trait ISorting extends js.Object {
 object ISorting {
   @scala.inline
   def apply(uses: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.sorting): ISorting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(uses = uses)
+  
     __obj.asInstanceOf[ISorting]
   }
 }

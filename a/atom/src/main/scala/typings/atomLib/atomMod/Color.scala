@@ -15,9 +15,8 @@ trait Color extends js.Object {
 object Color {
   @scala.inline
   def apply(toHexString: js.Function0[java.lang.String], toRGBAString: js.Function0[java.lang.String]): Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toHexString")(toHexString)
-    __obj.updateDynamic("toRGBAString")(toRGBAString)
+    val __obj = js.Dynamic.literal(toHexString = toHexString, toRGBAString = toRGBAString)
+  
     __obj.asInstanceOf[Color]
   }
 }

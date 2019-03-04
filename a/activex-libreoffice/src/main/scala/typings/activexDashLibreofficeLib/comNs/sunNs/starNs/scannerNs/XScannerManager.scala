@@ -44,16 +44,8 @@ object XScannerManager {
       scala.Unit
     ]
   ): XScannerManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableScanners")(AvailableScanners)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("configureScanner")(configureScanner)
-    __obj.updateDynamic("getAvailableScanners")(getAvailableScanners)
-    __obj.updateDynamic("getBitmap")(getBitmap)
-    __obj.updateDynamic("getError")(getError)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startScan")(startScan)
+    val __obj = js.Dynamic.literal(AvailableScanners = AvailableScanners, acquire = acquire, configureScanner = configureScanner, getAvailableScanners = getAvailableScanners, getBitmap = getBitmap, getError = getError, queryInterface = queryInterface, release = release, startScan = startScan)
+  
     __obj.asInstanceOf[XScannerManager]
   }
 }

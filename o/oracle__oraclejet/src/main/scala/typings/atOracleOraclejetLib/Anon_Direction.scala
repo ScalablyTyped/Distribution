@@ -13,9 +13,8 @@ trait Anon_Direction extends js.Object {
 object Anon_Direction {
   @scala.inline
   def apply(direction: java.lang.String, parentRouter: atOracleOraclejetLib.ojrouterMod.Router): Anon_Direction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("parentRouter")(parentRouter)
+    val __obj = js.Dynamic.literal(direction = direction, parentRouter = parentRouter)
+  
     __obj.asInstanceOf[Anon_Direction]
   }
 }

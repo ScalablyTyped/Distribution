@@ -46,14 +46,8 @@ object XThesaurus {
     ],
     release: js.Function0[scala.Unit]
   ): XThesaurus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryMeanings")(queryMeanings)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, getLocales = getLocales, hasLocale = hasLocale, queryInterface = queryInterface, queryMeanings = queryMeanings, release = release)
+  
     __obj.asInstanceOf[XThesaurus]
   }
 }

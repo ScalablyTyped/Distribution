@@ -34,9 +34,7 @@ object NockDefinition {
     response: java.lang.String | js.Any = null,
     status: scala.Int | scala.Double = null
   ): NockDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(path = path, scope = scope)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)

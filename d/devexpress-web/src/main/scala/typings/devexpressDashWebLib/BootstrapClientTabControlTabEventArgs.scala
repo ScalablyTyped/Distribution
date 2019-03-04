@@ -19,8 +19,8 @@ trait BootstrapClientTabControlTabEventArgs extends ASPxClientEventArgs {
 object BootstrapClientTabControlTabEventArgs {
   @scala.inline
   def apply(tab: BootstrapClientTab): BootstrapClientTabControlTabEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tab")(tab)
+    val __obj = js.Dynamic.literal(tab = tab)
+  
     __obj.asInstanceOf[BootstrapClientTabControlTabEventArgs]
   }
 }

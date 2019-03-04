@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueNumberPnpObject {
     items: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObject,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueNumberPnpObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueNumberPnpObject]
   }
 }

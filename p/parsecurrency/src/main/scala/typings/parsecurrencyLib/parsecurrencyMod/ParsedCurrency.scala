@@ -28,15 +28,8 @@ object ParsedCurrency {
     symbol: java.lang.String,
     value: scala.Double
   ): ParsedCurrency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("groupSeparator")(groupSeparator)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(currency = currency, decimalSeparator = decimalSeparator, decimals = decimals, groupSeparator = groupSeparator, integer = integer, raw = raw, symbol = symbol, value = value)
+  
     __obj.asInstanceOf[ParsedCurrency]
   }
 }

@@ -224,8 +224,7 @@ object ExpansionProfile {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): ExpansionProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_activeOnly != null) __obj.updateDynamic("_activeOnly")(_activeOnly)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_description != null) __obj.updateDynamic("_description")(_description)

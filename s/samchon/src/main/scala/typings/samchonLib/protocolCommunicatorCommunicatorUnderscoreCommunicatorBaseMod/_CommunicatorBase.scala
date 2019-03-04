@@ -21,19 +21,19 @@ abstract class _CommunicatorBase ()
   /**
     * @hidden
     */
-  var `binary_invoke_`: js.Any = js.native
+  var binary_invoke_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `binary_parameters_`: js.Any = js.native
+  var binary_parameters_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `connected_`: scala.Boolean = js.native
+  var connected_ : scala.Boolean = js.native
   /**
     * @hidden
     */
-  var `listener_`: samchonLib.protocolInvokeIProtocolMod.IProtocol = js.native
+  var listener_ : samchonLib.protocolInvokeIProtocolMod.IProtocol = js.native
   /**
     * Callback function for connection closed.
     */
@@ -42,7 +42,7 @@ abstract class _CommunicatorBase ()
   /**
     * @hidden
     */
-  var `unhandled_invokes_`: js.Any = js.native
+  var unhandled_invokes_ : js.Any = js.native
   /**
     * @hidden
     */

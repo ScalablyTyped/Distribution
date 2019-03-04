@@ -26,13 +26,7 @@ object SpawnSyncReturns {
     stdout: T,
     error: nodeLib.Error = null
   ): SpawnSyncReturns[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("signal")(signal)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
-    __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(output = output, pid = pid, signal = signal, status = status, stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }

@@ -16,10 +16,8 @@ trait Runtime extends js.Object {
 object Runtime {
   @scala.inline
   def apply(app: js.Object, logger: js.Object, term: js.Object): Runtime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("term")(term)
+    val __obj = js.Dynamic.literal(app = app, logger = logger, term = term)
+  
     __obj.asInstanceOf[Runtime]
   }
 }

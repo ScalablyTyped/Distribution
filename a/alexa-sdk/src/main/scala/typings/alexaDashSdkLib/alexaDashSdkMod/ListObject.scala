@@ -54,11 +54,7 @@ object ListObject {
     status: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): ListObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("listId")(listId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("statusMap")(statusMap)
+    val __obj = js.Dynamic.literal(items = items, listId = listId, name = name, statusMap = statusMap)
     if (next != null) __obj.updateDynamic("next")(next)
     if (state != null) __obj.updateDynamic("state")(state)
     if (status != null) __obj.updateDynamic("status")(status)

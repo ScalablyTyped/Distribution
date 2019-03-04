@@ -32,11 +32,8 @@ object Anon_CreateEnumerable {
     createLambda: js.Function1[js.Any, js.Function1[/* repeated */ js.Any, _]],
     extendTo: js.Function1[js.Any, scala.Unit]
   ): Anon_CreateEnumerable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createEnumerable")(createEnumerable)
-    __obj.updateDynamic("createEnumerator")(createEnumerator)
-    __obj.updateDynamic("createLambda")(createLambda)
-    __obj.updateDynamic("extendTo")(extendTo)
+    val __obj = js.Dynamic.literal(createEnumerable = createEnumerable, createEnumerator = createEnumerator, createLambda = createLambda, extendTo = extendTo)
+  
     __obj.asInstanceOf[Anon_CreateEnumerable]
   }
 }

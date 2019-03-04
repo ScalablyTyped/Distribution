@@ -22,11 +22,8 @@ object PublishStatus {
     errorData: stdLib.Error,
     operation: java.lang.String
   ): PublishStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("errorData")(errorData)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(category = category, error = error, errorData = errorData, operation = operation)
+  
     __obj.asInstanceOf[PublishStatus]
   }
 }

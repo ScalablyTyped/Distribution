@@ -18,10 +18,8 @@ object PutChannelResult {
     publishUrls: js.Array[java.lang.String],
     res: NormalSuccessResponse
   ): PutChannelResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("playUrls")(playUrls)
-    __obj.updateDynamic("publishUrls")(publishUrls)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(playUrls = playUrls, publishUrls = publishUrls, res = res)
+  
     __obj.asInstanceOf[PutChannelResult]
   }
 }

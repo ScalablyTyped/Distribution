@@ -18,8 +18,7 @@ object Anon_DateDaysStorageClass {
     date: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     days: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_DateDaysStorageClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(storageClass = storageClass.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateDaysStorageClass]

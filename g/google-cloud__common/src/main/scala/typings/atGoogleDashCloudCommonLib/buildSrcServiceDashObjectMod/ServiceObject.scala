@@ -44,7 +44,7 @@ class ServiceObject[T] protected ()
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     * @param {function} callback - The callback function passed to `request`.
     */
-  var `request_`: js.Any = js.native
+  var request_ : js.Any = js.native
   /**
     * Create the object.
     *

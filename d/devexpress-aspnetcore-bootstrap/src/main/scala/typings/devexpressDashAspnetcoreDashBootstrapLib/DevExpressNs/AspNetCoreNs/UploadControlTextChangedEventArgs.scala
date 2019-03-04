@@ -12,9 +12,8 @@ trait UploadControlTextChangedEventArgs extends EventArgs {
 object UploadControlTextChangedEventArgs {
   @scala.inline
   def apply(inputIndex: scala.Double, sender: Control): UploadControlTextChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputIndex")(inputIndex)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(inputIndex = inputIndex, sender = sender)
+  
     __obj.asInstanceOf[UploadControlTextChangedEventArgs]
   }
 }

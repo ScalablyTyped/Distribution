@@ -40,17 +40,8 @@ object SchemaParser {
     release: js.Function0[scala.Unit],
     setInputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
   ): SchemaParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readComponent")(readComponent)
-    __obj.updateDynamic("readSchema")(readSchema)
-    __obj.updateDynamic("readTemplates")(readTemplates)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setInputStream")(setInputStream)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, getInputStream = getInputStream, initialize = initialize, queryInterface = queryInterface, readComponent = readComponent, readSchema = readSchema, readTemplates = readTemplates, release = release, setInputStream = setInputStream)
+  
     __obj.asInstanceOf[SchemaParser]
   }
 }

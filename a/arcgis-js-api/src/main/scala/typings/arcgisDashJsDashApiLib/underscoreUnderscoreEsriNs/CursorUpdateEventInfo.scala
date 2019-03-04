@@ -31,11 +31,8 @@ object CursorUpdateEventInfo {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     `type`: java.lang.String
   ): CursorUpdateEventInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, coordinates = coordinates, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CursorUpdateEventInfo]
   }
 }

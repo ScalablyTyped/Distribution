@@ -39,21 +39,8 @@ object DataProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): DataProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IncludeHiddenCells")(IncludeHiddenCells)
-    __obj.updateDynamic("RangeSelection")(RangeSelection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertRangeFromXML")(convertRangeFromXML)
-    __obj.updateDynamic("convertRangeToXML")(convertRangeToXML)
-    __obj.updateDynamic("createDataSequenceByRangeRepresentation")(createDataSequenceByRangeRepresentation)
-    __obj.updateDynamic("createDataSequenceByRangeRepresentationPossible")(createDataSequenceByRangeRepresentationPossible)
-    __obj.updateDynamic("createDataSequenceByValueArray")(createDataSequenceByValueArray)
-    __obj.updateDynamic("createDataSource")(createDataSource)
-    __obj.updateDynamic("createDataSourcePossible")(createDataSourcePossible)
-    __obj.updateDynamic("detectArguments")(detectArguments)
-    __obj.updateDynamic("getRangeSelection")(getRangeSelection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(IncludeHiddenCells = IncludeHiddenCells, RangeSelection = RangeSelection, acquire = acquire, convertRangeFromXML = convertRangeFromXML, convertRangeToXML = convertRangeToXML, createDataSequenceByRangeRepresentation = createDataSequenceByRangeRepresentation, createDataSequenceByRangeRepresentationPossible = createDataSequenceByRangeRepresentationPossible, createDataSequenceByValueArray = createDataSequenceByValueArray, createDataSource = createDataSource, createDataSourcePossible = createDataSourcePossible, detectArguments = detectArguments, getRangeSelection = getRangeSelection, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[DataProvider]
   }
 }

@@ -66,34 +66,8 @@ object Anon_Addresses {
     title: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.title,
     urls: cordovaDashPluginDashContactsLib.cordovaDashPluginDashContactsLibStrings.urls
   ): Anon_Addresses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("birthday")(birthday)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("department")(department)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emails")(emails)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("formatted")(formatted)
-    __obj.updateDynamic("givenName")(givenName)
-    __obj.updateDynamic("honorificPrefix")(honorificPrefix)
-    __obj.updateDynamic("honorificSuffix")(honorificSuffix)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ims")(ims)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("middleName")(middleName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("note")(note)
-    __obj.updateDynamic("organizations")(organizations)
-    __obj.updateDynamic("phoneNumbers")(phoneNumbers)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("streetAddress")(streetAddress)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(addresses = addresses, birthday = birthday, categories = categories, country = country, department = department, displayName = displayName, emails = emails, familyName = familyName, formatted = formatted, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, id = id, ims = ims, locality = locality, middleName = middleName, name = name, nickname = nickname, note = note, organizations = organizations, phoneNumbers = phoneNumbers, photos = photos, postalCode = postalCode, region = region, streetAddress = streetAddress, title = title, urls = urls)
+  
     __obj.asInstanceOf[Anon_Addresses]
   }
 }

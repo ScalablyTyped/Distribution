@@ -32,10 +32,7 @@ object DoctypeToken {
     systemId: java.lang.String,
     sourceCodeLocation: parse5Lib.parse5Mod.Location = null
   ): DoctypeToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("publicId")(publicId)
-    __obj.updateDynamic("systemId")(systemId)
+    val __obj = js.Dynamic.literal(name = name, publicId = publicId, systemId = systemId)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[DoctypeToken]
   }

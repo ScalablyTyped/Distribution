@@ -59,8 +59,7 @@ object Anon_AltEndTime {
     token: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEndTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packageName")(packageName)
+    val __obj = js.Dynamic.literal(packageName = packageName)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     if (fields != null) __obj.updateDynamic("fields")(fields)

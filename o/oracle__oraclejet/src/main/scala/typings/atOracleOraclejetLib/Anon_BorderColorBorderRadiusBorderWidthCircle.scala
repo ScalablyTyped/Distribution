@@ -32,17 +32,8 @@ object Anon_BorderColorBorderRadiusBorderWidthCircle {
     source: java.lang.String,
     width: scala.Double
   ): Anon_BorderColorBorderRadiusBorderWidthCircle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderRadius")(borderRadius)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, color = color, height = height, opacity = opacity, pattern = pattern.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], source = source, width = width)
+  
     __obj.asInstanceOf[Anon_BorderColorBorderRadiusBorderWidthCircle]
   }
 }

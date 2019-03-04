@@ -38,9 +38,7 @@ object BootboxPromptOptions {
     size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.large = null,
     value: java.lang.String = null
   ): BootboxPromptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(callback = callback, title = title)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)

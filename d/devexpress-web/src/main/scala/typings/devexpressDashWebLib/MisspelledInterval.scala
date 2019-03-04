@@ -51,13 +51,8 @@ object MisspelledInterval {
     suggestions: js.Array[java.lang.String],
     word: java.lang.String
   ): MisspelledInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorType")(errorType)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("suggestions")(suggestions)
-    __obj.updateDynamic("word")(word)
+    val __obj = js.Dynamic.literal(errorType = errorType, interval = interval, length = length, start = start, suggestions = suggestions, word = word)
+  
     __obj.asInstanceOf[MisspelledInterval]
   }
 }

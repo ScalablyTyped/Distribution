@@ -13,9 +13,8 @@ trait TabDetachInfo extends js.Object {
 object TabDetachInfo {
   @scala.inline
   def apply(oldPosition: scala.Double, oldWindowId: scala.Double): TabDetachInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldPosition")(oldPosition)
-    __obj.updateDynamic("oldWindowId")(oldWindowId)
+    val __obj = js.Dynamic.literal(oldPosition = oldPosition, oldWindowId = oldWindowId)
+  
     __obj.asInstanceOf[TabDetachInfo]
   }
 }

@@ -11,7 +11,7 @@ trait Theming extends js.Object {
   var channel: java.lang.String = js.native
   @JSName("createTheming")
   var createTheming_Original: reactDashJssLib.Anon_CustomChannel = js.native
-  var themeListener: themingLib.themingMod.ThemeListener[reactDashJssLib.reactDashJssLibStrings.`__THEMING__`] = js.native
+  var themeListener: themingLib.themingMod.ThemeListener[reactDashJssLib.reactDashJssLibStrings.__THEMING__] = js.native
   @JSName("withTheme")
   var withTheme_Original: reactDashJssLib.Anon_Component = js.native
   def createTheming[C /* <: java.lang.String */](): themingLib.themingMod.Theming[C] = js.native

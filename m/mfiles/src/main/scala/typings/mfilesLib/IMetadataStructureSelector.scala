@@ -28,15 +28,8 @@ object IMetadataStructureSelector {
     StructureItemSemanticAlias: java.lang.String,
     StructureItemType: mfilesLib.MFilesNs.MFMetadataStructureItem
   ): IMetadataStructureSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("StructureItemGUID")(StructureItemGUID)
-    __obj.updateDynamic("StructureItemID")(StructureItemID)
-    __obj.updateDynamic("StructureItemSemanticAlias")(StructureItemSemanticAlias)
-    __obj.updateDynamic("StructureItemType")(StructureItemType)
+    val __obj = js.Dynamic.literal(Clone = Clone, Flags = Flags, ID = ID, Name = Name, StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemSemanticAlias = StructureItemSemanticAlias, StructureItemType = StructureItemType)
+  
     __obj.asInstanceOf[IMetadataStructureSelector]
   }
 }

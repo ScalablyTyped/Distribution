@@ -18,10 +18,7 @@ object IsReadyToPayRequest {
     apiVersionMinor: scala.Double,
     existingPaymentMethodRequired: js.UndefOr[scala.Boolean] = js.undefined
   ): IsReadyToPayRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedPaymentMethods")(allowedPaymentMethods)
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("apiVersionMinor")(apiVersionMinor)
+    val __obj = js.Dynamic.literal(allowedPaymentMethods = allowedPaymentMethods, apiVersion = apiVersion, apiVersionMinor = apiVersionMinor)
     if (!js.isUndefined(existingPaymentMethodRequired)) __obj.updateDynamic("existingPaymentMethodRequired")(existingPaymentMethodRequired)
     __obj.asInstanceOf[IsReadyToPayRequest]
   }

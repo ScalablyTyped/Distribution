@@ -23,14 +23,8 @@ object ChronoLocalDateTime {
     toEpochSecond: js.Function1[ZoneOffset, scala.Double],
     toInstant: js.Function1[ZoneOffset, Instant]
   ): ChronoLocalDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustInto")(adjustInto)
-    __obj.updateDynamic("chronology")(chronology)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("toEpochSecond")(toEpochSecond)
-    __obj.updateDynamic("toInstant")(toInstant)
+    val __obj = js.Dynamic.literal(adjustInto = adjustInto, chronology = chronology, get = get, query = query, range = range, toEpochSecond = toEpochSecond, toInstant = toInstant)
+  
     __obj.asInstanceOf[ChronoLocalDateTime]
   }
 }

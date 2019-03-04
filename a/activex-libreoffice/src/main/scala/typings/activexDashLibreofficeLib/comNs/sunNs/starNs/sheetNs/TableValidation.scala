@@ -108,40 +108,8 @@ object TableValidation {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     setSourcePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit]
   ): TableValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ErrorAlertStyle")(ErrorAlertStyle)
-    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    __obj.updateDynamic("ErrorTitle")(ErrorTitle)
-    __obj.updateDynamic("Formula1")(Formula1)
-    __obj.updateDynamic("Formula2")(Formula2)
-    __obj.updateDynamic("IgnoreBlankCells")(IgnoreBlankCells)
-    __obj.updateDynamic("InputMessage")(InputMessage)
-    __obj.updateDynamic("InputTitle")(InputTitle)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ShowErrorMessage")(ShowErrorMessage)
-    __obj.updateDynamic("ShowInputMessage")(ShowInputMessage)
-    __obj.updateDynamic("ShowList")(ShowList)
-    __obj.updateDynamic("SourcePosition")(SourcePosition)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getFormula1")(getFormula1)
-    __obj.updateDynamic("getFormula2")(getFormula2)
-    __obj.updateDynamic("getOperator")(getOperator)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSourcePosition")(getSourcePosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setFormula1")(setFormula1)
-    __obj.updateDynamic("setFormula2")(setFormula2)
-    __obj.updateDynamic("setOperator")(setOperator)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setSourcePosition")(setSourcePosition)
+    val __obj = js.Dynamic.literal(ErrorAlertStyle = ErrorAlertStyle, ErrorMessage = ErrorMessage, ErrorTitle = ErrorTitle, Formula1 = Formula1, Formula2 = Formula2, IgnoreBlankCells = IgnoreBlankCells, InputMessage = InputMessage, InputTitle = InputTitle, Operator = Operator, PropertySetInfo = PropertySetInfo, ShowErrorMessage = ShowErrorMessage, ShowInputMessage = ShowInputMessage, ShowList = ShowList, SourcePosition = SourcePosition, Type = Type, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getFormula1 = getFormula1, getFormula2 = getFormula2, getOperator = getOperator, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSourcePosition = getSourcePosition, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setFormula1 = setFormula1, setFormula2 = setFormula2, setOperator = setOperator, setPropertyValue = setPropertyValue, setSourcePosition = setSourcePosition)
+  
     __obj.asInstanceOf[TableValidation]
   }
 }

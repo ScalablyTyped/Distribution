@@ -22,12 +22,8 @@ object StyleImageOptions {
     scale: scala.Double,
     snapToPixel: scala.Boolean
   ): StyleImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("rotateWithView")(rotateWithView)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("snapToPixel")(snapToPixel)
+    val __obj = js.Dynamic.literal(opacity = opacity, rotateWithView = rotateWithView, rotation = rotation, scale = scale, snapToPixel = snapToPixel)
+  
     __obj.asInstanceOf[StyleImageOptions]
   }
 }

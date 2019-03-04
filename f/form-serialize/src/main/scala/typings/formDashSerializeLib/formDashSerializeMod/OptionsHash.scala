@@ -18,8 +18,7 @@ object OptionsHash {
     empty: js.UndefOr[scala.Boolean] = js.undefined,
     serializer: js.Function3[ResultHash, /* key */ java.lang.String, /* value */ java.lang.String, ResultHash] = null
   ): OptionsHash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(hash = hash)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
     if (serializer != null) __obj.updateDynamic("serializer")(serializer)

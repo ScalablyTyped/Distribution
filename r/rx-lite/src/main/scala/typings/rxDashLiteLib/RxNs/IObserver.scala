@@ -19,10 +19,8 @@ object IObserver {
     onError: js.Function1[js.Any, scala.Unit],
     onNext: js.Function1[T, scala.Unit]
   ): IObserver[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCompleted")(onCompleted)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onNext")(onNext)
+    val __obj = js.Dynamic.literal(onCompleted = onCompleted, onError = onError, onNext = onNext)
+  
     __obj.asInstanceOf[IObserver[T]]
   }
 }

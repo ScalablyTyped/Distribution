@@ -72,11 +72,8 @@ object ImageStoreStatic {
     hasImageForTag: js.Function2[java.lang.String, js.Function1[/* hasImage */ scala.Boolean, scala.Unit], scala.Unit],
     removeImageForTag: js.Function1[java.lang.String, scala.Unit]
   ): ImageStoreStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addImageFromBase64")(addImageFromBase64)
-    __obj.updateDynamic("getBase64ForTag")(getBase64ForTag)
-    __obj.updateDynamic("hasImageForTag")(hasImageForTag)
-    __obj.updateDynamic("removeImageForTag")(removeImageForTag)
+    val __obj = js.Dynamic.literal(addImageFromBase64 = addImageFromBase64, getBase64ForTag = getBase64ForTag, hasImageForTag = hasImageForTag, removeImageForTag = removeImageForTag)
+  
     __obj.asInstanceOf[ImageStoreStatic]
   }
 }

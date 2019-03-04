@@ -78,13 +78,8 @@ object Anon_AfterOptions {
       _
     ]
   ): Anon_AfterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterOptions")(afterOptions)
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("customize")(customize)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(afterOptions = afterOptions, apply = apply, customize = customize, done = done, options = options, transform = transform)
+  
     __obj.asInstanceOf[Anon_AfterOptions]
   }
 }

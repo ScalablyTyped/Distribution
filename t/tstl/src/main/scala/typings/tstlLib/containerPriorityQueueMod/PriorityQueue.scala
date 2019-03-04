@@ -41,7 +41,7 @@ class PriorityQueue[T] ()
   /**
     * @hidden
     */
-  var `comp_`: js.Any = js.native
+  var comp_ : js.Any = js.native
   /**
     * Get top element.
     */

@@ -34,9 +34,8 @@ object errorData {
     response: LoaderError = null,
     url: java.lang.String = null
   ): errorData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("fatal")(fatal)
+    val __obj = js.Dynamic.literal(details = details, fatal = fatal)
+    __obj.updateDynamic("type")(`type`)
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
     if (frag != null) __obj.updateDynamic("frag")(frag)

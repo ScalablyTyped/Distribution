@@ -60,15 +60,8 @@ object GeoHashGridAggregation {
     size: js.Function1[scala.Double, GeoHashGridAggregation],
     toJSON: js.Function0[js.Any]
   ): GeoHashGridAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("precision")(precision)
-    __obj.updateDynamic("shardSize")(shardSize)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, precision = precision, shardSize = shardSize, size = size, toJSON = toJSON)
+  
     __obj.asInstanceOf[GeoHashGridAggregation]
   }
 }

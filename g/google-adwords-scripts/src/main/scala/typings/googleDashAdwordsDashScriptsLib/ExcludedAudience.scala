@@ -22,13 +22,8 @@ object ExcludedAudience {
     getId: js.Function0[scala.Double],
     remove: js.Function0[scala.Unit]
   ): ExcludedAudience = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdGroup")(getAdGroup)
-    __obj.updateDynamic("getAudienceId")(getAudienceId)
-    __obj.updateDynamic("getAudienceType")(getAudienceType)
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getAudienceId = getAudienceId, getAudienceType = getAudienceType, getCampaign = getCampaign, getId = getId, remove = remove)
+  
     __obj.asInstanceOf[ExcludedAudience]
   }
 }

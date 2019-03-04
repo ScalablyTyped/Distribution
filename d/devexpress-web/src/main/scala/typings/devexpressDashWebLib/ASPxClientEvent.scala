@@ -39,11 +39,8 @@ object ASPxClientEvent {
     FireEvent: js.Function2[js.Object, ASPxClientEventArgs, scala.Unit],
     RemoveHandler: js.Function1[T, scala.Unit]
   ): ASPxClientEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddHandler")(AddHandler)
-    __obj.updateDynamic("ClearHandlers")(ClearHandlers)
-    __obj.updateDynamic("FireEvent")(FireEvent)
-    __obj.updateDynamic("RemoveHandler")(RemoveHandler)
+    val __obj = js.Dynamic.literal(AddHandler = AddHandler, ClearHandlers = ClearHandlers, FireEvent = FireEvent, RemoveHandler = RemoveHandler)
+  
     __obj.asInstanceOf[ASPxClientEvent[T]]
   }
 }

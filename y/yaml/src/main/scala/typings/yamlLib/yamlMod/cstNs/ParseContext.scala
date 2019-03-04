@@ -33,14 +33,8 @@ object ParseContext {
     parent: Node,
     src: java.lang.String
   ): ParseContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atLineStart")(atLineStart)
-    __obj.updateDynamic("inCollection")(inCollection)
-    __obj.updateDynamic("inFlow")(inFlow)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("lineStart")(lineStart)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(atLineStart = atLineStart, inCollection = inCollection, inFlow = inFlow, indent = indent, lineStart = lineStart, parent = parent, src = src)
+  
     __obj.asInstanceOf[ParseContext]
   }
 }

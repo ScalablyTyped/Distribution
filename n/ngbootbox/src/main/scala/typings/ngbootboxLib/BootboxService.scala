@@ -30,16 +30,8 @@ object BootboxService {
     setDefaults: js.Function1[bootboxLib.BootboxDefaultOptions, scala.Unit],
     setLocale: js.Function1[java.lang.String, scala.Unit]
   ): BootboxService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addLocale")(addLocale)
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("confirm")(confirm)
-    __obj.updateDynamic("customDialog")(customDialog)
-    __obj.updateDynamic("hideAll")(hideAll)
-    __obj.updateDynamic("prompt")(prompt)
-    __obj.updateDynamic("removeLocale")(removeLocale)
-    __obj.updateDynamic("setDefaults")(setDefaults)
-    __obj.updateDynamic("setLocale")(setLocale)
+    val __obj = js.Dynamic.literal(addLocale = addLocale, alert = alert, confirm = confirm, customDialog = customDialog, hideAll = hideAll, prompt = prompt, removeLocale = removeLocale, setDefaults = setDefaults, setLocale = setLocale)
+  
     __obj.asInstanceOf[BootboxService]
   }
 }

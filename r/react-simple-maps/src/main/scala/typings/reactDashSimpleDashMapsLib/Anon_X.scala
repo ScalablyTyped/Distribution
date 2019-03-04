@@ -16,9 +16,8 @@ object Anon_X {
     x: reactDashSimpleDashMapsLib.reactDashSimpleDashMapsMod.Point,
     y: reactDashSimpleDashMapsLib.reactDashSimpleDashMapsMod.Point
   ): Anon_X = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[Anon_X]
   }
 }

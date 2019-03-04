@@ -20,9 +20,8 @@ trait List extends js.Object {
 object List {
   @scala.inline
   def apply(list_id: java.lang.String, nesting_level: stdLib.Map[scala.Double, NestingLevel]): List = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list_id")(list_id)
-    __obj.updateDynamic("nesting_level")(nesting_level)
+    val __obj = js.Dynamic.literal(list_id = list_id, nesting_level = nesting_level)
+  
     __obj.asInstanceOf[List]
   }
 }

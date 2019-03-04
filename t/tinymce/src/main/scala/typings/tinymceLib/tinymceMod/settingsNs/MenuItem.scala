@@ -13,9 +13,8 @@ trait MenuItem extends js.Object {
 object MenuItem {
   @scala.inline
   def apply(items: java.lang.String, title: java.lang.String): MenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(items = items, title = title)
+  
     __obj.asInstanceOf[MenuItem]
   }
 }

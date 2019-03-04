@@ -14,10 +14,8 @@ trait CacheDumpData extends js.Object {
 object CacheDumpData {
   @scala.inline
   def apply(b: scala.Double, key: java.lang.String, s: scala.Double): CacheDumpData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("s")(s)
+    val __obj = js.Dynamic.literal(b = b, key = key, s = s)
+  
     __obj.asInstanceOf[CacheDumpData]
   }
 }

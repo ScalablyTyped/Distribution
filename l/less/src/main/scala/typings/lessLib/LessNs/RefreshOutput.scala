@@ -20,11 +20,8 @@ object RefreshOutput {
     startTime: stdLib.Date,
     totalMilliseconds: scala.Double
   ): RefreshOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("sheets")(sheets)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("totalMilliseconds")(totalMilliseconds)
+    val __obj = js.Dynamic.literal(endTime = endTime, sheets = sheets, startTime = startTime, totalMilliseconds = totalMilliseconds)
+  
     __obj.asInstanceOf[RefreshOutput]
   }
 }

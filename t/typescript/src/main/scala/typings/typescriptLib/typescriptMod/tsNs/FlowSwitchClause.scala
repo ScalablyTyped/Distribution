@@ -24,12 +24,7 @@ object FlowSwitchClause {
     switchStatement: SwitchStatement,
     id: scala.Int | scala.Double = null
   ): FlowSwitchClause = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antecedent")(antecedent)
-    __obj.updateDynamic("clauseEnd")(clauseEnd)
-    __obj.updateDynamic("clauseStart")(clauseStart)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("switchStatement")(switchStatement)
+    val __obj = js.Dynamic.literal(antecedent = antecedent, clauseEnd = clauseEnd, clauseStart = clauseStart, flags = flags, switchStatement = switchStatement)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowSwitchClause]
   }

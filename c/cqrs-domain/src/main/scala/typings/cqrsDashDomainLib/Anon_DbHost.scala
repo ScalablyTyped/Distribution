@@ -28,7 +28,8 @@ object Anon_DbHost {
     timeout: scala.Int | scala.Double = null,
     ttl: scala.Int | scala.Double = null
   ): Anon_DbHost = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (password != null) __obj.updateDynamic("password")(password)

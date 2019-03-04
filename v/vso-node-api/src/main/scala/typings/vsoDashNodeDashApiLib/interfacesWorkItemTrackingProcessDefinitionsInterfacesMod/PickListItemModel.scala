@@ -13,9 +13,8 @@ trait PickListItemModel extends js.Object {
 object PickListItemModel {
   @scala.inline
   def apply(id: java.lang.String, value: java.lang.String): PickListItemModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, value = value)
+  
     __obj.asInstanceOf[PickListItemModel]
   }
 }

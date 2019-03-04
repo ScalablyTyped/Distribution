@@ -54,14 +54,8 @@ object Gamepad {
     mapping: java.lang.String,
     timestamp: scala.Double
   ): Gamepad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axes")(axes)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("mapping")(mapping)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(axes = axes, buttons = buttons, connected = connected, id = id, index = index, mapping = mapping, timestamp = timestamp)
+  
     __obj.asInstanceOf[Gamepad]
   }
 }

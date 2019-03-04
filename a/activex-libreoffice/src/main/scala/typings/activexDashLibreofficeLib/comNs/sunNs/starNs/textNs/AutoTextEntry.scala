@@ -36,25 +36,8 @@ object AutoTextEntry {
     removeTextContent: js.Function1[XTextContent, scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): AutoTextEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("applyTo")(applyTo)
-    __obj.updateDynamic("createTextCursor")(createTextCursor)
-    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
-    __obj.updateDynamic("insertString")(insertString)
-    __obj.updateDynamic("insertTextContent")(insertTextContent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTextContent")(removeTextContent)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, applyTo = applyTo, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, queryInterface = queryInterface, release = release, removeTextContent = removeTextContent, setString = setString)
+  
     __obj.asInstanceOf[AutoTextEntry]
   }
 }

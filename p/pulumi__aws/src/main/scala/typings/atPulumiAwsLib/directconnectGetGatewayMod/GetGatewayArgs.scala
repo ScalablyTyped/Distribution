@@ -15,8 +15,8 @@ trait GetGatewayArgs extends js.Object {
 object GetGatewayArgs {
   @scala.inline
   def apply(name: java.lang.String): GetGatewayArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[GetGatewayArgs]
   }
 }

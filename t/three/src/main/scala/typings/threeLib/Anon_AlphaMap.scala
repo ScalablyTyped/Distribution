@@ -22,12 +22,8 @@ object Anon_AlphaMap {
     opacity: threeLib.threeDashCoreMod.IUniform,
     uvTransform: threeLib.threeDashCoreMod.IUniform
   ): Anon_AlphaMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alphaMap")(alphaMap)
-    __obj.updateDynamic("diffuse")(diffuse)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("uvTransform")(uvTransform)
+    val __obj = js.Dynamic.literal(alphaMap = alphaMap, diffuse = diffuse, map = map, opacity = opacity, uvTransform = uvTransform)
+  
     __obj.asInstanceOf[Anon_AlphaMap]
   }
 }

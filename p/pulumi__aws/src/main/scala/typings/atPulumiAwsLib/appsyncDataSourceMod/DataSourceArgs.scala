@@ -57,8 +57,8 @@ object DataSourceArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     serviceRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DataSourceArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dynamodbConfig != null) __obj.updateDynamic("dynamodbConfig")(dynamodbConfig.asInstanceOf[js.Any])
     if (elasticsearchConfig != null) __obj.updateDynamic("elasticsearchConfig")(elasticsearchConfig.asInstanceOf[js.Any])

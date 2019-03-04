@@ -37,19 +37,8 @@ object Bridge {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): Bridge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getInstance")(getInstance)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getDescription = getDescription, getInstance = getInstance, getName = getName, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[Bridge]
   }
 }

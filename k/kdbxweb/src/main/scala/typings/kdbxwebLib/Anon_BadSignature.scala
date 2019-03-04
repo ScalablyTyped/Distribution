@@ -28,15 +28,8 @@ object Anon_BadSignature {
     NotImplemented: java.lang.String,
     Unsupported: java.lang.String
   ): Anon_BadSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BadSignature")(BadSignature)
-    __obj.updateDynamic("FileCorrupt")(FileCorrupt)
-    __obj.updateDynamic("InvalidArg")(InvalidArg)
-    __obj.updateDynamic("InvalidKey")(InvalidKey)
-    __obj.updateDynamic("InvalidVersion")(InvalidVersion)
-    __obj.updateDynamic("MergeError")(MergeError)
-    __obj.updateDynamic("NotImplemented")(NotImplemented)
-    __obj.updateDynamic("Unsupported")(Unsupported)
+    val __obj = js.Dynamic.literal(BadSignature = BadSignature, FileCorrupt = FileCorrupt, InvalidArg = InvalidArg, InvalidKey = InvalidKey, InvalidVersion = InvalidVersion, MergeError = MergeError, NotImplemented = NotImplemented, Unsupported = Unsupported)
+  
     __obj.asInstanceOf[Anon_BadSignature]
   }
 }

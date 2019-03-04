@@ -61,9 +61,7 @@ object ImagingStudySeriesInstance {
     number: js.UndefOr[unsignedInt] = js.undefined,
     title: java.lang.String = null
   ): ImagingStudySeriesInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sopClass")(sopClass)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(sopClass = sopClass, uid = uid)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_number != null) __obj.updateDynamic("_number")(_number)

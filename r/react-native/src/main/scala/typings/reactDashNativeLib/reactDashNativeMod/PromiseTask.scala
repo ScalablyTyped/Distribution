@@ -13,9 +13,8 @@ trait PromiseTask extends js.Object {
 object PromiseTask {
   @scala.inline
   def apply(gen: js.Function0[js.Promise[_]], name: java.lang.String): PromiseTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gen")(gen)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(gen = gen, name = name)
+  
     __obj.asInstanceOf[PromiseTask]
   }
 }

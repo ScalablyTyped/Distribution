@@ -98,8 +98,7 @@ object DisplayPropertiesInfo {
     overscan: Insets = null,
     rotation: chromeDashAppsLib.chromeDashAppsLibNumbers.`0` | chromeDashAppsLib.chromeDashAppsLibNumbers.`90` | chromeDashAppsLib.chromeDashAppsLibNumbers.`180` | chromeDashAppsLib.chromeDashAppsLibNumbers.`270` = null
   ): DisplayPropertiesInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundsOriginY")(boundsOriginY)
+    val __obj = js.Dynamic.literal(boundsOriginY = boundsOriginY)
     if (!js.isUndefined(boundsOriginX)) __obj.updateDynamic("boundsOriginX")(boundsOriginX)
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
     if (!js.isUndefined(displayZoomFactor)) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor)

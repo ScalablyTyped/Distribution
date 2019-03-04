@@ -27,10 +27,8 @@ object RegExpLiteral {
     `type`: astDashTypesLib.astDashTypesLibStrings.RegExpLiteral,
     value: stdLib.RegExp
   ): RegExpLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(flags = flags, pattern = pattern, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RegExpLiteral]
   }
 }

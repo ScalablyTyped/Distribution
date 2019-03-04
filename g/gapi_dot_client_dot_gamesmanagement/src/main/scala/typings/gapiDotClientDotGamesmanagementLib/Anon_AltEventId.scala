@@ -39,8 +39,7 @@ object Anon_AltEventId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEventId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventId")(eventId)
+    val __obj = js.Dynamic.literal(eventId = eventId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

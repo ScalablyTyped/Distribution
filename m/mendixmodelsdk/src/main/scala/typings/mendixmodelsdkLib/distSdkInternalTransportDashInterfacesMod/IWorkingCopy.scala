@@ -37,15 +37,7 @@ object IWorkingCopy {
     uploadDateTime: scala.Double,
     mergeData: ILockData = null
   ): IWorkingCopy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isCollaboration")(isCollaboration)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("metaData")(metaData)
-    __obj.updateDynamic("mprFileName")(mprFileName)
-    __obj.updateDynamic("mprMetaData")(mprMetaData)
-    __obj.updateDynamic("uploadDateTime")(uploadDateTime)
+    val __obj = js.Dynamic.literal(changed = changed, id = id, isCollaboration = isCollaboration, members = members, metaData = metaData, mprFileName = mprFileName, mprMetaData = mprMetaData, uploadDateTime = uploadDateTime)
     if (mergeData != null) __obj.updateDynamic("mergeData")(mergeData)
     __obj.asInstanceOf[IWorkingCopy]
   }

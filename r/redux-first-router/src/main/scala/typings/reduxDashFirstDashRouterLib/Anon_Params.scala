@@ -16,9 +16,8 @@ object Anon_Params {
     params: reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Nullable[reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Params],
     path: reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Nullable[java.lang.String]
   ): Anon_Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Params]
   }
 }

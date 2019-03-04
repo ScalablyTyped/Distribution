@@ -32,13 +32,8 @@ object XContentEnumerationAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContentEnumerationAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableServiceNames")(AvailableServiceNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createContentEnumeration")(createContentEnumeration)
-    __obj.updateDynamic("getAvailableServiceNames")(getAvailableServiceNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AvailableServiceNames = AvailableServiceNames, acquire = acquire, createContentEnumeration = createContentEnumeration, getAvailableServiceNames = getAvailableServiceNames, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContentEnumerationAccess]
   }
 }

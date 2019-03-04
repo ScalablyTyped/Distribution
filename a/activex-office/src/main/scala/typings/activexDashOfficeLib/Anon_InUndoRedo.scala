@@ -20,11 +20,8 @@ object Anon_InUndoRedo {
     OldNode: activexDashOfficeLib.OfficeNs.CustomXMLNode,
     OldParentNode: activexDashOfficeLib.OfficeNs.CustomXMLNode
   ): Anon_InUndoRedo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InUndoRedo")(InUndoRedo)
-    __obj.updateDynamic("OldNextSibling")(OldNextSibling)
-    __obj.updateDynamic("OldNode")(OldNode)
-    __obj.updateDynamic("OldParentNode")(OldParentNode)
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, OldNextSibling = OldNextSibling, OldNode = OldNode, OldParentNode = OldParentNode)
+  
     __obj.asInstanceOf[Anon_InUndoRedo]
   }
 }

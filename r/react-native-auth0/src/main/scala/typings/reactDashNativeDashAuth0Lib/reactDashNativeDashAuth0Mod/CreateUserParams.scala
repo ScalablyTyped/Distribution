@@ -22,10 +22,7 @@ object CreateUserParams {
     metadata: T = null,
     username: java.lang.String = null
   ): CreateUserParams[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(connection = connection, email = email, password = password)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[CreateUserParams[T]]

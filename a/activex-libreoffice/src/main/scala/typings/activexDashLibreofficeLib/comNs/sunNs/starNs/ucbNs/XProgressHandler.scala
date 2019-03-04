@@ -33,13 +33,8 @@ object XProgressHandler {
     release: js.Function0[scala.Unit],
     update: js.Function1[js.Any, scala.Unit]
   ): XProgressHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(acquire = acquire, pop = pop, push = push, queryInterface = queryInterface, release = release, update = update)
+  
     __obj.asInstanceOf[XProgressHandler]
   }
 }

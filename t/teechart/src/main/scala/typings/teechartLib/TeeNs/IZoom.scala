@@ -26,14 +26,8 @@ object IZoom {
     mouseButton: scala.Double,
     reset: js.Function0[scala.Unit]
   ): IZoom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("mouseButton")(mouseButton)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, direction = direction, enabled = enabled, format = format, mouseButton = mouseButton, reset = reset)
+  
     __obj.asInstanceOf[IZoom]
   }
 }

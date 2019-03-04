@@ -83,8 +83,7 @@ object PortalProps {
     renderNode: js.Object = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): PortalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(visible = visible)
     if (children != null) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component)

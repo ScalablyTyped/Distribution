@@ -82,21 +82,8 @@ object XChartType {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XChartType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChartType")(ChartType)
-    __obj.updateDynamic("RoleOfSequenceForSeriesLabel")(RoleOfSequenceForSeriesLabel)
-    __obj.updateDynamic("SupportedMandatoryRoles")(SupportedMandatoryRoles)
-    __obj.updateDynamic("SupportedOptionalRoles")(SupportedOptionalRoles)
-    __obj.updateDynamic("SupportedPropertyRoles")(SupportedPropertyRoles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createCoordinateSystem")(createCoordinateSystem)
-    __obj.updateDynamic("getChartType")(getChartType)
-    __obj.updateDynamic("getRoleOfSequenceForSeriesLabel")(getRoleOfSequenceForSeriesLabel)
-    __obj.updateDynamic("getSupportedMandatoryRoles")(getSupportedMandatoryRoles)
-    __obj.updateDynamic("getSupportedOptionalRoles")(getSupportedOptionalRoles)
-    __obj.updateDynamic("getSupportedPropertyRoles")(getSupportedPropertyRoles)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ChartType = ChartType, RoleOfSequenceForSeriesLabel = RoleOfSequenceForSeriesLabel, SupportedMandatoryRoles = SupportedMandatoryRoles, SupportedOptionalRoles = SupportedOptionalRoles, SupportedPropertyRoles = SupportedPropertyRoles, acquire = acquire, createCoordinateSystem = createCoordinateSystem, getChartType = getChartType, getRoleOfSequenceForSeriesLabel = getRoleOfSequenceForSeriesLabel, getSupportedMandatoryRoles = getSupportedMandatoryRoles, getSupportedOptionalRoles = getSupportedOptionalRoles, getSupportedPropertyRoles = getSupportedPropertyRoles, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XChartType]
   }
 }

@@ -17,8 +17,8 @@ trait IStoreProvider extends js.Object {
 object IStoreProvider {
   @scala.inline
   def apply(setStore: js.Function1[java.lang.String, scala.Unit]): IStoreProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setStore")(setStore)
+    val __obj = js.Dynamic.literal(setStore = setStore)
+  
     __obj.asInstanceOf[IStoreProvider]
   }
 }

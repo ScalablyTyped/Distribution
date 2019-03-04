@@ -18,8 +18,7 @@ object NonCiEnv {
     branch: java.lang.String = null,
     commit: java.lang.String = null
   ): NonCiEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCi")(isCi)
+    val __obj = js.Dynamic.literal(isCi = isCi)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (commit != null) __obj.updateDynamic("commit")(commit)
     __obj.asInstanceOf[NonCiEnv]

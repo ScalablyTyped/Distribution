@@ -49,9 +49,7 @@ object CSSTransitionProps {
     onExiting: reactDashTransitionDashGroupLib.transitionMod.ExitHandler = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   ): CSSTransitionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener)
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

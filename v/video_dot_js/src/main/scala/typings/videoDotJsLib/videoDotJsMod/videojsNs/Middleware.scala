@@ -34,8 +34,8 @@ object Middleware {
       scala.Unit
     ]
   ): Middleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setSource")(setSource)
+    val __obj = js.Dynamic.literal(setSource = setSource)
+  
     __obj.asInstanceOf[Middleware]
   }
 }

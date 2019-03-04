@@ -56,20 +56,9 @@ object Traceback {
     `this`: js.Any,
     `type`: java.lang.String
   ): Traceback = {
-    val __obj = js.Dynamic.literal(`this` = `this`, `type` = `type`)
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("fun")(fun)
-    __obj.updateDynamic("is_ctor")(is_ctor)
-    __obj.updateDynamic("is_eval")(is_eval)
-    __obj.updateDynamic("is_native")(is_native)
-    __obj.updateDynamic("is_top")(is_top)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(col = col, file = file, fun = fun, is_ctor = is_ctor, is_eval = is_eval, is_native = is_native, is_top = is_top, line = line, method = method, name = name, origin = origin, path = path, pos = pos)
+    __obj.updateDynamic("this")(`this`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Traceback]
   }
 }

@@ -21,12 +21,8 @@ object Moji {
     toString: js.Function0[java.lang.String],
     trim: js.Function0[Moji]
   ): Moji = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convert")(convert)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("trim")(trim)
+    val __obj = js.Dynamic.literal(convert = convert, filter = filter, reject = reject, toString = toString, trim = trim)
+  
     __obj.asInstanceOf[Moji]
   }
 }

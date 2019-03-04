@@ -22,9 +22,8 @@ object TextDocumentPositionParams {
     position: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): TextDocumentPositionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(position = position, textDocument = textDocument)
+  
     __obj.asInstanceOf[TextDocumentPositionParams]
   }
 }

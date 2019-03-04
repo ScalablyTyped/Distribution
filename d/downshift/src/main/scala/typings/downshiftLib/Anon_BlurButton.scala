@@ -42,22 +42,8 @@ object Anon_BlurButton {
     touchEnd: downshiftLib.downshiftMod.StateChangeTypes,
     unknown: downshiftLib.downshiftMod.StateChangeTypes
   ): Anon_BlurButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blurButton")(blurButton)
-    __obj.updateDynamic("blurInput")(blurInput)
-    __obj.updateDynamic("changeInput")(changeInput)
-    __obj.updateDynamic("clickButton")(clickButton)
-    __obj.updateDynamic("clickItem")(clickItem)
-    __obj.updateDynamic("controlledPropUpdatedSelectedItem")(controlledPropUpdatedSelectedItem)
-    __obj.updateDynamic("itemMouseEnter")(itemMouseEnter)
-    __obj.updateDynamic("keyDownArrowDown")(keyDownArrowDown)
-    __obj.updateDynamic("keyDownArrowUp")(keyDownArrowUp)
-    __obj.updateDynamic("keyDownEnter")(keyDownEnter)
-    __obj.updateDynamic("keyDownEscape")(keyDownEscape)
-    __obj.updateDynamic("keyDownSpaceButton")(keyDownSpaceButton)
-    __obj.updateDynamic("mouseUp")(mouseUp)
-    __obj.updateDynamic("touchEnd")(touchEnd)
-    __obj.updateDynamic("unknown")(unknown)
+    val __obj = js.Dynamic.literal(blurButton = blurButton, blurInput = blurInput, changeInput = changeInput, clickButton = clickButton, clickItem = clickItem, controlledPropUpdatedSelectedItem = controlledPropUpdatedSelectedItem, itemMouseEnter = itemMouseEnter, keyDownArrowDown = keyDownArrowDown, keyDownArrowUp = keyDownArrowUp, keyDownEnter = keyDownEnter, keyDownEscape = keyDownEscape, keyDownSpaceButton = keyDownSpaceButton, mouseUp = mouseUp, touchEnd = touchEnd, unknown = unknown)
+  
     __obj.asInstanceOf[Anon_BlurButton]
   }
 }

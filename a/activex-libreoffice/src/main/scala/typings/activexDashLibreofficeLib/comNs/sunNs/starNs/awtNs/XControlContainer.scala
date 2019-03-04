@@ -35,16 +35,8 @@ object XControlContainer {
     removeControl: js.Function1[XControl, scala.Unit],
     setStatusText: js.Function1[java.lang.String, scala.Unit]
   ): XControlContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Controls")(Controls)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addControl")(addControl)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getControls")(getControls)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeControl")(removeControl)
-    __obj.updateDynamic("setStatusText")(setStatusText)
+    val __obj = js.Dynamic.literal(Controls = Controls, acquire = acquire, addControl = addControl, getControl = getControl, getControls = getControls, queryInterface = queryInterface, release = release, removeControl = removeControl, setStatusText = setStatusText)
+  
     __obj.asInstanceOf[XControlContainer]
   }
 }

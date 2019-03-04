@@ -19,9 +19,8 @@ trait Versions extends js.Object {
 object Versions {
   @scala.inline
   def apply(protocol: java.lang.String, software: java.lang.String): Versions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("software")(software)
+    val __obj = js.Dynamic.literal(protocol = protocol, software = software)
+  
     __obj.asInstanceOf[Versions]
   }
 }

@@ -36,8 +36,7 @@ object MessageDefinitionAllowedResponse {
     modifierExtension: js.Array[Extension] = null,
     situation: markdown = null
   ): MessageDefinitionAllowedResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_situation != null) __obj.updateDynamic("_situation")(_situation)

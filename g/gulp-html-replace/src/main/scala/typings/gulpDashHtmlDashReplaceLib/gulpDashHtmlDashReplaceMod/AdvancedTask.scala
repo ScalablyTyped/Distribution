@@ -13,9 +13,8 @@ trait AdvancedTask extends js.Object {
 object AdvancedTask {
   @scala.inline
   def apply(src: java.lang.String | js.Array[java.lang.String], tpl: java.lang.String): AdvancedTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    __obj.updateDynamic("tpl")(tpl)
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], tpl = tpl)
+  
     __obj.asInstanceOf[AdvancedTask]
   }
 }

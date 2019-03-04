@@ -18,9 +18,7 @@ object EurekaConfig {
     instance: EurekaInstanceConfig,
     requestMiddleware: EurekaMiddlewareConfig = null
   ): EurekaConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eureka")(eureka)
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(eureka = eureka, instance = instance)
     if (requestMiddleware != null) __obj.updateDynamic("requestMiddleware")(requestMiddleware)
     __obj.asInstanceOf[EurekaConfig]
   }

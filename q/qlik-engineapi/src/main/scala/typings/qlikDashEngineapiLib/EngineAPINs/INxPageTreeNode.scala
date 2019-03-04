@@ -22,9 +22,8 @@ trait INxPageTreeNode extends js.Object {
 object INxPageTreeNode {
   @scala.inline
   def apply(qAllValues: scala.Boolean, qArea: IRect): INxPageTreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAllValues")(qAllValues)
-    __obj.updateDynamic("qArea")(qArea)
+    val __obj = js.Dynamic.literal(qAllValues = qAllValues, qArea = qArea)
+  
     __obj.asInstanceOf[INxPageTreeNode]
   }
 }

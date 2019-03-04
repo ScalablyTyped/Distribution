@@ -48,11 +48,7 @@ object AreaRectangleProps {
     strokeWidth: scala.Int | scala.Double = null,
     transform: java.lang.String = null
   ): AreaRectangleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)

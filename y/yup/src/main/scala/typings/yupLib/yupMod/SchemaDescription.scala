@@ -22,11 +22,8 @@ object SchemaDescription {
     tests: js.Array[java.lang.String],
     `type`: java.lang.String
   ): SchemaDescription = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("tests")(tests)
+    val __obj = js.Dynamic.literal(fields = fields, label = label, meta = meta, tests = tests)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SchemaDescription]
   }
 }

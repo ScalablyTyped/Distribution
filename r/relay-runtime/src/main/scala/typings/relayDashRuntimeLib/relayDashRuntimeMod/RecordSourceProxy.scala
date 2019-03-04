@@ -20,11 +20,8 @@ object RecordSourceProxy {
     get: js.Function1[DataID, RecordProxy | scala.Null],
     getRoot: js.Function0[RecordProxy]
   ): RecordSourceProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getRoot")(getRoot)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getRoot = getRoot)
+  
     __obj.asInstanceOf[RecordSourceProxy]
   }
 }

@@ -49,8 +49,7 @@ object IndicesValidateQueryParams {
     rewrite: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: NameList = null
   ): IndicesValidateQueryParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (!js.isUndefined(analyzeWildcard)) __obj.updateDynamic("analyzeWildcard")(analyzeWildcard)
     if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer)

@@ -14,10 +14,8 @@ trait Anon_DescriptionSheet extends js.Object {
 object Anon_DescriptionSheet {
   @scala.inline
   def apply(Description: java.lang.String, Sheet: java.lang.String, Success: scala.Boolean): Anon_DescriptionSheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Sheet")(Sheet)
-    __obj.updateDynamic("Success")(Success)
+    val __obj = js.Dynamic.literal(Description = Description, Sheet = Sheet, Success = Success)
+  
     __obj.asInstanceOf[Anon_DescriptionSheet]
   }
 }

@@ -26,8 +26,8 @@ object Anon_HandlerRowExpandedStateChanged {
       scala.Unit
     ]
   ): Anon_HandlerRowExpandedStateChanged[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowExpandedStateChanged")(rowExpandedStateChanged)
+    val __obj = js.Dynamic.literal(rowExpandedStateChanged = rowExpandedStateChanged)
+  
     __obj.asInstanceOf[Anon_HandlerRowExpandedStateChanged[TEntity]]
   }
 }

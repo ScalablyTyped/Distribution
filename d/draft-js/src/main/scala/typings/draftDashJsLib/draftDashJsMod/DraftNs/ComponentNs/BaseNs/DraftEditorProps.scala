@@ -236,9 +236,7 @@ object DraftEditorProps {
     textAlignment: DraftTextAlignment = null,
     webDriverTestID: java.lang.String = null
   ): DraftEditorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editorState")(editorState)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(editorState = editorState, onChange = onChange)
     if (ariaActiveDescendantID != null) __obj.updateDynamic("ariaActiveDescendantID")(ariaActiveDescendantID)
     if (ariaAutoComplete != null) __obj.updateDynamic("ariaAutoComplete")(ariaAutoComplete)
     if (ariaControls != null) __obj.updateDynamic("ariaControls")(ariaControls)

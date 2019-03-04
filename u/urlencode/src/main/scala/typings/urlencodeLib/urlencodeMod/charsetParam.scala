@@ -12,8 +12,8 @@ trait charsetParam extends js.Object {
 object charsetParam {
   @scala.inline
   def apply(charset: java.lang.String): charsetParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charset")(charset)
+    val __obj = js.Dynamic.literal(charset = charset)
+  
     __obj.asInstanceOf[charsetParam]
   }
 }

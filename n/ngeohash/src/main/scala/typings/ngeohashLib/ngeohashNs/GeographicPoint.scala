@@ -13,9 +13,8 @@ trait GeographicPoint extends js.Object {
 object GeographicPoint {
   @scala.inline
   def apply(latitude: scala.Double, longitude: scala.Double): GeographicPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
     __obj.asInstanceOf[GeographicPoint]
   }
 }

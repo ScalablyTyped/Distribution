@@ -20,11 +20,8 @@ object Anon_INVALIDPIN {
     MAX_ATTEMPTS_EXCEEDED: chromeDashAppsLib.chromeDashAppsLibStrings.MAX_ATTEMPTS_EXCEEDED,
     UNKNOWN_ERROR: chromeDashAppsLib.chromeDashAppsLibStrings.UNKNOWN_ERROR
   ): Anon_INVALIDPIN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("INVALID_PIN")(INVALID_PIN)
-    __obj.updateDynamic("INVALID_PUK")(INVALID_PUK)
-    __obj.updateDynamic("MAX_ATTEMPTS_EXCEEDED")(MAX_ATTEMPTS_EXCEEDED)
-    __obj.updateDynamic("UNKNOWN_ERROR")(UNKNOWN_ERROR)
+    val __obj = js.Dynamic.literal(INVALID_PIN = INVALID_PIN, INVALID_PUK = INVALID_PUK, MAX_ATTEMPTS_EXCEEDED = MAX_ATTEMPTS_EXCEEDED, UNKNOWN_ERROR = UNKNOWN_ERROR)
+  
     __obj.asInstanceOf[Anon_INVALIDPIN]
   }
 }

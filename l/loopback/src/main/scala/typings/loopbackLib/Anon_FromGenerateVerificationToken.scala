@@ -28,14 +28,8 @@ object Anon_FromGenerateVerificationToken {
     to: java.lang.String,
     `type`: java.lang.String
   ): Anon_FromGenerateVerificationToken = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("generateVerificationToken")(generateVerificationToken)
-    __obj.updateDynamic("redirect")(redirect)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, generateVerificationToken = generateVerificationToken, redirect = redirect, subject = subject, template = template, text = text, to = to)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_FromGenerateVerificationToken]
   }
 }

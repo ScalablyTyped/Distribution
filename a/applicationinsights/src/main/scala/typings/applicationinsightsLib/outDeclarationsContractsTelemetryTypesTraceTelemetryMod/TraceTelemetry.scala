@@ -29,8 +29,7 @@ object TraceTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): TraceTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (severity != null) __obj.updateDynamic("severity")(severity)

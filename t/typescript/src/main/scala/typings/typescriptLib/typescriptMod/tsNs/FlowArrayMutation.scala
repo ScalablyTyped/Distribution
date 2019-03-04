@@ -20,10 +20,7 @@ object FlowArrayMutation {
     node: CallExpression | BinaryExpression,
     id: scala.Int | scala.Double = null
   ): FlowArrayMutation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antecedent")(antecedent)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(antecedent = antecedent, flags = flags, node = node.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowArrayMutation]
   }

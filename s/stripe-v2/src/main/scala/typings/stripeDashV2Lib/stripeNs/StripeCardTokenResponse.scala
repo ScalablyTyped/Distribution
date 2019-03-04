@@ -22,13 +22,9 @@ object StripeCardTokenResponse {
     used: scala.Boolean,
     error: StripeError = null
   ): StripeCardTokenResponse = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("card")(card)
-    __obj.updateDynamic("client_ip")(client_ip)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("used")(used)
+    val __obj = js.Dynamic.literal(card = card, client_ip = client_ip, created = created, id = id, livemode = livemode, used = used)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[StripeCardTokenResponse]
   }

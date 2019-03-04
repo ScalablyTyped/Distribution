@@ -29,14 +29,8 @@ object TryBuilder4 {
       Try[js.Any]
     ]
   ): TryBuilder4[A, B, C, D, E] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("oa")(oa)
-    __obj.updateDynamic("ob")(ob)
-    __obj.updateDynamic("oc")(oc)
-    __obj.updateDynamic("od")(od)
-    __obj.updateDynamic("oe")(oe)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(chain = chain, oa = oa, ob = ob, oc = oc, od = od, oe = oe, run = run)
+  
     __obj.asInstanceOf[TryBuilder4[A, B, C, D, E]]
   }
 }

@@ -43,21 +43,8 @@ object View {
     template: Template,
     templateInstance: js.Function0[TemplateInstance]
   ): View = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autorun")(autorun)
-    __obj.updateDynamic("firstNode")(firstNode)
-    __obj.updateDynamic("isCreated")(isCreated)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("isRendered")(isRendered)
-    __obj.updateDynamic("lastNode")(lastNode)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onViewCreated")(onViewCreated)
-    __obj.updateDynamic("onViewDestroyed")(onViewDestroyed)
-    __obj.updateDynamic("onViewReady")(onViewReady)
-    __obj.updateDynamic("parentView")(parentView)
-    __obj.updateDynamic("renderCount")(renderCount)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("templateInstance")(templateInstance)
+    val __obj = js.Dynamic.literal(autorun = autorun, firstNode = firstNode, isCreated = isCreated, isDestroyed = isDestroyed, isRendered = isRendered, lastNode = lastNode, name = name, onViewCreated = onViewCreated, onViewDestroyed = onViewDestroyed, onViewReady = onViewReady, parentView = parentView, renderCount = renderCount, template = template, templateInstance = templateInstance)
+  
     __obj.asInstanceOf[View]
   }
 }

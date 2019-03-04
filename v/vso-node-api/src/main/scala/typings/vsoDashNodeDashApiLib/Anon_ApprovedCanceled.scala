@@ -26,14 +26,8 @@ object Anon_ApprovedCanceled {
     skipped: scala.Double,
     undefined: scala.Double
   ): Anon_ApprovedCanceled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approved")(approved)
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("reassigned")(reassigned)
-    __obj.updateDynamic("rejected")(rejected)
-    __obj.updateDynamic("skipped")(skipped)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(approved = approved, canceled = canceled, pending = pending, reassigned = reassigned, rejected = rejected, skipped = skipped, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_ApprovedCanceled]
   }
 }

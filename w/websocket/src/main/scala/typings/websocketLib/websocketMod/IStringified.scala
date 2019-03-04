@@ -12,8 +12,8 @@ trait IStringified extends js.Object {
 object IStringified {
   @scala.inline
   def apply(toString: js.Function1[/* repeated */ js.Any, java.lang.String]): IStringified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toString = toString)
+  
     __obj.asInstanceOf[IStringified]
   }
 }

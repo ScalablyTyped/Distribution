@@ -28,12 +28,8 @@ object ObjectTypeInternalSlot {
     `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeInternalSlot,
     value: astDashTypesLib.genKindsMod.FlowTypeKind
   ): ObjectTypeInternalSlot = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, method = method, optional = optional, static = static, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ObjectTypeInternalSlot]
   }
 }

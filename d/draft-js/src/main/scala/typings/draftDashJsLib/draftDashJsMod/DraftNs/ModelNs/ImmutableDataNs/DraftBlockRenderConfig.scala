@@ -13,8 +13,7 @@ trait DraftBlockRenderConfig extends js.Object {
 object DraftBlockRenderConfig {
   @scala.inline
   def apply(element: java.lang.String, wrapper: reactLib.reactMod.ReactNs.ReactElement[_] = null): DraftBlockRenderConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(element = element)
     if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
     __obj.asInstanceOf[DraftBlockRenderConfig]
   }

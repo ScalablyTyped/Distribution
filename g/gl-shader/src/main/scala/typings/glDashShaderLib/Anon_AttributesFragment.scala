@@ -20,11 +20,8 @@ object Anon_AttributesFragment {
     uniforms: js.Array[glDashShaderLib.glDashShaderMod.Parameter],
     vertex: java.lang.String
   ): Anon_AttributesFragment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("uniforms")(uniforms)
-    __obj.updateDynamic("vertex")(vertex)
+    val __obj = js.Dynamic.literal(attributes = attributes, fragment = fragment, uniforms = uniforms, vertex = vertex)
+  
     __obj.asInstanceOf[Anon_AttributesFragment]
   }
 }

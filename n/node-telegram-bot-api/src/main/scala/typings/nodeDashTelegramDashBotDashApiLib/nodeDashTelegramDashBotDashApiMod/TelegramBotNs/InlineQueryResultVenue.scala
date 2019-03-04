@@ -29,12 +29,8 @@ object InlineQueryResultVenue {
     thumb_url: java.lang.String = null,
     thumb_width: scala.Int | scala.Double = null
   ): InlineQueryResultVenue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(address = address, id = id, latitude = latitude, longitude = longitude, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)

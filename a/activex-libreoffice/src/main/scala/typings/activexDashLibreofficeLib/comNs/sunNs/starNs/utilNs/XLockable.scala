@@ -40,10 +40,8 @@ object XLockable {
     lock: js.Function0[scala.Unit],
     unlock: js.Function0[scala.Unit]
   ): XLockable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLocked")(isLocked)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("unlock")(unlock)
+    val __obj = js.Dynamic.literal(isLocked = isLocked, lock = lock, unlock = unlock)
+  
     __obj.asInstanceOf[XLockable]
   }
 }

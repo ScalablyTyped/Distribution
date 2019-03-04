@@ -24,12 +24,7 @@ object SketchMSAssetCollection {
     images: js.Array[_],
     do_objectID: java.lang.String = null
   ): SketchMSAssetCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("gradients")(gradients)
-    __obj.updateDynamic("imageCollection")(imageCollection)
-    __obj.updateDynamic("images")(images)
+    val __obj = js.Dynamic.literal(_class = _class, colors = colors, gradients = gradients, imageCollection = imageCollection, images = images)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSAssetCollection]
   }

@@ -18,8 +18,8 @@ object TypesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TypesListResponse]
     ]
   ): TypesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[TypesResource]
   }
 }

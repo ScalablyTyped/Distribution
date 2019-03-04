@@ -12,8 +12,8 @@ trait CompatibleRedisClient extends js.Object {
 object CompatibleRedisClient {
   @scala.inline
   def apply(multi: js.Function0[js.Any]): CompatibleRedisClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("multi")(multi)
+    val __obj = js.Dynamic.literal(multi = multi)
+  
     __obj.asInstanceOf[CompatibleRedisClient]
   }
 }

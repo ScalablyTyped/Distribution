@@ -22,8 +22,7 @@ object Token {
       java.lang.String | scala.Null | streamDashJsonLib.streamDashJsonLibNumbers.`true` | streamDashJsonLib.streamDashJsonLibNumbers.`false`
     ] = null
   ): Token = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Token]
   }

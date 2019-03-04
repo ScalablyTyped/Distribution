@@ -18,9 +18,8 @@ object UnknownPriceTransactionInfo {
     currencyCode: java.lang.String,
     totalPriceStatus: googlepayLib.googlepayLibStrings.NOT_CURRENTLY_KNOWN
   ): UnknownPriceTransactionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currencyCode")(currencyCode)
-    __obj.updateDynamic("totalPriceStatus")(totalPriceStatus)
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode, totalPriceStatus = totalPriceStatus)
+  
     __obj.asInstanceOf[UnknownPriceTransactionInfo]
   }
 }

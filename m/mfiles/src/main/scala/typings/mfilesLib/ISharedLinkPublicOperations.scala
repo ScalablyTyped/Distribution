@@ -48,12 +48,8 @@ object ISharedLinkPublicOperations {
     ],
     GetSharedLinkInfo: js.Function3[java.lang.String, java.lang.String, INamedValues, ISharedFileInfo]
   ): ISharedLinkPublicOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DownloadSharedFileInBlocks_Begin")(DownloadSharedFileInBlocks_Begin)
-    __obj.updateDynamic("DownloadSharedFileInBlocks_Begin_32bit")(DownloadSharedFileInBlocks_Begin_32bit)
-    __obj.updateDynamic("DownloadSharedFileInBlocks_ReadBlock")(DownloadSharedFileInBlocks_ReadBlock)
-    __obj.updateDynamic("DownloadSharedFileInBlocks_ReadBlock_32bit")(DownloadSharedFileInBlocks_ReadBlock_32bit)
-    __obj.updateDynamic("GetSharedLinkInfo")(GetSharedLinkInfo)
+    val __obj = js.Dynamic.literal(DownloadSharedFileInBlocks_Begin = DownloadSharedFileInBlocks_Begin, DownloadSharedFileInBlocks_Begin_32bit = DownloadSharedFileInBlocks_Begin_32bit, DownloadSharedFileInBlocks_ReadBlock = DownloadSharedFileInBlocks_ReadBlock, DownloadSharedFileInBlocks_ReadBlock_32bit = DownloadSharedFileInBlocks_ReadBlock_32bit, GetSharedLinkInfo = GetSharedLinkInfo)
+  
     __obj.asInstanceOf[ISharedLinkPublicOperations]
   }
 }

@@ -18,9 +18,7 @@ object Anon_InitialI18nStoreInitialLanguage {
     initialLanguage: js.Any,
     StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_InitialI18nStoreInitialLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialI18nStore")(initialI18nStore)
-    __obj.updateDynamic("initialLanguage")(initialLanguage)
+    val __obj = js.Dynamic.literal(initialI18nStore = initialI18nStore, initialLanguage = initialLanguage)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_InitialI18nStoreInitialLanguage]
   }

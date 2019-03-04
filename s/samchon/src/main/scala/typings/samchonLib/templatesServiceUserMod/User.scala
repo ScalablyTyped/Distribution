@@ -23,23 +23,23 @@ abstract class User protected ()
   /**
     * @hidden
     */
-  var `account_id_`: js.Any = js.native
+  var account_id_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `authority_`: js.Any = js.native
+  var authority_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `sequence_`: js.Any = js.native
+  var sequence_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `server_`: js.Any = js.native
+  var server_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `session_id_`: js.Any = js.native
+  var session_id_ : js.Any = js.native
   /**
     * Iterator to the first element.
     *

@@ -38,8 +38,7 @@ object SelectMenuOptions {
     shadow: js.UndefOr[scala.Boolean] = js.undefined,
     theme: java.lang.String = null
   ): SelectMenuOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hidePlaceholderMenuItems")(hidePlaceholderMenuItems)
+    val __obj = js.Dynamic.literal(hidePlaceholderMenuItems = hidePlaceholderMenuItems)
     if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconpos != null) __obj.updateDynamic("iconpos")(iconpos)

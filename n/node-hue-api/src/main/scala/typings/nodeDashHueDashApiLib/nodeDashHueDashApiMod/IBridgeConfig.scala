@@ -62,31 +62,7 @@ object IBridgeConfig {
     zigbeechannel: scala.Double,
     replacesbridgeid: java.lang.String = null
   ): IBridgeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UTC")(UTC)
-    __obj.updateDynamic("apiversion")(apiversion)
-    __obj.updateDynamic("backup")(backup)
-    __obj.updateDynamic("bridgeid")(bridgeid)
-    __obj.updateDynamic("dhcp")(dhcp)
-    __obj.updateDynamic("factorynew")(factorynew)
-    __obj.updateDynamic("gateway")(gateway)
-    __obj.updateDynamic("ipaddress")(ipaddress)
-    __obj.updateDynamic("linkbutton")(linkbutton)
-    __obj.updateDynamic("localtime")(localtime)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("modelid")(modelid)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("netmask")(netmask)
-    __obj.updateDynamic("portalconnection")(portalconnection)
-    __obj.updateDynamic("portalservices")(portalservices)
-    __obj.updateDynamic("portalstate")(portalstate)
-    __obj.updateDynamic("proxyaddress")(proxyaddress)
-    __obj.updateDynamic("proxyport")(proxyport)
-    __obj.updateDynamic("swupdate")(swupdate)
-    __obj.updateDynamic("swversion")(swversion)
-    __obj.updateDynamic("timezone")(timezone)
-    __obj.updateDynamic("whitelist")(whitelist)
-    __obj.updateDynamic("zigbeechannel")(zigbeechannel)
+    val __obj = js.Dynamic.literal(UTC = UTC, apiversion = apiversion, backup = backup, bridgeid = bridgeid, dhcp = dhcp, factorynew = factorynew, gateway = gateway, ipaddress = ipaddress, linkbutton = linkbutton, localtime = localtime, mac = mac, modelid = modelid, name = name, netmask = netmask, portalconnection = portalconnection, portalservices = portalservices, portalstate = portalstate, proxyaddress = proxyaddress, proxyport = proxyport, swupdate = swupdate, swversion = swversion, timezone = timezone, whitelist = whitelist, zigbeechannel = zigbeechannel)
     if (replacesbridgeid != null) __obj.updateDynamic("replacesbridgeid")(replacesbridgeid)
     __obj.asInstanceOf[IBridgeConfig]
   }

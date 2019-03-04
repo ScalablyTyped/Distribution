@@ -24,10 +24,7 @@ object OutgoingMessage {
     messageId: java.lang.String,
     timeToLive: scala.Int | scala.Double = null
   ): OutgoingMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("destinationId")(destinationId)
-    __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(data = data, destinationId = destinationId, messageId = messageId)
     if (timeToLive != null) __obj.updateDynamic("timeToLive")(timeToLive.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutgoingMessage]
   }

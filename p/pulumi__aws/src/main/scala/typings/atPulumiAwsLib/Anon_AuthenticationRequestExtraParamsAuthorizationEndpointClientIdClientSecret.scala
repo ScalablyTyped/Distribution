@@ -34,13 +34,7 @@ object Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientIdClientS
     sessionCookieName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sessionTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientIdClientSecret = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationEndpoint")(authorizationEndpoint.asInstanceOf[js.Any])
-    __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    __obj.updateDynamic("tokenEndpoint")(tokenEndpoint.asInstanceOf[js.Any])
-    __obj.updateDynamic("userInfoEndpoint")(userInfoEndpoint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authorizationEndpoint = authorizationEndpoint.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], tokenEndpoint = tokenEndpoint.asInstanceOf[js.Any], userInfoEndpoint = userInfoEndpoint.asInstanceOf[js.Any])
     if (authenticationRequestExtraParams != null) __obj.updateDynamic("authenticationRequestExtraParams")(authenticationRequestExtraParams.asInstanceOf[js.Any])
     if (onUnauthenticatedRequest != null) __obj.updateDynamic("onUnauthenticatedRequest")(onUnauthenticatedRequest.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

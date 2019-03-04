@@ -13,8 +13,8 @@ trait WordArt extends js.Object {
 object WordArt {
   @scala.inline
   def apply(rendered_text: java.lang.String): WordArt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rendered_text")(rendered_text)
+    val __obj = js.Dynamic.literal(rendered_text = rendered_text)
+  
     __obj.asInstanceOf[WordArt]
   }
 }

@@ -47,17 +47,8 @@ object VakataStatic {
     search: js.Any,
     storage: js.Any
   ): VakataStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("array_filter")(array_filter)
-    __obj.updateDynamic("array_remove")(array_remove)
-    __obj.updateDynamic("array_remove_item")(array_remove_item)
-    __obj.updateDynamic("array_unique")(array_unique)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("dnd")(dnd)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("storage")(storage)
+    val __obj = js.Dynamic.literal(array_filter = array_filter, array_remove = array_remove, array_remove_item = array_remove_item, array_unique = array_unique, attributes = attributes, context = context, dnd = dnd, html = html, search = search, storage = storage)
+  
     __obj.asInstanceOf[VakataStatic]
   }
 }

@@ -21,11 +21,8 @@ object AliasFieldPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): AliasFieldPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, field = field, source = source, target = target)
+  
     __obj.asInstanceOf[AliasFieldPlugin]
   }
 }

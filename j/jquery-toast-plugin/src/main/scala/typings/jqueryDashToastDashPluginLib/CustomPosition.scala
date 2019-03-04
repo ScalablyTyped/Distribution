@@ -20,11 +20,8 @@ object CustomPosition {
     right: scala.Double | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.auto,
     top: scala.Double | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.auto
   ): CustomPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CustomPosition]
   }
 }

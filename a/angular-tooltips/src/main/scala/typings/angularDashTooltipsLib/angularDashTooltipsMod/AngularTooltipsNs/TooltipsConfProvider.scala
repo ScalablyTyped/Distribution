@@ -12,8 +12,8 @@ trait TooltipsConfProvider extends js.Object {
 object TooltipsConfProvider {
   @scala.inline
   def apply(configure: js.Function1[TooltipsConfProviderOptions, scala.Unit]): TooltipsConfProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configure")(configure)
+    val __obj = js.Dynamic.literal(configure = configure)
+  
     __obj.asInstanceOf[TooltipsConfProvider]
   }
 }

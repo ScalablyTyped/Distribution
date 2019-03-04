@@ -19,8 +19,8 @@ object Paragraph {
     `type`: markedLib.markedLibStrings.paragraph,
     pre: js.UndefOr[scala.Boolean] = js.undefined
   ): Paragraph = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre)
     __obj.asInstanceOf[Paragraph]
   }

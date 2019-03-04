@@ -34,8 +34,7 @@ object ISubscriptionCreationOptions {
     trial_from_plan: js.UndefOr[scala.Boolean] = js.undefined,
     trial_period_days: scala.Int | scala.Double = null
   ): ISubscriptionCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customer")(customer)
+    val __obj = js.Dynamic.literal(customer = customer)
     if (application_fee_percent != null) __obj.updateDynamic("application_fee_percent")(application_fee_percent.asInstanceOf[js.Any])
     if (billing != null) __obj.updateDynamic("billing")(billing)
     if (billing_cycle_anchor != null) __obj.updateDynamic("billing_cycle_anchor")(billing_cycle_anchor.asInstanceOf[js.Any])

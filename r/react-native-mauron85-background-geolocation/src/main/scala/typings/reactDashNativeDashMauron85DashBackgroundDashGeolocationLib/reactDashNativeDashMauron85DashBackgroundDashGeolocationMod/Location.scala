@@ -46,17 +46,7 @@ object Location {
     isFromMockProvider: js.UndefOr[scala.Boolean] = js.undefined,
     mockLocationsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("bearing")(bearing)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("locationProvider")(locationProvider)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, bearing = bearing, id = id, latitude = latitude, locationProvider = locationProvider, longitude = longitude, provider = provider, speed = speed, time = time)
     if (!js.isUndefined(isFromMockProvider)) __obj.updateDynamic("isFromMockProvider")(isFromMockProvider)
     if (!js.isUndefined(mockLocationsEnabled)) __obj.updateDynamic("mockLocationsEnabled")(mockLocationsEnabled)
     __obj.asInstanceOf[Location]

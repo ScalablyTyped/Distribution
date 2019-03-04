@@ -24,17 +24,8 @@ object TextFields {
     release: js.Function0[scala.Unit],
     removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit]
   ): TextFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, addRefreshListener = addRefreshListener, createEnumeration = createEnumeration, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, refresh = refresh, release = release, removeRefreshListener = removeRefreshListener)
+  
     __obj.asInstanceOf[TextFields]
   }
 }

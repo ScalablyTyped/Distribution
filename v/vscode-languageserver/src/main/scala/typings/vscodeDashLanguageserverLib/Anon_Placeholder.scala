@@ -16,9 +16,8 @@ object Anon_Placeholder {
     placeholder: java.lang.String,
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
   ): Anon_Placeholder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(placeholder = placeholder, range = range)
+  
     __obj.asInstanceOf[Anon_Placeholder]
   }
 }

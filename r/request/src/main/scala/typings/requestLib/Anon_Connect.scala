@@ -22,12 +22,8 @@ object Anon_Connect {
     response: scala.Double,
     socket: scala.Double
   ): Anon_Connect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("socket")(socket)
+    val __obj = js.Dynamic.literal(connect = connect, end = end, lookup = lookup, response = response, socket = socket)
+  
     __obj.asInstanceOf[Anon_Connect]
   }
 }

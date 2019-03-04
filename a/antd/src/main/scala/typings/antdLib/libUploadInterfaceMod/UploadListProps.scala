@@ -30,8 +30,7 @@ object UploadListProps {
     showPreviewIcon: js.UndefOr[scala.Boolean] = js.undefined,
     showRemoveIcon: js.UndefOr[scala.Boolean] = js.undefined
   ): UploadListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(locale = locale)
     if (items != null) __obj.updateDynamic("items")(items)
     if (listType != null) __obj.updateDynamic("listType")(listType)
     if (onPreview != null) __obj.updateDynamic("onPreview")(onPreview)

@@ -43,15 +43,8 @@ object TableBorderDistances {
     RightDistance: scala.Double,
     TopDistance: scala.Double
   ): TableBorderDistances = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomDistance")(BottomDistance)
-    __obj.updateDynamic("IsBottomDistanceValid")(IsBottomDistanceValid)
-    __obj.updateDynamic("IsLeftDistanceValid")(IsLeftDistanceValid)
-    __obj.updateDynamic("IsRightDistanceValid")(IsRightDistanceValid)
-    __obj.updateDynamic("IsTopDistanceValid")(IsTopDistanceValid)
-    __obj.updateDynamic("LeftDistance")(LeftDistance)
-    __obj.updateDynamic("RightDistance")(RightDistance)
-    __obj.updateDynamic("TopDistance")(TopDistance)
+    val __obj = js.Dynamic.literal(BottomDistance = BottomDistance, IsBottomDistanceValid = IsBottomDistanceValid, IsLeftDistanceValid = IsLeftDistanceValid, IsRightDistanceValid = IsRightDistanceValid, IsTopDistanceValid = IsTopDistanceValid, LeftDistance = LeftDistance, RightDistance = RightDistance, TopDistance = TopDistance)
+  
     __obj.asInstanceOf[TableBorderDistances]
   }
 }

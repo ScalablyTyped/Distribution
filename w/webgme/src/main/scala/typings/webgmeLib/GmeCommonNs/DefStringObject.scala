@@ -18,7 +18,8 @@ object DefStringObject {
     enum: js.Array[java.lang.String] = null,
     regex: java.lang.String = null
   ): DefStringObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (enum != null) __obj.updateDynamic("enum")(enum)
     if (regex != null) __obj.updateDynamic("regex")(regex)
     __obj.asInstanceOf[DefStringObject]

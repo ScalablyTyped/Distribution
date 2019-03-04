@@ -76,39 +76,8 @@ object i18n {
     timeFormatDate: js.Function1[java.lang.String, js.Any],
     timeFormatStr: js.Function1[js.Any, java.lang.String]
   ): i18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendar")(calendar)
-    __obj.updateDynamic("controls")(controls)
-    __obj.updateDynamic("dateFormat")(dateFormat)
-    __obj.updateDynamic("dateFormatDate")(dateFormatDate)
-    __obj.updateDynamic("dateFormatStr")(dateFormatStr)
-    __obj.updateDynamic("decimalDelimiter")(decimalDelimiter)
-    __obj.updateDynamic("decimalSize")(decimalSize)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("fullDateFormat")(fullDateFormat)
-    __obj.updateDynamic("fullDateFormatDate")(fullDateFormatDate)
-    __obj.updateDynamic("fullDateFormatStr")(fullDateFormatStr)
-    __obj.updateDynamic("groupDelimiter")(groupDelimiter)
-    __obj.updateDynamic("groupSize")(groupSize)
-    __obj.updateDynamic("intFormat")(intFormat)
-    __obj.updateDynamic("locales")(locales)
-    __obj.updateDynamic("longDateFormat")(longDateFormat)
-    __obj.updateDynamic("longDateFormatDate")(longDateFormatDate)
-    __obj.updateDynamic("longDateFormatStr")(longDateFormatStr)
-    __obj.updateDynamic("numberFormat")(numberFormat)
-    __obj.updateDynamic("parseFormat")(parseFormat)
-    __obj.updateDynamic("parseFormatDate")(parseFormatDate)
-    __obj.updateDynamic("parseFormatStr")(parseFormatStr)
-    __obj.updateDynamic("parseTimeFormat")(parseTimeFormat)
-    __obj.updateDynamic("parseTimeFormatDate")(parseTimeFormatDate)
-    __obj.updateDynamic("parseTimeFormatStr")(parseTimeFormatStr)
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("priceFormat")(priceFormat)
-    __obj.updateDynamic("priceSettings")(priceSettings)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("timeFormat")(timeFormat)
-    __obj.updateDynamic("timeFormatDate")(timeFormatDate)
-    __obj.updateDynamic("timeFormatStr")(timeFormatStr)
+    val __obj = js.Dynamic.literal(calendar = calendar, controls = controls, dateFormat = dateFormat, dateFormatDate = dateFormatDate, dateFormatStr = dateFormatStr, decimalDelimiter = decimalDelimiter, decimalSize = decimalSize, fileSize = fileSize, fullDateFormat = fullDateFormat, fullDateFormatDate = fullDateFormatDate, fullDateFormatStr = fullDateFormatStr, groupDelimiter = groupDelimiter, groupSize = groupSize, intFormat = intFormat, locales = locales, longDateFormat = longDateFormat, longDateFormatDate = longDateFormatDate, longDateFormatStr = longDateFormatStr, numberFormat = numberFormat, parseFormat = parseFormat, parseFormatDate = parseFormatDate, parseFormatStr = parseFormatStr, parseTimeFormat = parseTimeFormat, parseTimeFormatDate = parseTimeFormatDate, parseTimeFormatStr = parseTimeFormatStr, price = price, priceFormat = priceFormat, priceSettings = priceSettings, setLocale = setLocale, timeFormat = timeFormat, timeFormatDate = timeFormatDate, timeFormatStr = timeFormatStr)
+  
     __obj.asInstanceOf[i18n]
   }
 }

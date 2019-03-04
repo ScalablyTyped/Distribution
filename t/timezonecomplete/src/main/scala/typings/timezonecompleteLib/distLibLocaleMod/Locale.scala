@@ -89,29 +89,8 @@ object Locale {
     weekdayLetters: js.Array[java.lang.String],
     weekdayTwoLetters: js.Array[java.lang.String]
   ): Locale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayPeriodAbbreviated")(dayPeriodAbbreviated)
-    __obj.updateDynamic("dayPeriodNarrow")(dayPeriodNarrow)
-    __obj.updateDynamic("dayPeriodWide")(dayPeriodWide)
-    __obj.updateDynamic("eraAbbreviated")(eraAbbreviated)
-    __obj.updateDynamic("eraNarrow")(eraNarrow)
-    __obj.updateDynamic("eraWide")(eraWide)
-    __obj.updateDynamic("longMonthNames")(longMonthNames)
-    __obj.updateDynamic("longWeekdayNames")(longWeekdayNames)
-    __obj.updateDynamic("monthLetters")(monthLetters)
-    __obj.updateDynamic("quarterAbbreviations")(quarterAbbreviations)
-    __obj.updateDynamic("quarterLetter")(quarterLetter)
-    __obj.updateDynamic("quarterWord")(quarterWord)
-    __obj.updateDynamic("shortMonthNames")(shortMonthNames)
-    __obj.updateDynamic("shortWeekdayNames")(shortWeekdayNames)
-    __obj.updateDynamic("standAloneLongMonthNames")(standAloneLongMonthNames)
-    __obj.updateDynamic("standAloneMonthLetters")(standAloneMonthLetters)
-    __obj.updateDynamic("standAloneQuarterAbbreviations")(standAloneQuarterAbbreviations)
-    __obj.updateDynamic("standAloneQuarterLetter")(standAloneQuarterLetter)
-    __obj.updateDynamic("standAloneQuarterWord")(standAloneQuarterWord)
-    __obj.updateDynamic("standAloneShortMonthNames")(standAloneShortMonthNames)
-    __obj.updateDynamic("weekdayLetters")(weekdayLetters)
-    __obj.updateDynamic("weekdayTwoLetters")(weekdayTwoLetters)
+    val __obj = js.Dynamic.literal(dayPeriodAbbreviated = dayPeriodAbbreviated, dayPeriodNarrow = dayPeriodNarrow, dayPeriodWide = dayPeriodWide, eraAbbreviated = eraAbbreviated, eraNarrow = eraNarrow, eraWide = eraWide, longMonthNames = longMonthNames, longWeekdayNames = longWeekdayNames, monthLetters = monthLetters, quarterAbbreviations = quarterAbbreviations, quarterLetter = quarterLetter, quarterWord = quarterWord, shortMonthNames = shortMonthNames, shortWeekdayNames = shortWeekdayNames, standAloneLongMonthNames = standAloneLongMonthNames, standAloneMonthLetters = standAloneMonthLetters, standAloneQuarterAbbreviations = standAloneQuarterAbbreviations, standAloneQuarterLetter = standAloneQuarterLetter, standAloneQuarterWord = standAloneQuarterWord, standAloneShortMonthNames = standAloneShortMonthNames, weekdayLetters = weekdayLetters, weekdayTwoLetters = weekdayTwoLetters)
+  
     __obj.asInstanceOf[Locale]
   }
 }

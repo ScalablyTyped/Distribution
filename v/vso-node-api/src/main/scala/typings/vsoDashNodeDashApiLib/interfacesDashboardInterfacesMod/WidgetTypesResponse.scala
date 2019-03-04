@@ -14,10 +14,8 @@ trait WidgetTypesResponse extends js.Object {
 object WidgetTypesResponse {
   @scala.inline
   def apply(_links: js.Any, uri: java.lang.String, widgetTypes: js.Array[WidgetMetadata]): WidgetTypesResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("widgetTypes")(widgetTypes)
+    val __obj = js.Dynamic.literal(_links = _links, uri = uri, widgetTypes = widgetTypes)
+  
     __obj.asInstanceOf[WidgetTypesResponse]
   }
 }

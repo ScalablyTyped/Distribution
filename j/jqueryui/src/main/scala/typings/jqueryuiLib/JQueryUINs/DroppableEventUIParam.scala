@@ -21,11 +21,8 @@ object DroppableEventUIParam {
     offset: jqueryuiLib.Anon_Left,
     position: jqueryuiLib.Anon_Left
   ): DroppableEventUIParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("draggable")(draggable)
-    __obj.updateDynamic("helper")(helper)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(draggable = draggable, helper = helper, offset = offset, position = position)
+  
     __obj.asInstanceOf[DroppableEventUIParam]
   }
 }

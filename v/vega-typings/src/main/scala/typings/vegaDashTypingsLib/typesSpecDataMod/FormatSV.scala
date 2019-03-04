@@ -16,7 +16,8 @@ object FormatSV {
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.csv | vegaDashTypingsLib.vegaDashTypingsLibStrings.tsv,
     parse: Parse = null
   ): FormatSV = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatSV]
   }

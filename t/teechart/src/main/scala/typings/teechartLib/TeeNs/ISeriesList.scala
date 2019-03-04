@@ -23,12 +23,8 @@ object ISeriesList {
     firstVisible: js.Function0[ISeries],
     items: js.Array[ISeries]
   ): ISeriesList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anyUsesAxes")(anyUsesAxes)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("clicked")(clicked)
-    __obj.updateDynamic("firstVisible")(firstVisible)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(anyUsesAxes = anyUsesAxes, chart = chart, clicked = clicked, firstVisible = firstVisible, items = items)
+  
     __obj.asInstanceOf[ISeriesList]
   }
 }

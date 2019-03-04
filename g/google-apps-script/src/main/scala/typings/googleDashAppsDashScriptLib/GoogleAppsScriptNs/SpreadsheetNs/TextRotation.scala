@@ -16,9 +16,8 @@ object TextRotation {
     getDegrees: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     isVertical: js.Function0[scala.Boolean]
   ): TextRotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDegrees")(getDegrees)
-    __obj.updateDynamic("isVertical")(isVertical)
+    val __obj = js.Dynamic.literal(getDegrees = getDegrees, isVertical = isVertical)
+  
     __obj.asInstanceOf[TextRotation]
   }
 }

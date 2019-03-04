@@ -35,19 +35,8 @@ object DateTimeFormatter {
     withLocale: js.Function1[Locale, DateTimeFormatter],
     withResolverStyle: js.Function1[ResolverStyle, DateTimeFormatter]
   ): DateTimeFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chronology")(chronology)
-    __obj.updateDynamic("decimalStyle")(decimalStyle)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("parse1")(parse1)
-    __obj.updateDynamic("parse2")(parse2)
-    __obj.updateDynamic("parseUnresolved")(parseUnresolved)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("withChronology")(withChronology)
-    __obj.updateDynamic("withLocale")(withLocale)
-    __obj.updateDynamic("withResolverStyle")(withResolverStyle)
+    val __obj = js.Dynamic.literal(chronology = chronology, decimalStyle = decimalStyle, format = format, locale = locale, parse = parse, parse1 = parse1, parse2 = parse2, parseUnresolved = parseUnresolved, toString = toString, withChronology = withChronology, withLocale = withLocale, withResolverStyle = withResolverStyle)
+  
     __obj.asInstanceOf[DateTimeFormatter]
   }
 }

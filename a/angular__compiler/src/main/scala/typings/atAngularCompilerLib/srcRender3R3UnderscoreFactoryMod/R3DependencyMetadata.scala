@@ -43,13 +43,8 @@ object R3DependencyMetadata {
     skipSelf: scala.Boolean,
     token: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
   ): R3DependencyMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("resolved")(resolved)
-    __obj.updateDynamic("self")(self)
-    __obj.updateDynamic("skipSelf")(skipSelf)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(host = host, optional = optional, resolved = resolved, self = self, skipSelf = skipSelf, token = token)
+  
     __obj.asInstanceOf[R3DependencyMetadata]
   }
 }

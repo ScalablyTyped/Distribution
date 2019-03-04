@@ -24,13 +24,8 @@ object Errors {
     get: js.Function1[java.lang.String, js.Array[java.lang.String]],
     has: js.Function1[java.lang.String, scala.Boolean]
   ): Errors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
+    val __obj = js.Dynamic.literal(add = add, all = all, errors = errors, first = first, get = get, has = has)
+  
     __obj.asInstanceOf[Errors]
   }
 }

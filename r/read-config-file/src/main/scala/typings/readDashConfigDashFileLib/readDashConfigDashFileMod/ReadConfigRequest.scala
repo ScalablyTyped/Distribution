@@ -20,10 +20,7 @@ object ReadConfigRequest {
     projectDir: java.lang.String,
     packageMetadata: lazyDashValLib.lazyDashValMod.Lazy[org.scalablytyped.runtime.StringDictionary[_] | scala.Null] = null
   ): ReadConfigRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configFilename")(configFilename)
-    __obj.updateDynamic("packageKey")(packageKey)
-    __obj.updateDynamic("projectDir")(projectDir)
+    val __obj = js.Dynamic.literal(configFilename = configFilename, packageKey = packageKey, projectDir = projectDir)
     if (packageMetadata != null) __obj.updateDynamic("packageMetadata")(packageMetadata)
     __obj.asInstanceOf[ReadConfigRequest]
   }

@@ -30,10 +30,8 @@ object ICommand {
     execute: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
     isExecuting: scala.Boolean
   ): ICommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canExecute")(canExecute)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("isExecuting")(isExecuting)
+    val __obj = js.Dynamic.literal(canExecute = canExecute, execute = execute, isExecuting = isExecuting)
+  
     __obj.asInstanceOf[ICommand]
   }
 }

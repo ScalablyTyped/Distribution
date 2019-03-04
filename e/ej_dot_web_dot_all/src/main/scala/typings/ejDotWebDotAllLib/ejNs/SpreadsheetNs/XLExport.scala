@@ -24,9 +24,8 @@ object XLExport {
     export: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     getExportProps: js.Function0[js.Any]
   ): XLExport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("getExportProps")(getExportProps)
+    val __obj = js.Dynamic.literal(export = export, getExportProps = getExportProps)
+  
     __obj.asInstanceOf[XLExport]
   }
 }

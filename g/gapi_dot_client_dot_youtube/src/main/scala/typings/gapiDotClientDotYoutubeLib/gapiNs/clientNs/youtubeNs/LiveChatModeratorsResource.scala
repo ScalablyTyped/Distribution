@@ -30,10 +30,8 @@ object LiveChatModeratorsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[LiveChatModeratorListResponse]
     ]
   ): LiveChatModeratorsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list)
+  
     __obj.asInstanceOf[LiveChatModeratorsResource]
   }
 }

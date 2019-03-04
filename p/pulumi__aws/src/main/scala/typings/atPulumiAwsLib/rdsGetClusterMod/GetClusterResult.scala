@@ -67,33 +67,8 @@ object GetClusterResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("availabilityZones")(availabilityZones)
-    __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod)
-    __obj.updateDynamic("clusterMembers")(clusterMembers)
-    __obj.updateDynamic("clusterResourceId")(clusterResourceId)
-    __obj.updateDynamic("databaseName")(databaseName)
-    __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName)
-    __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName)
-    __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("engineVersion")(engineVersion)
-    __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier)
-    __obj.updateDynamic("iamDatabaseAuthenticationEnabled")(iamDatabaseAuthenticationEnabled)
-    __obj.updateDynamic("iamRoles")(iamRoles)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("masterUsername")(masterUsername)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow)
-    __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow)
-    __obj.updateDynamic("readerEndpoint")(readerEndpoint)
-    __obj.updateDynamic("replicationSourceIdentifier")(replicationSourceIdentifier)
-    __obj.updateDynamic("storageEncrypted")(storageEncrypted)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, backupRetentionPeriod = backupRetentionPeriod, clusterMembers = clusterMembers, clusterResourceId = clusterResourceId, databaseName = databaseName, dbClusterParameterGroupName = dbClusterParameterGroupName, dbSubnetGroupName = dbSubnetGroupName, enabledCloudwatchLogsExports = enabledCloudwatchLogsExports, endpoint = endpoint, engine = engine, engineVersion = engineVersion, finalSnapshotIdentifier = finalSnapshotIdentifier, iamDatabaseAuthenticationEnabled = iamDatabaseAuthenticationEnabled, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, port = port, preferredBackupWindow = preferredBackupWindow, preferredMaintenanceWindow = preferredMaintenanceWindow, readerEndpoint = readerEndpoint, replicationSourceIdentifier = replicationSourceIdentifier, storageEncrypted = storageEncrypted, tags = tags, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
     __obj.asInstanceOf[GetClusterResult]
   }
 }

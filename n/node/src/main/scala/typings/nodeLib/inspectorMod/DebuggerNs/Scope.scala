@@ -39,7 +39,9 @@ object Scope {
     name: java.lang.String = null,
     startLocation: Location = null
   ): Scope = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (endLocation != null) __obj.updateDynamic("endLocation")(endLocation)
     if (name != null) __obj.updateDynamic("name")(name)
     if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation)

@@ -34,10 +34,7 @@ object EllipseShape {
     Shape: Shape = null,
     Text: Text = null
   ): EllipseShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CircleEndAngle")(CircleEndAngle)
-    __obj.updateDynamic("CircleKind")(CircleKind)
-    __obj.updateDynamic("CircleStartAngle")(CircleStartAngle)
+    val __obj = js.Dynamic.literal(CircleEndAngle = CircleEndAngle, CircleKind = CircleKind, CircleStartAngle = CircleStartAngle)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)

@@ -22,12 +22,8 @@ object Anon_HealthyThresholdIntervalTargetTimeout {
     timeout: atPulumiPulumiLib.outputMod.Input[scala.Double],
     unhealthyThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double]
   ): Anon_HealthyThresholdIntervalTargetTimeout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
-    __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_HealthyThresholdIntervalTargetTimeout]
   }
 }

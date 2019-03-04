@@ -12,8 +12,8 @@ trait Slugger extends js.Object {
 object Slugger {
   @scala.inline
   def apply(slug: js.Function1[java.lang.String, java.lang.String]): Slugger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(slug = slug)
+  
     __obj.asInstanceOf[Slugger]
   }
 }

@@ -35,12 +35,8 @@ object Strong4 {
       fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Tuple2[js.Any, js.Any], js.Tuple2[js.Any, js.Any]]
     ]
   ): Strong4[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("promap")(promap)
-    __obj.updateDynamic("second")(second)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], first = first, map = map, promap = promap, second = second)
+  
     __obj.asInstanceOf[Strong4[F]]
   }
 }

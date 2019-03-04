@@ -36,12 +36,8 @@ object XMailMergeBroadcaster {
     release: js.Function0[scala.Unit],
     removeMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit]
   ): XMailMergeBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addMailMergeEventListener")(addMailMergeEventListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeMailMergeEventListener")(removeMailMergeEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addMailMergeEventListener = addMailMergeEventListener, queryInterface = queryInterface, release = release, removeMailMergeEventListener = removeMailMergeEventListener)
+  
     __obj.asInstanceOf[XMailMergeBroadcaster]
   }
 }

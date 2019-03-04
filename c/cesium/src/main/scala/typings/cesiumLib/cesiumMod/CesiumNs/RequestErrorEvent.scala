@@ -19,11 +19,8 @@ object RequestErrorEvent {
     statusCode: scala.Double,
     toString: js.Function0[java.lang.String]
   ): RequestErrorEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(response = response, responseHeaders = responseHeaders, statusCode = statusCode, toString = toString)
+  
     __obj.asInstanceOf[RequestErrorEvent]
   }
 }

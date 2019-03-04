@@ -27,9 +27,8 @@ object RTCIceCandidateAttributes {
     priority: scala.Int | scala.Double = null,
     transport: java.lang.String = null
   ): RTCIceCandidateAttributes = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     if (addressSourceUrl != null) __obj.updateDynamic("addressSourceUrl")(addressSourceUrl)
     if (candidateType != null) __obj.updateDynamic("candidateType")(candidateType)
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)

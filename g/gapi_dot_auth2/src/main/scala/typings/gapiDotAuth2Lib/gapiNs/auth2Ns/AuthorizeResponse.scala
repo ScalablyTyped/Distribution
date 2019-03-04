@@ -33,16 +33,8 @@ object AuthorizeResponse {
     id_token: java.lang.String,
     scope: java.lang.String
   ): AuthorizeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("error_subtype")(error_subtype)
-    __obj.updateDynamic("expires_at")(expires_at)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("first_issued_at")(first_issued_at)
-    __obj.updateDynamic("id_token")(id_token)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(access_token = access_token, code = code, error = error, error_subtype = error_subtype, expires_at = expires_at, expires_in = expires_in, first_issued_at = first_issued_at, id_token = id_token, scope = scope)
+  
     __obj.asInstanceOf[AuthorizeResponse]
   }
 }

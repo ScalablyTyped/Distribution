@@ -36,10 +36,16 @@ object Anon_Browser {
     `User-Language`: java.lang.String,
     UtcOffset: scala.Double
   ): Anon_Browser = {
-    val __obj = js.Dynamic.literal(`Browser-Height` = `Browser-Height`, `Browser-Name` = `Browser-Name`, `Browser-Version` = `Browser-Version`, `Browser-Width` = `Browser-Width`, `Color-Depth` = `Color-Depth`, `Document-Mode` = `Document-Mode`, `Screen-Height` = `Screen-Height`, `Screen-Width` = `Screen-Width`, `User-Language` = `User-Language`)
-    __obj.updateDynamic("Browser")(Browser)
-    __obj.updateDynamic("Platform")(Platform)
-    __obj.updateDynamic("UtcOffset")(UtcOffset)
+    val __obj = js.Dynamic.literal(Browser = Browser, Platform = Platform, UtcOffset = UtcOffset)
+    __obj.updateDynamic("Browser-Height")(`Browser-Height`)
+    __obj.updateDynamic("Browser-Name")(`Browser-Name`)
+    __obj.updateDynamic("Browser-Version")(`Browser-Version`)
+    __obj.updateDynamic("Browser-Width")(`Browser-Width`)
+    __obj.updateDynamic("Color-Depth")(`Color-Depth`)
+    __obj.updateDynamic("Document-Mode")(`Document-Mode`)
+    __obj.updateDynamic("Screen-Height")(`Screen-Height`)
+    __obj.updateDynamic("Screen-Width")(`Screen-Width`)
+    __obj.updateDynamic("User-Language")(`User-Language`)
     __obj.asInstanceOf[Anon_Browser]
   }
 }

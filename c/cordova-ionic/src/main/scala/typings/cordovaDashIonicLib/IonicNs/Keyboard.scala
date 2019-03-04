@@ -44,12 +44,8 @@ object Keyboard {
     isVisible: scala.Boolean,
     show: js.Function0[scala.Unit]
   ): Keyboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("disableScroll")(disableScroll)
-    __obj.updateDynamic("hideKeyboardAccessoryBar")(hideKeyboardAccessoryBar)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(close = close, disableScroll = disableScroll, hideKeyboardAccessoryBar = hideKeyboardAccessoryBar, isVisible = isVisible, show = show)
+  
     __obj.asInstanceOf[Keyboard]
   }
 }

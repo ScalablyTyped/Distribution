@@ -13,8 +13,8 @@ trait Symbol extends js.Object {
 object Symbol {
   @scala.inline
   def apply(observable: js.Symbol): Symbol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("observable")(observable)
+    val __obj = js.Dynamic.literal(observable = observable)
+  
     __obj.asInstanceOf[Symbol]
   }
 }

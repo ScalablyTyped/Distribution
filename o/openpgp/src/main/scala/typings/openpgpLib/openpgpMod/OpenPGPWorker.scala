@@ -22,12 +22,8 @@ object OpenPGPWorker {
     response: js.Function1[js.Any, scala.Unit],
     seedRandom: js.Function1[stdLib.ArrayBuffer, scala.Unit]
   ): OpenPGPWorker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configure")(configure)
-    __obj.updateDynamic("delegate")(delegate)
-    __obj.updateDynamic("randomCallback")(randomCallback)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("seedRandom")(seedRandom)
+    val __obj = js.Dynamic.literal(configure = configure, delegate = delegate, randomCallback = randomCallback, response = response, seedRandom = seedRandom)
+  
     __obj.asInstanceOf[OpenPGPWorker]
   }
 }

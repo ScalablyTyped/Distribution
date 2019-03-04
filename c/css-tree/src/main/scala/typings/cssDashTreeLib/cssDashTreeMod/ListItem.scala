@@ -14,8 +14,7 @@ trait ListItem[TData] extends js.Object {
 object ListItem {
   @scala.inline
   def apply[TData](data: TData, next: ListItem[TData] = null, prev: ListItem[TData] = null): ListItem[TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next)
     if (prev != null) __obj.updateDynamic("prev")(prev)
     __obj.asInstanceOf[ListItem[TData]]

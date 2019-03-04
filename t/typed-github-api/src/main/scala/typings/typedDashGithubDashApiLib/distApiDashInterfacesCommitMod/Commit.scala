@@ -24,17 +24,8 @@ object Commit {
     stats: typedDashGithubDashApiLib.Anon_Additions,
     url: java.lang.String
   ): Commit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("comments_url")(comments_url)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("committer")(committer)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("parents")(parents)
-    __obj.updateDynamic("sha")(sha)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(author = author, comments_url = comments_url, commit = commit, committer = committer, files = files, html_url = html_url, parents = parents, sha = sha, stats = stats, url = url)
+  
     __obj.asInstanceOf[Commit]
   }
 }

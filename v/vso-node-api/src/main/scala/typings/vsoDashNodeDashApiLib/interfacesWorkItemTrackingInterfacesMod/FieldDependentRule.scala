@@ -15,10 +15,8 @@ trait FieldDependentRule extends WorkItemTrackingResource {
 object FieldDependentRule {
   @scala.inline
   def apply(_links: js.Any, dependentFields: js.Array[WorkItemFieldReference], url: java.lang.String): FieldDependentRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("dependentFields")(dependentFields)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, dependentFields = dependentFields, url = url)
+  
     __obj.asInstanceOf[FieldDependentRule]
   }
 }

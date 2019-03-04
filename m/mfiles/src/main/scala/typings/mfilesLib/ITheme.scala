@@ -16,8 +16,7 @@ object ITheme {
     last: mfilesLib.mfilesLibNumbers.`0`,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double] = null
   ): ITheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("last")(last)
+    val __obj = js.Dynamic.literal(last = last)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ITheme]
   }

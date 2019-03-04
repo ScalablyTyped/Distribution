@@ -20,8 +20,7 @@ object CustomLauncher {
     flags: js.Array[java.lang.String] = null,
     platform: java.lang.String = null
   ): CustomLauncher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
+    val __obj = js.Dynamic.literal(base = base)
     if (browserName != null) __obj.updateDynamic("browserName")(browserName)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (platform != null) __obj.updateDynamic("platform")(platform)

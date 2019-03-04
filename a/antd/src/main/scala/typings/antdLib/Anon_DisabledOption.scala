@@ -18,9 +18,7 @@ object Anon_DisabledOption {
     value: js.Any,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DisabledOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toggleOption")(toggleOption)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(toggleOption = toggleOption, value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[Anon_DisabledOption]
   }

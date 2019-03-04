@@ -16,8 +16,7 @@ object Anon_NodeId {
     nodeId: js.Any,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_NodeId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeId")(nodeId)
+    val __obj = js.Dynamic.literal(nodeId = nodeId)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_NodeId]
   }

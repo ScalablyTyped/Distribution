@@ -12,8 +12,8 @@ trait DataSourceTransportBatchOptionsData extends js.Object {
 object DataSourceTransportBatchOptionsData {
   @scala.inline
   def apply(models: js.Array[_]): DataSourceTransportBatchOptionsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("models")(models)
+    val __obj = js.Dynamic.literal(models = models)
+  
     __obj.asInstanceOf[DataSourceTransportBatchOptionsData]
   }
 }

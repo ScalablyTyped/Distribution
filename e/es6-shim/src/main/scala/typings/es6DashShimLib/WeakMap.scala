@@ -20,11 +20,8 @@ object WeakMap {
     has: js.Function1[K, scala.Boolean],
     set: js.Function2[K, V, WeakMap[K, V]]
   ): WeakMap[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, has = has, set = set)
+  
     __obj.asInstanceOf[WeakMap[K, V]]
   }
 }

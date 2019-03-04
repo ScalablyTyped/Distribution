@@ -41,12 +41,8 @@ object XDocumentRevisionListPersistence {
       scala.Unit
     ]
   ): XDocumentRevisionListPersistence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(acquire = acquire, load = load, queryInterface = queryInterface, release = release, store = store)
+  
     __obj.asInstanceOf[XDocumentRevisionListPersistence]
   }
 }

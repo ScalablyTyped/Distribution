@@ -60,15 +60,7 @@ object PrintTemplateLayoutOptions {
     titleText: java.lang.String,
     scalebarUnit: java.lang.String = null
   ): PrintTemplateLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorText")(authorText)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("copyrightText")(copyrightText)
-    __obj.updateDynamic("customTextElements")(customTextElements)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("legendLayers")(legendLayers)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("titleText")(titleText)
+    val __obj = js.Dynamic.literal(authorText = authorText, constructor = constructor, copyrightText = copyrightText, customTextElements = customTextElements, hasOwnProperty = hasOwnProperty, legendLayers = legendLayers, propertyIsEnumerable = propertyIsEnumerable, titleText = titleText)
     if (scalebarUnit != null) __obj.updateDynamic("scalebarUnit")(scalebarUnit)
     __obj.asInstanceOf[PrintTemplateLayoutOptions]
   }

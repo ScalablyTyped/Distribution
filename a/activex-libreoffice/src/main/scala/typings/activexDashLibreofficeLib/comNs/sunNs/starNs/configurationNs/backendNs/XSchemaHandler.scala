@@ -174,25 +174,8 @@ object XSchemaHandler {
     startSet: js.Function3[java.lang.String, scala.Double, TemplateIdentifier, scala.Unit],
     startSetTemplate: js.Function3[TemplateIdentifier, scala.Double, TemplateIdentifier, scala.Unit]
   ): XSchemaHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addInstance")(addInstance)
-    __obj.updateDynamic("addItemType")(addItemType)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("addPropertyWithDefault")(addPropertyWithDefault)
-    __obj.updateDynamic("endComponent")(endComponent)
-    __obj.updateDynamic("endNode")(endNode)
-    __obj.updateDynamic("endSchema")(endSchema)
-    __obj.updateDynamic("endTemplate")(endTemplate)
-    __obj.updateDynamic("importComponent")(importComponent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startComponent")(startComponent)
-    __obj.updateDynamic("startGroup")(startGroup)
-    __obj.updateDynamic("startGroupTemplate")(startGroupTemplate)
-    __obj.updateDynamic("startSchema")(startSchema)
-    __obj.updateDynamic("startSet")(startSet)
-    __obj.updateDynamic("startSetTemplate")(startSetTemplate)
+    val __obj = js.Dynamic.literal(acquire = acquire, addInstance = addInstance, addItemType = addItemType, addProperty = addProperty, addPropertyWithDefault = addPropertyWithDefault, endComponent = endComponent, endNode = endNode, endSchema = endSchema, endTemplate = endTemplate, importComponent = importComponent, queryInterface = queryInterface, release = release, startComponent = startComponent, startGroup = startGroup, startGroupTemplate = startGroupTemplate, startSchema = startSchema, startSet = startSet, startSetTemplate = startSetTemplate)
+  
     __obj.asInstanceOf[XSchemaHandler]
   }
 }

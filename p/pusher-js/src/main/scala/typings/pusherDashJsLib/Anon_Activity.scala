@@ -22,12 +22,8 @@ object Anon_Activity {
     message: js.Function1[java.lang.String, scala.Unit],
     ping: js.Function0[scala.Unit]
   ): Anon_Activity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activity")(activity)
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("ping")(ping)
+    val __obj = js.Dynamic.literal(activity = activity, closed = closed, error = error, message = message, ping = ping)
+  
     __obj.asInstanceOf[Anon_Activity]
   }
 }

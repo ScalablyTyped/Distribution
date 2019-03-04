@@ -42,21 +42,8 @@ object Anon_Add {
     or: js.Array[java.lang.String],
     sub: js.Array[java.lang.String]
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("div")(div)
-    __obj.updateDynamic("eq")(eq)
-    __obj.updateDynamic("ge")(ge)
-    __obj.updateDynamic("gt")(gt)
-    __obj.updateDynamic("le")(le)
-    __obj.updateDynamic("lt")(lt)
-    __obj.updateDynamic("mod")(mod)
-    __obj.updateDynamic("mul")(mul)
-    __obj.updateDynamic("ne")(ne)
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("or")(or)
-    __obj.updateDynamic("sub")(sub)
+    val __obj = js.Dynamic.literal(add = add, and = and, div = div, eq = eq, ge = ge, gt = gt, le = le, lt = lt, mod = mod, mul = mul, ne = ne, not = not, or = or, sub = sub)
+  
     __obj.asInstanceOf[Anon_Add]
   }
 }

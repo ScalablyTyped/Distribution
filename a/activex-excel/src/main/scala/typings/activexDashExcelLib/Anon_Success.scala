@@ -13,9 +13,8 @@ trait Anon_Success extends js.Object {
 object Anon_Success {
   @scala.inline
   def apply(Success: scala.Boolean, Wb: activexDashExcelLib.ExcelNs.Workbook): Anon_Success = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Success")(Success)
-    __obj.updateDynamic("Wb")(Wb)
+    val __obj = js.Dynamic.literal(Success = Success, Wb = Wb)
+  
     __obj.asInstanceOf[Anon_Success]
   }
 }

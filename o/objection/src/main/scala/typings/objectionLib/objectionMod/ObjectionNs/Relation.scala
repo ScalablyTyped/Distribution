@@ -30,16 +30,8 @@ object Relation {
     relatedModelClass: ModelClass[_],
     relatedProp: RelationProperty
   ): Relation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("joinModelClass")(joinModelClass)
-    __obj.updateDynamic("joinTable")(joinTable)
-    __obj.updateDynamic("joinTableOwnerProp")(joinTableOwnerProp)
-    __obj.updateDynamic("joinTableRelatedProp")(joinTableRelatedProp)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ownerModelClass")(ownerModelClass)
-    __obj.updateDynamic("ownerProp")(ownerProp)
-    __obj.updateDynamic("relatedModelClass")(relatedModelClass)
-    __obj.updateDynamic("relatedProp")(relatedProp)
+    val __obj = js.Dynamic.literal(joinModelClass = joinModelClass, joinTable = joinTable, joinTableOwnerProp = joinTableOwnerProp, joinTableRelatedProp = joinTableRelatedProp, name = name, ownerModelClass = ownerModelClass, ownerProp = ownerProp, relatedModelClass = relatedModelClass, relatedProp = relatedProp)
+  
     __obj.asInstanceOf[Relation]
   }
 }

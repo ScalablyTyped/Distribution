@@ -25,8 +25,7 @@ object HttpsProxyOptions {
     proxyAuth: java.lang.String = null,
     servername: java.lang.String = null
   ): HttpsProxyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
     if (ca != null) __obj.updateDynamic("ca")(ca)
     if (cert != null) __obj.updateDynamic("cert")(cert)
     if (host != null) __obj.updateDynamic("host")(host)

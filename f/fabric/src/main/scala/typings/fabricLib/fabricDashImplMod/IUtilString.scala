@@ -33,10 +33,8 @@ object IUtilString {
     capitalize: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
     escapeXml: js.Function1[java.lang.String, java.lang.String]
   ): IUtilString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("camelize")(camelize)
-    __obj.updateDynamic("capitalize")(capitalize)
-    __obj.updateDynamic("escapeXml")(escapeXml)
+    val __obj = js.Dynamic.literal(camelize = camelize, capitalize = capitalize, escapeXml = escapeXml)
+  
     __obj.asInstanceOf[IUtilString]
   }
 }

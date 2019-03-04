@@ -55,13 +55,9 @@ object IEvent {
     `type`: java.lang.String,
     request: java.lang.String = null
   ): IEvent = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("api_version")(api_version)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("pending_webhooks")(pending_webhooks)
+    val __obj = js.Dynamic.literal(api_version = api_version, created = created, data = data, id = id, livemode = livemode, pending_webhooks = pending_webhooks)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (request != null) __obj.updateDynamic("request")(request)
     __obj.asInstanceOf[IEvent]
   }

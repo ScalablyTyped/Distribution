@@ -12,8 +12,8 @@ trait Anon_Includedirectories extends js.Object {
 object Anon_Includedirectories {
   @scala.inline
   def apply(include_directories: scala.Boolean): Anon_Includedirectories = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("include_directories")(include_directories)
+    val __obj = js.Dynamic.literal(include_directories = include_directories)
+  
     __obj.asInstanceOf[Anon_Includedirectories]
   }
 }

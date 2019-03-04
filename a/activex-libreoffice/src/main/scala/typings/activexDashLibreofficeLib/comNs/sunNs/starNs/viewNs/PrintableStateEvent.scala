@@ -20,9 +20,8 @@ trait PrintableStateEvent
 object PrintableStateEvent {
   @scala.inline
   def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, State: PrintableState): PrintableStateEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("State")(State)
+    val __obj = js.Dynamic.literal(Source = Source, State = State)
+  
     __obj.asInstanceOf[PrintableStateEvent]
   }
 }

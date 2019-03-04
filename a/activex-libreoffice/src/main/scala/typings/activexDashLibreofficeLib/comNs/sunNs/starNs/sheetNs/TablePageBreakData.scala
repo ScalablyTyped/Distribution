@@ -19,9 +19,8 @@ trait TablePageBreakData extends js.Object {
 object TablePageBreakData {
   @scala.inline
   def apply(ManualBreak: scala.Boolean, Position: scala.Double): TablePageBreakData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ManualBreak")(ManualBreak)
-    __obj.updateDynamic("Position")(Position)
+    val __obj = js.Dynamic.literal(ManualBreak = ManualBreak, Position = Position)
+  
     __obj.asInstanceOf[TablePageBreakData]
   }
 }

@@ -18,8 +18,7 @@ object PromiseState {
     reason: js.Any = null,
     value: T = null
   ): PromiseState[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseState[T]]

@@ -42,22 +42,8 @@ object Anon_Add {
     sum: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof sum */ js.Any,
     sumBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof sumBy */ js.Any
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("ceil")(ceil)
-    __obj.updateDynamic("divide")(divide)
-    __obj.updateDynamic("floor")(floor)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("maxBy")(maxBy)
-    __obj.updateDynamic("mean")(mean)
-    __obj.updateDynamic("meanBy")(meanBy)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("minBy")(minBy)
-    __obj.updateDynamic("multiply")(multiply)
-    __obj.updateDynamic("round")(round)
-    __obj.updateDynamic("subtract")(subtract)
-    __obj.updateDynamic("sum")(sum)
-    __obj.updateDynamic("sumBy")(sumBy)
+    val __obj = js.Dynamic.literal(add = add, ceil = ceil, divide = divide, floor = floor, max = max, maxBy = maxBy, mean = mean, meanBy = meanBy, min = min, minBy = minBy, multiply = multiply, round = round, subtract = subtract, sum = sum, sumBy = sumBy)
+  
     __obj.asInstanceOf[Anon_Add]
   }
 }

@@ -31,11 +31,8 @@ object TSMappedType {
     trailingComments: js.Array[Comment] = null,
     typeAnnotation: TSType = null
   ): TSMappedType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("typeParameter")(typeParameter)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start, typeParameter = typeParameter)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)

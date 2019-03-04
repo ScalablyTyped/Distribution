@@ -12,8 +12,8 @@ trait ErrorCause extends js.Object {
 object ErrorCause {
   @scala.inline
   def apply(requestId: java.lang.String): ErrorCause = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(requestId = requestId)
+  
     __obj.asInstanceOf[ErrorCause]
   }
 }

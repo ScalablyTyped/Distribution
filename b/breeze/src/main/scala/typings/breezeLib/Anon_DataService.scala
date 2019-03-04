@@ -18,10 +18,8 @@ object Anon_DataService {
     getUrl: js.Function0[java.lang.String],
     query: breezeLib.breezeNs.EntityQuery
   ): Anon_DataService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataService")(dataService)
-    __obj.updateDynamic("getUrl")(getUrl)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(dataService = dataService, getUrl = getUrl, query = query)
+  
     __obj.asInstanceOf[Anon_DataService]
   }
 }

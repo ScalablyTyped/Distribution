@@ -18,10 +18,8 @@ object Anon_DisabledStyle {
     overStyle: reactLib.reactMod.ReactNs.SVGAttributes[js.Object],
     style: reactLib.reactMod.ReactNs.SVGAttributes[js.Object]
   ): Anon_DisabledStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabledStyle")(disabledStyle)
-    __obj.updateDynamic("overStyle")(overStyle)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(disabledStyle = disabledStyle, overStyle = overStyle, style = style)
+  
     __obj.asInstanceOf[Anon_DisabledStyle]
   }
 }

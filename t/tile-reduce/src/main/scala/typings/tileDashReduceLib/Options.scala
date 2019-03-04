@@ -36,10 +36,7 @@ object Options {
     tileStream: js.Any = null,
     tiles: js.Array[tileDashReduceLib.TileReduceNs.Tile] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(map = map, sources = sources, zoom = zoom)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox)
     if (geojson != null) __obj.updateDynamic("geojson")(geojson)
     if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)

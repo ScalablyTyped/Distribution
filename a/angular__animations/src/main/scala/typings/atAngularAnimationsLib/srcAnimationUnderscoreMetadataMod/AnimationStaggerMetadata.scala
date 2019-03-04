@@ -23,9 +23,8 @@ object AnimationStaggerMetadata {
     timings: java.lang.String | scala.Double,
     `type`: AnimationMetadataType
   ): AnimationStaggerMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    __obj.updateDynamic("timings")(timings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], timings = timings.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnimationStaggerMetadata]
   }
 }

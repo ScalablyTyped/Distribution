@@ -12,8 +12,8 @@ trait Text extends js.Object {
 object Text {
   @scala.inline
   def apply(text: js.Array[java.lang.String]): Text = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+  
     __obj.asInstanceOf[Text]
   }
 }

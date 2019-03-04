@@ -12,8 +12,8 @@ trait InterpolationOptions extends js.Object {
 object InterpolationOptions {
   @scala.inline
   def apply(parametrization: ParametrizationInterpolationType): InterpolationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parametrization")(parametrization)
+    val __obj = js.Dynamic.literal(parametrization = parametrization)
+  
     __obj.asInstanceOf[InterpolationOptions]
   }
 }

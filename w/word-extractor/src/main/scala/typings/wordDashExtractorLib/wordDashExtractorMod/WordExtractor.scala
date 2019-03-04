@@ -17,8 +17,8 @@ object WordExtractor {
       js.Promise[wordDashExtractorLib.wordDashExtractorMod.WordExtractorNs.Document]
     ]
   ): WordExtractor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extract")(extract)
+    val __obj = js.Dynamic.literal(extract = extract)
+  
     __obj.asInstanceOf[WordExtractor]
   }
 }

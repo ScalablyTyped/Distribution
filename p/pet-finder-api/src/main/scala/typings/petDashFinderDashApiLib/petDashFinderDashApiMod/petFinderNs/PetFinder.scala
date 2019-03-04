@@ -86,15 +86,8 @@ object PetFinder {
       scala.Unit
     ]
   ): PetFinder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findPet")(findPet)
-    __obj.updateDynamic("findShelter")(findShelter)
-    __obj.updateDynamic("getBreedList")(getBreedList)
-    __obj.updateDynamic("getPet")(getPet)
-    __obj.updateDynamic("getPetsInShelter")(getPetsInShelter)
-    __obj.updateDynamic("getRandomPet")(getRandomPet)
-    __obj.updateDynamic("getShelter")(getShelter)
-    __obj.updateDynamic("getSheltersWithBreeds")(getSheltersWithBreeds)
+    val __obj = js.Dynamic.literal(findPet = findPet, findShelter = findShelter, getBreedList = getBreedList, getPet = getPet, getPetsInShelter = getPetsInShelter, getRandomPet = getRandomPet, getShelter = getShelter, getSheltersWithBreeds = getSheltersWithBreeds)
+  
     __obj.asInstanceOf[PetFinder]
   }
 }

@@ -13,8 +13,7 @@ trait PrimaryServiceOptions extends js.Object {
 object PrimaryServiceOptions {
   @scala.inline
   def apply(uuid: java.lang.String, characteristics: js.Array[Characteristic] = null): PrimaryServiceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(uuid = uuid)
     if (characteristics != null) __obj.updateDynamic("characteristics")(characteristics)
     __obj.asInstanceOf[PrimaryServiceOptions]
   }

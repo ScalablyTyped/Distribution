@@ -48,25 +48,8 @@ object Anon_Delimiter {
     transforms: stdLib.RegExp,
     whitespace: stdLib.RegExp
   ): Anon_Delimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delimiter")(delimiter)
-    __obj.updateDynamic("dots")(dots)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("hyphen")(hyphen)
-    __obj.updateDynamic("isBlank")(isBlank)
-    __obj.updateDynamic("isCss")(isCss)
-    __obj.updateDynamic("isHex")(isHex)
-    __obj.updateDynamic("isImage")(isImage)
-    __obj.updateDynamic("isNumber")(isNumber)
-    __obj.updateDynamic("isPathLetter")(isPathLetter)
-    __obj.updateDynamic("isPercent")(isPercent)
-    __obj.updateDynamic("isRgb")(isRgb)
-    __obj.updateDynamic("numberAndUnit")(numberAndUnit)
-    __obj.updateDynamic("pathLetters")(pathLetters)
-    __obj.updateDynamic("reference")(reference)
-    __obj.updateDynamic("rgb")(rgb)
-    __obj.updateDynamic("transforms")(transforms)
-    __obj.updateDynamic("whitespace")(whitespace)
+    val __obj = js.Dynamic.literal(delimiter = delimiter, dots = dots, hex = hex, hyphen = hyphen, isBlank = isBlank, isCss = isCss, isHex = isHex, isImage = isImage, isNumber = isNumber, isPathLetter = isPathLetter, isPercent = isPercent, isRgb = isRgb, numberAndUnit = numberAndUnit, pathLetters = pathLetters, reference = reference, rgb = rgb, transforms = transforms, whitespace = whitespace)
+  
     __obj.asInstanceOf[Anon_Delimiter]
   }
 }

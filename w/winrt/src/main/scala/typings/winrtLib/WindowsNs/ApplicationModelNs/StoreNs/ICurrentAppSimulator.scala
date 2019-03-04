@@ -40,16 +40,8 @@ object ICurrentAppSimulator {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
     ]
   ): ICurrentAppSimulator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("getAppReceiptAsync")(getAppReceiptAsync)
-    __obj.updateDynamic("getProductReceiptAsync")(getProductReceiptAsync)
-    __obj.updateDynamic("licenseInformation")(licenseInformation)
-    __obj.updateDynamic("linkUri")(linkUri)
-    __obj.updateDynamic("loadListingInformationAsync")(loadListingInformationAsync)
-    __obj.updateDynamic("reloadSimulatorAsync")(reloadSimulatorAsync)
-    __obj.updateDynamic("requestAppPurchaseAsync")(requestAppPurchaseAsync)
-    __obj.updateDynamic("requestProductPurchaseAsync")(requestProductPurchaseAsync)
+    val __obj = js.Dynamic.literal(appId = appId, getAppReceiptAsync = getAppReceiptAsync, getProductReceiptAsync = getProductReceiptAsync, licenseInformation = licenseInformation, linkUri = linkUri, loadListingInformationAsync = loadListingInformationAsync, reloadSimulatorAsync = reloadSimulatorAsync, requestAppPurchaseAsync = requestAppPurchaseAsync, requestProductPurchaseAsync = requestProductPurchaseAsync)
+  
     __obj.asInstanceOf[ICurrentAppSimulator]
   }
 }

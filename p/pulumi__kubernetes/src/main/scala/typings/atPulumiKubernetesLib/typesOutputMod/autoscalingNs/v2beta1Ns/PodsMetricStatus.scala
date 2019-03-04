@@ -35,10 +35,8 @@ object PodsMetricStatus {
     metricName: java.lang.String,
     selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
   ): PodsMetricStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentAverageValue")(currentAverageValue)
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue, metricName = metricName, selector = selector)
+  
     __obj.asInstanceOf[PodsMetricStatus]
   }
 }

@@ -139,16 +139,8 @@ object DatasetsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
     ]
   ): DatasetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("undelete")(undelete)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, undelete = undelete)
+  
     __obj.asInstanceOf[DatasetsResource]
   }
 }

@@ -20,11 +20,8 @@ object ServiceStatus {
     isRunning: scala.Boolean,
     locationServicesEnabled: scala.Boolean
   ): ServiceStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorization")(authorization)
-    __obj.updateDynamic("hasPermissions")(hasPermissions)
-    __obj.updateDynamic("isRunning")(isRunning)
-    __obj.updateDynamic("locationServicesEnabled")(locationServicesEnabled)
+    val __obj = js.Dynamic.literal(authorization = authorization, hasPermissions = hasPermissions, isRunning = isRunning, locationServicesEnabled = locationServicesEnabled)
+  
     __obj.asInstanceOf[ServiceStatus]
   }
 }

@@ -30,9 +30,8 @@ object StyleSheetTestUtilsStatic {
     clearBufferAndResumeStyleInjection: js.Function0[scala.Unit],
     suppressStyleInjection: js.Function0[scala.Unit]
   ): StyleSheetTestUtilsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearBufferAndResumeStyleInjection")(clearBufferAndResumeStyleInjection)
-    __obj.updateDynamic("suppressStyleInjection")(suppressStyleInjection)
+    val __obj = js.Dynamic.literal(clearBufferAndResumeStyleInjection = clearBufferAndResumeStyleInjection, suppressStyleInjection = suppressStyleInjection)
+  
     __obj.asInstanceOf[StyleSheetTestUtilsStatic]
   }
 }

@@ -36,11 +36,8 @@ object Settings {
     brackets: java.lang.String,
     skipAnonymousTags: scala.Boolean
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncRenderTimeout")(asyncRenderTimeout)
-    __obj.updateDynamic("autoUpdate")(autoUpdate)
-    __obj.updateDynamic("brackets")(brackets)
-    __obj.updateDynamic("skipAnonymousTags")(skipAnonymousTags)
+    val __obj = js.Dynamic.literal(asyncRenderTimeout = asyncRenderTimeout, autoUpdate = autoUpdate, brackets = brackets, skipAnonymousTags = skipAnonymousTags)
+  
     __obj.asInstanceOf[Settings]
   }
 }

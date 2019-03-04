@@ -30,12 +30,8 @@ object DynamicDataLayerFields {
     name: java.lang.String,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): DynamicDataLayerFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[DynamicDataLayerFields]
   }
 }

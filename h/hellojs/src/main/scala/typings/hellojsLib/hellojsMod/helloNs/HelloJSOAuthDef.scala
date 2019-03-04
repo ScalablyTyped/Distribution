@@ -13,8 +13,7 @@ trait HelloJSOAuthDef extends js.Object {
 object HelloJSOAuthDef {
   @scala.inline
   def apply(version: java.lang.String | scala.Double, auth: java.lang.String = null): HelloJSOAuthDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)
     __obj.asInstanceOf[HelloJSOAuthDef]
   }

@@ -51,8 +51,7 @@ object Anon_AdClientIdAltFieldsIncludeInactive {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdClientIdAltFieldsIncludeInactive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adClientId")(adClientId)
+    val __obj = js.Dynamic.literal(adClientId = adClientId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive)

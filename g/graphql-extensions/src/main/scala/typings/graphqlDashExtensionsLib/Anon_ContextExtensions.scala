@@ -38,10 +38,7 @@ object Anon_ContextExtensions {
     queryString: java.lang.String = null,
     variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ContextExtensions[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestContext")(requestContext)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request, requestContext = requestContext)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (operationName != null) __obj.updateDynamic("operationName")(operationName)
     if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery)

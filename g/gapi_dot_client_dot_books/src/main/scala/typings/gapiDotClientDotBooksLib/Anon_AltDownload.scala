@@ -78,8 +78,7 @@ object Anon_AltDownload {
     startIndex: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AltDownload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("q")(q)
+    val __obj = js.Dynamic.literal(q = q)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (download != null) __obj.updateDynamic("download")(download)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -22,10 +22,9 @@ object HeapDiffDetail {
     size_bytes: scala.Double,
     what: java.lang.String
   ): HeapDiffDetail = {
-    val __obj = js.Dynamic.literal(`+` = `+`, `-` = `-`)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("size_bytes")(size_bytes)
-    __obj.updateDynamic("what")(what)
+    val __obj = js.Dynamic.literal(size = size, size_bytes = size_bytes, what = what)
+    __obj.updateDynamic("+")(`+`)
+    __obj.updateDynamic("-")(`-`)
     __obj.asInstanceOf[HeapDiffDetail]
   }
 }

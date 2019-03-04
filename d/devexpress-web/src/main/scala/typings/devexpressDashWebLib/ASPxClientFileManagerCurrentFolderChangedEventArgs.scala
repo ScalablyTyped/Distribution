@@ -24,9 +24,8 @@ trait ASPxClientFileManagerCurrentFolderChangedEventArgs extends ASPxClientEvent
 object ASPxClientFileManagerCurrentFolderChangedEventArgs {
   @scala.inline
   def apply(fullName: java.lang.String, name: java.lang.String): ASPxClientFileManagerCurrentFolderChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fullName = fullName, name = name)
+  
     __obj.asInstanceOf[ASPxClientFileManagerCurrentFolderChangedEventArgs]
   }
 }

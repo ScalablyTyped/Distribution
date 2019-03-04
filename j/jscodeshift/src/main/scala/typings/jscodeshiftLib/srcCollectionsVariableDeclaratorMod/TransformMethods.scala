@@ -16,8 +16,8 @@ trait TransformMethods[N] extends js.Object {
 object TransformMethods {
   @scala.inline
   def apply[N](renameTo: js.Function1[java.lang.String, jscodeshiftLib.srcCollectionMod.Collection[N]]): TransformMethods[N] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renameTo")(renameTo)
+    val __obj = js.Dynamic.literal(renameTo = renameTo)
+  
     __obj.asInstanceOf[TransformMethods[N]]
   }
 }

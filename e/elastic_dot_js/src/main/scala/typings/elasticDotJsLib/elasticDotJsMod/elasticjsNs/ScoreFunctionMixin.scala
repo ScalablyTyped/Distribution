@@ -28,10 +28,8 @@ object ScoreFunctionMixin {
     filter: js.Function1[Filter, ScoreFunctionMixin],
     toJSON: js.Function0[js.Any]
   ): ScoreFunctionMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, filter = filter, toJSON = toJSON)
+  
     __obj.asInstanceOf[ScoreFunctionMixin]
   }
 }

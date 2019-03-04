@@ -20,11 +20,8 @@ object ExtKeyUsage {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): ExtKeyUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("keyPurposes")(keyPurposes)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyPurposes = keyPurposes, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[ExtKeyUsage]
   }
 }

@@ -13,9 +13,8 @@ trait StringInsertOp extends Op {
 object StringInsertOp {
   @scala.inline
   def apply(p: Path, si: java.lang.String): StringInsertOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("si")(si)
+    val __obj = js.Dynamic.literal(p = p, si = si)
+  
     __obj.asInstanceOf[StringInsertOp]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_Targetdefaults extends js.Object {
 object Anon_Targetdefaults {
   @scala.inline
   def apply(target_defaults: Anon_Cflags, variables: Anon_Clang): Anon_Targetdefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target_defaults")(target_defaults)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(target_defaults = target_defaults, variables = variables)
+  
     __obj.asInstanceOf[Anon_Targetdefaults]
   }
 }

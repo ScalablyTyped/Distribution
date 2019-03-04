@@ -26,10 +26,8 @@ object Color {
     hex: js.Function0[java.lang.String],
     toString: js.Function0[java.lang.String]
   ): Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayable")(displayable)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(displayable = displayable, hex = hex, toString = toString)
+  
     __obj.asInstanceOf[Color]
   }
 }

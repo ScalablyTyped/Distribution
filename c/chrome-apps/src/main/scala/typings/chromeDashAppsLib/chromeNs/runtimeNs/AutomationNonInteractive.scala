@@ -19,8 +19,7 @@ object AutomationNonInteractive {
     desktop: chromeDashAppsLib.chromeDashAppsLibNumbers.`false` = null,
     matches: js.Array[UrlMatches] | js.Array[java.lang.String] = null
   ): AutomationNonInteractive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interact")(interact)
+    val __obj = js.Dynamic.literal(interact = interact)
     if (desktop != null) __obj.updateDynamic("desktop")(desktop)
     if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomationNonInteractive]

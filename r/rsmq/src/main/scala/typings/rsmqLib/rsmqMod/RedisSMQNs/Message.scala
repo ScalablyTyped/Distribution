@@ -22,13 +22,8 @@ object Message {
     rc: scala.Double,
     sent: scala.Double
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fr")(fr)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("qname")(qname)
-    __obj.updateDynamic("rc")(rc)
-    __obj.updateDynamic("sent")(sent)
+    val __obj = js.Dynamic.literal(fr = fr, id = id, message = message, qname = qname, rc = rc, sent = sent)
+  
     __obj.asInstanceOf[Message]
   }
 }

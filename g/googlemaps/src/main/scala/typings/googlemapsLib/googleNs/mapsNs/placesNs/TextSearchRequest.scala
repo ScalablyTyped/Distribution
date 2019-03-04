@@ -28,8 +28,7 @@ object TextSearchRequest {
     `type`: java.lang.String = null,
     types: js.Array[java.lang.String] = null
   ): TextSearchRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

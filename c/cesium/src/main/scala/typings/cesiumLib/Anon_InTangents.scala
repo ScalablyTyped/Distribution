@@ -20,11 +20,8 @@ object Anon_InTangents {
     points: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
     times: js.Array[scala.Double]
   ): Anon_InTangents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inTangents")(inTangents)
-    __obj.updateDynamic("outTangents")(outTangents)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("times")(times)
+    val __obj = js.Dynamic.literal(inTangents = inTangents, outTangents = outTangents, points = points, times = times)
+  
     __obj.asInstanceOf[Anon_InTangents]
   }
 }

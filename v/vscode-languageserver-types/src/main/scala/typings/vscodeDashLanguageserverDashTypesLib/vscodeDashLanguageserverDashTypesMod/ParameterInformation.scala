@@ -27,8 +27,7 @@ object ParameterInformation {
     label: java.lang.String | (js.Tuple2[scala.Double, scala.Double]),
     documentation: java.lang.String | MarkupContent = null
   ): ParameterInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterInformation]
   }

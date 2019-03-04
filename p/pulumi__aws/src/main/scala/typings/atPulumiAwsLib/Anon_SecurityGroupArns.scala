@@ -13,9 +13,8 @@ trait Anon_SecurityGroupArns extends js.Object {
 object Anon_SecurityGroupArns {
   @scala.inline
   def apply(securityGroupArns: js.Array[java.lang.String], subnetArn: java.lang.String): Anon_SecurityGroupArns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("securityGroupArns")(securityGroupArns)
-    __obj.updateDynamic("subnetArn")(subnetArn)
+    val __obj = js.Dynamic.literal(securityGroupArns = securityGroupArns, subnetArn = subnetArn)
+  
     __obj.asInstanceOf[Anon_SecurityGroupArns]
   }
 }

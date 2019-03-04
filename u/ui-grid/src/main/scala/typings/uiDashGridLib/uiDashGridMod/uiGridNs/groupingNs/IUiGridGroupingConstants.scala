@@ -24,12 +24,8 @@ object IUiGridGroupingConstants {
     featureName: java.lang.String,
     rowHeaderColName: java.lang.String
   ): IUiGridGroupingConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("COLLAPSED")(COLLAPSED)
-    __obj.updateDynamic("EXPANDED")(EXPANDED)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("featureName")(featureName)
-    __obj.updateDynamic("rowHeaderColName")(rowHeaderColName)
+    val __obj = js.Dynamic.literal(COLLAPSED = COLLAPSED, EXPANDED = EXPANDED, aggregation = aggregation, featureName = featureName, rowHeaderColName = rowHeaderColName)
+  
     __obj.asInstanceOf[IUiGridGroupingConstants]
   }
 }

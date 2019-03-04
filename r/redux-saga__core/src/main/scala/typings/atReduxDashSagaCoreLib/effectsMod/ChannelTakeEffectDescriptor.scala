@@ -18,8 +18,7 @@ object ChannelTakeEffectDescriptor {
     maybe: js.UndefOr[scala.Boolean] = js.undefined,
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Pattern[T] = null
   ): ChannelTakeEffectDescriptor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(channel = channel)
     if (!js.isUndefined(maybe)) __obj.updateDynamic("maybe")(maybe)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelTakeEffectDescriptor[T]]

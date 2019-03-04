@@ -24,13 +24,8 @@ object IToast {
     scope: IToastScope,
     toastId: scala.Double
   ): IToast = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
-    __obj.updateDynamic("iconClass")(iconClass)
-    __obj.updateDynamic("isOpened")(isOpened)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toastId")(toastId)
+    val __obj = js.Dynamic.literal(el = el, iconClass = iconClass, isOpened = isOpened, open = open, scope = scope, toastId = toastId)
+  
     __obj.asInstanceOf[IToast]
   }
 }

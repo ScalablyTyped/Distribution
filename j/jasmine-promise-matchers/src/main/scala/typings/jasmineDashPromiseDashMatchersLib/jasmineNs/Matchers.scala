@@ -32,11 +32,8 @@ object Matchers {
     toBeResolved: js.Function0[scala.Boolean],
     toBeResolvedWith: js.Function1[js.Any, scala.Boolean]
   ): Matchers[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toBeRejected")(toBeRejected)
-    __obj.updateDynamic("toBeRejectedWith")(toBeRejectedWith)
-    __obj.updateDynamic("toBeResolved")(toBeResolved)
-    __obj.updateDynamic("toBeResolvedWith")(toBeResolvedWith)
+    val __obj = js.Dynamic.literal(toBeRejected = toBeRejected, toBeRejectedWith = toBeRejectedWith, toBeResolved = toBeResolved, toBeResolvedWith = toBeResolvedWith)
+  
     __obj.asInstanceOf[Matchers[T]]
   }
 }

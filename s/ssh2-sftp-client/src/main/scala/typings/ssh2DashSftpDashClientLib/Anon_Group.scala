@@ -14,10 +14,8 @@ trait Anon_Group extends js.Object {
 object Anon_Group {
   @scala.inline
   def apply(group: java.lang.String, other: java.lang.String, user: java.lang.String): Anon_Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(group = group, other = other, user = user)
+  
     __obj.asInstanceOf[Anon_Group]
   }
 }

@@ -20,9 +20,9 @@ object IArrayWillChange {
     `object`: IObservableArray[T],
     `type`: mobxLib.mobxLibStrings.update
   ): IArrayWillChange[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index, newValue = newValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IArrayWillChange[T]]
   }
 }

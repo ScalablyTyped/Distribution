@@ -12,8 +12,8 @@ trait Anon_Location extends js.Object {
 object Anon_Location {
   @scala.inline
   def apply(location: js.Array[webpagetestLib.webpagetestMod.WebPageTestNs.Location]): Anon_Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(location = location)
+  
     __obj.asInstanceOf[Anon_Location]
   }
 }

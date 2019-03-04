@@ -22,8 +22,8 @@ object Anon_ContextLabelLayout {
       atOracleOraclejetLib.ojdiagramDashUtilsMod.LabelLayout
     ])
   ): Anon_ContextLabelLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelLayout")(labelLayout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(labelLayout = labelLayout.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ContextLabelLayout]
   }
 }

@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 object NullLiteral {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.NullLiteral, value: scala.Null): NullLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NullLiteral]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_DataArray extends js.Object {
 object Anon_DataArray {
   @scala.inline
   def apply(data: js.Array[wegameDashApiLib.wxNs.typesNs.UserInfo]): Anon_DataArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+  
     __obj.asInstanceOf[Anon_DataArray]
   }
 }

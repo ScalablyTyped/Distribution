@@ -37,8 +37,7 @@ object AppInviteContent {
     promotionCode: java.lang.String = null,
     promotionText: java.lang.String = null
   ): AppInviteContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applinkUrl")(applinkUrl)
+    val __obj = js.Dynamic.literal(applinkUrl = applinkUrl)
     if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl)
     if (promotionCode != null) __obj.updateDynamic("promotionCode")(promotionCode)
     if (promotionText != null) __obj.updateDynamic("promotionText")(promotionText)

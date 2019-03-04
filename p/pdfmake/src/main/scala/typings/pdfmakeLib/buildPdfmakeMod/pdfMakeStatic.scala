@@ -18,10 +18,8 @@ object pdfMakeStatic {
     fonts: org.scalablytyped.runtime.StringDictionary[TFontFamilyTypes],
     vfs: TFontFamily
   ): pdfMakeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPdf")(createPdf)
-    __obj.updateDynamic("fonts")(fonts)
-    __obj.updateDynamic("vfs")(vfs)
+    val __obj = js.Dynamic.literal(createPdf = createPdf, fonts = fonts, vfs = vfs)
+  
     __obj.asInstanceOf[pdfMakeStatic]
   }
 }

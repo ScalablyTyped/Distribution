@@ -13,8 +13,8 @@ trait DropRowContext extends js.Object {
 object DropRowContext {
   @scala.inline
   def apply(rowIndex: scala.Double): DropRowContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowIndex")(rowIndex)
+    val __obj = js.Dynamic.literal(rowIndex = rowIndex)
+  
     __obj.asInstanceOf[DropRowContext]
   }
 }

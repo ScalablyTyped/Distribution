@@ -16,9 +16,8 @@ object MultiPeriodMarkingProps {
     markedDates: org.scalablytyped.runtime.StringDictionary[MultiPeriodMarking],
     markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.`multi-period`
   ): MultiPeriodMarkingProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markedDates")(markedDates)
-    __obj.updateDynamic("markingType")(markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+  
     __obj.asInstanceOf[MultiPeriodMarkingProps]
   }
 }

@@ -20,11 +20,8 @@ object Client {
     clientSecret: java.lang.String,
     redirectUri: java.lang.String
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("redirectUri")(redirectUri)
+    val __obj = js.Dynamic.literal(active = active, clientId = clientId, clientSecret = clientSecret, redirectUri = redirectUri)
+  
     __obj.asInstanceOf[Client]
   }
 }

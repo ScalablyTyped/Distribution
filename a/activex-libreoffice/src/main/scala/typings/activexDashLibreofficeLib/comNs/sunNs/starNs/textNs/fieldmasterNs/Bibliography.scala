@@ -88,28 +88,8 @@ object Bibliography {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Bibliography = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BracketAfter")(BracketAfter)
-    __obj.updateDynamic("BracketBefore")(BracketBefore)
-    __obj.updateDynamic("DependentTextFields")(DependentTextFields)
-    __obj.updateDynamic("InstanceName")(InstanceName)
-    __obj.updateDynamic("IsNumberEntries")(IsNumberEntries)
-    __obj.updateDynamic("IsSortByPosition")(IsSortByPosition)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SortAlgorithm")(SortAlgorithm)
-    __obj.updateDynamic("SortKeys")(SortKeys)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(BracketAfter = BracketAfter, BracketBefore = BracketBefore, DependentTextFields = DependentTextFields, InstanceName = InstanceName, IsNumberEntries = IsNumberEntries, IsSortByPosition = IsSortByPosition, Locale = Locale, Name = Name, PropertySetInfo = PropertySetInfo, SortAlgorithm = SortAlgorithm, SortKeys = SortKeys, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[Bibliography]
   }
 }

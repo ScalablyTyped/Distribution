@@ -26,14 +26,8 @@ object Input {
     signatures: js.Array[nodeLib.Buffer],
     witness: scala.Boolean
   ): Input = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prevOutScript")(prevOutScript)
-    __obj.updateDynamic("prevOutType")(prevOutType)
-    __obj.updateDynamic("pubKeys")(pubKeys)
-    __obj.updateDynamic("signScript")(signScript)
-    __obj.updateDynamic("signType")(signType)
-    __obj.updateDynamic("signatures")(signatures)
-    __obj.updateDynamic("witness")(witness)
+    val __obj = js.Dynamic.literal(prevOutScript = prevOutScript, prevOutType = prevOutType, pubKeys = pubKeys, signScript = signScript, signType = signType, signatures = signatures, witness = witness)
+  
     __obj.asInstanceOf[Input]
   }
 }

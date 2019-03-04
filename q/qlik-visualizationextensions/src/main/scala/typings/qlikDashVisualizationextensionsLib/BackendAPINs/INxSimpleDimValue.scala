@@ -22,9 +22,8 @@ trait INxSimpleDimValue extends js.Object {
 object INxSimpleDimValue {
   @scala.inline
   def apply(qElemNo: scala.Double, qText: java.lang.String): INxSimpleDimValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qElemNo")(qElemNo)
-    __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(qElemNo = qElemNo, qText = qText)
+  
     __obj.asInstanceOf[INxSimpleDimValue]
   }
 }

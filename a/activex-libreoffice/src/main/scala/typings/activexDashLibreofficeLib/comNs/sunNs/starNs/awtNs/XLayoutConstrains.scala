@@ -32,15 +32,8 @@ object XLayoutConstrains {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLayoutConstrains = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MinimumSize")(MinimumSize)
-    __obj.updateDynamic("PreferredSize")(PreferredSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("calcAdjustedSize")(calcAdjustedSize)
-    __obj.updateDynamic("getMinimumSize")(getMinimumSize)
-    __obj.updateDynamic("getPreferredSize")(getPreferredSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(MinimumSize = MinimumSize, PreferredSize = PreferredSize, acquire = acquire, calcAdjustedSize = calcAdjustedSize, getMinimumSize = getMinimumSize, getPreferredSize = getPreferredSize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLayoutConstrains]
   }
 }

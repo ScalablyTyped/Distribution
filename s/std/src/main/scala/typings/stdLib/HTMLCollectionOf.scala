@@ -19,11 +19,8 @@ object HTMLCollectionOf {
     length: scala.Double,
     namedItem: js.Function1[java.lang.String, T | scala.Null]
   ): HTMLCollectionOf[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("namedItem")(namedItem)
+    val __obj = js.Dynamic.literal(item = item, iterator = iterator, length = length, namedItem = namedItem)
+  
     __obj.asInstanceOf[HTMLCollectionOf[T]]
   }
 }

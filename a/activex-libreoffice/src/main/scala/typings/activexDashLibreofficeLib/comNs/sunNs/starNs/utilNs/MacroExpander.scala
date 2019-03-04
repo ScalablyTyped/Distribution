@@ -28,14 +28,8 @@ object MacroExpander {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): MacroExpander = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("expandMacros")(expandMacros)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, expandMacros = expandMacros, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[MacroExpander]
   }
 }

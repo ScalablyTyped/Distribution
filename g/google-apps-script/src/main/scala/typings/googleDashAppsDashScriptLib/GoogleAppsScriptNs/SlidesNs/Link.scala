@@ -24,13 +24,8 @@ object Link {
     getSlidePosition: js.Function0[SlidePosition],
     getUrl: js.Function0[java.lang.String]
   ): Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLinkType")(getLinkType)
-    __obj.updateDynamic("getLinkedSlide")(getLinkedSlide)
-    __obj.updateDynamic("getSlideId")(getSlideId)
-    __obj.updateDynamic("getSlideIndex")(getSlideIndex)
-    __obj.updateDynamic("getSlidePosition")(getSlidePosition)
-    __obj.updateDynamic("getUrl")(getUrl)
+    val __obj = js.Dynamic.literal(getLinkType = getLinkType, getLinkedSlide = getLinkedSlide, getSlideId = getSlideId, getSlideIndex = getSlideIndex, getSlidePosition = getSlidePosition, getUrl = getUrl)
+  
     __obj.asInstanceOf[Link]
   }
 }

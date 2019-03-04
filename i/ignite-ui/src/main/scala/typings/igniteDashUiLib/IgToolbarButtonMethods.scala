@@ -41,12 +41,8 @@ object IgToolbarButtonMethods {
     toggle: js.Function0[scala.Unit],
     widget: js.Function0[js.Object]
   ): IgToolbarButtonMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("deactivate")(deactivate)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(activate = activate, deactivate = deactivate, destroy = destroy, toggle = toggle, widget = widget)
+  
     __obj.asInstanceOf[IgToolbarButtonMethods]
   }
 }

@@ -33,18 +33,8 @@ object XOfficeDatabaseDocument {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XOfficeDatabaseDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSource")(DataSource)
-    __obj.updateDynamic("DocumentSubStoragesNames")(DocumentSubStoragesNames)
-    __obj.updateDynamic("FormDocuments")(FormDocuments)
-    __obj.updateDynamic("ReportDocuments")(ReportDocuments)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDocumentSubStorage")(getDocumentSubStorage)
-    __obj.updateDynamic("getDocumentSubStoragesNames")(getDocumentSubStoragesNames)
-    __obj.updateDynamic("getFormDocuments")(getFormDocuments)
-    __obj.updateDynamic("getReportDocuments")(getReportDocuments)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DataSource = DataSource, DocumentSubStoragesNames = DocumentSubStoragesNames, FormDocuments = FormDocuments, ReportDocuments = ReportDocuments, acquire = acquire, getDocumentSubStorage = getDocumentSubStorage, getDocumentSubStoragesNames = getDocumentSubStoragesNames, getFormDocuments = getFormDocuments, getReportDocuments = getReportDocuments, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XOfficeDatabaseDocument]
   }
 }

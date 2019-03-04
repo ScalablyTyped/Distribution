@@ -24,12 +24,7 @@ object Anon_DefaultEmailOption {
     smsMessage: java.lang.String,
     defaultEmailOption: java.lang.String = null
   ): Anon_DefaultEmailOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emailMessage")(emailMessage)
-    __obj.updateDynamic("emailMessageByLink")(emailMessageByLink)
-    __obj.updateDynamic("emailSubject")(emailSubject)
-    __obj.updateDynamic("emailSubjectByLink")(emailSubjectByLink)
-    __obj.updateDynamic("smsMessage")(smsMessage)
+    val __obj = js.Dynamic.literal(emailMessage = emailMessage, emailMessageByLink = emailMessageByLink, emailSubject = emailSubject, emailSubjectByLink = emailSubjectByLink, smsMessage = smsMessage)
     if (defaultEmailOption != null) __obj.updateDynamic("defaultEmailOption")(defaultEmailOption)
     __obj.asInstanceOf[Anon_DefaultEmailOption]
   }

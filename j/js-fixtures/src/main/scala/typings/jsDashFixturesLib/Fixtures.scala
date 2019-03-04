@@ -36,19 +36,8 @@ object Fixtures {
     set: js.Function1[java.lang.String, scala.Unit],
     window: js.Function0[stdLib.Window]
   ): Fixtures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendLoad")(appendLoad)
-    __obj.updateDynamic("appendSet")(appendSet)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("cleanUp")(cleanUp)
-    __obj.updateDynamic("clearCache")(clearCache)
-    __obj.updateDynamic("containerId")(containerId)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("preload")(preload)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(appendLoad = appendLoad, appendSet = appendSet, body = body, cleanUp = cleanUp, clearCache = clearCache, containerId = containerId, load = load, path = path, preload = preload, read = read, set = set, window = window)
+  
     __obj.asInstanceOf[Fixtures]
   }
 }

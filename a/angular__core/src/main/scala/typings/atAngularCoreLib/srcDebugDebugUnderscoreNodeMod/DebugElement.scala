@@ -44,26 +44,7 @@ object DebugElement {
     triggerEventHandler: js.Function2[java.lang.String, js.Any, scala.Unit],
     parent: DebugElement = null
   ): DebugElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("componentInstance")(componentInstance)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("injector")(injector)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nativeElement")(nativeElement)
-    __obj.updateDynamic("nativeNode")(nativeNode)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("providerTokens")(providerTokens)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("queryAll")(queryAll)
-    __obj.updateDynamic("queryAllNodes")(queryAllNodes)
-    __obj.updateDynamic("references")(references)
-    __obj.updateDynamic("styles")(styles)
-    __obj.updateDynamic("triggerEventHandler")(triggerEventHandler)
+    val __obj = js.Dynamic.literal(attributes = attributes, childNodes = childNodes, children = children, classes = classes, componentInstance = componentInstance, context = context, injector = injector, listeners = listeners, name = name, nativeElement = nativeElement, nativeNode = nativeNode, properties = properties, providerTokens = providerTokens, query = query, queryAll = queryAll, queryAllNodes = queryAllNodes, references = references, styles = styles, triggerEventHandler = triggerEventHandler)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[DebugElement]
   }

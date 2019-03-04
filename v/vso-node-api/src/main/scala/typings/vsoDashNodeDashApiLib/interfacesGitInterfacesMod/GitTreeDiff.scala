@@ -32,11 +32,8 @@ object GitTreeDiff {
     targetTreeId: java.lang.String,
     url: java.lang.String
   ): GitTreeDiff = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseTreeId")(baseTreeId)
-    __obj.updateDynamic("diffEntries")(diffEntries)
-    __obj.updateDynamic("targetTreeId")(targetTreeId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(baseTreeId = baseTreeId, diffEntries = diffEntries, targetTreeId = targetTreeId, url = url)
+  
     __obj.asInstanceOf[GitTreeDiff]
   }
 }

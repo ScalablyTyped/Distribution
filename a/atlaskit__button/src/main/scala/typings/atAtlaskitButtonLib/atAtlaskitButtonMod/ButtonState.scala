@@ -14,10 +14,8 @@ trait ButtonState extends js.Object {
 object ButtonState {
   @scala.inline
   def apply(isActive: scala.Boolean, isFocus: scala.Boolean, isHover: scala.Boolean): ButtonState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isFocus")(isFocus)
-    __obj.updateDynamic("isHover")(isHover)
+    val __obj = js.Dynamic.literal(isActive = isActive, isFocus = isFocus, isHover = isHover)
+  
     __obj.asInstanceOf[ButtonState]
   }
 }

@@ -13,9 +13,8 @@ trait IStandardEvent[T] extends js.Object {
 object IStandardEvent {
   @scala.inline
   def apply[T](data: T, timestamp: scala.Double): IStandardEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], timestamp = timestamp)
+  
     __obj.asInstanceOf[IStandardEvent[T]]
   }
 }

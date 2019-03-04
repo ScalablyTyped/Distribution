@@ -24,13 +24,8 @@ object appFrameworkCssMatrix {
     e: scala.Double,
     f: scala.Double
   ): appFrameworkCssMatrix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("f")(f)
+    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, e = e, f = f)
+  
     __obj.asInstanceOf[appFrameworkCssMatrix]
   }
 }

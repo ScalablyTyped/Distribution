@@ -32,17 +32,8 @@ object UUID {
     urn: java.lang.String,
     version: scala.Double
   ): UUID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitFields")(bitFields)
-    __obj.updateDynamic("bitString")(bitString)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("hexFields")(hexFields)
-    __obj.updateDynamic("hexNoDelim")(hexNoDelim)
-    __obj.updateDynamic("hexString")(hexString)
-    __obj.updateDynamic("intFields")(intFields)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("urn")(urn)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(bitFields = bitFields, bitString = bitString, equals = equals, hexFields = hexFields, hexNoDelim = hexNoDelim, hexString = hexString, intFields = intFields, toString = toString, urn = urn, version = version)
+  
     __obj.asInstanceOf[UUID]
   }
 }

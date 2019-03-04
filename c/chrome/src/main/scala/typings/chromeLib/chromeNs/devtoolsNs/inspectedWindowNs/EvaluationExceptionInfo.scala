@@ -30,13 +30,8 @@ object EvaluationExceptionInfo {
     isException: scala.Boolean,
     value: java.lang.String
   ): EvaluationExceptionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("isError")(isError)
-    __obj.updateDynamic("isException")(isException)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(code = code, description = description, details = details, isError = isError, isException = isException, value = value)
+  
     __obj.asInstanceOf[EvaluationExceptionInfo]
   }
 }

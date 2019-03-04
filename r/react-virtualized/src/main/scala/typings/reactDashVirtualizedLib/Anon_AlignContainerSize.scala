@@ -20,11 +20,8 @@ object Anon_AlignContainerSize {
     currentOffset: scala.Double,
     targetIndex: scala.Double
   ): Anon_AlignContainerSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("containerSize")(containerSize)
-    __obj.updateDynamic("currentOffset")(currentOffset)
-    __obj.updateDynamic("targetIndex")(targetIndex)
+    val __obj = js.Dynamic.literal(align = align, containerSize = containerSize, currentOffset = currentOffset, targetIndex = targetIndex)
+  
     __obj.asInstanceOf[Anon_AlignContainerSize]
   }
 }

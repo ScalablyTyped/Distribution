@@ -30,12 +30,8 @@ object ColorSchemeForPolylineColorsForClassBreaks {
     numClasses: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): ColorSchemeForPolylineColorsForClassBreaks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("numClasses")(numClasses)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, numClasses = numClasses, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[ColorSchemeForPolylineColorsForClassBreaks]
   }
 }

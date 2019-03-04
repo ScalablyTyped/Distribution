@@ -24,10 +24,8 @@ object Anon_Attributes {
       threeLib.threeDashCoreMod.BufferGeometry
     ]
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeTangents")(computeTangents)
-    __obj.updateDynamic("mergeBufferAttributes")(mergeBufferAttributes)
-    __obj.updateDynamic("mergeBufferGeometries")(mergeBufferGeometries)
+    val __obj = js.Dynamic.literal(computeTangents = computeTangents, mergeBufferAttributes = mergeBufferAttributes, mergeBufferGeometries = mergeBufferGeometries)
+  
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

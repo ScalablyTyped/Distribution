@@ -12,8 +12,8 @@ trait Anon_ReqClientRequest extends js.Object {
 object Anon_ReqClientRequest {
   @scala.inline
   def apply(req: nodeLib.httpMod.ClientRequest): Anon_ReqClientRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("req")(req)
+    val __obj = js.Dynamic.literal(req = req)
+  
     __obj.asInstanceOf[Anon_ReqClientRequest]
   }
 }

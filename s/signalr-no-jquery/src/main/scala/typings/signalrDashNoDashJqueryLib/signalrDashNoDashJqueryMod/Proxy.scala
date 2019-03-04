@@ -45,15 +45,8 @@ object Proxy {
     on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], Proxy],
     state: js.Any
   ): Proxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("hasSubscriptions")(hasSubscriptions)
-    __obj.updateDynamic("hubName")(hubName)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(connection = connection, hasSubscriptions = hasSubscriptions, hubName = hubName, init = init, invoke = invoke, off = off, on = on, state = state)
+  
     __obj.asInstanceOf[Proxy]
   }
 }

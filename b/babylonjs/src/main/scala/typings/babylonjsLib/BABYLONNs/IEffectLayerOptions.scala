@@ -42,11 +42,7 @@ object IEffectLayerOptions {
     renderingGroupId: scala.Double,
     mainTextureFixedSize: scala.Int | scala.Double = null
   ): IEffectLayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alphaBlendingMode")(alphaBlendingMode)
-    __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    __obj.updateDynamic("mainTextureRatio")(mainTextureRatio)
-    __obj.updateDynamic("renderingGroupId")(renderingGroupId)
+    val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode, camera = camera.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio, renderingGroupId = renderingGroupId)
     if (mainTextureFixedSize != null) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEffectLayerOptions]
   }

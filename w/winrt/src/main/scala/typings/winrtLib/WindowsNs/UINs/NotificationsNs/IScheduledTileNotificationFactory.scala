@@ -18,8 +18,8 @@ object IScheduledTileNotificationFactory {
       ScheduledTileNotification
     ]
   ): IScheduledTileNotificationFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createScheduledTileNotification")(createScheduledTileNotification)
+    val __obj = js.Dynamic.literal(createScheduledTileNotification = createScheduledTileNotification)
+  
     __obj.asInstanceOf[IScheduledTileNotificationFactory]
   }
 }

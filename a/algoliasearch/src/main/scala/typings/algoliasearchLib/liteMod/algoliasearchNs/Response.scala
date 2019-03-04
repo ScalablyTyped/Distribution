@@ -78,15 +78,7 @@ object Response {
     facets_stats: org.scalablytyped.runtime.StringDictionary[algoliasearchLib.Anon_Avg] = null,
     index: java.lang.String = null
   ): Response[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsPerPage")(hitsPerPage)
-    __obj.updateDynamic("nbHits")(nbHits)
-    __obj.updateDynamic("nbPages")(nbPages)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("processingTimeMS")(processingTimeMS)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(hits = hits, hitsPerPage = hitsPerPage, nbHits = nbHits, nbPages = nbPages, page = page, params = params, processingTimeMS = processingTimeMS, query = query)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (facets != null) __obj.updateDynamic("facets")(facets)
     if (facets_stats != null) __obj.updateDynamic("facets_stats")(facets_stats)

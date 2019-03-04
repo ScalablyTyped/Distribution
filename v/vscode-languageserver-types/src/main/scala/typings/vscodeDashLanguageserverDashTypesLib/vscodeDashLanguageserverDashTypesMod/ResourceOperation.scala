@@ -12,8 +12,8 @@ trait ResourceOperation extends js.Object {
 object ResourceOperation {
   @scala.inline
   def apply(kind: java.lang.String): ResourceOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+  
     __obj.asInstanceOf[ResourceOperation]
   }
 }

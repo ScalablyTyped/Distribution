@@ -20,8 +20,7 @@ object RTCIceServer {
     credentialType: RTCIceCredentialType = null,
     username: java.lang.String = null
   ): RTCIceServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
     if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
     if (credentialType != null) __obj.updateDynamic("credentialType")(credentialType)
     if (username != null) __obj.updateDynamic("username")(username)

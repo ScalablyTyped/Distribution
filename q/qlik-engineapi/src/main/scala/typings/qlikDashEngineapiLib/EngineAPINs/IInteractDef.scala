@@ -84,8 +84,7 @@ object IInteractDef {
     qTitle: java.lang.String = null,
     qType: InteractionType = null
   ): IInteractDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qResult")(qResult)
+    val __obj = js.Dynamic.literal(qResult = qResult)
     if (qButtons != null) __obj.updateDynamic("qButtons")(qButtons.asInstanceOf[js.Any])
     if (!js.isUndefined(qHidden)) __obj.updateDynamic("qHidden")(qHidden)
     if (qInput != null) __obj.updateDynamic("qInput")(qInput)

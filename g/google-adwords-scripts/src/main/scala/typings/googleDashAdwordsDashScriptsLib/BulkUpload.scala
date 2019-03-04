@@ -20,11 +20,8 @@ object BulkUpload {
     preview: js.Function0[scala.Unit],
     setFileName: js.Function1[java.lang.String, T]
   ): BulkUpload[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forCampaignManagement")(forCampaignManagement)
-    __obj.updateDynamic("forOfflineConversions")(forOfflineConversions)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("setFileName")(setFileName)
+    val __obj = js.Dynamic.literal(forCampaignManagement = forCampaignManagement, forOfflineConversions = forOfflineConversions, preview = preview, setFileName = setFileName)
+  
     __obj.asInstanceOf[BulkUpload[T]]
   }
 }

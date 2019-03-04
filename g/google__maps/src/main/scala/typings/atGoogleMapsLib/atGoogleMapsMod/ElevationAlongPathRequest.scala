@@ -21,9 +21,8 @@ trait ElevationAlongPathRequest extends js.Object {
 object ElevationAlongPathRequest {
   @scala.inline
   def apply(path: js.Array[LatLng] | java.lang.String, samples: scala.Double): ElevationAlongPathRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    __obj.updateDynamic("samples")(samples)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], samples = samples)
+  
     __obj.asInstanceOf[ElevationAlongPathRequest]
   }
 }

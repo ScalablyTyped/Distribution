@@ -22,8 +22,7 @@ object Anon_ColorsInstancePoints {
     updatable: js.UndefOr[scala.Boolean] = js.undefined,
     useVertexAlpha: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ColorsInstancePoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(points = points)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable)

@@ -18,8 +18,7 @@ object IIconSubset {
     fontFace: atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontFace = null,
     style: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = null
   ): IIconSubset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icons")(icons)
+    val __obj = js.Dynamic.literal(icons = icons)
     if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[IIconSubset]

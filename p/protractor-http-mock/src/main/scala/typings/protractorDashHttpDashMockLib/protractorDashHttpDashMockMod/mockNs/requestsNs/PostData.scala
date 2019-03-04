@@ -19,9 +19,8 @@ object PostData {
     request: protractorDashHttpDashMockLib.Anon_DataMethod[TPayload],
     response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
   ): PostData[TResponse, TPayload] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
     __obj.asInstanceOf[PostData[TResponse, TPayload]]
   }
 }

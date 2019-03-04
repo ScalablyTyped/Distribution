@@ -20,8 +20,7 @@ object ResponseFailure {
     response: apnLib.Anon_Reason = null,
     status: java.lang.String = null
   ): ResponseFailure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
+    val __obj = js.Dynamic.literal(device = device)
     if (error != null) __obj.updateDynamic("error")(error)
     if (response != null) __obj.updateDynamic("response")(response)
     if (status != null) __obj.updateDynamic("status")(status)

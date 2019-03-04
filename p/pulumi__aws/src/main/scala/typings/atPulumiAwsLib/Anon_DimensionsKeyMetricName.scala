@@ -24,10 +24,7 @@ object Anon_DimensionsKeyMetricName {
     namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     unit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DimensionsKeyMetricName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    __obj.updateDynamic("stat")(stat.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], stat = stat.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])

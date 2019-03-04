@@ -16,9 +16,8 @@ object Anon_Options {
     options: webpackDashServeLib.webpackDashServeMod.WebpackServeNs.InitializedOptions,
     server: nodeLib.netMod.Server
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(options = options, server = server)
+  
     __obj.asInstanceOf[Anon_Options]
   }
 }

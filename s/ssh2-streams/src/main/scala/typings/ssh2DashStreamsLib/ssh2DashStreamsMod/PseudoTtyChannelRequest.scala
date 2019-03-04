@@ -30,16 +30,8 @@ object PseudoTtyChannelRequest {
     wantReply: scala.Boolean,
     width: scala.Double
   ): PseudoTtyChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cols")(cols)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("modes")(modes)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("term")(term)
-    __obj.updateDynamic("wantReply")(wantReply)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(cols = cols, height = height, modes = modes, recipient = recipient, request = request, rows = rows, term = term, wantReply = wantReply, width = width)
+  
     __obj.asInstanceOf[PseudoTtyChannelRequest]
   }
 }

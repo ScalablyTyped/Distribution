@@ -17,10 +17,8 @@ trait OpenCLDevice extends js.Object {
 object OpenCLDevice {
   @scala.inline
   def apply(Driver: java.lang.String, Name: java.lang.String, Vendor: java.lang.String): OpenCLDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Driver")(Driver)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Vendor")(Vendor)
+    val __obj = js.Dynamic.literal(Driver = Driver, Name = Name, Vendor = Vendor)
+  
     __obj.asInstanceOf[OpenCLDevice]
   }
 }

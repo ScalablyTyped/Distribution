@@ -12,8 +12,8 @@ trait Anon_Temp extends js.Object {
 object Anon_Temp {
   @scala.inline
   def apply(temp: scala.Double): Anon_Temp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("temp")(temp)
+    val __obj = js.Dynamic.literal(temp = temp)
+  
     __obj.asInstanceOf[Anon_Temp]
   }
 }

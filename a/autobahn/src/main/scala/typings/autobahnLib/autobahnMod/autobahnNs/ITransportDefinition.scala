@@ -18,7 +18,8 @@ object ITransportDefinition {
     protocols: js.Array[java.lang.String] = null,
     url: java.lang.String = null
   ): ITransportDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (protocols != null) __obj.updateDynamic("protocols")(protocols)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[ITransportDefinition]

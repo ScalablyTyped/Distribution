@@ -22,12 +22,8 @@ object DataSourceGroup {
     items: js.Array[DataSourceItemOrGroup],
     value: js.Any
   ): DataSourceGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregates")(aggregates)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hasSubgroups")(hasSubgroups)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(aggregates = aggregates, field = field, hasSubgroups = hasSubgroups, items = items, value = value)
+  
     __obj.asInstanceOf[DataSourceGroup]
   }
 }

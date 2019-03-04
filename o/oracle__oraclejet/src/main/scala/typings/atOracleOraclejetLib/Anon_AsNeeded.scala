@@ -44,23 +44,8 @@ object Anon_AsNeeded {
     titleHalign: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.start,
     titleStyle: js.Object
   ): Anon_AsNeeded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("referenceObjectSection")(referenceObjectSection)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("seriesSection")(seriesSection)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("symbolHeight")(symbolHeight)
-    __obj.updateDynamic("symbolWidth")(symbolWidth)
-    __obj.updateDynamic("textStyle")(textStyle)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleHalign")(titleHalign.asInstanceOf[js.Any])
-    __obj.updateDynamic("titleStyle")(titleStyle)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, maxSize = maxSize, position = position.asInstanceOf[js.Any], referenceObjectSection = referenceObjectSection, rendered = rendered.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], sections = sections, seriesSection = seriesSection, size = size, symbolHeight = symbolHeight, symbolWidth = symbolWidth, textStyle = textStyle, title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+  
     __obj.asInstanceOf[Anon_AsNeeded]
   }
 }

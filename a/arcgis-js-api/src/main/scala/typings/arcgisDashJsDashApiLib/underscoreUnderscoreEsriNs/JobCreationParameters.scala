@@ -135,27 +135,8 @@ object JobCreationParameters {
     startDate: stdLib.Date,
     user: java.lang.String
   ): JobCreationParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("assignedType")(assignedType)
-    __obj.updateDynamic("autoCommitWorkflow")(autoCommitWorkflow)
-    __obj.updateDynamic("autoExecute")(autoExecute)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("dueDate")(dueDate)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobTypeId")(jobTypeId)
-    __obj.updateDynamic("loi")(loi)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("numJobs")(numJobs)
-    __obj.updateDynamic("ownedBy")(ownedBy)
-    __obj.updateDynamic("parentJobId")(parentJobId)
-    __obj.updateDynamic("parentVersion")(parentVersion)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, autoCommitWorkflow = autoCommitWorkflow, autoExecute = autoExecute, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = hasOwnProperty, jobTypeId = jobTypeId, loi = loi, name = name, numJobs = numJobs, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, priority = priority, propertyIsEnumerable = propertyIsEnumerable, startDate = startDate, user = user)
+  
     __obj.asInstanceOf[JobCreationParameters]
   }
 }

@@ -13,9 +13,8 @@ trait Pattern extends js.Object {
 object Pattern {
   @scala.inline
   def apply(action: java.lang.String, pattern: java.lang.String): Pattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(action = action, pattern = pattern)
+  
     __obj.asInstanceOf[Pattern]
   }
 }

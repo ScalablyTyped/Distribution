@@ -50,7 +50,8 @@ object StripeError {
     message: java.lang.String = null,
     param: java.lang.String = null
   ): StripeError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (charge != null) __obj.updateDynamic("charge")(charge)
     if (code != null) __obj.updateDynamic("code")(code)
     if (decline_code != null) __obj.updateDynamic("decline_code")(decline_code)

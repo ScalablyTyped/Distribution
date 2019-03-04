@@ -22,12 +22,8 @@ object AutoTriggerIssue {
     releaseDefinitionReference: ReleaseDefinitionShallowReference,
     releaseTriggerType: ReleaseTriggerType
   ): AutoTriggerIssue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("issueSource")(issueSource)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("releaseDefinitionReference")(releaseDefinitionReference)
-    __obj.updateDynamic("releaseTriggerType")(releaseTriggerType)
+    val __obj = js.Dynamic.literal(issue = issue, issueSource = issueSource, project = project, releaseDefinitionReference = releaseDefinitionReference, releaseTriggerType = releaseTriggerType)
+  
     __obj.asInstanceOf[AutoTriggerIssue]
   }
 }

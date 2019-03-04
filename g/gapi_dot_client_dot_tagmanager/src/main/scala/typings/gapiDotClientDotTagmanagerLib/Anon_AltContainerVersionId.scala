@@ -42,8 +42,7 @@ object Anon_AltContainerVersionId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltContainerVersionId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId)
     if (fields != null) __obj.updateDynamic("fields")(fields)

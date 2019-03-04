@@ -48,25 +48,8 @@ object TokenInfo {
     totalPublicMemory: scala.Double,
     utcTime: java.lang.String
   ): TokenInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firmwareVersion")(firmwareVersion)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("freePrivateMemory")(freePrivateMemory)
-    __obj.updateDynamic("freePublicMemory")(freePublicMemory)
-    __obj.updateDynamic("hardwareVersion")(hardwareVersion)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("manufacturerID")(manufacturerID)
-    __obj.updateDynamic("maxPinLen")(maxPinLen)
-    __obj.updateDynamic("maxRwSessionCount")(maxRwSessionCount)
-    __obj.updateDynamic("maxSessionCount")(maxSessionCount)
-    __obj.updateDynamic("minPinLen")(minPinLen)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("rwSessionCount")(rwSessionCount)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("sessionCount")(sessionCount)
-    __obj.updateDynamic("totalPrivateMemory")(totalPrivateMemory)
-    __obj.updateDynamic("totalPublicMemory")(totalPublicMemory)
-    __obj.updateDynamic("utcTime")(utcTime)
+    val __obj = js.Dynamic.literal(firmwareVersion = firmwareVersion, flags = flags, freePrivateMemory = freePrivateMemory, freePublicMemory = freePublicMemory, hardwareVersion = hardwareVersion, label = label, manufacturerID = manufacturerID, maxPinLen = maxPinLen, maxRwSessionCount = maxRwSessionCount, maxSessionCount = maxSessionCount, minPinLen = minPinLen, model = model, rwSessionCount = rwSessionCount, serialNumber = serialNumber, sessionCount = sessionCount, totalPrivateMemory = totalPrivateMemory, totalPublicMemory = totalPublicMemory, utcTime = utcTime)
+  
     __obj.asInstanceOf[TokenInfo]
   }
 }

@@ -28,14 +28,8 @@ object ojFilmStripSettableProperties {
     orientation: atOracleOraclejetLib.atOracleOraclejetLibStrings.horizontal | atOracleOraclejetLib.atOracleOraclejetLibStrings.vertical,
     translations: atOracleOraclejetLib.Anon_LabelAccArrowNextPage
   ): ojFilmStripSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrowPlacement")(arrowPlacement.asInstanceOf[js.Any])
-    __obj.updateDynamic("arrowVisibility")(arrowVisibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("currentItem")(currentItem)
-    __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxItemsPerPage")(maxItemsPerPage)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(arrowPlacement = arrowPlacement.asInstanceOf[js.Any], arrowVisibility = arrowVisibility.asInstanceOf[js.Any], currentItem = currentItem, looping = looping.asInstanceOf[js.Any], maxItemsPerPage = maxItemsPerPage, orientation = orientation.asInstanceOf[js.Any], translations = translations)
+  
     __obj.asInstanceOf[ojFilmStripSettableProperties]
   }
 }

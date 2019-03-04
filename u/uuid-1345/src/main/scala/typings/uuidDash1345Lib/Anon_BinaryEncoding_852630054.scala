@@ -12,8 +12,8 @@ trait Anon_BinaryEncoding_852630054 extends js.Object {
 object Anon_BinaryEncoding_852630054 {
   @scala.inline
   def apply(encoding: uuidDash1345Lib.uuidDash1345LibStrings.binary): Anon_BinaryEncoding_852630054 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
+  
     __obj.asInstanceOf[Anon_BinaryEncoding_852630054]
   }
 }

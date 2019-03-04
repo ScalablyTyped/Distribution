@@ -138,17 +138,8 @@ object BeaconsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
     ]
   ): BeaconsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("deactivate")(deactivate)
-    __obj.updateDynamic("decommission")(decommission)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("diagnostics")(diagnostics)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(activate = activate, attachments = attachments, deactivate = deactivate, decommission = decommission, delete = delete, diagnostics = diagnostics, get = get, list = list, register = register, update = update)
+  
     __obj.asInstanceOf[BeaconsResource]
   }
 }

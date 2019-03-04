@@ -15,8 +15,8 @@ trait KanbanSelection extends js.Object {
 object KanbanSelection {
   @scala.inline
   def apply(clear: js.Function0[scala.Unit]): KanbanSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
+    val __obj = js.Dynamic.literal(clear = clear)
+  
     __obj.asInstanceOf[KanbanSelection]
   }
 }

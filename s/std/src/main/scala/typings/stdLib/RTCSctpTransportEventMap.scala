@@ -12,8 +12,8 @@ trait RTCSctpTransportEventMap extends js.Object {
 object RTCSctpTransportEventMap {
   @scala.inline
   def apply(statechange: Event): RTCSctpTransportEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("statechange")(statechange)
+    val __obj = js.Dynamic.literal(statechange = statechange)
+  
     __obj.asInstanceOf[RTCSctpTransportEventMap]
   }
 }

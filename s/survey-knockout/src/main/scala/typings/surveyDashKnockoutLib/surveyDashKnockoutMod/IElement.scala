@@ -53,32 +53,8 @@ object IElement {
     visible: scala.Boolean,
     width: java.lang.String
   ): IElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearIncorrectValues")(clearIncorrectValues)
-    __obj.updateDynamic("getLayoutType")(getLayoutType)
-    __obj.updateDynamic("getPanel")(getPanel)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isLayoutTypeSupported")(isLayoutTypeSupported)
-    __obj.updateDynamic("isPage")(isPage)
-    __obj.updateDynamic("isPanel")(isPanel)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("locStrsChanged")(locStrsChanged)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onAnyValueChanged")(onAnyValueChanged)
-    __obj.updateDynamic("onFirstRendering")(onFirstRendering)
-    __obj.updateDynamic("onSurveyLoad")(onSurveyLoad)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("removeElement")(removeElement)
-    __obj.updateDynamic("renderWidth")(renderWidth)
-    __obj.updateDynamic("rightIndent")(rightIndent)
-    __obj.updateDynamic("runCondition")(runCondition)
-    __obj.updateDynamic("setSurveyImpl")(setSurveyImpl)
-    __obj.updateDynamic("setVisibleIndex")(setVisibleIndex)
-    __obj.updateDynamic("startWithNewLine")(startWithNewLine)
-    __obj.updateDynamic("updateCustomWidgets")(updateCustomWidgets)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(clearIncorrectValues = clearIncorrectValues, getLayoutType = getLayoutType, getPanel = getPanel, getType = getType, isLayoutTypeSupported = isLayoutTypeSupported, isPage = isPage, isPanel = isPanel, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onAnyValueChanged = onAnyValueChanged, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, parent = parent, removeElement = removeElement, renderWidth = renderWidth, rightIndent = rightIndent, runCondition = runCondition, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex, startWithNewLine = startWithNewLine, updateCustomWidgets = updateCustomWidgets, visible = visible, width = width)
+  
     __obj.asInstanceOf[IElement]
   }
 }

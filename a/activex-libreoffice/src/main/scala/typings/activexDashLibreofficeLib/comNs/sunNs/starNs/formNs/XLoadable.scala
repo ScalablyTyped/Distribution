@@ -55,16 +55,8 @@ object XLoadable {
     removeLoadListener: js.Function1[XLoadListener, scala.Unit],
     unload: js.Function0[scala.Unit]
   ): XLoadable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addLoadListener")(addLoadListener)
-    __obj.updateDynamic("isLoaded")(isLoaded)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reload")(reload)
-    __obj.updateDynamic("removeLoadListener")(removeLoadListener)
-    __obj.updateDynamic("unload")(unload)
+    val __obj = js.Dynamic.literal(acquire = acquire, addLoadListener = addLoadListener, isLoaded = isLoaded, load = load, queryInterface = queryInterface, release = release, reload = reload, removeLoadListener = removeLoadListener, unload = unload)
+  
     __obj.asInstanceOf[XLoadable]
   }
 }

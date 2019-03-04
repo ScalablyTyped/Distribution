@@ -45,13 +45,8 @@ object XFileIdentifierConverter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFileIdentifierConverter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFileProviderLocality")(getFileProviderLocality)
-    __obj.updateDynamic("getFileURLFromSystemPath")(getFileURLFromSystemPath)
-    __obj.updateDynamic("getSystemPathFromFileURL")(getSystemPathFromFileURL)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getFileProviderLocality = getFileProviderLocality, getFileURLFromSystemPath = getFileURLFromSystemPath, getSystemPathFromFileURL = getSystemPathFromFileURL, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFileIdentifierConverter]
   }
 }

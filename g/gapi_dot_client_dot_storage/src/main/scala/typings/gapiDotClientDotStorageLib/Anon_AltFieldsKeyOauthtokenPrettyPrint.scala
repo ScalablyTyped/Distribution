@@ -42,8 +42,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrint {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(projectId = projectId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

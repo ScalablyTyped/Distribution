@@ -151,8 +151,7 @@ object ComponentConfig {
     settings: js.Any = null,
     url: java.lang.String = null
   ): ComponentConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (componentData != null) __obj.updateDynamic("componentData")(componentData)
     if (id != null) __obj.updateDynamic("id")(id)
     if (settings != null) __obj.updateDynamic("settings")(settings)

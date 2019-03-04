@@ -12,8 +12,8 @@ trait Theme extends js.Object {
 object Theme {
   @scala.inline
   def apply(renderUI: js.Function1[js.Object, js.Object]): Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderUI")(renderUI)
+    val __obj = js.Dynamic.literal(renderUI = renderUI)
+  
     __obj.asInstanceOf[Theme]
   }
 }

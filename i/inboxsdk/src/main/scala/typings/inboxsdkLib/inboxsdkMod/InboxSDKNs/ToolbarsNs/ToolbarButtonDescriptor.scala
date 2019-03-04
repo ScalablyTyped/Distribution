@@ -36,9 +36,7 @@ object ToolbarButtonDescriptor {
     positions: js.Array[ToolbarButtonPosition] = null,
     threadSection: SectionNames = null
   ): ToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(onClick = onClick, title = title)
     if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
     if (hideFor != null) __obj.updateDynamic("hideFor")(hideFor)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)

@@ -12,8 +12,8 @@ trait Anon_RulerBlockParsingRule extends js.Object {
 object Anon_RulerBlockParsingRule {
   @scala.inline
   def apply(ruler: remarkableLib.libRulerMod.namespaced[remarkableLib.libMod.RemarkableNs.BlockParsingRule]): Anon_RulerBlockParsingRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ruler")(ruler)
+    val __obj = js.Dynamic.literal(ruler = ruler)
+  
     __obj.asInstanceOf[Anon_RulerBlockParsingRule]
   }
 }

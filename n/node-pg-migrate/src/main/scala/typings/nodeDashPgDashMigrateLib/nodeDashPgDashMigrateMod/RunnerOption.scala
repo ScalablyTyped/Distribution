@@ -48,13 +48,7 @@ object RunnerOption {
     singleTransaction: js.UndefOr[scala.Boolean] = js.undefined,
     timestamp: js.UndefOr[scala.Boolean] = js.undefined
   ): RunnerOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("databaseUrl")(databaseUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("ignorePattern")(ignorePattern)
-    __obj.updateDynamic("migrationsTable")(migrationsTable)
+    val __obj = js.Dynamic.literal(count = count, databaseUrl = databaseUrl.asInstanceOf[js.Any], dir = dir, direction = direction.asInstanceOf[js.Any], ignorePattern = ignorePattern, migrationsTable = migrationsTable)
     if (!js.isUndefined(checkOrder)) __obj.updateDynamic("checkOrder")(checkOrder)
     if (!js.isUndefined(createMigrationsSchema)) __obj.updateDynamic("createMigrationsSchema")(createMigrationsSchema)
     if (!js.isUndefined(createSchema)) __obj.updateDynamic("createSchema")(createSchema)

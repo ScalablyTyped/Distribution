@@ -36,8 +36,7 @@ object ConsumerOptions {
     retry: RetryOptions = null,
     sessionTimeout: scala.Int | scala.Double = null
   ): ConsumerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
+    val __obj = js.Dynamic.literal(groupId = groupId)
     if (!js.isUndefined(allowAutoTopicCreation)) __obj.updateDynamic("allowAutoTopicCreation")(allowAutoTopicCreation)
     if (heartbeatInterval != null) __obj.updateDynamic("heartbeatInterval")(heartbeatInterval.asInstanceOf[js.Any])
     if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])

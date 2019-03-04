@@ -20,11 +20,8 @@ object UpdateProcessModel {
     isEnabled: scala.Boolean,
     name: java.lang.String
   ): UpdateProcessModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(description = description, isDefault = isDefault, isEnabled = isEnabled, name = name)
+  
     __obj.asInstanceOf[UpdateProcessModel]
   }
 }

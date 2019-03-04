@@ -54,14 +54,8 @@ object LicenseAssignmentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
     ]
   ): LicenseAssignmentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("listForProduct")(listForProduct)
-    __obj.updateDynamic("listForProductAndSku")(listForProductAndSku)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, listForProduct = listForProduct, listForProductAndSku = listForProductAndSku, patch = patch, update = update)
+  
     __obj.asInstanceOf[LicenseAssignmentsResource]
   }
 }

@@ -18,10 +18,8 @@ object AttributeFilterOperator {
     op: atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator,
     value: js.Any
   ): AttributeFilterOperator[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(attribute = attribute, op = op, value = value)
+  
     __obj.asInstanceOf[AttributeFilterOperator[D]]
   }
 }

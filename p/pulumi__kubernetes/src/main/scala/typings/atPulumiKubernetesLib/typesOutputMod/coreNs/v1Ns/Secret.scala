@@ -58,12 +58,8 @@ object Secret {
     stringData: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     `type`: java.lang.String
   ): Secret = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("stringData")(stringData)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, data = data, kind = kind, metadata = metadata, stringData = stringData)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Secret]
   }
 }

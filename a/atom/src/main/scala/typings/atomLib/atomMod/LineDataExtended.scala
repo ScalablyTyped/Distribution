@@ -23,12 +23,8 @@ object LineDataExtended {
     screenRow: scala.Double,
     softWrapped: scala.Boolean
   ): LineDataExtended = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferRow")(bufferRow)
-    __obj.updateDynamic("foldable")(foldable)
-    __obj.updateDynamic("maxDigits")(maxDigits)
-    __obj.updateDynamic("screenRow")(screenRow)
-    __obj.updateDynamic("softWrapped")(softWrapped)
+    val __obj = js.Dynamic.literal(bufferRow = bufferRow, foldable = foldable, maxDigits = maxDigits, screenRow = screenRow, softWrapped = softWrapped)
+  
     __obj.asInstanceOf[LineDataExtended]
   }
 }

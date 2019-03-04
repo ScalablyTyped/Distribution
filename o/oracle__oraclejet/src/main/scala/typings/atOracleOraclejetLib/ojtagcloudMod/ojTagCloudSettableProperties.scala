@@ -45,22 +45,7 @@ object ojTagCloudSettableProperties {
     translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): ojTagCloudSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("hiddenCategories")(hiddenCategories)
-    __obj.updateDynamic("highlightMatch")(highlightMatch.asInstanceOf[js.Any])
-    __obj.updateDynamic("highlightedCategories")(highlightedCategories)
-    __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("styleDefaults")(styleDefaults)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("touchResponse")(touchResponse.asInstanceOf[js.Any])
-    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(animationOnDataChange = animationOnDataChange.asInstanceOf[js.Any], animationOnDisplay = animationOnDisplay.asInstanceOf[js.Any], as = as, hiddenCategories = hiddenCategories, highlightMatch = highlightMatch.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], styleDefaults = styleDefaults, tooltip = tooltip, touchResponse = touchResponse.asInstanceOf[js.Any], trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[ojTagCloudSettableProperties[K, D]]
   }

@@ -15,8 +15,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(includeZero: scala.Boolean): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeZero")(includeZero)
+    val __obj = js.Dynamic.literal(includeZero = includeZero)
+  
     __obj.asInstanceOf[Options]
   }
 }

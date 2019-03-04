@@ -32,11 +32,8 @@ object AcquisitionOptions {
     operations: js.Array[AcquisitionOperation],
     target: java.lang.String
   ): AcquisitionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultOperation")(defaultOperation)
-    __obj.updateDynamic("itemId")(itemId)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(defaultOperation = defaultOperation, itemId = itemId, operations = operations, target = target)
+  
     __obj.asInstanceOf[AcquisitionOptions]
   }
 }

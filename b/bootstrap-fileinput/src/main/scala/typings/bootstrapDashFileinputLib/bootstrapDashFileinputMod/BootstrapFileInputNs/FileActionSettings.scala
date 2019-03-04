@@ -82,21 +82,8 @@ object FileActionSettings {
     uploadIcon: java.lang.String,
     uploadTitle: java.lang.String
   ): FileActionSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indicatorError")(indicatorError)
-    __obj.updateDynamic("indicatorErrorTitle")(indicatorErrorTitle)
-    __obj.updateDynamic("indicatorLoading")(indicatorLoading)
-    __obj.updateDynamic("indicatorLoadingTitle")(indicatorLoadingTitle)
-    __obj.updateDynamic("indicatorNew")(indicatorNew)
-    __obj.updateDynamic("indicatorNewTitle")(indicatorNewTitle)
-    __obj.updateDynamic("indicatorSuccess")(indicatorSuccess)
-    __obj.updateDynamic("indicatorSuccessTitle")(indicatorSuccessTitle)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("removeIcon")(removeIcon)
-    __obj.updateDynamic("removeTitle")(removeTitle)
-    __obj.updateDynamic("uploadClass")(uploadClass)
-    __obj.updateDynamic("uploadIcon")(uploadIcon)
-    __obj.updateDynamic("uploadTitle")(uploadTitle)
+    val __obj = js.Dynamic.literal(indicatorError = indicatorError, indicatorErrorTitle = indicatorErrorTitle, indicatorLoading = indicatorLoading, indicatorLoadingTitle = indicatorLoadingTitle, indicatorNew = indicatorNew, indicatorNewTitle = indicatorNewTitle, indicatorSuccess = indicatorSuccess, indicatorSuccessTitle = indicatorSuccessTitle, removeClass = removeClass, removeIcon = removeIcon, removeTitle = removeTitle, uploadClass = uploadClass, uploadIcon = uploadIcon, uploadTitle = uploadTitle)
+  
     __obj.asInstanceOf[FileActionSettings]
   }
 }

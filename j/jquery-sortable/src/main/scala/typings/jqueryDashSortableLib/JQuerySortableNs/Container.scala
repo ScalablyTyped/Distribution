@@ -28,15 +28,8 @@ object Container {
     rootGroup: ContainerGroup,
     target: jqueryDashSortableLib.JQuery
   ): Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("itemDimensions")(itemDimensions)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("rootGroup")(rootGroup)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(el = el, group = group, handle = handle, itemDimensions = itemDimensions, items = items, options = options, rootGroup = rootGroup, target = target)
+  
     __obj.asInstanceOf[Container]
   }
 }

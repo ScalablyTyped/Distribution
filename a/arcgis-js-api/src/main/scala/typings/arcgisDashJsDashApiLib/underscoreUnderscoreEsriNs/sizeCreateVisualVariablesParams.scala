@@ -132,12 +132,7 @@ object sizeCreateVisualVariablesParams {
     view: View = null,
     worldScale: js.UndefOr[scala.Boolean] = js.undefined
   ): sizeCreateVisualVariablesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)

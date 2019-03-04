@@ -19,8 +19,8 @@ trait ASPxClientPopupWindowEventArgs extends ASPxClientEventArgs {
 object ASPxClientPopupWindowEventArgs {
   @scala.inline
   def apply(window: ASPxClientPopupWindow): ASPxClientPopupWindowEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(window = window)
+  
     __obj.asInstanceOf[ASPxClientPopupWindowEventArgs]
   }
 }

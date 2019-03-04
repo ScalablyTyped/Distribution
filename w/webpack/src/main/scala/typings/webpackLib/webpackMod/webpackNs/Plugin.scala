@@ -14,8 +14,8 @@ trait Plugin
 object Plugin {
   @scala.inline
   def apply(apply: js.Function1[Compiler, scala.Unit]): Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
+    val __obj = js.Dynamic.literal(apply = apply)
+  
     __obj.asInstanceOf[Plugin]
   }
 }

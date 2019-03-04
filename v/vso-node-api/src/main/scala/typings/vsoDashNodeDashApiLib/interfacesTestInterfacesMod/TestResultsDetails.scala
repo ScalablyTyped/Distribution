@@ -13,9 +13,8 @@ trait TestResultsDetails extends js.Object {
 object TestResultsDetails {
   @scala.inline
   def apply(groupByField: java.lang.String, resultsForGroup: js.Array[TestResultsDetailsForGroup]): TestResultsDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupByField")(groupByField)
-    __obj.updateDynamic("resultsForGroup")(resultsForGroup)
+    val __obj = js.Dynamic.literal(groupByField = groupByField, resultsForGroup = resultsForGroup)
+  
     __obj.asInstanceOf[TestResultsDetails]
   }
 }

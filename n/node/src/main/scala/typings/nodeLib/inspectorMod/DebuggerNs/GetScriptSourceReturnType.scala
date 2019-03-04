@@ -15,8 +15,8 @@ trait GetScriptSourceReturnType extends js.Object {
 object GetScriptSourceReturnType {
   @scala.inline
   def apply(scriptSource: java.lang.String): GetScriptSourceReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scriptSource")(scriptSource)
+    val __obj = js.Dynamic.literal(scriptSource = scriptSource)
+  
     __obj.asInstanceOf[GetScriptSourceReturnType]
   }
 }

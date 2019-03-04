@@ -20,9 +20,8 @@ object FormulaTransform {
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.formula,
     initonly: js.UndefOr[scala.Boolean] = js.undefined
   ): FormulaTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("expr")(expr)
+    val __obj = js.Dynamic.literal(as = as, expr = expr)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(initonly)) __obj.updateDynamic("initonly")(initonly)
     __obj.asInstanceOf[FormulaTransform]
   }

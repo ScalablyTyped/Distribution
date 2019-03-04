@@ -13,9 +13,8 @@ trait Anon_OnBehalfOf extends js.Object {
 object Anon_OnBehalfOf {
   @scala.inline
   def apply(onBehalfOf: scala.Double, revalidateApproverIdentity: scala.Double): Anon_OnBehalfOf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onBehalfOf")(onBehalfOf)
-    __obj.updateDynamic("revalidateApproverIdentity")(revalidateApproverIdentity)
+    val __obj = js.Dynamic.literal(onBehalfOf = onBehalfOf, revalidateApproverIdentity = revalidateApproverIdentity)
+  
     __obj.asInstanceOf[Anon_OnBehalfOf]
   }
 }

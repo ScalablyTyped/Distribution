@@ -22,9 +22,8 @@ trait FileSystemSync extends js.Object {
 object FileSystemSync {
   @scala.inline
   def apply(name: java.lang.String, root: DirectoryEntrySync): FileSystemSync = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(name = name, root = root)
+  
     __obj.asInstanceOf[FileSystemSync]
   }
 }

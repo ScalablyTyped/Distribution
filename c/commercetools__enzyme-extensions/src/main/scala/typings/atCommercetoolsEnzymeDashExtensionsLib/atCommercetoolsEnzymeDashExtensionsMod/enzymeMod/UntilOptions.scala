@@ -12,8 +12,8 @@ trait UntilOptions extends js.Object {
 object UntilOptions {
   @scala.inline
   def apply(maxDepth: scala.Double): UntilOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxDepth")(maxDepth)
+    val __obj = js.Dynamic.literal(maxDepth = maxDepth)
+  
     __obj.asInstanceOf[UntilOptions]
   }
 }

@@ -36,8 +36,7 @@ object SchemaObj {
     format: PredefinedFormat | js.Array[_] | (js.Function1[/* val */ js.Any, scala.Unit]) = null,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined
   ): SchemaObj[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     if (arg != null) __obj.updateDynamic("arg")(arg)
     if (doc != null) __obj.updateDynamic("doc")(doc)
     if (env != null) __obj.updateDynamic("env")(env)

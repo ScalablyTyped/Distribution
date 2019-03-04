@@ -37,13 +37,8 @@ object SuggestionResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     text: java.lang.String
   ): SuggestionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("isCollection")(isCollection)
-    __obj.updateDynamic("magicKey")(magicKey)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, isCollection = isCollection, magicKey = magicKey, propertyIsEnumerable = propertyIsEnumerable, text = text)
+  
     __obj.asInstanceOf[SuggestionResult]
   }
 }

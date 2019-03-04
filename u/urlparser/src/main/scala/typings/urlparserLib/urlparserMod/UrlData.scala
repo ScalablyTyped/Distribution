@@ -19,11 +19,8 @@ object UrlData {
     query: urlparserLib.Anon_Params,
     toString: js.Function0[java.lang.String]
   ): UrlData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(host = host, path = path, query = query, toString = toString)
+  
     __obj.asInstanceOf[UrlData]
   }
 }

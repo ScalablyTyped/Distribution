@@ -18,8 +18,7 @@ object MakeDirectoryOptions {
     attributes: js.Object = null,
     key: java.lang.String | nodeLib.Buffer = null
   ): MakeDirectoryOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeDirectoryOptions]

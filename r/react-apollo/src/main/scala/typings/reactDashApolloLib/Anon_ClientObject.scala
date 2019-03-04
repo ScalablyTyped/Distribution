@@ -12,8 +12,8 @@ trait Anon_ClientObject extends js.Object {
 object Anon_ClientObject {
   @scala.inline
   def apply(client: propDashTypesLib.propDashTypesMod.Requireable[js.Object]): Anon_ClientObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(client = client)
+  
     __obj.asInstanceOf[Anon_ClientObject]
   }
 }

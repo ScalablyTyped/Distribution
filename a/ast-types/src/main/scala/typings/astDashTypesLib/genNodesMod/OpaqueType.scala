@@ -28,10 +28,8 @@ object OpaqueType {
     `type`: astDashTypesLib.astDashTypesLibStrings.OpaqueType,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
   ): OpaqueType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("impltype")(impltype)
-    __obj.updateDynamic("supertype")(supertype)
+    val __obj = js.Dynamic.literal(id = id, impltype = impltype, supertype = supertype)
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[OpaqueType]
   }

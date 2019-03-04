@@ -16,8 +16,8 @@ trait IUserResource extends js.Object {
 object IUserResource {
   @scala.inline
   def apply(disableUser: js.Function1[scala.Double, scala.Unit]): IUserResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableUser")(disableUser)
+    val __obj = js.Dynamic.literal(disableUser = disableUser)
+  
     __obj.asInstanceOf[IUserResource]
   }
 }

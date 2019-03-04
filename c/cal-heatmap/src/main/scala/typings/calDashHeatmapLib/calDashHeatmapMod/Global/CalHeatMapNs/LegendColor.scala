@@ -27,9 +27,7 @@ object LegendColor {
     empty: java.lang.String = null,
     overflow: java.lang.String = null
   ): LegendColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, min = min)
     if (base != null) __obj.updateDynamic("base")(base)
     if (empty != null) __obj.updateDynamic("empty")(empty)
     if (overflow != null) __obj.updateDynamic("overflow")(overflow)

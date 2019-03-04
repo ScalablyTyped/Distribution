@@ -44,20 +44,7 @@ object Anon_Codehead {
     position: java.lang.String = null,
     rest: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Codehead = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dot_shiftY")(dot_shiftY)
-    __obj.updateDynamic("flag")(flag)
-    __obj.updateDynamic("gracenote_stem_down_extension")(gracenote_stem_down_extension)
-    __obj.updateDynamic("gracenote_stem_up_extension")(gracenote_stem_up_extension)
-    __obj.updateDynamic("head_width")(head_width)
-    __obj.updateDynamic("line_above")(line_above)
-    __obj.updateDynamic("line_below")(line_below)
-    __obj.updateDynamic("stem")(stem)
-    __obj.updateDynamic("stem_down_extension")(stem_down_extension)
-    __obj.updateDynamic("stem_offset")(stem_offset)
-    __obj.updateDynamic("stem_up_extension")(stem_up_extension)
-    __obj.updateDynamic("tabnote_stem_down_extension")(tabnote_stem_down_extension)
-    __obj.updateDynamic("tabnote_stem_up_extension")(tabnote_stem_up_extension)
+    val __obj = js.Dynamic.literal(dot_shiftY = dot_shiftY, flag = flag, gracenote_stem_down_extension = gracenote_stem_down_extension, gracenote_stem_up_extension = gracenote_stem_up_extension, head_width = head_width, line_above = line_above, line_below = line_below, stem = stem, stem_down_extension = stem_down_extension, stem_offset = stem_offset, stem_up_extension = stem_up_extension, tabnote_stem_down_extension = tabnote_stem_down_extension, tabnote_stem_up_extension = tabnote_stem_up_extension)
     if (code_head != null) __obj.updateDynamic("code_head")(code_head)
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(rest)) __obj.updateDynamic("rest")(rest)

@@ -52,9 +52,7 @@ object OtpauthURLOptions {
     period: scala.Int | scala.Double = null,
     `type`: speakeasyLib.speakeasyLibStrings.htop | speakeasyLib.speakeasyLibStrings.totp = null
   ): OtpauthURLOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(label = label, secret = secret)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])

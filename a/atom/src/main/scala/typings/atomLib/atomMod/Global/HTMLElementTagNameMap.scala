@@ -12,8 +12,8 @@ trait HTMLElementTagNameMap extends js.Object {
 object HTMLElementTagNameMap {
   @scala.inline
   def apply(`atom-text-editor`: atomLib.atomMod.TextEditorElement): HTMLElementTagNameMap = {
-    val __obj = js.Dynamic.literal(`atom-text-editor` = `atom-text-editor`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("atom-text-editor")(`atom-text-editor`)
     __obj.asInstanceOf[HTMLElementTagNameMap]
   }
 }

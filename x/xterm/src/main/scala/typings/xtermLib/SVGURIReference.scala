@@ -12,8 +12,8 @@ trait SVGURIReference extends js.Object {
 object SVGURIReference {
   @scala.inline
   def apply(href: SVGAnimatedString): SVGURIReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(href = href)
+  
     __obj.asInstanceOf[SVGURIReference]
   }
 }

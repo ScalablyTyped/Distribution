@@ -60,8 +60,7 @@ object ApnsSandboxChannelArgs {
     tokenKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tokenKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ApnsSandboxChannelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
     if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
     if (defaultAuthenticationMethod != null) __obj.updateDynamic("defaultAuthenticationMethod")(defaultAuthenticationMethod.asInstanceOf[js.Any])

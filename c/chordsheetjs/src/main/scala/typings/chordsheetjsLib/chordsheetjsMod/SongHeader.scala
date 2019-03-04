@@ -13,9 +13,8 @@ trait SongHeader extends js.Object {
 object SongHeader {
   @scala.inline
   def apply(subtitle: java.lang.String, title: java.lang.String): SongHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subtitle")(subtitle)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(subtitle = subtitle, title = title)
+  
     __obj.asInstanceOf[SongHeader]
   }
 }

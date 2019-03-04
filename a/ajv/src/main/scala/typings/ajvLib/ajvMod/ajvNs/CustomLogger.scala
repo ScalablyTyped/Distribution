@@ -18,10 +18,8 @@ object CustomLogger {
     log: js.Function1[/* repeated */ js.Any, js.Any],
     warn: js.Function1[/* repeated */ js.Any, js.Any]
   ): CustomLogger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(error = error, log = log, warn = warn)
+  
     __obj.asInstanceOf[CustomLogger]
   }
 }

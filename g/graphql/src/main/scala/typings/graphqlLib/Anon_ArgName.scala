@@ -40,9 +40,7 @@ object Anon_ArgName {
     ] = null,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): Anon_ArgName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(document = document, schema = schema)
     if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver.asInstanceOf[js.Any])
     if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])

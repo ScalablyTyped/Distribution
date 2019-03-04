@@ -17,8 +17,7 @@ object OfflineAudioCompletionEventInit {
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
     composed: js.UndefOr[scala.Boolean] = js.undefined
   ): OfflineAudioCompletionEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderedBuffer")(renderedBuffer)
+    val __obj = js.Dynamic.literal(renderedBuffer = renderedBuffer)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

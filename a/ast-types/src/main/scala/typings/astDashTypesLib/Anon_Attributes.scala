@@ -42,8 +42,7 @@ object Anon_Attributes {
     name: astDashTypesLib.genKindsMod.JSXIdentifierKind | astDashTypesLib.genKindsMod.JSXNamespacedNameKind | astDashTypesLib.genKindsMod.JSXMemberExpressionKind = null,
     selfClosing: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openingElement")(openingElement)
+    val __obj = js.Dynamic.literal(openingElement = openingElement)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (children != null) __obj.updateDynamic("children")(children)
     if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement)

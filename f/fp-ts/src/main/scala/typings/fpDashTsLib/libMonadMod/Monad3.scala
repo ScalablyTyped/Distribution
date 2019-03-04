@@ -30,12 +30,8 @@ object Monad3 {
     ],
     of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[M, js.Any, js.Any, js.Any]]
   ): Monad3[M] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, chain = chain, map = map, of = of)
+  
     __obj.asInstanceOf[Monad3[M]]
   }
 }

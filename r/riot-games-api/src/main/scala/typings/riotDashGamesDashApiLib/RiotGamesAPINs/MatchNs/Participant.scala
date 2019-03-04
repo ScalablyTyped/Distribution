@@ -32,17 +32,8 @@ object Participant {
     teamId: scala.Double,
     timeline: ParticipantTimeline
   ): Participant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("championId")(championId)
-    __obj.updateDynamic("highestAchievedSeasonTier")(highestAchievedSeasonTier)
-    __obj.updateDynamic("masteries")(masteries)
-    __obj.updateDynamic("participantId")(participantId)
-    __obj.updateDynamic("runes")(runes)
-    __obj.updateDynamic("spell1Id")(spell1Id)
-    __obj.updateDynamic("spell2Id")(spell2Id)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("teamId")(teamId)
-    __obj.updateDynamic("timeline")(timeline)
+    val __obj = js.Dynamic.literal(championId = championId, highestAchievedSeasonTier = highestAchievedSeasonTier, masteries = masteries, participantId = participantId, runes = runes, spell1Id = spell1Id, spell2Id = spell2Id, stats = stats, teamId = teamId, timeline = timeline)
+  
     __obj.asInstanceOf[Participant]
   }
 }

@@ -22,12 +22,8 @@ object TracekitStack {
     line: scala.Double,
     url: java.lang.String
   ): TracekitStack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("func")(func)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(column = column, context = context, func = func, line = line, url = url)
+  
     __obj.asInstanceOf[TracekitStack]
   }
 }

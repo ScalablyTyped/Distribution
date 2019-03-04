@@ -29,8 +29,8 @@ object ClassPrivateProperty {
     trailingComments: js.Array[Comment] = null,
     value: Expression = null
   ): ClassPrivateProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

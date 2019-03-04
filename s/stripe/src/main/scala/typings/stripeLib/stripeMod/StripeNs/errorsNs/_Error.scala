@@ -13,8 +13,7 @@ trait _Error
 object _Error {
   @scala.inline
   def apply(message: java.lang.String, stack: java.lang.String = null): _Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[_Error]
   }

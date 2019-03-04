@@ -13,9 +13,8 @@ trait EnumModel[T] extends js.Object {
 object EnumModel {
   @scala.inline
   def apply[T](identifiers: js.Array[java.lang.String] | T, name: java.lang.String): EnumModel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifiers")(identifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(identifiers = identifiers.asInstanceOf[js.Any], name = name)
+  
     __obj.asInstanceOf[EnumModel[T]]
   }
 }

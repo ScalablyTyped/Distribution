@@ -20,8 +20,7 @@ object Anon_ArgsJar {
     mainClass: java.lang.String = null,
     properties: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ArgsJar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jar")(jar)
+    val __obj = js.Dynamic.literal(jar = jar)
     if (args != null) __obj.updateDynamic("args")(args)
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
     if (properties != null) __obj.updateDynamic("properties")(properties)

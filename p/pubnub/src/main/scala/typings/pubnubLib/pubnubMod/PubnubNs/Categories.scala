@@ -32,17 +32,8 @@ object Categories {
     PNTimeoutCategory: java.lang.String,
     PNUnknownCategory: java.lang.String
   ): Categories = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PNAccessDeniedCategory")(PNAccessDeniedCategory)
-    __obj.updateDynamic("PNBadRequestCategory")(PNBadRequestCategory)
-    __obj.updateDynamic("PNConnectedCategory")(PNConnectedCategory)
-    __obj.updateDynamic("PNNetworkDownCategory")(PNNetworkDownCategory)
-    __obj.updateDynamic("PNNetworkIssuesCategory")(PNNetworkIssuesCategory)
-    __obj.updateDynamic("PNNetworkUpCategory")(PNNetworkUpCategory)
-    __obj.updateDynamic("PNReconnectedCategory")(PNReconnectedCategory)
-    __obj.updateDynamic("PNRequestMessageCountExceededCategory")(PNRequestMessageCountExceededCategory)
-    __obj.updateDynamic("PNTimeoutCategory")(PNTimeoutCategory)
-    __obj.updateDynamic("PNUnknownCategory")(PNUnknownCategory)
+    val __obj = js.Dynamic.literal(PNAccessDeniedCategory = PNAccessDeniedCategory, PNBadRequestCategory = PNBadRequestCategory, PNConnectedCategory = PNConnectedCategory, PNNetworkDownCategory = PNNetworkDownCategory, PNNetworkIssuesCategory = PNNetworkIssuesCategory, PNNetworkUpCategory = PNNetworkUpCategory, PNReconnectedCategory = PNReconnectedCategory, PNRequestMessageCountExceededCategory = PNRequestMessageCountExceededCategory, PNTimeoutCategory = PNTimeoutCategory, PNUnknownCategory = PNUnknownCategory)
+  
     __obj.asInstanceOf[Categories]
   }
 }

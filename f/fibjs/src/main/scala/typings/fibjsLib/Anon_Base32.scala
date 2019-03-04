@@ -18,10 +18,8 @@ object Anon_Base32 {
     decode: js.Function1[java.lang.String, Class_Buffer],
     encode: js.Function1[Class_Buffer, java.lang.String]
   ): Anon_Base32 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base32Ns")(base32Ns)
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(base32Ns = base32Ns, decode = decode, encode = encode)
+  
     __obj.asInstanceOf[Anon_Base32]
   }
 }

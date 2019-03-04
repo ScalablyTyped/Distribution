@@ -60,9 +60,7 @@ object Anon_AltCreativeFieldIdFieldsIds {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCreativeFieldIdFieldsIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creativeFieldId")(creativeFieldId)
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(creativeFieldId = creativeFieldId, profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (ids != null) __obj.updateDynamic("ids")(ids)

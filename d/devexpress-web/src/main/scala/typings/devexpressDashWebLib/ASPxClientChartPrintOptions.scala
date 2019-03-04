@@ -136,29 +136,8 @@ object ASPxClientChartPrintOptions {
     SetPrintCrosshair: js.Function1[scala.Boolean, scala.Unit],
     SetSizeMode: js.Function1[java.lang.String, scala.Unit]
   ): ASPxClientChartPrintOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCustomPaperHeight")(GetCustomPaperHeight)
-    __obj.updateDynamic("GetCustomPaperName")(GetCustomPaperName)
-    __obj.updateDynamic("GetCustomPaperWidth")(GetCustomPaperWidth)
-    __obj.updateDynamic("GetLandscape")(GetLandscape)
-    __obj.updateDynamic("GetMarginBottom")(GetMarginBottom)
-    __obj.updateDynamic("GetMarginLeft")(GetMarginLeft)
-    __obj.updateDynamic("GetMarginRight")(GetMarginRight)
-    __obj.updateDynamic("GetMarginTop")(GetMarginTop)
-    __obj.updateDynamic("GetPaperKind")(GetPaperKind)
-    __obj.updateDynamic("GetPrintCrosshair")(GetPrintCrosshair)
-    __obj.updateDynamic("GetSizeMode")(GetSizeMode)
-    __obj.updateDynamic("SetCustomPaperHeight")(SetCustomPaperHeight)
-    __obj.updateDynamic("SetCustomPaperName")(SetCustomPaperName)
-    __obj.updateDynamic("SetCustomPaperWidth")(SetCustomPaperWidth)
-    __obj.updateDynamic("SetLandscape")(SetLandscape)
-    __obj.updateDynamic("SetMarginBottom")(SetMarginBottom)
-    __obj.updateDynamic("SetMarginLeft")(SetMarginLeft)
-    __obj.updateDynamic("SetMarginRight")(SetMarginRight)
-    __obj.updateDynamic("SetMarginTop")(SetMarginTop)
-    __obj.updateDynamic("SetPaperKind")(SetPaperKind)
-    __obj.updateDynamic("SetPrintCrosshair")(SetPrintCrosshair)
-    __obj.updateDynamic("SetSizeMode")(SetSizeMode)
+    val __obj = js.Dynamic.literal(GetCustomPaperHeight = GetCustomPaperHeight, GetCustomPaperName = GetCustomPaperName, GetCustomPaperWidth = GetCustomPaperWidth, GetLandscape = GetLandscape, GetMarginBottom = GetMarginBottom, GetMarginLeft = GetMarginLeft, GetMarginRight = GetMarginRight, GetMarginTop = GetMarginTop, GetPaperKind = GetPaperKind, GetPrintCrosshair = GetPrintCrosshair, GetSizeMode = GetSizeMode, SetCustomPaperHeight = SetCustomPaperHeight, SetCustomPaperName = SetCustomPaperName, SetCustomPaperWidth = SetCustomPaperWidth, SetLandscape = SetLandscape, SetMarginBottom = SetMarginBottom, SetMarginLeft = SetMarginLeft, SetMarginRight = SetMarginRight, SetMarginTop = SetMarginTop, SetPaperKind = SetPaperKind, SetPrintCrosshair = SetPrintCrosshair, SetSizeMode = SetSizeMode)
+  
     __obj.asInstanceOf[ASPxClientChartPrintOptions]
   }
 }

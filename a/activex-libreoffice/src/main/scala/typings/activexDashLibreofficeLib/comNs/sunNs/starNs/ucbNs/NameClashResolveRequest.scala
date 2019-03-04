@@ -41,13 +41,8 @@ object NameClashResolveRequest {
     ProposedNewName: java.lang.String,
     TargetFolderURL: java.lang.String
   ): NameClashResolveRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClashingName")(ClashingName)
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("ProposedNewName")(ProposedNewName)
-    __obj.updateDynamic("TargetFolderURL")(TargetFolderURL)
+    val __obj = js.Dynamic.literal(ClashingName = ClashingName, Classification = Classification, Context = Context, Message = Message, ProposedNewName = ProposedNewName, TargetFolderURL = TargetFolderURL)
+  
     __obj.asInstanceOf[NameClashResolveRequest]
   }
 }

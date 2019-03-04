@@ -13,9 +13,8 @@ trait StringCryptoBox extends js.Object {
 object StringCryptoBox {
   @scala.inline
   def apply(ciphertext: java.lang.String, mac: java.lang.String): StringCryptoBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ciphertext")(ciphertext)
-    __obj.updateDynamic("mac")(mac)
+    val __obj = js.Dynamic.literal(ciphertext = ciphertext, mac = mac)
+  
     __obj.asInstanceOf[StringCryptoBox]
   }
 }

@@ -25,9 +25,7 @@ object ListParameters {
     sortOrder: SortOrder = null,
     syncToken: java.lang.String = null
   ): ListParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("personFields")(personFields)
-    __obj.updateDynamic("resourceName")(resourceName)
+    val __obj = js.Dynamic.literal(personFields = personFields, resourceName = resourceName)
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)

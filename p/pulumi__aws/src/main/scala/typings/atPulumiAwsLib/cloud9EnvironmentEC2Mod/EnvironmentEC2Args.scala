@@ -42,8 +42,7 @@ object EnvironmentEC2Args {
     ownerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EnvironmentEC2Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any])
     if (automaticStopTimeMinutes != null) __obj.updateDynamic("automaticStopTimeMinutes")(automaticStopTimeMinutes.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

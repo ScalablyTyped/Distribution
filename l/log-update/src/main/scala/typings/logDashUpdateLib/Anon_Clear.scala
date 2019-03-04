@@ -21,10 +21,8 @@ object Anon_Clear {
     ],
     done: js.Function0[scala.Unit]
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("done")(done)
+    val __obj = js.Dynamic.literal(clear = clear, create = create, done = done)
+  
     __obj.asInstanceOf[Anon_Clear]
   }
 }

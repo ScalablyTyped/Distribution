@@ -154,8 +154,7 @@ object CommunicationRequest {
     text: Narrative = null,
     topic: js.Array[Reference] = null
   ): CommunicationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_authoredOn != null) __obj.updateDynamic("_authoredOn")(_authoredOn)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

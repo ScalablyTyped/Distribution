@@ -16,9 +16,8 @@ object Anon_ArgArray {
     bind: js.Function3[Function, js.Any, /* repeated */ js.Any, js.Any],
     part: js.Function2[Function, /* repeated */ js.Any, js.Any]
   ): Anon_ArgArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(bind = bind, part = part)
+  
     __obj.asInstanceOf[Anon_ArgArray]
   }
 }

@@ -22,12 +22,8 @@ object Anon_Fullscreen {
     stringify: scala.Boolean,
     width: scala.Double
   ): Anon_Fullscreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullscreen")(fullscreen)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("marks")(marks)
-    __obj.updateDynamic("stringify")(stringify)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(fullscreen = fullscreen, height = height, marks = marks, stringify = stringify, width = width)
+  
     __obj.asInstanceOf[Anon_Fullscreen]
   }
 }

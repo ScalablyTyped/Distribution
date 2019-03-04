@@ -15,11 +15,8 @@ trait Dimension extends js.Object {
 object Dimension {
   @scala.inline
   def apply(h: scala.Double, w: scala.Double, x: scala.Double, y: scala.Double): Dimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(h = h, w = w, x = x, y = y)
+  
     __obj.asInstanceOf[Dimension]
   }
 }

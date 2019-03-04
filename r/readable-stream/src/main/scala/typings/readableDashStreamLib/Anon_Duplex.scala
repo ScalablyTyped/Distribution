@@ -24,13 +24,8 @@ object Anon_Duplex {
     Transform: nodeLib.streamMod.Transform,
     Writable: nodeLib.streamMod.Writable
   ): Anon_Duplex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Duplex")(Duplex)
-    __obj.updateDynamic("PassThrough")(PassThrough)
-    __obj.updateDynamic("Readable")(Readable)
-    __obj.updateDynamic("Stream")(Stream)
-    __obj.updateDynamic("Transform")(Transform)
-    __obj.updateDynamic("Writable")(Writable)
+    val __obj = js.Dynamic.literal(Duplex = Duplex, PassThrough = PassThrough, Readable = Readable, Stream = Stream, Transform = Transform, Writable = Writable)
+  
     __obj.asInstanceOf[Anon_Duplex]
   }
 }

@@ -18,10 +18,8 @@ object Anon_ORBIT {
     PAN: threeLib.threeDashCoreMod.MOUSE,
     ZOOM: threeLib.threeDashCoreMod.MOUSE
   ): Anon_ORBIT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ORBIT")(ORBIT)
-    __obj.updateDynamic("PAN")(PAN)
-    __obj.updateDynamic("ZOOM")(ZOOM)
+    val __obj = js.Dynamic.literal(ORBIT = ORBIT, PAN = PAN, ZOOM = ZOOM)
+  
     __obj.asInstanceOf[Anon_ORBIT]
   }
 }

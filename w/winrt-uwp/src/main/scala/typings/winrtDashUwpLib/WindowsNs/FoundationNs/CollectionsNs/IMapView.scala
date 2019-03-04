@@ -37,12 +37,8 @@ object IMapView {
     size: scala.Double,
     split: js.Function0[winrtDashUwpLib.Anon_First[K, V]]
   ): IMapView[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hasKey")(hasKey)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("split")(split)
+    val __obj = js.Dynamic.literal(first = first, hasKey = hasKey, lookup = lookup, size = size, split = split)
+  
     __obj.asInstanceOf[IMapView[K, V]]
   }
 }

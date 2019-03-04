@@ -45,18 +45,8 @@ object IRecord {
     key: js.Function0[scala.Double],
     properties: org.scalablytyped.runtime.StringDictionary[IPropertyBase]
   ): IRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddFieldValue")(AddFieldValue)
-    __obj.updateDynamic("GetDataValue")(GetDataValue)
-    __obj.updateDynamic("GetLocalizedValue")(GetLocalizedValue)
-    __obj.updateDynamic("GetProp")(GetProp)
-    __obj.updateDynamic("HasDataValue")(HasDataValue)
-    __obj.updateDynamic("HasLocalizedValue")(HasLocalizedValue)
-    __obj.updateDynamic("RemoveFieldValue")(RemoveFieldValue)
-    __obj.updateDynamic("SetProp")(SetProp)
-    __obj.updateDynamic("bIsNewRow")(bIsNewRow)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(AddFieldValue = AddFieldValue, GetDataValue = GetDataValue, GetLocalizedValue = GetLocalizedValue, GetProp = GetProp, HasDataValue = HasDataValue, HasLocalizedValue = HasLocalizedValue, RemoveFieldValue = RemoveFieldValue, SetProp = SetProp, bIsNewRow = bIsNewRow, key = key, properties = properties)
+  
     __obj.asInstanceOf[IRecord]
   }
 }

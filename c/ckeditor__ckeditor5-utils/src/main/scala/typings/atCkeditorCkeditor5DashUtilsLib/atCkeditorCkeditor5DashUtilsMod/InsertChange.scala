@@ -18,9 +18,8 @@ object InsertChange {
     `type`: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.insert,
     values: js.Array[java.lang.String]
   ): InsertChange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(index = index, values = values)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InsertChange]
   }
 }

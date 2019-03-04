@@ -22,12 +22,8 @@ object RadiusPacket {
     length: scala.Double,
     raw_attributes: js.Array[js.Array[_]]
   ): RadiusPacket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("raw_attributes")(raw_attributes)
+    val __obj = js.Dynamic.literal(attributes = attributes, code = code, identifier = identifier, length = length, raw_attributes = raw_attributes)
+  
     __obj.asInstanceOf[RadiusPacket]
   }
 }

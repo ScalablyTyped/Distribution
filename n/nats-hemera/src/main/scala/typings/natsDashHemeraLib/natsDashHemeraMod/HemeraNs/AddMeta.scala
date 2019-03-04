@@ -24,13 +24,8 @@ object AddMeta {
     schema: js.Any,
     use: js.Function1[AddMetaMiddleware, AddMeta]
   ): AddMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("plugin")(plugin)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(action = action, end = end, pattern = pattern, plugin = plugin, schema = schema, use = use)
+  
     __obj.asInstanceOf[AddMeta]
   }
 }

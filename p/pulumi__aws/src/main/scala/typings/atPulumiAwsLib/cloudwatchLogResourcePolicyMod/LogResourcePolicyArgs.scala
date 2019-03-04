@@ -22,9 +22,8 @@ object LogResourcePolicyArgs {
     policyDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     policyName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): LogResourcePolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policyDocument")(policyDocument.asInstanceOf[js.Any])
-    __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[LogResourcePolicyArgs]
   }
 }

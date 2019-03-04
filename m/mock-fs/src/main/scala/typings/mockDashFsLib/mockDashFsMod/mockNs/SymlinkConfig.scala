@@ -21,8 +21,7 @@ object SymlinkConfig {
     mtime: stdLib.Date = null,
     uid: scala.Int | scala.Double = null
   ): SymlinkConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (atime != null) __obj.updateDynamic("atime")(atime)
     if (birthtime != null) __obj.updateDynamic("birthtime")(birthtime)
     if (ctime != null) __obj.updateDynamic("ctime")(ctime)

@@ -51,13 +51,8 @@ object DashboardExcelExportOptions {
     Format: java.lang.String,
     IncludeHiddenParameters: scala.Boolean
   ): DashboardExcelExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CsvValueSeparator")(CsvValueSeparator)
-    __obj.updateDynamic("DashboardStatePosition")(DashboardStatePosition)
-    __obj.updateDynamic("ExportFilters")(ExportFilters)
-    __obj.updateDynamic("ExportParameters")(ExportParameters)
-    __obj.updateDynamic("Format")(Format)
-    __obj.updateDynamic("IncludeHiddenParameters")(IncludeHiddenParameters)
+    val __obj = js.Dynamic.literal(CsvValueSeparator = CsvValueSeparator, DashboardStatePosition = DashboardStatePosition, ExportFilters = ExportFilters, ExportParameters = ExportParameters, Format = Format, IncludeHiddenParameters = IncludeHiddenParameters)
+  
     __obj.asInstanceOf[DashboardExcelExportOptions]
   }
 }

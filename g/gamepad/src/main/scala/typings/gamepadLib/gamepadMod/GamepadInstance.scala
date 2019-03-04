@@ -24,13 +24,8 @@ object GamepadInstance {
     productID: scala.Double,
     vendorID: scala.Double
   ): GamepadInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisStates")(axisStates)
-    __obj.updateDynamic("buttonStates")(buttonStates)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("deviceID")(deviceID)
-    __obj.updateDynamic("productID")(productID)
-    __obj.updateDynamic("vendorID")(vendorID)
+    val __obj = js.Dynamic.literal(axisStates = axisStates, buttonStates = buttonStates, description = description, deviceID = deviceID, productID = productID, vendorID = vendorID)
+  
     __obj.asInstanceOf[GamepadInstance]
   }
 }

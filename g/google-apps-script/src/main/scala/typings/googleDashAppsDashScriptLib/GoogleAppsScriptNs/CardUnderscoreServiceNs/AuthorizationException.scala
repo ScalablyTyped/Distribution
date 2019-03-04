@@ -22,12 +22,8 @@ object AuthorizationException {
     setResourceDisplayName: js.Function1[java.lang.String, AuthorizationException],
     throwException: js.Function0[scala.Unit]
   ): AuthorizationException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson)
-    __obj.updateDynamic("setAuthorizationUrl")(setAuthorizationUrl)
-    __obj.updateDynamic("setCustomUiCallback")(setCustomUiCallback)
-    __obj.updateDynamic("setResourceDisplayName")(setResourceDisplayName)
-    __obj.updateDynamic("throwException")(throwException)
+    val __obj = js.Dynamic.literal(printJson = printJson, setAuthorizationUrl = setAuthorizationUrl, setCustomUiCallback = setCustomUiCallback, setResourceDisplayName = setResourceDisplayName, throwException = throwException)
+  
     __obj.asInstanceOf[AuthorizationException]
   }
 }

@@ -46,21 +46,8 @@ object GetSubnetResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetSubnetResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("assignIpv6AddressOnCreation")(assignIpv6AddressOnCreation)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("availabilityZoneId")(availabilityZoneId)
-    __obj.updateDynamic("cidrBlock")(cidrBlock)
-    __obj.updateDynamic("defaultForAz")(defaultForAz)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock)
-    __obj.updateDynamic("ipv6CidrBlockAssociationId")(ipv6CidrBlockAssociationId)
-    __obj.updateDynamic("mapPublicIpOnLaunch")(mapPublicIpOnLaunch)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(arn = arn, assignIpv6AddressOnCreation = assignIpv6AddressOnCreation, availabilityZone = availabilityZone, availabilityZoneId = availabilityZoneId, cidrBlock = cidrBlock, defaultForAz = defaultForAz, id = id, ipv6CidrBlock = ipv6CidrBlock, ipv6CidrBlockAssociationId = ipv6CidrBlockAssociationId, mapPublicIpOnLaunch = mapPublicIpOnLaunch, ownerId = ownerId, state = state, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetSubnetResult]
   }
 }

@@ -24,13 +24,8 @@ object IntlConfig {
     messages: reactLib.reactMod.ReactNs.Requireable[_],
     onError: reactLib.reactMod.ReactNs.Requireable[_]
   ): IntlConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultFormats")(defaultFormats)
-    __obj.updateDynamic("defaultLocale")(defaultLocale)
-    __obj.updateDynamic("formats")(formats)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("onError")(onError)
+    val __obj = js.Dynamic.literal(defaultFormats = defaultFormats, defaultLocale = defaultLocale, formats = formats, locale = locale, messages = messages, onError = onError)
+  
     __obj.asInstanceOf[IntlConfig]
   }
 }

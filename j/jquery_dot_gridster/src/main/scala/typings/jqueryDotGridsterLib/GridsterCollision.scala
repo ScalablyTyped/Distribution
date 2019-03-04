@@ -18,10 +18,8 @@ object GridsterCollision {
     on_overlap_start: js.Function1[GridsterCollisionData, scala.Unit],
     on_overlap_stop: js.Function1[GridsterCollisionData, scala.Unit]
   ): GridsterCollision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on_overlap")(on_overlap)
-    __obj.updateDynamic("on_overlap_start")(on_overlap_start)
-    __obj.updateDynamic("on_overlap_stop")(on_overlap_stop)
+    val __obj = js.Dynamic.literal(on_overlap = on_overlap, on_overlap_start = on_overlap_start, on_overlap_stop = on_overlap_stop)
+  
     __obj.asInstanceOf[GridsterCollision]
   }
 }

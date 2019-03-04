@@ -20,11 +20,8 @@ object PassiveDto {
     name: java.lang.String,
     sanitizedDescription: java.lang.String
   ): PassiveDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sanitizedDescription")(sanitizedDescription)
+    val __obj = js.Dynamic.literal(description = description, image = image, name = name, sanitizedDescription = sanitizedDescription)
+  
     __obj.asInstanceOf[PassiveDto]
   }
 }

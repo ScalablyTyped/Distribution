@@ -31,14 +31,7 @@ object OnErrorOccurredDetails {
     url: java.lang.String,
     webContentsId: scala.Int | scala.Double = null
   ): OnErrorOccurredDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fromCache")(fromCache)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("resourceType")(resourceType)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(error = error, fromCache = fromCache, id = id, method = method, resourceType = resourceType, timestamp = timestamp, url = url)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnErrorOccurredDetails]
   }

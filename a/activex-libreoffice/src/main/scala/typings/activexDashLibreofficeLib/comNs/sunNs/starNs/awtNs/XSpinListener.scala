@@ -30,15 +30,8 @@ object XSpinListener {
     release: js.Function0[scala.Unit],
     up: js.Function1[SpinEvent, scala.Unit]
   ): XSpinListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("down")(down)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("up")(up)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, down = down, first = first, last = last, queryInterface = queryInterface, release = release, up = up)
+  
     __obj.asInstanceOf[XSpinListener]
   }
 }

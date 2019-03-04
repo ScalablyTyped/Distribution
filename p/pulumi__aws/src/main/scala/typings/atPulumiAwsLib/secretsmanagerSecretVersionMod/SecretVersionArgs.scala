@@ -34,8 +34,7 @@ object SecretVersionArgs {
     secretString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     versionStages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): SecretVersionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secretId")(secretId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(secretId = secretId.asInstanceOf[js.Any])
     if (secretBinary != null) __obj.updateDynamic("secretBinary")(secretBinary.asInstanceOf[js.Any])
     if (secretString != null) __obj.updateDynamic("secretString")(secretString.asInstanceOf[js.Any])
     if (versionStages != null) __obj.updateDynamic("versionStages")(versionStages.asInstanceOf[js.Any])

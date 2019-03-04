@@ -35,18 +35,8 @@ object ISmsTextMessage {
       winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsBinaryMessage]
     ]
   ): ISmsTextMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("messageClass")(messageClass)
-    __obj.updateDynamic("partCount")(partCount)
-    __obj.updateDynamic("partNumber")(partNumber)
-    __obj.updateDynamic("partReferenceId")(partReferenceId)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("toBinaryMessages")(toBinaryMessages)
+    val __obj = js.Dynamic.literal(body = body, encoding = encoding, from = from, id = id, messageClass = messageClass, partCount = partCount, partNumber = partNumber, partReferenceId = partReferenceId, timestamp = timestamp, to = to, toBinaryMessages = toBinaryMessages)
+  
     __obj.asInstanceOf[ISmsTextMessage]
   }
 }

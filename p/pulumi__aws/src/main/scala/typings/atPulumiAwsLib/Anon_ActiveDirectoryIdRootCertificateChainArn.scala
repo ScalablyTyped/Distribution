@@ -18,7 +18,8 @@ object Anon_ActiveDirectoryIdRootCertificateChainArn {
     activeDirectoryId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     rootCertificateChainArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ActiveDirectoryIdRootCertificateChainArn = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (activeDirectoryId != null) __obj.updateDynamic("activeDirectoryId")(activeDirectoryId.asInstanceOf[js.Any])
     if (rootCertificateChainArn != null) __obj.updateDynamic("rootCertificateChainArn")(rootCertificateChainArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActiveDirectoryIdRootCertificateChainArn]

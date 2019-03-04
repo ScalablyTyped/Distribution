@@ -12,8 +12,8 @@ trait Anon_FormatKey extends js.Object {
 object Anon_FormatKey {
   @scala.inline
   def apply(format: org.scalablytyped.runtime.StringDictionary[c3Lib.c3Mod.FormatFunction]): Anon_FormatKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[Anon_FormatKey]
   }
 }

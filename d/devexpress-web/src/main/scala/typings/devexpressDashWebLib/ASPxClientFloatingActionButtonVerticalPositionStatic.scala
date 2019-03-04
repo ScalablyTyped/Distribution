@@ -14,10 +14,8 @@ trait ASPxClientFloatingActionButtonVerticalPositionStatic extends js.Object {
 object ASPxClientFloatingActionButtonVerticalPositionStatic {
   @scala.inline
   def apply(Bottom: java.lang.String, Top: java.lang.String, TopEdge: java.lang.String): ASPxClientFloatingActionButtonVerticalPositionStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bottom")(Bottom)
-    __obj.updateDynamic("Top")(Top)
-    __obj.updateDynamic("TopEdge")(TopEdge)
+    val __obj = js.Dynamic.literal(Bottom = Bottom, Top = Top, TopEdge = TopEdge)
+  
     __obj.asInstanceOf[ASPxClientFloatingActionButtonVerticalPositionStatic]
   }
 }

@@ -20,7 +20,8 @@ object CategoryFilterAppender {
     appender: java.lang.String = null,
     exclude: java.lang.String | js.Array[java.lang.String] = null
   ): CategoryFilterAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (appender != null) __obj.updateDynamic("appender")(appender)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryFilterAppender]

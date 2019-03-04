@@ -69,8 +69,7 @@ object Anon_AccesstokenAltBearertokenCallbackFieldsKeyKeyTypes {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackFieldsKeyKeyTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

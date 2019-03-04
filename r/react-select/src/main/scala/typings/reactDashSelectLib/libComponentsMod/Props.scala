@@ -12,8 +12,8 @@ trait Props[OptionType] extends js.Object {
 object Props {
   @scala.inline
   def apply[OptionType](components: SelectComponentsConfig[OptionType]): Props[OptionType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("components")(components)
+    val __obj = js.Dynamic.literal(components = components)
+  
     __obj.asInstanceOf[Props[OptionType]]
   }
 }

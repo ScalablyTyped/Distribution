@@ -20,8 +20,7 @@ object PartialConfig {
     babelrc: java.lang.String = null,
     config: java.lang.String = null
   ): PartialConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (babelignore != null) __obj.updateDynamic("babelignore")(babelignore)
     if (babelrc != null) __obj.updateDynamic("babelrc")(babelrc)
     if (config != null) __obj.updateDynamic("config")(config)

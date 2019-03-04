@@ -67,15 +67,8 @@ object DisksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): DisksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("createSnapshot")(createSnapshot)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("setLabels")(setLabels)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, createSnapshot = createSnapshot, delete = delete, get = get, insert = insert, list = list, resize = resize, setLabels = setLabels)
+  
     __obj.asInstanceOf[DisksResource]
   }
 }

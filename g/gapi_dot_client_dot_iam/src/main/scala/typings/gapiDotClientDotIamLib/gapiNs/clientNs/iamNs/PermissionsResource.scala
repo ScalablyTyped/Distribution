@@ -21,8 +21,8 @@ object PermissionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[QueryTestablePermissionsResponse]
     ]
   ): PermissionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryTestablePermissions")(queryTestablePermissions)
+    val __obj = js.Dynamic.literal(queryTestablePermissions = queryTestablePermissions)
+  
     __obj.asInstanceOf[PermissionsResource]
   }
 }

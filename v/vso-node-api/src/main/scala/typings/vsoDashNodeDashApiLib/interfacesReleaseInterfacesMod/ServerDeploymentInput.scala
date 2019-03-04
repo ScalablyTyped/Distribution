@@ -18,12 +18,8 @@ object ServerDeploymentInput {
     parallelExecution: ExecutionInput,
     timeoutInMinutes: scala.Double
   ): ServerDeploymentInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
-    __obj.updateDynamic("overrideInputs")(overrideInputs)
-    __obj.updateDynamic("parallelExecution")(parallelExecution)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(condition = condition, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, overrideInputs = overrideInputs, parallelExecution = parallelExecution, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[ServerDeploymentInput]
   }
 }

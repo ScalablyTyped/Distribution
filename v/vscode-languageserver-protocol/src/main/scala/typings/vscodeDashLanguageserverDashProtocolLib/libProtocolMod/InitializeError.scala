@@ -18,8 +18,8 @@ trait InitializeError extends js.Object {
 object InitializeError {
   @scala.inline
   def apply(retry: scala.Boolean): InitializeError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("retry")(retry)
+    val __obj = js.Dynamic.literal(retry = retry)
+  
     __obj.asInstanceOf[InitializeError]
   }
 }

@@ -33,14 +33,8 @@ object XTextFieldsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextFieldsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TextFieldMasters")(TextFieldMasters)
-    __obj.updateDynamic("TextFields")(TextFields)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTextFieldMasters")(getTextFieldMasters)
-    __obj.updateDynamic("getTextFields")(getTextFields)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(TextFieldMasters = TextFieldMasters, TextFields = TextFields, acquire = acquire, getTextFieldMasters = getTextFieldMasters, getTextFields = getTextFields, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextFieldsSupplier]
   }
 }

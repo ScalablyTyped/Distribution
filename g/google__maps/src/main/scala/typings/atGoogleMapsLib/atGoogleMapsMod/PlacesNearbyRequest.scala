@@ -83,8 +83,7 @@ object PlacesNearbyRequest {
     rankby: PlacesNearbyRanking = null,
     `type`: AddressType = null
   ): PlacesNearbyRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     if (keyword != null) __obj.updateDynamic("keyword")(keyword)
     if (language != null) __obj.updateDynamic("language")(language)
     if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])

@@ -13,9 +13,8 @@ trait Anon_CancelIndex extends js.Object {
 object Anon_CancelIndex {
   @scala.inline
   def apply(Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean, Index: scala.Double): Anon_CancelIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Index")(Index)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Index = Index)
+  
     __obj.asInstanceOf[Anon_CancelIndex]
   }
 }

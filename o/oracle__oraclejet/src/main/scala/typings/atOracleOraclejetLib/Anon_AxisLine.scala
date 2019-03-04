@@ -58,30 +58,8 @@ object Anon_AxisLine {
     viewportMin: scala.Double | java.lang.String,
     viewportStartGroup: scala.Double | java.lang.String
   ): Anon_AxisLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisLine")(axisLine)
-    __obj.updateDynamic("baselineScaling")(baselineScaling.asInstanceOf[js.Any])
-    __obj.updateDynamic("dataMax")(dataMax)
-    __obj.updateDynamic("dataMin")(dataMin)
-    __obj.updateDynamic("majorTick")(majorTick)
-    __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    __obj.updateDynamic("minStep")(minStep)
-    __obj.updateDynamic("minorStep")(minorStep)
-    __obj.updateDynamic("minorTick")(minorTick)
-    __obj.updateDynamic("referenceObjects")(referenceObjects)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("tickLabel")(tickLabel)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleStyle")(titleStyle)
-    __obj.updateDynamic("viewportEndGroup")(viewportEndGroup.asInstanceOf[js.Any])
-    __obj.updateDynamic("viewportMax")(viewportMax.asInstanceOf[js.Any])
-    __obj.updateDynamic("viewportMin")(viewportMin.asInstanceOf[js.Any])
-    __obj.updateDynamic("viewportStartGroup")(viewportStartGroup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axisLine = axisLine, baselineScaling = baselineScaling.asInstanceOf[js.Any], dataMax = dataMax, dataMin = dataMin, majorTick = majorTick, max = max.asInstanceOf[js.Any], maxSize = maxSize, min = min.asInstanceOf[js.Any], minStep = minStep, minorStep = minorStep, minorTick = minorTick, referenceObjects = referenceObjects, rendered = rendered.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size, step = step, tickLabel = tickLabel, title = title, titleStyle = titleStyle, viewportEndGroup = viewportEndGroup.asInstanceOf[js.Any], viewportMax = viewportMax.asInstanceOf[js.Any], viewportMin = viewportMin.asInstanceOf[js.Any], viewportStartGroup = viewportStartGroup.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AxisLine]
   }
 }

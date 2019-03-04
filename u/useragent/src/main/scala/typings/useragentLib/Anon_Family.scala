@@ -20,8 +20,7 @@ object Anon_Family {
     minor: java.lang.String = null,
     patch: java.lang.String = null
   ): Anon_Family = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
+    val __obj = js.Dynamic.literal(family = family)
     if (major != null) __obj.updateDynamic("major")(major)
     if (minor != null) __obj.updateDynamic("minor")(minor)
     if (patch != null) __obj.updateDynamic("patch")(patch)

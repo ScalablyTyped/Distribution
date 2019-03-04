@@ -21,8 +21,7 @@ object BulkGetOptions {
     fetch: pouchdbDashCoreLib.Fetch = null,
     revs: js.UndefOr[scala.Boolean] = js.undefined
   ): BulkGetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("docs")(docs)
+    val __obj = js.Dynamic.literal(docs = docs)
     if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
     if (fetch != null) __obj.updateDynamic("fetch")(fetch)

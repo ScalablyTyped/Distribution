@@ -13,8 +13,8 @@ trait EIP712TypeProperty extends js.Object {
 object EIP712TypeProperty {
   @scala.inline
   def apply(name: java.lang.String, `type`: java.lang.String): EIP712TypeProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EIP712TypeProperty]
   }
 }

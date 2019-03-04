@@ -32,15 +32,9 @@ object Anon_Array {
     string: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<string> */ js.Any,
     undefined: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<undefined> */ js.Any
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(`null` = `null`, `object` = `object`)
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("RegExp")(RegExp)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("function")(function)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(Date = Date, RegExp = RegExp, array = array, boolean = boolean, function = function, number = number, string = string, undefined = undefined)
+    __obj.updateDynamic("null")(`null`)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Array]
   }
 }

@@ -54,27 +54,8 @@ object Anon_AllOf {
     `type`: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError],
     uniqueItems: js.Function3[js.Any, js.Any, js.Any, jsDashDataLib.jsDashDataMod.SchemaValidationError]
   ): Anon_AllOf = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("allOf")(allOf)
-    __obj.updateDynamic("anyOf")(anyOf)
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("enum")(enum)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("maxItems")(maxItems)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("maxProperties")(maxProperties)
-    __obj.updateDynamic("maximum")(maximum)
-    __obj.updateDynamic("minItems")(minItems)
-    __obj.updateDynamic("minLength")(minLength)
-    __obj.updateDynamic("minProperties")(minProperties)
-    __obj.updateDynamic("minimum")(minimum)
-    __obj.updateDynamic("multipleOf")(multipleOf)
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("oneOf")(oneOf)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("uniqueItems")(uniqueItems)
+    val __obj = js.Dynamic.literal(allOf = allOf, anyOf = anyOf, dependencies = dependencies, enum = enum, items = items, maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, oneOf = oneOf, pattern = pattern, properties = properties, required = required, uniqueItems = uniqueItems)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AllOf]
   }
 }

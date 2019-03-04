@@ -29,10 +29,8 @@ object ServiceProvider {
     config: js.Function1[Config, scala.Unit],
     read: js.Function1[java.lang.String, js.Any]
   ): ServiceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("check")(check)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(check = check, config = config, read = read)
+  
     __obj.asInstanceOf[ServiceProvider]
   }
 }

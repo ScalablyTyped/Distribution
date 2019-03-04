@@ -12,8 +12,8 @@ trait ArraySplice extends js.Object {
 object ArraySplice {
   @scala.inline
   def apply(calculateSplices: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Array[PolymerSplice]]): ArraySplice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculateSplices")(calculateSplices)
+    val __obj = js.Dynamic.literal(calculateSplices = calculateSplices)
+  
     __obj.asInstanceOf[ArraySplice]
   }
 }

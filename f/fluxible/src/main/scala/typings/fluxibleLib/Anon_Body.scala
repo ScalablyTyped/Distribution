@@ -86,11 +86,8 @@ object Anon_Body {
       scala.Unit
     ]
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, read = read, update = update)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

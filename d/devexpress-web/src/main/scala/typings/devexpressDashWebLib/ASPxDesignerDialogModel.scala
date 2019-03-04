@@ -38,11 +38,8 @@ object ASPxDesignerDialogModel {
     popupButtons: js.Array[js.Object],
     setUrl: js.Function1[java.lang.String, scala.Unit]
   ): ASPxDesignerDialogModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUrl")(getUrl)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("popupButtons")(popupButtons)
-    __obj.updateDynamic("setUrl")(setUrl)
+    val __obj = js.Dynamic.literal(getUrl = getUrl, onShow = onShow, popupButtons = popupButtons, setUrl = setUrl)
+  
     __obj.asInstanceOf[ASPxDesignerDialogModel]
   }
 }

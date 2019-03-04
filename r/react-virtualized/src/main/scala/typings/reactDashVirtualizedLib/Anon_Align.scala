@@ -24,13 +24,8 @@ object Anon_Align {
     scrollTop: scala.Double,
     width: scala.Double
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    __obj.updateDynamic("cellIndex")(cellIndex)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], cellIndex = cellIndex, height = height, scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
+  
     __obj.asInstanceOf[Anon_Align]
   }
 }

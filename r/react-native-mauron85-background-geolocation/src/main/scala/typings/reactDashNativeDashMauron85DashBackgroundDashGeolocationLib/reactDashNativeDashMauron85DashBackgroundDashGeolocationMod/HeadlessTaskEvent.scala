@@ -18,9 +18,8 @@ trait HeadlessTaskEvent extends js.Object {
 object HeadlessTaskEvent {
   @scala.inline
   def apply(name: HeadlessTaskEventName, params: js.Any): HeadlessTaskEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(name = name, params = params)
+  
     __obj.asInstanceOf[HeadlessTaskEvent]
   }
 }

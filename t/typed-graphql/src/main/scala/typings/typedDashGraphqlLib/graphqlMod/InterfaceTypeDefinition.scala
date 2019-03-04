@@ -17,10 +17,7 @@ trait InterfaceTypeDefinition
 object InterfaceTypeDefinition {
   @scala.inline
   def apply(fields: js.Array[FieldDefinition], kind: java.lang.String, name: Name, loc: Location = null): InterfaceTypeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[InterfaceTypeDefinition]
   }

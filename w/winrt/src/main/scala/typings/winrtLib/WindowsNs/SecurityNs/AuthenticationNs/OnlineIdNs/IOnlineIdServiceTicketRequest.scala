@@ -13,9 +13,8 @@ trait IOnlineIdServiceTicketRequest extends js.Object {
 object IOnlineIdServiceTicketRequest {
   @scala.inline
   def apply(policy: java.lang.String, service: java.lang.String): IOnlineIdServiceTicketRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(policy = policy, service = service)
+  
     __obj.asInstanceOf[IOnlineIdServiceTicketRequest]
   }
 }

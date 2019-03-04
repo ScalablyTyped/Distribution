@@ -164,12 +164,7 @@ object Immunization {
     text: Narrative = null,
     vaccinationProtocol: js.Array[ImmunizationVaccinationProtocol] = null
   ): Immunization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notGiven")(notGiven)
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("primarySource")(primarySource)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("vaccineCode")(vaccineCode)
+    val __obj = js.Dynamic.literal(notGiven = notGiven, patient = patient, primarySource = primarySource, status = status, vaccineCode = vaccineCode)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_expirationDate != null) __obj.updateDynamic("_expirationDate")(_expirationDate)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -16,9 +16,8 @@ object Anon_LASTWRITEWIN {
     LAST_WRITE_WIN: chromeDashAppsLib.chromeDashAppsLibStrings.last_write_win,
     MANUAL: chromeDashAppsLib.chromeDashAppsLibStrings.manual
   ): Anon_LASTWRITEWIN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LAST_WRITE_WIN")(LAST_WRITE_WIN)
-    __obj.updateDynamic("MANUAL")(MANUAL)
+    val __obj = js.Dynamic.literal(LAST_WRITE_WIN = LAST_WRITE_WIN, MANUAL = MANUAL)
+  
     __obj.asInstanceOf[Anon_LASTWRITEWIN]
   }
 }

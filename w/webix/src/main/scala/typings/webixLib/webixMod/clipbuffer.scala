@@ -20,11 +20,8 @@ object clipbuffer {
     init: js.Function0[scala.Unit],
     set: js.Function1[java.lang.String, scala.Unit]
   ): clipbuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destructor")(destructor)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(destructor = destructor, focus = focus, init = init, set = set)
+  
     __obj.asInstanceOf[clipbuffer]
   }
 }

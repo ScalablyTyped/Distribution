@@ -41,7 +41,8 @@ object FluxStandardAction {
     meta: Meta = null,
     payload: Payload = null
   ): FluxStandardAction[Payload, Meta] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])

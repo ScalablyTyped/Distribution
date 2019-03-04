@@ -31,18 +31,8 @@ object GitPullRequestStatus {
     targetUrl: java.lang.String,
     updatedDate: stdLib.Date
   ): GitPullRequestStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("iterationId")(iterationId)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("targetUrl")(targetUrl)
-    __obj.updateDynamic("updatedDate")(updatedDate)
+    val __obj = js.Dynamic.literal(_links = _links, context = context, createdBy = createdBy, creationDate = creationDate, description = description, id = id, iterationId = iterationId, properties = properties, state = state, targetUrl = targetUrl, updatedDate = updatedDate)
+  
     __obj.asInstanceOf[GitPullRequestStatus]
   }
 }

@@ -18,8 +18,8 @@ trait IURLContext extends js.Object {
 object IURLContext {
   @scala.inline
   def apply(url: stdLib.URL): IURLContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[IURLContext]
   }
 }

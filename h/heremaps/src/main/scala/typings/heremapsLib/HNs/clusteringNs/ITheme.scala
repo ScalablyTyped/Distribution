@@ -29,9 +29,8 @@ object ITheme {
     getClusterPresentation: js.Function1[ICluster, heremapsLib.HNs.mapNs.Object],
     getNoisePresentation: js.Function1[INoisePoint, heremapsLib.HNs.mapNs.Object]
   ): ITheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClusterPresentation")(getClusterPresentation)
-    __obj.updateDynamic("getNoisePresentation")(getNoisePresentation)
+    val __obj = js.Dynamic.literal(getClusterPresentation = getClusterPresentation, getNoisePresentation = getNoisePresentation)
+  
     __obj.asInstanceOf[ITheme]
   }
 }

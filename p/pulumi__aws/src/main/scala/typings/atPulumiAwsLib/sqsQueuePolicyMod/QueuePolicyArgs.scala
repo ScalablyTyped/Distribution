@@ -22,9 +22,8 @@ object QueuePolicyArgs {
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     queueUrl: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): QueuePolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    __obj.updateDynamic("queueUrl")(queueUrl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], queueUrl = queueUrl.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[QueuePolicyArgs]
   }
 }

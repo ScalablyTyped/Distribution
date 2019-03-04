@@ -38,11 +38,8 @@ object Enumerator {
     moveFirst: js.Function0[scala.Unit],
     moveNext: js.Function0[scala.Unit]
   ): Enumerator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atEnd")(atEnd)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("moveFirst")(moveFirst)
-    __obj.updateDynamic("moveNext")(moveNext)
+    val __obj = js.Dynamic.literal(atEnd = atEnd, item = item, moveFirst = moveFirst, moveNext = moveNext)
+  
     __obj.asInstanceOf[Enumerator[T]]
   }
 }

@@ -20,11 +20,8 @@ object IScrollState {
     totalToScroll: scala.Double,
     triggered: ngxDashInfiniteDashScrollLib.Anon_Down
   ): IScrollState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastScrollPosition")(lastScrollPosition)
-    __obj.updateDynamic("lastTotalToScroll")(lastTotalToScroll)
-    __obj.updateDynamic("totalToScroll")(totalToScroll)
-    __obj.updateDynamic("triggered")(triggered)
+    val __obj = js.Dynamic.literal(lastScrollPosition = lastScrollPosition, lastTotalToScroll = lastTotalToScroll, totalToScroll = totalToScroll, triggered = triggered)
+  
     __obj.asInstanceOf[IScrollState]
   }
 }

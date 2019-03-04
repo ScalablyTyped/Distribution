@@ -62,15 +62,8 @@ object ASPxClientSpreadsheetPopupMenuItemCollection {
     Remove: js.Function1[scala.Double, scala.Unit],
     RemoveByName: js.Function1[java.lang.String, scala.Unit]
   ): ASPxClientSpreadsheetPopupMenuItemCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("Get")(Get)
-    __obj.updateDynamic("GetByName")(GetByName)
-    __obj.updateDynamic("GetCount")(GetCount)
-    __obj.updateDynamic("Insert")(Insert)
-    __obj.updateDynamic("Remove")(Remove)
-    __obj.updateDynamic("RemoveByName")(RemoveByName)
+    val __obj = js.Dynamic.literal(Add = Add, Clear = Clear, Get = Get, GetByName = GetByName, GetCount = GetCount, Insert = Insert, Remove = Remove, RemoveByName = RemoveByName)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItemCollection]
   }
 }

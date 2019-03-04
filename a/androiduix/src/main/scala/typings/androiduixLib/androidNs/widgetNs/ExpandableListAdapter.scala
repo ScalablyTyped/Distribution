@@ -72,25 +72,8 @@ object ExpandableListAdapter {
     registerDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit],
     unregisterDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit]
   ): ExpandableListAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("areAllItemsEnabled")(areAllItemsEnabled)
-    __obj.updateDynamic("getChild")(getChild)
-    __obj.updateDynamic("getChildId")(getChildId)
-    __obj.updateDynamic("getChildView")(getChildView)
-    __obj.updateDynamic("getChildrenCount")(getChildrenCount)
-    __obj.updateDynamic("getCombinedChildId")(getCombinedChildId)
-    __obj.updateDynamic("getCombinedGroupId")(getCombinedGroupId)
-    __obj.updateDynamic("getGroup")(getGroup)
-    __obj.updateDynamic("getGroupCount")(getGroupCount)
-    __obj.updateDynamic("getGroupId")(getGroupId)
-    __obj.updateDynamic("getGroupView")(getGroupView)
-    __obj.updateDynamic("hasStableIds")(hasStableIds)
-    __obj.updateDynamic("isChildSelectable")(isChildSelectable)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("onGroupCollapsed")(onGroupCollapsed)
-    __obj.updateDynamic("onGroupExpanded")(onGroupExpanded)
-    __obj.updateDynamic("registerDataSetObserver")(registerDataSetObserver)
-    __obj.updateDynamic("unregisterDataSetObserver")(unregisterDataSetObserver)
+    val __obj = js.Dynamic.literal(areAllItemsEnabled = areAllItemsEnabled, getChild = getChild, getChildId = getChildId, getChildView = getChildView, getChildrenCount = getChildrenCount, getCombinedChildId = getCombinedChildId, getCombinedGroupId = getCombinedGroupId, getGroup = getGroup, getGroupCount = getGroupCount, getGroupId = getGroupId, getGroupView = getGroupView, hasStableIds = hasStableIds, isChildSelectable = isChildSelectable, isEmpty = isEmpty, onGroupCollapsed = onGroupCollapsed, onGroupExpanded = onGroupExpanded, registerDataSetObserver = registerDataSetObserver, unregisterDataSetObserver = unregisterDataSetObserver)
+  
     __obj.asInstanceOf[ExpandableListAdapter]
   }
 }

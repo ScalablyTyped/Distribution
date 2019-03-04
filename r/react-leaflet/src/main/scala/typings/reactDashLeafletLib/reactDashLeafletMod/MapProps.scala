@@ -165,8 +165,7 @@ object MapProps {
     zoomDelta: scala.Int | scala.Double = null,
     zoomSnap: scala.Int | scala.Double = null
   ): MapProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (!js.isUndefined(bounceAtZoomLimits)) __obj.updateDynamic("bounceAtZoomLimits")(bounceAtZoomLimits)

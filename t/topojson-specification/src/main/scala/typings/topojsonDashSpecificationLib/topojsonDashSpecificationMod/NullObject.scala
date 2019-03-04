@@ -20,7 +20,8 @@ object NullObject {
     id: scala.Double | java.lang.String = null,
     properties: js.Object = null
   ): NullObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)

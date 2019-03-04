@@ -45,13 +45,8 @@ object ASPxClientGlobalEvents {
     EndCallback: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[ASPxClientGlobalEvents]],
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientGlobalEvents]]
   ): ASPxClientGlobalEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("BrowserWindowResized")(BrowserWindowResized)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("ControlsInitialized")(ControlsInitialized)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("ValidationCompleted")(ValidationCompleted)
+    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, BrowserWindowResized = BrowserWindowResized, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback, ValidationCompleted = ValidationCompleted)
+  
     __obj.asInstanceOf[ASPxClientGlobalEvents]
   }
 }

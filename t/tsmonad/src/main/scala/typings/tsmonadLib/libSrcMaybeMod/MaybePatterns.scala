@@ -13,9 +13,8 @@ trait MaybePatterns[T, U] extends js.Object {
 object MaybePatterns {
   @scala.inline
   def apply[T, U](just: js.Function1[T, U], nothing: js.Function0[U]): MaybePatterns[T, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("just")(just)
-    __obj.updateDynamic("nothing")(nothing)
+    val __obj = js.Dynamic.literal(just = just, nothing = nothing)
+  
     __obj.asInstanceOf[MaybePatterns[T, U]]
   }
 }

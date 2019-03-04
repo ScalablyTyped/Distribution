@@ -13,9 +13,8 @@ trait CursorResult extends js.Object {
 object CursorResult {
   @scala.inline
   def apply(cursorOffset: scala.Double, formatted: java.lang.String): CursorResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cursorOffset")(cursorOffset)
-    __obj.updateDynamic("formatted")(formatted)
+    val __obj = js.Dynamic.literal(cursorOffset = cursorOffset, formatted = formatted)
+  
     __obj.asInstanceOf[CursorResult]
   }
 }

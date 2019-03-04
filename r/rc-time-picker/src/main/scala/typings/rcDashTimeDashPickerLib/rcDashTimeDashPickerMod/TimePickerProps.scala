@@ -80,41 +80,8 @@ object TimePickerProps {
     use12Hours: scala.Boolean,
     value: momentLib.momentMod.momentNs.Moment
   ): TimePickerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addon")(addon)
-    __obj.updateDynamic("allowEmpty")(allowEmpty)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
-    __obj.updateDynamic("clearText")(clearText)
-    __obj.updateDynamic("defaultOpenValue")(defaultOpenValue)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("disabledHours")(disabledHours)
-    __obj.updateDynamic("disabledMinutes")(disabledMinutes)
-    __obj.updateDynamic("disabledSeconds")(disabledSeconds)
-    __obj.updateDynamic("focusOnOpen")(focusOnOpen)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions)
-    __obj.updateDynamic("hourStep")(hourStep)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputIcon")(inputIcon.asInstanceOf[js.Any])
-    __obj.updateDynamic("inputReadOnly")(inputReadOnly)
-    __obj.updateDynamic("minuteStep")(minuteStep)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("onOpen")(onOpen)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("popupClassName")(popupClassName)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("secondStep")(secondStep)
-    __obj.updateDynamic("showHour")(showHour)
-    __obj.updateDynamic("showMinute")(showMinute)
-    __obj.updateDynamic("showSecond")(showSecond)
-    __obj.updateDynamic("transitionName")(transitionName)
-    __obj.updateDynamic("use12Hours")(use12Hours)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(addon = addon, allowEmpty = allowEmpty, className = className, clearIcon = clearIcon.asInstanceOf[js.Any], clearText = clearText, defaultOpenValue = defaultOpenValue, defaultValue = defaultValue, disabled = disabled, disabledHours = disabledHours, disabledMinutes = disabledMinutes, disabledSeconds = disabledSeconds, focusOnOpen = focusOnOpen, format = format, hideDisabledOptions = hideDisabledOptions, hourStep = hourStep, id = id, inputIcon = inputIcon.asInstanceOf[js.Any], inputReadOnly = inputReadOnly, minuteStep = minuteStep, onChange = onChange, onClose = onClose, onOpen = onOpen, open = open, placeholder = placeholder, placement = placement, popupClassName = popupClassName, prefixCls = prefixCls, secondStep = secondStep, showHour = showHour, showMinute = showMinute, showSecond = showSecond, transitionName = transitionName, use12Hours = use12Hours, value = value)
+  
     __obj.asInstanceOf[TimePickerProps]
   }
 }

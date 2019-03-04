@@ -30,8 +30,7 @@ object ocrVehicleLicenseOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[/* res */ ocrVehicleLicenseResponse, scala.Unit] = null
   ): ocrVehicleLicenseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)

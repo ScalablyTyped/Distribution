@@ -12,8 +12,8 @@ trait SocketChannelData extends js.Object {
 object SocketChannelData {
   @scala.inline
   def apply(socketPath: java.lang.String): SocketChannelData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("socketPath")(socketPath)
+    val __obj = js.Dynamic.literal(socketPath = socketPath)
+  
     __obj.asInstanceOf[SocketChannelData]
   }
 }

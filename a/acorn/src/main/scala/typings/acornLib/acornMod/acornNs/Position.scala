@@ -13,10 +13,8 @@ trait Position
 object Position {
   @scala.inline
   def apply(column: scala.Double, line: scala.Double, offset: js.Function1[scala.Double, Position]): Position = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(column = column, line = line, offset = offset)
+  
     __obj.asInstanceOf[Position]
   }
 }

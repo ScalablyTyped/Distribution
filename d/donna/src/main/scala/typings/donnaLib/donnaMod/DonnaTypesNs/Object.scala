@@ -28,10 +28,8 @@ object Object {
     paramNames: js.Array[java.lang.String] = null,
     prototypeProperties: js.Array[js.Array[scala.Double]] = null
   ): Object = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bindingType")(bindingType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(bindingType = bindingType, name = name, range = range)
+    __obj.updateDynamic("type")(`type`)
     if (classProperties != null) __obj.updateDynamic("classProperties")(classProperties)
     if (doc != null) __obj.updateDynamic("doc")(doc)
     if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)

@@ -21,11 +21,8 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(accuracy: scala.Double, latitude: scala.Double, longitude: scala.Double, speed: scala.Double): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("speed")(speed)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, latitude = latitude, longitude = longitude, speed = speed)
+  
     __obj.asInstanceOf[Location]
   }
 }

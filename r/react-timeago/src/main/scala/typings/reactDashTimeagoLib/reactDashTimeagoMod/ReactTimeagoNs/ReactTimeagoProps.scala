@@ -28,8 +28,7 @@ object ReactTimeagoProps {
     now: js.Function0[scala.Double] = null,
     title: java.lang.String = null
   ): ReactTimeagoProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)

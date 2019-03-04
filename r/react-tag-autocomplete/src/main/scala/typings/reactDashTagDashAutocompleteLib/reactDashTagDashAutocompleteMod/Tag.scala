@@ -18,9 +18,7 @@ object Tag {
     name: java.lang.String,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Tag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[Tag]
   }

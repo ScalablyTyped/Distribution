@@ -16,9 +16,8 @@ object DomUtilityService {
     BuildStyles: js.Function1[Grid[_], scala.Unit],
     UpdateGridLayout: js.Function1[Grid[_], scala.Unit]
   ): DomUtilityService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BuildStyles")(BuildStyles)
-    __obj.updateDynamic("UpdateGridLayout")(UpdateGridLayout)
+    val __obj = js.Dynamic.literal(BuildStyles = BuildStyles, UpdateGridLayout = UpdateGridLayout)
+  
     __obj.asInstanceOf[DomUtilityService]
   }
 }

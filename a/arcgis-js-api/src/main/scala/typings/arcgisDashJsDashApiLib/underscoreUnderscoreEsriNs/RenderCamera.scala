@@ -86,20 +86,8 @@ object RenderCamera {
     viewInverseTransposeMatrix: stdLib.ArrayLike[scala.Double],
     viewMatrix: stdLib.ArrayLike[scala.Double]
   ): RenderCamera = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("eye")(eye)
-    __obj.updateDynamic("far")(far)
-    __obj.updateDynamic("fovX")(fovX)
-    __obj.updateDynamic("fovY")(fovY)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("near")(near)
-    __obj.updateDynamic("projectionMatrix")(projectionMatrix)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("up")(up)
-    __obj.updateDynamic("viewInverseTransposeMatrix")(viewInverseTransposeMatrix)
-    __obj.updateDynamic("viewMatrix")(viewMatrix)
+    val __obj = js.Dynamic.literal(center = center, constructor = constructor, eye = eye, far = far, fovX = fovX, fovY = fovY, hasOwnProperty = hasOwnProperty, near = near, projectionMatrix = projectionMatrix, propertyIsEnumerable = propertyIsEnumerable, up = up, viewInverseTransposeMatrix = viewInverseTransposeMatrix, viewMatrix = viewMatrix)
+  
     __obj.asInstanceOf[RenderCamera]
   }
 }

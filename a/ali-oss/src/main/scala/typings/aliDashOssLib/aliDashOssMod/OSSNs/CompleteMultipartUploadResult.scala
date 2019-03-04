@@ -22,12 +22,8 @@ object CompleteMultipartUploadResult {
     name: java.lang.String,
     res: NormalSuccessResponse
   ): CompleteMultipartUploadResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(bucket = bucket, data = data, etag = etag, name = name, res = res)
+  
     __obj.asInstanceOf[CompleteMultipartUploadResult]
   }
 }

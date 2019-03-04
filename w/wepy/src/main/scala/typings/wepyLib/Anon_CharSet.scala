@@ -20,11 +20,8 @@ object Anon_CharSet {
     result: java.lang.String,
     scanType: java.lang.String
   ): Anon_CharSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charSet")(charSet)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("scanType")(scanType)
+    val __obj = js.Dynamic.literal(charSet = charSet, path = path, result = result, scanType = scanType)
+  
     __obj.asInstanceOf[Anon_CharSet]
   }
 }

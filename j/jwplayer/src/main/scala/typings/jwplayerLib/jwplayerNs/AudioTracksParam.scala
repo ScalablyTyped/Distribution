@@ -12,8 +12,8 @@ trait AudioTracksParam extends js.Object {
 object AudioTracksParam {
   @scala.inline
   def apply(levels: js.Array[_]): AudioTracksParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("levels")(levels)
+    val __obj = js.Dynamic.literal(levels = levels)
+  
     __obj.asInstanceOf[AudioTracksParam]
   }
 }

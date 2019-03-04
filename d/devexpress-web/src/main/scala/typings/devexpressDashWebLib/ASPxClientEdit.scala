@@ -104,41 +104,8 @@ object ASPxClientEdit {
     ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]],
     name: java.lang.String
   ): ASPxClientEdit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("Focus")(Focus)
-    __obj.updateDynamic("GetCaption")(GetCaption)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetErrorText")(GetErrorText)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetInputElement")(GetInputElement)
-    __obj.updateDynamic("GetIsValid")(GetIsValid)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetReadOnly")(GetReadOnly)
-    __obj.updateDynamic("GetValue")(GetValue)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("GotFocus")(GotFocus)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("LostFocus")(LostFocus)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetCaption")(SetCaption)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetErrorText")(SetErrorText)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetIsValid")(SetIsValid)
-    __obj.updateDynamic("SetReadOnly")(SetReadOnly)
-    __obj.updateDynamic("SetValue")(SetValue)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("Validate")(Validate)
-    __obj.updateDynamic("Validation")(Validation)
-    __obj.updateDynamic("ValueChanged")(ValueChanged)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Focus = Focus, GetCaption = GetCaption, GetClientVisible = GetClientVisible, GetEnabled = GetEnabled, GetErrorText = GetErrorText, GetHeight = GetHeight, GetInputElement = GetInputElement, GetIsValid = GetIsValid, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetReadOnly = GetReadOnly, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, GotFocus = GotFocus, InCallback = InCallback, Init = Init, LostFocus = LostFocus, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetCaption = SetCaption, SetClientVisible = SetClientVisible, SetEnabled = SetEnabled, SetErrorText = SetErrorText, SetHeight = SetHeight, SetIsValid = SetIsValid, SetReadOnly = SetReadOnly, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, Validate = Validate, Validation = Validation, ValueChanged = ValueChanged, name = name)
+  
     __obj.asInstanceOf[ASPxClientEdit]
   }
 }

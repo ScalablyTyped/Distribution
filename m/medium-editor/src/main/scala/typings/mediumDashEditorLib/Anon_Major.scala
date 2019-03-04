@@ -21,12 +21,8 @@ object Anon_Major {
     revision: scala.Double,
     toString: js.Function0[java.lang.String]
   ): Anon_Major = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("preRelease")(preRelease)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(major = major, minor = minor, preRelease = preRelease, revision = revision, toString = toString)
+  
     __obj.asInstanceOf[Anon_Major]
   }
 }

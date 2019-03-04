@@ -133,8 +133,7 @@ object DropdownOnSearchChangeData {
     value: scala.Boolean | scala.Double | java.lang.String | (js.Array[scala.Boolean | scala.Double | java.lang.String]) = null,
     wrapSelection: js.UndefOr[scala.Boolean] = js.undefined
   ): DropdownOnSearchChangeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("searchQuery")(searchQuery)
+    val __obj = js.Dynamic.literal(searchQuery = searchQuery)
     if (additionLabel != null) __obj.updateDynamic("additionLabel")(additionLabel.asInstanceOf[js.Any])
     if (additionPosition != null) __obj.updateDynamic("additionPosition")(additionPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(allowAdditions)) __obj.updateDynamic("allowAdditions")(allowAdditions)

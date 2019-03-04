@@ -24,13 +24,8 @@ object BatteryData {
     maxcapacity: scala.Double,
     percent: scala.Double
   ): BatteryData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentcapacity")(currentcapacity)
-    __obj.updateDynamic("cyclecount")(cyclecount)
-    __obj.updateDynamic("hasbatter")(hasbatter)
-    __obj.updateDynamic("ischarging")(ischarging)
-    __obj.updateDynamic("maxcapacity")(maxcapacity)
-    __obj.updateDynamic("percent")(percent)
+    val __obj = js.Dynamic.literal(currentcapacity = currentcapacity, cyclecount = cyclecount, hasbatter = hasbatter, ischarging = ischarging, maxcapacity = maxcapacity, percent = percent)
+  
     __obj.asInstanceOf[BatteryData]
   }
 }

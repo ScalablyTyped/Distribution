@@ -51,18 +51,8 @@ object XCsvLogFormatter {
     getHead: js.Function0[java.lang.String],
     getTail: js.Function0[java.lang.String]
   ): XCsvLogFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Columnnames")(Columnnames)
-    __obj.updateDynamic("Head")(Head)
-    __obj.updateDynamic("LogEventNo")(LogEventNo)
-    __obj.updateDynamic("LogSource")(LogSource)
-    __obj.updateDynamic("LogThread")(LogThread)
-    __obj.updateDynamic("LogTimestamp")(LogTimestamp)
-    __obj.updateDynamic("Tail")(Tail)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("formatMultiColumn")(formatMultiColumn)
-    __obj.updateDynamic("getHead")(getHead)
-    __obj.updateDynamic("getTail")(getTail)
+    val __obj = js.Dynamic.literal(Columnnames = Columnnames, Head = Head, LogEventNo = LogEventNo, LogSource = LogSource, LogThread = LogThread, LogTimestamp = LogTimestamp, Tail = Tail, format = format, formatMultiColumn = formatMultiColumn, getHead = getHead, getTail = getTail)
+  
     __obj.asInstanceOf[XCsvLogFormatter]
   }
 }

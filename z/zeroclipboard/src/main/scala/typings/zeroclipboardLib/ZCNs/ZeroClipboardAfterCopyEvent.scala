@@ -24,14 +24,8 @@ object ZeroClipboardAfterCopyEvent {
     `type`: java.lang.String,
     client: ZeroClipboardClient = null
   ): ZeroClipboardAfterCopyEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("relatedTarget")(relatedTarget)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, data = data, errors = errors, relatedTarget = relatedTarget, success = success, target = target, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     if (client != null) __obj.updateDynamic("client")(client)
     __obj.asInstanceOf[ZeroClipboardAfterCopyEvent]
   }

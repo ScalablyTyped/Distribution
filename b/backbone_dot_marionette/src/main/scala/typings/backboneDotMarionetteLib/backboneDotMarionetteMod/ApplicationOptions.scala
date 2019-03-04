@@ -21,8 +21,7 @@ object ApplicationOptions {
     radioEvents: js.Any = null,
     radioRequests: js.Any = null
   ): ApplicationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(region = region)
     if (channelName != null) __obj.updateDynamic("channelName")(channelName)
     if (initialize != null) __obj.updateDynamic("initialize")(initialize)
     if (radioEvents != null) __obj.updateDynamic("radioEvents")(radioEvents)

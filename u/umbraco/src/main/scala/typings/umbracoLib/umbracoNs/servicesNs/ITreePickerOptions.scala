@@ -27,11 +27,8 @@ object ITreePickerOptions {
     section: java.lang.String,
     treeAlias: java.lang.String
   ): ITreePickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("multiPicker")(multiPicker)
-    __obj.updateDynamic("section")(section)
-    __obj.updateDynamic("treeAlias")(treeAlias)
+    val __obj = js.Dynamic.literal(callback = callback, multiPicker = multiPicker, section = section, treeAlias = treeAlias)
+  
     __obj.asInstanceOf[ITreePickerOptions]
   }
 }

@@ -20,11 +20,8 @@ object Entities {
     encodeNonASCII: js.Function1[java.lang.String, java.lang.String],
     encodeNonUTF: js.Function1[java.lang.String, java.lang.String]
   ): Entities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("encodeNonASCII")(encodeNonASCII)
-    __obj.updateDynamic("encodeNonUTF")(encodeNonUTF)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, encodeNonASCII = encodeNonASCII, encodeNonUTF = encodeNonUTF)
+  
     __obj.asInstanceOf[Entities]
   }
 }

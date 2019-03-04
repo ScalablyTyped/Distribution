@@ -18,9 +18,8 @@ trait IMediaPickerOptions extends js.Object {
 object IMediaPickerOptions {
   @scala.inline
   def apply(callback: angularLib.angularMod.Global.Function, onlyImages: scala.Boolean): IMediaPickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("onlyImages")(onlyImages)
+    val __obj = js.Dynamic.literal(callback = callback, onlyImages = onlyImages)
+  
     __obj.asInstanceOf[IMediaPickerOptions]
   }
 }

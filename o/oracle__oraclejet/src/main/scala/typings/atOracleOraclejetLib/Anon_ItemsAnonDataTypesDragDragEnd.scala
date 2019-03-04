@@ -12,8 +12,8 @@ trait Anon_ItemsAnonDataTypesDragDragEnd extends js.Object {
 object Anon_ItemsAnonDataTypesDragDragEnd {
   @scala.inline
   def apply(items: Anon_DataTypesDragDragEnd): Anon_ItemsAnonDataTypesDragDragEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
+  
     __obj.asInstanceOf[Anon_ItemsAnonDataTypesDragDragEnd]
   }
 }

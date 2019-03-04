@@ -30,8 +30,7 @@ object TypeOptions {
     resolve: js.Function1[/* data */ java.lang.String, scala.Boolean] = null,
     styleAliases: js.Object = null
   ): TypeOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (construct != null) __obj.updateDynamic("construct")(construct)
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
     if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf)

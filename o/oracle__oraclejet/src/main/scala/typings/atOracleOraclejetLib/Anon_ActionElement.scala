@@ -20,10 +20,7 @@ object Anon_ActionElement {
     endCallback: js.Function0[scala.Unit],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ActionElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("endCallback")(endCallback)
+    val __obj = js.Dynamic.literal(action = action, element = element, endCallback = endCallback)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionElement]
   }

@@ -93,11 +93,7 @@ object Anon_AltDestinationBucketDestinationObject {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltDestinationBucketDestinationObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationBucket")(destinationBucket)
-    __obj.updateDynamic("destinationObject")(destinationObject)
-    __obj.updateDynamic("sourceBucket")(sourceBucket)
-    __obj.updateDynamic("sourceObject")(sourceObject)
+    val __obj = js.Dynamic.literal(destinationBucket = destinationBucket, destinationObject = destinationObject, sourceBucket = sourceBucket, sourceObject = sourceObject)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (destinationPredefinedAcl != null) __obj.updateDynamic("destinationPredefinedAcl")(destinationPredefinedAcl)
     if (fields != null) __obj.updateDynamic("fields")(fields)

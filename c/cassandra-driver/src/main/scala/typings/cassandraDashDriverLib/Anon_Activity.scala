@@ -16,12 +16,8 @@ trait Anon_Activity extends js.Object {
 object Anon_Activity {
   @scala.inline
   def apply(activity: js.Any, elapsed: js.Any, id: js.Any, source: js.Any, thread: js.Any): Anon_Activity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activity")(activity)
-    __obj.updateDynamic("elapsed")(elapsed)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("thread")(thread)
+    val __obj = js.Dynamic.literal(activity = activity, elapsed = elapsed, id = id, source = source, thread = thread)
+  
     __obj.asInstanceOf[Anon_Activity]
   }
 }

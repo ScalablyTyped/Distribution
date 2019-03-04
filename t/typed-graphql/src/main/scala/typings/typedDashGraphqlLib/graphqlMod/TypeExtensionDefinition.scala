@@ -16,9 +16,7 @@ trait TypeExtensionDefinition
 object TypeExtensionDefinition {
   @scala.inline
   def apply(definition: ObjectTypeDefinition, kind: java.lang.String, loc: Location = null): TypeExtensionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(definition = definition, kind = kind)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[TypeExtensionDefinition]
   }

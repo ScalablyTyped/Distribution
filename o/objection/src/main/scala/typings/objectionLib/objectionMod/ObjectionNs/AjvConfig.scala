@@ -16,8 +16,7 @@ object AjvConfig {
     onCreateAjv: js.Function1[ajvLib.ajvMod.ajvNs.Ajv, scala.Unit],
     options: ajvLib.ajvMod.ajvNs.Options = null
   ): AjvConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCreateAjv")(onCreateAjv)
+    val __obj = js.Dynamic.literal(onCreateAjv = onCreateAjv)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AjvConfig]
   }

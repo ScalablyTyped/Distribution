@@ -42,17 +42,8 @@ object XUIControllerFactory {
     registerController: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XUIControllerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableServiceNames")(AvailableServiceNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createInstanceWithArgumentsAndContext")(createInstanceWithArgumentsAndContext)
-    __obj.updateDynamic("createInstanceWithContext")(createInstanceWithContext)
-    __obj.updateDynamic("deregisterController")(deregisterController)
-    __obj.updateDynamic("getAvailableServiceNames")(getAvailableServiceNames)
-    __obj.updateDynamic("hasController")(hasController)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerController")(registerController)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AvailableServiceNames = AvailableServiceNames, acquire = acquire, createInstanceWithArgumentsAndContext = createInstanceWithArgumentsAndContext, createInstanceWithContext = createInstanceWithContext, deregisterController = deregisterController, getAvailableServiceNames = getAvailableServiceNames, hasController = hasController, queryInterface = queryInterface, registerController = registerController, release = release)
+  
     __obj.asInstanceOf[XUIControllerFactory]
   }
 }

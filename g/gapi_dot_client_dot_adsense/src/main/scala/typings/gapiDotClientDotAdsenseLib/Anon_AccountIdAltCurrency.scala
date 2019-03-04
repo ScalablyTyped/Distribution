@@ -75,10 +75,7 @@ object Anon_AccountIdAltCurrency {
     useTimezoneReporting: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltCurrency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("startDate")(startDate)
+    val __obj = js.Dynamic.literal(accountId = accountId, endDate = endDate, startDate = startDate)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (dimension != null) __obj.updateDynamic("dimension")(dimension)

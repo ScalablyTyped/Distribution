@@ -23,9 +23,8 @@ object ContractDefinition {
     loc: Location = null,
     range: js.Tuple2[scala.Double, scala.Double] = null
   ): ContractDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subNodes")(subNodes)
+    val __obj = js.Dynamic.literal(name = name, subNodes = subNodes)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[ContractDefinition]

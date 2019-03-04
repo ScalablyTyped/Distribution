@@ -65,28 +65,8 @@ object TableColumn {
     setName: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): TableColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsStartOfNewPage")(IsStartOfNewPage)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OptimalWidth")(OptimalWidth)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Width")(Width)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(IsStartOfNewPage = IsStartOfNewPage, IsVisible = IsVisible, Name = Name, OptimalWidth = OptimalWidth, PropertySetInfo = PropertySetInfo, Width = Width, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[TableColumn]
   }
 }

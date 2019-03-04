@@ -18,8 +18,8 @@ object PhononPageEventObject {
       scala.Unit
     ]
   ): PhononPageEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEvent")(addEvent)
+    val __obj = js.Dynamic.literal(addEvent = addEvent)
+  
     __obj.asInstanceOf[PhononPageEventObject]
   }
 }

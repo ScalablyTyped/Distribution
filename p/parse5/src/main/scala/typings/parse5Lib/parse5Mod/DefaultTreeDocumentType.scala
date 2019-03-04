@@ -33,11 +33,8 @@ object DefaultTreeDocumentType {
     publicId: java.lang.String,
     systemId: java.lang.String
   ): DefaultTreeDocumentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("publicId")(publicId)
-    __obj.updateDynamic("systemId")(systemId)
+    val __obj = js.Dynamic.literal(name = name, nodeName = nodeName, publicId = publicId, systemId = systemId)
+  
     __obj.asInstanceOf[DefaultTreeDocumentType]
   }
 }

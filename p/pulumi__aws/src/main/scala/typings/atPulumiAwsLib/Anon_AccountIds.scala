@@ -18,8 +18,7 @@ object Anon_AccountIds {
     allRegions: js.UndefOr[scala.Boolean] = js.undefined,
     regions: js.Array[java.lang.String] = null
   ): Anon_AccountIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountIds")(accountIds)
+    val __obj = js.Dynamic.literal(accountIds = accountIds)
     if (!js.isUndefined(allRegions)) __obj.updateDynamic("allRegions")(allRegions)
     if (regions != null) __obj.updateDynamic("regions")(regions)
     __obj.asInstanceOf[Anon_AccountIds]

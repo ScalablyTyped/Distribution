@@ -26,9 +26,7 @@ object IconProps {
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     size: scala.Double | java.lang.String = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
-    __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel, icon = icon)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dangerouslySetSvgPath != null) __obj.updateDynamic("dangerouslySetSvgPath")(dangerouslySetSvgPath)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)

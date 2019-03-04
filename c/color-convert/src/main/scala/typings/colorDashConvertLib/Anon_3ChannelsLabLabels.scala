@@ -20,11 +20,8 @@ object Anon_3ChannelsLabLabels {
     lch: js.Function1[colorDashConvertLib.conversionsMod.LAB, colorDashConvertLib.conversionsMod.LCH],
     xyz: js.Function1[colorDashConvertLib.conversionsMod.LAB, colorDashConvertLib.conversionsMod.XYZ]
   ): Anon_3ChannelsLabLabels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("lch")(lch)
-    __obj.updateDynamic("xyz")(xyz)
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, lch = lch, xyz = xyz)
+  
     __obj.asInstanceOf[Anon_3ChannelsLabLabels]
   }
 }

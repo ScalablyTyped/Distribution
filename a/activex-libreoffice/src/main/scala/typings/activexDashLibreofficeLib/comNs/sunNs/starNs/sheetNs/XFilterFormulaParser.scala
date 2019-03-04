@@ -26,10 +26,8 @@ object XFilterFormulaParser {
       java.lang.String
     ]
   ): XFilterFormulaParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedNamespace")(SupportedNamespace)
-    __obj.updateDynamic("parseFormula")(parseFormula)
-    __obj.updateDynamic("printFormula")(printFormula)
+    val __obj = js.Dynamic.literal(SupportedNamespace = SupportedNamespace, parseFormula = parseFormula, printFormula = printFormula)
+  
     __obj.asInstanceOf[XFilterFormulaParser]
   }
 }

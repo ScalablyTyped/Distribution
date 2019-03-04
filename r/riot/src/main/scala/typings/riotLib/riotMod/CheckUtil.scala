@@ -76,16 +76,8 @@ object CheckUtil {
     isUndefined: js.Function1[js.Any, scala.Boolean],
     isWritable: js.Function2[js.Any, java.lang.String, scala.Boolean]
   ): CheckUtil = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isArray")(isArray)
-    __obj.updateDynamic("isBlank")(isBlank)
-    __obj.updateDynamic("isBoolAttr")(isBoolAttr)
-    __obj.updateDynamic("isFunction")(isFunction)
-    __obj.updateDynamic("isObject")(isObject)
-    __obj.updateDynamic("isReservedName")(isReservedName)
-    __obj.updateDynamic("isString")(isString)
-    __obj.updateDynamic("isUndefined")(isUndefined)
-    __obj.updateDynamic("isWritable")(isWritable)
+    val __obj = js.Dynamic.literal(isArray = isArray, isBlank = isBlank, isBoolAttr = isBoolAttr, isFunction = isFunction, isObject = isObject, isReservedName = isReservedName, isString = isString, isUndefined = isUndefined, isWritable = isWritable)
+  
     __obj.asInstanceOf[CheckUtil]
   }
 }

@@ -38,20 +38,8 @@ object Anon_DisabledDisabledAsDuplicateOfDefault {
     jailedByNotificationsVolume: scala.Double,
     pendingDeletion: scala.Double
   ): Anon_DisabledDisabledAsDuplicateOfDefault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("disabledAsDuplicateOfDefault")(disabledAsDuplicateOfDefault)
-    __obj.updateDynamic("disabledByAdmin")(disabledByAdmin)
-    __obj.updateDynamic("disabledBySystem")(disabledBySystem)
-    __obj.updateDynamic("disabledInactiveIdentity")(disabledInactiveIdentity)
-    __obj.updateDynamic("disabledInvalidPathClause")(disabledInvalidPathClause)
-    __obj.updateDynamic("disabledInvalidRoleExpression")(disabledInvalidRoleExpression)
-    __obj.updateDynamic("disabledMessageQueueNotSupported")(disabledMessageQueueNotSupported)
-    __obj.updateDynamic("disabledMissingIdentity")(disabledMissingIdentity)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("enabledOnProbation")(enabledOnProbation)
-    __obj.updateDynamic("jailedByNotificationsVolume")(jailedByNotificationsVolume)
-    __obj.updateDynamic("pendingDeletion")(pendingDeletion)
+    val __obj = js.Dynamic.literal(disabled = disabled, disabledAsDuplicateOfDefault = disabledAsDuplicateOfDefault, disabledByAdmin = disabledByAdmin, disabledBySystem = disabledBySystem, disabledInactiveIdentity = disabledInactiveIdentity, disabledInvalidPathClause = disabledInvalidPathClause, disabledInvalidRoleExpression = disabledInvalidRoleExpression, disabledMessageQueueNotSupported = disabledMessageQueueNotSupported, disabledMissingIdentity = disabledMissingIdentity, enabled = enabled, enabledOnProbation = enabledOnProbation, jailedByNotificationsVolume = jailedByNotificationsVolume, pendingDeletion = pendingDeletion)
+  
     __obj.asInstanceOf[Anon_DisabledDisabledAsDuplicateOfDefault]
   }
 }

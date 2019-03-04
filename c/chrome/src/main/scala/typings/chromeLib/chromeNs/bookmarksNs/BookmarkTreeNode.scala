@@ -43,9 +43,7 @@ object BookmarkTreeNode {
     unmodifiable: js.Any = null,
     url: java.lang.String = null
   ): BookmarkTreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, title = title)
     if (children != null) __obj.updateDynamic("children")(children)
     if (dateAdded != null) __obj.updateDynamic("dateAdded")(dateAdded.asInstanceOf[js.Any])
     if (dateGroupModified != null) __obj.updateDynamic("dateGroupModified")(dateGroupModified.asInstanceOf[js.Any])

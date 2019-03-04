@@ -48,11 +48,8 @@ object XFormulaOpCodeMapper {
       activexDashInteropLib.SafeArray[FormulaToken]
     ]
   ): XFormulaOpCodeMapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OpCodeExternal")(OpCodeExternal)
-    __obj.updateDynamic("OpCodeUnknown")(OpCodeUnknown)
-    __obj.updateDynamic("getAvailableMappings")(getAvailableMappings)
-    __obj.updateDynamic("getMappings")(getMappings)
+    val __obj = js.Dynamic.literal(OpCodeExternal = OpCodeExternal, OpCodeUnknown = OpCodeUnknown, getAvailableMappings = getAvailableMappings, getMappings = getMappings)
+  
     __obj.asInstanceOf[XFormulaOpCodeMapper]
   }
 }

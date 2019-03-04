@@ -31,8 +31,7 @@ object ImageOverlayProps {
     pane: java.lang.String = null,
     zIndex: scala.Int | scala.Double = null
   ): ImageOverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])

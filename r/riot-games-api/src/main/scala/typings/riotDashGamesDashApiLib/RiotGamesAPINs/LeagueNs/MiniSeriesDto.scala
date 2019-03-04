@@ -15,11 +15,8 @@ trait MiniSeriesDto extends js.Object {
 object MiniSeriesDto {
   @scala.inline
   def apply(losses: scala.Double, progress: java.lang.String, target: scala.Double, wins: scala.Double): MiniSeriesDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("losses")(losses)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("wins")(wins)
+    val __obj = js.Dynamic.literal(losses = losses, progress = progress, target = target, wins = wins)
+  
     __obj.asInstanceOf[MiniSeriesDto]
   }
 }

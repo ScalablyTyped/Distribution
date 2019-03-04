@@ -24,11 +24,8 @@ object CreateAnimationOptions {
     timeFunction: TimingFunction,
     transformOrigin: java.lang.String
   ): CreateAnimationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("timeFunction")(timeFunction)
-    __obj.updateDynamic("transformOrigin")(transformOrigin)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration, timeFunction = timeFunction, transformOrigin = transformOrigin)
+  
     __obj.asInstanceOf[CreateAnimationOptions]
   }
 }

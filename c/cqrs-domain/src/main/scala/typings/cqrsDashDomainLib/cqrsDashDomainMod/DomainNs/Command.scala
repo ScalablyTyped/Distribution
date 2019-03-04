@@ -12,8 +12,8 @@ trait Command extends js.Object {
 object Command {
   @scala.inline
   def apply(id: java.lang.String): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[Command]
   }
 }

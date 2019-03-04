@@ -18,8 +18,8 @@ object Callback {
       scala.Boolean
     ]
   ): Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onMenuItemSelected")(onMenuItemSelected)
+    val __obj = js.Dynamic.literal(onMenuItemSelected = onMenuItemSelected)
+  
     __obj.asInstanceOf[Callback]
   }
 }

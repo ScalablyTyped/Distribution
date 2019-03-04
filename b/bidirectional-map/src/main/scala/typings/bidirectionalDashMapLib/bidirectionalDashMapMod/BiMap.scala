@@ -36,19 +36,8 @@ object BiMap {
     size: scala.Double,
     values: js.Function0[stdLib.IterableIterator[TValue]]
   ): BiMap[TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deleteValue")(deleteValue)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getKey")(getKey)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("hasValue")(hasValue)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, deleteValue = deleteValue, entries = entries, get = get, getKey = getKey, has = has, hasValue = hasValue, keys = keys, set = set, size = size, values = values)
+  
     __obj.asInstanceOf[BiMap[TValue]]
   }
 }

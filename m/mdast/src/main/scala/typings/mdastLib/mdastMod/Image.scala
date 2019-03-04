@@ -24,8 +24,8 @@ object Image {
     position: unistLib.unistMod.Position = null,
     title: java.lang.String = null
   ): Image = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+    __obj.updateDynamic("type")(`type`)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)

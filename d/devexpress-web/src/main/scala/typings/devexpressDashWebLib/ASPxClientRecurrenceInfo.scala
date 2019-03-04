@@ -136,29 +136,8 @@ object ASPxClientRecurrenceInfo {
     SetWeekDays: js.Function1[ASPxClientWeekDays, scala.Unit],
     SetWeekOfMonth: js.Function1[ASPxClientWeekOfMonth, scala.Unit]
   ): ASPxClientRecurrenceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDayNumber")(GetDayNumber)
-    __obj.updateDynamic("GetDuration")(GetDuration)
-    __obj.updateDynamic("GetEnd")(GetEnd)
-    __obj.updateDynamic("GetMonth")(GetMonth)
-    __obj.updateDynamic("GetOccurrenceCount")(GetOccurrenceCount)
-    __obj.updateDynamic("GetPeriodicity")(GetPeriodicity)
-    __obj.updateDynamic("GetRange")(GetRange)
-    __obj.updateDynamic("GetRecurrenceType")(GetRecurrenceType)
-    __obj.updateDynamic("GetStart")(GetStart)
-    __obj.updateDynamic("GetWeekDays")(GetWeekDays)
-    __obj.updateDynamic("GetWeekOfMonth")(GetWeekOfMonth)
-    __obj.updateDynamic("SetDayNumber")(SetDayNumber)
-    __obj.updateDynamic("SetDuration")(SetDuration)
-    __obj.updateDynamic("SetEnd")(SetEnd)
-    __obj.updateDynamic("SetMonth")(SetMonth)
-    __obj.updateDynamic("SetOccurrenceCount")(SetOccurrenceCount)
-    __obj.updateDynamic("SetPeriodicity")(SetPeriodicity)
-    __obj.updateDynamic("SetRange")(SetRange)
-    __obj.updateDynamic("SetRecurrenceType")(SetRecurrenceType)
-    __obj.updateDynamic("SetStart")(SetStart)
-    __obj.updateDynamic("SetWeekDays")(SetWeekDays)
-    __obj.updateDynamic("SetWeekOfMonth")(SetWeekOfMonth)
+    val __obj = js.Dynamic.literal(GetDayNumber = GetDayNumber, GetDuration = GetDuration, GetEnd = GetEnd, GetMonth = GetMonth, GetOccurrenceCount = GetOccurrenceCount, GetPeriodicity = GetPeriodicity, GetRange = GetRange, GetRecurrenceType = GetRecurrenceType, GetStart = GetStart, GetWeekDays = GetWeekDays, GetWeekOfMonth = GetWeekOfMonth, SetDayNumber = SetDayNumber, SetDuration = SetDuration, SetEnd = SetEnd, SetMonth = SetMonth, SetOccurrenceCount = SetOccurrenceCount, SetPeriodicity = SetPeriodicity, SetRange = SetRange, SetRecurrenceType = SetRecurrenceType, SetStart = SetStart, SetWeekDays = SetWeekDays, SetWeekOfMonth = SetWeekOfMonth)
+  
     __obj.asInstanceOf[ASPxClientRecurrenceInfo]
   }
 }

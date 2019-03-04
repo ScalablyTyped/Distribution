@@ -22,12 +22,8 @@ object TextArea {
     setName: js.Function1[java.lang.String, TextArea],
     setPlaceholder: js.Function1[java.lang.String, TextArea]
   ): TextArea = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAllowOverride")(setAllowOverride)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPlaceholder")(setPlaceholder)
+    val __obj = js.Dynamic.literal(setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName, setPlaceholder = setPlaceholder)
+  
     __obj.asInstanceOf[TextArea]
   }
 }

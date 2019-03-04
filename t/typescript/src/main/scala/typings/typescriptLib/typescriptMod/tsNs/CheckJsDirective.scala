@@ -12,10 +12,8 @@ trait CheckJsDirective extends TextRange {
 object CheckJsDirective {
   @scala.inline
   def apply(enabled: scala.Boolean, end: scala.Double, pos: scala.Double): CheckJsDirective = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(enabled = enabled, end = end, pos = pos)
+  
     __obj.asInstanceOf[CheckJsDirective]
   }
 }

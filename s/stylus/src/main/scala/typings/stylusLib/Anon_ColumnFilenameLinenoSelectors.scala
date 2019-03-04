@@ -22,12 +22,8 @@ object Anon_ColumnFilenameLinenoSelectors {
     lineno: scala.Double,
     selectors: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Selector]
   ): Anon_ColumnFilenameLinenoSelectors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("selectors")(selectors)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, selectors = selectors)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoSelectors]
   }
 }

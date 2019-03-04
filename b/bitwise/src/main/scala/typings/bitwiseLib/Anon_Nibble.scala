@@ -46,9 +46,8 @@ object Anon_Nibble {
       js.Any
     ]
   ): Anon_Nibble = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(read = read, write = write)
+  
     __obj.asInstanceOf[Anon_Nibble]
   }
 }

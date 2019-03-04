@@ -23,11 +23,8 @@ object XCloseable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCloseable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, close = close, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCloseable]
   }
 }

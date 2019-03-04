@@ -76,17 +76,8 @@ object IGridTreeBaseApi {
     setTreeState: js.Function1[ITreeState, scala.Unit],
     toggleRowTreeState: js.Function1[uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], scala.Unit]
   ): IGridTreeBaseApi[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseAllRows")(collapseAllRows)
-    __obj.updateDynamic("collapseRow")(collapseRow)
-    __obj.updateDynamic("collapseRowChildren")(collapseRowChildren)
-    __obj.updateDynamic("expandAllRows")(expandAllRows)
-    __obj.updateDynamic("expandRow")(expandRow)
-    __obj.updateDynamic("getRowChildren")(getRowChildren)
-    __obj.updateDynamic("getTreeState")(getTreeState)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("setTreeState")(setTreeState)
-    __obj.updateDynamic("toggleRowTreeState")(toggleRowTreeState)
+    val __obj = js.Dynamic.literal(collapseAllRows = collapseAllRows, collapseRow = collapseRow, collapseRowChildren = collapseRowChildren, expandAllRows = expandAllRows, expandRow = expandRow, getRowChildren = getRowChildren, getTreeState = getTreeState, on = on, setTreeState = setTreeState, toggleRowTreeState = toggleRowTreeState)
+  
     __obj.asInstanceOf[IGridTreeBaseApi[TEntity]]
   }
 }

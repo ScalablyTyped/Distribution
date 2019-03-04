@@ -12,8 +12,8 @@ trait StructuredResponse extends js.Object {
 object StructuredResponse {
   @scala.inline
   def apply(orderUpdate: actionsDashOnDashGoogleLib.transactionsMod.OrderUpdate): StructuredResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orderUpdate")(orderUpdate)
+    val __obj = js.Dynamic.literal(orderUpdate = orderUpdate)
+  
     __obj.asInstanceOf[StructuredResponse]
   }
 }

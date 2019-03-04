@@ -29,11 +29,8 @@ object NotificationSubscriber {
     id: java.lang.String,
     preferredEmailAddress: java.lang.String
   ): NotificationSubscriber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryPreference")(deliveryPreference)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("preferredEmailAddress")(preferredEmailAddress)
+    val __obj = js.Dynamic.literal(deliveryPreference = deliveryPreference, flags = flags, id = id, preferredEmailAddress = preferredEmailAddress)
+  
     __obj.asInstanceOf[NotificationSubscriber]
   }
 }

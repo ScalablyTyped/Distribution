@@ -13,8 +13,7 @@ trait Anon_ChildrenInline extends js.Object {
 object Anon_ChildrenInline {
   @scala.inline
   def apply(children: java.lang.String, `inline`: js.UndefOr[scala.Boolean] = js.undefined): Anon_ChildrenInline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[Anon_ChildrenInline]
   }

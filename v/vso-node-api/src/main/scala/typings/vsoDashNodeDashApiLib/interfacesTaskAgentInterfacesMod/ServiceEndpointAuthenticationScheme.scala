@@ -20,11 +20,8 @@ object ServiceEndpointAuthenticationScheme {
     inputDescriptors: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDescriptor],
     scheme: java.lang.String
   ): ServiceEndpointAuthenticationScheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationHeaders")(authorizationHeaders)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("inputDescriptors")(inputDescriptors)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(authorizationHeaders = authorizationHeaders, displayName = displayName, inputDescriptors = inputDescriptors, scheme = scheme)
+  
     __obj.asInstanceOf[ServiceEndpointAuthenticationScheme]
   }
 }

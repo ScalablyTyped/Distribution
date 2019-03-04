@@ -19,10 +19,8 @@ object PromiseRejectedResult {
     isRejected: pDashReflectLib.pDashReflectLibNumbers.`true`,
     reason: js.Any
   ): PromiseRejectedResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isFulfilled")(isFulfilled)
-    __obj.updateDynamic("isRejected")(isRejected)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isRejected = isRejected, reason = reason)
+  
     __obj.asInstanceOf[PromiseRejectedResult]
   }
 }

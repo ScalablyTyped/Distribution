@@ -28,13 +28,8 @@ object TripWaypoint {
     trips_index: scala.Double,
     waypoint_index: scala.Double
   ): TripWaypoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("hint")(hint)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("trips_index")(trips_index)
-    __obj.updateDynamic("waypoint_index")(waypoint_index)
+    val __obj = js.Dynamic.literal(distance = distance, hint = hint, location = location, name = name, trips_index = trips_index, waypoint_index = waypoint_index)
+  
     __obj.asInstanceOf[TripWaypoint]
   }
 }

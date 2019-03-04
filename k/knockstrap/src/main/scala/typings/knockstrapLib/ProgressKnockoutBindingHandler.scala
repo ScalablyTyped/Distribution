@@ -52,8 +52,7 @@ object ProgressKnockoutBindingHandler {
       scala.Unit
     ] = null
   ): ProgressKnockoutBindingHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
     if (after != null) __obj.updateDynamic("after")(after)
     if (init != null) __obj.updateDynamic("init")(init)
     if (options != null) __obj.updateDynamic("options")(options)

@@ -38,9 +38,7 @@ object DefaultLinkProps {
     smooth: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): DefaultLinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagramEngine")(diagramEngine)
-    __obj.updateDynamic("link")(link)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine, link = link)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color)

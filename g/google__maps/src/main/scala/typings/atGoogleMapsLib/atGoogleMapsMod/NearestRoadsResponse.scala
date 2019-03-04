@@ -13,8 +13,8 @@ trait NearestRoadsResponse extends js.Object {
 object NearestRoadsResponse {
   @scala.inline
   def apply(snappedPoints: js.Array[atGoogleMapsLib.Anon_Location]): NearestRoadsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("snappedPoints")(snappedPoints)
+    val __obj = js.Dynamic.literal(snappedPoints = snappedPoints)
+  
     __obj.asInstanceOf[NearestRoadsResponse]
   }
 }

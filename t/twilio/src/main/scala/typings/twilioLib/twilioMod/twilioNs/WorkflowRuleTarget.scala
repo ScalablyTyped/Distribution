@@ -20,11 +20,8 @@ object WorkflowRuleTarget {
     queue: java.lang.String,
     timeout: scala.Double
   ): WorkflowRuleTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(expression = expression, priority = priority, queue = queue, timeout = timeout)
+  
     __obj.asInstanceOf[WorkflowRuleTarget]
   }
 }

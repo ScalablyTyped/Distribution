@@ -22,8 +22,7 @@ object RenderOptions {
     panel: java.lang.String | stdLib.HTMLElement = null,
     selectFirstResult: js.UndefOr[scala.Boolean] = js.undefined
   ): RenderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(map = map)
     if (!js.isUndefined(autoViewport)) __obj.updateDynamic("autoViewport")(autoViewport)
     if (!js.isUndefined(highlightMode)) __obj.updateDynamic("highlightMode")(highlightMode)
     if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])

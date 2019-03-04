@@ -24,8 +24,7 @@ object CloudFrontResultResponse {
     headers: CloudFrontHeaders = null,
     statusDescription: java.lang.String = null
   ): CloudFrontResultResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (body != null) __obj.updateDynamic("body")(body)
     if (bodyEncoding != null) __obj.updateDynamic("bodyEncoding")(bodyEncoding.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)

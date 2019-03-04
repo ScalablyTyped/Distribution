@@ -23,13 +23,8 @@ object GridViewColumnMovingEventArgs {
     sender: Control,
     sourceColumn: BootstrapGridViewColumn
   ): GridViewColumnMovingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allow")(allow)
-    __obj.updateDynamic("destinationColumn")(destinationColumn)
-    __obj.updateDynamic("isDropBefore")(isDropBefore)
-    __obj.updateDynamic("isGroupPanel")(isGroupPanel)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("sourceColumn")(sourceColumn)
+    val __obj = js.Dynamic.literal(allow = allow, destinationColumn = destinationColumn, isDropBefore = isDropBefore, isGroupPanel = isGroupPanel, sender = sender, sourceColumn = sourceColumn)
+  
     __obj.asInstanceOf[GridViewColumnMovingEventArgs]
   }
 }

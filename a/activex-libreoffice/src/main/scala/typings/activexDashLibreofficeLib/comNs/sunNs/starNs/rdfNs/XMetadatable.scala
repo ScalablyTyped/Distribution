@@ -44,12 +44,8 @@ object XMetadatable {
     StringValue: java.lang.String,
     ensureMetadataReference: js.Function0[scala.Unit]
   ): XMetadatable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LocalName")(LocalName)
-    __obj.updateDynamic("MetadataReference")(MetadataReference)
-    __obj.updateDynamic("Namespace")(Namespace)
-    __obj.updateDynamic("StringValue")(StringValue)
-    __obj.updateDynamic("ensureMetadataReference")(ensureMetadataReference)
+    val __obj = js.Dynamic.literal(LocalName = LocalName, MetadataReference = MetadataReference, Namespace = Namespace, StringValue = StringValue, ensureMetadataReference = ensureMetadataReference)
+  
     __obj.asInstanceOf[XMetadatable]
   }
 }

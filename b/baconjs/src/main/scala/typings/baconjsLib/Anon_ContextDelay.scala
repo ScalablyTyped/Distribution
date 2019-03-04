@@ -20,9 +20,7 @@ object Anon_ContextDelay {
     delay: js.Function1[/* context */ Anon_Error[E], scala.Double] = null,
     isRetryable: js.Function1[/* error */ E, scala.Boolean] = null
   ): Anon_ContextDelay[E, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(retries = retries, source = source)
     if (delay != null) __obj.updateDynamic("delay")(delay)
     if (isRetryable != null) __obj.updateDynamic("isRetryable")(isRetryable)
     __obj.asInstanceOf[Anon_ContextDelay[E, A]]

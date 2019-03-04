@@ -43,21 +43,8 @@ object IdentityRefWithVote {
     vote: scala.Double,
     votedFor: js.Array[IdentityRefWithVote]
   ): IdentityRefWithVote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directoryAlias")(directoryAlias)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("inactive")(inactive)
-    __obj.updateDynamic("isAadIdentity")(isAadIdentity)
-    __obj.updateDynamic("isContainer")(isContainer)
-    __obj.updateDynamic("isRequired")(isRequired)
-    __obj.updateDynamic("profileUrl")(profileUrl)
-    __obj.updateDynamic("reviewerUrl")(reviewerUrl)
-    __obj.updateDynamic("uniqueName")(uniqueName)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("vote")(vote)
-    __obj.updateDynamic("votedFor")(votedFor)
+    val __obj = js.Dynamic.literal(directoryAlias = directoryAlias, displayName = displayName, id = id, imageUrl = imageUrl, inactive = inactive, isAadIdentity = isAadIdentity, isContainer = isContainer, isRequired = isRequired, profileUrl = profileUrl, reviewerUrl = reviewerUrl, uniqueName = uniqueName, url = url, vote = vote, votedFor = votedFor)
+  
     __obj.asInstanceOf[IdentityRefWithVote]
   }
 }

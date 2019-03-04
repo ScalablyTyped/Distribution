@@ -21,13 +21,8 @@ object FetchStrategy {
     getNames: js.Function0[js.Array[java.lang.String]],
     getSymbols: js.Function0[js.Array[breezeLib.breezeNs.coreNs.EnumSymbol]]
   ): FetchStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FromLocalCache")(FromLocalCache)
-    __obj.updateDynamic("FromServer")(FromServer)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("fromName")(fromName)
-    __obj.updateDynamic("getNames")(getNames)
-    __obj.updateDynamic("getSymbols")(getSymbols)
+    val __obj = js.Dynamic.literal(FromLocalCache = FromLocalCache, FromServer = FromServer, contains = contains, fromName = fromName, getNames = getNames, getSymbols = getSymbols)
+  
     __obj.asInstanceOf[FetchStrategy]
   }
 }

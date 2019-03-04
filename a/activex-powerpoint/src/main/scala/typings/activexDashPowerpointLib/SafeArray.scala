@@ -12,8 +12,8 @@ trait SafeArray[T] extends js.Object {
 object SafeArray {
   @scala.inline
   def apply[T](_brand: SafeArray[T]): SafeArray[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_brand")(_brand)
+    val __obj = js.Dynamic.literal(_brand = _brand)
+  
     __obj.asInstanceOf[SafeArray[T]]
   }
 }

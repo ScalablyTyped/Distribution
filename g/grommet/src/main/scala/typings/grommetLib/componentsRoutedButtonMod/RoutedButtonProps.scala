@@ -16,8 +16,7 @@ object RoutedButtonProps {
     path: java.lang.String,
     method: grommetLib.grommetLibStrings.push | grommetLib.grommetLibStrings.replace = null
   ): RoutedButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutedButtonProps]
   }

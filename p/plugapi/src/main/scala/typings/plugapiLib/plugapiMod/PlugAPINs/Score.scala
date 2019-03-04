@@ -22,12 +22,8 @@ object Score {
     positive: scala.Double,
     skipped: scala.Double
   ): Score = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grabs")(grabs)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("negative")(negative)
-    __obj.updateDynamic("positive")(positive)
-    __obj.updateDynamic("skipped")(skipped)
+    val __obj = js.Dynamic.literal(grabs = grabs, listeners = listeners, negative = negative, positive = positive, skipped = skipped)
+  
     __obj.asInstanceOf[Score]
   }
 }

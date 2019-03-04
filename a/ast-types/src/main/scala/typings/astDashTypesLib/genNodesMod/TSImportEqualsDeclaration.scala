@@ -26,10 +26,8 @@ object TSImportEqualsDeclaration {
     moduleReference: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind | astDashTypesLib.genKindsMod.TSExternalModuleReferenceKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSImportEqualsDeclaration
   ): TSImportEqualsDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isExport")(isExport)
-    __obj.updateDynamic("moduleReference")(moduleReference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, isExport = isExport, moduleReference = moduleReference.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSImportEqualsDeclaration]
   }
 }

@@ -38,8 +38,7 @@ object PathConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): PathConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)
     if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint)

@@ -32,11 +32,7 @@ object Nuke {
     timeToLand: scala.Double,
     room: Room = null
   ): Nuke = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("launchRoomName")(launchRoomName)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("timeToLand")(timeToLand)
+    val __obj = js.Dynamic.literal(id = id, launchRoomName = launchRoomName, pos = pos, timeToLand = timeToLand)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Nuke]
   }

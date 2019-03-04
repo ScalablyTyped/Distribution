@@ -18,10 +18,8 @@ object DOMException {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String
   ): DOMException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Code")(Code)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Code = Code, Context = Context, Message = Message)
+  
     __obj.asInstanceOf[DOMException]
   }
 }

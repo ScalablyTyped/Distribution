@@ -30,10 +30,8 @@ object PartitionResolver {
     resolveForCreate: js.Function1[java.lang.String, java.lang.String],
     resolveForRead: js.Function1[js.Any, js.Array[java.lang.String]]
   ): PartitionResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPartitionKey")(getPartitionKey)
-    __obj.updateDynamic("resolveForCreate")(resolveForCreate)
-    __obj.updateDynamic("resolveForRead")(resolveForRead)
+    val __obj = js.Dynamic.literal(getPartitionKey = getPartitionKey, resolveForCreate = resolveForCreate, resolveForRead = resolveForRead)
+  
     __obj.asInstanceOf[PartitionResolver]
   }
 }

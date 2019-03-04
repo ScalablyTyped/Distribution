@@ -16,9 +16,8 @@ object Anon_ErrorsOptions {
     errors: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic],
     options: typescriptLib.typescriptMod.tsNs.TypeAcquisition
   ): Anon_ErrorsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(errors = errors, options = options)
+  
     __obj.asInstanceOf[Anon_ErrorsOptions]
   }
 }

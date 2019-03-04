@@ -77,16 +77,8 @@ object IListNotificationHandler {
     moved: js.Function3[IItemPromise[T], java.lang.String, java.lang.String, scala.Unit],
     removed: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
   ): IListNotificationHandler[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginNotifications")(beginNotifications)
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("countChanged")(countChanged)
-    __obj.updateDynamic("endNotifications")(endNotifications)
-    __obj.updateDynamic("indexChanged")(indexChanged)
-    __obj.updateDynamic("inserted")(inserted)
-    __obj.updateDynamic("itemAvailable")(itemAvailable)
-    __obj.updateDynamic("moved")(moved)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(beginNotifications = beginNotifications, changed = changed, countChanged = countChanged, endNotifications = endNotifications, indexChanged = indexChanged, inserted = inserted, itemAvailable = itemAvailable, moved = moved, removed = removed)
+  
     __obj.asInstanceOf[IListNotificationHandler[T]]
   }
 }

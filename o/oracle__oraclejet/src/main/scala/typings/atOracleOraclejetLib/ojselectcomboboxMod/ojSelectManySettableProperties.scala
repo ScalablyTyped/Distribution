@@ -63,21 +63,7 @@ object ojSelectManySettableProperties {
     value: js.Array[_] = null,
     valueOptions: js.Array[atOracleOraclejetLib.Anon_LabelValue] = null
   ): ojSelectManySettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("minimumResultsForSearch")(minimumResultsForSearch)
-    __obj.updateDynamic("optionsKeys")(optionsKeys)
-    __obj.updateDynamic("pickerAttributes")(pickerAttributes)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, minimumResultsForSearch = minimumResultsForSearch, optionsKeys = optionsKeys, pickerAttributes = pickerAttributes, readOnly = readOnly, renderMode = renderMode.asInstanceOf[js.Any], required = required, translations = translations, valid = valid.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

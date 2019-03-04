@@ -23,13 +23,8 @@ object IpMessagingGrant {
     serviceSid: java.lang.String,
     toPayload: js.Function0[IpMessagingGrantPayload]
   ): IpMessagingGrant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deploymentRoleSid")(deploymentRoleSid)
-    __obj.updateDynamic("endpointId")(endpointId)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("pushCredentialSid")(pushCredentialSid)
-    __obj.updateDynamic("serviceSid")(serviceSid)
-    __obj.updateDynamic("toPayload")(toPayload)
+    val __obj = js.Dynamic.literal(deploymentRoleSid = deploymentRoleSid, endpointId = endpointId, key = key, pushCredentialSid = pushCredentialSid, serviceSid = serviceSid, toPayload = toPayload)
+  
     __obj.asInstanceOf[IpMessagingGrant]
   }
 }

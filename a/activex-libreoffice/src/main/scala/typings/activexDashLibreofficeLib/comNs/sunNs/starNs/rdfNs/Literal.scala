@@ -41,14 +41,8 @@ object Literal {
     createWithLanguage: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     createWithType: js.Function2[java.lang.String, XURI, scala.Unit]
   ): Literal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Datatype")(Datatype)
-    __obj.updateDynamic("Language")(Language)
-    __obj.updateDynamic("StringValue")(StringValue)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createWithLanguage")(createWithLanguage)
-    __obj.updateDynamic("createWithType")(createWithType)
+    val __obj = js.Dynamic.literal(Datatype = Datatype, Language = Language, StringValue = StringValue, Value = Value, create = create, createWithLanguage = createWithLanguage, createWithType = createWithType)
+  
     __obj.asInstanceOf[Literal]
   }
 }

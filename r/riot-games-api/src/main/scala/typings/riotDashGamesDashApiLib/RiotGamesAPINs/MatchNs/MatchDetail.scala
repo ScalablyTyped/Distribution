@@ -40,21 +40,8 @@ object MatchDetail {
     teams: js.Array[Team],
     timeline: Timeline
   ): MatchDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapId")(mapId)
-    __obj.updateDynamic("matchCreation")(matchCreation)
-    __obj.updateDynamic("matchId")(matchId)
-    __obj.updateDynamic("matchMode")(matchMode)
-    __obj.updateDynamic("matchType")(matchType)
-    __obj.updateDynamic("matchVersion")(matchVersion)
-    __obj.updateDynamic("participantIdentities")(participantIdentities)
-    __obj.updateDynamic("participants")(participants)
-    __obj.updateDynamic("plateformId")(plateformId)
-    __obj.updateDynamic("queueType")(queueType)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("season")(season)
-    __obj.updateDynamic("teams")(teams)
-    __obj.updateDynamic("timeline")(timeline)
+    val __obj = js.Dynamic.literal(mapId = mapId, matchCreation = matchCreation, matchId = matchId, matchMode = matchMode, matchType = matchType, matchVersion = matchVersion, participantIdentities = participantIdentities, participants = participants, plateformId = plateformId, queueType = queueType, region = region, season = season, teams = teams, timeline = timeline)
+  
     __obj.asInstanceOf[MatchDetail]
   }
 }

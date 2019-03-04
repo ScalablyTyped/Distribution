@@ -17,8 +17,8 @@ object DocumentLinkParams {
   def apply(
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): DocumentLinkParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument)
+  
     __obj.asInstanceOf[DocumentLinkParams]
   }
 }

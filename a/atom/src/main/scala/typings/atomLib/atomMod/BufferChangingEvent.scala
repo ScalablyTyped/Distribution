@@ -13,8 +13,8 @@ trait BufferChangingEvent extends js.Object {
 object BufferChangingEvent {
   @scala.inline
   def apply(oldRange: Range): BufferChangingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldRange")(oldRange)
+    val __obj = js.Dynamic.literal(oldRange = oldRange)
+  
     __obj.asInstanceOf[BufferChangingEvent]
   }
 }

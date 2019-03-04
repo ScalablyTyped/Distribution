@@ -47,12 +47,8 @@ object ISearchPage {
     qMaxNbrFieldMatches: scala.Double,
     qOffset: scala.Double
   ): ISearchPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCount")(qCount)
-    __obj.updateDynamic("qGroupItemOptions")(qGroupItemOptions)
-    __obj.updateDynamic("qGroupOptions")(qGroupOptions)
-    __obj.updateDynamic("qMaxNbrFieldMatches")(qMaxNbrFieldMatches)
-    __obj.updateDynamic("qOffset")(qOffset)
+    val __obj = js.Dynamic.literal(qCount = qCount, qGroupItemOptions = qGroupItemOptions, qGroupOptions = qGroupOptions, qMaxNbrFieldMatches = qMaxNbrFieldMatches, qOffset = qOffset)
+  
     __obj.asInstanceOf[ISearchPage]
   }
 }

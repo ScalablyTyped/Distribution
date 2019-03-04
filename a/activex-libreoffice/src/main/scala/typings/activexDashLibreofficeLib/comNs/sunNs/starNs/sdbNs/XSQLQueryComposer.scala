@@ -148,25 +148,8 @@ object XSQLQueryComposer {
     setOrder: js.Function1[java.lang.String, scala.Unit],
     setQuery: js.Function1[java.lang.String, scala.Unit]
   ): XSQLQueryComposer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComposedQuery")(ComposedQuery)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("Query")(Query)
-    __obj.updateDynamic("StructuredFilter")(StructuredFilter)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendFilterByColumn")(appendFilterByColumn)
-    __obj.updateDynamic("appendOrderByColumn")(appendOrderByColumn)
-    __obj.updateDynamic("getComposedQuery")(getComposedQuery)
-    __obj.updateDynamic("getFilter")(getFilter)
-    __obj.updateDynamic("getOrder")(getOrder)
-    __obj.updateDynamic("getQuery")(getQuery)
-    __obj.updateDynamic("getStructuredFilter")(getStructuredFilter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFilter")(setFilter)
-    __obj.updateDynamic("setOrder")(setOrder)
-    __obj.updateDynamic("setQuery")(setQuery)
+    val __obj = js.Dynamic.literal(ComposedQuery = ComposedQuery, Filter = Filter, Order = Order, Query = Query, StructuredFilter = StructuredFilter, acquire = acquire, appendFilterByColumn = appendFilterByColumn, appendOrderByColumn = appendOrderByColumn, getComposedQuery = getComposedQuery, getFilter = getFilter, getOrder = getOrder, getQuery = getQuery, getStructuredFilter = getStructuredFilter, queryInterface = queryInterface, release = release, setFilter = setFilter, setOrder = setOrder, setQuery = setQuery)
+  
     __obj.asInstanceOf[XSQLQueryComposer]
   }
 }

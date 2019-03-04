@@ -18,8 +18,8 @@ object RealtimeResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RealtimeData]
     ]
   ): RealtimeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[RealtimeResource]
   }
 }

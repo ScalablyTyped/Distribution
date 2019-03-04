@@ -24,11 +24,8 @@ object Location {
     coordinates: Coordinates,
     zipCode: java.lang.String
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("zipCode")(zipCode)
+    val __obj = js.Dynamic.literal(address = address, city = city, coordinates = coordinates, zipCode = zipCode)
+  
     __obj.asInstanceOf[Location]
   }
 }

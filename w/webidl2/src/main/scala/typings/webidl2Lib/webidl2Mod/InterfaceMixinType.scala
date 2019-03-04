@@ -26,11 +26,8 @@ object InterfaceMixinType {
     partial: scala.Boolean,
     `type`: webidl2Lib.webidl2LibStrings.`interface mixin`
   ): InterfaceMixinType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partial")(partial)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InterfaceMixinType]
   }
 }

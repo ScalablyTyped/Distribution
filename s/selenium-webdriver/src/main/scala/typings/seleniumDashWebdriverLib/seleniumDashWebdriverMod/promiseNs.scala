@@ -646,7 +646,7 @@ object promiseNs extends js.Object {
   @js.native
   object Deferred extends js.Object {
     // endregion
-    var `State_`: seleniumDashWebdriverLib.Anon_BLOCKED = js.native
+    var State_ : seleniumDashWebdriverLib.Anon_BLOCKED = js.native
   }
   
   /* static members */

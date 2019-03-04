@@ -13,9 +13,8 @@ trait IMediaRatio extends js.Object {
 object IMediaRatio {
   @scala.inline
   def apply(denominator: scala.Double, numerator: scala.Double): IMediaRatio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("denominator")(denominator)
-    __obj.updateDynamic("numerator")(numerator)
+    val __obj = js.Dynamic.literal(denominator = denominator, numerator = numerator)
+  
     __obj.asInstanceOf[IMediaRatio]
   }
 }

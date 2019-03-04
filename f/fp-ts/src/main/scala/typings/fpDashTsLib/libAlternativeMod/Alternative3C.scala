@@ -33,15 +33,8 @@ object Alternative3C {
     of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]],
     zero: js.Function0[fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]]
   ): Alternative3C[F, U, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
-    __obj.updateDynamic("zero")(zero)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], alt = alt, ap = ap, map = map, of = of, zero = zero)
+  
     __obj.asInstanceOf[Alternative3C[F, U, L]]
   }
 }

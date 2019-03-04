@@ -12,8 +12,8 @@ trait SketchMSKeyValueArchive extends js.Object {
 object SketchMSKeyValueArchive {
   @scala.inline
   def apply(_archive: SketchMSEncodedBase64BinaryPlist): SketchMSKeyValueArchive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_archive")(_archive)
+    val __obj = js.Dynamic.literal(_archive = _archive)
+  
     __obj.asInstanceOf[SketchMSKeyValueArchive]
   }
 }

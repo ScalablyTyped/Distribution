@@ -32,11 +32,8 @@ object BacklogLevel {
     workItemStates: js.Array[java.lang.String],
     workItemTypes: js.Array[java.lang.String]
   ): BacklogLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categoryReferenceName")(categoryReferenceName)
-    __obj.updateDynamic("pluralName")(pluralName)
-    __obj.updateDynamic("workItemStates")(workItemStates)
-    __obj.updateDynamic("workItemTypes")(workItemTypes)
+    val __obj = js.Dynamic.literal(categoryReferenceName = categoryReferenceName, pluralName = pluralName, workItemStates = workItemStates, workItemTypes = workItemTypes)
+  
     __obj.asInstanceOf[BacklogLevel]
   }
 }

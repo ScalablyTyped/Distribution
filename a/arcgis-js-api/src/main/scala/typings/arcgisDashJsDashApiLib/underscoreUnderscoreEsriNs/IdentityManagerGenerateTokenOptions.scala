@@ -37,13 +37,8 @@ object IdentityManagerGenerateTokenOptions {
     ssl: scala.Boolean,
     token: java.lang.String
   ): IdentityManagerGenerateTokenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("serverUrl")(serverUrl)
-    __obj.updateDynamic("ssl")(ssl)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, serverUrl = serverUrl, ssl = ssl, token = token)
+  
     __obj.asInstanceOf[IdentityManagerGenerateTokenOptions]
   }
 }

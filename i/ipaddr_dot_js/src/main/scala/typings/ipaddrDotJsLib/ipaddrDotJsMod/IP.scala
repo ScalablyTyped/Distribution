@@ -20,11 +20,8 @@ object IP {
     toNormalizedString: js.Function0[java.lang.String],
     toString: js.Function0[java.lang.String]
   ): IP = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prefixLengthFromSubnetMask")(prefixLengthFromSubnetMask)
-    __obj.updateDynamic("toByteArray")(toByteArray)
-    __obj.updateDynamic("toNormalizedString")(toNormalizedString)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(prefixLengthFromSubnetMask = prefixLengthFromSubnetMask, toByteArray = toByteArray, toNormalizedString = toNormalizedString, toString = toString)
+  
     __obj.asInstanceOf[IP]
   }
 }

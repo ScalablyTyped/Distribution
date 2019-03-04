@@ -18,7 +18,8 @@ object ChooseDirectoryEntryOptions {
     acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
     suggestedName: java.lang.String = null
   ): ChooseDirectoryEntryOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
     if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)

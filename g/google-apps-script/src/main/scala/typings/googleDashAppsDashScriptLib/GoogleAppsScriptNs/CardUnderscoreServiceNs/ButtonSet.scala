@@ -12,8 +12,8 @@ trait ButtonSet extends js.Object {
 object ButtonSet {
   @scala.inline
   def apply(addButton: js.Function1[Button, ButtonSet]): ButtonSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addButton")(addButton)
+    val __obj = js.Dynamic.literal(addButton = addButton)
+  
     __obj.asInstanceOf[ButtonSet]
   }
 }

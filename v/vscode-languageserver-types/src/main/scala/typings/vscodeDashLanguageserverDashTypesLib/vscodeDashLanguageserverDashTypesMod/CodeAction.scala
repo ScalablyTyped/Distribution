@@ -41,8 +41,7 @@ object CodeAction {
     edit: WorkspaceEdit = null,
     kind: CodeActionKind = null
   ): CodeAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (command != null) __obj.updateDynamic("command")(command)
     if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
     if (edit != null) __obj.updateDynamic("edit")(edit)

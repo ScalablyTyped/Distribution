@@ -23,9 +23,8 @@ trait JumpListSettings extends js.Object {
 object JumpListSettings {
   @scala.inline
   def apply(minItems: scala.Double, removedItems: js.Array[JumpListItem]): JumpListSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minItems")(minItems)
-    __obj.updateDynamic("removedItems")(removedItems)
+    val __obj = js.Dynamic.literal(minItems = minItems, removedItems = removedItems)
+  
     __obj.asInstanceOf[JumpListSettings]
   }
 }

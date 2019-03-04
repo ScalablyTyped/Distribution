@@ -29,10 +29,8 @@ object SinonMock {
     restore: js.Function0[scala.Unit],
     verify: js.Function0[scala.Unit]
   ): SinonMock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expects")(expects)
-    __obj.updateDynamic("restore")(restore)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(expects = expects, restore = restore, verify = verify)
+  
     __obj.asInstanceOf[SinonMock]
   }
 }

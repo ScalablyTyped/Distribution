@@ -21,13 +21,8 @@ object EndInstallTypes {
     projectName: java.lang.String,
     typingsInstallerVersion: java.lang.String
   ): EndInstallTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventId")(eventId)
-    __obj.updateDynamic("installSuccess")(installSuccess)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("packagesToInstall")(packagesToInstall)
-    __obj.updateDynamic("projectName")(projectName)
-    __obj.updateDynamic("typingsInstallerVersion")(typingsInstallerVersion)
+    val __obj = js.Dynamic.literal(eventId = eventId, installSuccess = installSuccess, kind = kind, packagesToInstall = packagesToInstall, projectName = projectName, typingsInstallerVersion = typingsInstallerVersion)
+  
     __obj.asInstanceOf[EndInstallTypes]
   }
 }

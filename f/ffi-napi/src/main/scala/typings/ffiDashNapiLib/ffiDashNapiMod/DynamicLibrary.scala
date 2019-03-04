@@ -21,10 +21,8 @@ object DynamicLibrary {
     error: js.Function0[java.lang.String],
     get: js.Function1[java.lang.String, ffiDashNapiLib.Buffer]
   ): DynamicLibrary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(close = close, error = error, get = get)
+  
     __obj.asInstanceOf[DynamicLibrary]
   }
 }

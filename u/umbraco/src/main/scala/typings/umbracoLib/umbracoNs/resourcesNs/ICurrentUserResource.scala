@@ -42,9 +42,8 @@ object ICurrentUserResource {
     changePassword: js.Function1[js.Any, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
     getMembershipProviderConfig: js.Function0[js.Any]
   ): ICurrentUserResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changePassword")(changePassword)
-    __obj.updateDynamic("getMembershipProviderConfig")(getMembershipProviderConfig)
+    val __obj = js.Dynamic.literal(changePassword = changePassword, getMembershipProviderConfig = getMembershipProviderConfig)
+  
     __obj.asInstanceOf[ICurrentUserResource]
   }
 }

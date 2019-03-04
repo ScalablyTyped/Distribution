@@ -13,9 +13,8 @@ trait CashtagWithIndices extends EntityWithIndices {
 object CashtagWithIndices {
   @scala.inline
   def apply(cashtag: java.lang.String, indices: js.Tuple2[scala.Double, scala.Double]): CashtagWithIndices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cashtag")(cashtag)
-    __obj.updateDynamic("indices")(indices)
+    val __obj = js.Dynamic.literal(cashtag = cashtag, indices = indices)
+  
     __obj.asInstanceOf[CashtagWithIndices]
   }
 }

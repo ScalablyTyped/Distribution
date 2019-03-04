@@ -21,9 +21,8 @@ trait Scope extends js.Object {
 object Scope {
   @scala.inline
   def apply(bindingContext: js.Any, overrideContext: OverrideContext): Scope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingContext")(bindingContext)
-    __obj.updateDynamic("overrideContext")(overrideContext)
+    val __obj = js.Dynamic.literal(bindingContext = bindingContext, overrideContext = overrideContext)
+  
     __obj.asInstanceOf[Scope]
   }
 }

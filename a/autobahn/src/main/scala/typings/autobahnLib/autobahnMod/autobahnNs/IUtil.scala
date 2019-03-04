@@ -12,8 +12,8 @@ trait IUtil extends js.Object {
 object IUtil {
   @scala.inline
   def apply(assert: js.Function2[scala.Boolean, java.lang.String, scala.Unit]): IUtil = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assert")(assert)
+    val __obj = js.Dynamic.literal(assert = assert)
+  
     __obj.asInstanceOf[IUtil]
   }
 }

@@ -12,8 +12,8 @@ trait MotionOption extends js.Object {
 object MotionOption {
   @scala.inline
   def apply(pin: scala.Double | java.lang.String): MotionOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MotionOption]
   }
 }

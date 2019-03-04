@@ -26,14 +26,8 @@ object AdBuilderSpace {
     imageAdBuilder: js.Function0[ImageAdBuilder[ImageAd]],
     responsiveDisplayAdBuilder: js.Function0[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
   ): AdBuilderSpace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expandedTextAdBuilder")(expandedTextAdBuilder)
-    __obj.updateDynamic("gmailImageAdBuilder")(gmailImageAdBuilder)
-    __obj.updateDynamic("gmailMultiProductAdBuilder")(gmailMultiProductAdBuilder)
-    __obj.updateDynamic("gmailSinglePromotionAdBuilder")(gmailSinglePromotionAdBuilder)
-    __obj.updateDynamic("html5AdBuilder")(html5AdBuilder)
-    __obj.updateDynamic("imageAdBuilder")(imageAdBuilder)
-    __obj.updateDynamic("responsiveDisplayAdBuilder")(responsiveDisplayAdBuilder)
+    val __obj = js.Dynamic.literal(expandedTextAdBuilder = expandedTextAdBuilder, gmailImageAdBuilder = gmailImageAdBuilder, gmailMultiProductAdBuilder = gmailMultiProductAdBuilder, gmailSinglePromotionAdBuilder = gmailSinglePromotionAdBuilder, html5AdBuilder = html5AdBuilder, imageAdBuilder = imageAdBuilder, responsiveDisplayAdBuilder = responsiveDisplayAdBuilder)
+  
     __obj.asInstanceOf[AdBuilderSpace]
   }
 }

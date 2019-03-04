@@ -58,30 +58,8 @@ object Torrent {
     tracker_host: java.lang.String,
     upload_payload_rate: scala.Double
   ): Torrent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distributed_copies")(distributed_copies)
-    __obj.updateDynamic("download_payload_rate")(download_payload_rate)
-    __obj.updateDynamic("eta")(eta)
-    __obj.updateDynamic("is_auto_managed")(is_auto_managed)
-    __obj.updateDynamic("max_download_speed")(max_download_speed)
-    __obj.updateDynamic("max_upload_speed")(max_upload_speed)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("num_peers")(num_peers)
-    __obj.updateDynamic("num_seeds")(num_seeds)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("ratio")(ratio)
-    __obj.updateDynamic("save_path")(save_path)
-    __obj.updateDynamic("seeds_peers_ratio")(seeds_peers_ratio)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("time_added")(time_added)
-    __obj.updateDynamic("total_done")(total_done)
-    __obj.updateDynamic("total_peers")(total_peers)
-    __obj.updateDynamic("total_seeds")(total_seeds)
-    __obj.updateDynamic("total_uploaded")(total_uploaded)
-    __obj.updateDynamic("total_wanted")(total_wanted)
-    __obj.updateDynamic("tracker_host")(tracker_host)
-    __obj.updateDynamic("upload_payload_rate")(upload_payload_rate)
+    val __obj = js.Dynamic.literal(distributed_copies = distributed_copies, download_payload_rate = download_payload_rate, eta = eta, is_auto_managed = is_auto_managed, max_download_speed = max_download_speed, max_upload_speed = max_upload_speed, name = name, num_peers = num_peers, num_seeds = num_seeds, progress = progress, queue = queue, ratio = ratio, save_path = save_path, seeds_peers_ratio = seeds_peers_ratio, state = state, time_added = time_added, total_done = total_done, total_peers = total_peers, total_seeds = total_seeds, total_uploaded = total_uploaded, total_wanted = total_wanted, tracker_host = tracker_host, upload_payload_rate = upload_payload_rate)
+  
     __obj.asInstanceOf[Torrent]
   }
 }

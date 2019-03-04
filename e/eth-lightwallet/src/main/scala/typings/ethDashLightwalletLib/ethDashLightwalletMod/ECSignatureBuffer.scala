@@ -14,10 +14,8 @@ trait ECSignatureBuffer extends js.Object {
 object ECSignatureBuffer {
   @scala.inline
   def apply(r: nodeLib.Buffer, s: nodeLib.Buffer, v: scala.Double): ECSignatureBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(r = r, s = s, v = v)
+  
     __obj.asInstanceOf[ECSignatureBuffer]
   }
 }

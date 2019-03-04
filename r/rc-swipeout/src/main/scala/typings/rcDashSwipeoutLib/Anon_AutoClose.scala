@@ -26,14 +26,8 @@ object Anon_AutoClose {
     prefixCls: java.lang.String,
     right: js.Array[scala.Nothing]
   ): Anon_AutoClose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoClose")(autoClose)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("onOpen")(onOpen)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(autoClose = autoClose, disabled = disabled, left = left, onClose = onClose, onOpen = onOpen, prefixCls = prefixCls, right = right)
+  
     __obj.asInstanceOf[Anon_AutoClose]
   }
 }

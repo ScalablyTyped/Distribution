@@ -35,17 +35,8 @@ object FastifyRequest {
     raw: HttpRequest,
     req: HttpRequest
   ): FastifyRequest[HttpRequest, Query, Params, Headers, Body] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    __obj.updateDynamic("req")(req.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname, id = id, ip = ip, log = log, params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FastifyRequest[HttpRequest, Query, Params, Headers, Body]]
   }
 }

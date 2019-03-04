@@ -39,10 +39,8 @@ object ContentResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1RedactContentResponse]
     ]
   ): ContentResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deidentify")(deidentify)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("redact")(redact)
+    val __obj = js.Dynamic.literal(deidentify = deidentify, inspect = inspect, redact = redact)
+  
     __obj.asInstanceOf[ContentResource]
   }
 }

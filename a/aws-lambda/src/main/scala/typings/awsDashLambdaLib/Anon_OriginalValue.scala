@@ -18,9 +18,8 @@ object Anon_OriginalValue {
     originalValue: java.lang.String,
     resolutions: js.Array[awsDashLambdaLib.awsDashLambdaMod.LexSlotResolution]
   ): Anon_OriginalValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("originalValue")(originalValue)
-    __obj.updateDynamic("resolutions")(resolutions)
+    val __obj = js.Dynamic.literal(originalValue = originalValue, resolutions = resolutions)
+  
     __obj.asInstanceOf[Anon_OriginalValue]
   }
 }

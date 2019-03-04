@@ -26,10 +26,8 @@ object ConditionalExpression {
     test: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ConditionalExpression
   ): ConditionalExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("alternate")(alternate)
-    __obj.updateDynamic("consequent")(consequent)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(alternate = alternate, consequent = consequent, test = test)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ConditionalExpression]
   }
 }

@@ -34,13 +34,8 @@ object ArrayMatcher {
     or: js.Function1[Matcher, Matcher],
     startsWith: js.Function1[js.Array[_], Matcher]
   ): ArrayMatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("deepEquals")(deepEquals)
-    __obj.updateDynamic("endsWith")(endsWith)
-    __obj.updateDynamic("or")(or)
-    __obj.updateDynamic("startsWith")(startsWith)
+    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, endsWith = endsWith, or = or, startsWith = startsWith)
+  
     __obj.asInstanceOf[ArrayMatcher]
   }
 }

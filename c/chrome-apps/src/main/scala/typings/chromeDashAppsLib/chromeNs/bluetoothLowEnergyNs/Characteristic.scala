@@ -27,9 +27,7 @@ object Characteristic {
     service: Service = null,
     value: stdLib.ArrayBuffer = null
   ): Characteristic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(properties = properties, uuid = uuid)
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
     if (service != null) __obj.updateDynamic("service")(service)
     if (value != null) __obj.updateDynamic("value")(value)

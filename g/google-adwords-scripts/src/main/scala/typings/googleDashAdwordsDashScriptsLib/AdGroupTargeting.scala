@@ -20,12 +20,8 @@ object AdGroupTargeting {
     newUserListBuilder: js.Function0[SearchAdGroupAudienceBuilder[SearchAdGroupAudience]],
     setTargetingSetting: js.Function2[CriterionTypeGroup, TargetingSetting, scala.Unit]
   ): AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audiences")(audiences)
-    __obj.updateDynamic("exculdedAudiences")(exculdedAudiences)
-    __obj.updateDynamic("getTargetingSetting")(getTargetingSetting)
-    __obj.updateDynamic("newUserListBuilder")(newUserListBuilder)
-    __obj.updateDynamic("setTargetingSetting")(setTargetingSetting)
+    val __obj = js.Dynamic.literal(audiences = audiences, exculdedAudiences = exculdedAudiences, getTargetingSetting = getTargetingSetting, newUserListBuilder = newUserListBuilder, setTargetingSetting = setTargetingSetting)
+  
     __obj.asInstanceOf[AdGroupTargeting[SearchAdGroupAudience, SearchAdGroupExcludedAudience]]
   }
 }

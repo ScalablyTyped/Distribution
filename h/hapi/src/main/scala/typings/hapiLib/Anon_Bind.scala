@@ -13,9 +13,8 @@ trait Anon_Bind extends js.Object {
 object Anon_Bind {
   @scala.inline
   def apply(bind: js.Object, files: Anon_RelativeTo): Anon_Bind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(bind = bind, files = files)
+  
     __obj.asInstanceOf[Anon_Bind]
   }
 }

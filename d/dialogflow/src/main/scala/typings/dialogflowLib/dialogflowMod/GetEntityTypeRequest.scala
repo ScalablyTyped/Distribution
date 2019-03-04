@@ -13,8 +13,7 @@ trait GetEntityTypeRequest extends js.Object {
 object GetEntityTypeRequest {
   @scala.inline
   def apply(name: java.lang.String, languageCode: java.lang.String = null): GetEntityTypeRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
     __obj.asInstanceOf[GetEntityTypeRequest]
   }

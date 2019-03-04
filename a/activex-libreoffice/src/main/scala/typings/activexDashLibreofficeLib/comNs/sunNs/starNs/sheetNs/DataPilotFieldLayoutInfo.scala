@@ -19,9 +19,8 @@ trait DataPilotFieldLayoutInfo extends js.Object {
 object DataPilotFieldLayoutInfo {
   @scala.inline
   def apply(AddEmptyLines: scala.Boolean, LayoutMode: scala.Double): DataPilotFieldLayoutInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddEmptyLines")(AddEmptyLines)
-    __obj.updateDynamic("LayoutMode")(LayoutMode)
+    val __obj = js.Dynamic.literal(AddEmptyLines = AddEmptyLines, LayoutMode = LayoutMode)
+  
     __obj.asInstanceOf[DataPilotFieldLayoutInfo]
   }
 }

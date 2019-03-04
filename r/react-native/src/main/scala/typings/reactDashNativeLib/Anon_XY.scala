@@ -16,9 +16,8 @@ object Anon_XY {
     x: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue,
     y: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue
   ): Anon_XY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_XY]
   }
 }

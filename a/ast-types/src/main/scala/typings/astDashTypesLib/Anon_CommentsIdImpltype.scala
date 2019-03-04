@@ -24,10 +24,7 @@ object Anon_CommentsIdImpltype {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
   ): Anon_CommentsIdImpltype = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("impltype")(impltype)
-    __obj.updateDynamic("supertype")(supertype)
+    val __obj = js.Dynamic.literal(id = id, impltype = impltype, supertype = supertype)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)

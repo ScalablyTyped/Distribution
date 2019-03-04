@@ -13,9 +13,8 @@ trait HighligherProps extends js.Object {
 object HighligherProps {
   @scala.inline
   def apply(children: reactLib.reactMod.ReactNs.ReactNode, search: java.lang.String): HighligherProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], search = search)
+  
     __obj.asInstanceOf[HighligherProps]
   }
 }

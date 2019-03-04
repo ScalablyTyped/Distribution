@@ -15,8 +15,7 @@ trait BadgeBackgroundColorDetails extends js.Object {
 object BadgeBackgroundColorDetails {
   @scala.inline
   def apply(color: java.lang.String | ColorArray, tabId: scala.Int | scala.Double = null): BadgeBackgroundColorDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeBackgroundColorDetails]
   }

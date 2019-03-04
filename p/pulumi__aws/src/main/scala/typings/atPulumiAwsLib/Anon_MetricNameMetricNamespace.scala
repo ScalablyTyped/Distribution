@@ -24,12 +24,7 @@ object Anon_MetricNameMetricNamespace {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     metricTimestamp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_MetricNameMetricNamespace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    __obj.updateDynamic("metricNamespace")(metricNamespace.asInstanceOf[js.Any])
-    __obj.updateDynamic("metricUnit")(metricUnit.asInstanceOf[js.Any])
-    __obj.updateDynamic("metricValue")(metricValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], metricNamespace = metricNamespace.asInstanceOf[js.Any], metricUnit = metricUnit.asInstanceOf[js.Any], metricValue = metricValue.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (metricTimestamp != null) __obj.updateDynamic("metricTimestamp")(metricTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MetricNameMetricNamespace]
   }

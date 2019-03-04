@@ -18,10 +18,8 @@ object Anon_App {
     maxMessageSize: scala.Double,
     sctpmapNumber: scala.Double | java.lang.String
   ): Anon_App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("maxMessageSize")(maxMessageSize)
-    __obj.updateDynamic("sctpmapNumber")(sctpmapNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(app = app, maxMessageSize = maxMessageSize, sctpmapNumber = sctpmapNumber.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_App]
   }
 }

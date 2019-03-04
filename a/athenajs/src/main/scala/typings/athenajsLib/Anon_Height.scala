@@ -24,11 +24,7 @@ object Anon_Height {
     hitBox: Anon_X = null,
     plane: scala.Int | scala.Double = null
   ): Anon_Height = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, offsetX = offsetX, offsetY = offsetY, width = width)
     if (hitBox != null) __obj.updateDynamic("hitBox")(hitBox)
     if (plane != null) __obj.updateDynamic("plane")(plane.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Height]

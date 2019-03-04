@@ -14,10 +14,8 @@ trait Anon_Process extends js.Object {
 object Anon_Process {
   @scala.inline
   def apply(State: js.Any, process: js.Any, ruler: Anon_After): Anon_Process = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("process")(process)
-    __obj.updateDynamic("ruler")(ruler)
+    val __obj = js.Dynamic.literal(State = State, process = process, ruler = ruler)
+  
     __obj.asInstanceOf[Anon_Process]
   }
 }

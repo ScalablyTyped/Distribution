@@ -62,21 +62,8 @@ object PrintSettings {
     PrintRightPages: scala.Boolean,
     PrintTables: scala.Boolean
   ): PrintSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrintAnnotationMode")(PrintAnnotationMode)
-    __obj.updateDynamic("PrintBlackFonts")(PrintBlackFonts)
-    __obj.updateDynamic("PrintControls")(PrintControls)
-    __obj.updateDynamic("PrintDrawings")(PrintDrawings)
-    __obj.updateDynamic("PrintEmptyPages")(PrintEmptyPages)
-    __obj.updateDynamic("PrintFaxName")(PrintFaxName)
-    __obj.updateDynamic("PrintGraphics")(PrintGraphics)
-    __obj.updateDynamic("PrintLeftPages")(PrintLeftPages)
-    __obj.updateDynamic("PrintPageBackground")(PrintPageBackground)
-    __obj.updateDynamic("PrintPaperFromSetup")(PrintPaperFromSetup)
-    __obj.updateDynamic("PrintProspect")(PrintProspect)
-    __obj.updateDynamic("PrintReversed")(PrintReversed)
-    __obj.updateDynamic("PrintRightPages")(PrintRightPages)
-    __obj.updateDynamic("PrintTables")(PrintTables)
+    val __obj = js.Dynamic.literal(PrintAnnotationMode = PrintAnnotationMode, PrintBlackFonts = PrintBlackFonts, PrintControls = PrintControls, PrintDrawings = PrintDrawings, PrintEmptyPages = PrintEmptyPages, PrintFaxName = PrintFaxName, PrintGraphics = PrintGraphics, PrintLeftPages = PrintLeftPages, PrintPageBackground = PrintPageBackground, PrintPaperFromSetup = PrintPaperFromSetup, PrintProspect = PrintProspect, PrintReversed = PrintReversed, PrintRightPages = PrintRightPages, PrintTables = PrintTables)
+  
     __obj.asInstanceOf[PrintSettings]
   }
 }

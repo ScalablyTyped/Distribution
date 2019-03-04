@@ -53,9 +53,7 @@ object FormControlLabelProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: java.lang.String = null
   ): FormControlLabelProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(control = control, label = label.asInstanceOf[js.Any])
     if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)

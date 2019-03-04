@@ -18,10 +18,8 @@ object Anon_LOCAL {
     NONE: firebaseLib.firebaseMod.firebaseNs.authNs.AuthNs.Persistence,
     SESSION: firebaseLib.firebaseMod.firebaseNs.authNs.AuthNs.Persistence
   ): Anon_LOCAL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOCAL")(LOCAL)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("SESSION")(SESSION)
+    val __obj = js.Dynamic.literal(LOCAL = LOCAL, NONE = NONE, SESSION = SESSION)
+  
     __obj.asInstanceOf[Anon_LOCAL]
   }
 }

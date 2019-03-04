@@ -59,21 +59,8 @@ object TaskAgentPool {
     serviceAccountsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
     size: scala.Double
   ): TaskAgentPool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("administratorsGroup")(administratorsGroup)
-    __obj.updateDynamic("autoProvision")(autoProvision)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("groupScopeId")(groupScopeId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isHosted")(isHosted)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("poolType")(poolType)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("provisioned")(provisioned)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("serviceAccountsGroup")(serviceAccountsGroup)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(administratorsGroup = administratorsGroup, autoProvision = autoProvision, createdBy = createdBy, createdOn = createdOn, groupScopeId = groupScopeId, id = id, isHosted = isHosted, name = name, poolType = poolType, properties = properties, provisioned = provisioned, scope = scope, serviceAccountsGroup = serviceAccountsGroup, size = size)
+  
     __obj.asInstanceOf[TaskAgentPool]
   }
 }

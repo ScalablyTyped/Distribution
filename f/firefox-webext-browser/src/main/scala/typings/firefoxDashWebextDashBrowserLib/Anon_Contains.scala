@@ -77,11 +77,7 @@ object Anon_Contains {
       ]
     ] = null
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(contains = contains, getAll = getAll, remove = remove, request = request)
     if (onAdded != null) __obj.updateDynamic("onAdded")(onAdded)
     if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved)
     __obj.asInstanceOf[Anon_Contains]

@@ -19,10 +19,8 @@ object DecryptedMessage {
     filename: java.lang.String,
     signatures: js.Array[Signature]
   ): DecryptedMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("signatures")(signatures)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filename = filename, signatures = signatures)
+  
     __obj.asInstanceOf[DecryptedMessage]
   }
 }

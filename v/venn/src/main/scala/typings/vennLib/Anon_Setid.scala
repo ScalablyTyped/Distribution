@@ -12,8 +12,8 @@ trait Anon_Setid extends js.Object {
 object Anon_Setid {
   @scala.inline
   def apply(setid: java.lang.String): Anon_Setid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setid")(setid)
+    val __obj = js.Dynamic.literal(setid = setid)
+  
     __obj.asInstanceOf[Anon_Setid]
   }
 }

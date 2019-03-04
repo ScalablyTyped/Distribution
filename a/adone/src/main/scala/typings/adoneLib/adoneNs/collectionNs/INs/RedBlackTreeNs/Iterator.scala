@@ -73,17 +73,7 @@ object Iterator {
     node: Node[K, V] = null,
     value: V = null
   ): Iterator[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("hasPrev")(hasPrev)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("tree")(tree)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(clone = clone, hasNext = hasNext, hasPrev = hasPrev, index = index, next = next, prev = prev, remove = remove, tree = tree, update = update, valid = valid)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

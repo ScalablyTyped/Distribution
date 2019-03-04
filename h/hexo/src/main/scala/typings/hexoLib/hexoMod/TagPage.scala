@@ -24,8 +24,7 @@ object TagPage {
     prev_link: java.lang.String = null,
     total: scala.Int | scala.Double = null
   ): TagPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(tag = tag)
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (current_url != null) __obj.updateDynamic("current_url")(current_url)
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])

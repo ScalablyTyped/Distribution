@@ -21,10 +21,7 @@ object SparklinePaneRenderEvent {
     name: java.lang.String = null,
     pane: kendoDashUiLib.kendoNs.datavizNs.ChartPane = null
   ): SparklinePaneRenderEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (pane != null) __obj.updateDynamic("pane")(pane)

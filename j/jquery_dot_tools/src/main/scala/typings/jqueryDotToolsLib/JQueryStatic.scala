@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(tools: jqueryDotToolsLib.JQueryToolsNs.ToolsStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tools")(tools)
+    val __obj = js.Dynamic.literal(tools = tools)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

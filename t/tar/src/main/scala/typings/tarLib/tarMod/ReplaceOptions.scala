@@ -102,8 +102,7 @@ object ReplaceOptions {
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     sync: js.UndefOr[scala.Boolean] = js.undefined
   ): ReplaceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(file = file)
     if (C != null) __obj.updateDynamic("C")(C)
     if (!js.isUndefined(L)) __obj.updateDynamic("L")(L)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)

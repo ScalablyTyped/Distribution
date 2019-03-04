@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 abstract class DriverProvider protected () extends js.Object {
   def this(config: protractorLib.builtConfigMod.Config) = this()
   var bpRunner: js.Any = js.native
-  var `config_`: protractorLib.builtConfigMod.Config = js.native
-  var `drivers_`: js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver] = js.native
+  var config_ : protractorLib.builtConfigMod.Config = js.native
+  var drivers_ : js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver] = js.native
   def getBPUrl(): java.lang.String = js.native
   /**
     * Get all existing drivers.

@@ -43,22 +43,8 @@ object Collection {
     Sort: js.Function1[js.Function2[/* a */ I, /* b */ I, scala.Double], Collection[I]],
     items: js.Array[I]
   ): Collection[I] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Every")(Every)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("ForEach")(ForEach)
-    __obj.updateDynamic("GetIterator")(GetIterator)
-    __obj.updateDynamic("IsEmpty")(IsEmpty)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Pop")(Pop)
-    __obj.updateDynamic("RemoveAt")(RemoveAt)
-    __obj.updateDynamic("Some")(Some)
-    __obj.updateDynamic("Sort")(Sort)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(Add = Add, Clear = Clear, Count = Count, Every = Every, Filter = Filter, ForEach = ForEach, GetIterator = GetIterator, IsEmpty = IsEmpty, Item = Item, Map = Map, Pop = Pop, RemoveAt = RemoveAt, Some = Some, Sort = Sort, items = items)
+  
     __obj.asInstanceOf[Collection[I]]
   }
 }

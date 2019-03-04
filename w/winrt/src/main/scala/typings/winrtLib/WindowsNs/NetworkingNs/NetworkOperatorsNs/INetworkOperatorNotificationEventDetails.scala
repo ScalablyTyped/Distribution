@@ -24,13 +24,8 @@ object INetworkOperatorNotificationEventDetails {
     ruleId: java.lang.String,
     smsMessage: winrtLib.WindowsNs.DevicesNs.SmsNs.ISmsMessage
   ): INetworkOperatorNotificationEventDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encodingType")(encodingType)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("networkAccountId")(networkAccountId)
-    __obj.updateDynamic("notificationType")(notificationType)
-    __obj.updateDynamic("ruleId")(ruleId)
-    __obj.updateDynamic("smsMessage")(smsMessage)
+    val __obj = js.Dynamic.literal(encodingType = encodingType, message = message, networkAccountId = networkAccountId, notificationType = notificationType, ruleId = ruleId, smsMessage = smsMessage)
+  
     __obj.asInstanceOf[INetworkOperatorNotificationEventDetails]
   }
 }

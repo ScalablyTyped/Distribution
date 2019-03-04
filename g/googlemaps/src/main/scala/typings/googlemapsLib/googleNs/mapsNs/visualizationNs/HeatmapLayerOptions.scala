@@ -26,8 +26,7 @@ object HeatmapLayerOptions {
     opacity: scala.Int | scala.Double = null,
     radius: scala.Int | scala.Double = null
   ): HeatmapLayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(dissipating)) __obj.updateDynamic("dissipating")(dissipating)
     if (gradient != null) __obj.updateDynamic("gradient")(gradient)
     if (map != null) __obj.updateDynamic("map")(map)

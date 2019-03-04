@@ -33,16 +33,8 @@ object XIdentifierAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIdentifierAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Identifiers")(Identifiers)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIdentifier")(getByIdentifier)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getIdentifiers")(getIdentifiers)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIdentifierAccess]
   }
 }

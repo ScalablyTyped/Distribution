@@ -16,9 +16,8 @@ object Anon_BottomBar {
     BottomBar: inquirerLib.inquirerMod.inquirerNs.uiNs.BottomBar,
     Prompt: inquirerLib.inquirerMod.inquirerNs.uiNs.Prompt
   ): Anon_BottomBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomBar")(BottomBar)
-    __obj.updateDynamic("Prompt")(Prompt)
+    val __obj = js.Dynamic.literal(BottomBar = BottomBar, Prompt = Prompt)
+  
     __obj.asInstanceOf[Anon_BottomBar]
   }
 }

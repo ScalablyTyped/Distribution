@@ -45,21 +45,8 @@ object StructureRampart {
     structureType: STRUCTURE_RAMPART,
     ticksToDecay: scala.Double
   ): StructureRampart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isPublic")(isPublic)
-    __obj.updateDynamic("my")(my)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("setPublic")(setPublic)
-    __obj.updateDynamic("structureType")(structureType)
-    __obj.updateDynamic("ticksToDecay")(ticksToDecay)
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, isPublic = isPublic, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, setPublic = setPublic, structureType = structureType, ticksToDecay = ticksToDecay)
+  
     __obj.asInstanceOf[StructureRampart]
   }
 }

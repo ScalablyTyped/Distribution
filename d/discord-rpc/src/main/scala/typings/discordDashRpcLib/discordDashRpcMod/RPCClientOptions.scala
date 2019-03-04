@@ -14,8 +14,8 @@ object RPCClientOptions {
   def apply(
     transport: discordDashRpcLib.discordDashRpcLibStrings.ipc | discordDashRpcLib.discordDashRpcLibStrings.websocket
   ): RPCClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(transport = transport.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RPCClientOptions]
   }
 }

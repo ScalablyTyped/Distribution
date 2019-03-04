@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 	 */
 @js.native
 trait ModalDialog extends Component {
-  var `closeable_`: scala.Boolean = js.native
+  var closeable_ : scala.Boolean = js.native
   @JSName("options_")
   var options__ModalDialog: ModalDialogOptions = js.native
   /**

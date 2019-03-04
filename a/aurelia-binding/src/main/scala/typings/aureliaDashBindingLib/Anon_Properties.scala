@@ -16,9 +16,8 @@ object Anon_Properties {
     properties: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
     tagName: java.lang.String
   ): Anon_Properties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(properties = properties, tagName = tagName)
+  
     __obj.asInstanceOf[Anon_Properties]
   }
 }

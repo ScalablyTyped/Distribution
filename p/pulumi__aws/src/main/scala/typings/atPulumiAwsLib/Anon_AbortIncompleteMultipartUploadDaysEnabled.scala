@@ -34,8 +34,7 @@ object Anon_AbortIncompleteMultipartUploadDaysEnabled {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     transitions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_DateDaysStorageClass]]] = null
   ): Anon_AbortIncompleteMultipartUploadDaysEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     if (abortIncompleteMultipartUploadDays != null) __obj.updateDynamic("abortIncompleteMultipartUploadDays")(abortIncompleteMultipartUploadDays.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

@@ -28,9 +28,8 @@ object Intersection {
     index: scala.Int | scala.Double = null,
     uv: Vector2 = null
   ): Intersection = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(distance = distance, point = point)
+    __obj.updateDynamic("object")(`object`)
     if (distanceToRay != null) __obj.updateDynamic("distanceToRay")(distanceToRay.asInstanceOf[js.Any])
     if (face != null) __obj.updateDynamic("face")(face)
     if (faceIndex != null) __obj.updateDynamic("faceIndex")(faceIndex.asInstanceOf[js.Any])

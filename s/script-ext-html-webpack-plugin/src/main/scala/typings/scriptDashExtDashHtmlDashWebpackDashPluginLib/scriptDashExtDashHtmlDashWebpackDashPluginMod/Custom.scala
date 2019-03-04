@@ -18,9 +18,7 @@ object Custom {
     test: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern,
     value: java.lang.String = null
   ): Custom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attribute = attribute, test = test.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Custom]
   }

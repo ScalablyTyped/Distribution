@@ -26,13 +26,8 @@ object Anon_ColumnFilenameInherits {
     segments: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node],
     `val`: java.lang.String
   ): Anon_ColumnFilenameInherits = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("inherits")(inherits)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, inherits = inherits, lineno = lineno, segments = segments)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_ColumnFilenameInherits]
   }
 }

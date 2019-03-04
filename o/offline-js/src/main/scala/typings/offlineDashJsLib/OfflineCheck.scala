@@ -12,8 +12,8 @@ trait OfflineCheck extends js.Object {
 object OfflineCheck {
   @scala.inline
   def apply(url: java.lang.String): OfflineCheck = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[OfflineCheck]
   }
 }

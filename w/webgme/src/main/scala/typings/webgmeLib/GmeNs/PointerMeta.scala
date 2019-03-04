@@ -17,9 +17,8 @@ trait PointerMeta extends js.Object {
 object PointerMeta {
   @scala.inline
   def apply(items: js.Array[webgmeLib.Anon_Id], max: scala.Double): PointerMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(items = items, max = max)
+  
     __obj.asInstanceOf[PointerMeta]
   }
 }

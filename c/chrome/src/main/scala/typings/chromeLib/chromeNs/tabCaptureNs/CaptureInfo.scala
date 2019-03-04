@@ -20,10 +20,8 @@ trait CaptureInfo extends js.Object {
 object CaptureInfo {
   @scala.inline
   def apply(fullscreen: scala.Boolean, status: java.lang.String, tabId: scala.Double): CaptureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullscreen")(fullscreen)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(fullscreen = fullscreen, status = status, tabId = tabId)
+  
     __obj.asInstanceOf[CaptureInfo]
   }
 }

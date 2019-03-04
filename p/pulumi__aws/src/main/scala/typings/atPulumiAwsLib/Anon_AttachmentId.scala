@@ -20,11 +20,8 @@ object Anon_AttachmentId {
     instanceId: java.lang.String,
     instanceOwnerId: java.lang.String
   ): Anon_AttachmentId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentId")(attachmentId)
-    __obj.updateDynamic("deviceIndex")(deviceIndex)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("instanceOwnerId")(instanceOwnerId)
+    val __obj = js.Dynamic.literal(attachmentId = attachmentId, deviceIndex = deviceIndex, instanceId = instanceId, instanceOwnerId = instanceOwnerId)
+  
     __obj.asInstanceOf[Anon_AttachmentId]
   }
 }

@@ -13,9 +13,8 @@ trait KeyPair extends js.Object {
 object KeyPair {
   @scala.inline
   def apply(privateKey: nodeLib.Buffer, publicKey: nodeLib.Buffer): KeyPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("privateKey")(privateKey)
-    __obj.updateDynamic("publicKey")(publicKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey, publicKey = publicKey)
+  
     __obj.asInstanceOf[KeyPair]
   }
 }

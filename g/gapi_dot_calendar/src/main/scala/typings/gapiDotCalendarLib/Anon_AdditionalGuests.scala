@@ -24,8 +24,7 @@ object Anon_AdditionalGuests {
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     responseStatus: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AttendeeResponseStatus = null
   ): Anon_AdditionalGuests = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(email = email)
     if (!js.isUndefined(additionalGuests)) __obj.updateDynamic("additionalGuests")(additionalGuests)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)

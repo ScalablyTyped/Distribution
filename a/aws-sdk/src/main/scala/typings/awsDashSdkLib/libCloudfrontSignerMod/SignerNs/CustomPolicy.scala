@@ -18,8 +18,10 @@ object CustomPolicy {
     `CloudFront-Policy`: java.lang.String,
     `CloudFront-Signature`: java.lang.String
   ): CustomPolicy = {
-    val __obj = js.Dynamic.literal(`CloudFront-Key-Pair-Id` = `CloudFront-Key-Pair-Id`, `CloudFront-Policy` = `CloudFront-Policy`, `CloudFront-Signature` = `CloudFront-Signature`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CloudFront-Key-Pair-Id")(`CloudFront-Key-Pair-Id`)
+    __obj.updateDynamic("CloudFront-Policy")(`CloudFront-Policy`)
+    __obj.updateDynamic("CloudFront-Signature")(`CloudFront-Signature`)
     __obj.asInstanceOf[CustomPolicy]
   }
 }

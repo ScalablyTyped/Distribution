@@ -22,8 +22,7 @@ object SectionBase {
     keyExtractor: js.Function2[/* item */ ItemT, /* index */ scala.Double, java.lang.String] = null,
     renderItem: SectionListRenderItem[ItemT] = null
   ): SectionBase[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(keyExtractor)

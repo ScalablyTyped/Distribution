@@ -24,11 +24,8 @@ object UploadFileItem {
     filetype: java.lang.String,
     name: java.lang.String
   ): UploadFileItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("filepath")(filepath)
-    __obj.updateDynamic("filetype")(filetype)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(filename = filename, filepath = filepath, filetype = filetype, name = name)
+  
     __obj.asInstanceOf[UploadFileItem]
   }
 }

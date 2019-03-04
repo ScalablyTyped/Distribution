@@ -13,9 +13,8 @@ trait Encoder extends js.Object {
 object Encoder {
   @scala.inline
   def apply(parse: js.Function1[java.lang.String, js.Any], stringify: js.Function1[js.Any, java.lang.String]): Encoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("stringify")(stringify)
+    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+  
     __obj.asInstanceOf[Encoder]
   }
 }

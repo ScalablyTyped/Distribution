@@ -24,13 +24,8 @@ object INamedACL {
     Name: java.lang.String,
     NamedACLType: mfilesLib.MFilesNs.MFNamedACLType
   ): INamedACL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("GUID")(GUID)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NamedACLType")(NamedACLType)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, GUID = GUID, ID = ID, Name = Name, NamedACLType = NamedACLType)
+  
     __obj.asInstanceOf[INamedACL]
   }
 }

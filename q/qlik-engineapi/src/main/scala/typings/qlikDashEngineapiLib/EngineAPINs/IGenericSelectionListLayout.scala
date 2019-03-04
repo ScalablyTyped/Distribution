@@ -24,14 +24,7 @@ object IGenericSelectionListLayout {
     qStateName: java.lang.String,
     qError: INxLayoutErrors = null
   ): IGenericSelectionListLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExtendsId")(qExtendsId)
-    __obj.updateDynamic("qHasSoftPatches")(qHasSoftPatches)
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qMeta")(qMeta)
-    __obj.updateDynamic("qSelectionInfo")(qSelectionInfo)
-    __obj.updateDynamic("qSelectionObject")(qSelectionObject)
-    __obj.updateDynamic("qStateName")(qStateName)
+    val __obj = js.Dynamic.literal(qExtendsId = qExtendsId, qHasSoftPatches = qHasSoftPatches, qInfo = qInfo, qMeta = qMeta, qSelectionInfo = qSelectionInfo, qSelectionObject = qSelectionObject, qStateName = qStateName)
     if (qError != null) __obj.updateDynamic("qError")(qError)
     __obj.asInstanceOf[IGenericSelectionListLayout]
   }

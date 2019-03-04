@@ -15,8 +15,8 @@ trait WebApiCreateTagRequestData extends js.Object {
 object WebApiCreateTagRequestData {
   @scala.inline
   def apply(name: java.lang.String): WebApiCreateTagRequestData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[WebApiCreateTagRequestData]
   }
 }

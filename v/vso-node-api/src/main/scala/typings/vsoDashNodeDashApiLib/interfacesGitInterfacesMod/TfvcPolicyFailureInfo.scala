@@ -13,9 +13,8 @@ trait TfvcPolicyFailureInfo extends js.Object {
 object TfvcPolicyFailureInfo {
   @scala.inline
   def apply(message: java.lang.String, policyName: java.lang.String): TfvcPolicyFailureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("policyName")(policyName)
+    val __obj = js.Dynamic.literal(message = message, policyName = policyName)
+  
     __obj.asInstanceOf[TfvcPolicyFailureInfo]
   }
 }

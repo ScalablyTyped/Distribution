@@ -38,8 +38,7 @@ object ArgsProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     `type`: IconType = null
   ): ArgsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (btn != null) __obj.updateDynamic("btn")(btn.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

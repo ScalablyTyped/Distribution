@@ -15,8 +15,8 @@ trait PutRequest extends js.Object {
 object PutRequest {
   @scala.inline
   def apply(Item: PutItemInputAttributeMap): PutRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Item")(Item)
+    val __obj = js.Dynamic.literal(Item = Item)
+  
     __obj.asInstanceOf[PutRequest]
   }
 }

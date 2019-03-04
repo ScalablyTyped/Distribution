@@ -13,9 +13,8 @@ trait editingState extends js.Object {
 object editingState {
   @scala.inline
   def apply(added: js.Array[stdLib.Date], deleted: js.Array[stdLib.Date]): editingState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("deleted")(deleted)
+    val __obj = js.Dynamic.literal(added = added, deleted = deleted)
+  
     __obj.asInstanceOf[editingState]
   }
 }

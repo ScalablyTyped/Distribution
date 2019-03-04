@@ -52,12 +52,8 @@ object XAggregation {
     release: js.Function0[scala.Unit],
     setDelegator: js.Function1[XInterface, scala.Unit]
   ): XAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryAggregation")(queryAggregation)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDelegator")(setDelegator)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryAggregation = queryAggregation, queryInterface = queryInterface, release = release, setDelegator = setDelegator)
+  
     __obj.asInstanceOf[XAggregation]
   }
 }

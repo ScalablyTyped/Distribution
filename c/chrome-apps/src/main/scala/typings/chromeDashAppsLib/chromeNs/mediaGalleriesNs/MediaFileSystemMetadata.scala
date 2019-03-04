@@ -30,12 +30,7 @@ object MediaFileSystemMetadata {
     name: java.lang.String,
     deviceId: java.lang.String = null
   ): MediaFileSystemMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("galleryId")(galleryId)
-    __obj.updateDynamic("isAvailable")(isAvailable)
-    __obj.updateDynamic("isMediaDevice")(isMediaDevice)
-    __obj.updateDynamic("isRemovable")(isRemovable)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(galleryId = galleryId, isAvailable = isAvailable, isMediaDevice = isMediaDevice, isRemovable = isRemovable, name = name)
     if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
     __obj.asInstanceOf[MediaFileSystemMetadata]
   }

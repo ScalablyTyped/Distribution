@@ -56,9 +56,7 @@ object ResolvableLiteral {
     deps: js.Array[_] = null,
     policy: ResolvePolicy = null
   ): ResolvableLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolveFn")(resolveFn)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(resolveFn = resolveFn, token = token)
     if (data != null) __obj.updateDynamic("data")(data)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (policy != null) __obj.updateDynamic("policy")(policy)

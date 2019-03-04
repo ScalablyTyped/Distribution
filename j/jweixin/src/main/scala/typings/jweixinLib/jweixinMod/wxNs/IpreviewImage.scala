@@ -20,9 +20,7 @@ object IpreviewImage {
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IpreviewImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(current = current, urls = urls)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

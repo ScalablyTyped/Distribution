@@ -35,13 +35,8 @@ object AnimationManager {
     isTicking: scala.Boolean,
     stopAnimation: js.Function0[scala.Unit]
   ): AnimationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("isAnimating")(isAnimating)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isInitial")(isInitial)
-    __obj.updateDynamic("isTicking")(isTicking)
-    __obj.updateDynamic("stopAnimation")(stopAnimation)
+    val __obj = js.Dynamic.literal(duration = duration, isAnimating = isAnimating, isEnabled = isEnabled, isInitial = isInitial, isTicking = isTicking, stopAnimation = stopAnimation)
+  
     __obj.asInstanceOf[AnimationManager]
   }
 }

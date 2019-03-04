@@ -24,9 +24,8 @@ object NumberLiteralTypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.NumberLiteralTypeAnnotation,
     value: scala.Double
   ): NumberLiteralTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(raw = raw, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NumberLiteralTypeAnnotation]
   }
 }

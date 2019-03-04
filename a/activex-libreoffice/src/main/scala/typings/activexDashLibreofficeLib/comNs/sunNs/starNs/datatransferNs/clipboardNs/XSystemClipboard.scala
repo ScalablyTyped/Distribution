@@ -39,23 +39,8 @@ object XSystemClipboard {
       scala.Unit
     ]
   ): XSystemClipboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Contents")(Contents)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("RenderingCapabilities")(RenderingCapabilities)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addClipboardListener")(addClipboardListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("flushClipboard")(flushClipboard)
-    __obj.updateDynamic("getContents")(getContents)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getRenderingCapabilities")(getRenderingCapabilities)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeClipboardListener")(removeClipboardListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setContents")(setContents)
+    val __obj = js.Dynamic.literal(Contents = Contents, Name = Name, RenderingCapabilities = RenderingCapabilities, acquire = acquire, addClipboardListener = addClipboardListener, addEventListener = addEventListener, dispose = dispose, flushClipboard = flushClipboard, getContents = getContents, getName = getName, getRenderingCapabilities = getRenderingCapabilities, queryInterface = queryInterface, release = release, removeClipboardListener = removeClipboardListener, removeEventListener = removeEventListener, setContents = setContents)
+  
     __obj.asInstanceOf[XSystemClipboard]
   }
 }

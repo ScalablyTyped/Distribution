@@ -26,14 +26,8 @@ object Result {
     port: scala.Double,
     results: js.Array[Results]
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("attempts")(attempts)
-    __obj.updateDynamic("avg")(avg)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(address = address, attempts = attempts, avg = avg, max = max, min = min, port = port, results = results)
+  
     __obj.asInstanceOf[Result]
   }
 }

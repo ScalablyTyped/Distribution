@@ -16,9 +16,8 @@ object IHotkeyAction {
     combo: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
     props: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps
   ): IHotkeyAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("combo")(combo)
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(combo = combo, props = props)
+  
     __obj.asInstanceOf[IHotkeyAction]
   }
 }

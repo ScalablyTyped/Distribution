@@ -100,13 +100,8 @@ object VariantsetsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantSetsResponse]
     ]
   ): VariantsetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, export = export, get = get, patch = patch, search = search)
+  
     __obj.asInstanceOf[VariantsetsResource]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_AllQueued extends js.Object {
 object Anon_AllQueued {
   @scala.inline
   def apply(all: scala.Double, queued: scala.Double, running: scala.Double): Anon_AllQueued = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("running")(running)
+    val __obj = js.Dynamic.literal(all = all, queued = queued, running = running)
+  
     __obj.asInstanceOf[Anon_AllQueued]
   }
 }

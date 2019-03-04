@@ -30,16 +30,8 @@ object Comment {
     setContent: js.Function1[java.lang.String, Comment],
     setParent: js.Function1[Page, Comment]
   ): Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteComment")(deleteComment)
-    __obj.updateDynamic("getAuthorEmail")(getAuthorEmail)
-    __obj.updateDynamic("getAuthorName")(getAuthorName)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getDatePublished")(getDatePublished)
-    __obj.updateDynamic("getLastUpdated")(getLastUpdated)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setParent")(setParent)
+    val __obj = js.Dynamic.literal(deleteComment = deleteComment, getAuthorEmail = getAuthorEmail, getAuthorName = getAuthorName, getContent = getContent, getDatePublished = getDatePublished, getLastUpdated = getLastUpdated, getParent = getParent, setContent = setContent, setParent = setParent)
+  
     __obj.asInstanceOf[Comment]
   }
 }

@@ -13,8 +13,7 @@ trait Anon_NewValueOldValueInvisibles extends js.Object {
 object Anon_NewValueOldValueInvisibles {
   @scala.inline
   def apply(newValue: atomLib.atomMod.Invisibles, oldValue: atomLib.atomMod.Invisibles = null): Anon_NewValueOldValueInvisibles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(newValue = newValue)
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
     __obj.asInstanceOf[Anon_NewValueOldValueInvisibles]
   }

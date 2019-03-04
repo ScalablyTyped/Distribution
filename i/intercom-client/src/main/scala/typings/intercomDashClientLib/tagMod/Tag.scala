@@ -19,9 +19,8 @@ object Tag {
     name: java.lang.String,
     `type`: intercomDashClientLib.intercomDashClientLibStrings.tag
   ): Tag = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Tag]
   }
 }

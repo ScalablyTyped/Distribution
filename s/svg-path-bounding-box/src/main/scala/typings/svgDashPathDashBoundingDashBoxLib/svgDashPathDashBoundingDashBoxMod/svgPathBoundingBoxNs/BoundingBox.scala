@@ -73,18 +73,8 @@ object BoundingBox {
     y1: scala.Double,
     y2: scala.Double
   ): BoundingBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addBezierCurve")(addBezierCurve)
-    __obj.updateDynamic("addPoint")(addPoint)
-    __obj.updateDynamic("addQuadraticCurve")(addQuadraticCurve)
-    __obj.updateDynamic("addX")(addX)
-    __obj.updateDynamic("addY")(addY)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x1")(x1)
-    __obj.updateDynamic("x2")(x2)
-    __obj.updateDynamic("y1")(y1)
-    __obj.updateDynamic("y2")(y2)
+    val __obj = js.Dynamic.literal(addBezierCurve = addBezierCurve, addPoint = addPoint, addQuadraticCurve = addQuadraticCurve, addX = addX, addY = addY, height = height, width = width, x1 = x1, x2 = x2, y1 = y1, y2 = y2)
+  
     __obj.asInstanceOf[BoundingBox]
   }
 }

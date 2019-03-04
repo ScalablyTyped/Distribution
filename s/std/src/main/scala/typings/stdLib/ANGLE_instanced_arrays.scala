@@ -20,11 +20,8 @@ object ANGLE_instanced_arrays {
     drawElementsInstancedANGLE: js.Function5[GLenum, GLsizei, GLenum, GLintptr, GLsizei, scala.Unit],
     vertexAttribDivisorANGLE: js.Function2[GLuint, GLuint, scala.Unit]
   ): ANGLE_instanced_arrays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE")(VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE)
-    __obj.updateDynamic("drawArraysInstancedANGLE")(drawArraysInstancedANGLE)
-    __obj.updateDynamic("drawElementsInstancedANGLE")(drawElementsInstancedANGLE)
-    __obj.updateDynamic("vertexAttribDivisorANGLE")(vertexAttribDivisorANGLE)
+    val __obj = js.Dynamic.literal(VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE = VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE, drawArraysInstancedANGLE = drawArraysInstancedANGLE, drawElementsInstancedANGLE = drawElementsInstancedANGLE, vertexAttribDivisorANGLE = vertexAttribDivisorANGLE)
+  
     __obj.asInstanceOf[ANGLE_instanced_arrays]
   }
 }

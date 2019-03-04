@@ -36,8 +36,7 @@ object SecurityGroupArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): SecurityGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ingress = ingress.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

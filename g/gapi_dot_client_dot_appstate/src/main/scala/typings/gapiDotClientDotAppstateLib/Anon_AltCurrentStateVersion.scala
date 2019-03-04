@@ -45,8 +45,7 @@ object Anon_AltCurrentStateVersion {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCurrentStateVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stateKey")(stateKey)
+    val __obj = js.Dynamic.literal(stateKey = stateKey)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion)
     if (fields != null) __obj.updateDynamic("fields")(fields)

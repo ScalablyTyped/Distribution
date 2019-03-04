@@ -22,9 +22,8 @@ object BucketPolicyArgs {
     bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument]
   ): BucketPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BucketPolicyArgs]
   }
 }

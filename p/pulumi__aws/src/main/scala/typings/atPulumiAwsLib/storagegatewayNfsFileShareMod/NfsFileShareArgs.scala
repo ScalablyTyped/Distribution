@@ -77,11 +77,7 @@ object NfsFileShareArgs {
     requesterPays: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     squash: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): NfsFileShareArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientLists")(clientLists.asInstanceOf[js.Any])
-    __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("locationArn")(locationArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientLists = clientLists.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any], locationArn = locationArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (defaultStorageClass != null) __obj.updateDynamic("defaultStorageClass")(defaultStorageClass.asInstanceOf[js.Any])
     if (guessMimeTypeEnabled != null) __obj.updateDynamic("guessMimeTypeEnabled")(guessMimeTypeEnabled.asInstanceOf[js.Any])
     if (kmsEncrypted != null) __obj.updateDynamic("kmsEncrypted")(kmsEncrypted.asInstanceOf[js.Any])

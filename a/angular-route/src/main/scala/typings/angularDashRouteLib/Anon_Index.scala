@@ -20,9 +20,7 @@ object Anon_Index {
     $template: java.lang.String,
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$scope")($scope)
-    __obj.updateDynamic("$template")($template)
+    val __obj = js.Dynamic.literal($scope = $scope, $template = $template)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Index]
   }

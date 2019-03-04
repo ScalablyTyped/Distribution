@@ -30,8 +30,7 @@ trait SpeedLimitsRequest extends js.Object {
 object SpeedLimitsRequest {
   @scala.inline
   def apply(placeId: java.lang.String, units: SpeedLimitUnit = null): SpeedLimitsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placeId")(placeId)
+    val __obj = js.Dynamic.literal(placeId = placeId)
     if (units != null) __obj.updateDynamic("units")(units)
     __obj.asInstanceOf[SpeedLimitsRequest]
   }

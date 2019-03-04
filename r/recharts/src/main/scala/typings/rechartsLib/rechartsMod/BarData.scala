@@ -24,13 +24,8 @@ object BarData {
     x: scala.Double,
     y: scala.Double
   ): BarData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, radius = radius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], width = width, x = x, y = y)
+  
     __obj.asInstanceOf[BarData]
   }
 }

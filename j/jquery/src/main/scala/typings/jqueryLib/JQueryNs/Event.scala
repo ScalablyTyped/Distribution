@@ -508,14 +508,8 @@ object Event {
     view: stdLib.Window = null,
     which: scala.Int | scala.Double = null
   ): Event = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])

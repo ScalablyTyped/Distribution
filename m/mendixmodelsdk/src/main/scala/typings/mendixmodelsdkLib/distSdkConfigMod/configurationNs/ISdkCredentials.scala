@@ -13,9 +13,8 @@ trait ISdkCredentials extends js.Object {
 object ISdkCredentials {
   @scala.inline
   def apply(apikey: java.lang.String, username: java.lang.String): ISdkCredentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apikey")(apikey)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(apikey = apikey, username = username)
+  
     __obj.asInstanceOf[ISdkCredentials]
   }
 }

@@ -52,9 +52,7 @@ object MapType {
     xbase: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
     xbasenight: heremapsLib.HNs.mapNs.layerNs.TileLayer = null
   ): MapType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mapnight")(mapnight)
+    val __obj = js.Dynamic.literal(map = map, mapnight = mapnight)
     if (base != null) __obj.updateDynamic("base")(base)
     if (basenight != null) __obj.updateDynamic("basenight")(basenight)
     if (labels != null) __obj.updateDynamic("labels")(labels)

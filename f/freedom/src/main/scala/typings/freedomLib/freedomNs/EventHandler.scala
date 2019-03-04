@@ -22,10 +22,8 @@ object EventHandler {
     on: js.Function2[java.lang.String, js.Function, scala.Unit],
     once: js.Function2[java.lang.String, js.Function, scala.Unit]
   ): EventHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
+    val __obj = js.Dynamic.literal(off = off, on = on, once = once)
+  
     __obj.asInstanceOf[EventHandler]
   }
 }

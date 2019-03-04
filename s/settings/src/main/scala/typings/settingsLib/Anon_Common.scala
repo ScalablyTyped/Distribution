@@ -20,8 +20,7 @@ object Anon_Common {
   /* envName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     forceEnv: java.lang.String = null
   ): Anon_Common = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("common")(common)
+    val __obj = js.Dynamic.literal(common = common)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (forceEnv != null) __obj.updateDynamic("forceEnv")(forceEnv)
     __obj.asInstanceOf[Anon_Common]

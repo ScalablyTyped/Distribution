@@ -28,10 +28,8 @@ trait Patient extends js.Object {
 object Patient {
   @scala.inline
   def apply(api: Api, id: java.lang.String, read: js.Function0[js.Promise[Response]]): Patient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(api = api, id = id, read = read)
+  
     __obj.asInstanceOf[Patient]
   }
 }

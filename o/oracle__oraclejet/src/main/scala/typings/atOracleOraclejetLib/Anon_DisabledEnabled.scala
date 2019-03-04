@@ -14,8 +14,8 @@ object Anon_DisabledEnabled {
   def apply(
     items: atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled
   ): Anon_DisabledEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DisabledEnabled]
   }
 }

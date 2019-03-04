@@ -18,10 +18,8 @@ object Anon_BucketKeyRoleArn {
     key: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_BucketKeyRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BucketKeyRoleArn]
   }
 }

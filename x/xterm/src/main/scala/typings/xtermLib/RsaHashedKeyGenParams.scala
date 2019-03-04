@@ -17,11 +17,8 @@ object RsaHashedKeyGenParams {
     name: java.lang.String,
     publicExponent: BigInteger
   ): RsaHashedKeyGenParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    __obj.updateDynamic("modulusLength")(modulusLength)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("publicExponent")(publicExponent)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], modulusLength = modulusLength, name = name, publicExponent = publicExponent)
+  
     __obj.asInstanceOf[RsaHashedKeyGenParams]
   }
 }

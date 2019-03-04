@@ -12,8 +12,8 @@ trait Anon_Control extends js.Object {
 object Anon_Control {
   @scala.inline
   def apply(Control: activexDashMsformsLib.MSFormsNs.Control): Anon_Control = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Control")(Control)
+    val __obj = js.Dynamic.literal(Control = Control)
+  
     __obj.asInstanceOf[Anon_Control]
   }
 }

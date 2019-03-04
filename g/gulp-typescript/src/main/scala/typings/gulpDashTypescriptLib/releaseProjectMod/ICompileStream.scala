@@ -10,6 +10,6 @@ trait ICompileStream
   extends nodeLib.NodeJSNs.ReadWriteStream {
   var dts: nodeLib.streamMod.Readable = js.native
   @JSName("js")
-  var `js_`: nodeLib.streamMod.Readable = js.native
+  var js_ : nodeLib.streamMod.Readable = js.native
 }
 

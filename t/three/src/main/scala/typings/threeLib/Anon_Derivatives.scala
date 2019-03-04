@@ -20,11 +20,8 @@ object Anon_Derivatives {
     fragDepth: scala.Boolean,
     shaderTextureLOD: scala.Boolean
   ): Anon_Derivatives = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("derivatives")(derivatives)
-    __obj.updateDynamic("drawBuffers")(drawBuffers)
-    __obj.updateDynamic("fragDepth")(fragDepth)
-    __obj.updateDynamic("shaderTextureLOD")(shaderTextureLOD)
+    val __obj = js.Dynamic.literal(derivatives = derivatives, drawBuffers = drawBuffers, fragDepth = fragDepth, shaderTextureLOD = shaderTextureLOD)
+  
     __obj.asInstanceOf[Anon_Derivatives]
   }
 }

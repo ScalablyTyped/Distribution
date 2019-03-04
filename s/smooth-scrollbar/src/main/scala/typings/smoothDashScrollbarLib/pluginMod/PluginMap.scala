@@ -16,9 +16,8 @@ object PluginMap {
     constructors: org.scalablytyped.runtime.StringDictionary[smoothDashScrollbarLib.Anon_DefaultOptions],
     order: nodeLib.Set[java.lang.String]
   ): PluginMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructors")(constructors)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(constructors = constructors, order = order)
+  
     __obj.asInstanceOf[PluginMap]
   }
 }

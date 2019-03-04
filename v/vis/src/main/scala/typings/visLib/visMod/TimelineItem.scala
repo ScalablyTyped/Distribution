@@ -36,10 +36,7 @@ object TimelineItem {
     title: java.lang.String = null,
     `type`: TimelineItemType = null
   ): TimelineItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, id = id.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (className != null) __obj.updateDynamic("className")(className)
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])

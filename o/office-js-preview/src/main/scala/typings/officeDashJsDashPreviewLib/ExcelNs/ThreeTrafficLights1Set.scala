@@ -20,10 +20,7 @@ object ThreeTrafficLights1Set {
     yellowCircle: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): ThreeTrafficLights1Set = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("greenCircle")(greenCircle)
-    __obj.updateDynamic("redCircleWithBorder")(redCircleWithBorder)
-    __obj.updateDynamic("yellowCircle")(yellowCircle)
+    val __obj = js.Dynamic.literal(greenCircle = greenCircle, redCircleWithBorder = redCircleWithBorder, yellowCircle = yellowCircle)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeTrafficLights1Set]
   }

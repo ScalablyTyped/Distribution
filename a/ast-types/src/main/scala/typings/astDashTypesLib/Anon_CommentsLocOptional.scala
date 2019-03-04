@@ -28,8 +28,7 @@ object Anon_CommentsLocOptional {
     readonly: scala.Boolean | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-` = null,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind = null
   ): Anon_CommentsLocOptional = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeParameter")(typeParameter)
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])

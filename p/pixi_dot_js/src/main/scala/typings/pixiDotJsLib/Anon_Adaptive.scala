@@ -20,11 +20,8 @@ object Anon_Adaptive {
     maxSegments: scala.Double,
     minSegments: scala.Double
   ): Anon_Adaptive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adaptive")(adaptive)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("maxSegments")(maxSegments)
-    __obj.updateDynamic("minSegments")(minSegments)
+    val __obj = js.Dynamic.literal(adaptive = adaptive, maxLength = maxLength, maxSegments = maxSegments, minSegments = minSegments)
+  
     __obj.asInstanceOf[Anon_Adaptive]
   }
 }

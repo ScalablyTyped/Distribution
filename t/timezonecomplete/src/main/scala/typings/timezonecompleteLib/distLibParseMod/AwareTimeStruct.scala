@@ -22,8 +22,7 @@ object AwareTimeStruct {
     time: timezonecompleteLib.distLibBasicsMod.TimeStruct,
     zone: timezonecompleteLib.distLibTimezoneMod.TimeZone = null
   ): AwareTimeStruct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(time = time)
     if (zone != null) __obj.updateDynamic("zone")(zone)
     __obj.asInstanceOf[AwareTimeStruct]
   }

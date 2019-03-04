@@ -18,9 +18,7 @@ object Anon_ContainerLowFrameRateMessage {
     scene: cesiumLib.cesiumMod.CesiumNs.Scene,
     lowFrameRateMessage: java.lang.String = null
   ): Anon_ContainerLowFrameRateMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    __obj.updateDynamic("scene")(scene)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene)
     if (lowFrameRateMessage != null) __obj.updateDynamic("lowFrameRateMessage")(lowFrameRateMessage)
     __obj.asInstanceOf[Anon_ContainerLowFrameRateMessage]
   }

@@ -18,8 +18,8 @@ object HostedmodelsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Output]
     ]
   ): HostedmodelsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("predict")(predict)
+    val __obj = js.Dynamic.literal(predict = predict)
+  
     __obj.asInstanceOf[HostedmodelsResource]
   }
 }

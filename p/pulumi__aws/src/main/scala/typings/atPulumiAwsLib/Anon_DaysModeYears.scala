@@ -18,8 +18,7 @@ object Anon_DaysModeYears {
     days: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     years: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_DaysModeYears = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DaysModeYears]

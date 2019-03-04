@@ -24,9 +24,8 @@ object TemplateLiteral {
     quasis: js.Array[astDashTypesLib.genKindsMod.TemplateElementKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.TemplateLiteral
   ): TemplateLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expressions")(expressions)
-    __obj.updateDynamic("quasis")(quasis)
+    val __obj = js.Dynamic.literal(expressions = expressions, quasis = quasis)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TemplateLiteral]
   }
 }

@@ -20,11 +20,8 @@ object CrossSlideThresholds {
     speedBumpEnd: scala.Double,
     speedBumpStart: scala.Double
   ): CrossSlideThresholds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rearrangeStart")(rearrangeStart)
-    __obj.updateDynamic("selectionStart")(selectionStart)
-    __obj.updateDynamic("speedBumpEnd")(speedBumpEnd)
-    __obj.updateDynamic("speedBumpStart")(speedBumpStart)
+    val __obj = js.Dynamic.literal(rearrangeStart = rearrangeStart, selectionStart = selectionStart, speedBumpEnd = speedBumpEnd, speedBumpStart = speedBumpStart)
+  
     __obj.asInstanceOf[CrossSlideThresholds]
   }
 }

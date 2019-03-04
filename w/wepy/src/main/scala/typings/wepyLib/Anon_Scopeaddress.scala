@@ -28,8 +28,15 @@ object Anon_Scopeaddress {
     `scope.werun`: scala.Boolean,
     `scope.writePhotosAlbum`: scala.Boolean
   ): Anon_Scopeaddress = {
-    val __obj = js.Dynamic.literal(`scope.address` = `scope.address`, `scope.camera` = `scope.camera`, `scope.invoiceTitle` = `scope.invoiceTitle`, `scope.record` = `scope.record`, `scope.userInfo` = `scope.userInfo`, `scope.userLocation` = `scope.userLocation`, `scope.werun` = `scope.werun`, `scope.writePhotosAlbum` = `scope.writePhotosAlbum`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope.address")(`scope.address`)
+    __obj.updateDynamic("scope.camera")(`scope.camera`)
+    __obj.updateDynamic("scope.invoiceTitle")(`scope.invoiceTitle`)
+    __obj.updateDynamic("scope.record")(`scope.record`)
+    __obj.updateDynamic("scope.userInfo")(`scope.userInfo`)
+    __obj.updateDynamic("scope.userLocation")(`scope.userLocation`)
+    __obj.updateDynamic("scope.werun")(`scope.werun`)
+    __obj.updateDynamic("scope.writePhotosAlbum")(`scope.writePhotosAlbum`)
     __obj.asInstanceOf[Anon_Scopeaddress]
   }
 }

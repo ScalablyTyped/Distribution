@@ -32,10 +32,8 @@ object ContributionPropertyDescription {
     required: scala.Boolean,
     `type`: ContributionPropertyType
   ): ContributionPropertyDescription = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(description = description, name = name, required = required)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ContributionPropertyDescription]
   }
 }

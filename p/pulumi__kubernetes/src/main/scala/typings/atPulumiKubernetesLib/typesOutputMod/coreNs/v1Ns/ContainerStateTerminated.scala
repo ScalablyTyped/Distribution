@@ -50,14 +50,8 @@ object ContainerStateTerminated {
     signal: scala.Double,
     startedAt: java.lang.String
   ): ContainerStateTerminated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerID")(containerID)
-    __obj.updateDynamic("exitCode")(exitCode)
-    __obj.updateDynamic("finishedAt")(finishedAt)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("signal")(signal)
-    __obj.updateDynamic("startedAt")(startedAt)
+    val __obj = js.Dynamic.literal(containerID = containerID, exitCode = exitCode, finishedAt = finishedAt, message = message, reason = reason, signal = signal, startedAt = startedAt)
+  
     __obj.asInstanceOf[ContainerStateTerminated]
   }
 }

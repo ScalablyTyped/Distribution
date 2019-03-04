@@ -47,13 +47,8 @@ object CustomResourceDefinitionNames {
     shortNames: js.Array[java.lang.String],
     singular: java.lang.String
   ): CustomResourceDefinitionNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("listKind")(listKind)
-    __obj.updateDynamic("plural")(plural)
-    __obj.updateDynamic("shortNames")(shortNames)
-    __obj.updateDynamic("singular")(singular)
+    val __obj = js.Dynamic.literal(categories = categories, kind = kind, listKind = listKind, plural = plural, shortNames = shortNames, singular = singular)
+  
     __obj.asInstanceOf[CustomResourceDefinitionNames]
   }
 }

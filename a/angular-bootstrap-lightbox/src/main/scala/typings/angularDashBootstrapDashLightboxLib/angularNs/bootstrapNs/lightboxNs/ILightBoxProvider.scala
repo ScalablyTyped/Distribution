@@ -18,10 +18,8 @@ object ILightBoxProvider {
     calculateModalDimensions: js.Function1[IModalDimensionsParameter, IModalDimensions],
     templateUrl: java.lang.String
   ): ILightBoxProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculateImageDimensionLimits")(calculateImageDimensionLimits)
-    __obj.updateDynamic("calculateModalDimensions")(calculateModalDimensions)
-    __obj.updateDynamic("templateUrl")(templateUrl)
+    val __obj = js.Dynamic.literal(calculateImageDimensionLimits = calculateImageDimensionLimits, calculateModalDimensions = calculateModalDimensions, templateUrl = templateUrl)
+  
     __obj.asInstanceOf[ILightBoxProvider]
   }
 }

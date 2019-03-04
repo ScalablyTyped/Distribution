@@ -46,23 +46,8 @@ object ojListViewSettableProperties {
     selectionRequired: scala.Boolean,
     translations: atOracleOraclejetLib.Anon_AccessibleNavigateSkipItems
   ): ojListViewSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dnd")(dnd)
-    __obj.updateDynamic("drillMode")(drillMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("firstSelectedItem")(firstSelectedItem)
-    __obj.updateDynamic("groupHeaderPosition")(groupHeaderPosition.asInstanceOf[js.Any])
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("scrollPolicy")(scrollPolicy.asInstanceOf[js.Any])
-    __obj.updateDynamic("scrollPolicyOptions")(scrollPolicyOptions)
-    __obj.updateDynamic("scrollPosition")(scrollPosition)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("selectionRequired")(selectionRequired)
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(as = as, currentItem = currentItem.asInstanceOf[js.Any], data = data, dnd = dnd, drillMode = drillMode.asInstanceOf[js.Any], expanded = expanded, firstSelectedItem = firstSelectedItem, groupHeaderPosition = groupHeaderPosition.asInstanceOf[js.Any], item = item, scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode.asInstanceOf[js.Any], selectionRequired = selectionRequired, translations = translations)
+  
     __obj.asInstanceOf[ojListViewSettableProperties[K, D]]
   }
 }

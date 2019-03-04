@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/util/util", JSImport.Namespace)
 @js.native
 object distSrcCoreUtilUtilMod extends js.Object {
-  val `INTEGER_REGEXP_`: stdLib.RegExp = js.native
+  val INTEGER_REGEXP_ : stdLib.RegExp = js.native
   val MAX_NAME: /* [MAX_NAME] */ java.lang.String = js.native
   val MIN_NAME: /* [MIN_NAME] */ java.lang.String = js.native
   var logger: (js.Function1[/* a */ java.lang.String, scala.Unit]) | scala.Null = js.native
@@ -29,10 +29,10 @@ object distSrcCoreUtilUtilMod extends js.Object {
     fn: js.Function2[/* v */ js.UndefOr[js.Any], /* k */ js.UndefOr[js.Any], scala.Unit]
   ): scala.Unit = js.native
   def enableLogging(): scala.Unit = js.native
-  def enableLogging(`logger_`: js.Function1[/* a */ java.lang.String, scala.Unit]): scala.Unit = js.native
-  def enableLogging(`logger_`: js.Function1[/* a */ java.lang.String, scala.Unit], persistent: scala.Boolean): scala.Unit = js.native
-  def enableLogging(`logger_`: scala.Boolean): scala.Unit = js.native
-  def enableLogging(`logger_`: scala.Boolean, persistent: scala.Boolean): scala.Unit = js.native
+  def enableLogging(logger_ : js.Function1[/* a */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def enableLogging(logger_ : js.Function1[/* a */ java.lang.String, scala.Unit], persistent: scala.Boolean): scala.Unit = js.native
+  def enableLogging(logger_ : scala.Boolean): scala.Unit = js.native
+  def enableLogging(logger_ : scala.Boolean, persistent: scala.Boolean): scala.Unit = js.native
   def error(var_args: java.lang.String*): scala.Unit = js.native
   def errorForServerCode(code: java.lang.String, query: atFirebaseDatabaseLib.distSrcApiQueryMod.Query): stdLib.Error = js.native
   def exceptionGuard(fn: js.Function0[scala.Unit]): scala.Unit = js.native

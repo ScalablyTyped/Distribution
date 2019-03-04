@@ -26,8 +26,7 @@ object Anon_Cookies {
     opts: js.Object = null,
     replyCookies: js.Array[java.lang.String] = null
   ): Anon_Cookies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (cookies != null) __obj.updateDynamic("cookies")(cookies)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)

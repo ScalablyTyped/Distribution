@@ -17,9 +17,8 @@ trait IEditorState extends js.Object {
 object IEditorState {
   @scala.inline
   def apply(current: js.Any, state: IState): IEditorState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(current = current, state = state)
+  
     __obj.asInstanceOf[IEditorState]
   }
 }

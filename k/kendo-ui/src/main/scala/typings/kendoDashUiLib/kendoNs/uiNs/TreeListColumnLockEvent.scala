@@ -17,10 +17,7 @@ object TreeListColumnLockEvent {
     sender: TreeList,
     column: js.Any = null
   ): TreeListColumnLockEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (column != null) __obj.updateDynamic("column")(column)
     __obj.asInstanceOf[TreeListColumnLockEvent]
   }

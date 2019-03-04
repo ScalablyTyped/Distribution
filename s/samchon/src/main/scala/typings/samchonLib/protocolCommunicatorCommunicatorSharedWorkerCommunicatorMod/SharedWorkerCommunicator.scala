@@ -12,7 +12,7 @@ abstract class SharedWorkerCommunicator ()
   /**
     * @hidden
     */
-  var `port_`: stdLib.MessagePort = js.native
+  var port_ : stdLib.MessagePort = js.native
   /**
     * @hidden
     */

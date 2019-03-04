@@ -18,8 +18,7 @@ object ValidationResult {
     credentials: js.Any = null,
     response: hapiLib.hapiMod.ResponseObject = null
   ): ValidationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(isValid = isValid)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)
     if (response != null) __obj.updateDynamic("response")(response)
     __obj.asInstanceOf[ValidationResult]

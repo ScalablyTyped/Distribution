@@ -13,8 +13,8 @@ trait ShaderIdentifier extends js.Object {
 object ShaderIdentifier {
   @scala.inline
   def apply(id: java.lang.String, `type`: java.lang.String): ShaderIdentifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ShaderIdentifier]
   }
 }

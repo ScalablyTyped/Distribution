@@ -18,9 +18,7 @@ object Anon_ExtraInfo {
     key: java.lang.String,
     extraInfo: hapiDashAuthDashJwt2Lib.hapiDashAuthDashJwt2Mod.hapiAuthJwt2Ns.ExtraInfo = null
   ): Anon_ExtraInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(isValid = isValid, key = key)
     if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo)
     __obj.asInstanceOf[Anon_ExtraInfo]
   }

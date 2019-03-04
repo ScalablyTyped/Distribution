@@ -16,9 +16,8 @@ object hasFinalUrlBuilder {
     withFinalUrl: js.Function1[java.lang.String, B],
     withMobileFinalUrl: js.Function1[java.lang.String, B]
   ): hasFinalUrlBuilder[B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withFinalUrl")(withFinalUrl)
-    __obj.updateDynamic("withMobileFinalUrl")(withMobileFinalUrl)
+    val __obj = js.Dynamic.literal(withFinalUrl = withFinalUrl, withMobileFinalUrl = withMobileFinalUrl)
+  
     __obj.asInstanceOf[hasFinalUrlBuilder[B]]
   }
 }

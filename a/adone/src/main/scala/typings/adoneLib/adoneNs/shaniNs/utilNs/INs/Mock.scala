@@ -27,10 +27,8 @@ object Mock {
     restore: js.Function0[scala.Unit],
     verify: js.Function0[scala.Unit]
   ): Mock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expects")(expects)
-    __obj.updateDynamic("restore")(restore)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(expects = expects, restore = restore, verify = verify)
+  
     __obj.asInstanceOf[Mock]
   }
 }

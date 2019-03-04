@@ -12,8 +12,8 @@ trait ASPxClientCalendarCellClickEventArgs extends ASPxClientEventArgs {
 object ASPxClientCalendarCellClickEventArgs {
   @scala.inline
   def apply(date: stdLib.Date): ASPxClientCalendarCellClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(date = date)
+  
     __obj.asInstanceOf[ASPxClientCalendarCellClickEventArgs]
   }
 }

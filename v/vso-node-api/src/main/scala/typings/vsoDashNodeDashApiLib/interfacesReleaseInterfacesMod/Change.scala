@@ -52,15 +52,8 @@ object Change {
     pusher: java.lang.String,
     timestamp: stdLib.Date
   ): Change = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("displayUri")(displayUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("pusher")(pusher)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(author = author, changeType = changeType, displayUri = displayUri, id = id, location = location, message = message, pusher = pusher, timestamp = timestamp)
+  
     __obj.asInstanceOf[Change]
   }
 }

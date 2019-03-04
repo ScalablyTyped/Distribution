@@ -18,8 +18,7 @@ object PublishCompositeConfig4 {
     children: js.Array[PublishCompositeConfigN] = null,
     collectionName: java.lang.String = null
   ): PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("find")(find)
+    val __obj = js.Dynamic.literal(find = find)
     if (children != null) __obj.updateDynamic("children")(children)
     if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
     __obj.asInstanceOf[PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel]]

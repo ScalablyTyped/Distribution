@@ -41,24 +41,8 @@ object UserOrOrg {
     updated_at: stdLib.Date,
     url: java.lang.String
   ): UserOrOrg = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("blog")(blog)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("events_url")(events_url)
-    __obj.updateDynamic("followers")(followers)
-    __obj.updateDynamic("following")(following)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("public_gists")(public_gists)
-    __obj.updateDynamic("public_repos")(public_repos)
-    __obj.updateDynamic("repos_url")(repos_url)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, blog = blog, company = company, created_at = created_at, email = email, events_url = events_url, followers = followers, following = following, id = id, location = location, login = login, name = name, public_gists = public_gists, public_repos = public_repos, repos_url = repos_url, updated_at = updated_at, url = url)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserOrOrg]
   }
 }

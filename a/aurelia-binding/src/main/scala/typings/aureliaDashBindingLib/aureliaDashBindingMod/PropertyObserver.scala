@@ -17,8 +17,8 @@ object PropertyObserver {
   def apply(
     subscribe: js.Function1[js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, scala.Unit], Disposable]
   ): PropertyObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(subscribe = subscribe)
+  
     __obj.asInstanceOf[PropertyObserver]
   }
 }

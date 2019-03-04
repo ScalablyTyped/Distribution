@@ -19,21 +19,21 @@ trait LodashUpdateWith1x8[T] extends js.Object {
   ): T = js.native
   def apply(
     customizer: lodashLib.lodashMod.underscoreNs.SetWithCustomizer[T],
-    path: lodashLib.lodashMod.underscoreNs.`__`,
+    path: lodashLib.lodashMod.underscoreNs.__,
     updater: js.Function1[/* oldValue */ js.Any, _]
   ): LodashUpdateWith1x13[T] = js.native
   def apply(
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
     path: lodashLib.lodashMod.underscoreNs.PropertyPath
   ): LodashUpdateWith1x10[T] = js.native
   def apply(
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
     path: lodashLib.lodashMod.underscoreNs.PropertyPath,
     updater: js.Function1[/* oldValue */ js.Any, _]
   ): LodashUpdateWith1x14[T] = js.native
   def apply(
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
-    path: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
+    path: lodashLib.lodashMod.underscoreNs.__,
     updater: js.Function1[/* oldValue */ js.Any, _]
   ): LodashUpdateWith1x12[T] = js.native
 }

@@ -14,8 +14,8 @@ trait Anon_Toggle[T]
 object Anon_Toggle {
   @scala.inline
   def apply[T]($toggle: js.Array[java.lang.String]): Anon_Toggle[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$toggle")($toggle)
+    val __obj = js.Dynamic.literal($toggle = $toggle)
+  
     __obj.asInstanceOf[Anon_Toggle[T]]
   }
 }

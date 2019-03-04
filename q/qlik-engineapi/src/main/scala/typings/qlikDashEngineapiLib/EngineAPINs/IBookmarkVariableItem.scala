@@ -22,9 +22,8 @@ trait IBookmarkVariableItem extends js.Object {
 object IBookmarkVariableItem {
   @scala.inline
   def apply(qName: java.lang.String, qValue: IFieldValue): IBookmarkVariableItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qValue")(qValue)
+    val __obj = js.Dynamic.literal(qName = qName, qValue = qValue)
+  
     __obj.asInstanceOf[IBookmarkVariableItem]
   }
 }

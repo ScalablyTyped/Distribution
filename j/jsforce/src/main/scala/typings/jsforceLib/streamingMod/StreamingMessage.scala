@@ -13,9 +13,8 @@ trait StreamingMessage extends js.Object {
 object StreamingMessage {
   @scala.inline
   def apply(event: jsforceLib.Anon_CreatedDate, sobject: jsforceLib.recordMod.Record[_]): StreamingMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("sobject")(sobject)
+    val __obj = js.Dynamic.literal(event = event, sobject = sobject)
+  
     __obj.asInstanceOf[StreamingMessage]
   }
 }

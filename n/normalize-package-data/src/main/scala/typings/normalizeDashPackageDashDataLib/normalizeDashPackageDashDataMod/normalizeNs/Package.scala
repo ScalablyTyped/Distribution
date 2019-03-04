@@ -60,11 +60,7 @@ object Package {
     repository: normalizeDashPackageDashDataLib.Anon_Type = null,
     scripts: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Package = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("readme")(readme)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(_id = _id, name = name, readme = readme, version = version)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (author != null) __obj.updateDynamic("author")(author)
     if (bin != null) __obj.updateDynamic("bin")(bin)

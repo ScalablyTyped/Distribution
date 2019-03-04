@@ -23,9 +23,8 @@ object Anon_AnErrorStringFailureSuccessTheGroupTheOwner {
       js.Any
     ]
   ): Anon_AnErrorStringFailureSuccessTheGroupTheOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessTheGroupTheOwner]
   }
 }

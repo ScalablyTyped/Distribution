@@ -21,12 +21,8 @@ object subscribeCompleteArgs {
     meta: js.Any,
     timestamp: stdLib.Date
   ): subscribeCompleteArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("isResubscribe")(isResubscribe)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, isResubscribe = isResubscribe, meta = meta, timestamp = timestamp)
+  
     __obj.asInstanceOf[subscribeCompleteArgs]
   }
 }

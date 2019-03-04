@@ -24,13 +24,8 @@ object GitDeletedRepository {
     name: java.lang.String,
     project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
   ): GitDeletedRepository = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("deletedBy")(deletedBy)
-    __obj.updateDynamic("deletedDate")(deletedDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(createdDate = createdDate, deletedBy = deletedBy, deletedDate = deletedDate, id = id, name = name, project = project)
+  
     __obj.asInstanceOf[GitDeletedRepository]
   }
 }

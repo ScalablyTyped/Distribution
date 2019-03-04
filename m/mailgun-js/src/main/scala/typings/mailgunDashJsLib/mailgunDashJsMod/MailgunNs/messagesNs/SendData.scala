@@ -34,8 +34,7 @@ object SendData {
     subject: java.lang.String = null,
     text: java.lang.String = null
   ): SendData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
     if (bcc != null) __obj.updateDynamic("bcc")(bcc)
     if (cc != null) __obj.updateDynamic("cc")(cc)

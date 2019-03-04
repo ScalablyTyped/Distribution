@@ -13,9 +13,8 @@ trait CoordinateLongitudeLatitude extends _Coordinate {
 object CoordinateLongitudeLatitude {
   @scala.inline
   def apply(latitude: scala.Double, longitude: scala.Double): CoordinateLongitudeLatitude = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
     __obj.asInstanceOf[CoordinateLongitudeLatitude]
   }
 }

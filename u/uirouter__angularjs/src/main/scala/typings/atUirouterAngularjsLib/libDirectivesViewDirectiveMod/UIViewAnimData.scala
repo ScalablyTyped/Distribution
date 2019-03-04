@@ -21,10 +21,8 @@ object UIViewAnimData {
     $animEnter: js.Promise[_],
     $animLeave: js.Promise[_]
   ): UIViewAnimData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$$animLeave")($$animLeave)
-    __obj.updateDynamic("$animEnter")($animEnter)
-    __obj.updateDynamic("$animLeave")($animLeave)
+    val __obj = js.Dynamic.literal($$animLeave = $$animLeave, $animEnter = $animEnter, $animLeave = $animLeave)
+  
     __obj.asInstanceOf[UIViewAnimData]
   }
 }

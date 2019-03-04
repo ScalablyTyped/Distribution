@@ -19,12 +19,8 @@ object IDeviceActivatedEventArgs {
     splashScreen: SplashScreen,
     verb: java.lang.String
   ): IDeviceActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceInformationId")(deviceInformationId)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
-    __obj.updateDynamic("verb")(verb)
+    val __obj = js.Dynamic.literal(deviceInformationId = deviceInformationId, kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen, verb = verb)
+  
     __obj.asInstanceOf[IDeviceActivatedEventArgs]
   }
 }

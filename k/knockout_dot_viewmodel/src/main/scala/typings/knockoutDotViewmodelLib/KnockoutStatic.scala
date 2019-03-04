@@ -13,8 +13,8 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(viewmodel: KnockoutViewModelStatic): KnockoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("viewmodel")(viewmodel)
+    val __obj = js.Dynamic.literal(viewmodel = viewmodel)
+  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

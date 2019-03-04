@@ -20,11 +20,8 @@ object TournamentCodeUpdateParameters {
     pickType: java.lang.String,
     spectatorType: java.lang.String
   ): TournamentCodeUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedParticipants")(allowedParticipants)
-    __obj.updateDynamic("mapType")(mapType)
-    __obj.updateDynamic("pickType")(pickType)
-    __obj.updateDynamic("spectatorType")(spectatorType)
+    val __obj = js.Dynamic.literal(allowedParticipants = allowedParticipants, mapType = mapType, pickType = pickType, spectatorType = spectatorType)
+  
     __obj.asInstanceOf[TournamentCodeUpdateParameters]
   }
 }

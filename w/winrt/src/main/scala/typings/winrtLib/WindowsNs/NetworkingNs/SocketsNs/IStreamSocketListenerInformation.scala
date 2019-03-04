@@ -12,8 +12,8 @@ trait IStreamSocketListenerInformation extends js.Object {
 object IStreamSocketListenerInformation {
   @scala.inline
   def apply(localPort: java.lang.String): IStreamSocketListenerInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localPort")(localPort)
+    val __obj = js.Dynamic.literal(localPort = localPort)
+  
     __obj.asInstanceOf[IStreamSocketListenerInformation]
   }
 }

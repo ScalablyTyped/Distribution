@@ -22,12 +22,8 @@ object USBControlTransferParameters {
     requestType: USBRequestType,
     value: scala.Double
   ): USBControlTransferParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestType")(requestType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(index = index, recipient = recipient, request = request, requestType = requestType, value = value)
+  
     __obj.asInstanceOf[USBControlTransferParameters]
   }
 }

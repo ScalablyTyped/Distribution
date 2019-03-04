@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonMultiConfiguration extends js.Object {
 object Anon_EnumValuesAnonMultiConfiguration {
   @scala.inline
   def apply(enumValues: Anon_MultiConfiguration): Anon_EnumValuesAnonMultiConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonMultiConfiguration]
   }
 }

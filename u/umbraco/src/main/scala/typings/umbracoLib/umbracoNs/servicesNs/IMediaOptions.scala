@@ -16,9 +16,8 @@ trait IMediaOptions extends js.Object {
 object IMediaOptions {
   @scala.inline
   def apply(imageOnly: scala.Boolean, mediaModel: IMediaModel): IMediaOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageOnly")(imageOnly)
-    __obj.updateDynamic("mediaModel")(mediaModel)
+    val __obj = js.Dynamic.literal(imageOnly = imageOnly, mediaModel = mediaModel)
+  
     __obj.asInstanceOf[IMediaOptions]
   }
 }

@@ -33,9 +33,8 @@ object ReferenceObject {
     svgStyle: js.Object = null,
     value: scala.Int | scala.Double = null
   ): ReferenceObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lineStyle = lineStyle.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])

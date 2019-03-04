@@ -18,10 +18,8 @@ object DescribeGlobalResult {
     maxBatchSize: scala.Double,
     sobjects: js.Array[DescribeGlobalSObjectResult]
   ): DescribeGlobalResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("maxBatchSize")(maxBatchSize)
-    __obj.updateDynamic("sobjects")(sobjects)
+    val __obj = js.Dynamic.literal(encoding = encoding, maxBatchSize = maxBatchSize, sobjects = sobjects)
+  
     __obj.asInstanceOf[DescribeGlobalResult]
   }
 }

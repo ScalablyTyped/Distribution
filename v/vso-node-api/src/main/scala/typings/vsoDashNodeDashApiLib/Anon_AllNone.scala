@@ -22,12 +22,8 @@ object Anon_AllNone {
     testResult: scala.Double,
     testRun: scala.Double
   ): Anon_AllNone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("testResult")(testResult)
-    __obj.updateDynamic("testRun")(testRun)
+    val __obj = js.Dynamic.literal(all = all, none = none, system = system, testResult = testResult, testRun = testRun)
+  
     __obj.asInstanceOf[Anon_AllNone]
   }
 }

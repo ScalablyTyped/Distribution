@@ -26,10 +26,8 @@ object Element {
     parent: NodeBase = null,
     preserveWhitespace: java.lang.String = null
   ): Element = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
     __obj.asInstanceOf[Element]

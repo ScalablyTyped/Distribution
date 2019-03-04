@@ -30,14 +30,7 @@ object CertificateInfo {
     validity: firefoxDashWebextDashBrowserLib.Anon_End,
     rawDER: js.Array[scala.Double] = null
   ): CertificateInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("isBuiltInRoot")(isBuiltInRoot)
-    __obj.updateDynamic("issuer")(issuer)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("subjectPublicKeyInfoDigest")(subjectPublicKeyInfoDigest)
-    __obj.updateDynamic("validity")(validity)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint, isBuiltInRoot = isBuiltInRoot, issuer = issuer, serialNumber = serialNumber, subject = subject, subjectPublicKeyInfoDigest = subjectPublicKeyInfoDigest, validity = validity)
     if (rawDER != null) __obj.updateDynamic("rawDER")(rawDER)
     __obj.asInstanceOf[CertificateInfo]
   }

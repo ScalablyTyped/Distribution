@@ -29,12 +29,8 @@ object TSImportEqualsDeclaration {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TSImportEqualsDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("moduleReference")(moduleReference.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, id = id, loc = loc, moduleReference = moduleReference.asInstanceOf[js.Any], start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

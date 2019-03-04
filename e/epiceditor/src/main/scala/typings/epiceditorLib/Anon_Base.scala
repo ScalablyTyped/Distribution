@@ -14,10 +14,8 @@ trait Anon_Base extends js.Object {
 object Anon_Base {
   @scala.inline
   def apply(base: java.lang.String, editor: java.lang.String, preview: java.lang.String): Anon_Base = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("preview")(preview)
+    val __obj = js.Dynamic.literal(base = base, editor = editor, preview = preview)
+  
     __obj.asInstanceOf[Anon_Base]
   }
 }

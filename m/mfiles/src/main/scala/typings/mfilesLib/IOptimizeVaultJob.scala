@@ -26,14 +26,8 @@ object IOptimizeVaultJob {
     Thorough: scala.Boolean,
     VaultGUID: java.lang.String
   ): IOptimizeVaultJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GarbageCollectFiles")(GarbageCollectFiles)
-    __obj.updateDynamic("GetNumberOfSteps")(GetNumberOfSteps)
-    __obj.updateDynamic("GetOneBasedIndexOfStep")(GetOneBasedIndexOfStep)
-    __obj.updateDynamic("GetStepProgressText")(GetStepProgressText)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("Thorough")(Thorough)
-    __obj.updateDynamic("VaultGUID")(VaultGUID)
+    val __obj = js.Dynamic.literal(GarbageCollectFiles = GarbageCollectFiles, GetNumberOfSteps = GetNumberOfSteps, GetOneBasedIndexOfStep = GetOneBasedIndexOfStep, GetStepProgressText = GetStepProgressText, Set = Set, Thorough = Thorough, VaultGUID = VaultGUID)
+  
     __obj.asInstanceOf[IOptimizeVaultJob]
   }
 }

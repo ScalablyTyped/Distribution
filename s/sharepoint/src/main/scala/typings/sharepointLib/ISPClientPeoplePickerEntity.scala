@@ -35,8 +35,7 @@ object ISPClientPeoplePickerEntity {
     ProviderName: java.lang.String = null,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ISPClientPeoplePickerEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MultipleMatches")(MultipleMatches)
+    val __obj = js.Dynamic.literal(MultipleMatches = MultipleMatches)
     if (Description != null) __obj.updateDynamic("Description")(Description)
     if (DisplayText != null) __obj.updateDynamic("DisplayText")(DisplayText)
     if (DomainText != null) __obj.updateDynamic("DomainText")(DomainText)

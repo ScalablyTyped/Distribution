@@ -71,8 +71,7 @@ object OntimeSchedule {
     step: scala.Int | scala.Double = null,
     utc: js.UndefOr[scala.Boolean] = js.undefined
   ): OntimeSchedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cycle = cycle.asInstanceOf[js.Any])
     if (!js.isUndefined(keepLast)) __obj.updateDynamic("keepLast")(keepLast)
     if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
     if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)

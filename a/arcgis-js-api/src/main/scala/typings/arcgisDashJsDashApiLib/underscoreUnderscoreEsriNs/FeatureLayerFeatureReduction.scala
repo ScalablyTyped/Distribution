@@ -23,10 +23,8 @@ object FeatureLayerFeatureReduction {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     `type`: java.lang.String
   ): FeatureLayerFeatureReduction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FeatureLayerFeatureReduction]
   }
 }

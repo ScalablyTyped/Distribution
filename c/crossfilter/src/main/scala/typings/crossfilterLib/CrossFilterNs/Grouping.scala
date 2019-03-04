@@ -13,9 +13,8 @@ trait Grouping[TKey, TValue] extends js.Object {
 object Grouping {
   @scala.inline
   def apply[TKey, TValue](key: TKey, value: TValue): Grouping[TKey, TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Grouping[TKey, TValue]]
   }
 }

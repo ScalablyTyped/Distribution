@@ -57,10 +57,7 @@ object Anon_AltDiskFields {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDiskFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disk")(disk)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(disk = disk, project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

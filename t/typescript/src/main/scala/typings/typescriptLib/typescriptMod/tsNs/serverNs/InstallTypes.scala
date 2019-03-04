@@ -22,12 +22,8 @@ object InstallTypes {
     projectName: java.lang.String,
     typingsInstallerVersion: java.lang.String
   ): InstallTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventId")(eventId)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("packagesToInstall")(packagesToInstall)
-    __obj.updateDynamic("projectName")(projectName)
-    __obj.updateDynamic("typingsInstallerVersion")(typingsInstallerVersion)
+    val __obj = js.Dynamic.literal(eventId = eventId, kind = kind.asInstanceOf[js.Any], packagesToInstall = packagesToInstall, projectName = projectName, typingsInstallerVersion = typingsInstallerVersion)
+  
     __obj.asInstanceOf[InstallTypes]
   }
 }

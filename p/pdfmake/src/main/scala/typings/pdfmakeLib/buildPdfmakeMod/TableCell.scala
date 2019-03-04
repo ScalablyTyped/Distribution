@@ -22,8 +22,7 @@ object TableCell {
     fillColor: java.lang.String = null,
     rowSpan: scala.Int | scala.Double = null
   ): TableCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (border != null) __obj.updateDynamic("border")(border)
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)

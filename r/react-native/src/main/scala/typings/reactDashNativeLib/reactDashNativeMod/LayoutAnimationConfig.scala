@@ -20,8 +20,7 @@ object LayoutAnimationConfig {
     delete: LayoutAnimationAnim = null,
     update: LayoutAnimationAnim = null
   ): LayoutAnimationConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(duration = duration)
     if (create != null) __obj.updateDynamic("create")(create)
     if (delete != null) __obj.updateDynamic("delete")(delete)
     if (update != null) __obj.updateDynamic("update")(update)

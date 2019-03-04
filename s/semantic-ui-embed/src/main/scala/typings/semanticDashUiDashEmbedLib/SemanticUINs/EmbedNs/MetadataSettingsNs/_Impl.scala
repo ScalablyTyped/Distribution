@@ -37,12 +37,8 @@ object _Impl {
     source: java.lang.String,
     url: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(icon = icon, id = id, placeholder = placeholder, source = source, url = url)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

@@ -20,8 +20,7 @@ object Anon_BucketBucketPrefixEnabled {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     interval: scala.Int | scala.Double = null
   ): Anon_BucketBucketPrefixEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])

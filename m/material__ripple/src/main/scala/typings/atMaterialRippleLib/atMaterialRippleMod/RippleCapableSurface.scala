@@ -12,7 +12,7 @@ class RippleCapableSurface () extends js.Object {
     * Whether or not the ripple is attached to a disabled component.
     */
   var disabled: js.UndefOr[scala.Boolean] = js.native
-  var `root_`: stdLib.Element = js.native
+  var root_ : stdLib.Element = js.native
   /**
     * Whether or not the ripple bleeds out of the bounds of the element.
     */

@@ -56,15 +56,8 @@ object XSubToolbarController {
     release: js.Function0[scala.Unit],
     updateImage: js.Function0[scala.Unit]
   ): XSubToolbarController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SubToolbarName")(SubToolbarName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("functionSelected")(functionSelected)
-    __obj.updateDynamic("getSubToolbarName")(getSubToolbarName)
-    __obj.updateDynamic("opensSubToolbar")(opensSubToolbar)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateImage")(updateImage)
+    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = acquire, functionSelected = functionSelected, getSubToolbarName = getSubToolbarName, opensSubToolbar = opensSubToolbar, queryInterface = queryInterface, release = release, updateImage = updateImage)
+  
     __obj.asInstanceOf[XSubToolbarController]
   }
 }

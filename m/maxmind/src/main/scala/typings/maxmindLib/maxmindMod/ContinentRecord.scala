@@ -18,10 +18,8 @@ object ContinentRecord {
     geoname_id: scala.Double,
     names: Names
   ): ContinentRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("geoname_id")(geoname_id)
-    __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], geoname_id = geoname_id, names = names)
+  
     __obj.asInstanceOf[ContinentRecord]
   }
 }

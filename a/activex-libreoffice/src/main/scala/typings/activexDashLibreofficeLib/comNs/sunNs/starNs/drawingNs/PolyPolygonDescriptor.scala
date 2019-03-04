@@ -22,10 +22,8 @@ trait PolyPolygonDescriptor extends js.Object {
 object PolyPolygonDescriptor {
   @scala.inline
   def apply(Geometry: PointSequenceSequence, PolyPolygon: PointSequenceSequence, PolygonKind: PolygonKind): PolyPolygonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Geometry")(Geometry.asInstanceOf[js.Any])
-    __obj.updateDynamic("PolyPolygon")(PolyPolygon.asInstanceOf[js.Any])
-    __obj.updateDynamic("PolygonKind")(PolygonKind)
+    val __obj = js.Dynamic.literal(Geometry = Geometry.asInstanceOf[js.Any], PolyPolygon = PolyPolygon.asInstanceOf[js.Any], PolygonKind = PolygonKind)
+  
     __obj.asInstanceOf[PolyPolygonDescriptor]
   }
 }

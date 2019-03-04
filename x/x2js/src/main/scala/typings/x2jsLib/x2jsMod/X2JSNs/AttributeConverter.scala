@@ -34,9 +34,8 @@ object AttributeConverter {
     convert: js.Function2[java.lang.String, js.Any, java.lang.String],
     test: js.Function2[java.lang.String, js.Any, scala.Boolean]
   ): AttributeConverter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convert")(convert)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(convert = convert, test = test)
+  
     __obj.asInstanceOf[AttributeConverter]
   }
 }

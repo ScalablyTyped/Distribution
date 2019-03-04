@@ -59,13 +59,8 @@ object SceneService {
     url: java.lang.String,
     version: SceneServiceVersion
   ): SceneService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("layerId")(layerId)
-    __obj.updateDynamic("spatialReference")(spatialReference)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(copyright = copyright, layerId = layerId, spatialReference = spatialReference, token = token, url = url, version = version)
+  
     __obj.asInstanceOf[SceneService]
   }
 }

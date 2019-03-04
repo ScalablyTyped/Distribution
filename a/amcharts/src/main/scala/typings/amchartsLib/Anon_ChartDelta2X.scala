@@ -48,8 +48,8 @@ object Anon_ChartDelta2X {
     y: scala.Int | scala.Double = null,
     zooming: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ChartDelta2X = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chart")(chart)
+    val __obj = js.Dynamic.literal(chart = chart)
+    __obj.updateDynamic("type")(`type`)
     if (delta2X != null) __obj.updateDynamic("delta2X")(delta2X.asInstanceOf[js.Any])
     if (delta2Y != null) __obj.updateDynamic("delta2Y")(delta2Y.asInstanceOf[js.Any])
     if (deltaX != null) __obj.updateDynamic("deltaX")(deltaX.asInstanceOf[js.Any])

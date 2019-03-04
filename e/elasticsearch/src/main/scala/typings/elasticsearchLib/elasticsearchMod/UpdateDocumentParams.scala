@@ -56,9 +56,8 @@ object UpdateDocumentParams {
     versionType: elasticsearchLib.elasticsearchLibStrings.internal | elasticsearchLib.elasticsearchLibStrings.force = null,
     waitForActiveShards: java.lang.String = null
   ): UpdateDocumentParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(id = id, index = index)
+    __obj.updateDynamic("type")(`type`)
     if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
     if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
     if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])

@@ -26,8 +26,8 @@ object ChannelBannersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ChannelBannerResource]
     ]
   ): ChannelBannersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[ChannelBannersResource]
   }
 }

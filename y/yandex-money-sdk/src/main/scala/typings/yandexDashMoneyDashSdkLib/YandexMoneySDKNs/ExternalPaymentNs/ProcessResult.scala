@@ -26,8 +26,7 @@ object ProcessResult {
     money_source: yandexDashMoneyDashSdkLib.Anon_Moneysourcetoken = null,
     next_retry: scala.Int | scala.Double = null
   ): ProcessResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (acs_params != null) __obj.updateDynamic("acs_params")(acs_params)
     if (acs_uri != null) __obj.updateDynamic("acs_uri")(acs_uri)
     if (error != null) __obj.updateDynamic("error")(error)

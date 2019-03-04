@@ -12,8 +12,8 @@ trait Anon_RecordRowPath extends js.Object {
 object Anon_RecordRowPath {
   @scala.inline
   def apply(recordRowPath: java.lang.String): Anon_RecordRowPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recordRowPath")(recordRowPath)
+    val __obj = js.Dynamic.literal(recordRowPath = recordRowPath)
+  
     __obj.asInstanceOf[Anon_RecordRowPath]
   }
 }

@@ -13,9 +13,8 @@ trait KeyFingerprint extends js.Object {
 object KeyFingerprint {
   @scala.inline
   def apply(fingerprint: java.lang.String, words: js.Array[java.lang.String]): KeyFingerprint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint, words = words)
+  
     __obj.asInstanceOf[KeyFingerprint]
   }
 }

@@ -24,8 +24,8 @@ object RangeSelectorButton {
     dataGrouping: js.Any = null,
     events: RangeSelectorButtonEvent = null
   ): RangeSelectorButton = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping)
     if (events != null) __obj.updateDynamic("events")(events)

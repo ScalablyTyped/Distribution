@@ -54,15 +54,8 @@ object XDictionaryEntry {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDictionaryEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DictionaryWord")(DictionaryWord)
-    __obj.updateDynamic("ReplacementText")(ReplacementText)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDictionaryWord")(getDictionaryWord)
-    __obj.updateDynamic("getReplacementText")(getReplacementText)
-    __obj.updateDynamic("isNegative")(isNegative)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DictionaryWord = DictionaryWord, ReplacementText = ReplacementText, acquire = acquire, getDictionaryWord = getDictionaryWord, getReplacementText = getReplacementText, isNegative = isNegative, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDictionaryEntry]
   }
 }

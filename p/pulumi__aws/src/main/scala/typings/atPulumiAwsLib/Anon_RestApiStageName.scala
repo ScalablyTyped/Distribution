@@ -16,9 +16,8 @@ object Anon_RestApiStageName {
     restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi],
     stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_RestApiStageName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(restApi = restApi.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_RestApiStageName]
   }
 }

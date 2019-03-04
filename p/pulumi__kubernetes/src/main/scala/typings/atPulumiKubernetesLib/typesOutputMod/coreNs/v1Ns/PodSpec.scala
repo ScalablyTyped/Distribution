@@ -229,37 +229,8 @@ object PodSpec {
     tolerations: js.Array[Toleration],
     volumes: js.Array[Volume]
   ): PodSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeDeadlineSeconds")(activeDeadlineSeconds)
-    __obj.updateDynamic("affinity")(affinity)
-    __obj.updateDynamic("automountServiceAccountToken")(automountServiceAccountToken)
-    __obj.updateDynamic("containers")(containers)
-    __obj.updateDynamic("dnsConfig")(dnsConfig)
-    __obj.updateDynamic("dnsPolicy")(dnsPolicy)
-    __obj.updateDynamic("enableServiceLinks")(enableServiceLinks)
-    __obj.updateDynamic("hostAliases")(hostAliases)
-    __obj.updateDynamic("hostIPC")(hostIPC)
-    __obj.updateDynamic("hostNetwork")(hostNetwork)
-    __obj.updateDynamic("hostPID")(hostPID)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("imagePullSecrets")(imagePullSecrets)
-    __obj.updateDynamic("initContainers")(initContainers)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeSelector")(nodeSelector)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("priorityClassName")(priorityClassName)
-    __obj.updateDynamic("readinessGates")(readinessGates)
-    __obj.updateDynamic("restartPolicy")(restartPolicy)
-    __obj.updateDynamic("runtimeClassName")(runtimeClassName)
-    __obj.updateDynamic("schedulerName")(schedulerName)
-    __obj.updateDynamic("securityContext")(securityContext)
-    __obj.updateDynamic("serviceAccount")(serviceAccount)
-    __obj.updateDynamic("serviceAccountName")(serviceAccountName)
-    __obj.updateDynamic("shareProcessNamespace")(shareProcessNamespace)
-    __obj.updateDynamic("subdomain")(subdomain)
-    __obj.updateDynamic("terminationGracePeriodSeconds")(terminationGracePeriodSeconds)
-    __obj.updateDynamic("tolerations")(tolerations)
-    __obj.updateDynamic("volumes")(volumes)
+    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, affinity = affinity, automountServiceAccountToken = automountServiceAccountToken, containers = containers, dnsConfig = dnsConfig, dnsPolicy = dnsPolicy, enableServiceLinks = enableServiceLinks, hostAliases = hostAliases, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostname = hostname, imagePullSecrets = imagePullSecrets, initContainers = initContainers, nodeName = nodeName, nodeSelector = nodeSelector, priority = priority, priorityClassName = priorityClassName, readinessGates = readinessGates, restartPolicy = restartPolicy, runtimeClassName = runtimeClassName, schedulerName = schedulerName, securityContext = securityContext, serviceAccount = serviceAccount, serviceAccountName = serviceAccountName, shareProcessNamespace = shareProcessNamespace, subdomain = subdomain, terminationGracePeriodSeconds = terminationGracePeriodSeconds, tolerations = tolerations, volumes = volumes)
+  
     __obj.asInstanceOf[PodSpec]
   }
 }

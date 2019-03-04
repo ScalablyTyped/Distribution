@@ -20,10 +20,8 @@ object Anon_Feature {
     transportModes: js.Array[java.lang.String],
     `type`: java.lang.String
   ): Anon_Feature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("feature")(feature)
-    __obj.updateDynamic("trafficMode")(trafficMode)
-    __obj.updateDynamic("transportModes")(transportModes)
+    val __obj = js.Dynamic.literal(feature = feature, trafficMode = trafficMode, transportModes = transportModes)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Feature]
   }
 }

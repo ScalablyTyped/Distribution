@@ -101,22 +101,8 @@ object GaugeArrow {
     startWidth: scala.Double,
     value: scala.Double
   ): GaugeArrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("borderAlpha")(borderAlpha)
-    __obj.updateDynamic("clockWiseOnly")(clockWiseOnly)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("innerRadius")(innerRadius)
-    __obj.updateDynamic("nailAlpha")(nailAlpha)
-    __obj.updateDynamic("nailBorderAlpha")(nailBorderAlpha)
-    __obj.updateDynamic("nailBorderThickness")(nailBorderThickness)
-    __obj.updateDynamic("nailRadius")(nailRadius)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("startWidth")(startWidth)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(alpha = alpha, axis = axis, borderAlpha = borderAlpha, clockWiseOnly = clockWiseOnly, color = color, id = id, innerRadius = innerRadius, nailAlpha = nailAlpha, nailBorderAlpha = nailBorderAlpha, nailBorderThickness = nailBorderThickness, nailRadius = nailRadius, radius = radius, setValue = setValue, startWidth = startWidth, value = value)
+  
     __obj.asInstanceOf[GaugeArrow]
   }
 }

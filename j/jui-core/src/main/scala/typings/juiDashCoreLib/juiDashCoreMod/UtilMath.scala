@@ -79,24 +79,8 @@ object UtilMath {
     rotate: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
     round: js.Function2[scala.Double, scala.Double, scala.Double]
   ): UtilMath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("degree")(degree)
-    __obj.updateDynamic("div")(div)
-    __obj.updateDynamic("interpolateNumber")(interpolateNumber)
-    __obj.updateDynamic("interpolateRound")(interpolateRound)
-    __obj.updateDynamic("inverseMatrix3d")(inverseMatrix3d)
-    __obj.updateDynamic("matrix")(matrix)
-    __obj.updateDynamic("matrix3d")(matrix3d)
-    __obj.updateDynamic("minus")(minus)
-    __obj.updateDynamic("multi")(multi)
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("plus")(plus)
-    __obj.updateDynamic("radian")(radian)
-    __obj.updateDynamic("remain")(remain)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("round")(round)
+    val __obj = js.Dynamic.literal(angle = angle, degree = degree, div = div, interpolateNumber = interpolateNumber, interpolateRound = interpolateRound, inverseMatrix3d = inverseMatrix3d, matrix = matrix, matrix3d = matrix3d, minus = minus, multi = multi, nice = nice, plus = plus, radian = radian, remain = remain, resize = resize, rotate = rotate, round = round)
+  
     __obj.asInstanceOf[UtilMath]
   }
 }

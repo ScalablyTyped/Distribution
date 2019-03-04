@@ -24,12 +24,7 @@ object FiveRatingSet {
     twoBars: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): FiveRatingSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fourBars")(fourBars)
-    __obj.updateDynamic("noBars")(noBars)
-    __obj.updateDynamic("oneBar")(oneBar)
-    __obj.updateDynamic("threeBars")(threeBars)
-    __obj.updateDynamic("twoBars")(twoBars)
+    val __obj = js.Dynamic.literal(fourBars = fourBars, noBars = noBars, oneBar = oneBar, threeBars = threeBars, twoBars = twoBars)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FiveRatingSet]
   }

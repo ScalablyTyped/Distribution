@@ -18,9 +18,8 @@ object Anon_Rgbcolor {
     rgb_color: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.RgbColor,
     theme_color: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.ThemeColorType
   ): Anon_Rgbcolor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rgb_color")(rgb_color)
-    __obj.updateDynamic("theme_color")(theme_color)
+    val __obj = js.Dynamic.literal(rgb_color = rgb_color, theme_color = theme_color)
+  
     __obj.asInstanceOf[Anon_Rgbcolor]
   }
 }

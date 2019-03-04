@@ -45,25 +45,8 @@ object TabControllerModel {
     setGroupControl: js.Function1[scala.Boolean, scala.Unit],
     write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
   ): TabControllerModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ControlModels")(ControlModels)
-    __obj.updateDynamic("GroupControl")(GroupControl)
-    __obj.updateDynamic("GroupCount")(GroupCount)
-    __obj.updateDynamic("ServiceName")(ServiceName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControlModels")(getControlModels)
-    __obj.updateDynamic("getGroup")(getGroup)
-    __obj.updateDynamic("getGroupByName")(getGroupByName)
-    __obj.updateDynamic("getGroupControl")(getGroupControl)
-    __obj.updateDynamic("getGroupCount")(getGroupCount)
-    __obj.updateDynamic("getServiceName")(getServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setControlModels")(setControlModels)
-    __obj.updateDynamic("setGroup")(setGroup)
-    __obj.updateDynamic("setGroupControl")(setGroupControl)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(ControlModels = ControlModels, GroupControl = GroupControl, GroupCount = GroupCount, ServiceName = ServiceName, acquire = acquire, getControlModels = getControlModels, getGroup = getGroup, getGroupByName = getGroupByName, getGroupControl = getGroupControl, getGroupCount = getGroupCount, getServiceName = getServiceName, queryInterface = queryInterface, read = read, release = release, setControlModels = setControlModels, setGroup = setGroup, setGroupControl = setGroupControl, write = write)
+  
     __obj.asInstanceOf[TabControllerModel]
   }
 }

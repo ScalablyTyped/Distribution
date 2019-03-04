@@ -41,10 +41,8 @@ object EndpointSubset {
     notReadyAddresses: js.Array[EndpointAddress],
     ports: js.Array[EndpointPort]
   ): EndpointSubset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("notReadyAddresses")(notReadyAddresses)
-    __obj.updateDynamic("ports")(ports)
+    val __obj = js.Dynamic.literal(addresses = addresses, notReadyAddresses = notReadyAddresses, ports = ports)
+  
     __obj.asInstanceOf[EndpointSubset]
   }
 }

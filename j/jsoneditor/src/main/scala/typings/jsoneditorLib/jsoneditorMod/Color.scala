@@ -26,14 +26,8 @@ object Color {
     rgba: js.Array[scala.Double],
     rgbaString: java.lang.String
   ): Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("hslString")(hslString)
-    __obj.updateDynamic("hsla")(hsla)
-    __obj.updateDynamic("hslaString")(hslaString)
-    __obj.updateDynamic("rgbString")(rgbString)
-    __obj.updateDynamic("rgba")(rgba)
-    __obj.updateDynamic("rgbaString")(rgbaString)
+    val __obj = js.Dynamic.literal(hex = hex, hslString = hslString, hsla = hsla, hslaString = hslaString, rgbString = rgbString, rgba = rgba, rgbaString = rgbaString)
+  
     __obj.asInstanceOf[Color]
   }
 }

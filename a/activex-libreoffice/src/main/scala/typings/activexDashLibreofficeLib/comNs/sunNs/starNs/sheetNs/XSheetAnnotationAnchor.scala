@@ -27,12 +27,8 @@ object XSheetAnnotationAnchor {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetAnnotationAnchor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Annotation")(Annotation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAnnotation")(getAnnotation)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Annotation = Annotation, acquire = acquire, getAnnotation = getAnnotation, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetAnnotationAnchor]
   }
 }

@@ -51,13 +51,8 @@ object TableLookSettings {
     doNotApplyColumnBanding: scala.Boolean,
     doNotApplyRowBanding: scala.Boolean
   ): TableLookSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyFirstColumn")(applyFirstColumn)
-    __obj.updateDynamic("applyFirstRow")(applyFirstRow)
-    __obj.updateDynamic("applyLastColumn")(applyLastColumn)
-    __obj.updateDynamic("applyLastRow")(applyLastRow)
-    __obj.updateDynamic("doNotApplyColumnBanding")(doNotApplyColumnBanding)
-    __obj.updateDynamic("doNotApplyRowBanding")(doNotApplyRowBanding)
+    val __obj = js.Dynamic.literal(applyFirstColumn = applyFirstColumn, applyFirstRow = applyFirstRow, applyLastColumn = applyLastColumn, applyLastRow = applyLastRow, doNotApplyColumnBanding = doNotApplyColumnBanding, doNotApplyRowBanding = doNotApplyRowBanding)
+  
     __obj.asInstanceOf[TableLookSettings]
   }
 }

@@ -18,8 +18,7 @@ object Anon_Context {
     context: nodecredstashLib.nodecredstashMod.CredstashContext = null,
     limit: scala.Int | scala.Double = null
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (context != null) __obj.updateDynamic("context")(context)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Context]

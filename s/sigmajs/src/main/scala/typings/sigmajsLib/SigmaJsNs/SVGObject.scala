@@ -16,9 +16,8 @@ object SVGObject {
     create: js.Function2[T, /* repeated */ js.Any, stdLib.Element],
     update: js.Function2[T, /* repeated */ js.Any, scala.Unit]
   ): SVGObject[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, update = update)
+  
     __obj.asInstanceOf[SVGObject[T]]
   }
 }

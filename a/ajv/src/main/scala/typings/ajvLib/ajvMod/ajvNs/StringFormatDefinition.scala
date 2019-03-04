@@ -22,8 +22,7 @@ object StringFormatDefinition {
     compare: js.Function2[/* data1 */ java.lang.String, /* data2 */ java.lang.String, scala.Double] = null,
     `type`: ajvLib.ajvLibStrings.string = null
   ): StringFormatDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (compare != null) __obj.updateDynamic("compare")(compare)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

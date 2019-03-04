@@ -47,30 +47,8 @@ object XOLESimpleStorage {
       scala.Unit
     ]
   ): XOLESimpleStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClassID")(ClassID)
-    __obj.updateDynamic("ClassName")(ClassName)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getClassID")(getClassID)
-    __obj.updateDynamic("getClassName")(getClassName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("replaceByName")(replaceByName)
-    __obj.updateDynamic("revert")(revert)
-    __obj.updateDynamic("setClassInfo")(setClassInfo)
+    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, commit = commit, dispose = dispose, getByName = getByName, getClassID = getClassID, getClassName = getClassName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, queryInterface = queryInterface, release = release, removeByName = removeByName, removeEventListener = removeEventListener, replaceByName = replaceByName, revert = revert, setClassInfo = setClassInfo)
+  
     __obj.asInstanceOf[XOLESimpleStorage]
   }
 }

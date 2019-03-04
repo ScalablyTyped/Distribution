@@ -30,16 +30,8 @@ object ReleaseDefinitionEnvironmentTemplate {
     isDeleted: scala.Boolean,
     name: java.lang.String
   ): ReleaseDefinitionEnvironmentTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canDelete")(canDelete)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("iconTaskId")(iconTaskId)
-    __obj.updateDynamic("iconUri")(iconUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(canDelete = canDelete, category = category, description = description, environment = environment, iconTaskId = iconTaskId, iconUri = iconUri, id = id, isDeleted = isDeleted, name = name)
+  
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentTemplate]
   }
 }

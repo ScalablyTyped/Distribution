@@ -47,13 +47,8 @@ object ASPxClientWebDocumentViewerEditingField {
     pageIndex: js.Function0[scala.Double],
     readOnly: js.Any
   ): ASPxClientWebDocumentViewerEditingField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editValue")(editValue)
-    __obj.updateDynamic("editorName")(editorName)
-    __obj.updateDynamic("groupID")(groupID)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pageIndex")(pageIndex)
-    __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(editValue = editValue, editorName = editorName, groupID = groupID, id = id, pageIndex = pageIndex, readOnly = readOnly)
+  
     __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingField]
   }
 }

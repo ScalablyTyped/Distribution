@@ -12,8 +12,8 @@ trait IIterable[T] extends js.Object {
 object IIterable {
   @scala.inline
   def apply[T](first: js.Function0[IIterator[T]]): IIterable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
+    val __obj = js.Dynamic.literal(first = first)
+  
     __obj.asInstanceOf[IIterable[T]]
   }
 }

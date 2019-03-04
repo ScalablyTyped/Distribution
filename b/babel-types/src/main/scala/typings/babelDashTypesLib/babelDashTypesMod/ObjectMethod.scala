@@ -55,20 +55,8 @@ object ObjectMethod {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration = null
   ): ObjectMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("shorthand")(shorthand)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, end = end, generator = generator, id = id, key = key, kind = kind.asInstanceOf[js.Any], loc = loc, params = params, shorthand = shorthand, start = start, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

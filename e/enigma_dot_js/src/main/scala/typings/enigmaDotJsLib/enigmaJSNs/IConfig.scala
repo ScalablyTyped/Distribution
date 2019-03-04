@@ -67,9 +67,7 @@ object IConfig {
     responseInterceptors: js.Array[IResponseInterceptors] = null,
     suspendOnClose: js.UndefOr[scala.Boolean] = js.undefined
   ): IConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(schema = schema, url = url)
     if (Promise != null) __obj.updateDynamic("Promise")(Promise)
     if (createSocket != null) __obj.updateDynamic("createSocket")(createSocket)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)

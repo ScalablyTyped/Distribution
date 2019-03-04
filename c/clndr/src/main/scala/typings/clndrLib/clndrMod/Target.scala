@@ -14,10 +14,8 @@ trait Target extends js.Object {
 object Target {
   @scala.inline
   def apply(date: momentLib.momentMod.momentNs.Moment, element: stdLib.Element, events: js.Array[_]): Target = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(date = date, element = element, events = events)
+  
     __obj.asInstanceOf[Target]
   }
 }

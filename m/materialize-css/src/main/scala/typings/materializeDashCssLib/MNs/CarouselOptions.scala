@@ -66,16 +66,8 @@ object CarouselOptions {
     padding: scala.Double,
     shift: scala.Double
   ): CarouselOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dist")(dist)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("fullWidth")(fullWidth)
-    __obj.updateDynamic("indicators")(indicators)
-    __obj.updateDynamic("noWrap")(noWrap)
-    __obj.updateDynamic("numVisible")(numVisible)
-    __obj.updateDynamic("onCycleTo")(onCycleTo)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(dist = dist, duration = duration, fullWidth = fullWidth, indicators = indicators, noWrap = noWrap, numVisible = numVisible, onCycleTo = onCycleTo, padding = padding, shift = shift)
+  
     __obj.asInstanceOf[CarouselOptions]
   }
 }

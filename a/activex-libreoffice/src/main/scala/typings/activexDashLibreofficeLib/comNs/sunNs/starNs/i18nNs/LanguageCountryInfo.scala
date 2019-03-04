@@ -26,12 +26,8 @@ object LanguageCountryInfo {
     LanguageDefaultName: java.lang.String,
     Variant: java.lang.String
   ): LanguageCountryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Country")(Country)
-    __obj.updateDynamic("CountryDefaultName")(CountryDefaultName)
-    __obj.updateDynamic("Language")(Language)
-    __obj.updateDynamic("LanguageDefaultName")(LanguageDefaultName)
-    __obj.updateDynamic("Variant")(Variant)
+    val __obj = js.Dynamic.literal(Country = Country, CountryDefaultName = CountryDefaultName, Language = Language, LanguageDefaultName = LanguageDefaultName, Variant = Variant)
+  
     __obj.asInstanceOf[LanguageCountryInfo]
   }
 }

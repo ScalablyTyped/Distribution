@@ -51,12 +51,8 @@ object Browser {
     name: java.lang.String,
     version: scala.Double
   ): Browser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("documentMode")(documentMode)
-    __obj.updateDynamic("hasDebuggerStatement")(hasDebuggerStatement)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(agent = agent, documentMode = documentMode, hasDebuggerStatement = hasDebuggerStatement, name = name, version = version)
+  
     __obj.asInstanceOf[Browser]
   }
 }

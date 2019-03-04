@@ -12,9 +12,8 @@ trait KeyAuthentication extends Authentication {
 object KeyAuthentication {
   @scala.inline
   def apply(key: java.lang.String, scheme: java.lang.String): KeyAuthentication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(key = key, scheme = scheme)
+  
     __obj.asInstanceOf[KeyAuthentication]
   }
 }

@@ -47,12 +47,7 @@ object TokenData {
     amount: scala.Int | scala.Double = null,
     currency: java.lang.String = null
   ): TokenData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address_city")(address_city)
-    __obj.updateDynamic("address_line1")(address_line1)
-    __obj.updateDynamic("address_state")(address_state)
-    __obj.updateDynamic("address_zip")(address_zip)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(address_city = address_city, address_line1 = address_line1, address_state = address_state, address_zip = address_zip, name = name)
     if (address_country != null) __obj.updateDynamic("address_country")(address_country)
     if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])

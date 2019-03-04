@@ -28,12 +28,8 @@ object IPlayReadyDomain {
     revision: scala.Double,
     serviceId: java.lang.String
   ): IPlayReadyDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("domainJoinUrl")(domainJoinUrl)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("serviceId")(serviceId)
+    val __obj = js.Dynamic.literal(accountId = accountId, domainJoinUrl = domainJoinUrl, friendlyName = friendlyName, revision = revision, serviceId = serviceId)
+  
     __obj.asInstanceOf[IPlayReadyDomain]
   }
 }

@@ -47,32 +47,8 @@ object FieldSchema_InView_UserField {
     fieldRenderer: js.Any,
     listItemMenu: java.lang.String
   ): FieldSchema_InView_UserField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("AllowMultipleValues")(AllowMultipleValues)
-    __obj.updateDynamic("CalloutMenu")(CalloutMenu)
-    __obj.updateDynamic("ClassInfo")(ClassInfo)
-    __obj.updateDynamic("DefaultRender")(DefaultRender)
-    __obj.updateDynamic("DisplayName")(DisplayName)
-    __obj.updateDynamic("Explicit")(Explicit)
-    __obj.updateDynamic("FieldTitle")(FieldTitle)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("Filterable")(Filterable)
-    __obj.updateDynamic("GridActiveAndReadOnly")(GridActiveAndReadOnly)
-    __obj.updateDynamic("GroupField")(GroupField)
-    __obj.updateDynamic("HasPrefix")(HasPrefix)
-    __obj.updateDynamic("HasUserLink")(HasUserLink)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("ImnHeader")(ImnHeader)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReadOnly")(ReadOnly)
-    __obj.updateDynamic("RealFieldName")(RealFieldName)
-    __obj.updateDynamic("ResultType")(ResultType)
-    __obj.updateDynamic("Sortable")(Sortable)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("fieldRenderer")(fieldRenderer)
-    __obj.updateDynamic("listItemMenu")(listItemMenu)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, AllowMultipleValues = AllowMultipleValues, CalloutMenu = CalloutMenu, ClassInfo = ClassInfo, DefaultRender = DefaultRender, DisplayName = DisplayName, Explicit = Explicit, FieldTitle = FieldTitle, FieldType = FieldType, Filterable = Filterable, GridActiveAndReadOnly = GridActiveAndReadOnly, GroupField = GroupField, HasPrefix = HasPrefix, HasUserLink = HasUserLink, ID = ID, ImnHeader = ImnHeader, Name = Name, ReadOnly = ReadOnly, RealFieldName = RealFieldName, ResultType = ResultType, Sortable = Sortable, Type = Type, css = css, fieldRenderer = fieldRenderer, listItemMenu = listItemMenu)
+  
     __obj.asInstanceOf[FieldSchema_InView_UserField]
   }
 }

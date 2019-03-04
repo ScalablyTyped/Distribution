@@ -13,9 +13,8 @@ trait Anon_MajorAxis extends js.Object {
 object Anon_MajorAxis {
   @scala.inline
   def apply(majorAxis: js.Object, minorAxis: js.Object): Anon_MajorAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("majorAxis")(majorAxis)
-    __obj.updateDynamic("minorAxis")(minorAxis)
+    val __obj = js.Dynamic.literal(majorAxis = majorAxis, minorAxis = minorAxis)
+  
     __obj.asInstanceOf[Anon_MajorAxis]
   }
 }

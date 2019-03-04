@@ -28,10 +28,8 @@ object JSXOpeningElement {
     selfClosing: scala.Boolean,
     `type`: astDashTypesLib.astDashTypesLibStrings.JSXOpeningElement
   ): JSXOpeningElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("selfClosing")(selfClosing)
+    val __obj = js.Dynamic.literal(attributes = attributes, name = name.asInstanceOf[js.Any], selfClosing = selfClosing)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSXOpeningElement]
   }
 }

@@ -18,10 +18,8 @@ object Anon_Key {
     name: java.lang.String,
     value: java.lang.String | stdLib.RegExp | js.Function
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, name = name, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

@@ -36,11 +36,8 @@ object ChartTableAddressSupplier {
     SeriesAddresses: activexDashInteropLib.SafeArray[ChartSeriesAddress],
     SubTitleAddress: java.lang.String
   ): ChartTableAddressSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CategoriesRangeAddress")(CategoriesRangeAddress)
-    __obj.updateDynamic("MainTitleAddress")(MainTitleAddress)
-    __obj.updateDynamic("SeriesAddresses")(SeriesAddresses)
-    __obj.updateDynamic("SubTitleAddress")(SubTitleAddress)
+    val __obj = js.Dynamic.literal(CategoriesRangeAddress = CategoriesRangeAddress, MainTitleAddress = MainTitleAddress, SeriesAddresses = SeriesAddresses, SubTitleAddress = SubTitleAddress)
+  
     __obj.asInstanceOf[ChartTableAddressSupplier]
   }
 }

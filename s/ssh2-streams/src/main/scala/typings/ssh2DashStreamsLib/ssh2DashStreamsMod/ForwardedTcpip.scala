@@ -20,11 +20,8 @@ object ForwardedTcpip {
     remoteAddr: java.lang.String,
     remotePort: scala.Double
   ): ForwardedTcpip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindAddr")(bindAddr)
-    __obj.updateDynamic("bindPort")(bindPort)
-    __obj.updateDynamic("remoteAddr")(remoteAddr)
-    __obj.updateDynamic("remotePort")(remotePort)
+    val __obj = js.Dynamic.literal(bindAddr = bindAddr, bindPort = bindPort, remoteAddr = remoteAddr, remotePort = remotePort)
+  
     __obj.asInstanceOf[ForwardedTcpip]
   }
 }

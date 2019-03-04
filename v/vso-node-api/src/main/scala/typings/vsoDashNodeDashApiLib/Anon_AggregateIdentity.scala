@@ -20,11 +20,8 @@ object Anon_AggregateIdentity {
     none: scala.Double,
     serviceIdentity: scala.Double
   ): Anon_AggregateIdentity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregateIdentity")(aggregateIdentity)
-    __obj.updateDynamic("importedIdentity")(importedIdentity)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("serviceIdentity")(serviceIdentity)
+    val __obj = js.Dynamic.literal(aggregateIdentity = aggregateIdentity, importedIdentity = importedIdentity, none = none, serviceIdentity = serviceIdentity)
+  
     __obj.asInstanceOf[Anon_AggregateIdentity]
   }
 }

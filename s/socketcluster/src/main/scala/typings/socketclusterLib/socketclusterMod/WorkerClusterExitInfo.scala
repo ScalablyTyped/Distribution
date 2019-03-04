@@ -20,11 +20,8 @@ object WorkerClusterExitInfo {
     pid: scala.Double,
     signal: java.lang.String
   ): WorkerClusterExitInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childProcess")(childProcess)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(childProcess = childProcess, code = code, pid = pid, signal = signal)
+  
     __obj.asInstanceOf[WorkerClusterExitInfo]
   }
 }

@@ -28,14 +28,8 @@ object Anon_BlockColumn {
     lineno: scala.Double,
     `val`: java.lang.String
   ): Anon_BlockColumn = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("expr")(expr)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("lineno")(lineno)
+    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, expr = expr, filename = filename, key = key, lineno = lineno)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_BlockColumn]
   }
 }

@@ -42,10 +42,7 @@ object SwaggerObject {
     securityDefinitions: SecurityDefinitionsObject = null,
     tags: js.Array[TagObject] = null
   ): SwaggerObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("paths")(paths)
-    __obj.updateDynamic("swagger")(swagger)
+    val __obj = js.Dynamic.literal(info = info, paths = paths, swagger = swagger)
     if (basePath != null) __obj.updateDynamic("basePath")(basePath)
     if (consumes != null) __obj.updateDynamic("consumes")(consumes)
     if (definitions != null) __obj.updateDynamic("definitions")(definitions)

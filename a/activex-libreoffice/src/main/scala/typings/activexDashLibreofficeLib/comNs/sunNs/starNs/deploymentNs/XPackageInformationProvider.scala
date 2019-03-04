@@ -39,11 +39,8 @@ object XPackageInformationProvider {
       activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
     ]
   ): XPackageInformationProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExtensionList")(ExtensionList)
-    __obj.updateDynamic("getExtensionList")(getExtensionList)
-    __obj.updateDynamic("getPackageLocation")(getPackageLocation)
-    __obj.updateDynamic("isUpdateAvailable")(isUpdateAvailable)
+    val __obj = js.Dynamic.literal(ExtensionList = ExtensionList, getExtensionList = getExtensionList, getPackageLocation = getPackageLocation, isUpdateAvailable = isUpdateAvailable)
+  
     __obj.asInstanceOf[XPackageInformationProvider]
   }
 }

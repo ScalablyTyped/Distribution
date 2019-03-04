@@ -12,8 +12,8 @@ trait DeploymentTest extends Deployment {
 object DeploymentTest {
   @scala.inline
   def apply(runId: scala.Double, `type`: java.lang.String): DeploymentTest = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("runId")(runId)
+    val __obj = js.Dynamic.literal(runId = runId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeploymentTest]
   }
 }

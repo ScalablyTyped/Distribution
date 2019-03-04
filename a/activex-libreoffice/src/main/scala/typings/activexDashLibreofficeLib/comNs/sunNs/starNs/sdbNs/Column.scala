@@ -61,38 +61,8 @@ object Column {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Column = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Align")(Align)
-    __obj.updateDynamic("ControlDefault")(ControlDefault)
-    __obj.updateDynamic("ControlModel")(ControlModel)
-    __obj.updateDynamic("DefaultValue")(DefaultValue)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("FormatKey")(FormatKey)
-    __obj.updateDynamic("HelpText")(HelpText)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("IsAutoIncrement")(IsAutoIncrement)
-    __obj.updateDynamic("IsCurrency")(IsCurrency)
-    __obj.updateDynamic("IsNullable")(IsNullable)
-    __obj.updateDynamic("IsRowVersion")(IsRowVersion)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Precision")(Precision)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Scale")(Scale)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("TypeName")(TypeName)
-    __obj.updateDynamic("Width")(Width)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createDataDescriptor")(createDataDescriptor)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Align = Align, ControlDefault = ControlDefault, ControlModel = ControlModel, DefaultValue = DefaultValue, Description = Description, FormatKey = FormatKey, HelpText = HelpText, Hidden = Hidden, IsAutoIncrement = IsAutoIncrement, IsCurrency = IsCurrency, IsNullable = IsNullable, IsRowVersion = IsRowVersion, Name = Name, Position = Position, Precision = Precision, PropertySetInfo = PropertySetInfo, Scale = Scale, Type = Type, TypeName = TypeName, Width = Width, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createDataDescriptor = createDataDescriptor, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[Column]
   }
 }

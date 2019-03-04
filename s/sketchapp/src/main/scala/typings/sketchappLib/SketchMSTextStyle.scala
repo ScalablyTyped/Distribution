@@ -16,9 +16,8 @@ object SketchMSTextStyle {
     _class: sketchappLib.sketchappLibStrings.textStyle,
     encodedAttributes: Anon_MSAttributedStringColorAttribute
   ): SketchMSTextStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("encodedAttributes")(encodedAttributes)
+    val __obj = js.Dynamic.literal(_class = _class, encodedAttributes = encodedAttributes)
+  
     __obj.asInstanceOf[SketchMSTextStyle]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Pkcs12 extends js.Object {
 object Anon_Pkcs12 {
   @scala.inline
   def apply(pkcs12: js.Any): Anon_Pkcs12 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pkcs12")(pkcs12)
+    val __obj = js.Dynamic.literal(pkcs12 = pkcs12)
+  
     __obj.asInstanceOf[Anon_Pkcs12]
   }
 }

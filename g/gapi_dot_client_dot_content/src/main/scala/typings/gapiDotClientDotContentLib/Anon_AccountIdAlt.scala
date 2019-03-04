@@ -48,9 +48,7 @@ object Anon_AccountIdAlt {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(accountId = accountId, merchantId = merchantId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -47,14 +47,8 @@ object Stat {
     ppid: scala.Double,
     timestamp: scala.Double
   ): Stat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpu")(cpu)
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("elapsed")(elapsed)
-    __obj.updateDynamic("memory")(memory)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("ppid")(ppid)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(cpu = cpu, ctime = ctime, elapsed = elapsed, memory = memory, pid = pid, ppid = ppid, timestamp = timestamp)
+  
     __obj.asInstanceOf[Stat]
   }
 }

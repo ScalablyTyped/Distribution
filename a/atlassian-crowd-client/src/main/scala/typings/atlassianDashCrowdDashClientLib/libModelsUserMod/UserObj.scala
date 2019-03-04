@@ -26,10 +26,10 @@ object UserObj {
     name: java.lang.String,
     password: atlassianDashCrowdDashClientLib.Anon_Value = null
   ): UserObj = {
-    val __obj = js.Dynamic.literal(`display-name` = `display-name`, `first-name` = `first-name`, `last-name` = `last-name`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(active = active, email = email, name = name)
+    __obj.updateDynamic("display-name")(`display-name`)
+    __obj.updateDynamic("first-name")(`first-name`)
+    __obj.updateDynamic("last-name")(`last-name`)
     if (password != null) __obj.updateDynamic("password")(password)
     __obj.asInstanceOf[UserObj]
   }

@@ -29,7 +29,8 @@ object CurrentCell {
     keys: atOracleOraclejetLib.Anon_ColumnRowK[K] = null,
     level: scala.Int | scala.Double = null
   ): CurrentCell[K] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (indexes != null) __obj.updateDynamic("indexes")(indexes)

@@ -20,8 +20,8 @@ object Anon_Row {
       reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditCheckboxOptionValue | reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditSelectOptionValue
     ])
   ): Anon_Row[TRow] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Row[TRow]]
   }
 }

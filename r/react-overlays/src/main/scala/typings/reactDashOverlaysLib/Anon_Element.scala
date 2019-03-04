@@ -16,8 +16,7 @@ object Anon_Element {
     style: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
     ref: js.Function1[/* element */ reactLib.HTMLElement, scala.Unit] = null
   ): Anon_Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     __obj.asInstanceOf[Anon_Element]
   }

@@ -30,12 +30,7 @@ object TimeStampReq {
     nonce: asn1jsLib.asn1jsMod.Integer = null,
     reqPolicy: java.lang.String = null
   ): TimeStampReq = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("messageImprint")(messageImprint)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, messageImprint = messageImprint, toJSON = toJSON, toSchema = toSchema, version = version)
     if (!js.isUndefined(certReq)) __obj.updateDynamic("certReq")(certReq)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)

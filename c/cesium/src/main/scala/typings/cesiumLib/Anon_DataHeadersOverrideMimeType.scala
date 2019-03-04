@@ -34,8 +34,7 @@ object Anon_DataHeadersOverrideMimeType {
     retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
     templateValues: js.Any = null
   ): Anon_DataHeadersOverrideMimeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)

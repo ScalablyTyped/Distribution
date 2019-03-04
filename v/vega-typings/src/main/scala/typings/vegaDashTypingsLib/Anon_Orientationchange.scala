@@ -16,8 +16,8 @@ object Anon_Orientationchange {
     source: vegaDashTypingsLib.vegaDashTypingsLibStrings.window,
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.orientationchange
   ): Anon_Orientationchange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Orientationchange]
   }
 }

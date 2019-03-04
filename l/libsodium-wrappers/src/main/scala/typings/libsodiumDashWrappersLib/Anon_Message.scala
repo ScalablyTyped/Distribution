@@ -13,9 +13,8 @@ trait Anon_Message extends js.Object {
 object Anon_Message {
   @scala.inline
   def apply(message: stdLib.Uint8Array, tag: scala.Double): Anon_Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(message = message, tag = tag)
+  
     __obj.asInstanceOf[Anon_Message]
   }
 }

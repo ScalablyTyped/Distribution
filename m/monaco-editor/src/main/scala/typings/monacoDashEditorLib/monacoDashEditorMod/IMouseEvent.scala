@@ -42,22 +42,8 @@ object IMouseEvent {
     target: stdLib.HTMLElement,
     timestamp: scala.Double
   ): IMouseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altKey")(altKey)
-    __obj.updateDynamic("browserEvent")(browserEvent)
-    __obj.updateDynamic("ctrlKey")(ctrlKey)
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("leftButton")(leftButton)
-    __obj.updateDynamic("metaKey")(metaKey)
-    __obj.updateDynamic("middleButton")(middleButton)
-    __obj.updateDynamic("posx")(posx)
-    __obj.updateDynamic("posy")(posy)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("rightButton")(rightButton)
-    __obj.updateDynamic("shiftKey")(shiftKey)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, ctrlKey = ctrlKey, detail = detail, leftButton = leftButton, metaKey = metaKey, middleButton = middleButton, posx = posx, posy = posy, preventDefault = preventDefault, rightButton = rightButton, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, timestamp = timestamp)
+  
     __obj.asInstanceOf[IMouseEvent]
   }
 }

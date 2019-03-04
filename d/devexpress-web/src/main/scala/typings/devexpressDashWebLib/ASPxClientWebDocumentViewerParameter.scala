@@ -38,10 +38,8 @@ object ASPxClientWebDocumentViewerParameter {
     `type`: js.Object,
     value: js.Object
   ): ASPxClientWebDocumentViewerParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("getParameterDescriptor")(getParameterDescriptor)
-    __obj.updateDynamic("isMultiValue")(isMultiValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(getParameterDescriptor = getParameterDescriptor, isMultiValue = isMultiValue, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ASPxClientWebDocumentViewerParameter]
   }
 }

@@ -22,9 +22,7 @@ object Anon_BucketNameKmsKeyArnPrefixRegion {
     prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     syncFormat: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_BucketNameKmsKeyArnPrefixRegion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (syncFormat != null) __obj.updateDynamic("syncFormat")(syncFormat.asInstanceOf[js.Any])

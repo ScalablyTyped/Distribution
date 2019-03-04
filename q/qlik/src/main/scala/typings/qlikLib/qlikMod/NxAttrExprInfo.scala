@@ -22,12 +22,8 @@ object NxAttrExprInfo {
     qMax: scala.Double,
     qMin: scala.Double
   ): NxAttrExprInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qContinuousAxes")(qContinuousAxes)
-    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
-    __obj.updateDynamic("qIsCyclic")(qIsCyclic)
-    __obj.updateDynamic("qMax")(qMax)
-    __obj.updateDynamic("qMin")(qMin)
+    val __obj = js.Dynamic.literal(qContinuousAxes = qContinuousAxes, qFallbackTitle = qFallbackTitle, qIsCyclic = qIsCyclic, qMax = qMax, qMin = qMin)
+  
     __obj.asInstanceOf[NxAttrExprInfo]
   }
 }

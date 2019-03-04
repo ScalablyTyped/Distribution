@@ -43,13 +43,8 @@ object MDCNotchedOutlineAdapter {
     removeClass: js.Function1[java.lang.String, scala.Unit],
     setOutlinePathAttr: js.Function1[java.lang.String, scala.Unit]
   ): MDCNotchedOutlineAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getIdleOutlineStyleValue")(getIdleOutlineStyleValue)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setOutlinePathAttr")(setOutlinePathAttr)
+    val __obj = js.Dynamic.literal(addClass = addClass, getHeight = getHeight, getIdleOutlineStyleValue = getIdleOutlineStyleValue, getWidth = getWidth, removeClass = removeClass, setOutlinePathAttr = setOutlinePathAttr)
+  
     __obj.asInstanceOf[MDCNotchedOutlineAdapter]
   }
 }

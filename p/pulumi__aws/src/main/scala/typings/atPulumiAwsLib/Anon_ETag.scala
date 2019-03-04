@@ -22,11 +22,7 @@ object Anon_ETag {
     size: scala.Double,
     versionId: java.lang.String = null
   ): Anon_ETag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eTag")(eTag)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("sequencer")(sequencer)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(eTag = eTag, key = key, sequencer = sequencer, size = size)
     if (versionId != null) __obj.updateDynamic("versionId")(versionId)
     __obj.asInstanceOf[Anon_ETag]
   }

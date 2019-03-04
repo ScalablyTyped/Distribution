@@ -24,12 +24,8 @@ object OAuth2Req {
     transactionID: java.lang.String,
     `type`: java.lang.String
   ): OAuth2Req = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("redirectURI")(redirectURI)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("transactionID")(transactionID)
+    val __obj = js.Dynamic.literal(clientID = clientID, redirectURI = redirectURI, scope = scope, state = state, transactionID = transactionID)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OAuth2Req]
   }
 }

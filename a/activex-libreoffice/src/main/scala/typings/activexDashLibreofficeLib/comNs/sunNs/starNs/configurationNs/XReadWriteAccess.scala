@@ -26,19 +26,8 @@ object XReadWriteAccess {
     release: js.Function0[scala.Unit],
     replaceByHierarchicalName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XReadWriteAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PendingChanges")(PendingChanges.asInstanceOf[js.Any])
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("commitChanges")(commitChanges)
-    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
-    __obj.updateDynamic("getPendingChanges")(getPendingChanges)
-    __obj.updateDynamic("getPropertyByHierarchicalName")(getPropertyByHierarchicalName)
-    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
-    __obj.updateDynamic("hasPendingChanges")(hasPendingChanges)
-    __obj.updateDynamic("hasPropertyByHierarchicalName")(hasPropertyByHierarchicalName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceByHierarchicalName")(replaceByHierarchicalName)
+    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = acquire, commitChanges = commitChanges, getByHierarchicalName = getByHierarchicalName, getPendingChanges = getPendingChanges, getPropertyByHierarchicalName = getPropertyByHierarchicalName, hasByHierarchicalName = hasByHierarchicalName, hasPendingChanges = hasPendingChanges, hasPropertyByHierarchicalName = hasPropertyByHierarchicalName, queryInterface = queryInterface, release = release, replaceByHierarchicalName = replaceByHierarchicalName)
+  
     __obj.asInstanceOf[XReadWriteAccess]
   }
 }

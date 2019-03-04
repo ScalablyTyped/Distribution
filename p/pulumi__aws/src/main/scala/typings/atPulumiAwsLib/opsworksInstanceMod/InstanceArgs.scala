@@ -214,9 +214,7 @@ object InstanceArgs {
     tenancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     virtualizationType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): InstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerIds")(layerIds.asInstanceOf[js.Any])
-    __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layerIds = layerIds.asInstanceOf[js.Any], stackId = stackId.asInstanceOf[js.Any])
     if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
     if (amiId != null) __obj.updateDynamic("amiId")(amiId.asInstanceOf[js.Any])
     if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])

@@ -16,9 +16,8 @@ trait CorrelationContext extends js.Object {
 object CorrelationContext {
   @scala.inline
   def apply(customProperties: CustomProperties, operation: applicationinsightsLib.Anon_Id): CorrelationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customProperties")(customProperties)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(customProperties = customProperties, operation = operation)
+  
     __obj.asInstanceOf[CorrelationContext]
   }
 }

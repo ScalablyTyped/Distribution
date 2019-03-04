@@ -24,13 +24,8 @@ object InstanceChainData {
     isSetter: scala.Boolean,
     properties: js.Array[java.lang.String]
   ): InstanceChainData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fns")(fns)
-    __obj.updateDynamic("isGetter")(isGetter)
-    __obj.updateDynamic("isMethod")(isMethod)
-    __obj.updateDynamic("isProperty")(isProperty)
-    __obj.updateDynamic("isSetter")(isSetter)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(fns = fns, isGetter = isGetter, isMethod = isMethod, isProperty = isProperty, isSetter = isSetter, properties = properties)
+  
     __obj.asInstanceOf[InstanceChainData]
   }
 }

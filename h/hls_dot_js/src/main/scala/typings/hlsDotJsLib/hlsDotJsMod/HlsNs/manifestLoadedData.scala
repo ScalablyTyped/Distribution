@@ -20,11 +20,8 @@ object manifestLoadedData {
     stats: Stats,
     url: java.lang.String
   ): manifestLoadedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioTracks")(audioTracks)
-    __obj.updateDynamic("levels")(levels)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(audioTracks = audioTracks, levels = levels, stats = stats, url = url)
+  
     __obj.asInstanceOf[manifestLoadedData]
   }
 }

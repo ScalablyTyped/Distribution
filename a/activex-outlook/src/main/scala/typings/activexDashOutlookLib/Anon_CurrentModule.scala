@@ -12,8 +12,8 @@ trait Anon_CurrentModule extends js.Object {
 object Anon_CurrentModule {
   @scala.inline
   def apply(CurrentModule: activexDashOutlookLib.OutlookNs.NavigationModule): Anon_CurrentModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentModule")(CurrentModule)
+    val __obj = js.Dynamic.literal(CurrentModule = CurrentModule)
+  
     __obj.asInstanceOf[Anon_CurrentModule]
   }
 }

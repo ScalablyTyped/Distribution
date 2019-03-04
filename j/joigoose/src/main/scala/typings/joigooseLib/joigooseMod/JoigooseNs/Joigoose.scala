@@ -12,8 +12,8 @@ trait Joigoose extends js.Object {
 object Joigoose {
   @scala.inline
   def apply(convert: js.Function1[joiLib.joiMod.Schema, mongooseLib.mongooseMod.Schema[_]]): Joigoose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convert")(convert)
+    val __obj = js.Dynamic.literal(convert = convert)
+  
     __obj.asInstanceOf[Joigoose]
   }
 }

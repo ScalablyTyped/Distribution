@@ -52,22 +52,8 @@ object XLibraryContainer {
     release: js.Function0[scala.Unit],
     removeLibrary: js.Function1[java.lang.String, scala.Unit]
   ): XLibraryContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createLibrary")(createLibrary)
-    __obj.updateDynamic("createLibraryLink")(createLibraryLink)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("isLibraryLoaded")(isLibraryLoaded)
-    __obj.updateDynamic("loadLibrary")(loadLibrary)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLibrary")(removeLibrary)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, createLibrary = createLibrary, createLibraryLink = createLibraryLink, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, isLibraryLoaded = isLibraryLoaded, loadLibrary = loadLibrary, queryInterface = queryInterface, release = release, removeLibrary = removeLibrary)
+  
     __obj.asInstanceOf[XLibraryContainer]
   }
 }

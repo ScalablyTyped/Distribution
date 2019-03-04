@@ -58,30 +58,8 @@ object Anon_ChangeGitRepository {
     VersionControlProjectInfo: js.Any,
     VersionControlRecursionType: Anon_EnumValuesAnonFull
   ): Anon_ChangeGitRepository = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Change")(Change)
-    __obj.updateDynamic("GitRepository")(GitRepository)
-    __obj.updateDynamic("GitRepositoryRef")(GitRepositoryRef)
-    __obj.updateDynamic("ItemContent")(ItemContent)
-    __obj.updateDynamic("ItemContentType")(ItemContentType)
-    __obj.updateDynamic("TfvcBranch")(TfvcBranch)
-    __obj.updateDynamic("TfvcBranchRef")(TfvcBranchRef)
-    __obj.updateDynamic("TfvcChange")(TfvcChange)
-    __obj.updateDynamic("TfvcChangeset")(TfvcChangeset)
-    __obj.updateDynamic("TfvcChangesetRef")(TfvcChangesetRef)
-    __obj.updateDynamic("TfvcItem")(TfvcItem)
-    __obj.updateDynamic("TfvcItemDescriptor")(TfvcItemDescriptor)
-    __obj.updateDynamic("TfvcItemRequestData")(TfvcItemRequestData)
-    __obj.updateDynamic("TfvcLabel")(TfvcLabel)
-    __obj.updateDynamic("TfvcLabelRef")(TfvcLabelRef)
-    __obj.updateDynamic("TfvcShelveset")(TfvcShelveset)
-    __obj.updateDynamic("TfvcShelvesetRef")(TfvcShelvesetRef)
-    __obj.updateDynamic("TfvcVersionDescriptor")(TfvcVersionDescriptor)
-    __obj.updateDynamic("TfvcVersionOption")(TfvcVersionOption)
-    __obj.updateDynamic("TfvcVersionType")(TfvcVersionType)
-    __obj.updateDynamic("VersionControlChangeType")(VersionControlChangeType)
-    __obj.updateDynamic("VersionControlProjectInfo")(VersionControlProjectInfo)
-    __obj.updateDynamic("VersionControlRecursionType")(VersionControlRecursionType)
+    val __obj = js.Dynamic.literal(Change = Change, GitRepository = GitRepository, GitRepositoryRef = GitRepositoryRef, ItemContent = ItemContent, ItemContentType = ItemContentType, TfvcBranch = TfvcBranch, TfvcBranchRef = TfvcBranchRef, TfvcChange = TfvcChange, TfvcChangeset = TfvcChangeset, TfvcChangesetRef = TfvcChangesetRef, TfvcItem = TfvcItem, TfvcItemDescriptor = TfvcItemDescriptor, TfvcItemRequestData = TfvcItemRequestData, TfvcLabel = TfvcLabel, TfvcLabelRef = TfvcLabelRef, TfvcShelveset = TfvcShelveset, TfvcShelvesetRef = TfvcShelvesetRef, TfvcVersionDescriptor = TfvcVersionDescriptor, TfvcVersionOption = TfvcVersionOption, TfvcVersionType = TfvcVersionType, VersionControlChangeType = VersionControlChangeType, VersionControlProjectInfo = VersionControlProjectInfo, VersionControlRecursionType = VersionControlRecursionType)
+  
     __obj.asInstanceOf[Anon_ChangeGitRepository]
   }
 }

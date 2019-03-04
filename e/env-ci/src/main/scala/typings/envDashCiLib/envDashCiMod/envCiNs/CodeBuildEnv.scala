@@ -29,15 +29,8 @@ object CodeBuildEnv {
     root: java.lang.String,
     service: envDashCiLib.envDashCiLibStrings.codebuild
   ): CodeBuildEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildUrl")(buildUrl)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, name = name, root = root, service = service)
+  
     __obj.asInstanceOf[CodeBuildEnv]
   }
 }

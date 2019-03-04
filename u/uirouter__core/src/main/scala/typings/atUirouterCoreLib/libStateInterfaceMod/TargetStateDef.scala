@@ -18,8 +18,7 @@ object TargetStateDef {
     options: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = null,
     params: atUirouterCoreLib.libParamsInterfaceMod.RawParams = null
   ): TargetStateDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[TargetStateDef]

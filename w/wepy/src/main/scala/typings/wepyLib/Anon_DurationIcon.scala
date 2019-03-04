@@ -24,8 +24,7 @@ object Anon_DurationIcon {
     image: java.lang.String = null,
     mask: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DurationIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (image != null) __obj.updateDynamic("image")(image)

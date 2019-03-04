@@ -29,19 +29,8 @@ object IJsonArray {
     stringify: js.Function0[java.lang.String],
     valueType: JsonValueType
   ): IJsonArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getArray")(getArray)
-    __obj.updateDynamic("getArrayAt")(getArrayAt)
-    __obj.updateDynamic("getBoolean")(getBoolean)
-    __obj.updateDynamic("getBooleanAt")(getBooleanAt)
-    __obj.updateDynamic("getNumber")(getNumber)
-    __obj.updateDynamic("getNumberAt")(getNumberAt)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getObjectAt")(getObjectAt)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getStringAt")(getStringAt)
-    __obj.updateDynamic("stringify")(stringify)
-    __obj.updateDynamic("valueType")(valueType)
+    val __obj = js.Dynamic.literal(getArray = getArray, getArrayAt = getArrayAt, getBoolean = getBoolean, getBooleanAt = getBooleanAt, getNumber = getNumber, getNumberAt = getNumberAt, getObject = getObject, getObjectAt = getObjectAt, getString = getString, getStringAt = getStringAt, stringify = stringify, valueType = valueType)
+  
     __obj.asInstanceOf[IJsonArray]
   }
 }

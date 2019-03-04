@@ -18,10 +18,8 @@ object Ban {
     HOUR: plugapiLib.plugapiLibStrings.h,
     PERMA: plugapiLib.plugapiLibStrings.f
   ): Ban = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DAY")(DAY)
-    __obj.updateDynamic("HOUR")(HOUR)
-    __obj.updateDynamic("PERMA")(PERMA)
+    val __obj = js.Dynamic.literal(DAY = DAY, HOUR = HOUR, PERMA = PERMA)
+  
     __obj.asInstanceOf[Ban]
   }
 }

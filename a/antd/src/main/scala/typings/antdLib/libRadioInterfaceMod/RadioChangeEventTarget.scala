@@ -31,8 +31,7 @@ object RadioChangeEventTarget {
     tabIndex: scala.Int | scala.Double = null,
     value: js.Any = null
   ): RadioChangeEventTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
+    val __obj = js.Dynamic.literal(checked = checked)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)

@@ -21,9 +21,8 @@ object Window {
     openDatabase: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, Database],
     requestFileSystem: js.Any
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openDatabase")(openDatabase)
-    __obj.updateDynamic("requestFileSystem")(requestFileSystem)
+    val __obj = js.Dynamic.literal(openDatabase = openDatabase, requestFileSystem = requestFileSystem)
+  
     __obj.asInstanceOf[Window]
   }
 }

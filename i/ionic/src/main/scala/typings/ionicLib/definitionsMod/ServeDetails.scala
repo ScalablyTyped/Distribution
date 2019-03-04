@@ -26,14 +26,8 @@ object ServeDetails {
     port: scala.Double,
     protocol: java.lang.String
   ): ServeDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("externalAddress")(externalAddress)
-    __obj.updateDynamic("externalNetworkInterfaces")(externalNetworkInterfaces)
-    __obj.updateDynamic("externallyAccessible")(externallyAccessible)
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(custom = custom, externalAddress = externalAddress, externalNetworkInterfaces = externalNetworkInterfaces, externallyAccessible = externallyAccessible, localAddress = localAddress, port = port, protocol = protocol)
+  
     __obj.asInstanceOf[ServeDetails]
   }
 }

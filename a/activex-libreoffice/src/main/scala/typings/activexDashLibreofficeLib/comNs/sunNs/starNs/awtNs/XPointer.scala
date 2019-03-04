@@ -26,13 +26,8 @@ object XPointer {
     release: js.Function0[scala.Unit],
     setType: js.Function1[scala.Double, scala.Unit]
   ): XPointer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release, setType = setType)
+  
     __obj.asInstanceOf[XPointer]
   }
 }

@@ -34,13 +34,8 @@ object VastCreativeLinear {
     skipDelay: scala.Int | scala.Double = null,
     videoClickThroughURLTemplate: java.lang.String = null
   ): VastCreativeLinear = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("icons")(icons)
-    __obj.updateDynamic("mediaFiles")(mediaFiles)
-    __obj.updateDynamic("trackingEvents")(trackingEvents)
-    __obj.updateDynamic("videoClickTrackingURLTemplates")(videoClickTrackingURLTemplates)
-    __obj.updateDynamic("videoCustomClickURLTempaltes")(videoCustomClickURLTempaltes)
+    val __obj = js.Dynamic.literal(duration = duration, icons = icons, mediaFiles = mediaFiles, trackingEvents = trackingEvents, videoClickTrackingURLTemplates = videoClickTrackingURLTemplates, videoCustomClickURLTempaltes = videoCustomClickURLTempaltes)
+    __obj.updateDynamic("type")(`type`)
     if (adId != null) __obj.updateDynamic("adId")(adId)
     if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters)
     if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)

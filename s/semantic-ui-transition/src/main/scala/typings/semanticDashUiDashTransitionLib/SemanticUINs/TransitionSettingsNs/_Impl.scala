@@ -131,27 +131,8 @@ object _Impl {
     useFailSafe: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowRepeats")(allowRepeats)
-    __obj.updateDynamic("animation")(animation)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("displayType")(displayType.asInstanceOf[js.Any])
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onComplete")(onComplete)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("onStart")(onStart)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("useFailSafe")(useFailSafe)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(allowRepeats = allowRepeats, animation = animation, className = className.asInstanceOf[js.Any], debug = debug, displayType = displayType.asInstanceOf[js.Any], duration = duration, error = error.asInstanceOf[js.Any], interval = interval, name = name, namespace = namespace, onComplete = onComplete, onHide = onHide, onShow = onShow, onStart = onStart, performance = performance, queue = queue, reverse = reverse.asInstanceOf[js.Any], silent = silent, useFailSafe = useFailSafe, verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

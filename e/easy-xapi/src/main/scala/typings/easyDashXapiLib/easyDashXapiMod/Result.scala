@@ -22,12 +22,8 @@ object Result {
     log: bunyanLib.bunyanMod.namespaced,
     server: nodeLib.httpMod.Server
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("express")(express)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(app = app, express = express, listen = listen, log = log, server = server)
+  
     __obj.asInstanceOf[Result]
   }
 }

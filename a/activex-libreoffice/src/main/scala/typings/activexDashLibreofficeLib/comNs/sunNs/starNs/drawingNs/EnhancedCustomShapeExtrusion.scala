@@ -94,30 +94,8 @@ object EnhancedCustomShapeExtrusion {
     Specularity: scala.Double,
     ViewPoint: Position3D
   ): EnhancedCustomShapeExtrusion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Brightness")(Brightness)
-    __obj.updateDynamic("Depth")(Depth)
-    __obj.updateDynamic("Diffusion")(Diffusion)
-    __obj.updateDynamic("Extrusion")(Extrusion)
-    __obj.updateDynamic("ExtrusionColor")(ExtrusionColor)
-    __obj.updateDynamic("FirstLightDirection")(FirstLightDirection)
-    __obj.updateDynamic("FirstLightHarsh")(FirstLightHarsh)
-    __obj.updateDynamic("FirstLightLevel")(FirstLightLevel)
-    __obj.updateDynamic("LightFace")(LightFace)
-    __obj.updateDynamic("Metal")(Metal)
-    __obj.updateDynamic("NumberOfLineSegments")(NumberOfLineSegments)
-    __obj.updateDynamic("Origin")(Origin)
-    __obj.updateDynamic("ProjectionMode")(ProjectionMode)
-    __obj.updateDynamic("RotateAngle")(RotateAngle)
-    __obj.updateDynamic("RotationCenter")(RotationCenter)
-    __obj.updateDynamic("SecondLightDirection")(SecondLightDirection)
-    __obj.updateDynamic("SecondLightHarsh")(SecondLightHarsh)
-    __obj.updateDynamic("SecondLightLevel")(SecondLightLevel)
-    __obj.updateDynamic("ShadeMode")(ShadeMode)
-    __obj.updateDynamic("Shininess")(Shininess)
-    __obj.updateDynamic("Skew")(Skew)
-    __obj.updateDynamic("Specularity")(Specularity)
-    __obj.updateDynamic("ViewPoint")(ViewPoint)
+    val __obj = js.Dynamic.literal(Brightness = Brightness, Depth = Depth, Diffusion = Diffusion, Extrusion = Extrusion, ExtrusionColor = ExtrusionColor, FirstLightDirection = FirstLightDirection, FirstLightHarsh = FirstLightHarsh, FirstLightLevel = FirstLightLevel, LightFace = LightFace, Metal = Metal, NumberOfLineSegments = NumberOfLineSegments, Origin = Origin, ProjectionMode = ProjectionMode, RotateAngle = RotateAngle, RotationCenter = RotationCenter, SecondLightDirection = SecondLightDirection, SecondLightHarsh = SecondLightHarsh, SecondLightLevel = SecondLightLevel, ShadeMode = ShadeMode, Shininess = Shininess, Skew = Skew, Specularity = Specularity, ViewPoint = ViewPoint)
+  
     __obj.asInstanceOf[EnhancedCustomShapeExtrusion]
   }
 }

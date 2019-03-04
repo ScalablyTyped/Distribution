@@ -26,8 +26,7 @@ object TransitionEventData {
     unmountOnHide: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): TransitionEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

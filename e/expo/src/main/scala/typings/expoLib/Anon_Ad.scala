@@ -18,8 +18,7 @@ object Anon_Ad {
     adsManager: expoLib.expoMod.FacebookAdsNs.NativeAdsManager,
     onAdLoaded: js.Function1[/* ad */ expoLib.expoMod.FacebookAdsNs.NativeAd, scala.Unit] = null
   ): Anon_Ad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adsManager")(adsManager)
+    val __obj = js.Dynamic.literal(adsManager = adsManager)
     if (onAdLoaded != null) __obj.updateDynamic("onAdLoaded")(onAdLoaded)
     __obj.asInstanceOf[Anon_Ad]
   }

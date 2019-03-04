@@ -27,9 +27,7 @@ object ReceiptFilterArgs {
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ReceiptFilterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cidr = cidr.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptFilterArgs]
   }

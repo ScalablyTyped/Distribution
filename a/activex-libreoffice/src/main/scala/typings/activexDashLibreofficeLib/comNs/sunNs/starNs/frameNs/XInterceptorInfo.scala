@@ -41,12 +41,8 @@ object XInterceptorInfo {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInterceptorInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InterceptedURLs")(InterceptedURLs)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInterceptedURLs")(getInterceptedURLs)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(InterceptedURLs = InterceptedURLs, acquire = acquire, getInterceptedURLs = getInterceptedURLs, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInterceptorInfo]
   }
 }

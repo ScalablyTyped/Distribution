@@ -51,9 +51,7 @@ object Anon_AltCommentIdFieldsFileIdIncludeDeletedKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCommentIdFieldsFileIdIncludeDeletedKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commentId")(commentId)
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(commentId = commentId, fileId = fileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted)

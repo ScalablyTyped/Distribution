@@ -12,8 +12,8 @@ trait RevisionedDocument extends js.Object {
 object RevisionedDocument {
   @scala.inline
   def apply(_rev: java.lang.String): RevisionedDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_rev")(_rev)
+    val __obj = js.Dynamic.literal(_rev = _rev)
+  
     __obj.asInstanceOf[RevisionedDocument]
   }
 }

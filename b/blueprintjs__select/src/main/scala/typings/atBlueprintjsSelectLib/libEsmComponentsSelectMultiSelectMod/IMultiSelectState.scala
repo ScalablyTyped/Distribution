@@ -12,8 +12,8 @@ trait IMultiSelectState extends js.Object {
 object IMultiSelectState {
   @scala.inline
   def apply(isOpen: scala.Boolean): IMultiSelectState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
+  
     __obj.asInstanceOf[IMultiSelectState]
   }
 }

@@ -43,10 +43,7 @@ object SnackbarProps {
     openOnMount: js.UndefOr[scala.Boolean] = js.undefined,
     ref: reactLib.reactMod.ReactNs.LegacyRef[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    __obj.updateDynamic("onRequestClose")(onRequestClose)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], onRequestClose = onRequestClose, open = open)
     if (action != null) __obj.updateDynamic("action")(action)
     if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)

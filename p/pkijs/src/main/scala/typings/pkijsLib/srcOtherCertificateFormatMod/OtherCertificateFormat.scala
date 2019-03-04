@@ -22,12 +22,8 @@ object OtherCertificateFormat {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): OtherCertificateFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("otherCert")(otherCert)
-    __obj.updateDynamic("otherCertFormat")(otherCertFormat)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, otherCert = otherCert, otherCertFormat = otherCertFormat, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[OtherCertificateFormat]
   }
 }

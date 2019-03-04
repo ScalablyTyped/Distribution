@@ -45,12 +45,7 @@ object LogLevel {
     */
   /* level */ org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): LogLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, none = none, warn = warn)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LogLevel]
   }

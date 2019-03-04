@@ -22,8 +22,7 @@ object SwitchNavigatorConfig {
     paths: NavigationPathsConfig = null,
     resetOnBlur: js.UndefOr[scala.Boolean] = js.undefined
   ): SwitchNavigatorConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialRouteName")(initialRouteName)
+    val __obj = js.Dynamic.literal(initialRouteName = initialRouteName)
     if (backBehavior != null) __obj.updateDynamic("backBehavior")(backBehavior.asInstanceOf[js.Any])
     if (paths != null) __obj.updateDynamic("paths")(paths)
     if (!js.isUndefined(resetOnBlur)) __obj.updateDynamic("resetOnBlur")(resetOnBlur)

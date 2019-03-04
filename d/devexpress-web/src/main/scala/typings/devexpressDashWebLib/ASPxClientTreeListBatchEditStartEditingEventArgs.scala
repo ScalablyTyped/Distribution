@@ -34,11 +34,8 @@ object ASPxClientTreeListBatchEditStartEditingEventArgs {
     nodeKey: java.lang.String,
     nodeValues: js.Object
   ): ASPxClientTreeListBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("focusedColumn")(focusedColumn)
-    __obj.updateDynamic("nodeKey")(nodeKey)
-    __obj.updateDynamic("nodeValues")(nodeValues)
+    val __obj = js.Dynamic.literal(cancel = cancel, focusedColumn = focusedColumn, nodeKey = nodeKey, nodeValues = nodeValues)
+  
     __obj.asInstanceOf[ASPxClientTreeListBatchEditStartEditingEventArgs]
   }
 }

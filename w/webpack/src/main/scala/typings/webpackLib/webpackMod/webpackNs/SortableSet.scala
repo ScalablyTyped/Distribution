@@ -24,11 +24,8 @@ object SortableSet {
     sort: js.Function0[scala.Unit],
     sortWith: js.Function1[js.Function2[/* a */ T, /* b */ T, scala.Double], scala.Unit]
   ): SortableSet[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFromCache")(getFromCache)
-    __obj.updateDynamic("getFromUnorderedCache")(getFromUnorderedCache)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("sortWith")(sortWith)
+    val __obj = js.Dynamic.literal(getFromCache = getFromCache, getFromUnorderedCache = getFromUnorderedCache, sort = sort, sortWith = sortWith)
+  
     __obj.asInstanceOf[SortableSet[T]]
   }
 }

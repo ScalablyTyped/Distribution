@@ -105,25 +105,8 @@ object HasherStatic {
     stopped: signalsLib.signalsMod.signalsNs.Signal[_],
     toString: js.Function0[java.lang.String]
   ): HasherStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VERSION")(VERSION)
-    __obj.updateDynamic("appendHash")(appendHash)
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getBaseURL")(getBaseURL)
-    __obj.updateDynamic("getHash")(getHash)
-    __obj.updateDynamic("getHashAsArray")(getHashAsArray)
-    __obj.updateDynamic("getURL")(getURL)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("prependHash")(prependHash)
-    __obj.updateDynamic("replaceHash")(replaceHash)
-    __obj.updateDynamic("separator")(separator)
-    __obj.updateDynamic("setHash")(setHash)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("stopped")(stopped)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(VERSION = VERSION, appendHash = appendHash, changed = changed, dispose = dispose, getBaseURL = getBaseURL, getHash = getHash, getHashAsArray = getHashAsArray, getURL = getURL, init = init, initialized = initialized, isActive = isActive, prependHash = prependHash, replaceHash = replaceHash, separator = separator, setHash = setHash, stop = stop, stopped = stopped, toString = toString)
+  
     __obj.asInstanceOf[HasherStatic]
   }
 }

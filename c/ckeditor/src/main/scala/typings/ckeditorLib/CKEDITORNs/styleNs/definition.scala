@@ -22,8 +22,7 @@ object definition {
     styles: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     `type`: java.lang.String | scala.Double = null
   ): definition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(element = element)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (name != null) __obj.updateDynamic("name")(name)
     if (styles != null) __obj.updateDynamic("styles")(styles)

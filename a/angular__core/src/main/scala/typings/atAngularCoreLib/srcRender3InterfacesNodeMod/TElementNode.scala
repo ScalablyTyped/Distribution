@@ -52,14 +52,8 @@ object TElementNode {
     stylingTemplate: atAngularCoreLib.srcRender3InterfacesStylingMod.StylingContext = null,
     tagName: java.lang.String = null
   ): TElementNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("directiveEnd")(directiveEnd)
-    __obj.updateDynamic("directiveStart")(directiveStart)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("injectorIndex")(injectorIndex)
-    __obj.updateDynamic("providerIndexes")(providerIndexes)
-    __obj.updateDynamic("tViews")(tViews)
+    val __obj = js.Dynamic.literal(directiveEnd = directiveEnd, directiveStart = directiveStart, flags = flags, index = index, injectorIndex = injectorIndex, providerIndexes = providerIndexes, tViews = tViews)
+    __obj.updateDynamic("type")(`type`)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)

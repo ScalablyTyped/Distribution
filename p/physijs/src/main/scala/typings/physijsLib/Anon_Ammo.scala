@@ -13,9 +13,8 @@ trait Anon_Ammo extends js.Object {
 object Anon_Ammo {
   @scala.inline
   def apply(ammo: java.lang.String, worker: java.lang.String): Anon_Ammo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ammo")(ammo)
-    __obj.updateDynamic("worker")(worker)
+    val __obj = js.Dynamic.literal(ammo = ammo, worker = worker)
+  
     __obj.asInstanceOf[Anon_Ammo]
   }
 }

@@ -29,12 +29,8 @@ object IAudioDeviceController {
     ],
     volumePercent: scala.Double
   ): IAudioDeviceController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAvailableMediaStreamProperties")(getAvailableMediaStreamProperties)
-    __obj.updateDynamic("getMediaStreamProperties")(getMediaStreamProperties)
-    __obj.updateDynamic("muted")(muted)
-    __obj.updateDynamic("setMediaStreamPropertiesAsync")(setMediaStreamPropertiesAsync)
-    __obj.updateDynamic("volumePercent")(volumePercent)
+    val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = getAvailableMediaStreamProperties, getMediaStreamProperties = getMediaStreamProperties, muted = muted, setMediaStreamPropertiesAsync = setMediaStreamPropertiesAsync, volumePercent = volumePercent)
+  
     __obj.asInstanceOf[IAudioDeviceController]
   }
 }

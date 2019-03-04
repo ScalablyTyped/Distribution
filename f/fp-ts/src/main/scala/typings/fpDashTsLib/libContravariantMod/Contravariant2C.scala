@@ -22,10 +22,8 @@ object Contravariant2C {
       fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
     ]
   ): Contravariant2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("contramap")(contramap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], contramap = contramap)
+  
     __obj.asInstanceOf[Contravariant2C[F, L]]
   }
 }

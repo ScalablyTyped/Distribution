@@ -16,8 +16,8 @@ object Scheduler {
     `catch`: js.Function1[js.Function1[/* exception */ js.Any, scala.Boolean], Scheduler],
     catchException: js.Function1[js.Function1[/* exception */ js.Any, scala.Boolean], Scheduler]
   ): Scheduler = {
-    val __obj = js.Dynamic.literal(`catch` = `catch`)
-    __obj.updateDynamic("catchException")(catchException)
+    val __obj = js.Dynamic.literal(catchException = catchException)
+    __obj.updateDynamic("catch")(`catch`)
     __obj.asInstanceOf[Scheduler]
   }
 }

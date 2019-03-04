@@ -18,6 +18,6 @@ class FrontInsertIterator[T, Source /* <: tstlLib.baseDisposableIPartialContaine
   /**
     * @hidden
     */
-  var `source_`: js.Any = js.native
+  var source_ : js.Any = js.native
 }
 

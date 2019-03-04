@@ -22,12 +22,8 @@ object Console {
     log: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]],
     warn: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]]
   ): Console = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, log = log, warn = warn)
+  
     __obj.asInstanceOf[Console]
   }
 }

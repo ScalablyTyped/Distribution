@@ -34,19 +34,8 @@ object CampaignTargeting {
     targetedLocations: js.Function0[AdWordsSelector[TargetedLocation]],
     targetedProximities: js.Function0[AdWordsSelector[TargetedProximity]]
   ): CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adSchedules")(adSchedules)
-    __obj.updateDynamic("audiences")(audiences)
-    __obj.updateDynamic("excludedContentLabels")(excludedContentLabels)
-    __obj.updateDynamic("excludedLocations")(excludedLocations)
-    __obj.updateDynamic("exculdedAudiences")(exculdedAudiences)
-    __obj.updateDynamic("getTargetingSetting")(getTargetingSetting)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("newUserListBuilder")(newUserListBuilder)
-    __obj.updateDynamic("platforms")(platforms)
-    __obj.updateDynamic("setTargetingSetting")(setTargetingSetting)
-    __obj.updateDynamic("targetedLocations")(targetedLocations)
-    __obj.updateDynamic("targetedProximities")(targetedProximities)
+    val __obj = js.Dynamic.literal(adSchedules = adSchedules, audiences = audiences, excludedContentLabels = excludedContentLabels, excludedLocations = excludedLocations, exculdedAudiences = exculdedAudiences, getTargetingSetting = getTargetingSetting, languages = languages, newUserListBuilder = newUserListBuilder, platforms = platforms, setTargetingSetting = setTargetingSetting, targetedLocations = targetedLocations, targetedProximities = targetedProximities)
+  
     __obj.asInstanceOf[CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience]]
   }
 }

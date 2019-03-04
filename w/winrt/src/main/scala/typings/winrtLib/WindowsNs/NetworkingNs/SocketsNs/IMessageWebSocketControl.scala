@@ -20,13 +20,8 @@ object IMessageWebSocketControl {
     serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
     supportedProtocols: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]
   ): IMessageWebSocketControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxMessageSize")(maxMessageSize)
-    __obj.updateDynamic("messageType")(messageType)
-    __obj.updateDynamic("outboundBufferSizeInBytes")(outboundBufferSizeInBytes)
-    __obj.updateDynamic("proxyCredential")(proxyCredential)
-    __obj.updateDynamic("serverCredential")(serverCredential)
-    __obj.updateDynamic("supportedProtocols")(supportedProtocols)
+    val __obj = js.Dynamic.literal(maxMessageSize = maxMessageSize, messageType = messageType, outboundBufferSizeInBytes = outboundBufferSizeInBytes, proxyCredential = proxyCredential, serverCredential = serverCredential, supportedProtocols = supportedProtocols)
+  
     __obj.asInstanceOf[IMessageWebSocketControl]
   }
 }

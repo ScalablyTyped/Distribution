@@ -12,8 +12,8 @@ trait MetadataOptions extends js.Object {
 object MetadataOptions {
   @scala.inline
   def apply(metadataType: MetadataOptionsType): MetadataOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadataType")(metadataType)
+    val __obj = js.Dynamic.literal(metadataType = metadataType)
+  
     __obj.asInstanceOf[MetadataOptions]
   }
 }

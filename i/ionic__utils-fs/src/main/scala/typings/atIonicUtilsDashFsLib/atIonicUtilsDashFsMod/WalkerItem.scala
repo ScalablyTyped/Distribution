@@ -13,9 +13,8 @@ trait WalkerItem extends js.Object {
 object WalkerItem {
   @scala.inline
   def apply(path: java.lang.String, stats: fsDashExtraLib.fsDashExtraMod.Stats): WalkerItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(path = path, stats = stats)
+  
     __obj.asInstanceOf[WalkerItem]
   }
 }

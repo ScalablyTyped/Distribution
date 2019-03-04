@@ -27,11 +27,7 @@ object Token {
     string: java.lang.String,
     `type`: java.lang.String = null
   ): Token = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(end = end, start = start, state = state, string = string)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Token]
   }

@@ -20,9 +20,7 @@ object LogonOptions {
     authCode: java.lang.String = null,
     shaSentryfile: java.lang.String = null
   ): LogonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountName")(accountName)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(accountName = accountName, password = password)
     if (authCode != null) __obj.updateDynamic("authCode")(authCode)
     if (shaSentryfile != null) __obj.updateDynamic("shaSentryfile")(shaSentryfile)
     __obj.asInstanceOf[LogonOptions]

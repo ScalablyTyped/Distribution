@@ -18,10 +18,8 @@ object RTCRtpParameters {
     headerExtensions: js.Array[RTCRtpHeaderExtensionParameters],
     rtcp: RTCRtcpParameters
   ): RTCRtpParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codecs")(codecs)
-    __obj.updateDynamic("headerExtensions")(headerExtensions)
-    __obj.updateDynamic("rtcp")(rtcp)
+    val __obj = js.Dynamic.literal(codecs = codecs, headerExtensions = headerExtensions, rtcp = rtcp)
+  
     __obj.asInstanceOf[RTCRtpParameters]
   }
 }

@@ -61,9 +61,7 @@ object SwitchBaseProps {
     tabIndex: scala.Int | scala.Double = null,
     value: java.lang.String | scala.Double | scala.Boolean = null
   ): SwitchBaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkedIcon")(checkedIcon.asInstanceOf[js.Any])
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkedIcon = checkedIcon.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

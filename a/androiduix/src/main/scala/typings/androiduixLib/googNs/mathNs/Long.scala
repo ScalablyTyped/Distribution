@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Long protected () extends js.Object {
   def this(low: scala.Double, high: scala.Double) = this()
-  var `high_`: js.Any = js.native
-  var `low_`: js.Any = js.native
+  var high_ : js.Any = js.native
+  var low_ : js.Any = js.native
   def add(other: Long): Long = js.native
   def and(other: Long): Long = js.native
   def compare(other: Long): scala.Double = js.native
@@ -47,19 +47,19 @@ class Long protected () extends js.Object {
 @JSGlobal("goog.math.Long")
 @js.native
 object Long extends js.Object {
-  var `IntCache_`: js.Any = js.native
+  var IntCache_ : js.Any = js.native
   var MAX_VALUE: androiduixLib.googNs.mathNs.Long = js.native
   var MIN_VALUE: androiduixLib.googNs.mathNs.Long = js.native
   var NEG_ONE: androiduixLib.googNs.mathNs.Long = js.native
   var ONE: androiduixLib.googNs.mathNs.Long = js.native
-  var `TWO_PWR_16_DBL_`: js.Any = js.native
-  var `TWO_PWR_24_`: js.Any = js.native
-  var `TWO_PWR_24_DBL_`: js.Any = js.native
-  var `TWO_PWR_31_DBL_`: js.Any = js.native
-  var `TWO_PWR_32_DBL_`: js.Any = js.native
-  var `TWO_PWR_48_DBL_`: js.Any = js.native
-  var `TWO_PWR_63_DBL_`: js.Any = js.native
-  var `TWO_PWR_64_DBL_`: js.Any = js.native
+  var TWO_PWR_16_DBL_ : js.Any = js.native
+  var TWO_PWR_24_ : js.Any = js.native
+  var TWO_PWR_24_DBL_ : js.Any = js.native
+  var TWO_PWR_31_DBL_ : js.Any = js.native
+  var TWO_PWR_32_DBL_ : js.Any = js.native
+  var TWO_PWR_48_DBL_ : js.Any = js.native
+  var TWO_PWR_63_DBL_ : js.Any = js.native
+  var TWO_PWR_64_DBL_ : js.Any = js.native
   var ZERO: androiduixLib.googNs.mathNs.Long = js.native
   def fromBits(lowBits: scala.Double, highBits: scala.Double): androiduixLib.googNs.mathNs.Long = js.native
   def fromInt(value: scala.Double): androiduixLib.googNs.mathNs.Long = js.native

@@ -12,8 +12,8 @@ trait ASTNode extends js.Object {
 object ASTNode {
   @scala.inline
   def apply(`type`: java.lang.String): ASTNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ASTNode]
   }
 }

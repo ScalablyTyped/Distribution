@@ -13,8 +13,8 @@ trait ConnectionInfo extends js.Object {
 object ConnectionInfo {
   @scala.inline
   def apply(effectiveType: EffectiveConnectionType, `type`: ConnectionType): ConnectionInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("effectiveType")(effectiveType)
+    val __obj = js.Dynamic.literal(effectiveType = effectiveType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ConnectionInfo]
   }
 }

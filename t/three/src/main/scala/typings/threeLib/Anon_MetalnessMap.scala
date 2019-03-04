@@ -12,8 +12,8 @@ trait Anon_MetalnessMap extends js.Object {
 object Anon_MetalnessMap {
   @scala.inline
   def apply(metalnessMap: threeLib.threeDashCoreMod.IUniform): Anon_MetalnessMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metalnessMap")(metalnessMap)
+    val __obj = js.Dynamic.literal(metalnessMap = metalnessMap)
+  
     __obj.asInstanceOf[Anon_MetalnessMap]
   }
 }

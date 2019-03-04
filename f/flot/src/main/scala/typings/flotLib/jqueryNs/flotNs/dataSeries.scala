@@ -25,8 +25,7 @@ object dataSeries {
     xaxis: scala.Int | scala.Double = null,
     yaxis: scala.Int | scala.Double = null
   ): dataSeries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (bars != null) __obj.updateDynamic("bars")(bars)
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (color != null) __obj.updateDynamic("color")(color)

@@ -50,26 +50,8 @@ object SSHBuffer {
     writePart: js.Function1[SSHPart, scala.Unit],
     writeString: js.Function1[java.lang.String, scala.Unit]
   ): SSHBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atEnd")(atEnd)
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("readBuffer")(readBuffer)
-    __obj.updateDynamic("readChar")(readChar)
-    __obj.updateDynamic("readInt")(readInt)
-    __obj.updateDynamic("readInt64")(readInt64)
-    __obj.updateDynamic("readPart")(readPart)
-    __obj.updateDynamic("readString")(readString)
-    __obj.updateDynamic("remainder")(remainder)
-    __obj.updateDynamic("skip")(skip)
-    __obj.updateDynamic("toBuffer")(toBuffer)
-    __obj.updateDynamic("write")(write)
-    __obj.updateDynamic("writeBuffer")(writeBuffer)
-    __obj.updateDynamic("writeCString")(writeCString)
-    __obj.updateDynamic("writeChar")(writeChar)
-    __obj.updateDynamic("writeInt")(writeInt)
-    __obj.updateDynamic("writeInt64")(writeInt64)
-    __obj.updateDynamic("writePart")(writePart)
-    __obj.updateDynamic("writeString")(writeString)
+    val __obj = js.Dynamic.literal(atEnd = atEnd, expand = expand, readBuffer = readBuffer, readChar = readChar, readInt = readInt, readInt64 = readInt64, readPart = readPart, readString = readString, remainder = remainder, skip = skip, toBuffer = toBuffer, write = write, writeBuffer = writeBuffer, writeCString = writeCString, writeChar = writeChar, writeInt = writeInt, writeInt64 = writeInt64, writePart = writePart, writeString = writeString)
+  
     __obj.asInstanceOf[SSHBuffer]
   }
 }

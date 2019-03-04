@@ -24,8 +24,7 @@ object SnapshotGetRepositoryParams {
     method: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): SnapshotGetRepositoryParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(repository = repository.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

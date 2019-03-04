@@ -49,30 +49,8 @@ object Search {
     setQueryMethod: js.Function1[js.Function0[scala.Unit], scala.Unit],
     setSearchResultClass: js.Function1[java.lang.String, scala.Unit]
   ): Search = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("getCallback")(getCallback)
-    __obj.updateDynamic("getQueryMethod")(getQueryMethod)
-    __obj.updateDynamic("getSearchResultClass")(getSearchResultClass)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("queryMethod")(queryMethod)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("searchResultClass")(searchResultClass)
-    __obj.updateDynamic("setCallback")(setCallback)
-    __obj.updateDynamic("setQueryMethod")(setQueryMethod)
-    __obj.updateDynamic("setSearchResultClass")(setSearchResultClass)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, callback = callback, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, getCallback = getCallback, getQueryMethod = getQueryMethod, getSearchResultClass = getSearchResultClass, init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, query = query, queryMethod = queryMethod, removeHook = removeHook, searchResultClass = searchResultClass, setCallback = setCallback, setQueryMethod = setQueryMethod, setSearchResultClass = setSearchResultClass)
+  
     __obj.asInstanceOf[Search]
   }
 }

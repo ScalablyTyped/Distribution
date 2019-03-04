@@ -13,9 +13,8 @@ trait PartitionOffset extends js.Object {
 object PartitionOffset {
   @scala.inline
   def apply(offset: java.lang.String, partition: java.lang.String): PartitionOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("partition")(partition)
+    val __obj = js.Dynamic.literal(offset = offset, partition = partition)
+  
     __obj.asInstanceOf[PartitionOffset]
   }
 }

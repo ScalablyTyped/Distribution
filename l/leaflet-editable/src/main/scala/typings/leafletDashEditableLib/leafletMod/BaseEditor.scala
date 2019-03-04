@@ -26,9 +26,8 @@ object BaseEditor {
     disable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
     enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor]
   ): BaseEditor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable)
+  
     __obj.asInstanceOf[BaseEditor]
   }
 }

@@ -42,13 +42,8 @@ object GetClusterResult {
     runningTasksCount: scala.Double,
     status: java.lang.String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pendingTasksCount")(pendingTasksCount)
-    __obj.updateDynamic("registeredContainerInstancesCount")(registeredContainerInstancesCount)
-    __obj.updateDynamic("runningTasksCount")(runningTasksCount)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, pendingTasksCount = pendingTasksCount, registeredContainerInstancesCount = registeredContainerInstancesCount, runningTasksCount = runningTasksCount, status = status)
+  
     __obj.asInstanceOf[GetClusterResult]
   }
 }

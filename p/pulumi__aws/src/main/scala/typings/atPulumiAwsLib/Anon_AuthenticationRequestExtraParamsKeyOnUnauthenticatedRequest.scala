@@ -28,10 +28,7 @@ object Anon_AuthenticationRequestExtraParamsKeyOnUnauthenticatedRequest {
     sessionCookieName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sessionTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_AuthenticationRequestExtraParamsKeyOnUnauthenticatedRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userPoolArn")(userPoolArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolClientId")(userPoolClientId.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolDomain")(userPoolDomain.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(userPoolArn = userPoolArn.asInstanceOf[js.Any], userPoolClientId = userPoolClientId.asInstanceOf[js.Any], userPoolDomain = userPoolDomain.asInstanceOf[js.Any])
     if (authenticationRequestExtraParams != null) __obj.updateDynamic("authenticationRequestExtraParams")(authenticationRequestExtraParams.asInstanceOf[js.Any])
     if (onUnauthenticatedRequest != null) __obj.updateDynamic("onUnauthenticatedRequest")(onUnauthenticatedRequest.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

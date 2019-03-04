@@ -16,8 +16,8 @@ object Anon_Companies {
     companies: js.Array[intercomDashClientLib.companyMod.Company],
     `type`: intercomDashClientLib.intercomDashClientLibStrings.companyDOTlist
   ): Anon_Companies = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("companies")(companies)
+    val __obj = js.Dynamic.literal(companies = companies)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Companies]
   }
 }

@@ -24,10 +24,7 @@ object AppToolbarButtonDescriptor {
     iconClass: java.lang.String = null,
     titleClass: java.lang.String = null
   ): AppToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, title = title)
     if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass)

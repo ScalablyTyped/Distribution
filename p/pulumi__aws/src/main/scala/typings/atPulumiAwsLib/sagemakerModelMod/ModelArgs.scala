@@ -61,8 +61,7 @@ object ModelArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetsArrayInput] = null
   ): ModelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(executionRoleArn = executionRoleArn.asInstanceOf[js.Any])
     if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
     if (enableNetworkIsolation != null) __obj.updateDynamic("enableNetworkIsolation")(enableNetworkIsolation.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

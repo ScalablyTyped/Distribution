@@ -32,8 +32,7 @@ object InjectableDef {
     providedIn: InjectorType[_] | atAngularCoreLib.atAngularCoreLibStrings.root | atAngularCoreLib.atAngularCoreLibStrings.any = null,
     value: T = null
   ): InjectableDef[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("factory")(factory)
+    val __obj = js.Dynamic.literal(factory = factory)
     if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectableDef[T]]

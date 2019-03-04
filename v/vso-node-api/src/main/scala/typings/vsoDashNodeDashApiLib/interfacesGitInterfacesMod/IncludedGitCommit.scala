@@ -20,11 +20,8 @@ object IncludedGitCommit {
     parentCommitIds: js.Array[java.lang.String],
     repositoryId: java.lang.String
   ): IncludedGitCommit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitId")(commitId)
-    __obj.updateDynamic("commitTime")(commitTime)
-    __obj.updateDynamic("parentCommitIds")(parentCommitIds)
-    __obj.updateDynamic("repositoryId")(repositoryId)
+    val __obj = js.Dynamic.literal(commitId = commitId, commitTime = commitTime, parentCommitIds = parentCommitIds, repositoryId = repositoryId)
+  
     __obj.asInstanceOf[IncludedGitCommit]
   }
 }

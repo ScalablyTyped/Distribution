@@ -31,9 +31,7 @@ object UploadImageConfig {
     fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
     isShowProgressTips: scala.Int | scala.Double = null
   ): UploadImageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localId")(localId)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(localId = localId, success = success)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

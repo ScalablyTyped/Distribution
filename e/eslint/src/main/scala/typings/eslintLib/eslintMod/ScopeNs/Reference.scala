@@ -32,15 +32,7 @@ object Reference {
     resolved: Variable = null,
     writeExpr: estreeLib.estreeMod.Node = null
   ): Reference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("isRead")(isRead)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isReadWrite")(isReadWrite)
-    __obj.updateDynamic("isWrite")(isWrite)
-    __obj.updateDynamic("isWriteOnly")(isWriteOnly)
+    val __obj = js.Dynamic.literal(from = from, identifier = identifier, init = init, isRead = isRead, isReadOnly = isReadOnly, isReadWrite = isReadWrite, isWrite = isWrite, isWriteOnly = isWriteOnly)
     if (resolved != null) __obj.updateDynamic("resolved")(resolved)
     if (writeExpr != null) __obj.updateDynamic("writeExpr")(writeExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]

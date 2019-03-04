@@ -44,13 +44,8 @@ object BoostingQuery {
     positive: js.Function1[js.Object, BoostingQuery],
     toJSON: js.Function0[js.Any]
   ): BoostingQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("negative")(negative)
-    __obj.updateDynamic("negativeBoost")(negativeBoost)
-    __obj.updateDynamic("positive")(positive)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, negative = negative, negativeBoost = negativeBoost, positive = positive, toJSON = toJSON)
+  
     __obj.asInstanceOf[BoostingQuery]
   }
 }

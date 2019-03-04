@@ -22,12 +22,8 @@ object IConstPixelsOptions {
     x: scala.Double,
     y: scala.Double
   ): IConstPixelsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("srcData")(srcData)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(columns = columns, rows = rows, srcData = srcData, x = x, y = y)
+  
     __obj.asInstanceOf[IConstPixelsOptions]
   }
 }

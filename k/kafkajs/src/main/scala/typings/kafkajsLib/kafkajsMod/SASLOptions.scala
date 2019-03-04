@@ -18,10 +18,8 @@ object SASLOptions {
     password: java.lang.String,
     username: java.lang.String
   ): SASLOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mechanism")(mechanism.asInstanceOf[js.Any])
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], password = password, username = username)
+  
     __obj.asInstanceOf[SASLOptions]
   }
 }

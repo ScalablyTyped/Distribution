@@ -32,15 +32,8 @@ object JQueryColorpickerStatic {
     ],
     writers: org.scalablytyped.runtime.StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, _]]
   ): JQueryColorpickerStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("limits")(limits)
-    __obj.updateDynamic("parsers")(parsers)
-    __obj.updateDynamic("parts")(parts)
-    __obj.updateDynamic("partslists")(partslists)
-    __obj.updateDynamic("regional")(regional)
-    __obj.updateDynamic("swatches")(swatches)
-    __obj.updateDynamic("writers")(writers)
+    val __obj = js.Dynamic.literal(Color = Color, limits = limits, parsers = parsers, parts = parts, partslists = partslists, regional = regional, swatches = swatches, writers = writers)
+  
     __obj.asInstanceOf[JQueryColorpickerStatic]
   }
 }

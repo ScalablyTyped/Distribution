@@ -26,13 +26,7 @@ object Anon_EndGroupPropName {
     yMin: scala.Double,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_EndGroupPropName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endGroup")(endGroup)
-    __obj.updateDynamic("startGroup")(startGroup)
-    __obj.updateDynamic("xMax")(xMax)
-    __obj.updateDynamic("xMin")(xMin)
-    __obj.updateDynamic("yMax")(yMax)
-    __obj.updateDynamic("yMin")(yMin)
+    val __obj = js.Dynamic.literal(endGroup = endGroup, startGroup = startGroup, xMax = xMax, xMin = xMin, yMax = yMax, yMin = yMin)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_EndGroupPropName]
   }

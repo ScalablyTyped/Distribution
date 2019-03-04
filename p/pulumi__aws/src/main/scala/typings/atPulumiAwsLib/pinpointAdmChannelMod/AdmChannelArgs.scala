@@ -32,10 +32,7 @@ object AdmChannelArgs {
     clientSecret: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): AdmChannelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdmChannelArgs]
   }

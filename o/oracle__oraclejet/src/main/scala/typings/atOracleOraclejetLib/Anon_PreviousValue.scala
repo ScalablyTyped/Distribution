@@ -18,9 +18,7 @@ object Anon_PreviousValue {
     value: js.Any,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_PreviousValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("previousValue")(previousValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(previousValue = previousValue, value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PreviousValue]
   }

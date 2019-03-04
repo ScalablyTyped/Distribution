@@ -26,14 +26,8 @@ object Feature {
     tags: js.Array[Tag],
     uri: java.lang.String
   ): Feature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scenarios")(scenarios)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(description = description, keyword = keyword, line = line, name = name, scenarios = scenarios, tags = tags, uri = uri)
+  
     __obj.asInstanceOf[Feature]
   }
 }

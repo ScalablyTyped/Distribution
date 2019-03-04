@@ -24,11 +24,8 @@ object MovingComponent {
     source: java.lang.String,
     uniqueKey: java.lang.String
   ): MovingComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isNew")(isNew)
-    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("uniqueKey")(uniqueKey)
+    val __obj = js.Dynamic.literal(isNew = isNew, mapUniqueKey = mapUniqueKey, source = source, uniqueKey = uniqueKey)
+  
     __obj.asInstanceOf[MovingComponent]
   }
 }

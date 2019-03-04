@@ -18,10 +18,8 @@ object ServiceEndpointRequest {
     resultTransformationDetails: ResultTransformationDetails,
     serviceEndpointDetails: ServiceEndpointDetails
   ): ServiceEndpointRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSourceDetails")(dataSourceDetails)
-    __obj.updateDynamic("resultTransformationDetails")(resultTransformationDetails)
-    __obj.updateDynamic("serviceEndpointDetails")(serviceEndpointDetails)
+    val __obj = js.Dynamic.literal(dataSourceDetails = dataSourceDetails, resultTransformationDetails = resultTransformationDetails, serviceEndpointDetails = serviceEndpointDetails)
+  
     __obj.asInstanceOf[ServiceEndpointRequest]
   }
 }

@@ -42,9 +42,7 @@ object EventSourceMappingArgs {
     startingPosition: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     startingPositionTimestamp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EventSourceMappingArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventSourceArn")(eventSourceArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eventSourceArn = eventSourceArn.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (startingPosition != null) __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])

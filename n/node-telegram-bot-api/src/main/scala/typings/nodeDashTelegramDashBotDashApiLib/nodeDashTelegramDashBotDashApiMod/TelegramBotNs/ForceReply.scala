@@ -13,8 +13,7 @@ trait ForceReply extends js.Object {
 object ForceReply {
   @scala.inline
   def apply(force_reply: scala.Boolean, selective: js.UndefOr[scala.Boolean] = js.undefined): ForceReply = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("force_reply")(force_reply)
+    val __obj = js.Dynamic.literal(force_reply = force_reply)
     if (!js.isUndefined(selective)) __obj.updateDynamic("selective")(selective)
     __obj.asInstanceOf[ForceReply]
   }

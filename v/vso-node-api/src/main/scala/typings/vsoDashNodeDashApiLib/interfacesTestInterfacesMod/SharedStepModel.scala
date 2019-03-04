@@ -13,9 +13,8 @@ trait SharedStepModel extends js.Object {
 object SharedStepModel {
   @scala.inline
   def apply(id: scala.Double, revision: scala.Double): SharedStepModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(id = id, revision = revision)
+  
     __obj.asInstanceOf[SharedStepModel]
   }
 }

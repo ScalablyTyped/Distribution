@@ -15,8 +15,8 @@ trait TaskAgentPoolMaintenanceOptions extends js.Object {
 object TaskAgentPoolMaintenanceOptions {
   @scala.inline
   def apply(workingDirectoryExpirationInDays: scala.Double): TaskAgentPoolMaintenanceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("workingDirectoryExpirationInDays")(workingDirectoryExpirationInDays)
+    val __obj = js.Dynamic.literal(workingDirectoryExpirationInDays = workingDirectoryExpirationInDays)
+  
     __obj.asInstanceOf[TaskAgentPoolMaintenanceOptions]
   }
 }

@@ -42,8 +42,7 @@ object Anon_IdMaxResults {
     playlistId: java.lang.String = null,
     videoId: java.lang.String = null
   ): Anon_IdMaxResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (id != null) __obj.updateDynamic("id")(id)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)

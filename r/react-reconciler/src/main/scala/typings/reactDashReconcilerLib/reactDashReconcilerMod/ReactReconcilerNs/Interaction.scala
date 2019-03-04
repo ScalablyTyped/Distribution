@@ -16,11 +16,8 @@ trait Interaction extends js.Object {
 object Interaction {
   @scala.inline
   def apply(__count: scala.Double, id: scala.Double, name: java.lang.String, timestamp: scala.Double): Interaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__count")(__count)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(__count = __count, id = id, name = name, timestamp = timestamp)
+  
     __obj.asInstanceOf[Interaction]
   }
 }

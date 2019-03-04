@@ -46,21 +46,8 @@ object XControlShape {
     setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
     setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
   ): XControlShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Control")(Control)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("ShapeType")(ShapeType)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getShapeType")(getShapeType)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setControl")(setControl)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setSize")(setSize)
+    val __obj = js.Dynamic.literal(Control = Control, Position = Position, ShapeType = ShapeType, Size = Size, acquire = acquire, getControl = getControl, getPosition = getPosition, getShapeType = getShapeType, getSize = getSize, queryInterface = queryInterface, release = release, setControl = setControl, setPosition = setPosition, setSize = setSize)
+  
     __obj.asInstanceOf[XControlShape]
   }
 }

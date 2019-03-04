@@ -80,31 +80,8 @@ object XScrollBar {
     setValues: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
     setVisibleSize: js.Function1[scala.Double, scala.Unit]
   ): XScrollBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BlockIncrement")(BlockIncrement)
-    __obj.updateDynamic("LineIncrement")(LineIncrement)
-    __obj.updateDynamic("Maximum")(Maximum)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("VisibleSize")(VisibleSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addAdjustmentListener")(addAdjustmentListener)
-    __obj.updateDynamic("getBlockIncrement")(getBlockIncrement)
-    __obj.updateDynamic("getLineIncrement")(getLineIncrement)
-    __obj.updateDynamic("getMaximum")(getMaximum)
-    __obj.updateDynamic("getOrientation")(getOrientation)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("getVisibleSize")(getVisibleSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAdjustmentListener")(removeAdjustmentListener)
-    __obj.updateDynamic("setBlockIncrement")(setBlockIncrement)
-    __obj.updateDynamic("setLineIncrement")(setLineIncrement)
-    __obj.updateDynamic("setMaximum")(setMaximum)
-    __obj.updateDynamic("setOrientation")(setOrientation)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("setValues")(setValues)
-    __obj.updateDynamic("setVisibleSize")(setVisibleSize)
+    val __obj = js.Dynamic.literal(BlockIncrement = BlockIncrement, LineIncrement = LineIncrement, Maximum = Maximum, Orientation = Orientation, Value = Value, VisibleSize = VisibleSize, acquire = acquire, addAdjustmentListener = addAdjustmentListener, getBlockIncrement = getBlockIncrement, getLineIncrement = getLineIncrement, getMaximum = getMaximum, getOrientation = getOrientation, getValue = getValue, getVisibleSize = getVisibleSize, queryInterface = queryInterface, release = release, removeAdjustmentListener = removeAdjustmentListener, setBlockIncrement = setBlockIncrement, setLineIncrement = setLineIncrement, setMaximum = setMaximum, setOrientation = setOrientation, setValue = setValue, setValues = setValues, setVisibleSize = setVisibleSize)
+  
     __obj.asInstanceOf[XScrollBar]
   }
 }

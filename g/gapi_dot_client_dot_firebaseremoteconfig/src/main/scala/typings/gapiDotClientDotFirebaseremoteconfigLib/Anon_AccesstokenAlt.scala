@@ -69,8 +69,7 @@ object Anon_AccesstokenAlt {
     upload_protocol: java.lang.String = null,
     validateOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AccesstokenAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(project = project)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

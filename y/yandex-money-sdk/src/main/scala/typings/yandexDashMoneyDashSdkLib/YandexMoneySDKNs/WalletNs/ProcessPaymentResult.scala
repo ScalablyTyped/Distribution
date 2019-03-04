@@ -40,8 +40,7 @@ object ProcessPaymentResult {
     payer: java.lang.String = null,
     payment_id: java.lang.String = null
   ): ProcessPaymentResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (account_unblock_uri != null) __obj.updateDynamic("account_unblock_uri")(account_unblock_uri)
     if (acs_params != null) __obj.updateDynamic("acs_params")(acs_params)
     if (acs_uri != null) __obj.updateDynamic("acs_uri")(acs_uri)

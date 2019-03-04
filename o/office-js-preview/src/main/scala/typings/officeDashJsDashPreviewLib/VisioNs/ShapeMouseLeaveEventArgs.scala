@@ -31,9 +31,8 @@ trait ShapeMouseLeaveEventArgs extends js.Object {
 object ShapeMouseLeaveEventArgs {
   @scala.inline
   def apply(pageName: java.lang.String, shapeName: java.lang.String): ShapeMouseLeaveEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pageName")(pageName)
-    __obj.updateDynamic("shapeName")(shapeName)
+    val __obj = js.Dynamic.literal(pageName = pageName, shapeName = shapeName)
+  
     __obj.asInstanceOf[ShapeMouseLeaveEventArgs]
   }
 }

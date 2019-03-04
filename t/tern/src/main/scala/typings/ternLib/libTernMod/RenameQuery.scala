@@ -28,10 +28,8 @@ object RenameQuery {
     lineCharPositions: js.UndefOr[scala.Boolean] = js.undefined,
     start: scala.Double | Position = null
   ): RenameQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("newName")(newName)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file, newName = newName)
+    __obj.updateDynamic("type")(`type`)
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
     if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

@@ -39,11 +39,8 @@ object FloatingObjectAlignmentPositionSettings {
     verticalPositionAlignment: js.Any,
     verticalPositionType: js.Any
   ): FloatingObjectAlignmentPositionSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("horizontalPositionAlignment")(horizontalPositionAlignment)
-    __obj.updateDynamic("horizontalPositionType")(horizontalPositionType)
-    __obj.updateDynamic("verticalPositionAlignment")(verticalPositionAlignment)
-    __obj.updateDynamic("verticalPositionType")(verticalPositionType)
+    val __obj = js.Dynamic.literal(horizontalPositionAlignment = horizontalPositionAlignment, horizontalPositionType = horizontalPositionType, verticalPositionAlignment = verticalPositionAlignment, verticalPositionType = verticalPositionType)
+  
     __obj.asInstanceOf[FloatingObjectAlignmentPositionSettings]
   }
 }

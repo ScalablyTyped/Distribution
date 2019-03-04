@@ -32,12 +32,8 @@ object ShadowProperties {
     ShadowXDistance: scala.Double,
     ShadowYDistance: scala.Double
   ): ShadowProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Shadow")(Shadow)
-    __obj.updateDynamic("ShadowColor")(ShadowColor)
-    __obj.updateDynamic("ShadowTransparence")(ShadowTransparence)
-    __obj.updateDynamic("ShadowXDistance")(ShadowXDistance)
-    __obj.updateDynamic("ShadowYDistance")(ShadowYDistance)
+    val __obj = js.Dynamic.literal(Shadow = Shadow, ShadowColor = ShadowColor, ShadowTransparence = ShadowTransparence, ShadowXDistance = ShadowXDistance, ShadowYDistance = ShadowYDistance)
+  
     __obj.asInstanceOf[ShadowProperties]
   }
 }

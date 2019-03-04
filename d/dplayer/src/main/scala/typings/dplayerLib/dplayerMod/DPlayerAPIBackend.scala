@@ -16,9 +16,8 @@ object DPlayerAPIBackend {
     read: js.Function2[js.Any, js.Function0[scala.Unit], scala.Unit],
     send: js.Function3[js.Any, DPlayerDanmakuItem, js.Function0[scala.Unit], scala.Unit]
   ): DPlayerAPIBackend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(read = read, send = send)
+  
     __obj.asInstanceOf[DPlayerAPIBackend]
   }
 }

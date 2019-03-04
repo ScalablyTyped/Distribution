@@ -20,8 +20,7 @@ object RequestSettings {
     error: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): RequestSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceId")(resourceId)
+    val __obj = js.Dynamic.literal(resourceId = resourceId)
     if (data != null) __obj.updateDynamic("data")(data)
     if (error != null) __obj.updateDynamic("error")(error)
     if (success != null) __obj.updateDynamic("success")(success)

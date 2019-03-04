@@ -32,18 +32,8 @@ object SafariExtensionMessageEvent {
     timestamp: scala.Double,
     `type`: java.lang.String
   ): SafariExtensionMessageEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("cancelable")(cancelable)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("eventPhase")(eventPhase)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, message = message, name = name, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SafariExtensionMessageEvent]
   }
 }

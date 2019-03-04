@@ -22,12 +22,8 @@ object Anon_0 {
     scrollToColumn: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
     scrollToRow: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("isControlled")(isControlled)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("scrollToColumn")(scrollToColumn)
-    __obj.updateDynamic("scrollToRow")(scrollToRow)
+    val __obj = js.Dynamic.literal(disabled = disabled, isControlled = isControlled, mode = mode, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow)
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

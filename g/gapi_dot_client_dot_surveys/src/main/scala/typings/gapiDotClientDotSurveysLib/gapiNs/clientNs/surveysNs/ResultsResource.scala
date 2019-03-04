@@ -21,8 +21,8 @@ object ResultsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SurveyResults]
     ]
   ): ResultsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[ResultsResource]
   }
 }

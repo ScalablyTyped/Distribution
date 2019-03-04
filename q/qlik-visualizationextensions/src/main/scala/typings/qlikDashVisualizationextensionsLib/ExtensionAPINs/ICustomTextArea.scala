@@ -25,14 +25,8 @@ object ICustomTextArea {
     show: valueOrfunc[scala.Boolean],
     `type`: java.lang.String
   ): ICustomTextArea = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("maxlength")(maxlength)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, label = label, maxlength = maxlength, ref = ref, rows = rows, show = show.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomTextArea]
   }
 }

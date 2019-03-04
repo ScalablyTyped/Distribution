@@ -19,11 +19,8 @@ trait CategoryObject extends js.Object {
 object CategoryObject {
   @scala.inline
   def apply(href: java.lang.String, icons: js.Array[ImageObject], id: java.lang.String, name: java.lang.String): CategoryObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("icons")(icons)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(href = href, icons = icons, id = id, name = name)
+  
     __obj.asInstanceOf[CategoryObject]
   }
 }

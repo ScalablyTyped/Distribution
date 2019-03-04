@@ -14,10 +14,8 @@ trait CloudFrontResponse extends js.Object {
 object CloudFrontResponse {
   @scala.inline
   def apply(headers: CloudFrontHeaders, status: java.lang.String, statusDescription: java.lang.String): CloudFrontResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusDescription")(statusDescription)
+    val __obj = js.Dynamic.literal(headers = headers, status = status, statusDescription = statusDescription)
+  
     __obj.asInstanceOf[CloudFrontResponse]
   }
 }

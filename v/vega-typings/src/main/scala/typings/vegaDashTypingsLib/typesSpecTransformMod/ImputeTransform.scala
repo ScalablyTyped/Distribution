@@ -26,9 +26,8 @@ object ImputeTransform {
     method: ImputeMethod = null,
     value: js.Any = null
   ): ImputeTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(field = field, key = key)
+    __obj.updateDynamic("type")(`type`)
     if (groupby != null) __obj.updateDynamic("groupby")(groupby)
     if (keyvals != null) __obj.updateDynamic("keyvals")(keyvals.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)

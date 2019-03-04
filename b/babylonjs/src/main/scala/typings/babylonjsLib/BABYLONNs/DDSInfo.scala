@@ -75,17 +75,7 @@ object DDSInfo {
     width: scala.Double,
     sphericalPolynomial: SphericalPolynomial = null
   ): DDSInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dxgiFormat")(dxgiFormat)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("isCompressed")(isCompressed)
-    __obj.updateDynamic("isCube")(isCube)
-    __obj.updateDynamic("isFourCC")(isFourCC)
-    __obj.updateDynamic("isLuminance")(isLuminance)
-    __obj.updateDynamic("isRGB")(isRGB)
-    __obj.updateDynamic("mipmapCount")(mipmapCount)
-    __obj.updateDynamic("textureType")(textureType)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(dxgiFormat = dxgiFormat, height = height, isCompressed = isCompressed, isCube = isCube, isFourCC = isFourCC, isLuminance = isLuminance, isRGB = isRGB, mipmapCount = mipmapCount, textureType = textureType, width = width)
     if (sphericalPolynomial != null) __obj.updateDynamic("sphericalPolynomial")(sphericalPolynomial)
     __obj.asInstanceOf[DDSInfo]
   }

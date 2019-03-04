@@ -33,15 +33,8 @@ object LayerParser {
     release: js.Function0[scala.Unit],
     setInputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
   ): LayerParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readData")(readData)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setInputStream")(setInputStream)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, getInputStream = getInputStream, initialize = initialize, queryInterface = queryInterface, readData = readData, release = release, setInputStream = setInputStream)
+  
     __obj.asInstanceOf[LayerParser]
   }
 }

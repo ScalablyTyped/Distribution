@@ -37,11 +37,7 @@ object UIAddComponent {
     index: scala.Int | scala.Double = null,
     position: java.lang.String = null
   ): UIAddComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[UIAddComponent]

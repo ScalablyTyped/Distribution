@@ -17,8 +17,7 @@ object PreviewCompletedEvent {
     componentName: java.lang.String = null,
     previewComponentId: java.lang.String = null
   ): PreviewCompletedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentId")(componentId)
+    val __obj = js.Dynamic.literal(componentId = componentId)
     if (componentName != null) __obj.updateDynamic("componentName")(componentName)
     if (previewComponentId != null) __obj.updateDynamic("previewComponentId")(previewComponentId)
     __obj.asInstanceOf[PreviewCompletedEvent]

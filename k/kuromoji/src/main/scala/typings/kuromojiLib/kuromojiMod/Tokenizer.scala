@@ -26,14 +26,8 @@ object Tokenizer {
     viterbi_builder: ViterbiBuilder,
     viterbi_searcher: ViterbiSearcher
   ): Tokenizer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatter")(formatter)
-    __obj.updateDynamic("getLattice")(getLattice)
-    __obj.updateDynamic("token_info_dictionary")(token_info_dictionary)
-    __obj.updateDynamic("tokenize")(tokenize)
-    __obj.updateDynamic("unknown_dictionary")(unknown_dictionary)
-    __obj.updateDynamic("viterbi_builder")(viterbi_builder)
-    __obj.updateDynamic("viterbi_searcher")(viterbi_searcher)
+    val __obj = js.Dynamic.literal(formatter = formatter, getLattice = getLattice, token_info_dictionary = token_info_dictionary, tokenize = tokenize, unknown_dictionary = unknown_dictionary, viterbi_builder = viterbi_builder, viterbi_searcher = viterbi_searcher)
+  
     __obj.asInstanceOf[Tokenizer[T]]
   }
 }

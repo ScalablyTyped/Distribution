@@ -20,10 +20,7 @@ object MenuItem {
     visible: scala.Boolean,
     active: js.UndefOr[scala.Boolean] = js.undefined
   ): MenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectable")(selectable)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(selectable = selectable, text = text, visible = visible)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     __obj.asInstanceOf[MenuItem]
   }

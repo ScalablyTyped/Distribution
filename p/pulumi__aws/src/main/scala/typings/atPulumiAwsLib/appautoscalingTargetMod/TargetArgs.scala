@@ -43,12 +43,7 @@ object TargetArgs {
     serviceNamespace: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): TargetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxCapacity")(maxCapacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("minCapacity")(minCapacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxCapacity = maxCapacity.asInstanceOf[js.Any], minCapacity = minCapacity.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], scalableDimension = scalableDimension.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
     if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetArgs]
   }

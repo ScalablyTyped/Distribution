@@ -14,8 +14,7 @@ trait AuthenticateConfig extends js.Object {
 object AuthenticateConfig {
   @scala.inline
   def apply(fallbackTitle: java.lang.String, color: java.lang.String = null, title: java.lang.String = null): AuthenticateConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fallbackTitle")(fallbackTitle)
+    val __obj = js.Dynamic.literal(fallbackTitle = fallbackTitle)
     if (color != null) __obj.updateDynamic("color")(color)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[AuthenticateConfig]

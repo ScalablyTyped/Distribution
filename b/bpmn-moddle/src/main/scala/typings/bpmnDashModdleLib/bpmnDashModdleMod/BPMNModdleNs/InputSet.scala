@@ -28,14 +28,7 @@ object InputSet {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): InputSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("dataInputRefs")(dataInputRefs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optionalInputRefs")(optionalInputRefs)
-    __obj.updateDynamic("outputSetRefs")(outputSetRefs)
-    __obj.updateDynamic("whileExecutingInputsRefs")(whileExecutingInputsRefs)
+    val __obj = js.Dynamic.literal($type = $type, dataInputRefs = dataInputRefs, id = id, name = name, optionalInputRefs = optionalInputRefs, outputSetRefs = outputSetRefs, whileExecutingInputsRefs = whileExecutingInputsRefs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

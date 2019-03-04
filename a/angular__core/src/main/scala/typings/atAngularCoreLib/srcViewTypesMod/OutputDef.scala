@@ -20,8 +20,8 @@ object OutputDef {
     propName: java.lang.String = null,
     target: atAngularCoreLib.atAngularCoreLibStrings.window | atAngularCoreLib.atAngularCoreLibStrings.document | atAngularCoreLib.atAngularCoreLibStrings.body | atAngularCoreLib.atAngularCoreLibStrings.component = null
   ): OutputDef = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("eventName")(eventName)
+    val __obj = js.Dynamic.literal(eventName = eventName)
+    __obj.updateDynamic("type")(`type`)
     if (propName != null) __obj.updateDynamic("propName")(propName)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputDef]

@@ -12,8 +12,8 @@ trait Anon_Mime extends js.Object {
 object Anon_Mime {
   @scala.inline
   def apply(serveStaticNs: js.Any): Anon_Mime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serveStaticNs")(serveStaticNs)
+    val __obj = js.Dynamic.literal(serveStaticNs = serveStaticNs)
+  
     __obj.asInstanceOf[Anon_Mime]
   }
 }

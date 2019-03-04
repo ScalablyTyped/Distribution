@@ -12,8 +12,8 @@ trait ParseOptions extends js.Object {
 object ParseOptions {
   @scala.inline
   def apply(includeComments: scala.Boolean): ParseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeComments")(includeComments)
+    val __obj = js.Dynamic.literal(includeComments = includeComments)
+  
     __obj.asInstanceOf[ParseOptions]
   }
 }

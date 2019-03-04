@@ -13,9 +13,8 @@ trait ContinuationToken extends js.Object {
 object ContinuationToken {
   @scala.inline
   def apply(nextMarker: java.lang.String, targetLocation: java.lang.String): ContinuationToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nextMarker")(nextMarker)
-    __obj.updateDynamic("targetLocation")(targetLocation)
+    val __obj = js.Dynamic.literal(nextMarker = nextMarker, targetLocation = targetLocation)
+  
     __obj.asInstanceOf[ContinuationToken]
   }
 }

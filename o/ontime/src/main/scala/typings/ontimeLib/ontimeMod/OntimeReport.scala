@@ -21,9 +21,8 @@ trait OntimeReport extends js.Object {
 object OntimeReport {
   @scala.inline
   def apply(cancel: js.Function0[scala.Unit], done: js.Function0[scala.Unit]): OntimeReport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("done")(done)
+    val __obj = js.Dynamic.literal(cancel = cancel, done = done)
+  
     __obj.asInstanceOf[OntimeReport]
   }
 }

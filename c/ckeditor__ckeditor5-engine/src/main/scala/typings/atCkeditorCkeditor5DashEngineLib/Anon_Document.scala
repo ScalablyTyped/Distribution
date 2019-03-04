@@ -18,9 +18,7 @@ object Anon_Document {
     useRelations: scala.Boolean,
     document: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Document = null
   ): Anon_Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("padWithNoOps")(padWithNoOps)
-    __obj.updateDynamic("useRelations")(useRelations)
+    val __obj = js.Dynamic.literal(padWithNoOps = padWithNoOps, useRelations = useRelations)
     if (document != null) __obj.updateDynamic("document")(document)
     __obj.asInstanceOf[Anon_Document]
   }

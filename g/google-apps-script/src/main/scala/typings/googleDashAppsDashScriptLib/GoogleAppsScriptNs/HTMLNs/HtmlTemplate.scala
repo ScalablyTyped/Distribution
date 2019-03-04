@@ -20,11 +20,8 @@ object HtmlTemplate {
     getCodeWithComments: js.Function0[java.lang.String],
     getRawContent: js.Function0[java.lang.String]
   ): HtmlTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluate")(evaluate)
-    __obj.updateDynamic("getCode")(getCode)
-    __obj.updateDynamic("getCodeWithComments")(getCodeWithComments)
-    __obj.updateDynamic("getRawContent")(getRawContent)
+    val __obj = js.Dynamic.literal(evaluate = evaluate, getCode = getCode, getCodeWithComments = getCodeWithComments, getRawContent = getRawContent)
+  
     __obj.asInstanceOf[HtmlTemplate]
   }
 }

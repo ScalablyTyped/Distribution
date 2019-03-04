@@ -71,8 +71,7 @@ object AllergyIntoleranceReaction {
     severity: code = null,
     substance: CodeableConcept = null
   ): AllergyIntoleranceReaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manifestation")(manifestation)
+    val __obj = js.Dynamic.literal(manifestation = manifestation)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

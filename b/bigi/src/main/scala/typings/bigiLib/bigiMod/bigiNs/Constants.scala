@@ -28,15 +28,8 @@ object Constants {
     s: scala.Double,
     t: scala.Double
   ): Constants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DB")(DB)
-    __obj.updateDynamic("DM")(DM)
-    __obj.updateDynamic("DV")(DV)
-    __obj.updateDynamic("F1")(F1)
-    __obj.updateDynamic("F2")(F2)
-    __obj.updateDynamic("FV")(FV)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(DB = DB, DM = DM, DV = DV, F1 = F1, F2 = F2, FV = FV, s = s, t = t)
+  
     __obj.asInstanceOf[Constants]
   }
 }

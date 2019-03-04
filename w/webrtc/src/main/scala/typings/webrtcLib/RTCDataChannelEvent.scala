@@ -13,8 +13,8 @@ trait RTCDataChannelEvent extends js.Object {
 object RTCDataChannelEvent {
   @scala.inline
   def apply(channel: RTCDataChannel): RTCDataChannelEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(channel = channel)
+  
     __obj.asInstanceOf[RTCDataChannelEvent]
   }
 }

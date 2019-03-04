@@ -109,13 +109,8 @@ object ReadgroupsetsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchReadGroupSetsResponse]
     ]
   ): ReadgroupsetsResource = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("coveragebuckets")(coveragebuckets)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(coveragebuckets = coveragebuckets, delete = delete, export = export, get = get, patch = patch, search = search)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[ReadgroupsetsResource]
   }
 }

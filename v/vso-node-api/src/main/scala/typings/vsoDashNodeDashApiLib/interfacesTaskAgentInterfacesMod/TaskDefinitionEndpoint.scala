@@ -42,13 +42,8 @@ object TaskDefinitionEndpoint {
     taskId: java.lang.String,
     url: java.lang.String
   ): TaskDefinitionEndpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionId")(connectionId)
-    __obj.updateDynamic("keySelector")(keySelector)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("taskId")(taskId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(connectionId = connectionId, keySelector = keySelector, scope = scope, selector = selector, taskId = taskId, url = url)
+  
     __obj.asInstanceOf[TaskDefinitionEndpoint]
   }
 }

@@ -20,8 +20,7 @@ object model {
     initialState: js.Any = null,
     reducers: js.Any = null
   ): model = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (effects != null) __obj.updateDynamic("effects")(effects)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     if (reducers != null) __obj.updateDynamic("reducers")(reducers)

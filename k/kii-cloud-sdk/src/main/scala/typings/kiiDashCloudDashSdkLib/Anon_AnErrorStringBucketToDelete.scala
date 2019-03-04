@@ -16,9 +16,8 @@ object Anon_AnErrorStringBucketToDelete {
     failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, java.lang.String, js.Any],
     success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, js.Any]
   ): Anon_AnErrorStringBucketToDelete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringBucketToDelete]
   }
 }

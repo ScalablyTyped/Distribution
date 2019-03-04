@@ -30,11 +30,8 @@ object XManifestReader {
     ],
     release: js.Function0[scala.Unit]
   ): XManifestReader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readManifestSequence")(readManifestSequence)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readManifestSequence = readManifestSequence, release = release)
+  
     __obj.asInstanceOf[XManifestReader]
   }
 }

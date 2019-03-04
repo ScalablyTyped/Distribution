@@ -30,16 +30,8 @@ object SQSRecord {
     messageId: java.lang.String,
     receiptHandle: java.lang.String
   ): SQSRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("awsRegion")(awsRegion)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("eventSource")(eventSource)
-    __obj.updateDynamic("eventSourceARN")(eventSourceARN)
-    __obj.updateDynamic("md5OfBody")(md5OfBody)
-    __obj.updateDynamic("messageAttributes")(messageAttributes)
-    __obj.updateDynamic("messageId")(messageId)
-    __obj.updateDynamic("receiptHandle")(receiptHandle)
+    val __obj = js.Dynamic.literal(attributes = attributes, awsRegion = awsRegion, body = body, eventSource = eventSource, eventSourceARN = eventSourceARN, md5OfBody = md5OfBody, messageAttributes = messageAttributes, messageId = messageId, receiptHandle = receiptHandle)
+  
     __obj.asInstanceOf[SQSRecord]
   }
 }

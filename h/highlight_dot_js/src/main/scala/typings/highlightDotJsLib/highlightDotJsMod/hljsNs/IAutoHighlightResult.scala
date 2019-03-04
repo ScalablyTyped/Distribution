@@ -17,10 +17,7 @@ object IAutoHighlightResult {
     value: java.lang.String,
     second_best: IAutoHighlightResult = null
   ): IAutoHighlightResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("relevance")(relevance)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(language = language, relevance = relevance, value = value)
     if (second_best != null) __obj.updateDynamic("second_best")(second_best)
     __obj.asInstanceOf[IAutoHighlightResult]
   }

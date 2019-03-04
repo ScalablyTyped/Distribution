@@ -20,11 +20,8 @@ object Anon_DeviceNameEbsKey {
     noDevice: java.lang.String,
     virtualName: java.lang.String
   ): Anon_DeviceNameEbsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("ebs")(ebs)
-    __obj.updateDynamic("noDevice")(noDevice)
-    __obj.updateDynamic("virtualName")(virtualName)
+    val __obj = js.Dynamic.literal(deviceName = deviceName, ebs = ebs, noDevice = noDevice, virtualName = virtualName)
+  
     __obj.asInstanceOf[Anon_DeviceNameEbsKey]
   }
 }

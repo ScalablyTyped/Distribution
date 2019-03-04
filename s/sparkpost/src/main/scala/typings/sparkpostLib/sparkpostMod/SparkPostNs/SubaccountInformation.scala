@@ -26,11 +26,7 @@ object SubaccountInformation {
     status: sparkpostLib.sparkpostLibStrings.active | sparkpostLib.sparkpostLibStrings.suspended | sparkpostLib.sparkpostLibStrings.terminated,
     ip_pool: java.lang.String = null
   ): SubaccountInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compliance_status")(compliance_status)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compliance_status = compliance_status, id = id, name = name, status = status.asInstanceOf[js.Any])
     if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
     __obj.asInstanceOf[SubaccountInformation]
   }

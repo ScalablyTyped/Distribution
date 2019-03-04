@@ -18,10 +18,8 @@ object IPropertyValueIconClue {
     PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
     ValueListItem: scala.Double
   ): IPropertyValueIconClue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
-    __obj.updateDynamic("ValueListItem")(ValueListItem)
+    val __obj = js.Dynamic.literal(Clone = Clone, PropertyDef = PropertyDef.asInstanceOf[js.Any], ValueListItem = ValueListItem)
+  
     __obj.asInstanceOf[IPropertyValueIconClue]
   }
 }

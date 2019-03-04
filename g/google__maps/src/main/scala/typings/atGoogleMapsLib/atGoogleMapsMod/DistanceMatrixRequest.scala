@@ -139,9 +139,7 @@ object DistanceMatrixRequest {
     transit_routing_preference: TransitRoutingPreference = null,
     units: UnitSystem = null
   ): DistanceMatrixRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinations")(destinations)
-    __obj.updateDynamic("origins")(origins)
+    val __obj = js.Dynamic.literal(destinations = destinations, origins = origins)
     if (arrival_time != null) __obj.updateDynamic("arrival_time")(arrival_time.asInstanceOf[js.Any])
     if (avoid != null) __obj.updateDynamic("avoid")(avoid)
     if (departure_time != null) __obj.updateDynamic("departure_time")(departure_time.asInstanceOf[js.Any])

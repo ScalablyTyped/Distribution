@@ -28,10 +28,7 @@ object Anon_CommentsComputedConstructor {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     static: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CommentsComputedConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, kind = kind.asInstanceOf[js.Any], value = value)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)

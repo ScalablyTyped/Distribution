@@ -16,10 +16,8 @@ object ReferenceParams {
     position: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): ReferenceParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(context = context, position = position, textDocument = textDocument)
+  
     __obj.asInstanceOf[ReferenceParams]
   }
 }

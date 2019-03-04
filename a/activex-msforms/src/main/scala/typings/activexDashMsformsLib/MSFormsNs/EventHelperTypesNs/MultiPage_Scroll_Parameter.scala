@@ -26,14 +26,8 @@ object MultiPage_Scroll_Parameter {
     RequestDx: scala.Double,
     RequestDy: scala.Double
   ): MultiPage_Scroll_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActionX")(ActionX)
-    __obj.updateDynamic("ActionY")(ActionY)
-    __obj.updateDynamic("ActualDx")(ActualDx)
-    __obj.updateDynamic("ActualDy")(ActualDy)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("RequestDx")(RequestDx)
-    __obj.updateDynamic("RequestDy")(RequestDy)
+    val __obj = js.Dynamic.literal(ActionX = ActionX, ActionY = ActionY, ActualDx = ActualDx, ActualDy = ActualDy, Index = Index, RequestDx = RequestDx, RequestDy = RequestDy)
+  
     __obj.asInstanceOf[MultiPage_Scroll_Parameter]
   }
 }

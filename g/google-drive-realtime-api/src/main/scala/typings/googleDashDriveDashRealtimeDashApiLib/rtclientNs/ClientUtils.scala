@@ -34,10 +34,8 @@ object ClientUtils {
     ],
     params: googleDashDriveDashRealtimeDashApiLib.Anon_FileIds
   ): ClientUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RealtimeLoader")(RealtimeLoader)
-    __obj.updateDynamic("createRealtimeFile")(createRealtimeFile)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(RealtimeLoader = RealtimeLoader, createRealtimeFile = createRealtimeFile, params = params)
+  
     __obj.asInstanceOf[ClientUtils]
   }
 }

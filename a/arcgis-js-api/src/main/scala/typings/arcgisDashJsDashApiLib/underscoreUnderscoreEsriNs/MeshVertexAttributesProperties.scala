@@ -44,10 +44,7 @@ object MeshVertexAttributesProperties {
     position: stdLib.Float64Array | js.Array[scala.Double] | stdLib.Float32Array = null,
     uv: stdLib.Float32Array | js.Array[scala.Double] | stdLib.Float64Array = null
   ): MeshVertexAttributesProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

@@ -20,10 +20,7 @@ object Anon_ActionPriorityRuleId {
     ruleId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ActionPriorityRuleId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActionPriorityRuleId]
   }

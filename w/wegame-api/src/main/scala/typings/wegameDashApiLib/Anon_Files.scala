@@ -12,8 +12,8 @@ trait Anon_Files extends js.Object {
 object Anon_Files {
   @scala.inline
   def apply(files: js.Array[java.lang.String]): Anon_Files = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(files = files)
+  
     __obj.asInstanceOf[Anon_Files]
   }
 }

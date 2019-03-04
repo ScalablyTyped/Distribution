@@ -93,21 +93,8 @@ object WorkflowStepDisplayDetails {
     stepType: java.lang.String,
     width: scala.Double
   ): WorkflowStepDisplayDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutlineColor")(OutlineColor)
-    __obj.updateDynamic("centerX")(centerX)
-    __obj.updateDynamic("centerY")(centerY)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelColor")(labelColor)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("stepId")(stepId)
-    __obj.updateDynamic("stepType")(stepType)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(OutlineColor = OutlineColor, centerX = centerX, centerY = centerY, constructor = constructor, fillColor = fillColor, hasOwnProperty = hasOwnProperty, height = height, label = label, labelColor = labelColor, propertyIsEnumerable = propertyIsEnumerable, shape = shape, stepId = stepId, stepType = stepType, width = width)
+  
     __obj.asInstanceOf[WorkflowStepDisplayDetails]
   }
 }

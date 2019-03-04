@@ -12,8 +12,8 @@ trait SecureContext extends js.Object {
 object SecureContext {
   @scala.inline
   def apply(context: js.Any): SecureContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
+  
     __obj.asInstanceOf[SecureContext]
   }
 }

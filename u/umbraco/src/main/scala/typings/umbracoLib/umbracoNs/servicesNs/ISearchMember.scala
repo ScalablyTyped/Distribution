@@ -27,13 +27,8 @@ object ISearchMember {
     name: java.lang.String,
     subtitle: java.lang.String
   ): ISearchMember = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editorPath")(editorPath)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("menuUrl")(menuUrl)
-    __obj.updateDynamic("metaData")(metaData)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subtitle")(subtitle)
+    val __obj = js.Dynamic.literal(editorPath = editorPath, id = id, menuUrl = menuUrl, metaData = metaData, name = name, subtitle = subtitle)
+  
     __obj.asInstanceOf[ISearchMember]
   }
 }

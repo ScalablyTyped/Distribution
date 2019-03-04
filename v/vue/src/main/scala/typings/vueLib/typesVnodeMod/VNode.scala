@@ -42,9 +42,7 @@ object VNode {
     tag: java.lang.String = null,
     text: java.lang.String = null
   ): VNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isComment")(isComment)
-    __obj.updateDynamic("isRootInsert")(isRootInsert)
+    val __obj = js.Dynamic.literal(isComment = isComment, isRootInsert = isRootInsert)
     if (children != null) __obj.updateDynamic("children")(children)
     if (componentInstance != null) __obj.updateDynamic("componentInstance")(componentInstance)
     if (componentOptions != null) __obj.updateDynamic("componentOptions")(componentOptions)

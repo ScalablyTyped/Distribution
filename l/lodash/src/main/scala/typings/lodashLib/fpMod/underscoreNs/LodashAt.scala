@@ -21,15 +21,15 @@ trait LodashAt extends js.Object {
     props: lodashLib.lodashMod.underscoreNs.PropertyPath,
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): js.Array[T] = js.native
-  def apply[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.`__`): LodashAt2x2[T] = js.native
-  def apply[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashAt2x2[T] = js.native
+  def apply[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.__): LodashAt2x2[T] = js.native
+  def apply[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashAt2x2[T] = js.native
   def apply[T](
-    props: lodashLib.lodashMod.underscoreNs.`__`,
+    props: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): LodashAt1x2[T] = js.native
-  def apply[T](props: lodashLib.lodashMod.underscoreNs.`__`, `object`: lodashLib.lodashMod.underscoreNs.List[T]): LodashAt1x2[T] = js.native
+  def apply[T](props: lodashLib.lodashMod.underscoreNs.__, `object`: lodashLib.lodashMod.underscoreNs.List[T]): LodashAt1x2[T] = js.native
   def apply[T](
-    props: lodashLib.lodashMod.underscoreNs.`__`,
+    props: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashAt1x2[T] = js.native
 }

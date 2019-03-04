@@ -18,9 +18,7 @@ object URLOptions {
     url: java.lang.String,
     compression: js.UndefOr[scala.Boolean] = js.undefined
   ): URLOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(headers = headers, url = url)
     if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression)
     __obj.asInstanceOf[URLOptions]
   }

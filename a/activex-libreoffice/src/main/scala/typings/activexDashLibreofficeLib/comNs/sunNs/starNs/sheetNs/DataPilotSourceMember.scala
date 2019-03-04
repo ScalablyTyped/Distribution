@@ -64,24 +64,8 @@ object DataPilotSourceMember {
     setName: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): DataPilotSourceMember = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ShowDetails")(ShowDetails)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(IsVisible = IsVisible, Name = Name, Position = Position, PropertySetInfo = PropertySetInfo, ShowDetails = ShowDetails, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[DataPilotSourceMember]
   }
 }

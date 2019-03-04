@@ -20,8 +20,7 @@ object SymbolProps {
     preserveAspectRatio: java.lang.String = null,
     viewBox: java.lang.String = null
   ): SymbolProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)

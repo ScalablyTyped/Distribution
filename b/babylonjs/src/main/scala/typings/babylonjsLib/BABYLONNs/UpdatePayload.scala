@@ -21,11 +21,8 @@ object UpdatePayload {
     updatedGeometries: org.scalablytyped.runtime.StringDictionary[SerializedGeometry],
     updatedMeshes: org.scalablytyped.runtime.NumberDictionary[SerializedMesh]
   ): UpdatePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removedGeometries")(removedGeometries)
-    __obj.updateDynamic("removedMeshes")(removedMeshes)
-    __obj.updateDynamic("updatedGeometries")(updatedGeometries)
-    __obj.updateDynamic("updatedMeshes")(updatedMeshes)
+    val __obj = js.Dynamic.literal(removedGeometries = removedGeometries, removedMeshes = removedMeshes, updatedGeometries = updatedGeometries, updatedMeshes = updatedMeshes)
+  
     __obj.asInstanceOf[UpdatePayload]
   }
 }

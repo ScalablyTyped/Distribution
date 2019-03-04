@@ -32,10 +32,7 @@ object PostData {
     text: java.lang.String,
     comment: java.lang.String = null
   ): PostData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(mimeType = mimeType, params = params, text = text)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     __obj.asInstanceOf[PostData]
   }

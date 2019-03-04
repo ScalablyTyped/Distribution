@@ -13,8 +13,8 @@ trait Anon_Max
 object Anon_Max {
   @scala.inline
   def apply(max: java.lang.String): Anon_Max = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(max = max)
+  
     __obj.asInstanceOf[Anon_Max]
   }
 }

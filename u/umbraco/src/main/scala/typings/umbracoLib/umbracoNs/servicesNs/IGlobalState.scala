@@ -27,13 +27,8 @@ object IGlobalState {
     stickyNavigation: js.Any,
     touchDevice: scala.Boolean
   ): IGlobalState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isReady")(isReady)
-    __obj.updateDynamic("navMode")(navMode)
-    __obj.updateDynamic("showNavigation")(showNavigation)
-    __obj.updateDynamic("showTray")(showTray)
-    __obj.updateDynamic("stickyNavigation")(stickyNavigation)
-    __obj.updateDynamic("touchDevice")(touchDevice)
+    val __obj = js.Dynamic.literal(isReady = isReady, navMode = navMode, showNavigation = showNavigation, showTray = showTray, stickyNavigation = stickyNavigation, touchDevice = touchDevice)
+  
     __obj.asInstanceOf[IGlobalState]
   }
 }

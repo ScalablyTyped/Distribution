@@ -30,12 +30,8 @@ object QueryResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     rows: js.Array[java.lang.String]
   ): QueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, rows = rows)
+  
     __obj.asInstanceOf[QueryResult]
   }
 }

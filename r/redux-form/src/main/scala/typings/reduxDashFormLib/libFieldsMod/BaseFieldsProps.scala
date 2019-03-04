@@ -24,8 +24,7 @@ object BaseFieldsProps {
     props: P = null,
     withRef: js.UndefOr[scala.Boolean] = js.undefined
   ): BaseFieldsProps[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(names = names)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
     if (parse != null) __obj.updateDynamic("parse")(parse)

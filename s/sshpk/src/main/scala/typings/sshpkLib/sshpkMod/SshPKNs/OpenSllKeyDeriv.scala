@@ -13,9 +13,8 @@ trait OpenSllKeyDeriv extends js.Object {
 object OpenSllKeyDeriv {
   @scala.inline
   def apply(iv: nodeLib.Buffer, key: nodeLib.Buffer): OpenSllKeyDeriv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iv")(iv)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(iv = iv, key = key)
+  
     __obj.asInstanceOf[OpenSllKeyDeriv]
   }
 }

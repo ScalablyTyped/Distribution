@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(headers: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[java.lang.String]): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
+  
     __obj.asInstanceOf[Options]
   }
 }

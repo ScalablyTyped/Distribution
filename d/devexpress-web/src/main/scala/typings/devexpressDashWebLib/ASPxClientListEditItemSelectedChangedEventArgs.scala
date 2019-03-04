@@ -24,10 +24,8 @@ trait ASPxClientListEditItemSelectedChangedEventArgs extends ASPxClientProcessin
 object ASPxClientListEditItemSelectedChangedEventArgs {
   @scala.inline
   def apply(index: scala.Double, isSelected: scala.Boolean, processOnServer: scala.Boolean): ASPxClientListEditItemSelectedChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isSelected")(isSelected)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(index = index, isSelected = isSelected, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientListEditItemSelectedChangedEventArgs]
   }
 }

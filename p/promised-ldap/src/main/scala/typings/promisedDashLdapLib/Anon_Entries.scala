@@ -13,9 +13,8 @@ trait Anon_Entries extends js.Object {
 object Anon_Entries {
   @scala.inline
   def apply(entries: js.Array[_], references: js.Array[_]): Anon_Entries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(entries = entries, references = references)
+  
     __obj.asInstanceOf[Anon_Entries]
   }
 }

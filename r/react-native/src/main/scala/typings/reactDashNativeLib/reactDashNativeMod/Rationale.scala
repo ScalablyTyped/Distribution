@@ -22,10 +22,7 @@ object Rationale {
     buttonNegative: java.lang.String = null,
     buttonNeutral: java.lang.String = null
   ): Rationale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonPositive")(buttonPositive)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(buttonPositive = buttonPositive, message = message, title = title)
     if (buttonNegative != null) __obj.updateDynamic("buttonNegative")(buttonNegative)
     if (buttonNeutral != null) __obj.updateDynamic("buttonNeutral")(buttonNeutral)
     __obj.asInstanceOf[Rationale]

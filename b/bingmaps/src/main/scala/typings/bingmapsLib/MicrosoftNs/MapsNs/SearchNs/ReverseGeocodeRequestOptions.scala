@@ -60,9 +60,7 @@ object ReverseGeocodeRequestOptions {
     timeout: scala.Int | scala.Double = null,
     userData: js.Any = null
   ): ReverseGeocodeRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(callback = callback, location = location)
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
     if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2)
     if (includeEntityTypes != null) __obj.updateDynamic("includeEntityTypes")(includeEntityTypes)

@@ -24,10 +24,8 @@ object Util {
     objId: js.Function1[js.Any, Identifier],
     `type`: js.Function1[js.Any, java.lang.String]
   ): Util = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("objId")(objId)
+    val __obj = js.Dynamic.literal(clone = clone, encode = encode, objId = objId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Util]
   }
 }

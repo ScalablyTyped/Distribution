@@ -19,9 +19,7 @@ object SuccessPayloadObject {
     method: java.lang.String = null,
     params: js.Any = null
   ): SuccessPayloadObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], result = result)
     if (error != null) __obj.updateDynamic("error")(error)
     if (method != null) __obj.updateDynamic("method")(method)
     if (params != null) __obj.updateDynamic("params")(params)

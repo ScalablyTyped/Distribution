@@ -45,20 +45,8 @@ object PopupMenuController {
     statusChanged: js.Function1[FeatureStateEvent, scala.Unit],
     updatePopupMenu: js.Function0[scala.Unit]
   ): PopupMenuController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryDispatch")(queryDispatch)
-    __obj.updateDynamic("queryDispatches")(queryDispatches)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setPopupMenu")(setPopupMenu)
-    __obj.updateDynamic("statusChanged")(statusChanged)
-    __obj.updateDynamic("updatePopupMenu")(updatePopupMenu)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, disposing = disposing, initialize = initialize, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setPopupMenu = setPopupMenu, statusChanged = statusChanged, updatePopupMenu = updatePopupMenu)
+  
     __obj.asInstanceOf[PopupMenuController]
   }
 }

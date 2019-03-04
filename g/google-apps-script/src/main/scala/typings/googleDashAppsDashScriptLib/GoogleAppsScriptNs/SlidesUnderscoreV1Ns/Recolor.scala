@@ -24,9 +24,8 @@ trait Recolor extends js.Object {
 object Recolor {
   @scala.inline
   def apply(name: RecolorName, recolor_stops: js.Array[ColorStop]): Recolor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("recolor_stops")(recolor_stops)
+    val __obj = js.Dynamic.literal(name = name, recolor_stops = recolor_stops)
+  
     __obj.asInstanceOf[Recolor]
   }
 }

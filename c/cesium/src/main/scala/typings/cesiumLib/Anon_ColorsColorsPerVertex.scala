@@ -24,8 +24,7 @@ object Anon_ColorsColorsPerVertex {
     followSurface: js.UndefOr[scala.Boolean] = js.undefined,
     granularity: scala.Int | scala.Double = null
   ): Anon_ColorsColorsPerVertex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(positions = positions)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (!js.isUndefined(colorsPerVertex)) __obj.updateDynamic("colorsPerVertex")(colorsPerVertex)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)

@@ -22,8 +22,7 @@ object IpcNetConnectOpts {
     timeout: scala.Int | scala.Double = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): IpcNetConnectOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)

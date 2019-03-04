@@ -51,10 +51,7 @@ object SvgUseProps {
     transform: java.lang.String | js.Object = null,
     width: scala.Double | java.lang.String = null
   ): SvgUseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href, x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])

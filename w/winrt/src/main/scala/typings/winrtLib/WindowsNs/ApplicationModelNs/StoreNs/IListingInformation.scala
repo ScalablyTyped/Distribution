@@ -24,13 +24,8 @@ object IListingInformation {
     name: java.lang.String,
     productListings: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, ProductListing]
   ): IListingInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ageRating")(ageRating)
-    __obj.updateDynamic("currentMarket")(currentMarket)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("formattedPrice")(formattedPrice)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("productListings")(productListings)
+    val __obj = js.Dynamic.literal(ageRating = ageRating, currentMarket = currentMarket, description = description, formattedPrice = formattedPrice, name = name, productListings = productListings)
+  
     __obj.asInstanceOf[IListingInformation]
   }
 }

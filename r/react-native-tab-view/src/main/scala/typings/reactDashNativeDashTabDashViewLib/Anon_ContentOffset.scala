@@ -12,8 +12,8 @@ trait Anon_ContentOffset extends js.Object {
 object Anon_ContentOffset {
   @scala.inline
   def apply(contentOffset: Anon_X): Anon_ContentOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentOffset")(contentOffset)
+    val __obj = js.Dynamic.literal(contentOffset = contentOffset)
+  
     __obj.asInstanceOf[Anon_ContentOffset]
   }
 }

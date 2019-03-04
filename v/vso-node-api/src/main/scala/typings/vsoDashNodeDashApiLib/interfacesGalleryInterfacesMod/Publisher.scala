@@ -32,17 +32,8 @@ object Publisher {
     publisherName: java.lang.String,
     shortDescription: java.lang.String
   ): Publisher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("lastUpdated")(lastUpdated)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("longDescription")(longDescription)
-    __obj.updateDynamic("publisherId")(publisherId)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("shortDescription")(shortDescription)
+    val __obj = js.Dynamic.literal(displayName = displayName, emailAddress = emailAddress, extensions = extensions, flags = flags, lastUpdated = lastUpdated, links = links, longDescription = longDescription, publisherId = publisherId, publisherName = publisherName, shortDescription = shortDescription)
+  
     __obj.asInstanceOf[Publisher]
   }
 }

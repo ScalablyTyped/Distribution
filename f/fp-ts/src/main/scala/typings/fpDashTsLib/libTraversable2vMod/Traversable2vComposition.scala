@@ -63,13 +63,8 @@ object Traversable2vComposition {
       ]
     ]
   ): Traversable2vComposition[F, G] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foldMap")(foldMap)
-    __obj.updateDynamic("foldr")(foldr)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("sequence")(sequence)
-    __obj.updateDynamic("traverse")(traverse)
+    val __obj = js.Dynamic.literal(foldMap = foldMap, foldr = foldr, map = map, reduce = reduce, sequence = sequence, traverse = traverse)
+  
     __obj.asInstanceOf[Traversable2vComposition[F, G]]
   }
 }

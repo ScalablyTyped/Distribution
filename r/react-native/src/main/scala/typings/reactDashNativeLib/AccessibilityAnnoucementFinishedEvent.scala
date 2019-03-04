@@ -13,9 +13,8 @@ trait AccessibilityAnnoucementFinishedEvent extends js.Object {
 object AccessibilityAnnoucementFinishedEvent {
   @scala.inline
   def apply(announcement: java.lang.String, success: scala.Boolean): AccessibilityAnnoucementFinishedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("announcement")(announcement)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(announcement = announcement, success = success)
+  
     __obj.asInstanceOf[AccessibilityAnnoucementFinishedEvent]
   }
 }

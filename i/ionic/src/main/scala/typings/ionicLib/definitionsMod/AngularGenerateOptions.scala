@@ -16,8 +16,8 @@ object AngularGenerateOptions {
     `type`: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): AngularGenerateOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AngularGenerateOptions]
   }

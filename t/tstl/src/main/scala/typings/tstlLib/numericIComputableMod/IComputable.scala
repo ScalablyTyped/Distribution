@@ -24,13 +24,8 @@ object IComputable {
     negate: js.Function0[Ret],
     plus: js.Function1[Param, Ret]
   ): IComputable[Param, Ret] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("divides")(divides)
-    __obj.updateDynamic("minus")(minus)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("multiplies")(multiplies)
-    __obj.updateDynamic("negate")(negate)
-    __obj.updateDynamic("plus")(plus)
+    val __obj = js.Dynamic.literal(divides = divides, minus = minus, modules = modules, multiplies = multiplies, negate = negate, plus = plus)
+  
     __obj.asInstanceOf[IComputable[Param, Ret]]
   }
 }

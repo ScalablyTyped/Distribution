@@ -60,31 +60,8 @@ object RunUpdateModel {
     testEnvironmentId: java.lang.String,
     testSettings: ShallowReference
   ): RunUpdateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildDropLocation")(buildDropLocation)
-    __obj.updateDynamic("buildFlavor")(buildFlavor)
-    __obj.updateDynamic("buildPlatform")(buildPlatform)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("completedDate")(completedDate)
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("deleteInProgressResults")(deleteInProgressResults)
-    __obj.updateDynamic("dtlAutEnvironment")(dtlAutEnvironment)
-    __obj.updateDynamic("dtlEnvironment")(dtlEnvironment)
-    __obj.updateDynamic("dtlEnvironmentDetails")(dtlEnvironmentDetails)
-    __obj.updateDynamic("dueDate")(dueDate)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("iteration")(iteration)
-    __obj.updateDynamic("logEntries")(logEntries)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("releaseEnvironmentUri")(releaseEnvironmentUri)
-    __obj.updateDynamic("releaseUri")(releaseUri)
-    __obj.updateDynamic("sourceWorkflow")(sourceWorkflow)
-    __obj.updateDynamic("startedDate")(startedDate)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("substate")(substate)
-    __obj.updateDynamic("testEnvironmentId")(testEnvironmentId)
-    __obj.updateDynamic("testSettings")(testSettings)
+    val __obj = js.Dynamic.literal(build = build, buildDropLocation = buildDropLocation, buildFlavor = buildFlavor, buildPlatform = buildPlatform, comment = comment, completedDate = completedDate, controller = controller, deleteInProgressResults = deleteInProgressResults, dtlAutEnvironment = dtlAutEnvironment, dtlEnvironment = dtlEnvironment, dtlEnvironmentDetails = dtlEnvironmentDetails, dueDate = dueDate, errorMessage = errorMessage, iteration = iteration, logEntries = logEntries, name = name, releaseEnvironmentUri = releaseEnvironmentUri, releaseUri = releaseUri, sourceWorkflow = sourceWorkflow, startedDate = startedDate, state = state, substate = substate, testEnvironmentId = testEnvironmentId, testSettings = testSettings)
+  
     __obj.asInstanceOf[RunUpdateModel]
   }
 }

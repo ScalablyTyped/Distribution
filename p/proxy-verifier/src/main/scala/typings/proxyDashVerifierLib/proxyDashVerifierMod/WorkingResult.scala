@@ -12,8 +12,8 @@ trait WorkingResult extends Result {
 object WorkingResult {
   @scala.inline
   def apply(ok: proxyDashVerifierLib.proxyDashVerifierLibNumbers.`true`): WorkingResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ok")(ok)
+    val __obj = js.Dynamic.literal(ok = ok)
+  
     __obj.asInstanceOf[WorkingResult]
   }
 }

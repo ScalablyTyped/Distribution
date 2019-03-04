@@ -32,8 +32,7 @@ object TDocumentDefinitions {
     pageSize: PageSize = null,
     styles: Style = null
   ): TDocumentDefinitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
     if (footer != null) __obj.updateDynamic("footer")(footer)

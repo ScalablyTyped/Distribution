@@ -21,10 +21,7 @@ object GanttResizeEvent {
     start: stdLib.Date = null,
     task: kendoDashUiLib.kendoNs.dataNs.GanttTask = null
   ): GanttResizeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (end != null) __obj.updateDynamic("end")(end)
     if (start != null) __obj.updateDynamic("start")(start)
     if (task != null) __obj.updateDynamic("task")(task)

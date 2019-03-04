@@ -13,9 +13,8 @@ trait StamplayObject extends js.Object {
 object StamplayObject {
   @scala.inline
   def apply(Collection: js.Any, Model: Model): StamplayObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Collection")(Collection)
-    __obj.updateDynamic("Model")(Model)
+    val __obj = js.Dynamic.literal(Collection = Collection, Model = Model)
+  
     __obj.asInstanceOf[StamplayObject]
   }
 }

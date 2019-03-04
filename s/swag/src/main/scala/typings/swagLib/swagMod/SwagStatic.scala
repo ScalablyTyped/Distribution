@@ -12,8 +12,8 @@ trait SwagStatic extends js.Object {
 object SwagStatic {
   @scala.inline
   def apply(registerHelpers: js.Function1[swagLib.Anon_AST, scala.Unit]): SwagStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerHelpers")(registerHelpers)
+    val __obj = js.Dynamic.literal(registerHelpers = registerHelpers)
+  
     __obj.asInstanceOf[SwagStatic]
   }
 }

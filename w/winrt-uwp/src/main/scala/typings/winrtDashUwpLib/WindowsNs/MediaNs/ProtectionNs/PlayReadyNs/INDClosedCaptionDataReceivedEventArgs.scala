@@ -22,10 +22,8 @@ object INDClosedCaptionDataReceivedEventArgs {
     closedCaptionDataFormat: NDClosedCaptionFormat,
     presentationTimestamp: scala.Double
   ): INDClosedCaptionDataReceivedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closedCaptionData")(closedCaptionData)
-    __obj.updateDynamic("closedCaptionDataFormat")(closedCaptionDataFormat)
-    __obj.updateDynamic("presentationTimestamp")(presentationTimestamp)
+    val __obj = js.Dynamic.literal(closedCaptionData = closedCaptionData, closedCaptionDataFormat = closedCaptionDataFormat, presentationTimestamp = presentationTimestamp)
+  
     __obj.asInstanceOf[INDClosedCaptionDataReceivedEventArgs]
   }
 }

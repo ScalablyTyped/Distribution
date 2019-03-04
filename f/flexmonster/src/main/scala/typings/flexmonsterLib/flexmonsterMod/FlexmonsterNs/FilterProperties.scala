@@ -20,7 +20,8 @@ object FilterProperties {
     members: js.Array[FilterItem] = null,
     quantity: scala.Int | scala.Double = null
   ): FilterProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (measure != null) __obj.updateDynamic("measure")(measure)
     if (members != null) __obj.updateDynamic("members")(members)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])

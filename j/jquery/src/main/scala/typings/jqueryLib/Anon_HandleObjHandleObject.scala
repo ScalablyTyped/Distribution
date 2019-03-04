@@ -12,8 +12,8 @@ trait Anon_HandleObjHandleObject[TTarget, TData] extends js.Object {
 object Anon_HandleObjHandleObject {
   @scala.inline
   def apply[TTarget, TData](handleObj: jqueryLib.JQueryNs.HandleObject[TTarget, TData]): Anon_HandleObjHandleObject[TTarget, TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleObj")(handleObj)
+    val __obj = js.Dynamic.literal(handleObj = handleObj)
+  
     __obj.asInstanceOf[Anon_HandleObjHandleObject[TTarget, TData]]
   }
 }

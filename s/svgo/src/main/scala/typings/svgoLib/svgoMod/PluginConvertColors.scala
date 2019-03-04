@@ -12,8 +12,8 @@ trait PluginConvertColors extends js.Object {
 object PluginConvertColors {
   @scala.inline
   def apply(convertColors: scala.Boolean | js.Object): PluginConvertColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertColors")(convertColors.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(convertColors = convertColors.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginConvertColors]
   }
 }

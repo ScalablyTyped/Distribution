@@ -16,9 +16,8 @@ object Anon_DeviceNameVirtualName {
     deviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     virtualName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_DeviceNameVirtualName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    __obj.updateDynamic("virtualName")(virtualName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], virtualName = virtualName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DeviceNameVirtualName]
   }
 }

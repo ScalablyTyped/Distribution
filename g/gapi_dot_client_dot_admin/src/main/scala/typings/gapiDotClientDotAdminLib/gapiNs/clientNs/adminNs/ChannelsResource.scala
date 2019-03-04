@@ -18,8 +18,8 @@ object ChannelsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): ChannelsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(stop = stop)
+  
     __obj.asInstanceOf[ChannelsResource]
   }
 }

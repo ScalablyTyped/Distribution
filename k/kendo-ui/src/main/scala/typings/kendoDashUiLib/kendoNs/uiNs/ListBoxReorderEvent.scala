@@ -21,10 +21,7 @@ object ListBoxReorderEvent {
     items: js.Any = null,
     offset: scala.Int | scala.Double = null
   ): ListBoxReorderEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems)
     if (items != null) __obj.updateDynamic("items")(items)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

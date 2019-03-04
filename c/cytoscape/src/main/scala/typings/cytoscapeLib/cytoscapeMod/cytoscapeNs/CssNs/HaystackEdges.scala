@@ -24,8 +24,8 @@ trait HaystackEdges extends js.Object {
 object HaystackEdges {
   @scala.inline
   def apply(`haystack-radius`: scala.Double): HaystackEdges = {
-    val __obj = js.Dynamic.literal(`haystack-radius` = `haystack-radius`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("haystack-radius")(`haystack-radius`)
     __obj.asInstanceOf[HaystackEdges]
   }
 }

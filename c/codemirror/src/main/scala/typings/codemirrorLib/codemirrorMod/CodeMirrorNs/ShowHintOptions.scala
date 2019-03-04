@@ -13,9 +13,8 @@ trait ShowHintOptions extends js.Object {
 object ShowHintOptions {
   @scala.inline
   def apply(completeSingle: scala.Boolean, hint: HintFunction | AsyncHintFunction): ShowHintOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completeSingle")(completeSingle)
-    __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(completeSingle = completeSingle, hint = hint.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ShowHintOptions]
   }
 }

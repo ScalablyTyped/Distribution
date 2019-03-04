@@ -16,9 +16,8 @@ object IEncryptedAndAuthenticatedData {
     authenticationTag: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
     encryptedData: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
   ): IEncryptedAndAuthenticatedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticationTag")(authenticationTag)
-    __obj.updateDynamic("encryptedData")(encryptedData)
+    val __obj = js.Dynamic.literal(authenticationTag = authenticationTag, encryptedData = encryptedData)
+  
     __obj.asInstanceOf[IEncryptedAndAuthenticatedData]
   }
 }

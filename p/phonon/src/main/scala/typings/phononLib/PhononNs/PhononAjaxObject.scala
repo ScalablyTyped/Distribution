@@ -44,11 +44,7 @@ object PhononAjaxObject {
     headers: js.Any = null,
     timeout: scala.Int | scala.Double = null
   ): PhononAjaxObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataType")(dataType)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(dataType = dataType, method = method, success = success, url = url)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
     if (data != null) __obj.updateDynamic("data")(data)

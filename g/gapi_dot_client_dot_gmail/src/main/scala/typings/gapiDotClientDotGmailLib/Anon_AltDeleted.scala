@@ -51,8 +51,7 @@ object Anon_AltDeleted {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDeleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
     if (fields != null) __obj.updateDynamic("fields")(fields)

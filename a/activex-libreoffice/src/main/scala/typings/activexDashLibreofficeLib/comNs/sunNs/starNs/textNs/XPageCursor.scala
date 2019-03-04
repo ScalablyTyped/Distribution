@@ -53,19 +53,8 @@ object XPageCursor {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPageCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Page")(Page)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPage")(getPage)
-    __obj.updateDynamic("jumpToEndOfPage")(jumpToEndOfPage)
-    __obj.updateDynamic("jumpToFirstPage")(jumpToFirstPage)
-    __obj.updateDynamic("jumpToLastPage")(jumpToLastPage)
-    __obj.updateDynamic("jumpToNextPage")(jumpToNextPage)
-    __obj.updateDynamic("jumpToPage")(jumpToPage)
-    __obj.updateDynamic("jumpToPreviousPage")(jumpToPreviousPage)
-    __obj.updateDynamic("jumpToStartOfPage")(jumpToStartOfPage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Page = Page, acquire = acquire, getPage = getPage, jumpToEndOfPage = jumpToEndOfPage, jumpToFirstPage = jumpToFirstPage, jumpToLastPage = jumpToLastPage, jumpToNextPage = jumpToNextPage, jumpToPage = jumpToPage, jumpToPreviousPage = jumpToPreviousPage, jumpToStartOfPage = jumpToStartOfPage, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPageCursor]
   }
 }

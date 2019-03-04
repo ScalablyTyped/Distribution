@@ -12,8 +12,8 @@ trait ClearSessionParams extends js.Object {
 object ClearSessionParams {
   @scala.inline
   def apply(federated: scala.Boolean): ClearSessionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("federated")(federated)
+    val __obj = js.Dynamic.literal(federated = federated)
+  
     __obj.asInstanceOf[ClearSessionParams]
   }
 }

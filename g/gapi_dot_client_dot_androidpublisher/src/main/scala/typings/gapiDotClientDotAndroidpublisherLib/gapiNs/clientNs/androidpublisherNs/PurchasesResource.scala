@@ -18,10 +18,8 @@ object PurchasesResource {
     subscriptions: SubscriptionsResource,
     voidedpurchases: VoidedpurchasesResource
   ): PurchasesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("products")(products)
-    __obj.updateDynamic("subscriptions")(subscriptions)
-    __obj.updateDynamic("voidedpurchases")(voidedpurchases)
+    val __obj = js.Dynamic.literal(products = products, subscriptions = subscriptions, voidedpurchases = voidedpurchases)
+  
     __obj.asInstanceOf[PurchasesResource]
   }
 }

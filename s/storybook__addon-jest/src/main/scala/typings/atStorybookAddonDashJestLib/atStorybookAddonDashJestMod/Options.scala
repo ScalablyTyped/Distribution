@@ -13,8 +13,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(results: js.Object, filesExt: java.lang.String = null): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(results = results)
     if (filesExt != null) __obj.updateDynamic("filesExt")(filesExt)
     __obj.asInstanceOf[Options]
   }

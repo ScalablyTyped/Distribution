@@ -13,9 +13,8 @@ trait ElementsDefinition extends js.Object {
 object ElementsDefinition {
   @scala.inline
   def apply(edges: js.Array[EdgeDefinition], nodes: js.Array[NodeDefinition]): ElementsDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(edges = edges, nodes = nodes)
+  
     __obj.asInstanceOf[ElementsDefinition]
   }
 }

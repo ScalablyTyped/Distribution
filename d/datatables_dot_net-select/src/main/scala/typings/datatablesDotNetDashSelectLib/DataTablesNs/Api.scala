@@ -12,8 +12,8 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(select: datatablesDotNetDashSelectLib.Anon_Api): Api = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(select = select)
+  
     __obj.asInstanceOf[Api]
   }
 }

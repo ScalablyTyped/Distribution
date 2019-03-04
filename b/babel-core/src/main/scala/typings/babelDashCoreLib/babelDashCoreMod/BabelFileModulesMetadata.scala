@@ -13,9 +13,8 @@ trait BabelFileModulesMetadata extends js.Object {
 object BabelFileModulesMetadata {
   @scala.inline
   def apply(exports: babelDashCoreLib.Anon_Exported, imports: js.Array[js.Object]): BabelFileModulesMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exports")(exports)
-    __obj.updateDynamic("imports")(imports)
+    val __obj = js.Dynamic.literal(exports = exports, imports = imports)
+  
     __obj.asInstanceOf[BabelFileModulesMetadata]
   }
 }

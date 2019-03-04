@@ -20,11 +20,8 @@ object FormatResult {
     pattern: java.lang.String,
     value: java.lang.String
   ): FormatResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(align = align, color = color, pattern = pattern, value = value)
+  
     __obj.asInstanceOf[FormatResult]
   }
 }

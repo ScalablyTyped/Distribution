@@ -20,11 +20,8 @@ object Anon_Button {
     X: activexDashStdoleLib.stdoleNs.OLE_XPOS_CONTAINER,
     Y: activexDashStdoleLib.stdoleNs.OLE_YPOS_CONTAINER
   ): Anon_Button = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Button")(Button)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Button = Button, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[Anon_Button]
   }
 }

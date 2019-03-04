@@ -13,9 +13,8 @@ trait Anon_Cursor extends js.Object {
 object Anon_Cursor {
   @scala.inline
   def apply(cursor: scala.Double, value: java.lang.String): Anon_Cursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cursor")(cursor)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(cursor = cursor, value = value)
+  
     __obj.asInstanceOf[Anon_Cursor]
   }
 }

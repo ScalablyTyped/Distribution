@@ -21,8 +21,8 @@ object TSTypeQuery {
     exprName: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind | astDashTypesLib.genKindsMod.TSImportTypeKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeQuery
   ): TSTypeQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("exprName")(exprName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypeQuery]
   }
 }

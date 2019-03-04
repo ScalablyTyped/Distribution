@@ -56,15 +56,8 @@ object ConfigOptions {
     stringMap: js.Array[StringMap],
     useCalc: scala.Boolean
   ): ConfigOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoRename")(autoRename)
-    __obj.updateDynamic("autoRenameStrict")(autoRenameStrict)
-    __obj.updateDynamic("blacklist")(blacklist)
-    __obj.updateDynamic("clean")(clean)
-    __obj.updateDynamic("greedy")(greedy)
-    __obj.updateDynamic("processUrls")(processUrls.asInstanceOf[js.Any])
-    __obj.updateDynamic("stringMap")(stringMap)
-    __obj.updateDynamic("useCalc")(useCalc)
+    val __obj = js.Dynamic.literal(autoRename = autoRename, autoRenameStrict = autoRenameStrict, blacklist = blacklist, clean = clean, greedy = greedy, processUrls = processUrls.asInstanceOf[js.Any], stringMap = stringMap, useCalc = useCalc)
+  
     __obj.asInstanceOf[ConfigOptions]
   }
 }

@@ -19,10 +19,7 @@ object Comment {
     value: java.lang.String,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leading")(leading)
-    __obj.updateDynamic("trailing")(trailing)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing, value = value)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Comment]
   }

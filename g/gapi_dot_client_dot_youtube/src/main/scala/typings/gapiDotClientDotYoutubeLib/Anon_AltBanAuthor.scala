@@ -50,9 +50,7 @@ object Anon_AltBanAuthor {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBanAuthor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("moderationStatus")(moderationStatus)
+    val __obj = js.Dynamic.literal(id = id, moderationStatus = moderationStatus)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(banAuthor)) __obj.updateDynamic("banAuthor")(banAuthor)
     if (fields != null) __obj.updateDynamic("fields")(fields)

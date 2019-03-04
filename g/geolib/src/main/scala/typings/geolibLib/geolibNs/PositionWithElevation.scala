@@ -12,9 +12,7 @@ trait PositionWithElevation extends PositionAsDecimal {
 object PositionWithElevation {
   @scala.inline
   def apply(latitude: scala.Double, longitude: scala.Double, elevation: scala.Int | scala.Double = null): PositionWithElevation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionWithElevation]
   }

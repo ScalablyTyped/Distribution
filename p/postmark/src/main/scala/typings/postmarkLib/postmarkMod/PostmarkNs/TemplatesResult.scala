@@ -12,9 +12,8 @@ trait TemplatesResult extends PaginatedResult {
 object TemplatesResult {
   @scala.inline
   def apply(Templates: js.Array[TemplateBase], TotalCount: scala.Double): TemplatesResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Templates")(Templates)
-    __obj.updateDynamic("TotalCount")(TotalCount)
+    val __obj = js.Dynamic.literal(Templates = Templates, TotalCount = TotalCount)
+  
     __obj.asInstanceOf[TemplatesResult]
   }
 }

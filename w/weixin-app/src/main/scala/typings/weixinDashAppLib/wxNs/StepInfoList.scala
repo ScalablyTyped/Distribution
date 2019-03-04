@@ -13,8 +13,8 @@ trait StepInfoList extends js.Object {
 object StepInfoList {
   @scala.inline
   def apply(stepInfoList: js.Array[StepInfo]): StepInfoList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stepInfoList")(stepInfoList)
+    val __obj = js.Dynamic.literal(stepInfoList = stepInfoList)
+  
     __obj.asInstanceOf[StepInfoList]
   }
 }

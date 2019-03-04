@@ -82,21 +82,8 @@ object SchedulerSizes {
     scale_width: scala.Double,
     scroll_width: scala.Double
   ): SchedulerSizes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bar_height")(bar_height)
-    __obj.updateDynamic("editor_width")(editor_width)
-    __obj.updateDynamic("lightbox_additional_height")(lightbox_additional_height)
-    __obj.updateDynamic("map_date_width")(map_date_width)
-    __obj.updateDynamic("map_description_width")(map_description_width)
-    __obj.updateDynamic("margin_left")(margin_left)
-    __obj.updateDynamic("margin_top")(margin_top)
-    __obj.updateDynamic("menu_width")(menu_width)
-    __obj.updateDynamic("min_event_height")(min_event_height)
-    __obj.updateDynamic("month_scale_height")(month_scale_height)
-    __obj.updateDynamic("nav_height")(nav_height)
-    __obj.updateDynamic("scale_height")(scale_height)
-    __obj.updateDynamic("scale_width")(scale_width)
-    __obj.updateDynamic("scroll_width")(scroll_width)
+    val __obj = js.Dynamic.literal(bar_height = bar_height, editor_width = editor_width, lightbox_additional_height = lightbox_additional_height, map_date_width = map_date_width, map_description_width = map_description_width, margin_left = margin_left, margin_top = margin_top, menu_width = menu_width, min_event_height = min_event_height, month_scale_height = month_scale_height, nav_height = nav_height, scale_height = scale_height, scale_width = scale_width, scroll_width = scroll_width)
+  
     __obj.asInstanceOf[SchedulerSizes]
   }
 }

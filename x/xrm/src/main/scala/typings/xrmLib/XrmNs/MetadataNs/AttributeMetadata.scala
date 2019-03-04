@@ -35,14 +35,8 @@ object AttributeMetadata {
     optionSet: js.Array[OptionMetadata],
     options: js.Array[java.lang.String]
   ): AttributeMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeType")(attributeType)
-    __obj.updateDynamic("defaultFormValue")(defaultFormValue)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("entityLogicalName")(entityLogicalName)
-    __obj.updateDynamic("logicalName")(logicalName)
-    __obj.updateDynamic("optionSet")(optionSet)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(attributeType = attributeType, defaultFormValue = defaultFormValue, displayName = displayName, entityLogicalName = entityLogicalName, logicalName = logicalName, optionSet = optionSet, options = options)
+  
     __obj.asInstanceOf[AttributeMetadata]
   }
 }

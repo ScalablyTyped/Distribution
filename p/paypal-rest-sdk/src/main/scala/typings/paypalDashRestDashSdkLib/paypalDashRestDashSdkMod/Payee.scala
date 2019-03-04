@@ -18,9 +18,7 @@ object Payee {
     merchant_id: java.lang.String,
     payee_display_metadata: paypalDashRestDashSdkLib.Anon_Brandname = null
   ): Payee = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("merchant_id")(merchant_id)
+    val __obj = js.Dynamic.literal(email = email, merchant_id = merchant_id)
     if (payee_display_metadata != null) __obj.updateDynamic("payee_display_metadata")(payee_display_metadata)
     __obj.asInstanceOf[Payee]
   }

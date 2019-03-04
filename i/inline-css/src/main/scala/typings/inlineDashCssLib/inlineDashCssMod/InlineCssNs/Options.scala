@@ -30,8 +30,7 @@ object Options {
     removeLinkTags: js.UndefOr[scala.Boolean] = js.undefined,
     removeStyleTags: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(applyLinkTags)) __obj.updateDynamic("applyLinkTags")(applyLinkTags)
     if (!js.isUndefined(applyStyleTags)) __obj.updateDynamic("applyStyleTags")(applyStyleTags)
     if (!js.isUndefined(applyTableAttributes)) __obj.updateDynamic("applyTableAttributes")(applyTableAttributes)

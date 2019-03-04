@@ -23,11 +23,8 @@ object ASPxClientHtmlEditorPasteFromWordDialog {
     GetOkButton: js.Function0[ASPxClientButton],
     GetRemoveFontFamilyCheckBox: js.Function0[ASPxClientCheckBox]
   ): ASPxClientHtmlEditorPasteFromWordDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetRemoveFontFamilyCheckBox")(GetRemoveFontFamilyCheckBox)
+    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton, GetRemoveFontFamilyCheckBox = GetRemoveFontFamilyCheckBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorPasteFromWordDialog]
   }
 }

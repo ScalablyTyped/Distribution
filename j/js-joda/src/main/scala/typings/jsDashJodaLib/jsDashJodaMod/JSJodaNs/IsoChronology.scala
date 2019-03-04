@@ -17,10 +17,8 @@ object IsoChronology {
     resolveDate: js.Function2[js.Any, js.Any, js.Any],
     toString: js.Function0[java.lang.String]
   ): IsoChronology = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("resolveDate")(resolveDate)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(equals = equals, resolveDate = resolveDate, toString = toString)
+  
     __obj.asInstanceOf[IsoChronology]
   }
 }

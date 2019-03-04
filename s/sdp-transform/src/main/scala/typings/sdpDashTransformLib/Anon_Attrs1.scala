@@ -22,10 +22,7 @@ object Anon_Attrs1 {
     attrs2: java.lang.String = null,
     dir2: java.lang.String = null
   ): Anon_Attrs1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs1")(attrs1)
-    __obj.updateDynamic("dir1")(dir1)
-    __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attrs1 = attrs1, dir1 = dir1, pt = pt.asInstanceOf[js.Any])
     if (attrs2 != null) __obj.updateDynamic("attrs2")(attrs2)
     if (dir2 != null) __obj.updateDynamic("dir2")(dir2)
     __obj.asInstanceOf[Anon_Attrs1]

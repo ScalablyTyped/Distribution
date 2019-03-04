@@ -20,9 +20,7 @@ object Anon_DisabledEv {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null
   ): Anon_DisabledEv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(onChange = onChange, value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Anon_DisabledEv]

@@ -105,8 +105,7 @@ object PolygonProps {
     x: reactDashNativeDashSvgLib.NumberProp = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): PolygonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])

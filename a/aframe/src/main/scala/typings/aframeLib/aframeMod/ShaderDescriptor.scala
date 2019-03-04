@@ -13,9 +13,8 @@ trait ShaderDescriptor[T /* <: Shader */] extends js.Object {
 object ShaderDescriptor {
   @scala.inline
   def apply[T /* <: Shader */](Shader: ShaderConstructor[T], schema: Schema[js.Object]): ShaderDescriptor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Shader")(Shader)
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Shader = Shader, schema = schema.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ShaderDescriptor[T]]
   }
 }

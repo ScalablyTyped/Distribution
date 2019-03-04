@@ -26,17 +26,8 @@ object AgentJobRequestMessage {
     tasks: js.Array[TaskInstance],
     timeline: TimelineReference
   ): AgentJobRequestMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("jobName")(jobName)
-    __obj.updateDynamic("lockToken")(lockToken)
-    __obj.updateDynamic("lockedUntil")(lockedUntil)
-    __obj.updateDynamic("messageType")(messageType)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("tasks")(tasks)
-    __obj.updateDynamic("timeline")(timeline)
+    val __obj = js.Dynamic.literal(environment = environment, jobId = jobId, jobName = jobName, lockToken = lockToken, lockedUntil = lockedUntil, messageType = messageType, plan = plan, requestId = requestId, tasks = tasks, timeline = timeline)
+  
     __obj.asInstanceOf[AgentJobRequestMessage]
   }
 }

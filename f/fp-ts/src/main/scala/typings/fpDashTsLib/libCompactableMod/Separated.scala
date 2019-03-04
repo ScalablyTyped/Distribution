@@ -13,9 +13,8 @@ trait Separated[A, B] extends js.Object {
 object Separated {
   @scala.inline
   def apply[A, B](left: A, right: B): Separated[A, B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Separated[A, B]]
   }
 }

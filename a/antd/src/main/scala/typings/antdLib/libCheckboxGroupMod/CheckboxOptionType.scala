@@ -22,9 +22,7 @@ object CheckboxOptionType {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: js.Function1[/* e */ antdLib.libCheckboxCheckboxMod.CheckboxChangeEvent, scala.Unit] = null
   ): CheckboxOptionType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     __obj.asInstanceOf[CheckboxOptionType]

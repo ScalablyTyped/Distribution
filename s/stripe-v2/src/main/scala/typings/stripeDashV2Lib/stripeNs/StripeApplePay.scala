@@ -33,9 +33,8 @@ object StripeApplePay {
     ],
     checkAvailability: js.Function1[js.Function1[/* result */ scala.Boolean, scala.Unit], scala.Unit]
   ): StripeApplePay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildSession")(buildSession)
-    __obj.updateDynamic("checkAvailability")(checkAvailability)
+    val __obj = js.Dynamic.literal(buildSession = buildSession, checkAvailability = checkAvailability)
+  
     __obj.asInstanceOf[StripeApplePay]
   }
 }

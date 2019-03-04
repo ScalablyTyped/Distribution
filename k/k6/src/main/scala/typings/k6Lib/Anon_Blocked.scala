@@ -28,15 +28,8 @@ object Anon_Blocked {
     tls_handshaking: scala.Double,
     waiting: scala.Double
   ): Anon_Blocked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocked")(blocked)
-    __obj.updateDynamic("connecting")(connecting)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("looking_up")(looking_up)
-    __obj.updateDynamic("receiving")(receiving)
-    __obj.updateDynamic("sending")(sending)
-    __obj.updateDynamic("tls_handshaking")(tls_handshaking)
-    __obj.updateDynamic("waiting")(waiting)
+    val __obj = js.Dynamic.literal(blocked = blocked, connecting = connecting, duration = duration, looking_up = looking_up, receiving = receiving, sending = sending, tls_handshaking = tls_handshaking, waiting = waiting)
+  
     __obj.asInstanceOf[Anon_Blocked]
   }
 }

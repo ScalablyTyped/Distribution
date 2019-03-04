@@ -26,14 +26,8 @@ object FileListResource {
     nextPageToken: java.lang.String,
     selfLink: java.lang.String
   ): FileListResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("incompleteSearch")(incompleteSearch)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("nextLink")(nextLink)
-    __obj.updateDynamic("nextPageToken")(nextPageToken)
-    __obj.updateDynamic("selfLink")(selfLink)
+    val __obj = js.Dynamic.literal(etag = etag, incompleteSearch = incompleteSearch, items = items, kind = kind, nextLink = nextLink, nextPageToken = nextPageToken, selfLink = selfLink)
+  
     __obj.asInstanceOf[FileListResource]
   }
 }

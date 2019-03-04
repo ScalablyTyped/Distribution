@@ -49,9 +49,7 @@ object BindToStateOptions {
     queries: js.Object = null,
     `then`: js.Function0[scala.Unit] = null
   ): BindToStateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(context = context, state = state)
     if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (queries != null) __obj.updateDynamic("queries")(queries)

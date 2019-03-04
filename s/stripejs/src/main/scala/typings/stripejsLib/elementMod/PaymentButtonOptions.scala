@@ -22,8 +22,7 @@ object PaymentButtonOptions {
     classes: stripejsLib.Anon_Base = null,
     style: stripejsLib.Anon_BaseComplete = null
   ): PaymentButtonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paymentRequest")(paymentRequest)
+    val __obj = js.Dynamic.literal(paymentRequest = paymentRequest)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[PaymentButtonOptions]

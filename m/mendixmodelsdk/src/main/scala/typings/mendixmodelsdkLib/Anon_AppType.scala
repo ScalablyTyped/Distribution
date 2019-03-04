@@ -47,16 +47,8 @@ object Anon_AppType {
     consistencyErrors: js.Array[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IProblem] = null,
     message: java.lang.String = null
   ): Anon_AppType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("disk")(disk)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("environmentId")(environmentId)
-    __obj.updateDynamic("instances")(instances)
-    __obj.updateDynamic("memory")(memory)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("profile")(profile)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(disk = disk, endpoint = endpoint, environmentId = environmentId, instances = instances, memory = memory, name = name, profile = profile, state = state, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (appType != null) __obj.updateDynamic("appType")(appType.asInstanceOf[js.Any])
     if (buildErrors != null) __obj.updateDynamic("buildErrors")(buildErrors)
     if (buildstatus != null) __obj.updateDynamic("buildstatus")(buildstatus)

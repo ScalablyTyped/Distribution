@@ -35,9 +35,8 @@ object TSInterfaceDeclaration {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TSTypeParameterDeclaration = null
   ): TSInterfaceDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(body = body, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)

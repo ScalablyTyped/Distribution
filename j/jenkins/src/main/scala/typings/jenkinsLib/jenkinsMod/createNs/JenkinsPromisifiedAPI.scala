@@ -24,13 +24,8 @@ object JenkinsPromisifiedAPI {
     queue: jenkinsLib.Anon_Cancel,
     view: jenkinsLib.Anon_AddConfig
   ): JenkinsPromisifiedAPI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("job")(job)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(build = build, info = info, job = job, node = node, queue = queue, view = view)
+  
     __obj.asInstanceOf[JenkinsPromisifiedAPI]
   }
 }

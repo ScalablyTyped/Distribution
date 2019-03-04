@@ -28,9 +28,8 @@ trait Initializer extends js.Object {
 object Initializer {
   @scala.inline
   def apply(name: java.lang.String, rules: js.Array[Rule]): Initializer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(name = name, rules = rules)
+  
     __obj.asInstanceOf[Initializer]
   }
 }

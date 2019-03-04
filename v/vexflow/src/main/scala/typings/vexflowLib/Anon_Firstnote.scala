@@ -13,9 +13,8 @@ trait Anon_Firstnote extends js.Object {
 object Anon_Firstnote {
   @scala.inline
   def apply(first_note: vexflowLib.VexNs.FlowNs.Note, last_note: vexflowLib.VexNs.FlowNs.Note): Anon_Firstnote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_note")(first_note)
-    __obj.updateDynamic("last_note")(last_note)
+    val __obj = js.Dynamic.literal(first_note = first_note, last_note = last_note)
+  
     __obj.asInstanceOf[Anon_Firstnote]
   }
 }

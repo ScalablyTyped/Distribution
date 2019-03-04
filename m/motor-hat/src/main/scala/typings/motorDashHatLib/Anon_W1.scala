@@ -22,9 +22,8 @@ object Anon_W1 {
     W1: motorDashHatLib.motorDashHatMod.PinDefinition,
     W2: motorDashHatLib.motorDashHatMod.PinDefinition
   ): Anon_W1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("W1")(W1.asInstanceOf[js.Any])
-    __obj.updateDynamic("W2")(W2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(W1 = W1.asInstanceOf[js.Any], W2 = W2.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_W1]
   }
 }

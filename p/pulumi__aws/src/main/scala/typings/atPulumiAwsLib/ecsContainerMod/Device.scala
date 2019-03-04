@@ -18,8 +18,7 @@ object Device {
     containerPath: java.lang.String = null,
     permissions: js.Array[java.lang.String] = null
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostPath")(hostPath)
+    val __obj = js.Dynamic.literal(hostPath = hostPath)
     if (containerPath != null) __obj.updateDynamic("containerPath")(containerPath)
     if (permissions != null) __obj.updateDynamic("permissions")(permissions)
     __obj.asInstanceOf[Device]

@@ -30,11 +30,7 @@ object SlotRenderEndedEvent {
     sourceAgnosticCreativeId: scala.Int | scala.Double = null,
     sourceAgnosticLineItemId: scala.Int | scala.Double = null
   ): SlotRenderEndedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.updateDynamic("slot")(slot)
+    val __obj = js.Dynamic.literal(isEmpty = isEmpty, serviceName = serviceName, size = size.asInstanceOf[js.Any], slot = slot)
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
     if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
     if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])

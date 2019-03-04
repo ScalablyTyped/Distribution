@@ -16,8 +16,8 @@ trait ILinkPickerOptions extends js.Object {
 object ILinkPickerOptions {
   @scala.inline
   def apply(callback: angularLib.angularMod.Global.Function): ILinkPickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
+    val __obj = js.Dynamic.literal(callback = callback)
+  
     __obj.asInstanceOf[ILinkPickerOptions]
   }
 }

@@ -29,13 +29,8 @@ object Anon_Array {
     isTypedArray: js.Function1[js.Any, scala.Boolean],
     sortedArray: js.Function3[js.Array[_], scala.Double, js.Array[scala.Double], js.Array[_]]
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arraySlice")(arraySlice)
-    __obj.updateDynamic("convertArray")(convertArray)
-    __obj.updateDynamic("flattenJSON")(flattenJSON)
-    __obj.updateDynamic("getKeyFrameOrder")(getKeyFrameOrder)
-    __obj.updateDynamic("isTypedArray")(isTypedArray)
-    __obj.updateDynamic("sortedArray")(sortedArray)
+    val __obj = js.Dynamic.literal(arraySlice = arraySlice, convertArray = convertArray, flattenJSON = flattenJSON, getKeyFrameOrder = getKeyFrameOrder, isTypedArray = isTypedArray, sortedArray = sortedArray)
+  
     __obj.asInstanceOf[Anon_Array]
   }
 }

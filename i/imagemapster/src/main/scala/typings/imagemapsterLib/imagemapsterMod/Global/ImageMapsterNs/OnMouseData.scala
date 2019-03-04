@@ -26,11 +26,8 @@ object OnMouseData {
     options: AreaRenderingOptions,
     selected: scala.Boolean
   ): OnMouseData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(e = e, key = key, options = options, selected = selected)
+  
     __obj.asInstanceOf[OnMouseData]
   }
 }

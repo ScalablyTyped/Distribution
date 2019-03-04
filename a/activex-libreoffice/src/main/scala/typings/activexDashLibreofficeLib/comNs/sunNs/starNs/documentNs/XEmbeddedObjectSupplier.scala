@@ -23,12 +23,8 @@ object XEmbeddedObjectSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XEmbeddedObjectSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EmbeddedObject")(EmbeddedObject)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEmbeddedObject")(getEmbeddedObject)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, acquire = acquire, getEmbeddedObject = getEmbeddedObject, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XEmbeddedObjectSupplier]
   }
 }

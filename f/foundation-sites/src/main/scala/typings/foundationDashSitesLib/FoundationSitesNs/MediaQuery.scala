@@ -20,11 +20,8 @@ object MediaQuery {
     get: js.Function1[java.lang.String, java.lang.String],
     queries: js.Array[java.lang.String]
   ): MediaQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atLeast")(atLeast)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("queries")(queries)
+    val __obj = js.Dynamic.literal(atLeast = atLeast, current = current, get = get, queries = queries)
+  
     __obj.asInstanceOf[MediaQuery]
   }
 }

@@ -14,9 +14,7 @@ trait Anon_PositionScope extends js.Object {
 object Anon_PositionScope {
   @scala.inline
   def apply(position: scala.Double, scope: java.lang.String, topicArn: java.lang.String = null): Anon_PositionScope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(position = position, scope = scope)
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn)
     __obj.asInstanceOf[Anon_PositionScope]
   }

@@ -14,11 +14,8 @@ trait ShortcutEventArgs extends EventArgs {
 object ShortcutEventArgs {
   @scala.inline
   def apply(commandName: java.lang.String, handled: scala.Boolean, htmlEvent: js.Object, sender: Control): ShortcutEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commandName")(commandName)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(commandName = commandName, handled = handled, htmlEvent = htmlEvent, sender = sender)
+  
     __obj.asInstanceOf[ShortcutEventArgs]
   }
 }

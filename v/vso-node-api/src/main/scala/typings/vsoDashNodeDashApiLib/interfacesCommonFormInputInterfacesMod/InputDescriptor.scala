@@ -72,19 +72,8 @@ object InputDescriptor {
     valueHint: java.lang.String,
     values: InputValues
   ): InputDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencyInputIds")(dependencyInputIds)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("groupName")(groupName)
-    __obj.updateDynamic("hasDynamicValueInformation")(hasDynamicValueInformation)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputMode")(inputMode)
-    __obj.updateDynamic("isConfidential")(isConfidential)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("useInDefaultDescription")(useInDefaultDescription)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("valueHint")(valueHint)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(dependencyInputIds = dependencyInputIds, description = description, groupName = groupName, hasDynamicValueInformation = hasDynamicValueInformation, id = id, inputMode = inputMode, isConfidential = isConfidential, name = name, useInDefaultDescription = useInDefaultDescription, validation = validation, valueHint = valueHint, values = values)
+  
     __obj.asInstanceOf[InputDescriptor]
   }
 }

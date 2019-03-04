@@ -14,8 +14,8 @@ object ICredentialFactory {
   def apply(
     createPasswordCredential: js.Function3[java.lang.String, java.lang.String, java.lang.String, PasswordCredential]
   ): ICredentialFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPasswordCredential")(createPasswordCredential)
+    val __obj = js.Dynamic.literal(createPasswordCredential = createPasswordCredential)
+  
     __obj.asInstanceOf[ICredentialFactory]
   }
 }

@@ -24,8 +24,7 @@ object AvatarProps {
     src: java.lang.String = null,
     verified: js.UndefOr[scala.Boolean] = js.undefined
   ): AvatarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src)

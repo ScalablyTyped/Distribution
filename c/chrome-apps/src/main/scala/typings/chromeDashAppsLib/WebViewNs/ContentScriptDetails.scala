@@ -38,7 +38,7 @@ trait ContentScriptDetails extends js.Object {
     * These are injected in the order they appear.
     */
   @JSName("js")
-  var `js_`: js.UndefOr[InjectionItems] = js.undefined
+  var js_ : js.UndefOr[InjectionItems] = js.undefined
   /**
     * Whether to insert the content script on about:blank and about:srcdoc.
     * Content scripts will only be injected on pages when their inherit URL
@@ -69,20 +69,18 @@ object ContentScriptDetails {
     exclude_globs: js.Array[java.lang.String] = null,
     exclude_matches: js.Array[java.lang.String] = null,
     include_globs: js.Array[java.lang.String] = null,
-    `js_`: InjectionItems = null,
+    js_ : InjectionItems = null,
     match_about_blank: js.UndefOr[scala.Boolean] = js.undefined,
     run_at: chromeDashAppsLib.chromeNs.extensionTypesNs.RunAt = null
   ): ContentScriptDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(matches = matches, name = name)
     if (!js.isUndefined(all_frames)) __obj.updateDynamic("all_frames")(all_frames)
     if (code != null) __obj.updateDynamic("code")(code)
     if (css != null) __obj.updateDynamic("css")(css)
     if (exclude_globs != null) __obj.updateDynamic("exclude_globs")(exclude_globs)
     if (exclude_matches != null) __obj.updateDynamic("exclude_matches")(exclude_matches)
     if (include_globs != null) __obj.updateDynamic("include_globs")(include_globs)
-    if (`js_` != null) __obj.updateDynamic("js")(`js_`)
+    if (js_ != null) __obj.updateDynamic("js")(js_)
     if (!js.isUndefined(match_about_blank)) __obj.updateDynamic("match_about_blank")(match_about_blank)
     if (run_at != null) __obj.updateDynamic("run_at")(run_at)
     __obj.asInstanceOf[ContentScriptDetails]

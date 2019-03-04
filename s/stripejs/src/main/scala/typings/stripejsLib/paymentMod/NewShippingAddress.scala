@@ -23,9 +23,8 @@ object NewShippingAddress {
     shippingAddress: stripejsLib.shippingMod.ShippingAddress,
     updateWith: js.Function1[UpdateOptions, scala.Unit]
   ): NewShippingAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shippingAddress")(shippingAddress)
-    __obj.updateDynamic("updateWith")(updateWith)
+    val __obj = js.Dynamic.literal(shippingAddress = shippingAddress, updateWith = updateWith)
+  
     __obj.asInstanceOf[NewShippingAddress]
   }
 }

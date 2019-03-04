@@ -23,10 +23,8 @@ object ContentService {
     getSlots: js.Function0[js.Array[Slot]],
     setContent: js.Function2[Slot, java.lang.String, scala.Unit]
   ): ContentService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("getSlots")(getSlots)
-    __obj.updateDynamic("setContent")(setContent)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, getSlots = getSlots, setContent = setContent)
+  
     __obj.asInstanceOf[ContentService]
   }
 }

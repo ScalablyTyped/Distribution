@@ -22,9 +22,7 @@ object Anon_Host {
     port: scala.Int | scala.Double = null,
     username: java.lang.String = null
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(host = host, name = name)
     if (password != null) __obj.updateDynamic("password")(password)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (username != null) __obj.updateDynamic("username")(username)

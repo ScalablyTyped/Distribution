@@ -13,9 +13,8 @@ trait LeapSecond extends js.Object {
 object LeapSecond {
   @scala.inline
   def apply(julianDate: JulianDate, offset: scala.Double): LeapSecond = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("julianDate")(julianDate)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(julianDate = julianDate, offset = offset)
+  
     __obj.asInstanceOf[LeapSecond]
   }
 }

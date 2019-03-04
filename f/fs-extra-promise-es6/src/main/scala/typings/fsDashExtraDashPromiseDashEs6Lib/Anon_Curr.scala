@@ -16,9 +16,8 @@ object Anon_Curr {
     curr: fsDashExtraDashPromiseDashEs6Lib.fsDashExtraDashPromiseDashEs6Mod.Stats,
     prev: fsDashExtraDashPromiseDashEs6Lib.fsDashExtraDashPromiseDashEs6Mod.Stats
   ): Anon_Curr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("curr")(curr)
-    __obj.updateDynamic("prev")(prev)
+    val __obj = js.Dynamic.literal(curr = curr, prev = prev)
+  
     __obj.asInstanceOf[Anon_Curr]
   }
 }

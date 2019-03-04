@@ -37,13 +37,8 @@ object CoordinateSegment {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     searchPattern: stdLib.RegExp
   ): CoordinateSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("searchPattern")(searchPattern)
+    val __obj = js.Dynamic.literal(alias = alias, constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, searchPattern = searchPattern)
+  
     __obj.asInstanceOf[CoordinateSegment]
   }
 }

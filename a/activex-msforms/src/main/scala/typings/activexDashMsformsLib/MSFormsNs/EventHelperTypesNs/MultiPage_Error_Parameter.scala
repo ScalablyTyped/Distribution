@@ -28,15 +28,8 @@ object MultiPage_Error_Parameter {
     SCode: scala.Double,
     Source: java.lang.String
   ): MultiPage_Error_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CancelDisplay")(CancelDisplay)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("HelpContext")(HelpContext)
-    __obj.updateDynamic("HelpFile")(HelpFile)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("Number")(Number)
-    __obj.updateDynamic("SCode")(SCode)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(CancelDisplay = CancelDisplay, Description = Description, HelpContext = HelpContext, HelpFile = HelpFile, Index = Index, Number = Number, SCode = SCode, Source = Source)
+  
     __obj.asInstanceOf[MultiPage_Error_Parameter]
   }
 }

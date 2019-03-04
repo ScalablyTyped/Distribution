@@ -12,8 +12,8 @@ trait GeoJSON extends _Coordinate {
 object GeoJSON {
   @scala.inline
   def apply(geometry: haversineLib.Anon_Coordinates): GeoJSON = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geometry")(geometry)
+    val __obj = js.Dynamic.literal(geometry = geometry)
+  
     __obj.asInstanceOf[GeoJSON]
   }
 }

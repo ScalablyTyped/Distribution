@@ -28,15 +28,8 @@ object IGeocoordinate {
     speed: scala.Double,
     timestamp: stdLib.Date
   ): IGeocoordinate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, altitudeAccuracy = altitudeAccuracy, heading = heading, latitude = latitude, longitude = longitude, speed = speed, timestamp = timestamp)
+  
     __obj.asInstanceOf[IGeocoordinate]
   }
 }

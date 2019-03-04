@@ -59,36 +59,8 @@ object FlashTextAttrs {
     target: java.lang.String,
     url: java.lang.String
   ): FlashTextAttrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accName")(accName)
-    __obj.updateDynamic("aliasText")(aliasText)
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("antiAliasSharpness")(antiAliasSharpness)
-    __obj.updateDynamic("antiAliasThickness")(antiAliasThickness)
-    __obj.updateDynamic("autoExpand")(autoExpand)
-    __obj.updateDynamic("autoKern")(autoKern)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("border")(border)
-    __obj.updateDynamic("characterPosition")(characterPosition)
-    __obj.updateDynamic("characterSpacing")(characterSpacing)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("embeddedCharacters")(embeddedCharacters)
-    __obj.updateDynamic("face")(face)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("getTextAttr")(getTextAttr)
-    __obj.updateDynamic("getTextString")(getTextString)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("leftMargin")(leftMargin)
-    __obj.updateDynamic("letterSpacing")(letterSpacing)
-    __obj.updateDynamic("lineSpacing")(lineSpacing)
-    __obj.updateDynamic("rightMargin")(rightMargin)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("setTextAttr")(setTextAttr)
-    __obj.updateDynamic("setTextString")(setTextString)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(accName = accName, aliasText = aliasText, alignment = alignment, antiAliasSharpness = antiAliasSharpness, antiAliasThickness = antiAliasThickness, autoExpand = autoExpand, autoKern = autoKern, bold = bold, border = border, characterPosition = characterPosition, characterSpacing = characterSpacing, description = description, embeddedCharacters = embeddedCharacters, face = face, fillColor = fillColor, getTextAttr = getTextAttr, getTextString = getTextString, indent = indent, italic = italic, leftMargin = leftMargin, letterSpacing = letterSpacing, lineSpacing = lineSpacing, rightMargin = rightMargin, rotation = rotation, setTextAttr = setTextAttr, setTextString = setTextString, size = size, target = target, url = url)
+  
     __obj.asInstanceOf[FlashTextAttrs]
   }
 }

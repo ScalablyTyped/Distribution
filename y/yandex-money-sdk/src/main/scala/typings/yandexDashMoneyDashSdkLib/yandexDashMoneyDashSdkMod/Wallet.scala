@@ -82,15 +82,8 @@ object Wallet {
       scala.Unit
     ]
   ): Wallet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountInfo")(accountInfo)
-    __obj.updateDynamic("incomingTransferAccept")(incomingTransferAccept)
-    __obj.updateDynamic("incomingTransferReject")(incomingTransferReject)
-    __obj.updateDynamic("operationDetails")(operationDetails)
-    __obj.updateDynamic("operationHistory")(operationHistory)
-    __obj.updateDynamic("processPayment")(processPayment)
-    __obj.updateDynamic("requestPayment")(requestPayment)
-    __obj.updateDynamic("sendAuthenticatedRequest")(sendAuthenticatedRequest)
+    val __obj = js.Dynamic.literal(accountInfo = accountInfo, incomingTransferAccept = incomingTransferAccept, incomingTransferReject = incomingTransferReject, operationDetails = operationDetails, operationHistory = operationHistory, processPayment = processPayment, requestPayment = requestPayment, sendAuthenticatedRequest = sendAuthenticatedRequest)
+  
     __obj.asInstanceOf[Wallet]
   }
 }

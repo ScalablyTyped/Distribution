@@ -57,16 +57,8 @@ object GitRefUpdateResult {
     success: scala.Boolean,
     updateStatus: GitRefUpdateStatus
   ): GitRefUpdateResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customMessage")(customMessage)
-    __obj.updateDynamic("isLocked")(isLocked)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("newObjectId")(newObjectId)
-    __obj.updateDynamic("oldObjectId")(oldObjectId)
-    __obj.updateDynamic("rejectedBy")(rejectedBy)
-    __obj.updateDynamic("repositoryId")(repositoryId)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("updateStatus")(updateStatus)
+    val __obj = js.Dynamic.literal(customMessage = customMessage, isLocked = isLocked, name = name, newObjectId = newObjectId, oldObjectId = oldObjectId, rejectedBy = rejectedBy, repositoryId = repositoryId, success = success, updateStatus = updateStatus)
+  
     __obj.asInstanceOf[GitRefUpdateResult]
   }
 }

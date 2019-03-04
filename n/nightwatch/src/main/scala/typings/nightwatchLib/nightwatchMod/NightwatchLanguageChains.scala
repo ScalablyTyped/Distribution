@@ -36,18 +36,8 @@ object NightwatchLanguageChains {
     which: Expect,
     `with`: Expect
   ): NightwatchLanguageChains = {
-    val __obj = js.Dynamic.literal(`with` = `with`)
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("at")(at)
-    __obj.updateDynamic("be")(be)
-    __obj.updateDynamic("been")(been)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("have")(have)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("of")(of)
-    __obj.updateDynamic("that")(that)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("which")(which)
+    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, has = has, have = have, is = is, of = of, that = that, to = to, which = which)
+    __obj.updateDynamic("with")(`with`)
     __obj.asInstanceOf[NightwatchLanguageChains]
   }
 }

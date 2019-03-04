@@ -13,9 +13,8 @@ trait CollectionChecksum extends js.Object {
 object CollectionChecksum {
   @scala.inline
   def apply(checksum: java.lang.String, revision: java.lang.String): CollectionChecksum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checksum")(checksum)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(checksum = checksum, revision = revision)
+  
     __obj.asInstanceOf[CollectionChecksum]
   }
 }

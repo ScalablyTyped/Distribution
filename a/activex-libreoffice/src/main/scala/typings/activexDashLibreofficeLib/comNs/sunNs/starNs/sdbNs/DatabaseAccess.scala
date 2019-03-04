@@ -94,37 +94,8 @@ object DatabaseAccess {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     suspendConnections: js.Function0[scala.Boolean]
   ): DatabaseAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectInfo")(ConnectInfo)
-    __obj.updateDynamic("ConnectURL")(ConnectURL)
-    __obj.updateDynamic("IsPasswordRequired")(IsPasswordRequired)
-    __obj.updateDynamic("IsReadOnly")(IsReadOnly)
-    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
-    __obj.updateDynamic("NumberFormatsSupplier")(NumberFormatsSupplier)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("TableFilter")(TableFilter)
-    __obj.updateDynamic("TableTypeFilter")(TableTypeFilter)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDatabaseAccessListener")(addDatabaseAccessListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("connectWithCompletion")(connectWithCompletion)
-    __obj.updateDynamic("getConnection")(getConnection)
-    __obj.updateDynamic("getIsolatedConnection")(getIsolatedConnection)
-    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("hasConnections")(hasConnections)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDatabaseAccessListener")(removeDatabaseAccessListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("suspendConnections")(suspendConnections)
+    val __obj = js.Dynamic.literal(ConnectInfo = ConnectInfo, ConnectURL = ConnectURL, IsPasswordRequired = IsPasswordRequired, IsReadOnly = IsReadOnly, LoginTimeout = LoginTimeout, NumberFormatsSupplier = NumberFormatsSupplier, PropertySetInfo = PropertySetInfo, TableFilter = TableFilter, TableTypeFilter = TableTypeFilter, Title = Title, URL = URL, acquire = acquire, addDatabaseAccessListener = addDatabaseAccessListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, connectWithCompletion = connectWithCompletion, getConnection = getConnection, getIsolatedConnection = getIsolatedConnection, getLoginTimeout = getLoginTimeout, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasConnections = hasConnections, queryInterface = queryInterface, release = release, removeDatabaseAccessListener = removeDatabaseAccessListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setLoginTimeout = setLoginTimeout, setPropertyValue = setPropertyValue, suspendConnections = suspendConnections)
+  
     __obj.asInstanceOf[DatabaseAccess]
   }
 }

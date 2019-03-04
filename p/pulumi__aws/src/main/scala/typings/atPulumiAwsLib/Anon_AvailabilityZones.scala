@@ -20,9 +20,7 @@ object Anon_AvailabilityZones {
     securityGroupIds: js.Array[java.lang.String] = null,
     subnetIds: js.Array[java.lang.String] = null
   ): Anon_AvailabilityZones = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availabilityZones")(availabilityZones)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(availabilityZones = availabilityZones, vpcId = vpcId)
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds)
     if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds)
     __obj.asInstanceOf[Anon_AvailabilityZones]

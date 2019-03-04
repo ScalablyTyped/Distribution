@@ -39,27 +39,8 @@ object Autofill {
     pluginsInitializedCallback: js.Array[_],
     removeHook: js.Function1[java.lang.String, scala.Unit]
   ): Autofill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("addingStarted")(addingStarted)
-    __obj.updateDynamic("autoInsertRow")(autoInsertRow)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("directions")(directions)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("handleDraggedCells")(handleDraggedCells)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("mouseDownOnCellCorner")(mouseDownOnCellCorner)
-    __obj.updateDynamic("mouseDragOutside")(mouseDragOutside)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
+    val __obj = js.Dynamic.literal(addHook = addHook, addingStarted = addingStarted, autoInsertRow = autoInsertRow, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, directions = directions, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, handleDraggedCells = handleDraggedCells, init = init, initialized = initialized, isPluginsReady = isPluginsReady, mouseDownOnCellCorner = mouseDownOnCellCorner, mouseDragOutside = mouseDragOutside, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+  
     __obj.asInstanceOf[Autofill]
   }
 }

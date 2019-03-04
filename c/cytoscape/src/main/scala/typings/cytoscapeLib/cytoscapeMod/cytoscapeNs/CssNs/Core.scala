@@ -72,8 +72,16 @@ object Core {
     `selection-box-color`: Colour,
     `selection-box-opacity`: scala.Double
   ): Core = {
-    val __obj = js.Dynamic.literal(`active-bg-color` = `active-bg-color`, `active-bg-opacity` = `active-bg-opacity`, `active-bg-size` = `active-bg-size`, `outside-texture-bg-color` = `outside-texture-bg-color`, `outside-texture-bg-opacity` = `outside-texture-bg-opacity`, `selection-box-border-color` = `selection-box-border-color`, `selection-box-border-width` = `selection-box-border-width`, `selection-box-color` = `selection-box-color`, `selection-box-opacity` = `selection-box-opacity`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active-bg-color")(`active-bg-color`)
+    __obj.updateDynamic("active-bg-opacity")(`active-bg-opacity`)
+    __obj.updateDynamic("active-bg-size")(`active-bg-size`)
+    __obj.updateDynamic("outside-texture-bg-color")(`outside-texture-bg-color`)
+    __obj.updateDynamic("outside-texture-bg-opacity")(`outside-texture-bg-opacity`)
+    __obj.updateDynamic("selection-box-border-color")(`selection-box-border-color`)
+    __obj.updateDynamic("selection-box-border-width")(`selection-box-border-width`)
+    __obj.updateDynamic("selection-box-color")(`selection-box-color`)
+    __obj.updateDynamic("selection-box-opacity")(`selection-box-opacity`)
     __obj.asInstanceOf[Core]
   }
 }

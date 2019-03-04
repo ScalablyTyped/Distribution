@@ -22,8 +22,7 @@ object Anon_CacheConfig {
     onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
     onNext: js.Function1[/* payload */ TPayload, scala.Unit] = null
   ): Anon_CacheConfig[TPayload, TNode, TOperation] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(operation = operation)
     if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
     if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
     if (onError != null) __obj.updateDynamic("onError")(onError)

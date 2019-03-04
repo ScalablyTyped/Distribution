@@ -75,14 +75,8 @@ object XTableName {
     getComposedName: js.Function2[scala.Double, scala.Boolean, java.lang.String],
     setComposedName: js.Function2[java.lang.String, scala.Double, scala.Unit]
   ): XTableName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CatalogName")(CatalogName)
-    __obj.updateDynamic("NameForSelect")(NameForSelect)
-    __obj.updateDynamic("SchemaName")(SchemaName)
-    __obj.updateDynamic("Table")(Table)
-    __obj.updateDynamic("TableName")(TableName)
-    __obj.updateDynamic("getComposedName")(getComposedName)
-    __obj.updateDynamic("setComposedName")(setComposedName)
+    val __obj = js.Dynamic.literal(CatalogName = CatalogName, NameForSelect = NameForSelect, SchemaName = SchemaName, Table = Table, TableName = TableName, getComposedName = getComposedName, setComposedName = setComposedName)
+  
     __obj.asInstanceOf[XTableName]
   }
 }

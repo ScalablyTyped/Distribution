@@ -48,12 +48,8 @@ object DaemonSetSpec {
     template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec,
     updateStrategy: DaemonSetUpdateStrategy
   ): DaemonSetSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minReadySeconds")(minReadySeconds)
-    __obj.updateDynamic("revisionHistoryLimit")(revisionHistoryLimit)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("updateStrategy")(updateStrategy)
+    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds, revisionHistoryLimit = revisionHistoryLimit, selector = selector, template = template, updateStrategy = updateStrategy)
+  
     __obj.asInstanceOf[DaemonSetSpec]
   }
 }

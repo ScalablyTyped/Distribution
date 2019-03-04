@@ -13,9 +13,8 @@ trait LinkInfo extends js.Object {
 object LinkInfo {
   @scala.inline
   def apply(path: java.lang.String, queryParams: stdLib.Partial[StringHashMap]): LinkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("queryParams")(queryParams)
+    val __obj = js.Dynamic.literal(path = path, queryParams = queryParams)
+  
     __obj.asInstanceOf[LinkInfo]
   }
 }

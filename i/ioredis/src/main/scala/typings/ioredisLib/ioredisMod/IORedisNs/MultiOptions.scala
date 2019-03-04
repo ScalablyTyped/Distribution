@@ -12,8 +12,8 @@ trait MultiOptions extends js.Object {
 object MultiOptions {
   @scala.inline
   def apply(pipeline: scala.Boolean): MultiOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pipeline")(pipeline)
+    val __obj = js.Dynamic.literal(pipeline = pipeline)
+  
     __obj.asInstanceOf[MultiOptions]
   }
 }

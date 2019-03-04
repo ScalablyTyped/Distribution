@@ -45,12 +45,8 @@ object ASPxClientGridViewContextMenuEventArgs {
     objectType: java.lang.String,
     showBrowserMenu: scala.Boolean
   ): ASPxClientGridViewContextMenuEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("objectType")(objectType)
-    __obj.updateDynamic("showBrowserMenu")(showBrowserMenu)
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent, index = index, menu = menu, objectType = objectType, showBrowserMenu = showBrowserMenu)
+  
     __obj.asInstanceOf[ASPxClientGridViewContextMenuEventArgs]
   }
 }

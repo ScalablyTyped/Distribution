@@ -40,17 +40,8 @@ object AccountsResource {
     savedadstyles: SavedadstylesResource,
     urlchannels: UrlchannelsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adclients")(adclients)
-    __obj.updateDynamic("adunits")(adunits)
-    __obj.updateDynamic("alerts")(alerts)
-    __obj.updateDynamic("customchannels")(customchannels)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("payments")(payments)
-    __obj.updateDynamic("reports")(reports)
-    __obj.updateDynamic("savedadstyles")(savedadstyles)
-    __obj.updateDynamic("urlchannels")(urlchannels)
+    val __obj = js.Dynamic.literal(adclients = adclients, adunits = adunits, alerts = alerts, customchannels = customchannels, get = get, list = list, payments = payments, reports = reports, savedadstyles = savedadstyles, urlchannels = urlchannels)
+  
     __obj.asInstanceOf[AccountsResource]
   }
 }

@@ -30,10 +30,8 @@ object SamplingHeapProfileNode {
     children: js.Array[SamplingHeapProfileNode],
     selfSize: scala.Double
   ): SamplingHeapProfileNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callFrame")(callFrame)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("selfSize")(selfSize)
+    val __obj = js.Dynamic.literal(callFrame = callFrame, children = children, selfSize = selfSize)
+  
     __obj.asInstanceOf[SamplingHeapProfileNode]
   }
 }

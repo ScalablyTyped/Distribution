@@ -21,10 +21,7 @@ object DiagramCancelEvent {
     container: kendoDashUiLib.JQuery = null,
     shape: kendoDashUiLib.kendoNs.dataNs.Model = null
   ): DiagramCancelEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (container != null) __obj.updateDynamic("container")(container)
     if (shape != null) __obj.updateDynamic("shape")(shape)

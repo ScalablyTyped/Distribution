@@ -22,9 +22,7 @@ object AsObject {
     options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ServiceOptionsNs.AsObject,
     name: java.lang.String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("methodList")(methodList)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(methodList = methodList, options = options)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[AsObject]
   }

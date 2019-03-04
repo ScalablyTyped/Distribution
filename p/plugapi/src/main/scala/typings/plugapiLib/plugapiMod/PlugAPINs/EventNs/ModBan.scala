@@ -22,12 +22,8 @@ object ModBan {
     ref: java.lang.String,
     username: java.lang.String
   ): ModBan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("moderator")(moderator)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(duration = duration, moderator = moderator, reason = reason, ref = ref, username = username)
+  
     __obj.asInstanceOf[ModBan]
   }
 }

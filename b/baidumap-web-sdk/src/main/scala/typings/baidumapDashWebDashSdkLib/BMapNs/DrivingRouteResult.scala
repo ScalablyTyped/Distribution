@@ -28,15 +28,8 @@ object DrivingRouteResult {
     policy: DrivingPolicy,
     taxiFare: TaxiFare
   ): DrivingRouteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getNumPlans")(getNumPlans)
-    __obj.updateDynamic("getPlan")(getPlan)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("moreResultsUrl")(moreResultsUrl)
-    __obj.updateDynamic("policy")(policy)
-    __obj.updateDynamic("taxiFare")(taxiFare)
+    val __obj = js.Dynamic.literal(city = city, getEnd = getEnd, getNumPlans = getNumPlans, getPlan = getPlan, getStart = getStart, moreResultsUrl = moreResultsUrl, policy = policy, taxiFare = taxiFare)
+  
     __obj.asInstanceOf[DrivingRouteResult]
   }
 }

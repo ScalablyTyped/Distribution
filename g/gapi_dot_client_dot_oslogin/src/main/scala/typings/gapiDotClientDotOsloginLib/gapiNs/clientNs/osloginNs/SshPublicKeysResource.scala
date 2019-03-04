@@ -33,10 +33,8 @@ object SshPublicKeysResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SshPublicKey]
     ]
   ): SshPublicKeysResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, patch = patch)
+  
     __obj.asInstanceOf[SshPublicKeysResource]
   }
 }

@@ -12,8 +12,8 @@ trait AqlLiteral extends js.Object {
 object AqlLiteral {
   @scala.inline
   def apply(toAQL: js.Function0[java.lang.String]): AqlLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toAQL")(toAQL)
+    val __obj = js.Dynamic.literal(toAQL = toAQL)
+  
     __obj.asInstanceOf[AqlLiteral]
   }
 }

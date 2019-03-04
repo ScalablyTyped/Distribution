@@ -32,11 +32,8 @@ object UpdateNotificationRequest {
     NewNotification: Notification,
     OldNotification: Notification
   ): UpdateNotificationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
-    __obj.updateDynamic("BudgetName")(BudgetName)
-    __obj.updateDynamic("NewNotification")(NewNotification)
-    __obj.updateDynamic("OldNotification")(OldNotification)
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName, NewNotification = NewNotification, OldNotification = OldNotification)
+  
     __obj.asInstanceOf[UpdateNotificationRequest]
   }
 }

@@ -12,8 +12,8 @@ trait Submittable extends js.Object {
 object Submittable {
   @scala.inline
   def apply(submit: js.Function1[Connection, scala.Unit]): Submittable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("submit")(submit)
+    val __obj = js.Dynamic.literal(submit = submit)
+  
     __obj.asInstanceOf[Submittable]
   }
 }

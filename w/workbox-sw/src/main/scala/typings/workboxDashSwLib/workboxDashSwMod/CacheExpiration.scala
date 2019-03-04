@@ -38,10 +38,8 @@ object CacheExpiration {
     isURLExpired: js.Function1[java.lang.String, js.Promise[scala.Boolean]],
     updateTimestamp: js.Function1[java.lang.String, js.Promise[scala.Unit]]
   ): CacheExpiration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expireEntries")(expireEntries)
-    __obj.updateDynamic("isURLExpired")(isURLExpired)
-    __obj.updateDynamic("updateTimestamp")(updateTimestamp)
+    val __obj = js.Dynamic.literal(expireEntries = expireEntries, isURLExpired = isURLExpired, updateTimestamp = updateTimestamp)
+  
     __obj.asInstanceOf[CacheExpiration]
   }
 }

@@ -58,9 +58,7 @@ object Content {
     encoding: java.lang.String = null,
     text: java.lang.String = null
   ): Content = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(mimeType = mimeType, size = size)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

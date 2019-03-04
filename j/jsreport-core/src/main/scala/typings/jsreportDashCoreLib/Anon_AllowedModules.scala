@@ -12,8 +12,8 @@ trait Anon_AllowedModules extends js.Object {
 object Anon_AllowedModules {
   @scala.inline
   def apply(allowedModules: js.Array[java.lang.String]): Anon_AllowedModules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedModules")(allowedModules)
+    val __obj = js.Dynamic.literal(allowedModules = allowedModules)
+  
     __obj.asInstanceOf[Anon_AllowedModules]
   }
 }

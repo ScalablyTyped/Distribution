@@ -12,8 +12,8 @@ trait Anon_ConnectionId extends js.Object {
 object Anon_ConnectionId {
   @scala.inline
   def apply(connectionId: chromeDashAppsLib.chromeNs.integer): Anon_ConnectionId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionId")(connectionId)
+    val __obj = js.Dynamic.literal(connectionId = connectionId)
+  
     __obj.asInstanceOf[Anon_ConnectionId]
   }
 }

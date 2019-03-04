@@ -49,9 +49,9 @@ object ^ extends js.Object {
   def epochTime(): rethinkdbLib.rethinkdbMod.Expression[rethinkdbLib.rethinkdbMod.Time] = js.native
   def expr(stuff: js.Any): rethinkdbLib.rethinkdbMod.Expression[_] = js.native
   @JSName("js")
-  def `js_`(jsString: java.lang.String): rethinkdbLib.rethinkdbMod.Operation[_] = js.native
+  def js_(jsString: java.lang.String): rethinkdbLib.rethinkdbMod.Operation[_] = js.native
   @JSName("js")
-  def `js_`(jsString: java.lang.String, opts: rethinkdbLib.Anon_Timeout): rethinkdbLib.rethinkdbMod.Operation[_] = js.native
+  def js_(jsString: java.lang.String, opts: rethinkdbLib.Anon_Timeout): rethinkdbLib.rethinkdbMod.Operation[_] = js.native
   def now(): rethinkdbLib.rethinkdbMod.Expression[rethinkdbLib.rethinkdbMod.Time] = js.native
   def point(lng: scala.Double, lat: scala.Double): rethinkdbLib.rethinkdbMod.Point = js.native
   def polygon(point: rethinkdbLib.rethinkdbMod.Point*): rethinkdbLib.rethinkdbMod.Polygon = js.native

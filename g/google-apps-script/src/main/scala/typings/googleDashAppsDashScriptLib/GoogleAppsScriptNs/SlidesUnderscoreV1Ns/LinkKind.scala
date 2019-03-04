@@ -28,11 +28,8 @@ object LinkKind {
     slide_index: scala.Double,
     url: java.lang.String
   ): LinkKind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page_object_id")(page_object_id)
-    __obj.updateDynamic("relative_link")(relative_link)
-    __obj.updateDynamic("slide_index")(slide_index)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(page_object_id = page_object_id, relative_link = relative_link, slide_index = slide_index, url = url)
+  
     __obj.asInstanceOf[LinkKind]
   }
 }

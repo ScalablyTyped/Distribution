@@ -24,7 +24,7 @@ trait RegisteredContentScriptOptions extends js.Object {
   var includeGlobs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The list of JS files to inject */
   @JSName("js")
-  var `js_`: js.UndefOr[
+  var js_ : js.UndefOr[
     js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ExtensionFileOrCode]
   ] = js.undefined
   /**
@@ -47,18 +47,17 @@ object RegisteredContentScriptOptions {
     excludeGlobs: js.Array[java.lang.String] = null,
     excludeMatches: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPattern] = null,
     includeGlobs: js.Array[java.lang.String] = null,
-    `js_`: js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ExtensionFileOrCode] = null,
+    js_ : js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ExtensionFileOrCode] = null,
     matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined,
     runAt: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt = null
   ): RegisteredContentScriptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(matches = matches)
     if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
     if (css != null) __obj.updateDynamic("css")(css)
     if (excludeGlobs != null) __obj.updateDynamic("excludeGlobs")(excludeGlobs)
     if (excludeMatches != null) __obj.updateDynamic("excludeMatches")(excludeMatches)
     if (includeGlobs != null) __obj.updateDynamic("includeGlobs")(includeGlobs)
-    if (`js_` != null) __obj.updateDynamic("js")(`js_`)
+    if (js_ != null) __obj.updateDynamic("js")(js_)
     if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
     if (runAt != null) __obj.updateDynamic("runAt")(runAt)
     __obj.asInstanceOf[RegisteredContentScriptOptions]

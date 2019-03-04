@@ -179,19 +179,8 @@ object XDatabaseDocumentUI {
       activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
     ]
   ): XDatabaseDocumentUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
-    __obj.updateDynamic("ApplicationMainWindow")(ApplicationMainWindow)
-    __obj.updateDynamic("DataSource")(DataSource)
-    __obj.updateDynamic("SubComponents")(SubComponents)
-    __obj.updateDynamic("closeSubComponents")(closeSubComponents)
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("createComponent")(createComponent)
-    __obj.updateDynamic("createComponentWithArguments")(createComponentWithArguments)
-    __obj.updateDynamic("identifySubComponent")(identifySubComponent)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("loadComponent")(loadComponent)
-    __obj.updateDynamic("loadComponentWithArguments")(loadComponentWithArguments)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, ApplicationMainWindow = ApplicationMainWindow, DataSource = DataSource, SubComponents = SubComponents, closeSubComponents = closeSubComponents, connect = connect, createComponent = createComponent, createComponentWithArguments = createComponentWithArguments, identifySubComponent = identifySubComponent, isConnected = isConnected, loadComponent = loadComponent, loadComponentWithArguments = loadComponentWithArguments)
+  
     __obj.asInstanceOf[XDatabaseDocumentUI]
   }
 }

@@ -67,8 +67,7 @@ object Anon_AltBucketDelimiter {
     userProject: java.lang.String = null,
     versions: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AltBucketDelimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (fields != null) __obj.updateDynamic("fields")(fields)

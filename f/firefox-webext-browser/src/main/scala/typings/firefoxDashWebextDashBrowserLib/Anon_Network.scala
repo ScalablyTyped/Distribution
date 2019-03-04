@@ -39,10 +39,8 @@ object Anon_Network {
     servicesNs: Anon_PasswordSavingEnabled,
     websitesNs: Anon_CookieConfig
   ): Anon_Network = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkNs")(networkNs)
-    __obj.updateDynamic("servicesNs")(servicesNs)
-    __obj.updateDynamic("websitesNs")(websitesNs)
+    val __obj = js.Dynamic.literal(networkNs = networkNs, servicesNs = servicesNs, websitesNs = websitesNs)
+  
     __obj.asInstanceOf[Anon_Network]
   }
 }

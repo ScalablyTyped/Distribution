@@ -13,9 +13,8 @@ trait Anon_Element extends js.Object {
 object Anon_Element {
   @scala.inline
   def apply(element: ckeditorLib.CKEDITORNs.domNs.element, item: js.Any): Anon_Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(element = element, item = item)
+  
     __obj.asInstanceOf[Anon_Element]
   }
 }

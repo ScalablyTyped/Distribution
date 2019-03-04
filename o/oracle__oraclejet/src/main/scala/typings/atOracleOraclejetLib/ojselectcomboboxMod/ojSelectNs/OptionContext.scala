@@ -27,14 +27,8 @@ object OptionContext {
     parent: stdLib.Element,
     parentElement: stdLib.Element
   ): OptionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("leaf")(leaf)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(component = component, data = data, depth = depth, index = index, leaf = leaf, parent = parent, parentElement = parentElement)
+  
     __obj.asInstanceOf[OptionContext]
   }
 }

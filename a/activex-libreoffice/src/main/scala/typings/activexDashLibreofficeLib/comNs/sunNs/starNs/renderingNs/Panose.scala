@@ -32,17 +32,8 @@ object Panose {
     Weight: scala.Double,
     XHeight: scala.Double
   ): Panose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArmStyle")(ArmStyle)
-    __obj.updateDynamic("Contrast")(Contrast)
-    __obj.updateDynamic("FamilyType")(FamilyType)
-    __obj.updateDynamic("Letterform")(Letterform)
-    __obj.updateDynamic("Midline")(Midline)
-    __obj.updateDynamic("Proportion")(Proportion)
-    __obj.updateDynamic("SerifStyle")(SerifStyle)
-    __obj.updateDynamic("StrokeVariation")(StrokeVariation)
-    __obj.updateDynamic("Weight")(Weight)
-    __obj.updateDynamic("XHeight")(XHeight)
+    val __obj = js.Dynamic.literal(ArmStyle = ArmStyle, Contrast = Contrast, FamilyType = FamilyType, Letterform = Letterform, Midline = Midline, Proportion = Proportion, SerifStyle = SerifStyle, StrokeVariation = StrokeVariation, Weight = Weight, XHeight = XHeight)
+  
     __obj.asInstanceOf[Panose]
   }
 }

@@ -71,16 +71,8 @@ object ISlot {
     priority: scala.Double,
     remove: js.Function0[scala.Unit]
   ): ISlot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("execute0")(execute0)
-    __obj.updateDynamic("execute1")(execute1)
-    __obj.updateDynamic("listener")(listener)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(enabled = enabled, execute = execute, execute0 = execute0, execute1 = execute1, listener = listener, once = once, params = params, priority = priority, remove = remove)
+  
     __obj.asInstanceOf[ISlot]
   }
 }

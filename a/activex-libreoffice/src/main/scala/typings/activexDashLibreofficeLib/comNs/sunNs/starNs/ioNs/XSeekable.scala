@@ -55,15 +55,8 @@ object XSeekable {
     release: js.Function0[scala.Unit],
     seek: js.Function1[scala.Double, scala.Unit]
   ): XSeekable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("seek")(seek)
+    val __obj = js.Dynamic.literal(Length = Length, Position = Position, acquire = acquire, getLength = getLength, getPosition = getPosition, queryInterface = queryInterface, release = release, seek = seek)
+  
     __obj.asInstanceOf[XSeekable]
   }
 }

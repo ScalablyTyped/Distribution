@@ -32,11 +32,8 @@ object ExtensionDataCollection {
     scopeType: java.lang.String,
     scopeValue: java.lang.String
   ): ExtensionDataCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collectionName")(collectionName)
-    __obj.updateDynamic("documents")(documents)
-    __obj.updateDynamic("scopeType")(scopeType)
-    __obj.updateDynamic("scopeValue")(scopeValue)
+    val __obj = js.Dynamic.literal(collectionName = collectionName, documents = documents, scopeType = scopeType, scopeValue = scopeValue)
+  
     __obj.asInstanceOf[ExtensionDataCollection]
   }
 }

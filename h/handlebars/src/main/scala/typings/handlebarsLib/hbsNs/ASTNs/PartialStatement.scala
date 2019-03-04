@@ -24,13 +24,8 @@ object PartialStatement {
     strip: StripFlags,
     `type`: java.lang.String
   ): PartialStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("strip")(strip)
+    val __obj = js.Dynamic.literal(hash = hash, indent = indent, loc = loc, name = name.asInstanceOf[js.Any], params = params, strip = strip)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PartialStatement]
   }
 }

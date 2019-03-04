@@ -24,13 +24,8 @@ object RecordSourceSelectorProxy {
     getRoot: js.Function0[RecordProxy],
     getRootField: js.Function1[java.lang.String, RecordProxy | scala.Null]
   ): RecordSourceSelectorProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getPluralRootField")(getPluralRootField)
-    __obj.updateDynamic("getRoot")(getRoot)
-    __obj.updateDynamic("getRootField")(getRootField)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getPluralRootField = getPluralRootField, getRoot = getRoot, getRootField = getRootField)
+  
     __obj.asInstanceOf[RecordSourceSelectorProxy]
   }
 }

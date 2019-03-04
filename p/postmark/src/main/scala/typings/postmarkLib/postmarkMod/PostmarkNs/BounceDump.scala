@@ -12,8 +12,8 @@ trait BounceDump extends js.Object {
 object BounceDump {
   @scala.inline
   def apply(Body: java.lang.String): BounceDump = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Body")(Body)
+    val __obj = js.Dynamic.literal(Body = Body)
+  
     __obj.asInstanceOf[BounceDump]
   }
 }

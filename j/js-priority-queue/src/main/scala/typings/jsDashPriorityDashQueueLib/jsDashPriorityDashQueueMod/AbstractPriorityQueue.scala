@@ -37,12 +37,8 @@ object AbstractPriorityQueue {
     peek: js.Function0[T],
     queue: js.Function1[T, scala.Unit]
   ): AbstractPriorityQueue[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("dequeue")(dequeue)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("peek")(peek)
-    __obj.updateDynamic("queue")(queue)
+    val __obj = js.Dynamic.literal(clear = clear, dequeue = dequeue, length = length, peek = peek, queue = queue)
+  
     __obj.asInstanceOf[AbstractPriorityQueue[T]]
   }
 }

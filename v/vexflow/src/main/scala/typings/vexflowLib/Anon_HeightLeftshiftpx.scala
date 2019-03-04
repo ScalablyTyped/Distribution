@@ -20,10 +20,7 @@ object Anon_HeightLeftshiftpx {
     y_shift: scala.Double,
     height: scala.Int | scala.Double = null
   ): Anon_HeightLeftshiftpx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left_shift_px")(left_shift_px)
-    __obj.updateDynamic("right_shift_px")(right_shift_px)
-    __obj.updateDynamic("y_shift")(y_shift)
+    val __obj = js.Dynamic.literal(left_shift_px = left_shift_px, right_shift_px = right_shift_px, y_shift = y_shift)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeightLeftshiftpx]
   }

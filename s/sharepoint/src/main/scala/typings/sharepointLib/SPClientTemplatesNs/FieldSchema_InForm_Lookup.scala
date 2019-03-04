@@ -52,29 +52,8 @@ object FieldSchema_InForm_Lookup {
     Type: java.lang.String,
     UseMinWidth: scala.Boolean
   ): FieldSchema_InForm_Lookup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("AllowMultipleValues")(AllowMultipleValues)
-    __obj.updateDynamic("BaseDisplayFormUrl")(BaseDisplayFormUrl)
-    __obj.updateDynamic("ChoiceCount")(ChoiceCount)
-    __obj.updateDynamic("Choices")(Choices)
-    __obj.updateDynamic("DependentLookup")(DependentLookup)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Direction")(Direction)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("IMEMode")(IMEMode)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("LookupListId")(LookupListId)
-    __obj.updateDynamic("MaxQueryResult")(MaxQueryResult)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReadOnlyField")(ReadOnlyField)
-    __obj.updateDynamic("Required")(Required)
-    __obj.updateDynamic("RestrictedMode")(RestrictedMode)
-    __obj.updateDynamic("Throttled")(Throttled)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UseMinWidth")(UseMinWidth)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, AllowMultipleValues = AllowMultipleValues, BaseDisplayFormUrl = BaseDisplayFormUrl, ChoiceCount = ChoiceCount, Choices = Choices, DependentLookup = DependentLookup, Description = Description, Direction = Direction, FieldType = FieldType, Hidden = Hidden, IMEMode = IMEMode, Id = Id, LookupListId = LookupListId, MaxQueryResult = MaxQueryResult, Name = Name, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, Throttled = Throttled, Title = Title, Type = Type, UseMinWidth = UseMinWidth)
+  
     __obj.asInstanceOf[FieldSchema_InForm_Lookup]
   }
 }

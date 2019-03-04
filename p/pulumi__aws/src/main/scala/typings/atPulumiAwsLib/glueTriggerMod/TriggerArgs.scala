@@ -51,8 +51,8 @@ object TriggerArgs {
     predicate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ConditionsLogical] = null,
     schedule: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): TriggerArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

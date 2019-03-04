@@ -18,8 +18,8 @@ object ArchiveResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Groups]
     ]
   ): ArchiveResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[ArchiveResource]
   }
 }

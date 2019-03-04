@@ -20,12 +20,8 @@ object ClearOptOutInOutOptions {
     persistence_type: Persistence,
     secure_cookie: scala.Boolean
   ): ClearOptOutInOutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie_expiration")(cookie_expiration)
-    __obj.updateDynamic("cookie_prefix")(cookie_prefix)
-    __obj.updateDynamic("cross_subdomain_cookie")(cross_subdomain_cookie)
-    __obj.updateDynamic("persistence_type")(persistence_type)
-    __obj.updateDynamic("secure_cookie")(secure_cookie)
+    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration, cookie_prefix = cookie_prefix, cross_subdomain_cookie = cross_subdomain_cookie, persistence_type = persistence_type, secure_cookie = secure_cookie)
+  
     __obj.asInstanceOf[ClearOptOutInOutOptions]
   }
 }

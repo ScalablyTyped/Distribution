@@ -36,19 +36,8 @@ object CompilationContext {
     util: ajvLib.Anon_Copy,
     validate: js.Function1[js.Object, scala.Boolean]
   ): CompilationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("baseId")(baseId)
-    __obj.updateDynamic("compositeRule")(compositeRule)
-    __obj.updateDynamic("dataLevel")(dataLevel)
-    __obj.updateDynamic("formats")(formats)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("opts")(opts)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("schemaPath")(schemaPath)
-    __obj.updateDynamic("self")(self)
-    __obj.updateDynamic("util")(util)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(async = async, baseId = baseId, compositeRule = compositeRule, dataLevel = dataLevel, formats = formats, level = level, opts = opts, schema = schema, schemaPath = schemaPath, self = self, util = util, validate = validate)
+  
     __obj.asInstanceOf[CompilationContext]
   }
 }

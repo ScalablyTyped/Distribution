@@ -78,41 +78,8 @@ object BootstrapGridViewEventMap {
     selectionChanged: GridViewSelectionEventArgs,
     toolbarItemClick: GridToolbarItemClickEventArgs
   ): BootstrapGridViewEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchEditChangesCanceling")(batchEditChangesCanceling)
-    __obj.updateDynamic("batchEditChangesSaving")(batchEditChangesSaving)
-    __obj.updateDynamic("batchEditConfirmShowing")(batchEditConfirmShowing)
-    __obj.updateDynamic("batchEditEndEditing")(batchEditEndEditing)
-    __obj.updateDynamic("batchEditRowDeleting")(batchEditRowDeleting)
-    __obj.updateDynamic("batchEditRowInserting")(batchEditRowInserting)
-    __obj.updateDynamic("batchEditRowValidating")(batchEditRowValidating)
-    __obj.updateDynamic("batchEditStartEditing")(batchEditStartEditing)
-    __obj.updateDynamic("batchEditTemplateCellFocused")(batchEditTemplateCellFocused)
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("columnGrouping")(columnGrouping)
-    __obj.updateDynamic("columnMoving")(columnMoving)
-    __obj.updateDynamic("columnResized")(columnResized)
-    __obj.updateDynamic("columnResizing")(columnResizing)
-    __obj.updateDynamic("columnSorting")(columnSorting)
-    __obj.updateDynamic("columnStartDragging")(columnStartDragging)
-    __obj.updateDynamic("contextMenu")(contextMenu)
-    __obj.updateDynamic("contextMenuItemClick")(contextMenuItemClick)
-    __obj.updateDynamic("customButtonClick")(customButtonClick)
-    __obj.updateDynamic("customizationWindowCloseUp")(customizationWindowCloseUp)
-    __obj.updateDynamic("detailRowCollapsing")(detailRowCollapsing)
-    __obj.updateDynamic("detailRowExpanding")(detailRowExpanding)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("focusedCellChanging")(focusedCellChanging)
-    __obj.updateDynamic("focusedRowChanged")(focusedRowChanged)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("rowClick")(rowClick)
-    __obj.updateDynamic("rowCollapsing")(rowCollapsing)
-    __obj.updateDynamic("rowDblClick")(rowDblClick)
-    __obj.updateDynamic("rowExpanding")(rowExpanding)
-    __obj.updateDynamic("rowFocusing")(rowFocusing)
-    __obj.updateDynamic("selectionChanged")(selectionChanged)
-    __obj.updateDynamic("toolbarItemClick")(toolbarItemClick)
+    val __obj = js.Dynamic.literal(batchEditChangesCanceling = batchEditChangesCanceling, batchEditChangesSaving = batchEditChangesSaving, batchEditConfirmShowing = batchEditConfirmShowing, batchEditEndEditing = batchEditEndEditing, batchEditRowDeleting = batchEditRowDeleting, batchEditRowInserting = batchEditRowInserting, batchEditRowValidating = batchEditRowValidating, batchEditStartEditing = batchEditStartEditing, batchEditTemplateCellFocused = batchEditTemplateCellFocused, beginCallback = beginCallback, callbackError = callbackError, columnGrouping = columnGrouping, columnMoving = columnMoving, columnResized = columnResized, columnResizing = columnResizing, columnSorting = columnSorting, columnStartDragging = columnStartDragging, contextMenu = contextMenu, contextMenuItemClick = contextMenuItemClick, customButtonClick = customButtonClick, customizationWindowCloseUp = customizationWindowCloseUp, detailRowCollapsing = detailRowCollapsing, detailRowExpanding = detailRowExpanding, endCallback = endCallback, focusedCellChanging = focusedCellChanging, focusedRowChanged = focusedRowChanged, init = init, rowClick = rowClick, rowCollapsing = rowCollapsing, rowDblClick = rowDblClick, rowExpanding = rowExpanding, rowFocusing = rowFocusing, selectionChanged = selectionChanged, toolbarItemClick = toolbarItemClick)
+  
     __obj.asInstanceOf[BootstrapGridViewEventMap]
   }
 }

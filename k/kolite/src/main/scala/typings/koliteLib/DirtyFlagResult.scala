@@ -18,10 +18,8 @@ object DirtyFlagResult {
     isDirty: knockoutLib.KnockoutComputed[scala.Boolean],
     reset: js.Function0[scala.Unit]
   ): DirtyFlagResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceDirty")(forceDirty)
-    __obj.updateDynamic("isDirty")(isDirty)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(forceDirty = forceDirty, isDirty = isDirty, reset = reset)
+  
     __obj.asInstanceOf[DirtyFlagResult]
   }
 }

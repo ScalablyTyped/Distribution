@@ -33,14 +33,8 @@ object FlashHalfEdge {
     id: scala.Double,
     index: scala.Double
   ): FlashHalfEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEdge")(getEdge)
-    __obj.updateDynamic("getNext")(getNext)
-    __obj.updateDynamic("getOppositeHalfEdge")(getOppositeHalfEdge)
-    __obj.updateDynamic("getPrev")(getPrev)
-    __obj.updateDynamic("getVertex")(getVertex)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(getEdge = getEdge, getNext = getNext, getOppositeHalfEdge = getOppositeHalfEdge, getPrev = getPrev, getVertex = getVertex, id = id, index = index)
+  
     __obj.asInstanceOf[FlashHalfEdge]
   }
 }

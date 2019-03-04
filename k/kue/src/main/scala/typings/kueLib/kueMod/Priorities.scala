@@ -22,12 +22,8 @@ object Priorities {
     medium: scala.Double,
     normal: scala.Double
   ): Priorities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("critical")(critical)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("normal")(normal)
+    val __obj = js.Dynamic.literal(critical = critical, high = high, low = low, medium = medium, normal = normal)
+  
     __obj.asInstanceOf[Priorities]
   }
 }

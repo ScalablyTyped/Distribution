@@ -14,9 +14,7 @@ trait Anon_EndSecurity extends js.Object {
 object Anon_EndSecurity {
   @scala.inline
   def apply(end: scala.Double, start: scala.Double, security: Security = null): Anon_EndSecurity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
     if (security != null) __obj.updateDynamic("security")(security)
     __obj.asInstanceOf[Anon_EndSecurity]
   }

@@ -37,8 +37,7 @@ object GraphTraversal {
     initialState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     properties: PropertyBag = null
   ): GraphTraversal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graphId")(graphId)
+    val __obj = js.Dynamic.literal(graphId = graphId)
     if (description != null) __obj.updateDynamic("description")(description)
     if (edgeTraversals != null) __obj.updateDynamic("edgeTraversals")(edgeTraversals)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)

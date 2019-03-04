@@ -24,13 +24,8 @@ object BufferedWriter {
     once: js.Function2[java.lang.String, js.Function, BufferedWriter],
     write: js.Function1[java.lang.String, BufferedWriter]
   ): BufferedWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(clear = clear, end = end, flush = flush, on = on, once = once, write = write)
+  
     __obj.asInstanceOf[BufferedWriter]
   }
 }

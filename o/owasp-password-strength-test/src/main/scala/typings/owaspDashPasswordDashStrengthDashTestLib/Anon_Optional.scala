@@ -24,9 +24,8 @@ object Anon_Optional {
       owaspDashPasswordDashStrengthDashTestLib.owaspDashPasswordDashStrengthDashTestMod.PasswordTest
     ]
   ): Anon_Optional = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(optional = optional, required = required)
+  
     __obj.asInstanceOf[Anon_Optional]
   }
 }

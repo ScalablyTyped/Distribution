@@ -24,13 +24,8 @@ object Project {
     octavia: Octavia,
     project_token: java.lang.String
   ): Project = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("general_token")(general_token)
-    __obj.updateDynamic("glance")(glance)
-    __obj.updateDynamic("neutron")(neutron)
-    __obj.updateDynamic("nova")(nova)
-    __obj.updateDynamic("octavia")(octavia)
-    __obj.updateDynamic("project_token")(project_token)
+    val __obj = js.Dynamic.literal(general_token = general_token, glance = glance, neutron = neutron, nova = nova, octavia = octavia, project_token = project_token)
+  
     __obj.asInstanceOf[Project]
   }
 }

@@ -23,12 +23,8 @@ object XSQLErrorBroadcaster {
     release: js.Function0[scala.Unit],
     removeSQLErrorListener: js.Function1[XSQLErrorListener, scala.Unit]
   ): XSQLErrorBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSQLErrorListener")(addSQLErrorListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSQLErrorListener")(removeSQLErrorListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addSQLErrorListener = addSQLErrorListener, queryInterface = queryInterface, release = release, removeSQLErrorListener = removeSQLErrorListener)
+  
     __obj.asInstanceOf[XSQLErrorBroadcaster]
   }
 }

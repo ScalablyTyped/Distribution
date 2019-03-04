@@ -60,12 +60,7 @@ object EurekaInstanceConfig {
     status: InstanceStatus = null,
     statusPageUrl: java.lang.String = null
   ): EurekaInstanceConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("dataCenterInfo")(dataCenterInfo)
-    __obj.updateDynamic("hostName")(hostName)
-    __obj.updateDynamic("ipAddr")(ipAddr)
-    __obj.updateDynamic("vipAddress")(vipAddress)
+    val __obj = js.Dynamic.literal(app = app, dataCenterInfo = dataCenterInfo, hostName = hostName, ipAddr = ipAddr, vipAddress = vipAddress)
     if (actionType != null) __obj.updateDynamic("actionType")(actionType)
     if (appGroupName != null) __obj.updateDynamic("appGroupName")(appGroupName)
     if (countryId != null) __obj.updateDynamic("countryId")(countryId.asInstanceOf[js.Any])

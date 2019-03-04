@@ -12,8 +12,8 @@ trait Traversal extends js.Object {
 object Traversal {
   @scala.inline
   def apply(continue: js.Function0[Builder]): Traversal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continue")(continue)
+    val __obj = js.Dynamic.literal(continue = continue)
+  
     __obj.asInstanceOf[Traversal]
   }
 }

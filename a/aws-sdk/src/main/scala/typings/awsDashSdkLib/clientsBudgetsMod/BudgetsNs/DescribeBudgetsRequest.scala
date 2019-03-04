@@ -27,8 +27,7 @@ object DescribeBudgetsRequest {
     MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: GenericString = null
   ): DescribeBudgetsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
+    val __obj = js.Dynamic.literal(AccountId = AccountId)
     if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeBudgetsRequest]

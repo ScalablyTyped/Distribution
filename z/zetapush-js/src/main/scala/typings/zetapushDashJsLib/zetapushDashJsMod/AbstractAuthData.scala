@@ -20,10 +20,7 @@ object AbstractAuthData {
     login: java.lang.String,
     password: java.lang.String = null
   ): AbstractAuthData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authType")(authType)
-    __obj.updateDynamic("deploymentId")(deploymentId)
-    __obj.updateDynamic("login")(login)
+    val __obj = js.Dynamic.literal(authType = authType, deploymentId = deploymentId, login = login)
     if (password != null) __obj.updateDynamic("password")(password)
     __obj.asInstanceOf[AbstractAuthData]
   }

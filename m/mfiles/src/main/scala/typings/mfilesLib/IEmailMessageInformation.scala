@@ -36,19 +36,8 @@ object IEmailMessageInformation {
     Subject: java.lang.String,
     To: IStrings
   ): IEmailMessageInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cc")(Cc)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("From")(From)
-    __obj.updateDynamic("Importance")(Importance)
-    __obj.updateDynamic("InReplyTo")(InReplyTo)
-    __obj.updateDynamic("MessageID")(MessageID)
-    __obj.updateDynamic("Received")(Received)
-    __obj.updateDynamic("Sensitivity")(Sensitivity)
-    __obj.updateDynamic("Sent")(Sent)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("To")(To)
+    val __obj = js.Dynamic.literal(Cc = Cc, Clone = Clone, CloneFrom = CloneFrom, From = From, Importance = Importance, InReplyTo = InReplyTo, MessageID = MessageID, Received = Received, Sensitivity = Sensitivity, Sent = Sent, Subject = Subject, To = To)
+  
     __obj.asInstanceOf[IEmailMessageInformation]
   }
 }

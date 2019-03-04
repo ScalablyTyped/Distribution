@@ -18,10 +18,8 @@ object IQConfig {
     qServices: js.Array[qlikDashEngineapiLib.Anon_QNameQUrl],
     qSystemProperties: qlikDashEngineapiLib.Anon_QPathSeparator
   ): IQConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFeatures")(qFeatures)
-    __obj.updateDynamic("qServices")(qServices)
-    __obj.updateDynamic("qSystemProperties")(qSystemProperties)
+    val __obj = js.Dynamic.literal(qFeatures = qFeatures, qServices = qServices, qSystemProperties = qSystemProperties)
+  
     __obj.asInstanceOf[IQConfig]
   }
 }

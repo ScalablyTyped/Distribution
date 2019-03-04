@@ -16,9 +16,8 @@ trait VictoryThemeInterface extends js.Object {
 object VictoryThemeInterface {
   @scala.inline
   def apply(grayscale: VictoryThemeDefinition, material: VictoryThemeDefinition): VictoryThemeInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grayscale")(grayscale)
-    __obj.updateDynamic("material")(material)
+    val __obj = js.Dynamic.literal(grayscale = grayscale, material = material)
+  
     __obj.asInstanceOf[VictoryThemeInterface]
   }
 }

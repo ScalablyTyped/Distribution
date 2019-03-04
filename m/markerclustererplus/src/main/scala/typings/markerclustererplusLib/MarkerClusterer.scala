@@ -41,7 +41,7 @@ class MarkerClusterer protected ()
     *
     * @param marker The marker to add.
     */
-  def `addToClosestCluster_`(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Unit = js.native
+  def addToClosestCluster_(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Unit = js.native
   /**
     * Removes all clusters and markers from the map and also removes all markers
     * managed by the clusterer.
@@ -54,7 +54,7 @@ class MarkerClusterer protected ()
     * @param iFirst The index of the first marker in the batch of
     *      markers to be added to clusters.
     */
-  def `createClusters_`(iFirst: scala.Double): scala.Unit = js.native
+  def createClusters_(iFirst: scala.Double): scala.Unit = js.native
   /**
     * Calculates the distance between two latlng locations in km.
     *
@@ -63,7 +63,7 @@ class MarkerClusterer protected ()
     * @return The distance between the two points in km.
     * @see http://www.movable-type.co.uk/scripts/latlong.html
     */
-  def `distanceBetweenPoints_`(p1: googlemapsLib.googleNs.mapsNs.LatLng, p2: googlemapsLib.googleNs.mapsNs.LatLng): scala.Double = js.native
+  def distanceBetweenPoints_(p1: googlemapsLib.googleNs.mapsNs.LatLng, p2: googlemapsLib.googleNs.mapsNs.LatLng): scala.Double = js.native
   /**
     * Extends an object's prototype by another's.
     *
@@ -212,17 +212,17 @@ class MarkerClusterer protected ()
     * @param bounds The bounds to check against.
     * @return True if the marker is in the bounds.
     */
-  def `isMarkerInBounds_`(marker: googlemapsLib.googleNs.mapsNs.Marker, bounds: googlemapsLib.googleNs.mapsNs.LatLngBounds): scala.Boolean = js.native
+  def isMarkerInBounds_(marker: googlemapsLib.googleNs.mapsNs.Marker, bounds: googlemapsLib.googleNs.mapsNs.LatLngBounds): scala.Boolean = js.native
   /**
     * Pushes a marker to the clusterer.
     *
     * @param marker The marker to add.
     */
-  def `pushMarkerTo_`(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Unit = js.native
+  def pushMarkerTo_(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Unit = js.native
   /**
     * Redraws all the clusters.
     */
-  def `redraw_`(): scala.Unit = js.native
+  def redraw_(): scala.Unit = js.native
   /**
     * Removes a marker from the cluster and map.  The clusters are redrawn unless
     * <code>noDraw</code> is set to <code>true</code>. Returns <code>true</code> if the
@@ -243,8 +243,8 @@ class MarkerClusterer protected ()
     * @param removeFromMap set to <code>true</code> to explicitly remove from map as well as cluster manangement
     * @return Whether the marker was removed or not
     */
-  def `removeMarker_`(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Boolean = js.native
-  def `removeMarker_`(marker: googlemapsLib.googleNs.mapsNs.Marker, removeFromMap: scala.Boolean): scala.Boolean = js.native
+  def removeMarker_(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Boolean = js.native
+  def removeMarker_(marker: googlemapsLib.googleNs.mapsNs.Marker, removeFromMap: scala.Boolean): scala.Boolean = js.native
   /**
     * Removes an array of markers from the cluster and map. The clusters are redrawn unless
     * <code>noDraw</code> is set to <code>true</code>. Returns <code>true</code> if markers
@@ -274,8 +274,8 @@ class MarkerClusterer protected ()
     * @param [hide] Set to <code>true</code> to also remove the markers
     *      from the map.
     */
-  def `resetViewport_`(): scala.Unit = js.native
-  def `resetViewport_`(hide: scala.Boolean): scala.Unit = js.native
+  def resetViewport_(): scala.Unit = js.native
+  def resetViewport_(hide: scala.Boolean): scala.Unit = js.native
   /**
     *  Sets the value of the <code>averageCenter</code> property.
     *
@@ -376,7 +376,7 @@ class MarkerClusterer protected ()
   /**
     * Sets up the styles object.
     */
-  def `setupStyles_`(): scala.Unit = js.native
+  def setupStyles_(): scala.Unit = js.native
 }
 
 /* static members */

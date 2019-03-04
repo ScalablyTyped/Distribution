@@ -167,21 +167,8 @@ object Repo {
     updateHead: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
     walk: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any]
   ): Repo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("getHead")(getHead)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadAs")(loadAs)
-    __obj.updateDynamic("logWalk")(logWalk)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("resolveHashish")(resolveHashish)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("saveAs")(saveAs)
-    __obj.updateDynamic("setHead")(setHead)
-    __obj.updateDynamic("treeWalk")(treeWalk)
-    __obj.updateDynamic("unpack")(unpack)
-    __obj.updateDynamic("updateHead")(updateHead)
-    __obj.updateDynamic("walk")(walk)
+    val __obj = js.Dynamic.literal(fetch = fetch, getHead = getHead, load = load, loadAs = loadAs, logWalk = logWalk, remove = remove, resolveHashish = resolveHashish, save = save, saveAs = saveAs, setHead = setHead, treeWalk = treeWalk, unpack = unpack, updateHead = updateHead, walk = walk)
+  
     __obj.asInstanceOf[Repo]
   }
 }

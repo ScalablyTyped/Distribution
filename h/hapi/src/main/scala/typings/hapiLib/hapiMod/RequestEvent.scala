@@ -27,12 +27,8 @@ object RequestEvent {
     tags: js.Array[java.lang.String],
     timestamp: java.lang.String
   ): RequestEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data, error = error, tags = tags, timestamp = timestamp)
+  
     __obj.asInstanceOf[RequestEvent]
   }
 }

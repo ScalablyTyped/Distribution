@@ -27,8 +27,7 @@ object TitleObject {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): TitleObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(update = update)
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

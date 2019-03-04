@@ -46,12 +46,8 @@ object XIsolatedConnection {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIsolatedConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIsolatedConnection")(getIsolatedConnection)
-    __obj.updateDynamic("getIsolatedConnectionWithCompletion")(getIsolatedConnectionWithCompletion)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getIsolatedConnection = getIsolatedConnection, getIsolatedConnectionWithCompletion = getIsolatedConnectionWithCompletion, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIsolatedConnection]
   }
 }

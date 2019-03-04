@@ -12,8 +12,8 @@ trait KnockoutObservableFunctions[T] extends js.Object {
 object KnockoutObservableFunctions {
   @scala.inline
   def apply[T](equalityComparer: js.Function2[js.Any, js.Any, scala.Boolean]): KnockoutObservableFunctions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equalityComparer")(equalityComparer)
+    val __obj = js.Dynamic.literal(equalityComparer = equalityComparer)
+  
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
 }

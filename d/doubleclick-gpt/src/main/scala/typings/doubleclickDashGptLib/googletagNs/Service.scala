@@ -29,9 +29,8 @@ object Service {
     ],
     getSlots: js.Function0[js.Array[Slot]]
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("getSlots")(getSlots)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, getSlots = getSlots)
+  
     __obj.asInstanceOf[Service]
   }
 }

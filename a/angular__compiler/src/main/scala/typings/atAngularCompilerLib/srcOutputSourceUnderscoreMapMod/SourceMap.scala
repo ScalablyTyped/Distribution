@@ -24,12 +24,7 @@ object SourceMap {
     version: scala.Double,
     file: java.lang.String = null
   ): SourceMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("sourceRoot")(sourceRoot)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("sourcesContent")(sourcesContent)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(mappings = mappings, sourceRoot = sourceRoot, sources = sources, sourcesContent = sourcesContent, version = version)
     if (file != null) __obj.updateDynamic("file")(file)
     __obj.asInstanceOf[SourceMap]
   }

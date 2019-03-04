@@ -93,20 +93,8 @@ object JWT {
     valid: scala.Boolean,
     verify: js.Function1[java.lang.String, JWT]
   ): JWT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expired")(expired)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("resign")(resign)
-    __obj.updateDynamic("revoke")(revoke)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("sign")(sign)
-    __obj.updateDynamic("stale")(stale)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("valid")(valid)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(expired = expired, options = options, payload = payload, resign = resign, revoke = revoke, secret = secret, sign = sign, stale = stale, store = store, toJSON = toJSON, token = token, valid = valid, verify = verify)
+  
     __obj.asInstanceOf[JWT]
   }
 }

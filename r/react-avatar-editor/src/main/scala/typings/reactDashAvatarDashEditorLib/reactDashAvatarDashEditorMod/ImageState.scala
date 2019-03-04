@@ -18,12 +18,8 @@ object ImageState {
     x: scala.Double,
     y: scala.Double
   ): ImageState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, resource = resource, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[ImageState]
   }
 }

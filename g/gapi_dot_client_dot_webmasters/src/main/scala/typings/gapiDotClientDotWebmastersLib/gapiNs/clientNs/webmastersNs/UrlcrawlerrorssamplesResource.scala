@@ -30,10 +30,8 @@ object UrlcrawlerrorssamplesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): UrlcrawlerrorssamplesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("markAsFixed")(markAsFixed)
+    val __obj = js.Dynamic.literal(get = get, list = list, markAsFixed = markAsFixed)
+  
     __obj.asInstanceOf[UrlcrawlerrorssamplesResource]
   }
 }

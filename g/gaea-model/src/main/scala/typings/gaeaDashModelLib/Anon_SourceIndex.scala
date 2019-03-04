@@ -24,11 +24,8 @@ object Anon_SourceIndex {
     targetIndex: scala.Double,
     targetParentMapUniqueKey: java.lang.String
   ): Anon_SourceIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceIndex")(sourceIndex)
-    __obj.updateDynamic("sourceParentMapUniqueKey")(sourceParentMapUniqueKey)
-    __obj.updateDynamic("targetIndex")(targetIndex)
-    __obj.updateDynamic("targetParentMapUniqueKey")(targetParentMapUniqueKey)
+    val __obj = js.Dynamic.literal(sourceIndex = sourceIndex, sourceParentMapUniqueKey = sourceParentMapUniqueKey, targetIndex = targetIndex, targetParentMapUniqueKey = targetParentMapUniqueKey)
+  
     __obj.asInstanceOf[Anon_SourceIndex]
   }
 }

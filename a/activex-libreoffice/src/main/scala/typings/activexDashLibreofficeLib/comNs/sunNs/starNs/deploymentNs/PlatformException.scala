@@ -22,9 +22,8 @@ object PlatformException {
     Message: java.lang.String,
     `package`: XPackage
   ): PlatformException = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message)
+    __obj.updateDynamic("package")(`package`)
     __obj.asInstanceOf[PlatformException]
   }
 }

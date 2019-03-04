@@ -22,11 +22,8 @@ object ForwardedTcpipChannelInfo {
     `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`forwarded-tcpip`,
     window: scala.Double
   ): ForwardedTcpipChannelInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("packetSize")(packetSize)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, window = window)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ForwardedTcpipChannelInfo]
   }
 }

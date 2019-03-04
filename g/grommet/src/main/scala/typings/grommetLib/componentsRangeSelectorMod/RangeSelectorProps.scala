@@ -42,8 +42,7 @@ object RangeSelectorProps {
     size: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | java.lang.String = null,
     step: scala.Int | scala.Double = null
   ): RangeSelectorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)

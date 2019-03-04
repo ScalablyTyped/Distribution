@@ -29,12 +29,8 @@ object Telemetry {
     ],
     logEvent: js.Function1[js.Any, scala.Unit]
   ): Telemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("fillServerCapabilities")(fillServerCapabilities)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("logEvent")(logEvent)
+    val __obj = js.Dynamic.literal(attach = attach, connection = connection, fillServerCapabilities = fillServerCapabilities, initialize = initialize, logEvent = logEvent)
+  
     __obj.asInstanceOf[Telemetry]
   }
 }

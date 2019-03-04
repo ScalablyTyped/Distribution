@@ -14,8 +14,8 @@ object Anon_NetworkPredictionEnabled {
   def apply(
     networkPredictionEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting
   ): Anon_NetworkPredictionEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkPredictionEnabled")(networkPredictionEnabled)
+    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled)
+  
     __obj.asInstanceOf[Anon_NetworkPredictionEnabled]
   }
 }

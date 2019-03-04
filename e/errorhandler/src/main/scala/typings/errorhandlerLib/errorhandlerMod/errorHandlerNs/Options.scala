@@ -20,8 +20,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(log: scala.Boolean | LoggingCallback): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Options]
   }
 }

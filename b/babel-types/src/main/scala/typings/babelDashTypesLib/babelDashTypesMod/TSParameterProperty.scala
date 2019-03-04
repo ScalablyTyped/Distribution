@@ -29,11 +29,8 @@ object TSParameterProperty {
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     trailingComments: js.Array[Comment] = null
   ): TSParameterProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, parameter = parameter.asInstanceOf[js.Any], start = start)
+    __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

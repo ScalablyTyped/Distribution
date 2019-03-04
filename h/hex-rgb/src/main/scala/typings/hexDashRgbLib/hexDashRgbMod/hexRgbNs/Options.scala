@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(format: hexDashRgbLib.hexDashRgbLibStrings.array): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[Options]
   }
 }

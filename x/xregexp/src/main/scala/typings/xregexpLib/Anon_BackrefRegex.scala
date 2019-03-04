@@ -13,9 +13,8 @@ trait Anon_BackrefRegex extends js.Object {
 object Anon_BackrefRegex {
   @scala.inline
   def apply(backref: scala.Double, regex: stdLib.RegExp): Anon_BackrefRegex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backref")(backref)
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(backref = backref, regex = regex)
+  
     __obj.asInstanceOf[Anon_BackrefRegex]
   }
 }

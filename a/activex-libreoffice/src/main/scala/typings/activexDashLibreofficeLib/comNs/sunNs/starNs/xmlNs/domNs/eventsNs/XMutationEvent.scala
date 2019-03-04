@@ -73,38 +73,8 @@ object XMutationEvent {
     release: js.Function0[scala.Unit],
     stopPropagation: js.Function0[scala.Unit]
   ): XMutationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttrChange")(AttrChange)
-    __obj.updateDynamic("AttrName")(AttrName)
-    __obj.updateDynamic("Bubbles")(Bubbles)
-    __obj.updateDynamic("Cancelable")(Cancelable)
-    __obj.updateDynamic("CurrentTarget")(CurrentTarget)
-    __obj.updateDynamic("EventPhase")(EventPhase)
-    __obj.updateDynamic("NewValue")(NewValue)
-    __obj.updateDynamic("PrevValue")(PrevValue)
-    __obj.updateDynamic("RelatedNode")(RelatedNode)
-    __obj.updateDynamic("Target")(Target)
-    __obj.updateDynamic("TimeStamp")(TimeStamp)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAttrChange")(getAttrChange)
-    __obj.updateDynamic("getAttrName")(getAttrName)
-    __obj.updateDynamic("getBubbles")(getBubbles)
-    __obj.updateDynamic("getCancelable")(getCancelable)
-    __obj.updateDynamic("getCurrentTarget")(getCurrentTarget)
-    __obj.updateDynamic("getEventPhase")(getEventPhase)
-    __obj.updateDynamic("getNewValue")(getNewValue)
-    __obj.updateDynamic("getPrevValue")(getPrevValue)
-    __obj.updateDynamic("getRelatedNode")(getRelatedNode)
-    __obj.updateDynamic("getTarget")(getTarget)
-    __obj.updateDynamic("getTimeStamp")(getTimeStamp)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("initEvent")(initEvent)
-    __obj.updateDynamic("initMutationEvent")(initMutationEvent)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    val __obj = js.Dynamic.literal(AttrChange = AttrChange, AttrName = AttrName, Bubbles = Bubbles, Cancelable = Cancelable, CurrentTarget = CurrentTarget, EventPhase = EventPhase, NewValue = NewValue, PrevValue = PrevValue, RelatedNode = RelatedNode, Target = Target, TimeStamp = TimeStamp, Type = Type, acquire = acquire, getAttrChange = getAttrChange, getAttrName = getAttrName, getBubbles = getBubbles, getCancelable = getCancelable, getCurrentTarget = getCurrentTarget, getEventPhase = getEventPhase, getNewValue = getNewValue, getPrevValue = getPrevValue, getRelatedNode = getRelatedNode, getTarget = getTarget, getTimeStamp = getTimeStamp, getType = getType, initEvent = initEvent, initMutationEvent = initMutationEvent, preventDefault = preventDefault, queryInterface = queryInterface, release = release, stopPropagation = stopPropagation)
+  
     __obj.asInstanceOf[XMutationEvent]
   }
 }

@@ -20,9 +20,7 @@ object Anon_Args {
     debug: scala.Boolean | (js.Function1[/* repeated */ js.Any, _]) = null,
     storageEngine: java.lang.String = null
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dbPath")(dbPath)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(dbPath = dbPath, port = port)
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine)
     __obj.asInstanceOf[Anon_Args]

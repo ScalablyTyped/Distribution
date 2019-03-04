@@ -33,21 +33,8 @@ object AdWordsAdExtensions {
     sitelinks: js.Function0[AdWordsSelector[Sitelink]],
     snippets: js.Function0[AdWordsSelector[Snippet]]
   ): AdWordsAdExtensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callouts")(callouts)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("mobileApps")(mobileApps)
-    __obj.updateDynamic("newCalloutBuilder")(newCalloutBuilder)
-    __obj.updateDynamic("newMessageBuilder")(newMessageBuilder)
-    __obj.updateDynamic("newMobileAppBuilder")(newMobileAppBuilder)
-    __obj.updateDynamic("newPhoneNumberBuilder")(newPhoneNumberBuilder)
-    __obj.updateDynamic("newReviewBuilder")(newReviewBuilder)
-    __obj.updateDynamic("newSitelinkBuilder")(newSitelinkBuilder)
-    __obj.updateDynamic("newSnippetBuilder")(newSnippetBuilder)
-    __obj.updateDynamic("phoneNumbers")(phoneNumbers)
-    __obj.updateDynamic("reviews")(reviews)
-    __obj.updateDynamic("sitelinks")(sitelinks)
-    __obj.updateDynamic("snippets")(snippets)
+    val __obj = js.Dynamic.literal(callouts = callouts, message = message, mobileApps = mobileApps, newCalloutBuilder = newCalloutBuilder, newMessageBuilder = newMessageBuilder, newMobileAppBuilder = newMobileAppBuilder, newPhoneNumberBuilder = newPhoneNumberBuilder, newReviewBuilder = newReviewBuilder, newSitelinkBuilder = newSitelinkBuilder, newSnippetBuilder = newSnippetBuilder, phoneNumbers = phoneNumbers, reviews = reviews, sitelinks = sitelinks, snippets = snippets)
+  
     __obj.asInstanceOf[AdWordsAdExtensions]
   }
 }

@@ -26,14 +26,8 @@ object Message {
     translations: js.Array[Translation],
     updated_at: java.lang.String
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("updated_at")(updated_at)
+    val __obj = js.Dynamic.literal(author = author, content = content, created_at = created_at, id = id, severity = severity, translations = translations, updated_at = updated_at)
+  
     __obj.asInstanceOf[Message]
   }
 }

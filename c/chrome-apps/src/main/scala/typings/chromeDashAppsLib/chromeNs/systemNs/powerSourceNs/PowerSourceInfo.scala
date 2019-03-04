@@ -27,8 +27,8 @@ object PowerSourceInfo {
     `type`: java.lang.String,
     maxPower: js.UndefOr[chromeDashAppsLib.chromeNs.double] = js.undefined
   ): PowerSourceInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("active")(active)
+    val __obj = js.Dynamic.literal(active = active)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(maxPower)) __obj.updateDynamic("maxPower")(maxPower)
     __obj.asInstanceOf[PowerSourceInfo]
   }

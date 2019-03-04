@@ -18,10 +18,8 @@ object Anon_KeyCode {
     nextFocusElement: stdLib.HTMLElement,
     previousFocusElement: stdLib.HTMLElement
   ): Anon_KeyCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyCode")(keyCode)
-    __obj.updateDynamic("nextFocusElement")(nextFocusElement)
-    __obj.updateDynamic("previousFocusElement")(previousFocusElement)
+    val __obj = js.Dynamic.literal(keyCode = keyCode, nextFocusElement = nextFocusElement, previousFocusElement = previousFocusElement)
+  
     __obj.asInstanceOf[Anon_KeyCode]
   }
 }

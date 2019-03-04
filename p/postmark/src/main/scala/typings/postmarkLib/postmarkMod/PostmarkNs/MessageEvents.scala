@@ -21,11 +21,8 @@ object MessageEvents {
     Recipient: java.lang.String,
     Type: java.lang.String
   ): MessageEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Details")(Details)
-    __obj.updateDynamic("ReceivedAt")(ReceivedAt)
-    __obj.updateDynamic("Recipient")(Recipient)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Details = Details, ReceivedAt = ReceivedAt, Recipient = Recipient, Type = Type)
+  
     __obj.asInstanceOf[MessageEvents]
   }
 }

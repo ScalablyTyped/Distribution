@@ -13,9 +13,8 @@ trait IProvisionFromXmlDocumentResults extends js.Object {
 object IProvisionFromXmlDocumentResults {
   @scala.inline
   def apply(allElementsProvisioned: scala.Boolean, provisionResultsXml: java.lang.String): IProvisionFromXmlDocumentResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allElementsProvisioned")(allElementsProvisioned)
-    __obj.updateDynamic("provisionResultsXml")(provisionResultsXml)
+    val __obj = js.Dynamic.literal(allElementsProvisioned = allElementsProvisioned, provisionResultsXml = provisionResultsXml)
+  
     __obj.asInstanceOf[IProvisionFromXmlDocumentResults]
   }
 }

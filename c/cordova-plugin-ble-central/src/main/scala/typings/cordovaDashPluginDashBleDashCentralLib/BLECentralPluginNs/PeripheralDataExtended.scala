@@ -20,13 +20,8 @@ object PeripheralDataExtended {
     rssi: scala.Double,
     services: js.Array[java.lang.String]
   ): PeripheralDataExtended = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("advertising")(advertising.asInstanceOf[js.Any])
-    __obj.updateDynamic("characteristics")(characteristics)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rssi")(rssi)
-    __obj.updateDynamic("services")(services)
+    val __obj = js.Dynamic.literal(advertising = advertising.asInstanceOf[js.Any], characteristics = characteristics, id = id, name = name, rssi = rssi, services = services)
+  
     __obj.asInstanceOf[PeripheralDataExtended]
   }
 }

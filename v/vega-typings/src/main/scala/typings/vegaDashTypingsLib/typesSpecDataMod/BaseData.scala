@@ -20,8 +20,7 @@ object BaseData {
     on: js.Array[vegaDashTypingsLib.typesSpecOnDashTriggerMod.OnTrigger] = null,
     transform: js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms] = null
   ): BaseData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (on != null) __obj.updateDynamic("on")(on)
     if (transform != null) __obj.updateDynamic("transform")(transform)

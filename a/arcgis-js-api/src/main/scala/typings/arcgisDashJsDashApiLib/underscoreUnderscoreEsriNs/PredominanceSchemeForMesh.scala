@@ -38,13 +38,8 @@ object PredominanceSchemeForMesh {
     opacity: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): PredominanceSchemeForMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[PredominanceSchemeForMesh]
   }
 }

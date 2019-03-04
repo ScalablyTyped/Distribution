@@ -19,9 +19,8 @@ trait IPair[First, Second] extends js.Object {
 object IPair {
   @scala.inline
   def apply[First, Second](first: First, second: Second): IPair[First, Second] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IPair[First, Second]]
   }
 }

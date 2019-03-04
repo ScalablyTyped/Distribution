@@ -22,8 +22,7 @@ object SortingRule {
     desc: reactDashTableLib.reactDashTableLibNumbers.`true` = null,
     sort: reactDashTableLib.reactDashTableLibStrings.desc | reactDashTableLib.reactDashTableLibStrings.asc = null
   ): SortingRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (asc != null) __obj.updateDynamic("asc")(asc)
     if (desc != null) __obj.updateDynamic("desc")(desc)
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

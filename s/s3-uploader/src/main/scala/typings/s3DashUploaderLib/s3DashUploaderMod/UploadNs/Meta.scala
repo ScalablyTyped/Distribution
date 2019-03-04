@@ -26,14 +26,8 @@ object Meta {
     orientation: java.lang.String,
     quallity: java.lang.String
   ): Meta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorSpace")(colorSpace)
-    __obj.updateDynamic("compression")(compression)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("imageSize")(imageSize)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("quallity")(quallity)
+    val __obj = js.Dynamic.literal(colorSpace = colorSpace, compression = compression, fileSize = fileSize, format = format, imageSize = imageSize, orientation = orientation, quallity = quallity)
+  
     __obj.asInstanceOf[Meta]
   }
 }

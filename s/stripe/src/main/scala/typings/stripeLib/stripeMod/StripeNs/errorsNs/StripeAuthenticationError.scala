@@ -26,12 +26,8 @@ object StripeAuthenticationError {
     params: java.lang.String = null,
     stack: java.lang.String = null
   ): StripeAuthenticationError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawType")(rawType)
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(headers = headers, raw = raw, rawType = rawType, readonly = readonly, requestId = requestId)
+    __obj.updateDynamic("type")(`type`)
     if (code != null) __obj.updateDynamic("code")(code)
     if (detail != null) __obj.updateDynamic("detail")(detail)
     if (message != null) __obj.updateDynamic("message")(message)

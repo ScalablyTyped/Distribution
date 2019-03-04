@@ -15,8 +15,8 @@ trait TextDocumentIdentifier extends js.Object {
 object TextDocumentIdentifier {
   @scala.inline
   def apply(uri: java.lang.String): TextDocumentIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
+  
     __obj.asInstanceOf[TextDocumentIdentifier]
   }
 }

@@ -28,7 +28,7 @@ trait Anon_Assert extends js.Object {
   val moduleNs: js.Any = js.native
   val netNs: Anon_Connect = js.native
   val osNs: Anon_Arch = js.native
-  val pathNs: `Anon_` = js.native
+  val pathNs: Anon_ = js.native
   val perfUnderscoreHooksNs: Anon_CallbackConstants = js.native
   val punycodeNs: Anon_Decode = js.native
   val querystringNs: Anon_Eq = js.native

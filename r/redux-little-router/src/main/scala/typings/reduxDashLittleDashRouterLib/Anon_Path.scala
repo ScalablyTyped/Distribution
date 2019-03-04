@@ -18,10 +18,8 @@ object Anon_Path {
     query: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ObjectLiteral[java.lang.String],
     url: java.lang.String
   ): Anon_Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(path = path, query = query, url = url)
+  
     __obj.asInstanceOf[Anon_Path]
   }
 }

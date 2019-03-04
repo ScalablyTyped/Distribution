@@ -47,8 +47,8 @@ object location {
   def apply(
     createRenderer: js.Function1[locationCreateRendererParams, arcgisDashJsDashApiLib.IPromise[RendererResult]]
   ): location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createRenderer")(createRenderer)
+    val __obj = js.Dynamic.literal(createRenderer = createRenderer)
+  
     __obj.asInstanceOf[location]
   }
 }

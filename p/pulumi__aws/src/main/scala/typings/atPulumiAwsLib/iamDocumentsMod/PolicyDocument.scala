@@ -18,9 +18,7 @@ object PolicyDocument {
     Version: atPulumiAwsLib.atPulumiAwsLibStrings.`2008-10-17` | atPulumiAwsLib.atPulumiAwsLibStrings.`2012-10-17`,
     Id: java.lang.String = null
   ): PolicyDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Statement")(Statement)
-    __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Statement = Statement, Version = Version.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id)
     __obj.asInstanceOf[PolicyDocument]
   }

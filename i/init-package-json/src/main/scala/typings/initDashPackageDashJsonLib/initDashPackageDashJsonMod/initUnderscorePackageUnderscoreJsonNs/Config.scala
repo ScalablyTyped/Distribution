@@ -16,8 +16,7 @@ object Config {
     get: js.Function1[java.lang.String, js.Any],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Config]
   }

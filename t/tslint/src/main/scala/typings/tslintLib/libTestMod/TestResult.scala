@@ -16,9 +16,8 @@ object TestResult {
     directory: java.lang.String,
     results: org.scalablytyped.runtime.StringDictionary[TestOutput | SkippedTest]
   ): TestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(directory = directory, results = results)
+  
     __obj.asInstanceOf[TestResult]
   }
 }

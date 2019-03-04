@@ -46,13 +46,8 @@ object XLFreeze {
     freezeTopRow: js.Function0[scala.Unit],
     unfreezePanes: js.Function0[scala.Unit]
   ): XLFreeze = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("freezeColumns")(freezeColumns)
-    __obj.updateDynamic("freezeLeftColumn")(freezeLeftColumn)
-    __obj.updateDynamic("freezePanes")(freezePanes)
-    __obj.updateDynamic("freezeRows")(freezeRows)
-    __obj.updateDynamic("freezeTopRow")(freezeTopRow)
-    __obj.updateDynamic("unfreezePanes")(unfreezePanes)
+    val __obj = js.Dynamic.literal(freezeColumns = freezeColumns, freezeLeftColumn = freezeLeftColumn, freezePanes = freezePanes, freezeRows = freezeRows, freezeTopRow = freezeTopRow, unfreezePanes = unfreezePanes)
+  
     __obj.asInstanceOf[XLFreeze]
   }
 }

@@ -42,13 +42,8 @@ object MDCTextFieldIconAdapter {
     removeAttr: js.Function1[java.lang.String, scala.Unit],
     setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): MDCTextFieldIconAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("getAttr")(getAttr)
-    __obj.updateDynamic("notifyIconAction")(notifyIconAction)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("removeAttr")(removeAttr)
-    __obj.updateDynamic("setAttr")(setAttr)
+    val __obj = js.Dynamic.literal(deregisterInteractionHandler = deregisterInteractionHandler, getAttr = getAttr, notifyIconAction = notifyIconAction, registerInteractionHandler = registerInteractionHandler, removeAttr = removeAttr, setAttr = setAttr)
+  
     __obj.asInstanceOf[MDCTextFieldIconAdapter]
   }
 }

@@ -29,10 +29,8 @@ object TSTypeAliasDeclaration {
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): TSTypeAliasDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("declare")(declare)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(declare = declare, id = id, typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSTypeAliasDeclaration]
   }

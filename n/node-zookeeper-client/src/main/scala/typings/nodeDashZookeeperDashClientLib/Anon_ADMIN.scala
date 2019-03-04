@@ -24,13 +24,8 @@ object Anon_ADMIN {
     READ: scala.Double,
     WRITE: scala.Double
   ): Anon_ADMIN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADMIN")(ADMIN)
-    __obj.updateDynamic("ALL")(ALL)
-    __obj.updateDynamic("CREATE")(CREATE)
-    __obj.updateDynamic("DELETE")(DELETE)
-    __obj.updateDynamic("READ")(READ)
-    __obj.updateDynamic("WRITE")(WRITE)
+    val __obj = js.Dynamic.literal(ADMIN = ADMIN, ALL = ALL, CREATE = CREATE, DELETE = DELETE, READ = READ, WRITE = WRITE)
+  
     __obj.asInstanceOf[Anon_ADMIN]
   }
 }

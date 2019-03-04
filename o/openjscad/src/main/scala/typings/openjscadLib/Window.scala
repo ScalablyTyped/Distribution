@@ -21,11 +21,8 @@ object Window {
     webkitRequestFileSystem: js.Any,
     webkitURL: stdLib.URL
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Worker")(Worker)
-    __obj.updateDynamic("requestFileSystem")(requestFileSystem)
-    __obj.updateDynamic("webkitRequestFileSystem")(webkitRequestFileSystem)
-    __obj.updateDynamic("webkitURL")(webkitURL)
+    val __obj = js.Dynamic.literal(Worker = Worker, requestFileSystem = requestFileSystem, webkitRequestFileSystem = webkitRequestFileSystem, webkitURL = webkitURL)
+  
     __obj.asInstanceOf[Window]
   }
 }

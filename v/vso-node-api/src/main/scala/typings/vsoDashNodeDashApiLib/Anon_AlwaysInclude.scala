@@ -14,10 +14,8 @@ trait Anon_AlwaysInclude extends js.Object {
 object Anon_AlwaysInclude {
   @scala.inline
   def apply(alwaysInclude: scala.Double, onlyIfLicensed: scala.Double, onlyIfUnlicensed: scala.Double): Anon_AlwaysInclude = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysInclude")(alwaysInclude)
-    __obj.updateDynamic("onlyIfLicensed")(onlyIfLicensed)
-    __obj.updateDynamic("onlyIfUnlicensed")(onlyIfUnlicensed)
+    val __obj = js.Dynamic.literal(alwaysInclude = alwaysInclude, onlyIfLicensed = onlyIfLicensed, onlyIfUnlicensed = onlyIfUnlicensed)
+  
     __obj.asInstanceOf[Anon_AlwaysInclude]
   }
 }

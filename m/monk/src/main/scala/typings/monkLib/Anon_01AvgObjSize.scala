@@ -36,19 +36,8 @@ object Anon_01AvgObjSize {
     totalIndexSize: scala.Double,
     wiredTiger: js.Any
   ): Anon_01AvgObjSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avgObjSize")(avgObjSize)
-    __obj.updateDynamic("capped")(capped)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("indexDetails")(indexDetails)
-    __obj.updateDynamic("indexSizes")(indexSizes)
-    __obj.updateDynamic("nindexes")(nindexes)
-    __obj.updateDynamic("ns")(ns)
-    __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("storageSize")(storageSize)
-    __obj.updateDynamic("totalIndexSize")(totalIndexSize)
-    __obj.updateDynamic("wiredTiger")(wiredTiger)
+    val __obj = js.Dynamic.literal(avgObjSize = avgObjSize, capped = capped, count = count, indexDetails = indexDetails, indexSizes = indexSizes, nindexes = nindexes, ns = ns, ok = ok.asInstanceOf[js.Any], size = size, storageSize = storageSize, totalIndexSize = totalIndexSize, wiredTiger = wiredTiger)
+  
     __obj.asInstanceOf[Anon_01AvgObjSize]
   }
 }

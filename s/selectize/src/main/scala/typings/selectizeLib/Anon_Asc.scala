@@ -16,8 +16,7 @@ object Anon_Asc {
     field: java.lang.String,
     direction: selectizeLib.selectizeLibStrings.asc | selectizeLib.selectizeLibStrings.desc = null
   ): Anon_Asc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(field = field)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Asc]
   }

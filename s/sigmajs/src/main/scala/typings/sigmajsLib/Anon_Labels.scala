@@ -20,8 +20,7 @@ object Anon_Labels {
       sigmajsLib.SigmaJsNs.SVGObject[sigmajsLib.SigmaJsNs.Edge] | sigmajsLib.SigmaJsNs.SVGEdgeLabels
     ] = null
   ): Anon_Labels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labels")(labels)
+    val __obj = js.Dynamic.literal(labels = labels)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Labels]
   }

@@ -13,9 +13,8 @@ trait Anon_IdNameIntegrationName extends js.Object {
 object Anon_IdNameIntegrationName {
   @scala.inline
   def apply(id: java.lang.String, name: ionicLib.definitionsMod.IntegrationName): Anon_IdNameIntegrationName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
     __obj.asInstanceOf[Anon_IdNameIntegrationName]
   }
 }

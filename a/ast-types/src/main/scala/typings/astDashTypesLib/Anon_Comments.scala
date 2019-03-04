@@ -20,8 +20,7 @@ object Anon_Comments {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     name: java.lang.String = null
   ): Anon_Comments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("program")(program)
+    val __obj = js.Dynamic.literal(program = program)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (name != null) __obj.updateDynamic("name")(name)

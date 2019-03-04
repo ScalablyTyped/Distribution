@@ -25,11 +25,8 @@ object Core {
     getId: js.Function0[js.Promise[js.Array[java.lang.String]]],
     getLogger: js.Function1[java.lang.String, js.Promise[Logger]]
   ): Core = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindChannel")(bindChannel)
-    __obj.updateDynamic("createChannel")(createChannel)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getLogger")(getLogger)
+    val __obj = js.Dynamic.literal(bindChannel = bindChannel, createChannel = createChannel, getId = getId, getLogger = getLogger)
+  
     __obj.asInstanceOf[Core]
   }
 }

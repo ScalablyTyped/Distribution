@@ -22,12 +22,8 @@ object CommonMixin {
     normalizeMethods: js.Any,
     unbindEvents: js.Any
   ): CommonMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindEvents")(bindEvents)
-    __obj.updateDynamic("getOption")(getOption)
-    __obj.updateDynamic("mergeOptions")(mergeOptions)
-    __obj.updateDynamic("normalizeMethods")(normalizeMethods)
-    __obj.updateDynamic("unbindEvents")(unbindEvents)
+    val __obj = js.Dynamic.literal(bindEvents = bindEvents, getOption = getOption, mergeOptions = mergeOptions, normalizeMethods = normalizeMethods, unbindEvents = unbindEvents)
+  
     __obj.asInstanceOf[CommonMixin]
   }
 }

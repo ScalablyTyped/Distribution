@@ -18,9 +18,8 @@ object Interactive {
     `then`: js.Function1[js.Function1[/* result */ js.Any, _], Interactive],
     usage: js.Function1[java.lang.String, Interactive]
   ): Interactive = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-    __obj.updateDynamic("interactive")(interactive)
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(interactive = interactive, usage = usage)
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[Interactive]
   }
 }

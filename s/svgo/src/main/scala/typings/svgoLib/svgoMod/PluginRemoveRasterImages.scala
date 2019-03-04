@@ -12,8 +12,8 @@ trait PluginRemoveRasterImages extends js.Object {
 object PluginRemoveRasterImages {
   @scala.inline
   def apply(removeRasterImages: scala.Boolean | js.Object): PluginRemoveRasterImages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeRasterImages")(removeRasterImages.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeRasterImages = removeRasterImages.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveRasterImages]
   }
 }

@@ -16,8 +16,8 @@ object Anon_Iconemoji {
     key: slackDashNodeLib.slackDashNodeLibStrings.icon_url | slackDashNodeLib.slackDashNodeLibStrings.icon_emoji,
     `val`: java.lang.String
   ): Anon_Iconemoji = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_Iconemoji]
   }
 }

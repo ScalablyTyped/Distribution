@@ -14,8 +14,8 @@ object Anon_WrappedComponent {
   def apply[P](
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[P with reactDashIntlLib.ReactIntlNs.InjectedIntlProps]
   ): Anon_WrappedComponent[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WrappedComponent")(WrappedComponent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_WrappedComponent[P]]
   }
 }

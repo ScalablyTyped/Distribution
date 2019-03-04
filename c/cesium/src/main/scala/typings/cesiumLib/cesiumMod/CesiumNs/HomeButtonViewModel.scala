@@ -15,11 +15,8 @@ trait HomeButtonViewModel extends js.Object {
 object HomeButtonViewModel {
   @scala.inline
   def apply(command: Command, duration: scala.Double, scene: Scene, tooltip: java.lang.String): HomeButtonViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(command = command, duration = duration, scene = scene, tooltip = tooltip)
+  
     __obj.asInstanceOf[HomeButtonViewModel]
   }
 }

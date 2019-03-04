@@ -20,10 +20,7 @@ object AddressMin {
     postalCode: java.lang.String,
     phoneNumber: java.lang.String = null
   ): AddressMin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("postalCode")(postalCode)
+    val __obj = js.Dynamic.literal(countryCode = countryCode, name = name, postalCode = postalCode)
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
     __obj.asInstanceOf[AddressMin]
   }

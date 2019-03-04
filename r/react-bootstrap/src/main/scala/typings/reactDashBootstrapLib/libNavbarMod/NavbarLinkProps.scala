@@ -23,8 +23,7 @@ object NavbarLinkProps {
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[NavbarLink] = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null
   ): NavbarLinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(href = href)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     __obj.asInstanceOf[NavbarLinkProps]

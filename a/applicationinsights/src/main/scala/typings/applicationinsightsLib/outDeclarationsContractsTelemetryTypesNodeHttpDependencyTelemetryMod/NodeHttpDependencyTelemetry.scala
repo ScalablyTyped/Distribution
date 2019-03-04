@@ -27,9 +27,7 @@ object NodeHttpDependencyTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): NodeHttpDependencyTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], request = request)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)

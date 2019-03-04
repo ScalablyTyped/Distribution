@@ -26,14 +26,8 @@ object ICredentialPickerResults {
     credentialUserName: java.lang.String,
     errorCode: scala.Double
   ): ICredentialPickerResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credential")(credential)
-    __obj.updateDynamic("credentialDomainName")(credentialDomainName)
-    __obj.updateDynamic("credentialPassword")(credentialPassword)
-    __obj.updateDynamic("credentialSaveOption")(credentialSaveOption)
-    __obj.updateDynamic("credentialSaved")(credentialSaved)
-    __obj.updateDynamic("credentialUserName")(credentialUserName)
-    __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(credential = credential, credentialDomainName = credentialDomainName, credentialPassword = credentialPassword, credentialSaveOption = credentialSaveOption, credentialSaved = credentialSaved, credentialUserName = credentialUserName, errorCode = errorCode)
+  
     __obj.asInstanceOf[ICredentialPickerResults]
   }
 }

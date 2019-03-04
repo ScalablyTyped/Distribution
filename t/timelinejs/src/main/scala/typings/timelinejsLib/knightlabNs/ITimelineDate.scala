@@ -21,11 +21,7 @@ object ITimelineDate {
     classname: java.lang.String = null,
     tag: java.lang.String = null
   ): ITimelineDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("headline")(headline)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(endDate = endDate, headline = headline, startDate = startDate, text = text)
     if (asset != null) __obj.updateDynamic("asset")(asset)
     if (classname != null) __obj.updateDynamic("classname")(classname)
     if (tag != null) __obj.updateDynamic("tag")(tag)

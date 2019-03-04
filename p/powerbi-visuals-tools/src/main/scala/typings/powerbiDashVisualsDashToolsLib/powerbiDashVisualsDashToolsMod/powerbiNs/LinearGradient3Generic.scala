@@ -20,10 +20,7 @@ object LinearGradient3Generic {
     min: RuleColorStopGeneric[TColor, TValue],
     nullColoringStrategy: NullColoringStrategyGeneric[TStrategy, TColor] = null
   ): LinearGradient3Generic[TColor, TValue, TStrategy] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("mid")(mid)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, mid = mid, min = min)
     if (nullColoringStrategy != null) __obj.updateDynamic("nullColoringStrategy")(nullColoringStrategy)
     __obj.asInstanceOf[LinearGradient3Generic[TColor, TValue, TStrategy]]
   }

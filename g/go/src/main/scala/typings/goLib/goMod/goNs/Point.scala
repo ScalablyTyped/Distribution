@@ -184,32 +184,8 @@ object Point {
     x: scala.Double,
     y: scala.Double
   ): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("directionPoint")(directionPoint)
-    __obj.updateDynamic("distanceSquared")(distanceSquared)
-    __obj.updateDynamic("distanceSquaredPoint")(distanceSquaredPoint)
-    __obj.updateDynamic("equalTo")(equalTo)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("equalsApprox")(equalsApprox)
-    __obj.updateDynamic("isReal")(isReal)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("projectOntoLineSegment")(projectOntoLineSegment)
-    __obj.updateDynamic("projectOntoLineSegmentPoint")(projectOntoLineSegmentPoint)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setRectSpot")(setRectSpot)
-    __obj.updateDynamic("setSpot")(setSpot)
-    __obj.updateDynamic("setTo")(setTo)
-    __obj.updateDynamic("snapToGrid")(snapToGrid)
-    __obj.updateDynamic("snapToGridPoint")(snapToGridPoint)
-    __obj.updateDynamic("subtract")(subtract)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(add = add, copy = copy, direction = direction, directionPoint = directionPoint, distanceSquared = distanceSquared, distanceSquaredPoint = distanceSquaredPoint, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, isReal = isReal, normalize = normalize, offset = offset, projectOntoLineSegment = projectOntoLineSegment, projectOntoLineSegmentPoint = projectOntoLineSegmentPoint, rotate = rotate, scale = scale, set = set, setRectSpot = setRectSpot, setSpot = setSpot, setTo = setTo, snapToGrid = snapToGrid, snapToGridPoint = snapToGridPoint, subtract = subtract, x = x, y = y)
+  
     __obj.asInstanceOf[Point]
   }
 }

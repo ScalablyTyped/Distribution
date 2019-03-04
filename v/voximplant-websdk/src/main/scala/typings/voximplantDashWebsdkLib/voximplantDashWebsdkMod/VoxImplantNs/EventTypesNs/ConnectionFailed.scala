@@ -19,8 +19,8 @@ trait ConnectionFailed
 object ConnectionFailed {
   @scala.inline
   def apply(message: java.lang.String): ConnectionFailed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+  
     __obj.asInstanceOf[ConnectionFailed]
   }
 }

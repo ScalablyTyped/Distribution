@@ -19,8 +19,7 @@ object ForeignKeyOptions {
     references: Name = null,
     referencesConstraintName: java.lang.String = null
   ): ForeignKeyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)

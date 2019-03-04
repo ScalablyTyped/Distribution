@@ -24,13 +24,8 @@ object ResourceUsage {
     scripts: MemoryUsageDetails,
     xslStyleSheets: MemoryUsageDetails
   ): ResourceUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cssStyleSheets")(cssStyleSheets)
-    __obj.updateDynamic("fonts")(fonts)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("scripts")(scripts)
-    __obj.updateDynamic("xslStyleSheets")(xslStyleSheets)
+    val __obj = js.Dynamic.literal(cssStyleSheets = cssStyleSheets, fonts = fonts, images = images, other = other, scripts = scripts, xslStyleSheets = xslStyleSheets)
+  
     __obj.asInstanceOf[ResourceUsage]
   }
 }

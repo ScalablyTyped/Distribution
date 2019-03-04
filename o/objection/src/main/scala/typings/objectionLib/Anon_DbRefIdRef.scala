@@ -18,7 +18,8 @@ object Anon_DbRefIdRef {
     `#id`: js.UndefOr[scala.Nothing] = js.undefined,
     `#ref`: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_DbRefIdRef = {
-    val __obj = js.Dynamic.literal(`#dbRef` = `#dbRef`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("#dbRef")(`#dbRef`)
     if (!js.isUndefined(`#id`)) __obj.updateDynamic("#id")(`#id`)
     if (!js.isUndefined(`#ref`)) __obj.updateDynamic("#ref")(`#ref`)
     __obj.asInstanceOf[Anon_DbRefIdRef]

@@ -53,16 +53,7 @@ object Drive {
     logicalBlockSize: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null
   ): Drive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("busType")(busType)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("enumerator")(enumerator)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isSystem")(isSystem)
-    __obj.updateDynamic("mountpoints")(mountpoints)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(busType = busType, description = description, device = device, enumerator = enumerator, error = error, isReadOnly = isReadOnly, isSystem = isSystem, mountpoints = mountpoints, raw = raw)
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
     if (busVersion != null) __obj.updateDynamic("busVersion")(busVersion)
     if (devicePath != null) __obj.updateDynamic("devicePath")(devicePath)

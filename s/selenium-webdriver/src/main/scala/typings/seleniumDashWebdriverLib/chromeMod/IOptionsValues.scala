@@ -26,10 +26,7 @@ object IOptionsValues {
     logFile: java.lang.String = null,
     prefs: js.Any = null
   ): IOptionsValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(args = args, detach = detach, extensions = extensions)
     if (binary != null) __obj.updateDynamic("binary")(binary)
     if (localState != null) __obj.updateDynamic("localState")(localState)
     if (logFile != null) __obj.updateDynamic("logFile")(logFile)

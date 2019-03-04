@@ -12,8 +12,8 @@ trait Anon_IsScrolling extends js.Object {
 object Anon_IsScrolling {
   @scala.inline
   def apply(isScrolling: scala.Boolean): Anon_IsScrolling = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isScrolling")(isScrolling)
+    val __obj = js.Dynamic.literal(isScrolling = isScrolling)
+  
     __obj.asInstanceOf[Anon_IsScrolling]
   }
 }

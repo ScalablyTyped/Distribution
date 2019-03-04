@@ -20,12 +20,8 @@ object XAccessibleExtendedAttributes {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleExtendedAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExtendedAttributes")(ExtendedAttributes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getExtendedAttributes")(getExtendedAttributes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ExtendedAttributes = ExtendedAttributes, acquire = acquire, getExtendedAttributes = getExtendedAttributes, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleExtendedAttributes]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_AutoDestroy extends js.Object {
 object Anon_AutoDestroy {
   @scala.inline
   def apply(autoDestroy: scala.Boolean): Anon_AutoDestroy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoDestroy")(autoDestroy)
+    val __obj = js.Dynamic.literal(autoDestroy = autoDestroy)
+  
     __obj.asInstanceOf[Anon_AutoDestroy]
   }
 }

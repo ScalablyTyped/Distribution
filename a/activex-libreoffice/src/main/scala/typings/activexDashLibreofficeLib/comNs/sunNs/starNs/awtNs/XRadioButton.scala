@@ -35,16 +35,8 @@ object XRadioButton {
     setLabel: js.Function1[java.lang.String, scala.Unit],
     setState: js.Function1[scala.Boolean, scala.Unit]
   ): XRadioButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addItemListener")(addItemListener)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeItemListener")(removeItemListener)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setState")(setState)
+    val __obj = js.Dynamic.literal(State = State, acquire = acquire, addItemListener = addItemListener, getState = getState, queryInterface = queryInterface, release = release, removeItemListener = removeItemListener, setLabel = setLabel, setState = setState)
+  
     __obj.asInstanceOf[XRadioButton]
   }
 }

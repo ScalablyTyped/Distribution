@@ -12,8 +12,8 @@ trait Anon_Warn extends js.Object {
 object Anon_Warn {
   @scala.inline
   def apply(warn: scala.Boolean): Anon_Warn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(warn = warn)
+  
     __obj.asInstanceOf[Anon_Warn]
   }
 }

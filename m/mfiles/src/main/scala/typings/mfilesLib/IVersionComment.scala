@@ -20,11 +20,8 @@ object IVersionComment {
     StatusChanged: IPropertyValue,
     VersionComment: IPropertyValue
   ): IVersionComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
-    __obj.updateDynamic("ObjVer")(ObjVer)
-    __obj.updateDynamic("StatusChanged")(StatusChanged)
-    __obj.updateDynamic("VersionComment")(VersionComment)
+    val __obj = js.Dynamic.literal(LastModifiedBy = LastModifiedBy, ObjVer = ObjVer, StatusChanged = StatusChanged, VersionComment = VersionComment)
+  
     __obj.asInstanceOf[IVersionComment]
   }
 }

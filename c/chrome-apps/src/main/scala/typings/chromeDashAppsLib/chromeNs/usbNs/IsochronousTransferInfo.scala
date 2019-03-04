@@ -25,10 +25,8 @@ object IsochronousTransferInfo {
     packets: chromeDashAppsLib.chromeNs.integer,
     transferInfo: GenericTransferInfo
   ): IsochronousTransferInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packetLength")(packetLength)
-    __obj.updateDynamic("packets")(packets)
-    __obj.updateDynamic("transferInfo")(transferInfo)
+    val __obj = js.Dynamic.literal(packetLength = packetLength, packets = packets, transferInfo = transferInfo)
+  
     __obj.asInstanceOf[IsochronousTransferInfo]
   }
 }

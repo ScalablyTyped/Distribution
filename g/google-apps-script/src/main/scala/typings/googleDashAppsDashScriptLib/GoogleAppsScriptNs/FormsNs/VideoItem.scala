@@ -38,20 +38,8 @@ object VideoItem {
     setVideoUrl: js.Function1[java.lang.String, VideoItem],
     setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, VideoItem]
   ): VideoItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getAlignment")(getAlignment)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("setAlignment")(setAlignment)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setVideoUrl")(setVideoUrl)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(duplicate = duplicate, getAlignment = getAlignment, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getTitle = getTitle, getType = getType, getWidth = getWidth, setAlignment = setAlignment, setHelpText = setHelpText, setTitle = setTitle, setVideoUrl = setVideoUrl, setWidth = setWidth)
+  
     __obj.asInstanceOf[VideoItem]
   }
 }

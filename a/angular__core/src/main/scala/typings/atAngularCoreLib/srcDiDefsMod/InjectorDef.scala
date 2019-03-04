@@ -22,10 +22,8 @@ object InjectorDef {
       atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.srcDiProviderMod.ValueProvider | atAngularCoreLib.srcDiProviderMod.ExistingProvider | atAngularCoreLib.srcDiProviderMod.FactoryProvider | atAngularCoreLib.srcDiProviderMod.ConstructorProvider | atAngularCoreLib.srcDiProviderMod.StaticClassProvider | atAngularCoreLib.srcDiProviderMod.ClassProvider | js.Array[_]
     ]
   ): InjectorDef[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("factory")(factory)
-    __obj.updateDynamic("imports")(imports)
-    __obj.updateDynamic("providers")(providers)
+    val __obj = js.Dynamic.literal(factory = factory, imports = imports, providers = providers)
+  
     __obj.asInstanceOf[InjectorDef[T]]
   }
 }

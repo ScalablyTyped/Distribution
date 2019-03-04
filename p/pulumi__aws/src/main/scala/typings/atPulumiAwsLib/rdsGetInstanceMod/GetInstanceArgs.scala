@@ -15,8 +15,8 @@ trait GetInstanceArgs extends js.Object {
 object GetInstanceArgs {
   @scala.inline
   def apply(dbInstanceIdentifier: java.lang.String): GetInstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dbInstanceIdentifier")(dbInstanceIdentifier)
+    val __obj = js.Dynamic.literal(dbInstanceIdentifier = dbInstanceIdentifier)
+  
     __obj.asInstanceOf[GetInstanceArgs]
   }
 }

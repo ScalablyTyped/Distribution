@@ -16,8 +16,8 @@ trait DraggingInfo extends js.Object {
 object DraggingInfo {
   @scala.inline
   def apply(point: Point): DraggingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(point = point)
+  
     __obj.asInstanceOf[DraggingInfo]
   }
 }

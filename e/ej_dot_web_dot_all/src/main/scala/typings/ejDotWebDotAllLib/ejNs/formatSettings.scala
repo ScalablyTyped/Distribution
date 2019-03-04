@@ -22,12 +22,8 @@ object formatSettings {
     pattern: js.Array[java.lang.String],
     percent: percentSettings
   ): formatSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("groupSizes")(groupSizes)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("percent")(percent)
+    val __obj = js.Dynamic.literal(currency = currency, decimals = decimals, groupSizes = groupSizes, pattern = pattern, percent = percent)
+  
     __obj.asInstanceOf[formatSettings]
   }
 }

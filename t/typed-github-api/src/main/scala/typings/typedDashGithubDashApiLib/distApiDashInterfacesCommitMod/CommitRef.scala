@@ -12,10 +12,8 @@ trait CommitRef extends GitRef {
 object CommitRef {
   @scala.inline
   def apply(html_url: java.lang.String, sha: java.lang.String, url: java.lang.String): CommitRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("sha")(sha)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(html_url = html_url, sha = sha, url = url)
+  
     __obj.asInstanceOf[CommitRef]
   }
 }

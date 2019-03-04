@@ -39,9 +39,7 @@ object ServerViewsEnginesOptions {
     relativeTo: java.lang.String = null,
     runtimeOptions: RuntimeOptions = null
   ): ServerViewsEnginesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
-    __obj.updateDynamic("module")(module)
+    val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any], module = module)
     if (!js.isUndefined(allowAbsolutePaths)) __obj.updateDynamic("allowAbsolutePaths")(allowAbsolutePaths)
     if (!js.isUndefined(allowInsecureAccess)) __obj.updateDynamic("allowInsecureAccess")(allowInsecureAccess)
     if (compileMode != null) __obj.updateDynamic("compileMode")(compileMode.asInstanceOf[js.Any])

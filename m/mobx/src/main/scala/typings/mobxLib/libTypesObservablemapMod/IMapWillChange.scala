@@ -20,8 +20,9 @@ object IMapWillChange {
     `type`: mobxLib.mobxLibStrings.update | mobxLib.mobxLibStrings.add | mobxLib.mobxLibStrings.delete,
     newValue: V = null
   ): IMapWillChange[K, V] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapWillChange[K, V]]
   }

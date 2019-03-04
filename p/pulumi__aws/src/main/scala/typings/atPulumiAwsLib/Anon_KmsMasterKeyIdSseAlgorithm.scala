@@ -16,8 +16,7 @@ object Anon_KmsMasterKeyIdSseAlgorithm {
     sseAlgorithm: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     kmsMasterKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_KmsMasterKeyIdSseAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sseAlgorithm")(sseAlgorithm.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sseAlgorithm = sseAlgorithm.asInstanceOf[js.Any])
     if (kmsMasterKeyId != null) __obj.updateDynamic("kmsMasterKeyId")(kmsMasterKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KmsMasterKeyIdSseAlgorithm]
   }

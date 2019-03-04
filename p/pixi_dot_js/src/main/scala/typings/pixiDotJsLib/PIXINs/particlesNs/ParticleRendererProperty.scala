@@ -37,12 +37,8 @@ object ParticleRendererProperty {
       scala.Unit
     ]
   ): ParticleRendererProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("unsignedByte")(unsignedByte)
-    __obj.updateDynamic("uploadFunction")(uploadFunction)
+    val __obj = js.Dynamic.literal(attribute = attribute, offset = offset, size = size, unsignedByte = unsignedByte, uploadFunction = uploadFunction)
+  
     __obj.asInstanceOf[ParticleRendererProperty]
   }
 }

@@ -24,9 +24,8 @@ object Program {
     tokens: js.Array[Token] = null,
     trailingComments: js.Array[estreeLib.estreeMod.Comment] = null
   ): Program = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, sourceType = sourceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.updateDynamic("type")(type_Program)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

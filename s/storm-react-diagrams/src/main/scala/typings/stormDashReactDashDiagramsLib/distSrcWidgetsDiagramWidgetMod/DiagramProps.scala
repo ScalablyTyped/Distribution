@@ -62,8 +62,7 @@ object DiagramProps {
     maxNumberPointsPerLink: scala.Int | scala.Double = null,
     smartRouting: js.UndefOr[scala.Boolean] = js.undefined
   ): DiagramProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagramEngine")(diagramEngine)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine)
     if (actionStartedFiring != null) __obj.updateDynamic("actionStartedFiring")(actionStartedFiring)
     if (actionStillFiring != null) __obj.updateDynamic("actionStillFiring")(actionStillFiring)
     if (actionStoppedFiring != null) __obj.updateDynamic("actionStoppedFiring")(actionStoppedFiring)

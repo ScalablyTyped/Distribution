@@ -20,11 +20,8 @@ object InitializeOptions {
     keepValues: scala.Boolean,
     updateUnregisteredFields: scala.Boolean
   ): InitializeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keepDirty")(keepDirty)
-    __obj.updateDynamic("keepSubmitSucceeded")(keepSubmitSucceeded)
-    __obj.updateDynamic("keepValues")(keepValues)
-    __obj.updateDynamic("updateUnregisteredFields")(updateUnregisteredFields)
+    val __obj = js.Dynamic.literal(keepDirty = keepDirty, keepSubmitSucceeded = keepSubmitSucceeded, keepValues = keepValues, updateUnregisteredFields = updateUnregisteredFields)
+  
     __obj.asInstanceOf[InitializeOptions]
   }
 }

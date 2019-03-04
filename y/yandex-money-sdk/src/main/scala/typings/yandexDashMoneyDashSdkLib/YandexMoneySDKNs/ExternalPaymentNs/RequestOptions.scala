@@ -25,8 +25,7 @@ object RequestOptions {
     message: java.lang.String = null,
     to: java.lang.String = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern_id")(pattern_id)
+    val __obj = js.Dynamic.literal(pattern_id = pattern_id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (amount_due != null) __obj.updateDynamic("amount_due")(amount_due.asInstanceOf[js.Any])

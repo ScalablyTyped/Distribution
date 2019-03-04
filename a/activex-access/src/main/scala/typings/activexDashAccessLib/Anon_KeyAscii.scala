@@ -12,8 +12,8 @@ trait Anon_KeyAscii extends js.Object {
 object Anon_KeyAscii {
   @scala.inline
   def apply(KeyAscii: scala.Double): Anon_KeyAscii = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KeyAscii")(KeyAscii)
+    val __obj = js.Dynamic.literal(KeyAscii = KeyAscii)
+  
     __obj.asInstanceOf[Anon_KeyAscii]
   }
 }

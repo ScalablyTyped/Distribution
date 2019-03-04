@@ -24,9 +24,8 @@ object ILightGroup {
     `class`: RoomType = null,
     lights: js.Array[java.lang.String] = null
   ): ILightGroup = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (action != null) __obj.updateDynamic("action")(action)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (lights != null) __obj.updateDynamic("lights")(lights)

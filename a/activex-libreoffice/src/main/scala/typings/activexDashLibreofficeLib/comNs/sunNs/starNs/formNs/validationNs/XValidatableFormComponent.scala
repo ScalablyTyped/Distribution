@@ -81,18 +81,8 @@ object XValidatableFormComponent {
     removeFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
     setValidator: js.Function1[XValidator, scala.Unit]
   ): XValidatableFormComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentValue")(CurrentValue)
-    __obj.updateDynamic("Validator")(Validator)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFormComponentValidityListener")(addFormComponentValidityListener)
-    __obj.updateDynamic("getCurrentValue")(getCurrentValue)
-    __obj.updateDynamic("getValidator")(getValidator)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeFormComponentValidityListener")(removeFormComponentValidityListener)
-    __obj.updateDynamic("setValidator")(setValidator)
+    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, Validator = Validator, acquire = acquire, addFormComponentValidityListener = addFormComponentValidityListener, getCurrentValue = getCurrentValue, getValidator = getValidator, isValid = isValid, queryInterface = queryInterface, release = release, removeFormComponentValidityListener = removeFormComponentValidityListener, setValidator = setValidator)
+  
     __obj.asInstanceOf[XValidatableFormComponent]
   }
 }

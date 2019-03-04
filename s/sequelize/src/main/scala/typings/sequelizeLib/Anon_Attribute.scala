@@ -20,11 +20,8 @@ object Anon_Attribute {
     length: scala.Double,
     order: java.lang.String
   ): Anon_Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("collate")(collate)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(attribute = attribute, collate = collate, length = length, order = order)
+  
     __obj.asInstanceOf[Anon_Attribute]
   }
 }

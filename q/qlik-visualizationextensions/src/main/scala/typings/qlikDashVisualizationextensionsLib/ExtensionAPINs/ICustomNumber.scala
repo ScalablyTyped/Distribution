@@ -21,12 +21,8 @@ object ICustomNumber {
     ref: java.lang.String,
     `type`: java.lang.String
   ): ICustomNumber = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, label = label, max = max, min = min, ref = ref)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomNumber]
   }
 }

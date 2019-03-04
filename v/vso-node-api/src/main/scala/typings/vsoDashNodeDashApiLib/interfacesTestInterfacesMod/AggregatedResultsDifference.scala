@@ -22,12 +22,8 @@ object AggregatedResultsDifference {
     increaseInPassedTests: scala.Double,
     increaseInTotalTests: scala.Double
   ): AggregatedResultsDifference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("increaseInDuration")(increaseInDuration)
-    __obj.updateDynamic("increaseInFailures")(increaseInFailures)
-    __obj.updateDynamic("increaseInOtherTests")(increaseInOtherTests)
-    __obj.updateDynamic("increaseInPassedTests")(increaseInPassedTests)
-    __obj.updateDynamic("increaseInTotalTests")(increaseInTotalTests)
+    val __obj = js.Dynamic.literal(increaseInDuration = increaseInDuration, increaseInFailures = increaseInFailures, increaseInOtherTests = increaseInOtherTests, increaseInPassedTests = increaseInPassedTests, increaseInTotalTests = increaseInTotalTests)
+  
     __obj.asInstanceOf[AggregatedResultsDifference]
   }
 }

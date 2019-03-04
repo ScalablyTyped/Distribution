@@ -81,30 +81,8 @@ object XPrinter {
     startPage: js.Function0[XDevice],
     terminate: js.Function0[scala.Unit]
   ): XPrinter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BinarySetup")(BinarySetup)
-    __obj.updateDynamic("FormDescriptions")(FormDescriptions)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endPage")(endPage)
-    __obj.updateDynamic("getBinarySetup")(getBinarySetup)
-    __obj.updateDynamic("getFormDescriptions")(getFormDescriptions)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("selectForm")(selectForm)
-    __obj.updateDynamic("setBinarySetup")(setBinarySetup)
-    __obj.updateDynamic("setHorizontal")(setHorizontal)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startPage")(startPage)
-    __obj.updateDynamic("terminate")(terminate)
+    val __obj = js.Dynamic.literal(BinarySetup = BinarySetup, FormDescriptions = FormDescriptions, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, end = end, endPage = endPage, getBinarySetup = getBinarySetup, getFormDescriptions = getFormDescriptions, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, selectForm = selectForm, setBinarySetup = setBinarySetup, setHorizontal = setHorizontal, setPropertyValue = setPropertyValue, start = start, startPage = startPage, terminate = terminate)
+  
     __obj.asInstanceOf[XPrinter]
   }
 }

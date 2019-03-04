@@ -20,11 +20,8 @@ object Anon_GroupIndividual {
     reserved: scala.Boolean,
     universalLocal: scala.Boolean
   ): Anon_GroupIndividual = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupIndividual")(groupIndividual)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("reserved")(reserved)
-    __obj.updateDynamic("universalLocal")(universalLocal)
+    val __obj = js.Dynamic.literal(groupIndividual = groupIndividual, nonce = nonce, reserved = reserved, universalLocal = universalLocal)
+  
     __obj.asInstanceOf[Anon_GroupIndividual]
   }
 }

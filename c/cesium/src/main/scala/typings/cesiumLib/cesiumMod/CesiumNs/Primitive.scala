@@ -52,27 +52,8 @@ object Primitive {
     update: js.Function0[scala.Unit],
     vertexCacheOptimize: scala.Boolean
   ): Primitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowPicking")(allowPicking)
-    __obj.updateDynamic("appearance")(appearance)
-    __obj.updateDynamic("asynchronous")(asynchronous)
-    __obj.updateDynamic("compressVertices")(compressVertices)
-    __obj.updateDynamic("cull")(cull)
-    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    __obj.updateDynamic("depthFailAppearance")(depthFailAppearance)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("geometryInstances")(geometryInstances.asInstanceOf[js.Any])
-    __obj.updateDynamic("getGeometryInstanceAttributes")(getGeometryInstanceAttributes)
-    __obj.updateDynamic("interleave")(interleave)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("modelMatrix")(modelMatrix)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("readyPromise")(readyPromise)
-    __obj.updateDynamic("releaseGeometryInstances")(releaseGeometryInstances)
-    __obj.updateDynamic("shadows")(shadows)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("vertexCacheOptimize")(vertexCacheOptimize)
+    val __obj = js.Dynamic.literal(allowPicking = allowPicking, appearance = appearance, asynchronous = asynchronous, compressVertices = compressVertices, cull = cull, debugShowBoundingVolume = debugShowBoundingVolume, depthFailAppearance = depthFailAppearance, destroy = destroy, geometryInstances = geometryInstances.asInstanceOf[js.Any], getGeometryInstanceAttributes = getGeometryInstanceAttributes, interleave = interleave, isDestroyed = isDestroyed, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, releaseGeometryInstances = releaseGeometryInstances, shadows = shadows, show = show, update = update, vertexCacheOptimize = vertexCacheOptimize)
+  
     __obj.asInstanceOf[Primitive]
   }
 }

@@ -39,11 +39,8 @@ object ASPxClientWebDocumentViewerDocumentOperationResponse {
     message: java.lang.String,
     succeeded: scala.Boolean
   ): ASPxClientWebDocumentViewerDocumentOperationResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customData")(customData)
-    __obj.updateDynamic("documentId")(documentId)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(customData = customData, documentId = documentId, message = message, succeeded = succeeded)
+  
     __obj.asInstanceOf[ASPxClientWebDocumentViewerDocumentOperationResponse]
   }
 }

@@ -24,13 +24,8 @@ object Animation {
     resize: js.Function0[scala.Unit],
     viewModel: AnimationViewModel
   ): Animation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyThemeChanges")(applyThemeChanges)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("viewModel")(viewModel)
+    val __obj = js.Dynamic.literal(applyThemeChanges = applyThemeChanges, container = container, destroy = destroy, isDestroyed = isDestroyed, resize = resize, viewModel = viewModel)
+  
     __obj.asInstanceOf[Animation]
   }
 }

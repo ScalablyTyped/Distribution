@@ -65,16 +65,14 @@ object QueryNameDescriptorMap {
     ],
     push: PushPermissionDescriptor
   ): QueryNameDescriptorMap = {
-    val __obj = js.Dynamic.literal(`accessibility-events` = `accessibility-events`, `ambient-light-sensor` = `ambient-light-sensor`, `background-sync` = `background-sync`, `clipboard-read` = `clipboard-read`, `clipboard-write` = `clipboard-write`, `payment-handler` = `payment-handler`, `persistent-storage` = `persistent-storage`)
-    __obj.updateDynamic("accelerometer")(accelerometer)
-    __obj.updateDynamic("camera")(camera)
-    __obj.updateDynamic("geolocation")(geolocation)
-    __obj.updateDynamic("gyroscope")(gyroscope)
-    __obj.updateDynamic("magnetometer")(magnetometer)
-    __obj.updateDynamic("microphone")(microphone)
-    __obj.updateDynamic("midi")(midi)
-    __obj.updateDynamic("notifications")(notifications)
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(accelerometer = accelerometer, camera = camera, geolocation = geolocation, gyroscope = gyroscope, magnetometer = magnetometer, microphone = microphone, midi = midi, notifications = notifications, push = push)
+    __obj.updateDynamic("accessibility-events")(`accessibility-events`)
+    __obj.updateDynamic("ambient-light-sensor")(`ambient-light-sensor`)
+    __obj.updateDynamic("background-sync")(`background-sync`)
+    __obj.updateDynamic("clipboard-read")(`clipboard-read`)
+    __obj.updateDynamic("clipboard-write")(`clipboard-write`)
+    __obj.updateDynamic("payment-handler")(`payment-handler`)
+    __obj.updateDynamic("persistent-storage")(`persistent-storage`)
     __obj.asInstanceOf[QueryNameDescriptorMap]
   }
 }

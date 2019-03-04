@@ -46,11 +46,8 @@ object FetchResult {
     Rows: activexDashInteropLib.SafeArray[_],
     StartIndex: scala.Double
   ): FetchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FetchError")(FetchError)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("Rows")(Rows)
-    __obj.updateDynamic("StartIndex")(StartIndex)
+    val __obj = js.Dynamic.literal(FetchError = FetchError, Orientation = Orientation, Rows = Rows, StartIndex = StartIndex)
+  
     __obj.asInstanceOf[FetchResult]
   }
 }

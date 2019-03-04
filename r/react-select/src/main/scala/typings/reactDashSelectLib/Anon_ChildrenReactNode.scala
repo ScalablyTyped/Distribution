@@ -13,8 +13,8 @@ trait Anon_ChildrenReactNode extends js.Object {
 object Anon_ChildrenReactNode {
   @scala.inline
   def apply(children: reactLib.reactMod.ReactNs.ReactNode): Anon_ChildrenReactNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ChildrenReactNode]
   }
 }

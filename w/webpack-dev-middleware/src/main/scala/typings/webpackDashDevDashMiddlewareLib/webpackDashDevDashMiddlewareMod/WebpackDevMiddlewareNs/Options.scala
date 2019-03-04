@@ -36,8 +36,7 @@ object Options {
     watchOptions: webpackLib.webpackMod.webpackNs.OptionsNs.WatchOptions = null,
     writeToDisk: scala.Boolean | (js.Function1[/* filename */ java.lang.String, scala.Boolean]) = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("publicPath")(publicPath)
+    val __obj = js.Dynamic.literal(publicPath = publicPath)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

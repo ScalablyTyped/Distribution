@@ -14,10 +14,8 @@ trait LintError extends js.Object {
 object LintError {
   @scala.inline
   def apply(endPos: PositionInFile, message: java.lang.String, startPos: PositionInFile): LintError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endPos")(endPos)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("startPos")(startPos)
+    val __obj = js.Dynamic.literal(endPos = endPos, message = message, startPos = startPos)
+  
     __obj.asInstanceOf[LintError]
   }
 }

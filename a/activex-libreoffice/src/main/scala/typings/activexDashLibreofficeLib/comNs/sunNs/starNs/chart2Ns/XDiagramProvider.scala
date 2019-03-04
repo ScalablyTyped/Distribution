@@ -23,13 +23,8 @@ object XDiagramProvider {
     release: js.Function0[scala.Unit],
     setDiagram: js.Function1[XDiagram, scala.Unit]
   ): XDiagramProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Diagram")(Diagram)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDiagram")(getDiagram)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDiagram")(setDiagram)
+    val __obj = js.Dynamic.literal(Diagram = Diagram, acquire = acquire, getDiagram = getDiagram, queryInterface = queryInterface, release = release, setDiagram = setDiagram)
+  
     __obj.asInstanceOf[XDiagramProvider]
   }
 }

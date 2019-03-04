@@ -21,11 +21,8 @@ object PlainMechanism {
     name: saslDashPlainLib.saslDashPlainLibStrings.PLAIN,
     response: js.Function1[saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials, java.lang.String]
   ): PlainMechanism = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
-    __obj.updateDynamic("clientFirst")(clientFirst)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(challenge = challenge, clientFirst = clientFirst, name = name, response = response)
+  
     __obj.asInstanceOf[PlainMechanism]
   }
 }

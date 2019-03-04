@@ -19,8 +19,7 @@ object Polyline {
     hasZ: js.UndefOr[scala.Boolean] = js.undefined,
     spatialReference: SpatialReference = null
   ): Polyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paths")(paths)
+    val __obj = js.Dynamic.literal(paths = paths)
     if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
     if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

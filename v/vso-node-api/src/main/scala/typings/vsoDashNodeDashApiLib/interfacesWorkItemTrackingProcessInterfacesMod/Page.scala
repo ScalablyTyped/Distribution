@@ -67,18 +67,8 @@ object Page {
     sections: js.Array[Section],
     visible: scala.Boolean
   ): Page = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contribution")(contribution)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inherited")(inherited)
-    __obj.updateDynamic("isContribution")(isContribution)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("locked")(locked)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("overridden")(overridden)
-    __obj.updateDynamic("pageType")(pageType)
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(contribution = contribution, id = id, inherited = inherited, isContribution = isContribution, label = label, locked = locked, order = order, overridden = overridden, pageType = pageType, sections = sections, visible = visible)
+  
     __obj.asInstanceOf[Page]
   }
 }

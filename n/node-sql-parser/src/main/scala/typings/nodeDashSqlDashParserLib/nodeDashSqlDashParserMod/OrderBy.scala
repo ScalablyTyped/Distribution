@@ -16,8 +16,8 @@ object OrderBy {
     expr: js.Any,
     `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.ASC | nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.DESC
   ): OrderBy = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("expr")(expr)
+    val __obj = js.Dynamic.literal(expr = expr)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderBy]
   }
 }

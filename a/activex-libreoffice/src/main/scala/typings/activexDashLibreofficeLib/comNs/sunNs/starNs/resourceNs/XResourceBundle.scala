@@ -137,21 +137,8 @@ object XResourceBundle {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XResourceBundle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getDirectElement")(getDirectElement)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, Locale = Locale, Parent = Parent, acquire = acquire, getByName = getByName, getDirectElement = getDirectElement, getElementNames = getElementNames, getElementType = getElementType, getLocale = getLocale, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XResourceBundle]
   }
 }

@@ -44,26 +44,8 @@ object HierarchyElement {
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     setToDefaultAsProperty: js.Function0[scala.Unit]
   ): HierarchyElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AsProperty")(AsProperty)
-    __obj.updateDynamic("DefaultAsProperty")(DefaultAsProperty)
-    __obj.updateDynamic("HierarchicalName")(HierarchicalName)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("StateAsProperty")(StateAsProperty)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("composeHierarchicalName")(composeHierarchicalName)
-    __obj.updateDynamic("getAsProperty")(getAsProperty)
-    __obj.updateDynamic("getDefaultAsProperty")(getDefaultAsProperty)
-    __obj.updateDynamic("getHierarchicalName")(getHierarchicalName)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getStateAsProperty")(getStateAsProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setToDefaultAsProperty")(setToDefaultAsProperty)
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, DefaultAsProperty = DefaultAsProperty, HierarchicalName = HierarchicalName, Name = Name, Parent = Parent, StateAsProperty = StateAsProperty, acquire = acquire, composeHierarchicalName = composeHierarchicalName, getAsProperty = getAsProperty, getDefaultAsProperty = getDefaultAsProperty, getHierarchicalName = getHierarchicalName, getName = getName, getParent = getParent, getStateAsProperty = getStateAsProperty, queryInterface = queryInterface, release = release, setName = setName, setParent = setParent, setToDefaultAsProperty = setToDefaultAsProperty)
+  
     __obj.asInstanceOf[HierarchyElement]
   }
 }

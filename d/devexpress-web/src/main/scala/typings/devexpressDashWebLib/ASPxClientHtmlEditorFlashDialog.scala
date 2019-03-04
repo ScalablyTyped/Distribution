@@ -56,28 +56,8 @@ object ASPxClientHtmlEditorFlashDialog {
     GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
     GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit]
   ): ASPxClientHtmlEditorFlashDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAllowFullscreenCheckBox")(GetAllowFullscreenCheckBox)
-    __obj.updateDynamic("GetAutoPlayCheckBox")(GetAutoPlayCheckBox)
-    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
-    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
-    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
-    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
-    __obj.updateDynamic("GetEnableFlashMenuCheckBox")(GetEnableFlashMenuCheckBox)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetHeightSpinEdit")(GetHeightSpinEdit)
-    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
-    __obj.updateDynamic("GetLoopCheckBox")(GetLoopCheckBox)
-    __obj.updateDynamic("GetMediaFileSelector")(GetMediaFileSelector)
-    __obj.updateDynamic("GetMoreOptionsCheckBox")(GetMoreOptionsCheckBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetPositionComboBox")(GetPositionComboBox)
-    __obj.updateDynamic("GetQualityComboBox")(GetQualityComboBox)
-    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
-    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
-    __obj.updateDynamic("GetWidthSpinEdit")(GetWidthSpinEdit)
+    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = GetAllowFullscreenCheckBox, GetAutoPlayCheckBox = GetAutoPlayCheckBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCssClassNameComboBox = GetCssClassNameComboBox, GetEnableFlashMenuCheckBox = GetEnableFlashMenuCheckBox, GetFormLayout = GetFormLayout, GetHeightSpinEdit = GetHeightSpinEdit, GetLeftMarginTextBox = GetLeftMarginTextBox, GetLoopCheckBox = GetLoopCheckBox, GetMediaFileSelector = GetMediaFileSelector, GetMoreOptionsCheckBox = GetMoreOptionsCheckBox, GetOkButton = GetOkButton, GetPositionComboBox = GetPositionComboBox, GetQualityComboBox = GetQualityComboBox, GetRightMarginTextBox = GetRightMarginTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetWidthSpinEdit = GetWidthSpinEdit)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorFlashDialog]
   }
 }

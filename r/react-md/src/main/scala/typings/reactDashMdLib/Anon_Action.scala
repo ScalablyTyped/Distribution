@@ -16,8 +16,7 @@ object Anon_Action {
     text: reactLib.reactMod.ReactNs.ReactNode,
     action: reactLib.reactMod.ReactNs.ReactNode | Anon_Label = null
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Action]
   }

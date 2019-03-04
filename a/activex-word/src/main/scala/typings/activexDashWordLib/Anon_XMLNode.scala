@@ -12,8 +12,8 @@ trait Anon_XMLNode extends js.Object {
 object Anon_XMLNode {
   @scala.inline
   def apply(XMLNode: activexDashWordLib.WordNs.XMLNode): Anon_XMLNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("XMLNode")(XMLNode)
+    val __obj = js.Dynamic.literal(XMLNode = XMLNode)
+  
     __obj.asInstanceOf[Anon_XMLNode]
   }
 }

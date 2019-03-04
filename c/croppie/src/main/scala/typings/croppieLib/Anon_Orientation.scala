@@ -22,8 +22,7 @@ object Anon_Orientation {
     useCanvas: js.UndefOr[scala.Boolean] = js.undefined,
     zoom: scala.Int | scala.Double = null
   ): Anon_Orientation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (points != null) __obj.updateDynamic("points")(points)
     if (!js.isUndefined(useCanvas)) __obj.updateDynamic("useCanvas")(useCanvas)

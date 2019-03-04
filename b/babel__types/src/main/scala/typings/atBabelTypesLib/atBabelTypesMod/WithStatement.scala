@@ -28,8 +28,9 @@ object WithStatement {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): WithStatement = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

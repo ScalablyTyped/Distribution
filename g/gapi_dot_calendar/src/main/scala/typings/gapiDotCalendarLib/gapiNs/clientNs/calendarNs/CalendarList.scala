@@ -34,10 +34,7 @@ object CalendarList {
     nextPageToken: java.lang.String = null,
     nextSyncToken: java.lang.String = null
   ): CalendarList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(etag = etag, items = items, kind = kind)
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
     if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
     __obj.asInstanceOf[CalendarList]

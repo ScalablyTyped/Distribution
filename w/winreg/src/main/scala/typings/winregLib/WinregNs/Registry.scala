@@ -184,24 +184,8 @@ object Registry {
       Registry
     ]
   ): Registry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arch")(arch)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("erase")(erase)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("hive")(hive)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyExists")(keyExists)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("valueExists")(valueExists)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(arch = arch, clear = clear, create = create, destroy = destroy, erase = erase, get = get, hive = hive, host = host, key = key, keyExists = keyExists, keys = keys, parent = parent, path = path, remove = remove, set = set, valueExists = valueExists, values = values)
+  
     __obj.asInstanceOf[Registry]
   }
 }

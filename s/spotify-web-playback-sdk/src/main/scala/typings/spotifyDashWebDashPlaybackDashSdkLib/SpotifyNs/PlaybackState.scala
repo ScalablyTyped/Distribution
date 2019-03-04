@@ -35,16 +35,8 @@ object PlaybackState {
     shuffle: scala.Boolean,
     track_window: PlaybackTrackWindow
   ): PlaybackState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("disallows")(disallows)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("repeat_mode")(repeat_mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("restrictions")(restrictions)
-    __obj.updateDynamic("shuffle")(shuffle)
-    __obj.updateDynamic("track_window")(track_window)
+    val __obj = js.Dynamic.literal(context = context, disallows = disallows, duration = duration, paused = paused, position = position, repeat_mode = repeat_mode.asInstanceOf[js.Any], restrictions = restrictions, shuffle = shuffle, track_window = track_window)
+  
     __obj.asInstanceOf[PlaybackState]
   }
 }

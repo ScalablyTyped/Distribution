@@ -20,9 +20,8 @@ object BindChain {
       scala.Unit
     ]
   ): BindChain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("toMany")(toMany)
+    val __obj = js.Dynamic.literal(to = to, toMany = toMany)
+  
     __obj.asInstanceOf[BindChain]
   }
 }

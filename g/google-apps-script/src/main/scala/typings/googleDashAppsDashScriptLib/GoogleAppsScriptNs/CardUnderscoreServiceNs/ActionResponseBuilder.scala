@@ -22,12 +22,8 @@ object ActionResponseBuilder {
     setOpenLink: js.Function1[OpenLink, ActionResponseBuilder],
     setStateChanged: js.Function1[scala.Boolean, ActionResponseBuilder]
   ): ActionResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setNavigation")(setNavigation)
-    __obj.updateDynamic("setNotification")(setNotification)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
-    __obj.updateDynamic("setStateChanged")(setStateChanged)
+    val __obj = js.Dynamic.literal(build = build, setNavigation = setNavigation, setNotification = setNotification, setOpenLink = setOpenLink, setStateChanged = setStateChanged)
+  
     __obj.asInstanceOf[ActionResponseBuilder]
   }
 }

@@ -38,17 +38,8 @@ object ContinuousDeploymentDefinition {
     website: java.lang.String,
     webspace: java.lang.String
   ): ContinuousDeploymentDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectedService")(connectedService)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("gitBranch")(gitBranch)
-    __obj.updateDynamic("hostedServiceName")(hostedServiceName)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("repositoryId")(repositoryId)
-    __obj.updateDynamic("storageAccountName")(storageAccountName)
-    __obj.updateDynamic("subscriptionId")(subscriptionId)
-    __obj.updateDynamic("website")(website)
-    __obj.updateDynamic("webspace")(webspace)
+    val __obj = js.Dynamic.literal(connectedService = connectedService, definition = definition, gitBranch = gitBranch, hostedServiceName = hostedServiceName, project = project, repositoryId = repositoryId, storageAccountName = storageAccountName, subscriptionId = subscriptionId, website = website, webspace = webspace)
+  
     __obj.asInstanceOf[ContinuousDeploymentDefinition]
   }
 }

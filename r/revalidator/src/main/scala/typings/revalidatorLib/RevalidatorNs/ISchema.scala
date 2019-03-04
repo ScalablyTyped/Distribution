@@ -78,7 +78,8 @@ object ISchema {
     required: js.UndefOr[scala.Boolean] = js.undefined,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   ): ISchema[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
     if (conform != null) __obj.updateDynamic("conform")(conform)
     if (default != null) __obj.updateDynamic("default")(default)

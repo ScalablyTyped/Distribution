@@ -12,8 +12,8 @@ trait PopupViewModelTriggerActionEvent extends js.Object {
 object PopupViewModelTriggerActionEvent {
   @scala.inline
   def apply(action: ActionButton | ActionToggle): PopupViewModelTriggerActionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PopupViewModelTriggerActionEvent]
   }
 }

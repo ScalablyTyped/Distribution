@@ -19,7 +19,8 @@ object Anon_Key {
     StringDictionary: /** Arguments, see original condition docs in chrome.webViewRequest */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any | js.Array[_]] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

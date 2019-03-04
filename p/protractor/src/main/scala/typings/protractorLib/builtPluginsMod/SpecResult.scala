@@ -13,9 +13,8 @@ trait SpecResult extends js.Object {
 object SpecResult {
   @scala.inline
   def apply(assertions: js.Array[AssertionResult], description: java.lang.String): SpecResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assertions")(assertions)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(assertions = assertions, description = description)
+  
     __obj.asInstanceOf[SpecResult]
   }
 }

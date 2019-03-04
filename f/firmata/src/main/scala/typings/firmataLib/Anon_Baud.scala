@@ -20,9 +20,7 @@ object Anon_Baud {
     rxPin: scala.Int | scala.Double = null,
     txPin: scala.Int | scala.Double = null
   ): Anon_Baud = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baud")(baud)
-    __obj.updateDynamic("portId")(portId)
+    val __obj = js.Dynamic.literal(baud = baud, portId = portId)
     if (rxPin != null) __obj.updateDynamic("rxPin")(rxPin.asInstanceOf[js.Any])
     if (txPin != null) __obj.updateDynamic("txPin")(txPin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Baud]

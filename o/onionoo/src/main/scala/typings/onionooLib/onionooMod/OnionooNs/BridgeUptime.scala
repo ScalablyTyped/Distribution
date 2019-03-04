@@ -35,8 +35,7 @@ object BridgeUptime {
       ]
     ] = null
   ): BridgeUptime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
     if (uptime != null) __obj.updateDynamic("uptime")(uptime)
     __obj.asInstanceOf[BridgeUptime]
   }

@@ -18,10 +18,8 @@ object RangeFilterOption {
     field: java.lang.String,
     start: java.lang.String | scala.Double | stdLib.Date
   ): RangeFilterOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], field = field, start = start.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RangeFilterOption]
   }
 }

@@ -14,9 +14,7 @@ trait FindPlaceFromQueryRequest extends js.Object {
 object FindPlaceFromQueryRequest {
   @scala.inline
   def apply(fields: js.Array[java.lang.String], query: java.lang.String, locationBias: LocationBias = null): FindPlaceFromQueryRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(fields = fields, query = query)
     if (locationBias != null) __obj.updateDynamic("locationBias")(locationBias.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPlaceFromQueryRequest]
   }

@@ -26,14 +26,8 @@ object ISurveyData {
     setComment: js.Function2[java.lang.String, java.lang.String, js.Any],
     setValue: js.Function2[java.lang.String, js.Any, js.Any]
   ): ISurveyData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllValues")(getAllValues)
-    __obj.updateDynamic("getComment")(getComment)
-    __obj.updateDynamic("getFilteredProperties")(getFilteredProperties)
-    __obj.updateDynamic("getFilteredValues")(getFilteredValues)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("setComment")(setComment)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(getAllValues = getAllValues, getComment = getComment, getFilteredProperties = getFilteredProperties, getFilteredValues = getFilteredValues, getValue = getValue, setComment = setComment, setValue = setValue)
+  
     __obj.asInstanceOf[ISurveyData]
   }
 }

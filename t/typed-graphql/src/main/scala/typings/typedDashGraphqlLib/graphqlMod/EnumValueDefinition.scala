@@ -14,9 +14,7 @@ trait EnumValueDefinition extends Node {
 object EnumValueDefinition {
   @scala.inline
   def apply(kind: java.lang.String, name: Name, loc: Location = null): EnumValueDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[EnumValueDefinition]
   }

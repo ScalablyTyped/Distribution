@@ -40,21 +40,8 @@ object InlineDrawing {
     setAltTitle: js.Function1[java.lang.String, InlineDrawing],
     setAttributes: js.Function1[js.Object, InlineDrawing]
   ): InlineDrawing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getAltDescription")(getAltDescription)
-    __obj.updateDynamic("getAltTitle")(getAltTitle)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getNextSibling")(getNextSibling)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("removeFromParent")(removeFromParent)
-    __obj.updateDynamic("setAltDescription")(setAltDescription)
-    __obj.updateDynamic("setAltTitle")(setAltTitle)
-    __obj.updateDynamic("setAttributes")(setAttributes)
+    val __obj = js.Dynamic.literal(copy = copy, getAltDescription = getAltDescription, getAltTitle = getAltTitle, getAttributes = getAttributes, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAltDescription = setAltDescription, setAltTitle = setAltTitle, setAttributes = setAttributes)
+  
     __obj.asInstanceOf[InlineDrawing]
   }
 }

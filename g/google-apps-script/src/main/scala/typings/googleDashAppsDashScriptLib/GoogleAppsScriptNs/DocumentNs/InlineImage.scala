@@ -56,29 +56,8 @@ object InlineImage {
     setLinkUrl: js.Function1[java.lang.String, InlineImage],
     setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, InlineImage]
   ): InlineImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getAltDescription")(getAltDescription)
-    __obj.updateDynamic("getAltTitle")(getAltTitle)
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getLinkUrl")(getLinkUrl)
-    __obj.updateDynamic("getNextSibling")(getNextSibling)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("removeFromParent")(removeFromParent)
-    __obj.updateDynamic("setAltDescription")(setAltDescription)
-    __obj.updateDynamic("setAltTitle")(setAltTitle)
-    __obj.updateDynamic("setAttributes")(setAttributes)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setLinkUrl")(setLinkUrl)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(copy = copy, getAltDescription = getAltDescription, getAltTitle = getAltTitle, getAs = getAs, getAttributes = getAttributes, getBlob = getBlob, getHeight = getHeight, getLinkUrl = getLinkUrl, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, getWidth = getWidth, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAltDescription = setAltDescription, setAltTitle = setAltTitle, setAttributes = setAttributes, setHeight = setHeight, setLinkUrl = setLinkUrl, setWidth = setWidth)
+  
     __obj.asInstanceOf[InlineImage]
   }
 }

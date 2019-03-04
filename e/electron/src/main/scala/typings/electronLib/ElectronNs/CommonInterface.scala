@@ -22,12 +22,8 @@ object CommonInterface {
     screen: Screen,
     shell: Shell
   ): CommonInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clipboard")(clipboard)
-    __obj.updateDynamic("crashReporter")(crashReporter)
-    __obj.updateDynamic("nativeImage")(nativeImage)
-    __obj.updateDynamic("screen")(screen)
-    __obj.updateDynamic("shell")(shell)
+    val __obj = js.Dynamic.literal(clipboard = clipboard, crashReporter = crashReporter, nativeImage = nativeImage, screen = screen, shell = shell)
+  
     __obj.asInstanceOf[CommonInterface]
   }
 }

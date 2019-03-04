@@ -183,39 +183,8 @@ object Range {
     toScreenRange: js.Function1[IEditSession, Range],
     toString: js.Function0[scala.Unit]
   ): Range = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clipRows")(clipRows)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("collapseRows")(collapseRows)
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("compareEnd")(compareEnd)
-    __obj.updateDynamic("compareInside")(compareInside)
-    __obj.updateDynamic("comparePoint")(comparePoint)
-    __obj.updateDynamic("compareRange")(compareRange)
-    __obj.updateDynamic("compareStart")(compareStart)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("containsRange")(containsRange)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endColumn")(endColumn)
-    __obj.updateDynamic("endRow")(endRow)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("fromPoints")(fromPoints)
-    __obj.updateDynamic("inside")(inside)
-    __obj.updateDynamic("insideEnd")(insideEnd)
-    __obj.updateDynamic("insideStart")(insideStart)
-    __obj.updateDynamic("intersects")(intersects)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isEnd")(isEnd)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("isMultiLine")(isMultiLine)
-    __obj.updateDynamic("isStart")(isStart)
-    __obj.updateDynamic("setEnd")(setEnd)
-    __obj.updateDynamic("setStart")(setStart)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startColumn")(startColumn)
-    __obj.updateDynamic("startRow")(startRow)
-    __obj.updateDynamic("toScreenRange")(toScreenRange)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(clipRows = clipRows, clone = clone, collapseRows = collapseRows, compare = compare, compareEnd = compareEnd, compareInside = compareInside, comparePoint = comparePoint, compareRange = compareRange, compareStart = compareStart, contains = contains, containsRange = containsRange, end = end, endColumn = endColumn, endRow = endRow, extend = extend, fromPoints = fromPoints, inside = inside, insideEnd = insideEnd, insideStart = insideStart, intersects = intersects, isEmpty = isEmpty, isEnd = isEnd, isEqual = isEqual, isMultiLine = isMultiLine, isStart = isStart, setEnd = setEnd, setStart = setStart, start = start, startColumn = startColumn, startRow = startRow, toScreenRange = toScreenRange, toString = toString)
+  
     __obj.asInstanceOf[Range]
   }
 }

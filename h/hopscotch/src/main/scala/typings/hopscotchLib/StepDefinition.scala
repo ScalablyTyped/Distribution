@@ -58,9 +58,7 @@ object StepDefinition {
     yOffset: scala.Double | hopscotchLib.hopscotchLibStrings.center = null,
     zIndex: scala.Int | scala.Double = null
   ): StepDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(placement = placement, target = target.asInstanceOf[js.Any])
     if (arrowOffset != null) __obj.updateDynamic("arrowOffset")(arrowOffset.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content)
     if (ctaLabel != null) __obj.updateDynamic("ctaLabel")(ctaLabel)

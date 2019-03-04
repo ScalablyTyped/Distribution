@@ -12,8 +12,8 @@ trait Anon_ServerApiKey extends js.Object {
 object Anon_ServerApiKey {
   @scala.inline
   def apply(serverApiKey: java.lang.String): Anon_ServerApiKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serverApiKey")(serverApiKey)
+    val __obj = js.Dynamic.literal(serverApiKey = serverApiKey)
+  
     __obj.asInstanceOf[Anon_ServerApiKey]
   }
 }

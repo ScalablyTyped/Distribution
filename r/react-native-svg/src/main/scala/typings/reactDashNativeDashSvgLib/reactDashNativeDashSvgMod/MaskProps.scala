@@ -113,8 +113,7 @@ object MaskProps {
     x: reactDashNativeDashSvgLib.NumberProp = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): MaskProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])

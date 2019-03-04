@@ -22,12 +22,8 @@ object BanReason {
     SPAMMING_TROLLING: scala.Double,
     VERBAL_ABUSE: scala.Double
   ): BanReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("INAPPROPRIATE_GENRE")(INAPPROPRIATE_GENRE)
-    __obj.updateDynamic("NEGATIVE_ATTITUDE")(NEGATIVE_ATTITUDE)
-    __obj.updateDynamic("OFFENSIVE_MEDIA")(OFFENSIVE_MEDIA)
-    __obj.updateDynamic("SPAMMING_TROLLING")(SPAMMING_TROLLING)
-    __obj.updateDynamic("VERBAL_ABUSE")(VERBAL_ABUSE)
+    val __obj = js.Dynamic.literal(INAPPROPRIATE_GENRE = INAPPROPRIATE_GENRE, NEGATIVE_ATTITUDE = NEGATIVE_ATTITUDE, OFFENSIVE_MEDIA = OFFENSIVE_MEDIA, SPAMMING_TROLLING = SPAMMING_TROLLING, VERBAL_ABUSE = VERBAL_ABUSE)
+  
     __obj.asInstanceOf[BanReason]
   }
 }

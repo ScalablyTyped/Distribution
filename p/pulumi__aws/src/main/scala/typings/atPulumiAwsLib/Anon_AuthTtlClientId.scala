@@ -20,8 +20,7 @@ object Anon_AuthTtlClientId {
     clientId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     iatTtl: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_AuthTtlClientId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
     if (authTtl != null) __obj.updateDynamic("authTtl")(authTtl.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (iatTtl != null) __obj.updateDynamic("iatTtl")(iatTtl.asInstanceOf[js.Any])

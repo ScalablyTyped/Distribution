@@ -13,9 +13,8 @@ trait PositionedColorInput extends js.Object {
 object PositionedColorInput {
   @scala.inline
   def apply(color: tinycolor2Lib.tinycolor2Mod.tinycolorNs.ColorInput, pos: scala.Double): PositionedColorInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(color = color, pos = pos)
+  
     __obj.asInstanceOf[PositionedColorInput]
   }
 }

@@ -29,8 +29,8 @@ object VariableDeclarator {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): VariableDeclarator = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(definite)) __obj.updateDynamic("definite")(definite)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (init != null) __obj.updateDynamic("init")(init)

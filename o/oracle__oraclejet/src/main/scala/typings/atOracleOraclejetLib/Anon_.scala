@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var changeMonth: atOracleOraclejetLib.atOracleOraclejetLibStrings.select | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
   var changeYear: atOracleOraclejetLib.atOracleOraclejetLibStrings.select | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
   var currentMonthPos: scala.Double
@@ -19,7 +19,7 @@ trait `Anon_` extends js.Object {
   var yearRange: java.lang.String
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     changeMonth: atOracleOraclejetLib.atOracleOraclejetLibStrings.select | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
@@ -33,20 +33,10 @@ object `Anon_` {
     stepMonths: atOracleOraclejetLib.atOracleOraclejetLibStrings.numberOfMonths | scala.Double,
     weekDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.number | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
     yearRange: java.lang.String
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeMonth")(changeMonth.asInstanceOf[js.Any])
-    __obj.updateDynamic("changeYear")(changeYear.asInstanceOf[js.Any])
-    __obj.updateDynamic("currentMonthPos")(currentMonthPos)
-    __obj.updateDynamic("daysOutsideMonth")(daysOutsideMonth.asInstanceOf[js.Any])
-    __obj.updateDynamic("footerLayout")(footerLayout.asInstanceOf[js.Any])
-    __obj.updateDynamic("numberOfMonths")(numberOfMonths)
-    __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    __obj.updateDynamic("stepBigMonths")(stepBigMonths)
-    __obj.updateDynamic("stepMonths")(stepMonths.asInstanceOf[js.Any])
-    __obj.updateDynamic("weekDisplay")(weekDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("yearRange")(yearRange)
-    __obj.asInstanceOf[`Anon_`]
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal(changeMonth = changeMonth.asInstanceOf[js.Any], changeYear = changeYear.asInstanceOf[js.Any], currentMonthPos = currentMonthPos, daysOutsideMonth = daysOutsideMonth.asInstanceOf[js.Any], footerLayout = footerLayout.asInstanceOf[js.Any], numberOfMonths = numberOfMonths, showOn = showOn.asInstanceOf[js.Any], stepBigMonths = stepBigMonths, stepMonths = stepMonths.asInstanceOf[js.Any], weekDisplay = weekDisplay.asInstanceOf[js.Any], yearRange = yearRange)
+  
+    __obj.asInstanceOf[Anon_]
   }
 }
 

@@ -30,10 +30,7 @@ object ConfigurationOptions {
     value: java.lang.String = null,
     version: js.UndefOr[scala.Boolean] = js.undefined
   ): ConfigurationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mainColor")(mainColor.asInstanceOf[js.Any])
-    __obj.updateDynamic("mri")(mri)
-    __obj.updateDynamic("subColor")(subColor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mainColor = mainColor.asInstanceOf[js.Any], mri = mri, subColor = subColor.asInstanceOf[js.Any])
     if (!js.isUndefined(help)) __obj.updateDynamic("help")(help)
     if (minimist != null) __obj.updateDynamic("minimist")(minimist)
     if (name != null) __obj.updateDynamic("name")(name)

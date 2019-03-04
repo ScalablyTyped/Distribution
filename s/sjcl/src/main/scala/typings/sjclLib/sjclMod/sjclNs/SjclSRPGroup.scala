@@ -13,9 +13,8 @@ trait SjclSRPGroup extends js.Object {
 object SjclSRPGroup {
   @scala.inline
   def apply(N: BigNumber, g: BigNumber): SjclSRPGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("N")(N)
-    __obj.updateDynamic("g")(g)
+    val __obj = js.Dynamic.literal(N = N, g = g)
+  
     __obj.asInstanceOf[SjclSRPGroup]
   }
 }

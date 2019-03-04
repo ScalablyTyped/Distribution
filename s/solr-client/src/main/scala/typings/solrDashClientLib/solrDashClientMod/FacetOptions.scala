@@ -34,9 +34,7 @@ object FacetOptions {
     query: java.lang.String = null,
     sort: java.lang.String = null
   ): FacetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(on = on, prefix = prefix)
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)

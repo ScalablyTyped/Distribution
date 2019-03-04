@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PartialRight extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: `__` = js.native
+  var placeholder_Original: __ = js.native
   // catch-all
   def apply(func: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   // arity 0
@@ -19,33 +19,33 @@ trait PartialRight extends js.Object {
   // arity 2
   def apply[T1, T2, R](func: Function2[T1, T2, R]): Function2[T1, T2, R] = js.native
   def apply[T1, T2, R](func: Function2[T1, T2, R], arg1: T1, arg2: T2): Function0[R] = js.native
-  def apply[T1, T2, R](func: Function2[T1, T2, R], arg1: T1, plc2: `__`): Function1[T2, R] = js.native
+  def apply[T1, T2, R](func: Function2[T1, T2, R], arg1: T1, plc2: __): Function1[T2, R] = js.native
   def apply[T1, T2, R](func: Function2[T1, T2, R], arg2: T2): Function1[T1, R] = js.native
   // arity 3
   def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R]): Function3[T1, T2, T3, R] = js.native
   def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, arg2: T2, arg3: T3): Function0[R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, arg2: T2, plc3: `__`): Function1[T3, R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: `__`, arg3: T3): Function1[T2, R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: `__`, plc3: `__`): Function2[T2, T3, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, arg2: T2, plc3: __): Function1[T3, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: __, arg3: T3): Function1[T2, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: __, plc3: __): Function2[T2, T3, R] = js.native
   def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: T2, arg3: T3): Function1[T1, R] = js.native
-  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: T2, plc3: `__`): Function2[T1, T3, R] = js.native
+  def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: T2, plc3: __): Function2[T1, T3, R] = js.native
   def apply[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg3: T3): Function2[T1, T2, R] = js.native
   // arity 4
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R]): Function4[T1, T2, T3, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, arg3: T3, arg4: T4): Function0[R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, arg3: T3, plc4: `__`): Function1[T4, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: `__`, arg4: T4): Function1[T3, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: `__`, plc4: `__`): Function2[T3, T4, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, arg3: T3, arg4: T4): Function1[T2, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, arg3: T3, plc4: `__`): Function2[T2, T4, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, plc3: `__`, arg4: T4): Function2[T2, T3, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, plc3: `__`, plc4: `__`): Function3[T2, T3, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, arg3: T3, plc4: __): Function1[T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: __, arg4: T4): Function1[T3, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: __, plc4: __): Function2[T3, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, arg3: T3, arg4: T4): Function1[T2, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, arg3: T3, plc4: __): Function2[T2, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, plc3: __, arg4: T4): Function2[T2, T3, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, plc3: __, plc4: __): Function3[T2, T3, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, arg3: T3, arg4: T4): Function1[T1, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, arg3: T3, plc4: `__`): Function2[T1, T4, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: `__`, arg4: T4): Function2[T1, T3, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: `__`, plc4: `__`): Function3[T1, T3, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, arg3: T3, plc4: __): Function2[T1, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: __, arg4: T4): Function2[T1, T3, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: __, plc4: __): Function3[T1, T3, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg3: T3, arg4: T4): Function2[T1, T2, R] = js.native
-  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg3: T3, plc4: `__`): Function3[T1, T2, T4, R] = js.native
+  def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg3: T3, plc4: __): Function3[T1, T2, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg4: T4): Function3[T1, T2, T3, R] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.

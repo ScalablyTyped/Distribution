@@ -44,10 +44,7 @@ object BgpPeerArgs {
     bgpAuthKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     customerAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): BgpPeerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
-    __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
-    __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addressFamily = addressFamily.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
     if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])

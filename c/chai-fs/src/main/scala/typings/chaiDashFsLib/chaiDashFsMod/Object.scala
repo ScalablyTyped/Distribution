@@ -12,8 +12,8 @@ trait Object extends js.Object {
 object Object {
   @scala.inline
   def apply(should: chaiDashFsLib.chaiDashFsMod.Global.ChaiNs.Assertion): Object = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("should")(should)
+    val __obj = js.Dynamic.literal(should = should)
+  
     __obj.asInstanceOf[Object]
   }
 }

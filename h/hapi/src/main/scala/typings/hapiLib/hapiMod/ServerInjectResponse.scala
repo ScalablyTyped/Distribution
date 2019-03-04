@@ -31,15 +31,7 @@ object ServerInjectResponse {
     trailers: org.scalablytyped.runtime.StringDictionary[js.Any],
     result: js.Object = null
   ): ServerInjectResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawPayload")(rawPayload)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("trailers")(trailers)
+    val __obj = js.Dynamic.literal(headers = headers, payload = payload, raw = raw, rawPayload = rawPayload, request = request, statusCode = statusCode, statusMessage = statusMessage, trailers = trailers)
     if (result != null) __obj.updateDynamic("result")(result)
     __obj.asInstanceOf[ServerInjectResponse]
   }

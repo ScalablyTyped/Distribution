@@ -15,9 +15,8 @@ trait RangeOptions extends js.Object {
 object RangeOptions {
   @scala.inline
   def apply(high: js.Any, low: js.Any): RangeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
+    val __obj = js.Dynamic.literal(high = high, low = low)
+  
     __obj.asInstanceOf[RangeOptions]
   }
 }

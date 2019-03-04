@@ -15,9 +15,8 @@ trait Match extends js.Object {
 object Match {
   @scala.inline
   def apply(certificate: stdLib.ArrayBuffer, keyAlgorithm: stdLib.KeyAlgorithm): Match = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificate")(certificate)
-    __obj.updateDynamic("keyAlgorithm")(keyAlgorithm)
+    val __obj = js.Dynamic.literal(certificate = certificate, keyAlgorithm = keyAlgorithm)
+  
     __obj.asInstanceOf[Match]
   }
 }

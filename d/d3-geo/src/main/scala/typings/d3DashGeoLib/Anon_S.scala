@@ -14,8 +14,8 @@ object Anon_S {
   def apply[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */](
     stream: js.Function1[d3DashGeoLib.d3DashGeoMod.GeoStream, T with d3DashGeoLib.d3DashGeoMod.GeoStream]
   ): Anon_S[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(stream = stream)
+  
     __obj.asInstanceOf[Anon_S[T]]
   }
 }

@@ -13,9 +13,9 @@ trait LodashTransform2x1[T, TResult] extends js.Object {
     accumulator: lodashLib.lodashMod.underscoreNs.Dictionary[TResult],
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[TResult] = js.native
-  def apply(accumulator: lodashLib.lodashMod.underscoreNs.`__`, `object`: js.Array[T]): LodashTransform2x5[TResult] = js.native
+  def apply(accumulator: lodashLib.lodashMod.underscoreNs.__, `object`: js.Array[T]): LodashTransform2x5[TResult] = js.native
   def apply(
-    accumulator: lodashLib.lodashMod.underscoreNs.`__`,
+    accumulator: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): LodashTransform3x5[TResult] = js.native
 }

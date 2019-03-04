@@ -22,10 +22,7 @@ object OktaVueOptions {
     response_type: java.lang.String = null,
     scope: java.lang.String = null
   ): OktaVueOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("issuer")(issuer)
-    __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(client_id = client_id, issuer = issuer, redirect_uri = redirect_uri)
     if (response_type != null) __obj.updateDynamic("response_type")(response_type)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[OktaVueOptions]

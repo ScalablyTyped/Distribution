@@ -14,10 +14,8 @@ trait WIFReturn extends js.Object {
 object WIFReturn {
   @scala.inline
   def apply(compressed: scala.Boolean, privateKey: nodeLib.Buffer, version: scala.Double): WIFReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressed")(compressed)
-    __obj.updateDynamic("privateKey")(privateKey)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(compressed = compressed, privateKey = privateKey, version = version)
+  
     __obj.asInstanceOf[WIFReturn]
   }
 }

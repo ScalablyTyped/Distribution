@@ -31,13 +31,8 @@ object Alternative3 {
     of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]],
     zero: js.Function0[fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]]
   ): Alternative3[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
-    __obj.updateDynamic("zero")(zero)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = alt, ap = ap, map = map, of = of, zero = zero)
+  
     __obj.asInstanceOf[Alternative3[F]]
   }
 }

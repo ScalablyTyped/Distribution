@@ -19,11 +19,8 @@ object `match` {
   def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ reactDashRouterLib.reactDashRouterLibStrings.`match` with js.Any */](isExact: scala.Boolean, params: Params, path: java.lang.String, url: java.lang.String): `match`[Params] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isExact")(isExact)
-    __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(isExact = isExact, params = params.asInstanceOf[js.Any], path = path, url = url)
+  
     __obj.asInstanceOf[`match`[Params]]
   }
 }

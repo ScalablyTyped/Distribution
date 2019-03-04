@@ -16,8 +16,7 @@ object NotificationSystemProps {
     theme: NotificationSystemTheme,
     filter: js.Function1[/* notification */ Notification, scala.Boolean] = null
   ): NotificationSystemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(theme = theme)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[NotificationSystemProps]
   }

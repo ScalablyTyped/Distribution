@@ -16,8 +16,7 @@ object ModuleWithProviders {
     ngModule: atAngularCoreLib.srcTypeMod.Type[T],
     providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = null
   ): ModuleWithProviders[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ngModule")(ngModule)
+    val __obj = js.Dynamic.literal(ngModule = ngModule)
     if (providers != null) __obj.updateDynamic("providers")(providers)
     __obj.asInstanceOf[ModuleWithProviders[T]]
   }

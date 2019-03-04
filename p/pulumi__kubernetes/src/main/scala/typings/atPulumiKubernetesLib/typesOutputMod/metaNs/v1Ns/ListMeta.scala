@@ -36,10 +36,8 @@ trait ListMeta extends js.Object {
 object ListMeta {
   @scala.inline
   def apply(continue: java.lang.String, resourceVersion: java.lang.String, selfLink: java.lang.String): ListMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continue")(continue)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
-    __obj.updateDynamic("selfLink")(selfLink)
+    val __obj = js.Dynamic.literal(continue = continue, resourceVersion = resourceVersion, selfLink = selfLink)
+  
     __obj.asInstanceOf[ListMeta]
   }
 }

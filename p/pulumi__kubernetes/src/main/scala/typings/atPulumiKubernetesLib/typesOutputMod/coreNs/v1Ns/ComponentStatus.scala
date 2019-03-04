@@ -42,11 +42,8 @@ object ComponentStatus {
     kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatus,
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
   ): ComponentStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, conditions = conditions, kind = kind, metadata = metadata)
+  
     __obj.asInstanceOf[ComponentStatus]
   }
 }

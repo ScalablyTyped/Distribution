@@ -144,12 +144,7 @@ object OSNotification {
     wp_sound: java.lang.String = null,
     wp_wns_sound: java.lang.String = null
   ): OSNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
-    __obj.updateDynamic("displayType")(displayType)
-    __obj.updateDynamic("isAppInFocus")(isAppInFocus)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("shown")(shown)
+    val __obj = js.Dynamic.literal(contents = contents, displayType = displayType, isAppInFocus = isAppInFocus, payload = payload, shown = shown)
     if (adm_big_picture != null) __obj.updateDynamic("adm_big_picture")(adm_big_picture)
     if (adm_group != null) __obj.updateDynamic("adm_group")(adm_group)
     if (adm_group_message != null) __obj.updateDynamic("adm_group_message")(adm_group_message)

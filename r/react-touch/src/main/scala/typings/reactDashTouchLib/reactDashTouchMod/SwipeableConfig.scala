@@ -20,11 +20,8 @@ object SwipeableConfig {
     onSwipeRight: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit],
     onSwipeUp: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit]
   ): SwipeableConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onSwipeDown")(onSwipeDown)
-    __obj.updateDynamic("onSwipeLeft")(onSwipeLeft)
-    __obj.updateDynamic("onSwipeRight")(onSwipeRight)
-    __obj.updateDynamic("onSwipeUp")(onSwipeUp)
+    val __obj = js.Dynamic.literal(onSwipeDown = onSwipeDown, onSwipeLeft = onSwipeLeft, onSwipeRight = onSwipeRight, onSwipeUp = onSwipeUp)
+  
     __obj.asInstanceOf[SwipeableConfig]
   }
 }

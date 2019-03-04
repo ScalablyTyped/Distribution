@@ -24,12 +24,8 @@ object XIdlClassProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIdlClassProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IdlClasses")(IdlClasses)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIdlClasses")(getIdlClasses)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(IdlClasses = IdlClasses, acquire = acquire, getIdlClasses = getIdlClasses, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIdlClassProvider]
   }
 }

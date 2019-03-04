@@ -32,11 +32,8 @@ object ExtensionDailyStat {
     statisticDate: stdLib.Date,
     version: java.lang.String
   ): ExtensionDailyStat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("counts")(counts)
-    __obj.updateDynamic("extendedStats")(extendedStats)
-    __obj.updateDynamic("statisticDate")(statisticDate)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(counts = counts, extendedStats = extendedStats, statisticDate = statisticDate, version = version)
+  
     __obj.asInstanceOf[ExtensionDailyStat]
   }
 }

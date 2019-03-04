@@ -26,11 +26,8 @@ object TransactionLock {
     SHARE: TransactionLockLevelShare,
     UPDATE: TransactionLockLevelUpdate
   ): TransactionLock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KEY_SHARE")(KEY_SHARE)
-    __obj.updateDynamic("NO_KEY_UPDATE")(NO_KEY_UPDATE)
-    __obj.updateDynamic("SHARE")(SHARE)
-    __obj.updateDynamic("UPDATE")(UPDATE)
+    val __obj = js.Dynamic.literal(KEY_SHARE = KEY_SHARE, NO_KEY_UPDATE = NO_KEY_UPDATE, SHARE = SHARE, UPDATE = UPDATE)
+  
     __obj.asInstanceOf[TransactionLock]
   }
 }

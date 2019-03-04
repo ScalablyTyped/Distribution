@@ -22,8 +22,7 @@ object RequestOptions {
     method: java.lang.String = null,
     params: js.Any = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)

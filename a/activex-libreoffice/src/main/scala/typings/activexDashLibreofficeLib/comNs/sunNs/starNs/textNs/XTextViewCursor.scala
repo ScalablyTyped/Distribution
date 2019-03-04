@@ -44,30 +44,8 @@ object XTextViewCursor {
     setString: js.Function1[java.lang.String, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): XTextViewCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("collapseToEnd")(collapseToEnd)
-    __obj.updateDynamic("collapseToStart")(collapseToStart)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("goLeft")(goLeft)
-    __obj.updateDynamic("goRight")(goRight)
-    __obj.updateDynamic("gotoEnd")(gotoEnd)
-    __obj.updateDynamic("gotoRange")(gotoRange)
-    __obj.updateDynamic("gotoStart")(gotoStart)
-    __obj.updateDynamic("isCollapsed")(isCollapsed)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setString")(setString)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(End = End, Position = Position, Start = Start, String = String, acquire = acquire, collapseToEnd = collapseToEnd, collapseToStart = collapseToStart, getEnd = getEnd, getPosition = getPosition, getStart = getStart, getString = getString, getText = getText, goLeft = goLeft, goRight = goRight, gotoEnd = gotoEnd, gotoRange = gotoRange, gotoStart = gotoStart, isCollapsed = isCollapsed, isVisible = isVisible, queryInterface = queryInterface, release = release, setString = setString, setVisible = setVisible)
+  
     __obj.asInstanceOf[XTextViewCursor]
   }
 }

@@ -27,21 +27,8 @@ object WebSocketTransport {
     setEncryption: js.Function1[java.lang.String, scala.Unit],
     webSocket: stdLib.WebSocket
   ): WebSocketTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("compression")(compression)
-    __obj.updateDynamic("encryption")(encryption)
-    __obj.updateDynamic("getSupportedCompression")(getSupportedCompression)
-    __obj.updateDynamic("getSupportedEncryption")(getSupportedEncryption)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("onEnvelope")(onEnvelope)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onOpen")(onOpen)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("setCompression")(setCompression)
-    __obj.updateDynamic("setEncryption")(setEncryption)
-    __obj.updateDynamic("webSocket")(webSocket)
+    val __obj = js.Dynamic.literal(close = close, compression = compression, encryption = encryption, getSupportedCompression = getSupportedCompression, getSupportedEncryption = getSupportedEncryption, onClose = onClose, onEnvelope = onEnvelope, onError = onError, onOpen = onOpen, open = open, send = send, setCompression = setCompression, setEncryption = setEncryption, webSocket = webSocket)
+  
     __obj.asInstanceOf[WebSocketTransport]
   }
 }

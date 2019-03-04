@@ -26,13 +26,7 @@ object WebBrowserControl_BeforeNavigate2_Parameter {
     pDisp: js.Any,
     TargetFrameName: java.lang.String = null
   ): WebBrowserControl_BeforeNavigate2_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Headers")(Headers)
-    __obj.updateDynamic("PostData")(PostData)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("pDisp")(pDisp)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Headers = Headers, PostData = PostData, URL = URL, flags = flags, pDisp = pDisp)
     if (TargetFrameName != null) __obj.updateDynamic("TargetFrameName")(TargetFrameName)
     __obj.asInstanceOf[WebBrowserControl_BeforeNavigate2_Parameter]
   }

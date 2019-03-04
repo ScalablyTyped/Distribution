@@ -18,10 +18,8 @@ object IPanoramaGraph {
     getNodes: js.Function0[js.Array[IPanoramaGraphEdge]],
     getPanorama: js.Function0[IPanorama]
   ): IPanoramaGraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEdges")(getEdges)
-    __obj.updateDynamic("getNodes")(getNodes)
-    __obj.updateDynamic("getPanorama")(getPanorama)
+    val __obj = js.Dynamic.literal(getEdges = getEdges, getNodes = getNodes, getPanorama = getPanorama)
+  
     __obj.asInstanceOf[IPanoramaGraph]
   }
 }

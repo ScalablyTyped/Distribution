@@ -47,28 +47,8 @@ object ModuleAcceleratorConfiguration {
     store: js.Function0[scala.Unit],
     storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
   ): ModuleAcceleratorConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllKeyEvents")(AllKeyEvents)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addConfigurationListener")(addConfigurationListener)
-    __obj.updateDynamic("createWithModuleIdentifier")(createWithModuleIdentifier)
-    __obj.updateDynamic("getAllKeyEvents")(getAllKeyEvents)
-    __obj.updateDynamic("getCommandByKeyEvent")(getCommandByKeyEvent)
-    __obj.updateDynamic("getKeyEventsByCommand")(getKeyEventsByCommand)
-    __obj.updateDynamic("getPreferredKeyEventsForCommandList")(getPreferredKeyEventsForCommandList)
-    __obj.updateDynamic("hasStorage")(hasStorage)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reload")(reload)
-    __obj.updateDynamic("removeCommandFromAllKeyEvents")(removeCommandFromAllKeyEvents)
-    __obj.updateDynamic("removeConfigurationListener")(removeConfigurationListener)
-    __obj.updateDynamic("removeKeyEvent")(removeKeyEvent)
-    __obj.updateDynamic("setKeyEvent")(setKeyEvent)
-    __obj.updateDynamic("setStorage")(setStorage)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("storeToStorage")(storeToStorage)
+    val __obj = js.Dynamic.literal(AllKeyEvents = AllKeyEvents, acquire = acquire, addConfigurationListener = addConfigurationListener, createWithModuleIdentifier = createWithModuleIdentifier, getAllKeyEvents = getAllKeyEvents, getCommandByKeyEvent = getCommandByKeyEvent, getKeyEventsByCommand = getKeyEventsByCommand, getPreferredKeyEventsForCommandList = getPreferredKeyEventsForCommandList, hasStorage = hasStorage, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, removeCommandFromAllKeyEvents = removeCommandFromAllKeyEvents, removeConfigurationListener = removeConfigurationListener, removeKeyEvent = removeKeyEvent, setKeyEvent = setKeyEvent, setStorage = setStorage, store = store, storeToStorage = storeToStorage)
+  
     __obj.asInstanceOf[ModuleAcceleratorConfiguration]
   }
 }

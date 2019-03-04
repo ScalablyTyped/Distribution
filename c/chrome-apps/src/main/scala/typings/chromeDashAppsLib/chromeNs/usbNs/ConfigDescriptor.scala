@@ -40,14 +40,7 @@ object ConfigDescriptor {
     selfPowered: scala.Boolean,
     description: java.lang.String = null
   ): ConfigDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("configurationValue")(configurationValue)
-    __obj.updateDynamic("extra_data")(extra_data)
-    __obj.updateDynamic("interfaces")(interfaces)
-    __obj.updateDynamic("maxPower")(maxPower)
-    __obj.updateDynamic("remoteWakeup")(remoteWakeup)
-    __obj.updateDynamic("selfPowered")(selfPowered)
+    val __obj = js.Dynamic.literal(active = active, configurationValue = configurationValue, extra_data = extra_data, interfaces = interfaces, maxPower = maxPower, remoteWakeup = remoteWakeup, selfPowered = selfPowered)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[ConfigDescriptor]
   }

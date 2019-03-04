@@ -111,8 +111,7 @@ object IconProps {
     `type`: IconType = null,
     underlayColor: java.lang.String = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (Component != null) __obj.updateDynamic("Component")(Component)
     if (color != null) __obj.updateDynamic("color")(color)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])

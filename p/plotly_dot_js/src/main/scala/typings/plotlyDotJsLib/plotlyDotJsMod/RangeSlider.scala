@@ -24,13 +24,8 @@ object RangeSlider {
     thickness: scala.Double,
     visible: scala.Boolean
   ): RangeSlider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bgcolor")(bgcolor)
-    __obj.updateDynamic("bordercolor")(bordercolor)
-    __obj.updateDynamic("borderwidth")(borderwidth)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("thickness")(thickness)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(bgcolor = bgcolor, bordercolor = bordercolor, borderwidth = borderwidth, range = range, thickness = thickness, visible = visible)
+  
     __obj.asInstanceOf[RangeSlider]
   }
 }

@@ -23,8 +23,8 @@ object CountryResource {
       gapiDotClientLib.gapiNs.clientNs.Request[StoreInfo]
     ]
   ): CountryResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[CountryResource]
   }
 }

@@ -12,8 +12,8 @@ trait Parser extends js.Object {
 object Parser {
   @scala.inline
   def apply(parse: js.Function0[estreeLib.estreeMod.Program]): Parser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(parse = parse)
+  
     __obj.asInstanceOf[Parser]
   }
 }

@@ -20,8 +20,8 @@ trait AggregationRule extends js.Object {
 object AggregationRule {
   @scala.inline
   def apply(clusterRoleSelectors: js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector]): AggregationRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterRoleSelectors")(clusterRoleSelectors)
+    val __obj = js.Dynamic.literal(clusterRoleSelectors = clusterRoleSelectors)
+  
     __obj.asInstanceOf[AggregationRule]
   }
 }

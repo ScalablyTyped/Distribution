@@ -12,8 +12,8 @@ trait MessageQueueSubscriptionChannel extends js.Object {
 object MessageQueueSubscriptionChannel {
   @scala.inline
   def apply(`type`: java.lang.String): MessageQueueSubscriptionChannel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MessageQueueSubscriptionChannel]
   }
 }

@@ -24,11 +24,8 @@ object ASPxClientHtmlEditorDialogClosingEventArgs {
     dialogName: java.lang.String,
     parameter: js.Object
   ): ASPxClientHtmlEditorDialogClosingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("dialog")(dialog)
-    __obj.updateDynamic("dialogName")(dialogName)
-    __obj.updateDynamic("parameter")(parameter)
+    val __obj = js.Dynamic.literal(cancel = cancel, dialog = dialog, dialogName = dialogName, parameter = parameter)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogClosingEventArgs]
   }
 }

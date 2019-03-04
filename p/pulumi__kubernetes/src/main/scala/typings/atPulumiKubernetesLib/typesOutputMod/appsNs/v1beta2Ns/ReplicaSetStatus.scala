@@ -47,13 +47,8 @@ object ReplicaSetStatus {
     readyReplicas: scala.Double,
     replicas: scala.Double
   ): ReplicaSetStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availableReplicas")(availableReplicas)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("fullyLabeledReplicas")(fullyLabeledReplicas)
-    __obj.updateDynamic("observedGeneration")(observedGeneration)
-    __obj.updateDynamic("readyReplicas")(readyReplicas)
-    __obj.updateDynamic("replicas")(replicas)
+    val __obj = js.Dynamic.literal(availableReplicas = availableReplicas, conditions = conditions, fullyLabeledReplicas = fullyLabeledReplicas, observedGeneration = observedGeneration, readyReplicas = readyReplicas, replicas = replicas)
+  
     __obj.asInstanceOf[ReplicaSetStatus]
   }
 }

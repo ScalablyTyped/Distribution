@@ -45,14 +45,8 @@ object XScriptURIHelper {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XScriptURIHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RootStorageURI")(RootStorageURI)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRootStorageURI")(getRootStorageURI)
-    __obj.updateDynamic("getScriptURI")(getScriptURI)
-    __obj.updateDynamic("getStorageURI")(getStorageURI)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(RootStorageURI = RootStorageURI, acquire = acquire, getRootStorageURI = getRootStorageURI, getScriptURI = getScriptURI, getStorageURI = getStorageURI, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XScriptURIHelper]
   }
 }

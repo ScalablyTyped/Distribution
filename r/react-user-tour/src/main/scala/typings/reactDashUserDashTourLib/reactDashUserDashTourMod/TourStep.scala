@@ -49,11 +49,7 @@ object TourStep {
     position: reactDashUserDashTourLib.reactDashUserDashTourLibStrings.left | reactDashUserDashTourLib.reactDashUserDashTourLibStrings.right | reactDashUserDashTourLib.reactDashUserDashTourLibStrings.top | reactDashUserDashTourLib.reactDashUserDashTourLibStrings.topLeft | reactDashUserDashTourLib.reactDashUserDashTourLibStrings.bottom | reactDashUserDashTourLib.reactDashUserDashTourLibStrings.bottomLeft = null,
     verticalOffset: scala.Int | scala.Double = null
   ): TourStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], selector = selector, step = step, title = title.asInstanceOf[js.Any])
     if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])

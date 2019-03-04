@@ -48,9 +48,7 @@ object ServerRoute {
     rules: js.Object = null,
     vhost: java.lang.String | js.Array[java.lang.String] = null
   ): ServerRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path)
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules)

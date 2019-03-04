@@ -26,14 +26,8 @@ object BaseComponent {
     reset: js.Function0[scala.Unit],
     show: js.Function0[scala.Unit]
   ): BaseComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("elements")(elements)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isHidden")(isHidden)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(destroy = destroy, elements = elements, hidden = hidden, hide = hide, isHidden = isHidden, reset = reset, show = show)
+  
     __obj.asInstanceOf[BaseComponent]
   }
 }

@@ -45,10 +45,7 @@ object Anon_AltDatabase {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDatabase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(database = database, instance = instance, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

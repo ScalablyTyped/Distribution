@@ -33,10 +33,8 @@ object DocumentChange {
     oldIndex: scala.Double,
     `type`: DocumentChangeType
   ): DocumentChange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("doc")(doc)
-    __obj.updateDynamic("newIndex")(newIndex)
-    __obj.updateDynamic("oldIndex")(oldIndex)
+    val __obj = js.Dynamic.literal(doc = doc, newIndex = newIndex, oldIndex = oldIndex)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DocumentChange]
   }
 }

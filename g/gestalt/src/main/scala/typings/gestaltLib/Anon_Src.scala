@@ -16,8 +16,8 @@ object Anon_Src {
     src: java.lang.String,
     `type`: gestaltLib.gestaltLibStrings.`video/m3u8` | gestaltLib.gestaltLibStrings.`video/mp4` | gestaltLib.gestaltLibStrings.`video/ogg`
   ): Anon_Src = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Src]
   }
 }

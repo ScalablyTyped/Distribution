@@ -23,9 +23,8 @@ object LabeledStatement {
     label: astDashTypesLib.genKindsMod.IdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.LabeledStatement
   ): LabeledStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(body = body, label = label)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LabeledStatement]
   }
 }

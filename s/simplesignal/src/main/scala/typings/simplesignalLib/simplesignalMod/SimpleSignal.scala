@@ -24,13 +24,8 @@ object SimpleSignal {
     remove: js.Function1[F, scala.Boolean],
     removeAll: js.Function0[scala.Boolean]
   ): SimpleSignal[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("numItems")(numItems)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
+    val __obj = js.Dynamic.literal(add = add, dispatch = dispatch, functions = functions, numItems = numItems, remove = remove, removeAll = removeAll)
+  
     __obj.asInstanceOf[SimpleSignal[F]]
   }
 }

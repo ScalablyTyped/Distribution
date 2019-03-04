@@ -16,8 +16,8 @@ object ILanIdentifierData {
     `type`: scala.Double,
     value: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[scala.Double]
   ): ILanIdentifierData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ILanIdentifierData]
   }
 }

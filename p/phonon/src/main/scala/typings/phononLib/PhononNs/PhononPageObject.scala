@@ -20,8 +20,7 @@ object PhononPageObject {
     preventClose: js.UndefOr[scala.Boolean] = js.undefined,
     readyDelay: scala.Int | scala.Double = null
   ): PhononPageObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page")(page)
+    val __obj = js.Dynamic.literal(page = page)
     if (content != null) __obj.updateDynamic("content")(content)
     if (!js.isUndefined(preventClose)) __obj.updateDynamic("preventClose")(preventClose)
     if (readyDelay != null) __obj.updateDynamic("readyDelay")(readyDelay.asInstanceOf[js.Any])

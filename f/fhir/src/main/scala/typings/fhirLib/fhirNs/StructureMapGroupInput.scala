@@ -61,9 +61,7 @@ object StructureMapGroupInput {
     modifierExtension: js.Array[Extension] = null,
     `type`: java.lang.String = null
   ): StructureMapGroupInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mode = mode, name = name)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

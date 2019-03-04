@@ -22,12 +22,8 @@ object Util {
     htmlEscape: js.Function1[java.lang.String, java.lang.String],
     inherit: js.Function2[js.Function, js.Function, js.Any]
   ): Util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argsToArray")(argsToArray)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("formatException")(formatException)
-    __obj.updateDynamic("htmlEscape")(htmlEscape)
-    __obj.updateDynamic("inherit")(inherit)
+    val __obj = js.Dynamic.literal(argsToArray = argsToArray, extend = extend, formatException = formatException, htmlEscape = htmlEscape, inherit = inherit)
+  
     __obj.asInstanceOf[Util]
   }
 }

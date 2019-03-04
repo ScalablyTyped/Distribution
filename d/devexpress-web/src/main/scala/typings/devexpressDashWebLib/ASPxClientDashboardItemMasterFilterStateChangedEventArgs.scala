@@ -24,11 +24,8 @@ object ASPxClientDashboardItemMasterFilterStateChangedEventArgs {
     ItemName: java.lang.String,
     Values: js.Array[js.Array[js.Object]]
   ): ASPxClientDashboardItemMasterFilterStateChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsNullValue")(IsNullValue)
-    __obj.updateDynamic("IsOthersValue")(IsOthersValue)
-    __obj.updateDynamic("ItemName")(ItemName)
-    __obj.updateDynamic("Values")(Values)
+    val __obj = js.Dynamic.literal(IsNullValue = IsNullValue, IsOthersValue = IsOthersValue, ItemName = ItemName, Values = Values)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemMasterFilterStateChangedEventArgs]
   }
 }

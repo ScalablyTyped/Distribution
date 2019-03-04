@@ -14,10 +14,8 @@ trait RtmCall[T] extends js.Object {
 object RtmCall {
   @scala.inline
   def apply[T](message: T, rawMessage: wsLib.wsMod.WebSocketNs.Data, token: java.lang.String): RtmCall[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    __obj.updateDynamic("rawMessage")(rawMessage.asInstanceOf[js.Any])
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], rawMessage = rawMessage.asInstanceOf[js.Any], token = token)
+  
     __obj.asInstanceOf[RtmCall[T]]
   }
 }

@@ -16,8 +16,8 @@ trait GetVpcLinkArgs extends js.Object {
 object GetVpcLinkArgs {
   @scala.inline
   def apply(name: java.lang.String): GetVpcLinkArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[GetVpcLinkArgs]
   }
 }

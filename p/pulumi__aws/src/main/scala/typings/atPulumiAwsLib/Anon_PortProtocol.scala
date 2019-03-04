@@ -16,9 +16,8 @@ object Anon_PortProtocol {
     port: atPulumiPulumiLib.outputMod.Input[scala.Double],
     protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_PortProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PortProtocol]
   }
 }

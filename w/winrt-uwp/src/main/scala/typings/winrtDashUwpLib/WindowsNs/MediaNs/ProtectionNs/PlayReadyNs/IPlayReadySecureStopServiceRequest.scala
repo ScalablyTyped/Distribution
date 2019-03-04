@@ -37,20 +37,8 @@ object IPlayReadySecureStopServiceRequest {
     updateTime: stdLib.Date,
     uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri
   ): IPlayReadySecureStopServiceRequest = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("beginServiceRequest")(beginServiceRequest)
-    __obj.updateDynamic("challengeCustomData")(challengeCustomData)
-    __obj.updateDynamic("generateManualEnablingChallenge")(generateManualEnablingChallenge)
-    __obj.updateDynamic("nextServiceRequest")(nextServiceRequest)
-    __obj.updateDynamic("processManualEnablingResponse")(processManualEnablingResponse)
-    __obj.updateDynamic("protectionSystem")(protectionSystem)
-    __obj.updateDynamic("publisherCertificate")(publisherCertificate)
-    __obj.updateDynamic("responseCustomData")(responseCustomData)
-    __obj.updateDynamic("sessionID")(sessionID)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("stopped")(stopped)
-    __obj.updateDynamic("updateTime")(updateTime)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(beginServiceRequest = beginServiceRequest, challengeCustomData = challengeCustomData, generateManualEnablingChallenge = generateManualEnablingChallenge, nextServiceRequest = nextServiceRequest, processManualEnablingResponse = processManualEnablingResponse, protectionSystem = protectionSystem, publisherCertificate = publisherCertificate, responseCustomData = responseCustomData, sessionID = sessionID, startTime = startTime, stopped = stopped, updateTime = updateTime, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPlayReadySecureStopServiceRequest]
   }
 }

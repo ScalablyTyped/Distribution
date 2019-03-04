@@ -45,17 +45,7 @@ object ojCheckboxsetSettableProperties {
     options: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
     optionsKeys: atOracleOraclejetLib.ojcheckboxsetMod.ojCheckboxsetNs.OptionsKeys = null
   ): ojCheckboxsetSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
     if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)

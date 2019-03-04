@@ -22,9 +22,8 @@ object PolicyAttachmentArgs {
     policyId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): PolicyAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policyId")(policyId.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policyId = policyId.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PolicyAttachmentArgs]
   }
 }

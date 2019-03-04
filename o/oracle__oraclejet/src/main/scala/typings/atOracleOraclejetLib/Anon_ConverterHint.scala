@@ -36,11 +36,8 @@ object Anon_ConverterHint {
       atOracleOraclejetLib.atOracleOraclejetLibStrings.notewindow | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ]) | atOracleOraclejetLib.atOracleOraclejetLibStrings.notewindow | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
   ): Anon_ConverterHint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("converterHint")(converterHint.asInstanceOf[js.Any])
-    __obj.updateDynamic("helpInstruction")(helpInstruction.asInstanceOf[js.Any])
-    __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    __obj.updateDynamic("validatorHint")(validatorHint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(converterHint = converterHint.asInstanceOf[js.Any], helpInstruction = helpInstruction.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], validatorHint = validatorHint.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ConverterHint]
   }
 }

@@ -19,9 +19,8 @@ trait IApplication extends js.Object {
 object IApplication {
   @scala.inline
   def apply(build: java.lang.String, ver: java.lang.String): IApplication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(build = build, ver = ver)
+  
     __obj.asInstanceOf[IApplication]
   }
 }

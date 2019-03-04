@@ -18,8 +18,7 @@ object GroupedDataFormat {
     children: js.Array[DataFormat] = null,
     id: js.UndefOr[scala.Nothing] = js.undefined
   ): GroupedDataFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (children != null) __obj.updateDynamic("children")(children)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[GroupedDataFormat]

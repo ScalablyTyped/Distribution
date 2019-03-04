@@ -16,9 +16,8 @@ object UpdateDraftActionResponseBuilder {
     build: js.Function0[UpdateDraftActionResponse],
     setUpdateDraftBodyAction: js.Function1[UpdateDraftBodyAction, UpdateDraftActionResponseBuilder]
   ): UpdateDraftActionResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setUpdateDraftBodyAction")(setUpdateDraftBodyAction)
+    val __obj = js.Dynamic.literal(build = build, setUpdateDraftBodyAction = setUpdateDraftBodyAction)
+  
     __obj.asInstanceOf[UpdateDraftActionResponseBuilder]
   }
 }

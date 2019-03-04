@@ -34,13 +34,8 @@ object FolderListEntry {
     Subscribed: scala.Boolean,
     Title: java.lang.String
   ): FolderListEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("New")(New)
-    __obj.updateDynamic("Purge")(Purge)
-    __obj.updateDynamic("Removed")(Removed)
-    __obj.updateDynamic("Subscribed")(Subscribed)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(ID = ID, New = New, Purge = Purge, Removed = Removed, Subscribed = Subscribed, Title = Title)
+  
     __obj.asInstanceOf[FolderListEntry]
   }
 }

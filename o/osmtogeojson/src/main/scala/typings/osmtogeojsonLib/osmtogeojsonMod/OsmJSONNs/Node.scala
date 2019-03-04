@@ -24,10 +24,8 @@ object Node {
     user: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): Node = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lon")(lon)
+    val __obj = js.Dynamic.literal(id = id, lat = lat, lon = lon)
+    __obj.updateDynamic("type")(`type`)
     if (changeset != null) __obj.updateDynamic("changeset")(changeset.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)

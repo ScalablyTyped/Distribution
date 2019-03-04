@@ -40,8 +40,7 @@ object Anon_BoundariesElement {
     placementPrefix: java.lang.String = null,
     toggle: js.Function0[scala.Unit] = null
   ): Anon_BoundariesElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (boundariesElement != null) __obj.updateDynamic("boundariesElement")(boundariesElement.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])

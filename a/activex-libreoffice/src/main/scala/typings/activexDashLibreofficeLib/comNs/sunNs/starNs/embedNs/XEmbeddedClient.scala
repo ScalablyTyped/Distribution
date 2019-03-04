@@ -32,14 +32,8 @@ object XEmbeddedClient {
     saveObject: js.Function0[scala.Unit],
     visibilityChanged: js.Function1[scala.Boolean, scala.Unit]
   ): XEmbeddedClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getComponent")(getComponent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("saveObject")(saveObject)
-    __obj.updateDynamic("visibilityChanged")(visibilityChanged)
+    val __obj = js.Dynamic.literal(Component = Component, acquire = acquire, getComponent = getComponent, queryInterface = queryInterface, release = release, saveObject = saveObject, visibilityChanged = visibilityChanged)
+  
     __obj.asInstanceOf[XEmbeddedClient]
   }
 }

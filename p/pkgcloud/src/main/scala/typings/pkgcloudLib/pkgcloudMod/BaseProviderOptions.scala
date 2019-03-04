@@ -12,8 +12,8 @@ trait BaseProviderOptions extends js.Object {
 object BaseProviderOptions {
   @scala.inline
   def apply(provider: Providers): BaseProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(provider = provider)
+  
     __obj.asInstanceOf[BaseProviderOptions]
   }
 }

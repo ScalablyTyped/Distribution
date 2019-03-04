@@ -14,8 +14,8 @@ trait CompassData extends js.Object {
 object CompassData {
   @scala.inline
   def apply(direction: scala.Double): CompassData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
+    val __obj = js.Dynamic.literal(direction = direction)
+  
     __obj.asInstanceOf[CompassData]
   }
 }

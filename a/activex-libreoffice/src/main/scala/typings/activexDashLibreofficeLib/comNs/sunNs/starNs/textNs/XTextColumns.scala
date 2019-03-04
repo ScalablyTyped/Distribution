@@ -61,18 +61,8 @@ object XTextColumns {
     setColumnCount: js.Function1[scala.Double, scala.Unit],
     setColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn], scala.Unit]
   ): XTextColumns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("ReferenceValue")(ReferenceValue)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnCount")(getColumnCount)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getReferenceValue")(getReferenceValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setColumnCount")(setColumnCount)
-    __obj.updateDynamic("setColumns")(setColumns)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, ReferenceValue = ReferenceValue, acquire = acquire, getColumnCount = getColumnCount, getColumns = getColumns, getReferenceValue = getReferenceValue, queryInterface = queryInterface, release = release, setColumnCount = setColumnCount, setColumns = setColumns)
+  
     __obj.asInstanceOf[XTextColumns]
   }
 }

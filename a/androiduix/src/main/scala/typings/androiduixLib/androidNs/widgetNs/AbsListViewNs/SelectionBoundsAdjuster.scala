@@ -12,8 +12,8 @@ trait SelectionBoundsAdjuster extends js.Object {
 object SelectionBoundsAdjuster {
   @scala.inline
   def apply(adjustListItemSelectionBounds: js.Function1[androiduixLib.androidNs.graphicsNs.Rect, scala.Unit]): SelectionBoundsAdjuster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustListItemSelectionBounds")(adjustListItemSelectionBounds)
+    val __obj = js.Dynamic.literal(adjustListItemSelectionBounds = adjustListItemSelectionBounds)
+  
     __obj.asInstanceOf[SelectionBoundsAdjuster]
   }
 }

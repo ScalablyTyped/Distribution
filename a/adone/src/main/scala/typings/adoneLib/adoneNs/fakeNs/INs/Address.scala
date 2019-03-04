@@ -24,13 +24,8 @@ object Address {
     suite: java.lang.String,
     zipcode: java.lang.String
   ): Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("geo")(geo)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("suite")(suite)
-    __obj.updateDynamic("zipcode")(zipcode)
+    val __obj = js.Dynamic.literal(city = city, geo = geo, state = state, street = street, suite = suite, zipcode = zipcode)
+  
     __obj.asInstanceOf[Address]
   }
 }

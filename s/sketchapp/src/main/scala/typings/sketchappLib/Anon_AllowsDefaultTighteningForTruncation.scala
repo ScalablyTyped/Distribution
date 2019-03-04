@@ -16,9 +16,8 @@ object Anon_AllowsDefaultTighteningForTruncation {
     _class: sketchappLib.sketchappLibStrings.paragraphStyle,
     allowsDefaultTighteningForTruncation: scala.Double
   ): Anon_AllowsDefaultTighteningForTruncation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("allowsDefaultTighteningForTruncation")(allowsDefaultTighteningForTruncation)
+    val __obj = js.Dynamic.literal(_class = _class, allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation)
+  
     __obj.asInstanceOf[Anon_AllowsDefaultTighteningForTruncation]
   }
 }

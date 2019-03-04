@@ -133,33 +133,8 @@ object Release {
     variableGroups: js.Array[VariableGroup],
     variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
   ): Release = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("definitionSnapshotRevision")(definitionSnapshotRevision)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("keepForever")(keepForever)
-    __obj.updateDynamic("logsContainerUrl")(logsContainerUrl)
-    __obj.updateDynamic("modifiedBy")(modifiedBy)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("poolName")(poolName)
-    __obj.updateDynamic("projectReference")(projectReference)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
-    __obj.updateDynamic("releaseNameFormat")(releaseNameFormat)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("triggeringArtifactAlias")(triggeringArtifactAlias)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("variableGroups")(variableGroups)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(_links = _links, artifacts = artifacts, comment = comment, createdBy = createdBy, createdOn = createdOn, definitionSnapshotRevision = definitionSnapshotRevision, description = description, environments = environments, id = id, keepForever = keepForever, logsContainerUrl = logsContainerUrl, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, poolName = poolName, projectReference = projectReference, properties = properties, reason = reason, releaseDefinition = releaseDefinition, releaseNameFormat = releaseNameFormat, status = status, tags = tags, triggeringArtifactAlias = triggeringArtifactAlias, url = url, variableGroups = variableGroups, variables = variables)
+  
     __obj.asInstanceOf[Release]
   }
 }

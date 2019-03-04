@@ -58,30 +58,8 @@ object Tickable {
     setXShift: js.Function1[scala.Double, Tickable],
     shouldIgnoreTicks: js.Function0[scala.Boolean]
   ): Tickable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addModifier")(addModifier)
-    __obj.updateDynamic("addToModifierContext")(addToModifierContext)
-    __obj.updateDynamic("applyTickMultiplier")(applyTickMultiplier)
-    __obj.updateDynamic("getBoundingBox")(getBoundingBox)
-    __obj.updateDynamic("getCenterXShift")(getCenterXShift)
-    __obj.updateDynamic("getIntrinsicTicks")(getIntrinsicTicks)
-    __obj.updateDynamic("getTickMultiplier")(getTickMultiplier)
-    __obj.updateDynamic("getTicks")(getTicks)
-    __obj.updateDynamic("getTuplet")(getTuplet)
-    __obj.updateDynamic("getVoice")(getVoice)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("isCenterAligned")(isCenterAligned)
-    __obj.updateDynamic("postFormat")(postFormat)
-    __obj.updateDynamic("preFormat")(preFormat)
-    __obj.updateDynamic("setCenterAlignment")(setCenterAlignment)
-    __obj.updateDynamic("setContext")(setContext)
-    __obj.updateDynamic("setDuration")(setDuration)
-    __obj.updateDynamic("setIntrinsicTicks")(setIntrinsicTicks)
-    __obj.updateDynamic("setTickContext")(setTickContext)
-    __obj.updateDynamic("setTuplet")(setTuplet)
-    __obj.updateDynamic("setVoice")(setVoice)
-    __obj.updateDynamic("setXShift")(setXShift)
-    __obj.updateDynamic("shouldIgnoreTicks")(shouldIgnoreTicks)
+    val __obj = js.Dynamic.literal(addModifier = addModifier, addToModifierContext = addToModifierContext, applyTickMultiplier = applyTickMultiplier, getBoundingBox = getBoundingBox, getCenterXShift = getCenterXShift, getIntrinsicTicks = getIntrinsicTicks, getTickMultiplier = getTickMultiplier, getTicks = getTicks, getTuplet = getTuplet, getVoice = getVoice, getWidth = getWidth, isCenterAligned = isCenterAligned, postFormat = postFormat, preFormat = preFormat, setCenterAlignment = setCenterAlignment, setContext = setContext, setDuration = setDuration, setIntrinsicTicks = setIntrinsicTicks, setTickContext = setTickContext, setTuplet = setTuplet, setVoice = setVoice, setXShift = setXShift, shouldIgnoreTicks = shouldIgnoreTicks)
+  
     __obj.asInstanceOf[Tickable]
   }
 }

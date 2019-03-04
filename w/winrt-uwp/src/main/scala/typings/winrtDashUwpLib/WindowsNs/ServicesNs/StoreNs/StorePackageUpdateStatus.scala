@@ -31,13 +31,8 @@ object StorePackageUpdateStatus {
     packageUpdateState: StorePackageUpdateState,
     totalDownloadProgress: scala.Double
   ): StorePackageUpdateStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packageBytesDownloaded")(packageBytesDownloaded)
-    __obj.updateDynamic("packageDownloadProgress")(packageDownloadProgress)
-    __obj.updateDynamic("packageDownloadSizeInBytes")(packageDownloadSizeInBytes)
-    __obj.updateDynamic("packageFamilyName")(packageFamilyName)
-    __obj.updateDynamic("packageUpdateState")(packageUpdateState)
-    __obj.updateDynamic("totalDownloadProgress")(totalDownloadProgress)
+    val __obj = js.Dynamic.literal(packageBytesDownloaded = packageBytesDownloaded, packageDownloadProgress = packageDownloadProgress, packageDownloadSizeInBytes = packageDownloadSizeInBytes, packageFamilyName = packageFamilyName, packageUpdateState = packageUpdateState, totalDownloadProgress = totalDownloadProgress)
+  
     __obj.asInstanceOf[StorePackageUpdateStatus]
   }
 }

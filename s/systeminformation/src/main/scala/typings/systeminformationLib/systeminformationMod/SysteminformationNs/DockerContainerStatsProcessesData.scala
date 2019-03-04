@@ -40,21 +40,8 @@ object DockerContainerStatsProcessesData {
     user: java.lang.String,
     vsz: java.lang.String
   ): DockerContainerStatsProcessesData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("elapsed")(elapsed)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("pgid")(pgid)
-    __obj.updateDynamic("pid_host")(pid_host)
-    __obj.updateDynamic("ppid")(ppid)
-    __obj.updateDynamic("rgroup")(rgroup)
-    __obj.updateDynamic("rss")(rss)
-    __obj.updateDynamic("ruser")(ruser)
-    __obj.updateDynamic("stat")(stat)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("vsz")(vsz)
+    val __obj = js.Dynamic.literal(command = command, elapsed = elapsed, group = group, nice = nice, pgid = pgid, pid_host = pid_host, ppid = ppid, rgroup = rgroup, rss = rss, ruser = ruser, stat = stat, time = time, user = user, vsz = vsz)
+  
     __obj.asInstanceOf[DockerContainerStatsProcessesData]
   }
 }

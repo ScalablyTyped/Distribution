@@ -34,9 +34,7 @@ object CreateOptions {
     stdin: nodeLib.NodeJSNs.Process = null,
     stdout: nodeLib.NodeJSNs.Process = null
   ): CreateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("appName")(appName)
+    val __obj = js.Dynamic.literal(appId = appId, appName = appName)
     if (generic != null) __obj.updateDynamic("generic")(generic)
     if (!js.isUndefined(isSSH)) __obj.updateDynamic("isSSH")(isSSH)
     if (!js.isUndefined(isTTY)) __obj.updateDynamic("isTTY")(isTTY)

@@ -37,12 +37,8 @@ object Anon_GidGids {
     uid: js.Function1[java.lang.String, Anon_GidUidNumber],
     username: js.Function1[scala.Double, java.lang.String]
   ): Anon_GidGids = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("gids")(gids)
-    __obj.updateDynamic("groupname")(groupname)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(gid = gid, gids = gids, groupname = groupname, uid = uid, username = username)
+  
     __obj.asInstanceOf[Anon_GidGids]
   }
 }

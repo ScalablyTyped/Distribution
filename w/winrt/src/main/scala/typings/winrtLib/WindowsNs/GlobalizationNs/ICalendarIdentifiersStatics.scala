@@ -30,16 +30,8 @@ object ICalendarIdentifiersStatics {
     thai: java.lang.String,
     umAlQura: java.lang.String
   ): ICalendarIdentifiersStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gregorian")(gregorian)
-    __obj.updateDynamic("hebrew")(hebrew)
-    __obj.updateDynamic("hijri")(hijri)
-    __obj.updateDynamic("japanese")(japanese)
-    __obj.updateDynamic("julian")(julian)
-    __obj.updateDynamic("korean")(korean)
-    __obj.updateDynamic("taiwan")(taiwan)
-    __obj.updateDynamic("thai")(thai)
-    __obj.updateDynamic("umAlQura")(umAlQura)
+    val __obj = js.Dynamic.literal(gregorian = gregorian, hebrew = hebrew, hijri = hijri, japanese = japanese, julian = julian, korean = korean, taiwan = taiwan, thai = thai, umAlQura = umAlQura)
+  
     __obj.asInstanceOf[ICalendarIdentifiersStatics]
   }
 }

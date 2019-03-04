@@ -44,21 +44,8 @@ object Compatibility {
     wH: js.Function0[scala.Double],
     wW: js.Function0[scala.Double]
   ): Compatibility = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("cAF")(cAF)
-    __obj.updateDynamic("inA")(inA)
-    __obj.updateDynamic("isA")(isA)
-    __obj.updateDynamic("mBtn")(mBtn)
-    __obj.updateDynamic("mO")(mO)
-    __obj.updateDynamic("now")(now)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("prvD")(prvD)
-    __obj.updateDynamic("rAF")(rAF)
-    __obj.updateDynamic("rO")(rO)
-    __obj.updateDynamic("stpP")(stpP)
-    __obj.updateDynamic("wH")(wH)
-    __obj.updateDynamic("wW")(wW)
+    val __obj = js.Dynamic.literal(bind = bind, cAF = cAF, inA = inA, isA = isA, mBtn = mBtn, mO = mO, now = now, page = page, prvD = prvD, rAF = rAF, rO = rO, stpP = stpP, wH = wH, wW = wW)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Compatibility]
   }
 }

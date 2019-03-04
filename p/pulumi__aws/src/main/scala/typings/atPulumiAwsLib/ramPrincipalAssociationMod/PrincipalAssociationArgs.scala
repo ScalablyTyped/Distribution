@@ -22,9 +22,8 @@ object PrincipalAssociationArgs {
     principal: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): PrincipalAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
-    __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PrincipalAssociationArgs]
   }
 }

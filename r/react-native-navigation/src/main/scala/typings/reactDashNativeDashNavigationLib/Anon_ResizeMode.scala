@@ -12,8 +12,8 @@ trait Anon_ResizeMode extends js.Object {
 object Anon_ResizeMode {
   @scala.inline
   def apply(resizeMode: java.lang.String): Anon_ResizeMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resizeMode")(resizeMode)
+    val __obj = js.Dynamic.literal(resizeMode = resizeMode)
+  
     __obj.asInstanceOf[Anon_ResizeMode]
   }
 }

@@ -47,14 +47,8 @@ object WorkItemQueryResult {
     workItemRelations: js.Array[WorkItemLink],
     workItems: js.Array[WorkItemReference]
   ): WorkItemQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asOf")(asOf)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("queryResultType")(queryResultType)
-    __obj.updateDynamic("queryType")(queryType)
-    __obj.updateDynamic("sortColumns")(sortColumns)
-    __obj.updateDynamic("workItemRelations")(workItemRelations)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(asOf = asOf, columns = columns, queryResultType = queryResultType, queryType = queryType, sortColumns = sortColumns, workItemRelations = workItemRelations, workItems = workItems)
+  
     __obj.asInstanceOf[WorkItemQueryResult]
   }
 }

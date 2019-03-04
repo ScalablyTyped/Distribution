@@ -12,8 +12,8 @@ trait TabInformation extends js.Object {
 object TabInformation {
   @scala.inline
   def apply(teamTabs: js.Array[TabInstance]): TabInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("teamTabs")(teamTabs)
+    val __obj = js.Dynamic.literal(teamTabs = teamTabs)
+  
     __obj.asInstanceOf[TabInformation]
   }
 }

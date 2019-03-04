@@ -23,12 +23,8 @@ object XIndent {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIndent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("decrementIndent")(decrementIndent)
-    __obj.updateDynamic("incrementIndent")(incrementIndent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, decrementIndent = decrementIndent, incrementIndent = incrementIndent, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIndent]
   }
 }

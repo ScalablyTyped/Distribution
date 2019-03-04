@@ -14,10 +14,8 @@ trait ExtensionDefinition extends js.Object {
 object ExtensionDefinition {
   @scala.inline
   def apply(directory: java.lang.String, main: js.Any, options: js.Any): ExtensionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(directory = directory, main = main, options = options)
+  
     __obj.asInstanceOf[ExtensionDefinition]
   }
 }

@@ -42,12 +42,8 @@ object ISubscriptionItem {
     plan: stripeLib.stripeMod.StripeNs.plansNs.IPlan,
     quantity: scala.Double
   ): ISubscriptionItem = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("quantity")(quantity)
+    val __obj = js.Dynamic.literal(created = created, id = id, metadata = metadata, plan = plan, quantity = quantity)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ISubscriptionItem]
   }
 }

@@ -121,10 +121,7 @@ object DeploymentGroupArgs {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TriggerEventsTriggerName]]
     ] = null
   ): DeploymentGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    __obj.updateDynamic("deploymentGroupName")(deploymentGroupName.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], deploymentGroupName = deploymentGroupName.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any])
     if (alarmConfiguration != null) __obj.updateDynamic("alarmConfiguration")(alarmConfiguration.asInstanceOf[js.Any])
     if (autoRollbackConfiguration != null) __obj.updateDynamic("autoRollbackConfiguration")(autoRollbackConfiguration.asInstanceOf[js.Any])
     if (autoscalingGroups != null) __obj.updateDynamic("autoscalingGroups")(autoscalingGroups.asInstanceOf[js.Any])

@@ -52,17 +52,8 @@ object XStorageBasedDocument {
     ],
     switchToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
   ): XStorageBasedDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DocumentStorage")(DocumentStorage)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addStorageChangeListener")(addStorageChangeListener)
-    __obj.updateDynamic("getDocumentStorage")(getDocumentStorage)
-    __obj.updateDynamic("loadFromStorage")(loadFromStorage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeStorageChangeListener")(removeStorageChangeListener)
-    __obj.updateDynamic("storeToStorage")(storeToStorage)
-    __obj.updateDynamic("switchToStorage")(switchToStorage)
+    val __obj = js.Dynamic.literal(DocumentStorage = DocumentStorage, acquire = acquire, addStorageChangeListener = addStorageChangeListener, getDocumentStorage = getDocumentStorage, loadFromStorage = loadFromStorage, queryInterface = queryInterface, release = release, removeStorageChangeListener = removeStorageChangeListener, storeToStorage = storeToStorage, switchToStorage = switchToStorage)
+  
     __obj.asInstanceOf[XStorageBasedDocument]
   }
 }

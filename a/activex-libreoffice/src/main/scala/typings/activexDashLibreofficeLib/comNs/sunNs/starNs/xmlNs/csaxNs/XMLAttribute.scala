@@ -16,9 +16,8 @@ trait XMLAttribute extends js.Object {
 object XMLAttribute {
   @scala.inline
   def apply(sName: java.lang.String, sValue: java.lang.String): XMLAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sName")(sName)
-    __obj.updateDynamic("sValue")(sValue)
+    val __obj = js.Dynamic.literal(sName = sName, sValue = sValue)
+  
     __obj.asInstanceOf[XMLAttribute]
   }
 }

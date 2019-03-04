@@ -20,10 +20,8 @@ object ICheckExpressionResult {
     qDangerousFieldNames: js.Array[INxRange],
     qErrorMsg: java.lang.String
   ): ICheckExpressionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qBadFieldNames")(qBadFieldNames)
-    __obj.updateDynamic("qDangerousFieldNames")(qDangerousFieldNames)
-    __obj.updateDynamic("qErrorMsg")(qErrorMsg)
+    val __obj = js.Dynamic.literal(qBadFieldNames = qBadFieldNames, qDangerousFieldNames = qDangerousFieldNames, qErrorMsg = qErrorMsg)
+  
     __obj.asInstanceOf[ICheckExpressionResult]
   }
 }

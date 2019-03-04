@@ -22,9 +22,8 @@ object FilterMethods {
     hasAttributes: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], Filter],
     hasChildren: js.Function1[java.lang.String, Filter]
   ): FilterMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasAttributes")(hasAttributes)
-    __obj.updateDynamic("hasChildren")(hasChildren)
+    val __obj = js.Dynamic.literal(hasAttributes = hasAttributes, hasChildren = hasChildren)
+  
     __obj.asInstanceOf[FilterMethods]
   }
 }

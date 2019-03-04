@@ -19,8 +19,8 @@ object Anon_Length {
     `type`: firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DescriptionStyleType,
     length: scala.Int | scala.Double = null
   ): Anon_Length = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(offset = offset)
+    __obj.updateDynamic("type")(`type`)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Length]
   }

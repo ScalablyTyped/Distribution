@@ -26,11 +26,7 @@ object DeviceDetails {
     deviceSecret: java.lang.String = null,
     metadata: js.Any = null
   ): DeviceDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formFactor")(formFactor.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(formFactor = formFactor.asInstanceOf[js.Any], id = id, platform = platform.asInstanceOf[js.Any], push = push)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (deviceSecret != null) __obj.updateDynamic("deviceSecret")(deviceSecret)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

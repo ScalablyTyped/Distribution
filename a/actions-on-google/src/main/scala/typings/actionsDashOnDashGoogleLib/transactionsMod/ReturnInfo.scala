@@ -13,8 +13,8 @@ trait ReturnInfo extends js.Object {
 object ReturnInfo {
   @scala.inline
   def apply(reason: java.lang.String): ReturnInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(reason = reason)
+  
     __obj.asInstanceOf[ReturnInfo]
   }
 }

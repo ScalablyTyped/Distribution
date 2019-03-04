@@ -12,8 +12,8 @@ trait ICameraOptionsUIStatics extends js.Object {
 object ICameraOptionsUIStatics {
   @scala.inline
   def apply(show: js.Function1[MediaCapture, scala.Unit]): ICameraOptionsUIStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(show = show)
+  
     __obj.asInstanceOf[ICameraOptionsUIStatics]
   }
 }

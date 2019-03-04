@@ -20,10 +20,7 @@ object Route {
     namespace: java.lang.String,
     _links: wpapiLib.Anon_Self = null
   ): Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(endpoints = endpoints, methods = methods, namespace = namespace)
     if (_links != null) __obj.updateDynamic("_links")(_links)
     __obj.asInstanceOf[Route]
   }

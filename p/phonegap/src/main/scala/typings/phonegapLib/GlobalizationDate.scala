@@ -26,14 +26,8 @@ object GlobalizationDate {
     second: scala.Double,
     year: scala.Double
   ): GlobalizationDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("millisecond")(millisecond)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(day = day, hour = hour, millisecond = millisecond, minute = minute, month = month, second = second, year = year)
+  
     __obj.asInstanceOf[GlobalizationDate]
   }
 }

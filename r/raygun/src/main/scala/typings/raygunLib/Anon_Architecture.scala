@@ -26,13 +26,7 @@ object Anon_Architecture {
     utcOffset: scala.Double,
     processorCount: scala.Int | scala.Double = null
   ): Anon_Architecture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("architecture")(architecture)
-    __obj.updateDynamic("availablePhysicalMemory")(availablePhysicalMemory)
-    __obj.updateDynamic("cpu")(cpu)
-    __obj.updateDynamic("osVersion")(osVersion)
-    __obj.updateDynamic("totalPhysicalMemory")(totalPhysicalMemory)
-    __obj.updateDynamic("utcOffset")(utcOffset)
+    val __obj = js.Dynamic.literal(architecture = architecture, availablePhysicalMemory = availablePhysicalMemory, cpu = cpu, osVersion = osVersion, totalPhysicalMemory = totalPhysicalMemory, utcOffset = utcOffset)
     if (processorCount != null) __obj.updateDynamic("processorCount")(processorCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Architecture]
   }

@@ -28,15 +28,8 @@ object LogDetails {
     runtime: scala.Double,
     source: java.lang.String
   ): LogDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actual")(actual)
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, message = message, module = module, name = name, result = result, runtime = runtime, source = source)
+  
     __obj.asInstanceOf[LogDetails]
   }
 }

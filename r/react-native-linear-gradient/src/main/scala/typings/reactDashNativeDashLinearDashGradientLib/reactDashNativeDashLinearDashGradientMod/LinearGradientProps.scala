@@ -122,8 +122,7 @@ object LinearGradientProps {
     testID: java.lang.String = null,
     useAngle: js.UndefOr[scala.Boolean] = js.undefined
   ): LinearGradientProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(colors = colors)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

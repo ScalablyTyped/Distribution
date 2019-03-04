@@ -22,8 +22,8 @@ object VariableDeclarator {
     `type`: astDashTypesLib.astDashTypesLibStrings.VariableDeclarator,
     init: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): VariableDeclarator = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (init != null) __obj.updateDynamic("init")(init)
     __obj.asInstanceOf[VariableDeclarator]
   }

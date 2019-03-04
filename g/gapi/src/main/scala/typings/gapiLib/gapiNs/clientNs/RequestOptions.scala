@@ -42,8 +42,7 @@ object RequestOptions {
     method: java.lang.String = null,
     params: js.Any = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (body != null) __obj.updateDynamic("body")(body)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (headers != null) __obj.updateDynamic("headers")(headers)

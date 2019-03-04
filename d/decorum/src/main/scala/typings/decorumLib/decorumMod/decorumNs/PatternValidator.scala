@@ -21,14 +21,8 @@ object PatternValidator {
     pattern: stdLib.RegExp,
     validatesEmptyValue: js.Function0[scala.Boolean]
   ): PatternValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCustomMessage")(getCustomMessage)
-    __obj.updateDynamic("getKey")(getKey)
-    __obj.updateDynamic("getMessage")(getMessage)
-    __obj.updateDynamic("hasCustomMessage")(hasCustomMessage)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("validatesEmptyValue")(validatesEmptyValue)
+    val __obj = js.Dynamic.literal(getCustomMessage = getCustomMessage, getKey = getKey, getMessage = getMessage, hasCustomMessage = hasCustomMessage, isValid = isValid, pattern = pattern, validatesEmptyValue = validatesEmptyValue)
+  
     __obj.asInstanceOf[PatternValidator]
   }
 }

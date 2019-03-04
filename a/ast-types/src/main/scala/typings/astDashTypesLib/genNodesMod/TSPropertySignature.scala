@@ -33,11 +33,8 @@ object TSPropertySignature {
     initializer: astDashTypesLib.genKindsMod.ExpressionKind = null,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): TSPropertySignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(computed = computed, key = key, optional = optional, readonly = readonly)
+    __obj.updateDynamic("type")(`type`)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
     __obj.asInstanceOf[TSPropertySignature]

@@ -20,11 +20,8 @@ object Anon_AxisChart {
     label: java.lang.String,
     value: scala.Double
   ): Anon_AxisChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, label = label, value = value)
+  
     __obj.asInstanceOf[Anon_AxisChart]
   }
 }

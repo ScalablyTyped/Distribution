@@ -20,11 +20,7 @@ object MissingRefError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): MissingRefError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("missingRef")(missingRef)
-    __obj.updateDynamic("missingSchema")(missingSchema)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(message = message, missingRef = missingRef, missingSchema = missingSchema, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[MissingRefError]
   }

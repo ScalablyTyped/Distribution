@@ -35,17 +35,7 @@ object RouterState {
     value: js.Any,
     label: java.lang.String = null
   ): RouterState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canEnter")(canEnter.asInstanceOf[js.Any])
-    __obj.updateDynamic("canExit")(canExit.asInstanceOf[js.Any])
-    __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
-    __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
-    __obj.updateDynamic("go")(go)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isCurrent")(isCurrent)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(canEnter = canEnter.asInstanceOf[js.Any], canExit = canExit.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], go = go, id = id, isCurrent = isCurrent, parameters = parameters, title = title.asInstanceOf[js.Any], value = value)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[RouterState]
   }

@@ -23,8 +23,7 @@ object DerivedStream {
     marktype: vegaDashTypingsLib.typesSpecMarktypeMod.MarkType = null,
     throttle: scala.Int | scala.Double = null
   ): DerivedStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
     if (between != null) __obj.updateDynamic("between")(between)
     if (!js.isUndefined(consume)) __obj.updateDynamic("consume")(consume)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])

@@ -36,17 +36,8 @@ object OleDragSource {
       scala.Unit
     ]
   ): OleDragSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getDefaultCursor")(getDefaultCursor)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isDragImageSupported")(isDragImageSupported)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("startDrag")(startDrag)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, dispose = dispose, getDefaultCursor = getDefaultCursor, initialize = initialize, isDragImageSupported = isDragImageSupported, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, startDrag = startDrag)
+  
     __obj.asInstanceOf[OleDragSource]
   }
 }

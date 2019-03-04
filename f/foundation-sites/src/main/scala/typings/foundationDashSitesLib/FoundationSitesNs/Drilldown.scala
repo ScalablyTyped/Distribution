@@ -13,8 +13,8 @@ trait Drilldown extends js.Object {
 object Drilldown {
   @scala.inline
   def apply(destroy: js.Function0[scala.Unit]): Drilldown = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
+    val __obj = js.Dynamic.literal(destroy = destroy)
+  
     __obj.asInstanceOf[Drilldown]
   }
 }

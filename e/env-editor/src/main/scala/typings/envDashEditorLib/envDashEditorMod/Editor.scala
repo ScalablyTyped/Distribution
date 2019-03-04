@@ -24,13 +24,8 @@ object Editor {
     name: java.lang.String,
     paths: js.Array[java.lang.String]
   ): Editor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bin")(bin)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isTerminalEditor")(isTerminalEditor)
-    __obj.updateDynamic("keywords")(keywords)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("paths")(paths)
+    val __obj = js.Dynamic.literal(bin = bin, id = id, isTerminalEditor = isTerminalEditor, keywords = keywords, name = name, paths = paths)
+  
     __obj.asInstanceOf[Editor]
   }
 }

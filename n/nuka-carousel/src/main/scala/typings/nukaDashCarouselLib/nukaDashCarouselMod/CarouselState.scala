@@ -68,20 +68,8 @@ object CarouselState {
     top: scala.Double,
     wrapToIndex: scala.Boolean
   ): CarouselState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentSlide")(currentSlide)
-    __obj.updateDynamic("dragging")(dragging)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("frameWidth")(frameWidth)
-    __obj.updateDynamic("isWrappingAround")(isWrappingAround)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("pauseOnHover")(pauseOnHover)
-    __obj.updateDynamic("resetWrapAroundPosition")(resetWrapAroundPosition)
-    __obj.updateDynamic("slideCount")(slideCount)
-    __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
-    __obj.updateDynamic("slidesToScroll")(slidesToScroll)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("wrapToIndex")(wrapToIndex)
+    val __obj = js.Dynamic.literal(currentSlide = currentSlide, dragging = dragging, easing = easing, frameWidth = frameWidth, isWrappingAround = isWrappingAround, left = left, pauseOnHover = pauseOnHover, resetWrapAroundPosition = resetWrapAroundPosition, slideCount = slideCount, slideWidth = slideWidth.asInstanceOf[js.Any], slidesToScroll = slidesToScroll, top = top, wrapToIndex = wrapToIndex)
+  
     __obj.asInstanceOf[CarouselState]
   }
 }

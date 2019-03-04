@@ -18,8 +18,8 @@ trait MenuOption extends js.Object {
 object MenuOption {
   @scala.inline
   def apply(`type`: java.lang.String): MenuOption = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MenuOption]
   }
 }

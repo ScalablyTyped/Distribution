@@ -35,9 +35,8 @@ object NotificationChange {
     ],
     entryPath: java.lang.String
   ): NotificationChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
-    __obj.updateDynamic("entryPath")(entryPath)
+    val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], entryPath = entryPath)
+  
     __obj.asInstanceOf[NotificationChange]
   }
 }

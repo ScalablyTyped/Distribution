@@ -23,10 +23,8 @@ trait GetQueueResult extends js.Object {
 object GetQueueResult {
   @scala.inline
   def apply(arn: java.lang.String, id: java.lang.String, url: java.lang.String): GetQueueResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, url = url)
+  
     __obj.asInstanceOf[GetQueueResult]
   }
 }

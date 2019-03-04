@@ -26,13 +26,8 @@ object XSolverDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSolverDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComponentDescription")(ComponentDescription)
-    __obj.updateDynamic("StatusDescription")(StatusDescription)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPropertyDescription")(getPropertyDescription)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ComponentDescription = ComponentDescription, StatusDescription = StatusDescription, acquire = acquire, getPropertyDescription = getPropertyDescription, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSolverDescription]
   }
 }

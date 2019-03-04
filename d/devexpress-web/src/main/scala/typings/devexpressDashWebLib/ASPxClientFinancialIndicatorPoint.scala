@@ -34,11 +34,8 @@ object ASPxClientFinancialIndicatorPoint {
     financialIndicator: ASPxClientFinancialIndicator,
     valueLevel: java.lang.String
   ): ASPxClientFinancialIndicatorPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argument")(argument)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("financialIndicator")(financialIndicator)
-    __obj.updateDynamic("valueLevel")(valueLevel)
+    val __obj = js.Dynamic.literal(argument = argument, chart = chart, financialIndicator = financialIndicator, valueLevel = valueLevel)
+  
     __obj.asInstanceOf[ASPxClientFinancialIndicatorPoint]
   }
 }

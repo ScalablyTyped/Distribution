@@ -13,10 +13,8 @@ trait PullRequestTrigger extends BuildTrigger {
 object PullRequestTrigger {
   @scala.inline
   def apply(branchFilters: js.Array[java.lang.String], forks: Forks, triggerType: DefinitionTriggerType): PullRequestTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchFilters")(branchFilters)
-    __obj.updateDynamic("forks")(forks)
-    __obj.updateDynamic("triggerType")(triggerType)
+    val __obj = js.Dynamic.literal(branchFilters = branchFilters, forks = forks, triggerType = triggerType)
+  
     __obj.asInstanceOf[PullRequestTrigger]
   }
 }

@@ -30,15 +30,7 @@ object KeyAgreeRecipientInfo {
     version: scala.Double,
     ukm: asn1jsLib.asn1jsMod.OctetString = null
   ): KeyAgreeRecipientInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("keyEncryptionAlgorithm")(keyEncryptionAlgorithm)
-    __obj.updateDynamic("originator")(originator)
-    __obj.updateDynamic("recipientCertificate")(recipientCertificate)
-    __obj.updateDynamic("recipientEncryptedKeys")(recipientEncryptedKeys)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyEncryptionAlgorithm = keyEncryptionAlgorithm, originator = originator, recipientCertificate = recipientCertificate, recipientEncryptedKeys = recipientEncryptedKeys, toJSON = toJSON, toSchema = toSchema, version = version)
     if (ukm != null) __obj.updateDynamic("ukm")(ukm)
     __obj.asInstanceOf[KeyAgreeRecipientInfo]
   }

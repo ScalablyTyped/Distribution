@@ -15,9 +15,8 @@ object VideoBuilder {
     build: js.Function0[AdWordsOperation[Media]],
     withYouTubeVideoId: js.Function1[java.lang.String, VideoBuilder[Media]]
   ): VideoBuilder[Media] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withYouTubeVideoId")(withYouTubeVideoId)
+    val __obj = js.Dynamic.literal(build = build, withYouTubeVideoId = withYouTubeVideoId)
+  
     __obj.asInstanceOf[VideoBuilder[Media]]
   }
 }

@@ -45,9 +45,7 @@ object Anon_AcknowledgeAbuseAlt {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AcknowledgeAbuseAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("revisionId")(revisionId)
+    val __obj = js.Dynamic.literal(fileId = fileId, revisionId = revisionId)
     if (!js.isUndefined(acknowledgeAbuse)) __obj.updateDynamic("acknowledgeAbuse")(acknowledgeAbuse)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

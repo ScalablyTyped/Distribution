@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(cleditor: JQueryCLEditorStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cleditor")(cleditor)
+    val __obj = js.Dynamic.literal(cleditor = cleditor)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

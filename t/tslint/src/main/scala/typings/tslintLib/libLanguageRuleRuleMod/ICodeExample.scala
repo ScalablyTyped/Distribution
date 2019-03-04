@@ -20,10 +20,7 @@ object ICodeExample {
     pass: java.lang.String,
     fail: java.lang.String = null
   ): ICodeExample = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("pass")(pass)
+    val __obj = js.Dynamic.literal(config = config, description = description, pass = pass)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[ICodeExample]
   }

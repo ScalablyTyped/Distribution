@@ -28,8 +28,7 @@ object Anon_CompleteCurrent {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): Anon_CompleteCurrent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(urls = urls)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (current != null) __obj.updateDynamic("current")(current)
     if (fail != null) __obj.updateDynamic("fail")(fail)

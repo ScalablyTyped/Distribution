@@ -47,14 +47,8 @@ object XPagePrintable {
       scala.Unit
     ]
   ): XPagePrintable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PagePrintSettings")(PagePrintSettings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPagePrintSettings")(getPagePrintSettings)
-    __obj.updateDynamic("printPages")(printPages)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPagePrintSettings")(setPagePrintSettings)
+    val __obj = js.Dynamic.literal(PagePrintSettings = PagePrintSettings, acquire = acquire, getPagePrintSettings = getPagePrintSettings, printPages = printPages, queryInterface = queryInterface, release = release, setPagePrintSettings = setPagePrintSettings)
+  
     __obj.asInstanceOf[XPagePrintable]
   }
 }

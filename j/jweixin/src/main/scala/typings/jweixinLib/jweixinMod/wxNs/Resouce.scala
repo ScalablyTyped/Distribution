@@ -12,8 +12,8 @@ trait Resouce extends js.Object {
 object Resouce {
   @scala.inline
   def apply(localId: java.lang.String): Resouce = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localId")(localId)
+    val __obj = js.Dynamic.literal(localId = localId)
+  
     __obj.asInstanceOf[Resouce]
   }
 }

@@ -32,17 +32,8 @@ object ITextSnapshotLine {
     start: js.Function0[SnapshotPoint],
     startPosition: js.Function0[scala.Double]
   ): ITextSnapshotLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endIncludingLineBreak")(endIncludingLineBreak)
-    __obj.updateDynamic("endIncludingLineBreakPosition")(endIncludingLineBreakPosition)
-    __obj.updateDynamic("endPosition")(endPosition)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("snapshot")(snapshot)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startPosition")(startPosition)
+    val __obj = js.Dynamic.literal(end = end, endIncludingLineBreak = endIncludingLineBreak, endIncludingLineBreakPosition = endIncludingLineBreakPosition, endPosition = endPosition, getText = getText, length = length, lineNumber = lineNumber, snapshot = snapshot, start = start, startPosition = startPosition)
+  
     __obj.asInstanceOf[ITextSnapshotLine]
   }
 }

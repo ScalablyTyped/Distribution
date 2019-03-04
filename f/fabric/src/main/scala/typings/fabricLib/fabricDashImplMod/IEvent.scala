@@ -14,8 +14,7 @@ trait IEvent extends js.Object {
 object IEvent {
   @scala.inline
   def apply(e: stdLib.Event, target: Object = null, transform: fabricLib.Anon_Corner = null): IEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
+    val __obj = js.Dynamic.literal(e = e)
     if (target != null) __obj.updateDynamic("target")(target)
     if (transform != null) __obj.updateDynamic("transform")(transform)
     __obj.asInstanceOf[IEvent]

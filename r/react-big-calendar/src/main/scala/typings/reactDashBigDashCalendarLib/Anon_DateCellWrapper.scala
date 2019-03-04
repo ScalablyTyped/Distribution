@@ -18,10 +18,8 @@ object Anon_DateCellWrapper {
     dayWrapper: reactLib.reactMod.ReactNs.ComponentType[js.Object],
     eventWrapper: reactLib.reactMod.ReactNs.ComponentType[js.Object]
   ): Anon_DateCellWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateCellWrapper")(dateCellWrapper.asInstanceOf[js.Any])
-    __obj.updateDynamic("dayWrapper")(dayWrapper.asInstanceOf[js.Any])
-    __obj.updateDynamic("eventWrapper")(eventWrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dateCellWrapper = dateCellWrapper.asInstanceOf[js.Any], dayWrapper = dayWrapper.asInstanceOf[js.Any], eventWrapper = eventWrapper.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DateCellWrapper]
   }
 }

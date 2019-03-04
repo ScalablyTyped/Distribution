@@ -73,24 +73,8 @@ object XPanel {
     setOrderIndex: js.Function1[scala.Double, scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dialog")(Dialog)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("OrderIndex")(OrderIndex)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("collapse")(collapse)
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("getDialog")(getDialog)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getOrderIndex")(getOrderIndex)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("isExpanded")(isExpanded)
-    __obj.updateDynamic("moveDown")(moveDown)
-    __obj.updateDynamic("moveFirst")(moveFirst)
-    __obj.updateDynamic("moveLast")(moveLast)
-    __obj.updateDynamic("moveUp")(moveUp)
-    __obj.updateDynamic("setOrderIndex")(setOrderIndex)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(Dialog = Dialog, Id = Id, OrderIndex = OrderIndex, Title = Title, collapse = collapse, expand = expand, getDialog = getDialog, getId = getId, getOrderIndex = getOrderIndex, getTitle = getTitle, isExpanded = isExpanded, moveDown = moveDown, moveFirst = moveFirst, moveLast = moveLast, moveUp = moveUp, setOrderIndex = setOrderIndex, setTitle = setTitle)
+  
     __obj.asInstanceOf[XPanel]
   }
 }

@@ -21,9 +21,7 @@ object AesGcmParams {
     additionalData: stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer = null,
     tagLength: scala.Int | scala.Double = null
   ): AesGcmParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any], name = name)
     if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
     if (tagLength != null) __obj.updateDynamic("tagLength")(tagLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[AesGcmParams]

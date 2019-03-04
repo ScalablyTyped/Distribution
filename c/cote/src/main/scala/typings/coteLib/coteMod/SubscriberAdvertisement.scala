@@ -20,8 +20,7 @@ object SubscriberAdvertisement {
     namespace: java.lang.String = null,
     subscribesTo: js.Array[java.lang.String] = null
   ): SubscriberAdvertisement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (key != null) __obj.updateDynamic("key")(key)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (subscribesTo != null) __obj.updateDynamic("subscribesTo")(subscribesTo)

@@ -16,9 +16,8 @@ object Anon_AdminContext {
     failure: js.Function2[java.lang.String, scala.Double, js.Any],
     success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiAppAdminContext, js.Any]
   ): Anon_AdminContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AdminContext]
   }
 }

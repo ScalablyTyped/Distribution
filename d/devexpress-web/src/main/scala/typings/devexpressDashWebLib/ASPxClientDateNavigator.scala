@@ -37,25 +37,8 @@ object ASPxClientDateNavigator {
     VisibleMonthChanged: ASPxClientEvent[ASPxClientDateNavigatorVisibleMonthChangedEventHandler[ASPxClientDateNavigator]],
     name: java.lang.String
   ): ASPxClientDateNavigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("DayCellCustomHighlight")(DayCellCustomHighlight)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SelectionChanged")(SelectionChanged)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("VisibleMonthChanged")(VisibleMonthChanged)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, DayCellCustomHighlight = DayCellCustomHighlight, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SelectionChanged = SelectionChanged, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, VisibleMonthChanged = VisibleMonthChanged, name = name)
+  
     __obj.asInstanceOf[ASPxClientDateNavigator]
   }
 }

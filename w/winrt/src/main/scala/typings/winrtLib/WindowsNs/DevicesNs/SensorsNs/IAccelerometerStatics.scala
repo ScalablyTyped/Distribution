@@ -12,8 +12,8 @@ trait IAccelerometerStatics extends js.Object {
 object IAccelerometerStatics {
   @scala.inline
   def apply(getDefault: js.Function0[Accelerometer]): IAccelerometerStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDefault")(getDefault)
+    val __obj = js.Dynamic.literal(getDefault = getDefault)
+  
     __obj.asInstanceOf[IAccelerometerStatics]
   }
 }

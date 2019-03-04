@@ -28,8 +28,7 @@ object TypeScriptError {
     startPosition: gulpDashTypescriptLib.Anon_Character = null,
     tsFile: typescriptLib.typescriptMod.tsNs.SourceFile = null
   ): TypeScriptError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagnostic")(diagnostic)
+    val __obj = js.Dynamic.literal(diagnostic = diagnostic)
     if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)
     if (file != null) __obj.updateDynamic("file")(file)
     if (fullFilename != null) __obj.updateDynamic("fullFilename")(fullFilename)

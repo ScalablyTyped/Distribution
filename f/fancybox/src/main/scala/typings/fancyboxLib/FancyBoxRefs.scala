@@ -28,15 +28,8 @@ object FancyBoxRefs {
     stage: JQuery,
     toolbar: JQuery
   ): FancyBoxRefs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bg")(bg)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("infobar")(infobar)
-    __obj.updateDynamic("inner")(inner)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("toolbar")(toolbar)
+    val __obj = js.Dynamic.literal(bg = bg, caption = caption, container = container, infobar = infobar, inner = inner, navigation = navigation, stage = stage, toolbar = toolbar)
+  
     __obj.asInstanceOf[FancyBoxRefs]
   }
 }

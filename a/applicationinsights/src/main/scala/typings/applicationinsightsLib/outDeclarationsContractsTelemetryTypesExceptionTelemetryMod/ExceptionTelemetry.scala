@@ -27,8 +27,7 @@ object ExceptionTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): ExceptionTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exception")(exception)
+    val __obj = js.Dynamic.literal(exception = exception)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (measurements != null) __obj.updateDynamic("measurements")(measurements)
     if (properties != null) __obj.updateDynamic("properties")(properties)

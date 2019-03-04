@@ -22,9 +22,7 @@ object SignMessageParams {
     keepSession: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): SignMessageParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message, path = path.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (coin != null) __obj.updateDynamic("coin")(coin)
     if (device != null) __obj.updateDynamic("device")(device)

@@ -19,8 +19,7 @@ trait Condition extends js.Object {
 object Condition {
   @scala.inline
   def apply(ComparisonOperator: ComparisonOperator, AttributeValueList: AttributeValueList = null): Condition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any])
     if (AttributeValueList != null) __obj.updateDynamic("AttributeValueList")(AttributeValueList)
     __obj.asInstanceOf[Condition]
   }

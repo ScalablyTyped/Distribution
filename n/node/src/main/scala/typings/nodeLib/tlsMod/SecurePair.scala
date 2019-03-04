@@ -13,9 +13,8 @@ trait SecurePair extends js.Object {
 object SecurePair {
   @scala.inline
   def apply(cleartext: js.Any, encrypted: js.Any): SecurePair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cleartext")(cleartext)
-    __obj.updateDynamic("encrypted")(encrypted)
+    val __obj = js.Dynamic.literal(cleartext = cleartext, encrypted = encrypted)
+  
     __obj.asInstanceOf[SecurePair]
   }
 }

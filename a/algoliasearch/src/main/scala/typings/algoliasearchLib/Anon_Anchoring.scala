@@ -32,9 +32,7 @@ object Anon_Anchoring {
     pattern: java.lang.String,
     context: java.lang.String = null
   ): Anon_Anchoring = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchoring")(anchoring.asInstanceOf[js.Any])
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(anchoring = anchoring.asInstanceOf[js.Any], pattern = pattern)
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[Anon_Anchoring]
   }

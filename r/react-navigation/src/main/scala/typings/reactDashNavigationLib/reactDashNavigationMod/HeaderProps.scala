@@ -34,21 +34,7 @@ object HeaderProps {
     titleInterpolator: js.Function1[NavigationSceneRendererProps, js.Object],
     screenProps: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getScreenDetails")(getScreenDetails)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("leftInterpolator")(leftInterpolator)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("rightInterpolator")(rightInterpolator)
-    __obj.updateDynamic("router")(router)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("scenes")(scenes)
-    __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    __obj.updateDynamic("titleInterpolator")(titleInterpolator)
+    val __obj = js.Dynamic.literal(getScreenDetails = getScreenDetails, index = index, layout = layout, leftInterpolator = leftInterpolator, mode = mode, navigation = navigation, position = position, progress = progress, rightInterpolator = rightInterpolator, router = router, scene = scene, scenes = scenes, style = style.asInstanceOf[js.Any], titleInterpolator = titleInterpolator)
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
     __obj.asInstanceOf[HeaderProps]
   }

@@ -30,16 +30,8 @@ object Card {
     username: java.lang.String,
     website: java.lang.String
   ): Card = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountHistory")(accountHistory)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("posts")(posts)
-    __obj.updateDynamic("username")(username)
-    __obj.updateDynamic("website")(website)
+    val __obj = js.Dynamic.literal(accountHistory = accountHistory, address = address, company = company, email = email, name = name, phone = phone, posts = posts, username = username, website = website)
+  
     __obj.asInstanceOf[Card]
   }
 }

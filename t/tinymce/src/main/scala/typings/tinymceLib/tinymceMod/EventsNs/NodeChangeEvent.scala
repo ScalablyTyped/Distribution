@@ -26,17 +26,8 @@ object NodeChangeEvent {
     target: java.lang.String,
     `type`: java.lang.String
   ): NodeChangeEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("parents")(parents)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("selectionChange")(selectionChange)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(element = element, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, parents = parents, preventDefault = preventDefault, selectionChange = selectionChange, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NodeChangeEvent]
   }
 }

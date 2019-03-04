@@ -28,15 +28,8 @@ object IUserGroup {
     Predefined: scala.Boolean,
     RemoveMember: js.Function1[scala.Double, scala.Unit]
   ): IUserGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddMember")(AddMember)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Members")(Members)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Predefined")(Predefined)
-    __obj.updateDynamic("RemoveMember")(RemoveMember)
+    val __obj = js.Dynamic.literal(AddMember = AddMember, Clone = Clone, CloneFrom = CloneFrom, ID = ID, Members = Members, Name = Name, Predefined = Predefined, RemoveMember = RemoveMember)
+  
     __obj.asInstanceOf[IUserGroup]
   }
 }

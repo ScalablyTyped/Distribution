@@ -57,10 +57,8 @@ object ListingElement {
     sticky: js.UndefOr[scala.Boolean] = js.undefined,
     target: java.lang.String = null
   ): ListingElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(date = date, name = name, size = size)
+    __obj.updateDynamic("type")(`type`)
     if (group != null) __obj.updateDynamic("group")(group)
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (rights != null) __obj.updateDynamic("rights")(rights)

@@ -36,8 +36,7 @@ object VisibilityEventData {
     once: js.UndefOr[scala.Boolean] = js.undefined,
     updateOn: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.events | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.repaint = null
   ): VisibilityEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculations")(calculations)
+    val __obj = js.Dynamic.literal(calculations = calculations)
     if (as != null) __obj.updateDynamic("as")(as)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)

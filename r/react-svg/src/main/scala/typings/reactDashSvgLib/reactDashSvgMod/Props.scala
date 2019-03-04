@@ -34,8 +34,7 @@ object Props {
     svgStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     wrapper: reactDashSvgLib.reactDashSvgLibStrings.div | reactDashSvgLib.reactDashSvgLibStrings.span = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])

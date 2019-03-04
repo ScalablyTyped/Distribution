@@ -18,10 +18,8 @@ object Anon_CardHostedFields {
     hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields,
     mobile: js.Any
   ): Anon_CardHostedFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("card")(card)
-    __obj.updateDynamic("hostedFields")(hostedFields)
-    __obj.updateDynamic("mobile")(mobile)
+    val __obj = js.Dynamic.literal(card = card, hostedFields = hostedFields, mobile = mobile)
+  
     __obj.asInstanceOf[Anon_CardHostedFields]
   }
 }

@@ -36,10 +36,8 @@ object IMovieDB {
       scala.Unit
     ]
   ): IMovieDB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("movieImages")(movieImages)
-    __obj.updateDynamic("movieInfo")(movieInfo)
-    __obj.updateDynamic("searchMovie")(searchMovie)
+    val __obj = js.Dynamic.literal(movieImages = movieImages, movieInfo = movieInfo, searchMovie = searchMovie)
+  
     __obj.asInstanceOf[IMovieDB]
   }
 }

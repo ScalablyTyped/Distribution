@@ -203,24 +203,8 @@ object DataAccessDescriptor {
     ResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
     Selection: activexDashInteropLib.SafeArray[_]
   ): DataAccessDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
-    __obj.updateDynamic("BookmarkSelection")(BookmarkSelection)
-    __obj.updateDynamic("Column")(Column)
-    __obj.updateDynamic("ColumnName")(ColumnName)
-    __obj.updateDynamic("Command")(Command)
-    __obj.updateDynamic("CommandType")(CommandType)
-    __obj.updateDynamic("ConnectionInfo")(ConnectionInfo)
-    __obj.updateDynamic("ConnectionResource")(ConnectionResource)
-    __obj.updateDynamic("DataSourceName")(DataSourceName)
-    __obj.updateDynamic("DatabaseLocation")(DatabaseLocation)
-    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("GroupBy")(GroupBy)
-    __obj.updateDynamic("HavingClause")(HavingClause)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("ResultSet")(ResultSet)
-    __obj.updateDynamic("Selection")(Selection)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, BookmarkSelection = BookmarkSelection, Column = Column, ColumnName = ColumnName, Command = Command, CommandType = CommandType, ConnectionInfo = ConnectionInfo, ConnectionResource = ConnectionResource, DataSourceName = DataSourceName, DatabaseLocation = DatabaseLocation, EscapeProcessing = EscapeProcessing, Filter = Filter, GroupBy = GroupBy, HavingClause = HavingClause, Order = Order, ResultSet = ResultSet, Selection = Selection)
+  
     __obj.asInstanceOf[DataAccessDescriptor]
   }
 }

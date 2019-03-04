@@ -13,8 +13,8 @@ trait Anon_Companyid
 object Anon_Companyid {
   @scala.inline
   def apply(company_id: java.lang.String): Anon_Companyid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("company_id")(company_id)
+    val __obj = js.Dynamic.literal(company_id = company_id)
+  
     __obj.asInstanceOf[Anon_Companyid]
   }
 }

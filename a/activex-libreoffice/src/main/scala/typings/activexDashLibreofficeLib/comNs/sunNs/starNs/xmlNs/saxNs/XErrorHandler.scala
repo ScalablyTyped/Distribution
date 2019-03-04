@@ -34,13 +34,8 @@ object XErrorHandler {
     release: js.Function0[scala.Unit],
     warning: js.Function1[js.Any, scala.Unit]
   ): XErrorHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fatalError")(fatalError)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(acquire = acquire, error = error, fatalError = fatalError, queryInterface = queryInterface, release = release, warning = warning)
+  
     __obj.asInstanceOf[XErrorHandler]
   }
 }

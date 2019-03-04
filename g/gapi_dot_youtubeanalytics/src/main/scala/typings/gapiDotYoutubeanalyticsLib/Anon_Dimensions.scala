@@ -62,9 +62,9 @@ object Anon_Dimensions {
     sort: java.lang.String = null,
     `start-index`: scala.Int | scala.Double = null
   ): Anon_Dimensions = {
-    val __obj = js.Dynamic.literal(`end-date` = `end-date`, `start-date` = `start-date`)
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("metrics")(metrics)
+    val __obj = js.Dynamic.literal(ids = ids, metrics = metrics)
+    __obj.updateDynamic("end-date")(`end-date`)
+    __obj.updateDynamic("start-date")(`start-date`)
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (filters != null) __obj.updateDynamic("filters")(filters)

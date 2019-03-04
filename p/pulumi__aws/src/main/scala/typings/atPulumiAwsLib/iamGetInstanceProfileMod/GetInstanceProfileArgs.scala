@@ -15,8 +15,8 @@ trait GetInstanceProfileArgs extends js.Object {
 object GetInstanceProfileArgs {
   @scala.inline
   def apply(name: java.lang.String): GetInstanceProfileArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[GetInstanceProfileArgs]
   }
 }

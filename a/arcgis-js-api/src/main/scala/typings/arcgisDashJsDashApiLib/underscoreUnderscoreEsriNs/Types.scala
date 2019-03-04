@@ -18,10 +18,8 @@ object Types {
     key: java.lang.String | (js.Function1[/* obj */ js.Any, java.lang.String]),
     typeMap: arcgisDashJsDashApiLib.HashMap[Constructor[T]]
   ): Types[T, Base] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("typeMap")(typeMap)
+    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], typeMap = typeMap)
+  
     __obj.asInstanceOf[Types[T, Base]]
   }
 }

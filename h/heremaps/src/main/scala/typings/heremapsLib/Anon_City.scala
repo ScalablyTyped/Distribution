@@ -32,17 +32,8 @@ object Anon_City {
     street: java.lang.String,
     text: java.lang.String
   ): Anon_City = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("county")(county)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("house")(house)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("stateCode")(stateCode)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(city = city, country = country, countryCode = countryCode, county = county, district = district, house = house, postalCode = postalCode, stateCode = stateCode, street = street, text = text)
+  
     __obj.asInstanceOf[Anon_City]
   }
 }

@@ -36,9 +36,7 @@ object PostmarkMessageWithTemplate {
     TrackLinks: java.lang.String = null,
     TrackOpens: js.UndefOr[scala.Boolean] = js.undefined
   ): PostmarkMessageWithTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("From")(From)
-    __obj.updateDynamic("To")(To)
+    val __obj = js.Dynamic.literal(From = From, To = To)
     if (Bcc != null) __obj.updateDynamic("Bcc")(Bcc)
     if (Cc != null) __obj.updateDynamic("Cc")(Cc)
     if (Headers != null) __obj.updateDynamic("Headers")(Headers)

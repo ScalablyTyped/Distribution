@@ -13,9 +13,8 @@ trait Anon_FieldListKeyAscii extends js.Object {
 object Anon_FieldListKeyAscii {
   @scala.inline
   def apply(FieldList: scala.Double, KeyAscii: scala.Double): Anon_FieldListKeyAscii = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FieldList")(FieldList)
-    __obj.updateDynamic("KeyAscii")(KeyAscii)
+    val __obj = js.Dynamic.literal(FieldList = FieldList, KeyAscii = KeyAscii)
+  
     __obj.asInstanceOf[Anon_FieldListKeyAscii]
   }
 }

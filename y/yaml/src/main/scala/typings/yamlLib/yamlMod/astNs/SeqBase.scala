@@ -25,9 +25,7 @@ object SeqBase {
     tag: java.lang.String = null,
     `type`: yamlLib.yamlLibStrings.FLOW_SEQ | yamlLib.yamlLibStrings.SEQ = null
   ): SeqBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(items = items, toJSON = toJSON)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

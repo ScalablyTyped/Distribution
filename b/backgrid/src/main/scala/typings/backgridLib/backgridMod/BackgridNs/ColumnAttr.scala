@@ -28,15 +28,8 @@ object ColumnAttr {
     renderable: scala.Boolean,
     sortable: scala.Boolean
   ): ColumnAttr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cell")(cell)
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("formater")(formater)
-    __obj.updateDynamic("headerCell")(headerCell)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("renderable")(renderable)
-    __obj.updateDynamic("sortable")(sortable)
+    val __obj = js.Dynamic.literal(cell = cell, editable = editable, formater = formater, headerCell = headerCell, label = label, name = name, renderable = renderable, sortable = sortable)
+  
     __obj.asInstanceOf[ColumnAttr]
   }
 }

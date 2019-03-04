@@ -49,11 +49,8 @@ object IncrementData {
     PostEquidistant: js.Any,
     SubIncrements: activexDashInteropLib.SafeArray[SubIncrement]
   ): IncrementData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BaseValue")(BaseValue)
-    __obj.updateDynamic("Distance")(Distance)
-    __obj.updateDynamic("PostEquidistant")(PostEquidistant)
-    __obj.updateDynamic("SubIncrements")(SubIncrements)
+    val __obj = js.Dynamic.literal(BaseValue = BaseValue, Distance = Distance, PostEquidistant = PostEquidistant, SubIncrements = SubIncrements)
+  
     __obj.asInstanceOf[IncrementData]
   }
 }

@@ -40,8 +40,8 @@ object CallMethod {
       scala.Unit
     ]
   ): CallMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authCodeGrant")(authCodeGrant)
+    val __obj = js.Dynamic.literal(authCodeGrant = authCodeGrant)
+  
     __obj.asInstanceOf[CallMethod]
   }
 }

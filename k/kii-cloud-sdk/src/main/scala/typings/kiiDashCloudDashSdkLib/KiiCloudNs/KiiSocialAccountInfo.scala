@@ -14,10 +14,8 @@ trait KiiSocialAccountInfo extends js.Object {
 object KiiSocialAccountInfo {
   @scala.inline
   def apply(createdAt: scala.Double, provider: KiiSocialNetworkName, socialAccountId: java.lang.String): KiiSocialAccountInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("socialAccountId")(socialAccountId)
+    val __obj = js.Dynamic.literal(createdAt = createdAt, provider = provider, socialAccountId = socialAccountId)
+  
     __obj.asInstanceOf[KiiSocialAccountInfo]
   }
 }

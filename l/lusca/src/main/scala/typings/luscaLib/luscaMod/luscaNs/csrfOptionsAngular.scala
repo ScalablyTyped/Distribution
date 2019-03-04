@@ -22,8 +22,7 @@ object csrfOptionsAngular {
     key: java.lang.String = null,
     secret: java.lang.String = null
   ): csrfOptionsAngular = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angular")(angular)
+    val __obj = js.Dynamic.literal(angular = angular)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
     if (impl != null) __obj.updateDynamic("impl")(impl)
     if (key != null) __obj.updateDynamic("key")(key)

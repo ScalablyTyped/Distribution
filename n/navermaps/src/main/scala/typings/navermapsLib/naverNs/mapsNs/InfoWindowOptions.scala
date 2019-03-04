@@ -38,8 +38,7 @@ object InfoWindowOptions {
     position: Coord | CoordLiteral = null,
     zIndex: scala.Int | scala.Double = null
   ): InfoWindowOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (anchorColor != null) __obj.updateDynamic("anchorColor")(anchorColor)
     if (anchorSize != null) __obj.updateDynamic("anchorSize")(anchorSize.asInstanceOf[js.Any])
     if (!js.isUndefined(anchorSkew)) __obj.updateDynamic("anchorSkew")(anchorSkew)

@@ -24,13 +24,8 @@ object NiceScrollPage {
     w: scala.Double,
     width: scala.Double
   ): NiceScrollPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("maxh")(maxh)
-    __obj.updateDynamic("maxw")(maxw)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(h = h, height = height, maxh = maxh, maxw = maxw, w = w, width = width)
+  
     __obj.asInstanceOf[NiceScrollPage]
   }
 }

@@ -21,7 +21,7 @@ class InvokeHistory ()
   /**
     * @hidden
     */
-  var `end_time_`: js.Any = js.native
+  var end_time_ : js.Any = js.native
   /**
     * @hidden
     */
@@ -29,7 +29,7 @@ class InvokeHistory ()
   /**
     * @hidden
     */
-  var `start_time_`: js.Any = js.native
+  var start_time_ : js.Any = js.native
   /**
     * @hidden
     */

@@ -20,11 +20,8 @@ object Anon_Large {
     small: java.lang.String,
     xlarge: java.lang.String
   ): Anon_Large = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("large")(large)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("small")(small)
-    __obj.updateDynamic("xlarge")(xlarge)
+    val __obj = js.Dynamic.literal(large = large, medium = medium, small = small, xlarge = xlarge)
+  
     __obj.asInstanceOf[Anon_Large]
   }
 }

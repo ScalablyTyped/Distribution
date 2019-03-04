@@ -30,8 +30,7 @@ object FunctionOptions {
     returns: java.lang.String = null,
     window: js.UndefOr[scala.Boolean] = js.undefined
   ): FunctionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(language = language)
     if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
     if (!js.isUndefined(onNull)) __obj.updateDynamic("onNull")(onNull)
     if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])

@@ -20,11 +20,8 @@ object GetMoonPositionResult {
     distance: scala.Double,
     parallacticAngle: scala.Double
   ): GetMoonPositionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("azimuth")(azimuth)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("parallacticAngle")(parallacticAngle)
+    val __obj = js.Dynamic.literal(altitude = altitude, azimuth = azimuth, distance = distance, parallacticAngle = parallacticAngle)
+  
     __obj.asInstanceOf[GetMoonPositionResult]
   }
 }

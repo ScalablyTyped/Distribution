@@ -13,9 +13,8 @@ trait Anon_CenterX extends js.Object {
 object Anon_CenterX {
   @scala.inline
   def apply(centerX: scala.Double, centerY: scala.Double): Anon_CenterX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("centerX")(centerX)
-    __obj.updateDynamic("centerY")(centerY)
+    val __obj = js.Dynamic.literal(centerX = centerX, centerY = centerY)
+  
     __obj.asInstanceOf[Anon_CenterX]
   }
 }

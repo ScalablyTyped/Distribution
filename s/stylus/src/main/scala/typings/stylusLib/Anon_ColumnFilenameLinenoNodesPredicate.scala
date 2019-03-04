@@ -26,13 +26,8 @@ object Anon_ColumnFilenameLinenoNodesPredicate {
     predicate: java.lang.String,
     `type`: java.lang.String
   ): Anon_ColumnFilenameLinenoNodesPredicate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("predicate")(predicate)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, nodes = nodes, predicate = predicate)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoNodesPredicate]
   }
 }

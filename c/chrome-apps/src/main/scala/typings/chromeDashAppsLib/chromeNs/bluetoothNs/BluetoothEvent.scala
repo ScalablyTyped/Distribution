@@ -12,8 +12,8 @@ trait BluetoothEvent[T] extends js.Object {
 object BluetoothEvent {
   @scala.inline
   def apply[T](addListener: js.Function1[js.Function1[/* event */ T, scala.Unit], scala.Unit]): BluetoothEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
+    val __obj = js.Dynamic.literal(addListener = addListener)
+  
     __obj.asInstanceOf[BluetoothEvent[T]]
   }
 }

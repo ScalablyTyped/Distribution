@@ -30,10 +30,7 @@ object ParsedJID {
     unescapedFull: java.lang.String = null,
     unescapedLocal: java.lang.String = null
   ): ParsedJID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bare")(bare)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("full")(full)
+    val __obj = js.Dynamic.literal(bare = bare, domain = domain, full = full)
     if (local != null) __obj.updateDynamic("local")(local)
     if (!js.isUndefined(prepped)) __obj.updateDynamic("prepped")(prepped)
     if (resource != null) __obj.updateDynamic("resource")(resource)

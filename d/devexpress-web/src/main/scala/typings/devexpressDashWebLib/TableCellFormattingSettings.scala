@@ -63,15 +63,8 @@ object TableCellFormattingSettings {
     preferredWidth: TableWidthUnit,
     verticalAlignment: js.Any
   ): TableCellFormattingSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marginBottom")(marginBottom)
-    __obj.updateDynamic("marginLeft")(marginLeft)
-    __obj.updateDynamic("marginRight")(marginRight)
-    __obj.updateDynamic("marginTop")(marginTop)
-    __obj.updateDynamic("marginsSameAsTable")(marginsSameAsTable)
-    __obj.updateDynamic("noWrap")(noWrap)
-    __obj.updateDynamic("preferredWidth")(preferredWidth)
-    __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    val __obj = js.Dynamic.literal(marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, marginsSameAsTable = marginsSameAsTable, noWrap = noWrap, preferredWidth = preferredWidth, verticalAlignment = verticalAlignment)
+  
     __obj.asInstanceOf[TableCellFormattingSettings]
   }
 }

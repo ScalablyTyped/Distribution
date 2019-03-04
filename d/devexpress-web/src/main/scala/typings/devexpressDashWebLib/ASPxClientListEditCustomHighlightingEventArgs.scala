@@ -24,9 +24,8 @@ trait ASPxClientListEditCustomHighlightingEventArgs extends ASPxClientEventArgs 
 object ASPxClientListEditCustomHighlightingEventArgs {
   @scala.inline
   def apply(filter: java.lang.String, highlighting: js.Object): ASPxClientListEditCustomHighlightingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("highlighting")(highlighting)
+    val __obj = js.Dynamic.literal(filter = filter, highlighting = highlighting)
+  
     __obj.asInstanceOf[ASPxClientListEditCustomHighlightingEventArgs]
   }
 }

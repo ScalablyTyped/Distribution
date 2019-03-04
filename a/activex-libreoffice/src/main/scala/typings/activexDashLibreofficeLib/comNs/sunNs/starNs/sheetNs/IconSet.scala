@@ -26,16 +26,8 @@ object IconSet {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): IconSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IconSetEntries")(IconSetEntries)
-    __obj.updateDynamic("Icons")(Icons)
-    __obj.updateDynamic("Reverse")(Reverse)
-    __obj.updateDynamic("ShowValue")(ShowValue)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(IconSetEntries = IconSetEntries, Icons = Icons, Reverse = Reverse, ShowValue = ShowValue, Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[IconSet]
   }
 }

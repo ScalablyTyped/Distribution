@@ -21,9 +21,8 @@ trait RuleSet extends js.Object {
 object RuleSet {
   @scala.inline
   def apply(HandleFolder: scala.Boolean, Rules: activexDashInteropLib.SafeArray[Rule]): RuleSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HandleFolder")(HandleFolder)
-    __obj.updateDynamic("Rules")(Rules)
+    val __obj = js.Dynamic.literal(HandleFolder = HandleFolder, Rules = Rules)
+  
     __obj.asInstanceOf[RuleSet]
   }
 }

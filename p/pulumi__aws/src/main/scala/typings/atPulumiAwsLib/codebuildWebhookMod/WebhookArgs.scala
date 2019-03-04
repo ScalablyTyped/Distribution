@@ -22,8 +22,7 @@ object WebhookArgs {
     projectName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     branchFilter: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): WebhookArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
     if (branchFilter != null) __obj.updateDynamic("branchFilter")(branchFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookArgs]
   }

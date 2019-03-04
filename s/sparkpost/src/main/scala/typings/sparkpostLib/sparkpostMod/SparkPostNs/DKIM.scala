@@ -27,9 +27,7 @@ object DKIM {
     `private`: java.lang.String = null,
     signing_domain: java.lang.String = null
   ): DKIM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("public")(public)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(public = public, selector = selector)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (`private` != null) __obj.updateDynamic("private")(`private`)
     if (signing_domain != null) __obj.updateDynamic("signing_domain")(signing_domain)

@@ -13,9 +13,8 @@ trait Auth0LockAdditionalSignUpFieldOption extends js.Object {
 object Auth0LockAdditionalSignUpFieldOption {
   @scala.inline
   def apply(label: java.lang.String, value: java.lang.String): Auth0LockAdditionalSignUpFieldOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(label = label, value = value)
+  
     __obj.asInstanceOf[Auth0LockAdditionalSignUpFieldOption]
   }
 }

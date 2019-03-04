@@ -19,8 +19,8 @@ object InputMediaPhoto {
     caption: java.lang.String = null,
     parse_mode: ParseMode = null
   ): InputMediaPhoto = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("media")(media)
+    val __obj = js.Dynamic.literal(media = media)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode)
     __obj.asInstanceOf[InputMediaPhoto]

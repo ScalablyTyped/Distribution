@@ -18,10 +18,8 @@ trait IGenericMeasureLayout extends IGenericBaseLayout {
 object IGenericMeasureLayout {
   @scala.inline
   def apply(qInfo: INxInfo, qMeasure: INxLibraryMeasureDef, qMeta: INxMeta): IGenericMeasureLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qMeasure")(qMeasure)
-    __obj.updateDynamic("qMeta")(qMeta)
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qMeasure = qMeasure, qMeta = qMeta)
+  
     __obj.asInstanceOf[IGenericMeasureLayout]
   }
 }

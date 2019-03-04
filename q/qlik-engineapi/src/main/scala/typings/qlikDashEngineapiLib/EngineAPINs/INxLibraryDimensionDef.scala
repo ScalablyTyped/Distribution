@@ -35,11 +35,8 @@ object INxLibraryDimensionDef {
     qGrouping: NxGrpType,
     qLabelExpression: java.lang.String
   ): INxLibraryDimensionDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFieldDefs")(qFieldDefs)
-    __obj.updateDynamic("qFieldLabels")(qFieldLabels)
-    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    __obj.updateDynamic("qLabelExpression")(qLabelExpression)
+    val __obj = js.Dynamic.literal(qFieldDefs = qFieldDefs, qFieldLabels = qFieldLabels, qGrouping = qGrouping.asInstanceOf[js.Any], qLabelExpression = qLabelExpression)
+  
     __obj.asInstanceOf[INxLibraryDimensionDef]
   }
 }

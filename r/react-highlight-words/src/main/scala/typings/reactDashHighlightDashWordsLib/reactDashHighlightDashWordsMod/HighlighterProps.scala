@@ -67,9 +67,7 @@ object HighlighterProps {
     unhighlightClassName: java.lang.String = null,
     unhighlightStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): HighlighterProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("searchWords")(searchWords)
-    __obj.updateDynamic("textToHighlight")(textToHighlight)
+    val __obj = js.Dynamic.literal(searchWords = searchWords, textToHighlight = textToHighlight)
     if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle)

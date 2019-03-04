@@ -12,8 +12,8 @@ trait Anon_WeightedTargets extends js.Object {
 object Anon_WeightedTargets {
   @scala.inline
   def apply(weightedTargets: js.Array[Anon_VirtualNode]): Anon_WeightedTargets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("weightedTargets")(weightedTargets)
+    val __obj = js.Dynamic.literal(weightedTargets = weightedTargets)
+  
     __obj.asInstanceOf[Anon_WeightedTargets]
   }
 }

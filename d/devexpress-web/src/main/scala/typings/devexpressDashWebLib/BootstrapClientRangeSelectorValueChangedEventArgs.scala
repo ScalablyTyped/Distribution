@@ -24,11 +24,8 @@ trait BootstrapClientRangeSelectorValueChangedEventArgs extends BootstrapUIWidge
 object BootstrapClientRangeSelectorValueChangedEventArgs {
   @scala.inline
   def apply(component: js.Object, element: js.Object, previousValue: js.Object, value: js.Object): BootstrapClientRangeSelectorValueChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("previousValue")(previousValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(component = component, element = element, previousValue = previousValue, value = value)
+  
     __obj.asInstanceOf[BootstrapClientRangeSelectorValueChangedEventArgs]
   }
 }

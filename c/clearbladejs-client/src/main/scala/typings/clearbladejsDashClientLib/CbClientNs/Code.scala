@@ -36,19 +36,8 @@ object Code {
     update: js.Function3[java.lang.String, java.lang.String, CbCallback, scala.Unit],
     user: APIUser
   ): Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("callTimeout")(callTimeout)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getAllServices")(getAllServices)
-    __obj.updateDynamic("getCompletedServices")(getCompletedServices)
-    __obj.updateDynamic("getFailedServices")(getFailedServices)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, callTimeout = callTimeout, create = create, delete = delete, execute = execute, getAllServices = getAllServices, getCompletedServices = getCompletedServices, getFailedServices = getFailedServices, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+  
     __obj.asInstanceOf[Code]
   }
 }

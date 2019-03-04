@@ -64,29 +64,8 @@ object ExecutionOptions {
     isQueryTracing: js.Function0[scala.Boolean],
     setHints: js.Function1[js.Array[java.lang.String], scala.Unit]
   ): ExecutionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCaptureStackTrace")(getCaptureStackTrace)
-    __obj.updateDynamic("getConsistency")(getConsistency)
-    __obj.updateDynamic("getCustomPayload")(getCustomPayload)
-    __obj.updateDynamic("getFetchSize")(getFetchSize)
-    __obj.updateDynamic("getFixedHost")(getFixedHost)
-    __obj.updateDynamic("getHints")(getHints)
-    __obj.updateDynamic("getKeyspace")(getKeyspace)
-    __obj.updateDynamic("getLoadBalancingPolicy")(getLoadBalancingPolicy)
-    __obj.updateDynamic("getPageState")(getPageState)
-    __obj.updateDynamic("getRawQueryOptions")(getRawQueryOptions)
-    __obj.updateDynamic("getReadTimeout")(getReadTimeout)
-    __obj.updateDynamic("getRetryPolicy")(getRetryPolicy)
-    __obj.updateDynamic("getRoutingKey")(getRoutingKey)
-    __obj.updateDynamic("getSerialConsistency")(getSerialConsistency)
-    __obj.updateDynamic("getTimestamp")(getTimestamp)
-    __obj.updateDynamic("isAutoPage")(isAutoPage)
-    __obj.updateDynamic("isBatchCounter")(isBatchCounter)
-    __obj.updateDynamic("isBatchLogged")(isBatchLogged)
-    __obj.updateDynamic("isIdempotent")(isIdempotent)
-    __obj.updateDynamic("isPrepared")(isPrepared)
-    __obj.updateDynamic("isQueryTracing")(isQueryTracing)
-    __obj.updateDynamic("setHints")(setHints)
+    val __obj = js.Dynamic.literal(getCaptureStackTrace = getCaptureStackTrace, getConsistency = getConsistency, getCustomPayload = getCustomPayload, getFetchSize = getFetchSize, getFixedHost = getFixedHost, getHints = getHints, getKeyspace = getKeyspace, getLoadBalancingPolicy = getLoadBalancingPolicy, getPageState = getPageState, getRawQueryOptions = getRawQueryOptions, getReadTimeout = getReadTimeout, getRetryPolicy = getRetryPolicy, getRoutingKey = getRoutingKey, getSerialConsistency = getSerialConsistency, getTimestamp = getTimestamp, isAutoPage = isAutoPage, isBatchCounter = isBatchCounter, isBatchLogged = isBatchLogged, isIdempotent = isIdempotent, isPrepared = isPrepared, isQueryTracing = isQueryTracing, setHints = setHints)
+  
     __obj.asInstanceOf[ExecutionOptions]
   }
 }

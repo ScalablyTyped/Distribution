@@ -32,9 +32,7 @@ object FlyoutProps {
     positionRelativeToAnchor: js.UndefOr[scala.Boolean] = js.undefined,
     size: gestaltLib.gestaltLibStrings.xs | gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg | gestaltLib.gestaltLibStrings.xl | scala.Double = null
   ): FlyoutProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("onDismiss")(onDismiss)
+    val __obj = js.Dynamic.literal(anchor = anchor, onDismiss = onDismiss)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])

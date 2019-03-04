@@ -16,9 +16,8 @@ object Anon_AudioMode {
     audioMode: clovelcedDashPluginDashAudiomanagementLib.clovelcedDashPluginDashAudiomanagementMod.AudioMode,
     label: java.lang.String
   ): Anon_AudioMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioMode")(audioMode)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(audioMode = audioMode, label = label)
+  
     __obj.asInstanceOf[Anon_AudioMode]
   }
 }

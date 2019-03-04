@@ -30,11 +30,8 @@ trait IMHistoryMessage extends js.Object {
 object IMHistoryMessage {
   @scala.inline
   def apply(body: java.lang.String, from: java.lang.String, id: java.lang.String, time: java.lang.String): IMHistoryMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(body = body, from = from, id = id, time = time)
+  
     __obj.asInstanceOf[IMHistoryMessage]
   }
 }

@@ -19,11 +19,8 @@ object ConsoleLogEvent {
     timelineId: java.lang.String,
     timelineRecordId: java.lang.String
   ): ConsoleLogEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildId")(buildId)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("timelineId")(timelineId)
-    __obj.updateDynamic("timelineRecordId")(timelineRecordId)
+    val __obj = js.Dynamic.literal(buildId = buildId, lines = lines, timelineId = timelineId, timelineRecordId = timelineRecordId)
+  
     __obj.asInstanceOf[ConsoleLogEvent]
   }
 }

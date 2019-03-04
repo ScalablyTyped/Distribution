@@ -12,8 +12,8 @@ trait MediaGroup extends js.Object {
 object MediaGroup {
   @scala.inline
   def apply(content: js.Array[MediaContent]): MediaGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+  
     __obj.asInstanceOf[MediaGroup]
   }
 }

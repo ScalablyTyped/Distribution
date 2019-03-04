@@ -13,9 +13,8 @@ trait IFormats extends js.Object {
 object IFormats {
   @scala.inline
   def apply(ini: IFormat, json: IFormat): IFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ini")(ini)
-    __obj.updateDynamic("json")(json)
+    val __obj = js.Dynamic.literal(ini = ini, json = json)
+  
     __obj.asInstanceOf[IFormats]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_QueryString extends js.Object {
 object Anon_QueryString {
   @scala.inline
   def apply(queryString: java.lang.String): Anon_QueryString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryString")(queryString)
+    val __obj = js.Dynamic.literal(queryString = queryString)
+  
     __obj.asInstanceOf[Anon_QueryString]
   }
 }

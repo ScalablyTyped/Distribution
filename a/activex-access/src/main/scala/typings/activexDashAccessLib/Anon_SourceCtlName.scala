@@ -22,12 +22,8 @@ object Anon_SourceCtlName {
     X: scala.Double,
     Y: scala.Double
   ): Anon_SourceCtlName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SourceCtlName")(SourceCtlName)
-    __obj.updateDynamic("SourceFieldList")(SourceFieldList)
-    __obj.updateDynamic("SourceRow")(SourceRow)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(SourceCtlName = SourceCtlName, SourceFieldList = SourceFieldList, SourceRow = SourceRow, X = X, Y = Y)
+  
     __obj.asInstanceOf[Anon_SourceCtlName]
   }
 }

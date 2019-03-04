@@ -15,8 +15,8 @@ trait IRenderComponent[TProps] extends js.Object {
 object IRenderComponent {
   @scala.inline
   def apply[TProps](children: js.Function1[TProps, reactLib.reactMod.Global.JSXNs.Element]): IRenderComponent[TProps] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[IRenderComponent[TProps]]
   }
 }

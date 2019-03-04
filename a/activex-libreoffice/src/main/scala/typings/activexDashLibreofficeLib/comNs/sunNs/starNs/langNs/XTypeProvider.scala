@@ -43,14 +43,8 @@ object XTypeProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTypeProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ImplementationId")(ImplementationId)
-    __obj.updateDynamic("Types")(Types)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getImplementationId")(getImplementationId)
-    __obj.updateDynamic("getTypes")(getTypes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ImplementationId = ImplementationId, Types = Types, acquire = acquire, getImplementationId = getImplementationId, getTypes = getTypes, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTypeProvider]
   }
 }

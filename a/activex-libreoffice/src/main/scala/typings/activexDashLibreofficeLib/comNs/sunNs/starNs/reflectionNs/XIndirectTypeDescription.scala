@@ -32,16 +32,8 @@ object XIndirectTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIndirectTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReferencedType")(ReferencedType)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getReferencedType")(getReferencedType)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Name = Name, ReferencedType = ReferencedType, TypeClass = TypeClass, acquire = acquire, getName = getName, getReferencedType = getReferencedType, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIndirectTypeDescription]
   }
 }

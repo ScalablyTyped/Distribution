@@ -36,8 +36,7 @@ object AccountCoverage {
     modifierExtension: js.Array[Extension] = null,
     priority: js.UndefOr[positiveInt] = js.undefined
   ): AccountCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coverage")(coverage)
+    val __obj = js.Dynamic.literal(coverage = coverage)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_priority != null) __obj.updateDynamic("_priority")(_priority)

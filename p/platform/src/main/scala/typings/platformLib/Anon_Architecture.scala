@@ -19,8 +19,7 @@ object Anon_Architecture {
     family: java.lang.String = null,
     version: java.lang.String = null
   ): Anon_Architecture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toString = toString)
     if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family)
     if (version != null) __obj.updateDynamic("version")(version)

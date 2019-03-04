@@ -14,10 +14,8 @@ trait View extends js.Object {
 object View {
   @scala.inline
   def apply(bind: js.Function0[scala.Unit], build: js.Function0[scala.Unit], unbind: js.Function0[scala.Unit]): View = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("unbind")(unbind)
+    val __obj = js.Dynamic.literal(bind = bind, build = build, unbind = unbind)
+  
     __obj.asInstanceOf[View]
   }
 }

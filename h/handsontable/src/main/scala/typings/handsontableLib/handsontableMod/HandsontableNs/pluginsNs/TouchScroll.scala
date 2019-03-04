@@ -31,23 +31,8 @@ object TouchScroll {
     removeHook: js.Function1[java.lang.String, scala.Unit],
     scrollbars: js.Array[_]
   ): TouchScroll = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("clones")(clones)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("lockedCollection")(lockedCollection)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("scrollbars")(scrollbars)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, clones = clones, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, lockedCollection = lockedCollection, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, scrollbars = scrollbars)
+  
     __obj.asInstanceOf[TouchScroll]
   }
 }

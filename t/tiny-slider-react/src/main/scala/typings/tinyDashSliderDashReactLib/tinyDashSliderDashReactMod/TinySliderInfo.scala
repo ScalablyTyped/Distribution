@@ -50,17 +50,7 @@ object TinySliderInfo {
     visibleNavIndexes: scala.Int | scala.Double = null,
     visibleNavIndexesCached: scala.Int | scala.Double = null
   ): TinySliderInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloneCount")(cloneCount)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("hasControls")(hasControls)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("indexCached")(indexCached)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("slideBy")(slideBy)
-    __obj.updateDynamic("slideCount")(slideCount)
-    __obj.updateDynamic("slideCountNew")(slideCountNew)
-    __obj.updateDynamic("slideItems")(slideItems)
+    val __obj = js.Dynamic.literal(cloneCount = cloneCount, container = container, hasControls = hasControls, index = index, indexCached = indexCached, items = items, slideBy = slideBy, slideCount = slideCount, slideCountNew = slideCountNew, slideItems = slideItems)
     if (!js.isUndefined(controlsContainer)) __obj.updateDynamic("controlsContainer")(controlsContainer)
     if (navContainer != null) __obj.updateDynamic("navContainer")(navContainer)
     if (navCurrentIndex != null) __obj.updateDynamic("navCurrentIndex")(navCurrentIndex.asInstanceOf[js.Any])

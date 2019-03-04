@@ -26,9 +26,8 @@ trait SectionFileLink extends js.Object {
 object SectionFileLink {
   @scala.inline
   def apply(FileURL: java.lang.String, FilterName: java.lang.String): SectionFileLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FileURL")(FileURL)
-    __obj.updateDynamic("FilterName")(FilterName)
+    val __obj = js.Dynamic.literal(FileURL = FileURL, FilterName = FilterName)
+  
     __obj.asInstanceOf[SectionFileLink]
   }
 }

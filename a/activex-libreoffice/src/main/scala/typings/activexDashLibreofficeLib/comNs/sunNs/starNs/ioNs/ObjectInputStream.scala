@@ -67,39 +67,8 @@ object ObjectInputStream {
     setSuccessor: js.Function1[XConnectable, scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): ObjectInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("Predecessor")(Predecessor)
-    __obj.updateDynamic("Successor")(Successor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("createMark")(createMark)
-    __obj.updateDynamic("deleteMark")(deleteMark)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getPredecessor")(getPredecessor)
-    __obj.updateDynamic("getSuccessor")(getSuccessor)
-    __obj.updateDynamic("jumpToFurthest")(jumpToFurthest)
-    __obj.updateDynamic("jumpToMark")(jumpToMark)
-    __obj.updateDynamic("offsetToMark")(offsetToMark)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBoolean")(readBoolean)
-    __obj.updateDynamic("readByte")(readByte)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readChar")(readChar)
-    __obj.updateDynamic("readDouble")(readDouble)
-    __obj.updateDynamic("readFloat")(readFloat)
-    __obj.updateDynamic("readHyper")(readHyper)
-    __obj.updateDynamic("readLong")(readLong)
-    __obj.updateDynamic("readObject")(readObject)
-    __obj.updateDynamic("readShort")(readShort)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("readUTF")(readUTF)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setInputStream")(setInputStream)
-    __obj.updateDynamic("setPredecessor")(setPredecessor)
-    __obj.updateDynamic("setSuccessor")(setSuccessor)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Predecessor = Predecessor, Successor = Successor, acquire = acquire, available = available, closeInput = closeInput, createMark = createMark, deleteMark = deleteMark, getInputStream = getInputStream, getPredecessor = getPredecessor, getSuccessor = getSuccessor, jumpToFurthest = jumpToFurthest, jumpToMark = jumpToMark, offsetToMark = offsetToMark, queryInterface = queryInterface, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readChar = readChar, readDouble = readDouble, readFloat = readFloat, readHyper = readHyper, readLong = readLong, readObject = readObject, readShort = readShort, readSomeBytes = readSomeBytes, readUTF = readUTF, release = release, setInputStream = setInputStream, setPredecessor = setPredecessor, setSuccessor = setSuccessor, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[ObjectInputStream]
   }
 }

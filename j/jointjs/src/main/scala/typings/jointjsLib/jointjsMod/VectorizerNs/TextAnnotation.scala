@@ -14,10 +14,8 @@ trait TextAnnotation extends js.Object {
 object TextAnnotation {
   @scala.inline
   def apply(attrs: org.scalablytyped.runtime.StringDictionary[js.Any], end: scala.Double, start: scala.Double): TextAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(attrs = attrs, end = end, start = start)
+  
     __obj.asInstanceOf[TextAnnotation]
   }
 }

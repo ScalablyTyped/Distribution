@@ -16,9 +16,8 @@ object BatchNotificationOperation {
     notificationOperation: NotificationOperation,
     notificationQueryConditions: js.Array[NotificationQueryCondition]
   ): BatchNotificationOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notificationOperation")(notificationOperation)
-    __obj.updateDynamic("notificationQueryConditions")(notificationQueryConditions)
+    val __obj = js.Dynamic.literal(notificationOperation = notificationOperation, notificationQueryConditions = notificationQueryConditions)
+  
     __obj.asInstanceOf[BatchNotificationOperation]
   }
 }

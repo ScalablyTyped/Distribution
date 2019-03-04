@@ -54,15 +54,8 @@ object PrinterDescriptor {
     PaperOrientation: PaperOrientation,
     PaperSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
   ): PrinterDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CanSetPaperFormat")(CanSetPaperFormat)
-    __obj.updateDynamic("CanSetPaperOrientation")(CanSetPaperOrientation)
-    __obj.updateDynamic("CanSetPaperSize")(CanSetPaperSize)
-    __obj.updateDynamic("IsBusy")(IsBusy)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PaperFormat")(PaperFormat)
-    __obj.updateDynamic("PaperOrientation")(PaperOrientation)
-    __obj.updateDynamic("PaperSize")(PaperSize)
+    val __obj = js.Dynamic.literal(CanSetPaperFormat = CanSetPaperFormat, CanSetPaperOrientation = CanSetPaperOrientation, CanSetPaperSize = CanSetPaperSize, IsBusy = IsBusy, Name = Name, PaperFormat = PaperFormat, PaperOrientation = PaperOrientation, PaperSize = PaperSize)
+  
     __obj.asInstanceOf[PrinterDescriptor]
   }
 }

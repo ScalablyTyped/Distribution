@@ -22,12 +22,8 @@ object RenderItemInfo {
     move: js.Function0[scala.Unit],
     moveEnd: js.Function0[scala.Unit]
   ): RenderItemInfo[ItemR] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("moveEnd")(moveEnd)
+    val __obj = js.Dynamic.literal(index = index, isActive = isActive, item = item.asInstanceOf[js.Any], move = move, moveEnd = moveEnd)
+  
     __obj.asInstanceOf[RenderItemInfo[ItemR]]
   }
 }

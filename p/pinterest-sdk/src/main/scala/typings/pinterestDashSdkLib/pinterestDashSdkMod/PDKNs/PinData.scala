@@ -20,11 +20,8 @@ object PinData {
     link: java.lang.String,
     note: java.lang.String
   ): PinData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("board")(board)
-    __obj.updateDynamic("image_url")(image_url)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(board = board, image_url = image_url, link = link, note = note)
+  
     __obj.asInstanceOf[PinData]
   }
 }

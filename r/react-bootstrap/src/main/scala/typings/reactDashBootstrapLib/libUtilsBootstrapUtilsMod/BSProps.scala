@@ -15,11 +15,8 @@ trait BSProps extends js.Object {
 object BSProps {
   @scala.inline
   def apply(bsClass: js.Any, bsRole: js.Any, bsSize: js.Any, bsStyle: js.Any): BSProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bsClass")(bsClass)
-    __obj.updateDynamic("bsRole")(bsRole)
-    __obj.updateDynamic("bsSize")(bsSize)
-    __obj.updateDynamic("bsStyle")(bsStyle)
+    val __obj = js.Dynamic.literal(bsClass = bsClass, bsRole = bsRole, bsSize = bsSize, bsStyle = bsStyle)
+  
     __obj.asInstanceOf[BSProps]
   }
 }

@@ -22,10 +22,8 @@ object DeploymentException {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String
   ): DeploymentException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cause")(Cause)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Cause = Cause, Context = Context, Message = Message)
+  
     __obj.asInstanceOf[DeploymentException]
   }
 }

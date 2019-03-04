@@ -24,13 +24,8 @@ object CommandExecutor {
     registerCommand: js.Function2[java.lang.String, js.Object, scala.Unit],
     setCommonCallback: js.Function1[js.Function0[scala.Unit], scala.Unit]
   ): CommandExecutor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commands")(commands)
-    __obj.updateDynamic("commonCallback")(commonCallback.asInstanceOf[js.Any])
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("hot")(hot)
-    __obj.updateDynamic("registerCommand")(registerCommand)
-    __obj.updateDynamic("setCommonCallback")(setCommonCallback)
+    val __obj = js.Dynamic.literal(commands = commands, commonCallback = commonCallback.asInstanceOf[js.Any], execute = execute, hot = hot, registerCommand = registerCommand, setCommonCallback = setCommonCallback)
+  
     __obj.asInstanceOf[CommandExecutor]
   }
 }

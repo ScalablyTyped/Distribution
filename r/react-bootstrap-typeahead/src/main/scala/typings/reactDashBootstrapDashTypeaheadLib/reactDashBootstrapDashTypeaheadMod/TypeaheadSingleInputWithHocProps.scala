@@ -28,17 +28,12 @@ object TypeaheadSingleInputWithHocProps {
     value: java.lang.String,
     placeholder: java.lang.String = null
   ): TypeaheadSingleInputWithHocProps[T] = {
-    val __obj = js.Dynamic.literal(`aria-activedescendant` = `aria-activedescendant`, `aria-autocomplete` = `aria-autocomplete`.asInstanceOf[js.Any], `aria-expanded` = `aria-expanded`.asInstanceOf[js.Any], `aria-haspopup` = `aria-haspopup`, `aria-owns` = `aria-owns`)
-    __obj.updateDynamic("autoComplete")(autoComplete)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    __obj.updateDynamic("onBlur")(onBlur)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("onFocus")(onFocus)
-    __obj.updateDynamic("onKeyDown")(onKeyDown)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete, disabled = disabled, inputRef = inputRef.asInstanceOf[js.Any], onBlur = onBlur, onChange = onChange, onClick = onClick, onFocus = onFocus, onKeyDown = onKeyDown, role = role, value = value)
+    __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
+    __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    __obj.updateDynamic("aria-haspopup")(`aria-haspopup`)
+    __obj.updateDynamic("aria-owns")(`aria-owns`)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     __obj.asInstanceOf[TypeaheadSingleInputWithHocProps[T]]
   }

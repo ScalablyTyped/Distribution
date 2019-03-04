@@ -38,12 +38,8 @@ object FieldMaskingSpanQuery {
     query: js.Function1[Query, FieldMaskingSpanQuery],
     toJSON: js.Function0[js.Any]
   ): FieldMaskingSpanQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, query = query, toJSON = toJSON)
+  
     __obj.asInstanceOf[FieldMaskingSpanQuery]
   }
 }

@@ -20,11 +20,8 @@ object Deferred {
     elapsed: scala.Double,
     timeStamp: scala.Double
   ): Deferred = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("benchmark")(benchmark)
-    __obj.updateDynamic("cycles")(cycles)
-    __obj.updateDynamic("elapsed")(elapsed)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(benchmark = benchmark, cycles = cycles, elapsed = elapsed, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[Deferred]
   }
 }

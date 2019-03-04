@@ -28,8 +28,7 @@ object Props {
     onPressIn: js.Function1[/* payload */ reactDashNativeDashNavigationLib.Anon_ReactTag, scala.Unit] = null,
     touchableComponent: reactDashNativeLib.reactDashNativeMod.TouchableHighlight | reactDashNativeLib.reactDashNativeMod.TouchableOpacity | reactDashNativeLib.reactDashNativeMod.TouchableNativeFeedback | reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedback | reactLib.reactMod.ReactNs.ReactNode = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (onPeekIn != null) __obj.updateDynamic("onPeekIn")(onPeekIn)
     if (onPeekOut != null) __obj.updateDynamic("onPeekOut")(onPeekOut)
     if (onPress != null) __obj.updateDynamic("onPress")(onPress)

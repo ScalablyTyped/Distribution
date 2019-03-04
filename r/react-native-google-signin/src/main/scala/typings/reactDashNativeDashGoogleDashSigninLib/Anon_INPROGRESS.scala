@@ -20,11 +20,8 @@ object Anon_INPROGRESS {
     SIGN_IN_CANCELLED: java.lang.String,
     SIGN_IN_REQUIRED: java.lang.String
   ): Anon_INPROGRESS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IN_PROGRESS")(IN_PROGRESS)
-    __obj.updateDynamic("PLAY_SERVICES_NOT_AVAILABLE")(PLAY_SERVICES_NOT_AVAILABLE)
-    __obj.updateDynamic("SIGN_IN_CANCELLED")(SIGN_IN_CANCELLED)
-    __obj.updateDynamic("SIGN_IN_REQUIRED")(SIGN_IN_REQUIRED)
+    val __obj = js.Dynamic.literal(IN_PROGRESS = IN_PROGRESS, PLAY_SERVICES_NOT_AVAILABLE = PLAY_SERVICES_NOT_AVAILABLE, SIGN_IN_CANCELLED = SIGN_IN_CANCELLED, SIGN_IN_REQUIRED = SIGN_IN_REQUIRED)
+  
     __obj.asInstanceOf[Anon_INPROGRESS]
   }
 }

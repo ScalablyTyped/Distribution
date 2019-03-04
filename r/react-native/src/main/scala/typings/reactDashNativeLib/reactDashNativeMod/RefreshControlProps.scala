@@ -96,8 +96,7 @@ object RefreshControlProps {
     title: java.lang.String = null,
     titleColor: java.lang.String = null
   ): RefreshControlProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("refreshing")(refreshing)
+    val __obj = js.Dynamic.literal(refreshing = refreshing)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

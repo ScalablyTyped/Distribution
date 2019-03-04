@@ -48,22 +48,8 @@ object DataBar {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): DataBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AxisColor")(AxisColor)
-    __obj.updateDynamic("AxisPosition")(AxisPosition)
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("DataBarEntries")(DataBarEntries)
-    __obj.updateDynamic("MaximumLength")(MaximumLength)
-    __obj.updateDynamic("MinimumLength")(MinimumLength)
-    __obj.updateDynamic("NegativeColor")(NegativeColor)
-    __obj.updateDynamic("ShowValue")(ShowValue)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UseGradient")(UseGradient)
-    __obj.updateDynamic("UseNegativeColor")(UseNegativeColor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AxisColor = AxisColor, AxisPosition = AxisPosition, Color = Color, DataBarEntries = DataBarEntries, MaximumLength = MaximumLength, MinimumLength = MinimumLength, NegativeColor = NegativeColor, ShowValue = ShowValue, Type = Type, UseGradient = UseGradient, UseNegativeColor = UseNegativeColor, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[DataBar]
   }
 }

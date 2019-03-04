@@ -18,10 +18,8 @@ object Anon_BDelayInit {
     separatorChar: java.lang.String,
     singleValuePropTypeID: java.lang.String
   ): Anon_BDelayInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bDelayInit")(bDelayInit)
-    __obj.updateDynamic("separatorChar")(separatorChar)
-    __obj.updateDynamic("singleValuePropTypeID")(singleValuePropTypeID)
+    val __obj = js.Dynamic.literal(bDelayInit = bDelayInit, separatorChar = separatorChar, singleValuePropTypeID = singleValuePropTypeID)
+  
     __obj.asInstanceOf[Anon_BDelayInit]
   }
 }

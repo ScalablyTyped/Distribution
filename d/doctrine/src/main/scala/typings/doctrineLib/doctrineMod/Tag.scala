@@ -29,8 +29,7 @@ object Tag {
     name: java.lang.String = null,
     `type`: Type = null
   ): Tag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (description != null) __obj.updateDynamic("description")(description)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     if (kind != null) __obj.updateDynamic("kind")(kind)

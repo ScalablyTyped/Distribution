@@ -28,12 +28,8 @@ object Monoidal2C {
     ],
     unit: js.Function0[fpDashTsLib.libHKTMod.Type2[F, L, scala.Unit]]
   ): Monoidal2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mult")(mult)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], map = map, mult = mult, unit = unit)
+  
     __obj.asInstanceOf[Monoidal2C[F, L]]
   }
 }

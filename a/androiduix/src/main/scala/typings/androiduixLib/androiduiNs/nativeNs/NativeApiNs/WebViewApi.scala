@@ -30,13 +30,8 @@ object WebViewApi {
     webViewLoadUrl: js.Function2[scala.Double, java.lang.String, scala.Unit],
     webViewReload: js.Function1[scala.Double, scala.Unit]
   ): WebViewApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWebView")(createWebView)
-    __obj.updateDynamic("destroyWebView")(destroyWebView)
-    __obj.updateDynamic("webViewBoundChange")(webViewBoundChange)
-    __obj.updateDynamic("webViewGoBack")(webViewGoBack)
-    __obj.updateDynamic("webViewLoadUrl")(webViewLoadUrl)
-    __obj.updateDynamic("webViewReload")(webViewReload)
+    val __obj = js.Dynamic.literal(createWebView = createWebView, destroyWebView = destroyWebView, webViewBoundChange = webViewBoundChange, webViewGoBack = webViewGoBack, webViewLoadUrl = webViewLoadUrl, webViewReload = webViewReload)
+  
     __obj.asInstanceOf[WebViewApi]
   }
 }

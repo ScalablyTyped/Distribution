@@ -15,9 +15,8 @@ trait MenuManager extends js.Object {
 object MenuManager {
   @scala.inline
   def apply(add: js.Function1[js.Array[MenuOptions], Disposable], update: js.Function0[scala.Unit]): MenuManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(add = add, update = update)
+  
     __obj.asInstanceOf[MenuManager]
   }
 }

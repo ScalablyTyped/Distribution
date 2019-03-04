@@ -28,8 +28,8 @@ object InterfaceExtends {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterInstantiation = null
   ): InterfaceExtends = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

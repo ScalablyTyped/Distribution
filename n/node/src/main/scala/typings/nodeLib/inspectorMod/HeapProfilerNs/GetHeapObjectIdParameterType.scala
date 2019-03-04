@@ -15,8 +15,8 @@ trait GetHeapObjectIdParameterType extends js.Object {
 object GetHeapObjectIdParameterType {
   @scala.inline
   def apply(objectId: nodeLib.inspectorMod.RuntimeNs.RemoteObjectId): GetHeapObjectIdParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectId")(objectId)
+    val __obj = js.Dynamic.literal(objectId = objectId)
+  
     __obj.asInstanceOf[GetHeapObjectIdParameterType]
   }
 }

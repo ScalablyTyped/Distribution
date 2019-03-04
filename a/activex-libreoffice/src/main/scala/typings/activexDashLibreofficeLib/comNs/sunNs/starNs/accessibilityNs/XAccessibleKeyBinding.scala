@@ -52,13 +52,8 @@ object XAccessibleKeyBinding {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleKeyBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessibleKeyBindingCount")(AccessibleKeyBindingCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAccessibleKeyBinding")(getAccessibleKeyBinding)
-    __obj.updateDynamic("getAccessibleKeyBindingCount")(getAccessibleKeyBindingCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AccessibleKeyBindingCount = AccessibleKeyBindingCount, acquire = acquire, getAccessibleKeyBinding = getAccessibleKeyBinding, getAccessibleKeyBindingCount = getAccessibleKeyBindingCount, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleKeyBinding]
   }
 }

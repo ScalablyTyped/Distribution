@@ -66,37 +66,8 @@ object Presentation2 {
       scala.Unit
     ]
   ): Presentation2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowAnimations")(AllowAnimations)
-    __obj.updateDynamic("Controller")(Controller)
-    __obj.updateDynamic("CustomShow")(CustomShow)
-    __obj.updateDynamic("FirstPage")(FirstPage)
-    __obj.updateDynamic("IsAlwaysOnTop")(IsAlwaysOnTop)
-    __obj.updateDynamic("IsAutomatic")(IsAutomatic)
-    __obj.updateDynamic("IsEndless")(IsEndless)
-    __obj.updateDynamic("IsFullScreen")(IsFullScreen)
-    __obj.updateDynamic("IsLivePresentation")(IsLivePresentation)
-    __obj.updateDynamic("IsMouseVisible")(IsMouseVisible)
-    __obj.updateDynamic("Pause")(Pause)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("StartWithNavigator")(StartWithNavigator)
-    __obj.updateDynamic("UsePen")(UsePen)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("getController")(getController)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("isRunning")(isRunning)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rehearseTimings")(rehearseTimings)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startWithArguments")(startWithArguments)
+    val __obj = js.Dynamic.literal(AllowAnimations = AllowAnimations, Controller = Controller, CustomShow = CustomShow, FirstPage = FirstPage, IsAlwaysOnTop = IsAlwaysOnTop, IsAutomatic = IsAutomatic, IsEndless = IsEndless, IsFullScreen = IsFullScreen, IsLivePresentation = IsLivePresentation, IsMouseVisible = IsMouseVisible, Pause = Pause, PropertySetInfo = PropertySetInfo, StartWithNavigator = StartWithNavigator, UsePen = UsePen, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, end = end, getController = getController, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, isRunning = isRunning, queryInterface = queryInterface, rehearseTimings = rehearseTimings, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, start = start, startWithArguments = startWithArguments)
+  
     __obj.asInstanceOf[Presentation2]
   }
 }

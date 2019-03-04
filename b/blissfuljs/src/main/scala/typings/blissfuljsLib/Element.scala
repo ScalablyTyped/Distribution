@@ -12,8 +12,8 @@ trait Element extends js.Object {
 object Element {
   @scala.inline
   def apply(`_`: blissfuljsLib.BlissNSNs.BlissBindedElement[Element]): Element = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_")(`_`)
     __obj.asInstanceOf[Element]
   }
 }

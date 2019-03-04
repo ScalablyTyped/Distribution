@@ -81,8 +81,7 @@ object CardTitleProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     subtitle: reactLib.reactMod.ReactNs.ReactNode = null
   ): CardTitleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

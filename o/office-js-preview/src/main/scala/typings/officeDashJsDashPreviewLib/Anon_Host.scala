@@ -16,9 +16,8 @@ object Anon_Host {
     host: officeDashJsDashPreviewLib.OfficeNs.HostType,
     platform: officeDashJsDashPreviewLib.OfficeNs.PlatformType
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(host = host, platform = platform)
+  
     __obj.asInstanceOf[Anon_Host]
   }
 }

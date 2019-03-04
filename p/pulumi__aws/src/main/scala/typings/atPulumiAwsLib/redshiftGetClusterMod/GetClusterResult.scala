@@ -154,36 +154,8 @@ object GetClusterResult {
     vpcId: java.lang.String,
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade)
-    __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("bucketName")(bucketName)
-    __obj.updateDynamic("clusterParameterGroupName")(clusterParameterGroupName)
-    __obj.updateDynamic("clusterPublicKey")(clusterPublicKey)
-    __obj.updateDynamic("clusterRevisionNumber")(clusterRevisionNumber)
-    __obj.updateDynamic("clusterSecurityGroups")(clusterSecurityGroups)
-    __obj.updateDynamic("clusterSubnetGroupName")(clusterSubnetGroupName)
-    __obj.updateDynamic("clusterType")(clusterType)
-    __obj.updateDynamic("clusterVersion")(clusterVersion)
-    __obj.updateDynamic("databaseName")(databaseName)
-    __obj.updateDynamic("elasticIp")(elasticIp)
-    __obj.updateDynamic("enableLogging")(enableLogging)
-    __obj.updateDynamic("encrypted")(encrypted)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("enhancedVpcRouting")(enhancedVpcRouting)
-    __obj.updateDynamic("iamRoles")(iamRoles)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("masterUsername")(masterUsername)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("numberOfNodes")(numberOfNodes)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow)
-    __obj.updateDynamic("publiclyAccessible")(publiclyAccessible)
-    __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix)
-    __obj.updateDynamic("vpcId")(vpcId)
-    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(allowVersionUpgrade = allowVersionUpgrade, automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod, availabilityZone = availabilityZone, bucketName = bucketName, clusterParameterGroupName = clusterParameterGroupName, clusterPublicKey = clusterPublicKey, clusterRevisionNumber = clusterRevisionNumber, clusterSecurityGroups = clusterSecurityGroups, clusterSubnetGroupName = clusterSubnetGroupName, clusterType = clusterType, clusterVersion = clusterVersion, databaseName = databaseName, elasticIp = elasticIp, enableLogging = enableLogging, encrypted = encrypted, endpoint = endpoint, enhancedVpcRouting = enhancedVpcRouting, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, nodeType = nodeType, numberOfNodes = numberOfNodes, port = port, preferredMaintenanceWindow = preferredMaintenanceWindow, publiclyAccessible = publiclyAccessible, s3KeyPrefix = s3KeyPrefix, vpcId = vpcId, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
     __obj.asInstanceOf[GetClusterResult]
   }
 }

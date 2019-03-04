@@ -115,10 +115,7 @@ object configRequest {
     trustedServers: js.Array[java.lang.String] = null,
     useIdentity: js.UndefOr[scala.Boolean] = js.undefined
   ): configRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (httpsDomains != null) __obj.updateDynamic("httpsDomains")(httpsDomains)
     if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors)
     if (maxUrlLength != null) __obj.updateDynamic("maxUrlLength")(maxUrlLength.asInstanceOf[js.Any])

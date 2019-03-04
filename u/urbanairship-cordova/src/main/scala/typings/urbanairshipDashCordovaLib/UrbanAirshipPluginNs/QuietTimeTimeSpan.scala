@@ -21,11 +21,8 @@ trait QuietTimeTimeSpan extends js.Object {
 object QuietTimeTimeSpan {
   @scala.inline
   def apply(endHour: scala.Double, endMinute: scala.Double, startHour: scala.Double, startMinute: scala.Double): QuietTimeTimeSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endHour")(endHour)
-    __obj.updateDynamic("endMinute")(endMinute)
-    __obj.updateDynamic("startHour")(startHour)
-    __obj.updateDynamic("startMinute")(startMinute)
+    val __obj = js.Dynamic.literal(endHour = endHour, endMinute = endMinute, startHour = startHour, startMinute = startMinute)
+  
     __obj.asInstanceOf[QuietTimeTimeSpan]
   }
 }

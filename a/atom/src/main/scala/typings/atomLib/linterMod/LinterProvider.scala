@@ -22,12 +22,8 @@ object LinterProvider {
     name: java.lang.String,
     scope: atomLib.atomLibStrings.file | atomLib.atomLibStrings.project
   ): LinterProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grammarScopes")(grammarScopes)
-    __obj.updateDynamic("lint")(lint)
-    __obj.updateDynamic("lintsOnChange")(lintsOnChange)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(grammarScopes = grammarScopes, lint = lint, lintsOnChange = lintsOnChange, name = name, scope = scope.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[LinterProvider]
   }
 }

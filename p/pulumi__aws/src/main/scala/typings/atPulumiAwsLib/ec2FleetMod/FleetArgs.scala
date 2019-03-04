@@ -78,9 +78,7 @@ object FleetArgs {
     terminateInstancesWithExpiration: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): FleetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplateConfig")(launchTemplateConfig.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetCapacitySpecification")(targetCapacitySpecification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(launchTemplateConfig = launchTemplateConfig.asInstanceOf[js.Any], targetCapacitySpecification = targetCapacitySpecification.asInstanceOf[js.Any])
     if (excessCapacityTerminationPolicy != null) __obj.updateDynamic("excessCapacityTerminationPolicy")(excessCapacityTerminationPolicy.asInstanceOf[js.Any])
     if (onDemandOptions != null) __obj.updateDynamic("onDemandOptions")(onDemandOptions.asInstanceOf[js.Any])
     if (replaceUnhealthyInstances != null) __obj.updateDynamic("replaceUnhealthyInstances")(replaceUnhealthyInstances.asInstanceOf[js.Any])

@@ -20,11 +20,8 @@ object ClientInfo {
     name: java.lang.String,
     version: java.lang.String
   ): ClientInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(dependencies = dependencies, environment = environment, name = name, version = version)
+  
     __obj.asInstanceOf[ClientInfo]
   }
 }

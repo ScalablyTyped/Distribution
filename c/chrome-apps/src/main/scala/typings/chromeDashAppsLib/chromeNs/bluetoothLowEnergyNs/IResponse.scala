@@ -21,9 +21,7 @@ object IResponse {
     requestId: chromeDashAppsLib.chromeNs.integer,
     value: stdLib.ArrayBuffer = null
   ): IResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isError")(isError)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(isError = isError, requestId = requestId)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[IResponse]
   }

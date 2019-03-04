@@ -19,11 +19,8 @@ trait ASPxClientFileManagerItemEditingEventArgs extends ASPxClientFileManagerAct
 object ASPxClientFileManagerItemEditingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, fullName: java.lang.String, isFolder: scala.Boolean, name: java.lang.String): ASPxClientFileManagerItemEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(cancel = cancel, fullName = fullName, isFolder = isFolder, name = name)
+  
     __obj.asInstanceOf[ASPxClientFileManagerItemEditingEventArgs]
   }
 }

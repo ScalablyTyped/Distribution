@@ -58,8 +58,7 @@ object toastOptions {
     textAlign: jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.left | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.right | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.center = null,
     textColor: java.lang.String = null
   ): toastOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (afterHidden != null) __obj.updateDynamic("afterHidden")(afterHidden)
     if (afterShown != null) __obj.updateDynamic("afterShown")(afterShown)
     if (!js.isUndefined(allowToastClose)) __obj.updateDynamic("allowToastClose")(allowToastClose)

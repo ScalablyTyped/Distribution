@@ -23,11 +23,8 @@ object IHashAlgorithmProvider {
     ],
     hashLength: scala.Double
   ): IHashAlgorithmProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithmName")(algorithmName)
-    __obj.updateDynamic("createHash")(createHash)
-    __obj.updateDynamic("hashData")(hashData)
-    __obj.updateDynamic("hashLength")(hashLength)
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, createHash = createHash, hashData = hashData, hashLength = hashLength)
+  
     __obj.asInstanceOf[IHashAlgorithmProvider]
   }
 }

@@ -18,10 +18,8 @@ object Anon_LARGESMALLTINY {
     SMALL: reactDashFoundationLib.enumsMod.ButtonSizes,
     TINY: reactDashFoundationLib.enumsMod.ButtonSizes
   ): Anon_LARGESMALLTINY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LARGE")(LARGE)
-    __obj.updateDynamic("SMALL")(SMALL)
-    __obj.updateDynamic("TINY")(TINY)
+    val __obj = js.Dynamic.literal(LARGE = LARGE, SMALL = SMALL, TINY = TINY)
+  
     __obj.asInstanceOf[Anon_LARGESMALLTINY]
   }
 }

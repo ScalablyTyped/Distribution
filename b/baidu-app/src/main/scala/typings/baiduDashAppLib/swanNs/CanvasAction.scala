@@ -18,9 +18,8 @@ object CanvasAction {
     data: js.Array[CanvasAction] | (js.Array[scala.Double | java.lang.String]),
     method: java.lang.String
   ): CanvasAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method)
+  
     __obj.asInstanceOf[CanvasAction]
   }
 }

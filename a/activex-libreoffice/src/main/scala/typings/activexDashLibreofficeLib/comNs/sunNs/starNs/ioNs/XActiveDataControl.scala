@@ -51,14 +51,8 @@ object XActiveDataControl {
     start: js.Function0[scala.Unit],
     terminate: js.Function0[scala.Unit]
   ): XActiveDataControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeListener")(removeListener)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("terminate")(terminate)
+    val __obj = js.Dynamic.literal(acquire = acquire, addListener = addListener, queryInterface = queryInterface, release = release, removeListener = removeListener, start = start, terminate = terminate)
+  
     __obj.asInstanceOf[XActiveDataControl]
   }
 }

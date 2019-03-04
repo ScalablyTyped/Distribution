@@ -28,15 +28,8 @@ object InputValidation {
     pattern: java.lang.String,
     patternMismatchErrorMessage: java.lang.String
   ): InputValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataType")(dataType)
-    __obj.updateDynamic("isRequired")(isRequired)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minLength")(minLength)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("patternMismatchErrorMessage")(patternMismatchErrorMessage)
+    val __obj = js.Dynamic.literal(dataType = dataType, isRequired = isRequired, maxLength = maxLength, maxValue = maxValue, minLength = minLength, minValue = minValue, pattern = pattern, patternMismatchErrorMessage = patternMismatchErrorMessage)
+  
     __obj.asInstanceOf[InputValidation]
   }
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait LodashHasIn extends js.Object {
   def apply(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashHasIn1x1 = js.native
   def apply[T](path: lodashLib.lodashMod.underscoreNs.PropertyPath, `object`: T): scala.Boolean = js.native
-  def apply[T](path: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashHasIn1x2 = js.native
+  def apply[T](path: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashHasIn1x2 = js.native
 }
 

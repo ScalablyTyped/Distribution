@@ -20,11 +20,8 @@ object Anon_City {
     district: java.lang.String,
     provice: java.lang.String
   ): Anon_City = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("citycode")(citycode)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("provice")(provice)
+    val __obj = js.Dynamic.literal(city = city, citycode = citycode, district = district, provice = provice)
+  
     __obj.asInstanceOf[Anon_City]
   }
 }

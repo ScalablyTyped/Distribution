@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Gettext extends js.Object {
-  def `__`(msgid: java.lang.String, args: js.Any*): java.lang.String = js.native
+  def __(msgid: java.lang.String, args: js.Any*): java.lang.String = js.native
   def _n(msgid: java.lang.String, msgid_plural: java.lang.String, n: scala.Double, args: js.Any*): java.lang.String = js.native
   def _p(msgctxt: java.lang.String, msgid: java.lang.String, args: js.Any*): java.lang.String = js.native
   def dcnpgettext(

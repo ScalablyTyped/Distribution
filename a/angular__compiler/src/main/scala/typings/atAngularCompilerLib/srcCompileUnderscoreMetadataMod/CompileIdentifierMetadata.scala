@@ -12,8 +12,8 @@ trait CompileIdentifierMetadata extends js.Object {
 object CompileIdentifierMetadata {
   @scala.inline
   def apply(reference: js.Any): CompileIdentifierMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(reference = reference)
+  
     __obj.asInstanceOf[CompileIdentifierMetadata]
   }
 }

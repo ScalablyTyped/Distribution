@@ -30,13 +30,8 @@ object XNamed {
     release: js.Function0[scala.Unit],
     setName: js.Function1[java.lang.String, scala.Unit]
   ): XNamed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, getName = getName, queryInterface = queryInterface, release = release, setName = setName)
+  
     __obj.asInstanceOf[XNamed]
   }
 }

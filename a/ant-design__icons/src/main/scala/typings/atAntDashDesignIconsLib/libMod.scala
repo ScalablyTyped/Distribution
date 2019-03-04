@@ -458,6 +458,7 @@ object libMod extends js.Object {
   val MoneyCollectOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val MoneyCollectTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val MonitorOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val MoreOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val MrOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val NotificationFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val NotificationOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native

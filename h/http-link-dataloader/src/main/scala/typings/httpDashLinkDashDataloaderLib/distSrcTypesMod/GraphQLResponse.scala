@@ -20,8 +20,7 @@ object GraphQLResponse {
     data: js.Any = null,
     errors: js.Array[GraphQLError] = null
   ): GraphQLResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (data != null) __obj.updateDynamic("data")(data)
     if (errors != null) __obj.updateDynamic("errors")(errors)

@@ -12,8 +12,8 @@ trait Anon_Entries extends js.Object {
 object Anon_Entries {
   @scala.inline
   def apply(entries: js.Array[filesystemLib.FileEntry]): Anon_Entries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
+    val __obj = js.Dynamic.literal(entries = entries)
+  
     __obj.asInstanceOf[Anon_Entries]
   }
 }

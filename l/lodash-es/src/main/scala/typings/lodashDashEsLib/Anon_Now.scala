@@ -12,8 +12,8 @@ trait Anon_Now extends js.Object {
 object Anon_Now {
   @scala.inline
   def apply(now: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof now */ js.Any): Anon_Now = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("now")(now)
+    val __obj = js.Dynamic.literal(now = now)
+  
     __obj.asInstanceOf[Anon_Now]
   }
 }

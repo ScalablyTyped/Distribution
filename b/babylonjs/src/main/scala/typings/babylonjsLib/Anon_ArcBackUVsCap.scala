@@ -36,8 +36,7 @@ object Anon_ArcBackUVsCap {
     tessellation: scala.Int | scala.Double = null,
     updatable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ArcBackUVsCap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(shape = shape)
     if (arc != null) __obj.updateDynamic("arc")(arc.asInstanceOf[js.Any])
     if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs)
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])

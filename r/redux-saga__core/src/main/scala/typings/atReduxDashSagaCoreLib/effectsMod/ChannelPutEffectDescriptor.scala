@@ -13,9 +13,8 @@ trait ChannelPutEffectDescriptor[T] extends js.Object {
 object ChannelPutEffectDescriptor {
   @scala.inline
   def apply[T](action: T, channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.PuttableChannel[T]): ChannelPutEffectDescriptor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], channel = channel)
+  
     __obj.asInstanceOf[ChannelPutEffectDescriptor[T]]
   }
 }

@@ -12,8 +12,8 @@ trait TrackPublicationOptions extends js.Object {
 object TrackPublicationOptions {
   @scala.inline
   def apply(logLevel: LogLevel | LogLevels): TrackPublicationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TrackPublicationOptions]
   }
 }

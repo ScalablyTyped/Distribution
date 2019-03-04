@@ -73,8 +73,7 @@ object EmailConfig {
     transport: js.Any = null,
     views: js.Any = null
   ): EmailConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (htmlToText != null) __obj.updateDynamic("htmlToText")(htmlToText)
     if (i18n != null) __obj.updateDynamic("i18n")(i18n)
     if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice)

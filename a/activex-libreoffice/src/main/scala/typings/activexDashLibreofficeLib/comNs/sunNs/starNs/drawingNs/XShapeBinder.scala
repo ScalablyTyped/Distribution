@@ -30,12 +30,8 @@ object XShapeBinder {
     release: js.Function0[scala.Unit],
     unbind: js.Function1[XShape, scala.Unit]
   ): XShapeBinder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("unbind")(unbind)
+    val __obj = js.Dynamic.literal(acquire = acquire, bind = bind, queryInterface = queryInterface, release = release, unbind = unbind)
+  
     __obj.asInstanceOf[XShapeBinder]
   }
 }

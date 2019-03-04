@@ -26,13 +26,8 @@ object Anon_ColumnFilenameInline {
     str: java.lang.String,
     suppress: scala.Boolean
   ): Anon_ColumnFilenameInline = {
-    val __obj = js.Dynamic.literal(`inline` = `inline`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("str")(str)
-    __obj.updateDynamic("suppress")(suppress)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, str = str, suppress = suppress)
+    __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[Anon_ColumnFilenameInline]
   }
 }

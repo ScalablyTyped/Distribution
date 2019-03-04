@@ -24,13 +24,8 @@ object Anon_Host {
     query: java.lang.String,
     statusCode: java.lang.String
   ): Anon_Host = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(host = host, path = path, port = port, protocol = protocol, query = query, statusCode = statusCode)
+  
     __obj.asInstanceOf[Anon_Host]
   }
 }

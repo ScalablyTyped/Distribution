@@ -66,34 +66,8 @@ object SocketOptions {
     swap: scala.Double,
     zap_domain: scala.Double
   ): SocketOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_fd")(_fd)
-    __obj.updateDynamic("_ioevents")(_ioevents)
-    __obj.updateDynamic("_receiveMore")(_receiveMore)
-    __obj.updateDynamic("_subscribe")(_subscribe)
-    __obj.updateDynamic("_unsubscribe")(_unsubscribe)
-    __obj.updateDynamic("affinity")(affinity)
-    __obj.updateDynamic("backlog")(backlog)
-    __obj.updateDynamic("curve_publickey")(curve_publickey)
-    __obj.updateDynamic("curve_secretkey")(curve_secretkey)
-    __obj.updateDynamic("curve_server")(curve_server)
-    __obj.updateDynamic("curve_serverkey")(curve_serverkey)
-    __obj.updateDynamic("hwm")(hwm)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("last_endpoint")(last_endpoint)
-    __obj.updateDynamic("linger")(linger)
-    __obj.updateDynamic("mcast_loop")(mcast_loop)
-    __obj.updateDynamic("mechanism")(mechanism)
-    __obj.updateDynamic("plain_password")(plain_password)
-    __obj.updateDynamic("plain_server")(plain_server)
-    __obj.updateDynamic("plain_username")(plain_username)
-    __obj.updateDynamic("rate")(rate)
-    __obj.updateDynamic("rcvbuf")(rcvbuf)
-    __obj.updateDynamic("reconnect_ivl")(reconnect_ivl)
-    __obj.updateDynamic("recovery_ivl")(recovery_ivl)
-    __obj.updateDynamic("sndbuf")(sndbuf)
-    __obj.updateDynamic("swap")(swap)
-    __obj.updateDynamic("zap_domain")(zap_domain)
+    val __obj = js.Dynamic.literal(_fd = _fd, _ioevents = _ioevents, _receiveMore = _receiveMore, _subscribe = _subscribe, _unsubscribe = _unsubscribe, affinity = affinity, backlog = backlog, curve_publickey = curve_publickey, curve_secretkey = curve_secretkey, curve_server = curve_server, curve_serverkey = curve_serverkey, hwm = hwm, identity = identity, last_endpoint = last_endpoint, linger = linger, mcast_loop = mcast_loop, mechanism = mechanism, plain_password = plain_password, plain_server = plain_server, plain_username = plain_username, rate = rate, rcvbuf = rcvbuf, reconnect_ivl = reconnect_ivl, recovery_ivl = recovery_ivl, sndbuf = sndbuf, swap = swap, zap_domain = zap_domain)
+  
     __obj.asInstanceOf[SocketOptions]
   }
 }

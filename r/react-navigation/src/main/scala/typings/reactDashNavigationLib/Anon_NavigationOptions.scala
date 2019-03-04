@@ -20,8 +20,8 @@ object Anon_NavigationOptions {
       reactDashNavigationLib.reactDashNavigationMod.NavigationParams
     ]
   ): Anon_NavigationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigationOptions")(navigationOptions)
+    val __obj = js.Dynamic.literal(navigationOptions = navigationOptions)
+  
     __obj.asInstanceOf[Anon_NavigationOptions]
   }
 }

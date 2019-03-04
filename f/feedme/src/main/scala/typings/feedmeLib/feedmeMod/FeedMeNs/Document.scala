@@ -29,22 +29,8 @@ object Document {
     `type`: Type,
     xmlurl: java.lang.String
   ): Document = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("favicon")(favicon)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("lastbuilddate")(lastbuilddate)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("pubdate")(pubdate)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("xmlurl")(xmlurl)
+    val __obj = js.Dynamic.literal(author = author, categories = categories, copyright = copyright, date = date, description = description, favicon = favicon, generator = generator, image = image, items = items, language = language, lastbuilddate = lastbuilddate, link = link, pubdate = pubdate, title = title, xmlurl = xmlurl)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Document]
   }
 }

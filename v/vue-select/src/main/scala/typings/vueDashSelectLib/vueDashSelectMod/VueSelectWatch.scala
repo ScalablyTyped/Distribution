@@ -24,13 +24,8 @@ object VueSelectWatch {
     options: js.Function1[js.Any, scala.Unit],
     value: js.Function1[js.Any, scala.Unit]
   ): VueSelectWatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("multiple")(multiple)
-    __obj.updateDynamic("mutableOptions")(mutableOptions)
-    __obj.updateDynamic("mutableValue")(mutableValue)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(created = created, multiple = multiple, mutableOptions = mutableOptions, mutableValue = mutableValue, options = options, value = value)
+  
     __obj.asInstanceOf[VueSelectWatch]
   }
 }

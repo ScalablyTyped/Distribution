@@ -12,8 +12,8 @@ trait Device extends js.Object {
 object Device {
   @scala.inline
   def apply(capture: Capture): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capture")(capture)
+    val __obj = js.Dynamic.literal(capture = capture)
+  
     __obj.asInstanceOf[Device]
   }
 }

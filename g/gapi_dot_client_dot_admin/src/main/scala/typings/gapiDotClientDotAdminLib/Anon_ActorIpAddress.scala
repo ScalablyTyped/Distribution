@@ -69,9 +69,7 @@ object Anon_ActorIpAddress {
     startTime: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_ActorIpAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationName")(applicationName)
-    __obj.updateDynamic("userKey")(userKey)
+    val __obj = js.Dynamic.literal(applicationName = applicationName, userKey = userKey)
     if (actorIpAddress != null) __obj.updateDynamic("actorIpAddress")(actorIpAddress)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (customerId != null) __obj.updateDynamic("customerId")(customerId)

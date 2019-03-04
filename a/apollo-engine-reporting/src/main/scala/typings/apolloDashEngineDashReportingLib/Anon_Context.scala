@@ -30,10 +30,7 @@ object Anon_Context {
     queryString: java.lang.String = null,
     variables: stdLib.Record[java.lang.String, _] = null
   ): Anon_Context[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestContext")(requestContext)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request, requestContext = requestContext)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery)
     if (!js.isUndefined(persistedQueryHit)) __obj.updateDynamic("persistedQueryHit")(persistedQueryHit)

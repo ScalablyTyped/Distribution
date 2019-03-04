@@ -70,18 +70,8 @@ object XAxisXSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAxisXSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("XAxis")(XAxis)
-    __obj.updateDynamic("XAxisTitle")(XAxisTitle)
-    __obj.updateDynamic("XHelpGrid")(XHelpGrid)
-    __obj.updateDynamic("XMainGrid")(XMainGrid)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getXAxis")(getXAxis)
-    __obj.updateDynamic("getXAxisTitle")(getXAxisTitle)
-    __obj.updateDynamic("getXHelpGrid")(getXHelpGrid)
-    __obj.updateDynamic("getXMainGrid")(getXMainGrid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(XAxis = XAxis, XAxisTitle = XAxisTitle, XHelpGrid = XHelpGrid, XMainGrid = XMainGrid, acquire = acquire, getXAxis = getXAxis, getXAxisTitle = getXAxisTitle, getXHelpGrid = getXHelpGrid, getXMainGrid = getXMainGrid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAxisXSupplier]
   }
 }

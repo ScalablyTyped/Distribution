@@ -27,9 +27,8 @@ object PagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Thumbnail]
     ]
   ): PagesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getThumbnail")(getThumbnail)
+    val __obj = js.Dynamic.literal(get = get, getThumbnail = getThumbnail)
+  
     __obj.asInstanceOf[PagesResource]
   }
 }

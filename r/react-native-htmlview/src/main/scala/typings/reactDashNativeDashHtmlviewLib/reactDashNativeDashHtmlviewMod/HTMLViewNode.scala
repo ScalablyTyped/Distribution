@@ -20,8 +20,7 @@ object HTMLViewNode {
     name: java.lang.String = null,
     `type`: java.lang.String = null
   ): HTMLViewNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribs")(attribs)
+    val __obj = js.Dynamic.literal(attribs = attribs)
     if (data != null) __obj.updateDynamic("data")(data)
     if (name != null) __obj.updateDynamic("name")(name)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

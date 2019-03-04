@@ -26,9 +26,7 @@ object GoogleLoginProps {
     prompt: java.lang.String = null,
     scope: java.lang.String = null
   ): GoogleLoginProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseHandler")(responseHandler)
-    __obj.updateDynamic("socialId")(socialId)
+    val __obj = js.Dynamic.literal(responseHandler = responseHandler, socialId = socialId)
     js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
     if (!js.isUndefined(fetchBasicProfile)) __obj.updateDynamic("fetchBasicProfile")(fetchBasicProfile)

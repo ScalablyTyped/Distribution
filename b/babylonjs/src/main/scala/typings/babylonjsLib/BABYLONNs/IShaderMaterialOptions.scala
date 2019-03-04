@@ -50,14 +50,8 @@ object IShaderMaterialOptions {
     uniformBuffers: js.Array[java.lang.String],
     uniforms: js.Array[java.lang.String]
   ): IShaderMaterialOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("defines")(defines)
-    __obj.updateDynamic("needAlphaBlending")(needAlphaBlending)
-    __obj.updateDynamic("needAlphaTesting")(needAlphaTesting)
-    __obj.updateDynamic("samplers")(samplers)
-    __obj.updateDynamic("uniformBuffers")(uniformBuffers)
-    __obj.updateDynamic("uniforms")(uniforms)
+    val __obj = js.Dynamic.literal(attributes = attributes, defines = defines, needAlphaBlending = needAlphaBlending, needAlphaTesting = needAlphaTesting, samplers = samplers, uniformBuffers = uniformBuffers, uniforms = uniforms)
+  
     __obj.asInstanceOf[IShaderMaterialOptions]
   }
 }

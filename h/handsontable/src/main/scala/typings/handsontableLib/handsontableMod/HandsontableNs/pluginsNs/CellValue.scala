@@ -53,31 +53,8 @@ object CellValue {
     translateTo: js.Function2[scala.Double, scala.Double, scala.Unit],
     value: js.Any
   ): CellValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPrecedent")(addPrecedent)
-    __obj.updateDynamic("clearPrecedents")(clearPrecedents)
-    __obj.updateDynamic("columnAbsolute")(columnAbsolute)
-    __obj.updateDynamic("columnOffset")(columnOffset)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("getError")(getError)
-    __obj.updateDynamic("getPrecedents")(getPrecedents)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hasError")(hasError)
-    __obj.updateDynamic("hasPrecedent")(hasPrecedent)
-    __obj.updateDynamic("hasPrecedents")(hasPrecedents)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("isState")(isState)
-    __obj.updateDynamic("precedents")(precedents)
-    __obj.updateDynamic("removePrecedent")(removePrecedent)
-    __obj.updateDynamic("rowAbsolute")(rowAbsolute)
-    __obj.updateDynamic("rowOffset")(rowOffset)
-    __obj.updateDynamic("setError")(setError)
-    __obj.updateDynamic("setState")(setState)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("translateTo")(translateTo)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(addPrecedent = addPrecedent, clearPrecedents = clearPrecedents, columnAbsolute = columnAbsolute, columnOffset = columnOffset, error = error.asInstanceOf[js.Any], getError = getError, getPrecedents = getPrecedents, getValue = getValue, hasError = hasError, hasPrecedent = hasPrecedent, hasPrecedents = hasPrecedents, isEqual = isEqual, isState = isState, precedents = precedents, removePrecedent = removePrecedent, rowAbsolute = rowAbsolute, rowOffset = rowOffset, setError = setError, setState = setState, setValue = setValue, state = state, toString = toString, translateTo = translateTo, value = value)
+  
     __obj.asInstanceOf[CellValue]
   }
 }

@@ -12,8 +12,8 @@ trait NativeObjectWrapper extends js.Object {
 object NativeObjectWrapper {
   @scala.inline
   def apply(ObjectId: js.Any): NativeObjectWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ObjectId")(ObjectId)
+    val __obj = js.Dynamic.literal(ObjectId = ObjectId)
+  
     __obj.asInstanceOf[NativeObjectWrapper]
   }
 }

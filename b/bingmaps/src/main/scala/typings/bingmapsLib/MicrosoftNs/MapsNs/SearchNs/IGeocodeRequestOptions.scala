@@ -50,9 +50,7 @@ object IGeocodeRequestOptions {
     timeout: scala.Int | scala.Double = null,
     userData: js.Any = null
   ): IGeocodeRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(callback = callback, where = where)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)

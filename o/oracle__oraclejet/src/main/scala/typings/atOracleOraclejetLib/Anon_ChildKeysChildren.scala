@@ -20,8 +20,7 @@ object Anon_ChildKeysChildren {
     label: java.lang.String = null,
     value: java.lang.String = null
   ): Anon_ChildKeysChildren = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childKeys")(childKeys)
+    val __obj = js.Dynamic.literal(childKeys = childKeys)
     if (children != null) __obj.updateDynamic("children")(children)
     if (label != null) __obj.updateDynamic("label")(label)
     if (value != null) __obj.updateDynamic("value")(value)

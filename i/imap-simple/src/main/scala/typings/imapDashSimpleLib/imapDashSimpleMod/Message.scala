@@ -18,10 +18,8 @@ object Message {
     parts: js.Array[MessageBodyPart],
     seqno: scala.Double
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("parts")(parts)
-    __obj.updateDynamic("seqno")(seqno)
+    val __obj = js.Dynamic.literal(attributes = attributes, parts = parts, seqno = seqno)
+  
     __obj.asInstanceOf[Message]
   }
 }

@@ -26,8 +26,7 @@ object UrlWithParsedQuery {
     search: java.lang.String = null,
     slashes: js.UndefOr[scala.Boolean] = js.undefined
   ): UrlWithParsedQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (host != null) __obj.updateDynamic("host")(host)

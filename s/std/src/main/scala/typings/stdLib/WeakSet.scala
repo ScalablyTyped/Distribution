@@ -21,11 +21,8 @@ object WeakSet {
     has: js.Function1[T, scala.Boolean],
     toStringTag: java.lang.String
   ): WeakSet[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("toStringTag")(toStringTag)
+    val __obj = js.Dynamic.literal(add = add, delete = delete, has = has, toStringTag = toStringTag)
+  
     __obj.asInstanceOf[WeakSet[T]]
   }
 }

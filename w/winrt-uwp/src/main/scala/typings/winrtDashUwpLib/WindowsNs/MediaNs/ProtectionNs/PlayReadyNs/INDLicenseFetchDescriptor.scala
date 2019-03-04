@@ -22,10 +22,8 @@ object INDLicenseFetchDescriptor {
     contentIDType: NDContentIDType,
     licenseFetchChallengeCustomData: INDCustomData
   ): INDLicenseFetchDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentID")(contentID)
-    __obj.updateDynamic("contentIDType")(contentIDType)
-    __obj.updateDynamic("licenseFetchChallengeCustomData")(licenseFetchChallengeCustomData)
+    val __obj = js.Dynamic.literal(contentID = contentID, contentIDType = contentIDType, licenseFetchChallengeCustomData = licenseFetchChallengeCustomData)
+  
     __obj.asInstanceOf[INDLicenseFetchDescriptor]
   }
 }

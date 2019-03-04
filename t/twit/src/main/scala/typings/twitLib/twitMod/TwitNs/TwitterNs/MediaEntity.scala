@@ -36,18 +36,8 @@ object MediaEntity {
     `type`: java.lang.String,
     url: java.lang.String
   ): MediaEntity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("display_url")(display_url)
-    __obj.updateDynamic("expanded_url")(expanded_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("id_str")(id_str)
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("media_url")(media_url)
-    __obj.updateDynamic("media_url_https")(media_url_https)
-    __obj.updateDynamic("sizes")(sizes)
-    __obj.updateDynamic("source_status_id")(source_status_id)
-    __obj.updateDynamic("source_status_id_str")(source_status_id_str)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(display_url = display_url, expanded_url = expanded_url, id = id, id_str = id_str, indices = indices, media_url = media_url, media_url_https = media_url_https, sizes = sizes, source_status_id = source_status_id, source_status_id_str = source_status_id_str, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MediaEntity]
   }
 }

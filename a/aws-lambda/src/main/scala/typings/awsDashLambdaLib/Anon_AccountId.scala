@@ -14,10 +14,8 @@ trait Anon_AccountId extends js.Object {
 object Anon_AccountId {
   @scala.inline
   def apply(accountId: java.lang.String, data: Anon_ActionConfiguration, id: java.lang.String): Anon_AccountId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(accountId = accountId, data = data, id = id)
+  
     __obj.asInstanceOf[Anon_AccountId]
   }
 }

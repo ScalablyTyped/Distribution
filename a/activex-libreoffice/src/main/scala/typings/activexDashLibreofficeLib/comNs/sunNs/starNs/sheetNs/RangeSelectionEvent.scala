@@ -22,9 +22,8 @@ object RangeSelectionEvent {
     RangeDescriptor: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): RangeSelectionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RangeDescriptor")(RangeDescriptor)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(RangeDescriptor = RangeDescriptor, Source = Source)
+  
     __obj.asInstanceOf[RangeSelectionEvent]
   }
 }

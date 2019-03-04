@@ -13,8 +13,8 @@ trait HeadOptions extends js.Object {
 object HeadOptions {
   @scala.inline
   def apply(`-n`: scala.Double): HeadOptions = {
-    val __obj = js.Dynamic.literal(`-n` = `-n`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("-n")(`-n`)
     __obj.asInstanceOf[HeadOptions]
   }
 }

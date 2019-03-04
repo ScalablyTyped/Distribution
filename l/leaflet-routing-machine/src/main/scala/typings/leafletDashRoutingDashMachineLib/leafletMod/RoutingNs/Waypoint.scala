@@ -18,8 +18,7 @@ object Waypoint {
     name: java.lang.String = null,
     options: WaypointOptions = null
   ): Waypoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latLng")(latLng)
+    val __obj = js.Dynamic.literal(latLng = latLng)
     if (name != null) __obj.updateDynamic("name")(name)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Waypoint]

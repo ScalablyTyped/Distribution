@@ -16,8 +16,7 @@ object Anon_ContentKey {
     content: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ContentKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ContentKey]
   }

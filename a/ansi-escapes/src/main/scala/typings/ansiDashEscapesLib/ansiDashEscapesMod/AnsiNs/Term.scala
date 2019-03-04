@@ -12,8 +12,8 @@ trait Term extends js.Object {
 object Term {
   @scala.inline
   def apply(setCwd: js.Function1[java.lang.String, java.lang.String]): Term = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setCwd")(setCwd)
+    val __obj = js.Dynamic.literal(setCwd = setCwd)
+  
     __obj.asInstanceOf[Term]
   }
 }

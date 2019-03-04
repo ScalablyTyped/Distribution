@@ -20,11 +20,8 @@ object Anon_JumpNextIcon {
     nextIcon: reactLib.reactMod.Global.JSXNs.Element,
     prevIcon: reactLib.reactMod.Global.JSXNs.Element
   ): Anon_JumpNextIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jumpNextIcon")(jumpNextIcon)
-    __obj.updateDynamic("jumpPrevIcon")(jumpPrevIcon)
-    __obj.updateDynamic("nextIcon")(nextIcon)
-    __obj.updateDynamic("prevIcon")(prevIcon)
+    val __obj = js.Dynamic.literal(jumpNextIcon = jumpNextIcon, jumpPrevIcon = jumpPrevIcon, nextIcon = nextIcon, prevIcon = prevIcon)
+  
     __obj.asInstanceOf[Anon_JumpNextIcon]
   }
 }

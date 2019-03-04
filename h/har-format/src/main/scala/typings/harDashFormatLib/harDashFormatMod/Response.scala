@@ -60,16 +60,7 @@ object Response {
     _transferSize: scala.Int | scala.Double = null,
     comment: java.lang.String = null
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bodySize")(bodySize)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("headersSize")(headersSize)
-    __obj.updateDynamic("httpVersion")(httpVersion)
-    __obj.updateDynamic("redirectURL")(redirectURL)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(bodySize = bodySize, content = content, cookies = cookies, headers = headers, headersSize = headersSize, httpVersion = httpVersion, redirectURL = redirectURL, status = status, statusText = statusText)
     if (_transferSize != null) __obj.updateDynamic("_transferSize")(_transferSize.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment)
     __obj.asInstanceOf[Response]

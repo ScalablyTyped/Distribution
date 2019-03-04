@@ -13,8 +13,8 @@ trait Anon_Array extends js.Object {
 object Anon_Array {
   @scala.inline
   def apply(array: Anon_OptionsJSONEditorArrayOptions, `object`: Anon_Options): Anon_Array = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("array")(array)
+    val __obj = js.Dynamic.literal(array = array)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Array]
   }
 }

@@ -60,20 +60,8 @@ object Image {
     vote: java.lang.String = null,
     webm: java.lang.String = null
   ): Image = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("animated")(animated)
-    __obj.updateDynamic("bandwidth")(bandwidth)
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("favorite")(favorite)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("section")(section)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("views")(views)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(animated = animated, bandwidth = bandwidth, datetime = datetime, description = description, favorite = favorite, height = height, id = id, link = link, section = section, size = size, title = title, views = views, width = width)
+    __obj.updateDynamic("type")(`type`)
     if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
     if (account_url != null) __obj.updateDynamic("account_url")(account_url)
     if (deletehash != null) __obj.updateDynamic("deletehash")(deletehash)

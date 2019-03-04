@@ -22,12 +22,8 @@ object WebResponse {
     md5: js.Any,
     statusCode: scala.Double
   ): WebResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("isSuccessful")(isSuccessful)
-    __obj.updateDynamic("md5")(md5)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, isSuccessful = isSuccessful, md5 = md5, statusCode = statusCode)
+  
     __obj.asInstanceOf[WebResponse]
   }
 }

@@ -27,10 +27,7 @@ object EventsUpdateParameters {
     sendNotifications: js.UndefOr[scala.Boolean] = js.undefined,
     supportsAttachments: js.UndefOr[scala.Boolean] = js.undefined
   ): EventsUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
-    __obj.updateDynamic("eventId")(eventId)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(calendarId = calendarId, eventId = eventId, resource = resource)
     if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail)
     if (!js.isUndefined(maxAttendees)) __obj.updateDynamic("maxAttendees")(maxAttendees)
     if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications)

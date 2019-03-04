@@ -34,14 +34,9 @@ object ParsedKey {
     ppk: js.UndefOr[scala.Boolean] = js.undefined,
     privateMAC: java.lang.String = null
   ): ParsedKey = {
-    val __obj = js.Dynamic.literal(`private` = `private`, `type` = `type`)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("encryption")(encryption)
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("fulltype")(fulltype)
-    __obj.updateDynamic("privateOrig")(privateOrig)
-    __obj.updateDynamic("public")(public)
-    __obj.updateDynamic("publicOrig")(publicOrig)
+    val __obj = js.Dynamic.literal(comment = comment, encryption = encryption, extra = extra, fulltype = fulltype, privateOrig = privateOrig, public = public, publicOrig = publicOrig)
+    __obj.updateDynamic("private")(`private`)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(ppk)) __obj.updateDynamic("ppk")(ppk)
     if (privateMAC != null) __obj.updateDynamic("privateMAC")(privateMAC)
     __obj.asInstanceOf[ParsedKey]

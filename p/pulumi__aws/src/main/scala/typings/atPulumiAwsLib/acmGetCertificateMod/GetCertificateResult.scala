@@ -19,9 +19,8 @@ trait GetCertificateResult extends js.Object {
 object GetCertificateResult {
   @scala.inline
   def apply(arn: java.lang.String, id: java.lang.String): GetCertificateResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(arn = arn, id = id)
+  
     __obj.asInstanceOf[GetCertificateResult]
   }
 }

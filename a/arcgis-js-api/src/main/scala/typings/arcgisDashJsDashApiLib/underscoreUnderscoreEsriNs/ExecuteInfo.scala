@@ -86,20 +86,8 @@ object ExecuteInfo {
     stepID: scala.Double,
     threwError: scala.Boolean
   ): ExecuteInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conflicts")(conflicts)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorDescription")(errorDescription)
-    __obj.updateDynamic("executionResult")(executionResult)
-    __obj.updateDynamic("hasConflicts")(hasConflicts)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("hasReturnCode")(hasReturnCode)
-    __obj.updateDynamic("jobID")(jobID)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("returnCode")(returnCode)
-    __obj.updateDynamic("stepID")(stepID)
-    __obj.updateDynamic("threwError")(threwError)
+    val __obj = js.Dynamic.literal(conflicts = conflicts, constructor = constructor, errorCode = errorCode, errorDescription = errorDescription, executionResult = executionResult, hasConflicts = hasConflicts, hasOwnProperty = hasOwnProperty, hasReturnCode = hasReturnCode, jobID = jobID, propertyIsEnumerable = propertyIsEnumerable, returnCode = returnCode, stepID = stepID, threwError = threwError)
+  
     __obj.asInstanceOf[ExecuteInfo]
   }
 }

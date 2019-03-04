@@ -12,8 +12,8 @@ trait StripeConfigOptions extends js.Object {
 object StripeConfigOptions {
   @scala.inline
   def apply(stripeAccount: java.lang.String): StripeConfigOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stripeAccount")(stripeAccount)
+    val __obj = js.Dynamic.literal(stripeAccount = stripeAccount)
+  
     __obj.asInstanceOf[StripeConfigOptions]
   }
 }

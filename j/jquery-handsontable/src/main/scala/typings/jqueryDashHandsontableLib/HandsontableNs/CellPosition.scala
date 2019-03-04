@@ -13,9 +13,8 @@ trait CellPosition extends js.Object {
 object CellPosition {
   @scala.inline
   def apply(col: scala.Double, row: scala.Double): CellPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(col = col, row = row)
+  
     __obj.asInstanceOf[CellPosition]
   }
 }

@@ -20,9 +20,7 @@ object Options {
     api_server: java.lang.String = null,
     protocol: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geetest_id")(geetest_id)
-    __obj.updateDynamic("geetest_key")(geetest_key)
+    val __obj = js.Dynamic.literal(geetest_id = geetest_id, geetest_key = geetest_key)
     if (api_server != null) __obj.updateDynamic("api_server")(api_server)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     __obj.asInstanceOf[Options]

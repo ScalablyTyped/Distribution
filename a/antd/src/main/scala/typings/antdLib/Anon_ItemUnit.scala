@@ -22,12 +22,8 @@ object Anon_ItemUnit {
     searchPlaceholder: java.lang.String,
     titles: js.Array[java.lang.String]
   ): Anon_ItemUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemUnit")(itemUnit)
-    __obj.updateDynamic("itemsUnit")(itemsUnit)
-    __obj.updateDynamic("notFoundContent")(notFoundContent)
-    __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
-    __obj.updateDynamic("titles")(titles)
+    val __obj = js.Dynamic.literal(itemUnit = itemUnit, itemsUnit = itemsUnit, notFoundContent = notFoundContent, searchPlaceholder = searchPlaceholder, titles = titles)
+  
     __obj.asInstanceOf[Anon_ItemUnit]
   }
 }

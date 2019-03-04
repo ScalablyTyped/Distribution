@@ -54,20 +54,8 @@ object IQueryOptions {
     sortOrder: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SortEntry],
     userSearchFilter: java.lang.String
   ): IQueryOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationSearchFilter")(applicationSearchFilter)
-    __obj.updateDynamic("dateStackOption")(dateStackOption)
-    __obj.updateDynamic("fileTypeFilter")(fileTypeFilter)
-    __obj.updateDynamic("folderDepth")(folderDepth)
-    __obj.updateDynamic("groupPropertyName")(groupPropertyName)
-    __obj.updateDynamic("indexerOption")(indexerOption)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("loadFromString")(loadFromString)
-    __obj.updateDynamic("saveToString")(saveToString)
-    __obj.updateDynamic("setPropertyPrefetch")(setPropertyPrefetch)
-    __obj.updateDynamic("setThumbnailPrefetch")(setThumbnailPrefetch)
-    __obj.updateDynamic("sortOrder")(sortOrder)
-    __obj.updateDynamic("userSearchFilter")(userSearchFilter)
+    val __obj = js.Dynamic.literal(applicationSearchFilter = applicationSearchFilter, dateStackOption = dateStackOption, fileTypeFilter = fileTypeFilter, folderDepth = folderDepth, groupPropertyName = groupPropertyName, indexerOption = indexerOption, language = language, loadFromString = loadFromString, saveToString = saveToString, setPropertyPrefetch = setPropertyPrefetch, setThumbnailPrefetch = setThumbnailPrefetch, sortOrder = sortOrder, userSearchFilter = userSearchFilter)
+  
     __obj.asInstanceOf[IQueryOptions]
   }
 }

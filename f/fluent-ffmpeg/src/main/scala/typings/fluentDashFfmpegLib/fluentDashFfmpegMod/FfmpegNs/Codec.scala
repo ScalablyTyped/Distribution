@@ -32,10 +32,8 @@ object Codec {
     isLossy: js.UndefOr[scala.Boolean] = js.undefined,
     weirdFrameTruncation: js.UndefOr[scala.Boolean] = js.undefined
   ): Codec = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("canDecode")(canDecode)
-    __obj.updateDynamic("canEncode")(canEncode)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(canDecode = canDecode, canEncode = canEncode, description = description)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(directRendering)) __obj.updateDynamic("directRendering")(directRendering)
     if (!js.isUndefined(drawHorizBand)) __obj.updateDynamic("drawHorizBand")(drawHorizBand)
     if (!js.isUndefined(intraFrameOnly)) __obj.updateDynamic("intraFrameOnly")(intraFrameOnly)

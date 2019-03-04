@@ -18,10 +18,8 @@ object ITable {
     createRow: js.Function1[js.Object, lovefieldLib.lovefieldMod.lfNs.Row],
     getName: js.Function0[java.lang.String]
   ): ITable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("createRow")(createRow)
-    __obj.updateDynamic("getName")(getName)
+    val __obj = js.Dynamic.literal(as = as, createRow = createRow, getName = getName)
+  
     __obj.asInstanceOf[ITable]
   }
 }

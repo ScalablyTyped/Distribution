@@ -42,12 +42,8 @@ object GridRowsUpdatedEvent {
     toRow: scala.Double,
     updated: T
   ): GridRowsUpdatedEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("cellKey")(cellKey)
-    __obj.updateDynamic("fromRow")(fromRow)
-    __obj.updateDynamic("toRow")(toRow)
-    __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], cellKey = cellKey, fromRow = fromRow, toRow = toRow, updated = updated.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GridRowsUpdatedEvent[T]]
   }
 }

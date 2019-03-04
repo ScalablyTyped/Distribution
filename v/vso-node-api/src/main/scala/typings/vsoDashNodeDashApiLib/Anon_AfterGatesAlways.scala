@@ -14,10 +14,8 @@ trait Anon_AfterGatesAlways extends js.Object {
 object Anon_AfterGatesAlways {
   @scala.inline
   def apply(afterGatesAlways: scala.Double, afterSuccessfulGates: scala.Double, beforeGates: scala.Double): Anon_AfterGatesAlways = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterGatesAlways")(afterGatesAlways)
-    __obj.updateDynamic("afterSuccessfulGates")(afterSuccessfulGates)
-    __obj.updateDynamic("beforeGates")(beforeGates)
+    val __obj = js.Dynamic.literal(afterGatesAlways = afterGatesAlways, afterSuccessfulGates = afterSuccessfulGates, beforeGates = beforeGates)
+  
     __obj.asInstanceOf[Anon_AfterGatesAlways]
   }
 }

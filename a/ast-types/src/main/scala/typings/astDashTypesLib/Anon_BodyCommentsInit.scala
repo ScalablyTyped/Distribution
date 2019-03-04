@@ -24,8 +24,7 @@ object Anon_BodyCommentsInit {
     test: astDashTypesLib.genKindsMod.ExpressionKind = null,
     update: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): Anon_BodyCommentsInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc)

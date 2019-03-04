@@ -34,10 +34,8 @@ object ReviewsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ReviewsReplyResponse]
     ]
   ): ReviewsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("reply")(reply)
+    val __obj = js.Dynamic.literal(get = get, list = list, reply = reply)
+  
     __obj.asInstanceOf[ReviewsResource]
   }
 }

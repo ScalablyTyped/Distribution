@@ -12,8 +12,8 @@ trait html extends js.Object {
 object html {
   @scala.inline
   def apply(html: java.lang.String): html = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("html")(html)
+    val __obj = js.Dynamic.literal(html = html)
+  
     __obj.asInstanceOf[html]
   }
 }

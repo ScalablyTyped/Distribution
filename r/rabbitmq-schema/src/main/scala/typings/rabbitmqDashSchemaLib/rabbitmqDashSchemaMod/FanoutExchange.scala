@@ -18,9 +18,8 @@ object FanoutExchange {
     `type`: rabbitmqDashSchemaLib.rabbitmqDashSchemaLibStrings.fanout,
     options: js.Object = null
   ): FanoutExchange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bindings")(bindings)
-    __obj.updateDynamic("exchange")(exchange)
+    val __obj = js.Dynamic.literal(bindings = bindings, exchange = exchange)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[FanoutExchange]
   }

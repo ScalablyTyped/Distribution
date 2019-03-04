@@ -14,8 +14,8 @@ object Anon_AlwaysNever {
   def apply(
     warnOnNgModelWithFormControl: atAngularFormsLib.atAngularFormsLibStrings.never | atAngularFormsLib.atAngularFormsLibStrings.once | atAngularFormsLib.atAngularFormsLibStrings.always
   ): Anon_AlwaysNever = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("warnOnNgModelWithFormControl")(warnOnNgModelWithFormControl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(warnOnNgModelWithFormControl = warnOnNgModelWithFormControl.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AlwaysNever]
   }
 }

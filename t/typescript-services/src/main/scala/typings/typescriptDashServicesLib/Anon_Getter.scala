@@ -16,9 +16,8 @@ object Anon_Getter {
     getter: typescriptDashServicesLib.TypeScriptNs.GetAccessor,
     setter: typescriptDashServicesLib.TypeScriptNs.SetAccessor
   ): Anon_Getter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getter")(getter)
-    __obj.updateDynamic("setter")(setter)
+    val __obj = js.Dynamic.literal(getter = getter, setter = setter)
+  
     __obj.asInstanceOf[Anon_Getter]
   }
 }

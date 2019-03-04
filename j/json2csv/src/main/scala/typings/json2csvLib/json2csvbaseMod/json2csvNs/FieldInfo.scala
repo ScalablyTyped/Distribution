@@ -18,8 +18,7 @@ object FieldInfo {
     default: java.lang.String = null,
     value: java.lang.String | FieldValueCallback[T] = null
   ): FieldInfo[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (default != null) __obj.updateDynamic("default")(default)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfo[T]]

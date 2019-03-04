@@ -18,8 +18,8 @@ object InfoTypesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListInfoTypesResponse]
     ]
   ): InfoTypesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[InfoTypesResource]
   }
 }

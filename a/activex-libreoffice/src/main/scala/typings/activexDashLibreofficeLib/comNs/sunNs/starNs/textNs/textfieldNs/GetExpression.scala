@@ -91,38 +91,8 @@ object GetExpression {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): GetExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("AnchorType")(AnchorType)
-    __obj.updateDynamic("AnchorTypes")(AnchorTypes)
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("CurrentPresentation")(CurrentPresentation)
-    __obj.updateDynamic("IsFieldDisplayed")(IsFieldDisplayed)
-    __obj.updateDynamic("IsFieldUsed")(IsFieldUsed)
-    __obj.updateDynamic("IsFixedLanguage")(IsFixedLanguage)
-    __obj.updateDynamic("IsShowFormula")(IsShowFormula)
-    __obj.updateDynamic("NumberFormat")(NumberFormat)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SubType")(SubType)
-    __obj.updateDynamic("TextWrap")(TextWrap)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("VariableSubtype")(VariableSubtype)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getPresentation")(getPresentation)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, Content = Content, CurrentPresentation = CurrentPresentation, IsFieldDisplayed = IsFieldDisplayed, IsFieldUsed = IsFieldUsed, IsFixedLanguage = IsFixedLanguage, IsShowFormula = IsShowFormula, NumberFormat = NumberFormat, PropertySetInfo = PropertySetInfo, SubType = SubType, TextWrap = TextWrap, Value = Value, VariableSubtype = VariableSubtype, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getPresentation = getPresentation, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[GetExpression]
   }
 }

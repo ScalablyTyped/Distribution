@@ -30,16 +30,8 @@ object Anon_CreateScopeInfo {
     QueryMembership: Anon_EnumValuesAnonDirect,
     ReadIdentitiesOptions: Anon_EnumValuesAnonFilterIllegalMemberships
   ): Anon_CreateScopeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CreateScopeInfo")(CreateScopeInfo)
-    __obj.updateDynamic("FrameworkIdentityInfo")(FrameworkIdentityInfo)
-    __obj.updateDynamic("FrameworkIdentityType")(FrameworkIdentityType)
-    __obj.updateDynamic("GroupScopeType")(GroupScopeType)
-    __obj.updateDynamic("IdentityBatchInfo")(IdentityBatchInfo)
-    __obj.updateDynamic("IdentityScope")(IdentityScope)
-    __obj.updateDynamic("IdentitySnapshot")(IdentitySnapshot)
-    __obj.updateDynamic("QueryMembership")(QueryMembership)
-    __obj.updateDynamic("ReadIdentitiesOptions")(ReadIdentitiesOptions)
+    val __obj = js.Dynamic.literal(CreateScopeInfo = CreateScopeInfo, FrameworkIdentityInfo = FrameworkIdentityInfo, FrameworkIdentityType = FrameworkIdentityType, GroupScopeType = GroupScopeType, IdentityBatchInfo = IdentityBatchInfo, IdentityScope = IdentityScope, IdentitySnapshot = IdentitySnapshot, QueryMembership = QueryMembership, ReadIdentitiesOptions = ReadIdentitiesOptions)
+  
     __obj.asInstanceOf[Anon_CreateScopeInfo]
   }
 }

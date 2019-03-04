@@ -14,9 +14,7 @@ trait DataViewColumnPercentileAggregate extends js.Object {
 object DataViewColumnPercentileAggregate {
   @scala.inline
   def apply(k: scala.Double, value: PrimitiveValue, exclusive: js.UndefOr[scala.Boolean] = js.undefined): DataViewColumnPercentileAggregate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("k")(k)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(k = k, value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
     __obj.asInstanceOf[DataViewColumnPercentileAggregate]
   }

@@ -17,11 +17,8 @@ object SectionListRenderItemInfo {
     section: SectionListData[ItemT],
     separators: reactDashNativeLib.Anon_Highlight
   ): SectionListRenderItemInfo[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("section")(section)
-    __obj.updateDynamic("separators")(separators)
+    val __obj = js.Dynamic.literal(index = index, item = item.asInstanceOf[js.Any], section = section, separators = separators)
+  
     __obj.asInstanceOf[SectionListRenderItemInfo[ItemT]]
   }
 }

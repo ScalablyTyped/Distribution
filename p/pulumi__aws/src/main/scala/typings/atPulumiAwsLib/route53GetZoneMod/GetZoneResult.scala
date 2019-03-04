@@ -45,16 +45,8 @@ object GetZoneResult {
     vpcId: java.lang.String,
     zoneId: java.lang.String
   ): GetZoneResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callerReference")(callerReference)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nameServers")(nameServers)
-    __obj.updateDynamic("resourceRecordSetCount")(resourceRecordSetCount)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
-    __obj.updateDynamic("zoneId")(zoneId)
+    val __obj = js.Dynamic.literal(callerReference = callerReference, comment = comment, id = id, name = name, nameServers = nameServers, resourceRecordSetCount = resourceRecordSetCount, tags = tags, vpcId = vpcId, zoneId = zoneId)
+  
     __obj.asInstanceOf[GetZoneResult]
   }
 }

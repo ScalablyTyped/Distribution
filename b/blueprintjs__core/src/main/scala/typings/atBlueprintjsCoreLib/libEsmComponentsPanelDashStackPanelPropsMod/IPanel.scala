@@ -31,8 +31,7 @@ object IPanel {
     props: P = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null
   ): IPanel[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanel[P]]

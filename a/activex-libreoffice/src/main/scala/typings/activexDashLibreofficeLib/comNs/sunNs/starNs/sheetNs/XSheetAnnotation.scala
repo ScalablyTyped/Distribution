@@ -47,19 +47,8 @@ object XSheetAnnotation {
     release: js.Function0[scala.Unit],
     setIsVisible: js.Function1[scala.Boolean, scala.Unit]
   ): XSheetAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAuthor")(getAuthor)
-    __obj.updateDynamic("getDate")(getDate)
-    __obj.updateDynamic("getIsVisible")(getIsVisible)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setIsVisible")(setIsVisible)
+    val __obj = js.Dynamic.literal(Author = Author, Date = Date, IsVisible = IsVisible, Position = Position, acquire = acquire, getAuthor = getAuthor, getDate = getDate, getIsVisible = getIsVisible, getPosition = getPosition, queryInterface = queryInterface, release = release, setIsVisible = setIsVisible)
+  
     __obj.asInstanceOf[XSheetAnnotation]
   }
 }

@@ -26,14 +26,8 @@ object PlaybackDisallows {
     skipping_next: scala.Boolean,
     skipping_prev: scala.Boolean
   ): PlaybackDisallows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pausing")(pausing)
-    __obj.updateDynamic("peeking_next")(peeking_next)
-    __obj.updateDynamic("peeking_prev")(peeking_prev)
-    __obj.updateDynamic("resuming")(resuming)
-    __obj.updateDynamic("seeking")(seeking)
-    __obj.updateDynamic("skipping_next")(skipping_next)
-    __obj.updateDynamic("skipping_prev")(skipping_prev)
+    val __obj = js.Dynamic.literal(pausing = pausing, peeking_next = peeking_next, peeking_prev = peeking_prev, resuming = resuming, seeking = seeking, skipping_next = skipping_next, skipping_prev = skipping_prev)
+  
     __obj.asInstanceOf[PlaybackDisallows]
   }
 }

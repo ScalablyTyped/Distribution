@@ -22,12 +22,8 @@ object Anon_Location {
     MatchType: java.lang.String,
     Relevance: scala.Double
   ): Anon_Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Location")(Location)
-    __obj.updateDynamic("MatchLevel")(MatchLevel)
-    __obj.updateDynamic("MatchQuality")(MatchQuality)
-    __obj.updateDynamic("MatchType")(MatchType)
-    __obj.updateDynamic("Relevance")(Relevance)
+    val __obj = js.Dynamic.literal(Location = Location, MatchLevel = MatchLevel, MatchQuality = MatchQuality, MatchType = MatchType, Relevance = Relevance)
+  
     __obj.asInstanceOf[Anon_Location]
   }
 }

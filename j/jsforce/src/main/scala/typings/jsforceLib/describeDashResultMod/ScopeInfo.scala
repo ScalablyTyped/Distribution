@@ -13,9 +13,8 @@ trait ScopeInfo extends js.Object {
 object ScopeInfo {
   @scala.inline
   def apply(label: java.lang.String, name: java.lang.String): ScopeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(label = label, name = name)
+  
     __obj.asInstanceOf[ScopeInfo]
   }
 }

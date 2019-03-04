@@ -26,14 +26,8 @@ object ModuleCoverage {
     signatureAge: scala.Double,
     statistics: CoverageStatistics
   ): ModuleCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockCount")(blockCount)
-    __obj.updateDynamic("blockData")(blockData)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("signatureAge")(signatureAge)
-    __obj.updateDynamic("statistics")(statistics)
+    val __obj = js.Dynamic.literal(blockCount = blockCount, blockData = blockData, functions = functions, name = name, signature = signature, signatureAge = signatureAge, statistics = statistics)
+  
     __obj.asInstanceOf[ModuleCoverage]
   }
 }

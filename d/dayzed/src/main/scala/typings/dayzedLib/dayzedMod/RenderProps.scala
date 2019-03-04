@@ -20,11 +20,8 @@ object RenderProps {
     getDateProps: js.Function1[dayzedLib.Anon_DateObj, stdLib.Record[java.lang.String, _]],
     getForwardProps: js.Function1[dayzedLib.Anon_Calendars, stdLib.Record[java.lang.String, _]]
   ): RenderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendars")(calendars)
-    __obj.updateDynamic("getBackProps")(getBackProps)
-    __obj.updateDynamic("getDateProps")(getDateProps)
-    __obj.updateDynamic("getForwardProps")(getForwardProps)
+    val __obj = js.Dynamic.literal(calendars = calendars, getBackProps = getBackProps, getDateProps = getDateProps, getForwardProps = getForwardProps)
+  
     __obj.asInstanceOf[RenderProps]
   }
 }

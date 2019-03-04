@@ -40,8 +40,7 @@ object OptionsFab {
     size: scala.Int | scala.Double = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): OptionsFab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (alignHorizontally != null) __obj.updateDynamic("alignHorizontally")(alignHorizontally.asInstanceOf[js.Any])
     if (alignVertically != null) __obj.updateDynamic("alignVertically")(alignVertically.asInstanceOf[js.Any])

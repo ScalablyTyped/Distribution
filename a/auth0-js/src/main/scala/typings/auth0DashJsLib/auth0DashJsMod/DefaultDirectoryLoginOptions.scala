@@ -17,9 +17,7 @@ object DefaultDirectoryLoginOptions {
     audience: java.lang.String = null,
     scope: java.lang.String = null
   ): DefaultDirectoryLoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, username = username)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[DefaultDirectoryLoginOptions]

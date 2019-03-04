@@ -72,11 +72,7 @@ object LocationData {
     province: java.lang.String = null,
     streetNumber: aliDashAppLib.Anon_Number = null
   ): LocationData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, horizontalAccuracy = horizontalAccuracy, latitude = latitude, longitude = longitude)
     if (city != null) __obj.updateDynamic("city")(city)
     if (cityAdcode != null) __obj.updateDynamic("cityAdcode")(cityAdcode)
     if (country != null) __obj.updateDynamic("country")(country)

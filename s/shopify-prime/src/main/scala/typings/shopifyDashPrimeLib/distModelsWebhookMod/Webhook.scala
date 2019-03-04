@@ -52,9 +52,7 @@ object Webhook {
     metafield_namespaces: js.Array[java.lang.String] = null,
     updated_at: java.lang.String = null
   ): Webhook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address, topic = topic.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)
     if (fields != null) __obj.updateDynamic("fields")(fields)

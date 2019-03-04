@@ -25,10 +25,8 @@ object UpdateExpression {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): UpdateExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(argument = argument, operator = operator, prefix = prefix)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

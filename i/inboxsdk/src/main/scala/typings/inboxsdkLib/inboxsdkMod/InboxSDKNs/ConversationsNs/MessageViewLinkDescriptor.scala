@@ -22,12 +22,8 @@ object MessageViewLinkDescriptor {
     isInQuotedArea: scala.Boolean,
     text: java.lang.String
   ): MessageViewLinkDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("isInQuotedArea")(isInQuotedArea)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(element = element, href = href, html = html, isInQuotedArea = isInQuotedArea, text = text)
+  
     __obj.asInstanceOf[MessageViewLinkDescriptor]
   }
 }

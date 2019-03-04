@@ -56,10 +56,7 @@ object SupressionListEntry {
     transactional: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: sparkpostLib.sparkpostLibStrings.transactional | sparkpostLib.sparkpostLibStrings.non_transactional = null
   ): SupressionListEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(created = created, recipient = recipient, updated = updated)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(non_transactional)) __obj.updateDynamic("non_transactional")(non_transactional)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])

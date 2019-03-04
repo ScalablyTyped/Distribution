@@ -43,17 +43,8 @@ object CommentNode {
     `type`: java.lang.String,
     sourceCodeLocation: parse5Lib.parse5Mod.Location = null
   ): CommentNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("previousSibling")(previousSibling)
+    val __obj = js.Dynamic.literal(data = data, name = name, next = next, nextSibling = nextSibling, nodeType = nodeType, nodeValue = nodeValue, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling)
+    __obj.updateDynamic("type")(`type`)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[CommentNode]
   }

@@ -42,14 +42,7 @@ object Template {
     published: scala.Boolean,
     last_use: java.lang.String = null
   ): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("last_update_time")(last_update_time)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("published")(published)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description, id = id, last_update_time = last_update_time, name = name, options = options, published = published)
     if (last_use != null) __obj.updateDynamic("last_use")(last_use)
     __obj.asInstanceOf[Template]
   }

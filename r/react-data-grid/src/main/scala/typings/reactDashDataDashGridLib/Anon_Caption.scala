@@ -13,9 +13,8 @@ trait Anon_Caption extends js.Object {
 object Anon_Caption {
   @scala.inline
   def apply(caption: java.lang.String, id: scala.Double): Anon_Caption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(caption = caption, id = id)
+  
     __obj.asInstanceOf[Anon_Caption]
   }
 }

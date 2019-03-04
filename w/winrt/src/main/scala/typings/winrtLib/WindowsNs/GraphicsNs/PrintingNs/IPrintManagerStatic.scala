@@ -16,9 +16,8 @@ object IPrintManagerStatic {
     getForCurrentView: js.Function0[PrintManager],
     showPrintUIAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Boolean]]
   ): IPrintManagerStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getForCurrentView")(getForCurrentView)
-    __obj.updateDynamic("showPrintUIAsync")(showPrintUIAsync)
+    val __obj = js.Dynamic.literal(getForCurrentView = getForCurrentView, showPrintUIAsync = showPrintUIAsync)
+  
     __obj.asInstanceOf[IPrintManagerStatic]
   }
 }

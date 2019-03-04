@@ -50,10 +50,7 @@ object SceneViewConstraintsClipDistance {
       WatchHandle
     ] = null
   ): SceneViewConstraintsClipDistance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (far != null) __obj.updateDynamic("far")(far.asInstanceOf[js.Any])
     if (get != null) __obj.updateDynamic("get")(get)
     if (mode != null) __obj.updateDynamic("mode")(mode)

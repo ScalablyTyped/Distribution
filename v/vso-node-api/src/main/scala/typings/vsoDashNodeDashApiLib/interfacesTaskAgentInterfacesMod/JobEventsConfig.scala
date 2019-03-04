@@ -14,10 +14,8 @@ trait JobEventsConfig extends js.Object {
 object JobEventsConfig {
   @scala.inline
   def apply(jobAssigned: JobEventConfig, jobCompleted: JobEventConfig, jobStarted: JobEventConfig): JobEventsConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobAssigned")(jobAssigned)
-    __obj.updateDynamic("jobCompleted")(jobCompleted)
-    __obj.updateDynamic("jobStarted")(jobStarted)
+    val __obj = js.Dynamic.literal(jobAssigned = jobAssigned, jobCompleted = jobCompleted, jobStarted = jobStarted)
+  
     __obj.asInstanceOf[JobEventsConfig]
   }
 }

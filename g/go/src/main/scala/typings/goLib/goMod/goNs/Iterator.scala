@@ -67,18 +67,8 @@ object Iterator {
     reset: js.Function0[scala.Unit],
     value: T
   ): Iterator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("any")(any)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(all = all, any = any, count = count, each = each, filter = filter, first = first, iterator = iterator, key = key, next = next, reset = reset, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Iterator[T]]
   }
 }

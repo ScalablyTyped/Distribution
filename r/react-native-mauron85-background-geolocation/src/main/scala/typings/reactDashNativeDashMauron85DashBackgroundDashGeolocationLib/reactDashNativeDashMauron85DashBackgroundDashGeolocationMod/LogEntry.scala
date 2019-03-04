@@ -25,12 +25,8 @@ object LogEntry {
     stackTrace: java.lang.String,
     timestamp: scala.Double
   ): LogEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stackTrace")(stackTrace)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, level = level, message = message, stackTrace = stackTrace, timestamp = timestamp)
+  
     __obj.asInstanceOf[LogEntry]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(uses: qlikLib.qlikLibStrings.data): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(uses = uses)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

@@ -26,14 +26,8 @@ object IUserOrUserGroupIDExs {
     Item: js.Function1[scala.Double, IUserOrUserGroupIDEx],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): IUserOrUserGroupIDExs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetUserOrUserGroupIDEx")(GetUserOrUserGroupIDEx)
-    __obj.updateDynamic("GetUserOrUserGroupIDExIndex")(GetUserOrUserGroupIDExIndex)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetUserOrUserGroupIDEx = GetUserOrUserGroupIDEx, GetUserOrUserGroupIDExIndex = GetUserOrUserGroupIDExIndex, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[IUserOrUserGroupIDExs]
   }
 }

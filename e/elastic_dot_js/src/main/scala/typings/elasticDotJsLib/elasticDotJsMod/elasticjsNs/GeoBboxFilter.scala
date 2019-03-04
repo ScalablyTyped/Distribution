@@ -67,16 +67,8 @@ object GeoBboxFilter {
     topLeft: js.Function1[GeoPoint, GeoBboxFilter],
     `type`: js.Function1[java.lang.String, GeoBboxFilter]
   ): GeoBboxFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("bottomRight")(bottomRight)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("topLeft")(topLeft)
+    val __obj = js.Dynamic.literal(_type = _type, bottomRight = bottomRight, cache = cache, cacheKey = cacheKey, field = field, name = name, normalize = normalize, toJSON = toJSON, topLeft = topLeft)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GeoBboxFilter]
   }
 }

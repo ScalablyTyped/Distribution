@@ -16,9 +16,8 @@ object Anon_Attachments {
     Attachments: activexDashOutlookLib.OutlookNs.AttachmentSelection,
     CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
   ): Anon_Attachments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachments")(Attachments)
-    __obj.updateDynamic("CommandBar")(CommandBar)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, CommandBar = CommandBar)
+  
     __obj.asInstanceOf[Anon_Attachments]
   }
 }

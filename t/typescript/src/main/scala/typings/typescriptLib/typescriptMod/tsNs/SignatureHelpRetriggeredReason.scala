@@ -25,8 +25,7 @@ object SignatureHelpRetriggeredReason {
     kind: typescriptLib.typescriptLibStrings.retrigger,
     triggerCharacter: SignatureHelpRetriggerCharacter = null
   ): SignatureHelpRetriggeredReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (triggerCharacter != null) __obj.updateDynamic("triggerCharacter")(triggerCharacter)
     __obj.asInstanceOf[SignatureHelpRetriggeredReason]
   }

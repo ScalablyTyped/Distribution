@@ -22,10 +22,8 @@ object ProfilingOnlyFiberRootProperties {
     memoizedInteractions: stdLib.Set[Interaction],
     pendingInteractionMap: PendingInteractionMap
   ): ProfilingOnlyFiberRootProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interactionThreadID")(interactionThreadID)
-    __obj.updateDynamic("memoizedInteractions")(memoizedInteractions)
-    __obj.updateDynamic("pendingInteractionMap")(pendingInteractionMap)
+    val __obj = js.Dynamic.literal(interactionThreadID = interactionThreadID, memoizedInteractions = memoizedInteractions, pendingInteractionMap = pendingInteractionMap)
+  
     __obj.asInstanceOf[ProfilingOnlyFiberRootProperties]
   }
 }

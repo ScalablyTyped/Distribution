@@ -33,10 +33,8 @@ object DependencyException {
     Message: java.lang.String,
     UnsatisfiedDependencies: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement]
   ): DependencyException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("UnsatisfiedDependencies")(UnsatisfiedDependencies)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, UnsatisfiedDependencies = UnsatisfiedDependencies)
+  
     __obj.asInstanceOf[DependencyException]
   }
 }

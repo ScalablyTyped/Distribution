@@ -24,9 +24,8 @@ object VideoFormatsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[VideoFormatsListResponse]
     ]
   ): VideoFormatsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
     __obj.asInstanceOf[VideoFormatsResource]
   }
 }

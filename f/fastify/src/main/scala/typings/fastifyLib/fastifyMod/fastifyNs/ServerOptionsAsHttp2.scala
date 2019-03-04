@@ -25,8 +25,7 @@ object ServerOptionsAsHttp2 {
     trustProxy: java.lang.String | scala.Double | scala.Boolean | js.Array[java.lang.String] | TrustProxyFunction = null,
     versioning: fastifyLib.Anon_Ctx = null
   ): ServerOptionsAsHttp2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("http2")(http2)
+    val __obj = js.Dynamic.literal(http2 = http2)
     if (bodyLimit != null) __obj.updateDynamic("bodyLimit")(bodyLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreTrailingSlash)) __obj.updateDynamic("ignoreTrailingSlash")(ignoreTrailingSlash)
     if (logger != null) __obj.updateDynamic("logger")(logger)

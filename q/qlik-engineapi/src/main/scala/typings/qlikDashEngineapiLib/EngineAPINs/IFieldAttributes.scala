@@ -73,14 +73,8 @@ object IFieldAttributes {
     qUseThou: scala.Boolean,
     qnDec: scala.Double
   ): IFieldAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDec")(qDec)
-    __obj.updateDynamic("qFmt")(qFmt)
-    __obj.updateDynamic("qSAFEARRAY")(qSAFEARRAY)
-    __obj.updateDynamic("qThou")(qThou)
-    __obj.updateDynamic("qType")(qType)
-    __obj.updateDynamic("qUseThou")(qUseThou)
-    __obj.updateDynamic("qnDec")(qnDec)
+    val __obj = js.Dynamic.literal(qDec = qDec, qFmt = qFmt, qSAFEARRAY = qSAFEARRAY, qThou = qThou, qType = qType, qUseThou = qUseThou, qnDec = qnDec)
+  
     __obj.asInstanceOf[IFieldAttributes]
   }
 }

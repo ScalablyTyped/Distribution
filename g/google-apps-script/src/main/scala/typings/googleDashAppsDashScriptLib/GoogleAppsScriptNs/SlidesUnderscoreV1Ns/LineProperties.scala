@@ -31,13 +31,8 @@ object LineProperties {
     start_arrow: LinePropertiesArrowStyle,
     weight: Dimension
   ): LineProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dash_style")(dash_style)
-    __obj.updateDynamic("end_arrow")(end_arrow)
-    __obj.updateDynamic("line_fill")(line_fill)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("start_arrow")(start_arrow)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(dash_style = dash_style, end_arrow = end_arrow, line_fill = line_fill, link = link, start_arrow = start_arrow, weight = weight)
+  
     __obj.asInstanceOf[LineProperties]
   }
 }

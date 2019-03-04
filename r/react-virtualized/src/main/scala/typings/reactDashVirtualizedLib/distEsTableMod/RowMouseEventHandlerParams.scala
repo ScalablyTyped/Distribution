@@ -18,10 +18,8 @@ object RowMouseEventHandlerParams {
     index: scala.Double,
     rowData: reactDashVirtualizedLib.Anon_ColumnData
   ): RowMouseEventHandlerParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("rowData")(rowData)
+    val __obj = js.Dynamic.literal(event = event, index = index, rowData = rowData)
+  
     __obj.asInstanceOf[RowMouseEventHandlerParams]
   }
 }

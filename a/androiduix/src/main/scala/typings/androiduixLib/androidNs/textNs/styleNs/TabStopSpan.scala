@@ -12,8 +12,8 @@ trait TabStopSpan extends ParagraphStyle {
 object TabStopSpan {
   @scala.inline
   def apply(getTabStop: js.Function0[scala.Double]): TabStopSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTabStop")(getTabStop)
+    val __obj = js.Dynamic.literal(getTabStop = getTabStop)
+  
     __obj.asInstanceOf[TabStopSpan]
   }
 }

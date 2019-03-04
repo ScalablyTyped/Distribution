@@ -13,9 +13,8 @@ trait Limit extends js.Object {
 object Limit {
   @scala.inline
   def apply(Max: scala.Double, Remaining: scala.Double): Limit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Max")(Max)
-    __obj.updateDynamic("Remaining")(Remaining)
+    val __obj = js.Dynamic.literal(Max = Max, Remaining = Remaining)
+  
     __obj.asInstanceOf[Limit]
   }
 }

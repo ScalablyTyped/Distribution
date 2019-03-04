@@ -18,10 +18,8 @@ object MutationResult {
     key: atGoogleDashCloudDatastoreLib.entityMod.DatastoreKey,
     version: scala.Double
   ): MutationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conflictDetected")(conflictDetected)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(conflictDetected = conflictDetected, key = key, version = version)
+  
     __obj.asInstanceOf[MutationResult]
   }
 }

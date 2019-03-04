@@ -20,8 +20,7 @@ object JoystickOption {
     invertX: js.UndefOr[scala.Boolean] = js.undefined,
     invertY: js.UndefOr[scala.Boolean] = js.undefined
   ): JoystickOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pins")(pins)
+    val __obj = js.Dynamic.literal(pins = pins)
     if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
     if (!js.isUndefined(invertX)) __obj.updateDynamic("invertX")(invertX)
     if (!js.isUndefined(invertY)) __obj.updateDynamic("invertY")(invertY)

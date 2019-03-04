@@ -13,9 +13,8 @@ trait NodeContext extends js.Object {
 object NodeContext {
   @scala.inline
   def apply(nodeType: java.lang.String, propertyName: java.lang.String): NodeContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("propertyName")(propertyName)
+    val __obj = js.Dynamic.literal(nodeType = nodeType, propertyName = propertyName)
+  
     __obj.asInstanceOf[NodeContext]
   }
 }

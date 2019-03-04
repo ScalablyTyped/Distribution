@@ -30,9 +30,8 @@ object RoomsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): RoomsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("resetForAllPlayers")(resetForAllPlayers)
+    val __obj = js.Dynamic.literal(reset = reset, resetForAllPlayers = resetForAllPlayers)
+  
     __obj.asInstanceOf[RoomsResource]
   }
 }

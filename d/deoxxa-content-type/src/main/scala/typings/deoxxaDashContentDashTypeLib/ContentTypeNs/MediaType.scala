@@ -19,9 +19,8 @@ object MediaType {
     `type`: java.lang.String,
     q: scala.Int | scala.Double = null
   ): MediaType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(params = params, toString = toString)
+    __obj.updateDynamic("type")(`type`)
     if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaType]
   }

@@ -29,11 +29,7 @@ object AuthResponse {
     grantedScopes: java.lang.String = null,
     reauthorize_required_in: scala.Int | scala.Double = null
   ): AuthResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("expiresIn")(expiresIn)
-    __obj.updateDynamic("signedRequest")(signedRequest)
-    __obj.updateDynamic("userID")(userID)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, signedRequest = signedRequest, userID = userID)
     if (grantedScopes != null) __obj.updateDynamic("grantedScopes")(grantedScopes)
     if (reauthorize_required_in != null) __obj.updateDynamic("reauthorize_required_in")(reauthorize_required_in.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthResponse]

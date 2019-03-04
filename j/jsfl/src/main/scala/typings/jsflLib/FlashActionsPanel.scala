@@ -30,16 +30,8 @@ object FlashActionsPanel {
     setSelection: js.Function0[js.Any],
     setText: js.Function0[js.Any]
   ): FlashActionsPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClassForObject")(getClassForObject)
-    __obj.updateDynamic("getScriptAssistMode")(getScriptAssistMode)
-    __obj.updateDynamic("getSelectedText")(getSelectedText)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("hasSelection")(hasSelection)
-    __obj.updateDynamic("replaceSelectedText")(replaceSelectedText)
-    __obj.updateDynamic("setScriptAssistMode")(setScriptAssistMode)
-    __obj.updateDynamic("setSelection")(setSelection)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(getClassForObject = getClassForObject, getScriptAssistMode = getScriptAssistMode, getSelectedText = getSelectedText, getText = getText, hasSelection = hasSelection, replaceSelectedText = replaceSelectedText, setScriptAssistMode = setScriptAssistMode, setSelection = setSelection, setText = setText)
+  
     __obj.asInstanceOf[FlashActionsPanel]
   }
 }

@@ -70,19 +70,8 @@ object Anon_Action {
     SemanticAction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.SemanticAction */ js.Any,
     Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("BadgeIconType")(BadgeIconType)
-    __obj.updateDynamic("Category")(Category)
-    __obj.updateDynamic("Channel")(Channel)
-    __obj.updateDynamic("ChannelGroup")(ChannelGroup)
-    __obj.updateDynamic("Defaults")(Defaults)
-    __obj.updateDynamic("GroupAlert")(GroupAlert)
-    __obj.updateDynamic("Importance")(Importance)
-    __obj.updateDynamic("Priority")(Priority)
-    __obj.updateDynamic("RemoteInput")(RemoteInput)
-    __obj.updateDynamic("SemanticAction")(SemanticAction)
-    __obj.updateDynamic("Visibility")(Visibility)
+    val __obj = js.Dynamic.literal(Action = Action, BadgeIconType = BadgeIconType, Category = Category, Channel = Channel, ChannelGroup = ChannelGroup, Defaults = Defaults, GroupAlert = GroupAlert, Importance = Importance, Priority = Priority, RemoteInput = RemoteInput, SemanticAction = SemanticAction, Visibility = Visibility)
+  
     __obj.asInstanceOf[Anon_Action]
   }
 }

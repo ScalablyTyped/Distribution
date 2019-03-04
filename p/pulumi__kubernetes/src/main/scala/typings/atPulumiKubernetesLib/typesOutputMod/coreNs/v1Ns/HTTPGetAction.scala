@@ -42,12 +42,8 @@ object HTTPGetAction {
     port: scala.Double | java.lang.String,
     scheme: java.lang.String
   ): HTTPGetAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("httpHeaders")(httpHeaders)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(host = host, httpHeaders = httpHeaders, path = path, port = port.asInstanceOf[js.Any], scheme = scheme)
+  
     __obj.asInstanceOf[HTTPGetAction]
   }
 }

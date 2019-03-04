@@ -13,9 +13,8 @@ trait NightwatchTestWorker extends js.Object {
 object NightwatchTestWorker {
   @scala.inline
   def apply(enabled: scala.Boolean, workers: java.lang.String): NightwatchTestWorker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("workers")(workers)
+    val __obj = js.Dynamic.literal(enabled = enabled, workers = workers)
+  
     __obj.asInstanceOf[NightwatchTestWorker]
   }
 }

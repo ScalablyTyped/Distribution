@@ -42,8 +42,7 @@ object JiraApiOptions {
     username: java.lang.String = null,
     webhookVersion: java.lang.String = null
   ): JiraApiOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(host = host)
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
     if (base != null) __obj.updateDynamic("base")(base)
     if (bearer != null) __obj.updateDynamic("bearer")(bearer)

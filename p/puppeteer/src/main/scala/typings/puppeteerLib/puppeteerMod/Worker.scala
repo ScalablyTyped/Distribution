@@ -42,11 +42,8 @@ object Worker {
     executionContext: js.Function0[js.Promise[ExecutionContext]],
     url: js.Function0[java.lang.String]
   ): Worker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluate")(evaluate)
-    __obj.updateDynamic("evaluateHandle")(evaluateHandle)
-    __obj.updateDynamic("executionContext")(executionContext)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(evaluate = evaluate, evaluateHandle = evaluateHandle, executionContext = executionContext, url = url)
+  
     __obj.asInstanceOf[Worker]
   }
 }

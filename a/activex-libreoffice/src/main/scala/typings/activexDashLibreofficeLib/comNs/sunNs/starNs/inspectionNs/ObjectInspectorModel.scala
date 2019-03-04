@@ -68,17 +68,8 @@ object ObjectInspectorModel {
     describeCategories: js.Function0[activexDashInteropLib.SafeArray[PropertyCategoryDescriptor]],
     getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
   ): ObjectInspectorModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HandlerFactories")(HandlerFactories)
-    __obj.updateDynamic("HasHelpSection")(HasHelpSection)
-    __obj.updateDynamic("IsReadOnly")(IsReadOnly)
-    __obj.updateDynamic("MaxHelpTextLines")(MaxHelpTextLines)
-    __obj.updateDynamic("MinHelpTextLines")(MinHelpTextLines)
-    __obj.updateDynamic("createDefault")(createDefault)
-    __obj.updateDynamic("createWithHandlerFactories")(createWithHandlerFactories)
-    __obj.updateDynamic("createWithHandlerFactoriesAndHelpSection")(createWithHandlerFactoriesAndHelpSection)
-    __obj.updateDynamic("describeCategories")(describeCategories)
-    __obj.updateDynamic("getPropertyOrderIndex")(getPropertyOrderIndex)
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = createDefault, createWithHandlerFactories = createWithHandlerFactories, createWithHandlerFactoriesAndHelpSection = createWithHandlerFactoriesAndHelpSection, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+  
     __obj.asInstanceOf[ObjectInspectorModel]
   }
 }

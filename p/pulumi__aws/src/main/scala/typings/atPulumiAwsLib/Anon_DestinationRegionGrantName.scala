@@ -18,8 +18,7 @@ object Anon_DestinationRegionGrantName {
     grantName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     retentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_DestinationRegionGrantName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationRegion")(destinationRegion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destinationRegion = destinationRegion.asInstanceOf[js.Any])
     if (grantName != null) __obj.updateDynamic("grantName")(grantName.asInstanceOf[js.Any])
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DestinationRegionGrantName]

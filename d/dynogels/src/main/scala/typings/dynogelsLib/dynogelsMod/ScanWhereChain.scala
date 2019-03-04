@@ -28,21 +28,8 @@ object ScanWhereChain {
     notNull: js.Function0[Scan],
     `null`: js.Function0[Scan]
   ): ScanWhereChain = {
-    val __obj = js.Dynamic.literal(`null` = `null`)
-    __obj.updateDynamic("beginsWith")(beginsWith)
-    __obj.updateDynamic("between")(between)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("eq")(eq)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("gt")(gt)
-    __obj.updateDynamic("gte")(gte)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("lt")(lt)
-    __obj.updateDynamic("lte")(lte)
-    __obj.updateDynamic("ne")(ne)
-    __obj.updateDynamic("notContains")(notContains)
-    __obj.updateDynamic("notNull")(notNull)
+    val __obj = js.Dynamic.literal(beginsWith = beginsWith, between = between, contains = contains, eq = eq, equals = equals, exists = exists, gt = gt, gte = gte, in = in, lt = lt, lte = lte, ne = ne, notContains = notContains, notNull = notNull)
+    __obj.updateDynamic("null")(`null`)
     __obj.asInstanceOf[ScanWhereChain]
   }
 }

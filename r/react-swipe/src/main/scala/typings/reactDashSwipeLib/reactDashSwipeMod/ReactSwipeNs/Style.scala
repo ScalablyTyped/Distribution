@@ -18,10 +18,8 @@ object Style {
     container: reactLib.reactMod.ReactNs.CSSProperties,
     wrapper: reactLib.reactMod.ReactNs.CSSProperties
   ): Style = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("child")(child)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("wrapper")(wrapper)
+    val __obj = js.Dynamic.literal(child = child, container = container, wrapper = wrapper)
+  
     __obj.asInstanceOf[Style]
   }
 }

@@ -32,11 +32,8 @@ object MethodSettingsArgs {
     settings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CacheDataEncryptedCacheTtlInSeconds],
     stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): MethodSettingsArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("methodPath")(methodPath.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(methodPath = methodPath.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MethodSettingsArgs]
   }
 }

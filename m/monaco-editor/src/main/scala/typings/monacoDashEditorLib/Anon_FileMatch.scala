@@ -23,8 +23,7 @@ trait Anon_FileMatch extends js.Object {
 object Anon_FileMatch {
   @scala.inline
   def apply(uri: java.lang.String, fileMatch: js.Array[java.lang.String] = null, schema: js.Any = null): Anon_FileMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
     if (fileMatch != null) __obj.updateDynamic("fileMatch")(fileMatch)
     if (schema != null) __obj.updateDynamic("schema")(schema)
     __obj.asInstanceOf[Anon_FileMatch]

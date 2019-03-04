@@ -12,8 +12,8 @@ trait RemoveBreakpointParameterType extends js.Object {
 object RemoveBreakpointParameterType {
   @scala.inline
   def apply(breakpointId: BreakpointId): RemoveBreakpointParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakpointId")(breakpointId)
+    val __obj = js.Dynamic.literal(breakpointId = breakpointId)
+  
     __obj.asInstanceOf[RemoveBreakpointParameterType]
   }
 }

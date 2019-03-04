@@ -40,12 +40,8 @@ object ShapeProperties {
     shadow: Shadow,
     shape_background_fill: ShapePropertiesShapeBackgroundFill
   ): ShapeProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_alignment")(content_alignment)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("shadow")(shadow)
-    __obj.updateDynamic("shape_background_fill")(shape_background_fill)
+    val __obj = js.Dynamic.literal(content_alignment = content_alignment, link = link, outline = outline, shadow = shadow, shape_background_fill = shape_background_fill)
+  
     __obj.asInstanceOf[ShapeProperties]
   }
 }

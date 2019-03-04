@@ -23,8 +23,7 @@ object Props {
     onChange: ChangeEventHandler[reactLib.HTMLInputElement] = null,
     onInit: InitHandler = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
     if (htmlRef != null) __obj.updateDynamic("htmlRef")(htmlRef)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)

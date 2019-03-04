@@ -26,14 +26,8 @@ object AttributorStore {
     move: js.Function1[parchmentLib.distSrcBlotAbstractBlotMod.Formattable, scala.Unit],
     values: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]]
   ): AttributorStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("domNode")(domNode)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(attribute = attribute, attributes = attributes, build = build, copy = copy, domNode = domNode, move = move, values = values)
+  
     __obj.asInstanceOf[AttributorStore]
   }
 }

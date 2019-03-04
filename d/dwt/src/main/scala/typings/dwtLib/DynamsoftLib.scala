@@ -48,14 +48,8 @@ object DynamsoftLib {
     hideMask: js.Function0[scala.Unit],
     showMask: js.Function0[scala.Unit]
   ): DynamsoftLib = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NewOCRReadPara")(NewOCRReadPara)
-    __obj.updateDynamic("NewOCRZone")(NewOCRZone)
-    __obj.updateDynamic("NewRedaction")(NewRedaction)
-    __obj.updateDynamic("detect")(detect)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("hideMask")(hideMask)
-    __obj.updateDynamic("showMask")(showMask)
+    val __obj = js.Dynamic.literal(NewOCRReadPara = NewOCRReadPara, NewOCRZone = NewOCRZone, NewRedaction = NewRedaction, detect = detect, env = env, hideMask = hideMask, showMask = showMask)
+  
     __obj.asInstanceOf[DynamsoftLib]
   }
 }

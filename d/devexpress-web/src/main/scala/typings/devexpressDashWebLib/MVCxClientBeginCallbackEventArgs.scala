@@ -19,9 +19,8 @@ trait MVCxClientBeginCallbackEventArgs extends ASPxClientBeginCallbackEventArgs 
 object MVCxClientBeginCallbackEventArgs {
   @scala.inline
   def apply(command: java.lang.String, customArgs: js.Object): MVCxClientBeginCallbackEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("customArgs")(customArgs)
+    val __obj = js.Dynamic.literal(command = command, customArgs = customArgs)
+  
     __obj.asInstanceOf[MVCxClientBeginCallbackEventArgs]
   }
 }

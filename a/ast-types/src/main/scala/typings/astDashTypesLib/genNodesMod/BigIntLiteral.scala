@@ -25,9 +25,8 @@ object BigIntLiteral {
     `type`: astDashTypesLib.astDashTypesLibStrings.BigIntLiteral,
     value: java.lang.String | scala.Double
   ): BigIntLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extra = extra, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BigIntLiteral]
   }
 }

@@ -34,11 +34,8 @@ object ASPxClientLegend {
     name: java.lang.String,
     useCheckBoxes: scala.Boolean
   ): ASPxClientLegend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("customItems")(customItems)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("useCheckBoxes")(useCheckBoxes)
+    val __obj = js.Dynamic.literal(chart = chart, customItems = customItems, name = name, useCheckBoxes = useCheckBoxes)
+  
     __obj.asInstanceOf[ASPxClientLegend]
   }
 }

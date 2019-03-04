@@ -37,12 +37,8 @@ object Anon_AllTime {
     twoHours: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
     week: GoogleApiUrlShortenerUrlResourceAnalyticsObject
   ): Anon_AllTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allTime")(allTime)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("twoHours")(twoHours)
-    __obj.updateDynamic("week")(week)
+    val __obj = js.Dynamic.literal(allTime = allTime, day = day, month = month, twoHours = twoHours, week = week)
+  
     __obj.asInstanceOf[Anon_AllTime]
   }
 }

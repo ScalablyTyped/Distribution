@@ -61,15 +61,8 @@ object ASPxClientLayoutItem {
     name: java.lang.String,
     parent: ASPxClientLayoutItem
   ): ASPxClientLayoutItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCaption")(GetCaption)
-    __obj.updateDynamic("GetItemByName")(GetItemByName)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetCaption")(SetCaption)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("formLayout")(formLayout)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(GetCaption = GetCaption, GetItemByName = GetItemByName, GetVisible = GetVisible, SetCaption = SetCaption, SetVisible = SetVisible, formLayout = formLayout, name = name, parent = parent)
+  
     __obj.asInstanceOf[ASPxClientLayoutItem]
   }
 }

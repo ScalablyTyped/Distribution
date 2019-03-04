@@ -32,14 +32,8 @@ object ScriptEvent {
     ScriptType: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ScriptEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Arguments")(Arguments)
-    __obj.updateDynamic("Helper")(Helper)
-    __obj.updateDynamic("ListenerType")(ListenerType)
-    __obj.updateDynamic("MethodName")(MethodName)
-    __obj.updateDynamic("ScriptCode")(ScriptCode)
-    __obj.updateDynamic("ScriptType")(ScriptType)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Helper = Helper, ListenerType = ListenerType, MethodName = MethodName, ScriptCode = ScriptCode, ScriptType = ScriptType, Source = Source)
+  
     __obj.asInstanceOf[ScriptEvent]
   }
 }

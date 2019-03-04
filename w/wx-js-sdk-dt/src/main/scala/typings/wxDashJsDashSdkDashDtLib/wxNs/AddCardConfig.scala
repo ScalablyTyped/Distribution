@@ -16,8 +16,7 @@ object AddCardConfig {
     cardList: js.Array[Card],
     success: js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit] = null
   ): AddCardConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardList")(cardList)
+    val __obj = js.Dynamic.literal(cardList = cardList)
     if (success != null) __obj.updateDynamic("success")(success)
     __obj.asInstanceOf[AddCardConfig]
   }

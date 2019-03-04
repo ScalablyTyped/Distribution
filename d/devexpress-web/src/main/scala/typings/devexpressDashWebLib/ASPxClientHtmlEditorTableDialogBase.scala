@@ -23,11 +23,8 @@ object ASPxClientHtmlEditorTableDialogBase {
     GetFormLayout: js.Function0[ASPxClientFormLayout],
     GetOkButton: js.Function0[ASPxClientButton]
   ): ASPxClientHtmlEditorTableDialogBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBackgroundColorColorEdit")(GetBackgroundColorColorEdit)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorTableDialogBase]
   }
 }

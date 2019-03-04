@@ -38,8 +38,8 @@ object SearchTemplateParams {
     scroll: TimeSpan = null,
     searchType: elasticsearchLib.elasticsearchLibStrings.query_then_fetch | elasticsearchLib.elasticsearchLibStrings.query_and_fetch | elasticsearchLib.elasticsearchLibStrings.dfs_query_then_fetch | elasticsearchLib.elasticsearchLibStrings.dfs_query_and_fetch = null
   ): SearchTemplateParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (body != null) __obj.updateDynamic("body")(body)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)

@@ -28,9 +28,7 @@ object IEventAction {
     onClick: js.Function1[js.Any, scala.Unit],
     cssClass: java.lang.String = null
   ): IEventAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("onClick")(onClick)
+    val __obj = js.Dynamic.literal(label = label, onClick = onClick)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
     __obj.asInstanceOf[IEventAction]
   }

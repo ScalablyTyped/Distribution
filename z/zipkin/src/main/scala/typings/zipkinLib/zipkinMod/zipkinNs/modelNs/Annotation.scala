@@ -13,9 +13,8 @@ trait Annotation extends js.Object {
 object Annotation {
   @scala.inline
   def apply(timestamp: scala.Double, value: java.lang.String): Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(timestamp = timestamp, value = value)
+  
     __obj.asInstanceOf[Annotation]
   }
 }

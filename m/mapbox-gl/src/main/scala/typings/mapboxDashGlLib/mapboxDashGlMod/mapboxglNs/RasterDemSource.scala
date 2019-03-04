@@ -36,7 +36,8 @@ object RasterDemSource {
     tiles: js.Array[java.lang.String] = null,
     url: java.lang.String = null
   ): RasterDemSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])

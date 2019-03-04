@@ -18,8 +18,7 @@ object Anon_Groups {
     groups: js.Array[java.lang.String] = null,
     items: js.Array[java.lang.String] = null
   ): Anon_Groups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (groups != null) __obj.updateDynamic("groups")(groups)
     if (items != null) __obj.updateDynamic("items")(items)
     __obj.asInstanceOf[Anon_Groups]

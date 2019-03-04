@@ -78,11 +78,8 @@ object SourceData {
     three_d_secure_2_eap: js.Any = null,
     token: stripejsLib.tokenMod.Token = null
   ): SourceData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
-    __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, flow = flow.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (mandate != null) __obj.updateDynamic("mandate")(mandate)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (owner != null) __obj.updateDynamic("owner")(owner)

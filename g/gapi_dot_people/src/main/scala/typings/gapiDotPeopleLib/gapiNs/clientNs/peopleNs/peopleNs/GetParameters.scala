@@ -14,9 +14,8 @@ trait GetParameters extends js.Object {
 object GetParameters {
   @scala.inline
   def apply(personFields: java.lang.String, resourceName: java.lang.String): GetParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("personFields")(personFields)
-    __obj.updateDynamic("resourceName")(resourceName)
+    val __obj = js.Dynamic.literal(personFields = personFields, resourceName = resourceName)
+  
     __obj.asInstanceOf[GetParameters]
   }
 }

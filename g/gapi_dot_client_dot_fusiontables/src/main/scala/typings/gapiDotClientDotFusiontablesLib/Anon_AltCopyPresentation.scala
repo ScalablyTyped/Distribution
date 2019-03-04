@@ -42,8 +42,7 @@ object Anon_AltCopyPresentation {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCopyPresentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tableId")(tableId)
+    val __obj = js.Dynamic.literal(tableId = tableId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(copyPresentation)) __obj.updateDynamic("copyPresentation")(copyPresentation)
     if (fields != null) __obj.updateDynamic("fields")(fields)

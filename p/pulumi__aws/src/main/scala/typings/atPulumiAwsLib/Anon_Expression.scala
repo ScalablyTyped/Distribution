@@ -22,8 +22,7 @@ object Anon_Expression {
     metric: Anon_DimensionsKey = null,
     returnData: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Expression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (label != null) __obj.updateDynamic("label")(label)
     if (metric != null) __obj.updateDynamic("metric")(metric)

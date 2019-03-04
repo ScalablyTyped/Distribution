@@ -48,8 +48,7 @@ object ClaimAccident {
     modifierExtension: js.Array[Extension] = null,
     `type`: CodeableConcept = null
   ): ClaimAccident = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(date = date)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

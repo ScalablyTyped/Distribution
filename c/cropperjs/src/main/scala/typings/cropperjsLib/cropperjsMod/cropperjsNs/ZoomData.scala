@@ -24,10 +24,8 @@ trait ZoomData extends js.Object {
 object ZoomData {
   @scala.inline
   def apply(oldRatio: scala.Double, originalEvent: stdLib.Event, ratio: scala.Double): ZoomData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldRatio")(oldRatio)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("ratio")(ratio)
+    val __obj = js.Dynamic.literal(oldRatio = oldRatio, originalEvent = originalEvent, ratio = ratio)
+  
     __obj.asInstanceOf[ZoomData]
   }
 }

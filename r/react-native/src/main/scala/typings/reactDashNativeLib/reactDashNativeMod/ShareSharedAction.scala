@@ -16,8 +16,7 @@ object ShareSharedAction {
     action: reactDashNativeLib.reactDashNativeLibStrings.sharedAction,
     activityType: java.lang.String = null
   ): ShareSharedAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
     if (activityType != null) __obj.updateDynamic("activityType")(activityType)
     __obj.asInstanceOf[ShareSharedAction]
   }

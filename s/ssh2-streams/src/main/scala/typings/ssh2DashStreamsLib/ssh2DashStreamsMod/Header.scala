@@ -32,10 +32,7 @@ object Header {
     versions: Versions,
     greeting: java.lang.String = null
   ): Header = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("identRaw")(identRaw)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(comments = comments, identRaw = identRaw, versions = versions)
     if (greeting != null) __obj.updateDynamic("greeting")(greeting)
     __obj.asInstanceOf[Header]
   }

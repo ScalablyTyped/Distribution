@@ -20,11 +20,8 @@ object MDCFormFieldAdapter {
     deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
     registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit]
   ): MDCFormFieldAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activateInputRipple")(activateInputRipple)
-    __obj.updateDynamic("deactivateInputRipple")(deactivateInputRipple)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
+    val __obj = js.Dynamic.literal(activateInputRipple = activateInputRipple, deactivateInputRipple = deactivateInputRipple, deregisterInteractionHandler = deregisterInteractionHandler, registerInteractionHandler = registerInteractionHandler)
+  
     __obj.asInstanceOf[MDCFormFieldAdapter]
   }
 }

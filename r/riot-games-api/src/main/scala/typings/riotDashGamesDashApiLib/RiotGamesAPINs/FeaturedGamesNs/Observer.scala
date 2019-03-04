@@ -12,8 +12,8 @@ trait Observer extends js.Object {
 object Observer {
   @scala.inline
   def apply(encryptionKey: java.lang.String): Observer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptionKey")(encryptionKey)
+    val __obj = js.Dynamic.literal(encryptionKey = encryptionKey)
+  
     __obj.asInstanceOf[Observer]
   }
 }

@@ -14,9 +14,7 @@ trait Anon_JobName extends js.Object {
 object Anon_JobName {
   @scala.inline
   def apply(jobName: java.lang.String, state: java.lang.String, logicalOperator: java.lang.String = null): Anon_JobName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobName")(jobName)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(jobName = jobName, state = state)
     if (logicalOperator != null) __obj.updateDynamic("logicalOperator")(logicalOperator)
     __obj.asInstanceOf[Anon_JobName]
   }

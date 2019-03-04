@@ -15,8 +15,8 @@ trait WorkItemTypeTemplate extends js.Object {
 object WorkItemTypeTemplate {
   @scala.inline
   def apply(template: java.lang.String): WorkItemTypeTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(template = template)
+  
     __obj.asInstanceOf[WorkItemTypeTemplate]
   }
 }

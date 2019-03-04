@@ -33,8 +33,7 @@ object Session {
     scheme: java.lang.String = null,
     to: java.lang.String = null
   ): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
     if (authentication != null) __obj.updateDynamic("authentication")(authentication)
     if (compression != null) __obj.updateDynamic("compression")(compression)
     if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions)

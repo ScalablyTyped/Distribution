@@ -18,9 +18,7 @@ object Anon_KeySecureValue {
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     secure: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_KeySecureValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeySecureValue]
   }

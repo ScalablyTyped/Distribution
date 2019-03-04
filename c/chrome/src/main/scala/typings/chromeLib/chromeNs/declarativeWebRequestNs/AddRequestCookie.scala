@@ -12,8 +12,8 @@ trait AddRequestCookie extends js.Object {
 object AddRequestCookie {
   @scala.inline
   def apply(cookie: RequestCookie): AddRequestCookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie")(cookie)
+    val __obj = js.Dynamic.literal(cookie = cookie)
+  
     __obj.asInstanceOf[AddRequestCookie]
   }
 }

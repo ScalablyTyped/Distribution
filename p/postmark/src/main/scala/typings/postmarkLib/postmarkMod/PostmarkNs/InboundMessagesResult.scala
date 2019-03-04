@@ -12,9 +12,8 @@ trait InboundMessagesResult extends PaginatedResult {
 object InboundMessagesResult {
   @scala.inline
   def apply(InboundMessages: js.Array[InboundMessageBase], TotalCount: scala.Double): InboundMessagesResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InboundMessages")(InboundMessages)
-    __obj.updateDynamic("TotalCount")(TotalCount)
+    val __obj = js.Dynamic.literal(InboundMessages = InboundMessages, TotalCount = TotalCount)
+  
     __obj.asInstanceOf[InboundMessagesResult]
   }
 }

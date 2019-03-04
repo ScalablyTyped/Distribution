@@ -36,19 +36,8 @@ object SketchMSMetadata {
     variant: java.lang.String,
     version: scala.Double
   ): SketchMSMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("autosaved")(autosaved)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("compatibilityVersion")(compatibilityVersion)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("fonts")(fonts)
-    __obj.updateDynamic("pagesAndArtboards")(pagesAndArtboards)
-    __obj.updateDynamic("saveHistory")(saveHistory)
-    __obj.updateDynamic("variant")(variant)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(app = app, appVersion = appVersion, autosaved = autosaved, build = build, commit = commit, compatibilityVersion = compatibilityVersion, created = created, fonts = fonts, pagesAndArtboards = pagesAndArtboards, saveHistory = saveHistory, variant = variant, version = version)
+  
     __obj.asInstanceOf[SketchMSMetadata]
   }
 }

@@ -54,9 +54,8 @@ object Anon_CallbackDetails {
       scala.Unit
     ]
   ): Anon_CallbackDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onExecute")(onExecute)
-    __obj.updateDynamic("selectFile")(selectFile)
+    val __obj = js.Dynamic.literal(onExecute = onExecute, selectFile = selectFile)
+  
     __obj.asInstanceOf[Anon_CallbackDetails]
   }
 }

@@ -26,8 +26,8 @@ object XRedline {
       scala.Unit
     ]
   ): XRedline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("makeRedline")(makeRedline)
+    val __obj = js.Dynamic.literal(makeRedline = makeRedline)
+  
     __obj.asInstanceOf[XRedline]
   }
 }

@@ -41,8 +41,7 @@ object DraggableProps {
     subscribeTo: js.Array[java.lang.String] = null,
     `type`: Type = null
   ): DraggableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (data != null) __obj.updateDynamic("data")(data)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

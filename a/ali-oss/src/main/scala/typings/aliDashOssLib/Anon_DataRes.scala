@@ -16,9 +16,8 @@ object Anon_DataRes {
     data: aliDashOssLib.aliDashOssMod.OSSNs.StyleData,
     res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
   ): Anon_DataRes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(data = data, res = res)
+  
     __obj.asInstanceOf[Anon_DataRes]
   }
 }

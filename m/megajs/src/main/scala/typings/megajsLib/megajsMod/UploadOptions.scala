@@ -22,8 +22,7 @@ object UploadOptions {
     size: js.Any = null,
     thumbnailImage: nodeLib.Buffer | nodeLib.streamMod.Readable = null
   ): UploadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (previewImage != null) __obj.updateDynamic("previewImage")(previewImage.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size)

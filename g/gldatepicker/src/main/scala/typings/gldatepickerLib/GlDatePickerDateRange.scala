@@ -14,8 +14,7 @@ trait GlDatePickerDateRange extends js.Object {
 object GlDatePickerDateRange {
   @scala.inline
   def apply(from: stdLib.Date, repeatYear: js.UndefOr[scala.Boolean] = js.undefined, to: stdLib.Date = null): GlDatePickerDateRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(from = from)
     if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear)
     if (to != null) __obj.updateDynamic("to")(to)
     __obj.asInstanceOf[GlDatePickerDateRange]

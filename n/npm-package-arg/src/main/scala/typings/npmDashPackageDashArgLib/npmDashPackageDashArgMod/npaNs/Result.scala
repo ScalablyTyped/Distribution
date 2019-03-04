@@ -57,10 +57,8 @@ object Result {
     saveSpec: java.lang.String = null,
     scope: java.lang.String = null
   ): Result = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawSpec")(rawSpec)
-    __obj.updateDynamic("registry")(registry)
+    val __obj = js.Dynamic.literal(raw = raw, rawSpec = rawSpec, registry = registry)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (escapedName != null) __obj.updateDynamic("escapedName")(escapedName)
     if (fetchSpec != null) __obj.updateDynamic("fetchSpec")(fetchSpec)
     if (gitCommittish != null) __obj.updateDynamic("gitCommittish")(gitCommittish)

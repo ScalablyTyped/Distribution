@@ -46,24 +46,8 @@ object Anon_ABORT {
     SECURITY: chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY,
     TOO_MANY_OPENED: chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED
   ): Anon_ABORT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ABORT")(ABORT)
-    __obj.updateDynamic("ACCESS_DENIED")(ACCESS_DENIED)
-    __obj.updateDynamic("EXISTS")(EXISTS)
-    __obj.updateDynamic("FAILED")(FAILED)
-    __obj.updateDynamic("INVALID_OPERATION")(INVALID_OPERATION)
-    __obj.updateDynamic("INVALID_URL")(INVALID_URL)
-    __obj.updateDynamic("IN_USE")(IN_USE)
-    __obj.updateDynamic("IO")(IO)
-    __obj.updateDynamic("NOT_A_DIRECTORY")(NOT_A_DIRECTORY)
-    __obj.updateDynamic("NOT_A_FILE")(NOT_A_FILE)
-    __obj.updateDynamic("NOT_EMPTY")(NOT_EMPTY)
-    __obj.updateDynamic("NOT_FOUND")(NOT_FOUND)
-    __obj.updateDynamic("NO_MEMORY")(NO_MEMORY)
-    __obj.updateDynamic("NO_SPACE")(NO_SPACE)
-    __obj.updateDynamic("OK")(OK)
-    __obj.updateDynamic("SECURITY")(SECURITY)
-    __obj.updateDynamic("TOO_MANY_OPENED")(TOO_MANY_OPENED)
+    val __obj = js.Dynamic.literal(ABORT = ABORT, ACCESS_DENIED = ACCESS_DENIED, EXISTS = EXISTS, FAILED = FAILED, INVALID_OPERATION = INVALID_OPERATION, INVALID_URL = INVALID_URL, IN_USE = IN_USE, IO = IO, NOT_A_DIRECTORY = NOT_A_DIRECTORY, NOT_A_FILE = NOT_A_FILE, NOT_EMPTY = NOT_EMPTY, NOT_FOUND = NOT_FOUND, NO_MEMORY = NO_MEMORY, NO_SPACE = NO_SPACE, OK = OK, SECURITY = SECURITY, TOO_MANY_OPENED = TOO_MANY_OPENED)
+  
     __obj.asInstanceOf[Anon_ABORT]
   }
 }

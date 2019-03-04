@@ -16,9 +16,8 @@ object Anon_Module {
     module: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata,
     provider: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileProviderMetadata
   ): Anon_Module = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(module = module, provider = provider)
+  
     __obj.asInstanceOf[Anon_Module]
   }
 }

@@ -30,10 +30,7 @@ object Anon_CidrBlocks {
     securityGroups: js.Array[java.lang.String] = null,
     self: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CidrBlocks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromPort")(fromPort)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("toPort")(toPort)
+    val __obj = js.Dynamic.literal(fromPort = fromPort, protocol = protocol, toPort = toPort)
     if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks)
     if (description != null) __obj.updateDynamic("description")(description)
     if (ipv6CidrBlocks != null) __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks)

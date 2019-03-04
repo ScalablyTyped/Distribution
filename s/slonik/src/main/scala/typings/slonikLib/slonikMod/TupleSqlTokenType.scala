@@ -13,8 +13,8 @@ trait TupleSqlTokenType extends _ValueExpressionType {
 object TupleSqlTokenType {
   @scala.inline
   def apply(`type`: js.Symbol, values: js.Array[PrimitiveValueExpressionType]): TupleSqlTokenType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TupleSqlTokenType]
   }
 }

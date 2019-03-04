@@ -32,9 +32,8 @@ object CollapsedFieldProps {
     `type`: reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.array | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.`object`,
     name: java.lang.String = null
   ): CollapsedFieldProps = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(namespace = namespace, src = src)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[CollapsedFieldProps]
   }

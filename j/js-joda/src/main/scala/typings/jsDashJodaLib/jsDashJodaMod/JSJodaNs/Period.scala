@@ -64,36 +64,8 @@ object Period {
     withYears: js.Function1[scala.Double, Period],
     years: js.Function0[scala.Double]
   ): Period = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTo")(addTo)
-    __obj.updateDynamic("chronology")(chronology)
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("hashCode")(hashCode)
-    __obj.updateDynamic("isNegative")(isNegative)
-    __obj.updateDynamic("isZero")(isZero)
-    __obj.updateDynamic("minus")(minus)
-    __obj.updateDynamic("minusDays")(minusDays)
-    __obj.updateDynamic("minusMonths")(minusMonths)
-    __obj.updateDynamic("minusYears")(minusYears)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("multipliedBy")(multipliedBy)
-    __obj.updateDynamic("negated")(negated)
-    __obj.updateDynamic("normalized")(normalized)
-    __obj.updateDynamic("plus")(plus)
-    __obj.updateDynamic("plusDays")(plusDays)
-    __obj.updateDynamic("plusMonths")(plusMonths)
-    __obj.updateDynamic("plusYears")(plusYears)
-    __obj.updateDynamic("subtractFrom")(subtractFrom)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toTotalMonths")(toTotalMonths)
-    __obj.updateDynamic("units")(units)
-    __obj.updateDynamic("withDays")(withDays)
-    __obj.updateDynamic("withMonths")(withMonths)
-    __obj.updateDynamic("withYears")(withYears)
-    __obj.updateDynamic("years")(years)
+    val __obj = js.Dynamic.literal(addTo = addTo, chronology = chronology, days = days, equals = equals, get = get, hashCode = hashCode, isNegative = isNegative, isZero = isZero, minus = minus, minusDays = minusDays, minusMonths = minusMonths, minusYears = minusYears, months = months, multipliedBy = multipliedBy, negated = negated, normalized = normalized, plus = plus, plusDays = plusDays, plusMonths = plusMonths, plusYears = plusYears, subtractFrom = subtractFrom, toJSON = toJSON, toString = toString, toTotalMonths = toTotalMonths, units = units, withDays = withDays, withMonths = withMonths, withYears = withYears, years = years)
+  
     __obj.asInstanceOf[Period]
   }
 }

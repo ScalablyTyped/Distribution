@@ -144,8 +144,7 @@ object SelectRow {
     showOnlySelected: js.UndefOr[scala.Boolean] = js.undefined,
     unselectable: js.Array[scala.Double | java.lang.String] = null
   ): SelectRow[TRow] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clickToExpand)) __obj.updateDynamic("clickToExpand")(clickToExpand)

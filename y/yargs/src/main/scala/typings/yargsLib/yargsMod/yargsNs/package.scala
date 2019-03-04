@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object yargsNs {
-  type Arguments[T] = T with yargsLib.`Anon_`
+  type Arguments[T] = T with yargsLib.Anon_
   type AsyncCompletionFunction = js.Function3[
     /* current */ java.lang.String, 
     /* argv */ js.Any, 

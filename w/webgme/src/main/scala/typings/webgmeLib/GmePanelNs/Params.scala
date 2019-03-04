@@ -12,8 +12,8 @@ trait Params extends js.Object {
 object Params {
   @scala.inline
   def apply(client: js.Any): Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(client = client)
+  
     __obj.asInstanceOf[Params]
   }
 }

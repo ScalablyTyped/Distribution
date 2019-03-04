@@ -21,8 +21,7 @@ object GetTableArgs {
     serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GetTableArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetTableArgs]

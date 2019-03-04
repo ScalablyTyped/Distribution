@@ -15,10 +15,8 @@ trait SceneViewKeyUpEvent extends js.Object {
 object SceneViewKeyUpEvent {
   @scala.inline
   def apply(native: js.Any, stopPropagation: js.Function, timestamp: scala.Double, `type`: java.lang.String): SceneViewKeyUpEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(native = native, stopPropagation = stopPropagation, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SceneViewKeyUpEvent]
   }
 }

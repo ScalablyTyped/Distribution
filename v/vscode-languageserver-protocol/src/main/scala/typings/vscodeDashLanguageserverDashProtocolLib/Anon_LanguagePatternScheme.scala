@@ -18,8 +18,7 @@ trait Anon_LanguagePatternScheme
 object Anon_LanguagePatternScheme {
   @scala.inline
   def apply(pattern: java.lang.String, language: java.lang.String = null, scheme: java.lang.String = null): Anon_LanguagePatternScheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern)
     if (language != null) __obj.updateDynamic("language")(language)
     if (scheme != null) __obj.updateDynamic("scheme")(scheme)
     __obj.asInstanceOf[Anon_LanguagePatternScheme]

@@ -27,12 +27,8 @@ object QualifiedTypeIdentifier {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): QualifiedTypeIdentifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("qualification")(qualification.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, id = id, loc = loc, qualification = qualification.asInstanceOf[js.Any], start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

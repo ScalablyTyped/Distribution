@@ -23,8 +23,7 @@ object Anon_CompleteFailScope {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): Anon_CompleteFailScope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(scope = scope)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

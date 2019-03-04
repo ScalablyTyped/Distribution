@@ -22,8 +22,7 @@ object ActionButtonProps {
     buttonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
     `type`: antdLib.libButtonButtonMod.ButtonType = null
   ): ActionButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeModal")(closeModal)
+    val __obj = js.Dynamic.literal(closeModal = closeModal)
     if (actionFn != null) __obj.updateDynamic("actionFn")(actionFn)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)

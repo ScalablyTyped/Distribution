@@ -25,11 +25,8 @@ object CmisVersion {
     Id: java.lang.String,
     TimeStamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime
   ): CmisVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("Comment")(Comment)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("TimeStamp")(TimeStamp)
+    val __obj = js.Dynamic.literal(Author = Author, Comment = Comment, Id = Id, TimeStamp = TimeStamp)
+  
     __obj.asInstanceOf[CmisVersion]
   }
 }

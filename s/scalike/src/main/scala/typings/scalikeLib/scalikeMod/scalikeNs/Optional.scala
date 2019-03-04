@@ -51,24 +51,8 @@ object Optional {
     nonEmpty: scala.Boolean,
     orElse: js.Function1[Optional[js.Any], Optional[A]]
   ): Optional[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply1")(apply1)
-    __obj.updateDynamic("apply2")(apply2)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("flatMap")(flatMap)
-    __obj.updateDynamic("flatten")(flatten)
-    __obj.updateDynamic("fold")(fold)
-    __obj.updateDynamic("forall")(forall)
-    __obj.updateDynamic("foreach")(foreach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getOrElse")(getOrElse)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("nonEmpty")(nonEmpty)
-    __obj.updateDynamic("orElse")(orElse)
+    val __obj = js.Dynamic.literal(apply1 = apply1, apply2 = apply2, chain = chain, contains = contains, exists = exists, filter = filter, flatMap = flatMap, flatten = flatten, fold = fold, forall = forall, foreach = foreach, get = get, getOrElse = getOrElse, isEmpty = isEmpty, map = map, nonEmpty = nonEmpty, orElse = orElse)
+  
     __obj.asInstanceOf[Optional[A]]
   }
 }

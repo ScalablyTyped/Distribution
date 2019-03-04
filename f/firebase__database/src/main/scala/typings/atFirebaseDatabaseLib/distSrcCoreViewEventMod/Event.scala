@@ -28,11 +28,8 @@ object Event {
     getPath: js.Function0[atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path],
     toString: js.Function0[java.lang.String]
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEventRunner")(getEventRunner)
-    __obj.updateDynamic("getEventType")(getEventType)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(getEventRunner = getEventRunner, getEventType = getEventType, getPath = getPath, toString = toString)
+  
     __obj.asInstanceOf[Event]
   }
 }

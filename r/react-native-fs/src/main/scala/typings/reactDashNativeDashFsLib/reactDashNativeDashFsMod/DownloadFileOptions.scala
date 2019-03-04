@@ -34,9 +34,7 @@ object DownloadFileOptions {
     progressDivider: scala.Int | scala.Double = null,
     readTimeout: scala.Int | scala.Double = null
   ): DownloadFileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromUrl")(fromUrl)
-    __obj.updateDynamic("toFile")(toFile)
+    val __obj = js.Dynamic.literal(fromUrl = fromUrl, toFile = toFile)
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
     if (begin != null) __obj.updateDynamic("begin")(begin)
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])

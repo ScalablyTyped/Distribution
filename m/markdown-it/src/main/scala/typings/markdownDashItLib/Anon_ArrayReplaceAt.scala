@@ -42,22 +42,8 @@ object Anon_ArrayReplaceAt {
     unescapeAll: js.Function1[java.lang.String, java.lang.String],
     unescapeMd: js.Function1[java.lang.String, java.lang.String]
   ): Anon_ArrayReplaceAt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrayReplaceAt")(arrayReplaceAt)
-    __obj.updateDynamic("assign")(assign)
-    __obj.updateDynamic("escapeHtml")(escapeHtml)
-    __obj.updateDynamic("escapeRE")(escapeRE)
-    __obj.updateDynamic("fromCodePoint")(fromCodePoint)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("isMdAsciiPunct")(isMdAsciiPunct)
-    __obj.updateDynamic("isPunctChar")(isPunctChar)
-    __obj.updateDynamic("isSpace")(isSpace)
-    __obj.updateDynamic("isString")(isString)
-    __obj.updateDynamic("isValidEntityCode")(isValidEntityCode)
-    __obj.updateDynamic("isWhiteSpace")(isWhiteSpace)
-    __obj.updateDynamic("normalizeReference")(normalizeReference)
-    __obj.updateDynamic("unescapeAll")(unescapeAll)
-    __obj.updateDynamic("unescapeMd")(unescapeMd)
+    val __obj = js.Dynamic.literal(arrayReplaceAt = arrayReplaceAt, assign = assign, escapeHtml = escapeHtml, escapeRE = escapeRE, fromCodePoint = fromCodePoint, has = has, isMdAsciiPunct = isMdAsciiPunct, isPunctChar = isPunctChar, isSpace = isSpace, isString = isString, isValidEntityCode = isValidEntityCode, isWhiteSpace = isWhiteSpace, normalizeReference = normalizeReference, unescapeAll = unescapeAll, unescapeMd = unescapeMd)
+  
     __obj.asInstanceOf[Anon_ArrayReplaceAt]
   }
 }

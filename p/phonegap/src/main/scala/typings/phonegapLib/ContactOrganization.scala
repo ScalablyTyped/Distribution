@@ -22,11 +22,8 @@ object ContactOrganization {
     title: java.lang.String,
     `type`: java.lang.String
   ): ContactOrganization = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("department")(department)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pref")(pref)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(department = department, name = name, pref = pref, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ContactOrganization]
   }
 }

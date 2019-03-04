@@ -18,9 +18,8 @@ object NodeName {
     size: scala.Double,
     `type`: jsoneditorLib.jsoneditorLibStrings.`object` | jsoneditorLib.jsoneditorLibStrings.array
   ): NodeName = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(path = path, size = size)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeName]
   }
 }

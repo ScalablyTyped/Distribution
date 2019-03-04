@@ -12,8 +12,8 @@ trait URI2HKT2[L, A] extends js.Object {
 object URI2HKT2 {
   @scala.inline
   def apply[L, A](Validation: fpDashTsLib.libValidationMod.Validation[L, A]): URI2HKT2[L, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Validation")(Validation)
+    val __obj = js.Dynamic.literal(Validation = Validation)
+  
     __obj.asInstanceOf[URI2HKT2[L, A]]
   }
 }

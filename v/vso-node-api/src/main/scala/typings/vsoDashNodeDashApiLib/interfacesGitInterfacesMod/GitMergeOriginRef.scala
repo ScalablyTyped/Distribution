@@ -12,8 +12,8 @@ trait GitMergeOriginRef extends js.Object {
 object GitMergeOriginRef {
   @scala.inline
   def apply(pullRequestId: scala.Double): GitMergeOriginRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pullRequestId")(pullRequestId)
+    val __obj = js.Dynamic.literal(pullRequestId = pullRequestId)
+  
     __obj.asInstanceOf[GitMergeOriginRef]
   }
 }

@@ -39,12 +39,8 @@ object XUriBinding {
       scala.Unit
     ]
   ): XUriBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getUriBinding")(getUriBinding)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setUriBinding")(setUriBinding)
+    val __obj = js.Dynamic.literal(acquire = acquire, getUriBinding = getUriBinding, queryInterface = queryInterface, release = release, setUriBinding = setUriBinding)
+  
     __obj.asInstanceOf[XUriBinding]
   }
 }

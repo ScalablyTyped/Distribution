@@ -12,8 +12,8 @@ trait SSHPart extends js.Object {
 object SSHPart {
   @scala.inline
   def apply(data: nodeLib.Buffer): SSHPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+  
     __obj.asInstanceOf[SSHPart]
   }
 }

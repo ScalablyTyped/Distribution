@@ -87,20 +87,8 @@ object XAttributes {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIndexByQName")(getIndexByQName)
-    __obj.updateDynamic("getIndexByUidName")(getIndexByUidName)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getLocalNameByIndex")(getLocalNameByIndex)
-    __obj.updateDynamic("getQNameByIndex")(getQNameByIndex)
-    __obj.updateDynamic("getTypeByIndex")(getTypeByIndex)
-    __obj.updateDynamic("getUidByIndex")(getUidByIndex)
-    __obj.updateDynamic("getValueByIndex")(getValueByIndex)
-    __obj.updateDynamic("getValueByUidName")(getValueByUidName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getIndexByQName = getIndexByQName, getIndexByUidName = getIndexByUidName, getLength = getLength, getLocalNameByIndex = getLocalNameByIndex, getQNameByIndex = getQNameByIndex, getTypeByIndex = getTypeByIndex, getUidByIndex = getUidByIndex, getValueByIndex = getValueByIndex, getValueByUidName = getValueByUidName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAttributes]
   }
 }

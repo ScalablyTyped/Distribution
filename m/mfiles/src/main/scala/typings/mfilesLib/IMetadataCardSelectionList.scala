@@ -26,14 +26,8 @@ object IMetadataCardSelectionList {
     MoreResults: scala.Boolean,
     SetFilter: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
   ): IMetadataCardSelectionList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoSelect")(AutoSelect)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("FilteringValue")(FilteringValue)
-    __obj.updateDynamic("Items")(Items)
-    __obj.updateDynamic("MoreResults")(MoreResults)
-    __obj.updateDynamic("SetFilter")(SetFilter)
+    val __obj = js.Dynamic.literal(AutoSelect = AutoSelect, Events = Events, Filter = Filter, FilteringValue = FilteringValue, Items = Items, MoreResults = MoreResults, SetFilter = SetFilter)
+  
     __obj.asInstanceOf[IMetadataCardSelectionList]
   }
 }

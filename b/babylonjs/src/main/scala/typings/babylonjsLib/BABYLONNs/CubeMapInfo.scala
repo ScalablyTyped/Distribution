@@ -77,16 +77,8 @@ object CubeMapInfo {
     `type`: scala.Double,
     up: Nullable[stdLib.ArrayBufferView]
   ): CubeMapInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("back")(back.asInstanceOf[js.Any])
-    __obj.updateDynamic("down")(down.asInstanceOf[js.Any])
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("front")(front.asInstanceOf[js.Any])
-    __obj.updateDynamic("gammaSpace")(gammaSpace)
-    __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("up")(up.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(back = back.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], format = format, front = front.asInstanceOf[js.Any], gammaSpace = gammaSpace, left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], size = size, up = up.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CubeMapInfo]
   }
 }

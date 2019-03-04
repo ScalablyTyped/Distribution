@@ -22,12 +22,8 @@ object NavigationDescriptor {
     options: NavigationScreenOptions,
     state: NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   ): NavigationDescriptor[Params] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getComponent")(getComponent)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getComponent = getComponent, key = key, navigation = navigation, options = options, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NavigationDescriptor[Params]]
   }
 }

@@ -13,9 +13,8 @@ trait CreateSessionEntityTypeRequest extends js.Object {
 object CreateSessionEntityTypeRequest {
   @scala.inline
   def apply(parent: java.lang.String, sessionEntityType: SessionEntityType): CreateSessionEntityTypeRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("sessionEntityType")(sessionEntityType)
+    val __obj = js.Dynamic.literal(parent = parent, sessionEntityType = sessionEntityType)
+  
     __obj.asInstanceOf[CreateSessionEntityTypeRequest]
   }
 }

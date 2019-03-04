@@ -26,14 +26,8 @@ object Anon_Active {
     unknown: scala.Double,
     wontFix: scala.Double
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("byDesign")(byDesign)
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("fixed")(fixed)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("unknown")(unknown)
-    __obj.updateDynamic("wontFix")(wontFix)
+    val __obj = js.Dynamic.literal(active = active, byDesign = byDesign, closed = closed, fixed = fixed, pending = pending, unknown = unknown, wontFix = wontFix)
+  
     __obj.asInstanceOf[Anon_Active]
   }
 }

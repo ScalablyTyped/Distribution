@@ -13,9 +13,8 @@ trait Point2D extends js.Object {
 object Point2D {
   @scala.inline
   def apply(x: scala.Double, y: scala.Double): Point2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[Point2D]
   }
 }

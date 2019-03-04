@@ -22,14 +22,8 @@ object AudienceBuilder {
     withCpc: js.Function1[scala.Double, AudienceBuilder[Audience]],
     withCpm: js.Function1[scala.Double, AudienceBuilder[Audience]]
   ): AudienceBuilder[Audience] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("withAudience")(withAudience)
-    __obj.updateDynamic("withAudienceId")(withAudienceId)
-    __obj.updateDynamic("withAudienceType")(withAudienceType)
-    __obj.updateDynamic("withCpc")(withCpc)
-    __obj.updateDynamic("withCpm")(withCpm)
+    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withAudience = withAudience, withAudienceId = withAudienceId, withAudienceType = withAudienceType, withCpc = withCpc, withCpm = withCpm)
+  
     __obj.asInstanceOf[AudienceBuilder[Audience]]
   }
 }

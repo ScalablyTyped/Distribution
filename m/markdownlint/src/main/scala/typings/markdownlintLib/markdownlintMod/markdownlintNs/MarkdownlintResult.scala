@@ -26,12 +26,7 @@ object MarkdownlintResult {
     errorDetail: java.lang.String = null,
     errorRange: js.Tuple2[scala.Double, scala.Double] = null
   ): MarkdownlintResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorContext")(errorContext)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("ruleAlias")(ruleAlias)
-    __obj.updateDynamic("ruleDescription")(ruleDescription)
-    __obj.updateDynamic("ruleName")(ruleName)
+    val __obj = js.Dynamic.literal(errorContext = errorContext, lineNumber = lineNumber, ruleAlias = ruleAlias, ruleDescription = ruleDescription, ruleName = ruleName)
     if (errorDetail != null) __obj.updateDynamic("errorDetail")(errorDetail)
     if (errorRange != null) __obj.updateDynamic("errorRange")(errorRange)
     __obj.asInstanceOf[MarkdownlintResult]

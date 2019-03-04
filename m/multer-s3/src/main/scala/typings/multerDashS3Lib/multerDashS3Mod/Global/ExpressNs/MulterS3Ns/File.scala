@@ -42,26 +42,8 @@ object File {
     size: scala.Double,
     storageClass: java.lang.String
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acl")(acl)
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("contentDisposition")(contentDisposition)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("fieldname")(fieldname)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("mimetype")(mimetype)
-    __obj.updateDynamic("originalname")(originalname)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("serverSideEncryption")(serverSideEncryption)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("storageClass")(storageClass)
+    val __obj = js.Dynamic.literal(acl = acl, bucket = bucket, buffer = buffer, contentDisposition = contentDisposition, contentType = contentType, destination = destination, encoding = encoding, etag = etag, fieldname = fieldname, filename = filename, key = key, location = location, metadata = metadata, mimetype = mimetype, originalname = originalname, path = path, serverSideEncryption = serverSideEncryption, size = size, storageClass = storageClass)
+  
     __obj.asInstanceOf[File]
   }
 }

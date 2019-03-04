@@ -26,8 +26,7 @@ object Anon_BackwardBoundaries {
     shallow: js.UndefOr[scala.Boolean] = js.undefined,
     singleCharacters: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_BackwardBoundaries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startPosition")(startPosition)
+    val __obj = js.Dynamic.literal(startPosition = startPosition)
     if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreElementEnd)) __obj.updateDynamic("ignoreElementEnd")(ignoreElementEnd)

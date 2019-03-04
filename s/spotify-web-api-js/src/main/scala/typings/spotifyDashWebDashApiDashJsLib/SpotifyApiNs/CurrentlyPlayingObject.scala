@@ -24,10 +24,7 @@ object CurrentlyPlayingObject {
     item: TrackObjectFull = null,
     progress_ms: scala.Int | scala.Double = null
   ): CurrentlyPlayingObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("is_playing")(is_playing)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(device = device, is_playing = is_playing, timestamp = timestamp)
     if (context != null) __obj.updateDynamic("context")(context)
     if (item != null) __obj.updateDynamic("item")(item)
     if (progress_ms != null) __obj.updateDynamic("progress_ms")(progress_ms.asInstanceOf[js.Any])

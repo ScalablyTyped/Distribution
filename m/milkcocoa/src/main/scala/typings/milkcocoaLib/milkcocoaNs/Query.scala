@@ -21,11 +21,8 @@ object Query {
     skip: js.Function1[scala.Double, Query],
     sort: js.Function1[java.lang.String, Query]
   ): Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("skip")(skip)
-    __obj.updateDynamic("sort")(sort)
+    val __obj = js.Dynamic.literal(done = done, limit = limit, skip = skip, sort = sort)
+  
     __obj.asInstanceOf[Query]
   }
 }

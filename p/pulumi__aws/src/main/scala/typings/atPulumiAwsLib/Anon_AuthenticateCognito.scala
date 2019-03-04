@@ -26,8 +26,8 @@ object Anon_AuthenticateCognito {
     redirect: Anon_HostPath = null,
     targetGroupArn: java.lang.String = null
   ): Anon_AuthenticateCognito = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(order = order)
+    __obj.updateDynamic("type")(`type`)
     if (authenticateCognito != null) __obj.updateDynamic("authenticateCognito")(authenticateCognito)
     if (authenticateOidc != null) __obj.updateDynamic("authenticateOidc")(authenticateOidc)
     if (fixedResponse != null) __obj.updateDynamic("fixedResponse")(fixedResponse)

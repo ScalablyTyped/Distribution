@@ -22,11 +22,7 @@ object Cache {
     set: js.Function2[K, V, scala.Unit],
     clear: js.Function0[scala.Unit] = null
   ): Cache[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, has = has, set = set)
     if (clear != null) __obj.updateDynamic("clear")(clear)
     __obj.asInstanceOf[Cache[K, V]]
   }

@@ -22,11 +22,7 @@ object FourArrowsSet {
     yellowUpInclineArrow: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): FourArrowsSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("greenUpArrow")(greenUpArrow)
-    __obj.updateDynamic("redDownArrow")(redDownArrow)
-    __obj.updateDynamic("yellowDownInclineArrow")(yellowDownInclineArrow)
-    __obj.updateDynamic("yellowUpInclineArrow")(yellowUpInclineArrow)
+    val __obj = js.Dynamic.literal(greenUpArrow = greenUpArrow, redDownArrow = redDownArrow, yellowDownInclineArrow = yellowDownInclineArrow, yellowUpInclineArrow = yellowUpInclineArrow)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FourArrowsSet]
   }

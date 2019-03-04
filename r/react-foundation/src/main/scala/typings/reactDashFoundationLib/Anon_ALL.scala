@@ -24,13 +24,8 @@ object Anon_ALL {
     XLARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints,
     XXLARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints
   ): Anon_ALL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALL")(ALL)
-    __obj.updateDynamic("LARGE")(LARGE)
-    __obj.updateDynamic("MEDIUM")(MEDIUM)
-    __obj.updateDynamic("SMALL")(SMALL)
-    __obj.updateDynamic("XLARGE")(XLARGE)
-    __obj.updateDynamic("XXLARGE")(XXLARGE)
+    val __obj = js.Dynamic.literal(ALL = ALL, LARGE = LARGE, MEDIUM = MEDIUM, SMALL = SMALL, XLARGE = XLARGE, XXLARGE = XXLARGE)
+  
     __obj.asInstanceOf[Anon_ALL]
   }
 }

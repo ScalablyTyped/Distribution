@@ -130,30 +130,8 @@ object _Impl {
     value: js.Any,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("detachable")(detachable)
-    __obj.updateDynamic("displayTime")(displayTime)
-    __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("persist")(persist)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("storageMethod")(storageMethod.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, displayTime = displayTime, domain = domain.asInstanceOf[js.Any], easing = easing, error = error.asInstanceOf[js.Any], expires = expires, key = key, name = name, namespace = namespace, onHide = onHide, path = path, performance = performance, persist = persist, selector = selector, silent = silent, speed = speed, storageMethod = storageMethod.asInstanceOf[js.Any], value = value, verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

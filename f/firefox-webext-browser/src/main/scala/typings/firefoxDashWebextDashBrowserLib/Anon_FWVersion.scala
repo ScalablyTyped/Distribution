@@ -24,13 +24,8 @@ object Anon_FWVersion {
     name: java.lang.String,
     serial: java.lang.String
   ): Anon_FWVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FWVersion")(FWVersion)
-    __obj.updateDynamic("HWVersion")(HWVersion)
-    __obj.updateDynamic("isLoggedIn")(isLoggedIn)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("serial")(serial)
+    val __obj = js.Dynamic.literal(FWVersion = FWVersion, HWVersion = HWVersion, isLoggedIn = isLoggedIn, manufacturer = manufacturer, name = name, serial = serial)
+  
     __obj.asInstanceOf[Anon_FWVersion]
   }
 }

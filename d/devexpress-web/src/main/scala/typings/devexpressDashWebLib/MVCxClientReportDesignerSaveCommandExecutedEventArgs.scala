@@ -19,8 +19,8 @@ trait MVCxClientReportDesignerSaveCommandExecutedEventArgs extends ASPxClientEve
 object MVCxClientReportDesignerSaveCommandExecutedEventArgs {
   @scala.inline
   def apply(Result: java.lang.String): MVCxClientReportDesignerSaveCommandExecutedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Result")(Result)
+    val __obj = js.Dynamic.literal(Result = Result)
+  
     __obj.asInstanceOf[MVCxClientReportDesignerSaveCommandExecutedEventArgs]
   }
 }

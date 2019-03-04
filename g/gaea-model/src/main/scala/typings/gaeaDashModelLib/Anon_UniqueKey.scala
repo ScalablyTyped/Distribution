@@ -13,8 +13,8 @@ trait Anon_UniqueKey extends js.Object {
 object Anon_UniqueKey {
   @scala.inline
   def apply(uniqueKey: java.lang.String): Anon_UniqueKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uniqueKey")(uniqueKey)
+    val __obj = js.Dynamic.literal(uniqueKey = uniqueKey)
+  
     __obj.asInstanceOf[Anon_UniqueKey]
   }
 }

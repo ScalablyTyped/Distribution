@@ -17,9 +17,7 @@ trait DisplayBalloonOptions extends js.Object {
 object DisplayBalloonOptions {
   @scala.inline
   def apply(content: java.lang.String, title: java.lang.String, icon: NativeImage | java.lang.String = null): DisplayBalloonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(content = content, title = title)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayBalloonOptions]
   }

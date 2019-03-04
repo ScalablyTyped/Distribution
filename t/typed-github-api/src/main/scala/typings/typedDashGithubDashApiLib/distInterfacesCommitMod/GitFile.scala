@@ -20,11 +20,8 @@ object GitFile {
     patch: java.lang.String,
     status: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.modified
   ): GitFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(changes = changes, filename = filename, patch = patch, status = status)
+  
     __obj.asInstanceOf[GitFile]
   }
 }

@@ -12,9 +12,8 @@ trait RsaPssParams extends Algorithm {
 object RsaPssParams {
   @scala.inline
   def apply(name: java.lang.String, saltLength: scala.Double): RsaPssParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("saltLength")(saltLength)
+    val __obj = js.Dynamic.literal(name = name, saltLength = saltLength)
+  
     __obj.asInstanceOf[RsaPssParams]
   }
 }

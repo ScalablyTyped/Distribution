@@ -48,16 +48,7 @@ object Page {
     raw: java.lang.String = null,
     updated: momentLib.momentMod.momentNs.Moment = null
   ): Page = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("full_source")(full_source)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("permalink")(permalink)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(comments = comments, content = content, date = date, full_source = full_source, layout = layout, path = path, permalink = permalink, source = source, title = title)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (excerpt != null) __obj.updateDynamic("excerpt")(excerpt)
     if (link != null) __obj.updateDynamic("link")(link)

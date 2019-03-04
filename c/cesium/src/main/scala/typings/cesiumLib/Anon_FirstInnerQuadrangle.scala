@@ -20,9 +20,7 @@ object Anon_FirstInnerQuadrangle {
     firstInnerQuadrangle: cesiumLib.cesiumMod.CesiumNs.Quaternion = null,
     lastInnerQuadrangle: cesiumLib.cesiumMod.CesiumNs.Quaternion = null
   ): Anon_FirstInnerQuadrangle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("times")(times)
+    val __obj = js.Dynamic.literal(points = points, times = times)
     if (firstInnerQuadrangle != null) __obj.updateDynamic("firstInnerQuadrangle")(firstInnerQuadrangle)
     if (lastInnerQuadrangle != null) __obj.updateDynamic("lastInnerQuadrangle")(lastInnerQuadrangle)
     __obj.asInstanceOf[Anon_FirstInnerQuadrangle]

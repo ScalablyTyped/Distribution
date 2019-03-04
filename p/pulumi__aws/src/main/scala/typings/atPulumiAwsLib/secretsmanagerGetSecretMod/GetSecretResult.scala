@@ -59,17 +59,8 @@ object GetSecretResult {
     rotationRules: js.Array[atPulumiAwsLib.Anon_AutomaticallyAfterDays],
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetSecretResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("policy")(policy)
-    __obj.updateDynamic("rotationEnabled")(rotationEnabled)
-    __obj.updateDynamic("rotationLambdaArn")(rotationLambdaArn)
-    __obj.updateDynamic("rotationRules")(rotationRules)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, kmsKeyId = kmsKeyId, name = name, policy = policy, rotationEnabled = rotationEnabled, rotationLambdaArn = rotationLambdaArn, rotationRules = rotationRules, tags = tags)
+  
     __obj.asInstanceOf[GetSecretResult]
   }
 }

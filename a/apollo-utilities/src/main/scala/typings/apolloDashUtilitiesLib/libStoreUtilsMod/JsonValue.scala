@@ -13,8 +13,8 @@ trait JsonValue extends js.Object {
 object JsonValue {
   @scala.inline
   def apply(json: js.Any, `type`: apolloDashUtilitiesLib.apolloDashUtilitiesLibStrings.json): JsonValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("json")(json)
+    val __obj = js.Dynamic.literal(json = json)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JsonValue]
   }
 }

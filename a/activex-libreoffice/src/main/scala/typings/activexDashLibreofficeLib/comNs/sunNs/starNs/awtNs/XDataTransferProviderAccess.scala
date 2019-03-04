@@ -57,14 +57,8 @@ object XDataTransferProviderAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataTransferProviderAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getClipboard")(getClipboard)
-    __obj.updateDynamic("getDragGestureRecognizer")(getDragGestureRecognizer)
-    __obj.updateDynamic("getDragSource")(getDragSource)
-    __obj.updateDynamic("getDropTarget")(getDropTarget)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getClipboard = getClipboard, getDragGestureRecognizer = getDragGestureRecognizer, getDragSource = getDragSource, getDropTarget = getDropTarget, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataTransferProviderAccess]
   }
 }

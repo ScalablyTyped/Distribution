@@ -34,14 +34,8 @@ object BackgroundUploadProgress {
     totalBytesToReceive: scala.Double,
     totalBytesToSend: scala.Double
   ): BackgroundUploadProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesReceived")(bytesReceived)
-    __obj.updateDynamic("bytesSent")(bytesSent)
-    __obj.updateDynamic("hasResponseChanged")(hasResponseChanged)
-    __obj.updateDynamic("hasRestarted")(hasRestarted)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("totalBytesToReceive")(totalBytesToReceive)
-    __obj.updateDynamic("totalBytesToSend")(totalBytesToSend)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, bytesSent = bytesSent, hasResponseChanged = hasResponseChanged, hasRestarted = hasRestarted, status = status, totalBytesToReceive = totalBytesToReceive, totalBytesToSend = totalBytesToSend)
+  
     __obj.asInstanceOf[BackgroundUploadProgress]
   }
 }

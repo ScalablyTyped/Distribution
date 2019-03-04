@@ -45,12 +45,8 @@ object FlexVolumeSource {
     readOnly: scala.Boolean,
     secretRef: LocalObjectReference
   ): FlexVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("driver")(driver)
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("secretRef")(secretRef)
+    val __obj = js.Dynamic.literal(driver = driver, fsType = fsType, options = options, readOnly = readOnly, secretRef = secretRef)
+  
     __obj.asInstanceOf[FlexVolumeSource]
   }
 }

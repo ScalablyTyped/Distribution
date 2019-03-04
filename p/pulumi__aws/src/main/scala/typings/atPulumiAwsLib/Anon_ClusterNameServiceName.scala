@@ -16,9 +16,8 @@ object Anon_ClusterNameServiceName {
     clusterName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ClusterNameServiceName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ClusterNameServiceName]
   }
 }

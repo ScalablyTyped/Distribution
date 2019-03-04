@@ -24,13 +24,8 @@ object cacheConf {
     index: java.lang.String,
     maxAge: scala.Double
   ): cacheConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("defer")(defer)
-    __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    __obj.updateDynamic("gzip")(gzip)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("maxAge")(maxAge)
+    val __obj = js.Dynamic.literal(cache = cache, defer = defer, extensions = extensions.asInstanceOf[js.Any], gzip = gzip, index = index, maxAge = maxAge)
+  
     __obj.asInstanceOf[cacheConf]
   }
 }

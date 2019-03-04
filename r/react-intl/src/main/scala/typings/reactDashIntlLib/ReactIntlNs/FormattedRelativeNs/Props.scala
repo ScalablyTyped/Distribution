@@ -23,8 +23,7 @@ object Props {
     units: reactDashIntlLib.reactDashIntlLibStrings.second | reactDashIntlLib.reactDashIntlLibStrings.minute | reactDashIntlLib.reactDashIntlLibStrings.hour | reactDashIntlLib.reactDashIntlLibStrings.day | reactDashIntlLib.reactDashIntlLibStrings.month | reactDashIntlLib.reactDashIntlLibStrings.year = null,
     updateInterval: scala.Int | scala.Double = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
     if (format != null) __obj.updateDynamic("format")(format)
     if (initialNow != null) __obj.updateDynamic("initialNow")(initialNow)

@@ -32,11 +32,8 @@ object Collections {
     client: meteorLib.MongoNs.Collection[Client],
     refreshToken: meteorLib.MongoNs.Collection[RefreshToken]
   ): Collections = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("authCode")(authCode)
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("refreshToken")(refreshToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, authCode = authCode, client = client, refreshToken = refreshToken)
+  
     __obj.asInstanceOf[Collections]
   }
 }

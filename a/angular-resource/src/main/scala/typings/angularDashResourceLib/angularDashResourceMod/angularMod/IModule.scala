@@ -23,8 +23,8 @@ object IModule {
       IModule
     ]
   ): IModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("factory")(factory)
+    val __obj = js.Dynamic.literal(factory = factory)
+  
     __obj.asInstanceOf[IModule]
   }
 }

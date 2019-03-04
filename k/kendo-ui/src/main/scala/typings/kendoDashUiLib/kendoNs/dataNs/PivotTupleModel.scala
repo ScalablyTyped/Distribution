@@ -26,10 +26,7 @@ object PivotTupleModel {
     hierarchy: java.lang.String = null,
     levelName: java.lang.String = null
   ): PivotTupleModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("levelNum")(levelNum)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(children = children, levelNum = levelNum, name = name)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
     if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)

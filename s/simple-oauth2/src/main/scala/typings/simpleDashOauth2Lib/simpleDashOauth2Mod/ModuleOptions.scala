@@ -25,9 +25,7 @@ object ModuleOptions {
     http: js.Object = null,
     options: simpleDashOauth2Lib.Anon_AuthorizationMethod = null
   ): ModuleOptions[ClientIdName] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(auth = auth, client = client)
     if (http != null) __obj.updateDynamic("http")(http)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[ModuleOptions[ClientIdName]]

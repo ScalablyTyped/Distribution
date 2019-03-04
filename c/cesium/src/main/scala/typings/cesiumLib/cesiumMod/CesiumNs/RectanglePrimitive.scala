@@ -40,21 +40,8 @@ object RectanglePrimitive {
     textureRotationAngle: scala.Double,
     update: js.Function0[scala.Unit]
   ): RectanglePrimitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asynchronous")(asynchronous)
-    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("ellipsoid")(ellipsoid)
-    __obj.updateDynamic("granularity")(granularity)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("rectangle")(rectangle)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("textureRotationAngle")(textureRotationAngle)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(asynchronous = asynchronous, debugShowBoundingVolume = debugShowBoundingVolume, destroy = destroy, ellipsoid = ellipsoid, granularity = granularity, height = height, id = id, isDestroyed = isDestroyed, material = material, rectangle = rectangle, rotation = rotation, show = show, textureRotationAngle = textureRotationAngle, update = update)
+  
     __obj.asInstanceOf[RectanglePrimitive]
   }
 }

@@ -76,8 +76,7 @@ object Anon_Acknowledged {
     statuses: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_Acknowledged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(merchantId = merchantId)
     if (!js.isUndefined(acknowledged)) __obj.updateDynamic("acknowledged")(acknowledged)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -14,10 +14,8 @@ trait ResponseBase extends js.Object {
 object ResponseBase {
   @scala.inline
   def apply(config: js.Function0[js.Any], headers: js.Function0[Headers], status: js.Function0[scala.Double]): ResponseBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(config = config, headers = headers, status = status)
+  
     __obj.asInstanceOf[ResponseBase]
   }
 }

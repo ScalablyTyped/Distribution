@@ -18,8 +18,8 @@ object Anon_Array {
     `type`: plotlyDotJsLib.plotlyDotJsLibStrings.data,
     arrayminus: js.Array[plotlyDotJsLib.plotlyDotJsMod.Datum] = null
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("array")(array)
+    val __obj = js.Dynamic.literal(array = array)
+    __obj.updateDynamic("type")(`type`)
     if (arrayminus != null) __obj.updateDynamic("arrayminus")(arrayminus)
     __obj.asInstanceOf[Anon_Array]
   }

@@ -161,9 +161,7 @@ object ChartOptions {
     width: scala.Int | scala.Double = null,
     zoomEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): ChartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(data = data, title = title)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled)
     if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])

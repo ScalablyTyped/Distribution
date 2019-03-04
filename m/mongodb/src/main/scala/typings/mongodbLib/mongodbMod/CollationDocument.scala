@@ -30,8 +30,7 @@ object CollationDocument {
     numericOrdering: js.UndefOr[scala.Boolean] = js.undefined,
     strength: scala.Int | scala.Double = null
   ): CollationDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(locale = locale)
     if (alternate != null) __obj.updateDynamic("alternate")(alternate)
     if (!js.isUndefined(backwards)) __obj.updateDynamic("backwards")(backwards)
     if (caseFirst != null) __obj.updateDynamic("caseFirst")(caseFirst)

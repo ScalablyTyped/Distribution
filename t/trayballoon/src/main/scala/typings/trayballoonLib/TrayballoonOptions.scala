@@ -23,8 +23,7 @@ object TrayballoonOptions {
     title: java.lang.String = null,
     wait: js.UndefOr[scala.Boolean] = js.undefined
   ): TrayballoonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)

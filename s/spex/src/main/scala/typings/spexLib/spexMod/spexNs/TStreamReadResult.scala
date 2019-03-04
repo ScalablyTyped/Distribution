@@ -15,11 +15,8 @@ trait TStreamReadResult extends js.Object {
 object TStreamReadResult {
   @scala.inline
   def apply(calls: scala.Double, duration: scala.Double, length: scala.Double, reads: scala.Double): TStreamReadResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("reads")(reads)
+    val __obj = js.Dynamic.literal(calls = calls, duration = duration, length = length, reads = reads)
+  
     __obj.asInstanceOf[TStreamReadResult]
   }
 }

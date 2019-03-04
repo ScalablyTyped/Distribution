@@ -37,8 +37,7 @@ object EdgeTraversal {
     properties: PropertyBag = null,
     stepOverEdgeCount: scala.Int | scala.Double = null
   ): EdgeTraversal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edgeId")(edgeId)
+    val __obj = js.Dynamic.literal(edgeId = edgeId)
     if (finalState != null) __obj.updateDynamic("finalState")(finalState)
     if (message != null) __obj.updateDynamic("message")(message)
     if (properties != null) __obj.updateDynamic("properties")(properties)

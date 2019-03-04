@@ -64,9 +64,9 @@ abstract class AbsListView protected ()
   var mOverscrollMax: js.Any = js.native
   var mPendingCheckForKeyLongPress: js.Any = js.native
   var mPendingCheckForLongPress_List: js.Any = js.native
-  var `mPendingCheckForTap_`: js.Any = js.native
+  var mPendingCheckForTap_ : js.Any = js.native
   var mPendingSync: js.Any = js.native
-  var `mPerformClick_`: js.Any = js.native
+  var mPerformClick_ : js.Any = js.native
   var mPopupHidden: js.Any = js.native
   var mPositionScrollAfterLayout: androiduixLib.javaNs.langNs.Runnable = js.native
   var mPositionScroller: androiduixLib.androidNs.widgetNs.AbsListViewNs.PositionScroller = js.native

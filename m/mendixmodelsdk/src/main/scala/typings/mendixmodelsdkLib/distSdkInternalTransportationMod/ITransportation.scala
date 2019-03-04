@@ -62,11 +62,8 @@ object ITransportation {
       scala.Unit
     ]
   ): ITransportation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestFileDownload")(requestFileDownload)
-    __obj.updateDynamic("requestMultipartBinaryFileUpload")(requestMultipartBinaryFileUpload)
-    __obj.updateDynamic("retryableRequest")(retryableRequest)
+    val __obj = js.Dynamic.literal(request = request, requestFileDownload = requestFileDownload, requestMultipartBinaryFileUpload = requestMultipartBinaryFileUpload, retryableRequest = retryableRequest)
+  
     __obj.asInstanceOf[ITransportation]
   }
 }

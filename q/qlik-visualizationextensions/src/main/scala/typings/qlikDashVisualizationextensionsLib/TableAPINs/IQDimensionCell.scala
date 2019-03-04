@@ -31,13 +31,7 @@ object IQDimensionCell {
     select: js.Function0[scala.Unit],
     qNum: scala.Int | scala.Double = null
   ): IQDimensionCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPercent")(getPercent)
-    __obj.updateDynamic("getPercentOfMax")(getPercentOfMax)
-    __obj.updateDynamic("qElemNumber")(qElemNumber)
-    __obj.updateDynamic("qState")(qState)
-    __obj.updateDynamic("qText")(qText)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(getPercent = getPercent, getPercentOfMax = getPercentOfMax, qElemNumber = qElemNumber, qState = qState, qText = qText, select = select)
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQDimensionCell]
   }

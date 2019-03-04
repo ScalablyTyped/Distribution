@@ -14,8 +14,8 @@ object IDecompressorFactory {
   def apply(
     createDecompressor: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, Decompressor]
   ): IDecompressorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDecompressor")(createDecompressor)
+    val __obj = js.Dynamic.literal(createDecompressor = createDecompressor)
+  
     __obj.asInstanceOf[IDecompressorFactory]
   }
 }

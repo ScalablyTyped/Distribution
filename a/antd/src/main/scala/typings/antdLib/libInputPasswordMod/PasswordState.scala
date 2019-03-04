@@ -12,8 +12,8 @@ trait PasswordState extends js.Object {
 object PasswordState {
   @scala.inline
   def apply(visible: scala.Boolean): PasswordState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(visible = visible)
+  
     __obj.asInstanceOf[PasswordState]
   }
 }

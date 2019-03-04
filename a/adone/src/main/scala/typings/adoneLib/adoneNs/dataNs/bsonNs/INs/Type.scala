@@ -12,8 +12,8 @@ trait Type extends js.Object {
 object Type {
   @scala.inline
   def apply(_bsontype: java.lang.String): Type = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_bsontype")(_bsontype)
+    val __obj = js.Dynamic.literal(_bsontype = _bsontype)
+  
     __obj.asInstanceOf[Type]
   }
 }

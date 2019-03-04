@@ -40,8 +40,7 @@ object CircleOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): CircleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any])
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

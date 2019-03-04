@@ -20,10 +20,7 @@ object Anon_Href {
     size: js.Array[scala.Double],
     shape: yandexDashMapsLib.ymapsNs.IShape | yandexDashMapsLib.ymapsNs.IGeometryJson = null
   ): Anon_Href = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("ooffset")(ooffset)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(href = href, ooffset = ooffset, size = size)
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Href]
   }

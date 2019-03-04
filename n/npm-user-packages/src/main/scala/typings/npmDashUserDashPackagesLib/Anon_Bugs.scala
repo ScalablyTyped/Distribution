@@ -20,8 +20,7 @@ object Anon_Bugs {
     homepage: java.lang.String = null,
     repository: java.lang.String = null
   ): Anon_Bugs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("npm")(npm)
+    val __obj = js.Dynamic.literal(npm = npm)
     if (bugs != null) __obj.updateDynamic("bugs")(bugs)
     if (homepage != null) __obj.updateDynamic("homepage")(homepage)
     if (repository != null) __obj.updateDynamic("repository")(repository)

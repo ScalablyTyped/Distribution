@@ -22,12 +22,8 @@ object SystemData {
     uuid: java.lang.String,
     version: java.lang.String
   ): SystemData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(manufacturer = manufacturer, model = model, serial = serial, uuid = uuid, version = version)
+  
     __obj.asInstanceOf[SystemData]
   }
 }

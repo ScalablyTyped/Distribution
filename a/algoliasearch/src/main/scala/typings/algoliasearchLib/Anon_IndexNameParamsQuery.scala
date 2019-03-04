@@ -18,10 +18,8 @@ object Anon_IndexNameParamsQuery {
     params: algoliasearchLib.liteMod.algoliasearchNs.QueryParameters,
     query: java.lang.String
   ): Anon_IndexNameParamsQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexName")(indexName)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(indexName = indexName, params = params, query = query)
+  
     __obj.asInstanceOf[Anon_IndexNameParamsQuery]
   }
 }

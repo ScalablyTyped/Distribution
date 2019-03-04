@@ -16,8 +16,8 @@ trait RequireModule extends js.Object {
 object RequireModule {
   @scala.inline
   def apply(config: js.Function0[js.Object]): RequireModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(config = config)
+  
     __obj.asInstanceOf[RequireModule]
   }
 }

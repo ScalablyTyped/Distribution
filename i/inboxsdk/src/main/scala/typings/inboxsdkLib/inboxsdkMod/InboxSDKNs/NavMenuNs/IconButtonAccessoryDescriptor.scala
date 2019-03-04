@@ -20,9 +20,8 @@ object IconButtonAccessoryDescriptor {
     `type`: inboxsdkLib.inboxsdkLibStrings.ICON_BUTTON,
     iconClass: java.lang.String = null
   ): IconButtonAccessoryDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("onClick")(onClick)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick)
+    __obj.updateDynamic("type")(`type`)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     __obj.asInstanceOf[IconButtonAccessoryDescriptor]
   }

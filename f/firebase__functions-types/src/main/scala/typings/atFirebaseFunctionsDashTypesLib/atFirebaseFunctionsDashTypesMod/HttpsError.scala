@@ -27,10 +27,7 @@ object HttpsError {
     details: js.Any = null,
     stack: java.lang.String = null
   ): HttpsError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
     if (details != null) __obj.updateDynamic("details")(details)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[HttpsError]

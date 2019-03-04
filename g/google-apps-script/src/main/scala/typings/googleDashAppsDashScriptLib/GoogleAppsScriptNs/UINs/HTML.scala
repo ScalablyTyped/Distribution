@@ -79,37 +79,8 @@ object HTML {
     setWidth: js.Function1[java.lang.String, HTML],
     setWordWrap: js.Function1[scala.Boolean, HTML]
   ): HTML = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClickHandler")(addClickHandler)
-    __obj.updateDynamic("addMouseDownHandler")(addMouseDownHandler)
-    __obj.updateDynamic("addMouseMoveHandler")(addMouseMoveHandler)
-    __obj.updateDynamic("addMouseOutHandler")(addMouseOutHandler)
-    __obj.updateDynamic("addMouseOverHandler")(addMouseOverHandler)
-    __obj.updateDynamic("addMouseUpHandler")(addMouseUpHandler)
-    __obj.updateDynamic("addMouseWheelHandler")(addMouseWheelHandler)
-    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
-    __obj.updateDynamic("addStyleName")(addStyleName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setDirection")(setDirection)
-    __obj.updateDynamic("setHTML")(setHTML)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setHorizontalAlignment")(setHorizontalAlignment)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setLayoutData")(setLayoutData)
-    __obj.updateDynamic("setPixelSize")(setPixelSize)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
-    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
-    __obj.updateDynamic("setStyleName")(setStyleName)
-    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
-    __obj.updateDynamic("setTag")(setTag)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setWidth")(setWidth)
-    __obj.updateDynamic("setWordWrap")(setWordWrap)
+    val __obj = js.Dynamic.literal(addClickHandler = addClickHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDirection = setDirection, setHTML = setHTML, setHeight = setHeight, setHorizontalAlignment = setHorizontalAlignment, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth, setWordWrap = setWordWrap)
+  
     __obj.asInstanceOf[HTML]
   }
 }

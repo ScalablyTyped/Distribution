@@ -39,16 +39,8 @@ object FlashFontItem {
     italic: scala.Boolean,
     size: scala.Double
   ): FlashFontItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitmap")(bitmap)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("embedRanges")(embedRanges)
-    __obj.updateDynamic("embedVariantGlyphs")(embedVariantGlyphs)
-    __obj.updateDynamic("embeddedCharacters")(embeddedCharacters)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("isDefineFont4Symbol")(isDefineFont4Symbol)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(bitmap = bitmap, bold = bold, embedRanges = embedRanges, embedVariantGlyphs = embedVariantGlyphs, embeddedCharacters = embeddedCharacters, font = font, isDefineFont4Symbol = isDefineFont4Symbol, italic = italic, size = size)
+  
     __obj.asInstanceOf[FlashFontItem]
   }
 }

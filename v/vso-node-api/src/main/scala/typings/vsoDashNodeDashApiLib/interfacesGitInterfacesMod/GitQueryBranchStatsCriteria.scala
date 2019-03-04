@@ -13,9 +13,8 @@ trait GitQueryBranchStatsCriteria extends js.Object {
 object GitQueryBranchStatsCriteria {
   @scala.inline
   def apply(baseCommit: GitVersionDescriptor, targetCommits: js.Array[GitVersionDescriptor]): GitQueryBranchStatsCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseCommit")(baseCommit)
-    __obj.updateDynamic("targetCommits")(targetCommits)
+    val __obj = js.Dynamic.literal(baseCommit = baseCommit, targetCommits = targetCommits)
+  
     __obj.asInstanceOf[GitQueryBranchStatsCriteria]
   }
 }

@@ -140,9 +140,7 @@ object LightboxProps {
     spinnerSize: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): LightboxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("onClose")(onClose)
+    val __obj = js.Dynamic.literal(images = images, onClose = onClose)
     if (!js.isUndefined(backdropClosesModal)) __obj.updateDynamic("backdropClosesModal")(backdropClosesModal)
     if (closeButtonTitle != null) __obj.updateDynamic("closeButtonTitle")(closeButtonTitle)
     if (currentImage != null) __obj.updateDynamic("currentImage")(currentImage.asInstanceOf[js.Any])

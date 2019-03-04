@@ -30,16 +30,8 @@ object AbideDefaults {
     validateOnBlur: scala.Boolean,
     validators: js.Any
   ): AbideDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formErrorClass")(formErrorClass)
-    __obj.updateDynamic("formErrorSelector")(formErrorSelector)
-    __obj.updateDynamic("inputErrorClass")(inputErrorClass)
-    __obj.updateDynamic("labelErrorClass")(labelErrorClass)
-    __obj.updateDynamic("liveValidate")(liveValidate)
-    __obj.updateDynamic("patterns")(patterns)
-    __obj.updateDynamic("validateOn")(validateOn)
-    __obj.updateDynamic("validateOnBlur")(validateOnBlur)
-    __obj.updateDynamic("validators")(validators)
+    val __obj = js.Dynamic.literal(formErrorClass = formErrorClass, formErrorSelector = formErrorSelector, inputErrorClass = inputErrorClass, labelErrorClass = labelErrorClass, liveValidate = liveValidate, patterns = patterns, validateOn = validateOn, validateOnBlur = validateOnBlur, validators = validators)
+  
     __obj.asInstanceOf[AbideDefaults]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_Chart extends js.Object {
 object Anon_Chart {
   @scala.inline
   def apply(chart: amchartsLib.amchartMod.default, `type`: java.lang.String): Anon_Chart = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chart")(chart)
+    val __obj = js.Dynamic.literal(chart = chart)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Chart]
   }
 }

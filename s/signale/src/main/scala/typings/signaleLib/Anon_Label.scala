@@ -13,8 +13,7 @@ trait Anon_Label extends js.Object {
 object Anon_Label {
   @scala.inline
   def apply(label: java.lang.String, span: scala.Int | scala.Double = null): Anon_Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Label]
   }

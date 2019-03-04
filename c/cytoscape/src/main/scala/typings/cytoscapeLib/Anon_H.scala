@@ -24,13 +24,8 @@ object Anon_H {
     y1: scala.Double,
     y2: scala.Double
   ): Anon_H = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x1")(x1)
-    __obj.updateDynamic("x2")(x2)
-    __obj.updateDynamic("y1")(y1)
-    __obj.updateDynamic("y2")(y2)
+    val __obj = js.Dynamic.literal(h = h, w = w, x1 = x1, x2 = x2, y1 = y1, y2 = y2)
+  
     __obj.asInstanceOf[Anon_H]
   }
 }

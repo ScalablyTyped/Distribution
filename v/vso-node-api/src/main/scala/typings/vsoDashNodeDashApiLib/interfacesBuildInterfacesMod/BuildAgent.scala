@@ -42,22 +42,8 @@ object BuildAgent {
     uri: java.lang.String,
     url: java.lang.String
   ): BuildAgent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildDirectory")(buildDirectory)
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("messageQueueUrl")(messageQueueUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("reservedForBuild")(reservedForBuild)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("updatedDate")(updatedDate)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(buildDirectory = buildDirectory, controller = controller, createdDate = createdDate, description = description, enabled = enabled, id = id, messageQueueUrl = messageQueueUrl, name = name, reservedForBuild = reservedForBuild, server = server, status = status, statusMessage = statusMessage, updatedDate = updatedDate, uri = uri, url = url)
+  
     __obj.asInstanceOf[BuildAgent]
   }
 }

@@ -75,14 +75,8 @@ object XExtendedTextConversion {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XExtendedTextConversion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getConversion")(getConversion)
-    __obj.updateDynamic("getConversionWithOffset")(getConversionWithOffset)
-    __obj.updateDynamic("getConversions")(getConversions)
-    __obj.updateDynamic("interactiveConversion")(interactiveConversion)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getConversion = getConversion, getConversionWithOffset = getConversionWithOffset, getConversions = getConversions, interactiveConversion = interactiveConversion, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XExtendedTextConversion]
   }
 }

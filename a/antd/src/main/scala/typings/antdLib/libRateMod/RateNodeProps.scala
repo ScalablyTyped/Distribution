@@ -12,8 +12,8 @@ trait RateNodeProps extends js.Object {
 object RateNodeProps {
   @scala.inline
   def apply(index: scala.Double): RateNodeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(index = index)
+  
     __obj.asInstanceOf[RateNodeProps]
   }
 }

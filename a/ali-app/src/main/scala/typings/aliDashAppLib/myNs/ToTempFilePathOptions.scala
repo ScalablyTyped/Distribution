@@ -35,13 +35,7 @@ object ToTempFilePathOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): ToTempFilePathOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destHeight")(destHeight)
-    __obj.updateDynamic("destWidth")(destWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(destHeight = destHeight, destWidth = destWidth, height = height, width = width, x = x, y = y)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

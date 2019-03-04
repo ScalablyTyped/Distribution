@@ -45,13 +45,8 @@ object GetClusterResult {
     subnetIds: js.Array[java.lang.String],
     vpcId: java.lang.String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterCertificates")(clusterCertificates)
-    __obj.updateDynamic("clusterState")(clusterState)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("securityGroupId")(securityGroupId)
-    __obj.updateDynamic("subnetIds")(subnetIds)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(clusterCertificates = clusterCertificates, clusterState = clusterState, id = id, securityGroupId = securityGroupId, subnetIds = subnetIds, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetClusterResult]
   }
 }

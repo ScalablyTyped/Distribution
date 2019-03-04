@@ -43,18 +43,8 @@ object GitItem {
     path: java.lang.String,
     url: java.lang.String
   ): GitItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("commitId")(commitId)
-    __obj.updateDynamic("contentMetadata")(contentMetadata)
-    __obj.updateDynamic("gitObjectType")(gitObjectType)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("isSymLink")(isSymLink)
-    __obj.updateDynamic("latestProcessedChange")(latestProcessedChange)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("originalObjectId")(originalObjectId)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, commitId = commitId, contentMetadata = contentMetadata, gitObjectType = gitObjectType, isFolder = isFolder, isSymLink = isSymLink, latestProcessedChange = latestProcessedChange, objectId = objectId, originalObjectId = originalObjectId, path = path, url = url)
+  
     __obj.asInstanceOf[GitItem]
   }
 }

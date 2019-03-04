@@ -32,17 +32,8 @@ object NormalModuleFactoryHooks {
     parser: tapableLib.tapableMod.HookMap[_, _, _],
     resolver: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
   ): NormalModuleFactoryHooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterResolve")(afterResolve)
-    __obj.updateDynamic("beforeResolve")(beforeResolve)
-    __obj.updateDynamic("createGenerator")(createGenerator)
-    __obj.updateDynamic("createModule")(createModule)
-    __obj.updateDynamic("createParser")(createParser)
-    __obj.updateDynamic("factory")(factory)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("parser")(parser)
-    __obj.updateDynamic("resolver")(resolver)
+    val __obj = js.Dynamic.literal(afterResolve = afterResolve, beforeResolve = beforeResolve, createGenerator = createGenerator, createModule = createModule, createParser = createParser, factory = factory, generator = generator, module = module, parser = parser, resolver = resolver)
+  
     __obj.asInstanceOf[NormalModuleFactoryHooks]
   }
 }

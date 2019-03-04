@@ -103,13 +103,8 @@ object AnnotationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
     ]
   ): AnnotationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchCreate")(batchCreate)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(batchCreate = batchCreate, create = create, delete = delete, get = get, search = search, update = update)
+  
     __obj.asInstanceOf[AnnotationsResource]
   }
 }

@@ -21,12 +21,8 @@ object UploadControlFileUploadCompleteEventArgs {
     isValid: scala.Boolean,
     sender: Control
   ): UploadControlFileUploadCompleteEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackData")(callbackData)
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("inputIndex")(inputIndex)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(callbackData = callbackData, errorText = errorText, inputIndex = inputIndex, isValid = isValid, sender = sender)
+  
     __obj.asInstanceOf[UploadControlFileUploadCompleteEventArgs]
   }
 }

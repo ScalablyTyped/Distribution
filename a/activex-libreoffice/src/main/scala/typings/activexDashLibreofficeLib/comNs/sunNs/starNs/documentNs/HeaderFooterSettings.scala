@@ -53,21 +53,8 @@ object HeaderFooterSettings {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): HeaderFooterSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsPrintDate")(IsPrintDate)
-    __obj.updateDynamic("IsPrintPageName")(IsPrintPageName)
-    __obj.updateDynamic("IsPrintTime")(IsPrintTime)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(IsPrintDate = IsPrintDate, IsPrintPageName = IsPrintPageName, IsPrintTime = IsPrintTime, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[HeaderFooterSettings]
   }
 }

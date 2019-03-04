@@ -23,16 +23,8 @@ object Polyline {
     reset: js.Function0[scala.Unit],
     toggleEdit: js.Function0[scala.Unit]
   ): Polyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continueBackward")(continueBackward)
-    __obj.updateDynamic("continueForward")(continueForward)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("disableEdit")(disableEdit)
-    __obj.updateDynamic("editEnabled")(editEnabled)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enableEdit")(enableEdit)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toggleEdit")(toggleEdit)
+    val __obj = js.Dynamic.literal(continueBackward = continueBackward, continueForward = continueForward, disable = disable, disableEdit = disableEdit, editEnabled = editEnabled, enable = enable, enableEdit = enableEdit, reset = reset, toggleEdit = toggleEdit)
+  
     __obj.asInstanceOf[Polyline]
   }
 }

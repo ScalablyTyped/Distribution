@@ -28,15 +28,8 @@ object Anon_Change {
     shelveset: scala.Double,
     tip: scala.Double
   ): Anon_Change = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("changeset")(changeset)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("latest")(latest)
-    __obj.updateDynamic("mergeSource")(mergeSource)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("shelveset")(shelveset)
-    __obj.updateDynamic("tip")(tip)
+    val __obj = js.Dynamic.literal(change = change, changeset = changeset, date = date, latest = latest, mergeSource = mergeSource, none = none, shelveset = shelveset, tip = tip)
+  
     __obj.asInstanceOf[Anon_Change]
   }
 }

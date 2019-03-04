@@ -30,8 +30,7 @@ object IAnimatedTileLayerOptions {
     maxTotalLoadTime: scala.Int | scala.Double = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): IAnimatedTileLayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mercator")(mercator)
+    val __obj = js.Dynamic.literal(mercator = mercator)
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
     if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
     if (loadingScreen != null) __obj.updateDynamic("loadingScreen")(loadingScreen)

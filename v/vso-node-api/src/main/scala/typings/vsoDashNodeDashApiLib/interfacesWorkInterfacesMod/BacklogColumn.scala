@@ -16,9 +16,8 @@ object BacklogColumn {
     columnFieldReference: vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemFieldReference,
     width: scala.Double
   ): BacklogColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnFieldReference")(columnFieldReference)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(columnFieldReference = columnFieldReference, width = width)
+  
     __obj.asInstanceOf[BacklogColumn]
   }
 }

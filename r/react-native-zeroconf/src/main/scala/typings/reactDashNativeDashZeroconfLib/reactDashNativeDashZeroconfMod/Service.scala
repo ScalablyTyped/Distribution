@@ -24,13 +24,8 @@ object Service {
     port: scala.Double,
     txt: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("txt")(txt)
+    val __obj = js.Dynamic.literal(addresses = addresses, fullName = fullName, host = host, name = name, port = port, txt = txt)
+  
     __obj.asInstanceOf[Service]
   }
 }

@@ -32,10 +32,7 @@ object SelectListProps {
     placeholder: java.lang.String = null,
     value: java.lang.String = null
   ): SelectListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(id = id, onChange = onChange, options = options)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])

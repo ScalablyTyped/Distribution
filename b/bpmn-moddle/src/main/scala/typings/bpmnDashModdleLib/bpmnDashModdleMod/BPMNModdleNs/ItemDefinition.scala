@@ -27,12 +27,8 @@ object ItemDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ItemDefinition = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isCollection")(isCollection)
-    __obj.updateDynamic("itemKind")(itemKind)
-    __obj.updateDynamic("structureRef")(structureRef)
+    val __obj = js.Dynamic.literal($type = $type, id = id, isCollection = isCollection, itemKind = itemKind, structureRef = structureRef)
+    __obj.updateDynamic("import")(`import`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

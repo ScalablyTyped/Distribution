@@ -34,18 +34,8 @@ object TreeBase {
     size: scala.Double,
     upperBound: js.Function1[T, Iterator[T]]
   ): TreeBase[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findIter")(findIter)
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("lowerBound")(lowerBound)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("reach")(reach)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("upperBound")(upperBound)
+    val __obj = js.Dynamic.literal(clear = clear, each = each, find = find, findIter = findIter, iterator = iterator, lowerBound = lowerBound, max = max, min = min, reach = reach, size = size, upperBound = upperBound)
+  
     __obj.asInstanceOf[TreeBase[T]]
   }
 }

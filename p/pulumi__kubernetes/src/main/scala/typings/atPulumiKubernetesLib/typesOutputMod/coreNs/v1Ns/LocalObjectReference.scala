@@ -20,8 +20,8 @@ trait LocalObjectReference extends js.Object {
 object LocalObjectReference {
   @scala.inline
   def apply(name: java.lang.String): LocalObjectReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[LocalObjectReference]
   }
 }

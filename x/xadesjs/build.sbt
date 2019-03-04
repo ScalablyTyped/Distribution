@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "xadesjs"
-version := "2.0.14-536578"
+version := "2.0.14-8477b1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20180214Z-7ca9fb",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "pkijs" % "0.0-unknown-dt-20190217Z-8efedd",
-  "org.scalablytyped" %%% "pvutils" % "0.0-unknown-dt-20180214Z-b4aacb",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-9355d3",
-  "org.scalablytyped" %%% "xml-core" % "1.0.15-c351ec",
-  "org.scalablytyped" %%% "xmldsigjs" % "2.0.22-229c80")
+  "org.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20180214Z-797394",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "pkijs" % "0.0-unknown-dt-20190217Z-ea648d",
+  "org.scalablytyped" %%% "pvutils" % "0.0-unknown-dt-20180214Z-6d5306",
+  "org.scalablytyped" %%% "std" % "3.3-05be79",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-d28c21",
+  "org.scalablytyped" %%% "xml-core" % "1.0.15-5313f0",
+  "org.scalablytyped" %%% "xmldsigjs" % "2.0.22-c74070")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

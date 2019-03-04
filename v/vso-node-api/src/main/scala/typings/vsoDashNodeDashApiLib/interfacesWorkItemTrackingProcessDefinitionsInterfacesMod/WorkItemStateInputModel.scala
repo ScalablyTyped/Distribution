@@ -32,11 +32,8 @@ object WorkItemStateInputModel {
     order: scala.Double,
     stateCategory: java.lang.String
   ): WorkItemStateInputModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("stateCategory")(stateCategory)
+    val __obj = js.Dynamic.literal(color = color, name = name, order = order, stateCategory = stateCategory)
+  
     __obj.asInstanceOf[WorkItemStateInputModel]
   }
 }

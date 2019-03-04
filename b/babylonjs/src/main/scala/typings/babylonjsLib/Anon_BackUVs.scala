@@ -32,8 +32,7 @@ object Anon_BackUVs {
     sideOrientation: scala.Int | scala.Double = null,
     uvs: js.Array[babylonjsLib.BABYLONNs.Vector2] = null
   ): Anon_BackUVs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathArray")(pathArray)
+    val __obj = js.Dynamic.literal(pathArray = pathArray)
     if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs)
     if (!js.isUndefined(closeArray)) __obj.updateDynamic("closeArray")(closeArray)
     if (!js.isUndefined(closePath)) __obj.updateDynamic("closePath")(closePath)

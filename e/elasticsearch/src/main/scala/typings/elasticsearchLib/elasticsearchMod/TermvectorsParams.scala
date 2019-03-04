@@ -48,8 +48,8 @@ object TermvectorsParams {
     version: scala.Int | scala.Double = null,
     versionType: VersionType = null
   ): TermvectorsParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(index = index)
+    __obj.updateDynamic("type")(`type`)
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(fieldStatistics)) __obj.updateDynamic("fieldStatistics")(fieldStatistics)
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])

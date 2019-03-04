@@ -30,10 +30,8 @@ object Anon_NetworkPredictionEnabled {
     peerConnectionEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
     webRTCIPHandlingPolicy: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
   ): Anon_NetworkPredictionEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkPredictionEnabled")(networkPredictionEnabled)
-    __obj.updateDynamic("peerConnectionEnabled")(peerConnectionEnabled)
-    __obj.updateDynamic("webRTCIPHandlingPolicy")(webRTCIPHandlingPolicy)
+    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled, peerConnectionEnabled = peerConnectionEnabled, webRTCIPHandlingPolicy = webRTCIPHandlingPolicy)
+  
     __obj.asInstanceOf[Anon_NetworkPredictionEnabled]
   }
 }

@@ -12,8 +12,8 @@ trait IHtmlUtilities extends js.Object {
 object IHtmlUtilities {
   @scala.inline
   def apply(convertToText: js.Function1[java.lang.String, java.lang.String]): IHtmlUtilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertToText")(convertToText)
+    val __obj = js.Dynamic.literal(convertToText = convertToText)
+  
     __obj.asInstanceOf[IHtmlUtilities]
   }
 }

@@ -18,10 +18,8 @@ object Persistence {
     setAutocompactionInterval: js.Function1[scala.Double, scala.Unit],
     stopAutocompaction: js.Function0[scala.Unit]
   ): Persistence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compactDatafile")(compactDatafile)
-    __obj.updateDynamic("setAutocompactionInterval")(setAutocompactionInterval)
-    __obj.updateDynamic("stopAutocompaction")(stopAutocompaction)
+    val __obj = js.Dynamic.literal(compactDatafile = compactDatafile, setAutocompactionInterval = setAutocompactionInterval, stopAutocompaction = stopAutocompaction)
+  
     __obj.asInstanceOf[Persistence]
   }
 }

@@ -22,10 +22,7 @@ object TemplateValidator {
     InlineCssForHtmlTestRender: js.UndefOr[scala.Boolean] = js.undefined,
     TestRenderModel: T = null
   ): TemplateValidator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HtmlBody")(HtmlBody)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("TextBody")(TextBody)
+    val __obj = js.Dynamic.literal(HtmlBody = HtmlBody, Subject = Subject, TextBody = TextBody)
     if (!js.isUndefined(InlineCssForHtmlTestRender)) __obj.updateDynamic("InlineCssForHtmlTestRender")(InlineCssForHtmlTestRender)
     if (TestRenderModel != null) __obj.updateDynamic("TestRenderModel")(TestRenderModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateValidator[T]]

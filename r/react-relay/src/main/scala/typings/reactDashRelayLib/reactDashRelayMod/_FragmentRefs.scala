@@ -13,8 +13,8 @@ trait _FragmentRefs[T] extends js.Object {
 object _FragmentRefs {
   @scala.inline
   def apply[T](` $fragmentRefs`: T): _FragmentRefs[T] = {
-    val __obj = js.Dynamic.literal(` $fragmentRefs` = ` $fragmentRefs`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic(" $fragmentRefs")(` $fragmentRefs`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_FragmentRefs[T]]
   }
 }

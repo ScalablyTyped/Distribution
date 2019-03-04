@@ -14,9 +14,8 @@ trait Anon_KeyType extends js.Object {
 object Anon_KeyType {
   @scala.inline
   def apply(key: java.lang.String, `type`: java.lang.String, value: java.lang.String): Anon_KeyType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_KeyType]
   }
 }

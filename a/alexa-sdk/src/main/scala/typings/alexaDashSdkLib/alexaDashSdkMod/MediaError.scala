@@ -13,8 +13,8 @@ trait MediaError extends js.Object {
 object MediaError {
   @scala.inline
   def apply(message: java.lang.String, `type`: MediaErrorType): MediaError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MediaError]
   }
 }

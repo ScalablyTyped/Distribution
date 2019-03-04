@@ -18,10 +18,8 @@ object Anon_BlockMeta {
     meta: adoneLib.adoneNs.shaniNs.INs.ExecutionResult,
     test: adoneLib.adoneNs.shaniNs.INs.Test
   ): Anon_BlockMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(block = block, meta = meta, test = test)
+  
     __obj.asInstanceOf[Anon_BlockMeta]
   }
 }

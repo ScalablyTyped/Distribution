@@ -20,11 +20,8 @@ object SourceMapOptions {
     includeContent: scala.Boolean,
     source: java.lang.String
   ): SourceMapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("hires")(hires)
-    __obj.updateDynamic("includeContent")(includeContent)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(file = file, hires = hires, includeContent = includeContent, source = source)
+  
     __obj.asInstanceOf[SourceMapOptions]
   }
 }

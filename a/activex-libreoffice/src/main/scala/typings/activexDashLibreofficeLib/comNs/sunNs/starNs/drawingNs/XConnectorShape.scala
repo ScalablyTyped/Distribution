@@ -36,22 +36,8 @@ object XConnectorShape {
     setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
     setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
   ): XConnectorShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("ShapeType")(ShapeType)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("connectEnd")(connectEnd)
-    __obj.updateDynamic("connectStart")(connectStart)
-    __obj.updateDynamic("disconnectBegin")(disconnectBegin)
-    __obj.updateDynamic("disconnectEnd")(disconnectEnd)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getShapeType")(getShapeType)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setSize")(setSize)
+    val __obj = js.Dynamic.literal(Position = Position, ShapeType = ShapeType, Size = Size, acquire = acquire, connectEnd = connectEnd, connectStart = connectStart, disconnectBegin = disconnectBegin, disconnectEnd = disconnectEnd, getPosition = getPosition, getShapeType = getShapeType, getSize = getSize, queryInterface = queryInterface, release = release, setPosition = setPosition, setSize = setSize)
+  
     __obj.asInstanceOf[XConnectorShape]
   }
 }

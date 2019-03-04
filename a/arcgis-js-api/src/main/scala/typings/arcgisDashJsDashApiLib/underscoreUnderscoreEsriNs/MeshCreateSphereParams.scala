@@ -44,10 +44,7 @@ object MeshCreateSphereParams {
     material: MeshCreateSphereParamsMaterial = null,
     size: scala.Double | MeshCreateSphereParamsSize = null
   ): MeshCreateSphereParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (densificationFactor != null) __obj.updateDynamic("densificationFactor")(densificationFactor.asInstanceOf[js.Any])
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (material != null) __obj.updateDynamic("material")(material)

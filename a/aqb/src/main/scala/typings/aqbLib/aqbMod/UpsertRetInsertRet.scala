@@ -16,9 +16,8 @@ object UpsertRetInsertRet {
     replace: js.Function1[/* updateOrReplaceExpr */ js.Any, UpsertRetInsertRetUpdateRet],
     update: js.Function1[js.Any, UpsertRetInsertRetUpdateRet]
   ): UpsertRetInsertRet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(replace = replace, update = update)
+  
     __obj.asInstanceOf[UpsertRetInsertRet]
   }
 }

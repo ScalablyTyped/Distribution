@@ -37,12 +37,8 @@ object FunctionDescription {
     Id: scala.Double,
     Name: java.lang.String
   ): FunctionDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Arguments")(Arguments)
-    __obj.updateDynamic("Category")(Category)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Category = Category, Description = Description, Id = Id, Name = Name)
+  
     __obj.asInstanceOf[FunctionDescription]
   }
 }

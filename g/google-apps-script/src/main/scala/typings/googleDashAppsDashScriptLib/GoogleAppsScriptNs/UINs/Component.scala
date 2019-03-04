@@ -13,9 +13,8 @@ trait Component extends js.Object {
 object Component {
   @scala.inline
   def apply(getId: js.Function0[java.lang.String], getType: js.Function0[java.lang.String]): Component = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(getId = getId, getType = getType)
+  
     __obj.asInstanceOf[Component]
   }
 }

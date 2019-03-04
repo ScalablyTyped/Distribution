@@ -43,13 +43,8 @@ object CertificatePrincipal {
     organizations: js.Array[java.lang.String],
     state: java.lang.String
   ): CertificatePrincipal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commonName")(commonName)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("organizationUnits")(organizationUnits)
-    __obj.updateDynamic("organizations")(organizations)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(commonName = commonName, country = country, locality = locality, organizationUnits = organizationUnits, organizations = organizations, state = state)
+  
     __obj.asInstanceOf[CertificatePrincipal]
   }
 }

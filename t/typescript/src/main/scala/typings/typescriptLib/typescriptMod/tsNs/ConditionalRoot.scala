@@ -34,13 +34,7 @@ object ConditionalRoot {
     instantiations: Map[Type] = null,
     outerTypeParameters: js.Array[TypeParameter] = null
   ): ConditionalRoot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkType")(checkType)
-    __obj.updateDynamic("extendsType")(extendsType)
-    __obj.updateDynamic("falseType")(falseType)
-    __obj.updateDynamic("isDistributive")(isDistributive)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("trueType")(trueType)
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, isDistributive = isDistributive, node = node, trueType = trueType)
     if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol)
     if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
     if (inferTypeParameters != null) __obj.updateDynamic("inferTypeParameters")(inferTypeParameters)

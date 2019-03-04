@@ -19,8 +19,8 @@ trait ASPxClientRibbonMinimizationStateEventArgs extends ASPxClientEventArgs {
 object ASPxClientRibbonMinimizationStateEventArgs {
   @scala.inline
   def apply(ribbonState: scala.Double): ASPxClientRibbonMinimizationStateEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ribbonState")(ribbonState)
+    val __obj = js.Dynamic.literal(ribbonState = ribbonState)
+  
     __obj.asInstanceOf[ASPxClientRibbonMinimizationStateEventArgs]
   }
 }

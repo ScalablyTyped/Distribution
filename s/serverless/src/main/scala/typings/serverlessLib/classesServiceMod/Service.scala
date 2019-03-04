@@ -38,20 +38,8 @@ object Service {
     update: js.Function1[js.Object, js.Object],
     validate: js.Function0[Service]
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("getAllEventsInFunction")(getAllEventsInFunction)
-    __obj.updateDynamic("getAllFunctions")(getAllFunctions)
-    __obj.updateDynamic("getAllFunctionsNames")(getAllFunctionsNames)
-    __obj.updateDynamic("getEventInFunction")(getEventInFunction)
-    __obj.updateDynamic("getFunction")(getFunction)
-    __obj.updateDynamic("getServiceName")(getServiceName)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("mergeResourceArrays")(mergeResourceArrays)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("setFunctionNames")(setFunctionNames)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(custom = custom, getAllEventsInFunction = getAllEventsInFunction, getAllFunctions = getAllFunctions, getAllFunctionsNames = getAllFunctionsNames, getEventInFunction = getEventInFunction, getFunction = getFunction, getServiceName = getServiceName, load = load, mergeResourceArrays = mergeResourceArrays, provider = provider, setFunctionNames = setFunctionNames, update = update, validate = validate)
+  
     __obj.asInstanceOf[Service]
   }
 }

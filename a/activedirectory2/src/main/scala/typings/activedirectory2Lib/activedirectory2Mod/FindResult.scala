@@ -14,10 +14,8 @@ trait FindResult extends js.Object {
 object FindResult {
   @scala.inline
   def apply(groups: js.Array[js.Object], other: js.Array[js.Object], users: js.Array[js.Object]): FindResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(groups = groups, other = other, users = users)
+  
     __obj.asInstanceOf[FindResult]
   }
 }

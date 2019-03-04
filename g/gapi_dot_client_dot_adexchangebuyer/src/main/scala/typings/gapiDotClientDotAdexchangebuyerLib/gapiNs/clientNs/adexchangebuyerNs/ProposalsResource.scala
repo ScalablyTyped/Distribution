@@ -48,13 +48,8 @@ object ProposalsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Proposal]
     ]
   ): ProposalsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("setupcomplete")(setupcomplete)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, search = search, setupcomplete = setupcomplete, update = update)
+  
     __obj.asInstanceOf[ProposalsResource]
   }
 }

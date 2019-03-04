@@ -68,7 +68,7 @@ object VirtualKey extends js.Object {
     extends winrtLib.WindowsNs.SystemNs.VirtualKey
   
   @js.native
-  sealed trait `delete_`
+  sealed trait delete_
     extends winrtLib.WindowsNs.SystemNs.VirtualKey
   
   @js.native
@@ -549,7 +549,7 @@ object VirtualKey extends js.Object {
   val convert: convert with java.lang.String = js.native
   val d: d with java.lang.String = js.native
   val decimal: decimal with java.lang.String = js.native
-  val `delete_`: `delete_` with java.lang.String = js.native
+  val delete_ : delete_ with java.lang.String = js.native
   val divide: divide with java.lang.String = js.native
   val down: down with java.lang.String = js.native
   val e: e with java.lang.String = js.native

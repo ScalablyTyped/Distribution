@@ -14,10 +14,8 @@ trait ConsumerSeekOptions extends js.Object {
 object ConsumerSeekOptions {
   @scala.inline
   def apply(offset: scala.Double, partition: scala.Double, topic: java.lang.String): ConsumerSeekOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(offset = offset, partition = partition, topic = topic)
+  
     __obj.asInstanceOf[ConsumerSeekOptions]
   }
 }

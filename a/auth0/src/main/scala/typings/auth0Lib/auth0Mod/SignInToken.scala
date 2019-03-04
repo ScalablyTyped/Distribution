@@ -20,9 +20,7 @@ object SignInToken {
     id_token: java.lang.String = null,
     token_type: java.lang.String = null
   ): SignInToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("expiry")(expiry)
+    val __obj = js.Dynamic.literal(access_token = access_token, expiry = expiry)
     if (id_token != null) __obj.updateDynamic("id_token")(id_token)
     if (token_type != null) __obj.updateDynamic("token_type")(token_type)
     __obj.asInstanceOf[SignInToken]

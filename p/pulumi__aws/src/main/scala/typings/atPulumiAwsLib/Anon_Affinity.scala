@@ -24,13 +24,8 @@ object Anon_Affinity {
     spreadDomain: java.lang.String,
     tenancy: java.lang.String
   ): Anon_Affinity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("affinity")(affinity)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("groupName")(groupName)
-    __obj.updateDynamic("hostId")(hostId)
-    __obj.updateDynamic("spreadDomain")(spreadDomain)
-    __obj.updateDynamic("tenancy")(tenancy)
+    val __obj = js.Dynamic.literal(affinity = affinity, availabilityZone = availabilityZone, groupName = groupName, hostId = hostId, spreadDomain = spreadDomain, tenancy = tenancy)
+  
     __obj.asInstanceOf[Anon_Affinity]
   }
 }

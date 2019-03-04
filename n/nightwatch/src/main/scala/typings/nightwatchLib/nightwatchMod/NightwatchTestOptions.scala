@@ -34,27 +34,8 @@ object NightwatchTestOptions {
     use_xpath: scala.Boolean,
     username: java.lang.String
   ): NightwatchTestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_key")(access_key)
-    __obj.updateDynamic("cli_args")(cli_args)
-    __obj.updateDynamic("desiredCapabilities")(desiredCapabilities)
-    __obj.updateDynamic("disable_colors")(disable_colors)
-    __obj.updateDynamic("end_session_on_fail")(end_session_on_fail)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("globals")(globals)
-    __obj.updateDynamic("launch_url")(launch_url)
-    __obj.updateDynamic("log_screenshot_data")(log_screenshot_data)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("proxy")(proxy)
-    __obj.updateDynamic("screenshots")(screenshots)
-    __obj.updateDynamic("screenshotsPath")(screenshotsPath)
-    __obj.updateDynamic("selenium_host")(selenium_host)
-    __obj.updateDynamic("selenium_port")(selenium_port)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("skip_testcases_on_fail")(skip_testcases_on_fail)
-    __obj.updateDynamic("use_xpath")(use_xpath)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(access_key = access_key, cli_args = cli_args, desiredCapabilities = desiredCapabilities, disable_colors = disable_colors, end_session_on_fail = end_session_on_fail, exclude = exclude, filter = filter, globals = globals, launch_url = launch_url, log_screenshot_data = log_screenshot_data, output = output, proxy = proxy, screenshots = screenshots, screenshotsPath = screenshotsPath, selenium_host = selenium_host, selenium_port = selenium_port, silent = silent, skip_testcases_on_fail = skip_testcases_on_fail, use_xpath = use_xpath, username = username)
+  
     __obj.asInstanceOf[NightwatchTestOptions]
   }
 }

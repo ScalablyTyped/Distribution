@@ -22,10 +22,9 @@ object Anon_AddedCount {
     removed: js.Array[_],
     `type`: polymerDashTsLib.polymerDashTsLibStrings.splice
   ): Anon_AddedCount = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("addedCount")(addedCount)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, removed = removed)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AddedCount]
   }
 }

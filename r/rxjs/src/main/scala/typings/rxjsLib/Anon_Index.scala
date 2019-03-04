@@ -22,12 +22,8 @@ object Anon_Index {
     subscriber: rxjsLib.internalSubscriberMod.Subscriber[js.Tuple2[java.lang.String, T]],
     subscription: rxjsLib.internalSubscriptionMod.Subscription
   ): Anon_Index[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("obj")(obj)
-    __obj.updateDynamic("subscriber")(subscriber)
-    __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(index = index, keys = keys, obj = obj, subscriber = subscriber, subscription = subscription)
+  
     __obj.asInstanceOf[Anon_Index[T]]
   }
 }

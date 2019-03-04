@@ -13,9 +13,8 @@ trait Anon_EndNode extends js.Object {
 object Anon_EndNode {
   @scala.inline
   def apply(endNode: ckeditorLib.CKEDITORNs.domNs.node, startNode: ckeditorLib.CKEDITORNs.domNs.node): Anon_EndNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endNode")(endNode)
-    __obj.updateDynamic("startNode")(startNode)
+    val __obj = js.Dynamic.literal(endNode = endNode, startNode = startNode)
+  
     __obj.asInstanceOf[Anon_EndNode]
   }
 }

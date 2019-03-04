@@ -12,8 +12,8 @@ trait TreeTablePaste extends js.Object {
 object TreeTablePaste {
   @scala.inline
   def apply(insert: js.Function1[js.Array[_], scala.Unit]): TreeTablePaste = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[TreeTablePaste]
   }
 }

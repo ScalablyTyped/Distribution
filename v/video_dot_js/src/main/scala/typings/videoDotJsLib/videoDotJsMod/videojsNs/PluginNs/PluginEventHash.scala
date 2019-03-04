@@ -29,10 +29,8 @@ object PluginEventHash {
     name: java.lang.String,
     plugin: java.lang.String
   ): PluginEventHash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("plugin")(plugin)
+    val __obj = js.Dynamic.literal(instance = instance, name = name, plugin = plugin)
+  
     __obj.asInstanceOf[PluginEventHash]
   }
 }

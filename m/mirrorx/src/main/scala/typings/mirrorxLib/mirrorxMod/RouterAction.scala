@@ -16,8 +16,8 @@ object RouterAction {
     payload: LocationActionPayload,
     `type`: mirrorxLib.mirrorxLibStrings.`@@router/CALL_HISTORY_METHOD`
   ): RouterAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RouterAction]
   }
 }

@@ -39,11 +39,8 @@ object ASPxClientFileManagerErrorEventArgs {
     errorText: java.lang.String,
     showAlert: scala.Boolean
   ): ASPxClientFileManagerErrorEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commandName")(commandName)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("showAlert")(showAlert)
+    val __obj = js.Dynamic.literal(commandName = commandName, errorCode = errorCode, errorText = errorText, showAlert = showAlert)
+  
     __obj.asInstanceOf[ASPxClientFileManagerErrorEventArgs]
   }
 }

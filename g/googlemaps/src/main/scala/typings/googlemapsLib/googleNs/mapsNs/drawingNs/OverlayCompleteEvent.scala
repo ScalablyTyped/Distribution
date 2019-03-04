@@ -18,8 +18,8 @@ object OverlayCompleteEvent {
     overlay: googlemapsLib.googleNs.mapsNs.Marker | googlemapsLib.googleNs.mapsNs.Polygon | googlemapsLib.googleNs.mapsNs.Polyline | googlemapsLib.googleNs.mapsNs.Rectangle | googlemapsLib.googleNs.mapsNs.Circle,
     `type`: OverlayType
   ): OverlayCompleteEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OverlayCompleteEvent]
   }
 }

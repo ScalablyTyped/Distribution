@@ -20,8 +20,7 @@ object Anon_CommentsId {
     init: astDashTypesLib.genKindsMod.ExpressionKind = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (init != null) __obj.updateDynamic("init")(init)
     if (loc != null) __obj.updateDynamic("loc")(loc)

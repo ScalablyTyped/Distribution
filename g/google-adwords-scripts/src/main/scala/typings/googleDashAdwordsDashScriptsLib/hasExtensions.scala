@@ -40,21 +40,8 @@ object hasExtensions {
     removeSitelink: js.Function1[Sitelink, scala.Unit],
     removeSnippet: js.Function1[Snippet, scala.Unit]
   ): hasExtensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCallout")(addCallout)
-    __obj.updateDynamic("addMessage")(addMessage)
-    __obj.updateDynamic("addMobileApp")(addMobileApp)
-    __obj.updateDynamic("addPhoneNumber")(addPhoneNumber)
-    __obj.updateDynamic("addReview")(addReview)
-    __obj.updateDynamic("addSitelink")(addSitelink)
-    __obj.updateDynamic("addSnippet")(addSnippet)
-    __obj.updateDynamic("removeCallout")(removeCallout)
-    __obj.updateDynamic("removeMessage")(removeMessage)
-    __obj.updateDynamic("removeMobileApp")(removeMobileApp)
-    __obj.updateDynamic("removePhoneNumber")(removePhoneNumber)
-    __obj.updateDynamic("removeReview")(removeReview)
-    __obj.updateDynamic("removeSitelink")(removeSitelink)
-    __obj.updateDynamic("removeSnippet")(removeSnippet)
+    val __obj = js.Dynamic.literal(addCallout = addCallout, addMessage = addMessage, addMobileApp = addMobileApp, addPhoneNumber = addPhoneNumber, addReview = addReview, addSitelink = addSitelink, addSnippet = addSnippet, removeCallout = removeCallout, removeMessage = removeMessage, removeMobileApp = removeMobileApp, removePhoneNumber = removePhoneNumber, removeReview = removeReview, removeSitelink = removeSitelink, removeSnippet = removeSnippet)
+  
     __obj.asInstanceOf[hasExtensions]
   }
 }

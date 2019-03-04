@@ -34,11 +34,7 @@ object TimelineItem {
     itemProps: js.Object = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null
   ): TimelineItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end_time")(end_time)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("start_time")(start_time)
+    val __obj = js.Dynamic.literal(end_time = end_time, group = group, id = id, start_time = start_time)
     if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup)
     if (!js.isUndefined(canMove)) __obj.updateDynamic("canMove")(canMove)
     if (canResize != null) __obj.updateDynamic("canResize")(canResize.asInstanceOf[js.Any])

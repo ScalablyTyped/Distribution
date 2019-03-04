@@ -21,7 +21,7 @@ object FileManager extends js.Object {
     * @param binary The class type to have access to the static properties.
     * @returns If the binary is available for the operating system.
     */
-  def `checkOS_`(osType: java.lang.String, binary: webdriverDashManagerLib.Anon_OptalternativeCdn): scala.Boolean = js.native
+  def checkOS_(osType: java.lang.String, binary: webdriverDashManagerLib.Anon_OptalternativeCdn): scala.Boolean = js.native
   /**
     * For the operating system, create a list that includes the binaries
     * for selenium standalone, chrome, and internet explorer.
@@ -29,8 +29,8 @@ object FileManager extends js.Object {
     * @param alternateCDN URL of the alternative CDN to be used instead of the default ones.
     * @returns A binary map that are available for the operating system.
     */
-  def `compileBinaries_`(osType: java.lang.String): webdriverDashManagerLib.builtLibBinariesBinaryMod.BinaryMap[webdriverDashManagerLib.builtLibBinariesMod.Binary] = js.native
-  def `compileBinaries_`(osType: java.lang.String, alternateCDN: java.lang.String): webdriverDashManagerLib.builtLibBinariesBinaryMod.BinaryMap[webdriverDashManagerLib.builtLibBinariesMod.Binary] = js.native
+  def compileBinaries_(osType: java.lang.String): webdriverDashManagerLib.builtLibBinariesBinaryMod.BinaryMap[webdriverDashManagerLib.builtLibBinariesMod.Binary] = js.native
+  def compileBinaries_(osType: java.lang.String, alternateCDN: java.lang.String): webdriverDashManagerLib.builtLibBinariesBinaryMod.BinaryMap[webdriverDashManagerLib.builtLibBinariesMod.Binary] = js.native
   /**
     * Try to download the binary version.
     * @param binary The binary of interest.
@@ -56,7 +56,7 @@ object FileManager extends js.Object {
     * @param existingFiles A list of existing files.
     * @returns The downloaded binary with all the versions found.
     */
-  def `downloadedVersions_`[T /* <: webdriverDashManagerLib.builtLibBinariesMod.Binary */](
+  def downloadedVersions_[T /* <: webdriverDashManagerLib.builtLibBinariesMod.Binary */](
     binary: T,
     osType: java.lang.String,
     arch: java.lang.String,

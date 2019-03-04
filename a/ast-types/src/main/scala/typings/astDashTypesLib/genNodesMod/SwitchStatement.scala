@@ -25,10 +25,8 @@ object SwitchStatement {
     lexical: scala.Boolean,
     `type`: astDashTypesLib.astDashTypesLibStrings.SwitchStatement
   ): SwitchStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cases")(cases)
-    __obj.updateDynamic("discriminant")(discriminant)
-    __obj.updateDynamic("lexical")(lexical)
+    val __obj = js.Dynamic.literal(cases = cases, discriminant = discriminant, lexical = lexical)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SwitchStatement]
   }
 }

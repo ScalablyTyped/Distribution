@@ -28,12 +28,8 @@ object RasterBandOverviews {
       js.Array[js.Any]
     ]
   ): RasterBandOverviews = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getBySampleCount")(getBySampleCount)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(count = count, forEach = forEach, get = get, getBySampleCount = getBySampleCount, map = map)
+  
     __obj.asInstanceOf[RasterBandOverviews]
   }
 }

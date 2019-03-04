@@ -14,10 +14,8 @@ trait QuitEvent extends js.Object {
 object QuitEvent {
   @scala.inline
   def apply(hostmask: java.lang.String, message: java.lang.String, nick: java.lang.String): QuitEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostmask")(hostmask)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("nick")(nick)
+    val __obj = js.Dynamic.literal(hostmask = hostmask, message = message, nick = nick)
+  
     __obj.asInstanceOf[QuitEvent]
   }
 }

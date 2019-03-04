@@ -12,8 +12,8 @@ trait Static extends js.Object {
 object Static {
   @scala.inline
   def apply(Tail: TailConstructor): Static = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Tail")(Tail)
+    val __obj = js.Dynamic.literal(Tail = Tail)
+  
     __obj.asInstanceOf[Static]
   }
 }

@@ -14,10 +14,8 @@ trait ServerStateFormat extends js.Object {
 object ServerStateFormat {
   @scala.inline
   def apply(name: java.lang.String, options: ServerStateCookieOptions, value: java.lang.String): ServerStateFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, options = options, value = value)
+  
     __obj.asInstanceOf[ServerStateFormat]
   }
 }

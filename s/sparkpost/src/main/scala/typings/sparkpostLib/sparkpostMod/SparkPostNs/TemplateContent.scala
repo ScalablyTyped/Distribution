@@ -34,11 +34,7 @@ object TemplateContent {
     headers: js.Any = null,
     reply_to: java.lang.String = null
   ): TemplateContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], html = html, subject = subject, text = text)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
     __obj.asInstanceOf[TemplateContent]

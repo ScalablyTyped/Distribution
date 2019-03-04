@@ -16,9 +16,8 @@ object Anon_Name {
     name: typescriptLib.typescriptMod.tsNs.Identifier,
     parent: typescriptLib.typescriptMod.tsNs.ConstructorDeclaration
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(name = name, parent = parent)
+  
     __obj.asInstanceOf[Anon_Name]
   }
 }

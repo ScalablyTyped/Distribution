@@ -62,26 +62,8 @@ object XInterfaceAttributeTypeDescription2 {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInterfaceAttributeTypeDescription2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetExceptions")(GetExceptions)
-    __obj.updateDynamic("MemberName")(MemberName)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("SetExceptions")(SetExceptions)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGetExceptions")(getGetExceptions)
-    __obj.updateDynamic("getMemberName")(getMemberName)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getSetExceptions")(getSetExceptions)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("isBound")(isBound)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(GetExceptions = GetExceptions, MemberName = MemberName, Name = Name, Position = Position, SetExceptions = SetExceptions, Type = Type, TypeClass = TypeClass, acquire = acquire, getGetExceptions = getGetExceptions, getMemberName = getMemberName, getName = getName, getPosition = getPosition, getSetExceptions = getSetExceptions, getType = getType, getTypeClass = getTypeClass, isBound = isBound, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription2]
   }
 }

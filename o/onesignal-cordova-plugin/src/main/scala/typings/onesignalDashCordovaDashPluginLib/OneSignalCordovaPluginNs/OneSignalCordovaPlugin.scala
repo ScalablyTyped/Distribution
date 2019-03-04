@@ -64,27 +64,8 @@ object OneSignalCordovaPlugin {
     startInit: js.Function1[java.lang.String, OneSignalBuilder],
     syncHashedEmail: js.Function1[java.lang.String, scala.Unit]
   ): OneSignalCordovaPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPermissionObserver")(addPermissionObserver)
-    __obj.updateDynamic("addSubscriptionObserver")(addSubscriptionObserver)
-    __obj.updateDynamic("clearOneSignalNotifications")(clearOneSignalNotifications)
-    __obj.updateDynamic("deleteTag")(deleteTag)
-    __obj.updateDynamic("deleteTags")(deleteTags)
-    __obj.updateDynamic("enableSound")(enableSound)
-    __obj.updateDynamic("enableVibrate")(enableVibrate)
-    __obj.updateDynamic("getIds")(getIds)
-    __obj.updateDynamic("getPermissionSubscriptionState")(getPermissionSubscriptionState)
-    __obj.updateDynamic("getTags")(getTags)
-    __obj.updateDynamic("postNotification")(postNotification)
-    __obj.updateDynamic("promptForPushNotificationsWithUserResponse")(promptForPushNotificationsWithUserResponse)
-    __obj.updateDynamic("promptLocation")(promptLocation)
-    __obj.updateDynamic("registerForPushNotifications")(registerForPushNotifications)
-    __obj.updateDynamic("sendTag")(sendTag)
-    __obj.updateDynamic("sendTags")(sendTags)
-    __obj.updateDynamic("setLogLevel")(setLogLevel)
-    __obj.updateDynamic("setSubscription")(setSubscription)
-    __obj.updateDynamic("startInit")(startInit)
-    __obj.updateDynamic("syncHashedEmail")(syncHashedEmail)
+    val __obj = js.Dynamic.literal(addPermissionObserver = addPermissionObserver, addSubscriptionObserver = addSubscriptionObserver, clearOneSignalNotifications = clearOneSignalNotifications, deleteTag = deleteTag, deleteTags = deleteTags, enableSound = enableSound, enableVibrate = enableVibrate, getIds = getIds, getPermissionSubscriptionState = getPermissionSubscriptionState, getTags = getTags, postNotification = postNotification, promptForPushNotificationsWithUserResponse = promptForPushNotificationsWithUserResponse, promptLocation = promptLocation, registerForPushNotifications = registerForPushNotifications, sendTag = sendTag, sendTags = sendTags, setLogLevel = setLogLevel, setSubscription = setSubscription, startInit = startInit, syncHashedEmail = syncHashedEmail)
+  
     __obj.asInstanceOf[OneSignalCordovaPlugin]
   }
 }

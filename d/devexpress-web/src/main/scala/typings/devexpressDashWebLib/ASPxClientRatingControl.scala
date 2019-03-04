@@ -73,30 +73,8 @@ object ASPxClientRatingControl {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): ASPxClientRatingControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetReadOnly")(GetReadOnly)
-    __obj.updateDynamic("GetTitle")(GetTitle)
-    __obj.updateDynamic("GetValue")(GetValue)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("ItemClick")(ItemClick)
-    __obj.updateDynamic("ItemMouseOut")(ItemMouseOut)
-    __obj.updateDynamic("ItemMouseOver")(ItemMouseOver)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetReadOnly")(SetReadOnly)
-    __obj.updateDynamic("SetValue")(SetValue)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetReadOnly = GetReadOnly, GetTitle = GetTitle, GetValue = GetValue, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, ItemClick = ItemClick, ItemMouseOut = ItemMouseOut, ItemMouseOver = ItemMouseOver, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetReadOnly = SetReadOnly, SetValue = SetValue, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[ASPxClientRatingControl]
   }
 }

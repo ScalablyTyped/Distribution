@@ -38,8 +38,7 @@ object Config {
     protocol: splunkDashLoggingLib.splunkDashLoggingLibStrings.http | splunkDashLoggingLib.splunkDashLoggingLibStrings.https = null,
     url: java.lang.String = null
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
     if (batchInterval != null) __obj.updateDynamic("batchInterval")(batchInterval.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (level != null) __obj.updateDynamic("level")(level)

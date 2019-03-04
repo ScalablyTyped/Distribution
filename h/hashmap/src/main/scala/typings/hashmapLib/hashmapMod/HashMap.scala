@@ -109,20 +109,8 @@ object HashMap {
     set: js.Function2[TKey, TValue, HashMap[TKey, TValue]],
     values: js.Function0[js.Array[TValue]]
   ): HashMap[TKey, TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("multi")(multi)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(clear = clear, clone = clone, copy = copy, count = count, forEach = forEach, get = get, has = has, keys = keys, multi = multi, remove = remove, search = search, set = set, values = values)
+  
     __obj.asInstanceOf[HashMap[TKey, TValue]]
   }
 }

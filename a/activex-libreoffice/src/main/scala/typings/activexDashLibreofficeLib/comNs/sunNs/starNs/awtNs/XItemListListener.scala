@@ -41,16 +41,8 @@ object XItemListListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XItemListListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("allItemsRemoved")(allItemsRemoved)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("itemListChanged")(itemListChanged)
-    __obj.updateDynamic("listItemInserted")(listItemInserted)
-    __obj.updateDynamic("listItemModified")(listItemModified)
-    __obj.updateDynamic("listItemRemoved")(listItemRemoved)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, allItemsRemoved = allItemsRemoved, disposing = disposing, itemListChanged = itemListChanged, listItemInserted = listItemInserted, listItemModified = listItemModified, listItemRemoved = listItemRemoved, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XItemListListener]
   }
 }

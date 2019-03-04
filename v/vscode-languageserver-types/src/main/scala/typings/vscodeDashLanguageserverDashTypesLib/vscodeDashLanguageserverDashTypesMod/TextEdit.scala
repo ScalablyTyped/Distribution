@@ -21,9 +21,8 @@ trait TextEdit extends js.Object {
 object TextEdit {
   @scala.inline
   def apply(newText: java.lang.String, range: Range): TextEdit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newText")(newText)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(newText = newText, range = range)
+  
     __obj.asInstanceOf[TextEdit]
   }
 }

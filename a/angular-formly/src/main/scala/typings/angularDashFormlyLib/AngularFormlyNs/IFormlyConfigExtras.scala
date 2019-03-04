@@ -30,16 +30,8 @@ object IFormlyConfigExtras {
     ngModelAttrsManipulatorPreferUnbound: scala.Boolean,
     removeChromeAutoComplete: scala.Boolean
   ): IFormlyConfigExtras = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiCheckInstance")(apiCheckInstance)
-    __obj.updateDynamic("defaultHideDirective")(defaultHideDirective)
-    __obj.updateDynamic("disableNgModelAttrsManipulator")(disableNgModelAttrsManipulator)
-    __obj.updateDynamic("errorExistsAndShouldBeVisibleExpression")(errorExistsAndShouldBeVisibleExpression)
-    __obj.updateDynamic("explicitAsync")(explicitAsync)
-    __obj.updateDynamic("fieldTransform")(fieldTransform.asInstanceOf[js.Any])
-    __obj.updateDynamic("getFieldId")(getFieldId)
-    __obj.updateDynamic("ngModelAttrsManipulatorPreferUnbound")(ngModelAttrsManipulatorPreferUnbound)
-    __obj.updateDynamic("removeChromeAutoComplete")(removeChromeAutoComplete)
+    val __obj = js.Dynamic.literal(apiCheckInstance = apiCheckInstance, defaultHideDirective = defaultHideDirective, disableNgModelAttrsManipulator = disableNgModelAttrsManipulator, errorExistsAndShouldBeVisibleExpression = errorExistsAndShouldBeVisibleExpression, explicitAsync = explicitAsync, fieldTransform = fieldTransform.asInstanceOf[js.Any], getFieldId = getFieldId, ngModelAttrsManipulatorPreferUnbound = ngModelAttrsManipulatorPreferUnbound, removeChromeAutoComplete = removeChromeAutoComplete)
+  
     __obj.asInstanceOf[IFormlyConfigExtras]
   }
 }

@@ -24,13 +24,8 @@ object Anon_BOTTOMCENTER {
     TOP_LEFT: reactDashToastifyLib.reactDashToastifyLibStrings.`top-left`,
     TOP_RIGHT: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right`
   ): Anon_BOTTOMCENTER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM_CENTER")(BOTTOM_CENTER)
-    __obj.updateDynamic("BOTTOM_LEFT")(BOTTOM_LEFT)
-    __obj.updateDynamic("BOTTOM_RIGHT")(BOTTOM_RIGHT)
-    __obj.updateDynamic("TOP_CENTER")(TOP_CENTER)
-    __obj.updateDynamic("TOP_LEFT")(TOP_LEFT)
-    __obj.updateDynamic("TOP_RIGHT")(TOP_RIGHT)
+    val __obj = js.Dynamic.literal(BOTTOM_CENTER = BOTTOM_CENTER, BOTTOM_LEFT = BOTTOM_LEFT, BOTTOM_RIGHT = BOTTOM_RIGHT, TOP_CENTER = TOP_CENTER, TOP_LEFT = TOP_LEFT, TOP_RIGHT = TOP_RIGHT)
+  
     __obj.asInstanceOf[Anon_BOTTOMCENTER]
   }
 }

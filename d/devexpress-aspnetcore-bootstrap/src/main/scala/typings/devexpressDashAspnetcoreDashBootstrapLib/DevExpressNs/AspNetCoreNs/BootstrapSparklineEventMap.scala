@@ -33,17 +33,8 @@ object BootstrapSparklineEventMap {
     tooltipHidden: BootstrapChartEventArgsBase,
     tooltipShown: BootstrapChartEventArgsBase
   ): BootstrapSparklineEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("drawn")(drawn)
-    __obj.updateDynamic("exported")(exported)
-    __obj.updateDynamic("exporting")(exporting)
-    __obj.updateDynamic("fileSaving")(fileSaving)
-    __obj.updateDynamic("incidentOccurred")(incidentOccurred)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("optionChanged")(optionChanged)
-    __obj.updateDynamic("tooltipHidden")(tooltipHidden)
-    __obj.updateDynamic("tooltipShown")(tooltipShown)
+    val __obj = js.Dynamic.literal(disposing = disposing, drawn = drawn, exported = exported, exporting = exporting, fileSaving = fileSaving, incidentOccurred = incidentOccurred, init = init, optionChanged = optionChanged, tooltipHidden = tooltipHidden, tooltipShown = tooltipShown)
+  
     __obj.asInstanceOf[BootstrapSparklineEventMap]
   }
 }

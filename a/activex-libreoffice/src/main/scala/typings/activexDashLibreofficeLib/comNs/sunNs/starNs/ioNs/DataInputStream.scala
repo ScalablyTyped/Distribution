@@ -54,33 +54,8 @@ object DataInputStream {
     setSuccessor: js.Function1[XConnectable, scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): DataInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("Predecessor")(Predecessor)
-    __obj.updateDynamic("Successor")(Successor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getPredecessor")(getPredecessor)
-    __obj.updateDynamic("getSuccessor")(getSuccessor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBoolean")(readBoolean)
-    __obj.updateDynamic("readByte")(readByte)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readChar")(readChar)
-    __obj.updateDynamic("readDouble")(readDouble)
-    __obj.updateDynamic("readFloat")(readFloat)
-    __obj.updateDynamic("readHyper")(readHyper)
-    __obj.updateDynamic("readLong")(readLong)
-    __obj.updateDynamic("readShort")(readShort)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("readUTF")(readUTF)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setInputStream")(setInputStream)
-    __obj.updateDynamic("setPredecessor")(setPredecessor)
-    __obj.updateDynamic("setSuccessor")(setSuccessor)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Predecessor = Predecessor, Successor = Successor, acquire = acquire, available = available, closeInput = closeInput, getInputStream = getInputStream, getPredecessor = getPredecessor, getSuccessor = getSuccessor, queryInterface = queryInterface, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readChar = readChar, readDouble = readDouble, readFloat = readFloat, readHyper = readHyper, readLong = readLong, readShort = readShort, readSomeBytes = readSomeBytes, readUTF = readUTF, release = release, setInputStream = setInputStream, setPredecessor = setPredecessor, setSuccessor = setSuccessor, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[DataInputStream]
   }
 }

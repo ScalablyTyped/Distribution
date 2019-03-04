@@ -18,10 +18,8 @@ object CheckboxValidationBuilder {
     requireSelectAtMost: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CheckboxValidationBuilder],
     requireSelectExactly: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CheckboxValidationBuilder]
   ): CheckboxValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireSelectAtLeast")(requireSelectAtLeast)
-    __obj.updateDynamic("requireSelectAtMost")(requireSelectAtMost)
-    __obj.updateDynamic("requireSelectExactly")(requireSelectExactly)
+    val __obj = js.Dynamic.literal(requireSelectAtLeast = requireSelectAtLeast, requireSelectAtMost = requireSelectAtMost, requireSelectExactly = requireSelectExactly)
+  
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }
 }

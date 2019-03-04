@@ -12,8 +12,8 @@ trait Anon_PollingInterval extends js.Object {
 object Anon_PollingInterval {
   @scala.inline
   def apply(pollingInterval: scala.Double): Anon_PollingInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pollingInterval")(pollingInterval)
+    val __obj = js.Dynamic.literal(pollingInterval = pollingInterval)
+  
     __obj.asInstanceOf[Anon_PollingInterval]
   }
 }

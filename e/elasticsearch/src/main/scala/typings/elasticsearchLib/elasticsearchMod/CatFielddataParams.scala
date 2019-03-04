@@ -28,8 +28,7 @@ object CatFielddataParams {
     requestTimeout: scala.Int | scala.Double = null,
     v: js.UndefOr[scala.Boolean] = js.undefined
   ): CatFielddataParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
     if (body != null) __obj.updateDynamic("body")(body)
     if (bytes != null) __obj.updateDynamic("bytes")(bytes)
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])

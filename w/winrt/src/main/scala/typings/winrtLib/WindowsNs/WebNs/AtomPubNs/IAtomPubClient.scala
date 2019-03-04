@@ -126,25 +126,8 @@ object IAtomPubClient {
       winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
     ]
   ): IAtomPubClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bypassCacheOnRetrieve")(bypassCacheOnRetrieve)
-    __obj.updateDynamic("cancelAsyncOperations")(cancelAsyncOperations)
-    __obj.updateDynamic("createMediaResourceAsync")(createMediaResourceAsync)
-    __obj.updateDynamic("createResourceAsync")(createResourceAsync)
-    __obj.updateDynamic("deleteResourceAsync")(deleteResourceAsync)
-    __obj.updateDynamic("deleteResourceItemAsync")(deleteResourceItemAsync)
-    __obj.updateDynamic("maxResponseBufferSize")(maxResponseBufferSize)
-    __obj.updateDynamic("proxyCredential")(proxyCredential)
-    __obj.updateDynamic("retrieveFeedAsync")(retrieveFeedAsync)
-    __obj.updateDynamic("retrieveMediaResourceAsync")(retrieveMediaResourceAsync)
-    __obj.updateDynamic("retrieveResourceAsync")(retrieveResourceAsync)
-    __obj.updateDynamic("retrieveServiceDocumentAsync")(retrieveServiceDocumentAsync)
-    __obj.updateDynamic("serverCredential")(serverCredential)
-    __obj.updateDynamic("setRequestHeader")(setRequestHeader)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("updateMediaResourceAsync")(updateMediaResourceAsync)
-    __obj.updateDynamic("updateResourceAsync")(updateResourceAsync)
-    __obj.updateDynamic("updateResourceItemAsync")(updateResourceItemAsync)
+    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve, cancelAsyncOperations = cancelAsyncOperations, createMediaResourceAsync = createMediaResourceAsync, createResourceAsync = createResourceAsync, deleteResourceAsync = deleteResourceAsync, deleteResourceItemAsync = deleteResourceItemAsync, maxResponseBufferSize = maxResponseBufferSize, proxyCredential = proxyCredential, retrieveFeedAsync = retrieveFeedAsync, retrieveMediaResourceAsync = retrieveMediaResourceAsync, retrieveResourceAsync = retrieveResourceAsync, retrieveServiceDocumentAsync = retrieveServiceDocumentAsync, serverCredential = serverCredential, setRequestHeader = setRequestHeader, timeout = timeout, updateMediaResourceAsync = updateMediaResourceAsync, updateResourceAsync = updateResourceAsync, updateResourceItemAsync = updateResourceItemAsync)
+  
     __obj.asInstanceOf[IAtomPubClient]
   }
 }

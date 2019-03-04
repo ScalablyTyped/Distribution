@@ -27,10 +27,8 @@ object Anon_GetBit {
     ],
     toggleBit: js.Function2[scala.Double, scala.Double, scala.Double]
   ): Anon_GetBit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBit")(getBit)
-    __obj.updateDynamic("setBit")(setBit)
-    __obj.updateDynamic("toggleBit")(toggleBit)
+    val __obj = js.Dynamic.literal(getBit = getBit, setBit = setBit, toggleBit = toggleBit)
+  
     __obj.asInstanceOf[Anon_GetBit]
   }
 }

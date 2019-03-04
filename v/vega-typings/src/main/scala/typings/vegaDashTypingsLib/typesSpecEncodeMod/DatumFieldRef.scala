@@ -12,8 +12,8 @@ trait DatumFieldRef extends _Field {
 object DatumFieldRef {
   @scala.inline
   def apply(datum: Field): DatumFieldRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datum")(datum.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(datum = datum.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DatumFieldRef]
   }
 }

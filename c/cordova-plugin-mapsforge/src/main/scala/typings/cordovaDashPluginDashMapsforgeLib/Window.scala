@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(mapsforge: MapsforgePlugin): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapsforge")(mapsforge)
+    val __obj = js.Dynamic.literal(mapsforge = mapsforge)
+  
     __obj.asInstanceOf[Window]
   }
 }

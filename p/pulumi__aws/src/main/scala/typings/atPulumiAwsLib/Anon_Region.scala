@@ -18,9 +18,7 @@ object Anon_Region {
     tableName: java.lang.String,
     useCallerCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Region = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(region = region, tableName = tableName)
     if (!js.isUndefined(useCallerCredentials)) __obj.updateDynamic("useCallerCredentials")(useCallerCredentials)
     __obj.asInstanceOf[Anon_Region]
   }

@@ -18,10 +18,8 @@ object IPropertyValuesWithIconCluesOfMultipleObjects {
     Count: scala.Double,
     Item: js.Function1[scala.Double, IPropertyValuesWithIconClues]
   ): IPropertyValuesWithIconCluesOfMultipleObjects = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
+    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  
     __obj.asInstanceOf[IPropertyValuesWithIconCluesOfMultipleObjects]
   }
 }

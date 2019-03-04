@@ -12,7 +12,7 @@ class UniqueLock[Mutex /* <: IMutex */] protected () extends js.Object {
   /**
     * @hidden
     */
-  var `mutex_`: js.Any = js.native
+  var mutex_ : js.Any = js.native
   var try_lock_for: js.UndefOr[
     js.Function2[/* ms */ scala.Double, /* closure */ Closure, js.Promise[scala.Boolean]]
   ] = js.native

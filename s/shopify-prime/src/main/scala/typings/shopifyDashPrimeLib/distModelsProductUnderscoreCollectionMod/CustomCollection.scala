@@ -53,8 +53,7 @@ object CustomCollection {
     title: java.lang.String = null,
     updated_at: java.lang.String = null
   ): CustomCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collects")(collects)
+    val __obj = js.Dynamic.literal(collects = collects)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (body_html != null) __obj.updateDynamic("body_html")(body_html)
     if (handle != null) __obj.updateDynamic("handle")(handle)

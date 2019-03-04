@@ -20,8 +20,7 @@ object Anon_CustomCnameEnabled {
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     s3BucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_CustomCnameEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expirationInDays")(expirationInDays.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expirationInDays = expirationInDays.asInstanceOf[js.Any])
     if (customCname != null) __obj.updateDynamic("customCname")(customCname.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])

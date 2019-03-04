@@ -18,9 +18,7 @@ object ReadJsonOptions {
     reviver: js.Function2[js.Any, js.Any, js.Any],
     flag: java.lang.String = null
   ): ReadJsonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("reviver")(reviver)
+    val __obj = js.Dynamic.literal(encoding = encoding, reviver = reviver)
     if (flag != null) __obj.updateDynamic("flag")(flag)
     __obj.asInstanceOf[ReadJsonOptions]
   }

@@ -20,11 +20,8 @@ object Post {
     sentences: java.lang.String,
     words: java.lang.String
   ): Post = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paragraph")(paragraph)
-    __obj.updateDynamic("sentence")(sentence)
-    __obj.updateDynamic("sentences")(sentences)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(paragraph = paragraph, sentence = sentence, sentences = sentences, words = words)
+  
     __obj.asInstanceOf[Post]
   }
 }

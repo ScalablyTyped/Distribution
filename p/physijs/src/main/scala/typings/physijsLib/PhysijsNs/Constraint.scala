@@ -12,8 +12,8 @@ trait Constraint extends js.Object {
 object Constraint {
   @scala.inline
   def apply(getDefinition: js.Function0[js.Any]): Constraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDefinition")(getDefinition)
+    val __obj = js.Dynamic.literal(getDefinition = getDefinition)
+  
     __obj.asInstanceOf[Constraint]
   }
 }

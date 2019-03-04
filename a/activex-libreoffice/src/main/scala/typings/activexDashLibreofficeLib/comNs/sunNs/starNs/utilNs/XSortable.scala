@@ -62,12 +62,8 @@ object XSortable {
       scala.Unit
     ]
   ): XSortable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createSortDescriptor")(createSortDescriptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("sort")(sort)
+    val __obj = js.Dynamic.literal(acquire = acquire, createSortDescriptor = createSortDescriptor, queryInterface = queryInterface, release = release, sort = sort)
+  
     __obj.asInstanceOf[XSortable]
   }
 }

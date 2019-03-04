@@ -14,10 +14,8 @@ trait Anon_ItemTitleItemValue extends js.Object {
 object Anon_ItemTitleItemValue {
   @scala.inline
   def apply(itemTitle: java.lang.String, itemValue: java.lang.String, root: java.lang.String): Anon_ItemTitleItemValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemTitle")(itemTitle)
-    __obj.updateDynamic("itemValue")(itemValue)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(itemTitle = itemTitle, itemValue = itemValue, root = root)
+  
     __obj.asInstanceOf[Anon_ItemTitleItemValue]
   }
 }

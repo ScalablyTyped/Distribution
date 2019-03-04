@@ -36,11 +36,8 @@ object Built_in_variablesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RevertBuiltInVariableResponse]
     ]
   ): Built_in_variablesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("revert")(revert)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list, revert = revert)
+  
     __obj.asInstanceOf[Built_in_variablesResource]
   }
 }

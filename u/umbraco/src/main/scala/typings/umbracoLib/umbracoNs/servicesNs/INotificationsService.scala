@@ -170,19 +170,8 @@ object INotificationsService {
     success: js.Function2[java.lang.String, java.lang.String, INotification],
     warning: js.Function2[java.lang.String, java.lang.String, INotification]
   ): INotificationsService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addView")(addView)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("getCurrent")(getCurrent)
-    __obj.updateDynamic("hasView")(hasView)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
-    __obj.updateDynamic("showNotification")(showNotification)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(add = add, addView = addView, current = current, error = error, getCurrent = getCurrent, hasView = hasView, info = info, remove = remove, removeAll = removeAll, showNotification = showNotification, success = success, warning = warning)
+  
     __obj.asInstanceOf[INotificationsService]
   }
 }

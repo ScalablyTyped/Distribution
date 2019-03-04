@@ -65,17 +65,8 @@ object JobTaskCreateDependencyParams {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     user: java.lang.String
   ): JobTaskCreateDependencyParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("depJobId")(depJobId)
-    __obj.updateDynamic("depOnType")(depOnType)
-    __obj.updateDynamic("depOnValue")(depOnValue)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("heldOnType")(heldOnType)
-    __obj.updateDynamic("heldOnValue")(heldOnValue)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, depJobId = depJobId, depOnType = depOnType, depOnValue = depOnValue, hasOwnProperty = hasOwnProperty, heldOnType = heldOnType, heldOnValue = heldOnValue, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
     __obj.asInstanceOf[JobTaskCreateDependencyParams]
   }
 }

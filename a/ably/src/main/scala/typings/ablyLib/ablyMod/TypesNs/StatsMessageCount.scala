@@ -13,9 +13,8 @@ trait StatsMessageCount extends js.Object {
 object StatsMessageCount {
   @scala.inline
   def apply(count: scala.Double, data: scala.Double): StatsMessageCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(count = count, data = data)
+  
     __obj.asInstanceOf[StatsMessageCount]
   }
 }

@@ -20,10 +20,8 @@ object GroupObj {
     name: java.lang.String,
     `type`: atlassianDashCrowdDashClientLib.atlassianDashCrowdDashClientLibStrings.GROUP
   ): GroupObj = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(active = active, description = description, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GroupObj]
   }
 }

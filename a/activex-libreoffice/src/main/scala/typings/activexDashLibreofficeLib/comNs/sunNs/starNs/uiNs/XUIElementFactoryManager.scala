@@ -36,16 +36,8 @@ object XUIElementFactoryManager {
     registerFactory: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XUIElementFactoryManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RegisteredFactories")(RegisteredFactories)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createUIElement")(createUIElement)
-    __obj.updateDynamic("deregisterFactory")(deregisterFactory)
-    __obj.updateDynamic("getFactory")(getFactory)
-    __obj.updateDynamic("getRegisteredFactories")(getRegisteredFactories)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerFactory")(registerFactory)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(RegisteredFactories = RegisteredFactories, acquire = acquire, createUIElement = createUIElement, deregisterFactory = deregisterFactory, getFactory = getFactory, getRegisteredFactories = getRegisteredFactories, queryInterface = queryInterface, registerFactory = registerFactory, release = release)
+  
     __obj.asInstanceOf[XUIElementFactoryManager]
   }
 }

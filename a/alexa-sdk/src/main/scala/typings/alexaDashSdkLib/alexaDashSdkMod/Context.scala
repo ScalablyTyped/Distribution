@@ -32,15 +32,7 @@ object Context {
     AudioPlayer: AudioPlayer = null,
     System: System = null
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsRequestId")(awsRequestId)
-    __obj.updateDynamic("callbackWaitsForEmptyEventLoop")(callbackWaitsForEmptyEventLoop)
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("functionVersion")(functionVersion)
-    __obj.updateDynamic("invokeid")(invokeid)
-    __obj.updateDynamic("logGroupName")(logGroupName)
-    __obj.updateDynamic("logStreamName")(logStreamName)
-    __obj.updateDynamic("memoryLimitInMB")(memoryLimitInMB)
+    val __obj = js.Dynamic.literal(awsRequestId = awsRequestId, callbackWaitsForEmptyEventLoop = callbackWaitsForEmptyEventLoop, functionName = functionName, functionVersion = functionVersion, invokeid = invokeid, logGroupName = logGroupName, logStreamName = logStreamName, memoryLimitInMB = memoryLimitInMB)
     if (AudioPlayer != null) __obj.updateDynamic("AudioPlayer")(AudioPlayer)
     if (System != null) __obj.updateDynamic("System")(System)
     __obj.asInstanceOf[Context]

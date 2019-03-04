@@ -24,13 +24,8 @@ object Queue {
     retryConfig: RetryConfig,
     state: java.lang.String
   ): Queue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appEngineHttpQueue")(appEngineHttpQueue)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("purgeTime")(purgeTime)
-    __obj.updateDynamic("rateLimits")(rateLimits)
-    __obj.updateDynamic("retryConfig")(retryConfig)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(appEngineHttpQueue = appEngineHttpQueue, name = name, purgeTime = purgeTime, rateLimits = rateLimits, retryConfig = retryConfig, state = state)
+  
     __obj.asInstanceOf[Queue]
   }
 }

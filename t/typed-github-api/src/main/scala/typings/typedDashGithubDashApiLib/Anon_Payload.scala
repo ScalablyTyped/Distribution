@@ -20,11 +20,8 @@ object Anon_Payload {
     signature: java.lang.String,
     verified: scala.Boolean
   ): Anon_Payload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("verified")(verified)
+    val __obj = js.Dynamic.literal(payload = payload, reason = reason, signature = signature, verified = verified)
+  
     __obj.asInstanceOf[Anon_Payload]
   }
 }

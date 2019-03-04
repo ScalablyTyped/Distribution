@@ -18,10 +18,8 @@ object TreeClick {
     webix_tree_close: js.Function2[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String],
     webix_tree_open: js.Function2[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String]
   ): TreeClick = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("webix_tree_checkbox")(webix_tree_checkbox)
-    __obj.updateDynamic("webix_tree_close")(webix_tree_close)
-    __obj.updateDynamic("webix_tree_open")(webix_tree_open)
+    val __obj = js.Dynamic.literal(webix_tree_checkbox = webix_tree_checkbox, webix_tree_close = webix_tree_close, webix_tree_open = webix_tree_open)
+  
     __obj.asInstanceOf[TreeClick]
   }
 }

@@ -24,10 +24,8 @@ trait OptimisticState[TState] extends js.Object {
 object OptimisticState {
   @scala.inline
   def apply[TState](beforeState: TState, current: TState, history: js.Any): OptimisticState[TState] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeState")(beforeState.asInstanceOf[js.Any])
-    __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    __obj.updateDynamic("history")(history)
+    val __obj = js.Dynamic.literal(beforeState = beforeState.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], history = history)
+  
     __obj.asInstanceOf[OptimisticState[TState]]
   }
 }

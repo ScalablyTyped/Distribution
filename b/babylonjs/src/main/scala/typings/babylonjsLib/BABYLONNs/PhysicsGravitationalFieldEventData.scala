@@ -19,8 +19,8 @@ trait PhysicsGravitationalFieldEventData extends js.Object {
 object PhysicsGravitationalFieldEventData {
   @scala.inline
   def apply(sphere: Mesh): PhysicsGravitationalFieldEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sphere")(sphere)
+    val __obj = js.Dynamic.literal(sphere = sphere)
+  
     __obj.asInstanceOf[PhysicsGravitationalFieldEventData]
   }
 }

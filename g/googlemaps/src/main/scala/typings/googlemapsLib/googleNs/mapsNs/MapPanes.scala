@@ -28,15 +28,8 @@ object MapPanes {
     overlayMouseTarget: stdLib.Element,
     overlayShadow: stdLib.Element
   ): MapPanes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("floatPane")(floatPane)
-    __obj.updateDynamic("floatShadow")(floatShadow)
-    __obj.updateDynamic("mapPane")(mapPane)
-    __obj.updateDynamic("markerLayer")(markerLayer)
-    __obj.updateDynamic("overlayImage")(overlayImage)
-    __obj.updateDynamic("overlayLayer")(overlayLayer)
-    __obj.updateDynamic("overlayMouseTarget")(overlayMouseTarget)
-    __obj.updateDynamic("overlayShadow")(overlayShadow)
+    val __obj = js.Dynamic.literal(floatPane = floatPane, floatShadow = floatShadow, mapPane = mapPane, markerLayer = markerLayer, overlayImage = overlayImage, overlayLayer = overlayLayer, overlayMouseTarget = overlayMouseTarget, overlayShadow = overlayShadow)
+  
     __obj.asInstanceOf[MapPanes]
   }
 }

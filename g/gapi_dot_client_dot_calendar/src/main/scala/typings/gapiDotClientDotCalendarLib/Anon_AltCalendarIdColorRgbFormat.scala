@@ -48,8 +48,7 @@ object Anon_AltCalendarIdColorRgbFormat {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCalendarIdColorRgbFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(colorRgbFormat)) __obj.updateDynamic("colorRgbFormat")(colorRgbFormat)
     if (fields != null) __obj.updateDynamic("fields")(fields)

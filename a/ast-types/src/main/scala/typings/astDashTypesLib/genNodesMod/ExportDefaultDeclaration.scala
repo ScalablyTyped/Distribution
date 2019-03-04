@@ -22,8 +22,8 @@ object ExportDefaultDeclaration {
     declaration: astDashTypesLib.genKindsMod.DeclarationKind | astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ExportDefaultDeclaration
   ): ExportDefaultDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExportDefaultDeclaration]
   }
 }

@@ -26,14 +26,8 @@ object Anon_HeightSegments {
     thetaStart: scala.Double,
     widthSegments: scala.Double
   ): Anon_HeightSegments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("phiLength")(phiLength)
-    __obj.updateDynamic("phiStart")(phiStart)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("thetaLength")(thetaLength)
-    __obj.updateDynamic("thetaStart")(thetaStart)
-    __obj.updateDynamic("widthSegments")(widthSegments)
+    val __obj = js.Dynamic.literal(heightSegments = heightSegments, phiLength = phiLength, phiStart = phiStart, radius = radius, thetaLength = thetaLength, thetaStart = thetaStart, widthSegments = widthSegments)
+  
     __obj.asInstanceOf[Anon_HeightSegments]
   }
 }

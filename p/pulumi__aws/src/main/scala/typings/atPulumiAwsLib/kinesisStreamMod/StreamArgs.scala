@@ -57,8 +57,7 @@ object StreamArgs {
     shardLevelMetrics: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): StreamArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shardCount")(shardCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(shardCount = shardCount.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (encryptionType != null) __obj.updateDynamic("encryptionType")(encryptionType.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])

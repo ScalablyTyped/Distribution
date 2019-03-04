@@ -18,10 +18,8 @@ object ITextWriter {
     Write: js.Function1[java.lang.String, scala.Unit],
     WriteLine: js.Function1[java.lang.String, scala.Unit]
   ): ITextWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("Write")(Write)
-    __obj.updateDynamic("WriteLine")(WriteLine)
+    val __obj = js.Dynamic.literal(Close = Close, Write = Write, WriteLine = WriteLine)
+  
     __obj.asInstanceOf[ITextWriter]
   }
 }

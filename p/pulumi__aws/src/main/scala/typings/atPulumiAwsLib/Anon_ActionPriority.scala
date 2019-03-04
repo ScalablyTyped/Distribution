@@ -20,10 +20,7 @@ object Anon_ActionPriority {
     ruleId: java.lang.String,
     `type`: java.lang.String = null
   ): Anon_ActionPriority = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("ruleId")(ruleId)
+    val __obj = js.Dynamic.literal(action = action, priority = priority, ruleId = ruleId)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ActionPriority]
   }

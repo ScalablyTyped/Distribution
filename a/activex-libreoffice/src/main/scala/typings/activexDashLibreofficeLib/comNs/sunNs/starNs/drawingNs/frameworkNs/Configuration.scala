@@ -38,16 +38,8 @@ object Configuration {
     release: js.Function0[scala.Unit],
     removeResource: js.Function1[XResourceId, scala.Unit]
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addResource")(addResource)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("getResources")(getResources)
-    __obj.updateDynamic("hasResource")(hasResource)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeResource")(removeResource)
+    val __obj = js.Dynamic.literal(acquire = acquire, addResource = addResource, create = create, createClone = createClone, getResources = getResources, hasResource = hasResource, queryInterface = queryInterface, release = release, removeResource = removeResource)
+  
     __obj.asInstanceOf[Configuration]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_CancelDefault extends js.Object {
 object Anon_CancelDefault {
   @scala.inline
   def apply(CancelDefault: scala.Boolean, CommandBarControl: js.Any, handled: scala.Boolean): Anon_CancelDefault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CancelDefault")(CancelDefault)
-    __obj.updateDynamic("CommandBarControl")(CommandBarControl)
-    __obj.updateDynamic("handled")(handled)
+    val __obj = js.Dynamic.literal(CancelDefault = CancelDefault, CommandBarControl = CommandBarControl, handled = handled)
+  
     __obj.asInstanceOf[Anon_CancelDefault]
   }
 }

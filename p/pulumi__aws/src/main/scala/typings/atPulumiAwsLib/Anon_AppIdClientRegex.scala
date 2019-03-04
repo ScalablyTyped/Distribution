@@ -20,10 +20,7 @@ object Anon_AppIdClientRegex {
     userPoolId: java.lang.String,
     appIdClientRegex: java.lang.String = null
   ): Anon_AppIdClientRegex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsRegion")(awsRegion)
-    __obj.updateDynamic("defaultAction")(defaultAction)
-    __obj.updateDynamic("userPoolId")(userPoolId)
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion, defaultAction = defaultAction, userPoolId = userPoolId)
     if (appIdClientRegex != null) __obj.updateDynamic("appIdClientRegex")(appIdClientRegex)
     __obj.asInstanceOf[Anon_AppIdClientRegex]
   }

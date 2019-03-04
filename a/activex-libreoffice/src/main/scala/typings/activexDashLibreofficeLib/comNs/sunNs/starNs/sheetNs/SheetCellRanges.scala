@@ -254,17 +254,12 @@ object SheetCellRanges {
     XSheetOperation: XSheetOperation = null,
     SheetRangesQuery: SheetRangesQuery = null
   ): SheetCellRanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AbsoluteName")(AbsoluteName)
+    val __obj = js.Dynamic.literal(AbsoluteName = AbsoluteName, ConditionalFormat = ConditionalFormat, ConditionalFormatLocal = ConditionalFormatLocal, Validation = Validation, ValidationLocal = ValidationLocal)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CellProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
-    __obj.updateDynamic("ConditionalFormat")(ConditionalFormat)
-    __obj.updateDynamic("ConditionalFormatLocal")(ConditionalFormatLocal)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
-    __obj.updateDynamic("Validation")(Validation)
-    __obj.updateDynamic("ValidationLocal")(ValidationLocal)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XChartDataArray)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XEnumerationAccess)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XIndent)

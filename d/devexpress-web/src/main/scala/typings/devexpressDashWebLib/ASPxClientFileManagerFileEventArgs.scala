@@ -19,8 +19,8 @@ trait ASPxClientFileManagerFileEventArgs extends ASPxClientEventArgs {
 object ASPxClientFileManagerFileEventArgs {
   @scala.inline
   def apply(file: ASPxClientFileManagerFile): ASPxClientFileManagerFileEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(file = file)
+  
     __obj.asInstanceOf[ASPxClientFileManagerFileEventArgs]
   }
 }

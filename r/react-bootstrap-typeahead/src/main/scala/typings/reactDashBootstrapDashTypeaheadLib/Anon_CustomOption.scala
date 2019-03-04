@@ -12,8 +12,8 @@ trait Anon_CustomOption extends js.Object {
 object Anon_CustomOption {
   @scala.inline
   def apply(customOption: scala.Boolean): Anon_CustomOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customOption")(customOption)
+    val __obj = js.Dynamic.literal(customOption = customOption)
+  
     __obj.asInstanceOf[Anon_CustomOption]
   }
 }

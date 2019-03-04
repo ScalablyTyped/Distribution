@@ -22,12 +22,8 @@ object TransactionStats {
     success: js.Function0[scala.Boolean],
     updatedRowCount: js.Function0[scala.Double]
   ): TransactionStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changedTableCount")(changedTableCount)
-    __obj.updateDynamic("deletedRowCount")(deletedRowCount)
-    __obj.updateDynamic("insertedRowCount")(insertedRowCount)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("updatedRowCount")(updatedRowCount)
+    val __obj = js.Dynamic.literal(changedTableCount = changedTableCount, deletedRowCount = deletedRowCount, insertedRowCount = insertedRowCount, success = success, updatedRowCount = updatedRowCount)
+  
     __obj.asInstanceOf[TransactionStats]
   }
 }

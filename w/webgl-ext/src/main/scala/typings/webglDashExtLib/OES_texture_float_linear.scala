@@ -12,8 +12,8 @@ trait OES_texture_float_linear extends js.Object {
 object OES_texture_float_linear {
   @scala.inline
   def apply(__OES_texture_float_linear: scala.Unit): OES_texture_float_linear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__OES_texture_float_linear")(__OES_texture_float_linear)
+    val __obj = js.Dynamic.literal(__OES_texture_float_linear = __OES_texture_float_linear)
+  
     __obj.asInstanceOf[OES_texture_float_linear]
   }
 }

@@ -28,8 +28,7 @@ object Collection {
     indexingPolicy: IndexingPolicy = null,
     partitionKey: CollectionPartitionKey = null
   ): Collection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
     if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy)
     if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey)

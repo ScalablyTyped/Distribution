@@ -18,10 +18,8 @@ object IContact {
     name: java.lang.String,
     thumbnail: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference
   ): IContact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(fields = fields, name = name, thumbnail = thumbnail)
+  
     __obj.asInstanceOf[IContact]
   }
 }

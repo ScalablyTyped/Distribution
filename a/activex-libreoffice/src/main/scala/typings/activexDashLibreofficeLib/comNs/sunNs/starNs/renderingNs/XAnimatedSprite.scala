@@ -110,23 +110,8 @@ object XAnimatedSprite {
     transform: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit],
     updateAnimation: js.Function0[scala.Unit]
   ): XAnimatedSprite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clip")(clip)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resetAnimation")(resetAnimation)
-    __obj.updateDynamic("setAll")(setAll)
-    __obj.updateDynamic("setAlpha")(setAlpha)
-    __obj.updateDynamic("setPriority")(setPriority)
-    __obj.updateDynamic("setViewState")(setViewState)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("startAnimation")(startAnimation)
-    __obj.updateDynamic("stopAnimation")(stopAnimation)
-    __obj.updateDynamic("transform")(transform)
-    __obj.updateDynamic("updateAnimation")(updateAnimation)
+    val __obj = js.Dynamic.literal(acquire = acquire, clip = clip, hide = hide, move = move, queryInterface = queryInterface, release = release, resetAnimation = resetAnimation, setAll = setAll, setAlpha = setAlpha, setPriority = setPriority, setViewState = setViewState, show = show, startAnimation = startAnimation, stopAnimation = stopAnimation, transform = transform, updateAnimation = updateAnimation)
+  
     __obj.asInstanceOf[XAnimatedSprite]
   }
 }

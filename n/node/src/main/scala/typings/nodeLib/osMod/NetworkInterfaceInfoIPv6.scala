@@ -23,13 +23,7 @@ object NetworkInterfaceInfoIPv6 {
     scopeid: scala.Double,
     cidr: java.lang.String = null
   ): NetworkInterfaceInfoIPv6 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("netmask")(netmask)
-    __obj.updateDynamic("scopeid")(scopeid)
+    val __obj = js.Dynamic.literal(address = address, family = family, internal = internal, mac = mac, netmask = netmask, scopeid = scopeid)
     if (cidr != null) __obj.updateDynamic("cidr")(cidr)
     __obj.asInstanceOf[NetworkInterfaceInfoIPv6]
   }

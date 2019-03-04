@@ -18,11 +18,8 @@ object BranchSummaryWithRepository {
     sha: java.lang.String,
     user: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
   ): BranchSummaryWithRepository = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("sha")(sha)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(name = name, repository = repository, sha = sha, user = user)
+  
     __obj.asInstanceOf[BranchSummaryWithRepository]
   }
 }

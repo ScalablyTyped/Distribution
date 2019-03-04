@@ -12,8 +12,8 @@ trait Anon_Where extends js.Object {
 object Anon_Where {
   @scala.inline
   def apply(where: js.Any): Anon_Where = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(where = where)
+  
     __obj.asInstanceOf[Anon_Where]
   }
 }

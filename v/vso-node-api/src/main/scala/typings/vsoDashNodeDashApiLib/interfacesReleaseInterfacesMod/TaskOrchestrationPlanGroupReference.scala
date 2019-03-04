@@ -13,9 +13,8 @@ trait TaskOrchestrationPlanGroupReference extends js.Object {
 object TaskOrchestrationPlanGroupReference {
   @scala.inline
   def apply(planGroup: java.lang.String, projectId: java.lang.String): TaskOrchestrationPlanGroupReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("planGroup")(planGroup)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(planGroup = planGroup, projectId = projectId)
+  
     __obj.asInstanceOf[TaskOrchestrationPlanGroupReference]
   }
 }

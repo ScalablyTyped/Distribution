@@ -13,9 +13,8 @@ trait Anon_Monitor extends js.Object {
 object Anon_Monitor {
   @scala.inline
   def apply(monitor: coteLib.coteMod.Monitor, server: nodeLib.httpMod.Server): Anon_Monitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("monitor")(monitor)
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(monitor = monitor, server = server)
+  
     __obj.asInstanceOf[Anon_Monitor]
   }
 }

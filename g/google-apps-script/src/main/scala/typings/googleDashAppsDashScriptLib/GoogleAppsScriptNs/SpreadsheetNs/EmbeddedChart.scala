@@ -40,20 +40,8 @@ object EmbeddedChart {
     modify: js.Function0[EmbeddedChartBuilder],
     setId: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Chart]
   ): EmbeddedChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getContainerInfo")(getContainerInfo)
-    __obj.updateDynamic("getHiddenDimensionStrategy")(getHiddenDimensionStrategy)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getMergeStrategy")(getMergeStrategy)
-    __obj.updateDynamic("getNumHeaders")(getNumHeaders)
-    __obj.updateDynamic("getOptions")(getOptions)
-    __obj.updateDynamic("getRanges")(getRanges)
-    __obj.updateDynamic("getTransposeRowsAndColumns")(getTransposeRowsAndColumns)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("modify")(modify)
-    __obj.updateDynamic("setId")(setId)
+    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob, getContainerInfo = getContainerInfo, getHiddenDimensionStrategy = getHiddenDimensionStrategy, getId = getId, getMergeStrategy = getMergeStrategy, getNumHeaders = getNumHeaders, getOptions = getOptions, getRanges = getRanges, getTransposeRowsAndColumns = getTransposeRowsAndColumns, getType = getType, modify = modify, setId = setId)
+  
     __obj.asInstanceOf[EmbeddedChart]
   }
 }

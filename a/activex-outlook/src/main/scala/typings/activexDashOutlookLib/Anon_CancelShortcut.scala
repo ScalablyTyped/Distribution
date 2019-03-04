@@ -13,9 +13,8 @@ trait Anon_CancelShortcut extends js.Object {
 object Anon_CancelShortcut {
   @scala.inline
   def apply(Cancel: scala.Boolean, Shortcut: activexDashOutlookLib.OutlookNs.OutlookBarShortcut): Anon_CancelShortcut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Shortcut")(Shortcut)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Shortcut = Shortcut)
+  
     __obj.asInstanceOf[Anon_CancelShortcut]
   }
 }

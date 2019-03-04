@@ -49,7 +49,8 @@ object SocketOptions {
     reuseAddr: js.UndefOr[scala.Boolean] = js.undefined,
     sendBufferSize: scala.Int | scala.Double = null
   ): SocketOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(ipv6Only)) __obj.updateDynamic("ipv6Only")(ipv6Only)
     if (lookup != null) __obj.updateDynamic("lookup")(lookup)
     if (recvBufferSize != null) __obj.updateDynamic("recvBufferSize")(recvBufferSize.asInstanceOf[js.Any])

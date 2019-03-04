@@ -23,13 +23,7 @@ object Arc {
     y: scala.Double,
     z: scala.Int | scala.Double = null
   ): Arc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(e = e, interval = interval, r = r, s = s, x = x, y = y)
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arc]
   }

@@ -12,8 +12,8 @@ trait WEBGL_depth_texture extends js.Object {
 object WEBGL_depth_texture {
   @scala.inline
   def apply(UNSIGNED_INT_24_8_WEBGL: GLenum): WEBGL_depth_texture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UNSIGNED_INT_24_8_WEBGL")(UNSIGNED_INT_24_8_WEBGL)
+    val __obj = js.Dynamic.literal(UNSIGNED_INT_24_8_WEBGL = UNSIGNED_INT_24_8_WEBGL)
+  
     __obj.asInstanceOf[WEBGL_depth_texture]
   }
 }

@@ -20,11 +20,8 @@ object RollOutput {
     result: scala.Double,
     rolled: js.Array[scala.Double]
   ): RollOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculations")(calculations)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("rolled")(rolled)
+    val __obj = js.Dynamic.literal(calculations = calculations, input = input, result = result, rolled = rolled)
+  
     __obj.asInstanceOf[RollOutput]
   }
 }

@@ -55,18 +55,8 @@ object XWizardPage {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): XWizardPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PageId")(PageId)
-    __obj.updateDynamic("Window")(Window)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activatePage")(activatePage)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("canAdvance")(canAdvance)
-    __obj.updateDynamic("commitPage")(commitPage)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(PageId = PageId, Window = Window, acquire = acquire, activatePage = activatePage, addEventListener = addEventListener, canAdvance = canAdvance, commitPage = commitPage, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XWizardPage]
   }
 }

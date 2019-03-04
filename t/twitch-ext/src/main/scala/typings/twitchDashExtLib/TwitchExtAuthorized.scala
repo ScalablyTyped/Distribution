@@ -37,11 +37,8 @@ object TwitchExtAuthorized {
     token: java.lang.String,
     userId: java.lang.String
   ): TwitchExtAuthorized = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channelId")(channelId)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(channelId = channelId, clientId = clientId, token = token, userId = userId)
+  
     __obj.asInstanceOf[TwitchExtAuthorized]
   }
 }

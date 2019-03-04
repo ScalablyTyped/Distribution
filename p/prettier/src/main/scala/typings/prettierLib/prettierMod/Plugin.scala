@@ -22,10 +22,7 @@ object Plugin {
     defaultOptions: stdLib.Partial[RequiredOptions] = null,
     options: js.Array[SupportOption] = null
   ): Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("parsers")(parsers)
-    __obj.updateDynamic("printers")(printers)
+    val __obj = js.Dynamic.literal(languages = languages, parsers = parsers, printers = printers)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Plugin]

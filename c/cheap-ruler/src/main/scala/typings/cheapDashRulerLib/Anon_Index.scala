@@ -18,10 +18,8 @@ object Anon_Index {
     point: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point,
     t: scala.Double
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(index = index, point = point, t = t)
+  
     __obj.asInstanceOf[Anon_Index]
   }
 }

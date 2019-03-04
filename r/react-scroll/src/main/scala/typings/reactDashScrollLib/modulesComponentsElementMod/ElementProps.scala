@@ -18,8 +18,7 @@ object ElementProps {
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] = null,
     id: java.lang.String = null
   ): ElementProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[ElementProps]

@@ -33,12 +33,7 @@ object StatelessProps {
     labelHtmlFor: java.lang.String = null,
     shouldConfirmOnEnter: js.UndefOr[scala.Boolean] = js.undefined
   ): StatelessProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEditing")(isEditing)
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onConfirm")(onConfirm)
-    __obj.updateDynamic("onEditRequested")(onEditRequested)
-    __obj.updateDynamic("readView")(readView)
+    val __obj = js.Dynamic.literal(isEditing = isEditing, onCancel = onCancel, onConfirm = onConfirm, onEditRequested = onEditRequested, readView = readView)
     if (!js.isUndefined(areActionButtonsHidden)) __obj.updateDynamic("areActionButtonsHidden")(areActionButtonsHidden)
     if (!js.isUndefined(disableEditViewFieldBase)) __obj.updateDynamic("disableEditViewFieldBase")(disableEditViewFieldBase)
     if (editView != null) __obj.updateDynamic("editView")(editView)

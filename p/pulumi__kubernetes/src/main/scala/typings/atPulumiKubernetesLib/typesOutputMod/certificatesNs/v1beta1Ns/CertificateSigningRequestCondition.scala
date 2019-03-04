@@ -32,10 +32,8 @@ object CertificateSigningRequestCondition {
     reason: java.lang.String,
     `type`: java.lang.String
   ): CertificateSigningRequestCondition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(lastUpdateTime = lastUpdateTime, message = message, reason = reason)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CertificateSigningRequestCondition]
   }
 }

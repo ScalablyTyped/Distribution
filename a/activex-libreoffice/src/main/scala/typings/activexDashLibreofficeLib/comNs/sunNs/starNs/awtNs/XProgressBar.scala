@@ -39,16 +39,8 @@ object XProgressBar {
     setRange: js.Function2[scala.Double, scala.Double, scala.Unit],
     setValue: js.Function1[scala.Double, scala.Unit]
   ): XProgressBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setBackgroundColor")(setBackgroundColor)
-    __obj.updateDynamic("setForegroundColor")(setForegroundColor)
-    __obj.updateDynamic("setRange")(setRange)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(Value = Value, acquire = acquire, getValue = getValue, queryInterface = queryInterface, release = release, setBackgroundColor = setBackgroundColor, setForegroundColor = setForegroundColor, setRange = setRange, setValue = setValue)
+  
     __obj.asInstanceOf[XProgressBar]
   }
 }

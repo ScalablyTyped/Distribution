@@ -32,11 +32,8 @@ object NativeFlow {
     promptForCode: js.Function1[java.lang.String, js.Any],
     run: js.Function0[scala.Unit]
   ): NativeFlow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("authorizeUrl")(authorizeUrl)
-    __obj.updateDynamic("promptForCode")(promptForCode)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, authorizeUrl = authorizeUrl, promptForCode = promptForCode, run = run)
+  
     __obj.asInstanceOf[NativeFlow]
   }
 }

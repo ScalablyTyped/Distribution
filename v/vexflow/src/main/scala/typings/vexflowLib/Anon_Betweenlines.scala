@@ -24,13 +24,8 @@ object Anon_Betweenlines {
     shift_up: scala.Double,
     width: scala.Double
   ): Anon_Betweenlines = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("between_lines")(between_lines)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("shift_down")(shift_down)
-    __obj.updateDynamic("shift_right")(shift_right)
-    __obj.updateDynamic("shift_up")(shift_up)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(between_lines = between_lines, code = code, shift_down = shift_down, shift_right = shift_right, shift_up = shift_up, width = width)
+  
     __obj.asInstanceOf[Anon_Betweenlines]
   }
 }

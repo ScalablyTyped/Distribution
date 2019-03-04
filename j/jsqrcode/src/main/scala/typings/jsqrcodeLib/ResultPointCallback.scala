@@ -12,8 +12,8 @@ trait ResultPointCallback extends js.Object {
 object ResultPointCallback {
   @scala.inline
   def apply(foundPossibleResultPoint: js.Function1[FinderPattern, scala.Unit]): ResultPointCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foundPossibleResultPoint")(foundPossibleResultPoint)
+    val __obj = js.Dynamic.literal(foundPossibleResultPoint = foundPossibleResultPoint)
+  
     __obj.asInstanceOf[ResultPointCallback]
   }
 }

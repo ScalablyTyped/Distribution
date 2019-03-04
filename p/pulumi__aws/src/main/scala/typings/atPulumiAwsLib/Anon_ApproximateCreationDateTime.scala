@@ -26,12 +26,7 @@ object Anon_ApproximateCreationDateTime {
     NewImage: stdLib.Record[java.lang.String, _] = null,
     OldImage: stdLib.Record[java.lang.String, _] = null
   ): Anon_ApproximateCreationDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApproximateCreationDateTime")(ApproximateCreationDateTime)
-    __obj.updateDynamic("Keys")(Keys)
-    __obj.updateDynamic("SequenceNumber")(SequenceNumber)
-    __obj.updateDynamic("SizeBytes")(SizeBytes)
-    __obj.updateDynamic("StreamViewType")(StreamViewType)
+    val __obj = js.Dynamic.literal(ApproximateCreationDateTime = ApproximateCreationDateTime, Keys = Keys, SequenceNumber = SequenceNumber, SizeBytes = SizeBytes, StreamViewType = StreamViewType)
     if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage)
     if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage)
     __obj.asInstanceOf[Anon_ApproximateCreationDateTime]

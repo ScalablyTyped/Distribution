@@ -30,11 +30,8 @@ object BlockStatement {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): BlockStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(body = body, end = end, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

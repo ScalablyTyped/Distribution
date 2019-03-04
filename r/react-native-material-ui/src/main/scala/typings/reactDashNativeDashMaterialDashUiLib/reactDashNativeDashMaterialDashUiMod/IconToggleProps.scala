@@ -32,8 +32,7 @@ object IconToggleProps {
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerIconViewStyle = null,
     underlayColor: java.lang.String = null
   ): IconToggleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (children != null) __obj.updateDynamic("children")(children)
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

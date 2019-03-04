@@ -16,8 +16,7 @@ object Anon_Basepath {
     base_path: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL,
     paths: js.Array[java.lang.String] = null
   ): Anon_Basepath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base_path")(base_path)
+    val __obj = js.Dynamic.literal(base_path = base_path)
     if (paths != null) __obj.updateDynamic("paths")(paths)
     __obj.asInstanceOf[Anon_Basepath]
   }

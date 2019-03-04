@@ -12,8 +12,8 @@ trait Anon_Compare extends js.Object {
 object Anon_Compare {
   @scala.inline
   def apply(compare: scala.Boolean | java.lang.String | js.Function): Anon_Compare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compare = compare.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Compare]
   }
 }

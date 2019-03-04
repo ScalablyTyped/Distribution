@@ -16,8 +16,8 @@ trait RTCDtmfSenderEventMap extends js.Object {
 object RTCDTMFSenderEventMap {
   @scala.inline
   def apply(tonechange: RTCDTMFToneChangeEvent): RTCDTMFSenderEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tonechange")(tonechange)
+    val __obj = js.Dynamic.literal(tonechange = tonechange)
+  
     __obj.asInstanceOf[RTCDTMFSenderEventMap]
   }
 }
@@ -25,8 +25,8 @@ object RTCDTMFSenderEventMap {
 object RTCDtmfSenderEventMap {
   @scala.inline
   def apply(tonechange: RTCDTMFToneChangeEvent): RTCDtmfSenderEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tonechange")(tonechange)
+    val __obj = js.Dynamic.literal(tonechange = tonechange)
+  
     __obj.asInstanceOf[RTCDtmfSenderEventMap]
   }
 }

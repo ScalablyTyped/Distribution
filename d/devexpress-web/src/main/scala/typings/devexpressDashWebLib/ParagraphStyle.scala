@@ -47,14 +47,8 @@ object ParagraphStyle {
     nextStyle: ParagraphStyle,
     parent: ParagraphStyle
   ): ParagraphStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("linkedStyle")(linkedStyle)
-    __obj.updateDynamic("listIndex")(listIndex)
-    __obj.updateDynamic("listLevelIndex")(listLevelIndex)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nextStyle")(nextStyle)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(isDeleted = isDeleted, linkedStyle = linkedStyle, listIndex = listIndex, listLevelIndex = listLevelIndex, name = name, nextStyle = nextStyle, parent = parent)
+  
     __obj.asInstanceOf[ParagraphStyle]
   }
 }

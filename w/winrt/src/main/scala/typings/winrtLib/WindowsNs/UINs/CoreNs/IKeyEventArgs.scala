@@ -17,10 +17,8 @@ object IKeyEventArgs {
     keyStatus: CorePhysicalKeyStatus,
     virtualKey: winrtLib.WindowsNs.SystemNs.VirtualKey
   ): IKeyEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("keyStatus")(keyStatus)
-    __obj.updateDynamic("virtualKey")(virtualKey)
+    val __obj = js.Dynamic.literal(handled = handled, keyStatus = keyStatus, virtualKey = virtualKey)
+  
     __obj.asInstanceOf[IKeyEventArgs]
   }
 }

@@ -20,8 +20,7 @@ object Anon_ActionKey {
     key: java.lang.String = null,
     params: reactDashNavigationLib.reactDashNavigationMod.NavigationParams = null
   ): Anon_ActionKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routeName")(routeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action)
     if (key != null) __obj.updateDynamic("key")(key)
     if (params != null) __obj.updateDynamic("params")(params)

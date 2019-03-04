@@ -63,6 +63,7 @@ trait Anon_A extends js.Object {
   def changeYear(year: scala.Double): scala.Unit = js.native
   def clear(): scala.Unit = js.native
   def clear(emitChangeEvent: scala.Boolean): scala.Unit = js.native
+  def clear(emitChangeEvent: scala.Boolean, toInitial: scala.Boolean): scala.Unit = js.native
   def close(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   def formatDate(dateObj: stdLib.Date, frmt: java.lang.String): java.lang.String = js.native

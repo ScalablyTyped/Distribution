@@ -16,8 +16,7 @@ object KnockoutObservableFunctions {
     equalityComparer: js.Function2[js.Any, js.Any, scala.Boolean],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] = null
   ): KnockoutObservableFunctions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equalityComparer")(equalityComparer)
+    val __obj = js.Dynamic.literal(equalityComparer = equalityComparer)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }

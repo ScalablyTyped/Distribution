@@ -12,8 +12,8 @@ trait HitArea extends js.Object {
 object HitArea {
   @scala.inline
   def apply(contains: js.Function2[scala.Double, scala.Double, scala.Boolean]): HitArea = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
+    val __obj = js.Dynamic.literal(contains = contains)
+  
     __obj.asInstanceOf[HitArea]
   }
 }

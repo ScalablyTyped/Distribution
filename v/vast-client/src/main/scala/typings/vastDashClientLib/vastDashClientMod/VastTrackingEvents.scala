@@ -22,11 +22,7 @@ object VastTrackingEvents {
     thirdQuartile: js.Array[java.lang.String],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null
   ): VastTrackingEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("firstQuartile")(firstQuartile)
-    __obj.updateDynamic("midpoint")(midpoint)
-    __obj.updateDynamic("thirdQuartile")(thirdQuartile)
+    val __obj = js.Dynamic.literal(complete = complete, firstQuartile = firstQuartile, midpoint = midpoint, thirdQuartile = thirdQuartile)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[VastTrackingEvents]
   }

@@ -63,10 +63,8 @@ object SendMoneyOpts {
     skip_notifications: js.UndefOr[scala.Boolean] = js.undefined,
     to_financial_institution: js.UndefOr[scala.Boolean] = js.undefined
   ): SendMoneyOpts = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, to = to)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     if (fee != null) __obj.updateDynamic("fee")(fee)
     if (financial_institution_website != null) __obj.updateDynamic("financial_institution_website")(financial_institution_website)

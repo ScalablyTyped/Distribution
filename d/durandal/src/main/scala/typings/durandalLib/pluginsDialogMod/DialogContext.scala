@@ -46,10 +46,7 @@ object DialogContext {
     removeHost: js.Function1[Dialog, scala.Unit],
     blockoutOpacity: scala.Int | scala.Double = null
   ): DialogContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHost")(addHost)
-    __obj.updateDynamic("compositionComplete")(compositionComplete)
-    __obj.updateDynamic("removeHost")(removeHost)
+    val __obj = js.Dynamic.literal(addHost = addHost, compositionComplete = compositionComplete, removeHost = removeHost)
     if (blockoutOpacity != null) __obj.updateDynamic("blockoutOpacity")(blockoutOpacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogContext]
   }

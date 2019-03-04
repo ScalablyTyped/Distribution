@@ -17,10 +17,7 @@ trait UnionTypeDefinition
 object UnionTypeDefinition {
   @scala.inline
   def apply(kind: java.lang.String, name: Name, types: js.Array[NamedType], loc: Location = null): UnionTypeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(kind = kind, name = name, types = types)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[UnionTypeDefinition]
   }

@@ -24,12 +24,7 @@ object LintResult {
     warningCount: scala.Double,
     fixes: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = null
   ): LintResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCount")(errorCount)
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("warningCount")(warningCount)
+    val __obj = js.Dynamic.literal(errorCount = errorCount, failures = failures, format = format.asInstanceOf[js.Any], output = output, warningCount = warningCount)
     if (fixes != null) __obj.updateDynamic("fixes")(fixes)
     __obj.asInstanceOf[LintResult]
   }

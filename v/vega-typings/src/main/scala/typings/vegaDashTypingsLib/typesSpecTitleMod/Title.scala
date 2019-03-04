@@ -68,8 +68,7 @@ object Title {
     style: java.lang.String | js.Array[java.lang.String] = null,
     zindex: scala.Int | scala.Double = null
   ): Title = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])

@@ -20,11 +20,8 @@ object Anon_Clockseq {
     node: nodeLib.Buffer,
     nsecs: scala.Double
   ): Anon_Clockseq = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clockseq")(clockseq)
-    __obj.updateDynamic("msecs")(msecs.asInstanceOf[js.Any])
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("nsecs")(nsecs)
+    val __obj = js.Dynamic.literal(clockseq = clockseq, msecs = msecs.asInstanceOf[js.Any], node = node, nsecs = nsecs)
+  
     __obj.asInstanceOf[Anon_Clockseq]
   }
 }

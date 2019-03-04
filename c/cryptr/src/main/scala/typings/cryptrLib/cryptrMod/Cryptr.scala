@@ -18,9 +18,8 @@ object Cryptr {
     decrypt: js.Function1[java.lang.String, java.lang.String],
     encrypt: js.Function1[java.lang.String, java.lang.String]
   ): Cryptr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("encrypt")(encrypt)
+    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt)
+  
     __obj.asInstanceOf[Cryptr]
   }
 }

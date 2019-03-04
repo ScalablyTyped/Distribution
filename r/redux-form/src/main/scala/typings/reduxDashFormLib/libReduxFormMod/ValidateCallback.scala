@@ -22,12 +22,8 @@ object ValidateCallback {
     structure: js.Any,
     values: FormData
   ): ValidateCallback[FormData, P, ErrorType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialRender")(initialRender)
-    __obj.updateDynamic("nextProps")(nextProps.asInstanceOf[js.Any])
-    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    __obj.updateDynamic("structure")(structure)
-    __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(initialRender = initialRender, nextProps = nextProps.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], structure = structure, values = values.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ValidateCallback[FormData, P, ErrorType]]
   }
 }

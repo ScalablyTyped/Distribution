@@ -28,15 +28,8 @@ object ListobjectDef {
     qShowAlternatives: scala.Boolean,
     qStateName: java.lang.String
   ): ListobjectDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAutoSortByState")(qAutoSortByState)
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qExpressions")(qExpressions)
-    __obj.updateDynamic("qFrequencyMode")(qFrequencyMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("qInitialDataFetch")(qInitialDataFetch)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
-    __obj.updateDynamic("qShowAlternatives")(qShowAlternatives)
-    __obj.updateDynamic("qStateName")(qStateName)
+    val __obj = js.Dynamic.literal(qAutoSortByState = qAutoSortByState, qDef = qDef, qExpressions = qExpressions, qFrequencyMode = qFrequencyMode.asInstanceOf[js.Any], qInitialDataFetch = qInitialDataFetch, qLibraryId = qLibraryId, qShowAlternatives = qShowAlternatives, qStateName = qStateName)
+  
     __obj.asInstanceOf[ListobjectDef]
   }
 }

@@ -67,12 +67,8 @@ object XNumberFormatPreviewer {
     ],
     release: js.Function0[scala.Unit]
   ): XNumberFormatPreviewer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertNumberToPreviewString")(convertNumberToPreviewString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryPreviewColorForNumber")(queryPreviewColorForNumber)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convertNumberToPreviewString = convertNumberToPreviewString, queryInterface = queryInterface, queryPreviewColorForNumber = queryPreviewColorForNumber, release = release)
+  
     __obj.asInstanceOf[XNumberFormatPreviewer]
   }
 }

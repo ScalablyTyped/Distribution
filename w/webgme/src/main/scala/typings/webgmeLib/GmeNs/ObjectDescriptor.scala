@@ -54,21 +54,7 @@ object ObjectDescriptor {
     reconnectable: js.UndefOr[scala.Boolean] = js.undefined,
     srcSubCompId: java.lang.String = null
   ): ObjectDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childrenIds")(childrenIds)
-    __obj.updateDynamic("childrenNum")(childrenNum)
-    __obj.updateDynamic("dstObjId")(dstObjId)
-    __obj.updateDynamic("dstPos")(dstPos)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isConnection")(isConnection)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("pointers")(pointers)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("srcObjId")(srcObjId)
-    __obj.updateDynamic("srcPos")(srcPos)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(childrenIds = childrenIds, childrenNum = childrenNum, dstObjId = dstObjId, dstPos = dstPos, id = id, isConnection = isConnection, name = name, parentId = parentId, pointers = pointers, position = position, source = source, srcObjId = srcObjId, srcPos = srcPos, target = target)
     if (control != null) __obj.updateDynamic("control")(control)
     if (dstSubCompId != null) __obj.updateDynamic("dstSubCompId")(dstSubCompId)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)

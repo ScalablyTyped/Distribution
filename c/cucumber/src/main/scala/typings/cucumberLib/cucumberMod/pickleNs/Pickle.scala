@@ -22,12 +22,8 @@ object Pickle {
     steps: js.Array[Step],
     tags: js.Array[Tag]
   ): Pickle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(language = language, locations = locations, name = name, steps = steps, tags = tags)
+  
     __obj.asInstanceOf[Pickle]
   }
 }

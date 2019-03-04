@@ -22,7 +22,7 @@ abstract class MapContainer[Key, T, Unique /* <: scala.Boolean */, Source /* <: 
   /**
     * @hidden
     */
-  var `data_`: tstlLib.baseContainerUnderscoreMapElementListMod._MapElementList[Key, T, Unique, Source] = js.native
+  var data_ : tstlLib.baseContainerUnderscoreMapElementListMod._MapElementList[Key, T, Unique, Source] = js.native
   /**
     * @hidden
     */

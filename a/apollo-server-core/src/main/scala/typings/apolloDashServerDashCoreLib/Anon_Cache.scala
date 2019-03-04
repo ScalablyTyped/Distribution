@@ -12,8 +12,8 @@ trait Anon_Cache extends js.Object {
 object Anon_Cache {
   @scala.inline
   def apply(cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]): Anon_Cache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
+    val __obj = js.Dynamic.literal(cache = cache)
+  
     __obj.asInstanceOf[Anon_Cache]
   }
 }

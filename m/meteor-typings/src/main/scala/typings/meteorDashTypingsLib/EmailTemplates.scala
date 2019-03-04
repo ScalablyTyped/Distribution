@@ -24,12 +24,7 @@ object EmailTemplates {
     verifyEmail: EmailFields,
     headers: Header = null
   ): EmailTemplates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enrollAccount")(enrollAccount)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("resetPassword")(resetPassword)
-    __obj.updateDynamic("siteName")(siteName)
-    __obj.updateDynamic("verifyEmail")(verifyEmail)
+    val __obj = js.Dynamic.literal(enrollAccount = enrollAccount, from = from, resetPassword = resetPassword, siteName = siteName, verifyEmail = verifyEmail)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[EmailTemplates]
   }

@@ -16,9 +16,8 @@ object SjclCipher {
     decrypt: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
     encrypt: js.Function1[js.Array[scala.Double], js.Array[scala.Double]]
   ): SjclCipher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("encrypt")(encrypt)
+    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt)
+  
     __obj.asInstanceOf[SjclCipher]
   }
 }

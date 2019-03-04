@@ -30,16 +30,8 @@ object IEasComplianceResults {
     passwordHistoryResult: EasPasswordHistoryResult,
     requireEncryptionResult: EasRequireEncryptionResult
   ): IEasComplianceResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compliant")(compliant)
-    __obj.updateDynamic("disallowConvenienceLogonResult")(disallowConvenienceLogonResult)
-    __obj.updateDynamic("maxInactivityTimeLockResult")(maxInactivityTimeLockResult)
-    __obj.updateDynamic("maxPasswordFailedAttemptsResult")(maxPasswordFailedAttemptsResult)
-    __obj.updateDynamic("minPasswordComplexCharactersResult")(minPasswordComplexCharactersResult)
-    __obj.updateDynamic("minPasswordLengthResult")(minPasswordLengthResult)
-    __obj.updateDynamic("passwordExpirationResult")(passwordExpirationResult)
-    __obj.updateDynamic("passwordHistoryResult")(passwordHistoryResult)
-    __obj.updateDynamic("requireEncryptionResult")(requireEncryptionResult)
+    val __obj = js.Dynamic.literal(compliant = compliant, disallowConvenienceLogonResult = disallowConvenienceLogonResult, maxInactivityTimeLockResult = maxInactivityTimeLockResult, maxPasswordFailedAttemptsResult = maxPasswordFailedAttemptsResult, minPasswordComplexCharactersResult = minPasswordComplexCharactersResult, minPasswordLengthResult = minPasswordLengthResult, passwordExpirationResult = passwordExpirationResult, passwordHistoryResult = passwordHistoryResult, requireEncryptionResult = requireEncryptionResult)
+  
     __obj.asInstanceOf[IEasComplianceResults]
   }
 }

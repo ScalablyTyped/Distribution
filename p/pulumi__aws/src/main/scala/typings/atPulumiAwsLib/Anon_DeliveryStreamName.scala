@@ -18,9 +18,7 @@ object Anon_DeliveryStreamName {
     roleArn: java.lang.String,
     separator: java.lang.String = null
   ): Anon_DeliveryStreamName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryStreamName")(deliveryStreamName)
-    __obj.updateDynamic("roleArn")(roleArn)
+    val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName, roleArn = roleArn)
     if (separator != null) __obj.updateDynamic("separator")(separator)
     __obj.asInstanceOf[Anon_DeliveryStreamName]
   }

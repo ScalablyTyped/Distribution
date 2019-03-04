@@ -25,9 +25,8 @@ object FunctionDefinition {
     loc: Location = null,
     range: js.Tuple2[scala.Double, scala.Double] = null
   ): FunctionDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(name = name, parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     if (body != null) __obj.updateDynamic("body")(body)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

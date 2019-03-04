@@ -18,11 +18,8 @@ object TileErrorEvent {
     tile: stdLib.HTMLImageElement,
     `type`: java.lang.String
   ): TileErrorEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("coords")(coords)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("tile")(tile)
+    val __obj = js.Dynamic.literal(coords = coords, error = error, target = target, tile = tile)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TileErrorEvent]
   }
 }

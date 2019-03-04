@@ -18,9 +18,7 @@ object Anon_Config {
     filepath: java.lang.String,
     isEmpty: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("filepath")(filepath)
+    val __obj = js.Dynamic.literal(config = config, filepath = filepath)
     if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty)
     __obj.asInstanceOf[Anon_Config]
   }

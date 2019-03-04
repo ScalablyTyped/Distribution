@@ -18,10 +18,8 @@ object Anon_DomainNamePasswordUsername {
     password: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_DomainNamePasswordUsername = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DomainNamePasswordUsername]
   }
 }

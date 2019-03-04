@@ -18,11 +18,8 @@ object ExecuteActionRequestedEventOptions {
     fileSystemId: java.lang.String,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): ExecuteActionRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionId")(actionId)
-    __obj.updateDynamic("entryPaths")(entryPaths)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(actionId = actionId, entryPaths = entryPaths, fileSystemId = fileSystemId, requestId = requestId)
+  
     __obj.asInstanceOf[ExecuteActionRequestedEventOptions]
   }
 }

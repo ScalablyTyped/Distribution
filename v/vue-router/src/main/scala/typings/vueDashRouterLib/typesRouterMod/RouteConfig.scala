@@ -36,8 +36,7 @@ object RouteConfig {
     props: scala.Boolean | js.Object | RoutePropsFunction = null,
     redirect: RedirectOption = null
   ): RouteConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(beforeEnter)
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)

@@ -42,9 +42,7 @@ object InitOptions {
     useUser: APIUser = null,
     userToken: java.lang.String = null
   ): InitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
+    val __obj = js.Dynamic.literal(systemKey = systemKey, systemSecret = systemSecret)
     if (URI != null) __obj.updateDynamic("URI")(URI)
     if (authToken != null) __obj.updateDynamic("authToken")(authToken)
     if (callTimeout != null) __obj.updateDynamic("callTimeout")(callTimeout.asInstanceOf[js.Any])

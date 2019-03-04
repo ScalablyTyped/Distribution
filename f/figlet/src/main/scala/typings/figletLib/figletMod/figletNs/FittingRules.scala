@@ -38,20 +38,8 @@ object FittingRules {
     vRule4: scala.Boolean,
     vRule5: scala.Boolean
   ): FittingRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hLayout")(hLayout)
-    __obj.updateDynamic("hRule1")(hRule1)
-    __obj.updateDynamic("hRule2")(hRule2)
-    __obj.updateDynamic("hRule3")(hRule3)
-    __obj.updateDynamic("hRule4")(hRule4)
-    __obj.updateDynamic("hRule5")(hRule5)
-    __obj.updateDynamic("hRule6")(hRule6)
-    __obj.updateDynamic("vLayout")(vLayout)
-    __obj.updateDynamic("vRule1")(vRule1)
-    __obj.updateDynamic("vRule2")(vRule2)
-    __obj.updateDynamic("vRule3")(vRule3)
-    __obj.updateDynamic("vRule4")(vRule4)
-    __obj.updateDynamic("vRule5")(vRule5)
+    val __obj = js.Dynamic.literal(hLayout = hLayout, hRule1 = hRule1, hRule2 = hRule2, hRule3 = hRule3, hRule4 = hRule4, hRule5 = hRule5, hRule6 = hRule6, vLayout = vLayout, vRule1 = vRule1, vRule2 = vRule2, vRule3 = vRule3, vRule4 = vRule4, vRule5 = vRule5)
+  
     __obj.asInstanceOf[FittingRules]
   }
 }

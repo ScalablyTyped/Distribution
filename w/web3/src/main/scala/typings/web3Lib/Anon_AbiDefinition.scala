@@ -22,12 +22,8 @@ object Anon_AbiDefinition {
     languageVersion: java.lang.String,
     source: java.lang.String
   ): Anon_AbiDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abiDefinition")(abiDefinition)
-    __obj.updateDynamic("compilerVersion")(compilerVersion)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("languageVersion")(languageVersion)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(abiDefinition = abiDefinition, compilerVersion = compilerVersion, language = language, languageVersion = languageVersion, source = source)
+  
     __obj.asInstanceOf[Anon_AbiDefinition]
   }
 }

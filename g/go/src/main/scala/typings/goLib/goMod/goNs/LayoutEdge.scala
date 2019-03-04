@@ -39,14 +39,8 @@ object LayoutEdge {
     network: LayoutNetwork,
     toVertex: LayoutVertex
   ): LayoutEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("fromVertex")(fromVertex)
-    __obj.updateDynamic("getOtherVertex")(getOtherVertex)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("toVertex")(toVertex)
+    val __obj = js.Dynamic.literal(commit = commit, data = data, fromVertex = fromVertex, getOtherVertex = getOtherVertex, link = link, network = network, toVertex = toVertex)
+  
     __obj.asInstanceOf[LayoutEdge]
   }
 }

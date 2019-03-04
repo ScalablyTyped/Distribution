@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(intercomSettings: intercomDashWebLib.IntercomUnderscoreNs.IntercomSettings): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intercomSettings")(intercomSettings)
+    val __obj = js.Dynamic.literal(intercomSettings = intercomSettings)
+  
     __obj.asInstanceOf[Window]
   }
 }

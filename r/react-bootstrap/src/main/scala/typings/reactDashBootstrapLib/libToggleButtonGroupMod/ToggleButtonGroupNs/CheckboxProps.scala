@@ -18,7 +18,8 @@ object CheckboxProps {
     name: java.lang.String = null,
     onChange: js.Function1[/* values */ js.Array[_], scala.Unit] = null
   ): CheckboxProps = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     __obj.asInstanceOf[CheckboxProps]

@@ -12,8 +12,8 @@ trait Anon_IsSelected extends js.Object {
 object Anon_IsSelected {
   @scala.inline
   def apply(isSelected: scala.Boolean): Anon_IsSelected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSelected")(isSelected)
+    val __obj = js.Dynamic.literal(isSelected = isSelected)
+  
     __obj.asInstanceOf[Anon_IsSelected]
   }
 }

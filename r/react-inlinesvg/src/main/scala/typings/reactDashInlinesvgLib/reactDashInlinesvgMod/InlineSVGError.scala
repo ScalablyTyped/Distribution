@@ -24,12 +24,7 @@ object InlineSVGError {
     name: reactDashInlinesvgLib.reactDashInlinesvgLibStrings.InlineSVGError,
     stack: java.lang.String = null
   ): InlineSVGError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isConfigurationError")(isConfigurationError)
-    __obj.updateDynamic("isSupportedBrowser")(isSupportedBrowser)
-    __obj.updateDynamic("isUnsupportedBrowserError")(isUnsupportedBrowserError)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(isConfigurationError = isConfigurationError, isSupportedBrowser = isSupportedBrowser, isUnsupportedBrowserError = isUnsupportedBrowserError, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[InlineSVGError]
   }

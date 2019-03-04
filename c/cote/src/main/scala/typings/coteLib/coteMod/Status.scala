@@ -12,8 +12,8 @@ trait Status extends Event {
 object Status {
   @scala.inline
   def apply(advertisement: StatusAdvertisement, `type`: java.lang.String): Status = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("advertisement")(advertisement)
+    val __obj = js.Dynamic.literal(advertisement = advertisement)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Status]
   }
 }

@@ -68,28 +68,8 @@ object XController2 {
     restoreViewData: js.Function1[js.Any, scala.Unit],
     suspend: js.Function1[scala.Boolean, scala.Boolean]
   ): XController2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComponentWindow")(ComponentWindow)
-    __obj.updateDynamic("CreationArguments")(CreationArguments)
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("Sidebar")(Sidebar)
-    __obj.updateDynamic("ViewControllerName")(ViewControllerName)
-    __obj.updateDynamic("ViewData")(ViewData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attachFrame")(attachFrame)
-    __obj.updateDynamic("attachModel")(attachModel)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getSidebar")(getSidebar)
-    __obj.updateDynamic("getViewData")(getViewData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("restoreViewData")(restoreViewData)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(ComponentWindow = ComponentWindow, CreationArguments = CreationArguments, Frame = Frame, Model = Model, Sidebar = Sidebar, ViewControllerName = ViewControllerName, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getSidebar = getSidebar, getViewData = getViewData, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, restoreViewData = restoreViewData, suspend = suspend)
+  
     __obj.asInstanceOf[XController2]
   }
 }

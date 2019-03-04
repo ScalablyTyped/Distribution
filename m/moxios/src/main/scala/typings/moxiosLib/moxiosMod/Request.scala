@@ -39,15 +39,8 @@ object Request {
     url: java.lang.String,
     withCredentials: scala.Boolean
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("respondWith")(respondWith)
-    __obj.updateDynamic("respondWithTimeout")(respondWithTimeout)
-    __obj.updateDynamic("responseType")(responseType)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(config = config, headers = headers, respondWith = respondWith, respondWithTimeout = respondWithTimeout, responseType = responseType, timeout = timeout, url = url, withCredentials = withCredentials)
+  
     __obj.asInstanceOf[Request]
   }
 }

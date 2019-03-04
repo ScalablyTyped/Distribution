@@ -82,10 +82,7 @@ object ClusterIconStyle {
     textDecoration: java.lang.String = null,
     textSize: scala.Int | scala.Double = null
   ): ClusterIconStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
     if (anchorIcon != null) __obj.updateDynamic("anchorIcon")(anchorIcon)
     if (anchorText != null) __obj.updateDynamic("anchorText")(anchorText)
     if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition)

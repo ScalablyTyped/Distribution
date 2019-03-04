@@ -22,9 +22,8 @@ object AggregateAuthorizationArgs {
     accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     region: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): AggregateAuthorizationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AggregateAuthorizationArgs]
   }
 }

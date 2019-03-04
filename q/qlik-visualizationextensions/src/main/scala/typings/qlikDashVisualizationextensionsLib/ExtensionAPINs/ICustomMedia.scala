@@ -19,11 +19,8 @@ object ICustomMedia {
     ref: java.lang.String,
     `type`: java.lang.String
   ): ICustomMedia = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("layoutRef")(layoutRef)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(component = component, label = label, layoutRef = layoutRef, ref = ref)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomMedia]
   }
 }

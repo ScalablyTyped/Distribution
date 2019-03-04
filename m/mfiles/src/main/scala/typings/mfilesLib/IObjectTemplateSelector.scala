@@ -26,14 +26,8 @@ object IObjectTemplateSelector {
     GetTemplateItems: js.Function0[js.Any],
     SelectItem: js.Function1[java.lang.String, scala.Unit]
   ): IObjectTemplateSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClassSelector")(ClassSelector)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("GetObjectTypeIconURL")(GetObjectTypeIconURL)
-    __obj.updateDynamic("GetObjectTypeId")(GetObjectTypeId)
-    __obj.updateDynamic("GetObjectTypeName")(GetObjectTypeName)
-    __obj.updateDynamic("GetTemplateItems")(GetTemplateItems)
-    __obj.updateDynamic("SelectItem")(SelectItem)
+    val __obj = js.Dynamic.literal(ClassSelector = ClassSelector, Events = Events, GetObjectTypeIconURL = GetObjectTypeIconURL, GetObjectTypeId = GetObjectTypeId, GetObjectTypeName = GetObjectTypeName, GetTemplateItems = GetTemplateItems, SelectItem = SelectItem)
+  
     __obj.asInstanceOf[IObjectTemplateSelector]
   }
 }

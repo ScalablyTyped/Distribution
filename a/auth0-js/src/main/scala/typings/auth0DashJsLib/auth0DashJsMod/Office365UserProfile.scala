@@ -34,18 +34,7 @@ object Office365UserProfile {
     user_metadata: js.Any = null,
     username: java.lang.String = null
   ): Office365UserProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("identities")(identities)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("picture")(picture)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("tenantid")(tenantid)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("upn")(upn)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(clientID = clientID, created_at = created_at, identities = identities, name = name, nickname = nickname, picture = picture, sub = sub, tenantid = tenantid, updated_at = updated_at, upn = upn, user_id = user_id)
     if (app_metadata != null) __obj.updateDynamic("app_metadata")(app_metadata)
     if (email != null) __obj.updateDynamic("email")(email)
     if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)

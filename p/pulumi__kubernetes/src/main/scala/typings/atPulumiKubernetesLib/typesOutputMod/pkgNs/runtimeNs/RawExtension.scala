@@ -53,8 +53,8 @@ trait RawExtension extends js.Object {
 object RawExtension {
   @scala.inline
   def apply(Raw: java.lang.String): RawExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Raw")(Raw)
+    val __obj = js.Dynamic.literal(Raw = Raw)
+  
     __obj.asInstanceOf[RawExtension]
   }
 }

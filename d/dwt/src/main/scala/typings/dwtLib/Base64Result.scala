@@ -21,10 +21,8 @@ object Base64Result {
     getLength: js.Function0[scala.Double],
     getMD5: js.Function0[java.lang.String]
   ): Base64Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getMD5")(getMD5)
+    val __obj = js.Dynamic.literal(getData = getData, getLength = getLength, getMD5 = getMD5)
+  
     __obj.asInstanceOf[Base64Result]
   }
 }

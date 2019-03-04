@@ -38,11 +38,7 @@ object Options {
     publicKey: java.lang.String,
     networkVersion: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chainCode")(chainCode)
-    __obj.updateDynamic("childNumber")(childNumber)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("publicKey")(publicKey)
+    val __obj = js.Dynamic.literal(chainCode = chainCode, childNumber = childNumber, depth = depth, publicKey = publicKey)
     if (networkVersion != null) __obj.updateDynamic("networkVersion")(networkVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

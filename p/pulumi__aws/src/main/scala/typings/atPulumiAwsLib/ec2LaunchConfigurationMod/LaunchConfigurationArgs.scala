@@ -139,9 +139,7 @@ object LaunchConfigurationArgs {
     vpcClassicLinkId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcClassicLinkSecurityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): LaunchConfigurationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
     if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])

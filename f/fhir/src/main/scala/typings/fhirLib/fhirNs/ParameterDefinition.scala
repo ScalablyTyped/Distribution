@@ -85,8 +85,8 @@ object ParameterDefinition {
     name: code = null,
     profile: Reference = null
   ): ParameterDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(use = use)
+    __obj.updateDynamic("type")(`type`)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

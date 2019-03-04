@@ -21,12 +21,8 @@ object GraphNodeObject {
     x: scala.Double,
     y: scala.Double
   ): GraphNodeObject = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(id = id, index = index, name = name, x = x, y = y)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[GraphNodeObject]
   }
 }

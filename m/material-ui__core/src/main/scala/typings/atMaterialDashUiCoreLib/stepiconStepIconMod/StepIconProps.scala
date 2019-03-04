@@ -29,8 +29,7 @@ object StepIconProps {
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): StepIconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)

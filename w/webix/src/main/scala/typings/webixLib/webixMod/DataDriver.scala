@@ -26,14 +26,8 @@ object DataDriver {
     json: js.Any,
     xml: js.Any
   ): DataDriver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("csv")(csv)
-    __obj.updateDynamic("excel")(excel)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("htmltable")(htmltable)
-    __obj.updateDynamic("jsarray")(jsarray)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("xml")(xml)
+    val __obj = js.Dynamic.literal(csv = csv, excel = excel, html = html, htmltable = htmltable, jsarray = jsarray, json = json, xml = xml)
+  
     __obj.asInstanceOf[DataDriver]
   }
 }

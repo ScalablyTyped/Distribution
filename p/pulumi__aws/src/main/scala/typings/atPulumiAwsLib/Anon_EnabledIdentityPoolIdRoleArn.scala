@@ -20,10 +20,7 @@ object Anon_EnabledIdentityPoolIdRoleArn {
     userPoolId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_EnabledIdentityPoolIdRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identityPoolId")(identityPoolId.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identityPoolId = identityPoolId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnabledIdentityPoolIdRoleArn]
   }

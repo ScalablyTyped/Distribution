@@ -44,9 +44,7 @@ object Props {
     onSelectSuggest: js.Function2[/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction, _] = null,
     textNoResults: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocompletionRequest")(autocompletionRequest)
-    __obj.updateDynamic("googleMaps")(googleMaps)
+    val __obj = js.Dynamic.literal(autocompletionRequest = autocompletionRequest, googleMaps = googleMaps)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (customContainerRender != null) __obj.updateDynamic("customContainerRender")(customContainerRender)
     if (customRender != null) __obj.updateDynamic("customRender")(customRender)

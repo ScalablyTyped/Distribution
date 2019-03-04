@@ -13,9 +13,8 @@ trait WebAuthChallenger extends js.Object {
 object WebAuthChallenger {
   @scala.inline
   def apply(host: java.lang.String, port: scala.Double): WebAuthChallenger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(host = host, port = port)
+  
     __obj.asInstanceOf[WebAuthChallenger]
   }
 }

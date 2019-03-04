@@ -37,11 +37,8 @@ object PersistentVolumeClaimStatus {
     conditions: js.Array[PersistentVolumeClaimCondition],
     phase: java.lang.String
   ): PersistentVolumeClaimStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessModes")(accessModes)
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("phase")(phase)
+    val __obj = js.Dynamic.literal(accessModes = accessModes, capacity = capacity, conditions = conditions, phase = phase)
+  
     __obj.asInstanceOf[PersistentVolumeClaimStatus]
   }
 }

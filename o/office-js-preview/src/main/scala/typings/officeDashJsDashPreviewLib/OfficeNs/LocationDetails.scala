@@ -27,10 +27,8 @@ object LocationDetails {
     emailAddress: java.lang.String,
     locationIdentifier: LocationIdentifier
   ): LocationDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("locationIdentifier")(locationIdentifier)
+    val __obj = js.Dynamic.literal(displayName = displayName, emailAddress = emailAddress, locationIdentifier = locationIdentifier)
+  
     __obj.asInstanceOf[LocationDetails]
   }
 }

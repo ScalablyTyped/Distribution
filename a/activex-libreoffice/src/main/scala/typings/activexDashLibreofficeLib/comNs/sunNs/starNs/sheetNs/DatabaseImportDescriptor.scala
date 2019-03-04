@@ -41,12 +41,8 @@ object DatabaseImportDescriptor {
     SourceObject: java.lang.String,
     SourceType: DataImportMode
   ): DatabaseImportDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectionResource")(ConnectionResource)
-    __obj.updateDynamic("DatabaseName")(DatabaseName)
-    __obj.updateDynamic("IsNative")(IsNative)
-    __obj.updateDynamic("SourceObject")(SourceObject)
-    __obj.updateDynamic("SourceType")(SourceType)
+    val __obj = js.Dynamic.literal(ConnectionResource = ConnectionResource, DatabaseName = DatabaseName, IsNative = IsNative, SourceObject = SourceObject, SourceType = SourceType)
+  
     __obj.asInstanceOf[DatabaseImportDescriptor]
   }
 }

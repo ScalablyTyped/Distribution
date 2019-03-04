@@ -20,9 +20,8 @@ trait XVeto extends js.Object {
 object XVeto {
   @scala.inline
   def apply(Details: js.Any, Reason: java.lang.String): XVeto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Details")(Details)
-    __obj.updateDynamic("Reason")(Reason)
+    val __obj = js.Dynamic.literal(Details = Details, Reason = Reason)
+  
     __obj.asInstanceOf[XVeto]
   }
 }

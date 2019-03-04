@@ -83,14 +83,8 @@ object BoundedMinMax {
     valueExpression: java.lang.String = null,
     valueExpressionTitle: java.lang.String = null
   ): BoundedMinMax = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("maxDataValue")(maxDataValue)
-    __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    __obj.updateDynamic("minDataValue")(minDataValue)
-    __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxDataValue = maxDataValue, maxSize = maxSize.asInstanceOf[js.Any], minDataValue = minDataValue, minSize = minSize.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     if (field != null) __obj.updateDynamic("field")(field)
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)

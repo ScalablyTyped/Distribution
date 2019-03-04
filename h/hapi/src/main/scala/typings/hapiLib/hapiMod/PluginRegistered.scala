@@ -23,10 +23,8 @@ trait PluginRegistered extends js.Object {
 object PluginRegistered {
   @scala.inline
   def apply(name: java.lang.String, options: js.Object, version: java.lang.String): PluginRegistered = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, options = options, version = version)
+  
     __obj.asInstanceOf[PluginRegistered]
   }
 }

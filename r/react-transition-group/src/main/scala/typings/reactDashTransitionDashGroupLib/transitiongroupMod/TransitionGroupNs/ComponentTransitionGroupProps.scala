@@ -18,8 +18,7 @@ object ComponentTransitionGroupProps {
     enter: js.UndefOr[scala.Boolean] = js.undefined,
     exit: js.UndefOr[scala.Boolean] = js.undefined
   ): ComponentTransitionGroupProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)
     if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter)
     if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit)

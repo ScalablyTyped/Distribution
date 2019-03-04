@@ -56,10 +56,8 @@ object IFileManager {
     getFiles: js.Function0[js.Array[IFile]],
     setFiles: js.Function2[java.lang.String, js.Array[IFile], scala.Unit]
   ): IFileManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearFiles")(clearFiles)
-    __obj.updateDynamic("getFiles")(getFiles)
-    __obj.updateDynamic("setFiles")(setFiles)
+    val __obj = js.Dynamic.literal(clearFiles = clearFiles, getFiles = getFiles, setFiles = setFiles)
+  
     __obj.asInstanceOf[IFileManager]
   }
 }

@@ -52,20 +52,7 @@ object Attribute {
     targetProperty: java.lang.String = null,
     `type`: java.lang.String = null
   ): Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowExpressions")(allowExpressions)
-    __obj.updateDynamic("autocomplete")(autocomplete)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("deprecated")(deprecated)
-    __obj.updateDynamic("dynamicAttribute")(dynamicAttribute)
-    __obj.updateDynamic("enum")(enum)
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("ignore")(ignore)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("removeDashes")(removeDashes)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("setContextFlag")(setContextFlag)
+    val __obj = js.Dynamic.literal(allowExpressions = allowExpressions, autocomplete = autocomplete, defaultValue = defaultValue, deprecated = deprecated, dynamicAttribute = dynamicAttribute, enum = enum, filePath = filePath, html = html, ignore = ignore, key = key, removeDashes = removeDashes, required = required, setContextFlag = setContextFlag)
     if (name != null) __obj.updateDynamic("name")(name)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     if (preserveName != null) __obj.updateDynamic("preserveName")(preserveName)

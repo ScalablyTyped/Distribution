@@ -47,14 +47,8 @@ object URLObject {
     protocol: java.lang.String,
     search: java.lang.String
   ): URLObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, pathname = pathname, port = port, protocol = protocol, search = search)
+  
     __obj.asInstanceOf[URLObject]
   }
 }

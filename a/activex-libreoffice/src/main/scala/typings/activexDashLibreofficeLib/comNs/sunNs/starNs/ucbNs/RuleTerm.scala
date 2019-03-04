@@ -36,12 +36,8 @@ object RuleTerm {
     Property: java.lang.String,
     RegularExpression: scala.Boolean
   ): RuleTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CaseSensitive")(CaseSensitive)
-    __obj.updateDynamic("Operand")(Operand)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("Property")(Property)
-    __obj.updateDynamic("RegularExpression")(RegularExpression)
+    val __obj = js.Dynamic.literal(CaseSensitive = CaseSensitive, Operand = Operand, Operator = Operator, Property = Property, RegularExpression = RegularExpression)
+  
     __obj.asInstanceOf[RuleTerm]
   }
 }

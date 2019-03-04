@@ -13,8 +13,8 @@ trait Anon_Altitude extends js.Object {
 object Anon_Altitude {
   @scala.inline
   def apply(altitude: scala.Boolean, `type`: java.lang.String): Anon_Altitude = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("altitude")(altitude)
+    val __obj = js.Dynamic.literal(altitude = altitude)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Altitude]
   }
 }

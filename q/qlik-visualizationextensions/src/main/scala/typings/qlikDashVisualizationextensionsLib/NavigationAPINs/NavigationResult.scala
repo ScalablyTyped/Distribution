@@ -45,13 +45,8 @@ object NavigationResult {
     storyId: java.lang.String,
     success: scala.Boolean
   ): NavigationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("errorMsg")(errorMsg)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("sheetId")(sheetId)
-    __obj.updateDynamic("storyId")(storyId)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(error = error, errorMsg = errorMsg, mode = mode, sheetId = sheetId, storyId = storyId, success = success)
+  
     __obj.asInstanceOf[NavigationResult]
   }
 }

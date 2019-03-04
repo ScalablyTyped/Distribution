@@ -15,8 +15,8 @@ trait Anon_AudioSources extends js.Object {
 object Anon_AudioSources {
   @scala.inline
   def apply(audioSources: js.Array[wegameDashApiLib.wxNs.typesNs.AudioSourceType]): Anon_AudioSources = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioSources")(audioSources)
+    val __obj = js.Dynamic.literal(audioSources = audioSources)
+  
     __obj.asInstanceOf[Anon_AudioSources]
   }
 }

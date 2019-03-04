@@ -33,13 +33,8 @@ object Target {
     `type`: js.Function0[TargetType],
     url: js.Function0[java.lang.String]
   ): Target = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("browserContext")(browserContext)
-    __obj.updateDynamic("createCDPSession")(createCDPSession)
-    __obj.updateDynamic("opener")(opener)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(browser = browser, browserContext = browserContext, createCDPSession = createCDPSession, opener = opener, page = page, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Target]
   }
 }

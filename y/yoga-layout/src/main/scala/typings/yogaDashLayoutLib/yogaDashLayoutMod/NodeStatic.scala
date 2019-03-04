@@ -20,11 +20,8 @@ object NodeStatic {
     createWithConfig: js.Function1[YogaConfig, YogaNode],
     destroy: js.Function1[YogaNode, js.Any]
   ): NodeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createDefault")(createDefault)
-    __obj.updateDynamic("createWithConfig")(createWithConfig)
-    __obj.updateDynamic("destroy")(destroy)
+    val __obj = js.Dynamic.literal(create = create, createDefault = createDefault, createWithConfig = createWithConfig, destroy = destroy)
+  
     __obj.asInstanceOf[NodeStatic]
   }
 }

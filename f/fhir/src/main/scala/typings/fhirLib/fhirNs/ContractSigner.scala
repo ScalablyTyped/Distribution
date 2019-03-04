@@ -36,9 +36,8 @@ object ContractSigner {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): ContractSigner = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("party")(party)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(party = party, signature = signature)
+    __obj.updateDynamic("type")(`type`)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (extension != null) __obj.updateDynamic("extension")(extension)

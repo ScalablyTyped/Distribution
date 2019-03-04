@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class Runner protected ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(config: protractorLib.builtConfigMod.Config) = this()
-  var `config_`: protractorLib.builtConfigMod.Config = js.native
-  var `driverprovider_`: protractorLib.builtDriverProvidersMod.DriverProvider = js.native
+  var config_ : protractorLib.builtConfigMod.Config = js.native
+  var driverprovider_ : protractorLib.builtDriverProvidersMod.DriverProvider = js.native
   var frameworkUsesAfterEach: scala.Boolean = js.native
   var o: js.Any = js.native
-  var `plugins_`: protractorLib.builtPluginsMod.Plugins = js.native
-  var `preparer_`: js.Any = js.native
-  var `ready_`: js.UndefOr[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]] = js.native
+  var plugins_ : protractorLib.builtPluginsMod.Plugins = js.native
+  var preparer_ : js.Any = js.native
+  var ready_ : js.UndefOr[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]] = js.native
   var restartPromise: qLib.qMod.QNs.Promise[_] = js.native
   /**
     * Called after each test finishes.
@@ -51,7 +51,7 @@ class Runner protected ()
     * @private
     * @param {int} Standard unix exit code
     */
-  def `exit_`(exitCode: scala.Double): js.Any = js.native
+  def exit_(exitCode: scala.Double): js.Any = js.native
   /**
     * Getter for the Runner config object
     * @public
@@ -69,7 +69,7 @@ class Runner protected ()
     * 4) if a seleniumServerJar is specified, use that
     * 5) try to find the seleniumServerJar in protractor/selenium
     */
-  def `loadDriverProvider_`(config: protractorLib.builtConfigMod.Config): scala.Unit = js.native
+  def loadDriverProvider_(config: protractorLib.builtConfigMod.Config): scala.Unit = js.native
   /**
     * The primary workhorse interface. Kicks off the test running process.
     *
@@ -97,13 +97,13 @@ class Runner protected ()
     * Sets up convenience globals for test specs
     * @private
     */
-  def `setupGlobals_`(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser): scala.Unit = js.native
+  def setupGlobals_(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser): scala.Unit = js.native
   /**
     * Final cleanup on exiting the runner.
     *
     * @return {q.Promise} A promise which resolves on finish.
     * @private
     */
-  def `shutdown_`(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  def shutdown_(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
 }
 

@@ -46,14 +46,8 @@ object XUserInputInterception {
     removeKeyHandler: js.Function1[XKeyHandler, scala.Unit],
     removeMouseClickHandler: js.Function1[XMouseClickHandler, scala.Unit]
   ): XUserInputInterception = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addKeyHandler")(addKeyHandler)
-    __obj.updateDynamic("addMouseClickHandler")(addMouseClickHandler)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeKeyHandler")(removeKeyHandler)
-    __obj.updateDynamic("removeMouseClickHandler")(removeMouseClickHandler)
+    val __obj = js.Dynamic.literal(acquire = acquire, addKeyHandler = addKeyHandler, addMouseClickHandler = addMouseClickHandler, queryInterface = queryInterface, release = release, removeKeyHandler = removeKeyHandler, removeMouseClickHandler = removeMouseClickHandler)
+  
     __obj.asInstanceOf[XUserInputInterception]
   }
 }

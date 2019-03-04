@@ -42,10 +42,8 @@ object DateFormatI18n {
     monthNames: js.Array[java.lang.String],
     timeNames: js.Array[java.lang.String]
   ): DateFormatI18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayNames")(dayNames)
-    __obj.updateDynamic("monthNames")(monthNames)
-    __obj.updateDynamic("timeNames")(timeNames)
+    val __obj = js.Dynamic.literal(dayNames = dayNames, monthNames = monthNames, timeNames = timeNames)
+  
     __obj.asInstanceOf[DateFormatI18n]
   }
 }

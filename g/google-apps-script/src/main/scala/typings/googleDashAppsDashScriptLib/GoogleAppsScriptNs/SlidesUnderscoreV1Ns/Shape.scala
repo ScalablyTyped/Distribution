@@ -39,11 +39,8 @@ object Shape {
     shape_type: ShapeType,
     text: TextContent
   ): Shape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("shape_properties")(shape_properties)
-    __obj.updateDynamic("shape_type")(shape_type)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(placeholder = placeholder, shape_properties = shape_properties, shape_type = shape_type, text = text)
+  
     __obj.asInstanceOf[Shape]
   }
 }

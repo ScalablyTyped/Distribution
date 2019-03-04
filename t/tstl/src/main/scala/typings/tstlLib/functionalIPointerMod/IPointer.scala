@@ -15,8 +15,8 @@ trait IPointer[T] extends js.Object {
 object IPointer {
   @scala.inline
   def apply[T](value: T): IPointer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IPointer[T]]
   }
 }

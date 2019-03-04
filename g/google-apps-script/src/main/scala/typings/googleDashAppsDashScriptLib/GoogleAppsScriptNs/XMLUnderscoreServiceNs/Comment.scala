@@ -22,12 +22,8 @@ object Comment {
     getValue: js.Function0[java.lang.String],
     setText: js.Function1[java.lang.String, Comment]
   ): Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("getParentElement")(getParentElement)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(detach = detach, getParentElement = getParentElement, getText = getText, getValue = getValue, setText = setText)
+  
     __obj.asInstanceOf[Comment]
   }
 }

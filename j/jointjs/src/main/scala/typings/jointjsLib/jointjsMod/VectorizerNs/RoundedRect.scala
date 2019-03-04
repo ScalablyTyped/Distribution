@@ -29,11 +29,7 @@ object RoundedRect {
     `top-rx`: scala.Int | scala.Double = null,
     `top-ry`: scala.Int | scala.Double = null
   ): RoundedRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
     if (`bottom-rx` != null) __obj.updateDynamic("bottom-rx")(`bottom-rx`.asInstanceOf[js.Any])
     if (`bottom-ry` != null) __obj.updateDynamic("bottom-ry")(`bottom-ry`.asInstanceOf[js.Any])
     if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])

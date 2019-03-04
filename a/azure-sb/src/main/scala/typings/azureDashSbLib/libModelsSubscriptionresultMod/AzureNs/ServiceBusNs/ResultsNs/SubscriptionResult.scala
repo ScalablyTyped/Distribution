@@ -16,9 +16,8 @@ object SubscriptionResult {
     parse: js.Function1[js.Object, js.Object | js.Array[js.Object]],
     serialize: js.Function1[SubscriptionProperties, java.lang.String]
   ): SubscriptionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(parse = parse, serialize = serialize)
+  
     __obj.asInstanceOf[SubscriptionResult]
   }
 }

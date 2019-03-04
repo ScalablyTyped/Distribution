@@ -77,30 +77,8 @@ object XMetricField {
     setUserValue: js.Function2[scala.Double, scala.Double, scala.Unit],
     setValue: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XMetricField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DecimalDigits")(DecimalDigits)
-    __obj.updateDynamic("SpinSize")(SpinSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCorrectedValue")(getCorrectedValue)
-    __obj.updateDynamic("getDecimalDigits")(getDecimalDigits)
-    __obj.updateDynamic("getFirst")(getFirst)
-    __obj.updateDynamic("getLast")(getLast)
-    __obj.updateDynamic("getMax")(getMax)
-    __obj.updateDynamic("getMin")(getMin)
-    __obj.updateDynamic("getSpinSize")(getSpinSize)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDecimalDigits")(setDecimalDigits)
-    __obj.updateDynamic("setFirst")(setFirst)
-    __obj.updateDynamic("setLast")(setLast)
-    __obj.updateDynamic("setMax")(setMax)
-    __obj.updateDynamic("setMin")(setMin)
-    __obj.updateDynamic("setSpinSize")(setSpinSize)
-    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
-    __obj.updateDynamic("setUserValue")(setUserValue)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, SpinSize = SpinSize, acquire = acquire, getCorrectedValue = getCorrectedValue, getDecimalDigits = getDecimalDigits, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getSpinSize = getSpinSize, getValue = getValue, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDecimalDigits = setDecimalDigits, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setSpinSize = setSpinSize, setStrictFormat = setStrictFormat, setUserValue = setUserValue, setValue = setValue)
+  
     __obj.asInstanceOf[XMetricField]
   }
 }

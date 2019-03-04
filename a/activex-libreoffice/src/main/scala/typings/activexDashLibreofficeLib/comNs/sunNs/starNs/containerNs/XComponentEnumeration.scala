@@ -24,13 +24,8 @@ object XComponentEnumeration {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XComponentEnumeration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("hasMoreElements")(hasMoreElements)
-    __obj.updateDynamic("nextComponent")(nextComponent)
-    __obj.updateDynamic("nextElement")(nextElement)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, hasMoreElements = hasMoreElements, nextComponent = nextComponent, nextElement = nextElement, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XComponentEnumeration]
   }
 }

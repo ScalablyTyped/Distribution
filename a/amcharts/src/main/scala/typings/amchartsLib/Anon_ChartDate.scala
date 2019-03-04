@@ -30,8 +30,8 @@ object Anon_ChartDate {
     period: java.lang.String = null,
     startDate: stdLib.Date = null
   ): Anon_ChartDate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chart")(chart)
+    val __obj = js.Dynamic.literal(chart = chart)
+    __obj.updateDynamic("type")(`type`)
     if (date != null) __obj.updateDynamic("date")(date)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate)
     if (eventObject != null) __obj.updateDynamic("eventObject")(eventObject)

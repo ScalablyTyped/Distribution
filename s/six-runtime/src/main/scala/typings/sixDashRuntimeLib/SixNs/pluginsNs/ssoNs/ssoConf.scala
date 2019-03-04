@@ -22,12 +22,8 @@ object ssoConf {
     ssoConf: ssoClientConf,
     whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
   ): ssoConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapter")(adapter)
-    __obj.updateDynamic("enableCache")(enableCache)
-    __obj.updateDynamic("hasLoginCacheMaxAge")(hasLoginCacheMaxAge)
-    __obj.updateDynamic("ssoConf")(ssoConf)
-    __obj.updateDynamic("whiteList")(whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adapter = adapter, enableCache = enableCache, hasLoginCacheMaxAge = hasLoginCacheMaxAge, ssoConf = ssoConf, whiteList = whiteList.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ssoConf]
   }
 }

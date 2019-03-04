@@ -23,9 +23,8 @@ object IGridMoveColumnsApi {
     moveColumn: js.Function2[scala.Double, scala.Double, scala.Unit],
     on: uiDashGridLib.Anon_ColumnPositionChanged
   ): IGridMoveColumnsApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("moveColumn")(moveColumn)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(moveColumn = moveColumn, on = on)
+  
     __obj.asInstanceOf[IGridMoveColumnsApi]
   }
 }

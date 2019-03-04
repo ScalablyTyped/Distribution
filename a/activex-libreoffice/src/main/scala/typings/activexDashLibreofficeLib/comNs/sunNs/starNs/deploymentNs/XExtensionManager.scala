@@ -279,31 +279,8 @@ object XExtensionManager {
       scala.Boolean
     ]
   ): XExtensionManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedPackageTypes")(SupportedPackageTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addExtension")(addExtension)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("checkPrerequisitesAndEnable")(checkPrerequisitesAndEnable)
-    __obj.updateDynamic("createAbortChannel")(createAbortChannel)
-    __obj.updateDynamic("disableExtension")(disableExtension)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("enableExtension")(enableExtension)
-    __obj.updateDynamic("getAllExtensions")(getAllExtensions)
-    __obj.updateDynamic("getDeployedExtension")(getDeployedExtension)
-    __obj.updateDynamic("getDeployedExtensions")(getDeployedExtensions)
-    __obj.updateDynamic("getExtensionsWithSameIdentifier")(getExtensionsWithSameIdentifier)
-    __obj.updateDynamic("getExtensionsWithUnacceptedLicenses")(getExtensionsWithUnacceptedLicenses)
-    __obj.updateDynamic("getSupportedPackageTypes")(getSupportedPackageTypes)
-    __obj.updateDynamic("isReadOnlyRepository")(isReadOnlyRepository)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("reinstallDeployedExtensions")(reinstallDeployedExtensions)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeExtension")(removeExtension)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("synchronize")(synchronize)
+    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, acquire = acquire, addEventListener = addEventListener, addExtension = addExtension, addModifyListener = addModifyListener, checkPrerequisitesAndEnable = checkPrerequisitesAndEnable, createAbortChannel = createAbortChannel, disableExtension = disableExtension, dispose = dispose, enableExtension = enableExtension, getAllExtensions = getAllExtensions, getDeployedExtension = getDeployedExtension, getDeployedExtensions = getDeployedExtensions, getExtensionsWithSameIdentifier = getExtensionsWithSameIdentifier, getExtensionsWithUnacceptedLicenses = getExtensionsWithUnacceptedLicenses, getSupportedPackageTypes = getSupportedPackageTypes, isReadOnlyRepository = isReadOnlyRepository, queryInterface = queryInterface, reinstallDeployedExtensions = reinstallDeployedExtensions, release = release, removeEventListener = removeEventListener, removeExtension = removeExtension, removeModifyListener = removeModifyListener, synchronize = synchronize)
+  
     __obj.asInstanceOf[XExtensionManager]
   }
 }

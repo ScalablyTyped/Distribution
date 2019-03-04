@@ -22,12 +22,8 @@ object Anon_AnimationDuration {
     nodeDefaults: Anon_Icon,
     promotedLink: Anon_ArrowArrowConcave
   ): Anon_AnimationDuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationDuration")(animationDuration)
-    __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay)
-    __obj.updateDynamic("linkDefaults")(linkDefaults)
-    __obj.updateDynamic("nodeDefaults")(nodeDefaults)
-    __obj.updateDynamic("promotedLink")(promotedLink)
+    val __obj = js.Dynamic.literal(animationDuration = animationDuration, hoverBehaviorDelay = hoverBehaviorDelay, linkDefaults = linkDefaults, nodeDefaults = nodeDefaults, promotedLink = promotedLink)
+  
     __obj.asInstanceOf[Anon_AnimationDuration]
   }
 }

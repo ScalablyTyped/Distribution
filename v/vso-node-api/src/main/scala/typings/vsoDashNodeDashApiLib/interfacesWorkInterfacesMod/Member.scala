@@ -22,12 +22,8 @@ object Member {
     uniqueName: java.lang.String,
     url: java.lang.String
   ): Member = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("uniqueName")(uniqueName)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(displayName = displayName, id = id, imageUrl = imageUrl, uniqueName = uniqueName, url = url)
+  
     __obj.asInstanceOf[Member]
   }
 }

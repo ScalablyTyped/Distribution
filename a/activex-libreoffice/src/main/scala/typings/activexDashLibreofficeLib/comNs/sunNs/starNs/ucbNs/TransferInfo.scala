@@ -43,11 +43,8 @@ object TransferInfo {
     NewTitle: java.lang.String,
     SourceURL: java.lang.String
   ): TransferInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MoveData")(MoveData)
-    __obj.updateDynamic("NameClash")(NameClash)
-    __obj.updateDynamic("NewTitle")(NewTitle)
-    __obj.updateDynamic("SourceURL")(SourceURL)
+    val __obj = js.Dynamic.literal(MoveData = MoveData, NameClash = NameClash, NewTitle = NewTitle, SourceURL = SourceURL)
+  
     __obj.asInstanceOf[TransferInfo]
   }
 }

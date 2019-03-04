@@ -25,9 +25,8 @@ object CronJobStatus {
     active: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference],
     lastScheduleTime: java.lang.String
   ): CronJobStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("lastScheduleTime")(lastScheduleTime)
+    val __obj = js.Dynamic.literal(active = active, lastScheduleTime = lastScheduleTime)
+  
     __obj.asInstanceOf[CronJobStatus]
   }
 }

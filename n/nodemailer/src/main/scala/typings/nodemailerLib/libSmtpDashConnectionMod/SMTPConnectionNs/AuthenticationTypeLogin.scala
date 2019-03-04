@@ -21,9 +21,7 @@ object AuthenticationTypeLogin {
     user: java.lang.String,
     `type`: nodemailerLib.nodemailerLibStrings.login | nodemailerLib.nodemailerLibStrings.Login | nodemailerLib.nodemailerLibStrings.LOGIN = null
   ): AuthenticationTypeLogin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pass")(pass)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(pass = pass, user = user)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationTypeLogin]
   }

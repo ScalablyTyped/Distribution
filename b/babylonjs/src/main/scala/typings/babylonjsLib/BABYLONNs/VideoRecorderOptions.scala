@@ -20,10 +20,8 @@ trait VideoRecorderOptions extends js.Object {
 object VideoRecorderOptions {
   @scala.inline
   def apply(fps: scala.Double, mimeType: java.lang.String, recordChunckSize: scala.Double): VideoRecorderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fps")(fps)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("recordChunckSize")(recordChunckSize)
+    val __obj = js.Dynamic.literal(fps = fps, mimeType = mimeType, recordChunckSize = recordChunckSize)
+  
     __obj.asInstanceOf[VideoRecorderOptions]
   }
 }

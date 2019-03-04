@@ -22,9 +22,8 @@ object VpnConnectionRouteArgs {
     destinationCidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     vpnConnectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): VpnConnectionRouteArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpnConnectionId")(vpnConnectionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock.asInstanceOf[js.Any], vpnConnectionId = vpnConnectionId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[VpnConnectionRouteArgs]
   }
 }

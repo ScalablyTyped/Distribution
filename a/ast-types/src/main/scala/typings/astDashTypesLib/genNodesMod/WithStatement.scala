@@ -23,8 +23,9 @@ object WithStatement {
     `object`: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.WithStatement
   ): WithStatement = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WithStatement]
   }
 }

@@ -20,11 +20,8 @@ object CredentialsHandshakeOptions {
     login: java.lang.String,
     password: java.lang.String
   ): CredentialsHandshakeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authType")(authType)
-    __obj.updateDynamic("deploymentId")(deploymentId)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(authType = authType, deploymentId = deploymentId, login = login, password = password)
+  
     __obj.asInstanceOf[CredentialsHandshakeOptions]
   }
 }

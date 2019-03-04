@@ -83,8 +83,7 @@ object Anon_AcceptsInStreamVideoPlacements {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AcceptsInStreamVideoPlacements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (!js.isUndefined(acceptsInStreamVideoPlacements)) __obj.updateDynamic("acceptsInStreamVideoPlacements")(acceptsInStreamVideoPlacements)
     if (!js.isUndefined(acceptsInterstitialPlacements)) __obj.updateDynamic("acceptsInterstitialPlacements")(acceptsInterstitialPlacements)
     if (!js.isUndefined(acceptsPublisherPaidPlacements)) __obj.updateDynamic("acceptsPublisherPaidPlacements")(acceptsPublisherPaidPlacements)

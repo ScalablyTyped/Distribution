@@ -15,9 +15,8 @@ trait FontSizeDetails extends js.Object {
 object FontSizeDetails {
   @scala.inline
   def apply(levelOfControl: java.lang.String, pixelSize: scala.Double): FontSizeDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("levelOfControl")(levelOfControl)
-    __obj.updateDynamic("pixelSize")(pixelSize)
+    val __obj = js.Dynamic.literal(levelOfControl = levelOfControl, pixelSize = pixelSize)
+  
     __obj.asInstanceOf[FontSizeDetails]
   }
 }

@@ -33,10 +33,7 @@ object PayDialogParams {
     request_id: java.lang.String = null,
     test_currency: java.lang.String = null
   ): PayDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("product")(product)
+    val __obj = js.Dynamic.literal(action = action, method = method, product = product)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (pricepoint_id != null) __obj.updateDynamic("pricepoint_id")(pricepoint_id)

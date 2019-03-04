@@ -18,8 +18,7 @@ object TagObject {
     description: java.lang.String = null,
     externalDocs: ExternalDocumentationObject = null
   ): TagObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs)
     __obj.asInstanceOf[TagObject]

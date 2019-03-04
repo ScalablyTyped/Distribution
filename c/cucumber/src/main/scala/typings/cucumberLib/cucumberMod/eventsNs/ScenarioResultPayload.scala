@@ -22,12 +22,8 @@ object ScenarioResultPayload {
     status: cucumberLib.cucumberMod.Status,
     stepResults: js.Array[_]
   ): ScenarioResultPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("failureException")(failureException)
-    __obj.updateDynamic("scenario")(scenario)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("stepResults")(stepResults)
+    val __obj = js.Dynamic.literal(duration = duration, failureException = failureException, scenario = scenario, status = status, stepResults = stepResults)
+  
     __obj.asInstanceOf[ScenarioResultPayload]
   }
 }

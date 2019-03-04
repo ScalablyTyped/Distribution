@@ -61,25 +61,8 @@ object TableRow {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): TableRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("IsStartOfNewPage")(IsStartOfNewPage)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("OptimalHeight")(OptimalHeight)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Height = Height, IsStartOfNewPage = IsStartOfNewPage, IsVisible = IsVisible, OptimalHeight = OptimalHeight, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[TableRow]
   }
 }

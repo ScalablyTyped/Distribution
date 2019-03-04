@@ -64,15 +64,8 @@ object LocalClientTime {
     timezoneOffset: scala.Double,
     year: scala.Double
   ): LocalClientTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("milliseconds")(milliseconds)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("timezoneOffset")(timezoneOffset)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(date = date, hours = hours, milliseconds = milliseconds, minutes = minutes, month = month, seconds = seconds, timezoneOffset = timezoneOffset, year = year)
+  
     __obj.asInstanceOf[LocalClientTime]
   }
 }

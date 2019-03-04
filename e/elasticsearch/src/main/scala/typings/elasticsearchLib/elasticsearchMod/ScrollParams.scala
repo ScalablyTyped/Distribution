@@ -22,9 +22,7 @@ object ScrollParams {
     method: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): ScrollParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scroll")(scroll)
-    __obj.updateDynamic("scrollId")(scrollId)
+    val __obj = js.Dynamic.literal(scroll = scroll, scrollId = scrollId)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

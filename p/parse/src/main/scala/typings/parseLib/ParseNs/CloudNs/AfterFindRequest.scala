@@ -23,12 +23,8 @@ object AfterFindRequest {
     original: parseLib.ParseNs.Object = null,
     user: parseLib.ParseNs.User = null
   ): AfterFindRequest = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("triggerName")(triggerName)
+    val __obj = js.Dynamic.literal(headers = headers, ip = ip, log = log, objects = objects, triggerName = triggerName)
+    __obj.updateDynamic("object")(`object`)
     if (installationId != null) __obj.updateDynamic("installationId")(installationId)
     if (!js.isUndefined(master)) __obj.updateDynamic("master")(master)
     if (original != null) __obj.updateDynamic("original")(original)

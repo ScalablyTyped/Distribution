@@ -75,9 +75,7 @@ object IHotkeyProps {
     preventDefault: js.UndefOr[scala.Boolean] = js.undefined,
     stopPropagation: js.UndefOr[scala.Boolean] = js.undefined
   ): IHotkeyProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("combo")(combo)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(combo = combo, label = label)
     if (!js.isUndefined(allowInInput)) __obj.updateDynamic("allowInInput")(allowInInput)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

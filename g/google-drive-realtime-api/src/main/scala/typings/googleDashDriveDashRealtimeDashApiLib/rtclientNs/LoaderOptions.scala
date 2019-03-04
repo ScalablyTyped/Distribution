@@ -48,17 +48,8 @@ object LoaderOptions {
     ],
     registerTypes: js.Function0[scala.Unit]
   ): LoaderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterAuth")(afterAuth)
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("authButtonElementId")(authButtonElementId)
-    __obj.updateDynamic("autoCreate")(autoCreate)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("defaultTitle")(defaultTitle)
-    __obj.updateDynamic("initializeModel")(initializeModel)
-    __obj.updateDynamic("newFileMimeType")(newFileMimeType)
-    __obj.updateDynamic("onFileLoaded")(onFileLoaded)
-    __obj.updateDynamic("registerTypes")(registerTypes)
+    val __obj = js.Dynamic.literal(afterAuth = afterAuth, appId = appId, authButtonElementId = authButtonElementId, autoCreate = autoCreate, clientId = clientId, defaultTitle = defaultTitle, initializeModel = initializeModel, newFileMimeType = newFileMimeType, onFileLoaded = onFileLoaded, registerTypes = registerTypes)
+  
     __obj.asInstanceOf[LoaderOptions]
   }
 }

@@ -29,13 +29,8 @@ object Anon_Acquired {
     `type`: trezorDashConnectLib.trezorDashConnectLibStrings.acquired,
     state: java.lang.String = null
   ): Anon_Acquired = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("features")(features)
-    __obj.updateDynamic("firmware")(firmware)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(features = features, firmware = firmware, label = label, mode = mode, path = path, status = status)
+    __obj.updateDynamic("type")(`type`)
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[Anon_Acquired]
   }

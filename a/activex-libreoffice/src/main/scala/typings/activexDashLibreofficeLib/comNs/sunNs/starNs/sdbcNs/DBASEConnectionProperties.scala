@@ -28,11 +28,8 @@ object DBASEConnectionProperties {
     password: java.lang.String,
     user: java.lang.String
   ): DBASEConnectionProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharSet")(CharSet)
-    __obj.updateDynamic("ShowDeleted")(ShowDeleted)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(CharSet = CharSet, ShowDeleted = ShowDeleted, password = password, user = user)
+  
     __obj.asInstanceOf[DBASEConnectionProperties]
   }
 }

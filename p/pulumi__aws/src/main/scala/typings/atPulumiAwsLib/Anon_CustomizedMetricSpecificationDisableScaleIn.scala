@@ -24,8 +24,7 @@ object Anon_CustomizedMetricSpecificationDisableScaleIn {
     scaleInCooldown: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     scaleOutCooldown: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_CustomizedMetricSpecificationDisableScaleIn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetValue")(targetValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(targetValue = targetValue.asInstanceOf[js.Any])
     if (customizedMetricSpecification != null) __obj.updateDynamic("customizedMetricSpecification")(customizedMetricSpecification.asInstanceOf[js.Any])
     if (disableScaleIn != null) __obj.updateDynamic("disableScaleIn")(disableScaleIn.asInstanceOf[js.Any])
     if (predefinedMetricSpecification != null) __obj.updateDynamic("predefinedMetricSpecification")(predefinedMetricSpecification.asInstanceOf[js.Any])

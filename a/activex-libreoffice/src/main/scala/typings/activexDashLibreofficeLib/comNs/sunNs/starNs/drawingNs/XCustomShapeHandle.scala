@@ -32,13 +32,8 @@ object XCustomShapeHandle {
     release: js.Function0[scala.Unit],
     setControllerPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit]
   ): XCustomShapeHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setControllerPosition")(setControllerPosition)
+    val __obj = js.Dynamic.literal(Position = Position, acquire = acquire, getPosition = getPosition, queryInterface = queryInterface, release = release, setControllerPosition = setControllerPosition)
+  
     __obj.asInstanceOf[XCustomShapeHandle]
   }
 }

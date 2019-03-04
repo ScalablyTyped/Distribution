@@ -12,8 +12,8 @@ trait HTMLElement extends js.Object {
 object HTMLElement {
   @scala.inline
   def apply(kendoBindingTarget: kendoDashUiLib.kendoNs.dataNs.BindingTarget): HTMLElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kendoBindingTarget")(kendoBindingTarget)
+    val __obj = js.Dynamic.literal(kendoBindingTarget = kendoBindingTarget)
+  
     __obj.asInstanceOf[HTMLElement]
   }
 }

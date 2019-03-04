@@ -15,9 +15,8 @@ object ProjectResponse {
     kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | ActionValueInspected | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed,
     projectName: java.lang.String
   ): ProjectResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("projectName")(projectName)
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], projectName = projectName)
+  
     __obj.asInstanceOf[ProjectResponse]
   }
 }

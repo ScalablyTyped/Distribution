@@ -43,10 +43,8 @@ object TimePickerAndroidStatic {
     open: js.Function1[TimePickerAndroidOpenOptions, js.Promise[TimePickerAndroidOpenReturn]],
     timeSetAction: reactDashNativeLib.reactDashNativeLibStrings.timeSetAction
   ): TimePickerAndroidStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dismissedAction")(dismissedAction)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("timeSetAction")(timeSetAction)
+    val __obj = js.Dynamic.literal(dismissedAction = dismissedAction, open = open, timeSetAction = timeSetAction)
+  
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }
 }

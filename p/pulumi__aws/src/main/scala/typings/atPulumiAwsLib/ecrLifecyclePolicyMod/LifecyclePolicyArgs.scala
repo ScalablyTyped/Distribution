@@ -22,9 +22,8 @@ object LifecyclePolicyArgs {
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     repository: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): LifecyclePolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[LifecyclePolicyArgs]
   }
 }

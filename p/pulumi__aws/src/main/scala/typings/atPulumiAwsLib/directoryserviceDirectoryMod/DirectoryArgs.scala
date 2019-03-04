@@ -74,8 +74,7 @@ object DirectoryArgs {
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcSettings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SubnetIdsVpcId] = null
   ): DirectoryArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
     if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
     if (connectSettings != null) __obj.updateDynamic("connectSettings")(connectSettings.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

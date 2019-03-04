@@ -47,14 +47,8 @@ object XUrlContainer {
     release: js.Function0[scala.Unit],
     removeUrl: js.Function1[java.lang.String, scala.Unit]
   ): XUrlContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addUrl")(addUrl)
-    __obj.updateDynamic("findUrl")(findUrl)
-    __obj.updateDynamic("getUrls")(getUrls)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeUrl")(removeUrl)
+    val __obj = js.Dynamic.literal(acquire = acquire, addUrl = addUrl, findUrl = findUrl, getUrls = getUrls, queryInterface = queryInterface, release = release, removeUrl = removeUrl)
+  
     __obj.asInstanceOf[XUrlContainer]
   }
 }

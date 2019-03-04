@@ -20,11 +20,8 @@ object StickerSet {
     stickers: js.Array[Sticker],
     title: java.lang.String
   ): StickerSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains_masks")(contains_masks)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stickers")(stickers)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(contains_masks = contains_masks, name = name, stickers = stickers, title = title)
+  
     __obj.asInstanceOf[StickerSet]
   }
 }

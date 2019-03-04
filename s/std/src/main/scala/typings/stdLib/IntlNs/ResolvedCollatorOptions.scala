@@ -26,14 +26,8 @@ object ResolvedCollatorOptions {
     sensitivity: java.lang.String,
     usage: java.lang.String
   ): ResolvedCollatorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caseFirst")(caseFirst)
-    __obj.updateDynamic("collation")(collation)
-    __obj.updateDynamic("ignorePunctuation")(ignorePunctuation)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("numeric")(numeric)
-    __obj.updateDynamic("sensitivity")(sensitivity)
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(caseFirst = caseFirst, collation = collation, ignorePunctuation = ignorePunctuation, locale = locale, numeric = numeric, sensitivity = sensitivity, usage = usage)
+  
     __obj.asInstanceOf[ResolvedCollatorOptions]
   }
 }

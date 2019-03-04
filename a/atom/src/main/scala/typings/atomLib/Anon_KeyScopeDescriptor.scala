@@ -16,9 +16,8 @@ object Anon_KeyScopeDescriptor {
     scopeDescriptor: atomLib.atomMod.ScopeDescriptor,
     value: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   ): Anon_KeyScopeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopeDescriptor")(scopeDescriptor)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+  
     __obj.asInstanceOf[Anon_KeyScopeDescriptor]
   }
 }

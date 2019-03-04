@@ -18,10 +18,8 @@ object WidgetsInstance {
     showModalView: js.Function1[ModalOptions, ModalView],
     showMoleView: js.Function1[MoleOptions, MoleView]
   ): WidgetsInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("showDrawerView")(showDrawerView)
-    __obj.updateDynamic("showModalView")(showModalView)
-    __obj.updateDynamic("showMoleView")(showMoleView)
+    val __obj = js.Dynamic.literal(showDrawerView = showDrawerView, showModalView = showModalView, showMoleView = showMoleView)
+  
     __obj.asInstanceOf[WidgetsInstance]
   }
 }

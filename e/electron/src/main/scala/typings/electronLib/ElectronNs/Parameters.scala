@@ -45,13 +45,8 @@ object Parameters {
     viewPosition: Point,
     viewSize: Size
   ): Parameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("screenPosition")(screenPosition.asInstanceOf[js.Any])
-    __obj.updateDynamic("screenSize")(screenSize)
-    __obj.updateDynamic("viewPosition")(viewPosition)
-    __obj.updateDynamic("viewSize")(viewSize)
+    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor, scale = scale, screenPosition = screenPosition.asInstanceOf[js.Any], screenSize = screenSize, viewPosition = viewPosition, viewSize = viewSize)
+  
     __obj.asInstanceOf[Parameters]
   }
 }

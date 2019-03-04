@@ -18,10 +18,8 @@ object CommandInstanceInfo {
     executor: IExecutor[C, N, M, I, O],
     location: NamespaceLocateResult[C, N, M, I, O]
   ): CommandInstanceInfo[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("executor")(executor)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(env = env, executor = executor, location = location)
+  
     __obj.asInstanceOf[CommandInstanceInfo[C, N, M, I, O]]
   }
 }

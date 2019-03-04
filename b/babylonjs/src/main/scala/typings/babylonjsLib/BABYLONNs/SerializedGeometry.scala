@@ -36,11 +36,8 @@ object SerializedGeometry {
     normals: stdLib.Float32Array,
     positions: stdLib.Float32Array
   ): SerializedGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("normals")(normals)
-    __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(id = id, indices = indices, normals = normals, positions = positions)
+  
     __obj.asInstanceOf[SerializedGeometry]
   }
 }

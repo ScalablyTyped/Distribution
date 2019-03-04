@@ -36,16 +36,7 @@ object FancyBoxSlideShow {
     $button: JQuery = null,
     timer: scala.Int | scala.Double = null
   ): FancyBoxSlideShow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$progress")($progress)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal($progress = $progress, clear = clear, init = init, instance = instance, isActive = isActive, set = set, start = start, stop = stop, toggle = toggle)
     if ($button != null) __obj.updateDynamic("$button")($button)
     if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxSlideShow]

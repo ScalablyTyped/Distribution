@@ -13,8 +13,8 @@ trait Anon_Contents
 object Anon_Contents {
   @scala.inline
   def apply(contents: java.lang.String): Anon_Contents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
+    val __obj = js.Dynamic.literal(contents = contents)
+  
     __obj.asInstanceOf[Anon_Contents]
   }
 }

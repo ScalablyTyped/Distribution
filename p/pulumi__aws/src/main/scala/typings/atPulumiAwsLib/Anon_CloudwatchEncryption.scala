@@ -18,10 +18,8 @@ object Anon_CloudwatchEncryption {
     jobBookmarksEncryption: Anon_JobBookmarksEncryptionMode,
     s3Encryption: Anon_KmsKeyArn
   ): Anon_CloudwatchEncryption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloudwatchEncryption")(cloudwatchEncryption)
-    __obj.updateDynamic("jobBookmarksEncryption")(jobBookmarksEncryption)
-    __obj.updateDynamic("s3Encryption")(s3Encryption)
+    val __obj = js.Dynamic.literal(cloudwatchEncryption = cloudwatchEncryption, jobBookmarksEncryption = jobBookmarksEncryption, s3Encryption = s3Encryption)
+  
     __obj.asInstanceOf[Anon_CloudwatchEncryption]
   }
 }

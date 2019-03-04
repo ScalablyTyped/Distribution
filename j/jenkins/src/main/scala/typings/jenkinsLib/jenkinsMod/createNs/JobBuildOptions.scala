@@ -14,8 +14,7 @@ trait JobBuildOptions extends js.Object {
 object JobBuildOptions {
   @scala.inline
   def apply(name: java.lang.String, parameters: js.Any = null, token: java.lang.String = null): JobBuildOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     if (token != null) __obj.updateDynamic("token")(token)
     __obj.asInstanceOf[JobBuildOptions]

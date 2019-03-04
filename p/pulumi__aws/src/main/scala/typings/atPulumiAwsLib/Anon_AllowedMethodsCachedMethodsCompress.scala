@@ -44,13 +44,7 @@ object Anon_AllowedMethodsCachedMethodsCompress {
     smoothStreaming: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     trustedSigners: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_AllowedMethodsCachedMethodsCompress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedMethods")(allowedMethods.asInstanceOf[js.Any])
-    __obj.updateDynamic("cachedMethods")(cachedMethods.asInstanceOf[js.Any])
-    __obj.updateDynamic("forwardedValues")(forwardedValues.asInstanceOf[js.Any])
-    __obj.updateDynamic("pathPattern")(pathPattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetOriginId")(targetOriginId.asInstanceOf[js.Any])
-    __obj.updateDynamic("viewerProtocolPolicy")(viewerProtocolPolicy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], cachedMethods = cachedMethods.asInstanceOf[js.Any], forwardedValues = forwardedValues.asInstanceOf[js.Any], pathPattern = pathPattern.asInstanceOf[js.Any], targetOriginId = targetOriginId.asInstanceOf[js.Any], viewerProtocolPolicy = viewerProtocolPolicy.asInstanceOf[js.Any])
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
     if (fieldLevelEncryptionId != null) __obj.updateDynamic("fieldLevelEncryptionId")(fieldLevelEncryptionId.asInstanceOf[js.Any])

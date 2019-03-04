@@ -18,10 +18,8 @@ object MetricsFactory {
     getOrCreate: js.Function1[MetricsProperties, CommandMetrics],
     resetCache: js.Function0[scala.Unit]
   ): MetricsFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllMetrics")(getAllMetrics)
-    __obj.updateDynamic("getOrCreate")(getOrCreate)
-    __obj.updateDynamic("resetCache")(resetCache)
+    val __obj = js.Dynamic.literal(getAllMetrics = getAllMetrics, getOrCreate = getOrCreate, resetCache = resetCache)
+  
     __obj.asInstanceOf[MetricsFactory]
   }
 }

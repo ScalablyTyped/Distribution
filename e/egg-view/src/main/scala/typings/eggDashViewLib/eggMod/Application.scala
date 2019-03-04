@@ -12,8 +12,8 @@ trait Application extends js.Object {
 object Application {
   @scala.inline
   def apply(view: eggDashViewLib.ViewManager): Application = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(view = view)
+  
     __obj.asInstanceOf[Application]
   }
 }

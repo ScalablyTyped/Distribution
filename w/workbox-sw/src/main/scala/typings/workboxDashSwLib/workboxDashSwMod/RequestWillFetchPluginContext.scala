@@ -12,8 +12,8 @@ trait RequestWillFetchPluginContext extends js.Object {
 object RequestWillFetchPluginContext {
   @scala.inline
   def apply(request: stdLib.Request): RequestWillFetchPluginContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(request = request)
+  
     __obj.asInstanceOf[RequestWillFetchPluginContext]
   }
 }

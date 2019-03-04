@@ -24,8 +24,8 @@ object ServerAuth {
       scala.Unit
     ]
   ): ServerAuth = {
-    val __obj = js.Dynamic.literal(`strategy_bearer-access-token` = `strategy_bearer-access-token`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("strategy")(`strategy_bearer-access-token`)
     __obj.asInstanceOf[ServerAuth]
   }
 }

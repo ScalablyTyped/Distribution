@@ -40,21 +40,8 @@ object VideoInfo {
     tags: qiniuDashJsLib.Anon_Creationtime,
     width: scala.Double
   ): VideoInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bit_rate")(bit_rate)
-    __obj.updateDynamic("codec_name")(codec_name)
-    __obj.updateDynamic("codec_type")(codec_type)
-    __obj.updateDynamic("display_aspect_ratio")(display_aspect_ratio)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("nb_frames")(nb_frames)
-    __obj.updateDynamic("pix_fmt")(pix_fmt)
-    __obj.updateDynamic("r_frame_rate")(r_frame_rate)
-    __obj.updateDynamic("sample_aspect_ratio")(sample_aspect_ratio)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bit_rate = bit_rate, codec_name = codec_name, codec_type = codec_type, display_aspect_ratio = display_aspect_ratio, duration = duration, height = height, index = index, nb_frames = nb_frames, pix_fmt = pix_fmt, r_frame_rate = r_frame_rate, sample_aspect_ratio = sample_aspect_ratio, start_time = start_time, tags = tags, width = width)
+  
     __obj.asInstanceOf[VideoInfo]
   }
 }

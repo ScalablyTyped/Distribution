@@ -19,7 +19,8 @@ object Break {
     data: unistLib.unistMod.Data = null,
     position: unistLib.unistMod.Position = null
   ): Break = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[Break]

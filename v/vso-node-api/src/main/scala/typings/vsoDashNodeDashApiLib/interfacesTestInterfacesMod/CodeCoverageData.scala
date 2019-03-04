@@ -27,10 +27,8 @@ object CodeCoverageData {
     buildPlatform: java.lang.String,
     coverageStats: js.Array[CodeCoverageStatistics]
   ): CodeCoverageData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildFlavor")(buildFlavor)
-    __obj.updateDynamic("buildPlatform")(buildPlatform)
-    __obj.updateDynamic("coverageStats")(coverageStats)
+    val __obj = js.Dynamic.literal(buildFlavor = buildFlavor, buildPlatform = buildPlatform, coverageStats = coverageStats)
+  
     __obj.asInstanceOf[CodeCoverageData]
   }
 }

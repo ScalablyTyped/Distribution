@@ -47,9 +47,7 @@ object ButtonOptions {
     `type`: java.lang.String = null,
     value: java.lang.String = null
   ): ButtonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("onPress")(onPress)
+    val __obj = js.Dynamic.literal(color = color, onPress = onPress)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)

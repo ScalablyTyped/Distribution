@@ -20,11 +20,8 @@ object TestResultSummary {
     testFailures: TestFailuresAnalysis,
     testResultsContext: TestResultsContext
   ): TestResultSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedResultsAnalysis")(aggregatedResultsAnalysis)
-    __obj.updateDynamic("teamProject")(teamProject)
-    __obj.updateDynamic("testFailures")(testFailures)
-    __obj.updateDynamic("testResultsContext")(testResultsContext)
+    val __obj = js.Dynamic.literal(aggregatedResultsAnalysis = aggregatedResultsAnalysis, teamProject = teamProject, testFailures = testFailures, testResultsContext = testResultsContext)
+  
     __obj.asInstanceOf[TestResultSummary]
   }
 }

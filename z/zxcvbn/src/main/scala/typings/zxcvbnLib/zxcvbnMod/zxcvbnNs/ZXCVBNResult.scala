@@ -62,15 +62,8 @@ object ZXCVBNResult {
     score: ZXCVBNScore,
     sequence: js.Array[ZXCVBNSequence]
   ): ZXCVBNResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calc_time")(calc_time)
-    __obj.updateDynamic("crack_times_display")(crack_times_display)
-    __obj.updateDynamic("crack_times_seconds")(crack_times_seconds)
-    __obj.updateDynamic("feedback")(feedback)
-    __obj.updateDynamic("guesses")(guesses)
-    __obj.updateDynamic("guesses_log10")(guesses_log10)
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(calc_time = calc_time, crack_times_display = crack_times_display, crack_times_seconds = crack_times_seconds, feedback = feedback, guesses = guesses, guesses_log10 = guesses_log10, score = score, sequence = sequence)
+  
     __obj.asInstanceOf[ZXCVBNResult]
   }
 }

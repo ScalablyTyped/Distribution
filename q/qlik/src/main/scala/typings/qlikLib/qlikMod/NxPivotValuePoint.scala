@@ -22,11 +22,7 @@ object NxPivotValuePoint {
     qType: qlikLib.qlikLibStrings.V | qlikLib.qlikLibStrings.E | qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.T | qlikLib.qlikLibStrings.P | qlikLib.qlikLibStrings.R | qlikLib.qlikLibStrings.U,
     qLabel: java.lang.String = null
   ): NxPivotValuePoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttrExps")(qAttrExps)
-    __obj.updateDynamic("qNum")(qNum)
-    __obj.updateDynamic("qText")(qText)
-    __obj.updateDynamic("qType")(qType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(qAttrExps = qAttrExps, qNum = qNum, qText = qText, qType = qType.asInstanceOf[js.Any])
     if (qLabel != null) __obj.updateDynamic("qLabel")(qLabel)
     __obj.asInstanceOf[NxPivotValuePoint]
   }

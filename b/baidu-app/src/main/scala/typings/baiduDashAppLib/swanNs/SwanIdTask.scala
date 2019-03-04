@@ -13,9 +13,8 @@ trait SwanIdTask extends js.Object {
 object SwanIdTask {
   @scala.inline
   def apply(data: baiduDashAppLib.Anon_Swanid, errno: java.lang.String): SwanIdTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("errno")(errno)
+    val __obj = js.Dynamic.literal(data = data, errno = errno)
+  
     __obj.asInstanceOf[SwanIdTask]
   }
 }

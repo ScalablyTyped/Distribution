@@ -13,8 +13,7 @@ trait Anon_Description extends js.Object {
 object Anon_Description {
   @scala.inline
   def apply(searchableAttributes: js.Array[java.lang.String], description: java.lang.String = null): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("searchableAttributes")(searchableAttributes)
+    val __obj = js.Dynamic.literal(searchableAttributes = searchableAttributes)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[Anon_Description]
   }

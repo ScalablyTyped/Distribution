@@ -19,9 +19,8 @@ trait CreateGlobalTableInput extends js.Object {
 object CreateGlobalTableInput {
   @scala.inline
   def apply(GlobalTableName: TableName, ReplicationGroup: ReplicaList): CreateGlobalTableInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GlobalTableName")(GlobalTableName)
-    __obj.updateDynamic("ReplicationGroup")(ReplicationGroup)
+    val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName, ReplicationGroup = ReplicationGroup)
+  
     __obj.asInstanceOf[CreateGlobalTableInput]
   }
 }

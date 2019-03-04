@@ -30,16 +30,8 @@ object FileCoverage {
     toJSON: js.Function0[js.Object],
     toSummary: js.Function0[CoverageSummary]
   ): FileCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeBranchTotals")(computeBranchTotals)
-    __obj.updateDynamic("computeSimpleTotals")(computeSimpleTotals)
-    __obj.updateDynamic("getBranchCoverageByLine")(getBranchCoverageByLine)
-    __obj.updateDynamic("getLineCoverage")(getLineCoverage)
-    __obj.updateDynamic("getUncoveredLines")(getUncoveredLines)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("resetHits")(resetHits)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSummary")(toSummary)
+    val __obj = js.Dynamic.literal(computeBranchTotals = computeBranchTotals, computeSimpleTotals = computeSimpleTotals, getBranchCoverageByLine = getBranchCoverageByLine, getLineCoverage = getLineCoverage, getUncoveredLines = getUncoveredLines, merge = merge, resetHits = resetHits, toJSON = toJSON, toSummary = toSummary)
+  
     __obj.asInstanceOf[FileCoverage]
   }
 }

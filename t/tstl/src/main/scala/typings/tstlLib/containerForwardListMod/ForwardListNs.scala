@@ -21,11 +21,11 @@ object ForwardListNs extends js.Object {
     /**
       * @hidden
       */
-    var `next_`: js.Any = js.native
+    var next_ : js.Any = js.native
     /**
       * @hidden
       */
-    var `source_ptr_`: js.Any = js.native
+    var source_ptr_ : js.Any = js.native
     /**
       * Reference of the value.
       */
@@ -34,7 +34,7 @@ object ForwardListNs extends js.Object {
     /**
       * @hidden
       */
-    var `value_`: js.Any = js.native
+    var value_ : js.Any = js.native
     /**
       * Get next iterator.
       *

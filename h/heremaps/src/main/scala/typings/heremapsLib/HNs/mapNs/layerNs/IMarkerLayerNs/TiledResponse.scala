@@ -24,10 +24,8 @@ object TiledResponse {
     objects: js.Array[heremapsLib.HNs.mapNs.AbstractMarker],
     requested: scala.Double
   ): TiledResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("requested")(requested)
+    val __obj = js.Dynamic.literal(number = number, objects = objects, requested = requested)
+  
     __obj.asInstanceOf[TiledResponse]
   }
 }

@@ -42,9 +42,7 @@ object ConditionalCellValueRule {
     operator: ConditionalCellValueOperator | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Between | officeDashJsLib.officeDashJsLibStrings.NotBetween | officeDashJsLib.officeDashJsLibStrings.EqualTo | officeDashJsLib.officeDashJsLibStrings.NotEqualTo | officeDashJsLib.officeDashJsLibStrings.GreaterThan | officeDashJsLib.officeDashJsLibStrings.LessThan | officeDashJsLib.officeDashJsLibStrings.GreaterThanOrEqual | officeDashJsLib.officeDashJsLibStrings.LessThanOrEqual,
     formula2: java.lang.String = null
   ): ConditionalCellValueRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formula1")(formula1)
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula1 = formula1, operator = operator.asInstanceOf[js.Any])
     if (formula2 != null) __obj.updateDynamic("formula2")(formula2)
     __obj.asInstanceOf[ConditionalCellValueRule]
   }

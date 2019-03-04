@@ -24,13 +24,8 @@ object Anon_DeviceFamily {
     os: java.lang.String,
     patch: java.lang.String
   ): Anon_DeviceFamily = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("patch")(patch)
+    val __obj = js.Dynamic.literal(device = device, family = family, major = major, minor = minor, os = os, patch = patch)
+  
     __obj.asInstanceOf[Anon_DeviceFamily]
   }
 }

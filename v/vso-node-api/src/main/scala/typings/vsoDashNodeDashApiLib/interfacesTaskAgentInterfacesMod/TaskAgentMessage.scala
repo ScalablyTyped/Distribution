@@ -32,11 +32,8 @@ object TaskAgentMessage {
     messageId: scala.Double,
     messageType: java.lang.String
   ): TaskAgentMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("iV")(iV)
-    __obj.updateDynamic("messageId")(messageId)
-    __obj.updateDynamic("messageType")(messageType)
+    val __obj = js.Dynamic.literal(body = body, iV = iV, messageId = messageId, messageType = messageType)
+  
     __obj.asInstanceOf[TaskAgentMessage]
   }
 }

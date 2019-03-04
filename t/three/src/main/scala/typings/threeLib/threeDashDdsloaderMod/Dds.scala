@@ -22,12 +22,8 @@ object Dds {
     mipmaps: js.Array[stdLib.ImageData],
     width: scala.Double
   ): Dds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("mipmapCount")(mipmapCount)
-    __obj.updateDynamic("mipmaps")(mipmaps)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(format = format, height = height, mipmapCount = mipmapCount, mipmaps = mipmaps, width = width)
+  
     __obj.asInstanceOf[Dds]
   }
 }

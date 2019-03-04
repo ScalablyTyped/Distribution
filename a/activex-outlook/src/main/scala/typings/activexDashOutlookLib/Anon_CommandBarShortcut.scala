@@ -16,9 +16,8 @@ object Anon_CommandBarShortcut {
     CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     Shortcut: activexDashOutlookLib.OutlookNs.OutlookBarShortcut
   ): Anon_CommandBarShortcut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CommandBar")(CommandBar)
-    __obj.updateDynamic("Shortcut")(Shortcut)
+    val __obj = js.Dynamic.literal(CommandBar = CommandBar, Shortcut = Shortcut)
+  
     __obj.asInstanceOf[Anon_CommandBarShortcut]
   }
 }

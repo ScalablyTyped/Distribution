@@ -18,8 +18,8 @@ object Anon_GetTokenParams {
       js.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token]
     ]
   ): Anon_GetTokenParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getToken")(getToken)
+    val __obj = js.Dynamic.literal(getToken = getToken)
+  
     __obj.asInstanceOf[Anon_GetTokenParams]
   }
 }

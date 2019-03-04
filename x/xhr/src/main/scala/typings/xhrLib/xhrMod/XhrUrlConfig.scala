@@ -27,8 +27,7 @@ object XhrUrlConfig {
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     xhr: stdLib.XMLHttpRequest = null
   ): XhrUrlConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)

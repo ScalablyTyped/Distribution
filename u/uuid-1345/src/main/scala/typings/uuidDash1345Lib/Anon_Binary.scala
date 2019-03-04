@@ -16,8 +16,7 @@ object Anon_Binary {
     encoding: uuidDash1345Lib.uuidDash1345LibStrings.binary,
     mac: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Binary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (!js.isUndefined(mac)) __obj.updateDynamic("mac")(mac)
     __obj.asInstanceOf[Anon_Binary]
   }

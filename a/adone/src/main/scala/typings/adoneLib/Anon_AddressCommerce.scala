@@ -52,27 +52,8 @@ object Anon_AddressCommerce {
     setLocale: js.Function1[adoneLib.adoneNs.fakeNs.INs.Locale, scala.Unit],
     systemNs: Anon_CommonFileExt
   ): Anon_AddressCommerce = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("addressNs")(addressNs)
-    __obj.updateDynamic("commerceNs")(commerceNs)
-    __obj.updateDynamic("companyNs")(companyNs)
-    __obj.updateDynamic("databaseNs")(databaseNs)
-    __obj.updateDynamic("dateNs")(dateNs)
-    __obj.updateDynamic("fake")(fake)
-    __obj.updateDynamic("financeNs")(financeNs)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("hackerNs")(hackerNs)
-    __obj.updateDynamic("helpersNs")(helpersNs)
-    __obj.updateDynamic("imageNs")(imageNs)
-    __obj.updateDynamic("internetNs")(internetNs)
-    __obj.updateDynamic("loremNs")(loremNs)
-    __obj.updateDynamic("nameNs")(nameNs)
-    __obj.updateDynamic("phoneNs")(phoneNs)
-    __obj.updateDynamic("randomNs")(randomNs)
-    __obj.updateDynamic("seed")(seed)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("systemNs")(systemNs)
+    val __obj = js.Dynamic.literal(INs = INs, addressNs = addressNs, commerceNs = commerceNs, companyNs = companyNs, databaseNs = databaseNs, dateNs = dateNs, fake = fake, financeNs = financeNs, getLocale = getLocale, hackerNs = hackerNs, helpersNs = helpersNs, imageNs = imageNs, internetNs = internetNs, loremNs = loremNs, nameNs = nameNs, phoneNs = phoneNs, randomNs = randomNs, seed = seed, setLocale = setLocale, systemNs = systemNs)
+  
     __obj.asInstanceOf[Anon_AddressCommerce]
   }
 }

@@ -32,17 +32,8 @@ object HelmetData {
     title: HelmetDatum,
     titleAttributes: HelmetDatum
   ): HelmetData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("bodyAttributes")(bodyAttributes)
-    __obj.updateDynamic("htmlAttributes")(htmlAttributes)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("noscript")(noscript)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleAttributes")(titleAttributes)
+    val __obj = js.Dynamic.literal(base = base, bodyAttributes = bodyAttributes, htmlAttributes = htmlAttributes, link = link, meta = meta, noscript = noscript, script = script, style = style, title = title, titleAttributes = titleAttributes)
+  
     __obj.asInstanceOf[HelmetData]
   }
 }

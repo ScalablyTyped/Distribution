@@ -40,19 +40,8 @@ object Shape {
     y1: Datum,
     yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y
   ): Shape = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("fillcolor")(fillcolor)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("x0")(x0.asInstanceOf[js.Any])
-    __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
-    __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
-    __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fillcolor = fillcolor, layer = layer.asInstanceOf[js.Any], line = line, opacity = opacity, path = path, visible = visible, x0 = x0.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], y0 = y0.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shape]
   }
 }

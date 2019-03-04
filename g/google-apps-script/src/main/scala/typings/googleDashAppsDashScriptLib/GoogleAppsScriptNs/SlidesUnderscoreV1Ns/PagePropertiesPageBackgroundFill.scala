@@ -21,9 +21,8 @@ trait PagePropertiesPageBackgroundFill extends js.Object {
 object PagePropertiesPageBackgroundFill {
   @scala.inline
   def apply(kind: googleDashAppsDashScriptLib.Anon_Solidfill, property_state: PropertyState): PagePropertiesPageBackgroundFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("property_state")(property_state)
+    val __obj = js.Dynamic.literal(kind = kind, property_state = property_state)
+  
     __obj.asInstanceOf[PagePropertiesPageBackgroundFill]
   }
 }

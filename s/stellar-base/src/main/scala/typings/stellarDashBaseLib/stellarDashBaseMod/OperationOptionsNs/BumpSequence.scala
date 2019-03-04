@@ -14,8 +14,7 @@ trait BumpSequence
 object BumpSequence {
   @scala.inline
   def apply(bumpTo: java.lang.String, source: java.lang.String = null): BumpSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bumpTo")(bumpTo)
+    val __obj = js.Dynamic.literal(bumpTo = bumpTo)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[BumpSequence]
   }

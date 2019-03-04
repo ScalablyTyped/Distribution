@@ -26,10 +26,7 @@ object ModalButtonDescriptor {
     orderHint: scala.Int | scala.Double = null,
     `type`: inboxsdkLib.inboxsdkLibStrings.PRIMARY_ACTION | inboxsdkLib.inboxsdkLibStrings.SECONDARY_ACTION = null
   ): ModalButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(onClick = onClick, text = text, title = title)
     if (color != null) __obj.updateDynamic("color")(color)
     if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

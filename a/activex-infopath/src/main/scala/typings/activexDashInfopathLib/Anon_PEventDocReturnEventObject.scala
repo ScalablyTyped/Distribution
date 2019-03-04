@@ -12,8 +12,8 @@ trait Anon_PEventDocReturnEventObject extends js.Object {
 object Anon_PEventDocReturnEventObject {
   @scala.inline
   def apply(pEvent: activexDashInfopathLib.InfoPathNs.DocReturnEventObject): Anon_PEventDocReturnEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pEvent")(pEvent)
+    val __obj = js.Dynamic.literal(pEvent = pEvent)
+  
     __obj.asInstanceOf[Anon_PEventDocReturnEventObject]
   }
 }

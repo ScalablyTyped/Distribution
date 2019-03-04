@@ -16,9 +16,8 @@ object TfvcCheckinEventData {
     changeset: TfvcChangeset,
     project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
   ): TfvcCheckinEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeset")(changeset)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(changeset = changeset, project = project)
+  
     __obj.asInstanceOf[TfvcCheckinEventData]
   }
 }

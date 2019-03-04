@@ -22,12 +22,8 @@ object IBitmapDecoder {
     getFrameAsync: js.Function1[scala.Double, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[BitmapFrame]],
     getPreviewAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ImageStream]]
   ): IBitmapDecoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitmapContainerProperties")(bitmapContainerProperties)
-    __obj.updateDynamic("decoderInformation")(decoderInformation)
-    __obj.updateDynamic("frameCount")(frameCount)
-    __obj.updateDynamic("getFrameAsync")(getFrameAsync)
-    __obj.updateDynamic("getPreviewAsync")(getPreviewAsync)
+    val __obj = js.Dynamic.literal(bitmapContainerProperties = bitmapContainerProperties, decoderInformation = decoderInformation, frameCount = frameCount, getFrameAsync = getFrameAsync, getPreviewAsync = getPreviewAsync)
+  
     __obj.asInstanceOf[IBitmapDecoder]
   }
 }

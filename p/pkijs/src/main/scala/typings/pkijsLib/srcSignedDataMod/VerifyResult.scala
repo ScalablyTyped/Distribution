@@ -24,10 +24,7 @@ object VerifyResult {
     signerCertificate: pkijsLib.srcCertificateMod.default = null,
     signerCertificateVerified: js.UndefOr[scala.Boolean] = js.undefined
   ): VerifyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, date = date, message = message)
     if (!js.isUndefined(signatureVerified)) __obj.updateDynamic("signatureVerified")(signatureVerified)
     if (signerCertificate != null) __obj.updateDynamic("signerCertificate")(signerCertificate)
     if (!js.isUndefined(signerCertificateVerified)) __obj.updateDynamic("signerCertificateVerified")(signerCertificateVerified)

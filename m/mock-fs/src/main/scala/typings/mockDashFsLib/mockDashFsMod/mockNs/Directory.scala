@@ -12,8 +12,8 @@ trait Directory extends js.Object {
 object Directory {
   @scala.inline
   def apply(_directory: js.Any): Directory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_directory")(_directory)
+    val __obj = js.Dynamic.literal(_directory = _directory)
+  
     __obj.asInstanceOf[Directory]
   }
 }

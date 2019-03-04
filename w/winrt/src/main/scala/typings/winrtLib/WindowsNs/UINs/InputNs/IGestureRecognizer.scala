@@ -80,41 +80,8 @@ object IGestureRecognizer {
     processUpEvent: js.Function1[PointerPoint, scala.Unit],
     showGestureFeedback: scala.Boolean
   ): IGestureRecognizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoProcessInertia")(autoProcessInertia)
-    __obj.updateDynamic("canBeDoubleTap")(canBeDoubleTap)
-    __obj.updateDynamic("completeGesture")(completeGesture)
-    __obj.updateDynamic("crossSlideExact")(crossSlideExact)
-    __obj.updateDynamic("crossSlideHorizontally")(crossSlideHorizontally)
-    __obj.updateDynamic("crossSlideThresholds")(crossSlideThresholds)
-    __obj.updateDynamic("gestureSettings")(gestureSettings)
-    __obj.updateDynamic("inertiaExpansion")(inertiaExpansion)
-    __obj.updateDynamic("inertiaExpansionDeceleration")(inertiaExpansionDeceleration)
-    __obj.updateDynamic("inertiaRotationAngle")(inertiaRotationAngle)
-    __obj.updateDynamic("inertiaRotationDeceleration")(inertiaRotationDeceleration)
-    __obj.updateDynamic("inertiaTranslationDeceleration")(inertiaTranslationDeceleration)
-    __obj.updateDynamic("inertiaTranslationDisplacement")(inertiaTranslationDisplacement)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isInertial")(isInertial)
-    __obj.updateDynamic("manipulationExact")(manipulationExact)
-    __obj.updateDynamic("mouseWheelParameters")(mouseWheelParameters)
-    __obj.updateDynamic("oncrosssliding")(oncrosssliding)
-    __obj.updateDynamic("ondragging")(ondragging)
-    __obj.updateDynamic("onholding")(onholding)
-    __obj.updateDynamic("onmanipulationcompleted")(onmanipulationcompleted)
-    __obj.updateDynamic("onmanipulationinertiastarting")(onmanipulationinertiastarting)
-    __obj.updateDynamic("onmanipulationstarted")(onmanipulationstarted)
-    __obj.updateDynamic("onmanipulationupdated")(onmanipulationupdated)
-    __obj.updateDynamic("onrighttapped")(onrighttapped)
-    __obj.updateDynamic("ontapped")(ontapped)
-    __obj.updateDynamic("pivotCenter")(pivotCenter)
-    __obj.updateDynamic("pivotRadius")(pivotRadius)
-    __obj.updateDynamic("processDownEvent")(processDownEvent)
-    __obj.updateDynamic("processInertia")(processInertia)
-    __obj.updateDynamic("processMouseWheelEvent")(processMouseWheelEvent)
-    __obj.updateDynamic("processMoveEvents")(processMoveEvents)
-    __obj.updateDynamic("processUpEvent")(processUpEvent)
-    __obj.updateDynamic("showGestureFeedback")(showGestureFeedback)
+    val __obj = js.Dynamic.literal(autoProcessInertia = autoProcessInertia, canBeDoubleTap = canBeDoubleTap, completeGesture = completeGesture, crossSlideExact = crossSlideExact, crossSlideHorizontally = crossSlideHorizontally, crossSlideThresholds = crossSlideThresholds, gestureSettings = gestureSettings, inertiaExpansion = inertiaExpansion, inertiaExpansionDeceleration = inertiaExpansionDeceleration, inertiaRotationAngle = inertiaRotationAngle, inertiaRotationDeceleration = inertiaRotationDeceleration, inertiaTranslationDeceleration = inertiaTranslationDeceleration, inertiaTranslationDisplacement = inertiaTranslationDisplacement, isActive = isActive, isInertial = isInertial, manipulationExact = manipulationExact, mouseWheelParameters = mouseWheelParameters, oncrosssliding = oncrosssliding, ondragging = ondragging, onholding = onholding, onmanipulationcompleted = onmanipulationcompleted, onmanipulationinertiastarting = onmanipulationinertiastarting, onmanipulationstarted = onmanipulationstarted, onmanipulationupdated = onmanipulationupdated, onrighttapped = onrighttapped, ontapped = ontapped, pivotCenter = pivotCenter, pivotRadius = pivotRadius, processDownEvent = processDownEvent, processInertia = processInertia, processMouseWheelEvent = processMouseWheelEvent, processMoveEvents = processMoveEvents, processUpEvent = processUpEvent, showGestureFeedback = showGestureFeedback)
+  
     __obj.asInstanceOf[IGestureRecognizer]
   }
 }

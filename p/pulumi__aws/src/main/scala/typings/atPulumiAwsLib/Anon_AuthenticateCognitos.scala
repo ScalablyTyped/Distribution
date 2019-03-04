@@ -26,13 +26,8 @@ object Anon_AuthenticateCognitos {
     targetGroupArn: java.lang.String,
     `type`: java.lang.String
   ): Anon_AuthenticateCognitos = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("authenticateCognitos")(authenticateCognitos)
-    __obj.updateDynamic("authenticateOidcs")(authenticateOidcs)
-    __obj.updateDynamic("fixedResponses")(fixedResponses)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("redirects")(redirects)
-    __obj.updateDynamic("targetGroupArn")(targetGroupArn)
+    val __obj = js.Dynamic.literal(authenticateCognitos = authenticateCognitos, authenticateOidcs = authenticateOidcs, fixedResponses = fixedResponses, order = order, redirects = redirects, targetGroupArn = targetGroupArn)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AuthenticateCognitos]
   }
 }

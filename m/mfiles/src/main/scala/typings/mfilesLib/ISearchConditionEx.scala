@@ -29,13 +29,8 @@ object ISearchConditionEx {
     Set: js.Function4[ISearchCondition, scala.Boolean, scala.Boolean, scala.Boolean, scala.Unit],
     SpecialNULL: scala.Boolean
   ): ISearchConditionEx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Enabled")(Enabled)
-    __obj.updateDynamic("Ignored")(Ignored)
-    __obj.updateDynamic("SearchCondition")(SearchCondition)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("SpecialNULL")(SpecialNULL)
+    val __obj = js.Dynamic.literal(Clone = Clone, Enabled = Enabled, Ignored = Ignored, SearchCondition = SearchCondition, Set = Set, SpecialNULL = SpecialNULL)
+  
     __obj.asInstanceOf[ISearchConditionEx]
   }
 }

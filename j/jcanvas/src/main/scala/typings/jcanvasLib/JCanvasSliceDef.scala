@@ -44,13 +44,7 @@ object JCanvasSliceDef {
     name: java.lang.String = null,
     spread: scala.Int | scala.Double = null
   ): JCanvasSliceDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("fillStyle")(fillStyle)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(end = end, fillStyle = fillStyle, radius = radius, start = start, x = x, y = y)
     if (groups != null) __obj.updateDynamic("groups")(groups)
     if (!js.isUndefined(layer)) __obj.updateDynamic("layer")(layer)
     if (name != null) __obj.updateDynamic("name")(name)

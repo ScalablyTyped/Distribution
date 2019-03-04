@@ -22,12 +22,8 @@ object area {
     notifications: js.Array[ckeditorLib.CKEDITORNs.pluginsNs.notification],
     remove: js.Function1[ckeditorLib.CKEDITORNs.pluginsNs.notification, scala.Unit]
   ): area = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("notifications")(notifications)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, editor = editor, element = element, notifications = notifications, remove = remove)
+  
     __obj.asInstanceOf[area]
   }
 }

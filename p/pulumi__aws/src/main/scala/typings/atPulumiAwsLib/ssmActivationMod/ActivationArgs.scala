@@ -37,8 +37,7 @@ object ActivationArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     registrationLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): ActivationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iamRole")(iamRole.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(iamRole = iamRole.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

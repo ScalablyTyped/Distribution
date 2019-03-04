@@ -16,9 +16,8 @@ object Config {
     colors: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     levels: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("levels")(levels)
+    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+  
     __obj.asInstanceOf[Config]
   }
 }

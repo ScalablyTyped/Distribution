@@ -20,9 +20,7 @@ object Anon_Payload {
     qos: mqttDashPacketLib.mqttDashPacketMod.QoS = null,
     retain: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Payload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(payload = payload, topic = topic)
     if (qos != null) __obj.updateDynamic("qos")(qos)
     if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
     __obj.asInstanceOf[Anon_Payload]

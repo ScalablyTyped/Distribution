@@ -12,8 +12,8 @@ trait IINVITATION extends js.Object {
 object IINVITATION {
   @scala.inline
   def apply(invitation: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.InvitationNs.SFSInvitation): IINVITATION = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invitation")(invitation)
+    val __obj = js.Dynamic.literal(invitation = invitation)
+  
     __obj.asInstanceOf[IINVITATION]
   }
 }

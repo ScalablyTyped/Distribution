@@ -12,8 +12,8 @@ trait Anon_Byob extends js.Object {
 object Anon_Byob {
   @scala.inline
   def apply(mode: stdLib.stdLibStrings.byob): Anon_Byob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
+  
     __obj.asInstanceOf[Anon_Byob]
   }
 }

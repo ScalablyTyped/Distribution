@@ -19,9 +19,8 @@ trait ASPxClientTreeListColumnResizingEventArgs extends ASPxClientCancelEventArg
 object ASPxClientTreeListColumnResizingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, column: ASPxClientTreeListColumn): ASPxClientTreeListColumnResizingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("column")(column)
+    val __obj = js.Dynamic.literal(cancel = cancel, column = column)
+  
     __obj.asInstanceOf[ASPxClientTreeListColumnResizingEventArgs]
   }
 }

@@ -22,11 +22,8 @@ object PhoneNumber {
     `type`: java.lang.String,
     value: java.lang.String
   ): PhoneNumber = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("canonicalForm")(canonicalForm)
-    __obj.updateDynamic("formattedType")(formattedType)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(canonicalForm = canonicalForm, formattedType = formattedType, metadata = metadata, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PhoneNumber]
   }
 }

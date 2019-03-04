@@ -24,8 +24,8 @@ object ClassImplements {
     superClass: astDashTypesLib.genKindsMod.ExpressionKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): ClassImplements = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (superClass != null) __obj.updateDynamic("superClass")(superClass)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[ClassImplements]

@@ -23,8 +23,7 @@ object GobyOptions {
     minimumBackgroundDuration: scala.Int | scala.Double = null,
     updateDialog: UpdateDialog = null
   ): GobyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkFrequency")(checkFrequency)
+    val __obj = js.Dynamic.literal(checkFrequency = checkFrequency)
     if (deploymentKey != null) __obj.updateDynamic("deploymentKey")(deploymentKey)
     if (installMode != null) __obj.updateDynamic("installMode")(installMode)
     if (mandatoryInstallMode != null) __obj.updateDynamic("mandatoryInstallMode")(mandatoryInstallMode)

@@ -14,9 +14,7 @@ trait Anon_Attribute extends js.Object {
 object Anon_Attribute {
   @scala.inline
   def apply(attribute: java.lang.String, id: scala.Double | java.lang.String, value: java.lang.String = null): Anon_Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attribute = attribute, id = id.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Anon_Attribute]
   }

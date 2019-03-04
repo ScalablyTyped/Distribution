@@ -80,28 +80,8 @@ object XSpinValue {
     setValue: js.Function1[scala.Double, scala.Unit],
     setValues: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
   ): XSpinValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Maximum")(Maximum)
-    __obj.updateDynamic("Minimum")(Minimum)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("SpinIncrement")(SpinIncrement)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addAdjustmentListener")(addAdjustmentListener)
-    __obj.updateDynamic("getMaximum")(getMaximum)
-    __obj.updateDynamic("getMinimum")(getMinimum)
-    __obj.updateDynamic("getOrientation")(getOrientation)
-    __obj.updateDynamic("getSpinIncrement")(getSpinIncrement)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAdjustmentListener")(removeAdjustmentListener)
-    __obj.updateDynamic("setMaximum")(setMaximum)
-    __obj.updateDynamic("setMinimum")(setMinimum)
-    __obj.updateDynamic("setOrientation")(setOrientation)
-    __obj.updateDynamic("setSpinIncrement")(setSpinIncrement)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("setValues")(setValues)
+    val __obj = js.Dynamic.literal(Maximum = Maximum, Minimum = Minimum, Orientation = Orientation, SpinIncrement = SpinIncrement, Value = Value, acquire = acquire, addAdjustmentListener = addAdjustmentListener, getMaximum = getMaximum, getMinimum = getMinimum, getOrientation = getOrientation, getSpinIncrement = getSpinIncrement, getValue = getValue, queryInterface = queryInterface, release = release, removeAdjustmentListener = removeAdjustmentListener, setMaximum = setMaximum, setMinimum = setMinimum, setOrientation = setOrientation, setSpinIncrement = setSpinIncrement, setValue = setValue, setValues = setValues)
+  
     __obj.asInstanceOf[XSpinValue]
   }
 }

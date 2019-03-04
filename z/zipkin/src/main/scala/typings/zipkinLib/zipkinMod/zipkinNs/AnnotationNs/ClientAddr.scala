@@ -11,8 +11,8 @@ trait ClientAddr
 object ClientAddr {
   @scala.inline
   def apply(annotationType: java.lang.String): ClientAddr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
+    val __obj = js.Dynamic.literal(annotationType = annotationType)
+  
     __obj.asInstanceOf[ClientAddr]
   }
 }

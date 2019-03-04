@@ -28,11 +28,7 @@ object RawLogEntry {
     logIndex: java.lang.String = null,
     transactionIndex: java.lang.String = null
   ): RawLogEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("topics")(topics)
-    __obj.updateDynamic("transactionHash")(transactionHash)
+    val __obj = js.Dynamic.literal(address = address, data = data, topics = topics, transactionHash = transactionHash)
     if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash)
     if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber)
     if (logIndex != null) __obj.updateDynamic("logIndex")(logIndex)

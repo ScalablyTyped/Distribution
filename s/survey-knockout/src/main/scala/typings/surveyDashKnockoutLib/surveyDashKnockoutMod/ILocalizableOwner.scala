@@ -18,10 +18,8 @@ object ILocalizableOwner {
     getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
     getProcessedText: js.Function1[java.lang.String, java.lang.String]
   ): ILocalizableOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
-    __obj.updateDynamic("getProcessedText")(getProcessedText)
+    val __obj = js.Dynamic.literal(getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText)
+  
     __obj.asInstanceOf[ILocalizableOwner]
   }
 }

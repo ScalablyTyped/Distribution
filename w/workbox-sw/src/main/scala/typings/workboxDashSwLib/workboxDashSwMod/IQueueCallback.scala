@@ -33,10 +33,8 @@ object IQueueCallback {
     requestWillEnqueue: js.Function1[StorableRequest, scala.Unit],
     requestWillReplay: js.Function1[StorableRequest, scala.Unit]
   ): IQueueCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queueDidReplay")(queueDidReplay)
-    __obj.updateDynamic("requestWillEnqueue")(requestWillEnqueue)
-    __obj.updateDynamic("requestWillReplay")(requestWillReplay)
+    val __obj = js.Dynamic.literal(queueDidReplay = queueDidReplay, requestWillEnqueue = requestWillEnqueue, requestWillReplay = requestWillReplay)
+  
     __obj.asInstanceOf[IQueueCallback]
   }
 }

@@ -13,9 +13,8 @@ trait ImageBuildContext extends js.Object {
 object ImageBuildContext {
   @scala.inline
   def apply(context: java.lang.String, src: js.Array[java.lang.String]): ImageBuildContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(context = context, src = src)
+  
     __obj.asInstanceOf[ImageBuildContext]
   }
 }

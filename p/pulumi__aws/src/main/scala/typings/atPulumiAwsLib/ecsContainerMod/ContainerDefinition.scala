@@ -66,8 +66,7 @@ object ContainerDefinition {
     volumesFrom: js.Array[VolumeFrom] = null,
     workingDirectory: java.lang.String = null
   ): ContainerDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (command != null) __obj.updateDynamic("command")(command)
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (!js.isUndefined(disableNetworking)) __obj.updateDynamic("disableNetworking")(disableNetworking)

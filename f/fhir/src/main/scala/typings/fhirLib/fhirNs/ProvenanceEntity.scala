@@ -56,8 +56,7 @@ object ProvenanceEntity {
     whatReference: Reference = null,
     whatUri: uri = null
   ): ProvenanceEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(role = role)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_role != null) __obj.updateDynamic("_role")(_role)

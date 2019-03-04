@@ -46,15 +46,8 @@ object XNumberingTypeInfo {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNumberingTypeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedNumberingTypes")(SupportedNumberingTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getNumberingIdentifier")(getNumberingIdentifier)
-    __obj.updateDynamic("getNumberingType")(getNumberingType)
-    __obj.updateDynamic("getSupportedNumberingTypes")(getSupportedNumberingTypes)
-    __obj.updateDynamic("hasNumberingType")(hasNumberingType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SupportedNumberingTypes = SupportedNumberingTypes, acquire = acquire, getNumberingIdentifier = getNumberingIdentifier, getNumberingType = getNumberingType, getSupportedNumberingTypes = getSupportedNumberingTypes, hasNumberingType = hasNumberingType, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNumberingTypeInfo]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_TheaterMode extends js.Object {
 object Anon_TheaterMode {
   @scala.inline
   def apply(TheaterMode: scala.Boolean): Anon_TheaterMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TheaterMode")(TheaterMode)
+    val __obj = js.Dynamic.literal(TheaterMode = TheaterMode)
+  
     __obj.asInstanceOf[Anon_TheaterMode]
   }
 }

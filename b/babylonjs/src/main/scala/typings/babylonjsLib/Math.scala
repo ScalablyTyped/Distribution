@@ -16,9 +16,8 @@ object Math {
     fround: js.Function1[scala.Double, scala.Double],
     imul: js.Function2[scala.Double, scala.Double, scala.Double]
   ): Math = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fround")(fround)
-    __obj.updateDynamic("imul")(imul)
+    val __obj = js.Dynamic.literal(fround = fround, imul = imul)
+  
     __obj.asInstanceOf[Math]
   }
 }

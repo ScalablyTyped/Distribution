@@ -18,8 +18,8 @@ object UrlcrawlerrorscountsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsCountsQueryResponse]
     ]
   ): UrlcrawlerrorscountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[UrlcrawlerrorscountsResource]
   }
 }

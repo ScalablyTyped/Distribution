@@ -20,11 +20,8 @@ object testWindow {
     path: js.Function0[Future],
     search: js.Function0[Future]
   ): testWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(hash = hash, href = href, path = path, search = search)
+  
     __obj.asInstanceOf[testWindow]
   }
 }

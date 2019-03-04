@@ -63,17 +63,8 @@ object EventLoopDelayMonitor {
     reset: js.Function0[scala.Unit],
     stddev: scala.Double
   ): EventLoopDelayMonitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("exceeds")(exceeds)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("mean")(mean)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("percentile")(percentile)
-    __obj.updateDynamic("percentiles")(percentiles)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("stddev")(stddev)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, exceeds = exceeds, max = max, mean = mean, min = min, percentile = percentile, percentiles = percentiles, reset = reset, stddev = stddev)
+  
     __obj.asInstanceOf[EventLoopDelayMonitor]
   }
 }

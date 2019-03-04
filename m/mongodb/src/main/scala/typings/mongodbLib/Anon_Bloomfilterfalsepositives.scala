@@ -36,8 +36,19 @@ object Anon_Bloomfilterfalsepositives {
     `sleep for LSM merge throttle`: scala.Double,
     `total size of bloom filters`: scala.Double
   ): Anon_Bloomfilterfalsepositives = {
-    val __obj = js.Dynamic.literal(`bloom filter false positives` = `bloom filter false positives`, `bloom filter hits` = `bloom filter hits`, `bloom filter misses` = `bloom filter misses`, `bloom filter pages evicted from cache` = `bloom filter pages evicted from cache`, `bloom filter pages read into cache` = `bloom filter pages read into cache`, `bloom filters in the LSM tree` = `bloom filters in the LSM tree`, `chunks in the LSM tree` = `chunks in the LSM tree`, `highest merge generation in the LSM tree` = `highest merge generation in the LSM tree`, `queries that could have benefited from a Bloom filter that did not exist` = `queries that could have benefited from a Bloom filter that did not exist`, `sleep for LSM checkpoint throttle` = `sleep for LSM checkpoint throttle`, `sleep for LSM merge throttle` = `sleep for LSM merge throttle`, `total size of bloom filters` = `total size of bloom filters`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bloom filter false positives")(`bloom filter false positives`)
+    __obj.updateDynamic("bloom filter hits")(`bloom filter hits`)
+    __obj.updateDynamic("bloom filter misses")(`bloom filter misses`)
+    __obj.updateDynamic("bloom filter pages evicted from cache")(`bloom filter pages evicted from cache`)
+    __obj.updateDynamic("bloom filter pages read into cache")(`bloom filter pages read into cache`)
+    __obj.updateDynamic("bloom filters in the LSM tree")(`bloom filters in the LSM tree`)
+    __obj.updateDynamic("chunks in the LSM tree")(`chunks in the LSM tree`)
+    __obj.updateDynamic("highest merge generation in the LSM tree")(`highest merge generation in the LSM tree`)
+    __obj.updateDynamic("queries that could have benefited from a Bloom filter that did not exist")(`queries that could have benefited from a Bloom filter that did not exist`)
+    __obj.updateDynamic("sleep for LSM checkpoint throttle")(`sleep for LSM checkpoint throttle`)
+    __obj.updateDynamic("sleep for LSM merge throttle")(`sleep for LSM merge throttle`)
+    __obj.updateDynamic("total size of bloom filters")(`total size of bloom filters`)
     __obj.asInstanceOf[Anon_Bloomfilterfalsepositives]
   }
 }

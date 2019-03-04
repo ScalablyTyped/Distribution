@@ -24,9 +24,8 @@ object ImportSpecifier {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): ImportSpecifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("imported")(imported)
-    __obj.updateDynamic("local")(local)
+    val __obj = js.Dynamic.literal(imported = imported, local = local)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

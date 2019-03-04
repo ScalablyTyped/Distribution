@@ -410,9 +410,7 @@ object IVaultEntryEvents {
     ] = null,
     OnVaultLanguageChanged: js.Function1[/* languageID */ scala.Double, scala.Unit] = null
   ): IVaultEntryEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnAddObjectFile != null) __obj.updateDynamic("OnAddObjectFile")(OnAddObjectFile)
     if (OnAddObjectToFavorites != null) __obj.updateDynamic("OnAddObjectToFavorites")(OnAddObjectToFavorites)
     if (OnAddObjectsToFavorites != null) __obj.updateDynamic("OnAddObjectsToFavorites")(OnAddObjectsToFavorites)

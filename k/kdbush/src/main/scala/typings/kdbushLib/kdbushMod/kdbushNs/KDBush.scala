@@ -24,13 +24,8 @@ object KDBush {
     range: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
     within: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]]
   ): KDBush[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coords")(coords)
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("nodeSize")(nodeSize)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("within")(within)
+    val __obj = js.Dynamic.literal(coords = coords, ids = ids, nodeSize = nodeSize, points = points, range = range, within = within)
+  
     __obj.asInstanceOf[KDBush[T]]
   }
 }

@@ -64,9 +64,7 @@ object SecurityInfo {
     signatureSchemeName: java.lang.String = null,
     weaknessReasons: js.Array[TransportWeaknessReasons] = null
   ): SecurityInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificates")(certificates)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(certificates = certificates, state = state)
     if (certificateTransparencyStatus != null) __obj.updateDynamic("certificateTransparencyStatus")(certificateTransparencyStatus)
     if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)

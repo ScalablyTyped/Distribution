@@ -15,9 +15,7 @@ trait WorkerReply extends js.Object {
 object WorkerReply {
   @scala.inline
   def apply(error: WorkerReplyType, taskType: WorkerTaskType, payload: js.Any = null): WorkerReply = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("taskType")(taskType)
+    val __obj = js.Dynamic.literal(error = error, taskType = taskType)
     if (payload != null) __obj.updateDynamic("payload")(payload)
     __obj.asInstanceOf[WorkerReply]
   }

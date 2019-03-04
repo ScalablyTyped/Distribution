@@ -161,9 +161,7 @@ object ClusterArgs {
     terminationProtection: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     visibleToAllUsers: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): ClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("releaseLabel")(releaseLabel.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(releaseLabel = releaseLabel.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])
     if (additionalInfo != null) __obj.updateDynamic("additionalInfo")(additionalInfo.asInstanceOf[js.Any])
     if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
     if (autoscalingRole != null) __obj.updateDynamic("autoscalingRole")(autoscalingRole.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait RouteOptionsAccessEntityObject extends _RouteOptionsAccessObject {
 object RouteOptionsAccessEntityObject {
   @scala.inline
   def apply(entity: RouteOptionsAccessEntity): RouteOptionsAccessEntityObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entity")(entity)
+    val __obj = js.Dynamic.literal(entity = entity)
+  
     __obj.asInstanceOf[RouteOptionsAccessEntityObject]
   }
 }

@@ -18,8 +18,8 @@ object ApplicationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[HiddenPlayerList]
     ]
   ): ApplicationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listHidden")(listHidden)
+    val __obj = js.Dynamic.literal(listHidden = listHidden)
+  
     __obj.asInstanceOf[ApplicationsResource]
   }
 }

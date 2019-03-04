@@ -25,11 +25,8 @@ object ManipulationDelta {
     scale: scala.Double,
     translation: winrtDashUwpLib.WindowsNs.FoundationNs.Point
   ): ManipulationDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expansion")(expansion)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("translation")(translation)
+    val __obj = js.Dynamic.literal(expansion = expansion, rotation = rotation, scale = scale, translation = translation)
+  
     __obj.asInstanceOf[ManipulationDelta]
   }
 }

@@ -78,12 +78,8 @@ object Cookies {
       scala.Unit
     ]
   ): Cookies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("onChanged")(onChanged)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, getAll = getAll, onChanged = onChanged, remove = remove, set = set)
+  
     __obj.asInstanceOf[Cookies]
   }
 }

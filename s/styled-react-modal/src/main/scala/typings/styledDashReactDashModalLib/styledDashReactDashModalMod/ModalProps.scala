@@ -38,8 +38,7 @@ object ModalProps {
     ] = null,
     onEscapeKeydown: js.Function1[/* event */ reactLib.Event, scala.Unit] = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
     if (afterOpen != null) __obj.updateDynamic("afterOpen")(afterOpen)
     if (!js.isUndefined(allowScroll)) __obj.updateDynamic("allowScroll")(allowScroll)

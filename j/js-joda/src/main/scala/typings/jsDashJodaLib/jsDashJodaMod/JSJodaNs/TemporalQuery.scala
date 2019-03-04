@@ -12,8 +12,8 @@ trait TemporalQuery extends js.Object {
 object TemporalQuery {
   @scala.inline
   def apply(queryFrom: js.Function1[TemporalAccessor, js.Any]): TemporalQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryFrom")(queryFrom)
+    val __obj = js.Dynamic.literal(queryFrom = queryFrom)
+  
     __obj.asInstanceOf[TemporalQuery]
   }
 }

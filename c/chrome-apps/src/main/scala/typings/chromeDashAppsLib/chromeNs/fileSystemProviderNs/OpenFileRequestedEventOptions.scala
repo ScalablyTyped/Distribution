@@ -36,11 +36,8 @@ object OpenFileRequestedEventOptions {
     ],
     requestId: chromeDashAppsLib.chromeNs.integer
   ): OpenFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, mode = mode.asInstanceOf[js.Any], requestId = requestId)
+  
     __obj.asInstanceOf[OpenFileRequestedEventOptions]
   }
 }

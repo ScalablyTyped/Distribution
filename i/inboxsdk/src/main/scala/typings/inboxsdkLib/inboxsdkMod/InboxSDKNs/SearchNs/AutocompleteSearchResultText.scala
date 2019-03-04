@@ -23,9 +23,7 @@ object AutocompleteSearchResultText {
     routeName: java.lang.String = null,
     routeParams: js.Array[java.lang.String] = null
   ): AutocompleteSearchResultText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(description = description, name = name)
     if (externalURL != null) __obj.updateDynamic("externalURL")(externalURL)
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

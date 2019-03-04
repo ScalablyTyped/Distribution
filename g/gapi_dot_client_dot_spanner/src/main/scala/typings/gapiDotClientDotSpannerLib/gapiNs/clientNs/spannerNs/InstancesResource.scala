@@ -171,17 +171,8 @@ object InstancesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
     ]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("databases")(databases)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(create = create, databases = databases, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, operations = operations, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[InstancesResource]
   }
 }

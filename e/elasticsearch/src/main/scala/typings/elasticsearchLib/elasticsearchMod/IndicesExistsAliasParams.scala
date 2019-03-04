@@ -25,9 +25,7 @@ object IndicesExistsAliasParams {
     method: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): IndicesExistsAliasParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (body != null) __obj.updateDynamic("body")(body)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)

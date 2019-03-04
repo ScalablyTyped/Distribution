@@ -104,23 +104,8 @@ object XInteractionSupplyAuthentication {
     setRememberPassword: js.Function1[RememberAuthentication, scala.Unit],
     setUserName: js.Function1[java.lang.String, scala.Unit]
   ): XInteractionSupplyAuthentication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("canSetAccount")(canSetAccount)
-    __obj.updateDynamic("canSetPassword")(canSetPassword)
-    __obj.updateDynamic("canSetRealm")(canSetRealm)
-    __obj.updateDynamic("canSetUserName")(canSetUserName)
-    __obj.updateDynamic("getRememberAccountModes")(getRememberAccountModes)
-    __obj.updateDynamic("getRememberPasswordModes")(getRememberPasswordModes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setAccount")(setAccount)
-    __obj.updateDynamic("setPassword")(setPassword)
-    __obj.updateDynamic("setRealm")(setRealm)
-    __obj.updateDynamic("setRememberAccount")(setRememberAccount)
-    __obj.updateDynamic("setRememberPassword")(setRememberPassword)
-    __obj.updateDynamic("setUserName")(setUserName)
+    val __obj = js.Dynamic.literal(acquire = acquire, canSetAccount = canSetAccount, canSetPassword = canSetPassword, canSetRealm = canSetRealm, canSetUserName = canSetUserName, getRememberAccountModes = getRememberAccountModes, getRememberPasswordModes = getRememberPasswordModes, queryInterface = queryInterface, release = release, select = select, setAccount = setAccount, setPassword = setPassword, setRealm = setRealm, setRememberAccount = setRememberAccount, setRememberPassword = setRememberPassword, setUserName = setUserName)
+  
     __obj.asInstanceOf[XInteractionSupplyAuthentication]
   }
 }

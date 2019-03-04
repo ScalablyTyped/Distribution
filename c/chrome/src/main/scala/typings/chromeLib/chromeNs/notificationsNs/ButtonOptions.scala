@@ -13,8 +13,7 @@ trait ButtonOptions extends js.Object {
 object ButtonOptions {
   @scala.inline
   def apply(title: java.lang.String, iconUrl: java.lang.String = null): ButtonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
     __obj.asInstanceOf[ButtonOptions]
   }

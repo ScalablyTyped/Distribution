@@ -23,11 +23,8 @@ object XSQLQueryComposerFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSQLQueryComposerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createQueryComposer")(createQueryComposer)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createQueryComposer = createQueryComposer, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSQLQueryComposerFactory]
   }
 }

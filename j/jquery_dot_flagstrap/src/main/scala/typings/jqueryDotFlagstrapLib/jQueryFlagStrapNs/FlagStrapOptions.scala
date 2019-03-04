@@ -77,13 +77,7 @@ object FlagStrapOptions {
     onSelect: js.Function2[/* value */ js.Any, /* element */ js.Any, scala.Unit] = null,
     scrollableHeight: java.lang.String = null
   ): FlagStrapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonSize")(buttonSize)
-    __obj.updateDynamic("buttonType")(buttonType)
-    __obj.updateDynamic("inputName")(inputName)
-    __obj.updateDynamic("labelMargin")(labelMargin)
-    __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    __obj.updateDynamic("scrollable")(scrollable)
+    val __obj = js.Dynamic.literal(buttonSize = buttonSize, buttonType = buttonType, inputName = inputName, labelMargin = labelMargin, placeholder = placeholder.asInstanceOf[js.Any], scrollable = scrollable)
     if (countries != null) __obj.updateDynamic("countries")(countries)
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)

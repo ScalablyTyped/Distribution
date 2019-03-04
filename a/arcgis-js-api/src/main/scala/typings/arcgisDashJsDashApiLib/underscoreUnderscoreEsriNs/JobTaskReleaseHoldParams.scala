@@ -30,12 +30,8 @@ object JobTaskReleaseHoldParams {
     jobId: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): JobTaskReleaseHoldParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("holdId")(holdId)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, holdId = holdId, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[JobTaskReleaseHoldParams]
   }
 }

@@ -37,16 +37,8 @@ object XHyperlinkControl {
     notifyModifiedValue: js.Function0[scala.Unit],
     removeActionListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XActionListener, scala.Unit]
   ): XHyperlinkControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ControlContext")(ControlContext)
-    __obj.updateDynamic("ControlType")(ControlType)
-    __obj.updateDynamic("ControlWindow")(ControlWindow)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("ValueType")(ValueType)
-    __obj.updateDynamic("addActionListener")(addActionListener)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("notifyModifiedValue")(notifyModifiedValue)
-    __obj.updateDynamic("removeActionListener")(removeActionListener)
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, Value = Value, ValueType = ValueType, addActionListener = addActionListener, isModified = isModified, notifyModifiedValue = notifyModifiedValue, removeActionListener = removeActionListener)
+  
     __obj.asInstanceOf[XHyperlinkControl]
   }
 }

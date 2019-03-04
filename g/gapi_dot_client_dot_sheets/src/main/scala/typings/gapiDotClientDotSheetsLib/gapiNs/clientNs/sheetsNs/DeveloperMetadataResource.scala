@@ -34,9 +34,8 @@ object DeveloperMetadataResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchDeveloperMetadataResponse]
     ]
   ): DeveloperMetadataResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(get = get, search = search)
+  
     __obj.asInstanceOf[DeveloperMetadataResource]
   }
 }

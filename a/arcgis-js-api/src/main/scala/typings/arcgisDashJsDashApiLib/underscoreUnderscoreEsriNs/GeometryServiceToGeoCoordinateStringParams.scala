@@ -67,13 +67,7 @@ object GeometryServiceToGeoCoordinateStringParams {
     numOfDigits: scala.Int | scala.Double = null,
     rounding: js.UndefOr[scala.Boolean] = js.undefined
   ): GeometryServiceToGeoCoordinateStringParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("conversionType")(conversionType)
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sr")(sr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, conversionType = conversionType, coordinates = coordinates, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sr = sr.asInstanceOf[js.Any])
     if (!js.isUndefined(addSpaces)) __obj.updateDynamic("addSpaces")(addSpaces)
     if (conversionMode != null) __obj.updateDynamic("conversionMode")(conversionMode)
     if (numOfDigits != null) __obj.updateDynamic("numOfDigits")(numOfDigits.asInstanceOf[js.Any])

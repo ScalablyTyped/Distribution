@@ -13,8 +13,7 @@ trait Gateway extends js.Object {
 object Gateway {
   @scala.inline
   def apply(gateway: java.lang.String, interface: java.lang.String = null): Gateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gateway")(gateway)
+    val __obj = js.Dynamic.literal(gateway = gateway)
     if (interface != null) __obj.updateDynamic("interface")(interface)
     __obj.asInstanceOf[Gateway]
   }

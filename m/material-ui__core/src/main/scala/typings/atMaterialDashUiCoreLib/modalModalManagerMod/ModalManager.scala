@@ -18,10 +18,8 @@ object ModalManager {
     isTopModal: js.Function1[js.Any, scala.Boolean],
     remove: js.Function1[js.Any, scala.Unit]
   ): ModalManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("isTopModal")(isTopModal)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, isTopModal = isTopModal, remove = remove)
+  
     __obj.asInstanceOf[ModalManager]
   }
 }

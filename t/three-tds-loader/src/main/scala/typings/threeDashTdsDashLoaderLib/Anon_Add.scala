@@ -24,13 +24,8 @@ object Anon_Add {
     get: js.Function1[java.lang.String, js.Any],
     remove: js.Function1[java.lang.String, scala.Unit]
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, clear = clear, enabled = enabled, files = files, get = get, remove = remove)
+  
     __obj.asInstanceOf[Anon_Add]
   }
 }

@@ -17,8 +17,8 @@ object ProgressBarOptions {
   def apply(
     mode: electronLib.electronLibStrings.none | electronLib.electronLibStrings.normal | electronLib.electronLibStrings.indeterminate | electronLib.electronLibStrings.error | electronLib.electronLibStrings.paused
   ): ProgressBarOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ProgressBarOptions]
   }
 }

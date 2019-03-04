@@ -26,10 +26,8 @@ trait ResourceFieldSelector extends js.Object {
 object ResourceFieldSelector {
   @scala.inline
   def apply(containerName: java.lang.String, divisor: java.lang.String, resource: java.lang.String): ResourceFieldSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerName")(containerName)
-    __obj.updateDynamic("divisor")(divisor)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(containerName = containerName, divisor = divisor, resource = resource)
+  
     __obj.asInstanceOf[ResourceFieldSelector]
   }
 }

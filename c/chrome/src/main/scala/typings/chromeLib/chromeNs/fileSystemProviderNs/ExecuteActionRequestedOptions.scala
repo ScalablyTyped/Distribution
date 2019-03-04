@@ -24,11 +24,8 @@ object ExecuteActionRequestedOptions {
     fileSystemId: java.lang.String,
     requestId: scala.Double
   ): ExecuteActionRequestedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionId")(actionId)
-    __obj.updateDynamic("entryPath")(entryPath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(actionId = actionId, entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId)
+  
     __obj.asInstanceOf[ExecuteActionRequestedOptions]
   }
 }

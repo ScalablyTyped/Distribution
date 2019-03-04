@@ -15,8 +15,8 @@ object Anon_Chartimageproperties {
   def apply(
     chart_image_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.ImageProperties
   ): Anon_Chartimageproperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart_image_properties")(chart_image_properties)
+    val __obj = js.Dynamic.literal(chart_image_properties = chart_image_properties)
+  
     __obj.asInstanceOf[Anon_Chartimageproperties]
   }
 }

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-navigation-material-bottom-tabs"
-version := "0.3-dt-20190212Z-a67c75"
+version := "0.3-dt-20190212Z-798e01"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-481742",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-66c044",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-9e9d73",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190221Z-280c3d",
-  "org.scalablytyped" %%% "react-navigation" % "3.0-dt-20190224Z-fe7be5",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "csstype" % "2.6.2-49af40",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-7328c8",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190221Z-a8323e",
+  "org.scalablytyped" %%% "react-navigation" % "3.0-dt-20190224Z-af0427",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

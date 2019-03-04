@@ -46,9 +46,7 @@ object ImagingManifestStudy {
     imagingStudy: Reference = null,
     modifierExtension: js.Array[Extension] = null
   ): ImagingManifestStudy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(series = series, uid = uid)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_uid != null) __obj.updateDynamic("_uid")(_uid)

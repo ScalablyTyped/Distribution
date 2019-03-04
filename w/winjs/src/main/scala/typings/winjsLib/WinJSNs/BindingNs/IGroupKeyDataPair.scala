@@ -20,12 +20,8 @@ object IGroupKeyDataPair {
     groupSize: scala.Double,
     key: java.lang.String
   ): IGroupKeyDataPair[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("firstItemIndexHint")(firstItemIndexHint)
-    __obj.updateDynamic("firstItemKey")(firstItemKey)
-    __obj.updateDynamic("groupSize")(groupSize)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], firstItemIndexHint = firstItemIndexHint, firstItemKey = firstItemKey, groupSize = groupSize, key = key)
+  
     __obj.asInstanceOf[IGroupKeyDataPair[T]]
   }
 }

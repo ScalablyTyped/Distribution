@@ -21,11 +21,8 @@ object FlashBitmapInstance {
     setBits: js.Function1[_FlashBitmap, scala.Unit],
     vPixels: scala.Double
   ): FlashBitmapInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBits")(getBits)
-    __obj.updateDynamic("hPixels")(hPixels)
-    __obj.updateDynamic("setBits")(setBits)
-    __obj.updateDynamic("vPixels")(vPixels)
+    val __obj = js.Dynamic.literal(getBits = getBits, hPixels = hPixels, setBits = setBits, vPixels = vPixels)
+  
     __obj.asInstanceOf[FlashBitmapInstance]
   }
 }

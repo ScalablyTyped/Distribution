@@ -44,16 +44,7 @@ object ITemplateScope {
     to: ITemplateOptions,
     model: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ITemplateScope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fc")(fc.asInstanceOf[js.Any])
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("form")(form)
-    __obj.updateDynamic("formState")(formState)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("showError")(showError)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(fc = fc.asInstanceOf[js.Any], fields = fields, form = form, formState = formState, id = id, index = index, options = options, showError = showError, to = to)
     if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateScope]
   }

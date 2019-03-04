@@ -30,10 +30,8 @@ trait VPatch extends js.Object {
 object VPatch {
   @scala.inline
   def apply(patch: js.Any, `type`: scala.Double, vNode: VNode, version: java.lang.String): VPatch = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("vNode")(vNode)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(patch = patch, vNode = vNode, version = version)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VPatch]
   }
 }

@@ -27,9 +27,8 @@ object ServerRouter {
     ],
     routes: js.Array[ServerRoute[nextDashServerLib.routerMod.DefaultQuery]]
   ): ServerRouter = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(add = add, routes = routes)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[ServerRouter]
   }
 }

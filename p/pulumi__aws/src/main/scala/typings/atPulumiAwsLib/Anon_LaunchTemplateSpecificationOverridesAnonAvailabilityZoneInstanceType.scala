@@ -18,8 +18,7 @@ object Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType
     launchTemplateSpecification: atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateIdLaunchTemplateNameVersionInput],
     overrides: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_AvailabilityZoneInstanceType]]] = null
   ): Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplateSpecification")(launchTemplateSpecification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType]
   }

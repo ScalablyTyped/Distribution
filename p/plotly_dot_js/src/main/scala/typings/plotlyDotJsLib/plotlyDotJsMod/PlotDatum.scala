@@ -28,15 +28,8 @@ object PlotDatum {
     y: Datum,
     yaxis: LayoutAxis
   ): PlotDatum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("curveNumber")(curveNumber)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("pointIndex")(pointIndex)
-    __obj.updateDynamic("pointNumber")(pointNumber)
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("xaxis")(xaxis)
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    __obj.updateDynamic("yaxis")(yaxis)
+    val __obj = js.Dynamic.literal(curveNumber = curveNumber, data = data, pointIndex = pointIndex, pointNumber = pointNumber, x = x.asInstanceOf[js.Any], xaxis = xaxis, y = y.asInstanceOf[js.Any], yaxis = yaxis)
+  
     __obj.asInstanceOf[PlotDatum]
   }
 }

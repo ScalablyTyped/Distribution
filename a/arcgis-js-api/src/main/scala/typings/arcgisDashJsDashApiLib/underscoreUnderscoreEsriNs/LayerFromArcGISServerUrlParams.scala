@@ -30,11 +30,7 @@ object LayerFromArcGISServerUrlParams {
     url: java.lang.String,
     properties: js.Any = null
   ): LayerFromArcGISServerUrlParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, url = url)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[LayerFromArcGISServerUrlParams]
   }

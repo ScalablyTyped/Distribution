@@ -18,10 +18,8 @@ object IAssociatedPropertyDef {
     PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
     Required: scala.Boolean
   ): IAssociatedPropertyDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
-    __obj.updateDynamic("Required")(Required)
+    val __obj = js.Dynamic.literal(Clone = Clone, PropertyDef = PropertyDef.asInstanceOf[js.Any], Required = Required)
+  
     __obj.asInstanceOf[IAssociatedPropertyDef]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Res extends js.Object {
 object Anon_Res {
   @scala.inline
   def apply(res: Anon_Progress): Anon_Res = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(res = res)
+  
     __obj.asInstanceOf[Anon_Res]
   }
 }

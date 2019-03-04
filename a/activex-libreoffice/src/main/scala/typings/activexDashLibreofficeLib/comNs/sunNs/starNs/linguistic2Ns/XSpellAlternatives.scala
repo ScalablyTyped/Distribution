@@ -59,20 +59,8 @@ object XSpellAlternatives {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSpellAlternatives = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alternatives")(Alternatives)
-    __obj.updateDynamic("AlternativesCount")(AlternativesCount)
-    __obj.updateDynamic("FailureType")(FailureType)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Word")(Word)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAlternatives")(getAlternatives)
-    __obj.updateDynamic("getAlternativesCount")(getAlternativesCount)
-    __obj.updateDynamic("getFailureType")(getFailureType)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getWord")(getWord)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Alternatives = Alternatives, AlternativesCount = AlternativesCount, FailureType = FailureType, Locale = Locale, Word = Word, acquire = acquire, getAlternatives = getAlternatives, getAlternativesCount = getAlternativesCount, getFailureType = getFailureType, getLocale = getLocale, getWord = getWord, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSpellAlternatives]
   }
 }

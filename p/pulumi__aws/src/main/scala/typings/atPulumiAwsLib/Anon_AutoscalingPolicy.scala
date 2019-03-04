@@ -28,11 +28,7 @@ object Anon_AutoscalingPolicy {
     instanceCount: scala.Int | scala.Double = null,
     name: java.lang.String = null
   ): Anon_AutoscalingPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ebsConfigs")(ebsConfigs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instanceRole")(instanceRole)
-    __obj.updateDynamic("instanceType")(instanceType)
+    val __obj = js.Dynamic.literal(ebsConfigs = ebsConfigs, id = id, instanceRole = instanceRole, instanceType = instanceType)
     if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy)
     if (bidPrice != null) __obj.updateDynamic("bidPrice")(bidPrice)
     if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])

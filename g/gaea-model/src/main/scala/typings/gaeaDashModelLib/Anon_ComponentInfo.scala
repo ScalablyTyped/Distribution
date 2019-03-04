@@ -21,10 +21,8 @@ object Anon_ComponentInfo {
     index: scala.Double,
     parentMapUniqueKey: java.lang.String
   ): Anon_ComponentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentInfo")(componentInfo)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("parentMapUniqueKey")(parentMapUniqueKey)
+    val __obj = js.Dynamic.literal(componentInfo = componentInfo, index = index, parentMapUniqueKey = parentMapUniqueKey)
+  
     __obj.asInstanceOf[Anon_ComponentInfo]
   }
 }

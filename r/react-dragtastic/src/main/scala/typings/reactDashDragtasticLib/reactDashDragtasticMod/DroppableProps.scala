@@ -44,8 +44,7 @@ object DroppableProps {
     onDrop: js.Function1[/* data */ js.Any, scala.Unit] = null,
     subscribeTo: js.Array[java.lang.String] = null
   ): DroppableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)

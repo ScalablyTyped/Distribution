@@ -24,9 +24,8 @@ trait ASPxClientTreeListCellInfo extends js.Object {
 object ASPxClientTreeListCellInfo {
   @scala.inline
   def apply(column: ASPxClientTreeListColumn, nodeKey: java.lang.String): ASPxClientTreeListCellInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("nodeKey")(nodeKey)
+    val __obj = js.Dynamic.literal(column = column, nodeKey = nodeKey)
+  
     __obj.asInstanceOf[ASPxClientTreeListCellInfo]
   }
 }

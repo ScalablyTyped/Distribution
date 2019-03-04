@@ -28,10 +28,8 @@ object PromoofferResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Offers]
     ]
   ): PromoofferResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("dismiss")(dismiss)
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(accept = accept, dismiss = dismiss, get = get)
+  
     __obj.asInstanceOf[PromoofferResource]
   }
 }

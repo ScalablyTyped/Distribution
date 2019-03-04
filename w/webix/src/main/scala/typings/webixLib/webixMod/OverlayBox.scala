@@ -13,9 +13,8 @@ trait OverlayBox extends js.Object {
 object OverlayBox {
   @scala.inline
   def apply(hideOverlay: js.Function0[scala.Unit], showOverlay: js.Function0[scala.Unit]): OverlayBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hideOverlay")(hideOverlay)
-    __obj.updateDynamic("showOverlay")(showOverlay)
+    val __obj = js.Dynamic.literal(hideOverlay = hideOverlay, showOverlay = showOverlay)
+  
     __obj.asInstanceOf[OverlayBox]
   }
 }

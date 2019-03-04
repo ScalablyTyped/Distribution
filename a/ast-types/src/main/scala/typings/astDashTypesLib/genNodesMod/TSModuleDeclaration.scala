@@ -28,10 +28,8 @@ object TSModuleDeclaration {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSModuleDeclaration,
     body: astDashTypesLib.genKindsMod.TSModuleBlockKind | astDashTypesLib.genKindsMod.TSModuleDeclarationKind = null
   ): TSModuleDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("declare")(declare)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(declare = declare, global = global, id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSModuleDeclaration]
   }

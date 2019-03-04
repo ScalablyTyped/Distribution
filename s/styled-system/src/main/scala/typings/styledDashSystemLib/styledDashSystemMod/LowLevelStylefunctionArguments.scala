@@ -24,8 +24,7 @@ object LowLevelStylefunctionArguments {
     scale: js.Array[java.lang.String | scala.Double] = null,
     transformValue: js.Function1[/* n */ java.lang.String | scala.Double, _] = null
   ): LowLevelStylefunctionArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prop")(prop)
+    val __obj = js.Dynamic.literal(prop = prop)
     if (cssProperty != null) __obj.updateDynamic("cssProperty")(cssProperty)
     if (getter != null) __obj.updateDynamic("getter")(getter)
     if (key != null) __obj.updateDynamic("key")(key)

@@ -45,9 +45,7 @@ object XmppOptions {
     reconnect: js.UndefOr[scala.Boolean] = js.undefined,
     register: js.UndefOr[scala.Boolean] = js.undefined
   ): XmppOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jid")(jid)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(jid = jid, password = password)
     if (actAs != null) __obj.updateDynamic("actAs")(actAs)
     if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
     if (bosh != null) __obj.updateDynamic("bosh")(bosh)

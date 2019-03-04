@@ -12,8 +12,8 @@ trait Anon_ObjectModeTrue extends js.Object {
 object Anon_ObjectModeTrue {
   @scala.inline
   def apply(objectMode: from2Lib.from2LibNumbers.`true`): Anon_ObjectModeTrue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectMode")(objectMode)
+    val __obj = js.Dynamic.literal(objectMode = objectMode)
+  
     __obj.asInstanceOf[Anon_ObjectModeTrue]
   }
 }

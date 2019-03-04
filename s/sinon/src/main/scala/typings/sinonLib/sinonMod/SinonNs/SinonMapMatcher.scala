@@ -25,12 +25,8 @@ object SinonMapMatcher {
     or: js.Function1[SinonMatcher, SinonMatcher],
     test: js.Function1[js.Any, scala.Boolean]
   ): SinonMapMatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("deepEquals")(deepEquals)
-    __obj.updateDynamic("or")(or)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, or = or, test = test)
+  
     __obj.asInstanceOf[SinonMapMatcher]
   }
 }

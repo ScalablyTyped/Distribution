@@ -16,9 +16,8 @@ object Anon_Angular {
     angular: angularDashBootstrapDashCalendarLib.angularMod.bootstrapNs.calendarNs.IFormats,
     moment: angularDashBootstrapDashCalendarLib.angularMod.bootstrapNs.calendarNs.IFormats
   ): Anon_Angular = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angular")(angular)
-    __obj.updateDynamic("moment")(moment)
+    val __obj = js.Dynamic.literal(angular = angular, moment = moment)
+  
     __obj.asInstanceOf[Anon_Angular]
   }
 }

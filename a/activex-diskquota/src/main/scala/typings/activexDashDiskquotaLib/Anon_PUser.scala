@@ -12,8 +12,8 @@ trait Anon_PUser extends js.Object {
 object Anon_PUser {
   @scala.inline
   def apply(pUser: activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DIDiskQuotaUser): Anon_PUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pUser")(pUser)
+    val __obj = js.Dynamic.literal(pUser = pUser)
+  
     __obj.asInstanceOf[Anon_PUser]
   }
 }

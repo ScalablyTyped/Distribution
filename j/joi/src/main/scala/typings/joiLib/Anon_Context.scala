@@ -33,8 +33,8 @@ object Anon_Context {
       joiLib.joiMod.Err
     ]
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createError")(createError)
+    val __obj = js.Dynamic.literal(createError = createError)
+  
     __obj.asInstanceOf[Anon_Context]
   }
 }

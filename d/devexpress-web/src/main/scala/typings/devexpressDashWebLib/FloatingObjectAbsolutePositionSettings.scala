@@ -39,11 +39,8 @@ object FloatingObjectAbsolutePositionSettings {
     verticalAbsolutePosition: scala.Double,
     verticalPositionType: js.Any
   ): FloatingObjectAbsolutePositionSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("horizontalAbsolutePosition")(horizontalAbsolutePosition)
-    __obj.updateDynamic("horizontalPositionType")(horizontalPositionType)
-    __obj.updateDynamic("verticalAbsolutePosition")(verticalAbsolutePosition)
-    __obj.updateDynamic("verticalPositionType")(verticalPositionType)
+    val __obj = js.Dynamic.literal(horizontalAbsolutePosition = horizontalAbsolutePosition, horizontalPositionType = horizontalPositionType, verticalAbsolutePosition = verticalAbsolutePosition, verticalPositionType = verticalPositionType)
+  
     __obj.asInstanceOf[FloatingObjectAbsolutePositionSettings]
   }
 }

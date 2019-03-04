@@ -24,11 +24,7 @@ object Anon_Email {
     email: java.lang.String = null,
     photoUrl: java.lang.String = null
   ): Anon_Email = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("givenName")(givenName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(familyName = familyName, givenName = givenName, id = id, name = name)
     if (email != null) __obj.updateDynamic("email")(email)
     if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
     __obj.asInstanceOf[Anon_Email]

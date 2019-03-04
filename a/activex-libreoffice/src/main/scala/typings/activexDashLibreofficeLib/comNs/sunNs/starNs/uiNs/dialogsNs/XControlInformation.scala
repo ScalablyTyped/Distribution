@@ -56,15 +56,8 @@ object XControlInformation {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XControlInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedControls")(SupportedControls)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSupportedControlProperties")(getSupportedControlProperties)
-    __obj.updateDynamic("getSupportedControls")(getSupportedControls)
-    __obj.updateDynamic("isControlPropertySupported")(isControlPropertySupported)
-    __obj.updateDynamic("isControlSupported")(isControlSupported)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SupportedControls = SupportedControls, acquire = acquire, getSupportedControlProperties = getSupportedControlProperties, getSupportedControls = getSupportedControls, isControlPropertySupported = isControlPropertySupported, isControlSupported = isControlSupported, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XControlInformation]
   }
 }

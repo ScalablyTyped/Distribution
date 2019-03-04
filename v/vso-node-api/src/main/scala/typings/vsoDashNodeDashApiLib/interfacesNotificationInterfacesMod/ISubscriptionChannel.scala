@@ -12,8 +12,8 @@ trait ISubscriptionChannel extends js.Object {
 object ISubscriptionChannel {
   @scala.inline
   def apply(`type`: java.lang.String): ISubscriptionChannel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ISubscriptionChannel]
   }
 }

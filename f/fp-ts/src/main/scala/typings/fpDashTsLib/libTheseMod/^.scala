@@ -27,6 +27,6 @@ object ^ extends js.Object {
   def theseThat[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[A] = js.native
   def theseThis[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[L] = js.native
   def thisOrBoth[L, A](defaultThis: L, ma: fpDashTsLib.libOptionMod.Option[A]): fpDashTsLib.libTheseMod.These[L, A] = js.native
-  def `this_`[L, A](l: L): fpDashTsLib.libTheseMod.These[L, A] = js.native
+  def this_[L, A](l: L): fpDashTsLib.libTheseMod.These[L, A] = js.native
 }
 

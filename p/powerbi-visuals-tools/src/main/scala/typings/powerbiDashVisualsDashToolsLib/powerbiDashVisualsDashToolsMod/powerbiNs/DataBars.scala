@@ -26,12 +26,7 @@ object DataBars {
     maxValue: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null
   ): DataBars = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisColor")(axisColor)
-    __obj.updateDynamic("hideText")(hideText)
-    __obj.updateDynamic("negativeColor")(negativeColor)
-    __obj.updateDynamic("positiveColor")(positiveColor)
-    __obj.updateDynamic("reverseDirection")(reverseDirection)
+    val __obj = js.Dynamic.literal(axisColor = axisColor, hideText = hideText, negativeColor = negativeColor, positiveColor = positiveColor, reverseDirection = reverseDirection)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataBars]

@@ -26,13 +26,7 @@ object Anon_Command {
     rows: js.Array[T],
     oid: scala.Int | scala.Double = null
   ): Anon_Command[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("notices")(notices)
-    __obj.updateDynamic("rowAsArray")(rowAsArray)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], fields = fields, notices = notices, rowAsArray = rowAsArray, rowCount = rowCount, rows = rows)
     if (oid != null) __obj.updateDynamic("oid")(oid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Command[T]]
   }

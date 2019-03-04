@@ -24,9 +24,8 @@ trait DataRecordOptions extends js.Object {
 object DataRecordOptions {
   @scala.inline
   def apply(activeRecordIndex: scala.Double, recordCount: scala.Double): DataRecordOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeRecordIndex")(activeRecordIndex)
-    __obj.updateDynamic("recordCount")(recordCount)
+    val __obj = js.Dynamic.literal(activeRecordIndex = activeRecordIndex, recordCount = recordCount)
+  
     __obj.asInstanceOf[DataRecordOptions]
   }
 }

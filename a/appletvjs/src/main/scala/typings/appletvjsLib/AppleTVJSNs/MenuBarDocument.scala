@@ -27,10 +27,8 @@ object MenuBarDocument {
     setDocument: js.Function2[stdLib.Document, stdLib.Element, scala.Unit],
     setSelectedItem: js.Function1[stdLib.Element, scala.Unit]
   ): MenuBarDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("setDocument")(setDocument)
-    __obj.updateDynamic("setSelectedItem")(setSelectedItem)
+    val __obj = js.Dynamic.literal(getDocument = getDocument, setDocument = setDocument, setSelectedItem = setSelectedItem)
+  
     __obj.asInstanceOf[MenuBarDocument]
   }
 }

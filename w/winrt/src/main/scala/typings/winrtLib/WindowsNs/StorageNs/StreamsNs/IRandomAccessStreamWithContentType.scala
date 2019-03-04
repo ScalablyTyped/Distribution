@@ -34,20 +34,8 @@ object IRandomAccessStreamWithContentType {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
     ]
   ): IRandomAccessStreamWithContentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canRead")(canRead)
-    __obj.updateDynamic("canWrite")(canWrite)
-    __obj.updateDynamic("cloneStream")(cloneStream)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("flushAsync")(flushAsync)
-    __obj.updateDynamic("getInputStreamAt")(getInputStreamAt)
-    __obj.updateDynamic("getOutputStreamAt")(getOutputStreamAt)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("readAsync")(readAsync)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("writeAsync")(writeAsync)
+    val __obj = js.Dynamic.literal(canRead = canRead, canWrite = canWrite, cloneStream = cloneStream, close = close, contentType = contentType, flushAsync = flushAsync, getInputStreamAt = getInputStreamAt, getOutputStreamAt = getOutputStreamAt, position = position, readAsync = readAsync, seek = seek, size = size, writeAsync = writeAsync)
+  
     __obj.asInstanceOf[IRandomAccessStreamWithContentType]
   }
 }

@@ -24,9 +24,8 @@ trait ExternalMetricSource extends js.Object {
 object ExternalMetricSource {
   @scala.inline
   def apply(metric: MetricIdentifier, target: MetricTarget): ExternalMetricSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metric")(metric)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(metric = metric, target = target)
+  
     __obj.asInstanceOf[ExternalMetricSource]
   }
 }

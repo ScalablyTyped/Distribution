@@ -152,8 +152,7 @@ object TabBarItemIOSProps {
     testID: java.lang.String = null,
     title: java.lang.String = null
   ): TabBarItemIOSProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconName")(iconName)
+    val __obj = js.Dynamic.literal(iconName = iconName)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

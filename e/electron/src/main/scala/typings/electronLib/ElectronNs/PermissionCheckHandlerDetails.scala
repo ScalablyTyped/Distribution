@@ -22,9 +22,8 @@ object PermissionCheckHandlerDetails {
     mediaType: electronLib.electronLibStrings.video | electronLib.electronLibStrings.audio | electronLib.electronLibStrings.unknown,
     securityOrigin: java.lang.String
   ): PermissionCheckHandlerDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    __obj.updateDynamic("securityOrigin")(securityOrigin)
+    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], securityOrigin = securityOrigin)
+  
     __obj.asInstanceOf[PermissionCheckHandlerDetails]
   }
 }

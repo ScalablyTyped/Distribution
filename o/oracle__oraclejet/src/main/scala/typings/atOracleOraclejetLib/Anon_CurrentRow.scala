@@ -18,9 +18,7 @@ object Anon_CurrentRow {
     previousCurrentRow: atOracleOraclejetLib.ojtableMod.ojTableNs.CurrentRow[K],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_CurrentRow[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentRow")(currentRow)
-    __obj.updateDynamic("previousCurrentRow")(previousCurrentRow)
+    val __obj = js.Dynamic.literal(currentRow = currentRow, previousCurrentRow = previousCurrentRow)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CurrentRow[K]]
   }

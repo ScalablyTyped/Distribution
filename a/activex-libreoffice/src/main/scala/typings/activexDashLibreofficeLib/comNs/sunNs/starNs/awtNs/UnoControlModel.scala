@@ -105,40 +105,8 @@ object UnoControlModel {
     ],
     write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
   ): UnoControlModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultControl")(DefaultControl)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PositionX")(PositionX)
-    __obj.updateDynamic("PositionY")(PositionY)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ServiceName")(ServiceName)
-    __obj.updateDynamic("Step")(Step)
-    __obj.updateDynamic("TabIndex")(TabIndex)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("Width")(Width)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("getServiceName")(getServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(DefaultControl = DefaultControl, Height = Height, Name = Name, PositionX = PositionX, PositionY = PositionY, PropertySetInfo = PropertySetInfo, ServiceName = ServiceName, Step = Step, TabIndex = TabIndex, Tag = Tag, Width = Width, acquire = acquire, addEventListener = addEventListener, addPropertiesChangeListener = addPropertiesChangeListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createClone = createClone, dispose = dispose, firePropertiesChangeEvent = firePropertiesChangeEvent, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, getServiceName = getServiceName, queryInterface = queryInterface, read = read, release = release, removeEventListener = removeEventListener, removePropertiesChangeListener = removePropertiesChangeListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues, write = write)
+  
     __obj.asInstanceOf[UnoControlModel]
   }
 }

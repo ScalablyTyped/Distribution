@@ -30,9 +30,7 @@ object ButtonProps {
     color: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("onPress")(onPress)
+    val __obj = js.Dynamic.literal(label = label, onPress = onPress)
     if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

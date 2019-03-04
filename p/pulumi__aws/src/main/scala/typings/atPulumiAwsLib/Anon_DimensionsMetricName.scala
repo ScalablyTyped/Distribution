@@ -24,10 +24,7 @@ object Anon_DimensionsMetricName {
     dimensions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameValue]]] = null,
     unit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DimensionsMetricName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], statistic = statistic.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DimensionsMetricName]

@@ -12,8 +12,8 @@ trait Anon_PaginationItem extends js.Object {
 object Anon_PaginationItem {
   @scala.inline
   def apply(PaginationItemNs: js.Any): Anon_PaginationItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PaginationItemNs")(PaginationItemNs)
+    val __obj = js.Dynamic.literal(PaginationItemNs = PaginationItemNs)
+  
     __obj.asInstanceOf[Anon_PaginationItem]
   }
 }

@@ -12,8 +12,8 @@ trait Document extends js.Object {
 object Document {
   @scala.inline
   def apply(fonts: cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceSet): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fonts")(fonts)
+    val __obj = js.Dynamic.literal(fonts = fonts)
+  
     __obj.asInstanceOf[Document]
   }
 }

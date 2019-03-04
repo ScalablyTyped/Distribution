@@ -47,9 +47,7 @@ object Anon_Cid {
     prettyprint: java.lang.String = null,
     source: java.lang.String = null
   ): Anon_Cid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("q")(q)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(q = q, target = target)
     if (cid != null) __obj.updateDynamic("cid")(cid)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (format != null) __obj.updateDynamic("format")(format)

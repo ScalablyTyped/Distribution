@@ -18,9 +18,7 @@ object Anon_Datasource {
     status: atOracleOraclejetLib.ojtableMod.ojTableNs.ContextStatus[K],
     datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): Anon_Datasource[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], status = status)
     if (datasource != null) __obj.updateDynamic("datasource")(datasource)
     __obj.asInstanceOf[Anon_Datasource[K, D]]
   }

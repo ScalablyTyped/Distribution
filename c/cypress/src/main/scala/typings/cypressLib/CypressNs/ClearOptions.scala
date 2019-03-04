@@ -15,11 +15,8 @@ trait ClearOptions
 object ClearOptions {
   @scala.inline
   def apply(force: scala.Boolean, interval: scala.Double, log: scala.Boolean, timeout: scala.Double): ClearOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("force")(force)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(force = force, interval = interval, log = log, timeout = timeout)
+  
     __obj.asInstanceOf[ClearOptions]
   }
 }

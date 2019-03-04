@@ -26,14 +26,8 @@ object Anon_Delay {
     playState: js.Any,
     timingFunction: js.Any
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("iterationCount")(iterationCount)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("playState")(playState)
-    __obj.updateDynamic("timingFunction")(timingFunction)
+    val __obj = js.Dynamic.literal(delay = delay, direction = direction, duration = duration, iterationCount = iterationCount, name = name, playState = playState, timingFunction = timingFunction)
+  
     __obj.asInstanceOf[Anon_Delay]
   }
 }

@@ -28,9 +28,7 @@ object RayOptions {
     mode: scala.Int | scala.Double = null,
     skipBackfaces: js.UndefOr[scala.Boolean] = js.undefined
   ): RayOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, to = to)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (!js.isUndefined(checkCollisionResponse)) __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse)
     if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])

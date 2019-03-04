@@ -34,16 +34,8 @@ object Scope {
     variables: js.Array[Variable],
     upper: Scope = null
   ): Scope = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    __obj.updateDynamic("childScopes")(childScopes)
-    __obj.updateDynamic("functionExpressionScope")(functionExpressionScope)
-    __obj.updateDynamic("isStrict")(isStrict)
-    __obj.updateDynamic("references")(references)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("through")(through)
-    __obj.updateDynamic("variableScope")(variableScope)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], childScopes = childScopes, functionExpressionScope = functionExpressionScope, isStrict = isStrict, references = references, set = set, through = through, variableScope = variableScope, variables = variables)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (upper != null) __obj.updateDynamic("upper")(upper)
     __obj.asInstanceOf[Scope]
   }

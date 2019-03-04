@@ -32,17 +32,8 @@ object MailMessage {
     subject: java.lang.String,
     to: EmailRecipients
   ): MailMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("cC")(cC)
-    __obj.updateDynamic("inReplyTo")(inReplyTo)
-    __obj.updateDynamic("messageId")(messageId)
-    __obj.updateDynamic("replyBy")(replyBy)
-    __obj.updateDynamic("replyTo")(replyTo)
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("senderType")(senderType)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(body = body, cC = cC, inReplyTo = inReplyTo, messageId = messageId, replyBy = replyBy, replyTo = replyTo, sections = sections, senderType = senderType, subject = subject, to = to)
+  
     __obj.asInstanceOf[MailMessage]
   }
 }

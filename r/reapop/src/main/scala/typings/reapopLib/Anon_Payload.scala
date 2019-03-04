@@ -13,8 +13,8 @@ trait Anon_Payload extends js.Object {
 object Anon_Payload {
   @scala.inline
   def apply(payload: reapopLib.reapopMod.Notification, `type`: java.lang.String): Anon_Payload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Payload]
   }
 }

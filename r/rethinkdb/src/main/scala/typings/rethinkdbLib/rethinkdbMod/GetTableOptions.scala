@@ -12,8 +12,8 @@ trait GetTableOptions extends js.Object {
 object GetTableOptions {
   @scala.inline
   def apply(useOutdated: scala.Boolean): GetTableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("useOutdated")(useOutdated)
+    val __obj = js.Dynamic.literal(useOutdated = useOutdated)
+  
     __obj.asInstanceOf[GetTableOptions]
   }
 }

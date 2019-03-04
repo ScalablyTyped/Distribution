@@ -144,32 +144,8 @@ object LegendSettings {
     valueWidth: scala.Double,
     verticalGap: scala.Double
   ): LegendSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("equalWidths")(equalWidths)
-    __obj.updateDynamic("horizontalGap")(horizontalGap)
-    __obj.updateDynamic("labelText")(labelText)
-    __obj.updateDynamic("marginBottom")(marginBottom)
-    __obj.updateDynamic("marginTop")(marginTop)
-    __obj.updateDynamic("markerBorderAlpha")(markerBorderAlpha)
-    __obj.updateDynamic("markerBorderColor")(markerBorderColor)
-    __obj.updateDynamic("markerBorderThickness")(markerBorderThickness)
-    __obj.updateDynamic("markerDisabledColor")(markerDisabledColor)
-    __obj.updateDynamic("markerLabelGap")(markerLabelGap)
-    __obj.updateDynamic("markerSize")(markerSize)
-    __obj.updateDynamic("markerType")(markerType)
-    __obj.updateDynamic("reversedOrder")(reversedOrder)
-    __obj.updateDynamic("rollOverColor")(rollOverColor)
-    __obj.updateDynamic("rollOverGraphAlpha")(rollOverGraphAlpha)
-    __obj.updateDynamic("switchColor")(switchColor)
-    __obj.updateDynamic("switchType")(switchType)
-    __obj.updateDynamic("switchable")(switchable)
-    __obj.updateDynamic("textClickEnabled")(textClickEnabled)
-    __obj.updateDynamic("useMarkerColorForLabels")(useMarkerColorForLabels)
-    __obj.updateDynamic("valueTextComparing")(valueTextComparing)
-    __obj.updateDynamic("valueTextRegular")(valueTextRegular)
-    __obj.updateDynamic("valueWidth")(valueWidth)
-    __obj.updateDynamic("verticalGap")(verticalGap)
+    val __obj = js.Dynamic.literal(align = align, equalWidths = equalWidths, horizontalGap = horizontalGap, labelText = labelText, marginBottom = marginBottom, marginTop = marginTop, markerBorderAlpha = markerBorderAlpha, markerBorderColor = markerBorderColor, markerBorderThickness = markerBorderThickness, markerDisabledColor = markerDisabledColor, markerLabelGap = markerLabelGap, markerSize = markerSize, markerType = markerType, reversedOrder = reversedOrder, rollOverColor = rollOverColor, rollOverGraphAlpha = rollOverGraphAlpha, switchColor = switchColor, switchType = switchType, switchable = switchable, textClickEnabled = textClickEnabled, useMarkerColorForLabels = useMarkerColorForLabels, valueTextComparing = valueTextComparing, valueTextRegular = valueTextRegular, valueWidth = valueWidth, verticalGap = verticalGap)
+  
     __obj.asInstanceOf[LegendSettings]
   }
 }

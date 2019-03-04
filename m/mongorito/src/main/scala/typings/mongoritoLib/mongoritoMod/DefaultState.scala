@@ -13,9 +13,8 @@ trait DefaultState extends js.Object {
 object DefaultState {
   @scala.inline
   def apply(fields: js.Object, unset: js.Array[java.lang.String]): DefaultState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("unset")(unset)
+    val __obj = js.Dynamic.literal(fields = fields, unset = unset)
+  
     __obj.asInstanceOf[DefaultState]
   }
 }

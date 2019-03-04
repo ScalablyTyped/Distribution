@@ -31,9 +31,8 @@ object Meta {
     xAxisID: java.lang.String = null,
     yAxisID: java.lang.String = null
   ): Meta = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(controller = controller, data = data)
+    __obj.updateDynamic("type")(`type`)
     if ($filler != null) __obj.updateDynamic("$filler")($filler)
     if (dataset != null) __obj.updateDynamic("dataset")(dataset)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)

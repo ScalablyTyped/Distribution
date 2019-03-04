@@ -52,8 +52,9 @@ object Anon_Catch {
       js.Promise[_]
     ])
   ): Anon_Catch = {
-    val __obj = js.Dynamic.literal(`catch` = `catch`.asInstanceOf[js.Any], `then` = `then`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("catch")(`catch`.asInstanceOf[js.Any])
+    __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Catch]
   }
 }

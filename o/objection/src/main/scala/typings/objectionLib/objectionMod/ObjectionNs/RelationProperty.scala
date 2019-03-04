@@ -20,11 +20,8 @@ object RelationProperty {
     props: js.Array[java.lang.String],
     size: scala.Double
   ): RelationProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cols")(cols)
-    __obj.updateDynamic("modelClass")(modelClass)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(cols = cols, modelClass = modelClass, props = props, size = size)
+  
     __obj.asInstanceOf[RelationProperty]
   }
 }

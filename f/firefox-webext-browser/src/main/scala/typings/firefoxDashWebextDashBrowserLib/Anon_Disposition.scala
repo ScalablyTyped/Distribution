@@ -72,12 +72,8 @@ object Anon_Disposition {
       scala.Unit
     ]
   ): Anon_Disposition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onInputCancelled")(onInputCancelled)
-    __obj.updateDynamic("onInputChanged")(onInputChanged)
-    __obj.updateDynamic("onInputEntered")(onInputEntered)
-    __obj.updateDynamic("onInputStarted")(onInputStarted)
-    __obj.updateDynamic("setDefaultSuggestion")(setDefaultSuggestion)
+    val __obj = js.Dynamic.literal(onInputCancelled = onInputCancelled, onInputChanged = onInputChanged, onInputEntered = onInputEntered, onInputStarted = onInputStarted, setDefaultSuggestion = setDefaultSuggestion)
+  
     __obj.asInstanceOf[Anon_Disposition]
   }
 }

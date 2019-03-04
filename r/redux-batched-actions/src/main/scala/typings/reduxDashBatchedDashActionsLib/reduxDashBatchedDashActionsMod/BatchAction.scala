@@ -18,9 +18,8 @@ object BatchAction {
     payload: js.Array[reduxLib.reduxMod.Action[_]],
     `type`: BatchActionType
   ): BatchAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(meta = meta, payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BatchAction]
   }
 }

@@ -38,23 +38,8 @@ object IEditControlCellContext {
     propType: IPropertyType,
     record: IRecord
   ): IEditControlCellContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hide")(Hide)
-    __obj.updateDynamic("NotifyEditComplete")(NotifyEditComplete)
-    __obj.updateDynamic("NotifyExpandControl")(NotifyExpandControl)
-    __obj.updateDynamic("SetCurrentValue")(SetCurrentValue)
-    __obj.updateDynamic("Show")(Show)
-    __obj.updateDynamic("cellExpandSpace")(cellExpandSpace)
-    __obj.updateDynamic("cellHeight")(cellHeight)
-    __obj.updateDynamic("cellRect")(cellRect)
-    __obj.updateDynamic("cellStyle")(cellStyle)
-    __obj.updateDynamic("cellWidth")(cellWidth)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("fieldKey")(fieldKey)
-    __obj.updateDynamic("originalValue")(originalValue)
-    __obj.updateDynamic("propType")(propType)
-    __obj.updateDynamic("record")(record)
+    val __obj = js.Dynamic.literal(Hide = Hide, NotifyEditComplete = NotifyEditComplete, NotifyExpandControl = NotifyExpandControl, SetCurrentValue = SetCurrentValue, Show = Show, cellExpandSpace = cellExpandSpace, cellHeight = cellHeight, cellRect = cellRect, cellStyle = cellStyle, cellWidth = cellWidth, column = column, field = field, fieldKey = fieldKey, originalValue = originalValue, propType = propType, record = record)
+  
     __obj.asInstanceOf[IEditControlCellContext]
   }
 }

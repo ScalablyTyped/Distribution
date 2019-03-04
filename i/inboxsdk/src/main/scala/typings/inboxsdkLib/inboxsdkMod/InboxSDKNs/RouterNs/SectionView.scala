@@ -19,10 +19,8 @@ object SectionView {
     on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
     remove: js.Function0[scala.Unit]
   ): SectionView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroyed")(destroyed)
+    val __obj = js.Dynamic.literal(destroyed = destroyed, remove = remove)
     __obj.updateDynamic("on")(on_destroy)
-    __obj.updateDynamic("remove")(remove)
     __obj.asInstanceOf[SectionView]
   }
 }

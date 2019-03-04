@@ -12,8 +12,8 @@ trait YamlParser extends js.Object {
 object YamlParser {
   @scala.inline
   def apply(parse: js.Function1[java.lang.String, js.Promise[_]]): YamlParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(parse = parse)
+  
     __obj.asInstanceOf[YamlParser]
   }
 }

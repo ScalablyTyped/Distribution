@@ -12,8 +12,8 @@ trait Anon_CountryCode extends js.Object {
 object Anon_CountryCode {
   @scala.inline
   def apply(countryCode: java.lang.String): Anon_CountryCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countryCode")(countryCode)
+    val __obj = js.Dynamic.literal(countryCode = countryCode)
+  
     __obj.asInstanceOf[Anon_CountryCode]
   }
 }

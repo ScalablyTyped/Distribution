@@ -14,8 +14,8 @@ trait ConvertersStatic extends js.Object {
 object ConvertersStatic {
   @scala.inline
   def apply(passThrough: IConverter): ConvertersStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passThrough")(passThrough)
+    val __obj = js.Dynamic.literal(passThrough = passThrough)
+  
     __obj.asInstanceOf[ConvertersStatic]
   }
 }

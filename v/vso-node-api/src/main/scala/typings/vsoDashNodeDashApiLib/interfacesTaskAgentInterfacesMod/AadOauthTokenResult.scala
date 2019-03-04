@@ -13,9 +13,8 @@ trait AadOauthTokenResult extends js.Object {
 object AadOauthTokenResult {
   @scala.inline
   def apply(accessToken: java.lang.String, refreshTokenCache: java.lang.String): AadOauthTokenResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("refreshTokenCache")(refreshTokenCache)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, refreshTokenCache = refreshTokenCache)
+  
     __obj.asInstanceOf[AadOauthTokenResult]
   }
 }

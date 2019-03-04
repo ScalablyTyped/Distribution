@@ -18,10 +18,8 @@ object Anon_ADDED {
     DELETED: chromeDashAppsLib.chromeDashAppsLibStrings.deleted,
     UPDATED: chromeDashAppsLib.chromeDashAppsLibStrings.updated
   ): Anon_ADDED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADDED")(ADDED)
-    __obj.updateDynamic("DELETED")(DELETED)
-    __obj.updateDynamic("UPDATED")(UPDATED)
+    val __obj = js.Dynamic.literal(ADDED = ADDED, DELETED = DELETED, UPDATED = UPDATED)
+  
     __obj.asInstanceOf[Anon_ADDED]
   }
 }

@@ -27,11 +27,8 @@ object IGeocodeLocation {
     name: java.lang.String,
     precision: java.lang.String
   ): IGeocodeLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("precision")(precision)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, name = name, precision = precision)
+  
     __obj.asInstanceOf[IGeocodeLocation]
   }
 }

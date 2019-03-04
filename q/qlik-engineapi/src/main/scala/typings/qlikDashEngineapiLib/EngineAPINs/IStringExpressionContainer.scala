@@ -25,8 +25,8 @@ trait IStringExpressionContainer extends js.Object {
 object IStringExpressionContainer {
   @scala.inline
   def apply(qStringExpression: java.lang.String): IStringExpressionContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qStringExpression")(qStringExpression)
+    val __obj = js.Dynamic.literal(qStringExpression = qStringExpression)
+  
     __obj.asInstanceOf[IStringExpressionContainer]
   }
 }

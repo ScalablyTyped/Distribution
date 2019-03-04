@@ -22,7 +22,7 @@ trait Queue
   def insertNext(block: js.Any): scala.Unit = js.native
   def insertNext(block: js.Any, ensure: scala.Boolean): scala.Unit = js.native
   def isRunning(): scala.Boolean = js.native
-  def `next_`(): scala.Unit = js.native
+  def next_(): scala.Unit = js.native
   def results(): NestedResults = js.native
   def start(): scala.Unit = js.native
   def start(onComplete: js.Function0[scala.Unit]): scala.Unit = js.native

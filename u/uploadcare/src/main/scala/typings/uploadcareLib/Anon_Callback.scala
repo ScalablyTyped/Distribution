@@ -42,9 +42,8 @@ object Anon_Callback {
       scala.Unit
     ]
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromUrl")(fromUrl)
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(fromUrl = fromUrl, upload = upload)
+  
     __obj.asInstanceOf[Anon_Callback]
   }
 }

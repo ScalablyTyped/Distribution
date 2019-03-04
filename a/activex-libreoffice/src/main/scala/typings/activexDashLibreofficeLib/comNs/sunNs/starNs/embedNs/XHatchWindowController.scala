@@ -41,14 +41,8 @@ object XHatchWindowController {
     release: js.Function0[scala.Unit],
     requestPositioning: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit]
   ): XHatchWindowController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activated")(activated)
-    __obj.updateDynamic("calcAdjustedRectangle")(calcAdjustedRectangle)
-    __obj.updateDynamic("deactivated")(deactivated)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("requestPositioning")(requestPositioning)
+    val __obj = js.Dynamic.literal(acquire = acquire, activated = activated, calcAdjustedRectangle = calcAdjustedRectangle, deactivated = deactivated, queryInterface = queryInterface, release = release, requestPositioning = requestPositioning)
+  
     __obj.asInstanceOf[XHatchWindowController]
   }
 }

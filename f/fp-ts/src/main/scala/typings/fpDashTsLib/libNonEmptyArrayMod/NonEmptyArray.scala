@@ -32,7 +32,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     * const double = (n: number) => n * 2
     * assert.deepStrictEqual(new NonEmptyArray(double, [double]).ap_(x).toArray(), [2, 4, 2, 4])
     */
-  def `ap_`[B, C](`this`: NonEmptyArray[js.Function1[/* b */ B, C]], fb: NonEmptyArray[B]): NonEmptyArray[C] = js.native
+  def ap_[B, C](`this`: NonEmptyArray[js.Function1[/* b */ B, C]], fb: NonEmptyArray[B]): NonEmptyArray[C] = js.native
   /**
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'

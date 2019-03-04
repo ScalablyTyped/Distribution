@@ -13,9 +13,8 @@ trait cin extends js.Object {
 object cin {
   @scala.inline
   def apply(corporation: sweDashValidationLib.Anon_Id, isValid: scala.Boolean): cin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("corporation")(corporation)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(corporation = corporation, isValid = isValid)
+  
     __obj.asInstanceOf[cin]
   }
 }

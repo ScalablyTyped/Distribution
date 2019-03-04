@@ -65,14 +65,8 @@ object KeyRingsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
     ]
   ): KeyRingsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("cryptoKeys")(cryptoKeys)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(create = create, cryptoKeys = cryptoKeys, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[KeyRingsResource]
   }
 }

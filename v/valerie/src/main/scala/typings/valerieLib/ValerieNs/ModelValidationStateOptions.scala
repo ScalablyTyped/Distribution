@@ -23,12 +23,8 @@ object ModelValidationStateOptions {
     name: js.Function0[java.lang.String],
     paused: js.Function0[scala.Boolean]
   ): ModelValidationStateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicable")(applicable)
-    __obj.updateDynamic("excludeFromSummary")(excludeFromSummary)
-    __obj.updateDynamic("failureMessage")(failureMessage)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("paused")(paused)
+    val __obj = js.Dynamic.literal(applicable = applicable, excludeFromSummary = excludeFromSummary, failureMessage = failureMessage, name = name, paused = paused)
+  
     __obj.asInstanceOf[ModelValidationStateOptions]
   }
 }

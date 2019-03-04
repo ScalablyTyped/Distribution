@@ -30,16 +30,8 @@ object Typography {
     scale: js.Function1[/* value */ scala.Double, BaseLine],
     toJSON: js.Function0[js.Object]
   ): Typography = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustFontSizeTo")(adjustFontSizeTo)
-    __obj.updateDynamic("createStyles")(createStyles)
-    __obj.updateDynamic("establishBaseline")(establishBaseline)
-    __obj.updateDynamic("injectStyles")(injectStyles)
-    __obj.updateDynamic("linesForFontSize")(linesForFontSize)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("rhythm")(rhythm)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(adjustFontSizeTo = adjustFontSizeTo, createStyles = createStyles, establishBaseline = establishBaseline, injectStyles = injectStyles, linesForFontSize = linesForFontSize, options = options, rhythm = rhythm, scale = scale, toJSON = toJSON)
+  
     __obj.asInstanceOf[Typography]
   }
 }

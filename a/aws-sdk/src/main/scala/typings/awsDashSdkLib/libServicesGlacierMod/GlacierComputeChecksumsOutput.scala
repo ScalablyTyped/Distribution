@@ -13,9 +13,8 @@ trait GlacierComputeChecksumsOutput extends js.Object {
 object GlacierComputeChecksumsOutput {
   @scala.inline
   def apply(linearHash: java.lang.String, treeHash: java.lang.String): GlacierComputeChecksumsOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linearHash")(linearHash)
-    __obj.updateDynamic("treeHash")(treeHash)
+    val __obj = js.Dynamic.literal(linearHash = linearHash, treeHash = treeHash)
+  
     __obj.asInstanceOf[GlacierComputeChecksumsOutput]
   }
 }

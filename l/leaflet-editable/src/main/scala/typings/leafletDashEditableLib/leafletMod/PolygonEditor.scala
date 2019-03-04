@@ -24,11 +24,8 @@ object PolygonEditor {
     newHole: js.Function1[leafletLib.leafletMod.LatLng, scala.Unit],
     reset: js.Function0[scala.Unit]
   ): PolygonEditor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("newHole")(newHole)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, newHole = newHole, reset = reset)
+  
     __obj.asInstanceOf[PolygonEditor]
   }
 }

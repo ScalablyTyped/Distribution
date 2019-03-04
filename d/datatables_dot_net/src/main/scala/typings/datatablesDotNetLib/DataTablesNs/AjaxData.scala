@@ -22,8 +22,7 @@ object AjaxData {
     recordsFiltered: scala.Int | scala.Double = null,
     recordsTotal: scala.Int | scala.Double = null
   ): AjaxData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (draw != null) __obj.updateDynamic("draw")(draw.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     if (recordsFiltered != null) __obj.updateDynamic("recordsFiltered")(recordsFiltered.asInstanceOf[js.Any])

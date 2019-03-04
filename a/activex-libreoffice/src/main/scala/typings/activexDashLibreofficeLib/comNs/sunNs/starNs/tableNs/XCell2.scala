@@ -44,22 +44,8 @@ object XCell2 {
     setFormulaString: js.Function1[java.lang.String, scala.Unit],
     setValue: js.Function1[scala.Double, scala.Unit]
   ): XCell2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Formula")(Formula)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getError")(getError)
-    __obj.updateDynamic("getFormula")(getFormula)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFormula")(setFormula)
-    __obj.updateDynamic("setFormulaResult")(setFormulaResult)
-    __obj.updateDynamic("setFormulaString")(setFormulaString)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(Error = Error, Formula = Formula, Type = Type, Value = Value, acquire = acquire, getError = getError, getFormula = getFormula, getType = getType, getValue = getValue, queryInterface = queryInterface, release = release, setFormula = setFormula, setFormulaResult = setFormulaResult, setFormulaString = setFormulaString, setValue = setValue)
+  
     __obj.asInstanceOf[XCell2]
   }
 }

@@ -23,10 +23,8 @@ trait DashboardExportDocumentScaleModeStatic extends js.Object {
 object DashboardExportDocumentScaleModeStatic {
   @scala.inline
   def apply(AutoFitToPagesWidth: java.lang.String, None: java.lang.String, UseScaleFactor: java.lang.String): DashboardExportDocumentScaleModeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoFitToPagesWidth")(AutoFitToPagesWidth)
-    __obj.updateDynamic("None")(None)
-    __obj.updateDynamic("UseScaleFactor")(UseScaleFactor)
+    val __obj = js.Dynamic.literal(AutoFitToPagesWidth = AutoFitToPagesWidth, None = None, UseScaleFactor = UseScaleFactor)
+  
     __obj.asInstanceOf[DashboardExportDocumentScaleModeStatic]
   }
 }

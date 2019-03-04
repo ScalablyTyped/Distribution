@@ -12,8 +12,8 @@ trait Anon_SubsystemString extends js.Object {
 object Anon_SubsystemString {
   @scala.inline
   def apply(subsystem: java.lang.String): Anon_SubsystemString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subsystem")(subsystem)
+    val __obj = js.Dynamic.literal(subsystem = subsystem)
+  
     __obj.asInstanceOf[Anon_SubsystemString]
   }
 }

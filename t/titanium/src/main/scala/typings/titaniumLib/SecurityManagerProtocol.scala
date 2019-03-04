@@ -35,11 +35,8 @@ object SecurityManagerProtocol {
     getTrustManagers: js.Function1[js.Any, js.Array[_]],
     willHandleURL: js.Function1[js.Any, scala.Boolean]
   ): SecurityManagerProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionDelegateForUrl")(connectionDelegateForUrl)
-    __obj.updateDynamic("getKeyManagers")(getKeyManagers)
-    __obj.updateDynamic("getTrustManagers")(getTrustManagers)
-    __obj.updateDynamic("willHandleURL")(willHandleURL)
+    val __obj = js.Dynamic.literal(connectionDelegateForUrl = connectionDelegateForUrl, getKeyManagers = getKeyManagers, getTrustManagers = getTrustManagers, willHandleURL = willHandleURL)
+  
     __obj.asInstanceOf[SecurityManagerProtocol]
   }
 }

@@ -63,23 +63,7 @@ object Characteristic {
     uuid: java.lang.String,
     value: nodeLib.Buffer = null
   ): Characteristic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RESULT_ATTR_NOT_LONG")(RESULT_ATTR_NOT_LONG)
-    __obj.updateDynamic("RESULT_INVALID_ATTRIBUTE_LENGTH")(RESULT_INVALID_ATTRIBUTE_LENGTH)
-    __obj.updateDynamic("RESULT_INVALID_OFFSET")(RESULT_INVALID_OFFSET)
-    __obj.updateDynamic("RESULT_SUCCESS")(RESULT_SUCCESS)
-    __obj.updateDynamic("RESULT_UNLIKELY_ERROR")(RESULT_UNLIKELY_ERROR)
-    __obj.updateDynamic("descriptors")(descriptors)
-    __obj.updateDynamic("onIndicate")(onIndicate)
-    __obj.updateDynamic("onNotify")(onNotify)
-    __obj.updateDynamic("onReadRequest")(onReadRequest)
-    __obj.updateDynamic("onSubscribe")(onSubscribe)
-    __obj.updateDynamic("onUnsubscribe")(onUnsubscribe)
-    __obj.updateDynamic("onWriteRequest")(onWriteRequest)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(RESULT_ATTR_NOT_LONG = RESULT_ATTR_NOT_LONG, RESULT_INVALID_ATTRIBUTE_LENGTH = RESULT_INVALID_ATTRIBUTE_LENGTH, RESULT_INVALID_OFFSET = RESULT_INVALID_OFFSET, RESULT_SUCCESS = RESULT_SUCCESS, RESULT_UNLIKELY_ERROR = RESULT_UNLIKELY_ERROR, descriptors = descriptors, onIndicate = onIndicate, onNotify = onNotify, onReadRequest = onReadRequest, onSubscribe = onSubscribe, onUnsubscribe = onUnsubscribe, onWriteRequest = onWriteRequest, properties = properties, secure = secure, toString = toString, uuid = uuid)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Characteristic]
   }

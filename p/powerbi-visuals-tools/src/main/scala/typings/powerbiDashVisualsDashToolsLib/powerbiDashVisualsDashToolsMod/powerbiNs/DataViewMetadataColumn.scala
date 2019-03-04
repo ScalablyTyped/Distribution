@@ -75,8 +75,7 @@ object DataViewMetadataColumn {
     sortOrder: scala.Int | scala.Double = null,
     `type`: ValueTypeDescriptor = null
   ): DataViewMetadataColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(displayName = displayName)
     if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates)
     if (!js.isUndefined(discourageAggregationAcrossGroups)) __obj.updateDynamic("discourageAggregationAcrossGroups")(discourageAggregationAcrossGroups)
     if (expr != null) __obj.updateDynamic("expr")(expr)

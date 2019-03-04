@@ -46,8 +46,7 @@ object IPatternOptions {
     patternTransform: js.Array[scala.Double] = null,
     repeat: java.lang.String = null
   ): IPatternOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])

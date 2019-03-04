@@ -12,8 +12,8 @@ trait Anon_MediaList extends js.Object {
 object Anon_MediaList {
   @scala.inline
   def apply(MediaListNs: js.Any): Anon_MediaList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MediaListNs")(MediaListNs)
+    val __obj = js.Dynamic.literal(MediaListNs = MediaListNs)
+  
     __obj.asInstanceOf[Anon_MediaList]
   }
 }

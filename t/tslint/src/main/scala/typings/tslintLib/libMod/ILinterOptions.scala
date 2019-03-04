@@ -24,8 +24,7 @@ object ILinterOptions {
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
     rulesDirectory: java.lang.String | js.Array[java.lang.String] = null
   ): ILinterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fix")(fix)
+    val __obj = js.Dynamic.literal(fix = fix)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)

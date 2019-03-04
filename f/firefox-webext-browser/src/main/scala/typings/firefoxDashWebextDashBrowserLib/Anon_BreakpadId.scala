@@ -48,15 +48,8 @@ object Anon_BreakpadId {
     start: js.Function1[Anon_BufferSize, js.Promise[_]],
     stop: js.Function0[js.Promise[_]]
   ): Anon_BreakpadId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getProfile")(getProfile)
-    __obj.updateDynamic("getProfileAsArrayBuffer")(getProfileAsArrayBuffer)
-    __obj.updateDynamic("getSymbols")(getSymbols)
-    __obj.updateDynamic("onRunning")(onRunning)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(getProfile = getProfile, getProfileAsArrayBuffer = getProfileAsArrayBuffer, getSymbols = getSymbols, onRunning = onRunning, pause = pause, resume = resume, start = start, stop = stop)
+  
     __obj.asInstanceOf[Anon_BreakpadId]
   }
 }

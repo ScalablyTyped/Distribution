@@ -24,9 +24,8 @@ object ChartDataRow {
     Name: java.lang.String,
     Points: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[ChartDataValue]]
   ): ChartDataRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Points")(Points)
+    val __obj = js.Dynamic.literal(Name = Name, Points = Points)
+  
     __obj.asInstanceOf[ChartDataRow]
   }
 }

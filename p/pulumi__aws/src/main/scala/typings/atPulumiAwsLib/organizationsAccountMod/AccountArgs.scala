@@ -32,8 +32,7 @@ object AccountArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): AccountArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
     if (iamUserAccessToBilling != null) __obj.updateDynamic("iamUserAccessToBilling")(iamUserAccessToBilling.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])

@@ -135,8 +135,7 @@ object Anon_Alt {
     start: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("q")(q)
+    val __obj = js.Dynamic.literal(q = q)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (c2coff != null) __obj.updateDynamic("c2coff")(c2coff)
     if (cr != null) __obj.updateDynamic("cr")(cr)

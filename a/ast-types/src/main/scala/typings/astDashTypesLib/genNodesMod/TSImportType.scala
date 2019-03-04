@@ -28,8 +28,8 @@ object TSImportType {
     qualifier: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
   ): TSImportType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
+    __obj.updateDynamic("type")(`type`)
     if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSImportType]

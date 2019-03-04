@@ -17,10 +17,8 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: scala.Double, parentMapUniqueKey: java.lang.String, uniqueId: java.lang.String): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("parentMapUniqueKey")(parentMapUniqueKey)
-    __obj.updateDynamic("uniqueId")(uniqueId)
+    val __obj = js.Dynamic.literal(index = index, parentMapUniqueKey = parentMapUniqueKey, uniqueId = uniqueId)
+  
     __obj.asInstanceOf[Anon_Index]
   }
 }

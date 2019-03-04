@@ -44,12 +44,8 @@ object INxAppProperties {
     qThumbnail: IStaticContentUrlDef,
     qTitle: java.lang.String
   ): INxAppProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qLastReloadTime")(qLastReloadTime)
-    __obj.updateDynamic("qMigrationHash")(qMigrationHash)
-    __obj.updateDynamic("qSavedInProductVersion")(qSavedInProductVersion)
-    __obj.updateDynamic("qThumbnail")(qThumbnail)
-    __obj.updateDynamic("qTitle")(qTitle)
+    val __obj = js.Dynamic.literal(qLastReloadTime = qLastReloadTime, qMigrationHash = qMigrationHash, qSavedInProductVersion = qSavedInProductVersion, qThumbnail = qThumbnail, qTitle = qTitle)
+  
     __obj.asInstanceOf[INxAppProperties]
   }
 }

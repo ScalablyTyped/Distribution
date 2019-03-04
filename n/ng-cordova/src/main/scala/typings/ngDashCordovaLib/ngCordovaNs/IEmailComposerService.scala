@@ -18,10 +18,8 @@ object IEmailComposerService {
     isAvailable: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Boolean]],
     open: js.Function1[IEmailComposerOptions, angularLib.angularMod.angularNs.IPromise[_]]
   ): IEmailComposerService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAlias")(addAlias)
-    __obj.updateDynamic("isAvailable")(isAvailable)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(addAlias = addAlias, isAvailable = isAvailable, open = open)
+  
     __obj.asInstanceOf[IEmailComposerService]
   }
 }

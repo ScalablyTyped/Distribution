@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 object JSXClosingFragment {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.JSXClosingFragment): JSXClosingFragment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSXClosingFragment]
   }
 }

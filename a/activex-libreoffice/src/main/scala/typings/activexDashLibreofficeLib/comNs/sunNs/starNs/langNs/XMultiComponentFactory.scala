@@ -66,14 +66,8 @@ object XMultiComponentFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMultiComponentFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableServiceNames")(AvailableServiceNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createInstanceWithArgumentsAndContext")(createInstanceWithArgumentsAndContext)
-    __obj.updateDynamic("createInstanceWithContext")(createInstanceWithContext)
-    __obj.updateDynamic("getAvailableServiceNames")(getAvailableServiceNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AvailableServiceNames = AvailableServiceNames, acquire = acquire, createInstanceWithArgumentsAndContext = createInstanceWithArgumentsAndContext, createInstanceWithContext = createInstanceWithContext, getAvailableServiceNames = getAvailableServiceNames, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMultiComponentFactory]
   }
 }

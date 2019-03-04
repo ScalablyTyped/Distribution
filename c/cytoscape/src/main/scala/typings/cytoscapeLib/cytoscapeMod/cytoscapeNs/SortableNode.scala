@@ -12,8 +12,8 @@ trait SortableNode extends js.Object {
 object SortableNode {
   @scala.inline
   def apply(data: cytoscapeLib.Anon_Weight): SortableNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+  
     __obj.asInstanceOf[SortableNode]
   }
 }

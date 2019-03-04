@@ -32,11 +32,8 @@ object GetRouteTableResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     transitGatewayId: java.lang.String
   ): GetRouteTableResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultAssociationRouteTable")(defaultAssociationRouteTable)
-    __obj.updateDynamic("defaultPropagationRouteTable")(defaultPropagationRouteTable)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("transitGatewayId")(transitGatewayId)
+    val __obj = js.Dynamic.literal(defaultAssociationRouteTable = defaultAssociationRouteTable, defaultPropagationRouteTable = defaultPropagationRouteTable, tags = tags, transitGatewayId = transitGatewayId)
+  
     __obj.asInstanceOf[GetRouteTableResult]
   }
 }

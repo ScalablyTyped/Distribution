@@ -24,9 +24,8 @@ object Node {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     sourceFile: java.lang.String = null
   ): Node = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)

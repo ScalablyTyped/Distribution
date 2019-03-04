@@ -32,8 +32,7 @@ object PogProps {
     iconColor: gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.gray | gestaltLib.gestaltLibStrings.red | gestaltLib.gestaltLibStrings.white = null,
     size: gestaltLib.gestaltLibStrings.xs | gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg | gestaltLib.gestaltLibStrings.xl = null
   ): PogProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(icon = icon)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
     if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)

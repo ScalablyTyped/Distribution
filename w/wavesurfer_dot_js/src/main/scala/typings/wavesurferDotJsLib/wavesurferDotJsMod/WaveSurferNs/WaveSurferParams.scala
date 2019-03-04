@@ -82,8 +82,7 @@ object WaveSurferParams {
     waveColor: java.lang.String = null,
     xhr: XHROptions = null
   ): WaveSurferParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (audioContext != null) __obj.updateDynamic("audioContext")(audioContext)
     if (audioRate != null) __obj.updateDynamic("audioRate")(audioRate.asInstanceOf[js.Any])
     if (audioScriptProcessor != null) __obj.updateDynamic("audioScriptProcessor")(audioScriptProcessor)

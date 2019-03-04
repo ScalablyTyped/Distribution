@@ -19,9 +19,7 @@ object RawIndexMap {
     skipValidation: js.UndefOr[scala.Boolean] = js.undefined,
     sourceRoot: java.lang.String = null
   ): RawIndexMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(sections = sections, version = version)
     if (file != null) __obj.updateDynamic("file")(file)
     if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation)
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)

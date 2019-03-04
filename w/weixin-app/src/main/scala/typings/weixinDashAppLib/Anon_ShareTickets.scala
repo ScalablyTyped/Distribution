@@ -13,8 +13,8 @@ trait Anon_ShareTickets extends js.Object {
 object Anon_ShareTickets {
   @scala.inline
   def apply(shareTickets: js.Array[java.lang.String]): Anon_ShareTickets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shareTickets")(shareTickets)
+    val __obj = js.Dynamic.literal(shareTickets = shareTickets)
+  
     __obj.asInstanceOf[Anon_ShareTickets]
   }
 }

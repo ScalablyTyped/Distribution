@@ -13,10 +13,8 @@ trait BooleanLiteral extends Node {
 object BooleanLiteral {
   @scala.inline
   def apply(loc: SourceLocation, original: scala.Boolean, `type`: java.lang.String, value: scala.Boolean): BooleanLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(loc = loc, original = original, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BooleanLiteral]
   }
 }

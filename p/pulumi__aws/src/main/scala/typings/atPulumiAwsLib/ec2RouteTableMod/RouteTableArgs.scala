@@ -44,8 +44,7 @@ object RouteTableArgs {
     ] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): RouteTableArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
     if (propagatingVgws != null) __obj.updateDynamic("propagatingVgws")(propagatingVgws.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

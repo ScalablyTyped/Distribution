@@ -46,37 +46,8 @@ object BootstrapClientSparkline {
     TooltipShown: ASPxClientEvent[BootstrapClientSparklineTooltipShownEventHandler[BootstrapClientSparkline]],
     name: java.lang.String
   ): BootstrapClientSparkline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("Disposing")(Disposing)
-    __obj.updateDynamic("Drawn")(Drawn)
-    __obj.updateDynamic("ExportTo")(ExportTo)
-    __obj.updateDynamic("Exported")(Exported)
-    __obj.updateDynamic("Exporting")(Exporting)
-    __obj.updateDynamic("FileSaving")(FileSaving)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetDataSource")(GetDataSource)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetInstance")(GetInstance)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("IncidentOccurred")(IncidentOccurred)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("OptionChanged")(OptionChanged)
-    __obj.updateDynamic("Print")(Print)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetDataSource")(SetDataSource)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetOptions")(SetOptions)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("TooltipHidden")(TooltipHidden)
-    __obj.updateDynamic("TooltipShown")(TooltipShown)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Disposing = Disposing, Drawn = Drawn, ExportTo = ExportTo, Exported = Exported, Exporting = Exporting, FileSaving = FileSaving, GetClientVisible = GetClientVisible, GetDataSource = GetDataSource, GetHeight = GetHeight, GetInstance = GetInstance, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, IncidentOccurred = IncidentOccurred, Init = Init, OptionChanged = OptionChanged, Print = Print, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetDataSource = SetDataSource, SetHeight = SetHeight, SetOptions = SetOptions, SetVisible = SetVisible, SetWidth = SetWidth, TooltipHidden = TooltipHidden, TooltipShown = TooltipShown, name = name)
+  
     __obj.asInstanceOf[BootstrapClientSparkline]
   }
 }

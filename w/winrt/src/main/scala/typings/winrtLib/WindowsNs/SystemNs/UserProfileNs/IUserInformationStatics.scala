@@ -66,21 +66,8 @@ object IUserInformationStatics {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SetAccountPictureResult]
     ]
   ): IUserInformationStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountPictureChangeEnabled")(accountPictureChangeEnabled)
-    __obj.updateDynamic("getAccountPicture")(getAccountPicture)
-    __obj.updateDynamic("getDisplayNameAsync")(getDisplayNameAsync)
-    __obj.updateDynamic("getDomainNameAsync")(getDomainNameAsync)
-    __obj.updateDynamic("getFirstNameAsync")(getFirstNameAsync)
-    __obj.updateDynamic("getLastNameAsync")(getLastNameAsync)
-    __obj.updateDynamic("getPrincipalNameAsync")(getPrincipalNameAsync)
-    __obj.updateDynamic("getSessionInitiationProtocolUriAsync")(getSessionInitiationProtocolUriAsync)
-    __obj.updateDynamic("nameAccessAllowed")(nameAccessAllowed)
-    __obj.updateDynamic("onaccountpicturechanged")(onaccountpicturechanged)
-    __obj.updateDynamic("setAccountPictureAsync")(setAccountPictureAsync)
-    __obj.updateDynamic("setAccountPictureFromStreamAsync")(setAccountPictureFromStreamAsync)
-    __obj.updateDynamic("setAccountPicturesAsync")(setAccountPicturesAsync)
-    __obj.updateDynamic("setAccountPicturesFromStreamsAsync")(setAccountPicturesFromStreamsAsync)
+    val __obj = js.Dynamic.literal(accountPictureChangeEnabled = accountPictureChangeEnabled, getAccountPicture = getAccountPicture, getDisplayNameAsync = getDisplayNameAsync, getDomainNameAsync = getDomainNameAsync, getFirstNameAsync = getFirstNameAsync, getLastNameAsync = getLastNameAsync, getPrincipalNameAsync = getPrincipalNameAsync, getSessionInitiationProtocolUriAsync = getSessionInitiationProtocolUriAsync, nameAccessAllowed = nameAccessAllowed, onaccountpicturechanged = onaccountpicturechanged, setAccountPictureAsync = setAccountPictureAsync, setAccountPictureFromStreamAsync = setAccountPictureFromStreamAsync, setAccountPicturesAsync = setAccountPicturesAsync, setAccountPicturesFromStreamsAsync = setAccountPicturesFromStreamsAsync)
+  
     __obj.asInstanceOf[IUserInformationStatics]
   }
 }

@@ -22,12 +22,8 @@ object ReGeocode {
     pois: js.Array[ReGeocodePoi],
     roads: js.Array[Road]
   ): ReGeocode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressComponent")(addressComponent)
-    __obj.updateDynamic("crosses")(crosses)
-    __obj.updateDynamic("formattedAddress")(formattedAddress)
-    __obj.updateDynamic("pois")(pois)
-    __obj.updateDynamic("roads")(roads)
+    val __obj = js.Dynamic.literal(addressComponent = addressComponent, crosses = crosses, formattedAddress = formattedAddress, pois = pois, roads = roads)
+  
     __obj.asInstanceOf[ReGeocode]
   }
 }

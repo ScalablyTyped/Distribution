@@ -16,9 +16,8 @@ object IStringResourceProvider {
     get: js.Function1[java.lang.String, java.lang.String],
     getOptional: js.Function1[java.lang.String, java.lang.String]
   ): IStringResourceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getOptional")(getOptional)
+    val __obj = js.Dynamic.literal(get = get, getOptional = getOptional)
+  
     __obj.asInstanceOf[IStringResourceProvider]
   }
 }

@@ -20,11 +20,8 @@ object Anon_CapSegments {
     heightSegments: scala.Double,
     radius: scala.Double
   ): Anon_CapSegments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capSegments")(capSegments)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(capSegments = capSegments, height = height, heightSegments = heightSegments, radius = radius)
+  
     __obj.asInstanceOf[Anon_CapSegments]
   }
 }

@@ -254,13 +254,7 @@ object CapabilityStatement {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): CapabilityStatement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptUnknown")(acceptUnknown)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("fhirVersion")(fhirVersion)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(acceptUnknown = acceptUnknown, date = date, fhirVersion = fhirVersion, format = format, kind = kind, status = status)
     if (_acceptUnknown != null) __obj.updateDynamic("_acceptUnknown")(_acceptUnknown)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)

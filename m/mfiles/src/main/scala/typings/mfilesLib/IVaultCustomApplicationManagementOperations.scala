@@ -32,17 +32,8 @@ object IVaultCustomApplicationManagementOperations {
     InstallCustomApplication: js.Function1[java.lang.String, scala.Unit],
     UninstallCustomApplication: js.Function1[java.lang.String, scala.Unit]
   ): IVaultCustomApplicationManagementOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DownloadCustomApplicationBlock")(DownloadCustomApplicationBlock)
-    __obj.updateDynamic("DownloadCustomApplicationBlockBegin")(DownloadCustomApplicationBlockBegin)
-    __obj.updateDynamic("DownloadCustomApplicationBlockBegin_32bit")(DownloadCustomApplicationBlockBegin_32bit)
-    __obj.updateDynamic("DownloadCustomApplicationBlock_32bit")(DownloadCustomApplicationBlock_32bit)
-    __obj.updateDynamic("EnableCustomApplication")(EnableCustomApplication)
-    __obj.updateDynamic("GetCustomApplication")(GetCustomApplication)
-    __obj.updateDynamic("GetCustomApplications")(GetCustomApplications)
-    __obj.updateDynamic("GetCustomApplicationsEx")(GetCustomApplicationsEx)
-    __obj.updateDynamic("InstallCustomApplication")(InstallCustomApplication)
-    __obj.updateDynamic("UninstallCustomApplication")(UninstallCustomApplication)
+    val __obj = js.Dynamic.literal(DownloadCustomApplicationBlock = DownloadCustomApplicationBlock, DownloadCustomApplicationBlockBegin = DownloadCustomApplicationBlockBegin, DownloadCustomApplicationBlockBegin_32bit = DownloadCustomApplicationBlockBegin_32bit, DownloadCustomApplicationBlock_32bit = DownloadCustomApplicationBlock_32bit, EnableCustomApplication = EnableCustomApplication, GetCustomApplication = GetCustomApplication, GetCustomApplications = GetCustomApplications, GetCustomApplicationsEx = GetCustomApplicationsEx, InstallCustomApplication = InstallCustomApplication, UninstallCustomApplication = UninstallCustomApplication)
+  
     __obj.asInstanceOf[IVaultCustomApplicationManagementOperations]
   }
 }

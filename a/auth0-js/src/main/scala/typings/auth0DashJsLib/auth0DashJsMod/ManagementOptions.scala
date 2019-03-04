@@ -28,8 +28,7 @@ object ManagementOptions {
     token: java.lang.String = null,
     tokenProvider: TokenProvider = null
   ): ManagementOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)

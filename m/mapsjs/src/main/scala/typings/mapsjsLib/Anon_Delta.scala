@@ -24,9 +24,7 @@ object Anon_Delta {
     upAction: js.Function1[/* upPoint */ mapsjsLib.mapsjsMod.point, scala.Unit] = null,
     wheelAction: js.Function1[/* delta */ scala.Double, scala.Unit] = null
   ): Anon_Delta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dragEnabled")(dragEnabled)
-    __obj.updateDynamic("useElementInsteadOfNewGestureOverlay")(useElementInsteadOfNewGestureOverlay)
+    val __obj = js.Dynamic.literal(dragEnabled = dragEnabled, useElementInsteadOfNewGestureOverlay = useElementInsteadOfNewGestureOverlay)
     if (downAction != null) __obj.updateDynamic("downAction")(downAction)
     if (moveAction != null) __obj.updateDynamic("moveAction")(moveAction)
     if (upAction != null) __obj.updateDynamic("upAction")(upAction)

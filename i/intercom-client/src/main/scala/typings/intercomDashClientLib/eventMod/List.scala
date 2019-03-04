@@ -20,10 +20,8 @@ object List {
     total_count: scala.Double,
     `type`: intercomDashClientLib.intercomDashClientLibStrings.eventDOTlist
   ): List = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("total_count")(total_count)
+    val __obj = js.Dynamic.literal(events = events, pages = pages, total_count = total_count)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[List]
   }
 }

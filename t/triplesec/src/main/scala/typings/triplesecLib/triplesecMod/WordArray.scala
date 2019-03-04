@@ -14,10 +14,8 @@ trait WordArray extends js.Object {
 object WordArray {
   @scala.inline
   def apply(sigBytes: scala.Double, to_hex: js.Function0[java.lang.String], words: js.Array[scala.Double]): WordArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sigBytes")(sigBytes)
-    __obj.updateDynamic("to_hex")(to_hex)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(sigBytes = sigBytes, to_hex = to_hex, words = words)
+  
     __obj.asInstanceOf[WordArray]
   }
 }

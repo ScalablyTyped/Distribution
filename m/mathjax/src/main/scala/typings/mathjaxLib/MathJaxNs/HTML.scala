@@ -39,13 +39,7 @@ object HTML {
     setScript: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     Cookie: Cookie = null
   ): HTML = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Element")(Element)
-    __obj.updateDynamic("TextNode")(TextNode)
-    __obj.updateDynamic("addElement")(addElement)
-    __obj.updateDynamic("addText")(addText)
-    __obj.updateDynamic("getScript")(getScript)
-    __obj.updateDynamic("setScript")(setScript)
+    val __obj = js.Dynamic.literal(Element = Element, TextNode = TextNode, addElement = addElement, addText = addText, getScript = getScript, setScript = setScript)
     if (Cookie != null) __obj.updateDynamic("Cookie")(Cookie)
     __obj.asInstanceOf[HTML]
   }

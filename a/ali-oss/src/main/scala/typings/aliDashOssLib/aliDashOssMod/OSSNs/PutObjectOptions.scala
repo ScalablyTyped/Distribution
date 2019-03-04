@@ -25,8 +25,7 @@ object PutObjectOptions {
     mime: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): PutObjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
+    val __obj = js.Dynamic.literal(callback = callback)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (mime != null) __obj.updateDynamic("mime")(mime)

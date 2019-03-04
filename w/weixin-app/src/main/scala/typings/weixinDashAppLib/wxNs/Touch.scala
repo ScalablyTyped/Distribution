@@ -22,12 +22,8 @@ object Touch {
     pageX: scala.Double,
     pageY: scala.Double
   ): Touch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientX")(clientX)
-    __obj.updateDynamic("clientY")(clientY)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("pageX")(pageX)
-    __obj.updateDynamic("pageY")(pageY)
+    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, identifier = identifier, pageX = pageX, pageY = pageY)
+  
     __obj.asInstanceOf[Touch]
   }
 }

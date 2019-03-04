@@ -113,10 +113,7 @@ object RequestOptions {
     timeout: scala.Int | scala.Double = null,
     useProxy: js.UndefOr[scala.Boolean] = js.undefined
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (authMode != null) __obj.updateDynamic("authMode")(authMode)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust)

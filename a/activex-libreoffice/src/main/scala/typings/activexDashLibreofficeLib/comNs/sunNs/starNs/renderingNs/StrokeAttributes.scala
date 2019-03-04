@@ -82,14 +82,8 @@ object StrokeAttributes {
     StartCapType: scala.Double,
     StrokeWidth: scala.Double
   ): StrokeAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DashArray")(DashArray)
-    __obj.updateDynamic("EndCapType")(EndCapType)
-    __obj.updateDynamic("JoinType")(JoinType)
-    __obj.updateDynamic("LineArray")(LineArray)
-    __obj.updateDynamic("MiterLimit")(MiterLimit)
-    __obj.updateDynamic("StartCapType")(StartCapType)
-    __obj.updateDynamic("StrokeWidth")(StrokeWidth)
+    val __obj = js.Dynamic.literal(DashArray = DashArray, EndCapType = EndCapType, JoinType = JoinType, LineArray = LineArray, MiterLimit = MiterLimit, StartCapType = StartCapType, StrokeWidth = StrokeWidth)
+  
     __obj.asInstanceOf[StrokeAttributes]
   }
 }

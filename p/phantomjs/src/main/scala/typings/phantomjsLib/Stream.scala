@@ -28,15 +28,8 @@ object Stream {
     write: js.Function1[java.lang.String, scala.Unit],
     writeLine: js.Function1[java.lang.String, scala.Unit]
   ): Stream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atEnd")(atEnd)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("readLine")(readLine)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("write")(write)
-    __obj.updateDynamic("writeLine")(writeLine)
+    val __obj = js.Dynamic.literal(atEnd = atEnd, close = close, flush = flush, read = read, readLine = readLine, seek = seek, write = write, writeLine = writeLine)
+  
     __obj.asInstanceOf[Stream]
   }
 }

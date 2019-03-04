@@ -39,11 +39,8 @@ object ASPxClientTouchUIOptions {
     showVerticalScrollbar: scala.Boolean,
     vScrollClassName: java.lang.String
   ): ASPxClientTouchUIOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hScrollClassName")(hScrollClassName)
-    __obj.updateDynamic("showHorizontalScrollbar")(showHorizontalScrollbar)
-    __obj.updateDynamic("showVerticalScrollbar")(showVerticalScrollbar)
-    __obj.updateDynamic("vScrollClassName")(vScrollClassName)
+    val __obj = js.Dynamic.literal(hScrollClassName = hScrollClassName, showHorizontalScrollbar = showHorizontalScrollbar, showVerticalScrollbar = showVerticalScrollbar, vScrollClassName = vScrollClassName)
+  
     __obj.asInstanceOf[ASPxClientTouchUIOptions]
   }
 }

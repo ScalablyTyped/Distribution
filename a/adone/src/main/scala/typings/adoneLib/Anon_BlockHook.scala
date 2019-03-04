@@ -18,10 +18,8 @@ object Anon_BlockHook {
     hook: adoneLib.adoneNs.shaniNs.INs.Hook,
     test: adoneLib.adoneNs.shaniNs.INs.Test
   ): Anon_BlockHook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("hook")(hook)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(block = block, hook = hook, test = test)
+  
     __obj.asInstanceOf[Anon_BlockHook]
   }
 }

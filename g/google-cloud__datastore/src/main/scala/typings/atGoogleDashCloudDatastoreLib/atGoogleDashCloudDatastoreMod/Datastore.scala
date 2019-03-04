@@ -15,8 +15,8 @@ trait Datastore
   def createQuery(kind: java.lang.String): atGoogleDashCloudDatastoreLib.queryMod.Query = js.native
   // tslint:disable-next-line unified-signatures (Arg is semantically different)
   def createQuery(namespace: java.lang.String, kind: java.lang.String): atGoogleDashCloudDatastoreLib.queryMod.Query = js.native
-  def `determineBaseUrl_`(): scala.Unit = js.native
-  def `determineBaseUrl_`(customApiEndpoint: java.lang.String): scala.Unit = js.native
+  def determineBaseUrl_(): scala.Unit = js.native
+  def determineBaseUrl_(customApiEndpoint: java.lang.String): scala.Unit = js.native
   def double(value: java.lang.String): atGoogleDashCloudDatastoreLib.entityMod.DatastoreDouble = js.native
   def double(value: scala.Double): atGoogleDashCloudDatastoreLib.entityMod.DatastoreDouble = js.native
   def geoPoint(coordinates: atGoogleDashCloudDatastoreLib.entityMod.DatastoreCoords): atGoogleDashCloudDatastoreLib.entityMod.DatastoreGeopoint = js.native

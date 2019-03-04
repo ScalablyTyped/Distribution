@@ -22,12 +22,8 @@ object Response {
     over: scala.Boolean,
     window: scala.Double
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("over")(over)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(current = current, key = key, limit = limit, over = over, window = window)
+  
     __obj.asInstanceOf[Response]
   }
 }

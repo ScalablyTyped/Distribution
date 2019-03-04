@@ -64,8 +64,7 @@ object DynaTreeDNDOptions {
     ] = null,
     preventVoidMoves: js.UndefOr[scala.Boolean] = js.undefined
   ): DynaTreeDNDOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("revert")(revert)
+    val __obj = js.Dynamic.literal(revert = revert)
     if (autoExpandMS != null) __obj.updateDynamic("autoExpandMS")(autoExpandMS.asInstanceOf[js.Any])
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
     if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)

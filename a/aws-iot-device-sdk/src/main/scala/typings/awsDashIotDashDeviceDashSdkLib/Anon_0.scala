@@ -14,8 +14,8 @@ object Anon_0 {
   def apply(
     qos: awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkLibNumbers.`0` | awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkLibNumbers.`1`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

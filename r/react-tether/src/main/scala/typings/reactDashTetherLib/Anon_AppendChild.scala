@@ -12,8 +12,8 @@ trait Anon_AppendChild extends js.Object {
 object Anon_AppendChild {
   @scala.inline
   def apply(appendChild: js.Function1[reactLib.HTMLElement, scala.Unit]): Anon_AppendChild = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendChild")(appendChild)
+    val __obj = js.Dynamic.literal(appendChild = appendChild)
+  
     __obj.asInstanceOf[Anon_AppendChild]
   }
 }

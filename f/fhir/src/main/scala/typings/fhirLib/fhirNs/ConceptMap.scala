@@ -194,8 +194,7 @@ object ConceptMap {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): ConceptMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_description != null) __obj.updateDynamic("_description")(_description)

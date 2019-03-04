@@ -24,7 +24,7 @@ trait Client extends js.Object {
     flags: scala.Double,
     callback: zookeeperLib.Callback[java.lang.String]
   ): scala.Unit = js.native
-  def `a_delete_`(path: java.lang.String, version: scala.Double, callback: zookeeperLib.Callback[scala.Unit]): scala.Unit = js.native
+  def a_delete_(path: java.lang.String, version: scala.Double, callback: zookeeperLib.Callback[scala.Unit]): scala.Unit = js.native
   def a_exists(path: java.lang.String, watch: scala.Boolean, callback: zookeeperLib.Callback[Stat]): scala.Unit = js.native
   def a_get(
     path: java.lang.String,

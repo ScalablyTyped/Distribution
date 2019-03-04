@@ -12,8 +12,8 @@ trait MultiPeriodMarking extends Marking {
 object MultiPeriodMarking {
   @scala.inline
   def apply(periods: js.Array[reactDashNativeDashCalendarsLib.Anon_Color]): MultiPeriodMarking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("periods")(periods)
+    val __obj = js.Dynamic.literal(periods = periods)
+  
     __obj.asInstanceOf[MultiPeriodMarking]
   }
 }

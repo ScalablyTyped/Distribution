@@ -65,17 +65,8 @@ object ChangeRuleMatch {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     ruleID: java.lang.String
   ): ChangeRuleMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeTime")(changeTime)
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("jobID")(jobID)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("ruleID")(ruleID)
+    val __obj = js.Dynamic.literal(changeTime = changeTime, changeType = changeType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = hasOwnProperty, id = id, jobID = jobID, propertyIsEnumerable = propertyIsEnumerable, ruleID = ruleID)
+  
     __obj.asInstanceOf[ChangeRuleMatch]
   }
 }

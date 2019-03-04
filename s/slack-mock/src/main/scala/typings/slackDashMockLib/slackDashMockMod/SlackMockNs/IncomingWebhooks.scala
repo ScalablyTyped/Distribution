@@ -18,10 +18,8 @@ object IncomingWebhooks {
     calls: js.Array[IncomingWebhookCall[T]],
     reset: js.Function0[scala.Unit]
   ): IncomingWebhooks[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addResponse")(addResponse)
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(addResponse = addResponse, calls = calls, reset = reset)
+  
     __obj.asInstanceOf[IncomingWebhooks[T]]
   }
 }

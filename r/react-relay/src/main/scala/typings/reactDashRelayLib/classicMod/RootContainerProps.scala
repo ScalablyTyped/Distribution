@@ -36,9 +36,7 @@ object RootContainerProps {
     renderFetched: js.Function1[/* data */ js.Any, reactLib.reactMod.Global.JSXNs.Element] = null,
     renderLoading: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null
   ): RootContainerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(Component = Component, route = route)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

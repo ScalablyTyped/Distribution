@@ -12,8 +12,8 @@ trait Anon_ErrorCount extends js.Object {
 object Anon_ErrorCount {
   @scala.inline
   def apply(errorCount: scala.Double): Anon_ErrorCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCount")(errorCount)
+    val __obj = js.Dynamic.literal(errorCount = errorCount)
+  
     __obj.asInstanceOf[Anon_ErrorCount]
   }
 }

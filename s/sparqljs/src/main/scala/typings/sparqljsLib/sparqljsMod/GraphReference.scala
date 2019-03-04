@@ -19,7 +19,8 @@ object GraphReference {
     name: java.lang.String = null,
     named: js.UndefOr[scala.Boolean] = js.undefined
   ): GraphReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
     if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
     if (name != null) __obj.updateDynamic("name")(name)

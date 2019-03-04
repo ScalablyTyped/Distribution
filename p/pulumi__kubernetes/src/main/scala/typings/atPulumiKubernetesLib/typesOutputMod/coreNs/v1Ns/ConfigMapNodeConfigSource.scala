@@ -45,12 +45,8 @@ object ConfigMapNodeConfigSource {
     resourceVersion: java.lang.String,
     uid: java.lang.String
   ): ConfigMapNodeConfigSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kubeletConfigKey")(kubeletConfigKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(kubeletConfigKey = kubeletConfigKey, name = name, namespace = namespace, resourceVersion = resourceVersion, uid = uid)
+  
     __obj.asInstanceOf[ConfigMapNodeConfigSource]
   }
 }

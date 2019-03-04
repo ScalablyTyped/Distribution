@@ -26,14 +26,8 @@ object GeocoderResult {
     postcode_localities: js.Array[java.lang.String],
     types: js.Array[java.lang.String]
   ): GeocoderResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address_components")(address_components)
-    __obj.updateDynamic("formatted_address")(formatted_address)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("partial_match")(partial_match)
-    __obj.updateDynamic("place_id")(place_id)
-    __obj.updateDynamic("postcode_localities")(postcode_localities)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(address_components = address_components, formatted_address = formatted_address, geometry = geometry, partial_match = partial_match, place_id = place_id, postcode_localities = postcode_localities, types = types)
+  
     __obj.asInstanceOf[GeocoderResult]
   }
 }

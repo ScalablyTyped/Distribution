@@ -41,41 +41,41 @@ class Model protected () extends js.Object {
     * @param {function} callback Method to execute upon completion, returns error if failed
     * @private
     */
-  /* private */ def `__destroy__`(callback: js.Any): js.Any = js.native
-  def `__generateSaveQuery__`(): nodalLib.Anon_Params = js.native
+  /* private */ def __destroy__(callback: js.Any): js.Any = js.native
+  def __generateSaveQuery__(): nodalLib.Anon_Params = js.native
   /**
     * Prepare model for use
     * @private
     */
-  /* private */ def `__initialize__`(): js.Any = js.native
-  def `__load__`(data: js.Any): this.type = js.native
-  def `__load__`(data: js.Any, fromStorage: scala.Boolean): this.type = js.native
-  def `__load__`(data: js.Any, fromStorage: scala.Boolean, fromSeed: scala.Boolean): this.type = js.native
+  /* private */ def __initialize__(): js.Any = js.native
+  def __load__(data: js.Any): this.type = js.native
+  def __load__(data: js.Any, fromStorage: scala.Boolean): this.type = js.native
+  def __load__(data: js.Any, fromStorage: scala.Boolean, fromSeed: scala.Boolean): this.type = js.native
   /**
     * Sets specified field data for the model, assuming data is safe and does not log changes
     * @param {string} field Field to set
     * @param {any} value Value for the field
     */
-  def `__safeSet__`(field: java.lang.String, value: js.Any): scala.Unit = js.native
+  def __safeSet__(field: java.lang.String, value: js.Any): scala.Unit = js.native
   /**
     * Saves model to database
     * @param {function} callback Method to execute upon completion, returns error if failed (including validations didn't pass)
     * @private
     */
-  /* private */ def `__save__`(callback: js.Any): js.Any = js.native
+  /* private */ def __save__(callback: js.Any): js.Any = js.native
   /**
     * Validates provided fieldList (or all fields if not provided)
     * @private
     * @param {optional Array} fieldList fields to validate
     */
-  /* private */ def `__validate__`(): js.Any = js.native
-  /* private */ def `__validate__`(field: js.Any): js.Any = js.native
+  /* private */ def __validate__(): js.Any = js.native
+  /* private */ def __validate__(field: js.Any): js.Any = js.native
   /**
     * Runs all verifications before saving
     * @param {function} callback Method to execute upon completion. Returns true if OK, false if failed
     * @private
     */
-  def `__verify__`(callback: js.Function): js.Any = js.native
+  def __verify__(callback: js.Function): js.Any = js.native
   /**
     * Logic to execute after a model is destroyed. Intended to be overwritten when inherited.
     * @param {Function} callback Invoke with first argument as an error if failure.

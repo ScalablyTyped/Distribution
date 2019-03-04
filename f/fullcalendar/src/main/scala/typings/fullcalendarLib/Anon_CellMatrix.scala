@@ -24,13 +24,8 @@ object Anon_CellMatrix {
     segs: js.Any,
     tbodyEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery
   ): Anon_CellMatrix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellMatrix")(cellMatrix)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("segLevels")(segLevels)
-    __obj.updateDynamic("segMatrix")(segMatrix)
-    __obj.updateDynamic("segs")(segs)
-    __obj.updateDynamic("tbodyEl")(tbodyEl)
+    val __obj = js.Dynamic.literal(cellMatrix = cellMatrix, row = row, segLevels = segLevels, segMatrix = segMatrix, segs = segs, tbodyEl = tbodyEl)
+  
     __obj.asInstanceOf[Anon_CellMatrix]
   }
 }

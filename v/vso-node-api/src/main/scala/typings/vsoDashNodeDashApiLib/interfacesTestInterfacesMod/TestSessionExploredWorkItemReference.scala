@@ -29,11 +29,8 @@ object TestSessionExploredWorkItemReference {
     startTime: stdLib.Date,
     `type`: java.lang.String
   ): TestSessionExploredWorkItemReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("associatedWorkItems")(associatedWorkItems)
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(associatedWorkItems = associatedWorkItems, endTime = endTime, id = id, startTime = startTime)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TestSessionExploredWorkItemReference]
   }
 }

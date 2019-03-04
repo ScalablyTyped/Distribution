@@ -15,8 +15,8 @@ trait SetSamplingIntervalParameterType extends js.Object {
 object SetSamplingIntervalParameterType {
   @scala.inline
   def apply(interval: scala.Double): SetSamplingIntervalParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
+    val __obj = js.Dynamic.literal(interval = interval)
+  
     __obj.asInstanceOf[SetSamplingIntervalParameterType]
   }
 }

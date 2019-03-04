@@ -78,16 +78,8 @@ object MediaError {
     message: java.lang.String,
     status: js.Array[_]
   ): MediaError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MEDIA_ERR_ABORTED")(MEDIA_ERR_ABORTED)
-    __obj.updateDynamic("MEDIA_ERR_CUSTOM")(MEDIA_ERR_CUSTOM)
-    __obj.updateDynamic("MEDIA_ERR_DECODE")(MEDIA_ERR_DECODE)
-    __obj.updateDynamic("MEDIA_ERR_ENCRYPTED")(MEDIA_ERR_ENCRYPTED)
-    __obj.updateDynamic("MEDIA_ERR_NETWORK")(MEDIA_ERR_NETWORK)
-    __obj.updateDynamic("MEDIA_ERR_SRC_NOT_SUPPORTED")(MEDIA_ERR_SRC_NOT_SUPPORTED)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = MEDIA_ERR_ABORTED, MEDIA_ERR_CUSTOM = MEDIA_ERR_CUSTOM, MEDIA_ERR_DECODE = MEDIA_ERR_DECODE, MEDIA_ERR_ENCRYPTED = MEDIA_ERR_ENCRYPTED, MEDIA_ERR_NETWORK = MEDIA_ERR_NETWORK, MEDIA_ERR_SRC_NOT_SUPPORTED = MEDIA_ERR_SRC_NOT_SUPPORTED, code = code, message = message, status = status)
+  
     __obj.asInstanceOf[MediaError]
   }
 }

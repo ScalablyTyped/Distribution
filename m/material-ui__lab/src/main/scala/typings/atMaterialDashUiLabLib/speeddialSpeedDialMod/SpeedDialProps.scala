@@ -45,10 +45,7 @@ object SpeedDialProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null
   ): SpeedDialProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ariaLabel")(ariaLabel)
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel, icon = icon.asInstanceOf[js.Any], open = open)
     if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)

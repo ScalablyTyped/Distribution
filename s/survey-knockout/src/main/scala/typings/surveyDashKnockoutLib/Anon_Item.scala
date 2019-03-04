@@ -20,11 +20,8 @@ object Anon_Item {
     materialDecorator: java.lang.String,
     root: java.lang.String
   ): Anon_Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("materialDecorator")(materialDecorator)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(item = item, label = label, materialDecorator = materialDecorator, root = root)
+  
     __obj.asInstanceOf[Anon_Item]
   }
 }

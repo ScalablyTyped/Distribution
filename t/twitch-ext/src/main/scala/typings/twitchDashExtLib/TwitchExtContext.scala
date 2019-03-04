@@ -100,23 +100,8 @@ object TwitchExtContext {
     videoResolution: java.lang.String,
     volume: scala.Double
   ): TwitchExtContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arePlayerControlsVisible")(arePlayerControlsVisible)
-    __obj.updateDynamic("bitrate")(bitrate)
-    __obj.updateDynamic("bufferSize")(bufferSize)
-    __obj.updateDynamic("displayResolution")(displayResolution)
-    __obj.updateDynamic("game")(game)
-    __obj.updateDynamic("hlsLatencyBroadcaster")(hlsLatencyBroadcaster)
-    __obj.updateDynamic("isFullScreen")(isFullScreen)
-    __obj.updateDynamic("isMuted")(isMuted)
-    __obj.updateDynamic("isPaused")(isPaused)
-    __obj.updateDynamic("isTheatreMode")(isTheatreMode)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("playbackMode")(playbackMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    __obj.updateDynamic("videoResolution")(videoResolution)
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(arePlayerControlsVisible = arePlayerControlsVisible, bitrate = bitrate, bufferSize = bufferSize, displayResolution = displayResolution, game = game, hlsLatencyBroadcaster = hlsLatencyBroadcaster, isFullScreen = isFullScreen, isMuted = isMuted, isPaused = isPaused, isTheatreMode = isTheatreMode, language = language, mode = mode.asInstanceOf[js.Any], playbackMode = playbackMode.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], videoResolution = videoResolution, volume = volume)
+  
     __obj.asInstanceOf[TwitchExtContext]
   }
 }

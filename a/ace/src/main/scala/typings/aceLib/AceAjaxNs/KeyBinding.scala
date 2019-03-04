@@ -26,14 +26,8 @@ object KeyBinding {
     setDefaultHandler: js.Function1[js.Any, scala.Unit],
     setKeyboardHandler: js.Function1[js.Any, scala.Unit]
   ): KeyBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addKeyboardHandler")(addKeyboardHandler)
-    __obj.updateDynamic("getKeyboardHandler")(getKeyboardHandler)
-    __obj.updateDynamic("onCommandKey")(onCommandKey)
-    __obj.updateDynamic("onTextInput")(onTextInput)
-    __obj.updateDynamic("removeKeyboardHandler")(removeKeyboardHandler)
-    __obj.updateDynamic("setDefaultHandler")(setDefaultHandler)
-    __obj.updateDynamic("setKeyboardHandler")(setKeyboardHandler)
+    val __obj = js.Dynamic.literal(addKeyboardHandler = addKeyboardHandler, getKeyboardHandler = getKeyboardHandler, onCommandKey = onCommandKey, onTextInput = onTextInput, removeKeyboardHandler = removeKeyboardHandler, setDefaultHandler = setDefaultHandler, setKeyboardHandler = setKeyboardHandler)
+  
     __obj.asInstanceOf[KeyBinding]
   }
 }

@@ -24,13 +24,8 @@ object Channel {
     PublishUrls: js.Array[java.lang.String],
     Status: java.lang.String
   ): Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("LastModified")(LastModified)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PlayUrls")(PlayUrls)
-    __obj.updateDynamic("PublishUrls")(PublishUrls)
-    __obj.updateDynamic("Status")(Status)
+    val __obj = js.Dynamic.literal(Description = Description, LastModified = LastModified, Name = Name, PlayUrls = PlayUrls, PublishUrls = PublishUrls, Status = Status)
+  
     __obj.asInstanceOf[Channel]
   }
 }

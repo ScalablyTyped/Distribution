@@ -18,10 +18,8 @@ object AbortRequestedEventOptions {
     operationRequestId: chromeDashAppsLib.chromeNs.integer,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): AbortRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("operationRequestId")(operationRequestId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, operationRequestId = operationRequestId, requestId = requestId)
+  
     __obj.asInstanceOf[AbortRequestedEventOptions]
   }
 }

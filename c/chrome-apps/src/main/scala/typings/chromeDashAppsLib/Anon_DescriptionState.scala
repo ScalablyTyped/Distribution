@@ -30,9 +30,8 @@ object Anon_DescriptionState {
       ]
     ]
   ): Anon_DescriptionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DescriptionState]
   }
 }

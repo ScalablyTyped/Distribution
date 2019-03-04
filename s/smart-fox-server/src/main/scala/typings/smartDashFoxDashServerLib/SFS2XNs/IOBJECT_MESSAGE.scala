@@ -13,9 +13,8 @@ trait IOBJECT_MESSAGE extends js.Object {
 object IOBJECT_MESSAGE {
   @scala.inline
   def apply(message: java.lang.String, sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser): IOBJECT_MESSAGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(message = message, sender = sender)
+  
     __obj.asInstanceOf[IOBJECT_MESSAGE]
   }
 }

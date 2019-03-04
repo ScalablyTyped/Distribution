@@ -32,10 +32,8 @@ object ASPxClientFormBase {
     FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]],
     SetVisibleCore: js.Function2[js.Object, scala.Boolean, scala.Unit]
   ): ASPxClientFormBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("FormClosed")(FormClosed)
-    __obj.updateDynamic("SetVisibleCore")(SetVisibleCore)
+    val __obj = js.Dynamic.literal(Close = Close, FormClosed = FormClosed, SetVisibleCore = SetVisibleCore)
+  
     __obj.asInstanceOf[ASPxClientFormBase]
   }
 }

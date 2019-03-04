@@ -12,8 +12,8 @@ trait Anon_BufferAnonAlloc extends js.Object {
 object Anon_BufferAnonAlloc {
   @scala.inline
   def apply(Buffer: Anon_Alloc): Anon_BufferAnonAlloc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Buffer")(Buffer)
+    val __obj = js.Dynamic.literal(Buffer = Buffer)
+  
     __obj.asInstanceOf[Anon_BufferAnonAlloc]
   }
 }

@@ -84,18 +84,8 @@ object QRScannerStatus {
     scanning: scala.Boolean,
     webviewBackgroundIsTransparent: scala.Boolean
   ): QRScannerStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorized")(authorized)
-    __obj.updateDynamic("canEnableLight")(canEnableLight)
-    __obj.updateDynamic("canOpenSettings")(canOpenSettings)
-    __obj.updateDynamic("currentCamera")(currentCamera)
-    __obj.updateDynamic("denied")(denied)
-    __obj.updateDynamic("lightEnabled")(lightEnabled)
-    __obj.updateDynamic("prepared")(prepared)
-    __obj.updateDynamic("previewing")(previewing)
-    __obj.updateDynamic("restricted")(restricted)
-    __obj.updateDynamic("scanning")(scanning)
-    __obj.updateDynamic("webviewBackgroundIsTransparent")(webviewBackgroundIsTransparent)
+    val __obj = js.Dynamic.literal(authorized = authorized, canEnableLight = canEnableLight, canOpenSettings = canOpenSettings, currentCamera = currentCamera, denied = denied, lightEnabled = lightEnabled, prepared = prepared, previewing = previewing, restricted = restricted, scanning = scanning, webviewBackgroundIsTransparent = webviewBackgroundIsTransparent)
+  
     __obj.asInstanceOf[QRScannerStatus]
   }
 }

@@ -27,13 +27,8 @@ object ConfigurationEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     aInfo: js.Any
   ): ConfigurationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Accessor")(Accessor)
-    __obj.updateDynamic("Element")(Element)
-    __obj.updateDynamic("ReplacedElement")(ReplacedElement)
-    __obj.updateDynamic("ResourceURL")(ResourceURL)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("aInfo")(aInfo)
+    val __obj = js.Dynamic.literal(Accessor = Accessor, Element = Element, ReplacedElement = ReplacedElement, ResourceURL = ResourceURL, Source = Source, aInfo = aInfo)
+  
     __obj.asInstanceOf[ConfigurationEvent]
   }
 }

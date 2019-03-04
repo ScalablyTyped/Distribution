@@ -21,13 +21,8 @@ object XHierarchicalNameReplace {
     release: js.Function0[scala.Unit],
     replaceByHierarchicalName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XHierarchicalNameReplace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
-    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceByHierarchicalName")(replaceByHierarchicalName)
+    val __obj = js.Dynamic.literal(acquire = acquire, getByHierarchicalName = getByHierarchicalName, hasByHierarchicalName = hasByHierarchicalName, queryInterface = queryInterface, release = release, replaceByHierarchicalName = replaceByHierarchicalName)
+  
     __obj.asInstanceOf[XHierarchicalNameReplace]
   }
 }

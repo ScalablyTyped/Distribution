@@ -30,16 +30,8 @@ object Maps {
     newStaticMap: js.Function0[StaticMap],
     setAuthentication: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): Maps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DirectionFinder")(DirectionFinder)
-    __obj.updateDynamic("StaticMap")(StaticMap)
-    __obj.updateDynamic("decodePolyline")(decodePolyline)
-    __obj.updateDynamic("encodePolyline")(encodePolyline)
-    __obj.updateDynamic("newDirectionFinder")(newDirectionFinder)
-    __obj.updateDynamic("newElevationSampler")(newElevationSampler)
-    __obj.updateDynamic("newGeocoder")(newGeocoder)
-    __obj.updateDynamic("newStaticMap")(newStaticMap)
-    __obj.updateDynamic("setAuthentication")(setAuthentication)
+    val __obj = js.Dynamic.literal(DirectionFinder = DirectionFinder, StaticMap = StaticMap, decodePolyline = decodePolyline, encodePolyline = encodePolyline, newDirectionFinder = newDirectionFinder, newElevationSampler = newElevationSampler, newGeocoder = newGeocoder, newStaticMap = newStaticMap, setAuthentication = setAuthentication)
+  
     __obj.asInstanceOf[Maps]
   }
 }

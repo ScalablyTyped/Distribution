@@ -41,9 +41,7 @@ object Cell {
     svgClassName: java.lang.String = null,
     svgStyle: js.Object = null
   ): Cell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(column = column, row = row)
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelHalign != null) __obj.updateDynamic("labelHalign")(labelHalign)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)

@@ -13,8 +13,7 @@ trait LogTraceParams extends js.Object {
 object LogTraceParams {
   @scala.inline
   def apply(message: java.lang.String, verbose: java.lang.String = null): LogTraceParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (verbose != null) __obj.updateDynamic("verbose")(verbose)
     __obj.asInstanceOf[LogTraceParams]
   }

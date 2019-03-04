@@ -31,12 +31,8 @@ object MethodDefinition {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): MethodDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(computed = computed, key = key, kind = kind.asInstanceOf[js.Any], static = static, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

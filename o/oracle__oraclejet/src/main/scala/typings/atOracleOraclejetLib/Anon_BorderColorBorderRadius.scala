@@ -42,20 +42,7 @@ object Anon_BorderColorBorderRadius {
     width: scala.Double,
     shape: atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.ellipse | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | java.lang.String = null
   ): Anon_BorderColorBorderRadius = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderRadius")(borderRadius)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceHover")(sourceHover)
-    __obj.updateDynamic("sourceHoverSelected")(sourceHoverSelected)
-    __obj.updateDynamic("sourceSelected")(sourceSelected)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, color = color, height = height, pattern = pattern.asInstanceOf[js.Any], source = source, sourceHover = sourceHover, sourceHoverSelected = sourceHoverSelected, sourceSelected = sourceSelected, svgClassName = svgClassName, svgStyle = svgStyle, width = width)
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColorBorderRadius]
   }

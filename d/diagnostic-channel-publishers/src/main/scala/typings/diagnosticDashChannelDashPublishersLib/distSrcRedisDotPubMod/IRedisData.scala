@@ -22,12 +22,8 @@ object IRedisData {
     err: stdLib.Error,
     result: js.Any
   ): IRedisData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("commandObj")(commandObj)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(address = address, commandObj = commandObj, duration = duration, err = err, result = result)
+  
     __obj.asInstanceOf[IRedisData]
   }
 }

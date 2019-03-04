@@ -178,35 +178,8 @@ object _Impl {
     useLegacy: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.auto | scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("closable")(closable)
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("defaultTransition")(defaultTransition.asInstanceOf[js.Any])
-    __obj.updateDynamic("delaySetup")(delaySetup)
-    __obj.updateDynamic("dimPage")(dimPage)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("exclusive")(exclusive)
-    __obj.updateDynamic("mobileTransition")(mobileTransition)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onHidden")(onHidden)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("onVisible")(onVisible)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
-    __obj.updateDynamic("returnScroll")(returnScroll)
-    __obj.updateDynamic("scrollLock")(scrollLock)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("useLegacy")(useLegacy.asInstanceOf[js.Any])
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable, context = context.asInstanceOf[js.Any], debug = debug, defaultTransition = defaultTransition.asInstanceOf[js.Any], delaySetup = delaySetup, dimPage = dimPage, duration = duration, easing = easing, error = error.asInstanceOf[js.Any], exclusive = exclusive, mobileTransition = mobileTransition, name = name, namespace = namespace, onChange = onChange, onHidden = onHidden, onHide = onHide, onShow = onShow, onVisible = onVisible, performance = performance, regExp = regExp.asInstanceOf[js.Any], returnScroll = returnScroll, scrollLock = scrollLock, selector = selector.asInstanceOf[js.Any], silent = silent, transition = transition, useLegacy = useLegacy.asInstanceOf[js.Any], verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

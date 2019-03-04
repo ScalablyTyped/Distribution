@@ -36,10 +36,8 @@ object UrlMatcherConfig {
       _
     ]
   ): UrlMatcherConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("caseInsensitive")(caseInsensitive)
-    __obj.updateDynamic("defaultSquashPolicy")(defaultSquashPolicy)
-    __obj.updateDynamic("strictMode")(strictMode)
+    val __obj = js.Dynamic.literal(caseInsensitive = caseInsensitive, defaultSquashPolicy = defaultSquashPolicy, strictMode = strictMode)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UrlMatcherConfig]
   }
 }

@@ -26,8 +26,7 @@ object Anon_BodyCommentsDeclare {
     global: js.UndefOr[scala.Boolean] = js.undefined,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_BodyCommentsDeclare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)

@@ -27,17 +27,8 @@ object Html5AdBuilder {
     withName: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]],
     withTrackingTemplate: js.Function1[java.lang.String, Html5AdBuilder[Html5Ad]]
   ): Html5AdBuilder[Html5Ad] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withCustomParameters")(withCustomParameters)
-    __obj.updateDynamic("withDimensions")(withDimensions)
-    __obj.updateDynamic("withDisplayUrl")(withDisplayUrl)
-    __obj.updateDynamic("withEntryPoint")(withEntryPoint)
-    __obj.updateDynamic("withFinalUrl")(withFinalUrl)
-    __obj.updateDynamic("withMediaBundle")(withMediaBundle)
-    __obj.updateDynamic("withMobileFinalUrl")(withMobileFinalUrl)
-    __obj.updateDynamic("withName")(withName)
-    __obj.updateDynamic("withTrackingTemplate")(withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = build, withCustomParameters = withCustomParameters, withDimensions = withDimensions, withDisplayUrl = withDisplayUrl, withEntryPoint = withEntryPoint, withFinalUrl = withFinalUrl, withMediaBundle = withMediaBundle, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withTrackingTemplate = withTrackingTemplate)
+  
     __obj.asInstanceOf[Html5AdBuilder[Html5Ad]]
   }
 }

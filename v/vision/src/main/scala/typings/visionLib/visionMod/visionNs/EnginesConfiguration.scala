@@ -21,8 +21,7 @@ object EnginesConfiguration {
     engines: org.scalablytyped.runtime.StringDictionary[NpmModule] | ServerViewsEnginesOptions,
     defaultExtension: java.lang.String = null
   ): EnginesConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(engines = engines.asInstanceOf[js.Any])
     if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension)
     __obj.asInstanceOf[EnginesConfiguration]
   }

@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 object StringLiteral {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.StringLiteral, value: java.lang.String): StringLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[StringLiteral]
   }
 }

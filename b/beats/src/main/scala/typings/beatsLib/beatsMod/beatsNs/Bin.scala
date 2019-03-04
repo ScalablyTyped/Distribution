@@ -15,11 +15,8 @@ trait Bin extends js.Object {
 object Bin {
   @scala.inline
   def apply(decay: scala.Double, hi: scala.Double, lo: scala.Double, threshold: scala.Double): Bin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decay")(decay)
-    __obj.updateDynamic("hi")(hi)
-    __obj.updateDynamic("lo")(lo)
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(decay = decay, hi = hi, lo = lo, threshold = threshold)
+  
     __obj.asInstanceOf[Bin]
   }
 }

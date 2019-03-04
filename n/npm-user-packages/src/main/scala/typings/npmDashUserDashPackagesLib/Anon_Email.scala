@@ -20,8 +20,7 @@ object Anon_Email {
     url: java.lang.String = null,
     username: java.lang.String = null
   ): Anon_Email = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (email != null) __obj.updateDynamic("email")(email)
     if (url != null) __obj.updateDynamic("url")(url)
     if (username != null) __obj.updateDynamic("username")(username)

@@ -44,23 +44,8 @@ object BulkWriteResult {
     nUpserted: scala.Double,
     ok: scala.Double
   ): BulkWriteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInsertedIds")(getInsertedIds)
-    __obj.updateDynamic("getLastOp")(getLastOp)
-    __obj.updateDynamic("getRawResponse")(getRawResponse)
-    __obj.updateDynamic("getUpsertedIdAt")(getUpsertedIdAt)
-    __obj.updateDynamic("getUpsertedIds")(getUpsertedIds)
-    __obj.updateDynamic("getWriteConcernError")(getWriteConcernError)
-    __obj.updateDynamic("getWriteErrorAt")(getWriteErrorAt)
-    __obj.updateDynamic("getWriteErrorCount")(getWriteErrorCount)
-    __obj.updateDynamic("getWriteErrors")(getWriteErrors)
-    __obj.updateDynamic("hasWriteErrors")(hasWriteErrors)
-    __obj.updateDynamic("nInserted")(nInserted)
-    __obj.updateDynamic("nModified")(nModified)
-    __obj.updateDynamic("nRemoved")(nRemoved)
-    __obj.updateDynamic("nUpdated")(nUpdated)
-    __obj.updateDynamic("nUpserted")(nUpserted)
-    __obj.updateDynamic("ok")(ok)
+    val __obj = js.Dynamic.literal(getInsertedIds = getInsertedIds, getLastOp = getLastOp, getRawResponse = getRawResponse, getUpsertedIdAt = getUpsertedIdAt, getUpsertedIds = getUpsertedIds, getWriteConcernError = getWriteConcernError, getWriteErrorAt = getWriteErrorAt, getWriteErrorCount = getWriteErrorCount, getWriteErrors = getWriteErrors, hasWriteErrors = hasWriteErrors, nInserted = nInserted, nModified = nModified, nRemoved = nRemoved, nUpdated = nUpdated, nUpserted = nUpserted, ok = ok)
+  
     __obj.asInstanceOf[BulkWriteResult]
   }
 }

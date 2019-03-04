@@ -13,9 +13,8 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: scala.Double, nodesScope: angularDashUiDashTreeLib.AngularUITreeNs.IParentTreeNodeScope): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("nodesScope")(nodesScope)
+    val __obj = js.Dynamic.literal(index = index, nodesScope = nodesScope)
+  
     __obj.asInstanceOf[Anon_Index]
   }
 }

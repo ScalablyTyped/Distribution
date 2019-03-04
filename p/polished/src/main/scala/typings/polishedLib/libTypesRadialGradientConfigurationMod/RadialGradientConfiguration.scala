@@ -22,8 +22,7 @@ object RadialGradientConfiguration {
     position: java.lang.String = null,
     shape: java.lang.String = null
   ): RadialGradientConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorStops")(colorStops)
+    val __obj = js.Dynamic.literal(colorStops = colorStops)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (fallback != null) __obj.updateDynamic("fallback")(fallback)
     if (position != null) __obj.updateDynamic("position")(position)

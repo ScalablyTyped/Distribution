@@ -16,9 +16,8 @@ object Anon_Request {
     request: awsDashLambdaLib.awsDashLambdaMod.CloudFrontRequest,
     response: awsDashLambdaLib.awsDashLambdaMod.CloudFrontResponse
   ): Anon_Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
     __obj.asInstanceOf[Anon_Request]
   }
 }

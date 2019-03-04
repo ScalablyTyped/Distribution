@@ -173,8 +173,7 @@ object ColumnProps {
     pureRendering: js.UndefOr[scala.Boolean] = js.undefined,
     ref: reactLib.reactMod.ReactNs.LegacyRef[Column] = null
   ): ColumnProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(width = width)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowCellsRecycling)) __obj.updateDynamic("allowCellsRecycling")(allowCellsRecycling)
     if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])

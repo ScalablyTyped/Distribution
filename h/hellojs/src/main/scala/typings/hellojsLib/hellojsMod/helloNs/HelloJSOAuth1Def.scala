@@ -18,8 +18,7 @@ object HelloJSOAuth1Def {
     request: java.lang.String = null,
     token: java.lang.String = null
   ): HelloJSOAuth1Def = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (request != null) __obj.updateDynamic("request")(request)
     if (token != null) __obj.updateDynamic("token")(token)

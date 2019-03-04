@@ -22,9 +22,7 @@ object Anon_MSAttributedStringColorAttribute {
     MSAttributedStringFontAttribute: SketchMSFontAttribute = null,
     NSParagraphStyle: SketchMSKeyValueArchive = null
   ): Anon_MSAttributedStringColorAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NSColor")(NSColor)
-    __obj.updateDynamic("NSKern")(NSKern)
+    val __obj = js.Dynamic.literal(NSColor = NSColor, NSKern = NSKern)
     if (MSAttributedStringColorAttribute != null) __obj.updateDynamic("MSAttributedStringColorAttribute")(MSAttributedStringColorAttribute)
     if (MSAttributedStringFontAttribute != null) __obj.updateDynamic("MSAttributedStringFontAttribute")(MSAttributedStringFontAttribute)
     if (NSParagraphStyle != null) __obj.updateDynamic("NSParagraphStyle")(NSParagraphStyle)

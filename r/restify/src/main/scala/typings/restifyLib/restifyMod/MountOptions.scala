@@ -28,9 +28,7 @@ object MountOptions {
     version: java.lang.String = null,
     versions: js.Array[java.lang.String] = null
   ): MountOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(method = method, name = name)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

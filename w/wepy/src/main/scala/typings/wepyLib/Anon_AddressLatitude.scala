@@ -22,9 +22,7 @@ object Anon_AddressLatitude {
     name: java.lang.String = null,
     scale: scala.Int | scala.Double = null
   ): Anon_AddressLatitude = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (address != null) __obj.updateDynamic("address")(address)
     if (name != null) __obj.updateDynamic("name")(name)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

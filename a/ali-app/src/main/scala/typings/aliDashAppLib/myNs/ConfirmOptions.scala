@@ -30,12 +30,7 @@ object ConfirmOptions {
     complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
     fail: js.Function1[js.Any, scala.Unit] = null
   ): ConfirmOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelButtonText")(cancelButtonText)
-    __obj.updateDynamic("confirmButtonText")(confirmButtonText)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, confirmButtonText = confirmButtonText, content = content, success = success, title = title)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[ConfirmOptions]

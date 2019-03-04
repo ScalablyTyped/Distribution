@@ -212,9 +212,7 @@ object ClusterArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): ClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
     if (allowVersionUpgrade != null) __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade.asInstanceOf[js.Any])
     if (automatedSnapshotRetentionPeriod != null) __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])

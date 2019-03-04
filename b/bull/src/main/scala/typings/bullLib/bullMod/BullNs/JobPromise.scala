@@ -15,8 +15,8 @@ trait JobPromise extends js.Object {
 object JobPromise {
   @scala.inline
   def apply(cancel: js.Function0[scala.Unit]): JobPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(cancel = cancel)
+  
     __obj.asInstanceOf[JobPromise]
   }
 }

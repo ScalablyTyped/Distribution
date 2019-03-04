@@ -29,10 +29,8 @@ trait ASPxClientTreeListColumn extends js.Object {
 object ASPxClientTreeListColumn {
   @scala.inline
   def apply(fieldName: java.lang.String, index: scala.Double, name: java.lang.String): ASPxClientTreeListColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fieldName = fieldName, index = index, name = name)
+  
     __obj.asInstanceOf[ASPxClientTreeListColumn]
   }
 }

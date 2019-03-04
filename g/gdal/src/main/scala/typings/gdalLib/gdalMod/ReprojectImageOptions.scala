@@ -44,11 +44,7 @@ object ReprojectImageOptions {
     srcBands: js.Array[scala.Double] = null,
     srcNodata: scala.Int | scala.Double = null
   ): ReprojectImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dst")(dst)
-    __obj.updateDynamic("s_srs")(s_srs)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("t_srs")(t_srs)
+    val __obj = js.Dynamic.literal(dst = dst, s_srs = s_srs, src = src, t_srs = t_srs)
     if (cutline != null) __obj.updateDynamic("cutline")(cutline)
     if (dstAlphaBand != null) __obj.updateDynamic("dstAlphaBand")(dstAlphaBand.asInstanceOf[js.Any])
     if (dstBands != null) __obj.updateDynamic("dstBands")(dstBands)

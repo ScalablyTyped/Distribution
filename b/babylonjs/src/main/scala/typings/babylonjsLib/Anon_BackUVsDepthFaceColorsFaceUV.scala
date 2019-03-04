@@ -30,8 +30,7 @@ object Anon_BackUVsDepthFaceColorsFaceUV {
     sideOrientation: scala.Int | scala.Double = null,
     updatable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_BackUVsDepthFaceColorsFaceUV = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(shape = shape)
     if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (faceColors != null) __obj.updateDynamic("faceColors")(faceColors)

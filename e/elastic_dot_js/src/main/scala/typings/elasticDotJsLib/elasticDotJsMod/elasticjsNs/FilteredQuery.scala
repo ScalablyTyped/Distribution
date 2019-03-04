@@ -62,15 +62,8 @@ object FilteredQuery {
     strategy: js.Function1[java.lang.String, FilteredQuery],
     toJSON: js.Function0[js.Any]
   ): FilteredQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("strategy")(strategy)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, cache = cache, cacheKey = cacheKey, filter = filter, query = query, strategy = strategy, toJSON = toJSON)
+  
     __obj.asInstanceOf[FilteredQuery]
   }
 }

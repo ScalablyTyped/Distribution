@@ -24,11 +24,7 @@ object Identity {
     access_token: java.lang.String = null,
     profileData: auth0Lib.Anon_Email = null
   ): Identity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("isSocial")(isSocial)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(connection = connection, isSocial = isSocial, provider = provider, user_id = user_id)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (profileData != null) __obj.updateDynamic("profileData")(profileData)
     __obj.asInstanceOf[Identity]

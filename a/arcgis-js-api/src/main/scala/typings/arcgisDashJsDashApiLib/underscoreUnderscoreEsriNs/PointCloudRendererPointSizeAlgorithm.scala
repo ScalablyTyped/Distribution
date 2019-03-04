@@ -46,10 +46,8 @@ object PointCloudRendererPointSizeAlgorithm {
     size: scala.Int | scala.Double = null,
     useRealWorldSymbolSizes: js.UndefOr[scala.Boolean] = js.undefined
   ): PointCloudRendererPointSizeAlgorithm = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (!js.isUndefined(useRealWorldSymbolSizes)) __obj.updateDynamic("useRealWorldSymbolSizes")(useRealWorldSymbolSizes)

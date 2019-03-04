@@ -37,12 +37,8 @@ object XLoadable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLoadable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initNew")(initNew)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, initNew = initNew, load = load, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLoadable]
   }
 }

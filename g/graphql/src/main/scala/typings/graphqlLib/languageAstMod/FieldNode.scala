@@ -28,9 +28,7 @@ object FieldNode {
     loc: Location = null,
     selectionSet: SelectionSetNode = null
   ): FieldNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (directives != null) __obj.updateDynamic("directives")(directives)

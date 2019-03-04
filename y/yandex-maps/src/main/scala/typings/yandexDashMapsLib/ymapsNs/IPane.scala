@@ -25,13 +25,8 @@ object IPane {
     ],
     getZIndex: js.Function0[scala.Double]
   ): IPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("getMap")(getMap)
-    __obj.updateDynamic("getOverflow")(getOverflow)
-    __obj.updateDynamic("getZIndex")(getZIndex)
+    val __obj = js.Dynamic.literal(destroy = destroy, events = events, getElement = getElement, getMap = getMap, getOverflow = getOverflow, getZIndex = getZIndex)
+  
     __obj.asInstanceOf[IPane]
   }
 }

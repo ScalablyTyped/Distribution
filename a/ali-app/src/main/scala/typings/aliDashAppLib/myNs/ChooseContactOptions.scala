@@ -35,9 +35,7 @@ object ChooseContactOptions {
     multiChooseMax: scala.Int | scala.Double = null,
     multiChooseMaxTips: java.lang.String = null
   ): ChooseContactOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chooseType")(chooseType.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(chooseType = chooseType.asInstanceOf[js.Any], success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (!js.isUndefined(includeMe)) __obj.updateDynamic("includeMe")(includeMe)

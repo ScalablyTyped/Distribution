@@ -22,9 +22,7 @@ object SchemaDefinitionNode {
     directives: js.Array[DirectiveNode] = null,
     loc: Location = null
   ): SchemaDefinitionNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("operationTypes")(operationTypes)
+    val __obj = js.Dynamic.literal(kind = kind, operationTypes = operationTypes)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[SchemaDefinitionNode]

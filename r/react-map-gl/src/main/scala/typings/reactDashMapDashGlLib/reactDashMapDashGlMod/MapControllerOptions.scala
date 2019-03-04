@@ -34,8 +34,7 @@ object MapControllerOptions {
     touchRotate: js.UndefOr[scala.Boolean] = js.undefined,
     touchZoom: js.UndefOr[scala.Boolean] = js.undefined
   ): MapControllerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isInteractive")(isInteractive)
+    val __obj = js.Dynamic.literal(isInteractive = isInteractive)
     if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom)
     if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan)
     if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate)

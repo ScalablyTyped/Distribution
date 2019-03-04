@@ -149,8 +149,7 @@ object Communication {
     text: Narrative = null,
     topic: js.Array[Reference] = null
   ): Communication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

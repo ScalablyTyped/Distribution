@@ -40,9 +40,8 @@ object XExternalUriReferenceTranslator {
     translateToExternal: js.Function1[java.lang.String, java.lang.String],
     translateToInternal: js.Function1[java.lang.String, java.lang.String]
   ): XExternalUriReferenceTranslator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("translateToExternal")(translateToExternal)
-    __obj.updateDynamic("translateToInternal")(translateToInternal)
+    val __obj = js.Dynamic.literal(translateToExternal = translateToExternal, translateToInternal = translateToInternal)
+  
     __obj.asInstanceOf[XExternalUriReferenceTranslator]
   }
 }

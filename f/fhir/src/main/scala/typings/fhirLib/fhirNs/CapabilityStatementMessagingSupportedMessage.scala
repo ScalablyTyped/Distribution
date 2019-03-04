@@ -36,9 +36,7 @@ object CapabilityStatementMessagingSupportedMessage {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementMessagingSupportedMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(definition = definition, mode = mode)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_mode != null) __obj.updateDynamic("_mode")(_mode)

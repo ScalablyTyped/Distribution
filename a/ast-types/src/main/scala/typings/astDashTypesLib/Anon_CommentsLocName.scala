@@ -22,8 +22,7 @@ object Anon_CommentsLocName {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     value: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.JSXExpressionContainerKind = null
   ): Anon_CommentsLocName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

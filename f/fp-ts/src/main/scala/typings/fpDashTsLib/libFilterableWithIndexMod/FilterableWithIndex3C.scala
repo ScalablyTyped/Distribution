@@ -106,22 +106,8 @@ object FilterableWithIndex3C {
       ]
     ]
   ): FilterableWithIndex3C[F, I, U, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("filterMap")(filterMap)
-    __obj.updateDynamic("filterMapWithIndex")(filterMapWithIndex)
-    __obj.updateDynamic("filterWithIndex")(filterWithIndex)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mapWithIndex")(mapWithIndex)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("partitionMap")(partitionMap)
-    __obj.updateDynamic("partitionMapWithIndex")(partitionMapWithIndex)
-    __obj.updateDynamic("partitionWithIndex")(partitionWithIndex)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compact = compact, filter = filter, filterMap = filterMap, filterMapWithIndex = filterMapWithIndex, filterWithIndex = filterWithIndex, map = map, mapWithIndex = mapWithIndex, partition = partition, partitionMap = partitionMap, partitionMapWithIndex = partitionMapWithIndex, partitionWithIndex = partitionWithIndex, separate = separate)
+  
     __obj.asInstanceOf[FilterableWithIndex3C[F, I, U, L]]
   }
 }

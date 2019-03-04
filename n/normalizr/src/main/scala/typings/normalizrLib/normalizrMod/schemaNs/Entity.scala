@@ -14,9 +14,8 @@ trait Entity
 object Entity {
   @scala.inline
   def apply(define: js.Function1[normalizrLib.normalizrMod.Schema, scala.Unit], key: java.lang.String): Entity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("define")(define)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(define = define, key = key)
+  
     __obj.asInstanceOf[Entity]
   }
 }

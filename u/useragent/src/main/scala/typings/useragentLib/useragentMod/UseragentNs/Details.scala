@@ -32,17 +32,8 @@ object Details {
     version: java.lang.String,
     webkit: scala.Boolean
   ): Details = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("android")(android)
-    __obj.updateDynamic("chrome")(chrome)
-    __obj.updateDynamic("firefox")(firefox)
-    __obj.updateDynamic("ie")(ie)
-    __obj.updateDynamic("mobile_safari")(mobile_safari)
-    __obj.updateDynamic("mozilla")(mozilla)
-    __obj.updateDynamic("opera")(opera)
-    __obj.updateDynamic("safari")(safari)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("webkit")(webkit)
+    val __obj = js.Dynamic.literal(android = android, chrome = chrome, firefox = firefox, ie = ie, mobile_safari = mobile_safari, mozilla = mozilla, opera = opera, safari = safari, version = version, webkit = webkit)
+  
     __obj.asInstanceOf[Details]
   }
 }

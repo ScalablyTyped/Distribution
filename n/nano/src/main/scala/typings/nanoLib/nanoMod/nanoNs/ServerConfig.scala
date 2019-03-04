@@ -13,9 +13,8 @@ trait ServerConfig extends js.Object {
 object ServerConfig {
   @scala.inline
   def apply(db: java.lang.String, url: java.lang.String): ServerConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(db = db, url = url)
+  
     __obj.asInstanceOf[ServerConfig]
   }
 }

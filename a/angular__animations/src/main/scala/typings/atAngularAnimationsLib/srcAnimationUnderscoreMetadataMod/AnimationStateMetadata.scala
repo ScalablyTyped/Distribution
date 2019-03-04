@@ -30,9 +30,8 @@ object AnimationStateMetadata {
     `type`: AnimationMetadataType,
     options: atAngularAnimationsLib.Anon_Name = null
   ): AnimationStateMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(name = name, styles = styles)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AnimationStateMetadata]
   }

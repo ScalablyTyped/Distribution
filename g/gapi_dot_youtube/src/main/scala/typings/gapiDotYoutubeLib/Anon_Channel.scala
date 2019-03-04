@@ -32,11 +32,8 @@ object Anon_Channel {
     image: Anon_BackgroundImageUrl,
     watch: Anon_BackgroundColor
   ): Anon_Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("hints")(hints)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(channel = channel, hints = hints, image = image, watch = watch)
+  
     __obj.asInstanceOf[Anon_Channel]
   }
 }

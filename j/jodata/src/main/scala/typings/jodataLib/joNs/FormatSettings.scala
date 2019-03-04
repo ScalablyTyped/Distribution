@@ -19,12 +19,8 @@ object FormatSettings {
     reset: js.Function0[scala.Unit],
     toString: js.Function0[java.lang.String]
   ): FormatSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultFormat")(DefaultFormat)
-    __obj.updateDynamic("Format")(Format)
-    __obj.updateDynamic("isSet")(isSet)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(DefaultFormat = DefaultFormat, Format = Format, isSet = isSet, reset = reset, toString = toString)
+  
     __obj.asInstanceOf[FormatSettings]
   }
 }

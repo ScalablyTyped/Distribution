@@ -18,10 +18,8 @@ object AvailablePhoneNumberInstance {
     mobile: AvailablePhoneNumberResourceGroup,
     tollFree: AvailablePhoneNumberResourceGroup
   ): AvailablePhoneNumberInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("tollFree")(tollFree)
+    val __obj = js.Dynamic.literal(local = local, mobile = mobile, tollFree = tollFree)
+  
     __obj.asInstanceOf[AvailablePhoneNumberInstance]
   }
 }

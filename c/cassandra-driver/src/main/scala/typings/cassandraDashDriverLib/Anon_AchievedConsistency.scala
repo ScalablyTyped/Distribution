@@ -26,14 +26,8 @@ object Anon_AchievedConsistency {
     triedHosts: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     warnings: js.Array[java.lang.String]
   ): Anon_AchievedConsistency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("achievedConsistency")(achievedConsistency)
-    __obj.updateDynamic("customPayload")(customPayload)
-    __obj.updateDynamic("queriedHost")(queriedHost)
-    __obj.updateDynamic("speculativeExecutions")(speculativeExecutions)
-    __obj.updateDynamic("traceId")(traceId)
-    __obj.updateDynamic("triedHosts")(triedHosts)
-    __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(achievedConsistency = achievedConsistency, customPayload = customPayload, queriedHost = queriedHost, speculativeExecutions = speculativeExecutions, traceId = traceId, triedHosts = triedHosts, warnings = warnings)
+  
     __obj.asInstanceOf[Anon_AchievedConsistency]
   }
 }

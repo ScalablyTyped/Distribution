@@ -20,11 +20,8 @@ object IBitmapCodecInformation {
     friendlyName: java.lang.String,
     mimeTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]
   ): IBitmapCodecInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codecId")(codecId)
-    __obj.updateDynamic("fileExtensions")(fileExtensions)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("mimeTypes")(mimeTypes)
+    val __obj = js.Dynamic.literal(codecId = codecId, fileExtensions = fileExtensions, friendlyName = friendlyName, mimeTypes = mimeTypes)
+  
     __obj.asInstanceOf[IBitmapCodecInformation]
   }
 }

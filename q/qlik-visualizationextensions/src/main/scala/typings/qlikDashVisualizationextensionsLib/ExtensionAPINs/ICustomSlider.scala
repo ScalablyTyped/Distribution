@@ -25,14 +25,8 @@ object ICustomSlider {
     step: scala.Double,
     `type`: java.lang.String
   ): ICustomSlider = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, label = label, max = max, min = min, ref = ref, step = step)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomSlider]
   }
 }

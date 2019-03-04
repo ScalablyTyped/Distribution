@@ -25,8 +25,8 @@ trait SignalRef
 object SignalRef {
   @scala.inline
   def apply(signal: java.lang.String): SignalRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(signal = signal)
+  
     __obj.asInstanceOf[SignalRef]
   }
 }

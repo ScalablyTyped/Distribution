@@ -18,9 +18,8 @@ trait ChannelSpecifier extends js.Object {
 object ChannelSpecifier {
   @scala.inline
   def apply(channel: Channel, identifier: java.lang.String): ChannelSpecifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(channel = channel, identifier = identifier)
+  
     __obj.asInstanceOf[ChannelSpecifier]
   }
 }

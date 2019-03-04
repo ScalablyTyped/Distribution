@@ -20,8 +20,7 @@ object Anon_CreditEllipsoidProxy {
     ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
     proxy: js.Any = null
   ): Anon_CreditEllipsoidProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)

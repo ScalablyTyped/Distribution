@@ -19,9 +19,8 @@ object MessageTypeDefinition {
     format: atGrpcProtoDashLoaderLib.atGrpcProtoDashLoaderLibStrings.`Protocol Buffer 3 DescriptorProto`,
     `type`: js.Object
   ): MessageTypeDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fileDescriptorProtos")(fileDescriptorProtos)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos, format = format)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MessageTypeDefinition]
   }
 }

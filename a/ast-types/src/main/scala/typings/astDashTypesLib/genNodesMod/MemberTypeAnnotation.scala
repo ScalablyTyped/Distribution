@@ -24,8 +24,9 @@ object MemberTypeAnnotation {
     property: astDashTypesLib.genKindsMod.MemberTypeAnnotationKind | astDashTypesLib.genKindsMod.GenericTypeAnnotationKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.MemberTypeAnnotation
   ): MemberTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MemberTypeAnnotation]
   }
 }

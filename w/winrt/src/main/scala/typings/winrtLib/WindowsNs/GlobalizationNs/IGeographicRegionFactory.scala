@@ -12,8 +12,8 @@ trait IGeographicRegionFactory extends js.Object {
 object IGeographicRegionFactory {
   @scala.inline
   def apply(createGeographicRegion: js.Function1[java.lang.String, GeographicRegion]): IGeographicRegionFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createGeographicRegion")(createGeographicRegion)
+    val __obj = js.Dynamic.literal(createGeographicRegion = createGeographicRegion)
+  
     __obj.asInstanceOf[IGeographicRegionFactory]
   }
 }

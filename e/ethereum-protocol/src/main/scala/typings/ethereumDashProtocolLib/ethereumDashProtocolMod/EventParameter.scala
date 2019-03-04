@@ -17,9 +17,8 @@ object EventParameter {
     `type`: java.lang.String,
     components: js.Array[DataItem] = null
   ): EventParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("indexed")(indexed)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(indexed = indexed, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (components != null) __obj.updateDynamic("components")(components)
     __obj.asInstanceOf[EventParameter]
   }

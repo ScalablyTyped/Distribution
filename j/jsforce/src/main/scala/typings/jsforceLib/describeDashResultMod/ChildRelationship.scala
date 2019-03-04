@@ -28,14 +28,7 @@ object ChildRelationship {
     restrictedDelete: scala.Boolean,
     relationshipName: maybe[java.lang.String] = null
   ): ChildRelationship = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cascadeDelete")(cascadeDelete)
-    __obj.updateDynamic("childSObject")(childSObject)
-    __obj.updateDynamic("deprecatedAndHidden")(deprecatedAndHidden)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("junctionIdListNames")(junctionIdListNames)
-    __obj.updateDynamic("junctionReferenceTo")(junctionReferenceTo)
-    __obj.updateDynamic("restrictedDelete")(restrictedDelete)
+    val __obj = js.Dynamic.literal(cascadeDelete = cascadeDelete, childSObject = childSObject, deprecatedAndHidden = deprecatedAndHidden, field = field, junctionIdListNames = junctionIdListNames, junctionReferenceTo = junctionReferenceTo, restrictedDelete = restrictedDelete)
     if (relationshipName != null) __obj.updateDynamic("relationshipName")(relationshipName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildRelationship]
   }

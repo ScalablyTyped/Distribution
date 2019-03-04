@@ -78,9 +78,7 @@ object ColumnProps {
     minWidth: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ColumnProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(dataKey = dataKey, width = width)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (cellDataGetter != null) __obj.updateDynamic("cellDataGetter")(cellDataGetter)
     if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(cellRenderer)

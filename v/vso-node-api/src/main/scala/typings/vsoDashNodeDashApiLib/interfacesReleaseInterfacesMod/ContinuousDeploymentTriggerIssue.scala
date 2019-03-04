@@ -23,15 +23,8 @@ object ContinuousDeploymentTriggerIssue {
     releaseTriggerType: ReleaseTriggerType,
     sourceId: java.lang.String
   ): ContinuousDeploymentTriggerIssue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactType")(artifactType)
-    __obj.updateDynamic("artifactVersionId")(artifactVersionId)
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("issueSource")(issueSource)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("releaseDefinitionReference")(releaseDefinitionReference)
-    __obj.updateDynamic("releaseTriggerType")(releaseTriggerType)
-    __obj.updateDynamic("sourceId")(sourceId)
+    val __obj = js.Dynamic.literal(artifactType = artifactType, artifactVersionId = artifactVersionId, issue = issue, issueSource = issueSource, project = project, releaseDefinitionReference = releaseDefinitionReference, releaseTriggerType = releaseTriggerType, sourceId = sourceId)
+  
     __obj.asInstanceOf[ContinuousDeploymentTriggerIssue]
   }
 }

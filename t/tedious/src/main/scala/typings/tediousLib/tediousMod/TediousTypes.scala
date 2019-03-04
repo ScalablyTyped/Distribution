@@ -74,38 +74,8 @@ object TediousTypes {
     VarChar: TediousType,
     Xml: TediousType
   ): TediousTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BigInt")(BigInt)
-    __obj.updateDynamic("Binary")(Binary)
-    __obj.updateDynamic("Bit")(Bit)
-    __obj.updateDynamic("Char")(Char)
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("DateTime")(DateTime)
-    __obj.updateDynamic("DateTime2")(DateTime2)
-    __obj.updateDynamic("DateTimeOffset")(DateTimeOffset)
-    __obj.updateDynamic("Decimal")(Decimal)
-    __obj.updateDynamic("Float")(Float)
-    __obj.updateDynamic("Image")(Image)
-    __obj.updateDynamic("Int")(Int)
-    __obj.updateDynamic("Money")(Money)
-    __obj.updateDynamic("NChar")(NChar)
-    __obj.updateDynamic("NText")(NText)
-    __obj.updateDynamic("NVarChar")(NVarChar)
-    __obj.updateDynamic("Null")(Null)
-    __obj.updateDynamic("Numeric")(Numeric)
-    __obj.updateDynamic("Real")(Real)
-    __obj.updateDynamic("SmallDateTime")(SmallDateTime)
-    __obj.updateDynamic("SmallInt")(SmallInt)
-    __obj.updateDynamic("SmallMoney")(SmallMoney)
-    __obj.updateDynamic("TVP")(TVP)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("Time")(Time)
-    __obj.updateDynamic("TinyInt")(TinyInt)
-    __obj.updateDynamic("UDT")(UDT)
-    __obj.updateDynamic("UniqueIdentifier")(UniqueIdentifier)
-    __obj.updateDynamic("VarBinary")(VarBinary)
-    __obj.updateDynamic("VarChar")(VarChar)
-    __obj.updateDynamic("Xml")(Xml)
+    val __obj = js.Dynamic.literal(BigInt = BigInt, Binary = Binary, Bit = Bit, Char = Char, Date = Date, DateTime = DateTime, DateTime2 = DateTime2, DateTimeOffset = DateTimeOffset, Decimal = Decimal, Float = Float, Image = Image, Int = Int, Money = Money, NChar = NChar, NText = NText, NVarChar = NVarChar, Null = Null, Numeric = Numeric, Real = Real, SmallDateTime = SmallDateTime, SmallInt = SmallInt, SmallMoney = SmallMoney, TVP = TVP, Text = Text, Time = Time, TinyInt = TinyInt, UDT = UDT, UniqueIdentifier = UniqueIdentifier, VarBinary = VarBinary, VarChar = VarChar, Xml = Xml)
+  
     __obj.asInstanceOf[TediousTypes]
   }
 }

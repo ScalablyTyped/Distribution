@@ -74,20 +74,8 @@ object Anon_Copy {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotDriveLib.gapiNs.clientNs.driveNs.ChannelResource]
     ]
   ): Anon_Copy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("emptyTrash")(emptyTrash)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("generateIds")(generateIds)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("touch")(touch)
-    __obj.updateDynamic("trash")(trash)
-    __obj.updateDynamic("untrash")(untrash)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(copy = copy, delete = delete, emptyTrash = emptyTrash, export = export, generateIds = generateIds, get = get, insert = insert, list = list, patch = patch, touch = touch, trash = trash, untrash = untrash, watch = watch)
+  
     __obj.asInstanceOf[Anon_Copy]
   }
 }

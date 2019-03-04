@@ -79,19 +79,8 @@ object Tile {
     scale: scala.Double,
     world: scala.Double
   ): Tile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("coords")(coords)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("world")(world)
+    val __obj = js.Dynamic.literal(bounds = bounds, col = col, constructor = constructor, coords = coords, hasOwnProperty = hasOwnProperty, id = id, level = level, propertyIsEnumerable = propertyIsEnumerable, resolution = resolution, row = row, scale = scale, world = world)
+  
     __obj.asInstanceOf[Tile]
   }
 }

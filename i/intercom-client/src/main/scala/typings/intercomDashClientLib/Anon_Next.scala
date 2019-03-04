@@ -20,10 +20,7 @@ object Anon_Next {
     total_pages: scala.Double,
     next: java.lang.String = null
   ): Anon_Next = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("per_page")(per_page)
-    __obj.updateDynamic("total_pages")(total_pages)
+    val __obj = js.Dynamic.literal(page = page, per_page = per_page, total_pages = total_pages)
     if (next != null) __obj.updateDynamic("next")(next)
     __obj.asInstanceOf[Anon_Next]
   }

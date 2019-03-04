@@ -13,9 +13,8 @@ trait ObjectInsertOp extends Op {
 object ObjectInsertOp {
   @scala.inline
   def apply(oi: js.Any, p: Path): ObjectInsertOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oi")(oi)
-    __obj.updateDynamic("p")(p)
+    val __obj = js.Dynamic.literal(oi = oi, p = p)
+  
     __obj.asInstanceOf[ObjectInsertOp]
   }
 }

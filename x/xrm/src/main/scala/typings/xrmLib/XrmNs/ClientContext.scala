@@ -37,11 +37,8 @@ object ClientContext {
     getFormFactor: js.Function0[xrmLib.XrmEnumNs.ClientFormFactor],
     isOffline: js.Function0[scala.Boolean]
   ): ClientContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClient")(getClient)
-    __obj.updateDynamic("getClientState")(getClientState)
-    __obj.updateDynamic("getFormFactor")(getFormFactor)
-    __obj.updateDynamic("isOffline")(isOffline)
+    val __obj = js.Dynamic.literal(getClient = getClient, getClientState = getClientState, getFormFactor = getFormFactor, isOffline = isOffline)
+  
     __obj.asInstanceOf[ClientContext]
   }
 }

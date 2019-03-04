@@ -30,16 +30,8 @@ object Subscription {
     stop: js.Function0[scala.Unit],
     userId: java.lang.String
   ): Subscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("onStop")(onStop)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(added = added, changed = changed, connection = connection, error = error, onStop = onStop, ready = ready, removed = removed, stop = stop, userId = userId)
+  
     __obj.asInstanceOf[Subscription]
   }
 }

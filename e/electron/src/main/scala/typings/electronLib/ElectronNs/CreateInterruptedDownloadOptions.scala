@@ -49,13 +49,7 @@ object CreateInterruptedDownloadOptions {
     mimeType: java.lang.String = null,
     startTime: scala.Int | scala.Double = null
   ): CreateInterruptedDownloadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eTag")(eTag)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("urlChain")(urlChain)
+    val __obj = js.Dynamic.literal(eTag = eTag, lastModified = lastModified, length = length, offset = offset, path = path, urlChain = urlChain)
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInterruptedDownloadOptions]

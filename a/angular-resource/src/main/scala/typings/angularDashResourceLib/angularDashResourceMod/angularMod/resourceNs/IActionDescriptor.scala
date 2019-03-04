@@ -50,8 +50,7 @@ object IActionDescriptor {
     url: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): IActionDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable)
     if (!js.isUndefined(hasBody)) __obj.updateDynamic("hasBody")(hasBody)

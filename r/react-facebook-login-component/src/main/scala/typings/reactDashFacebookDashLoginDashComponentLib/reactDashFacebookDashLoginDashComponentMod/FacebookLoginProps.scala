@@ -26,9 +26,7 @@ object FacebookLoginProps {
     version: java.lang.String = null,
     xfbml: js.UndefOr[scala.Boolean] = js.undefined
   ): FacebookLoginProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseHandler")(responseHandler)
-    __obj.updateDynamic("socialId")(socialId)
+    val __obj = js.Dynamic.literal(responseHandler = responseHandler, socialId = socialId)
     js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
     if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
     if (fields != null) __obj.updateDynamic("fields")(fields)

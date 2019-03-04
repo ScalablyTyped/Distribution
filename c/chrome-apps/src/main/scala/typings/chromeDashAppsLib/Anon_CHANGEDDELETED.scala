@@ -16,9 +16,8 @@ object Anon_CHANGEDDELETED {
     CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED,
     DELETED: chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
   ): Anon_CHANGEDDELETED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHANGED")(CHANGED)
-    __obj.updateDynamic("DELETED")(DELETED)
+    val __obj = js.Dynamic.literal(CHANGED = CHANGED, DELETED = DELETED)
+  
     __obj.asInstanceOf[Anon_CHANGEDDELETED]
   }
 }

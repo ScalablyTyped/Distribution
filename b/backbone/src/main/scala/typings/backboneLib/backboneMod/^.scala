@@ -17,7 +17,7 @@ object ^ extends js.Object {
   def ajax(): jqueryLib.JQueryXHR = js.native
   def ajax(options: jqueryLib.JQueryAjaxSettings): jqueryLib.JQueryXHR = js.native
   // Utility
-  def noConflict(): backboneLib.`Anon_` = js.native
+  def noConflict(): backboneLib.Anon_ = js.native
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]

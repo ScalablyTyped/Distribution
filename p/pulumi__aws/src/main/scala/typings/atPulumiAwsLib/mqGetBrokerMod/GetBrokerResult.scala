@@ -49,24 +49,8 @@ object GetBrokerResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     users: js.Array[atPulumiAwsLib.Anon_ConsoleAccessGroupsUsername]
   ): GetBrokerResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade)
-    __obj.updateDynamic("brokerId")(brokerId)
-    __obj.updateDynamic("brokerName")(brokerName)
-    __obj.updateDynamic("configuration")(configuration)
-    __obj.updateDynamic("deploymentMode")(deploymentMode)
-    __obj.updateDynamic("engineType")(engineType)
-    __obj.updateDynamic("engineVersion")(engineVersion)
-    __obj.updateDynamic("hostInstanceType")(hostInstanceType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instances")(instances)
-    __obj.updateDynamic("maintenanceWindowStartTime")(maintenanceWindowStartTime)
-    __obj.updateDynamic("publiclyAccessible")(publiclyAccessible)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("subnetIds")(subnetIds)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(arn = arn, autoMinorVersionUpgrade = autoMinorVersionUpgrade, brokerId = brokerId, brokerName = brokerName, configuration = configuration, deploymentMode = deploymentMode, engineType = engineType, engineVersion = engineVersion, hostInstanceType = hostInstanceType, id = id, instances = instances, maintenanceWindowStartTime = maintenanceWindowStartTime, publiclyAccessible = publiclyAccessible, securityGroups = securityGroups, subnetIds = subnetIds, tags = tags, users = users)
+  
     __obj.asInstanceOf[GetBrokerResult]
   }
 }

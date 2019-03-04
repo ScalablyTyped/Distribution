@@ -28,8 +28,9 @@ object JSXMemberExpression {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): JSXMemberExpression = {
-    val __obj = js.Dynamic.literal(`object` = `object`.asInstanceOf[js.Any], `type` = `type`)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(property = property)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

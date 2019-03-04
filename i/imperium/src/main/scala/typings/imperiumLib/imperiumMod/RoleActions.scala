@@ -13,8 +13,7 @@ trait RoleActions extends js.Object {
 object RoleActions {
   @scala.inline
   def apply(actions: js.Array[Action], getAcl: GetAcl = null): RoleActions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
+    val __obj = js.Dynamic.literal(actions = actions)
     if (getAcl != null) __obj.updateDynamic("getAcl")(getAcl)
     __obj.asInstanceOf[RoleActions]
   }

@@ -21,8 +21,7 @@ object DataViewValueColumnGroup {
     name: PrimitiveValue = null,
     objects: DataViewObjects = null
   ): DataViewValueColumnGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (identity != null) __obj.updateDynamic("identity")(identity)
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (objects != null) __obj.updateDynamic("objects")(objects)

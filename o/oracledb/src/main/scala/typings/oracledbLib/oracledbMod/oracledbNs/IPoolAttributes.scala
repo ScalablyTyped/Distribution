@@ -26,8 +26,7 @@ object IPoolAttributes {
     stmtCacheSize: scala.Int | scala.Double = null,
     user: java.lang.String = null
   ): IPoolAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectString")(connectString)
+    val __obj = js.Dynamic.literal(connectString = connectString)
     if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth)
     if (password != null) __obj.updateDynamic("password")(password)
     if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias)

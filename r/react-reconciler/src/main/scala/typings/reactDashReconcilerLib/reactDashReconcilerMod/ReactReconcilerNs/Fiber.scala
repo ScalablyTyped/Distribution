@@ -142,18 +142,8 @@ object Fiber {
     treeBaseDuration: scala.Int | scala.Double = null,
     updateQueue: UpdateQueue[_] = null
   ): Fiber = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("childExpirationTime")(childExpirationTime)
-    __obj.updateDynamic("effectTag")(effectTag)
-    __obj.updateDynamic("elementType")(elementType)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("memoizedProps")(memoizedProps)
-    __obj.updateDynamic("memoizedState")(memoizedState)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("pendingProps")(pendingProps)
-    __obj.updateDynamic("stateNode")(stateNode)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(childExpirationTime = childExpirationTime, effectTag = effectTag, elementType = elementType, expirationTime = expirationTime, index = index, memoizedProps = memoizedProps, memoizedState = memoizedState, mode = mode, pendingProps = pendingProps, stateNode = stateNode, tag = tag)
+    __obj.updateDynamic("type")(`type`)
     if (_debugID != null) __obj.updateDynamic("_debugID")(_debugID.asInstanceOf[js.Any])
     if (!js.isUndefined(_debugIsCurrentlyTiming)) __obj.updateDynamic("_debugIsCurrentlyTiming")(_debugIsCurrentlyTiming)
     if (_debugOwner != null) __obj.updateDynamic("_debugOwner")(_debugOwner)

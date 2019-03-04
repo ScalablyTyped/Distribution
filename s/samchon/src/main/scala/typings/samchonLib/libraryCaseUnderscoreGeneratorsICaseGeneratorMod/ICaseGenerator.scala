@@ -24,9 +24,8 @@ trait ICaseGenerator extends js.Object {
 object ICaseGenerator {
   @scala.inline
   def apply(at: js.Function1[scala.Double, js.Array[scala.Double]], size: js.Function0[scala.Double]): ICaseGenerator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("at")(at)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(at = at, size = size)
+  
     __obj.asInstanceOf[ICaseGenerator]
   }
 }

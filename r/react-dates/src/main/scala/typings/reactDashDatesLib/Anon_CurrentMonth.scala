@@ -32,10 +32,8 @@ object Anon_CurrentMonth {
       scala.Unit
     ]
   ): Anon_CurrentMonth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("onMonthSelect")(onMonthSelect)
-    __obj.updateDynamic("onYearSelect")(onYearSelect)
+    val __obj = js.Dynamic.literal(month = month, onMonthSelect = onMonthSelect, onYearSelect = onYearSelect)
+  
     __obj.asInstanceOf[Anon_CurrentMonth]
   }
 }

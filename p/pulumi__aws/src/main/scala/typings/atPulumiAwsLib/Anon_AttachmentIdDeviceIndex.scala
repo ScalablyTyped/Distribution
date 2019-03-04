@@ -14,10 +14,8 @@ trait Anon_AttachmentIdDeviceIndex extends js.Object {
 object Anon_AttachmentIdDeviceIndex {
   @scala.inline
   def apply(attachmentId: java.lang.String, deviceIndex: scala.Double, instance: java.lang.String): Anon_AttachmentIdDeviceIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentId")(attachmentId)
-    __obj.updateDynamic("deviceIndex")(deviceIndex)
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(attachmentId = attachmentId, deviceIndex = deviceIndex, instance = instance)
+  
     __obj.asInstanceOf[Anon_AttachmentIdDeviceIndex]
   }
 }

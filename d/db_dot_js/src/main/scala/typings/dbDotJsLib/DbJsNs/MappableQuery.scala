@@ -12,8 +12,8 @@ trait MappableQuery[T] extends js.Object {
 object MappableQuery {
   @scala.inline
   def apply[T](map: js.Function1[js.Function1[/* value */ T, js.Any], Query[js.Any]]): MappableQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(map = map)
+  
     __obj.asInstanceOf[MappableQuery[T]]
   }
 }

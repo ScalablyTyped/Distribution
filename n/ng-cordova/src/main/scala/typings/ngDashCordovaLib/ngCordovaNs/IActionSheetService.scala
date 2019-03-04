@@ -16,9 +16,8 @@ object IActionSheetService {
     hide: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]],
     show: js.Function1[ShowOptions, angularLib.angularMod.angularNs.IPromise[scala.Double]]
   ): IActionSheetService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(hide = hide, show = show)
+  
     __obj.asInstanceOf[IActionSheetService]
   }
 }

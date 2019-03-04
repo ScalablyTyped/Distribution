@@ -22,8 +22,7 @@ object IExternalFormValidationConfig {
     resolve: js.Any = null,
     resolveFn: js.Function1[/* modelValue */ java.lang.String, java.lang.String] = null
   ): IExternalFormValidationConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validations")(validations)
+    val __obj = js.Dynamic.literal(validations = validations)
     if (globals != null) __obj.updateDynamic("globals")(globals)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (resolve != null) __obj.updateDynamic("resolve")(resolve)

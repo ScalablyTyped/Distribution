@@ -56,11 +56,7 @@ object ISkuCreationOptions {
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
     package_dimensions: stripeLib.stripeMod.StripeNs.productsNs.IPackageDimensions = null
   ): ISkuCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("inventory")(inventory)
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("product")(product)
+    val __obj = js.Dynamic.literal(currency = currency, inventory = inventory, price = price, product = product)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (expand != null) __obj.updateDynamic("expand")(expand)

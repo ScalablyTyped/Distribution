@@ -13,8 +13,7 @@ trait IRoundRectangleOptions extends js.Object {
 object IRoundRectangleOptions {
   @scala.inline
   def apply(roundradius: scala.Double, resolution: scala.Int | scala.Double = null): IRoundRectangleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roundradius")(roundradius)
+    val __obj = js.Dynamic.literal(roundradius = roundradius)
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRoundRectangleOptions]
   }

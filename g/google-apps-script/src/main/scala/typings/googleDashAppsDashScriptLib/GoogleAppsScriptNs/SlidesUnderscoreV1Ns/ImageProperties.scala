@@ -43,15 +43,8 @@ object ImageProperties {
     shadow: Shadow,
     transparency: scala.Double
   ): ImageProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brightness")(brightness)
-    __obj.updateDynamic("contrast")(contrast)
-    __obj.updateDynamic("crop_properties")(crop_properties)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("recolor")(recolor)
-    __obj.updateDynamic("shadow")(shadow)
-    __obj.updateDynamic("transparency")(transparency)
+    val __obj = js.Dynamic.literal(brightness = brightness, contrast = contrast, crop_properties = crop_properties, link = link, outline = outline, recolor = recolor, shadow = shadow, transparency = transparency)
+  
     __obj.asInstanceOf[ImageProperties]
   }
 }

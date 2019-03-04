@@ -12,8 +12,8 @@ trait NxAttributeExpressionValues extends js.Object {
 object NxAttributeExpressionValues {
   @scala.inline
   def apply(qValues: js.Array[NxSimpleValue]): NxAttributeExpressionValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qValues")(qValues)
+    val __obj = js.Dynamic.literal(qValues = qValues)
+  
     __obj.asInstanceOf[NxAttributeExpressionValues]
   }
 }

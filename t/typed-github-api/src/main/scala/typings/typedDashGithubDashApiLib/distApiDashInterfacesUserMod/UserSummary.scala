@@ -41,23 +41,8 @@ object UserSummary {
     `type`: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.User,
     url: java.lang.String
   ): UserSummary = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("events_url")(events_url)
-    __obj.updateDynamic("followers_url")(followers_url)
-    __obj.updateDynamic("following_url")(following_url)
-    __obj.updateDynamic("gists_url")(gists_url)
-    __obj.updateDynamic("gravatar_id")(gravatar_id)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("organizations_url")(organizations_url)
-    __obj.updateDynamic("received_events_url")(received_events_url)
-    __obj.updateDynamic("repos_url")(repos_url)
-    __obj.updateDynamic("site_admin")(site_admin)
-    __obj.updateDynamic("starred_url")(starred_url)
-    __obj.updateDynamic("subscriptions_url")(subscriptions_url)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, events_url = events_url, followers_url = followers_url, following_url = following_url, gists_url = gists_url, gravatar_id = gravatar_id, html_url = html_url, id = id, login = login, organizations_url = organizations_url, received_events_url = received_events_url, repos_url = repos_url, site_admin = site_admin, starred_url = starred_url, subscriptions_url = subscriptions_url, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UserSummary]
   }
 }

@@ -51,14 +51,8 @@ object XFilterControllerListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFilterControllerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disjunctiveTermAdded")(disjunctiveTermAdded)
-    __obj.updateDynamic("disjunctiveTermRemoved")(disjunctiveTermRemoved)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("predicateExpressionChanged")(predicateExpressionChanged)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disjunctiveTermAdded = disjunctiveTermAdded, disjunctiveTermRemoved = disjunctiveTermRemoved, disposing = disposing, predicateExpressionChanged = predicateExpressionChanged, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFilterControllerListener]
   }
 }

@@ -44,8 +44,7 @@ object InfiniteProps {
     timeScrollStateLastsForAfterUserScrolls: scala.Int | scala.Double = null,
     useWindowAsScrollContainer: js.UndefOr[scala.Boolean] = js.undefined
   ): InfiniteProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elementHeight")(elementHeight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elementHeight = elementHeight.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (containerHeight != null) __obj.updateDynamic("containerHeight")(containerHeight.asInstanceOf[js.Any])

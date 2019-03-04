@@ -30,8 +30,7 @@ object Options {
     `type`: java.lang.String = null,
     urls: js.Array[java.lang.String] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes)
     if (!js.isUndefined(failOnCancel)) __obj.updateDynamic("failOnCancel")(failOnCancel)
     if (message != null) __obj.updateDynamic("message")(message)

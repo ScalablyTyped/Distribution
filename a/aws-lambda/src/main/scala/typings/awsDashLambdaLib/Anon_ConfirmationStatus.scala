@@ -20,11 +20,8 @@ object Anon_ConfirmationStatus {
     slotDetails: awsDashLambdaLib.awsDashLambdaMod.LexSlotDetails,
     slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]
   ): Anon_ConfirmationStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirmationStatus")(confirmationStatus.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("slotDetails")(slotDetails)
-    __obj.updateDynamic("slots")(slots)
+    val __obj = js.Dynamic.literal(confirmationStatus = confirmationStatus.asInstanceOf[js.Any], name = name, slotDetails = slotDetails, slots = slots)
+  
     __obj.asInstanceOf[Anon_ConfirmationStatus]
   }
 }

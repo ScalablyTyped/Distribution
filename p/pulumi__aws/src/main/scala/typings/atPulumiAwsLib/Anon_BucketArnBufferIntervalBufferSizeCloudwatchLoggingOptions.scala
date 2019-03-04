@@ -28,9 +28,7 @@ object Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions {
     kmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketArn")(bucketArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucketArn = bucketArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (bufferInterval != null) __obj.updateDynamic("bufferInterval")(bufferInterval.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
     if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])

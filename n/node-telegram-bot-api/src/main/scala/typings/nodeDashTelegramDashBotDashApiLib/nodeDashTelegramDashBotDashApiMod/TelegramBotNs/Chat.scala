@@ -34,8 +34,8 @@ object Chat {
     title: java.lang.String = null,
     username: java.lang.String = null
   ): Chat = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators)
     if (description != null) __obj.updateDynamic("description")(description)
     if (first_name != null) __obj.updateDynamic("first_name")(first_name)

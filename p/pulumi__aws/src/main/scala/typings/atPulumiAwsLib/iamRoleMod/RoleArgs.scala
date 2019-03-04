@@ -58,8 +58,7 @@ object RoleArgs {
     permissionsBoundary: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): RoleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assumeRolePolicy")(assumeRolePolicy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(assumeRolePolicy = assumeRolePolicy.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (forceDetachPolicies != null) __obj.updateDynamic("forceDetachPolicies")(forceDetachPolicies.asInstanceOf[js.Any])
     if (maxSessionDuration != null) __obj.updateDynamic("maxSessionDuration")(maxSessionDuration.asInstanceOf[js.Any])

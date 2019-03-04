@@ -22,12 +22,8 @@ object Anon_Error {
     success: java.lang.String,
     warning: java.lang.String
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("primary")(primary)
-    __obj.updateDynamic("secondary")(secondary)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(error = error, primary = primary, secondary = secondary, success = success, warning = warning)
+  
     __obj.asInstanceOf[Anon_Error]
   }
 }

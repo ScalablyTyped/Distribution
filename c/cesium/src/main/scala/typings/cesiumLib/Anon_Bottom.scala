@@ -24,13 +24,8 @@ object Anon_Bottom {
     right: scala.Double,
     top: scala.Double
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("far")(far)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("near")(near)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, far = far, left = left, near = near, right = right, top = top)
+  
     __obj.asInstanceOf[Anon_Bottom]
   }
 }

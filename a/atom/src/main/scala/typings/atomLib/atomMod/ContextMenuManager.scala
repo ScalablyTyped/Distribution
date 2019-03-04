@@ -18,8 +18,8 @@ object ContextMenuManager {
       Disposable
     ]
   ): ContextMenuManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
+    val __obj = js.Dynamic.literal(add = add)
+  
     __obj.asInstanceOf[ContextMenuManager]
   }
 }

@@ -20,8 +20,7 @@ object DialogAction {
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
     ref: java.lang.String = null
   ): DialogAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (id != null) __obj.updateDynamic("id")(id)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (ref != null) __obj.updateDynamic("ref")(ref)

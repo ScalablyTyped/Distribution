@@ -12,8 +12,8 @@ trait TagIdentifier extends js.Object {
 object TagIdentifier {
   @scala.inline
   def apply(id: java.lang.String): TagIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[TagIdentifier]
   }
 }

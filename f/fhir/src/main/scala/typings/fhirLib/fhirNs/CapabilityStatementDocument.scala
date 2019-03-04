@@ -46,9 +46,7 @@ object CapabilityStatementDocument {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(mode = mode, profile = profile)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

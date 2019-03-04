@@ -13,9 +13,8 @@ trait WatchedFilePathChangedEvent extends js.Object {
 object WatchedFilePathChangedEvent {
   @scala.inline
   def apply(event: java.lang.String, newFilePath: java.lang.String): WatchedFilePathChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("newFilePath")(newFilePath)
+    val __obj = js.Dynamic.literal(event = event, newFilePath = newFilePath)
+  
     __obj.asInstanceOf[WatchedFilePathChangedEvent]
   }
 }

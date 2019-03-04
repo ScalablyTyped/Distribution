@@ -19,9 +19,8 @@ object OAuth2ImplicitSecurity {
     `type`: java.lang.String,
     description: java.lang.String = null
   ): OAuth2ImplicitSecurity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("authorizationUrl")(authorizationUrl)
-    __obj.updateDynamic("flow")(flow)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, flow = flow)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[OAuth2ImplicitSecurity]
   }

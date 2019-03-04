@@ -37,13 +37,8 @@ object IBitcoinTransaction {
     `object`: java.lang.String,
     receiver: java.lang.String
   ): IBitcoinTransaction = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("bitcoin_amount")(bitcoin_amount)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("receiver")(receiver)
+    val __obj = js.Dynamic.literal(amount = amount, bitcoin_amount = bitcoin_amount, created = created, currency = currency, id = id, receiver = receiver)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IBitcoinTransaction]
   }
 }

@@ -20,10 +20,7 @@ object DevAppDetails {
     port: scala.Double,
     channel: java.lang.String = null
   ): DevAppDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commPort")(commPort)
-    __obj.updateDynamic("interfaces")(interfaces)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(commPort = commPort, interfaces = interfaces, port = port)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     __obj.asInstanceOf[DevAppDetails]
   }

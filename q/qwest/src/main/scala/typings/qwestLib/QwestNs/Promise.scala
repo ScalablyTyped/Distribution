@@ -26,8 +26,9 @@ object Promise {
     complete: js.Function1[js.Function0[_], Promise],
     `then`: js.Function1[js.Function2[/* xhr */ js.Any, /* response */ js.UndefOr[js.Any], _], Promise]
   ): Promise = {
-    val __obj = js.Dynamic.literal(`catch` = `catch`, `then` = `then`)
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+    __obj.updateDynamic("catch")(`catch`)
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[Promise]
   }
 }

@@ -16,8 +16,7 @@ object DialogActionsProps {
     children: reactLib.reactMod.Global.JSXNs.Element,
     style: reactDashNativeDashMaterialDashUiLib.Anon_ActionsContainer = null
   ): DialogActionsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[DialogActionsProps]
   }

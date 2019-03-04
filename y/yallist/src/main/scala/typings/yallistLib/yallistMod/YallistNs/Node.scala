@@ -20,8 +20,7 @@ object Node {
     next: Node[T] = null,
     prev: Node[T] = null
   ): Node[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list)
     if (next != null) __obj.updateDynamic("next")(next)
     if (prev != null) __obj.updateDynamic("prev")(prev)

@@ -36,19 +36,8 @@ object Anon_AmbientLightColor {
     spotShadowMap: threeLib.threeDashCoreMod.IUniform,
     spotShadowMatrix: threeLib.threeDashCoreMod.IUniform
   ): Anon_AmbientLightColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ambientLightColor")(ambientLightColor)
-    __obj.updateDynamic("directionalLights")(directionalLights)
-    __obj.updateDynamic("directionalShadowMap")(directionalShadowMap)
-    __obj.updateDynamic("directionalShadowMatrix")(directionalShadowMatrix)
-    __obj.updateDynamic("hemisphereLights")(hemisphereLights)
-    __obj.updateDynamic("pointLights")(pointLights)
-    __obj.updateDynamic("pointShadowMap")(pointShadowMap)
-    __obj.updateDynamic("pointShadowMatrix")(pointShadowMatrix)
-    __obj.updateDynamic("rectAreaLights")(rectAreaLights)
-    __obj.updateDynamic("spotLights")(spotLights)
-    __obj.updateDynamic("spotShadowMap")(spotShadowMap)
-    __obj.updateDynamic("spotShadowMatrix")(spotShadowMatrix)
+    val __obj = js.Dynamic.literal(ambientLightColor = ambientLightColor, directionalLights = directionalLights, directionalShadowMap = directionalShadowMap, directionalShadowMatrix = directionalShadowMatrix, hemisphereLights = hemisphereLights, pointLights = pointLights, pointShadowMap = pointShadowMap, pointShadowMatrix = pointShadowMatrix, rectAreaLights = rectAreaLights, spotLights = spotLights, spotShadowMap = spotShadowMap, spotShadowMatrix = spotShadowMatrix)
+  
     __obj.asInstanceOf[Anon_AmbientLightColor]
   }
 }

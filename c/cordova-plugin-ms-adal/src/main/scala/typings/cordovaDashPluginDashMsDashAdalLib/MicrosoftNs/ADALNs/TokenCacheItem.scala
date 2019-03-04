@@ -30,16 +30,8 @@ object TokenCacheItem {
     tenantId: java.lang.String,
     userInfo: UserInfo
   ): TokenCacheItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("authority")(authority)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("displayableId")(displayableId)
-    __obj.updateDynamic("expiresOn")(expiresOn)
-    __obj.updateDynamic("isMultipleResourceRefreshToken")(isMultipleResourceRefreshToken)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("tenantId")(tenantId)
-    __obj.updateDynamic("userInfo")(userInfo)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, authority = authority, clientId = clientId, displayableId = displayableId, expiresOn = expiresOn, isMultipleResourceRefreshToken = isMultipleResourceRefreshToken, resource = resource, tenantId = tenantId, userInfo = userInfo)
+  
     __obj.asInstanceOf[TokenCacheItem]
   }
 }

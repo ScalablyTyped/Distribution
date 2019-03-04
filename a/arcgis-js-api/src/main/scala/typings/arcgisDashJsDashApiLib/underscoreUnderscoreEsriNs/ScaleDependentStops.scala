@@ -51,12 +51,8 @@ object ScaleDependentStops {
     expression: java.lang.String = null,
     target: java.lang.String = null
   ): ScaleDependentStops = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stops")(stops)
-    __obj.updateDynamic("valueExpression")(valueExpression)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, stops = stops, valueExpression = valueExpression)
+    __obj.updateDynamic("type")(`type`)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[ScaleDependentStops]

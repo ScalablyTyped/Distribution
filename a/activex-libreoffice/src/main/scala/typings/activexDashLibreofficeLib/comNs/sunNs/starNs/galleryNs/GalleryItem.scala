@@ -82,26 +82,8 @@ object GalleryItem {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): GalleryItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Drawing")(Drawing)
-    __obj.updateDynamic("GalleryItemType")(GalleryItemType)
-    __obj.updateDynamic("Graphic")(Graphic)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Thumbnail")(Thumbnail)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Drawing = Drawing, GalleryItemType = GalleryItemType, Graphic = Graphic, PropertySetInfo = PropertySetInfo, Thumbnail = Thumbnail, Title = Title, Type = Type, URL = URL, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getType = getType, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[GalleryItem]
   }
 }

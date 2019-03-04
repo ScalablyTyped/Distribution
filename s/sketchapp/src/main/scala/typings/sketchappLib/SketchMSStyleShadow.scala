@@ -30,15 +30,7 @@ object SketchMSStyleShadow {
     spread: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSStyleShadow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("blurRadius")(blurRadius)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("contextSettings")(contextSettings)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("spread")(spread)
+    val __obj = js.Dynamic.literal(_class = _class, blurRadius = blurRadius, color = color, contextSettings = contextSettings, isEnabled = isEnabled, offsetX = offsetX, offsetY = offsetY, spread = spread)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyleShadow]
   }

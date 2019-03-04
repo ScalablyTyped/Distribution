@@ -55,8 +55,7 @@ object GameRequestContent {
     suggestions: js.Array[java.lang.String] = null,
     title: java.lang.String = null
   ): GameRequestContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (actionType != null) __obj.updateDynamic("actionType")(actionType)
     if (data != null) __obj.updateDynamic("data")(data)
     if (filters != null) __obj.updateDynamic("filters")(filters)

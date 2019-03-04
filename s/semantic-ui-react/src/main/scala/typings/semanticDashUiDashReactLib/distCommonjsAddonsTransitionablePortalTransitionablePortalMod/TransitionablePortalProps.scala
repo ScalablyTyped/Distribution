@@ -37,8 +37,7 @@ object TransitionablePortalProps {
     open: js.UndefOr[scala.Boolean] = js.undefined,
     transition: semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionProps = null
   ): TransitionablePortalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onClose != null) __obj.updateDynamic("onClose")(onClose)
     if (onHide != null) __obj.updateDynamic("onHide")(onHide)

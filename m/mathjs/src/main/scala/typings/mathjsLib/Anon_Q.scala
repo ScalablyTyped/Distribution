@@ -16,9 +16,8 @@ object Anon_Q {
     Q: mathjsLib.mathjsMod.mathNs.MathArray | mathjsLib.mathjsMod.mathNs.Matrix,
     R: mathjsLib.mathjsMod.mathNs.MathArray | mathjsLib.mathjsMod.mathNs.Matrix
   ): Anon_Q = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Q")(Q.asInstanceOf[js.Any])
-    __obj.updateDynamic("R")(R.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Q = Q.asInstanceOf[js.Any], R = R.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Q]
   }
 }

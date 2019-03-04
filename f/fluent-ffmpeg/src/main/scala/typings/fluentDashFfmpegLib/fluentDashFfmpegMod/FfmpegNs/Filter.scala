@@ -22,12 +22,8 @@ object Filter {
     multipleOutputs: scala.Boolean,
     output: java.lang.String
   ): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("multipleInputs")(multipleInputs)
-    __obj.updateDynamic("multipleOutputs")(multipleOutputs)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(description = description, input = input, multipleInputs = multipleInputs, multipleOutputs = multipleOutputs, output = output)
+  
     __obj.asInstanceOf[Filter]
   }
 }

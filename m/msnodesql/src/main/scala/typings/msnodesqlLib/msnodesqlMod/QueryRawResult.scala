@@ -13,9 +13,8 @@ trait QueryRawResult extends js.Object {
 object QueryRawResult {
   @scala.inline
   def apply(meta: js.Array[QueryRawColumn], rows: js.Array[js.Array[_]]): QueryRawResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(meta = meta, rows = rows)
+  
     __obj.asInstanceOf[QueryRawResult]
   }
 }

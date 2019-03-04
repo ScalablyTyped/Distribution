@@ -20,11 +20,8 @@ object SanitizeAttributeHookEvent {
     attrValue: java.lang.String,
     keepAttr: scala.Boolean
   ): SanitizeAttributeHookEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedAttributes")(allowedAttributes)
-    __obj.updateDynamic("attrName")(attrName)
-    __obj.updateDynamic("attrValue")(attrValue)
-    __obj.updateDynamic("keepAttr")(keepAttr)
+    val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes, attrName = attrName, attrValue = attrValue, keepAttr = keepAttr)
+  
     __obj.asInstanceOf[SanitizeAttributeHookEvent]
   }
 }

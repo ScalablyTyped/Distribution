@@ -40,7 +40,8 @@ object AttributesArgs {
     size: scala.Int | scala.Double = null,
     title: java.lang.String = null
   ): AttributesArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
     if (assetType != null) __obj.updateDynamic("assetType")(assetType)
     if (color != null) __obj.updateDynamic("color")(color)

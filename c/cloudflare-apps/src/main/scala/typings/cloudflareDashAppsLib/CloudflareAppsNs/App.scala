@@ -14,10 +14,8 @@ trait App extends js.Object {
 object App {
   @scala.inline
   def apply(appId: java.lang.String, options: InstallOptions, scope: InstallScope): App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(appId = appId, options = options, scope = scope)
+  
     __obj.asInstanceOf[App]
   }
 }

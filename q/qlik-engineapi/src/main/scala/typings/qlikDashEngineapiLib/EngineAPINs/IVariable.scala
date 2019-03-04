@@ -75,13 +75,8 @@ object IVariable {
     setContent: js.Function2[java.lang.String, scala.Boolean, js.Promise[scala.Boolean]],
     setNxProperties: js.Function1[INxVariableProperties, js.Promise[scala.Unit]]
   ): IVariable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceContent")(forceContent)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getNxProperties")(getNxProperties)
-    __obj.updateDynamic("getRawContent")(getRawContent)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setNxProperties")(setNxProperties)
+    val __obj = js.Dynamic.literal(forceContent = forceContent, getContent = getContent, getNxProperties = getNxProperties, getRawContent = getRawContent, setContent = setContent, setNxProperties = setNxProperties)
+  
     __obj.asInstanceOf[IVariable]
   }
 }

@@ -29,7 +29,8 @@ object ScanProgressEventArgs {
     imageCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     videoCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): ScanProgressEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(audioCount)) __obj.updateDynamic("audioCount")(audioCount)
     if (!js.isUndefined(galleryCount)) __obj.updateDynamic("galleryCount")(galleryCount)
     if (!js.isUndefined(imageCount)) __obj.updateDynamic("imageCount")(imageCount)

@@ -38,13 +38,8 @@ object DateItem {
     pick: scala.Double,
     year: scala.Double
   ): DateItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("obj")(obj)
-    __obj.updateDynamic("pick")(pick)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(date = date, day = day, month = month, obj = obj, pick = pick, year = year)
+  
     __obj.asInstanceOf[DateItem]
   }
 }

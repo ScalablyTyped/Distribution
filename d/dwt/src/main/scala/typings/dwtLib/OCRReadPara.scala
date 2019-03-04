@@ -32,17 +32,8 @@ object OCRReadPara {
     STWAIN: WebTwain,
     Type: java.lang.String
   ): OCRReadPara = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AjaxFunctionUrl")(AjaxFunctionUrl)
-    __obj.updateDynamic("AryZone")(AryZone)
-    __obj.updateDynamic("FileNames")(FileNames)
-    __obj.updateDynamic("FunctionName")(FunctionName)
-    __obj.updateDynamic("ImageIndex")(ImageIndex)
-    __obj.updateDynamic("JsonString")(JsonString)
-    __obj.updateDynamic("OnFailure")(OnFailure)
-    __obj.updateDynamic("OnSuccess")(OnSuccess)
-    __obj.updateDynamic("STWAIN")(STWAIN)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(AjaxFunctionUrl = AjaxFunctionUrl, AryZone = AryZone, FileNames = FileNames, FunctionName = FunctionName, ImageIndex = ImageIndex, JsonString = JsonString, OnFailure = OnFailure, OnSuccess = OnSuccess, STWAIN = STWAIN, Type = Type)
+  
     __obj.asInstanceOf[OCRReadPara]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- nodeLib.streamMod.Transform because Inheritance from two classes */ @js.native
+- nodeLib.streamMod.Transform because Inheritance from two classes. Inlined  */ @js.native
 trait Transform extends Duplex {
   var _transformState: readableDashStreamLib.Anon_AfterTransform = js.native
   def _flush(

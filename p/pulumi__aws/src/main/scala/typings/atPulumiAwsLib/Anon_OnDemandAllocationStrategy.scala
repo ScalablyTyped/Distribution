@@ -24,8 +24,7 @@ object Anon_OnDemandAllocationStrategy {
     spotAllocationStrategy: java.lang.String = null,
     spotMaxPrice: java.lang.String = null
   ): Anon_OnDemandAllocationStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("spotInstancePools")(spotInstancePools)
+    val __obj = js.Dynamic.literal(spotInstancePools = spotInstancePools)
     if (onDemandAllocationStrategy != null) __obj.updateDynamic("onDemandAllocationStrategy")(onDemandAllocationStrategy)
     if (onDemandBaseCapacity != null) __obj.updateDynamic("onDemandBaseCapacity")(onDemandBaseCapacity.asInstanceOf[js.Any])
     if (onDemandPercentageAboveBaseCapacity != null) __obj.updateDynamic("onDemandPercentageAboveBaseCapacity")(onDemandPercentageAboveBaseCapacity.asInstanceOf[js.Any])

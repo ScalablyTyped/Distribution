@@ -22,12 +22,8 @@ object Anon_Bzz {
     Personal: org.scalablytyped.runtime.Instantiable1[/* provider */ web3Lib.providersMod.Provider, web3Lib.ethTypesMod.Personal],
     Shh: org.scalablytyped.runtime.Instantiable1[/* provider */ web3Lib.providersMod.Provider, web3Lib.typesMod.Shh]
   ): Anon_Bzz = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bzz")(Bzz)
-    __obj.updateDynamic("Eth")(Eth)
-    __obj.updateDynamic("Net")(Net)
-    __obj.updateDynamic("Personal")(Personal)
-    __obj.updateDynamic("Shh")(Shh)
+    val __obj = js.Dynamic.literal(Bzz = Bzz, Eth = Eth, Net = Net, Personal = Personal, Shh = Shh)
+  
     __obj.asInstanceOf[Anon_Bzz]
   }
 }

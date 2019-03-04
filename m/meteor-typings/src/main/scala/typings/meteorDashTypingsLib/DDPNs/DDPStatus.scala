@@ -22,10 +22,7 @@ object DDPStatus {
     reason: java.lang.String = null,
     retryTime: scala.Int | scala.Double = null
   ): DDPStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("retryCount")(retryCount)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(connected = connected, retryCount = retryCount, status = status)
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (retryTime != null) __obj.updateDynamic("retryTime")(retryTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DDPStatus]

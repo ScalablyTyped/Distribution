@@ -18,10 +18,8 @@ object SIPIntermediary {
     domains: DomainResource,
     ipAccessControlLists: IPAccessControlListResource
   ): SIPIntermediary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credentialLists")(credentialLists)
-    __obj.updateDynamic("domains")(domains)
-    __obj.updateDynamic("ipAccessControlLists")(ipAccessControlLists)
+    val __obj = js.Dynamic.literal(credentialLists = credentialLists, domains = domains, ipAccessControlLists = ipAccessControlLists)
+  
     __obj.asInstanceOf[SIPIntermediary]
   }
 }

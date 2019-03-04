@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LoadError extends js.Object {
-  var error: reactDashNativeDashVideoLib.`Anon_`
+  var error: reactDashNativeDashVideoLib.Anon_
 }
 
 object LoadError {
   @scala.inline
-  def apply(error: reactDashNativeDashVideoLib.`Anon_`): LoadError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+  def apply(error: reactDashNativeDashVideoLib.Anon_): LoadError = {
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[LoadError]
   }
 }

@@ -49,10 +49,8 @@ object Anon_CallbackDetectionIntervalInSeconds {
     ],
     setDetectionInterval: js.Function1[chromeDashAppsLib.chromeNs.integer, scala.Unit]
   ): Anon_CallbackDetectionIntervalInSeconds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onStateChanged")(onStateChanged)
-    __obj.updateDynamic("queryState")(queryState)
-    __obj.updateDynamic("setDetectionInterval")(setDetectionInterval)
+    val __obj = js.Dynamic.literal(onStateChanged = onStateChanged, queryState = queryState, setDetectionInterval = setDetectionInterval)
+  
     __obj.asInstanceOf[Anon_CallbackDetectionIntervalInSeconds]
   }
 }

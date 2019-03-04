@@ -18,8 +18,7 @@ object Anon_InstancesDistributionLaunchTemplate {
     launchTemplate: atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateSpecificationOverrides],
     instancesDistribution: atPulumiPulumiLib.outputMod.Input[Anon_OnDemandAllocationStrategyOnDemandBaseCapacity] = null
   ): Anon_InstancesDistributionLaunchTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(launchTemplate = launchTemplate.asInstanceOf[js.Any])
     if (instancesDistribution != null) __obj.updateDynamic("instancesDistribution")(instancesDistribution.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InstancesDistributionLaunchTemplate]
   }

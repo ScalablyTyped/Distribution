@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   /**
     * The platform-specific file delimiter. ';' or ':'.
     */

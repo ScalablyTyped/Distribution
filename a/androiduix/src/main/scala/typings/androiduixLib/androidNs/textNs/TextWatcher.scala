@@ -18,10 +18,8 @@ object TextWatcher {
     beforeTextChanged: js.Function4[java.lang.String, scala.Double, scala.Double, scala.Double, scala.Unit],
     onTextChanged: js.Function4[java.lang.String, scala.Double, scala.Double, scala.Double, scala.Unit]
   ): TextWatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterTextChanged")(afterTextChanged)
-    __obj.updateDynamic("beforeTextChanged")(beforeTextChanged)
-    __obj.updateDynamic("onTextChanged")(onTextChanged)
+    val __obj = js.Dynamic.literal(afterTextChanged = afterTextChanged, beforeTextChanged = beforeTextChanged, onTextChanged = onTextChanged)
+  
     __obj.asInstanceOf[TextWatcher]
   }
 }

@@ -17,8 +17,8 @@ object TokenizerBuilder {
       scala.Unit
     ]
   ): TokenizerBuilder[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
+    val __obj = js.Dynamic.literal(build = build)
+  
     __obj.asInstanceOf[TokenizerBuilder[T]]
   }
 }

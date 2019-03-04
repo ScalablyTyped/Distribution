@@ -22,8 +22,7 @@ object IOptionProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     label: java.lang.String = null
   ): IOptionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (label != null) __obj.updateDynamic("label")(label)

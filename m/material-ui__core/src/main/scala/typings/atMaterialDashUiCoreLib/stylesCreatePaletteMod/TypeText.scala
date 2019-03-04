@@ -20,11 +20,8 @@ object TypeText {
     primary: java.lang.String,
     secondary: java.lang.String
   ): TypeText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("hint")(hint)
-    __obj.updateDynamic("primary")(primary)
-    __obj.updateDynamic("secondary")(secondary)
+    val __obj = js.Dynamic.literal(disabled = disabled, hint = hint, primary = primary, secondary = secondary)
+  
     __obj.asInstanceOf[TypeText]
   }
 }

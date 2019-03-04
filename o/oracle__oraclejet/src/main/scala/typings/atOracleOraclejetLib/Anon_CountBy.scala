@@ -12,8 +12,8 @@ trait Anon_CountBy extends js.Object {
 object Anon_CountBy {
   @scala.inline
   def apply(countBy: java.lang.String): Anon_CountBy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countBy")(countBy)
+    val __obj = js.Dynamic.literal(countBy = countBy)
+  
     __obj.asInstanceOf[Anon_CountBy]
   }
 }

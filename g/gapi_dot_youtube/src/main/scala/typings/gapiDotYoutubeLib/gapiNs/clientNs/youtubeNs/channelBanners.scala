@@ -20,8 +20,8 @@ object channelBanners {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelBannerResource]
     ]
   ): channelBanners = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[channelBanners]
   }
 }

@@ -28,9 +28,8 @@ object MailAttachment {
     Data: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
     ReadableName: java.lang.String
   ): MailAttachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("ReadableName")(ReadableName)
+    val __obj = js.Dynamic.literal(Data = Data, ReadableName = ReadableName)
+  
     __obj.asInstanceOf[MailAttachment]
   }
 }

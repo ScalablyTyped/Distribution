@@ -21,9 +21,9 @@ object Anon_Add {
     `object`: mobxLib.libTypesObservablemapMod.ObservableMap[K, V],
     `type`: mobxLib.mobxLibStrings.add
   ): Anon_Add[K, V] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Add[K, V]]
   }
 }

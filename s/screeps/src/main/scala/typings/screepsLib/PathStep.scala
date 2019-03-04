@@ -16,12 +16,8 @@ trait PathStep extends js.Object {
 object PathStep {
   @scala.inline
   def apply(direction: DirectionConstant, dx: scala.Double, dy: scala.Double, x: scala.Double, y: scala.Double): PathStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], dx = dx, dy = dy, x = x, y = y)
+  
     __obj.asInstanceOf[PathStep]
   }
 }

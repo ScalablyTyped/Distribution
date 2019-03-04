@@ -25,10 +25,7 @@ object SortableChangeEvent {
     newIndex: scala.Int | scala.Double = null,
     oldIndex: scala.Int | scala.Double = null
   ): SortableChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (action != null) __obj.updateDynamic("action")(action)
     if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
     if (item != null) __obj.updateDynamic("item")(item)

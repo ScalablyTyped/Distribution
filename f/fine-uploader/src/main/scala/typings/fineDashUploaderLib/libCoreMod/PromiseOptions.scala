@@ -55,10 +55,8 @@ object PromiseOptions {
     success: js.Function1[js.Any, PromiseOptions],
     `then`: js.Function2[js.Function, js.Function, PromiseOptions]
   ): PromiseOptions = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(done = done, failure = failure, success = success)
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[PromiseOptions]
   }
 }

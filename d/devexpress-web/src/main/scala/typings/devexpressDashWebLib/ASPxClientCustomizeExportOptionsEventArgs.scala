@@ -33,11 +33,8 @@ object ASPxClientCustomizeExportOptionsEventArgs {
     HideFormat: js.Function1[js.Object, scala.Unit],
     HideProperties: js.Function2[js.Object, js.Array[js.Object], scala.Unit]
   ): ASPxClientCustomizeExportOptionsEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetExportOptionsModel")(GetExportOptionsModel)
-    __obj.updateDynamic("HideExportOptionsPanel")(HideExportOptionsPanel)
-    __obj.updateDynamic("HideFormat")(HideFormat)
-    __obj.updateDynamic("HideProperties")(HideProperties)
+    val __obj = js.Dynamic.literal(GetExportOptionsModel = GetExportOptionsModel, HideExportOptionsPanel = HideExportOptionsPanel, HideFormat = HideFormat, HideProperties = HideProperties)
+  
     __obj.asInstanceOf[ASPxClientCustomizeExportOptionsEventArgs]
   }
 }

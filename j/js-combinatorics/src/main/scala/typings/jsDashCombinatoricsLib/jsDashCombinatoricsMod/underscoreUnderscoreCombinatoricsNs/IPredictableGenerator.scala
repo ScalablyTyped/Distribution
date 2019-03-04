@@ -23,14 +23,8 @@ object IPredictableGenerator {
     nth: js.Function1[scala.Double, T],
     toArray: js.Function0[js.Array[T]]
   ): IPredictableGenerator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nth")(nth)
-    __obj.updateDynamic("toArray")(toArray)
+    val __obj = js.Dynamic.literal(filter = filter, forEach = forEach, length = length, map = map, next = next, nth = nth, toArray = toArray)
+  
     __obj.asInstanceOf[IPredictableGenerator[T]]
   }
 }

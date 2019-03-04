@@ -20,9 +20,7 @@ object TypeStringOptions {
     baseUrl: java.lang.String = null,
     `type`: linkifyDashIssuesLib.linkifyDashIssuesLibStrings.string = null
   ): TypeStringOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repo")(repo)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(repo = repo, user = user)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

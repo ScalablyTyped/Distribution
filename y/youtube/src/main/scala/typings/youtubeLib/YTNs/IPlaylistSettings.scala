@@ -30,8 +30,7 @@ object IPlaylistSettings {
     startSeconds: scala.Int | scala.Double = null,
     suggestedQuality: SuggestedVideoQuality = null
   ): IPlaylistSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
     if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])

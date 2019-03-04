@@ -12,8 +12,8 @@ trait ScaleYTransform extends js.Object {
 object ScaleYTransform {
   @scala.inline
   def apply(scaleY: scala.Double): ScaleYTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scaleY")(scaleY)
+    val __obj = js.Dynamic.literal(scaleY = scaleY)
+  
     __obj.asInstanceOf[ScaleYTransform]
   }
 }

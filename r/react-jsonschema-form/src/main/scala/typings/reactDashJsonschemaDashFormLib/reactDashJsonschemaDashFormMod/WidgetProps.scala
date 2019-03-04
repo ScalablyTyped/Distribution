@@ -37,19 +37,8 @@ object WidgetProps {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
     value: js.Any
   ): WidgetProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autofocus")(autofocus)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("formContext")(formContext)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onBlur")(onBlur)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onFocus")(onFocus)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, formContext = formContext, id = id, onBlur = onBlur, onChange = onChange, onFocus = onFocus, options = options, readonly = readonly, required = required, schema = schema, value = value)
+  
     __obj.asInstanceOf[WidgetProps]
   }
 }

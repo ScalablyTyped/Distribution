@@ -18,9 +18,7 @@ object Error {
     value: js.Any,
     $expires: scala.Int | scala.Double = null
   ): Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal($type = $type, value = value)
     if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }

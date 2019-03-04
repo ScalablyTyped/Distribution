@@ -23,9 +23,8 @@ object Location {
     toOffset: js.Function1[vfileDashLocationLib.Anon_Column, scala.Double],
     toPosition: js.Function1[scala.Double, vfileDashLocationLib.Anon_ColumnLine]
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toOffset")(toOffset)
-    __obj.updateDynamic("toPosition")(toPosition)
+    val __obj = js.Dynamic.literal(toOffset = toOffset, toPosition = toPosition)
+  
     __obj.asInstanceOf[Location]
   }
 }

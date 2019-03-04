@@ -46,13 +46,7 @@ object Basics {
     sortMethod: reactDashTableLib.reactDashTableMod.SortFunction = null,
     sortable: js.UndefOr[scala.Boolean] = js.undefined
   ): Basics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Aggregated")(Aggregated.asInstanceOf[js.Any])
-    __obj.updateDynamic("Expander")(Expander.asInstanceOf[js.Any])
-    __obj.updateDynamic("Pivot")(Pivot.asInstanceOf[js.Any])
-    __obj.updateDynamic("PivotValue")(PivotValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("minWidth")(minWidth)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(Aggregated = Aggregated.asInstanceOf[js.Any], Expander = Expander.asInstanceOf[js.Any], Pivot = Pivot.asInstanceOf[js.Any], PivotValue = PivotValue.asInstanceOf[js.Any], minWidth = minWidth, show = show)
     if (!js.isUndefined(defaultSortDesc)) __obj.updateDynamic("defaultSortDesc")(defaultSortDesc)
     if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
     if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)

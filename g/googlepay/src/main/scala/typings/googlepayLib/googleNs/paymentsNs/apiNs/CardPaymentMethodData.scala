@@ -19,10 +19,8 @@ object CardPaymentMethodData {
     tokenizationData: PaymentMethodTokenizationData,
     `type`: googlepayLib.googlepayLibStrings.CARD
   ): CardPaymentMethodData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("tokenizationData")(tokenizationData)
+    val __obj = js.Dynamic.literal(description = description, info = info, tokenizationData = tokenizationData)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CardPaymentMethodData]
   }
 }

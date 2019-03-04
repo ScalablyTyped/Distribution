@@ -21,8 +21,7 @@ object ThemeManifest {
     icons: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
     theme_experiment: ThemeExperiment = null
   ): ThemeManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(theme = theme)
     if (default_locale != null) __obj.updateDynamic("default_locale")(default_locale)
     if (icons != null) __obj.updateDynamic("icons")(icons)
     if (theme_experiment != null) __obj.updateDynamic("theme_experiment")(theme_experiment)

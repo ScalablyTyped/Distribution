@@ -30,13 +30,8 @@ object IBooleanFieldExpression {
     IsTrue: js.Function0[IExpression],
     NotEqualTo: js.Function1[scala.Boolean, IExpression]
   ): IBooleanFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EqualTo")(EqualTo)
-    __obj.updateDynamic("IsFalse")(IsFalse)
-    __obj.updateDynamic("IsNotNull")(IsNotNull)
-    __obj.updateDynamic("IsNull")(IsNull)
-    __obj.updateDynamic("IsTrue")(IsTrue)
-    __obj.updateDynamic("NotEqualTo")(NotEqualTo)
+    val __obj = js.Dynamic.literal(EqualTo = EqualTo, IsFalse = IsFalse, IsNotNull = IsNotNull, IsNull = IsNull, IsTrue = IsTrue, NotEqualTo = NotEqualTo)
+  
     __obj.asInstanceOf[IBooleanFieldExpression]
   }
 }

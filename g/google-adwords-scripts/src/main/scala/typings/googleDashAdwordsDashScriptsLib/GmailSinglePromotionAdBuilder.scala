@@ -45,26 +45,8 @@ object GmailSinglePromotionAdBuilder {
     withSubject: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]],
     withTrackingTemplate: js.Function1[java.lang.String, GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]
   ): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withAdvertiser")(withAdvertiser)
-    __obj.updateDynamic("withCallToAction")(withCallToAction)
-    __obj.updateDynamic("withCallToActionButtonColor")(withCallToActionButtonColor)
-    __obj.updateDynamic("withCallToActionTextColor")(withCallToActionTextColor)
-    __obj.updateDynamic("withContent")(withContent)
-    __obj.updateDynamic("withCustomParameters")(withCustomParameters)
-    __obj.updateDynamic("withDescription")(withDescription)
-    __obj.updateDynamic("withDisplayUrl")(withDisplayUrl)
-    __obj.updateDynamic("withFinalUrl")(withFinalUrl)
-    __obj.updateDynamic("withHeader")(withHeader)
-    __obj.updateDynamic("withHeadline")(withHeadline)
-    __obj.updateDynamic("withHeadlineColor")(withHeadlineColor)
-    __obj.updateDynamic("withImage")(withImage)
-    __obj.updateDynamic("withLogo")(withLogo)
-    __obj.updateDynamic("withMobileFinalUrl")(withMobileFinalUrl)
-    __obj.updateDynamic("withName")(withName)
-    __obj.updateDynamic("withSubject")(withSubject)
-    __obj.updateDynamic("withTrackingTemplate")(withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = build, withAdvertiser = withAdvertiser, withCallToAction = withCallToAction, withCallToActionButtonColor = withCallToActionButtonColor, withCallToActionTextColor = withCallToActionTextColor, withContent = withContent, withCustomParameters = withCustomParameters, withDescription = withDescription, withDisplayUrl = withDisplayUrl, withFinalUrl = withFinalUrl, withHeader = withHeader, withHeadline = withHeadline, withHeadlineColor = withHeadlineColor, withImage = withImage, withLogo = withLogo, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withSubject = withSubject, withTrackingTemplate = withTrackingTemplate)
+  
     __obj.asInstanceOf[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]]
   }
 }

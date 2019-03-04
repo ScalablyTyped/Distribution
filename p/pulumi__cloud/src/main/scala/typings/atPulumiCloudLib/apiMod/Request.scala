@@ -63,17 +63,8 @@ object Request {
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]],
     rawHeaders: js.Array[java.lang.String]
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUrl")(baseUrl)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("rawHeaders")(rawHeaders)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, body = body, headers = headers, hostname = hostname, method = method, params = params, path = path, protocol = protocol, query = query, rawHeaders = rawHeaders)
+  
     __obj.asInstanceOf[Request]
   }
 }

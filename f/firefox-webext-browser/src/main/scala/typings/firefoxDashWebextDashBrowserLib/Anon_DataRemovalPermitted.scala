@@ -26,10 +26,8 @@ object Anon_DataRemovalPermitted {
     dataToRemove: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet,
     options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions
   ): Anon_DataRemovalPermitted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataRemovalPermitted")(dataRemovalPermitted)
-    __obj.updateDynamic("dataToRemove")(dataToRemove)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted, dataToRemove = dataToRemove, options = options)
+  
     __obj.asInstanceOf[Anon_DataRemovalPermitted]
   }
 }

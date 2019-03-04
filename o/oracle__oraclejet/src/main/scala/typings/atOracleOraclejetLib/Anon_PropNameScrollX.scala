@@ -18,9 +18,7 @@ object Anon_PropNameScrollX {
     scrollY: scala.Double,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_PropNameScrollX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scrollX")(scrollX)
-    __obj.updateDynamic("scrollY")(scrollY)
+    val __obj = js.Dynamic.literal(scrollX = scrollX, scrollY = scrollY)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PropNameScrollX]
   }

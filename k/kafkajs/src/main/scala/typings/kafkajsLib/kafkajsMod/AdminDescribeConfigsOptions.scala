@@ -12,8 +12,8 @@ trait AdminDescribeConfigsOptions extends js.Object {
 object AdminDescribeConfigsOptions {
   @scala.inline
   def apply(resources: js.Array[ResourceConfigQuery]): AdminDescribeConfigsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resources")(resources)
+    val __obj = js.Dynamic.literal(resources = resources)
+  
     __obj.asInstanceOf[AdminDescribeConfigsOptions]
   }
 }

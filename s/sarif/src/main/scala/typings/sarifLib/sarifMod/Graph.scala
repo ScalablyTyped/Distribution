@@ -37,8 +37,7 @@ object Graph {
     nodes: js.Array[Node] = null,
     properties: PropertyBag = null
   ): Graph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (description != null) __obj.updateDynamic("description")(description)
     if (edges != null) __obj.updateDynamic("edges")(edges)
     if (nodes != null) __obj.updateDynamic("nodes")(nodes)

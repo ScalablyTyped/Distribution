@@ -101,21 +101,8 @@ object SortsHeaders {
     sortedByColumnValue: js.Function1[Column, scala.Double],
     toggleSort: js.Function3[stdLib.Event, dynatableLib.JQuery, Column, scala.Unit]
   ): SortsHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendArrowDown")(appendArrowDown)
-    __obj.updateDynamic("appendArrowUp")(appendArrowUp)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("attachOne")(attachOne)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
-    __obj.updateDynamic("removeAll")(removeAll)
-    __obj.updateDynamic("removeAllArrows")(removeAllArrows)
-    __obj.updateDynamic("removeArrow")(removeArrow)
-    __obj.updateDynamic("removeOne")(removeOne)
-    __obj.updateDynamic("sortedByColumn")(sortedByColumn)
-    __obj.updateDynamic("sortedByColumnValue")(sortedByColumnValue)
-    __obj.updateDynamic("toggleSort")(toggleSort)
+    val __obj = js.Dynamic.literal(appendArrowDown = appendArrowDown, appendArrowUp = appendArrowUp, attach = attach, attachOne = attachOne, create = create, init = init, initOnLoad = initOnLoad, removeAll = removeAll, removeAllArrows = removeAllArrows, removeArrow = removeArrow, removeOne = removeOne, sortedByColumn = sortedByColumn, sortedByColumnValue = sortedByColumnValue, toggleSort = toggleSort)
+  
     __obj.asInstanceOf[SortsHeaders]
   }
 }

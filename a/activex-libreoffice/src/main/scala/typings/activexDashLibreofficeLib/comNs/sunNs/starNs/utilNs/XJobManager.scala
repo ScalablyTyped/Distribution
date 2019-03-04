@@ -26,13 +26,8 @@ object XJobManager {
     release: js.Function0[scala.Unit],
     releaseJob: js.Function1[XCancellable, scala.Unit]
   ): XJobManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancelAllJobs")(cancelAllJobs)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerJob")(registerJob)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseJob")(releaseJob)
+    val __obj = js.Dynamic.literal(acquire = acquire, cancelAllJobs = cancelAllJobs, queryInterface = queryInterface, registerJob = registerJob, release = release, releaseJob = releaseJob)
+  
     __obj.asInstanceOf[XJobManager]
   }
 }

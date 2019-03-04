@@ -43,13 +43,7 @@ object DefaultTreeElement {
     tagName: java.lang.String,
     sourceCodeLocation: ElementLocation = null
   ): DefaultTreeElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("namespaceURI")(namespaceURI)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(attrs = attrs, childNodes = childNodes, namespaceURI = namespaceURI, nodeName = nodeName, parentNode = parentNode, tagName = tagName)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[DefaultTreeElement]
   }

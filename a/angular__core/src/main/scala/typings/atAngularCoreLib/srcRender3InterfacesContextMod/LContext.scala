@@ -43,10 +43,7 @@ object LContext {
     directives: js.Array[_] = null,
     localRefs: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): LContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lView")(lView)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("nodeIndex")(nodeIndex)
+    val __obj = js.Dynamic.literal(lView = lView, native = native, nodeIndex = nodeIndex)
     if (component != null) __obj.updateDynamic("component")(component)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (localRefs != null) __obj.updateDynamic("localRefs")(localRefs)

@@ -78,16 +78,8 @@ object XMultipleResults {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMultipleResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MoreResults")(MoreResults)
-    __obj.updateDynamic("ResultSet")(ResultSet)
-    __obj.updateDynamic("UpdateCount")(UpdateCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMoreResults")(getMoreResults)
-    __obj.updateDynamic("getResultSet")(getResultSet)
-    __obj.updateDynamic("getUpdateCount")(getUpdateCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(MoreResults = MoreResults, ResultSet = ResultSet, UpdateCount = UpdateCount, acquire = acquire, getMoreResults = getMoreResults, getResultSet = getResultSet, getUpdateCount = getUpdateCount, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMultipleResults]
   }
 }

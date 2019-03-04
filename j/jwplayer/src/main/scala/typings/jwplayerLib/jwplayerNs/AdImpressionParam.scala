@@ -34,18 +34,8 @@ object AdImpressionParam {
     vastversion: scala.Double,
     wrapper: js.Array[_]
   ): AdImpressionParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adposition")(adposition.asInstanceOf[js.Any])
-    __obj.updateDynamic("adsystem")(adsystem)
-    __obj.updateDynamic("adtitle")(adtitle)
-    __obj.updateDynamic("clickThroughUrl")(clickThroughUrl)
-    __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    __obj.updateDynamic("creativetype")(creativetype)
-    __obj.updateDynamic("linear")(linear)
-    __obj.updateDynamic("mediafile")(mediafile)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("vastversion")(vastversion)
-    __obj.updateDynamic("wrapper")(wrapper)
+    val __obj = js.Dynamic.literal(adposition = adposition.asInstanceOf[js.Any], adsystem = adsystem, adtitle = adtitle, clickThroughUrl = clickThroughUrl, client = client.asInstanceOf[js.Any], creativetype = creativetype, linear = linear, mediafile = mediafile, tag = tag, vastversion = vastversion, wrapper = wrapper)
+  
     __obj.asInstanceOf[AdImpressionParam]
   }
 }

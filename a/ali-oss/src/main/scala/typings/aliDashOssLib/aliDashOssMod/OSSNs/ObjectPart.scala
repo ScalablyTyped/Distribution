@@ -16,11 +16,8 @@ trait ObjectPart extends js.Object {
 object ObjectPart {
   @scala.inline
   def apply(ETag: java.lang.String, LastModified: js.Any, PartNumber: scala.Double, size: scala.Double): ObjectPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ETag")(ETag)
-    __obj.updateDynamic("LastModified")(LastModified)
-    __obj.updateDynamic("PartNumber")(PartNumber)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(ETag = ETag, LastModified = LastModified, PartNumber = PartNumber, size = size)
+  
     __obj.asInstanceOf[ObjectPart]
   }
 }

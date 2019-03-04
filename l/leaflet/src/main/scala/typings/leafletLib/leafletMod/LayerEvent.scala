@@ -12,9 +12,8 @@ trait LayerEvent extends LeafletEvent {
 object LayerEvent {
   @scala.inline
   def apply(layer: Layer, target: js.Any, `type`: java.lang.String): LayerEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(layer = layer, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LayerEvent]
   }
 }

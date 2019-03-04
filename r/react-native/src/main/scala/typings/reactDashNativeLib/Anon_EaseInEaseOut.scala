@@ -18,10 +18,8 @@ object Anon_EaseInEaseOut {
     linear: reactDashNativeLib.reactDashNativeMod.LayoutAnimationConfig,
     spring: reactDashNativeLib.reactDashNativeMod.LayoutAnimationConfig
   ): Anon_EaseInEaseOut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("easeInEaseOut")(easeInEaseOut)
-    __obj.updateDynamic("linear")(linear)
-    __obj.updateDynamic("spring")(spring)
+    val __obj = js.Dynamic.literal(easeInEaseOut = easeInEaseOut, linear = linear, spring = spring)
+  
     __obj.asInstanceOf[Anon_EaseInEaseOut]
   }
 }

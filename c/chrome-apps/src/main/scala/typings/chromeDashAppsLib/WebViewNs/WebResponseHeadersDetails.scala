@@ -28,16 +28,8 @@ object WebResponseHeadersDetails {
     initiator: java.lang.String = null,
     responseHeaders: js.Array[HttpHeader] = null
   ): WebResponseHeadersDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusLine")(statusLine)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (initiator != null) __obj.updateDynamic("initiator")(initiator)
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
     __obj.asInstanceOf[WebResponseHeadersDetails]

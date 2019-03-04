@@ -83,8 +83,7 @@ object SubheaderProps {
     primary: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): SubheaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(primaryText = primaryText.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

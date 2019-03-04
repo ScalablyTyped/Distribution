@@ -13,8 +13,7 @@ trait RuleModule extends js.Object {
 object RuleModule {
   @scala.inline
   def apply(create: js.Function1[RuleContext, RuleListener], meta: RuleMetaData = null): RuleModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     __obj.asInstanceOf[RuleModule]
   }

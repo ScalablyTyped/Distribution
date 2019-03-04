@@ -20,11 +20,8 @@ object Anon_Connector {
     diff: java.lang.String,
     newCodeConnectorLinkContent: java.lang.String
   ): Anon_Connector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connector")(connector)
-    __obj.updateDynamic("deletedCodeConnectorLinkContent")(deletedCodeConnectorLinkContent)
-    __obj.updateDynamic("diff")(diff)
-    __obj.updateDynamic("newCodeConnectorLinkContent")(newCodeConnectorLinkContent)
+    val __obj = js.Dynamic.literal(connector = connector, deletedCodeConnectorLinkContent = deletedCodeConnectorLinkContent, diff = diff, newCodeConnectorLinkContent = newCodeConnectorLinkContent)
+  
     __obj.asInstanceOf[Anon_Connector]
   }
 }

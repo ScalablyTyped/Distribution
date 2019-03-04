@@ -93,22 +93,7 @@ object CollStats {
     userFlags: scala.Int | scala.Double = null,
     wiredTiger: WiredTigerData = null
   ): CollStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avgObjSize")(avgObjSize)
-    __obj.updateDynamic("capped")(capped)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("indexSizes")(indexSizes)
-    __obj.updateDynamic("lastExtentSize")(lastExtentSize)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("nindexes")(nindexes)
-    __obj.updateDynamic("ns")(ns)
-    __obj.updateDynamic("numExtents")(numExtents)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("paddingFactor")(paddingFactor)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("storageSize")(storageSize)
-    __obj.updateDynamic("totalIndexSize")(totalIndexSize)
+    val __obj = js.Dynamic.literal(avgObjSize = avgObjSize, capped = capped, count = count, indexSizes = indexSizes, lastExtentSize = lastExtentSize, max = max, maxSize = maxSize, nindexes = nindexes, ns = ns, numExtents = numExtents, ok = ok, paddingFactor = paddingFactor, size = size, storageSize = storageSize, totalIndexSize = totalIndexSize)
     if (indexDetails != null) __obj.updateDynamic("indexDetails")(indexDetails)
     if (userFlags != null) __obj.updateDynamic("userFlags")(userFlags.asInstanceOf[js.Any])
     if (wiredTiger != null) __obj.updateDynamic("wiredTiger")(wiredTiger)

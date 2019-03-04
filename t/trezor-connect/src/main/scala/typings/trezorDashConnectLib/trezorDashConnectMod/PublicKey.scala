@@ -38,15 +38,7 @@ object PublicKey {
     xpub: java.lang.String,
     xpubSegwit: java.lang.String = null
   ): PublicKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chainCode")(chainCode)
-    __obj.updateDynamic("childNum")(childNum)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("publicKey")(publicKey)
-    __obj.updateDynamic("serializedPath")(serializedPath)
-    __obj.updateDynamic("xpub")(xpub)
+    val __obj = js.Dynamic.literal(chainCode = chainCode, childNum = childNum, depth = depth, fingerprint = fingerprint, path = path, publicKey = publicKey, serializedPath = serializedPath, xpub = xpub)
     if (xpubSegwit != null) __obj.updateDynamic("xpubSegwit")(xpubSegwit)
     __obj.asInstanceOf[PublicKey]
   }

@@ -26,9 +26,8 @@ object ActionEvent {
     ActionCommand: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ActionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActionCommand")(ActionCommand)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(ActionCommand = ActionCommand, Source = Source)
+  
     __obj.asInstanceOf[ActionEvent]
   }
 }

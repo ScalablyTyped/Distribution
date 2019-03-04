@@ -12,8 +12,8 @@ trait VoiceRecognizeResponse extends js.Object {
 object VoiceRecognizeResponse {
   @scala.inline
   def apply(result: java.lang.String): VoiceRecognizeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[VoiceRecognizeResponse]
   }
 }

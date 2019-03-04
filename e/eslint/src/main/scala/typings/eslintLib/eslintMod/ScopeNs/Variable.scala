@@ -20,11 +20,8 @@ object Variable {
     name: java.lang.String,
     references: js.Array[Reference]
   ): Variable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defs")(defs)
-    __obj.updateDynamic("identifiers")(identifiers)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(defs = defs, identifiers = identifiers, name = name, references = references)
+  
     __obj.asInstanceOf[Variable]
   }
 }

@@ -42,22 +42,8 @@ object Anon_AddAll {
     targetRename: scala.Double,
     undelete: scala.Double
   ): Anon_AddAll = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("edit")(edit)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("rename")(rename)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("sourceRename")(sourceRename)
-    __obj.updateDynamic("targetRename")(targetRename)
-    __obj.updateDynamic("undelete")(undelete)
+    val __obj = js.Dynamic.literal(add = add, all = all, branch = branch, delete = delete, edit = edit, encoding = encoding, lock = lock, merge = merge, none = none, property = property, rename = rename, rollback = rollback, sourceRename = sourceRename, targetRename = targetRename, undelete = undelete)
+  
     __obj.asInstanceOf[Anon_AddAll]
   }
 }

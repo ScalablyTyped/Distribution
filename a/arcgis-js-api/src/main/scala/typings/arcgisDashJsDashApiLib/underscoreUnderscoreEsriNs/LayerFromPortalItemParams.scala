@@ -23,11 +23,8 @@ object LayerFromPortalItemParams {
     portalItem: PortalItem,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): LayerFromPortalItemParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("portalItem")(portalItem)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, portalItem = portalItem, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[LayerFromPortalItemParams]
   }
 }

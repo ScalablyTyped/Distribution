@@ -27,10 +27,8 @@ object BuildSettings {
     defaultRetentionPolicy: RetentionPolicy,
     maximumRetentionPolicy: RetentionPolicy
   ): BuildSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("daysToKeepDeletedBuildsBeforeDestroy")(daysToKeepDeletedBuildsBeforeDestroy)
-    __obj.updateDynamic("defaultRetentionPolicy")(defaultRetentionPolicy)
-    __obj.updateDynamic("maximumRetentionPolicy")(maximumRetentionPolicy)
+    val __obj = js.Dynamic.literal(daysToKeepDeletedBuildsBeforeDestroy = daysToKeepDeletedBuildsBeforeDestroy, defaultRetentionPolicy = defaultRetentionPolicy, maximumRetentionPolicy = maximumRetentionPolicy)
+  
     __obj.asInstanceOf[BuildSettings]
   }
 }

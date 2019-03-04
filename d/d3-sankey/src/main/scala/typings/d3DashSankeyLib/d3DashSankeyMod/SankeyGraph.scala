@@ -19,9 +19,8 @@ trait SankeyGraph[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPropertie
 object SankeyGraph {
   @scala.inline
   def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](links: js.Array[SankeyLink[N, L]], nodes: js.Array[SankeyNode[N, L]]): SankeyGraph[N, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(links = links, nodes = nodes)
+  
     __obj.asInstanceOf[SankeyGraph[N, L]]
   }
 }

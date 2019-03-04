@@ -12,8 +12,8 @@ trait KnockoutBindingHandlers extends js.Object {
 object KnockoutBindingHandlers {
   @scala.inline
   def apply(module: KnockoutAMDModule): KnockoutBindingHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("module")(module)
+    val __obj = js.Dynamic.literal(module = module)
+  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

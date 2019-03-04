@@ -42,8 +42,7 @@ object Card {
     title: java.lang.String = null,
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
   ): Card = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (backButtonTintColor != null) __obj.updateDynamic("backButtonTintColor")(backButtonTintColor)
     if (backButtonTitle != null) __obj.updateDynamic("backButtonTitle")(backButtonTitle)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

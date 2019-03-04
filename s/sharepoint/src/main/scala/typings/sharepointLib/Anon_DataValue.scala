@@ -14,10 +14,8 @@ trait Anon_DataValue extends js.Object {
 object Anon_DataValue {
   @scala.inline
   def apply(dataValue: js.Any, isValid: scala.Boolean, normalizedLocValue: java.lang.String): Anon_DataValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataValue")(dataValue)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("normalizedLocValue")(normalizedLocValue)
+    val __obj = js.Dynamic.literal(dataValue = dataValue, isValid = isValid, normalizedLocValue = normalizedLocValue)
+  
     __obj.asInstanceOf[Anon_DataValue]
   }
 }

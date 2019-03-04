@@ -21,10 +21,7 @@ object ScrollViewChangeEvent {
     element: kendoDashUiLib.JQuery = null,
     page: scala.Int | scala.Double = null
   ): ScrollViewChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (data != null) __obj.updateDynamic("data")(data)
     if (element != null) __obj.updateDynamic("element")(element)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

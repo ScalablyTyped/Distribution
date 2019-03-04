@@ -32,8 +32,8 @@ object Template {
     listItems: js.Array[ListItem] = null,
     title: java.lang.String = null
   ): Template = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
+    __obj.updateDynamic("type")(`type`)
     if (backButton != null) __obj.updateDynamic("backButton")(backButton)
     if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage)
     if (image != null) __obj.updateDynamic("image")(image)

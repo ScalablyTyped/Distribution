@@ -69,33 +69,8 @@ object ASPxClientPanel {
     Toggle: js.Function0[scala.Unit],
     name: java.lang.String
   ): ASPxClientPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("Collapse")(Collapse)
-    __obj.updateDynamic("Collapsed")(Collapsed)
-    __obj.updateDynamic("Expand")(Expand)
-    __obj.updateDynamic("Expanded")(Expanded)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetContentHtml")(GetContentHtml)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("IsExpandable")(IsExpandable)
-    __obj.updateDynamic("IsExpanded")(IsExpanded)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetContentHtml")(SetContentHtml)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("Toggle")(Toggle)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Collapse = Collapse, Collapsed = Collapsed, Expand = Expand, Expanded = Expanded, GetClientVisible = GetClientVisible, GetContentHtml = GetContentHtml, GetEnabled = GetEnabled, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, IsExpandable = IsExpandable, IsExpanded = IsExpanded, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetContentHtml = SetContentHtml, SetEnabled = SetEnabled, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, Toggle = Toggle, name = name)
+  
     __obj.asInstanceOf[ASPxClientPanel]
   }
 }

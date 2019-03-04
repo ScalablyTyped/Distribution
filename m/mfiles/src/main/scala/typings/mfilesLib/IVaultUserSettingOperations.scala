@@ -22,12 +22,8 @@ object IVaultUserSettingOperations {
     GetVaultLanguageCode: js.Function0[java.lang.String],
     SetSubstituteUsers: js.Function1[IUserOrUserGroupIDs, scala.Unit]
   ): IVaultUserSettingOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChangeVaultLanguage")(ChangeVaultLanguage)
-    __obj.updateDynamic("GetSubstituteUsers")(GetSubstituteUsers)
-    __obj.updateDynamic("GetVaultLanguage")(GetVaultLanguage)
-    __obj.updateDynamic("GetVaultLanguageCode")(GetVaultLanguageCode)
-    __obj.updateDynamic("SetSubstituteUsers")(SetSubstituteUsers)
+    val __obj = js.Dynamic.literal(ChangeVaultLanguage = ChangeVaultLanguage, GetSubstituteUsers = GetSubstituteUsers, GetVaultLanguage = GetVaultLanguage, GetVaultLanguageCode = GetVaultLanguageCode, SetSubstituteUsers = SetSubstituteUsers)
+  
     __obj.asInstanceOf[IVaultUserSettingOperations]
   }
 }

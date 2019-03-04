@@ -28,13 +28,7 @@ object Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice {
     deleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
     noDevice: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("encrypted")(encrypted)
-    __obj.updateDynamic("iops")(iops)
-    __obj.updateDynamic("snapshotId")(snapshotId)
-    __obj.updateDynamic("volumeSize")(volumeSize)
-    __obj.updateDynamic("volumeType")(volumeType)
+    val __obj = js.Dynamic.literal(deviceName = deviceName, encrypted = encrypted, iops = iops, snapshotId = snapshotId, volumeSize = volumeSize, volumeType = volumeType)
     if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
     if (!js.isUndefined(noDevice)) __obj.updateDynamic("noDevice")(noDevice)
     __obj.asInstanceOf[Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice]

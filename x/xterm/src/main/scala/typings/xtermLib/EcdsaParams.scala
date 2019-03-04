@@ -12,9 +12,8 @@ trait EcdsaParams extends Algorithm {
 object EcdsaParams {
   @scala.inline
   def apply(hash: HashAlgorithmIdentifier, name: java.lang.String): EcdsaParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = name)
+  
     __obj.asInstanceOf[EcdsaParams]
   }
 }

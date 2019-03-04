@@ -12,9 +12,9 @@ class WebdriverBy () extends js.Object {
   def css(css: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
   def id(id: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
   @JSName("js")
-  def `js_`(`js_`: java.lang.String, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def js_(js_ : java.lang.String, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
   @JSName("js")
-  def `js_`(`js_`: js.Function, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def js_(js_ : js.Function, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
   def linkText(linkText: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
   def name(name: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
   def partialLinkText(partialText: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native

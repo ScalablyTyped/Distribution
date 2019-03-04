@@ -22,12 +22,8 @@ object Anon_IsAndroid {
     isIOS7: js.Function0[scala.Boolean],
     isWindows: js.Function0[scala.Boolean]
   ): Anon_IsAndroid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAndroid")(isAndroid)
-    __obj.updateDynamic("isFlat")(isFlat)
-    __obj.updateDynamic("isIOS")(isIOS)
-    __obj.updateDynamic("isIOS7")(isIOS7)
-    __obj.updateDynamic("isWindows")(isWindows)
+    val __obj = js.Dynamic.literal(isAndroid = isAndroid, isFlat = isFlat, isIOS = isIOS, isIOS7 = isIOS7, isWindows = isWindows)
+  
     __obj.asInstanceOf[Anon_IsAndroid]
   }
 }

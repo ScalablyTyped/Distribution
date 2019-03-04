@@ -22,12 +22,8 @@ object TaskSourceDefinitionBase {
     selector: java.lang.String,
     target: java.lang.String
   ): TaskSourceDefinitionBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authKey")(authKey)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("keySelector")(keySelector)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(authKey = authKey, endpoint = endpoint, keySelector = keySelector, selector = selector, target = target)
+  
     __obj.asInstanceOf[TaskSourceDefinitionBase]
   }
 }

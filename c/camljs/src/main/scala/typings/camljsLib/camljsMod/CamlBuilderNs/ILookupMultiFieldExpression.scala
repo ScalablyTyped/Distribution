@@ -33,14 +33,8 @@ object ILookupMultiFieldExpression {
     NotEqualTo: js.Function1[js.Any, IExpression],
     NotIncludes: js.Function1[js.Any, IExpression]
   ): ILookupMultiFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EqualTo")(EqualTo)
-    __obj.updateDynamic("Includes")(Includes)
-    __obj.updateDynamic("IncludesSuchItemThat")(IncludesSuchItemThat)
-    __obj.updateDynamic("IsNotNull")(IsNotNull)
-    __obj.updateDynamic("IsNull")(IsNull)
-    __obj.updateDynamic("NotEqualTo")(NotEqualTo)
-    __obj.updateDynamic("NotIncludes")(NotIncludes)
+    val __obj = js.Dynamic.literal(EqualTo = EqualTo, Includes = Includes, IncludesSuchItemThat = IncludesSuchItemThat, IsNotNull = IsNotNull, IsNull = IsNull, NotEqualTo = NotEqualTo, NotIncludes = NotIncludes)
+  
     __obj.asInstanceOf[ILookupMultiFieldExpression]
   }
 }

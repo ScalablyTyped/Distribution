@@ -36,10 +36,8 @@ object ConnectedPlayer {
     getName: js.Function0[java.lang.String | scala.Null],
     getPhoto: js.Function0[java.lang.String | scala.Null]
   ): ConnectedPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getID")(getID)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPhoto")(getPhoto)
+    val __obj = js.Dynamic.literal(getID = getID, getName = getName, getPhoto = getPhoto)
+  
     __obj.asInstanceOf[ConnectedPlayer]
   }
 }

@@ -12,8 +12,8 @@ trait TStruct extends js.Object {
 object TStruct {
   @scala.inline
   def apply(fname: java.lang.String): TStruct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fname")(fname)
+    val __obj = js.Dynamic.literal(fname = fname)
+  
     __obj.asInstanceOf[TStruct]
   }
 }

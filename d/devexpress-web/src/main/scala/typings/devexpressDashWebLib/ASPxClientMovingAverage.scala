@@ -37,14 +37,8 @@ object ASPxClientMovingAverage {
     series: ASPxClientSeries,
     valueLevel: java.lang.String
   ): ASPxClientMovingAverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("envelopePercent")(envelopePercent)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pointsCount")(pointsCount)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("valueLevel")(valueLevel)
+    val __obj = js.Dynamic.literal(chart = chart, envelopePercent = envelopePercent, kind = kind, name = name, pointsCount = pointsCount, series = series, valueLevel = valueLevel)
+  
     __obj.asInstanceOf[ASPxClientMovingAverage]
   }
 }

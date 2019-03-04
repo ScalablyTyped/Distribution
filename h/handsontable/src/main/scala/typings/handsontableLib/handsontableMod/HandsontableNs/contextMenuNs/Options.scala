@@ -16,9 +16,8 @@ object Options {
     end: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords,
     start: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[Options]
   }
 }

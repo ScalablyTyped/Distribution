@@ -30,10 +30,8 @@ object Compactable {
       Separated[fpDashTsLib.libHKTMod.HKT[F, js.Any], fpDashTsLib.libHKTMod.HKT[F, js.Any]]
     ]
   ): Compactable[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compact = compact, separate = separate)
+  
     __obj.asInstanceOf[Compactable[F]]
   }
 }

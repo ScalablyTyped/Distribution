@@ -12,9 +12,8 @@ trait ServersResult extends PaginatedResult {
 object ServersResult {
   @scala.inline
   def apply(Servers: js.Array[Server], TotalCount: scala.Double): ServersResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Servers")(Servers)
-    __obj.updateDynamic("TotalCount")(TotalCount)
+    val __obj = js.Dynamic.literal(Servers = Servers, TotalCount = TotalCount)
+  
     __obj.asInstanceOf[ServersResult]
   }
 }

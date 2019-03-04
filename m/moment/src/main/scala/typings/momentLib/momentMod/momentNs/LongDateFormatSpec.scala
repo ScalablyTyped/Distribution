@@ -37,13 +37,7 @@ object LongDateFormatSpec {
     lt: java.lang.String = null,
     lts: java.lang.String = null
   ): LongDateFormatSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("L")(L)
-    __obj.updateDynamic("LL")(LL)
-    __obj.updateDynamic("LLL")(LLL)
-    __obj.updateDynamic("LLLL")(LLLL)
-    __obj.updateDynamic("LT")(LT)
-    __obj.updateDynamic("LTS")(LTS)
+    val __obj = js.Dynamic.literal(L = L, LL = LL, LLL = LLL, LLLL = LLLL, LT = LT, LTS = LTS)
     if (l != null) __obj.updateDynamic("l")(l)
     if (ll != null) __obj.updateDynamic("ll")(ll)
     if (lll != null) __obj.updateDynamic("lll")(lll)

@@ -12,8 +12,8 @@ trait CaptionsChangedParam extends js.Object {
 object CaptionsChangedParam {
   @scala.inline
   def apply(currentTrack: scala.Double): CaptionsChangedParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentTrack")(currentTrack)
+    val __obj = js.Dynamic.literal(currentTrack = currentTrack)
+  
     __obj.asInstanceOf[CaptionsChangedParam]
   }
 }

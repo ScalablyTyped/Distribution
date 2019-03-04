@@ -20,11 +20,8 @@ object SlashCommands {
     reset: js.Function0[scala.Unit],
     send: js.Function2[SlashCommandUrl, T, js.Promise[scala.Unit]]
   ): SlashCommands[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addResponse")(addResponse)
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(addResponse = addResponse, calls = calls, reset = reset, send = send)
+  
     __obj.asInstanceOf[SlashCommands[T]]
   }
 }

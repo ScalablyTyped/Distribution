@@ -22,10 +22,7 @@ object Batch {
     _onComplete: js.Function0[js.Any],
     _next: Batch = null
   ): Batch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_defer")(_defer)
-    __obj.updateDynamic("_expirationTime")(_expirationTime)
-    __obj.updateDynamic("_onComplete")(_onComplete)
+    val __obj = js.Dynamic.literal(_defer = _defer, _expirationTime = _expirationTime, _onComplete = _onComplete)
     if (_next != null) __obj.updateDynamic("_next")(_next)
     __obj.asInstanceOf[Batch]
   }

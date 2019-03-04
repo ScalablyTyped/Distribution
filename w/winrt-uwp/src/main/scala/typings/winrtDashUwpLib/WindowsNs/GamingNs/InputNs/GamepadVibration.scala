@@ -25,11 +25,8 @@ object GamepadVibration {
     rightMotor: scala.Double,
     rightTrigger: scala.Double
   ): GamepadVibration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leftMotor")(leftMotor)
-    __obj.updateDynamic("leftTrigger")(leftTrigger)
-    __obj.updateDynamic("rightMotor")(rightMotor)
-    __obj.updateDynamic("rightTrigger")(rightTrigger)
+    val __obj = js.Dynamic.literal(leftMotor = leftMotor, leftTrigger = leftTrigger, rightMotor = rightMotor, rightTrigger = rightTrigger)
+  
     __obj.asInstanceOf[GamepadVibration]
   }
 }

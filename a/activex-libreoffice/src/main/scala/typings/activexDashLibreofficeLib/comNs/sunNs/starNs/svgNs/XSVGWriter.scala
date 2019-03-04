@@ -26,11 +26,8 @@ object XSVGWriter {
       scala.Unit
     ]
   ): XSVGWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, write = write)
+  
     __obj.asInstanceOf[XSVGWriter]
   }
 }

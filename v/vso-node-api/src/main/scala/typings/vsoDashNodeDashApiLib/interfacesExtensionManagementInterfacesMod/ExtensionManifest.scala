@@ -77,20 +77,8 @@ object ExtensionManifest {
     scopes: js.Array[java.lang.String],
     serviceInstanceType: java.lang.String
   ): ExtensionManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("constraints")(constraints)
-    __obj.updateDynamic("contributionTypes")(contributionTypes)
-    __obj.updateDynamic("contributions")(contributions)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("eventCallbacks")(eventCallbacks)
-    __obj.updateDynamic("fallbackBaseUri")(fallbackBaseUri)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("licensing")(licensing)
-    __obj.updateDynamic("manifestVersion")(manifestVersion)
-    __obj.updateDynamic("restrictedTo")(restrictedTo)
-    __obj.updateDynamic("scopes")(scopes)
-    __obj.updateDynamic("serviceInstanceType")(serviceInstanceType)
+    val __obj = js.Dynamic.literal(baseUri = baseUri, constraints = constraints, contributionTypes = contributionTypes, contributions = contributions, demands = demands, eventCallbacks = eventCallbacks, fallbackBaseUri = fallbackBaseUri, language = language, licensing = licensing, manifestVersion = manifestVersion, restrictedTo = restrictedTo, scopes = scopes, serviceInstanceType = serviceInstanceType)
+  
     __obj.asInstanceOf[ExtensionManifest]
   }
 }

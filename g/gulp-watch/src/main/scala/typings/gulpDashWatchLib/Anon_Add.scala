@@ -14,8 +14,8 @@ object Anon_Add {
   def apply(
     event: gulpDashWatchLib.gulpDashWatchLibStrings.add | gulpDashWatchLib.gulpDashWatchLibStrings.change | gulpDashWatchLib.gulpDashWatchLibStrings.unlink
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Add]
   }
 }

@@ -45,10 +45,7 @@ object Anon_AltEditIdFieldsKeyOauthtoken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEditIdFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editId")(editId)
-    __obj.updateDynamic("packageName")(packageName)
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(editId = editId, packageName = packageName, track = track)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

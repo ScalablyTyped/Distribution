@@ -30,13 +30,8 @@ object Device {
     systemVersion: java.lang.String,
     vendorIdentifier: java.lang.String
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appIdentifier")(appIdentifier)
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("productType")(productType)
-    __obj.updateDynamic("systemVersion")(systemVersion)
-    __obj.updateDynamic("vendorIdentifier")(vendorIdentifier)
+    val __obj = js.Dynamic.literal(appIdentifier = appIdentifier, appVersion = appVersion, model = model, productType = productType, systemVersion = systemVersion, vendorIdentifier = vendorIdentifier)
+  
     __obj.asInstanceOf[Device]
   }
 }

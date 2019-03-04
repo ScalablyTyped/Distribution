@@ -18,10 +18,8 @@ object SinonFakeTimersConfig {
     shouldAdvanceTime: scala.Boolean,
     toFake: js.Array[java.lang.String]
   ): SinonFakeTimersConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime)
-    __obj.updateDynamic("toFake")(toFake)
+    val __obj = js.Dynamic.literal(now = now.asInstanceOf[js.Any], shouldAdvanceTime = shouldAdvanceTime, toFake = toFake)
+  
     __obj.asInstanceOf[SinonFakeTimersConfig]
   }
 }

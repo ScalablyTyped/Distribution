@@ -12,8 +12,8 @@ trait Anon_Blob extends js.Object {
 object Anon_Blob {
   @scala.inline
   def apply(`type`: croppieLib.croppieLibStrings.blob): Anon_Blob = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Blob]
   }
 }

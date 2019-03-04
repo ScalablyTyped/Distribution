@@ -79,21 +79,8 @@ object GetClusterSnapshotResult {
     storageEncrypted: scala.Boolean,
     vpcId: java.lang.String
   ): GetClusterSnapshotResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocatedStorage")(allocatedStorage)
-    __obj.updateDynamic("availabilityZones")(availabilityZones)
-    __obj.updateDynamic("dbClusterSnapshotArn")(dbClusterSnapshotArn)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("engineVersion")(engineVersion)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("licenseModel")(licenseModel)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("snapshotCreateTime")(snapshotCreateTime)
-    __obj.updateDynamic("sourceDbClusterSnapshotArn")(sourceDbClusterSnapshotArn)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("storageEncrypted")(storageEncrypted)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(allocatedStorage = allocatedStorage, availabilityZones = availabilityZones, dbClusterSnapshotArn = dbClusterSnapshotArn, engine = engine, engineVersion = engineVersion, id = id, kmsKeyId = kmsKeyId, licenseModel = licenseModel, port = port, snapshotCreateTime = snapshotCreateTime, sourceDbClusterSnapshotArn = sourceDbClusterSnapshotArn, status = status, storageEncrypted = storageEncrypted, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetClusterSnapshotResult]
   }
 }

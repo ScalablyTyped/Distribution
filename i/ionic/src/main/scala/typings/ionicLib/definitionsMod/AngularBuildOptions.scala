@@ -30,8 +30,9 @@ object AngularBuildOptions {
     project: java.lang.String = null,
     sourcemaps: js.UndefOr[scala.Boolean] = js.undefined
   ): AngularBuildOptions = {
-    val __obj = js.Dynamic.literal(`--` = `--`, `type` = `type`)
-    __obj.updateDynamic("engine")(engine)
+    val __obj = js.Dynamic.literal(engine = engine)
+    __obj.updateDynamic("--")(`--`)
+    __obj.updateDynamic("type")(`type`)
     if (configuration != null) __obj.updateDynamic("configuration")(configuration)
     if (!js.isUndefined(cordovaAssets)) __obj.updateDynamic("cordovaAssets")(cordovaAssets)
     if (platform != null) __obj.updateDynamic("platform")(platform)

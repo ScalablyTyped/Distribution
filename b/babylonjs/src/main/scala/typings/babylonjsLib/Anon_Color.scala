@@ -16,9 +16,8 @@ object Anon_Color {
     color: babylonjsLib.BABYLONNs.Color4,
     texture: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.BaseTexture]
   ): Anon_Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("texture")(texture.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color, texture = texture.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Color]
   }
 }

@@ -26,13 +26,8 @@ object CertificateValidationRequest {
     HostName: java.lang.String,
     Message: java.lang.String
   ): CertificateValidationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Certificate")(Certificate)
-    __obj.updateDynamic("CertificateValidity")(CertificateValidity)
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("HostName")(HostName)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Certificate = Certificate, CertificateValidity = CertificateValidity, Classification = Classification, Context = Context, HostName = HostName, Message = Message)
+  
     __obj.asInstanceOf[CertificateValidationRequest]
   }
 }

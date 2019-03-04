@@ -17,11 +17,8 @@ object AdUrls {
     getMobileFinalUrl: js.Function0[java.lang.String],
     getTrackingTemplate: js.Function0[java.lang.String]
   ): AdUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCustomParameters")(getCustomParameters)
-    __obj.updateDynamic("getFinalUrl")(getFinalUrl)
-    __obj.updateDynamic("getMobileFinalUrl")(getMobileFinalUrl)
-    __obj.updateDynamic("getTrackingTemplate")(getTrackingTemplate)
+    val __obj = js.Dynamic.literal(getCustomParameters = getCustomParameters, getFinalUrl = getFinalUrl, getMobileFinalUrl = getMobileFinalUrl, getTrackingTemplate = getTrackingTemplate)
+  
     __obj.asInstanceOf[AdUrls]
   }
 }

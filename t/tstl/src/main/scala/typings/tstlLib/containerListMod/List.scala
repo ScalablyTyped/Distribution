@@ -60,7 +60,7 @@ class List[T] ()
   /**
     * @hidden
     */
-  var `ptr_`: js.Any = js.native
+  var ptr_ : js.Any = js.native
   /**
     * @inheritDoc
     */

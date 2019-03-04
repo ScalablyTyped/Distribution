@@ -18,10 +18,8 @@ object ScheduledTask {
     start: js.Function0[ScheduledTask],
     stop: js.Function0[ScheduledTask]
   ): ScheduledTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(destroy = destroy, start = start, stop = stop)
+  
     __obj.asInstanceOf[ScheduledTask]
   }
 }

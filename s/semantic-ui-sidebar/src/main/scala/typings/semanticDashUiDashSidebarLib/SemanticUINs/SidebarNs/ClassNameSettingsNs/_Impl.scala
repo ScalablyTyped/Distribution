@@ -67,18 +67,8 @@ object _Impl {
     top: java.lang.String,
     visible: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("animating")(animating)
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("dimmed")(dimmed)
-    __obj.updateDynamic("ios")(ios)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("pushable")(pushable)
-    __obj.updateDynamic("pushed")(pushed)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, animating = animating, bottom = bottom, dimmed = dimmed, ios = ios, left = left, pushable = pushable, pushed = pushed, right = right, top = top, visible = visible)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

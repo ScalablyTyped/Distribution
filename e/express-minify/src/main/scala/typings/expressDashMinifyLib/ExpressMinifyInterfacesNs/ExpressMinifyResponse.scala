@@ -42,13 +42,8 @@ object ExpressMinifyResponse {
     _uglifyMangle: scala.Boolean,
     _uglifyOutput: js.Object
   ): ExpressMinifyResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_no_cache")(_no_cache)
-    __obj.updateDynamic("_no_minify")(_no_minify)
-    __obj.updateDynamic("_skip")(_skip)
-    __obj.updateDynamic("_uglifyCompress")(_uglifyCompress.asInstanceOf[js.Any])
-    __obj.updateDynamic("_uglifyMangle")(_uglifyMangle)
-    __obj.updateDynamic("_uglifyOutput")(_uglifyOutput)
+    val __obj = js.Dynamic.literal(_no_cache = _no_cache, _no_minify = _no_minify, _skip = _skip, _uglifyCompress = _uglifyCompress.asInstanceOf[js.Any], _uglifyMangle = _uglifyMangle, _uglifyOutput = _uglifyOutput)
+  
     __obj.asInstanceOf[ExpressMinifyResponse]
   }
 }

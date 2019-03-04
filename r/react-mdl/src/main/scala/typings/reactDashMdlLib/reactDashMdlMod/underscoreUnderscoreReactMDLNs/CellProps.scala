@@ -40,8 +40,7 @@ object CellProps {
     phone: scala.Int | scala.Double = null,
     tablet: scala.Int | scala.Double = null
   ): CellProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
+    val __obj = js.Dynamic.literal(col = col)
     js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, ShadowedComponent)

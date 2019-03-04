@@ -32,17 +32,8 @@ object Fields {
     setDefaultDimension: js.Function1[java.lang.String, scala.Unit],
     setDefaultMetric: js.Function1[java.lang.String, scala.Unit]
   ): Fields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asArray")(asArray)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("forIds")(forIds)
-    __obj.updateDynamic("getDefaultDimension")(getDefaultDimension)
-    __obj.updateDynamic("getDefaultMetric")(getDefaultMetric)
-    __obj.updateDynamic("getFieldById")(getFieldById)
-    __obj.updateDynamic("newDimension")(newDimension)
-    __obj.updateDynamic("newMetric")(newMetric)
-    __obj.updateDynamic("setDefaultDimension")(setDefaultDimension)
-    __obj.updateDynamic("setDefaultMetric")(setDefaultMetric)
+    val __obj = js.Dynamic.literal(asArray = asArray, build = build, forIds = forIds, getDefaultDimension = getDefaultDimension, getDefaultMetric = getDefaultMetric, getFieldById = getFieldById, newDimension = newDimension, newMetric = newMetric, setDefaultDimension = setDefaultDimension, setDefaultMetric = setDefaultMetric)
+  
     __obj.asInstanceOf[Fields]
   }
 }

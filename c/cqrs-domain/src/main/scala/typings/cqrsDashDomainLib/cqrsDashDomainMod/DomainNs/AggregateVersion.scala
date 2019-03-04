@@ -12,8 +12,8 @@ trait AggregateVersion extends js.Object {
 object AggregateVersion {
   @scala.inline
   def apply(version: scala.Double): AggregateVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(version = version)
+  
     __obj.asInstanceOf[AggregateVersion]
   }
 }

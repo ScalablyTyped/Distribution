@@ -18,9 +18,7 @@ object Anon_ADMINNOSRPAUTH {
     challengeResult: scala.Boolean,
     challengeMetadata: java.lang.String = null
   ): Anon_ADMINNOSRPAUTH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challengeName")(challengeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("challengeResult")(challengeResult)
+    val __obj = js.Dynamic.literal(challengeName = challengeName.asInstanceOf[js.Any], challengeResult = challengeResult)
     if (challengeMetadata != null) __obj.updateDynamic("challengeMetadata")(challengeMetadata)
     __obj.asInstanceOf[Anon_ADMINNOSRPAUTH]
   }

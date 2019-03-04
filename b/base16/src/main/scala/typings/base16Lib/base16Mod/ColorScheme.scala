@@ -48,25 +48,8 @@ object ColorScheme {
     base0F: java.lang.String,
     scheme: java.lang.String
   ): ColorScheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("base00")(base00)
-    __obj.updateDynamic("base01")(base01)
-    __obj.updateDynamic("base02")(base02)
-    __obj.updateDynamic("base03")(base03)
-    __obj.updateDynamic("base04")(base04)
-    __obj.updateDynamic("base05")(base05)
-    __obj.updateDynamic("base06")(base06)
-    __obj.updateDynamic("base07")(base07)
-    __obj.updateDynamic("base08")(base08)
-    __obj.updateDynamic("base09")(base09)
-    __obj.updateDynamic("base0A")(base0A)
-    __obj.updateDynamic("base0B")(base0B)
-    __obj.updateDynamic("base0C")(base0C)
-    __obj.updateDynamic("base0D")(base0D)
-    __obj.updateDynamic("base0E")(base0E)
-    __obj.updateDynamic("base0F")(base0F)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(author = author, base00 = base00, base01 = base01, base02 = base02, base03 = base03, base04 = base04, base05 = base05, base06 = base06, base07 = base07, base08 = base08, base09 = base09, base0A = base0A, base0B = base0B, base0C = base0C, base0D = base0D, base0E = base0E, base0F = base0F, scheme = scheme)
+  
     __obj.asInstanceOf[ColorScheme]
   }
 }

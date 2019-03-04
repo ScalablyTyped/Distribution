@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(prettyPhoto: jqueryDotPrettyphotoLib.scaronUnderscorePrettyPhotoNs.moduleJQueryStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prettyPhoto")(prettyPhoto)
+    val __obj = js.Dynamic.literal(prettyPhoto = prettyPhoto)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

@@ -14,8 +14,8 @@ trait Argv
 object Argv {
   @scala.inline
   def apply(`_`: js.Array[java.lang.String]): Argv = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_")(`_`)
     __obj.asInstanceOf[Argv]
   }
 }

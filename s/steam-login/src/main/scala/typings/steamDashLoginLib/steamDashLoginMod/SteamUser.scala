@@ -24,13 +24,8 @@ object SteamUser {
     steamid: java.lang.String,
     username: java.lang.String
   ): SteamUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_json")(_json)
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("profile")(profile)
-    __obj.updateDynamic("steamid")(steamid)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(_json = _json, avatar = avatar, name = name, profile = profile, steamid = steamid, username = username)
+  
     __obj.asInstanceOf[SteamUser]
   }
 }

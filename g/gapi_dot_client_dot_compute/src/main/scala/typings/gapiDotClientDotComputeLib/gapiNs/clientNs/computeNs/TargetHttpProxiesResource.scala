@@ -48,12 +48,8 @@ object TargetHttpProxiesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): TargetHttpProxiesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setUrlMap")(setUrlMap)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setUrlMap = setUrlMap)
+  
     __obj.asInstanceOf[TargetHttpProxiesResource]
   }
 }

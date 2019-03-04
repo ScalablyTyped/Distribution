@@ -20,11 +20,8 @@ object MultiValueGenericProps {
     innerProps: reactDashSelectLib.Anon_ClassName,
     selectProps: js.Any
   ): MultiValueGenericProps[OptionType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("innerProps")(innerProps)
-    __obj.updateDynamic("selectProps")(selectProps)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], innerProps = innerProps, selectProps = selectProps)
+  
     __obj.asInstanceOf[MultiValueGenericProps[OptionType]]
   }
 }

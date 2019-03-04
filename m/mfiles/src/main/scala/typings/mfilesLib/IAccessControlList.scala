@@ -30,16 +30,8 @@ object IAccessControlList {
     HasIdenticalPermissions: js.Function1[IAccessControlList, scala.Boolean],
     IsFullyAuthoritative: scala.Boolean
   ): IAccessControlList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutomaticComponents")(AutomaticComponents)
-    __obj.updateDynamic("CheckedOutToUserID")(CheckedOutToUserID)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("CustomComponent")(CustomComponent)
-    __obj.updateDynamic("EqualTo")(EqualTo)
-    __obj.updateDynamic("HasCheckedOutToUserID")(HasCheckedOutToUserID)
-    __obj.updateDynamic("HasIdenticalPermissions")(HasIdenticalPermissions)
-    __obj.updateDynamic("IsFullyAuthoritative")(IsFullyAuthoritative)
+    val __obj = js.Dynamic.literal(AutomaticComponents = AutomaticComponents, CheckedOutToUserID = CheckedOutToUserID, Clone = Clone, CloneFrom = CloneFrom, CustomComponent = CustomComponent, EqualTo = EqualTo, HasCheckedOutToUserID = HasCheckedOutToUserID, HasIdenticalPermissions = HasIdenticalPermissions, IsFullyAuthoritative = IsFullyAuthoritative)
+  
     __obj.asInstanceOf[IAccessControlList]
   }
 }

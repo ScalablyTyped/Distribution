@@ -12,8 +12,8 @@ trait ITokenizer extends js.Object {
 object ITokenizer {
   @scala.inline
   def apply(tokenize: js.Function1[java.lang.String, js.Array[java.lang.String]]): ITokenizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tokenize")(tokenize)
+    val __obj = js.Dynamic.literal(tokenize = tokenize)
+  
     __obj.asInstanceOf[ITokenizer]
   }
 }

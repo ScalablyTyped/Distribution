@@ -25,8 +25,7 @@ object ReadError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): ReadError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

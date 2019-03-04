@@ -12,8 +12,8 @@ trait Anon_Partial extends js.Object {
 object Anon_Partial {
   @scala.inline
   def apply(partial: scala.Boolean): Anon_Partial = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partial")(partial)
+    val __obj = js.Dynamic.literal(partial = partial)
+  
     __obj.asInstanceOf[Anon_Partial]
   }
 }

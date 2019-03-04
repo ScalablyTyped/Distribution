@@ -14,10 +14,8 @@ trait IProductListing extends js.Object {
 object IProductListing {
   @scala.inline
   def apply(formattedPrice: java.lang.String, name: java.lang.String, productId: java.lang.String): IProductListing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formattedPrice")(formattedPrice)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("productId")(productId)
+    val __obj = js.Dynamic.literal(formattedPrice = formattedPrice, name = name, productId = productId)
+  
     __obj.asInstanceOf[IProductListing]
   }
 }

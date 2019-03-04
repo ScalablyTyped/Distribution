@@ -19,8 +19,8 @@ object Anon_AlertIfHuaweiDevice {
       scala.Unit
     ]
   ): Anon_AlertIfHuaweiDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AlertIfHuaweiDevice")(AlertIfHuaweiDevice)
+    val __obj = js.Dynamic.literal(AlertIfHuaweiDevice = AlertIfHuaweiDevice)
+  
     __obj.asInstanceOf[Anon_AlertIfHuaweiDevice]
   }
 }

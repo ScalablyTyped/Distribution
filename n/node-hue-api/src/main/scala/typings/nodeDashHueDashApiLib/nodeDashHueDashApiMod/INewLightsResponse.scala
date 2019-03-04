@@ -16,8 +16,7 @@ object INewLightsResponse {
     lastscan: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | nodeDashHueDashApiLib.Anon_Name] = null
   ): INewLightsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastscan")(lastscan)
+    val __obj = js.Dynamic.literal(lastscan = lastscan)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[INewLightsResponse]
   }

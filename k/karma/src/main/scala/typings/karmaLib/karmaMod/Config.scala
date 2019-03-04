@@ -24,13 +24,8 @@ object Config {
     LOG_WARN: java.lang.String,
     set: js.Function1[ConfigOptions, scala.Unit]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOG_DEBUG")(LOG_DEBUG)
-    __obj.updateDynamic("LOG_DISABLE")(LOG_DISABLE)
-    __obj.updateDynamic("LOG_ERROR")(LOG_ERROR)
-    __obj.updateDynamic("LOG_INFO")(LOG_INFO)
-    __obj.updateDynamic("LOG_WARN")(LOG_WARN)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(LOG_DEBUG = LOG_DEBUG, LOG_DISABLE = LOG_DISABLE, LOG_ERROR = LOG_ERROR, LOG_INFO = LOG_INFO, LOG_WARN = LOG_WARN, set = set)
+  
     __obj.asInstanceOf[Config]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Datetime extends js.Object {
 object Anon_Datetime {
   @scala.inline
   def apply(datetimeNs: Anon_UnitOfTime): Anon_Datetime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datetimeNs")(datetimeNs)
+    val __obj = js.Dynamic.literal(datetimeNs = datetimeNs)
+  
     __obj.asInstanceOf[Anon_Datetime]
   }
 }

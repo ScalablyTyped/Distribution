@@ -30,8 +30,7 @@ object UpdateQueue {
     lastEffect: Update[State] = null,
     lastUpdate: Update[State] = null
   ): UpdateQueue[State] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseState")(baseState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseState = baseState.asInstanceOf[js.Any])
     if (firstCapturedEffect != null) __obj.updateDynamic("firstCapturedEffect")(firstCapturedEffect)
     if (firstCapturedUpdate != null) __obj.updateDynamic("firstCapturedUpdate")(firstCapturedUpdate)
     if (firstEffect != null) __obj.updateDynamic("firstEffect")(firstEffect)

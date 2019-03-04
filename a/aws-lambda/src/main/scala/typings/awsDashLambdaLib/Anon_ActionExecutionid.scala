@@ -26,12 +26,9 @@ object Anon_ActionExecutionid {
     `type`: Anon_AWS,
     version: scala.Double
   ): Anon_ActionExecutionid = {
-    val __obj = js.Dynamic.literal(`execution-id` = `execution-id`, `type` = `type`)
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("pipeline")(pipeline)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(action = action, pipeline = pipeline, stage = stage, state = state, version = version)
+    __obj.updateDynamic("execution-id")(`execution-id`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ActionExecutionid]
   }
 }

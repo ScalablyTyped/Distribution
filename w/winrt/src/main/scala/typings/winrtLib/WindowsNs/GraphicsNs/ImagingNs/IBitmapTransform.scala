@@ -24,13 +24,8 @@ object IBitmapTransform {
     scaledHeight: scala.Double,
     scaledWidth: scala.Double
   ): IBitmapTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("flip")(flip)
-    __obj.updateDynamic("interpolationMode")(interpolationMode)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scaledHeight")(scaledHeight)
-    __obj.updateDynamic("scaledWidth")(scaledWidth)
+    val __obj = js.Dynamic.literal(bounds = bounds, flip = flip, interpolationMode = interpolationMode, rotation = rotation, scaledHeight = scaledHeight, scaledWidth = scaledWidth)
+  
     __obj.asInstanceOf[IBitmapTransform]
   }
 }

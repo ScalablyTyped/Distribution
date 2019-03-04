@@ -24,9 +24,7 @@ object Anon_NoteStoreUrl {
     username: java.lang.String = null,
     webApiUrlPrefix: java.lang.String = null
   ): Anon_NoteStoreUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shardId")(shardId)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(shardId = shardId, userId = userId)
     if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl)
     if (privilege != null) __obj.updateDynamic("privilege")(privilege)
     if (username != null) __obj.updateDynamic("username")(username)

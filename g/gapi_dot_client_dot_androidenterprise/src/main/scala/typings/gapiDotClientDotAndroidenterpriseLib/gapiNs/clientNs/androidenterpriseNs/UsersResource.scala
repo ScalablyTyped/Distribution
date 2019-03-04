@@ -110,18 +110,8 @@ object UsersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[User]
     ]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("generateAuthenticationToken")(generateAuthenticationToken)
-    __obj.updateDynamic("generateToken")(generateToken)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAvailableProductSet")(getAvailableProductSet)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("revokeToken")(revokeToken)
-    __obj.updateDynamic("setAvailableProductSet")(setAvailableProductSet)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, generateAuthenticationToken = generateAuthenticationToken, generateToken = generateToken, get = get, getAvailableProductSet = getAvailableProductSet, insert = insert, list = list, patch = patch, revokeToken = revokeToken, setAvailableProductSet = setAvailableProductSet, update = update)
+  
     __obj.asInstanceOf[UsersResource]
   }
 }

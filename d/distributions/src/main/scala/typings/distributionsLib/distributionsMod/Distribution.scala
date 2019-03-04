@@ -24,13 +24,8 @@ object Distribution {
     pdf: js.Function1[scala.Double, scala.Double],
     variance: js.Function0[scala.Double]
   ): Distribution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cdf")(cdf)
-    __obj.updateDynamic("inv")(inv)
-    __obj.updateDynamic("mean")(mean)
-    __obj.updateDynamic("median")(median)
-    __obj.updateDynamic("pdf")(pdf)
-    __obj.updateDynamic("variance")(variance)
+    val __obj = js.Dynamic.literal(cdf = cdf, inv = inv, mean = mean, median = median, pdf = pdf, variance = variance)
+  
     __obj.asInstanceOf[Distribution]
   }
 }

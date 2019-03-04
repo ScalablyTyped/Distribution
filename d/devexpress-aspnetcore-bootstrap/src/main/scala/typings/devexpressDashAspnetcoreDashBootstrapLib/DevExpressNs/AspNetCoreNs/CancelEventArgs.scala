@@ -12,9 +12,8 @@ trait CancelEventArgs extends EventArgs {
 object CancelEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, sender: Control): CancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(cancel = cancel, sender = sender)
+  
     __obj.asInstanceOf[CancelEventArgs]
   }
 }

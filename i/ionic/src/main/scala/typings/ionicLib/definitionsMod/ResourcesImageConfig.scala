@@ -22,10 +22,7 @@ object ResourcesImageConfig {
     density: java.lang.String = null,
     orientation: ionicLib.ionicLibStrings.landscape | ionicLib.ionicLibStrings.portrait = null
   ): ResourcesImageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, name = name, width = width)
     if (density != null) __obj.updateDynamic("density")(density)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcesImageConfig]

@@ -62,32 +62,8 @@ object Resources {
     webSocketClosed: java.lang.String,
     webSocketsInvalidState: java.lang.String
   ): Resources = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorDuringStartRequest")(errorDuringStartRequest)
-    __obj.updateDynamic("errorOnNegotiate")(errorOnNegotiate)
-    __obj.updateDynamic("errorParsingNegotiateResponse")(errorParsingNegotiateResponse)
-    __obj.updateDynamic("errorParsingStartResponse")(errorParsingStartResponse)
-    __obj.updateDynamic("eventSourceError")(eventSourceError)
-    __obj.updateDynamic("eventSourceFailedToConnect")(eventSourceFailedToConnect)
-    __obj.updateDynamic("invalidStartResponse")(invalidStartResponse)
-    __obj.updateDynamic("longPollFailed")(longPollFailed)
-    __obj.updateDynamic("noConnectionTransport")(noConnectionTransport)
-    __obj.updateDynamic("noTransportOnInit")(noTransportOnInit)
-    __obj.updateDynamic("nojQuery")(nojQuery)
-    __obj.updateDynamic("parseFailed")(parseFailed)
-    __obj.updateDynamic("pingServerFailed")(pingServerFailed)
-    __obj.updateDynamic("pingServerFailedInvalidResponse")(pingServerFailedInvalidResponse)
-    __obj.updateDynamic("pingServerFailedParse")(pingServerFailedParse)
-    __obj.updateDynamic("pingServerFailedStatusCode")(pingServerFailedStatusCode)
-    __obj.updateDynamic("protocolIncompatible")(protocolIncompatible)
-    __obj.updateDynamic("reconnectTimeout")(reconnectTimeout)
-    __obj.updateDynamic("reconnectWindowTimeout")(reconnectWindowTimeout)
-    __obj.updateDynamic("sendFailed")(sendFailed)
-    __obj.updateDynamic("stoppedDuringStartRequest")(stoppedDuringStartRequest)
-    __obj.updateDynamic("stoppedWhileLoading")(stoppedWhileLoading)
-    __obj.updateDynamic("stoppedWhileNegotiating")(stoppedWhileNegotiating)
-    __obj.updateDynamic("webSocketClosed")(webSocketClosed)
-    __obj.updateDynamic("webSocketsInvalidState")(webSocketsInvalidState)
+    val __obj = js.Dynamic.literal(errorDuringStartRequest = errorDuringStartRequest, errorOnNegotiate = errorOnNegotiate, errorParsingNegotiateResponse = errorParsingNegotiateResponse, errorParsingStartResponse = errorParsingStartResponse, eventSourceError = eventSourceError, eventSourceFailedToConnect = eventSourceFailedToConnect, invalidStartResponse = invalidStartResponse, longPollFailed = longPollFailed, noConnectionTransport = noConnectionTransport, noTransportOnInit = noTransportOnInit, nojQuery = nojQuery, parseFailed = parseFailed, pingServerFailed = pingServerFailed, pingServerFailedInvalidResponse = pingServerFailedInvalidResponse, pingServerFailedParse = pingServerFailedParse, pingServerFailedStatusCode = pingServerFailedStatusCode, protocolIncompatible = protocolIncompatible, reconnectTimeout = reconnectTimeout, reconnectWindowTimeout = reconnectWindowTimeout, sendFailed = sendFailed, stoppedDuringStartRequest = stoppedDuringStartRequest, stoppedWhileLoading = stoppedWhileLoading, stoppedWhileNegotiating = stoppedWhileNegotiating, webSocketClosed = webSocketClosed, webSocketsInvalidState = webSocketsInvalidState)
+  
     __obj.asInstanceOf[Resources]
   }
 }

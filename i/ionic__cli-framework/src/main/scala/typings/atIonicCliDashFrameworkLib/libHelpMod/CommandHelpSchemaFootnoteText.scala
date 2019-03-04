@@ -18,9 +18,8 @@ object CommandHelpSchemaFootnoteText {
     text: java.lang.String,
     `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.text
   ): CommandHelpSchemaFootnoteText = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CommandHelpSchemaFootnoteText]
   }
 }

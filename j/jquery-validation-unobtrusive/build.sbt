@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "jquery-validation-unobtrusive"
-version := "v3.2.3-dt-20180214Z-36ad48"
+version := "v3.2.3-dt-20180214Z-3248b0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-af4dd0",
-  "org.scalablytyped" %%% "jquery_dot_validation" % "1.16-dt-20190213Z-28dac4",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e769d0",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f5a31c",
+  "org.scalablytyped" %%% "jquery_dot_validation" % "1.16-dt-20190213Z-f0e81b",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b709fe",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

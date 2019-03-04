@@ -24,10 +24,8 @@ trait ASPxClientToolbarItemValueChangedEventArgs extends ASPxClientProcessingMod
 object ASPxClientToolbarItemValueChangedEventArgs {
   @scala.inline
   def apply(editor: ASPxClientControl, item: ASPxClientMenuItem, processOnServer: scala.Boolean): ASPxClientToolbarItemValueChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(editor = editor, item = item, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientToolbarItemValueChangedEventArgs]
   }
 }

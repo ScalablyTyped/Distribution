@@ -18,10 +18,8 @@ object Anon_B {
     g: coreDashJsLib.Array[scala.Double],
     r: coreDashJsLib.Array[scala.Double]
   ): Anon_B = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+  
     __obj.asInstanceOf[Anon_B]
   }
 }

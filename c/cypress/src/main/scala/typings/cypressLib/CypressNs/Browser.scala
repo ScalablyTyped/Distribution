@@ -29,14 +29,8 @@ object Browser {
     path: java.lang.String,
     version: java.lang.String
   ): Browser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    __obj.updateDynamic("isHeaded")(isHeaded)
-    __obj.updateDynamic("isHeadless")(isHeadless)
-    __obj.updateDynamic("majorVersion")(majorVersion)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], isHeaded = isHeaded, isHeadless = isHeadless, majorVersion = majorVersion, name = name.asInstanceOf[js.Any], path = path, version = version)
+  
     __obj.asInstanceOf[Browser]
   }
 }

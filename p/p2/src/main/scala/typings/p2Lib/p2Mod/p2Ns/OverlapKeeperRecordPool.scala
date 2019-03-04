@@ -20,13 +20,8 @@ object OverlapKeeperRecordPool {
     release: js.Function1[js.Any, Pool],
     resize: js.Function1[scala.Double, Pool]
   ): OverlapKeeperRecordPool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resize")(resize)
+    val __obj = js.Dynamic.literal(create = create, destroy = destroy, get = get, objects = objects, release = release, resize = resize)
+  
     __obj.asInstanceOf[OverlapKeeperRecordPool]
   }
 }

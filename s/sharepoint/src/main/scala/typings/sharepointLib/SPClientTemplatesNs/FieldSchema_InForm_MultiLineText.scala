@@ -45,27 +45,8 @@ object FieldSchema_InForm_MultiLineText {
     Type: java.lang.String,
     UseMinWidth: scala.Boolean
   ): FieldSchema_InForm_MultiLineText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("AllowHyperlink")(AllowHyperlink)
-    __obj.updateDynamic("AppendOnly")(AppendOnly)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Direction")(Direction)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("IMEMode")(IMEMode)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NumberOfLines")(NumberOfLines)
-    __obj.updateDynamic("ReadOnlyField")(ReadOnlyField)
-    __obj.updateDynamic("Required")(Required)
-    __obj.updateDynamic("RestrictedMode")(RestrictedMode)
-    __obj.updateDynamic("RichText")(RichText)
-    __obj.updateDynamic("RichTextMode")(RichTextMode)
-    __obj.updateDynamic("ScriptEditorAdderId")(ScriptEditorAdderId)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UseMinWidth")(UseMinWidth)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, AllowHyperlink = AllowHyperlink, AppendOnly = AppendOnly, Description = Description, Direction = Direction, FieldType = FieldType, Hidden = Hidden, IMEMode = IMEMode, Id = Id, Name = Name, NumberOfLines = NumberOfLines, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, RichText = RichText, RichTextMode = RichTextMode, ScriptEditorAdderId = ScriptEditorAdderId, Title = Title, Type = Type, UseMinWidth = UseMinWidth)
+  
     __obj.asInstanceOf[FieldSchema_InForm_MultiLineText]
   }
 }

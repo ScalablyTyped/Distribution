@@ -20,8 +20,7 @@ object Part {
     entityType: java.lang.String = null,
     userDefined: js.UndefOr[scala.Boolean] = js.undefined
   ): Part = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (entityType != null) __obj.updateDynamic("entityType")(entityType)
     if (!js.isUndefined(userDefined)) __obj.updateDynamic("userDefined")(userDefined)

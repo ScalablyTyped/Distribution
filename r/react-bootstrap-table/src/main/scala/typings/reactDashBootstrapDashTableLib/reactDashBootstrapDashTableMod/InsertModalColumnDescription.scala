@@ -107,13 +107,7 @@ object InsertModalColumnDescription {
     ]) = null,
     isKey: js.UndefOr[scala.Boolean] = js.undefined
   ): InsertModalColumnDescription[TRow] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customInsertEditor")(customInsertEditor)
-    __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hiddenOnInsert")(hiddenOnInsert)
-    __obj.updateDynamic("keyValidator")(keyValidator)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customInsertEditor = customInsertEditor, editable = editable.asInstanceOf[js.Any], field = field, hiddenOnInsert = hiddenOnInsert, keyValidator = keyValidator, name = name.asInstanceOf[js.Any])
     if (!js.isUndefined(autoValue)) __obj.updateDynamic("autoValue")(autoValue)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(isKey)) __obj.updateDynamic("isKey")(isKey)

@@ -24,10 +24,8 @@ object WrappedTargetRuntimeException {
     Message: java.lang.String,
     TargetException: js.Any
   ): WrappedTargetRuntimeException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("TargetException")(TargetException)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, TargetException = TargetException)
+  
     __obj.asInstanceOf[WrappedTargetRuntimeException]
   }
 }

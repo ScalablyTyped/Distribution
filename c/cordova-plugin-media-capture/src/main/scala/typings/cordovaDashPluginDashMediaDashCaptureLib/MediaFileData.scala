@@ -28,12 +28,8 @@ object MediaFileData {
     height: scala.Double,
     width: scala.Double
   ): MediaFileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitrate")(bitrate)
-    __obj.updateDynamic("codecs")(codecs)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bitrate = bitrate, codecs = codecs, duration = duration, height = height, width = width)
+  
     __obj.asInstanceOf[MediaFileData]
   }
 }

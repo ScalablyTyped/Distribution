@@ -14,10 +14,8 @@ trait BuildDefinitionChangingEvent extends js.Object {
 object BuildDefinitionChangingEvent {
   @scala.inline
   def apply(changeType: AuditAction, newDefinition: BuildDefinition, originalDefinition: BuildDefinition): BuildDefinitionChangingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("newDefinition")(newDefinition)
-    __obj.updateDynamic("originalDefinition")(originalDefinition)
+    val __obj = js.Dynamic.literal(changeType = changeType, newDefinition = newDefinition, originalDefinition = originalDefinition)
+  
     __obj.asInstanceOf[BuildDefinitionChangingEvent]
   }
 }

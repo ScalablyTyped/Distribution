@@ -32,7 +32,8 @@ object TypeParameter {
     trailingComments: js.Array[Comment] = null,
     variance: Variance = null
   ): TypeParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (bound != null) __obj.updateDynamic("bound")(bound)
     if (default != null) __obj.updateDynamic("default")(default)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

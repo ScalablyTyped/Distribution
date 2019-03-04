@@ -44,8 +44,7 @@ object EncryptOptions {
     toUserId: UserId = null,
     wildcard: js.UndefOr[scala.Boolean] = js.undefined
   ): EncryptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor)
     if (compression != null) __obj.updateDynamic("compression")(compression)
     if (date != null) __obj.updateDynamic("date")(date)

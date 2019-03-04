@@ -16,10 +16,7 @@ object ParsingError {
     toString: js.Function0[java.lang.String],
     stack: java.lang.String = null
   ): ParsingError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(message = message, name = name, toString = toString)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[ParsingError]
   }

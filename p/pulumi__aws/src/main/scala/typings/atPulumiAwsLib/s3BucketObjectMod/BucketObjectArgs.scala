@@ -104,8 +104,7 @@ object BucketObjectArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     websiteRedirect: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): BucketObjectArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])

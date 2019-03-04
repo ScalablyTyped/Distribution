@@ -21,9 +21,7 @@ object ReadOptions {
     rootId: java.lang.String = null,
     variables: TVariables = null
   ): ReadOptions[TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("optimistic")(optimistic)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(optimistic = optimistic, query = query)
     if (previousResult != null) __obj.updateDynamic("previousResult")(previousResult)
     if (rootId != null) __obj.updateDynamic("rootId")(rootId)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])

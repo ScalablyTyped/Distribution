@@ -20,11 +20,8 @@ object Anon_AttributeClass {
     Store: org.scalablytyped.runtime.Instantiable1[/* domNode */ stdLib.HTMLElement, parchmentLib.distSrcAttributorStoreMod.default],
     Style: Anon_KeysNode
   ): Anon_AttributeClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attribute")(Attribute)
-    __obj.updateDynamic("Class")(Class)
-    __obj.updateDynamic("Store")(Store)
-    __obj.updateDynamic("Style")(Style)
+    val __obj = js.Dynamic.literal(Attribute = Attribute, Class = Class, Store = Store, Style = Style)
+  
     __obj.asInstanceOf[Anon_AttributeClass]
   }
 }

@@ -51,13 +51,7 @@ object Move {
     captured: chessDotJsLib.chessDotJsLibStrings.p | chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q = null,
     promotion: chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q = null
   ): Move = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("piece")(piece.asInstanceOf[js.Any])
-    __obj.updateDynamic("san")(san)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], flags = flags, from = from, piece = piece.asInstanceOf[js.Any], san = san, to = to)
     if (captured != null) __obj.updateDynamic("captured")(captured.asInstanceOf[js.Any])
     if (promotion != null) __obj.updateDynamic("promotion")(promotion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Move]

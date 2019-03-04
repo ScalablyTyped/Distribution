@@ -26,14 +26,8 @@ object Beacon {
     tx: scala.Double,
     uuid: java.lang.String
   ): Beacon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("proximity")(proximity)
-    __obj.updateDynamic("rssi")(rssi)
-    __obj.updateDynamic("tx")(tx)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, major = major, minor = minor, proximity = proximity, rssi = rssi, tx = tx, uuid = uuid)
+  
     __obj.asInstanceOf[Beacon]
   }
 }

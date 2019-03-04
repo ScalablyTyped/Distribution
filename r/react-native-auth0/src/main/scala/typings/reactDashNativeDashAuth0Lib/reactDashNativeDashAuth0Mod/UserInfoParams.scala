@@ -12,8 +12,8 @@ trait UserInfoParams extends js.Object {
 object UserInfoParams {
   @scala.inline
   def apply(token: java.lang.String): UserInfoParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
+  
     __obj.asInstanceOf[UserInfoParams]
   }
 }

@@ -22,12 +22,8 @@ object Anon_Buttons {
     x: scala.Double,
     y: scala.Double
   ): Anon_Buttons = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(buttons = buttons, height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_Buttons]
   }
 }

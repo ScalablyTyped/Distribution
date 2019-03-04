@@ -22,12 +22,8 @@ object MergeFileInput {
     size: scala.Double,
     version: scala.Double
   ): MergeFileInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("ptr")(ptr)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(mode = mode, path = path, ptr = ptr, size = size, version = version)
+  
     __obj.asInstanceOf[MergeFileInput]
   }
 }

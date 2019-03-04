@@ -12,8 +12,8 @@ trait Anon_DstNamespaced extends js.Object {
 object Anon_DstNamespaced {
   @scala.inline
   def apply(dst: terminalDashKitLib.screenbufferMod.namespaced): Anon_DstNamespaced = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dst")(dst)
+    val __obj = js.Dynamic.literal(dst = dst)
+  
     __obj.asInstanceOf[Anon_DstNamespaced]
   }
 }

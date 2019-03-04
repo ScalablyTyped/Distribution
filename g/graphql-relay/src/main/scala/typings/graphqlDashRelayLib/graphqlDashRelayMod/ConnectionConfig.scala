@@ -40,8 +40,7 @@ object ConnectionConfig {
     resolveCursor: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = null,
     resolveNode: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ConnectionConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nodeType = nodeType.asInstanceOf[js.Any])
     if (connectionFields != null) __obj.updateDynamic("connectionFields")(connectionFields.asInstanceOf[js.Any])
     if (edgeFields != null) __obj.updateDynamic("edgeFields")(edgeFields.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)

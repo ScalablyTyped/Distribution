@@ -22,9 +22,8 @@ object ClipboardFormats {
     Identifiers: activexDashInteropLib.SafeArray[scala.Double],
     Names: activexDashInteropLib.SafeArray[java.lang.String]
   ): ClipboardFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Identifiers")(Identifiers)
-    __obj.updateDynamic("Names")(Names)
+    val __obj = js.Dynamic.literal(Identifiers = Identifiers, Names = Names)
+  
     __obj.asInstanceOf[ClipboardFormats]
   }
 }

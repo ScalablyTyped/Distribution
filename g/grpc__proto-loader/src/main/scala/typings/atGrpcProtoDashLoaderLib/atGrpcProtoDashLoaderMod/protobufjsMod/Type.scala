@@ -21,8 +21,8 @@ object Type {
       ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IDescriptorProto */ js.Any)
     ]
   ): Type = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toDescriptor")(toDescriptor)
+    val __obj = js.Dynamic.literal(toDescriptor = toDescriptor)
+  
     __obj.asInstanceOf[Type]
   }
 }

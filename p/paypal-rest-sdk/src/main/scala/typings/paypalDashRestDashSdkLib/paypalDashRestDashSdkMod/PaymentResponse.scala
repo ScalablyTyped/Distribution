@@ -31,11 +31,7 @@ object PaymentResponse {
     total_count: scala.Int | scala.Double = null,
     update_time: java.lang.String = null
   ): PaymentResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpStatusCode")(httpStatusCode)
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("payer")(payer)
-    __obj.updateDynamic("transactions")(transactions)
+    val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode, intent = intent, payer = payer, transactions = transactions)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time)
     if (experience_profile_id != null) __obj.updateDynamic("experience_profile_id")(experience_profile_id)

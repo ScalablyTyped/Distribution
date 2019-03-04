@@ -29,10 +29,8 @@ object TryStatement {
     finalizer: astDashTypesLib.genKindsMod.BlockStatementKind = null,
     handler: astDashTypesLib.genKindsMod.CatchClauseKind = null
   ): TryStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("guardedHandlers")(guardedHandlers)
-    __obj.updateDynamic("handlers")(handlers)
+    val __obj = js.Dynamic.literal(block = block, guardedHandlers = guardedHandlers, handlers = handlers)
+    __obj.updateDynamic("type")(`type`)
     if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer)
     if (handler != null) __obj.updateDynamic("handler")(handler)
     __obj.asInstanceOf[TryStatement]

@@ -46,8 +46,7 @@ object Rules {
       _
     ] = null
   ): Rules[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(setup)

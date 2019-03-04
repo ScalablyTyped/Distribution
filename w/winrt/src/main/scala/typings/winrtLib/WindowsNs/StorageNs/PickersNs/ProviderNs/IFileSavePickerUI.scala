@@ -26,14 +26,8 @@ object IFileSavePickerUI {
     title: java.lang.String,
     trySetFileName: js.Function1[java.lang.String, SetFileNameResult]
   ): IFileSavePickerUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedFileTypes")(allowedFileTypes)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("onfilenamechanged")(onfilenamechanged)
-    __obj.updateDynamic("ontargetfilerequested")(ontargetfilerequested)
-    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("trySetFileName")(trySetFileName)
+    val __obj = js.Dynamic.literal(allowedFileTypes = allowedFileTypes, fileName = fileName, onfilenamechanged = onfilenamechanged, ontargetfilerequested = ontargetfilerequested, settingsIdentifier = settingsIdentifier, title = title, trySetFileName = trySetFileName)
+  
     __obj.asInstanceOf[IFileSavePickerUI]
   }
 }

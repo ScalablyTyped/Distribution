@@ -98,9 +98,7 @@ object UploadConfig {
     uri: java.lang.String = null,
     userProject: java.lang.String = null
   ): UploadConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(bucket = bucket, file = file)
     if (authClient != null) __obj.updateDynamic("authClient")(authClient)
     if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig)
     if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])

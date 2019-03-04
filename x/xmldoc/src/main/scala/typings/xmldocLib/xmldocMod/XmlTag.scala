@@ -13,9 +13,8 @@ trait XmlTag extends js.Object {
 object XmlTag {
   @scala.inline
   def apply(attributes: XmlAttributes, name: java.lang.String): XmlTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributes = attributes, name = name)
+  
     __obj.asInstanceOf[XmlTag]
   }
 }

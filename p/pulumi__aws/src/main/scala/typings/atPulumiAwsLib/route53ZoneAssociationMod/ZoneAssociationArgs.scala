@@ -27,9 +27,7 @@ object ZoneAssociationArgs {
     zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     vpcRegion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ZoneAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
-    __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
     if (vpcRegion != null) __obj.updateDynamic("vpcRegion")(vpcRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneAssociationArgs]
   }

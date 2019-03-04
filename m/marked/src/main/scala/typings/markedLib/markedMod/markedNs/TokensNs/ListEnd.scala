@@ -13,8 +13,8 @@ trait ListEnd
 object ListEnd {
   @scala.inline
   def apply(`type`: markedLib.markedLibStrings.list_end): ListEnd = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ListEnd]
   }
 }

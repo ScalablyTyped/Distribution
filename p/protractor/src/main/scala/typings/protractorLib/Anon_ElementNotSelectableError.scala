@@ -186,33 +186,8 @@ object Anon_ElementNotSelectableError {
     ],
     WebDriverError: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.WebDriverError]
   ): Anon_ElementNotSelectableError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNotSelectableError")(ElementNotSelectableError)
-    __obj.updateDynamic("ElementNotVisibleError")(ElementNotVisibleError)
-    __obj.updateDynamic("IError")(IError)
-    __obj.updateDynamic("InvalidArgumentError")(InvalidArgumentError)
-    __obj.updateDynamic("InvalidCookieDomainError")(InvalidCookieDomainError)
-    __obj.updateDynamic("InvalidElementCoordinatesError")(InvalidElementCoordinatesError)
-    __obj.updateDynamic("InvalidElementStateError")(InvalidElementStateError)
-    __obj.updateDynamic("InvalidSelectorError")(InvalidSelectorError)
-    __obj.updateDynamic("JavascriptError")(JavascriptError)
-    __obj.updateDynamic("MoveTargetOutOfBoundsError")(MoveTargetOutOfBoundsError)
-    __obj.updateDynamic("NoSuchAlertError")(NoSuchAlertError)
-    __obj.updateDynamic("NoSuchElementError")(NoSuchElementError)
-    __obj.updateDynamic("NoSuchFrameError")(NoSuchFrameError)
-    __obj.updateDynamic("NoSuchSessionError")(NoSuchSessionError)
-    __obj.updateDynamic("NoSuchWindowError")(NoSuchWindowError)
-    __obj.updateDynamic("ScriptTimeoutError")(ScriptTimeoutError)
-    __obj.updateDynamic("SessionNotCreatedError")(SessionNotCreatedError)
-    __obj.updateDynamic("StaleElementReferenceError")(StaleElementReferenceError)
-    __obj.updateDynamic("TimeoutError")(TimeoutError)
-    __obj.updateDynamic("UnableToCaptureScreenError")(UnableToCaptureScreenError)
-    __obj.updateDynamic("UnableToSetCookieError")(UnableToSetCookieError)
-    __obj.updateDynamic("UnexpectedAlertOpenError")(UnexpectedAlertOpenError)
-    __obj.updateDynamic("UnknownCommandError")(UnknownCommandError)
-    __obj.updateDynamic("UnknownMethodError")(UnknownMethodError)
-    __obj.updateDynamic("UnsupportedOperationError")(UnsupportedOperationError)
-    __obj.updateDynamic("WebDriverError")(WebDriverError)
+    val __obj = js.Dynamic.literal(ElementNotSelectableError = ElementNotSelectableError, ElementNotVisibleError = ElementNotVisibleError, IError = IError, InvalidArgumentError = InvalidArgumentError, InvalidCookieDomainError = InvalidCookieDomainError, InvalidElementCoordinatesError = InvalidElementCoordinatesError, InvalidElementStateError = InvalidElementStateError, InvalidSelectorError = InvalidSelectorError, JavascriptError = JavascriptError, MoveTargetOutOfBoundsError = MoveTargetOutOfBoundsError, NoSuchAlertError = NoSuchAlertError, NoSuchElementError = NoSuchElementError, NoSuchFrameError = NoSuchFrameError, NoSuchSessionError = NoSuchSessionError, NoSuchWindowError = NoSuchWindowError, ScriptTimeoutError = ScriptTimeoutError, SessionNotCreatedError = SessionNotCreatedError, StaleElementReferenceError = StaleElementReferenceError, TimeoutError = TimeoutError, UnableToCaptureScreenError = UnableToCaptureScreenError, UnableToSetCookieError = UnableToSetCookieError, UnexpectedAlertOpenError = UnexpectedAlertOpenError, UnknownCommandError = UnknownCommandError, UnknownMethodError = UnknownMethodError, UnsupportedOperationError = UnsupportedOperationError, WebDriverError = WebDriverError)
+  
     __obj.asInstanceOf[Anon_ElementNotSelectableError]
   }
 }

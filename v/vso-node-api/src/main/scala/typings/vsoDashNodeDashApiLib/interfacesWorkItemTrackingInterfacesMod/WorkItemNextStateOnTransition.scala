@@ -32,11 +32,8 @@ object WorkItemNextStateOnTransition {
     message: java.lang.String,
     stateOnTransition: java.lang.String
   ): WorkItemNextStateOnTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stateOnTransition")(stateOnTransition)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, id = id, message = message, stateOnTransition = stateOnTransition)
+  
     __obj.asInstanceOf[WorkItemNextStateOnTransition]
   }
 }

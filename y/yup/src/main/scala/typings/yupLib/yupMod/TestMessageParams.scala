@@ -15,11 +15,8 @@ trait TestMessageParams extends js.Object {
 object TestMessageParams {
   @scala.inline
   def apply(label: java.lang.String, originalValue: js.Any, path: java.lang.String, value: js.Any): TestMessageParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("originalValue")(originalValue)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(label = label, originalValue = originalValue, path = path, value = value)
+  
     __obj.asInstanceOf[TestMessageParams]
   }
 }

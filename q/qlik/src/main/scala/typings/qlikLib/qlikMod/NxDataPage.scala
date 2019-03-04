@@ -20,11 +20,8 @@ object NxDataPage {
     qMatrix: js.Array[NxCellRows],
     qTails: js.Array[NxGroupTail]
   ): NxDataPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qArea")(qArea)
-    __obj.updateDynamic("qIsReduced")(qIsReduced)
-    __obj.updateDynamic("qMatrix")(qMatrix)
-    __obj.updateDynamic("qTails")(qTails)
+    val __obj = js.Dynamic.literal(qArea = qArea, qIsReduced = qIsReduced, qMatrix = qMatrix, qTails = qTails)
+  
     __obj.asInstanceOf[NxDataPage]
   }
 }

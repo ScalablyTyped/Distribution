@@ -14,8 +14,8 @@ object VisualObjectInstanceContainer {
   def apply(
     displayName: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.DisplayNameGetter
   ): VisualObjectInstanceContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[VisualObjectInstanceContainer]
   }
 }

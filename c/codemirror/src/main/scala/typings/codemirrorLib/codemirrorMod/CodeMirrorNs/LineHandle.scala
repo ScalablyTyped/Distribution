@@ -12,8 +12,8 @@ trait LineHandle extends js.Object {
 object LineHandle {
   @scala.inline
   def apply(text: java.lang.String): LineHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+  
     __obj.asInstanceOf[LineHandle]
   }
 }

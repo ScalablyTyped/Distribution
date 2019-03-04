@@ -18,11 +18,8 @@ trait MergeViewDiffChunk extends js.Object {
 object MergeViewDiffChunk {
   @scala.inline
   def apply(editFrom: scala.Double, editTo: scala.Double, origFrom: scala.Double, origTo: scala.Double): MergeViewDiffChunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editFrom")(editFrom)
-    __obj.updateDynamic("editTo")(editTo)
-    __obj.updateDynamic("origFrom")(origFrom)
-    __obj.updateDynamic("origTo")(origTo)
+    val __obj = js.Dynamic.literal(editFrom = editFrom, editTo = editTo, origFrom = origFrom, origTo = origTo)
+  
     __obj.asInstanceOf[MergeViewDiffChunk]
   }
 }

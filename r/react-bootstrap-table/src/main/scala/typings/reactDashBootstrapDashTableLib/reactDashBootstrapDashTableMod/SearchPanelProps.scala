@@ -42,13 +42,8 @@ object SearchPanelProps {
     search: js.Function1[java.lang.String, scala.Unit],
     searchField: reactLib.reactMod.ReactNs.ReactElement[_]
   ): SearchPanelProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearBtn")(clearBtn)
-    __obj.updateDynamic("clearBtnClick")(clearBtnClick)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("searchField")(searchField)
+    val __obj = js.Dynamic.literal(clearBtn = clearBtn, clearBtnClick = clearBtnClick, defaultValue = defaultValue, placeholder = placeholder, search = search, searchField = searchField)
+  
     __obj.asInstanceOf[SearchPanelProps]
   }
 }

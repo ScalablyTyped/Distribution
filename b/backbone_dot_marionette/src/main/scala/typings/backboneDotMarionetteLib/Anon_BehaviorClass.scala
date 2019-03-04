@@ -22,8 +22,7 @@ object Anon_BehaviorClass {
     ],
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_BehaviorClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("behaviorClass")(behaviorClass)
+    val __obj = js.Dynamic.literal(behaviorClass = behaviorClass)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_BehaviorClass]
   }

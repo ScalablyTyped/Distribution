@@ -24,13 +24,8 @@ object contractOptions {
     gasPrice: java.lang.String,
     jsonInterface: js.Array[web3Lib.ethAbiMod.ABIDefinition]
   ): contractOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("gas")(gas)
-    __obj.updateDynamic("gasPrice")(gasPrice)
-    __obj.updateDynamic("jsonInterface")(jsonInterface)
+    val __obj = js.Dynamic.literal(address = address, data = data, from = from, gas = gas, gasPrice = gasPrice, jsonInterface = jsonInterface)
+  
     __obj.asInstanceOf[contractOptions]
   }
 }

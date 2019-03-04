@@ -14,8 +14,8 @@ object IInputStreamReference {
   def apply(
     openSequentialReadAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IInputStream]]
   ): IInputStreamReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openSequentialReadAsync")(openSequentialReadAsync)
+    val __obj = js.Dynamic.literal(openSequentialReadAsync = openSequentialReadAsync)
+  
     __obj.asInstanceOf[IInputStreamReference]
   }
 }

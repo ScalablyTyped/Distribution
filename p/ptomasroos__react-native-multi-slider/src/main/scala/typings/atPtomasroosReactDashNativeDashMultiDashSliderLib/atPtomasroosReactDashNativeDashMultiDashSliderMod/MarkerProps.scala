@@ -26,14 +26,8 @@ object MarkerProps {
     valuePrefix: java.lang.String,
     valueSuffix: java.lang.String
   ): MarkerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentValue")(currentValue)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("markerStyle")(markerStyle)
-    __obj.updateDynamic("pressed")(pressed)
-    __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle)
-    __obj.updateDynamic("valuePrefix")(valuePrefix)
-    __obj.updateDynamic("valueSuffix")(valueSuffix)
+    val __obj = js.Dynamic.literal(currentValue = currentValue, enabled = enabled, markerStyle = markerStyle, pressed = pressed, pressedMarkerStyle = pressedMarkerStyle, valuePrefix = valuePrefix, valueSuffix = valueSuffix)
+  
     __obj.asInstanceOf[MarkerProps]
   }
 }

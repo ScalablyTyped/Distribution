@@ -19,8 +19,8 @@ trait ASPxClientDashboardTitleToolbarUpdatedEventArgs extends ASPxClientEventArg
 object ASPxClientDashboardTitleToolbarUpdatedEventArgs {
   @scala.inline
   def apply(Options: js.Object): ASPxClientDashboardTitleToolbarUpdatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Options")(Options)
+    val __obj = js.Dynamic.literal(Options = Options)
+  
     __obj.asInstanceOf[ASPxClientDashboardTitleToolbarUpdatedEventArgs]
   }
 }

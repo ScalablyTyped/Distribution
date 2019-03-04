@@ -24,8 +24,7 @@ object PluginObj {
     post: js.ThisFunction1[/* this */ S, /* state */ js.Any, scala.Unit] = null,
     pre: js.ThisFunction1[/* this */ S, /* state */ js.Any, scala.Unit] = null
   ): PluginObj[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitor")(visitor)
+    val __obj = js.Dynamic.literal(visitor = visitor)
     if (inherits != null) __obj.updateDynamic("inherits")(inherits)
     if (manipulateOptions != null) __obj.updateDynamic("manipulateOptions")(manipulateOptions)
     if (name != null) __obj.updateDynamic("name")(name)

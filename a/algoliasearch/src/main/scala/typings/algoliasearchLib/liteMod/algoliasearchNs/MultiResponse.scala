@@ -12,8 +12,8 @@ trait MultiResponse[T] extends js.Object {
 object MultiResponse {
   @scala.inline
   def apply[T](results: js.Array[Response[T]]): MultiResponse[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(results = results)
+  
     __obj.asInstanceOf[MultiResponse[T]]
   }
 }

@@ -18,10 +18,8 @@ object Window {
     LinearGauge: canvasDashGaugesLib.CanvasGaugesNs.LinearGauge,
     RadialGauge: canvasDashGaugesLib.CanvasGaugesNs.RadialGauge
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BaseGauge")(BaseGauge)
-    __obj.updateDynamic("LinearGauge")(LinearGauge)
-    __obj.updateDynamic("RadialGauge")(RadialGauge)
+    val __obj = js.Dynamic.literal(BaseGauge = BaseGauge, LinearGauge = LinearGauge, RadialGauge = RadialGauge)
+  
     __obj.asInstanceOf[Window]
   }
 }

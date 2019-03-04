@@ -12,8 +12,8 @@ trait Anon_GetDisposable extends js.Object {
 object Anon_GetDisposable {
   @scala.inline
   def apply(getDisposable: js.Function0[rxDashCoreLib.RxNs.IDisposable]): Anon_GetDisposable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisposable")(getDisposable)
+    val __obj = js.Dynamic.literal(getDisposable = getDisposable)
+  
     __obj.asInstanceOf[Anon_GetDisposable]
   }
 }

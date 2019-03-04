@@ -12,8 +12,8 @@ trait Anon_EndpointString extends js.Object {
 object Anon_EndpointString {
   @scala.inline
   def apply(endpoint: java.lang.String): Anon_EndpointString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
+  
     __obj.asInstanceOf[Anon_EndpointString]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_EntriesAsArray extends js.Object {
 object Anon_EntriesAsArray {
   @scala.inline
   def apply(entriesAsArray: adoneLib.adoneLibNumbers.`true`): Anon_EntriesAsArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entriesAsArray")(entriesAsArray)
+    val __obj = js.Dynamic.literal(entriesAsArray = entriesAsArray)
+  
     __obj.asInstanceOf[Anon_EntriesAsArray]
   }
 }

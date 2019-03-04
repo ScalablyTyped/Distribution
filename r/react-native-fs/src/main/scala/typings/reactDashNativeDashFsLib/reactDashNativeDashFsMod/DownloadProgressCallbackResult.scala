@@ -17,10 +17,8 @@ trait DownloadProgressCallbackResult extends js.Object {
 object DownloadProgressCallbackResult {
   @scala.inline
   def apply(bytesWritten: scala.Double, contentLength: scala.Double, jobId: scala.Double): DownloadProgressCallbackResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesWritten")(bytesWritten)
-    __obj.updateDynamic("contentLength")(contentLength)
-    __obj.updateDynamic("jobId")(jobId)
+    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten, contentLength = contentLength, jobId = jobId)
+  
     __obj.asInstanceOf[DownloadProgressCallbackResult]
   }
 }

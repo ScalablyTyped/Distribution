@@ -13,8 +13,8 @@ trait DateTime
 object DateTime {
   @scala.inline
   def apply(date_time: java.lang.String): DateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date_time")(date_time)
+    val __obj = js.Dynamic.literal(date_time = date_time)
+  
     __obj.asInstanceOf[DateTime]
   }
 }

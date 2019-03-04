@@ -13,9 +13,8 @@ trait ICallControlStatics extends js.Object {
 object ICallControlStatics {
   @scala.inline
   def apply(fromId: js.Function1[java.lang.String, CallControl], getDefault: js.Function0[CallControl]): ICallControlStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromId")(fromId)
-    __obj.updateDynamic("getDefault")(getDefault)
+    val __obj = js.Dynamic.literal(fromId = fromId, getDefault = getDefault)
+  
     __obj.asInstanceOf[ICallControlStatics]
   }
 }

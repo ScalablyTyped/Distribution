@@ -26,10 +26,8 @@ trait MutableGamepadButton extends js.Object {
 object MutableGamepadButton {
   @scala.inline
   def apply(pressed: scala.Boolean, touched: scala.Boolean, value: scala.Double): MutableGamepadButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pressed")(pressed)
-    __obj.updateDynamic("touched")(touched)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(pressed = pressed, touched = touched, value = value)
+  
     __obj.asInstanceOf[MutableGamepadButton]
   }
 }

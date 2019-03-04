@@ -14,10 +14,8 @@ trait ParseStatusLineResult extends js.Object {
 object ParseStatusLineResult {
   @scala.inline
   def apply(protocol: java.lang.String, statusCode: java.lang.String, statusMessage: java.lang.String): ParseStatusLineResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(protocol = protocol, statusCode = statusCode, statusMessage = statusMessage)
+  
     __obj.asInstanceOf[ParseStatusLineResult]
   }
 }

@@ -17,8 +17,7 @@ trait AccountInfo extends js.Object {
 object AccountInfo {
   @scala.inline
   def apply(miniProgram: baiduDashAppLib.Anon_AppId, plugin: baiduDashAppLib.Anon_AppIdVersion = null): AccountInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("miniProgram")(miniProgram)
+    val __obj = js.Dynamic.literal(miniProgram = miniProgram)
     if (plugin != null) __obj.updateDynamic("plugin")(plugin)
     __obj.asInstanceOf[AccountInfo]
   }

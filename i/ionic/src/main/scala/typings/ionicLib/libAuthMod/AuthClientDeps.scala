@@ -12,8 +12,8 @@ trait AuthClientDeps extends js.Object {
 object AuthClientDeps {
   @scala.inline
   def apply(client: ionicLib.definitionsMod.IClient): AuthClientDeps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(client = client)
+  
     __obj.asInstanceOf[AuthClientDeps]
   }
 }

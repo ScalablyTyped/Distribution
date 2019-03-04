@@ -140,19 +140,8 @@ object InstanceGroupManagersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): InstanceGroupManagersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abandonInstances")(abandonInstances)
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deleteInstances")(deleteInstances)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listManagedInstances")(listManagedInstances)
-    __obj.updateDynamic("recreateInstances")(recreateInstances)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("setInstanceTemplate")(setInstanceTemplate)
-    __obj.updateDynamic("setTargetPools")(setTargetPools)
+    val __obj = js.Dynamic.literal(abandonInstances = abandonInstances, aggregatedList = aggregatedList, delete = delete, deleteInstances = deleteInstances, get = get, insert = insert, list = list, listManagedInstances = listManagedInstances, recreateInstances = recreateInstances, resize = resize, setInstanceTemplate = setInstanceTemplate, setTargetPools = setTargetPools)
+  
     __obj.asInstanceOf[InstanceGroupManagersResource]
   }
 }

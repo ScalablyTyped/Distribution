@@ -14,10 +14,8 @@ trait GenerateTypesOptions extends js.Object {
 object GenerateTypesOptions {
   @scala.inline
   def apply(file: java.lang.String, fileToGenerateTypesFor: java.lang.String, outputFileName: java.lang.String): GenerateTypesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("fileToGenerateTypesFor")(fileToGenerateTypesFor)
-    __obj.updateDynamic("outputFileName")(outputFileName)
+    val __obj = js.Dynamic.literal(file = file, fileToGenerateTypesFor = fileToGenerateTypesFor, outputFileName = outputFileName)
+  
     __obj.asInstanceOf[GenerateTypesOptions]
   }
 }

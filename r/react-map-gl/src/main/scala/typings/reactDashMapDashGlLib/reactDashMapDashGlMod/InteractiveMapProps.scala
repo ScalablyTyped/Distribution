@@ -118,9 +118,7 @@ object InteractiveMapProps {
     visibilityConstraints: reactDashMapDashGlLib.Anon_MaxPitch = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): InteractiveMapProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (className != null) __obj.updateDynamic("className")(className)
     if (clickRadius != null) __obj.updateDynamic("clickRadius")(clickRadius.asInstanceOf[js.Any])

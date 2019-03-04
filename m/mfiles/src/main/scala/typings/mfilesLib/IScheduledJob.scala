@@ -40,21 +40,8 @@ object IScheduledJob {
     Temporary: scala.Boolean,
     Triggers: IScheduledJobTriggers
   ): IScheduledJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupVaultJob")(BackupVaultJob)
-    __obj.updateDynamic("Enabled")(Enabled)
-    __obj.updateDynamic("ExportContentJob")(ExportContentJob)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("ImportContentJob")(ImportContentJob)
-    __obj.updateDynamic("JobName")(JobName)
-    __obj.updateDynamic("JobType")(JobType)
-    __obj.updateDynamic("OptimizeVaultJob")(OptimizeVaultJob)
-    __obj.updateDynamic("SetBackupVaultJob")(SetBackupVaultJob)
-    __obj.updateDynamic("SetExportContentJob")(SetExportContentJob)
-    __obj.updateDynamic("SetImportContentJob")(SetImportContentJob)
-    __obj.updateDynamic("SetOptimizeVaultJob")(SetOptimizeVaultJob)
-    __obj.updateDynamic("Temporary")(Temporary)
-    __obj.updateDynamic("Triggers")(Triggers)
+    val __obj = js.Dynamic.literal(BackupVaultJob = BackupVaultJob, Enabled = Enabled, ExportContentJob = ExportContentJob, ID = ID, ImportContentJob = ImportContentJob, JobName = JobName, JobType = JobType, OptimizeVaultJob = OptimizeVaultJob, SetBackupVaultJob = SetBackupVaultJob, SetExportContentJob = SetExportContentJob, SetImportContentJob = SetImportContentJob, SetOptimizeVaultJob = SetOptimizeVaultJob, Temporary = Temporary, Triggers = Triggers)
+  
     __obj.asInstanceOf[IScheduledJob]
   }
 }

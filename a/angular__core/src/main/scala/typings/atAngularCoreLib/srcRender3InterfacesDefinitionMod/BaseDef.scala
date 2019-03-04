@@ -44,10 +44,8 @@ object BaseDef {
   {[ P in keyof T ]: P}
     */ atAngularCoreLib.atAngularCoreLibStrings.BaseDef with js.Any
   ): BaseDef[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("declaredInputs")(declaredInputs)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("outputs")(outputs)
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs, inputs = inputs, outputs = outputs)
+  
     __obj.asInstanceOf[BaseDef[T]]
   }
 }

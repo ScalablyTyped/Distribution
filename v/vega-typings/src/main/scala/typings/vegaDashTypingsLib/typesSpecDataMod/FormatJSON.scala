@@ -20,7 +20,8 @@ object FormatJSON {
     parse: Parse = null,
     property: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): FormatJSON = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(copy)) __obj.updateDynamic("copy")(copy)
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

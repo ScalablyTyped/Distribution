@@ -25,10 +25,8 @@ object ControlEvent {
     aInformation: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     aURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
   ): ControlEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Event")(Event)
-    __obj.updateDynamic("aInformation")(aInformation)
-    __obj.updateDynamic("aURL")(aURL)
+    val __obj = js.Dynamic.literal(Event = Event, aInformation = aInformation, aURL = aURL)
+  
     __obj.asInstanceOf[ControlEvent]
   }
 }

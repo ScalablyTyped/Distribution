@@ -24,9 +24,8 @@ object ReplaceNextCommand {
     execute: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean],
     getState: js.Function0[SimpleCommandState]
   ): ReplaceNextCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[ReplaceNextCommand]
   }
 }

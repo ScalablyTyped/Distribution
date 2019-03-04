@@ -13,8 +13,7 @@ trait Anon_Max extends js.Object {
 object Anon_Max {
   @scala.inline
   def apply(min: scala.Double, max: scala.Int | scala.Double = null): Anon_Max = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(min = min)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Max]
   }

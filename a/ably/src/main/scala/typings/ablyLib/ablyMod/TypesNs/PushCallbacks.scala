@@ -12,8 +12,8 @@ trait PushCallbacks extends js.Object {
 object PushCallbacks {
   @scala.inline
   def apply(admin: PushAdminCallbacks): PushCallbacks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("admin")(admin)
+    val __obj = js.Dynamic.literal(admin = admin)
+  
     __obj.asInstanceOf[PushCallbacks]
   }
 }

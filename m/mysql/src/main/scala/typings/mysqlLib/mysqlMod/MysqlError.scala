@@ -56,10 +56,7 @@ object MysqlError {
     sqlStateMarker: java.lang.String = null,
     stack: java.lang.String = null
   ): MysqlError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("errno")(errno)
-    __obj.updateDynamic("fatal")(fatal)
+    val __obj = js.Dynamic.literal(code = code, errno = errno, fatal = fatal)
     if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])
     if (sql != null) __obj.updateDynamic("sql")(sql)
     if (sqlMessage != null) __obj.updateDynamic("sqlMessage")(sqlMessage)

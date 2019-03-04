@@ -12,8 +12,8 @@ trait WaitResult extends js.Object {
 object WaitResult {
   @scala.inline
   def apply(ready: scala.Double): WaitResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ready")(ready)
+    val __obj = js.Dynamic.literal(ready = ready)
+  
     __obj.asInstanceOf[WaitResult]
   }
 }

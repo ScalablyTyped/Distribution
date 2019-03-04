@@ -22,9 +22,7 @@ object AddToCartParameters {
     currency: java.lang.String = null,
     value: scala.Int | scala.Double = null
   ): AddToCartParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_ids")(content_ids)
-    __obj.updateDynamic("content_type")(content_type)
+    val __obj = js.Dynamic.literal(content_ids = content_ids, content_type = content_type)
     if (content_name != null) __obj.updateDynamic("content_name")(content_name)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

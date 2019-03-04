@@ -45,22 +45,8 @@ object XNumberFormatter2 {
     ],
     release: js.Function0[scala.Unit]
   ): XNumberFormatter2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NumberFormatsSupplier")(NumberFormatsSupplier)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("attachNumberFormatsSupplier")(attachNumberFormatsSupplier)
-    __obj.updateDynamic("convertNumberToPreviewString")(convertNumberToPreviewString)
-    __obj.updateDynamic("convertNumberToString")(convertNumberToString)
-    __obj.updateDynamic("convertStringToNumber")(convertStringToNumber)
-    __obj.updateDynamic("detectNumberFormat")(detectNumberFormat)
-    __obj.updateDynamic("formatString")(formatString)
-    __obj.updateDynamic("getInputString")(getInputString)
-    __obj.updateDynamic("getNumberFormatsSupplier")(getNumberFormatsSupplier)
-    __obj.updateDynamic("queryColorForNumber")(queryColorForNumber)
-    __obj.updateDynamic("queryColorForString")(queryColorForString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryPreviewColorForNumber")(queryPreviewColorForNumber)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(NumberFormatsSupplier = NumberFormatsSupplier, acquire = acquire, attachNumberFormatsSupplier = attachNumberFormatsSupplier, convertNumberToPreviewString = convertNumberToPreviewString, convertNumberToString = convertNumberToString, convertStringToNumber = convertStringToNumber, detectNumberFormat = detectNumberFormat, formatString = formatString, getInputString = getInputString, getNumberFormatsSupplier = getNumberFormatsSupplier, queryColorForNumber = queryColorForNumber, queryColorForString = queryColorForString, queryInterface = queryInterface, queryPreviewColorForNumber = queryPreviewColorForNumber, release = release)
+  
     __obj.asInstanceOf[XNumberFormatter2]
   }
 }

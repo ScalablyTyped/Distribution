@@ -13,8 +13,8 @@ trait IValidator extends js.Object {
 object IValidator {
   @scala.inline
   def apply(Validate: js.Function1[js.Any, ValidationResult]): IValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Validate")(Validate)
+    val __obj = js.Dynamic.literal(Validate = Validate)
+  
     __obj.asInstanceOf[IValidator]
   }
 }

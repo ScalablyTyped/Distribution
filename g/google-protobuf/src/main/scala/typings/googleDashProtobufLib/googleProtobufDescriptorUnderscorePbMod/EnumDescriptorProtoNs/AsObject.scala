@@ -22,9 +22,7 @@ object AsObject {
     ],
     name: java.lang.String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("valueList")(valueList)
+    val __obj = js.Dynamic.literal(options = options, valueList = valueList)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[AsObject]
   }

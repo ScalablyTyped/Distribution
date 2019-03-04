@@ -35,11 +35,8 @@ object XSortedDynamicResultSetFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSortedDynamicResultSetFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createSortedDynamicResultSet")(createSortedDynamicResultSet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createSortedDynamicResultSet = createSortedDynamicResultSet, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSortedDynamicResultSetFactory]
   }
 }

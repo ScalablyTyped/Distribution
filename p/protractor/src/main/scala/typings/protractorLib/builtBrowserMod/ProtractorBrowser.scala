@@ -89,7 +89,7 @@ class ProtractorBrowser protected ()
     * @type {Array<{name: string, script: function|string, args:
     * Array.<string>}>}
     */
-  var `mockModules_`: js.Array[protractorLib.Anon_Args] = js.native
+  var mockModules_ : js.Array[protractorLib.Anon_Args] = js.native
   /**
     * If true, Protractor will interpret any angular apps it comes across as
     * hybrid angular1/angular2 apps.
@@ -103,7 +103,7 @@ class ProtractorBrowser protected ()
     * @type {Object}
     */
   var params: js.Any = js.native
-  var `plugins_`: protractorLib.builtPluginsMod.Plugins = js.native
+  var plugins_ : protractorLib.builtPluginsMod.Plugins = js.native
   /**
     * Resolved when the browser is ready for use.  Resolves to the browser, so
     * you can do:
@@ -137,7 +137,7 @@ class ProtractorBrowser protected ()
     * error message if Protractor fails to synchronize with Angular in time.
     * @private {boolean}
     */
-  var `trackOutstandingTimeouts_`: scala.Boolean = js.native
+  var trackOutstandingTimeouts_ : scala.Boolean = js.native
   /**
     * Shorthand function for finding elements by css.
     *
@@ -157,7 +157,7 @@ class ProtractorBrowser protected ()
     *
     * @private
     */
-  /* private */ def `addBaseMockModules_`(): js.Any = js.native
+  /* private */ def addBaseMockModules_(): js.Any = js.native
   /**
     * Add a module to load before Angular whenever Protractor.get is called.
     * Modules will be registered after existing modules already on the page,
@@ -248,7 +248,7 @@ class ProtractorBrowser protected ()
     *    scripts return value.
     * @template T
     */
-  /* private */ def `executeAsyncScript_`(
+  /* private */ def executeAsyncScript_(
     script: js.Any,
     description: js.Any,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param scriptArgs because its type <none> is not an array type */ scriptArgs: js.Any

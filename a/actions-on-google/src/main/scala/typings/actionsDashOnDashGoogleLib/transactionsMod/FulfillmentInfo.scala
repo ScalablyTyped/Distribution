@@ -13,8 +13,8 @@ trait FulfillmentInfo extends js.Object {
 object FulfillmentInfo {
   @scala.inline
   def apply(deliveryTime: java.lang.String): FulfillmentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryTime")(deliveryTime)
+    val __obj = js.Dynamic.literal(deliveryTime = deliveryTime)
+  
     __obj.asInstanceOf[FulfillmentInfo]
   }
 }

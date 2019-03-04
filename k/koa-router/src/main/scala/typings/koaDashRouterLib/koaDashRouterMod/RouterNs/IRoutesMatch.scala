@@ -14,10 +14,8 @@ trait IRoutesMatch extends js.Object {
 object IRoutesMatch {
   @scala.inline
   def apply(path: js.Array[Layer], pathAndMethod: js.Array[Layer], route: scala.Boolean): IRoutesMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pathAndMethod")(pathAndMethod)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(path = path, pathAndMethod = pathAndMethod, route = route)
+  
     __obj.asInstanceOf[IRoutesMatch]
   }
 }

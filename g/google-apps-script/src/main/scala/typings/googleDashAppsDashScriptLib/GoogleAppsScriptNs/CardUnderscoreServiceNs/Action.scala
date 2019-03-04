@@ -20,11 +20,8 @@ object Action {
     setMethodName: js.Function1[java.lang.String, Action],
     setParameters: js.Function1[js.Object, Action]
   ): Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFunctionName")(setFunctionName)
-    __obj.updateDynamic("setLoadIndicator")(setLoadIndicator)
-    __obj.updateDynamic("setMethodName")(setMethodName)
-    __obj.updateDynamic("setParameters")(setParameters)
+    val __obj = js.Dynamic.literal(setFunctionName = setFunctionName, setLoadIndicator = setLoadIndicator, setMethodName = setMethodName, setParameters = setParameters)
+  
     __obj.asInstanceOf[Action]
   }
 }

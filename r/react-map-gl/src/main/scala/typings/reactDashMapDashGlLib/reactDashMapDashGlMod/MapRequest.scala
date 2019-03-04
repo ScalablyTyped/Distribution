@@ -18,8 +18,7 @@ object MapRequest {
     credentials: java.lang.String = null,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): MapRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[MapRequest]

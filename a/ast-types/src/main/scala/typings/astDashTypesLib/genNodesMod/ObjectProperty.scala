@@ -28,11 +28,8 @@ object ObjectProperty {
     value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind,
     accessibility: astDashTypesLib.genKindsMod.LiteralKind = null
   ): ObjectProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("shorthand")(shorthand)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], shorthand = shorthand, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     __obj.asInstanceOf[ObjectProperty]
   }

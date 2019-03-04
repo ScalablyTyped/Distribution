@@ -18,8 +18,8 @@ object Anon_Authenticate {
       js.Promise[atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced]
     ]
   ): Anon_Authenticate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticate")(authenticate)
+    val __obj = js.Dynamic.literal(authenticate = authenticate)
+  
     __obj.asInstanceOf[Anon_Authenticate]
   }
 }

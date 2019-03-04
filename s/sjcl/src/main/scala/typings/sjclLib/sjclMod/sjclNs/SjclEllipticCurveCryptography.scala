@@ -27,14 +27,8 @@ object SjclEllipticCurveCryptography {
     point: SjclEllipticalPointStatic,
     pointJac: SjclPointJacobianStatic
   ): SjclEllipticCurveCryptography = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basicKey")(basicKey)
-    __obj.updateDynamic("curve")(curve)
-    __obj.updateDynamic("curves")(curves)
-    __obj.updateDynamic("ecdsa")(ecdsa)
-    __obj.updateDynamic("elGamal")(elGamal)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("pointJac")(pointJac)
+    val __obj = js.Dynamic.literal(basicKey = basicKey, curve = curve, curves = curves, ecdsa = ecdsa, elGamal = elGamal, point = point, pointJac = pointJac)
+  
     __obj.asInstanceOf[SjclEllipticCurveCryptography]
   }
 }

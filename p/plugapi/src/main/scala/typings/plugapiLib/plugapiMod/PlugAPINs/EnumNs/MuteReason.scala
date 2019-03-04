@@ -22,12 +22,8 @@ object MuteReason {
     VERBAL_ABUSE: scala.Double,
     VIOLATING_COMMUNITY_RULES: scala.Double
   ): MuteReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NEGATIVE_ATTITUDE")(NEGATIVE_ATTITUDE)
-    __obj.updateDynamic("OFFENSIVE_LANGUAGE")(OFFENSIVE_LANGUAGE)
-    __obj.updateDynamic("SPAMMING_TROLLING")(SPAMMING_TROLLING)
-    __obj.updateDynamic("VERBAL_ABUSE")(VERBAL_ABUSE)
-    __obj.updateDynamic("VIOLATING_COMMUNITY_RULES")(VIOLATING_COMMUNITY_RULES)
+    val __obj = js.Dynamic.literal(NEGATIVE_ATTITUDE = NEGATIVE_ATTITUDE, OFFENSIVE_LANGUAGE = OFFENSIVE_LANGUAGE, SPAMMING_TROLLING = SPAMMING_TROLLING, VERBAL_ABUSE = VERBAL_ABUSE, VIOLATING_COMMUNITY_RULES = VIOLATING_COMMUNITY_RULES)
+  
     __obj.asInstanceOf[MuteReason]
   }
 }

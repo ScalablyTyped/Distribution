@@ -24,8 +24,7 @@ object Anon_Index {
     sort: js.Any = null,
     `type`: java.lang.String | js.Array[java.lang.String] = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
     if (remote != null) __obj.updateDynamic("remote")(remote)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

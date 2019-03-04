@@ -42,9 +42,7 @@ object TextFieldProps {
     `type`: gestaltLib.gestaltLibStrings.date | gestaltLib.gestaltLibStrings.email | gestaltLib.gestaltLibStrings.number | gestaltLib.gestaltLibStrings.password | gestaltLib.gestaltLibStrings.text | gestaltLib.gestaltLibStrings.url = null,
     value: java.lang.String = null
   ): TextFieldProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(id = id, onChange = onChange)
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)

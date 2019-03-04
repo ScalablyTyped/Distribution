@@ -199,37 +199,8 @@ object PersistentVolumeSpec {
     volumeMode: java.lang.String,
     vsphereVolume: VsphereVirtualDiskVolumeSource
   ): PersistentVolumeSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessModes")(accessModes)
-    __obj.updateDynamic("awsElasticBlockStore")(awsElasticBlockStore)
-    __obj.updateDynamic("azureDisk")(azureDisk)
-    __obj.updateDynamic("azureFile")(azureFile)
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("cephfs")(cephfs)
-    __obj.updateDynamic("cinder")(cinder)
-    __obj.updateDynamic("claimRef")(claimRef)
-    __obj.updateDynamic("csi")(csi)
-    __obj.updateDynamic("fc")(fc)
-    __obj.updateDynamic("flexVolume")(flexVolume)
-    __obj.updateDynamic("flocker")(flocker)
-    __obj.updateDynamic("gcePersistentDisk")(gcePersistentDisk)
-    __obj.updateDynamic("glusterfs")(glusterfs)
-    __obj.updateDynamic("hostPath")(hostPath)
-    __obj.updateDynamic("iscsi")(iscsi)
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("mountOptions")(mountOptions)
-    __obj.updateDynamic("nfs")(nfs)
-    __obj.updateDynamic("nodeAffinity")(nodeAffinity)
-    __obj.updateDynamic("persistentVolumeReclaimPolicy")(persistentVolumeReclaimPolicy)
-    __obj.updateDynamic("photonPersistentDisk")(photonPersistentDisk)
-    __obj.updateDynamic("portworxVolume")(portworxVolume)
-    __obj.updateDynamic("quobyte")(quobyte)
-    __obj.updateDynamic("rbd")(rbd)
-    __obj.updateDynamic("scaleIO")(scaleIO)
-    __obj.updateDynamic("storageClassName")(storageClassName)
-    __obj.updateDynamic("storageos")(storageos)
-    __obj.updateDynamic("volumeMode")(volumeMode)
-    __obj.updateDynamic("vsphereVolume")(vsphereVolume)
+    val __obj = js.Dynamic.literal(accessModes = accessModes, awsElasticBlockStore = awsElasticBlockStore, azureDisk = azureDisk, azureFile = azureFile, capacity = capacity, cephfs = cephfs, cinder = cinder, claimRef = claimRef, csi = csi, fc = fc, flexVolume = flexVolume, flocker = flocker, gcePersistentDisk = gcePersistentDisk, glusterfs = glusterfs, hostPath = hostPath, iscsi = iscsi, local = local, mountOptions = mountOptions, nfs = nfs, nodeAffinity = nodeAffinity, persistentVolumeReclaimPolicy = persistentVolumeReclaimPolicy, photonPersistentDisk = photonPersistentDisk, portworxVolume = portworxVolume, quobyte = quobyte, rbd = rbd, scaleIO = scaleIO, storageClassName = storageClassName, storageos = storageos, volumeMode = volumeMode, vsphereVolume = vsphereVolume)
+  
     __obj.asInstanceOf[PersistentVolumeSpec]
   }
 }

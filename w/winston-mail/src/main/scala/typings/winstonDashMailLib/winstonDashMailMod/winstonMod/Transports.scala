@@ -12,8 +12,8 @@ trait Transports extends js.Object {
 object Transports {
   @scala.inline
   def apply(Mail: winstonDashMailLib.winstonDashMailMod.Mail): Transports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Mail")(Mail)
+    val __obj = js.Dynamic.literal(Mail = Mail)
+  
     __obj.asInstanceOf[Transports]
   }
 }

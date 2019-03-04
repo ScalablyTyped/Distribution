@@ -25,8 +25,7 @@ object ProviderLike {
     useFactory: js.Function = null,
     useValue: js.Any = null
   ): ProviderLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provide")(provide)
+    val __obj = js.Dynamic.literal(provide = provide)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (useClass != null) __obj.updateDynamic("useClass")(useClass)
     if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)

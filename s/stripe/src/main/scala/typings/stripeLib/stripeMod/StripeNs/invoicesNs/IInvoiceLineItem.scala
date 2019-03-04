@@ -77,19 +77,9 @@ object IInvoiceLineItem {
     subscription: java.lang.String,
     `type`: stripeLib.stripeLibStrings.invoiceitem | stripeLib.stripeLibStrings.subscription
   ): IInvoiceLineItem = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("discountable")(discountable)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("period")(period)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("proration")(proration)
-    __obj.updateDynamic("quantity")(quantity)
-    __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInvoiceLineItem]
   }
 }

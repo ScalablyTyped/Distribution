@@ -16,9 +16,8 @@ object Anon_IndexNameParams {
     indexName: java.lang.String,
     params: algoliasearchLib.algoliasearchMod.algoliasearchNs.SearchForFacetValuesNs.Parameters
   ): Anon_IndexNameParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexName")(indexName)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(indexName = indexName, params = params)
+  
     __obj.asInstanceOf[Anon_IndexNameParams]
   }
 }

@@ -14,10 +14,8 @@ trait RegionsResource extends js.Object {
 object RegionsResource {
   @scala.inline
   def apply(clusters: ClustersResource, jobs: JobsResource, operations: OperationsResource): RegionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusters")(clusters)
-    __obj.updateDynamic("jobs")(jobs)
-    __obj.updateDynamic("operations")(operations)
+    val __obj = js.Dynamic.literal(clusters = clusters, jobs = jobs, operations = operations)
+  
     __obj.asInstanceOf[RegionsResource]
   }
 }

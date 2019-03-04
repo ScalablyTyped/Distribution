@@ -12,8 +12,8 @@ trait TextInputScrollEventData extends js.Object {
 object TextInputScrollEventData {
   @scala.inline
   def apply(contentOffset: reactDashNativeLib.Anon_X): TextInputScrollEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentOffset")(contentOffset)
+    val __obj = js.Dynamic.literal(contentOffset = contentOffset)
+  
     __obj.asInstanceOf[TextInputScrollEventData]
   }
 }

@@ -26,14 +26,8 @@ object Anon_HashKey {
     readCapacity: scala.Double,
     writeCapacity: scala.Double
   ): Anon_HashKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashKey")(hashKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes)
-    __obj.updateDynamic("projectionType")(projectionType)
-    __obj.updateDynamic("rangeKey")(rangeKey)
-    __obj.updateDynamic("readCapacity")(readCapacity)
-    __obj.updateDynamic("writeCapacity")(writeCapacity)
+    val __obj = js.Dynamic.literal(hashKey = hashKey, name = name, nonKeyAttributes = nonKeyAttributes, projectionType = projectionType, rangeKey = rangeKey, readCapacity = readCapacity, writeCapacity = writeCapacity)
+  
     __obj.asInstanceOf[Anon_HashKey]
   }
 }

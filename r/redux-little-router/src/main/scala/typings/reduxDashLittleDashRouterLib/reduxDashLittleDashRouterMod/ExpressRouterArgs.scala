@@ -13,9 +13,8 @@ trait ExpressRouterArgs extends js.Object {
 object ExpressRouterArgs {
   @scala.inline
   def apply(request: reduxDashLittleDashRouterLib.Anon_BaseUrl, routes: Routes): ExpressRouterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(request = request, routes = routes)
+  
     __obj.asInstanceOf[ExpressRouterArgs]
   }
 }

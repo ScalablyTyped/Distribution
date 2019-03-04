@@ -12,8 +12,8 @@ trait ForEach extends js.Object {
 object ForEach {
   @scala.inline
   def apply(forEach: js.Function1[ForEachCallback, qLib.qMod.QNs.Promise[scala.Unit]]): ForEach = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEach")(forEach)
+    val __obj = js.Dynamic.literal(forEach = forEach)
+  
     __obj.asInstanceOf[ForEach]
   }
 }

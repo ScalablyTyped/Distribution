@@ -26,13 +26,8 @@ object streamFailureArgs {
     timestamp: stdLib.Date,
     willReconnect: scala.Boolean
   ): streamFailureArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("willReconnect")(willReconnect)
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, meta = meta, timestamp = timestamp, willReconnect = willReconnect)
+  
     __obj.asInstanceOf[streamFailureArgs]
   }
 }

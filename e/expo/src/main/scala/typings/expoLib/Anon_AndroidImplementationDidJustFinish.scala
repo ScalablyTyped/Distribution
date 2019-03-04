@@ -46,20 +46,7 @@ object Anon_AndroidImplementationDidJustFinish {
     durationMillis: scala.Int | scala.Double = null,
     playableDurationMillis: scala.Int | scala.Double = null
   ): Anon_AndroidImplementationDidJustFinish = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("didJustFinish")(didJustFinish)
-    __obj.updateDynamic("isBuffering")(isBuffering)
-    __obj.updateDynamic("isLoaded")(isLoaded)
-    __obj.updateDynamic("isLooping")(isLooping)
-    __obj.updateDynamic("isMuted")(isMuted)
-    __obj.updateDynamic("isPlaying")(isPlaying)
-    __obj.updateDynamic("positionMillis")(positionMillis)
-    __obj.updateDynamic("progressUpdateIntervalMillis")(progressUpdateIntervalMillis)
-    __obj.updateDynamic("rate")(rate)
-    __obj.updateDynamic("shouldCorrectPitch")(shouldCorrectPitch)
-    __obj.updateDynamic("shouldPlay")(shouldPlay)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(didJustFinish = didJustFinish, isBuffering = isBuffering, isLoaded = isLoaded, isLooping = isLooping, isMuted = isMuted, isPlaying = isPlaying, positionMillis = positionMillis, progressUpdateIntervalMillis = progressUpdateIntervalMillis, rate = rate, shouldCorrectPitch = shouldCorrectPitch, shouldPlay = shouldPlay, uri = uri, volume = volume)
     if (androidImplementation != null) __obj.updateDynamic("androidImplementation")(androidImplementation)
     if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
     if (playableDurationMillis != null) __obj.updateDynamic("playableDurationMillis")(playableDurationMillis.asInstanceOf[js.Any])

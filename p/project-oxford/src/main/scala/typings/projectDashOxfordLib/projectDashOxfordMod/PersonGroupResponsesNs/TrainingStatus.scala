@@ -20,11 +20,8 @@ object TrainingStatus {
     startTime: java.lang.String,
     status: java.lang.String
   ): TrainingStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("personGroupId")(personGroupId)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(endTime = endTime, personGroupId = personGroupId, startTime = startTime, status = status)
+  
     __obj.asInstanceOf[TrainingStatus]
   }
 }

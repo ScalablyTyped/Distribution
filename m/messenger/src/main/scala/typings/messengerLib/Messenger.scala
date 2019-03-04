@@ -19,9 +19,8 @@ trait Messenger extends js.Object {
 object Messenger {
   @scala.inline
   def apply(hideAll: js.Function0[scala.Unit], post: js.Function1[MessageOptions, Message]): Messenger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hideAll")(hideAll)
-    __obj.updateDynamic("post")(post)
+    val __obj = js.Dynamic.literal(hideAll = hideAll, post = post)
+  
     __obj.asInstanceOf[Messenger]
   }
 }

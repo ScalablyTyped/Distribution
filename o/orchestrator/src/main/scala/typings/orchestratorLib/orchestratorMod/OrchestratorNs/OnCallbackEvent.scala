@@ -20,10 +20,7 @@ object OnCallbackEvent {
     task: java.lang.String,
     duration: scala.Int | scala.Double = null
   ): OnCallbackEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("task")(task)
+    val __obj = js.Dynamic.literal(err = err, message = message, task = task)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCallbackEvent]
   }

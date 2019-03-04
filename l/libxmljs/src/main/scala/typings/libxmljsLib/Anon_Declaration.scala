@@ -20,10 +20,8 @@ object Anon_Declaration {
     `type`: libxmljsLib.libxmljsLibStrings.xml | libxmljsLib.libxmljsLibStrings.html | libxmljsLib.libxmljsLibStrings.xhtml,
     whitespace: scala.Boolean
   ): Anon_Declaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("declaration")(declaration)
-    __obj.updateDynamic("selfCloseEmpty")(selfCloseEmpty)
-    __obj.updateDynamic("whitespace")(whitespace)
+    val __obj = js.Dynamic.literal(declaration = declaration, selfCloseEmpty = selfCloseEmpty, whitespace = whitespace)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Declaration]
   }
 }

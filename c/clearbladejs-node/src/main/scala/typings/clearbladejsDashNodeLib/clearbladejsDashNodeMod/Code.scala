@@ -26,14 +26,8 @@ object Code {
     systemSecret: java.lang.String,
     user: APIUser
   ): Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("URIPrefix")(URIPrefix)
-    __obj.updateDynamic("callTimeout")(callTimeout)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, URIPrefix = URIPrefix, callTimeout = callTimeout, execute = execute, systemKey = systemKey, systemSecret = systemSecret, user = user)
+  
     __obj.asInstanceOf[Code]
   }
 }

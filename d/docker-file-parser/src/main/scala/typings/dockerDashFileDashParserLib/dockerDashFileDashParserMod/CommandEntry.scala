@@ -22,11 +22,7 @@ object CommandEntry {
     raw: java.lang.String,
     error: java.lang.String = null
   ): CommandEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], lineno = lineno, name = name, raw = raw)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[CommandEntry]
   }

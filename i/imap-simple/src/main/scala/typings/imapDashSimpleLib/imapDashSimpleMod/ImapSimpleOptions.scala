@@ -27,8 +27,7 @@ object ImapSimpleOptions {
     onmail: js.Function1[/* numNewMail */ scala.Double, scala.Unit] = null,
     onupdate: js.Function2[/* seqno */ scala.Double, /* info */ js.Any, scala.Unit] = null
   ): ImapSimpleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imap")(imap)
+    val __obj = js.Dynamic.literal(imap = imap)
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
     if (onexpunge != null) __obj.updateDynamic("onexpunge")(onexpunge)
     if (onmail != null) __obj.updateDynamic("onmail")(onmail)

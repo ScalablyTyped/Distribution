@@ -54,28 +54,8 @@ object Operations {
     PNUnsubscribeOperation: java.lang.String,
     PNWhereNowOperation: java.lang.String
   ): Operations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PNAccessManagerAudit")(PNAccessManagerAudit)
-    __obj.updateDynamic("PNAccessManagerGrant")(PNAccessManagerGrant)
-    __obj.updateDynamic("PNAddChannelsToGroupOperation")(PNAddChannelsToGroupOperation)
-    __obj.updateDynamic("PNChannelGroupsOperation")(PNChannelGroupsOperation)
-    __obj.updateDynamic("PNChannelsForGroupOperation")(PNChannelsForGroupOperation)
-    __obj.updateDynamic("PNDeleteMessagesOperation")(PNDeleteMessagesOperation)
-    __obj.updateDynamic("PNFetchMessagesOperation")(PNFetchMessagesOperation)
-    __obj.updateDynamic("PNGetStateOperation")(PNGetStateOperation)
-    __obj.updateDynamic("PNHeartbeatOperation")(PNHeartbeatOperation)
-    __obj.updateDynamic("PNHereNowOperation")(PNHereNowOperation)
-    __obj.updateDynamic("PNHistoryOperation")(PNHistoryOperation)
-    __obj.updateDynamic("PNPublishOperation")(PNPublishOperation)
-    __obj.updateDynamic("PNPushNotificationEnabledChannelsOperation")(PNPushNotificationEnabledChannelsOperation)
-    __obj.updateDynamic("PNRemoveAllPushNotificationsOperation")(PNRemoveAllPushNotificationsOperation)
-    __obj.updateDynamic("PNRemoveChannelsFromGroupOperation")(PNRemoveChannelsFromGroupOperation)
-    __obj.updateDynamic("PNRemoveGroupOperation")(PNRemoveGroupOperation)
-    __obj.updateDynamic("PNSetStateOperation")(PNSetStateOperation)
-    __obj.updateDynamic("PNSubscribeOperation")(PNSubscribeOperation)
-    __obj.updateDynamic("PNTimeOperation")(PNTimeOperation)
-    __obj.updateDynamic("PNUnsubscribeOperation")(PNUnsubscribeOperation)
-    __obj.updateDynamic("PNWhereNowOperation")(PNWhereNowOperation)
+    val __obj = js.Dynamic.literal(PNAccessManagerAudit = PNAccessManagerAudit, PNAccessManagerGrant = PNAccessManagerGrant, PNAddChannelsToGroupOperation = PNAddChannelsToGroupOperation, PNChannelGroupsOperation = PNChannelGroupsOperation, PNChannelsForGroupOperation = PNChannelsForGroupOperation, PNDeleteMessagesOperation = PNDeleteMessagesOperation, PNFetchMessagesOperation = PNFetchMessagesOperation, PNGetStateOperation = PNGetStateOperation, PNHeartbeatOperation = PNHeartbeatOperation, PNHereNowOperation = PNHereNowOperation, PNHistoryOperation = PNHistoryOperation, PNPublishOperation = PNPublishOperation, PNPushNotificationEnabledChannelsOperation = PNPushNotificationEnabledChannelsOperation, PNRemoveAllPushNotificationsOperation = PNRemoveAllPushNotificationsOperation, PNRemoveChannelsFromGroupOperation = PNRemoveChannelsFromGroupOperation, PNRemoveGroupOperation = PNRemoveGroupOperation, PNSetStateOperation = PNSetStateOperation, PNSubscribeOperation = PNSubscribeOperation, PNTimeOperation = PNTimeOperation, PNUnsubscribeOperation = PNUnsubscribeOperation, PNWhereNowOperation = PNWhereNowOperation)
+  
     __obj.asInstanceOf[Operations]
   }
 }

@@ -116,9 +116,7 @@ object TableArgs {
     ttl: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabled] = null,
     writeCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): TableArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    __obj.updateDynamic("hashKey")(hashKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], hashKey = hashKey.asInstanceOf[js.Any])
     if (billingMode != null) __obj.updateDynamic("billingMode")(billingMode.asInstanceOf[js.Any])
     if (globalSecondaryIndexes != null) __obj.updateDynamic("globalSecondaryIndexes")(globalSecondaryIndexes.asInstanceOf[js.Any])
     if (localSecondaryIndexes != null) __obj.updateDynamic("localSecondaryIndexes")(localSecondaryIndexes.asInstanceOf[js.Any])

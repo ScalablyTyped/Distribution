@@ -54,10 +54,7 @@ object Anon_AccountIdAltEndDateTime {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltEndDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("endDateTime")(endDateTime)
-    __obj.updateDynamic("startDateTime")(startDateTime)
+    val __obj = js.Dynamic.literal(accountId = accountId, endDateTime = endDateTime, startDateTime = startDateTime)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

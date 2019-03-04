@@ -85,27 +85,8 @@ object XOpenCLSelection {
     selectOpenCLDevice: js.Function2[scala.Double, scala.Double, scala.Unit],
     setFormulaCellNumberLimit: js.Function1[scala.Double, scala.Unit]
   ): XOpenCLSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DeviceID")(DeviceID)
-    __obj.updateDynamic("FormulaCellNumberLimit")(FormulaCellNumberLimit)
-    __obj.updateDynamic("OpenCLPlatforms")(OpenCLPlatforms)
-    __obj.updateDynamic("PlatformID")(PlatformID)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disableAutomaticDeviceSelection")(disableAutomaticDeviceSelection)
-    __obj.updateDynamic("disableOpcodeSubsetTest")(disableOpcodeSubsetTest)
-    __obj.updateDynamic("enableAutomaticDeviceSelection")(enableAutomaticDeviceSelection)
-    __obj.updateDynamic("enableOpcodeSubsetTest")(enableOpcodeSubsetTest)
-    __obj.updateDynamic("enableOpenCL")(enableOpenCL)
-    __obj.updateDynamic("getDeviceID")(getDeviceID)
-    __obj.updateDynamic("getFormulaCellNumberLimit")(getFormulaCellNumberLimit)
-    __obj.updateDynamic("getOpenCLPlatforms")(getOpenCLPlatforms)
-    __obj.updateDynamic("getPlatformID")(getPlatformID)
-    __obj.updateDynamic("isOpcodeSubsetTested")(isOpcodeSubsetTested)
-    __obj.updateDynamic("isOpenCLEnabled")(isOpenCLEnabled)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("selectOpenCLDevice")(selectOpenCLDevice)
-    __obj.updateDynamic("setFormulaCellNumberLimit")(setFormulaCellNumberLimit)
+    val __obj = js.Dynamic.literal(DeviceID = DeviceID, FormulaCellNumberLimit = FormulaCellNumberLimit, OpenCLPlatforms = OpenCLPlatforms, PlatformID = PlatformID, acquire = acquire, disableAutomaticDeviceSelection = disableAutomaticDeviceSelection, disableOpcodeSubsetTest = disableOpcodeSubsetTest, enableAutomaticDeviceSelection = enableAutomaticDeviceSelection, enableOpcodeSubsetTest = enableOpcodeSubsetTest, enableOpenCL = enableOpenCL, getDeviceID = getDeviceID, getFormulaCellNumberLimit = getFormulaCellNumberLimit, getOpenCLPlatforms = getOpenCLPlatforms, getPlatformID = getPlatformID, isOpcodeSubsetTested = isOpcodeSubsetTested, isOpenCLEnabled = isOpenCLEnabled, queryInterface = queryInterface, release = release, selectOpenCLDevice = selectOpenCLDevice, setFormulaCellNumberLimit = setFormulaCellNumberLimit)
+  
     __obj.asInstanceOf[XOpenCLSelection]
   }
 }

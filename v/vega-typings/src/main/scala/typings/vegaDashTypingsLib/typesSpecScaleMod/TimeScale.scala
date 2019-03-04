@@ -34,8 +34,8 @@ object TimeScale {
     reverse: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     round: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): TimeScale = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])

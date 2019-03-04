@@ -34,11 +34,8 @@ object RaygunOfflineStorageProvider {
       scala.Unit
     ]
   ): RaygunOfflineStorageProvider[TTransportItem, TStorageItem] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("retrieve")(retrieve)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(init = init, retrieve = retrieve, save = save, send = send)
+  
     __obj.asInstanceOf[RaygunOfflineStorageProvider[TTransportItem, TStorageItem]]
   }
 }

@@ -14,10 +14,8 @@ trait MechanismInfo extends js.Object {
 object MechanismInfo {
   @scala.inline
   def apply(flags: scala.Double, maxKeySize: scala.Double, minKeySize: scala.Double): MechanismInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("maxKeySize")(maxKeySize)
-    __obj.updateDynamic("minKeySize")(minKeySize)
+    val __obj = js.Dynamic.literal(flags = flags, maxKeySize = maxKeySize, minKeySize = minKeySize)
+  
     __obj.asInstanceOf[MechanismInfo]
   }
 }

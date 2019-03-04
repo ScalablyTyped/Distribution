@@ -20,8 +20,8 @@ object Anon_Iops {
     iops: scala.Int | scala.Double = null,
     volumesPerInstance: scala.Int | scala.Double = null
   ): Anon_Iops = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(size = size)
+    __obj.updateDynamic("type")(`type`)
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (volumesPerInstance != null) __obj.updateDynamic("volumesPerInstance")(volumesPerInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Iops]

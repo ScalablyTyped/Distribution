@@ -12,8 +12,8 @@ trait Anon_CustomTaskPaneInst extends js.Object {
 object Anon_CustomTaskPaneInst {
   @scala.inline
   def apply(CustomTaskPaneInst: activexDashOfficeLib.OfficeNs.CustomTaskPane): Anon_CustomTaskPaneInst = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CustomTaskPaneInst")(CustomTaskPaneInst)
+    val __obj = js.Dynamic.literal(CustomTaskPaneInst = CustomTaskPaneInst)
+  
     __obj.asInstanceOf[Anon_CustomTaskPaneInst]
   }
 }

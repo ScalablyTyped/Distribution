@@ -18,10 +18,8 @@ object IdsResource {
     kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#generatedIds`,
     space: java.lang.String
   ): IdsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("space")(space)
+    val __obj = js.Dynamic.literal(ids = ids, kind = kind, space = space)
+  
     __obj.asInstanceOf[IdsResource]
   }
 }

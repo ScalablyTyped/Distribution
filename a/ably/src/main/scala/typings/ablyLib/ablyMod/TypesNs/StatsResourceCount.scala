@@ -22,12 +22,8 @@ object StatsResourceCount {
     peak: scala.Double,
     refused: scala.Double
   ): StatsResourceCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mean")(mean)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("opened")(opened)
-    __obj.updateDynamic("peak")(peak)
-    __obj.updateDynamic("refused")(refused)
+    val __obj = js.Dynamic.literal(mean = mean, min = min, opened = opened, peak = peak, refused = refused)
+  
     __obj.asInstanceOf[StatsResourceCount]
   }
 }

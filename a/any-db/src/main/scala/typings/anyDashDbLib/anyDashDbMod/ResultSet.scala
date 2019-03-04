@@ -48,10 +48,7 @@ object ResultSet {
     fieldCount: scala.Int | scala.Double = null,
     lastInsertId: js.Any = null
   ): ResultSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(fields = fields, rowCount = rowCount, rows = rows)
     if (affectedRows != null) __obj.updateDynamic("affectedRows")(affectedRows.asInstanceOf[js.Any])
     if (changedRows != null) __obj.updateDynamic("changedRows")(changedRows.asInstanceOf[js.Any])
     if (fieldCount != null) __obj.updateDynamic("fieldCount")(fieldCount.asInstanceOf[js.Any])

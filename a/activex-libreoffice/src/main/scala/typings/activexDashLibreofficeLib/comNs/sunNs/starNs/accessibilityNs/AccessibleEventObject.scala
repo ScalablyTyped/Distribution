@@ -42,11 +42,8 @@ object AccessibleEventObject {
     OldValue: js.Any,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): AccessibleEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EventId")(EventId)
-    __obj.updateDynamic("NewValue")(NewValue)
-    __obj.updateDynamic("OldValue")(OldValue)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(EventId = EventId, NewValue = NewValue, OldValue = OldValue, Source = Source)
+  
     __obj.asInstanceOf[AccessibleEventObject]
   }
 }

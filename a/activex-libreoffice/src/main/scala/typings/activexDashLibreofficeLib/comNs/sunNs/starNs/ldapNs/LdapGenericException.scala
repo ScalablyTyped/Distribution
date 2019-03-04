@@ -22,10 +22,8 @@ object LdapGenericException {
     ErrorCode: scala.Double,
     Message: java.lang.String
   ): LdapGenericException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrorCode")(ErrorCode)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, Message = Message)
+  
     __obj.asInstanceOf[LdapGenericException]
   }
 }

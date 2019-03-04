@@ -23,11 +23,8 @@ object SlideUpdateFromOptions {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     screenshot: SlideUpdateFromOptionsScreenshot
   ): SlideUpdateFromOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("screenshot")(screenshot)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, screenshot = screenshot)
+  
     __obj.asInstanceOf[SlideUpdateFromOptions]
   }
 }

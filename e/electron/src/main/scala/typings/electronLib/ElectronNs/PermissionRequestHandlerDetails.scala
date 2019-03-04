@@ -22,9 +22,8 @@ object PermissionRequestHandlerDetails {
     externalURL: java.lang.String,
     mediaTypes: js.Array[electronLib.electronLibStrings.video | electronLib.electronLibStrings.audio]
   ): PermissionRequestHandlerDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("externalURL")(externalURL)
-    __obj.updateDynamic("mediaTypes")(mediaTypes)
+    val __obj = js.Dynamic.literal(externalURL = externalURL, mediaTypes = mediaTypes)
+  
     __obj.asInstanceOf[PermissionRequestHandlerDetails]
   }
 }

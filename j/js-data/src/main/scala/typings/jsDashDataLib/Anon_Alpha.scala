@@ -24,13 +24,8 @@ object Anon_Alpha {
     minor: scala.Double,
     patch: scala.Double
   ): Anon_Alpha = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("patch")(patch)
+    val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], beta = beta.asInstanceOf[js.Any], full = full, major = major, minor = minor, patch = patch)
+  
     __obj.asInstanceOf[Anon_Alpha]
   }
 }

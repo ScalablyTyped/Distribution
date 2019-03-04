@@ -48,8 +48,7 @@ object EventsListParameters {
     timeZone: java.lang.String = null,
     updatedMin: datetime = null
   ): EventsListParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId)
     if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail)
     if (iCalUID != null) __obj.updateDynamic("iCalUID")(iCalUID)
     if (!js.isUndefined(maxAttendees)) __obj.updateDynamic("maxAttendees")(maxAttendees)

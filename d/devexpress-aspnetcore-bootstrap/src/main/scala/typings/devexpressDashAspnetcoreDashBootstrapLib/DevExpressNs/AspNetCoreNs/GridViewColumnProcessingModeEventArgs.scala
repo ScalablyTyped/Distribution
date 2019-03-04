@@ -12,10 +12,8 @@ trait GridViewColumnProcessingModeEventArgs extends ProcessingModeEventArgs {
 object GridViewColumnProcessingModeEventArgs {
   @scala.inline
   def apply(column: BootstrapGridViewColumn, processOnServer: scala.Boolean, sender: Control): GridViewColumnProcessingModeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(column = column, processOnServer = processOnServer, sender = sender)
+  
     __obj.asInstanceOf[GridViewColumnProcessingModeEventArgs]
   }
 }

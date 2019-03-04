@@ -58,8 +58,30 @@ object Anon_Bytescurrentlyinthecache {
     `tracked dirty bytes in the cache`: scala.Double,
     `unmodified pages evicted`: scala.Double
   ): Anon_Bytescurrentlyinthecache = {
-    val __obj = js.Dynamic.literal(`bytes currently in the cache` = `bytes currently in the cache`, `bytes read into cache` = `bytes read into cache`, `bytes written from cache` = `bytes written from cache`, `checkpoint blocked page eviction` = `checkpoint blocked page eviction`, `data source pages selected for eviction unable to be evicted` = `data source pages selected for eviction unable to be evicted`, `hazard pointer blocked page eviction` = `hazard pointer blocked page eviction`, `in-memory page passed criteria to be split` = `in-memory page passed criteria to be split`, `in-memory page splits` = `in-memory page splits`, `internal pages evicted` = `internal pages evicted`, `internal pages split during eviction` = `internal pages split during eviction`, `leaf pages split during eviction` = `leaf pages split during eviction`, `modified pages evicted` = `modified pages evicted`, `overflow pages read into cache` = `overflow pages read into cache`, `overflow values cached in memory` = `overflow values cached in memory`, `page split during eviction deepened the tree` = `page split during eviction deepened the tree`, `page written requiring lookaside records` = `page written requiring lookaside records`, `pages read into cache` = `pages read into cache`, `pages read into cache requiring lookaside entries` = `pages read into cache requiring lookaside entries`, `pages requested from the cache` = `pages requested from the cache`, `pages written from cache` = `pages written from cache`, `pages written requiring in-memory restoration` = `pages written requiring in-memory restoration`, `tracked dirty bytes in the cache` = `tracked dirty bytes in the cache`, `unmodified pages evicted` = `unmodified pages evicted`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytes currently in the cache")(`bytes currently in the cache`)
+    __obj.updateDynamic("bytes read into cache")(`bytes read into cache`)
+    __obj.updateDynamic("bytes written from cache")(`bytes written from cache`)
+    __obj.updateDynamic("checkpoint blocked page eviction")(`checkpoint blocked page eviction`)
+    __obj.updateDynamic("data source pages selected for eviction unable to be evicted")(`data source pages selected for eviction unable to be evicted`)
+    __obj.updateDynamic("hazard pointer blocked page eviction")(`hazard pointer blocked page eviction`)
+    __obj.updateDynamic("in-memory page passed criteria to be split")(`in-memory page passed criteria to be split`)
+    __obj.updateDynamic("in-memory page splits")(`in-memory page splits`)
+    __obj.updateDynamic("internal pages evicted")(`internal pages evicted`)
+    __obj.updateDynamic("internal pages split during eviction")(`internal pages split during eviction`)
+    __obj.updateDynamic("leaf pages split during eviction")(`leaf pages split during eviction`)
+    __obj.updateDynamic("modified pages evicted")(`modified pages evicted`)
+    __obj.updateDynamic("overflow pages read into cache")(`overflow pages read into cache`)
+    __obj.updateDynamic("overflow values cached in memory")(`overflow values cached in memory`)
+    __obj.updateDynamic("page split during eviction deepened the tree")(`page split during eviction deepened the tree`)
+    __obj.updateDynamic("page written requiring lookaside records")(`page written requiring lookaside records`)
+    __obj.updateDynamic("pages read into cache")(`pages read into cache`)
+    __obj.updateDynamic("pages read into cache requiring lookaside entries")(`pages read into cache requiring lookaside entries`)
+    __obj.updateDynamic("pages requested from the cache")(`pages requested from the cache`)
+    __obj.updateDynamic("pages written from cache")(`pages written from cache`)
+    __obj.updateDynamic("pages written requiring in-memory restoration")(`pages written requiring in-memory restoration`)
+    __obj.updateDynamic("tracked dirty bytes in the cache")(`tracked dirty bytes in the cache`)
+    __obj.updateDynamic("unmodified pages evicted")(`unmodified pages evicted`)
     __obj.asInstanceOf[Anon_Bytescurrentlyinthecache]
   }
 }

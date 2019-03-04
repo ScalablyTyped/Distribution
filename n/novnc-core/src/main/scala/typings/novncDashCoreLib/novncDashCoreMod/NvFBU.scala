@@ -24,13 +24,8 @@ object NvFBU {
     x: scala.Double,
     y: scala.Double
   ): NvFBU = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("encodingName")(encodingName)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(encoding = encoding, encodingName = encodingName, height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[NvFBU]
   }
 }

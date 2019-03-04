@@ -13,9 +13,8 @@ trait CapacityPatch extends js.Object {
 object CapacityPatch {
   @scala.inline
   def apply(activities: js.Array[Activity], daysOff: js.Array[DateRange]): CapacityPatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activities")(activities)
-    __obj.updateDynamic("daysOff")(daysOff)
+    val __obj = js.Dynamic.literal(activities = activities, daysOff = daysOff)
+  
     __obj.asInstanceOf[CapacityPatch]
   }
 }

@@ -14,9 +14,8 @@ trait ConnectState extends js.Object {
 object ConnectState {
   @scala.inline
   def apply(failedConnects: scala.Double, serverProperties: Server): ConnectState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failedConnects")(failedConnects)
-    __obj.updateDynamic("serverProperties")(serverProperties)
+    val __obj = js.Dynamic.literal(failedConnects = failedConnects, serverProperties = serverProperties)
+  
     __obj.asInstanceOf[ConnectState]
   }
 }

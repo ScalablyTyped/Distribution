@@ -18,10 +18,8 @@ object TextStyle {
     getFontName: js.Function0[java.lang.String],
     getFontSize: js.Function0[stdLib.Number]
   ): TextStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColor")(getColor)
-    __obj.updateDynamic("getFontName")(getFontName)
-    __obj.updateDynamic("getFontSize")(getFontSize)
+    val __obj = js.Dynamic.literal(getColor = getColor, getFontName = getFontName, getFontSize = getFontSize)
+  
     __obj.asInstanceOf[TextStyle]
   }
 }

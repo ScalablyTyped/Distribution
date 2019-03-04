@@ -33,11 +33,8 @@ object Acceptance {
     status: stripejsLib.stripejsLibStrings.accepted | stripejsLib.stripejsLibStrings.refused,
     user_agent: java.lang.String
   ): Acceptance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    __obj.updateDynamic("user_agent")(user_agent)
+    val __obj = js.Dynamic.literal(date = date, ip = ip, status = status.asInstanceOf[js.Any], user_agent = user_agent)
+  
     __obj.asInstanceOf[Acceptance]
   }
 }

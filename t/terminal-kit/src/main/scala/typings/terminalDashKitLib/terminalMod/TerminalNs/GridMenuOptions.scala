@@ -36,8 +36,7 @@ object GridMenuOptions {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): GridMenuOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(width = width)
     if (!js.isUndefined(exitOnUnexpectedKey)) __obj.updateDynamic("exitOnUnexpectedKey")(exitOnUnexpectedKey)
     if (itemMaxWidth != null) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.asInstanceOf[js.Any])
     if (keyBindings != null) __obj.updateDynamic("keyBindings")(keyBindings)

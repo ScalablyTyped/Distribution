@@ -29,9 +29,8 @@ object LabelSelector {
     matchExpressions: js.Array[LabelSelectorRequirement],
     matchLabels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): LabelSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchExpressions")(matchExpressions)
-    __obj.updateDynamic("matchLabels")(matchLabels)
+    val __obj = js.Dynamic.literal(matchExpressions = matchExpressions, matchLabels = matchLabels)
+  
     __obj.asInstanceOf[LabelSelector]
   }
 }

@@ -24,11 +24,8 @@ object ASPxClientFileManagerItemMovedEventArgs {
     name: java.lang.String,
     oldFolderFullName: java.lang.String
   ): ASPxClientFileManagerItemMovedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("oldFolderFullName")(oldFolderFullName)
+    val __obj = js.Dynamic.literal(fullName = fullName, isFolder = isFolder, name = name, oldFolderFullName = oldFolderFullName)
+  
     __obj.asInstanceOf[ASPxClientFileManagerItemMovedEventArgs]
   }
 }

@@ -36,10 +36,8 @@ object Aggregators {
     ],
     sum: js.Any
   ): Aggregators = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avg")(avg)
-    __obj.updateDynamic("printer")(printer)
-    __obj.updateDynamic("sum")(sum)
+    val __obj = js.Dynamic.literal(avg = avg, printer = printer, sum = sum)
+  
     __obj.asInstanceOf[Aggregators]
   }
 }

@@ -22,8 +22,8 @@ object GeoJSONTransform {
     fields: (vegaDashTypingsLib.typesSpecUtilMod.Vector2[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     geojson: TransformField = null
   ): GeoJSONTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(signal = signal)
+    __obj.updateDynamic("type")(`type`)
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (geojson != null) __obj.updateDynamic("geojson")(geojson)
     __obj.asInstanceOf[GeoJSONTransform]

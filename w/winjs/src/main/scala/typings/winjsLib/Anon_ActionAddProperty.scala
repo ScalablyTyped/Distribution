@@ -76,15 +76,8 @@ object Anon_ActionAddProperty {
     unbind: js.Function2[java.lang.String, js.Function, js.Any],
     updateProperty: js.Function2[java.lang.String, js.Any, winjsLib.WinJSNs.Promise[_]]
   ): Anon_ActionAddProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("getProperty")(getProperty)
-    __obj.updateDynamic("notify")(notify)
-    __obj.updateDynamic("removeProperty")(removeProperty)
-    __obj.updateDynamic("setProperty")(setProperty)
-    __obj.updateDynamic("unbind")(unbind)
-    __obj.updateDynamic("updateProperty")(updateProperty)
+    val __obj = js.Dynamic.literal(addProperty = addProperty, bind = bind, getProperty = getProperty, notify = notify, removeProperty = removeProperty, setProperty = setProperty, unbind = unbind, updateProperty = updateProperty)
+  
     __obj.asInstanceOf[Anon_ActionAddProperty]
   }
 }

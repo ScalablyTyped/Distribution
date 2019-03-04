@@ -18,8 +18,8 @@ object Anon_Transform {
       org.scalablytyped.runtime.StringDictionary[reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedInterpolation]
     ]
   ): Anon_Transform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(transform = transform)
+  
     __obj.asInstanceOf[Anon_Transform]
   }
 }

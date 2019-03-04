@@ -36,8 +36,8 @@ object PatientLink {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): PatientLink = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("other")(other)
+    val __obj = js.Dynamic.literal(other = other)
+    __obj.updateDynamic("type")(`type`)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_type != null) __obj.updateDynamic("_type")(_type)

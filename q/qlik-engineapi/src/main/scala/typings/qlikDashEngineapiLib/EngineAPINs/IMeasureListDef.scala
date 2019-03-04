@@ -15,8 +15,8 @@ trait IMeasureListDef extends js.Object {
 object IMeasureListDef {
   @scala.inline
   def apply(qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.measure): IMeasureListDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qType")(qType)
+    val __obj = js.Dynamic.literal(qType = qType)
+  
     __obj.asInstanceOf[IMeasureListDef]
   }
 }

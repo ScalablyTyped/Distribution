@@ -32,8 +32,7 @@ object ResponsiveContainerProps {
     minWidth: java.lang.String | scala.Double = null,
     width: java.lang.String | scala.Double = null
   ): ResponsiveContainerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])

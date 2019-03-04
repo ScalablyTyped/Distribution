@@ -27,13 +27,8 @@ object TfvcLabelRequestData {
     name: java.lang.String,
     owner: java.lang.String
   ): TfvcLabelRequestData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeLinks")(includeLinks)
-    __obj.updateDynamic("itemLabelFilter")(itemLabelFilter)
-    __obj.updateDynamic("labelScope")(labelScope)
-    __obj.updateDynamic("maxItemCount")(maxItemCount)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
+    val __obj = js.Dynamic.literal(includeLinks = includeLinks, itemLabelFilter = itemLabelFilter, labelScope = labelScope, maxItemCount = maxItemCount, name = name, owner = owner)
+  
     __obj.asInstanceOf[TfvcLabelRequestData]
   }
 }

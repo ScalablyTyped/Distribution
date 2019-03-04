@@ -41,12 +41,8 @@ object XUIConfiguration {
     release: js.Function0[scala.Unit],
     removeConfigurationListener: js.Function1[XUIConfigurationListener, scala.Unit]
   ): XUIConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addConfigurationListener")(addConfigurationListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeConfigurationListener")(removeConfigurationListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addConfigurationListener = addConfigurationListener, queryInterface = queryInterface, release = release, removeConfigurationListener = removeConfigurationListener)
+  
     __obj.asInstanceOf[XUIConfiguration]
   }
 }

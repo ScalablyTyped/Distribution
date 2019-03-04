@@ -31,9 +31,8 @@ object ParserBlock {
     ],
     tokenize: js.Function3[remarkableLib.libMod.RemarkableNs.StateBlock, scala.Double, scala.Double, scala.Unit]
   ): ParserBlock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("tokenize")(tokenize)
+    val __obj = js.Dynamic.literal(parse = parse, tokenize = tokenize)
+  
     __obj.asInstanceOf[ParserBlock]
   }
 }

@@ -26,14 +26,8 @@ object IAccessControlEntryData {
     ReadPermission: mfilesLib.MFilesNs.MFPermission,
     SetAllPermissions: js.Function1[mfilesLib.MFilesNs.MFPermission, scala.Unit]
   ): IAccessControlEntryData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttachObjectsPermission")(AttachObjectsPermission)
-    __obj.updateDynamic("ChangePermissionsPermission")(ChangePermissionsPermission)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DeletePermission")(DeletePermission)
-    __obj.updateDynamic("EditPermission")(EditPermission)
-    __obj.updateDynamic("ReadPermission")(ReadPermission)
-    __obj.updateDynamic("SetAllPermissions")(SetAllPermissions)
+    val __obj = js.Dynamic.literal(AttachObjectsPermission = AttachObjectsPermission, ChangePermissionsPermission = ChangePermissionsPermission, Clone = Clone, DeletePermission = DeletePermission, EditPermission = EditPermission, ReadPermission = ReadPermission, SetAllPermissions = SetAllPermissions)
+  
     __obj.asInstanceOf[IAccessControlEntryData]
   }
 }

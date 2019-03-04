@@ -26,14 +26,8 @@ object Event {
     name: java.lang.String,
     sync: scala.Boolean
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("emitter")(emitter)
-    __obj.updateDynamic("interrupt")(interrupt)
-    __obj.updateDynamic("mice")(mice)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sync")(sync)
+    val __obj = js.Dynamic.literal(args = args, callback = callback, emitter = emitter, interrupt = interrupt, mice = mice, name = name, sync = sync)
+  
     __obj.asInstanceOf[Event]
   }
 }

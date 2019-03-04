@@ -77,25 +77,8 @@ object XPrinterPropertySet {
     setHorizontal: js.Function1[scala.Boolean, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XPrinterPropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BinarySetup")(BinarySetup)
-    __obj.updateDynamic("FormDescriptions")(FormDescriptions)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getBinarySetup")(getBinarySetup)
-    __obj.updateDynamic("getFormDescriptions")(getFormDescriptions)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("selectForm")(selectForm)
-    __obj.updateDynamic("setBinarySetup")(setBinarySetup)
-    __obj.updateDynamic("setHorizontal")(setHorizontal)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(BinarySetup = BinarySetup, FormDescriptions = FormDescriptions, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getBinarySetup = getBinarySetup, getFormDescriptions = getFormDescriptions, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, selectForm = selectForm, setBinarySetup = setBinarySetup, setHorizontal = setHorizontal, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XPrinterPropertySet]
   }
 }

@@ -34,18 +34,8 @@ object IFontWeightsStatics {
     semiLight: FontWeight,
     thin: FontWeight
   ): IFontWeightsStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("black")(black)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("extraBlack")(extraBlack)
-    __obj.updateDynamic("extraBold")(extraBold)
-    __obj.updateDynamic("extraLight")(extraLight)
-    __obj.updateDynamic("light")(light)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("normal")(normal)
-    __obj.updateDynamic("semiBold")(semiBold)
-    __obj.updateDynamic("semiLight")(semiLight)
-    __obj.updateDynamic("thin")(thin)
+    val __obj = js.Dynamic.literal(black = black, bold = bold, extraBlack = extraBlack, extraBold = extraBold, extraLight = extraLight, light = light, medium = medium, normal = normal, semiBold = semiBold, semiLight = semiLight, thin = thin)
+  
     __obj.asInstanceOf[IFontWeightsStatics]
   }
 }

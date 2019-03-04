@@ -18,10 +18,8 @@ object Anon_Expected {
     toReturnState: js.Function1[js.Any, scala.Unit],
     toStayTheSame: js.Function0[scala.Unit]
   ): Anon_Expected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toChangeInState")(toChangeInState)
-    __obj.updateDynamic("toReturnState")(toReturnState)
-    __obj.updateDynamic("toStayTheSame")(toStayTheSame)
+    val __obj = js.Dynamic.literal(toChangeInState = toChangeInState, toReturnState = toReturnState, toStayTheSame = toStayTheSame)
+  
     __obj.asInstanceOf[Anon_Expected]
   }
 }

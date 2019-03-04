@@ -20,11 +20,8 @@ object StreamlinedApplicant {
     receiveResponse: js.Function1[sipDotJsLib.typesSipDashMessageMod.IncomingResponse, scala.Unit],
     request: sipDotJsLib.typesSipDashMessageMod.OutgoingRequest
   ): StreamlinedApplicant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onRequestTimeout")(onRequestTimeout)
-    __obj.updateDynamic("onTransportError")(onTransportError)
-    __obj.updateDynamic("receiveResponse")(receiveResponse)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(onRequestTimeout = onRequestTimeout, onTransportError = onTransportError, receiveResponse = receiveResponse, request = request)
+  
     __obj.asInstanceOf[StreamlinedApplicant]
   }
 }

@@ -17,8 +17,7 @@ object IndexLike {
     id: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IndexLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IndexLike]
   }

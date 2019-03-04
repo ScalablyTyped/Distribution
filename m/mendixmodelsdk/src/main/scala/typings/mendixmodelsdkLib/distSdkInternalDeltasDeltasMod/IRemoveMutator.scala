@@ -13,9 +13,8 @@ trait IRemoveMutator extends Mutator {
 object IRemoveMutator {
   @scala.inline
   def apply(mutatorType: mendixmodelsdkLib.mendixmodelsdkLibStrings.REMOVE, removalIndex: scala.Double): IRemoveMutator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mutatorType")(mutatorType)
-    __obj.updateDynamic("removalIndex")(removalIndex)
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType, removalIndex = removalIndex)
+  
     __obj.asInstanceOf[IRemoveMutator]
   }
 }

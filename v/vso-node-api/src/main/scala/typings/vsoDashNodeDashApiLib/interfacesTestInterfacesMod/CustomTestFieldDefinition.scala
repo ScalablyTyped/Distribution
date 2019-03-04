@@ -20,11 +20,8 @@ object CustomTestFieldDefinition {
     fieldType: CustomTestFieldType,
     scope: CustomTestFieldScope
   ): CustomTestFieldDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldId")(fieldId)
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("fieldType")(fieldType)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(fieldId = fieldId, fieldName = fieldName, fieldType = fieldType, scope = scope)
+  
     __obj.asInstanceOf[CustomTestFieldDefinition]
   }
 }

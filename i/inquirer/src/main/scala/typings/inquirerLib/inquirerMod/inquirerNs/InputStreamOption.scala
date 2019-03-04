@@ -12,8 +12,8 @@ trait InputStreamOption extends _StreamOptions {
 object InputStreamOption {
   @scala.inline
   def apply(input: nodeLib.NodeJSNs.ReadStream): InputStreamOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
+  
     __obj.asInstanceOf[InputStreamOption]
   }
 }

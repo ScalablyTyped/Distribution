@@ -20,8 +20,8 @@ object Anon_IopsSize {
     iops: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     volumesPerInstance: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_IopsSize = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (volumesPerInstance != null) __obj.updateDynamic("volumesPerInstance")(volumesPerInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IopsSize]

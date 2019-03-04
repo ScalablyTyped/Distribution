@@ -245,14 +245,7 @@ object TView {
     viewHooks: HookData = null,
     viewQuery: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentQuery[js.Object] = null
   ): TView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingStartIndex")(bindingStartIndex)
-    __obj.updateDynamic("blueprint")(blueprint)
-    __obj.updateDynamic("childIndex")(childIndex)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("expandoStartIndex")(expandoStartIndex)
-    __obj.updateDynamic("firstTemplatePass")(firstTemplatePass)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex, blueprint = blueprint, childIndex = childIndex, data = data, expandoStartIndex = expandoStartIndex, firstTemplatePass = firstTemplatePass, id = id)
     if (checkHooks != null) __obj.updateDynamic("checkHooks")(checkHooks)
     if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup)
     if (components != null) __obj.updateDynamic("components")(components)

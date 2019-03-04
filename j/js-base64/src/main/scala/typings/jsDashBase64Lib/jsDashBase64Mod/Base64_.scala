@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait `Base64_` extends js.Object {
+trait Base64_ extends js.Object {
   val VERSION: java.lang.String = js.native
   def atob(base64: java.lang.String): java.lang.String = js.native
   def btoa(s: java.lang.String): java.lang.String = js.native

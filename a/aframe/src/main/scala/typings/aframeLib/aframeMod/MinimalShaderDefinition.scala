@@ -18,8 +18,8 @@ object MinimalShaderDefinition {
       /* import warning: ImportType.apply Failed type conversion: this['data'] */ js.Any
     ]
   ): MinimalShaderDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MinimalShaderDefinition]
   }
 }

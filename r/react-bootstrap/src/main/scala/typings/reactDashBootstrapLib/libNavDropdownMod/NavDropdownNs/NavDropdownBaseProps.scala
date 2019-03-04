@@ -32,9 +32,7 @@ object NavDropdownBaseProps {
     pullRight: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null
   ): NavDropdownBaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])

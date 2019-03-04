@@ -12,8 +12,8 @@ trait TagState extends js.Object {
 object TagState {
   @scala.inline
   def apply(visible: scala.Boolean): TagState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(visible = visible)
+  
     __obj.asInstanceOf[TagState]
   }
 }

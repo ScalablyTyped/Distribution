@@ -172,32 +172,8 @@ object _Impl {
     value: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibNumbers.`false` | scala.Double,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoSuccess")(autoSuccess)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    __obj.updateDynamic("limitValues")(limitValues)
-    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onActive")(onActive)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onSuccess")(onSuccess)
-    __obj.updateDynamic("onWarning")(onWarning)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("precision")(precision)
-    __obj.updateDynamic("random")(random.asInstanceOf[js.Any])
-    __obj.updateDynamic("regExp")(regExp)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("showActivity")(showActivity)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(autoSuccess = autoSuccess, className = className.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], limitValues = limitValues, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onActive = onActive, onChange = onChange, onError = onError, onSuccess = onSuccess, onWarning = onWarning, performance = performance, precision = precision, random = random.asInstanceOf[js.Any], regExp = regExp, selector = selector.asInstanceOf[js.Any], showActivity = showActivity, silent = silent, text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

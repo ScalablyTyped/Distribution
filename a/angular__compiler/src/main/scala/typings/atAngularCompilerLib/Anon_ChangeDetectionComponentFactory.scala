@@ -58,20 +58,8 @@ object Anon_ChangeDetectionComponentFactory {
     selector: java.lang.String = null,
     template: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTemplateMetadata = null
   ): Anon_ChangeDetectionComponentFactory = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("entryComponents")(entryComponents)
-    __obj.updateDynamic("guards")(guards)
-    __obj.updateDynamic("hostAttributes")(hostAttributes)
-    __obj.updateDynamic("hostListeners")(hostListeners)
-    __obj.updateDynamic("hostProperties")(hostProperties)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("isComponent")(isComponent)
-    __obj.updateDynamic("isHost")(isHost)
-    __obj.updateDynamic("outputs")(outputs)
-    __obj.updateDynamic("providers")(providers)
-    __obj.updateDynamic("queries")(queries)
-    __obj.updateDynamic("viewProviders")(viewProviders)
-    __obj.updateDynamic("viewQueries")(viewQueries)
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents, guards = guards, hostAttributes = hostAttributes, hostListeners = hostListeners, hostProperties = hostProperties, inputs = inputs, isComponent = isComponent, isHost = isHost, outputs = outputs, providers = providers, queries = queries, viewProviders = viewProviders, viewQueries = viewQueries)
+    __obj.updateDynamic("type")(`type`)
     if (changeDetection != null) __obj.updateDynamic("changeDetection")(changeDetection)
     if (componentFactory != null) __obj.updateDynamic("componentFactory")(componentFactory.asInstanceOf[js.Any])
     if (componentViewType != null) __obj.updateDynamic("componentViewType")(componentViewType.asInstanceOf[js.Any])

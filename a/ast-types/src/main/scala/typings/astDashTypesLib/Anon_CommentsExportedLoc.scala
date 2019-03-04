@@ -18,8 +18,7 @@ object Anon_CommentsExportedLoc {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsExportedLoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exported")(exported)
+    val __obj = js.Dynamic.literal(exported = exported)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CommentsExportedLoc]

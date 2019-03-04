@@ -44,22 +44,8 @@ object SpellChecker {
       XSpellAlternatives
     ]
   ): SpellChecker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addLinguServiceEventListener")(addLinguServiceEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("getServiceDisplayName")(getServiceDisplayName)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeLinguServiceEventListener")(removeLinguServiceEventListener)
-    __obj.updateDynamic("spell")(spell)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, addEventListener = addEventListener, addLinguServiceEventListener = addLinguServiceEventListener, dispose = dispose, getLocales = getLocales, getServiceDisplayName = getServiceDisplayName, hasLocale = hasLocale, initialize = initialize, isValid = isValid, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeLinguServiceEventListener = removeLinguServiceEventListener, spell = spell)
+  
     __obj.asInstanceOf[SpellChecker]
   }
 }

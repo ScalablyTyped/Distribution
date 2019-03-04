@@ -14,8 +14,8 @@ trait ResolvePlugin
 object ResolvePlugin {
   @scala.inline
   def apply(apply: js.Function1[js.Any, scala.Unit]): ResolvePlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
+    val __obj = js.Dynamic.literal(apply = apply)
+  
     __obj.asInstanceOf[ResolvePlugin]
   }
 }

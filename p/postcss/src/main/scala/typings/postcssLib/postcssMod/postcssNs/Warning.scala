@@ -42,13 +42,8 @@ object Warning {
     text: java.lang.String,
     toString: js.Function0[java.lang.String]
   ): Warning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("plugin")(plugin)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(column = column, line = line, node = node, plugin = plugin, text = text, toString = toString)
+  
     __obj.asInstanceOf[Warning]
   }
 }

@@ -62,9 +62,7 @@ object JQueryMobileOptions {
     subPageUrlKey: java.lang.String = null,
     touchOverflowEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): JQueryMobileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonMarkup")(buttonMarkup)
-    __obj.updateDynamic("transitionFallbacks")(transitionFallbacks)
+    val __obj = js.Dynamic.literal(buttonMarkup = buttonMarkup, transitionFallbacks = transitionFallbacks)
     if (activeBtnClass != null) __obj.updateDynamic("activeBtnClass")(activeBtnClass)
     if (activePageClass != null) __obj.updateDynamic("activePageClass")(activePageClass)
     if (!js.isUndefined(ajaxEnabled)) __obj.updateDynamic("ajaxEnabled")(ajaxEnabled)

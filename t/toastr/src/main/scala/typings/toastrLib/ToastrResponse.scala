@@ -42,12 +42,7 @@ object ToastrResponse {
     toastId: scala.Double,
     endTime: stdLib.Date = null
   ): ToastrResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("toastId")(toastId)
+    val __obj = js.Dynamic.literal(map = map, options = options, startTime = startTime, state = state.asInstanceOf[js.Any], toastId = toastId)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     __obj.asInstanceOf[ToastrResponse]
   }

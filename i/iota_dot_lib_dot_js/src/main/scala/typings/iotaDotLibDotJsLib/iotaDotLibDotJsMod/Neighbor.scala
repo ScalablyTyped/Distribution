@@ -26,14 +26,8 @@ object Neighbor {
     numberOfRandomTransactionRequests: scala.Double,
     numberOfSentTransactions: scala.Double
   ): Neighbor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
-    __obj.updateDynamic("numberOfAllTransactions")(numberOfAllTransactions)
-    __obj.updateDynamic("numberOfInvalidTransactions")(numberOfInvalidTransactions)
-    __obj.updateDynamic("numberOfNewTransactions")(numberOfNewTransactions)
-    __obj.updateDynamic("numberOfRandomTransactionRequests")(numberOfRandomTransactionRequests)
-    __obj.updateDynamic("numberOfSentTransactions")(numberOfSentTransactions)
+    val __obj = js.Dynamic.literal(address = address, connectionType = connectionType.asInstanceOf[js.Any], numberOfAllTransactions = numberOfAllTransactions, numberOfInvalidTransactions = numberOfInvalidTransactions, numberOfNewTransactions = numberOfNewTransactions, numberOfRandomTransactionRequests = numberOfRandomTransactionRequests, numberOfSentTransactions = numberOfSentTransactions)
+  
     __obj.asInstanceOf[Neighbor]
   }
 }

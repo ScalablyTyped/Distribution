@@ -41,12 +41,8 @@ object XContentCreator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContentCreator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createNewContent")(createNewContent)
-    __obj.updateDynamic("queryCreatableContentsInfo")(queryCreatableContentsInfo)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createNewContent = createNewContent, queryCreatableContentsInfo = queryCreatableContentsInfo, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContentCreator]
   }
 }

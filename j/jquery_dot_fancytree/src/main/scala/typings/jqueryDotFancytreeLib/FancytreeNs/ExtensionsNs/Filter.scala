@@ -73,17 +73,7 @@ object Filter {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoApply")(autoApply)
-    __obj.updateDynamic("autoExpand")(autoExpand)
-    __obj.updateDynamic("counter")(counter)
-    __obj.updateDynamic("fuzzy")(fuzzy)
-    __obj.updateDynamic("hideExpandedCounter")(hideExpandedCounter)
-    __obj.updateDynamic("hideExpanders")(hideExpanders)
-    __obj.updateDynamic("highlight")(highlight)
-    __obj.updateDynamic("leavesOnly")(leavesOnly)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("nodata")(nodata)
+    val __obj = js.Dynamic.literal(autoApply = autoApply, autoExpand = autoExpand, counter = counter, fuzzy = fuzzy, hideExpandedCounter = hideExpandedCounter, hideExpanders = hideExpanders, highlight = highlight, leavesOnly = leavesOnly, mode = mode.asInstanceOf[js.Any], nodata = nodata)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Filter]
   }

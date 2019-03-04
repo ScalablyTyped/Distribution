@@ -18,10 +18,8 @@ object Anon_Inner {
     section: d3pieLib.d3pieLibStrings.outer | d3pieLib.d3pieLibStrings.inner,
     value: scala.Double
   ): Anon_Inner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(label = label, section = section.asInstanceOf[js.Any], value = value)
+  
     __obj.asInstanceOf[Anon_Inner]
   }
 }

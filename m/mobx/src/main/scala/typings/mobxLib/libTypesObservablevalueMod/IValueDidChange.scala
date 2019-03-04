@@ -12,8 +12,9 @@ trait IValueDidChange[T] extends IValueWillChange[T] {
 object IValueDidChange {
   @scala.inline
   def apply[T](newValue: T, `object`: js.Any, `type`: mobxLib.mobxLibStrings.update, oldValue: T = null): IValueDidChange[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValueDidChange[T]]
   }

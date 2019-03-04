@@ -135,27 +135,8 @@ object JobUpdateParameters {
     user: java.lang.String,
     versionName: java.lang.String
   ): JobUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("assignedType")(assignedType)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("dueDate")(dueDate)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("loi")(loi)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ownedBy")(ownedBy)
-    __obj.updateDynamic("parentJobId")(parentJobId)
-    __obj.updateDynamic("parentVersion")(parentVersion)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("versionName")(versionName)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, constructor = constructor, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, hasOwnProperty = hasOwnProperty, jobId = jobId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, percent = percent, priority = priority, propertyIsEnumerable = propertyIsEnumerable, startDate = startDate, status = status, user = user, versionName = versionName)
+  
     __obj.asInstanceOf[JobUpdateParameters]
   }
 }

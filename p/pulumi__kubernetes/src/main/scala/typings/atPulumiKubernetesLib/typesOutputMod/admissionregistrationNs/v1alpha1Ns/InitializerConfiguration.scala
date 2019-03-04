@@ -45,11 +45,8 @@ object InitializerConfiguration {
     kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfiguration,
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
   ): InitializerConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("initializers")(initializers)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, initializers = initializers, kind = kind, metadata = metadata)
+  
     __obj.asInstanceOf[InitializerConfiguration]
   }
 }

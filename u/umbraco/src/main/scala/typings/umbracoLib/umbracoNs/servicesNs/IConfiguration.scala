@@ -23,11 +23,8 @@ object IConfiguration {
     stylesheets: js.Array[java.lang.String],
     toolbar: js.Array[java.lang.String]
   ): IConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dimensions")(dimensions)
-    __obj.updateDynamic("maxImageSize")(maxImageSize)
-    __obj.updateDynamic("stylesheets")(stylesheets)
-    __obj.updateDynamic("toolbar")(toolbar)
+    val __obj = js.Dynamic.literal(dimensions = dimensions, maxImageSize = maxImageSize, stylesheets = stylesheets, toolbar = toolbar)
+  
     __obj.asInstanceOf[IConfiguration]
   }
 }

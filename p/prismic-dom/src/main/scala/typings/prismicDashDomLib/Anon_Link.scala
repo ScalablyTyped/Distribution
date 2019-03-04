@@ -16,9 +16,8 @@ object Anon_Link {
     Link: prismicDashDomLib.prismicDashDomMod.Link,
     RichText: prismicDashDomLib.prismicDashDomMod.RichText
   ): Anon_Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Link")(Link)
-    __obj.updateDynamic("RichText")(RichText)
+    val __obj = js.Dynamic.literal(Link = Link, RichText = RichText)
+  
     __obj.asInstanceOf[Anon_Link]
   }
 }

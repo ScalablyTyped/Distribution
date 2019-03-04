@@ -20,11 +20,8 @@ object IAssignmentClassInfo {
     Clone: js.Function0[IAssignmentClassInfo],
     TaskAssignmentClassInfo: ITaskAssignmentClassInfo
   ): IAssignmentClassInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApprovalAssignmentClassInfo")(ApprovalAssignmentClassInfo)
-    __obj.updateDynamic("AssignmentType")(AssignmentType)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("TaskAssignmentClassInfo")(TaskAssignmentClassInfo)
+    val __obj = js.Dynamic.literal(ApprovalAssignmentClassInfo = ApprovalAssignmentClassInfo, AssignmentType = AssignmentType, Clone = Clone, TaskAssignmentClassInfo = TaskAssignmentClassInfo)
+  
     __obj.asInstanceOf[IAssignmentClassInfo]
   }
 }

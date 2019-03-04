@@ -18,7 +18,7 @@ class IOEither[L, A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: IOEither[L, js.Function1[/* b */ B, C]], fb: IOEither[L, B]): IOEither[L, C] = js.native
+  def ap_[B, C](`this`: IOEither[L, js.Function1[/* b */ B, C]], fb: IOEither[L, B]): IOEither[L, C] = js.native
   /**
     * Combine two effectful actions, keeping only the result of the first
     */

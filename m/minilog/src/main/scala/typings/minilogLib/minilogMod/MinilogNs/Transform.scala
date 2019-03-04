@@ -20,11 +20,8 @@ object Transform {
     unpipe: js.Function1[js.Any, Transform],
     write: js.Function3[js.Any, js.Any, js.Any, scala.Unit]
   ): Transform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mixin")(mixin)
-    __obj.updateDynamic("pipe")(pipe)
-    __obj.updateDynamic("unpipe")(unpipe)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(mixin = mixin, pipe = pipe, unpipe = unpipe, write = write)
+  
     __obj.asInstanceOf[Transform]
   }
 }

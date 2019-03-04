@@ -16,9 +16,7 @@ object ProjectDetailsSingleAppResult {
     errors: js.Array[ProjectDetailsError],
     `type`: ionicLib.definitionsMod.ProjectType = null
   ): ProjectDetailsSingleAppResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(context = context, errors = errors)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ProjectDetailsSingleAppResult]
   }

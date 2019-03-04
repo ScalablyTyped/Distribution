@@ -16,8 +16,7 @@ object IMultiProjectConfig {
     projects: org.scalablytyped.runtime.StringDictionary[js.UndefOr[IProjectConfig]],
     defaultProject: java.lang.String = null
   ): IMultiProjectConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projects")(projects)
+    val __obj = js.Dynamic.literal(projects = projects)
     if (defaultProject != null) __obj.updateDynamic("defaultProject")(defaultProject)
     __obj.asInstanceOf[IMultiProjectConfig]
   }

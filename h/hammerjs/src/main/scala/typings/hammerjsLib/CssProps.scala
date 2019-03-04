@@ -24,13 +24,8 @@ object CssProps {
     userDrag: java.lang.String,
     userSelect: java.lang.String
   ): CssProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentZooming")(contentZooming)
-    __obj.updateDynamic("tapHighlightColor")(tapHighlightColor)
-    __obj.updateDynamic("touchCallout")(touchCallout)
-    __obj.updateDynamic("touchSelect")(touchSelect)
-    __obj.updateDynamic("userDrag")(userDrag)
-    __obj.updateDynamic("userSelect")(userSelect)
+    val __obj = js.Dynamic.literal(contentZooming = contentZooming, tapHighlightColor = tapHighlightColor, touchCallout = touchCallout, touchSelect = touchSelect, userDrag = userDrag, userSelect = userSelect)
+  
     __obj.asInstanceOf[CssProps]
   }
 }

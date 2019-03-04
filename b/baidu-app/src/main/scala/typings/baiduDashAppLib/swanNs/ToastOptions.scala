@@ -45,8 +45,7 @@ object ToastOptions {
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     success: js.Function1[js.Any, scala.Unit] = null
   ): ToastOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

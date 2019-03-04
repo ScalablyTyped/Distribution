@@ -15,8 +15,8 @@ trait IBankAccountVerifyOptions extends js.Object {
 object IBankAccountVerifyOptions {
   @scala.inline
   def apply(amounts: js.Tuple2[scala.Double, scala.Double]): IBankAccountVerifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amounts")(amounts)
+    val __obj = js.Dynamic.literal(amounts = amounts)
+  
     __obj.asInstanceOf[IBankAccountVerifyOptions]
   }
 }

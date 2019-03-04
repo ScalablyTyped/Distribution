@@ -24,10 +24,7 @@ object WriteRecord {
     children: org.scalablytyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node] = null,
     snap: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node = null
   ): WriteRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("writeId")(writeId)
+    val __obj = js.Dynamic.literal(path = path, visible = visible, writeId = writeId)
     if (children != null) __obj.updateDynamic("children")(children)
     if (snap != null) __obj.updateDynamic("snap")(snap)
     __obj.asInstanceOf[WriteRecord]

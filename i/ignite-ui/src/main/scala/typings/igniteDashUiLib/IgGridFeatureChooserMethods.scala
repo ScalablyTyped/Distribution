@@ -60,16 +60,8 @@ object IgGridFeatureChooserMethods {
     showDropDown: js.Function1[java.lang.String, scala.Unit],
     toggleDropDown: js.Function1[java.lang.String, scala.Unit]
   ): IgGridFeatureChooserMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getDropDownByColumnKey")(getDropDownByColumnKey)
-    __obj.updateDynamic("hideDropDown")(hideDropDown)
-    __obj.updateDynamic("shouldShowFeatureIcon")(shouldShowFeatureIcon)
-    __obj.updateDynamic("showDropDown")(showDropDown)
-    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, getDropDownByColumnKey = getDropDownByColumnKey, hideDropDown = hideDropDown, shouldShowFeatureIcon = shouldShowFeatureIcon, showDropDown = showDropDown, toggleDropDown = toggleDropDown)
+  
     __obj.asInstanceOf[IgGridFeatureChooserMethods]
   }
 }

@@ -16,9 +16,8 @@ trait ImageScannerResolution extends js.Object {
 object ImageScannerResolution {
   @scala.inline
   def apply(dpiX: scala.Double, dpiY: scala.Double): ImageScannerResolution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dpiX")(dpiX)
-    __obj.updateDynamic("dpiY")(dpiY)
+    val __obj = js.Dynamic.literal(dpiX = dpiX, dpiY = dpiY)
+  
     __obj.asInstanceOf[ImageScannerResolution]
   }
 }

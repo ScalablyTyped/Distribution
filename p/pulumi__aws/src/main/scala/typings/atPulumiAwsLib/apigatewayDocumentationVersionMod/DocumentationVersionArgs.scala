@@ -27,9 +27,7 @@ object DocumentationVersionArgs {
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DocumentationVersionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
-    __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentationVersionArgs]
   }

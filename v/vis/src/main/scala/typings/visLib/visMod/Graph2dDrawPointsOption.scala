@@ -21,8 +21,7 @@ object Graph2dDrawPointsOption {
     onRender: js.Function0[scala.Boolean] = null,
     size: scala.Int | scala.Double = null
   ): Graph2dDrawPointsOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (onRender != null) __obj.updateDynamic("onRender")(onRender)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

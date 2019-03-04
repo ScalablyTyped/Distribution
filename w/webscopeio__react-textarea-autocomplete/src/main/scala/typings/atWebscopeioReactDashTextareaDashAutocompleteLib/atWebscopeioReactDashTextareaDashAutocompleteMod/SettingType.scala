@@ -20,8 +20,7 @@ trait SettingType[TItem] extends js.Object {
   /**
     * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
     */
-  @JSName("component")
-  var component_Original: reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]] = js.native
+  var component: reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]] = js.native
   /**
     * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
     */
@@ -47,14 +46,6 @@ trait SettingType[TItem] extends js.Object {
       TextToReplaceType | java.lang.String
     ]
   ] = js.native
-  /**
-    * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
-    */
-  def component(props: reactLib.reactMod.ReactNs.PropsWithChildren[ItemComponentProps[TItem]]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  /**
-    * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
-    */
-  def component(props: reactLib.reactMod.ReactNs.PropsWithChildren[ItemComponentProps[TItem]], context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   /**
     * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
     */

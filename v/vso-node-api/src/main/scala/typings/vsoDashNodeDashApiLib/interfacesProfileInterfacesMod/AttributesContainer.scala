@@ -18,10 +18,8 @@ object AttributesContainer {
     containerName: java.lang.String,
     revision: scala.Double
   ): AttributesContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("containerName")(containerName)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(attributes = attributes, containerName = containerName, revision = revision)
+  
     __obj.asInstanceOf[AttributesContainer]
   }
 }

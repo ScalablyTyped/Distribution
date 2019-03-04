@@ -20,11 +20,8 @@ object Anon_FirstParent {
     fullHistorySimplifyMerges: scala.Double,
     simplifiedHistory: scala.Double
   ): Anon_FirstParent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstParent")(firstParent)
-    __obj.updateDynamic("fullHistory")(fullHistory)
-    __obj.updateDynamic("fullHistorySimplifyMerges")(fullHistorySimplifyMerges)
-    __obj.updateDynamic("simplifiedHistory")(simplifiedHistory)
+    val __obj = js.Dynamic.literal(firstParent = firstParent, fullHistory = fullHistory, fullHistorySimplifyMerges = fullHistorySimplifyMerges, simplifiedHistory = simplifiedHistory)
+  
     __obj.asInstanceOf[Anon_FirstParent]
   }
 }

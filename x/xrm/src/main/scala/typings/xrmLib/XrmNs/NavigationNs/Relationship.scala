@@ -42,9 +42,7 @@ object Relationship {
     relationshipType: xrmLib.XrmEnumNs.RelationshipType = null,
     roleType: xrmLib.XrmEnumNs.RoleType = null
   ): Relationship = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributeName = attributeName, name = name)
     if (navigationPropertyName != null) __obj.updateDynamic("navigationPropertyName")(navigationPropertyName)
     if (relationshipType != null) __obj.updateDynamic("relationshipType")(relationshipType)
     if (roleType != null) __obj.updateDynamic("roleType")(roleType)

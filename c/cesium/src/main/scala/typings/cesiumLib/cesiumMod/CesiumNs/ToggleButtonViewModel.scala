@@ -14,10 +14,8 @@ trait ToggleButtonViewModel extends js.Object {
 object ToggleButtonViewModel {
   @scala.inline
   def apply(command: Command, toggled: scala.Boolean, tooltip: java.lang.String): ToggleButtonViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("toggled")(toggled)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(command = command, toggled = toggled, tooltip = tooltip)
+  
     __obj.asInstanceOf[ToggleButtonViewModel]
   }
 }

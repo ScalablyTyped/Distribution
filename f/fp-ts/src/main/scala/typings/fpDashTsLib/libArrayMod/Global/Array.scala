@@ -15,9 +15,8 @@ trait Array[T] extends js.Object {
 object Array {
   @scala.inline
   def apply[T](_A: T, _URI: fpDashTsLib.libArrayMod.URI): Array[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_A")(_A.asInstanceOf[js.Any])
-    __obj.updateDynamic("_URI")(_URI)
+    val __obj = js.Dynamic.literal(_A = _A.asInstanceOf[js.Any], _URI = _URI)
+  
     __obj.asInstanceOf[Array[T]]
   }
 }

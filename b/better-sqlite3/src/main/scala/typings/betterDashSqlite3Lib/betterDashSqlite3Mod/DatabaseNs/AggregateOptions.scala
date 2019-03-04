@@ -23,8 +23,7 @@ object AggregateOptions {
     start: js.Any = null,
     varargs: js.UndefOr[scala.Boolean] = js.undefined
   ): AggregateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(step = step)
     if (!js.isUndefined(deterministic)) __obj.updateDynamic("deterministic")(deterministic)
     if (inverse != null) __obj.updateDynamic("inverse")(inverse)
     if (result != null) __obj.updateDynamic("result")(result)

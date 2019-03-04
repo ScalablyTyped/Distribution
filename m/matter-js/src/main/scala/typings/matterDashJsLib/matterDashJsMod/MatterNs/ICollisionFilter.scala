@@ -14,10 +14,8 @@ trait ICollisionFilter extends js.Object {
 object ICollisionFilter {
   @scala.inline
   def apply(category: scala.Double, group: scala.Double, mask: scala.Double): ICollisionFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(category = category, group = group, mask = mask)
+  
     __obj.asInstanceOf[ICollisionFilter]
   }
 }

@@ -39,13 +39,8 @@ object XGridPeer {
       scala.Unit
     ]
   ): XGridPeer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setColumns")(setColumns)
+    val __obj = js.Dynamic.literal(Columns = Columns, acquire = acquire, getColumns = getColumns, queryInterface = queryInterface, release = release, setColumns = setColumns)
+  
     __obj.asInstanceOf[XGridPeer]
   }
 }

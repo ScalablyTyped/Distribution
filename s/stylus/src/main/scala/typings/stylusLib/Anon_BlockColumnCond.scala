@@ -28,15 +28,8 @@ object Anon_BlockColumnCond {
     lineno: scala.Double,
     negate: scala.Boolean
   ): Anon_BlockColumnCond = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("cond")(cond)
-    __obj.updateDynamic("elses")(elses)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("negate")(negate)
+    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, cond = cond, elses = elses, filename = filename, lineno = lineno, negate = negate)
+  
     __obj.asInstanceOf[Anon_BlockColumnCond]
   }
 }

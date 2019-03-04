@@ -14,9 +14,8 @@ trait ValidatableModel[T] extends js.Object {
 object ValidatableModel {
   @scala.inline
   def apply[T](end: js.Function0[T], name: js.Function1[java.lang.String, PropertyValidationState[T]]): ValidatableModel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(end = end, name = name)
+  
     __obj.asInstanceOf[ValidatableModel[T]]
   }
 }

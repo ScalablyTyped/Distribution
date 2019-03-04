@@ -54,18 +54,8 @@ object Endpoint {
     responseInterceptors: js.Function0[js.Array[ResponseInterceptor]],
     url: js.Function0[java.lang.String]
   ): Endpoint[Self] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFullRequestInterceptor")(addFullRequestInterceptor)
-    __obj.updateDynamic("addFullResponseInterceptor")(addFullResponseInterceptor)
-    __obj.updateDynamic("addRequestInterceptor")(addRequestInterceptor)
-    __obj.updateDynamic("addResponseInterceptor")(addResponseInterceptor)
-    __obj.updateDynamic("fullRequestInterceptors")(fullRequestInterceptors)
-    __obj.updateDynamic("fullResponseInterceptors")(fullResponseInterceptors)
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("requestInterceptors")(requestInterceptors)
-    __obj.updateDynamic("responseInterceptors")(responseInterceptors)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(addFullRequestInterceptor = addFullRequestInterceptor, addFullResponseInterceptor = addFullResponseInterceptor, addRequestInterceptor = addRequestInterceptor, addResponseInterceptor = addResponseInterceptor, fullRequestInterceptors = fullRequestInterceptors, fullResponseInterceptors = fullResponseInterceptors, header = header, headers = headers, requestInterceptors = requestInterceptors, responseInterceptors = responseInterceptors, url = url)
+  
     __obj.asInstanceOf[Endpoint[Self]]
   }
 }

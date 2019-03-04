@@ -24,13 +24,8 @@ object Anon_FinishTimeAscending {
     startTimeAscending: scala.Double,
     startTimeDescending: scala.Double
   ): Anon_FinishTimeAscending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finishTimeAscending")(finishTimeAscending)
-    __obj.updateDynamic("finishTimeDescending")(finishTimeDescending)
-    __obj.updateDynamic("queueTimeAscending")(queueTimeAscending)
-    __obj.updateDynamic("queueTimeDescending")(queueTimeDescending)
-    __obj.updateDynamic("startTimeAscending")(startTimeAscending)
-    __obj.updateDynamic("startTimeDescending")(startTimeDescending)
+    val __obj = js.Dynamic.literal(finishTimeAscending = finishTimeAscending, finishTimeDescending = finishTimeDescending, queueTimeAscending = queueTimeAscending, queueTimeDescending = queueTimeDescending, startTimeAscending = startTimeAscending, startTimeDescending = startTimeDescending)
+  
     __obj.asInstanceOf[Anon_FinishTimeAscending]
   }
 }

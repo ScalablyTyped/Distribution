@@ -47,10 +47,7 @@ object IDialogRenderingOptions {
     show: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): IDialogRenderingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("iframe")(iframe)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(callback = callback, iframe = iframe, template = template)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (container != null) __obj.updateDynamic("container")(container)
     if (dialogData != null) __obj.updateDynamic("dialogData")(dialogData)

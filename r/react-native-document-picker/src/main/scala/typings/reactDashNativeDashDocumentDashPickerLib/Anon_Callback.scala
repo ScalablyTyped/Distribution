@@ -29,8 +29,8 @@ object Anon_Callback {
       scala.Unit
     ]
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(show = show)
+  
     __obj.asInstanceOf[Anon_Callback]
   }
 }

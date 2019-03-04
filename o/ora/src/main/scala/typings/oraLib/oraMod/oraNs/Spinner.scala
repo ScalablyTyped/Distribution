@@ -13,8 +13,7 @@ trait Spinner extends js.Object {
 object Spinner {
   @scala.inline
   def apply(frames: js.Array[java.lang.String], interval: scala.Int | scala.Double = null): Spinner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frames")(frames)
+    val __obj = js.Dynamic.literal(frames = frames)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spinner]
   }

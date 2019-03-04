@@ -80,13 +80,8 @@ object TabularDataProviderArguments {
     SequenceMapping: activexDashInteropLib.SafeArray[scala.Double],
     TableNumberList: java.lang.String
   ): TabularDataProviderArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CellRangeRepresentation")(CellRangeRepresentation)
-    __obj.updateDynamic("DataRowSource")(DataRowSource)
-    __obj.updateDynamic("FirstCellAsLabel")(FirstCellAsLabel)
-    __obj.updateDynamic("HasCategories")(HasCategories)
-    __obj.updateDynamic("SequenceMapping")(SequenceMapping)
-    __obj.updateDynamic("TableNumberList")(TableNumberList)
+    val __obj = js.Dynamic.literal(CellRangeRepresentation = CellRangeRepresentation, DataRowSource = DataRowSource, FirstCellAsLabel = FirstCellAsLabel, HasCategories = HasCategories, SequenceMapping = SequenceMapping, TableNumberList = TableNumberList)
+  
     __obj.asInstanceOf[TabularDataProviderArguments]
   }
 }

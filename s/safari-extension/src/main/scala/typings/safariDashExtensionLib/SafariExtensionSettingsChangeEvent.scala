@@ -49,19 +49,8 @@ object SafariExtensionSettingsChangeEvent {
     timestamp: scala.Double,
     `type`: java.lang.String
   ): SafariExtensionSettingsChangeEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("cancelable")(cancelable)
-    __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("eventPhase")(eventPhase)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("newValue")(newValue)
-    __obj.updateDynamic("oldValue")(oldValue)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented, eventPhase = eventPhase, key = key, newValue = newValue, oldValue = oldValue, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target.asInstanceOf[js.Any], timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SafariExtensionSettingsChangeEvent]
   }
 }

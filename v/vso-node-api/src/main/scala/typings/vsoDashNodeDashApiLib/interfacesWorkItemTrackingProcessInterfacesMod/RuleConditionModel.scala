@@ -14,10 +14,8 @@ trait RuleConditionModel extends js.Object {
 object RuleConditionModel {
   @scala.inline
   def apply(conditionType: java.lang.String, field: java.lang.String, value: java.lang.String): RuleConditionModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditionType")(conditionType)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(conditionType = conditionType, field = field, value = value)
+  
     __obj.asInstanceOf[RuleConditionModel]
   }
 }

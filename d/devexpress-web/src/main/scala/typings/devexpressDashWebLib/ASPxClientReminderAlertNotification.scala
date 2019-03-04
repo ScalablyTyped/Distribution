@@ -54,14 +54,8 @@ object ASPxClientReminderAlertNotification {
     ignore: scala.Boolean,
     reminder: ASPxClientReminder
   ): ASPxClientReminderAlertNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAppointment")(GetAppointment)
-    __obj.updateDynamic("GetReminder")(GetReminder)
-    __obj.updateDynamic("GetReminderId")(GetReminderId)
-    __obj.updateDynamic("appointment")(appointment)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("ignore")(ignore)
-    __obj.updateDynamic("reminder")(reminder)
+    val __obj = js.Dynamic.literal(GetAppointment = GetAppointment, GetReminder = GetReminder, GetReminderId = GetReminderId, appointment = appointment, handled = handled, ignore = ignore, reminder = reminder)
+  
     __obj.asInstanceOf[ASPxClientReminderAlertNotification]
   }
 }

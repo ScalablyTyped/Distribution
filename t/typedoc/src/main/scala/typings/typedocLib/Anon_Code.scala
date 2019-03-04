@@ -22,12 +22,8 @@ object Anon_Code {
     style: scala.Boolean,
     textarea: scala.Boolean
   ): Anon_Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("pre")(pre)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("textarea")(textarea)
+    val __obj = js.Dynamic.literal(code = code, pre = pre, script = script, style = style, textarea = textarea)
+  
     __obj.asInstanceOf[Anon_Code]
   }
 }

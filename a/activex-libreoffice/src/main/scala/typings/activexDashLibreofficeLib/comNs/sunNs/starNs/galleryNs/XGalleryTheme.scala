@@ -95,23 +95,8 @@ object XGalleryTheme {
     removeByIndex: js.Function1[scala.Double, scala.Unit],
     update: js.Function0[scala.Unit]
   ): XGalleryTheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertDrawingByIndex")(insertDrawingByIndex)
-    __obj.updateDynamic("insertGraphicByIndex")(insertGraphicByIndex)
-    __obj.updateDynamic("insertURLByIndex")(insertURLByIndex)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Name = Name, acquire = acquire, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getName = getName, hasElements = hasElements, insertDrawingByIndex = insertDrawingByIndex, insertGraphicByIndex = insertGraphicByIndex, insertURLByIndex = insertURLByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, update = update)
+  
     __obj.asInstanceOf[XGalleryTheme]
   }
 }

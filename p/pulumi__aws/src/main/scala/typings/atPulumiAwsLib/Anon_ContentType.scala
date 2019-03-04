@@ -14,10 +14,8 @@ trait Anon_ContentType extends js.Object {
 object Anon_ContentType {
   @scala.inline
   def apply(contentType: java.lang.String, messageBody: java.lang.String, statusCode: java.lang.String): Anon_ContentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("messageBody")(messageBody)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(contentType = contentType, messageBody = messageBody, statusCode = statusCode)
+  
     __obj.asInstanceOf[Anon_ContentType]
   }
 }

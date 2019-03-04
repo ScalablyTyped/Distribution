@@ -25,12 +25,8 @@ object ResembleComparison {
     onComplete: js.Function1[js.Function1[/* result */ ResembleComparisonResult, scala.Unit], scala.Unit],
     repaint: js.Function0[ResembleComparison]
   ): ResembleComparison = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing)
-    __obj.updateDynamic("ignoreColors")(ignoreColors)
-    __obj.updateDynamic("ignoreNothing")(ignoreNothing)
-    __obj.updateDynamic("onComplete")(onComplete)
-    __obj.updateDynamic("repaint")(repaint)
+    val __obj = js.Dynamic.literal(ignoreAntialiasing = ignoreAntialiasing, ignoreColors = ignoreColors, ignoreNothing = ignoreNothing, onComplete = onComplete, repaint = repaint)
+  
     __obj.asInstanceOf[ResembleComparison]
   }
 }

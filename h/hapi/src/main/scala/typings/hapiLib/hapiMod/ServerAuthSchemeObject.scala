@@ -82,8 +82,7 @@ object ServerAuthSchemeObject {
     ] = null,
     verify: js.Function1[/* auth */ RequestAuth, js.Promise[scala.Unit]] = null
   ): ServerAuthSchemeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticate")(authenticate)
+    val __obj = js.Dynamic.literal(authenticate = authenticate)
     if (api != null) __obj.updateDynamic("api")(api)
     if (options != null) __obj.updateDynamic("options")(options)
     if (payload != null) __obj.updateDynamic("payload")(payload)

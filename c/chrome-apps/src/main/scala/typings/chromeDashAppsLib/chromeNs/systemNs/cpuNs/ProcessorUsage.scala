@@ -24,11 +24,8 @@ object ProcessorUsage {
     total: chromeDashAppsLib.chromeNs.double,
     user: chromeDashAppsLib.chromeNs.double
   ): ProcessorUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idle")(idle)
-    __obj.updateDynamic("kernel")(kernel)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(idle = idle, kernel = kernel, total = total, user = user)
+  
     __obj.asInstanceOf[ProcessorUsage]
   }
 }

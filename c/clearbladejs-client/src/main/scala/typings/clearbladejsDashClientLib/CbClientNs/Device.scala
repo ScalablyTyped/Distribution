@@ -38,20 +38,8 @@ object Device {
     updateDeviceByName: js.Function4[java.lang.String, js.Object, scala.Boolean, CbCallback, scala.Unit],
     user: APIUser
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deleteDeviceByName")(deleteDeviceByName)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("getDeviceByName")(getDeviceByName)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateDeviceByName")(updateDeviceByName)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, columns = columns, count = count, create = create, delete = delete, deleteDeviceByName = deleteDeviceByName, fetch = fetch, getDeviceByName = getDeviceByName, systemKey = systemKey, systemSecret = systemSecret, update = update, updateDeviceByName = updateDeviceByName, user = user)
+  
     __obj.asInstanceOf[Device]
   }
 }

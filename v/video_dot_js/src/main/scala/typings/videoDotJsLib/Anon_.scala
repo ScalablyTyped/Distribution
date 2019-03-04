@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait `Anon_`
+trait Anon_
   extends /**
 		 * Create an instance of this Tech.
 		 *

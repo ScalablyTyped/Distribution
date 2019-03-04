@@ -28,9 +28,8 @@ object Anon_Callback {
     callback: js.Function2[gapiDotClientLib.gapiNs.clientNs.Response[T], java.lang.String, js.Any],
     id: java.lang.String
   ): Anon_Callback[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(callback = callback, id = id)
+  
     __obj.asInstanceOf[Anon_Callback[T]]
   }
 }

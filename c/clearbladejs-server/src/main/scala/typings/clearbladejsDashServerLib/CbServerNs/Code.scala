@@ -22,12 +22,8 @@ object Code {
     systemSecret: java.lang.String,
     user: APIUser
   ): Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getAllServices")(getAllServices)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(execute = execute, getAllServices = getAllServices, systemKey = systemKey, systemSecret = systemSecret, user = user)
+  
     __obj.asInstanceOf[Code]
   }
 }

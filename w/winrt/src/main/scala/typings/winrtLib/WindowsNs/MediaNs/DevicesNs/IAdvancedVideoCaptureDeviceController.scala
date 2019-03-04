@@ -16,9 +16,8 @@ object IAdvancedVideoCaptureDeviceController {
     getDeviceProperty: js.Function1[java.lang.String, js.Any],
     setDeviceProperty: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): IAdvancedVideoCaptureDeviceController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDeviceProperty")(getDeviceProperty)
-    __obj.updateDynamic("setDeviceProperty")(setDeviceProperty)
+    val __obj = js.Dynamic.literal(getDeviceProperty = getDeviceProperty, setDeviceProperty = setDeviceProperty)
+  
     __obj.asInstanceOf[IAdvancedVideoCaptureDeviceController]
   }
 }

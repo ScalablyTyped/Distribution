@@ -14,10 +14,8 @@ trait PluginInterfaceType extends js.Object {
 object PluginInterfaceType {
   @scala.inline
   def apply(Capability: java.lang.String, Prefix: java.lang.String, Version: java.lang.String): PluginInterfaceType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Capability")(Capability)
-    __obj.updateDynamic("Prefix")(Prefix)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Capability = Capability, Prefix = Prefix, Version = Version)
+  
     __obj.asInstanceOf[PluginInterfaceType]
   }
 }

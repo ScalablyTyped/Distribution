@@ -48,10 +48,7 @@ object QueryQuantizationParameters {
     originPosition: java.lang.String = null,
     tolerance: scala.Int | scala.Double = null
   ): QueryQuantizationParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (originPosition != null) __obj.updateDynamic("originPosition")(originPosition)

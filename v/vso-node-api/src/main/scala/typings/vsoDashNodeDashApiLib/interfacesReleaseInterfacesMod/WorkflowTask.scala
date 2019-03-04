@@ -36,19 +36,8 @@ object WorkflowTask {
     timeoutInMinutes: scala.Double,
     version: java.lang.String
   ): WorkflowTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysRun")(alwaysRun)
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("definitionType")(definitionType)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overrideInputs")(overrideInputs)
-    __obj.updateDynamic("refName")(refName)
-    __obj.updateDynamic("taskId")(taskId)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, definitionType = definitionType, enabled = enabled, inputs = inputs, name = name, overrideInputs = overrideInputs, refName = refName, taskId = taskId, timeoutInMinutes = timeoutInMinutes, version = version)
+  
     __obj.asInstanceOf[WorkflowTask]
   }
 }

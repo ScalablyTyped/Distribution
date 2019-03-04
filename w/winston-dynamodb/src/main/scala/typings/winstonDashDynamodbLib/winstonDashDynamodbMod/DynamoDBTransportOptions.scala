@@ -26,9 +26,7 @@ object DynamoDBTransportOptions {
     secretAccessKey: java.lang.String = null,
     useEnvironment: js.UndefOr[scala.Boolean] = js.undefined
   ): DynamoDBTransportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(level = level, tableName = tableName)
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)
     if (!js.isUndefined(dynamoDoc)) __obj.updateDynamic("dynamoDoc")(dynamoDoc)
     if (region != null) __obj.updateDynamic("region")(region)

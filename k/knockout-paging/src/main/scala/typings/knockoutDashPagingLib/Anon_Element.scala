@@ -16,9 +16,8 @@ object Anon_Element {
     readValue: js.Function1[stdLib.HTMLElement, js.Any],
     writeValue: js.Function2[stdLib.HTMLElement, js.Any, scala.Unit]
   ): Anon_Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readValue")(readValue)
-    __obj.updateDynamic("writeValue")(writeValue)
+    val __obj = js.Dynamic.literal(readValue = readValue, writeValue = writeValue)
+  
     __obj.asInstanceOf[Anon_Element]
   }
 }

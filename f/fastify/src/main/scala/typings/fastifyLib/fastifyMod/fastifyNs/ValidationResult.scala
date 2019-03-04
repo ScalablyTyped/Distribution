@@ -22,12 +22,8 @@ object ValidationResult {
     params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     schemaPath: java.lang.String
   ): ValidationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataPath")(dataPath)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("schemaPath")(schemaPath)
+    val __obj = js.Dynamic.literal(dataPath = dataPath, keyword = keyword, message = message, params = params, schemaPath = schemaPath)
+  
     __obj.asInstanceOf[ValidationResult]
   }
 }

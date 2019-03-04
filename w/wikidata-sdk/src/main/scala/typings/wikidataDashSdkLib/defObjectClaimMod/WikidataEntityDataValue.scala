@@ -16,8 +16,8 @@ object WikidataEntityDataValue {
     `type`: wikidataDashSdkLib.wikidataDashSdkLibStrings.`wikibase-entityid`,
     value: wikidataDashSdkLib.Anon_Entitytype
   ): WikidataEntityDataValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WikidataEntityDataValue]
   }
 }

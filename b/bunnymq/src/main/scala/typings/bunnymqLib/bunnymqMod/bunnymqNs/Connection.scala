@@ -16,8 +16,7 @@ object Connection {
     startedAt: java.lang.String,
     StringDictionary: /* address */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Connection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startedAt")(startedAt)
+    val __obj = js.Dynamic.literal(startedAt = startedAt)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Connection]
   }

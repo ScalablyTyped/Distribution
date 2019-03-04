@@ -26,8 +26,7 @@ object Anon_Fragment {
     responseMode: auth0DashJsLib.auth0DashJsLibStrings.query | auth0DashJsLib.auth0DashJsLibStrings.fragment = null,
     responseType: java.lang.String = null
   ): Anon_Fragment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(scope = scope)
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
     if (responseType != null) __obj.updateDynamic("responseType")(responseType)

@@ -31,8 +31,8 @@ trait XDocumentDataSource extends js.Object {
 object XDocumentDataSource {
   @scala.inline
   def apply(DatabaseDocument: XOfficeDatabaseDocument): XDocumentDataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DatabaseDocument")(DatabaseDocument)
+    val __obj = js.Dynamic.literal(DatabaseDocument = DatabaseDocument)
+  
     __obj.asInstanceOf[XDocumentDataSource]
   }
 }

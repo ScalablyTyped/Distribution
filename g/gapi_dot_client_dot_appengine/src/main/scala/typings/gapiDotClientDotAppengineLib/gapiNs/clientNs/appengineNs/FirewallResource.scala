@@ -12,8 +12,8 @@ trait FirewallResource extends js.Object {
 object FirewallResource {
   @scala.inline
   def apply(ingressRules: IngressRulesResource): FirewallResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ingressRules")(ingressRules)
+    val __obj = js.Dynamic.literal(ingressRules = ingressRules)
+  
     __obj.asInstanceOf[FirewallResource]
   }
 }

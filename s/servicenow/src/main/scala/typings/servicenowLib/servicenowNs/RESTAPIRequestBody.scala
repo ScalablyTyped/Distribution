@@ -22,12 +22,8 @@ object RESTAPIRequestBody {
     hasNext: js.Function0[scala.Boolean],
     nextEntry: js.Function0[js.Any]
   ): RESTAPIRequestBody[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("dataStream")(dataStream)
-    __obj.updateDynamic("dataString")(dataString)
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("nextEntry")(nextEntry)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataStream = dataStream, dataString = dataString, hasNext = hasNext, nextEntry = nextEntry)
+  
     __obj.asInstanceOf[RESTAPIRequestBody[T]]
   }
 }

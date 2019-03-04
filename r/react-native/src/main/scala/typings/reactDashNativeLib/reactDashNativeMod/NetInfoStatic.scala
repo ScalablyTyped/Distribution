@@ -73,13 +73,8 @@ object NetInfoStatic {
       scala.Unit
     ]
   ): NetInfoStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("getConnectionInfo")(getConnectionInfo)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("isConnectionExpensive")(isConnectionExpensive)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, fetch = fetch, getConnectionInfo = getConnectionInfo, isConnected = isConnected, isConnectionExpensive = isConnectionExpensive, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[NetInfoStatic]
   }
 }

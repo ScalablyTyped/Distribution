@@ -37,13 +37,8 @@ object XHierarchicalName {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHierarchicalName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HierarchicalName")(HierarchicalName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("composeHierarchicalName")(composeHierarchicalName)
-    __obj.updateDynamic("getHierarchicalName")(getHierarchicalName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(HierarchicalName = HierarchicalName, acquire = acquire, composeHierarchicalName = composeHierarchicalName, getHierarchicalName = getHierarchicalName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHierarchicalName]
   }
 }

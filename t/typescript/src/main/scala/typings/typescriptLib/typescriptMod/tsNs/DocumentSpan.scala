@@ -24,9 +24,7 @@ object DocumentSpan {
     originalFileName: java.lang.String = null,
     originalTextSpan: TextSpan = null
   ): DocumentSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("textSpan")(textSpan)
+    val __obj = js.Dynamic.literal(fileName = fileName, textSpan = textSpan)
     if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
     if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
     __obj.asInstanceOf[DocumentSpan]

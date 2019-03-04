@@ -73,19 +73,8 @@ object Anon_Challenger {
     realm: java.lang.String = null,
     responseHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders = null
   ): Anon_Challenger = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("challenger")(challenger)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("isProxy")(isProxy)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusLine")(statusLine)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(challenger = challenger, frameId = frameId, isProxy = isProxy, method = method, parentFrameId = parentFrameId, requestId = requestId, scheme = scheme, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
     if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
     if (realm != null) __obj.updateDynamic("realm")(realm)

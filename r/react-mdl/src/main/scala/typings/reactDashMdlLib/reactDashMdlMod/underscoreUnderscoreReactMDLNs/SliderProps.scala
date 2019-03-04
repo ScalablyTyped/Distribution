@@ -25,9 +25,7 @@ object SliderProps {
     onChange: reactLib.reactMod.ReactNs.FormEventHandler[Slider] = null,
     value: scala.Int | scala.Double = null
   ): SliderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, min = min)
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)

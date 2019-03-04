@@ -20,10 +20,7 @@ object ThreeSignsSet {
     yellowTriangle: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): ThreeSignsSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("greenCircle")(greenCircle)
-    __obj.updateDynamic("redDiamond")(redDiamond)
-    __obj.updateDynamic("yellowTriangle")(yellowTriangle)
+    val __obj = js.Dynamic.literal(greenCircle = greenCircle, redDiamond = redDiamond, yellowTriangle = yellowTriangle)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeSignsSet]
   }

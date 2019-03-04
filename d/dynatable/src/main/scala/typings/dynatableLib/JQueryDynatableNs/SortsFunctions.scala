@@ -43,10 +43,8 @@ object SortsFunctions {
     originalPlacement: js.Function2[js.Any, js.Any, scala.Double],
     string: js.Function4[js.Any, js.Any, java.lang.String, scala.Double, scala.Double]
   ): SortsFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("originalPlacement")(originalPlacement)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(number = number, originalPlacement = originalPlacement, string = string)
+  
     __obj.asInstanceOf[SortsFunctions]
   }
 }

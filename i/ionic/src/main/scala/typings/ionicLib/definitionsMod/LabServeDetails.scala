@@ -14,10 +14,8 @@ trait LabServeDetails extends js.Object {
 object LabServeDetails {
   @scala.inline
   def apply(address: java.lang.String, port: scala.Double, projectType: ProjectType): LabServeDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("projectType")(projectType)
+    val __obj = js.Dynamic.literal(address = address, port = port, projectType = projectType)
+  
     __obj.asInstanceOf[LabServeDetails]
   }
 }

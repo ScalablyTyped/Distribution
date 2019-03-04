@@ -14,10 +14,8 @@ trait Anon_Doing extends js.Object {
 object Anon_Doing {
   @scala.inline
   def apply(doing: scala.Double, done: scala.Double, followed: scala.Double): Anon_Doing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doing")(doing)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("followed")(followed)
+    val __obj = js.Dynamic.literal(doing = doing, done = done, followed = followed)
+  
     __obj.asInstanceOf[Anon_Doing]
   }
 }

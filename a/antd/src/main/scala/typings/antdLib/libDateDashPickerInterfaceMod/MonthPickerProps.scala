@@ -31,6 +31,7 @@ object MonthPickerProps {
     id: scala.Double | java.lang.String = null,
     inputPrefixCls: java.lang.String = null,
     locale: js.Any = null,
+    name: java.lang.String = null,
     onChange: js.Function2[
       /* date */ momentLib.momentMod.momentNs.Moment, 
       /* dateString */ java.lang.String, 
@@ -61,6 +62,7 @@ object MonthPickerProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)

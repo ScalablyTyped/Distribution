@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(livestamp: jqueryDotLivestampjsLib.jqueryDotLivestampjsMod.LivestampGlobal): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("livestamp")(livestamp)
+    val __obj = js.Dynamic.literal(livestamp = livestamp)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

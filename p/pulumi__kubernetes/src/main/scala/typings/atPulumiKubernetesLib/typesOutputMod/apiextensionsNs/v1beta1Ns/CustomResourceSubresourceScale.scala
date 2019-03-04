@@ -41,10 +41,8 @@ object CustomResourceSubresourceScale {
     specReplicasPath: java.lang.String,
     statusReplicasPath: java.lang.String
   ): CustomResourceSubresourceScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelSelectorPath")(labelSelectorPath)
-    __obj.updateDynamic("specReplicasPath")(specReplicasPath)
-    __obj.updateDynamic("statusReplicasPath")(statusReplicasPath)
+    val __obj = js.Dynamic.literal(labelSelectorPath = labelSelectorPath, specReplicasPath = specReplicasPath, statusReplicasPath = statusReplicasPath)
+  
     __obj.asInstanceOf[CustomResourceSubresourceScale]
   }
 }

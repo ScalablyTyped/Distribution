@@ -14,8 +14,8 @@ trait Insert extends js.Object {
 object Insert {
   @scala.inline
   def apply(format: js.Function0[java.lang.String]): Insert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[Insert]
   }
 }

@@ -27,8 +27,7 @@ object IOptions {
     ext: java.lang.String = null,
     map: js.Function1[/* relativePath */ java.lang.String, java.lang.String] = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dest")(dest)
+    val __obj = js.Dynamic.literal(dest = dest)
     if (ext != null) __obj.updateDynamic("ext")(ext)
     if (map != null) __obj.updateDynamic("map")(map)
     __obj.asInstanceOf[IOptions]

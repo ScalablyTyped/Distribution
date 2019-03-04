@@ -15,11 +15,8 @@ trait ITicks extends js.Object {
 object ITicks {
   @scala.inline
   def apply(chart: IChart, length: scala.Double, stroke: IStroke, visible: scala.Boolean): ITicks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("stroke")(stroke)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(chart = chart, length = length, stroke = stroke, visible = visible)
+  
     __obj.asInstanceOf[ITicks]
   }
 }

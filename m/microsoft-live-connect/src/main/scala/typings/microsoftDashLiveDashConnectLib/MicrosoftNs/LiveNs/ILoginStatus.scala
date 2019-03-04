@@ -23,9 +23,8 @@ trait ILoginStatus extends js.Object {
 object ILoginStatus {
   @scala.inline
   def apply(session: ISession, status: java.lang.String): ILoginStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(session = session, status = status)
+  
     __obj.asInstanceOf[ILoginStatus]
   }
 }

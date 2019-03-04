@@ -12,8 +12,8 @@ trait Anon_OverlayClicked extends js.Object {
 object Anon_OverlayClicked {
   @scala.inline
   def apply(overlayClicked: scala.Boolean): Anon_OverlayClicked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overlayClicked")(overlayClicked)
+    val __obj = js.Dynamic.literal(overlayClicked = overlayClicked)
+  
     __obj.asInstanceOf[Anon_OverlayClicked]
   }
 }

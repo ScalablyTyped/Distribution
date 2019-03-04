@@ -104,8 +104,7 @@ object Options {
     urlKey: java.lang.String | scala.Boolean = null,
     verifyOptions: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(validate = validate)
     if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete)
     if (cookieKey != null) __obj.updateDynamic("cookieKey")(cookieKey.asInstanceOf[js.Any])
     if (errorFunc != null) __obj.updateDynamic("errorFunc")(errorFunc)

@@ -32,11 +32,8 @@ object RellaxInstance {
     options: RellaxOptions,
     refresh: js.Function0[scala.Unit]
   ): RellaxInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("elms")(elms.asInstanceOf[js.Any])
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("refresh")(refresh)
+    val __obj = js.Dynamic.literal(destroy = destroy, elms = elms.asInstanceOf[js.Any], options = options, refresh = refresh)
+  
     __obj.asInstanceOf[RellaxInstance]
   }
 }

@@ -12,8 +12,8 @@ trait IPrintExtensionContextStatic extends js.Object {
 object IPrintExtensionContextStatic {
   @scala.inline
   def apply(fromDeviceId: js.Function1[java.lang.String, js.Any]): IPrintExtensionContextStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromDeviceId")(fromDeviceId)
+    val __obj = js.Dynamic.literal(fromDeviceId = fromDeviceId)
+  
     __obj.asInstanceOf[IPrintExtensionContextStatic]
   }
 }

@@ -32,16 +32,8 @@ object ViterbiNode {
     surface_form: java.lang.String,
     `type`: java.lang.String
   ): ViterbiNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cost")(cost)
-    __obj.updateDynamic("left_id")(left_id)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("right_id")(right_id)
-    __obj.updateDynamic("shortest_cost")(shortest_cost)
-    __obj.updateDynamic("start_pos")(start_pos)
-    __obj.updateDynamic("surface_form")(surface_form)
+    val __obj = js.Dynamic.literal(cost = cost, left_id = left_id, length = length, name = name, prev = prev, right_id = right_id, shortest_cost = shortest_cost, start_pos = start_pos, surface_form = surface_form)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ViterbiNode]
   }
 }

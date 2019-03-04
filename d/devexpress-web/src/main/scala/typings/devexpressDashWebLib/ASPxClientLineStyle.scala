@@ -34,11 +34,8 @@ object ASPxClientLineStyle {
     lineJoin: java.lang.String,
     thickness: scala.Double
   ): ASPxClientLineStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dashStyle")(dashStyle)
-    __obj.updateDynamic("lineJoin")(lineJoin)
-    __obj.updateDynamic("thickness")(thickness)
+    val __obj = js.Dynamic.literal(chart = chart, dashStyle = dashStyle, lineJoin = lineJoin, thickness = thickness)
+  
     __obj.asInstanceOf[ASPxClientLineStyle]
   }
 }

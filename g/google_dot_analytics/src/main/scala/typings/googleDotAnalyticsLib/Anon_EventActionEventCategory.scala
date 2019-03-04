@@ -25,10 +25,7 @@ object Anon_EventActionEventCategory {
     eventValue: scala.Int | scala.Double = null,
     nonInteraction: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EventActionEventCategory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventAction")(eventAction)
-    __obj.updateDynamic("eventCategory")(eventCategory)
-    __obj.updateDynamic("hitType")(hitType)
+    val __obj = js.Dynamic.literal(eventAction = eventAction, eventCategory = eventCategory, hitType = hitType)
     if (eventLabel != null) __obj.updateDynamic("eventLabel")(eventLabel)
     if (eventValue != null) __obj.updateDynamic("eventValue")(eventValue.asInstanceOf[js.Any])
     if (!js.isUndefined(nonInteraction)) __obj.updateDynamic("nonInteraction")(nonInteraction)

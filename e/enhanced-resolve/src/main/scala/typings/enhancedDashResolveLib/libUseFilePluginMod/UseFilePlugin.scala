@@ -21,11 +21,8 @@ object UseFilePlugin {
     source: java.lang.String,
     target: java.lang.String
   ): UseFilePlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, filename = filename, source = source, target = target)
+  
     __obj.asInstanceOf[UseFilePlugin]
   }
 }

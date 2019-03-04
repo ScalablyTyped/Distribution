@@ -20,11 +20,8 @@ object IActionSendNotification {
     RecipientsEx: IUserOrUserGroupIDExs,
     Subject: java.lang.String
   ): IActionSendNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("RecipientsEx")(RecipientsEx)
-    __obj.updateDynamic("Subject")(Subject)
+    val __obj = js.Dynamic.literal(Clone = Clone, Message = Message, RecipientsEx = RecipientsEx, Subject = Subject)
+  
     __obj.asInstanceOf[IActionSendNotification]
   }
 }

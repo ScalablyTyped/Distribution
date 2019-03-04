@@ -35,11 +35,8 @@ object GamepadButtonChanges {
     touchChanged: scala.Boolean,
     valueChanged: scala.Boolean
   ): GamepadButtonChanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("pressChanged")(pressChanged)
-    __obj.updateDynamic("touchChanged")(touchChanged)
-    __obj.updateDynamic("valueChanged")(valueChanged)
+    val __obj = js.Dynamic.literal(changed = changed, pressChanged = pressChanged, touchChanged = touchChanged, valueChanged = valueChanged)
+  
     __obj.asInstanceOf[GamepadButtonChanges]
   }
 }

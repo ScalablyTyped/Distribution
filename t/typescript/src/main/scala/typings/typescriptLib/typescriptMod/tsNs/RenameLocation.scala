@@ -20,9 +20,7 @@ object RenameLocation {
     prefixText: java.lang.String = null,
     suffixText: java.lang.String = null
   ): RenameLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("textSpan")(textSpan)
+    val __obj = js.Dynamic.literal(fileName = fileName, textSpan = textSpan)
     if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
     if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
     if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)

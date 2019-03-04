@@ -44,13 +44,8 @@ object IGenerator {
     next: js.Function0[T],
     toArray: js.Function0[js.Array[T]]
   ): IGenerator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("toArray")(toArray)
+    val __obj = js.Dynamic.literal(filter = filter, forEach = forEach, length = length, map = map, next = next, toArray = toArray)
+  
     __obj.asInstanceOf[IGenerator[T]]
   }
 }

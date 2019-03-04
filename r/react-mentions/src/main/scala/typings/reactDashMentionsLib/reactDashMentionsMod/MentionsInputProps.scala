@@ -73,8 +73,7 @@ object MentionsInputProps {
     suggestionsPortalHost: reactLib.Element = null,
     value: java.lang.String = null
   ): MentionsInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSpaceInQuery)) __obj.updateDynamic("allowSpaceInQuery")(allowSpaceInQuery)
     if (className != null) __obj.updateDynamic("className")(className)
     if (displayTransform != null) __obj.updateDynamic("displayTransform")(displayTransform)

@@ -41,17 +41,8 @@ object ojGanttTaskSettableProperties {
     rowId: js.Any = null,
     shortDesc: java.lang.String = null
   ): ojGanttTaskSettableProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("borderRadius")(borderRadius)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
+    val __obj = js.Dynamic.literal(baseline = baseline, borderRadius = borderRadius, end = end, label = label, labelPosition = labelPosition.asInstanceOf[js.Any], labelStyle = labelStyle, progress = progress, start = start, svgClassName = svgClassName, svgStyle = svgStyle)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (rowId != null) __obj.updateDynamic("rowId")(rowId)
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)

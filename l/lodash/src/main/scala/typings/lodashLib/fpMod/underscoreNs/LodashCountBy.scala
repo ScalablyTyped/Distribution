@@ -16,10 +16,10 @@ trait LodashCountBy extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double] = js.native
-  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashCountBy2x2[T] = js.native
-  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashCountBy2x2[T] = js.native
+  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.__): LodashCountBy2x2[T] = js.native
+  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashCountBy2x2[T] = js.native
   def apply[T](
-    iteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratee: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashCountBy1x2[T] = js.native
 }

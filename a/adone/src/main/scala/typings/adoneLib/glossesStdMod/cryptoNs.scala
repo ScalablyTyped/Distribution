@@ -547,21 +547,21 @@ object cryptoNs extends js.Object {
   @JSName("generateKeyPair")
   @js.native
   object generateKeyPairNs extends js.Object {
-    def `__promisify__`(
+    def __promisify__(
       `type`: adoneLib.adoneLibStrings.dsa,
       options: nodeLib.cryptoMod.DSAKeyPairOptions[
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem, 
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
         ]
     ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
-    def `__promisify__`(
+    def __promisify__(
       `type`: adoneLib.adoneLibStrings.ec,
       options: nodeLib.cryptoMod.ECKeyPairOptions[
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem, 
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
         ]
     ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
-    def `__promisify__`(
+    def __promisify__(
       `type`: adoneLib.adoneLibStrings.rsa,
       options: nodeLib.cryptoMod.RSAKeyPairOptions[
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem, 

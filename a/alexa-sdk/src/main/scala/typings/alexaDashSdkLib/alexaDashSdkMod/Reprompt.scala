@@ -12,8 +12,8 @@ trait Reprompt extends js.Object {
 object Reprompt {
   @scala.inline
   def apply(outputSpeech: OutputSpeech): Reprompt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("outputSpeech")(outputSpeech)
+    val __obj = js.Dynamic.literal(outputSpeech = outputSpeech)
+  
     __obj.asInstanceOf[Reprompt]
   }
 }

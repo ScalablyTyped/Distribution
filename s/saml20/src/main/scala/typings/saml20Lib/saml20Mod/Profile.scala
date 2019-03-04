@@ -20,9 +20,7 @@ object Profile {
     audience: java.lang.String = null,
     sessionIndex: java.lang.String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("claims")(claims)
-    __obj.updateDynamic("issuer")(issuer)
+    val __obj = js.Dynamic.literal(claims = claims, issuer = issuer)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (sessionIndex != null) __obj.updateDynamic("sessionIndex")(sessionIndex)
     __obj.asInstanceOf[Profile]

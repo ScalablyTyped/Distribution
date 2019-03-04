@@ -72,19 +72,8 @@ object TestConfiguration {
     url: java.lang.String,
     values: js.Array[NameValuePair]
   ): TestConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(area = area, description = description, id = id, isDefault = isDefault, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, name = name, project = project, revision = revision, state = state, url = url, values = values)
+  
     __obj.asInstanceOf[TestConfiguration]
   }
 }

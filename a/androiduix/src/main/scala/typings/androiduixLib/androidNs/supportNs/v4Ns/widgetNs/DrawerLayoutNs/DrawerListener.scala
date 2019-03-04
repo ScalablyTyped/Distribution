@@ -20,11 +20,8 @@ object DrawerListener {
     onDrawerSlide: js.Function2[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Unit],
     onDrawerStateChanged: js.Function1[scala.Double, scala.Unit]
   ): DrawerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDrawerClosed")(onDrawerClosed)
-    __obj.updateDynamic("onDrawerOpened")(onDrawerOpened)
-    __obj.updateDynamic("onDrawerSlide")(onDrawerSlide)
-    __obj.updateDynamic("onDrawerStateChanged")(onDrawerStateChanged)
+    val __obj = js.Dynamic.literal(onDrawerClosed = onDrawerClosed, onDrawerOpened = onDrawerOpened, onDrawerSlide = onDrawerSlide, onDrawerStateChanged = onDrawerStateChanged)
+  
     __obj.asInstanceOf[DrawerListener]
   }
 }

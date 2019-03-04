@@ -42,22 +42,8 @@ object Anon_ActivateViews {
     updateGlobals: js.Function,
     updateUrl: js.Function
   ): Anon_ActivateViews = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activateViews")(activateViews)
-    __obj.updateDynamic("addCoreResolves")(addCoreResolves)
-    __obj.updateDynamic("eagerResolve")(eagerResolve)
-    __obj.updateDynamic("ignored")(ignored)
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("lazyLoad")(lazyLoad)
-    __obj.updateDynamic("lazyResolve")(lazyResolve)
-    __obj.updateDynamic("loadViews")(loadViews)
-    __obj.updateDynamic("onEnter")(onEnter)
-    __obj.updateDynamic("onExit")(onExit)
-    __obj.updateDynamic("onRetain")(onRetain)
-    __obj.updateDynamic("redirectTo")(redirectTo)
-    __obj.updateDynamic("resolveAll")(resolveAll)
-    __obj.updateDynamic("updateGlobals")(updateGlobals)
-    __obj.updateDynamic("updateUrl")(updateUrl)
+    val __obj = js.Dynamic.literal(activateViews = activateViews, addCoreResolves = addCoreResolves, eagerResolve = eagerResolve, ignored = ignored, invalid = invalid, lazyLoad = lazyLoad, lazyResolve = lazyResolve, loadViews = loadViews, onEnter = onEnter, onExit = onExit, onRetain = onRetain, redirectTo = redirectTo, resolveAll = resolveAll, updateGlobals = updateGlobals, updateUrl = updateUrl)
+  
     __obj.asInstanceOf[Anon_ActivateViews]
   }
 }

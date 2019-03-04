@@ -24,9 +24,7 @@ object HTMLCollectionBase {
     length: scala.Double,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Element] = null
   ): HTMLCollectionBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(item = item, length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[HTMLCollectionBase]
   }

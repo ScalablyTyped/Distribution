@@ -16,9 +16,8 @@ object TestOptions {
     testFn: js.Function3[java.lang.String, scala.Double, Headers, scala.Unit],
     testUrl: java.lang.String
   ): TestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("testFn")(testFn)
-    __obj.updateDynamic("testUrl")(testUrl)
+    val __obj = js.Dynamic.literal(testFn = testFn, testUrl = testUrl)
+  
     __obj.asInstanceOf[TestOptions]
   }
 }

@@ -40,21 +40,8 @@ object DocumentApp {
     openById: js.Function1[java.lang.String, Document],
     openByUrl: js.Function1[java.lang.String, Document]
   ): DocumentApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attribute")(Attribute)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("FontFamily")(FontFamily)
-    __obj.updateDynamic("GlyphType")(GlyphType)
-    __obj.updateDynamic("HorizontalAlignment")(HorizontalAlignment)
-    __obj.updateDynamic("ParagraphHeading")(ParagraphHeading)
-    __obj.updateDynamic("PositionedLayout")(PositionedLayout)
-    __obj.updateDynamic("TextAlignment")(TextAlignment)
-    __obj.updateDynamic("VerticalAlignment")(VerticalAlignment)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("getActiveDocument")(getActiveDocument)
-    __obj.updateDynamic("getUi")(getUi)
-    __obj.updateDynamic("openById")(openById)
-    __obj.updateDynamic("openByUrl")(openByUrl)
+    val __obj = js.Dynamic.literal(Attribute = Attribute, ElementType = ElementType, FontFamily = FontFamily, GlyphType = GlyphType, HorizontalAlignment = HorizontalAlignment, ParagraphHeading = ParagraphHeading, PositionedLayout = PositionedLayout, TextAlignment = TextAlignment, VerticalAlignment = VerticalAlignment, create = create, getActiveDocument = getActiveDocument, getUi = getUi, openById = openById, openByUrl = openByUrl)
+  
     __obj.asInstanceOf[DocumentApp]
   }
 }

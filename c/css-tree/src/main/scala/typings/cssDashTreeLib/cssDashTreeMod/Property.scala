@@ -24,13 +24,8 @@ object Property {
     prefix: java.lang.String,
     vendor: java.lang.String
   ): Property = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basename")(basename)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("hack")(hack)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(basename = basename, custom = custom, hack = hack, name = name, prefix = prefix, vendor = vendor)
+  
     __obj.asInstanceOf[Property]
   }
 }

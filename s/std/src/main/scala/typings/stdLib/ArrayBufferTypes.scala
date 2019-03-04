@@ -16,9 +16,8 @@ trait ArrayBufferTypes extends js.Object {
 object ArrayBufferTypes {
   @scala.inline
   def apply(ArrayBuffer: ArrayBuffer, SharedArrayBuffer: SharedArrayBuffer): ArrayBufferTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArrayBuffer")(ArrayBuffer)
-    __obj.updateDynamic("SharedArrayBuffer")(SharedArrayBuffer)
+    val __obj = js.Dynamic.literal(ArrayBuffer = ArrayBuffer, SharedArrayBuffer = SharedArrayBuffer)
+  
     __obj.asInstanceOf[ArrayBufferTypes]
   }
 }

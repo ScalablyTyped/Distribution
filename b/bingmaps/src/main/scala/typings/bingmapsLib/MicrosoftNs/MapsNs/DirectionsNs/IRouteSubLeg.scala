@@ -24,11 +24,8 @@ object IRouteSubLeg {
     endDescription: java.lang.String,
     startDescription: java.lang.String
   ): IRouteSubLeg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualEnd")(actualEnd)
-    __obj.updateDynamic("actualStart")(actualStart)
-    __obj.updateDynamic("endDescription")(endDescription)
-    __obj.updateDynamic("startDescription")(startDescription)
+    val __obj = js.Dynamic.literal(actualEnd = actualEnd, actualStart = actualStart, endDescription = endDescription, startDescription = startDescription)
+  
     __obj.asInstanceOf[IRouteSubLeg]
   }
 }

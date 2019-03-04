@@ -39,10 +39,8 @@ object MetricTarget {
     `type`: java.lang.String,
     value: java.lang.String
   ): MetricTarget = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("averageUtilization")(averageUtilization)
-    __obj.updateDynamic("averageValue")(averageValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(averageUtilization = averageUtilization, averageValue = averageValue, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MetricTarget]
   }
 }

@@ -12,8 +12,8 @@ trait CollapseState extends js.Object {
 object CollapseState {
   @scala.inline
   def apply(width: Width): CollapseState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CollapseState]
   }
 }

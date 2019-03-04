@@ -16,9 +16,8 @@ object Anon_Error {
     error: js.Function1[java.lang.String, scala.Unit],
     warn: js.Function1[java.lang.String, scala.Unit]
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(error = error, warn = warn)
+  
     __obj.asInstanceOf[Anon_Error]
   }
 }

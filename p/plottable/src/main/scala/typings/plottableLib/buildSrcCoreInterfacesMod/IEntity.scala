@@ -16,12 +16,8 @@ trait IEntity[C /* <: plottableLib.buildSrcComponentsComponentMod.Component */] 
 object IEntity {
   @scala.inline
   def apply[C /* <: plottableLib.buildSrcComponentsComponentMod.Component */](bounds: IEntityBounds, component: C, datum: js.Any, position: Point, selection: SimpleSelection[_]): IEntity[C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    __obj.updateDynamic("datum")(datum)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("selection")(selection)
+    val __obj = js.Dynamic.literal(bounds = bounds, component = component.asInstanceOf[js.Any], datum = datum, position = position, selection = selection)
+  
     __obj.asInstanceOf[IEntity[C]]
   }
 }

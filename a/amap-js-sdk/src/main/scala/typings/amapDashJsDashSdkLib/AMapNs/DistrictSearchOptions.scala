@@ -20,8 +20,7 @@ object DistrictSearchOptions {
     showbiz: js.UndefOr[scala.Boolean] = js.undefined,
     subdistrict: scala.Int | scala.Double = null
   ): DistrictSearchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(level = level)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(showbiz)) __obj.updateDynamic("showbiz")(showbiz)
     if (subdistrict != null) __obj.updateDynamic("subdistrict")(subdistrict.asInstanceOf[js.Any])

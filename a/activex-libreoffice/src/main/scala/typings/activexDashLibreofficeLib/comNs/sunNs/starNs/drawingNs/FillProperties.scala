@@ -154,32 +154,8 @@ object FillProperties {
     FillTransparenceGradientName: java.lang.String,
     GraphicCrop: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.GraphicCrop
   ): FillProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FillBackground")(FillBackground)
-    __obj.updateDynamic("FillBitmap")(FillBitmap)
-    __obj.updateDynamic("FillBitmapLogicalSize")(FillBitmapLogicalSize)
-    __obj.updateDynamic("FillBitmapMode")(FillBitmapMode)
-    __obj.updateDynamic("FillBitmapName")(FillBitmapName)
-    __obj.updateDynamic("FillBitmapOffsetX")(FillBitmapOffsetX)
-    __obj.updateDynamic("FillBitmapOffsetY")(FillBitmapOffsetY)
-    __obj.updateDynamic("FillBitmapPositionOffsetX")(FillBitmapPositionOffsetX)
-    __obj.updateDynamic("FillBitmapPositionOffsetY")(FillBitmapPositionOffsetY)
-    __obj.updateDynamic("FillBitmapRectanglePoint")(FillBitmapRectanglePoint)
-    __obj.updateDynamic("FillBitmapSizeX")(FillBitmapSizeX)
-    __obj.updateDynamic("FillBitmapSizeY")(FillBitmapSizeY)
-    __obj.updateDynamic("FillBitmapStretch")(FillBitmapStretch)
-    __obj.updateDynamic("FillBitmapTile")(FillBitmapTile)
-    __obj.updateDynamic("FillBitmapURL")(FillBitmapURL)
-    __obj.updateDynamic("FillColor")(FillColor)
-    __obj.updateDynamic("FillGradient")(FillGradient)
-    __obj.updateDynamic("FillGradientName")(FillGradientName)
-    __obj.updateDynamic("FillHatch")(FillHatch)
-    __obj.updateDynamic("FillHatchName")(FillHatchName)
-    __obj.updateDynamic("FillStyle")(FillStyle)
-    __obj.updateDynamic("FillTransparence")(FillTransparence)
-    __obj.updateDynamic("FillTransparenceGradient")(FillTransparenceGradient)
-    __obj.updateDynamic("FillTransparenceGradientName")(FillTransparenceGradientName)
-    __obj.updateDynamic("GraphicCrop")(GraphicCrop)
+    val __obj = js.Dynamic.literal(FillBackground = FillBackground, FillBitmap = FillBitmap, FillBitmapLogicalSize = FillBitmapLogicalSize, FillBitmapMode = FillBitmapMode, FillBitmapName = FillBitmapName, FillBitmapOffsetX = FillBitmapOffsetX, FillBitmapOffsetY = FillBitmapOffsetY, FillBitmapPositionOffsetX = FillBitmapPositionOffsetX, FillBitmapPositionOffsetY = FillBitmapPositionOffsetY, FillBitmapRectanglePoint = FillBitmapRectanglePoint, FillBitmapSizeX = FillBitmapSizeX, FillBitmapSizeY = FillBitmapSizeY, FillBitmapStretch = FillBitmapStretch, FillBitmapTile = FillBitmapTile, FillBitmapURL = FillBitmapURL, FillColor = FillColor, FillGradient = FillGradient, FillGradientName = FillGradientName, FillHatch = FillHatch, FillHatchName = FillHatchName, FillStyle = FillStyle, FillTransparence = FillTransparence, FillTransparenceGradient = FillTransparenceGradient, FillTransparenceGradientName = FillTransparenceGradientName, GraphicCrop = GraphicCrop)
+  
     __obj.asInstanceOf[FillProperties]
   }
 }

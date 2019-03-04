@@ -24,13 +24,8 @@ object ErrorOptions {
     visible: scala.Boolean,
     width: scala.Double
   ): ErrorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("symmetric")(symmetric)
-    __obj.updateDynamic("thickness")(thickness)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], opacity = opacity, symmetric = symmetric, thickness = thickness, visible = visible, width = width)
+  
     __obj.asInstanceOf[ErrorOptions]
   }
 }

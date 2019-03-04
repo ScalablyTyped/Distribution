@@ -26,10 +26,7 @@ object NgAnalyzedModules {
     ngModules: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata],
     symbolsMissingModule: js.Array[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol] = null
   ): NgAnalyzedModules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("ngModuleByPipeOrDirective")(ngModuleByPipeOrDirective)
-    __obj.updateDynamic("ngModules")(ngModules)
+    val __obj = js.Dynamic.literal(files = files, ngModuleByPipeOrDirective = ngModuleByPipeOrDirective, ngModules = ngModules)
     if (symbolsMissingModule != null) __obj.updateDynamic("symbolsMissingModule")(symbolsMissingModule)
     __obj.asInstanceOf[NgAnalyzedModules]
   }

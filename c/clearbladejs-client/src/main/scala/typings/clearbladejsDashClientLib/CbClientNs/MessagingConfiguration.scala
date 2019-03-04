@@ -22,9 +22,7 @@ object MessagingConfiguration {
     ports: java.lang.String = null,
     useSSL: js.UndefOr[scala.Boolean] = js.undefined
   ): MessagingConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("userName")(userName)
+    val __obj = js.Dynamic.literal(password = password, userName = userName)
     if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession)
     if (hosts != null) __obj.updateDynamic("hosts")(hosts)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)

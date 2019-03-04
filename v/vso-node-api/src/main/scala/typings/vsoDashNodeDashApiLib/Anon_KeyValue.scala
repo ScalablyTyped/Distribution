@@ -20,9 +20,8 @@ object Anon_KeyValue {
       vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeColorAndIcon
     ]
   ): Anon_KeyValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
     __obj.asInstanceOf[Anon_KeyValue]
   }
 }

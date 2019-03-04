@@ -20,9 +20,7 @@ object Anon_HeightPixels {
     heightPixels: scala.Int | scala.Double = null,
     widthPixels: scala.Int | scala.Double = null
   ): Anon_HeightPixels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(size = size, url = url)
     if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
     if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HeightPixels]

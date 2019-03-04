@@ -42,12 +42,8 @@ object ManagedconfigurationsfordeviceResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
     ]
   ): ManagedconfigurationsfordeviceResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[ManagedconfigurationsfordeviceResource]
   }
 }

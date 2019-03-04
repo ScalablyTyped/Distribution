@@ -15,8 +15,8 @@ trait Anon_Optimistic extends js.Object {
 object Anon_Optimistic {
   @scala.inline
   def apply(optimistic: Anon_Id): Anon_Optimistic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("optimistic")(optimistic)
+    val __obj = js.Dynamic.literal(optimistic = optimistic)
+  
     __obj.asInstanceOf[Anon_Optimistic]
   }
 }

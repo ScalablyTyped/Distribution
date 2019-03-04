@@ -27,14 +27,8 @@ object PeopleFeed {
     title: java.lang.String,
     totalItems: scala.Double
   ): PeopleFeed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("nextPageToken")(nextPageToken)
-    __obj.updateDynamic("selfLink")(selfLink)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("totalItems")(totalItems)
+    val __obj = js.Dynamic.literal(etag = etag, items = items, kind = kind, nextPageToken = nextPageToken, selfLink = selfLink, title = title, totalItems = totalItems)
+  
     __obj.asInstanceOf[PeopleFeed]
   }
 }

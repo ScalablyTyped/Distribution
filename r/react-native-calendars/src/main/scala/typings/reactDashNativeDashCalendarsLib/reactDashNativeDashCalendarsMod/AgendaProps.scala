@@ -153,10 +153,7 @@ object AgendaProps {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     theme: AgendaThemeStyle = null
   ): AgendaProps[TItem] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderEmptyDate")(renderEmptyDate)
-    __obj.updateDynamic("renderItem")(renderItem)
-    __obj.updateDynamic("rowHasChanged")(rowHasChanged)
+    val __obj = js.Dynamic.literal(renderEmptyDate = renderEmptyDate, renderItem = renderItem, rowHasChanged = rowHasChanged)
     if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator)
     if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
     if (futureScrollRange != null) __obj.updateDynamic("futureScrollRange")(futureScrollRange.asInstanceOf[js.Any])

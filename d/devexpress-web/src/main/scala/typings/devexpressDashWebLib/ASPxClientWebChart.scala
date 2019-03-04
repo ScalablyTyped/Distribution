@@ -118,25 +118,8 @@ object ASPxClientWebChart {
     toolTipController: ASPxClientToolTipController,
     toolTipPosition: ASPxClientToolTipPosition
   ): ASPxClientWebChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations)
-    __obj.updateDynamic("appearanceName")(appearanceName)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("chartControl")(chartControl)
-    __obj.updateDynamic("crosshairOptions")(crosshairOptions)
-    __obj.updateDynamic("cssPostfix")(cssPostfix)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("legend")(legend)
-    __obj.updateDynamic("legends")(legends)
-    __obj.updateDynamic("paletteName")(paletteName)
-    __obj.updateDynamic("selectionMode")(selectionMode)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("showCrosshair")(showCrosshair)
-    __obj.updateDynamic("showPointToolTip")(showPointToolTip)
-    __obj.updateDynamic("showSeriesToolTip")(showSeriesToolTip)
-    __obj.updateDynamic("titles")(titles)
-    __obj.updateDynamic("toolTipController")(toolTipController)
-    __obj.updateDynamic("toolTipPosition")(toolTipPosition)
+    val __obj = js.Dynamic.literal(annotations = annotations, appearanceName = appearanceName, chart = chart, chartControl = chartControl, crosshairOptions = crosshairOptions, cssPostfix = cssPostfix, diagram = diagram, legend = legend, legends = legends, paletteName = paletteName, selectionMode = selectionMode, series = series, showCrosshair = showCrosshair, showPointToolTip = showPointToolTip, showSeriesToolTip = showSeriesToolTip, titles = titles, toolTipController = toolTipController, toolTipPosition = toolTipPosition)
+  
     __obj.asInstanceOf[ASPxClientWebChart]
   }
 }

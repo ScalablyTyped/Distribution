@@ -26,9 +26,7 @@ object UserProfile {
     timestamp: scala.Int | scala.Double = null,
     url: java.lang.String = null
   ): UserProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(name = name, userId = userId)
     if (imageData != null) __obj.updateDynamic("imageData")(imageData)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])

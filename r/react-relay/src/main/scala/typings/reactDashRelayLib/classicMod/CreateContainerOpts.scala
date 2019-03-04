@@ -18,8 +18,7 @@ object CreateContainerOpts {
     initialVariables: js.Any = null,
     prepareVariables: js.Function1[/* prevVariables */ RelayVariables, RelayVariables] = null
   ): CreateContainerOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragments")(fragments)
+    val __obj = js.Dynamic.literal(fragments = fragments)
     if (initialVariables != null) __obj.updateDynamic("initialVariables")(initialVariables)
     if (prepareVariables != null) __obj.updateDynamic("prepareVariables")(prepareVariables)
     __obj.asInstanceOf[CreateContainerOpts]

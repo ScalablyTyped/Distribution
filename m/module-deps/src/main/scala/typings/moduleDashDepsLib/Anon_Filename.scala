@@ -18,9 +18,7 @@ object Anon_Filename {
     id: java.lang.String,
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Filename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(filename = filename, id = id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Filename]
   }

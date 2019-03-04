@@ -18,9 +18,7 @@ object Anon_OrganizationArnPosition {
     position: atPulumiPulumiLib.outputMod.Input[scala.Double],
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_OrganizationArnPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("organizationArn")(organizationArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(organizationArn = organizationArn.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OrganizationArnPosition]
   }

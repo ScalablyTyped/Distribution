@@ -35,18 +35,8 @@ object Animation {
     repeat: scala.Double | aframeLib.aframeLibStrings.indefinite,
     to: scala.Double
   ): Animation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("dur")(dur)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(attribute = attribute, begin = begin.asInstanceOf[js.Any], delay = delay, direction = direction.asInstanceOf[js.Any], dur = dur, easing = easing, end = end, fill = fill.asInstanceOf[js.Any], from = from, repeat = repeat.asInstanceOf[js.Any], to = to)
+  
     __obj.asInstanceOf[Animation]
   }
 }

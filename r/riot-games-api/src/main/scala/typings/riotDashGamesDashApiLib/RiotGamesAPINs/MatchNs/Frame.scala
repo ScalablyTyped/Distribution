@@ -18,10 +18,8 @@ object Frame {
     participanFrames: js.Array[org.scalablytyped.runtime.StringDictionary[ParticipantFrame]],
     timestamp: scala.Double
   ): Frame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("participanFrames")(participanFrames)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(events = events, participanFrames = participanFrames, timestamp = timestamp)
+  
     __obj.asInstanceOf[Frame]
   }
 }

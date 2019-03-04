@@ -130,7 +130,8 @@ object SocialIconProps {
     title: java.lang.String = null,
     underlayColor: java.lang.String = null
   ): SocialIconProps = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (Component != null) __obj.updateDynamic("Component")(Component)
     if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

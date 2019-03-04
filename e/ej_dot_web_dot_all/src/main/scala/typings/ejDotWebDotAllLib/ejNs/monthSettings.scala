@@ -13,9 +13,8 @@ trait monthSettings extends js.Object {
 object monthSettings {
   @scala.inline
   def apply(names: js.Array[java.lang.String], namesAbbr: js.Array[java.lang.String]): monthSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("namesAbbr")(namesAbbr)
+    val __obj = js.Dynamic.literal(names = names, namesAbbr = namesAbbr)
+  
     __obj.asInstanceOf[monthSettings]
   }
 }

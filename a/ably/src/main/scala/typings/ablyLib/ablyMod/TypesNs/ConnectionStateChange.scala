@@ -20,9 +20,7 @@ object ConnectionStateChange {
     reason: ErrorInfo = null,
     retryIn: scala.Int | scala.Double = null
   ): ConnectionStateChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (retryIn != null) __obj.updateDynamic("retryIn")(retryIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionStateChange]

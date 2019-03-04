@@ -23,9 +23,8 @@ trait PhysicsRadialExplosionEventData extends js.Object {
 object PhysicsRadialExplosionEventData {
   @scala.inline
   def apply(rays: js.Array[Ray], sphere: Mesh): PhysicsRadialExplosionEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rays")(rays)
-    __obj.updateDynamic("sphere")(sphere)
+    val __obj = js.Dynamic.literal(rays = rays, sphere = sphere)
+  
     __obj.asInstanceOf[PhysicsRadialExplosionEventData]
   }
 }

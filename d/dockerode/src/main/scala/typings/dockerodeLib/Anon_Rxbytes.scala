@@ -28,15 +28,8 @@ object Anon_Rxbytes {
     tx_errors: scala.Double,
     tx_packets: scala.Double
   ): Anon_Rxbytes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rx_bytes")(rx_bytes)
-    __obj.updateDynamic("rx_dropped")(rx_dropped)
-    __obj.updateDynamic("rx_errors")(rx_errors)
-    __obj.updateDynamic("rx_packets")(rx_packets)
-    __obj.updateDynamic("tx_bytes")(tx_bytes)
-    __obj.updateDynamic("tx_dropped")(tx_dropped)
-    __obj.updateDynamic("tx_errors")(tx_errors)
-    __obj.updateDynamic("tx_packets")(tx_packets)
+    val __obj = js.Dynamic.literal(rx_bytes = rx_bytes, rx_dropped = rx_dropped, rx_errors = rx_errors, rx_packets = rx_packets, tx_bytes = tx_bytes, tx_dropped = tx_dropped, tx_errors = tx_errors, tx_packets = tx_packets)
+  
     __obj.asInstanceOf[Anon_Rxbytes]
   }
 }

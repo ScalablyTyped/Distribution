@@ -61,16 +61,8 @@ object FilterFacet {
     scope: js.Function1[java.lang.String, FilterFacet],
     toJSON: js.Function0[js.Any]
   ): FilterFacet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cacheFilter")(cacheFilter)
-    __obj.updateDynamic("facetFilter")(facetFilter)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, filter = filter, global = global, mode = mode, nested = nested, scope = scope, toJSON = toJSON)
+  
     __obj.asInstanceOf[FilterFacet]
   }
 }

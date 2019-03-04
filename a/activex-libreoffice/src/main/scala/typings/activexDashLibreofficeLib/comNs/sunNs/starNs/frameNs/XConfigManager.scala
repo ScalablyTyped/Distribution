@@ -67,14 +67,8 @@ object XConfigManager {
     ],
     substituteVariables: js.Function1[java.lang.String, java.lang.String]
   ): XConfigManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("substituteVariables")(substituteVariables)
+    val __obj = js.Dynamic.literal(acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, flush = flush, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, substituteVariables = substituteVariables)
+  
     __obj.asInstanceOf[XConfigManager]
   }
 }

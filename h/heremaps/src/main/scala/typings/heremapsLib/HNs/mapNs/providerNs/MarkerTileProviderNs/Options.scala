@@ -41,8 +41,7 @@ object Options {
     min: scala.Int | scala.Double = null,
     providesDomMarkers: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestData")(requestData)
+    val __obj = js.Dynamic.literal(requestData = requestData)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (!js.isUndefined(providesDomMarkers)) __obj.updateDynamic("providesDomMarkers")(providesDomMarkers)

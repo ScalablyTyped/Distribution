@@ -32,8 +32,7 @@ object Anon_CommentsComputedKeyLoc {
     value: astDashTypesLib.genKindsMod.ExpressionKind = null,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): Anon_CommentsComputedKeyLoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (loc != null) __obj.updateDynamic("loc")(loc)

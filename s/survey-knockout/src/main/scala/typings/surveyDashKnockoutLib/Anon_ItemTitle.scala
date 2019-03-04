@@ -20,11 +20,8 @@ object Anon_ItemTitle {
     root: java.lang.String,
     row: java.lang.String
   ): Anon_ItemTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemTitle")(itemTitle)
-    __obj.updateDynamic("itemValue")(itemValue)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(itemTitle = itemTitle, itemValue = itemValue, root = root, row = row)
+  
     __obj.asInstanceOf[Anon_ItemTitle]
   }
 }

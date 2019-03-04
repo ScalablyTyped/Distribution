@@ -15,8 +15,8 @@ object Geometry {
     coordinates: Coordinate | js.Array[Coordinate] | js.Array[js.Array[Coordinate]],
     `type`: java.lang.String
   ): Geometry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Geometry]
   }
 }

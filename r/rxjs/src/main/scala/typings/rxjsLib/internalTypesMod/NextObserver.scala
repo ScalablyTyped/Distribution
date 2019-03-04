@@ -20,8 +20,7 @@ object NextObserver {
     complete: js.Function0[scala.Unit] = null,
     error: js.Function1[/* err */ js.Any, scala.Unit] = null
   ): NextObserver[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(next = next)
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (error != null) __obj.updateDynamic("error")(error)

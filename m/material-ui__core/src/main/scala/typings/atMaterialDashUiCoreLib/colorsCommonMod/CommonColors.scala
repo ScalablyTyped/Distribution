@@ -13,9 +13,8 @@ trait CommonColors extends js.Object {
 object CommonColors {
   @scala.inline
   def apply(black: java.lang.String, white: java.lang.String): CommonColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("black")(black)
-    __obj.updateDynamic("white")(white)
+    val __obj = js.Dynamic.literal(black = black, white = white)
+  
     __obj.asInstanceOf[CommonColors]
   }
 }

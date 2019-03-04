@@ -17,9 +17,8 @@ object cssClasses {
     HELPER_TEXT_PERSISTENT: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field-helper-text--persistent`,
     HELPER_TEXT_VALIDATION_MSG: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field-helper-text--validation-msg`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HELPER_TEXT_PERSISTENT")(HELPER_TEXT_PERSISTENT)
-    __obj.updateDynamic("HELPER_TEXT_VALIDATION_MSG")(HELPER_TEXT_VALIDATION_MSG)
+    val __obj = js.Dynamic.literal(HELPER_TEXT_PERSISTENT = HELPER_TEXT_PERSISTENT, HELPER_TEXT_VALIDATION_MSG = HELPER_TEXT_VALIDATION_MSG)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

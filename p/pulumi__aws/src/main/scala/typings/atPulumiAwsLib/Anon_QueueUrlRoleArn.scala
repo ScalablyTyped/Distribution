@@ -18,10 +18,8 @@ object Anon_QueueUrlRoleArn {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     useBase64: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
   ): Anon_QueueUrlRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queueUrl")(queueUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("useBase64")(useBase64.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], useBase64 = useBase64.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_QueueUrlRoleArn]
   }
 }

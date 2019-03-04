@@ -12,8 +12,8 @@ trait OnPrepareListViewListener extends js.Object {
 object OnPrepareListViewListener {
   @scala.inline
   def apply(onPrepareListView: js.Function1[androiduixLib.androidNs.widgetNs.ListView, scala.Unit]): OnPrepareListViewListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPrepareListView")(onPrepareListView)
+    val __obj = js.Dynamic.literal(onPrepareListView = onPrepareListView)
+  
     __obj.asInstanceOf[OnPrepareListViewListener]
   }
 }

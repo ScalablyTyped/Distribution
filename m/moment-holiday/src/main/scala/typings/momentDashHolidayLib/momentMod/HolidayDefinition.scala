@@ -24,8 +24,7 @@ object HolidayDefinition {
     regions: js.Array[java.lang.String] = null,
     regions_n: js.Array[java.lang.String] = null
   ): HolidayDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(date = date)
     if (keywords != null) __obj.updateDynamic("keywords")(keywords)
     if (keywords_n != null) __obj.updateDynamic("keywords_n")(keywords_n)
     if (keywords_y != null) __obj.updateDynamic("keywords_y")(keywords_y)

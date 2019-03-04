@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonBooleanDateTime extends js.Object {
 object Anon_EnumValuesAnonBooleanDateTime {
   @scala.inline
   def apply(enumValues: Anon_BooleanDateTime): Anon_EnumValuesAnonBooleanDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonBooleanDateTime]
   }
 }

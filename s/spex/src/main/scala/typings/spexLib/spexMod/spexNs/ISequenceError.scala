@@ -33,17 +33,8 @@ object ISequenceError {
     stack: java.lang.String,
     toString: js.Function0[java.lang.String]
   ): ISequenceError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dest")(dest)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(dest = dest, duration = duration, error = error, index = index, message = message, name = name, reason = reason, source = source, stack = stack, toString = toString)
+  
     __obj.asInstanceOf[ISequenceError]
   }
 }

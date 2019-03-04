@@ -29,16 +29,8 @@ object XConditionalFormats {
     release: js.Function0[scala.Unit],
     removeByID: js.Function1[scala.Double, scala.Unit]
   ): XConditionalFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConditionalFormats")(ConditionalFormats)
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createByRange")(createByRange)
-    __obj.updateDynamic("getConditionalFormats")(getConditionalFormats)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByID")(removeByID)
+    val __obj = js.Dynamic.literal(ConditionalFormats = ConditionalFormats, Length = Length, acquire = acquire, createByRange = createByRange, getConditionalFormats = getConditionalFormats, getLength = getLength, queryInterface = queryInterface, release = release, removeByID = removeByID)
+  
     __obj.asInstanceOf[XConditionalFormats]
   }
 }

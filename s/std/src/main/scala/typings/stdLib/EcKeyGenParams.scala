@@ -12,9 +12,8 @@ trait EcKeyGenParams extends Algorithm {
 object EcKeyGenParams {
   @scala.inline
   def apply(name: java.lang.String, namedCurve: NamedCurve): EcKeyGenParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namedCurve")(namedCurve)
+    val __obj = js.Dynamic.literal(name = name, namedCurve = namedCurve)
+  
     __obj.asInstanceOf[EcKeyGenParams]
   }
 }

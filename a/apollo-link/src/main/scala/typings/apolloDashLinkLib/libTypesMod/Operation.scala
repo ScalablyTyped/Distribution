@@ -26,14 +26,8 @@ object Operation {
     toKey: js.Function0[java.lang.String],
     variables: stdLib.Record[java.lang.String, _]
   ): Operation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("operationName")(operationName)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("setContext")(setContext)
-    __obj.updateDynamic("toKey")(toKey)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(extensions = extensions, getContext = getContext, operationName = operationName, query = query, setContext = setContext, toKey = toKey, variables = variables)
+  
     __obj.asInstanceOf[Operation]
   }
 }

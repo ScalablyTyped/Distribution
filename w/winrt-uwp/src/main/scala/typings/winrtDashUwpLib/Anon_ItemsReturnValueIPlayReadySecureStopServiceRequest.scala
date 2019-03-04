@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest {
     items: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.IPlayReadySecureStopServiceRequest,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest]
   }
 }

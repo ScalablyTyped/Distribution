@@ -28,12 +28,7 @@ object Profile {
     profileUrl: java.lang.String = null,
     username: java.lang.String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_json")(_json)
-    __obj.updateDynamic("_raw")(_raw)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(_json = _json, _raw = _raw, displayName = displayName, id = id, provider = provider)
     if (emails != null) __obj.updateDynamic("emails")(emails)
     if (gender != null) __obj.updateDynamic("gender")(gender)
     if (name != null) __obj.updateDynamic("name")(name)

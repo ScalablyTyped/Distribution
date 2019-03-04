@@ -51,8 +51,7 @@ object TestReportSetupActionAssert {
     message: markdown = null,
     modifierExtension: js.Array[Extension] = null
   ): TestReportSetupActionAssert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
     if (_detail != null) __obj.updateDynamic("_detail")(_detail)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

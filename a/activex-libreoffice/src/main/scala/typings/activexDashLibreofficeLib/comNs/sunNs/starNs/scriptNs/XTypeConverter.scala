@@ -37,12 +37,8 @@ object XTypeConverter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTypeConverter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertTo")(convertTo)
-    __obj.updateDynamic("convertToSimpleType")(convertToSimpleType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convertTo = convertTo, convertToSimpleType = convertToSimpleType, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTypeConverter]
   }
 }

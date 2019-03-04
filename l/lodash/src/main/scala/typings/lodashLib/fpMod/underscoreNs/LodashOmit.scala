@@ -12,7 +12,7 @@ trait LodashOmit extends js.Object {
     paths: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.PropertyName],
     `object`: T
   ): T = js.native
-  def apply[T /* <: lodashLib.lodashMod.underscoreNs.AnyKindOfDictionary */](paths: lodashLib.lodashMod.underscoreNs.`__`): LodashOmit1x2[T] = js.native
-  def apply[T /* <: lodashLib.lodashMod.underscoreNs.AnyKindOfDictionary */](paths: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashOmit1x2[T] = js.native
+  def apply[T /* <: lodashLib.lodashMod.underscoreNs.AnyKindOfDictionary */](paths: lodashLib.lodashMod.underscoreNs.__): LodashOmit1x2[T] = js.native
+  def apply[T /* <: lodashLib.lodashMod.underscoreNs.AnyKindOfDictionary */](paths: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashOmit1x2[T] = js.native
 }
 

@@ -30,16 +30,8 @@ object InputByType {
     text: java.lang.String,
     uint8array: stdLib.Uint8Array
   ): InputByType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("arraybuffer")(arraybuffer)
-    __obj.updateDynamic("base64")(base64)
-    __obj.updateDynamic("binarystring")(binarystring)
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("stream")(stream)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("uint8array")(uint8array)
+    val __obj = js.Dynamic.literal(array = array, arraybuffer = arraybuffer, base64 = base64, binarystring = binarystring, blob = blob, stream = stream, string = string, text = text, uint8array = uint8array)
+  
     __obj.asInstanceOf[InputByType]
   }
 }

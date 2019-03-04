@@ -14,10 +14,8 @@ trait Anon_ClassPrefix extends js.Object {
 object Anon_ClassPrefix {
   @scala.inline
   def apply(classPrefix: java.lang.String, enableClasses: scala.Boolean, enableJSClass: scala.Boolean): Anon_ClassPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classPrefix")(classPrefix)
-    __obj.updateDynamic("enableClasses")(enableClasses)
-    __obj.updateDynamic("enableJSClass")(enableJSClass)
+    val __obj = js.Dynamic.literal(classPrefix = classPrefix, enableClasses = enableClasses, enableJSClass = enableJSClass)
+  
     __obj.asInstanceOf[Anon_ClassPrefix]
   }
 }

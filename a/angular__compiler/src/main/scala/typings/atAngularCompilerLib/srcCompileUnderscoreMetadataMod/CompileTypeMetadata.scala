@@ -17,10 +17,8 @@ object CompileTypeMetadata {
     lifecycleHooks: js.Array[atAngularCompilerLib.srcLifecycleUnderscoreReflectorMod.LifecycleHooks],
     reference: js.Any
   ): CompileTypeMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diDeps")(diDeps)
-    __obj.updateDynamic("lifecycleHooks")(lifecycleHooks)
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(diDeps = diDeps, lifecycleHooks = lifecycleHooks, reference = reference)
+  
     __obj.asInstanceOf[CompileTypeMetadata]
   }
 }

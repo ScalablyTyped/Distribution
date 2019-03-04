@@ -14,10 +14,8 @@ trait PaneItemObservedEvent extends js.Object {
 object PaneItemObservedEvent {
   @scala.inline
   def apply(index: scala.Double, item: js.Object, pane: Pane): PaneItemObservedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("pane")(pane)
+    val __obj = js.Dynamic.literal(index = index, item = item, pane = pane)
+  
     __obj.asInstanceOf[PaneItemObservedEvent]
   }
 }

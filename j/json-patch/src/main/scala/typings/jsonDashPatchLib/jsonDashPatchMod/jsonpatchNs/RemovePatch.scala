@@ -14,9 +14,8 @@ trait RemovePatch
 object RemovePatch {
   @scala.inline
   def apply(op: jsonDashPatchLib.jsonDashPatchLibStrings.remove, path: java.lang.String): RemovePatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(op = op, path = path)
+  
     __obj.asInstanceOf[RemovePatch]
   }
 }

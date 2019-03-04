@@ -16,8 +16,8 @@ object Anon_Segmentlist {
     segments: js.Array[intercomDashClientLib.userMod.Segment],
     `type`: intercomDashClientLib.intercomDashClientLibStrings.segmentDOTlist
   ): Anon_Segmentlist = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(segments = segments)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Segmentlist]
   }
 }

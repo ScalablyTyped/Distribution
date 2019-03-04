@@ -22,12 +22,8 @@ object Anon_AUTHENTICATIONREQUIRED {
     RUNNING: chromeDashAppsLib.chromeDashAppsLibStrings.running,
     TEMPORARY_UNAVAILABLE: chromeDashAppsLib.chromeDashAppsLibStrings.temporary_unavailable
   ): Anon_AUTHENTICATIONREQUIRED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AUTHENTICATION_REQUIRED")(AUTHENTICATION_REQUIRED)
-    __obj.updateDynamic("DISABLED")(DISABLED)
-    __obj.updateDynamic("INITIALIZING")(INITIALIZING)
-    __obj.updateDynamic("RUNNING")(RUNNING)
-    __obj.updateDynamic("TEMPORARY_UNAVAILABLE")(TEMPORARY_UNAVAILABLE)
+    val __obj = js.Dynamic.literal(AUTHENTICATION_REQUIRED = AUTHENTICATION_REQUIRED, DISABLED = DISABLED, INITIALIZING = INITIALIZING, RUNNING = RUNNING, TEMPORARY_UNAVAILABLE = TEMPORARY_UNAVAILABLE)
+  
     __obj.asInstanceOf[Anon_AUTHENTICATIONREQUIRED]
   }
 }

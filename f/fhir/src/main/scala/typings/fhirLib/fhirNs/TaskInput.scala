@@ -296,7 +296,8 @@ object TaskInput {
     valueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
     valueUri: uri = null
   ): TaskInput = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_valueBase64Binary != null) __obj.updateDynamic("_valueBase64Binary")(_valueBase64Binary)

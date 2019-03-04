@@ -98,18 +98,8 @@ object ServiceAccountsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
     ]
   ): ServiceAccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("signBlob")(signBlob)
-    __obj.updateDynamic("signJwt")(signJwt)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, keys = keys, list = list, setIamPolicy = setIamPolicy, signBlob = signBlob, signJwt = signJwt, testIamPermissions = testIamPermissions, update = update)
+  
     __obj.asInstanceOf[ServiceAccountsResource]
   }
 }

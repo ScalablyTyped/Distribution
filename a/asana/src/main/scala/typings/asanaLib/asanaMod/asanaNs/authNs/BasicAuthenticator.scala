@@ -23,10 +23,8 @@ object BasicAuthenticator {
     establishCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
     refreshCredentials: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Boolean]]
   ): BasicAuthenticator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticateRequest")(authenticateRequest)
-    __obj.updateDynamic("establishCredentials")(establishCredentials)
-    __obj.updateDynamic("refreshCredentials")(refreshCredentials)
+    val __obj = js.Dynamic.literal(authenticateRequest = authenticateRequest, establishCredentials = establishCredentials, refreshCredentials = refreshCredentials)
+  
     __obj.asInstanceOf[BasicAuthenticator]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_ItemsReturnValueArrayIJsonValue extends js.Object {
 object Anon_ItemsReturnValueArrayIJsonValue {
   @scala.inline
   def apply(items: js.Array[winrtLib.WindowsNs.DataNs.JsonNs.IJsonValue], returnValue: scala.Double): Anon_ItemsReturnValueArrayIJsonValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueArrayIJsonValue]
   }
 }

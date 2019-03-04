@@ -17,11 +17,8 @@ object ISurveyErrorOwner {
     getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
     getProcessedText: js.Function1[java.lang.String, java.lang.String]
   ): ISurveyErrorOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getErrorCustomText")(getErrorCustomText)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
-    __obj.updateDynamic("getProcessedText")(getProcessedText)
+    val __obj = js.Dynamic.literal(getErrorCustomText = getErrorCustomText, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText)
+  
     __obj.asInstanceOf[ISurveyErrorOwner]
   }
 }

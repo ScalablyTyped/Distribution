@@ -15,8 +15,8 @@ object AboutResource {
   def apply(
     get: js.Function1[gapiDotClientDotDriveLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[About]]
   ): AboutResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[AboutResource]
   }
 }

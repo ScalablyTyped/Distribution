@@ -18,10 +18,8 @@ object ShellChannelRequest {
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.shell,
     wantReply: scala.Boolean
   ): ShellChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("wantReply")(wantReply)
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request, wantReply = wantReply)
+  
     __obj.asInstanceOf[ShellChannelRequest]
   }
 }

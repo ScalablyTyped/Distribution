@@ -34,11 +34,8 @@ object Options {
     maxSize: webpackLib.webpackLibNumbers.`50000`,
     minSize: webpackLib.webpackLibNumbers.`30000`
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chunkOverhead")(chunkOverhead)
-    __obj.updateDynamic("entryChunkMultiplicator")(entryChunkMultiplicator)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("minSize")(minSize)
+    val __obj = js.Dynamic.literal(chunkOverhead = chunkOverhead, entryChunkMultiplicator = entryChunkMultiplicator, maxSize = maxSize, minSize = minSize)
+  
     __obj.asInstanceOf[Options]
   }
 }

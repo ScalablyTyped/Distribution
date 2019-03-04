@@ -30,8 +30,7 @@ object NetworkInfo {
     SSID: java.lang.String = null,
     Security: java.lang.String = null
   ): NetworkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Type = Type)
     if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
     if (GUID != null) __obj.updateDynamic("GUID")(GUID)
     if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID)

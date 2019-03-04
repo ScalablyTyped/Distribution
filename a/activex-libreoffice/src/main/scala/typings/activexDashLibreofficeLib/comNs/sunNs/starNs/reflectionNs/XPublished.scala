@@ -45,8 +45,8 @@ trait XPublished extends js.Object {
 object XPublished {
   @scala.inline
   def apply(isPublished: js.Function0[scala.Boolean]): XPublished = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isPublished")(isPublished)
+    val __obj = js.Dynamic.literal(isPublished = isPublished)
+  
     __obj.asInstanceOf[XPublished]
   }
 }

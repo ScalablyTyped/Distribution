@@ -28,14 +28,7 @@ object CognitoUserPoolTriggerEvent {
     version: scala.Double,
     userName: java.lang.String = null
   ): CognitoUserPoolTriggerEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callerContext")(callerContext)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("triggerSource")(triggerSource.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolId")(userPoolId)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(callerContext = callerContext, region = region, request = request, response = response, triggerSource = triggerSource.asInstanceOf[js.Any], userPoolId = userPoolId, version = version)
     if (userName != null) __obj.updateDynamic("userName")(userName)
     __obj.asInstanceOf[CognitoUserPoolTriggerEvent]
   }

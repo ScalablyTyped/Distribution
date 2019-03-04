@@ -20,11 +20,8 @@ object Delegator {
     method: js.Function1[java.lang.String, Delegator],
     setter: js.Function1[java.lang.String, Delegator]
   ): Delegator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access")(access)
-    __obj.updateDynamic("getter")(getter)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("setter")(setter)
+    val __obj = js.Dynamic.literal(access = access, getter = getter, method = method, setter = setter)
+  
     __obj.asInstanceOf[Delegator]
   }
 }

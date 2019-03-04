@@ -26,10 +26,7 @@ object CallbackQuery {
     inline_message_id: java.lang.String = null,
     message: Message = null
   ): CallbackQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chat_instance")(chat_instance)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(chat_instance = chat_instance, from = from, id = id)
     if (data != null) __obj.updateDynamic("data")(data)
     if (game_short_name != null) __obj.updateDynamic("game_short_name")(game_short_name)
     if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id)

@@ -32,16 +32,8 @@ object BaseChain {
     lte: js.Function1[js.Any, T],
     `null`: js.Function0[T]
   ): BaseChain[T] = {
-    val __obj = js.Dynamic.literal(`null` = `null`)
-    __obj.updateDynamic("beginsWith")(beginsWith)
-    __obj.updateDynamic("between")(between)
-    __obj.updateDynamic("eq")(eq)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("gt")(gt)
-    __obj.updateDynamic("gte")(gte)
-    __obj.updateDynamic("lt")(lt)
-    __obj.updateDynamic("lte")(lte)
+    val __obj = js.Dynamic.literal(beginsWith = beginsWith, between = between, eq = eq, equals = equals, exists = exists, gt = gt, gte = gte, lt = lt, lte = lte)
+    __obj.updateDynamic("null")(`null`)
     __obj.asInstanceOf[BaseChain[T]]
   }
 }

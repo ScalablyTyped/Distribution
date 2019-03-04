@@ -24,13 +24,8 @@ object CardAction {
     setOpenLink: js.Function1[OpenLink, CardAction],
     setText: js.Function1[java.lang.String, CardAction]
   ): CardAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
-    __obj.updateDynamic("setComposeAction")(setComposeAction)
-    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
-    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink, setText = setText)
+  
     __obj.asInstanceOf[CardAction]
   }
 }

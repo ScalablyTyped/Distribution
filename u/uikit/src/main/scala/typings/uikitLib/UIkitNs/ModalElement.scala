@@ -28,10 +28,8 @@ object ModalElement {
     isActive: js.Function0[scala.Boolean],
     show: js.Function0[scala.Unit]
   ): ModalElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(hide = hide, isActive = isActive, show = show)
+  
     __obj.asInstanceOf[ModalElement]
   }
 }

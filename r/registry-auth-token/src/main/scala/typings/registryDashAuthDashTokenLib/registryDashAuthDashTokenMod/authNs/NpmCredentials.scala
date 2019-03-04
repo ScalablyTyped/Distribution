@@ -35,8 +35,8 @@ object NpmCredentials {
     password: java.lang.String = null,
     username: java.lang.String = null
   ): NpmCredentials = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[NpmCredentials]

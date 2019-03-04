@@ -99,19 +99,8 @@ object INewEventResponse {
     updated_time: java.lang.String,
     visibility: java.lang.String
   ): INewEventResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availability")(availability)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("end_time")(end_time)
-    __obj.updateDynamic("is_all_day_event")(is_all_day_event)
-    __obj.updateDynamic("is_recurrent")(is_recurrent)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("recurrence")(recurrence)
-    __obj.updateDynamic("reminder_time")(reminder_time)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("updated_time")(updated_time)
-    __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(availability = availability, description = description, end_time = end_time, is_all_day_event = is_all_day_event, is_recurrent = is_recurrent, location = location, name = name, recurrence = recurrence, reminder_time = reminder_time, start_time = start_time, updated_time = updated_time, visibility = visibility)
+  
     __obj.asInstanceOf[INewEventResponse]
   }
 }

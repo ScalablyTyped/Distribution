@@ -48,9 +48,7 @@ object TaskArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): TaskArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationLocationArn")(destinationLocationArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("sourceLocationArn")(sourceLocationArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destinationLocationArn = destinationLocationArn.asInstanceOf[js.Any], sourceLocationArn = sourceLocationArn.asInstanceOf[js.Any])
     if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

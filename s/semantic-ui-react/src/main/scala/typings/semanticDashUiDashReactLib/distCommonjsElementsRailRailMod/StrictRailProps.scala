@@ -46,8 +46,7 @@ object StrictRailProps {
     internal: js.UndefOr[scala.Boolean] = js.undefined,
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.big | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.massive = null
   ): StrictRailProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(position = position)
     if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(attached)) __obj.updateDynamic("attached")(attached)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

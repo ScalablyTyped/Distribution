@@ -24,10 +24,7 @@ object StrategyOptions {
     lang: java.lang.String = null,
     profileFields: js.Array[java.lang.String] = null
   ): StrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
     if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)

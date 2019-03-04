@@ -20,11 +20,8 @@ object PrivateKey {
     id: java.lang.String,
     version: scala.Double
   ): PrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("crypto")(crypto)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(address = address, crypto = crypto, id = id, version = version)
+  
     __obj.asInstanceOf[PrivateKey]
   }
 }

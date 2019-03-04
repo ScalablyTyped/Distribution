@@ -26,9 +26,7 @@ object InputObjectTypeDefinitionNode {
     fields: js.Array[InputValueDefinitionNode] = null,
     loc: Location = null
   ): InputObjectTypeDefinitionNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (fields != null) __obj.updateDynamic("fields")(fields)

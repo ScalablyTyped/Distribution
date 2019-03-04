@@ -12,8 +12,8 @@ trait Anon_TypeCompileTypeMetadata extends js.Object {
 object Anon_TypeCompileTypeMetadata {
   @scala.inline
   def apply(`type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeMetadata): Anon_TypeCompileTypeMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_TypeCompileTypeMetadata]
   }
 }

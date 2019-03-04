@@ -24,9 +24,7 @@ object Anon_Entry {
     noparse: js.UndefOr[scala.Boolean] = js.undefined,
     source: java.lang.String = null
   ): Anon_Entry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(file = file, id = id)
     if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry)
     if (expose != null) __obj.updateDynamic("expose")(expose)
     if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse)

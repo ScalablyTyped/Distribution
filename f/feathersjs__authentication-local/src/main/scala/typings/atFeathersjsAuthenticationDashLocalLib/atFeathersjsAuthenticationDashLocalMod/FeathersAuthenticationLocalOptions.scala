@@ -62,17 +62,8 @@ object FeathersAuthenticationLocalOptions {
     session: scala.Boolean,
     usernameField: java.lang.String
   ): FeathersAuthenticationLocalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Verifier")(Verifier)
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("entityPasswordField")(entityPasswordField)
-    __obj.updateDynamic("entityUsernameField")(entityUsernameField)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    __obj.updateDynamic("passwordField")(passwordField)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("usernameField")(usernameField)
+    val __obj = js.Dynamic.literal(Verifier = Verifier, entity = entity, entityPasswordField = entityPasswordField, entityUsernameField = entityUsernameField, name = name, passReqToCallback = passReqToCallback, passwordField = passwordField, service = service, session = session, usernameField = usernameField)
+  
     __obj.asInstanceOf[FeathersAuthenticationLocalOptions]
   }
 }

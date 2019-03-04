@@ -14,10 +14,8 @@ trait IHighlightResultBase extends js.Object {
 object IHighlightResultBase {
   @scala.inline
   def apply(language: java.lang.String, relevance: scala.Double, value: java.lang.String): IHighlightResultBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("relevance")(relevance)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(language = language, relevance = relevance, value = value)
+  
     __obj.asInstanceOf[IHighlightResultBase]
   }
 }

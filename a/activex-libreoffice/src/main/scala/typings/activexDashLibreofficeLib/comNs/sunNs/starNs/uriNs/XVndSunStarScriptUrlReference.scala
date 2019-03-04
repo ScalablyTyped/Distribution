@@ -48,41 +48,8 @@ object XVndSunStarScriptUrlReference {
     setName: js.Function1[java.lang.String, scala.Unit],
     setParameter: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XVndSunStarScriptUrlReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Authority")(Authority)
-    __obj.updateDynamic("Fragment")(Fragment)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("PathSegmentCount")(PathSegmentCount)
-    __obj.updateDynamic("Query")(Query)
-    __obj.updateDynamic("Scheme")(Scheme)
-    __obj.updateDynamic("SchemeSpecificPart")(SchemeSpecificPart)
-    __obj.updateDynamic("UriReference")(UriReference)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearFragment")(clearFragment)
-    __obj.updateDynamic("getAuthority")(getAuthority)
-    __obj.updateDynamic("getFragment")(getFragment)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParameter")(getParameter)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("getPathSegment")(getPathSegment)
-    __obj.updateDynamic("getPathSegmentCount")(getPathSegmentCount)
-    __obj.updateDynamic("getQuery")(getQuery)
-    __obj.updateDynamic("getScheme")(getScheme)
-    __obj.updateDynamic("getSchemeSpecificPart")(getSchemeSpecificPart)
-    __obj.updateDynamic("getUriReference")(getUriReference)
-    __obj.updateDynamic("hasAuthority")(hasAuthority)
-    __obj.updateDynamic("hasFragment")(hasFragment)
-    __obj.updateDynamic("hasParameter")(hasParameter)
-    __obj.updateDynamic("hasQuery")(hasQuery)
-    __obj.updateDynamic("hasRelativePath")(hasRelativePath)
-    __obj.updateDynamic("isAbsolute")(isAbsolute)
-    __obj.updateDynamic("isHierarchical")(isHierarchical)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFragment")(setFragment)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParameter")(setParameter)
+    val __obj = js.Dynamic.literal(Authority = Authority, Fragment = Fragment, Name = Name, Path = Path, PathSegmentCount = PathSegmentCount, Query = Query, Scheme = Scheme, SchemeSpecificPart = SchemeSpecificPart, UriReference = UriReference, acquire = acquire, clearFragment = clearFragment, getAuthority = getAuthority, getFragment = getFragment, getName = getName, getParameter = getParameter, getPath = getPath, getPathSegment = getPathSegment, getPathSegmentCount = getPathSegmentCount, getQuery = getQuery, getScheme = getScheme, getSchemeSpecificPart = getSchemeSpecificPart, getUriReference = getUriReference, hasAuthority = hasAuthority, hasFragment = hasFragment, hasParameter = hasParameter, hasQuery = hasQuery, hasRelativePath = hasRelativePath, isAbsolute = isAbsolute, isHierarchical = isHierarchical, queryInterface = queryInterface, release = release, setFragment = setFragment, setName = setName, setParameter = setParameter)
+  
     __obj.asInstanceOf[XVndSunStarScriptUrlReference]
   }
 }

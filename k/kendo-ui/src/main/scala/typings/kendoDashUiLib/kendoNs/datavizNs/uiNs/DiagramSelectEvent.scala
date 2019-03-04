@@ -19,10 +19,7 @@ object DiagramSelectEvent {
     deselected: js.Any = null,
     selected: js.Any = null
   ): DiagramSelectEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (deselected != null) __obj.updateDynamic("deselected")(deselected)
     if (selected != null) __obj.updateDynamic("selected")(selected)
     __obj.asInstanceOf[DiagramSelectEvent]

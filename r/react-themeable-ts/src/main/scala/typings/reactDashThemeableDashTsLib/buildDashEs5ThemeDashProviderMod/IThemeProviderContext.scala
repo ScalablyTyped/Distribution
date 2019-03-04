@@ -12,8 +12,8 @@ trait IThemeProviderContext extends js.Object {
 object IThemeProviderContext {
   @scala.inline
   def apply(reactThemeable: js.Any): IThemeProviderContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reactThemeable")(reactThemeable)
+    val __obj = js.Dynamic.literal(reactThemeable = reactThemeable)
+  
     __obj.asInstanceOf[IThemeProviderContext]
   }
 }

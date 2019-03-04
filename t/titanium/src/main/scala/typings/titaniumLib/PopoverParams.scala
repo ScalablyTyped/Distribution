@@ -31,8 +31,7 @@ object PopoverParams {
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     rect: Dimension = null
   ): PopoverParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(view = view)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (rect != null) __obj.updateDynamic("rect")(rect)
     __obj.asInstanceOf[PopoverParams]

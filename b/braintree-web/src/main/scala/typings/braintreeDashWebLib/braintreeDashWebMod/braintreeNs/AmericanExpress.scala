@@ -76,11 +76,8 @@ object AmericanExpress {
     getExpressCheckoutProfile: js.Function2[braintreeDashWebLib.Anon_Nonce, callback, scala.Unit],
     getRewardsBalance: js.Function2[braintreeDashWebLib.Anon_Nonce, callback, scala.Unit]
   ): AmericanExpress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VERSION")(VERSION)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("getExpressCheckoutProfile")(getExpressCheckoutProfile)
-    __obj.updateDynamic("getRewardsBalance")(getRewardsBalance)
+    val __obj = js.Dynamic.literal(VERSION = VERSION, create = create, getExpressCheckoutProfile = getExpressCheckoutProfile, getRewardsBalance = getRewardsBalance)
+  
     __obj.asInstanceOf[AmericanExpress]
   }
 }

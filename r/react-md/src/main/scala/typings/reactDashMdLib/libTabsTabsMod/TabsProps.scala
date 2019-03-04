@@ -159,8 +159,7 @@ object TabsProps {
     previousIconClassName: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TabsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeTabClassName != null) __obj.updateDynamic("activeTabClassName")(activeTabClassName)
     if (activeTabIndex != null) __obj.updateDynamic("activeTabIndex")(activeTabIndex.asInstanceOf[js.Any])

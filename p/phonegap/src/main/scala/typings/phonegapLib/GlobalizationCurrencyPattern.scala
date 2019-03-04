@@ -24,13 +24,8 @@ object GlobalizationCurrencyPattern {
     pattern: java.lang.String,
     rounding: scala.Double
   ): GlobalizationCurrencyPattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("decimal")(decimal)
-    __obj.updateDynamic("fraction")(fraction)
-    __obj.updateDynamic("grouping")(grouping)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("rounding")(rounding)
+    val __obj = js.Dynamic.literal(code = code, decimal = decimal, fraction = fraction, grouping = grouping, pattern = pattern, rounding = rounding)
+  
     __obj.asInstanceOf[GlobalizationCurrencyPattern]
   }
 }

@@ -70,11 +70,8 @@ object IPackageResource {
     installData: js.Function1[java.lang.String, scala.Unit],
     installFiles: js.Function1[java.lang.String, scala.Unit]
   ): IPackageResource = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("cleanUp")(cleanUp)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("installData")(installData)
-    __obj.updateDynamic("installFiles")(installFiles)
+    val __obj = js.Dynamic.literal(cleanUp = cleanUp, fetch = fetch, installData = installData, installFiles = installFiles)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[IPackageResource]
   }
 }

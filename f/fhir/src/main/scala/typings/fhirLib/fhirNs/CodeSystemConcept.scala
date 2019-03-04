@@ -66,8 +66,7 @@ object CodeSystemConcept {
     modifierExtension: js.Array[Extension] = null,
     property: js.Array[CodeSystemConceptProperty] = null
   ): CodeSystemConcept = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_definition != null) __obj.updateDynamic("_definition")(_definition)
     if (_display != null) __obj.updateDynamic("_display")(_display)

@@ -25,12 +25,7 @@ object Validatable {
     validating: scala.Boolean,
     error: java.lang.String = null
   ): Validatable[TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$")($.asInstanceOf[js.Any])
-    __obj.updateDynamic("enableAutoValidation")(enableAutoValidation)
-    __obj.updateDynamic("hasError")(hasError)
-    __obj.updateDynamic("validate")(validate)
-    __obj.updateDynamic("validating")(validating)
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], enableAutoValidation = enableAutoValidation, hasError = hasError, validate = validate, validating = validating)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[Validatable[TValue]]
   }

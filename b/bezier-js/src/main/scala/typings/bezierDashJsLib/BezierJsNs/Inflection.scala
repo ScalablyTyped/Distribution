@@ -20,10 +20,7 @@ object Inflection {
     y: js.Array[scala.Double],
     z: js.Array[scala.Double] = null
   ): Inflection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(values = values, x = x, y = y)
     if (z != null) __obj.updateDynamic("z")(z)
     __obj.asInstanceOf[Inflection]
   }

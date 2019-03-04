@@ -16,9 +16,8 @@ object SignedMessageEvent {
     event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.signature_request_signed,
     signature_id: java.lang.String
   ): SignedMessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("signature_id")(signature_id)
+    val __obj = js.Dynamic.literal(event = event, signature_id = signature_id)
+  
     __obj.asInstanceOf[SignedMessageEvent]
   }
 }

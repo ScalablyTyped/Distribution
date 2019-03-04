@@ -22,12 +22,8 @@ object Anon_AddressTypes {
     netType: java.lang.String,
     srcList: java.lang.String
   ): Anon_AddressTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressTypes")(addressTypes)
-    __obj.updateDynamic("destAddress")(destAddress)
-    __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("netType")(netType)
-    __obj.updateDynamic("srcList")(srcList)
+    val __obj = js.Dynamic.literal(addressTypes = addressTypes, destAddress = destAddress, filterMode = filterMode.asInstanceOf[js.Any], netType = netType, srcList = srcList)
+  
     __obj.asInstanceOf[Anon_AddressTypes]
   }
 }

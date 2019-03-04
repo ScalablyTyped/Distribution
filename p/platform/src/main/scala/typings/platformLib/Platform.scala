@@ -33,9 +33,7 @@ object Platform {
     ua: java.lang.String = null,
     version: java.lang.String = null
   ): Platform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(parse = parse, toString = toString)
     if (description != null) __obj.updateDynamic("description")(description)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)

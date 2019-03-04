@@ -28,11 +28,8 @@ object LayersResource {
     ],
     volumeAnnotations: VolumeAnnotationsResource
   ): LayersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationData")(annotationData)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("volumeAnnotations")(volumeAnnotations)
+    val __obj = js.Dynamic.literal(annotationData = annotationData, get = get, list = list, volumeAnnotations = volumeAnnotations)
+  
     __obj.asInstanceOf[LayersResource]
   }
 }

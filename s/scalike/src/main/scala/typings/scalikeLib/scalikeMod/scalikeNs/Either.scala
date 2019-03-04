@@ -26,14 +26,8 @@ object Either {
     swap: js.Function0[Either[B, A]],
     value: A | B
   ): Either[A, B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fold")(fold)
-    __obj.updateDynamic("isLeft")(isLeft)
-    __obj.updateDynamic("isRight")(isRight)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("swap")(swap)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fold = fold, isLeft = isLeft, isRight = isRight, left = left, right = right, swap = swap, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Either[A, B]]
   }
 }

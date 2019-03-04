@@ -69,38 +69,8 @@ object DocumentScriptLibraryContainer {
     storeLibraries: js.Function0[scala.Unit],
     storeLibrariesToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
   ): DocumentScriptLibraryContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContainerLocationName")(ContainerLocationName)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("RootLocation")(RootLocation)
-    __obj.updateDynamic("RootStorage")(RootStorage)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createLibrary")(createLibrary)
-    __obj.updateDynamic("createLibraryLink")(createLibraryLink)
-    __obj.updateDynamic("createWithURL")(createWithURL)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLibraryLinkURL")(getLibraryLinkURL)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("isLibraryLink")(isLibraryLink)
-    __obj.updateDynamic("isLibraryLoaded")(isLibraryLoaded)
-    __obj.updateDynamic("isLibraryReadOnly")(isLibraryReadOnly)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("loadLibrary")(loadLibrary)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLibrary")(removeLibrary)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("renameLibrary")(renameLibrary)
-    __obj.updateDynamic("setLibraryReadOnly")(setLibraryReadOnly)
-    __obj.updateDynamic("setModified")(setModified)
-    __obj.updateDynamic("storeLibraries")(storeLibraries)
-    __obj.updateDynamic("storeLibrariesToStorage")(storeLibrariesToStorage)
+    val __obj = js.Dynamic.literal(ContainerLocationName = ContainerLocationName, ElementNames = ElementNames, ElementType = ElementType, RootLocation = RootLocation, RootStorage = RootStorage, acquire = acquire, addModifyListener = addModifyListener, create = create, createLibrary = createLibrary, createLibraryLink = createLibraryLink, createWithURL = createWithURL, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getLibraryLinkURL = getLibraryLinkURL, hasByName = hasByName, hasElements = hasElements, isLibraryLink = isLibraryLink, isLibraryLoaded = isLibraryLoaded, isLibraryReadOnly = isLibraryReadOnly, isModified = isModified, loadLibrary = loadLibrary, queryInterface = queryInterface, release = release, removeLibrary = removeLibrary, removeModifyListener = removeModifyListener, renameLibrary = renameLibrary, setLibraryReadOnly = setLibraryReadOnly, setModified = setModified, storeLibraries = storeLibraries, storeLibrariesToStorage = storeLibrariesToStorage)
+  
     __obj.asInstanceOf[DocumentScriptLibraryContainer]
   }
 }

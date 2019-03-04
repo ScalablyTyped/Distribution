@@ -21,8 +21,8 @@ object DeclareFunction {
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.DeclareFunction
   ): DeclareFunction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeclareFunction]
   }
 }

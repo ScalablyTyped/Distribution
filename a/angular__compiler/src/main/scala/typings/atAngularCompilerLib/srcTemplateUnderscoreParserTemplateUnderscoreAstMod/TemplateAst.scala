@@ -22,9 +22,8 @@ object TemplateAst {
     sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
     visit: js.Function2[TemplateAstVisitor, js.Any, js.Any]
   ): TemplateAst = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceSpan")(sourceSpan)
-    __obj.updateDynamic("visit")(visit)
+    val __obj = js.Dynamic.literal(sourceSpan = sourceSpan, visit = visit)
+  
     __obj.asInstanceOf[TemplateAst]
   }
 }

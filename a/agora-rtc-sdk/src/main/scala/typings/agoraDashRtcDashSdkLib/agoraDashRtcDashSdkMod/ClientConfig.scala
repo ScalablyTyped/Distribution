@@ -20,9 +20,7 @@ object ClientConfig {
     proxyServer: java.lang.String = null,
     turnServer: agoraDashRtcDashSdkLib.Anon_Forceturn = null
   ): ClientConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     if (proxyServer != null) __obj.updateDynamic("proxyServer")(proxyServer)
     if (turnServer != null) __obj.updateDynamic("turnServer")(turnServer)
     __obj.asInstanceOf[ClientConfig]

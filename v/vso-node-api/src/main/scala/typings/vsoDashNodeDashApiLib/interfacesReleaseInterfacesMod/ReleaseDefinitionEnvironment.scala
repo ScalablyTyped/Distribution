@@ -58,30 +58,8 @@ object ReleaseDefinitionEnvironment {
     variableGroups: js.Array[scala.Double],
     variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
   ): ReleaseDefinitionEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badgeUrl")(badgeUrl)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("deployPhases")(deployPhases)
-    __obj.updateDynamic("deployStep")(deployStep)
-    __obj.updateDynamic("environmentOptions")(environmentOptions)
-    __obj.updateDynamic("executionPolicy")(executionPolicy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("postDeployApprovals")(postDeployApprovals)
-    __obj.updateDynamic("postDeploymentGates")(postDeploymentGates)
-    __obj.updateDynamic("preDeployApprovals")(preDeployApprovals)
-    __obj.updateDynamic("preDeploymentGates")(preDeploymentGates)
-    __obj.updateDynamic("processParameters")(processParameters)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("queueId")(queueId)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("retentionPolicy")(retentionPolicy)
-    __obj.updateDynamic("runOptions")(runOptions)
-    __obj.updateDynamic("schedules")(schedules)
-    __obj.updateDynamic("variableGroups")(variableGroups)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(badgeUrl = badgeUrl, conditions = conditions, demands = demands, deployPhases = deployPhases, deployStep = deployStep, environmentOptions = environmentOptions, executionPolicy = executionPolicy, id = id, name = name, owner = owner, postDeployApprovals = postDeployApprovals, postDeploymentGates = postDeploymentGates, preDeployApprovals = preDeployApprovals, preDeploymentGates = preDeploymentGates, processParameters = processParameters, properties = properties, queueId = queueId, rank = rank, retentionPolicy = retentionPolicy, runOptions = runOptions, schedules = schedules, variableGroups = variableGroups, variables = variables)
+  
     __obj.asInstanceOf[ReleaseDefinitionEnvironment]
   }
 }

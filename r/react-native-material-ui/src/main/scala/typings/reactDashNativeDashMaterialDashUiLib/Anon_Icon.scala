@@ -18,10 +18,8 @@ object Anon_Icon {
     label: java.lang.String,
     name: java.lang.String
   ): Anon_Icon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], label = label, name = name)
+  
     __obj.asInstanceOf[Anon_Icon]
   }
 }

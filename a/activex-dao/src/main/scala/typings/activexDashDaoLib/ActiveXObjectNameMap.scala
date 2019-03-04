@@ -30,8 +30,16 @@ object ActiveXObjectNameMap {
     `DAO.TableDef`: activexDashDaoLib.DAONs.TableDef,
     `DAO.User`: activexDashDaoLib.DAONs.User
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`DAO.DBEngine` = `DAO.DBEngine`, `DAO.Field` = `DAO.Field`, `DAO.Group` = `DAO.Group`, `DAO.Index` = `DAO.Index`, `DAO.PrivateDBEngine` = `DAO.PrivateDBEngine`, `DAO.QueryDef` = `DAO.QueryDef`, `DAO.Relation` = `DAO.Relation`, `DAO.TableDef` = `DAO.TableDef`, `DAO.User` = `DAO.User`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DAO.DBEngine")(`DAO.DBEngine`)
+    __obj.updateDynamic("DAO.Field")(`DAO.Field`)
+    __obj.updateDynamic("DAO.Group")(`DAO.Group`)
+    __obj.updateDynamic("DAO.Index")(`DAO.Index`)
+    __obj.updateDynamic("DAO.PrivateDBEngine")(`DAO.PrivateDBEngine`)
+    __obj.updateDynamic("DAO.QueryDef")(`DAO.QueryDef`)
+    __obj.updateDynamic("DAO.Relation")(`DAO.Relation`)
+    __obj.updateDynamic("DAO.TableDef")(`DAO.TableDef`)
+    __obj.updateDynamic("DAO.User")(`DAO.User`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

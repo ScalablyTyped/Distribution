@@ -20,8 +20,7 @@ object Component {
     onRemove: js.Function1[/* model */ Model, _] = null,
     onUpdate: js.Function1[/* model */ Model, _] = null
   ): Component = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(render = render)
     if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate)
     if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)

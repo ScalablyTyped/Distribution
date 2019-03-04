@@ -37,10 +37,7 @@ object DescribeSubscribersForNotificationRequest {
     MaxResults: js.UndefOr[MaxResults] = js.undefined,
     NextToken: GenericString = null
   ): DescribeSubscribersForNotificationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
-    __obj.updateDynamic("BudgetName")(BudgetName)
-    __obj.updateDynamic("Notification")(Notification)
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName, Notification = Notification)
     if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[DescribeSubscribersForNotificationRequest]

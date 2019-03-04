@@ -45,8 +45,7 @@ object IObservableOptions {
     store: js.Any = null,
     write: js.Function1[/* value */ js.Any, scala.Unit] = null
   ): IObservableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (args != null) __obj.updateDynamic("args")(args)
     if (default != null) __obj.updateDynamic("default")(default)
     if (factory != null) __obj.updateDynamic("factory")(factory)

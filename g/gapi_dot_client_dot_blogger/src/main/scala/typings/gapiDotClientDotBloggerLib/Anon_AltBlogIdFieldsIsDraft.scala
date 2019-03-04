@@ -42,8 +42,7 @@ object Anon_AltBlogIdFieldsIsDraft {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBlogIdFieldsIsDraft = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blogId")(blogId)
+    val __obj = js.Dynamic.literal(blogId = blogId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(isDraft)) __obj.updateDynamic("isDraft")(isDraft)

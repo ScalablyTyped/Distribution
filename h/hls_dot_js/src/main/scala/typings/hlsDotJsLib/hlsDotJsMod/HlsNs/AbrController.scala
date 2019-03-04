@@ -46,13 +46,8 @@ object AbrController {
     nextAutoLevel: scala.Double,
     useGenericHandler: scala.Boolean
   ): AbrController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoLevelCapping")(autoLevelCapping)
-    __obj.updateDynamic("handledEvents")(handledEvents)
-    __obj.updateDynamic("hls")(hls)
-    __obj.updateDynamic("lastLoadedFragLevel")(lastLoadedFragLevel)
-    __obj.updateDynamic("nextAutoLevel")(nextAutoLevel)
-    __obj.updateDynamic("useGenericHandler")(useGenericHandler)
+    val __obj = js.Dynamic.literal(autoLevelCapping = autoLevelCapping, handledEvents = handledEvents, hls = hls, lastLoadedFragLevel = lastLoadedFragLevel, nextAutoLevel = nextAutoLevel, useGenericHandler = useGenericHandler)
+  
     __obj.asInstanceOf[AbrController]
   }
 }

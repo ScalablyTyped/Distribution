@@ -44,9 +44,7 @@ object StaticMapProps {
     visibilityConstraints: reactDashMapDashGlLib.Anon_MaxPitch = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): StaticMapProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (className != null) __obj.updateDynamic("className")(className)
     if (container != null) __obj.updateDynamic("container")(container)

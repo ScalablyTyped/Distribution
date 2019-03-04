@@ -20,8 +20,7 @@ object Anon_AnonymousIdIntegrations {
     integrations: analyticsDashNodeLib.analyticsDashNodeMod.AnalyticsNodeNs.Integrations = null,
     userId: java.lang.String | scala.Double = null
   ): Anon_AnonymousIdIntegrations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("previousId")(previousId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(previousId = previousId.asInstanceOf[js.Any])
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
     if (integrations != null) __obj.updateDynamic("integrations")(integrations)
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])

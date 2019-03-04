@@ -18,9 +18,7 @@ object Anon_MaximumCorner {
     minimumCorner: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
     vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
   ): Anon_MaximumCorner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maximumCorner")(maximumCorner)
-    __obj.updateDynamic("minimumCorner")(minimumCorner)
+    val __obj = js.Dynamic.literal(maximumCorner = maximumCorner, minimumCorner = minimumCorner)
     if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
     __obj.asInstanceOf[Anon_MaximumCorner]
   }

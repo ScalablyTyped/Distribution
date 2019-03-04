@@ -16,9 +16,8 @@ object QueryResults {
     columns: js.Array[java.lang.String],
     values: js.Array[js.Array[scala.Double | java.lang.String | stdLib.Uint8Array]]
   ): QueryResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(columns = columns, values = values)
+  
     __obj.asInstanceOf[QueryResults]
   }
 }

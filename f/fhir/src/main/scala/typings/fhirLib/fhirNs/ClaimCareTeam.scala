@@ -56,9 +56,7 @@ object ClaimCareTeam {
     responsible: js.UndefOr[scala.Boolean] = js.undefined,
     role: CodeableConcept = null
   ): ClaimCareTeam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(provider = provider, sequence = sequence)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_responsible != null) __obj.updateDynamic("_responsible")(_responsible)

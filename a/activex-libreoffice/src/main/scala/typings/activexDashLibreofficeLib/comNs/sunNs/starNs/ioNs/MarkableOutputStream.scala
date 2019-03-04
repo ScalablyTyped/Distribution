@@ -41,27 +41,8 @@ object MarkableOutputStream {
     setSuccessor: js.Function1[XConnectable, scala.Unit],
     writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): MarkableOutputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("Predecessor")(Predecessor)
-    __obj.updateDynamic("Successor")(Successor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("closeOutput")(closeOutput)
-    __obj.updateDynamic("createMark")(createMark)
-    __obj.updateDynamic("deleteMark")(deleteMark)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("getPredecessor")(getPredecessor)
-    __obj.updateDynamic("getSuccessor")(getSuccessor)
-    __obj.updateDynamic("jumpToFurthest")(jumpToFurthest)
-    __obj.updateDynamic("jumpToMark")(jumpToMark)
-    __obj.updateDynamic("offsetToMark")(offsetToMark)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setOutputStream")(setOutputStream)
-    __obj.updateDynamic("setPredecessor")(setPredecessor)
-    __obj.updateDynamic("setSuccessor")(setSuccessor)
-    __obj.updateDynamic("writeBytes")(writeBytes)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, Predecessor = Predecessor, Successor = Successor, acquire = acquire, closeOutput = closeOutput, createMark = createMark, deleteMark = deleteMark, flush = flush, getOutputStream = getOutputStream, getPredecessor = getPredecessor, getSuccessor = getSuccessor, jumpToFurthest = jumpToFurthest, jumpToMark = jumpToMark, offsetToMark = offsetToMark, queryInterface = queryInterface, release = release, setOutputStream = setOutputStream, setPredecessor = setPredecessor, setSuccessor = setSuccessor, writeBytes = writeBytes)
+  
     __obj.asInstanceOf[MarkableOutputStream]
   }
 }

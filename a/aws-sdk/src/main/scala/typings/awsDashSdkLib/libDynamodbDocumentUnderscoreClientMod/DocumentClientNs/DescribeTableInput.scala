@@ -15,8 +15,8 @@ trait DescribeTableInput extends js.Object {
 object DescribeTableInput {
   @scala.inline
   def apply(TableName: TableName): DescribeTableInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(TableName = TableName)
+  
     __obj.asInstanceOf[DescribeTableInput]
   }
 }

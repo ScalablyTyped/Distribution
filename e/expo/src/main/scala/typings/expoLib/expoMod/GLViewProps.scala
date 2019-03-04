@@ -117,8 +117,7 @@ object GLViewProps {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     testID: java.lang.String = null
   ): GLViewProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onContextCreate")(onContextCreate)
+    val __obj = js.Dynamic.literal(onContextCreate = onContextCreate)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

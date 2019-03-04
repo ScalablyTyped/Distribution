@@ -34,16 +34,8 @@ object IVaultEventLogOperations {
     IsLoggingEnabled: js.Function0[scala.Boolean],
     SetLoggingEnabled: js.Function1[scala.Boolean, scala.Unit]
   ): IVaultEventLogOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("ClearRange")(ClearRange)
-    __obj.updateDynamic("ClearRange_32bit")(ClearRange_32bit)
-    __obj.updateDynamic("ExportAll")(ExportAll)
-    __obj.updateDynamic("ExportRange")(ExportRange)
-    __obj.updateDynamic("ExportRange_32bit")(ExportRange_32bit)
-    __obj.updateDynamic("GetIDRange")(GetIDRange)
-    __obj.updateDynamic("IsLoggingEnabled")(IsLoggingEnabled)
-    __obj.updateDynamic("SetLoggingEnabled")(SetLoggingEnabled)
+    val __obj = js.Dynamic.literal(Clear = Clear, ClearRange = ClearRange, ClearRange_32bit = ClearRange_32bit, ExportAll = ExportAll, ExportRange = ExportRange, ExportRange_32bit = ExportRange_32bit, GetIDRange = GetIDRange, IsLoggingEnabled = IsLoggingEnabled, SetLoggingEnabled = SetLoggingEnabled)
+  
     __obj.asInstanceOf[IVaultEventLogOperations]
   }
 }

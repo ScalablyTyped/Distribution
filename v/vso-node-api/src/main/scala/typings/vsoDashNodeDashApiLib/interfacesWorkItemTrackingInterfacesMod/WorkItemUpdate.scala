@@ -49,16 +49,8 @@ object WorkItemUpdate {
     url: java.lang.String,
     workItemId: scala.Double
   ): WorkItemUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("relations")(relations)
-    __obj.updateDynamic("rev")(rev)
-    __obj.updateDynamic("revisedBy")(revisedBy)
-    __obj.updateDynamic("revisedDate")(revisedDate)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItemId")(workItemId)
+    val __obj = js.Dynamic.literal(_links = _links, fields = fields, id = id, relations = relations, rev = rev, revisedBy = revisedBy, revisedDate = revisedDate, url = url, workItemId = workItemId)
+  
     __obj.asInstanceOf[WorkItemUpdate]
   }
 }

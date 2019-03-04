@@ -51,15 +51,8 @@ object FeatureLayerCapabilities {
     query: FeatureLayerCapabilitiesQuery,
     queryRelated: FeatureLayerCapabilitiesQueryRelated
   ): FeatureLayerCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("editing")(editing)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("queryRelated")(queryRelated)
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data, editing = editing, hasOwnProperty = hasOwnProperty, operations = operations, propertyIsEnumerable = propertyIsEnumerable, query = query, queryRelated = queryRelated)
+  
     __obj.asInstanceOf[FeatureLayerCapabilities]
   }
 }

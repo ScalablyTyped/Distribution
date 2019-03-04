@@ -24,12 +24,7 @@ object StandardLoopCharacteristics {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): StandardLoopCharacteristics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loopCondition")(loopCondition)
-    __obj.updateDynamic("loopMaximum")(loopMaximum)
-    __obj.updateDynamic("testBefore")(testBefore)
+    val __obj = js.Dynamic.literal($type = $type, id = id, loopCondition = loopCondition, loopMaximum = loopMaximum, testBefore = testBefore)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

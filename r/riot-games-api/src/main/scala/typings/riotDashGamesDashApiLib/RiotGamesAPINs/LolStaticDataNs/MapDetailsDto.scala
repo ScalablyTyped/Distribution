@@ -20,11 +20,8 @@ object MapDetailsDto {
     mapName: java.lang.String,
     unpurchasableItemList: js.Array[scala.Double]
   ): MapDetailsDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("mapId")(mapId)
-    __obj.updateDynamic("mapName")(mapName)
-    __obj.updateDynamic("unpurchasableItemList")(unpurchasableItemList)
+    val __obj = js.Dynamic.literal(image = image, mapId = mapId, mapName = mapName, unpurchasableItemList = unpurchasableItemList)
+  
     __obj.asInstanceOf[MapDetailsDto]
   }
 }

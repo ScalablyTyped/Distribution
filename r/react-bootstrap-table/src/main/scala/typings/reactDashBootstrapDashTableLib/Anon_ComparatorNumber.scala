@@ -16,9 +16,8 @@ object Anon_ComparatorNumber {
     comparator: reactLib.reactMod.ReactNs.CSSProperties,
     number: reactLib.reactMod.ReactNs.CSSProperties
   ): Anon_ComparatorNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comparator")(comparator)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(comparator = comparator, number = number)
+  
     __obj.asInstanceOf[Anon_ComparatorNumber]
   }
 }

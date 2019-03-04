@@ -20,10 +20,7 @@ object BricksOptions {
     sizes: js.Array[SizeDetail],
     position: js.UndefOr[scala.Boolean] = js.undefined
   ): BricksOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    __obj.updateDynamic("packed")(packed)
-    __obj.updateDynamic("sizes")(sizes)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], packed = packed, sizes = sizes)
     if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[BricksOptions]
   }

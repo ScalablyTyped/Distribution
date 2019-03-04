@@ -16,7 +16,8 @@ object Anon_FieldTypeInput {
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     field: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_FieldTypeInput = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldTypeInput]
   }

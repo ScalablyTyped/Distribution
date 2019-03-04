@@ -12,8 +12,8 @@ trait OnRecorderManagerStopOptions extends js.Object {
 object OnRecorderManagerStopOptions {
   @scala.inline
   def apply(tempFilePath: java.lang.String): OnRecorderManagerStopOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tempFilePath")(tempFilePath)
+    val __obj = js.Dynamic.literal(tempFilePath = tempFilePath)
+  
     __obj.asInstanceOf[OnRecorderManagerStopOptions]
   }
 }

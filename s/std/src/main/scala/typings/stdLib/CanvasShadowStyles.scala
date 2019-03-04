@@ -20,11 +20,8 @@ object CanvasShadowStyles {
     shadowOffsetX: scala.Double,
     shadowOffsetY: scala.Double
   ): CanvasShadowStyles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shadowBlur")(shadowBlur)
-    __obj.updateDynamic("shadowColor")(shadowColor)
-    __obj.updateDynamic("shadowOffsetX")(shadowOffsetX)
-    __obj.updateDynamic("shadowOffsetY")(shadowOffsetY)
+    val __obj = js.Dynamic.literal(shadowBlur = shadowBlur, shadowColor = shadowColor, shadowOffsetX = shadowOffsetX, shadowOffsetY = shadowOffsetY)
+  
     __obj.asInstanceOf[CanvasShadowStyles]
   }
 }

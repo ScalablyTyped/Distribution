@@ -33,11 +33,8 @@ object InvalidRemovedParameterException {
     Message: java.lang.String,
     PreviousValue: scala.Boolean
   ): InvalidRemovedParameterException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Extension")(Extension)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("PreviousValue")(PreviousValue)
+    val __obj = js.Dynamic.literal(Context = Context, Extension = Extension, Message = Message, PreviousValue = PreviousValue)
+  
     __obj.asInstanceOf[InvalidRemovedParameterException]
   }
 }

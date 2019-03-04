@@ -36,8 +36,7 @@ object TestScriptSetupActionAssertRuleset {
     modifierExtension: js.Array[Extension] = null,
     rule: js.Array[TestScriptSetupActionAssertRulesetRule] = null
   ): TestScriptSetupActionAssertRuleset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rulesetId")(rulesetId)
+    val __obj = js.Dynamic.literal(rulesetId = rulesetId)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_rulesetId != null) __obj.updateDynamic("_rulesetId")(_rulesetId)

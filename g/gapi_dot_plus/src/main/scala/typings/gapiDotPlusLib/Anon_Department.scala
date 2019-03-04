@@ -30,15 +30,8 @@ object Anon_Department {
     title: java.lang.String,
     `type`: java.lang.String
   ): Anon_Department = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("department")(department)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("primary")(primary)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(department = department, description = description, endDate = endDate, location = location, name = name, primary = primary, startDate = startDate, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Department]
   }
 }

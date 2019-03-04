@@ -12,8 +12,8 @@ trait TemplateParser extends js.Object {
 object TemplateParser {
   @scala.inline
   def apply(parse: js.Function1[java.lang.String, Template]): TemplateParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(parse = parse)
+  
     __obj.asInstanceOf[TemplateParser]
   }
 }

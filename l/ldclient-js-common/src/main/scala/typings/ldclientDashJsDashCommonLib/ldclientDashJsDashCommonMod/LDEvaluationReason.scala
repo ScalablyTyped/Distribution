@@ -46,8 +46,7 @@ object LDEvaluationReason {
     ruleId: java.lang.String = null,
     ruleIndex: scala.Int | scala.Double = null
   ): LDEvaluationReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (errorKind != null) __obj.updateDynamic("errorKind")(errorKind)
     if (prerequisiteKey != null) __obj.updateDynamic("prerequisiteKey")(prerequisiteKey)
     if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)

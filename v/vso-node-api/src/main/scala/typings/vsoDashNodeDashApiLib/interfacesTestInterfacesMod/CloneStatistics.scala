@@ -37,12 +37,8 @@ object CloneStatistics {
     totalRequirementsCount: scala.Double,
     totalTestCasesCount: scala.Double
   ): CloneStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clonedRequirementsCount")(clonedRequirementsCount)
-    __obj.updateDynamic("clonedSharedStepsCount")(clonedSharedStepsCount)
-    __obj.updateDynamic("clonedTestCasesCount")(clonedTestCasesCount)
-    __obj.updateDynamic("totalRequirementsCount")(totalRequirementsCount)
-    __obj.updateDynamic("totalTestCasesCount")(totalTestCasesCount)
+    val __obj = js.Dynamic.literal(clonedRequirementsCount = clonedRequirementsCount, clonedSharedStepsCount = clonedSharedStepsCount, clonedTestCasesCount = clonedTestCasesCount, totalRequirementsCount = totalRequirementsCount, totalTestCasesCount = totalTestCasesCount)
+  
     __obj.asInstanceOf[CloneStatistics]
   }
 }

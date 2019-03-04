@@ -19,9 +19,8 @@ trait DownloadProgress extends js.Object {
 object DownloadProgress {
   @scala.inline
   def apply(receivedBytes: scala.Double, totalBytes: scala.Double): DownloadProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("receivedBytes")(receivedBytes)
-    __obj.updateDynamic("totalBytes")(totalBytes)
+    val __obj = js.Dynamic.literal(receivedBytes = receivedBytes, totalBytes = totalBytes)
+  
     __obj.asInstanceOf[DownloadProgress]
   }
 }

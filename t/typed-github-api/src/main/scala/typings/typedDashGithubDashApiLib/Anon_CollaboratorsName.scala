@@ -20,11 +20,8 @@ object Anon_CollaboratorsName {
     privateRepos: scala.Double,
     space: scala.Double
   ): Anon_CollaboratorsName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collaborators")(collaborators)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("privateRepos")(privateRepos)
-    __obj.updateDynamic("space")(space)
+    val __obj = js.Dynamic.literal(collaborators = collaborators, name = name, privateRepos = privateRepos, space = space)
+  
     __obj.asInstanceOf[Anon_CollaboratorsName]
   }
 }

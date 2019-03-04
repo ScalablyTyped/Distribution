@@ -37,12 +37,8 @@ object VanillaTilt {
     removeEventListener: js.Function0[scala.Unit],
     reset: js.Function0[scala.Unit]
   ): VanillaTilt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListeners")(addEventListeners)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getValues")(getValues)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(addEventListeners = addEventListeners, destroy = destroy, getValues = getValues, removeEventListener = removeEventListener, reset = reset)
+  
     __obj.asInstanceOf[VanillaTilt]
   }
 }

@@ -13,8 +13,8 @@ trait GetAllFrameDetails extends js.Object {
 object GetAllFrameDetails {
   @scala.inline
   def apply(tabId: scala.Double): GetAllFrameDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId)
+  
     __obj.asInstanceOf[GetAllFrameDetails]
   }
 }

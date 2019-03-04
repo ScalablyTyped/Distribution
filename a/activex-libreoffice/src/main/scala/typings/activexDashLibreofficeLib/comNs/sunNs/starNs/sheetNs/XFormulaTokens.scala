@@ -22,10 +22,8 @@ object XFormulaTokens {
     getTokens: js.Function0[activexDashInteropLib.SafeArray[FormulaToken]],
     setTokens: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[FormulaToken], scala.Unit]
   ): XFormulaTokens = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Tokens")(Tokens)
-    __obj.updateDynamic("getTokens")(getTokens)
-    __obj.updateDynamic("setTokens")(setTokens)
+    val __obj = js.Dynamic.literal(Tokens = Tokens, getTokens = getTokens, setTokens = setTokens)
+  
     __obj.asInstanceOf[XFormulaTokens]
   }
 }

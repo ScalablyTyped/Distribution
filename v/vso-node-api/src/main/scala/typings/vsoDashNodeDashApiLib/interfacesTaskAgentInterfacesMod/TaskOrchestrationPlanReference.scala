@@ -28,15 +28,8 @@ object TaskOrchestrationPlanReference {
     scopeIdentifier: java.lang.String,
     version: scala.Double
   ): TaskOrchestrationPlanReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactLocation")(artifactLocation)
-    __obj.updateDynamic("artifactUri")(artifactUri)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("planId")(planId)
-    __obj.updateDynamic("planType")(planType)
-    __obj.updateDynamic("scopeIdentifier")(scopeIdentifier)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation, artifactUri = artifactUri, definition = definition, owner = owner, planId = planId, planType = planType, scopeIdentifier = scopeIdentifier, version = version)
+  
     __obj.asInstanceOf[TaskOrchestrationPlanReference]
   }
 }

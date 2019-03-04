@@ -27,8 +27,7 @@ object ServiceLinkedRoleArgs {
     customSuffix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ServiceLinkedRoleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsServiceName")(awsServiceName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(awsServiceName = awsServiceName.asInstanceOf[js.Any])
     if (customSuffix != null) __obj.updateDynamic("customSuffix")(customSuffix.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceLinkedRoleArgs]

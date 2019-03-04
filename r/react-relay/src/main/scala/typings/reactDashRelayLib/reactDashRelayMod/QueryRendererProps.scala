@@ -38,10 +38,8 @@ object QueryRendererProps {
     query: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode = null,
     rerunParamExperimental: relayDashRuntimeLib.relayDashRuntimeMod.RerunParam = null
   ): QueryRendererProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment)
+    val __obj = js.Dynamic.literal(environment = environment, variables = variables)
     __obj.updateDynamic("render")(render_response)
-    __obj.updateDynamic("variables")(variables)
     if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
     if (dataFrom != null) __obj.updateDynamic("dataFrom")(dataFrom.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])

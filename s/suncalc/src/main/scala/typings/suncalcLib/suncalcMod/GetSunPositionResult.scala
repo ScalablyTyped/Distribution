@@ -13,9 +13,8 @@ trait GetSunPositionResult extends js.Object {
 object GetSunPositionResult {
   @scala.inline
   def apply(altitude: scala.Double, azimuth: scala.Double): GetSunPositionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("azimuth")(azimuth)
+    val __obj = js.Dynamic.literal(altitude = altitude, azimuth = azimuth)
+  
     __obj.asInstanceOf[GetSunPositionResult]
   }
 }

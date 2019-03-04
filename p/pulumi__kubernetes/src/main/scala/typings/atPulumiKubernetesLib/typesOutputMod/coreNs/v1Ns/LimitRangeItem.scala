@@ -48,12 +48,8 @@ object LimitRangeItem {
     min: js.Object,
     `type`: java.lang.String
   ): LimitRangeItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("defaultRequest")(defaultRequest)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("maxLimitRequestRatio")(maxLimitRequestRatio)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(default = default, defaultRequest = defaultRequest, max = max, maxLimitRequestRatio = maxLimitRequestRatio, min = min)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LimitRangeItem]
   }
 }

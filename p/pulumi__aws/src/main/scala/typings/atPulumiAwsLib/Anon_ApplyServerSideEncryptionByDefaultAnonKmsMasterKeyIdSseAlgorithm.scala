@@ -14,8 +14,8 @@ object Anon_ApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm {
   def apply(
     applyServerSideEncryptionByDefault: atPulumiPulumiLib.outputMod.Input[Anon_KmsMasterKeyIdSseAlgorithm]
   ): Anon_ApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyServerSideEncryptionByDefault")(applyServerSideEncryptionByDefault.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(applyServerSideEncryptionByDefault = applyServerSideEncryptionByDefault.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm]
   }
 }

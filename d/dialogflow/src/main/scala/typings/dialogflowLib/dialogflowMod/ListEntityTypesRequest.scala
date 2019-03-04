@@ -18,8 +18,7 @@ object ListEntityTypesRequest {
     languageCode: java.lang.String = null,
     pageSize: scala.Int | scala.Double = null
   ): ListEntityTypesRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEntityTypesRequest]

@@ -19,8 +19,7 @@ object BucketEventSubscriptionArgs {
     filterPrefix: java.lang.String = null,
     filterSuffix: java.lang.String = null
   ): BucketEventSubscriptionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(events = events)
     if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix)
     if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix)
     __obj.asInstanceOf[BucketEventSubscriptionArgs]

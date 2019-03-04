@@ -18,10 +18,8 @@ object Anon_KeyResourceTypesSchedules {
     schedules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_CopyTagsCreateRule]]],
     targetTags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ): Anon_KeyResourceTypesSchedules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceTypes")(resourceTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("schedules")(schedules.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetTags")(targetTags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resourceTypes = resourceTypes.asInstanceOf[js.Any], schedules = schedules.asInstanceOf[js.Any], targetTags = targetTags.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_KeyResourceTypesSchedules]
   }
 }

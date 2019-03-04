@@ -26,13 +26,8 @@ object XRefreshable {
     release: js.Function0[scala.Unit],
     removeRefreshListener: js.Function1[XRefreshListener, scala.Unit]
   ): XRefreshable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addRefreshListener = addRefreshListener, queryInterface = queryInterface, refresh = refresh, release = release, removeRefreshListener = removeRefreshListener)
+  
     __obj.asInstanceOf[XRefreshable]
   }
 }

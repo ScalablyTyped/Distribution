@@ -31,16 +31,7 @@ object DataInput {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): DataInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("dataState")(dataState)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputSetRef")(inputSetRef)
-    __obj.updateDynamic("inputSetWithOptional")(inputSetWithOptional)
-    __obj.updateDynamic("inputSetWithWhileExecuting")(inputSetWithWhileExecuting)
-    __obj.updateDynamic("isCollection")(isCollection)
-    __obj.updateDynamic("itemSubjectRef")(itemSubjectRef)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($type = $type, dataState = dataState, id = id, inputSetRef = inputSetRef, inputSetWithOptional = inputSetWithOptional, inputSetWithWhileExecuting = inputSetWithWhileExecuting, isCollection = isCollection, itemSubjectRef = itemSubjectRef, name = name)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

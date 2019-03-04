@@ -20,11 +20,8 @@ object Data {
     compressed: scala.Boolean,
     emojis: org.scalablytyped.runtime.StringDictionary[Emoji]
   ): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("compressed")(compressed)
-    __obj.updateDynamic("emojis")(emojis)
+    val __obj = js.Dynamic.literal(aliases = aliases, categories = categories, compressed = compressed, emojis = emojis)
+  
     __obj.asInstanceOf[Data]
   }
 }

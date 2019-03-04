@@ -66,13 +66,8 @@ object $Refs {
       org.scalablytyped.runtime.StringDictionary[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4]
     ]
   ): $Refs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circular")(circular)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("paths")(paths)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(circular = circular, exists = exists, get = get, paths = paths, set = set, values = values)
+  
     __obj.asInstanceOf[$Refs]
   }
 }

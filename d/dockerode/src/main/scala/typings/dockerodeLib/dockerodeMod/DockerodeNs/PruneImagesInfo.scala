@@ -13,9 +13,8 @@ trait PruneImagesInfo extends js.Object {
 object PruneImagesInfo {
   @scala.inline
   def apply(ImagesDeleted: js.Array[ImageRemoveInfo], SpaceReclaimed: scala.Double): PruneImagesInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ImagesDeleted")(ImagesDeleted)
-    __obj.updateDynamic("SpaceReclaimed")(SpaceReclaimed)
+    val __obj = js.Dynamic.literal(ImagesDeleted = ImagesDeleted, SpaceReclaimed = SpaceReclaimed)
+  
     __obj.asInstanceOf[PruneImagesInfo]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Control {
     root: java.lang.String,
     selectWrapper: java.lang.String
   ): Anon_Control = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("selectWrapper")(selectWrapper)
+    val __obj = js.Dynamic.literal(control = control, other = other, root = root, selectWrapper = selectWrapper)
+  
     __obj.asInstanceOf[Anon_Control]
   }
 }

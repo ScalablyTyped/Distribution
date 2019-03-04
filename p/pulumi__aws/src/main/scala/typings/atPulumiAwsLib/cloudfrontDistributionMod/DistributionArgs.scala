@@ -164,12 +164,7 @@ object DistributionArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     webAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DistributionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultCacheBehavior")(defaultCacheBehavior.asInstanceOf[js.Any])
-    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
-    __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
-    __obj.updateDynamic("viewerCertificate")(viewerCertificate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultCacheBehavior = defaultCacheBehavior.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], viewerCertificate = viewerCertificate.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (cacheBehaviors != null) __obj.updateDynamic("cacheBehaviors")(cacheBehaviors.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])

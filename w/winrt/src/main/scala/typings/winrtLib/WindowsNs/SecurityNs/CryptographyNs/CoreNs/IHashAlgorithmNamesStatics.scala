@@ -22,12 +22,8 @@ object IHashAlgorithmNamesStatics {
     sha384: java.lang.String,
     sha512: java.lang.String
   ): IHashAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("md5")(md5)
-    __obj.updateDynamic("sha1")(sha1)
-    __obj.updateDynamic("sha256")(sha256)
-    __obj.updateDynamic("sha384")(sha384)
-    __obj.updateDynamic("sha512")(sha512)
+    val __obj = js.Dynamic.literal(md5 = md5, sha1 = sha1, sha256 = sha256, sha384 = sha384, sha512 = sha512)
+  
     __obj.asInstanceOf[IHashAlgorithmNamesStatics]
   }
 }

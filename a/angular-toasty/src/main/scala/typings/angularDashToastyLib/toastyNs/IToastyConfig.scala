@@ -86,8 +86,7 @@ object IToastyConfig {
     timeout: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): IToastyConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose)
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (msg != null) __obj.updateDynamic("msg")(msg)

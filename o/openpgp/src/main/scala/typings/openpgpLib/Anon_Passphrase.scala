@@ -16,8 +16,7 @@ object Anon_Passphrase {
     privateKey: openpgpLib.openpgpMod.keyNs.Key,
     passphrase: java.lang.String | js.Array[java.lang.String] = null
   ): Anon_Passphrase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("privateKey")(privateKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey)
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Passphrase]
   }

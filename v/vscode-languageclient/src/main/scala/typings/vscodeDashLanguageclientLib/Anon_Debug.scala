@@ -17,9 +17,8 @@ object Anon_Debug {
     debug: vscodeDashLanguageclientLib.vscodeDashLanguageclientMod.Executable,
     run: vscodeDashLanguageclientLib.vscodeDashLanguageclientMod.Executable
   ): Anon_Debug = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(debug = debug, run = run)
+  
     __obj.asInstanceOf[Anon_Debug]
   }
 }

@@ -22,8 +22,7 @@ object FirefoxOptions {
     log: FirefoxLogObject = null,
     profile: java.lang.String = null
   ): FirefoxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prefs")(prefs)
+    val __obj = js.Dynamic.literal(prefs = prefs)
     if (args != null) __obj.updateDynamic("args")(args)
     if (binary != null) __obj.updateDynamic("binary")(binary)
     if (log != null) __obj.updateDynamic("log")(log)

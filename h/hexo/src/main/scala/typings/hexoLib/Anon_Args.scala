@@ -26,14 +26,8 @@ object Anon_Args {
     silent: scala.Boolean,
     version: java.lang.String
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("safe")(safe)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(args = args, debug = debug, env = env, init = init, safe = safe, silent = silent, version = version)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

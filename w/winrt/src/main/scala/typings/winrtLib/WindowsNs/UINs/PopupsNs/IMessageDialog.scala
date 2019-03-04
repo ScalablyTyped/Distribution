@@ -26,14 +26,8 @@ object IMessageDialog {
     showAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IUICommand]],
     title: java.lang.String
   ): IMessageDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelCommandIndex")(cancelCommandIndex)
-    __obj.updateDynamic("commands")(commands)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("defaultCommandIndex")(defaultCommandIndex)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("showAsync")(showAsync)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(cancelCommandIndex = cancelCommandIndex, commands = commands, content = content, defaultCommandIndex = defaultCommandIndex, options = options, showAsync = showAsync, title = title)
+  
     __obj.asInstanceOf[IMessageDialog]
   }
 }

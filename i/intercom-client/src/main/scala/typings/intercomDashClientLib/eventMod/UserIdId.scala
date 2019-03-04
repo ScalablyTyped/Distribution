@@ -12,8 +12,8 @@ trait UserIdId extends EventIdentifier {
 object UserIdId {
   @scala.inline
   def apply(user_id: java.lang.String): UserIdId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(user_id = user_id)
+  
     __obj.asInstanceOf[UserIdId]
   }
 }

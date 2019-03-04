@@ -20,11 +20,8 @@ object Anon_IdentityKindNameTypesArray {
     name: java.lang.String,
     types: js.Array[Constructor[T]]
   ): Anon_IdentityKindNameTypesArray[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(identity = identity, kind = kind, name = name, types = types)
+  
     __obj.asInstanceOf[Anon_IdentityKindNameTypesArray[T]]
   }
 }

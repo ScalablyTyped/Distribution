@@ -35,11 +35,8 @@ object OAuth2 {
     createService: js.Function1[java.lang.String, OAuth2Service],
     getRedirectUri: js.Function1[java.lang.String, java.lang.String]
   ): OAuth2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("STATE_PARAMETER_LOCATION")(STATE_PARAMETER_LOCATION)
-    __obj.updateDynamic("TOKEN_FORMAT")(TOKEN_FORMAT)
-    __obj.updateDynamic("createService")(createService)
-    __obj.updateDynamic("getRedirectUri")(getRedirectUri)
+    val __obj = js.Dynamic.literal(STATE_PARAMETER_LOCATION = STATE_PARAMETER_LOCATION, TOKEN_FORMAT = TOKEN_FORMAT, createService = createService, getRedirectUri = getRedirectUri)
+  
     __obj.asInstanceOf[OAuth2]
   }
 }

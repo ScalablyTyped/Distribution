@@ -26,14 +26,8 @@ object DebugModelMatrixPrimitive {
     show: scala.Boolean,
     width: scala.Double
   ): DebugModelMatrixPrimitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("modelMatrix")(modelMatrix)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(destroy = destroy, id = id, isDestroyed = isDestroyed, length = length, modelMatrix = modelMatrix, show = show, width = width)
+  
     __obj.asInstanceOf[DebugModelMatrixPrimitive]
   }
 }

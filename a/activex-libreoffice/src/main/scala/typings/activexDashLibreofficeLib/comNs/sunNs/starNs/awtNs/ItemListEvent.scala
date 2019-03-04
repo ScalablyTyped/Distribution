@@ -38,11 +38,8 @@ object ItemListEvent {
     ItemText: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ItemListEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ItemImageURL")(ItemImageURL)
-    __obj.updateDynamic("ItemPosition")(ItemPosition)
-    __obj.updateDynamic("ItemText")(ItemText)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(ItemImageURL = ItemImageURL, ItemPosition = ItemPosition, ItemText = ItemText, Source = Source)
+  
     __obj.asInstanceOf[ItemListEvent]
   }
 }

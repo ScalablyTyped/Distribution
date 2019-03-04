@@ -34,9 +34,7 @@ object MarkerProps {
     onDragEnd: js.Function1[/* event */ DragEvent, scala.Unit] = null,
     onDragStart: js.Function1[/* event */ DragEvent, scala.Unit] = null
   ): MarkerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick)
     if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick)
     if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag)

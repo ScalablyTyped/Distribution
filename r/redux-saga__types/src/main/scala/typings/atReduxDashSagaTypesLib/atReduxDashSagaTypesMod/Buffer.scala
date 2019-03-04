@@ -33,11 +33,8 @@ object Buffer {
     put: js.Function1[T, scala.Unit],
     take: js.Function0[js.UndefOr[T]]
   ): Buffer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("take")(take)
+    val __obj = js.Dynamic.literal(flush = flush, isEmpty = isEmpty, put = put, take = take)
+  
     __obj.asInstanceOf[Buffer[T]]
   }
 }

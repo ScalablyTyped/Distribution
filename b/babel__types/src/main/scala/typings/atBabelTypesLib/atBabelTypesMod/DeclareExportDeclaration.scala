@@ -35,7 +35,8 @@ object DeclareExportDeclaration {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): DeclareExportDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (declaration != null) __obj.updateDynamic("declaration")(declaration)
     if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

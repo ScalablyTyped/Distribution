@@ -22,11 +22,7 @@ object InkElement {
     ref: js.Function1[js.Any, scala.Unit],
     instance: Component[_, _, _] = null
   ): InkElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_children")(_children)
-    __obj.updateDynamic("_props")(_props)
-    __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(_children = _children, _props = _props, component = component.asInstanceOf[js.Any], ref = ref)
     if (instance != null) __obj.updateDynamic("instance")(instance)
     __obj.asInstanceOf[InkElement]
   }

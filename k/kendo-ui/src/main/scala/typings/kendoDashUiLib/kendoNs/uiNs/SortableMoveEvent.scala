@@ -23,10 +23,7 @@ object SortableMoveEvent {
     list: Sortable = null,
     target: kendoDashUiLib.JQuery = null
   ): SortableMoveEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
     if (item != null) __obj.updateDynamic("item")(item)
     if (list != null) __obj.updateDynamic("list")(list)

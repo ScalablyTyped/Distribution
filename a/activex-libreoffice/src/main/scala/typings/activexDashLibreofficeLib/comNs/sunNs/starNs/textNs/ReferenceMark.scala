@@ -26,19 +26,8 @@ object ReferenceMark {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     setName: js.Function1[java.lang.String, scala.Unit]
   ): ReferenceMark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, Name = Name, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getName = getName, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setName = setName)
+  
     __obj.asInstanceOf[ReferenceMark]
   }
 }

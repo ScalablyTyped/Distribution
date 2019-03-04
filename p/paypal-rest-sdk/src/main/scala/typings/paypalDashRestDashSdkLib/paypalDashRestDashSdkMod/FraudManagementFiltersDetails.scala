@@ -20,11 +20,8 @@ object FraudManagementFiltersDetails {
     filter_type: java.lang.String,
     name: java.lang.String
   ): FraudManagementFiltersDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("filter_id")(filter_id)
-    __obj.updateDynamic("filter_type")(filter_type)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(description = description, filter_id = filter_id, filter_type = filter_type, name = name)
+  
     __obj.asInstanceOf[FraudManagementFiltersDetails]
   }
 }

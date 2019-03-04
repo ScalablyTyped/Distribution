@@ -24,12 +24,7 @@ object Anon_Count {
     total: scala.Double,
     summary: java.lang.String = null
   ): Anon_Count = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(count = count, error = error, offset = offset, resource = resource, total = total)
     if (summary != null) __obj.updateDynamic("summary")(summary)
     __obj.asInstanceOf[Anon_Count]
   }

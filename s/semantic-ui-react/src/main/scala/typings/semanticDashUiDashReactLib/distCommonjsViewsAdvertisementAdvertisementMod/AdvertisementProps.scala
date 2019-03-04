@@ -21,8 +21,7 @@ object AdvertisementProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     test: scala.Boolean | java.lang.String | scala.Double = null
   ): AdvertisementProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)

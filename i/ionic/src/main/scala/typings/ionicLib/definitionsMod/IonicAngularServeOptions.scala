@@ -40,21 +40,8 @@ object IonicAngularServeOptions {
     project: java.lang.String = null,
     sourcemaps: js.UndefOr[scala.Boolean] = js.undefined
   ): IonicAngularServeOptions = {
-    val __obj = js.Dynamic.literal(`--` = `--`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("consolelogs")(consolelogs)
-    __obj.updateDynamic("devapp")(devapp)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("lab")(lab)
-    __obj.updateDynamic("labHost")(labHost)
-    __obj.updateDynamic("labPort")(labPort)
-    __obj.updateDynamic("livereload")(livereload)
-    __obj.updateDynamic("livereloadPort")(livereloadPort)
-    __obj.updateDynamic("notificationPort")(notificationPort)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("proxy")(proxy)
-    __obj.updateDynamic("serverlogs")(serverlogs)
+    val __obj = js.Dynamic.literal(address = address, consolelogs = consolelogs, devapp = devapp, engine = engine, lab = lab, labHost = labHost, labPort = labPort, livereload = livereload, livereloadPort = livereloadPort, notificationPort = notificationPort, open = open, port = port, proxy = proxy, serverlogs = serverlogs)
+    __obj.updateDynamic("--")(`--`)
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption)
     if (env != null) __obj.updateDynamic("env")(env)

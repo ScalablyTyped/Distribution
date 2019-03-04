@@ -20,11 +20,8 @@ object Entry {
     source: java.lang.String,
     sourceText: java.lang.String
   ): Entry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("license")(license)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceText")(sourceText)
+    val __obj = js.Dynamic.literal(license = license, repository = repository, source = source, sourceText = sourceText)
+  
     __obj.asInstanceOf[Entry]
   }
 }

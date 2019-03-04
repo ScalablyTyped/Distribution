@@ -18,10 +18,8 @@ object PhononNotifComponent {
     setColor: js.Function1[PhononColor, PhononNotifComponent],
     show: js.Function0[PhononNotifComponent]
   ): PhononNotifComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("setColor")(setColor)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(hide = hide, setColor = setColor, show = show)
+  
     __obj.asInstanceOf[PhononNotifComponent]
   }
 }

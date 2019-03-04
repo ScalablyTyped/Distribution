@@ -46,8 +46,7 @@ object Tab {
     tabStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabTintColor: java.lang.String = null
   ): Tab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)

@@ -40,21 +40,8 @@ object IOCRZone {
     Top: scala.Double,
     Width: scala.Double
   ): IOCRZone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Barcode")(Barcode)
-    __obj.updateDynamic("ClearOCROptions")(ClearOCROptions)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DataType")(DataType)
-    __obj.updateDynamic("DimensionUnit")(DimensionUnit)
-    __obj.updateDynamic("HasOCROptions")(HasOCROptions)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Left")(Left)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OCROptions")(OCROptions)
-    __obj.updateDynamic("SetOCROptions")(SetOCROptions)
-    __obj.updateDynamic("Top")(Top)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Barcode = Barcode, ClearOCROptions = ClearOCROptions, Clone = Clone, DataType = DataType, DimensionUnit = DimensionUnit, HasOCROptions = HasOCROptions, Height = Height, ID = ID, Left = Left, Name = Name, OCROptions = OCROptions, SetOCROptions = SetOCROptions, Top = Top, Width = Width)
+  
     __obj.asInstanceOf[IOCRZone]
   }
 }

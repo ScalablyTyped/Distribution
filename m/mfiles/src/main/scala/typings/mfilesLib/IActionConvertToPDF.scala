@@ -22,12 +22,8 @@ object IActionConvertToPDF {
     PDFA1b: scala.Boolean,
     StoreAsSeparateFile: scala.Boolean
   ): IActionConvertToPDF = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("FailOnUnsupportedSourceFiles")(FailOnUnsupportedSourceFiles)
-    __obj.updateDynamic("OverwriteExistingFile")(OverwriteExistingFile)
-    __obj.updateDynamic("PDFA1b")(PDFA1b)
-    __obj.updateDynamic("StoreAsSeparateFile")(StoreAsSeparateFile)
+    val __obj = js.Dynamic.literal(Clone = Clone, FailOnUnsupportedSourceFiles = FailOnUnsupportedSourceFiles, OverwriteExistingFile = OverwriteExistingFile, PDFA1b = PDFA1b, StoreAsSeparateFile = StoreAsSeparateFile)
+  
     __obj.asInstanceOf[IActionConvertToPDF]
   }
 }

@@ -54,14 +54,8 @@ object Options {
     maxValue: js.Array[scala.Double],
     minValue: js.Array[scala.Double]
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("damping")(damping)
-    __obj.updateDynamic("errorTolerance")(errorTolerance)
-    __obj.updateDynamic("gradientDifference")(gradientDifference)
-    __obj.updateDynamic("initialValues")(initialValues)
-    __obj.updateDynamic("maxIterations")(maxIterations)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
+    val __obj = js.Dynamic.literal(damping = damping, errorTolerance = errorTolerance, gradientDifference = gradientDifference, initialValues = initialValues, maxIterations = maxIterations, maxValue = maxValue, minValue = minValue)
+  
     __obj.asInstanceOf[Options]
   }
 }

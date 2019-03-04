@@ -54,31 +54,8 @@ object PrismaticConstraint {
     upperLimitEquation: ContactEquation,
     velocity: scala.Double
   ): PrismaticConstraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("collideConnected")(collideConnected)
-    __obj.updateDynamic("disableMotor")(disableMotor)
-    __obj.updateDynamic("enableMotor")(enableMotor)
-    __obj.updateDynamic("equeations")(equeations)
-    __obj.updateDynamic("localAnchorA")(localAnchorA)
-    __obj.updateDynamic("localAnchorB")(localAnchorB)
-    __obj.updateDynamic("localAxisA")(localAxisA)
-    __obj.updateDynamic("lowerLimit")(lowerLimit)
-    __obj.updateDynamic("lowerLimitEnabled")(lowerLimitEnabled)
-    __obj.updateDynamic("lowerLimitEquation")(lowerLimitEquation)
-    __obj.updateDynamic("motorEnabled")(motorEnabled)
-    __obj.updateDynamic("motorEquation")(motorEquation)
-    __obj.updateDynamic("motorSpeed")(motorSpeed)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("setLimits")(setLimits)
-    __obj.updateDynamic("setRelaxation")(setRelaxation)
-    __obj.updateDynamic("setStiffness")(setStiffness)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("upperLimit")(upperLimit)
-    __obj.updateDynamic("upperLimitEnabled")(upperLimitEnabled)
-    __obj.updateDynamic("upperLimitEquation")(upperLimitEquation)
-    __obj.updateDynamic("velocity")(velocity)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, disableMotor = disableMotor, enableMotor = enableMotor, equeations = equeations, localAnchorA = localAnchorA, localAnchorB = localAnchorB, localAxisA = localAxisA, lowerLimit = lowerLimit, lowerLimitEnabled = lowerLimitEnabled, lowerLimitEquation = lowerLimitEquation, motorEnabled = motorEnabled, motorEquation = motorEquation, motorSpeed = motorSpeed, position = position, setLimits = setLimits, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update, upperLimit = upperLimit, upperLimitEnabled = upperLimitEnabled, upperLimitEquation = upperLimitEquation, velocity = velocity)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PrismaticConstraint]
   }
 }

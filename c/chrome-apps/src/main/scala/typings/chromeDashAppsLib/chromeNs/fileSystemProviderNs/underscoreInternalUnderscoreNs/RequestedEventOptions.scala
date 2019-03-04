@@ -19,9 +19,8 @@ trait RequestedEventOptions extends js.Object {
 object RequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: java.lang.String, requestId: chromeDashAppsLib.chromeNs.integer): RequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, requestId = requestId)
+  
     __obj.asInstanceOf[RequestedEventOptions]
   }
 }

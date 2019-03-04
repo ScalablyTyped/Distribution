@@ -60,9 +60,7 @@ object ElementDefinitionMapping {
     id: java.lang.String = null,
     language: code = null
   ): ElementDefinitionMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(identity = identity, map = map)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

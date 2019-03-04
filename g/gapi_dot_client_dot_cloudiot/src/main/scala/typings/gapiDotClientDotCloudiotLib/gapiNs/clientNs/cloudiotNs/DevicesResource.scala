@@ -56,15 +56,8 @@ object DevicesResource {
     ],
     states: StatesResource
   ): DevicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configVersions")(configVersions)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("modifyCloudToDeviceConfig")(modifyCloudToDeviceConfig)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("states")(states)
+    val __obj = js.Dynamic.literal(configVersions = configVersions, create = create, delete = delete, get = get, list = list, modifyCloudToDeviceConfig = modifyCloudToDeviceConfig, patch = patch, states = states)
+  
     __obj.asInstanceOf[DevicesResource]
   }
 }

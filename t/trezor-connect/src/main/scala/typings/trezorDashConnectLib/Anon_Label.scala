@@ -19,9 +19,8 @@ object Anon_Label {
     path: java.lang.String,
     `type`: trezorDashConnectLib.trezorDashConnectLibStrings.unacquired
   ): Anon_Label = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(label = label, path = path)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Label]
   }
 }

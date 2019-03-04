@@ -116,22 +116,8 @@ object IgSparklineMethods {
     removeItem: js.Function1[scala.Double, js.Object],
     setItem: js.Function2[scala.Double, js.Object, js.Object]
   ): IgSparklineMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dataBind")(dataBind)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("findIndexOfItem")(findIndexOfItem)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getDataItem")(getDataItem)
-    __obj.updateDynamic("insertItem")(insertItem)
-    __obj.updateDynamic("notifyClearItems")(notifyClearItems)
-    __obj.updateDynamic("notifyInsertItem")(notifyInsertItem)
-    __obj.updateDynamic("notifyRemoveItem")(notifyRemoveItem)
-    __obj.updateDynamic("notifySetItem")(notifySetItem)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("setItem")(setItem)
+    val __obj = js.Dynamic.literal(addItem = addItem, chart = chart, dataBind = dataBind, destroy = destroy, findIndexOfItem = findIndexOfItem, flush = flush, getData = getData, getDataItem = getDataItem, insertItem = insertItem, notifyClearItems = notifyClearItems, notifyInsertItem = notifyInsertItem, notifyRemoveItem = notifyRemoveItem, notifySetItem = notifySetItem, removeItem = removeItem, setItem = setItem)
+  
     __obj.asInstanceOf[IgSparklineMethods]
   }
 }

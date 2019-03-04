@@ -69,10 +69,7 @@ object PropertyDescriptor {
     wasThrown: js.UndefOr[scala.Boolean] = js.undefined,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): PropertyDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configurable")(configurable)
-    __obj.updateDynamic("enumerable")(enumerable)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, name = name)
     if (get != null) __obj.updateDynamic("get")(get)
     if (!js.isUndefined(isOwn)) __obj.updateDynamic("isOwn")(isOwn)
     if (set != null) __obj.updateDynamic("set")(set)

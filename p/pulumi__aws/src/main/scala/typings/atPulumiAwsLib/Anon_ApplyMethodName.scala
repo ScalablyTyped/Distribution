@@ -18,9 +18,7 @@ object Anon_ApplyMethodName {
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     applyMethod: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ApplyMethodName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (applyMethod != null) __obj.updateDynamic("applyMethod")(applyMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ApplyMethodName]
   }

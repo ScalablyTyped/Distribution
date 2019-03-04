@@ -26,14 +26,8 @@ object District {
     level: java.lang.String,
     name: java.lang.String
   ): District = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("boundaries")(boundaries)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("citycode")(citycode)
-    __obj.updateDynamic("districtList")(districtList)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(adcode = adcode, boundaries = boundaries, center = center, citycode = citycode, districtList = districtList, level = level, name = name)
+  
     __obj.asInstanceOf[District]
   }
 }

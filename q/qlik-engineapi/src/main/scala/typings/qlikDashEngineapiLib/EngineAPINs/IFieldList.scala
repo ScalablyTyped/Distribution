@@ -18,8 +18,8 @@ trait IFieldList extends js.Object {
 object IFieldList {
   @scala.inline
   def apply(qItems: js.Array[INxFieldDescription]): IFieldList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qItems")(qItems)
+    val __obj = js.Dynamic.literal(qItems = qItems)
+  
     __obj.asInstanceOf[IFieldList]
   }
 }

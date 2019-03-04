@@ -26,10 +26,8 @@ trait INxViewPort extends js.Object {
 object INxViewPort {
   @scala.inline
   def apply(qHeight: scala.Double, qWidth: scala.Double, qZoomLevel: scala.Double): INxViewPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qHeight")(qHeight)
-    __obj.updateDynamic("qWidth")(qWidth)
-    __obj.updateDynamic("qZoomLevel")(qZoomLevel)
+    val __obj = js.Dynamic.literal(qHeight = qHeight, qWidth = qWidth, qZoomLevel = qZoomLevel)
+  
     __obj.asInstanceOf[INxViewPort]
   }
 }

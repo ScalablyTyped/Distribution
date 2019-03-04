@@ -18,8 +18,7 @@ object Anon_DestinationRegion {
     grantName: java.lang.String = null,
     retentionPeriod: scala.Int | scala.Double = null
   ): Anon_DestinationRegion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationRegion")(destinationRegion)
+    val __obj = js.Dynamic.literal(destinationRegion = destinationRegion)
     if (grantName != null) __obj.updateDynamic("grantName")(grantName)
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DestinationRegion]

@@ -17,8 +17,8 @@ object Anon_Conn {
       scala.Unit
     ]
   ): Anon_Conn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("each")(each)
+    val __obj = js.Dynamic.literal(each = each)
+  
     __obj.asInstanceOf[Anon_Conn]
   }
 }

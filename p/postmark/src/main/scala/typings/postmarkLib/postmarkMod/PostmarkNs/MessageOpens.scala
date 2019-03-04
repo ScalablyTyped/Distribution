@@ -34,18 +34,8 @@ object MessageOpens {
     Tag: java.lang.String,
     UserAgent: java.lang.String
   ): MessageOpens = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Client")(Client)
-    __obj.updateDynamic("FirstOpen")(FirstOpen)
-    __obj.updateDynamic("Geo")(Geo)
-    __obj.updateDynamic("MessageID")(MessageID)
-    __obj.updateDynamic("OS")(OS)
-    __obj.updateDynamic("Platform")(Platform)
-    __obj.updateDynamic("ReadSeconds")(ReadSeconds)
-    __obj.updateDynamic("ReceivedAt")(ReceivedAt)
-    __obj.updateDynamic("Recipient")(Recipient)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("UserAgent")(UserAgent)
+    val __obj = js.Dynamic.literal(Client = Client, FirstOpen = FirstOpen, Geo = Geo, MessageID = MessageID, OS = OS, Platform = Platform, ReadSeconds = ReadSeconds, ReceivedAt = ReceivedAt, Recipient = Recipient, Tag = Tag, UserAgent = UserAgent)
+  
     __obj.asInstanceOf[MessageOpens]
   }
 }

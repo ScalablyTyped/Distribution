@@ -20,8 +20,7 @@ object Anon_DeleteSourceFromS3MaxAgeInDays {
     maxAgeInDays: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     maxCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_DeleteSourceFromS3MaxAgeInDays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
     if (deleteSourceFromS3 != null) __obj.updateDynamic("deleteSourceFromS3")(deleteSourceFromS3.asInstanceOf[js.Any])
     if (maxAgeInDays != null) __obj.updateDynamic("maxAgeInDays")(maxAgeInDays.asInstanceOf[js.Any])
     if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])

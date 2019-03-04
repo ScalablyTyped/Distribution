@@ -355,9 +355,7 @@ object PlotParams {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useResizeHandler: js.UndefOr[scala.Boolean] = js.undefined
   ): PlotParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("layout")(layout)
+    val __obj = js.Dynamic.literal(data = data, layout = layout)
     if (className != null) __obj.updateDynamic("className")(className)
     if (config != null) __obj.updateDynamic("config")(config)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)

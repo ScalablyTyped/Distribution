@@ -72,18 +72,9 @@ object IBalanceTransaction {
     `type`: java.lang.String,
     description: java.lang.String = null
   ): IBalanceTransaction = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("available_on")(available_on)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("fee")(fee)
-    __obj.updateDynamic("fee_details")(fee_details)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("net")(net)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("source_transfers")(source_transfers)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(amount = amount, available_on = available_on, created = created, currency = currency, fee = fee, fee_details = fee_details, id = id, net = net, source = source.asInstanceOf[js.Any], source_transfers = source_transfers, status = status)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IBalanceTransaction]
   }

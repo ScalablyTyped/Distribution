@@ -14,9 +14,8 @@ trait Anon_Disabled extends js.Object {
 object Anon_Disabled {
   @scala.inline
   def apply(disabled: scala.Boolean, size: java.lang.String, `type`: java.lang.String): Anon_Disabled = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(disabled = disabled, size = size)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Disabled]
   }
 }

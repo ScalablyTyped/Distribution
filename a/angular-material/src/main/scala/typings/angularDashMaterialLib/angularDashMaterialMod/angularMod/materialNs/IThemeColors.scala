@@ -15,11 +15,8 @@ trait IThemeColors extends js.Object {
 object IThemeColors {
   @scala.inline
   def apply(accent: IThemePalette, background: IThemePalette, primary: IThemePalette, warn: IThemePalette): IThemeColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accent")(accent)
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("primary")(primary)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(accent = accent, background = background, primary = primary, warn = warn)
+  
     __obj.asInstanceOf[IThemeColors]
   }
 }

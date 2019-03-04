@@ -53,16 +53,11 @@ object DocumentType {
     `x-publicId`: java.lang.String,
     `x-systemId`: java.lang.String
   ): DocumentType = {
-    val __obj = js.Dynamic.literal(`type` = `type`, `x-name` = `x-name`, `x-publicId` = `x-publicId`, `x-systemId` = `x-systemId`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("previousSibling")(previousSibling)
+    val __obj = js.Dynamic.literal(data = data, name = name, next = next, nextSibling = nextSibling, nodeType = nodeType, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling)
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("x-name")(`x-name`)
+    __obj.updateDynamic("x-publicId")(`x-publicId`)
+    __obj.updateDynamic("x-systemId")(`x-systemId`)
     __obj.asInstanceOf[DocumentType]
   }
 }

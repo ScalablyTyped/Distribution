@@ -28,15 +28,8 @@ object Transports {
     Stream: StreamTransportInstance,
     StreamTransportOptions: StreamTransportOptions
   ): Transports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Console")(Console)
-    __obj.updateDynamic("ConsoleTransportOptions")(ConsoleTransportOptions)
-    __obj.updateDynamic("File")(File)
-    __obj.updateDynamic("FileTransportOptions")(FileTransportOptions)
-    __obj.updateDynamic("Http")(Http)
-    __obj.updateDynamic("HttpTransportOptions")(HttpTransportOptions)
-    __obj.updateDynamic("Stream")(Stream)
-    __obj.updateDynamic("StreamTransportOptions")(StreamTransportOptions)
+    val __obj = js.Dynamic.literal(Console = Console, ConsoleTransportOptions = ConsoleTransportOptions, File = File, FileTransportOptions = FileTransportOptions, Http = Http, HttpTransportOptions = HttpTransportOptions, Stream = Stream, StreamTransportOptions = StreamTransportOptions)
+  
     __obj.asInstanceOf[Transports]
   }
 }

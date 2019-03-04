@@ -12,8 +12,8 @@ trait SourceFileLike extends js.Object {
 object SourceFileLike {
   @scala.inline
   def apply(getLineAndCharacterOfPosition: js.Function1[scala.Double, LineAndCharacter]): SourceFileLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLineAndCharacterOfPosition")(getLineAndCharacterOfPosition)
+    val __obj = js.Dynamic.literal(getLineAndCharacterOfPosition = getLineAndCharacterOfPosition)
+  
     __obj.asInstanceOf[SourceFileLike]
   }
 }

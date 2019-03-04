@@ -19,8 +19,7 @@ trait CallFunctionOnReturnType extends js.Object {
 object CallFunctionOnReturnType {
   @scala.inline
   def apply(result: RemoteObject, exceptionDetails: ExceptionDetails = null): CallFunctionOnReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
     if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
     __obj.asInstanceOf[CallFunctionOnReturnType]
   }

@@ -12,8 +12,8 @@ trait Anon_ToHexString extends js.Object {
 object Anon_ToHexString {
   @scala.inline
   def apply(toHexString: js.Function0[java.lang.String]): Anon_ToHexString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toHexString")(toHexString)
+    val __obj = js.Dynamic.literal(toHexString = toHexString)
+  
     __obj.asInstanceOf[Anon_ToHexString]
   }
 }

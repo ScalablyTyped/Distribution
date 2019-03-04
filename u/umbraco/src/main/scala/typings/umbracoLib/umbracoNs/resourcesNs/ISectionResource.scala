@@ -18,8 +18,8 @@ trait ISectionResource extends js.Object {
 object ISectionResource {
   @scala.inline
   def apply(getSections: js.Function0[scala.Unit]): ISectionResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSections")(getSections)
+    val __obj = js.Dynamic.literal(getSections = getSections)
+  
     __obj.asInstanceOf[ISectionResource]
   }
 }

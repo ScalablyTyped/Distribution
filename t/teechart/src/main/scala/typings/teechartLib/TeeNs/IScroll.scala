@@ -24,13 +24,8 @@ object IScroll {
     mouseButton: scala.Double,
     position: IPoint
   ): IScroll = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("mouseButton")(mouseButton)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, direction = direction, enabled = enabled, mouseButton = mouseButton, position = position)
+  
     __obj.asInstanceOf[IScroll]
   }
 }

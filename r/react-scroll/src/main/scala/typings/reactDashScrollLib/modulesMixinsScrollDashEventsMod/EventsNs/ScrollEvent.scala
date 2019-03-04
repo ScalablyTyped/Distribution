@@ -23,9 +23,8 @@ object ScrollEvent {
     ],
     remove: js.Function1[java.lang.String, scala.Unit]
   ): ScrollEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(register = register, remove = remove)
+  
     __obj.asInstanceOf[ScrollEvent]
   }
 }

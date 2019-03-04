@@ -16,12 +16,8 @@ trait ChangeEventValue extends js.Object {
 object ChangeEventValue {
   @scala.inline
   def apply(bounds: Bounds, center: Coords, marginBounds: Bounds, size: Size, zoom: scala.Double): ChangeEventValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("marginBounds")(marginBounds)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(bounds = bounds, center = center, marginBounds = marginBounds, size = size, zoom = zoom)
+  
     __obj.asInstanceOf[ChangeEventValue]
   }
 }

@@ -58,10 +58,8 @@ object Anon_Accountholdername {
     account_holder_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
     routing_number: java.lang.String = null
   ): Anon_Accountholdername = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("account_number")(account_number)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(account_number = account_number, country = country, currency = currency)
+    __obj.updateDynamic("object")(`object`)
     if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
     if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
     if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number)

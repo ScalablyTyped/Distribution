@@ -30,9 +30,8 @@ object XToolPanel {
       activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
     ]
   ): XToolPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Window")(Window)
-    __obj.updateDynamic("createAccessible")(createAccessible)
+    val __obj = js.Dynamic.literal(Window = Window, createAccessible = createAccessible)
+  
     __obj.asInstanceOf[XToolPanel]
   }
 }

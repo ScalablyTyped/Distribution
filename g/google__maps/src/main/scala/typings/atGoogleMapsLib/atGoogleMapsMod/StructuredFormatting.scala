@@ -24,10 +24,8 @@ object StructuredFormatting {
     main_text_matched_substrings: js.Array[PredictionSubstring],
     secondary_text: java.lang.String
   ): StructuredFormatting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("main_text")(main_text)
-    __obj.updateDynamic("main_text_matched_substrings")(main_text_matched_substrings)
-    __obj.updateDynamic("secondary_text")(secondary_text)
+    val __obj = js.Dynamic.literal(main_text = main_text, main_text_matched_substrings = main_text_matched_substrings, secondary_text = secondary_text)
+  
     __obj.asInstanceOf[StructuredFormatting]
   }
 }

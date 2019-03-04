@@ -20,11 +20,8 @@ object ShippingQuery {
     invoice_payload: java.lang.String,
     shipping_address: ShippingAddress
   ): ShippingQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("invoice_payload")(invoice_payload)
-    __obj.updateDynamic("shipping_address")(shipping_address)
+    val __obj = js.Dynamic.literal(from = from, id = id, invoice_payload = invoice_payload, shipping_address = shipping_address)
+  
     __obj.asInstanceOf[ShippingQuery]
   }
 }

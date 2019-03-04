@@ -20,11 +20,8 @@ object Template {
     helpers: Helpers,
     recipe: Recipe | java.lang.String
   ): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    __obj.updateDynamic("helpers")(helpers.asInstanceOf[js.Any])
-    __obj.updateDynamic("recipe")(recipe.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, engine = engine.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Template]
   }
 }

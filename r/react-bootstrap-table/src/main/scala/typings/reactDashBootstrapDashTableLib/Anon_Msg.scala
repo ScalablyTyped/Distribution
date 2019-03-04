@@ -27,9 +27,8 @@ object Anon_Msg {
     title: java.lang.String,
     `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditValidatorType
   ): Anon_Msg = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(msg = msg, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Msg]
   }
 }

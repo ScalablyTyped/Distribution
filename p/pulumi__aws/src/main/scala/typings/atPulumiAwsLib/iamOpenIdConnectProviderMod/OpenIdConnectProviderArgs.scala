@@ -27,10 +27,8 @@ object OpenIdConnectProviderArgs {
     thumbprintLists: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     url: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): OpenIdConnectProviderArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientIdLists")(clientIdLists.asInstanceOf[js.Any])
-    __obj.updateDynamic("thumbprintLists")(thumbprintLists.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientIdLists = clientIdLists.asInstanceOf[js.Any], thumbprintLists = thumbprintLists.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OpenIdConnectProviderArgs]
   }
 }

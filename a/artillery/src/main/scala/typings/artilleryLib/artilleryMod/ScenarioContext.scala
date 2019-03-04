@@ -12,8 +12,8 @@ trait ScenarioContext extends js.Object {
 object ScenarioContext {
   @scala.inline
   def apply(vars: org.scalablytyped.runtime.StringDictionary[js.Any]): ScenarioContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(vars = vars)
+  
     __obj.asInstanceOf[ScenarioContext]
   }
 }

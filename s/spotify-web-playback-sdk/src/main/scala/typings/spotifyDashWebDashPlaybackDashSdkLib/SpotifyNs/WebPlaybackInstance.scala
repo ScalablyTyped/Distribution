@@ -12,8 +12,8 @@ trait WebPlaybackInstance extends js.Object {
 object WebPlaybackInstance {
   @scala.inline
   def apply(device_id: java.lang.String): WebPlaybackInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device_id")(device_id)
+    val __obj = js.Dynamic.literal(device_id = device_id)
+  
     __obj.asInstanceOf[WebPlaybackInstance]
   }
 }

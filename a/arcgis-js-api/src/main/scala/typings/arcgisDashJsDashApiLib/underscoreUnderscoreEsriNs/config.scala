@@ -76,14 +76,8 @@ object config {
     request: configRequest,
     workers: configWorkers
   ): config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontsUrl")(fontsUrl)
-    __obj.updateDynamic("geoRSSServiceUrl")(geoRSSServiceUrl)
-    __obj.updateDynamic("geometryServiceUrl")(geometryServiceUrl)
-    __obj.updateDynamic("kmlServiceUrl")(kmlServiceUrl)
-    __obj.updateDynamic("portalUrl")(portalUrl)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("workers")(workers)
+    val __obj = js.Dynamic.literal(fontsUrl = fontsUrl, geoRSSServiceUrl = geoRSSServiceUrl, geometryServiceUrl = geometryServiceUrl, kmlServiceUrl = kmlServiceUrl, portalUrl = portalUrl, request = request, workers = workers)
+  
     __obj.asInstanceOf[config]
   }
 }

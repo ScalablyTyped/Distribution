@@ -35,11 +35,8 @@ object MVCxClientGlobalEvents {
     ControlsInitialized: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]],
     EndCallback: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]
   ): MVCxClientGlobalEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("ControlsInitialized")(ControlsInitialized)
-    __obj.updateDynamic("EndCallback")(EndCallback)
+    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback)
+  
     __obj.asInstanceOf[MVCxClientGlobalEvents]
   }
 }

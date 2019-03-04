@@ -24,13 +24,8 @@ object Cleave {
     setPhoneRegionCode: js.Function1[java.lang.String, scala.Unit],
     setRawValue: js.Function1[java.lang.String, scala.Unit]
   ): Cleave = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getFormattedValue")(getFormattedValue)
-    __obj.updateDynamic("getISOFormatDate")(getISOFormatDate)
-    __obj.updateDynamic("getRawValue")(getRawValue)
-    __obj.updateDynamic("setPhoneRegionCode")(setPhoneRegionCode)
-    __obj.updateDynamic("setRawValue")(setRawValue)
+    val __obj = js.Dynamic.literal(destroy = destroy, getFormattedValue = getFormattedValue, getISOFormatDate = getISOFormatDate, getRawValue = getRawValue, setPhoneRegionCode = setPhoneRegionCode, setRawValue = setRawValue)
+  
     __obj.asInstanceOf[Cleave]
   }
 }

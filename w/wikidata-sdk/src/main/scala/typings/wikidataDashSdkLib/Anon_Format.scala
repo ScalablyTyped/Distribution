@@ -22,8 +22,7 @@ object Anon_Format {
     limit: java.lang.String | scala.Double = null,
     uselang: wikidataDashSdkLib.defTypeLanguageMod.WikidataLanguage = null
   ): Anon_Format = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(search = search)
     if (format != null) __obj.updateDynamic("format")(format)
     if (language != null) __obj.updateDynamic("language")(language)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])

@@ -32,8 +32,7 @@ object Props {
     theme: js.Any = null,
     width: scala.Double | java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onComplete")(onComplete)
+    val __obj = js.Dynamic.literal(onComplete = onComplete)
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)

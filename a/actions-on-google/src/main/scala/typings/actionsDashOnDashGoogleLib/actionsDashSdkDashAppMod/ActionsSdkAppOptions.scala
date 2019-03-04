@@ -21,9 +21,7 @@ object ActionsSdkAppOptions {
     response: expressLib.expressMod.eNs.Response,
     sessionStarted: js.Function0[_] = null
   ): ActionsSdkAppOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(request = request, response = response)
     if (sessionStarted != null) __obj.updateDynamic("sessionStarted")(sessionStarted)
     __obj.asInstanceOf[ActionsSdkAppOptions]
   }

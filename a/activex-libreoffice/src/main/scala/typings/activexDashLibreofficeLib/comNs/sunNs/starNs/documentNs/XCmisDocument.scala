@@ -44,21 +44,8 @@ object XCmisDocument {
     release: js.Function0[scala.Unit],
     updateCmisProperties: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CmisProperty], scala.Unit]
   ): XCmisDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllVersions")(AllVersions)
-    __obj.updateDynamic("CmisProperties")(CmisProperties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("canCancelCheckOut")(canCancelCheckOut)
-    __obj.updateDynamic("canCheckIn")(canCheckIn)
-    __obj.updateDynamic("canCheckOut")(canCheckOut)
-    __obj.updateDynamic("cancelCheckOut")(cancelCheckOut)
-    __obj.updateDynamic("checkIn")(checkIn)
-    __obj.updateDynamic("checkOut")(checkOut)
-    __obj.updateDynamic("getAllVersions")(getAllVersions)
-    __obj.updateDynamic("isVersionable")(isVersionable)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateCmisProperties")(updateCmisProperties)
+    val __obj = js.Dynamic.literal(AllVersions = AllVersions, CmisProperties = CmisProperties, acquire = acquire, canCancelCheckOut = canCancelCheckOut, canCheckIn = canCheckIn, canCheckOut = canCheckOut, cancelCheckOut = cancelCheckOut, checkIn = checkIn, checkOut = checkOut, getAllVersions = getAllVersions, isVersionable = isVersionable, queryInterface = queryInterface, release = release, updateCmisProperties = updateCmisProperties)
+  
     __obj.asInstanceOf[XCmisDocument]
   }
 }

@@ -16,9 +16,8 @@ object Navigator {
     activeVRDisplays: js.Array[VRDisplay],
     getVRDisplays: js.Function0[js.Promise[js.Array[VRDisplay]]]
   ): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeVRDisplays")(activeVRDisplays)
-    __obj.updateDynamic("getVRDisplays")(getVRDisplays)
+    val __obj = js.Dynamic.literal(activeVRDisplays = activeVRDisplays, getVRDisplays = getVRDisplays)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

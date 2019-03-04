@@ -50,28 +50,8 @@ object XFunctions {
     replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createFunction")(createFunction)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByIndex")(insertByIndex)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
-    __obj.updateDynamic("setParent")(setParent)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, Parent = Parent, acquire = acquire, addContainerListener = addContainerListener, addEventListener = addEventListener, createFunction = createFunction, dispose = dispose, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getParent = getParent, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, removeContainerListener = removeContainerListener, removeEventListener = removeEventListener, replaceByIndex = replaceByIndex, setParent = setParent)
+  
     __obj.asInstanceOf[XFunctions]
   }
 }

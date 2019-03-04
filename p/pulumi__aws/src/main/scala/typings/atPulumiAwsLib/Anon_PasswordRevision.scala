@@ -24,7 +24,8 @@ object Anon_PasswordRevision {
     url: java.lang.String = null,
     username: java.lang.String = null
   ): Anon_PasswordRevision = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (password != null) __obj.updateDynamic("password")(password)
     if (revision != null) __obj.updateDynamic("revision")(revision)
     if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey)

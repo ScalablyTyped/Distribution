@@ -23,10 +23,8 @@ trait IStorableRequestOptions extends js.Object {
 object IStorableRequestOptions {
   @scala.inline
   def apply(requestInit: stdLib.RequestInit, timestamp: scala.Double, url: java.lang.String): IStorableRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestInit")(requestInit)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(requestInit = requestInit, timestamp = timestamp, url = url)
+  
     __obj.asInstanceOf[IStorableRequestOptions]
   }
 }

@@ -48,13 +48,8 @@ object MustacheScanner {
     string: java.lang.String,
     tail: java.lang.String
   ): MustacheScanner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eos")(eos)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("scan")(scan)
-    __obj.updateDynamic("scanUntil")(scanUntil)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("tail")(tail)
+    val __obj = js.Dynamic.literal(eos = eos, pos = pos, scan = scan, scanUntil = scanUntil, string = string, tail = tail)
+  
     __obj.asInstanceOf[MustacheScanner]
   }
 }

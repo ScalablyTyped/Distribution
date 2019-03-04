@@ -18,8 +18,7 @@ object SubscriptionOptions {
     fetchPolicy: FetchPolicy = null,
     variables: TVariables = null
   ): SubscriptionOptions[TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionOptions[TVariables]]

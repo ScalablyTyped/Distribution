@@ -42,20 +42,7 @@ object Anon_BorderColor {
     text: java.lang.String,
     markerShape: atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | java.lang.String = null
   ): Anon_BorderColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("categoryVisibility")(categoryVisibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("markerColor")(markerColor)
-    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("shortDesc")(shortDesc)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, categories = categories, categoryVisibility = categoryVisibility.asInstanceOf[js.Any], color = color, id = id, lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth, markerColor = markerColor, pattern = pattern.asInstanceOf[js.Any], shortDesc = shortDesc, source = source, symbolType = symbolType.asInstanceOf[js.Any], text = text)
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderColor]
   }

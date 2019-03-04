@@ -37,12 +37,8 @@ object ILogLevel {
     silent: workboxDashSwLib.workboxDashSwLibNumbers.`4`,
     warn: workboxDashSwLib.workboxDashSwLibNumbers.`2`
   ): ILogLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, log = log, silent = silent, warn = warn)
+  
     __obj.asInstanceOf[ILogLevel]
   }
 }

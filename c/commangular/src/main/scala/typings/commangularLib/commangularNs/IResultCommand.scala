@@ -27,10 +27,8 @@ object IResultCommand {
     onError: js.Function1[stdLib.Error, scala.Unit],
     onResult: js.Function1[js.Any, scala.Unit]
   ): IResultCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onResult")(onResult)
+    val __obj = js.Dynamic.literal(execute = execute, onError = onError, onResult = onResult)
+  
     __obj.asInstanceOf[IResultCommand]
   }
 }

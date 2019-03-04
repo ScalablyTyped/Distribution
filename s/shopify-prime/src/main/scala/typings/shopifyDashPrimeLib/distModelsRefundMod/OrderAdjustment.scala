@@ -27,13 +27,7 @@ object OrderAdjustment {
     admin_graphql_api_id: java.lang.String = null,
     id: scala.Int | scala.Double = null
   ): OrderAdjustment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("order_id")(order_id)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("refund_id")(refund_id)
-    __obj.updateDynamic("tax_amount")(tax_amount)
+    val __obj = js.Dynamic.literal(amount = amount, kind = kind, order_id = order_id, reason = reason, refund_id = refund_id, tax_amount = tax_amount)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderAdjustment]

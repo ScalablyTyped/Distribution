@@ -19,9 +19,8 @@ trait DeleteBookmarkCommand extends CommandWithSimpleStateBase {
 object DeleteBookmarkCommand {
   @scala.inline
   def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[SimpleCommandState]): DeleteBookmarkCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[DeleteBookmarkCommand]
   }
 }

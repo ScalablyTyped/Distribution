@@ -22,9 +22,7 @@ object Entity {
     Timestamp: stdLib.Date = null,
     etag: java.lang.String = null
   ): Entity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PartitionKey")(PartitionKey)
-    __obj.updateDynamic("RowKey")(RowKey)
+    val __obj = js.Dynamic.literal(PartitionKey = PartitionKey, RowKey = RowKey)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
     if (etag != null) __obj.updateDynamic("etag")(etag)

@@ -16,9 +16,8 @@ object MemberMetadata {
     decode: js.Function1[nodeLib.Buffer, MemberMetadataOptions],
     encode: js.Function1[MemberMetadataOptions, nodeLib.Buffer]
   ): MemberMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+  
     __obj.asInstanceOf[MemberMetadata]
   }
 }

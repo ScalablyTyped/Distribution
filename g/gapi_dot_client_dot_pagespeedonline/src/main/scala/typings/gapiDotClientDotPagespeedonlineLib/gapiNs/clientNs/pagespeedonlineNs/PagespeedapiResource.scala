@@ -21,8 +21,8 @@ object PagespeedapiResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Result]
     ]
   ): PagespeedapiResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("runpagespeed")(runpagespeed)
+    val __obj = js.Dynamic.literal(runpagespeed = runpagespeed)
+  
     __obj.asInstanceOf[PagespeedapiResource]
   }
 }

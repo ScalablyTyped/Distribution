@@ -97,24 +97,8 @@ object GetLaunchConfigurationResult {
     vpcClassicLinkId: java.lang.String,
     vpcClassicLinkSecurityGroups: js.Array[java.lang.String]
   ): GetLaunchConfigurationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
-    __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices)
-    __obj.updateDynamic("ebsOptimized")(ebsOptimized)
-    __obj.updateDynamic("enableMonitoring")(enableMonitoring)
-    __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices)
-    __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageId")(imageId)
-    __obj.updateDynamic("instanceType")(instanceType)
-    __obj.updateDynamic("keyName")(keyName)
-    __obj.updateDynamic("placementTenancy")(placementTenancy)
-    __obj.updateDynamic("rootBlockDevices")(rootBlockDevices)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("spotPrice")(spotPrice)
-    __obj.updateDynamic("userData")(userData)
-    __obj.updateDynamic("vpcClassicLinkId")(vpcClassicLinkId)
-    __obj.updateDynamic("vpcClassicLinkSecurityGroups")(vpcClassicLinkSecurityGroups)
+    val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, enableMonitoring = enableMonitoring, ephemeralBlockDevices = ephemeralBlockDevices, iamInstanceProfile = iamInstanceProfile, id = id, imageId = imageId, instanceType = instanceType, keyName = keyName, placementTenancy = placementTenancy, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, spotPrice = spotPrice, userData = userData, vpcClassicLinkId = vpcClassicLinkId, vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups)
+  
     __obj.asInstanceOf[GetLaunchConfigurationResult]
   }
 }

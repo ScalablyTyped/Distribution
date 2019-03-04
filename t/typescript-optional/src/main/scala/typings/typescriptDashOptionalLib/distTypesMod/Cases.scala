@@ -13,9 +13,8 @@ trait Cases[T, U] extends js.Object {
 object Cases {
   @scala.inline
   def apply[T, U](empty: js.Function0[U], present: js.Function1[T, U]): Cases[T, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("present")(present)
+    val __obj = js.Dynamic.literal(empty = empty, present = present)
+  
     __obj.asInstanceOf[Cases[T, U]]
   }
 }

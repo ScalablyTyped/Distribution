@@ -32,8 +32,7 @@ object Anon_AnimationAnimationOptionsAscend {
     onPreHide: js.Function0[scala.Unit] = null,
     onPreShow: js.Function0[scala.Unit] = null
   ): Anon_AnimationAnimationOptionsAscend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)

@@ -55,28 +55,8 @@ object ConditionalFormat {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ConditionalFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Range")(Range)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createEntry")(createEntry)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, ID = ID, PropertySetInfo = PropertySetInfo, Range = Range, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createEntry = createEntry, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasElements = hasElements, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[ConditionalFormat]
   }
 }

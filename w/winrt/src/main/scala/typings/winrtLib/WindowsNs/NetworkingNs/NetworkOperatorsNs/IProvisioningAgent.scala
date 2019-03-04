@@ -19,9 +19,8 @@ object IProvisioningAgent {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ProvisionFromXmlDocumentResults]
     ]
   ): IProvisioningAgent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getProvisionedProfile")(getProvisionedProfile)
-    __obj.updateDynamic("provisionFromXmlDocumentAsync")(provisionFromXmlDocumentAsync)
+    val __obj = js.Dynamic.literal(getProvisionedProfile = getProvisionedProfile, provisionFromXmlDocumentAsync = provisionFromXmlDocumentAsync)
+  
     __obj.asInstanceOf[IProvisioningAgent]
   }
 }

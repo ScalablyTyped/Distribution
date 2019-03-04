@@ -13,9 +13,8 @@ trait Item extends js.Object {
 object Item {
   @scala.inline
   def apply(path: java.lang.String, stats: nodeLib.fsMod.Stats): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(path = path, stats = stats)
+  
     __obj.asInstanceOf[Item]
   }
 }

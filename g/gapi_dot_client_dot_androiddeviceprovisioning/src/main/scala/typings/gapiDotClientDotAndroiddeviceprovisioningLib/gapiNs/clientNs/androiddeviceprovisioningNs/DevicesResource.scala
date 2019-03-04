@@ -66,16 +66,8 @@ object DevicesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): DevicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("claim")(claim)
-    __obj.updateDynamic("claimAsync")(claimAsync)
-    __obj.updateDynamic("findByIdentifier")(findByIdentifier)
-    __obj.updateDynamic("findByOwner")(findByOwner)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("unclaim")(unclaim)
-    __obj.updateDynamic("unclaimAsync")(unclaimAsync)
-    __obj.updateDynamic("updateMetadataAsync")(updateMetadataAsync)
+    val __obj = js.Dynamic.literal(claim = claim, claimAsync = claimAsync, findByIdentifier = findByIdentifier, findByOwner = findByOwner, get = get, metadata = metadata, unclaim = unclaim, unclaimAsync = unclaimAsync, updateMetadataAsync = updateMetadataAsync)
+  
     __obj.asInstanceOf[DevicesResource]
   }
 }

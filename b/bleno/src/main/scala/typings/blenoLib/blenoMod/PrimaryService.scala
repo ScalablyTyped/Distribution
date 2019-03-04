@@ -17,10 +17,8 @@ object PrimaryService {
     toString: js.Function0[java.lang.String],
     uuid: java.lang.String
   ): PrimaryService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("characteristics")(characteristics)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(characteristics = characteristics, toString = toString, uuid = uuid)
+  
     __obj.asInstanceOf[PrimaryService]
   }
 }

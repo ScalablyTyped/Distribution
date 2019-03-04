@@ -30,16 +30,8 @@ object BindStrategy {
     strategy: java.lang.String | scala.Unit,
     translate: js.Function1[js.Any, scala.Unit]
   ): BindStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearMap")(clearMap)
-    __obj.updateDynamic("createMap")(createMap)
-    __obj.updateDynamic("createRow")(createRow)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("klass")(klass)
-    __obj.updateDynamic("removeRow")(removeRow)
-    __obj.updateDynamic("setStrategy")(setStrategy)
-    __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
-    __obj.updateDynamic("translate")(translate)
+    val __obj = js.Dynamic.literal(clearMap = clearMap, createMap = createMap, createRow = createRow, destroy = destroy, klass = klass, removeRow = removeRow, setStrategy = setStrategy, strategy = strategy.asInstanceOf[js.Any], translate = translate)
+  
     __obj.asInstanceOf[BindStrategy]
   }
 }

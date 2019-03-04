@@ -13,9 +13,8 @@ trait DataRef extends js.Object {
 object DataRef {
   @scala.inline
   def apply(data: java.lang.String, field: ScaleField): DataRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data, field = field.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DataRef]
   }
 }

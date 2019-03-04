@@ -13,9 +13,8 @@ trait Anon_Size extends js.Object {
 object Anon_Size {
   @scala.inline
   def apply(size: js.Function0[js.Promise[scala.Double]], stream: nodeLib.streamMod.Readable): Anon_Size = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(size = size, stream = stream)
+  
     __obj.asInstanceOf[Anon_Size]
   }
 }

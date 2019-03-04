@@ -18,11 +18,8 @@ object StatsApiResponse {
     stats: StatsCategories,
     username: java.lang.String
   ): StatsApiResponse = {
-    val __obj = js.Dynamic.literal(`private` = `private`)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("portrait")(portrait)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(level = level, portrait = portrait, stats = stats, username = username)
+    __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[StatsApiResponse]
   }
 }

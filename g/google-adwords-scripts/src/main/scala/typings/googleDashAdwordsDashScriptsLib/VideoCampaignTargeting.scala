@@ -26,14 +26,8 @@ object VideoCampaignTargeting {
     targetedLocations: js.Function0[AdWordsSelector[TargetedLocation]],
     targetedProximities: js.Function0[AdWordsSelector[TargetedProximity]]
   ): VideoCampaignTargeting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adSchedules")(adSchedules)
-    __obj.updateDynamic("excludedContentLabels")(excludedContentLabels)
-    __obj.updateDynamic("excludedLocations")(excludedLocations)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("platforms")(platforms)
-    __obj.updateDynamic("targetedLocations")(targetedLocations)
-    __obj.updateDynamic("targetedProximities")(targetedProximities)
+    val __obj = js.Dynamic.literal(adSchedules = adSchedules, excludedContentLabels = excludedContentLabels, excludedLocations = excludedLocations, languages = languages, platforms = platforms, targetedLocations = targetedLocations, targetedProximities = targetedProximities)
+  
     __obj.asInstanceOf[VideoCampaignTargeting]
   }
 }

@@ -18,7 +18,8 @@ object Anon_Scope {
     `type`: vegaDashTypingsLib.typesSpecStreamMod.EventType,
     source: vegaDashTypingsLib.vegaDashTypingsLibStrings.view | vegaDashTypingsLib.vegaDashTypingsLibStrings.scope = null
   ): Anon_Scope = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Scope]
   }

@@ -58,16 +58,8 @@ object ICollisionCoordinator {
     onMeshRemoved: js.Function1[AbstractMesh, scala.Unit],
     onMeshUpdated: js.Function1[AbstractMesh, scala.Unit]
   ): ICollisionCoordinator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getNewPosition")(getNewPosition)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("onGeometryAdded")(onGeometryAdded)
-    __obj.updateDynamic("onGeometryDeleted")(onGeometryDeleted)
-    __obj.updateDynamic("onGeometryUpdated")(onGeometryUpdated)
-    __obj.updateDynamic("onMeshAdded")(onMeshAdded)
-    __obj.updateDynamic("onMeshRemoved")(onMeshRemoved)
-    __obj.updateDynamic("onMeshUpdated")(onMeshUpdated)
+    val __obj = js.Dynamic.literal(destroy = destroy, getNewPosition = getNewPosition, init = init, onGeometryAdded = onGeometryAdded, onGeometryDeleted = onGeometryDeleted, onGeometryUpdated = onGeometryUpdated, onMeshAdded = onMeshAdded, onMeshRemoved = onMeshRemoved, onMeshUpdated = onMeshUpdated)
+  
     __obj.asInstanceOf[ICollisionCoordinator]
   }
 }

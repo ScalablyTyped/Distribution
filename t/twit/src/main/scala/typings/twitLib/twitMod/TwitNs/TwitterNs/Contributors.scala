@@ -14,10 +14,8 @@ trait Contributors extends js.Object {
 object Contributors {
   @scala.inline
   def apply(id: scala.Double, id_str: java.lang.String, screen_name: java.lang.String): Contributors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("id_str")(id_str)
-    __obj.updateDynamic("screen_name")(screen_name)
+    val __obj = js.Dynamic.literal(id = id, id_str = id_str, screen_name = screen_name)
+  
     __obj.asInstanceOf[Contributors]
   }
 }

@@ -26,14 +26,8 @@ object Anon_IsRange {
     range: java.lang.String,
     version: java.lang.String
   ): Anon_IsRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRange")(isRange)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("parts")(parts)
-    __obj.updateDynamic("prerelease")(prerelease)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(isRange = isRange, number = number, operator = operator, parts = parts, prerelease = prerelease, range = range, version = version)
+  
     __obj.asInstanceOf[Anon_IsRange]
   }
 }

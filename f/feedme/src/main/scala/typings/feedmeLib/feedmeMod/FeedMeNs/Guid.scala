@@ -13,9 +13,8 @@ trait Guid extends js.Object {
 object Guid {
   @scala.inline
   def apply(ispermalink: java.lang.String, text: java.lang.String): Guid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ispermalink")(ispermalink)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(ispermalink = ispermalink, text = text)
+  
     __obj.asInstanceOf[Guid]
   }
 }

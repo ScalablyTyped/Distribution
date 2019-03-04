@@ -29,10 +29,7 @@ object DocumentSearchResponse {
     highlights: js.Object = null,
     ranges: js.Object = null
   ): DocumentSearchResponse[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bookmark")(bookmark)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("total_rows")(total_rows)
+    val __obj = js.Dynamic.literal(bookmark = bookmark, rows = rows, total_rows = total_rows)
     if (counts != null) __obj.updateDynamic("counts")(counts)
     if (highlights != null) __obj.updateDynamic("highlights")(highlights)
     if (ranges != null) __obj.updateDynamic("ranges")(ranges)

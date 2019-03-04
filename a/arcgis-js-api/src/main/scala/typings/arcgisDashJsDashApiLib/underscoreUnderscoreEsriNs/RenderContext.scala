@@ -55,15 +55,8 @@ object RenderContext {
     resetWebGLState: js.Function0[scala.Unit],
     sunLight: SunLight
   ): RenderContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindRenderTarget")(bindRenderTarget)
-    __obj.updateDynamic("camera")(camera)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("gl")(gl)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("resetWebGLState")(resetWebGLState)
-    __obj.updateDynamic("sunLight")(sunLight)
+    val __obj = js.Dynamic.literal(bindRenderTarget = bindRenderTarget, camera = camera, constructor = constructor, gl = gl, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, resetWebGLState = resetWebGLState, sunLight = sunLight)
+  
     __obj.asInstanceOf[RenderContext]
   }
 }

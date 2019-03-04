@@ -24,8 +24,7 @@ object Anon_AccessibilityComments {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     readonly: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AccessibilityComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

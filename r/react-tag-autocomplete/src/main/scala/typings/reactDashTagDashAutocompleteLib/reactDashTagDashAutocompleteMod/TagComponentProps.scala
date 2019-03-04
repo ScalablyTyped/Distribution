@@ -21,10 +21,8 @@ object TagComponentProps {
     ],
     tag: Tag
   ): TagComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classNames")(classNames)
-    __obj.updateDynamic("onDelete")(onDelete)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(classNames = classNames, onDelete = onDelete, tag = tag)
+  
     __obj.asInstanceOf[TagComponentProps]
   }
 }

@@ -26,7 +26,8 @@ object FormatOptions {
       scala.Unit
     ] = null
   ): FormatOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[FormatOptions]
   }

@@ -44,9 +44,7 @@ object PopupProps {
     sortByDepth: js.UndefOr[scala.Boolean] = js.undefined,
     tipSize: scala.Int | scala.Double = null
   ): PopupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick)

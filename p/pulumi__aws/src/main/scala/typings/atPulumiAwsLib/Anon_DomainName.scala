@@ -20,11 +20,8 @@ object Anon_DomainName {
     resourceRecordType: java.lang.String,
     resourceRecordValue: java.lang.String
   ): Anon_DomainName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainName")(domainName)
-    __obj.updateDynamic("resourceRecordName")(resourceRecordName)
-    __obj.updateDynamic("resourceRecordType")(resourceRecordType)
-    __obj.updateDynamic("resourceRecordValue")(resourceRecordValue)
+    val __obj = js.Dynamic.literal(domainName = domainName, resourceRecordName = resourceRecordName, resourceRecordType = resourceRecordType, resourceRecordValue = resourceRecordValue)
+  
     __obj.asInstanceOf[Anon_DomainName]
   }
 }

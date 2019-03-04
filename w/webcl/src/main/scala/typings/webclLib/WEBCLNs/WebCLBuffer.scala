@@ -17,10 +17,8 @@ object WebCLBuffer {
     getInfo: js.Function1[MemInfo, js.Any],
     release: js.Function0[scala.Unit]
   ): WebCLBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSubBuffer")(createSubBuffer)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(createSubBuffer = createSubBuffer, getInfo = getInfo, release = release)
+  
     __obj.asInstanceOf[WebCLBuffer]
   }
 }

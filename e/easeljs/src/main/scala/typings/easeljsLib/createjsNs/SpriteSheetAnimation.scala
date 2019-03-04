@@ -21,11 +21,8 @@ object SpriteSheetAnimation {
     next: java.lang.String,
     speed: scala.Double
   ): SpriteSheetAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frames")(frames)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("speed")(speed)
+    val __obj = js.Dynamic.literal(frames = frames, name = name, next = next, speed = speed)
+  
     __obj.asInstanceOf[SpriteSheetAnimation]
   }
 }

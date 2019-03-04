@@ -21,8 +21,8 @@ object Anon_Cause {
     cause: java.lang.String = null,
     message: java.lang.String = null
   ): Anon_Cause = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
+    __obj.updateDynamic("type")(`type`)
     if (cause != null) __obj.updateDynamic("cause")(cause)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[Anon_Cause]

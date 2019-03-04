@@ -24,10 +24,8 @@ object Anon_Hash {
     height: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Anon_Hash = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(hash = hash, name = name, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Hash]

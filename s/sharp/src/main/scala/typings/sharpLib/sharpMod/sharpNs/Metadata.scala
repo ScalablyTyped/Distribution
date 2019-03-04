@@ -61,8 +61,7 @@ object Metadata {
     width: scala.Int | scala.Double = null,
     xmp: nodeLib.Buffer = null
   ): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chromaSubsampling")(chromaSubsampling)
+    val __obj = js.Dynamic.literal(chromaSubsampling = chromaSubsampling)
     if (channels != null) __obj.updateDynamic("channels")(channels)
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth)

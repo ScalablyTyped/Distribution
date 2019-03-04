@@ -16,9 +16,8 @@ object DefaultCanvasRendererPlugins {
     extract: pixiDotJsLib.PIXINs.extractNs.CanvasExtract,
     prepare: pixiDotJsLib.PIXINs.prepareNs.CanvasPrepare
   ): DefaultCanvasRendererPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extract")(extract)
-    __obj.updateDynamic("prepare")(prepare)
+    val __obj = js.Dynamic.literal(extract = extract, prepare = prepare)
+  
     __obj.asInstanceOf[DefaultCanvasRendererPlugins]
   }
 }

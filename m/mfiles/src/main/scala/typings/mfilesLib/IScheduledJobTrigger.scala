@@ -34,18 +34,8 @@ object IScheduledJobTrigger {
     Type: ITriggerType,
     ValidEndDate: scala.Boolean
   ): IScheduledJobTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginDay")(BeginDay)
-    __obj.updateDynamic("BeginMonth")(BeginMonth)
-    __obj.updateDynamic("BeginYear")(BeginYear)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("EndDay")(EndDay)
-    __obj.updateDynamic("EndMonth")(EndMonth)
-    __obj.updateDynamic("EndYear")(EndYear)
-    __obj.updateDynamic("StartHour")(StartHour)
-    __obj.updateDynamic("StartMinute")(StartMinute)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("ValidEndDate")(ValidEndDate)
+    val __obj = js.Dynamic.literal(BeginDay = BeginDay, BeginMonth = BeginMonth, BeginYear = BeginYear, Clone = Clone, EndDay = EndDay, EndMonth = EndMonth, EndYear = EndYear, StartHour = StartHour, StartMinute = StartMinute, Type = Type, ValidEndDate = ValidEndDate)
+  
     __obj.asInstanceOf[IScheduledJobTrigger]
   }
 }

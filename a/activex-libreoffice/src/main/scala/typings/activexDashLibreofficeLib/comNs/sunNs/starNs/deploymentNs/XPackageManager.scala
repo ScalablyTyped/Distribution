@@ -245,30 +245,8 @@ object XPackageManager {
       scala.Boolean
     ]
   ): XPackageManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("SupportedPackageTypes")(SupportedPackageTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("addPackage")(addPackage)
-    __obj.updateDynamic("checkPrerequisites")(checkPrerequisites)
-    __obj.updateDynamic("createAbortChannel")(createAbortChannel)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("getDeployedPackage")(getDeployedPackage)
-    __obj.updateDynamic("getDeployedPackages")(getDeployedPackages)
-    __obj.updateDynamic("getExtensionsWithUnacceptedLicenses")(getExtensionsWithUnacceptedLicenses)
-    __obj.updateDynamic("getSupportedPackageTypes")(getSupportedPackageTypes)
-    __obj.updateDynamic("importExtension")(importExtension)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("reinstallDeployedPackages")(reinstallDeployedPackages)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("removePackage")(removePackage)
-    __obj.updateDynamic("synchronize")(synchronize)
+    val __obj = js.Dynamic.literal(Context = Context, SupportedPackageTypes = SupportedPackageTypes, acquire = acquire, addEventListener = addEventListener, addModifyListener = addModifyListener, addPackage = addPackage, checkPrerequisites = checkPrerequisites, createAbortChannel = createAbortChannel, dispose = dispose, getContext = getContext, getDeployedPackage = getDeployedPackage, getDeployedPackages = getDeployedPackages, getExtensionsWithUnacceptedLicenses = getExtensionsWithUnacceptedLicenses, getSupportedPackageTypes = getSupportedPackageTypes, importExtension = importExtension, isReadOnly = isReadOnly, queryInterface = queryInterface, reinstallDeployedPackages = reinstallDeployedPackages, release = release, removeEventListener = removeEventListener, removeModifyListener = removeModifyListener, removePackage = removePackage, synchronize = synchronize)
+  
     __obj.asInstanceOf[XPackageManager]
   }
 }

@@ -22,12 +22,8 @@ object SeasonRankingsResponseObject {
     vrating: scala.Double,
     vrating_rank: scala.Double
   ): SeasonRankingsResponseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("season")(season)
-    __obj.updateDynamic("team")(team)
-    __obj.updateDynamic("vrating")(vrating)
-    __obj.updateDynamic("vrating_rank")(vrating_rank)
+    val __obj = js.Dynamic.literal(program = program, season = season, team = team, vrating = vrating, vrating_rank = vrating_rank)
+  
     __obj.asInstanceOf[SeasonRankingsResponseObject]
   }
 }

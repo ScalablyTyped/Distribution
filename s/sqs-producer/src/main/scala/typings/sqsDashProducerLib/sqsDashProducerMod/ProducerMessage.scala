@@ -20,9 +20,7 @@ object ProducerMessage {
     delaySeconds: scala.Int | scala.Double = null,
     messageAttributes: org.scalablytyped.runtime.StringDictionary[ProducerMessageAttribute] = null
   ): ProducerMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(body = body, id = id)
     if (delaySeconds != null) __obj.updateDynamic("delaySeconds")(delaySeconds.asInstanceOf[js.Any])
     if (messageAttributes != null) __obj.updateDynamic("messageAttributes")(messageAttributes)
     __obj.asInstanceOf[ProducerMessage]

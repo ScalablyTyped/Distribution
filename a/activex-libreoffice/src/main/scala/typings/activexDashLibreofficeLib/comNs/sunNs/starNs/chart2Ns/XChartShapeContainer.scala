@@ -26,14 +26,8 @@ object XChartShapeContainer {
     release: js.Function0[scala.Unit],
     removeShape: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit]
   ): XChartShapeContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Shape")(Shape)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addShape")(addShape)
-    __obj.updateDynamic("getShape")(getShape)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeShape")(removeShape)
+    val __obj = js.Dynamic.literal(Shape = Shape, acquire = acquire, addShape = addShape, getShape = getShape, queryInterface = queryInterface, release = release, removeShape = removeShape)
+  
     __obj.asInstanceOf[XChartShapeContainer]
   }
 }

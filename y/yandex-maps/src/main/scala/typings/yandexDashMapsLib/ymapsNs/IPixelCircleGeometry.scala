@@ -23,16 +23,8 @@ object IPixelCircleGeometry {
     scale: js.Function1[scala.Double, IPixelGeometry],
     shift: js.Function1[js.Array[scala.Double], IPixelGeometry]
   ): IPixelCircleGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getCoordinates")(getCoordinates)
-    __obj.updateDynamic("getMetaData")(getMetaData)
-    __obj.updateDynamic("getRadius")(getRadius)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(equals = equals, events = events, getBounds = getBounds, getCoordinates = getCoordinates, getMetaData = getMetaData, getRadius = getRadius, getType = getType, scale = scale, shift = shift)
+  
     __obj.asInstanceOf[IPixelCircleGeometry]
   }
 }

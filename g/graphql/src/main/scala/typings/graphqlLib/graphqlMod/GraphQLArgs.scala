@@ -32,9 +32,7 @@ object GraphQLArgs {
     rootValue: js.Any = null,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): GraphQLArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(schema = schema, source = source.asInstanceOf[js.Any])
     if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
     if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver.asInstanceOf[js.Any])
     if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])

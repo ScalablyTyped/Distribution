@@ -48,10 +48,7 @@ object Anon_AccountIdAltCustomDimensionIdFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltCustomDimensionIdFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("customDimensionId")(customDimensionId)
-    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    val __obj = js.Dynamic.literal(accountId = accountId, customDimensionId = customDimensionId, webPropertyId = webPropertyId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(ignoreCustomDataSourceLinks)) __obj.updateDynamic("ignoreCustomDataSourceLinks")(ignoreCustomDataSourceLinks)

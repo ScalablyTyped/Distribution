@@ -22,12 +22,8 @@ object TestCaseResultAttachmentModel {
     size: scala.Double,
     url: java.lang.String
   ): TestCaseResultAttachmentModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("iterationId")(iterationId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, iterationId = iterationId, name = name, size = size, url = url)
+  
     __obj.asInstanceOf[TestCaseResultAttachmentModel]
   }
 }

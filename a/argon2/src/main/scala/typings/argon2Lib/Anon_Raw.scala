@@ -12,8 +12,8 @@ trait Anon_Raw extends js.Object {
 object Anon_Raw {
   @scala.inline
   def apply(raw: argon2Lib.argon2LibNumbers.`true`): Anon_Raw = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(raw = raw)
+  
     __obj.asInstanceOf[Anon_Raw]
   }
 }

@@ -22,10 +22,7 @@ object ViewToken {
     index: scala.Int | scala.Double = null,
     section: js.Any = null
   ): ViewToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isViewable")(isViewable)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(isViewable = isViewable, item = item, key = key)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (section != null) __obj.updateDynamic("section")(section)
     __obj.asInstanceOf[ViewToken]

@@ -18,8 +18,7 @@ object TaskRoutingConfigurationOptions {
     defaultFilter: WorkflowRuleOptions = null,
     default_filter: WorkflowRuleOptions = null
   ): TaskRoutingConfigurationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(filters = filters)
     if (defaultFilter != null) __obj.updateDynamic("defaultFilter")(defaultFilter)
     if (default_filter != null) __obj.updateDynamic("default_filter")(default_filter)
     __obj.asInstanceOf[TaskRoutingConfigurationOptions]

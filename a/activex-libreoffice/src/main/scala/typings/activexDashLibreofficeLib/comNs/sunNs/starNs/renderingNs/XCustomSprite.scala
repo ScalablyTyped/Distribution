@@ -55,19 +55,8 @@ object XCustomSprite {
     show: js.Function0[scala.Unit],
     transform: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit]
   ): XCustomSprite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentCanvas")(ContentCanvas)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clip")(clip)
-    __obj.updateDynamic("getContentCanvas")(getContentCanvas)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAlpha")(setAlpha)
-    __obj.updateDynamic("setPriority")(setPriority)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(ContentCanvas = ContentCanvas, acquire = acquire, clip = clip, getContentCanvas = getContentCanvas, hide = hide, move = move, queryInterface = queryInterface, release = release, setAlpha = setAlpha, setPriority = setPriority, show = show, transform = transform)
+  
     __obj.asInstanceOf[XCustomSprite]
   }
 }

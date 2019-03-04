@@ -27,12 +27,8 @@ object AdapterState {
     name: java.lang.String,
     powered: scala.Boolean
   ): AdapterState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("discovering")(discovering)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("powered")(powered)
+    val __obj = js.Dynamic.literal(address = address, available = available, discovering = discovering, name = name, powered = powered)
+  
     __obj.asInstanceOf[AdapterState]
   }
 }

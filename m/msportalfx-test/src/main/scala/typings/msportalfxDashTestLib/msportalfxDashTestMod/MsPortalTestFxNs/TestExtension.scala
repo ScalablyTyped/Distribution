@@ -13,9 +13,8 @@ trait TestExtension extends js.Object {
 object TestExtension {
   @scala.inline
   def apply(name: java.lang.String, uri: java.lang.String): TestExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(name = name, uri = uri)
+  
     __obj.asInstanceOf[TestExtension]
   }
 }

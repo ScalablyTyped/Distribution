@@ -80,9 +80,7 @@ object NightwatchOptions {
     test_runner: java.lang.String | NightwatchTestRunner = null,
     test_workers: scala.Boolean | NightwatchTestWorker = null
   ): NightwatchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src_folders")(src_folders.asInstanceOf[js.Any])
-    __obj.updateDynamic("test_settings")(test_settings)
+    val __obj = js.Dynamic.literal(src_folders = src_folders.asInstanceOf[js.Any], test_settings = test_settings)
     if (custom_assertions_path != null) __obj.updateDynamic("custom_assertions_path")(custom_assertions_path.asInstanceOf[js.Any])
     if (custom_commands_path != null) __obj.updateDynamic("custom_commands_path")(custom_commands_path.asInstanceOf[js.Any])
     if (!js.isUndefined(disable_color)) __obj.updateDynamic("disable_color")(disable_color)

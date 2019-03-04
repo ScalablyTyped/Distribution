@@ -22,12 +22,8 @@ object Anon_AboveNormal {
     low: scala.Double,
     normal: scala.Double
   ): Anon_AboveNormal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aboveNormal")(aboveNormal)
-    __obj.updateDynamic("belowNormal")(belowNormal)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("normal")(normal)
+    val __obj = js.Dynamic.literal(aboveNormal = aboveNormal, belowNormal = belowNormal, high = high, low = low, normal = normal)
+  
     __obj.asInstanceOf[Anon_AboveNormal]
   }
 }

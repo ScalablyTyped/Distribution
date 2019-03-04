@@ -36,8 +36,7 @@ object DiagnosticReportImage {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): DiagnosticReportImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("link")(link)
+    val __obj = js.Dynamic.literal(link = link)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

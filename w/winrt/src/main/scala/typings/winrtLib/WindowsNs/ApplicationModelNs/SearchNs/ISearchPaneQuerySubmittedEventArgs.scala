@@ -13,9 +13,8 @@ trait ISearchPaneQuerySubmittedEventArgs extends js.Object {
 object ISearchPaneQuerySubmittedEventArgs {
   @scala.inline
   def apply(language: java.lang.String, queryText: java.lang.String): ISearchPaneQuerySubmittedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("queryText")(queryText)
+    val __obj = js.Dynamic.literal(language = language, queryText = queryText)
+  
     __obj.asInstanceOf[ISearchPaneQuerySubmittedEventArgs]
   }
 }

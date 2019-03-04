@@ -13,9 +13,8 @@ trait Anon_SortColumn extends js.Object {
 object Anon_SortColumn {
   @scala.inline
   def apply(sortColumn: js.Any, sortOrder: js.Any): Anon_SortColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sortColumn")(sortColumn)
-    __obj.updateDynamic("sortOrder")(sortOrder)
+    val __obj = js.Dynamic.literal(sortColumn = sortColumn, sortOrder = sortOrder)
+  
     __obj.asInstanceOf[Anon_SortColumn]
   }
 }

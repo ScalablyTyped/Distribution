@@ -19,8 +19,7 @@ object ToggleButtonProps {
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null
   ): ToggleButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (name != null) __obj.updateDynamic("name")(name)

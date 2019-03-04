@@ -86,9 +86,7 @@ object ReactTagsProps {
     suggestions: js.Array[reactDashTagDashInputLib.Anon_Id] = null,
     tags: js.Array[reactDashTagDashInputLib.Anon_Id] = null
   ): ReactTagsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleAddition")(handleAddition)
-    __obj.updateDynamic("handleDelete")(handleDelete)
+    val __obj = js.Dynamic.literal(handleAddition = handleAddition, handleDelete = handleDelete)
     if (!js.isUndefined(allowDeleteFromEmptyInput)) __obj.updateDynamic("allowDeleteFromEmptyInput")(allowDeleteFromEmptyInput)
     if (!js.isUndefined(allowDragDrop)) __obj.updateDynamic("allowDragDrop")(allowDragDrop)
     if (!js.isUndefined(allowUnique)) __obj.updateDynamic("allowUnique")(allowUnique)

@@ -55,27 +55,8 @@ object PackageStream {
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): PackageStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setInputStream")(setInputStream)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Name = Name, Parent = Parent, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getInputStream = getInputStream, getName = getName, getParent = getParent, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setInputStream = setInputStream, setName = setName, setParent = setParent, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[PackageStream]
   }
 }

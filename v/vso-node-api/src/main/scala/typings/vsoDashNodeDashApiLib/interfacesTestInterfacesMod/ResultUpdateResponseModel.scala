@@ -12,8 +12,8 @@ trait ResultUpdateResponseModel extends js.Object {
 object ResultUpdateResponseModel {
   @scala.inline
   def apply(revision: scala.Double): ResultUpdateResponseModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(revision = revision)
+  
     __obj.asInstanceOf[ResultUpdateResponseModel]
   }
 }

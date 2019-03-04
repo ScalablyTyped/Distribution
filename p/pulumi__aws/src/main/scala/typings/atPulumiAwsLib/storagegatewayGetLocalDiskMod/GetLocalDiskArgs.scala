@@ -23,8 +23,7 @@ trait GetLocalDiskArgs extends js.Object {
 object GetLocalDiskArgs {
   @scala.inline
   def apply(gatewayArn: java.lang.String, diskNode: java.lang.String = null, diskPath: java.lang.String = null): GetLocalDiskArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gatewayArn")(gatewayArn)
+    val __obj = js.Dynamic.literal(gatewayArn = gatewayArn)
     if (diskNode != null) __obj.updateDynamic("diskNode")(diskNode)
     if (diskPath != null) __obj.updateDynamic("diskPath")(diskPath)
     __obj.asInstanceOf[GetLocalDiskArgs]

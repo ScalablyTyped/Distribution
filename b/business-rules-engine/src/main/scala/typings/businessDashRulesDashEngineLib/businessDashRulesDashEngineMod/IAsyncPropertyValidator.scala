@@ -20,9 +20,7 @@ object IAsyncPropertyValidator {
     customMessage: IErrorCustomMessage = null,
     tagName: java.lang.String = null
   ): IAsyncPropertyValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAcceptable")(isAcceptable)
-    __obj.updateDynamic("isAsync")(isAsync)
+    val __obj = js.Dynamic.literal(isAcceptable = isAcceptable, isAsync = isAsync)
     if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[IAsyncPropertyValidator]

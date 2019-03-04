@@ -47,11 +47,8 @@ object UndertakerRegistry {
       org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, _]]
     ]
   ): UndertakerRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("tasks")(tasks)
+    val __obj = js.Dynamic.literal(get = get, init = init, set = set, tasks = tasks)
+  
     __obj.asInstanceOf[UndertakerRegistry]
   }
 }

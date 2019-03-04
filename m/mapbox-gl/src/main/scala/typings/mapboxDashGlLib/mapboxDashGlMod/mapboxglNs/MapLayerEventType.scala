@@ -38,20 +38,8 @@ object MapLayerEventType {
     touchend: MapLayerTouchEvent,
     touchstart: MapLayerTouchEvent
   ): MapLayerEventType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("contextmenu")(contextmenu)
-    __obj.updateDynamic("dblclick")(dblclick)
-    __obj.updateDynamic("mousedown")(mousedown)
-    __obj.updateDynamic("mouseenter")(mouseenter)
-    __obj.updateDynamic("mouseleave")(mouseleave)
-    __obj.updateDynamic("mousemove")(mousemove)
-    __obj.updateDynamic("mouseout")(mouseout)
-    __obj.updateDynamic("mouseover")(mouseover)
-    __obj.updateDynamic("mouseup")(mouseup)
-    __obj.updateDynamic("touchcancel")(touchcancel)
-    __obj.updateDynamic("touchend")(touchend)
-    __obj.updateDynamic("touchstart")(touchstart)
+    val __obj = js.Dynamic.literal(click = click, contextmenu = contextmenu, dblclick = dblclick, mousedown = mousedown, mouseenter = mouseenter, mouseleave = mouseleave, mousemove = mousemove, mouseout = mouseout, mouseover = mouseover, mouseup = mouseup, touchcancel = touchcancel, touchend = touchend, touchstart = touchstart)
+  
     __obj.asInstanceOf[MapLayerEventType]
   }
 }

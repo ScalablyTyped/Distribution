@@ -12,8 +12,8 @@ trait Errors extends js.Object {
 object Errors {
   @scala.inline
   def apply(errors: js.Array[twitLib.Anon_Code]): Errors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(errors = errors)
+  
     __obj.asInstanceOf[Errors]
   }
 }

@@ -22,9 +22,8 @@ object ContainerPolicyArgs {
     containerName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): ContainerPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ContainerPolicyArgs]
   }
 }

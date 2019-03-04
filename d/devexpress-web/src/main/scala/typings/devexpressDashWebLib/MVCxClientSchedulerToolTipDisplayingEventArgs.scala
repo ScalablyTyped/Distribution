@@ -24,9 +24,8 @@ trait MVCxClientSchedulerToolTipDisplayingEventArgs extends ASPxClientEventArgs 
 object MVCxClientSchedulerToolTipDisplayingEventArgs {
   @scala.inline
   def apply(data: ASPxClientSchedulerToolTipData, toolTip: MVCxClientSchedulerTemplateToolTip): MVCxClientSchedulerToolTipDisplayingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("toolTip")(toolTip)
+    val __obj = js.Dynamic.literal(data = data, toolTip = toolTip)
+  
     __obj.asInstanceOf[MVCxClientSchedulerToolTipDisplayingEventArgs]
   }
 }

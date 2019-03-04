@@ -22,11 +22,8 @@ object JsonResult {
     json: js.Any,
     statusCode: scala.Double
   ): JsonResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("executeAsync")(executeAsync)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync, json = json, statusCode = statusCode)
+  
     __obj.asInstanceOf[JsonResult]
   }
 }

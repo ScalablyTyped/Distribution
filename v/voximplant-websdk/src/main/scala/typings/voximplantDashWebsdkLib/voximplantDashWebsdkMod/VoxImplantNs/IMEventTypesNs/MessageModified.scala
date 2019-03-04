@@ -36,11 +36,8 @@ object MessageModified {
     message_id: java.lang.String,
     to: java.lang.String
   ): MessageModified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(content = content, id = id, message_id = message_id, to = to)
+  
     __obj.asInstanceOf[MessageModified]
   }
 }

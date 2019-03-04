@@ -35,26 +35,8 @@ object CoordinateSystem {
     setAxisByDimension: js.Function3[scala.Double, XAxis, scala.Double, scala.Unit],
     setChartTypes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType], scala.Unit]
   ): CoordinateSystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChartTypes")(ChartTypes)
-    __obj.updateDynamic("CoordinateSystemType")(CoordinateSystemType)
-    __obj.updateDynamic("Dimension")(Dimension)
-    __obj.updateDynamic("SwapXAndYAxis")(SwapXAndYAxis)
-    __obj.updateDynamic("ViewServiceName")(ViewServiceName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChartType")(addChartType)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("getAxisByDimension")(getAxisByDimension)
-    __obj.updateDynamic("getChartTypes")(getChartTypes)
-    __obj.updateDynamic("getCoordinateSystemType")(getCoordinateSystemType)
-    __obj.updateDynamic("getDimension")(getDimension)
-    __obj.updateDynamic("getMaximumAxisIndexByDimension")(getMaximumAxisIndexByDimension)
-    __obj.updateDynamic("getViewServiceName")(getViewServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChartType")(removeChartType)
-    __obj.updateDynamic("setAxisByDimension")(setAxisByDimension)
-    __obj.updateDynamic("setChartTypes")(setChartTypes)
+    val __obj = js.Dynamic.literal(ChartTypes = ChartTypes, CoordinateSystemType = CoordinateSystemType, Dimension = Dimension, SwapXAndYAxis = SwapXAndYAxis, ViewServiceName = ViewServiceName, acquire = acquire, addChartType = addChartType, createClone = createClone, getAxisByDimension = getAxisByDimension, getChartTypes = getChartTypes, getCoordinateSystemType = getCoordinateSystemType, getDimension = getDimension, getMaximumAxisIndexByDimension = getMaximumAxisIndexByDimension, getViewServiceName = getViewServiceName, queryInterface = queryInterface, release = release, removeChartType = removeChartType, setAxisByDimension = setAxisByDimension, setChartTypes = setChartTypes)
+  
     __obj.asInstanceOf[CoordinateSystem]
   }
 }

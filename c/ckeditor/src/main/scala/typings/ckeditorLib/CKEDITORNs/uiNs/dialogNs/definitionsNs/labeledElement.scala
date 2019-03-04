@@ -24,8 +24,7 @@ object labeledElement {
     role: java.lang.String = null,
     widths: js.Tuple2[java.lang.String, java.lang.String] = null
   ): labeledElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (!js.isUndefined(includeLabel)) __obj.updateDynamic("includeLabel")(includeLabel)
     if (labelLayout != null) __obj.updateDynamic("labelLayout")(labelLayout.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role)

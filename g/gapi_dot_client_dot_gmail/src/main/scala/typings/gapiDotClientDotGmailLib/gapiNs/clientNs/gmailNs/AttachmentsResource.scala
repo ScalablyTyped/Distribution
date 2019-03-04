@@ -18,8 +18,8 @@ object AttachmentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[MessagePartBody]
     ]
   ): AttachmentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[AttachmentsResource]
   }
 }

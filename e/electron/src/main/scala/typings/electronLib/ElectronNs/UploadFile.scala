@@ -38,11 +38,8 @@ object UploadFile {
     offset: scala.Double,
     `type`: java.lang.String
   ): UploadFile = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("modificationTime")(modificationTime)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(filePath = filePath, length = length, modificationTime = modificationTime, offset = offset)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UploadFile]
   }
 }

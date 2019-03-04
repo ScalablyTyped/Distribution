@@ -32,17 +32,8 @@ object UpdatableLayer {
     release: js.Function0[scala.Unit],
     replaceWith: js.Function1[XLayer, scala.Unit]
   ): UpdatableLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Timestamp")(Timestamp)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTimestamp")(getTimestamp)
-    __obj.updateDynamic("listSubLayerIds")(listSubLayerIds)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readData")(readData)
-    __obj.updateDynamic("readSubLayerData")(readSubLayerData)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceWith")(replaceWith)
+    val __obj = js.Dynamic.literal(Timestamp = Timestamp, URL = URL, acquire = acquire, getTimestamp = getTimestamp, listSubLayerIds = listSubLayerIds, queryInterface = queryInterface, readData = readData, readSubLayerData = readSubLayerData, release = release, replaceWith = replaceWith)
+  
     __obj.asInstanceOf[UpdatableLayer]
   }
 }

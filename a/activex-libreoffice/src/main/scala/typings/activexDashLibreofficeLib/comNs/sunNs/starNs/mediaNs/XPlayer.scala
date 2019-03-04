@@ -118,26 +118,8 @@ object XPlayer {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): XPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Duration")(Duration)
-    __obj.updateDynamic("MediaTime")(MediaTime)
-    __obj.updateDynamic("PreferredPlayerWindowSize")(PreferredPlayerWindowSize)
-    __obj.updateDynamic("VolumeDB")(VolumeDB)
-    __obj.updateDynamic("createFrameGrabber")(createFrameGrabber)
-    __obj.updateDynamic("createPlayerWindow")(createPlayerWindow)
-    __obj.updateDynamic("getDuration")(getDuration)
-    __obj.updateDynamic("getMediaTime")(getMediaTime)
-    __obj.updateDynamic("getPreferredPlayerWindowSize")(getPreferredPlayerWindowSize)
-    __obj.updateDynamic("getVolumeDB")(getVolumeDB)
-    __obj.updateDynamic("isMute")(isMute)
-    __obj.updateDynamic("isPlaybackLoop")(isPlaybackLoop)
-    __obj.updateDynamic("isPlaying")(isPlaying)
-    __obj.updateDynamic("setMediaTime")(setMediaTime)
-    __obj.updateDynamic("setMute")(setMute)
-    __obj.updateDynamic("setPlaybackLoop")(setPlaybackLoop)
-    __obj.updateDynamic("setVolumeDB")(setVolumeDB)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(Duration = Duration, MediaTime = MediaTime, PreferredPlayerWindowSize = PreferredPlayerWindowSize, VolumeDB = VolumeDB, createFrameGrabber = createFrameGrabber, createPlayerWindow = createPlayerWindow, getDuration = getDuration, getMediaTime = getMediaTime, getPreferredPlayerWindowSize = getPreferredPlayerWindowSize, getVolumeDB = getVolumeDB, isMute = isMute, isPlaybackLoop = isPlaybackLoop, isPlaying = isPlaying, setMediaTime = setMediaTime, setMute = setMute, setPlaybackLoop = setPlaybackLoop, setVolumeDB = setVolumeDB, start = start, stop = stop)
+  
     __obj.asInstanceOf[XPlayer]
   }
 }

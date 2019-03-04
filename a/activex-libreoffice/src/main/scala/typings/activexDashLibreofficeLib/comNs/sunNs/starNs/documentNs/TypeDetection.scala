@@ -54,27 +54,8 @@ object TypeDetection {
     removeFlushListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XFlushListener, scala.Unit],
     replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): TypeDetection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFlushListener")(addFlushListener)
-    __obj.updateDynamic("createSubSetEnumerationByProperties")(createSubSetEnumerationByProperties)
-    __obj.updateDynamic("createSubSetEnumerationByQuery")(createSubSetEnumerationByQuery)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryTypeByDescriptor")(queryTypeByDescriptor)
-    __obj.updateDynamic("queryTypeByURL")(queryTypeByURL)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("removeFlushListener")(removeFlushListener)
-    __obj.updateDynamic("replaceByName")(replaceByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addFlushListener = addFlushListener, createSubSetEnumerationByProperties = createSubSetEnumerationByProperties, createSubSetEnumerationByQuery = createSubSetEnumerationByQuery, flush = flush, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, queryInterface = queryInterface, queryTypeByDescriptor = queryTypeByDescriptor, queryTypeByURL = queryTypeByURL, release = release, removeByName = removeByName, removeFlushListener = removeFlushListener, replaceByName = replaceByName)
+  
     __obj.asInstanceOf[TypeDetection]
   }
 }

@@ -32,8 +32,7 @@ object DomainArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DomainArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("workflowExecutionRetentionPeriodInDays")(workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(workflowExecutionRetentionPeriodInDays = workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])

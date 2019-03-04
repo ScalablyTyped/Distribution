@@ -16,9 +16,8 @@ object PluginServiceStatic {
     register: js.Function1[PluginServiceGlobalRegistration with PluginServiceRegistrationOptions, scala.Unit],
     unregister: js.Function1[PluginServiceGlobalRegistration with PluginServiceRegistrationOptions, scala.Unit]
   ): PluginServiceStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("unregister")(unregister)
+    val __obj = js.Dynamic.literal(register = register, unregister = unregister)
+  
     __obj.asInstanceOf[PluginServiceStatic]
   }
 }

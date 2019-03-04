@@ -15,11 +15,8 @@ trait Anon_RingRadius extends js.Object {
 object Anon_RingRadius {
   @scala.inline
   def apply(ringRadius: scala.Double, segments: scala.Double, sides: scala.Double, tubeRadius: scala.Double): Anon_RingRadius = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ringRadius")(ringRadius)
-    __obj.updateDynamic("segments")(segments)
-    __obj.updateDynamic("sides")(sides)
-    __obj.updateDynamic("tubeRadius")(tubeRadius)
+    val __obj = js.Dynamic.literal(ringRadius = ringRadius, segments = segments, sides = sides, tubeRadius = tubeRadius)
+  
     __obj.asInstanceOf[Anon_RingRadius]
   }
 }

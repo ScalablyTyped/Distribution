@@ -52,22 +52,7 @@ object DeployResult {
     ignoreWarnings: js.UndefOr[scala.Boolean] = js.undefined,
     rollbackOnError: js.UndefOr[scala.Boolean] = js.undefined
   ): DeployResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkOnly")(checkOnly)
-    __obj.updateDynamic("completedDate")(completedDate)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
-    __obj.updateDynamic("numberComponentErrors")(numberComponentErrors)
-    __obj.updateDynamic("numberComponentsDeployed")(numberComponentsDeployed)
-    __obj.updateDynamic("numberComponentsTotal")(numberComponentsTotal)
-    __obj.updateDynamic("numberTestErrors")(numberTestErrors)
-    __obj.updateDynamic("numberTestsCompleted")(numberTestsCompleted)
-    __obj.updateDynamic("numberTestsTotal")(numberTestsTotal)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(checkOnly = checkOnly, completedDate = completedDate, createdDate = createdDate, done = done, id = id, lastModifiedDate = lastModifiedDate, numberComponentErrors = numberComponentErrors, numberComponentsDeployed = numberComponentsDeployed, numberComponentsTotal = numberComponentsTotal, numberTestErrors = numberTestErrors, numberTestsCompleted = numberTestsCompleted, numberTestsTotal = numberTestsTotal, startDate = startDate, status = status, success = success)
     if (details != null) __obj.updateDynamic("details")(details)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     if (errorStatusCode != null) __obj.updateDynamic("errorStatusCode")(errorStatusCode)

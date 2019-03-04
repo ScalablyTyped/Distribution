@@ -12,8 +12,8 @@ trait Display extends js.Object {
 object Display {
   @scala.inline
   def apply(token: java.lang.String): Display = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
+  
     __obj.asInstanceOf[Display]
   }
 }

@@ -30,12 +30,8 @@ object AttributionItem {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     text: java.lang.String
   ): AttributionItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable, text = text)
+  
     __obj.asInstanceOf[AttributionItem]
   }
 }

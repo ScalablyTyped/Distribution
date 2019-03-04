@@ -12,8 +12,8 @@ trait SwitchParams extends ErrorParameters {
 object SwitchParams {
   @scala.inline
   def apply(caseIndex: scala.Double): SwitchParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caseIndex")(caseIndex)
+    val __obj = js.Dynamic.literal(caseIndex = caseIndex)
+  
     __obj.asInstanceOf[SwitchParams]
   }
 }

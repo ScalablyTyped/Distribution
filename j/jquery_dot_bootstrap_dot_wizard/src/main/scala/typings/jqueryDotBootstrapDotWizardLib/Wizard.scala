@@ -42,22 +42,8 @@ object Wizard {
     previousTab: js.Function0[js.Any],
     show: js.Function1[scala.Double, js.Any]
   ): Wizard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTab")(activeTab)
-    __obj.updateDynamic("currentIndex")(currentIndex)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("firstIndex")(firstIndex)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("lastIndex")(lastIndex)
-    __obj.updateDynamic("navigationLength")(navigationLength)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextIndex")(nextIndex)
-    __obj.updateDynamic("nextTab")(nextTab)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("previousIndex")(previousIndex)
-    __obj.updateDynamic("previousTab")(previousTab)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(activeTab = activeTab, currentIndex = currentIndex, first = first, firstIndex = firstIndex, getIndex = getIndex, last = last, lastIndex = lastIndex, navigationLength = navigationLength, next = next, nextIndex = nextIndex, nextTab = nextTab, previous = previous, previousIndex = previousIndex, previousTab = previousTab, show = show)
+  
     __obj.asInstanceOf[Wizard]
   }
 }

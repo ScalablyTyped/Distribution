@@ -22,10 +22,8 @@ object DataViewMatrix {
     rows: DataViewHierarchy,
     valueSources: js.Array[DataViewMetadataColumn]
   ): DataViewMatrix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("valueSources")(valueSources)
+    val __obj = js.Dynamic.literal(columns = columns, rows = rows, valueSources = valueSources)
+  
     __obj.asInstanceOf[DataViewMatrix]
   }
 }

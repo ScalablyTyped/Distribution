@@ -38,13 +38,8 @@ object Anon_BidPercentageDesiredVcpus {
     spotIamFleetRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): Anon_BidPercentageDesiredVcpus = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceRole")(instanceRole.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceTypes")(instanceTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxVcpus")(maxVcpus.asInstanceOf[js.Any])
-    __obj.updateDynamic("minVcpus")(minVcpus.asInstanceOf[js.Any])
-    __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceTypes = instanceTypes.asInstanceOf[js.Any], maxVcpus = maxVcpus.asInstanceOf[js.Any], minVcpus = minVcpus.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bidPercentage != null) __obj.updateDynamic("bidPercentage")(bidPercentage.asInstanceOf[js.Any])
     if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])

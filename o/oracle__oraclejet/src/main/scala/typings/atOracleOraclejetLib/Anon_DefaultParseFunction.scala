@@ -31,11 +31,8 @@ object Anon_DefaultParseFunction {
     view: java.lang.String,
     viewModel: js.Function1[atOracleOraclejetLib.ojcompositeMod.ViewModelContext, scala.Unit | js.Object]
   ): Anon_DefaultParseFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("parseFunction")(parseFunction)
-    __obj.updateDynamic("view")(view)
-    __obj.updateDynamic("viewModel")(viewModel)
+    val __obj = js.Dynamic.literal(metadata = metadata, parseFunction = parseFunction, view = view, viewModel = viewModel)
+  
     __obj.asInstanceOf[Anon_DefaultParseFunction]
   }
 }

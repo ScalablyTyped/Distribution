@@ -12,8 +12,8 @@ trait IVerifyVaultJobOutput extends js.Object {
 object IVerifyVaultJobOutput {
   @scala.inline
   def apply(Errors: IStrings): IVerifyVaultJobOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Errors")(Errors)
+    val __obj = js.Dynamic.literal(Errors = Errors)
+  
     __obj.asInstanceOf[IVerifyVaultJobOutput]
   }
 }

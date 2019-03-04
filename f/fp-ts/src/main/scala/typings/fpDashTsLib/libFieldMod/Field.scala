@@ -24,15 +24,8 @@ object Field {
     sub: js.Function2[A, A, A],
     zero: A
   ): Field[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("degree")(degree)
-    __obj.updateDynamic("div")(div)
-    __obj.updateDynamic("mod")(mod)
-    __obj.updateDynamic("mul")(mul)
-    __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(add = add, degree = degree, div = div, mod = mod, mul = mul, one = one.asInstanceOf[js.Any], sub = sub, zero = zero.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Field[A]]
   }
 }

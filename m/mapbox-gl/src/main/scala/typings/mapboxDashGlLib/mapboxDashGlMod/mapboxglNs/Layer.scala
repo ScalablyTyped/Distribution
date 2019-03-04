@@ -42,8 +42,7 @@ object Layer {
     `source-layer`: java.lang.String = null,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.fill | mapboxDashGlLib.mapboxDashGlLibStrings.line | mapboxDashGlLib.mapboxDashGlLibStrings.symbol | mapboxDashGlLib.mapboxDashGlLibStrings.circle | mapboxDashGlLib.mapboxDashGlLibStrings.`fill-extrusion` | mapboxDashGlLib.mapboxDashGlLibStrings.raster | mapboxDashGlLib.mapboxDashGlLibStrings.background | mapboxDashGlLib.mapboxDashGlLibStrings.heatmap | mapboxDashGlLib.mapboxDashGlLibStrings.hillshade = null
   ): Layer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])

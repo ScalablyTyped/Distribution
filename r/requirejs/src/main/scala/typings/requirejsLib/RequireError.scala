@@ -31,11 +31,7 @@ object RequireError {
     requireModules: js.Array[java.lang.String] = null,
     stack: java.lang.String = null
   ): RequireError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("originalError")(originalError)
-    __obj.updateDynamic("requireType")(requireType)
+    val __obj = js.Dynamic.literal(message = message, name = name, originalError = originalError, requireType = requireType)
     if (requireModules != null) __obj.updateDynamic("requireModules")(requireModules)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[RequireError]

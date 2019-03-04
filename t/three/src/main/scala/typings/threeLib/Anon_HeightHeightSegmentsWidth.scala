@@ -20,11 +20,8 @@ object Anon_HeightHeightSegmentsWidth {
     width: scala.Double,
     widthSegments: scala.Double
   ): Anon_HeightHeightSegmentsWidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("widthSegments")(widthSegments)
+    val __obj = js.Dynamic.literal(height = height, heightSegments = heightSegments, width = width, widthSegments = widthSegments)
+  
     __obj.asInstanceOf[Anon_HeightHeightSegmentsWidth]
   }
 }

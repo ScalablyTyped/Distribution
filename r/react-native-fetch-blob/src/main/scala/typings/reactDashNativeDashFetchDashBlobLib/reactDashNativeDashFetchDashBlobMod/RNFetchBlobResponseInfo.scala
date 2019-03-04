@@ -24,13 +24,8 @@ object RNFetchBlobResponseInfo {
     status: scala.Double,
     taskId: java.lang.String
   ): RNFetchBlobResponseInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("respType")(respType.asInstanceOf[js.Any])
-    __obj.updateDynamic("rnfbEncode")(rnfbEncode.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("taskId")(taskId)
+    val __obj = js.Dynamic.literal(headers = headers, respType = respType.asInstanceOf[js.Any], rnfbEncode = rnfbEncode.asInstanceOf[js.Any], state = state, status = status, taskId = taskId)
+  
     __obj.asInstanceOf[RNFetchBlobResponseInfo]
   }
 }

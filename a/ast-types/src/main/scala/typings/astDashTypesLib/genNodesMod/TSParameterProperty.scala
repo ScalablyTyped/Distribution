@@ -27,9 +27,8 @@ object TSParameterProperty {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSParameterProperty,
     accessibility: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null
   ): TSParameterProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], readonly = readonly)
+    __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSParameterProperty]
   }

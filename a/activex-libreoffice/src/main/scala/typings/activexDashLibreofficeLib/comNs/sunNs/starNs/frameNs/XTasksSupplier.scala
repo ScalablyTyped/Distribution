@@ -44,14 +44,8 @@ object XTasksSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTasksSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTask")(ActiveTask)
-    __obj.updateDynamic("Tasks")(Tasks)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getActiveTask")(getActiveTask)
-    __obj.updateDynamic("getTasks")(getTasks)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ActiveTask = ActiveTask, Tasks = Tasks, acquire = acquire, getActiveTask = getActiveTask, getTasks = getTasks, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTasksSupplier]
   }
 }

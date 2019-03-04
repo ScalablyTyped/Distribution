@@ -33,16 +33,8 @@ object Node {
     isSummary: js.Function0[scala.Boolean],
     visit: js.Function2[Visitor[Node], js.Any, scala.Unit]
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChildren")(getChildren)
-    __obj.updateDynamic("getCoverageSummary")(getCoverageSummary)
-    __obj.updateDynamic("getFileCoverage")(getFileCoverage)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getQualifiedName")(getQualifiedName)
-    __obj.updateDynamic("getRelativeName")(getRelativeName)
-    __obj.updateDynamic("isRoot")(isRoot)
-    __obj.updateDynamic("isSummary")(isSummary)
-    __obj.updateDynamic("visit")(visit)
+    val __obj = js.Dynamic.literal(getChildren = getChildren, getCoverageSummary = getCoverageSummary, getFileCoverage = getFileCoverage, getParent = getParent, getQualifiedName = getQualifiedName, getRelativeName = getRelativeName, isRoot = isRoot, isSummary = isSummary, visit = visit)
+  
     __obj.asInstanceOf[Node]
   }
 }

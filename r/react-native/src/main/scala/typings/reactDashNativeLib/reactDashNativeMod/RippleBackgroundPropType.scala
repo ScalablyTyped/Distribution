@@ -19,7 +19,8 @@ object RippleBackgroundPropType {
     borderless: js.UndefOr[scala.Boolean] = js.undefined,
     color: scala.Int | scala.Double = null
   ): RippleBackgroundPropType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[RippleBackgroundPropType]

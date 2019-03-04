@@ -15,11 +15,8 @@ trait CustomElementsPolyfill extends js.Object {
 object CustomElementsPolyfill {
   @scala.inline
   def apply(flags: js.Any, hasNative: scala.Boolean, ready: scala.Boolean, useNative: scala.Boolean): CustomElementsPolyfill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("hasNative")(hasNative)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("useNative")(useNative)
+    val __obj = js.Dynamic.literal(flags = flags, hasNative = hasNative, ready = ready, useNative = useNative)
+  
     __obj.asInstanceOf[CustomElementsPolyfill]
   }
 }

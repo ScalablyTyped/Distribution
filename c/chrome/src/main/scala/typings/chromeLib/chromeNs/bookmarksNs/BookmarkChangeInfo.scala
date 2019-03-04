@@ -13,8 +13,7 @@ trait BookmarkChangeInfo extends js.Object {
 object BookmarkChangeInfo {
   @scala.inline
   def apply(title: java.lang.String, url: java.lang.String = null): BookmarkChangeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[BookmarkChangeInfo]
   }

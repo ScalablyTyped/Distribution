@@ -56,8 +56,7 @@ object PlanDefinitionGoal {
     start: CodeableConcept = null,
     target: js.Array[PlanDefinitionGoalTarget] = null
   ): PlanDefinitionGoal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (addresses != null) __obj.updateDynamic("addresses")(addresses)

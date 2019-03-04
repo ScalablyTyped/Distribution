@@ -22,7 +22,8 @@ object ObjectColumnData {
     sort: java.lang.String = null,
     `type`: java.lang.String = null
   ): ObjectColumnData = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_")(`_`)
     if (display != null) __obj.updateDynamic("display")(display)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (sort != null) __obj.updateDynamic("sort")(sort)

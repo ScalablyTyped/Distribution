@@ -20,11 +20,8 @@ object StyleCompileResults {
     map: js.Any | scala.Unit,
     rawResult: postcssLib.postcssMod.postcssNs.LazyResult | scala.Unit
   ): StyleCompileResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    __obj.updateDynamic("rawResult")(rawResult.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code, errors = errors, map = map.asInstanceOf[js.Any], rawResult = rawResult.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[StyleCompileResults]
   }
 }

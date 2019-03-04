@@ -20,11 +20,8 @@ object Anon_DetailIndices {
     radius: scala.Double,
     vertices: js.Array[scala.Double]
   ): Anon_DetailIndices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(detail = detail, indices = indices, radius = radius, vertices = vertices)
+  
     __obj.asInstanceOf[Anon_DetailIndices]
   }
 }

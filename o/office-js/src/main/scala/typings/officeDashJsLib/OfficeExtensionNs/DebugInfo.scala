@@ -50,9 +50,7 @@ object DebugInfo {
     statements: java.lang.String = null,
     surroundingStatements: js.Array[java.lang.String] = null
   ): DebugInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, message = message)
     if (errorLocation != null) __obj.updateDynamic("errorLocation")(errorLocation)
     if (fullStatements != null) __obj.updateDynamic("fullStatements")(fullStatements)
     if (innerError != null) __obj.updateDynamic("innerError")(innerError.asInstanceOf[js.Any])

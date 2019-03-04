@@ -38,10 +38,7 @@ object PromptOptions {
     placeholder: java.lang.String = null,
     title: java.lang.String = null
   ): PromptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelButtonText")(cancelButtonText)
-    __obj.updateDynamic("okButtonText")(okButtonText)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(cancelButtonText = cancelButtonText, okButtonText = okButtonText, success = success)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

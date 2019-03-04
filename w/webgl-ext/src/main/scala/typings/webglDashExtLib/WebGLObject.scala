@@ -13,8 +13,8 @@ trait WebGLObject extends js.Object {
 object WebGLObject {
   @scala.inline
   def apply(__WebGLObject: scala.Unit): WebGLObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__WebGLObject")(__WebGLObject)
+    val __obj = js.Dynamic.literal(__WebGLObject = __WebGLObject)
+  
     __obj.asInstanceOf[WebGLObject]
   }
 }

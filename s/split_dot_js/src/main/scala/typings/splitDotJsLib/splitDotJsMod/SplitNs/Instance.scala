@@ -29,11 +29,8 @@ object Instance {
     getSizes: js.Function0[js.Array[scala.Double]],
     setSizes: js.Function1[js.Array[scala.Double], scala.Unit]
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapse")(collapse)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getSizes")(getSizes)
-    __obj.updateDynamic("setSizes")(setSizes)
+    val __obj = js.Dynamic.literal(collapse = collapse, destroy = destroy, getSizes = getSizes, setSizes = setSizes)
+  
     __obj.asInstanceOf[Instance]
   }
 }

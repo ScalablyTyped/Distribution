@@ -22,12 +22,8 @@ object HeapDiffChange {
     size: java.lang.String,
     size_bytes: scala.Double
   ): HeapDiffChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocated_nodes")(allocated_nodes)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("freed_nodes")(freed_nodes)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("size_bytes")(size_bytes)
+    val __obj = js.Dynamic.literal(allocated_nodes = allocated_nodes, details = details, freed_nodes = freed_nodes, size = size, size_bytes = size_bytes)
+  
     __obj.asInstanceOf[HeapDiffChange]
   }
 }

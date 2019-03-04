@@ -117,13 +117,7 @@ object TourProps {
     nextButtonText: java.lang.String = null,
     style: js.Any = null
   ): TourProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("onBack")(onBack)
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onNext")(onNext)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(active = active, onBack = onBack, onCancel = onCancel, onNext = onNext, step = step, steps = steps)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (arrow != null) __obj.updateDynamic("arrow")(arrow)
     if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)

@@ -41,9 +41,7 @@ object UpdateOptions {
     displayItems: js.Array[PaymentItem] = null,
     shippingOptions: js.Array[stripejsLib.shippingMod.ShippingOption] = null
   ): UpdateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(currency = currency, total = total)
     if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
     if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
     __obj.asInstanceOf[UpdateOptions]

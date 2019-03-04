@@ -66,16 +66,8 @@ object ASPxClientRibbonItem {
     name: java.lang.String,
     ribbon: ASPxClientRibbon
   ): ASPxClientRibbonItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetValue")(GetValue)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetValue")(SetValue)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ribbon")(ribbon)
+    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetValue = GetValue, GetVisible = GetVisible, SetEnabled = SetEnabled, SetValue = SetValue, group = group, index = index, name = name, ribbon = ribbon)
+  
     __obj.asInstanceOf[ASPxClientRibbonItem]
   }
 }

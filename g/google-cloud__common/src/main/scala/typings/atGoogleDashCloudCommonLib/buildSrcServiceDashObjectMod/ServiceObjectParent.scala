@@ -40,9 +40,7 @@ object ServiceObjectParent {
       requestLib.requestMod.requestNs.RequiredUriUrl
     ]) = null
   ): ServiceObjectParent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestStream")(requestStream)
+    val __obj = js.Dynamic.literal(request = request, requestStream = requestStream)
     if (Promise != null) __obj.updateDynamic("Promise")(Promise)
     if (requestModule != null) __obj.updateDynamic("requestModule")(requestModule)
     __obj.asInstanceOf[ServiceObjectParent]

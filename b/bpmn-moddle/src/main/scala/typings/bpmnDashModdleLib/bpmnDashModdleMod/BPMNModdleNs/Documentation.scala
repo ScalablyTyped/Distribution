@@ -25,11 +25,7 @@ object Documentation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Documentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("textFormat")(textFormat)
+    val __obj = js.Dynamic.literal($type = $type, id = id, text = text, textFormat = textFormat)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

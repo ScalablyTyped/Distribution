@@ -13,9 +13,8 @@ trait Rejected[T] extends js.Object {
 object Rejected {
   @scala.inline
   def apply[T](reason: T, state: State): Rejected[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = state)
+  
     __obj.asInstanceOf[Rejected[T]]
   }
 }

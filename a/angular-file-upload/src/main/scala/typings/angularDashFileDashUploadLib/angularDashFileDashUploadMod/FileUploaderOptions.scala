@@ -84,19 +84,8 @@ object FileUploaderOptions {
     url: java.lang.String,
     withCredentials: scala.Boolean
   ): FileUploaderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("autoUpload")(autoUpload)
-    __obj.updateDynamic("disableMultipart")(disableMultipart)
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("formData")(formData)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("queueLimit")(queueLimit)
-    __obj.updateDynamic("removeAfterUpload")(removeAfterUpload)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(alias = alias, autoUpload = autoUpload, disableMultipart = disableMultipart, filters = filters, formData = formData, headers = headers, method = method, queue = queue, queueLimit = queueLimit, removeAfterUpload = removeAfterUpload, url = url, withCredentials = withCredentials)
+  
     __obj.asInstanceOf[FileUploaderOptions]
   }
 }

@@ -66,9 +66,7 @@ object ReactCropProps {
     onImageLoaded: js.Function2[/* target */ reactLib.HTMLImageElement, /* pixelCrop */ PixelCrop, scala.Unit] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ReactCropProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(onChange = onChange, src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (crop != null) __obj.updateDynamic("crop")(crop)

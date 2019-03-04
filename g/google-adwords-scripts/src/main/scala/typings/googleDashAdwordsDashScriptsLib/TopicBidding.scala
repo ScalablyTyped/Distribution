@@ -27,16 +27,8 @@ object TopicBidding {
     setCpc: js.Function1[scala.Double, scala.Unit],
     setCpm: js.Function1[scala.Double, scala.Unit]
   ): TopicBidding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearCpc")(clearCpc)
-    __obj.updateDynamic("clearCpm")(clearCpm)
-    __obj.updateDynamic("getCpc")(getCpc)
-    __obj.updateDynamic("getCpm")(getCpm)
-    __obj.updateDynamic("getStrategy")(getStrategy)
-    __obj.updateDynamic("getStrategySource")(getStrategySource)
-    __obj.updateDynamic("getStrategyType")(getStrategyType)
-    __obj.updateDynamic("setCpc")(setCpc)
-    __obj.updateDynamic("setCpm")(setCpm)
+    val __obj = js.Dynamic.literal(clearCpc = clearCpc, clearCpm = clearCpm, getCpc = getCpc, getCpm = getCpm, getStrategy = getStrategy, getStrategySource = getStrategySource, getStrategyType = getStrategyType, setCpc = setCpc, setCpm = setCpm)
+  
     __obj.asInstanceOf[TopicBidding]
   }
 }

@@ -36,11 +36,8 @@ object ChatRoomSubjectChange {
     room: java.lang.String,
     subject: java.lang.String
   ): ChatRoomSubjectChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(id = id, resource = resource, room = room, subject = subject)
+  
     __obj.asInstanceOf[ChatRoomSubjectChange]
   }
 }

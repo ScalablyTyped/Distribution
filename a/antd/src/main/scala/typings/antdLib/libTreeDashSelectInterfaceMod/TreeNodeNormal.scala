@@ -33,9 +33,7 @@ object TreeNodeNormal {
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     title: reactLib.reactMod.ReactNs.ReactNode = null
   ): TreeNodeNormal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
     if (!js.isUndefined(disableCheckbox)) __obj.updateDynamic("disableCheckbox")(disableCheckbox)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

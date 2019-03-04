@@ -18,7 +18,7 @@ class _MapElementList[Key, T, Unique /* <: scala.Boolean */, Source /* <: tstlLi
   /**
     * @hidden
     */
-  var `associative_`: js.Any = js.native
+  var associative_ : js.Any = js.native
   def associative(): Source = js.native
 }
 

@@ -25,9 +25,8 @@ trait FlockerVolumeSource extends js.Object {
 object FlockerVolumeSource {
   @scala.inline
   def apply(datasetName: java.lang.String, datasetUUID: java.lang.String): FlockerVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datasetName")(datasetName)
-    __obj.updateDynamic("datasetUUID")(datasetUUID)
+    val __obj = js.Dynamic.literal(datasetName = datasetName, datasetUUID = datasetUUID)
+  
     __obj.asInstanceOf[FlockerVolumeSource]
   }
 }

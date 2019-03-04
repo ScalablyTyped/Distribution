@@ -12,8 +12,8 @@ trait Anon_QueryDocumentNode extends js.Object {
 object Anon_QueryDocumentNode {
   @scala.inline
   def apply(query: graphqlLib.languageAstMod.DocumentNode): Anon_QueryDocumentNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[Anon_QueryDocumentNode]
   }
 }

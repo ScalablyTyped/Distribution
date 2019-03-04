@@ -20,11 +20,8 @@ object Anon_Async {
     responseType: java.lang.String,
     withCredentials: scala.Boolean
   ): Anon_Async = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
-    __obj.updateDynamic("responseType")(responseType)
-    __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(async = async, postData = postData.asInstanceOf[js.Any], responseType = responseType, withCredentials = withCredentials)
+  
     __obj.asInstanceOf[Anon_Async]
   }
 }

@@ -29,13 +29,8 @@ object Argument {
     optional: scala.Boolean,
     variadic: scala.Boolean
   ): Argument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("variadic")(variadic)
+    val __obj = js.Dynamic.literal(default = default, extAttrs = extAttrs, idlType = idlType, name = name, optional = optional, variadic = variadic)
+  
     __obj.asInstanceOf[Argument]
   }
 }

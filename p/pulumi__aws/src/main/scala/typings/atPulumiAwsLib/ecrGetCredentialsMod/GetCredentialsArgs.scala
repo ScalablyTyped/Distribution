@@ -12,8 +12,8 @@ trait GetCredentialsArgs extends js.Object {
 object GetCredentialsArgs {
   @scala.inline
   def apply(registryId: java.lang.String): GetCredentialsArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registryId")(registryId)
+    val __obj = js.Dynamic.literal(registryId = registryId)
+  
     __obj.asInstanceOf[GetCredentialsArgs]
   }
 }

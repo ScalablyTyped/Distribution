@@ -16,9 +16,8 @@ object Anon_CollapsedWidth {
     collapsedWidth: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | scala.Double],
     siderCollapsed: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   ): Anon_CollapsedWidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapsedWidth")(collapsedWidth)
-    __obj.updateDynamic("siderCollapsed")(siderCollapsed)
+    val __obj = js.Dynamic.literal(collapsedWidth = collapsedWidth, siderCollapsed = siderCollapsed)
+  
     __obj.asInstanceOf[Anon_CollapsedWidth]
   }
 }

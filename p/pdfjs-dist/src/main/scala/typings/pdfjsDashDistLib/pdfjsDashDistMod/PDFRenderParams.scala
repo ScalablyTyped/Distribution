@@ -22,8 +22,7 @@ object PDFRenderParams {
     textLayer: PDFRenderTextLayer = null,
     viewport: PDFPageViewport = null
   ): PDFRenderParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvasContext")(canvasContext)
+    val __obj = js.Dynamic.literal(canvasContext = canvasContext)
     if (continueCallback != null) __obj.updateDynamic("continueCallback")(continueCallback)
     if (imageLayer != null) __obj.updateDynamic("imageLayer")(imageLayer)
     if (textLayer != null) __obj.updateDynamic("textLayer")(textLayer)

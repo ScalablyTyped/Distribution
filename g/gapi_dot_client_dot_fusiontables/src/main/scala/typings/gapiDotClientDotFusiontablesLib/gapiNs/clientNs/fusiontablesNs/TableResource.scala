@@ -75,17 +75,8 @@ object TableResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Table]
     ]
   ): TableResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("importRows")(importRows)
-    __obj.updateDynamic("importTable")(importTable)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("replaceRows")(replaceRows)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(copy = copy, delete = delete, get = get, importRows = importRows, importTable = importTable, insert = insert, list = list, patch = patch, replaceRows = replaceRows, update = update)
+  
     __obj.asInstanceOf[TableResource]
   }
 }

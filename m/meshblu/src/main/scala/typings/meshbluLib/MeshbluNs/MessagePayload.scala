@@ -20,10 +20,7 @@ object MessagePayload {
     topic: java.lang.String,
     qos: scala.Int | scala.Double = null
   ): MessagePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("devices")(devices)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(devices = devices, payload = payload, topic = topic)
     if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePayload]
   }

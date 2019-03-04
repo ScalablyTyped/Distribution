@@ -14,10 +14,8 @@ trait EdgeDefinition extends js.Object {
 object EdgeDefinition {
   @scala.inline
   def apply(collection: java.lang.String, from: js.Array[java.lang.String], to: js.Array[java.lang.String]): EdgeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(collection = collection, from = from, to = to)
+  
     __obj.asInstanceOf[EdgeDefinition]
   }
 }

@@ -12,8 +12,8 @@ trait NavigationInjectedProps[P] extends js.Object {
 object NavigationInjectedProps {
   @scala.inline
   def apply[P](navigation: NavigationScreenProp[NavigationRoute[P], P]): NavigationInjectedProps[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigation")(navigation)
+    val __obj = js.Dynamic.literal(navigation = navigation)
+  
     __obj.asInstanceOf[NavigationInjectedProps[P]]
   }
 }

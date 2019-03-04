@@ -22,12 +22,8 @@ object Anon_CanOptOut {
     none: scala.Double,
     teamSubscription: scala.Double
   ): Anon_CanOptOut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canOptOut")(canOptOut)
-    __obj.updateDynamic("contributedSubscription")(contributedSubscription)
-    __obj.updateDynamic("groupSubscription")(groupSubscription)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("teamSubscription")(teamSubscription)
+    val __obj = js.Dynamic.literal(canOptOut = canOptOut, contributedSubscription = contributedSubscription, groupSubscription = groupSubscription, none = none, teamSubscription = teamSubscription)
+  
     __obj.asInstanceOf[Anon_CanOptOut]
   }
 }

@@ -12,8 +12,8 @@ trait MigrationConfig extends js.Object {
 object MigrationConfig {
   @scala.inline
   def apply(debug: scala.Boolean): MigrationConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(debug = debug)
+  
     __obj.asInstanceOf[MigrationConfig]
   }
 }

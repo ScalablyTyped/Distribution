@@ -80,8 +80,7 @@ object Dataset {
     name: java.lang.String = null,
     templates: Templates[T] = null
   ): Dataset[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])

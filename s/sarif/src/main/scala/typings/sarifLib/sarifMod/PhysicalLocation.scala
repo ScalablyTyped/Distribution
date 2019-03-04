@@ -38,8 +38,7 @@ object PhysicalLocation {
     properties: PropertyBag = null,
     region: Region = null
   ): PhysicalLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactLocation")(artifactLocation)
+    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation)
     if (contextRegion != null) __obj.updateDynamic("contextRegion")(contextRegion)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)

@@ -20,11 +20,8 @@ object InteractiveNetworkWriteException {
     Diagnostic: java.lang.String,
     Message: java.lang.String
   ): InteractiveNetworkWriteException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Diagnostic")(Diagnostic)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Diagnostic = Diagnostic, Message = Message)
+  
     __obj.asInstanceOf[InteractiveNetworkWriteException]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_IngestEndpoints extends js.Object {
 object Anon_IngestEndpoints {
   @scala.inline
   def apply(ingestEndpoints: js.Array[Anon_Password]): Anon_IngestEndpoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ingestEndpoints")(ingestEndpoints)
+    val __obj = js.Dynamic.literal(ingestEndpoints = ingestEndpoints)
+  
     __obj.asInstanceOf[Anon_IngestEndpoints]
   }
 }

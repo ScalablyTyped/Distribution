@@ -26,12 +26,7 @@ object SuccessfulPayment {
     order_info: OrderInfo = null,
     shipping_option_id: java.lang.String = null
   ): SuccessfulPayment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("invoice_payload")(invoice_payload)
-    __obj.updateDynamic("provider_payment_charge_id")(provider_payment_charge_id)
-    __obj.updateDynamic("telegram_payment_charge_id")(telegram_payment_charge_id)
-    __obj.updateDynamic("total_amount")(total_amount)
+    val __obj = js.Dynamic.literal(currency = currency, invoice_payload = invoice_payload, provider_payment_charge_id = provider_payment_charge_id, telegram_payment_charge_id = telegram_payment_charge_id, total_amount = total_amount)
     if (order_info != null) __obj.updateDynamic("order_info")(order_info)
     if (shipping_option_id != null) __obj.updateDynamic("shipping_option_id")(shipping_option_id)
     __obj.asInstanceOf[SuccessfulPayment]

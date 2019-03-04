@@ -20,11 +20,8 @@ object DistanceDisplayCondition {
     far: scala.Double,
     near: scala.Double
   ): DistanceDisplayCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("far")(far)
-    __obj.updateDynamic("near")(near)
+    val __obj = js.Dynamic.literal(clone = clone, equals = equals, far = far, near = near)
+  
     __obj.asInstanceOf[DistanceDisplayCondition]
   }
 }

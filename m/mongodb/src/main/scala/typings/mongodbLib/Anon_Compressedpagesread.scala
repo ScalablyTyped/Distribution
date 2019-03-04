@@ -26,8 +26,14 @@ object Anon_Compressedpagesread {
     `raw compression call failed, no additional data available`: scala.Double,
     `raw compression call succeeded`: scala.Double
   ): Anon_Compressedpagesread = {
-    val __obj = js.Dynamic.literal(`compressed pages read` = `compressed pages read`, `compressed pages written` = `compressed pages written`, `page written failed to compress` = `page written failed to compress`, `page written was too small to compress` = `page written was too small to compress`, `raw compression call failed, additional data available` = `raw compression call failed, additional data available`, `raw compression call failed, no additional data available` = `raw compression call failed, no additional data available`, `raw compression call succeeded` = `raw compression call succeeded`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compressed pages read")(`compressed pages read`)
+    __obj.updateDynamic("compressed pages written")(`compressed pages written`)
+    __obj.updateDynamic("page written failed to compress")(`page written failed to compress`)
+    __obj.updateDynamic("page written was too small to compress")(`page written was too small to compress`)
+    __obj.updateDynamic("raw compression call failed, additional data available")(`raw compression call failed, additional data available`)
+    __obj.updateDynamic("raw compression call failed, no additional data available")(`raw compression call failed, no additional data available`)
+    __obj.updateDynamic("raw compression call succeeded")(`raw compression call succeeded`)
     __obj.asInstanceOf[Anon_Compressedpagesread]
   }
 }

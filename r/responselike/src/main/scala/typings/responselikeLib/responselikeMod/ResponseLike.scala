@@ -24,11 +24,8 @@ object ResponseLike {
     statusCode: scala.Double,
     url: java.lang.String
   ): ResponseLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode, url = url)
+  
     __obj.asInstanceOf[ResponseLike]
   }
 }

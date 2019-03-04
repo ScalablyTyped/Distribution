@@ -27,14 +27,8 @@ object NumberFormatCode {
     Type: scala.Double,
     Usage: scala.Double
   ): NumberFormatCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Code")(Code)
-    __obj.updateDynamic("Default")(Default)
-    __obj.updateDynamic("DefaultName")(DefaultName)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("NameID")(NameID)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Usage")(Usage)
+    val __obj = js.Dynamic.literal(Code = Code, Default = Default, DefaultName = DefaultName, Index = Index, NameID = NameID, Type = Type, Usage = Usage)
+  
     __obj.asInstanceOf[NumberFormatCode]
   }
 }

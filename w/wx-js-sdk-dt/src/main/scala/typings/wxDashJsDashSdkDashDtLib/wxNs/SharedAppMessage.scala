@@ -39,10 +39,7 @@ object SharedAppMessage {
     trigger: js.Function0[scala.Unit] = null,
     `type`: java.lang.String = null
   ): SharedAppMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("desc")(desc)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(desc = desc, link = link, title = title)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)

@@ -12,8 +12,8 @@ trait RouteChangeError extends js.Object {
 object RouteChangeError {
   @scala.inline
   def apply(cancelled: scala.Boolean): RouteChangeError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelled")(cancelled)
+    val __obj = js.Dynamic.literal(cancelled = cancelled)
+  
     __obj.asInstanceOf[RouteChangeError]
   }
 }

@@ -26,8 +26,7 @@ object MoleOptions {
     titleButtons: js.Array[MoleButtonDescriptor] = null,
     titleEl: stdLib.HTMLElement = null
   ): MoleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
+    val __obj = js.Dynamic.literal(el = el)
     if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome)
     if (className != null) __obj.updateDynamic("className")(className)
     if (minimizedTitleEl != null) __obj.updateDynamic("minimizedTitleEl")(minimizedTitleEl)

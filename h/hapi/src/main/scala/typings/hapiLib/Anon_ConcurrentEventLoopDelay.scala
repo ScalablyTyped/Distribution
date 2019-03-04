@@ -27,11 +27,8 @@ trait Anon_ConcurrentEventLoopDelay extends js.Object {
 object Anon_ConcurrentEventLoopDelay {
   @scala.inline
   def apply(concurrent: scala.Double, eventLoopDelay: scala.Double, heapUsed: scala.Double, rss: scala.Double): Anon_ConcurrentEventLoopDelay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("concurrent")(concurrent)
-    __obj.updateDynamic("eventLoopDelay")(eventLoopDelay)
-    __obj.updateDynamic("heapUsed")(heapUsed)
-    __obj.updateDynamic("rss")(rss)
+    val __obj = js.Dynamic.literal(concurrent = concurrent, eventLoopDelay = eventLoopDelay, heapUsed = heapUsed, rss = rss)
+  
     __obj.asInstanceOf[Anon_ConcurrentEventLoopDelay]
   }
 }

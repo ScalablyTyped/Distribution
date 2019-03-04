@@ -56,14 +56,8 @@ object DatafeedsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Datafeed]
     ]
   ): DatafeedsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custombatch")(custombatch)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(custombatch = custombatch, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[DatafeedsResource]
   }
 }

@@ -18,8 +18,7 @@ object ILayerOptions {
     sensitive: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): ILayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[ILayerOptions]

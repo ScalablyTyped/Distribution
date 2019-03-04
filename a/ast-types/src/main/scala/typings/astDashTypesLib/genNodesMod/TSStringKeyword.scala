@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 object TSStringKeyword {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.TSStringKeyword): TSStringKeyword = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSStringKeyword]
   }
 }

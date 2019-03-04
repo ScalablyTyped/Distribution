@@ -28,15 +28,8 @@ object IKeyAlgorithmNamesStatics {
     ecdsa521: java.lang.String,
     rsa: java.lang.String
   ): IKeyAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dsa")(dsa)
-    __obj.updateDynamic("ecdh256")(ecdh256)
-    __obj.updateDynamic("ecdh384")(ecdh384)
-    __obj.updateDynamic("ecdh521")(ecdh521)
-    __obj.updateDynamic("ecdsa256")(ecdsa256)
-    __obj.updateDynamic("ecdsa384")(ecdsa384)
-    __obj.updateDynamic("ecdsa521")(ecdsa521)
-    __obj.updateDynamic("rsa")(rsa)
+    val __obj = js.Dynamic.literal(dsa = dsa, ecdh256 = ecdh256, ecdh384 = ecdh384, ecdh521 = ecdh521, ecdsa256 = ecdsa256, ecdsa384 = ecdsa384, ecdsa521 = ecdsa521, rsa = rsa)
+  
     __obj.asInstanceOf[IKeyAlgorithmNamesStatics]
   }
 }

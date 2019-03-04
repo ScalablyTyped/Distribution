@@ -16,7 +16,7 @@ abstract class Server ()
   /**
     * @hidden
     */
-  var `net_driver_`: js.Any = js.native
+  var net_driver_ : js.Any = js.native
   /**
     * @inheritdoc
     */

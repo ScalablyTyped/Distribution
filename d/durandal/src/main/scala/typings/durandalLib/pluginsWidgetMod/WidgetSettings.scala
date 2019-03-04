@@ -14,8 +14,7 @@ trait WidgetSettings extends js.Object {
 object WidgetSettings {
   @scala.inline
   def apply(kind: java.lang.String, model: js.Any = null, view: js.Any = null): WidgetSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (model != null) __obj.updateDynamic("model")(model)
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[WidgetSettings]

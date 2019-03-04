@@ -133,9 +133,7 @@ object Column {
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): Column[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(key = key, name = name)
     if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)

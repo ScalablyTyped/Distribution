@@ -61,11 +61,7 @@ object MethodResponseArgs {
     ] = null,
     responseParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): MethodResponseArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     if (responseModels != null) __obj.updateDynamic("responseModels")(responseModels.asInstanceOf[js.Any])
     if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
     if (responseParametersInJson != null) __obj.updateDynamic("responseParametersInJson")(responseParametersInJson.asInstanceOf[js.Any])

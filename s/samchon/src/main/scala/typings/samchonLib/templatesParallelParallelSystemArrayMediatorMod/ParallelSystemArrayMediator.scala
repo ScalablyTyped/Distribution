@@ -15,7 +15,7 @@ abstract class ParallelSystemArrayMediator[System /* <: samchonLib.templatesPara
   /**
     * @hidden
     */
-  var `mediator_`: js.Any = js.native
+  var mediator_ : js.Any = js.native
   /**
     * Factory method creating a {@link MediatorSystem} object.
     *

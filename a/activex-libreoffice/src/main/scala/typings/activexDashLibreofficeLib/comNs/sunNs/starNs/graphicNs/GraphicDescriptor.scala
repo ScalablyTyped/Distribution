@@ -107,26 +107,8 @@ object GraphicDescriptor {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): GraphicDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alpha")(Alpha)
-    __obj.updateDynamic("Animated")(Animated)
-    __obj.updateDynamic("BitsPerPixel")(BitsPerPixel)
-    __obj.updateDynamic("GraphicType")(GraphicType)
-    __obj.updateDynamic("MimeType")(MimeType)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Size100thMM")(Size100thMM)
-    __obj.updateDynamic("SizePixel")(SizePixel)
-    __obj.updateDynamic("Transparent")(Transparent)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Alpha = Alpha, Animated = Animated, BitsPerPixel = BitsPerPixel, GraphicType = GraphicType, MimeType = MimeType, PropertySetInfo = PropertySetInfo, Size100thMM = Size100thMM, SizePixel = SizePixel, Transparent = Transparent, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[GraphicDescriptor]
   }
 }

@@ -16,9 +16,8 @@ object Anon_IndexSigs1 {
     indexSigs1: typescriptDashServicesLib.TypeScriptNs.IndexSignatureInfo,
     indexSigs2: typescriptDashServicesLib.TypeScriptNs.IndexSignatureInfo
   ): Anon_IndexSigs1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexSigs1")(indexSigs1)
-    __obj.updateDynamic("indexSigs2")(indexSigs2)
+    val __obj = js.Dynamic.literal(indexSigs1 = indexSigs1, indexSigs2 = indexSigs2)
+  
     __obj.asInstanceOf[Anon_IndexSigs1]
   }
 }

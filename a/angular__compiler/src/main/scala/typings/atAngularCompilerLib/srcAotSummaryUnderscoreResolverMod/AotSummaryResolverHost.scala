@@ -38,11 +38,8 @@ object AotSummaryResolverHost {
     loadSummary: js.Function1[java.lang.String, java.lang.String | scala.Null],
     toSummaryFileName: js.Function2[java.lang.String, java.lang.String, java.lang.String]
   ): AotSummaryResolverHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSummaryFileName")(fromSummaryFileName)
-    __obj.updateDynamic("isSourceFile")(isSourceFile)
-    __obj.updateDynamic("loadSummary")(loadSummary)
-    __obj.updateDynamic("toSummaryFileName")(toSummaryFileName)
+    val __obj = js.Dynamic.literal(fromSummaryFileName = fromSummaryFileName, isSourceFile = isSourceFile, loadSummary = loadSummary, toSummaryFileName = toSummaryFileName)
+  
     __obj.asInstanceOf[AotSummaryResolverHost]
   }
 }

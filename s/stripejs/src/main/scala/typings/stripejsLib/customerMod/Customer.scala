@@ -53,15 +53,8 @@ object Customer {
     verified_name: java.lang.String,
     verified_phone: java.lang.String
   ): Customer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("verified_address")(verified_address)
-    __obj.updateDynamic("verified_email")(verified_email)
-    __obj.updateDynamic("verified_name")(verified_name)
-    __obj.updateDynamic("verified_phone")(verified_phone)
+    val __obj = js.Dynamic.literal(address = address, email = email, name = name, phone = phone, verified_address = verified_address, verified_email = verified_email, verified_name = verified_name, verified_phone = verified_phone)
+  
     __obj.asInstanceOf[Customer]
   }
 }

@@ -20,9 +20,7 @@ object YesOrNoOptions {
     echoNo: java.lang.String = null,
     echoYes: java.lang.String = null
   ): YesOrNoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("no")(no.asInstanceOf[js.Any])
-    __obj.updateDynamic("yes")(yes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(no = no.asInstanceOf[js.Any], yes = yes.asInstanceOf[js.Any])
     if (echoNo != null) __obj.updateDynamic("echoNo")(echoNo)
     if (echoYes != null) __obj.updateDynamic("echoYes")(echoYes)
     __obj.asInstanceOf[YesOrNoOptions]

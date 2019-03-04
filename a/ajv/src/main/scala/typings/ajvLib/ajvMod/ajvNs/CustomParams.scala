@@ -12,8 +12,8 @@ trait CustomParams extends ErrorParameters {
 object CustomParams {
   @scala.inline
   def apply(keyword: java.lang.String): CustomParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyword")(keyword)
+    val __obj = js.Dynamic.literal(keyword = keyword)
+  
     __obj.asInstanceOf[CustomParams]
   }
 }

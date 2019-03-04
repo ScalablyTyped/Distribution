@@ -24,8 +24,7 @@ object ApplyWorkspaceEditParams {
     edit: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit,
     label: java.lang.String = null
   ): ApplyWorkspaceEditParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edit")(edit)
+    val __obj = js.Dynamic.literal(edit = edit)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[ApplyWorkspaceEditParams]
   }

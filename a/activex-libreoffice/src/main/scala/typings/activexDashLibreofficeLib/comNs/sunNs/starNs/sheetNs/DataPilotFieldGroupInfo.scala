@@ -76,16 +76,8 @@ object DataPilotFieldGroupInfo {
     Start: scala.Double,
     Step: scala.Double
   ): DataPilotFieldGroupInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("GroupBy")(GroupBy)
-    __obj.updateDynamic("Groups")(Groups)
-    __obj.updateDynamic("HasAutoEnd")(HasAutoEnd)
-    __obj.updateDynamic("HasAutoStart")(HasAutoStart)
-    __obj.updateDynamic("HasDateValues")(HasDateValues)
-    __obj.updateDynamic("SourceField")(SourceField)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("Step")(Step)
+    val __obj = js.Dynamic.literal(End = End, GroupBy = GroupBy, Groups = Groups, HasAutoEnd = HasAutoEnd, HasAutoStart = HasAutoStart, HasDateValues = HasDateValues, SourceField = SourceField, Start = Start, Step = Step)
+  
     __obj.asInstanceOf[DataPilotFieldGroupInfo]
   }
 }

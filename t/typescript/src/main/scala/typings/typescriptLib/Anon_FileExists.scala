@@ -20,11 +20,8 @@ object Anon_FileExists {
     readFile: js.Function1[java.lang.String, js.UndefOr[java.lang.String]],
     resolvePath: js.Function1[java.lang.String, java.lang.String]
   ): Anon_FileExists = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileExists")(fileExists)
-    __obj.updateDynamic("getExecutingFilePath")(getExecutingFilePath)
-    __obj.updateDynamic("readFile")(readFile)
-    __obj.updateDynamic("resolvePath")(resolvePath)
+    val __obj = js.Dynamic.literal(fileExists = fileExists, getExecutingFilePath = getExecutingFilePath, readFile = readFile, resolvePath = resolvePath)
+  
     __obj.asInstanceOf[Anon_FileExists]
   }
 }

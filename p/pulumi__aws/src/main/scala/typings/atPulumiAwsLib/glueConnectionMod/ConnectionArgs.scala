@@ -51,8 +51,7 @@ object ConnectionArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     physicalConnectionRequirements: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdListsSubnetId] = null
   ): ConnectionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionProperties")(connectionProperties.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectionProperties = connectionProperties.asInstanceOf[js.Any])
     if (catalogId != null) __obj.updateDynamic("catalogId")(catalogId.asInstanceOf[js.Any])
     if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

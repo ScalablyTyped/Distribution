@@ -18,10 +18,8 @@ object BoardCardRuleSettings {
     rules: org.scalablytyped.runtime.StringDictionary[js.Array[Rule]],
     url: java.lang.String
   ): BoardCardRuleSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, rules = rules, url = url)
+  
     __obj.asInstanceOf[BoardCardRuleSettings]
   }
 }

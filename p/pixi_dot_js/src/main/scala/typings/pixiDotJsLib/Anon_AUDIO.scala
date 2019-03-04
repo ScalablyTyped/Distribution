@@ -26,14 +26,8 @@ object Anon_AUDIO {
     VIDEO: scala.Double,
     XML: scala.Double
   ): Anon_AUDIO = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AUDIO")(AUDIO)
-    __obj.updateDynamic("IMAGE")(IMAGE)
-    __obj.updateDynamic("JSON")(JSON)
-    __obj.updateDynamic("TEXT")(TEXT)
-    __obj.updateDynamic("UNKNOWN")(UNKNOWN)
-    __obj.updateDynamic("VIDEO")(VIDEO)
-    __obj.updateDynamic("XML")(XML)
+    val __obj = js.Dynamic.literal(AUDIO = AUDIO, IMAGE = IMAGE, JSON = JSON, TEXT = TEXT, UNKNOWN = UNKNOWN, VIDEO = VIDEO, XML = XML)
+  
     __obj.asInstanceOf[Anon_AUDIO]
   }
 }

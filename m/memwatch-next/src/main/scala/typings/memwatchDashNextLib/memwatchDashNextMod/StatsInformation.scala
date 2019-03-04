@@ -28,15 +28,8 @@ object StatsInformation {
     num_inc_gc: scala.Double,
     usage_trend: scala.Double
   ): StatsInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current_base")(current_base)
-    __obj.updateDynamic("estimated_base")(estimated_base)
-    __obj.updateDynamic("heap_compactions")(heap_compactions)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("num_full_gc")(num_full_gc)
-    __obj.updateDynamic("num_inc_gc")(num_inc_gc)
-    __obj.updateDynamic("usage_trend")(usage_trend)
+    val __obj = js.Dynamic.literal(current_base = current_base, estimated_base = estimated_base, heap_compactions = heap_compactions, max = max, min = min, num_full_gc = num_full_gc, num_inc_gc = num_inc_gc, usage_trend = usage_trend)
+  
     __obj.asInstanceOf[StatsInformation]
   }
 }

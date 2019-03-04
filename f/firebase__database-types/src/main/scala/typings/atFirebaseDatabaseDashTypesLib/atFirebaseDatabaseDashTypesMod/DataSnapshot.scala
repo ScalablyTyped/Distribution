@@ -36,17 +36,8 @@ object DataSnapshot {
     `val`: js.Function0[js.Any],
     key: java.lang.String = null
   ): DataSnapshot = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("child")(child)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("exportVal")(exportVal)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("getPriority")(getPriority)
-    __obj.updateDynamic("hasChild")(hasChild)
-    __obj.updateDynamic("hasChildren")(hasChildren)
-    __obj.updateDynamic("numChildren")(numChildren)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(child = child, exists = exists, exportVal = exportVal, forEach = forEach, getPriority = getPriority, hasChild = hasChild, hasChildren = hasChildren, numChildren = numChildren, ref = ref, toJSON = toJSON)
+    __obj.updateDynamic("val")(`val`)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[DataSnapshot]
   }

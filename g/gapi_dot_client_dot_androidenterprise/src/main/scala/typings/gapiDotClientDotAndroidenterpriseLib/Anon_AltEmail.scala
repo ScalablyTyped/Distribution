@@ -42,9 +42,7 @@ object Anon_AltEmail {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEmail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("enterpriseId")(enterpriseId)
+    val __obj = js.Dynamic.literal(email = email, enterpriseId = enterpriseId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

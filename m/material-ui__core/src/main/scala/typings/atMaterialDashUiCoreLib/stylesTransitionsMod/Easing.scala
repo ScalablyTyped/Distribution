@@ -20,11 +20,8 @@ object Easing {
     easeOut: java.lang.String,
     sharp: java.lang.String
   ): Easing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("easeIn")(easeIn)
-    __obj.updateDynamic("easeInOut")(easeInOut)
-    __obj.updateDynamic("easeOut")(easeOut)
-    __obj.updateDynamic("sharp")(sharp)
+    val __obj = js.Dynamic.literal(easeIn = easeIn, easeInOut = easeInOut, easeOut = easeOut, sharp = sharp)
+  
     __obj.asInstanceOf[Easing]
   }
 }

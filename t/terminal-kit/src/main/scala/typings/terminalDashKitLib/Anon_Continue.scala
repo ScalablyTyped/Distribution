@@ -20,8 +20,7 @@ object Anon_Continue {
     offset: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Anon_Continue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
+    val __obj = js.Dynamic.literal(x = x)
     if (!js.isUndefined(continue)) __obj.updateDynamic("continue")(continue)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

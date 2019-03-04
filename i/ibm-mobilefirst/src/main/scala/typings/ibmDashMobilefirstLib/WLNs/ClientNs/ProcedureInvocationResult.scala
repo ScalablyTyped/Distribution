@@ -13,8 +13,7 @@ trait ProcedureInvocationResult extends js.Object {
 object ProcedureInvocationResult {
   @scala.inline
   def apply(isSuccessful: scala.Boolean, errors: js.Array[java.lang.String] = null): ProcedureInvocationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSuccessful")(isSuccessful)
+    val __obj = js.Dynamic.literal(isSuccessful = isSuccessful)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     __obj.asInstanceOf[ProcedureInvocationResult]
   }

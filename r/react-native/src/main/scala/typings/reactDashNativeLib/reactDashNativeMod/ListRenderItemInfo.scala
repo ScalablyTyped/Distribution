@@ -14,10 +14,8 @@ trait ListRenderItemInfo[ItemT] extends js.Object {
 object ListRenderItemInfo {
   @scala.inline
   def apply[ItemT](index: scala.Double, item: ItemT, separators: reactDashNativeLib.Anon_Highlight): ListRenderItemInfo[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("separators")(separators)
+    val __obj = js.Dynamic.literal(index = index, item = item.asInstanceOf[js.Any], separators = separators)
+  
     __obj.asInstanceOf[ListRenderItemInfo[ItemT]]
   }
 }

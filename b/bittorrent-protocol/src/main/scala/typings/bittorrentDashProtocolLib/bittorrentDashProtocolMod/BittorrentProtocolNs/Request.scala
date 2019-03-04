@@ -20,11 +20,8 @@ object Request {
     offset: scala.Double,
     piece: scala.Double
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("piece")(piece)
+    val __obj = js.Dynamic.literal(callback = callback, length = length, offset = offset, piece = piece)
+  
     __obj.asInstanceOf[Request]
   }
 }

@@ -18,10 +18,8 @@ object CircuitFactory {
     getOrCreate: js.Function1[CirctuiBreakerConfig, CircuitBreaker],
     resetCache: js.Function0[scala.Unit]
   ): CircuitFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCache")(getCache)
-    __obj.updateDynamic("getOrCreate")(getOrCreate)
-    __obj.updateDynamic("resetCache")(resetCache)
+    val __obj = js.Dynamic.literal(getCache = getCache, getOrCreate = getOrCreate, resetCache = resetCache)
+  
     __obj.asInstanceOf[CircuitFactory]
   }
 }

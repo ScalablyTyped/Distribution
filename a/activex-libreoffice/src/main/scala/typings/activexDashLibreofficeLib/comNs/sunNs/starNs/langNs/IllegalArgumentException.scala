@@ -23,10 +23,8 @@ object IllegalArgumentException {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String
   ): IllegalArgumentException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArgumentPosition")(ArgumentPosition)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(ArgumentPosition = ArgumentPosition, Context = Context, Message = Message)
+  
     __obj.asInstanceOf[IllegalArgumentException]
   }
 }

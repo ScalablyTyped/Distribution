@@ -41,8 +41,7 @@ object EventObjectInput {
     textColor: java.lang.String = null,
     url: java.lang.String = null
   ): EventObjectInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay)

@@ -90,19 +90,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableXpnHost")(disableXpnHost)
-    __obj.updateDynamic("disableXpnResource")(disableXpnResource)
-    __obj.updateDynamic("enableXpnHost")(enableXpnHost)
-    __obj.updateDynamic("enableXpnResource")(enableXpnResource)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getXpnHost")(getXpnHost)
-    __obj.updateDynamic("getXpnResources")(getXpnResources)
-    __obj.updateDynamic("listXpnHosts")(listXpnHosts)
-    __obj.updateDynamic("moveDisk")(moveDisk)
-    __obj.updateDynamic("moveInstance")(moveInstance)
-    __obj.updateDynamic("setCommonInstanceMetadata")(setCommonInstanceMetadata)
-    __obj.updateDynamic("setUsageExportBucket")(setUsageExportBucket)
+    val __obj = js.Dynamic.literal(disableXpnHost = disableXpnHost, disableXpnResource = disableXpnResource, enableXpnHost = enableXpnHost, enableXpnResource = enableXpnResource, get = get, getXpnHost = getXpnHost, getXpnResources = getXpnResources, listXpnHosts = listXpnHosts, moveDisk = moveDisk, moveInstance = moveInstance, setCommonInstanceMetadata = setCommonInstanceMetadata, setUsageExportBucket = setUsageExportBucket)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

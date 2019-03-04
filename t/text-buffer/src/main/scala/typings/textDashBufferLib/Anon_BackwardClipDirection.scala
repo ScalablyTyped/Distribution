@@ -14,8 +14,8 @@ object Anon_BackwardClipDirection {
   def apply(
     clipDirection: textDashBufferLib.textDashBufferLibStrings.backward | textDashBufferLib.textDashBufferLibStrings.forward | textDashBufferLib.textDashBufferLibStrings.closest
   ): Anon_BackwardClipDirection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clipDirection")(clipDirection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BackwardClipDirection]
   }
 }

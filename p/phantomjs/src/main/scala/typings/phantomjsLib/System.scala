@@ -22,12 +22,8 @@ object System {
     pid: scala.Double,
     platform: java.lang.String
   ): System = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(args = args, env = env, os = os, pid = pid, platform = platform)
+  
     __obj.asInstanceOf[System]
   }
 }

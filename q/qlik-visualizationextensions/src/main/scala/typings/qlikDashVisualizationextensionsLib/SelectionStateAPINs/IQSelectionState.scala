@@ -51,14 +51,8 @@ object IQSelectionState {
     stateName: java.lang.String,
     unlockAll: js.Function0[angularLib.angularMod.angularNs.IPromise[_]]
   ): IQSelectionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backCount")(backCount)
-    __obj.updateDynamic("clearAll")(clearAll)
-    __obj.updateDynamic("forwardCount")(forwardCount)
-    __obj.updateDynamic("lockAll")(lockAll)
-    __obj.updateDynamic("selections")(selections)
-    __obj.updateDynamic("stateName")(stateName)
-    __obj.updateDynamic("unlockAll")(unlockAll)
+    val __obj = js.Dynamic.literal(backCount = backCount, clearAll = clearAll, forwardCount = forwardCount, lockAll = lockAll, selections = selections, stateName = stateName, unlockAll = unlockAll)
+  
     __obj.asInstanceOf[IQSelectionState]
   }
 }

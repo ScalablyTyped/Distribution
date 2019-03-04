@@ -36,19 +36,8 @@ object Anon_Float {
     showOnFocus: propDashTypesLib.propDashTypesMod.Requireable[_],
     showOnlyFor: propDashTypesLib.propDashTypesMod.Requireable[_]
   ): Anon_Float = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("float")(float)
-    __obj.updateDynamic("hideFor")(hideFor)
-    __obj.updateDynamic("hideOnlyFor")(hideOnlyFor)
-    __obj.updateDynamic("isClearfix")(isClearfix)
-    __obj.updateDynamic("isHidden")(isHidden)
-    __obj.updateDynamic("isInvisible")(isInvisible)
-    __obj.updateDynamic("showFor")(showFor)
-    __obj.updateDynamic("showForLandscape")(showForLandscape)
-    __obj.updateDynamic("showForPortrait")(showForPortrait)
-    __obj.updateDynamic("showForSr")(showForSr)
-    __obj.updateDynamic("showOnFocus")(showOnFocus)
-    __obj.updateDynamic("showOnlyFor")(showOnlyFor)
+    val __obj = js.Dynamic.literal(float = float, hideFor = hideFor, hideOnlyFor = hideOnlyFor, isClearfix = isClearfix, isHidden = isHidden, isInvisible = isInvisible, showFor = showFor, showForLandscape = showForLandscape, showForPortrait = showForPortrait, showForSr = showForSr, showOnFocus = showOnFocus, showOnlyFor = showOnlyFor)
+  
     __obj.asInstanceOf[Anon_Float]
   }
 }

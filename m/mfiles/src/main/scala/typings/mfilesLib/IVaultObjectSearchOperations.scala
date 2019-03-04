@@ -95,22 +95,8 @@ object IVaultObjectSearchOperations {
       IObjectSearchResults
     ]
   ): IVaultObjectSearchOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FindFile")(FindFile)
-    __obj.updateDynamic("FindObjectVersionAndProperties")(FindObjectVersionAndProperties)
-    __obj.updateDynamic("GetFacetValues")(GetFacetValues)
-    __obj.updateDynamic("GetFacetValuesByPath")(GetFacetValuesByPath)
-    __obj.updateDynamic("GetObjectCountInSearch")(GetObjectCountInSearch)
-    __obj.updateDynamic("GetObjectsInPath")(GetObjectsInPath)
-    __obj.updateDynamic("GetSearchHits")(GetSearchHits)
-    __obj.updateDynamic("IsObjectPathInMFiles")(IsObjectPathInMFiles)
-    __obj.updateDynamic("SearchForObjectsByCondition")(SearchForObjectsByCondition)
-    __obj.updateDynamic("SearchForObjectsByConditions")(SearchForObjectsByConditions)
-    __obj.updateDynamic("SearchForObjectsByConditionsEx")(SearchForObjectsByConditionsEx)
-    __obj.updateDynamic("SearchForObjectsByConditionsXML")(SearchForObjectsByConditionsXML)
-    __obj.updateDynamic("SearchForObjectsByExportedSearchConditions")(SearchForObjectsByExportedSearchConditions)
-    __obj.updateDynamic("SearchForObjectsByExportedSearchConditionsXML")(SearchForObjectsByExportedSearchConditionsXML)
-    __obj.updateDynamic("SearchForObjectsByString")(SearchForObjectsByString)
+    val __obj = js.Dynamic.literal(FindFile = FindFile, FindObjectVersionAndProperties = FindObjectVersionAndProperties, GetFacetValues = GetFacetValues, GetFacetValuesByPath = GetFacetValuesByPath, GetObjectCountInSearch = GetObjectCountInSearch, GetObjectsInPath = GetObjectsInPath, GetSearchHits = GetSearchHits, IsObjectPathInMFiles = IsObjectPathInMFiles, SearchForObjectsByCondition = SearchForObjectsByCondition, SearchForObjectsByConditions = SearchForObjectsByConditions, SearchForObjectsByConditionsEx = SearchForObjectsByConditionsEx, SearchForObjectsByConditionsXML = SearchForObjectsByConditionsXML, SearchForObjectsByExportedSearchConditions = SearchForObjectsByExportedSearchConditions, SearchForObjectsByExportedSearchConditionsXML = SearchForObjectsByExportedSearchConditionsXML, SearchForObjectsByString = SearchForObjectsByString)
+  
     __obj.asInstanceOf[IVaultObjectSearchOperations]
   }
 }

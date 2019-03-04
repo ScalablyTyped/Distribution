@@ -47,17 +47,8 @@ object BuildController {
     uri: java.lang.String,
     url: java.lang.String
   ): BuildController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("updatedDate")(updatedDate)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, createdDate = createdDate, description = description, enabled = enabled, id = id, name = name, status = status, updatedDate = updatedDate, uri = uri, url = url)
+  
     __obj.asInstanceOf[BuildController]
   }
 }

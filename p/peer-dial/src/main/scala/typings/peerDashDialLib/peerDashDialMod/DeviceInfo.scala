@@ -28,15 +28,8 @@ object DeviceInfo {
     manufacturer: java.lang.String,
     modelName: java.lang.String
   ): DeviceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UDN")(UDN)
-    __obj.updateDynamic("applicationUrl")(applicationUrl)
-    __obj.updateDynamic("descriptionUrl")(descriptionUrl)
-    __obj.updateDynamic("deviceType")(deviceType)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("iconList")(iconList.asInstanceOf[js.Any])
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("modelName")(modelName)
+    val __obj = js.Dynamic.literal(UDN = UDN, applicationUrl = applicationUrl, descriptionUrl = descriptionUrl, deviceType = deviceType, friendlyName = friendlyName, iconList = iconList.asInstanceOf[js.Any], manufacturer = manufacturer, modelName = modelName)
+  
     __obj.asInstanceOf[DeviceInfo]
   }
 }

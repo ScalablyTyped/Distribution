@@ -44,23 +44,8 @@ object FormApp {
     openById: js.Function1[java.lang.String, Form],
     openByUrl: js.Function1[java.lang.String, Form]
   ): FormApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("DestinationType")(DestinationType)
-    __obj.updateDynamic("FeedbackType")(FeedbackType)
-    __obj.updateDynamic("ItemType")(ItemType)
-    __obj.updateDynamic("PageNavigationType")(PageNavigationType)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createCheckboxGridValidation")(createCheckboxGridValidation)
-    __obj.updateDynamic("createCheckboxValidation")(createCheckboxValidation)
-    __obj.updateDynamic("createFeedback")(createFeedback)
-    __obj.updateDynamic("createGridValidation")(createGridValidation)
-    __obj.updateDynamic("createParagraphTextValidation")(createParagraphTextValidation)
-    __obj.updateDynamic("createTextValidation")(createTextValidation)
-    __obj.updateDynamic("getActiveForm")(getActiveForm)
-    __obj.updateDynamic("getUi")(getUi)
-    __obj.updateDynamic("openById")(openById)
-    __obj.updateDynamic("openByUrl")(openByUrl)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, DestinationType = DestinationType, FeedbackType = FeedbackType, ItemType = ItemType, PageNavigationType = PageNavigationType, create = create, createCheckboxGridValidation = createCheckboxGridValidation, createCheckboxValidation = createCheckboxValidation, createFeedback = createFeedback, createGridValidation = createGridValidation, createParagraphTextValidation = createParagraphTextValidation, createTextValidation = createTextValidation, getActiveForm = getActiveForm, getUi = getUi, openById = openById, openByUrl = openByUrl)
+  
     __obj.asInstanceOf[FormApp]
   }
 }

@@ -60,15 +60,8 @@ object XTreeDataModelListener {
     treeNodesRemoved: js.Function1[TreeDataModelEvent, scala.Unit],
     treeStructureChanged: js.Function1[TreeDataModelEvent, scala.Unit]
   ): XTreeDataModelListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("treeNodesChanged")(treeNodesChanged)
-    __obj.updateDynamic("treeNodesInserted")(treeNodesInserted)
-    __obj.updateDynamic("treeNodesRemoved")(treeNodesRemoved)
-    __obj.updateDynamic("treeStructureChanged")(treeStructureChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, treeNodesChanged = treeNodesChanged, treeNodesInserted = treeNodesInserted, treeNodesRemoved = treeNodesRemoved, treeStructureChanged = treeStructureChanged)
+  
     __obj.asInstanceOf[XTreeDataModelListener]
   }
 }

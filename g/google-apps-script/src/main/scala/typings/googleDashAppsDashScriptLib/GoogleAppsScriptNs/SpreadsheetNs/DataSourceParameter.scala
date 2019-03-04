@@ -18,10 +18,8 @@ object DataSourceParameter {
     getSourceCell: js.Function0[java.lang.String],
     getType: js.Function0[DataSourceParameterType]
   ): DataSourceParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getSourceCell")(getSourceCell)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(getName = getName, getSourceCell = getSourceCell, getType = getType)
+  
     __obj.asInstanceOf[DataSourceParameter]
   }
 }

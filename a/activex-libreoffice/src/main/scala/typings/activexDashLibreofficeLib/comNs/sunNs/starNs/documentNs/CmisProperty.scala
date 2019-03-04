@@ -40,16 +40,8 @@ object CmisProperty {
     Updatable: scala.Boolean,
     Value: js.Any
   ): CmisProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Choices")(Choices)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("MultiValued")(MultiValued)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OpenChoice")(OpenChoice)
-    __obj.updateDynamic("Required")(Required)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Updatable")(Updatable)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Choices = Choices, Id = Id, MultiValued = MultiValued, Name = Name, OpenChoice = OpenChoice, Required = Required, Type = Type, Updatable = Updatable, Value = Value)
+  
     __obj.asInstanceOf[CmisProperty]
   }
 }

@@ -42,12 +42,8 @@ object AddressesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AddressList]
     ]
   ): AddressesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list)
+  
     __obj.asInstanceOf[AddressesResource]
   }
 }

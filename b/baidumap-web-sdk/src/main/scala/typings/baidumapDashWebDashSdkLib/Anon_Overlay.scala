@@ -22,11 +22,8 @@ object Anon_Overlay {
     target: js.Any,
     `type`: java.lang.String
   ): Anon_Overlay = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("overlay")(overlay)
-    __obj.updateDynamic("pixel")(pixel)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(overlay = overlay, pixel = pixel, point = point, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Overlay]
   }
 }

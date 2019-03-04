@@ -13,8 +13,8 @@ trait Anon_CallbackOptions extends js.Object {
 object Anon_CallbackOptions {
   @scala.inline
   def apply(sendPacket: js.Function2[js.Object, js.Function0[scala.Unit], scala.Unit]): Anon_CallbackOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sendPacket")(sendPacket)
+    val __obj = js.Dynamic.literal(sendPacket = sendPacket)
+  
     __obj.asInstanceOf[Anon_CallbackOptions]
   }
 }

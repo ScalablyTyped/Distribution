@@ -44,9 +44,7 @@ object ImmunizationRecommendation {
     resourceType: code = null,
     text: Narrative = null
   ): ImmunizationRecommendation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("recommendation")(recommendation)
+    val __obj = js.Dynamic.literal(patient = patient, recommendation = recommendation)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

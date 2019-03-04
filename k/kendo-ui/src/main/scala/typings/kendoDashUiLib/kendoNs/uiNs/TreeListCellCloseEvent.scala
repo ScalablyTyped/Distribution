@@ -21,10 +21,7 @@ object TreeListCellCloseEvent {
     model: kendoDashUiLib.kendoNs.dataNs.Model = null,
     `type`: java.lang.String = null
   ): TreeListCellCloseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (container != null) __obj.updateDynamic("container")(container)
     if (model != null) __obj.updateDynamic("model")(model)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

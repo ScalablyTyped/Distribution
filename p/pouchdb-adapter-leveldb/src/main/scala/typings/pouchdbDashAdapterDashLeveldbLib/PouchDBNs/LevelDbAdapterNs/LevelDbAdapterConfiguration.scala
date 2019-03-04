@@ -21,8 +21,7 @@ object LevelDbAdapterConfiguration {
     revs_limit: scala.Int | scala.Double = null,
     size: scala.Int | scala.Double = null
   ): LevelDbAdapterConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapter")(adapter)
+    val __obj = js.Dynamic.literal(adapter = adapter)
     if (!js.isUndefined(auto_compaction)) __obj.updateDynamic("auto_compaction")(auto_compaction)
     if (name != null) __obj.updateDynamic("name")(name)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

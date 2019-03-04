@@ -23,12 +23,8 @@ object strings {
     DIALOG_SURFACE_SELECTOR: atMaterialDialogLib.atMaterialDialogLibStrings.`DOTmdc-dialog__surface`,
     OPEN_DIALOG_SELECTOR: atMaterialDialogLib.atMaterialDialogLibStrings.`DOTmdc-dialog--open`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACCEPT_EVENT")(ACCEPT_EVENT)
-    __obj.updateDynamic("ACCEPT_SELECTOR")(ACCEPT_SELECTOR)
-    __obj.updateDynamic("CANCEL_EVENT")(CANCEL_EVENT)
-    __obj.updateDynamic("DIALOG_SURFACE_SELECTOR")(DIALOG_SURFACE_SELECTOR)
-    __obj.updateDynamic("OPEN_DIALOG_SELECTOR")(OPEN_DIALOG_SELECTOR)
+    val __obj = js.Dynamic.literal(ACCEPT_EVENT = ACCEPT_EVENT, ACCEPT_SELECTOR = ACCEPT_SELECTOR, CANCEL_EVENT = CANCEL_EVENT, DIALOG_SURFACE_SELECTOR = DIALOG_SURFACE_SELECTOR, OPEN_DIALOG_SELECTOR = OPEN_DIALOG_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

@@ -23,8 +23,7 @@ object BadgeProps {
     overlap: js.UndefOr[scala.Boolean] = js.undefined,
     ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
   ): BadgeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (!js.isUndefined(noBackground)) __obj.updateDynamic("noBackground")(noBackground)

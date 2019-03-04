@@ -35,11 +35,7 @@ object NavigationTree {
     childItems: js.Array[NavigationTree] = null,
     nameSpan: TextSpan = null
   ): NavigationTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("kindModifiers")(kindModifiers)
-    __obj.updateDynamic("spans")(spans)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(kind = kind, kindModifiers = kindModifiers, spans = spans, text = text)
     if (childItems != null) __obj.updateDynamic("childItems")(childItems)
     if (nameSpan != null) __obj.updateDynamic("nameSpan")(nameSpan)
     __obj.asInstanceOf[NavigationTree]

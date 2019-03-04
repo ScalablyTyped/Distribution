@@ -20,11 +20,8 @@ object Anon_Dns {
     url: uuidDash1345Lib.uuidDash1345Mod.UUID,
     x500: uuidDash1345Lib.uuidDash1345Mod.UUID
   ): Anon_Dns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dns")(dns)
-    __obj.updateDynamic("oid")(oid)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("x500")(x500)
+    val __obj = js.Dynamic.literal(dns = dns, oid = oid, url = url, x500 = x500)
+  
     __obj.asInstanceOf[Anon_Dns]
   }
 }

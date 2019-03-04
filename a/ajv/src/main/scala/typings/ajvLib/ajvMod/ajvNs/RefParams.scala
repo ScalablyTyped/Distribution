@@ -12,8 +12,8 @@ trait RefParams extends ErrorParameters {
 object RefParams {
   @scala.inline
   def apply(ref: java.lang.String): RefParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(ref = ref)
+  
     __obj.asInstanceOf[RefParams]
   }
 }

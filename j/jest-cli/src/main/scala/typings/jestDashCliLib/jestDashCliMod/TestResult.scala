@@ -46,18 +46,7 @@ object TestResult {
     memoryUsage: scala.Int | scala.Double = null,
     testExecError: SerializableError = null
   ): TestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leaks")(leaks)
-    __obj.updateDynamic("numFailingTests")(numFailingTests)
-    __obj.updateDynamic("numPassingTests")(numPassingTests)
-    __obj.updateDynamic("numPendingTests")(numPendingTests)
-    __obj.updateDynamic("openHandles")(openHandles)
-    __obj.updateDynamic("perfStats")(perfStats)
-    __obj.updateDynamic("skipped")(skipped)
-    __obj.updateDynamic("snapshot")(snapshot)
-    __obj.updateDynamic("sourceMaps")(sourceMaps)
-    __obj.updateDynamic("testFilePath")(testFilePath)
-    __obj.updateDynamic("testResults")(testResults)
+    val __obj = js.Dynamic.literal(leaks = leaks, numFailingTests = numFailingTests, numPassingTests = numPassingTests, numPendingTests = numPendingTests, openHandles = openHandles, perfStats = perfStats, skipped = skipped, snapshot = snapshot, sourceMaps = sourceMaps, testFilePath = testFilePath, testResults = testResults)
     if (console != null) __obj.updateDynamic("console")(console)
     if (coverage != null) __obj.updateDynamic("coverage")(coverage)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)

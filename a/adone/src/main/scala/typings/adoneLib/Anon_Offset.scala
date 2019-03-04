@@ -13,9 +13,8 @@ trait Anon_Offset extends js.Object {
 object Anon_Offset {
   @scala.inline
   def apply(offset: scala.Double, result: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBaseBlock): Anon_Offset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(offset = offset, result = result)
+  
     __obj.asInstanceOf[Anon_Offset]
   }
 }

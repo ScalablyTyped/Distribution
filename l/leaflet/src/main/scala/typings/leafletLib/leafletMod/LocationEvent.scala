@@ -30,16 +30,8 @@ object LocationEvent {
     timestamp: scala.Double,
     `type`: java.lang.String
   ): LocationEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("latlng")(latlng)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, altitudeAccuracy = altitudeAccuracy, bounds = bounds, heading = heading, latlng = latlng, speed = speed, target = target, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LocationEvent]
   }
 }

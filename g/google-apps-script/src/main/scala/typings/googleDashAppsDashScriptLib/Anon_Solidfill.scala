@@ -18,9 +18,8 @@ object Anon_Solidfill {
     solid_fill: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.SolidFill,
     stretched_picture_fill: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.StretchedPictureFill
   ): Anon_Solidfill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("solid_fill")(solid_fill)
-    __obj.updateDynamic("stretched_picture_fill")(stretched_picture_fill)
+    val __obj = js.Dynamic.literal(solid_fill = solid_fill, stretched_picture_fill = stretched_picture_fill)
+  
     __obj.asInstanceOf[Anon_Solidfill]
   }
 }

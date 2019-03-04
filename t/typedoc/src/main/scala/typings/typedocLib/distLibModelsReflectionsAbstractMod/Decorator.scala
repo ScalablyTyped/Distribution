@@ -18,8 +18,7 @@ object Decorator {
     arguments: js.Any = null,
     `type`: typedocLib.distLibModelsTypesMod.Type = null
   ): Decorator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Decorator]

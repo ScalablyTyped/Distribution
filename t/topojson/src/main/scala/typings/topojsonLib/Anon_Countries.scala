@@ -16,9 +16,8 @@ object Anon_Countries {
     countries: Anon_Geometries,
     land: topojsonDashSpecificationLib.topojsonDashSpecificationMod.GeometryCollection[js.Object]
   ): Anon_Countries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countries")(countries)
-    __obj.updateDynamic("land")(land)
+    val __obj = js.Dynamic.literal(countries = countries, land = land)
+  
     __obj.asInstanceOf[Anon_Countries]
   }
 }

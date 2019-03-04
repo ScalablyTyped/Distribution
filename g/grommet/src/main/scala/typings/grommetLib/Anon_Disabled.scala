@@ -20,8 +20,7 @@ object Anon_Disabled {
     id: java.lang.String = null,
     label: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

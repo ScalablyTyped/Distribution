@@ -23,8 +23,7 @@ object Anon_CompleteFailKeyList {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function1[/* res */ Anon_KVDataList, scala.Unit] = null
   ): Anon_CompleteFailKeyList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyList")(keyList)
+    val __obj = js.Dynamic.literal(keyList = keyList)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

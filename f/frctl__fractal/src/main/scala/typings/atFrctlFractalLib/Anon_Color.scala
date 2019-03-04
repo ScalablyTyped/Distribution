@@ -20,9 +20,7 @@ object Anon_Color {
     color: java.lang.String = null,
     scope: java.lang.String = null
   ): Anon_Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mode = mode, name = name)
     if (color != null) __obj.updateDynamic("color")(color)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[Anon_Color]

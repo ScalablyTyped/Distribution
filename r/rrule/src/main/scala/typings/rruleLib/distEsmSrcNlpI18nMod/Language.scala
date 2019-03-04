@@ -18,10 +18,8 @@ object Language {
     monthNames: js.Array[java.lang.String],
     tokens: org.scalablytyped.runtime.StringDictionary[stdLib.RegExp]
   ): Language = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayNames")(dayNames)
-    __obj.updateDynamic("monthNames")(monthNames)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(dayNames = dayNames, monthNames = monthNames, tokens = tokens)
+  
     __obj.asInstanceOf[Language]
   }
 }

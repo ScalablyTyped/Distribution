@@ -48,14 +48,8 @@ object Device {
     vendorId: chromeDashAppsLib.chromeNs.integer,
     version: chromeDashAppsLib.chromeNs.integer
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("manufacturerName")(manufacturerName)
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("productName")(productName)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("vendorId")(vendorId)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(device = device, manufacturerName = manufacturerName, productId = productId, productName = productName, serialNumber = serialNumber, vendorId = vendorId, version = version)
+  
     __obj.asInstanceOf[Device]
   }
 }

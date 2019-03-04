@@ -33,12 +33,8 @@ object XComponentSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XComponentSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getComponent")(getComponent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Component = Component, acquire = acquire, getComponent = getComponent, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XComponentSupplier]
   }
 }

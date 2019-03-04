@@ -18,10 +18,8 @@ object Anon_CompleteFailRes {
     fail: js.Function0[scala.Unit],
     success: js.Function1[Anon_Northeast, scala.Unit]
   ): Anon_CompleteFailRes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("fail")(fail)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(complete = complete, fail = fail, success = success)
+  
     __obj.asInstanceOf[Anon_CompleteFailRes]
   }
 }

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/api/Query", "Query")
 @js.native
 class Query protected () extends js.Object {
-  def this(repo: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, `queryParams_`: atFirebaseDatabaseLib.distSrcCoreViewQueryParamsMod.QueryParams, `orderByCalled_`: scala.Boolean) = this()
-  var `orderByCalled_`: js.Any = js.native
+  def this(repo: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, queryParams_ : atFirebaseDatabaseLib.distSrcCoreViewQueryParamsMod.QueryParams, orderByCalled_ : scala.Boolean) = this()
+  var orderByCalled_ : js.Any = js.native
   var path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path = js.native
-  var `queryParams_`: js.Any = js.native
+  var queryParams_ : js.Any = js.native
   val ref: atFirebaseDatabaseLib.distSrcApiReferenceMod.Reference = js.native
   var repo: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo = js.native
   /**
@@ -19,7 +19,7 @@ class Query protected () extends js.Object {
     * @param {!string} fnName
     * @private
     */
-  var `validateNoPreviousOrderByCall_`: js.Any = js.native
+  var validateNoPreviousOrderByCall_ : js.Any = js.native
   /**
     * @param {number|string|boolean|null} value
     * @param {?string=} name
@@ -240,18 +240,18 @@ object Query extends js.Object {
     * @return {{cancel: ?function(Error), context: ?Object}}
     * @private
     */
-  var `getCancelAndContextArgs_`: js.Any = js.native
+  var getCancelAndContextArgs_ : js.Any = js.native
   /**
     * Validates that limit* has been called with the correct combination of parameters
     * @param {!QueryParams} params
     * @private
     */
-  var `validateLimit_`: js.Any = js.native
+  var validateLimit_ : js.Any = js.native
   /**
     * Validates start/end values for queries.
     * @param {!QueryParams} params
     * @private
     */
-  var `validateQueryEndpoints_`: js.Any = js.native
+  var validateQueryEndpoints_ : js.Any = js.native
 }
 

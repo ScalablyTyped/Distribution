@@ -50,8 +50,7 @@ object Module {
     wrappedContextRecursive: js.UndefOr[scala.Boolean] = js.undefined,
     wrappedContextRegExp: stdLib.RegExp = null
   ): Module = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(rules = rules)
     if (!js.isUndefined(exprContextCritical)) __obj.updateDynamic("exprContextCritical")(exprContextCritical)
     if (!js.isUndefined(exprContextRecursive)) __obj.updateDynamic("exprContextRecursive")(exprContextRecursive)
     if (exprContextRegExp != null) __obj.updateDynamic("exprContextRegExp")(exprContextRegExp)

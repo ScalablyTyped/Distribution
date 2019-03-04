@@ -28,9 +28,8 @@ object Anon_FirstSecondIMapViewResourceMap {
       winrtDashUwpLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceMap
     ]
   ): Anon_FirstSecondIMapViewResourceMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("second")(second)
+    val __obj = js.Dynamic.literal(first = first, second = second)
+  
     __obj.asInstanceOf[Anon_FirstSecondIMapViewResourceMap]
   }
 }

@@ -20,11 +20,8 @@ object Principal {
     isInRole: js.Function1[java.lang.String, js.Promise[scala.Boolean]],
     isResourceOwner: js.Function1[js.Any, js.Promise[scala.Boolean]]
   ): Principal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
-    __obj.updateDynamic("isInRole")(isInRole)
-    __obj.updateDynamic("isResourceOwner")(isResourceOwner)
+    val __obj = js.Dynamic.literal(details = details, isAuthenticated = isAuthenticated, isInRole = isInRole, isResourceOwner = isResourceOwner)
+  
     __obj.asInstanceOf[Principal]
   }
 }

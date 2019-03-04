@@ -13,9 +13,8 @@ trait DateState extends js.Object {
 object DateState {
   @scala.inline
   def apply(range: momentDashRangeLib.momentDashRangeMod.DateRange, state: java.lang.String): DateState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(range = range, state = state)
+  
     __obj.asInstanceOf[DateState]
   }
 }

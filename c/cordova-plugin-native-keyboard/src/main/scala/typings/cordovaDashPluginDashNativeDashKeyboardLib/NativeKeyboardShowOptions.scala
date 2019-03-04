@@ -168,8 +168,7 @@ object NativeKeyboardShowOptions {
     textViewBorderColor: java.lang.String = null,
     `type`: java.lang.String = null
   ): NativeKeyboardShowOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onSubmit")(onSubmit)
+    val __obj = js.Dynamic.literal(onSubmit = onSubmit)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (appearance != null) __obj.updateDynamic("appearance")(appearance)
     if (autoscrollElement != null) __obj.updateDynamic("autoscrollElement")(autoscrollElement)

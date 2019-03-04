@@ -16,9 +16,8 @@ object Anon_Changed {
     changed: js.Array[reactDashNativeLib.reactDashNativeMod.ViewToken],
     viewableItems: js.Array[reactDashNativeLib.reactDashNativeMod.ViewToken]
   ): Anon_Changed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("viewableItems")(viewableItems)
+    val __obj = js.Dynamic.literal(changed = changed, viewableItems = viewableItems)
+  
     __obj.asInstanceOf[Anon_Changed]
   }
 }

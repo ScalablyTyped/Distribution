@@ -78,11 +78,7 @@ object Layout {
     moved: js.UndefOr[scala.Boolean] = js.undefined,
     static: js.UndefOr[scala.Boolean] = js.undefined
   ): Layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(h = h, w = w, x = x, y = y)
     if (i != null) __obj.updateDynamic("i")(i)
     if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable)
     if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable)

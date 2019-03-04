@@ -120,39 +120,8 @@ object ASPxClientNavBar {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): ASPxClientNavBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("CollapseAll")(CollapseAll)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("ExpandAll")(ExpandAll)
-    __obj.updateDynamic("ExpandedChanged")(ExpandedChanged)
-    __obj.updateDynamic("ExpandedChanging")(ExpandedChanging)
-    __obj.updateDynamic("GetActiveGroup")(GetActiveGroup)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetGroup")(GetGroup)
-    __obj.updateDynamic("GetGroupByName")(GetGroupByName)
-    __obj.updateDynamic("GetGroupCount")(GetGroupCount)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetItemByName")(GetItemByName)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetSelectedItem")(GetSelectedItem)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("HeaderClick")(HeaderClick)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("ItemClick")(ItemClick)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetActiveGroup")(SetActiveGroup)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetSelectedItem")(SetSelectedItem)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, BeginCallback = BeginCallback, CallbackError = CallbackError, CollapseAll = CollapseAll, EndCallback = EndCallback, ExpandAll = ExpandAll, ExpandedChanged = ExpandedChanged, ExpandedChanging = ExpandedChanging, GetActiveGroup = GetActiveGroup, GetClientVisible = GetClientVisible, GetGroup = GetGroup, GetGroupByName = GetGroupByName, GetGroupCount = GetGroupCount, GetHeight = GetHeight, GetItemByName = GetItemByName, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetSelectedItem = GetSelectedItem, GetVisible = GetVisible, GetWidth = GetWidth, HeaderClick = HeaderClick, InCallback = InCallback, Init = Init, ItemClick = ItemClick, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetActiveGroup = SetActiveGroup, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetSelectedItem = SetSelectedItem, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[ASPxClientNavBar]
   }
 }

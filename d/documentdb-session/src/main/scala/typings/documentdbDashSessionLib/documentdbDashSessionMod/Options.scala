@@ -61,9 +61,7 @@ object Options {
     discriminator: js.Object = null,
     ttl: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(host = host, key = key)
     if (collection != null) __obj.updateDynamic("collection")(collection)
     if (database != null) __obj.updateDynamic("database")(database)
     if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator)

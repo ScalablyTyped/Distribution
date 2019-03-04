@@ -24,8 +24,8 @@ object IField {
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     rule: java.lang.String = null
   ): IField = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     if (rule != null) __obj.updateDynamic("rule")(rule)
     __obj.asInstanceOf[IField]

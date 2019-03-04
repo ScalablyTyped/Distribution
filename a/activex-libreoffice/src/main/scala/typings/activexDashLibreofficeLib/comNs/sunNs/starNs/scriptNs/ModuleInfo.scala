@@ -16,9 +16,8 @@ object ModuleInfo {
     ModuleObject: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     ModuleType: scala.Double
   ): ModuleInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ModuleObject")(ModuleObject)
-    __obj.updateDynamic("ModuleType")(ModuleType)
+    val __obj = js.Dynamic.literal(ModuleObject = ModuleObject, ModuleType = ModuleType)
+  
     __obj.asInstanceOf[ModuleInfo]
   }
 }

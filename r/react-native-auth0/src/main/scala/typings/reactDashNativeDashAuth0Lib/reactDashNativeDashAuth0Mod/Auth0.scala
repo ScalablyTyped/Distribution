@@ -14,10 +14,8 @@ trait Auth0 extends js.Object {
 object Auth0 {
   @scala.inline
   def apply(auth: Auth, users: js.Function1[java.lang.String, Users], webAuth: WebAuth): Auth0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("users")(users)
-    __obj.updateDynamic("webAuth")(webAuth)
+    val __obj = js.Dynamic.literal(auth = auth, users = users, webAuth = webAuth)
+  
     __obj.asInstanceOf[Auth0]
   }
 }

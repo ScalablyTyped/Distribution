@@ -47,31 +47,8 @@ object Formulas {
     sheet: Sheet,
     undoRedoSnapshot: UndoRedoSnapshot
   ): Formulas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("dataProvider")(dataProvider)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("getCellValue")(getCellValue)
-    __obj.updateDynamic("getVariable")(getVariable)
-    __obj.updateDynamic("hasComputedCellValue")(hasComputedCellValue)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("recalculate")(recalculate)
-    __obj.updateDynamic("recalculateFull")(recalculateFull)
-    __obj.updateDynamic("recalculateOptimized")(recalculateOptimized)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("setVariable")(setVariable)
-    __obj.updateDynamic("sheet")(sheet)
-    __obj.updateDynamic("undoRedoSnapshot")(undoRedoSnapshot)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, dataProvider = dataProvider, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, getCellValue = getCellValue, getVariable = getVariable, hasComputedCellValue = hasComputedCellValue, init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, recalculate = recalculate, recalculateFull = recalculateFull, recalculateOptimized = recalculateOptimized, removeHook = removeHook, setVariable = setVariable, sheet = sheet, undoRedoSnapshot = undoRedoSnapshot)
+  
     __obj.asInstanceOf[Formulas]
   }
 }

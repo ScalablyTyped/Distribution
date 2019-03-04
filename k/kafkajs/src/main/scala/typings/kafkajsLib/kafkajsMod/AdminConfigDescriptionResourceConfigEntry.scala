@@ -22,12 +22,8 @@ object AdminConfigDescriptionResourceConfigEntry {
     isSensitive: scala.Boolean,
     readOnly: scala.Boolean
   ): AdminConfigDescriptionResourceConfigEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configName")(configName)
-    __obj.updateDynamic("configValue")(configValue)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isSensitive")(isSensitive)
-    __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(configName = configName, configValue = configValue, isDefault = isDefault, isSensitive = isSensitive, readOnly = readOnly)
+  
     __obj.asInstanceOf[AdminConfigDescriptionResourceConfigEntry]
   }
 }

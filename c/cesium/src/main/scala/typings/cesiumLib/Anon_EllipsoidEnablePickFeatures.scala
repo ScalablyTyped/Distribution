@@ -34,8 +34,7 @@ object Anon_EllipsoidEnablePickFeatures {
     tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null,
     usePreCachedTilesIfAvailable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EllipsoidEnablePickFeatures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures)
     if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])

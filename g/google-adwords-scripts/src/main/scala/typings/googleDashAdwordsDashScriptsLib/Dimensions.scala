@@ -13,9 +13,8 @@ trait Dimensions extends js.Object {
 object Dimensions {
   @scala.inline
   def apply(getHeight: js.Function0[scala.Double], getWidth: js.Function0[scala.Double]): Dimensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getWidth")(getWidth)
+    val __obj = js.Dynamic.literal(getHeight = getHeight, getWidth = getWidth)
+  
     __obj.asInstanceOf[Dimensions]
   }
 }

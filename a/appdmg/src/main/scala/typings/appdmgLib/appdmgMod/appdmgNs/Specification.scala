@@ -30,10 +30,7 @@ object Specification {
     `icon-size`: scala.Int | scala.Double = null,
     window: SpecificationWindow = null
   ): Specification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(contents = contents, format = format.asInstanceOf[js.Any], title = title)
     if (background != null) __obj.updateDynamic("background")(background)
     if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`)
     if (`code-sign` != null) __obj.updateDynamic("code-sign")(`code-sign`)

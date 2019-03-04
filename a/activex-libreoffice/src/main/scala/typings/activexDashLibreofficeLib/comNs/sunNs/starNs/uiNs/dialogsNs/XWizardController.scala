@@ -53,13 +53,8 @@ object XWizardController {
     onActivatePage: js.Function1[scala.Double, scala.Unit],
     onDeactivatePage: js.Function1[scala.Double, scala.Unit]
   ): XWizardController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canAdvance")(canAdvance)
-    __obj.updateDynamic("confirmFinish")(confirmFinish)
-    __obj.updateDynamic("createPage")(createPage)
-    __obj.updateDynamic("getPageTitle")(getPageTitle)
-    __obj.updateDynamic("onActivatePage")(onActivatePage)
-    __obj.updateDynamic("onDeactivatePage")(onDeactivatePage)
+    val __obj = js.Dynamic.literal(canAdvance = canAdvance, confirmFinish = confirmFinish, createPage = createPage, getPageTitle = getPageTitle, onActivatePage = onActivatePage, onDeactivatePage = onDeactivatePage)
+  
     __obj.asInstanceOf[XWizardController]
   }
 }

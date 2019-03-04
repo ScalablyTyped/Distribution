@@ -13,8 +13,7 @@ trait LocationActionPayload extends js.Object {
 object LocationActionPayload {
   @scala.inline
   def apply(method: java.lang.String, args: js.Array[_] = null): LocationActionPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (args != null) __obj.updateDynamic("args")(args)
     __obj.asInstanceOf[LocationActionPayload]
   }

@@ -101,14 +101,8 @@ object IContentEditingHelper {
     reBindChangedProperties: js.Function2[js.Any, js.Any, scala.Unit],
     redirectToCreatedContent: js.Function2[scala.Double, js.Any, scala.Unit]
   ): IContentEditingHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllProps")(getAllProps)
-    __obj.updateDynamic("getAllowedActions")(getAllowedActions)
-    __obj.updateDynamic("getButtonFromAction")(getButtonFromAction)
-    __obj.updateDynamic("handleSaveError")(handleSaveError)
-    __obj.updateDynamic("handleSuccessfulSave")(handleSuccessfulSave)
-    __obj.updateDynamic("reBindChangedProperties")(reBindChangedProperties)
-    __obj.updateDynamic("redirectToCreatedContent")(redirectToCreatedContent)
+    val __obj = js.Dynamic.literal(getAllProps = getAllProps, getAllowedActions = getAllowedActions, getButtonFromAction = getButtonFromAction, handleSaveError = handleSaveError, handleSuccessfulSave = handleSuccessfulSave, reBindChangedProperties = reBindChangedProperties, redirectToCreatedContent = redirectToCreatedContent)
+  
     __obj.asInstanceOf[IContentEditingHelper]
   }
 }

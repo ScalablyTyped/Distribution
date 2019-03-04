@@ -92,21 +92,8 @@ object UserProfile {
     upn: java.lang.String,
     ver: java.lang.String
   ): UserProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amr")(amr)
-    __obj.updateDynamic("aud")(aud)
-    __obj.updateDynamic("exp")(exp)
-    __obj.updateDynamic("family_name")(family_name)
-    __obj.updateDynamic("given_name")(given_name)
-    __obj.updateDynamic("iat")(iat)
-    __obj.updateDynamic("iss")(iss)
-    __obj.updateDynamic("nbf")(nbf)
-    __obj.updateDynamic("oid")(oid)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("tid")(tid)
-    __obj.updateDynamic("unique_name")(unique_name)
-    __obj.updateDynamic("upn")(upn)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(amr = amr, aud = aud, exp = exp, family_name = family_name, given_name = given_name, iat = iat, iss = iss, nbf = nbf, oid = oid, sub = sub, tid = tid, unique_name = unique_name, upn = upn, ver = ver)
+  
     __obj.asInstanceOf[UserProfile]
   }
 }

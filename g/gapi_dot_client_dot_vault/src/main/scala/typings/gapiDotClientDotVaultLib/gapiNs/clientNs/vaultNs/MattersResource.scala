@@ -83,18 +83,8 @@ object MattersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Matter]
     ]
   ): MattersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPermissions")(addPermissions)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("holds")(holds)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("removePermissions")(removePermissions)
-    __obj.updateDynamic("reopen")(reopen)
-    __obj.updateDynamic("undelete")(undelete)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(addPermissions = addPermissions, close = close, create = create, delete = delete, get = get, holds = holds, list = list, removePermissions = removePermissions, reopen = reopen, undelete = undelete, update = update)
+  
     __obj.asInstanceOf[MattersResource]
   }
 }

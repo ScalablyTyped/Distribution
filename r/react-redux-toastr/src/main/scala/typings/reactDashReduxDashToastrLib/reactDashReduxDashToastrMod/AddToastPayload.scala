@@ -24,7 +24,8 @@ object AddToastPayload {
     position: positionType = null,
     title: java.lang.String = null
   ): AddToastPayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (message != null) __obj.updateDynamic("message")(message)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

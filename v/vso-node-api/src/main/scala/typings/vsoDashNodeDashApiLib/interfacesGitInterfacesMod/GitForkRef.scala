@@ -25,16 +25,8 @@ object GitForkRef {
     statuses: js.Array[GitStatus],
     url: java.lang.String
   ): GitForkRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("isLocked")(isLocked)
-    __obj.updateDynamic("isLockedBy")(isLockedBy)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("peeledObjectId")(peeledObjectId)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("statuses")(statuses)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, isLocked = isLocked, isLockedBy = isLockedBy, name = name, objectId = objectId, peeledObjectId = peeledObjectId, repository = repository, statuses = statuses, url = url)
+  
     __obj.asInstanceOf[GitForkRef]
   }
 }

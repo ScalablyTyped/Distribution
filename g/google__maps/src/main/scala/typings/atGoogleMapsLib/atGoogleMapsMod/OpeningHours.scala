@@ -15,9 +15,8 @@ trait OpeningHours extends js.Object {
 object OpeningHours {
   @scala.inline
   def apply(open_now: scala.Boolean, periods: js.Array[OpeningPeriod]): OpeningHours = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open_now")(open_now)
-    __obj.updateDynamic("periods")(periods)
+    val __obj = js.Dynamic.literal(open_now = open_now, periods = periods)
+  
     __obj.asInstanceOf[OpeningHours]
   }
 }

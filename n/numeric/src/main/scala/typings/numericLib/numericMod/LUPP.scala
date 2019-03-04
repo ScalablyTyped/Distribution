@@ -20,11 +20,8 @@ object LUPP {
     Pinv: numericLib.Vector,
     U: numericLib.SparseMatrix
   ): LUPP = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("L")(L)
-    __obj.updateDynamic("P")(P)
-    __obj.updateDynamic("Pinv")(Pinv)
-    __obj.updateDynamic("U")(U)
+    val __obj = js.Dynamic.literal(L = L, P = P, Pinv = Pinv, U = U)
+  
     __obj.asInstanceOf[LUPP]
   }
 }

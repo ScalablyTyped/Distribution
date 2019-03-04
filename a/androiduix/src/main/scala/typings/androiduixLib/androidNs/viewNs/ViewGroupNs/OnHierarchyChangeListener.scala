@@ -16,9 +16,8 @@ object OnHierarchyChangeListener {
     onChildViewAdded: js.Function2[androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View, js.Any],
     onChildViewRemoved: js.Function2[androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View, js.Any]
   ): OnHierarchyChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChildViewAdded")(onChildViewAdded)
-    __obj.updateDynamic("onChildViewRemoved")(onChildViewRemoved)
+    val __obj = js.Dynamic.literal(onChildViewAdded = onChildViewAdded, onChildViewRemoved = onChildViewRemoved)
+  
     __obj.asInstanceOf[OnHierarchyChangeListener]
   }
 }

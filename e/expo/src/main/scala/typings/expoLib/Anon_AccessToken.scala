@@ -25,9 +25,8 @@ object Anon_AccessToken {
     refreshToken: java.lang.String = null,
     serverAuthCode: java.lang.String = null
   ): Anon_AccessToken = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, user = user)
+    __obj.updateDynamic("type")(`type`)
     if (idToken != null) __obj.updateDynamic("idToken")(idToken)
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
     if (serverAuthCode != null) __obj.updateDynamic("serverAuthCode")(serverAuthCode)

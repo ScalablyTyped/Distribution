@@ -28,15 +28,8 @@ object Triggers {
     update: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
     user: APIUser
   ): Triggers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("fetchDefinitions")(fetchDefinitions)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, create = create, delete = delete, fetchDefinitions = fetchDefinitions, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+  
     __obj.asInstanceOf[Triggers]
   }
 }

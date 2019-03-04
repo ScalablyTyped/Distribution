@@ -12,8 +12,8 @@ trait GetAgentRequest extends js.Object {
 object GetAgentRequest {
   @scala.inline
   def apply(parent: java.lang.String): GetAgentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
+  
     __obj.asInstanceOf[GetAgentRequest]
   }
 }

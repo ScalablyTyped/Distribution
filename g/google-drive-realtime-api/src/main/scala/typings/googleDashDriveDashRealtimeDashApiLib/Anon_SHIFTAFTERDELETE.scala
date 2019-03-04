@@ -18,10 +18,8 @@ object Anon_SHIFTAFTERDELETE {
     SHIFT_BEFORE_DELETE: java.lang.String,
     SHIFT_TO_INVALID: java.lang.String
   ): Anon_SHIFTAFTERDELETE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SHIFT_AFTER_DELETE")(SHIFT_AFTER_DELETE)
-    __obj.updateDynamic("SHIFT_BEFORE_DELETE")(SHIFT_BEFORE_DELETE)
-    __obj.updateDynamic("SHIFT_TO_INVALID")(SHIFT_TO_INVALID)
+    val __obj = js.Dynamic.literal(SHIFT_AFTER_DELETE = SHIFT_AFTER_DELETE, SHIFT_BEFORE_DELETE = SHIFT_BEFORE_DELETE, SHIFT_TO_INVALID = SHIFT_TO_INVALID)
+  
     __obj.asInstanceOf[Anon_SHIFTAFTERDELETE]
   }
 }

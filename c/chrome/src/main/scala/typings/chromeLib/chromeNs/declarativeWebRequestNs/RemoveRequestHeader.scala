@@ -12,8 +12,8 @@ trait RemoveRequestHeader extends js.Object {
 object RemoveRequestHeader {
   @scala.inline
   def apply(name: java.lang.String): RemoveRequestHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[RemoveRequestHeader]
   }
 }

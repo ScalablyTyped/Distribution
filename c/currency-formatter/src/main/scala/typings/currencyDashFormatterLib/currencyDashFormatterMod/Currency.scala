@@ -26,14 +26,8 @@ object Currency {
     symbolOnLeft: scala.Boolean,
     thousandsSeparator: java.lang.String
   ): Currency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("decimalDigits")(decimalDigits)
-    __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    __obj.updateDynamic("spaceBetweenAmountAndSymbol")(spaceBetweenAmountAndSymbol)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("symbolOnLeft")(symbolOnLeft)
-    __obj.updateDynamic("thousandsSeparator")(thousandsSeparator)
+    val __obj = js.Dynamic.literal(code = code, decimalDigits = decimalDigits, decimalSeparator = decimalSeparator, spaceBetweenAmountAndSymbol = spaceBetweenAmountAndSymbol, symbol = symbol, symbolOnLeft = symbolOnLeft, thousandsSeparator = thousandsSeparator)
+  
     __obj.asInstanceOf[Currency]
   }
 }

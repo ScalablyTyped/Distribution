@@ -12,8 +12,8 @@ trait GoForwardAction extends RouterActions {
 object GoForwardAction {
   @scala.inline
   def apply(`type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_GO_FORWARD): GoForwardAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GoForwardAction]
   }
 }

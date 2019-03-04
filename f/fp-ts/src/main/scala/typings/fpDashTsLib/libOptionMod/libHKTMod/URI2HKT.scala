@@ -12,8 +12,8 @@ trait URI2HKT[A] extends js.Object {
 object URI2HKT {
   @scala.inline
   def apply[A](Option: fpDashTsLib.libOptionMod.Option[A]): URI2HKT[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Option")(Option)
+    val __obj = js.Dynamic.literal(Option = Option)
+  
     __obj.asInstanceOf[URI2HKT[A]]
   }
 }

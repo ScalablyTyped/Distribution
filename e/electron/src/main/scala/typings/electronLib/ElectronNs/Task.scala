@@ -48,13 +48,8 @@ object Task {
     program: java.lang.String,
     title: java.lang.String
   ): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("iconIndex")(iconIndex)
-    __obj.updateDynamic("iconPath")(iconPath)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(arguments = arguments, description = description, iconIndex = iconIndex, iconPath = iconPath, program = program, title = title)
+  
     __obj.asInstanceOf[Task]
   }
 }

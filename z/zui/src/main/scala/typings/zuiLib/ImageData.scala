@@ -32,16 +32,8 @@ object ImageData {
     scaled: scala.Boolean,
     top: scala.Double
   ): ImageData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("originHeight")(originHeight)
-    __obj.updateDynamic("originWidth")(originWidth)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("scaleHeight")(scaleHeight)
-    __obj.updateDynamic("scaleWidth")(scaleWidth)
-    __obj.updateDynamic("scaled")(scaled)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, left = left, originHeight = originHeight, originWidth = originWidth, right = right, scaleHeight = scaleHeight, scaleWidth = scaleWidth, scaled = scaled, top = top)
+  
     __obj.asInstanceOf[ImageData]
   }
 }

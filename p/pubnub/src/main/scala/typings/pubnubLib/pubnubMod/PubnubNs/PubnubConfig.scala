@@ -42,8 +42,7 @@ object PubnubConfig {
     suppressLeaveEvents: js.UndefOr[scala.Boolean] = js.undefined,
     uuid: java.lang.String = null
   ): PubnubConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscribeKey")(subscribeKey)
+    val __obj = js.Dynamic.literal(subscribeKey = subscribeKey)
     if (authKey != null) __obj.updateDynamic("authKey")(authKey)
     if (cipherKey != null) __obj.updateDynamic("cipherKey")(cipherKey)
     if (heartbeatInterval != null) __obj.updateDynamic("heartbeatInterval")(heartbeatInterval.asInstanceOf[js.Any])

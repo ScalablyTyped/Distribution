@@ -18,8 +18,7 @@ object ExternalDocumentationObject {
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     description: java.lang.String = null
   ): ExternalDocumentationObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[ExternalDocumentationObject]

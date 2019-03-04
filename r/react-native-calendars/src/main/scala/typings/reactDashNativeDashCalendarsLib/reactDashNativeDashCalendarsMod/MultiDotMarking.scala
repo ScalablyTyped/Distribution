@@ -20,8 +20,7 @@ object MultiDotMarking {
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     selectedColor: java.lang.String = null
   ): MultiDotMarking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dots")(dots)
+    val __obj = js.Dynamic.literal(dots = dots)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor)

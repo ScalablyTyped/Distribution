@@ -18,10 +18,8 @@ object Anon_NOUPDATE {
     THROTTLED: chromeDashAppsLib.chromeDashAppsLibStrings.throttled,
     UPDATE_AVAILABLE: chromeDashAppsLib.chromeDashAppsLibStrings.update_available
   ): Anon_NOUPDATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NO_UPDATE")(NO_UPDATE)
-    __obj.updateDynamic("THROTTLED")(THROTTLED)
-    __obj.updateDynamic("UPDATE_AVAILABLE")(UPDATE_AVAILABLE)
+    val __obj = js.Dynamic.literal(NO_UPDATE = NO_UPDATE, THROTTLED = THROTTLED, UPDATE_AVAILABLE = UPDATE_AVAILABLE)
+  
     __obj.asInstanceOf[Anon_NOUPDATE]
   }
 }

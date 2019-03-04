@@ -38,20 +38,8 @@ object Anon_FieldModelFieldType {
     WorkItemTypeClass: Anon_EnumValuesAnonCustomDerived,
     WorkItemTypeModel: js.Any
   ): Anon_FieldModelFieldType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FieldModel")(FieldModel)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("FormLayout")(FormLayout)
-    __obj.updateDynamic("GetBehaviorsExpand")(GetBehaviorsExpand)
-    __obj.updateDynamic("GetProcessExpandLevel")(GetProcessExpandLevel)
-    __obj.updateDynamic("GetWorkItemTypeExpand")(GetWorkItemTypeExpand)
-    __obj.updateDynamic("Page")(Page)
-    __obj.updateDynamic("PageType")(PageType)
-    __obj.updateDynamic("ProcessClass")(ProcessClass)
-    __obj.updateDynamic("ProcessModel")(ProcessModel)
-    __obj.updateDynamic("ProcessProperties")(ProcessProperties)
-    __obj.updateDynamic("WorkItemTypeClass")(WorkItemTypeClass)
-    __obj.updateDynamic("WorkItemTypeModel")(WorkItemTypeModel)
+    val __obj = js.Dynamic.literal(FieldModel = FieldModel, FieldType = FieldType, FormLayout = FormLayout, GetBehaviorsExpand = GetBehaviorsExpand, GetProcessExpandLevel = GetProcessExpandLevel, GetWorkItemTypeExpand = GetWorkItemTypeExpand, Page = Page, PageType = PageType, ProcessClass = ProcessClass, ProcessModel = ProcessModel, ProcessProperties = ProcessProperties, WorkItemTypeClass = WorkItemTypeClass, WorkItemTypeModel = WorkItemTypeModel)
+  
     __obj.asInstanceOf[Anon_FieldModelFieldType]
   }
 }

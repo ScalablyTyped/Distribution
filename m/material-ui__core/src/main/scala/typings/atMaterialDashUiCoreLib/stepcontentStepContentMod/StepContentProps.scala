@@ -43,8 +43,7 @@ object StepContentProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): StepContentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

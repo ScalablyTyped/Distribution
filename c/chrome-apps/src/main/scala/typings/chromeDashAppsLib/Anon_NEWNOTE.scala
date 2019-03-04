@@ -12,8 +12,8 @@ trait Anon_NEWNOTE extends js.Object {
 object Anon_NEWNOTE {
   @scala.inline
   def apply(NEW_NOTE: chromeDashAppsLib.chromeDashAppsLibStrings.new_note): Anon_NEWNOTE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NEW_NOTE")(NEW_NOTE)
+    val __obj = js.Dynamic.literal(NEW_NOTE = NEW_NOTE)
+  
     __obj.asInstanceOf[Anon_NEWNOTE]
   }
 }

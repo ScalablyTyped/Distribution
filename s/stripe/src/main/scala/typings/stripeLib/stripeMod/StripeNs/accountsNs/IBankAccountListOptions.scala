@@ -20,7 +20,8 @@ object IBankAccountListOptions {
     limit: scala.Int | scala.Double = null,
     starting_after: java.lang.String = null
   ): IBankAccountListOptions = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

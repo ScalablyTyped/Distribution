@@ -55,13 +55,8 @@ object StatusDetails {
     retryAfterSeconds: scala.Double,
     uid: java.lang.String
   ): StatusDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("causes")(causes)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("retryAfterSeconds")(retryAfterSeconds)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(causes = causes, group = group, kind = kind, name = name, retryAfterSeconds = retryAfterSeconds, uid = uid)
+  
     __obj.asInstanceOf[StatusDetails]
   }
 }

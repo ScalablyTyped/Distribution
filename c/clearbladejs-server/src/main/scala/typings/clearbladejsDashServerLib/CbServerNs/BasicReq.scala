@@ -26,14 +26,8 @@ object BasicReq {
     userToken: java.lang.String,
     userid: java.lang.String
   ): BasicReq = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLogging")(isLogging)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("userEmail")(userEmail)
-    __obj.updateDynamic("userToken")(userToken)
-    __obj.updateDynamic("userid")(userid)
+    val __obj = js.Dynamic.literal(isLogging = isLogging, params = params, systemKey = systemKey, systemSecret = systemSecret, userEmail = userEmail, userToken = userToken, userid = userid)
+  
     __obj.asInstanceOf[BasicReq]
   }
 }

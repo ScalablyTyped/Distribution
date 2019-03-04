@@ -12,8 +12,8 @@ trait RequestData extends js.Object {
 object RequestData {
   @scala.inline
   def apply(req: koaLib.koaMod.ApplicationNs.Request): RequestData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("req")(req)
+    val __obj = js.Dynamic.literal(req = req)
+  
     __obj.asInstanceOf[RequestData]
   }
 }

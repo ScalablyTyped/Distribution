@@ -13,9 +13,8 @@ trait Anon_Mode extends js.Object {
 object Anon_Mode {
   @scala.inline
   def apply(mode: java.lang.String, name: java.lang.String): Anon_Mode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mode = mode, name = name)
+  
     __obj.asInstanceOf[Anon_Mode]
   }
 }

@@ -13,8 +13,8 @@ trait PropertiesQueryResult extends js.Object {
 object PropertiesQueryResult {
   @scala.inline
   def apply(completions: js.Array[java.lang.String]): PropertiesQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completions")(completions)
+    val __obj = js.Dynamic.literal(completions = completions)
+  
     __obj.asInstanceOf[PropertiesQueryResult]
   }
 }

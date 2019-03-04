@@ -24,13 +24,8 @@ object Anon_ALBUM {
     URL: java.lang.String,
     VIDEO: java.lang.String
   ): Anon_ALBUM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALBUM")(ALBUM)
-    __obj.updateDynamic("DOCUMENT")(DOCUMENT)
-    __obj.updateDynamic("LOCATION")(LOCATION)
-    __obj.updateDynamic("PHOTO")(PHOTO)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("VIDEO")(VIDEO)
+    val __obj = js.Dynamic.literal(ALBUM = ALBUM, DOCUMENT = DOCUMENT, LOCATION = LOCATION, PHOTO = PHOTO, URL = URL, VIDEO = VIDEO)
+  
     __obj.asInstanceOf[Anon_ALBUM]
   }
 }

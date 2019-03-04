@@ -14,10 +14,8 @@ trait BaseOperation extends js.Object {
 object BaseOperation {
   @scala.inline
   def apply(done: scala.Boolean, metadata: js.Any, name: java.lang.String): BaseOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(done = done, metadata = metadata, name = name)
+  
     __obj.asInstanceOf[BaseOperation]
   }
 }

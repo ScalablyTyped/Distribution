@@ -22,9 +22,8 @@ object IPanelStackState {
       atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[js.Object]
     ]
   ): IPanelStackState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], stack = stack)
+  
     __obj.asInstanceOf[IPanelStackState]
   }
 }

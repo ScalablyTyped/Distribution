@@ -28,15 +28,8 @@ object Anon_AnimationDurationCellDefaults {
     rowLabelStyle: js.Object,
     rowsTitleStyle: js.Object
   ): Anon_AnimationDurationCellDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationDuration")(animationDuration)
-    __obj.updateDynamic("cellDefaults")(cellDefaults)
-    __obj.updateDynamic("columnLabelStyle")(columnLabelStyle)
-    __obj.updateDynamic("columnsTitleStyle")(columnsTitleStyle)
-    __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay)
-    __obj.updateDynamic("nodeDefaults")(nodeDefaults)
-    __obj.updateDynamic("rowLabelStyle")(rowLabelStyle)
-    __obj.updateDynamic("rowsTitleStyle")(rowsTitleStyle)
+    val __obj = js.Dynamic.literal(animationDuration = animationDuration, cellDefaults = cellDefaults, columnLabelStyle = columnLabelStyle, columnsTitleStyle = columnsTitleStyle, hoverBehaviorDelay = hoverBehaviorDelay, nodeDefaults = nodeDefaults, rowLabelStyle = rowLabelStyle, rowsTitleStyle = rowsTitleStyle)
+  
     __obj.asInstanceOf[Anon_AnimationDurationCellDefaults]
   }
 }

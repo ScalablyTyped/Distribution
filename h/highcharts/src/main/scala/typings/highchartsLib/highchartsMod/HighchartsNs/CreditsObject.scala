@@ -19,8 +19,7 @@ object CreditsObject {
     style: js.Object = null,
     text: java.lang.String = null
   ): CreditsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(update = update)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (href != null) __obj.updateDynamic("href")(href)
     if (position != null) __obj.updateDynamic("position")(position)

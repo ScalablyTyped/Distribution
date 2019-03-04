@@ -45,33 +45,8 @@ object ISeparatedSyntaxList {
     trailingTriviaWidth: js.Function0[scala.Double],
     width: js.Function0[scala.Double]
   ): ISeparatedSyntaxList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childAt")(childAt)
-    __obj.updateDynamic("childCount")(childCount)
-    __obj.updateDynamic("collectTextElements")(collectTextElements)
-    __obj.updateDynamic("firstToken")(firstToken)
-    __obj.updateDynamic("fullText")(fullText)
-    __obj.updateDynamic("fullWidth")(fullWidth)
-    __obj.updateDynamic("insertChildrenInto")(insertChildrenInto)
-    __obj.updateDynamic("isIncrementallyUnusable")(isIncrementallyUnusable)
-    __obj.updateDynamic("isList")(isList)
-    __obj.updateDynamic("isNode")(isNode)
-    __obj.updateDynamic("isSeparatedList")(isSeparatedList)
-    __obj.updateDynamic("isToken")(isToken)
-    __obj.updateDynamic("isTypeScriptSpecific")(isTypeScriptSpecific)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("lastToken")(lastToken)
-    __obj.updateDynamic("leadingTrivia")(leadingTrivia)
-    __obj.updateDynamic("leadingTriviaWidth")(leadingTriviaWidth)
-    __obj.updateDynamic("nonSeparatorAt")(nonSeparatorAt)
-    __obj.updateDynamic("nonSeparatorCount")(nonSeparatorCount)
-    __obj.updateDynamic("separatorAt")(separatorAt)
-    __obj.updateDynamic("separatorCount")(separatorCount)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("toNonSeparatorArray")(toNonSeparatorArray)
-    __obj.updateDynamic("trailingTrivia")(trailingTrivia)
-    __obj.updateDynamic("trailingTriviaWidth")(trailingTriviaWidth)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(childAt = childAt, childCount = childCount, collectTextElements = collectTextElements, firstToken = firstToken, fullText = fullText, fullWidth = fullWidth, insertChildrenInto = insertChildrenInto, isIncrementallyUnusable = isIncrementallyUnusable, isList = isList, isNode = isNode, isSeparatedList = isSeparatedList, isToken = isToken, isTypeScriptSpecific = isTypeScriptSpecific, kind = kind, lastToken = lastToken, leadingTrivia = leadingTrivia, leadingTriviaWidth = leadingTriviaWidth, nonSeparatorAt = nonSeparatorAt, nonSeparatorCount = nonSeparatorCount, separatorAt = separatorAt, separatorCount = separatorCount, toArray = toArray, toNonSeparatorArray = toNonSeparatorArray, trailingTrivia = trailingTrivia, trailingTriviaWidth = trailingTriviaWidth, width = width)
+  
     __obj.asInstanceOf[ISeparatedSyntaxList]
   }
 }

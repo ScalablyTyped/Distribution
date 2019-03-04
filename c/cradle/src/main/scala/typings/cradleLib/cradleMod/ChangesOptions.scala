@@ -12,8 +12,8 @@ trait ChangesOptions extends js.Object {
 object ChangesOptions {
   @scala.inline
   def apply(since: scala.Double): ChangesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("since")(since)
+    val __obj = js.Dynamic.literal(since = since)
+  
     __obj.asInstanceOf[ChangesOptions]
   }
 }

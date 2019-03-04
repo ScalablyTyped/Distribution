@@ -16,8 +16,8 @@ object Anon_Node {
     node: glDashReactLib.glDashReactMod.Node | glDashReactLib.glDashReactMod.Bus,
     `type`: java.lang.String
   ): Anon_Node = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Node]
   }
 }

@@ -16,9 +16,9 @@ trait Anon_AddName
 object Anon_AddName {
   @scala.inline
   def apply(name: java.lang.String, newValue: js.Any, `object`: js.Any, `type`: mobxLib.mobxLibStrings.add): Anon_AddName = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(name = name, newValue = newValue)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AddName]
   }
 }

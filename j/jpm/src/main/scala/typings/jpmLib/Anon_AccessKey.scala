@@ -30,8 +30,7 @@ object Anon_AccessKey {
     image: java.lang.String = null,
     onMessage: js.Function1[/* message */ js.UndefOr[js.Any], _] = null
   ): Anon_AccessKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript)
     if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile)

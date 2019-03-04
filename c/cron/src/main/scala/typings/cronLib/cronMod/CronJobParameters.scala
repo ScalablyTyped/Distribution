@@ -57,9 +57,7 @@ object CronJobParameters {
     unrefTimeout: js.UndefOr[scala.Boolean] = js.undefined,
     utcOffset: java.lang.String | scala.Double = null
   ): CronJobParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cronTime")(cronTime.asInstanceOf[js.Any])
-    __obj.updateDynamic("onTick")(onTick)
+    val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = onTick)
     if (context != null) __obj.updateDynamic("context")(context)
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
     if (!js.isUndefined(runOnInit)) __obj.updateDynamic("runOnInit")(runOnInit)

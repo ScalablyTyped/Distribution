@@ -12,8 +12,8 @@ trait MaxAgeEntry extends Entry {
 object MaxAgeEntry {
   @scala.inline
   def apply(maxAge: scala.Double): MaxAgeEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxAge")(maxAge)
+    val __obj = js.Dynamic.literal(maxAge = maxAge)
+  
     __obj.asInstanceOf[MaxAgeEntry]
   }
 }

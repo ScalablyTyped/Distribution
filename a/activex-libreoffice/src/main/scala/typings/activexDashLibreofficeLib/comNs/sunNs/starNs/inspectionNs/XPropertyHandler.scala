@@ -349,32 +349,8 @@ object XPropertyHandler {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     suspend: js.Function1[scala.Boolean, scala.Boolean]
   ): XPropertyHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActuatingProperties")(ActuatingProperties)
-    __obj.updateDynamic("SupersededProperties")(SupersededProperties)
-    __obj.updateDynamic("SupportedProperties")(SupportedProperties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("actuatingPropertyChanged")(actuatingPropertyChanged)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("convertToControlValue")(convertToControlValue)
-    __obj.updateDynamic("convertToPropertyValue")(convertToPropertyValue)
-    __obj.updateDynamic("describePropertyLine")(describePropertyLine)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getActuatingProperties")(getActuatingProperties)
-    __obj.updateDynamic("getPropertyState")(getPropertyState)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSupersededProperties")(getSupersededProperties)
-    __obj.updateDynamic("getSupportedProperties")(getSupportedProperties)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("isComposable")(isComposable)
-    __obj.updateDynamic("onInteractivePropertySelection")(onInteractivePropertySelection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(ActuatingProperties = ActuatingProperties, SupersededProperties = SupersededProperties, SupportedProperties = SupportedProperties, acquire = acquire, actuatingPropertyChanged = actuatingPropertyChanged, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, convertToControlValue = convertToControlValue, convertToPropertyValue = convertToPropertyValue, describePropertyLine = describePropertyLine, dispose = dispose, getActuatingProperties = getActuatingProperties, getPropertyState = getPropertyState, getPropertyValue = getPropertyValue, getSupersededProperties = getSupersededProperties, getSupportedProperties = getSupportedProperties, inspect = inspect, isComposable = isComposable, onInteractivePropertySelection = onInteractivePropertySelection, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, setPropertyValue = setPropertyValue, suspend = suspend)
+  
     __obj.asInstanceOf[XPropertyHandler]
   }
 }

@@ -21,11 +21,8 @@ object DescriptionFilePlugin {
     source: java.lang.String,
     target: java.lang.String
   ): DescriptionFilePlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("filenames")(filenames)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, filenames = filenames, source = source, target = target)
+  
     __obj.asInstanceOf[DescriptionFilePlugin]
   }
 }

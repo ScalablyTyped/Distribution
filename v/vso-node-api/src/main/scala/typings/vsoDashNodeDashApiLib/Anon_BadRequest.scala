@@ -22,12 +22,8 @@ object Anon_BadRequest {
     succeeded: scala.Double,
     unsupportedConflictType: scala.Double
   ): Anon_BadRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badRequest")(badRequest)
-    __obj.updateDynamic("invalidResolution")(invalidResolution)
-    __obj.updateDynamic("notFound")(notFound)
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("unsupportedConflictType")(unsupportedConflictType)
+    val __obj = js.Dynamic.literal(badRequest = badRequest, invalidResolution = invalidResolution, notFound = notFound, succeeded = succeeded, unsupportedConflictType = unsupportedConflictType)
+  
     __obj.asInstanceOf[Anon_BadRequest]
   }
 }

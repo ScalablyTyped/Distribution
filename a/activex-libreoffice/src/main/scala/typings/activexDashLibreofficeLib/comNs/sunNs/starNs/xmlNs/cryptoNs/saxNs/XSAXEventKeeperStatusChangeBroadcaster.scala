@@ -37,12 +37,8 @@ object XSAXEventKeeperStatusChangeBroadcaster {
     release: js.Function0[scala.Unit],
     removeSAXEventKeeperStatusChangeListener: js.Function1[XSAXEventKeeperStatusChangeListener, scala.Unit]
   ): XSAXEventKeeperStatusChangeBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSAXEventKeeperStatusChangeListener")(addSAXEventKeeperStatusChangeListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSAXEventKeeperStatusChangeListener")(removeSAXEventKeeperStatusChangeListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addSAXEventKeeperStatusChangeListener = addSAXEventKeeperStatusChangeListener, queryInterface = queryInterface, release = release, removeSAXEventKeeperStatusChangeListener = removeSAXEventKeeperStatusChangeListener)
+  
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeBroadcaster]
   }
 }

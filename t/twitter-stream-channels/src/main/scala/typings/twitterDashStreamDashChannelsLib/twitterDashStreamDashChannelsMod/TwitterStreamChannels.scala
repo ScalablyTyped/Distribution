@@ -50,9 +50,8 @@ object TwitterStreamChannels {
       twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannels
     ]
   ): TwitterStreamChannels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getApiClient")(getApiClient)
-    __obj.updateDynamic("streamChannels")(streamChannels)
+    val __obj = js.Dynamic.literal(getApiClient = getApiClient, streamChannels = streamChannels)
+  
     __obj.asInstanceOf[TwitterStreamChannels]
   }
 }

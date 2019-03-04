@@ -107,8 +107,7 @@ object NightwatchDesiredCapabilities {
     version: java.lang.String = null,
     webStorageEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): NightwatchDesiredCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handlesAlerts")(handlesAlerts)
+    val __obj = js.Dynamic.literal(handlesAlerts = handlesAlerts)
     if (!js.isUndefined(acceptSslCerts)) __obj.updateDynamic("acceptSslCerts")(acceptSslCerts)
     if (!js.isUndefined(applicationCacheEnabled)) __obj.updateDynamic("applicationCacheEnabled")(applicationCacheEnabled)
     if (!js.isUndefined(browserConnectionEnabled)) __obj.updateDynamic("browserConnectionEnabled")(browserConnectionEnabled)

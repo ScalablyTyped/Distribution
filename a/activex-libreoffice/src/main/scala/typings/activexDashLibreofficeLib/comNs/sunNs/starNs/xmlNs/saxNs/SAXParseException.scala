@@ -31,14 +31,8 @@ object SAXParseException {
     SystemId: java.lang.String,
     WrappedException: js.Any
   ): SAXParseException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnNumber")(ColumnNumber)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("LineNumber")(LineNumber)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("PublicId")(PublicId)
-    __obj.updateDynamic("SystemId")(SystemId)
-    __obj.updateDynamic("WrappedException")(WrappedException)
+    val __obj = js.Dynamic.literal(ColumnNumber = ColumnNumber, Context = Context, LineNumber = LineNumber, Message = Message, PublicId = PublicId, SystemId = SystemId, WrappedException = WrappedException)
+  
     __obj.asInstanceOf[SAXParseException]
   }
 }

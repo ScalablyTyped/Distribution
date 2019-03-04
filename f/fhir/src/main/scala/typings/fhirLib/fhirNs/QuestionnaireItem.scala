@@ -236,8 +236,8 @@ object QuestionnaireItem {
     required: js.UndefOr[scala.Boolean] = js.undefined,
     text: java.lang.String = null
   ): QuestionnaireItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("linkId")(linkId)
+    val __obj = js.Dynamic.literal(linkId = linkId)
+    __obj.updateDynamic("type")(`type`)
     if (_definition != null) __obj.updateDynamic("_definition")(_definition)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

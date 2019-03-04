@@ -26,10 +26,8 @@ object ITreeResource {
     loadMenu: js.Function1[js.Any, scala.Unit],
     loadNodes: js.Function1[js.Any, scala.Unit]
   ): ITreeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadApplication")(loadApplication)
-    __obj.updateDynamic("loadMenu")(loadMenu)
-    __obj.updateDynamic("loadNodes")(loadNodes)
+    val __obj = js.Dynamic.literal(loadApplication = loadApplication, loadMenu = loadMenu, loadNodes = loadNodes)
+  
     __obj.asInstanceOf[ITreeResource]
   }
 }

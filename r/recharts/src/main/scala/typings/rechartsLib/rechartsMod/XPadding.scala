@@ -13,9 +13,8 @@ trait XPadding extends js.Object {
 object XPadding {
   @scala.inline
   def apply(left: scala.Double, right: scala.Double): XPadding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, right = right)
+  
     __obj.asInstanceOf[XPadding]
   }
 }

@@ -35,9 +35,8 @@ object OpaqueType {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration = null
   ): OpaqueType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("impltype")(impltype)
+    val __obj = js.Dynamic.literal(id = id, impltype = impltype)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

@@ -20,8 +20,7 @@ object IncomingTransferAcceptResult {
     ext_action_uri: java.lang.String = null,
     protection_code_attempts_available: scala.Int | scala.Double = null
   ): IncomingTransferAcceptResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (error != null) __obj.updateDynamic("error")(error)
     if (ext_action_uri != null) __obj.updateDynamic("ext_action_uri")(ext_action_uri)
     if (protection_code_attempts_available != null) __obj.updateDynamic("protection_code_attempts_available")(protection_code_attempts_available.asInstanceOf[js.Any])

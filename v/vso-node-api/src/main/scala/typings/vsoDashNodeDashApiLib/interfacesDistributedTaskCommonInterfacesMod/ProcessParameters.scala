@@ -18,10 +18,8 @@ object ProcessParameters {
     inputs: js.Array[TaskInputDefinitionBase],
     sourceDefinitions: js.Array[TaskSourceDefinitionBase]
   ): ProcessParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSourceBindings")(dataSourceBindings)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("sourceDefinitions")(sourceDefinitions)
+    val __obj = js.Dynamic.literal(dataSourceBindings = dataSourceBindings, inputs = inputs, sourceDefinitions = sourceDefinitions)
+  
     __obj.asInstanceOf[ProcessParameters]
   }
 }

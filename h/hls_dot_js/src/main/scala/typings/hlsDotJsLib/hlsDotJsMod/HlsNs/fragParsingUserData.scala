@@ -14,10 +14,8 @@ trait fragParsingUserData extends js.Object {
 object fragParsingUserData {
   @scala.inline
   def apply(frag: Fragment, id: java.lang.String, samples: js.Array[_]): fragParsingUserData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frag")(frag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("samples")(samples)
+    val __obj = js.Dynamic.literal(frag = frag, id = id, samples = samples)
+  
     __obj.asInstanceOf[fragParsingUserData]
   }
 }

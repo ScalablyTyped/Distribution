@@ -18,8 +18,8 @@ object DivisionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DivisionSearchResponse]
     ]
   ): DivisionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(search = search)
+  
     __obj.asInstanceOf[DivisionsResource]
   }
 }

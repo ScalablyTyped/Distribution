@@ -18,10 +18,8 @@ object SentMessageEvent {
     signature_request_id: java.lang.String,
     signature_request_info: hellosignDashEmbeddedLib.Anon_Ccemailaddresses
   ): SentMessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("signature_request_id")(signature_request_id)
-    __obj.updateDynamic("signature_request_info")(signature_request_info)
+    val __obj = js.Dynamic.literal(event = event, signature_request_id = signature_request_id, signature_request_info = signature_request_info)
+  
     __obj.asInstanceOf[SentMessageEvent]
   }
 }

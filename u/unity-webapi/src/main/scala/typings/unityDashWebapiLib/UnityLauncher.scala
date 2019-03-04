@@ -28,15 +28,8 @@ object UnityLauncher {
     setProgress: js.Function1[scala.Double, js.Any],
     setUrgent: js.Function1[scala.Boolean, js.Any]
   ): UnityLauncher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAction")(addAction)
-    __obj.updateDynamic("clearCount")(clearCount)
-    __obj.updateDynamic("clearProgress")(clearProgress)
-    __obj.updateDynamic("removeAction")(removeAction)
-    __obj.updateDynamic("removeActions")(removeActions)
-    __obj.updateDynamic("setCount")(setCount)
-    __obj.updateDynamic("setProgress")(setProgress)
-    __obj.updateDynamic("setUrgent")(setUrgent)
+    val __obj = js.Dynamic.literal(addAction = addAction, clearCount = clearCount, clearProgress = clearProgress, removeAction = removeAction, removeActions = removeActions, setCount = setCount, setProgress = setProgress, setUrgent = setUrgent)
+  
     __obj.asInstanceOf[UnityLauncher]
   }
 }

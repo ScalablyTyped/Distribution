@@ -24,13 +24,8 @@ object MappingItem {
     originalLine: scala.Double,
     source: java.lang.String
   ): MappingItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generatedColumn")(generatedColumn)
-    __obj.updateDynamic("generatedLine")(generatedLine)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("originalColumn")(originalColumn)
-    __obj.updateDynamic("originalLine")(originalLine)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(generatedColumn = generatedColumn, generatedLine = generatedLine, name = name, originalColumn = originalColumn, originalLine = originalLine, source = source)
+  
     __obj.asInstanceOf[MappingItem]
   }
 }

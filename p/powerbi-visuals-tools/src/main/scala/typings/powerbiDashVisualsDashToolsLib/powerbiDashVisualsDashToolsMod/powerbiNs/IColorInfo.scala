@@ -12,8 +12,7 @@ trait IColorInfo extends IStyleInfo {
 object IColorInfo {
   @scala.inline
   def apply(value: java.lang.String, className: java.lang.String = null): IColorInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (className != null) __obj.updateDynamic("className")(className)
     __obj.asInstanceOf[IColorInfo]
   }

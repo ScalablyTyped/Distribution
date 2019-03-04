@@ -18,10 +18,8 @@ object INumberFormatter2 {
     formatInt: js.Function1[scala.Double, java.lang.String],
     formatUInt: js.Function1[scala.Double, java.lang.String]
   ): INumberFormatter2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatDouble")(formatDouble)
-    __obj.updateDynamic("formatInt")(formatInt)
-    __obj.updateDynamic("formatUInt")(formatUInt)
+    val __obj = js.Dynamic.literal(formatDouble = formatDouble, formatInt = formatInt, formatUInt = formatUInt)
+  
     __obj.asInstanceOf[INumberFormatter2]
   }
 }

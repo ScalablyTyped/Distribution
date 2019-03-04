@@ -40,16 +40,8 @@ object PagePrintSettings {
     TopMargin: scala.Double,
     VertMargin: scala.Double
   ): PagePrintSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomMargin")(BottomMargin)
-    __obj.updateDynamic("HoriMargin")(HoriMargin)
-    __obj.updateDynamic("IsLandscape")(IsLandscape)
-    __obj.updateDynamic("LeftMargin")(LeftMargin)
-    __obj.updateDynamic("PageColumns")(PageColumns)
-    __obj.updateDynamic("PageRows")(PageRows)
-    __obj.updateDynamic("RightMargin")(RightMargin)
-    __obj.updateDynamic("TopMargin")(TopMargin)
-    __obj.updateDynamic("VertMargin")(VertMargin)
+    val __obj = js.Dynamic.literal(BottomMargin = BottomMargin, HoriMargin = HoriMargin, IsLandscape = IsLandscape, LeftMargin = LeftMargin, PageColumns = PageColumns, PageRows = PageRows, RightMargin = RightMargin, TopMargin = TopMargin, VertMargin = VertMargin)
+  
     __obj.asInstanceOf[PagePrintSettings]
   }
 }

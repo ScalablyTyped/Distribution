@@ -25,12 +25,8 @@ object TfvcHistoryEntry {
     itemChangeType: VersionControlChangeType,
     serverItem: java.lang.String
   ): TfvcHistoryEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeList")(changeList)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("itemChangeType")(itemChangeType)
-    __obj.updateDynamic("serverItem")(serverItem)
+    val __obj = js.Dynamic.literal(changeList = changeList, encoding = encoding, fileId = fileId, itemChangeType = itemChangeType, serverItem = serverItem)
+  
     __obj.asInstanceOf[TfvcHistoryEntry]
   }
 }

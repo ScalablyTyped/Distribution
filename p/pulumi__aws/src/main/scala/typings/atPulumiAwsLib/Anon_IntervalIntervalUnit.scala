@@ -14,9 +14,7 @@ trait Anon_IntervalIntervalUnit extends js.Object {
 object Anon_IntervalIntervalUnit {
   @scala.inline
   def apply(interval: scala.Double, times: java.lang.String, intervalUnit: java.lang.String = null): Anon_IntervalIntervalUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("times")(times)
+    val __obj = js.Dynamic.literal(interval = interval, times = times)
     if (intervalUnit != null) __obj.updateDynamic("intervalUnit")(intervalUnit)
     __obj.asInstanceOf[Anon_IntervalIntervalUnit]
   }

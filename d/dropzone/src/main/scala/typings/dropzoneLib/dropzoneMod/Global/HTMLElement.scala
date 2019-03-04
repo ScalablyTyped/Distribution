@@ -12,8 +12,8 @@ trait HTMLElement extends js.Object {
 object HTMLElement {
   @scala.inline
   def apply(dropzone: dropzoneLib.dropzoneMod.Dropzone): HTMLElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropzone")(dropzone)
+    val __obj = js.Dynamic.literal(dropzone = dropzone)
+  
     __obj.asInstanceOf[HTMLElement]
   }
 }

@@ -37,12 +37,8 @@ object Result {
     orig: java.lang.String,
     path: parseDashGlobLib.Anon_Basename
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("glob")(glob)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("orig")(orig)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(base = base, glob = glob, is = is, orig = orig, path = path)
+  
     __obj.asInstanceOf[Result]
   }
 }

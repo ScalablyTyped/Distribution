@@ -229,8 +229,7 @@ object Anon_AltChannelIdChannelType {
     videoSyndicated: java.lang.String = null,
     videoType: java.lang.String = null
   ): Anon_AltChannelIdChannelType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (channelType != null) __obj.updateDynamic("channelType")(channelType)

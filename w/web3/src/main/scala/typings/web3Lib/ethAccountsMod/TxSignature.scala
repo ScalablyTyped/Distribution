@@ -18,12 +18,8 @@ object TxSignature {
     s: java.lang.String,
     v: java.lang.String
   ): TxSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageHash")(messageHash)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("rawTransaction")(rawTransaction)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(messageHash = messageHash, r = r, rawTransaction = rawTransaction, s = s, v = v)
+  
     __obj.asInstanceOf[TxSignature]
   }
 }

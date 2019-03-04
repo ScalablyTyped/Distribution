@@ -13,9 +13,8 @@ trait TransactionSendOffsetsTopic extends js.Object {
 object TransactionSendOffsetsTopic {
   @scala.inline
   def apply(partitions: js.Array[TransactionSendOffsetsTopicPartitions], topic: java.lang.String): TransactionSendOffsetsTopic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partitions")(partitions)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(partitions = partitions, topic = topic)
+  
     __obj.asInstanceOf[TransactionSendOffsetsTopic]
   }
 }

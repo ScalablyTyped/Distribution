@@ -12,8 +12,8 @@ trait IKeyboardCapabilities extends js.Object {
 object IKeyboardCapabilities {
   @scala.inline
   def apply(keyboardPresent: scala.Double): IKeyboardCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyboardPresent")(keyboardPresent)
+    val __obj = js.Dynamic.literal(keyboardPresent = keyboardPresent)
+  
     __obj.asInstanceOf[IKeyboardCapabilities]
   }
 }

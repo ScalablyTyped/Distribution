@@ -40,18 +40,7 @@ object CachePolicyObject {
     reqh: Headers = null,
     u: java.lang.String = null
   ): CachePolicyObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("ch")(ch)
-    __obj.updateDynamic("imm")(imm)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("reqcc")(reqcc)
-    __obj.updateDynamic("rescc")(rescc)
-    __obj.updateDynamic("resh")(resh)
-    __obj.updateDynamic("sh")(sh)
-    __obj.updateDynamic("st")(st)
-    __obj.updateDynamic("t")(t)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(a = a, ch = ch, imm = imm, m = m, reqcc = reqcc, rescc = rescc, resh = resh, sh = sh, st = st, t = t, v = v)
     if (h != null) __obj.updateDynamic("h")(h)
     if (reqh != null) __obj.updateDynamic("reqh")(reqh)
     if (u != null) __obj.updateDynamic("u")(u)

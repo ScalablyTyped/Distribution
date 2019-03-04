@@ -22,12 +22,8 @@ object IQuickLink {
     thumbnail: winrtLib.WindowsNs.StorageNs.StreamsNs.RandomAccessStreamReference,
     title: java.lang.String
   ): IQuickLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("supportedDataFormats")(supportedDataFormats)
-    __obj.updateDynamic("supportedFileTypes")(supportedFileTypes)
-    __obj.updateDynamic("thumbnail")(thumbnail)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, supportedDataFormats = supportedDataFormats, supportedFileTypes = supportedFileTypes, thumbnail = thumbnail, title = title)
+  
     __obj.asInstanceOf[IQuickLink]
   }
 }

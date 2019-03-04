@@ -30,16 +30,8 @@ object Delegate {
     peripheralManagerDidStartAdvertising: js.Function1[PluginResult, scala.Unit],
     peripheralManagerDidUpdateState: js.Function1[PluginResult, scala.Unit]
   ): Delegate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("didChangeAuthorizationStatus")(didChangeAuthorizationStatus)
-    __obj.updateDynamic("didDetermineStateForRegion")(didDetermineStateForRegion)
-    __obj.updateDynamic("didEnterRegion")(didEnterRegion)
-    __obj.updateDynamic("didExitRegion")(didExitRegion)
-    __obj.updateDynamic("didRangeBeaconsInRegion")(didRangeBeaconsInRegion)
-    __obj.updateDynamic("didStartMonitoringForRegion")(didStartMonitoringForRegion)
-    __obj.updateDynamic("monitoringDidFailForRegionWithError")(monitoringDidFailForRegionWithError)
-    __obj.updateDynamic("peripheralManagerDidStartAdvertising")(peripheralManagerDidStartAdvertising)
-    __obj.updateDynamic("peripheralManagerDidUpdateState")(peripheralManagerDidUpdateState)
+    val __obj = js.Dynamic.literal(didChangeAuthorizationStatus = didChangeAuthorizationStatus, didDetermineStateForRegion = didDetermineStateForRegion, didEnterRegion = didEnterRegion, didExitRegion = didExitRegion, didRangeBeaconsInRegion = didRangeBeaconsInRegion, didStartMonitoringForRegion = didStartMonitoringForRegion, monitoringDidFailForRegionWithError = monitoringDidFailForRegionWithError, peripheralManagerDidStartAdvertising = peripheralManagerDidStartAdvertising, peripheralManagerDidUpdateState = peripheralManagerDidUpdateState)
+  
     __obj.asInstanceOf[Delegate]
   }
 }

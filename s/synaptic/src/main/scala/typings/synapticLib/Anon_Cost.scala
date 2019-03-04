@@ -12,8 +12,8 @@ trait Anon_Cost extends js.Object {
 object Anon_Cost {
   @scala.inline
   def apply(costNs: Anon_BINARY): Anon_Cost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("costNs")(costNs)
+    val __obj = js.Dynamic.literal(costNs = costNs)
+  
     __obj.asInstanceOf[Anon_Cost]
   }
 }

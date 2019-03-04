@@ -18,10 +18,8 @@ object Anon_EndStart {
     start: jsoneditorLib.jsoneditorMod.SelectionPosition,
     text: java.lang.String
   ): Anon_EndStart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(end = end, start = start, text = text)
+  
     __obj.asInstanceOf[Anon_EndStart]
   }
 }

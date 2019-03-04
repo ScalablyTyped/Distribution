@@ -14,10 +14,8 @@ trait Anon_App extends js.Object {
 object Anon_App {
   @scala.inline
   def apply(BrowserWindow: js.Any, app: js.Any, dialog: js.Any): Anon_App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BrowserWindow")(BrowserWindow)
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("dialog")(dialog)
+    val __obj = js.Dynamic.literal(BrowserWindow = BrowserWindow, app = app, dialog = dialog)
+  
     __obj.asInstanceOf[Anon_App]
   }
 }

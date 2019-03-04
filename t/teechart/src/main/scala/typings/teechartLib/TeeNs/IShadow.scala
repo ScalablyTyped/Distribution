@@ -24,13 +24,8 @@ object IShadow {
     visible: scala.Boolean,
     width: scala.Double
   ): IShadow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blur")(blur)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(blur = blur, chart = chart, color = color, height = height, visible = visible, width = width)
+  
     __obj.asInstanceOf[IShadow]
   }
 }

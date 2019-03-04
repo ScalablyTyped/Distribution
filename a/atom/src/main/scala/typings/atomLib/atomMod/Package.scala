@@ -38,13 +38,8 @@ object Package {
     path: java.lang.String,
     rebuild: js.Function0[js.Promise[atomLib.Anon_Code]]
   ): Package = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBuildFailureOutput")(getBuildFailureOutput)
-    __obj.updateDynamic("isCompatible")(isCompatible)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onDidDeactivate")(onDidDeactivate)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("rebuild")(rebuild)
+    val __obj = js.Dynamic.literal(getBuildFailureOutput = getBuildFailureOutput, isCompatible = isCompatible, name = name, onDidDeactivate = onDidDeactivate, path = path, rebuild = rebuild)
+  
     __obj.asInstanceOf[Package]
   }
 }

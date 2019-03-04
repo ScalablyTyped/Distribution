@@ -46,24 +46,8 @@ object IUriRuntimeClass {
     suspicious: scala.Boolean,
     userName: java.lang.String
   ): IUriRuntimeClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absoluteUri")(absoluteUri)
-    __obj.updateDynamic("combineUri")(combineUri)
-    __obj.updateDynamic("displayUri")(displayUri)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("queryParsed")(queryParsed)
-    __obj.updateDynamic("rawUri")(rawUri)
-    __obj.updateDynamic("schemeName")(schemeName)
-    __obj.updateDynamic("suspicious")(suspicious)
-    __obj.updateDynamic("userName")(userName)
+    val __obj = js.Dynamic.literal(absoluteUri = absoluteUri, combineUri = combineUri, displayUri = displayUri, domain = domain, equals = equals, extension = extension, fragment = fragment, host = host, password = password, path = path, port = port, query = query, queryParsed = queryParsed, rawUri = rawUri, schemeName = schemeName, suspicious = suspicious, userName = userName)
+  
     __obj.asInstanceOf[IUriRuntimeClass]
   }
 }

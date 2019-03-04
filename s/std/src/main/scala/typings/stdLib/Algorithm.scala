@@ -12,8 +12,8 @@ trait Algorithm extends js.Object {
 object Algorithm {
   @scala.inline
   def apply(name: java.lang.String): Algorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[Algorithm]
   }
 }

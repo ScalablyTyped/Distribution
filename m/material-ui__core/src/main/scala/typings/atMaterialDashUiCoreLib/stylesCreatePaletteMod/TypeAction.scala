@@ -24,13 +24,8 @@ object TypeAction {
     hoverOpacity: scala.Double,
     selected: java.lang.String
   ): TypeAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("disabledBackground")(disabledBackground)
-    __obj.updateDynamic("hover")(hover)
-    __obj.updateDynamic("hoverOpacity")(hoverOpacity)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(active = active, disabled = disabled, disabledBackground = disabledBackground, hover = hover, hoverOpacity = hoverOpacity, selected = selected)
+  
     __obj.asInstanceOf[TypeAction]
   }
 }

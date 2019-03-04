@@ -33,11 +33,8 @@ object RangeSelectionArguments {
     SingleCellMode: scala.Boolean,
     Title: java.lang.String
   ): RangeSelectionArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CloseOnMouseRelease")(CloseOnMouseRelease)
-    __obj.updateDynamic("InitialValue")(InitialValue)
-    __obj.updateDynamic("SingleCellMode")(SingleCellMode)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(CloseOnMouseRelease = CloseOnMouseRelease, InitialValue = InitialValue, SingleCellMode = SingleCellMode, Title = Title)
+  
     __obj.asInstanceOf[RangeSelectionArguments]
   }
 }

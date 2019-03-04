@@ -20,11 +20,8 @@ object ILanguage {
     nativeName: java.lang.String,
     script: java.lang.String
   ): ILanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("languageTag")(languageTag)
-    __obj.updateDynamic("nativeName")(nativeName)
-    __obj.updateDynamic("script")(script)
+    val __obj = js.Dynamic.literal(displayName = displayName, languageTag = languageTag, nativeName = nativeName, script = script)
+  
     __obj.asInstanceOf[ILanguage]
   }
 }

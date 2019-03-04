@@ -12,9 +12,8 @@ trait IDataManager extends IEventEmitter {
 object IDataManager {
   @scala.inline
   def apply(events: IEventManager, get: js.Function2[java.lang.String, js.Object, js.Object]): IDataManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(events = events, get = get)
+  
     __obj.asInstanceOf[IDataManager]
   }
 }

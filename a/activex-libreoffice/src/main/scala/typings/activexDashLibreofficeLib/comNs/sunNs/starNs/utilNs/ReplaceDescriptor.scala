@@ -64,35 +64,8 @@ object ReplaceDescriptor {
     setReplaceString: js.Function1[java.lang.String, scala.Unit],
     setSearchString: js.Function1[java.lang.String, scala.Unit]
   ): ReplaceDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ReplaceString")(ReplaceString)
-    __obj.updateDynamic("SearchBackwards")(SearchBackwards)
-    __obj.updateDynamic("SearchCaseSensitive")(SearchCaseSensitive)
-    __obj.updateDynamic("SearchRegularExpression")(SearchRegularExpression)
-    __obj.updateDynamic("SearchSimilarity")(SearchSimilarity)
-    __obj.updateDynamic("SearchSimilarityAdd")(SearchSimilarityAdd)
-    __obj.updateDynamic("SearchSimilarityExchange")(SearchSimilarityExchange)
-    __obj.updateDynamic("SearchSimilarityRelax")(SearchSimilarityRelax)
-    __obj.updateDynamic("SearchSimilarityRemove")(SearchSimilarityRemove)
-    __obj.updateDynamic("SearchString")(SearchString)
-    __obj.updateDynamic("SearchStyles")(SearchStyles)
-    __obj.updateDynamic("SearchWildcard")(SearchWildcard)
-    __obj.updateDynamic("SearchWords")(SearchWords)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getReplaceString")(getReplaceString)
-    __obj.updateDynamic("getSearchString")(getSearchString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setReplaceString")(setReplaceString)
-    __obj.updateDynamic("setSearchString")(setSearchString)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, ReplaceString = ReplaceString, SearchBackwards = SearchBackwards, SearchCaseSensitive = SearchCaseSensitive, SearchRegularExpression = SearchRegularExpression, SearchSimilarity = SearchSimilarity, SearchSimilarityAdd = SearchSimilarityAdd, SearchSimilarityExchange = SearchSimilarityExchange, SearchSimilarityRelax = SearchSimilarityRelax, SearchSimilarityRemove = SearchSimilarityRemove, SearchString = SearchString, SearchStyles = SearchStyles, SearchWildcard = SearchWildcard, SearchWords = SearchWords, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getReplaceString = getReplaceString, getSearchString = getSearchString, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setReplaceString = setReplaceString, setSearchString = setSearchString)
+  
     __obj.asInstanceOf[ReplaceDescriptor]
   }
 }

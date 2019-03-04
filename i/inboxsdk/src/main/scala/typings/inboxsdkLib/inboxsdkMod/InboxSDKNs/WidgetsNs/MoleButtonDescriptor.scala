@@ -20,10 +20,7 @@ object MoleButtonDescriptor {
     title: java.lang.String,
     iconClass: java.lang.String = null
   ): MoleButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, title = title)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     __obj.asInstanceOf[MoleButtonDescriptor]
   }

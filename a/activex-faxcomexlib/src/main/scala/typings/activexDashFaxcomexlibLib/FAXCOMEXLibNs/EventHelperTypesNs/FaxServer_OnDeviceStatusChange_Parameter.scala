@@ -24,13 +24,8 @@ object FaxServer_OnDeviceStatusChange_Parameter {
     lDeviceId: scala.Double,
     pFaxServer: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer
   ): FaxServer_OnDeviceStatusChange_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bPoweredOff")(bPoweredOff)
-    __obj.updateDynamic("bReceiving")(bReceiving)
-    __obj.updateDynamic("bRinging")(bRinging)
-    __obj.updateDynamic("bSending")(bSending)
-    __obj.updateDynamic("lDeviceId")(lDeviceId)
-    __obj.updateDynamic("pFaxServer")(pFaxServer)
+    val __obj = js.Dynamic.literal(bPoweredOff = bPoweredOff, bReceiving = bReceiving, bRinging = bRinging, bSending = bSending, lDeviceId = lDeviceId, pFaxServer = pFaxServer)
+  
     __obj.asInstanceOf[FaxServer_OnDeviceStatusChange_Parameter]
   }
 }

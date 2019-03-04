@@ -47,29 +47,8 @@ object TouchEvent {
     touches: TouchList,
     `type`: java.lang.String
   ): TouchEvent[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("altKey")(altKey)
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("cancelable")(cancelable)
-    __obj.updateDynamic("changedTouches")(changedTouches)
-    __obj.updateDynamic("ctrlKey")(ctrlKey)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("eventPhase")(eventPhase)
-    __obj.updateDynamic("getModifierState")(getModifierState)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("isTrusted")(isTrusted)
-    __obj.updateDynamic("metaKey")(metaKey)
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
-    __obj.updateDynamic("persist")(persist)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("shiftKey")(shiftKey)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("targetTouches")(targetTouches)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("touches")(touches)
+    val __obj = js.Dynamic.literal(altKey = altKey, bubbles = bubbles, cancelable = cancelable, changedTouches = changedTouches, ctrlKey = ctrlKey, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, getModifierState = getModifierState, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, metaKey = metaKey, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target, targetTouches = targetTouches, timeStamp = timeStamp, touches = touches)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TouchEvent[T]]
   }
 }

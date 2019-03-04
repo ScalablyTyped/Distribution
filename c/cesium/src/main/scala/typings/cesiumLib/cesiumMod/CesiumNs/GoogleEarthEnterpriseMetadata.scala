@@ -32,17 +32,8 @@ object GoogleEarthEnterpriseMetadata {
     terrainPresent: scala.Boolean,
     url: java.lang.String
   ): GoogleEarthEnterpriseMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageryPresent")(imageryPresent)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("negativeAltitudeExponentBias")(negativeAltitudeExponentBias)
-    __obj.updateDynamic("negativeAltitudeThreshold")(negativeAltitudeThreshold)
-    __obj.updateDynamic("protoImagery")(protoImagery)
-    __obj.updateDynamic("proxy")(proxy)
-    __obj.updateDynamic("readyPromise")(readyPromise)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("terrainPresent")(terrainPresent)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(imageryPresent = imageryPresent, key = key, negativeAltitudeExponentBias = negativeAltitudeExponentBias, negativeAltitudeThreshold = negativeAltitudeThreshold, protoImagery = protoImagery, proxy = proxy, readyPromise = readyPromise, resource = resource, terrainPresent = terrainPresent, url = url)
+  
     __obj.asInstanceOf[GoogleEarthEnterpriseMetadata]
   }
 }

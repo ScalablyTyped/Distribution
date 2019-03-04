@@ -33,10 +33,7 @@ object RID {
     position: scala.Int | scala.Double = null,
     toRid: js.Function2[/* cluster */ scala.Double, /* position */ scala.Double, _] = null
   ): RID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trimLeft")(trimLeft)
-    __obj.updateDynamic("trimRight")(trimRight)
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(trimLeft = trimLeft, trimRight = trimRight, valueOf = valueOf)
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (equals != null) __obj.updateDynamic("equals")(equals)
     if (isValid != null) __obj.updateDynamic("isValid")(isValid)

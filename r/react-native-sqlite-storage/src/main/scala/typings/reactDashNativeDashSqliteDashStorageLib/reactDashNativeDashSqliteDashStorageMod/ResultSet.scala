@@ -14,10 +14,8 @@ trait ResultSet extends js.Object {
 object ResultSet {
   @scala.inline
   def apply(insertId: scala.Double, rows: ResultSetRowList, rowsAffected: scala.Double): ResultSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insertId")(insertId)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("rowsAffected")(rowsAffected)
+    val __obj = js.Dynamic.literal(insertId = insertId, rows = rows, rowsAffected = rowsAffected)
+  
     __obj.asInstanceOf[ResultSet]
   }
 }

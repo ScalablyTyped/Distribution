@@ -23,11 +23,11 @@ trait LodashReduceRight1x2[TResult] extends js.Object {
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[T, TResult],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): TResult = js.native
-  def apply[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.`__`): LodashReduceRight3x6[T, TResult] = js.native
-  def apply[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashReduceRight3x6[T, TResult] = js.native
-  def apply[T](callback: lodashLib.lodashMod.underscoreNs.`__`, collection: js.Array[T]): LodashReduceRight1x6[T, TResult] = js.native
+  def apply[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.__): LodashReduceRight3x6[T, TResult] = js.native
+  def apply[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashReduceRight3x6[T, TResult] = js.native
+  def apply[T](callback: lodashLib.lodashMod.underscoreNs.__, collection: js.Array[T]): LodashReduceRight1x6[T, TResult] = js.native
   def apply[T](
-    callback: lodashLib.lodashMod.underscoreNs.`__`,
+    callback: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashReduceRight2x6[T, TResult] = js.native
 }

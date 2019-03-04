@@ -33,20 +33,8 @@ object Pump {
     start: js.Function0[scala.Unit],
     terminate: js.Function0[scala.Unit]
   ): Pump = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeListener")(removeListener)
-    __obj.updateDynamic("setInputStream")(setInputStream)
-    __obj.updateDynamic("setOutputStream")(setOutputStream)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("terminate")(terminate)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = acquire, addListener = addListener, getInputStream = getInputStream, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release, removeListener = removeListener, setInputStream = setInputStream, setOutputStream = setOutputStream, start = start, terminate = terminate)
+  
     __obj.asInstanceOf[Pump]
   }
 }

@@ -15,8 +15,7 @@ object AnyPageProps {
     url: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): AnyPageProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AnyPageProps]
   }

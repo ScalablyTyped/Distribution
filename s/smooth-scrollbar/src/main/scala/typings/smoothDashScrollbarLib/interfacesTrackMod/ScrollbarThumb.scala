@@ -24,13 +24,8 @@ object ScrollbarThumb {
     realSize: scala.Double,
     update: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
   ): ScrollbarThumb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachTo")(attachTo)
-    __obj.updateDynamic("displaySize")(displaySize)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("realSize")(realSize)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(attachTo = attachTo, displaySize = displaySize, element = element, offset = offset, realSize = realSize, update = update)
+  
     __obj.asInstanceOf[ScrollbarThumb]
   }
 }

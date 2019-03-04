@@ -18,8 +18,7 @@ object PathDescriptor {
     column: scala.Int | scala.Double = null,
     line: scala.Int | scala.Double = null
   ): PathDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(file = file)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathDescriptor]

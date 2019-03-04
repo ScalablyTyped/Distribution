@@ -23,9 +23,8 @@ object CodeVerification {
     attempts_remaining: scala.Double,
     status: stripejsLib.stripejsLibStrings.pending | stripejsLib.stripejsLibStrings.attempts_remaining | stripejsLib.stripejsLibStrings.succeeded | stripejsLib.stripejsLibStrings.failed
   ): CodeVerification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attempts_remaining")(attempts_remaining)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attempts_remaining = attempts_remaining, status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CodeVerification]
   }
 }

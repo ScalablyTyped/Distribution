@@ -16,8 +16,8 @@ trait Anon_Complete[TElement]
 object Anon_Complete {
   @scala.inline
   def apply[TElement](complete: js.Function1[TElement, scala.Unit]): Anon_Complete[TElement] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[Anon_Complete[TElement]]
   }
 }

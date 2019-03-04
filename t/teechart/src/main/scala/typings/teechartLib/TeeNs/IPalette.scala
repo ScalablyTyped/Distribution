@@ -13,9 +13,8 @@ trait IPalette extends js.Object {
 object IPalette {
   @scala.inline
   def apply(colors: js.Array[java.lang.String], get: js.Function1[scala.Double, java.lang.String]): IPalette = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(colors = colors, get = get)
+  
     __obj.asInstanceOf[IPalette]
   }
 }

@@ -13,9 +13,8 @@ trait IIPInformation extends js.Object {
 object IIPInformation {
   @scala.inline
   def apply(networkAdapter: NetworkAdapter, prefixLength: scala.Double): IIPInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkAdapter")(networkAdapter)
-    __obj.updateDynamic("prefixLength")(prefixLength)
+    val __obj = js.Dynamic.literal(networkAdapter = networkAdapter, prefixLength = prefixLength)
+  
     __obj.asInstanceOf[IIPInformation]
   }
 }

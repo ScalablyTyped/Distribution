@@ -59,7 +59,7 @@ object ValidKioskManifest {
     display_in_new_tab_page: js.UndefOr[scala.Boolean] = js.undefined,
     event_rules: js.Array[chromeDashAppsLib.Anon_Actions] = null,
     file_browser_handlers: js.Array[chromeDashAppsLib.Anon_Defaulticon] = null,
-    file_handlers: org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.`Anon_`] = null,
+    file_handlers: org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_] = null,
     file_system_provider_capabilities: chromeDashAppsLib.Anon_Configurable = null,
     icons: ManifestIcons = null,
     `import`: js.Array[chromeDashAppsLib.Anon_Id] = null,
@@ -86,13 +86,7 @@ object ValidKioskManifest {
     version_name: java.lang.String = null,
     webview: chromeDashAppsLib.Anon_Partitions = null
   ): ValidKioskManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("externally_connectable")(externally_connectable)
-    __obj.updateDynamic("kiosk_enabled")(kiosk_enabled)
-    __obj.updateDynamic("manifest_version")(manifest_version)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(app = app, externally_connectable = externally_connectable, kiosk_enabled = kiosk_enabled, manifest_version = manifest_version, name = name, version = version)
     if (action_handlers != null) __obj.updateDynamic("action_handlers")(action_handlers)
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (automation != null) __obj.updateDynamic("automation")(automation.asInstanceOf[js.Any])

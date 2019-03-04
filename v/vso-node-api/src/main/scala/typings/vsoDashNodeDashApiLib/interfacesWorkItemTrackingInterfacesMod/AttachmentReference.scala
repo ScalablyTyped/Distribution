@@ -13,9 +13,8 @@ trait AttachmentReference extends js.Object {
 object AttachmentReference {
   @scala.inline
   def apply(id: java.lang.String, url: java.lang.String): AttachmentReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, url = url)
+  
     __obj.asInstanceOf[AttachmentReference]
   }
 }

@@ -126,16 +126,7 @@ object Tab {
     url: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): Tab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("autoDiscardable")(autoDiscardable)
-    __obj.updateDynamic("discarded")(discarded)
-    __obj.updateDynamic("highlighted")(highlighted)
-    __obj.updateDynamic("incognito")(incognito)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("pinned")(pinned)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("windowId")(windowId)
+    val __obj = js.Dynamic.literal(active = active, autoDiscardable = autoDiscardable, discarded = discarded, highlighted = highlighted, incognito = incognito, index = index, pinned = pinned, selected = selected, windowId = windowId)
     if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
     if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

@@ -37,13 +37,8 @@ object SunLight {
     hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): SunLight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ambient")(ambient)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("diffuse")(diffuse)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(ambient = ambient, constructor = constructor, diffuse = diffuse, direction = direction, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[SunLight]
   }
 }

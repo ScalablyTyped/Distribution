@@ -26,14 +26,8 @@ object Anon_CellLabelCellText {
     root: java.lang.String,
     row: java.lang.String
   ): Anon_CellLabelCellText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellLabel")(cellLabel)
-    __obj.updateDynamic("cellText")(cellText)
-    __obj.updateDynamic("cellTextSelected")(cellTextSelected)
-    __obj.updateDynamic("itemValue")(itemValue)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(cellLabel = cellLabel, cellText = cellText, cellTextSelected = cellTextSelected, itemValue = itemValue, label = label, root = root, row = row)
+  
     __obj.asInstanceOf[Anon_CellLabelCellText]
   }
 }

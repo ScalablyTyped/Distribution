@@ -24,11 +24,8 @@ object BufferChanged {
     oldRange: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range,
     oldText: java.lang.String
   ): BufferChanged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newRange")(newRange)
-    __obj.updateDynamic("newText")(newText)
-    __obj.updateDynamic("oldRange")(oldRange)
-    __obj.updateDynamic("oldText")(oldText)
+    val __obj = js.Dynamic.literal(newRange = newRange, newText = newText, oldRange = oldRange, oldText = oldText)
+  
     __obj.asInstanceOf[BufferChanged]
   }
 }

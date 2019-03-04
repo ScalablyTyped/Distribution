@@ -21,9 +21,9 @@ object Anon_Delete {
     oldValue: V,
     `type`: mobxLib.mobxLibStrings.delete
   ): Anon_Delete[K, V] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Delete[K, V]]
   }
 }

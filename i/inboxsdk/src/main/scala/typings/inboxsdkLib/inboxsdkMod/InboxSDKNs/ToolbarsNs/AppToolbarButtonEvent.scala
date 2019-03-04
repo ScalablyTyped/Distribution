@@ -12,8 +12,8 @@ trait AppToolbarButtonEvent extends js.Object {
 object AppToolbarButtonEvent {
   @scala.inline
   def apply(dropdown: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.DropdownView): AppToolbarButtonEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropdown")(dropdown)
+    val __obj = js.Dynamic.literal(dropdown = dropdown)
+  
     __obj.asInstanceOf[AppToolbarButtonEvent]
   }
 }

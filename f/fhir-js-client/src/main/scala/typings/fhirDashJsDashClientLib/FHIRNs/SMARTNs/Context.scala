@@ -35,8 +35,7 @@ object Context {
     patientId: java.lang.String = null,
     userId: java.lang.String = null
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceUrl")(serviceUrl)
+    val __obj = js.Dynamic.literal(serviceUrl = serviceUrl)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (patientId != null) __obj.updateDynamic("patientId")(patientId)
     if (userId != null) __obj.updateDynamic("userId")(userId)

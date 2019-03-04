@@ -82,8 +82,7 @@ object GraphQLServerOptions {
     tracing: js.UndefOr[scala.Boolean] = js.undefined,
     validationRules: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]] = null
   ): GraphQLServerOptions[TContext, TRootValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])

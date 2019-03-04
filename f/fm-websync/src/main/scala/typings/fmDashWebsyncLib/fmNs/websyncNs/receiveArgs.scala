@@ -31,14 +31,8 @@ object receiveArgs {
     publishingClient: publishingClient,
     timestamp: stdLib.Date
   ): receiveArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("publishingClient")(publishingClient)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel, client = client, clientId = clientId, data = data, meta = meta, publishingClient = publishingClient, timestamp = timestamp)
+  
     __obj.asInstanceOf[receiveArgs]
   }
 }

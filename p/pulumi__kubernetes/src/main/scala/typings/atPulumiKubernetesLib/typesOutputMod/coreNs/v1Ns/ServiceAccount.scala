@@ -60,13 +60,8 @@ object ServiceAccount {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     secrets: js.Array[ObjectReference]
   ): ServiceAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("automountServiceAccountToken")(automountServiceAccountToken)
-    __obj.updateDynamic("imagePullSecrets")(imagePullSecrets)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("secrets")(secrets)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, automountServiceAccountToken = automountServiceAccountToken, imagePullSecrets = imagePullSecrets, kind = kind, metadata = metadata, secrets = secrets)
+  
     __obj.asInstanceOf[ServiceAccount]
   }
 }

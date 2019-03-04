@@ -18,9 +18,7 @@ object Anon_Classification {
     grokPattern: java.lang.String,
     customPatterns: java.lang.String = null
   ): Anon_Classification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classification")(classification)
-    __obj.updateDynamic("grokPattern")(grokPattern)
+    val __obj = js.Dynamic.literal(classification = classification, grokPattern = grokPattern)
     if (customPatterns != null) __obj.updateDynamic("customPatterns")(customPatterns)
     __obj.asInstanceOf[Anon_Classification]
   }

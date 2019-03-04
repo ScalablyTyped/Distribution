@@ -24,11 +24,7 @@ object File {
     text: java.lang.String,
     `type`: ternLib.ternLibStrings.full | ternLib.ternLibStrings.part | ternLib.ternLibStrings.delete = null
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(ast = ast, name = name, scope = scope, text = text)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }

@@ -16,8 +16,7 @@ object Anon_Key {
     lexerState: nearleyLib.nearleyMod.LexerState,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lexerState")(lexerState)
+    val __obj = js.Dynamic.literal(lexerState = lexerState)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

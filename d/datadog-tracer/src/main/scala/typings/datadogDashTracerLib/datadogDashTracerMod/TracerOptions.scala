@@ -22,8 +22,7 @@ object TracerOptions {
     port: scala.Int | scala.Double = null,
     protocol: java.lang.String = null
   ): TracerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(service = service)
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

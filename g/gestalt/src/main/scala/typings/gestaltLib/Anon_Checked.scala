@@ -16,9 +16,8 @@ object Anon_Checked {
     checked: scala.Boolean,
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement, reactLib.Event]
   ): Anon_Checked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(checked = checked, event = event)
+  
     __obj.asInstanceOf[Anon_Checked]
   }
 }

@@ -18,10 +18,8 @@ object Logger {
     error: js.Function1[/* repeated */ js.Any, scala.Unit],
     log: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): Logger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, log = log)
+  
     __obj.asInstanceOf[Logger]
   }
 }

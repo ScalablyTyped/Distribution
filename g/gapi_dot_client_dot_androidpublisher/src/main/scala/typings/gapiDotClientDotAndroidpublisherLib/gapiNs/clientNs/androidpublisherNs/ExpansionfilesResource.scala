@@ -39,11 +39,8 @@ object ExpansionfilesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFilesUploadResponse]
     ]
   ): ExpansionfilesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(get = get, patch = patch, update = update, upload = upload)
+  
     __obj.asInstanceOf[ExpansionfilesResource]
   }
 }

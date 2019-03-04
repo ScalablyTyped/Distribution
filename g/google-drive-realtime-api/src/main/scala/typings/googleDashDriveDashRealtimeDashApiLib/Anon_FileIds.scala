@@ -13,8 +13,8 @@ trait Anon_FileIds extends js.Object {
 object Anon_FileIds {
   @scala.inline
   def apply(fileIds: java.lang.String): Anon_FileIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileIds")(fileIds)
+    val __obj = js.Dynamic.literal(fileIds = fileIds)
+  
     __obj.asInstanceOf[Anon_FileIds]
   }
 }

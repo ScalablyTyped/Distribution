@@ -50,8 +50,7 @@ object GraphQLSchemaConfig {
     ] = null,
     types: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.typeDefinitionMod.GraphQLNamedType]] = null
   ): GraphQLSchemaConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (allowedLegacyNames != null) __obj.updateDynamic("allowedLegacyNames")(allowedLegacyNames.asInstanceOf[js.Any])
     if (!js.isUndefined(assumeValid)) __obj.updateDynamic("assumeValid")(assumeValid)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])

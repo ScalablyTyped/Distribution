@@ -28,11 +28,8 @@ object Dom {
       mochaccinoLib.mochaccinoLibStrings.document
     ]
   ): Dom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("exposedProperties")(exposedProperties)
+    val __obj = js.Dynamic.literal(clear = clear, create = create, destroy = destroy, exposedProperties = exposedProperties)
+  
     __obj.asInstanceOf[Dom]
   }
 }

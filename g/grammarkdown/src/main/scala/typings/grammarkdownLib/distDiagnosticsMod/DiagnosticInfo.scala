@@ -32,12 +32,7 @@ object DiagnosticInfo {
     range: grammarkdownLib.distCoreMod.Range = null,
     sourceFile: grammarkdownLib.distNodesMod.SourceFile = null
   ): DiagnosticInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("diagnosticIndex")(diagnosticIndex)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(code = code, diagnosticIndex = diagnosticIndex, message = message, pos = pos, warning = warning)
     if (formattedMessage != null) __obj.updateDynamic("formattedMessage")(formattedMessage)
     if (messageArguments != null) __obj.updateDynamic("messageArguments")(messageArguments)
     if (node != null) __obj.updateDynamic("node")(node)

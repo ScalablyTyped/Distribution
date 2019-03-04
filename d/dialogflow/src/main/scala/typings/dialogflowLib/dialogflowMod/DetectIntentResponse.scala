@@ -14,10 +14,8 @@ trait DetectIntentResponse extends js.Object {
 object DetectIntentResponse {
   @scala.inline
   def apply(queryResult: QueryResult, responseId: java.lang.String, webhookStatus: Status): DetectIntentResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryResult")(queryResult)
-    __obj.updateDynamic("responseId")(responseId)
-    __obj.updateDynamic("webhookStatus")(webhookStatus)
+    val __obj = js.Dynamic.literal(queryResult = queryResult, responseId = responseId, webhookStatus = webhookStatus)
+  
     __obj.asInstanceOf[DetectIntentResponse]
   }
 }

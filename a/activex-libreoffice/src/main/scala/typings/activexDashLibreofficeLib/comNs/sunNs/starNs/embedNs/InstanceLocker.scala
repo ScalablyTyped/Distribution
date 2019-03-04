@@ -53,15 +53,8 @@ object InstanceLocker {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): InstanceLocker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InstanceLockerCtor1")(InstanceLockerCtor1)
-    __obj.updateDynamic("InstanceLockerCtor2")(InstanceLockerCtor2)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(InstanceLockerCtor1 = InstanceLockerCtor1, InstanceLockerCtor2 = InstanceLockerCtor2, acquire = acquire, addEventListener = addEventListener, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[InstanceLocker]
   }
 }

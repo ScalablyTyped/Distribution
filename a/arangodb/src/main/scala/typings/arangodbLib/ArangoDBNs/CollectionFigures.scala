@@ -40,21 +40,8 @@ object CollectionFigures {
     uncollectedLogfileEntries: scala.Double,
     waitingFor: java.lang.String
   ): CollectionFigures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alive")(alive)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("compactionStatus")(compactionStatus)
-    __obj.updateDynamic("compactors")(compactors)
-    __obj.updateDynamic("datafiles")(datafiles)
-    __obj.updateDynamic("dead")(dead)
-    __obj.updateDynamic("documentReferences")(documentReferences)
-    __obj.updateDynamic("indexes")(indexes)
-    __obj.updateDynamic("journals")(journals)
-    __obj.updateDynamic("lastTick")(lastTick)
-    __obj.updateDynamic("shapefiles")(shapefiles)
-    __obj.updateDynamic("shapes")(shapes)
-    __obj.updateDynamic("uncollectedLogfileEntries")(uncollectedLogfileEntries)
-    __obj.updateDynamic("waitingFor")(waitingFor)
+    val __obj = js.Dynamic.literal(alive = alive, attributes = attributes, compactionStatus = compactionStatus, compactors = compactors, datafiles = datafiles, dead = dead, documentReferences = documentReferences, indexes = indexes, journals = journals, lastTick = lastTick, shapefiles = shapefiles, shapes = shapes, uncollectedLogfileEntries = uncollectedLogfileEntries, waitingFor = waitingFor)
+  
     __obj.asInstanceOf[CollectionFigures]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_WeightInput extends js.Object {
 object Anon_WeightInput {
   @scala.inline
   def apply(weight: atPulumiPulumiLib.outputMod.Input[scala.Double]): Anon_WeightInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(weight = weight.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_WeightInput]
   }
 }

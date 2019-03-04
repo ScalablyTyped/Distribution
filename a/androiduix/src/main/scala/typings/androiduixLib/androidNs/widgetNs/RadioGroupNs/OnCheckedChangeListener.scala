@@ -14,8 +14,8 @@ object OnCheckedChangeListener {
   def apply(
     onCheckedChanged: js.Function2[androiduixLib.androidNs.widgetNs.RadioGroup, java.lang.String, scala.Unit]
   ): OnCheckedChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCheckedChanged")(onCheckedChanged)
+    val __obj = js.Dynamic.literal(onCheckedChanged = onCheckedChanged)
+  
     __obj.asInstanceOf[OnCheckedChangeListener]
   }
 }

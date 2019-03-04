@@ -18,10 +18,8 @@ object Anon_LEFT {
     MIDDLE: threeLib.threeDashCoreMod.MOUSE,
     RIGHT: threeLib.threeDashCoreMod.MOUSE
   ): Anon_LEFT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("MIDDLE")(MIDDLE)
-    __obj.updateDynamic("RIGHT")(RIGHT)
+    val __obj = js.Dynamic.literal(LEFT = LEFT, MIDDLE = MIDDLE, RIGHT = RIGHT)
+  
     __obj.asInstanceOf[Anon_LEFT]
   }
 }

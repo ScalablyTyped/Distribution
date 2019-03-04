@@ -13,9 +13,8 @@ trait Anon_Model extends js.Object {
 object Anon_Model {
   @scala.inline
   def apply(model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel, oldLanguage: java.lang.String): Anon_Model = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("oldLanguage")(oldLanguage)
+    val __obj = js.Dynamic.literal(model = model, oldLanguage = oldLanguage)
+  
     __obj.asInstanceOf[Anon_Model]
   }
 }

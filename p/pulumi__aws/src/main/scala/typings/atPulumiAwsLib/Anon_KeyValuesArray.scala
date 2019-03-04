@@ -16,9 +16,8 @@ object Anon_KeyValuesArray {
     key: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     values: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ): Anon_KeyValuesArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_KeyValuesArray]
   }
 }

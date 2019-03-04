@@ -20,11 +20,8 @@ object IFileInformation {
     ExtractFromFile: js.Function1[java.lang.String, scala.Unit],
     FileType: mfilesLib.MFilesNs.MFFileInformationType
   ): IFileInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("EmailMessage")(EmailMessage)
-    __obj.updateDynamic("ExtractFromFile")(ExtractFromFile)
-    __obj.updateDynamic("FileType")(FileType)
+    val __obj = js.Dynamic.literal(Clear = Clear, EmailMessage = EmailMessage, ExtractFromFile = ExtractFromFile, FileType = FileType)
+  
     __obj.asInstanceOf[IFileInformation]
   }
 }

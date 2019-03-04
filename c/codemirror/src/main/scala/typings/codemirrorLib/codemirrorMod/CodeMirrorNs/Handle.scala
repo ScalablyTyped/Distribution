@@ -27,14 +27,8 @@ object Handle {
     pick: js.Function0[scala.Unit],
     setFocus: js.Function1[scala.Double, scala.Unit]
   ): Handle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("menuSize")(menuSize)
-    __obj.updateDynamic("moveFocus")(moveFocus)
-    __obj.updateDynamic("pick")(pick)
-    __obj.updateDynamic("setFocus")(setFocus)
+    val __obj = js.Dynamic.literal(close = close, data = data, length = length, menuSize = menuSize, moveFocus = moveFocus, pick = pick, setFocus = setFocus)
+  
     __obj.asInstanceOf[Handle]
   }
 }

@@ -13,9 +13,8 @@ trait SocketTransport extends Transport {
 object SocketTransport {
   @scala.inline
   def apply(kind: TransportKind, port: scala.Double): SocketTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(kind = kind, port = port)
+  
     __obj.asInstanceOf[SocketTransport]
   }
 }

@@ -29,15 +29,8 @@ object Iterator {
     ],
     seek: js.Function1[Bytes, scala.Unit]
   ): Iterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binding")(binding)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("fastFuture")(fastFuture)
-    __obj.updateDynamic("finished")(finished)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("seek")(seek)
+    val __obj = js.Dynamic.literal(binding = binding, cache = cache, db = db, end = end, fastFuture = fastFuture, finished = finished, next = next, seek = seek)
+  
     __obj.asInstanceOf[Iterator]
   }
 }

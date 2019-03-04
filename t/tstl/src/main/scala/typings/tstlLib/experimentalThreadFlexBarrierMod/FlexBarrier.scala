@@ -19,19 +19,19 @@ class FlexBarrier protected () extends js.Object {
   /**
     * @hidden
     */
-  var `complete_`: js.Any = js.native
+  var complete_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `count_`: js.Any = js.native
+  var count_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `cv_`: js.Any = js.native
+  var cv_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: scala.Double = js.native
+  var size_ : scala.Double = js.native
   def arrive(): js.Promise[scala.Unit] = js.native
   def arrive(n: scala.Double): js.Promise[scala.Unit] = js.native
   def arrive_and_reset(): js.Promise[scala.Unit] = js.native

@@ -20,10 +20,7 @@ object IntrospectionDirective {
     name: java.lang.String,
     description: java.lang.String = null
   ): IntrospectionDirective = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(args = args, locations = locations, name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IntrospectionDirective]
   }

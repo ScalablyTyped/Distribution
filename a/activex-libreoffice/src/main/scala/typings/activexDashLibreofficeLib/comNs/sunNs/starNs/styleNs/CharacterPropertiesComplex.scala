@@ -54,16 +54,8 @@ object CharacterPropertiesComplex {
     CharPostureComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
     CharWeightComplex: scala.Double
   ): CharacterPropertiesComplex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharFontCharSetComplex")(CharFontCharSetComplex)
-    __obj.updateDynamic("CharFontFamilyComplex")(CharFontFamilyComplex)
-    __obj.updateDynamic("CharFontNameComplex")(CharFontNameComplex)
-    __obj.updateDynamic("CharFontPitchComplex")(CharFontPitchComplex)
-    __obj.updateDynamic("CharFontStyleNameComplex")(CharFontStyleNameComplex)
-    __obj.updateDynamic("CharHeightComplex")(CharHeightComplex)
-    __obj.updateDynamic("CharLocaleComplex")(CharLocaleComplex)
-    __obj.updateDynamic("CharPostureComplex")(CharPostureComplex)
-    __obj.updateDynamic("CharWeightComplex")(CharWeightComplex)
+    val __obj = js.Dynamic.literal(CharFontCharSetComplex = CharFontCharSetComplex, CharFontFamilyComplex = CharFontFamilyComplex, CharFontNameComplex = CharFontNameComplex, CharFontPitchComplex = CharFontPitchComplex, CharFontStyleNameComplex = CharFontStyleNameComplex, CharHeightComplex = CharHeightComplex, CharLocaleComplex = CharLocaleComplex, CharPostureComplex = CharPostureComplex, CharWeightComplex = CharWeightComplex)
+  
     __obj.asInstanceOf[CharacterPropertiesComplex]
   }
 }

@@ -22,12 +22,8 @@ object IReferenceResolverHost {
     getScriptSnapshot: js.Function1[java.lang.String, IScriptSnapshot],
     resolveRelativePath: js.Function2[java.lang.String, java.lang.String, java.lang.String]
   ): IReferenceResolverHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directoryExists")(directoryExists)
-    __obj.updateDynamic("fileExists")(fileExists)
-    __obj.updateDynamic("getParentDirectory")(getParentDirectory)
-    __obj.updateDynamic("getScriptSnapshot")(getScriptSnapshot)
-    __obj.updateDynamic("resolveRelativePath")(resolveRelativePath)
+    val __obj = js.Dynamic.literal(directoryExists = directoryExists, fileExists = fileExists, getParentDirectory = getParentDirectory, getScriptSnapshot = getScriptSnapshot, resolveRelativePath = resolveRelativePath)
+  
     __obj.asInstanceOf[IReferenceResolverHost]
   }
 }

@@ -40,18 +40,7 @@ object Transaction {
     s: java.lang.String = null,
     v: java.lang.String = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockHash")(blockHash)
-    __obj.updateDynamic("blockNumber")(blockNumber)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("gas")(gas)
-    __obj.updateDynamic("gasPrice")(gasPrice)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("transactionIndex")(transactionIndex)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(blockHash = blockHash, blockNumber = blockNumber, from = from, gas = gas, gasPrice = gasPrice, hash = hash, input = input, nonce = nonce, to = to, transactionIndex = transactionIndex, value = value)
     if (r != null) __obj.updateDynamic("r")(r)
     if (s != null) __obj.updateDynamic("s")(s)
     if (v != null) __obj.updateDynamic("v")(v)

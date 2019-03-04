@@ -13,9 +13,8 @@ trait TextBetweenPosition extends js.Object {
 object TextBetweenPosition {
   @scala.inline
   def apply(pos: scala.Double, text: java.lang.String): TextBetweenPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(pos = pos, text = text)
+  
     __obj.asInstanceOf[TextBetweenPosition]
   }
 }

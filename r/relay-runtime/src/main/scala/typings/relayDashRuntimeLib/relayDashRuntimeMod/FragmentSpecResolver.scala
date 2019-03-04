@@ -34,11 +34,8 @@ object FragmentSpecResolver {
     setProps: js.Function1[Props, scala.Unit],
     setVariables: js.Function1[Variables, scala.Unit]
   ): FragmentSpecResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("resolve")(resolve)
-    __obj.updateDynamic("setProps")(setProps)
-    __obj.updateDynamic("setVariables")(setVariables)
+    val __obj = js.Dynamic.literal(dispose = dispose, resolve = resolve, setProps = setProps, setVariables = setVariables)
+  
     __obj.asInstanceOf[FragmentSpecResolver]
   }
 }

@@ -38,11 +38,8 @@ object ValueObject {
       scala.Unit
     ]
   ): ValueObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Get")(Get)
-    __obj.updateDynamic("InitInOutParam")(InitInOutParam)
-    __obj.updateDynamic("InitOutParam")(InitOutParam)
-    __obj.updateDynamic("Set")(Set)
+    val __obj = js.Dynamic.literal(Get = Get, InitInOutParam = InitInOutParam, InitOutParam = InitOutParam, Set = Set)
+  
     __obj.asInstanceOf[ValueObject]
   }
 }

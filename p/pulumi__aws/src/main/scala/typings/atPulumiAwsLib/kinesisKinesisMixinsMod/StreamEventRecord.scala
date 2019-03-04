@@ -28,15 +28,8 @@ object StreamEventRecord {
     invokeIdentityArn: java.lang.String,
     kinesis: atPulumiAwsLib.Anon_DataKinesisSchemaVersion
   ): StreamEventRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsRegion")(awsRegion)
-    __obj.updateDynamic("eventID")(eventID)
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("eventSource")(eventSource)
-    __obj.updateDynamic("eventSourceARN")(eventSourceARN)
-    __obj.updateDynamic("eventVersion")(eventVersion)
-    __obj.updateDynamic("invokeIdentityArn")(invokeIdentityArn)
-    __obj.updateDynamic("kinesis")(kinesis)
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion, eventID = eventID, eventName = eventName, eventSource = eventSource, eventSourceARN = eventSourceARN, eventVersion = eventVersion, invokeIdentityArn = invokeIdentityArn, kinesis = kinesis)
+  
     __obj.asInstanceOf[StreamEventRecord]
   }
 }

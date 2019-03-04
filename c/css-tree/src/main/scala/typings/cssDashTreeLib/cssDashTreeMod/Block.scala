@@ -20,8 +20,8 @@ object Block {
     `type`: cssDashTreeLib.cssDashTreeLibStrings.Block,
     loc: CssLocation = null
   ): Block = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Block]
   }

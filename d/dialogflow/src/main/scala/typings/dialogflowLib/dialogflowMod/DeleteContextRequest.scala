@@ -12,8 +12,8 @@ trait DeleteContextRequest extends js.Object {
 object DeleteContextRequest {
   @scala.inline
   def apply(name: java.lang.String): DeleteContextRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[DeleteContextRequest]
   }
 }

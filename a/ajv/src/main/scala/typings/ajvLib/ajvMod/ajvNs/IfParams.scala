@@ -12,8 +12,8 @@ trait IfParams extends ErrorParameters {
 object IfParams {
   @scala.inline
   def apply(failingKeyword: java.lang.String): IfParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failingKeyword")(failingKeyword)
+    val __obj = js.Dynamic.literal(failingKeyword = failingKeyword)
+  
     __obj.asInstanceOf[IfParams]
   }
 }

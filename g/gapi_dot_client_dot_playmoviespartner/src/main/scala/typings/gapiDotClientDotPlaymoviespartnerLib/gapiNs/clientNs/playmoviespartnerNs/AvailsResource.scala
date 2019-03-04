@@ -29,9 +29,8 @@ object AvailsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
     ]
   ): AvailsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
     __obj.asInstanceOf[AvailsResource]
   }
 }

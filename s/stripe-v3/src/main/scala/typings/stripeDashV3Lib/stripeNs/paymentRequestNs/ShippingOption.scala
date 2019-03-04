@@ -20,10 +20,7 @@ object ShippingOption {
     label: java.lang.String,
     detail: java.lang.String = null
   ): ShippingOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(amount = amount, id = id, label = label)
     if (detail != null) __obj.updateDynamic("detail")(detail)
     __obj.asInstanceOf[ShippingOption]
   }

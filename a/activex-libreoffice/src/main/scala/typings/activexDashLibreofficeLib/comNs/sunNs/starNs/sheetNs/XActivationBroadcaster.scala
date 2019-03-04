@@ -35,12 +35,8 @@ object XActivationBroadcaster {
     release: js.Function0[scala.Unit],
     removeActivationEventListener: js.Function1[XActivationEventListener, scala.Unit]
   ): XActivationBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addActivationEventListener")(addActivationEventListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActivationEventListener")(removeActivationEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addActivationEventListener = addActivationEventListener, queryInterface = queryInterface, release = release, removeActivationEventListener = removeActivationEventListener)
+  
     __obj.asInstanceOf[XActivationBroadcaster]
   }
 }

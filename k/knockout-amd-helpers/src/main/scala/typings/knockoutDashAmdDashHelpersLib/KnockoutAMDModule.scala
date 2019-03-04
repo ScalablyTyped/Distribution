@@ -20,11 +20,8 @@ object KnockoutAMDModule {
     initializer: java.lang.String,
     templateProperty: java.lang.String
   ): KnockoutAMDModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseDir")(baseDir)
-    __obj.updateDynamic("disposeMethod")(disposeMethod)
-    __obj.updateDynamic("initializer")(initializer)
-    __obj.updateDynamic("templateProperty")(templateProperty)
+    val __obj = js.Dynamic.literal(baseDir = baseDir, disposeMethod = disposeMethod, initializer = initializer, templateProperty = templateProperty)
+  
     __obj.asInstanceOf[KnockoutAMDModule]
   }
 }

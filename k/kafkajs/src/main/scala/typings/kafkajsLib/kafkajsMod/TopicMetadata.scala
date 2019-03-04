@@ -13,9 +13,8 @@ trait TopicMetadata extends js.Object {
 object TopicMetadata {
   @scala.inline
   def apply(name: java.lang.String, partitions: js.Array[PartitionMetadata]): TopicMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partitions")(partitions)
+    val __obj = js.Dynamic.literal(name = name, partitions = partitions)
+  
     __obj.asInstanceOf[TopicMetadata]
   }
 }

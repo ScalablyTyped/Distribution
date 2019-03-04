@@ -19,8 +19,7 @@ object Entries {
     per_page: scala.Int | scala.Double = null,
     total_pages: scala.Int | scala.Double = null
   ): Entries[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
+    val __obj = js.Dynamic.literal(entries = entries)
     if (current_page != null) __obj.updateDynamic("current_page")(current_page.asInstanceOf[js.Any])
     if (!js.isUndefined(has_more)) __obj.updateDynamic("has_more")(has_more)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

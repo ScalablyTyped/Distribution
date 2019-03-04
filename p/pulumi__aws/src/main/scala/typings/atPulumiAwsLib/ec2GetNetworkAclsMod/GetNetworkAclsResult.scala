@@ -24,10 +24,8 @@ object GetNetworkAclsResult {
     ids: js.Array[java.lang.String],
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetNetworkAclsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(id = id, ids = ids, tags = tags)
+  
     __obj.asInstanceOf[GetNetworkAclsResult]
   }
 }

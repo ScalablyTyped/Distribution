@@ -67,16 +67,8 @@ object BoolQuery {
     should: js.Function1[js.Object, BoolQuery],
     toJSON: js.Function0[js.Any]
   ): BoolQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("adjustPureNegative")(adjustPureNegative)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("disableCoord")(disableCoord)
-    __obj.updateDynamic("minimumNumberShouldMatch")(minimumNumberShouldMatch)
-    __obj.updateDynamic("must")(must)
-    __obj.updateDynamic("mustNot")(mustNot)
-    __obj.updateDynamic("should")(should)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, adjustPureNegative = adjustPureNegative, boost = boost, disableCoord = disableCoord, minimumNumberShouldMatch = minimumNumberShouldMatch, must = must, mustNot = mustNot, should = should, toJSON = toJSON)
+  
     __obj.asInstanceOf[BoolQuery]
   }
 }

@@ -31,23 +31,8 @@ object XPropertyBag {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     setPropertyValues: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyValue], scala.Unit]
   ): XPropertyBag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("PropertyValues")(PropertyValues)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeProperty")(removeProperty)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, PropertyValues = PropertyValues, acquire = acquire, addProperty = addProperty, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, removeProperty = removeProperty, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues)
+  
     __obj.asInstanceOf[XPropertyBag]
   }
 }

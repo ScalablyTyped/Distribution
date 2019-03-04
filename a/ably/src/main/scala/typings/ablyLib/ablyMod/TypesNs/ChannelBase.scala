@@ -12,8 +12,8 @@ trait ChannelBase extends js.Object {
 object ChannelBase {
   @scala.inline
   def apply(name: java.lang.String): ChannelBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[ChannelBase]
   }
 }

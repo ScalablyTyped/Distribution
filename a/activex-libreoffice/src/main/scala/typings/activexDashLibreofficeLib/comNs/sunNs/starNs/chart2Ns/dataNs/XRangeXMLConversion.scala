@@ -28,12 +28,8 @@ object XRangeXMLConversion {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XRangeXMLConversion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertRangeFromXML")(convertRangeFromXML)
-    __obj.updateDynamic("convertRangeToXML")(convertRangeToXML)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convertRangeFromXML = convertRangeFromXML, convertRangeToXML = convertRangeToXML, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XRangeXMLConversion]
   }
 }

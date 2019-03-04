@@ -21,10 +21,8 @@ object ResolveModuleImportParams {
     importedModuleId: java.lang.String,
     isDeclaredExternalModule: scala.Boolean
   ): ResolveModuleImportParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentModuleId")(currentModuleId)
-    __obj.updateDynamic("importedModuleId")(importedModuleId)
-    __obj.updateDynamic("isDeclaredExternalModule")(isDeclaredExternalModule)
+    val __obj = js.Dynamic.literal(currentModuleId = currentModuleId, importedModuleId = importedModuleId, isDeclaredExternalModule = isDeclaredExternalModule)
+  
     __obj.asInstanceOf[ResolveModuleImportParams]
   }
 }

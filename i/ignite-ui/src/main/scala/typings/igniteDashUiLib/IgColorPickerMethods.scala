@@ -47,13 +47,8 @@ object IgColorPickerMethods {
     selectedColor: js.Function0[java.lang.String],
     standardColorsTable: js.Function0[js.Object]
   ): IgColorPickerMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorFromElement")(colorFromElement)
-    __obj.updateDynamic("colorTable")(colorTable)
-    __obj.updateDynamic("customColorTable")(customColorTable)
-    __obj.updateDynamic("selectColor")(selectColor)
-    __obj.updateDynamic("selectedColor")(selectedColor)
-    __obj.updateDynamic("standardColorsTable")(standardColorsTable)
+    val __obj = js.Dynamic.literal(colorFromElement = colorFromElement, colorTable = colorTable, customColorTable = customColorTable, selectColor = selectColor, selectedColor = selectedColor, standardColorsTable = standardColorsTable)
+  
     __obj.asInstanceOf[IgColorPickerMethods]
   }
 }

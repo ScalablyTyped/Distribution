@@ -34,9 +34,8 @@ object IndicesPutMappingParams {
     timeout: TimeSpan = null,
     updateAllTypes: js.UndefOr[scala.Boolean] = js.undefined
   ): IndicesPutMappingParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])

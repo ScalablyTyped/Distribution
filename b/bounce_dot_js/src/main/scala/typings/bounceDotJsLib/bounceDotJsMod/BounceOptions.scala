@@ -26,9 +26,7 @@ object BounceOptions {
     easing: java.lang.String = null,
     stiffness: scala.Int | scala.Double = null
   ): BounceOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (bounces != null) __obj.updateDynamic("bounces")(bounces.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

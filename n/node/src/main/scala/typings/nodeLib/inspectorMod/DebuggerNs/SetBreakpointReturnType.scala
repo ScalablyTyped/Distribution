@@ -19,9 +19,8 @@ trait SetBreakpointReturnType extends js.Object {
 object SetBreakpointReturnType {
   @scala.inline
   def apply(actualLocation: Location, breakpointId: BreakpointId): SetBreakpointReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualLocation")(actualLocation)
-    __obj.updateDynamic("breakpointId")(breakpointId)
+    val __obj = js.Dynamic.literal(actualLocation = actualLocation, breakpointId = breakpointId)
+  
     __obj.asInstanceOf[SetBreakpointReturnType]
   }
 }

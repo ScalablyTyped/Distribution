@@ -33,11 +33,8 @@ object BoostFactorScoreFunction {
     filter: js.Function1[Filter, BoostFactorScoreFunction],
     toJSON: js.Function0[js.Any]
   ): BoostFactorScoreFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, filter = filter, toJSON = toJSON)
+  
     __obj.asInstanceOf[BoostFactorScoreFunction]
   }
 }

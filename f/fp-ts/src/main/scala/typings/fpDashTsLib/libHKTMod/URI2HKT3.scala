@@ -16,9 +16,8 @@ object URI2HKT3 {
     IxIO: fpDashTsLib.libIxIOMod.IxIO[U, L, A],
     ReaderTaskEither: fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[U, L, A]
   ): URI2HKT3[U, L, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IxIO")(IxIO)
-    __obj.updateDynamic("ReaderTaskEither")(ReaderTaskEither)
+    val __obj = js.Dynamic.literal(IxIO = IxIO, ReaderTaskEither = ReaderTaskEither)
+  
     __obj.asInstanceOf[URI2HKT3[U, L, A]]
   }
 }

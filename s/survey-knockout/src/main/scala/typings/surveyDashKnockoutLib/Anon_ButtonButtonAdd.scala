@@ -26,14 +26,8 @@ object Anon_ButtonButtonAdd {
     root: java.lang.String,
     title: java.lang.String
   ): Anon_ButtonButtonAdd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("buttonAdd")(buttonAdd)
-    __obj.updateDynamic("buttonNext")(buttonNext)
-    __obj.updateDynamic("buttonPrev")(buttonPrev)
-    __obj.updateDynamic("buttonRemove")(buttonRemove)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(button = button, buttonAdd = buttonAdd, buttonNext = buttonNext, buttonPrev = buttonPrev, buttonRemove = buttonRemove, root = root, title = title)
+  
     __obj.asInstanceOf[Anon_ButtonButtonAdd]
   }
 }

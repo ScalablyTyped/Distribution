@@ -84,16 +84,7 @@ object Status {
     withheld_in_countries: js.Array[java.lang.String] = null,
     withheld_scope: java.lang.String = null
   ): Status = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("entities")(entities)
-    __obj.updateDynamic("filter_level")(filter_level.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("id_str")(id_str)
-    __obj.updateDynamic("retweet_count")(retweet_count)
-    __obj.updateDynamic("retweeted")(retweeted)
-    __obj.updateDynamic("truncated")(truncated)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(created_at = created_at, entities = entities, filter_level = filter_level.asInstanceOf[js.Any], id = id, id_str = id_str, retweet_count = retweet_count, retweeted = retweeted, truncated = truncated, user = user)
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (contributors != null) __obj.updateDynamic("contributors")(contributors)
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)

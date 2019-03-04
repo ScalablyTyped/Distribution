@@ -22,12 +22,8 @@ object MediaStreamTrackEventMap {
     overconstrained: MediaStreamErrorEvent,
     unmute: Event
   ): MediaStreamTrackEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ended")(ended)
-    __obj.updateDynamic("isolationchange")(isolationchange)
-    __obj.updateDynamic("mute")(mute)
-    __obj.updateDynamic("overconstrained")(overconstrained)
-    __obj.updateDynamic("unmute")(unmute)
+    val __obj = js.Dynamic.literal(ended = ended, isolationchange = isolationchange, mute = mute, overconstrained = overconstrained, unmute = unmute)
+  
     __obj.asInstanceOf[MediaStreamTrackEventMap]
   }
 }

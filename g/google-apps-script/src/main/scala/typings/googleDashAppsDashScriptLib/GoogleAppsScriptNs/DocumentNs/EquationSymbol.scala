@@ -34,18 +34,8 @@ object EquationSymbol {
     removeFromParent: js.Function0[EquationSymbol],
     setAttributes: js.Function1[js.Object, EquationSymbol]
   ): EquationSymbol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getCode")(getCode)
-    __obj.updateDynamic("getNextSibling")(getNextSibling)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("removeFromParent")(removeFromParent)
-    __obj.updateDynamic("setAttributes")(setAttributes)
+    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getCode = getCode, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAttributes = setAttributes)
+  
     __obj.asInstanceOf[EquationSymbol]
   }
 }

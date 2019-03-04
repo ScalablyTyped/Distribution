@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(setContentAppend: js.Any): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setContentAppend")(setContentAppend)
+    val __obj = js.Dynamic.literal(setContentAppend = setContentAppend)
+  
     __obj.asInstanceOf[Window]
   }
 }

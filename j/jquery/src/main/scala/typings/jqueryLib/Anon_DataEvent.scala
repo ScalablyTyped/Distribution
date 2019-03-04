@@ -26,8 +26,8 @@ object Anon_DataEvent {
       scala.Unit | jqueryLib.jqueryLibNumbers.`false`
     ]
   ): Anon_DataEvent[TTarget, TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(trigger = trigger)
+  
     __obj.asInstanceOf[Anon_DataEvent[TTarget, TData]]
   }
 }

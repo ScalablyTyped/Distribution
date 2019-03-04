@@ -32,11 +32,8 @@ object WorkItemComments {
     fromRevisionCount: scala.Double,
     totalCount: scala.Double
   ): WorkItemComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("fromRevisionCount")(fromRevisionCount)
-    __obj.updateDynamic("totalCount")(totalCount)
+    val __obj = js.Dynamic.literal(comments = comments, count = count, fromRevisionCount = fromRevisionCount, totalCount = totalCount)
+  
     __obj.asInstanceOf[WorkItemComments]
   }
 }

@@ -20,8 +20,8 @@ object Polygon {
     `type`: geojsonLib.geojsonLibStrings.Polygon,
     bbox: BBox = null
   ): Polygon = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("coordinates")(coordinates)
+    val __obj = js.Dynamic.literal(coordinates = coordinates)
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[Polygon]
   }

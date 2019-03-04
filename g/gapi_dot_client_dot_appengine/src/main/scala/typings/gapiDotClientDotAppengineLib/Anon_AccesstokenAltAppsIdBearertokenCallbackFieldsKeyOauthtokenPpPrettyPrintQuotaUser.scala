@@ -64,10 +64,7 @@ object Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPr
     upload_protocol: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appsId")(appsId)
-    __obj.updateDynamic("servicesId")(servicesId)
-    __obj.updateDynamic("versionsId")(versionsId)
+    val __obj = js.Dynamic.literal(appsId = appsId, servicesId = servicesId, versionsId = versionsId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

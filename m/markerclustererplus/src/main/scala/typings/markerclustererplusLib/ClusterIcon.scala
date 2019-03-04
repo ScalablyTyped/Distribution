@@ -30,7 +30,7 @@ class ClusterIcon protected ()
     * @param latLng The position in latlng.
     * @return The position in pixels.
     */
-  def `getPosFromLatLng_`(latLng: googlemapsLib.googleNs.mapsNs.LatLng): googlemapsLib.googleNs.mapsNs.Point = js.native
+  def getPosFromLatLng_(latLng: googlemapsLib.googleNs.mapsNs.LatLng): googlemapsLib.googleNs.mapsNs.Point = js.native
   /**
     * Hides the icon.
     */

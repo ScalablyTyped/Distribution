@@ -16,9 +16,8 @@ object ViewTuple {
     uiView: atUirouterCoreLib.libViewInterfaceMod.ActiveUIView,
     viewConfig: atUirouterCoreLib.libViewInterfaceMod.ViewConfig
   ): ViewTuple = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uiView")(uiView)
-    __obj.updateDynamic("viewConfig")(viewConfig)
+    val __obj = js.Dynamic.literal(uiView = uiView, viewConfig = viewConfig)
+  
     __obj.asInstanceOf[ViewTuple]
   }
 }

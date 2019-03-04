@@ -84,8 +84,7 @@ object Anon_AltBucketContentEncoding {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltBucketContentEncoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
     if (fields != null) __obj.updateDynamic("fields")(fields)

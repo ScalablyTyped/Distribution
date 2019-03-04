@@ -18,10 +18,8 @@ object Anon_Next {
     prev: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ResponseLink,
     self: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ResponseLink
   ): Anon_Next = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("self")(self)
+    val __obj = js.Dynamic.literal(next = next, prev = prev, self = self)
+  
     __obj.asInstanceOf[Anon_Next]
   }
 }

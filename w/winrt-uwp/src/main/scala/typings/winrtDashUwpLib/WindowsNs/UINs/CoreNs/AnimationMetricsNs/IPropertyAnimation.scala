@@ -28,11 +28,8 @@ object IPropertyAnimation {
     duration: scala.Double,
     `type`: PropertyAnimationType
   ): IPropertyAnimation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("control1")(control1)
-    __obj.updateDynamic("control2")(control2)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(control1 = control1, control2 = control2, delay = delay, duration = duration)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPropertyAnimation]
   }
 }

@@ -24,13 +24,8 @@ object Anon_IgnoreConstraints {
     includeSubTree: scala.Double,
     none: scala.Double
   ): Anon_IgnoreConstraints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoreConstraints")(ignoreConstraints)
-    __obj.updateDynamic("includeAll")(includeAll)
-    __obj.updateDynamic("includeChildren")(includeChildren)
-    __obj.updateDynamic("includeSelf")(includeSelf)
-    __obj.updateDynamic("includeSubTree")(includeSubTree)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(ignoreConstraints = ignoreConstraints, includeAll = includeAll, includeChildren = includeChildren, includeSelf = includeSelf, includeSubTree = includeSubTree, none = none)
+  
     __obj.asInstanceOf[Anon_IgnoreConstraints]
   }
 }

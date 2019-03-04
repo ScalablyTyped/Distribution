@@ -22,12 +22,8 @@ object MoonConfig {
     silent: scala.Boolean,
     version: java.lang.String
   ): MoonConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delimiters")(delimiters)
-    __obj.updateDynamic("keycodes")(keycodes)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(delimiters = delimiters, keycodes = keycodes, prefix = prefix, silent = silent, version = version)
+  
     __obj.asInstanceOf[MoonConfig]
   }
 }

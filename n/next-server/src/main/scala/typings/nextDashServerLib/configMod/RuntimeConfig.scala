@@ -13,8 +13,7 @@ trait RuntimeConfig extends js.Object {
 object RuntimeConfig {
   @scala.inline
   def apply(serverRuntimeConfig: js.Any, publicRuntimeConfig: js.Any = null): RuntimeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serverRuntimeConfig")(serverRuntimeConfig)
+    val __obj = js.Dynamic.literal(serverRuntimeConfig = serverRuntimeConfig)
     if (publicRuntimeConfig != null) __obj.updateDynamic("publicRuntimeConfig")(publicRuntimeConfig)
     __obj.asInstanceOf[RuntimeConfig]
   }

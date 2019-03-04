@@ -20,10 +20,8 @@ object HostedGit {
     `type`: java.lang.String,
     user: java.lang.String
   ): HostedGit = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(domain = domain, project = project, user = user)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[HostedGit]
   }
 }

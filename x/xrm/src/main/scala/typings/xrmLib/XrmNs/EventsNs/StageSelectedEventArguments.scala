@@ -19,8 +19,8 @@ trait StageSelectedEventArguments extends js.Object {
 object StageSelectedEventArguments {
   @scala.inline
   def apply(getStage: js.Function0[xrmLib.XrmNs.ProcessFlowNs.Stage]): StageSelectedEventArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStage")(getStage)
+    val __obj = js.Dynamic.literal(getStage = getStage)
+  
     __obj.asInstanceOf[StageSelectedEventArguments]
   }
 }

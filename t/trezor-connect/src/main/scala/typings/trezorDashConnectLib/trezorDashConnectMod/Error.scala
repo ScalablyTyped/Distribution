@@ -17,9 +17,8 @@ object Error {
     payload: trezorDashConnectLib.Anon_Error,
     success: trezorDashConnectLib.trezorDashConnectLibNumbers.`false`
   ): Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(payload = payload, success = success)
+  
     __obj.asInstanceOf[Error]
   }
 }

@@ -35,12 +35,8 @@ object XFastTokenHandler {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFastTokenHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTokenFromUTF8")(getTokenFromUTF8)
-    __obj.updateDynamic("getUTF8Identifier")(getUTF8Identifier)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getTokenFromUTF8 = getTokenFromUTF8, getUTF8Identifier = getUTF8Identifier, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFastTokenHandler]
   }
 }

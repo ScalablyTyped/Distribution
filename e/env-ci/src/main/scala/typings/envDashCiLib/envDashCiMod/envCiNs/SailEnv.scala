@@ -31,14 +31,7 @@ object SailEnv {
     branch: java.lang.String = null,
     pr: java.lang.String = null
   ): SailEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("isPr")(isPr)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(commit = commit, isCi = isCi, isPr = isPr, name = name, root = root, service = service, slug = slug)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (pr != null) __obj.updateDynamic("pr")(pr)
     __obj.asInstanceOf[SailEnv]

@@ -24,13 +24,8 @@ object Anon_BooleanGuid {
     string: scala.Double,
     uri: scala.Double
   ): Anon_BooleanGuid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(boolean = boolean, guid = guid, none = none, number = number, string = string, uri = uri)
+  
     __obj.asInstanceOf[Anon_BooleanGuid]
   }
 }

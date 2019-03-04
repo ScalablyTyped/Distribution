@@ -12,8 +12,8 @@ trait ViewPagerAndroidOnPageSelectedEventData extends js.Object {
 object ViewPagerAndroidOnPageSelectedEventData {
   @scala.inline
   def apply(position: scala.Double): ViewPagerAndroidOnPageSelectedEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(position = position)
+  
     __obj.asInstanceOf[ViewPagerAndroidOnPageSelectedEventData]
   }
 }

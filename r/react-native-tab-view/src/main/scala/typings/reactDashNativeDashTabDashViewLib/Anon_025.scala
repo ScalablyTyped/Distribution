@@ -22,11 +22,8 @@ object Anon_025 {
     swipeDistanceThreshold: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`120`,
     swipeVelocityThreshold: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`0DOT25`
   ): Anon_025 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configureTransition")(configureTransition)
-    __obj.updateDynamic("initialLayout")(initialLayout)
-    __obj.updateDynamic("swipeDistanceThreshold")(swipeDistanceThreshold)
-    __obj.updateDynamic("swipeVelocityThreshold")(swipeVelocityThreshold)
+    val __obj = js.Dynamic.literal(configureTransition = configureTransition, initialLayout = initialLayout, swipeDistanceThreshold = swipeDistanceThreshold, swipeVelocityThreshold = swipeVelocityThreshold)
+  
     __obj.asInstanceOf[Anon_025]
   }
 }

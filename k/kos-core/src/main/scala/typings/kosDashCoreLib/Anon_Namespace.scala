@@ -13,7 +13,8 @@ trait Anon_Namespace extends js.Object {
 object Anon_Namespace {
   @scala.inline
   def apply(`type`: java.lang.String, namespace: java.lang.String = null): Anon_Namespace = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     __obj.asInstanceOf[Anon_Namespace]
   }

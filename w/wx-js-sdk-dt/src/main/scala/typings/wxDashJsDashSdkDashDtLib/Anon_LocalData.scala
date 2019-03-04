@@ -12,8 +12,8 @@ trait Anon_LocalData extends js.Object {
 object Anon_LocalData {
   @scala.inline
   def apply(localData: java.lang.String): Anon_LocalData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localData")(localData)
+    val __obj = js.Dynamic.literal(localData = localData)
+  
     __obj.asInstanceOf[Anon_LocalData]
   }
 }

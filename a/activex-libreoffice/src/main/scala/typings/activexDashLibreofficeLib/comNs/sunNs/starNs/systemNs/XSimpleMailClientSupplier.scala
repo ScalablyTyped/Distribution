@@ -27,11 +27,8 @@ object XSimpleMailClientSupplier {
     querySimpleMailClient: js.Function0[XSimpleMailClient],
     release: js.Function0[scala.Unit]
   ): XSimpleMailClientSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("querySimpleMailClient")(querySimpleMailClient)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, querySimpleMailClient = querySimpleMailClient, release = release)
+  
     __obj.asInstanceOf[XSimpleMailClientSupplier]
   }
 }

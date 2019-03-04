@@ -16,8 +16,8 @@ object SelectFilterData {
     `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.SelectFilter,
     value: java.lang.String
   ): SelectFilterData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SelectFilterData]
   }
 }

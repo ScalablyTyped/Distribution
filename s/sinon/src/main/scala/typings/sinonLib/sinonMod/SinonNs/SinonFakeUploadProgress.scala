@@ -20,11 +20,8 @@ object SinonFakeUploadProgress {
     eventListeners: sinonLib.Anon_Abort,
     removeEventListener: js.Function2[java.lang.String, js.Function1[/* e */ sinonLib.sinonMod.Event, _], scala.Unit]
   ): SinonFakeUploadProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispatchEvent")(dispatchEvent)
-    __obj.updateDynamic("eventListeners")(eventListeners)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, dispatchEvent = dispatchEvent, eventListeners = eventListeners, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[SinonFakeUploadProgress]
   }
 }

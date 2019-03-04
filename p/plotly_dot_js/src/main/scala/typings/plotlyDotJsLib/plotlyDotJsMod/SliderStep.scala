@@ -52,13 +52,8 @@ object SliderStep {
     value: java.lang.String,
     visible: scala.Boolean
   ): SliderStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(args = args, execute = execute, label = label, method = method.asInstanceOf[js.Any], value = value, visible = visible)
+  
     __obj.asInstanceOf[SliderStep]
   }
 }

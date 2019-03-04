@@ -34,18 +34,8 @@ object FlashText {
     setTextAttr: js.Function0[js.Any],
     setTextString: js.Function0[js.Any]
   ): FlashText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accName")(accName)
-    __obj.updateDynamic("antiAliasSharpness")(antiAliasSharpness)
-    __obj.updateDynamic("antiAliasThickness")(antiAliasThickness)
-    __obj.updateDynamic("autoExpand")(autoExpand)
-    __obj.updateDynamic("border")(border)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("embeddedCharacters")(embeddedCharacters)
-    __obj.updateDynamic("getTextAttr")(getTextAttr)
-    __obj.updateDynamic("getTextString")(getTextString)
-    __obj.updateDynamic("setTextAttr")(setTextAttr)
-    __obj.updateDynamic("setTextString")(setTextString)
+    val __obj = js.Dynamic.literal(accName = accName, antiAliasSharpness = antiAliasSharpness, antiAliasThickness = antiAliasThickness, autoExpand = autoExpand, border = border, description = description, embeddedCharacters = embeddedCharacters, getTextAttr = getTextAttr, getTextString = getTextString, setTextAttr = setTextAttr, setTextString = setTextString)
+  
     __obj.asInstanceOf[FlashText]
   }
 }

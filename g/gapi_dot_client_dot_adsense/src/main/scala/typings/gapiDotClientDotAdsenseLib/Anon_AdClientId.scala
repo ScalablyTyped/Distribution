@@ -51,9 +51,7 @@ object Anon_AdClientId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdClientId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adClientId")(adClientId)
-    __obj.updateDynamic("adUnitId")(adUnitId)
+    val __obj = js.Dynamic.literal(adClientId = adClientId, adUnitId = adUnitId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

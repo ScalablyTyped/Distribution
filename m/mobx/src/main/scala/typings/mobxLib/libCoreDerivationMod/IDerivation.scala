@@ -38,15 +38,7 @@ object IDerivation {
     unboundDepsCount: scala.Double,
     newObserving: js.Array[mobxLib.libCoreObservableMod.IObservable] = null
   ): IDerivation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__mapid")(__mapid)
-    __obj.updateDynamic("dependenciesState")(dependenciesState)
-    __obj.updateDynamic("isTracing")(isTracing)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("observing")(observing)
-    __obj.updateDynamic("onBecomeStale")(onBecomeStale)
-    __obj.updateDynamic("runId")(runId)
-    __obj.updateDynamic("unboundDepsCount")(unboundDepsCount)
+    val __obj = js.Dynamic.literal(__mapid = __mapid, dependenciesState = dependenciesState, isTracing = isTracing, name = name, observing = observing, onBecomeStale = onBecomeStale, runId = runId, unboundDepsCount = unboundDepsCount)
     if (newObserving != null) __obj.updateDynamic("newObserving")(newObserving)
     __obj.asInstanceOf[IDerivation]
   }

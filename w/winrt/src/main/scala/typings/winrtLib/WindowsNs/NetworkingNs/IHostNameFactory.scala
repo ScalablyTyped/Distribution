@@ -12,8 +12,8 @@ trait IHostNameFactory extends js.Object {
 object IHostNameFactory {
   @scala.inline
   def apply(createHostName: js.Function1[java.lang.String, HostName]): IHostNameFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createHostName")(createHostName)
+    val __obj = js.Dynamic.literal(createHostName = createHostName)
+  
     __obj.asInstanceOf[IHostNameFactory]
   }
 }

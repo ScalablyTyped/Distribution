@@ -229,8 +229,7 @@ object ZoneSpec {
     ] = null,
     properties: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ZoneSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (onCancelTask != null) __obj.updateDynamic("onCancelTask")(onCancelTask)
     if (onFork != null) __obj.updateDynamic("onFork")(onFork)
     if (onHandleError != null) __obj.updateDynamic("onHandleError")(onHandleError)

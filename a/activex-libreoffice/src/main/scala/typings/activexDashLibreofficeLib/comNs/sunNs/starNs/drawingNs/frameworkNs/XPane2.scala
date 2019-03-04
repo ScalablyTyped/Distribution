@@ -45,12 +45,8 @@ object XPane2 {
     ],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): XPane2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Accessible")(Accessible)
-    __obj.updateDynamic("getAccessible")(getAccessible)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("setAccessible")(setAccessible)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(Accessible = Accessible, getAccessible = getAccessible, isVisible = isVisible, setAccessible = setAccessible, setVisible = setVisible)
+  
     __obj.asInstanceOf[XPane2]
   }
 }

@@ -18,10 +18,8 @@ object EventInfo {
     registerFunc: js.Function1[js.Function1[/* args */ js.Any, scala.Unit], js.Promise[_]],
     unregisterFunc: js.Function1[js.Function1[/* args */ js.Any, scala.Unit], js.Promise[_]]
   ): EventInfo[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventArgsTransformFunc")(eventArgsTransformFunc)
-    __obj.updateDynamic("registerFunc")(registerFunc)
-    __obj.updateDynamic("unregisterFunc")(unregisterFunc)
+    val __obj = js.Dynamic.literal(eventArgsTransformFunc = eventArgsTransformFunc, registerFunc = registerFunc, unregisterFunc = unregisterFunc)
+  
     __obj.asInstanceOf[EventInfo[T]]
   }
 }

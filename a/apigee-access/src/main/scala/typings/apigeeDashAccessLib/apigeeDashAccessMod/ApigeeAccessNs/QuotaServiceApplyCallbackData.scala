@@ -22,12 +22,8 @@ object QuotaServiceApplyCallbackData {
     timestamp: scala.Double,
     used: scala.Double
   ): QuotaServiceApplyCallbackData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowed")(allowed)
-    __obj.updateDynamic("expiryTime")(expiryTime)
-    __obj.updateDynamic("isAllowed")(isAllowed)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("used")(used)
+    val __obj = js.Dynamic.literal(allowed = allowed, expiryTime = expiryTime, isAllowed = isAllowed, timestamp = timestamp, used = used)
+  
     __obj.asInstanceOf[QuotaServiceApplyCallbackData]
   }
 }

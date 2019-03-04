@@ -36,18 +36,7 @@ object File {
     uuid: java.lang.String,
     datetime_removed: java.lang.String = null
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datetime_stored")(datetime_stored)
-    __obj.updateDynamic("datetime_uploaded")(datetime_uploaded)
-    __obj.updateDynamic("image_info")(image_info)
-    __obj.updateDynamic("is_image")(is_image)
-    __obj.updateDynamic("is_ready")(is_ready)
-    __obj.updateDynamic("mime_type")(mime_type)
-    __obj.updateDynamic("original_file_url")(original_file_url)
-    __obj.updateDynamic("original_filename")(original_filename)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(datetime_stored = datetime_stored, datetime_uploaded = datetime_uploaded, image_info = image_info, is_image = is_image, is_ready = is_ready, mime_type = mime_type, original_file_url = original_file_url, original_filename = original_filename, size = size, url = url, uuid = uuid)
     if (datetime_removed != null) __obj.updateDynamic("datetime_removed")(datetime_removed)
     __obj.asInstanceOf[File]
   }

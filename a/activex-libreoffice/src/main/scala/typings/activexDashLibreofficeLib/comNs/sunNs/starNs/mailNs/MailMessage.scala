@@ -81,29 +81,8 @@ object MailMessage {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): MailMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachments")(Attachments)
-    __obj.updateDynamic("BccRecipients")(BccRecipients)
-    __obj.updateDynamic("Body")(Body)
-    __obj.updateDynamic("CcRecipients")(CcRecipients)
-    __obj.updateDynamic("Recipients")(Recipients)
-    __obj.updateDynamic("ReplyToAddress")(ReplyToAddress)
-    __obj.updateDynamic("SenderAddress")(SenderAddress)
-    __obj.updateDynamic("SenderName")(SenderName)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addAttachment")(addAttachment)
-    __obj.updateDynamic("addBccRecipient")(addBccRecipient)
-    __obj.updateDynamic("addCcRecipient")(addCcRecipient)
-    __obj.updateDynamic("addRecipient")(addRecipient)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createWithAttachment")(createWithAttachment)
-    __obj.updateDynamic("getAttachments")(getAttachments)
-    __obj.updateDynamic("getBccRecipients")(getBccRecipients)
-    __obj.updateDynamic("getCcRecipients")(getCcRecipients)
-    __obj.updateDynamic("getRecipients")(getRecipients)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, BccRecipients = BccRecipients, Body = Body, CcRecipients = CcRecipients, Recipients = Recipients, ReplyToAddress = ReplyToAddress, SenderAddress = SenderAddress, SenderName = SenderName, Subject = Subject, acquire = acquire, addAttachment = addAttachment, addBccRecipient = addBccRecipient, addCcRecipient = addCcRecipient, addRecipient = addRecipient, create = create, createWithAttachment = createWithAttachment, getAttachments = getAttachments, getBccRecipients = getBccRecipients, getCcRecipients = getCcRecipients, getRecipients = getRecipients, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[MailMessage]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_Aggregate extends js.Object {
 object Anon_Aggregate {
   @scala.inline
   def apply(aggregate: java.lang.String, aggregateId: java.lang.String, context: java.lang.String): Anon_Aggregate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregate")(aggregate)
-    __obj.updateDynamic("aggregateId")(aggregateId)
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(aggregate = aggregate, aggregateId = aggregateId, context = context)
+  
     __obj.asInstanceOf[Anon_Aggregate]
   }
 }

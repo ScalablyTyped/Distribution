@@ -24,12 +24,8 @@ object NotificationStatisticsQueryConditions {
     `type`: NotificationStatisticType,
     user: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   ): NotificationStatisticsQueryConditions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("hitCountMinimum")(hitCountMinimum)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(endDate = endDate, hitCountMinimum = hitCountMinimum, path = path, startDate = startDate, user = user)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NotificationStatisticsQueryConditions]
   }
 }

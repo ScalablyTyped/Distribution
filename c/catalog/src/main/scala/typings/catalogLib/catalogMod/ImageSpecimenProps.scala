@@ -28,8 +28,7 @@ object ImageSpecimenProps {
     scale: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
   ): ImageSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)

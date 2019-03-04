@@ -21,10 +21,8 @@ object CameraContext {
     stopRecord: js.Function1[StopRecordOptions, scala.Unit],
     takePhoto: js.Function1[TakePhotoOptions, scala.Unit]
   ): CameraContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startRecord")(startRecord)
-    __obj.updateDynamic("stopRecord")(stopRecord)
-    __obj.updateDynamic("takePhoto")(takePhoto)
+    val __obj = js.Dynamic.literal(startRecord = startRecord, stopRecord = stopRecord, takePhoto = takePhoto)
+  
     __obj.asInstanceOf[CameraContext]
   }
 }

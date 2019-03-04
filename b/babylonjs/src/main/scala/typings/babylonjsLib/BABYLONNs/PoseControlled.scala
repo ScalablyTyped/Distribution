@@ -53,13 +53,7 @@ object PoseControlled {
     updateFromDevice: js.Function1[DevicePose, scala.Unit],
     devicePosition: Vector3 = null
   ): PoseControlled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceRotationQuaternion")(deviceRotationQuaternion)
-    __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("rawPose")(rawPose.asInstanceOf[js.Any])
-    __obj.updateDynamic("rotationQuaternion")(rotationQuaternion)
-    __obj.updateDynamic("updateFromDevice")(updateFromDevice)
+    val __obj = js.Dynamic.literal(deviceRotationQuaternion = deviceRotationQuaternion, deviceScaleFactor = deviceScaleFactor, position = position, rawPose = rawPose.asInstanceOf[js.Any], rotationQuaternion = rotationQuaternion, updateFromDevice = updateFromDevice)
     if (devicePosition != null) __obj.updateDynamic("devicePosition")(devicePosition)
     __obj.asInstanceOf[PoseControlled]
   }

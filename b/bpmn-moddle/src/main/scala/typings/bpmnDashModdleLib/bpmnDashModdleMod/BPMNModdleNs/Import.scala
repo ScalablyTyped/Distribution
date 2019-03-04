@@ -19,11 +19,8 @@ object Import {
     location: java.lang.String,
     namespace: java.lang.String
   ): Import = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("importType")(importType)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal($type = $type, importType = importType, location = location, namespace = namespace)
+  
     __obj.asInstanceOf[Import]
   }
 }

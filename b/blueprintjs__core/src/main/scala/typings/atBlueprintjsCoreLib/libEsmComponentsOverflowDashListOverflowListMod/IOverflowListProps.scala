@@ -81,10 +81,7 @@ object IOverflowListProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
   ): IOverflowListProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("overflowRenderer")(overflowRenderer)
-    __obj.updateDynamic("visibleItemRenderer")(visibleItemRenderer)
+    val __obj = js.Dynamic.literal(items = items, overflowRenderer = overflowRenderer, visibleItemRenderer = visibleItemRenderer)
     if (className != null) __obj.updateDynamic("className")(className)
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
     if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])

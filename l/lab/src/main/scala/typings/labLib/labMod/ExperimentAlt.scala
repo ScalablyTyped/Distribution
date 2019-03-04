@@ -14,10 +14,8 @@ trait ExperimentAlt extends js.Object {
 object ExperimentAlt {
   @scala.inline
   def apply(describe: SkipOnlyExperiment, experiment: SkipOnlyExperiment, suite: SkipOnlyExperiment): ExperimentAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("describe")(describe)
-    __obj.updateDynamic("experiment")(experiment)
-    __obj.updateDynamic("suite")(suite)
+    val __obj = js.Dynamic.literal(describe = describe, experiment = experiment, suite = suite)
+  
     __obj.asInstanceOf[ExperimentAlt]
   }
 }

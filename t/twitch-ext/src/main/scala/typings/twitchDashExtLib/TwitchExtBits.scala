@@ -78,13 +78,8 @@ object TwitchExtBits {
     showBitsBalance: js.Function0[scala.Unit],
     useBits: js.Function1[java.lang.String, scala.Unit]
   ): TwitchExtBits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getProducts")(getProducts)
-    __obj.updateDynamic("onTransactionCancelled")(onTransactionCancelled)
-    __obj.updateDynamic("onTransactionComplete")(onTransactionComplete)
-    __obj.updateDynamic("setUseLoopback")(setUseLoopback)
-    __obj.updateDynamic("showBitsBalance")(showBitsBalance)
-    __obj.updateDynamic("useBits")(useBits)
+    val __obj = js.Dynamic.literal(getProducts = getProducts, onTransactionCancelled = onTransactionCancelled, onTransactionComplete = onTransactionComplete, setUseLoopback = setUseLoopback, showBitsBalance = showBitsBalance, useBits = useBits)
+  
     __obj.asInstanceOf[TwitchExtBits]
   }
 }

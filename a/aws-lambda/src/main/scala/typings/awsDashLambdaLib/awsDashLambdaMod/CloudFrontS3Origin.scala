@@ -22,12 +22,8 @@ object CloudFrontS3Origin {
     path: java.lang.String,
     region: java.lang.String
   ): CloudFrontS3Origin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
-    __obj.updateDynamic("customHeaders")(customHeaders)
-    __obj.updateDynamic("domainName")(domainName)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(authMethod = authMethod.asInstanceOf[js.Any], customHeaders = customHeaders, domainName = domainName, path = path, region = region)
+  
     __obj.asInstanceOf[CloudFrontS3Origin]
   }
 }

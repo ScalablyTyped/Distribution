@@ -46,24 +46,8 @@ object Anon_AllLiteral {
     UnionType: doctrineLib.doctrineLibStrings.UnionType,
     VoidLiteral: doctrineLib.doctrineLibStrings.VoidLiteral
   ): Anon_AllLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllLiteral")(AllLiteral)
-    __obj.updateDynamic("ArrayType")(ArrayType)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("FunctionType")(FunctionType)
-    __obj.updateDynamic("NameExpression")(NameExpression)
-    __obj.updateDynamic("NonNullableType")(NonNullableType)
-    __obj.updateDynamic("NullLiteral")(NullLiteral)
-    __obj.updateDynamic("NullableLiteral")(NullableLiteral)
-    __obj.updateDynamic("NullableType")(NullableType)
-    __obj.updateDynamic("OptionalType")(OptionalType)
-    __obj.updateDynamic("ParameterType")(ParameterType)
-    __obj.updateDynamic("RecordType")(RecordType)
-    __obj.updateDynamic("RestType")(RestType)
-    __obj.updateDynamic("TypeApplication")(TypeApplication)
-    __obj.updateDynamic("UndefinedLiteral")(UndefinedLiteral)
-    __obj.updateDynamic("UnionType")(UnionType)
-    __obj.updateDynamic("VoidLiteral")(VoidLiteral)
+    val __obj = js.Dynamic.literal(AllLiteral = AllLiteral, ArrayType = ArrayType, FieldType = FieldType, FunctionType = FunctionType, NameExpression = NameExpression, NonNullableType = NonNullableType, NullLiteral = NullLiteral, NullableLiteral = NullableLiteral, NullableType = NullableType, OptionalType = OptionalType, ParameterType = ParameterType, RecordType = RecordType, RestType = RestType, TypeApplication = TypeApplication, UndefinedLiteral = UndefinedLiteral, UnionType = UnionType, VoidLiteral = VoidLiteral)
+  
     __obj.asInstanceOf[Anon_AllLiteral]
   }
 }

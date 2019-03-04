@@ -24,12 +24,8 @@ object ReleaseWorkItemRef {
     `type`: java.lang.String,
     url: java.lang.String
   ): ReleaseWorkItemRef = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("assignee")(assignee)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(assignee = assignee, id = id, state = state, title = title, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ReleaseWorkItemRef]
   }
 }

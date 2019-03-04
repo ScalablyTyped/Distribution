@@ -13,9 +13,8 @@ trait IStatus extends js.Object {
 object IStatus {
   @scala.inline
   def apply(code: scala.Double, message: java.lang.String): IStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
     __obj.asInstanceOf[IStatus]
   }
 }

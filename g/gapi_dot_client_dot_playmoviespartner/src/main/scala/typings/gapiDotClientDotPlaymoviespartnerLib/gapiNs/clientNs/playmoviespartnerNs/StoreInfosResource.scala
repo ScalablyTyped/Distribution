@@ -27,9 +27,8 @@ object StoreInfosResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListStoreInfosResponse]
     ]
   ): StoreInfosResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(country = country, list = list)
+  
     __obj.asInstanceOf[StoreInfosResource]
   }
 }

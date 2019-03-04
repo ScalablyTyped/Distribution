@@ -146,25 +146,8 @@ object XFormOperations {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): XFormOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Controller")(Controller)
-    __obj.updateDynamic("Cursor")(Cursor)
-    __obj.updateDynamic("FeatureInvalidation")(FeatureInvalidation)
-    __obj.updateDynamic("UpdateCursor")(UpdateCursor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("commitCurrentControl")(commitCurrentControl)
-    __obj.updateDynamic("commitCurrentRecord")(commitCurrentRecord)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("executeWithArguments")(executeWithArguments)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isInsertionRow")(isInsertionRow)
-    __obj.updateDynamic("isModifiedRow")(isModifiedRow)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(Controller = Controller, Cursor = Cursor, FeatureInvalidation = FeatureInvalidation, UpdateCursor = UpdateCursor, acquire = acquire, addEventListener = addEventListener, commitCurrentControl = commitCurrentControl, commitCurrentRecord = commitCurrentRecord, dispose = dispose, execute = execute, executeWithArguments = executeWithArguments, getState = getState, isEnabled = isEnabled, isInsertionRow = isInsertionRow, isModifiedRow = isModifiedRow, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XFormOperations]
   }
 }

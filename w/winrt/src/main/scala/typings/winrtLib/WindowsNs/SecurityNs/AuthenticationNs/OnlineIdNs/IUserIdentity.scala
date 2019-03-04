@@ -28,15 +28,8 @@ object IUserIdentity {
     signInName: java.lang.String,
     tickets: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[OnlineIdServiceTicket]
   ): IUserIdentity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstName")(firstName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isBetaAccount")(isBetaAccount)
-    __obj.updateDynamic("isConfirmedPC")(isConfirmedPC)
-    __obj.updateDynamic("lastName")(lastName)
-    __obj.updateDynamic("safeCustomerId")(safeCustomerId)
-    __obj.updateDynamic("signInName")(signInName)
-    __obj.updateDynamic("tickets")(tickets)
+    val __obj = js.Dynamic.literal(firstName = firstName, id = id, isBetaAccount = isBetaAccount, isConfirmedPC = isConfirmedPC, lastName = lastName, safeCustomerId = safeCustomerId, signInName = signInName, tickets = tickets)
+  
     __obj.asInstanceOf[IUserIdentity]
   }
 }

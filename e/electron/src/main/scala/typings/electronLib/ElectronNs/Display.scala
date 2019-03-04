@@ -41,15 +41,8 @@ object Display {
     workArea: Rectangle,
     workAreaSize: Size
   ): Display = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("touchSupport")(touchSupport.asInstanceOf[js.Any])
-    __obj.updateDynamic("workArea")(workArea)
-    __obj.updateDynamic("workAreaSize")(workAreaSize)
+    val __obj = js.Dynamic.literal(bounds = bounds, id = id, rotation = rotation, scaleFactor = scaleFactor, size = size, touchSupport = touchSupport.asInstanceOf[js.Any], workArea = workArea, workAreaSize = workAreaSize)
+  
     __obj.asInstanceOf[Display]
   }
 }

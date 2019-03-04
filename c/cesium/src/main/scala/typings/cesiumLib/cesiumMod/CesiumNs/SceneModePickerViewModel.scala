@@ -40,21 +40,8 @@ object SceneModePickerViewModel {
     tooltip3D: java.lang.String,
     tooltipColumbusView: java.lang.String
   ): SceneModePickerViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("dropDownVisible")(dropDownVisible)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("morphTo2D")(morphTo2D)
-    __obj.updateDynamic("morphTo3D")(morphTo3D)
-    __obj.updateDynamic("morphToColumbusView")(morphToColumbusView)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("sceneMode")(sceneMode)
-    __obj.updateDynamic("selectedTooltip")(selectedTooltip)
-    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
-    __obj.updateDynamic("tooltip2D")(tooltip2D)
-    __obj.updateDynamic("tooltip3D")(tooltip3D)
-    __obj.updateDynamic("tooltipColumbusView")(tooltipColumbusView)
+    val __obj = js.Dynamic.literal(destroy = destroy, dropDownVisible = dropDownVisible, duration = duration, isDestroyed = isDestroyed, morphTo2D = morphTo2D, morphTo3D = morphTo3D, morphToColumbusView = morphToColumbusView, scene = scene, sceneMode = sceneMode, selectedTooltip = selectedTooltip, toggleDropDown = toggleDropDown, tooltip2D = tooltip2D, tooltip3D = tooltip3D, tooltipColumbusView = tooltipColumbusView)
+  
     __obj.asInstanceOf[SceneModePickerViewModel]
   }
 }

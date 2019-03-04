@@ -20,11 +20,8 @@ object DeploymentAuthorizationInfo {
     tenantId: java.lang.String,
     vstsAccessTokenKey: java.lang.String
   ): DeploymentAuthorizationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationHeaderFor")(authorizationHeaderFor)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("tenantId")(tenantId)
-    __obj.updateDynamic("vstsAccessTokenKey")(vstsAccessTokenKey)
+    val __obj = js.Dynamic.literal(authorizationHeaderFor = authorizationHeaderFor, resources = resources, tenantId = tenantId, vstsAccessTokenKey = vstsAccessTokenKey)
+  
     __obj.asInstanceOf[DeploymentAuthorizationInfo]
   }
 }

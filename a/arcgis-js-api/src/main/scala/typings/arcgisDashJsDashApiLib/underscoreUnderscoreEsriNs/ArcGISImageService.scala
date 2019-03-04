@@ -195,31 +195,8 @@ object ArcGISImageService {
     url: java.lang.String,
     version: scala.Double
   ): ArcGISImageService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressionQuality")(compressionQuality)
-    __obj.updateDynamic("compressionTolerance")(compressionTolerance)
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("definitionExpression")(definitionExpression)
-    __obj.updateDynamic("domainFields")(domainFields)
-    __obj.updateDynamic("fetchImage")(fetchImage)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("fullExtent")(fullExtent)
-    __obj.updateDynamic("hasMultidimensions")(hasMultidimensions)
-    __obj.updateDynamic("hasRasterAttributeTable")(hasRasterAttributeTable)
-    __obj.updateDynamic("imageMaxHeight")(imageMaxHeight)
-    __obj.updateDynamic("imageMaxWidth")(imageMaxWidth)
-    __obj.updateDynamic("mosaicRule")(mosaicRule)
-    __obj.updateDynamic("multidimensionalInfo")(multidimensionalInfo)
-    __obj.updateDynamic("pixelType")(pixelType)
-    __obj.updateDynamic("popupTemplate")(popupTemplate)
-    __obj.updateDynamic("rasterAttributeTable")(rasterAttributeTable)
-    __obj.updateDynamic("rasterAttributeTableFieldPrefix")(rasterAttributeTableFieldPrefix)
-    __obj.updateDynamic("rasterFields")(rasterFields)
-    __obj.updateDynamic("renderingRule")(renderingRule)
-    __obj.updateDynamic("spatialReference")(spatialReference)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(compressionQuality = compressionQuality, compressionTolerance = compressionTolerance, copyright = copyright, definitionExpression = definitionExpression, domainFields = domainFields, fetchImage = fetchImage, fields = fields, format = format, fullExtent = fullExtent, hasMultidimensions = hasMultidimensions, hasRasterAttributeTable = hasRasterAttributeTable, imageMaxHeight = imageMaxHeight, imageMaxWidth = imageMaxWidth, mosaicRule = mosaicRule, multidimensionalInfo = multidimensionalInfo, pixelType = pixelType, popupTemplate = popupTemplate, rasterAttributeTable = rasterAttributeTable, rasterAttributeTableFieldPrefix = rasterAttributeTableFieldPrefix, rasterFields = rasterFields, renderingRule = renderingRule, spatialReference = spatialReference, url = url, version = version)
+  
     __obj.asInstanceOf[ArcGISImageService]
   }
 }

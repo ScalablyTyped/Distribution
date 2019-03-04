@@ -32,12 +32,8 @@ object XUIConfigurationStorage {
     release: js.Function0[scala.Unit],
     setStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
   ): XUIConfigurationStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("hasStorage")(hasStorage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setStorage")(setStorage)
+    val __obj = js.Dynamic.literal(acquire = acquire, hasStorage = hasStorage, queryInterface = queryInterface, release = release, setStorage = setStorage)
+  
     __obj.asInstanceOf[XUIConfigurationStorage]
   }
 }

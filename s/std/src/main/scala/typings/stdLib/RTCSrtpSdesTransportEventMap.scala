@@ -12,8 +12,8 @@ trait RTCSrtpSdesTransportEventMap extends js.Object {
 object RTCSrtpSdesTransportEventMap {
   @scala.inline
   def apply(error: Event): RTCSrtpSdesTransportEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[RTCSrtpSdesTransportEventMap]
   }
 }

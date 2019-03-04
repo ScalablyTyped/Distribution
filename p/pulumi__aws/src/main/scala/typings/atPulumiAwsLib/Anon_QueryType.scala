@@ -16,8 +16,7 @@ object Anon_QueryType {
     query: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_QueryType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_QueryType]
   }

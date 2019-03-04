@@ -12,8 +12,8 @@ trait Anon_FrequencyInput extends js.Object {
 object Anon_FrequencyInput {
   @scala.inline
   def apply(frequency: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_FrequencyInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(frequency = frequency.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FrequencyInput]
   }
 }

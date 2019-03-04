@@ -43,14 +43,8 @@ object OperationMemberType {
     idlType: IDLTypeDescription = null,
     name: java.lang.String = null
   ): OperationMemberType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("deleter")(deleter)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("getter")(getter)
-    __obj.updateDynamic("setter")(setter)
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("stringifier")(stringifier)
+    val __obj = js.Dynamic.literal(arguments = arguments, deleter = deleter, extAttrs = extAttrs, getter = getter, setter = setter, static = static, stringifier = stringifier)
+    __obj.updateDynamic("type")(`type`)
     if (idlType != null) __obj.updateDynamic("idlType")(idlType)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[OperationMemberType]

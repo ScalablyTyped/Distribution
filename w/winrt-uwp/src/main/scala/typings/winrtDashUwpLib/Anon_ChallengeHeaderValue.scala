@@ -16,9 +16,8 @@ object Anon_ChallengeHeaderValue {
     challengeHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpChallengeHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ChallengeHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challengeHeaderValue")(challengeHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(challengeHeaderValue = challengeHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ChallengeHeaderValue]
   }
 }

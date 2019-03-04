@@ -81,10 +81,8 @@ object Diagnostics {
     hostName: java.lang.String,
     hostVersion: java.lang.String
   ): Diagnostics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OWAView")(OWAView.asInstanceOf[js.Any])
-    __obj.updateDynamic("hostName")(hostName)
-    __obj.updateDynamic("hostVersion")(hostVersion)
+    val __obj = js.Dynamic.literal(OWAView = OWAView.asInstanceOf[js.Any], hostName = hostName, hostVersion = hostVersion)
+  
     __obj.asInstanceOf[Diagnostics]
   }
 }

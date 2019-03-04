@@ -20,8 +20,8 @@ object detections {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateDetectionListResponse]
     ]
   ): detections = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[detections]
   }
 }

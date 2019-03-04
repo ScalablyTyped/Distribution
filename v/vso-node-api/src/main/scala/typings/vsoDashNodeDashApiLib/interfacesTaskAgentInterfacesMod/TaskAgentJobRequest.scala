@@ -52,27 +52,8 @@ object TaskAgentJobRequest {
     scopeId: java.lang.String,
     serviceOwner: java.lang.String
   ): TaskAgentJobRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignTime")(assignTime)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("hostId")(hostId)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("jobName")(jobName)
-    __obj.updateDynamic("lockedUntil")(lockedUntil)
-    __obj.updateDynamic("matchedAgents")(matchedAgents)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("planId")(planId)
-    __obj.updateDynamic("planType")(planType)
-    __obj.updateDynamic("queueTime")(queueTime)
-    __obj.updateDynamic("receiveTime")(receiveTime)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("reservedAgent")(reservedAgent)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("scopeId")(scopeId)
-    __obj.updateDynamic("serviceOwner")(serviceOwner)
+    val __obj = js.Dynamic.literal(assignTime = assignTime, data = data, definition = definition, demands = demands, finishTime = finishTime, hostId = hostId, jobId = jobId, jobName = jobName, lockedUntil = lockedUntil, matchedAgents = matchedAgents, owner = owner, planId = planId, planType = planType, queueTime = queueTime, receiveTime = receiveTime, requestId = requestId, reservedAgent = reservedAgent, result = result, scopeId = scopeId, serviceOwner = serviceOwner)
+  
     __obj.asInstanceOf[TaskAgentJobRequest]
   }
 }

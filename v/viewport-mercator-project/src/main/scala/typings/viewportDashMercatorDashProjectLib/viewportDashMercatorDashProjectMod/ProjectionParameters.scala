@@ -22,12 +22,8 @@ object ProjectionParameters {
     fov: scala.Double,
     near: scala.Double
   ): ProjectionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspect")(aspect)
-    __obj.updateDynamic("far")(far)
-    __obj.updateDynamic("focalDistance")(focalDistance)
-    __obj.updateDynamic("fov")(fov)
-    __obj.updateDynamic("near")(near)
+    val __obj = js.Dynamic.literal(aspect = aspect, far = far, focalDistance = focalDistance, fov = fov, near = near)
+  
     __obj.asInstanceOf[ProjectionParameters]
   }
 }

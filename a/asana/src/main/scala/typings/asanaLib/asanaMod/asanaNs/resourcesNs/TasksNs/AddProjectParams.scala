@@ -20,8 +20,7 @@ object AddProjectParams {
     insertBefore: scala.Int | scala.Double = null,
     section: scala.Int | scala.Double = null
   ): AddProjectParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(project = project)
     if (insertAfter != null) __obj.updateDynamic("insertAfter")(insertAfter.asInstanceOf[js.Any])
     if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore.asInstanceOf[js.Any])
     if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])

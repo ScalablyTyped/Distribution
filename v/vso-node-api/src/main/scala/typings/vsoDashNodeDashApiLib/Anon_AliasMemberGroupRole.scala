@@ -36,19 +36,8 @@ object Anon_AliasMemberGroupRole {
     subscriptionAlias: scala.Double,
     unknown: scala.Double
   ): Anon_AliasMemberGroupRole = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliasMemberGroupRole")(aliasMemberGroupRole)
-    __obj.updateDynamic("directMember")(directMember)
-    __obj.updateDynamic("directMemberGroupRole")(directMemberGroupRole)
-    __obj.updateDynamic("follows")(follows)
-    __obj.updateDynamic("groupAlias")(groupAlias)
-    __obj.updateDynamic("inDirectMemberGroupRole")(inDirectMemberGroupRole)
-    __obj.updateDynamic("indirectMember")(indirectMember)
-    __obj.updateDynamic("personal")(personal)
-    __obj.updateDynamic("personalAlias")(personalAlias)
-    __obj.updateDynamic("singleRole")(singleRole)
-    __obj.updateDynamic("subscriptionAlias")(subscriptionAlias)
-    __obj.updateDynamic("unknown")(unknown)
+    val __obj = js.Dynamic.literal(aliasMemberGroupRole = aliasMemberGroupRole, directMember = directMember, directMemberGroupRole = directMemberGroupRole, follows = follows, groupAlias = groupAlias, inDirectMemberGroupRole = inDirectMemberGroupRole, indirectMember = indirectMember, personal = personal, personalAlias = personalAlias, singleRole = singleRole, subscriptionAlias = subscriptionAlias, unknown = unknown)
+  
     __obj.asInstanceOf[Anon_AliasMemberGroupRole]
   }
 }

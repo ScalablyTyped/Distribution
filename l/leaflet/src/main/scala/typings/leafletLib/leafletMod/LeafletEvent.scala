@@ -13,8 +13,8 @@ trait LeafletEvent extends js.Object {
 object LeafletEvent {
   @scala.inline
   def apply(target: js.Any, `type`: java.lang.String): LeafletEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LeafletEvent]
   }
 }

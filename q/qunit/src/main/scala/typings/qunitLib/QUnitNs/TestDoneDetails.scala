@@ -24,13 +24,8 @@ object TestDoneDetails {
     runtime: scala.Double,
     total: scala.Double
   ): TestDoneDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("passed")(passed)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(failed = failed, module = module, name = name, passed = passed, runtime = runtime, total = total)
+  
     __obj.asInstanceOf[TestDoneDetails]
   }
 }

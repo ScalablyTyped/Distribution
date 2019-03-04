@@ -20,11 +20,8 @@ object bookmark {
     serializable: scala.Boolean,
     startNode: node | java.lang.String
   ): bookmark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapsed")(collapsed)
-    __obj.updateDynamic("endNode")(endNode.asInstanceOf[js.Any])
-    __obj.updateDynamic("serializable")(serializable)
-    __obj.updateDynamic("startNode")(startNode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collapsed = collapsed, endNode = endNode.asInstanceOf[js.Any], serializable = serializable, startNode = startNode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[bookmark]
   }
 }

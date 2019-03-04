@@ -30,10 +30,7 @@ object Anon_AuthenticationToken {
     user: evernoteLib.evernoteMod.EvernoteNs.User = null,
     webApiUrlPrefix: java.lang.String = null
   ): Anon_AuthenticationToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticationToken")(authenticationToken)
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("expiration")(expiration)
+    val __obj = js.Dynamic.literal(authenticationToken = authenticationToken, currentTime = currentTime, expiration = expiration)
     if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl)
     if (publicUserInfo != null) __obj.updateDynamic("publicUserInfo")(publicUserInfo)
     if (secondFactorDeliveryHint != null) __obj.updateDynamic("secondFactorDeliveryHint")(secondFactorDeliveryHint)

@@ -13,9 +13,8 @@ trait Anon_ReturnValueValueBoolean extends js.Object {
 object Anon_ReturnValueValueBoolean {
   @scala.inline
   def apply(returnValue: scala.Boolean, value: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency): Anon_ReturnValueValueBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(returnValue = returnValue, value = value)
+  
     __obj.asInstanceOf[Anon_ReturnValueValueBoolean]
   }
 }

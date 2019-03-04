@@ -37,13 +37,8 @@ object RendererResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     renderer: SimpleRenderer
   ): RendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("locationScheme")(locationScheme)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = hasOwnProperty, locationScheme = locationScheme, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+  
     __obj.asInstanceOf[RendererResult]
   }
 }

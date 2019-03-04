@@ -28,15 +28,8 @@ object Anon_ALERT {
     NOTICE: java.lang.String,
     WARNING: java.lang.String
   ): Anon_ALERT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALERT")(ALERT)
-    __obj.updateDynamic("CRITICAL")(CRITICAL)
-    __obj.updateDynamic("DEBUG")(DEBUG)
-    __obj.updateDynamic("EMERGENCY")(EMERGENCY)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("NOTICE")(NOTICE)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(ALERT = ALERT, CRITICAL = CRITICAL, DEBUG = DEBUG, EMERGENCY = EMERGENCY, ERROR = ERROR, INFO = INFO, NOTICE = NOTICE, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_ALERT]
   }
 }

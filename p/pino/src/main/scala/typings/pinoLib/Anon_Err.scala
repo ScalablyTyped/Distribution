@@ -27,10 +27,8 @@ object Anon_Err {
     req: js.Function1[nodeLib.httpMod.IncomingMessage, Anon_Headers],
     res: js.Function1[nodeLib.httpMod.ServerResponse, Anon_Header]
   ): Anon_Err = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(err = err, req = req, res = res)
+  
     __obj.asInstanceOf[Anon_Err]
   }
 }

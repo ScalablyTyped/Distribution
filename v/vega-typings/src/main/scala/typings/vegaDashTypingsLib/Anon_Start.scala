@@ -19,8 +19,7 @@ object Anon_Start {
     start: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     stop: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): Anon_Start = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(step = step.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (stop != null) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Start]

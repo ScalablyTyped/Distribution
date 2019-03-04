@@ -38,14 +38,8 @@ object screen {
     touchSupport: scala.Double,
     work_area: nwDotJsLib.Anon_Height
   ): screen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isBuiltIn")(isBuiltIn)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
-    __obj.updateDynamic("touchSupport")(touchSupport)
-    __obj.updateDynamic("work_area")(work_area)
+    val __obj = js.Dynamic.literal(bounds = bounds, id = id, isBuiltIn = isBuiltIn, rotation = rotation, scaleFactor = scaleFactor, touchSupport = touchSupport, work_area = work_area)
+  
     __obj.asInstanceOf[screen]
   }
 }

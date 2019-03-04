@@ -22,12 +22,8 @@ object AuthInfo {
     realm: java.lang.String,
     scheme: java.lang.String
   ): AuthInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("isProxy")(isProxy)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("realm")(realm)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(host = host, isProxy = isProxy, port = port, realm = realm, scheme = scheme)
+  
     __obj.asInstanceOf[AuthInfo]
   }
 }

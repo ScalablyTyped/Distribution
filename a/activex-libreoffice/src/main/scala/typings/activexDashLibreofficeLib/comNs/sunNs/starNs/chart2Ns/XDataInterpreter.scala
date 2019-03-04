@@ -53,14 +53,8 @@ object XDataInterpreter {
     reinterpretDataSeries: js.Function1[InterpretedData, InterpretedData],
     release: js.Function0[scala.Unit]
   ): XDataInterpreter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("interpretDataSource")(interpretDataSource)
-    __obj.updateDynamic("isDataCompatible")(isDataCompatible)
-    __obj.updateDynamic("mergeInterpretedData")(mergeInterpretedData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("reinterpretDataSeries")(reinterpretDataSeries)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, interpretDataSource = interpretDataSource, isDataCompatible = isDataCompatible, mergeInterpretedData = mergeInterpretedData, queryInterface = queryInterface, reinterpretDataSeries = reinterpretDataSeries, release = release)
+  
     __obj.asInstanceOf[XDataInterpreter]
   }
 }

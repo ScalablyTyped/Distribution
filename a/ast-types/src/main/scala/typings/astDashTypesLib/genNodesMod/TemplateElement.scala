@@ -22,9 +22,8 @@ object TemplateElement {
     `type`: astDashTypesLib.astDashTypesLibStrings.TemplateElement,
     value: astDashTypesLib.Anon_Cooked
   ): TemplateElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("tail")(tail)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(tail = tail, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TemplateElement]
   }
 }

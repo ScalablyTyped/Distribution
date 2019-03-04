@@ -12,8 +12,8 @@ trait Less2Sass extends js.Object {
 object Less2Sass {
   @scala.inline
   def apply(convert: js.Function1[java.lang.String, java.lang.String]): Less2Sass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convert")(convert)
+    val __obj = js.Dynamic.literal(convert = convert)
+  
     __obj.asInstanceOf[Less2Sass]
   }
 }

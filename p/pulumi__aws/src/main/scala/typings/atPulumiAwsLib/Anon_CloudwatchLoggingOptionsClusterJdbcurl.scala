@@ -38,12 +38,7 @@ object Anon_CloudwatchLoggingOptionsClusterJdbcurl {
     s3BackupConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions] = null,
     s3BackupMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_CloudwatchLoggingOptionsClusterJdbcurl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterJdbcurl")(clusterJdbcurl.asInstanceOf[js.Any])
-    __obj.updateDynamic("dataTableName")(dataTableName.asInstanceOf[js.Any])
-    __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterJdbcurl = clusterJdbcurl.asInstanceOf[js.Any], dataTableName = dataTableName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])
     if (copyOptions != null) __obj.updateDynamic("copyOptions")(copyOptions.asInstanceOf[js.Any])
     if (dataTableColumns != null) __obj.updateDynamic("dataTableColumns")(dataTableColumns.asInstanceOf[js.Any])

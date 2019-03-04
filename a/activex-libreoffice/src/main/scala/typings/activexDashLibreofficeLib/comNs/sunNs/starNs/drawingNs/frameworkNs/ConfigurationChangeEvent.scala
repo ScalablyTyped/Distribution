@@ -41,13 +41,8 @@ object ConfigurationChangeEvent {
     Type: java.lang.String,
     UserData: js.Any
   ): ConfigurationChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Configuration")(Configuration)
-    __obj.updateDynamic("ResourceId")(ResourceId)
-    __obj.updateDynamic("ResourceObject")(ResourceObject)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UserData")(UserData)
+    val __obj = js.Dynamic.literal(Configuration = Configuration, ResourceId = ResourceId, ResourceObject = ResourceObject, Source = Source, Type = Type, UserData = UserData)
+  
     __obj.asInstanceOf[ConfigurationChangeEvent]
   }
 }

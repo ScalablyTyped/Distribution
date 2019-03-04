@@ -25,11 +25,8 @@ object Row {
     lat: scala.Double,
     lng: scala.Double
   ): Row = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("isCluster")(isCluster)
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
+    val __obj = js.Dynamic.literal(getPosition = getPosition, isCluster = isCluster, lat = lat, lng = lng)
+  
     __obj.asInstanceOf[Row]
   }
 }

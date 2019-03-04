@@ -39,12 +39,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConfig")(getConfig)
-    __obj.updateDynamic("jobs")(jobs)
-    __obj.updateDynamic("models")(models)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("predict")(predict)
+    val __obj = js.Dynamic.literal(getConfig = getConfig, jobs = jobs, models = models, operations = operations, predict = predict)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

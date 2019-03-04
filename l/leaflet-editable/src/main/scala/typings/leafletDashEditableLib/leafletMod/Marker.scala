@@ -19,13 +19,8 @@ object Marker {
     enableEdit: js.Function0[js.Any],
     toggleEdit: js.Function0[scala.Unit]
   ): Marker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("disableEdit")(disableEdit)
-    __obj.updateDynamic("editEnabled")(editEnabled)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enableEdit")(enableEdit)
-    __obj.updateDynamic("toggleEdit")(toggleEdit)
+    val __obj = js.Dynamic.literal(disable = disable, disableEdit = disableEdit, editEnabled = editEnabled, enable = enable, enableEdit = enableEdit, toggleEdit = toggleEdit)
+  
     __obj.asInstanceOf[Marker]
   }
 }

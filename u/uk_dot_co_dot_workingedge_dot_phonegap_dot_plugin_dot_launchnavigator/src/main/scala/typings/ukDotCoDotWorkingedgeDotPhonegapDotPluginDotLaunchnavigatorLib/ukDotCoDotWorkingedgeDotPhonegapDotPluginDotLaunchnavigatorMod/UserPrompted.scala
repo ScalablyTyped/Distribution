@@ -30,10 +30,8 @@ object UserPrompted {
     get: js.Function1[js.Function1[/* exists */ scala.Boolean, scala.Unit], scala.Unit],
     set: js.Function1[js.Function0[scala.Unit], scala.Unit]
   ): UserPrompted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, set = set)
+  
     __obj.asInstanceOf[UserPrompted]
   }
 }

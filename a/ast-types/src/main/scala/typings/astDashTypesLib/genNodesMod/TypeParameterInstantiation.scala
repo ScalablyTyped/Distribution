@@ -20,8 +20,8 @@ object TypeParameterInstantiation {
     params: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.TypeParameterInstantiation
   ): TypeParameterInstantiation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(params = params)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeParameterInstantiation]
   }
 }

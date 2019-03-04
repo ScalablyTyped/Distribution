@@ -18,10 +18,8 @@ trait Vector3 extends js.Object {
 object Vector3 {
   @scala.inline
   def apply(x: scala.Double, y: scala.Double, z: scala.Double): Vector3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(x = x, y = y, z = z)
+  
     __obj.asInstanceOf[Vector3]
   }
 }

@@ -57,16 +57,8 @@ object CommentThread {
     status: CommentThreadStatus,
     threadContext: CommentThreadContext
   ): CommentThread = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("threadContext")(threadContext)
+    val __obj = js.Dynamic.literal(_links = _links, comments = comments, id = id, isDeleted = isDeleted, lastUpdatedDate = lastUpdatedDate, properties = properties, publishedDate = publishedDate, status = status, threadContext = threadContext)
+  
     __obj.asInstanceOf[CommentThread]
   }
 }

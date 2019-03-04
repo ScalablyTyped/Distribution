@@ -12,8 +12,8 @@ trait PluginCleanupIDs extends js.Object {
 object PluginCleanupIDs {
   @scala.inline
   def apply(cleanupIDs: scala.Boolean | js.Object): PluginCleanupIDs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cleanupIDs")(cleanupIDs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cleanupIDs = cleanupIDs.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginCleanupIDs]
   }
 }

@@ -28,15 +28,8 @@ object Callback {
     onWindowAttributesChanged: js.Function1[androiduixLib.androidNs.viewNs.WindowManagerNs.LayoutParams, scala.Unit],
     onWindowFocusChanged: js.Function1[scala.Boolean, scala.Unit]
   ): Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatchGenericMotionEvent")(dispatchGenericMotionEvent)
-    __obj.updateDynamic("dispatchKeyEvent")(dispatchKeyEvent)
-    __obj.updateDynamic("dispatchTouchEvent")(dispatchTouchEvent)
-    __obj.updateDynamic("onAttachedToWindow")(onAttachedToWindow)
-    __obj.updateDynamic("onContentChanged")(onContentChanged)
-    __obj.updateDynamic("onDetachedFromWindow")(onDetachedFromWindow)
-    __obj.updateDynamic("onWindowAttributesChanged")(onWindowAttributesChanged)
-    __obj.updateDynamic("onWindowFocusChanged")(onWindowFocusChanged)
+    val __obj = js.Dynamic.literal(dispatchGenericMotionEvent = dispatchGenericMotionEvent, dispatchKeyEvent = dispatchKeyEvent, dispatchTouchEvent = dispatchTouchEvent, onAttachedToWindow = onAttachedToWindow, onContentChanged = onContentChanged, onDetachedFromWindow = onDetachedFromWindow, onWindowAttributesChanged = onWindowAttributesChanged, onWindowFocusChanged = onWindowFocusChanged)
+  
     __obj.asInstanceOf[Callback]
   }
 }

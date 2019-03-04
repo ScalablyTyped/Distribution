@@ -114,21 +114,8 @@ object XLinguServiceManager {
       scala.Unit
     ]
   ): XLinguServiceManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hyphenator")(Hyphenator)
-    __obj.updateDynamic("SpellChecker")(SpellChecker)
-    __obj.updateDynamic("Thesaurus")(Thesaurus)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addLinguServiceManagerListener")(addLinguServiceManagerListener)
-    __obj.updateDynamic("getAvailableServices")(getAvailableServices)
-    __obj.updateDynamic("getConfiguredServices")(getConfiguredServices)
-    __obj.updateDynamic("getHyphenator")(getHyphenator)
-    __obj.updateDynamic("getSpellChecker")(getSpellChecker)
-    __obj.updateDynamic("getThesaurus")(getThesaurus)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLinguServiceManagerListener")(removeLinguServiceManagerListener)
-    __obj.updateDynamic("setConfiguredServices")(setConfiguredServices)
+    val __obj = js.Dynamic.literal(Hyphenator = Hyphenator, SpellChecker = SpellChecker, Thesaurus = Thesaurus, acquire = acquire, addLinguServiceManagerListener = addLinguServiceManagerListener, getAvailableServices = getAvailableServices, getConfiguredServices = getConfiguredServices, getHyphenator = getHyphenator, getSpellChecker = getSpellChecker, getThesaurus = getThesaurus, queryInterface = queryInterface, release = release, removeLinguServiceManagerListener = removeLinguServiceManagerListener, setConfiguredServices = setConfiguredServices)
+  
     __obj.asInstanceOf[XLinguServiceManager]
   }
 }

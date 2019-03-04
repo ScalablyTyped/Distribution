@@ -24,13 +24,8 @@ object Info {
     filename: java.lang.String,
     size: scala.Double
   ): Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_duration_hms")(_duration_hms)
-    __obj.updateDynamic("_duration_raw")(_duration_raw)
-    __obj.updateDynamic("_filename")(_filename)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(_duration_hms = _duration_hms, _duration_raw = _duration_raw, _filename = _filename, duration = duration, filename = filename, size = size)
+  
     __obj.asInstanceOf[Info]
   }
 }

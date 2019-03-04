@@ -30,12 +30,8 @@ object GridColumnEvent {
     OldValue: js.Any,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): GridColumnEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttributeName")(AttributeName)
-    __obj.updateDynamic("ColumnIndex")(ColumnIndex)
-    __obj.updateDynamic("NewValue")(NewValue)
-    __obj.updateDynamic("OldValue")(OldValue)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName, ColumnIndex = ColumnIndex, NewValue = NewValue, OldValue = OldValue, Source = Source)
+  
     __obj.asInstanceOf[GridColumnEvent]
   }
 }

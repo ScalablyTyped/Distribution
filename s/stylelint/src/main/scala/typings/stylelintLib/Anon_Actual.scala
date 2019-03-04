@@ -15,8 +15,7 @@ trait Anon_Actual
 object Anon_Actual {
   @scala.inline
   def apply(actual: js.Any, optional: stylelintLib.stylelintLibNumbers.`false` = null, possible: js.Any = null): Anon_Actual = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actual")(actual)
+    val __obj = js.Dynamic.literal(actual = actual)
     if (optional != null) __obj.updateDynamic("optional")(optional)
     if (possible != null) __obj.updateDynamic("possible")(possible)
     __obj.asInstanceOf[Anon_Actual]

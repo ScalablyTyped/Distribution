@@ -12,8 +12,8 @@ trait Anon_FormControlStatic extends js.Object {
 object Anon_FormControlStatic {
   @scala.inline
   def apply(FormControlStaticNs: js.Any): Anon_FormControlStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FormControlStaticNs")(FormControlStaticNs)
+    val __obj = js.Dynamic.literal(FormControlStaticNs = FormControlStaticNs)
+  
     __obj.asInstanceOf[Anon_FormControlStatic]
   }
 }

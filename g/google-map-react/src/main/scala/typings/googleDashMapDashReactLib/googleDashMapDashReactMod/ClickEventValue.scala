@@ -14,12 +14,8 @@ trait ClickEventValue
 object ClickEventValue {
   @scala.inline
   def apply(event: js.Any, lat: scala.Double, lng: scala.Double, x: scala.Double, y: scala.Double): ClickEventValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(event = event, lat = lat, lng = lng, x = x, y = y)
+  
     __obj.asInstanceOf[ClickEventValue]
   }
 }

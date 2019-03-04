@@ -18,10 +18,7 @@ object CommentRange {
     pos: scala.Double,
     hasTrailingNewLine: js.UndefOr[scala.Boolean] = js.undefined
   ): CommentRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(end = end, kind = kind, pos = pos)
     if (!js.isUndefined(hasTrailingNewLine)) __obj.updateDynamic("hasTrailingNewLine")(hasTrailingNewLine)
     __obj.asInstanceOf[CommentRange]
   }

@@ -13,8 +13,7 @@ trait AdminDeleteTopicsOptions extends js.Object {
 object AdminDeleteTopicsOptions {
   @scala.inline
   def apply(topics: js.Array[java.lang.String], timeout: scala.Int | scala.Double = null): AdminDeleteTopicsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topics")(topics)
+    val __obj = js.Dynamic.literal(topics = topics)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminDeleteTopicsOptions]
   }

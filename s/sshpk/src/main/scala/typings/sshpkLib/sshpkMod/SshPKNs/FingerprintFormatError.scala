@@ -14,9 +14,7 @@ trait FingerprintFormatError
 object FingerprintFormatError {
   @scala.inline
   def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String = null): FingerprintFormatError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[FingerprintFormatError]
   }

@@ -24,13 +24,8 @@ object ConsoleFormattedStreamLevelStyle {
     trace: java.lang.String,
     warn: java.lang.String
   ): ConsoleFormattedStreamLevelStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fatal")(fatal)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("trace")(trace)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, info = info, trace = trace, warn = warn)
+  
     __obj.asInstanceOf[ConsoleFormattedStreamLevelStyle]
   }
 }

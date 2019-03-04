@@ -54,28 +54,8 @@ object Anon_AlignTickMarks {
     title: java.lang.String,
     titleStyle: js.Object
   ): Anon_AlignTickMarks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignTickMarks")(alignTickMarks.asInstanceOf[js.Any])
-    __obj.updateDynamic("axisLine")(axisLine)
-    __obj.updateDynamic("baselineScaling")(baselineScaling.asInstanceOf[js.Any])
-    __obj.updateDynamic("dataMax")(dataMax)
-    __obj.updateDynamic("dataMin")(dataMin)
-    __obj.updateDynamic("majorTick")(majorTick)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("minStep")(minStep)
-    __obj.updateDynamic("minorStep")(minorStep)
-    __obj.updateDynamic("minorTick")(minorTick)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("referenceObjects")(referenceObjects)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("tickLabel")(tickLabel)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleStyle")(titleStyle)
+    val __obj = js.Dynamic.literal(alignTickMarks = alignTickMarks.asInstanceOf[js.Any], axisLine = axisLine, baselineScaling = baselineScaling.asInstanceOf[js.Any], dataMax = dataMax, dataMin = dataMin, majorTick = majorTick, max = max, maxSize = maxSize, min = min, minStep = minStep, minorStep = minorStep, minorTick = minorTick, position = position.asInstanceOf[js.Any], referenceObjects = referenceObjects, rendered = rendered.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], size = size, step = step, tickLabel = tickLabel, title = title, titleStyle = titleStyle)
+  
     __obj.asInstanceOf[Anon_AlignTickMarks]
   }
 }

@@ -14,10 +14,15 @@ trait DatePickerProps
       antdLib.Anon_DisabledHours
     ]
   ] = js.undefined
-  var mode: js.UndefOr[
-    antdLib.antdLibStrings.time | antdLib.antdLibStrings.date | antdLib.antdLibStrings.month | antdLib.antdLibStrings.year
-  ] = js.undefined
+  var mode: js.UndefOr[DatePickerMode] = js.undefined
   var onOk: js.UndefOr[js.Function1[/* selectedTime */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
+  var onPanelChange: js.UndefOr[
+    js.Function2[
+      /* value */ js.UndefOr[momentLib.momentMod.momentNs.Moment], 
+      /* mode */ DatePickerMode, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
   var showToday: js.UndefOr[scala.Boolean] = js.undefined
@@ -47,7 +52,8 @@ object DatePickerProps {
     id: scala.Double | java.lang.String = null,
     inputPrefixCls: java.lang.String = null,
     locale: js.Any = null,
-    mode: antdLib.antdLibStrings.time | antdLib.antdLibStrings.date | antdLib.antdLibStrings.month | antdLib.antdLibStrings.year = null,
+    mode: DatePickerMode = null,
+    name: java.lang.String = null,
     onChange: js.Function2[
       /* date */ momentLib.momentMod.momentNs.Moment, 
       /* dateString */ java.lang.String, 
@@ -55,6 +61,11 @@ object DatePickerProps {
     ] = null,
     onOk: js.Function1[/* selectedTime */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
     onOpenChange: js.Function1[/* status */ scala.Boolean, scala.Unit] = null,
+    onPanelChange: js.Function2[
+      /* value */ js.UndefOr[momentLib.momentMod.momentNs.Moment], 
+      /* mode */ DatePickerMode, 
+      scala.Unit
+    ] = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
     popupStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -82,10 +93,12 @@ object DatePickerProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (locale != null) __obj.updateDynamic("locale")(locale)
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onOk != null) __obj.updateDynamic("onOk")(onOk)
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
+    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(onPanelChange)
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle)

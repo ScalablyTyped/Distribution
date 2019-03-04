@@ -22,12 +22,8 @@ object Anon_Description {
     name: java.lang.String,
     rpc_origins: js.Array[java.lang.String]
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rpc_origins")(rpc_origins)
+    val __obj = js.Dynamic.literal(description = description, icon = icon, id = id, name = name, rpc_origins = rpc_origins)
+  
     __obj.asInstanceOf[Anon_Description]
   }
 }

@@ -29,8 +29,7 @@ object listenToDocOptions {
     onFailure: js.Function0[scala.Unit] = null,
     `then`: js.Function0[scala.Unit] = null
   ): listenToDocOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (`then` != null) __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[listenToDocOptions]

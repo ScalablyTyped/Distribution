@@ -22,8 +22,7 @@ object ViewportDecoratorOptions {
     onViewportChange: js.Function1[atStorybookAddonDashViewportLib.Anon_Viewport, scala.Unit],
     name: ViewportName = null
   ): ViewportDecoratorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onViewportChange")(onViewportChange)
+    val __obj = js.Dynamic.literal(onViewportChange = onViewportChange)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[ViewportDecoratorOptions]
   }

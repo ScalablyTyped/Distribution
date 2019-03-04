@@ -37,11 +37,8 @@ object XLayerContentDescriber {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLayerContentDescriber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("describeLayer")(describeLayer)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, describeLayer = describeLayer, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLayerContentDescriber]
   }
 }

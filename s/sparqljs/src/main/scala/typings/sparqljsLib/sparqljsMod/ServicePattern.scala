@@ -21,10 +21,8 @@ object ServicePattern {
     silent: scala.Boolean,
     `type`: sparqljsLib.sparqljsLibStrings.service
   ): ServicePattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("patterns")(patterns)
-    __obj.updateDynamic("silent")(silent)
+    val __obj = js.Dynamic.literal(name = name, patterns = patterns, silent = silent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ServicePattern]
   }
 }

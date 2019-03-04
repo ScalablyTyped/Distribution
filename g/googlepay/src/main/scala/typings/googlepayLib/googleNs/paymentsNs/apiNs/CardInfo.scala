@@ -14,9 +14,7 @@ trait CardInfo extends js.Object {
 object CardInfo {
   @scala.inline
   def apply(cardDetails: java.lang.String, cardNetwork: AllowedCardNetwork, billingAddress: Address = null): CardInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardDetails")(cardDetails)
-    __obj.updateDynamic("cardNetwork")(cardNetwork)
+    val __obj = js.Dynamic.literal(cardDetails = cardDetails, cardNetwork = cardNetwork)
     if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress)
     __obj.asInstanceOf[CardInfo]
   }

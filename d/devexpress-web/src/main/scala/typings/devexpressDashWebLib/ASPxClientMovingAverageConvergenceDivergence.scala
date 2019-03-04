@@ -38,15 +38,8 @@ object ASPxClientMovingAverageConvergenceDivergence {
     shortPeriod: scala.Double,
     signalSmoothingPeriod: scala.Double
   ): ASPxClientMovingAverageConvergenceDivergence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("longPeriod")(longPeriod)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("shortPeriod")(shortPeriod)
-    __obj.updateDynamic("signalSmoothingPeriod")(signalSmoothingPeriod)
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, longPeriod = longPeriod, name = name, pane = pane, series = series, shortPeriod = shortPeriod, signalSmoothingPeriod = signalSmoothingPeriod)
+  
     __obj.asInstanceOf[ASPxClientMovingAverageConvergenceDivergence]
   }
 }

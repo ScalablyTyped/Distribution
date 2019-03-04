@@ -35,11 +35,8 @@ object StubAttachment {
     length: scala.Double,
     stub: pouchdbDashCoreLib.pouchdbDashCoreLibNumbers.`true`
   ): StubAttachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_type")(content_type)
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("stub")(stub)
+    val __obj = js.Dynamic.literal(content_type = content_type, digest = digest, length = length, stub = stub)
+  
     __obj.asInstanceOf[StubAttachment]
   }
 }

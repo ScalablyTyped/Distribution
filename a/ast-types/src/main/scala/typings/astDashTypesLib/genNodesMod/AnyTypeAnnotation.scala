@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object AnyTypeAnnotation {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.AnyTypeAnnotation): AnyTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnyTypeAnnotation]
   }
 }

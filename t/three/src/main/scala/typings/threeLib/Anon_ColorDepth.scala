@@ -18,10 +18,8 @@ object Anon_ColorDepth {
     depth: threeLib.threeDashCoreMod.WebGLDepthBuffer,
     stencil: threeLib.threeDashCoreMod.WebGLStencilBuffer
   ): Anon_ColorDepth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("stencil")(stencil)
+    val __obj = js.Dynamic.literal(color = color, depth = depth, stencil = stencil)
+  
     __obj.asInstanceOf[Anon_ColorDepth]
   }
 }

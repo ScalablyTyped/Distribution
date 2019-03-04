@@ -48,9 +48,7 @@ object Anon_AltAutoConvertMissingPricesFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAutoConvertMissingPricesFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packageName")(packageName)
-    __obj.updateDynamic("sku")(sku)
+    val __obj = js.Dynamic.literal(packageName = packageName, sku = sku)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(autoConvertMissingPrices)) __obj.updateDynamic("autoConvertMissingPrices")(autoConvertMissingPrices)
     if (fields != null) __obj.updateDynamic("fields")(fields)

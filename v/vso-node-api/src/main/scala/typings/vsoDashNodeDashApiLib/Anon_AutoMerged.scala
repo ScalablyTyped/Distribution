@@ -22,12 +22,8 @@ object Anon_AutoMerged {
     undecided: scala.Double,
     userMerged: scala.Double
   ): Anon_AutoMerged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoMerged")(autoMerged)
-    __obj.updateDynamic("takeSourceContent")(takeSourceContent)
-    __obj.updateDynamic("takeTargetContent")(takeTargetContent)
-    __obj.updateDynamic("undecided")(undecided)
-    __obj.updateDynamic("userMerged")(userMerged)
+    val __obj = js.Dynamic.literal(autoMerged = autoMerged, takeSourceContent = takeSourceContent, takeTargetContent = takeTargetContent, undecided = undecided, userMerged = userMerged)
+  
     __obj.asInstanceOf[Anon_AutoMerged]
   }
 }

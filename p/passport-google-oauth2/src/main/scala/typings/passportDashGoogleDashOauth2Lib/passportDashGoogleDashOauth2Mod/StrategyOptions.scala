@@ -24,10 +24,7 @@ object StrategyOptions {
     proxy: js.UndefOr[scala.Boolean] = js.undefined,
     scope: js.Array[java.lang.String] = null
   ): StrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
     if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
     if (scope != null) __obj.updateDynamic("scope")(scope)

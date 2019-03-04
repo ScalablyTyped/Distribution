@@ -49,8 +49,7 @@ object Anon_AltChannelIdFieldsKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltChannelIdFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channelId")(channelId)
+    val __obj = js.Dynamic.literal(channelId = channelId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

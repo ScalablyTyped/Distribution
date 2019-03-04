@@ -74,18 +74,8 @@ object XDispatchProviderInterceptor {
     setMasterDispatchProvider: js.Function1[XDispatchProvider, scala.Unit],
     setSlaveDispatchProvider: js.Function1[XDispatchProvider, scala.Unit]
   ): XDispatchProviderInterceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MasterDispatchProvider")(MasterDispatchProvider)
-    __obj.updateDynamic("SlaveDispatchProvider")(SlaveDispatchProvider)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMasterDispatchProvider")(getMasterDispatchProvider)
-    __obj.updateDynamic("getSlaveDispatchProvider")(getSlaveDispatchProvider)
-    __obj.updateDynamic("queryDispatch")(queryDispatch)
-    __obj.updateDynamic("queryDispatches")(queryDispatches)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setMasterDispatchProvider")(setMasterDispatchProvider)
-    __obj.updateDynamic("setSlaveDispatchProvider")(setSlaveDispatchProvider)
+    val __obj = js.Dynamic.literal(MasterDispatchProvider = MasterDispatchProvider, SlaveDispatchProvider = SlaveDispatchProvider, acquire = acquire, getMasterDispatchProvider = getMasterDispatchProvider, getSlaveDispatchProvider = getSlaveDispatchProvider, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release, setMasterDispatchProvider = setMasterDispatchProvider, setSlaveDispatchProvider = setSlaveDispatchProvider)
+  
     __obj.asInstanceOf[XDispatchProviderInterceptor]
   }
 }

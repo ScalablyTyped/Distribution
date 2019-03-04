@@ -27,9 +27,8 @@ object CurrentDragComponentInfo {
     newInfo: gaeaDashModelLib.Anon_UniqueKey = null,
     viewportInfo: gaeaDashModelLib.Anon_MapUniqueKey = null
   ): CurrentDragComponentInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dragStartIndex")(dragStartIndex)
-    __obj.updateDynamic("dragStartParentElement")(dragStartParentElement)
+    val __obj = js.Dynamic.literal(dragStartIndex = dragStartIndex, dragStartParentElement = dragStartParentElement)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (comboInfo != null) __obj.updateDynamic("comboInfo")(comboInfo)
     if (newInfo != null) __obj.updateDynamic("newInfo")(newInfo)
     if (viewportInfo != null) __obj.updateDynamic("viewportInfo")(viewportInfo)

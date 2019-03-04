@@ -13,9 +13,8 @@ trait Anon_Directory extends js.Object {
 object Anon_Directory {
   @scala.inline
   def apply(directory: java.lang.String, modules: js.Array[java.lang.String]): Anon_Directory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("modules")(modules)
+    val __obj = js.Dynamic.literal(directory = directory, modules = modules)
+  
     __obj.asInstanceOf[Anon_Directory]
   }
 }

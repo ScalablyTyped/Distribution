@@ -23,15 +23,8 @@ object Zoom {
     startValue: js.Function1[scala.Double, Zoom],
     stop: js.Function0[Zoom]
   ): Zoom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("endValue")(endValue)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("startValue")(startValue)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, endValue = endValue, play = play, reverse = reverse, startValue = startValue, stop = stop)
+  
     __obj.asInstanceOf[Zoom]
   }
 }

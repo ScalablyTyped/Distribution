@@ -22,12 +22,8 @@ object Anon_EachMember {
     notSet: scala.Double,
     preferredEmailAddress: scala.Double
   ): Anon_EachMember = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eachMember")(eachMember)
-    __obj.updateDynamic("noDelivery")(noDelivery)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("notSet")(notSet)
-    __obj.updateDynamic("preferredEmailAddress")(preferredEmailAddress)
+    val __obj = js.Dynamic.literal(eachMember = eachMember, noDelivery = noDelivery, none = none, notSet = notSet, preferredEmailAddress = preferredEmailAddress)
+  
     __obj.asInstanceOf[Anon_EachMember]
   }
 }

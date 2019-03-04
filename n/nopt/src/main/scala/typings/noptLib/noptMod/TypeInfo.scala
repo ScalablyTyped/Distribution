@@ -16,8 +16,8 @@ object TypeInfo {
     `type`: js.Object,
     validate: js.Function3[CommandData, java.lang.String, java.lang.String, scala.Boolean]
   ): TypeInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(validate = validate)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeInfo]
   }
 }

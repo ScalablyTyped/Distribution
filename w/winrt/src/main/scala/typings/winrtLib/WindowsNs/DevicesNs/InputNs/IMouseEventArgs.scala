@@ -12,8 +12,8 @@ trait IMouseEventArgs extends js.Object {
 object IMouseEventArgs {
   @scala.inline
   def apply(mouseDelta: MouseDelta): IMouseEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mouseDelta")(mouseDelta)
+    val __obj = js.Dynamic.literal(mouseDelta = mouseDelta)
+  
     __obj.asInstanceOf[IMouseEventArgs]
   }
 }

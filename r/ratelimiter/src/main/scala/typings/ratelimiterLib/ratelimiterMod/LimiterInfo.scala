@@ -23,10 +23,8 @@ trait LimiterInfo extends js.Object {
 object LimiterInfo {
   @scala.inline
   def apply(remaining: scala.Double, reset: scala.Double, total: scala.Double): LimiterInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remaining")(remaining)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(remaining = remaining, reset = reset, total = total)
+  
     __obj.asInstanceOf[LimiterInfo]
   }
 }

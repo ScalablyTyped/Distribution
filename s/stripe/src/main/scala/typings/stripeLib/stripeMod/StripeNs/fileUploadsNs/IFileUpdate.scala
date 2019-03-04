@@ -48,12 +48,9 @@ object IFileUpdate {
     `type`: stripeLib.stripeLibStrings.pdf | stripeLib.stripeLibStrings.jpg | stripeLib.stripeLibStrings.png,
     url: java.lang.String
   ): IFileUpdate = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("purpose")(purpose)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(created = created, id = id, purpose = purpose, size = size, url = url)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileUpdate]
   }
 }

@@ -23,8 +23,8 @@ object MediaFeature {
     loc: CssLocation = null,
     value: Identifier | NumberNode | Dimension | Ratio = null
   ): MediaFeature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaFeature]

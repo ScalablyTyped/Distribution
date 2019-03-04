@@ -31,14 +31,8 @@ object Anon_AutoInit {
     registeredInstances: js.Array[_],
     registeredWidgets: js.Array[_]
   ): Anon_AutoInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoInit")(autoInit)
-    __obj.updateDynamic("destroyAll")(destroyAll)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("registerInstance")(registerInstance)
-    __obj.updateDynamic("registeredInstances")(registeredInstances)
-    __obj.updateDynamic("registeredWidgets")(registeredWidgets)
+    val __obj = js.Dynamic.literal(autoInit = autoInit, destroyAll = destroyAll, init = init, register = register, registerInstance = registerInstance, registeredInstances = registeredInstances, registeredWidgets = registeredWidgets)
+  
     __obj.asInstanceOf[Anon_AutoInit]
   }
 }

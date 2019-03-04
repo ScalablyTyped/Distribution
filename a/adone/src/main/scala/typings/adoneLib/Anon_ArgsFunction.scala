@@ -18,10 +18,8 @@ object Anon_ArgsFunction {
     RegExp: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[stdLib.RegExp],
     Undefined: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[js.UndefOr[scala.Nothing]]
   ): Anon_ArgsFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Function")(Function)
-    __obj.updateDynamic("RegExp")(RegExp)
-    __obj.updateDynamic("Undefined")(Undefined)
+    val __obj = js.Dynamic.literal(Function = Function, RegExp = RegExp, Undefined = Undefined)
+  
     __obj.asInstanceOf[Anon_ArgsFunction]
   }
 }

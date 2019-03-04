@@ -12,8 +12,8 @@ trait Anon_Req extends js.Object {
 object Anon_Req {
   @scala.inline
   def apply(req: superagentLib.superagentMod.requestNs.SuperAgentRequest): Anon_Req = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("req")(req)
+    val __obj = js.Dynamic.literal(req = req)
+  
     __obj.asInstanceOf[Anon_Req]
   }
 }

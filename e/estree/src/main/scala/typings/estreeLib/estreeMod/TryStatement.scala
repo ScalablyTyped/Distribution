@@ -27,8 +27,8 @@ object TryStatement {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): TryStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("block")(block)
+    val __obj = js.Dynamic.literal(block = block)
+    __obj.updateDynamic("type")(`type`)
     if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer)
     if (handler != null) __obj.updateDynamic("handler")(handler)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

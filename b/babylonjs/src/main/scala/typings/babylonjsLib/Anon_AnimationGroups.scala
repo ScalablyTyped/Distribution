@@ -20,11 +20,8 @@ object Anon_AnimationGroups {
     particleSystems: js.Array[babylonjsLib.BABYLONNs.IParticleSystem],
     skeletons: js.Array[babylonjsLib.BABYLONNs.Skeleton]
   ): Anon_AnimationGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationGroups")(animationGroups)
-    __obj.updateDynamic("meshes")(meshes)
-    __obj.updateDynamic("particleSystems")(particleSystems)
-    __obj.updateDynamic("skeletons")(skeletons)
+    val __obj = js.Dynamic.literal(animationGroups = animationGroups, meshes = meshes, particleSystems = particleSystems, skeletons = skeletons)
+  
     __obj.asInstanceOf[Anon_AnimationGroups]
   }
 }

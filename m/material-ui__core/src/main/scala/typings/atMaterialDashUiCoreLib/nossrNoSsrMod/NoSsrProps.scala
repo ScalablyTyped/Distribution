@@ -16,8 +16,7 @@ object NoSsrProps {
     children: reactLib.reactMod.ReactNs.ReactNode,
     fallback: reactLib.reactMod.ReactNs.ReactNode = null
   ): NoSsrProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoSsrProps]
   }

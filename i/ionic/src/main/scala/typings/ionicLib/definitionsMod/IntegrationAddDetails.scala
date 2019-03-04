@@ -13,8 +13,7 @@ trait IntegrationAddDetails extends js.Object {
 object IntegrationAddDetails {
   @scala.inline
   def apply(root: java.lang.String, enableArgs: js.Array[java.lang.String] = null): IntegrationAddDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(root = root)
     if (enableArgs != null) __obj.updateDynamic("enableArgs")(enableArgs)
     __obj.asInstanceOf[IntegrationAddDetails]
   }

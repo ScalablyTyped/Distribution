@@ -16,9 +16,8 @@ object Anon_RoleArnStreamArnInput {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     streamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_RoleArnStreamArnInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("streamArn")(streamArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], streamArn = streamArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_RoleArnStreamArnInput]
   }
 }

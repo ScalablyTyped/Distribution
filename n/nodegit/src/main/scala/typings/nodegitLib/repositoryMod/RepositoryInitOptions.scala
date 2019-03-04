@@ -28,15 +28,8 @@ object RepositoryInitOptions {
     version: scala.Double,
     workdirPath: java.lang.String
   ): RepositoryInitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("initialHead")(initialHead)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("originUrl")(originUrl)
-    __obj.updateDynamic("templatePath")(templatePath)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("workdirPath")(workdirPath)
+    val __obj = js.Dynamic.literal(description = description, flags = flags, initialHead = initialHead, mode = mode, originUrl = originUrl, templatePath = templatePath, version = version, workdirPath = workdirPath)
+  
     __obj.asInstanceOf[RepositoryInitOptions]
   }
 }

@@ -45,12 +45,8 @@ object ASPxClientDocumentPreviewTab {
     text: java.lang.String,
     visible: js.Any
   ): ASPxClientDocumentPreviewTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, model = model, template = template, text = text, visible = visible)
+  
     __obj.asInstanceOf[ASPxClientDocumentPreviewTab]
   }
 }

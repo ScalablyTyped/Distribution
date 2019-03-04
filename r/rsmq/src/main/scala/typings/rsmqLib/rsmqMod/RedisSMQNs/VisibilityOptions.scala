@@ -12,10 +12,8 @@ trait VisibilityOptions extends MessageIdentifier {
 object VisibilityOptions {
   @scala.inline
   def apply(id: java.lang.String, qname: java.lang.String, vt: scala.Double): VisibilityOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("qname")(qname)
-    __obj.updateDynamic("vt")(vt)
+    val __obj = js.Dynamic.literal(id = id, qname = qname, vt = vt)
+  
     __obj.asInstanceOf[VisibilityOptions]
   }
 }

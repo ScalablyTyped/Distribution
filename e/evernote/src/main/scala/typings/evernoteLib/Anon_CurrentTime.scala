@@ -20,10 +20,7 @@ object Anon_CurrentTime {
     updateCount: scala.Double,
     uploaded: scala.Int | scala.Double = null
   ): Anon_CurrentTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("fullSyncBefore")(fullSyncBefore)
-    __obj.updateDynamic("updateCount")(updateCount)
+    val __obj = js.Dynamic.literal(currentTime = currentTime, fullSyncBefore = fullSyncBefore, updateCount = updateCount)
     if (uploaded != null) __obj.updateDynamic("uploaded")(uploaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrentTime]
   }

@@ -13,9 +13,8 @@ trait Anon_CurrentMax extends js.Object {
 object Anon_CurrentMax {
   @scala.inline
   def apply(current: scala.Double, max: scala.Double): Anon_CurrentMax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(current = current, max = max)
+  
     __obj.asInstanceOf[Anon_CurrentMax]
   }
 }

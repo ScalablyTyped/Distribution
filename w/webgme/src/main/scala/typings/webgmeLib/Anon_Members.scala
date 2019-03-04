@@ -21,9 +21,7 @@ object Anon_Members {
     node: webgmeLib.CoreNs.Node,
     members: js.Array[webgmeLib.CoreNs.Node] = null
   ): Anon_Members = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(name = name, node = node)
     if (members != null) __obj.updateDynamic("members")(members)
     __obj.asInstanceOf[Anon_Members]
   }

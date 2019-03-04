@@ -13,9 +13,8 @@ trait Entity extends js.Object {
 object Entity {
   @scala.inline
   def apply(entityAspect: EntityAspect, entityType: EntityType): Entity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityAspect")(entityAspect)
-    __obj.updateDynamic("entityType")(entityType)
+    val __obj = js.Dynamic.literal(entityAspect = entityAspect, entityType = entityType)
+  
     __obj.asInstanceOf[Entity]
   }
 }

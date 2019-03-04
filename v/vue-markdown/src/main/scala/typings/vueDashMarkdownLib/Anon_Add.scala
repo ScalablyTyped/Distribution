@@ -30,15 +30,8 @@ object Anon_Add {
     testSchemaAt: js.Any,
     tlds: js.Any
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("pretest")(pretest)
-    __obj.updateDynamic("re")(re)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("test")(test)
-    __obj.updateDynamic("testSchemaAt")(testSchemaAt)
-    __obj.updateDynamic("tlds")(tlds)
+    val __obj = js.Dynamic.literal(add = add, normalize = normalize, pretest = pretest, re = re, set = set, test = test, testSchemaAt = testSchemaAt, tlds = tlds)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Anon_Add]
   }
 }

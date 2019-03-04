@@ -139,25 +139,8 @@ object XStringResourceResolver {
       java.lang.String
     ]
   ): XStringResourceResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentLocale")(CurrentLocale)
-    __obj.updateDynamic("DefaultLocale")(DefaultLocale)
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("ResourceIDs")(ResourceIDs)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("getCurrentLocale")(getCurrentLocale)
-    __obj.updateDynamic("getDefaultLocale")(getDefaultLocale)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("getResourceIDs")(getResourceIDs)
-    __obj.updateDynamic("getResourceIDsForLocale")(getResourceIDsForLocale)
-    __obj.updateDynamic("hasEntryForId")(hasEntryForId)
-    __obj.updateDynamic("hasEntryForIdAndLocale")(hasEntryForIdAndLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("resolveString")(resolveString)
-    __obj.updateDynamic("resolveStringForLocale")(resolveStringForLocale)
+    val __obj = js.Dynamic.literal(CurrentLocale = CurrentLocale, DefaultLocale = DefaultLocale, Locales = Locales, ResourceIDs = ResourceIDs, acquire = acquire, addModifyListener = addModifyListener, getCurrentLocale = getCurrentLocale, getDefaultLocale = getDefaultLocale, getLocales = getLocales, getResourceIDs = getResourceIDs, getResourceIDsForLocale = getResourceIDsForLocale, hasEntryForId = hasEntryForId, hasEntryForIdAndLocale = hasEntryForIdAndLocale, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, resolveString = resolveString, resolveStringForLocale = resolveStringForLocale)
+  
     __obj.asInstanceOf[XStringResourceResolver]
   }
 }

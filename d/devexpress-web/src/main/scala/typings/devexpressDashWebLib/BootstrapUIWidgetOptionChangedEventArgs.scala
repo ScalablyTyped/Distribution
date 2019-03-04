@@ -41,13 +41,8 @@ object BootstrapUIWidgetOptionChangedEventArgs {
     previousValue: js.Object,
     value: js.Object
   ): BootstrapUIWidgetOptionChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("previousValue")(previousValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(component = component, element = element, fullName = fullName, name = name, previousValue = previousValue, value = value)
+  
     __obj.asInstanceOf[BootstrapUIWidgetOptionChangedEventArgs]
   }
 }

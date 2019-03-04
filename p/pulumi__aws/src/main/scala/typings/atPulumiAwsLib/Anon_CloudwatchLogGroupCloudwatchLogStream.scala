@@ -18,8 +18,7 @@ object Anon_CloudwatchLogGroupCloudwatchLogStream {
     cloudwatchLogGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     cloudwatchLogStream: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_CloudwatchLogGroupCloudwatchLogStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     if (cloudwatchLogGroup != null) __obj.updateDynamic("cloudwatchLogGroup")(cloudwatchLogGroup.asInstanceOf[js.Any])
     if (cloudwatchLogStream != null) __obj.updateDynamic("cloudwatchLogStream")(cloudwatchLogStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CloudwatchLogGroupCloudwatchLogStream]

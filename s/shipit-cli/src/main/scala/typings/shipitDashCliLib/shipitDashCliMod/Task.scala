@@ -20,11 +20,8 @@ object Task {
     fn: js.Function0[scala.Unit],
     name: java.lang.String
   ): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocking")(blocking)
-    __obj.updateDynamic("dep")(dep)
-    __obj.updateDynamic("fn")(fn)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(blocking = blocking, dep = dep, fn = fn, name = name)
+  
     __obj.asInstanceOf[Task]
   }
 }

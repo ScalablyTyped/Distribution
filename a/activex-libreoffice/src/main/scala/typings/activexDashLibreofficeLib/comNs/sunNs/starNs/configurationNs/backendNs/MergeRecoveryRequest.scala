@@ -45,12 +45,8 @@ object MergeRecoveryRequest {
     IsRemovalRequest: scala.Boolean,
     Message: java.lang.String
   ): MergeRecoveryRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrorDetails")(ErrorDetails)
-    __obj.updateDynamic("ErrorLayerId")(ErrorLayerId)
-    __obj.updateDynamic("IsRemovalRequest")(IsRemovalRequest)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, ErrorDetails = ErrorDetails, ErrorLayerId = ErrorLayerId, IsRemovalRequest = IsRemovalRequest, Message = Message)
+  
     __obj.asInstanceOf[MergeRecoveryRequest]
   }
 }

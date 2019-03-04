@@ -20,11 +20,8 @@ object Anon_ConfigurableEnumerableGetSet {
     get: js.Function0[js.UndefOr[scala.Nothing]],
     set: js.Function1[js.Any, scala.Unit]
   ): Anon_ConfigurableEnumerableGetSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configurable")(configurable)
-    __obj.updateDynamic("enumerable")(enumerable)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, get = get, set = set)
+  
     __obj.asInstanceOf[Anon_ConfigurableEnumerableGetSet]
   }
 }

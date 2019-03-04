@@ -29,9 +29,7 @@ object LoadBalancerBackendServerPolicyArgs {
     loadBalancerName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     policyNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): LoadBalancerBackendServerPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instancePort")(instancePort.asInstanceOf[js.Any])
-    __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instancePort = instancePort.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
     if (policyNames != null) __obj.updateDynamic("policyNames")(policyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerBackendServerPolicyArgs]
   }

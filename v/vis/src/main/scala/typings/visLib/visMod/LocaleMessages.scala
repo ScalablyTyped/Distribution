@@ -38,20 +38,8 @@ object LocaleMessages {
     editEdgeDescription: java.lang.String,
     editNode: java.lang.String
   ): LocaleMessages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDescription")(addDescription)
-    __obj.updateDynamic("addEdge")(addEdge)
-    __obj.updateDynamic("addNode")(addNode)
-    __obj.updateDynamic("back")(back)
-    __obj.updateDynamic("createEdgeError")(createEdgeError)
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("deleteClusterError")(deleteClusterError)
-    __obj.updateDynamic("edgeDescription")(edgeDescription)
-    __obj.updateDynamic("edit")(edit)
-    __obj.updateDynamic("editClusterError")(editClusterError)
-    __obj.updateDynamic("editEdge")(editEdge)
-    __obj.updateDynamic("editEdgeDescription")(editEdgeDescription)
-    __obj.updateDynamic("editNode")(editNode)
+    val __obj = js.Dynamic.literal(addDescription = addDescription, addEdge = addEdge, addNode = addNode, back = back, createEdgeError = createEdgeError, del = del, deleteClusterError = deleteClusterError, edgeDescription = edgeDescription, edit = edit, editClusterError = editClusterError, editEdge = editEdge, editEdgeDescription = editEdgeDescription, editNode = editNode)
+  
     __obj.asInstanceOf[LocaleMessages]
   }
 }

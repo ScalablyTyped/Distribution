@@ -18,10 +18,8 @@ object IDetachElementDelta {
     elementId: java.lang.String,
     unitId: java.lang.String
   ): IDetachElementDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deltaType")(deltaType)
-    __obj.updateDynamic("elementId")(elementId)
-    __obj.updateDynamic("unitId")(unitId)
+    val __obj = js.Dynamic.literal(deltaType = deltaType, elementId = elementId, unitId = unitId)
+  
     __obj.asInstanceOf[IDetachElementDelta]
   }
 }

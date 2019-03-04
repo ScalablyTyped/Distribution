@@ -26,14 +26,8 @@ object VRButtonViewModel {
     tooltip: java.lang.String,
     vrElement: stdLib.Element
   ): VRButtonViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("isVREnabled")(isVREnabled)
-    __obj.updateDynamic("isVRMode")(isVRMode)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("vrElement")(vrElement)
+    val __obj = js.Dynamic.literal(command = command, destroy = destroy, isDestroyed = isDestroyed, isVREnabled = isVREnabled, isVRMode = isVRMode, tooltip = tooltip, vrElement = vrElement)
+  
     __obj.asInstanceOf[VRButtonViewModel]
   }
 }

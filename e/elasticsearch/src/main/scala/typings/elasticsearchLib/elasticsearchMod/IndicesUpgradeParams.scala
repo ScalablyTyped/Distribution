@@ -28,8 +28,7 @@ object IndicesUpgradeParams {
     requestTimeout: scala.Int | scala.Double = null,
     waitForCompletion: js.UndefOr[scala.Boolean] = js.undefined
   ): IndicesUpgradeParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])

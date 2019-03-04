@@ -32,9 +32,7 @@ object StaticRoute {
     contentType: java.lang.String = null,
     index: scala.Boolean | java.lang.String = null
   ): StaticRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localPath")(localPath)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(localPath = localPath, path = path)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticRoute]

@@ -20,11 +20,8 @@ object Anon_BstrCallerId {
     lDeviceId: scala.Double,
     pFaxServer: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer
   ): Anon_BstrCallerId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bstrCallerId")(bstrCallerId)
-    __obj.updateDynamic("lCallId")(lCallId)
-    __obj.updateDynamic("lDeviceId")(lDeviceId)
-    __obj.updateDynamic("pFaxServer")(pFaxServer)
+    val __obj = js.Dynamic.literal(bstrCallerId = bstrCallerId, lCallId = lCallId, lDeviceId = lDeviceId, pFaxServer = pFaxServer)
+  
     __obj.asInstanceOf[Anon_BstrCallerId]
   }
 }

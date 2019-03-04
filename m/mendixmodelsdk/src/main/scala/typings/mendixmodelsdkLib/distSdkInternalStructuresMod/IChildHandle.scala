@@ -18,10 +18,8 @@ object IChildHandle {
     delete: js.Function0[scala.Unit],
     detach: js.Function0[scala.Unit]
   ): IChildHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containingProperty")(containingProperty.asInstanceOf[js.Any])
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("detach")(detach)
+    val __obj = js.Dynamic.literal(containingProperty = containingProperty.asInstanceOf[js.Any], delete = delete, detach = detach)
+  
     __obj.asInstanceOf[IChildHandle]
   }
 }

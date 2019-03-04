@@ -69,9 +69,7 @@ object ImagingManifest {
     resourceType: code = null,
     text: Narrative = null
   ): ImagingManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("study")(study)
+    val __obj = js.Dynamic.literal(patient = patient, study = study)
     if (_authoringTime != null) __obj.updateDynamic("_authoringTime")(_authoringTime)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -12,8 +12,8 @@ trait Anon_SearchObject extends js.Object {
 object Anon_SearchObject {
   @scala.inline
   def apply(SearchObject: activexDashOutlookLib.OutlookNs.Search): Anon_SearchObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SearchObject")(SearchObject)
+    val __obj = js.Dynamic.literal(SearchObject = SearchObject)
+  
     __obj.asInstanceOf[Anon_SearchObject]
   }
 }

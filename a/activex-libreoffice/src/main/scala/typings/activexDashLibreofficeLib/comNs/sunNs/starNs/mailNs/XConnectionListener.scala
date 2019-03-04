@@ -36,13 +36,8 @@ object XConnectionListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XConnectionListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("disconnected")(disconnected)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, connected = connected, disconnected = disconnected, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XConnectionListener]
   }
 }

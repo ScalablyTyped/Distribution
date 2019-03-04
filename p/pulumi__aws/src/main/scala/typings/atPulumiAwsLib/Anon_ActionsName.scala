@@ -16,9 +16,8 @@ object Anon_ActionsName {
     actions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_CategoryConfiguration]]],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ActionsName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ActionsName]
   }
 }

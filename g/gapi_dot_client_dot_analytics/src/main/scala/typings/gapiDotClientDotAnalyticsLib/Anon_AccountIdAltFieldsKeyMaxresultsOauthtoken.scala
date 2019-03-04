@@ -51,10 +51,7 @@ object Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken {
     `start-index`: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("profileId")(profileId)
-    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    val __obj = js.Dynamic.literal(accountId = accountId, profileId = profileId, webPropertyId = webPropertyId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

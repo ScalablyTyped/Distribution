@@ -20,8 +20,7 @@ object MaskedInputProps {
     formatCharacters: CharsFormatters = null,
     placeholderChar: java.lang.String = null
   ): MaskedInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(mask = mask)
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
     if (formatCharacters != null) __obj.updateDynamic("formatCharacters")(formatCharacters)
     if (placeholderChar != null) __obj.updateDynamic("placeholderChar")(placeholderChar)

@@ -99,27 +99,8 @@ object IOrder {
     status_transitions: stripeLib.Anon_Canceled,
     updated: scala.Double
   ): IOrder = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("amount_returned")(amount_returned)
-    __obj.updateDynamic("application")(application)
-    __obj.updateDynamic("application_fee")(application_fee)
-    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("external_coupon_code")(external_coupon_code)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("selected_shipping_method")(selected_shipping_method)
-    __obj.updateDynamic("shipping")(shipping)
-    __obj.updateDynamic("shipping_methods")(shipping_methods)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("status_transitions")(status_transitions)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(amount = amount, amount_returned = amount_returned, application = application, application_fee = application_fee, charge = charge.asInstanceOf[js.Any], created = created, currency = currency, customer = customer.asInstanceOf[js.Any], email = email, external_coupon_code = external_coupon_code, id = id, items = items, livemode = livemode, metadata = metadata, selected_shipping_method = selected_shipping_method, shipping = shipping, shipping_methods = shipping_methods, status = status, status_transitions = status_transitions, updated = updated)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IOrder]
   }
 }

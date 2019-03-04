@@ -32,7 +32,8 @@ object LocationData {
     region_name: java.lang.String = null,
     timezone: java.lang.String = null
   ): LocationData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (city_name != null) __obj.updateDynamic("city_name")(city_name)
     if (continent_code != null) __obj.updateDynamic("continent_code")(continent_code)
     if (country_code != null) __obj.updateDynamic("country_code")(country_code)

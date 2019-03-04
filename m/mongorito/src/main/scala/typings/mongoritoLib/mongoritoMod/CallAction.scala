@@ -14,9 +14,8 @@ trait CallAction extends Action {
 object CallAction {
   @scala.inline
   def apply(args: js.Array[mongoritoLib.Anon_Args], method: java.lang.String, `type`: ActionTypes): CallAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(args = args, method = method)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CallAction]
   }
 }

@@ -28,15 +28,8 @@ object IVerifyVaultJob {
     VaultGUID: java.lang.String,
     VerifyFileContents: scala.Boolean
   ): IVerifyVaultJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("FixErrors")(FixErrors)
-    __obj.updateDynamic("GetNumberOfSteps")(GetNumberOfSteps)
-    __obj.updateDynamic("GetOneBasedIndexOfStep")(GetOneBasedIndexOfStep)
-    __obj.updateDynamic("GetStepProgressText")(GetStepProgressText)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("VaultGUID")(VaultGUID)
-    __obj.updateDynamic("VerifyFileContents")(VerifyFileContents)
+    val __obj = js.Dynamic.literal(Clone = Clone, FixErrors = FixErrors, GetNumberOfSteps = GetNumberOfSteps, GetOneBasedIndexOfStep = GetOneBasedIndexOfStep, GetStepProgressText = GetStepProgressText, Set = Set, VaultGUID = VaultGUID, VerifyFileContents = VerifyFileContents)
+  
     __obj.asInstanceOf[IVerifyVaultJob]
   }
 }

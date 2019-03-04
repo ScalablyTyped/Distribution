@@ -22,12 +22,8 @@ object Anon_ADMIN {
     OTHER: chromeDashAppsLib.chromeDashAppsLibStrings.other,
     SIDELOAD: chromeDashAppsLib.chromeDashAppsLibStrings.sideload
   ): Anon_ADMIN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADMIN")(ADMIN)
-    __obj.updateDynamic("DEVELOPMENT")(DEVELOPMENT)
-    __obj.updateDynamic("NORMAL")(NORMAL)
-    __obj.updateDynamic("OTHER")(OTHER)
-    __obj.updateDynamic("SIDELOAD")(SIDELOAD)
+    val __obj = js.Dynamic.literal(ADMIN = ADMIN, DEVELOPMENT = DEVELOPMENT, NORMAL = NORMAL, OTHER = OTHER, SIDELOAD = SIDELOAD)
+  
     __obj.asInstanceOf[Anon_ADMIN]
   }
 }

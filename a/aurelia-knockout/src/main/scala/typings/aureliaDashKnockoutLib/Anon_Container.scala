@@ -16,9 +16,8 @@ object Anon_Container {
     container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
     globalResources: js.Function1[/* repeated */ java.lang.String, js.Any]
   ): Anon_Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("globalResources")(globalResources)
+    val __obj = js.Dynamic.literal(container = container, globalResources = globalResources)
+  
     __obj.asInstanceOf[Anon_Container]
   }
 }

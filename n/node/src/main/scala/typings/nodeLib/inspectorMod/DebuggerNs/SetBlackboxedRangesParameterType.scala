@@ -16,9 +16,8 @@ trait SetBlackboxedRangesParameterType extends js.Object {
 object SetBlackboxedRangesParameterType {
   @scala.inline
   def apply(positions: js.Array[ScriptPosition], scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId): SetBlackboxedRangesParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions)
-    __obj.updateDynamic("scriptId")(scriptId)
+    val __obj = js.Dynamic.literal(positions = positions, scriptId = scriptId)
+  
     __obj.asInstanceOf[SetBlackboxedRangesParameterType]
   }
 }

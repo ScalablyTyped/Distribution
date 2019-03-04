@@ -15,8 +15,8 @@ object Anon_Postcss {
   def apply(
     postcss: postcssLib.postcssMod.postcssNs.TransformCallback | postcssLib.postcssMod.postcssNs.Processor
   ): Anon_Postcss = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postcss")(postcss.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(postcss = postcss.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Postcss]
   }
 }

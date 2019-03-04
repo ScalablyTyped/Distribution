@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT13DOT6` extends js.Object
+  sealed trait `3DOT14DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -387,7 +387,8 @@ object antdLibStrings {
   sealed trait crispEdges extends js.Object
   
   @js.native
-  sealed trait danger extends js.Object
+  sealed trait danger
+    extends antdLib.libTypographyBaseMod.BaseType
   
   @js.native
   sealed trait dark
@@ -403,9 +404,6 @@ object antdLibStrings {
   @js.native
   sealed trait dashed
     extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
-  
-  @js.native
-  sealed trait date extends js.Object
   
   @js.native
   sealed trait default
@@ -523,6 +521,9 @@ object antdLibStrings {
     extends antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
+  sealed trait footer extends js.Object
+  
+  @js.native
   sealed trait form extends js.Object
   
   @js.native
@@ -553,6 +554,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait `hard-light` extends js.Object
+  
+  @js.native
+  sealed trait header extends js.Object
   
   @js.native
   sealed trait hidden extends js.Object
@@ -727,6 +731,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait luminosity extends js.Object
+  
+  @js.native
+  sealed trait main extends js.Object
   
   @js.native
   sealed trait mandatory extends js.Object
@@ -1224,6 +1231,13 @@ object antdLibStrings {
   sealed trait `searchfield-results-decoration` extends js.Object
   
   @js.native
+  sealed trait secondary
+    extends antdLib.libTypographyBaseMod.BaseType
+  
+  @js.native
+  sealed trait section extends js.Object
+  
+  @js.native
   sealed trait select
     extends antdLib.libUploadInterfaceMod.UploadType
   
@@ -1371,6 +1385,9 @@ object antdLibStrings {
   sealed trait stroke extends js.Object
   
   @js.native
+  sealed trait strong extends js.Object
+  
+  @js.native
   sealed trait sub extends js.Object
   
   @js.native
@@ -1430,9 +1447,6 @@ object antdLibStrings {
   
   @js.native
   sealed trait thin extends js.Object
-  
-  @js.native
-  sealed trait time extends js.Object
   
   @js.native
   sealed trait `titling-caps` extends js.Object
@@ -1577,7 +1591,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait warning
-    extends antdLib.libNotificationMod.IconType
+    extends antdLib.libTypographyBaseMod.BaseType
+       with antdLib.libNotificationMod.IconType
        with antdLib.libMessageMod.NoticeType
   
   @js.native
@@ -1679,7 +1694,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT13DOT6`: `3DOT13DOT6` = "3.13.6".asInstanceOf[`3DOT13DOT6`]
+  def `3DOT14DOT0`: `3DOT14DOT0` = "3.14.0".asInstanceOf[`3DOT14DOT0`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -1865,8 +1880,6 @@ object antdLibStrings {
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def `default-button`: `default-button` = "default-button".asInstanceOf[`default-button`]
@@ -1933,6 +1946,8 @@ object antdLibStrings {
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
+  def footer: footer = "footer".asInstanceOf[footer]
+  @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
   def `full-width`: `full-width` = "full-width".asInstanceOf[`full-width`]
@@ -1952,6 +1967,8 @@ object antdLibStrings {
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   @scala.inline
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
+  @scala.inline
+  def header: header = "header".asInstanceOf[header]
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
@@ -2056,6 +2073,8 @@ object antdLibStrings {
   def luminance: luminance = "luminance".asInstanceOf[luminance]
   @scala.inline
   def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
+  @scala.inline
+  def main: main = "main".asInstanceOf[main]
   @scala.inline
   def mandatory: mandatory = "mandatory".asInstanceOf[mandatory]
   @scala.inline
@@ -2371,6 +2390,10 @@ object antdLibStrings {
   @scala.inline
   def `searchfield-results-decoration`: `searchfield-results-decoration` = "searchfield-results-decoration".asInstanceOf[`searchfield-results-decoration`]
   @scala.inline
+  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  @scala.inline
+  def section: section = "section".asInstanceOf[section]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def `select-after`: `select-after` = "select-after".asInstanceOf[`select-after`]
@@ -2463,6 +2486,8 @@ object antdLibStrings {
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   @scala.inline
+  def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
@@ -2500,8 +2525,6 @@ object antdLibStrings {
   def `textfield-multiline`: `textfield-multiline` = "textfield-multiline".asInstanceOf[`textfield-multiline`]
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
   @scala.inline
   def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
   @scala.inline

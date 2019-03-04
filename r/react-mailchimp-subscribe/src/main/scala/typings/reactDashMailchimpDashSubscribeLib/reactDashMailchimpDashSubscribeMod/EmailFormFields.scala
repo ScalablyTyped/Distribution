@@ -12,8 +12,8 @@ trait EmailFormFields extends js.Object {
 object EmailFormFields {
   @scala.inline
   def apply(EMAIL: java.lang.String): EmailFormFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EMAIL")(EMAIL)
+    val __obj = js.Dynamic.literal(EMAIL = EMAIL)
+  
     __obj.asInstanceOf[EmailFormFields]
   }
 }

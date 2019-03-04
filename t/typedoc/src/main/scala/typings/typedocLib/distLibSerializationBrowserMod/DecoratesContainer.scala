@@ -12,8 +12,8 @@ trait DecoratesContainer extends js.Object {
 object DecoratesContainer {
   @scala.inline
   def apply(decorates: js.Array[TypeObject]): DecoratesContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decorates")(decorates)
+    val __obj = js.Dynamic.literal(decorates = decorates)
+  
     __obj.asInstanceOf[DecoratesContainer]
   }
 }

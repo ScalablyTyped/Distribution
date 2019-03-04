@@ -20,11 +20,8 @@ object ThemeListener {
     subscribe: js.Function2[ContextWithTheme[C], js.Function1[/* theme */ Theme, scala.Unit], SubscriptionId],
     unsubscribe: js.Function2[ContextWithTheme[C], SubscriptionId, scala.Unit]
   ): ThemeListener[C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextTypes")(contextTypes)
-    __obj.updateDynamic("initial")(initial)
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(contextTypes = contextTypes, initial = initial, subscribe = subscribe, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[ThemeListener[C]]
   }
 }

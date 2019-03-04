@@ -51,15 +51,8 @@ object JobType {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     state: java.lang.String
   ): JobType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(category = category, constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, state = state)
+  
     __obj.asInstanceOf[JobType]
   }
 }

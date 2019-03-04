@@ -13,9 +13,8 @@ trait DependencyBinding extends js.Object {
 object DependencyBinding {
   @scala.inline
   def apply(key: java.lang.String, value: java.lang.String): DependencyBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
     __obj.asInstanceOf[DependencyBinding]
   }
 }

@@ -20,10 +20,7 @@ object createCellPositionerParams {
     columnWidth: scala.Double,
     spacer: scala.Int | scala.Double = null
   ): createCellPositionerParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellMeasurerCache")(cellMeasurerCache)
-    __obj.updateDynamic("columnCount")(columnCount)
-    __obj.updateDynamic("columnWidth")(columnWidth)
+    val __obj = js.Dynamic.literal(cellMeasurerCache = cellMeasurerCache, columnCount = columnCount, columnWidth = columnWidth)
     if (spacer != null) __obj.updateDynamic("spacer")(spacer.asInstanceOf[js.Any])
     __obj.asInstanceOf[createCellPositionerParams]
   }

@@ -26,14 +26,8 @@ object FileCoverageData {
     s: org.scalablytyped.runtime.StringDictionary[scala.Double],
     statementMap: org.scalablytyped.runtime.StringDictionary[Range]
   ): FileCoverageData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("branchMap")(branchMap)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("fnMap")(fnMap)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("statementMap")(statementMap)
+    val __obj = js.Dynamic.literal(b = b, branchMap = branchMap, f = f, fnMap = fnMap, path = path, s = s, statementMap = statementMap)
+  
     __obj.asInstanceOf[FileCoverageData]
   }
 }

@@ -18,8 +18,8 @@ trait MultipleCategoriesResponse extends js.Object {
 object MultipleCategoriesResponse {
   @scala.inline
   def apply(categories: PagingObject[CategoryObject]): MultipleCategoriesResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(categories = categories)
+  
     __obj.asInstanceOf[MultipleCategoriesResponse]
   }
 }

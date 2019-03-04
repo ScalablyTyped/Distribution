@@ -35,11 +35,8 @@ object OutputRow {
     index: scala.Double,
     indexDeps: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): OutputRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dedupe")(dedupe)
-    __obj.updateDynamic("dedupeIndex")(dedupeIndex)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("indexDeps")(indexDeps)
+    val __obj = js.Dynamic.literal(dedupe = dedupe, dedupeIndex = dedupeIndex, index = index, indexDeps = indexDeps)
+  
     __obj.asInstanceOf[OutputRow]
   }
 }

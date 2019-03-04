@@ -22,9 +22,8 @@ object TargetProperties {
     Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     Target: js.Any
   ): TargetProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("Target")(Target)
+    val __obj = js.Dynamic.literal(Properties = Properties, Target = Target)
+  
     __obj.asInstanceOf[TargetProperties]
   }
 }

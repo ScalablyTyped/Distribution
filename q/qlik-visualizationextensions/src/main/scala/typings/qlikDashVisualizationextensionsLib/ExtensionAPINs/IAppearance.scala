@@ -20,9 +20,7 @@ object IAppearance {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null
   ): IAppearance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(items = items, uses = uses)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAppearance]

@@ -16,8 +16,7 @@ object Anon_KeyNodeVersion {
     nodeVersion: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_KeyNodeVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeVersion")(nodeVersion)
+    val __obj = js.Dynamic.literal(nodeVersion = nodeVersion)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_KeyNodeVersion]
   }

@@ -46,11 +46,8 @@ object HandleObject {
     `type`: java.lang.String,
     selector: java.lang.String = null
   ): HandleObject[TTarget, TData] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("origType")(origType)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], handler = handler, namespace = namespace, origType = origType)
+    __obj.updateDynamic("type")(`type`)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     __obj.asInstanceOf[HandleObject[TTarget, TData]]
   }

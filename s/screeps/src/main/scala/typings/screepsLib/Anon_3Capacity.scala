@@ -12,8 +12,8 @@ trait Anon_3Capacity extends js.Object {
 object Anon_3Capacity {
   @scala.inline
   def apply(capacity: screepsLib.screepsLibNumbers.`3`): Anon_3Capacity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capacity")(capacity)
+    val __obj = js.Dynamic.literal(capacity = capacity)
+  
     __obj.asInstanceOf[Anon_3Capacity]
   }
 }

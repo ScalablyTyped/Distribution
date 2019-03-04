@@ -41,12 +41,8 @@ object ChainRec1 {
       fpDashTsLib.libHKTMod.Type[F, js.Any]
     ]
   ): ChainRec1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("chainRec")(chainRec)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, chain = chain, chainRec = chainRec, map = map)
+  
     __obj.asInstanceOf[ChainRec1[F]]
   }
 }

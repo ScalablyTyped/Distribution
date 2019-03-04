@@ -63,14 +63,8 @@ object LiveBroadcastsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
     ]
   ): LiveBroadcastsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(bind = bind, control = control, delete = delete, insert = insert, list = list, transition = transition, update = update)
+  
     __obj.asInstanceOf[LiveBroadcastsResource]
   }
 }

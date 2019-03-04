@@ -43,10 +43,8 @@ object DataSourcesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
     ]
   ): DataSourcesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkValidCreds")(checkValidCreds)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(checkValidCreds = checkValidCreds, get = get, list = list)
+  
     __obj.asInstanceOf[DataSourcesResource]
   }
 }

@@ -30,16 +30,8 @@ object SerialPortIds {
     SW_SERIAL2: SERIAL_PORT_ID,
     SW_SERIAL3: SERIAL_PORT_ID
   ): SerialPortIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("HW_SERIAL0")(HW_SERIAL0)
-    __obj.updateDynamic("HW_SERIAL1")(HW_SERIAL1)
-    __obj.updateDynamic("HW_SERIAL2")(HW_SERIAL2)
-    __obj.updateDynamic("HW_SERIAL3")(HW_SERIAL3)
-    __obj.updateDynamic("SW_SERIAL0")(SW_SERIAL0)
-    __obj.updateDynamic("SW_SERIAL1")(SW_SERIAL1)
-    __obj.updateDynamic("SW_SERIAL2")(SW_SERIAL2)
-    __obj.updateDynamic("SW_SERIAL3")(SW_SERIAL3)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, HW_SERIAL0 = HW_SERIAL0, HW_SERIAL1 = HW_SERIAL1, HW_SERIAL2 = HW_SERIAL2, HW_SERIAL3 = HW_SERIAL3, SW_SERIAL0 = SW_SERIAL0, SW_SERIAL1 = SW_SERIAL1, SW_SERIAL2 = SW_SERIAL2, SW_SERIAL3 = SW_SERIAL3)
+  
     __obj.asInstanceOf[SerialPortIds]
   }
 }

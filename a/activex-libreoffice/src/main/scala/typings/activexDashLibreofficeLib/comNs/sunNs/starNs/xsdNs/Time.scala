@@ -71,29 +71,8 @@ object Time {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     validate: js.Function1[java.lang.String, scala.Boolean]
   ): Time = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsBasic")(IsBasic)
-    __obj.updateDynamic("MaxExclusiveTime")(MaxExclusiveTime)
-    __obj.updateDynamic("MaxInclusiveTime")(MaxInclusiveTime)
-    __obj.updateDynamic("MinExclusiveTime")(MinExclusiveTime)
-    __obj.updateDynamic("MinInclusiveTime")(MinInclusiveTime)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Pattern")(Pattern)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("WhiteSpaceTreatment")(WhiteSpaceTreatment)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("explainInvalid")(explainInvalid)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(IsBasic = IsBasic, MaxExclusiveTime = MaxExclusiveTime, MaxInclusiveTime = MaxInclusiveTime, MinExclusiveTime = MinExclusiveTime, MinInclusiveTime = MinInclusiveTime, Name = Name, Pattern = Pattern, PropertySetInfo = PropertySetInfo, TypeClass = TypeClass, WhiteSpaceTreatment = WhiteSpaceTreatment, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, explainInvalid = explainInvalid, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, validate = validate)
+  
     __obj.asInstanceOf[Time]
   }
 }

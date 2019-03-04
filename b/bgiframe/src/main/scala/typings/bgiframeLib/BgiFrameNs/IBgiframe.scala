@@ -22,12 +22,8 @@ object IBgiframe {
     prop: js.Function1[js.Any, java.lang.String],
     s: ISettings
   ): IBgiframe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createIframe")(createIframe)
-    __obj.updateDynamic("fire")(fire)
-    __obj.updateDynamic("getIframe")(getIframe)
-    __obj.updateDynamic("prop")(prop)
-    __obj.updateDynamic("s")(s)
+    val __obj = js.Dynamic.literal(createIframe = createIframe, fire = fire, getIframe = getIframe, prop = prop, s = s)
+  
     __obj.asInstanceOf[IBgiframe]
   }
 }

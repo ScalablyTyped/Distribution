@@ -13,9 +13,8 @@ trait CustomFilterParameters[Params /* <: js.Object */] extends js.Object {
 object CustomFilterParameters {
   @scala.inline
   def apply[Params /* <: js.Object */](callback: js.Function2[js.Any, Params, scala.Boolean], callbackParameters: Params): CustomFilterParameters[Params] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("callbackParameters")(callbackParameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = callback, callbackParameters = callbackParameters.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CustomFilterParameters[Params]]
   }
 }

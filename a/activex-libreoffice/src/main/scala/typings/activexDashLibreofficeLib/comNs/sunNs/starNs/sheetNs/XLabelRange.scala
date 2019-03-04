@@ -40,16 +40,8 @@ object XLabelRange {
     setDataArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
     setLabelArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
   ): XLabelRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataArea")(DataArea)
-    __obj.updateDynamic("LabelArea")(LabelArea)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataArea")(getDataArea)
-    __obj.updateDynamic("getLabelArea")(getLabelArea)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDataArea")(setDataArea)
-    __obj.updateDynamic("setLabelArea")(setLabelArea)
+    val __obj = js.Dynamic.literal(DataArea = DataArea, LabelArea = LabelArea, acquire = acquire, getDataArea = getDataArea, getLabelArea = getLabelArea, queryInterface = queryInterface, release = release, setDataArea = setDataArea, setLabelArea = setLabelArea)
+  
     __obj.asInstanceOf[XLabelRange]
   }
 }

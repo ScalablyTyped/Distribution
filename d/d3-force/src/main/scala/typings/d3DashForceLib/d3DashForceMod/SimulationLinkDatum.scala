@@ -35,9 +35,7 @@ object SimulationLinkDatum {
     target: NodeDatum | java.lang.String | scala.Double,
     index: scala.Int | scala.Double = null
   ): SimulationLinkDatum[NodeDatum] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimulationLinkDatum[NodeDatum]]
   }

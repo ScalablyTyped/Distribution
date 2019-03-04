@@ -12,6 +12,6 @@ trait LodashFindLastIndexFrom1x4[T] extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
   ): scala.Double = js.native
-  def apply(predicate: lodashLib.lodashMod.underscoreNs.`__`, fromIndex: scala.Double): LodashFindLastIndexFrom1x6[T] = js.native
+  def apply(predicate: lodashLib.lodashMod.underscoreNs.__, fromIndex: scala.Double): LodashFindLastIndexFrom1x6[T] = js.native
 }
 

@@ -23,10 +23,8 @@ object PathEditor {
     enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
     reset: js.Function0[scala.Unit]
   ): PathEditor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, reset = reset)
+  
     __obj.asInstanceOf[PathEditor]
   }
 }

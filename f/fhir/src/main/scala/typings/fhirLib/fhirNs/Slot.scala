@@ -109,11 +109,7 @@ object Slot {
     specialty: js.Array[CodeableConcept] = null,
     text: Narrative = null
   ): Slot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(end = end, schedule = schedule, start = start, status = status)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_end != null) __obj.updateDynamic("_end")(_end)
     if (_id != null) __obj.updateDynamic("_id")(_id)

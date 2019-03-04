@@ -23,8 +23,7 @@ object RequestDevice {
     deviceClass: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     name: java.lang.String = null
   ): RequestDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(address = address)
     if (!js.isUndefined(deviceClass)) __obj.updateDynamic("deviceClass")(deviceClass)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[RequestDevice]

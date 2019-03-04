@@ -12,8 +12,8 @@ trait Anon_Volume extends js.Object {
 object Anon_Volume {
   @scala.inline
   def apply(volume: scala.Double): Anon_Volume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(volume = volume)
+  
     __obj.asInstanceOf[Anon_Volume]
   }
 }

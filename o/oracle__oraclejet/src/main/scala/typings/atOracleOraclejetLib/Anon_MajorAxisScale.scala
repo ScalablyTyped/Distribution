@@ -22,11 +22,7 @@ object Anon_MajorAxisScale {
     viewportStart: java.lang.String,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_MajorAxisScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("majorAxisScale")(majorAxisScale)
-    __obj.updateDynamic("minorAxisScale")(minorAxisScale)
-    __obj.updateDynamic("viewportEnd")(viewportEnd)
-    __obj.updateDynamic("viewportStart")(viewportStart)
+    val __obj = js.Dynamic.literal(majorAxisScale = majorAxisScale, minorAxisScale = minorAxisScale, viewportEnd = viewportEnd, viewportStart = viewportStart)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_MajorAxisScale]
   }

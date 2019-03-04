@@ -22,12 +22,8 @@ object PanoramaData {
     position: Point,
     tiles: PanoramaTileData
   ): PanoramaData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("tiles")(tiles)
+    val __obj = js.Dynamic.literal(description = description, id = id, links = links, position = position, tiles = tiles)
+  
     __obj.asInstanceOf[PanoramaData]
   }
 }

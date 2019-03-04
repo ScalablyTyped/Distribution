@@ -12,8 +12,8 @@ trait Anon_DropdownToggle extends js.Object {
 object Anon_DropdownToggle {
   @scala.inline
   def apply(DropdownToggleNs: js.Any): Anon_DropdownToggle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DropdownToggleNs")(DropdownToggleNs)
+    val __obj = js.Dynamic.literal(DropdownToggleNs = DropdownToggleNs)
+  
     __obj.asInstanceOf[Anon_DropdownToggle]
   }
 }

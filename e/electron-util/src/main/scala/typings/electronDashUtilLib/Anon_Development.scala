@@ -30,16 +30,8 @@ object Anon_Development {
     windows: scala.Boolean,
     windowsStore: scala.Boolean
   ): Anon_Development = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("development")(development)
-    __obj.updateDynamic("linux")(linux)
-    __obj.updateDynamic("macAppStore")(macAppStore)
-    __obj.updateDynamic("macos")(macos)
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("usingAsar")(usingAsar)
-    __obj.updateDynamic("windows")(windows)
-    __obj.updateDynamic("windowsStore")(windowsStore)
+    val __obj = js.Dynamic.literal(development = development, linux = linux, macAppStore = macAppStore, macos = macos, main = main, renderer = renderer, usingAsar = usingAsar, windows = windows, windowsStore = windowsStore)
+  
     __obj.asInstanceOf[Anon_Development]
   }
 }

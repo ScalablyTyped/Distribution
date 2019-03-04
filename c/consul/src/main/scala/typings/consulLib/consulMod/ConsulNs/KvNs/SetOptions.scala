@@ -33,9 +33,7 @@ object SetOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): SetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
     if (acquire != null) __obj.updateDynamic("acquire")(acquire)
     if (cas != null) __obj.updateDynamic("cas")(cas)
     if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)

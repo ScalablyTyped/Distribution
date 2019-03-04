@@ -20,11 +20,8 @@ object Anon_Saved {
     updateSequenceNum: scala.Double,
     updated: scala.Double
   ): Anon_Saved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("saved")(saved)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updateSequenceNum")(updateSequenceNum)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(saved = saved, title = title, updateSequenceNum = updateSequenceNum, updated = updated)
+  
     __obj.asInstanceOf[Anon_Saved]
   }
 }

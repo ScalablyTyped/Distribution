@@ -30,10 +30,8 @@ object JSXFragment {
     openingElement: astDashTypesLib.genKindsMod.JSXOpeningFragmentKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.JSXFragment
   ): JSXFragment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("closingElement")(closingElement)
-    __obj.updateDynamic("openingElement")(openingElement)
+    val __obj = js.Dynamic.literal(children = children, closingElement = closingElement, openingElement = openingElement)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSXFragment]
   }
 }

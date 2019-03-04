@@ -16,8 +16,7 @@ object Anon_Chain {
     chain: atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.FormattedMessageChain,
     position: atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.Position = null
   ): Anon_Chain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chain")(chain)
+    val __obj = js.Dynamic.literal(chain = chain)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[Anon_Chain]
   }

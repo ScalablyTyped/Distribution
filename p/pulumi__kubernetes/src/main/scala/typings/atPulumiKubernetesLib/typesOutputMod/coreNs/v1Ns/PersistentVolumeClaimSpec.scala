@@ -60,14 +60,8 @@ object PersistentVolumeClaimSpec {
     volumeMode: java.lang.String,
     volumeName: java.lang.String
   ): PersistentVolumeClaimSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessModes")(accessModes)
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("storageClassName")(storageClassName)
-    __obj.updateDynamic("volumeMode")(volumeMode)
-    __obj.updateDynamic("volumeName")(volumeName)
+    val __obj = js.Dynamic.literal(accessModes = accessModes, dataSource = dataSource, resources = resources, selector = selector, storageClassName = storageClassName, volumeMode = volumeMode, volumeName = volumeName)
+  
     __obj.asInstanceOf[PersistentVolumeClaimSpec]
   }
 }

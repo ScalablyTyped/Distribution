@@ -36,8 +36,8 @@ object SymLogScale {
     round: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     zero: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): SymLogScale = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
     if (constant != null) __obj.updateDynamic("constant")(constant.asInstanceOf[js.Any])

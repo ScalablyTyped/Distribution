@@ -58,29 +58,8 @@ object XSimpleFileAccess3 {
       scala.Unit
     ]
   ): XSimpleFileAccess3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("createFolder")(createFolder)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getDateTimeModified")(getDateTimeModified)
-    __obj.updateDynamic("getFolderContents")(getFolderContents)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("isHidden")(isHidden)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("kill")(kill)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("openFileRead")(openFileRead)
-    __obj.updateDynamic("openFileReadWrite")(openFileReadWrite)
-    __obj.updateDynamic("openFileWrite")(openFileWrite)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setHidden")(setHidden)
-    __obj.updateDynamic("setInteractionHandler")(setInteractionHandler)
-    __obj.updateDynamic("setReadOnly")(setReadOnly)
-    __obj.updateDynamic("writeFile")(writeFile)
+    val __obj = js.Dynamic.literal(acquire = acquire, copy = copy, createFolder = createFolder, exists = exists, getContentType = getContentType, getDateTimeModified = getDateTimeModified, getFolderContents = getFolderContents, getSize = getSize, isFolder = isFolder, isHidden = isHidden, isReadOnly = isReadOnly, kill = kill, move = move, openFileRead = openFileRead, openFileReadWrite = openFileReadWrite, openFileWrite = openFileWrite, queryInterface = queryInterface, release = release, setHidden = setHidden, setInteractionHandler = setInteractionHandler, setReadOnly = setReadOnly, writeFile = writeFile)
+  
     __obj.asInstanceOf[XSimpleFileAccess3]
   }
 }

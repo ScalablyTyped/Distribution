@@ -96,25 +96,8 @@ object GetGroupResult {
     terminationPolicies: js.Array[java.lang.String],
     vpcZoneIdentifier: java.lang.String
   ): GetGroupResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("availabilityZones")(availabilityZones)
-    __obj.updateDynamic("defaultCooldown")(defaultCooldown)
-    __obj.updateDynamic("desiredCapacity")(desiredCapacity)
-    __obj.updateDynamic("healthCheckGracePeriod")(healthCheckGracePeriod)
-    __obj.updateDynamic("healthCheckType")(healthCheckType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("launchConfiguration")(launchConfiguration)
-    __obj.updateDynamic("loadBalancers")(loadBalancers)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("minSize")(minSize)
-    __obj.updateDynamic("newInstancesProtectedFromScaleIn")(newInstancesProtectedFromScaleIn)
-    __obj.updateDynamic("placementGroup")(placementGroup)
-    __obj.updateDynamic("serviceLinkedRoleArn")(serviceLinkedRoleArn)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("targetGroupArns")(targetGroupArns)
-    __obj.updateDynamic("terminationPolicies")(terminationPolicies)
-    __obj.updateDynamic("vpcZoneIdentifier")(vpcZoneIdentifier)
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, defaultCooldown = defaultCooldown, desiredCapacity = desiredCapacity, healthCheckGracePeriod = healthCheckGracePeriod, healthCheckType = healthCheckType, id = id, launchConfiguration = launchConfiguration, loadBalancers = loadBalancers, maxSize = maxSize, minSize = minSize, newInstancesProtectedFromScaleIn = newInstancesProtectedFromScaleIn, placementGroup = placementGroup, serviceLinkedRoleArn = serviceLinkedRoleArn, status = status, targetGroupArns = targetGroupArns, terminationPolicies = terminationPolicies, vpcZoneIdentifier = vpcZoneIdentifier)
+  
     __obj.asInstanceOf[GetGroupResult]
   }
 }

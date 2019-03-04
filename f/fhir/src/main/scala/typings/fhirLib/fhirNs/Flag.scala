@@ -74,10 +74,7 @@ object Flag {
     resourceType: code = null,
     text: Narrative = null
   ): Flag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(code = code, status = status, subject = subject)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

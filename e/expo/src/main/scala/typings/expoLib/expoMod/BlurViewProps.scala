@@ -112,9 +112,7 @@ object BlurViewProps {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     testID: java.lang.String = null
   ): BlurViewProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intensity")(intensity)
-    __obj.updateDynamic("tint")(tint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(intensity = intensity, tint = tint.asInstanceOf[js.Any])
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

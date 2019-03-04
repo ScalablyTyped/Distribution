@@ -24,13 +24,8 @@ object BoxDefinition {
     topRight: java.lang.String,
     vertical: java.lang.String
   ): BoxDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottomLeft")(bottomLeft)
-    __obj.updateDynamic("bottomRight")(bottomRight)
-    __obj.updateDynamic("horizontal")(horizontal)
-    __obj.updateDynamic("topLeft")(topLeft)
-    __obj.updateDynamic("topRight")(topRight)
-    __obj.updateDynamic("vertical")(vertical)
+    val __obj = js.Dynamic.literal(bottomLeft = bottomLeft, bottomRight = bottomRight, horizontal = horizontal, topLeft = topLeft, topRight = topRight, vertical = vertical)
+  
     __obj.asInstanceOf[BoxDefinition]
   }
 }

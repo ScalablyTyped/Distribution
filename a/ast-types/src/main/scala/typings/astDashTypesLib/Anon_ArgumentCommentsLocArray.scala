@@ -18,8 +18,7 @@ object Anon_ArgumentCommentsLocArray {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_ArgumentCommentsLocArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_ArgumentCommentsLocArray]

@@ -25,13 +25,8 @@ object RootNodeContext {
     itemData: D,
     outerBounds: atOracleOraclejetLib.Anon_HeightWidth
   ): RootNodeContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("innerBounds")(innerBounds)
-    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    __obj.updateDynamic("outerBounds")(outerBounds)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], innerBounds = innerBounds, itemData = itemData.asInstanceOf[js.Any], outerBounds = outerBounds)
+  
     __obj.asInstanceOf[RootNodeContext[K, D]]
   }
 }

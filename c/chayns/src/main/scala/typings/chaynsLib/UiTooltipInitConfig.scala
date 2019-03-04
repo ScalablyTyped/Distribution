@@ -13,9 +13,8 @@ trait UiTooltipInitConfig extends js.Object {
 object UiTooltipInitConfig {
   @scala.inline
   def apply(preventAnimation: scala.Boolean, tooltipClass: java.lang.String): UiTooltipInitConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preventAnimation")(preventAnimation)
-    __obj.updateDynamic("tooltipClass")(tooltipClass)
+    val __obj = js.Dynamic.literal(preventAnimation = preventAnimation, tooltipClass = tooltipClass)
+  
     __obj.asInstanceOf[UiTooltipInitConfig]
   }
 }

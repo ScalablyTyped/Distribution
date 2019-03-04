@@ -18,7 +18,8 @@ object GraphOrDefault {
     default: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null
   ): GraphOrDefault = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[GraphOrDefault]

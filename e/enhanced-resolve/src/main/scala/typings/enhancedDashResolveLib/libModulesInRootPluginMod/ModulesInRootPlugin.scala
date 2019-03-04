@@ -21,11 +21,8 @@ object ModulesInRootPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): ModulesInRootPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, path = path, source = source, target = target)
+  
     __obj.asInstanceOf[ModulesInRootPlugin]
   }
 }

@@ -52,8 +52,7 @@ object MessageOptions {
     theme: java.lang.String = null,
     `type`: java.lang.String = null
   ): MessageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (hideAfter != null) __obj.updateDynamic("hideAfter")(hideAfter.asInstanceOf[js.Any])
     if (!js.isUndefined(hideOnNavigate)) __obj.updateDynamic("hideOnNavigate")(hideOnNavigate)
     if (id != null) __obj.updateDynamic("id")(id)

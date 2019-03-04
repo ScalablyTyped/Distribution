@@ -16,9 +16,8 @@ object ITextProcessor {
     processText: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
     processTextEx: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, js.Any]
   ): ITextProcessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("processText")(processText)
-    __obj.updateDynamic("processTextEx")(processTextEx)
+    val __obj = js.Dynamic.literal(processText = processText, processTextEx = processTextEx)
+  
     __obj.asInstanceOf[ITextProcessor]
   }
 }

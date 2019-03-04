@@ -20,9 +20,7 @@ object GraphQLInterfaceTypeConfig {
     description: java.lang.String = null,
     resolveType: GraphQLTypeResolveFn = null
   ): GraphQLInterfaceTypeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
     __obj.asInstanceOf[GraphQLInterfaceTypeConfig]

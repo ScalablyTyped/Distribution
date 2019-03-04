@@ -27,15 +27,8 @@ object BootstrapTreeViewEventMap {
     init: EventArgs,
     nodeClick: TreeViewNodeClickEventArgs
   ): BootstrapTreeViewEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("checkedChanged")(checkedChanged)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("expandedChanged")(expandedChanged)
-    __obj.updateDynamic("expandedChanging")(expandedChanging)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("nodeClick")(nodeClick)
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, callbackError = callbackError, checkedChanged = checkedChanged, endCallback = endCallback, expandedChanged = expandedChanged, expandedChanging = expandedChanging, init = init, nodeClick = nodeClick)
+  
     __obj.asInstanceOf[BootstrapTreeViewEventMap]
   }
 }

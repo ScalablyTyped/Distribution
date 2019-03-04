@@ -16,8 +16,7 @@ object FirebaseService {
     app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp,
     INTERNAL: FirebaseServiceInternals = null
   ): FirebaseService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
+    val __obj = js.Dynamic.literal(app = app)
     if (INTERNAL != null) __obj.updateDynamic("INTERNAL")(INTERNAL)
     __obj.asInstanceOf[FirebaseService]
   }

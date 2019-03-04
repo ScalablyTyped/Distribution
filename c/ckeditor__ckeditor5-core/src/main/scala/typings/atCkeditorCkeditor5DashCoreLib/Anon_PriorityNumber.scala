@@ -14,8 +14,8 @@ object Anon_PriorityNumber {
   def apply(
     priority: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString | scala.Double
   ): Anon_PriorityNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PriorityNumber]
   }
 }

@@ -42,8 +42,7 @@ object TransitionProps {
     onExiting: ExitHandler = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   ): TransitionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener)
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)

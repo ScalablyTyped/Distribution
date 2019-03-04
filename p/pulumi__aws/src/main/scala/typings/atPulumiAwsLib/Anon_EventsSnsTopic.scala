@@ -16,9 +16,8 @@ object Anon_EventsSnsTopic {
     events: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     snsTopic: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_EventsSnsTopic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    __obj.updateDynamic("snsTopic")(snsTopic.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], snsTopic = snsTopic.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EventsSnsTopic]
   }
 }

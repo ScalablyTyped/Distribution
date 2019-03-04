@@ -12,8 +12,8 @@ trait DataViewScriptResultData extends js.Object {
 object DataViewScriptResultData {
   @scala.inline
   def apply(payloadBase64: java.lang.String): DataViewScriptResultData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("payloadBase64")(payloadBase64)
+    val __obj = js.Dynamic.literal(payloadBase64 = payloadBase64)
+  
     __obj.asInstanceOf[DataViewScriptResultData]
   }
 }

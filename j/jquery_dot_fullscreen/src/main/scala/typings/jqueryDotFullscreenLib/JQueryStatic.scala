@@ -16,8 +16,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(fullscreen: JQueryFullscreen): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullscreen")(fullscreen)
+    val __obj = js.Dynamic.literal(fullscreen = fullscreen)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

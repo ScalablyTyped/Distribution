@@ -16,9 +16,8 @@ object Config {
     adapters: org.scalablytyped.runtime.StringDictionary[Adapter],
     connections: org.scalablytyped.runtime.StringDictionary[Connection]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapters")(adapters)
-    __obj.updateDynamic("connections")(connections)
+    val __obj = js.Dynamic.literal(adapters = adapters, connections = connections)
+  
     __obj.asInstanceOf[Config]
   }
 }

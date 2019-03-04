@@ -30,16 +30,8 @@ object patternSettings {
     f: java.lang.String,
     t: java.lang.String
   ): patternSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("D")(D)
-    __obj.updateDynamic("F")(F)
-    __obj.updateDynamic("M")(M)
-    __obj.updateDynamic("S")(S)
-    __obj.updateDynamic("T")(T)
-    __obj.updateDynamic("Y")(Y)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(D = D, F = F, M = M, S = S, T = T, Y = Y, d = d, f = f, t = t)
+  
     __obj.asInstanceOf[patternSettings]
   }
 }

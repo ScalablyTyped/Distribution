@@ -34,14 +34,8 @@ object AffineTransform {
     translate_y: scala.Double,
     unit: Unit
   ): AffineTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale_x")(scale_x)
-    __obj.updateDynamic("scale_y")(scale_y)
-    __obj.updateDynamic("shear_x")(shear_x)
-    __obj.updateDynamic("shear_y")(shear_y)
-    __obj.updateDynamic("translate_x")(translate_x)
-    __obj.updateDynamic("translate_y")(translate_y)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(scale_x = scale_x, scale_y = scale_y, shear_x = shear_x, shear_y = shear_y, translate_x = translate_x, translate_y = translate_y, unit = unit)
+  
     __obj.asInstanceOf[AffineTransform]
   }
 }

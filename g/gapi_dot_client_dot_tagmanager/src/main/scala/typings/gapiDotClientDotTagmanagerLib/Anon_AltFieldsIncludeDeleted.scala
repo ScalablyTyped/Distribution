@@ -45,8 +45,7 @@ object Anon_AltFieldsIncludeDeleted {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIncludeDeleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted)

@@ -46,20 +46,8 @@ object GetVpcPeeringConnectionResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetVpcPeeringConnectionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accepter")(accepter)
-    __obj.updateDynamic("cidrBlock")(cidrBlock)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("peerCidrBlock")(peerCidrBlock)
-    __obj.updateDynamic("peerOwnerId")(peerOwnerId)
-    __obj.updateDynamic("peerRegion")(peerRegion)
-    __obj.updateDynamic("peerVpcId")(peerVpcId)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("requester")(requester)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(accepter = accepter, cidrBlock = cidrBlock, id = id, ownerId = ownerId, peerCidrBlock = peerCidrBlock, peerOwnerId = peerOwnerId, peerRegion = peerRegion, peerVpcId = peerVpcId, region = region, requester = requester, status = status, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetVpcPeeringConnectionResult]
   }
 }

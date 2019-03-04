@@ -73,21 +73,8 @@ object ASPxClientHtmlEditorLinkDialog {
     GetTooltipTextBox: js.Function0[ASPxClientTextBox],
     GetUrlTextBox: js.Function0[ASPxClientTextBox]
   ): ASPxClientHtmlEditorLinkDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetEmailTextBox")(GetEmailTextBox)
-    __obj.updateDynamic("GetFileManager")(GetFileManager)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetLinkTypeRadioButtonList")(GetLinkTypeRadioButtonList)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetOpenInNewWindowCheckBox")(GetOpenInNewWindowCheckBox)
-    __obj.updateDynamic("GetSelectDocumentPopupCancelButton")(GetSelectDocumentPopupCancelButton)
-    __obj.updateDynamic("GetSelectDocumentPopupControl")(GetSelectDocumentPopupControl)
-    __obj.updateDynamic("GetSelectDocumentPopupSelectButton")(GetSelectDocumentPopupSelectButton)
-    __obj.updateDynamic("GetSubjectTextBox")(GetSubjectTextBox)
-    __obj.updateDynamic("GetTextTextBox")(GetTextTextBox)
-    __obj.updateDynamic("GetTooltipTextBox")(GetTooltipTextBox)
-    __obj.updateDynamic("GetUrlTextBox")(GetUrlTextBox)
+    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetEmailTextBox = GetEmailTextBox, GetFileManager = GetFileManager, GetFormLayout = GetFormLayout, GetLinkTypeRadioButtonList = GetLinkTypeRadioButtonList, GetOkButton = GetOkButton, GetOpenInNewWindowCheckBox = GetOpenInNewWindowCheckBox, GetSelectDocumentPopupCancelButton = GetSelectDocumentPopupCancelButton, GetSelectDocumentPopupControl = GetSelectDocumentPopupControl, GetSelectDocumentPopupSelectButton = GetSelectDocumentPopupSelectButton, GetSubjectTextBox = GetSubjectTextBox, GetTextTextBox = GetTextTextBox, GetTooltipTextBox = GetTooltipTextBox, GetUrlTextBox = GetUrlTextBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorLinkDialog]
   }
 }

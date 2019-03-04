@@ -32,9 +32,7 @@ object Config {
     theme: stdLib.Partial[Theme] = null,
     useBrowserHistory: js.UndefOr[scala.Boolean] = js.undefined
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(pages = pages, title = title)
     if (basePath != null) __obj.updateDynamic("basePath")(basePath)
     if (imports != null) __obj.updateDynamic("imports")(imports)
     if (logoSrc != null) __obj.updateDynamic("logoSrc")(logoSrc)

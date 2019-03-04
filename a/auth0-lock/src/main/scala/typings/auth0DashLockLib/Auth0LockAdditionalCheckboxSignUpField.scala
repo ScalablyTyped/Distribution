@@ -24,10 +24,7 @@ object Auth0LockAdditionalCheckboxSignUpField {
     `type`: auth0DashLockLib.auth0DashLockLibStrings.checkbox = null,
     validator: js.Function1[/* input */ java.lang.String, Anon_Hint] = null
   ): Auth0LockAdditionalCheckboxSignUpField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, placeholder = placeholder, prefill = prefill.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (validator != null) __obj.updateDynamic("validator")(validator)

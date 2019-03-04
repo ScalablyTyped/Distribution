@@ -30,8 +30,7 @@ object IndicesFlushParams {
     requestTimeout: scala.Int | scala.Double = null,
     waitIfOngoing: js.UndefOr[scala.Boolean] = js.undefined
   ): IndicesFlushParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (body != null) __obj.updateDynamic("body")(body)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)

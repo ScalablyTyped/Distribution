@@ -34,10 +34,7 @@ object IFitContentToBoundsOptions {
     mode: FitMode,
     maxScale: scala.Int | scala.Double = null
   ): IFitContentToBoundsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundsSize")(boundsSize)
-    __obj.updateDynamic("contentSize")(contentSize)
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(boundsSize = boundsSize, contentSize = contentSize, mode = mode)
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFitContentToBoundsOptions]
   }

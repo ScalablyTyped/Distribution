@@ -22,8 +22,7 @@ object Anon_Index {
     startSeconds: scala.Int | scala.Double = null,
     suggestedQuality: java.lang.String = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listType")(listType)
+    val __obj = js.Dynamic.literal(listType = listType)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (list != null) __obj.updateDynamic("list")(list)
     if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])

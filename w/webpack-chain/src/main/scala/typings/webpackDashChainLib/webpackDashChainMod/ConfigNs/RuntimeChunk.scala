@@ -12,8 +12,8 @@ trait RuntimeChunk extends js.Object {
 object RuntimeChunk {
   @scala.inline
   def apply(name: java.lang.String | RuntimeChunkFunction): RuntimeChunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RuntimeChunk]
   }
 }

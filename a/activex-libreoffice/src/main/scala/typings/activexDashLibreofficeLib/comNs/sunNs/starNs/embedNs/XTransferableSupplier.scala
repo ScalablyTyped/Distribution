@@ -29,12 +29,8 @@ object XTransferableSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTransferableSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Transferable")(Transferable)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTransferable")(getTransferable)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Transferable = Transferable, acquire = acquire, getTransferable = getTransferable, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTransferableSupplier]
   }
 }

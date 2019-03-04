@@ -20,10 +20,7 @@ object FilterSpecification {
     outputs: java.lang.String | js.Array[java.lang.String],
     options: js.Any | java.lang.String | js.Array[_] = null
   ): FilterSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filter = filter, inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterSpecification]
   }

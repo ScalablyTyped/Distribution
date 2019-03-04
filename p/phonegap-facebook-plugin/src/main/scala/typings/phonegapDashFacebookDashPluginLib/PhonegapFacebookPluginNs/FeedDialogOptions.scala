@@ -73,8 +73,7 @@ object FeedDialogOptions {
     source: java.lang.String = null,
     to: java.lang.String = null
   ): FeedDialogOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (description != null) __obj.updateDynamic("description")(description)
     if (from != null) __obj.updateDynamic("from")(from)

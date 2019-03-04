@@ -20,10 +20,7 @@ object Anon_ActionCloseElement {
     endCallback: js.Function0[scala.Unit],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ActionCloseElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("endCallback")(endCallback)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element, endCallback = endCallback)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionCloseElement]
   }

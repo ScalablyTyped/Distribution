@@ -12,8 +12,8 @@ trait WriteInfo extends js.Object {
 object WriteInfo {
   @scala.inline
   def apply(bytesWritten: scala.Double): WriteInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesWritten")(bytesWritten)
+    val __obj = js.Dynamic.literal(bytesWritten = bytesWritten)
+  
     __obj.asInstanceOf[WriteInfo]
   }
 }

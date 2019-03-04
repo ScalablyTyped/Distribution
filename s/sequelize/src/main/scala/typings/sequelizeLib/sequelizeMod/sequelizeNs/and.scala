@@ -12,8 +12,8 @@ trait and extends js.Object {
 object and {
   @scala.inline
   def apply(args: js.Array[_]): and = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(args = args)
+  
     __obj.asInstanceOf[and]
   }
 }

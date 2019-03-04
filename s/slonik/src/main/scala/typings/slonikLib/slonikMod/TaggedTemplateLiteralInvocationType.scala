@@ -14,9 +14,8 @@ trait TaggedTemplateLiteralInvocationType extends js.Object {
 object TaggedTemplateLiteralInvocationType {
   @scala.inline
   def apply(sql: java.lang.String, `type`: js.Symbol, values: js.Array[ValueExpressionType]): TaggedTemplateLiteralInvocationType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("sql")(sql)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(sql = sql, values = values)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TaggedTemplateLiteralInvocationType]
   }
 }

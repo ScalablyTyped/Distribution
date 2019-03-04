@@ -13,9 +13,8 @@ trait Anon_Email extends js.Object {
 object Anon_Email {
   @scala.inline
   def apply(email: java.lang.String, id: java.lang.String): Anon_Email = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(email = email, id = id)
+  
     __obj.asInstanceOf[Anon_Email]
   }
 }

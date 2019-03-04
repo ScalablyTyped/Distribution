@@ -36,9 +36,7 @@ object Options {
     subdirectories: js.Array[SubDirectory] = null,
     urlFilter: js.Function1[/* url */ java.lang.String, scala.Boolean] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(directory = directory, urls = urls)
     if (defaultFilename != null) __obj.updateDynamic("defaultFilename")(defaultFilename)
     if (filenameGenerator != null) __obj.updateDynamic("filenameGenerator")(filenameGenerator)
     if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)

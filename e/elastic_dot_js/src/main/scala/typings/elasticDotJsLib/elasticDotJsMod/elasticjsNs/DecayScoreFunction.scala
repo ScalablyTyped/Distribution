@@ -72,18 +72,8 @@ object DecayScoreFunction {
     scale: js.Function1[java.lang.String, DecayScoreFunction],
     toJSON: js.Function0[js.Any]
   ): DecayScoreFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("decay")(decay)
-    __obj.updateDynamic("exp")(exp)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("gauss")(gauss)
-    __obj.updateDynamic("linear")(linear)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, decay = decay, exp = exp, field = field, filter = filter, gauss = gauss, linear = linear, offset = offset, origin = origin, scale = scale, toJSON = toJSON)
+  
     __obj.asInstanceOf[DecayScoreFunction]
   }
 }

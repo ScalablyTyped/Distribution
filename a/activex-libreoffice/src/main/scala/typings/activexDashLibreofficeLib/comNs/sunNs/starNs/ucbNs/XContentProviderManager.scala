@@ -52,14 +52,8 @@ object XContentProviderManager {
     registerContentProvider: js.Function3[XContentProvider, java.lang.String, scala.Boolean, XContentProvider],
     release: js.Function0[scala.Unit]
   ): XContentProviderManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("deregisterContentProvider")(deregisterContentProvider)
-    __obj.updateDynamic("queryContentProvider")(queryContentProvider)
-    __obj.updateDynamic("queryContentProviders")(queryContentProviders)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerContentProvider")(registerContentProvider)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, deregisterContentProvider = deregisterContentProvider, queryContentProvider = queryContentProvider, queryContentProviders = queryContentProviders, queryInterface = queryInterface, registerContentProvider = registerContentProvider, release = release)
+  
     __obj.asInstanceOf[XContentProviderManager]
   }
 }

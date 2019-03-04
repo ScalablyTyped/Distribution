@@ -40,20 +40,7 @@ object Globals {
     supportTransition: scala.Boolean,
     cssCalc: java.lang.String = null
   ): Globals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoUpdateLoop")(autoUpdateLoop)
-    __obj.updateDynamic("autoUpdateRecommended")(autoUpdateRecommended)
-    __obj.updateDynamic("nativeScrollbarIsOverlaid")(nativeScrollbarIsOverlaid)
-    __obj.updateDynamic("nativeScrollbarSize")(nativeScrollbarSize)
-    __obj.updateDynamic("nativeScrollbarStyling")(nativeScrollbarStyling)
-    __obj.updateDynamic("overlayScrollbarDummySize")(overlayScrollbarDummySize)
-    __obj.updateDynamic("restrictedMeasuring")(restrictedMeasuring)
-    __obj.updateDynamic("rtlScrollBehavior")(rtlScrollBehavior)
-    __obj.updateDynamic("supportMutationObserver")(supportMutationObserver)
-    __obj.updateDynamic("supportPassiveEvents")(supportPassiveEvents)
-    __obj.updateDynamic("supportResizeObserver")(supportResizeObserver)
-    __obj.updateDynamic("supportTransform")(supportTransform)
-    __obj.updateDynamic("supportTransition")(supportTransition)
+    val __obj = js.Dynamic.literal(autoUpdateLoop = autoUpdateLoop, autoUpdateRecommended = autoUpdateRecommended, nativeScrollbarIsOverlaid = nativeScrollbarIsOverlaid, nativeScrollbarSize = nativeScrollbarSize, nativeScrollbarStyling = nativeScrollbarStyling, overlayScrollbarDummySize = overlayScrollbarDummySize, restrictedMeasuring = restrictedMeasuring, rtlScrollBehavior = rtlScrollBehavior, supportMutationObserver = supportMutationObserver, supportPassiveEvents = supportPassiveEvents, supportResizeObserver = supportResizeObserver, supportTransform = supportTransform, supportTransition = supportTransition)
     if (cssCalc != null) __obj.updateDynamic("cssCalc")(cssCalc)
     __obj.asInstanceOf[Globals]
   }

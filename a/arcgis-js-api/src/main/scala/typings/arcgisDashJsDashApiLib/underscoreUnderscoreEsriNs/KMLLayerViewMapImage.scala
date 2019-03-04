@@ -44,14 +44,8 @@ object KMLLayerViewMapImage {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     rotation: scala.Double
   ): KMLLayerViewMapImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Extent")(Extent)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("rotation")(rotation)
+    val __obj = js.Dynamic.literal(Extent = Extent, constructor = constructor, hasOwnProperty = hasOwnProperty, href = href, id = id, propertyIsEnumerable = propertyIsEnumerable, rotation = rotation)
+  
     __obj.asInstanceOf[KMLLayerViewMapImage]
   }
 }

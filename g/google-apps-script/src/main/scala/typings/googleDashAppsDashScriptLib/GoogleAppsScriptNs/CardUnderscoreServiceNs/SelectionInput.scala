@@ -22,12 +22,8 @@ object SelectionInput {
     setTitle: js.Function1[java.lang.String, SelectionInput],
     setType: js.Function1[SelectionInputType, SelectionInput]
   ): SelectionInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("setFieldName")(setFieldName)
-    __obj.updateDynamic("setOnChangeAction")(setOnChangeAction)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(addItem = addItem, setFieldName = setFieldName, setOnChangeAction = setOnChangeAction, setTitle = setTitle, setType = setType)
+  
     __obj.asInstanceOf[SelectionInput]
   }
 }

@@ -30,13 +30,8 @@ object ChartDataChangeEvent {
     StartRow: scala.Double,
     Type: ChartDataChangeType
   ): ChartDataChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndColumn")(EndColumn)
-    __obj.updateDynamic("EndRow")(EndRow)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("StartColumn")(StartColumn)
-    __obj.updateDynamic("StartRow")(StartRow)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(EndColumn = EndColumn, EndRow = EndRow, Source = Source, StartColumn = StartColumn, StartRow = StartRow, Type = Type)
+  
     __obj.asInstanceOf[ChartDataChangeEvent]
   }
 }

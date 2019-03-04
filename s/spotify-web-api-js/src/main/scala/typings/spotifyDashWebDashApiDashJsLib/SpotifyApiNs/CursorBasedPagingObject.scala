@@ -28,12 +28,7 @@ object CursorBasedPagingObject {
     next: java.lang.String,
     total: scala.Int | scala.Double = null
   ): CursorBasedPagingObject[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cursors")(cursors)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(cursors = cursors, href = href, items = items, limit = limit, next = next)
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorBasedPagingObject[T]]
   }

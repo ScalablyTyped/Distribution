@@ -42,13 +42,8 @@ object CodeCoverageStatistics {
     position: scala.Double,
     total: scala.Double
   ): CodeCoverageStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("covered")(covered)
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("isDeltaAvailable")(isDeltaAvailable)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(covered = covered, delta = delta, isDeltaAvailable = isDeltaAvailable, label = label, position = position, total = total)
+  
     __obj.asInstanceOf[CodeCoverageStatistics]
   }
 }

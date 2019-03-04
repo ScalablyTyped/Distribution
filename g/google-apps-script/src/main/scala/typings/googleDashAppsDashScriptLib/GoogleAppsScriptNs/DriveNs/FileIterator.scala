@@ -28,10 +28,8 @@ object FileIterator {
     hasNext: js.Function0[scala.Boolean],
     next: js.Function0[File]
   ): FileIterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContinuationToken")(getContinuationToken)
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(getContinuationToken = getContinuationToken, hasNext = hasNext, next = next)
+  
     __obj.asInstanceOf[FileIterator]
   }
 }

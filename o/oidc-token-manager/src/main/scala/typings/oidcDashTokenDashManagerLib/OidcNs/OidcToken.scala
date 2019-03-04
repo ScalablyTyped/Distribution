@@ -32,17 +32,8 @@ object OidcToken {
     session_state: js.Any,
     toJSON: js.Function0[java.lang.String]
   ): OidcToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("expired")(expired)
-    __obj.updateDynamic("expires_at")(expires_at)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("id_token")(id_token)
-    __obj.updateDynamic("profile")(profile)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("scopes")(scopes)
-    __obj.updateDynamic("session_state")(session_state)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(access_token = access_token, expired = expired, expires_at = expires_at, expires_in = expires_in, id_token = id_token, profile = profile, scope = scope, scopes = scopes, session_state = session_state, toJSON = toJSON)
+  
     __obj.asInstanceOf[OidcToken]
   }
 }

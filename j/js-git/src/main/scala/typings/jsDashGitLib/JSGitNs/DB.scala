@@ -68,14 +68,8 @@ object DB {
     ],
     set: js.Function3[java.lang.String, js.Any, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit]
   ): DB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, del = del, get = get, has = has, init = init, keys = keys, set = set)
+  
     __obj.asInstanceOf[DB]
   }
 }

@@ -42,8 +42,7 @@ object FlagIconProps {
     squared: js.UndefOr[scala.Boolean] = js.undefined,
     styleName: java.lang.String = null
   ): FlagIconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (Component != null) __obj.updateDynamic("Component")(Component)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

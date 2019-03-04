@@ -22,12 +22,8 @@ object TemplateValidationResult {
     SuggestedTemplateModel: T,
     TextBody: ValidationSet
   ): TemplateValidationResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllContentIsValid")(AllContentIsValid)
-    __obj.updateDynamic("HtmlBody")(HtmlBody)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("SuggestedTemplateModel")(SuggestedTemplateModel.asInstanceOf[js.Any])
-    __obj.updateDynamic("TextBody")(TextBody)
+    val __obj = js.Dynamic.literal(AllContentIsValid = AllContentIsValid, HtmlBody = HtmlBody, Subject = Subject, SuggestedTemplateModel = SuggestedTemplateModel.asInstanceOf[js.Any], TextBody = TextBody)
+  
     __obj.asInstanceOf[TemplateValidationResult[T]]
   }
 }

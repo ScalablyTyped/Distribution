@@ -52,15 +52,8 @@ object LogRecord {
     SourceMethodName: java.lang.String,
     ThreadID: java.lang.String
   ): LogRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Level")(Level)
-    __obj.updateDynamic("LogTime")(LogTime)
-    __obj.updateDynamic("LoggerName")(LoggerName)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("SequenceNumber")(SequenceNumber)
-    __obj.updateDynamic("SourceClassName")(SourceClassName)
-    __obj.updateDynamic("SourceMethodName")(SourceMethodName)
-    __obj.updateDynamic("ThreadID")(ThreadID)
+    val __obj = js.Dynamic.literal(Level = Level, LogTime = LogTime, LoggerName = LoggerName, Message = Message, SequenceNumber = SequenceNumber, SourceClassName = SourceClassName, SourceMethodName = SourceMethodName, ThreadID = ThreadID)
+  
     __obj.asInstanceOf[LogRecord]
   }
 }

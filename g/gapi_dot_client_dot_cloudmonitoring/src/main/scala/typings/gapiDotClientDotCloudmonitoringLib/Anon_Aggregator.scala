@@ -100,10 +100,7 @@ object Anon_Aggregator {
     userIp: java.lang.String = null,
     window: java.lang.String = null
   ): Anon_Aggregator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metric")(metric)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("youngest")(youngest)
+    val __obj = js.Dynamic.literal(metric = metric, project = project, youngest = youngest)
     if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])

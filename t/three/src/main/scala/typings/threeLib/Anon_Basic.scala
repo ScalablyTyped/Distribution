@@ -40,20 +40,7 @@ object Anon_Basic {
     standard: threeLib.threeDashCoreMod.Shader,
     StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[threeLib.threeDashCoreMod.Shader] = null
   ): Anon_Basic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basic")(basic)
-    __obj.updateDynamic("cube")(cube)
-    __obj.updateDynamic("dashed")(dashed)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("depthRGBA")(depthRGBA)
-    __obj.updateDynamic("distanceRGBA")(distanceRGBA)
-    __obj.updateDynamic("equirect")(equirect)
-    __obj.updateDynamic("lambert")(lambert)
-    __obj.updateDynamic("normal")(normal)
-    __obj.updateDynamic("phong")(phong)
-    __obj.updateDynamic("physical")(physical)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("standard")(standard)
+    val __obj = js.Dynamic.literal(basic = basic, cube = cube, dashed = dashed, depth = depth, depthRGBA = depthRGBA, distanceRGBA = distanceRGBA, equirect = equirect, lambert = lambert, normal = normal, phong = phong, physical = physical, points = points, standard = standard)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Basic]
   }

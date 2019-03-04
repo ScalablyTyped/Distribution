@@ -39,16 +39,8 @@ object INumberFieldExpression {
     LessThanOrEqualTo: js.Function1[scala.Double, IExpression],
     NotEqualTo: js.Function1[scala.Double, IExpression]
   ): INumberFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EqualTo")(EqualTo)
-    __obj.updateDynamic("GreaterThan")(GreaterThan)
-    __obj.updateDynamic("GreaterThanOrEqualTo")(GreaterThanOrEqualTo)
-    __obj.updateDynamic("In")(In)
-    __obj.updateDynamic("IsNotNull")(IsNotNull)
-    __obj.updateDynamic("IsNull")(IsNull)
-    __obj.updateDynamic("LessThan")(LessThan)
-    __obj.updateDynamic("LessThanOrEqualTo")(LessThanOrEqualTo)
-    __obj.updateDynamic("NotEqualTo")(NotEqualTo)
+    val __obj = js.Dynamic.literal(EqualTo = EqualTo, GreaterThan = GreaterThan, GreaterThanOrEqualTo = GreaterThanOrEqualTo, In = In, IsNotNull = IsNotNull, IsNull = IsNull, LessThan = LessThan, LessThanOrEqualTo = LessThanOrEqualTo, NotEqualTo = NotEqualTo)
+  
     __obj.asInstanceOf[INumberFieldExpression]
   }
 }

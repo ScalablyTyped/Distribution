@@ -48,8 +48,7 @@ object Anon_AltFieldsIncludeInvalidInsertedItems {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIncludeInvalidInsertedItems = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(merchantId = merchantId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeInvalidInsertedItems)) __obj.updateDynamic("includeInvalidInsertedItems")(includeInvalidInsertedItems)

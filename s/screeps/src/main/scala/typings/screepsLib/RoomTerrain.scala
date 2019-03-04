@@ -27,8 +27,8 @@ object RoomTerrain {
       screepsLib.screepsLibNumbers.`0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP
     ]
   ): RoomTerrain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[RoomTerrain]
   }
 }

@@ -154,8 +154,7 @@ object JSTreeStaticDefaultsCore {
     themes: JSTreeStaticDefaultsCoreThemes = null,
     worker: js.UndefOr[scala.Boolean] = js.undefined
   ): JSTreeStaticDefaultsCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback)
     if (data != null) __obj.updateDynamic("data")(data)

@@ -18,11 +18,8 @@ object PrivateCustomProperties {
     serializeToHeader: js.Function0[java.lang.String],
     setProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): PrivateCustomProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHeaderData")(addHeaderData)
-    __obj.updateDynamic("getProperty")(getProperty)
-    __obj.updateDynamic("serializeToHeader")(serializeToHeader)
-    __obj.updateDynamic("setProperty")(setProperty)
+    val __obj = js.Dynamic.literal(addHeaderData = addHeaderData, getProperty = getProperty, serializeToHeader = serializeToHeader, setProperty = setProperty)
+  
     __obj.asInstanceOf[PrivateCustomProperties]
   }
 }

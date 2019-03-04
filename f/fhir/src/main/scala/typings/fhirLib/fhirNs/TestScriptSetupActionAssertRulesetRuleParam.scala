@@ -41,9 +41,7 @@ object TestScriptSetupActionAssertRulesetRuleParam {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): TestScriptSetupActionAssertRulesetRuleParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_name != null) __obj.updateDynamic("_name")(_name)

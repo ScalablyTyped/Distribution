@@ -32,17 +32,8 @@ object Anon_XmlDecryptionTransform {
     XmlDsigXsltTransform: java.lang.String,
     XmlLicenseTransform: java.lang.String
   ): Anon_XmlDecryptionTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("XmlDecryptionTransform")(XmlDecryptionTransform)
-    __obj.updateDynamic("XmlDsigBase64Transform")(XmlDsigBase64Transform)
-    __obj.updateDynamic("XmlDsigC14NTransform")(XmlDsigC14NTransform)
-    __obj.updateDynamic("XmlDsigC14NWithCommentsTransform")(XmlDsigC14NWithCommentsTransform)
-    __obj.updateDynamic("XmlDsigEnvelopedSignatureTransform")(XmlDsigEnvelopedSignatureTransform)
-    __obj.updateDynamic("XmlDsigExcC14NTransform")(XmlDsigExcC14NTransform)
-    __obj.updateDynamic("XmlDsigExcC14NWithCommentsTransform")(XmlDsigExcC14NWithCommentsTransform)
-    __obj.updateDynamic("XmlDsigXPathTransform")(XmlDsigXPathTransform)
-    __obj.updateDynamic("XmlDsigXsltTransform")(XmlDsigXsltTransform)
-    __obj.updateDynamic("XmlLicenseTransform")(XmlLicenseTransform)
+    val __obj = js.Dynamic.literal(XmlDecryptionTransform = XmlDecryptionTransform, XmlDsigBase64Transform = XmlDsigBase64Transform, XmlDsigC14NTransform = XmlDsigC14NTransform, XmlDsigC14NWithCommentsTransform = XmlDsigC14NWithCommentsTransform, XmlDsigEnvelopedSignatureTransform = XmlDsigEnvelopedSignatureTransform, XmlDsigExcC14NTransform = XmlDsigExcC14NTransform, XmlDsigExcC14NWithCommentsTransform = XmlDsigExcC14NWithCommentsTransform, XmlDsigXPathTransform = XmlDsigXPathTransform, XmlDsigXsltTransform = XmlDsigXsltTransform, XmlLicenseTransform = XmlLicenseTransform)
+  
     __obj.asInstanceOf[Anon_XmlDecryptionTransform]
   }
 }

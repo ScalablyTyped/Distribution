@@ -50,13 +50,8 @@ object XLResize {
     setColWidth: js.Function2[scala.Double, scala.Double, scala.Unit],
     setRowHeight: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XLResize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fitHeight")(fitHeight)
-    __obj.updateDynamic("fitWidth")(fitWidth)
-    __obj.updateDynamic("getColWidth")(getColWidth)
-    __obj.updateDynamic("getRowHeight")(getRowHeight)
-    __obj.updateDynamic("setColWidth")(setColWidth)
-    __obj.updateDynamic("setRowHeight")(setRowHeight)
+    val __obj = js.Dynamic.literal(fitHeight = fitHeight, fitWidth = fitWidth, getColWidth = getColWidth, getRowHeight = getRowHeight, setColWidth = setColWidth, setRowHeight = setRowHeight)
+  
     __obj.asInstanceOf[XLResize]
   }
 }

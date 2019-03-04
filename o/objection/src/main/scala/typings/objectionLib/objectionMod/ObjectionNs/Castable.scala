@@ -38,20 +38,8 @@ object Castable {
     castTo: js.Function1[java.lang.String, Castable],
     castType: js.Function1[java.lang.String, Castable]
   ): Castable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("asArray")(asArray)
-    __obj.updateDynamic("castArray")(castArray)
-    __obj.updateDynamic("castBigInt")(castBigInt)
-    __obj.updateDynamic("castBool")(castBool)
-    __obj.updateDynamic("castDecimal")(castDecimal)
-    __obj.updateDynamic("castFloat")(castFloat)
-    __obj.updateDynamic("castInt")(castInt)
-    __obj.updateDynamic("castJson")(castJson)
-    __obj.updateDynamic("castReal")(castReal)
-    __obj.updateDynamic("castText")(castText)
-    __obj.updateDynamic("castTo")(castTo)
-    __obj.updateDynamic("castType")(castType)
+    val __obj = js.Dynamic.literal(as = as, asArray = asArray, castArray = castArray, castBigInt = castBigInt, castBool = castBool, castDecimal = castDecimal, castFloat = castFloat, castInt = castInt, castJson = castJson, castReal = castReal, castText = castText, castTo = castTo, castType = castType)
+  
     __obj.asInstanceOf[Castable]
   }
 }

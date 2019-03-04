@@ -38,12 +38,8 @@ object SpanTermQuery {
     term: js.Function1[java.lang.String, SpanTermQuery],
     toJSON: js.Function0[js.Any]
   ): SpanTermQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("term")(term)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, term = term, toJSON = toJSON)
+  
     __obj.asInstanceOf[SpanTermQuery]
   }
 }

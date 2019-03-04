@@ -21,9 +21,7 @@ object Alarm {
     scheduledTime: chromeDashAppsLib.chromeNs.integer,
     periodInMinutes: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): Alarm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scheduledTime")(scheduledTime)
+    val __obj = js.Dynamic.literal(name = name, scheduledTime = scheduledTime)
     if (!js.isUndefined(periodInMinutes)) __obj.updateDynamic("periodInMinutes")(periodInMinutes)
     __obj.asInstanceOf[Alarm]
   }

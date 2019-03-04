@@ -22,8 +22,7 @@ object NavigationBarTitle {
     numberOfLines: scala.Int | scala.Double = null,
     tintColor: java.lang.String = null
   ): NavigationBarTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)

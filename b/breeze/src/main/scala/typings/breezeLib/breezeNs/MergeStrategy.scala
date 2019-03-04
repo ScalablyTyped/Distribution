@@ -25,15 +25,8 @@ object MergeStrategy {
     getNames: js.Function0[js.Array[java.lang.String]],
     getSymbols: js.Function0[js.Array[breezeLib.breezeNs.coreNs.EnumSymbol]]
   ): MergeStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Disallowed")(Disallowed)
-    __obj.updateDynamic("OverwriteChanges")(OverwriteChanges)
-    __obj.updateDynamic("PreserveChanges")(PreserveChanges)
-    __obj.updateDynamic("SkipMerge")(SkipMerge)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("fromName")(fromName)
-    __obj.updateDynamic("getNames")(getNames)
-    __obj.updateDynamic("getSymbols")(getSymbols)
+    val __obj = js.Dynamic.literal(Disallowed = Disallowed, OverwriteChanges = OverwriteChanges, PreserveChanges = PreserveChanges, SkipMerge = SkipMerge, contains = contains, fromName = fromName, getNames = getNames, getSymbols = getSymbols)
+  
     __obj.asInstanceOf[MergeStrategy]
   }
 }

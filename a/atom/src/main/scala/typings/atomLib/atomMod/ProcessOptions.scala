@@ -24,8 +24,7 @@ object ProcessOptions {
     stderr: js.Function1[/* data */ java.lang.String, scala.Unit] = null,
     stdout: js.Function1[/* data */ java.lang.String, scala.Unit] = null
   ): ProcessOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(command = command)
     if (args != null) __obj.updateDynamic("args")(args)
     if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
     if (exit != null) __obj.updateDynamic("exit")(exit)

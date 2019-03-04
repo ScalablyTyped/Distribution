@@ -30,16 +30,8 @@ object StructLog {
     stack: js.Array[java.lang.String],
     storage: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): StructLog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("gas")(gas)
-    __obj.updateDynamic("gasCost")(gasCost)
-    __obj.updateDynamic("memory")(memory)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("pc")(pc)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("storage")(storage)
+    val __obj = js.Dynamic.literal(depth = depth, error = error, gas = gas, gasCost = gasCost, memory = memory, op = op, pc = pc, stack = stack, storage = storage)
+  
     __obj.asInstanceOf[StructLog]
   }
 }

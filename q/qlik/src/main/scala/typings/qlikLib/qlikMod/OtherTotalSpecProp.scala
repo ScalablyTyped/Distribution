@@ -36,19 +36,8 @@ object OtherTotalSpecProp {
     qSupressOther: scala.Boolean,
     qTotalMode: qlikLib.qlikLibStrings.TOTAL_OFF | qlikLib.qlikLibStrings.TOTAL_EXPR
   ): OtherTotalSpecProp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qApplyEvenWhenPossiblyWrongResult")(qApplyEvenWhenPossiblyWrongResult)
-    __obj.updateDynamic("qForceBadValueKeeping")(qForceBadValueKeeping)
-    __obj.updateDynamic("qGlobalOtherGrouping")(qGlobalOtherGrouping)
-    __obj.updateDynamic("qOtherCollapseInnerDimensions")(qOtherCollapseInnerDimensions)
-    __obj.updateDynamic("qOtherCounted")(qOtherCounted)
-    __obj.updateDynamic("qOtherLimit")(qOtherLimit)
-    __obj.updateDynamic("qOtherLimitMode")(qOtherLimitMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("qOtherMode")(qOtherMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("qOtherSortMode")(qOtherSortMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("qReferencedExpression")(qReferencedExpression)
-    __obj.updateDynamic("qSupressOther")(qSupressOther)
-    __obj.updateDynamic("qTotalMode")(qTotalMode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(qApplyEvenWhenPossiblyWrongResult = qApplyEvenWhenPossiblyWrongResult, qForceBadValueKeeping = qForceBadValueKeeping, qGlobalOtherGrouping = qGlobalOtherGrouping, qOtherCollapseInnerDimensions = qOtherCollapseInnerDimensions, qOtherCounted = qOtherCounted, qOtherLimit = qOtherLimit, qOtherLimitMode = qOtherLimitMode.asInstanceOf[js.Any], qOtherMode = qOtherMode.asInstanceOf[js.Any], qOtherSortMode = qOtherSortMode.asInstanceOf[js.Any], qReferencedExpression = qReferencedExpression, qSupressOther = qSupressOther, qTotalMode = qTotalMode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OtherTotalSpecProp]
   }
 }

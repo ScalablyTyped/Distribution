@@ -22,11 +22,8 @@ object BaseComment {
     `type`: atBabelTypesLib.atBabelTypesLibStrings.CommentBlock | atBabelTypesLib.atBabelTypesLibStrings.CommentLine,
     value: java.lang.String
   ): BaseComment = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start, value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseComment]
   }
 }

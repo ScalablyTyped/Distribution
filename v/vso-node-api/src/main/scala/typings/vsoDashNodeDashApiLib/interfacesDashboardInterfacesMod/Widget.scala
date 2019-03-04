@@ -66,28 +66,8 @@ object Widget {
     typeId: java.lang.String,
     url: java.lang.String
   ): Widget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("allowedSizes")(allowedSizes)
-    __obj.updateDynamic("artifactId")(artifactId)
-    __obj.updateDynamic("configurationContributionId")(configurationContributionId)
-    __obj.updateDynamic("configurationContributionRelativeId")(configurationContributionRelativeId)
-    __obj.updateDynamic("contentUri")(contentUri)
-    __obj.updateDynamic("contributionId")(contributionId)
-    __obj.updateDynamic("dashboard")(dashboard)
-    __obj.updateDynamic("eTag")(eTag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isNameConfigurable")(isNameConfigurable)
-    __obj.updateDynamic("lightboxOptions")(lightboxOptions)
-    __obj.updateDynamic("loadingImageUrl")(loadingImageUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("settingsVersion")(settingsVersion)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("typeId")(typeId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, allowedSizes = allowedSizes, artifactId = artifactId, configurationContributionId = configurationContributionId, configurationContributionRelativeId = configurationContributionRelativeId, contentUri = contentUri, contributionId = contributionId, dashboard = dashboard, eTag = eTag, id = id, isEnabled = isEnabled, isNameConfigurable = isNameConfigurable, lightboxOptions = lightboxOptions, loadingImageUrl = loadingImageUrl, name = name, position = position, settings = settings, settingsVersion = settingsVersion, size = size, typeId = typeId, url = url)
+  
     __obj.asInstanceOf[Widget]
   }
 }

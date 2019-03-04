@@ -100,20 +100,8 @@ object PeriodSelector {
     toText: java.lang.String,
     width: scala.Double
   ): PeriodSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("dateFormat")(dateFormat)
-    __obj.updateDynamic("fromText")(fromText)
-    __obj.updateDynamic("hideOutOfScopePeriods")(hideOutOfScopePeriods)
-    __obj.updateDynamic("inputFieldWidth")(inputFieldWidth)
-    __obj.updateDynamic("inputFieldsEnabled")(inputFieldsEnabled)
-    __obj.updateDynamic("periods")(periods)
-    __obj.updateDynamic("periodsText")(periodsText)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("removeListener")(removeListener)
-    __obj.updateDynamic("selectFromStart")(selectFromStart)
-    __obj.updateDynamic("toText")(toText)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(addListener = addListener, dateFormat = dateFormat, fromText = fromText, hideOutOfScopePeriods = hideOutOfScopePeriods, inputFieldWidth = inputFieldWidth, inputFieldsEnabled = inputFieldsEnabled, periods = periods, periodsText = periodsText, position = position, removeListener = removeListener, selectFromStart = selectFromStart, toText = toText, width = width)
+  
     __obj.asInstanceOf[PeriodSelector]
   }
 }

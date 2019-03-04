@@ -39,7 +39,8 @@ object ShowdownExtension {
     regex: java.lang.String | stdLib.RegExp = null,
     replace: js.Any = null
   ): ShowdownExtension = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace)

@@ -20,11 +20,8 @@ object IPropertyValueSuggestion {
     Quality: scala.Double,
     TypedValue: ITypedValue
   ): IPropertyValueSuggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("IsFact")(IsFact)
-    __obj.updateDynamic("Quality")(Quality)
-    __obj.updateDynamic("TypedValue")(TypedValue)
+    val __obj = js.Dynamic.literal(Clone = Clone, IsFact = IsFact, Quality = Quality, TypedValue = TypedValue)
+  
     __obj.asInstanceOf[IPropertyValueSuggestion]
   }
 }

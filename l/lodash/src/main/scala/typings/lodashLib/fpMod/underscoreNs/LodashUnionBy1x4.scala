@@ -12,7 +12,7 @@ trait LodashUnionBy1x4[T] extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     arrays1: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashUnionBy1x6[T] = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`, arrays1: lodashLib.lodashMod.underscoreNs.List[T]): LodashUnionBy1x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__): LodashUnionBy1x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__, arrays1: lodashLib.lodashMod.underscoreNs.List[T]): LodashUnionBy1x6[T] = js.native
 }
 

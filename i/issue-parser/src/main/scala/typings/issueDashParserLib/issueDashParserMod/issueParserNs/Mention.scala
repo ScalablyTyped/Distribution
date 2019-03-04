@@ -14,10 +14,8 @@ trait Mention extends js.Object {
 object Mention {
   @scala.inline
   def apply(prefix: java.lang.String, raw: java.lang.String, user: java.lang.String): Mention = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(prefix = prefix, raw = raw, user = user)
+  
     __obj.asInstanceOf[Mention]
   }
 }

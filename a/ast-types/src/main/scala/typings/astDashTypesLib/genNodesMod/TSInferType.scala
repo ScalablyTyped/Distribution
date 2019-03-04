@@ -21,8 +21,8 @@ object TSInferType {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSInferType,
     typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind
   ): TSInferType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeParameter")(typeParameter)
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSInferType]
   }
 }

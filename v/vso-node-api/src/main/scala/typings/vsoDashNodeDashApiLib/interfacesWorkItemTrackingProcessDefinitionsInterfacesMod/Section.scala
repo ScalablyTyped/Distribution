@@ -20,10 +20,8 @@ trait Section extends js.Object {
 object Section {
   @scala.inline
   def apply(groups: js.Array[Group], id: java.lang.String, overridden: scala.Boolean): Section = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("overridden")(overridden)
+    val __obj = js.Dynamic.literal(groups = groups, id = id, overridden = overridden)
+  
     __obj.asInstanceOf[Section]
   }
 }

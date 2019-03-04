@@ -21,10 +21,8 @@ object Anon_Name {
     `type`: expoLib.expoLibStrings.success,
     uri: java.lang.String
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(name = name, size = size, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Name]
   }
 }

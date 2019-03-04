@@ -37,9 +37,7 @@ object IdentityPoolRoleAttachmentArgs {
       ]
     ] = null
   ): IdentityPoolRoleAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identityPoolId")(identityPoolId.asInstanceOf[js.Any])
-    __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identityPoolId = identityPoolId.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
     if (roleMappings != null) __obj.updateDynamic("roleMappings")(roleMappings.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolRoleAttachmentArgs]
   }

@@ -28,8 +28,7 @@ object Options {
     protocol: npmDashListDashAuthorDashPackagesLib.npmDashListDashAuthorDashPackagesLibStrings.http | npmDashListDashAuthorDashPackagesLib.npmDashListDashAuthorDashPackagesLibStrings.https = null,
     registry: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(username = username)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (registry != null) __obj.updateDynamic("registry")(registry)

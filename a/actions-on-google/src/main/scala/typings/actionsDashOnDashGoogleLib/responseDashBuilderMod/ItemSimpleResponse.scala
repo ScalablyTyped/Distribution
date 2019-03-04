@@ -12,8 +12,8 @@ trait ItemSimpleResponse extends RichResponseItem {
 object ItemSimpleResponse {
   @scala.inline
   def apply(simpleResponse: SimpleResponse): ItemSimpleResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("simpleResponse")(simpleResponse)
+    val __obj = js.Dynamic.literal(simpleResponse = simpleResponse)
+  
     __obj.asInstanceOf[ItemSimpleResponse]
   }
 }

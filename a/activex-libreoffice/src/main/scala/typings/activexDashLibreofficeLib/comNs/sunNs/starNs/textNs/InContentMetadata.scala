@@ -43,31 +43,8 @@ object InContentMetadata {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): InContentMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("AnchorType")(AnchorType)
-    __obj.updateDynamic("AnchorTypes")(AnchorTypes)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("LocalName")(LocalName)
-    __obj.updateDynamic("MetadataReference")(MetadataReference)
-    __obj.updateDynamic("Namespace")(Namespace)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("StringValue")(StringValue)
-    __obj.updateDynamic("TextWrap")(TextWrap)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("ensureMetadataReference")(ensureMetadataReference)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setParent")(setParent)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, ElementType = ElementType, LocalName = LocalName, MetadataReference = MetadataReference, Namespace = Namespace, Parent = Parent, StringValue = StringValue, TextWrap = TextWrap, acquire = acquire, addEventListener = addEventListener, attach = attach, createEnumeration = createEnumeration, dispose = dispose, ensureMetadataReference = ensureMetadataReference, getAnchor = getAnchor, getElementType = getElementType, getParent = getParent, hasElements = hasElements, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setParent = setParent)
+  
     __obj.asInstanceOf[InContentMetadata]
   }
 }

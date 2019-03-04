@@ -23,14 +23,8 @@ object Concern {
     updatedDate: stdLib.Date,
     user: UserIdentityRef
   ): Concern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("updatedDate")(updatedDate)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(category = category, createdDate = createdDate, id = id, status = status, text = text, updatedDate = updatedDate, user = user)
+  
     __obj.asInstanceOf[Concern]
   }
 }

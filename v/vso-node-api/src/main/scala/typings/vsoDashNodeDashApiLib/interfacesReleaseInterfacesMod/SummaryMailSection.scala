@@ -20,11 +20,8 @@ object SummaryMailSection {
     sectionType: MailSectionType,
     title: java.lang.String
   ): SummaryMailSection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlContent")(htmlContent)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("sectionType")(sectionType)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(htmlContent = htmlContent, rank = rank, sectionType = sectionType, title = title)
+  
     __obj.asInstanceOf[SummaryMailSection]
   }
 }

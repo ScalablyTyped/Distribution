@@ -27,8 +27,7 @@ object DelOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): DelOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (cas != null) __obj.updateDynamic("cas")(cas)
     if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
     if (ctx != null) __obj.updateDynamic("ctx")(ctx)

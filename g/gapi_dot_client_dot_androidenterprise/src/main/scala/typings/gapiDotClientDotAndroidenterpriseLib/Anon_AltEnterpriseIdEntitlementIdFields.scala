@@ -51,10 +51,7 @@ object Anon_AltEnterpriseIdEntitlementIdFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEnterpriseIdEntitlementIdFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enterpriseId")(enterpriseId)
-    __obj.updateDynamic("entitlementId")(entitlementId)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(enterpriseId = enterpriseId, entitlementId = entitlementId, userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(install)) __obj.updateDynamic("install")(install)

@@ -58,9 +58,7 @@ object Anon_AltConsistencyTokenFieldsKeyLanguageLeaderboardId {
     scoreTag: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltConsistencyTokenFieldsKeyLanguageLeaderboardId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leaderboardId")(leaderboardId)
-    __obj.updateDynamic("score")(score)
+    val __obj = js.Dynamic.literal(leaderboardId = leaderboardId, score = score)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -14,8 +14,8 @@ trait Anon_Remove[K]
 object Anon_Remove {
   @scala.inline
   def apply[K]($remove: js.Array[K]): Anon_Remove[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$remove")($remove)
+    val __obj = js.Dynamic.literal($remove = $remove)
+  
     __obj.asInstanceOf[Anon_Remove[K]]
   }
 }

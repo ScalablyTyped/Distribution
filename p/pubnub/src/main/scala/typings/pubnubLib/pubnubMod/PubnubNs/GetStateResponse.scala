@@ -12,8 +12,8 @@ trait GetStateResponse extends js.Object {
 object GetStateResponse {
   @scala.inline
   def apply(channels: org.scalablytyped.runtime.StringDictionary[js.Any]): GetStateResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
+    val __obj = js.Dynamic.literal(channels = channels)
+  
     __obj.asInstanceOf[GetStateResponse]
   }
 }

@@ -20,8 +20,8 @@ object IntrospectionInputValue {
     defaultValue: java.lang.String = null,
     description: java.lang.String = null
   ): IntrospectionInputValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IntrospectionInputValue]

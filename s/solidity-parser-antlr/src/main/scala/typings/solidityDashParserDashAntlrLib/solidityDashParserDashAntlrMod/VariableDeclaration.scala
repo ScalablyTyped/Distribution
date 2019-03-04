@@ -23,9 +23,8 @@ object VariableDeclaration {
     loc: Location = null,
     range: js.Tuple2[scala.Double, scala.Double] = null
   ): VariableDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("isStateVar")(isStateVar)
-    __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isStateVar = isStateVar, visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[VariableDeclaration]

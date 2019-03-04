@@ -62,17 +62,8 @@ object Anon_Bulletin {
     subscription: Anon_ResourceIdAnonChannelIdKindString,
     upload: Anon_VideoId
   ): Anon_Bulletin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bulletin")(bulletin)
-    __obj.updateDynamic("channelItem")(channelItem)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("favorite")(favorite)
-    __obj.updateDynamic("like")(like)
-    __obj.updateDynamic("playlistItem")(playlistItem)
-    __obj.updateDynamic("recommendation")(recommendation)
-    __obj.updateDynamic("social")(social)
-    __obj.updateDynamic("subscription")(subscription)
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(bulletin = bulletin, channelItem = channelItem, comment = comment, favorite = favorite, like = like, playlistItem = playlistItem, recommendation = recommendation, social = social, subscription = subscription, upload = upload)
+  
     __obj.asInstanceOf[Anon_Bulletin]
   }
 }

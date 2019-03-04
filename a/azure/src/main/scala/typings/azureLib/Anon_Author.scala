@@ -26,14 +26,8 @@ object Anon_Author {
     title: js.Any,
     updated: java.lang.String
   ): Anon_Author = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(author = author, category = category, content = content, id = id, link = link, title = title, updated = updated)
+  
     __obj.asInstanceOf[Anon_Author]
   }
 }

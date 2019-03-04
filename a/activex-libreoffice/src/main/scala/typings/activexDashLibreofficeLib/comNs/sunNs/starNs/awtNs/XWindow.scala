@@ -89,31 +89,8 @@ object XWindow {
     setPosSize: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): XWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PosSize")(PosSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addFocusListener")(addFocusListener)
-    __obj.updateDynamic("addKeyListener")(addKeyListener)
-    __obj.updateDynamic("addMouseListener")(addMouseListener)
-    __obj.updateDynamic("addMouseMotionListener")(addMouseMotionListener)
-    __obj.updateDynamic("addPaintListener")(addPaintListener)
-    __obj.updateDynamic("addWindowListener")(addWindowListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getPosSize")(getPosSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeFocusListener")(removeFocusListener)
-    __obj.updateDynamic("removeKeyListener")(removeKeyListener)
-    __obj.updateDynamic("removeMouseListener")(removeMouseListener)
-    __obj.updateDynamic("removeMouseMotionListener")(removeMouseMotionListener)
-    __obj.updateDynamic("removePaintListener")(removePaintListener)
-    __obj.updateDynamic("removeWindowListener")(removeWindowListener)
-    __obj.updateDynamic("setEnable")(setEnable)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("setPosSize")(setPosSize)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(PosSize = PosSize, acquire = acquire, addEventListener = addEventListener, addFocusListener = addFocusListener, addKeyListener = addKeyListener, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addWindowListener = addWindowListener, dispose = dispose, getPosSize = getPosSize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeFocusListener = removeFocusListener, removeKeyListener = removeKeyListener, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeWindowListener = removeWindowListener, setEnable = setEnable, setFocus = setFocus, setPosSize = setPosSize, setVisible = setVisible)
+  
     __obj.asInstanceOf[XWindow]
   }
 }

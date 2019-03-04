@@ -39,8 +39,8 @@ object ITypedModuleConfig {
     xsrfCookieName: java.lang.String = null,
     xsrfHeaderName: java.lang.String = null
   ): ITypedModuleConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)

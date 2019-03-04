@@ -28,14 +28,8 @@ object Job {
     release: js.Function0[scala.Unit],
     removeCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit]
   ): Job = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addCloseListener")(addCloseListener)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeCloseListener")(removeCloseListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addCloseListener = addCloseListener, close = close, execute = execute, queryInterface = queryInterface, release = release, removeCloseListener = removeCloseListener)
+  
     __obj.asInstanceOf[Job]
   }
 }

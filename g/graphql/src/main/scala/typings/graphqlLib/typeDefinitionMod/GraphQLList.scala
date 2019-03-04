@@ -37,11 +37,8 @@ object GraphQLList {
     toJSON: js.Function0[java.lang.String],
     toString: js.Function0[java.lang.String]
   ): GraphQLList[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("ofType")(ofType.asInstanceOf[js.Any])
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(inspect = inspect, ofType = ofType.asInstanceOf[js.Any], toJSON = toJSON, toString = toString)
+  
     __obj.asInstanceOf[GraphQLList[T]]
   }
 }

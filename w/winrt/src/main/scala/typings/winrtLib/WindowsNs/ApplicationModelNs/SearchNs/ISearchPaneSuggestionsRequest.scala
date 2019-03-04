@@ -18,10 +18,8 @@ object ISearchPaneSuggestionsRequest {
     isCanceled: scala.Boolean,
     searchSuggestionCollection: SearchSuggestionCollection
   ): ISearchPaneSuggestionsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("isCanceled")(isCanceled)
-    __obj.updateDynamic("searchSuggestionCollection")(searchSuggestionCollection)
+    val __obj = js.Dynamic.literal(getDeferral = getDeferral, isCanceled = isCanceled, searchSuggestionCollection = searchSuggestionCollection)
+  
     __obj.asInstanceOf[ISearchPaneSuggestionsRequest]
   }
 }

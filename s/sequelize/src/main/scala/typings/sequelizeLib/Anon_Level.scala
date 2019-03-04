@@ -16,9 +16,8 @@ object Anon_Level {
     level: sequelizeLib.sequelizeMod.sequelizeNs.TransactionLockLevel,
     of: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]
   ): Anon_Level = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], of = of)
+  
     __obj.asInstanceOf[Anon_Level]
   }
 }

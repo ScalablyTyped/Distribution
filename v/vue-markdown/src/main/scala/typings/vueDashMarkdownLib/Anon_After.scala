@@ -28,15 +28,8 @@ object Anon_After {
     getRules: js.Any,
     push: js.Any
   ): Anon_After = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("at")(at)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enableOnly")(enableOnly)
-    __obj.updateDynamic("getRules")(getRules)
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(after = after, at = at, before = before, disable = disable, enable = enable, enableOnly = enableOnly, getRules = getRules, push = push)
+  
     __obj.asInstanceOf[Anon_After]
   }
 }

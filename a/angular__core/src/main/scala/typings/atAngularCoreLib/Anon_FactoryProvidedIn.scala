@@ -18,8 +18,7 @@ object Anon_FactoryProvidedIn {
     factory: js.Function0[T],
     providedIn: atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root = null
   ): Anon_FactoryProvidedIn[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("factory")(factory)
+    val __obj = js.Dynamic.literal(factory = factory)
     if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FactoryProvidedIn[T]]
   }

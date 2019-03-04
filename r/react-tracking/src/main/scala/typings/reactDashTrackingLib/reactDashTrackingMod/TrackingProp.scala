@@ -16,9 +16,8 @@ trait TrackingProp extends js.Object {
 object TrackingProp {
   @scala.inline
   def apply(getTrackingData: js.Function0[js.Object], trackEvent: js.Function1[js.Any, js.Any]): TrackingProp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTrackingData")(getTrackingData)
-    __obj.updateDynamic("trackEvent")(trackEvent)
+    val __obj = js.Dynamic.literal(getTrackingData = getTrackingData, trackEvent = trackEvent)
+  
     __obj.asInstanceOf[TrackingProp]
   }
 }

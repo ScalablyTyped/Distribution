@@ -45,10 +45,7 @@ object InstanceArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     userData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): InstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
-    __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], blueprintId = blueprintId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any])
     if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])

@@ -52,7 +52,8 @@ object JobDefinitionArgs {
     retryStrategy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttemptsInput] = null,
     timeout: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttemptDurationSecondsInput] = null
   ): JobDefinitionArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (containerProperties != null) __obj.updateDynamic("containerProperties")(containerProperties.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])

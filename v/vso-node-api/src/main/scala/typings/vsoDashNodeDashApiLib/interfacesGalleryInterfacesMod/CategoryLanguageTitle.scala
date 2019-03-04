@@ -23,10 +23,8 @@ trait CategoryLanguageTitle extends js.Object {
 object CategoryLanguageTitle {
   @scala.inline
   def apply(lang: java.lang.String, lcid: scala.Double, title: java.lang.String): CategoryLanguageTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("lcid")(lcid)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(lang = lang, lcid = lcid, title = title)
+  
     __obj.asInstanceOf[CategoryLanguageTitle]
   }
 }

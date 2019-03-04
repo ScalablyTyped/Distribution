@@ -58,14 +58,8 @@ object XServiceConstructorDescription {
     getParameters: js.Function0[activexDashInteropLib.SafeArray[XParameter]],
     isDefaultConstructor: js.Function0[scala.Boolean]
   ): XServiceConstructorDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Exceptions")(Exceptions)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parameters")(Parameters)
-    __obj.updateDynamic("getExceptions")(getExceptions)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("isDefaultConstructor")(isDefaultConstructor)
+    val __obj = js.Dynamic.literal(Exceptions = Exceptions, Name = Name, Parameters = Parameters, getExceptions = getExceptions, getName = getName, getParameters = getParameters, isDefaultConstructor = isDefaultConstructor)
+  
     __obj.asInstanceOf[XServiceConstructorDescription]
   }
 }

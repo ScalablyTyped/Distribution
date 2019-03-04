@@ -48,25 +48,8 @@ object Anon_AUTH {
     XHTML: java.lang.String,
     XHTML_IM: java.lang.String
   ): Anon_AUTH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AUTH")(AUTH)
-    __obj.updateDynamic("BIND")(BIND)
-    __obj.updateDynamic("BOSH")(BOSH)
-    __obj.updateDynamic("CLIENT")(CLIENT)
-    __obj.updateDynamic("DISCO_INFO")(DISCO_INFO)
-    __obj.updateDynamic("DISCO_ITEMS")(DISCO_ITEMS)
-    __obj.updateDynamic("FRAMING")(FRAMING)
-    __obj.updateDynamic("HTTPBIND")(HTTPBIND)
-    __obj.updateDynamic("MUC")(MUC)
-    __obj.updateDynamic("PROFILE")(PROFILE)
-    __obj.updateDynamic("ROSTER")(ROSTER)
-    __obj.updateDynamic("SASL")(SASL)
-    __obj.updateDynamic("SESSION")(SESSION)
-    __obj.updateDynamic("STANZAS")(STANZAS)
-    __obj.updateDynamic("STREAM")(STREAM)
-    __obj.updateDynamic("VERSION")(VERSION)
-    __obj.updateDynamic("XHTML")(XHTML)
-    __obj.updateDynamic("XHTML_IM")(XHTML_IM)
+    val __obj = js.Dynamic.literal(AUTH = AUTH, BIND = BIND, BOSH = BOSH, CLIENT = CLIENT, DISCO_INFO = DISCO_INFO, DISCO_ITEMS = DISCO_ITEMS, FRAMING = FRAMING, HTTPBIND = HTTPBIND, MUC = MUC, PROFILE = PROFILE, ROSTER = ROSTER, SASL = SASL, SESSION = SESSION, STANZAS = STANZAS, STREAM = STREAM, VERSION = VERSION, XHTML = XHTML, XHTML_IM = XHTML_IM)
+  
     __obj.asInstanceOf[Anon_AUTH]
   }
 }

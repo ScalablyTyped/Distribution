@@ -47,8 +47,7 @@ object LikeViewProps {
     soundEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
   ): LikeViewProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectIdAndType")(objectIdAndType)
+    val __obj = js.Dynamic.literal(objectIdAndType = objectIdAndType)
     if (auxiliaryViewPosition != null) __obj.updateDynamic("auxiliaryViewPosition")(auxiliaryViewPosition)
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)

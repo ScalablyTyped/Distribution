@@ -68,35 +68,8 @@ object LocationManager {
     stopMonitoringForRegion: js.Function1[Region, qLib.qMod.QNs.Promise[scala.Unit]],
     stopRangingBeaconsInRegion: js.Function1[Region, qLib.qMod.QNs.Promise[scala.Unit]]
   ): LocationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeaconRegion")(BeaconRegion)
-    __obj.updateDynamic("Region")(Region)
-    __obj.updateDynamic("appendToDeviceLog")(appendToDeviceLog)
-    __obj.updateDynamic("delegate")(delegate)
-    __obj.updateDynamic("disableBluetooth")(disableBluetooth)
-    __obj.updateDynamic("disableDebugLogs")(disableDebugLogs)
-    __obj.updateDynamic("disableDebugNotifications")(disableDebugNotifications)
-    __obj.updateDynamic("enableBluetooth")(enableBluetooth)
-    __obj.updateDynamic("enableDebugLogs")(enableDebugLogs)
-    __obj.updateDynamic("enableDebugNotifications")(enableDebugNotifications)
-    __obj.updateDynamic("getAuthorizationStatus")(getAuthorizationStatus)
-    __obj.updateDynamic("getMonitoredRegions")(getMonitoredRegions)
-    __obj.updateDynamic("getRangedRegions")(getRangedRegions)
-    __obj.updateDynamic("isAdvertising")(isAdvertising)
-    __obj.updateDynamic("isAdvertisingAvailable")(isAdvertisingAvailable)
-    __obj.updateDynamic("isBluetoothEnabled")(isBluetoothEnabled)
-    __obj.updateDynamic("isMonitoringAvailableForClass")(isMonitoringAvailableForClass)
-    __obj.updateDynamic("isRangingAvailable")(isRangingAvailable)
-    __obj.updateDynamic("onDomDelegateReady")(onDomDelegateReady)
-    __obj.updateDynamic("requestAlwaysAuthorization")(requestAlwaysAuthorization)
-    __obj.updateDynamic("requestStateForRegion")(requestStateForRegion)
-    __obj.updateDynamic("requestWhenInUseAuthorization")(requestWhenInUseAuthorization)
-    __obj.updateDynamic("startAdvertising")(startAdvertising)
-    __obj.updateDynamic("startMonitoringForRegion")(startMonitoringForRegion)
-    __obj.updateDynamic("startRangingBeaconsInRegion")(startRangingBeaconsInRegion)
-    __obj.updateDynamic("stopAdvertising")(stopAdvertising)
-    __obj.updateDynamic("stopMonitoringForRegion")(stopMonitoringForRegion)
-    __obj.updateDynamic("stopRangingBeaconsInRegion")(stopRangingBeaconsInRegion)
+    val __obj = js.Dynamic.literal(BeaconRegion = BeaconRegion, Region = Region, appendToDeviceLog = appendToDeviceLog, delegate = delegate, disableBluetooth = disableBluetooth, disableDebugLogs = disableDebugLogs, disableDebugNotifications = disableDebugNotifications, enableBluetooth = enableBluetooth, enableDebugLogs = enableDebugLogs, enableDebugNotifications = enableDebugNotifications, getAuthorizationStatus = getAuthorizationStatus, getMonitoredRegions = getMonitoredRegions, getRangedRegions = getRangedRegions, isAdvertising = isAdvertising, isAdvertisingAvailable = isAdvertisingAvailable, isBluetoothEnabled = isBluetoothEnabled, isMonitoringAvailableForClass = isMonitoringAvailableForClass, isRangingAvailable = isRangingAvailable, onDomDelegateReady = onDomDelegateReady, requestAlwaysAuthorization = requestAlwaysAuthorization, requestStateForRegion = requestStateForRegion, requestWhenInUseAuthorization = requestWhenInUseAuthorization, startAdvertising = startAdvertising, startMonitoringForRegion = startMonitoringForRegion, startRangingBeaconsInRegion = startRangingBeaconsInRegion, stopAdvertising = stopAdvertising, stopMonitoringForRegion = stopMonitoringForRegion, stopRangingBeaconsInRegion = stopRangingBeaconsInRegion)
+  
     __obj.asInstanceOf[LocationManager]
   }
 }

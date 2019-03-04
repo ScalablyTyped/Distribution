@@ -14,8 +14,8 @@ object OnGlobalFocusChangeListener {
   def apply(
     onGlobalFocusChanged: js.Function2[androiduixLib.androidNs.viewNs.View, androiduixLib.androidNs.viewNs.View, js.Any]
   ): OnGlobalFocusChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGlobalFocusChanged")(onGlobalFocusChanged)
+    val __obj = js.Dynamic.literal(onGlobalFocusChanged = onGlobalFocusChanged)
+  
     __obj.asInstanceOf[OnGlobalFocusChangeListener]
   }
 }

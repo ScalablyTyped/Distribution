@@ -63,17 +63,8 @@ object ITelemetryContext {
     track: js.Function1[IEnvelope, js.Any],
     user: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IUser
   ): ITelemetryContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTelemetryInitializer")(addTelemetryInitializer)
-    __obj.updateDynamic("application")(application)
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("sample")(sample)
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("track")(track)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(addTelemetryInitializer = addTelemetryInitializer, application = application, device = device, internal = internal, location = location, operation = operation, sample = sample, session = session, track = track, user = user)
+  
     __obj.asInstanceOf[ITelemetryContext]
   }
 }

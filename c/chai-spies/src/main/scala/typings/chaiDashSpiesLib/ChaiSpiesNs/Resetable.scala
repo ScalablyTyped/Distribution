@@ -18,8 +18,8 @@ trait Resetable extends js.Object {
 object Resetable {
   @scala.inline
   def apply(reset: js.Function0[Resetable]): Resetable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(reset = reset)
+  
     __obj.asInstanceOf[Resetable]
   }
 }

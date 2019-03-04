@@ -24,8 +24,7 @@ object Anon_DbSecurityGroupMemberships {
     version: java.lang.String = null,
     vpcSecurityGroupMemberships: js.Array[java.lang.String] = null
   ): Anon_DbSecurityGroupMemberships = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("optionName")(optionName)
+    val __obj = js.Dynamic.literal(optionName = optionName)
     if (dbSecurityGroupMemberships != null) __obj.updateDynamic("dbSecurityGroupMemberships")(dbSecurityGroupMemberships)
     if (optionSettings != null) __obj.updateDynamic("optionSettings")(optionSettings)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

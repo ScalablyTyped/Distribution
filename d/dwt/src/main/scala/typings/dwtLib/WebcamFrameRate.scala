@@ -18,10 +18,8 @@ object WebcamFrameRate {
     GetCount: js.Function0[scala.Double],
     GetCurrent: js.Function0[java.lang.String]
   ): WebcamFrameRate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Get")(Get)
-    __obj.updateDynamic("GetCount")(GetCount)
-    __obj.updateDynamic("GetCurrent")(GetCurrent)
+    val __obj = js.Dynamic.literal(Get = Get, GetCount = GetCount, GetCurrent = GetCurrent)
+  
     __obj.asInstanceOf[WebcamFrameRate]
   }
 }

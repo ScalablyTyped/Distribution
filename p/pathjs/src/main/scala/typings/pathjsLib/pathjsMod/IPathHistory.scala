@@ -20,11 +20,8 @@ object IPathHistory {
     popState: js.Function1[js.Any, scala.Unit],
     pushState: js.Function3[js.Any, java.lang.String, java.lang.String, scala.Unit]
   ): IPathHistory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initial")(initial)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("popState")(popState)
-    __obj.updateDynamic("pushState")(pushState)
+    val __obj = js.Dynamic.literal(initial = initial, listen = listen, popState = popState, pushState = pushState)
+  
     __obj.asInstanceOf[IPathHistory]
   }
 }

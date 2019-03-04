@@ -22,9 +22,8 @@ object DatabaseDeleteEvent {
     Bookmarks: activexDashInteropLib.SafeArray[_],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): DatabaseDeleteEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bookmarks")(Bookmarks)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Bookmarks = Bookmarks, Source = Source)
+  
     __obj.asInstanceOf[DatabaseDeleteEvent]
   }
 }

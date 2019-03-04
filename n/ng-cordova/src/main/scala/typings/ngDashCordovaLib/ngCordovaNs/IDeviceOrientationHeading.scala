@@ -20,8 +20,7 @@ object IDeviceOrientationHeading {
     timestamp: scala.Int | scala.Double = null,
     trueHeading: scala.Int | scala.Double = null
   ): IDeviceOrientationHeading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("magneticHeading")(magneticHeading)
+    val __obj = js.Dynamic.literal(magneticHeading = magneticHeading)
     if (headingAccuracy != null) __obj.updateDynamic("headingAccuracy")(headingAccuracy.asInstanceOf[js.Any])
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (trueHeading != null) __obj.updateDynamic("trueHeading")(trueHeading.asInstanceOf[js.Any])

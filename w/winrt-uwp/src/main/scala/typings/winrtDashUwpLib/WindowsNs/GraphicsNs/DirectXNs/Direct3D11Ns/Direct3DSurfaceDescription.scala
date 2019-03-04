@@ -25,11 +25,8 @@ object Direct3DSurfaceDescription {
     multisampleDescription: Direct3DMultisampleDescription,
     width: scala.Double
   ): Direct3DSurfaceDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("multisampleDescription")(multisampleDescription)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(format = format, height = height, multisampleDescription = multisampleDescription, width = width)
+  
     __obj.asInstanceOf[Direct3DSurfaceDescription]
   }
 }

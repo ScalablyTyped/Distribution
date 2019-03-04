@@ -42,10 +42,8 @@ object GetSourceParams {
     version: scala.Int | scala.Double = null,
     versionType: VersionType = null
   ): GetSourceParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(_source = _source.asInstanceOf[js.Any], id = id, index = index)
+    __obj.updateDynamic("type")(`type`)
     if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
     if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)

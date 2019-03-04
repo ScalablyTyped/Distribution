@@ -24,13 +24,8 @@ object Anon_AddressDisplayPosition {
     MapView: Anon_BottomRight,
     NavigationPosition: js.Array[Anon_LatitudeLongitude]
   ): Anon_AddressDisplayPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Address")(Address)
-    __obj.updateDynamic("DisplayPosition")(DisplayPosition)
-    __obj.updateDynamic("LocationId")(LocationId)
-    __obj.updateDynamic("LocationType")(LocationType)
-    __obj.updateDynamic("MapView")(MapView)
-    __obj.updateDynamic("NavigationPosition")(NavigationPosition)
+    val __obj = js.Dynamic.literal(Address = Address, DisplayPosition = DisplayPosition, LocationId = LocationId, LocationType = LocationType, MapView = MapView, NavigationPosition = NavigationPosition)
+  
     __obj.asInstanceOf[Anon_AddressDisplayPosition]
   }
 }

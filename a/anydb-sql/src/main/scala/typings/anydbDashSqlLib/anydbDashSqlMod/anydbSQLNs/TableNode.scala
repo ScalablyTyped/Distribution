@@ -13,9 +13,8 @@ trait TableNode extends js.Object {
 object TableNode {
   @scala.inline
   def apply(join: js.Function1[TableNode, JoinTableNode], leftJoin: js.Function1[TableNode, JoinTableNode]): TableNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("leftJoin")(leftJoin)
+    val __obj = js.Dynamic.literal(join = join, leftJoin = leftJoin)
+  
     __obj.asInstanceOf[TableNode]
   }
 }

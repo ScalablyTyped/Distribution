@@ -48,25 +48,8 @@ object MultipleSelectionHandles {
     pluginsInitializedCallback: js.Array[_],
     removeHook: js.Function1[java.lang.String, scala.Unit]
   ): MultipleSelectionHandles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("dragged")(dragged)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("getCurrentRangeCoords")(getCurrentRangeCoords)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isDragged")(isDragged)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("lastSetCell")(lastSetCell.asInstanceOf[js.Any])
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, dragged = dragged, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, getCurrentRangeCoords = getCurrentRangeCoords, init = init, initialized = initialized, isDragged = isDragged, isPluginsReady = isPluginsReady, lastSetCell = lastSetCell.asInstanceOf[js.Any], pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+  
     __obj.asInstanceOf[MultipleSelectionHandles]
   }
 }

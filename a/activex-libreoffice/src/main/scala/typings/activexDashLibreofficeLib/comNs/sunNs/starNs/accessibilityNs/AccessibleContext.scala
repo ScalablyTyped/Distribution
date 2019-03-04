@@ -47,31 +47,8 @@ object AccessibleContext {
     release: js.Function0[scala.Unit],
     removeAccessibleEventListener: js.Function1[XAccessibleEventListener, scala.Unit]
   ): AccessibleContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessibleChildCount")(AccessibleChildCount)
-    __obj.updateDynamic("AccessibleDescription")(AccessibleDescription)
-    __obj.updateDynamic("AccessibleIndexInParent")(AccessibleIndexInParent)
-    __obj.updateDynamic("AccessibleName")(AccessibleName)
-    __obj.updateDynamic("AccessibleParent")(AccessibleParent)
-    __obj.updateDynamic("AccessibleRelationSet")(AccessibleRelationSet)
-    __obj.updateDynamic("AccessibleRole")(AccessibleRole)
-    __obj.updateDynamic("AccessibleStateSet")(AccessibleStateSet)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addAccessibleEventListener")(addAccessibleEventListener)
-    __obj.updateDynamic("getAccessibleChild")(getAccessibleChild)
-    __obj.updateDynamic("getAccessibleChildCount")(getAccessibleChildCount)
-    __obj.updateDynamic("getAccessibleDescription")(getAccessibleDescription)
-    __obj.updateDynamic("getAccessibleIndexInParent")(getAccessibleIndexInParent)
-    __obj.updateDynamic("getAccessibleName")(getAccessibleName)
-    __obj.updateDynamic("getAccessibleParent")(getAccessibleParent)
-    __obj.updateDynamic("getAccessibleRelationSet")(getAccessibleRelationSet)
-    __obj.updateDynamic("getAccessibleRole")(getAccessibleRole)
-    __obj.updateDynamic("getAccessibleStateSet")(getAccessibleStateSet)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAccessibleEventListener")(removeAccessibleEventListener)
+    val __obj = js.Dynamic.literal(AccessibleChildCount = AccessibleChildCount, AccessibleDescription = AccessibleDescription, AccessibleIndexInParent = AccessibleIndexInParent, AccessibleName = AccessibleName, AccessibleParent = AccessibleParent, AccessibleRelationSet = AccessibleRelationSet, AccessibleRole = AccessibleRole, AccessibleStateSet = AccessibleStateSet, Locale = Locale, acquire = acquire, addAccessibleEventListener = addAccessibleEventListener, getAccessibleChild = getAccessibleChild, getAccessibleChildCount = getAccessibleChildCount, getAccessibleDescription = getAccessibleDescription, getAccessibleIndexInParent = getAccessibleIndexInParent, getAccessibleName = getAccessibleName, getAccessibleParent = getAccessibleParent, getAccessibleRelationSet = getAccessibleRelationSet, getAccessibleRole = getAccessibleRole, getAccessibleStateSet = getAccessibleStateSet, getLocale = getLocale, queryInterface = queryInterface, release = release, removeAccessibleEventListener = removeAccessibleEventListener)
+  
     __obj.asInstanceOf[AccessibleContext]
   }
 }

@@ -20,11 +20,8 @@ object cursorInterface {
     reset: js.Function0[scala.Unit],
     restore: js.Function0[scala.Unit]
   ): cursorInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("restore")(restore)
+    val __obj = js.Dynamic.literal(off = off, on = on, reset = reset, restore = restore)
+  
     __obj.asInstanceOf[cursorInterface]
   }
 }

@@ -42,10 +42,7 @@ object StarConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): StarConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("innerRadius")(innerRadius)
-    __obj.updateDynamic("numPoints")(numPoints)
-    __obj.updateDynamic("outerRadius")(outerRadius)
+    val __obj = js.Dynamic.literal(innerRadius = innerRadius, numPoints = numPoints, outerRadius = outerRadius)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)
     if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint)

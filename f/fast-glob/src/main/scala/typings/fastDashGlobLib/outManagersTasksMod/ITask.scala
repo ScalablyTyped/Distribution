@@ -22,12 +22,8 @@ object ITask {
     patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
     positive: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern]
   ): ITask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("dynamic")(dynamic)
-    __obj.updateDynamic("negative")(negative)
-    __obj.updateDynamic("patterns")(patterns)
-    __obj.updateDynamic("positive")(positive)
+    val __obj = js.Dynamic.literal(base = base, dynamic = dynamic, negative = negative, patterns = patterns, positive = positive)
+  
     __obj.asInstanceOf[ITask]
   }
 }

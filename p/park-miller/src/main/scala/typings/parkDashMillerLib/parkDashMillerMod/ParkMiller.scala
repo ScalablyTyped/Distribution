@@ -22,12 +22,8 @@ object ParkMiller {
     integer: js.Function0[scala.Double],
     integerInRange: js.Function2[scala.Double, scala.Double, scala.Double]
   ): ParkMiller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("float")(float)
-    __obj.updateDynamic("floatInRange")(floatInRange)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("integerInRange")(integerInRange)
+    val __obj = js.Dynamic.literal(boolean = boolean, float = float, floatInRange = floatInRange, integer = integer, integerInRange = integerInRange)
+  
     __obj.asInstanceOf[ParkMiller]
   }
 }

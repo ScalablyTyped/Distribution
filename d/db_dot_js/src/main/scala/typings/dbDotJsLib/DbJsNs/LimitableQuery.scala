@@ -12,8 +12,8 @@ trait LimitableQuery[T] extends js.Object {
 object LimitableQuery {
   @scala.inline
   def apply[T](limit: js.Function2[js.Any, js.Any, ExecutableQuery[T]]): LimitableQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("limit")(limit)
+    val __obj = js.Dynamic.literal(limit = limit)
+  
     __obj.asInstanceOf[LimitableQuery[T]]
   }
 }

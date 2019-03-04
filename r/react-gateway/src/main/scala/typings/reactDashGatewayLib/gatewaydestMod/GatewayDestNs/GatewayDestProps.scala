@@ -20,8 +20,7 @@ object GatewayDestProps {
     component: java.lang.String | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) = null,
     tagName: java.lang.String = null
   ): GatewayDestProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[GatewayDestProps]

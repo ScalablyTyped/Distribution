@@ -38,8 +38,7 @@ object Entry {
     `type`: java.lang.String = null,
     versionId: java.lang.String = null
   ): Entry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(resource = resource)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (versionId != null) __obj.updateDynamic("versionId")(versionId)

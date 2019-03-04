@@ -50,8 +50,7 @@ object FormOpenParameters {
     extraqs: java.lang.String = null,
     navbar: NavBarDisplay = null
   ): FormOpenParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etn")(etn)
+    val __obj = js.Dynamic.literal(etn = etn)
     if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar)
     if (extraqs != null) __obj.updateDynamic("extraqs")(extraqs)
     if (navbar != null) __obj.updateDynamic("navbar")(navbar)

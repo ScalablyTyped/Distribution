@@ -65,8 +65,7 @@ object ProgressBarOptions {
     stream: nodeLib.NodeJSNs.WritableStream = null,
     width: scala.Int | scala.Double = null
   ): ProgressBarOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(total = total)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
     if (complete != null) __obj.updateDynamic("complete")(complete)

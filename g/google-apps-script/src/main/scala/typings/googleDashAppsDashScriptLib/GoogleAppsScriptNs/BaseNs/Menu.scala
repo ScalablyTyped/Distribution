@@ -20,11 +20,8 @@ object Menu {
     addSubMenu: js.Function1[Menu, Menu],
     addToUi: js.Function0[scala.Unit]
   ): Menu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("addSeparator")(addSeparator)
-    __obj.updateDynamic("addSubMenu")(addSubMenu)
-    __obj.updateDynamic("addToUi")(addToUi)
+    val __obj = js.Dynamic.literal(addItem = addItem, addSeparator = addSeparator, addSubMenu = addSubMenu, addToUi = addToUi)
+  
     __obj.asInstanceOf[Menu]
   }
 }

@@ -25,11 +25,8 @@ object TransactionDecision {
     order: actionsDashOnDashGoogleLib.Anon_ActionOrderId,
     userDecision: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
   ): TransactionDecision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkResult")(checkResult)
-    __obj.updateDynamic("deliveryAddress")(deliveryAddress)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("userDecision")(userDecision)
+    val __obj = js.Dynamic.literal(checkResult = checkResult, deliveryAddress = deliveryAddress, order = order, userDecision = userDecision)
+  
     __obj.asInstanceOf[TransactionDecision]
   }
 }

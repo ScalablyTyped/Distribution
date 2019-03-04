@@ -26,14 +26,8 @@ object CompanyField {
     setCompanyName: js.Function1[java.lang.String, CompanyField],
     setJobTitle: js.Function1[java.lang.String, CompanyField]
   ): CompanyField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteCompanyField")(deleteCompanyField)
-    __obj.updateDynamic("getCompanyName")(getCompanyName)
-    __obj.updateDynamic("getJobTitle")(getJobTitle)
-    __obj.updateDynamic("isPrimary")(isPrimary)
-    __obj.updateDynamic("setAsPrimary")(setAsPrimary)
-    __obj.updateDynamic("setCompanyName")(setCompanyName)
-    __obj.updateDynamic("setJobTitle")(setJobTitle)
+    val __obj = js.Dynamic.literal(deleteCompanyField = deleteCompanyField, getCompanyName = getCompanyName, getJobTitle = getJobTitle, isPrimary = isPrimary, setAsPrimary = setAsPrimary, setCompanyName = setCompanyName, setJobTitle = setJobTitle)
+  
     __obj.asInstanceOf[CompanyField]
   }
 }

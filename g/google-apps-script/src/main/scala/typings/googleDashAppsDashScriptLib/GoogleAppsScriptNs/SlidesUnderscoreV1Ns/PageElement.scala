@@ -42,13 +42,8 @@ object PageElement {
     title: java.lang.String,
     transform: AffineTransform
   ): PageElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("element_kind")(element_kind)
-    __obj.updateDynamic("object_id")(object_id)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(description = description, element_kind = element_kind, object_id = object_id, size = size, title = title, transform = transform)
+  
     __obj.asInstanceOf[PageElement]
   }
 }

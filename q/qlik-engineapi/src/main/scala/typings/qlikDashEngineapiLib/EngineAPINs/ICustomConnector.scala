@@ -35,11 +35,8 @@ object ICustomConnector {
     qParent: java.lang.String,
     qProvider: java.lang.String
   ): ICustomConnector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDisplayName")(qDisplayName)
-    __obj.updateDynamic("qMachineMode")(qMachineMode)
-    __obj.updateDynamic("qParent")(qParent)
-    __obj.updateDynamic("qProvider")(qProvider)
+    val __obj = js.Dynamic.literal(qDisplayName = qDisplayName, qMachineMode = qMachineMode, qParent = qParent, qProvider = qProvider)
+  
     __obj.asInstanceOf[ICustomConnector]
   }
 }

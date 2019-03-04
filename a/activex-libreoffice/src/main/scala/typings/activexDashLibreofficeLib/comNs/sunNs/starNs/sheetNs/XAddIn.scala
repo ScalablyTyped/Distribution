@@ -113,20 +113,8 @@ object XAddIn {
     release: js.Function0[scala.Unit],
     setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
   ): XAddIn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getArgumentDescription")(getArgumentDescription)
-    __obj.updateDynamic("getDisplayArgumentName")(getDisplayArgumentName)
-    __obj.updateDynamic("getDisplayCategoryName")(getDisplayCategoryName)
-    __obj.updateDynamic("getDisplayFunctionName")(getDisplayFunctionName)
-    __obj.updateDynamic("getFunctionDescription")(getFunctionDescription)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getProgrammaticCategoryName")(getProgrammaticCategoryName)
-    __obj.updateDynamic("getProgrammaticFuntionName")(getProgrammaticFuntionName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLocale")(setLocale)
+    val __obj = js.Dynamic.literal(Locale = Locale, acquire = acquire, getArgumentDescription = getArgumentDescription, getDisplayArgumentName = getDisplayArgumentName, getDisplayCategoryName = getDisplayCategoryName, getDisplayFunctionName = getDisplayFunctionName, getFunctionDescription = getFunctionDescription, getLocale = getLocale, getProgrammaticCategoryName = getProgrammaticCategoryName, getProgrammaticFuntionName = getProgrammaticFuntionName, queryInterface = queryInterface, release = release, setLocale = setLocale)
+  
     __obj.asInstanceOf[XAddIn]
   }
 }

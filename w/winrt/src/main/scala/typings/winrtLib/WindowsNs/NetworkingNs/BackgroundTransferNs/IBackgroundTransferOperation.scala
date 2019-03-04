@@ -26,14 +26,8 @@ object IBackgroundTransferOperation {
     method: java.lang.String,
     requestedUri: winrtLib.WindowsNs.FoundationNs.Uri
   ): IBackgroundTransferOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("costPolicy")(costPolicy)
-    __obj.updateDynamic("getResponseInformation")(getResponseInformation)
-    __obj.updateDynamic("getResultStreamAt")(getResultStreamAt)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("requestedUri")(requestedUri)
+    val __obj = js.Dynamic.literal(costPolicy = costPolicy, getResponseInformation = getResponseInformation, getResultStreamAt = getResultStreamAt, group = group, guid = guid, method = method, requestedUri = requestedUri)
+  
     __obj.asInstanceOf[IBackgroundTransferOperation]
   }
 }

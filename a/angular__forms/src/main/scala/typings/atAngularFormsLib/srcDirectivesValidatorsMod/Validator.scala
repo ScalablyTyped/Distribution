@@ -31,8 +31,7 @@ object Validator {
     validate: js.Function1[atAngularFormsLib.srcModelMod.AbstractControl, ValidationErrors | scala.Null],
     registerOnValidatorChange: js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit] = null
   ): Validator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(validate = validate)
     if (registerOnValidatorChange != null) __obj.updateDynamic("registerOnValidatorChange")(registerOnValidatorChange)
     __obj.asInstanceOf[Validator]
   }

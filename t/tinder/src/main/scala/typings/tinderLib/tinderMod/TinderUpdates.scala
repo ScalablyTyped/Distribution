@@ -28,15 +28,8 @@ object TinderUpdates {
     matchmaker: js.Array[_],
     squads: js.Array[_]
   ): TinderUpdates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("deleted_lists")(deleted_lists)
-    __obj.updateDynamic("last_activity_date")(last_activity_date)
-    __obj.updateDynamic("liked_messages")(liked_messages)
-    __obj.updateDynamic("lists")(lists)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("matchmaker")(matchmaker)
-    __obj.updateDynamic("squads")(squads)
+    val __obj = js.Dynamic.literal(blocks = blocks, deleted_lists = deleted_lists, last_activity_date = last_activity_date, liked_messages = liked_messages, lists = lists, matches = matches, matchmaker = matchmaker, squads = squads)
+  
     __obj.asInstanceOf[TinderUpdates]
   }
 }

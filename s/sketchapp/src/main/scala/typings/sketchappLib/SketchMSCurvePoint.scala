@@ -28,15 +28,8 @@ object SketchMSCurvePoint {
     hasCurveTo: scala.Boolean,
     point: SketchMSPointString
   ): SketchMSCurvePoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("cornerRadius")(cornerRadius)
-    __obj.updateDynamic("curveFrom")(curveFrom)
-    __obj.updateDynamic("curveMode")(curveMode)
-    __obj.updateDynamic("curveTo")(curveTo)
-    __obj.updateDynamic("hasCurveFrom")(hasCurveFrom)
-    __obj.updateDynamic("hasCurveTo")(hasCurveTo)
-    __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(_class = _class, cornerRadius = cornerRadius, curveFrom = curveFrom, curveMode = curveMode, curveTo = curveTo, hasCurveFrom = hasCurveFrom, hasCurveTo = hasCurveTo, point = point)
+  
     __obj.asInstanceOf[SketchMSCurvePoint]
   }
 }

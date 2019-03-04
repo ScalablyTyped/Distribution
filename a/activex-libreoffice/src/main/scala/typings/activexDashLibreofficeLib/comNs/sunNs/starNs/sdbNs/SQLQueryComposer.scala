@@ -52,29 +52,8 @@ object SQLQueryComposer {
     setOrder: js.Function1[java.lang.String, scala.Unit],
     setQuery: js.Function1[java.lang.String, scala.Unit]
   ): SQLQueryComposer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("ComposedQuery")(ComposedQuery)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("Query")(Query)
-    __obj.updateDynamic("StructuredFilter")(StructuredFilter)
-    __obj.updateDynamic("Tables")(Tables)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendFilterByColumn")(appendFilterByColumn)
-    __obj.updateDynamic("appendOrderByColumn")(appendOrderByColumn)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getComposedQuery")(getComposedQuery)
-    __obj.updateDynamic("getFilter")(getFilter)
-    __obj.updateDynamic("getOrder")(getOrder)
-    __obj.updateDynamic("getQuery")(getQuery)
-    __obj.updateDynamic("getStructuredFilter")(getStructuredFilter)
-    __obj.updateDynamic("getTables")(getTables)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFilter")(setFilter)
-    __obj.updateDynamic("setOrder")(setOrder)
-    __obj.updateDynamic("setQuery")(setQuery)
+    val __obj = js.Dynamic.literal(Columns = Columns, ComposedQuery = ComposedQuery, Filter = Filter, Order = Order, Query = Query, StructuredFilter = StructuredFilter, Tables = Tables, acquire = acquire, appendFilterByColumn = appendFilterByColumn, appendOrderByColumn = appendOrderByColumn, getColumns = getColumns, getComposedQuery = getComposedQuery, getFilter = getFilter, getOrder = getOrder, getQuery = getQuery, getStructuredFilter = getStructuredFilter, getTables = getTables, queryInterface = queryInterface, release = release, setFilter = setFilter, setOrder = setOrder, setQuery = setQuery)
+  
     __obj.asInstanceOf[SQLQueryComposer]
   }
 }

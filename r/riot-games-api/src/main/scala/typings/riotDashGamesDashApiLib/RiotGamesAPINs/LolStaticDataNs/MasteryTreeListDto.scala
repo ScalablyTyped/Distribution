@@ -12,8 +12,8 @@ trait MasteryTreeListDto extends js.Object {
 object MasteryTreeListDto {
   @scala.inline
   def apply(masteryTreeItems: js.Array[MasteryTreeItemDto]): MasteryTreeListDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("masteryTreeItems")(masteryTreeItems)
+    val __obj = js.Dynamic.literal(masteryTreeItems = masteryTreeItems)
+  
     __obj.asInstanceOf[MasteryTreeListDto]
   }
 }

@@ -16,10 +16,8 @@ trait Anon_INVALIDCALLBACK extends js.Object {
 object Anon_INVALIDCALLBACK {
   @scala.inline
   def apply(INVALID_CALLBACK: scala.Double, INVALID_TRANSITION: scala.Double, PENDING_TRANSITION: scala.Double): Anon_INVALIDCALLBACK = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("INVALID_CALLBACK")(INVALID_CALLBACK)
-    __obj.updateDynamic("INVALID_TRANSITION")(INVALID_TRANSITION)
-    __obj.updateDynamic("PENDING_TRANSITION")(PENDING_TRANSITION)
+    val __obj = js.Dynamic.literal(INVALID_CALLBACK = INVALID_CALLBACK, INVALID_TRANSITION = INVALID_TRANSITION, PENDING_TRANSITION = PENDING_TRANSITION)
+  
     __obj.asInstanceOf[Anon_INVALIDCALLBACK]
   }
 }

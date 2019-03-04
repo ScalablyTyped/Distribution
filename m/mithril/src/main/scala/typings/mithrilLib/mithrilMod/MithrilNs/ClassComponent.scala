@@ -54,8 +54,7 @@ object ClassComponent {
     onremove: js.Function1[/* vnode */ VnodeDOM[A, ClassComponent[A]], _] = null,
     onupdate: js.Function1[/* vnode */ VnodeDOM[A, ClassComponent[A]], _] = null
   ): ClassComponent[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(view = view)
     if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
     if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
     if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)

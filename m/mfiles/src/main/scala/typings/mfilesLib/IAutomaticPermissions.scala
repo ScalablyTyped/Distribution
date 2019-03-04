@@ -26,14 +26,8 @@ object IAutomaticPermissions {
     SetBasedOnObjectACL: js.Function0[scala.Unit],
     SetNamedACL: js.Function1[INamedACL, scala.Unit]
   ): IAutomaticPermissions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CanDeactivate")(CanDeactivate)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("IsBasedOnObjectACL")(IsBasedOnObjectACL)
-    __obj.updateDynamic("IsDefault")(IsDefault)
-    __obj.updateDynamic("NamedACL")(NamedACL)
-    __obj.updateDynamic("SetBasedOnObjectACL")(SetBasedOnObjectACL)
-    __obj.updateDynamic("SetNamedACL")(SetNamedACL)
+    val __obj = js.Dynamic.literal(CanDeactivate = CanDeactivate, Clone = Clone, IsBasedOnObjectACL = IsBasedOnObjectACL, IsDefault = IsDefault, NamedACL = NamedACL, SetBasedOnObjectACL = SetBasedOnObjectACL, SetNamedACL = SetNamedACL)
+  
     __obj.asInstanceOf[IAutomaticPermissions]
   }
 }

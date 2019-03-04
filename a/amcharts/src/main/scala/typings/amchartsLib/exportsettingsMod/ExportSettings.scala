@@ -24,13 +24,8 @@ object ExportSettings {
     menu: js.Object,
     toJPG: js.Function2[js.Any, js.Function1[/* config */ js.Any, scala.Unit], js.Any]
   ): ExportSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capture")(capture)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("libs")(libs)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("toJPG")(toJPG)
+    val __obj = js.Dynamic.literal(capture = capture, config = config, enabled = enabled, libs = libs, menu = menu, toJPG = toJPG)
+  
     __obj.asInstanceOf[ExportSettings]
   }
 }

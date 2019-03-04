@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/element", "ElementFinder")
 @js.native
 class ElementFinder protected () extends WebdriverWebElement {
-  def this(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser, elementArrayFinder: ElementArrayFinder) = this()
-  var `browser_`: protractorLib.builtBrowserMod.ProtractorBrowser = js.native
-  var `elementArrayFinder_`: ElementArrayFinder = js.native
+  def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, elementArrayFinder: ElementArrayFinder) = this()
+  var browser_ : protractorLib.builtBrowserMod.ProtractorBrowser = js.native
+  var elementArrayFinder_ : ElementArrayFinder = js.native
   var parentElementArrayFinder: ElementArrayFinder = js.native
   var `then`: js.UndefOr[
     js.Function2[
@@ -251,11 +251,11 @@ class ElementFinder protected () extends WebdriverWebElement {
 @JSImport("protractor/built/element", "ElementFinder")
 @js.native
 object ElementFinder extends js.Object {
-  def `fromWebElement_`(
+  def fromWebElement_(
     browser: protractorLib.builtBrowserMod.ProtractorBrowser,
     webElem: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement
   ): protractorLib.builtElementMod.ElementFinder = js.native
-  def `fromWebElement_`(
+  def fromWebElement_(
     browser: protractorLib.builtBrowserMod.ProtractorBrowser,
     webElem: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement,
     locator: protractorLib.builtLocatorsMod.Locator

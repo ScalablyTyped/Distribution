@@ -40,14 +40,8 @@ object TableOptions {
     style: stdLib.Partial[cliDashTableLib.Anon_Border],
     truncate: java.lang.String
   ): TableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chars")(chars)
-    __obj.updateDynamic("colAligns")(colAligns)
-    __obj.updateDynamic("colWidths")(colWidths)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("truncate")(truncate)
+    val __obj = js.Dynamic.literal(chars = chars, colAligns = colAligns, colWidths = colWidths, colors = colors, head = head, style = style, truncate = truncate)
+  
     __obj.asInstanceOf[TableOptions]
   }
 }

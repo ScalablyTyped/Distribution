@@ -22,12 +22,8 @@ object IRestoreJob {
     OverwriteExistingFiles: scala.Boolean,
     VaultProperties: IVaultProperties
   ): IRestoreJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupFileDifferential")(BackupFileDifferential)
-    __obj.updateDynamic("BackupFileFull")(BackupFileFull)
-    __obj.updateDynamic("Impersonation")(Impersonation)
-    __obj.updateDynamic("OverwriteExistingFiles")(OverwriteExistingFiles)
-    __obj.updateDynamic("VaultProperties")(VaultProperties)
+    val __obj = js.Dynamic.literal(BackupFileDifferential = BackupFileDifferential, BackupFileFull = BackupFileFull, Impersonation = Impersonation, OverwriteExistingFiles = OverwriteExistingFiles, VaultProperties = VaultProperties)
+  
     __obj.asInstanceOf[IRestoreJob]
   }
 }

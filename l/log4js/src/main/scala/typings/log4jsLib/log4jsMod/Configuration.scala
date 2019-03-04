@@ -24,9 +24,7 @@ object Configuration {
     pm2: js.UndefOr[scala.Boolean] = js.undefined,
     pm2InstanceVar: java.lang.String = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appenders")(appenders)
-    __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(appenders = appenders, categories = categories)
     if (!js.isUndefined(disableClustering)) __obj.updateDynamic("disableClustering")(disableClustering)
     if (levels != null) __obj.updateDynamic("levels")(levels)
     if (!js.isUndefined(pm2)) __obj.updateDynamic("pm2")(pm2)

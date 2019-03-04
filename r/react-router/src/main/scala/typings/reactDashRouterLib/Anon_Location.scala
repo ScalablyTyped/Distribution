@@ -20,8 +20,8 @@ object Anon_Location {
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState],
     `match`: reactDashRouterLib.reactDashRouterMod.`match`[Params]
   ): Anon_Location[Params] = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(location = location)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Anon_Location[Params]]
   }
 }

@@ -16,9 +16,8 @@ trait FormulaOpCodeMapEntry extends js.Object {
 object FormulaOpCodeMapEntry {
   @scala.inline
   def apply(Name: java.lang.String, Token: FormulaToken): FormulaOpCodeMapEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Token")(Token)
+    val __obj = js.Dynamic.literal(Name = Name, Token = Token)
+  
     __obj.asInstanceOf[FormulaOpCodeMapEntry]
   }
 }

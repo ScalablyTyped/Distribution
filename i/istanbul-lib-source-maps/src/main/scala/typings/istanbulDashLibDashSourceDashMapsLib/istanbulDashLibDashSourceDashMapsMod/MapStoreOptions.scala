@@ -20,11 +20,8 @@ object MapStoreOptions {
     tmpdir: java.lang.String,
     verbose: scala.Boolean
   ): MapStoreOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseDir")(baseDir)
-    __obj.updateDynamic("sourceStore")(sourceStore.asInstanceOf[js.Any])
-    __obj.updateDynamic("tmpdir")(tmpdir)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(baseDir = baseDir, sourceStore = sourceStore.asInstanceOf[js.Any], tmpdir = tmpdir, verbose = verbose)
+  
     __obj.asInstanceOf[MapStoreOptions]
   }
 }

@@ -18,10 +18,8 @@ object Anon_ImportedBy {
     imports: js.Array[java.lang.String],
     modified: java.lang.String
   ): Anon_ImportedBy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("importedBy")(importedBy)
-    __obj.updateDynamic("imports")(imports)
-    __obj.updateDynamic("modified")(modified)
+    val __obj = js.Dynamic.literal(importedBy = importedBy, imports = imports, modified = modified)
+  
     __obj.asInstanceOf[Anon_ImportedBy]
   }
 }

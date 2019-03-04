@@ -30,13 +30,8 @@ object MultichannelAddress {
     name: java.lang.String,
     token: java.lang.String
   ): MultichannelAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app_id")(app_id)
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("header_to")(header_to)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(app_id = app_id, channel = channel, email = email, header_to = header_to, name = name, token = token)
+  
     __obj.asInstanceOf[MultichannelAddress]
   }
 }

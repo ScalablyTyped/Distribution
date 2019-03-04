@@ -24,10 +24,7 @@ object Anon_IopsMountPointNumberOfDisks {
     raidLevel: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_IopsMountPointNumberOfDisks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mountPoint")(mountPoint.asInstanceOf[js.Any])
-    __obj.updateDynamic("numberOfDisks")(numberOfDisks.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mountPoint = mountPoint.asInstanceOf[js.Any], numberOfDisks = numberOfDisks.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (raidLevel != null) __obj.updateDynamic("raidLevel")(raidLevel.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

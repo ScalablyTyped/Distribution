@@ -13,9 +13,8 @@ trait PopconfirmLocale extends js.Object {
 object PopconfirmLocale {
   @scala.inline
   def apply(cancelText: java.lang.String, okText: java.lang.String): PopconfirmLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelText")(cancelText)
-    __obj.updateDynamic("okText")(okText)
+    val __obj = js.Dynamic.literal(cancelText = cancelText, okText = okText)
+  
     __obj.asInstanceOf[PopconfirmLocale]
   }
 }

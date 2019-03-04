@@ -12,8 +12,8 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(servicePath: java.lang.String): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("servicePath")(servicePath)
+    val __obj = js.Dynamic.literal(servicePath = servicePath)
+  
     __obj.asInstanceOf[Config]
   }
 }

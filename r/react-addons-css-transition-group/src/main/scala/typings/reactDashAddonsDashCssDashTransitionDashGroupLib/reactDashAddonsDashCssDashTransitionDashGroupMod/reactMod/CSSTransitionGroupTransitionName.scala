@@ -24,9 +24,7 @@ object CSSTransitionGroupTransitionName {
     enterActive: java.lang.String = null,
     leaveActive: java.lang.String = null
   ): CSSTransitionGroupTransitionName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enter")(enter)
-    __obj.updateDynamic("leave")(leave)
+    val __obj = js.Dynamic.literal(enter = enter, leave = leave)
     if (appear != null) __obj.updateDynamic("appear")(appear)
     if (appearActive != null) __obj.updateDynamic("appearActive")(appearActive)
     if (enterActive != null) __obj.updateDynamic("enterActive")(enterActive)

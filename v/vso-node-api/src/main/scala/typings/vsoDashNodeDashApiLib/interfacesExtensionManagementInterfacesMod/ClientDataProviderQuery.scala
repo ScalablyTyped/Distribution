@@ -19,10 +19,8 @@ object ClientDataProviderQuery {
     contributionIds: js.Array[java.lang.String],
     queryServiceInstanceType: java.lang.String
   ): ClientDataProviderQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("contributionIds")(contributionIds)
-    __obj.updateDynamic("queryServiceInstanceType")(queryServiceInstanceType)
+    val __obj = js.Dynamic.literal(context = context, contributionIds = contributionIds, queryServiceInstanceType = queryServiceInstanceType)
+  
     __obj.asInstanceOf[ClientDataProviderQuery]
   }
 }

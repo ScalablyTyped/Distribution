@@ -36,19 +36,8 @@ object ChangeList {
     sortDate: stdLib.Date,
     version: java.lang.String
   ): ChangeList[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allChangesIncluded")(allChangesIncluded)
-    __obj.updateDynamic("changeCounts")(changeCounts)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("commentTruncated")(commentTruncated)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("notes")(notes)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("ownerDisplayName")(ownerDisplayName)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("sortDate")(sortDate)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(allChangesIncluded = allChangesIncluded, changeCounts = changeCounts, changes = changes, comment = comment, commentTruncated = commentTruncated, creationDate = creationDate, notes = notes, owner = owner, ownerDisplayName = ownerDisplayName, ownerId = ownerId, sortDate = sortDate, version = version)
+  
     __obj.asInstanceOf[ChangeList[T]]
   }
 }

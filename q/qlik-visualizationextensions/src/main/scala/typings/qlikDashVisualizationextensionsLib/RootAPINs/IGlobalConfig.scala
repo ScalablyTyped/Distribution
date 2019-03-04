@@ -37,12 +37,8 @@ object IGlobalConfig {
     port: java.lang.String,
     prefix: java.lang.String
   ): IGlobalConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("isSecure")(isSecure)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(host = host, identity = identity, isSecure = isSecure, port = port, prefix = prefix)
+  
     __obj.asInstanceOf[IGlobalConfig]
   }
 }

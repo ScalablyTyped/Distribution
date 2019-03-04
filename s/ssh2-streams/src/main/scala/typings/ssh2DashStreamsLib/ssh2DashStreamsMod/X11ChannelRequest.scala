@@ -26,14 +26,8 @@ object X11ChannelRequest {
     single: scala.Boolean,
     wantReply: scala.Boolean
   ): X11ChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("screen")(screen)
-    __obj.updateDynamic("single")(single)
-    __obj.updateDynamic("wantReply")(wantReply)
+    val __obj = js.Dynamic.literal(cookie = cookie, protocol = protocol, recipient = recipient, request = request, screen = screen, single = single, wantReply = wantReply)
+  
     __obj.asInstanceOf[X11ChannelRequest]
   }
 }

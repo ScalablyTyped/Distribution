@@ -36,8 +36,7 @@ object PatientCommunication {
     modifierExtension: js.Array[Extension] = null,
     preferred: js.UndefOr[scala.Boolean] = js.undefined
   ): PatientCommunication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(language = language)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_preferred != null) __obj.updateDynamic("_preferred")(_preferred)

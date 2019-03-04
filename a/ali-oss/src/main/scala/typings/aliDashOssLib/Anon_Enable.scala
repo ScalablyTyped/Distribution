@@ -18,9 +18,7 @@ object Anon_Enable {
     res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse,
     prefix: java.lang.String = null
   ): Anon_Enable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(enable = enable, res = res)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     __obj.asInstanceOf[Anon_Enable]
   }

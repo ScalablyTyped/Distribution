@@ -67,9 +67,7 @@ object Anon_AltFieldsIdsKeyMaxResults {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIdsKeyMaxResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(profileId = profileId, projectId = projectId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (ids != null) __obj.updateDynamic("ids")(ids)

@@ -13,9 +13,8 @@ trait Anon_CancelCurrentEdit extends js.Object {
 object Anon_CancelCurrentEdit {
   @scala.inline
   def apply(cancelCurrentEdit: js.Function0[scala.Boolean], commitCurrentEdit: js.Function0[scala.Boolean]): Anon_CancelCurrentEdit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelCurrentEdit")(cancelCurrentEdit)
-    __obj.updateDynamic("commitCurrentEdit")(commitCurrentEdit)
+    val __obj = js.Dynamic.literal(cancelCurrentEdit = cancelCurrentEdit, commitCurrentEdit = commitCurrentEdit)
+  
     __obj.asInstanceOf[Anon_CancelCurrentEdit]
   }
 }

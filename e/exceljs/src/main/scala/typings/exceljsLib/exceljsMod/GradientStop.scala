@@ -13,9 +13,8 @@ trait GradientStop extends js.Object {
 object GradientStop {
   @scala.inline
   def apply(color: Color, position: scala.Double): GradientStop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(color = color, position = position)
+  
     __obj.asInstanceOf[GradientStop]
   }
 }

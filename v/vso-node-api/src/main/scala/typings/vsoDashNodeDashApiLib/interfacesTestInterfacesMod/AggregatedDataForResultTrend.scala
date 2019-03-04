@@ -23,11 +23,8 @@ object AggregatedDataForResultTrend {
     testResultsContext: TestResultsContext,
     totalTests: scala.Double
   ): AggregatedDataForResultTrend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("resultsByOutcome")(resultsByOutcome)
-    __obj.updateDynamic("testResultsContext")(testResultsContext)
-    __obj.updateDynamic("totalTests")(totalTests)
+    val __obj = js.Dynamic.literal(duration = duration, resultsByOutcome = resultsByOutcome, testResultsContext = testResultsContext, totalTests = totalTests)
+  
     __obj.asInstanceOf[AggregatedDataForResultTrend]
   }
 }

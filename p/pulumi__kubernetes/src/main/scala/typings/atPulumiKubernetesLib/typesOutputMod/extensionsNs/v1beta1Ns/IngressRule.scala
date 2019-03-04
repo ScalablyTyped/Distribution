@@ -30,9 +30,8 @@ trait IngressRule extends js.Object {
 object IngressRule {
   @scala.inline
   def apply(host: java.lang.String, http: HTTPIngressRuleValue): IngressRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("http")(http)
+    val __obj = js.Dynamic.literal(host = host, http = http)
+  
     __obj.asInstanceOf[IngressRule]
   }
 }

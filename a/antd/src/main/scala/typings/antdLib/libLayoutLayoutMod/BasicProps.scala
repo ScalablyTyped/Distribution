@@ -9,16 +9,18 @@ trait BasicProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   var hasSider: js.UndefOr[scala.Boolean] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
+  var tagName: antdLib.antdLibStrings.header | antdLib.antdLibStrings.footer | antdLib.antdLibStrings.main | antdLib.antdLibStrings.section
 }
 
 object BasicProps {
   @scala.inline
   def apply(
+    tagName: antdLib.antdLibStrings.header | antdLib.antdLibStrings.footer | antdLib.antdLibStrings.main | antdLib.antdLibStrings.section,
     HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
     hasSider: js.UndefOr[scala.Boolean] = js.undefined,
     prefixCls: java.lang.String = null
   ): BasicProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (!js.isUndefined(hasSider)) __obj.updateDynamic("hasSider")(hasSider)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

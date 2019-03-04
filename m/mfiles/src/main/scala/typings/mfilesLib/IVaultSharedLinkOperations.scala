@@ -22,12 +22,8 @@ object IVaultSharedLinkOperations {
     GetSharedLinks: js.Function1[scala.Double, ISharedLinkInfos],
     GetSharedLinksByObject: js.Function1[IObjID, ISharedLinkInfos]
   ): IVaultSharedLinkOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CreateSharedLink")(CreateSharedLink)
-    __obj.updateDynamic("DeleteSharedLink")(DeleteSharedLink)
-    __obj.updateDynamic("GetSharedLink")(GetSharedLink)
-    __obj.updateDynamic("GetSharedLinks")(GetSharedLinks)
-    __obj.updateDynamic("GetSharedLinksByObject")(GetSharedLinksByObject)
+    val __obj = js.Dynamic.literal(CreateSharedLink = CreateSharedLink, DeleteSharedLink = DeleteSharedLink, GetSharedLink = GetSharedLink, GetSharedLinks = GetSharedLinks, GetSharedLinksByObject = GetSharedLinksByObject)
+  
     __obj.asInstanceOf[IVaultSharedLinkOperations]
   }
 }

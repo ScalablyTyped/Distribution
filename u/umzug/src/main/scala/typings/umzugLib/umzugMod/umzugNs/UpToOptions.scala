@@ -17,8 +17,8 @@ trait UpToOptions extends js.Object {
 object UpToOptions {
   @scala.inline
   def apply(to: java.lang.String): UpToOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(to = to)
+  
     __obj.asInstanceOf[UpToOptions]
   }
 }

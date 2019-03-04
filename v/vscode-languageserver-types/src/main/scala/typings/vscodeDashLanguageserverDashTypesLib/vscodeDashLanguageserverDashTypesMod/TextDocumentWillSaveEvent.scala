@@ -19,9 +19,8 @@ trait TextDocumentWillSaveEvent extends js.Object {
 object TextDocumentWillSaveEvent {
   @scala.inline
   def apply(document: TextDocument, reason: TextDocumentSaveReason): TextDocumentWillSaveEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(document = document, reason = reason)
+  
     __obj.asInstanceOf[TextDocumentWillSaveEvent]
   }
 }

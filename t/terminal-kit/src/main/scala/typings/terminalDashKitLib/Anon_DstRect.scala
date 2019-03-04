@@ -24,11 +24,7 @@ object Anon_DstRect {
     srcRect: terminalDashKitLib.rectMod.Rect,
     wrapOnly: terminalDashKitLib.terminalDashKitLibStrings.x | terminalDashKitLib.terminalDashKitLibStrings.y = null
   ): Anon_DstRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dstRect")(dstRect)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("srcRect")(srcRect)
+    val __obj = js.Dynamic.literal(dstRect = dstRect, offsetX = offsetX, offsetY = offsetY, srcRect = srcRect)
     if (wrapOnly != null) __obj.updateDynamic("wrapOnly")(wrapOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DstRect]
   }

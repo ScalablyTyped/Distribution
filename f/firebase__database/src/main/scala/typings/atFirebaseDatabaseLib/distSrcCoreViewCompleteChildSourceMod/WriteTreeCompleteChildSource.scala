@@ -13,11 +13,11 @@ class WriteTreeCompleteChildSource protected () extends CompleteChildSource {
     * @param {!ViewCache} viewCache_
     * @param {?Node} optCompleteServerCache_
     */
-  def this(`writes_`: atFirebaseDatabaseLib.distSrcCoreWriteTreeMod.WriteTreeRef, `viewCache_`: atFirebaseDatabaseLib.distSrcCoreViewViewCacheMod.ViewCache) = this()
-  def this(`writes_`: atFirebaseDatabaseLib.distSrcCoreWriteTreeMod.WriteTreeRef, `viewCache_`: atFirebaseDatabaseLib.distSrcCoreViewViewCacheMod.ViewCache, `optCompleteServerCache_`: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node) = this()
-  var `optCompleteServerCache_`: js.Any = js.native
-  var `viewCache_`: js.Any = js.native
-  var `writes_`: js.Any = js.native
+  def this(writes_ : atFirebaseDatabaseLib.distSrcCoreWriteTreeMod.WriteTreeRef, viewCache_ : atFirebaseDatabaseLib.distSrcCoreViewViewCacheMod.ViewCache) = this()
+  def this(writes_ : atFirebaseDatabaseLib.distSrcCoreWriteTreeMod.WriteTreeRef, viewCache_ : atFirebaseDatabaseLib.distSrcCoreViewViewCacheMod.ViewCache, optCompleteServerCache_ : atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node) = this()
+  var optCompleteServerCache_ : js.Any = js.native
+  var viewCache_ : js.Any = js.native
+  var writes_ : js.Any = js.native
   /**
     * @param {!Index} index
     * @param {!NamedNode} child

@@ -21,9 +21,8 @@ object AesCCM {
     aad: nodeLib.Buffer = null,
     nonce: nodeLib.Buffer = null
   ): AesCCM = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("dataLen")(dataLen)
-    __obj.updateDynamic("macLen")(macLen)
+    val __obj = js.Dynamic.literal(dataLen = dataLen, macLen = macLen)
+    __obj.updateDynamic("type")(`type`)
     if (aad != null) __obj.updateDynamic("aad")(aad)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     __obj.asInstanceOf[AesCCM]

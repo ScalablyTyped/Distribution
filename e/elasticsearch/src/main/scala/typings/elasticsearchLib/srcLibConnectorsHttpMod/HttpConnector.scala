@@ -40,11 +40,8 @@ object HttpConnector {
       scala.Unit
     ]
   ): HttpConnector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAgent")(createAgent)
-    __obj.updateDynamic("makeAgentConfig")(makeAgentConfig)
-    __obj.updateDynamic("makeReqParams")(makeReqParams)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(createAgent = createAgent, makeAgentConfig = makeAgentConfig, makeReqParams = makeReqParams, request = request)
+  
     __obj.asInstanceOf[HttpConnector]
   }
 }

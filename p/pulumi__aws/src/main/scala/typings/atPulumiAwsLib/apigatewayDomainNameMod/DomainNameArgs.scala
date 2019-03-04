@@ -66,8 +66,7 @@ object DomainNameArgs {
     regionalCertificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     regionalCertificateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DomainNameArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
     if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
     if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])

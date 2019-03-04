@@ -60,16 +60,8 @@ object XSessionManagerClient {
     removeSessionManagerListener: js.Function1[XSessionManagerListener, scala.Unit],
     saveDone: js.Function1[XSessionManagerListener, scala.Unit]
   ): XSessionManagerClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSessionManagerListener")(addSessionManagerListener)
-    __obj.updateDynamic("cancelShutdown")(cancelShutdown)
-    __obj.updateDynamic("interactionDone")(interactionDone)
-    __obj.updateDynamic("queryInteraction")(queryInteraction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSessionManagerListener")(removeSessionManagerListener)
-    __obj.updateDynamic("saveDone")(saveDone)
+    val __obj = js.Dynamic.literal(acquire = acquire, addSessionManagerListener = addSessionManagerListener, cancelShutdown = cancelShutdown, interactionDone = interactionDone, queryInteraction = queryInteraction, queryInterface = queryInterface, release = release, removeSessionManagerListener = removeSessionManagerListener, saveDone = saveDone)
+  
     __obj.asInstanceOf[XSessionManagerClient]
   }
 }

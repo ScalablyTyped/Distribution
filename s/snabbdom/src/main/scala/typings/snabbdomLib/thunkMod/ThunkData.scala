@@ -30,9 +30,7 @@ object ThunkData {
     props: snabbdomLib.modulesPropsMod.Props = null,
     style: snabbdomLib.modulesStyleMod.VNodeStyle = null
   ): ThunkData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("fn")(fn)
+    val __obj = js.Dynamic.literal(args = args, fn = fn)
     if (attachData != null) __obj.updateDynamic("attachData")(attachData)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (`class` != null) __obj.updateDynamic("class")(`class`)

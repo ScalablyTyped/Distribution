@@ -12,8 +12,8 @@ trait TypeParameterContainer extends js.Object {
 object TypeParameterContainer {
   @scala.inline
   def apply(typeParameters: js.Array[TypeContainer]): TypeParameterContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(typeParameters = typeParameters)
+  
     __obj.asInstanceOf[TypeParameterContainer]
   }
 }

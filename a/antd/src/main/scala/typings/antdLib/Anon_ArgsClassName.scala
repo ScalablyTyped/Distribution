@@ -38,20 +38,8 @@ object Anon_ArgsClassName {
     style: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
     value: propDashTypesLib.propDashTypesMod.Requireable[momentLib.momentMod.momentNs.Moment]
   ): Anon_ArgsClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("dateCellRender")(dateCellRender)
-    __obj.updateDynamic("dateFullCellRender")(dateFullCellRender)
-    __obj.updateDynamic("fullscreen")(fullscreen)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("monthCellRender")(monthCellRender)
-    __obj.updateDynamic("monthFullCellRender")(monthFullCellRender)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onPanelChange")(onPanelChange)
-    __obj.updateDynamic("onSelect")(onSelect)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(className = className, dateCellRender = dateCellRender, dateFullCellRender = dateFullCellRender, fullscreen = fullscreen, locale = locale, monthCellRender = monthCellRender, monthFullCellRender = monthFullCellRender, onChange = onChange, onPanelChange = onPanelChange, onSelect = onSelect, prefixCls = prefixCls, style = style, value = value)
+  
     __obj.asInstanceOf[Anon_ArgsClassName]
   }
 }

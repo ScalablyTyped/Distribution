@@ -50,10 +50,8 @@ object LiensResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
     ]
   ): LiensResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list)
+  
     __obj.asInstanceOf[LiensResource]
   }
 }

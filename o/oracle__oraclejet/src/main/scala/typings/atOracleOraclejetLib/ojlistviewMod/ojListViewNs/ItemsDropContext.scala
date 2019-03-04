@@ -19,10 +19,8 @@ object ItemsDropContext {
     position: atOracleOraclejetLib.atOracleOraclejetLibStrings.before | atOracleOraclejetLib.atOracleOraclejetLibStrings.after | atOracleOraclejetLib.atOracleOraclejetLibStrings.inside,
     reorder: scala.Boolean
   ): ItemsDropContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("reorder")(reorder)
+    val __obj = js.Dynamic.literal(item = item, position = position.asInstanceOf[js.Any], reorder = reorder)
+  
     __obj.asInstanceOf[ItemsDropContext]
   }
 }

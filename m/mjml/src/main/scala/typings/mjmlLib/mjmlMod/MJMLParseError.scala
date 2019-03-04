@@ -20,11 +20,8 @@ object MJMLParseError {
     message: java.lang.String,
     tagName: java.lang.String
   ): MJMLParseError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formattedMessage")(formattedMessage)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(formattedMessage = formattedMessage, line = line, message = message, tagName = tagName)
+  
     __obj.asInstanceOf[MJMLParseError]
   }
 }

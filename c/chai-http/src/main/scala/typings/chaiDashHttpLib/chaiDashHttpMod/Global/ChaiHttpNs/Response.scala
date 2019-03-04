@@ -24,12 +24,8 @@ object Response {
     text: java.lang.String,
     `type`: java.lang.String
   ): Response = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("setEncoding")(setEncoding)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(body = body, on = on, setEncoding = setEncoding, status = status, text = text)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Response]
   }
 }

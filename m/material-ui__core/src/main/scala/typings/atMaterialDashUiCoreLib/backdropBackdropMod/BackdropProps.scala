@@ -29,8 +29,7 @@ object BackdropProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: js.Any = null
   ): BackdropProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(open = open)
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])

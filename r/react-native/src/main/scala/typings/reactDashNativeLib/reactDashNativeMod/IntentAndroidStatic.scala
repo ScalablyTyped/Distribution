@@ -42,10 +42,8 @@ object IntentAndroidStatic {
     getInitialURL: js.Function1[js.Function1[/* url */ java.lang.String | scala.Null, scala.Unit], scala.Unit],
     openURL: js.Function1[java.lang.String, scala.Unit]
   ): IntentAndroidStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canOpenURL")(canOpenURL)
-    __obj.updateDynamic("getInitialURL")(getInitialURL)
-    __obj.updateDynamic("openURL")(openURL)
+    val __obj = js.Dynamic.literal(canOpenURL = canOpenURL, getInitialURL = getInitialURL, openURL = openURL)
+  
     __obj.asInstanceOf[IntentAndroidStatic]
   }
 }

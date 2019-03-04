@@ -26,12 +26,8 @@ object LayerFilter {
     readData: js.Function1[XLayerHandler, scala.Unit],
     release: js.Function0[scala.Unit]
   ): LayerFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readData")(readData)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, initialize = initialize, queryInterface = queryInterface, readData = readData, release = release)
+  
     __obj.asInstanceOf[LayerFilter]
   }
 }

@@ -42,12 +42,8 @@ object ASPxClientHtmlEditorSelection {
     GetText: js.Function0[java.lang.String],
     SetHtml: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
   ): ASPxClientHtmlEditorSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetElements")(GetElements)
-    __obj.updateDynamic("GetHtml")(GetHtml)
-    __obj.updateDynamic("GetSelectedElement")(GetSelectedElement)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("SetHtml")(SetHtml)
+    val __obj = js.Dynamic.literal(GetElements = GetElements, GetHtml = GetHtml, GetSelectedElement = GetSelectedElement, GetText = GetText, SetHtml = SetHtml)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorSelection]
   }
 }

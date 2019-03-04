@@ -20,8 +20,7 @@ object ESLintParseResult {
     scopeManager: eslintLib.eslintMod.ScopeNs.ScopeManager = null,
     visitorKeys: eslintLib.eslintMod.SourceCodeNs.VisitorKeys = null
   ): ESLintParseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast)
+    val __obj = js.Dynamic.literal(ast = ast)
     if (parserServices != null) __obj.updateDynamic("parserServices")(parserServices)
     if (scopeManager != null) __obj.updateDynamic("scopeManager")(scopeManager)
     if (visitorKeys != null) __obj.updateDynamic("visitorKeys")(visitorKeys)

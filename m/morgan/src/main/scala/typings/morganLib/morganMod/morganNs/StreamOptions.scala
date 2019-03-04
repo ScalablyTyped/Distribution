@@ -15,8 +15,8 @@ trait StreamOptions extends js.Object {
 object StreamOptions {
   @scala.inline
   def apply(write: js.Function1[java.lang.String, scala.Unit]): StreamOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(write = write)
+  
     __obj.asInstanceOf[StreamOptions]
   }
 }

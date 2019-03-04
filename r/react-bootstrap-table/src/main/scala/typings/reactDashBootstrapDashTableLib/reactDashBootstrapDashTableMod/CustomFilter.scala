@@ -47,9 +47,9 @@ object CustomFilter {
     ],
     `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.CustomFilter
   ): CustomFilter[FParams, FElement] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("customFilterParameters")(customFilterParameters)
+    val __obj = js.Dynamic.literal(customFilterParameters = customFilterParameters)
     __obj.updateDynamic("getElement")(getElement_CustomFilter)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CustomFilter[FParams, FElement]]
   }
 }

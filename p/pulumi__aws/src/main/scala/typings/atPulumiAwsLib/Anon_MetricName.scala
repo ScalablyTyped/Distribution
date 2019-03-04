@@ -24,12 +24,7 @@ object Anon_MetricName {
     roleArn: java.lang.String,
     metricTimestamp: java.lang.String = null
   ): Anon_MetricName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("metricNamespace")(metricNamespace)
-    __obj.updateDynamic("metricUnit")(metricUnit)
-    __obj.updateDynamic("metricValue")(metricValue)
-    __obj.updateDynamic("roleArn")(roleArn)
+    val __obj = js.Dynamic.literal(metricName = metricName, metricNamespace = metricNamespace, metricUnit = metricUnit, metricValue = metricValue, roleArn = roleArn)
     if (metricTimestamp != null) __obj.updateDynamic("metricTimestamp")(metricTimestamp)
     __obj.asInstanceOf[Anon_MetricName]
   }

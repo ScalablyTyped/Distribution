@@ -47,14 +47,8 @@ object TestSettings {
     testSettingsId: scala.Double,
     testSettingsName: java.lang.String
   ): TestSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("areaPath")(areaPath)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isPublic")(isPublic)
-    __obj.updateDynamic("machineRoles")(machineRoles)
-    __obj.updateDynamic("testSettingsContent")(testSettingsContent)
-    __obj.updateDynamic("testSettingsId")(testSettingsId)
-    __obj.updateDynamic("testSettingsName")(testSettingsName)
+    val __obj = js.Dynamic.literal(areaPath = areaPath, description = description, isPublic = isPublic, machineRoles = machineRoles, testSettingsContent = testSettingsContent, testSettingsId = testSettingsId, testSettingsName = testSettingsName)
+  
     __obj.asInstanceOf[TestSettings]
   }
 }

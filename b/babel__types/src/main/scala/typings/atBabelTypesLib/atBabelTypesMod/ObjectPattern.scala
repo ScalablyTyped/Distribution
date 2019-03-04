@@ -32,8 +32,8 @@ object ObjectPattern {
     trailingComments: js.Array[Comment] = null,
     typeAnnotation: TypeAnnotation | TSTypeAnnotation | Noop = null
   ): ObjectPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(properties = properties)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

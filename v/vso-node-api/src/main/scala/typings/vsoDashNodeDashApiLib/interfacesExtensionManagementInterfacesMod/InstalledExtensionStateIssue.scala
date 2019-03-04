@@ -23,9 +23,8 @@ trait InstalledExtensionStateIssue extends js.Object {
 object InstalledExtensionStateIssue {
   @scala.inline
   def apply(message: java.lang.String, source: java.lang.String, `type`: InstalledExtensionStateIssueType): InstalledExtensionStateIssue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(message = message, source = source)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InstalledExtensionStateIssue]
   }
 }

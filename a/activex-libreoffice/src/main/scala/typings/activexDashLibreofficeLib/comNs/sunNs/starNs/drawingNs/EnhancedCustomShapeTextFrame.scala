@@ -14,9 +14,8 @@ trait EnhancedCustomShapeTextFrame extends js.Object {
 object EnhancedCustomShapeTextFrame {
   @scala.inline
   def apply(BottomRight: EnhancedCustomShapeParameterPair, TopLeft: EnhancedCustomShapeParameterPair): EnhancedCustomShapeTextFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomRight")(BottomRight)
-    __obj.updateDynamic("TopLeft")(TopLeft)
+    val __obj = js.Dynamic.literal(BottomRight = BottomRight, TopLeft = TopLeft)
+  
     __obj.asInstanceOf[EnhancedCustomShapeTextFrame]
   }
 }

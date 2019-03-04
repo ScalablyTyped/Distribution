@@ -24,13 +24,8 @@ object IGradient {
     stops: js.Array[scala.Double],
     visible: scala.Boolean
   ): IGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("stops")(stops)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(chart = chart, colors = colors, direction = direction, offset = offset, stops = stops, visible = visible)
+  
     __obj.asInstanceOf[IGradient]
   }
 }

@@ -13,8 +13,8 @@ trait IndexeddbBoolean
 object IndexeddbBoolean {
   @scala.inline
   def apply(deletedatabase: scala.Boolean): IndexeddbBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deletedatabase")(deletedatabase)
+    val __obj = js.Dynamic.literal(deletedatabase = deletedatabase)
+  
     __obj.asInstanceOf[IndexeddbBoolean]
   }
 }

@@ -29,8 +29,7 @@ object TransactWriteItemsInput {
     ReturnConsumedCapacity: ReturnConsumedCapacity = null,
     ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null
   ): TransactWriteItemsInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TransactItems")(TransactItems)
+    val __obj = js.Dynamic.literal(TransactItems = TransactItems)
     if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
     if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
     if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])

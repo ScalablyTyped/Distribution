@@ -12,8 +12,8 @@ trait Observe extends js.Object {
 object Observe {
   @scala.inline
   def apply(cancel: js.Function0[scala.Unit]): Observe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(cancel = cancel)
+  
     __obj.asInstanceOf[Observe]
   }
 }

@@ -13,8 +13,8 @@ trait Anon_TabIdNumber extends js.Object {
 object Anon_TabIdNumber {
   @scala.inline
   def apply(tabId: scala.Double): Anon_TabIdNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId)
+  
     __obj.asInstanceOf[Anon_TabIdNumber]
   }
 }

@@ -27,10 +27,9 @@ object ResourceHandler {
     open_string: js.Function2[playcanvasLib.playcanvasLibStrings.string, js.Any, js.Any],
     patch: js.Function2[Asset, AssetRegistry, scala.Unit]
   ): ResourceHandler = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(patch = patch)
     __obj.updateDynamic("load")(load_string)
     __obj.updateDynamic("open")(open_string)
-    __obj.updateDynamic("patch")(patch)
     __obj.asInstanceOf[ResourceHandler]
   }
 }

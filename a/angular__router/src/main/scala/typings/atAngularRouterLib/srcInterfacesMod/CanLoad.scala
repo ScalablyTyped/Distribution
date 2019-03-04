@@ -21,8 +21,8 @@ object CanLoad {
       rxjsLib.rxjsMod.Observable[scala.Boolean] | js.Promise[scala.Boolean] | scala.Boolean
     ]
   ): CanLoad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canLoad")(canLoad)
+    val __obj = js.Dynamic.literal(canLoad = canLoad)
+  
     __obj.asInstanceOf[CanLoad]
   }
 }

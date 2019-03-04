@@ -13,9 +13,8 @@ trait BaseTag extends js.Object {
 object BaseTag {
   @scala.inline
   def apply(isSelfClosing: scala.Boolean, name: java.lang.String): BaseTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSelfClosing")(isSelfClosing)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(isSelfClosing = isSelfClosing, name = name)
+  
     __obj.asInstanceOf[BaseTag]
   }
 }

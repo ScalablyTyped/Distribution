@@ -24,10 +24,8 @@ object InputValuesQuery {
     inputValues: js.Array[InputValues],
     resource: js.Any
   ): InputValuesQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentValues")(currentValues)
-    __obj.updateDynamic("inputValues")(inputValues)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(currentValues = currentValues, inputValues = inputValues, resource = resource)
+  
     __obj.asInstanceOf[InputValuesQuery]
   }
 }

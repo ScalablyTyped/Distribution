@@ -13,8 +13,8 @@ trait PushCommand extends js.Object {
 object PushCommand {
   @scala.inline
   def apply($push: js.Array[_]): PushCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$push")($push)
+    val __obj = js.Dynamic.literal($push = $push)
+  
     __obj.asInstanceOf[PushCommand]
   }
 }

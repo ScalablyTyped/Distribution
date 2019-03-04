@@ -37,9 +37,8 @@ object SamplesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSamplesResponse]
     ]
   ): SamplesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchCreate")(batchCreate)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(batchCreate = batchCreate, list = list)
+  
     __obj.asInstanceOf[SamplesResource]
   }
 }

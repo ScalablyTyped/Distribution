@@ -12,8 +12,8 @@ trait ISimpleOrientationSensorStatics extends js.Object {
 object ISimpleOrientationSensorStatics {
   @scala.inline
   def apply(getDefault: js.Function0[SimpleOrientationSensor]): ISimpleOrientationSensorStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDefault")(getDefault)
+    val __obj = js.Dynamic.literal(getDefault = getDefault)
+  
     __obj.asInstanceOf[ISimpleOrientationSensorStatics]
   }
 }

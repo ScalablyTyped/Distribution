@@ -20,11 +20,8 @@ object Anon_AnimationFrame {
     async: rxjsLib.internalTypesMod.SchedulerLike,
     queue: rxjsLib.internalTypesMod.SchedulerLike
   ): Anon_AnimationFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationFrame")(animationFrame)
-    __obj.updateDynamic("asap")(asap)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("queue")(queue)
+    val __obj = js.Dynamic.literal(animationFrame = animationFrame, asap = asap, async = async, queue = queue)
+  
     __obj.asInstanceOf[Anon_AnimationFrame]
   }
 }

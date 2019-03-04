@@ -75,19 +75,8 @@ object IQFieldSelections {
     selectedValues: js.Array[scala.Double],
     totalCount: scala.Double
   ): IQFieldSelections = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("isNumeric")(isNumeric)
-    __obj.updateDynamic("locked")(locked)
-    __obj.updateDynamic("notSelectedValues")(notSelectedValues)
-    __obj.updateDynamic("qSelected")(qSelected)
-    __obj.updateDynamic("qSelectionThreshold")(qSelectionThreshold)
-    __obj.updateDynamic("qSortIndex")(qSortIndex)
-    __obj.updateDynamic("qStateCounts")(qStateCounts)
-    __obj.updateDynamic("selectedCount")(selectedCount)
-    __obj.updateDynamic("selectedValues")(selectedValues)
-    __obj.updateDynamic("totalCount")(totalCount)
+    val __obj = js.Dynamic.literal(field = field, fieldName = fieldName, isNumeric = isNumeric, locked = locked, notSelectedValues = notSelectedValues, qSelected = qSelected, qSelectionThreshold = qSelectionThreshold, qSortIndex = qSortIndex, qStateCounts = qStateCounts, selectedCount = selectedCount, selectedValues = selectedValues, totalCount = totalCount)
+  
     __obj.asInstanceOf[IQFieldSelections]
   }
 }

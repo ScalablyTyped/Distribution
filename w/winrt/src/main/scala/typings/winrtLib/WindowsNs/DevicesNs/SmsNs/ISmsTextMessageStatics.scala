@@ -16,9 +16,8 @@ object ISmsTextMessageStatics {
     fromBinaryData: js.Function2[SmsDataFormat, stdLib.Uint8Array, SmsTextMessage],
     fromBinaryMessage: js.Function1[SmsBinaryMessage, SmsTextMessage]
   ): ISmsTextMessageStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromBinaryData")(fromBinaryData)
-    __obj.updateDynamic("fromBinaryMessage")(fromBinaryMessage)
+    val __obj = js.Dynamic.literal(fromBinaryData = fromBinaryData, fromBinaryMessage = fromBinaryMessage)
+  
     __obj.asInstanceOf[ISmsTextMessageStatics]
   }
 }

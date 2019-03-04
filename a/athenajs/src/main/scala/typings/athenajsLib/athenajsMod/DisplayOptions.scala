@@ -22,10 +22,8 @@ object DisplayOptions {
     width: scala.Double,
     layers: js.Array[scala.Boolean] = null
   ): DisplayOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, name = name, width = width)
+    __obj.updateDynamic("type")(`type`)
     if (layers != null) __obj.updateDynamic("layers")(layers)
     __obj.asInstanceOf[DisplayOptions]
   }

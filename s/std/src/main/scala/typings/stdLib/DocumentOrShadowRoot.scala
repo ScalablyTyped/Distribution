@@ -30,13 +30,7 @@ object DocumentOrShadowRoot {
     styleSheets: StyleSheetList,
     activeElement: Element = null
   ): DocumentOrShadowRoot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caretPositionFromPoint")(caretPositionFromPoint)
-    __obj.updateDynamic("caretRangeFromPoint")(caretRangeFromPoint)
-    __obj.updateDynamic("elementFromPoint")(elementFromPoint)
-    __obj.updateDynamic("elementsFromPoint")(elementsFromPoint)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("styleSheets")(styleSheets)
+    val __obj = js.Dynamic.literal(caretPositionFromPoint = caretPositionFromPoint, caretRangeFromPoint = caretRangeFromPoint, elementFromPoint = elementFromPoint, elementsFromPoint = elementsFromPoint, getSelection = getSelection, styleSheets = styleSheets)
     if (activeElement != null) __obj.updateDynamic("activeElement")(activeElement)
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }

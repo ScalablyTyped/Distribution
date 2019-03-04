@@ -23,10 +23,7 @@ object IRenderEvent {
     renderTime: scala.Int | scala.Double = null,
     totalTime: scala.Int | scala.Double = null
   ): IRenderEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(component = component, event = event.asInstanceOf[js.Any], node = node)
     if (renderTime != null) __obj.updateDynamic("renderTime")(renderTime.asInstanceOf[js.Any])
     if (totalTime != null) __obj.updateDynamic("totalTime")(totalTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRenderEvent]

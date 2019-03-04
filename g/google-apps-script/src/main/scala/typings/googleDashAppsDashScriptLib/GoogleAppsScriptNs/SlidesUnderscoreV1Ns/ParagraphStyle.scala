@@ -61,16 +61,8 @@ object ParagraphStyle {
     space_below: Dimension,
     spacing_mode: ParagraphStyleSpacingMode
   ): ParagraphStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("indent_end")(indent_end)
-    __obj.updateDynamic("indent_first_line")(indent_first_line)
-    __obj.updateDynamic("indent_start")(indent_start)
-    __obj.updateDynamic("line_spacing")(line_spacing)
-    __obj.updateDynamic("space_above")(space_above)
-    __obj.updateDynamic("space_below")(space_below)
-    __obj.updateDynamic("spacing_mode")(spacing_mode)
+    val __obj = js.Dynamic.literal(alignment = alignment, direction = direction, indent_end = indent_end, indent_first_line = indent_first_line, indent_start = indent_start, line_spacing = line_spacing, space_above = space_above, space_below = space_below, spacing_mode = spacing_mode)
+  
     __obj.asInstanceOf[ParagraphStyle]
   }
 }

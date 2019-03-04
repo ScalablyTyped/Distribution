@@ -13,9 +13,8 @@ trait ValidationFactors extends js.Object {
 object ValidationFactors {
   @scala.inline
   def apply(toCrowd: js.Function0[ValidationFactorsObj], validationFactors: js.Any): ValidationFactors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toCrowd")(toCrowd)
-    __obj.updateDynamic("validationFactors")(validationFactors)
+    val __obj = js.Dynamic.literal(toCrowd = toCrowd, validationFactors = validationFactors)
+  
     __obj.asInstanceOf[ValidationFactors]
   }
 }

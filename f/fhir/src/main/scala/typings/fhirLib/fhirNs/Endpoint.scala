@@ -109,11 +109,7 @@ object Endpoint {
     resourceType: code = null,
     text: Narrative = null
   ): Endpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("connectionType")(connectionType)
-    __obj.updateDynamic("payloadType")(payloadType)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(address = address, connectionType = connectionType, payloadType = payloadType, status = status)
     if (_address != null) __obj.updateDynamic("_address")(_address)
     if (_header != null) __obj.updateDynamic("_header")(_header)
     if (_id != null) __obj.updateDynamic("_id")(_id)

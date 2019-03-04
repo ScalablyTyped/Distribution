@@ -32,11 +32,8 @@ object ReleaseUpdateMetadata {
     manualEnvironments: js.Array[java.lang.String],
     status: ReleaseStatus
   ): ReleaseUpdateMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("keepForever")(keepForever)
-    __obj.updateDynamic("manualEnvironments")(manualEnvironments)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(comment = comment, keepForever = keepForever, manualEnvironments = manualEnvironments, status = status)
+  
     __obj.asInstanceOf[ReleaseUpdateMetadata]
   }
 }

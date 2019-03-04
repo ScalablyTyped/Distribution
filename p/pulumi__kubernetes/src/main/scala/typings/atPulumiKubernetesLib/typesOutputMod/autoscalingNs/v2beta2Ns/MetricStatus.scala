@@ -50,10 +50,9 @@ object MetricStatus {
     resource: ResourceMetricStatus,
     `type`: java.lang.String
   ): MetricStatus = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("external")(external)
-    __obj.updateDynamic("pods")(pods)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(external = external, pods = pods, resource = resource)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MetricStatus]
   }
 }

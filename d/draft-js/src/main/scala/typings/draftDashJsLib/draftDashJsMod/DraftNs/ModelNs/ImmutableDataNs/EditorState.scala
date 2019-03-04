@@ -60,24 +60,8 @@ object EditorState {
     mustForceSelection: js.Function0[scala.Boolean],
     toJS: js.Function0[js.Object]
   ): EditorState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllowUndo")(getAllowUndo)
-    __obj.updateDynamic("getBlockTree")(getBlockTree)
-    __obj.updateDynamic("getCurrentContent")(getCurrentContent)
-    __obj.updateDynamic("getCurrentInlineStyle")(getCurrentInlineStyle)
-    __obj.updateDynamic("getDecorator")(getDecorator)
-    __obj.updateDynamic("getDirectionMap")(getDirectionMap)
-    __obj.updateDynamic("getInlineStyleOverride")(getInlineStyleOverride)
-    __obj.updateDynamic("getLastChangeType")(getLastChangeType)
-    __obj.updateDynamic("getNativelyRenderedContent")(getNativelyRenderedContent)
-    __obj.updateDynamic("getRedoStack")(getRedoStack)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getUndoStack")(getUndoStack)
-    __obj.updateDynamic("isInCompositionMode")(isInCompositionMode)
-    __obj.updateDynamic("isSelectionAtEndOfContent")(isSelectionAtEndOfContent)
-    __obj.updateDynamic("isSelectionAtStartOfContent")(isSelectionAtStartOfContent)
-    __obj.updateDynamic("mustForceSelection")(mustForceSelection)
-    __obj.updateDynamic("toJS")(toJS)
+    val __obj = js.Dynamic.literal(getAllowUndo = getAllowUndo, getBlockTree = getBlockTree, getCurrentContent = getCurrentContent, getCurrentInlineStyle = getCurrentInlineStyle, getDecorator = getDecorator, getDirectionMap = getDirectionMap, getInlineStyleOverride = getInlineStyleOverride, getLastChangeType = getLastChangeType, getNativelyRenderedContent = getNativelyRenderedContent, getRedoStack = getRedoStack, getSelection = getSelection, getUndoStack = getUndoStack, isInCompositionMode = isInCompositionMode, isSelectionAtEndOfContent = isSelectionAtEndOfContent, isSelectionAtStartOfContent = isSelectionAtStartOfContent, mustForceSelection = mustForceSelection, toJS = toJS)
+  
     __obj.asInstanceOf[EditorState]
   }
 }

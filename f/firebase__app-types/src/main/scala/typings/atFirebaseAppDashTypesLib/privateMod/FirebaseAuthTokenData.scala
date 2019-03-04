@@ -12,8 +12,8 @@ trait FirebaseAuthTokenData extends js.Object {
 object FirebaseAuthTokenData {
   @scala.inline
   def apply(accessToken: java.lang.String): FirebaseAuthTokenData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken)
+  
     __obj.asInstanceOf[FirebaseAuthTokenData]
   }
 }

@@ -18,10 +18,8 @@ object Layout {
     images: js.Array[nodeDashSpriteDashGeneratorLib.Anon_X with Image],
     width: scala.Double
   ): Layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, images = images, width = width)
+  
     __obj.asInstanceOf[Layout]
   }
 }

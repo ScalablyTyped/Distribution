@@ -19,10 +19,8 @@ object ModuleSizeExceededRequest {
     Message: java.lang.String,
     Names: activexDashInteropLib.SafeArray[java.lang.String]
   ): ModuleSizeExceededRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Names")(Names)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Names = Names)
+  
     __obj.asInstanceOf[ModuleSizeExceededRequest]
   }
 }

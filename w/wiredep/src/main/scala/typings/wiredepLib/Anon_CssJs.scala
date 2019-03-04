@@ -16,14 +16,14 @@ trait Anon_CssJs extends js.Object {
     *  '- {{filePath}}'
     */
   @JSName("js")
-  var `js_`: java.lang.String
+  var js_ : java.lang.String
 }
 
 object Anon_CssJs {
   @scala.inline
-  def apply(css: java.lang.String, `js_`: java.lang.String): Anon_CssJs = {
-    val __obj = js.Dynamic.literal(`js_` = `js_`)
-    __obj.updateDynamic("css")(css)
+  def apply(css: java.lang.String, js_ : java.lang.String): Anon_CssJs = {
+    val __obj = js.Dynamic.literal(css = css)
+    __obj.updateDynamic("js")(js_)
     __obj.asInstanceOf[Anon_CssJs]
   }
 }

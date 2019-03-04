@@ -36,19 +36,8 @@ object ImageryLayer {
     saturation: scala.Double,
     show: scala.Boolean
   ): ImageryLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("brightness")(brightness)
-    __obj.updateDynamic("contrast")(contrast)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("gamma")(gamma)
-    __obj.updateDynamic("hue")(hue)
-    __obj.updateDynamic("imageryProvider")(imageryProvider)
-    __obj.updateDynamic("isBaseLayer")(isBaseLayer)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("rectangle")(rectangle)
-    __obj.updateDynamic("saturation")(saturation)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(alpha = alpha, brightness = brightness, contrast = contrast, destroy = destroy, gamma = gamma, hue = hue, imageryProvider = imageryProvider, isBaseLayer = isBaseLayer, isDestroyed = isDestroyed, rectangle = rectangle, saturation = saturation, show = show)
+  
     __obj.asInstanceOf[ImageryLayer]
   }
 }

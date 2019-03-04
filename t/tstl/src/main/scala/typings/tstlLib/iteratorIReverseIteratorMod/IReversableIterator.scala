@@ -24,12 +24,8 @@ object IReversableIterator {
     reverse: js.Function0[ReverseT],
     value: T
   ): IReversableIterator[T, IteratorT, ReverseT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(equals = equals, next = next, prev = prev, reverse = reverse, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IReversableIterator[T, IteratorT, ReverseT]]
   }
 }

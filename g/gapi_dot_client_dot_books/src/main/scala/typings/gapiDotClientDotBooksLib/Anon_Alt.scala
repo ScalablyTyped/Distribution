@@ -54,9 +54,7 @@ object Anon_Alt {
     startIndex: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shelf")(shelf)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(shelf = shelf, userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

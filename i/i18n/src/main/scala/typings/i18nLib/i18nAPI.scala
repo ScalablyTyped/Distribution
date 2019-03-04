@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait i18nAPI extends js.Object {
   var locale: java.lang.String = js.native
-  def `__`(phraseOrOptions: i18nLib.i18nNs.TranslateOptions, replace: java.lang.String*): java.lang.String = js.native
-  def `__`(phraseOrOptions: i18nLib.i18nNs.TranslateOptions, replacements: i18nLib.i18nNs.Replacements): java.lang.String = js.native
+  def __(phraseOrOptions: i18nLib.i18nNs.TranslateOptions, replace: java.lang.String*): java.lang.String = js.native
+  def __(phraseOrOptions: i18nLib.i18nNs.TranslateOptions, replacements: i18nLib.i18nNs.Replacements): java.lang.String = js.native
   //#region __()
   /**
     * Translate the given phrase using locale configuration
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @returns The translated phrase
     */
-  def `__`(phraseOrOptions: java.lang.String, replace: java.lang.String*): java.lang.String = js.native
+  def __(phraseOrOptions: java.lang.String, replace: java.lang.String*): java.lang.String = js.native
   /**
     * Translate the given phrase using locale configuration
     * @param phraseOrOptions - The phrase to translate or options for translation
     * @param replacements - An object containing replacements
     * @returns The translated phrase
     */
-  def `__`(phraseOrOptions: java.lang.String, replacements: i18nLib.i18nNs.Replacements): java.lang.String = js.native
+  def __(phraseOrOptions: java.lang.String, replacements: i18nLib.i18nNs.Replacements): java.lang.String = js.native
   //#endregion
   //#region __h()
   /**

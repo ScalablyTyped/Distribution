@@ -16,7 +16,7 @@ class Right[L, A] protected () extends Either[L, A] {
   val value: A = js.native
   def alt(fy: Either[L, A]): Either[L, A] = js.native
   def ap[B](fab: Either[L, js.Function1[/* a */ A, B]]): Either[L, B] = js.native
-  def `ap_`[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
+  def ap_[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): Either[V, B] = js.native
   def chain[B](f: js.Function1[/* a */ A, Either[L, B]]): Either[L, B] = js.native
   def extend[B](f: js.Function1[/* ea */ Either[L, A], B]): Either[L, B] = js.native

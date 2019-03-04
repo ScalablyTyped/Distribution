@@ -27,10 +27,8 @@ object ContributionNodeQuery {
     includeProviderDetails: scala.Boolean,
     queryOptions: ContributionQueryOptions
   ): ContributionNodeQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contributionIds")(contributionIds)
-    __obj.updateDynamic("includeProviderDetails")(includeProviderDetails)
-    __obj.updateDynamic("queryOptions")(queryOptions)
+    val __obj = js.Dynamic.literal(contributionIds = contributionIds, includeProviderDetails = includeProviderDetails, queryOptions = queryOptions)
+  
     __obj.asInstanceOf[ContributionNodeQuery]
   }
 }

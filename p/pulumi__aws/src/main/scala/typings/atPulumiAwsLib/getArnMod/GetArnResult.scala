@@ -44,13 +44,8 @@ object GetArnResult {
     resource: java.lang.String,
     service: java.lang.String
   ): GetArnResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(account = account, id = id, partition = partition, region = region, resource = resource, service = service)
+  
     __obj.asInstanceOf[GetArnResult]
   }
 }

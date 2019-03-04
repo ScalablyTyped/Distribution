@@ -32,11 +32,8 @@ object Problem {
     value: js.Any,
     via: js.Array[java.lang.String]
   ): Problem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("predicate")(predicate)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("via")(via)
+    val __obj = js.Dynamic.literal(path = path, predicate = predicate, value = value, via = via)
+  
     __obj.asInstanceOf[Problem]
   }
 }

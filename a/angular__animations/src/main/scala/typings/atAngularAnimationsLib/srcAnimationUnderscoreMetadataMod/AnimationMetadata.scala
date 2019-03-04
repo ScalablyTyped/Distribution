@@ -12,8 +12,8 @@ trait AnimationMetadata extends js.Object {
 object AnimationMetadata {
   @scala.inline
   def apply(`type`: AnimationMetadataType): AnimationMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnimationMetadata]
   }
 }

@@ -25,13 +25,8 @@ object ItemContext {
     low: scala.Double,
     value: scala.Double
   ): ItemContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, color = color, date = date, high = high, low = low, value = value)
+  
     __obj.asInstanceOf[ItemContext]
   }
 }

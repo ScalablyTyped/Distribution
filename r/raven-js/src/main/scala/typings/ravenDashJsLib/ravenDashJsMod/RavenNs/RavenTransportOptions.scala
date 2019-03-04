@@ -22,12 +22,8 @@ object RavenTransportOptions {
     onSuccess: js.Function0[scala.Unit],
     url: java.lang.String
   ): RavenTransportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onSuccess")(onSuccess)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(auth = auth, data = data, onError = onError, onSuccess = onSuccess, url = url)
+  
     __obj.asInstanceOf[RavenTransportOptions]
   }
 }

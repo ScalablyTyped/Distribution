@@ -31,18 +31,8 @@ object RangeSelector {
     y: scala.Double,
     yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom
   ): RangeSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activecolor")(activecolor)
-    __obj.updateDynamic("bgcolor")(bgcolor)
-    __obj.updateDynamic("bordercolor")(bordercolor)
-    __obj.updateDynamic("borderwidth")(borderwidth)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activecolor = activecolor, bgcolor = bgcolor, bordercolor = bordercolor, borderwidth = borderwidth, buttons = buttons, font = font, visible = visible, x = x, xanchor = xanchor.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RangeSelector]
   }
 }

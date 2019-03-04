@@ -24,12 +24,7 @@ object SketchMSExportOptions {
     shouldTrim: scala.Boolean,
     do_objectID: java.lang.String = null
   ): SketchMSExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("exportFormats")(exportFormats)
-    __obj.updateDynamic("includedLayerIds")(includedLayerIds)
-    __obj.updateDynamic("layerOptions")(layerOptions)
-    __obj.updateDynamic("shouldTrim")(shouldTrim)
+    val __obj = js.Dynamic.literal(_class = _class, exportFormats = exportFormats, includedLayerIds = includedLayerIds, layerOptions = layerOptions, shouldTrim = shouldTrim)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSExportOptions]
   }

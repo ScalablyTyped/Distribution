@@ -21,8 +21,7 @@ object ServoPCA9685Option {
     startAt: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): ServoPCA9685Option = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (controller != null) __obj.updateDynamic("controller")(controller)

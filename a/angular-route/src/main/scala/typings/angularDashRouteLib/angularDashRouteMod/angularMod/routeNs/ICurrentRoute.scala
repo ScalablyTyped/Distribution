@@ -35,9 +35,7 @@ object ICurrentRoute {
     template: java.lang.String | angularDashRouteLib.Anon_RouteParams = null,
     templateUrl: java.lang.String | angularDashRouteLib.Anon_RouteParams = null
   ): ICurrentRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locals")(locals)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(locals = locals, params = params)
     if (!js.isUndefined(caseInsensitiveMatch)) __obj.updateDynamic("caseInsensitiveMatch")(caseInsensitiveMatch)
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)

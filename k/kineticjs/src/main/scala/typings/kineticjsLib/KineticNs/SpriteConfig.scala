@@ -44,8 +44,7 @@ object SpriteConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): SpriteConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (animations != null) __obj.updateDynamic("animations")(animations)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)

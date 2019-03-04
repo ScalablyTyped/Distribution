@@ -18,8 +18,8 @@ object PageViewsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Pageviews]
     ]
   ): PageViewsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[PageViewsResource]
   }
 }

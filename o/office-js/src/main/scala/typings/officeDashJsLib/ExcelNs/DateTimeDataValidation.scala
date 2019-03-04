@@ -46,9 +46,7 @@ object DateTimeDataValidation {
     operator: DataValidationOperator | officeDashJsLib.officeDashJsLibStrings.Between | officeDashJsLib.officeDashJsLibStrings.NotBetween | officeDashJsLib.officeDashJsLibStrings.EqualTo | officeDashJsLib.officeDashJsLibStrings.NotEqualTo | officeDashJsLib.officeDashJsLibStrings.GreaterThan | officeDashJsLib.officeDashJsLibStrings.LessThan | officeDashJsLib.officeDashJsLibStrings.GreaterThanOrEqualTo | officeDashJsLib.officeDashJsLibStrings.LessThanOrEqualTo,
     formula2: java.lang.String | stdLib.Date | Range = null
   ): DateTimeDataValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formula1")(formula1.asInstanceOf[js.Any])
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula1 = formula1.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     if (formula2 != null) __obj.updateDynamic("formula2")(formula2.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeDataValidation]
   }

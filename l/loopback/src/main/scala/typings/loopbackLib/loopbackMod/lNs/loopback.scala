@@ -68,13 +68,8 @@ object loopback {
     registry: Registry,
     version: java.lang.String
   ): loopback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faviconFile")(faviconFile)
-    __obj.updateDynamic("isBrowser")(isBrowser)
-    __obj.updateDynamic("isServer")(isServer)
-    __obj.updateDynamic("mime")(mime)
-    __obj.updateDynamic("registry")(registry)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(faviconFile = faviconFile, isBrowser = isBrowser, isServer = isServer, mime = mime, registry = registry, version = version)
+  
     __obj.asInstanceOf[loopback]
   }
 }

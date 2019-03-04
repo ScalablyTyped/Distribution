@@ -106,23 +106,8 @@ object ASPxClientCrosshairOptions {
     valueLineColor: java.lang.String,
     valueSelectionMode: java.lang.String
   ): ASPxClientCrosshairOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argumentLineColor")(argumentLineColor)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("crosshairLabelMode")(crosshairLabelMode)
-    __obj.updateDynamic("groupHeaderPattern")(groupHeaderPattern)
-    __obj.updateDynamic("linesMode")(linesMode)
-    __obj.updateDynamic("showArgumentLine")(showArgumentLine)
-    __obj.updateDynamic("showAxisXLabels")(showAxisXLabels)
-    __obj.updateDynamic("showAxisYLabels")(showAxisYLabels)
-    __obj.updateDynamic("showCrosshairLabels")(showCrosshairLabels)
-    __obj.updateDynamic("showGroupHeaders")(showGroupHeaders)
-    __obj.updateDynamic("showOnlyInFocusedPane")(showOnlyInFocusedPane)
-    __obj.updateDynamic("showOutOfRangePoints")(showOutOfRangePoints)
-    __obj.updateDynamic("showValueLine")(showValueLine)
-    __obj.updateDynamic("snapMode")(snapMode)
-    __obj.updateDynamic("valueLineColor")(valueLineColor)
-    __obj.updateDynamic("valueSelectionMode")(valueSelectionMode)
+    val __obj = js.Dynamic.literal(argumentLineColor = argumentLineColor, chart = chart, crosshairLabelMode = crosshairLabelMode, groupHeaderPattern = groupHeaderPattern, linesMode = linesMode, showArgumentLine = showArgumentLine, showAxisXLabels = showAxisXLabels, showAxisYLabels = showAxisYLabels, showCrosshairLabels = showCrosshairLabels, showGroupHeaders = showGroupHeaders, showOnlyInFocusedPane = showOnlyInFocusedPane, showOutOfRangePoints = showOutOfRangePoints, showValueLine = showValueLine, snapMode = snapMode, valueLineColor = valueLineColor, valueSelectionMode = valueSelectionMode)
+  
     __obj.asInstanceOf[ASPxClientCrosshairOptions]
   }
 }

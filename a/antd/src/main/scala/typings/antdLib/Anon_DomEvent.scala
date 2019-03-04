@@ -13,9 +13,8 @@ trait Anon_DomEvent extends js.Object {
 object Anon_DomEvent {
   @scala.inline
   def apply(domEvent: reactLib.MouseEvent, key: java.lang.String): Anon_DomEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domEvent")(domEvent)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(domEvent = domEvent, key = key)
+  
     __obj.asInstanceOf[Anon_DomEvent]
   }
 }

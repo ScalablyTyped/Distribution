@@ -38,10 +38,7 @@ object Anon_BucketArnBufferIntervalBufferSize {
     s3BackupConfiguration: Anon_BucketArnBufferInterval = null,
     s3BackupMode: java.lang.String = null
   ): Anon_BucketArnBufferIntervalBufferSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketArn")(bucketArn)
-    __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions)
-    __obj.updateDynamic("roleArn")(roleArn)
+    val __obj = js.Dynamic.literal(bucketArn = bucketArn, cloudwatchLoggingOptions = cloudwatchLoggingOptions, roleArn = roleArn)
     if (bufferInterval != null) __obj.updateDynamic("bufferInterval")(bufferInterval.asInstanceOf[js.Any])
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
     if (compressionFormat != null) __obj.updateDynamic("compressionFormat")(compressionFormat)

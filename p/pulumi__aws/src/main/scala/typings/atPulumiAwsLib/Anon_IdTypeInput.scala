@@ -16,8 +16,8 @@ object Anon_IdTypeInput {
     id: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_IdTypeInput = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdTypeInput]
   }
 }

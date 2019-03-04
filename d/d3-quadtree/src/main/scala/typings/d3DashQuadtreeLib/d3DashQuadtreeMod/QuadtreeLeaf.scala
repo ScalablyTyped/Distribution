@@ -23,8 +23,7 @@ trait QuadtreeLeaf[T] extends js.Object {
 object QuadtreeLeaf {
   @scala.inline
   def apply[T](data: T, length: js.UndefOr[scala.Nothing] = js.undefined, next: QuadtreeLeaf[T] = null): QuadtreeLeaf[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
     if (next != null) __obj.updateDynamic("next")(next)
     __obj.asInstanceOf[QuadtreeLeaf[T]]

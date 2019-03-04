@@ -21,8 +21,8 @@ object DataSourceResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
     ]
   ): DataSourceResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analyze")(analyze)
+    val __obj = js.Dynamic.literal(analyze = analyze)
+  
     __obj.asInstanceOf[DataSourceResource]
   }
 }

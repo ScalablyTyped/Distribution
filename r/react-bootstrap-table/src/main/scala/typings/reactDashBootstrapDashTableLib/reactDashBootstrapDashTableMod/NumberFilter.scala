@@ -62,7 +62,8 @@ object NumberFilter {
     withoutEmptyNumberOption: js.UndefOr[scala.Boolean] = js.undefined,
     withoutEmptyOption: js.UndefOr[scala.Boolean] = js.undefined
   ): NumberFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (numberComparators != null) __obj.updateDynamic("numberComparators")(numberComparators)

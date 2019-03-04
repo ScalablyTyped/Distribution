@@ -22,9 +22,7 @@ object Attachment {
     StringDictionary: /** Other properties */
   /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("media")(media)
+    val __obj = js.Dynamic.literal(contentType = contentType, media = media)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Attachment]
   }

@@ -18,7 +18,7 @@ class _SetElementList[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.b
   /**
     * @hidden
     */
-  var `associative_`: js.Any = js.native
+  var associative_ : js.Any = js.native
   def associative(): Source = js.native
 }
 

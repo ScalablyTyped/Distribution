@@ -16,9 +16,8 @@ object Anon_FolderPages {
     Folder: activexDashOutlookLib.OutlookNs.Folder,
     Pages: activexDashOutlookLib.OutlookNs.PropertyPages
   ): Anon_FolderPages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Folder")(Folder)
-    __obj.updateDynamic("Pages")(Pages)
+    val __obj = js.Dynamic.literal(Folder = Folder, Pages = Pages)
+  
     __obj.asInstanceOf[Anon_FolderPages]
   }
 }

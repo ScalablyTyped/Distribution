@@ -29,7 +29,7 @@ class SystemError protected ()
   /**
     * @hidden
     */
-  var `code_`: tstlLib.exceptionErrorCodeMod.ErrorCode = js.native
+  var code_ : tstlLib.exceptionErrorCodeMod.ErrorCode = js.native
   /**
     * Get error code.
     *

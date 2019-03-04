@@ -26,13 +26,8 @@ object Anon_ArtifactSource {
     sourceRepo: scala.Double,
     undefined: scala.Double
   ): Anon_ArtifactSource = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("artifactSource")(artifactSource)
-    __obj.updateDynamic("containerImage")(containerImage)
-    __obj.updateDynamic("pullRequest")(pullRequest)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("sourceRepo")(sourceRepo)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(artifactSource = artifactSource, containerImage = containerImage, pullRequest = pullRequest, schedule = schedule, sourceRepo = sourceRepo, undefined = undefined)
+    __obj.updateDynamic("package")(`package`)
     __obj.asInstanceOf[Anon_ArtifactSource]
   }
 }

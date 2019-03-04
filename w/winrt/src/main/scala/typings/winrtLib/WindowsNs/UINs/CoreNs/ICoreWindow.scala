@@ -76,39 +76,8 @@ object ICoreWindow {
     setPointerCapture: js.Function0[scala.Unit],
     visible: scala.Boolean
   ): ICoreWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("automationHostProvider")(automationHostProvider)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("customProperties")(customProperties)
-    __obj.updateDynamic("dispatcher")(dispatcher)
-    __obj.updateDynamic("flowDirection")(flowDirection)
-    __obj.updateDynamic("getAsyncKeyState")(getAsyncKeyState)
-    __obj.updateDynamic("getKeyState")(getKeyState)
-    __obj.updateDynamic("isInputEnabled")(isInputEnabled)
-    __obj.updateDynamic("onactivated")(onactivated)
-    __obj.updateDynamic("onautomationproviderrequested")(onautomationproviderrequested)
-    __obj.updateDynamic("oncharacterreceived")(oncharacterreceived)
-    __obj.updateDynamic("onclosed")(onclosed)
-    __obj.updateDynamic("oninputenabled")(oninputenabled)
-    __obj.updateDynamic("onkeydown")(onkeydown)
-    __obj.updateDynamic("onkeyup")(onkeyup)
-    __obj.updateDynamic("onpointercapturelost")(onpointercapturelost)
-    __obj.updateDynamic("onpointerentered")(onpointerentered)
-    __obj.updateDynamic("onpointerexited")(onpointerexited)
-    __obj.updateDynamic("onpointermoved")(onpointermoved)
-    __obj.updateDynamic("onpointerpressed")(onpointerpressed)
-    __obj.updateDynamic("onpointerreleased")(onpointerreleased)
-    __obj.updateDynamic("onpointerwheelchanged")(onpointerwheelchanged)
-    __obj.updateDynamic("onsizechanged")(onsizechanged)
-    __obj.updateDynamic("ontouchhittesting")(ontouchhittesting)
-    __obj.updateDynamic("onvisibilitychanged")(onvisibilitychanged)
-    __obj.updateDynamic("pointerCursor")(pointerCursor)
-    __obj.updateDynamic("pointerPosition")(pointerPosition)
-    __obj.updateDynamic("releasePointerCapture")(releasePointerCapture)
-    __obj.updateDynamic("setPointerCapture")(setPointerCapture)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(activate = activate, automationHostProvider = automationHostProvider, bounds = bounds, close = close, customProperties = customProperties, dispatcher = dispatcher, flowDirection = flowDirection, getAsyncKeyState = getAsyncKeyState, getKeyState = getKeyState, isInputEnabled = isInputEnabled, onactivated = onactivated, onautomationproviderrequested = onautomationproviderrequested, oncharacterreceived = oncharacterreceived, onclosed = onclosed, oninputenabled = oninputenabled, onkeydown = onkeydown, onkeyup = onkeyup, onpointercapturelost = onpointercapturelost, onpointerentered = onpointerentered, onpointerexited = onpointerexited, onpointermoved = onpointermoved, onpointerpressed = onpointerpressed, onpointerreleased = onpointerreleased, onpointerwheelchanged = onpointerwheelchanged, onsizechanged = onsizechanged, ontouchhittesting = ontouchhittesting, onvisibilitychanged = onvisibilitychanged, pointerCursor = pointerCursor, pointerPosition = pointerPosition, releasePointerCapture = releasePointerCapture, setPointerCapture = setPointerCapture, visible = visible)
+  
     __obj.asInstanceOf[ICoreWindow]
   }
 }

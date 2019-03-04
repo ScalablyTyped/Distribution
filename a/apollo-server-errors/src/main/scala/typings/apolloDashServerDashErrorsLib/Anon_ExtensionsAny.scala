@@ -12,8 +12,8 @@ trait Anon_ExtensionsAny extends js.Object {
 object Anon_ExtensionsAny {
   @scala.inline
   def apply(extensions: stdLib.Record[java.lang.String, _]): Anon_ExtensionsAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensions")(extensions)
+    val __obj = js.Dynamic.literal(extensions = extensions)
+  
     __obj.asInstanceOf[Anon_ExtensionsAny]
   }
 }

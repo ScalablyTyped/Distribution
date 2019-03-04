@@ -37,25 +37,25 @@ trait Anon_ByteToCharMap extends js.Object {
     * @type {Object}
     * @private
     */
-  var `byteToCharMapWebSafe_`: js.Any = js.native
+  var byteToCharMapWebSafe_ : js.Any = js.native
   /**
     * Maps bytes to characters.
     * @type {Object}
     * @private
     */
-  var `byteToCharMap_`: js.Any = js.native
+  var byteToCharMap_ : js.Any = js.native
   /**
     * Maps websafe characters to bytes.
     * @type {Object}
     * @private
     */
-  var `charToByteMapWebSafe_`: js.Any = js.native
+  var charToByteMapWebSafe_ : js.Any = js.native
   /**
     * Maps characters to bytes.
     * @type {Object}
     * @private
     */
-  var `charToByteMap_`: js.Any = js.native
+  var charToByteMap_ : js.Any = js.native
   /**
     * Base64-decode a string.
     *
@@ -106,6 +106,6 @@ trait Anon_ByteToCharMap extends js.Object {
     * accessing any of the static map variables.
     * @private
     */
-  def `init_`(): scala.Unit = js.native
+  def init_(): scala.Unit = js.native
 }
 

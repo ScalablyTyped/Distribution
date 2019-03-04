@@ -37,16 +37,7 @@ object DroneEnv {
     prBranch: java.lang.String = null,
     tag: java.lang.String = null
   ): DroneEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("isPr")(isPr)
-    __obj.updateDynamic("job")(job)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(branch = branch, build = build, commit = commit, isCi = isCi, isPr = isPr, job = job, name = name, service = service, slug = slug)
     if (pr != null) __obj.updateDynamic("pr")(pr)
     if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
     if (tag != null) __obj.updateDynamic("tag")(tag)

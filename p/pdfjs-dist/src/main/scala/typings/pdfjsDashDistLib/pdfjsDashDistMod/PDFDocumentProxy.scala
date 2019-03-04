@@ -75,19 +75,8 @@ object PDFDocumentProxy {
     isEncrypted: js.Function0[PDFPromise[scala.Boolean]],
     numPages: scala.Double
   ): PDFDocumentProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataLoaded")(dataLoaded)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("embeddedFontsUsed")(embeddedFontsUsed)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getDestinations")(getDestinations)
-    __obj.updateDynamic("getJavaScript")(getJavaScript)
-    __obj.updateDynamic("getMetadata")(getMetadata)
-    __obj.updateDynamic("getOutline")(getOutline)
-    __obj.updateDynamic("getPage")(getPage)
-    __obj.updateDynamic("isEncrypted")(isEncrypted)
-    __obj.updateDynamic("numPages")(numPages)
+    val __obj = js.Dynamic.literal(dataLoaded = dataLoaded, destroy = destroy, embeddedFontsUsed = embeddedFontsUsed, fingerprint = fingerprint, getData = getData, getDestinations = getDestinations, getJavaScript = getJavaScript, getMetadata = getMetadata, getOutline = getOutline, getPage = getPage, isEncrypted = isEncrypted, numPages = numPages)
+  
     __obj.asInstanceOf[PDFDocumentProxy]
   }
 }

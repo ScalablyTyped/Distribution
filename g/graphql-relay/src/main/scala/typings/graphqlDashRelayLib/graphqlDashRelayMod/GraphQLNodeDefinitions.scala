@@ -18,10 +18,8 @@ object GraphQLNodeDefinitions {
     nodeInterface: graphqlLib.graphqlMod.GraphQLInterfaceType,
     nodesField: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): GraphQLNodeDefinitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeField")(nodeField)
-    __obj.updateDynamic("nodeInterface")(nodeInterface)
-    __obj.updateDynamic("nodesField")(nodesField)
+    val __obj = js.Dynamic.literal(nodeField = nodeField, nodeInterface = nodeInterface, nodesField = nodesField)
+  
     __obj.asInstanceOf[GraphQLNodeDefinitions]
   }
 }

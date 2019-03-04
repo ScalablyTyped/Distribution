@@ -51,13 +51,8 @@ object XAutoscroll {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAutoscroll = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoscrollRegion")(AutoscrollRegion)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("autoscroll")(autoscroll)
-    __obj.updateDynamic("getAutoscrollRegion")(getAutoscrollRegion)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AutoscrollRegion = AutoscrollRegion, acquire = acquire, autoscroll = autoscroll, getAutoscrollRegion = getAutoscrollRegion, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAutoscroll]
   }
 }

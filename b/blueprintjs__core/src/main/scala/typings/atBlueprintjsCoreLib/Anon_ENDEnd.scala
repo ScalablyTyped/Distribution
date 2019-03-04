@@ -18,10 +18,8 @@ object Anon_ENDEnd {
     FULL: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.full,
     START: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.start
   ): Anon_ENDEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("END")(END)
-    __obj.updateDynamic("FULL")(FULL)
-    __obj.updateDynamic("START")(START)
+    val __obj = js.Dynamic.literal(END = END, FULL = FULL, START = START)
+  
     __obj.asInstanceOf[Anon_ENDEnd]
   }
 }

@@ -36,10 +36,8 @@ object Program {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): Program = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("directives")(directives)
-    __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, directives = directives, sourceType = sourceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter)

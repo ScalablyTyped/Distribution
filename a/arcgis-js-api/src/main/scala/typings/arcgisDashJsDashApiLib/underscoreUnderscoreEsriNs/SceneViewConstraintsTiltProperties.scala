@@ -32,10 +32,7 @@ object SceneViewConstraintsTiltProperties {
     max: scala.Int | scala.Double = null,
     mode: java.lang.String = null
   ): SceneViewConstraintsTiltProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     __obj.asInstanceOf[SceneViewConstraintsTiltProperties]

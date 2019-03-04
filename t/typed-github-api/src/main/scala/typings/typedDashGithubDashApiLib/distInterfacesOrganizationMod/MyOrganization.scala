@@ -30,16 +30,8 @@ object MyOrganization {
     privateReposOwned: scala.Double,
     privateReposTotal: scala.Double
   ): MyOrganization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("billingEmail")(billingEmail)
-    __obj.updateDynamic("collaborators")(collaborators)
-    __obj.updateDynamic("defaultRepositorySettings")(defaultRepositorySettings)
-    __obj.updateDynamic("diskUsage")(diskUsage)
-    __obj.updateDynamic("membersCanCreateRepositories")(membersCanCreateRepositories)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("privateGists")(privateGists)
-    __obj.updateDynamic("privateReposOwned")(privateReposOwned)
-    __obj.updateDynamic("privateReposTotal")(privateReposTotal)
+    val __obj = js.Dynamic.literal(billingEmail = billingEmail, collaborators = collaborators, defaultRepositorySettings = defaultRepositorySettings, diskUsage = diskUsage, membersCanCreateRepositories = membersCanCreateRepositories, plan = plan, privateGists = privateGists, privateReposOwned = privateReposOwned, privateReposTotal = privateReposTotal)
+  
     __obj.asInstanceOf[MyOrganization]
   }
 }

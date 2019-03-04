@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("dns", "resolve")
 @js.native
 object resolveNs extends js.Object {
-  def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  def `__promisify__`(hostname: java.lang.String, rrtype: java.lang.String): js.Promise[
+  def __promisify__(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify__(hostname: java.lang.String, rrtype: java.lang.String): js.Promise[
     js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord]
   ] = js.native
   @JSName("__promisify__")

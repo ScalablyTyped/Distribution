@@ -28,14 +28,8 @@ object FileInfo {
     size: scala.Double,
     `type`: java.lang.String
   ): FileInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("accessTime")(accessTime)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("modifyTime")(modifyTime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("rights")(rights)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(accessTime = accessTime, group = group, modifyTime = modifyTime, name = name, owner = owner, rights = rights, size = size)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FileInfo]
   }
 }

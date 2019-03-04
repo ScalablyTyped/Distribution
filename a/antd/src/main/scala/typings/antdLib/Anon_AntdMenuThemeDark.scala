@@ -16,8 +16,7 @@ object Anon_AntdMenuThemeDark {
     inlineCollapsed: js.Any,
     antdMenuTheme: antdLib.antdLibStrings.dark | antdLib.antdLibStrings.light = null
   ): Anon_AntdMenuThemeDark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inlineCollapsed")(inlineCollapsed)
+    val __obj = js.Dynamic.literal(inlineCollapsed = inlineCollapsed)
     if (antdMenuTheme != null) __obj.updateDynamic("antdMenuTheme")(antdMenuTheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AntdMenuThemeDark]
   }

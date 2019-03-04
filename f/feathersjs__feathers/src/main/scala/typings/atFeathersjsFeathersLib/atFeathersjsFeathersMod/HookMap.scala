@@ -26,14 +26,8 @@ object HookMap {
     remove: Hook | js.Array[Hook],
     update: Hook | js.Array[Hook]
   ): HookMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    __obj.updateDynamic("find")(find.asInstanceOf[js.Any])
-    __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
-    __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
-    __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[HookMap]
   }
 }

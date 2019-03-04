@@ -38,8 +38,7 @@ object PieChartProps {
     size: scala.Int | scala.Double = null,
     styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] = null
   ): PieChartProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
     if (innerHoleSize != null) __obj.updateDynamic("innerHoleSize")(innerHoleSize.asInstanceOf[js.Any])
     if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels)

@@ -16,9 +16,8 @@ object JasmineAjaxParamParser {
     parse: js.Function1[java.lang.String, js.Any],
     test: js.Function1[stdLib.XMLHttpRequest, scala.Boolean]
   ): JasmineAjaxParamParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(parse = parse, test = test)
+  
     __obj.asInstanceOf[JasmineAjaxParamParser]
   }
 }

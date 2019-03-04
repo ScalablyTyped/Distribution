@@ -13,9 +13,8 @@ trait MUIDataTableTextLabelsViewColumns extends js.Object {
 object MUIDataTableTextLabelsViewColumns {
   @scala.inline
   def apply(title: java.lang.String, titleAria: java.lang.String): MUIDataTableTextLabelsViewColumns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleAria")(titleAria)
+    val __obj = js.Dynamic.literal(title = title, titleAria = titleAria)
+  
     __obj.asInstanceOf[MUIDataTableTextLabelsViewColumns]
   }
 }

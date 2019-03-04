@@ -33,8 +33,7 @@ object ErrorBarProps {
     xAxis: js.Object = null,
     yAxis: js.Object = null
   ): ErrorBarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataPointFormatter != null) __obj.updateDynamic("dataPointFormatter")(dataPointFormatter)
     if (layout != null) __obj.updateDynamic("layout")(layout)

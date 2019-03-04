@@ -104,36 +104,8 @@ object ASPxClientTabControlBase {
     TabClick: ASPxClientEvent[ASPxClientTabControlTabClickEventHandler[ASPxClientTabControlBase]],
     name: java.lang.String
   ): ASPxClientTabControlBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTabChanged")(ActiveTabChanged)
-    __obj.updateDynamic("ActiveTabChanging")(ActiveTabChanging)
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("AdjustSize")(AdjustSize)
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("GetActiveTab")(GetActiveTab)
-    __obj.updateDynamic("GetActiveTabIndex")(GetActiveTabIndex)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetTab")(GetTab)
-    __obj.updateDynamic("GetTabByName")(GetTabByName)
-    __obj.updateDynamic("GetTabCount")(GetTabCount)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetActiveTab")(SetActiveTab)
-    __obj.updateDynamic("SetActiveTabIndex")(SetActiveTabIndex)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("TabClick")(TabClick)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(ActiveTabChanged = ActiveTabChanged, ActiveTabChanging = ActiveTabChanging, AdjustControl = AdjustControl, AdjustSize = AdjustSize, BeginCallback = BeginCallback, CallbackError = CallbackError, EndCallback = EndCallback, GetActiveTab = GetActiveTab, GetActiveTabIndex = GetActiveTabIndex, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetTab = GetTab, GetTabByName = GetTabByName, GetTabCount = GetTabCount, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetActiveTab = SetActiveTab, SetActiveTabIndex = SetActiveTabIndex, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, TabClick = TabClick, name = name)
+  
     __obj.asInstanceOf[ASPxClientTabControlBase]
   }
 }

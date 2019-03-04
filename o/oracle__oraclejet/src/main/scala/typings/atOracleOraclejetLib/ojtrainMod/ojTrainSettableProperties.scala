@@ -18,9 +18,7 @@ object ojTrainSettableProperties {
     steps: js.Array[atOracleOraclejetLib.ojtrainMod.ojTrainNs.Step],
     translations: js.Object = null
   ): ojTrainSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectedStep")(selectedStep)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(selectedStep = selectedStep, steps = steps)
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojTrainSettableProperties]
   }

@@ -53,15 +53,8 @@ object PushNotification {
     getMessage: js.Function0[java.lang.String | js.Object],
     getSound: js.Function0[java.lang.String]
   ): PushNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finish")(finish)
-    __obj.updateDynamic("getAlert")(getAlert)
-    __obj.updateDynamic("getBadgeCount")(getBadgeCount)
-    __obj.updateDynamic("getCategory")(getCategory)
-    __obj.updateDynamic("getContentAvailable")(getContentAvailable)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getMessage")(getMessage)
-    __obj.updateDynamic("getSound")(getSound)
+    val __obj = js.Dynamic.literal(finish = finish, getAlert = getAlert, getBadgeCount = getBadgeCount, getCategory = getCategory, getContentAvailable = getContentAvailable, getData = getData, getMessage = getMessage, getSound = getSound)
+  
     __obj.asInstanceOf[PushNotification]
   }
 }

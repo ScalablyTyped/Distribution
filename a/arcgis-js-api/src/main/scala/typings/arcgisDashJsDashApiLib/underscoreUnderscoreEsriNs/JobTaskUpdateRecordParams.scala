@@ -37,13 +37,8 @@ object JobTaskUpdateRecordParams {
     record: AuxRecordDescription,
     user: java.lang.String
   ): JobTaskUpdateRecordParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("record")(record)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, record = record, user = user)
+  
     __obj.asInstanceOf[JobTaskUpdateRecordParams]
   }
 }

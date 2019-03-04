@@ -47,27 +47,8 @@ object BootstrapComboBoxEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapComboBoxEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("buttonClick")(buttonClick)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("closeUp")(closeUp)
-    __obj.updateDynamic("customHighlighting")(customHighlighting)
-    __obj.updateDynamic("dropDown")(dropDown)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("gotFocus")(gotFocus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("itemFiltering")(itemFiltering)
-    __obj.updateDynamic("keyDown")(keyDown)
-    __obj.updateDynamic("keyPress")(keyPress)
-    __obj.updateDynamic("keyUp")(keyUp)
-    __obj.updateDynamic("lostFocus")(lostFocus)
-    __obj.updateDynamic("queryCloseUp")(queryCloseUp)
-    __obj.updateDynamic("selectedIndexChanged")(selectedIndexChanged)
-    __obj.updateDynamic("textChanged")(textChanged)
-    __obj.updateDynamic("userInput")(userInput)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("valueChanged")(valueChanged)
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, buttonClick = buttonClick, callbackError = callbackError, closeUp = closeUp, customHighlighting = customHighlighting, dropDown = dropDown, endCallback = endCallback, gotFocus = gotFocus, init = init, itemFiltering = itemFiltering, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, queryCloseUp = queryCloseUp, selectedIndexChanged = selectedIndexChanged, textChanged = textChanged, userInput = userInput, validation = validation, valueChanged = valueChanged)
+  
     __obj.asInstanceOf[BootstrapComboBoxEventMap]
   }
 }

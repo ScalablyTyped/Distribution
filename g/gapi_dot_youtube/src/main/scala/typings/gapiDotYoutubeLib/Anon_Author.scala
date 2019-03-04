@@ -37,11 +37,8 @@ object Anon_Author {
     resourceId: Anon_ChannelIdKindPlaylistId,
     `type`: java.lang.String
   ): Anon_Author = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("referenceUrl")(referenceUrl)
-    __obj.updateDynamic("resourceId")(resourceId)
+    val __obj = js.Dynamic.literal(author = author, imageUrl = imageUrl, referenceUrl = referenceUrl, resourceId = resourceId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Author]
   }
 }

@@ -26,10 +26,8 @@ object NormalizedMessageJson {
     file: java.lang.String = null,
     line: scala.Int | scala.Double = null
   ): NormalizedMessageJson = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], content = content, severity = severity)
+    __obj.updateDynamic("type")(`type`)
     if (character != null) __obj.updateDynamic("character")(character.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])

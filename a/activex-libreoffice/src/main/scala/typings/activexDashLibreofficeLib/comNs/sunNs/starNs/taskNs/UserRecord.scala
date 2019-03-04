@@ -13,9 +13,8 @@ trait UserRecord extends js.Object {
 object UserRecord {
   @scala.inline
   def apply(Passwords: activexDashInteropLib.SafeArray[java.lang.String], UserName: java.lang.String): UserRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Passwords")(Passwords)
-    __obj.updateDynamic("UserName")(UserName)
+    val __obj = js.Dynamic.literal(Passwords = Passwords, UserName = UserName)
+  
     __obj.asInstanceOf[UserRecord]
   }
 }

@@ -28,8 +28,7 @@ object CellOptions {
     truncate: java.lang.String = null,
     vAlign: VerticalAlignment = null
   ): CellOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (chars != null) __obj.updateDynamic("chars")(chars)
     if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign)

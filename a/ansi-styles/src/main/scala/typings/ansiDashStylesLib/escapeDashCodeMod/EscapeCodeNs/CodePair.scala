@@ -13,9 +13,8 @@ trait CodePair extends js.Object {
 object CodePair {
   @scala.inline
   def apply(close: java.lang.String, open: java.lang.String): CodePair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(close = close, open = open)
+  
     __obj.asInstanceOf[CodePair]
   }
 }

@@ -53,14 +53,8 @@ object Node {
     summary: js.Function1[/* repeated */ js.Any, java.lang.String],
     touch: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): Node[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkIntegrity")(checkIntegrity)
-    __obj.updateDynamic("getNext")(getNext)
-    __obj.updateDynamic("getPrevious")(getPrevious)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("touch")(touch)
+    val __obj = js.Dynamic.literal(checkIntegrity = checkIntegrity, getNext = getNext, getPrevious = getPrevious, log = log, reduce = reduce, summary = summary, touch = touch)
+  
     __obj.asInstanceOf[Node[T]]
   }
 }

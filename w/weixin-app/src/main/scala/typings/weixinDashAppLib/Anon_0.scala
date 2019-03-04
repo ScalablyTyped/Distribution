@@ -14,8 +14,8 @@ object Anon_0 {
   def apply(
     direction: weixinDashAppLib.weixinDashAppLibNumbers.`0` | weixinDashAppLib.weixinDashAppLibNumbers.`90` | weixinDashAppLib.weixinDashAppLibNumbers.`-90`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

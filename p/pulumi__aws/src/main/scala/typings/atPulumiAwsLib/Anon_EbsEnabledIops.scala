@@ -20,8 +20,7 @@ object Anon_EbsEnabledIops {
     volumeSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     volumeType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_EbsEnabledIops = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ebsEnabled")(ebsEnabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ebsEnabled = ebsEnabled.asInstanceOf[js.Any])
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (volumeSize != null) __obj.updateDynamic("volumeSize")(volumeSize.asInstanceOf[js.Any])
     if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType.asInstanceOf[js.Any])

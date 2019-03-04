@@ -36,9 +36,7 @@ object ScrollspyProps {
     scrolledPastClassName: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ScrollspyProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentClassName")(currentClassName)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(currentClassName = currentClassName, items = items)
     if (componentTag != null) __obj.updateDynamic("componentTag")(componentTag)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)

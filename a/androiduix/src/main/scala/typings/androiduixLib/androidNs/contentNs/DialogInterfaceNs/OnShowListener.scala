@@ -12,8 +12,8 @@ trait OnShowListener extends js.Object {
 object OnShowListener {
   @scala.inline
   def apply(onShow: js.Function1[androiduixLib.androidNs.contentNs.DialogInterface, scala.Unit]): OnShowListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onShow")(onShow)
+    val __obj = js.Dynamic.literal(onShow = onShow)
+  
     __obj.asInstanceOf[OnShowListener]
   }
 }

@@ -12,8 +12,8 @@ trait ITypeaheadProvider extends js.Object {
 object ITypeaheadProvider {
   @scala.inline
   def apply(defaults: ITypeaheadOptions): ITypeaheadProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[ITypeaheadProvider]
   }
 }

@@ -25,13 +25,8 @@ object RowAxisLabelRendererContext {
     parentElement: stdLib.Element,
     rowData: Row[K2]
   ): RowAxisLabelRendererContext[K2, D2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("itemData")(itemData)
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("maxWidth")(maxWidth)
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("rowData")(rowData)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, itemData = itemData, maxHeight = maxHeight, maxWidth = maxWidth, parentElement = parentElement, rowData = rowData)
+  
     __obj.asInstanceOf[RowAxisLabelRendererContext[K2, D2]]
   }
 }

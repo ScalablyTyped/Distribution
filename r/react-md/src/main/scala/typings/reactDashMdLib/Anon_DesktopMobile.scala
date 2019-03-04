@@ -20,10 +20,8 @@ object Anon_DesktopMobile {
     tablet: scala.Boolean,
     `type`: reactDashMdLib.libDrawersDrawerMod.DrawerType
   ): Anon_DesktopMobile = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("desktop")(desktop)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("tablet")(tablet)
+    val __obj = js.Dynamic.literal(desktop = desktop, mobile = mobile, tablet = tablet)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_DesktopMobile]
   }
 }

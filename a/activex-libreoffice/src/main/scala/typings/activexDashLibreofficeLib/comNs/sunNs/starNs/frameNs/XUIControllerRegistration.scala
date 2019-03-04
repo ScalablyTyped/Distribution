@@ -51,13 +51,8 @@ object XUIControllerRegistration {
     registerController: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XUIControllerRegistration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("deregisterController")(deregisterController)
-    __obj.updateDynamic("hasController")(hasController)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerController")(registerController)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, deregisterController = deregisterController, hasController = hasController, queryInterface = queryInterface, registerController = registerController, release = release)
+  
     __obj.asInstanceOf[XUIControllerRegistration]
   }
 }

@@ -18,10 +18,8 @@ object IMongoData {
     startedData: diagnosticDashChannelDashPublishersLib.Anon_Command,
     succeeded: scala.Boolean
   ): IMongoData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("startedData")(startedData)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(event = event, startedData = startedData, succeeded = succeeded)
+  
     __obj.asInstanceOf[IMongoData]
   }
 }

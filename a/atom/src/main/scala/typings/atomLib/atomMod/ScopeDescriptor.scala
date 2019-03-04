@@ -13,8 +13,8 @@ trait ScopeDescriptor extends js.Object {
 object ScopeDescriptor {
   @scala.inline
   def apply(getScopesArray: js.Function0[js.Array[java.lang.String]]): ScopeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getScopesArray")(getScopesArray)
+    val __obj = js.Dynamic.literal(getScopesArray = getScopesArray)
+  
     __obj.asInstanceOf[ScopeDescriptor]
   }
 }

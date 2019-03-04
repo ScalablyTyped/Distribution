@@ -34,13 +34,8 @@ object XModule {
     release: js.Function0[scala.Unit],
     setIdentifier: js.Function1[java.lang.String, scala.Unit]
   ): XModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIdentifier")(getIdentifier)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setIdentifier")(setIdentifier)
+    val __obj = js.Dynamic.literal(Identifier = Identifier, acquire = acquire, getIdentifier = getIdentifier, queryInterface = queryInterface, release = release, setIdentifier = setIdentifier)
+  
     __obj.asInstanceOf[XModule]
   }
 }

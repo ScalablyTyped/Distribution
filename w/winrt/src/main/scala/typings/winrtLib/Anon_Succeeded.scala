@@ -13,9 +13,8 @@ trait Anon_Succeeded extends js.Object {
 object Anon_Succeeded {
   @scala.inline
   def apply(succeeded: scala.Boolean, value: winrtLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency): Anon_Succeeded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(succeeded = succeeded, value = value)
+  
     __obj.asInstanceOf[Anon_Succeeded]
   }
 }

@@ -13,9 +13,8 @@ trait CryptoKX extends js.Object {
 object CryptoKX {
   @scala.inline
   def apply(sharedRx: stdLib.Uint8Array, sharedTx: stdLib.Uint8Array): CryptoKX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sharedRx")(sharedRx)
-    __obj.updateDynamic("sharedTx")(sharedTx)
+    val __obj = js.Dynamic.literal(sharedRx = sharedRx, sharedTx = sharedTx)
+  
     __obj.asInstanceOf[CryptoKX]
   }
 }

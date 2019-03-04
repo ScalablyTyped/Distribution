@@ -48,11 +48,7 @@ object Anon_AccountIdAltExperimentId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltExperimentId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("experimentId")(experimentId)
-    __obj.updateDynamic("profileId")(profileId)
-    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    val __obj = js.Dynamic.literal(accountId = accountId, experimentId = experimentId, profileId = profileId, webPropertyId = webPropertyId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

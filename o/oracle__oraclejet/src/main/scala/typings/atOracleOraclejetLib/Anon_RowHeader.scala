@@ -12,8 +12,8 @@ trait Anon_RowHeader extends js.Object {
 object Anon_RowHeader {
   @scala.inline
   def apply(rowHeader: java.lang.String): Anon_RowHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowHeader")(rowHeader)
+    val __obj = js.Dynamic.literal(rowHeader = rowHeader)
+  
     __obj.asInstanceOf[Anon_RowHeader]
   }
 }

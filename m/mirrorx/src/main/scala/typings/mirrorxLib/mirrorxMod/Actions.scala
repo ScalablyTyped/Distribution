@@ -16,8 +16,7 @@ object Actions {
     routing: routeActions,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Actions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routing")(routing)
+    val __obj = js.Dynamic.literal(routing = routing)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Actions]
   }

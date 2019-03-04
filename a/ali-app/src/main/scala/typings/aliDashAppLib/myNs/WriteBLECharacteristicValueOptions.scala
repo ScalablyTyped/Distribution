@@ -36,11 +36,7 @@ object WriteBLECharacteristicValueOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): WriteBLECharacteristicValueOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("characteristicId")(characteristicId)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("serviceId")(serviceId)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, value = value)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

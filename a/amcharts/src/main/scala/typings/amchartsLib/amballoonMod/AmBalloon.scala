@@ -119,26 +119,8 @@ object AmBalloon {
     textShadowColor: java.lang.String,
     verticalPadding: scala.Double
   ): AmBalloon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustBorderColor")(adjustBorderColor)
-    __obj.updateDynamic("borderAlpha")(borderAlpha)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderThickness")(borderThickness)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("cornerRadius")(cornerRadius)
-    __obj.updateDynamic("fillAlpha")(fillAlpha)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("horizontalPadding")(horizontalPadding)
-    __obj.updateDynamic("pointerWidth")(pointerWidth)
-    __obj.updateDynamic("setBounds")(setBounds)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("showBullet")(showBullet)
-    __obj.updateDynamic("textAlign")(textAlign)
-    __obj.updateDynamic("textShadowColor")(textShadowColor)
-    __obj.updateDynamic("verticalPadding")(verticalPadding)
+    val __obj = js.Dynamic.literal(adjustBorderColor = adjustBorderColor, borderAlpha = borderAlpha, borderColor = borderColor, borderThickness = borderThickness, color = color, cornerRadius = cornerRadius, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, hide = hide, horizontalPadding = horizontalPadding, pointerWidth = pointerWidth, setBounds = setBounds, setPosition = setPosition, show = show, showBullet = showBullet, textAlign = textAlign, textShadowColor = textShadowColor, verticalPadding = verticalPadding)
+  
     __obj.asInstanceOf[AmBalloon]
   }
 }

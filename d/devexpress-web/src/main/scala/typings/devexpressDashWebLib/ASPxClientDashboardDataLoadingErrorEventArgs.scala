@@ -37,11 +37,8 @@ object ASPxClientDashboardDataLoadingErrorEventArgs {
     SetError: js.Function1[java.lang.String, scala.Unit],
     ShowErrorMessage: js.Function1[scala.Boolean, scala.Unit]
   ): ASPxClientDashboardDataLoadingErrorEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetError")(GetError)
-    __obj.updateDynamic("IsErrorMessageShown")(IsErrorMessageShown)
-    __obj.updateDynamic("SetError")(SetError)
-    __obj.updateDynamic("ShowErrorMessage")(ShowErrorMessage)
+    val __obj = js.Dynamic.literal(GetError = GetError, IsErrorMessageShown = IsErrorMessageShown, SetError = SetError, ShowErrorMessage = ShowErrorMessage)
+  
     __obj.asInstanceOf[ASPxClientDashboardDataLoadingErrorEventArgs]
   }
 }

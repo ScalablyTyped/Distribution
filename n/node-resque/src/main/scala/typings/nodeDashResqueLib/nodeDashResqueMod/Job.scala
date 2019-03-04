@@ -18,8 +18,7 @@ object Job {
     pluginOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     plugins: js.Array[java.lang.String] = null
   ): Job[TResult] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("perform")(perform)
+    val __obj = js.Dynamic.literal(perform = perform)
     if (pluginOptions != null) __obj.updateDynamic("pluginOptions")(pluginOptions)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     __obj.asInstanceOf[Job[TResult]]

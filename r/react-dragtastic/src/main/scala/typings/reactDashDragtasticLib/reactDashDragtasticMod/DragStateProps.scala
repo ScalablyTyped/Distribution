@@ -20,8 +20,7 @@ object DragStateProps {
     children: js.Function1[State, reactLib.reactMod.ReactNs.ReactNode],
     subscribeTo: js.Array[java.lang.String] = null
   ): DragStateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
     __obj.asInstanceOf[DragStateProps]
   }

@@ -18,8 +18,8 @@ object ThumbnailsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ThumbnailSetResponse]
     ]
   ): ThumbnailsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(set = set)
+  
     __obj.asInstanceOf[ThumbnailsResource]
   }
 }

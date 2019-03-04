@@ -38,20 +38,8 @@ object SnapshotSummary {
     unmatched: scala.Double,
     updated: scala.Double
   ): SnapshotSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("didUpdate")(didUpdate)
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("filesAdded")(filesAdded)
-    __obj.updateDynamic("filesRemoved")(filesRemoved)
-    __obj.updateDynamic("filesUnmatched")(filesUnmatched)
-    __obj.updateDynamic("filesUpdated")(filesUpdated)
-    __obj.updateDynamic("matched")(matched)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("unchecked")(unchecked)
-    __obj.updateDynamic("uncheckedKeysByFile")(uncheckedKeysByFile)
-    __obj.updateDynamic("unmatched")(unmatched)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(added = added, didUpdate = didUpdate, failure = failure, filesAdded = filesAdded, filesRemoved = filesRemoved, filesUnmatched = filesUnmatched, filesUpdated = filesUpdated, matched = matched, total = total, unchecked = unchecked, uncheckedKeysByFile = uncheckedKeysByFile, unmatched = unmatched, updated = updated)
+  
     __obj.asInstanceOf[SnapshotSummary]
   }
 }

@@ -19,8 +19,8 @@ trait ASPxClientDockManagerEventArgs extends ASPxClientEventArgs {
 object ASPxClientDockManagerEventArgs {
   @scala.inline
   def apply(panel: ASPxClientDockPanel): ASPxClientDockManagerEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("panel")(panel)
+    val __obj = js.Dynamic.literal(panel = panel)
+  
     __obj.asInstanceOf[ASPxClientDockManagerEventArgs]
   }
 }

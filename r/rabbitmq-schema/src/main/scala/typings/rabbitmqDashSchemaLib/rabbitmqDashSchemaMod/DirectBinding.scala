@@ -18,10 +18,7 @@ object DirectBinding {
     source: Exchange,
     args: js.Object = null
   ): DirectBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("routingPattern")(routingPattern)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], routingPattern = routingPattern, source = source)
     if (args != null) __obj.updateDynamic("args")(args)
     __obj.asInstanceOf[DirectBinding]
   }

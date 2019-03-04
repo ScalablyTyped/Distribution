@@ -14,10 +14,8 @@ trait GitCommit extends js.Object {
 object GitCommit {
   @scala.inline
   def apply(author: GitAuthor, message: java.lang.String, tree: java.lang.String): GitCommit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("tree")(tree)
+    val __obj = js.Dynamic.literal(author = author, message = message, tree = tree)
+  
     __obj.asInstanceOf[GitCommit]
   }
 }

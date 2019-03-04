@@ -32,15 +32,8 @@ object XTopWindow {
     toBack: js.Function0[scala.Unit],
     toFront: js.Function0[scala.Unit]
   ): XTopWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addTopWindowListener")(addTopWindowListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTopWindowListener")(removeTopWindowListener)
-    __obj.updateDynamic("setMenuBar")(setMenuBar)
-    __obj.updateDynamic("toBack")(toBack)
-    __obj.updateDynamic("toFront")(toFront)
+    val __obj = js.Dynamic.literal(acquire = acquire, addTopWindowListener = addTopWindowListener, queryInterface = queryInterface, release = release, removeTopWindowListener = removeTopWindowListener, setMenuBar = setMenuBar, toBack = toBack, toFront = toFront)
+  
     __obj.asInstanceOf[XTopWindow]
   }
 }

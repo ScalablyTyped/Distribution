@@ -44,12 +44,8 @@ object XContainer {
     release: js.Function0[scala.Unit],
     removeContainerListener: js.Function1[XContainerListener, scala.Unit]
   ): XContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addContainerListener = addContainerListener, queryInterface = queryInterface, release = release, removeContainerListener = removeContainerListener)
+  
     __obj.asInstanceOf[XContainer]
   }
 }

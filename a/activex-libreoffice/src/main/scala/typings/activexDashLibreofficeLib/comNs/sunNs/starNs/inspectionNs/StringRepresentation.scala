@@ -27,11 +27,8 @@ object StringRepresentation {
       scala.Unit
     ]
   ): StringRepresentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertToControlValue")(convertToControlValue)
-    __obj.updateDynamic("convertToPropertyValue")(convertToPropertyValue)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createConstant")(createConstant)
+    val __obj = js.Dynamic.literal(convertToControlValue = convertToControlValue, convertToPropertyValue = convertToPropertyValue, create = create, createConstant = createConstant)
+  
     __obj.asInstanceOf[StringRepresentation]
   }
 }

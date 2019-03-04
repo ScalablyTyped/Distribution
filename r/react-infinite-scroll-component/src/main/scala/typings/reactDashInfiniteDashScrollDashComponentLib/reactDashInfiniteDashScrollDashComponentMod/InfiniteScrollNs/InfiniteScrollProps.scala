@@ -107,11 +107,7 @@ object InfiniteScrollProps {
     scrollableTarget: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
     style: js.Any = null
   ): InfiniteScrollProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataLength")(dataLength)
-    __obj.updateDynamic("hasMore")(hasMore)
-    __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(dataLength = dataLength, hasMore = hasMore, loader = loader.asInstanceOf[js.Any], next = next)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (endMessage != null) __obj.updateDynamic("endMessage")(endMessage.asInstanceOf[js.Any])
     if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)

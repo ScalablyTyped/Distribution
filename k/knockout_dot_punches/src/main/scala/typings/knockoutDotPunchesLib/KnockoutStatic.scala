@@ -13,9 +13,8 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(filters: KnockoutPunchesFilters, punches: KnockoutPunchesStatic): KnockoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("punches")(punches)
+    val __obj = js.Dynamic.literal(filters = filters, punches = punches)
+  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

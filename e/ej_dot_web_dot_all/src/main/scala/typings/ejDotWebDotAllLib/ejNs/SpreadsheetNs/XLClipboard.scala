@@ -23,10 +23,8 @@ trait XLClipboard extends js.Object {
 object XLClipboard {
   @scala.inline
   def apply(copy: js.Function0[scala.Unit], cut: js.Function0[scala.Unit], paste: js.Function0[scala.Unit]): XLClipboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("cut")(cut)
-    __obj.updateDynamic("paste")(paste)
+    val __obj = js.Dynamic.literal(copy = copy, cut = cut, paste = paste)
+  
     __obj.asInstanceOf[XLClipboard]
   }
 }

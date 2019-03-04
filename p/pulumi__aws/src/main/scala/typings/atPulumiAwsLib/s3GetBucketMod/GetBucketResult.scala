@@ -47,14 +47,8 @@ object GetBucketResult {
     websiteDomain: java.lang.String,
     websiteEndpoint: java.lang.String
   ): GetBucketResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("bucketDomainName")(bucketDomainName)
-    __obj.updateDynamic("hostedZoneId")(hostedZoneId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("websiteDomain")(websiteDomain)
-    __obj.updateDynamic("websiteEndpoint")(websiteEndpoint)
+    val __obj = js.Dynamic.literal(arn = arn, bucketDomainName = bucketDomainName, hostedZoneId = hostedZoneId, id = id, region = region, websiteDomain = websiteDomain, websiteEndpoint = websiteEndpoint)
+  
     __obj.asInstanceOf[GetBucketResult]
   }
 }

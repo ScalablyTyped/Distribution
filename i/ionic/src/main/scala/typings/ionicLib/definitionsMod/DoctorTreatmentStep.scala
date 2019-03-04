@@ -12,9 +12,8 @@ trait DoctorTreatmentStep extends PatientTreatmentStep {
 object DoctorTreatmentStep {
   @scala.inline
   def apply(message: java.lang.String, treat: js.Function0[js.Promise[scala.Unit]]): DoctorTreatmentStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("treat")(treat)
+    val __obj = js.Dynamic.literal(message = message, treat = treat)
+  
     __obj.asInstanceOf[DoctorTreatmentStep]
   }
 }

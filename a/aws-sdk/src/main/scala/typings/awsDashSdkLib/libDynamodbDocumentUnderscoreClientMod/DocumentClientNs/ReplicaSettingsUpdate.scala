@@ -32,8 +32,7 @@ object ReplicaSettingsUpdate {
     ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
     ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   ): ReplicaSettingsUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RegionName")(RegionName)
+    val __obj = js.Dynamic.literal(RegionName = RegionName)
     if (ReplicaGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettingsUpdate")(ReplicaGlobalSecondaryIndexSettingsUpdate)
     if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate)
     if (!js.isUndefined(ReplicaProvisionedReadCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits)

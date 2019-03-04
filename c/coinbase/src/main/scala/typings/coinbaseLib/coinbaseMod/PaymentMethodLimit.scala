@@ -14,10 +14,8 @@ trait PaymentMethodLimit extends js.Object {
 object PaymentMethodLimit {
   @scala.inline
   def apply(period_in_days: scala.Double, remaining: MoneyHash, total: MoneyHash): PaymentMethodLimit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("period_in_days")(period_in_days)
-    __obj.updateDynamic("remaining")(remaining)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(period_in_days = period_in_days, remaining = remaining, total = total)
+  
     __obj.asInstanceOf[PaymentMethodLimit]
   }
 }

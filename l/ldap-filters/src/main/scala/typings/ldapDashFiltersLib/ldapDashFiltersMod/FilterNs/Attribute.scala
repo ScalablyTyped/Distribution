@@ -36,19 +36,8 @@ object Attribute {
     raw: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter],
     startsWith: js.Function1[java.lang.String, ldapDashFiltersLib.ldapDashFiltersMod.Filter]
   ): Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approx")(approx)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("endsWith")(endsWith)
-    __obj.updateDynamic("equalTo")(equalTo)
-    __obj.updateDynamic("escape")(escape)
-    __obj.updateDynamic("escapeChars")(escapeChars)
-    __obj.updateDynamic("gte")(gte)
-    __obj.updateDynamic("lte")(lte)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("present")(present)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("startsWith")(startsWith)
+    val __obj = js.Dynamic.literal(approx = approx, contains = contains, endsWith = endsWith, equalTo = equalTo, escape = escape, escapeChars = escapeChars, gte = gte, lte = lte, name = name, present = present, raw = raw, startsWith = startsWith)
+  
     __obj.asInstanceOf[Attribute]
   }
 }

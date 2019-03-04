@@ -15,11 +15,8 @@ trait TransferObject extends js.Object {
 object TransferObject {
   @scala.inline
   def apply(address: java.lang.String, message: java.lang.String, tag: java.lang.String, value: scala.Double): TransferObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(address = address, message = message, tag = tag, value = value)
+  
     __obj.asInstanceOf[TransferObject]
   }
 }

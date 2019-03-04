@@ -15,11 +15,8 @@ trait ArtifactProvider extends js.Object {
 object ArtifactProvider {
   @scala.inline
   def apply(id: scala.Double, name: java.lang.String, sourceUri: java.lang.String, version: java.lang.String): ArtifactProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sourceUri")(sourceUri)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(id = id, name = name, sourceUri = sourceUri, version = version)
+  
     __obj.asInstanceOf[ArtifactProvider]
   }
 }

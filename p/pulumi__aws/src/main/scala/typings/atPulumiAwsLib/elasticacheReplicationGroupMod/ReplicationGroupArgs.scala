@@ -163,8 +163,7 @@ object ReplicationGroupArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     transitEncryptionEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): ReplicationGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replicationGroupDescription")(replicationGroupDescription.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(replicationGroupDescription = replicationGroupDescription.asInstanceOf[js.Any])
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
     if (atRestEncryptionEnabled != null) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.asInstanceOf[js.Any])
     if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])

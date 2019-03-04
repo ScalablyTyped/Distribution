@@ -24,9 +24,8 @@ object SortDirectionStatic {
     ASC: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.ASC,
     DESC: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.DESC
   ): SortDirectionStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ASC")(ASC)
-    __obj.updateDynamic("DESC")(DESC)
+    val __obj = js.Dynamic.literal(ASC = ASC, DESC = DESC)
+  
     __obj.asInstanceOf[SortDirectionStatic]
   }
 }

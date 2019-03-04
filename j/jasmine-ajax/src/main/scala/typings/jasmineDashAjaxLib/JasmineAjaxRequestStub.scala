@@ -20,9 +20,7 @@ object JasmineAjaxRequestStub {
     data: java.lang.String = null,
     method: java.lang.String = null
   ): JasmineAjaxRequestStub = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("andReturn")(andReturn)
-    __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(andReturn = andReturn, matches = matches)
     if (data != null) __obj.updateDynamic("data")(data)
     if (method != null) __obj.updateDynamic("method")(method)
     __obj.asInstanceOf[JasmineAjaxRequestStub]

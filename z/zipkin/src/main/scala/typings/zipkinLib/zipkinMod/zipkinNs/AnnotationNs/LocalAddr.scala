@@ -18,10 +18,8 @@ object LocalAddr {
     host: zipkinLib.zipkinMod.zipkinNs.InetAddress,
     port: scala.Double
   ): LocalAddr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(annotationType = annotationType, host = host, port = port)
+  
     __obj.asInstanceOf[LocalAddr]
   }
 }

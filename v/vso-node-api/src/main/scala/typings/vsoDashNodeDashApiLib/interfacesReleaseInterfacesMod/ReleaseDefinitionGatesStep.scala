@@ -18,10 +18,8 @@ object ReleaseDefinitionGatesStep {
     gatesOptions: ReleaseDefinitionGatesOptions,
     id: scala.Double
   ): ReleaseDefinitionGatesStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gates")(gates)
-    __obj.updateDynamic("gatesOptions")(gatesOptions)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(gates = gates, gatesOptions = gatesOptions, id = id)
+  
     __obj.asInstanceOf[ReleaseDefinitionGatesStep]
   }
 }

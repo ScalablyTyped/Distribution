@@ -32,17 +32,8 @@ object Anon_Gas {
     v: java.lang.String,
     value: java.lang.String
   ): Anon_Gas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gas")(gas)
-    __obj.updateDynamic("gasPrice")(gasPrice)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("v")(v)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(gas = gas, gasPrice = gasPrice, hash = hash, input = input, nonce = nonce, r = r, s = s, to = to, v = v, value = value)
+  
     __obj.asInstanceOf[Anon_Gas]
   }
 }

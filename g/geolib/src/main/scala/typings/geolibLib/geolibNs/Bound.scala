@@ -24,11 +24,7 @@ object Bound {
     maxElev: scala.Int | scala.Double = null,
     minElev: scala.Int | scala.Double = null
   ): Bound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxLat")(maxLat)
-    __obj.updateDynamic("maxLng")(maxLng)
-    __obj.updateDynamic("minLat")(minLat)
-    __obj.updateDynamic("minLng")(minLng)
+    val __obj = js.Dynamic.literal(maxLat = maxLat, maxLng = maxLng, minLat = minLat, minLng = minLng)
     if (maxElev != null) __obj.updateDynamic("maxElev")(maxElev.asInstanceOf[js.Any])
     if (minElev != null) __obj.updateDynamic("minElev")(minElev.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bound]

@@ -46,8 +46,7 @@ object IQueryAPIOptions {
     spatialFilter: ISpatialFilterOptions | IFindNearRouteOptions = null,
     top: scala.Int | scala.Double = null
   ): IQueryAPIOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryUrl")(queryUrl)
+    val __obj = js.Dynamic.literal(queryUrl = queryUrl)
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (!js.isUndefined(inlineCount)) __obj.updateDynamic("inlineCount")(inlineCount)
     if (!js.isUndefined(isStaging)) __obj.updateDynamic("isStaging")(isStaging)

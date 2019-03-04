@@ -38,13 +38,8 @@ object LocationSchemeForPolygon {
     outline: LocationSchemeForPolygonOutline,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): LocationSchemeForPolygon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[LocationSchemeForPolygon]
   }
 }

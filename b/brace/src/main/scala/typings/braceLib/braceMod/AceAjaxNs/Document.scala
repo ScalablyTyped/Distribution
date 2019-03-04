@@ -180,33 +180,8 @@ object Document {
     setNewLineMode: js.Function1[java.lang.String, scala.Unit],
     setValue: js.Function1[java.lang.String, scala.Unit]
   ): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyDeltas")(applyDeltas)
-    __obj.updateDynamic("createAnchor")(createAnchor)
-    __obj.updateDynamic("getAllLines")(getAllLines)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getLine")(getLine)
-    __obj.updateDynamic("getLines")(getLines)
-    __obj.updateDynamic("getNewLineCharacter")(getNewLineCharacter)
-    __obj.updateDynamic("getNewLineMode")(getNewLineMode)
-    __obj.updateDynamic("getTextRange")(getTextRange)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("indexToPosition")(indexToPosition)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("insertInLine")(insertInLine)
-    __obj.updateDynamic("insertLines")(insertLines)
-    __obj.updateDynamic("insertNewLine")(insertNewLine)
-    __obj.updateDynamic("isNewLine")(isNewLine)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("positionToIndex")(positionToIndex)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeInLine")(removeInLine)
-    __obj.updateDynamic("removeLines")(removeLines)
-    __obj.updateDynamic("removeNewLine")(removeNewLine)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("revertDeltas")(revertDeltas)
-    __obj.updateDynamic("setNewLineMode")(setNewLineMode)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(applyDeltas = applyDeltas, createAnchor = createAnchor, getAllLines = getAllLines, getLength = getLength, getLine = getLine, getLines = getLines, getNewLineCharacter = getNewLineCharacter, getNewLineMode = getNewLineMode, getTextRange = getTextRange, getValue = getValue, indexToPosition = indexToPosition, insert = insert, insertInLine = insertInLine, insertLines = insertLines, insertNewLine = insertNewLine, isNewLine = isNewLine, on = on, positionToIndex = positionToIndex, remove = remove, removeInLine = removeInLine, removeLines = removeLines, removeNewLine = removeNewLine, replace = replace, revertDeltas = revertDeltas, setNewLineMode = setNewLineMode, setValue = setValue)
+  
     __obj.asInstanceOf[Document]
   }
 }

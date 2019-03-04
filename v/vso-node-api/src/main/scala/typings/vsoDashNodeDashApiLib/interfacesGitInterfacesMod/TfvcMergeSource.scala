@@ -32,11 +32,8 @@ object TfvcMergeSource {
     versionFrom: scala.Double,
     versionTo: scala.Double
   ): TfvcMergeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRename")(isRename)
-    __obj.updateDynamic("serverItem")(serverItem)
-    __obj.updateDynamic("versionFrom")(versionFrom)
-    __obj.updateDynamic("versionTo")(versionTo)
+    val __obj = js.Dynamic.literal(isRename = isRename, serverItem = serverItem, versionFrom = versionFrom, versionTo = versionTo)
+  
     __obj.asInstanceOf[TfvcMergeSource]
   }
 }

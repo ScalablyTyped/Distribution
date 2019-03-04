@@ -48,8 +48,7 @@ object CreateTransmission {
     return_path: java.lang.String = null,
     substitution_data: js.Any = null
   ): CreateTransmission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (bcc != null) __obj.updateDynamic("bcc")(bcc)
     if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id)
     if (cc != null) __obj.updateDynamic("cc")(cc)

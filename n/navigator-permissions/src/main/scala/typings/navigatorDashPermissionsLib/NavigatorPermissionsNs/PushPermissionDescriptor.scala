@@ -21,8 +21,7 @@ object PushPermissionDescriptor {
     name: navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.push,
     userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): PushPermissionDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly)
     __obj.asInstanceOf[PushPermissionDescriptor]
   }

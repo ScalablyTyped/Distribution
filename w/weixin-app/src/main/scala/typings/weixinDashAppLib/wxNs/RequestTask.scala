@@ -15,8 +15,8 @@ trait RequestTask extends js.Object {
 object RequestTask {
   @scala.inline
   def apply(abort: js.Function0[scala.Unit]): RequestTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
+    val __obj = js.Dynamic.literal(abort = abort)
+  
     __obj.asInstanceOf[RequestTask]
   }
 }

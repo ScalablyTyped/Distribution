@@ -22,9 +22,7 @@ object OAuthConfig {
     grantPath: java.lang.String = null,
     revokePath: java.lang.String = null
   ): OAuthConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUrl")(baseUrl)
-    __obj.updateDynamic("clientId")(clientId)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, clientId = clientId)
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
     if (grantPath != null) __obj.updateDynamic("grantPath")(grantPath)
     if (revokePath != null) __obj.updateDynamic("revokePath")(revokePath)

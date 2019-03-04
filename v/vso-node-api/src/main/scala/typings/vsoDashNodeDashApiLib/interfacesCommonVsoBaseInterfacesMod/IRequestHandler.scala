@@ -18,10 +18,8 @@ object IRequestHandler {
     handleAuthentication: js.Function5[js.Any, js.Any, js.Any, js.Any, js.Any, scala.Unit],
     prepareRequest: js.Function1[js.Any, scala.Unit]
   ): IRequestHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canHandleAuthentication")(canHandleAuthentication)
-    __obj.updateDynamic("handleAuthentication")(handleAuthentication)
-    __obj.updateDynamic("prepareRequest")(prepareRequest)
+    val __obj = js.Dynamic.literal(canHandleAuthentication = canHandleAuthentication, handleAuthentication = handleAuthentication, prepareRequest = prepareRequest)
+  
     __obj.asInstanceOf[IRequestHandler]
   }
 }

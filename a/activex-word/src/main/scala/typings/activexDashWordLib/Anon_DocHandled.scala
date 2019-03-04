@@ -13,9 +13,8 @@ trait Anon_DocHandled extends js.Object {
 object Anon_DocHandled {
   @scala.inline
   def apply(Doc: activexDashWordLib.WordNs.Document, Handled: scala.Boolean): Anon_DocHandled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Doc")(Doc)
-    __obj.updateDynamic("Handled")(Handled)
+    val __obj = js.Dynamic.literal(Doc = Doc, Handled = Handled)
+  
     __obj.asInstanceOf[Anon_DocHandled]
   }
 }

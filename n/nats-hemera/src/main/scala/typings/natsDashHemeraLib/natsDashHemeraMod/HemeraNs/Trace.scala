@@ -26,14 +26,8 @@ object Trace {
     timestamp: scala.Double,
     traceId: java.lang.String
   ): Trace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentSpanId")(parentSpanId)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("spanId")(spanId)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("traceId")(traceId)
+    val __obj = js.Dynamic.literal(duration = duration, method = method, parentSpanId = parentSpanId, service = service, spanId = spanId, timestamp = timestamp, traceId = traceId)
+  
     __obj.asInstanceOf[Trace]
   }
 }

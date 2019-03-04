@@ -28,12 +28,7 @@ object RenderProps {
     error: stdLib.Error = null,
     response: stdLib.Response = null
   ): RenderProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("fetching")(fetching)
-    __obj.updateDynamic("requestKey")(requestKey)
-    __obj.updateDynamic("requestName")(requestName)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(failed = failed, fetching = fetching, requestKey = requestKey, requestName = requestName, url = url)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     if (response != null) __obj.updateDynamic("response")(response)

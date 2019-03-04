@@ -22,8 +22,8 @@ object helpOption {
     example: java.lang.String = null,
     short: java.lang.String = null
   ): helpOption = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     if (example != null) __obj.updateDynamic("example")(example)
     if (short != null) __obj.updateDynamic("short")(short)

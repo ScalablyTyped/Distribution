@@ -28,15 +28,8 @@ object positionValues {
     scrollWidth: scala.Double,
     top: scala.Double
   ): positionValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHeight")(clientHeight)
-    __obj.updateDynamic("clientWidth")(clientWidth)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("scrollHeight")(scrollHeight)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
-    __obj.updateDynamic("scrollWidth")(scrollWidth)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, left = left, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth, top = top)
+  
     __obj.asInstanceOf[positionValues]
   }
 }

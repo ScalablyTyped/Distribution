@@ -16,9 +16,8 @@ object Anon_ConnectionOptionHeaderValue {
     connectionOptionHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpConnectionOptionHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ConnectionOptionHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionOptionHeaderValue")(connectionOptionHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(connectionOptionHeaderValue = connectionOptionHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ConnectionOptionHeaderValue]
   }
 }

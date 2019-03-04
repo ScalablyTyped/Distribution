@@ -24,11 +24,7 @@ object HotKey {
     key: java.lang.String = null,
     which: scala.Int | scala.Double = null
   ): HotKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altKey")(altKey)
-    __obj.updateDynamic("ctrlKey")(ctrlKey)
-    __obj.updateDynamic("metaKey")(metaKey)
-    __obj.updateDynamic("shiftKey")(shiftKey)
+    val __obj = js.Dynamic.literal(altKey = altKey, ctrlKey = ctrlKey, metaKey = metaKey, shiftKey = shiftKey)
     if (key != null) __obj.updateDynamic("key")(key)
     if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotKey]

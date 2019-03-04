@@ -24,13 +24,8 @@ object Anon_Diffuse {
     size: threeLib.threeDashCoreMod.IUniform,
     uvTransform: threeLib.threeDashCoreMod.IUniform
   ): Anon_Diffuse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diffuse")(diffuse)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uvTransform")(uvTransform)
+    val __obj = js.Dynamic.literal(diffuse = diffuse, map = map, opacity = opacity, scale = scale, size = size, uvTransform = uvTransform)
+  
     __obj.asInstanceOf[Anon_Diffuse]
   }
 }

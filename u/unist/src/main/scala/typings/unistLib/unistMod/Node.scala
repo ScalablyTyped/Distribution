@@ -30,7 +30,8 @@ object Node {
     data: Data = null,
     position: Position = null
   ): Node = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)

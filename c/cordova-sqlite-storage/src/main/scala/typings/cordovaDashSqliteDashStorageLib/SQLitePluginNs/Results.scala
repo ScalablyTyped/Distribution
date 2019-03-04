@@ -18,9 +18,7 @@ object Results {
     rowsAffected: scala.Double,
     insertId: scala.Int | scala.Double = null
   ): Results = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("rowsAffected")(rowsAffected)
+    val __obj = js.Dynamic.literal(rows = rows, rowsAffected = rowsAffected)
     if (insertId != null) __obj.updateDynamic("insertId")(insertId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Results]
   }

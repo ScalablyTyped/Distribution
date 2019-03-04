@@ -85,11 +85,7 @@ object SampledData {
     lowerLimit: js.UndefOr[decimal] = js.undefined,
     upperLimit: js.UndefOr[decimal] = js.undefined
   ): SampledData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dimensions")(dimensions)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("period")(period)
+    val __obj = js.Dynamic.literal(data = data, dimensions = dimensions, origin = origin, period = period)
     if (_data != null) __obj.updateDynamic("_data")(_data)
     if (_dimensions != null) __obj.updateDynamic("_dimensions")(_dimensions)
     if (_factor != null) __obj.updateDynamic("_factor")(_factor)

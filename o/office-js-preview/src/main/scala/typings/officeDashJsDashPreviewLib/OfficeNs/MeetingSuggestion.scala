@@ -60,13 +60,8 @@ object MeetingSuggestion {
     start: java.lang.String,
     subject: java.lang.String
   ): MeetingSuggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attendees")(attendees)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("meetingString")(meetingString)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(attendees = attendees, end = end, location = location, meetingString = meetingString, start = start, subject = subject)
+  
     __obj.asInstanceOf[MeetingSuggestion]
   }
 }

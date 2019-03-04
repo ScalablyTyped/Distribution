@@ -29,9 +29,7 @@ object IQueryListState {
     activeItem: T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem = null,
     createNewItem: T = null
   ): IQueryListState[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filteredItems")(filteredItems)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(filteredItems = filteredItems, query = query)
     if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
     if (createNewItem != null) __obj.updateDynamic("createNewItem")(createNewItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryListState[T]]

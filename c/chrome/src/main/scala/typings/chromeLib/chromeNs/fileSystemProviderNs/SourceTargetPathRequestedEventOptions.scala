@@ -20,11 +20,8 @@ object SourceTargetPathRequestedEventOptions {
     sourcePath: java.lang.String,
     targetPath: java.lang.String
   ): SourceTargetPathRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("sourcePath")(sourcePath)
-    __obj.updateDynamic("targetPath")(targetPath)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, requestId = requestId, sourcePath = sourcePath, targetPath = targetPath)
+  
     __obj.asInstanceOf[SourceTargetPathRequestedEventOptions]
   }
 }

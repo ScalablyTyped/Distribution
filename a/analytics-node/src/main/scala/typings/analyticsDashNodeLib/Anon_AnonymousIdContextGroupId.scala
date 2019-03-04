@@ -26,8 +26,7 @@ object Anon_AnonymousIdContextGroupId {
     traits: js.Any = null,
     userId: java.lang.String | scala.Double = null
   ): Anon_AnonymousIdContextGroupId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any])
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
     if (integrations != null) __obj.updateDynamic("integrations")(integrations)

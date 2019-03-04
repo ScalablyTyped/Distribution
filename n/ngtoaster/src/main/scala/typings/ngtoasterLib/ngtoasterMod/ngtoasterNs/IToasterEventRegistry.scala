@@ -22,12 +22,8 @@ object IToasterEventRegistry {
     unsubscribeToClearToastsEvent: js.Function1[IToastEventListener, scala.Unit],
     unsubscribeToNewToastEvent: js.Function1[IToastEventListener, scala.Unit]
   ): IToasterEventRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setup")(setup)
-    __obj.updateDynamic("subscribeToClearToastsEvent")(subscribeToClearToastsEvent)
-    __obj.updateDynamic("subscribeToNewToastEvent")(subscribeToNewToastEvent)
-    __obj.updateDynamic("unsubscribeToClearToastsEvent")(unsubscribeToClearToastsEvent)
-    __obj.updateDynamic("unsubscribeToNewToastEvent")(unsubscribeToNewToastEvent)
+    val __obj = js.Dynamic.literal(setup = setup, subscribeToClearToastsEvent = subscribeToClearToastsEvent, subscribeToNewToastEvent = subscribeToNewToastEvent, unsubscribeToClearToastsEvent = unsubscribeToClearToastsEvent, unsubscribeToNewToastEvent = unsubscribeToNewToastEvent)
+  
     __obj.asInstanceOf[IToasterEventRegistry]
   }
 }

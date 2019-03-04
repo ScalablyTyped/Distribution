@@ -12,8 +12,8 @@ trait Anon_FalseStdout extends js.Object {
 object Anon_FalseStdout {
   @scala.inline
   def apply(stdout: stdDashMocksLib.stdDashMocksLibNumbers.`false`): Anon_FalseStdout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stdout")(stdout)
+    val __obj = js.Dynamic.literal(stdout = stdout)
+  
     __obj.asInstanceOf[Anon_FalseStdout]
   }
 }

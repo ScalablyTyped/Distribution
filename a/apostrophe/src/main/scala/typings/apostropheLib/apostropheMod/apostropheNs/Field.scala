@@ -32,9 +32,8 @@ object Field {
     titleField: java.lang.String = null,
     widgetType: java.lang.String = null
   ): Field = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(label = label, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (choices != null) __obj.updateDynamic("choices")(choices)
     if (help != null) __obj.updateDynamic("help")(help)
     if (options != null) __obj.updateDynamic("options")(options)

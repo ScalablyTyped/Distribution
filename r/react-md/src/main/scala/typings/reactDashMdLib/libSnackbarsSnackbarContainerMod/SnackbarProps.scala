@@ -96,9 +96,7 @@ object SnackbarProps {
     transitionLeaveTimeout: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDismiss")(onDismiss)
-    __obj.updateDynamic("toasts")(toasts)
+    val __obj = js.Dynamic.literal(onDismiss = onDismiss, toasts = toasts)
     if (!js.isUndefined(autoFocusAction)) __obj.updateDynamic("autoFocusAction")(autoFocusAction)
     if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
     if (autohideTimeout != null) __obj.updateDynamic("autohideTimeout")(autohideTimeout.asInstanceOf[js.Any])

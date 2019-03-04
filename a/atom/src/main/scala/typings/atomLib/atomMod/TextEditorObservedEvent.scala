@@ -14,10 +14,8 @@ trait TextEditorObservedEvent extends js.Object {
 object TextEditorObservedEvent {
   @scala.inline
   def apply(index: scala.Double, pane: Pane, textEditor: TextEditor): TextEditorObservedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("textEditor")(textEditor)
+    val __obj = js.Dynamic.literal(index = index, pane = pane, textEditor = textEditor)
+  
     __obj.asInstanceOf[TextEditorObservedEvent]
   }
 }

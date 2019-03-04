@@ -46,18 +46,8 @@ object TrackObjectSimplified {
     is_playable: js.UndefOr[scala.Boolean] = js.undefined,
     linked_from: TrackLinkObject = null
   ): TrackObjectSimplified = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("artists")(artists)
-    __obj.updateDynamic("disc_number")(disc_number)
-    __obj.updateDynamic("duration_ms")(duration_ms)
-    __obj.updateDynamic("explicit")(explicit)
-    __obj.updateDynamic("external_urls")(external_urls)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("preview_url")(preview_url)
-    __obj.updateDynamic("track_number")(track_number)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(artists = artists, disc_number = disc_number, duration_ms = duration_ms, explicit = explicit, external_urls = external_urls, href = href, id = id, name = name, preview_url = preview_url, track_number = track_number, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets)
     if (!js.isUndefined(is_playable)) __obj.updateDynamic("is_playable")(is_playable)
     if (linked_from != null) __obj.updateDynamic("linked_from")(linked_from)

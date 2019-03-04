@@ -2140,8 +2140,8 @@ object fsNs extends js.Object {
       * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
       * URL support is _experimental_.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2160,10 +2160,10 @@ object fsNs extends js.Object {
       * If `mode` is a string, it is parsed as an octal integer.
       * If `flag` is not supplied, the default of `'a'` is used.
       */
-    def `__promisify__`(file: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(file: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(file: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(file: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+    def __promisify__(file: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
+    def __promisify__(file: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+    def __promisify__(file: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
+    def __promisify__(file: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2175,8 +2175,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, mode: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, mode: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2187,7 +2187,7 @@ object fsNs extends js.Object {
       * Asynchronous chown(2) - Change ownership of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2198,7 +2198,7 @@ object fsNs extends js.Object {
       * Asynchronous close(2) - close a file descriptor.
       * @param fd A file descriptor.
       */
-    def `__promisify__`(fd: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   @JSName("constants")
@@ -2328,8 +2328,8 @@ object fsNs extends js.Object {
       * The only supported flag is fs.constants.COPYFILE_EXCL,
       * which causes the copy operation to fail if dest already exists.
       */
-    def `__promisify__`(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike, flags: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(src: nodeLib.fsMod.PathLike, dst: nodeLib.fsMod.PathLike, flags: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2340,7 +2340,7 @@ object fsNs extends js.Object {
       * @param path A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
       * URL support is _experimental_.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Boolean] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Boolean] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2352,8 +2352,8 @@ object fsNs extends js.Object {
       * @param fd A file descriptor.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
       */
-    def `__promisify__`(fd: scala.Double, mode: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, mode: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, mode: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, mode: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2364,7 +2364,7 @@ object fsNs extends js.Object {
       * Asynchronous fchown(2) - Change ownership of a file.
       * @param fd A file descriptor.
       */
-    def `__promisify__`(fd: scala.Double, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2375,7 +2375,7 @@ object fsNs extends js.Object {
       * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
       * @param fd A file descriptor.
       */
-    def `__promisify__`(fd: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2386,7 +2386,7 @@ object fsNs extends js.Object {
       * Asynchronous fstat(2) - Get file status.
       * @param fd A file descriptor.
       */
-    def `__promisify__`(fd: scala.Double): js.Promise[nodeLib.fsMod.Stats] = js.native
+    def __promisify__(fd: scala.Double): js.Promise[nodeLib.fsMod.Stats] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2397,7 +2397,7 @@ object fsNs extends js.Object {
       * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
       * @param fd A file descriptor.
       */
-    def `__promisify__`(fd: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2409,8 +2409,8 @@ object fsNs extends js.Object {
       * @param fd A file descriptor.
       * @param len If not specified, defaults to `0`.
       */
-    def `__promisify__`(fd: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, len: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, len: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2423,15 +2423,15 @@ object fsNs extends js.Object {
       * @param atime The last access time. If a string is provided, it will be coerced to number.
       * @param mtime The last modified time. If a string is provided, it will be coerced to number.
       */
-    def `__promisify__`(fd: scala.Double, atime: java.lang.String, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: java.lang.String, mtime: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: java.lang.String, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: scala.Double, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: scala.Double, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: stdLib.Date, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(fd: scala.Double, atime: stdLib.Date, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: java.lang.String, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: java.lang.String, mtime: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: java.lang.String, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: scala.Double, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: scala.Double, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: stdLib.Date, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(fd: scala.Double, atime: stdLib.Date, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2443,8 +2443,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, mode: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, mode: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, mode: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2455,7 +2455,7 @@ object fsNs extends js.Object {
       * Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2478,7 +2478,7 @@ object fsNs extends js.Object {
       * Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.fsMod.Stats] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.fsMod.Stats] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2491,10 +2491,10 @@ object fsNs extends js.Object {
       * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
       * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.fsMod.MakeDirectoryOptions): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.fsMod.MakeDirectoryOptions): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -2506,17 +2506,17 @@ object fsNs extends js.Object {
       * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(prefix: java.lang.String, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
+    def __promisify__(prefix: java.lang.String, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     /**
       * Asynchronously creates a unique temporary directory.
       * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
+    def __promisify__(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
+    def __promisify__(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
     def __promisify___buffer(prefix: java.lang.String, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
   }
@@ -2530,12 +2530,12 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, flags: java.lang.String): js.Promise[scala.Double] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, flags: java.lang.String, mode: java.lang.String): js.Promise[scala.Double] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, flags: java.lang.String, mode: scala.Double): js.Promise[scala.Double] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, flags: scala.Double): js.Promise[scala.Double] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): js.Promise[scala.Double] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): js.Promise[scala.Double] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, flags: java.lang.String): js.Promise[scala.Double] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, flags: java.lang.String, mode: java.lang.String): js.Promise[scala.Double] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, flags: java.lang.String, mode: scala.Double): js.Promise[scala.Double] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, flags: scala.Double): js.Promise[scala.Double] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): js.Promise[scala.Double] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): js.Promise[scala.Double] = js.native
   }
   
   @JSName("promises")
@@ -3011,10 +3011,10 @@ object fsNs extends js.Object {
       * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
       * If a flag is not provided, it defaults to `'r'`.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     /**
       * Asynchronously reads the entire contents of a file.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -3023,19 +3023,19 @@ object fsNs extends js.Object {
       * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
       * If a flag is not provided, it defaults to `'r'`.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: scala.Double): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: scala.Double, options: java.lang.String): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-    def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: scala.Double): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(path: scala.Double, options: java.lang.String): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: scala.Double, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(path: scala.Double, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   @JSName("read")
   @js.native
   object readNs extends js.Object {
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
     /**
       * @param fd A file descriptor.
       * @param buffer The buffer that the data will be written to.
@@ -3043,7 +3043,7 @@ object fsNs extends js.Object {
       * @param length The number of bytes to read.
       * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
       */
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](
       fd: scala.Double,
       buffer: TBuffer,
       offset: scala.Double,
@@ -3061,18 +3061,18 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
     /**
       * Asynchronous readdir(3) - read a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options If called with `withFileTypes: true` the result data will be an array of Dirent
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_True): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_True): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
     /**
       * Asynchronous readdir(3) - read a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -3091,17 +3091,17 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     /**
       * Asynchronous readlink(2) - read value of a symbolic link.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
     def __promisify___buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
   }
@@ -3115,17 +3115,17 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     /**
       * Asynchronous realpath(3) - return the canonicalized absolute pathname.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
     def __promisify___buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
     def native(
@@ -3237,7 +3237,7 @@ object fsNs extends js.Object {
       * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
       * URL support is _experimental_.
       */
-    def `__promisify__`(oldPath: nodeLib.fsMod.PathLike, newPath: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(oldPath: nodeLib.fsMod.PathLike, newPath: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3248,7 +3248,7 @@ object fsNs extends js.Object {
       * Asynchronous rmdir(2) - delete a directory.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3259,7 +3259,7 @@ object fsNs extends js.Object {
       * Asynchronous stat(2) - Get file status.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.fsMod.Stats] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.fsMod.Stats] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3273,8 +3273,8 @@ object fsNs extends js.Object {
       * @param type May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
       * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
       */
-    def `__promisify__`(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike, `type`: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike, `type`: java.lang.String): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3286,8 +3286,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param len If not specified, defaults to `0`.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, len: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, len: scala.Double): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3298,7 +3298,7 @@ object fsNs extends js.Object {
       * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3311,15 +3311,15 @@ object fsNs extends js.Object {
       * @param atime The last access time. If a string is provided, it will be coerced to number.
       * @param mtime The last modified time. If a string is provided, it will be coerced to number.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: java.lang.String, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: scala.Double, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: java.lang.String): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: scala.Double): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, atime: stdLib.Date, mtime: stdLib.Date): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3338,10 +3338,10 @@ object fsNs extends js.Object {
       * If `mode` is a string, it is parsed as an octal integer.
       * If `flag` is not supplied, the default of `'w'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
-    def `__promisify__`(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
+    def __promisify__(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
   }
   
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -3355,10 +3355,10 @@ object fsNs extends js.Object {
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       * @param encoding The expected string encoding.
       */
-    def `__promisify__`(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-    def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def __promisify__(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
     /**
       * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
       * @param fd A file descriptor.
@@ -3366,11 +3366,11 @@ object fsNs extends js.Object {
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](
       fd: scala.Double,
       buffer: TBuffer,
       offset: scala.Double,

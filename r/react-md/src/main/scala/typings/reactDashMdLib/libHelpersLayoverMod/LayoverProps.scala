@@ -122,9 +122,7 @@ object LayoverProps {
     xThreshold: scala.Int | scala.Double = null,
     yThreshold: scala.Int | scala.Double = null
   ): LayoverProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(onClose = onClose, visible = visible)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (animationPosition != null) __obj.updateDynamic("animationPosition")(animationPosition.asInstanceOf[js.Any])

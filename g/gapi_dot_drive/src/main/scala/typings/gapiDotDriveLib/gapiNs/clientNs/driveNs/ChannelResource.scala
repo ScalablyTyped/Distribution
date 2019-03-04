@@ -24,13 +24,8 @@ object ChannelResource {
     resourceUri: java.lang.String,
     token: java.lang.String
   ): ChannelResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expiration")(expiration)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("resourceId")(resourceId)
-    __obj.updateDynamic("resourceUri")(resourceUri)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(expiration = expiration, id = id, kind = kind, resourceId = resourceId, resourceUri = resourceUri, token = token)
+  
     __obj.asInstanceOf[ChannelResource]
   }
 }

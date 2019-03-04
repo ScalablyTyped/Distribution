@@ -20,8 +20,7 @@ object AnimationObject {
     loop: scala.Int | scala.Double = null,
     speed: scala.Int | scala.Double = null
   ): AnimationObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frames")(frames)
+    val __obj = js.Dynamic.literal(frames = frames)
     if (frameDuration != null) __obj.updateDynamic("frameDuration")(frameDuration.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])

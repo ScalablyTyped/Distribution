@@ -18,8 +18,7 @@ object Anon_Arialabelledby {
     `aria-labelledby`: java.lang.String = null,
     ref: js.Function1[/* element */ reactLib.HTMLElement, scala.Unit] = null
   ): Anon_Arialabelledby = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     __obj.asInstanceOf[Anon_Arialabelledby]

@@ -19,8 +19,7 @@ object IGenericSelectionNxInfo {
     qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.CurrentSelection,
     qId: java.lang.String = null
   ): IGenericSelectionNxInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qType")(qType)
+    val __obj = js.Dynamic.literal(qType = qType)
     if (qId != null) __obj.updateDynamic("qId")(qId)
     __obj.asInstanceOf[IGenericSelectionNxInfo]
   }

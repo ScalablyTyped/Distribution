@@ -28,15 +28,8 @@ object XUser {
     release: js.Function0[scala.Unit],
     revokePrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
   ): XUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("changePassword")(changePassword)
-    __obj.updateDynamic("getGrantablePrivileges")(getGrantablePrivileges)
-    __obj.updateDynamic("getPrivileges")(getPrivileges)
-    __obj.updateDynamic("grantPrivileges")(grantPrivileges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("revokePrivileges")(revokePrivileges)
+    val __obj = js.Dynamic.literal(acquire = acquire, changePassword = changePassword, getGrantablePrivileges = getGrantablePrivileges, getPrivileges = getPrivileges, grantPrivileges = grantPrivileges, queryInterface = queryInterface, release = release, revokePrivileges = revokePrivileges)
+  
     __obj.asInstanceOf[XUser]
   }
 }

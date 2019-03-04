@@ -22,12 +22,8 @@ object ImageUploadResponse {
     Vector: scala.Boolean,
     Width: scala.Double
   ): ImageUploadResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Vector")(Vector)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Error = Error, Height = Height, Type = Type, Vector = Vector, Width = Width)
+  
     __obj.asInstanceOf[ImageUploadResponse]
   }
 }

@@ -50,16 +50,8 @@ object XTabListener {
     release: js.Function0[scala.Unit],
     removed: js.Function1[scala.Double, scala.Unit]
   ): XTabListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activated")(activated)
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("deactivated")(deactivated)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("inserted")(inserted)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(acquire = acquire, activated = activated, changed = changed, deactivated = deactivated, disposing = disposing, inserted = inserted, queryInterface = queryInterface, release = release, removed = removed)
+  
     __obj.asInstanceOf[XTabListener]
   }
 }

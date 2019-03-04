@@ -30,16 +30,8 @@ object Country {
     name: java.lang.String,
     status: java.lang.String
   ): Country = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha2")(alpha2)
-    __obj.updateDynamic("alpha3")(alpha3)
-    __obj.updateDynamic("countryCallingCodes")(countryCallingCodes)
-    __obj.updateDynamic("currencies")(currencies)
-    __obj.updateDynamic("emoji")(emoji)
-    __obj.updateDynamic("ioc")(ioc)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(alpha2 = alpha2, alpha3 = alpha3, countryCallingCodes = countryCallingCodes, currencies = currencies, emoji = emoji, ioc = ioc, languages = languages, name = name, status = status)
+  
     __obj.asInstanceOf[Country]
   }
 }

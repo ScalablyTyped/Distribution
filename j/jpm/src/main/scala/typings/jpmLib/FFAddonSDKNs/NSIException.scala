@@ -34,15 +34,7 @@ object NSIException {
     inner: NSIException = null,
     location: js.Any = null
   ): NSIException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnNumber")(columnNumber)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber, data = data, filename = filename, lineNumber = lineNumber, message = message, name = name, result = result, toString = toString)
     if (inner != null) __obj.updateDynamic("inner")(inner)
     if (location != null) __obj.updateDynamic("location")(location)
     __obj.asInstanceOf[NSIException]

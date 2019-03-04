@@ -26,13 +26,8 @@ object XSpreadsheetView {
     release: js.Function0[scala.Unit],
     setActiveSheet: js.Function1[XSpreadsheet, scala.Unit]
   ): XSpreadsheetView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveSheet")(ActiveSheet)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getActiveSheet")(getActiveSheet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setActiveSheet")(setActiveSheet)
+    val __obj = js.Dynamic.literal(ActiveSheet = ActiveSheet, acquire = acquire, getActiveSheet = getActiveSheet, queryInterface = queryInterface, release = release, setActiveSheet = setActiveSheet)
+  
     __obj.asInstanceOf[XSpreadsheetView]
   }
 }

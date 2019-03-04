@@ -325,8 +325,7 @@ object InstanceArgs {
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): InstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceClass")(instanceClass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instanceClass = instanceClass.asInstanceOf[js.Any])
     if (allocatedStorage != null) __obj.updateDynamic("allocatedStorage")(allocatedStorage.asInstanceOf[js.Any])
     if (allowMajorVersionUpgrade != null) __obj.updateDynamic("allowMajorVersionUpgrade")(allowMajorVersionUpgrade.asInstanceOf[js.Any])
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])

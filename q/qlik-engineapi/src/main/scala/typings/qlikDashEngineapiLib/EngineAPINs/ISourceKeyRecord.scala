@@ -22,9 +22,8 @@ trait ISourceKeyRecord extends js.Object {
 object ISourceKeyRecord {
   @scala.inline
   def apply(qKeyFields: js.Array[java.lang.String], qTables: js.Array[java.lang.String]): ISourceKeyRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qKeyFields")(qKeyFields)
-    __obj.updateDynamic("qTables")(qTables)
+    val __obj = js.Dynamic.literal(qKeyFields = qKeyFields, qTables = qTables)
+  
     __obj.asInstanceOf[ISourceKeyRecord]
   }
 }

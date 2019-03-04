@@ -47,13 +47,8 @@ object XSchema {
     readTemplates: js.Function1[XSchemaHandler, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XSchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readComponent")(readComponent)
-    __obj.updateDynamic("readSchema")(readSchema)
-    __obj.updateDynamic("readTemplates")(readTemplates)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readComponent = readComponent, readSchema = readSchema, readTemplates = readTemplates, release = release)
+  
     __obj.asInstanceOf[XSchema]
   }
 }

@@ -22,9 +22,8 @@ object ObjectTypeCallProperty {
     `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeCallProperty,
     value: astDashTypesLib.genKindsMod.FunctionTypeAnnotationKind
   ): ObjectTypeCallProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(static = static, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ObjectTypeCallProperty]
   }
 }

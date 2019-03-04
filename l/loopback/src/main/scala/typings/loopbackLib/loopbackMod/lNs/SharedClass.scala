@@ -97,17 +97,8 @@ object SharedClass {
     methods: js.Function1[loopbackLib.Anon_IncludeDisabled, js.Array[_]],
     resolve: js.Function1[js.Function0[scala.Unit], scala.Unit]
   ): SharedClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctor")(ctor)
-    __obj.updateDynamic("defineMethod")(defineMethod)
-    __obj.updateDynamic("disableMethod")(disableMethod)
-    __obj.updateDynamic("disableMethodByName")(disableMethodByName)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findMethodByName")(findMethodByName)
-    __obj.updateDynamic("getKeyFromMethodNameAndTarget")(getKeyFromMethodNameAndTarget)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(ctor = ctor, defineMethod = defineMethod, disableMethod = disableMethod, disableMethodByName = disableMethodByName, find = find, findMethodByName = findMethodByName, getKeyFromMethodNameAndTarget = getKeyFromMethodNameAndTarget, http = http, methods = methods, resolve = resolve)
+  
     __obj.asInstanceOf[SharedClass]
   }
 }

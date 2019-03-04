@@ -19,10 +19,8 @@ object Failure {
     index: Index,
     status: parsimmonLib.parsimmonLibNumbers.`false`
   ): Failure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(expected = expected, index = index, status = status)
+  
     __obj.asInstanceOf[Failure]
   }
 }

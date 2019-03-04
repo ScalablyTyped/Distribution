@@ -17,8 +17,8 @@ object Anon_Ctor {
       /* import warning: ImportType.apply Failed type conversion: typeof Pumpify */ js.Any
     ]
   ): Anon_Ctor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctor")(ctor)
+    val __obj = js.Dynamic.literal(ctor = ctor)
+  
     __obj.asInstanceOf[Anon_Ctor]
   }
 }

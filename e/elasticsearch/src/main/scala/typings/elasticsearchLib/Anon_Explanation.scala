@@ -36,12 +36,7 @@ object Anon_Explanation {
     matched_queries: js.Array[java.lang.String] = null,
     sort: js.Array[java.lang.String] = null
   ): Anon_Explanation[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_index")(_index)
-    __obj.updateDynamic("_score")(_score)
-    __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    __obj.updateDynamic("_type")(_type)
+    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _score = _score, _source = _source.asInstanceOf[js.Any], _type = _type)
     if (_explanation != null) __obj.updateDynamic("_explanation")(_explanation)
     if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields)

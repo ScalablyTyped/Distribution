@@ -27,13 +27,8 @@ object Meta {
     totalChars: scala.Double,
     version: java.lang.String
   ): Meta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingBox")(boundingBox)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("totalChars")(totalChars)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(boundingBox = boundingBox, name = name, properties = properties, size = size, totalChars = totalChars, version = version)
+  
     __obj.asInstanceOf[Meta]
   }
 }

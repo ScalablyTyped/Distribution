@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Knex
   extends knexLib.knexMod.KnexNs.QueryInterface {
   var VERSION: java.lang.String = js.native
-  var `__knex__`: java.lang.String = js.native
+  var __knex__ : java.lang.String = js.native
   var client: js.Any = js.native
   var fn: knexLib.knexMod.KnexNs.FunctionHelper = js.native
   var migrate: knexLib.knexMod.KnexNs.Migrator = js.native

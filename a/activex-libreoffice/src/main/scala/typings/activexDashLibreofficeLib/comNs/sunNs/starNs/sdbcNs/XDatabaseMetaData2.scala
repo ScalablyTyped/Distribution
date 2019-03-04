@@ -30,10 +30,8 @@ object XDatabaseMetaData2 {
       activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ]
   ): XDatabaseMetaData2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectionInfo")(ConnectionInfo)
+    val __obj = js.Dynamic.literal(ConnectionInfo = ConnectionInfo, getConnectionInfo = getConnectionInfo)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDatabaseMetaData)
-    __obj.updateDynamic("getConnectionInfo")(getConnectionInfo)
     __obj.asInstanceOf[XDatabaseMetaData2]
   }
 }

@@ -54,8 +54,7 @@ object Extension {
     ] = null,
     rules: js.Array[Rules[_]] = null
   ): Extension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (base != null) __obj.updateDynamic("base")(base)
     if (coerce != null) __obj.updateDynamic("coerce")(coerce)
     if (describe != null) __obj.updateDynamic("describe")(describe)

@@ -66,15 +66,8 @@ object XLayerImporter {
     release: js.Function0[scala.Unit],
     setTargetBackend: js.Function1[XBackend, scala.Unit]
   ): XLayerImporter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TargetBackend")(TargetBackend)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTargetBackend")(getTargetBackend)
-    __obj.updateDynamic("importLayer")(importLayer)
-    __obj.updateDynamic("importLayerForEntity")(importLayerForEntity)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setTargetBackend")(setTargetBackend)
+    val __obj = js.Dynamic.literal(TargetBackend = TargetBackend, acquire = acquire, getTargetBackend = getTargetBackend, importLayer = importLayer, importLayerForEntity = importLayerForEntity, queryInterface = queryInterface, release = release, setTargetBackend = setTargetBackend)
+  
     __obj.asInstanceOf[XLayerImporter]
   }
 }

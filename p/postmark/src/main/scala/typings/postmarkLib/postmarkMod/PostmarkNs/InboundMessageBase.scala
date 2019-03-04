@@ -37,23 +37,8 @@ object InboundMessageBase {
     To: java.lang.String,
     ToFull: js.Array[ExpandedEmail]
   ): InboundMessageBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachments")(Attachments)
-    __obj.updateDynamic("Cc")(Cc)
-    __obj.updateDynamic("CcFull")(CcFull)
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("From")(From)
-    __obj.updateDynamic("FromFull")(FromFull)
-    __obj.updateDynamic("FromName")(FromName)
-    __obj.updateDynamic("MailboxHash")(MailboxHash)
-    __obj.updateDynamic("MessageID")(MessageID)
-    __obj.updateDynamic("OriginalRecipient")(OriginalRecipient)
-    __obj.updateDynamic("ReplyTo")(ReplyTo)
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("To")(To)
-    __obj.updateDynamic("ToFull")(ToFull)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, Cc = Cc, CcFull = CcFull, Date = Date, From = From, FromFull = FromFull, FromName = FromName, MailboxHash = MailboxHash, MessageID = MessageID, OriginalRecipient = OriginalRecipient, ReplyTo = ReplyTo, Status = Status, Subject = Subject, Tag = Tag, To = To, ToFull = ToFull)
+  
     __obj.asInstanceOf[InboundMessageBase]
   }
 }

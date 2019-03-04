@@ -16,9 +16,8 @@ object Anon_Action {
     action: js.Object,
     navigationAction: reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.Nullable[reduxDashFirstDashRouterLib.reduxDashFirstDashRouterMod.NavigationAction]
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("navigationAction")(navigationAction.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action, navigationAction = navigationAction.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Action]
   }
 }

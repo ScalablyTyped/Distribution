@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- samchonLib.templatesSlaveSlaveServerMod.ISlaveServer because var conflicts: _Complete_process, `communicator_`. Inlined  */ @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorServer")
+- samchonLib.templatesSlaveSlaveServerMod.ISlaveServer because var conflicts: _Complete_process, communicator_. Inlined  */ @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorServer")
 @js.native
 class MediatorServer protected ()
   extends samchonLib.templatesParallelMediatorSystemMod.MediatorSystem {
@@ -31,7 +31,7 @@ class MediatorServer protected ()
   /**
     * @hidden
     */
-  var `server_base_`: js.Any = js.native
+  var server_base_ : js.Any = js.native
   /**
     * Add a newly connected remote client.
     *

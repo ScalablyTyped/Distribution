@@ -139,16 +139,8 @@ object Conflict {
       scala.Unit
     ]
   ): Conflict = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("models")(models)
-    __obj.updateDynamic("resolve")(resolve)
-    __obj.updateDynamic("resolveManually")(resolveManually)
-    __obj.updateDynamic("resolveUsingSource")(resolveUsingSource)
-    __obj.updateDynamic("resolveUsingTarget")(resolveUsingTarget)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("swapParties")(swapParties)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(changes = changes, models = models, resolve = resolve, resolveManually = resolveManually, resolveUsingSource = resolveUsingSource, resolveUsingTarget = resolveUsingTarget, source = source, swapParties = swapParties, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Conflict]
   }
 }

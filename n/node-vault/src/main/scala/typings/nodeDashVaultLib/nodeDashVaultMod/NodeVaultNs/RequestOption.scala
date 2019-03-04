@@ -13,9 +13,8 @@ trait RequestOption extends Option {
 object RequestOption {
   @scala.inline
   def apply(method: java.lang.String, path: java.lang.String): RequestOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(method = method, path = path)
+  
     __obj.asInstanceOf[RequestOption]
   }
 }

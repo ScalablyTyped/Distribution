@@ -30,18 +30,7 @@ object UIEvent {
     root: js.Any = null,
     tpl: js.Any = null
   ): UIEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addValid")(addValid)
-    __obj.updateDynamic("callAfter")(callAfter)
-    __obj.updateDynamic("callBefore")(callBefore)
-    __obj.updateDynamic("callDelay")(callDelay)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("setOption")(setOption)
-    __obj.updateDynamic("setTpl")(setTpl)
+    val __obj = js.Dynamic.literal(addValid = addValid, callAfter = callAfter, callBefore = callBefore, callDelay = callDelay, destroy = destroy, emit = emit, find = find, off = off, on = on, setOption = setOption, setTpl = setTpl)
     if (event != null) __obj.updateDynamic("event")(event)
     if (root != null) __obj.updateDynamic("root")(root)
     if (tpl != null) __obj.updateDynamic("tpl")(tpl)

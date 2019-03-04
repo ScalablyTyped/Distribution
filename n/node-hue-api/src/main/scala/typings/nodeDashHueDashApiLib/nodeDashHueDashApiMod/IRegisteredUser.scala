@@ -15,11 +15,8 @@ trait IRegisteredUser extends js.Object {
 object IRegisteredUser {
   @scala.inline
   def apply(accessed: stdLib.Date, created: stdLib.Date, name: java.lang.String, username: java.lang.String): IRegisteredUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessed")(accessed)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(accessed = accessed, created = created, name = name, username = username)
+  
     __obj.asInstanceOf[IRegisteredUser]
   }
 }

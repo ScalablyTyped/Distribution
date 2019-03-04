@@ -20,11 +20,8 @@ object BeforeBuildContext {
     electronVersion: java.lang.String,
     platform: Platform
   ): BeforeBuildContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appDir")(appDir)
-    __obj.updateDynamic("arch")(arch)
-    __obj.updateDynamic("electronVersion")(electronVersion)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(appDir = appDir, arch = arch, electronVersion = electronVersion, platform = platform)
+  
     __obj.asInstanceOf[BeforeBuildContext]
   }
 }

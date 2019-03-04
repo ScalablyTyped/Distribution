@@ -24,11 +24,7 @@ object CascaderState {
     flattenOptions: js.Array[js.Array[CascaderOptionType]] = null,
     popupVisible: js.UndefOr[scala.Boolean] = js.undefined
   ): CascaderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputFocused")(inputFocused)
-    __obj.updateDynamic("inputValue")(inputValue)
-    __obj.updateDynamic("prevProps")(prevProps)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(inputFocused = inputFocused, inputValue = inputValue, prevProps = prevProps, value = value)
     if (flattenOptions != null) __obj.updateDynamic("flattenOptions")(flattenOptions)
     if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible)
     __obj.asInstanceOf[CascaderState]

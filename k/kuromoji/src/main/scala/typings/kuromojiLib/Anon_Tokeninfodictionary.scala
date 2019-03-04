@@ -16,9 +16,8 @@ object Anon_Tokeninfodictionary {
     token_info_dictionary: kuromojiLib.kuromojiMod.TokenInfoDictionary,
     trie: doublearrayLib.doublearrayNs.DoubleArray
   ): Anon_Tokeninfodictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token_info_dictionary")(token_info_dictionary)
-    __obj.updateDynamic("trie")(trie)
+    val __obj = js.Dynamic.literal(token_info_dictionary = token_info_dictionary, trie = trie)
+  
     __obj.asInstanceOf[Anon_Tokeninfodictionary]
   }
 }

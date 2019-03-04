@@ -18,10 +18,8 @@ object TestSuiteCloneRequest {
     destinationSuiteId: scala.Double,
     destinationSuiteProjectName: java.lang.String
   ): TestSuiteCloneRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloneOptions")(cloneOptions)
-    __obj.updateDynamic("destinationSuiteId")(destinationSuiteId)
-    __obj.updateDynamic("destinationSuiteProjectName")(destinationSuiteProjectName)
+    val __obj = js.Dynamic.literal(cloneOptions = cloneOptions, destinationSuiteId = destinationSuiteId, destinationSuiteProjectName = destinationSuiteProjectName)
+  
     __obj.asInstanceOf[TestSuiteCloneRequest]
   }
 }

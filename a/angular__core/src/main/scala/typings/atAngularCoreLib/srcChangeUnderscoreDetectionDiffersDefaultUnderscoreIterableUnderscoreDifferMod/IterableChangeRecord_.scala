@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core/src/change_detection/differs/default_iterable_differ", "IterableChangeRecord_")
 @js.native
-class `IterableChangeRecord_`[V] protected ()
+class IterableChangeRecord_[V] protected ()
   extends atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableChangeRecord[V] {
   def this(item: V, trackById: js.Any) = this()
   /** Current index of the item in `Iterable` or null if removed. */

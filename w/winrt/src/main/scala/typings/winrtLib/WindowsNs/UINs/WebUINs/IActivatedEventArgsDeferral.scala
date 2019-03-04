@@ -12,8 +12,8 @@ trait IActivatedEventArgsDeferral extends js.Object {
 object IActivatedEventArgsDeferral {
   @scala.inline
   def apply(activatedOperation: ActivatedOperation): IActivatedEventArgsDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activatedOperation")(activatedOperation)
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation)
+  
     __obj.asInstanceOf[IActivatedEventArgsDeferral]
   }
 }

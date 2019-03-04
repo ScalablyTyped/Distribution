@@ -43,8 +43,7 @@ object BottomNavigationProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: js.Any = null
   ): BottomNavigationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

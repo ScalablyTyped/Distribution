@@ -22,11 +22,8 @@ object Anon_Actions {
     show: scala.Boolean,
     `type`: java.lang.String
   ): Anon_Actions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("autoDectect")(autoDectect)
-    __obj.updateDynamic("menus")(menus)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(actions = actions, autoDectect = autoDectect, menus = menus, show = show)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Actions]
   }
 }

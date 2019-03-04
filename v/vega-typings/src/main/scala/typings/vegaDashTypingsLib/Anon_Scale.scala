@@ -12,8 +12,8 @@ trait Anon_Scale extends js.Object {
 object Anon_Scale {
   @scala.inline
   def apply(scale: vegaDashTypingsLib.typesSpecEncodeMod.Field): Anon_Scale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Scale]
   }
 }

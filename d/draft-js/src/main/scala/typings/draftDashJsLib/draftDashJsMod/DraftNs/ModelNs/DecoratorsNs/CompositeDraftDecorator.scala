@@ -44,10 +44,8 @@ object CompositeDraftDecorator {
     ],
     getPropsForKey: js.Function1[java.lang.String, js.Object]
   ): CompositeDraftDecorator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getComponentForKey")(getComponentForKey)
-    __obj.updateDynamic("getDecorations")(getDecorations)
-    __obj.updateDynamic("getPropsForKey")(getPropsForKey)
+    val __obj = js.Dynamic.literal(getComponentForKey = getComponentForKey, getDecorations = getDecorations, getPropsForKey = getPropsForKey)
+  
     __obj.asInstanceOf[CompositeDraftDecorator]
   }
 }

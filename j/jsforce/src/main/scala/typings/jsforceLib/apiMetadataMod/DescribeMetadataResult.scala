@@ -20,11 +20,8 @@ object DescribeMetadataResult {
     partialSaveAllowed: scala.Boolean,
     testRequired: scala.Boolean
   ): DescribeMetadataResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadataObjects")(metadataObjects)
-    __obj.updateDynamic("organizationNamespace")(organizationNamespace)
-    __obj.updateDynamic("partialSaveAllowed")(partialSaveAllowed)
-    __obj.updateDynamic("testRequired")(testRequired)
+    val __obj = js.Dynamic.literal(metadataObjects = metadataObjects, organizationNamespace = organizationNamespace, partialSaveAllowed = partialSaveAllowed, testRequired = testRequired)
+  
     __obj.asInstanceOf[DescribeMetadataResult]
   }
 }

@@ -22,12 +22,8 @@ object OverflowChangedArgs {
     y: scala.Boolean,
     yScrollable: scala.Boolean
   ): OverflowChangedArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clipped")(clipped)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xScrollable")(xScrollable)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yScrollable")(yScrollable)
+    val __obj = js.Dynamic.literal(clipped = clipped, x = x, xScrollable = xScrollable, y = y, yScrollable = yScrollable)
+  
     __obj.asInstanceOf[OverflowChangedArgs]
   }
 }

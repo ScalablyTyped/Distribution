@@ -12,8 +12,8 @@ trait IDeviceMotionAccelerometerOptions extends js.Object {
 object IDeviceMotionAccelerometerOptions {
   @scala.inline
   def apply(frequency: scala.Double): IDeviceMotionAccelerometerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frequency")(frequency)
+    val __obj = js.Dynamic.literal(frequency = frequency)
+  
     __obj.asInstanceOf[IDeviceMotionAccelerometerOptions]
   }
 }

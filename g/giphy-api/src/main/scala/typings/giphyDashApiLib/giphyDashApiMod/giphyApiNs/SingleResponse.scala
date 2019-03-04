@@ -13,10 +13,8 @@ trait SingleResponse
 object SingleResponse {
   @scala.inline
   def apply(data: GIFObject, meta: giphyDashApiLib.Anon_Msg, pagination: giphyDashApiLib.Anon_Count): SingleResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("pagination")(pagination)
+    val __obj = js.Dynamic.literal(data = data, meta = meta, pagination = pagination)
+  
     __obj.asInstanceOf[SingleResponse]
   }
 }

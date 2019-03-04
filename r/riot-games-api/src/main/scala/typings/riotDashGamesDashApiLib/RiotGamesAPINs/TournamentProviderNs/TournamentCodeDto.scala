@@ -38,20 +38,8 @@ object TournamentCodeDto {
     teamSize: scala.Double,
     tournamentId: scala.Double
   ): TournamentCodeDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lobbyName")(lobbyName)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("metaData")(metaData)
-    __obj.updateDynamic("participants")(participants)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("pickType")(pickType)
-    __obj.updateDynamic("providerId")(providerId)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("spectators")(spectators)
-    __obj.updateDynamic("teamSize")(teamSize)
-    __obj.updateDynamic("tournamentId")(tournamentId)
+    val __obj = js.Dynamic.literal(code = code, id = id, lobbyName = lobbyName, map = map, metaData = metaData, participants = participants, password = password, pickType = pickType, providerId = providerId, region = region, spectators = spectators, teamSize = teamSize, tournamentId = tournamentId)
+  
     __obj.asInstanceOf[TournamentCodeDto]
   }
 }

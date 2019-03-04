@@ -12,8 +12,8 @@ trait Anon_BackgroundString extends js.Object {
 object Anon_BackgroundString {
   @scala.inline
   def apply(background: java.lang.String): Anon_BackgroundString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background")(background)
+    val __obj = js.Dynamic.literal(background = background)
+  
     __obj.asInstanceOf[Anon_BackgroundString]
   }
 }

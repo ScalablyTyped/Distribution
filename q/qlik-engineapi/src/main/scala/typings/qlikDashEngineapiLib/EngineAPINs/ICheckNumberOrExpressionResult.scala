@@ -15,9 +15,8 @@ trait ICheckNumberOrExpressionResult extends IExpressionResult {
 object ICheckNumberOrExpressionResult {
   @scala.inline
   def apply(qBadFieldNames: js.Array[INxRange], qErrorMsg: java.lang.String): ICheckNumberOrExpressionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qBadFieldNames")(qBadFieldNames)
-    __obj.updateDynamic("qErrorMsg")(qErrorMsg)
+    val __obj = js.Dynamic.literal(qBadFieldNames = qBadFieldNames, qErrorMsg = qErrorMsg)
+  
     __obj.asInstanceOf[ICheckNumberOrExpressionResult]
   }
 }

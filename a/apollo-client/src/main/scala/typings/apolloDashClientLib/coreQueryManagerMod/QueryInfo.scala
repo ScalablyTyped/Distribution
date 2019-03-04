@@ -28,10 +28,7 @@ object QueryInfo {
     newData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.DiffResult<any> */ js.Any = null,
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[_, apolloDashClientLib.coreTypesMod.OperationVariables] = null
   ): QueryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invalidated")(invalidated)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("subscriptions")(subscriptions)
+    val __obj = js.Dynamic.literal(invalidated = invalidated, listeners = listeners, subscriptions = subscriptions)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (document != null) __obj.updateDynamic("document")(document)
     if (lastRequestId != null) __obj.updateDynamic("lastRequestId")(lastRequestId.asInstanceOf[js.Any])

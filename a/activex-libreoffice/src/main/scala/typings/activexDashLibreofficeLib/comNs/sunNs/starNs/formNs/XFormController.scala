@@ -41,25 +41,8 @@ object XFormController {
     setContainer: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer, scala.Unit],
     setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel, scala.Unit]
   ): XFormController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Container")(Container)
-    __obj.updateDynamic("Controls")(Controls)
-    __obj.updateDynamic("CurrentControl")(CurrentControl)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activateFirst")(activateFirst)
-    __obj.updateDynamic("activateLast")(activateLast)
-    __obj.updateDynamic("activateTabOrder")(activateTabOrder)
-    __obj.updateDynamic("addActivateListener")(addActivateListener)
-    __obj.updateDynamic("autoTabOrder")(autoTabOrder)
-    __obj.updateDynamic("getContainer")(getContainer)
-    __obj.updateDynamic("getControls")(getControls)
-    __obj.updateDynamic("getCurrentControl")(getCurrentControl)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActivateListener")(removeActivateListener)
-    __obj.updateDynamic("setContainer")(setContainer)
-    __obj.updateDynamic("setModel")(setModel)
+    val __obj = js.Dynamic.literal(Container = Container, Controls = Controls, CurrentControl = CurrentControl, acquire = acquire, activateFirst = activateFirst, activateLast = activateLast, activateTabOrder = activateTabOrder, addActivateListener = addActivateListener, autoTabOrder = autoTabOrder, getContainer = getContainer, getControls = getControls, getCurrentControl = getCurrentControl, getModel = getModel, queryInterface = queryInterface, release = release, removeActivateListener = removeActivateListener, setContainer = setContainer, setModel = setModel)
+  
     __obj.asInstanceOf[XFormController]
   }
 }

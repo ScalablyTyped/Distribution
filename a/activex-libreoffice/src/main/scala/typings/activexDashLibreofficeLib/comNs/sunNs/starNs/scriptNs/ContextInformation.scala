@@ -50,14 +50,8 @@ object ContextInformation {
     StartColumn: scala.Double,
     StartLine: scala.Double
   ): ContextInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndColumn")(EndColumn)
-    __obj.updateDynamic("EndLine")(EndLine)
-    __obj.updateDynamic("LocalVariableNames")(LocalVariableNames)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("SourceCode")(SourceCode)
-    __obj.updateDynamic("StartColumn")(StartColumn)
-    __obj.updateDynamic("StartLine")(StartLine)
+    val __obj = js.Dynamic.literal(EndColumn = EndColumn, EndLine = EndLine, LocalVariableNames = LocalVariableNames, Name = Name, SourceCode = SourceCode, StartColumn = StartColumn, StartLine = StartLine)
+  
     __obj.asInstanceOf[ContextInformation]
   }
 }

@@ -67,17 +67,8 @@ object IDevice {
     resolution: java.lang.String,
     `type`: java.lang.String
   ): IDevice = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("oemName")(oemName)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("osversion")(osversion)
-    __obj.updateDynamic("resolution")(resolution)
+    val __obj = js.Dynamic.literal(id = id, ip = ip, language = language, locale = locale, model = model, network = network, oemName = oemName, os = os, osversion = osversion, resolution = resolution)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IDevice]
   }
 }

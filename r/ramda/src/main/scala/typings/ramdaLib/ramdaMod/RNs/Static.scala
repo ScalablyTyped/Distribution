@@ -11,7 +11,7 @@ trait Static extends js.Object {
     * Placeholder. When used with functions like curry, or op, the second argument is applied to the second
     * position, and it returns a function waiting for its first argument.
     */
-  var `__`: Placeholder = js.native
+  var __ : Placeholder = js.native
   /**
     * Returns a new list containing only those items that match a given predicate function. The predicate function is passed one argument: (value).
     */
@@ -159,17 +159,17 @@ trait Static extends js.Object {
   /**
     * Makes a shallow clone of an object, setting or overriding the specified property with the given value.
     */
-  def assoc[T, U](`__`: Placeholder, `val`: T, obj: U): js.Function1[/* prop */ java.lang.String, (stdLib.Record[java.lang.String, T]) with U] = js.native
-  def assoc[U, K /* <: java.lang.String */](prop: K, `__`: Placeholder, obj: U): js.Function1[/* val */ js.Any, (stdLib.Record[K, _]) with U] = js.native
+  def assoc[T, U](__ : Placeholder, `val`: T, obj: U): js.Function1[/* prop */ java.lang.String, (stdLib.Record[java.lang.String, T]) with U] = js.native
+  def assoc[U, K /* <: java.lang.String */](prop: K, __ : Placeholder, obj: U): js.Function1[/* val */ js.Any, (stdLib.Record[K, _]) with U] = js.native
   def assoc[T, K /* <: java.lang.String */](prop: K, `val`: T): js.Function1[/* obj */ js.Any, (stdLib.Record[K, T]) with js.Any] = js.native
   def assoc[T, U, K /* <: java.lang.String */](prop: K, `val`: T, obj: U): (stdLib.Record[K, T]) with U = js.native
   /**
     * Makes a shallow clone of an object, setting or overriding the nodes required to create the given path, and
     * placing the specific value at the tail end of that path.
     */
-  def assocPath[T, U](`__`: Placeholder, `val`: T, obj: U): js.Function1[/* path */ Path, U] = js.native
+  def assocPath[T, U](__ : Placeholder, `val`: T, obj: U): js.Function1[/* path */ Path, U] = js.native
   def assocPath[T, U](path: Path): CurriedFunction2[T, U, U] = js.native
-  def assocPath[T, U](path: Path, `__`: Placeholder, obj: U): js.Function1[/* val */ T, U] = js.native
+  def assocPath[T, U](path: Path, __ : Placeholder, obj: U): js.Function1[/* val */ T, U] = js.native
   def assocPath[T, U](path: Path, `val`: T): js.Function1[/* obj */ U, U] = js.native
   def assocPath[T, U](path: Path, `val`: T, obj: U): U = js.native
   /**
@@ -438,19 +438,19 @@ trait Static extends js.Object {
     * The arity of the function returned is specified to allow using variadic constructor functions.
     */
   def constructN(n: scala.Double, fn: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def contains(`__`: Placeholder): js.Function2[/* list */ java.lang.String, /* a */ java.lang.String, scala.Boolean] = js.native
+  def contains(__ : Placeholder): js.Function2[/* list */ java.lang.String, /* a */ java.lang.String, scala.Boolean] = js.native
   /**
     * Returns `true` if the specified item is somewhere in the list, `false` otherwise.
     * Equivalent to `indexOf(a)(list) > -1`. Uses strict (`===`) equality checking.
     */
-  def contains(`__`: Placeholder, list: java.lang.String): js.Function1[/* a */ java.lang.String, scala.Boolean] = js.native
+  def contains(__ : Placeholder, list: java.lang.String): js.Function1[/* a */ java.lang.String, scala.Boolean] = js.native
   def contains(a: java.lang.String): js.Function1[/* list */ java.lang.String, scala.Boolean] = js.native
   def contains(a: java.lang.String, list: java.lang.String): scala.Boolean = js.native
-  def contains[T](`__`: Placeholder, list: js.Array[T]): js.Function1[/* a */ T, scala.Boolean] = js.native
+  def contains[T](__ : Placeholder, list: js.Array[T]): js.Function1[/* a */ T, scala.Boolean] = js.native
   def contains[T](a: T): js.Function1[/* list */ js.Array[T], scala.Boolean] = js.native
   def contains[T](a: T, list: js.Array[T]): scala.Boolean = js.native
   @JSName("contains")
-  def contains_T[T](`__`: Placeholder): js.Function2[/* list */ js.Array[T], /* a */ T, scala.Boolean] = js.native
+  def contains_T[T](__ : Placeholder): js.Function2[/* list */ js.Array[T], /* a */ T, scala.Boolean] = js.native
   /**
     * Accepts a converging function and a list of branching functions and returns a new
     * function. When invoked, this new function is applied to some arguments, each branching
@@ -549,11 +549,11 @@ trait Static extends js.Object {
     * Makes a shallow clone of an object, omitting the property at the given path.
     */
   def dissocPath[T](path: Path, obj: js.Any): T = js.native
-  def divide(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
+  def divide(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
   /**
     * Divides two numbers. Equivalent to a / b.
     */
-  def divide(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
+  def divide(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def divide(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def divide(a: scala.Double, b: scala.Double): scala.Double = js.native
   def drop(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
@@ -726,26 +726,26 @@ trait Static extends js.Object {
   def groupWith[T](fn: js.Function2[/* x */ T, /* y */ T, scala.Boolean]): js.Function1[/* list */ js.Array[T], js.Array[js.Array[T]]] = js.native
   def groupWith[T](fn: js.Function2[/* x */ T, /* y */ T, scala.Boolean], list: java.lang.String): js.Array[java.lang.String] = js.native
   def groupWith[T](fn: js.Function2[/* x */ T, /* y */ T, scala.Boolean], list: js.Array[T]): js.Array[js.Array[T]] = js.native
-  def gt(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
+  def gt(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
   /**
     * Returns true if the first parameter is greater than the second.
     */
-  def gt(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
+  def gt(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
   def gt(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Boolean] = js.native
   def gt(a: scala.Double, b: scala.Double): scala.Boolean = js.native
-  def gte(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
+  def gte(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
   /**
     * Returns true if the first parameter is greater than or equal to the second.
     */
-  def gte(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
+  def gte(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
   def gte(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Boolean] = js.native
   def gte(a: scala.Double, b: scala.Double): scala.Boolean = js.native
   def has(s: java.lang.String): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
-  def has[T](`__`: Placeholder): js.Function2[/* obj */ T, /* s */ java.lang.String, scala.Boolean] = js.native
+  def has[T](__ : Placeholder): js.Function2[/* obj */ T, /* s */ java.lang.String, scala.Boolean] = js.native
   /**
     * Returns whether or not an object has an own property with the specified name.
     */
-  def has[T](`__`: Placeholder, obj: T): js.Function1[/* s */ java.lang.String, scala.Boolean] = js.native
+  def has[T](__ : Placeholder, obj: T): js.Function1[/* s */ java.lang.String, scala.Boolean] = js.native
   def has[T](s: java.lang.String, obj: T): scala.Boolean = js.native
   def hasIn(s: java.lang.String): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
   /**
@@ -968,18 +968,18 @@ trait Static extends js.Object {
     * objects that satisfy the FantasyLand Apply spec.
     */
   def liftN(n: scala.Double, fn: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Any = js.native
-  def lt(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
+  def lt(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
   /**
     * Returns true if the first parameter is less than the second.
     */
-  def lt(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
+  def lt(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
   def lt(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Boolean] = js.native
   def lt(a: scala.Double, b: scala.Double): scala.Boolean = js.native
-  def lte(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
+  def lte(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Boolean] = js.native
   /**
     * Returns true if the first parameter is less than or equal to the second.
     */
-  def lte(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
+  def lte(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Boolean] = js.native
   def lte(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Boolean] = js.native
   def lte(a: scala.Double, b: scala.Double): scala.Boolean = js.native
    // used in functors
@@ -1036,14 +1036,14 @@ trait Static extends js.Object {
     * Tests a regular expression agains a String
     */
   def `match`(regexp: stdLib.RegExp, str: java.lang.String): js.Array[_] = js.native
-  def mathMod(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
+  def mathMod(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
   /**
     * mathMod behaves like the modulo operator should mathematically, unlike the `%`
     * operator (and by extension, R.modulo). So while "-17 % 5" is -2,
     * mathMod(-17, 5) is 3. mathMod requires Integer arguments, and returns NaN
     * when the modulus is zero or negative.
     */
-  def mathMod(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
+  def mathMod(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def mathMod(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def mathMod(a: scala.Double, b: scala.Double): scala.Double = js.native
   def max[T /* <: Ord */](a: T): js.Function1[/* b */ T, T] = js.native
@@ -1080,13 +1080,13 @@ trait Static extends js.Object {
     * Care must be taken when implementing key generation to avoid clashes that may overwrite previous entries erroneously.
     */
   def memoizeWith[T /* <: js.Function1[/* repeated */ js.Any, _] */](keyFn: js.Function1[/* repeated */ js.Any, java.lang.String], fn: T): T = js.native
-  def merge(`__`: Placeholder): js.Function2[/* b */ js.Any, /* a */ js.Any, js.Any] = js.native
+  def merge(__ : Placeholder): js.Function2[/* b */ js.Any, /* a */ js.Any, js.Any] = js.native
   /**
     * Create a new object with the own properties of a
     * merged with the own properties of object b.
     * This function will *not* mutate passed-in objects.
     */
-  def merge[T2](`__`: Placeholder, b: T2): js.Function1[/* a */ js.Any, js.Any with T2] = js.native
+  def merge[T2](__ : Placeholder, b: T2): js.Function1[/* a */ js.Any, js.Any with T2] = js.native
   def merge[T1](a: T1): js.Function1[/* b */ js.Any, T1 with js.Any] = js.native
   def merge[T1, T2](a: T1, b: T2): T1 with T2 = js.native
   /**
@@ -1158,14 +1158,14 @@ trait Static extends js.Object {
     * the smaller result when passed to the provided function.
     */
   def minBy[T](keyFn: js.Function1[/* a */ T, Ord], a: T, b: T): T = js.native
-  def modulo(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
+  def modulo(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
   /**
     * Divides the second parameter by the first and returns the remainder.
     * The flipped version (`moduloBy`) may be more useful curried.
     * Note that this functions preserves the JavaScript-style behavior for
     * modulo. For mathematical modulo see `mathMod`
     */
-  def modulo(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
+  def modulo(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def modulo(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def modulo(a: scala.Double, b: scala.Double): scala.Double = js.native
   def move(from: scala.Double): ramdaLib.Anon_List = js.native
@@ -1797,7 +1797,7 @@ trait Static extends js.Object {
   /**
     * Returns a function that when supplied an object returns the indicated property of that object, if it exists.
     */
-  def prop[T](`__`: Placeholder, obj: T): js.Function1[
+  def prop[T](__ : Placeholder, obj: T): js.Function1[
     /* p */ java.lang.String, 
     /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
@@ -2078,11 +2078,11 @@ trait Static extends js.Object {
   def startsWith[T](a: T, list: js.Array[T]): scala.Boolean = js.native
   def startsWith[T](a: js.Array[T]): js.Function1[/* list */ js.Array[T], scala.Boolean] = js.native
   def startsWith[T](a: js.Array[T], list: js.Array[T]): scala.Boolean = js.native
-  def subtract(`__`: Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
+  def subtract(__ : Placeholder): js.Function2[/* b */ scala.Double, /* a */ scala.Double, scala.Double] = js.native
   /**
     * Subtracts two numbers. Equivalent to `a - b` but curried.
     */
-  def subtract(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
+  def subtract(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def subtract(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def subtract(a: scala.Double, b: scala.Double): scala.Double = js.native
   /**

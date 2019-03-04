@@ -26,8 +26,7 @@ object Anon_AnonymousIdContext {
     timestamp: stdLib.Date = null,
     userId: java.lang.String | scala.Double = null
   ): Anon_AnonymousIdContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
     if (integrations != null) __obj.updateDynamic("integrations")(integrations)

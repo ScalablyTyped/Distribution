@@ -17,9 +17,8 @@ object cssClasses {
     DISABLED: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio--disabled`,
     ROOT: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DISABLED")(DISABLED)
-    __obj.updateDynamic("ROOT")(ROOT)
+    val __obj = js.Dynamic.literal(DISABLED = DISABLED, ROOT = ROOT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

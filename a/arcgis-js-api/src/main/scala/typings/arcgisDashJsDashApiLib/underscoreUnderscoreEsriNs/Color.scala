@@ -333,13 +333,8 @@ object color {
       arcgisDashJsDashApiLib.IPromise[VisualVariableResult]
     ]
   ): color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAgeRenderer")(createAgeRenderer)
-    __obj.updateDynamic("createClassBreaksRenderer")(createClassBreaksRenderer)
-    __obj.updateDynamic("createContinuousRenderer")(createContinuousRenderer)
-    __obj.updateDynamic("createPCContinuousRenderer")(createPCContinuousRenderer)
-    __obj.updateDynamic("createPCTrueColorRenderer")(createPCTrueColorRenderer)
-    __obj.updateDynamic("createVisualVariable")(createVisualVariable)
+    val __obj = js.Dynamic.literal(createAgeRenderer = createAgeRenderer, createClassBreaksRenderer = createClassBreaksRenderer, createContinuousRenderer = createContinuousRenderer, createPCContinuousRenderer = createPCContinuousRenderer, createPCTrueColorRenderer = createPCTrueColorRenderer, createVisualVariable = createVisualVariable)
+  
     __obj.asInstanceOf[color]
   }
 }

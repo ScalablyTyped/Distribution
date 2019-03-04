@@ -22,8 +22,8 @@ object File {
     `type`: astDashTypesLib.astDashTypesLibStrings.File,
     name: java.lang.String = null
   ): File = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("program")(program)
+    val __obj = js.Dynamic.literal(program = program)
+    __obj.updateDynamic("type")(`type`)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[File]
   }

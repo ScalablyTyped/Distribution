@@ -57,30 +57,8 @@ object Spreadsheets {
     removeByName: js.Function1[java.lang.String, scala.Unit],
     replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Spreadsheets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copyByName")(copyByName)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("getCellRangesByName")(getCellRangesByName)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("insertNewByName")(insertNewByName)
-    __obj.updateDynamic("moveByName")(moveByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("replaceByName")(replaceByName)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, copyByName = copyByName, createEnumeration = createEnumeration, getByIndex = getByIndex, getByName = getByName, getCellByPosition = getCellByPosition, getCellRangeByPosition = getCellRangeByPosition, getCellRangesByName = getCellRangesByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, insertNewByName = insertNewByName, moveByName = moveByName, queryInterface = queryInterface, release = release, removeByName = removeByName, replaceByName = replaceByName)
+  
     __obj.asInstanceOf[Spreadsheets]
   }
 }

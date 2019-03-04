@@ -38,16 +38,8 @@ object XMenuProxy {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     removeMenuProxyListener: js.Function1[XMenuProxyListener, scala.Unit]
   ): XMenuProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addMenuProxyListener")(addMenuProxyListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("executeMenuItem")(executeMenuItem)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeMenuProxyListener")(removeMenuProxyListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, addMenuProxyListener = addMenuProxyListener, dispose = dispose, executeMenuItem = executeMenuItem, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeMenuProxyListener = removeMenuProxyListener)
+  
     __obj.asInstanceOf[XMenuProxy]
   }
 }

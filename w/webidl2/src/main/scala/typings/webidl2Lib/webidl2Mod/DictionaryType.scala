@@ -29,11 +29,8 @@ object DictionaryType {
     `type`: webidl2Lib.webidl2LibStrings.dictionary,
     inheritance: java.lang.String = null
   ): DictionaryType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partial")(partial)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial)
+    __obj.updateDynamic("type")(`type`)
     if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance)
     __obj.asInstanceOf[DictionaryType]
   }

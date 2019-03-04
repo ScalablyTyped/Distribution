@@ -34,9 +34,7 @@ object MuiThemeProviderProps {
       stdLib.Map[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, SheetManagerTheme]
     ] = null
   ): MuiThemeProviderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration)
     if (sheetsManager != null) __obj.updateDynamic("sheetsManager")(sheetsManager)
     __obj.asInstanceOf[MuiThemeProviderProps]

@@ -12,8 +12,8 @@ trait DeploymentBuild extends Deployment {
 object DeploymentBuild {
   @scala.inline
   def apply(buildId: scala.Double, `type`: java.lang.String): DeploymentBuild = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("buildId")(buildId)
+    val __obj = js.Dynamic.literal(buildId = buildId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeploymentBuild]
   }
 }

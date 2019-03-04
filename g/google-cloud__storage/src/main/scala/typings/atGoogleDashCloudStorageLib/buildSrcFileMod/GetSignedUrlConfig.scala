@@ -30,9 +30,7 @@ object GetSignedUrlConfig {
     responseDisposition: java.lang.String = null,
     responseType: java.lang.String = null
   ): GetSignedUrlConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any])
     if (cname != null) __obj.updateDynamic("cname")(cname)
     if (contentMd5 != null) __obj.updateDynamic("contentMd5")(contentMd5)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)

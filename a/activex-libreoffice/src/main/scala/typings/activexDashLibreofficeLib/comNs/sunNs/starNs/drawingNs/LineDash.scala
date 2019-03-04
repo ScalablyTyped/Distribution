@@ -31,13 +31,8 @@ object LineDash {
     Dots: scala.Double,
     Style: DashStyle
   ): LineDash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DashLen")(DashLen)
-    __obj.updateDynamic("Dashes")(Dashes)
-    __obj.updateDynamic("Distance")(Distance)
-    __obj.updateDynamic("DotLen")(DotLen)
-    __obj.updateDynamic("Dots")(Dots)
-    __obj.updateDynamic("Style")(Style)
+    val __obj = js.Dynamic.literal(DashLen = DashLen, Dashes = Dashes, Distance = Distance, DotLen = DotLen, Dots = Dots, Style = Style)
+  
     __obj.asInstanceOf[LineDash]
   }
 }

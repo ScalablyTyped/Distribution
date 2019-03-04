@@ -24,8 +24,7 @@ object Props {
     jss: jssLib.jssMod.JSS = null,
     registry: jssLib.jssMod.SheetsRegistry = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix)
     if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration)
     if (generateClassName != null) __obj.updateDynamic("generateClassName")(generateClassName)

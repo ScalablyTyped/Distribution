@@ -32,17 +32,8 @@ object IObjectTemplateSelectorItem {
     IsBlankItem: js.Function0[scala.Boolean],
     IsDefaultTemplateForClass: js.Function0[scala.Boolean]
   ): IObjectTemplateSelectorItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetClassID")(GetClassID)
-    __obj.updateDynamic("GetClassName")(GetClassName)
-    __obj.updateDynamic("GetGroupID")(GetGroupID)
-    __obj.updateDynamic("GetGroupName")(GetGroupName)
-    __obj.updateDynamic("GetID")(GetID)
-    __obj.updateDynamic("GetIconURL")(GetIconURL)
-    __obj.updateDynamic("GetName")(GetName)
-    __obj.updateDynamic("GetTemplateID")(GetTemplateID)
-    __obj.updateDynamic("IsBlankItem")(IsBlankItem)
-    __obj.updateDynamic("IsDefaultTemplateForClass")(IsDefaultTemplateForClass)
+    val __obj = js.Dynamic.literal(GetClassID = GetClassID, GetClassName = GetClassName, GetGroupID = GetGroupID, GetGroupName = GetGroupName, GetID = GetID, GetIconURL = GetIconURL, GetName = GetName, GetTemplateID = GetTemplateID, IsBlankItem = IsBlankItem, IsDefaultTemplateForClass = IsDefaultTemplateForClass)
+  
     __obj.asInstanceOf[IObjectTemplateSelectorItem]
   }
 }

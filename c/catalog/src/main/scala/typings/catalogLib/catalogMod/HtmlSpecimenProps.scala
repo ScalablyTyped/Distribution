@@ -28,8 +28,7 @@ object HtmlSpecimenProps {
     responsive: scala.Boolean | java.lang.String | js.Array[java.lang.String] = null,
     showSource: js.UndefOr[scala.Boolean] = js.undefined
   ): HtmlSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
     if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
     if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)

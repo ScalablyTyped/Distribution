@@ -40,8 +40,7 @@ object Props {
     uniquifyIDs: js.UndefOr[scala.Boolean] = js.undefined,
     wrapper: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
     if (!js.isUndefined(cacheGetRequests)) __obj.updateDynamic("cacheGetRequests")(cacheGetRequests)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

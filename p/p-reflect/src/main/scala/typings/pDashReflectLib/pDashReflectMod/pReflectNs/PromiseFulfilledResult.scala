@@ -18,10 +18,8 @@ object PromiseFulfilledResult {
     isRejected: pDashReflectLib.pDashReflectLibNumbers.`false`,
     value: T
   ): PromiseFulfilledResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isFulfilled")(isFulfilled)
-    __obj.updateDynamic("isRejected")(isRejected)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isRejected = isRejected, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PromiseFulfilledResult[T]]
   }
 }

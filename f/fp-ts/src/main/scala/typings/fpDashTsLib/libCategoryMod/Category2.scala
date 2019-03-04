@@ -21,10 +21,8 @@ object Category2 {
     ],
     id: js.Function0[fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]]
   ): Category2[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compose = compose, id = id)
+  
     __obj.asInstanceOf[Category2[F]]
   }
 }

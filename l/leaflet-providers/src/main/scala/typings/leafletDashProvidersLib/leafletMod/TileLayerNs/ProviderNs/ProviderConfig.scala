@@ -18,8 +18,7 @@ object ProviderConfig {
     options: leafletLib.leafletMod.TileLayerOptions = null,
     variants: org.scalablytyped.runtime.StringDictionary[java.lang.String | ProviderConfig] = null
   ): ProviderConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (options != null) __obj.updateDynamic("options")(options)
     if (variants != null) __obj.updateDynamic("variants")(variants)
     __obj.asInstanceOf[ProviderConfig]

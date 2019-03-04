@@ -20,10 +20,7 @@ object IProblem {
     severity: java.lang.String,
     locations: js.Array[IProblemLocation] = null
   ): IProblem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(message = message, name = name, severity = severity)
     if (locations != null) __obj.updateDynamic("locations")(locations)
     __obj.asInstanceOf[IProblem]
   }

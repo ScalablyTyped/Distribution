@@ -39,6 +39,6 @@ class MapIterator[Key, T, Unique /* <: scala.Boolean */, Source /* <: tstlLib.ba
   /**
     * @hidden
     */
-  var `source_`: js.Any = js.native
+  var source_ : js.Any = js.native
 }
 

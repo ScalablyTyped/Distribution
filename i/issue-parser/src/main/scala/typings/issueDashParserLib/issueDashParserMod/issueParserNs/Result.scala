@@ -20,11 +20,8 @@ object Result {
     mentions: js.Array[Mention],
     refs: js.Array[Reference]
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("allRefs")(allRefs)
-    __obj.updateDynamic("mentions")(mentions)
-    __obj.updateDynamic("refs")(refs)
+    val __obj = js.Dynamic.literal(actions = actions, allRefs = allRefs, mentions = mentions, refs = refs)
+  
     __obj.asInstanceOf[Result]
   }
 }

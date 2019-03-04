@@ -56,10 +56,7 @@ object ISearchCombinationOptions {
     qSearchFields: js.Array[java.lang.String],
     qAttributes: js.Array[java.lang.String] = null
   ): ISearchCombinationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCharEncoding")(qCharEncoding.asInstanceOf[js.Any])
-    __obj.updateDynamic("qContext")(qContext)
-    __obj.updateDynamic("qSearchFields")(qSearchFields)
+    val __obj = js.Dynamic.literal(qCharEncoding = qCharEncoding.asInstanceOf[js.Any], qContext = qContext, qSearchFields = qSearchFields)
     if (qAttributes != null) __obj.updateDynamic("qAttributes")(qAttributes)
     __obj.asInstanceOf[ISearchCombinationOptions]
   }

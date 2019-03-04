@@ -12,8 +12,8 @@ trait Anon_IsDirectory extends js.Object {
 object Anon_IsDirectory {
   @scala.inline
   def apply(isDirectory: js.Function0[scala.Boolean]): Anon_IsDirectory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDirectory")(isDirectory)
+    val __obj = js.Dynamic.literal(isDirectory = isDirectory)
+  
     __obj.asInstanceOf[Anon_IsDirectory]
   }
 }

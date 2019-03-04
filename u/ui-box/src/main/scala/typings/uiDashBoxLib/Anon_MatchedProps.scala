@@ -13,9 +13,8 @@ trait Anon_MatchedProps extends js.Object {
 object Anon_MatchedProps {
   @scala.inline
   def apply(matchedProps: js.Object, remainingProps: js.Object): Anon_MatchedProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchedProps")(matchedProps)
-    __obj.updateDynamic("remainingProps")(remainingProps)
+    val __obj = js.Dynamic.literal(matchedProps = matchedProps, remainingProps = remainingProps)
+  
     __obj.asInstanceOf[Anon_MatchedProps]
   }
 }

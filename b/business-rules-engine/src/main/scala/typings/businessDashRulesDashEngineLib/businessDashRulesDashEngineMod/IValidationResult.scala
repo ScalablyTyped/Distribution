@@ -32,15 +32,7 @@ object IValidationResult {
     Optional: IOptional = null,
     TranslateArgs: js.Array[IErrorTranslateArgs] = null
   ): IValidationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Children")(Children)
-    __obj.updateDynamic("ErrorCount")(ErrorCount)
-    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    __obj.updateDynamic("HasErrors")(HasErrors)
-    __obj.updateDynamic("HasErrorsDirty")(HasErrorsDirty)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Children = Children, ErrorCount = ErrorCount, ErrorMessage = ErrorMessage, HasErrors = HasErrors, HasErrorsDirty = HasErrorsDirty, Name = Name, Remove = Remove)
     if (Optional != null) __obj.updateDynamic("Optional")(Optional)
     if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs)
     __obj.asInstanceOf[IValidationResult]

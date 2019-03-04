@@ -13,9 +13,8 @@ trait KnockoutPagingDefaultOptions extends js.Object {
 object KnockoutPagingDefaultOptions {
   @scala.inline
   def apply(pageNumber: scala.Double, pageSize: scala.Double): KnockoutPagingDefaultOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pageNumber")(pageNumber)
-    __obj.updateDynamic("pageSize")(pageSize)
+    val __obj = js.Dynamic.literal(pageNumber = pageNumber, pageSize = pageSize)
+  
     __obj.asInstanceOf[KnockoutPagingDefaultOptions]
   }
 }

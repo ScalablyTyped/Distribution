@@ -149,29 +149,8 @@ object JobTypeDetails {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     state: java.lang.String
   ): JobTypeDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoExecuteCreatedJobs")(autoExecuteCreatedJobs)
-    __obj.updateDynamic("canDataWorkspaceChange")(canDataWorkspaceChange)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultAssignedTo")(defaultAssignedTo)
-    __obj.updateDynamic("defaultAssignedType")(defaultAssignedType)
-    __obj.updateDynamic("defaultDataWorkspaceId")(defaultDataWorkspaceId)
-    __obj.updateDynamic("defaultDescription")(defaultDescription)
-    __obj.updateDynamic("defaultDueDate")(defaultDueDate)
-    __obj.updateDynamic("defaultJobDuration")(defaultJobDuration)
-    __obj.updateDynamic("defaultParentVersionName")(defaultParentVersionName)
-    __obj.updateDynamic("defaultPriority")(defaultPriority)
-    __obj.updateDynamic("defaultStartDate")(defaultStartDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("jobNamingScheme")(jobNamingScheme)
-    __obj.updateDynamic("jobVersionNamingScheme")(jobVersionNamingScheme)
-    __obj.updateDynamic("mxdNamingScheme")(mxdNamingScheme)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(autoExecuteCreatedJobs = autoExecuteCreatedJobs, canDataWorkspaceChange = canDataWorkspaceChange, category = category, constructor = constructor, defaultAssignedTo = defaultAssignedTo, defaultAssignedType = defaultAssignedType, defaultDataWorkspaceId = defaultDataWorkspaceId, defaultDescription = defaultDescription, defaultDueDate = defaultDueDate, defaultJobDuration = defaultJobDuration, defaultParentVersionName = defaultParentVersionName, defaultPriority = defaultPriority, defaultStartDate = defaultStartDate, description = description, hasOwnProperty = hasOwnProperty, id = id, jobNamingScheme = jobNamingScheme, jobVersionNamingScheme = jobVersionNamingScheme, mxdNamingScheme = mxdNamingScheme, name = name, propertyIsEnumerable = propertyIsEnumerable, state = state)
+  
     __obj.asInstanceOf[JobTypeDetails]
   }
 }

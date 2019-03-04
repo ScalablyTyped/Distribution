@@ -52,17 +52,7 @@ object Anon_Ami {
     userData: java.lang.String = null,
     weightedCapacity: java.lang.String = null
   ): Anon_Ami = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ami")(ami)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices)
-    __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices)
-    __obj.updateDynamic("instanceType")(instanceType)
-    __obj.updateDynamic("keyName")(keyName)
-    __obj.updateDynamic("placementGroup")(placementGroup)
-    __obj.updateDynamic("rootBlockDevices")(rootBlockDevices)
-    __obj.updateDynamic("subnetId")(subnetId)
-    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(ami = ami, availabilityZone = availabilityZone, ebsBlockDevices = ebsBlockDevices, ephemeralBlockDevices = ephemeralBlockDevices, instanceType = instanceType, keyName = keyName, placementGroup = placementGroup, rootBlockDevices = rootBlockDevices, subnetId = subnetId, vpcSecurityGroupIds = vpcSecurityGroupIds)
     if (!js.isUndefined(associatePublicIpAddress)) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
     if (!js.isUndefined(ebsOptimized)) __obj.updateDynamic("ebsOptimized")(ebsOptimized)
     if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)

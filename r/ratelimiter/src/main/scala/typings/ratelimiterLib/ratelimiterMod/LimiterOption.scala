@@ -32,9 +32,7 @@ object LimiterOption {
     duration: scala.Int | scala.Double = null,
     max: scala.Int | scala.Double = null
   ): LimiterOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(db = db, id = id)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimiterOption]

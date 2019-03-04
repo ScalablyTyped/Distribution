@@ -38,8 +38,7 @@ object Anon_AccessKey {
     userAgent: java.lang.String = null,
     userArn: java.lang.String = null
   ): Anon_AccessKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceIp")(sourceIp)
+    val __obj = js.Dynamic.literal(sourceIp = sourceIp)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (accountId != null) __obj.updateDynamic("accountId")(accountId)
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)

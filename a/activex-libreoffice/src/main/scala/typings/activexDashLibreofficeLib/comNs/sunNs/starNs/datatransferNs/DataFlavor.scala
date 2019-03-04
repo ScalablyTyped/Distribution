@@ -25,10 +25,8 @@ object DataFlavor {
     HumanPresentableName: java.lang.String,
     MimeType: java.lang.String
   ): DataFlavor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataType")(DataType)
-    __obj.updateDynamic("HumanPresentableName")(HumanPresentableName)
-    __obj.updateDynamic("MimeType")(MimeType)
+    val __obj = js.Dynamic.literal(DataType = DataType, HumanPresentableName = HumanPresentableName, MimeType = MimeType)
+  
     __obj.asInstanceOf[DataFlavor]
   }
 }

@@ -12,8 +12,8 @@ trait Binder extends js.Object {
 object Binder {
   @scala.inline
   def apply(getIndex: js.Function0[scala.Double]): Binder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIndex")(getIndex)
+    val __obj = js.Dynamic.literal(getIndex = getIndex)
+  
     __obj.asInstanceOf[Binder]
   }
 }

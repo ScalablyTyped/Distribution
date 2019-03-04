@@ -23,11 +23,8 @@ object ASPxClientHtmlEditorPlaceholderDialog {
     GetOkButton: js.Function0[ASPxClientButton],
     GetPlaceholderNameListBox: js.Function0[ASPxClientListBox]
   ): ASPxClientHtmlEditorPlaceholderDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetPlaceholderNameListBox")(GetPlaceholderNameListBox)
+    val __obj = js.Dynamic.literal(GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetOkButton = GetOkButton, GetPlaceholderNameListBox = GetPlaceholderNameListBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorPlaceholderDialog]
   }
 }

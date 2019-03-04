@@ -31,8 +31,7 @@ object QuantileScale {
     round: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.quantile = null
   ): QuantileScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])
     if (domainMid != null) __obj.updateDynamic("domainMid")(domainMid.asInstanceOf[js.Any])

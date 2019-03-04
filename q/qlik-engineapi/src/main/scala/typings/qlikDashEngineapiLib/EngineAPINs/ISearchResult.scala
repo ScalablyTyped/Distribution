@@ -35,10 +35,8 @@ object ISearchResult {
     qSearchTerms: js.Array[java.lang.String],
     qTotalNumberOfGroups: scala.Double
   ): ISearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qSearchGroupArray")(qSearchGroupArray)
-    __obj.updateDynamic("qSearchTerms")(qSearchTerms)
-    __obj.updateDynamic("qTotalNumberOfGroups")(qTotalNumberOfGroups)
+    val __obj = js.Dynamic.literal(qSearchGroupArray = qSearchGroupArray, qSearchTerms = qSearchTerms, qTotalNumberOfGroups = qTotalNumberOfGroups)
+  
     __obj.asInstanceOf[ISearchResult]
   }
 }

@@ -31,16 +31,7 @@ object ComposibleValidatable {
     validating: scala.Boolean,
     error: java.lang.String = null
   ): ComposibleValidatable[TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$")($.asInstanceOf[js.Any])
-    __obj.updateDynamic("enableAutoValidation")(enableAutoValidation)
-    __obj.updateDynamic("hasError")(hasError)
-    __obj.updateDynamic("on$ChangeAfterValidation")(on$ChangeAfterValidation)
-    __obj.updateDynamic("on$Reinit")(on$Reinit)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setCompositionParent")(setCompositionParent)
-    __obj.updateDynamic("validate")(validate)
-    __obj.updateDynamic("validating")(validating)
+    val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], enableAutoValidation = enableAutoValidation, hasError = hasError, on$ChangeAfterValidation = on$ChangeAfterValidation, on$Reinit = on$Reinit, reset = reset, setCompositionParent = setCompositionParent, validate = validate, validating = validating)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[ComposibleValidatable[TValue]]
   }

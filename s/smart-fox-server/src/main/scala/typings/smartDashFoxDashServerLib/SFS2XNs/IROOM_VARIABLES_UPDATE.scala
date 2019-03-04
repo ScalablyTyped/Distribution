@@ -16,9 +16,8 @@ object IROOM_VARIABLES_UPDATE {
     changedVars: js.Array[java.lang.String],
     room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom
   ): IROOM_VARIABLES_UPDATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changedVars")(changedVars)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(changedVars = changedVars, room = room)
+  
     __obj.asInstanceOf[IROOM_VARIABLES_UPDATE]
   }
 }

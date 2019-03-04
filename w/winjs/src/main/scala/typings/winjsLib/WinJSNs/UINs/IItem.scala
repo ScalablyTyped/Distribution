@@ -41,12 +41,8 @@ object IItem {
     index: scala.Double,
     key: java.lang.String
   ): IItem[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("groupKey")(groupKey)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groupKey = groupKey, handle = handle, index = index, key = key)
+  
     __obj.asInstanceOf[IItem[T]]
   }
 }

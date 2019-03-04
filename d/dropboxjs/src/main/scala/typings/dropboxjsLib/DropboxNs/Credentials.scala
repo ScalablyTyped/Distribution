@@ -20,8 +20,7 @@ object Credentials {
     token: java.lang.String = null,
     uid: java.lang.String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (secret != null) __obj.updateDynamic("secret")(secret)
     if (token != null) __obj.updateDynamic("token")(token)
     if (uid != null) __obj.updateDynamic("uid")(uid)

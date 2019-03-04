@@ -68,35 +68,8 @@ object TestInfo {
     video: java.lang.String,
     web10: scala.Double
   ): TestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("bodies")(bodies)
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("bwIn")(bwIn)
-    __obj.updateDynamic("bwOut")(bwOut)
-    __obj.updateDynamic("connectivity")(connectivity)
-    __obj.updateDynamic("fvonly")(fvonly)
-    __obj.updateDynamic("ignoreSSL")(ignoreSSL)
-    __obj.updateDynamic("iq")(iq)
-    __obj.updateDynamic("keepua")(keepua)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("latency")(latency)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("netlog")(netlog)
-    __obj.updateDynamic("noscript")(noscript)
-    __obj.updateDynamic("plr")(plr)
-    __obj.updateDynamic("pngss")(pngss)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("runs")(runs)
-    __obj.updateDynamic("scripted")(scripted)
-    __obj.updateDynamic("standards")(standards)
-    __obj.updateDynamic("tcpdump")(tcpdump)
-    __obj.updateDynamic("timeline")(timeline)
-    __obj.updateDynamic("trace")(trace)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("video")(video)
-    __obj.updateDynamic("web10")(web10)
+    val __obj = js.Dynamic.literal(block = block, bodies = bodies, browser = browser, bwIn = bwIn, bwOut = bwOut, connectivity = connectivity, fvonly = fvonly, ignoreSSL = ignoreSSL, iq = iq, keepua = keepua, label = label, latency = latency, location = location, mobile = mobile, netlog = netlog, noscript = noscript, plr = plr, pngss = pngss, priority = priority, runs = runs, scripted = scripted, standards = standards, tcpdump = tcpdump, timeline = timeline, trace = trace, url = url, video = video, web10 = web10)
+  
     __obj.asInstanceOf[TestInfo]
   }
 }

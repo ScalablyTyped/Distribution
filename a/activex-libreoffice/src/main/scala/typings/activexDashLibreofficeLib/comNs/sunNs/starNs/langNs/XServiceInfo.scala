@@ -48,15 +48,8 @@ object XServiceInfo {
     release: js.Function0[scala.Unit],
     supportsService: js.Function1[java.lang.String, scala.Boolean]
   ): XServiceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ImplementationName")(ImplementationName)
-    __obj.updateDynamic("SupportedServiceNames")(SupportedServiceNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getImplementationName")(getImplementationName)
-    __obj.updateDynamic("getSupportedServiceNames")(getSupportedServiceNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("supportsService")(supportsService)
+    val __obj = js.Dynamic.literal(ImplementationName = ImplementationName, SupportedServiceNames = SupportedServiceNames, acquire = acquire, getImplementationName = getImplementationName, getSupportedServiceNames = getSupportedServiceNames, queryInterface = queryInterface, release = release, supportsService = supportsService)
+  
     __obj.asInstanceOf[XServiceInfo]
   }
 }

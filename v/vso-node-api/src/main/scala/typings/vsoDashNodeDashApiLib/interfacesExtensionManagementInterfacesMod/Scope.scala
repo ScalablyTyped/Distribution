@@ -14,10 +14,8 @@ trait Scope extends js.Object {
 object Scope {
   @scala.inline
   def apply(description: java.lang.String, title: java.lang.String, value: java.lang.String): Scope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(description = description, title = title, value = value)
+  
     __obj.asInstanceOf[Scope]
   }
 }

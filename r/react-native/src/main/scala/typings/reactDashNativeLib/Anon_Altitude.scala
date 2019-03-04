@@ -22,12 +22,8 @@ object Anon_Altitude {
     longitude: scala.Double,
     speed: scala.Double
   ): Anon_Altitude = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("speed")(speed)
+    val __obj = js.Dynamic.literal(altitude = altitude, heading = heading, latitude = latitude, longitude = longitude, speed = speed)
+  
     __obj.asInstanceOf[Anon_Altitude]
   }
 }

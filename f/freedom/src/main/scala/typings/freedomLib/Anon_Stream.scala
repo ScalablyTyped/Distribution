@@ -12,8 +12,8 @@ trait Anon_Stream extends js.Object {
 object Anon_Stream {
   @scala.inline
   def apply(stream: scala.Double): Anon_Stream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(stream = stream)
+  
     __obj.asInstanceOf[Anon_Stream]
   }
 }

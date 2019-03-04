@@ -37,12 +37,8 @@ object IToSVGOptions {
     viewBox: IViewBox,
     width: scala.Double
   ): IToSVGOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("suppressPreamble")(suppressPreamble)
-    __obj.updateDynamic("viewBox")(viewBox)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(encoding = encoding, height = height, suppressPreamble = suppressPreamble, viewBox = viewBox, width = width)
+  
     __obj.asInstanceOf[IToSVGOptions]
   }
 }

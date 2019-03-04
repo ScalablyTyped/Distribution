@@ -93,21 +93,8 @@ object StepType {
     supportedPlatform: java.lang.String,
     visible: scala.Boolean
   ): StepType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("executionType")(executionType)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stepDescriptionLink")(stepDescriptionLink)
-    __obj.updateDynamic("stepDescriptionType")(stepDescriptionType)
-    __obj.updateDynamic("stepIndicatorType")(stepIndicatorType)
-    __obj.updateDynamic("supportedPlatform")(supportedPlatform)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(arguments = arguments, constructor = constructor, description = description, executionType = executionType, hasOwnProperty = hasOwnProperty, id = id, name = name, program = program, propertyIsEnumerable = propertyIsEnumerable, stepDescriptionLink = stepDescriptionLink, stepDescriptionType = stepDescriptionType, stepIndicatorType = stepIndicatorType, supportedPlatform = supportedPlatform, visible = visible)
+  
     __obj.asInstanceOf[StepType]
   }
 }

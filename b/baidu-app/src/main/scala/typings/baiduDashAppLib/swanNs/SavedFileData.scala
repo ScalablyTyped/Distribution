@@ -14,8 +14,8 @@ trait SavedFileData extends js.Object {
 object SavedFileData {
   @scala.inline
   def apply(savedFilePath: java.lang.String): SavedFileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("savedFilePath")(savedFilePath)
+    val __obj = js.Dynamic.literal(savedFilePath = savedFilePath)
+  
     __obj.asInstanceOf[SavedFileData]
   }
 }

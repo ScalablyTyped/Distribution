@@ -20,11 +20,8 @@ object Face {
     smoothingGroup: scala.Double,
     vertices: js.Array[FaceVertex]
   ): Face = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("smoothingGroup")(smoothingGroup)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(group = group, material = material, smoothingGroup = smoothingGroup, vertices = vertices)
+  
     __obj.asInstanceOf[Face]
   }
 }

@@ -23,10 +23,7 @@ object LiveDialogParams {
     broadcast_data: LiveDialogResponse = null,
     redirect_uri: java.lang.String = null
   ): LiveDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("phase")(phase.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], method = method, phase = phase.asInstanceOf[js.Any])
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (broadcast_data != null) __obj.updateDynamic("broadcast_data")(broadcast_data)
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)

@@ -22,9 +22,7 @@ object PartitionMetadata {
     partitionErrorCode: scala.Int | scala.Double = null,
     replicas: js.Array[scala.Double] = null
   ): PartitionMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leader")(leader)
-    __obj.updateDynamic("partitionId")(partitionId)
+    val __obj = js.Dynamic.literal(leader = leader, partitionId = partitionId)
     if (isr != null) __obj.updateDynamic("isr")(isr)
     if (partitionErrorCode != null) __obj.updateDynamic("partitionErrorCode")(partitionErrorCode.asInstanceOf[js.Any])
     if (replicas != null) __obj.updateDynamic("replicas")(replicas)

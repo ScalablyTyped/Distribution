@@ -38,12 +38,8 @@ object XRestartManager {
     release: js.Function0[scala.Unit],
     requestRestart: js.Function1[XInteractionHandler, scala.Unit]
   ): XRestartManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("isRestartRequested")(isRestartRequested)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("requestRestart")(requestRestart)
+    val __obj = js.Dynamic.literal(acquire = acquire, isRestartRequested = isRestartRequested, queryInterface = queryInterface, release = release, requestRestart = requestRestart)
+  
     __obj.asInstanceOf[XRestartManager]
   }
 }

@@ -50,25 +50,7 @@ object Anon_ArgsEscapedAttachStderr {
     WorkingDir: java.lang.String,
     Entrypoint: js.Any = null
   ): Anon_ArgsEscapedAttachStderr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArgsEscaped")(ArgsEscaped)
-    __obj.updateDynamic("AttachStderr")(AttachStderr)
-    __obj.updateDynamic("AttachStdin")(AttachStdin)
-    __obj.updateDynamic("AttachStdout")(AttachStdout)
-    __obj.updateDynamic("Cmd")(Cmd)
-    __obj.updateDynamic("Domainname")(Domainname)
-    __obj.updateDynamic("Env")(Env)
-    __obj.updateDynamic("ExposedPorts")(ExposedPorts)
-    __obj.updateDynamic("Hostname")(Hostname)
-    __obj.updateDynamic("Image")(Image)
-    __obj.updateDynamic("Labels")(Labels)
-    __obj.updateDynamic("OnBuild")(OnBuild)
-    __obj.updateDynamic("OpenStdin")(OpenStdin)
-    __obj.updateDynamic("StdinOnce")(StdinOnce)
-    __obj.updateDynamic("Tty")(Tty)
-    __obj.updateDynamic("User")(User)
-    __obj.updateDynamic("Volumes")(Volumes)
-    __obj.updateDynamic("WorkingDir")(WorkingDir)
+    val __obj = js.Dynamic.literal(ArgsEscaped = ArgsEscaped, AttachStderr = AttachStderr, AttachStdin = AttachStdin, AttachStdout = AttachStdout, Cmd = Cmd, Domainname = Domainname, Env = Env, ExposedPorts = ExposedPorts, Hostname = Hostname, Image = Image, Labels = Labels, OnBuild = OnBuild, OpenStdin = OpenStdin, StdinOnce = StdinOnce, Tty = Tty, User = User, Volumes = Volumes, WorkingDir = WorkingDir)
     if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint)
     __obj.asInstanceOf[Anon_ArgsEscapedAttachStderr]
   }

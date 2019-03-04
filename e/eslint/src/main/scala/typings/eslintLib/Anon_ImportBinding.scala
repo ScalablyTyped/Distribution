@@ -19,9 +19,8 @@ object Anon_ImportBinding {
     parent: estreeLib.estreeMod.ImportDeclaration,
     `type`: eslintLib.eslintLibStrings.ImportBinding
   ): Anon_ImportBinding = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parent = parent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ImportBinding]
   }
 }

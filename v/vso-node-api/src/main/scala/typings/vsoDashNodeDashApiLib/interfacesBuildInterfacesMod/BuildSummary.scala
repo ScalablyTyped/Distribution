@@ -28,15 +28,8 @@ object BuildSummary {
     startTime: stdLib.Date,
     status: BuildStatus
   ): BuildSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("keepForever")(keepForever)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("requestedFor")(requestedFor)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(build = build, finishTime = finishTime, keepForever = keepForever, quality = quality, reason = reason, requestedFor = requestedFor, startTime = startTime, status = status)
+  
     __obj.asInstanceOf[BuildSummary]
   }
 }

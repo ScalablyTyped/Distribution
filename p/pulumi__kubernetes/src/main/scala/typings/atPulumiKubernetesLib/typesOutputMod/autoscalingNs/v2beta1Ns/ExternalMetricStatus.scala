@@ -36,11 +36,8 @@ object ExternalMetricStatus {
     metricName: java.lang.String,
     metricSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
   ): ExternalMetricStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentAverageValue")(currentAverageValue)
-    __obj.updateDynamic("currentValue")(currentValue)
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("metricSelector")(metricSelector)
+    val __obj = js.Dynamic.literal(currentAverageValue = currentAverageValue, currentValue = currentValue, metricName = metricName, metricSelector = metricSelector)
+  
     __obj.asInstanceOf[ExternalMetricStatus]
   }
 }

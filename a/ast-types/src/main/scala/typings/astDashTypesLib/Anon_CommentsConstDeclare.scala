@@ -26,9 +26,7 @@ object Anon_CommentsConstDeclare {
     initializer: astDashTypesLib.genKindsMod.ExpressionKind = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsConstDeclare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("members")(members)
+    val __obj = js.Dynamic.literal(id = id, members = members)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(const)) __obj.updateDynamic("const")(const)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)

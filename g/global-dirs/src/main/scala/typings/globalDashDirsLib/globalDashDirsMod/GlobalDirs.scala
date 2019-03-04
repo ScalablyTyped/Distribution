@@ -14,10 +14,8 @@ trait GlobalDirs extends js.Object {
 object GlobalDirs {
   @scala.inline
   def apply(binaries: java.lang.String, packages: java.lang.String, prefix: java.lang.String): GlobalDirs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binaries")(binaries)
-    __obj.updateDynamic("packages")(packages)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(binaries = binaries, packages = packages, prefix = prefix)
+  
     __obj.asInstanceOf[GlobalDirs]
   }
 }

@@ -18,9 +18,7 @@ object Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId {
     networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     deleteOnTermination: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceIndex")(deviceIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceIndex = deviceIndex.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any])
     if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]
   }

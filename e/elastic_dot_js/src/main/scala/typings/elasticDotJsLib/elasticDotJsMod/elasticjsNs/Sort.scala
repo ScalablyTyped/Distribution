@@ -149,26 +149,8 @@ object Sort {
     `type`: js.Function1[java.lang.String, Sort],
     unit: js.Function1[java.lang.String, Sort]
   ): Sort = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("asc")(asc)
-    __obj.updateDynamic("desc")(desc)
-    __obj.updateDynamic("distanceType")(distanceType)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("geoDistance")(geoDistance)
-    __obj.updateDynamic("ignoreUnmapped")(ignoreUnmapped)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("missing")(missing)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nestedFilter")(nestedFilter)
-    __obj.updateDynamic("nestedPath")(nestedPath)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(_type = _type, asc = asc, desc = desc, distanceType = distanceType, field = field, geoDistance = geoDistance, ignoreUnmapped = ignoreUnmapped, lang = lang, missing = missing, mode = mode, nestedFilter = nestedFilter, nestedPath = nestedPath, normalize = normalize, order = order, params = params, reverse = reverse, script = script, toJSON = toJSON, unit = unit)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Sort]
   }
 }

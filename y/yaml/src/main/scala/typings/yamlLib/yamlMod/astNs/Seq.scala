@@ -28,9 +28,8 @@ object Seq {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     tag: java.lang.String = null
   ): Seq = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(items = items, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

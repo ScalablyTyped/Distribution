@@ -30,16 +30,8 @@ object IObjectSearchResults {
     Sort: js.Function1[IObjectComparer, scala.Unit],
     SortByScore: js.Function1[scala.Boolean, scala.Unit]
   ): IObjectSearchResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetAsObjectVersions")(GetAsObjectVersions)
-    __obj.updateDynamic("GetScoreOfObject")(GetScoreOfObject)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("MoreResults")(MoreResults)
-    __obj.updateDynamic("ScoreAt")(ScoreAt)
-    __obj.updateDynamic("Sort")(Sort)
-    __obj.updateDynamic("SortByScore")(SortByScore)
+    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, GetAsObjectVersions = GetAsObjectVersions, GetScoreOfObject = GetScoreOfObject, Item = Item, MoreResults = MoreResults, ScoreAt = ScoreAt, Sort = Sort, SortByScore = SortByScore)
+  
     __obj.asInstanceOf[IObjectSearchResults]
   }
 }

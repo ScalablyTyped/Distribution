@@ -42,8 +42,7 @@ object Anon_Fields {
     screenshot: js.UndefOr[scala.Boolean] = js.undefined,
     stategy: java.lang.String = null
   ): Anon_Fields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (rule != null) __obj.updateDynamic("rule")(rule)

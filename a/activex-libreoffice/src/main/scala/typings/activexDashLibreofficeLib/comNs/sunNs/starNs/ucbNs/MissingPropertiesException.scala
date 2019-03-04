@@ -27,10 +27,8 @@ object MissingPropertiesException {
     Message: java.lang.String,
     Properties: activexDashInteropLib.SafeArray[java.lang.String]
   ): MissingPropertiesException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Properties")(Properties)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Properties = Properties)
+  
     __obj.asInstanceOf[MissingPropertiesException]
   }
 }

@@ -20,11 +20,8 @@ object CacheRules {
     cacheNever: js.Array[RegexRule],
     default: java.lang.String
   ): CacheRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheAlways")(cacheAlways)
-    __obj.updateDynamic("cacheMaxAge")(cacheMaxAge)
-    __obj.updateDynamic("cacheNever")(cacheNever)
-    __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(cacheAlways = cacheAlways, cacheMaxAge = cacheMaxAge, cacheNever = cacheNever, default = default)
+  
     __obj.asInstanceOf[CacheRules]
   }
 }

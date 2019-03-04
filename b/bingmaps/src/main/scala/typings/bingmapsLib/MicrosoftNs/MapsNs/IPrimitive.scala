@@ -33,10 +33,7 @@ object IPrimitive {
     setOptions: js.Function1[IPrimitiveOptions, scala.Unit],
     metadata: js.Any = null
   ): IPrimitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCursor")(getCursor)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("setOptions")(setOptions)
+    val __obj = js.Dynamic.literal(getCursor = getCursor, getVisible = getVisible, setOptions = setOptions)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     __obj.asInstanceOf[IPrimitive]
   }

@@ -13,9 +13,8 @@ trait Anon_NumOfSpaces extends js.Object {
 object Anon_NumOfSpaces {
   @scala.inline
   def apply(numOfSpaces: scala.Double, width: scala.Double): Anon_NumOfSpaces = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("numOfSpaces")(numOfSpaces)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(numOfSpaces = numOfSpaces, width = width)
+  
     __obj.asInstanceOf[Anon_NumOfSpaces]
   }
 }

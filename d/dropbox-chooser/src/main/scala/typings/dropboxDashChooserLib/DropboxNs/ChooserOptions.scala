@@ -35,8 +35,7 @@ object ChooserOptions {
     multiselect: js.UndefOr[scala.Boolean] = js.undefined,
     sizeLimit: scala.Int | scala.Double = null
   ): ChooserOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(folderselect)) __obj.updateDynamic("folderselect")(folderselect)

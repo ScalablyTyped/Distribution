@@ -22,9 +22,8 @@ trait VolumeDevice extends js.Object {
 object VolumeDevice {
   @scala.inline
   def apply(devicePath: java.lang.String, name: java.lang.String): VolumeDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("devicePath")(devicePath)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(devicePath = devicePath, name = name)
+  
     __obj.asInstanceOf[VolumeDevice]
   }
 }

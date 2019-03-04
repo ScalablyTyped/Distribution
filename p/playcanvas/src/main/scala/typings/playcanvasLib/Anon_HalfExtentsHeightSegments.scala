@@ -20,11 +20,8 @@ object Anon_HalfExtentsHeightSegments {
     lengthSegments: scala.Double,
     widthSegments: scala.Double
   ): Anon_HalfExtentsHeightSegments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("halfExtents")(halfExtents)
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("lengthSegments")(lengthSegments)
-    __obj.updateDynamic("widthSegments")(widthSegments)
+    val __obj = js.Dynamic.literal(halfExtents = halfExtents, heightSegments = heightSegments, lengthSegments = lengthSegments, widthSegments = widthSegments)
+  
     __obj.asInstanceOf[Anon_HalfExtentsHeightSegments]
   }
 }

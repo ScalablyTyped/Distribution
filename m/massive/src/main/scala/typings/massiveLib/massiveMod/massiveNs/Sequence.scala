@@ -27,10 +27,8 @@ object Sequence {
     nextValue: js.Function0[js.Promise[java.lang.String]],
     reset: js.Function1[scala.Double, js.Promise[scala.Unit]]
   ): Sequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastValue")(lastValue)
-    __obj.updateDynamic("nextValue")(nextValue)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(lastValue = lastValue, nextValue = nextValue, reset = reset)
+  
     __obj.asInstanceOf[Sequence]
   }
 }

@@ -36,17 +36,8 @@ object GatewayRegistry {
     removeContainer: js.Function1[java.lang.String, scala.Unit],
     unregister: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): GatewayRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_children")(_children)
-    __obj.updateDynamic("_containers")(_containers)
-    __obj.updateDynamic("_currentId")(_currentId)
-    __obj.updateDynamic("_renderContainer")(_renderContainer)
-    __obj.updateDynamic("addChild")(addChild)
-    __obj.updateDynamic("addContainer")(addContainer)
-    __obj.updateDynamic("clearChild")(clearChild)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("removeContainer")(removeContainer)
-    __obj.updateDynamic("unregister")(unregister)
+    val __obj = js.Dynamic.literal(_children = _children, _containers = _containers, _currentId = _currentId, _renderContainer = _renderContainer, addChild = addChild, addContainer = addContainer, clearChild = clearChild, register = register, removeContainer = removeContainer, unregister = unregister)
+  
     __obj.asInstanceOf[GatewayRegistry]
   }
 }

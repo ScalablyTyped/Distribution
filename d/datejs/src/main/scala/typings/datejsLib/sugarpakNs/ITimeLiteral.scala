@@ -15,11 +15,8 @@ trait ITimeLiteral extends js.Object {
 object ITimeLiteral {
   @scala.inline
   def apply(hour: scala.Double, millisecond: scala.Double, minute: scala.Double, second: scala.Double): ITimeLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("millisecond")(millisecond)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("second")(second)
+    val __obj = js.Dynamic.literal(hour = hour, millisecond = millisecond, minute = minute, second = second)
+  
     __obj.asInstanceOf[ITimeLiteral]
   }
 }

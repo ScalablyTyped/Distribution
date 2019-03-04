@@ -26,13 +26,8 @@ object IToastNotifier {
     setting: NotificationSetting,
     show: js.Function1[ToastNotification, scala.Unit]
   ): IToastNotifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addToSchedule")(addToSchedule)
-    __obj.updateDynamic("getScheduledToastNotifications")(getScheduledToastNotifications)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("removeFromSchedule")(removeFromSchedule)
-    __obj.updateDynamic("setting")(setting)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(addToSchedule = addToSchedule, getScheduledToastNotifications = getScheduledToastNotifications, hide = hide, removeFromSchedule = removeFromSchedule, setting = setting, show = show)
+  
     __obj.asInstanceOf[IToastNotifier]
   }
 }

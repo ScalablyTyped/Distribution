@@ -37,8 +37,7 @@ object SyntaxError {
     str2: scala.Int | scala.Double = null,
     str3: scala.Int | scala.Double = null
   ): SyntaxError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
+    val __obj = js.Dynamic.literal(column = column)
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)

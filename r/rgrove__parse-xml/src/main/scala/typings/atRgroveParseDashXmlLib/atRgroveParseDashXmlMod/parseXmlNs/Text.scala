@@ -20,8 +20,8 @@ object Text {
     `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.text,
     parent: NodeBase = null
   ): Text = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[Text]
   }

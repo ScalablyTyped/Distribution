@@ -16,9 +16,8 @@ object InfiniteLoaderChildProps {
     onRowsRendered: js.Function1[reactDashVirtualizedLib.Anon_StartIndex, scala.Unit],
     registerChild: js.Function1[js.Any, scala.Unit]
   ): InfiniteLoaderChildProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onRowsRendered")(onRowsRendered)
-    __obj.updateDynamic("registerChild")(registerChild)
+    val __obj = js.Dynamic.literal(onRowsRendered = onRowsRendered, registerChild = registerChild)
+  
     __obj.asInstanceOf[InfiniteLoaderChildProps]
   }
 }

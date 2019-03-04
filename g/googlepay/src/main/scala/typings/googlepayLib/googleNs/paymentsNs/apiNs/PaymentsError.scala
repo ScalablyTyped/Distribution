@@ -13,9 +13,8 @@ trait PaymentsError extends js.Object {
 object PaymentsError {
   @scala.inline
   def apply(statusCode: ErrorStatusCode, statusMessage: java.lang.String): PaymentsError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(statusCode = statusCode, statusMessage = statusMessage)
+  
     __obj.asInstanceOf[PaymentsError]
   }
 }

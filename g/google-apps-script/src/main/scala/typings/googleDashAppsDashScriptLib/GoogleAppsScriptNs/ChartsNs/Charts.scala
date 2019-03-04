@@ -60,31 +60,8 @@ object Charts {
     newTableChart: js.Function0[TableChartBuilder],
     newTextStyle: js.Function0[TextStyleBuilder]
   ): Charts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChartHiddenDimensionStrategy")(ChartHiddenDimensionStrategy)
-    __obj.updateDynamic("ChartMergeStrategy")(ChartMergeStrategy)
-    __obj.updateDynamic("ChartType")(ChartType)
-    __obj.updateDynamic("ColumnType")(ColumnType)
-    __obj.updateDynamic("CurveStyle")(CurveStyle)
-    __obj.updateDynamic("MatchType")(MatchType)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("PickerValuesLayout")(PickerValuesLayout)
-    __obj.updateDynamic("PointStyle")(PointStyle)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("newAreaChart")(newAreaChart)
-    __obj.updateDynamic("newBarChart")(newBarChart)
-    __obj.updateDynamic("newCategoryFilter")(newCategoryFilter)
-    __obj.updateDynamic("newColumnChart")(newColumnChart)
-    __obj.updateDynamic("newDashboardPanel")(newDashboardPanel)
-    __obj.updateDynamic("newDataTable")(newDataTable)
-    __obj.updateDynamic("newDataViewDefinition")(newDataViewDefinition)
-    __obj.updateDynamic("newLineChart")(newLineChart)
-    __obj.updateDynamic("newNumberRangeFilter")(newNumberRangeFilter)
-    __obj.updateDynamic("newPieChart")(newPieChart)
-    __obj.updateDynamic("newScatterChart")(newScatterChart)
-    __obj.updateDynamic("newStringFilter")(newStringFilter)
-    __obj.updateDynamic("newTableChart")(newTableChart)
-    __obj.updateDynamic("newTextStyle")(newTextStyle)
+    val __obj = js.Dynamic.literal(ChartHiddenDimensionStrategy = ChartHiddenDimensionStrategy, ChartMergeStrategy = ChartMergeStrategy, ChartType = ChartType, ColumnType = ColumnType, CurveStyle = CurveStyle, MatchType = MatchType, Orientation = Orientation, PickerValuesLayout = PickerValuesLayout, PointStyle = PointStyle, Position = Position, newAreaChart = newAreaChart, newBarChart = newBarChart, newCategoryFilter = newCategoryFilter, newColumnChart = newColumnChart, newDashboardPanel = newDashboardPanel, newDataTable = newDataTable, newDataViewDefinition = newDataViewDefinition, newLineChart = newLineChart, newNumberRangeFilter = newNumberRangeFilter, newPieChart = newPieChart, newScatterChart = newScatterChart, newStringFilter = newStringFilter, newTableChart = newTableChart, newTextStyle = newTextStyle)
+  
     __obj.asInstanceOf[Charts]
   }
 }

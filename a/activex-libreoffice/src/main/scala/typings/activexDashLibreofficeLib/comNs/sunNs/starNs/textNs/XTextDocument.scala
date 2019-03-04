@@ -53,31 +53,8 @@ object XTextDocument {
     setCurrentController: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
     unlockControllers: js.Function0[scala.Unit]
   ): XTextDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Args")(Args)
-    __obj.updateDynamic("CurrentController")(CurrentController)
-    __obj.updateDynamic("CurrentSelection")(CurrentSelection)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attachResource")(attachResource)
-    __obj.updateDynamic("connectController")(connectController)
-    __obj.updateDynamic("disconnectController")(disconnectController)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getArgs")(getArgs)
-    __obj.updateDynamic("getCurrentController")(getCurrentController)
-    __obj.updateDynamic("getCurrentSelection")(getCurrentSelection)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getURL")(getURL)
-    __obj.updateDynamic("hasControllersLocked")(hasControllersLocked)
-    __obj.updateDynamic("lockControllers")(lockControllers)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("reformat")(reformat)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setCurrentController")(setCurrentController)
-    __obj.updateDynamic("unlockControllers")(unlockControllers)
+    val __obj = js.Dynamic.literal(Args = Args, CurrentController = CurrentController, CurrentSelection = CurrentSelection, Text = Text, URL = URL, acquire = acquire, addEventListener = addEventListener, attachResource = attachResource, connectController = connectController, disconnectController = disconnectController, dispose = dispose, getArgs = getArgs, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getText = getText, getURL = getURL, hasControllersLocked = hasControllersLocked, lockControllers = lockControllers, queryInterface = queryInterface, reformat = reformat, release = release, removeEventListener = removeEventListener, setCurrentController = setCurrentController, unlockControllers = unlockControllers)
+  
     __obj.asInstanceOf[XTextDocument]
   }
 }

@@ -69,30 +69,9 @@ object KnockoutBindingHandlers {
     `with`: KnockoutBindingHandler,
     StringDictionary: /* bindingHandler */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] = null
   ): KnockoutBindingHandlers = {
-    val __obj = js.Dynamic.literal(`if` = `if`, `with` = `with`)
-    __obj.updateDynamic("attr")(attr)
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("foreach")(foreach)
-    __obj.updateDynamic("hasfocus")(hasfocus)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("ifnot")(ifnot)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("selectedOptions")(selectedOptions)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("submit")(submit)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("textInput")(textInput)
-    __obj.updateDynamic("uniqueName")(uniqueName)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(attr = attr, checked = checked, click = click, component = component, css = css, disable = disable, enable = enable, event = event, file = file, foreach = foreach, hasfocus = hasfocus, html = html, ifnot = ifnot, options = options, selectedOptions = selectedOptions, style = style, submit = submit, template = template, text = text, textInput = textInput, uniqueName = uniqueName, value = value, visible = visible)
+    __obj.updateDynamic("if")(`if`)
+    __obj.updateDynamic("with")(`with`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }

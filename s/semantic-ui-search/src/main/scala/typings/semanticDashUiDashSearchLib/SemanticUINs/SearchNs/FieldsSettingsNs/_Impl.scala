@@ -89,18 +89,8 @@ object _Impl {
     results: java.lang.String,
     title: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("actionText")(actionText)
-    __obj.updateDynamic("actionURL")(actionURL)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("categoryName")(categoryName)
-    __obj.updateDynamic("categoryResults")(categoryResults)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(action = action, actionText = actionText, actionURL = actionURL, categories = categories, categoryName = categoryName, categoryResults = categoryResults, description = description, image = image, price = price, results = results, title = title)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

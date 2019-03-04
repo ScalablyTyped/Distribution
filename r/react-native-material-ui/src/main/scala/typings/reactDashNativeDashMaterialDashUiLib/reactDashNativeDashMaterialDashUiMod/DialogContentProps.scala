@@ -16,8 +16,7 @@ object DialogContentProps {
     children: reactLib.reactMod.Global.JSXNs.Element,
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContentContainer = null
   ): DialogContentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[DialogContentProps]
   }

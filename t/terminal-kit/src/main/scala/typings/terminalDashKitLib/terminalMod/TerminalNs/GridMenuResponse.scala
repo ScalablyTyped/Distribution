@@ -22,12 +22,8 @@ object GridMenuResponse {
     x: scala.Double,
     y: scala.Double
   ): GridMenuResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectedIndex")(selectedIndex)
-    __obj.updateDynamic("selectedText")(selectedText)
-    __obj.updateDynamic("unexpectedKey")(unexpectedKey)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(selectedIndex = selectedIndex, selectedText = selectedText, unexpectedKey = unexpectedKey, x = x, y = y)
+  
     __obj.asInstanceOf[GridMenuResponse]
   }
 }

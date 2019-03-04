@@ -86,10 +86,7 @@ object ImplementationGuidePage {
     page: js.Array[ImplementationGuidePage] = null,
     `type`: js.Array[code] = null
   ): ImplementationGuidePage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(kind = kind, source = source, title = title)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_format != null) __obj.updateDynamic("_format")(_format)
     if (_id != null) __obj.updateDynamic("_id")(_id)

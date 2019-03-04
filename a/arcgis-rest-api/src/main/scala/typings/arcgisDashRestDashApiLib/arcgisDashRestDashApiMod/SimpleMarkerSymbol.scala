@@ -27,7 +27,8 @@ object SimpleMarkerSymbol {
     xoffset: scala.Int | scala.Double = null,
     yoffset: scala.Int | scala.Double = null
   ): SimpleMarkerSymbol = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (outline != null) __obj.updateDynamic("outline")(outline)

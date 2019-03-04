@@ -73,23 +73,8 @@ object XDeck {
     setOrderIndex: js.Function1[scala.Double, scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XDeck = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("OrderIndex")(OrderIndex)
-    __obj.updateDynamic("Panels")(Panels)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getOrderIndex")(getOrderIndex)
-    __obj.updateDynamic("getPanels")(getPanels)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("moveDown")(moveDown)
-    __obj.updateDynamic("moveFirst")(moveFirst)
-    __obj.updateDynamic("moveLast")(moveLast)
-    __obj.updateDynamic("moveUp")(moveUp)
-    __obj.updateDynamic("setOrderIndex")(setOrderIndex)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(Id = Id, OrderIndex = OrderIndex, Panels = Panels, Title = Title, activate = activate, getId = getId, getOrderIndex = getOrderIndex, getPanels = getPanels, getTitle = getTitle, isActive = isActive, moveDown = moveDown, moveFirst = moveFirst, moveLast = moveLast, moveUp = moveUp, setOrderIndex = setOrderIndex, setTitle = setTitle)
+  
     __obj.asInstanceOf[XDeck]
   }
 }

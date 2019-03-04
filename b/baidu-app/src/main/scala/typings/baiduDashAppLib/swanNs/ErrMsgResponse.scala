@@ -13,8 +13,8 @@ trait ErrMsgResponse extends js.Object {
 object ErrMsgResponse {
   @scala.inline
   def apply(errMsg: baiduDashAppLib.baiduDashAppLibStrings.ok | java.lang.String): ErrMsgResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ErrMsgResponse]
   }
 }

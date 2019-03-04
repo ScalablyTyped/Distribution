@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("android.R.string_")
 @js.native
-class `string_` () extends js.Object
+class string_ () extends js.Object
 
 /* static members */
 @JSGlobal("android.R.string_")
 @js.native
-object `string_` extends js.Object {
+object string_ extends js.Object {
   var back: java.lang.String = js.native
   var cancel: java.lang.String = js.native
   var close: java.lang.String = js.native

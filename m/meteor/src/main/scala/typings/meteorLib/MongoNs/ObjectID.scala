@@ -13,9 +13,8 @@ trait ObjectID extends js.Object {
 object ObjectID {
   @scala.inline
   def apply(equals: js.Function1[ObjectID, scala.Boolean], toHexString: js.Function0[java.lang.String]): ObjectID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("toHexString")(toHexString)
+    val __obj = js.Dynamic.literal(equals = equals, toHexString = toHexString)
+  
     __obj.asInstanceOf[ObjectID]
   }
 }

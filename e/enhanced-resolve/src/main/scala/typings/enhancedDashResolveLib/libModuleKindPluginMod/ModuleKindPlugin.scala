@@ -19,10 +19,8 @@ object ModuleKindPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): ModuleKindPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, source = source, target = target)
+  
     __obj.asInstanceOf[ModuleKindPlugin]
   }
 }

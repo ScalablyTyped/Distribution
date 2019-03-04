@@ -21,12 +21,8 @@ object baseFailureArgs {
     meta: js.Any,
     timestamp: stdLib.Date
   ): baseFailureArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, error = error, meta = meta, timestamp = timestamp)
+  
     __obj.asInstanceOf[baseFailureArgs]
   }
 }

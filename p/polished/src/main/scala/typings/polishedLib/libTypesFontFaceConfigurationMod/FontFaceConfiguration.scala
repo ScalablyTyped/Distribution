@@ -36,8 +36,7 @@ object FontFaceConfiguration {
     localFonts: js.Array[java.lang.String] = null,
     unicodeRange: java.lang.String = null
   ): FontFaceConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontFamily")(fontFamily)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily)
     if (fileFormats != null) __obj.updateDynamic("fileFormats")(fileFormats)
     if (fontDisplay != null) __obj.updateDynamic("fontDisplay")(fontDisplay)
     if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings)

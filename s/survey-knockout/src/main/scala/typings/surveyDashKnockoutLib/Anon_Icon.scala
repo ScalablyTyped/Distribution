@@ -22,12 +22,8 @@ object Anon_Icon {
     locationTop: java.lang.String,
     root: java.lang.String
   ): Anon_Icon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("locationBottom")(locationBottom)
-    __obj.updateDynamic("locationTop")(locationTop)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(icon = icon, item = item, locationBottom = locationBottom, locationTop = locationTop, root = root)
+  
     __obj.asInstanceOf[Anon_Icon]
   }
 }

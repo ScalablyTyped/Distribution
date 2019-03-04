@@ -27,8 +27,7 @@ object UpdateRecipientList {
     id: java.lang.String = null,
     name: java.lang.String = null
   ): UpdateRecipientList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipients")(recipients)
+    val __obj = js.Dynamic.literal(recipients = recipients)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)

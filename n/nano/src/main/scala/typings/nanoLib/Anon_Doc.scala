@@ -22,11 +22,7 @@ object Anon_Doc {
     order: js.Array[scala.Double],
     doc: V = null
   ): Anon_Doc[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(fields = fields, id = id, key = key, order = order)
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Doc[V]]
   }

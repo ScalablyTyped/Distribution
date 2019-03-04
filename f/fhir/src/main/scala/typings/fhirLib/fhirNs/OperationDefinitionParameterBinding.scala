@@ -46,8 +46,7 @@ object OperationDefinitionParameterBinding {
     valueSetReference: Reference = null,
     valueSetUri: uri = null
   ): OperationDefinitionParameterBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strength")(strength)
+    val __obj = js.Dynamic.literal(strength = strength)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_strength != null) __obj.updateDynamic("_strength")(_strength)

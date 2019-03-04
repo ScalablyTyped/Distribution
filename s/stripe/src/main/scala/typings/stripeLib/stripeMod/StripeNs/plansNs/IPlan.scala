@@ -109,19 +109,8 @@ object IPlan {
     tiers_mode: stripeLib.stripeLibStrings.graduated | stripeLib.stripeLibStrings.volume = null,
     transform_usage: ITransformUsage = null
   ): IPlan = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("billing_scheme")(billing_scheme.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("interval_count")(interval_count)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("trial_period_days")(trial_period_days)
-    __obj.updateDynamic("usage_type")(usage_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active, amount = amount, billing_scheme = billing_scheme.asInstanceOf[js.Any], created = created, currency = currency, id = id, interval = interval, interval_count = interval_count, livemode = livemode, metadata = metadata, trial_period_days = trial_period_days, usage_type = usage_type.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
     if (nickname != null) __obj.updateDynamic("nickname")(nickname)
     if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])

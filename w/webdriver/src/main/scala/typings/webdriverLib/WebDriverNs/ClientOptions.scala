@@ -24,13 +24,8 @@ object ClientOptions {
     isW3C: scala.Boolean,
     sessionId: java.lang.String
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
-    __obj.updateDynamic("isAndroid")(isAndroid)
-    __obj.updateDynamic("isIOS")(isIOS)
-    __obj.updateDynamic("isMobile")(isMobile)
-    __obj.updateDynamic("isW3C")(isW3C)
-    __obj.updateDynamic("sessionId")(sessionId)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, isAndroid = isAndroid, isIOS = isIOS, isMobile = isMobile, isW3C = isW3C, sessionId = sessionId)
+  
     __obj.asInstanceOf[ClientOptions]
   }
 }

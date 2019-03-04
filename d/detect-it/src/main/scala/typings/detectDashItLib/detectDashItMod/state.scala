@@ -20,11 +20,8 @@ object state {
     detectPointer: detectDashPointerLib.detectDashPointerMod.detectPointer,
     detectTouchEvents: detectDashTouchDashEventsLib.detectDashTouchDashEventsMod.detectTouchEvents
   ): state = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detectHover")(detectHover)
-    __obj.updateDynamic("detectPassiveEvents")(detectPassiveEvents)
-    __obj.updateDynamic("detectPointer")(detectPointer)
-    __obj.updateDynamic("detectTouchEvents")(detectTouchEvents)
+    val __obj = js.Dynamic.literal(detectHover = detectHover, detectPassiveEvents = detectPassiveEvents, detectPointer = detectPointer, detectTouchEvents = detectTouchEvents)
+  
     __obj.asInstanceOf[state]
   }
 }

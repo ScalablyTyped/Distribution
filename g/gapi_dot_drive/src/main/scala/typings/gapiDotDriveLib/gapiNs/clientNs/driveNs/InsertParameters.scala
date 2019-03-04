@@ -32,8 +32,7 @@ object InsertParameters {
     usecontentAsIndexableText: js.UndefOr[scala.Boolean] = js.undefined,
     visibility: java.lang.String = null
   ): InsertParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uploadType")(uploadType)
+    val __obj = js.Dynamic.literal(uploadType = uploadType)
     if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
     if (!js.isUndefined(ocr)) __obj.updateDynamic("ocr")(ocr)
     if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage)

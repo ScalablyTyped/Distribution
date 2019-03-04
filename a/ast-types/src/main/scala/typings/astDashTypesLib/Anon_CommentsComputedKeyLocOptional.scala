@@ -32,9 +32,7 @@ object Anon_CommentsComputedKeyLocOptional {
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_CommentsComputedKeyLocOptional = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(key = key, parameters = parameters)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (loc != null) __obj.updateDynamic("loc")(loc)

@@ -22,9 +22,7 @@ object Converter {
     getOptions: js.Function0[js.Object] = null,
     resolvedOptions: js.Function0[js.Object] = null
   ): Converter[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(format = format, parse = parse)
     if (getHint != null) __obj.updateDynamic("getHint")(getHint)
     if (getOptions != null) __obj.updateDynamic("getOptions")(getOptions)
     if (resolvedOptions != null) __obj.updateDynamic("resolvedOptions")(resolvedOptions)

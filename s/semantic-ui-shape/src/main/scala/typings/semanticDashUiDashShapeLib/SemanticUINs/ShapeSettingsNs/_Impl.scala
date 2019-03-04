@@ -97,21 +97,8 @@ object _Impl {
     verbose: scala.Boolean,
     width: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.next | semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.initial | scala.Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeChange")(beforeChange)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("verbose")(verbose)
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beforeChange = beforeChange, className = className.asInstanceOf[js.Any], debug = debug, duration = duration, error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name, namespace = namespace, onChange = onChange, performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose, width = width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[_Impl]
   }
 }

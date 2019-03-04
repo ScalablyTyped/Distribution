@@ -22,12 +22,8 @@ object BucketItem {
     prefix: java.lang.String,
     size: scala.Double
   ): BucketItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, name = name, prefix = prefix, size = size)
+  
     __obj.asInstanceOf[BucketItem]
   }
 }

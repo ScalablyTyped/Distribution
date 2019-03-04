@@ -55,15 +55,8 @@ object DirectionsViewModelSelectedTravelMode {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     timeAttributeName: java.lang.String
   ): DirectionsViewModelSelectedTravelMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("impedanceAttributeName")(impedanceAttributeName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("timeAttributeName")(timeAttributeName)
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, id = id, impedanceAttributeName = impedanceAttributeName, name = name, propertyIsEnumerable = propertyIsEnumerable, timeAttributeName = timeAttributeName)
+  
     __obj.asInstanceOf[DirectionsViewModelSelectedTravelMode]
   }
 }

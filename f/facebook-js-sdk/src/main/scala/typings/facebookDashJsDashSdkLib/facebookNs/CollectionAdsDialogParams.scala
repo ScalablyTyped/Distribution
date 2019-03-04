@@ -29,13 +29,7 @@ object CollectionAdsDialogParams {
     product_set_id: java.lang.String = null,
     redirect_uri: java.lang.String = null
   ): CollectionAdsDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account_id")(account_id)
-    __obj.updateDynamic("business_id")(business_id)
-    __obj.updateDynamic("display")(display)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("page_id")(page_id)
-    __obj.updateDynamic("template_id")(template_id)
+    val __obj = js.Dynamic.literal(account_id = account_id, business_id = business_id, display = display, method = method, page_id = page_id, template_id = template_id)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (!js.isUndefined(canvas_id)) __obj.updateDynamic("canvas_id")(canvas_id)
     if (product_catalog_id != null) __obj.updateDynamic("product_catalog_id")(product_catalog_id)

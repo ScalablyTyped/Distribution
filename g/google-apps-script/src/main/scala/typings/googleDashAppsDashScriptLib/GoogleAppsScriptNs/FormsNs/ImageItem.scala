@@ -40,21 +40,8 @@ object ImageItem {
     setTitle: js.Function1[java.lang.String, ImageItem],
     setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ImageItem]
   ): ImageItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getAlignment")(getAlignment)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getImage")(getImage)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("setAlignment")(setAlignment)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setImage")(setImage)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(duplicate = duplicate, getAlignment = getAlignment, getHelpText = getHelpText, getId = getId, getImage = getImage, getIndex = getIndex, getTitle = getTitle, getType = getType, getWidth = getWidth, setAlignment = setAlignment, setHelpText = setHelpText, setImage = setImage, setTitle = setTitle, setWidth = setWidth)
+  
     __obj.asInstanceOf[ImageItem]
   }
 }

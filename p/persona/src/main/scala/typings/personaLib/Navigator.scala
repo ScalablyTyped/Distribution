@@ -12,8 +12,8 @@ trait Navigator extends js.Object {
 object Navigator {
   @scala.inline
   def apply(id: personaLib.PersonaNs.Persona): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

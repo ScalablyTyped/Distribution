@@ -16,9 +16,8 @@ object Anon_ContentRangeHeaderValue {
     contentRangeHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentRangeHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ContentRangeHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentRangeHeaderValue")(contentRangeHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(contentRangeHeaderValue = contentRangeHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ContentRangeHeaderValue]
   }
 }

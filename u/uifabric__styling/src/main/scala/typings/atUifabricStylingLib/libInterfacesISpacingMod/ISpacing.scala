@@ -22,12 +22,8 @@ object ISpacing {
     s1: java.lang.String,
     s2: java.lang.String
   ): ISpacing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("l1")(l1)
-    __obj.updateDynamic("l2")(l2)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("s1")(s1)
-    __obj.updateDynamic("s2")(s2)
+    val __obj = js.Dynamic.literal(l1 = l1, l2 = l2, m = m, s1 = s1, s2 = s2)
+  
     __obj.asInstanceOf[ISpacing]
   }
 }

@@ -28,9 +28,7 @@ object Options {
     stream_base: java.lang.String = null,
     user_stream_base: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consumer_key")(consumer_key)
-    __obj.updateDynamic("consumer_secret")(consumer_secret)
+    val __obj = js.Dynamic.literal(consumer_key = consumer_key, consumer_secret = consumer_secret)
     if (media_base != null) __obj.updateDynamic("media_base")(media_base)
     if (request_options != null) __obj.updateDynamic("request_options")(request_options)
     if (rest_base != null) __obj.updateDynamic("rest_base")(rest_base)

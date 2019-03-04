@@ -103,9 +103,7 @@ object AutocompleteProps {
       reactLib.reactMod.ReactNs.ReactNode
     ] = null
   ): AutocompleteProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("renderItem")(renderItem)
+    val __obj = js.Dynamic.literal(data = data, renderItem = renderItem)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(hideResults)) __obj.updateDynamic("hideResults")(hideResults)
     if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])

@@ -121,29 +121,8 @@ object TimelineRecord {
     warningCount: scala.Double,
     workerName: java.lang.String
   ): TimelineRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("changeId")(changeId)
-    __obj.updateDynamic("currentOperation")(currentOperation)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("errorCount")(errorCount)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("issues")(issues)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("percentComplete")(percentComplete)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("resultCode")(resultCode)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("warningCount")(warningCount)
-    __obj.updateDynamic("workerName")(workerName)
+    val __obj = js.Dynamic.literal(_links = _links, changeId = changeId, currentOperation = currentOperation, details = details, errorCount = errorCount, finishTime = finishTime, id = id, issues = issues, lastModified = lastModified, log = log, name = name, order = order, parentId = parentId, percentComplete = percentComplete, result = result, resultCode = resultCode, startTime = startTime, state = state, task = task, url = url, warningCount = warningCount, workerName = workerName)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TimelineRecord]
   }
 }

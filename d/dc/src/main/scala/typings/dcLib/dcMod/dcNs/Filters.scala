@@ -18,10 +18,8 @@ object Filters {
     RangedTwoDimensionalFilter: js.Function1[js.Array[_], Filter],
     TwoDimensionalFilter: js.Function1[js.Array[_], Filter]
   ): Filters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RangedFilter")(RangedFilter)
-    __obj.updateDynamic("RangedTwoDimensionalFilter")(RangedTwoDimensionalFilter)
-    __obj.updateDynamic("TwoDimensionalFilter")(TwoDimensionalFilter)
+    val __obj = js.Dynamic.literal(RangedFilter = RangedFilter, RangedTwoDimensionalFilter = RangedTwoDimensionalFilter, TwoDimensionalFilter = TwoDimensionalFilter)
+  
     __obj.asInstanceOf[Filters]
   }
 }

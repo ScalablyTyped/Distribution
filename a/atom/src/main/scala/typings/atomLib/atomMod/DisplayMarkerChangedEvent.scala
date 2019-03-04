@@ -66,22 +66,8 @@ object DisplayMarkerChangedEvent {
     textChanged: scala.Boolean,
     wasValid: scala.Boolean
   ): DisplayMarkerChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hadTail")(hadTail)
-    __obj.updateDynamic("hasTail")(hasTail)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("newHeadBufferPosition")(newHeadBufferPosition)
-    __obj.updateDynamic("newHeadScreenPosition")(newHeadScreenPosition)
-    __obj.updateDynamic("newProperties")(newProperties)
-    __obj.updateDynamic("newTailBufferPosition")(newTailBufferPosition)
-    __obj.updateDynamic("newTailScreenPosition")(newTailScreenPosition)
-    __obj.updateDynamic("oldHeadBufferPosition")(oldHeadBufferPosition)
-    __obj.updateDynamic("oldHeadScreenPosition")(oldHeadScreenPosition)
-    __obj.updateDynamic("oldProperties")(oldProperties)
-    __obj.updateDynamic("oldTailBufferPosition")(oldTailBufferPosition)
-    __obj.updateDynamic("oldTailScreenPosition")(oldTailScreenPosition)
-    __obj.updateDynamic("textChanged")(textChanged)
-    __obj.updateDynamic("wasValid")(wasValid)
+    val __obj = js.Dynamic.literal(hadTail = hadTail, hasTail = hasTail, isValid = isValid, newHeadBufferPosition = newHeadBufferPosition, newHeadScreenPosition = newHeadScreenPosition, newProperties = newProperties, newTailBufferPosition = newTailBufferPosition, newTailScreenPosition = newTailScreenPosition, oldHeadBufferPosition = oldHeadBufferPosition, oldHeadScreenPosition = oldHeadScreenPosition, oldProperties = oldProperties, oldTailBufferPosition = oldTailBufferPosition, oldTailScreenPosition = oldTailScreenPosition, textChanged = textChanged, wasValid = wasValid)
+  
     __obj.asInstanceOf[DisplayMarkerChangedEvent]
   }
 }

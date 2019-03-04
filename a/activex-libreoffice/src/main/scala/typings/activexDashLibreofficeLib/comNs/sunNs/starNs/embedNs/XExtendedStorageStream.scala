@@ -64,36 +64,8 @@ object XExtendedStorageStream {
     setEncryptionPassword: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XExtendedStorageStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addTransactionListener")(addTransactionListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEncryption")(removeEncryption)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeTransactionListener")(removeTransactionListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("revert")(revert)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("setEncryptionPassword")(setEncryptionPassword)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Length = Length, OutputStream = OutputStream, Position = Position, PropertySetInfo = PropertySetInfo, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addTransactionListener = addTransactionListener, addVetoableChangeListener = addVetoableChangeListener, commit = commit, dispose = dispose, getInputStream = getInputStream, getLength = getLength, getOutputStream = getOutputStream, getPosition = getPosition, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeTransactionListener = removeTransactionListener, removeVetoableChangeListener = removeVetoableChangeListener, revert = revert, seek = seek, setEncryptionPassword = setEncryptionPassword, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XExtendedStorageStream]
   }
 }

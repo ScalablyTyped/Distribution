@@ -30,15 +30,8 @@ object Anon_BgClass {
     widgets: js.Any,
     wrapClass: java.lang.String
   ): Anon_BgClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bgClass")(bgClass)
-    __obj.updateDynamic("gutterMarkers")(gutterMarkers)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("textClass")(textClass)
-    __obj.updateDynamic("widgets")(widgets)
-    __obj.updateDynamic("wrapClass")(wrapClass)
+    val __obj = js.Dynamic.literal(bgClass = bgClass, gutterMarkers = gutterMarkers, handle = handle, line = line, text = text, textClass = textClass, widgets = widgets, wrapClass = wrapClass)
+  
     __obj.asInstanceOf[Anon_BgClass]
   }
 }

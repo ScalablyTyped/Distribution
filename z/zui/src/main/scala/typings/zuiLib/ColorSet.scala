@@ -12,8 +12,8 @@ trait ColorSet extends js.Object {
 object ColorSet {
   @scala.inline
   def apply(get: js.Function1[java.lang.String, Color]): ColorSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[ColorSet]
   }
 }

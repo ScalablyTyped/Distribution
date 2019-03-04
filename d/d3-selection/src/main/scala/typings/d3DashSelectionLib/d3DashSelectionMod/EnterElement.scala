@@ -24,13 +24,8 @@ object EnterElement {
     querySelector: js.Function1[java.lang.String, stdLib.Element],
     querySelectorAll: js.Function1[java.lang.String, stdLib.NodeListOf[stdLib.Element]]
   ): EnterElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("namespaceURI")(namespaceURI)
-    __obj.updateDynamic("ownerDocument")(ownerDocument)
-    __obj.updateDynamic("querySelector")(querySelector)
-    __obj.updateDynamic("querySelectorAll")(querySelectorAll)
+    val __obj = js.Dynamic.literal(appendChild = appendChild, insertBefore = insertBefore, namespaceURI = namespaceURI, ownerDocument = ownerDocument, querySelector = querySelector, querySelectorAll = querySelectorAll)
+  
     __obj.asInstanceOf[EnterElement]
   }
 }

@@ -25,8 +25,7 @@ object Anon_Context {
     context: js.Object = null,
     options: visionLib.visionMod.visionNs.ViewHandlerOrReplyOptions = null
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(template = template)
     if (context != null) __obj.updateDynamic("context")(context)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Anon_Context]

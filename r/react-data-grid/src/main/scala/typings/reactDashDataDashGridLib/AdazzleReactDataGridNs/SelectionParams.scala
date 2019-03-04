@@ -13,9 +13,8 @@ trait SelectionParams[T] extends js.Object {
 object SelectionParams {
   @scala.inline
   def apply[T](row: T, rowIdx: scala.Double): SelectionParams[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    __obj.updateDynamic("rowIdx")(rowIdx)
+    val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any], rowIdx = rowIdx)
+  
     __obj.asInstanceOf[SelectionParams[T]]
   }
 }

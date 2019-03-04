@@ -26,12 +26,8 @@ object ImageView2Options {
     q: scala.Double,
     w: scala.Double
   ): ImageView2Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("q")(q)
-    __obj.updateDynamic("w")(w)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], h = h, mode = mode.asInstanceOf[js.Any], q = q, w = w)
+  
     __obj.asInstanceOf[ImageView2Options]
   }
 }

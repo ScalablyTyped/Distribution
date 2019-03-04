@@ -19,8 +19,8 @@ trait IObjectCollection[T] extends js.Object {
 object IObjectCollection {
   @scala.inline
   def apply[T](data: js.Array[T]): IObjectCollection[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+  
     __obj.asInstanceOf[IObjectCollection[T]]
   }
 }

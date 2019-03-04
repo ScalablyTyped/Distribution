@@ -26,14 +26,8 @@ object Anon_ColumnFilenameLeft {
     op: java.lang.String,
     right: stylusLib.stylusMod.StylusNs.NodesNs.Expression
   ): Anon_ColumnFilenameLeft = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, left = left, lineno = lineno, op = op, right = right)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameLeft]
   }
 }

@@ -18,10 +18,8 @@ object TestModeAPI {
     ga: js.Function1[/* repeated */ js.Any, js.Any],
     resetCalls: js.Function
   ): TestModeAPI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("ga")(ga)
-    __obj.updateDynamic("resetCalls")(resetCalls)
+    val __obj = js.Dynamic.literal(calls = calls, ga = ga, resetCalls = resetCalls)
+  
     __obj.asInstanceOf[TestModeAPI]
   }
 }

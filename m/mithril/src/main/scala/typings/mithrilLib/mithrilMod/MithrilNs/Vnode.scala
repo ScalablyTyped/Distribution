@@ -35,10 +35,7 @@ object Vnode {
     key: java.lang.String | scala.Double = null,
     text: java.lang.String | scala.Double | scala.Boolean = null
   ): Vnode[Attrs, State] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])

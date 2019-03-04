@@ -17,10 +17,7 @@ object SplitterCollapseEvent {
     sender: Splitter,
     pane: stdLib.Element = null
   ): SplitterCollapseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (pane != null) __obj.updateDynamic("pane")(pane)
     __obj.asInstanceOf[SplitterCollapseEvent]
   }

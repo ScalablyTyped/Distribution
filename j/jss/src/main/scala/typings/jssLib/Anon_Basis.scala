@@ -17,13 +17,8 @@ trait Anon_Basis extends js.Object {
 object Anon_Basis {
   @scala.inline
   def apply(basis: js.Any, direction: js.Any, flow: js.Any, grow: js.Any, shrink: js.Any, wrap: js.Any): Anon_Basis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basis")(basis)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("flow")(flow)
-    __obj.updateDynamic("grow")(grow)
-    __obj.updateDynamic("shrink")(shrink)
-    __obj.updateDynamic("wrap")(wrap)
+    val __obj = js.Dynamic.literal(basis = basis, direction = direction, flow = flow, grow = grow, shrink = shrink, wrap = wrap)
+  
     __obj.asInstanceOf[Anon_Basis]
   }
 }

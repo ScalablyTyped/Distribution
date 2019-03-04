@@ -18,10 +18,8 @@ object PaneResizeData {
     direction: reactDashSortableDashPaneLib.reactDashSortableDashPaneLibStrings.x | reactDashSortableDashPaneLib.reactDashSortableDashPaneLibStrings.y | reactDashSortableDashPaneLib.reactDashSortableDashPaneLibStrings.xy,
     pane: PaneProperty
   ): PaneResizeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("pane")(pane)
+    val __obj = js.Dynamic.literal(delta = delta, direction = direction.asInstanceOf[js.Any], pane = pane)
+  
     __obj.asInstanceOf[PaneResizeData]
   }
 }

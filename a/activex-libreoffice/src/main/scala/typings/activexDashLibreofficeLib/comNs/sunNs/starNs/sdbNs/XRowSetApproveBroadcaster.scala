@@ -23,12 +23,8 @@ object XRowSetApproveBroadcaster {
     release: js.Function0[scala.Unit],
     removeRowSetApproveListener: js.Function1[XRowSetApproveListener, scala.Unit]
   ): XRowSetApproveBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRowSetApproveListener")(addRowSetApproveListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRowSetApproveListener")(removeRowSetApproveListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addRowSetApproveListener = addRowSetApproveListener, queryInterface = queryInterface, release = release, removeRowSetApproveListener = removeRowSetApproveListener)
+  
     __obj.asInstanceOf[XRowSetApproveBroadcaster]
   }
 }

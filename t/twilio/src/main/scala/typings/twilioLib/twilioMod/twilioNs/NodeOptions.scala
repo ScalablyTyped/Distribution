@@ -22,9 +22,7 @@ object NodeOptions {
     text: java.lang.String = null,
     topLevel: js.UndefOr[scala.Boolean] = js.undefined
   ): NodeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("legalNodes")(legalNodes)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(legalNodes = legalNodes, name = name)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (text != null) __obj.updateDynamic("text")(text)
     if (!js.isUndefined(topLevel)) __obj.updateDynamic("topLevel")(topLevel)

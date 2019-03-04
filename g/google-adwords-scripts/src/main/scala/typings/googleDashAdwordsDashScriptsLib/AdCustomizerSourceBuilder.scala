@@ -19,11 +19,8 @@ object AdCustomizerSourceBuilder {
     build: js.Function0[AdWordsOperation[AdCustomizerSource]],
     withName: js.Function1[java.lang.String, AdCustomizerSourceBuilder[AdCustomizerSource]]
   ): AdCustomizerSourceBuilder[AdCustomizerSource] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAttribute")(addAttribute)
-    __obj.updateDynamic("addAttributes")(addAttributes)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withName")(withName)
+    val __obj = js.Dynamic.literal(addAttribute = addAttribute, addAttributes = addAttributes, build = build, withName = withName)
+  
     __obj.asInstanceOf[AdCustomizerSourceBuilder[AdCustomizerSource]]
   }
 }

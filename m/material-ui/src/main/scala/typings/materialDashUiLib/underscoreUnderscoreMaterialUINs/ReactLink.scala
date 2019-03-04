@@ -14,9 +14,8 @@ trait ReactLink[T] extends js.Object {
 object ReactLink {
   @scala.inline
   def apply[T](requestChange: js.Function1[T, scala.Unit], value: T): ReactLink[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestChange")(requestChange)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(requestChange = requestChange, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ReactLink[T]]
   }
 }

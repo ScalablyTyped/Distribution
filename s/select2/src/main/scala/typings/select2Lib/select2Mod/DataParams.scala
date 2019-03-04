@@ -14,9 +14,8 @@ trait DataParams extends js.Object {
 object DataParams {
   @scala.inline
   def apply(data: OptionData, originalEvent: jqueryLib.BaseJQueryEventObject): DataParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("originalEvent")(originalEvent)
+    val __obj = js.Dynamic.literal(data = data, originalEvent = originalEvent)
+  
     __obj.asInstanceOf[DataParams]
   }
 }

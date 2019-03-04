@@ -73,14 +73,8 @@ object ReposResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
     ]
   ): ReposResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, getIamPolicy = getIamPolicy, list = list, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[ReposResource]
   }
 }

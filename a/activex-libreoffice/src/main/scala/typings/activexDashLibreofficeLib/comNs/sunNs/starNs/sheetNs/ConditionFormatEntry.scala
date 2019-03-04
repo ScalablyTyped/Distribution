@@ -26,16 +26,8 @@ object ConditionFormatEntry {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): ConditionFormatEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Formula1")(Formula1)
-    __obj.updateDynamic("Formula2")(Formula2)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("StyleName")(StyleName)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Formula1 = Formula1, Formula2 = Formula2, Operator = Operator, StyleName = StyleName, Type = Type, acquire = acquire, getType = getType, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[ConditionFormatEntry]
   }
 }

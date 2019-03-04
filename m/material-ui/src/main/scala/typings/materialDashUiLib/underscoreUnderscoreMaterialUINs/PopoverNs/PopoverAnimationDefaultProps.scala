@@ -20,8 +20,7 @@ object PopoverAnimationDefaultProps {
     targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
     zDepth: scala.Int | scala.Double = null
   ): PopoverAnimationDefaultProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(open = open)
     if (className != null) __obj.updateDynamic("className")(className)
     if (style != null) __obj.updateDynamic("style")(style)
     if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)

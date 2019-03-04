@@ -24,8 +24,7 @@ object Anon_HostPath {
     protocol: java.lang.String = null,
     query: java.lang.String = null
   ): Anon_HostPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(statusCode = statusCode)
     if (host != null) __obj.updateDynamic("host")(host)
     if (path != null) __obj.updateDynamic("path")(path)
     if (port != null) __obj.updateDynamic("port")(port)

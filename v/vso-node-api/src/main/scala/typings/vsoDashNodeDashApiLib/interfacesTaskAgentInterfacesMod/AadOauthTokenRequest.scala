@@ -20,11 +20,8 @@ object AadOauthTokenRequest {
     tenantId: java.lang.String,
     token: java.lang.String
   ): AadOauthTokenRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("tenantId")(tenantId)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(refresh = refresh, resource = resource, tenantId = tenantId, token = token)
+  
     __obj.asInstanceOf[AadOauthTokenRequest]
   }
 }

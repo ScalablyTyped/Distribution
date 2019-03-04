@@ -22,12 +22,8 @@ trait PackedItem[T] extends js.Object {
 object PackedItem {
   @scala.inline
   def apply[T](height: scala.Double, item: T, width: scala.Double, x: scala.Double, y: scala.Double): PackedItem[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, item = item.asInstanceOf[js.Any], width = width, x = x, y = y)
+  
     __obj.asInstanceOf[PackedItem[T]]
   }
 }

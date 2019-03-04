@@ -16,9 +16,8 @@ object RESTAPIResponseStream {
     writeStream: js.Function1[js.Object, scala.Unit],
     writeString: js.Function1[java.lang.String, scala.Unit]
   ): RESTAPIResponseStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("writeStream")(writeStream)
-    __obj.updateDynamic("writeString")(writeString)
+    val __obj = js.Dynamic.literal(writeStream = writeStream, writeString = writeString)
+  
     __obj.asInstanceOf[RESTAPIResponseStream]
   }
 }

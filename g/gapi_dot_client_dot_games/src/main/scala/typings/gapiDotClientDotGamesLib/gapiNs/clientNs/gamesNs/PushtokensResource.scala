@@ -24,9 +24,8 @@ object PushtokensResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): PushtokensResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(remove = remove, update = update)
+  
     __obj.asInstanceOf[PushtokensResource]
   }
 }

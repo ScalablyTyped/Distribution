@@ -30,8 +30,7 @@ object MenuItem {
     style: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): MenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (label != null) __obj.updateDynamic("label")(label)

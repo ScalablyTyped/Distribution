@@ -30,16 +30,8 @@ object Internal {
     stateGroups: org.scalablytyped.runtime.StringDictionary[js.Any],
     states: States
   ): Internal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contexts")(contexts)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("desync")(desync)
-    __obj.updateDynamic("interruptible")(interruptible)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("maxListeners")(maxListeners)
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("stateGroups")(stateGroups)
-    __obj.updateDynamic("states")(states)
+    val __obj = js.Dynamic.literal(contexts = contexts, depth = depth, desync = desync, interruptible = interruptible, listeners = listeners, maxListeners = maxListeners, nice = nice, stateGroups = stateGroups, states = states)
+  
     __obj.asInstanceOf[Internal]
   }
 }

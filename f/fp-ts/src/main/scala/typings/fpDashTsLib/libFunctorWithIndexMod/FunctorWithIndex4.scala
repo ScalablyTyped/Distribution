@@ -25,10 +25,8 @@ object FunctorWithIndex4 {
       fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
     ]
   ): FunctorWithIndex4[F, I] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mapWithIndex")(mapWithIndex)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, mapWithIndex = mapWithIndex)
+  
     __obj.asInstanceOf[FunctorWithIndex4[F, I]]
   }
 }

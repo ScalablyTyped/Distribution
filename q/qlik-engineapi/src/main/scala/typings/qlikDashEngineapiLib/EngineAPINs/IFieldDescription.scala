@@ -107,14 +107,7 @@ object IFieldDescription {
     qIsSemantic: js.UndefOr[scala.Boolean] = js.undefined,
     qIsSystem: js.UndefOr[scala.Boolean] = js.undefined
   ): IFieldDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCardinal")(qCardinal)
-    __obj.updateDynamic("qComment")(qComment)
-    __obj.updateDynamic("qInternalNumber")(qInternalNumber)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qSrcTables")(qSrcTables)
-    __obj.updateDynamic("qTags")(qTags)
-    __obj.updateDynamic("qTotalCount")(qTotalCount)
+    val __obj = js.Dynamic.literal(qCardinal = qCardinal, qComment = qComment, qInternalNumber = qInternalNumber, qName = qName, qSrcTables = qSrcTables, qTags = qTags, qTotalCount = qTotalCount)
     if (!js.isUndefined(qAlwaysOneSelected)) __obj.updateDynamic("qAlwaysOneSelected")(qAlwaysOneSelected)
     if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode)
     if (!js.isUndefined(qDistinctOnly)) __obj.updateDynamic("qDistinctOnly")(qDistinctOnly)

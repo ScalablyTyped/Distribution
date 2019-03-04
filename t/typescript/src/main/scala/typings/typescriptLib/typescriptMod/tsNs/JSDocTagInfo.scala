@@ -13,8 +13,7 @@ trait JSDocTagInfo extends js.Object {
 object JSDocTagInfo {
   @scala.inline
   def apply(name: java.lang.String, text: java.lang.String = null): JSDocTagInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[JSDocTagInfo]
   }

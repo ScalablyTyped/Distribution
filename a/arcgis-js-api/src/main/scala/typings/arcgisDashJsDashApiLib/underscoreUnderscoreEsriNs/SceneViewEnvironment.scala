@@ -60,10 +60,7 @@ object SceneViewEnvironment {
       WatchHandle
     ] = null
   ): SceneViewEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere)
     if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled)
     if (background != null) __obj.updateDynamic("background")(background)

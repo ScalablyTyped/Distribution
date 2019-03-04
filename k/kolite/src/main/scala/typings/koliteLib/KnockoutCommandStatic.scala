@@ -17,9 +17,8 @@ object KnockoutCommandStatic {
     asyncCommand: js.Function1[KoLiteCommandOptions, KoliteAsyncCommand],
     command: js.Function1[KoLiteCommandOptions, KoliteCommand]
   ): KnockoutCommandStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncCommand")(asyncCommand)
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(asyncCommand = asyncCommand, command = command)
+  
     __obj.asInstanceOf[KnockoutCommandStatic]
   }
 }

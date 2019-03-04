@@ -41,9 +41,8 @@ object LanguageMapProtocol {
       LanguageDefinition
     ]
   ): LanguageMapProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("insertBefore")(insertBefore)
+    val __obj = js.Dynamic.literal(extend = extend, insertBefore = insertBefore)
+  
     __obj.asInstanceOf[LanguageMapProtocol]
   }
 }

@@ -14,10 +14,8 @@ trait ColorResult extends js.Object {
 object ColorResult {
   @scala.inline
   def apply(hex: java.lang.String, hsl: HSLColor, rgb: RGBColor): ColorResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(hex = hex, hsl = hsl, rgb = rgb)
+  
     __obj.asInstanceOf[ColorResult]
   }
 }

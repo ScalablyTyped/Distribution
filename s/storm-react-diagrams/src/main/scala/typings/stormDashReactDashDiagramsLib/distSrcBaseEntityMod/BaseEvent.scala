@@ -20,11 +20,8 @@ object BaseEvent {
     id: java.lang.String,
     stopPropagation: js.Function0[js.Any]
   ): BaseEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("firing")(firing)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    val __obj = js.Dynamic.literal(entity = entity, firing = firing, id = id, stopPropagation = stopPropagation)
+  
     __obj.asInstanceOf[BaseEvent[T]]
   }
 }

@@ -16,9 +16,8 @@ object Anon_Create {
     create: js.Function1[js.Any, cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.LibWordArray],
     random: js.Function1[scala.Double, java.lang.String]
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("random")(random)
+    val __obj = js.Dynamic.literal(create = create, random = random)
+  
     __obj.asInstanceOf[Anon_Create]
   }
 }

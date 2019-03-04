@@ -30,16 +30,8 @@ object KnockoutBindingHandlers {
     toggle: knockoutLib.KnockoutBindingHandler[_, _, _],
     tooltip: knockoutLib.KnockoutBindingHandler[_, _, _]
   ): KnockoutBindingHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("carousel")(carousel)
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("modal")(modal)
-    __obj.updateDynamic("popover")(popover)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("radio")(radio)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(alert = alert, carousel = carousel, checkbox = checkbox, modal = modal, popover = popover, progress = progress, radio = radio, toggle = toggle, tooltip = tooltip)
+  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

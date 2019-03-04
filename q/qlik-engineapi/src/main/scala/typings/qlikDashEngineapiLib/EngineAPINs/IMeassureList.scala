@@ -15,8 +15,8 @@ trait IMeassureList extends js.Object {
 object IMeassureList {
   @scala.inline
   def apply(qItems: js.Array[IMeassureListItemLayout]): IMeassureList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qItems")(qItems)
+    val __obj = js.Dynamic.literal(qItems = qItems)
+  
     __obj.asInstanceOf[IMeassureList]
   }
 }

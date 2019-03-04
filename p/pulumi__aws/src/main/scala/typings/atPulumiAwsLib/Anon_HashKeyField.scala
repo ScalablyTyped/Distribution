@@ -30,11 +30,7 @@ object Anon_HashKeyField {
     rangeKeyType: java.lang.String = null,
     rangeKeyValue: java.lang.String = null
   ): Anon_HashKeyField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashKeyField")(hashKeyField)
-    __obj.updateDynamic("hashKeyValue")(hashKeyValue)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(hashKeyField = hashKeyField, hashKeyValue = hashKeyValue, roleArn = roleArn, tableName = tableName)
     if (hashKeyType != null) __obj.updateDynamic("hashKeyType")(hashKeyType)
     if (payloadField != null) __obj.updateDynamic("payloadField")(payloadField)
     if (rangeKeyField != null) __obj.updateDynamic("rangeKeyField")(rangeKeyField)

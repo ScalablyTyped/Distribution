@@ -64,33 +64,8 @@ object IObjectType {
     ShowCreationCommandInTaskPane: scala.Boolean,
     Translatable: scala.Boolean
   ): IObjectType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("AllowAdding")(AllowAdding)
-    __obj.updateDynamic("AllowedAsGroupingLevel")(AllowedAsGroupingLevel)
-    __obj.updateDynamic("CanHaveFiles")(CanHaveFiles)
-    __obj.updateDynamic("CanHaveItemIcons")(CanHaveItemIcons)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DefaultAccessControlList")(DefaultAccessControlList)
-    __obj.updateDynamic("DefaultPropertyDef")(DefaultPropertyDef)
-    __obj.updateDynamic("External")(External)
-    __obj.updateDynamic("GUID")(GUID)
-    __obj.updateDynamic("GetIconAsPNG")(GetIconAsPNG)
-    __obj.updateDynamic("HasOwnerType")(HasOwnerType)
-    __obj.updateDynamic("Hierarchical")(Hierarchical)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Icon")(Icon)
-    __obj.updateDynamic("IsAddingAllowedForUser")(IsAddingAllowedForUser)
-    __obj.updateDynamic("NamePlural")(NamePlural)
-    __obj.updateDynamic("NameSingular")(NameSingular)
-    __obj.updateDynamic("ObjectTypeTargetsForBrowsing")(ObjectTypeTargetsForBrowsing)
-    __obj.updateDynamic("OwnerPropertyDef")(OwnerPropertyDef)
-    __obj.updateDynamic("OwnerType")(OwnerType)
-    __obj.updateDynamic("ReadOnlyPropertiesDuringInsert")(ReadOnlyPropertiesDuringInsert)
-    __obj.updateDynamic("ReadOnlyPropertiesDuringUpdate")(ReadOnlyPropertiesDuringUpdate)
-    __obj.updateDynamic("RealObjectType")(RealObjectType)
-    __obj.updateDynamic("ShowCreationCommandInTaskPane")(ShowCreationCommandInTaskPane)
-    __obj.updateDynamic("Translatable")(Translatable)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AllowAdding = AllowAdding, AllowedAsGroupingLevel = AllowedAsGroupingLevel, CanHaveFiles = CanHaveFiles, CanHaveItemIcons = CanHaveItemIcons, Clone = Clone, DefaultAccessControlList = DefaultAccessControlList, DefaultPropertyDef = DefaultPropertyDef, External = External, GUID = GUID, GetIconAsPNG = GetIconAsPNG, HasOwnerType = HasOwnerType, Hierarchical = Hierarchical, ID = ID, Icon = Icon, IsAddingAllowedForUser = IsAddingAllowedForUser, NamePlural = NamePlural, NameSingular = NameSingular, ObjectTypeTargetsForBrowsing = ObjectTypeTargetsForBrowsing, OwnerPropertyDef = OwnerPropertyDef, OwnerType = OwnerType, ReadOnlyPropertiesDuringInsert = ReadOnlyPropertiesDuringInsert, ReadOnlyPropertiesDuringUpdate = ReadOnlyPropertiesDuringUpdate, RealObjectType = RealObjectType, ShowCreationCommandInTaskPane = ShowCreationCommandInTaskPane, Translatable = Translatable)
+  
     __obj.asInstanceOf[IObjectType]
   }
 }

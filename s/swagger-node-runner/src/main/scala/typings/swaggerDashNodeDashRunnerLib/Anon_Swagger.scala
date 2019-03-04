@@ -12,8 +12,8 @@ trait Anon_Swagger extends js.Object {
 object Anon_Swagger {
   @scala.inline
   def apply(swagger: Anon_Path): Anon_Swagger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("swagger")(swagger)
+    val __obj = js.Dynamic.literal(swagger = swagger)
+  
     __obj.asInstanceOf[Anon_Swagger]
   }
 }

@@ -21,8 +21,8 @@ object DirectoryReader {
       scala.Unit
     ]
   ): DirectoryReader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readEntries")(readEntries)
+    val __obj = js.Dynamic.literal(readEntries = readEntries)
+  
     __obj.asInstanceOf[DirectoryReader]
   }
 }

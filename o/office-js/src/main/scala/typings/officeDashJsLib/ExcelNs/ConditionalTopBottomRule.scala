@@ -34,8 +34,8 @@ object ConditionalTopBottomRule {
     rank: scala.Double,
     `type`: ConditionalTopBottomCriterionType | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.TopItems | officeDashJsLib.officeDashJsLibStrings.TopPercent | officeDashJsLib.officeDashJsLibStrings.BottomItems | officeDashJsLib.officeDashJsLibStrings.BottomPercent
   ): ConditionalTopBottomRule = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("rank")(rank)
+    val __obj = js.Dynamic.literal(rank = rank)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalTopBottomRule]
   }
 }

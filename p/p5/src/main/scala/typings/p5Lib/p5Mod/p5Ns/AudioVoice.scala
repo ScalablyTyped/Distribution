@@ -19,9 +19,8 @@ trait AudioVoice extends js.Object {
 object AudioVoice {
   @scala.inline
   def apply(connect: js.Function1[js.Object, scala.Unit], disconnect: js.Function0[scala.Unit]): AudioVoice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("disconnect")(disconnect)
+    val __obj = js.Dynamic.literal(connect = connect, disconnect = disconnect)
+  
     __obj.asInstanceOf[AudioVoice]
   }
 }

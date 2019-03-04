@@ -17,10 +17,8 @@ trait TemplateOptions extends js.Object {
 object TemplateOptions {
   @scala.inline
   def apply(click_tracking: scala.Boolean, open_tracking: scala.Boolean, transactional: scala.Boolean): TemplateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click_tracking")(click_tracking)
-    __obj.updateDynamic("open_tracking")(open_tracking)
-    __obj.updateDynamic("transactional")(transactional)
+    val __obj = js.Dynamic.literal(click_tracking = click_tracking, open_tracking = open_tracking, transactional = transactional)
+  
     __obj.asInstanceOf[TemplateOptions]
   }
 }

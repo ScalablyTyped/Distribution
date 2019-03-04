@@ -19,8 +19,7 @@ object BindCheckbox {
     name: java.lang.String = null,
     `type`: java.lang.String = null
   ): BindCheckbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element)
     if (name != null) __obj.updateDynamic("name")(name)

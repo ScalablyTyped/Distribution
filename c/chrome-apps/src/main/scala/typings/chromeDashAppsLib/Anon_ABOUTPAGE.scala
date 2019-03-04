@@ -54,28 +54,8 @@ object Anon_ABOUTPAGE {
     UNTRACKED: chromeDashAppsLib.chromeDashAppsLibStrings.untracked,
     URL_HANDLER: chromeDashAppsLib.chromeDashAppsLibStrings.url_handler
   ): Anon_ABOUTPAGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ABOUT_PAGE")(ABOUT_PAGE)
-    __obj.updateDynamic("APP_LAUNCHER")(APP_LAUNCHER)
-    __obj.updateDynamic("BACKGROUND")(BACKGROUND)
-    __obj.updateDynamic("CHROME_INTERNAL")(CHROME_INTERNAL)
-    __obj.updateDynamic("COMMAND_LINE")(COMMAND_LINE)
-    __obj.updateDynamic("CONTEXT_MENU")(CONTEXT_MENU)
-    __obj.updateDynamic("EPHEMERAL_APP")(EPHEMERAL_APP)
-    __obj.updateDynamic("EXTENSIONS_PAGE")(EXTENSIONS_PAGE)
-    __obj.updateDynamic("FILE_HANDLER")(FILE_HANDLER)
-    __obj.updateDynamic("INSTALLED_NOTIFICATION")(INSTALLED_NOTIFICATION)
-    __obj.updateDynamic("KEYBOARD")(KEYBOARD)
-    __obj.updateDynamic("KIOSK")(KIOSK)
-    __obj.updateDynamic("LOAD_AND_LAUNCH")(LOAD_AND_LAUNCH)
-    __obj.updateDynamic("MANAGEMENT_API")(MANAGEMENT_API)
-    __obj.updateDynamic("NEW_TAB_PAGE")(NEW_TAB_PAGE)
-    __obj.updateDynamic("RELOAD")(RELOAD)
-    __obj.updateDynamic("RESTART")(RESTART)
-    __obj.updateDynamic("SYSTEM_TRAY")(SYSTEM_TRAY)
-    __obj.updateDynamic("TEST")(TEST)
-    __obj.updateDynamic("UNTRACKED")(UNTRACKED)
-    __obj.updateDynamic("URL_HANDLER")(URL_HANDLER)
+    val __obj = js.Dynamic.literal(ABOUT_PAGE = ABOUT_PAGE, APP_LAUNCHER = APP_LAUNCHER, BACKGROUND = BACKGROUND, CHROME_INTERNAL = CHROME_INTERNAL, COMMAND_LINE = COMMAND_LINE, CONTEXT_MENU = CONTEXT_MENU, EPHEMERAL_APP = EPHEMERAL_APP, EXTENSIONS_PAGE = EXTENSIONS_PAGE, FILE_HANDLER = FILE_HANDLER, INSTALLED_NOTIFICATION = INSTALLED_NOTIFICATION, KEYBOARD = KEYBOARD, KIOSK = KIOSK, LOAD_AND_LAUNCH = LOAD_AND_LAUNCH, MANAGEMENT_API = MANAGEMENT_API, NEW_TAB_PAGE = NEW_TAB_PAGE, RELOAD = RELOAD, RESTART = RESTART, SYSTEM_TRAY = SYSTEM_TRAY, TEST = TEST, UNTRACKED = UNTRACKED, URL_HANDLER = URL_HANDLER)
+  
     __obj.asInstanceOf[Anon_ABOUTPAGE]
   }
 }

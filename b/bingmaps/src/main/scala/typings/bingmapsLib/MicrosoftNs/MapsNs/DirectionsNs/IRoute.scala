@@ -15,9 +15,8 @@ trait IRoute extends js.Object {
 object IRoute {
   @scala.inline
   def apply(routeLegs: js.Array[IRouteLeg], routePath: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Location]): IRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routeLegs")(routeLegs)
-    __obj.updateDynamic("routePath")(routePath)
+    val __obj = js.Dynamic.literal(routeLegs = routeLegs, routePath = routePath)
+  
     __obj.asInstanceOf[IRoute]
   }
 }

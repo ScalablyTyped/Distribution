@@ -32,17 +32,8 @@ object FlashSoundItem {
     sampleRate: java.lang.String,
     sourceFileExists: scala.Boolean
   ): FlashSoundItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitRate")(bitRate)
-    __obj.updateDynamic("bits")(bits)
-    __obj.updateDynamic("compressionType")(compressionType)
-    __obj.updateDynamic("convertStereoToMono")(convertStereoToMono)
-    __obj.updateDynamic("exportToFile")(exportToFile)
-    __obj.updateDynamic("fileLastModifiedDate")(fileLastModifiedDate)
-    __obj.updateDynamic("originalCompressionType")(originalCompressionType)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("sampleRate")(sampleRate)
-    __obj.updateDynamic("sourceFileExists")(sourceFileExists)
+    val __obj = js.Dynamic.literal(bitRate = bitRate, bits = bits, compressionType = compressionType, convertStereoToMono = convertStereoToMono, exportToFile = exportToFile, fileLastModifiedDate = fileLastModifiedDate, originalCompressionType = originalCompressionType, quality = quality, sampleRate = sampleRate, sourceFileExists = sourceFileExists)
+  
     __obj.asInstanceOf[FlashSoundItem]
   }
 }

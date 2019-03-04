@@ -13,9 +13,8 @@ trait SVGAnimatedPoints extends js.Object {
 object SVGAnimatedPoints {
   @scala.inline
   def apply(animatedPoints: SVGPointList, points: SVGPointList): SVGAnimatedPoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animatedPoints")(animatedPoints)
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(animatedPoints = animatedPoints, points = points)
+  
     __obj.asInstanceOf[SVGAnimatedPoints]
   }
 }

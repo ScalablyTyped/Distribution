@@ -34,9 +34,8 @@ trait LoginResponse extends js.Object {
 object LoginResponse {
   @scala.inline
   def apply(code: java.lang.String, errMsg: java.lang.String): LoginResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("errMsg")(errMsg)
+    val __obj = js.Dynamic.literal(code = code, errMsg = errMsg)
+  
     __obj.asInstanceOf[LoginResponse]
   }
 }

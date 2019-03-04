@@ -27,12 +27,8 @@ object LogConfig {
     message: js.Array[_],
     name: java.lang.String
   ): LogConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$el")($el)
-    __obj.updateDynamic("consoleProps")(consoleProps)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($el = $el, consoleProps = consoleProps, displayName = displayName, message = message, name = name)
+  
     __obj.asInstanceOf[LogConfig]
   }
 }

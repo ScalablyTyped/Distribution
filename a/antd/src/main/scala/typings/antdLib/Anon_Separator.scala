@@ -12,8 +12,8 @@ trait Anon_Separator extends js.Object {
 object Anon_Separator {
   @scala.inline
   def apply(separator: java.lang.String): Anon_Separator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("separator")(separator)
+    val __obj = js.Dynamic.literal(separator = separator)
+  
     __obj.asInstanceOf[Anon_Separator]
   }
 }

@@ -76,18 +76,8 @@ object ASPxClientWebChartControlHotTrackEventArgs {
     x: scala.Double,
     y: scala.Double
   ): ASPxClientWebChartControlHotTrackEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absoluteX")(absoluteX)
-    __obj.updateDynamic("absoluteY")(absoluteY)
-    __obj.updateDynamic("additionalHitObject")(additionalHitObject)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("hitInfo")(hitInfo)
-    __obj.updateDynamic("hitObject")(hitObject)
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(absoluteX = absoluteX, absoluteY = absoluteY, additionalHitObject = additionalHitObject, cancel = cancel, chart = chart, hitInfo = hitInfo, hitObject = hitObject, htmlElement = htmlElement, processOnServer = processOnServer, x = x, y = y)
+  
     __obj.asInstanceOf[ASPxClientWebChartControlHotTrackEventArgs]
   }
 }

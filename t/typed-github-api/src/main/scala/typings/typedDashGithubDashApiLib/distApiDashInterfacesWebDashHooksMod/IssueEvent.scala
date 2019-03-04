@@ -17,9 +17,8 @@ object IssueEvent {
     action: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.assigned | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.unassigned | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.labeled | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.unlabeled | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.opened | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.edited | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.milestoned | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.demilestoned | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.reopened,
     issue: typedDashGithubDashApiLib.distApiDashInterfacesIssueMod.Issue
   ): IssueEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("issue")(issue)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue)
+  
     __obj.asInstanceOf[IssueEvent]
   }
 }

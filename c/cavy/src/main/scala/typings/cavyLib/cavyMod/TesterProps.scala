@@ -18,9 +18,7 @@ object TesterProps {
     waitTime: scala.Double,
     sendReport: js.UndefOr[scala.Boolean] = js.undefined
   ): TesterProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("specs")(specs)
-    __obj.updateDynamic("waitTime")(waitTime)
+    val __obj = js.Dynamic.literal(specs = specs, waitTime = waitTime)
     if (!js.isUndefined(sendReport)) __obj.updateDynamic("sendReport")(sendReport)
     __obj.asInstanceOf[TesterProps]
   }

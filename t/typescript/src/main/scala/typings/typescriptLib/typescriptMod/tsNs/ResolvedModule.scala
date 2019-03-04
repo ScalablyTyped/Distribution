@@ -25,8 +25,7 @@ object ResolvedModule {
     resolvedFileName: java.lang.String,
     isExternalLibraryImport: js.UndefOr[scala.Boolean] = js.undefined
   ): ResolvedModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolvedFileName")(resolvedFileName)
+    val __obj = js.Dynamic.literal(resolvedFileName = resolvedFileName)
     if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport)
     __obj.asInstanceOf[ResolvedModule]
   }

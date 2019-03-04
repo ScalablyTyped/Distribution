@@ -26,14 +26,8 @@ object ScreenshotOptions {
     disableTimersAndAnimations: scala.Boolean,
     scale: scala.Boolean
   ): ScreenshotOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterScreenshot")(afterScreenshot)
-    __obj.updateDynamic("beforeScreenshot")(beforeScreenshot)
-    __obj.updateDynamic("blackout")(blackout)
-    __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    __obj.updateDynamic("clip")(clip)
-    __obj.updateDynamic("disableTimersAndAnimations")(disableTimersAndAnimations)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(afterScreenshot = afterScreenshot, beforeScreenshot = beforeScreenshot, blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale)
+  
     __obj.asInstanceOf[ScreenshotOptions]
   }
 }

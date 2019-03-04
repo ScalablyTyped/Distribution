@@ -22,10 +22,8 @@ object ElementStackItem {
     isStartElementEvent: scala.Boolean,
     xAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList
   ): ElementStackItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elementName")(elementName)
-    __obj.updateDynamic("isStartElementEvent")(isStartElementEvent)
-    __obj.updateDynamic("xAttributes")(xAttributes)
+    val __obj = js.Dynamic.literal(elementName = elementName, isStartElementEvent = isStartElementEvent, xAttributes = xAttributes)
+  
     __obj.asInstanceOf[ElementStackItem]
   }
 }

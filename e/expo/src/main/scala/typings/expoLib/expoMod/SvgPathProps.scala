@@ -43,8 +43,7 @@ object SvgPathProps {
     x: scala.Double | java.lang.String = null,
     y: scala.Double | java.lang.String = null
   ): SvgPathProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
+    val __obj = js.Dynamic.literal(d = d)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])

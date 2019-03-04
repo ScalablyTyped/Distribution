@@ -13,9 +13,8 @@ trait ICalculation extends js.Object {
 object ICalculation {
   @scala.inline
   def apply(calculate: js.Function, fields: js.Array[java.lang.String]): ICalculation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculate")(calculate)
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(calculate = calculate, fields = fields)
+  
     __obj.asInstanceOf[ICalculation]
   }
 }

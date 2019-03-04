@@ -63,17 +63,8 @@ object Certificate {
     validExpiry: scala.Double,
     validStart: scala.Double
   ): Certificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("issuer")(issuer)
-    __obj.updateDynamic("issuerCert")(issuerCert)
-    __obj.updateDynamic("issuerName")(issuerName)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("subjectName")(subjectName)
-    __obj.updateDynamic("validExpiry")(validExpiry)
-    __obj.updateDynamic("validStart")(validStart)
+    val __obj = js.Dynamic.literal(data = data, fingerprint = fingerprint, issuer = issuer, issuerCert = issuerCert, issuerName = issuerName, serialNumber = serialNumber, subject = subject, subjectName = subjectName, validExpiry = validExpiry, validStart = validStart)
+  
     __obj.asInstanceOf[Certificate]
   }
 }

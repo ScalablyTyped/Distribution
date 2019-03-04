@@ -20,11 +20,8 @@ object BookmarkMoveInfo {
     oldParentId: java.lang.String,
     parentId: java.lang.String
   ): BookmarkMoveInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("oldIndex")(oldIndex)
-    __obj.updateDynamic("oldParentId")(oldParentId)
-    __obj.updateDynamic("parentId")(parentId)
+    val __obj = js.Dynamic.literal(index = index, oldIndex = oldIndex, oldParentId = oldParentId, parentId = parentId)
+  
     __obj.asInstanceOf[BookmarkMoveInfo]
   }
 }

@@ -13,9 +13,8 @@ trait RenameOptions extends js.Object {
 object RenameOptions {
   @scala.inline
   def apply(renameBuiltins: scala.Boolean, renameScalars: scala.Boolean): RenameOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renameBuiltins")(renameBuiltins)
-    __obj.updateDynamic("renameScalars")(renameScalars)
+    val __obj = js.Dynamic.literal(renameBuiltins = renameBuiltins, renameScalars = renameScalars)
+  
     __obj.asInstanceOf[RenameOptions]
   }
 }

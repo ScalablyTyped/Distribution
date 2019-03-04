@@ -14,9 +14,7 @@ trait Anon_NameParam extends js.Object {
 object Anon_NameParam {
   @scala.inline
   def apply(name: java.lang.String, value: java.lang.String, param: js.UndefOr[scala.Boolean] = js.undefined): Anon_NameParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (!js.isUndefined(param)) __obj.updateDynamic("param")(param)
     __obj.asInstanceOf[Anon_NameParam]
   }

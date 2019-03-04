@@ -16,12 +16,8 @@ trait Anon_Fill extends js.Object {
 object Anon_Fill {
   @scala.inline
   def apply(fill: scala.Double, height: scala.Double, width: scala.Double, x: scala.Double, y: scala.Double): Anon_Fill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(fill = fill, height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_Fill]
   }
 }

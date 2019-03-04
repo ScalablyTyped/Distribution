@@ -16,9 +16,8 @@ object Registry {
     lookup: js.Function1[java.lang.String, whenLib.WhenNs.Promise[MIMEConverter]],
     register: js.Function2[java.lang.String, MIMEConverter, scala.Unit]
   ): Registry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(lookup = lookup, register = register)
+  
     __obj.asInstanceOf[Registry]
   }
 }

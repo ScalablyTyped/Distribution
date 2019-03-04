@@ -20,8 +20,8 @@ trait XSlidePreviewCacheListener extends js.Object {
 object XSlidePreviewCacheListener {
   @scala.inline
   def apply(notifyPreviewCreation: js.Function1[scala.Double, scala.Unit]): XSlidePreviewCacheListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notifyPreviewCreation")(notifyPreviewCreation)
+    val __obj = js.Dynamic.literal(notifyPreviewCreation = notifyPreviewCreation)
+  
     __obj.asInstanceOf[XSlidePreviewCacheListener]
   }
 }

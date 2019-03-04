@@ -20,6 +20,6 @@ trait LodashReduce3x4[T] extends js.Object {
     ],
     accumulator: TResult
   ): TResult = js.native
-  def apply[TResult](callback: lodashLib.lodashMod.underscoreNs.`__`, accumulator: TResult): LodashReduce3x6[T, TResult] = js.native
+  def apply[TResult](callback: lodashLib.lodashMod.underscoreNs.__, accumulator: TResult): LodashReduce3x6[T, TResult] = js.native
 }
 

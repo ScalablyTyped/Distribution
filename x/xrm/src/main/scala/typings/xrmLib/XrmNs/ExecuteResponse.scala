@@ -52,13 +52,8 @@ object ExecuteResponse {
     `type`: java.lang.String,
     url: java.lang.String
   ): ExecuteResponse = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, ok = ok, status = status, statusText = statusText, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExecuteResponse]
   }
 }

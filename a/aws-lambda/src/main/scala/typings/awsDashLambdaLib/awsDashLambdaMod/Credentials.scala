@@ -18,9 +18,7 @@ object Credentials {
     secretAccessKey: java.lang.String,
     sessionToken: java.lang.String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessKeyId")(accessKeyId)
-    __obj.updateDynamic("secretAccessKey")(secretAccessKey)
+    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId, secretAccessKey = secretAccessKey)
     if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
     __obj.asInstanceOf[Credentials]
   }

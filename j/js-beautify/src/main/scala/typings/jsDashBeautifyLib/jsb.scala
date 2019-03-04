@@ -18,9 +18,9 @@ trait jsb extends js.Object {
   def html_beautify(js_source_text: java.lang.String): java.lang.String = js.native
   def html_beautify(js_source_text: java.lang.String, options: HTMLBeautifyOptions): java.lang.String = js.native
   @JSName("js")
-  def `js_`(js_source_text: java.lang.String): java.lang.String = js.native
+  def js_(js_source_text: java.lang.String): java.lang.String = js.native
   @JSName("js")
-  def `js_`(js_source_text: java.lang.String, options: JsBeautifyOptions): java.lang.String = js.native
+  def js_(js_source_text: java.lang.String, options: JsBeautifyOptions): java.lang.String = js.native
   def js_beautify(js_source_text: java.lang.String): java.lang.String = js.native
   def js_beautify(js_source_text: java.lang.String, options: JsBeautifyOptions): java.lang.String = js.native
 }

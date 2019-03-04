@@ -39,11 +39,7 @@ object SlowDownRequestAugmentation {
     remaining: scala.Double,
     resetTime: scala.Int | scala.Double = null
   ): SlowDownRequestAugmentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("remaining")(remaining)
+    val __obj = js.Dynamic.literal(current = current, delay = delay, limit = limit, remaining = remaining)
     if (resetTime != null) __obj.updateDynamic("resetTime")(resetTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlowDownRequestAugmentation]
   }

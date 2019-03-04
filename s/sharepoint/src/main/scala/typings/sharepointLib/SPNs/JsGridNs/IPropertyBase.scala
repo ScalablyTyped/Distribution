@@ -26,13 +26,8 @@ object IPropertyBase {
     HasLocalizedValue: js.Function0[scala.Boolean],
     Update: js.Function2[js.Any, java.lang.String, scala.Unit]
   ): IPropertyBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("GetData")(GetData)
-    __obj.updateDynamic("GetLocalized")(GetLocalized)
-    __obj.updateDynamic("HasDataValue")(HasDataValue)
-    __obj.updateDynamic("HasLocalizedValue")(HasLocalizedValue)
-    __obj.updateDynamic("Update")(Update)
+    val __obj = js.Dynamic.literal(Clone = Clone, GetData = GetData, GetLocalized = GetLocalized, HasDataValue = HasDataValue, HasLocalizedValue = HasLocalizedValue, Update = Update)
+  
     __obj.asInstanceOf[IPropertyBase]
   }
 }

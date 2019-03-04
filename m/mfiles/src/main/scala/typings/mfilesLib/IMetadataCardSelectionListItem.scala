@@ -22,12 +22,8 @@ object IMetadataCardSelectionListItem {
     Selectable: scala.Boolean,
     Value: js.Any
   ): IMetadataCardSelectionListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChildItems")(ChildItems)
-    __obj.updateDynamic("HasParent")(HasParent)
-    __obj.updateDynamic("ParentID")(ParentID)
-    __obj.updateDynamic("Selectable")(Selectable)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(ChildItems = ChildItems, HasParent = HasParent, ParentID = ParentID, Selectable = Selectable, Value = Value)
+  
     __obj.asInstanceOf[IMetadataCardSelectionListItem]
   }
 }

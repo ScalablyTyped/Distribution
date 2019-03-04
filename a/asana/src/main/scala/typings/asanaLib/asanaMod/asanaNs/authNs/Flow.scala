@@ -22,9 +22,8 @@ trait Flow extends js.Object {
 object Flow {
   @scala.inline
   def apply(authorizeUrl: js.Function0[java.lang.String], run: js.Function0[scala.Unit]): Flow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizeUrl")(authorizeUrl)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(authorizeUrl = authorizeUrl, run = run)
+  
     __obj.asInstanceOf[Flow]
   }
 }

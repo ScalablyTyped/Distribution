@@ -13,9 +13,8 @@ trait Anon_IsOverlapping extends js.Object {
 object Anon_IsOverlapping {
   @scala.inline
   def apply(isOverlapping: scala.Double, oK: scala.Double): Anon_IsOverlapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOverlapping")(isOverlapping)
-    __obj.updateDynamic("oK")(oK)
+    val __obj = js.Dynamic.literal(isOverlapping = isOverlapping, oK = oK)
+  
     __obj.asInstanceOf[Anon_IsOverlapping]
   }
 }

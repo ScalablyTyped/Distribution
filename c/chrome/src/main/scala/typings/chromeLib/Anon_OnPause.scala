@@ -20,11 +20,8 @@ object Anon_OnPause {
     onSpeak: chromeLib.chromeNs.ttsEngineNs.TtsEngineSpeakEvent,
     onStop: chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
   ): Anon_OnPause = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPause")(onPause)
-    __obj.updateDynamic("onResume")(onResume)
-    __obj.updateDynamic("onSpeak")(onSpeak)
-    __obj.updateDynamic("onStop")(onStop)
+    val __obj = js.Dynamic.literal(onPause = onPause, onResume = onResume, onSpeak = onSpeak, onStop = onStop)
+  
     __obj.asInstanceOf[Anon_OnPause]
   }
 }

@@ -48,13 +48,8 @@ object XSSOPasswordCache {
     release: js.Function0[scala.Unit],
     removePassword: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
   ): XSSOPasswordCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPassword")(addPassword)
-    __obj.updateDynamic("getPassword")(getPassword)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePassword")(removePassword)
+    val __obj = js.Dynamic.literal(acquire = acquire, addPassword = addPassword, getPassword = getPassword, queryInterface = queryInterface, release = release, removePassword = removePassword)
+  
     __obj.asInstanceOf[XSSOPasswordCache]
   }
 }

@@ -36,8 +36,7 @@ object TestScriptRulesetRule {
     modifierExtension: js.Array[Extension] = null,
     param: js.Array[TestScriptRulesetRuleParam] = null
   ): TestScriptRulesetRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ruleId")(ruleId)
+    val __obj = js.Dynamic.literal(ruleId = ruleId)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_ruleId != null) __obj.updateDynamic("_ruleId")(_ruleId)

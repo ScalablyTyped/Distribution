@@ -16,9 +16,8 @@ object ConfirmationResult {
     confirm: js.Function1[java.lang.String, js.Promise[UserCredential]],
     verificationId: java.lang.String
   ): ConfirmationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirm")(confirm)
-    __obj.updateDynamic("verificationId")(verificationId)
+    val __obj = js.Dynamic.literal(confirm = confirm, verificationId = verificationId)
+  
     __obj.asInstanceOf[ConfirmationResult]
   }
 }

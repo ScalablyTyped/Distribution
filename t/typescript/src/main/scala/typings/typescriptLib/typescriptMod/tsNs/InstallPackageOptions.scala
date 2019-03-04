@@ -13,9 +13,8 @@ trait InstallPackageOptions extends js.Object {
 object InstallPackageOptions {
   @scala.inline
   def apply(fileName: Path, packageName: java.lang.String): InstallPackageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("packageName")(packageName)
+    val __obj = js.Dynamic.literal(fileName = fileName, packageName = packageName)
+  
     __obj.asInstanceOf[InstallPackageOptions]
   }
 }

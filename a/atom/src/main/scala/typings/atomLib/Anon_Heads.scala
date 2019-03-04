@@ -18,10 +18,8 @@ object Anon_Heads {
     remotes: js.Array[java.lang.String],
     tags: js.Array[java.lang.String]
   ): Anon_Heads = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("heads")(heads)
-    __obj.updateDynamic("remotes")(remotes)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(heads = heads, remotes = remotes, tags = tags)
+  
     __obj.asInstanceOf[Anon_Heads]
   }
 }

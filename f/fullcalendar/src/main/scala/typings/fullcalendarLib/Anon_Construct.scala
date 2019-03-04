@@ -18,10 +18,8 @@ object Anon_Construct {
     reject: js.Function0[jqueryLib.JQueryPromise[js.Object]],
     resolve: js.Function1[js.Any, jqueryLib.JQueryPromise[js.Object]]
   ): Anon_Construct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("construct")(construct)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(construct = construct, reject = reject, resolve = resolve)
+  
     __obj.asInstanceOf[Anon_Construct]
   }
 }

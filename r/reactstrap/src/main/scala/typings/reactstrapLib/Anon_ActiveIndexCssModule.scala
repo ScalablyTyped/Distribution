@@ -20,10 +20,7 @@ object Anon_ActiveIndexCssModule {
     onClickHandler: js.Function1[scala.Double, scala.Unit],
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null
   ): Anon_ActiveIndexCssModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeIndex")(activeIndex)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("onClickHandler")(onClickHandler)
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex, items = items, onClickHandler = onClickHandler)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     __obj.asInstanceOf[Anon_ActiveIndexCssModule]
   }

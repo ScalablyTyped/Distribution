@@ -29,10 +29,8 @@ object IUtilDomEvent {
     getPointer: js.Function2[stdLib.Event, stdLib.HTMLCanvasElement, Point],
     removeListener: js.Function3[stdLib.HTMLElement, java.lang.String, js.Function, scala.Unit]
   ): IUtilDomEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("getPointer")(getPointer)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(addListener = addListener, getPointer = getPointer, removeListener = removeListener)
+  
     __obj.asInstanceOf[IUtilDomEvent]
   }
 }

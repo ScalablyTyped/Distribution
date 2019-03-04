@@ -25,8 +25,8 @@ trait IDoCheck extends js.Object {
 object IDoCheck {
   @scala.inline
   def apply($doCheck: js.Function0[scala.Unit]): IDoCheck = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$doCheck")($doCheck)
+    val __obj = js.Dynamic.literal($doCheck = $doCheck)
+  
     __obj.asInstanceOf[IDoCheck]
   }
 }

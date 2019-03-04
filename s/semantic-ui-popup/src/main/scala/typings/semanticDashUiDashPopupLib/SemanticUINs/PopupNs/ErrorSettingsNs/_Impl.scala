@@ -37,12 +37,8 @@ object _Impl {
     noTransition: java.lang.String,
     notFound: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cannotPlace")(cannotPlace)
-    __obj.updateDynamic("invalidPosition")(invalidPosition)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("noTransition")(noTransition)
-    __obj.updateDynamic("notFound")(notFound)
+    val __obj = js.Dynamic.literal(cannotPlace = cannotPlace, invalidPosition = invalidPosition, method = method, noTransition = noTransition, notFound = notFound)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

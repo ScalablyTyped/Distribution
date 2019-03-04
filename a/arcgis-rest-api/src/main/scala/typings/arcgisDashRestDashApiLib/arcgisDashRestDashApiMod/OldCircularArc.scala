@@ -12,8 +12,8 @@ trait OldCircularArc extends JsonCurve {
 object OldCircularArc {
   @scala.inline
   def apply(a: js.Tuple4[Position, Position2D, scala.Double, scala.Double]): OldCircularArc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
+    val __obj = js.Dynamic.literal(a = a)
+  
     __obj.asInstanceOf[OldCircularArc]
   }
 }

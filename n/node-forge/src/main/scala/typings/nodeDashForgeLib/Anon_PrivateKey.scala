@@ -16,9 +16,8 @@ object Anon_PrivateKey {
     privateKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer,
     publicKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
   ): Anon_PrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PrivateKey]
   }
 }

@@ -53,8 +53,7 @@ object ColumnDef {
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
     width: java.lang.String = null
   ): ColumnDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(field = field)
     if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass)
     if (cellFormatter != null) __obj.updateDynamic("cellFormatter")(cellFormatter)
     if (cellTemplate != null) __obj.updateDynamic("cellTemplate")(cellTemplate.asInstanceOf[js.Any])

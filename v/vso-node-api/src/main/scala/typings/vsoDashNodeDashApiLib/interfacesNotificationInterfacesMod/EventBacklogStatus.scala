@@ -20,11 +20,8 @@ object EventBacklogStatus {
     timeSinceLastProcessedEventMs: scala.Double,
     unprocessedEvents: scala.Double
   ): EventBacklogStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxUnprocessedEventAgeMs")(maxUnprocessedEventAgeMs)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("timeSinceLastProcessedEventMs")(timeSinceLastProcessedEventMs)
-    __obj.updateDynamic("unprocessedEvents")(unprocessedEvents)
+    val __obj = js.Dynamic.literal(maxUnprocessedEventAgeMs = maxUnprocessedEventAgeMs, publisher = publisher, timeSinceLastProcessedEventMs = timeSinceLastProcessedEventMs, unprocessedEvents = unprocessedEvents)
+  
     __obj.asInstanceOf[EventBacklogStatus]
   }
 }

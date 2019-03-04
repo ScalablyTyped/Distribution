@@ -64,17 +64,8 @@ object Package {
     packageHash: java.lang.String,
     packageSize: scala.Double
   ): Package = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("deploymentKey")(deploymentKey)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("failedInstall")(failedInstall)
-    __obj.updateDynamic("isFirstRun")(isFirstRun)
-    __obj.updateDynamic("isMandatory")(isMandatory)
-    __obj.updateDynamic("isPending")(isPending)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("packageHash")(packageHash)
-    __obj.updateDynamic("packageSize")(packageSize)
+    val __obj = js.Dynamic.literal(appVersion = appVersion, deploymentKey = deploymentKey, description = description, failedInstall = failedInstall, isFirstRun = isFirstRun, isMandatory = isMandatory, isPending = isPending, label = label, packageHash = packageHash, packageSize = packageSize)
+  
     __obj.asInstanceOf[Package]
   }
 }

@@ -25,12 +25,8 @@ object WebApiTeam {
     name: java.lang.String,
     url: java.lang.String
   ): WebApiTeam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("identityUrl")(identityUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(description = description, id = id, identityUrl = identityUrl, name = name, url = url)
+  
     __obj.asInstanceOf[WebApiTeam]
   }
 }

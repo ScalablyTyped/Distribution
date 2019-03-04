@@ -13,9 +13,8 @@ trait PersistorState extends js.Object {
 object PersistorState {
   @scala.inline
   def apply(bootstrapped: scala.Boolean, registry: js.Array[java.lang.String]): PersistorState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bootstrapped")(bootstrapped)
-    __obj.updateDynamic("registry")(registry)
+    val __obj = js.Dynamic.literal(bootstrapped = bootstrapped, registry = registry)
+  
     __obj.asInstanceOf[PersistorState]
   }
 }

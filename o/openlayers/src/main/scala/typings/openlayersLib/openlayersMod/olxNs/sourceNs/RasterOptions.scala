@@ -25,8 +25,7 @@ object RasterOptions {
     operationType: openlayersLib.openlayersMod.RasterOperationType = null,
     threads: scala.Int | scala.Double = null
   ): RasterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sources")(sources)
+    val __obj = js.Dynamic.literal(sources = sources)
     if (lib != null) __obj.updateDynamic("lib")(lib)
     if (operation != null) __obj.updateDynamic("operation")(operation)
     if (operationType != null) __obj.updateDynamic("operationType")(operationType)

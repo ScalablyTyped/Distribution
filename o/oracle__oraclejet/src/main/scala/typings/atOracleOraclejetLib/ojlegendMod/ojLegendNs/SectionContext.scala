@@ -23,12 +23,8 @@ object SectionContext {
     sections: js.Array[js.Object],
     title: java.lang.String
   ): SectionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItems")(getItems)
-    __obj.updateDynamic("getSection")(getSection)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(getItems = getItems, getSection = getSection, items = items, sections = sections, title = title)
+  
     __obj.asInstanceOf[SectionContext]
   }
 }

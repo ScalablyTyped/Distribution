@@ -38,8 +38,8 @@ object uniqueValues {
       arcgisDashJsDashApiLib.IPromise[UniqueValuesResult]
     ]
   ): uniqueValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uniqueValues")(uniqueValues)
+    val __obj = js.Dynamic.literal(uniqueValues = uniqueValues)
+  
     __obj.asInstanceOf[uniqueValues]
   }
 }

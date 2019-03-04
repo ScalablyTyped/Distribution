@@ -24,14 +24,8 @@ object IKeyboardEventData {
     returnValue: scala.Boolean,
     shiftKey: scala.Double
   ): IKeyboardEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altKey")(altKey)
-    __obj.updateDynamic("ctrlKey")(ctrlKey)
-    __obj.updateDynamic("keyCode")(keyCode)
-    __obj.updateDynamic("metaKey")(metaKey)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("shiftKey")(shiftKey)
+    val __obj = js.Dynamic.literal(altKey = altKey, ctrlKey = ctrlKey, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, returnValue = returnValue, shiftKey = shiftKey)
+  
     __obj.asInstanceOf[IKeyboardEventData]
   }
 }

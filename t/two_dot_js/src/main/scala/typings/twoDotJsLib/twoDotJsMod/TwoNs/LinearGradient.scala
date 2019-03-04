@@ -21,12 +21,8 @@ object LinearGradient {
     spread: java.lang.String,
     stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
   ): LinearGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("spread")(spread)
-    __obj.updateDynamic("stops")(stops)
+    val __obj = js.Dynamic.literal(clone = clone, left = left, right = right, spread = spread, stops = stops)
+  
     __obj.asInstanceOf[LinearGradient]
   }
 }

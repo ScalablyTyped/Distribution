@@ -22,11 +22,8 @@ object ClientState {
     timestamp: scala.Double,
     userId: java.lang.String
   ): ClientState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(clientId = clientId, status = status, timestamp = timestamp, userId = userId)
+  
     __obj.asInstanceOf[ClientState]
   }
 }

@@ -52,12 +52,8 @@ object SubscriptionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): SubscriptionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("defer")(defer)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("refund")(refund)
-    __obj.updateDynamic("revoke")(revoke)
+    val __obj = js.Dynamic.literal(cancel = cancel, defer = defer, get = get, refund = refund, revoke = revoke)
+  
     __obj.asInstanceOf[SubscriptionsResource]
   }
 }

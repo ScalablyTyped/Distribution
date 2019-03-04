@@ -12,8 +12,8 @@ trait Anon_TypesReadOnly extends js.Object {
 object Anon_TypesReadOnly {
   @scala.inline
   def apply(TypesNs: Anon_TypesReadOnly): Anon_TypesReadOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TypesNs")(TypesNs)
+    val __obj = js.Dynamic.literal(TypesNs = TypesNs)
+  
     __obj.asInstanceOf[Anon_TypesReadOnly]
   }
 }

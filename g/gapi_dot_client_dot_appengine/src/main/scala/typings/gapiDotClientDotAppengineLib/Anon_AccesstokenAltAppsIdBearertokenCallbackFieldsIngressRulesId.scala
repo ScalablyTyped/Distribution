@@ -61,9 +61,7 @@ object Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsIngressRulesId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appsId")(appsId)
-    __obj.updateDynamic("ingressRulesId")(ingressRulesId)
+    val __obj = js.Dynamic.literal(appsId = appsId, ingressRulesId = ingressRulesId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

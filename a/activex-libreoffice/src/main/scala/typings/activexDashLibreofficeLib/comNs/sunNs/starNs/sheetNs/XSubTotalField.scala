@@ -39,16 +39,8 @@ object XSubTotalField {
     setGroupColumn: js.Function1[scala.Double, scala.Unit],
     setSubTotalColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn], scala.Unit]
   ): XSubTotalField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GroupColumn")(GroupColumn)
-    __obj.updateDynamic("SubTotalColumns")(SubTotalColumns)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGroupColumn")(getGroupColumn)
-    __obj.updateDynamic("getSubTotalColumns")(getSubTotalColumns)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setGroupColumn")(setGroupColumn)
-    __obj.updateDynamic("setSubTotalColumns")(setSubTotalColumns)
+    val __obj = js.Dynamic.literal(GroupColumn = GroupColumn, SubTotalColumns = SubTotalColumns, acquire = acquire, getGroupColumn = getGroupColumn, getSubTotalColumns = getSubTotalColumns, queryInterface = queryInterface, release = release, setGroupColumn = setGroupColumn, setSubTotalColumns = setSubTotalColumns)
+  
     __obj.asInstanceOf[XSubTotalField]
   }
 }

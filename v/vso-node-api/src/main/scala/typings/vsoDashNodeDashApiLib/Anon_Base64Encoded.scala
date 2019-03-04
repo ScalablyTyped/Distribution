@@ -13,9 +13,8 @@ trait Anon_Base64Encoded extends js.Object {
 object Anon_Base64Encoded {
   @scala.inline
   def apply(base64Encoded: scala.Double, rawText: scala.Double): Anon_Base64Encoded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base64Encoded")(base64Encoded)
-    __obj.updateDynamic("rawText")(rawText)
+    val __obj = js.Dynamic.literal(base64Encoded = base64Encoded, rawText = rawText)
+  
     __obj.asInstanceOf[Anon_Base64Encoded]
   }
 }

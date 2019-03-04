@@ -16,8 +16,7 @@ object Anon_ContextEvent {
     event: java.lang.String,
     context: reactDashSelectLib.libAccessibilityMod.InstructionsContext = null
   ): Anon_ContextEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[Anon_ContextEvent]
   }

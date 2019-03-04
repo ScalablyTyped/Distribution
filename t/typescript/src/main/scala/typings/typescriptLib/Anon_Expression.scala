@@ -14,8 +14,8 @@ object Anon_Expression {
   def apply(
     expression: typescriptLib.typescriptMod.tsNs.Identifier | typescriptLib.typescriptMod.tsNs.PropertyAccessEntityNameExpression
   ): Anon_Expression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Expression]
   }
 }

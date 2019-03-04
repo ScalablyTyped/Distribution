@@ -14,8 +14,8 @@ object Anon_Key {
   def apply(
     objectType: (graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | graphqlLib.graphqlMod.GraphQLInterfaceType
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(objectType = objectType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

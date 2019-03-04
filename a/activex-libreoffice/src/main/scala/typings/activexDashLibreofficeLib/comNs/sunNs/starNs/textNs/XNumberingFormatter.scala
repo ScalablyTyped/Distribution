@@ -33,11 +33,8 @@ object XNumberingFormatter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNumberingFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("makeNumberingString")(makeNumberingString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, makeNumberingString = makeNumberingString, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNumberingFormatter]
   }
 }

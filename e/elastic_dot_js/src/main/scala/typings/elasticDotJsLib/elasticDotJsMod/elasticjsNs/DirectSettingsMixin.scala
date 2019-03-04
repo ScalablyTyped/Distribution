@@ -80,17 +80,8 @@ object DirectSettingsMixin {
     stringDistance: js.Function1[java.lang.String, DirectSettingsMixin],
     suggestMode: js.Function1[java.lang.String, DirectSettingsMixin]
   ): DirectSettingsMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("maxEdits")(maxEdits)
-    __obj.updateDynamic("maxInspections")(maxInspections)
-    __obj.updateDynamic("maxTermFreq")(maxTermFreq)
-    __obj.updateDynamic("minDocFreq")(minDocFreq)
-    __obj.updateDynamic("minWordLen")(minWordLen)
-    __obj.updateDynamic("prefixLen")(prefixLen)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("stringDistance")(stringDistance)
-    __obj.updateDynamic("suggestMode")(suggestMode)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, prefixLen = prefixLen, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode)
+  
     __obj.asInstanceOf[DirectSettingsMixin]
   }
 }

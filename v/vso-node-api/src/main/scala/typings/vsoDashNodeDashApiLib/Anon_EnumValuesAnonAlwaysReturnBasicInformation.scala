@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonAlwaysReturnBasicInformation extends js.Object {
 object Anon_EnumValuesAnonAlwaysReturnBasicInformation {
   @scala.inline
   def apply(enumValues: Anon_AlwaysReturnBasicInformation): Anon_EnumValuesAnonAlwaysReturnBasicInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonAlwaysReturnBasicInformation]
   }
 }

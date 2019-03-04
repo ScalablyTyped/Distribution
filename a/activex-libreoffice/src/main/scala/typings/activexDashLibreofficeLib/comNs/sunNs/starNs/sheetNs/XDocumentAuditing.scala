@@ -24,11 +24,8 @@ object XDocumentAuditing {
     refreshArrows: js.Function0[scala.Unit],
     release: js.Function0[scala.Unit]
   ): XDocumentAuditing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refreshArrows")(refreshArrows)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, refreshArrows = refreshArrows, release = release)
+  
     __obj.asInstanceOf[XDocumentAuditing]
   }
 }

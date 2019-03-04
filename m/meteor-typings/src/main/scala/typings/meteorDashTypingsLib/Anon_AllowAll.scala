@@ -18,10 +18,8 @@ object Anon_AllowAll {
     disallow: js.Function0[scala.Unit],
     restrictToOrigin: js.Function1[java.lang.String, scala.Unit]
   ): Anon_AllowAll = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowAll")(allowAll)
-    __obj.updateDynamic("disallow")(disallow)
-    __obj.updateDynamic("restrictToOrigin")(restrictToOrigin)
+    val __obj = js.Dynamic.literal(allowAll = allowAll, disallow = disallow, restrictToOrigin = restrictToOrigin)
+  
     __obj.asInstanceOf[Anon_AllowAll]
   }
 }

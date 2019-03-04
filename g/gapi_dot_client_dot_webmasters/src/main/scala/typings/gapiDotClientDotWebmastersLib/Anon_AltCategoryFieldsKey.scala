@@ -45,10 +45,7 @@ object Anon_AltCategoryFieldsKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCategoryFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("siteUrl")(siteUrl)
+    val __obj = js.Dynamic.literal(category = category, platform = platform, siteUrl = siteUrl)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

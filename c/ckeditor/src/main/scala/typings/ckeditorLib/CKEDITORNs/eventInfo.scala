@@ -28,15 +28,8 @@ object eventInfo {
     sender: org.scalablytyped.runtime.StringDictionary[js.Any],
     stop: js.Function0[scala.Unit]
   ): eventInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("listenerData")(listenerData)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("removeListener")(removeListener)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(cancel = cancel, data = data, editor = editor, listenerData = listenerData, name = name, removeListener = removeListener, sender = sender, stop = stop)
+  
     __obj.asInstanceOf[eventInfo]
   }
 }

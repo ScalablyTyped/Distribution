@@ -22,13 +22,8 @@ object GridViewSelectionEventArgs {
     sender: Control,
     visibleIndex: scala.Double
   ): GridViewSelectionEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAllRecordsOnPage")(isAllRecordsOnPage)
-    __obj.updateDynamic("isChangedOnServer")(isChangedOnServer)
-    __obj.updateDynamic("isSelected")(isSelected)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage, isChangedOnServer = isChangedOnServer, isSelected = isSelected, processOnServer = processOnServer, sender = sender, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[GridViewSelectionEventArgs]
   }
 }

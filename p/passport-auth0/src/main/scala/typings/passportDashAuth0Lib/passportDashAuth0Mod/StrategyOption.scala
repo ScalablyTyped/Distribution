@@ -28,11 +28,7 @@ object StrategyOption {
     scopeSeparator: java.lang.String = null,
     state: js.UndefOr[scala.Boolean] = js.undefined
   ): StrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, domain = domain)
     if (!js.isUndefined(enableProof)) __obj.updateDynamic("enableProof")(enableProof)
     if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)
     if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)

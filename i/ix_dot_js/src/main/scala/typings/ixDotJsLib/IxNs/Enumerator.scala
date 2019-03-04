@@ -17,10 +17,8 @@ object Enumerator {
     getCurrent: js.Function0[T],
     moveNext: js.Function0[scala.Boolean]
   ): Enumerator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getCurrent")(getCurrent)
-    __obj.updateDynamic("moveNext")(moveNext)
+    val __obj = js.Dynamic.literal(dispose = dispose, getCurrent = getCurrent, moveNext = moveNext)
+  
     __obj.asInstanceOf[Enumerator[T]]
   }
 }

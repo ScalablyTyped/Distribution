@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonErrorFailed extends js.Object {
 object Anon_EnumValuesAnonErrorFailed {
   @scala.inline
   def apply(enumValues: Anon_ErrorFailed): Anon_EnumValuesAnonErrorFailed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonErrorFailed]
   }
 }

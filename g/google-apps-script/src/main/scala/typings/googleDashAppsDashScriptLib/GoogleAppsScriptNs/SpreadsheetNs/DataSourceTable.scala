@@ -24,13 +24,8 @@ object DataSourceTable {
     refreshData: js.Function0[DataSourceTable],
     waitForCompletion: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DataExecutionStatus]
   ): DataSourceTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceRefreshData")(forceRefreshData)
-    __obj.updateDynamic("getDataSource")(getDataSource)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("getStatus")(getStatus)
-    __obj.updateDynamic("refreshData")(refreshData)
-    __obj.updateDynamic("waitForCompletion")(waitForCompletion)
+    val __obj = js.Dynamic.literal(forceRefreshData = forceRefreshData, getDataSource = getDataSource, getRange = getRange, getStatus = getStatus, refreshData = refreshData, waitForCompletion = waitForCompletion)
+  
     __obj.asInstanceOf[DataSourceTable]
   }
 }

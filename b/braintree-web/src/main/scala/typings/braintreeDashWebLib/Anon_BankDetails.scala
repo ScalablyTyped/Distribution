@@ -14,10 +14,8 @@ trait Anon_BankDetails extends js.Object {
 object Anon_BankDetails {
   @scala.inline
   def apply(bankDetails: js.Any, bankLogin: js.Any, mandateText: java.lang.String): Anon_BankDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bankDetails")(bankDetails)
-    __obj.updateDynamic("bankLogin")(bankLogin)
-    __obj.updateDynamic("mandateText")(mandateText)
+    val __obj = js.Dynamic.literal(bankDetails = bankDetails, bankLogin = bankLogin, mandateText = mandateText)
+  
     __obj.asInstanceOf[Anon_BankDetails]
   }
 }

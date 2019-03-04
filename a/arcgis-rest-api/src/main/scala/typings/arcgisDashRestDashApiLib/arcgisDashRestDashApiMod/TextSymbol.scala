@@ -49,7 +49,8 @@ object TextSymbol {
     xoffset: scala.Int | scala.Double = null,
     yoffset: scala.Int | scala.Double = null
   ): TextSymbol = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (borderLineColor != null) __obj.updateDynamic("borderLineColor")(borderLineColor)

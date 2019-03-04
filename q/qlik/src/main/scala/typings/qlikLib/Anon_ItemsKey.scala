@@ -16,8 +16,7 @@ object Anon_ItemsKey {
     uses: qlikLib.qlikLibStrings.sorting,
     items: org.scalablytyped.runtime.StringDictionary[qlikLib.qlikMod.CustomProperty] = null
   ): Anon_ItemsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(uses = uses)
     if (items != null) __obj.updateDynamic("items")(items)
     __obj.asInstanceOf[Anon_ItemsKey]
   }

@@ -13,9 +13,8 @@ trait ChannelSubscription extends js.Object {
 object ChannelSubscription {
   @scala.inline
   def apply(cancel: js.Function0[scala.Unit], unsubscribe: js.Function0[scala.Unit]): ChannelSubscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(cancel = cancel, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[ChannelSubscription]
   }
 }

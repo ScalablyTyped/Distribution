@@ -16,8 +16,7 @@ object Anon_HealthCheckPortMapping {
     portMapping: atPulumiPulumiLib.outputMod.Input[Anon_PortProtocol],
     healthCheck: atPulumiPulumiLib.outputMod.Input[Anon_HealthyThresholdIntervalMillisPath] = null
   ): Anon_HealthCheckPortMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("portMapping")(portMapping.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(portMapping = portMapping.asInstanceOf[js.Any])
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HealthCheckPortMapping]
   }

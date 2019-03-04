@@ -15,9 +15,8 @@ trait SubIncrement extends js.Object {
 object SubIncrement {
   @scala.inline
   def apply(IntervalCount: js.Any, PostEquidistant: js.Any): SubIncrement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IntervalCount")(IntervalCount)
-    __obj.updateDynamic("PostEquidistant")(PostEquidistant)
+    val __obj = js.Dynamic.literal(IntervalCount = IntervalCount, PostEquidistant = PostEquidistant)
+  
     __obj.asInstanceOf[SubIncrement]
   }
 }

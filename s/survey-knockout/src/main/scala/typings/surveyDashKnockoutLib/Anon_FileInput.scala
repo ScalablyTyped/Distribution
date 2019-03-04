@@ -24,13 +24,8 @@ object Anon_FileInput {
     removeFile: java.lang.String,
     root: java.lang.String
   ): Anon_FileInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileInput")(fileInput)
-    __obj.updateDynamic("placeholderInput")(placeholderInput)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("removeButton")(removeButton)
-    __obj.updateDynamic("removeFile")(removeFile)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(fileInput = fileInput, placeholderInput = placeholderInput, preview = preview, removeButton = removeButton, removeFile = removeFile, root = root)
+  
     __obj.asInstanceOf[Anon_FileInput]
   }
 }

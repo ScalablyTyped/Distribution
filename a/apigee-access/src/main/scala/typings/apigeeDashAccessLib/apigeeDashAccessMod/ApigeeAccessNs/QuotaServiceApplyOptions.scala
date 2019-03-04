@@ -22,10 +22,7 @@ object QuotaServiceApplyOptions {
     interval: scala.Int | scala.Double = null,
     weight: scala.Int | scala.Double = null
   ): QuotaServiceApplyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allow")(allow)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allow = allow, identifier = identifier, timeUnit = timeUnit.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaServiceApplyOptions]

@@ -28,9 +28,8 @@ object Servo {
     calibrate: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
     moveTo: js.Function1[scala.Double, scala.Unit]
   ): Servo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calibrate")(calibrate)
-    __obj.updateDynamic("moveTo")(moveTo)
+    val __obj = js.Dynamic.literal(calibrate = calibrate, moveTo = moveTo)
+  
     __obj.asInstanceOf[Servo]
   }
 }

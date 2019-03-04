@@ -20,12 +20,8 @@ object CardViewBatchEditStartEditingEventArgs {
     sender: Control,
     visibleIndex: scala.Double
   ): CardViewBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cardValues")(cardValues)
-    __obj.updateDynamic("focusedColumn")(focusedColumn)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, focusedColumn = focusedColumn, sender = sender, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[CardViewBatchEditStartEditingEventArgs]
   }
 }

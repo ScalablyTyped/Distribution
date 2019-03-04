@@ -14,9 +14,7 @@ trait Anon_DSN extends js.Object {
 object Anon_DSN {
   @scala.inline
   def apply(DSN: java.lang.String, enable: scala.Boolean, ravenOptions: java.lang.String = null): Anon_DSN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DSN")(DSN)
-    __obj.updateDynamic("enable")(enable)
+    val __obj = js.Dynamic.literal(DSN = DSN, enable = enable)
     if (ravenOptions != null) __obj.updateDynamic("ravenOptions")(ravenOptions)
     __obj.asInstanceOf[Anon_DSN]
   }

@@ -22,10 +22,7 @@ object MutationResult {
     data: TData = null,
     error: apolloDashClientLib.apolloDashClientMod.ApolloError = null
   ): MutationResult[TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("called")(called)
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(called = called, client = client, loading = loading)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[MutationResult[TData]]

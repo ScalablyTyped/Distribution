@@ -19,11 +19,8 @@ object UUID {
     variant: java.lang.String,
     version: java.lang.String
   ): UUID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toBuffer")(toBuffer)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("variant")(variant)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(toBuffer = toBuffer, toString = toString, variant = variant, version = version)
+  
     __obj.asInstanceOf[UUID]
   }
 }

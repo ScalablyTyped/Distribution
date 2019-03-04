@@ -46,8 +46,7 @@ object SchemaSpec {
     */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[MarkSpec] = null,
     topNode: java.lang.String = null
   ): SchemaSpec[N, M] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
     if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
     if (topNode != null) __obj.updateDynamic("topNode")(topNode)
     __obj.asInstanceOf[SchemaSpec[N, M]]

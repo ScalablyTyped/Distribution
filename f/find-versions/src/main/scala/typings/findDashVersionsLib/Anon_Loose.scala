@@ -12,8 +12,8 @@ trait Anon_Loose extends js.Object {
 object Anon_Loose {
   @scala.inline
   def apply(loose: scala.Boolean): Anon_Loose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loose")(loose)
+    val __obj = js.Dynamic.literal(loose = loose)
+  
     __obj.asInstanceOf[Anon_Loose]
   }
 }

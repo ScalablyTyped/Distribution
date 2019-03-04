@@ -14,10 +14,8 @@ trait ABC extends js.Object {
 object ABC {
   @scala.inline
   def apply(A: Point, B: Point, C: Point): ABC = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("A")(A)
-    __obj.updateDynamic("B")(B)
-    __obj.updateDynamic("C")(C)
+    val __obj = js.Dynamic.literal(A = A, B = B, C = C)
+  
     __obj.asInstanceOf[ABC]
   }
 }

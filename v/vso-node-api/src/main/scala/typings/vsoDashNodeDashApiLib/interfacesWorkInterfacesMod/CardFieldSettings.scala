@@ -52,15 +52,8 @@ object CardFieldSettings {
     showState: scala.Boolean,
     showTags: scala.Boolean
   ): CardFieldSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalFields")(additionalFields)
-    __obj.updateDynamic("assignedToDisplayFormat")(assignedToDisplayFormat)
-    __obj.updateDynamic("coreFields")(coreFields)
-    __obj.updateDynamic("showAssignedTo")(showAssignedTo)
-    __obj.updateDynamic("showEmptyFields")(showEmptyFields)
-    __obj.updateDynamic("showId")(showId)
-    __obj.updateDynamic("showState")(showState)
-    __obj.updateDynamic("showTags")(showTags)
+    val __obj = js.Dynamic.literal(additionalFields = additionalFields, assignedToDisplayFormat = assignedToDisplayFormat, coreFields = coreFields, showAssignedTo = showAssignedTo, showEmptyFields = showEmptyFields, showId = showId, showState = showState, showTags = showTags)
+  
     __obj.asInstanceOf[CardFieldSettings]
   }
 }

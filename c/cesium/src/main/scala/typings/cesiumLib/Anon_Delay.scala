@@ -28,8 +28,7 @@ object Anon_Delay {
     startTime: cesiumLib.cesiumMod.CesiumNs.JulianDate = null,
     stopTime: cesiumLib.cesiumMod.CesiumNs.JulianDate = null
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (loop != null) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(removeOnStop)) __obj.updateDynamic("removeOnStop")(removeOnStop)

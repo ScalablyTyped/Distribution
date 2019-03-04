@@ -13,12 +13,12 @@ class DataSnapshot protected () extends js.Object {
     * @param {!Reference} ref_ The ref of the location this snapshot came from.
     * @param {!Index} index_ The iteration order for this snapshot
     */
-  def this(`node_`: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, `ref_`: atFirebaseDatabaseLib.distSrcApiReferenceMod.Reference, `index_`: atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index) = this()
-  val `index_`: js.Any = js.native
+  def this(node_ : atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, ref_ : atFirebaseDatabaseLib.distSrcApiReferenceMod.Reference, index_ : atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index) = this()
+  val index_ : js.Any = js.native
   val key: java.lang.String = js.native
-  val `node_`: js.Any = js.native
+  val node_ : js.Any = js.native
   val ref: atFirebaseDatabaseLib.distSrcApiReferenceMod.Reference = js.native
-  val `ref_`: js.Any = js.native
+  val ref_ : js.Any = js.native
   /**
     * Returns a DataSnapshot of the specified child node's contents.
     *

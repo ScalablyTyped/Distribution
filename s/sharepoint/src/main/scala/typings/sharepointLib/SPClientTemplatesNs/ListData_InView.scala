@@ -37,18 +37,8 @@ object ListData_InView {
     SortDir: java.lang.String,
     SortField: java.lang.String
   ): ListData_InView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FilterFields")(FilterFields)
-    __obj.updateDynamic("FilterLink")(FilterLink)
-    __obj.updateDynamic("FirstRow")(FirstRow)
-    __obj.updateDynamic("ForceNoHierarchy")(ForceNoHierarchy)
-    __obj.updateDynamic("HierarchyHasIndention")(HierarchyHasIndention)
-    __obj.updateDynamic("LastRow")(LastRow)
-    __obj.updateDynamic("NextHref")(NextHref)
-    __obj.updateDynamic("PrevHref")(PrevHref)
-    __obj.updateDynamic("Row")(Row)
-    __obj.updateDynamic("SortDir")(SortDir)
-    __obj.updateDynamic("SortField")(SortField)
+    val __obj = js.Dynamic.literal(FilterFields = FilterFields, FilterLink = FilterLink, FirstRow = FirstRow, ForceNoHierarchy = ForceNoHierarchy, HierarchyHasIndention = HierarchyHasIndention, LastRow = LastRow, NextHref = NextHref, PrevHref = PrevHref, Row = Row, SortDir = SortDir, SortField = SortField)
+  
     __obj.asInstanceOf[ListData_InView]
   }
 }

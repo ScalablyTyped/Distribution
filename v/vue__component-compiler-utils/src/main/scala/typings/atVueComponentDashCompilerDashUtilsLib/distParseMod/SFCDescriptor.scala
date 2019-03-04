@@ -20,9 +20,7 @@ object SFCDescriptor {
     script: SFCBlock = null,
     template: SFCBlock = null
   ): SFCDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customBlocks")(customBlocks)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(customBlocks = customBlocks, styles = styles)
     if (script != null) __obj.updateDynamic("script")(script)
     if (template != null) __obj.updateDynamic("template")(template)
     __obj.asInstanceOf[SFCDescriptor]

@@ -20,11 +20,8 @@ object TopicEvent {
     nick: java.lang.String,
     topic: java.lang.String
   ): TopicEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("hostmask")(hostmask)
-    __obj.updateDynamic("nick")(nick)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(channel = channel, hostmask = hostmask, nick = nick, topic = topic)
+  
     __obj.asInstanceOf[TopicEvent]
   }
 }

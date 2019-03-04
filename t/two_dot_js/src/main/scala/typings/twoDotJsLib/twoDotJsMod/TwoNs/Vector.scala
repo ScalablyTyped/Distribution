@@ -59,31 +59,8 @@ object Vector {
     x: scala.Double,
     y: scala.Double
   ): Vector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addSelf")(addSelf)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("distanceSquared")(distanceSquared)
-    __obj.updateDynamic("distanceTo")(distanceTo)
-    __obj.updateDynamic("divideScalar")(divideScalar)
-    __obj.updateDynamic("dot")(dot)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("isZero")(isZero)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("lengthSquared")(lengthSquared)
-    __obj.updateDynamic("lerp")(lerp)
-    __obj.updateDynamic("multiplyScalar")(multiplyScalar)
-    __obj.updateDynamic("multiplySelf")(multiplySelf)
-    __obj.updateDynamic("negate")(negate)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setLength")(setLength)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("subSelf")(subSelf)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(add = add, addSelf = addSelf, clear = clear, clone = clone, copy = copy, distanceSquared = distanceSquared, distanceTo = distanceTo, divideScalar = divideScalar, dot = dot, equals = equals, isZero = isZero, length = length, lengthSquared = lengthSquared, lerp = lerp, multiplyScalar = multiplyScalar, multiplySelf = multiplySelf, negate = negate, normalize = normalize, set = set, setLength = setLength, sub = sub, subSelf = subSelf, x = x, y = y)
+  
     __obj.asInstanceOf[Vector]
   }
 }

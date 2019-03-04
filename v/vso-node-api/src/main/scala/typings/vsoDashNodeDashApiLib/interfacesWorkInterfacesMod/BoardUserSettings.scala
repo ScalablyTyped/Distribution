@@ -12,8 +12,8 @@ trait BoardUserSettings extends js.Object {
 object BoardUserSettings {
   @scala.inline
   def apply(autoRefreshState: scala.Boolean): BoardUserSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoRefreshState")(autoRefreshState)
+    val __obj = js.Dynamic.literal(autoRefreshState = autoRefreshState)
+  
     __obj.asInstanceOf[BoardUserSettings]
   }
 }

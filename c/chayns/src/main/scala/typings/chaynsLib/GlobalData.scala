@@ -12,8 +12,8 @@ trait GlobalData extends js.Object {
 object GlobalData {
   @scala.inline
   def apply(_result: js.Any): GlobalData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_result")(_result)
+    val __obj = js.Dynamic.literal(_result = _result)
+  
     __obj.asInstanceOf[GlobalData]
   }
 }

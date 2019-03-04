@@ -27,10 +27,8 @@ object Anon_CoverageMap {
       istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Tree[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node]
     ]
   ): Anon_CoverageMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flat")(flat)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("pkg")(pkg)
+    val __obj = js.Dynamic.literal(flat = flat, nested = nested, pkg = pkg)
+  
     __obj.asInstanceOf[Anon_CoverageMap]
   }
 }

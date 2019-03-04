@@ -18,8 +18,8 @@ object MarketplaceprivateauctionResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): MarketplaceprivateauctionResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("updateproposal")(updateproposal)
+    val __obj = js.Dynamic.literal(updateproposal = updateproposal)
+  
     __obj.asInstanceOf[MarketplaceprivateauctionResource]
   }
 }

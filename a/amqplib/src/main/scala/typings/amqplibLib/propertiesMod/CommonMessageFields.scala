@@ -20,11 +20,8 @@ object CommonMessageFields {
     redelivered: scala.Boolean,
     routingKey: java.lang.String
   ): CommonMessageFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryTag")(deliveryTag)
-    __obj.updateDynamic("exchange")(exchange)
-    __obj.updateDynamic("redelivered")(redelivered)
-    __obj.updateDynamic("routingKey")(routingKey)
+    val __obj = js.Dynamic.literal(deliveryTag = deliveryTag, exchange = exchange, redelivered = redelivered, routingKey = routingKey)
+  
     __obj.asInstanceOf[CommonMessageFields]
   }
 }

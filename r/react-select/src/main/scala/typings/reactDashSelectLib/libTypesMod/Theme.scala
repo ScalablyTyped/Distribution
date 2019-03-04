@@ -18,10 +18,8 @@ object Theme {
     colors: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     spacing: ThemeSpacing
   ): Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderRadius")(borderRadius)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("spacing")(spacing)
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius, colors = colors, spacing = spacing)
+  
     __obj.asInstanceOf[Theme]
   }
 }

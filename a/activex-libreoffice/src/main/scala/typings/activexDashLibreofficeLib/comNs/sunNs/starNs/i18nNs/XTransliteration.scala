@@ -240,25 +240,8 @@ object XTransliteration {
       activexDashInteropLib.SafeArray[java.lang.String]
     ]
   ): XTransliteration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareString")(compareString)
-    __obj.updateDynamic("compareSubstring")(compareSubstring)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("folding")(folding)
-    __obj.updateDynamic("getAvailableModules")(getAvailableModules)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("loadModule")(loadModule)
-    __obj.updateDynamic("loadModuleByImplName")(loadModuleByImplName)
-    __obj.updateDynamic("loadModuleNew")(loadModuleNew)
-    __obj.updateDynamic("loadModulesByImplNames")(loadModulesByImplNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("transliterate")(transliterate)
-    __obj.updateDynamic("transliterateRange")(transliterateRange)
+    val __obj = js.Dynamic.literal(Name = Name, Type = Type, acquire = acquire, compareString = compareString, compareSubstring = compareSubstring, equals = equals, folding = folding, getAvailableModules = getAvailableModules, getName = getName, getType = getType, loadModule = loadModule, loadModuleByImplName = loadModuleByImplName, loadModuleNew = loadModuleNew, loadModulesByImplNames = loadModulesByImplNames, queryInterface = queryInterface, release = release, transliterate = transliterate, transliterateRange = transliterateRange)
+  
     __obj.asInstanceOf[XTransliteration]
   }
 }

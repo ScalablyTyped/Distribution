@@ -14,10 +14,8 @@ trait UpdateListParams extends js.Object {
 object UpdateListParams {
   @scala.inline
   def apply(name: java.lang.String, state: ListObjectState, version: scala.Double): UpdateListParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, state = state, version = version)
+  
     __obj.asInstanceOf[UpdateListParams]
   }
 }

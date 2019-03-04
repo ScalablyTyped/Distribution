@@ -18,8 +18,7 @@ object Anon_CloudwatchLogGroup {
     cloudwatchLogGroup: java.lang.String = null,
     cloudwatchLogStream: java.lang.String = null
   ): Anon_CloudwatchLogGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(enabled = enabled)
     if (cloudwatchLogGroup != null) __obj.updateDynamic("cloudwatchLogGroup")(cloudwatchLogGroup)
     if (cloudwatchLogStream != null) __obj.updateDynamic("cloudwatchLogStream")(cloudwatchLogStream)
     __obj.asInstanceOf[Anon_CloudwatchLogGroup]

@@ -38,9 +38,7 @@ object Rule {
     priority: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     tags: js.Array[java.lang.String] = null
   ): Rule[T, K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("conditions")(conditions)
+    val __obj = js.Dynamic.literal(actions = actions, conditions = conditions)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
     if (tags != null) __obj.updateDynamic("tags")(tags)

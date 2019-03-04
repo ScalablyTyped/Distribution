@@ -25,11 +25,8 @@ object FilterOptionsRequest {
     rModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
     rProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): FilterOptionsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("rModel")(rModel)
-    __obj.updateDynamic("rProperties")(rProperties)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, rModel = rModel, rProperties = rProperties)
+  
     __obj.asInstanceOf[FilterOptionsRequest]
   }
 }

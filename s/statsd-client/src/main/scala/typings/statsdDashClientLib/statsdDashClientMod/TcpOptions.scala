@@ -34,8 +34,7 @@ object TcpOptions {
     tags: Tags = null,
     tcp: js.UndefOr[scala.Boolean] = js.undefined
   ): TcpOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("socketTimeoutsToClose")(socketTimeoutsToClose)
+    val __obj = js.Dynamic.literal(socketTimeoutsToClose = socketTimeoutsToClose)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (host != null) __obj.updateDynamic("host")(host)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

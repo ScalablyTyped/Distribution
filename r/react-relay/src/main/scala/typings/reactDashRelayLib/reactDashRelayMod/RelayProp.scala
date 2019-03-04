@@ -12,8 +12,8 @@ trait RelayProp extends js.Object {
 object RelayProp {
   @scala.inline
   def apply(environment: relayDashRuntimeLib.relayDashRuntimeMod.Environment): RelayProp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment)
+    val __obj = js.Dynamic.literal(environment = environment)
+  
     __obj.asInstanceOf[RelayProp]
   }
 }

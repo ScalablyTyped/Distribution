@@ -28,15 +28,8 @@ object SyntaxError {
     name: java.lang.String,
     offset: scala.Double
   ): SyntaxError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("found")(found)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(column = column, expected = expected, found = found, line = line, location = location, message = message, name = name, offset = offset)
+  
     __obj.asInstanceOf[SyntaxError]
   }
 }

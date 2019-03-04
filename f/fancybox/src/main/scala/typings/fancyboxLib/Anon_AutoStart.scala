@@ -27,8 +27,8 @@ object Anon_AutoStart {
 object Anon_Autostart {
   @scala.inline
   def apply(autostart: scala.Boolean): Anon_Autostart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autostart")(autostart)
+    val __obj = js.Dynamic.literal(autostart = autostart)
+  
     __obj.asInstanceOf[Anon_Autostart]
   }
 }

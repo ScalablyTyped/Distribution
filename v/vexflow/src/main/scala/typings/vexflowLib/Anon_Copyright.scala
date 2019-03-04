@@ -42,22 +42,8 @@ object Anon_Copyright {
     vendor_url: java.lang.String,
     version_string: java.lang.String
   ): Anon_Copyright = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("designer")(designer)
-    __obj.updateDynamic("designer_url")(designer_url)
-    __obj.updateDynamic("font_family_name")(font_family_name)
-    __obj.updateDynamic("font_sub_family_name")(font_sub_family_name)
-    __obj.updateDynamic("full_font_name")(full_font_name)
-    __obj.updateDynamic("license_description")(license_description)
-    __obj.updateDynamic("license_url")(license_url)
-    __obj.updateDynamic("manufacturer_name")(manufacturer_name)
-    __obj.updateDynamic("postscript_name")(postscript_name)
-    __obj.updateDynamic("trademark")(trademark)
-    __obj.updateDynamic("unique_font_identifier")(unique_font_identifier)
-    __obj.updateDynamic("vendor_url")(vendor_url)
-    __obj.updateDynamic("version_string")(version_string)
+    val __obj = js.Dynamic.literal(copyright = copyright, description = description, designer = designer, designer_url = designer_url, font_family_name = font_family_name, font_sub_family_name = font_sub_family_name, full_font_name = full_font_name, license_description = license_description, license_url = license_url, manufacturer_name = manufacturer_name, postscript_name = postscript_name, trademark = trademark, unique_font_identifier = unique_font_identifier, vendor_url = vendor_url, version_string = version_string)
+  
     __obj.asInstanceOf[Anon_Copyright]
   }
 }

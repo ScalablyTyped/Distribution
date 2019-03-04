@@ -12,8 +12,8 @@ trait ComponentSelector extends js.Object {
 object ComponentSelector {
   @scala.inline
   def apply(__emotion_styles: js.Any): ComponentSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__emotion_styles")(__emotion_styles)
+    val __obj = js.Dynamic.literal(__emotion_styles = __emotion_styles)
+  
     __obj.asInstanceOf[ComponentSelector]
   }
 }

@@ -20,11 +20,8 @@ object IPlayToSourceRequest {
     getDeferral: js.Function0[PlayToSourceDeferral],
     setSource: js.Function1[PlayToSource, scala.Unit]
   ): IPlayToSourceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deadline")(deadline)
-    __obj.updateDynamic("displayErrorString")(displayErrorString)
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("setSource")(setSource)
+    val __obj = js.Dynamic.literal(deadline = deadline, displayErrorString = displayErrorString, getDeferral = getDeferral, setSource = setSource)
+  
     __obj.asInstanceOf[IPlayToSourceRequest]
   }
 }

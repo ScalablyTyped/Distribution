@@ -19,10 +19,8 @@ object IEnumerator {
     moveNext: js.Function0[scala.Boolean],
     reset: js.Function0[scala.Unit]
   ): IEnumerator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get_current")(get_current)
-    __obj.updateDynamic("moveNext")(moveNext)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(get_current = get_current, moveNext = moveNext, reset = reset)
+  
     __obj.asInstanceOf[IEnumerator[T]]
   }
 }

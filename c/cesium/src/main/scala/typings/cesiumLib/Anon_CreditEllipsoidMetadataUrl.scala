@@ -20,9 +20,7 @@ object Anon_CreditEllipsoidMetadataUrl {
     credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
     ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null
   ): Anon_CreditEllipsoidMetadataUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metadata = metadata, url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     __obj.asInstanceOf[Anon_CreditEllipsoidMetadataUrl]

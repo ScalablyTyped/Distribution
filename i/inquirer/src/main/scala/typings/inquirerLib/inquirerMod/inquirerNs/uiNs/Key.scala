@@ -22,12 +22,8 @@ object Key {
     sequence: java.lang.String,
     shift: scala.Boolean
   ): Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctrl")(ctrl)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sequence")(sequence)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(ctrl = ctrl, meta = meta, name = name, sequence = sequence, shift = shift)
+  
     __obj.asInstanceOf[Key]
   }
 }

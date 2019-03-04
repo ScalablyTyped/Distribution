@@ -34,9 +34,8 @@ object Compositor {
       scala.Unit
     ]
   ): Compositor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readImages")(readImages)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(readImages = readImages, render = render)
+  
     __obj.asInstanceOf[Compositor]
   }
 }

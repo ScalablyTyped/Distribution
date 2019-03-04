@@ -12,8 +12,8 @@ trait Parameterize extends js.Object {
 object Parameterize {
   @scala.inline
   def apply(separator: java.lang.String): Parameterize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("separator")(separator)
+    val __obj = js.Dynamic.literal(separator = separator)
+  
     __obj.asInstanceOf[Parameterize]
   }
 }

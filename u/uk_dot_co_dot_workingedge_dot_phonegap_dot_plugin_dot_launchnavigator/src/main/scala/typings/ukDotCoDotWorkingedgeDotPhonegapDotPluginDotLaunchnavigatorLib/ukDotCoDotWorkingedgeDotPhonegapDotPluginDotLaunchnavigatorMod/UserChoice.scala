@@ -37,11 +37,8 @@ object UserChoice {
     get: js.Function1[js.Function1[/* app */ java.lang.String, scala.Unit], scala.Unit],
     set: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit]
   ): UserChoice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, exists = exists, get = get, set = set)
+  
     __obj.asInstanceOf[UserChoice]
   }
 }

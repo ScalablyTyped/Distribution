@@ -32,12 +32,7 @@ object Source {
     status: java.lang.String = null,
     three_d_secure: stripeDashV3Lib.Anon_Authenticated = null
   ): Source = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("owner")(owner)
+    val __obj = js.Dynamic.literal(client_secret = client_secret, created = created, currency = currency, id = id, owner = owner)
     if (card != null) __obj.updateDynamic("card")(card)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect)
     if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit)

@@ -15,9 +15,8 @@ trait Duration extends js.Object {
 object Duration {
   @scala.inline
   def apply(text: java.lang.String, value: scala.Double): Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(text = text, value = value)
+  
     __obj.asInstanceOf[Duration]
   }
 }

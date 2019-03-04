@@ -16,9 +16,8 @@ object Anon_ContentCodingHeaderValue {
     contentCodingHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentCodingHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ContentCodingHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentCodingHeaderValue")(contentCodingHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(contentCodingHeaderValue = contentCodingHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ContentCodingHeaderValue]
   }
 }

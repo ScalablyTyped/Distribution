@@ -13,9 +13,8 @@ trait Anon_IndexesOfPipedChars extends js.Object {
 object Anon_IndexesOfPipedChars {
   @scala.inline
   def apply(indexesOfPipedChars: js.Array[scala.Double], value: java.lang.String): Anon_IndexesOfPipedChars = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexesOfPipedChars")(indexesOfPipedChars)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(indexesOfPipedChars = indexesOfPipedChars, value = value)
+  
     __obj.asInstanceOf[Anon_IndexesOfPipedChars]
   }
 }

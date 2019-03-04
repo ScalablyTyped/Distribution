@@ -12,8 +12,8 @@ trait Anon_Priority extends js.Object {
 object Anon_Priority {
   @scala.inline
   def apply(priority: scala.Double): Anon_Priority = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(priority = priority)
+  
     __obj.asInstanceOf[Anon_Priority]
   }
 }

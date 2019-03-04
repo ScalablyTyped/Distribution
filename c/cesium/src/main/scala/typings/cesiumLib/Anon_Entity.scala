@@ -22,12 +22,8 @@ object Anon_Entity {
     observedPropertyNames: js.Array[java.lang.String],
     scene: cesiumLib.cesiumMod.CesiumNs.Scene
   ): Anon_Entity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("geometryOptions")(geometryOptions)
-    __obj.updateDynamic("geometryPropertyName")(geometryPropertyName)
-    __obj.updateDynamic("observedPropertyNames")(observedPropertyNames)
-    __obj.updateDynamic("scene")(scene)
+    val __obj = js.Dynamic.literal(entity = entity, geometryOptions = geometryOptions, geometryPropertyName = geometryPropertyName, observedPropertyNames = observedPropertyNames, scene = scene)
+  
     __obj.asInstanceOf[Anon_Entity]
   }
 }

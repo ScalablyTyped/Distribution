@@ -45,13 +45,8 @@ object JSHandle {
     getProperty: js.Function1[java.lang.String, js.Promise[JSHandle]],
     jsonValue: js.Function0[js.Promise[_]]
   ): JSHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asElement")(asElement)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("executionContext")(executionContext)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getProperty")(getProperty)
-    __obj.updateDynamic("jsonValue")(jsonValue)
+    val __obj = js.Dynamic.literal(asElement = asElement, dispose = dispose, executionContext = executionContext, getProperties = getProperties, getProperty = getProperty, jsonValue = jsonValue)
+  
     __obj.asInstanceOf[JSHandle]
   }
 }

@@ -24,8 +24,7 @@ object ESCOption {
     range: js.Array[scala.Double] = null,
     startAt: scala.Int | scala.Double = null
   ): ESCOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller)
     if (device != null) __obj.updateDynamic("device")(device)
     if (neutral != null) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])

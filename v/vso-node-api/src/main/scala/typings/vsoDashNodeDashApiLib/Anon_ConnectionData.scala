@@ -24,13 +24,8 @@ object Anon_ConnectionData {
     ServiceDefinition: js.Any,
     ServiceStatus: Anon_EnumValuesAnonActiveAssigned
   ): Anon_ConnectionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectionData")(ConnectionData)
-    __obj.updateDynamic("InheritLevel")(InheritLevel)
-    __obj.updateDynamic("LocationServiceData")(LocationServiceData)
-    __obj.updateDynamic("RelativeToSetting")(RelativeToSetting)
-    __obj.updateDynamic("ServiceDefinition")(ServiceDefinition)
-    __obj.updateDynamic("ServiceStatus")(ServiceStatus)
+    val __obj = js.Dynamic.literal(ConnectionData = ConnectionData, InheritLevel = InheritLevel, LocationServiceData = LocationServiceData, RelativeToSetting = RelativeToSetting, ServiceDefinition = ServiceDefinition, ServiceStatus = ServiceStatus)
+  
     __obj.asInstanceOf[Anon_ConnectionData]
   }
 }

@@ -27,9 +27,8 @@ object TurnBasedMatchesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): TurnBasedMatchesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("resetForAllPlayers")(resetForAllPlayers)
+    val __obj = js.Dynamic.literal(reset = reset, resetForAllPlayers = resetForAllPlayers)
+  
     __obj.asInstanceOf[TurnBasedMatchesResource]
   }
 }

@@ -32,9 +32,8 @@ object ImportDeclaration {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): ImportDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("specifiers")(specifiers)
+    val __obj = js.Dynamic.literal(source = source, specifiers = specifiers)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (importKind != null) __obj.updateDynamic("importKind")(importKind.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

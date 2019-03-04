@@ -13,8 +13,8 @@ trait AMDModule extends js.Object {
 object AMDModule {
   @scala.inline
   def apply(require: java.lang.String): AMDModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("require")(require)
+    val __obj = js.Dynamic.literal(require = require)
+  
     __obj.asInstanceOf[AMDModule]
   }
 }

@@ -14,10 +14,8 @@ trait ResponseError extends js.Object {
 object ResponseError {
   @scala.inline
   def apply(errorCode: java.lang.String, fieldName: java.lang.String, message: java.lang.String): ResponseError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, fieldName = fieldName, message = message)
+  
     __obj.asInstanceOf[ResponseError]
   }
 }

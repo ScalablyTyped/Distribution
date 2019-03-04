@@ -24,9 +24,8 @@ trait MenuItemClickedEventArgs extends ASPxClientEventArgs {
 object MenuItemClickedEventArgs {
   @scala.inline
   def apply(handled: scala.Boolean, itemName: java.lang.String): MenuItemClickedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("itemName")(itemName)
+    val __obj = js.Dynamic.literal(handled = handled, itemName = itemName)
+  
     __obj.asInstanceOf[MenuItemClickedEventArgs]
   }
 }

@@ -26,13 +26,8 @@ object ArangoSearchViewProperties {
     name: java.lang.String,
     `type`: arangodbLib.arangodbLibStrings.arangosearch
   ): ArangoSearchViewProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cleanupIntervalStep")(cleanupIntervalStep)
-    __obj.updateDynamic("consolidationIntervalMsec")(consolidationIntervalMsec)
-    __obj.updateDynamic("consolidationPolicy")(consolidationPolicy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(cleanupIntervalStep = cleanupIntervalStep, consolidationIntervalMsec = consolidationIntervalMsec, consolidationPolicy = consolidationPolicy, id = id, links = links, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArangoSearchViewProperties]
   }
 }

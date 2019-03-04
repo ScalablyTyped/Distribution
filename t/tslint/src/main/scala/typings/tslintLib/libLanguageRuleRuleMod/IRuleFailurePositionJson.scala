@@ -14,10 +14,8 @@ trait IRuleFailurePositionJson extends js.Object {
 object IRuleFailurePositionJson {
   @scala.inline
   def apply(character: scala.Double, line: scala.Double, position: scala.Double): IRuleFailurePositionJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(character = character, line = line, position = position)
+  
     __obj.asInstanceOf[IRuleFailurePositionJson]
   }
 }

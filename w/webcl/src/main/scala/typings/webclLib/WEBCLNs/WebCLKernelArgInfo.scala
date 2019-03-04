@@ -23,11 +23,8 @@ object WebCLKernelArgInfo {
     name: java.lang.String,
     typeName: java.lang.String
   ): WebCLKernelArgInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessQualifier")(accessQualifier)
-    __obj.updateDynamic("addressQualifier")(addressQualifier)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(accessQualifier = accessQualifier, addressQualifier = addressQualifier, name = name, typeName = typeName)
+  
     __obj.asInstanceOf[WebCLKernelArgInfo]
   }
 }

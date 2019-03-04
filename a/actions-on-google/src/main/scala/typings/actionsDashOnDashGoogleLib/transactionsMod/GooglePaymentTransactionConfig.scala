@@ -29,12 +29,7 @@ object GooglePaymentTransactionConfig {
     tokenizationType: java.lang.String,
     customerInfoOptions: CustomerInfoOptions = null
   ): GooglePaymentTransactionConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardNetworks")(cardNetworks)
-    __obj.updateDynamic("deliveryAddressRequired")(deliveryAddressRequired)
-    __obj.updateDynamic("prepaidCardDisallowed")(prepaidCardDisallowed)
-    __obj.updateDynamic("tokenizationParameters")(tokenizationParameters)
-    __obj.updateDynamic("tokenizationType")(tokenizationType)
+    val __obj = js.Dynamic.literal(cardNetworks = cardNetworks, deliveryAddressRequired = deliveryAddressRequired, prepaidCardDisallowed = prepaidCardDisallowed, tokenizationParameters = tokenizationParameters, tokenizationType = tokenizationType)
     if (customerInfoOptions != null) __obj.updateDynamic("customerInfoOptions")(customerInfoOptions)
     __obj.asInstanceOf[GooglePaymentTransactionConfig]
   }

@@ -13,8 +13,8 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(`match`: stdLib.RegExpMatchArray, parsedUrl: nodeLib.urlMod.Url): Context = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("parsedUrl")(parsedUrl)
+    val __obj = js.Dynamic.literal(parsedUrl = parsedUrl)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Context]
   }
 }

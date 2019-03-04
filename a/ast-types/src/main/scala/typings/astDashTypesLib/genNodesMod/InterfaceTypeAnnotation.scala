@@ -24,8 +24,8 @@ object InterfaceTypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.InterfaceTypeAnnotation,
     `extends`: js.Array[astDashTypesLib.genKindsMod.InterfaceExtendsKind] = null
   ): InterfaceTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
     __obj.asInstanceOf[InterfaceTypeAnnotation]
   }

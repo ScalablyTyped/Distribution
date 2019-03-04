@@ -16,9 +16,8 @@ object Anon_LIFECYCLE {
     LIFECYCLE: reduxDashPackLib.reduxDashPackLibStrings.`redux-pack/LIFECYCLE`,
     TRANSACTION: reduxDashPackLib.reduxDashPackLibStrings.`redux-pack/TRANSACTION`
   ): Anon_LIFECYCLE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LIFECYCLE")(LIFECYCLE)
-    __obj.updateDynamic("TRANSACTION")(TRANSACTION)
+    val __obj = js.Dynamic.literal(LIFECYCLE = LIFECYCLE, TRANSACTION = TRANSACTION)
+  
     __obj.asInstanceOf[Anon_LIFECYCLE]
   }
 }

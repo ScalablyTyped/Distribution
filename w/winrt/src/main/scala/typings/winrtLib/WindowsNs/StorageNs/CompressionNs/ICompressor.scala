@@ -23,12 +23,8 @@ object ICompressor {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[scala.Double, scala.Double]
     ]
   ): ICompressor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("detachStream")(detachStream)
-    __obj.updateDynamic("finishAsync")(finishAsync)
-    __obj.updateDynamic("flushAsync")(flushAsync)
-    __obj.updateDynamic("writeAsync")(writeAsync)
+    val __obj = js.Dynamic.literal(close = close, detachStream = detachStream, finishAsync = finishAsync, flushAsync = flushAsync, writeAsync = writeAsync)
+  
     __obj.asInstanceOf[ICompressor]
   }
 }

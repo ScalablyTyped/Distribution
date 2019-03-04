@@ -34,12 +34,8 @@ object CommandData {
     redundancyEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     value: js.Any = null
   ): CommandData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("execution")(execution)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(callback = callback, command = command, execution = execution, start = start, validate = validate)
+    __obj.updateDynamic("type")(`type`)
     if (cas != null) __obj.updateDynamic("cas")(cas)
     if (key != null) __obj.updateDynamic("key")(key)
     if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])

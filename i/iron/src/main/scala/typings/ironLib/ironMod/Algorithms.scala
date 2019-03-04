@@ -18,8 +18,9 @@ object Algorithms {
     `aes-256-cbc`: ironLib.Anon_IvBits,
     sha256: ironLib.Anon_KeyBits
   ): Algorithms = {
-    val __obj = js.Dynamic.literal(`aes-128-ctr` = `aes-128-ctr`, `aes-256-cbc` = `aes-256-cbc`)
-    __obj.updateDynamic("sha256")(sha256)
+    val __obj = js.Dynamic.literal(sha256 = sha256)
+    __obj.updateDynamic("aes-128-ctr")(`aes-128-ctr`)
+    __obj.updateDynamic("aes-256-cbc")(`aes-256-cbc`)
     __obj.asInstanceOf[Algorithms]
   }
 }

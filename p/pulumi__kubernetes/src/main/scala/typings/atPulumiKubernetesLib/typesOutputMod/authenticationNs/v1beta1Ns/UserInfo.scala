@@ -36,11 +36,8 @@ object UserInfo {
     uid: java.lang.String,
     username: java.lang.String
   ): UserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(extra = extra, groups = groups, uid = uid, username = username)
+  
     __obj.asInstanceOf[UserInfo]
   }
 }

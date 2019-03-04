@@ -26,9 +26,7 @@ object Options {
     rootComponent: reactLib.reactMod.ReactNs.ComponentClass[_, _] = null,
     suppressComponentDidCatchWarning: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("React")(React)
-    __obj.updateDynamic("ReactDOM")(ReactDOM)
+    val __obj = js.Dynamic.literal(React = React, ReactDOM = ReactDOM)
     if (domElementGetter != null) __obj.updateDynamic("domElementGetter")(domElementGetter)
     if (loadRootComponent != null) __obj.updateDynamic("loadRootComponent")(loadRootComponent)
     if (!js.isUndefined(parcelCanUpdate)) __obj.updateDynamic("parcelCanUpdate")(parcelCanUpdate)

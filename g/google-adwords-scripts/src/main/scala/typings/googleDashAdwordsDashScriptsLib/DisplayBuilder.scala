@@ -20,11 +20,8 @@ object DisplayBuilder {
     withCpc: js.Function1[scala.Double, T],
     withCpm: js.Function1[scala.Double, T]
   ): DisplayBuilder[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("withCpc")(withCpc)
-    __obj.updateDynamic("withCpm")(withCpm)
+    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm)
+  
     __obj.asInstanceOf[DisplayBuilder[T]]
   }
 }

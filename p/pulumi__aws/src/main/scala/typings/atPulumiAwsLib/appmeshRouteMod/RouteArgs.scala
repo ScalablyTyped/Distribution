@@ -29,10 +29,7 @@ object RouteArgs {
     virtualRouterName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RouteArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meshName")(meshName.asInstanceOf[js.Any])
-    __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
-    __obj.updateDynamic("virtualRouterName")(virtualRouterName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteArgs]
   }

@@ -44,8 +44,7 @@ object TetherComponentProps {
     targetModifier: java.lang.String = null,
     targetOffset: java.lang.String = null
   ): TetherComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachment")(attachment)
+    val __obj = js.Dynamic.literal(attachment = attachment)
     if (bodyElement != null) __obj.updateDynamic("bodyElement")(bodyElement)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

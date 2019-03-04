@@ -26,14 +26,8 @@ object ScrollSyncChildProps {
     scrollTop: scala.Double,
     scrollWidth: scala.Double
   ): ScrollSyncChildProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHeight")(clientHeight)
-    __obj.updateDynamic("clientWidth")(clientWidth)
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("scrollHeight")(scrollHeight)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
-    __obj.updateDynamic("scrollWidth")(scrollWidth)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, onScroll = onScroll, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
+  
     __obj.asInstanceOf[ScrollSyncChildProps]
   }
 }

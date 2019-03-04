@@ -13,9 +13,8 @@ trait Anon_Render extends js.Object {
 object Anon_Render {
   @scala.inline
   def apply(render: js.Function, staticRenderFns: js.Array[js.Function]): Anon_Render = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("staticRenderFns")(staticRenderFns)
+    val __obj = js.Dynamic.literal(render = render, staticRenderFns = staticRenderFns)
+  
     __obj.asInstanceOf[Anon_Render]
   }
 }

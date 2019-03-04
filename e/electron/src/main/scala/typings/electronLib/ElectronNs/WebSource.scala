@@ -18,8 +18,7 @@ trait WebSource extends js.Object {
 object WebSource {
   @scala.inline
   def apply(code: java.lang.String, startLine: scala.Int | scala.Double = null, url: java.lang.String = null): WebSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (startLine != null) __obj.updateDynamic("startLine")(startLine.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[WebSource]

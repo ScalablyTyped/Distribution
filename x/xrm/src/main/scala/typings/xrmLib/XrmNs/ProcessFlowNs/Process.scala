@@ -41,11 +41,8 @@ object Process {
     getStages: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[Stage]],
     isRendered: js.Function0[scala.Boolean]
   ): Process = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getStages")(getStages)
-    __obj.updateDynamic("isRendered")(isRendered)
+    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getStages = getStages, isRendered = isRendered)
+  
     __obj.asInstanceOf[Process]
   }
 }

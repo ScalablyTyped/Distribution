@@ -43,23 +43,8 @@ object IEnvelope {
     userId: java.lang.String,
     ver: scala.Double
   ): IEnvelope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aiDataContract")(aiDataContract)
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("appVer")(appVer)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("iKey")(iKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("osVer")(osVer)
-    __obj.updateDynamic("sampleRate")(sampleRate)
-    __obj.updateDynamic("seq")(seq)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("userId")(userId)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(aiDataContract = aiDataContract, appId = appId, appVer = appVer, data = data, deviceId = deviceId, flags = flags, iKey = iKey, name = name, os = os, osVer = osVer, sampleRate = sampleRate, seq = seq, tags = tags, time = time, userId = userId, ver = ver)
+  
     __obj.asInstanceOf[IEnvelope]
   }
 }

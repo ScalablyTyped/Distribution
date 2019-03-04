@@ -12,8 +12,8 @@ trait BlurYFilterUniforms extends js.Object {
 object BlurYFilterUniforms {
   @scala.inline
   def apply(strength: scala.Double): BlurYFilterUniforms = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strength")(strength)
+    val __obj = js.Dynamic.literal(strength = strength)
+  
     __obj.asInstanceOf[BlurYFilterUniforms]
   }
 }

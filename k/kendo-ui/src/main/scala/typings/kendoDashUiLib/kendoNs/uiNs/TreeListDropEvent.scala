@@ -25,10 +25,7 @@ object TreeListDropEvent {
     source: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
     valid: js.UndefOr[scala.Boolean] = js.undefined
   ): TreeListDropEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (destination != null) __obj.updateDynamic("destination")(destination)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (!js.isUndefined(setValid)) __obj.updateDynamic("setValid")(setValid)

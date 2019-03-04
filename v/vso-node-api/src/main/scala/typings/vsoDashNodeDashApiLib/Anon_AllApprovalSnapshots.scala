@@ -22,12 +22,8 @@ object Anon_AllApprovalSnapshots {
     manualApprovals: scala.Double,
     none: scala.Double
   ): Anon_AllApprovalSnapshots = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("approvalSnapshots")(approvalSnapshots)
-    __obj.updateDynamic("automatedApprovals")(automatedApprovals)
-    __obj.updateDynamic("manualApprovals")(manualApprovals)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(all = all, approvalSnapshots = approvalSnapshots, automatedApprovals = automatedApprovals, manualApprovals = manualApprovals, none = none)
+  
     __obj.asInstanceOf[Anon_AllApprovalSnapshots]
   }
 }

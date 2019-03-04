@@ -29,18 +29,8 @@ object OfficeDocumentView {
     removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
     select: js.Function1[js.Any, scala.Boolean]
   ): OfficeDocumentView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("ViewSettings")(ViewSettings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getViewSettings")(getViewSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(Selection = Selection, ViewSettings = ViewSettings, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getControl = getControl, getSelection = getSelection, getViewSettings = getViewSettings, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+  
     __obj.asInstanceOf[OfficeDocumentView]
   }
 }

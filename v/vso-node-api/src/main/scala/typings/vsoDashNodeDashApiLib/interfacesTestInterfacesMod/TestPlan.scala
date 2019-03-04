@@ -60,31 +60,8 @@ object TestPlan {
     updatedDate: stdLib.Date,
     url: java.lang.String
   ): TestPlan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("automatedTestEnvironment")(automatedTestEnvironment)
-    __obj.updateDynamic("automatedTestSettings")(automatedTestSettings)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildDefinition")(buildDefinition)
-    __obj.updateDynamic("clientUrl")(clientUrl)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("iteration")(iteration)
-    __obj.updateDynamic("manualTestEnvironment")(manualTestEnvironment)
-    __obj.updateDynamic("manualTestSettings")(manualTestSettings)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("previousBuild")(previousBuild)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("releaseEnvironmentDefinition")(releaseEnvironmentDefinition)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("rootSuite")(rootSuite)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("updatedBy")(updatedBy)
-    __obj.updateDynamic("updatedDate")(updatedDate)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(area = area, automatedTestEnvironment = automatedTestEnvironment, automatedTestSettings = automatedTestSettings, build = build, buildDefinition = buildDefinition, clientUrl = clientUrl, description = description, endDate = endDate, id = id, iteration = iteration, manualTestEnvironment = manualTestEnvironment, manualTestSettings = manualTestSettings, name = name, owner = owner, previousBuild = previousBuild, project = project, releaseEnvironmentDefinition = releaseEnvironmentDefinition, revision = revision, rootSuite = rootSuite, startDate = startDate, state = state, updatedBy = updatedBy, updatedDate = updatedDate, url = url)
+  
     __obj.asInstanceOf[TestPlan]
   }
 }

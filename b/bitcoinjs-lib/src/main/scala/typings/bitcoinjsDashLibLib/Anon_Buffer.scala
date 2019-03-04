@@ -18,10 +18,8 @@ object Anon_Buffer {
     decode: js.Function1[nodeLib.Buffer, js.Array[nodeLib.Buffer]],
     encode: js.Function1[nodeLib.Buffer, nodeLib.Buffer]
   ): Anon_Buffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("check")(check)
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(check = check, decode = decode, encode = encode)
+  
     __obj.asInstanceOf[Anon_Buffer]
   }
 }

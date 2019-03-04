@@ -22,13 +22,8 @@ object ZeroClipboardReadyEvent {
     version: java.lang.String,
     client: ZeroClipboardClient = null
   ): ZeroClipboardReadyEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("relatedTarget")(relatedTarget)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, message = message, relatedTarget = relatedTarget, target = target, timeStamp = timeStamp, version = version)
+    __obj.updateDynamic("type")(`type`)
     if (client != null) __obj.updateDynamic("client")(client)
     __obj.asInstanceOf[ZeroClipboardReadyEvent]
   }

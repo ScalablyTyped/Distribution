@@ -88,24 +88,8 @@ object XServiceTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XServiceTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MandatoryInterfaces")(MandatoryInterfaces)
-    __obj.updateDynamic("MandatoryServices")(MandatoryServices)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OptionalInterfaces")(OptionalInterfaces)
-    __obj.updateDynamic("OptionalServices")(OptionalServices)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMandatoryInterfaces")(getMandatoryInterfaces)
-    __obj.updateDynamic("getMandatoryServices")(getMandatoryServices)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getOptionalInterfaces")(getOptionalInterfaces)
-    __obj.updateDynamic("getOptionalServices")(getOptionalServices)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(MandatoryInterfaces = MandatoryInterfaces, MandatoryServices = MandatoryServices, Name = Name, OptionalInterfaces = OptionalInterfaces, OptionalServices = OptionalServices, Properties = Properties, TypeClass = TypeClass, acquire = acquire, getMandatoryInterfaces = getMandatoryInterfaces, getMandatoryServices = getMandatoryServices, getName = getName, getOptionalInterfaces = getOptionalInterfaces, getOptionalServices = getOptionalServices, getProperties = getProperties, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XServiceTypeDescription]
   }
 }

@@ -18,8 +18,8 @@ object InternalSchema {
   {[ K in keyof T ]: {  default  :T[K]} | convict.convict.convict.InternalSchema<T[K]>}
     */ convictLib.convictLibStrings.InternalSchema with js.Any
   ): InternalSchema[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(properties = properties)
+  
     __obj.asInstanceOf[InternalSchema[T]]
   }
 }

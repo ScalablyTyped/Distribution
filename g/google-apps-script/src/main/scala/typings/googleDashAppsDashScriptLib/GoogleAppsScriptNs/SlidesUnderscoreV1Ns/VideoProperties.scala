@@ -38,12 +38,8 @@ object VideoProperties {
     outline: Outline,
     start: scala.Double
   ): VideoProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auto_play")(auto_play)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("mute")(mute)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(auto_play = auto_play, end = end, mute = mute, outline = outline, start = start)
+  
     __obj.asInstanceOf[VideoProperties]
   }
 }

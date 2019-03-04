@@ -18,10 +18,8 @@ object DefaultProps {
     display: reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerLibStrings.block | reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerLibStrings.flex | reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerLibStrings.`inline-block`,
     useCapture: scala.Boolean
   ): DefaultProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    __obj.updateDynamic("useCapture")(useCapture)
+    val __obj = js.Dynamic.literal(disabled = disabled, display = display.asInstanceOf[js.Any], useCapture = useCapture)
+  
     __obj.asInstanceOf[DefaultProps]
   }
 }

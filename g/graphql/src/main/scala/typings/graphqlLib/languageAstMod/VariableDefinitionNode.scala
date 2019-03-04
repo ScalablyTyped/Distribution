@@ -24,9 +24,8 @@ object VariableDefinitionNode {
     directives: js.Array[DirectiveNode] = null,
     loc: Location = null
   ): VariableDefinitionNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("variable")(variable)
+    val __obj = js.Dynamic.literal(kind = kind, variable = variable)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (loc != null) __obj.updateDynamic("loc")(loc)

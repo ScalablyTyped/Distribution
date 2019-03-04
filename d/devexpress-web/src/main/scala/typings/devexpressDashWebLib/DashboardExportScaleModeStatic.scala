@@ -32,11 +32,8 @@ object DashboardExportScaleModeStatic {
     None: java.lang.String,
     UseScaleFactor: java.lang.String
   ): DashboardExportScaleModeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoFitToPageWidth")(AutoFitToPageWidth)
-    __obj.updateDynamic("AutoFitWithinOnePage")(AutoFitWithinOnePage)
-    __obj.updateDynamic("None")(None)
-    __obj.updateDynamic("UseScaleFactor")(UseScaleFactor)
+    val __obj = js.Dynamic.literal(AutoFitToPageWidth = AutoFitToPageWidth, AutoFitWithinOnePage = AutoFitWithinOnePage, None = None, UseScaleFactor = UseScaleFactor)
+  
     __obj.asInstanceOf[DashboardExportScaleModeStatic]
   }
 }

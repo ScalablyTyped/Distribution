@@ -32,11 +32,8 @@ object FieldInfo {
     isIdentity: scala.Boolean,
     referenceName: java.lang.String
   ): FieldInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("fieldType")(fieldType)
-    __obj.updateDynamic("isIdentity")(isIdentity)
-    __obj.updateDynamic("referenceName")(referenceName)
+    val __obj = js.Dynamic.literal(displayName = displayName, fieldType = fieldType, isIdentity = isIdentity, referenceName = referenceName)
+  
     __obj.asInstanceOf[FieldInfo]
   }
 }

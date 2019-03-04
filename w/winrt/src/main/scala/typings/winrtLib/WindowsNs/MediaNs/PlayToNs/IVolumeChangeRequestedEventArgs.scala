@@ -12,8 +12,8 @@ trait IVolumeChangeRequestedEventArgs extends js.Object {
 object IVolumeChangeRequestedEventArgs {
   @scala.inline
   def apply(volume: scala.Double): IVolumeChangeRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(volume = volume)
+  
     __obj.asInstanceOf[IVolumeChangeRequestedEventArgs]
   }
 }

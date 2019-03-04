@@ -17,10 +17,8 @@ object ImageBuilder {
     withData: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob, ImageBuilder[Media]],
     withName: js.Function1[java.lang.String, ImageBuilder[Media]]
   ): ImageBuilder[Media] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withData")(withData)
-    __obj.updateDynamic("withName")(withName)
+    val __obj = js.Dynamic.literal(build = build, withData = withData, withName = withName)
+  
     __obj.asInstanceOf[ImageBuilder[Media]]
   }
 }

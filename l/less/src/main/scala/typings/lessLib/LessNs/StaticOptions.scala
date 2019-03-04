@@ -18,10 +18,8 @@ object StaticOptions {
     fileAsync: scala.Boolean,
     modifyVars: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): StaticOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("fileAsync")(fileAsync)
-    __obj.updateDynamic("modifyVars")(modifyVars)
+    val __obj = js.Dynamic.literal(async = async, fileAsync = fileAsync, modifyVars = modifyVars)
+  
     __obj.asInstanceOf[StaticOptions]
   }
 }

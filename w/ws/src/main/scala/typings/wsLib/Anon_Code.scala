@@ -20,11 +20,8 @@ object Anon_Code {
     target: wsLib.wsMod.WebSocket,
     wasClean: scala.Boolean
   ): Anon_Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("wasClean")(wasClean)
+    val __obj = js.Dynamic.literal(code = code, reason = reason, target = target, wasClean = wasClean)
+  
     __obj.asInstanceOf[Anon_Code]
   }
 }

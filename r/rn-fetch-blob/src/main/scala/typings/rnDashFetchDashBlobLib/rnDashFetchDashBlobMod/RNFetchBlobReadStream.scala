@@ -33,15 +33,7 @@ object RNFetchBlobReadStream {
     tick: scala.Double,
     bufferSize: scala.Int | scala.Double = null
   ): RNFetchBlobReadStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("onData")(onData)
-    __obj.updateDynamic("onEnd")(onEnd)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("tick")(tick)
+    val __obj = js.Dynamic.literal(closed = closed, encoding = encoding, onData = onData, onEnd = onEnd, onError = onError, open = open, path = path, tick = tick)
     if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[RNFetchBlobReadStream]
   }

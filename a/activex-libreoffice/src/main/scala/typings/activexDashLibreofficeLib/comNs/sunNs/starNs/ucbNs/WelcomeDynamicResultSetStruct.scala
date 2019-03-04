@@ -25,9 +25,8 @@ object WelcomeDynamicResultSetStruct {
     New: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
     Old: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
   ): WelcomeDynamicResultSetStruct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("New")(New)
-    __obj.updateDynamic("Old")(Old)
+    val __obj = js.Dynamic.literal(New = New, Old = Old)
+  
     __obj.asInstanceOf[WelcomeDynamicResultSetStruct]
   }
 }

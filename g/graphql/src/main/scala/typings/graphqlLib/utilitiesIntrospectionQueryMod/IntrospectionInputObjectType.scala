@@ -22,10 +22,7 @@ object IntrospectionInputObjectType {
     name: java.lang.String,
     description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
   ): IntrospectionInputObjectType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputFields")(inputFields)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(inputFields = inputFields, kind = kind, name = name)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInputObjectType]
   }

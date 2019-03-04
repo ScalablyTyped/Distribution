@@ -30,16 +30,8 @@ object Anon_Approx {
     toArray: js.Function1[java.lang.String, js.Array[java.lang.String]],
     toFullWidth: js.Function1[java.lang.String, java.lang.String]
   ): Anon_Approx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approx")(approx)
-    __obj.updateDynamic("isFullWidth")(isFullWidth)
-    __obj.updateDynamic("isFullWidthCodePoint")(isFullWidthCodePoint)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("surrogatePair")(surrogatePair)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("symbolFallback")(symbolFallback)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("toFullWidth")(toFullWidth)
+    val __obj = js.Dynamic.literal(approx = approx, isFullWidth = isFullWidth, isFullWidthCodePoint = isFullWidthCodePoint, length = length, surrogatePair = surrogatePair, symbol = symbol, symbolFallback = symbolFallback, toArray = toArray, toFullWidth = toFullWidth)
+  
     __obj.asInstanceOf[Anon_Approx]
   }
 }

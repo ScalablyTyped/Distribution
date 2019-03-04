@@ -26,10 +26,8 @@ object BasicPaneFactory {
     createResource: js.Function1[XResourceId, XResource],
     releaseResource: js.Function1[XResource, scala.Unit]
   ): BasicPaneFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createResource")(createResource)
-    __obj.updateDynamic("releaseResource")(releaseResource)
+    val __obj = js.Dynamic.literal(create = create, createResource = createResource, releaseResource = releaseResource)
+  
     __obj.asInstanceOf[BasicPaneFactory]
   }
 }

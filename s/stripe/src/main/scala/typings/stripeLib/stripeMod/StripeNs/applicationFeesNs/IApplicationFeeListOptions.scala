@@ -24,8 +24,7 @@ object IApplicationFeeListOptions {
     limit: scala.Int | scala.Double = null,
     starting_after: java.lang.String = null
   ): IApplicationFeeListOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charge")(charge)
+    val __obj = js.Dynamic.literal(charge = charge)
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
     if (expand != null) __obj.updateDynamic("expand")(expand)

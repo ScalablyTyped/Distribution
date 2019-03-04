@@ -20,11 +20,8 @@ object IUssdMessage {
     payloadAsText: java.lang.String,
     setPayload: js.Function1[stdLib.Uint8Array, scala.Unit]
   ): IUssdMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataCodingScheme")(dataCodingScheme)
-    __obj.updateDynamic("getPayload")(getPayload)
-    __obj.updateDynamic("payloadAsText")(payloadAsText)
-    __obj.updateDynamic("setPayload")(setPayload)
+    val __obj = js.Dynamic.literal(dataCodingScheme = dataCodingScheme, getPayload = getPayload, payloadAsText = payloadAsText, setPayload = setPayload)
+  
     __obj.asInstanceOf[IUssdMessage]
   }
 }

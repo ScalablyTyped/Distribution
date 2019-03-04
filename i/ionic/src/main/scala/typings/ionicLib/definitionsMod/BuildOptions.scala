@@ -18,8 +18,9 @@ object BuildOptions {
     platform: java.lang.String = null,
     project: java.lang.String = null
   ): BuildOptions[T] = {
-    val __obj = js.Dynamic.literal(`--` = `--`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("engine")(engine)
+    val __obj = js.Dynamic.literal(engine = engine)
+    __obj.updateDynamic("--")(`--`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)
     __obj.asInstanceOf[BuildOptions[T]]

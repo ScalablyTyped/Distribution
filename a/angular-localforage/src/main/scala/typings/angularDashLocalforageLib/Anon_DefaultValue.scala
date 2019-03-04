@@ -20,8 +20,7 @@ object Anon_DefaultValue {
     name: java.lang.String = null,
     scopeKey: java.lang.String = null
   ): Anon_DefaultValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (name != null) __obj.updateDynamic("name")(name)
     if (scopeKey != null) __obj.updateDynamic("scopeKey")(scopeKey)

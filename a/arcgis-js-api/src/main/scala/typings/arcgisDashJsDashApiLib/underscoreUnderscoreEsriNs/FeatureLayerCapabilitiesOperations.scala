@@ -79,19 +79,8 @@ object FeatureLayerCapabilitiesOperations {
     supportsUpdate: scala.Boolean,
     supportsValidateSql: scala.Boolean
   ): FeatureLayerCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsAdd")(supportsAdd)
-    __obj.updateDynamic("supportsCalculate")(supportsCalculate)
-    __obj.updateDynamic("supportsDelete")(supportsDelete)
-    __obj.updateDynamic("supportsEditing")(supportsEditing)
-    __obj.updateDynamic("supportsQuery")(supportsQuery)
-    __obj.updateDynamic("supportsQueryAttachments")(supportsQueryAttachments)
-    __obj.updateDynamic("supportsResizeAttachments")(supportsResizeAttachments)
-    __obj.updateDynamic("supportsUpdate")(supportsUpdate)
-    __obj.updateDynamic("supportsValidateSql")(supportsValidateSql)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsAdd = supportsAdd, supportsCalculate = supportsCalculate, supportsDelete = supportsDelete, supportsEditing = supportsEditing, supportsQuery = supportsQuery, supportsQueryAttachments = supportsQueryAttachments, supportsResizeAttachments = supportsResizeAttachments, supportsUpdate = supportsUpdate, supportsValidateSql = supportsValidateSql)
+  
     __obj.asInstanceOf[FeatureLayerCapabilitiesOperations]
   }
 }

@@ -119,8 +119,7 @@ object Anon_ActiveAdvertiserId {
     `type`: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_ActiveAdvertiserId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
     if (alt != null) __obj.updateDynamic("alt")(alt)

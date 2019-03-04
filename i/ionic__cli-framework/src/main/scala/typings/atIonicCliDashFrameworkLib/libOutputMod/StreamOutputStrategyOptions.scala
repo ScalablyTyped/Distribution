@@ -16,8 +16,7 @@ object StreamOutputStrategyOptions {
     stream: nodeLib.NodeJSNs.WritableStream,
     colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = null
   ): StreamOutputStrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(stream = stream)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     __obj.asInstanceOf[StreamOutputStrategyOptions]
   }

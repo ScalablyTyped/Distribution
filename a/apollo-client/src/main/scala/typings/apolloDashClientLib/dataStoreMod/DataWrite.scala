@@ -22,11 +22,7 @@ object DataWrite {
     variables: js.Object,
     operationName: java.lang.String = null
   ): DataWrite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("rootId")(rootId)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(document = document, result = result, rootId = rootId, variables = variables)
     if (operationName != null) __obj.updateDynamic("operationName")(operationName)
     __obj.asInstanceOf[DataWrite]
   }

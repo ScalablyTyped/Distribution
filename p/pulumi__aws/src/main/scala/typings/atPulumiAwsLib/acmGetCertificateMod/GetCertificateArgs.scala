@@ -34,8 +34,7 @@ object GetCertificateArgs {
     statuses: js.Array[java.lang.String] = null,
     types: js.Array[java.lang.String] = null
   ): GetCertificateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
     if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
     if (statuses != null) __obj.updateDynamic("statuses")(statuses)
     if (types != null) __obj.updateDynamic("types")(types)

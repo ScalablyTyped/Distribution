@@ -32,11 +32,8 @@ object WitContribution {
     inputs: org.scalablytyped.runtime.StringDictionary[js.Any],
     showOnDeletedWorkItem: scala.Boolean
   ): WitContribution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contributionId")(contributionId)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("showOnDeletedWorkItem")(showOnDeletedWorkItem)
+    val __obj = js.Dynamic.literal(contributionId = contributionId, height = height, inputs = inputs, showOnDeletedWorkItem = showOnDeletedWorkItem)
+  
     __obj.asInstanceOf[WitContribution]
   }
 }

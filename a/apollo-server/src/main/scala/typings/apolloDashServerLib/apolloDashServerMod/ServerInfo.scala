@@ -26,14 +26,8 @@ object ServerInfo {
     subscriptionsUrl: java.lang.String,
     url: java.lang.String
   ): ServerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("subscriptionsPath")(subscriptionsPath)
-    __obj.updateDynamic("subscriptionsUrl")(subscriptionsUrl)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(address = address, family = family, port = port.asInstanceOf[js.Any], server = server, subscriptionsPath = subscriptionsPath, subscriptionsUrl = subscriptionsUrl, url = url)
+  
     __obj.asInstanceOf[ServerInfo]
   }
 }

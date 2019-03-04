@@ -29,9 +29,7 @@ object IBearerStrategyOption {
     scope: js.Array[java.lang.String] = null,
     validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
   ): IBearerStrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("identityMetadata")(identityMetadata)
+    val __obj = js.Dynamic.literal(clientID = clientID, identityMetadata = identityMetadata)
     if (!js.isUndefined(allowMultiAudiencesInToken)) __obj.updateDynamic("allowMultiAudiencesInToken")(allowMultiAudiencesInToken)
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (clockSkew != null) __obj.updateDynamic("clockSkew")(clockSkew.asInstanceOf[js.Any])

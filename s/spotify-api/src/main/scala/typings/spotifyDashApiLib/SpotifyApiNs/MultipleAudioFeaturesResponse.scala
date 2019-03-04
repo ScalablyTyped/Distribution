@@ -18,8 +18,8 @@ trait MultipleAudioFeaturesResponse extends js.Object {
 object MultipleAudioFeaturesResponse {
   @scala.inline
   def apply(audio_features: js.Array[AudioFeaturesObject]): MultipleAudioFeaturesResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audio_features")(audio_features)
+    val __obj = js.Dynamic.literal(audio_features = audio_features)
+  
     __obj.asInstanceOf[MultipleAudioFeaturesResponse]
   }
 }

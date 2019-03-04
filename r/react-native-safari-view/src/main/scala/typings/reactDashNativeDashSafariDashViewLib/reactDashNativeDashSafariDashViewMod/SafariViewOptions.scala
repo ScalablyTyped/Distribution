@@ -42,8 +42,7 @@ object SafariViewOptions {
     readerMode: js.UndefOr[scala.Boolean] = js.undefined,
     tintColor: java.lang.String = null
   ): SafariViewOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor)
     if (!js.isUndefined(fromBottom)) __obj.updateDynamic("fromBottom")(fromBottom)
     if (!js.isUndefined(readerMode)) __obj.updateDynamic("readerMode")(readerMode)

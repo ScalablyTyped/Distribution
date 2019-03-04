@@ -96,8 +96,8 @@ object IProductCreationOptions {
     unit_label: java.lang.String = null,
     url: java.lang.String = null
   ): IProductCreationOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (caption != null) __obj.updateDynamic("caption")(caption)

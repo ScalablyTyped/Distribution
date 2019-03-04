@@ -44,11 +44,8 @@ object DocumentEvent {
     Supplement: js.Any,
     ViewController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController2
   ): DocumentEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EventName")(EventName)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Supplement")(Supplement)
-    __obj.updateDynamic("ViewController")(ViewController)
+    val __obj = js.Dynamic.literal(EventName = EventName, Source = Source, Supplement = Supplement, ViewController = ViewController)
+  
     __obj.asInstanceOf[DocumentEvent]
   }
 }

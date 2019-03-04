@@ -16,9 +16,8 @@ trait IShowDialogAction extends js.Object {
 object IShowDialogAction {
   @scala.inline
   def apply(alias: java.lang.String, name: java.lang.String): IShowDialogAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(alias = alias, name = name)
+  
     __obj.asInstanceOf[IShowDialogAction]
   }
 }

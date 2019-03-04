@@ -18,10 +18,8 @@ object IUICommandFactory {
     createWithHandler: js.Function2[java.lang.String, UICommandInvokedHandler, UICommand],
     createWithHandlerAndId: js.Function3[java.lang.String, UICommandInvokedHandler, js.Any, UICommand]
   ): IUICommandFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createWithHandler")(createWithHandler)
-    __obj.updateDynamic("createWithHandlerAndId")(createWithHandlerAndId)
+    val __obj = js.Dynamic.literal(create = create, createWithHandler = createWithHandler, createWithHandlerAndId = createWithHandlerAndId)
+  
     __obj.asInstanceOf[IUICommandFactory]
   }
 }

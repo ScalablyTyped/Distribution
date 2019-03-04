@@ -46,21 +46,8 @@ object CheerioElement {
     `type`: java.lang.String,
     data: java.lang.String = null
   ): CheerioElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attribs")(attribs)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("firstChild")(firstChild)
-    __obj.updateDynamic("lastChild")(lastChild)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("previousSibling")(previousSibling)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(attribs = attribs, childNodes = childNodes, children = children, firstChild = firstChild, lastChild = lastChild, name = name, next = next, nextSibling = nextSibling, nodeValue = nodeValue, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling, tagName = tagName)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[CheerioElement]
   }

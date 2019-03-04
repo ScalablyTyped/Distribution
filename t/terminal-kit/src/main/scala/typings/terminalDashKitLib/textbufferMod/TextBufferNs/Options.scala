@@ -30,8 +30,7 @@ object Options {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dst")(dst)
+    val __obj = js.Dynamic.literal(dst = dst)
     if (forceInBound != null) __obj.updateDynamic("forceInBound")(forceInBound.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)

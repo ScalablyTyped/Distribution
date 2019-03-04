@@ -24,12 +24,7 @@ object NegativeKeyword {
     remove: js.Function0[scala.Unit],
     getEntityType: js.Function0[java.lang.String] = null
   ): NegativeKeyword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdGroup")(getAdGroup)
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getMatchType")(getMatchType)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign, getMatchType = getMatchType, getText = getText, remove = remove)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[NegativeKeyword]
   }

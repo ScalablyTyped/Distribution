@@ -50,10 +50,8 @@ object ISecondaryTileFactory {
     ],
     createWithId: js.Function1[java.lang.String, SecondaryTile]
   ): ISecondaryTileFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createTile")(createTile)
-    __obj.updateDynamic("createWideTile")(createWideTile)
-    __obj.updateDynamic("createWithId")(createWithId)
+    val __obj = js.Dynamic.literal(createTile = createTile, createWideTile = createWideTile, createWithId = createWithId)
+  
     __obj.asInstanceOf[ISecondaryTileFactory]
   }
 }

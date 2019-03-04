@@ -20,11 +20,8 @@ object RoleInstance {
     id: java.lang.String,
     updateDomain: java.lang.String
   ): RoleInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("faultDomain")(faultDomain)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("updateDomain")(updateDomain)
+    val __obj = js.Dynamic.literal(endpoints = endpoints, faultDomain = faultDomain, id = id, updateDomain = updateDomain)
+  
     __obj.asInstanceOf[RoleInstance]
   }
 }

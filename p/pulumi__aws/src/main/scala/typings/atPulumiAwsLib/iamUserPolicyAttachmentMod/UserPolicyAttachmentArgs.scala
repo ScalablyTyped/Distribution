@@ -22,9 +22,8 @@ object UserPolicyAttachmentArgs {
     policyArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN],
     user: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamUserMod.User]
   ): UserPolicyAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policyArn = policyArn.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[UserPolicyAttachmentArgs]
   }
 }

@@ -18,8 +18,7 @@ object AutoCompleteResultSet {
     results: js.Array[xrmLib.XrmNs.ControlsNs.AutoCompleteResult],
     commands: xrmLib.XrmNs.ControlsNs.AutoCompleteCommand = null
   ): AutoCompleteResultSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(results = results)
     if (commands != null) __obj.updateDynamic("commands")(commands)
     __obj.asInstanceOf[AutoCompleteResultSet]
   }

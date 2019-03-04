@@ -33,12 +33,8 @@ object RouterRegistryRadix {
     remove: js.Function1[java.lang.String, js.UndefOr[Route]],
     toString: js.Function0[java.lang.String]
   ): RouterRegistryRadix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(add = add, get = get, lookup = lookup, remove = remove, toString = toString)
+  
     __obj.asInstanceOf[RouterRegistryRadix]
   }
 }

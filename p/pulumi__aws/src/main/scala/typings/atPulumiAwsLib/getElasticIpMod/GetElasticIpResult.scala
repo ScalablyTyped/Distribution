@@ -62,17 +62,8 @@ object GetElasticIpResult {
     publicIpv4Pool: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetElasticIpResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associationId")(associationId)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("networkInterfaceOwnerId")(networkInterfaceOwnerId)
-    __obj.updateDynamic("privateIp")(privateIp)
-    __obj.updateDynamic("publicIp")(publicIp)
-    __obj.updateDynamic("publicIpv4Pool")(publicIpv4Pool)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(associationId = associationId, domain = domain, id = id, instanceId = instanceId, networkInterfaceId = networkInterfaceId, networkInterfaceOwnerId = networkInterfaceOwnerId, privateIp = privateIp, publicIp = publicIp, publicIpv4Pool = publicIpv4Pool, tags = tags)
+  
     __obj.asInstanceOf[GetElasticIpResult]
   }
 }

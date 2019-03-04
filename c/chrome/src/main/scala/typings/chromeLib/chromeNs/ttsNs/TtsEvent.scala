@@ -24,7 +24,8 @@ object TtsEvent {
     charIndex: scala.Int | scala.Double = null,
     errorMessage: java.lang.String = null
   ): TtsEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (charIndex != null) __obj.updateDynamic("charIndex")(charIndex.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     __obj.asInstanceOf[TtsEvent]

@@ -13,11 +13,8 @@ import scala.scalajs.js.annotation._
 object PRGBA {
   @scala.inline
   def apply(a: scala.Double, b: java.lang.String, g: java.lang.String, r: java.lang.String): PRGBA = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(a = a, b = b, g = g, r = r)
+  
     __obj.asInstanceOf[PRGBA]
   }
 }

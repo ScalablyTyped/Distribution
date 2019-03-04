@@ -16,9 +16,8 @@ object Anon_Duration {
     duration: scala.Double,
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLVideoElement, reactLib.Event]
   ): Anon_Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(duration = duration, event = event)
+  
     __obj.asInstanceOf[Anon_Duration]
   }
 }

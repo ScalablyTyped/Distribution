@@ -17,10 +17,7 @@ object AutoCompleteFilteringEvent {
     sender: AutoComplete,
     filter: js.Any = null
   ): AutoCompleteFilteringEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[AutoCompleteFilteringEvent]
   }

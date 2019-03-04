@@ -17,10 +17,8 @@ object LinkTypeAccessor {
     getTargetIndex: js.Function1[Link, scala.Double],
     getType: js.Function1[Link, scala.Double]
   ): LinkTypeAccessor[Link] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSourceIndex")(getSourceIndex)
-    __obj.updateDynamic("getTargetIndex")(getTargetIndex)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex, getType = getType)
+  
     __obj.asInstanceOf[LinkTypeAccessor[Link]]
   }
 }

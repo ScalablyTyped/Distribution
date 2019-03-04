@@ -30,10 +30,8 @@ object GraphQLField {
     resolve: GraphQLFieldResolver[TSource, TContext, TArgs] = null,
     subscribe: GraphQLFieldResolver[TSource, TContext, TArgs] = null
   ): GraphQLField[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(args = args, description = description.asInstanceOf[js.Any], name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated)

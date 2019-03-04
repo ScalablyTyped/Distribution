@@ -17,8 +17,7 @@ object IPiiTokenCreationOptions {
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null
   ): IPiiTokenCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pii")(pii)
+    val __obj = js.Dynamic.literal(pii = pii)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     __obj.asInstanceOf[IPiiTokenCreationOptions]

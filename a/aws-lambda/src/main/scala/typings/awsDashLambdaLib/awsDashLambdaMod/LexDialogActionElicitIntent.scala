@@ -19,7 +19,8 @@ object LexDialogActionElicitIntent {
     message: awsDashLambdaLib.Anon_Content = null,
     responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
   ): LexDialogActionElicitIntent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (message != null) __obj.updateDynamic("message")(message)
     if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
     __obj.asInstanceOf[LexDialogActionElicitIntent]

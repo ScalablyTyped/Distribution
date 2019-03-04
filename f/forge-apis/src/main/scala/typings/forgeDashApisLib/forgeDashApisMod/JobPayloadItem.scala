@@ -24,7 +24,8 @@ object JobPayloadItem {
     format: java.lang.String = null,
     views: js.Array[java.lang.String] = null
   ): JobPayloadItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (advanced != null) __obj.updateDynamic("advanced")(advanced)
     if (!js.isUndefined(exportColor)) __obj.updateDynamic("exportColor")(exportColor)
     if (exportFileStructure != null) __obj.updateDynamic("exportFileStructure")(exportFileStructure)

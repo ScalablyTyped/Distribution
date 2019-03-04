@@ -13,8 +13,7 @@ trait ThemeProviderProps extends js.Object {
 object ThemeProviderProps {
   @scala.inline
   def apply(theme: TReactCSSThemrTheme, innerRef: js.Function = null): ThemeProviderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(theme = theme)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
     __obj.asInstanceOf[ThemeProviderProps]
   }

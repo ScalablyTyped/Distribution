@@ -46,28 +46,8 @@ object DockerContainerAllData {
     processes: js.Array[DockerContainerStatsProcessesData],
     state: java.lang.String
   ): DockerContainerAllData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockIO")(blockIO)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("cpu_percent")(cpu_percent)
-    __obj.updateDynamic("cpu_stats")(cpu_stats)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("imageID")(imageID)
-    __obj.updateDynamic("mem_limit")(mem_limit)
-    __obj.updateDynamic("mem_percent")(mem_percent)
-    __obj.updateDynamic("mem_usage")(mem_usage)
-    __obj.updateDynamic("memory_stats")(memory_stats)
-    __obj.updateDynamic("mounts")(mounts)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("netIO")(netIO)
-    __obj.updateDynamic("networks")(networks)
-    __obj.updateDynamic("pids")(pids)
-    __obj.updateDynamic("ports")(ports)
-    __obj.updateDynamic("precpu_stats")(precpu_stats)
-    __obj.updateDynamic("processes")(processes)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(blockIO = blockIO, command = command, cpu_percent = cpu_percent, cpu_stats = cpu_stats, created = created, id = id, image = image, imageID = imageID, mem_limit = mem_limit, mem_percent = mem_percent, mem_usage = mem_usage, memory_stats = memory_stats, mounts = mounts, name = name, netIO = netIO, networks = networks, pids = pids, ports = ports, precpu_stats = precpu_stats, processes = processes, state = state)
+  
     __obj.asInstanceOf[DockerContainerAllData]
   }
 }

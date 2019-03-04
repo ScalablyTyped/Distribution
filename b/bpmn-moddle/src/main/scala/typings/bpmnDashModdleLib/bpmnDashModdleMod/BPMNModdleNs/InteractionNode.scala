@@ -17,10 +17,8 @@ object InteractionNode {
     incomingConversationLinks: js.Array[ConversationLink],
     outgoingConversationLinks: js.Array[ConversationLink]
   ): InteractionNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("incomingConversationLinks")(incomingConversationLinks)
-    __obj.updateDynamic("outgoingConversationLinks")(outgoingConversationLinks)
+    val __obj = js.Dynamic.literal($type = $type, incomingConversationLinks = incomingConversationLinks, outgoingConversationLinks = outgoingConversationLinks)
+  
     __obj.asInstanceOf[InteractionNode]
   }
 }

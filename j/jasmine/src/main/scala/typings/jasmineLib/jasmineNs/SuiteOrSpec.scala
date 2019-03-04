@@ -15,11 +15,8 @@ trait SuiteOrSpec extends js.Object {
 object SuiteOrSpec {
   @scala.inline
   def apply(description: java.lang.String, env: Env, id: scala.Double, queue: Queue): SuiteOrSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("queue")(queue)
+    val __obj = js.Dynamic.literal(description = description, env = env, id = id, queue = queue)
+  
     __obj.asInstanceOf[SuiteOrSpec]
   }
 }

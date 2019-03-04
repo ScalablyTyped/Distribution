@@ -37,15 +37,8 @@ object PageDescriptor {
     top: PositionDescriptor,
     width: SizeDescriptor
   ): PageDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("middle")(middle)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bottom = bottom, center = center, height = height, left = left, middle = middle, right = right, top = top, width = width)
+  
     __obj.asInstanceOf[PageDescriptor]
   }
 }

@@ -57,9 +57,7 @@ object Anon_AltAutoscalerFieldsKey {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAutoscalerFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (autoscaler != null) __obj.updateDynamic("autoscaler")(autoscaler)
     if (fields != null) __obj.updateDynamic("fields")(fields)

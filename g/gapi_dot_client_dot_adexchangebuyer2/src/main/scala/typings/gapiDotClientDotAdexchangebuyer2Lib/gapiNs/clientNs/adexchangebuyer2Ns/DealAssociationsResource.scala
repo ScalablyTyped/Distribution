@@ -36,10 +36,8 @@ object DealAssociationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
     ]
   ): DealAssociationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, list = list, remove = remove)
+  
     __obj.asInstanceOf[DealAssociationsResource]
   }
 }

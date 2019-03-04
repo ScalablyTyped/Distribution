@@ -20,11 +20,8 @@ object StripeApplePayShippingMethod {
     identifier: java.lang.String,
     label: java.lang.String
   ): StripeApplePayShippingMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(amount = amount, detail = detail, identifier = identifier, label = label)
+  
     __obj.asInstanceOf[StripeApplePayShippingMethod]
   }
 }

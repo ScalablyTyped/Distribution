@@ -13,9 +13,8 @@ trait ImageRemoveInfo extends js.Object {
 object ImageRemoveInfo {
   @scala.inline
   def apply(Deleted: java.lang.String, Untagged: java.lang.String): ImageRemoveInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Deleted")(Deleted)
-    __obj.updateDynamic("Untagged")(Untagged)
+    val __obj = js.Dynamic.literal(Deleted = Deleted, Untagged = Untagged)
+  
     __obj.asInstanceOf[ImageRemoveInfo]
   }
 }

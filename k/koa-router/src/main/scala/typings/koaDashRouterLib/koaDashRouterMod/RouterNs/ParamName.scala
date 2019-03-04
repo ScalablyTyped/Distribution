@@ -28,15 +28,8 @@ object ParamName {
     prefix: java.lang.String,
     repeat: java.lang.String
   ): ParamName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asterisk")(asterisk)
-    __obj.updateDynamic("delimiter")(delimiter)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("partial")(partial)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("repeat")(repeat)
+    val __obj = js.Dynamic.literal(asterisk = asterisk, delimiter = delimiter, name = name, optional = optional, partial = partial, pattern = pattern, prefix = prefix, repeat = repeat)
+  
     __obj.asInstanceOf[ParamName]
   }
 }

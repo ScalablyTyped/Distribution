@@ -18,10 +18,8 @@ object IHandledState {
     severityReason: bugsnagDashJsLib.Anon_KeyType,
     unhandled: scala.Boolean
   ): IHandledState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("severityReason")(severityReason)
-    __obj.updateDynamic("unhandled")(unhandled)
+    val __obj = js.Dynamic.literal(severity = severity, severityReason = severityReason, unhandled = unhandled)
+  
     __obj.asInstanceOf[IHandledState]
   }
 }

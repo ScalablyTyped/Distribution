@@ -177,32 +177,8 @@ object XLocale {
     release: js.Function0[scala.Unit],
     setDefault: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
   ): XLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableLocales")(AvailableLocales)
-    __obj.updateDynamic("Default")(Default)
-    __obj.updateDynamic("ISOCountries")(ISOCountries)
-    __obj.updateDynamic("ISOLanguages")(ISOLanguages)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("getAvailableLocales")(getAvailableLocales)
-    __obj.updateDynamic("getDefault")(getDefault)
-    __obj.updateDynamic("getDisplayCountry")(getDisplayCountry)
-    __obj.updateDynamic("getDisplayCountry_Default")(getDisplayCountry_Default)
-    __obj.updateDynamic("getDisplayLanguage")(getDisplayLanguage)
-    __obj.updateDynamic("getDisplayLanguage_Default")(getDisplayLanguage_Default)
-    __obj.updateDynamic("getDisplayName")(getDisplayName)
-    __obj.updateDynamic("getDisplayName_Default")(getDisplayName_Default)
-    __obj.updateDynamic("getDisplayVariant")(getDisplayVariant)
-    __obj.updateDynamic("getDisplayVariant_Default")(getDisplayVariant_Default)
-    __obj.updateDynamic("getISO3Country")(getISO3Country)
-    __obj.updateDynamic("getISO3Language")(getISO3Language)
-    __obj.updateDynamic("getISOCountries")(getISOCountries)
-    __obj.updateDynamic("getISOLanguages")(getISOLanguages)
-    __obj.updateDynamic("getLanguagesForCountry")(getLanguagesForCountry)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDefault")(setDefault)
+    val __obj = js.Dynamic.literal(AvailableLocales = AvailableLocales, Default = Default, ISOCountries = ISOCountries, ISOLanguages = ISOLanguages, acquire = acquire, create = create, equals = equals, getAvailableLocales = getAvailableLocales, getDefault = getDefault, getDisplayCountry = getDisplayCountry, getDisplayCountry_Default = getDisplayCountry_Default, getDisplayLanguage = getDisplayLanguage, getDisplayLanguage_Default = getDisplayLanguage_Default, getDisplayName = getDisplayName, getDisplayName_Default = getDisplayName_Default, getDisplayVariant = getDisplayVariant, getDisplayVariant_Default = getDisplayVariant_Default, getISO3Country = getISO3Country, getISO3Language = getISO3Language, getISOCountries = getISOCountries, getISOLanguages = getISOLanguages, getLanguagesForCountry = getLanguagesForCountry, queryInterface = queryInterface, release = release, setDefault = setDefault)
+  
     __obj.asInstanceOf[XLocale]
   }
 }

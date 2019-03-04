@@ -89,8 +89,8 @@ object DeviceComponent {
     source: Reference = null,
     text: Narrative = null
   ): DeviceComponent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
+    __obj.updateDynamic("type")(`type`)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

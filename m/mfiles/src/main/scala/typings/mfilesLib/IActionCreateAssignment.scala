@@ -26,14 +26,8 @@ object IActionCreateAssignment {
     MonitoredBy: IUserOrUserGroupIDExs,
     Title: java.lang.String
   ): IActionCreateAssignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AssignedTo")(AssignedTo)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Deadline")(Deadline)
-    __obj.updateDynamic("DeadlineInDays")(DeadlineInDays)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("MonitoredBy")(MonitoredBy)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(AssignedTo = AssignedTo, Clone = Clone, Deadline = Deadline, DeadlineInDays = DeadlineInDays, Description = Description, MonitoredBy = MonitoredBy, Title = Title)
+  
     __obj.asInstanceOf[IActionCreateAssignment]
   }
 }

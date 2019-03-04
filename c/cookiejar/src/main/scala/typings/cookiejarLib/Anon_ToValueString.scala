@@ -12,8 +12,8 @@ trait Anon_ToValueString extends js.Object {
 object Anon_ToValueString {
   @scala.inline
   def apply(toValueString: js.Function0[java.lang.String]): Anon_ToValueString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toValueString")(toValueString)
+    val __obj = js.Dynamic.literal(toValueString = toValueString)
+  
     __obj.asInstanceOf[Anon_ToValueString]
   }
 }

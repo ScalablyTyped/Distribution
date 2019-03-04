@@ -12,10 +12,7 @@ trait InsertResult[T /* <: js.Object */] extends DocumentMetadata {
 object InsertResult {
   @scala.inline
   def apply[T /* <: js.Object */](_id: java.lang.String, _key: java.lang.String, _rev: java.lang.String, `new`: Document[T] = null): InsertResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_key")(_key)
-    __obj.updateDynamic("_rev")(_rev)
+    val __obj = js.Dynamic.literal(_id = _id, _key = _key, _rev = _rev)
     if (`new` != null) __obj.updateDynamic("new")(`new`)
     __obj.asInstanceOf[InsertResult[T]]
   }

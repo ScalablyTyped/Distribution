@@ -30,12 +30,7 @@ object SourceMapSpan {
     sourceLine: scala.Double,
     nameIndex: scala.Int | scala.Double = null
   ): SourceMapSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emittedColumn")(emittedColumn)
-    __obj.updateDynamic("emittedLine")(emittedLine)
-    __obj.updateDynamic("sourceColumn")(sourceColumn)
-    __obj.updateDynamic("sourceIndex")(sourceIndex)
-    __obj.updateDynamic("sourceLine")(sourceLine)
+    val __obj = js.Dynamic.literal(emittedColumn = emittedColumn, emittedLine = emittedLine, sourceColumn = sourceColumn, sourceIndex = sourceIndex, sourceLine = sourceLine)
     if (nameIndex != null) __obj.updateDynamic("nameIndex")(nameIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceMapSpan]
   }

@@ -48,8 +48,7 @@ object LayoutPositionOptions {
     stop: js.UndefOr[scala.Nothing] = js.undefined,
     zoom: scala.Int | scala.Double = null
   ): LayoutPositionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eles")(eles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])

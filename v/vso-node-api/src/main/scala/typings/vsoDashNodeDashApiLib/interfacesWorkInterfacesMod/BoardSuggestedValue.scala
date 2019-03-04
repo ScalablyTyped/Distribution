@@ -12,8 +12,8 @@ trait BoardSuggestedValue extends js.Object {
 object BoardSuggestedValue {
   @scala.inline
   def apply(name: java.lang.String): BoardSuggestedValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[BoardSuggestedValue]
   }
 }

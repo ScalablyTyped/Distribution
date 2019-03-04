@@ -13,9 +13,8 @@ trait Anon_Callback extends js.Object {
 object Anon_Callback {
   @scala.inline
   def apply(callback: js.Function1[java.lang.String, scala.Unit], routePattern: stdLib.RegExp): Anon_Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("routePattern")(routePattern)
+    val __obj = js.Dynamic.literal(callback = callback, routePattern = routePattern)
+  
     __obj.asInstanceOf[Anon_Callback]
   }
 }

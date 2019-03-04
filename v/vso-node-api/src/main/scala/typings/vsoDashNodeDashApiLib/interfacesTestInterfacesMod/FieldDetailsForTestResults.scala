@@ -19,9 +19,8 @@ trait FieldDetailsForTestResults extends js.Object {
 object FieldDetailsForTestResults {
   @scala.inline
   def apply(fieldName: java.lang.String, groupsForField: js.Array[_]): FieldDetailsForTestResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("groupsForField")(groupsForField)
+    val __obj = js.Dynamic.literal(fieldName = fieldName, groupsForField = groupsForField)
+  
     __obj.asInstanceOf[FieldDetailsForTestResults]
   }
 }

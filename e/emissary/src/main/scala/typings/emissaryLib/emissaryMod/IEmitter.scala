@@ -38,19 +38,8 @@ object IEmitter {
     resumeEvents: js.Function1[java.lang.String, scala.Unit],
     signal: js.Function1[java.lang.String, scala.Unit]
   ): IEmitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("behavior")(behavior)
-    __obj.updateDynamic("decrementSubscriptionCount")(decrementSubscriptionCount)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("getSubscriptionCount")(getSubscriptionCount)
-    __obj.updateDynamic("hasSubscriptions")(hasSubscriptions)
-    __obj.updateDynamic("incrementSubscriptionCount")(incrementSubscriptionCount)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("pauseEvents")(pauseEvents)
-    __obj.updateDynamic("resumeEvents")(resumeEvents)
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(behavior = behavior, decrementSubscriptionCount = decrementSubscriptionCount, emit = emit, getSubscriptionCount = getSubscriptionCount, hasSubscriptions = hasSubscriptions, incrementSubscriptionCount = incrementSubscriptionCount, off = off, on = on, once = once, pauseEvents = pauseEvents, resumeEvents = resumeEvents, signal = signal)
+  
     __obj.asInstanceOf[IEmitter]
   }
 }

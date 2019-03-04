@@ -37,21 +37,8 @@ object SequenceInputStream {
     seek: js.Function1[scala.Double, scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): SequenceInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("createStreamFromSequence")(createStreamFromSequence)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(Length = Length, Position = Position, acquire = acquire, available = available, closeInput = closeInput, createStreamFromSequence = createStreamFromSequence, getLength = getLength, getPosition = getPosition, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, seek = seek, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[SequenceInputStream]
   }
 }

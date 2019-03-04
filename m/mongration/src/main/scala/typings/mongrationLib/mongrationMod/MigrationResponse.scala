@@ -16,9 +16,8 @@ object MigrationResponse {
     id: java.lang.String,
     status: mongrationLib.mongrationLibStrings.`not-run` | mongrationLib.mongrationLibStrings.skipped | mongrationLib.mongrationLibStrings.pending | mongrationLib.mongrationLibStrings.ok | mongrationLib.mongrationLibStrings.error | mongrationLib.mongrationLibStrings.rollback | mongrationLib.mongrationLibStrings.`rollback-error`
   ): MigrationResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MigrationResponse]
   }
 }

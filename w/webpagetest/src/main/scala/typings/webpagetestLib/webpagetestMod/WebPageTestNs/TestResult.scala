@@ -54,28 +54,8 @@ object TestResult {
     testerDNS: java.lang.String,
     url: java.lang.String
   ): TestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("average")(average)
-    __obj.updateDynamic("bwDown")(bwDown)
-    __obj.updateDynamic("bwUp")(bwUp)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("connectivity")(connectivity)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("fvonly")(fvonly)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("latency")(latency)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("median")(median)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("plr")(plr)
-    __obj.updateDynamic("runs")(runs)
-    __obj.updateDynamic("standardDeviation")(standardDeviation)
-    __obj.updateDynamic("successfulFVRuns")(successfulFVRuns)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("testUrl")(testUrl)
-    __obj.updateDynamic("tester")(tester)
-    __obj.updateDynamic("testerDNS")(testerDNS)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(average = average, bwDown = bwDown, bwUp = bwUp, completed = completed, connectivity = connectivity, from = from, fvonly = fvonly, id = id, latency = latency, location = location, median = median, mobile = mobile, plr = plr, runs = runs, standardDeviation = standardDeviation, successfulFVRuns = successfulFVRuns, summary = summary, testUrl = testUrl, tester = tester, testerDNS = testerDNS, url = url)
+  
     __obj.asInstanceOf[TestResult]
   }
 }

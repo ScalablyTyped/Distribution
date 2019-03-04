@@ -48,16 +48,8 @@ object Phase {
     target: PhaseTarget,
     variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
   ): Phase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("jobAuthorizationScope")(jobAuthorizationScope)
-    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
-    __obj.updateDynamic("jobTimeoutInMinutes")(jobTimeoutInMinutes)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(condition = condition, dependencies = dependencies, jobAuthorizationScope = jobAuthorizationScope, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, jobTimeoutInMinutes = jobTimeoutInMinutes, name = name, steps = steps, target = target, variables = variables)
+  
     __obj.asInstanceOf[Phase]
   }
 }

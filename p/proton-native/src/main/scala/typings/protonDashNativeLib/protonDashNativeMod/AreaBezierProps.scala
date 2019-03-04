@@ -68,15 +68,7 @@ object AreaBezierProps {
     strokeWidth: scala.Int | scala.Double = null,
     transform: java.lang.String = null
   ): AreaBezierProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cx1")(cx1.asInstanceOf[js.Any])
-    __obj.updateDynamic("cx2")(cx2.asInstanceOf[js.Any])
-    __obj.updateDynamic("cy1")(cy1.asInstanceOf[js.Any])
-    __obj.updateDynamic("cy2")(cy2.asInstanceOf[js.Any])
-    __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cx1 = cx1.asInstanceOf[js.Any], cx2 = cx2.asInstanceOf[js.Any], cy1 = cy1.asInstanceOf[js.Any], cy2 = cy2.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)

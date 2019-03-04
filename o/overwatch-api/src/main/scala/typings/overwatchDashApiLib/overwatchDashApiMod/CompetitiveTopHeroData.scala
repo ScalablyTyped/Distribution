@@ -16,10 +16,8 @@ object CompetitiveTopHeroData {
     played: js.Array[HeroTimePlayed],
     win_rate: js.Array[HeroWinRate]
   ): CompetitiveTopHeroData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("games_won")(games_won)
-    __obj.updateDynamic("played")(played)
-    __obj.updateDynamic("win_rate")(win_rate)
+    val __obj = js.Dynamic.literal(games_won = games_won, played = played, win_rate = win_rate)
+  
     __obj.asInstanceOf[CompetitiveTopHeroData]
   }
 }

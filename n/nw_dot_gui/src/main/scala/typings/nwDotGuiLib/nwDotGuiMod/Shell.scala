@@ -18,10 +18,8 @@ object Shell {
     openItem: js.Function1[java.lang.String, scala.Unit],
     showItemInFolder: js.Function1[java.lang.String, scala.Unit]
   ): Shell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openExternal")(openExternal)
-    __obj.updateDynamic("openItem")(openItem)
-    __obj.updateDynamic("showItemInFolder")(showItemInFolder)
+    val __obj = js.Dynamic.literal(openExternal = openExternal, openItem = openItem, showItemInFolder = showItemInFolder)
+  
     __obj.asInstanceOf[Shell]
   }
 }

@@ -14,9 +14,8 @@ trait LineAndCharacter extends js.Object {
 object LineAndCharacter {
   @scala.inline
   def apply(character: scala.Double, line: scala.Double): LineAndCharacter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(character = character, line = line)
+  
     __obj.asInstanceOf[LineAndCharacter]
   }
 }

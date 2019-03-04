@@ -18,10 +18,8 @@ object Formatting {
     revFormat: flatpickrLib.distUtilsFormattingMod.RevFormat,
     tokenRegex: flatpickrLib.distUtilsFormattingMod.TokenRegex
   ): Formatting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formats")(formats)
-    __obj.updateDynamic("revFormat")(revFormat)
-    __obj.updateDynamic("tokenRegex")(tokenRegex)
+    val __obj = js.Dynamic.literal(formats = formats, revFormat = revFormat, tokenRegex = tokenRegex)
+  
     __obj.asInstanceOf[Formatting]
   }
 }

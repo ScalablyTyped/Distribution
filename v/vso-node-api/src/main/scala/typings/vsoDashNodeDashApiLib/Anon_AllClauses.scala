@@ -22,12 +22,8 @@ object Anon_AllClauses {
     none: scala.Double,
     wiql: scala.Double
   ): Anon_AllClauses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("clauses")(clauses)
-    __obj.updateDynamic("minimal")(minimal)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("wiql")(wiql)
+    val __obj = js.Dynamic.literal(all = all, clauses = clauses, minimal = minimal, none = none, wiql = wiql)
+  
     __obj.asInstanceOf[Anon_AllClauses]
   }
 }

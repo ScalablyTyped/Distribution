@@ -18,10 +18,8 @@ object AutocompleteResult {
     getPoi: js.Function1[scala.Double, AutocompleteResultPoi],
     keyword: java.lang.String
   ): AutocompleteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getNumPois")(getNumPois)
-    __obj.updateDynamic("getPoi")(getPoi)
-    __obj.updateDynamic("keyword")(keyword)
+    val __obj = js.Dynamic.literal(getNumPois = getNumPois, getPoi = getPoi, keyword = keyword)
+  
     __obj.asInstanceOf[AutocompleteResult]
   }
 }

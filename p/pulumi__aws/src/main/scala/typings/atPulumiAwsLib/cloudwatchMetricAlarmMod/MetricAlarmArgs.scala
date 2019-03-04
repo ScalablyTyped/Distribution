@@ -152,10 +152,7 @@ object MetricAlarmArgs {
     treatMissingData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     unit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): MetricAlarmArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluationPeriods")(evaluationPeriods.asInstanceOf[js.Any])
-    __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator.asInstanceOf[js.Any], evaluationPeriods = evaluationPeriods.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
     if (actionsEnabled != null) __obj.updateDynamic("actionsEnabled")(actionsEnabled.asInstanceOf[js.Any])
     if (alarmActions != null) __obj.updateDynamic("alarmActions")(alarmActions.asInstanceOf[js.Any])
     if (alarmDescription != null) __obj.updateDynamic("alarmDescription")(alarmDescription.asInstanceOf[js.Any])

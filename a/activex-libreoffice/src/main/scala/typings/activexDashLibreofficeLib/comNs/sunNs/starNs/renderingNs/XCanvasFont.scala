@@ -80,19 +80,8 @@ object XCanvasFont {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCanvasFont = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableSizes")(AvailableSizes)
-    __obj.updateDynamic("ExtraFontProperties")(ExtraFontProperties)
-    __obj.updateDynamic("FontMetrics")(FontMetrics)
-    __obj.updateDynamic("FontRequest")(FontRequest)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createTextLayout")(createTextLayout)
-    __obj.updateDynamic("getAvailableSizes")(getAvailableSizes)
-    __obj.updateDynamic("getExtraFontProperties")(getExtraFontProperties)
-    __obj.updateDynamic("getFontMetrics")(getFontMetrics)
-    __obj.updateDynamic("getFontRequest")(getFontRequest)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AvailableSizes = AvailableSizes, ExtraFontProperties = ExtraFontProperties, FontMetrics = FontMetrics, FontRequest = FontRequest, acquire = acquire, createTextLayout = createTextLayout, getAvailableSizes = getAvailableSizes, getExtraFontProperties = getExtraFontProperties, getFontMetrics = getFontMetrics, getFontRequest = getFontRequest, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCanvasFont]
   }
 }

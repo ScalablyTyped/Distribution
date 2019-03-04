@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(timeEntry: ITimeEntryStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timeEntry")(timeEntry)
+    val __obj = js.Dynamic.literal(timeEntry = timeEntry)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

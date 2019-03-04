@@ -37,12 +37,8 @@ object MDCFloatingLabelAdapter {
     registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
     removeClass: js.Function1[java.lang.String, scala.Unit]
   ): MDCFloatingLabelAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getWidth = getWidth, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass)
+  
     __obj.asInstanceOf[MDCFloatingLabelAdapter]
   }
 }

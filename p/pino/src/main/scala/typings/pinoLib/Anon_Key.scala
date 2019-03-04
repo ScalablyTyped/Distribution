@@ -20,9 +20,8 @@ object Anon_Key {
     `type`: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message, stack = stack)
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

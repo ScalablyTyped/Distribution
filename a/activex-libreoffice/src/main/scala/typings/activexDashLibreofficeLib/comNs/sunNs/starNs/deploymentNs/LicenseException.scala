@@ -32,12 +32,8 @@ object LicenseException {
     Message: java.lang.String,
     Text: java.lang.String
   ): LicenseException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AcceptBy")(AcceptBy)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ExtensionName")(ExtensionName)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Text")(Text)
+    val __obj = js.Dynamic.literal(AcceptBy = AcceptBy, Context = Context, ExtensionName = ExtensionName, Message = Message, Text = Text)
+  
     __obj.asInstanceOf[LicenseException]
   }
 }

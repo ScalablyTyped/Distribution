@@ -24,8 +24,7 @@ object Anon_Bound {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): Anon_Bound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (bound != null) __obj.updateDynamic("bound")(bound)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

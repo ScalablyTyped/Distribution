@@ -13,9 +13,8 @@ trait JWTHeader extends js.Object {
 object JWTHeader {
   @scala.inline
   def apply(alg: java.lang.String, typ: java.lang.String): JWTHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alg")(alg)
-    __obj.updateDynamic("typ")(typ)
+    val __obj = js.Dynamic.literal(alg = alg, typ = typ)
+  
     __obj.asInstanceOf[JWTHeader]
   }
 }

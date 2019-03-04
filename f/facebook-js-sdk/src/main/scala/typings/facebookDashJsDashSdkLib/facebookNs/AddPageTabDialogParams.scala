@@ -19,9 +19,7 @@ object AddPageTabDialogParams {
     app_id: java.lang.String = null,
     display: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.page | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.iframe | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.async | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.popup = null
   ): AddPageTabDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(method = method, redirect_uri = redirect_uri)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPageTabDialogParams]

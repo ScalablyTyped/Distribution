@@ -300,8 +300,7 @@ object ElementDefinitionExample {
     valueUnsignedInt: js.UndefOr[unsignedInt] = js.undefined,
     valueUri: uri = null
   ): ElementDefinitionExample = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_label != null) __obj.updateDynamic("_label")(_label)

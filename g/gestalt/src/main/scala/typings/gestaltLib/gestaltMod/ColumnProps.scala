@@ -22,8 +22,7 @@ object ColumnProps {
     mdSpan: UnsignedUpTo12 = null,
     smSpan: UnsignedUpTo12 = null
   ): ColumnProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("span")(span)
+    val __obj = js.Dynamic.literal(span = span)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (lgSpan != null) __obj.updateDynamic("lgSpan")(lgSpan)
     if (mdSpan != null) __obj.updateDynamic("mdSpan")(mdSpan)

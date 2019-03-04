@@ -86,18 +86,8 @@ object XIeeeFloatReadOnlyBitmap {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIeeeFloatReadOnlyBitmap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MemoryLayout")(MemoryLayout)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getMemoryLayout")(getMemoryLayout)
-    __obj.updateDynamic("getPixel")(getPixel)
-    __obj.updateDynamic("getScaledBitmap")(getScaledBitmap)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("hasAlpha")(hasAlpha)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(MemoryLayout = MemoryLayout, Size = Size, acquire = acquire, getData = getData, getMemoryLayout = getMemoryLayout, getPixel = getPixel, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIeeeFloatReadOnlyBitmap]
   }
 }

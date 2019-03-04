@@ -182,20 +182,8 @@ object IServerValidationManager {
     reset: js.Function0[scala.Unit],
     subscribe: js.Function3[java.lang.String, java.lang.String, angularLib.angularMod.Global.Function, scala.Unit]
   ): IServerValidationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFieldError")(addFieldError)
-    __obj.updateDynamic("addPropertyError")(addPropertyError)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("executeAndClearAllSubscriptions")(executeAndClearAllSubscriptions)
-    __obj.updateDynamic("getFieldCallbacks")(getFieldCallbacks)
-    __obj.updateDynamic("getFieldError")(getFieldError)
-    __obj.updateDynamic("getPropertyCallbacks")(getPropertyCallbacks)
-    __obj.updateDynamic("getPropertyError")(getPropertyError)
-    __obj.updateDynamic("hasFieldError")(hasFieldError)
-    __obj.updateDynamic("hasPropertyError")(hasPropertyError)
-    __obj.updateDynamic("removePropertyError")(removePropertyError)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(addFieldError = addFieldError, addPropertyError = addPropertyError, clear = clear, executeAndClearAllSubscriptions = executeAndClearAllSubscriptions, getFieldCallbacks = getFieldCallbacks, getFieldError = getFieldError, getPropertyCallbacks = getPropertyCallbacks, getPropertyError = getPropertyError, hasFieldError = hasFieldError, hasPropertyError = hasPropertyError, removePropertyError = removePropertyError, reset = reset, subscribe = subscribe)
+  
     __obj.asInstanceOf[IServerValidationManager]
   }
 }

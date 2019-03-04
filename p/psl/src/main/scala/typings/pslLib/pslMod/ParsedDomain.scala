@@ -26,9 +26,7 @@ object ParsedDomain {
     subdomain: java.lang.String = null,
     tld: java.lang.String = null
   ): ParsedDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("listed")(listed)
+    val __obj = js.Dynamic.literal(input = input, listed = listed)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (sld != null) __obj.updateDynamic("sld")(sld)

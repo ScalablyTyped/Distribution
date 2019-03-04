@@ -54,14 +54,8 @@ object UrlRulesApi {
       UrlRule
     ]
   ): UrlRulesApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initial")(initial)
-    __obj.updateDynamic("otherwise")(otherwise)
-    __obj.updateDynamic("removeRule")(removeRule)
-    __obj.updateDynamic("rule")(rule)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("when")(when)
+    val __obj = js.Dynamic.literal(initial = initial, otherwise = otherwise, removeRule = removeRule, rule = rule, rules = rules, sort = sort, when = when)
+  
     __obj.asInstanceOf[UrlRulesApi]
   }
 }

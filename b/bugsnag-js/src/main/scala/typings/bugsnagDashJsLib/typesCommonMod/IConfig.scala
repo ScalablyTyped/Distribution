@@ -54,8 +54,7 @@ object IConfig {
     sessionEndpoint: java.lang.String = null,
     user: js.Object = null
   ): IConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
+    val __obj = js.Dynamic.literal(apiKey = apiKey)
     if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
     if (!js.isUndefined(autoBreadcrumbs)) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs)
     if (!js.isUndefined(autoCaptureSessions)) __obj.updateDynamic("autoCaptureSessions")(autoCaptureSessions)

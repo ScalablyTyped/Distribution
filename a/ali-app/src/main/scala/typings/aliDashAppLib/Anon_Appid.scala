@@ -32,14 +32,8 @@ object Anon_Appid {
     state: java.lang.String,
     template_id: java.lang.String
   ): Anon_Appid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app_id")(app_id)
-    __obj.updateDynamic("auth_code")(auth_code)
-    __obj.updateDynamic("out_string")(out_string)
-    __obj.updateDynamic("request_id")(request_id)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("template_id")(template_id)
+    val __obj = js.Dynamic.literal(app_id = app_id, auth_code = auth_code, out_string = out_string, request_id = request_id, scope = scope, state = state, template_id = template_id)
+  
     __obj.asInstanceOf[Anon_Appid]
   }
 }

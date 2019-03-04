@@ -28,17 +28,8 @@ object IWorkspace {
     nodeValue: java.lang.String,
     title: winrtLib.WindowsNs.WebNs.SyndicationNs.ISyndicationText
   ): IWorkspace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("collections")(collections)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, collections = collections, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, title = title)
+  
     __obj.asInstanceOf[IWorkspace]
   }
 }

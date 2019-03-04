@@ -24,9 +24,8 @@ object AssociationsessionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AssociationSession]
     ]
   ): AssociationsessionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(start = start, verify = verify)
+  
     __obj.asInstanceOf[AssociationsessionsResource]
   }
 }

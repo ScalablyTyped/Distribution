@@ -34,15 +34,8 @@ object XChartTypeContainer {
     removeChartType: js.Function1[XChartType, scala.Unit],
     setChartTypes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType], scala.Unit]
   ): XChartTypeContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChartTypes")(ChartTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChartType")(addChartType)
-    __obj.updateDynamic("getChartTypes")(getChartTypes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChartType")(removeChartType)
-    __obj.updateDynamic("setChartTypes")(setChartTypes)
+    val __obj = js.Dynamic.literal(ChartTypes = ChartTypes, acquire = acquire, addChartType = addChartType, getChartTypes = getChartTypes, queryInterface = queryInterface, release = release, removeChartType = removeChartType, setChartTypes = setChartTypes)
+  
     __obj.asInstanceOf[XChartTypeContainer]
   }
 }

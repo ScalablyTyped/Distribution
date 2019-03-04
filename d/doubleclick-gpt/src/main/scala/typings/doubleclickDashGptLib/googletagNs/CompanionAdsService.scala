@@ -25,11 +25,8 @@ object CompanionAdsService {
     getSlots: js.Function0[js.Array[Slot]],
     setRefreshUnfilledSlots: js.Function1[scala.Boolean, scala.Unit]
   ): CompanionAdsService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("enableSyncLoading")(enableSyncLoading)
-    __obj.updateDynamic("getSlots")(getSlots)
-    __obj.updateDynamic("setRefreshUnfilledSlots")(setRefreshUnfilledSlots)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, enableSyncLoading = enableSyncLoading, getSlots = getSlots, setRefreshUnfilledSlots = setRefreshUnfilledSlots)
+  
     __obj.asInstanceOf[CompanionAdsService]
   }
 }

@@ -19,9 +19,8 @@ trait GetBillingServiceAccountResult extends js.Object {
 object GetBillingServiceAccountResult {
   @scala.inline
   def apply(arn: java.lang.String, id: java.lang.String): GetBillingServiceAccountResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(arn = arn, id = id)
+  
     __obj.asInstanceOf[GetBillingServiceAccountResult]
   }
 }

@@ -24,13 +24,8 @@ object tagXHR_COOKIE {
     pwszUrl: java.lang.String,
     pwszValue: java.lang.String
   ): tagXHR_COOKIE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dwFlags")(dwFlags)
-    __obj.updateDynamic("ftExpires")(ftExpires)
-    __obj.updateDynamic("pwszName")(pwszName)
-    __obj.updateDynamic("pwszP3PPolicy")(pwszP3PPolicy)
-    __obj.updateDynamic("pwszUrl")(pwszUrl)
-    __obj.updateDynamic("pwszValue")(pwszValue)
+    val __obj = js.Dynamic.literal(dwFlags = dwFlags, ftExpires = ftExpires, pwszName = pwszName, pwszP3PPolicy = pwszP3PPolicy, pwszUrl = pwszUrl, pwszValue = pwszValue)
+  
     __obj.asInstanceOf[tagXHR_COOKIE]
   }
 }

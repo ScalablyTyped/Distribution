@@ -22,12 +22,8 @@ object GitPathAction {
     rawTextContent: java.lang.String,
     targetPath: java.lang.String
   ): GitPathAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("base64Content")(base64Content)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("rawTextContent")(rawTextContent)
-    __obj.updateDynamic("targetPath")(targetPath)
+    val __obj = js.Dynamic.literal(action = action, base64Content = base64Content, path = path, rawTextContent = rawTextContent, targetPath = targetPath)
+  
     __obj.asInstanceOf[GitPathAction]
   }
 }

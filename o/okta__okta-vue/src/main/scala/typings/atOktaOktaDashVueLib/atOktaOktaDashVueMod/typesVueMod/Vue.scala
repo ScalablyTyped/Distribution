@@ -13,8 +13,8 @@ trait Vue extends js.Object {
 object Vue {
   @scala.inline
   def apply($auth: atOktaOktaDashVueLib.Anon_AdditionalParams): Vue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$auth")($auth)
+    val __obj = js.Dynamic.literal($auth = $auth)
+  
     __obj.asInstanceOf[Vue]
   }
 }

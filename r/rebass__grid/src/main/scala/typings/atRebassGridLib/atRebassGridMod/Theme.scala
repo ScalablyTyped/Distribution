@@ -18,8 +18,7 @@ object Theme {
     fontSizes: js.Array[scala.Double] = null,
     space: js.Array[scala.Double] = null
   ): Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakpoints")(breakpoints)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints)
     if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes)
     if (space != null) __obj.updateDynamic("space")(space)
     __obj.asInstanceOf[Theme]

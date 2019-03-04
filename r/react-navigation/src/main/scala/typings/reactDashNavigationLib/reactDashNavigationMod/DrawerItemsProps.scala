@@ -60,13 +60,7 @@ object DrawerItemsProps {
     labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     screenProps: js.Any = null
   ): DrawerItemsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawerPosition")(drawerPosition.asInstanceOf[js.Any])
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("onItemPress")(onItemPress)
-    __obj.updateDynamic("renderIcon")(renderIcon)
+    val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], getLabel = getLabel, items = items, navigation = navigation, onItemPress = onItemPress, renderIcon = renderIcon)
     if (activeBackgroundColor != null) __obj.updateDynamic("activeBackgroundColor")(activeBackgroundColor)
     if (activeItemKey != null) __obj.updateDynamic("activeItemKey")(activeItemKey)
     if (activeLabelStyle != null) __obj.updateDynamic("activeLabelStyle")(activeLabelStyle.asInstanceOf[js.Any])

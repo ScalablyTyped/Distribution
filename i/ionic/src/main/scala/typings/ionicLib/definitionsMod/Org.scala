@@ -12,8 +12,8 @@ trait Org extends js.Object {
 object Org {
   @scala.inline
   def apply(name: java.lang.String): Org = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[Org]
   }
 }

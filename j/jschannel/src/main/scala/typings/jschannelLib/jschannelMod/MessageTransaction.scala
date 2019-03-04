@@ -22,12 +22,8 @@ object MessageTransaction {
     error: js.Function2[js.Any, java.lang.String, scala.Unit],
     invoke: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): MessageTransaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("delayReturn")(delayReturn)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("invoke")(invoke)
+    val __obj = js.Dynamic.literal(complete = complete, completed = completed, delayReturn = delayReturn, error = error, invoke = invoke)
+  
     __obj.asInstanceOf[MessageTransaction]
   }
 }

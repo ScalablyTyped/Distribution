@@ -34,7 +34,8 @@ object TypeObject {
     types: js.Array[TypeObject] = null,
     value: java.lang.String = null
   ): TypeObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (constraint != null) __obj.updateDynamic("constraint")(constraint)
     if (declaration != null) __obj.updateDynamic("declaration")(declaration)
     if (elementType != null) __obj.updateDynamic("elementType")(elementType)

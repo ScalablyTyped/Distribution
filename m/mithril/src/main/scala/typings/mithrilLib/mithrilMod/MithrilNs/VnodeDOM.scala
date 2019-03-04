@@ -26,11 +26,7 @@ object VnodeDOM {
     key: java.lang.String | scala.Double = null,
     text: java.lang.String | scala.Double | scala.Boolean = null
   ): VnodeDOM[Attrs, State] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    __obj.updateDynamic("dom")(dom)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], dom = dom, state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (domSize != null) __obj.updateDynamic("domSize")(domSize.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

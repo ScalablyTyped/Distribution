@@ -32,10 +32,8 @@ object VBAScriptEvent {
     ModuleName: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): VBAScriptEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("ModuleName")(ModuleName)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Identifier = Identifier, ModuleName = ModuleName, Source = Source)
+  
     __obj.asInstanceOf[VBAScriptEvent]
   }
 }

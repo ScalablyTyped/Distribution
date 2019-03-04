@@ -36,14 +36,8 @@ object AttachmentStream {
     filename: java.lang.String = null,
     related: js.UndefOr[scala.Boolean] = js.undefined
   ): AttachmentStream = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("checksum")(checksum)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contentDisposition")(contentDisposition)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(checksum = checksum, content = content, contentDisposition = contentDisposition, contentType = contentType, headers = headers, release = release, size = size)
+    __obj.updateDynamic("type")(`type`)
     if (cid != null) __obj.updateDynamic("cid")(cid)
     if (contentId != null) __obj.updateDynamic("contentId")(contentId)
     if (filename != null) __obj.updateDynamic("filename")(filename)

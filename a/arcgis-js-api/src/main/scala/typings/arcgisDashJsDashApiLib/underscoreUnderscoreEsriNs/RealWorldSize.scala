@@ -58,11 +58,8 @@ object RealWorldSize {
     valueExpression: java.lang.String = null,
     valueRepresentation: java.lang.String = null
   ): RealWorldSize = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("valueUnit")(valueUnit)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, valueUnit = valueUnit)
+    __obj.updateDynamic("type")(`type`)
     if (field != null) __obj.updateDynamic("field")(field)
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)
     if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression)

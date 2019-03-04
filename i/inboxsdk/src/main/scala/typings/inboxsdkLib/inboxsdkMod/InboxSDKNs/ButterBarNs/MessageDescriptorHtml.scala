@@ -22,8 +22,7 @@ object MessageDescriptorHtml {
     priority: scala.Int | scala.Double = null,
     time: scala.Int | scala.Double = null
   ): MessageDescriptorHtml = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("html")(html)
+    val __obj = js.Dynamic.literal(html = html)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged)
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])

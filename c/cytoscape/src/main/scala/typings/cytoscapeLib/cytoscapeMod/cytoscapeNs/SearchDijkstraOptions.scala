@@ -32,8 +32,7 @@ object SearchDijkstraOptions {
     directed: js.UndefOr[scala.Boolean] = js.undefined,
     weight: WeightFn = null
   ): SearchDijkstraOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
     if (weight != null) __obj.updateDynamic("weight")(weight)
     __obj.asInstanceOf[SearchDijkstraOptions]

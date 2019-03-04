@@ -20,11 +20,8 @@ object TabsActivationUIParams {
     oldPanel: jqueryuiLib.JQuery,
     oldTab: jqueryuiLib.JQuery
   ): TabsActivationUIParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newPanel")(newPanel)
-    __obj.updateDynamic("newTab")(newTab)
-    __obj.updateDynamic("oldPanel")(oldPanel)
-    __obj.updateDynamic("oldTab")(oldTab)
+    val __obj = js.Dynamic.literal(newPanel = newPanel, newTab = newTab, oldPanel = oldPanel, oldTab = oldTab)
+  
     __obj.asInstanceOf[TabsActivationUIParams]
   }
 }

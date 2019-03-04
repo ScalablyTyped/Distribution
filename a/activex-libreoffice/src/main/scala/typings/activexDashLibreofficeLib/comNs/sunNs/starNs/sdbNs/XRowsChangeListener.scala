@@ -24,12 +24,8 @@ object XRowsChangeListener {
     release: js.Function0[scala.Unit],
     rowsChanged: js.Function1[RowsChangeEvent, scala.Unit]
   ): XRowsChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("rowsChanged")(rowsChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, rowsChanged = rowsChanged)
+  
     __obj.asInstanceOf[XRowsChangeListener]
   }
 }

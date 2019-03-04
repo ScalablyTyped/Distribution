@@ -12,8 +12,8 @@ trait Anon_Theme extends js.Object {
 object Anon_Theme {
   @scala.inline
   def apply(theme: reactDashCssDashThemrLib.reactDashCssDashThemrMod.TReactCSSThemrTheme): Anon_Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(theme = theme)
+  
     __obj.asInstanceOf[Anon_Theme]
   }
 }

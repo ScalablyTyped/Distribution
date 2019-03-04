@@ -12,8 +12,8 @@ trait Anon_TypeInput extends js.Object {
 object Anon_TypeInput {
   @scala.inline
   def apply(`type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_TypeInput = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeInput]
   }
 }

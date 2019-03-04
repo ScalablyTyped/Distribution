@@ -16,9 +16,8 @@ object Anon_ItemsReturnValue {
     items: js.Array[winrtLib.WindowsNs.FoundationNs.IWwwFormUrlDecoderEntry],
     returnValue: scala.Double
   ): Anon_ItemsReturnValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValue]
   }
 }

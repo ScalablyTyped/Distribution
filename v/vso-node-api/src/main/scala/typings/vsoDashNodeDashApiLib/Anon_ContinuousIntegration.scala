@@ -20,11 +20,8 @@ object Anon_ContinuousIntegration {
     none: scala.Double,
     schedule: scala.Double
   ): Anon_ContinuousIntegration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continuousIntegration")(continuousIntegration)
-    __obj.updateDynamic("manual")(manual)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("schedule")(schedule)
+    val __obj = js.Dynamic.literal(continuousIntegration = continuousIntegration, manual = manual, none = none, schedule = schedule)
+  
     __obj.asInstanceOf[Anon_ContinuousIntegration]
   }
 }

@@ -64,32 +64,8 @@ object FormApi {
     values: FormValues,
     warnings: FormErrors
   ): FormApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addValue")(addValue)
-    __obj.updateDynamic("asyncValidations")(asyncValidations)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("getFormState")(getFormState)
-    __obj.updateDynamic("removeValue")(removeValue)
-    __obj.updateDynamic("resetAll")(resetAll)
-    __obj.updateDynamic("setAllTouched")(setAllTouched)
-    __obj.updateDynamic("setAllValues")(setAllValues)
-    __obj.updateDynamic("setError")(setError)
-    __obj.updateDynamic("setFormState")(setFormState)
-    __obj.updateDynamic("setSuccess")(setSuccess)
-    __obj.updateDynamic("setTouched")(setTouched)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("setWarning")(setWarning)
-    __obj.updateDynamic("submitForm")(submitForm)
-    __obj.updateDynamic("submits")(submits)
-    __obj.updateDynamic("submitted")(submitted)
-    __obj.updateDynamic("successes")(successes)
-    __obj.updateDynamic("swapValues")(swapValues)
-    __obj.updateDynamic("touched")(touched)
-    __obj.updateDynamic("validating")(validating)
-    __obj.updateDynamic("validationFailed")(validationFailed)
-    __obj.updateDynamic("validationFailures")(validationFailures)
-    __obj.updateDynamic("values")(values)
-    __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(addValue = addValue, asyncValidations = asyncValidations, errors = errors, getFormState = getFormState, removeValue = removeValue, resetAll = resetAll, setAllTouched = setAllTouched, setAllValues = setAllValues, setError = setError, setFormState = setFormState, setSuccess = setSuccess, setTouched = setTouched, setValue = setValue, setWarning = setWarning, submitForm = submitForm, submits = submits, submitted = submitted, successes = successes, swapValues = swapValues, touched = touched, validating = validating, validationFailed = validationFailed, validationFailures = validationFailures, values = values, warnings = warnings)
+  
     __obj.asInstanceOf[FormApi]
   }
 }

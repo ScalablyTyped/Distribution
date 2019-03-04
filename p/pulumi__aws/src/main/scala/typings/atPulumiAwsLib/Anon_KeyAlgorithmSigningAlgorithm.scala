@@ -18,10 +18,8 @@ object Anon_KeyAlgorithmSigningAlgorithm {
     signingAlgorithm: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     subject: atPulumiPulumiLib.outputMod.Input[Anon_CommonNameCountry]
   ): Anon_KeyAlgorithmSigningAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
-    __obj.updateDynamic("signingAlgorithm")(signingAlgorithm.asInstanceOf[js.Any])
-    __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(keyAlgorithm = keyAlgorithm.asInstanceOf[js.Any], signingAlgorithm = signingAlgorithm.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_KeyAlgorithmSigningAlgorithm]
   }
 }

@@ -55,8 +55,7 @@ object WindowScrollerProps {
     serverHeight: scala.Int | scala.Double = null,
     serverWidth: scala.Int | scala.Double = null
   ): WindowScrollerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onResize != null) __obj.updateDynamic("onResize")(onResize)
     if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)

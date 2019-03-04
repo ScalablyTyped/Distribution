@@ -28,12 +28,8 @@ object TileAvailability {
     computeMaximumLevelAtPosition: js.Function1[Cartographic, scala.Double],
     isTileAvailable: js.Function3[scala.Double, scala.Double, scala.Double, scala.Boolean]
   ): TileAvailability = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAvailableTileRange")(addAvailableTileRange)
-    __obj.updateDynamic("computeBestAvailableLevelOverRectangle")(computeBestAvailableLevelOverRectangle)
-    __obj.updateDynamic("computeChildMaskForTile")(computeChildMaskForTile)
-    __obj.updateDynamic("computeMaximumLevelAtPosition")(computeMaximumLevelAtPosition)
-    __obj.updateDynamic("isTileAvailable")(isTileAvailable)
+    val __obj = js.Dynamic.literal(addAvailableTileRange = addAvailableTileRange, computeBestAvailableLevelOverRectangle = computeBestAvailableLevelOverRectangle, computeChildMaskForTile = computeChildMaskForTile, computeMaximumLevelAtPosition = computeMaximumLevelAtPosition, isTileAvailable = isTileAvailable)
+  
     __obj.asInstanceOf[TileAvailability]
   }
 }

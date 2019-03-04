@@ -20,11 +20,8 @@ object HttpContext {
     response: expressLib.expressMod.eNs.Response,
     user: Principal
   ): HttpContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(container = container, request = request, response = response, user = user)
+  
     __obj.asInstanceOf[HttpContext]
   }
 }

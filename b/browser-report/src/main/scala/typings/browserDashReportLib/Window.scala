@@ -19,9 +19,8 @@ object Window {
     ],
     browserReportSync: js.Function0[ReportResult]
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browserReport")(browserReport)
-    __obj.updateDynamic("browserReportSync")(browserReportSync)
+    val __obj = js.Dynamic.literal(browserReport = browserReport, browserReportSync = browserReportSync)
+  
     __obj.asInstanceOf[Window]
   }
 }

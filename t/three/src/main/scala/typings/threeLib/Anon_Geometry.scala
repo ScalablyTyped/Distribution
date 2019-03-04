@@ -16,8 +16,7 @@ object Anon_Geometry {
     geometry: threeLib.threeDashCoreMod.Geometry,
     materials: js.Array[threeLib.threeDashCoreMod.Material] = null
   ): Anon_Geometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geometry")(geometry)
+    val __obj = js.Dynamic.literal(geometry = geometry)
     if (materials != null) __obj.updateDynamic("materials")(materials)
     __obj.asInstanceOf[Anon_Geometry]
   }

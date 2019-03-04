@@ -18,9 +18,7 @@ object FieldStatsResponse {
     indices: org.scalablytyped.runtime.StringDictionary[FieldStatsResponseIndex],
     conflicts: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): FieldStatsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_shards")(_shards)
-    __obj.updateDynamic("indices")(indices)
+    val __obj = js.Dynamic.literal(_shards = _shards, indices = indices)
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts)
     __obj.asInstanceOf[FieldStatsResponse]
   }

@@ -14,9 +14,8 @@ trait Anon_ClassSideVertexIndices extends js.Object {
 object Anon_ClassSideVertexIndices {
   @scala.inline
   def apply(`class`: java.lang.String, sideVertexIndices: stdLib.Uint32Array, vertexData: stdLib.Float64Array): Anon_ClassSideVertexIndices = {
-    val __obj = js.Dynamic.literal(`class` = `class`)
-    __obj.updateDynamic("sideVertexIndices")(sideVertexIndices)
-    __obj.updateDynamic("vertexData")(vertexData)
+    val __obj = js.Dynamic.literal(sideVertexIndices = sideVertexIndices, vertexData = vertexData)
+    __obj.updateDynamic("class")(`class`)
     __obj.asInstanceOf[Anon_ClassSideVertexIndices]
   }
 }

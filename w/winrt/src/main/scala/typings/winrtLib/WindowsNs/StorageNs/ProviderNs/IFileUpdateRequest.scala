@@ -22,12 +22,8 @@ object IFileUpdateRequest {
     status: FileUpdateStatus,
     updateLocalFile: js.Function1[winrtLib.WindowsNs.StorageNs.IStorageFile, scala.Unit]
   ): IFileUpdateRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentId")(contentId)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("updateLocalFile")(updateLocalFile)
+    val __obj = js.Dynamic.literal(contentId = contentId, file = file, getDeferral = getDeferral, status = status, updateLocalFile = updateLocalFile)
+  
     __obj.asInstanceOf[IFileUpdateRequest]
   }
 }

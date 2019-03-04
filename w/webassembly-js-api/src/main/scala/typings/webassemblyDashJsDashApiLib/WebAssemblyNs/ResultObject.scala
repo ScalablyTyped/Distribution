@@ -13,9 +13,8 @@ trait ResultObject extends js.Object {
 object ResultObject {
   @scala.inline
   def apply(instance: Instance, module: Module): ResultObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("module")(module)
+    val __obj = js.Dynamic.literal(instance = instance, module = module)
+  
     __obj.asInstanceOf[ResultObject]
   }
 }

@@ -35,13 +35,8 @@ object XMergeableCellRange {
     release: js.Function0[scala.Unit],
     split: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XMergeableCellRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("isMergeable")(isMergeable)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("split")(split)
+    val __obj = js.Dynamic.literal(acquire = acquire, isMergeable = isMergeable, merge = merge, queryInterface = queryInterface, release = release, split = split)
+  
     __obj.asInstanceOf[XMergeableCellRange]
   }
 }

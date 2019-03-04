@@ -29,13 +29,8 @@ object DocumentSignatureInformation {
     SignatureTime: scala.Double,
     Signer: XCertificate
   ): DocumentSignatureInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CertificateStatus")(CertificateStatus)
-    __obj.updateDynamic("PartialDocumentSignature")(PartialDocumentSignature)
-    __obj.updateDynamic("SignatureDate")(SignatureDate)
-    __obj.updateDynamic("SignatureIsValid")(SignatureIsValid)
-    __obj.updateDynamic("SignatureTime")(SignatureTime)
-    __obj.updateDynamic("Signer")(Signer)
+    val __obj = js.Dynamic.literal(CertificateStatus = CertificateStatus, PartialDocumentSignature = PartialDocumentSignature, SignatureDate = SignatureDate, SignatureIsValid = SignatureIsValid, SignatureTime = SignatureTime, Signer = Signer)
+  
     __obj.asInstanceOf[DocumentSignatureInformation]
   }
 }

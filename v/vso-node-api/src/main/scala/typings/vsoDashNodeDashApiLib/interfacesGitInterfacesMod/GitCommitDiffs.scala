@@ -28,15 +28,8 @@ object GitCommitDiffs {
     commonCommit: java.lang.String,
     targetCommit: java.lang.String
   ): GitCommitDiffs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aheadCount")(aheadCount)
-    __obj.updateDynamic("allChangesIncluded")(allChangesIncluded)
-    __obj.updateDynamic("baseCommit")(baseCommit)
-    __obj.updateDynamic("behindCount")(behindCount)
-    __obj.updateDynamic("changeCounts")(changeCounts)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("commonCommit")(commonCommit)
-    __obj.updateDynamic("targetCommit")(targetCommit)
+    val __obj = js.Dynamic.literal(aheadCount = aheadCount, allChangesIncluded = allChangesIncluded, baseCommit = baseCommit, behindCount = behindCount, changeCounts = changeCounts, changes = changes, commonCommit = commonCommit, targetCommit = targetCommit)
+  
     __obj.asInstanceOf[GitCommitDiffs]
   }
 }

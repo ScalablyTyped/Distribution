@@ -18,10 +18,8 @@ object Anon_AddTemplate {
     createJavaScriptEvaluatorBlock: js.Function1[java.lang.String, java.lang.String],
     renderTemplateSource: js.Function3[js.Object, KnockoutBindingContext, js.Object, js.Array[stdLib.Node]]
   ): Anon_AddTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTemplate")(addTemplate)
-    __obj.updateDynamic("createJavaScriptEvaluatorBlock")(createJavaScriptEvaluatorBlock)
-    __obj.updateDynamic("renderTemplateSource")(renderTemplateSource)
+    val __obj = js.Dynamic.literal(addTemplate = addTemplate, createJavaScriptEvaluatorBlock = createJavaScriptEvaluatorBlock, renderTemplateSource = renderTemplateSource)
+  
     __obj.asInstanceOf[Anon_AddTemplate]
   }
 }

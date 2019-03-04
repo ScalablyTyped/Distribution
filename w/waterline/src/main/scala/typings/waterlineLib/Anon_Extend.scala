@@ -17,8 +17,8 @@ object Anon_Extend {
       waterlineLib.waterlineMod.WaterlineNs.CollectionClass
     ]
   ): Anon_Extend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extend")(extend)
+    val __obj = js.Dynamic.literal(extend = extend)
+  
     __obj.asInstanceOf[Anon_Extend]
   }
 }

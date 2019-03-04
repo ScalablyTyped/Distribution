@@ -24,13 +24,8 @@ object i18nSettings {
     monthNames: Months,
     monthNamesShort: Months
   ): i18nSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DoFn")(DoFn)
-    __obj.updateDynamic("amPm")(amPm)
-    __obj.updateDynamic("dayNames")(dayNames)
-    __obj.updateDynamic("dayNamesShort")(dayNamesShort)
-    __obj.updateDynamic("monthNames")(monthNames)
-    __obj.updateDynamic("monthNamesShort")(monthNamesShort)
+    val __obj = js.Dynamic.literal(DoFn = DoFn, amPm = amPm, dayNames = dayNames, dayNamesShort = dayNamesShort, monthNames = monthNames, monthNamesShort = monthNamesShort)
+  
     __obj.asInstanceOf[i18nSettings]
   }
 }

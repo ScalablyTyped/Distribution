@@ -20,10 +20,7 @@ object Suggest {
     placeId: java.lang.String,
     gmaps: googlemapsLib.googleNs.mapsNs.GeocoderResult = null
   ): Suggest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("placeId")(placeId)
+    val __obj = js.Dynamic.literal(label = label, location = location, placeId = placeId)
     if (gmaps != null) __obj.updateDynamic("gmaps")(gmaps)
     __obj.asInstanceOf[Suggest]
   }

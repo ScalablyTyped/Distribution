@@ -32,17 +32,8 @@ object Anon_CommonFileExt {
     mimeType: js.Function0[java.lang.String],
     semver: js.Function0[java.lang.String]
   ): Anon_CommonFileExt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commonFileExt")(commonFileExt)
-    __obj.updateDynamic("commonFileName")(commonFileName)
-    __obj.updateDynamic("commonFileType")(commonFileType)
-    __obj.updateDynamic("directoryPath")(directoryPath)
-    __obj.updateDynamic("fileExt")(fileExt)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("fileType")(fileType)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("semver")(semver)
+    val __obj = js.Dynamic.literal(commonFileExt = commonFileExt, commonFileName = commonFileName, commonFileType = commonFileType, directoryPath = directoryPath, fileExt = fileExt, fileName = fileName, filePath = filePath, fileType = fileType, mimeType = mimeType, semver = semver)
+  
     __obj.asInstanceOf[Anon_CommonFileExt]
   }
 }

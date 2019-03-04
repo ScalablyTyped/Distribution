@@ -20,11 +20,7 @@ object RequestError {
     status: scala.Double,
     stack: java.lang.String = null
   ): RequestError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isHttpError")(isHttpError)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(isHttpError = isHttpError, message = message, name = name, status = status)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[RequestError]
   }

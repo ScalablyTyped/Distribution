@@ -14,9 +14,7 @@ trait JsenValidateError extends js.Object {
 object JsenValidateError {
   @scala.inline
   def apply(keyword: java.lang.String, path: java.lang.String, message: java.lang.String = null): JsenValidateError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(keyword = keyword, path = path)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[JsenValidateError]
   }

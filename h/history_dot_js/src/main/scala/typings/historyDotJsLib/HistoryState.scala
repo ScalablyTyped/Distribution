@@ -22,8 +22,7 @@ object HistoryState {
     hashedUrl: java.lang.String = null,
     title: java.lang.String = null
   ): HistoryState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (cleanUrl != null) __obj.updateDynamic("cleanUrl")(cleanUrl)
     if (data != null) __obj.updateDynamic("data")(data)
     if (hashedUrl != null) __obj.updateDynamic("hashedUrl")(hashedUrl)

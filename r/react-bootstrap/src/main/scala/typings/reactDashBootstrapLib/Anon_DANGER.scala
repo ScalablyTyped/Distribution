@@ -20,11 +20,8 @@ object Anon_DANGER {
     SUCCESS: java.lang.String,
     WARNING: java.lang.String
   ): Anon_DANGER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DANGER")(DANGER)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(DANGER = DANGER, INFO = INFO, SUCCESS = SUCCESS, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_DANGER]
   }
 }

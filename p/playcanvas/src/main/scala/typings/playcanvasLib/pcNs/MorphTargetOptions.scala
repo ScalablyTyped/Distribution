@@ -24,8 +24,7 @@ object MorphTargetOptions {
     indices: js.Array[scala.Double] = null,
     name: java.lang.String = null
   ): MorphTargetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deltaPositions")(deltaPositions)
+    val __obj = js.Dynamic.literal(deltaPositions = deltaPositions)
     if (aabb != null) __obj.updateDynamic("aabb")(aabb)
     if (deltaNormals != null) __obj.updateDynamic("deltaNormals")(deltaNormals)
     if (deltaTangents != null) __obj.updateDynamic("deltaTangents")(deltaTangents)

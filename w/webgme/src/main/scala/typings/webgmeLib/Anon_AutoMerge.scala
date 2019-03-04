@@ -97,19 +97,8 @@ object Anon_AutoMerge {
     options: java.lang.String,
     requireHashesToMatch: scala.Boolean
   ): Anon_AutoMerge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoMerge")(autoMerge)
-    __obj.updateDynamic("broadcastProjectEvents")(broadcastProjectEvents)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("clientCache")(clientCache)
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("disableHashChecks")(disableHashChecks)
-    __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    __obj.updateDynamic("loadBucketSize")(loadBucketSize)
-    __obj.updateDynamic("loadBucketTimer")(loadBucketTimer)
-    __obj.updateDynamic("maxEmittedCoreObjects")(maxEmittedCoreObjects)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("requireHashesToMatch")(requireHashesToMatch)
+    val __obj = js.Dynamic.literal(autoMerge = autoMerge, broadcastProjectEvents = broadcastProjectEvents, cache = cache, clientCache = clientCache, database = database, disableHashChecks = disableHashChecks, keyType = keyType.asInstanceOf[js.Any], loadBucketSize = loadBucketSize, loadBucketTimer = loadBucketTimer, maxEmittedCoreObjects = maxEmittedCoreObjects, options = options, requireHashesToMatch = requireHashesToMatch)
+  
     __obj.asInstanceOf[Anon_AutoMerge]
   }
 }

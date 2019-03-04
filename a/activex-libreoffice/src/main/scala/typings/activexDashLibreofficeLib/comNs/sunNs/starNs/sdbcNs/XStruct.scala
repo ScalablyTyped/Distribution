@@ -50,13 +50,8 @@ object XStruct {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStruct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SQLTypeName")(SQLTypeName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getSQLTypeName")(getSQLTypeName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = acquire, getAttributes = getAttributes, getSQLTypeName = getSQLTypeName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStruct]
   }
 }

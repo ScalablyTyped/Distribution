@@ -26,9 +26,7 @@ object SnapshotRestoreParams {
     requestTimeout: scala.Int | scala.Double = null,
     waitForCompletion: js.UndefOr[scala.Boolean] = js.undefined
   ): SnapshotRestoreParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("snapshot")(snapshot)
+    val __obj = js.Dynamic.literal(repository = repository, snapshot = snapshot)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

@@ -14,10 +14,8 @@ trait ModRemoveDJ extends js.Object {
 object ModRemoveDJ {
   @scala.inline
   def apply(moderator: java.lang.String, userID: java.lang.String, username: java.lang.String): ModRemoveDJ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("moderator")(moderator)
-    __obj.updateDynamic("userID")(userID)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(moderator = moderator, userID = userID, username = username)
+  
     __obj.asInstanceOf[ModRemoveDJ]
   }
 }

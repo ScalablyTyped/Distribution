@@ -19,8 +19,8 @@ trait PivotExportOptions extends js.Object {
 object PivotExportOptions {
   @scala.inline
   def apply(PrintHeadersOnEveryPage: scala.Boolean): PivotExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrintHeadersOnEveryPage")(PrintHeadersOnEveryPage)
+    val __obj = js.Dynamic.literal(PrintHeadersOnEveryPage = PrintHeadersOnEveryPage)
+  
     __obj.asInstanceOf[PivotExportOptions]
   }
 }

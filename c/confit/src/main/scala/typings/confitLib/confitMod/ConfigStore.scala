@@ -18,10 +18,8 @@ object ConfigStore {
     set: js.Function2[java.lang.String, js.Any, js.Any],
     use: js.Function1[js.Object, scala.Unit]
   ): ConfigStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(get = get, set = set, use = use)
+  
     __obj.asInstanceOf[ConfigStore]
   }
 }

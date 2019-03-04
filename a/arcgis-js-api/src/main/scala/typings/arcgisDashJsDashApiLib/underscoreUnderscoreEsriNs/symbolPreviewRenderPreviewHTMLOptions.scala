@@ -65,10 +65,7 @@ object symbolPreviewRenderPreviewHTMLOptions {
     size: scala.Int | scala.Double = null,
     symbolConfig: java.lang.String = null
   ): symbolPreviewRenderPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling)
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node)

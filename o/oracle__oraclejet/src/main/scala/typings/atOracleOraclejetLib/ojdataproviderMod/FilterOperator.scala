@@ -16,9 +16,8 @@ object FilterOperator {
     filter: js.Function1[js.Array[_], js.Array[_]],
     op: atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator | atOracleOraclejetLib.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
   ): FilterOperator[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filter = filter, op = op.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FilterOperator[D]]
   }
 }

@@ -34,13 +34,8 @@ object Alias {
     value: java.lang.String = null,
     valueRange: Range = null
   ): Alias = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("rawValue")(rawValue)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, rawValue = rawValue, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (context != null) __obj.updateDynamic("context")(context)

@@ -26,9 +26,7 @@ object IProjectConfig {
     root: java.lang.String = null,
     `type`: ProjectType = null
   ): IProjectConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("integrations")(integrations)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(integrations = integrations, name = name)
     if (hooks != null) __obj.updateDynamic("hooks")(hooks)
     if (id != null) __obj.updateDynamic("id")(id)
     if (root != null) __obj.updateDynamic("root")(root)

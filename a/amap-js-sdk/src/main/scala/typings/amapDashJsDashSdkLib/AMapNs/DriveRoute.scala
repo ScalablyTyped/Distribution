@@ -24,13 +24,8 @@ object DriveRoute {
     tolls: scala.Double,
     tolls_distance: scala.Double
   ): DriveRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("policy")(policy)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("tolls")(tolls)
-    __obj.updateDynamic("tolls_distance")(tolls_distance)
+    val __obj = js.Dynamic.literal(distance = distance, policy = policy, steps = steps, time = time, tolls = tolls, tolls_distance = tolls_distance)
+  
     __obj.asInstanceOf[DriveRoute]
   }
 }

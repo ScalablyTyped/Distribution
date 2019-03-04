@@ -19,11 +19,8 @@ trait NodeRefOffset extends js.Object {
 object NodeRefOffset {
   @scala.inline
   def apply(dataset: js.Any, id: java.lang.String, scrollLeft: scala.Double, scrollTop: scala.Double): NodeRefOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
+    val __obj = js.Dynamic.literal(dataset = dataset, id = id, scrollLeft = scrollLeft, scrollTop = scrollTop)
+  
     __obj.asInstanceOf[NodeRefOffset]
   }
 }

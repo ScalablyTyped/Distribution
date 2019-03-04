@@ -29,12 +29,8 @@ object LocalBaseBlock {
     valueBeforeDecode: stdLib.ArrayBuffer,
     warnings: js.Array[java.lang.String]
   ): LocalBaseBlock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockLength")(blockLength)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode)
-    __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(blockLength = blockLength, error = error, toJSON = toJSON, valueBeforeDecode = valueBeforeDecode, warnings = warnings)
+  
     __obj.asInstanceOf[LocalBaseBlock]
   }
 }

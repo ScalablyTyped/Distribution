@@ -12,8 +12,8 @@ trait ILightsApiResponse extends js.Object {
 object ILightsApiResponse {
   @scala.inline
   def apply(lights: js.Array[ILight]): ILightsApiResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lights")(lights)
+    val __obj = js.Dynamic.literal(lights = lights)
+  
     __obj.asInstanceOf[ILightsApiResponse]
   }
 }

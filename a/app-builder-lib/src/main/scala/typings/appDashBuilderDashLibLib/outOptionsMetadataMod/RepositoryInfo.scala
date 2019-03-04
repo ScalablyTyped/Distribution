@@ -12,8 +12,8 @@ trait RepositoryInfo extends js.Object {
 object RepositoryInfo {
   @scala.inline
   def apply(url: java.lang.String): RepositoryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[RepositoryInfo]
   }
 }

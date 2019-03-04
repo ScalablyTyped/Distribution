@@ -97,25 +97,8 @@ object ChangedEvent {
     redo: js.Function0[scala.Unit],
     undo: js.Function0[scala.Unit]
   ): ChangedEvent = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("canRedo")(canRedo)
-    __obj.updateDynamic("canUndo")(canUndo)
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("getParam")(getParam)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("isTransactionFinished")(isTransactionFinished)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("modelChange")(modelChange)
-    __obj.updateDynamic("newParam")(newParam)
-    __obj.updateDynamic("newValue")(newValue)
-    __obj.updateDynamic("oldParam")(oldParam)
-    __obj.updateDynamic("oldValue")(oldValue)
-    __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
-    __obj.updateDynamic("redo")(redo)
-    __obj.updateDynamic("undo")(undo)
+    val __obj = js.Dynamic.literal(canRedo = canRedo, canUndo = canUndo, change = change, clear = clear, copy = copy, diagram = diagram, getParam = getParam, getValue = getValue, isTransactionFinished = isTransactionFinished, model = model, modelChange = modelChange, newParam = newParam, newValue = newValue, oldParam = oldParam, oldValue = oldValue, propertyName = propertyName.asInstanceOf[js.Any], redo = redo, undo = undo)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ChangedEvent]
   }
 }

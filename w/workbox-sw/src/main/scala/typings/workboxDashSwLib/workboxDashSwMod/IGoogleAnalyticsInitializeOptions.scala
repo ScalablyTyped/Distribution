@@ -32,10 +32,8 @@ object IGoogleAnalyticsInitializeOptions {
     hitFilter: js.Function1[stdLib.URLSearchParams, scala.Unit],
     parameterOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): IGoogleAnalyticsInitializeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("hitFilter")(hitFilter)
-    __obj.updateDynamic("parameterOverrides")(parameterOverrides)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, hitFilter = hitFilter, parameterOverrides = parameterOverrides)
+  
     __obj.asInstanceOf[IGoogleAnalyticsInitializeOptions]
   }
 }

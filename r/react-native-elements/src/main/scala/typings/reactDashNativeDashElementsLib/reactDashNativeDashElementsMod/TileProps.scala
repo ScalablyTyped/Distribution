@@ -113,8 +113,7 @@ object TileProps {
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     width: scala.Int | scala.Double = null
   ): TileProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageSrc")(imageSrc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
     if (ImageComponent != null) __obj.updateDynamic("ImageComponent")(ImageComponent)
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption)

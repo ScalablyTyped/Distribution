@@ -14,8 +14,8 @@ trait XFunctionsSupplier extends js.Object {
 object XFunctionsSupplier {
   @scala.inline
   def apply(Functions: XFunctions): XFunctionsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Functions")(Functions)
+    val __obj = js.Dynamic.literal(Functions = Functions)
+  
     __obj.asInstanceOf[XFunctionsSupplier]
   }
 }

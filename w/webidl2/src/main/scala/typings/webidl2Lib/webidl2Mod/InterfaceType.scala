@@ -29,11 +29,8 @@ object InterfaceType {
     `type`: webidl2Lib.webidl2LibStrings.interface | (webidl2Lib.webidl2LibStrings.`callback interface`),
     inheritance: java.lang.String = null
   ): InterfaceType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partial")(partial)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, members = members, name = name, partial = partial)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance)
     __obj.asInstanceOf[InterfaceType]
   }

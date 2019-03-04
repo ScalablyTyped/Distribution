@@ -18,8 +18,8 @@ object AccountSummariesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AccountSummaries]
     ]
   ): AccountSummariesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[AccountSummariesResource]
   }
 }

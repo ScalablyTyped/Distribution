@@ -51,15 +51,8 @@ object sizeClassBreaksRendererResult {
     renderer: ClassBreaksRenderer,
     sizeScheme: SizeScheme
   ): sizeClassBreaksRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("classBreaksResult")(classBreaksResult)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("sizeScheme")(sizeScheme)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaksResult = classBreaksResult, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, sizeScheme = sizeScheme)
+  
     __obj.asInstanceOf[sizeClassBreaksRendererResult]
   }
 }

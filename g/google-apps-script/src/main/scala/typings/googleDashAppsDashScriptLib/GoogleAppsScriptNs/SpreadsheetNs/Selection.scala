@@ -22,12 +22,8 @@ object Selection {
     getCurrentCell: js.Function0[Range],
     getNextDataRange: js.Function1[Direction, Range]
   ): Selection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActiveRange")(getActiveRange)
-    __obj.updateDynamic("getActiveRangeList")(getActiveRangeList)
-    __obj.updateDynamic("getActiveSheet")(getActiveSheet)
-    __obj.updateDynamic("getCurrentCell")(getCurrentCell)
-    __obj.updateDynamic("getNextDataRange")(getNextDataRange)
+    val __obj = js.Dynamic.literal(getActiveRange = getActiveRange, getActiveRangeList = getActiveRangeList, getActiveSheet = getActiveSheet, getCurrentCell = getCurrentCell, getNextDataRange = getNextDataRange)
+  
     __obj.asInstanceOf[Selection]
   }
 }

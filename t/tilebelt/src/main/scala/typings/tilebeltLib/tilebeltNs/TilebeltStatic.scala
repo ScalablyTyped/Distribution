@@ -189,20 +189,8 @@ object TilebeltStatic {
     tileToQuadkey: js.Function1[js.Array[scala.Double], java.lang.String],
     tilesEqual: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Boolean]
   ): TilebeltStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bboxToTile")(bboxToTile)
-    __obj.updateDynamic("getChildren")(getChildren)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getSiblings")(getSiblings)
-    __obj.updateDynamic("hasSiblings")(hasSiblings)
-    __obj.updateDynamic("hasTile")(hasTile)
-    __obj.updateDynamic("pointToTile")(pointToTile)
-    __obj.updateDynamic("pointToTileFraction")(pointToTileFraction)
-    __obj.updateDynamic("quadkeyToTile")(quadkeyToTile)
-    __obj.updateDynamic("tileToBBOX")(tileToBBOX)
-    __obj.updateDynamic("tileToGeoJSON")(tileToGeoJSON)
-    __obj.updateDynamic("tileToQuadkey")(tileToQuadkey)
-    __obj.updateDynamic("tilesEqual")(tilesEqual)
+    val __obj = js.Dynamic.literal(bboxToTile = bboxToTile, getChildren = getChildren, getParent = getParent, getSiblings = getSiblings, hasSiblings = hasSiblings, hasTile = hasTile, pointToTile = pointToTile, pointToTileFraction = pointToTileFraction, quadkeyToTile = quadkeyToTile, tileToBBOX = tileToBBOX, tileToGeoJSON = tileToGeoJSON, tileToQuadkey = tileToQuadkey, tilesEqual = tilesEqual)
+  
     __obj.asInstanceOf[TilebeltStatic]
   }
 }

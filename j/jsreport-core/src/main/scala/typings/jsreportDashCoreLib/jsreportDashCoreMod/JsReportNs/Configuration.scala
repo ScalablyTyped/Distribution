@@ -30,16 +30,8 @@ object Configuration {
     tasks: stdLib.Partial[jsreportDashCoreLib.Anon_AllowedModulesDedicatedprocess],
     tempDirectory: java.lang.String
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoTempCleanup")(autoTempCleanup)
-    __obj.updateDynamic("dataDirectory")(dataDirectory)
-    __obj.updateDynamic("extensionsLocationCache")(extensionsLocationCache)
-    __obj.updateDynamic("loadConfig")(loadConfig)
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("rootDirectory")(rootDirectory)
-    __obj.updateDynamic("scripts")(scripts)
-    __obj.updateDynamic("tasks")(tasks)
-    __obj.updateDynamic("tempDirectory")(tempDirectory)
+    val __obj = js.Dynamic.literal(autoTempCleanup = autoTempCleanup, dataDirectory = dataDirectory, extensionsLocationCache = extensionsLocationCache, loadConfig = loadConfig, logger = logger, rootDirectory = rootDirectory, scripts = scripts, tasks = tasks, tempDirectory = tempDirectory)
+  
     __obj.asInstanceOf[Configuration]
   }
 }

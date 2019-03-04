@@ -20,10 +20,8 @@ trait IPropertyDialogOptions extends js.Object {
 object IPropertyDialogOptions {
   @scala.inline
   def apply(callback: angularLib.angularMod.Global.Function, editor: java.lang.String, value: js.Object): IPropertyDialogOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(callback = callback, editor = editor, value = value)
+  
     __obj.asInstanceOf[IPropertyDialogOptions]
   }
 }

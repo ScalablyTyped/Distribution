@@ -53,12 +53,7 @@ object IGridChartOptions {
     hideHover: scala.Boolean | AutoAlways = null,
     resize: js.UndefOr[scala.Boolean] = js.undefined
   ): IGridChartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("xkey")(xkey)
-    __obj.updateDynamic("ykeys")(ykeys)
+    val __obj = js.Dynamic.literal(data = data, element = element, labels = labels, xkey = xkey, ykeys = ykeys)
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
     if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)

@@ -68,13 +68,8 @@ object XDragSource {
       scala.Unit
     ]
   ): XDragSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultCursor")(getDefaultCursor)
-    __obj.updateDynamic("isDragImageSupported")(isDragImageSupported)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startDrag")(startDrag)
+    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultCursor = getDefaultCursor, isDragImageSupported = isDragImageSupported, queryInterface = queryInterface, release = release, startDrag = startDrag)
+  
     __obj.asInstanceOf[XDragSource]
   }
 }

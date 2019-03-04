@@ -52,13 +52,8 @@ object CephFSVolumeSource {
     secretRef: LocalObjectReference,
     user: java.lang.String
   ): CephFSVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("monitors")(monitors)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("secretFile")(secretFile)
-    __obj.updateDynamic("secretRef")(secretRef)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(monitors = monitors, path = path, readOnly = readOnly, secretFile = secretFile, secretRef = secretRef, user = user)
+  
     __obj.asInstanceOf[CephFSVolumeSource]
   }
 }

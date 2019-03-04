@@ -45,10 +45,7 @@ object Anon_AltFieldsKeyMachineType {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyMachineType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("machineType")(machineType)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(machineType = machineType, project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

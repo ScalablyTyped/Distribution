@@ -26,14 +26,8 @@ object Anon_Edge {
     version: java.lang.String,
     webkit: scala.Boolean
   ): Anon_Edge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edge")(edge)
-    __obj.updateDynamic("mozilla")(mozilla)
-    __obj.updateDynamic("msie")(msie)
-    __obj.updateDynamic("opera")(opera)
-    __obj.updateDynamic("safari")(safari)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("webkit")(webkit)
+    val __obj = js.Dynamic.literal(edge = edge, mozilla = mozilla, msie = msie, opera = opera, safari = safari, version = version, webkit = webkit)
+  
     __obj.asInstanceOf[Anon_Edge]
   }
 }

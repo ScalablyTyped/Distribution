@@ -56,24 +56,8 @@ object FileContentProvider {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): FileContentProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("compareContentIds")(compareContentIds)
-    __obj.updateDynamic("createContentIdentifier")(createContentIdentifier)
-    __obj.updateDynamic("getFileProviderLocality")(getFileProviderLocality)
-    __obj.updateDynamic("getFileURLFromSystemPath")(getFileURLFromSystemPath)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSystemPathFromFileURL")(getSystemPathFromFileURL)
-    __obj.updateDynamic("queryContent")(queryContent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, compareContentIds = compareContentIds, createContentIdentifier = createContentIdentifier, getFileProviderLocality = getFileProviderLocality, getFileURLFromSystemPath = getFileURLFromSystemPath, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSystemPathFromFileURL = getSystemPathFromFileURL, queryContent = queryContent, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[FileContentProvider]
   }
 }

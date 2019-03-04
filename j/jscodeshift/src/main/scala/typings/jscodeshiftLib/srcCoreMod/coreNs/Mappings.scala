@@ -12,8 +12,8 @@ trait Mappings extends js.Object {
 object Mappings {
   @scala.inline
   def apply(JSXElement: jscodeshiftLib.srcCollectionsJSXElementMod.MappingMethods): Mappings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("JSXElement")(JSXElement)
+    val __obj = js.Dynamic.literal(JSXElement = JSXElement)
+  
     __obj.asInstanceOf[Mappings]
   }
 }

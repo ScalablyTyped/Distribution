@@ -20,11 +20,8 @@ object ServiceTokenProviderConfiguration {
     encryptedClientSecret: java.lang.String,
     tokenEndpoint: java.lang.String
   ): ServiceTokenProviderConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audience")(audience)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("encryptedClientSecret")(encryptedClientSecret)
-    __obj.updateDynamic("tokenEndpoint")(tokenEndpoint)
+    val __obj = js.Dynamic.literal(audience = audience, clientId = clientId, encryptedClientSecret = encryptedClientSecret, tokenEndpoint = tokenEndpoint)
+  
     __obj.asInstanceOf[ServiceTokenProviderConfiguration]
   }
 }

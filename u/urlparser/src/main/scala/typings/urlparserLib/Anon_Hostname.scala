@@ -22,12 +22,8 @@ object Anon_Hostname {
     protocol: java.lang.String,
     username: java.lang.String
   ): Anon_Hostname = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(hostname = hostname, password = password, port = port.asInstanceOf[js.Any], protocol = protocol, username = username)
+  
     __obj.asInstanceOf[Anon_Hostname]
   }
 }

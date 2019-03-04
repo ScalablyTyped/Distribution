@@ -13,8 +13,7 @@ trait IObserverTree extends js.Object {
 object IObserverTree {
   @scala.inline
   def apply(name: java.lang.String, observers: js.Array[IObserverTree] = null): IObserverTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (observers != null) __obj.updateDynamic("observers")(observers)
     __obj.asInstanceOf[IObserverTree]
   }

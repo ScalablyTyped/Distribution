@@ -21,8 +21,8 @@ object Anon_CallbackDetailsSetWallpaper {
       scala.Unit
     ]
   ): Anon_CallbackDetailsSetWallpaper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setWallpaper")(setWallpaper)
+    val __obj = js.Dynamic.literal(setWallpaper = setWallpaper)
+  
     __obj.asInstanceOf[Anon_CallbackDetailsSetWallpaper]
   }
 }

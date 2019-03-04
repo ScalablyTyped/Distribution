@@ -73,8 +73,7 @@ object ToolComponent {
     semanticVersion: java.lang.String = null,
     version: java.lang.String = null
   ): ToolComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (artifactIndex != null) __obj.updateDynamic("artifactIndex")(artifactIndex.asInstanceOf[js.Any])
     if (dottedQuadFileVersion != null) __obj.updateDynamic("dottedQuadFileVersion")(dottedQuadFileVersion)
     if (downloadUri != null) __obj.updateDynamic("downloadUri")(downloadUri)

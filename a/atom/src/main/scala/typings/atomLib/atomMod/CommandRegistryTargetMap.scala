@@ -15,7 +15,8 @@ object CommandRegistryTargetMap {
     `atom-text-editor`: TextEditorElement,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[stdLib.EventTarget] = null
   ): CommandRegistryTargetMap = {
-    val __obj = js.Dynamic.literal(`atom-text-editor` = `atom-text-editor`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("atom-text-editor")(`atom-text-editor`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CommandRegistryTargetMap]
   }

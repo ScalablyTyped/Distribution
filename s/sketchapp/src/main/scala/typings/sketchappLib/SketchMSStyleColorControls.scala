@@ -26,13 +26,7 @@ object SketchMSStyleColorControls {
     saturation: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSStyleColorControls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("brightness")(brightness)
-    __obj.updateDynamic("contrast")(contrast)
-    __obj.updateDynamic("hue")(hue)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("saturation")(saturation)
+    val __obj = js.Dynamic.literal(_class = _class, brightness = brightness, contrast = contrast, hue = hue, isEnabled = isEnabled, saturation = saturation)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyleColorControls]
   }

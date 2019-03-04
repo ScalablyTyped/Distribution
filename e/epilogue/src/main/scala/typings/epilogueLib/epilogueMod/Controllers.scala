@@ -24,13 +24,8 @@ object Controllers {
     read: ReadController,
     update: UpdateController
   ): Controllers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(base = base, create = create, delete = delete, list = list, read = read, update = update)
+  
     __obj.asInstanceOf[Controllers]
   }
 }

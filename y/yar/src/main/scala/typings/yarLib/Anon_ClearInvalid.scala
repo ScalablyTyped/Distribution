@@ -79,8 +79,7 @@ object Anon_ClearInvalid {
     path: java.lang.String = null,
     ttl: scala.Int | scala.Double = null
   ): Anon_ClearInvalid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(password = password)
     if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
     if (customSessionIDGenerator != null) __obj.updateDynamic("customSessionIDGenerator")(customSessionIDGenerator)
     if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)

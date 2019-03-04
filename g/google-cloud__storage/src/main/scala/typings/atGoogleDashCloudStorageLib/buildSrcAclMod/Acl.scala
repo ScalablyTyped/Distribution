@@ -65,7 +65,7 @@ class Acl protected () extends AclRoleAccessorMethods {
     *
     * @private
     */
-  def `makeAclObject_`(accessControlObject: AccessControlObject): AccessControlObject = js.native
+  def makeAclObject_(accessControlObject: AccessControlObject): AccessControlObject = js.native
   /**
     * Patch requests up to the bucket's request object.
     *
@@ -81,7 +81,7 @@ class Acl protected () extends AclRoleAccessorMethods {
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
   ): scala.Unit = js.native
-  def `request_`(
+  def request_(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
   ): scala.Unit = js.native

@@ -20,11 +20,8 @@ object Anon_3ChannelsHcg {
     labels: colorDashConvertLib.colorDashConvertLibStrings.hwb,
     rgb: js.Function1[colorDashConvertLib.conversionsMod.HWB, colorDashConvertLib.conversionsMod.RGB]
   ): Anon_3ChannelsHcg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("hcg")(hcg)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(channels = channels, hcg = hcg, labels = labels, rgb = rgb)
+  
     __obj.asInstanceOf[Anon_3ChannelsHcg]
   }
 }

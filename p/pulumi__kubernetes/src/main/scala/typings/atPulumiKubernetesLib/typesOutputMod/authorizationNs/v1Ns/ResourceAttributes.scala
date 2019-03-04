@@ -56,14 +56,8 @@ object ResourceAttributes {
     verb: java.lang.String,
     version: java.lang.String
   ): ResourceAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("subresource")(subresource)
-    __obj.updateDynamic("verb")(verb)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(group = group, name = name, namespace = namespace, resource = resource, subresource = subresource, verb = verb, version = version)
+  
     __obj.asInstanceOf[ResourceAttributes]
   }
 }

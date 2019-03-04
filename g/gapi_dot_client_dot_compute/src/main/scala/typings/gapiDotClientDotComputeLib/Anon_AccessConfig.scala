@@ -63,12 +63,7 @@ object Anon_AccessConfig {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccessConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessConfig")(accessConfig)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("networkInterface")(networkInterface)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(accessConfig = accessConfig, instance = instance, networkInterface = networkInterface, project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

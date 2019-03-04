@@ -28,15 +28,8 @@ object RESTAPIRequest {
     queryString: java.lang.String,
     url: java.lang.String
   ): RESTAPIRequest[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("getHeader")(getHeader)
-    __obj.updateDynamic("getSupportedResponseContentTypes")(getSupportedResponseContentTypes)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("pathParams")(pathParams)
-    __obj.updateDynamic("queryParams")(queryParams)
-    __obj.updateDynamic("queryString")(queryString)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, getHeader = getHeader, getSupportedResponseContentTypes = getSupportedResponseContentTypes, headers = headers, pathParams = pathParams, queryParams = queryParams, queryString = queryString, url = url)
+  
     __obj.asInstanceOf[RESTAPIRequest[T]]
   }
 }

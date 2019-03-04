@@ -12,8 +12,8 @@ trait MethodOverrideOptions extends js.Object {
 object MethodOverrideOptions {
   @scala.inline
   def apply(methods: js.Array[java.lang.String]): MethodOverrideOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("methods")(methods)
+    val __obj = js.Dynamic.literal(methods = methods)
+  
     __obj.asInstanceOf[MethodOverrideOptions]
   }
 }

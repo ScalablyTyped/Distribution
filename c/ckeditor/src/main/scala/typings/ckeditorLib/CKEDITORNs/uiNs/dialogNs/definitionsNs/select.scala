@@ -22,9 +22,7 @@ object select {
     size: scala.Int | scala.Double = null,
     validate: js.Function0[scala.Boolean] = null
   ): select = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(default = default, items = items)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate)

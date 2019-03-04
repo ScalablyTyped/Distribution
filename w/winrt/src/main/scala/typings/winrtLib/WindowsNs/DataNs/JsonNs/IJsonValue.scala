@@ -26,14 +26,8 @@ object IJsonValue {
     stringify: js.Function0[java.lang.String],
     valueType: JsonValueType
   ): IJsonValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getArray")(getArray)
-    __obj.updateDynamic("getBoolean")(getBoolean)
-    __obj.updateDynamic("getNumber")(getNumber)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("stringify")(stringify)
-    __obj.updateDynamic("valueType")(valueType)
+    val __obj = js.Dynamic.literal(getArray = getArray, getBoolean = getBoolean, getNumber = getNumber, getObject = getObject, getString = getString, stringify = stringify, valueType = valueType)
+  
     __obj.asInstanceOf[IJsonValue]
   }
 }

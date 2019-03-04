@@ -37,13 +37,8 @@ object ClosestFacilityParametersAttributeParameterValues {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     value: java.lang.String
   ): ClosestFacilityParametersAttributeParameterValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("parameterName")(parameterName)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(attributeName = attributeName, constructor = constructor, hasOwnProperty = hasOwnProperty, parameterName = parameterName, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
     __obj.asInstanceOf[ClosestFacilityParametersAttributeParameterValues]
   }
 }

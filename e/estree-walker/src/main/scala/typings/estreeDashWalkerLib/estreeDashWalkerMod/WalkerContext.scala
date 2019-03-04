@@ -12,8 +12,8 @@ trait WalkerContext extends js.Object {
 object WalkerContext {
   @scala.inline
   def apply(skip: js.Function0[scala.Unit]): WalkerContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("skip")(skip)
+    val __obj = js.Dynamic.literal(skip = skip)
+  
     __obj.asInstanceOf[WalkerContext]
   }
 }

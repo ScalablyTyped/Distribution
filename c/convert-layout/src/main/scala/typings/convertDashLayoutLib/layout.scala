@@ -16,9 +16,8 @@ object layout {
     fromEn: js.Function1[java.lang.String, java.lang.String],
     toEn: js.Function1[java.lang.String, java.lang.String]
   ): layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromEn")(fromEn)
-    __obj.updateDynamic("toEn")(toEn)
+    val __obj = js.Dynamic.literal(fromEn = fromEn, toEn = toEn)
+  
     __obj.asInstanceOf[layout]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_AutomaticallyAfterDays extends js.Object {
 object Anon_AutomaticallyAfterDays {
   @scala.inline
   def apply(automaticallyAfterDays: scala.Double): Anon_AutomaticallyAfterDays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automaticallyAfterDays")(automaticallyAfterDays)
+    val __obj = js.Dynamic.literal(automaticallyAfterDays = automaticallyAfterDays)
+  
     __obj.asInstanceOf[Anon_AutomaticallyAfterDays]
   }
 }

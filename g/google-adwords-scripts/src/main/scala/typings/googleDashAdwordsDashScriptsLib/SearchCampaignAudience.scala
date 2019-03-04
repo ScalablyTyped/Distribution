@@ -23,15 +23,8 @@ object SearchCampaignAudience {
     isPaused: js.Function0[scala.Boolean],
     remove: js.Function0[scala.Unit]
   ): SearchCampaignAudience = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bidding")(bidding)
-    __obj.updateDynamic("getAudienceId")(getAudienceId)
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isPaused")(isPaused)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(bidding = bidding, getAudienceId = getAudienceId, getCampaign = getCampaign, getId = getId, getName = getName, isEnabled = isEnabled, isPaused = isPaused, remove = remove)
+  
     __obj.asInstanceOf[SearchCampaignAudience]
   }
 }

@@ -41,12 +41,8 @@ object ScrollBar {
     setInnerHeight: js.Function1[scala.Double, scala.Unit],
     setScrollTop: js.Function1[scala.Double, scala.Unit]
   ): ScrollBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setInnerHeight")(setInnerHeight)
-    __obj.updateDynamic("setScrollTop")(setScrollTop)
+    val __obj = js.Dynamic.literal(getWidth = getWidth, onScroll = onScroll, setHeight = setHeight, setInnerHeight = setInnerHeight, setScrollTop = setScrollTop)
+  
     __obj.asInstanceOf[ScrollBar]
   }
 }

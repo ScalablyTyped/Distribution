@@ -41,13 +41,8 @@ object XViewDataSupplier {
     release: js.Function0[scala.Unit],
     setViewData: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit]
   ): XViewDataSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ViewData")(ViewData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getViewData")(getViewData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setViewData")(setViewData)
+    val __obj = js.Dynamic.literal(ViewData = ViewData, acquire = acquire, getViewData = getViewData, queryInterface = queryInterface, release = release, setViewData = setViewData)
+  
     __obj.asInstanceOf[XViewDataSupplier]
   }
 }

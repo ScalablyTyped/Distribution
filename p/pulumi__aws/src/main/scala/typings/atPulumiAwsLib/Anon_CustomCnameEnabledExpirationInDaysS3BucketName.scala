@@ -20,11 +20,8 @@ object Anon_CustomCnameEnabledExpirationInDaysS3BucketName {
     expirationInDays: scala.Double,
     s3BucketName: java.lang.String
   ): Anon_CustomCnameEnabledExpirationInDaysS3BucketName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customCname")(customCname)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("expirationInDays")(expirationInDays)
-    __obj.updateDynamic("s3BucketName")(s3BucketName)
+    val __obj = js.Dynamic.literal(customCname = customCname, enabled = enabled, expirationInDays = expirationInDays, s3BucketName = s3BucketName)
+  
     __obj.asInstanceOf[Anon_CustomCnameEnabledExpirationInDaysS3BucketName]
   }
 }

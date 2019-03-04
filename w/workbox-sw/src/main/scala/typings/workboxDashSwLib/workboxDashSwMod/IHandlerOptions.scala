@@ -21,10 +21,8 @@ object IHandlerOptions {
     params: stdLib.URLSearchParams,
     url: java.lang.String
   ): IHandlerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(event = event, params = params, url = url)
+  
     __obj.asInstanceOf[IHandlerOptions]
   }
 }

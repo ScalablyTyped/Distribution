@@ -23,8 +23,7 @@ object IUsageRecordSummariesListOptions {
     limit: scala.Int | scala.Double = null,
     starting_after: java.lang.String = null
   ): IUsageRecordSummariesListOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscription_item")(subscription_item)
+    val __obj = js.Dynamic.literal(subscription_item = subscription_item)
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

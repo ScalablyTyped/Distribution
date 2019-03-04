@@ -26,14 +26,8 @@ object DeleteDocumentResponse {
     found: scala.Boolean,
     result: java.lang.String
   ): DeleteDocumentResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_index")(_index)
-    __obj.updateDynamic("_shards")(_shards)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("_version")(_version)
-    __obj.updateDynamic("found")(found)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _shards = _shards, _type = _type, _version = _version, found = found, result = result)
+  
     __obj.asInstanceOf[DeleteDocumentResponse]
   }
 }

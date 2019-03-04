@@ -16,9 +16,8 @@ object Anon_False {
     hasTwoCNChar: scala.Boolean,
     loading: (antdLib.antdLibNumbers.`false` with scala.Boolean) | (antdLib.antdLibNumbers.`true` with scala.Boolean) | (Anon_DelayNumber with scala.Boolean)
   ): Anon_False = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasTwoCNChar")(hasTwoCNChar)
-    __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasTwoCNChar = hasTwoCNChar, loading = loading.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_False]
   }
 }

@@ -29,15 +29,8 @@ object TypeInfo {
     getType: js.Function0[GraphQLOutputType],
     leave: js.Function1[Node, scala.Unit]
   ): TypeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enter")(enter)
-    __obj.updateDynamic("getArgument")(getArgument)
-    __obj.updateDynamic("getDirective")(getDirective)
-    __obj.updateDynamic("getFieldDef")(getFieldDef)
-    __obj.updateDynamic("getInputType")(getInputType)
-    __obj.updateDynamic("getParentType")(getParentType)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("leave")(leave)
+    val __obj = js.Dynamic.literal(enter = enter, getArgument = getArgument, getDirective = getDirective, getFieldDef = getFieldDef, getInputType = getInputType, getParentType = getParentType, getType = getType, leave = leave)
+  
     __obj.asInstanceOf[TypeInfo]
   }
 }

@@ -30,9 +30,7 @@ object RefreshIndicatorProps {
     status: materialDashUiLib.materialDashUiLibStrings.ready | materialDashUiLib.materialDashUiLibStrings.loading | materialDashUiLib.materialDashUiLibStrings.hide = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): RefreshIndicatorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(left = left, top = top)
     if (color != null) __obj.updateDynamic("color")(color)
     if (loadingColor != null) __obj.updateDynamic("loadingColor")(loadingColor)
     if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])

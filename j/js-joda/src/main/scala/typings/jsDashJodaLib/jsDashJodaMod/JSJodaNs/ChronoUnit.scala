@@ -22,16 +22,8 @@ object ChronoUnit {
     isTimeBased: js.Function0[scala.Boolean],
     toString: js.Function0[java.lang.String]
   ): ChronoUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTo")(addTo)
-    __obj.updateDynamic("between")(between)
-    __obj.updateDynamic("compareTo")(compareTo)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("isDateBased")(isDateBased)
-    __obj.updateDynamic("isDurationEstimated")(isDurationEstimated)
-    __obj.updateDynamic("isSupportedBy")(isSupportedBy)
-    __obj.updateDynamic("isTimeBased")(isTimeBased)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(addTo = addTo, between = between, compareTo = compareTo, duration = duration, isDateBased = isDateBased, isDurationEstimated = isDurationEstimated, isSupportedBy = isSupportedBy, isTimeBased = isTimeBased, toString = toString)
+  
     __obj.asInstanceOf[ChronoUnit]
   }
 }

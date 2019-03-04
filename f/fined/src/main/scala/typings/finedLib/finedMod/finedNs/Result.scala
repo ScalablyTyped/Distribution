@@ -16,9 +16,8 @@ object Result {
     extension: java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String],
     path: java.lang.String
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], path = path)
+  
     __obj.asInstanceOf[Result]
   }
 }

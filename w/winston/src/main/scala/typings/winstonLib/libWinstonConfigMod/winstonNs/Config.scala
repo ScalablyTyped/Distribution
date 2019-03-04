@@ -22,12 +22,8 @@ object Config {
     npm: winstonLib.Anon_ColorsLevels,
     syslog: winstonLib.Anon_ColorsLevelsSyslogConfigSetColors
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addColors")(addColors)
-    __obj.updateDynamic("allColors")(allColors)
-    __obj.updateDynamic("cli")(cli)
-    __obj.updateDynamic("npm")(npm)
-    __obj.updateDynamic("syslog")(syslog)
+    val __obj = js.Dynamic.literal(addColors = addColors, allColors = allColors, cli = cli, npm = npm, syslog = syslog)
+  
     __obj.asInstanceOf[Config]
   }
 }

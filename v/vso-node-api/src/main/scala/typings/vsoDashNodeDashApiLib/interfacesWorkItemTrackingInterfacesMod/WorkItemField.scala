@@ -64,18 +64,8 @@ object WorkItemField {
     url: java.lang.String,
     usage: FieldUsage
   ): WorkItemField = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isIdentity")(isIdentity)
-    __obj.updateDynamic("isPicklist")(isPicklist)
-    __obj.updateDynamic("isPicklistSuggested")(isPicklistSuggested)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("supportedOperations")(supportedOperations)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(_links = _links, description = description, isIdentity = isIdentity, isPicklist = isPicklist, isPicklistSuggested = isPicklistSuggested, name = name, readOnly = readOnly, referenceName = referenceName, supportedOperations = supportedOperations, url = url, usage = usage)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorkItemField]
   }
 }

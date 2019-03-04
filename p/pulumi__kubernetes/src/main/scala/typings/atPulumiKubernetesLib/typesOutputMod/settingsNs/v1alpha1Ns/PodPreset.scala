@@ -35,11 +35,8 @@ object PodPreset {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     spec: PodPresetSpec
   ): PodPreset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("spec")(spec)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec)
+  
     __obj.asInstanceOf[PodPreset]
   }
 }

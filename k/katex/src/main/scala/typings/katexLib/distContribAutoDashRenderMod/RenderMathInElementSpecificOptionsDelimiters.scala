@@ -23,10 +23,8 @@ trait RenderMathInElementSpecificOptionsDelimiters extends js.Object {
 object RenderMathInElementSpecificOptionsDelimiters {
   @scala.inline
   def apply(display: scala.Boolean, left: java.lang.String, right: java.lang.String): RenderMathInElementSpecificOptionsDelimiters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("display")(display)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(display = display, left = left, right = right)
+  
     __obj.asInstanceOf[RenderMathInElementSpecificOptionsDelimiters]
   }
 }

@@ -29,9 +29,8 @@ object Anon_Destroy {
       scala.Unit
     ]
   ): Anon_Destroy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(destroy = destroy, write = write)
+  
     __obj.asInstanceOf[Anon_Destroy]
   }
 }

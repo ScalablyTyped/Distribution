@@ -15,9 +15,8 @@ trait RemoteInfo extends js.Object {
 object RemoteInfo {
   @scala.inline
   def apply(ip: java.lang.String, port: scala.Double): RemoteInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(ip = ip, port = port)
+  
     __obj.asInstanceOf[RemoteInfo]
   }
 }

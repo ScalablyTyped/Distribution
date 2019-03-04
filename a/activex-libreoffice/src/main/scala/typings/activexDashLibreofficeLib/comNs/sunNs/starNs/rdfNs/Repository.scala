@@ -53,20 +53,8 @@ object Repository {
     ],
     querySelect: js.Function1[java.lang.String, XQuerySelectResult]
   ): Repository = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GraphNames")(GraphNames)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createBlankNode")(createBlankNode)
-    __obj.updateDynamic("createGraph")(createGraph)
-    __obj.updateDynamic("destroyGraph")(destroyGraph)
-    __obj.updateDynamic("exportGraph")(exportGraph)
-    __obj.updateDynamic("getGraph")(getGraph)
-    __obj.updateDynamic("getGraphNames")(getGraphNames)
-    __obj.updateDynamic("getStatements")(getStatements)
-    __obj.updateDynamic("importGraph")(importGraph)
-    __obj.updateDynamic("queryAsk")(queryAsk)
-    __obj.updateDynamic("queryConstruct")(queryConstruct)
-    __obj.updateDynamic("querySelect")(querySelect)
+    val __obj = js.Dynamic.literal(GraphNames = GraphNames, create = create, createBlankNode = createBlankNode, createGraph = createGraph, destroyGraph = destroyGraph, exportGraph = exportGraph, getGraph = getGraph, getGraphNames = getGraphNames, getStatements = getStatements, importGraph = importGraph, queryAsk = queryAsk, queryConstruct = queryConstruct, querySelect = querySelect)
+  
     __obj.asInstanceOf[Repository]
   }
 }

@@ -20,10 +20,7 @@ object AbortError {
     originalError: stdLib.Error,
     stack: java.lang.String = null
   ): AbortError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("originalError")(originalError)
+    val __obj = js.Dynamic.literal(message = message, name = name, originalError = originalError)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[AbortError]
   }

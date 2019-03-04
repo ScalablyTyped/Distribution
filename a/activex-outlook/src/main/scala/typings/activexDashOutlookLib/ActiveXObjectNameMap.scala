@@ -52,8 +52,27 @@ object ActiveXObjectNameMap {
     `Outlook.OlkTimeZone`: activexDashOutlookLib.OutlookNs.OlkTimeZoneControl,
     `RECIP.RecipCtl`: activexDashOutlookLib.OutlookNs._RecipientControl
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`DOCSITE.DocSiteControl` = `DOCSITE.DocSiteControl`, `Outlook.Application` = `Outlook.Application`, `Outlook.OlkBusinessCardControl` = `Outlook.OlkBusinessCardControl`, `Outlook.OlkCategoryStrip` = `Outlook.OlkCategoryStrip`, `Outlook.OlkCheckBox` = `Outlook.OlkCheckBox`, `Outlook.OlkComboBox` = `Outlook.OlkComboBox`, `Outlook.OlkCommandButton` = `Outlook.OlkCommandButton`, `Outlook.OlkContactPhoto` = `Outlook.OlkContactPhoto`, `Outlook.OlkDateControl` = `Outlook.OlkDateControl`, `Outlook.OlkFrameHeader` = `Outlook.OlkFrameHeader`, `Outlook.OlkInfoBar` = `Outlook.OlkInfoBar`, `Outlook.OlkLabel` = `Outlook.OlkLabel`, `Outlook.OlkListBox` = `Outlook.OlkListBox`, `Outlook.OlkOptionButton` = `Outlook.OlkOptionButton`, `Outlook.OlkPageControl` = `Outlook.OlkPageControl`, `Outlook.OlkSenderPhoto` = `Outlook.OlkSenderPhoto`, `Outlook.OlkTextBox` = `Outlook.OlkTextBox`, `Outlook.OlkTimeControl` = `Outlook.OlkTimeControl`, `Outlook.OlkTimeZone` = `Outlook.OlkTimeZone`, `RECIP.RecipCtl` = `RECIP.RecipCtl`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DOCSITE.DocSiteControl")(`DOCSITE.DocSiteControl`)
+    __obj.updateDynamic("Outlook.Application")(`Outlook.Application`)
+    __obj.updateDynamic("Outlook.OlkBusinessCardControl")(`Outlook.OlkBusinessCardControl`)
+    __obj.updateDynamic("Outlook.OlkCategoryStrip")(`Outlook.OlkCategoryStrip`)
+    __obj.updateDynamic("Outlook.OlkCheckBox")(`Outlook.OlkCheckBox`)
+    __obj.updateDynamic("Outlook.OlkComboBox")(`Outlook.OlkComboBox`)
+    __obj.updateDynamic("Outlook.OlkCommandButton")(`Outlook.OlkCommandButton`)
+    __obj.updateDynamic("Outlook.OlkContactPhoto")(`Outlook.OlkContactPhoto`)
+    __obj.updateDynamic("Outlook.OlkDateControl")(`Outlook.OlkDateControl`)
+    __obj.updateDynamic("Outlook.OlkFrameHeader")(`Outlook.OlkFrameHeader`)
+    __obj.updateDynamic("Outlook.OlkInfoBar")(`Outlook.OlkInfoBar`)
+    __obj.updateDynamic("Outlook.OlkLabel")(`Outlook.OlkLabel`)
+    __obj.updateDynamic("Outlook.OlkListBox")(`Outlook.OlkListBox`)
+    __obj.updateDynamic("Outlook.OlkOptionButton")(`Outlook.OlkOptionButton`)
+    __obj.updateDynamic("Outlook.OlkPageControl")(`Outlook.OlkPageControl`)
+    __obj.updateDynamic("Outlook.OlkSenderPhoto")(`Outlook.OlkSenderPhoto`)
+    __obj.updateDynamic("Outlook.OlkTextBox")(`Outlook.OlkTextBox`)
+    __obj.updateDynamic("Outlook.OlkTimeControl")(`Outlook.OlkTimeControl`)
+    __obj.updateDynamic("Outlook.OlkTimeZone")(`Outlook.OlkTimeZone`)
+    __obj.updateDynamic("RECIP.RecipCtl")(`RECIP.RecipCtl`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

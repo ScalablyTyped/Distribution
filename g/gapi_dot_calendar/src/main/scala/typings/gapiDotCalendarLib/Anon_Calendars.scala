@@ -13,8 +13,7 @@ trait Anon_Calendars extends js.Object {
 object Anon_Calendars {
   @scala.inline
   def apply(calendars: js.Array[java.lang.String], errors: js.Array[Anon_Domain] = null): Anon_Calendars = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendars")(calendars)
+    val __obj = js.Dynamic.literal(calendars = calendars)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     __obj.asInstanceOf[Anon_Calendars]
   }

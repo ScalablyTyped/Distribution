@@ -181,8 +181,7 @@ object Options {
     tmpdir: java.lang.String | electronDashPackagerLib.electronDashPackagerLibNumbers.`false` = null,
     win32metadata: Win32Metadata = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
+    val __obj = js.Dynamic.literal(dir = dir)
     if (afterCopy != null) __obj.updateDynamic("afterCopy")(afterCopy)
     if (afterExtract != null) __obj.updateDynamic("afterExtract")(afterExtract)
     if (afterPrune != null) __obj.updateDynamic("afterPrune")(afterPrune)

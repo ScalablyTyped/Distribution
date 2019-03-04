@@ -14,9 +14,8 @@ trait Match extends js.Object {
 object Match {
   @scala.inline
   def apply(index: scala.Double, `match`: java.lang.String, sub: js.Array[java.lang.String]): Match = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("sub")(sub)
+    val __obj = js.Dynamic.literal(index = index, sub = sub)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Match]
   }
 }

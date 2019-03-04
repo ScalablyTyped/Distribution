@@ -36,8 +36,7 @@ object Options {
     startIcon: heremapsLib.HNs.mapNs.Icon = null,
     stopoverIcon: heremapsLib.HNs.mapNs.Icon = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lineStyle = lineStyle.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)
     if (distanceFormatter != null) __obj.updateDynamic("distanceFormatter")(distanceFormatter)
     if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon)

@@ -12,8 +12,8 @@ trait Anon_Path extends js.Object {
 object Anon_Path {
   @scala.inline
   def apply(path: jsoneditorLib.jsoneditorMod.JSONPath): Anon_Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
+  
     __obj.asInstanceOf[Anon_Path]
   }
 }

@@ -14,9 +14,8 @@ trait ocrBankCardResponse extends js.Object {
 object ocrBankCardResponse {
   @scala.inline
   def apply(log_id: java.lang.String, result: baiduDashAppLib.Anon_Bankcardnumber): ocrBankCardResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log_id")(log_id)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(log_id = log_id, result = result)
+  
     __obj.asInstanceOf[ocrBankCardResponse]
   }
 }

@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object ThisExpression {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.ThisExpression): ThisExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ThisExpression]
   }
 }

@@ -24,9 +24,7 @@ object PresentLocalNotificationDetails {
     soundName: java.lang.String = null,
     userInfo: js.Object = null
   ): PresentLocalNotificationDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alertAction")(alertAction)
-    __obj.updateDynamic("alertBody")(alertBody)
+    val __obj = js.Dynamic.literal(alertAction = alertAction, alertBody = alertBody)
     if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category)
     if (soundName != null) __obj.updateDynamic("soundName")(soundName)

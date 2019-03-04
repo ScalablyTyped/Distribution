@@ -26,14 +26,8 @@ object Transaction {
     rollback: js.Function1[neo4jLib.DoneCallback, scala.Unit],
     state: java.lang.String
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("cypher")(cypher)
-    __obj.updateDynamic("expiresAt")(expiresAt)
-    __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    __obj.updateDynamic("renew")(renew)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(commit = commit, cypher = cypher, expiresAt = expiresAt, expiresIn = expiresIn.asInstanceOf[js.Any], renew = renew, rollback = rollback, state = state)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

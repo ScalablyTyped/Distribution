@@ -127,11 +127,7 @@ object ITreeNodeProps {
     ] = null,
     secondaryLabel: java.lang.String | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null
   ): ITreeNodeProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(depth = depth, id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], path = path)
     if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

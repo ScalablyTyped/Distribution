@@ -14,9 +14,7 @@ trait StarterManifest extends js.Object {
 object StarterManifest {
   @scala.inline
   def apply(baseref: java.lang.String, name: java.lang.String, welcome: java.lang.String = null): StarterManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseref")(baseref)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(baseref = baseref, name = name)
     if (welcome != null) __obj.updateDynamic("welcome")(welcome)
     __obj.asInstanceOf[StarterManifest]
   }

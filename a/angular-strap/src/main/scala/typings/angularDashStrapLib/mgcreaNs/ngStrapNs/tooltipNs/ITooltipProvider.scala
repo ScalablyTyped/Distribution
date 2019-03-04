@@ -12,8 +12,8 @@ trait ITooltipProvider extends js.Object {
 object ITooltipProvider {
   @scala.inline
   def apply(defaults: ITooltipOptions): ITooltipProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[ITooltipProvider]
   }
 }

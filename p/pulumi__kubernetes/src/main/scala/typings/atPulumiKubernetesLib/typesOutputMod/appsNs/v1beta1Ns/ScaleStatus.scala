@@ -36,10 +36,8 @@ object ScaleStatus {
     selector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     targetSelector: java.lang.String
   ): ScaleStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replicas")(replicas)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("targetSelector")(targetSelector)
+    val __obj = js.Dynamic.literal(replicas = replicas, selector = selector, targetSelector = targetSelector)
+  
     __obj.asInstanceOf[ScaleStatus]
   }
 }

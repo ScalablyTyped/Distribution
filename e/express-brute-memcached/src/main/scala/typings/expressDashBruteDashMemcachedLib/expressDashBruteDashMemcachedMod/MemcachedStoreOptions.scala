@@ -98,22 +98,8 @@ object MemcachedStoreOptions {
     retry: scala.Double,
     timeout: scala.Double
   ): MemcachedStoreOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("failOverServers")(failOverServers)
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("idle")(idle)
-    __obj.updateDynamic("keyCompression")(keyCompression)
-    __obj.updateDynamic("maxExpiration")(maxExpiration)
-    __obj.updateDynamic("maxKeySize")(maxKeySize)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("poolSize")(poolSize)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("reconnect")(reconnect)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, failOverServers = failOverServers, failures = failures, idle = idle, keyCompression = keyCompression, maxExpiration = maxExpiration, maxKeySize = maxKeySize, maxValue = maxValue, poolSize = poolSize, prefix = prefix, reconnect = reconnect, remove = remove, retries = retries, retry = retry, timeout = timeout)
+  
     __obj.asInstanceOf[MemcachedStoreOptions]
   }
 }

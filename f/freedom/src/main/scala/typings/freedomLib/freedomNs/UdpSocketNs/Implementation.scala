@@ -31,11 +31,8 @@ object Implementation {
       scala.Unit
     ]
   ): Implementation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("sendTo")(sendTo)
+    val __obj = js.Dynamic.literal(bind = bind, destroy = destroy, getInfo = getInfo, sendTo = sendTo)
+  
     __obj.asInstanceOf[Implementation]
   }
 }

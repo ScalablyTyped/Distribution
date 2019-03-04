@@ -38,20 +38,8 @@ object Ray {
     to: js.Tuple2[scala.Double, scala.Double],
     update: js.Function0[scala.Unit]
   ): Ray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("checkCollisionResponse")(checkCollisionResponse)
-    __obj.updateDynamic("collisionGroup")(collisionGroup)
-    __obj.updateDynamic("collisionMask")(collisionMask)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("getAABB")(getAABB)
-    __obj.updateDynamic("intersectBodies")(intersectBodies)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("skipBackfaces")(skipBackfaces)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(callback = callback, checkCollisionResponse = checkCollisionResponse, collisionGroup = collisionGroup, collisionMask = collisionMask, direction = direction, from = from, getAABB = getAABB, intersectBodies = intersectBodies, length = length, mode = mode, skipBackfaces = skipBackfaces, to = to, update = update)
+  
     __obj.asInstanceOf[Ray]
   }
 }

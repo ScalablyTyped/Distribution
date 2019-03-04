@@ -16,9 +16,8 @@ object ApolloProviderProps {
     children: reactLib.reactMod.ReactNs.ReactNode,
     client: apolloDashClientLib.apolloDashClientMod.default[TCache]
   ): ApolloProviderProps[TCache] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], client = client)
+  
     __obj.asInstanceOf[ApolloProviderProps[TCache]]
   }
 }

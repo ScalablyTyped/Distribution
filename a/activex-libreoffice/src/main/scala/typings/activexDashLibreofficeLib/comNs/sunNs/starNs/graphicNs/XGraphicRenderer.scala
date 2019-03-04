@@ -24,11 +24,8 @@ object XGraphicRenderer {
     release: js.Function0[scala.Unit],
     render: js.Function1[XGraphic, scala.Unit]
   ): XGraphicRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, render = render)
+  
     __obj.asInstanceOf[XGraphicRenderer]
   }
 }

@@ -34,17 +34,8 @@ object Anon_Array {
     unknown: scala.Double,
     uri: scala.Double
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("dateTime")(dateTime)
-    __obj.updateDynamic("dictionary")(dictionary)
-    __obj.updateDynamic("double")(double)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("unknown")(unknown)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(array = array, boolean = boolean, dateTime = dateTime, dictionary = dictionary, double = double, guid = guid, integer = integer, string = string, unknown = unknown, uri = uri)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Array]
   }
 }

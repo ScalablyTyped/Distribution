@@ -19,8 +19,8 @@ trait AppointmentsSelectionEventArgs extends ASPxClientEventArgs {
 object AppointmentsSelectionEventArgs {
   @scala.inline
   def apply(appointmentIds: js.Array[java.lang.String]): AppointmentsSelectionEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appointmentIds")(appointmentIds)
+    val __obj = js.Dynamic.literal(appointmentIds = appointmentIds)
+  
     __obj.asInstanceOf[AppointmentsSelectionEventArgs]
   }
 }

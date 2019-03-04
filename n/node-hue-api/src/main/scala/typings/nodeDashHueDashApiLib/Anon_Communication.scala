@@ -20,11 +20,8 @@ object Anon_Communication {
     outgoing: scala.Boolean,
     signedon: scala.Boolean
   ): Anon_Communication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("communication")(communication)
-    __obj.updateDynamic("incoming")(incoming)
-    __obj.updateDynamic("outgoing")(outgoing)
-    __obj.updateDynamic("signedon")(signedon)
+    val __obj = js.Dynamic.literal(communication = communication, incoming = incoming, outgoing = outgoing, signedon = signedon)
+  
     __obj.asInstanceOf[Anon_Communication]
   }
 }

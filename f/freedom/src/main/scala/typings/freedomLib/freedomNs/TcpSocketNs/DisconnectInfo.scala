@@ -13,9 +13,8 @@ trait DisconnectInfo extends js.Object {
 object DisconnectInfo {
   @scala.inline
   def apply(errcode: java.lang.String, message: java.lang.String): DisconnectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errcode")(errcode)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(errcode = errcode, message = message)
+  
     __obj.asInstanceOf[DisconnectInfo]
   }
 }

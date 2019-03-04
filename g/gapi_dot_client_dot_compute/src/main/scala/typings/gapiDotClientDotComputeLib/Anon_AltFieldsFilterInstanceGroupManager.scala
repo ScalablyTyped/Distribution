@@ -53,10 +53,7 @@ object Anon_AltFieldsFilterInstanceGroupManager {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFilterInstanceGroupManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceGroupManager")(instanceGroupManager)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(instanceGroupManager = instanceGroupManager, project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (filter != null) __obj.updateDynamic("filter")(filter)

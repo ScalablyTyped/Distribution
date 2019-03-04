@@ -19,11 +19,8 @@ object ICollection {
     getIterator: js.Function0[IIterator],
     remove: js.Function1[js.Object, ICollection]
   ): ICollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getIterator")(getIterator)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, events = events, getIterator = getIterator, remove = remove)
+  
     __obj.asInstanceOf[ICollection]
   }
 }

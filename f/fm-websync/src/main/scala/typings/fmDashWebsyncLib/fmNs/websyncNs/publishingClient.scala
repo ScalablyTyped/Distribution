@@ -19,9 +19,8 @@ trait publishingClient extends js.Object {
 object publishingClient {
   @scala.inline
   def apply(boundRecords: js.Any, id: java.lang.String): publishingClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundRecords")(boundRecords)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(boundRecords = boundRecords, id = id)
+  
     __obj.asInstanceOf[publishingClient]
   }
 }

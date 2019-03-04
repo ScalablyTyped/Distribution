@@ -23,12 +23,8 @@ object XTransactedObject {
     release: js.Function0[scala.Unit],
     revert: js.Function0[scala.Unit]
   ): XTransactedObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("revert")(revert)
+    val __obj = js.Dynamic.literal(acquire = acquire, commit = commit, queryInterface = queryInterface, release = release, revert = revert)
+  
     __obj.asInstanceOf[XTransactedObject]
   }
 }

@@ -28,15 +28,8 @@ object GCStatistics {
     pauseMS: scala.Double,
     startTime: scala.Double
   ): GCStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("diff")(diff)
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("gctype")(gctype.asInstanceOf[js.Any])
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("pauseMS")(pauseMS)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(after = after, before = before, diff = diff, endTime = endTime, gctype = gctype.asInstanceOf[js.Any], pause = pause, pauseMS = pauseMS, startTime = startTime)
+  
     __obj.asInstanceOf[GCStatistics]
   }
 }

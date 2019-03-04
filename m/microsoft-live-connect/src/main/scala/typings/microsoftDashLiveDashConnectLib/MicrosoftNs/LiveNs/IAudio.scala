@@ -140,29 +140,8 @@ object IAudio {
     updated_time: java.lang.String,
     upload_location: java.lang.String
   ): IAudio = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("album")(album)
-    __obj.updateDynamic("album_artist")(album_artist)
-    __obj.updateDynamic("artist")(artist)
-    __obj.updateDynamic("comments_count")(comments_count)
-    __obj.updateDynamic("comments_enabled")(comments_enabled)
-    __obj.updateDynamic("created_time")(created_time)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("genre")(genre)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_embeddable")(is_embeddable)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent_id")(parent_id)
-    __obj.updateDynamic("picture")(picture)
-    __obj.updateDynamic("shared_with")(shared_with)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updated_time")(updated_time)
-    __obj.updateDynamic("upload_location")(upload_location)
+    val __obj = js.Dynamic.literal(album = album, album_artist = album_artist, artist = artist, comments_count = comments_count, comments_enabled = comments_enabled, created_time = created_time, description = description, duration = duration, from = from, genre = genre, id = id, is_embeddable = is_embeddable, link = link, name = name, parent_id = parent_id, picture = picture, shared_with = shared_with, size = size, source = source, title = title, updated_time = updated_time, upload_location = upload_location)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IAudio]
   }
 }

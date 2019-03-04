@@ -20,11 +20,7 @@ object WinRTError {
     number: scala.Double,
     stack: java.lang.String = null
   ): WinRTError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(description = description, message = message, name = name, number = number)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[WinRTError]
   }

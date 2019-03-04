@@ -42,13 +42,8 @@ object _Impl {
     prompt: java.lang.String,
     submit: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("prompt")(prompt)
-    __obj.updateDynamic("submit")(submit)
+    val __obj = js.Dynamic.literal(field = field, group = group, input = input, message = message, prompt = prompt, submit = submit)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

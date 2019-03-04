@@ -42,10 +42,7 @@ object ConditionCheck {
     ExpressionAttributeValues: ExpressionAttributeValueMap = null,
     ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
   ): ConditionCheck = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConditionExpression")(ConditionExpression)
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(ConditionExpression = ConditionExpression, Key = Key, TableName = TableName)
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
     if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
     if (ReturnValuesOnConditionCheckFailure != null) __obj.updateDynamic("ReturnValuesOnConditionCheckFailure")(ReturnValuesOnConditionCheckFailure.asInstanceOf[js.Any])

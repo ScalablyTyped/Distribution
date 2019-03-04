@@ -27,9 +27,8 @@ object SearchInstance {
       scala.Unit
     ]
   ): SearchInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerSearchQueryRewriter")(registerSearchQueryRewriter)
-    __obj.updateDynamic("registerSearchSuggestionsProvider")(registerSearchSuggestionsProvider)
+    val __obj = js.Dynamic.literal(registerSearchQueryRewriter = registerSearchQueryRewriter, registerSearchSuggestionsProvider = registerSearchSuggestionsProvider)
+  
     __obj.asInstanceOf[SearchInstance]
   }
 }

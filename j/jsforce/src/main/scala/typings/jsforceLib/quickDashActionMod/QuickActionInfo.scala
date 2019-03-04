@@ -19,10 +19,8 @@ trait QuickActionInfo extends js.Object {
 object QuickActionInfo {
   @scala.inline
   def apply(label: java.lang.String, name: java.lang.String, `type`: java.lang.String, urls: js.Object): QuickActionInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(label = label, name = name, urls = urls)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[QuickActionInfo]
   }
 }

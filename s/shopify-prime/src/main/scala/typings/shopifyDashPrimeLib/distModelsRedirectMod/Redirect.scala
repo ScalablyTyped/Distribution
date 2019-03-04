@@ -25,9 +25,7 @@ object Redirect {
     admin_graphql_api_id: java.lang.String = null,
     id: scala.Int | scala.Double = null
   ): Redirect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(path = path, target = target)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirect]

@@ -28,9 +28,8 @@ object JSTreeStaticDefaultsUnique {
     case_sensitive: scala.Boolean,
     duplicate: js.Function2[java.lang.String, scala.Double, java.lang.String]
   ): JSTreeStaticDefaultsUnique = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("case_sensitive")(case_sensitive)
-    __obj.updateDynamic("duplicate")(duplicate)
+    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive, duplicate = duplicate)
+  
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }
 }

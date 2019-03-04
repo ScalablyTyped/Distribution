@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/view/EventRegistration", "ValueEventRegistration")
 @js.native
 class ValueEventRegistration () extends EventRegistration {
-  def this(`callback_`: js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit]) = this()
-  def this(`callback_`: js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit], `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
-  def this(`callback_`: scala.Null, `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
+  def this(callback_ : js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit]) = this()
+  def this(callback_ : js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit], cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
+  def this(callback_ : scala.Null, cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
   /**
     * @param {?function(!DataSnapshot)} callback_
     * @param {?function(Error)} cancelCallback_
     * @param {?Object} context_
     */
-  def this(`callback_`: js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit], `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit], `context_`: js.Object) = this()
-  def this(`callback_`: js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit], `cancelCallback_`: scala.Null, `context_`: js.Object) = this()
-  def this(`callback_`: scala.Null, `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit], `context_`: js.Object) = this()
-  def this(`callback_`: scala.Null, `cancelCallback_`: scala.Null, `context_`: js.Object) = this()
-  var `callback_`: js.Any = js.native
-  var `cancelCallback_`: js.Any = js.native
-  var `context_`: js.Any = js.native
+  def this(callback_ : js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit], cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit], context_ : js.Object) = this()
+  def this(callback_ : js.Function1[/* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, scala.Unit], cancelCallback_ : scala.Null, context_ : js.Object) = this()
+  def this(callback_ : scala.Null, cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit], context_ : js.Object) = this()
+  def this(callback_ : scala.Null, cancelCallback_ : scala.Null, context_ : js.Object) = this()
+  var callback_ : js.Any = js.native
+  var cancelCallback_ : js.Any = js.native
+  var context_ : js.Any = js.native
   /**
     * @param {!Error} error
     * @param {!Path} path

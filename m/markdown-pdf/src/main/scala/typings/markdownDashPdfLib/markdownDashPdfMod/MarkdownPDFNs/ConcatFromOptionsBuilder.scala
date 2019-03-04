@@ -18,9 +18,8 @@ object ConcatFromOptionsBuilder {
     paths: js.Function2[js.Array[java.lang.String], js.Any, ToOptionsBuilder],
     strings: js.Function2[js.Array[java.lang.String], js.Any, ToOptionsBuilder]
   ): ConcatFromOptionsBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paths")(paths)
-    __obj.updateDynamic("strings")(strings)
+    val __obj = js.Dynamic.literal(paths = paths, strings = strings)
+  
     __obj.asInstanceOf[ConcatFromOptionsBuilder]
   }
 }

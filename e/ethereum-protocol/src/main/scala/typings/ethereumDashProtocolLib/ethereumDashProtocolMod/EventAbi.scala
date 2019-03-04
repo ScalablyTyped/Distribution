@@ -20,10 +20,8 @@ object EventAbi {
     name: java.lang.String,
     `type`: AbiType
   ): EventAbi = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("anonymous")(anonymous)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(anonymous = anonymous, inputs = inputs, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EventAbi]
   }
 }

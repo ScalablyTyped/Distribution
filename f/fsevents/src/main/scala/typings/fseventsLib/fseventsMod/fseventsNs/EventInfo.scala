@@ -19,12 +19,8 @@ object EventInfo {
     path: java.lang.String,
     `type`: fseventsLib.fseventsLibStrings.file | fseventsLib.fseventsLibStrings.directory | fseventsLib.fseventsLibStrings.symlink
   ): EventInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(changes = changes, event = event, flags = flags, id = id, path = path)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventInfo]
   }
 }

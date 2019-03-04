@@ -13,9 +13,8 @@ trait Anon_Bordered extends js.Object {
 object Anon_Bordered {
   @scala.inline
   def apply(bordered: scala.Boolean, openAnimation: Anon_Appear): Anon_Bordered = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bordered")(bordered)
-    __obj.updateDynamic("openAnimation")(openAnimation)
+    val __obj = js.Dynamic.literal(bordered = bordered, openAnimation = openAnimation)
+  
     __obj.asInstanceOf[Anon_Bordered]
   }
 }

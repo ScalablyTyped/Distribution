@@ -20,9 +20,7 @@ object DataFormat {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.UndefOr[scala.Boolean] = js.undefined
   ): DataFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], text = text)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     __obj.asInstanceOf[DataFormat]

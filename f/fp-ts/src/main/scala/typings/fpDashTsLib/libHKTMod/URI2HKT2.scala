@@ -38,20 +38,8 @@ object URI2HKT2 {
     Validation: fpDashTsLib.libValidationMod.Validation[L, A],
     Writer: fpDashTsLib.libWriterMod.Writer[L, A]
   ): URI2HKT2[L, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Const")(Const)
-    __obj.updateDynamic("Either")(Either)
-    __obj.updateDynamic("Free")(Free.asInstanceOf[js.Any])
-    __obj.updateDynamic("IOEither")(IOEither)
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Reader")(Reader)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Store")(Store)
-    __obj.updateDynamic("TaskEither")(TaskEither)
-    __obj.updateDynamic("These")(These)
-    __obj.updateDynamic("Tuple")(Tuple)
-    __obj.updateDynamic("Validation")(Validation)
-    __obj.updateDynamic("Writer")(Writer)
+    val __obj = js.Dynamic.literal(Const = Const, Either = Either, Free = Free.asInstanceOf[js.Any], IOEither = IOEither, Map = Map, Reader = Reader, State = State, Store = Store, TaskEither = TaskEither, These = These, Tuple = Tuple, Validation = Validation, Writer = Writer)
+  
     __obj.asInstanceOf[URI2HKT2[L, A]]
   }
 }

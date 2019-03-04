@@ -20,9 +20,8 @@ trait CrossReference extends js.Object {
 object CrossReference {
   @scala.inline
   def apply(Group: java.lang.String, Id: scala.Double): CrossReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Group")(Group)
-    __obj.updateDynamic("Id")(Id)
+    val __obj = js.Dynamic.literal(Group = Group, Id = Id)
+  
     __obj.asInstanceOf[CrossReference]
   }
 }

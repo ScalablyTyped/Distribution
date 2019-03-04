@@ -228,8 +228,7 @@ object VideoProperties {
     useTextureView: js.UndefOr[scala.Boolean] = js.undefined,
     volume: scala.Int | scala.Double = null
   ): VideoProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

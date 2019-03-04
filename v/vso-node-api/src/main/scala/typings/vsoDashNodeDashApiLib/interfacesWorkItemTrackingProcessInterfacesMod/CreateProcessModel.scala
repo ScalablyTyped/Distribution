@@ -32,11 +32,8 @@ object CreateProcessModel {
     parentProcessTypeId: java.lang.String,
     referenceName: java.lang.String
   ): CreateProcessModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentProcessTypeId")(parentProcessTypeId)
-    __obj.updateDynamic("referenceName")(referenceName)
+    val __obj = js.Dynamic.literal(description = description, name = name, parentProcessTypeId = parentProcessTypeId, referenceName = referenceName)
+  
     __obj.asInstanceOf[CreateProcessModel]
   }
 }

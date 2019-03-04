@@ -26,10 +26,8 @@ object UpdateExpression {
     prefix: scala.Boolean,
     `type`: astDashTypesLib.astDashTypesLibStrings.UpdateExpression
   ): UpdateExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(argument = argument, operator = operator.asInstanceOf[js.Any], prefix = prefix)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UpdateExpression]
   }
 }

@@ -18,8 +18,7 @@ object redactOptions {
     censor: java.lang.String = null,
     remove: js.UndefOr[scala.Boolean] = js.undefined
   ): redactOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paths")(paths)
+    val __obj = js.Dynamic.literal(paths = paths)
     if (censor != null) __obj.updateDynamic("censor")(censor)
     if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
     __obj.asInstanceOf[redactOptions]

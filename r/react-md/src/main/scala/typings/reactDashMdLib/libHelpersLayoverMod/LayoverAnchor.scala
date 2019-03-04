@@ -13,9 +13,8 @@ trait LayoverAnchor extends js.Object {
 object LayoverAnchor {
   @scala.inline
   def apply(x: HorizontalAnchors, y: VerticalAnchors): LayoverAnchor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[LayoverAnchor]
   }
 }

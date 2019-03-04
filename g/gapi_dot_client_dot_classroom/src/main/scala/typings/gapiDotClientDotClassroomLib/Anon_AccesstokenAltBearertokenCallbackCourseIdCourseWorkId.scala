@@ -109,9 +109,7 @@ object Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkId {
     upload_protocol: java.lang.String = null,
     userId: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("courseId")(courseId)
-    __obj.updateDynamic("courseWorkId")(courseWorkId)
+    val __obj = js.Dynamic.literal(courseId = courseId, courseWorkId = courseWorkId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

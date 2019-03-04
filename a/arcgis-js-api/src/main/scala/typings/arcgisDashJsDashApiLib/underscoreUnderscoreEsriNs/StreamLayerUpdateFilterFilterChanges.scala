@@ -30,12 +30,8 @@ object StreamLayerUpdateFilterFilterChanges {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     where: java.lang.String
   ): StreamLayerUpdateFilterFilterChanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(constructor = constructor, geometry = geometry, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, where = where)
+  
     __obj.asInstanceOf[StreamLayerUpdateFilterFilterChanges]
   }
 }

@@ -21,9 +21,8 @@ object GeoPointTransform {
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.geopoint,
     as: js.Array[java.lang.String] = null
   ): GeoPointTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("projection")(projection)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], projection = projection)
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as)
     __obj.asInstanceOf[GeoPointTransform]
   }

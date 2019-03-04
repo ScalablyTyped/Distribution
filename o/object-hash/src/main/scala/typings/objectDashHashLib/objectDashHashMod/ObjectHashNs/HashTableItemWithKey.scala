@@ -12,10 +12,8 @@ trait HashTableItemWithKey extends HashTableItem {
 object HashTableItemWithKey {
   @scala.inline
   def apply(count: scala.Double, hash: java.lang.String, value: js.Any): HashTableItemWithKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(count = count, hash = hash, value = value)
+  
     __obj.asInstanceOf[HashTableItemWithKey]
   }
 }

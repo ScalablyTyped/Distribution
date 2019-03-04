@@ -17,9 +17,7 @@ object QueryArrayConfig {
     name: java.lang.String = null,
     values: js.Array[_] = null
   ): QueryArrayConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowMode")(rowMode)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(rowMode = rowMode, text = text)
     if (name != null) __obj.updateDynamic("name")(name)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[QueryArrayConfig]

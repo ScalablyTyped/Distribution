@@ -18,9 +18,7 @@ object Anon_Id {
     source: java.lang.String,
     sourceLayer: java.lang.String = null
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source)
     if (sourceLayer != null) __obj.updateDynamic("sourceLayer")(sourceLayer)
     __obj.asInstanceOf[Anon_Id]
   }

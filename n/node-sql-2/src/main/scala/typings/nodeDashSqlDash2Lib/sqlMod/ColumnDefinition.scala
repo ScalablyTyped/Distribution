@@ -27,8 +27,7 @@ object ColumnDefinition {
     references: nodeDashSqlDash2Lib.Anon_Cascade = null,
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): ColumnDefinition[Name, Type] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataType")(dataType)
+    val __obj = js.Dynamic.literal(dataType = dataType)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (jsType != null) __obj.updateDynamic("jsType")(jsType.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

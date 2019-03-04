@@ -37,12 +37,8 @@ object NotificationEventField {
     path: java.lang.String,
     supportedScopes: js.Array[java.lang.String]
   ): NotificationEventField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldType")(fieldType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("supportedScopes")(supportedScopes)
+    val __obj = js.Dynamic.literal(fieldType = fieldType, id = id, name = name, path = path, supportedScopes = supportedScopes)
+  
     __obj.asInstanceOf[NotificationEventField]
   }
 }

@@ -19,9 +19,8 @@ trait NodeTimer extends js.Object {
 object NodeTimer {
   @scala.inline
   def apply(ref: js.Function0[scala.Unit], unref: js.Function0[scala.Unit]): NodeTimer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("unref")(unref)
+    val __obj = js.Dynamic.literal(ref = ref, unref = unref)
+  
     __obj.asInstanceOf[NodeTimer]
   }
 }

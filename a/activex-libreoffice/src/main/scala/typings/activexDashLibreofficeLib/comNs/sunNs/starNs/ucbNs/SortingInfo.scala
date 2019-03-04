@@ -16,9 +16,8 @@ trait SortingInfo extends js.Object {
 object SortingInfo {
   @scala.inline
   def apply(Ascending: scala.Boolean, PropertyName: java.lang.String): SortingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Ascending")(Ascending)
-    __obj.updateDynamic("PropertyName")(PropertyName)
+    val __obj = js.Dynamic.literal(Ascending = Ascending, PropertyName = PropertyName)
+  
     __obj.asInstanceOf[SortingInfo]
   }
 }

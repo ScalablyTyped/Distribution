@@ -34,8 +34,7 @@ object LoggerOptionsWithWinstonInstance {
     skip: RouteFilter = null,
     statusLevels: expressDashWinstonLib.Anon_Error = null
   ): LoggerOptionsWithWinstonInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("winstonInstance")(winstonInstance)
+    val __obj = js.Dynamic.literal(winstonInstance = winstonInstance)
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
     if (bodyBlacklist != null) __obj.updateDynamic("bodyBlacklist")(bodyBlacklist)
     if (bodyWhitelist != null) __obj.updateDynamic("bodyWhitelist")(bodyWhitelist)

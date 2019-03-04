@@ -55,8 +55,7 @@ object Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("referenceId")(referenceId)
+    val __obj = js.Dynamic.literal(referenceId = referenceId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

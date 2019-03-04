@@ -64,9 +64,8 @@ object CompletionsQuery {
     types: js.UndefOr[scala.Boolean] = js.undefined,
     urls: js.UndefOr[scala.Boolean] = js.undefined
   ): CompletionsQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(caseInsensitive)) __obj.updateDynamic("caseInsensitive")(caseInsensitive)
     if (!js.isUndefined(depths)) __obj.updateDynamic("depths")(depths)
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)

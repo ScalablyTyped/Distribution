@@ -20,8 +20,7 @@ object PublisherAdvertisement {
     key: java.lang.String = null,
     namespace: java.lang.String = null
   ): PublisherAdvertisement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts)
     if (key != null) __obj.updateDynamic("key")(key)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)

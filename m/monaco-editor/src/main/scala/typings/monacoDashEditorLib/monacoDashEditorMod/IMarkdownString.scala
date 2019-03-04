@@ -13,8 +13,7 @@ trait IMarkdownString extends js.Object {
 object IMarkdownString {
   @scala.inline
   def apply(value: java.lang.String, isTrusted: js.UndefOr[scala.Boolean] = js.undefined): IMarkdownString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(isTrusted)) __obj.updateDynamic("isTrusted")(isTrusted)
     __obj.asInstanceOf[IMarkdownString]
   }

@@ -29,10 +29,7 @@ object ParseError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): ParseError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(name = name, statusCode = statusCode, statusMessage = statusMessage)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

@@ -28,14 +28,8 @@ object XModifiable {
     removeModifyListener: js.Function1[XModifyListener, scala.Unit],
     setModified: js.Function1[scala.Boolean, scala.Unit]
   ): XModifiable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("setModified")(setModified)
+    val __obj = js.Dynamic.literal(acquire = acquire, addModifyListener = addModifyListener, isModified = isModified, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, setModified = setModified)
+  
     __obj.asInstanceOf[XModifiable]
   }
 }

@@ -22,11 +22,8 @@ object EnvChannelRequest {
     `val`: java.lang.String,
     wantReply: scala.Boolean
   ): EnvChannelRequest = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("wantReply")(wantReply)
+    val __obj = js.Dynamic.literal(key = key, recipient = recipient, request = request, wantReply = wantReply)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[EnvChannelRequest]
   }
 }

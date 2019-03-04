@@ -55,8 +55,7 @@ object ActiveXObject {
       scala.Unit
     ]
   ): ActiveXObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(on = on)
     __obj.updateDynamic("set")(set_Item)
     __obj.asInstanceOf[ActiveXObject]
   }

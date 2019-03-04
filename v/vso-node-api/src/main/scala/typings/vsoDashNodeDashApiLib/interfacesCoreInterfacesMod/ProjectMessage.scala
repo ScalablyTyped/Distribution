@@ -18,10 +18,8 @@ object ProjectMessage {
     projectChangeType: ProjectChangeType,
     shouldInvalidateSystemStore: scala.Boolean
   ): ProjectMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("projectChangeType")(projectChangeType)
-    __obj.updateDynamic("shouldInvalidateSystemStore")(shouldInvalidateSystemStore)
+    val __obj = js.Dynamic.literal(project = project, projectChangeType = projectChangeType, shouldInvalidateSystemStore = shouldInvalidateSystemStore)
+  
     __obj.asInstanceOf[ProjectMessage]
   }
 }

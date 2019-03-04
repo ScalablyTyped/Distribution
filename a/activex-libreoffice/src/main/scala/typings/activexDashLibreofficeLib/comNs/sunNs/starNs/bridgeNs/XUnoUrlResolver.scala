@@ -24,11 +24,8 @@ object XUnoUrlResolver {
     release: js.Function0[scala.Unit],
     resolve: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
   ): XUnoUrlResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, resolve = resolve)
+  
     __obj.asInstanceOf[XUnoUrlResolver]
   }
 }

@@ -17,10 +17,8 @@ trait PageElementProperties extends js.Object {
 object PageElementProperties {
   @scala.inline
   def apply(page_object_id: java.lang.String, size: Size, transform: AffineTransform): PageElementProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page_object_id")(page_object_id)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(page_object_id = page_object_id, size = size, transform = transform)
+  
     __obj.asInstanceOf[PageElementProperties]
   }
 }

@@ -66,8 +66,8 @@ object Anon_AltBucketFieldsGenerationIfGenerationMatch {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltBucketFieldsGenerationIfGenerationMatch = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
+    __obj.updateDynamic("object")(`object`)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (generation != null) __obj.updateDynamic("generation")(generation)

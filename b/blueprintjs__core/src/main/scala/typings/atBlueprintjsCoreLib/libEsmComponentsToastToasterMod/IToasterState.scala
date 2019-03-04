@@ -12,8 +12,8 @@ trait IToasterState extends js.Object {
 object IToasterState {
   @scala.inline
   def apply(toasts: js.Array[IToastOptions]): IToasterState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toasts")(toasts)
+    val __obj = js.Dynamic.literal(toasts = toasts)
+  
     __obj.asInstanceOf[IToasterState]
   }
 }

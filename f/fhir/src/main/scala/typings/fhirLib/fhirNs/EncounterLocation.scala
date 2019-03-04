@@ -41,8 +41,7 @@ object EncounterLocation {
     period: Period = null,
     status: code = null
   ): EncounterLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(location = location)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_status != null) __obj.updateDynamic("_status")(_status)

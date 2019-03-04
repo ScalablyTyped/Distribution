@@ -12,8 +12,8 @@ trait WindowsAzureStatic extends js.Object {
 object WindowsAzureStatic {
   @scala.inline
   def apply(MobileServiceClient: MobileServiceClient): WindowsAzureStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MobileServiceClient")(MobileServiceClient)
+    val __obj = js.Dynamic.literal(MobileServiceClient = MobileServiceClient)
+  
     __obj.asInstanceOf[WindowsAzureStatic]
   }
 }

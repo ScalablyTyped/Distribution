@@ -26,14 +26,8 @@ object IBackgroundTaskInstance {
     task: BackgroundTaskRegistration,
     triggerDetails: js.Any
   ): IBackgroundTaskInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("oncanceled")(oncanceled)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("suspendedCount")(suspendedCount)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("triggerDetails")(triggerDetails)
+    val __obj = js.Dynamic.literal(getDeferral = getDeferral, instanceId = instanceId, oncanceled = oncanceled, progress = progress, suspendedCount = suspendedCount, task = task, triggerDetails = triggerDetails)
+  
     __obj.asInstanceOf[IBackgroundTaskInstance]
   }
 }

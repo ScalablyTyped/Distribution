@@ -24,13 +24,8 @@ object BankAccountTokenOptions {
     currency: java.lang.String,
     routing_number: java.lang.String
   ): BankAccountTokenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account_holder_name")(account_holder_name)
-    __obj.updateDynamic("account_holder_type")(account_holder_type)
-    __obj.updateDynamic("account_number")(account_number)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("routing_number")(routing_number)
+    val __obj = js.Dynamic.literal(account_holder_name = account_holder_name, account_holder_type = account_holder_type, account_number = account_number, country = country, currency = currency, routing_number = routing_number)
+  
     __obj.asInstanceOf[BankAccountTokenOptions]
   }
 }

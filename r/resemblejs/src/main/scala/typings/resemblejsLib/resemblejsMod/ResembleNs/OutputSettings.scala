@@ -20,11 +20,8 @@ object OutputSettings {
     largeImageThreshold: scala.Double,
     transparency: scala.Double
   ): OutputSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorColor")(errorColor)
-    __obj.updateDynamic("errorType")(errorType)
-    __obj.updateDynamic("largeImageThreshold")(largeImageThreshold)
-    __obj.updateDynamic("transparency")(transparency)
+    val __obj = js.Dynamic.literal(errorColor = errorColor, errorType = errorType, largeImageThreshold = largeImageThreshold, transparency = transparency)
+  
     __obj.asInstanceOf[OutputSettings]
   }
 }

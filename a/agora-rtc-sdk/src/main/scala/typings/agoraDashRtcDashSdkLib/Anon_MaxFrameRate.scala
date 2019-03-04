@@ -14,10 +14,8 @@ trait Anon_MaxFrameRate extends js.Object {
 object Anon_MaxFrameRate {
   @scala.inline
   def apply(maxFrameRate: scala.Double, minFrameRate: scala.Double, resolution: java.lang.String): Anon_MaxFrameRate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxFrameRate")(maxFrameRate)
-    __obj.updateDynamic("minFrameRate")(minFrameRate)
-    __obj.updateDynamic("resolution")(resolution)
+    val __obj = js.Dynamic.literal(maxFrameRate = maxFrameRate, minFrameRate = minFrameRate, resolution = resolution)
+  
     __obj.asInstanceOf[Anon_MaxFrameRate]
   }
 }

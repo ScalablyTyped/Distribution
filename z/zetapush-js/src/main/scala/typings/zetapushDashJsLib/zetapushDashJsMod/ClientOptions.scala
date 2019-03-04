@@ -19,9 +19,7 @@ object ClientOptions {
     resource: java.lang.String = null,
     transports: js.Array[_] = null
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authentication")(authentication)
-    __obj.updateDynamic("sandboxId")(sandboxId)
+    val __obj = js.Dynamic.literal(authentication = authentication, sandboxId = sandboxId)
     if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
     if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps)
     if (resource != null) __obj.updateDynamic("resource")(resource)

@@ -39,9 +39,8 @@ object DeclareInterface {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration = null
   ): DeclareInterface = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(body = body, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
     if (implements != null) __obj.updateDynamic("implements")(implements)

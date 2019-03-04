@@ -32,8 +32,7 @@ object ILockWorkingCopyOptions {
     force: js.UndefOr[scala.Boolean] = js.undefined,
     lockId: java.lang.String = null
   ): ILockWorkingCopyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lockType")(lockType)
+    val __obj = js.Dynamic.literal(lockType = lockType)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     if (lockId != null) __obj.updateDynamic("lockId")(lockId)

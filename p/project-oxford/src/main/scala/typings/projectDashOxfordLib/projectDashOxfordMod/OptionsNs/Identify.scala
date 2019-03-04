@@ -13,9 +13,8 @@ trait Identify extends js.Object {
 object Identify {
   @scala.inline
   def apply(maxNumOfCandidatesReturned: scala.Double, personGroupId: java.lang.String): Identify = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxNumOfCandidatesReturned")(maxNumOfCandidatesReturned)
-    __obj.updateDynamic("personGroupId")(personGroupId)
+    val __obj = js.Dynamic.literal(maxNumOfCandidatesReturned = maxNumOfCandidatesReturned, personGroupId = personGroupId)
+  
     __obj.asInstanceOf[Identify]
   }
 }

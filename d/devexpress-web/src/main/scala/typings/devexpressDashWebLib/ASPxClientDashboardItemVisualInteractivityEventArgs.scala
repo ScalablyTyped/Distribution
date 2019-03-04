@@ -65,16 +65,8 @@ object ASPxClientDashboardItemVisualInteractivityEventArgs {
     SetSelectionMode: js.Function1[java.lang.String, scala.Unit],
     SetTargetAxes: js.Function1[js.Array[java.lang.String], scala.Unit]
   ): ASPxClientDashboardItemVisualInteractivityEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EnableHighlighting")(EnableHighlighting)
-    __obj.updateDynamic("GetDefaultSelection")(GetDefaultSelection)
-    __obj.updateDynamic("GetSelectionMode")(GetSelectionMode)
-    __obj.updateDynamic("GetTargetAxes")(GetTargetAxes)
-    __obj.updateDynamic("IsHighlightingEnabled")(IsHighlightingEnabled)
-    __obj.updateDynamic("ItemName")(ItemName)
-    __obj.updateDynamic("SetDefaultSelection")(SetDefaultSelection)
-    __obj.updateDynamic("SetSelectionMode")(SetSelectionMode)
-    __obj.updateDynamic("SetTargetAxes")(SetTargetAxes)
+    val __obj = js.Dynamic.literal(EnableHighlighting = EnableHighlighting, GetDefaultSelection = GetDefaultSelection, GetSelectionMode = GetSelectionMode, GetTargetAxes = GetTargetAxes, IsHighlightingEnabled = IsHighlightingEnabled, ItemName = ItemName, SetDefaultSelection = SetDefaultSelection, SetSelectionMode = SetSelectionMode, SetTargetAxes = SetTargetAxes)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemVisualInteractivityEventArgs]
   }
 }

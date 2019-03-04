@@ -16,9 +16,8 @@ object Anon_NodeValue {
     node: reactLib.HTMLInputElement,
     value: java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double | scala.Boolean])
   ): Anon_NodeValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(node = node, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_NodeValue]
   }
 }

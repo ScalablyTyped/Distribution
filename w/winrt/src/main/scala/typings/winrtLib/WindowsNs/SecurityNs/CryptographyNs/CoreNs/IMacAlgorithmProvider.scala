@@ -18,10 +18,8 @@ object IMacAlgorithmProvider {
     createKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey],
     macLength: scala.Double
   ): IMacAlgorithmProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithmName")(algorithmName)
-    __obj.updateDynamic("createKey")(createKey)
-    __obj.updateDynamic("macLength")(macLength)
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, createKey = createKey, macLength = macLength)
+  
     __obj.asInstanceOf[IMacAlgorithmProvider]
   }
 }

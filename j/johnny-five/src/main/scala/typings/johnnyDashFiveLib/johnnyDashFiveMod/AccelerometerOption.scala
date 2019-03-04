@@ -12,8 +12,8 @@ trait AccelerometerOption extends js.Object {
 object AccelerometerOption {
   @scala.inline
   def apply(controller: java.lang.String): AccelerometerOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controller")(controller)
+    val __obj = js.Dynamic.literal(controller = controller)
+  
     __obj.asInstanceOf[AccelerometerOption]
   }
 }

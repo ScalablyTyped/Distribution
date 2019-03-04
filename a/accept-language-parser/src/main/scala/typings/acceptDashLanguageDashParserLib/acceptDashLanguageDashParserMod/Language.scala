@@ -20,9 +20,7 @@ object Language {
     region: java.lang.String = null,
     script: java.lang.String = null
   ): Language = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("quality")(quality)
+    val __obj = js.Dynamic.literal(code = code, quality = quality)
     if (region != null) __obj.updateDynamic("region")(region)
     if (script != null) __obj.updateDynamic("script")(script)
     __obj.asInstanceOf[Language]

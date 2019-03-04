@@ -18,10 +18,8 @@ object RenderSuggestionsContainerParams {
     containerProps: reactDashAutosuggestLib.Anon_Id,
     query: java.lang.String
   ): RenderSuggestionsContainerParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("containerProps")(containerProps)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], containerProps = containerProps, query = query)
+  
     __obj.asInstanceOf[RenderSuggestionsContainerParams]
   }
 }

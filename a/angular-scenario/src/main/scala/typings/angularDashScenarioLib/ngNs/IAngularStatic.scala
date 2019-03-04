@@ -12,8 +12,8 @@ trait IAngularStatic extends js.Object {
 object IAngularStatic {
   @scala.inline
   def apply(scenario: js.Any): IAngularStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scenario")(scenario)
+    val __obj = js.Dynamic.literal(scenario = scenario)
+  
     __obj.asInstanceOf[IAngularStatic]
   }
 }

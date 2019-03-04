@@ -28,15 +28,8 @@ object GeocoderViewModel {
     searchText: java.lang.String,
     url: java.lang.String
   ): GeocoderViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("flightDuration")(flightDuration)
-    __obj.updateDynamic("isSearchInProgress")(isSearchInProgress)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("searchText")(searchText)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(complete = complete, flightDuration = flightDuration, isSearchInProgress = isSearchInProgress, key = key, scene = scene, search = search, searchText = searchText, url = url)
+  
     __obj.asInstanceOf[GeocoderViewModel]
   }
 }

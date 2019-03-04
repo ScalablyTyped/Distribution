@@ -90,24 +90,7 @@ object DisplayInfo {
     workArea: Bounds,
     edid: chromeDashAppsLib.Anon_ManufacturerId = null
   ): DisplayInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availableDisplayZoomFactors")(availableDisplayZoomFactors)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("displayZoomFactor")(displayZoomFactor)
-    __obj.updateDynamic("dpiX")(dpiX)
-    __obj.updateDynamic("dpiY")(dpiY)
-    __obj.updateDynamic("hasTouchSupport")(hasTouchSupport)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isInternal")(isInternal)
-    __obj.updateDynamic("isPrimary")(isPrimary)
-    __obj.updateDynamic("mirroringDestinationIds")(mirroringDestinationIds)
-    __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
-    __obj.updateDynamic("modes")(modes)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overscan")(overscan)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("workArea")(workArea)
+    val __obj = js.Dynamic.literal(availableDisplayZoomFactors = availableDisplayZoomFactors, bounds = bounds, displayZoomFactor = displayZoomFactor, dpiX = dpiX, dpiY = dpiY, hasTouchSupport = hasTouchSupport, id = id, isEnabled = isEnabled, isInternal = isInternal, isPrimary = isPrimary, mirroringDestinationIds = mirroringDestinationIds, mirroringSourceId = mirroringSourceId, modes = modes, name = name, overscan = overscan, rotation = rotation, workArea = workArea)
     if (edid != null) __obj.updateDynamic("edid")(edid)
     __obj.asInstanceOf[DisplayInfo]
   }

@@ -31,10 +31,8 @@ trait NodeSelectorRequirement extends js.Object {
 object NodeSelectorRequirement {
   @scala.inline
   def apply(key: java.lang.String, operator: java.lang.String, values: js.Array[java.lang.String]): NodeSelectorRequirement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(key = key, operator = operator, values = values)
+  
     __obj.asInstanceOf[NodeSelectorRequirement]
   }
 }

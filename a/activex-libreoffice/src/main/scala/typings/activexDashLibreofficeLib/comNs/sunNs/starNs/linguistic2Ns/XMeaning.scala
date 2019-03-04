@@ -32,13 +32,8 @@ object XMeaning {
     querySynonyms: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
     release: js.Function0[scala.Unit]
   ): XMeaning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Meaning")(Meaning)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMeaning")(getMeaning)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("querySynonyms")(querySynonyms)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Meaning = Meaning, acquire = acquire, getMeaning = getMeaning, queryInterface = queryInterface, querySynonyms = querySynonyms, release = release)
+  
     __obj.asInstanceOf[XMeaning]
   }
 }

@@ -35,10 +35,8 @@ object ConnectMiddleware {
     ],
     runner: Runner
   ): ConnectMiddleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("middleware")(middleware)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("runner")(runner)
+    val __obj = js.Dynamic.literal(middleware = middleware, register = register, runner = runner)
+  
     __obj.asInstanceOf[ConnectMiddleware]
   }
 }

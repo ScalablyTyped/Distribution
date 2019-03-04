@@ -16,8 +16,7 @@ object VastCompanionTrackingEvents {
     creativeView: js.Array[java.lang.String],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null
   ): VastCompanionTrackingEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creativeView")(creativeView)
+    val __obj = js.Dynamic.literal(creativeView = creativeView)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[VastCompanionTrackingEvents]
   }

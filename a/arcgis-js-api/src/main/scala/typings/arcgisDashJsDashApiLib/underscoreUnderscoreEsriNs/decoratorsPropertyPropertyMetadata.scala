@@ -69,10 +69,7 @@ object decoratorsPropertyPropertyMetadata {
     `type`: js.Function = null,
     value: js.Any = null
   ): decoratorsPropertyPropertyMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (aliasOf != null) __obj.updateDynamic("aliasOf")(aliasOf)
     if (cast != null) __obj.updateDynamic("cast")(cast)
     if (!js.isUndefined(constructOnly)) __obj.updateDynamic("constructOnly")(constructOnly)

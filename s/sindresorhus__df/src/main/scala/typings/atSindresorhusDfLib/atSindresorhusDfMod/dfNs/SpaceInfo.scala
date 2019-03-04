@@ -24,13 +24,8 @@ object SpaceInfo {
     size: scala.Double,
     used: scala.Double
   ): SpaceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("filesystem")(filesystem)
-    __obj.updateDynamic("mountpoint")(mountpoint)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("used")(used)
+    val __obj = js.Dynamic.literal(available = available, capacity = capacity, filesystem = filesystem, mountpoint = mountpoint, size = size, used = used)
+  
     __obj.asInstanceOf[SpaceInfo]
   }
 }

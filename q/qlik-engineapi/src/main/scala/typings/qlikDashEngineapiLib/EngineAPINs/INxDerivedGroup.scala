@@ -37,11 +37,8 @@ object INxDerivedGroup {
     qId: java.lang.String,
     qName: java.lang.String
   ): INxDerivedGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFieldDefs")(qFieldDefs)
-    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    __obj.updateDynamic("qId")(qId)
-    __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(qFieldDefs = qFieldDefs, qGrouping = qGrouping.asInstanceOf[js.Any], qId = qId, qName = qName)
+  
     __obj.asInstanceOf[INxDerivedGroup]
   }
 }

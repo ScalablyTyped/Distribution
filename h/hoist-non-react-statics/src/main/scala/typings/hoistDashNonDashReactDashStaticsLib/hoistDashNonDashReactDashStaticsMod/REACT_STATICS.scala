@@ -30,15 +30,8 @@ object REACT_STATICS {
     propTypes: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
     `type`: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`
   ): REACT_STATICS = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("childContextTypes")(childContextTypes)
-    __obj.updateDynamic("contextTypes")(contextTypes)
-    __obj.updateDynamic("defaultProps")(defaultProps)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("getDefaultProps")(getDefaultProps)
-    __obj.updateDynamic("getDerivedStateFromProps")(getDerivedStateFromProps)
-    __obj.updateDynamic("mixins")(mixins)
-    __obj.updateDynamic("propTypes")(propTypes)
+    val __obj = js.Dynamic.literal(childContextTypes = childContextTypes, contextTypes = contextTypes, defaultProps = defaultProps, displayName = displayName, getDefaultProps = getDefaultProps, getDerivedStateFromProps = getDerivedStateFromProps, mixins = mixins, propTypes = propTypes)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[REACT_STATICS]
   }
 }

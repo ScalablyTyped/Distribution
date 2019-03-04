@@ -16,7 +16,7 @@ abstract class WebCommunicator ()
   /**
     * @hidden
     */
-  var `connection_`: js.Any = js.native
+  var connection_ : js.Any = js.native
   /**
     * @hidden
     */

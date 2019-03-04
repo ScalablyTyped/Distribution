@@ -13,9 +13,8 @@ trait MapViewFocusEvent extends js.Object {
 object MapViewFocusEvent {
   @scala.inline
   def apply(native: js.Any, target: View): MapViewFocusEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(native = native, target = target)
+  
     __obj.asInstanceOf[MapViewFocusEvent]
   }
 }

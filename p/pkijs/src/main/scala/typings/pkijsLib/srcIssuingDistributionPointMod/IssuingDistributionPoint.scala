@@ -30,14 +30,7 @@ object IssuingDistributionPoint {
     toSchema: js.Function0[js.Any],
     distributionPoint: js.Array[pkijsLib.srcGeneralNameMod.default] | pkijsLib.srcRelativeDistinguishedNamesMod.default = null
   ): IssuingDistributionPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("indirectCRL")(indirectCRL)
-    __obj.updateDynamic("onlyContainsAttributeCerts")(onlyContainsAttributeCerts)
-    __obj.updateDynamic("onlyContainsUserCerts")(onlyContainsUserCerts)
-    __obj.updateDynamic("onlySomeReasons")(onlySomeReasons)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, indirectCRL = indirectCRL, onlyContainsAttributeCerts = onlyContainsAttributeCerts, onlyContainsUserCerts = onlyContainsUserCerts, onlySomeReasons = onlySomeReasons, toJSON = toJSON, toSchema = toSchema)
     if (distributionPoint != null) __obj.updateDynamic("distributionPoint")(distributionPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuingDistributionPoint]
   }

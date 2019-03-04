@@ -20,11 +20,8 @@ object Anon_ACCEL {
     RUN: firmataLib.firmataMod.BoardNs.STEPPER_RUN_STATE,
     STOP: firmataLib.firmataMod.BoardNs.STEPPER_RUN_STATE
   ): Anon_ACCEL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACCEL")(ACCEL)
-    __obj.updateDynamic("DECEL")(DECEL)
-    __obj.updateDynamic("RUN")(RUN)
-    __obj.updateDynamic("STOP")(STOP)
+    val __obj = js.Dynamic.literal(ACCEL = ACCEL, DECEL = DECEL, RUN = RUN, STOP = STOP)
+  
     __obj.asInstanceOf[Anon_ACCEL]
   }
 }

@@ -31,8 +31,8 @@ object XSAXSerializable {
       scala.Unit
     ]
   ): XSAXSerializable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(serialize = serialize)
+  
     __obj.asInstanceOf[XSAXSerializable]
   }
 }

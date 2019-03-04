@@ -12,8 +12,8 @@ trait Grouping extends js.Object {
 object Grouping {
   @scala.inline
   def apply(expression: Expression): Grouping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Grouping]
   }
 }

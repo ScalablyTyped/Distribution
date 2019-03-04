@@ -67,15 +67,8 @@ object CSIPersistentVolumeSource {
     volumeAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     volumeHandle: java.lang.String
   ): CSIPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controllerPublishSecretRef")(controllerPublishSecretRef)
-    __obj.updateDynamic("driver")(driver)
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("nodePublishSecretRef")(nodePublishSecretRef)
-    __obj.updateDynamic("nodeStageSecretRef")(nodeStageSecretRef)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("volumeAttributes")(volumeAttributes)
-    __obj.updateDynamic("volumeHandle")(volumeHandle)
+    val __obj = js.Dynamic.literal(controllerPublishSecretRef = controllerPublishSecretRef, driver = driver, fsType = fsType, nodePublishSecretRef = nodePublishSecretRef, nodeStageSecretRef = nodeStageSecretRef, readOnly = readOnly, volumeAttributes = volumeAttributes, volumeHandle = volumeHandle)
+  
     __obj.asInstanceOf[CSIPersistentVolumeSource]
   }
 }

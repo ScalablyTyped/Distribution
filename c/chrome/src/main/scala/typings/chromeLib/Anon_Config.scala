@@ -21,8 +21,8 @@ trait Anon_Config extends js.Object {
 object Anon_Config {
   @scala.inline
   def apply(configNs: Anon_CallbackFinishAuthentication): Anon_Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configNs")(configNs)
+    val __obj = js.Dynamic.literal(configNs = configNs)
+  
     __obj.asInstanceOf[Anon_Config]
   }
 }

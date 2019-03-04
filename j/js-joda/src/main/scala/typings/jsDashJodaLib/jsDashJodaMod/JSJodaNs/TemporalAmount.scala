@@ -20,11 +20,8 @@ object TemporalAmount {
     subtractFrom: js.Function1[js.Any, js.Any],
     units: js.Function0[js.Array[TemporalUnit]]
   ): TemporalAmount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTo")(addTo)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("subtractFrom")(subtractFrom)
-    __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(addTo = addTo, get = get, subtractFrom = subtractFrom, units = units)
+  
     __obj.asInstanceOf[TemporalAmount]
   }
 }

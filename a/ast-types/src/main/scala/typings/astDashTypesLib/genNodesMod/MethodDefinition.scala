@@ -32,12 +32,8 @@ object MethodDefinition {
     value: astDashTypesLib.genKindsMod.FunctionKind,
     decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null
   ): MethodDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(computed = computed, key = key, kind = kind.asInstanceOf[js.Any], static = static, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     __obj.asInstanceOf[MethodDefinition]
   }

@@ -44,23 +44,8 @@ object AggregatedResultWithoutCoverage {
     testResults: js.Array[TestResult],
     wasInterrupted: scala.Boolean
   ): AggregatedResultWithoutCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("numFailedTestSuites")(numFailedTestSuites)
-    __obj.updateDynamic("numFailedTests")(numFailedTests)
-    __obj.updateDynamic("numPassedTestSuites")(numPassedTestSuites)
-    __obj.updateDynamic("numPassedTests")(numPassedTests)
-    __obj.updateDynamic("numPendingTestSuites")(numPendingTestSuites)
-    __obj.updateDynamic("numPendingTests")(numPendingTests)
-    __obj.updateDynamic("numRuntimeErrorTestSuites")(numRuntimeErrorTestSuites)
-    __obj.updateDynamic("numTodoTests")(numTodoTests)
-    __obj.updateDynamic("numTotalTestSuites")(numTotalTestSuites)
-    __obj.updateDynamic("numTotalTests")(numTotalTests)
-    __obj.updateDynamic("openHandles")(openHandles)
-    __obj.updateDynamic("snapshot")(snapshot)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("testResults")(testResults)
-    __obj.updateDynamic("wasInterrupted")(wasInterrupted)
+    val __obj = js.Dynamic.literal(numFailedTestSuites = numFailedTestSuites, numFailedTests = numFailedTests, numPassedTestSuites = numPassedTestSuites, numPassedTests = numPassedTests, numPendingTestSuites = numPendingTestSuites, numPendingTests = numPendingTests, numRuntimeErrorTestSuites = numRuntimeErrorTestSuites, numTodoTests = numTodoTests, numTotalTestSuites = numTotalTestSuites, numTotalTests = numTotalTests, openHandles = openHandles, snapshot = snapshot, startTime = startTime, success = success, testResults = testResults, wasInterrupted = wasInterrupted)
+  
     __obj.asInstanceOf[AggregatedResultWithoutCoverage]
   }
 }

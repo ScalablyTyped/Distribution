@@ -12,8 +12,8 @@ trait Anon_E extends js.Object {
 object Anon_E {
   @scala.inline
   def apply(error: js.Function1[/* repeated */ nodeLib.Error, scala.Unit]): Anon_E = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[Anon_E]
   }
 }

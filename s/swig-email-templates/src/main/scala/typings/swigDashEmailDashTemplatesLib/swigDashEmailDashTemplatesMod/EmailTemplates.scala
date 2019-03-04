@@ -65,11 +65,8 @@ object EmailTemplates {
       scala.Unit
     ]
   ): EmailTemplates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateSubject")(generateSubject)
-    __obj.updateDynamic("generateText")(generateText)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("rewriteUrls")(rewriteUrls)
+    val __obj = js.Dynamic.literal(generateSubject = generateSubject, generateText = generateText, render = render, rewriteUrls = rewriteUrls)
+  
     __obj.asInstanceOf[EmailTemplates]
   }
 }

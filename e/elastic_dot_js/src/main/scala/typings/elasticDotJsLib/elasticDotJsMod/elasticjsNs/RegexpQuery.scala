@@ -79,15 +79,8 @@ object RegexpQuery {
     toJSON: js.Function0[js.Any],
     value: js.Function1[java.lang.String, RegexpQuery]
   ): RegexpQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("flagsValue")(flagsValue)
-    __obj.updateDynamic("rewrite")(rewrite)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, flags = flags, flagsValue = flagsValue, rewrite = rewrite, toJSON = toJSON, value = value)
+  
     __obj.asInstanceOf[RegexpQuery]
   }
 }

@@ -20,8 +20,7 @@ object IProxyConfiguration {
     proxyPassword: java.lang.String = null,
     proxyUsername: java.lang.String = null
   ): IProxyConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("proxyUrl")(proxyUrl)
+    val __obj = js.Dynamic.literal(proxyUrl = proxyUrl)
     if (proxyBypassHosts != null) __obj.updateDynamic("proxyBypassHosts")(proxyBypassHosts)
     if (proxyPassword != null) __obj.updateDynamic("proxyPassword")(proxyPassword)
     if (proxyUsername != null) __obj.updateDynamic("proxyUsername")(proxyUsername)

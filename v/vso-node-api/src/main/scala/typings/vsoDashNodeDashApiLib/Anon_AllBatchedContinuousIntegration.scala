@@ -28,15 +28,8 @@ object Anon_AllBatchedContinuousIntegration {
     pullRequest: scala.Double,
     schedule: scala.Double
   ): Anon_AllBatchedContinuousIntegration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("batchedContinuousIntegration")(batchedContinuousIntegration)
-    __obj.updateDynamic("batchedGatedCheckIn")(batchedGatedCheckIn)
-    __obj.updateDynamic("continuousIntegration")(continuousIntegration)
-    __obj.updateDynamic("gatedCheckIn")(gatedCheckIn)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("pullRequest")(pullRequest)
-    __obj.updateDynamic("schedule")(schedule)
+    val __obj = js.Dynamic.literal(all = all, batchedContinuousIntegration = batchedContinuousIntegration, batchedGatedCheckIn = batchedGatedCheckIn, continuousIntegration = continuousIntegration, gatedCheckIn = gatedCheckIn, none = none, pullRequest = pullRequest, schedule = schedule)
+  
     __obj.asInstanceOf[Anon_AllBatchedContinuousIntegration]
   }
 }

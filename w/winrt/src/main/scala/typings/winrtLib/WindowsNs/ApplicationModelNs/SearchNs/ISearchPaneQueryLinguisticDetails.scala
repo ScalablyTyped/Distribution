@@ -18,10 +18,8 @@ object ISearchPaneQueryLinguisticDetails {
     queryTextCompositionLength: scala.Double,
     queryTextCompositionStart: scala.Double
   ): ISearchPaneQueryLinguisticDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryTextAlternatives")(queryTextAlternatives)
-    __obj.updateDynamic("queryTextCompositionLength")(queryTextCompositionLength)
-    __obj.updateDynamic("queryTextCompositionStart")(queryTextCompositionStart)
+    val __obj = js.Dynamic.literal(queryTextAlternatives = queryTextAlternatives, queryTextCompositionLength = queryTextCompositionLength, queryTextCompositionStart = queryTextCompositionStart)
+  
     __obj.asInstanceOf[ISearchPaneQueryLinguisticDetails]
   }
 }

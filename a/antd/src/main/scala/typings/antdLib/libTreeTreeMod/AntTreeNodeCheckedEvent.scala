@@ -20,10 +20,7 @@ object AntTreeNodeCheckedEvent {
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     checkedNodes: js.Array[AntTreeNode] = null
   ): AntTreeNodeCheckedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(event = event, nativeEvent = nativeEvent, node = node)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (checkedNodes != null) __obj.updateDynamic("checkedNodes")(checkedNodes)
     __obj.asInstanceOf[AntTreeNodeCheckedEvent]

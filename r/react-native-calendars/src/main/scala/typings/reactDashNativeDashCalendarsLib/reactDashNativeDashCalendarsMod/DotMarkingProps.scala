@@ -16,8 +16,7 @@ object DotMarkingProps {
     markedDates: org.scalablytyped.runtime.StringDictionary[DotMarking],
     markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.simple = null
   ): DotMarkingProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markedDates")(markedDates)
+    val __obj = js.Dynamic.literal(markedDates = markedDates)
     if (markingType != null) __obj.updateDynamic("markingType")(markingType)
     __obj.asInstanceOf[DotMarkingProps]
   }

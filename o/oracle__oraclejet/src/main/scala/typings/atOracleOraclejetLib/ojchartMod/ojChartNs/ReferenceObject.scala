@@ -19,10 +19,8 @@ object ReferenceObject {
     index: scala.Double,
     subId: java.lang.String
   ): ReferenceObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], index = index, subId = subId)
+  
     __obj.asInstanceOf[ReferenceObject]
   }
 }

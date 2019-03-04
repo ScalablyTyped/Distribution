@@ -28,15 +28,8 @@ object HttpResponse {
     statusText: java.lang.String,
     text: js.Function0[java.lang.String]
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(blob = blob, data = data, headers = headers, json = json, ok = ok, status = status, statusText = statusText, text = text)
+  
     __obj.asInstanceOf[HttpResponse]
   }
 }

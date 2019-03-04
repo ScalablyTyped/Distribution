@@ -13,9 +13,8 @@ trait Anon_DoNotResetEntireContent extends js.Object {
 object Anon_DoNotResetEntireContent {
   @scala.inline
   def apply(doNotResetEntireContent: scala.Boolean, leaveUnmerged: scala.Boolean): Anon_DoNotResetEntireContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doNotResetEntireContent")(doNotResetEntireContent)
-    __obj.updateDynamic("leaveUnmerged")(leaveUnmerged)
+    val __obj = js.Dynamic.literal(doNotResetEntireContent = doNotResetEntireContent, leaveUnmerged = leaveUnmerged)
+  
     __obj.asInstanceOf[Anon_DoNotResetEntireContent]
   }
 }

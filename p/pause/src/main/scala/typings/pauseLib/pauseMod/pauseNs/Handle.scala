@@ -13,9 +13,8 @@ trait Handle extends js.Object {
 object Handle {
   @scala.inline
   def apply(end: js.Function0[scala.Unit], resume: js.Function0[scala.Unit]): Handle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("resume")(resume)
+    val __obj = js.Dynamic.literal(end = end, resume = resume)
+  
     __obj.asInstanceOf[Handle]
   }
 }

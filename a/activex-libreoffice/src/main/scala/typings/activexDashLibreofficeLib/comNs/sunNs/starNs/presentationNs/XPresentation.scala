@@ -26,13 +26,8 @@ object XPresentation {
     release: js.Function0[scala.Unit],
     start: js.Function0[scala.Unit]
   ): XPresentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rehearseTimings")(rehearseTimings)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(acquire = acquire, end = end, queryInterface = queryInterface, rehearseTimings = rehearseTimings, release = release, start = start)
+  
     __obj.asInstanceOf[XPresentation]
   }
 }

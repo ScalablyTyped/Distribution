@@ -26,13 +26,8 @@ object Chat {
     raw: plugapiLib.plugapiMod.PlugAPINs.RawChatMessage,
     `type`: java.lang.String
   ): Chat = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mentions")(mentions)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("muted")(muted)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(from = from, id = id, mentions = mentions, message = message, muted = muted, raw = raw)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Chat]
   }
 }

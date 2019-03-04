@@ -13,9 +13,8 @@ trait LocationMapping extends js.Object {
 object LocationMapping {
   @scala.inline
   def apply(accessMappingMoniker: java.lang.String, location: java.lang.String): LocationMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessMappingMoniker")(accessMappingMoniker)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(accessMappingMoniker = accessMappingMoniker, location = location)
+  
     __obj.asInstanceOf[LocationMapping]
   }
 }

@@ -26,8 +26,7 @@ object OpenArgs {
     iosDatabaseLocation: java.lang.String = null,
     location: java.lang.String = null
   ): OpenArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (androidDatabaseImplementation != null) __obj.updateDynamic("androidDatabaseImplementation")(androidDatabaseImplementation.asInstanceOf[js.Any])
     if (androidLockWorkaround != null) __obj.updateDynamic("androidLockWorkaround")(androidLockWorkaround.asInstanceOf[js.Any])

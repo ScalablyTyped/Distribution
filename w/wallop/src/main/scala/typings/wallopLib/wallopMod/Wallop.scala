@@ -42,13 +42,8 @@ object Wallop {
     previous: js.Function0[Wallop],
     reset: js.Function0[Wallop]
   ): Wallop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("goTo")(goTo)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(goTo = goTo, next = next, off = off, on = on, previous = previous, reset = reset)
+  
     __obj.asInstanceOf[Wallop]
   }
 }

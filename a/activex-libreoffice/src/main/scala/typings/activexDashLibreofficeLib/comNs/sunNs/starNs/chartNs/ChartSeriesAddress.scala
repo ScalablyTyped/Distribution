@@ -30,10 +30,8 @@ object ChartSeriesAddress {
     DomainRangeAddresses: activexDashInteropLib.SafeArray[java.lang.String],
     LabelAddress: java.lang.String
   ): ChartSeriesAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataRangeAddress")(DataRangeAddress)
-    __obj.updateDynamic("DomainRangeAddresses")(DomainRangeAddresses)
-    __obj.updateDynamic("LabelAddress")(LabelAddress)
+    val __obj = js.Dynamic.literal(DataRangeAddress = DataRangeAddress, DomainRangeAddresses = DomainRangeAddresses, LabelAddress = LabelAddress)
+  
     __obj.asInstanceOf[ChartSeriesAddress]
   }
 }

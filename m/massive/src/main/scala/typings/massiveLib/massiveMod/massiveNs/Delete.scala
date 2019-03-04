@@ -14,8 +14,8 @@ trait Delete extends js.Object {
 object Delete {
   @scala.inline
   def apply(format: js.Function0[java.lang.String]): Delete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[Delete]
   }
 }

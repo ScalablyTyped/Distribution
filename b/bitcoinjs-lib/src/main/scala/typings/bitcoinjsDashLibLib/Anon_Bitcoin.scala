@@ -16,9 +16,8 @@ object Anon_Bitcoin {
     bitcoin: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network,
     testnet: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network
   ): Anon_Bitcoin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitcoin")(bitcoin)
-    __obj.updateDynamic("testnet")(testnet)
+    val __obj = js.Dynamic.literal(bitcoin = bitcoin, testnet = testnet)
+  
     __obj.asInstanceOf[Anon_Bitcoin]
   }
 }

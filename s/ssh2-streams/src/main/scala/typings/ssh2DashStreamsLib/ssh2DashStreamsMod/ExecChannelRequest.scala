@@ -20,11 +20,8 @@ object ExecChannelRequest {
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.exec,
     wantReply: scala.Boolean
   ): ExecChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("wantReply")(wantReply)
+    val __obj = js.Dynamic.literal(command = command, recipient = recipient, request = request, wantReply = wantReply)
+  
     __obj.asInstanceOf[ExecChannelRequest]
   }
 }

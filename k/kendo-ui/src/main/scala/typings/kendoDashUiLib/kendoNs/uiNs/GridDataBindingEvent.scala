@@ -21,10 +21,7 @@ object GridDataBindingEvent {
     index: scala.Int | scala.Double = null,
     items: js.Any = null
   ): GridDataBindingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (action != null) __obj.updateDynamic("action")(action)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (items != null) __obj.updateDynamic("items")(items)

@@ -12,8 +12,8 @@ trait AppAssociation extends js.Object {
 object AppAssociation {
   @scala.inline
   def apply(repository: RepoAssociation): AppAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repository")(repository)
+    val __obj = js.Dynamic.literal(repository = repository)
+  
     __obj.asInstanceOf[AppAssociation]
   }
 }

@@ -13,8 +13,7 @@ trait Anon_SubscriptionData[TSubscriptionData, TVariables] extends js.Object {
 object Anon_SubscriptionData {
   @scala.inline
   def apply[TSubscriptionData, TVariables](subscriptionData: Anon_DataTSubscriptionData[TSubscriptionData], variables: TVariables = null): Anon_SubscriptionData[TSubscriptionData, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscriptionData")(subscriptionData)
+    val __obj = js.Dynamic.literal(subscriptionData = subscriptionData)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SubscriptionData[TSubscriptionData, TVariables]]
   }

@@ -37,12 +37,8 @@ object Options {
     hashbang: scala.Boolean,
     popstate: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("decodeURLComponents")(decodeURLComponents)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("hashbang")(hashbang)
-    __obj.updateDynamic("popstate")(popstate)
+    val __obj = js.Dynamic.literal(click = click, decodeURLComponents = decodeURLComponents, dispatch = dispatch, hashbang = hashbang, popstate = popstate)
+  
     __obj.asInstanceOf[Options]
   }
 }

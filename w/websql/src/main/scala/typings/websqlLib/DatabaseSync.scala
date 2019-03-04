@@ -22,11 +22,8 @@ object DatabaseSync {
     transaction: js.Function1[SQLTransactionSyncCallback, scala.Unit],
     version: DOMString
   ): DatabaseSync = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeVersion")(changeVersion)
-    __obj.updateDynamic("readTransaction")(readTransaction)
-    __obj.updateDynamic("transaction")(transaction)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(changeVersion = changeVersion, readTransaction = readTransaction, transaction = transaction, version = version)
+  
     __obj.asInstanceOf[DatabaseSync]
   }
 }

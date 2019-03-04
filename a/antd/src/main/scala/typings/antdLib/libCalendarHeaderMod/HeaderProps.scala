@@ -34,8 +34,7 @@ object HeaderProps {
     yearSelectOffset: scala.Int | scala.Double = null,
     yearSelectTotal: scala.Int | scala.Double = null
   ): HeaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(onTypeChange)

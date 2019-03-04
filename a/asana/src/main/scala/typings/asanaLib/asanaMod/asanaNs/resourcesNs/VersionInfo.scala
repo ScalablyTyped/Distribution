@@ -22,12 +22,8 @@ object VersionInfo {
     os_version: java.lang.String,
     version: java.lang.String
   ): VersionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("language_version")(language_version)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("os_version")(os_version)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(language = language, language_version = language_version, os = os, os_version = os_version, version = version)
+  
     __obj.asInstanceOf[VersionInfo]
   }
 }

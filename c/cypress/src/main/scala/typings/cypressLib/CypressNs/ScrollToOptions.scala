@@ -30,11 +30,8 @@ object ScrollToOptions {
     log: scala.Boolean,
     timeout: scala.Double
   ): ScrollToOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing.asInstanceOf[js.Any], log = log, timeout = timeout)
+  
     __obj.asInstanceOf[ScrollToOptions]
   }
 }

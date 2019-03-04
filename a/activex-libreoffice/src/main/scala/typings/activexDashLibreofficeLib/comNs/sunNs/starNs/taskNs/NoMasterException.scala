@@ -19,10 +19,8 @@ object NoMasterException {
     Message: java.lang.String,
     Mode: PasswordRequestMode
   ): NoMasterException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Mode")(Mode)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Mode = Mode)
+  
     __obj.asInstanceOf[NoMasterException]
   }
 }

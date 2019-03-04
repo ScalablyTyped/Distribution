@@ -32,8 +32,7 @@ object RequestInfo {
     operationName: java.lang.String = null,
     variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
     if (document != null) __obj.updateDynamic("document")(document)
     if (operationName != null) __obj.updateDynamic("operationName")(operationName)
     if (variables != null) __obj.updateDynamic("variables")(variables)

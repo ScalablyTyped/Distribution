@@ -25,12 +25,8 @@ object WebIDLParseError {
     toString: js.Function0[java.lang.String],
     tokens: js.Array[ValueDescription]
   ): WebIDLParseError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(input = input, line = line, message = message, toString = toString, tokens = tokens)
+  
     __obj.asInstanceOf[WebIDLParseError]
   }
 }

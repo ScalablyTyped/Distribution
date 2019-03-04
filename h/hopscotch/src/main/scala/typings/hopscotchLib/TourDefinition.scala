@@ -35,9 +35,7 @@ object TourDefinition {
     skipIfNoElement: js.UndefOr[scala.Boolean] = js.undefined,
     smoothScroll: js.UndefOr[scala.Boolean] = js.undefined
   ): TourDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(id = id, steps = steps)
     if (arrowWidth != null) __obj.updateDynamic("arrowWidth")(arrowWidth.asInstanceOf[js.Any])
     if (bubbleWidth != null) __obj.updateDynamic("bubbleWidth")(bubbleWidth.asInstanceOf[js.Any])
     if (buddleHeight != null) __obj.updateDynamic("buddleHeight")(buddleHeight.asInstanceOf[js.Any])

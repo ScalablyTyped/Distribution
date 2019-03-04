@@ -77,15 +77,8 @@ object StatefulSetSpec {
     updateStrategy: StatefulSetUpdateStrategy,
     volumeClaimTemplates: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PersistentVolumeClaim]
   ): StatefulSetSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("podManagementPolicy")(podManagementPolicy)
-    __obj.updateDynamic("replicas")(replicas)
-    __obj.updateDynamic("revisionHistoryLimit")(revisionHistoryLimit)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("updateStrategy")(updateStrategy)
-    __obj.updateDynamic("volumeClaimTemplates")(volumeClaimTemplates)
+    val __obj = js.Dynamic.literal(podManagementPolicy = podManagementPolicy, replicas = replicas, revisionHistoryLimit = revisionHistoryLimit, selector = selector, serviceName = serviceName, template = template, updateStrategy = updateStrategy, volumeClaimTemplates = volumeClaimTemplates)
+  
     __obj.asInstanceOf[StatefulSetSpec]
   }
 }

@@ -13,8 +13,8 @@ trait SnapToRoadsResponse extends js.Object {
 object SnapToRoadsResponse {
   @scala.inline
   def apply(snappedPoints: js.Array[SnappedPoint]): SnapToRoadsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("snappedPoints")(snappedPoints)
+    val __obj = js.Dynamic.literal(snappedPoints = snappedPoints)
+  
     __obj.asInstanceOf[SnapToRoadsResponse]
   }
 }

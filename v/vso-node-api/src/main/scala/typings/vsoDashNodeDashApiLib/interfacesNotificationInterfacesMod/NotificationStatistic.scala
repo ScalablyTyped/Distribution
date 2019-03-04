@@ -22,11 +22,8 @@ object NotificationStatistic {
     `type`: NotificationStatisticType,
     user: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   ): NotificationStatistic = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("hitCount")(hitCount)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(date = date, hitCount = hitCount, path = path, user = user)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NotificationStatistic]
   }
 }

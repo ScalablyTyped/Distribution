@@ -28,15 +28,8 @@ object Anon_AppMode {
     name: java.lang.String,
     tablet: js.Any
   ): Anon_AppMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appMode")(appMode)
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("flatVersion")(flatVersion)
-    __obj.updateDynamic("majorVersion")(majorVersion)
-    __obj.updateDynamic("minorVersion")(minorVersion)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tablet")(tablet)
+    val __obj = js.Dynamic.literal(appMode = appMode, browser = browser, device = device, flatVersion = flatVersion, majorVersion = majorVersion, minorVersion = minorVersion, name = name, tablet = tablet)
+  
     __obj.asInstanceOf[Anon_AppMode]
   }
 }

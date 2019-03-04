@@ -41,11 +41,8 @@ object ConfigMapList {
     kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMapList,
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
   ): ConfigMapList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
     __obj.asInstanceOf[ConfigMapList]
   }
 }

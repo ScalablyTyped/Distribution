@@ -14,10 +14,8 @@ trait Anon_Character extends js.Object {
 object Anon_Character {
   @scala.inline
   def apply(character: scala.Double, line: scala.Double, position: scala.Double): Anon_Character = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(character = character, line = line, position = position)
+  
     __obj.asInstanceOf[Anon_Character]
   }
 }

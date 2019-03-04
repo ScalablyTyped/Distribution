@@ -13,9 +13,8 @@ trait Picture extends js.Object {
 object Picture {
   @scala.inline
   def apply(data: nodeLib.Buffer, format: java.lang.String): Picture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(data = data, format = format)
+  
     __obj.asInstanceOf[Picture]
   }
 }

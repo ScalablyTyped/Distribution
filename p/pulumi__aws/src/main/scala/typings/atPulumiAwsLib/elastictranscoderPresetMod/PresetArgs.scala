@@ -67,8 +67,7 @@ object PresetArgs {
       ]
     ] = null
   ): PresetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
     if (audioCodecOptions != null) __obj.updateDynamic("audioCodecOptions")(audioCodecOptions.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

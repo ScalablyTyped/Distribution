@@ -22,9 +22,8 @@ object NetworkInterfaceSecurityGroupAttachmentArgs {
     networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     securityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): NetworkInterfaceSecurityGroupAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NetworkInterfaceSecurityGroupAttachmentArgs]
   }
 }

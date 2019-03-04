@@ -22,11 +22,7 @@ object ActionOverride {
     pageId: java.lang.String,
     url: maybe[java.lang.String] = null
   ): ActionOverride = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formFactor")(formFactor)
-    __obj.updateDynamic("isAvailableInTouch")(isAvailableInTouch)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pageId")(pageId)
+    val __obj = js.Dynamic.literal(formFactor = formFactor, isAvailableInTouch = isAvailableInTouch, name = name, pageId = pageId)
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionOverride]
   }

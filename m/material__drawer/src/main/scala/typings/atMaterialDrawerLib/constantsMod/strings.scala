@@ -21,11 +21,8 @@ object strings {
     OPEN_EVENT: atMaterialDrawerLib.atMaterialDrawerLibStrings.`MDCDrawer:opened`,
     SCRIM_SELECTOR: atMaterialDrawerLib.atMaterialDrawerLibStrings.`DOTmdc-drawer-scrim`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("APP_CONTENT_SELECTOR")(APP_CONTENT_SELECTOR)
-    __obj.updateDynamic("CLOSE_EVENT")(CLOSE_EVENT)
-    __obj.updateDynamic("OPEN_EVENT")(OPEN_EVENT)
-    __obj.updateDynamic("SCRIM_SELECTOR")(SCRIM_SELECTOR)
+    val __obj = js.Dynamic.literal(APP_CONTENT_SELECTOR = APP_CONTENT_SELECTOR, CLOSE_EVENT = CLOSE_EVENT, OPEN_EVENT = OPEN_EVENT, SCRIM_SELECTOR = SCRIM_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

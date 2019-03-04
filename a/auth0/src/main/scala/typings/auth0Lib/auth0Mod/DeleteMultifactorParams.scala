@@ -13,9 +13,8 @@ trait DeleteMultifactorParams extends js.Object {
 object DeleteMultifactorParams {
   @scala.inline
   def apply(id: java.lang.String, provider: DeleteDeleteMultifactorParamsProvider): DeleteMultifactorParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(id = id, provider = provider)
+  
     __obj.asInstanceOf[DeleteMultifactorParams]
   }
 }

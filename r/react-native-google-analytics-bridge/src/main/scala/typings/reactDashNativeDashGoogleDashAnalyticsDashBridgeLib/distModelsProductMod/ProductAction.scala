@@ -24,8 +24,7 @@ object ProductAction {
     productListSource: java.lang.String = null,
     transaction: Transaction = null
   ): ProductAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
     if (checkoutOption != null) __obj.updateDynamic("checkoutOption")(checkoutOption)
     if (checkoutStep != null) __obj.updateDynamic("checkoutStep")(checkoutStep.asInstanceOf[js.Any])
     if (productActionList != null) __obj.updateDynamic("productActionList")(productActionList)

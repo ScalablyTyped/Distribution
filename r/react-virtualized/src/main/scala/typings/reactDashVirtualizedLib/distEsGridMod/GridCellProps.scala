@@ -26,14 +26,8 @@ object GridCellProps {
     rowIndex: scala.Double,
     style: reactLib.reactMod.ReactNs.CSSProperties
   ): GridCellProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, isScrolling = isScrolling, isVisible = isVisible, key = key, parent = parent, rowIndex = rowIndex, style = style)
+  
     __obj.asInstanceOf[GridCellProps]
   }
 }

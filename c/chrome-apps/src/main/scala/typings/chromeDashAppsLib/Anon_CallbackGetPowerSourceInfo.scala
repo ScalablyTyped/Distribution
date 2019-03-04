@@ -50,10 +50,8 @@ object Anon_CallbackGetPowerSourceInfo {
     ],
     requestStatusUpdate: js.Function0[scala.Unit]
   ): Anon_CallbackGetPowerSourceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPowerSourceInfo")(getPowerSourceInfo)
-    __obj.updateDynamic("onPowerChanged")(onPowerChanged)
-    __obj.updateDynamic("requestStatusUpdate")(requestStatusUpdate)
+    val __obj = js.Dynamic.literal(getPowerSourceInfo = getPowerSourceInfo, onPowerChanged = onPowerChanged, requestStatusUpdate = requestStatusUpdate)
+  
     __obj.asInstanceOf[Anon_CallbackGetPowerSourceInfo]
   }
 }

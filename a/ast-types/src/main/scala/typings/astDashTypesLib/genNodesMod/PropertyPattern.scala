@@ -25,10 +25,8 @@ object PropertyPattern {
     pattern: astDashTypesLib.genKindsMod.PatternKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.PropertyPattern
   ): PropertyPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], pattern = pattern)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PropertyPattern]
   }
 }

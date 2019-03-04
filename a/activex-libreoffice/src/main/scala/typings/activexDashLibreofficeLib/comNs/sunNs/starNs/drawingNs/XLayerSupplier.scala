@@ -26,12 +26,8 @@ object XLayerSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLayerSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LayerManager")(LayerManager)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLayerManager")(getLayerManager)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(LayerManager = LayerManager, acquire = acquire, getLayerManager = getLayerManager, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLayerSupplier]
   }
 }

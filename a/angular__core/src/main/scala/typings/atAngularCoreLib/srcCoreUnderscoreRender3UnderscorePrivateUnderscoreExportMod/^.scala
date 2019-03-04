@@ -9,53 +9,53 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ɵNO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
-  val `ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__`: js.Function0[
+  val ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__ : js.Function0[
     atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectorUnderscoreRefMod.ChangeDetectorRef
   ] = js.native
-  val `ɵSWITCH_COMPILE_COMPONENT__POST_R3__`: js.Function2[
+  val ɵSWITCH_COMPILE_COMPONENT__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* metadata */ atAngularCoreLib.srcMetadataDirectivesMod.Component, 
     scala.Unit
   ] = js.native
-  val `ɵSWITCH_COMPILE_DIRECTIVE__POST_R3__`: js.Function2[
+  val ɵSWITCH_COMPILE_DIRECTIVE__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* directive */ atAngularCoreLib.srcMetadataDirectivesMod.Directive, 
     scala.Unit
   ] = js.native
-  val `ɵSWITCH_COMPILE_INJECTABLE__POST_R3__`: js.Function2[
+  val ɵSWITCH_COMPILE_INJECTABLE__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* srcMeta */ js.UndefOr[atAngularCoreLib.srcDiInjectableMod.Injectable], 
     scala.Unit
   ] = js.native
-  val `ɵSWITCH_COMPILE_NGMODULE__POST_R3__`: js.Function2[
+  val ɵSWITCH_COMPILE_NGMODULE__POST_R3__ : js.Function2[
     /* moduleType */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* ngModule */ js.UndefOr[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModule], 
     scala.Unit
   ] = js.native
-  val `ɵSWITCH_COMPILE_PIPE__POST_R3__`: js.Function2[
+  val ɵSWITCH_COMPILE_PIPE__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* meta */ atAngularCoreLib.srcMetadataDirectivesMod.Pipe, 
     scala.Unit
   ] = js.native
-  val `ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__`: js.Function1[
+  val ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__ : js.Function1[
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
-  val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
-  val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
-  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: atAngularCoreLib.Anon_ElementRefToken = js.native
-  val `ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__`: js.Function2[
+  val ɵSWITCH_IVY_ENABLED__POST_R3__ : /* true */ scala.Boolean = js.native
+  val ɵSWITCH_RENDERER2_FACTORY__POST_R3__ : js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
+  val ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__ : atAngularCoreLib.Anon_ElementRefToken = js.native
+  val ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__ : js.Function2[
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
   val ɵdefaultStyleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn = js.native
-  def `ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T]] = js.native
-  def `ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T] = js.native
-  def `ɵCompiler_compileModuleAsync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[
+  def ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T]] = js.native
+  def ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T] = js.native
+  def ɵCompiler_compileModuleAsync__POST_R3__[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[
     atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[T]
   ] = js.native
-  def `ɵCompiler_compileModuleSync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[T] = js.native
+  def ɵCompiler_compileModuleSync__POST_R3__[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[T] = js.native
   def ɵInheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def ɵInheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_]): scala.Unit = js.native
   def ɵLifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
@@ -71,7 +71,7 @@ object ^ extends js.Object {
     /* definition */ atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T], 
     scala.Unit
   ] = js.native
-  def `ɵSWITCH_INJECTOR_FACTORY__POST_R3__`(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
+  def ɵSWITCH_INJECTOR_FACTORY__POST_R3__(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
   def ɵaddPlayer(
     ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance,
     player: atAngularCoreLib.srcRender3InterfacesPlayerMod.Player
@@ -106,7 +106,7 @@ object ^ extends js.Object {
     moduleType: atAngularCoreLib.srcRender3NgUnderscoreModuleUnderscoreRefMod.NgModuleType[_],
     ngModule: atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModule
   ): scala.Unit = js.native
-  def `ɵcompileNgModuleFactory__POST_R3__`[M](
+  def ɵcompileNgModuleFactory__POST_R3__[M](
     injector: atAngularCoreLib.srcDiMod.Injector,
     options: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions,
     moduleType: atAngularCoreLib.srcTypeMod.Type[M]
@@ -564,14 +564,14 @@ object ^ extends js.Object {
   def ɵembeddedViewStart(viewBlockId: scala.Double, consts: scala.Double, vars: scala.Double): atAngularCoreLib.srcRender3InterfacesDefinitionMod.RenderFlags = js.native
   def ɵenableBindings(): scala.Unit = js.native
   def ɵgetCurrentView(): atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState = js.native
-  def `ɵgetDebugNode__POST_R3__`(): scala.Null = js.native
-  def `ɵgetDebugNode__POST_R3__`(nativeNode: stdLib.Element): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.`DebugElement__POST_R3__` = js.native
-  def `ɵgetDebugNode__POST_R3__`(nativeNode: stdLib.Node): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.`DebugNode__POST_R3__` = js.native
+  def ɵgetDebugNode__POST_R3__(): scala.Null = js.native
+  def ɵgetDebugNode__POST_R3__(nativeNode: stdLib.Element): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement__POST_R3__ = js.native
+  def ɵgetDebugNode__POST_R3__(nativeNode: stdLib.Node): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode__POST_R3__ = js.native
   def ɵgetFactoryOf[T](`type`: atAngularCoreLib.srcTypeMod.Type[_]): (js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T] | scala.Null, T]) | scala.Null = js.native
   def ɵgetHostElement[T](directive: T): stdLib.Element = js.native
   def ɵgetInheritedFactory[T](`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], T] = js.native
   def ɵgetLContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
-  def `ɵgetModuleFactory__POST_R3__`(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
+  def ɵgetModuleFactory__POST_R3__(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
   def ɵgetPlayers(ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.ComponentInstance): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
   def ɵgetPlayers(ref: atAngularCoreLib.srcRender3InterfacesPlayerMod.DirectiveInstance): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native
   def ɵgetPlayers(ref: stdLib.HTMLElement): js.Array[atAngularCoreLib.srcRender3InterfacesPlayerMod.Player] = js.native

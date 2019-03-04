@@ -34,13 +34,7 @@ object IOIDCStrategyOptionWithRequest {
     useCookieInsteadOfSession: js.UndefOr[scala.Boolean] = js.undefined,
     validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
   ): IOIDCStrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("identityMetadata")(identityMetadata)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    __obj.updateDynamic("redirectUrl")(redirectUrl)
-    __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientID = clientID, identityMetadata = identityMetadata, passReqToCallback = passReqToCallback, redirectUrl = redirectUrl, responseMode = responseMode.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
     if (!js.isUndefined(allowHttpForRedirectUrl)) __obj.updateDynamic("allowHttpForRedirectUrl")(allowHttpForRedirectUrl)
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
     if (clockSkew != null) __obj.updateDynamic("clockSkew")(clockSkew.asInstanceOf[js.Any])

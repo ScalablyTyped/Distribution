@@ -18,10 +18,8 @@ object FormTriggerBuilder {
     onFormSubmit: js.Function0[FormTriggerBuilder],
     onOpen: js.Function0[FormTriggerBuilder]
   ): FormTriggerBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("onFormSubmit")(onFormSubmit)
-    __obj.updateDynamic("onOpen")(onOpen)
+    val __obj = js.Dynamic.literal(create = create, onFormSubmit = onFormSubmit, onOpen = onOpen)
+  
     __obj.asInstanceOf[FormTriggerBuilder]
   }
 }

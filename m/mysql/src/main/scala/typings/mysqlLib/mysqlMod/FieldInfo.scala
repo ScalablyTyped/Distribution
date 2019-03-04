@@ -40,19 +40,8 @@ object FieldInfo {
     zeroFill: scala.Boolean,
     default: java.lang.String = null
   ): FieldInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("catalog")(catalog)
-    __obj.updateDynamic("charsetNr")(charsetNr)
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("orgName")(orgName)
-    __obj.updateDynamic("orgTable")(orgTable)
-    __obj.updateDynamic("protocol41")(protocol41)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("zeroFill")(zeroFill)
+    val __obj = js.Dynamic.literal(catalog = catalog, charsetNr = charsetNr, db = db, decimals = decimals, flags = flags, length = length, name = name, orgName = orgName, orgTable = orgTable, protocol41 = protocol41, table = table, zeroFill = zeroFill)
+    __obj.updateDynamic("type")(`type`)
     if (default != null) __obj.updateDynamic("default")(default)
     __obj.asInstanceOf[FieldInfo]
   }

@@ -12,8 +12,8 @@ trait Anon_ReminderObject extends js.Object {
 object Anon_ReminderObject {
   @scala.inline
   def apply(ReminderObject: activexDashOutlookLib.OutlookNs.Reminder): Anon_ReminderObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ReminderObject")(ReminderObject)
+    val __obj = js.Dynamic.literal(ReminderObject = ReminderObject)
+  
     __obj.asInstanceOf[Anon_ReminderObject]
   }
 }

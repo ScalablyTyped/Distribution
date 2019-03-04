@@ -14,10 +14,8 @@ trait MessageBodyPart
 object MessageBodyPart {
   @scala.inline
   def apply(body: js.Any, size: scala.Double, which: java.lang.String): MessageBodyPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("which")(which)
+    val __obj = js.Dynamic.literal(body = body, size = size, which = which)
+  
     __obj.asInstanceOf[MessageBodyPart]
   }
 }

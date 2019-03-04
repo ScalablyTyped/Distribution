@@ -46,17 +46,8 @@ object StripeStatic {
     validateCardNumber: js.Function1[java.lang.String, scala.Boolean],
     validateExpiry: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
   ): StripeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applePay")(applePay)
-    __obj.updateDynamic("bankAccount")(bankAccount)
-    __obj.updateDynamic("card")(card)
-    __obj.updateDynamic("cardType")(cardType)
-    __obj.updateDynamic("createToken")(createToken)
-    __obj.updateDynamic("getToken")(getToken)
-    __obj.updateDynamic("setPublishableKey")(setPublishableKey)
-    __obj.updateDynamic("validateCVC")(validateCVC)
-    __obj.updateDynamic("validateCardNumber")(validateCardNumber)
-    __obj.updateDynamic("validateExpiry")(validateExpiry)
+    val __obj = js.Dynamic.literal(applePay = applePay, bankAccount = bankAccount, card = card, cardType = cardType, createToken = createToken, getToken = getToken, setPublishableKey = setPublishableKey, validateCVC = validateCVC, validateCardNumber = validateCardNumber, validateExpiry = validateExpiry)
+  
     __obj.asInstanceOf[StripeStatic]
   }
 }

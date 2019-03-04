@@ -40,9 +40,7 @@ object ReactImageFallbackProps {
       scala.Unit
     ] = null
   ): ReactImageFallbackProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fallbackImage")(fallbackImage.asInstanceOf[js.Any])
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(fallbackImage = fallbackImage.asInstanceOf[js.Any], src = src)
     if (initialImage != null) __obj.updateDynamic("initialImage")(initialImage.asInstanceOf[js.Any])
     if (initialTimeout != null) __obj.updateDynamic("initialTimeout")(initialTimeout.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError)

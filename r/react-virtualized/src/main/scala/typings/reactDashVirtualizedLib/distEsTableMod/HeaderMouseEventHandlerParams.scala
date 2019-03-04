@@ -18,10 +18,8 @@ object HeaderMouseEventHandlerParams {
     dataKey: java.lang.String,
     event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]
   ): HeaderMouseEventHandlerParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnData")(columnData)
-    __obj.updateDynamic("dataKey")(dataKey)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(columnData = columnData, dataKey = dataKey, event = event)
+  
     __obj.asInstanceOf[HeaderMouseEventHandlerParams]
   }
 }

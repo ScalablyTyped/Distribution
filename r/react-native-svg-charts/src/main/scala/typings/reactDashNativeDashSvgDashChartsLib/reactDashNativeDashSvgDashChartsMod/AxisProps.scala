@@ -32,8 +32,7 @@ object AxisProps {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     svg: stdLib.Partial[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextProps] = null
   ): AxisProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
     if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale)

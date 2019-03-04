@@ -12,8 +12,8 @@ trait Anon_DispatchExt1[Ext1, Ext2] extends js.Object {
 object Anon_DispatchExt1 {
   @scala.inline
   def apply[Ext1, Ext2](dispatch: Ext1 with Ext2): Anon_DispatchExt1[Ext1, Ext2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DispatchExt1[Ext1, Ext2]]
   }
 }

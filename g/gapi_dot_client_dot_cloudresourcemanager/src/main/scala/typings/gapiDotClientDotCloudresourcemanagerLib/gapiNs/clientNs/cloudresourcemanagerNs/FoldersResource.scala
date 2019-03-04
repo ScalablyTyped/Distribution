@@ -65,13 +65,8 @@ object FoldersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
     ]
   ): FoldersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearOrgPolicy")(clearOrgPolicy)
-    __obj.updateDynamic("getEffectiveOrgPolicy")(getEffectiveOrgPolicy)
-    __obj.updateDynamic("getOrgPolicy")(getOrgPolicy)
-    __obj.updateDynamic("listAvailableOrgPolicyConstraints")(listAvailableOrgPolicyConstraints)
-    __obj.updateDynamic("listOrgPolicies")(listOrgPolicies)
-    __obj.updateDynamic("setOrgPolicy")(setOrgPolicy)
+    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getOrgPolicy = getOrgPolicy, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, setOrgPolicy = setOrgPolicy)
+  
     __obj.asInstanceOf[FoldersResource]
   }
 }

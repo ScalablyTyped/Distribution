@@ -18,10 +18,8 @@ object Anon_Data {
     encapsulation: atAngularCoreLib.srcMetadataViewMod.ViewEncapsulation,
     styles: js.Array[java.lang.String | js.Array[_]]
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("encapsulation")(encapsulation)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(data = data, encapsulation = encapsulation, styles = styles)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

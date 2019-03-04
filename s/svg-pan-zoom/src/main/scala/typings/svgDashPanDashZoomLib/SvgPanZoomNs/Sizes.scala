@@ -20,11 +20,8 @@ object Sizes {
     viewBox: svgDashPanDashZoomLib.Anon_Height,
     width: scala.Double
   ): Sizes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("realZoom")(realZoom)
-    __obj.updateDynamic("viewBox")(viewBox)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, realZoom = realZoom, viewBox = viewBox, width = width)
+  
     __obj.asInstanceOf[Sizes]
   }
 }

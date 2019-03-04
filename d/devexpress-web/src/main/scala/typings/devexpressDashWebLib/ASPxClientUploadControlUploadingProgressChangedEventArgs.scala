@@ -63,15 +63,8 @@ object ASPxClientUploadControlUploadingProgressChangedEventArgs {
     totalContentLength: scala.Double,
     uploadedContentLength: scala.Double
   ): ASPxClientUploadControlUploadingProgressChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentFileContentLength")(currentFileContentLength)
-    __obj.updateDynamic("currentFileName")(currentFileName)
-    __obj.updateDynamic("currentFileProgress")(currentFileProgress)
-    __obj.updateDynamic("currentFileUploadedContentLength")(currentFileUploadedContentLength)
-    __obj.updateDynamic("fileCount")(fileCount)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("totalContentLength")(totalContentLength)
-    __obj.updateDynamic("uploadedContentLength")(uploadedContentLength)
+    val __obj = js.Dynamic.literal(currentFileContentLength = currentFileContentLength, currentFileName = currentFileName, currentFileProgress = currentFileProgress, currentFileUploadedContentLength = currentFileUploadedContentLength, fileCount = fileCount, progress = progress, totalContentLength = totalContentLength, uploadedContentLength = uploadedContentLength)
+  
     __obj.asInstanceOf[ASPxClientUploadControlUploadingProgressChangedEventArgs]
   }
 }

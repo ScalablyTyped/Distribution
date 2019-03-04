@@ -42,9 +42,7 @@ object Anon_AccountIdAltFieldsFilterId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltFieldsFilterId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("filterId")(filterId)
+    val __obj = js.Dynamic.literal(accountId = accountId, filterId = filterId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

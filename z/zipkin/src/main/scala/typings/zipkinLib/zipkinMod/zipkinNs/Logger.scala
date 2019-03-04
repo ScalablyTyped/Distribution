@@ -15,8 +15,8 @@ trait Logger extends js.Object {
 object Logger {
   @scala.inline
   def apply(logSpan: js.Function1[zipkinLib.zipkinMod.zipkinNs.modelNs.Span, scala.Unit]): Logger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logSpan")(logSpan)
+    val __obj = js.Dynamic.literal(logSpan = logSpan)
+  
     __obj.asInstanceOf[Logger]
   }
 }

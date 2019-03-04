@@ -12,8 +12,8 @@ trait Anon_KVDataList extends js.Object {
 object Anon_KVDataList {
   @scala.inline
   def apply(KVDataList: js.Array[KVData]): Anon_KVDataList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KVDataList")(KVDataList)
+    val __obj = js.Dynamic.literal(KVDataList = KVDataList)
+  
     __obj.asInstanceOf[Anon_KVDataList]
   }
 }

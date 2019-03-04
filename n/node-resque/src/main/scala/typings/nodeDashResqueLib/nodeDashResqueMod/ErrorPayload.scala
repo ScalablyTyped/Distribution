@@ -26,14 +26,8 @@ object ErrorPayload {
     queue: java.lang.String,
     worker: java.lang.String
   ): ErrorPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backtrace")(backtrace)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("exception")(exception)
-    __obj.updateDynamic("failed_at")(failed_at)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("worker")(worker)
+    val __obj = js.Dynamic.literal(backtrace = backtrace, error = error, exception = exception, failed_at = failed_at, payload = payload, queue = queue, worker = worker)
+  
     __obj.asInstanceOf[ErrorPayload]
   }
 }

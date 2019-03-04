@@ -21,15 +21,8 @@ object Polygon {
     reset: js.Function0[scala.Unit],
     toggleEdit: js.Function0[scala.Unit]
   ): Polygon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("disableEdit")(disableEdit)
-    __obj.updateDynamic("editEnabled")(editEnabled)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enableEdit")(enableEdit)
-    __obj.updateDynamic("newHole")(newHole)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toggleEdit")(toggleEdit)
+    val __obj = js.Dynamic.literal(disable = disable, disableEdit = disableEdit, editEnabled = editEnabled, enable = enable, enableEdit = enableEdit, newHole = newHole, reset = reset, toggleEdit = toggleEdit)
+  
     __obj.asInstanceOf[Polygon]
   }
 }

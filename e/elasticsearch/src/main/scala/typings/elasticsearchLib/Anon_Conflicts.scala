@@ -20,9 +20,7 @@ object Anon_Conflicts {
     conflicts: java.lang.String = null,
     script: Anon_Inline = null
   ): Anon_Conflicts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dest")(dest)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(dest = dest, source = source)
     if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts)
     if (script != null) __obj.updateDynamic("script")(script)
     __obj.asInstanceOf[Anon_Conflicts]

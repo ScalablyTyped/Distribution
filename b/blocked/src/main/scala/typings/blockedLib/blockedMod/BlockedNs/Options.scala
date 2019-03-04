@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(threshold: scala.Double): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(threshold = threshold)
+  
     __obj.asInstanceOf[Options]
   }
 }

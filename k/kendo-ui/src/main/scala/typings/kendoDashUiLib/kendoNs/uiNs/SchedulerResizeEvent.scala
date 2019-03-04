@@ -19,10 +19,7 @@ object SchedulerResizeEvent {
     event: kendoDashUiLib.kendoNs.dataNs.SchedulerEvent = null,
     slot: js.Any = null
   ): SchedulerResizeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (event != null) __obj.updateDynamic("event")(event)
     if (slot != null) __obj.updateDynamic("slot")(slot)
     __obj.asInstanceOf[SchedulerResizeEvent]

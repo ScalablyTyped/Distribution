@@ -47,15 +47,8 @@ object Lexer {
     source: graphqlLib.languageSourceMod.Source,
     token: graphqlLib.languageAstMod.Token
   ): Lexer[TOptions] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("advance")(advance)
-    __obj.updateDynamic("lastToken")(lastToken)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("lineStart")(lineStart)
-    __obj.updateDynamic("lookahead")(lookahead)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(advance = advance, lastToken = lastToken, line = line, lineStart = lineStart, lookahead = lookahead, options = options.asInstanceOf[js.Any], source = source, token = token)
+  
     __obj.asInstanceOf[Lexer[TOptions]]
   }
 }

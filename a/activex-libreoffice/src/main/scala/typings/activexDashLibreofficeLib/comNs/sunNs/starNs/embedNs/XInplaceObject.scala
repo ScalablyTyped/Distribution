@@ -61,13 +61,8 @@ object XInplaceObject {
       scala.Unit
     ]
   ): XInplaceObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("enableModeless")(enableModeless)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setObjectRectangles")(setObjectRectangles)
-    __obj.updateDynamic("translateAccelerators")(translateAccelerators)
+    val __obj = js.Dynamic.literal(acquire = acquire, enableModeless = enableModeless, queryInterface = queryInterface, release = release, setObjectRectangles = setObjectRectangles, translateAccelerators = translateAccelerators)
+  
     __obj.asInstanceOf[XInplaceObject]
   }
 }

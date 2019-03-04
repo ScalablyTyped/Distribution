@@ -36,10 +36,7 @@ object Failed {
     reason: java.lang.String,
     headers: js.Object = null
   ): Failed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("call")(call)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(call = call, code = code, reason = reason)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[Failed]
   }

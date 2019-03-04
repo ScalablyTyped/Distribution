@@ -12,8 +12,8 @@ trait ApplicationEvent extends js.Object {
 object ApplicationEvent {
   @scala.inline
   def apply(sender: Application): ApplicationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(sender = sender)
+  
     __obj.asInstanceOf[ApplicationEvent]
   }
 }

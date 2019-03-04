@@ -18,8 +18,7 @@ object Anon_DeploymentReadyOption {
     deploymentReadyOption: Anon_ActionOnTimeout = null,
     terminateBlueInstancesOnDeploymentSuccess: Anon_ActionTerminationWaitTimeInMinutes = null
   ): Anon_DeploymentReadyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("greenFleetProvisioningOption")(greenFleetProvisioningOption)
+    val __obj = js.Dynamic.literal(greenFleetProvisioningOption = greenFleetProvisioningOption)
     if (deploymentReadyOption != null) __obj.updateDynamic("deploymentReadyOption")(deploymentReadyOption)
     if (terminateBlueInstancesOnDeploymentSuccess != null) __obj.updateDynamic("terminateBlueInstancesOnDeploymentSuccess")(terminateBlueInstancesOnDeploymentSuccess)
     __obj.asInstanceOf[Anon_DeploymentReadyOption]

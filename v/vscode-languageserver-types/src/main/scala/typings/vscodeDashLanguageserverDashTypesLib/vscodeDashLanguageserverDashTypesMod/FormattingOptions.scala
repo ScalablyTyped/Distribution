@@ -30,9 +30,7 @@ object FormattingOptions {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[scala.Boolean | scala.Double | java.lang.String] = null
   ): FormattingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insertSpaces")(insertSpaces)
-    __obj.updateDynamic("tabSize")(tabSize)
+    val __obj = js.Dynamic.literal(insertSpaces = insertSpaces, tabSize = tabSize)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FormattingOptions]
   }

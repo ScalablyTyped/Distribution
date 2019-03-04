@@ -19,8 +19,8 @@ trait JSONSupport extends js.Object {
 object JSONSupport {
   @scala.inline
   def apply(toJSON: js.Function0[js.Any]): JSONSupport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
+  
     __obj.asInstanceOf[JSONSupport]
   }
 }

@@ -55,12 +55,12 @@ object By extends js.Object {
     *     A new JavaScript-based locator function.
     */
   @JSName("js")
-  def `js_`(script: java.lang.String, var_args: js.Any*): js.Function1[
+  def js_(script: java.lang.String, var_args: js.Any*): js.Function1[
     /* webdriver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]
   ] = js.native
   @JSName("js")
-  def `js_`(script: js.Function, var_args: js.Any*): js.Function1[
+  def js_(script: js.Function, var_args: js.Any*): js.Function1[
     /* webdriver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]
   ] = js.native

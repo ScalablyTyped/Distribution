@@ -13,9 +13,8 @@ trait Anon_Align extends js.Object {
 object Anon_Align {
   @scala.inline
   def apply(align: java.lang.String, header: scala.Boolean): Anon_Align = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(align = align, header = header)
+  
     __obj.asInstanceOf[Anon_Align]
   }
 }

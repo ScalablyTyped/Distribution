@@ -96,23 +96,8 @@ object XElement {
     release: js.Function0[scala.Unit],
     startChildElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
   ): XElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attributes")(Attributes)
-    __obj.updateDynamic("LocalName")(LocalName)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("Uid")(Uid)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("endElement")(endElement)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getLocalName")(getLocalName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getUid")(getUid)
-    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startChildElement")(startChildElement)
+    val __obj = js.Dynamic.literal(Attributes = Attributes, LocalName = LocalName, Parent = Parent, Uid = Uid, acquire = acquire, characters = characters, endElement = endElement, getAttributes = getAttributes, getLocalName = getLocalName, getParent = getParent, getUid = getUid, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, startChildElement = startChildElement)
+  
     __obj.asInstanceOf[XElement]
   }
 }

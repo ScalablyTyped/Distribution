@@ -20,9 +20,7 @@ object ExchangeRatesApiOptions {
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     roundingMode: RoundingMode = null
   ): ExchangeRatesApiOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("propertyPath")(propertyPath)
+    val __obj = js.Dynamic.literal(endpoint = endpoint, propertyPath = propertyPath)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (roundingMode != null) __obj.updateDynamic("roundingMode")(roundingMode)
     __obj.asInstanceOf[ExchangeRatesApiOptions]

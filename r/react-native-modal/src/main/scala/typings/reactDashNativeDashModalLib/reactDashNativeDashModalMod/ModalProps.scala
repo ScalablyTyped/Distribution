@@ -98,9 +98,7 @@ object ModalProps {
     swipeThreshold: scala.Int | scala.Double = null,
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
   ): ModalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("isVisible")(isVisible)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isVisible = isVisible)
     if (animationIn != null) __obj.updateDynamic("animationIn")(animationIn.asInstanceOf[js.Any])
     if (animationInTiming != null) __obj.updateDynamic("animationInTiming")(animationInTiming.asInstanceOf[js.Any])
     if (animationOut != null) __obj.updateDynamic("animationOut")(animationOut.asInstanceOf[js.Any])

@@ -19,10 +19,8 @@ object CalendarDayPhrases {
     dateIsSelected: js.Function1[java.lang.String, java.lang.String],
     dateIsUnavailable: js.Function1[java.lang.String, java.lang.String]
   ): CalendarDayPhrases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chooseAvailableDate")(chooseAvailableDate)
-    __obj.updateDynamic("dateIsSelected")(dateIsSelected)
-    __obj.updateDynamic("dateIsUnavailable")(dateIsUnavailable)
+    val __obj = js.Dynamic.literal(chooseAvailableDate = chooseAvailableDate, dateIsSelected = dateIsSelected, dateIsUnavailable = dateIsUnavailable)
+  
     __obj.asInstanceOf[CalendarDayPhrases]
   }
 }

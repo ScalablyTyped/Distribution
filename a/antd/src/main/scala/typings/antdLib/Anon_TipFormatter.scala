@@ -12,8 +12,8 @@ trait Anon_TipFormatter extends js.Object {
 object Anon_TipFormatter {
   @scala.inline
   def apply(tipFormatter: js.Function1[scala.Double, java.lang.String]): Anon_TipFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tipFormatter")(tipFormatter)
+    val __obj = js.Dynamic.literal(tipFormatter = tipFormatter)
+  
     __obj.asInstanceOf[Anon_TipFormatter]
   }
 }

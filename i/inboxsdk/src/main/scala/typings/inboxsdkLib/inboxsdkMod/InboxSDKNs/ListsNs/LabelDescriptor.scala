@@ -24,9 +24,7 @@ object LabelDescriptor {
     iconBackgroundColor: java.lang.String = null,
     iconClass: java.lang.String = null
   ): LabelDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, title = title)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
     if (iconBackgroundColor != null) __obj.updateDynamic("iconBackgroundColor")(iconBackgroundColor)

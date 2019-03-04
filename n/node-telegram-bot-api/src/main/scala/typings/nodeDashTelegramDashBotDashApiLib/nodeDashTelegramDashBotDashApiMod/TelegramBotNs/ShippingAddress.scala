@@ -24,13 +24,8 @@ object ShippingAddress {
     street_line1: java.lang.String,
     street_line2: java.lang.String
   ): ShippingAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country_code")(country_code)
-    __obj.updateDynamic("post_code")(post_code)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("street_line1")(street_line1)
-    __obj.updateDynamic("street_line2")(street_line2)
+    val __obj = js.Dynamic.literal(city = city, country_code = country_code, post_code = post_code, state = state, street_line1 = street_line1, street_line2 = street_line2)
+  
     __obj.asInstanceOf[ShippingAddress]
   }
 }

@@ -29,8 +29,8 @@ object IVaultNotificationOperations {
       scala.Unit
     ]
   ): IVaultNotificationOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SendCustomNotification")(SendCustomNotification)
+    val __obj = js.Dynamic.literal(SendCustomNotification = SendCustomNotification)
+  
     __obj.asInstanceOf[IVaultNotificationOperations]
   }
 }

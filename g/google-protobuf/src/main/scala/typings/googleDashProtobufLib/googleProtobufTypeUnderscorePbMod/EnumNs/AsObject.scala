@@ -24,11 +24,7 @@ object AsObject {
     syntax: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Syntax,
     sourceContext: googleDashProtobufLib.googleProtobufSourceUnderscoreContextUnderscorePbMod.SourceContextNs.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumvalueList")(enumvalueList)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optionsList")(optionsList)
-    __obj.updateDynamic("syntax")(syntax)
+    val __obj = js.Dynamic.literal(enumvalueList = enumvalueList, name = name, optionsList = optionsList, syntax = syntax)
     if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
     __obj.asInstanceOf[AsObject]
   }

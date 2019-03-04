@@ -72,16 +72,8 @@ object XOfficeInstallationDirectories {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XOfficeInstallationDirectories = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OfficeInstallationDirectoryURL")(OfficeInstallationDirectoryURL)
-    __obj.updateDynamic("OfficeUserDataDirectoryURL")(OfficeUserDataDirectoryURL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getOfficeInstallationDirectoryURL")(getOfficeInstallationDirectoryURL)
-    __obj.updateDynamic("getOfficeUserDataDirectoryURL")(getOfficeUserDataDirectoryURL)
-    __obj.updateDynamic("makeAbsoluteURL")(makeAbsoluteURL)
-    __obj.updateDynamic("makeRelocatableURL")(makeRelocatableURL)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(OfficeInstallationDirectoryURL = OfficeInstallationDirectoryURL, OfficeUserDataDirectoryURL = OfficeUserDataDirectoryURL, acquire = acquire, getOfficeInstallationDirectoryURL = getOfficeInstallationDirectoryURL, getOfficeUserDataDirectoryURL = getOfficeUserDataDirectoryURL, makeAbsoluteURL = makeAbsoluteURL, makeRelocatableURL = makeRelocatableURL, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XOfficeInstallationDirectories]
   }
 }

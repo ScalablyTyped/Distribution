@@ -26,11 +26,8 @@ object WatchInfo {
     model: java.lang.String,
     platform: java.lang.String
   ): WatchInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firmware")(firmware)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(firmware = firmware, language = language, model = model, platform = platform)
+  
     __obj.asInstanceOf[WatchInfo]
   }
 }

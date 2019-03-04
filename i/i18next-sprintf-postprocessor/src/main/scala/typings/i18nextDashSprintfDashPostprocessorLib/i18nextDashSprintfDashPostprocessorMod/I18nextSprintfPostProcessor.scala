@@ -23,10 +23,8 @@ object I18nextSprintfPostProcessor {
     process: js.Function3[js.Any, java.lang.String, js.Any, js.Any],
     `type`: java.lang.String
   ): I18nextSprintfPostProcessor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overloadTranslationOptionHandler")(overloadTranslationOptionHandler)
-    __obj.updateDynamic("process")(process)
+    val __obj = js.Dynamic.literal(name = name, overloadTranslationOptionHandler = overloadTranslationOptionHandler, process = process)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[I18nextSprintfPostProcessor]
   }
 }

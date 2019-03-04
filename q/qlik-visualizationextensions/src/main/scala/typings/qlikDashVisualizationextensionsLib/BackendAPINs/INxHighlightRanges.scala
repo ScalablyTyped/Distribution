@@ -16,8 +16,8 @@ trait INxHighlightRanges extends js.Object {
 object INxHighlightRanges {
   @scala.inline
   def apply(qRanges: js.Array[ICharRange]): INxHighlightRanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qRanges")(qRanges)
+    val __obj = js.Dynamic.literal(qRanges = qRanges)
+  
     __obj.asInstanceOf[INxHighlightRanges]
   }
 }

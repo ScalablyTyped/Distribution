@@ -20,11 +20,8 @@ object AccessToken {
     refresh_token: java.lang.String,
     token_type: java.lang.String
   ): AccessToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("refresh_token")(refresh_token)
-    __obj.updateDynamic("token_type")(token_type)
+    val __obj = js.Dynamic.literal(access_token = access_token, expires_in = expires_in, refresh_token = refresh_token, token_type = token_type)
+  
     __obj.asInstanceOf[AccessToken]
   }
 }

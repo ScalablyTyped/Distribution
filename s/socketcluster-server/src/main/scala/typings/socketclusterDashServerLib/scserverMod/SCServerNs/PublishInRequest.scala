@@ -22,8 +22,7 @@ object PublishInRequest {
     channel: java.lang.String = null,
     data: js.Any = null
   ): PublishInRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("socket")(socket)
+    val __obj = js.Dynamic.literal(socket = socket)
     if (ackData != null) __obj.updateDynamic("ackData")(ackData)
     if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError)
     if (channel != null) __obj.updateDynamic("channel")(channel)

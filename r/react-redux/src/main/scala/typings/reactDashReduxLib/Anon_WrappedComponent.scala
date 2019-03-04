@@ -12,8 +12,8 @@ trait Anon_WrappedComponent[C] extends js.Object {
 object Anon_WrappedComponent {
   @scala.inline
   def apply[C](WrappedComponent: C): Anon_WrappedComponent[C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WrappedComponent")(WrappedComponent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(WrappedComponent = WrappedComponent.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_WrappedComponent[C]]
   }
 }

@@ -30,10 +30,7 @@ object PageletOption {
     locals: js.Object = null,
     mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode = null
   ): PageletOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("reqID")(reqID)
-    __obj.updateDynamic("skipAnalysis")(skipAnalysis)
+    val __obj = js.Dynamic.literal(id = id, reqID = reqID, skipAnalysis = skipAnalysis)
     if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled)
     if (container != null) __obj.updateDynamic("container")(container)
     if (`for` != null) __obj.updateDynamic("for")(`for`)

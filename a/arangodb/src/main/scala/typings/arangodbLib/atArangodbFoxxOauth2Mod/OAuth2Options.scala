@@ -24,11 +24,7 @@ object OAuth2Options {
     activeUserEndpoint: java.lang.String = null,
     refreshEndpoint: java.lang.String = null
   ): OAuth2Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authEndpoint")(authEndpoint)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("tokenEndpoint")(tokenEndpoint)
+    val __obj = js.Dynamic.literal(authEndpoint = authEndpoint, clientId = clientId, clientSecret = clientSecret, tokenEndpoint = tokenEndpoint)
     if (activeUserEndpoint != null) __obj.updateDynamic("activeUserEndpoint")(activeUserEndpoint)
     if (refreshEndpoint != null) __obj.updateDynamic("refreshEndpoint")(refreshEndpoint)
     __obj.asInstanceOf[OAuth2Options]

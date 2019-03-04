@@ -15,8 +15,8 @@ trait IValueExpr extends js.Object {
 object IValueExpr {
   @scala.inline
   def apply(qv: java.lang.String): IValueExpr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qv")(qv)
+    val __obj = js.Dynamic.literal(qv = qv)
+  
     __obj.asInstanceOf[IValueExpr]
   }
 }

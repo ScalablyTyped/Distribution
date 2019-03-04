@@ -44,10 +44,7 @@ object Anon_AltBackendServiceFieldsKeyOauthtoken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBackendServiceFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backendService")(backendService)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(backendService = backendService, project = project, region = region)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

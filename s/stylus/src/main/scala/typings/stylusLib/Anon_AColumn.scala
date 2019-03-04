@@ -28,15 +28,8 @@ object Anon_AColumn {
     lineno: scala.Double,
     s: scala.Double
   ): Anon_AColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("l")(l)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("s")(s)
+    val __obj = js.Dynamic.literal(__type = __type, a = a, column = column, filename = filename, h = h, l = l, lineno = lineno, s = s)
+  
     __obj.asInstanceOf[Anon_AColumn]
   }
 }

@@ -41,12 +41,8 @@ object XFastPropertySet {
     release: js.Function0[scala.Unit],
     setFastPropertyValue: js.Function2[scala.Double, js.Any, scala.Unit]
   ): XFastPropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFastPropertyValue")(getFastPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFastPropertyValue")(setFastPropertyValue)
+    val __obj = js.Dynamic.literal(acquire = acquire, getFastPropertyValue = getFastPropertyValue, queryInterface = queryInterface, release = release, setFastPropertyValue = setFastPropertyValue)
+  
     __obj.asInstanceOf[XFastPropertySet]
   }
 }

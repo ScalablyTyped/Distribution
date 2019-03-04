@@ -17,10 +17,8 @@ object EventException {
     Message: java.lang.String,
     code: scala.Double
   ): EventException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, code = code)
+  
     __obj.asInstanceOf[EventException]
   }
 }

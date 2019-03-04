@@ -18,8 +18,7 @@ object UrlParts {
     hash: java.lang.String = null,
     search: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): UrlParts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (search != null) __obj.updateDynamic("search")(search)
     __obj.asInstanceOf[UrlParts]

@@ -14,10 +14,8 @@ trait Enum extends js.Object {
 object Enum {
   @scala.inline
   def apply(name: java.lang.String, options: js.Object, values: js.Object): Enum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(name = name, options = options, values = values)
+  
     __obj.asInstanceOf[Enum]
   }
 }

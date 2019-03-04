@@ -18,10 +18,8 @@ object Round {
     floor: js.Function1[scala.Double, scala.Double],
     round: js.Function1[scala.Double, scala.Double]
   ): Round = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ceil")(ceil)
-    __obj.updateDynamic("floor")(floor)
-    __obj.updateDynamic("round")(round)
+    val __obj = js.Dynamic.literal(ceil = ceil, floor = floor, round = round)
+  
     __obj.asInstanceOf[Round]
   }
 }

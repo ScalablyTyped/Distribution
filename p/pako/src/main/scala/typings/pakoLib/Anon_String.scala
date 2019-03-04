@@ -12,8 +12,8 @@ trait Anon_String extends js.Object {
 object Anon_String {
   @scala.inline
   def apply(to: pakoLib.pakoLibStrings.string): Anon_String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(to = to)
+  
     __obj.asInstanceOf[Anon_String]
   }
 }

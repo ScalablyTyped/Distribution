@@ -99,9 +99,7 @@ object AccessibleFakeInkedButtonProps {
     tabbedClassName: java.lang.String = null,
     waitForInkTransition: js.UndefOr[scala.Boolean] = js.undefined
   ): AccessibleFakeInkedButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blur")(blur)
-    __obj.updateDynamic("focus")(focus)
+    val __obj = js.Dynamic.literal(blur = blur, focus = focus)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

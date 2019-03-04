@@ -272,18 +272,8 @@ object TriggeredEvent {
     view: stdLib.Window = null,
     which: scala.Int | scala.Double = null
   ): TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("delegateTarget")(delegateTarget.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target.asInstanceOf[js.Any], timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])

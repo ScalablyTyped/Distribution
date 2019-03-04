@@ -40,12 +40,8 @@ object Dispatcher {
     unregister: js.Function1[java.lang.String, scala.Unit],
     waitFor: js.Function1[js.Array[java.lang.String], scala.Unit]
   ): Dispatcher[TPayload] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("isDispatching")(isDispatching)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("unregister")(unregister)
-    __obj.updateDynamic("waitFor")(waitFor)
+    val __obj = js.Dynamic.literal(dispatch = dispatch, isDispatching = isDispatching, register = register, unregister = unregister, waitFor = waitFor)
+  
     __obj.asInstanceOf[Dispatcher[TPayload]]
   }
 }

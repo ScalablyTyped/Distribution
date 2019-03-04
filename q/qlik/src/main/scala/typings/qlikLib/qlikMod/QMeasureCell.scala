@@ -20,10 +20,7 @@ object QMeasureCell {
     qText: java.lang.String,
     qNum: scala.Int | scala.Double = null
   ): QMeasureCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPercent")(getPercent)
-    __obj.updateDynamic("getPercentOfMax")(getPercentOfMax)
-    __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(getPercent = getPercent, getPercentOfMax = getPercentOfMax, qText = qText)
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[QMeasureCell]
   }

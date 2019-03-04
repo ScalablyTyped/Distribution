@@ -17,10 +17,8 @@ object SessionsMiddleware {
     storage: SessionStorage,
     transport: js.Array[SessionTransport]
   ): SessionsMiddleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("storage")(storage)
-    __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(register = register, storage = storage, transport = transport)
+  
     __obj.asInstanceOf[SessionsMiddleware]
   }
 }

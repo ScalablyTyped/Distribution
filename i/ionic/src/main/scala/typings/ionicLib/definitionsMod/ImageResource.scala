@@ -34,15 +34,7 @@ object ImageResource {
     imageId: java.lang.String = null,
     orientation: ionicLib.ionicLibStrings.landscape | ionicLib.ionicLibStrings.portrait = null
   ): ImageResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dest")(dest)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeAttributes")(nodeAttributes)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("resType")(resType)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(dest = dest, height = height, name = name, nodeAttributes = nodeAttributes, nodeName = nodeName, platform = platform, resType = resType, width = width)
     if (density != null) __obj.updateDynamic("density")(density)
     if (imageId != null) __obj.updateDynamic("imageId")(imageId)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])

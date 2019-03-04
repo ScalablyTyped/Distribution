@@ -19,11 +19,8 @@ object RollObject {
     toString: js.Function0[java.lang.String],
     transformations: js.Array[rollLib.RollTransformation]
   ): RollObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quantity")(quantity)
-    __obj.updateDynamic("sides")(sides)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("transformations")(transformations)
+    val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = toString, transformations = transformations)
+  
     __obj.asInstanceOf[RollObject]
   }
 }

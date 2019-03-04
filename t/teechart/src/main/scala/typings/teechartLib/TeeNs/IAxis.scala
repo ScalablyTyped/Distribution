@@ -84,40 +84,8 @@ object IAxis {
     title: IAxisTitle,
     visible: scala.Boolean
   ): IAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automatic")(automatic)
-    __obj.updateDynamic("axisSize")(axisSize)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("calc")(calc)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endPos")(endPos)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("fromPos")(fromPos)
-    __obj.updateDynamic("fromSize")(fromSize)
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("hasAnySeries")(hasAnySeries)
-    __obj.updateDynamic("horizontal")(horizontal)
-    __obj.updateDynamic("increm")(increm)
-    __obj.updateDynamic("increment")(increment)
-    __obj.updateDynamic("innerTicks")(innerTicks)
-    __obj.updateDynamic("inverted")(inverted)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("maximum")(maximum)
-    __obj.updateDynamic("minimum")(minimum)
-    __obj.updateDynamic("minorTicks")(minorTicks)
-    __obj.updateDynamic("otherSize")(otherSize)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("scroll")(scroll)
-    __obj.updateDynamic("setMinMax")(setMinMax)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startPos")(startPos)
-    __obj.updateDynamic("ticks")(ticks)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(automatic = automatic, axisSize = axisSize, bounds = bounds, calc = calc, chart = chart, custom = custom, end = end, endPos = endPos, format = format, fromPos = fromPos, fromSize = fromSize, grid = grid, hasAnySeries = hasAnySeries, horizontal = horizontal, increm = increm, increment = increment, innerTicks = innerTicks, inverted = inverted, labels = labels, log = log, maximum = maximum, minimum = minimum, minorTicks = minorTicks, otherSize = otherSize, position = position, scale = scale, scroll = scroll, setMinMax = setMinMax, start = start, startPos = startPos, ticks = ticks, title = title, visible = visible)
+  
     __obj.asInstanceOf[IAxis]
   }
 }

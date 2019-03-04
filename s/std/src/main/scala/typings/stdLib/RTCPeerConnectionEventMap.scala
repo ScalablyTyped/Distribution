@@ -32,17 +32,8 @@ object RTCPeerConnectionEventMap {
     statsended: RTCStatsEvent,
     track: RTCTrackEvent
   ): RTCPeerConnectionEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionstatechange")(connectionstatechange)
-    __obj.updateDynamic("datachannel")(datachannel)
-    __obj.updateDynamic("icecandidate")(icecandidate)
-    __obj.updateDynamic("icecandidateerror")(icecandidateerror)
-    __obj.updateDynamic("iceconnectionstatechange")(iceconnectionstatechange)
-    __obj.updateDynamic("icegatheringstatechange")(icegatheringstatechange)
-    __obj.updateDynamic("negotiationneeded")(negotiationneeded)
-    __obj.updateDynamic("signalingstatechange")(signalingstatechange)
-    __obj.updateDynamic("statsended")(statsended)
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(connectionstatechange = connectionstatechange, datachannel = datachannel, icecandidate = icecandidate, icecandidateerror = icecandidateerror, iceconnectionstatechange = iceconnectionstatechange, icegatheringstatechange = icegatheringstatechange, negotiationneeded = negotiationneeded, signalingstatechange = signalingstatechange, statsended = statsended, track = track)
+  
     __obj.asInstanceOf[RTCPeerConnectionEventMap]
   }
 }

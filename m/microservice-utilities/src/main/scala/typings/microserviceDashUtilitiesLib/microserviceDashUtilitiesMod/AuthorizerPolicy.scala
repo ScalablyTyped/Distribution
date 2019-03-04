@@ -13,9 +13,8 @@ trait AuthorizerPolicy extends js.Object {
 object AuthorizerPolicy {
   @scala.inline
   def apply(policyDocument: js.Object, principalId: java.lang.String): AuthorizerPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policyDocument")(policyDocument)
-    __obj.updateDynamic("principalId")(principalId)
+    val __obj = js.Dynamic.literal(policyDocument = policyDocument, principalId = principalId)
+  
     __obj.asInstanceOf[AuthorizerPolicy]
   }
 }

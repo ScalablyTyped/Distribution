@@ -67,8 +67,7 @@ object InitOpts {
     summary: js.UndefOr[scala.Boolean] = js.undefined,
     unknown: js.UndefOr[scala.Boolean] = js.undefined
   ): InitOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(start = start)
     if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
     if (customPath != null) __obj.updateDynamic("customPath")(customPath.asInstanceOf[js.Any])
     if (!js.isUndefined(development)) __obj.updateDynamic("development")(development)

@@ -18,10 +18,8 @@ object Anon_Close {
     options: webpackDashHotDashClientLib.webpackDashHotDashClientMod.WebpackHotClientNs.Options,
     server: js.Any
   ): Anon_Close = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(close = close, options = options, server = server)
+  
     __obj.asInstanceOf[Anon_Close]
   }
 }

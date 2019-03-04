@@ -20,10 +20,7 @@ object Anon_DefaultValue {
     value: java.lang.String,
     defaultValue: java.lang.String = null
   ): Anon_DefaultValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, value = value)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     __obj.asInstanceOf[Anon_DefaultValue]
   }

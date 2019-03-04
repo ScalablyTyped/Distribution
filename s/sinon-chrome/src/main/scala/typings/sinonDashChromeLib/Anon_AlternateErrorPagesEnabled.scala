@@ -26,14 +26,8 @@ object Anon_AlternateErrorPagesEnabled {
     spellingServiceEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting,
     translationServiceEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting
   ): Anon_AlternateErrorPagesEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alternateErrorPagesEnabled")(alternateErrorPagesEnabled)
-    __obj.updateDynamic("autofillEnabled")(autofillEnabled)
-    __obj.updateDynamic("passwordSavingEnabled")(passwordSavingEnabled)
-    __obj.updateDynamic("safeBrowsingEnabled")(safeBrowsingEnabled)
-    __obj.updateDynamic("searchSuggestEnabled")(searchSuggestEnabled)
-    __obj.updateDynamic("spellingServiceEnabled")(spellingServiceEnabled)
-    __obj.updateDynamic("translationServiceEnabled")(translationServiceEnabled)
+    val __obj = js.Dynamic.literal(alternateErrorPagesEnabled = alternateErrorPagesEnabled, autofillEnabled = autofillEnabled, passwordSavingEnabled = passwordSavingEnabled, safeBrowsingEnabled = safeBrowsingEnabled, searchSuggestEnabled = searchSuggestEnabled, spellingServiceEnabled = spellingServiceEnabled, translationServiceEnabled = translationServiceEnabled)
+  
     __obj.asInstanceOf[Anon_AlternateErrorPagesEnabled]
   }
 }

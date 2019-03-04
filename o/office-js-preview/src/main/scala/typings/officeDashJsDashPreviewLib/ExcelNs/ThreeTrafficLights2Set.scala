@@ -20,10 +20,7 @@ object ThreeTrafficLights2Set {
     yellowTrafficLight: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): ThreeTrafficLights2Set = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("greenTrafficLight")(greenTrafficLight)
-    __obj.updateDynamic("redTrafficLight")(redTrafficLight)
-    __obj.updateDynamic("yellowTrafficLight")(yellowTrafficLight)
+    val __obj = js.Dynamic.literal(greenTrafficLight = greenTrafficLight, redTrafficLight = redTrafficLight, yellowTrafficLight = yellowTrafficLight)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeTrafficLights2Set]
   }

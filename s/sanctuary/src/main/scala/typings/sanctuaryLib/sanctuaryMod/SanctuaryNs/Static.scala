@@ -60,10 +60,10 @@ trait Static extends js.Object {
   def concat[A](x: sanctuaryLib.sanctuaryMod.StrMap[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.StrMap[A], sanctuaryLib.sanctuaryMod.StrMap[A]] = js.native
   def contramap[A, B](f: sanctuaryLib.Fn[B, A]): sanctuaryLib.Anon_Contravariant[A, B] = js.native
   //  Function
-  def curry2[A, B, C](f: sanctuaryLib.`Fn2_`[A, B, C]): sanctuaryLib.Fn2[A, B, C] = js.native
-  def curry3[A, B, C, D](f: sanctuaryLib.`Fn3_`[A, B, C, D]): sanctuaryLib.Fn3[A, B, C, D] = js.native
-  def curry4[A, B, C, D, E](f: sanctuaryLib.`Fn4_`[A, B, C, D, E]): sanctuaryLib.Fn4[A, B, C, D, E] = js.native
-  def curry5[A, B, C, D, E, F](f: sanctuaryLib.`Fn5_`[A, B, C, D, E, F]): sanctuaryLib.Fn5[A, B, C, D, E, F] = js.native
+  def curry2[A, B, C](f: sanctuaryLib.Fn2_[A, B, C]): sanctuaryLib.Fn2[A, B, C] = js.native
+  def curry3[A, B, C, D](f: sanctuaryLib.Fn3_[A, B, C, D]): sanctuaryLib.Fn3[A, B, C, D] = js.native
+  def curry4[A, B, C, D, E](f: sanctuaryLib.Fn4_[A, B, C, D, E]): sanctuaryLib.Fn4[A, B, C, D, E] = js.native
+  def curry5[A, B, C, D, E, F](f: sanctuaryLib.Fn5_[A, B, C, D, E, F]): sanctuaryLib.Fn5[A, B, C, D, E, F] = js.native
   def div(p: sanctuaryLib.NonZeroFiniteNumber): js.Function1[/* q */ sanctuaryLib.FiniteNumber, sanctuaryLib.FiniteNumber] = js.native
   def drop(n: sanctuaryLib.Integer): sanctuaryLib.sanctuaryMod.ListToMaybeList = js.native
   def dropLast(n: sanctuaryLib.Integer): sanctuaryLib.sanctuaryMod.ListToMaybeList = js.native
@@ -114,7 +114,7 @@ trait Static extends js.Object {
   def flip[A, B, C](f: sanctuaryLib.Fn2[A, B, C]): sanctuaryLib.Fn2[B, A, C] = js.native
   def fromEither[B](p: B): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Either[_, B], B] = js.native
   def fromMaybe[A](p: A): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Maybe[A], A] = js.native
-  def `fromMaybe_`[A](p: sanctuaryLib.Thunk[A]): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Maybe[A], A] = js.native
+  def fromMaybe_[A](p: sanctuaryLib.Thunk[A]): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Maybe[A], A] = js.native
   def get(p: sanctuaryLib.Predicate[_]): js.Function1[
     /* q */ java.lang.String, 
     js.Function1[/* r */ _, sanctuaryLib.sanctuaryMod.Maybe[_]]
@@ -142,10 +142,10 @@ trait Static extends js.Object {
   //  TODO: Maybe
   def isNothing(p: sanctuaryLib.sanctuaryMod.Maybe[_]): scala.Boolean = js.native
   def isRight(p: sanctuaryLib.sanctuaryMod.Either[_, _]): scala.Boolean = js.native
-  def join[A](`chain_`: js.Array[js.Array[A]]): js.Array[A] = js.native
-  def join[A](`chain_`: sanctuaryLib.sanctuaryMod.Chain[sanctuaryLib.sanctuaryMod.Chain[A]]): sanctuaryLib.sanctuaryMod.Chain[A] = js.native
-  def join[A](`chain_`: sanctuaryLib.sanctuaryMod.Maybe[sanctuaryLib.sanctuaryMod.Maybe[A]]): sanctuaryLib.sanctuaryMod.Maybe[A] = js.native
-  def join[A, B](`chain_`: sanctuaryLib.Fn2[B, B, A]): sanctuaryLib.Fn[B, A] = js.native
+  def join[A](chain_ : js.Array[js.Array[A]]): js.Array[A] = js.native
+  def join[A](chain_ : sanctuaryLib.sanctuaryMod.Chain[sanctuaryLib.sanctuaryMod.Chain[A]]): sanctuaryLib.sanctuaryMod.Chain[A] = js.native
+  def join[A](chain_ : sanctuaryLib.sanctuaryMod.Maybe[sanctuaryLib.sanctuaryMod.Maybe[A]]): sanctuaryLib.sanctuaryMod.Maybe[A] = js.native
+  def join[A, B](chain_ : sanctuaryLib.Fn2[B, B, A]): sanctuaryLib.Fn[B, A] = js.native
   def joinWith(p: java.lang.String): js.Function1[/* q */ js.Array[java.lang.String], java.lang.String] = js.native
   def justs[A](p: js.Array[sanctuaryLib.sanctuaryMod.Maybe[A]]): js.Array[A] = js.native
   //  StrMap
@@ -172,7 +172,7 @@ trait Static extends js.Object {
   ] = js.native
   def maybeToEither[A](p: A): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Maybe[_], sanctuaryLib.sanctuaryMod.Either[A, _]] = js.native
   def maybeToNullable[A](p: sanctuaryLib.sanctuaryMod.Maybe[A]): sanctuaryLib.Nullable[A] = js.native
-  def `maybe_`[B](p: sanctuaryLib.Thunk[B]): js.Function1[
+  def maybe_[B](p: sanctuaryLib.Thunk[B]): js.Function1[
     /* q */ sanctuaryLib.Fn[_, B], 
     js.Function1[/* r */ sanctuaryLib.sanctuaryMod.Maybe[_], B]
   ] = js.native

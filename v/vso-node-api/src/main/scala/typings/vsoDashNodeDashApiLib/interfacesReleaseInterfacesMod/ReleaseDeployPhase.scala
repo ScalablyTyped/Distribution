@@ -32,17 +32,8 @@ object ReleaseDeployPhase {
     runPlanId: java.lang.String,
     status: DeployPhaseStatus
   ): ReleaseDeployPhase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deploymentJobs")(deploymentJobs)
-    __obj.updateDynamic("errorLog")(errorLog)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("manualInterventions")(manualInterventions)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phaseId")(phaseId)
-    __obj.updateDynamic("phaseType")(phaseType)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("runPlanId")(runPlanId)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(deploymentJobs = deploymentJobs, errorLog = errorLog, id = id, manualInterventions = manualInterventions, name = name, phaseId = phaseId, phaseType = phaseType, rank = rank, runPlanId = runPlanId, status = status)
+  
     __obj.asInstanceOf[ReleaseDeployPhase]
   }
 }

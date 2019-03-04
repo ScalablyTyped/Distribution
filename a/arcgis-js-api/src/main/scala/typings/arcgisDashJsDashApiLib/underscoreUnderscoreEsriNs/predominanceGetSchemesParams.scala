@@ -60,13 +60,7 @@ object predominanceGetSchemesParams {
     view: SceneView = null,
     worldScale: js.UndefOr[scala.Boolean] = js.undefined
   ): predominanceGetSchemesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("geometryType")(geometryType)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("numColors")(numColors)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(basemap = basemap.asInstanceOf[js.Any], constructor = constructor, geometryType = geometryType, hasOwnProperty = hasOwnProperty, numColors = numColors, propertyIsEnumerable = propertyIsEnumerable)
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (view != null) __obj.updateDynamic("view")(view)
     if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale)

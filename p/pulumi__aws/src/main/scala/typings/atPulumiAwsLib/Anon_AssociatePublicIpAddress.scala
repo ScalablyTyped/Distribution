@@ -36,19 +36,8 @@ object Anon_AssociatePublicIpAddress {
     securityGroups: js.Array[java.lang.String],
     subnetId: java.lang.String
   ): Anon_AssociatePublicIpAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
-    __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("deviceIndex")(deviceIndex)
-    __obj.updateDynamic("ipv4AddressCount")(ipv4AddressCount)
-    __obj.updateDynamic("ipv4Addresses")(ipv4Addresses)
-    __obj.updateDynamic("ipv6AddressCount")(ipv6AddressCount)
-    __obj.updateDynamic("ipv6Addresses")(ipv6Addresses)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("privateIpAddress")(privateIpAddress)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("subnetId")(subnetId)
+    val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress, deleteOnTermination = deleteOnTermination, description = description, deviceIndex = deviceIndex, ipv4AddressCount = ipv4AddressCount, ipv4Addresses = ipv4Addresses, ipv6AddressCount = ipv6AddressCount, ipv6Addresses = ipv6Addresses, networkInterfaceId = networkInterfaceId, privateIpAddress = privateIpAddress, securityGroups = securityGroups, subnetId = subnetId)
+  
     __obj.asInstanceOf[Anon_AssociatePublicIpAddress]
   }
 }

@@ -24,9 +24,8 @@ object ConversionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchUpdateResponse]
     ]
   ): ConversionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchinsert")(batchinsert)
-    __obj.updateDynamic("batchupdate")(batchupdate)
+    val __obj = js.Dynamic.literal(batchinsert = batchinsert, batchupdate = batchupdate)
+  
     __obj.asInstanceOf[ConversionsResource]
   }
 }

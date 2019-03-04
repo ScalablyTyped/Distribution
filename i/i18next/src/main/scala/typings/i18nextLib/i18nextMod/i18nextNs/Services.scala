@@ -28,15 +28,8 @@ object Services {
     pluralResolver: js.Any,
     resourceStore: Resource
   ): Services = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backendConnector")(backendConnector)
-    __obj.updateDynamic("i18nFormat")(i18nFormat)
-    __obj.updateDynamic("interpolator")(interpolator)
-    __obj.updateDynamic("languageDetector")(languageDetector)
-    __obj.updateDynamic("languageUtils")(languageUtils)
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("pluralResolver")(pluralResolver)
-    __obj.updateDynamic("resourceStore")(resourceStore)
+    val __obj = js.Dynamic.literal(backendConnector = backendConnector, i18nFormat = i18nFormat, interpolator = interpolator, languageDetector = languageDetector, languageUtils = languageUtils, logger = logger, pluralResolver = pluralResolver, resourceStore = resourceStore)
+  
     __obj.asInstanceOf[Services]
   }
 }

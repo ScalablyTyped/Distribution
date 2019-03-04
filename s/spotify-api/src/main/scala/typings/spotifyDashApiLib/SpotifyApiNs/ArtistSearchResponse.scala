@@ -18,8 +18,8 @@ trait ArtistSearchResponse extends js.Object {
 object ArtistSearchResponse {
   @scala.inline
   def apply(artists: PagingObject[ArtistObjectFull]): ArtistSearchResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artists")(artists)
+    val __obj = js.Dynamic.literal(artists = artists)
+  
     __obj.asInstanceOf[ArtistSearchResponse]
   }
 }

@@ -57,16 +57,8 @@ object Anon_Console {
     renderer: hexoLib.hexoMod.HexoNs.extendNs.Renderer,
     tag: hexoLib.hexoMod.HexoNs.extendNs.Tag
   ): Anon_Console = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("console")(console)
-    __obj.updateDynamic("deployer")(deployer)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("helper")(helper)
-    __obj.updateDynamic("migrator")(migrator)
-    __obj.updateDynamic("processor")(processor)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(console = console, deployer = deployer, filter = filter, generator = generator, helper = helper, migrator = migrator, processor = processor, renderer = renderer, tag = tag)
+  
     __obj.asInstanceOf[Anon_Console]
   }
 }

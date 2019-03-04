@@ -20,8 +20,7 @@ object IWallabyFilePattern {
     instrument: js.UndefOr[scala.Boolean] = js.undefined,
     load: js.UndefOr[scala.Boolean] = js.undefined
   ): IWallabyFilePattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern)
     if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
     if (!js.isUndefined(instrument)) __obj.updateDynamic("instrument")(instrument)
     if (!js.isUndefined(load)) __obj.updateDynamic("load")(load)

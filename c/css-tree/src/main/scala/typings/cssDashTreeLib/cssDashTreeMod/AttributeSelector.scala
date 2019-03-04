@@ -27,8 +27,8 @@ object AttributeSelector {
     matcher: java.lang.String = null,
     value: StringNode | Identifier = null
   ): AttributeSelector = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (matcher != null) __obj.updateDynamic("matcher")(matcher)

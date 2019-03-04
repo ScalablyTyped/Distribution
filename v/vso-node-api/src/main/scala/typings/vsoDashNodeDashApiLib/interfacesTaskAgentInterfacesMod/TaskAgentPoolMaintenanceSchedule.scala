@@ -37,12 +37,8 @@ object TaskAgentPoolMaintenanceSchedule {
     startMinutes: scala.Double,
     timeZoneId: java.lang.String
   ): TaskAgentPoolMaintenanceSchedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("daysToBuild")(daysToBuild)
-    __obj.updateDynamic("scheduleJobId")(scheduleJobId)
-    __obj.updateDynamic("startHours")(startHours)
-    __obj.updateDynamic("startMinutes")(startMinutes)
-    __obj.updateDynamic("timeZoneId")(timeZoneId)
+    val __obj = js.Dynamic.literal(daysToBuild = daysToBuild, scheduleJobId = scheduleJobId, startHours = startHours, startMinutes = startMinutes, timeZoneId = timeZoneId)
+  
     __obj.asInstanceOf[TaskAgentPoolMaintenanceSchedule]
   }
 }

@@ -35,7 +35,7 @@ trait StratifyOperator[Datum] extends js.Object {
     * @param id The id accessor.
     */
   @JSName("id")
-  def `id_`(
+  def id_(
     id: js.Function3[
       /* d */ Datum, 
       /* i */ scala.Double, 
@@ -66,7 +66,7 @@ trait StratifyOperator[Datum] extends js.Object {
     * @param parentId The parent id accessor.
     */
   @JSName("parentId")
-  def `parentId_`(
+  def parentId_(
     parentId: js.Function3[
       /* d */ Datum, 
       /* i */ scala.Double, 

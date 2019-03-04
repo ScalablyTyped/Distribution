@@ -30,8 +30,7 @@ object Anon_CommentsDeclarationDefault {
       astDashTypesLib.genKindsMod.ExportSpecifierKind | astDashTypesLib.genKindsMod.ExportBatchSpecifierKind
     ] = null
   ): Anon_CommentsDeclarationDefault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(default = default)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc)

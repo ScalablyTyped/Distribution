@@ -14,8 +14,7 @@ trait Anon_DotsDurationType extends js.Object {
 object Anon_DotsDurationType {
   @scala.inline
   def apply(duration: java.lang.String, dots: scala.Int | scala.Double = null, `type`: java.lang.String = null): Anon_DotsDurationType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(duration = duration)
     if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_DotsDurationType]

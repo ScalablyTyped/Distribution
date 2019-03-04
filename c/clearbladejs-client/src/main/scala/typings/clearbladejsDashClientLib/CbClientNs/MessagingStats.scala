@@ -26,14 +26,8 @@ object MessagingStats {
     systemKey: java.lang.String,
     user: APIUser
   ): MessagingStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("getAveragePayloadSize")(getAveragePayloadSize)
-    __obj.updateDynamic("getCurrentSubscribers")(getCurrentSubscribers)
-    __obj.updateDynamic("getOpenConnections")(getOpenConnections)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, endpoint = endpoint, getAveragePayloadSize = getAveragePayloadSize, getCurrentSubscribers = getCurrentSubscribers, getOpenConnections = getOpenConnections, systemKey = systemKey, user = user)
+  
     __obj.asInstanceOf[MessagingStats]
   }
 }

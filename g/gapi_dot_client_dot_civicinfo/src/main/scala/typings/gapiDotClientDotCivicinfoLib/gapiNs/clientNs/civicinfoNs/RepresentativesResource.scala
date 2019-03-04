@@ -24,9 +24,8 @@ object RepresentativesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RepresentativeInfoData]
     ]
   ): RepresentativesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("representativeInfoByAddress")(representativeInfoByAddress)
-    __obj.updateDynamic("representativeInfoByDivision")(representativeInfoByDivision)
+    val __obj = js.Dynamic.literal(representativeInfoByAddress = representativeInfoByAddress, representativeInfoByDivision = representativeInfoByDivision)
+  
     __obj.asInstanceOf[RepresentativesResource]
   }
 }

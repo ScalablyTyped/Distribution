@@ -32,21 +32,8 @@ object ISyndicationLink {
     title: java.lang.String,
     uri: winrtLib.WindowsNs.FoundationNs.Uri
   ): ISyndicationLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("mediaType")(mediaType)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("relationship")(relationship)
-    __obj.updateDynamic("resourceLanguage")(resourceLanguage)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, length = length, mediaType = mediaType, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, relationship = relationship, resourceLanguage = resourceLanguage, title = title, uri = uri)
+  
     __obj.asInstanceOf[ISyndicationLink]
   }
 }

@@ -20,11 +20,8 @@ object Anon_AclsHashAlgorithm {
     http: Anon_Path,
     ignoreErrors: scala.Boolean
   ): Anon_AclsHashAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acls")(acls)
-    __obj.updateDynamic("hashAlgorithm")(hashAlgorithm)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    val __obj = js.Dynamic.literal(acls = acls, hashAlgorithm = hashAlgorithm, http = http, ignoreErrors = ignoreErrors)
+  
     __obj.asInstanceOf[Anon_AclsHashAlgorithm]
   }
 }

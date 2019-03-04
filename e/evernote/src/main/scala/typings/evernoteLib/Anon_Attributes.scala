@@ -36,8 +36,7 @@ object Anon_Attributes {
     updateSequenceNum: scala.Int | scala.Double = null,
     updated: scala.Int | scala.Double = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("guid")(guid)
+    val __obj = js.Dynamic.literal(guid = guid)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (contentLength != null) __obj.updateDynamic("contentLength")(contentLength.asInstanceOf[js.Any])
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])

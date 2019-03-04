@@ -19,10 +19,10 @@ trait LodashReject extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashReject2x2[T] = js.native
-  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashReject2x2[T] = js.native
+  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.__): LodashReject2x2[T] = js.native
+  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashReject2x2[T] = js.native
   def apply[T](
-    predicate: lodashLib.lodashMod.underscoreNs.`__`,
+    predicate: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashReject1x2[T] = js.native
 }

@@ -18,10 +18,8 @@ object Certificate {
     exportPublicKey: js.Function1[BinaryLike, nodeLib.Buffer],
     verifySpkac: js.Function1[Binary, scala.Boolean]
   ): Certificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exportChallenge")(exportChallenge)
-    __obj.updateDynamic("exportPublicKey")(exportPublicKey)
-    __obj.updateDynamic("verifySpkac")(verifySpkac)
+    val __obj = js.Dynamic.literal(exportChallenge = exportChallenge, exportPublicKey = exportPublicKey, verifySpkac = verifySpkac)
+  
     __obj.asInstanceOf[Certificate]
   }
 }

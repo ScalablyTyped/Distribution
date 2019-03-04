@@ -13,9 +13,8 @@ trait IIndexedResourceQualifier extends js.Object {
 object IIndexedResourceQualifier {
   @scala.inline
   def apply(qualifierName: java.lang.String, qualifierValue: java.lang.String): IIndexedResourceQualifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qualifierName")(qualifierName)
-    __obj.updateDynamic("qualifierValue")(qualifierValue)
+    val __obj = js.Dynamic.literal(qualifierName = qualifierName, qualifierValue = qualifierValue)
+  
     __obj.asInstanceOf[IIndexedResourceQualifier]
   }
 }

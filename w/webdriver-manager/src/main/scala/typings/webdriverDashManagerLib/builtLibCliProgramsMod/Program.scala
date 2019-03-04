@@ -43,9 +43,9 @@ class Program () extends js.Object {
     * Create a collection of options used by this program.
     * @returns The options used in the programs.
     */
-  def `getOptions_`(allOptions: webdriverDashManagerLib.builtLibCliOptionsMod.Options): webdriverDashManagerLib.builtLibCliOptionsMod.Options = js.native
-  /* private */ def `getValue_`(key: js.Any, json: js.Any): js.Any = js.native
-  def `lengthOf_`(param: java.lang.String): scala.Double = js.native
+  def getOptions_(allOptions: webdriverDashManagerLib.builtLibCliOptionsMod.Options): webdriverDashManagerLib.builtLibCliOptionsMod.Options = js.native
+  /* private */ def getValue_(key: js.Any, json: js.Any): js.Any = js.native
+  def lengthOf_(param: java.lang.String): scala.Double = js.native
   /**
     * Register a new option.
     * @param opt The option.

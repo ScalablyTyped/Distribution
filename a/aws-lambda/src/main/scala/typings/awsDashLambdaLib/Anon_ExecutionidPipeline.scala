@@ -22,11 +22,8 @@ object Anon_ExecutionidPipeline {
     state: awsDashLambdaLib.awsDashLambdaMod.CodePipelineStageState,
     version: scala.Double
   ): Anon_ExecutionidPipeline = {
-    val __obj = js.Dynamic.literal(`execution-id` = `execution-id`)
-    __obj.updateDynamic("pipeline")(pipeline)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(pipeline = pipeline, stage = stage, state = state, version = version)
+    __obj.updateDynamic("execution-id")(`execution-id`)
     __obj.asInstanceOf[Anon_ExecutionidPipeline]
   }
 }

@@ -20,9 +20,7 @@ object PasswordlessLoginOptions {
     email: java.lang.String = null,
     phoneNumber: java.lang.String = null
   ): PasswordlessLoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("verificationCode")(verificationCode)
+    val __obj = js.Dynamic.literal(connection = connection, verificationCode = verificationCode)
     if (email != null) __obj.updateDynamic("email")(email)
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
     __obj.asInstanceOf[PasswordlessLoginOptions]

@@ -40,8 +40,7 @@ object ImageConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): ImageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (crop != null) __obj.updateDynamic("crop")(crop)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)

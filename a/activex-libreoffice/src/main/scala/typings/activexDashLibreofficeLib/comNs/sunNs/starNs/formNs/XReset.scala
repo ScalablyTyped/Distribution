@@ -36,13 +36,8 @@ object XReset {
     removeResetListener: js.Function1[XResetListener, scala.Unit],
     reset: js.Function0[scala.Unit]
   ): XReset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addResetListener")(addResetListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeResetListener")(removeResetListener)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(acquire = acquire, addResetListener = addResetListener, queryInterface = queryInterface, release = release, removeResetListener = removeResetListener, reset = reset)
+  
     __obj.asInstanceOf[XReset]
   }
 }

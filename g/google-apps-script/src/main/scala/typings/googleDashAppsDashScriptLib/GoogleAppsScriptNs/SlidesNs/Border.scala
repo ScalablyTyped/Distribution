@@ -26,14 +26,8 @@ object Border {
     setTransparent: js.Function0[Border],
     setWeight: js.Function1[stdLib.Number, Border]
   ): Border = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDashStyle")(getDashStyle)
-    __obj.updateDynamic("getLineFill")(getLineFill)
-    __obj.updateDynamic("getWeight")(getWeight)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("setDashStyle")(setDashStyle)
-    __obj.updateDynamic("setTransparent")(setTransparent)
-    __obj.updateDynamic("setWeight")(setWeight)
+    val __obj = js.Dynamic.literal(getDashStyle = getDashStyle, getLineFill = getLineFill, getWeight = getWeight, isVisible = isVisible, setDashStyle = setDashStyle, setTransparent = setTransparent, setWeight = setWeight)
+  
     __obj.asInstanceOf[Border]
   }
 }

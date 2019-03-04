@@ -26,14 +26,8 @@ object IPropertyDefAdmin {
     SemanticAliases: ISemanticAliases,
     Validation: IValidation
   ): IPropertyDefAdmin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowAutomaticPermissions")(AllowAutomaticPermissions)
-    __obj.updateDynamic("AutomaticValue")(AutomaticValue)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("NamedValueNamespaces")(NamedValueNamespaces)
-    __obj.updateDynamic("PropertyDef")(PropertyDef)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
-    __obj.updateDynamic("Validation")(Validation)
+    val __obj = js.Dynamic.literal(AllowAutomaticPermissions = AllowAutomaticPermissions, AutomaticValue = AutomaticValue, Clone = Clone, NamedValueNamespaces = NamedValueNamespaces, PropertyDef = PropertyDef, SemanticAliases = SemanticAliases, Validation = Validation)
+  
     __obj.asInstanceOf[IPropertyDefAdmin]
   }
 }

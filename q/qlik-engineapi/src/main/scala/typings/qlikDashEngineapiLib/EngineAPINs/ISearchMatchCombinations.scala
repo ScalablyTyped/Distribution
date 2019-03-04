@@ -18,8 +18,8 @@ trait ISearchMatchCombinations extends js.Object {
 object ISearchMatchCombinations {
   @scala.inline
   def apply(qSearchMatchCombinations: js.Array[ISerachMatchCombination]): ISearchMatchCombinations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qSearchMatchCombinations")(qSearchMatchCombinations)
+    val __obj = js.Dynamic.literal(qSearchMatchCombinations = qSearchMatchCombinations)
+  
     __obj.asInstanceOf[ISearchMatchCombinations]
   }
 }

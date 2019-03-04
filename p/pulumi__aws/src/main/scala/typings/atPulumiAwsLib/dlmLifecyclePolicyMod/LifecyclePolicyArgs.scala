@@ -32,10 +32,7 @@ object LifecyclePolicyArgs {
     policyDetails: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyResourceTypesSchedules],
     state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): LifecyclePolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("policyDetails")(policyDetails.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], executionRoleArn = executionRoleArn.asInstanceOf[js.Any], policyDetails = policyDetails.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecyclePolicyArgs]
   }

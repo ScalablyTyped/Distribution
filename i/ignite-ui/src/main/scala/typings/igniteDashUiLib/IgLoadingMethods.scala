@@ -24,13 +24,8 @@ object IgLoadingMethods {
     refreshPos: js.Function0[scala.Unit],
     show: js.Function1[js.Object, scala.Unit]
   ): IgLoadingMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("indicator")(indicator)
-    __obj.updateDynamic("indicatorElement")(indicatorElement)
-    __obj.updateDynamic("refreshPos")(refreshPos)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(destroy = destroy, hide = hide, indicator = indicator, indicatorElement = indicatorElement, refreshPos = refreshPos, show = show)
+  
     __obj.asInstanceOf[IgLoadingMethods]
   }
 }

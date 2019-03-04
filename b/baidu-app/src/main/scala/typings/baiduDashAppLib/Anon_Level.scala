@@ -17,8 +17,8 @@ trait Anon_Level extends js.Object {
 object Anon_Level {
   @scala.inline
   def apply(level: scala.Double): Anon_Level = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(level = level)
+  
     __obj.asInstanceOf[Anon_Level]
   }
 }

@@ -32,8 +32,7 @@ object ChooseImageConfig {
     sizeType: js.Array[java.lang.String] = null,
     sourceType: js.Array[java.lang.String] = null
   ): ChooseImageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)

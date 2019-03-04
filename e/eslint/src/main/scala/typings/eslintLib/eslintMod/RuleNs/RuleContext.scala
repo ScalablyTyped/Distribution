@@ -38,20 +38,8 @@ object RuleContext {
     report: js.Function1[ReportDescriptor, scala.Unit],
     settings: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): RuleContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAncestors")(getAncestors)
-    __obj.updateDynamic("getDeclaredVariables")(getDeclaredVariables)
-    __obj.updateDynamic("getFilename")(getFilename)
-    __obj.updateDynamic("getScope")(getScope)
-    __obj.updateDynamic("getSourceCode")(getSourceCode)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("markVariableAsUsed")(markVariableAsUsed)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("parserOptions")(parserOptions)
-    __obj.updateDynamic("parserPath")(parserPath)
-    __obj.updateDynamic("parserServices")(parserServices)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(getAncestors = getAncestors, getDeclaredVariables = getDeclaredVariables, getFilename = getFilename, getScope = getScope, getSourceCode = getSourceCode, id = id, markVariableAsUsed = markVariableAsUsed, options = options, parserOptions = parserOptions, parserPath = parserPath, parserServices = parserServices, report = report, settings = settings)
+  
     __obj.asInstanceOf[RuleContext]
   }
 }

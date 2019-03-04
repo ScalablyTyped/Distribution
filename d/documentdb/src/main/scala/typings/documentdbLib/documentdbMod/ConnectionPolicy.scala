@@ -39,14 +39,8 @@ object ConnectionPolicy {
     RequestTimeout: scala.Double,
     RetryOptions: RetryOptions
   ): ConnectionPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DisableSSLVerification")(DisableSSLVerification)
-    __obj.updateDynamic("EnableEndpointDiscovery")(EnableEndpointDiscovery)
-    __obj.updateDynamic("MediaReadMode")(MediaReadMode)
-    __obj.updateDynamic("MediaRequestTimeout")(MediaRequestTimeout)
-    __obj.updateDynamic("PreferredLocations")(PreferredLocations)
-    __obj.updateDynamic("RequestTimeout")(RequestTimeout)
-    __obj.updateDynamic("RetryOptions")(RetryOptions)
+    val __obj = js.Dynamic.literal(DisableSSLVerification = DisableSSLVerification, EnableEndpointDiscovery = EnableEndpointDiscovery, MediaReadMode = MediaReadMode, MediaRequestTimeout = MediaRequestTimeout, PreferredLocations = PreferredLocations, RequestTimeout = RequestTimeout, RetryOptions = RetryOptions)
+  
     __obj.asInstanceOf[ConnectionPolicy]
   }
 }

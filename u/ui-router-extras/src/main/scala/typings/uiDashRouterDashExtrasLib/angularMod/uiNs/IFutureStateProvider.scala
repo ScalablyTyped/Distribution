@@ -29,10 +29,8 @@ object IFutureStateProvider {
     futureState: js.Function1[IFutureState, scala.Unit],
     stateFactory: js.Function2[java.lang.String, IFutureStateFactory, scala.Unit]
   ): IFutureStateProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addResolve")(addResolve)
-    __obj.updateDynamic("futureState")(futureState)
-    __obj.updateDynamic("stateFactory")(stateFactory)
+    val __obj = js.Dynamic.literal(addResolve = addResolve, futureState = futureState, stateFactory = stateFactory)
+  
     __obj.asInstanceOf[IFutureStateProvider]
   }
 }

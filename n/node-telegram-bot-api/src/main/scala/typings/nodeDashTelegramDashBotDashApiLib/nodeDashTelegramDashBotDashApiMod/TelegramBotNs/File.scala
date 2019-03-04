@@ -16,8 +16,7 @@ object File {
     file_path: java.lang.String = null,
     file_size: scala.Int | scala.Double = null
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file_id")(file_id)
+    val __obj = js.Dynamic.literal(file_id = file_id)
     if (file_path != null) __obj.updateDynamic("file_path")(file_path)
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]

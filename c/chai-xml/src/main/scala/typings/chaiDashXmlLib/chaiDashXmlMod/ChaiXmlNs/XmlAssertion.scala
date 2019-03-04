@@ -44,22 +44,8 @@ object XmlAssertion {
     `with`: XmlAssertion,
     xml: XmlAssertion
   ): XmlAssertion = {
-    val __obj = js.Dynamic.literal(`with` = `with`)
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("at")(at)
-    __obj.updateDynamic("be")(be)
-    __obj.updateDynamic("been")(been)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("have")(have)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("of")(of)
-    __obj.updateDynamic("same")(same)
-    __obj.updateDynamic("that")(that)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("valid")(valid)
-    __obj.updateDynamic("which")(which)
-    __obj.updateDynamic("xml")(xml)
+    val __obj = js.Dynamic.literal(and = and, at = at, be = be, been = been, has = has, have = have, is = is, not = not, of = of, same = same, that = that, to = to, valid = valid, which = which, xml = xml)
+    __obj.updateDynamic("with")(`with`)
     __obj.asInstanceOf[XmlAssertion]
   }
 }

@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(verbose: scala.Boolean): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(verbose = verbose)
+  
     __obj.asInstanceOf[Options]
   }
 }

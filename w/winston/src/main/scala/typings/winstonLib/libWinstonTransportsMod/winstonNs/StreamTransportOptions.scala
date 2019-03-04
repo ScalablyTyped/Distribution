@@ -24,8 +24,7 @@ object StreamTransportOptions {
     logv: js.Function2[/* info */ js.Any, /* next */ js.Function0[scala.Unit], _] = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined
   ): StreamTransportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(stream = stream)
     if (close != null) __obj.updateDynamic("close")(close)
     if (eol != null) __obj.updateDynamic("eol")(eol)
     if (format != null) __obj.updateDynamic("format")(format)

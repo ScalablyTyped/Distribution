@@ -26,13 +26,8 @@ object Event {
     timeStamp: scala.Double,
     `type`: java.lang.String
   ): Event = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aborted")(aborted)
-    __obj.updateDynamic("cancelled")(cancelled)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(aborted = aborted, cancelled = cancelled, currentTarget = currentTarget, result = result, target = target, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Event]
   }
 }

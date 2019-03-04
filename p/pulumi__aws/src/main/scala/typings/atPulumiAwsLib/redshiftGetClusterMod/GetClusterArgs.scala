@@ -19,8 +19,7 @@ object GetClusterArgs {
     clusterIdentifier: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GetClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterIdentifier")(clusterIdentifier)
+    val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetClusterArgs]
   }

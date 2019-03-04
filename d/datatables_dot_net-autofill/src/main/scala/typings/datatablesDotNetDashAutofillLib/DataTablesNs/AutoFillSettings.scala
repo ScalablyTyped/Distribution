@@ -28,8 +28,7 @@ object AutoFillSettings {
     alwaysAsk: js.UndefOr[scala.Boolean] = js.undefined,
     enable: js.UndefOr[scala.Boolean] = js.undefined
   ): AutoFillSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
     if (!js.isUndefined(alwaysAsk)) __obj.updateDynamic("alwaysAsk")(alwaysAsk)
     if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
     __obj.asInstanceOf[AutoFillSettings]

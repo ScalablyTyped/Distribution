@@ -35,14 +35,7 @@ object ITheme {
   {[ P in @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.ISchemeNames ]:? @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.IScheme}
     */ atUifabricStylingLib.atUifabricStylingLibStrings.ITheme with js.Any = null
   ): ITheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames)
-    __obj.updateDynamic("effects")(effects)
-    __obj.updateDynamic("fonts")(fonts)
-    __obj.updateDynamic("isInverted")(isInverted)
-    __obj.updateDynamic("palette")(palette)
-    __obj.updateDynamic("semanticColors")(semanticColors)
-    __obj.updateDynamic("spacing")(spacing)
+    val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
     if (schemes != null) __obj.updateDynamic("schemes")(schemes)
     __obj.asInstanceOf[ITheme]
   }

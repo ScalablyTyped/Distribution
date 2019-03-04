@@ -19,9 +19,8 @@ trait WorkItemStateTransition extends js.Object {
 object WorkItemStateTransition {
   @scala.inline
   def apply(actions: js.Array[java.lang.String], to: java.lang.String): WorkItemStateTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(actions = actions, to = to)
+  
     __obj.asInstanceOf[WorkItemStateTransition]
   }
 }

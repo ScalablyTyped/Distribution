@@ -58,15 +58,8 @@ object XAccessibleRelationSet {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleRelationSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RelationCount")(RelationCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("containsRelation")(containsRelation)
-    __obj.updateDynamic("getRelation")(getRelation)
-    __obj.updateDynamic("getRelationByType")(getRelationByType)
-    __obj.updateDynamic("getRelationCount")(getRelationCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(RelationCount = RelationCount, acquire = acquire, containsRelation = containsRelation, getRelation = getRelation, getRelationByType = getRelationByType, getRelationCount = getRelationCount, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleRelationSet]
   }
 }

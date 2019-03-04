@@ -226,27 +226,8 @@ object XUpdateHandler {
     setPropertyValueForLocale: js.Function2[js.Any, java.lang.String, scala.Unit],
     startUpdate: js.Function0[scala.Unit]
   ): XUpdateHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addOrReplaceNode")(addOrReplaceNode)
-    __obj.updateDynamic("addOrReplaceNodeFromTemplate")(addOrReplaceNodeFromTemplate)
-    __obj.updateDynamic("addOrReplaceProperty")(addOrReplaceProperty)
-    __obj.updateDynamic("addOrReplacePropertyWithValue")(addOrReplacePropertyWithValue)
-    __obj.updateDynamic("endNode")(endNode)
-    __obj.updateDynamic("endProperty")(endProperty)
-    __obj.updateDynamic("endUpdate")(endUpdate)
-    __obj.updateDynamic("modifyNode")(modifyNode)
-    __obj.updateDynamic("modifyProperty")(modifyProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeNode")(removeNode)
-    __obj.updateDynamic("removeProperty")(removeProperty)
-    __obj.updateDynamic("resetProperty")(resetProperty)
-    __obj.updateDynamic("resetPropertyValue")(resetPropertyValue)
-    __obj.updateDynamic("resetPropertyValueForLocale")(resetPropertyValueForLocale)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValueForLocale")(setPropertyValueForLocale)
-    __obj.updateDynamic("startUpdate")(startUpdate)
+    val __obj = js.Dynamic.literal(acquire = acquire, addOrReplaceNode = addOrReplaceNode, addOrReplaceNodeFromTemplate = addOrReplaceNodeFromTemplate, addOrReplaceProperty = addOrReplaceProperty, addOrReplacePropertyWithValue = addOrReplacePropertyWithValue, endNode = endNode, endProperty = endProperty, endUpdate = endUpdate, modifyNode = modifyNode, modifyProperty = modifyProperty, queryInterface = queryInterface, release = release, removeNode = removeNode, removeProperty = removeProperty, resetProperty = resetProperty, resetPropertyValue = resetPropertyValue, resetPropertyValueForLocale = resetPropertyValueForLocale, setPropertyValue = setPropertyValue, setPropertyValueForLocale = setPropertyValueForLocale, startUpdate = startUpdate)
+  
     __obj.asInstanceOf[XUpdateHandler]
   }
 }

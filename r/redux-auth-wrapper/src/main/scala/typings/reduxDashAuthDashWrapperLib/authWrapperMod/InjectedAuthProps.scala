@@ -13,9 +13,8 @@ trait InjectedAuthProps extends js.Object {
 object InjectedAuthProps {
   @scala.inline
   def apply(isAuthenticated: scala.Boolean, isAuthenticating: scala.Boolean): InjectedAuthProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
-    __obj.updateDynamic("isAuthenticating")(isAuthenticating)
+    val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated, isAuthenticating = isAuthenticating)
+  
     __obj.asInstanceOf[InjectedAuthProps]
   }
 }

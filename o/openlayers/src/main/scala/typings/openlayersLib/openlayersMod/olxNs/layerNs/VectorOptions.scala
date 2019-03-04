@@ -54,8 +54,7 @@ object VectorOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): VectorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (!js.isUndefined(declutter)) __obj.updateDynamic("declutter")(declutter)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (map != null) __obj.updateDynamic("map")(map)

@@ -32,8 +32,7 @@ object PublicKeyArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PublicKeyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encodedKey")(encodedKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encodedKey = encodedKey.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])

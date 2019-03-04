@@ -28,15 +28,8 @@ object Elements {
     target: stdLib.HTMLElement,
     viewport: stdLib.HTMLElement
   ): Elements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("scrollbarCorner")(scrollbarCorner)
-    __obj.updateDynamic("scrollbarHorizontal")(scrollbarHorizontal)
-    __obj.updateDynamic("scrollbarVertical")(scrollbarVertical)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("viewport")(viewport)
+    val __obj = js.Dynamic.literal(content = content, host = host, padding = padding, scrollbarCorner = scrollbarCorner, scrollbarHorizontal = scrollbarHorizontal, scrollbarVertical = scrollbarVertical, target = target, viewport = viewport)
+  
     __obj.asInstanceOf[Elements]
   }
 }

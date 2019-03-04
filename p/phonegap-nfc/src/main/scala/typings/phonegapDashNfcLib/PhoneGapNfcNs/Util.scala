@@ -30,10 +30,8 @@ object Util {
     bytesToString: js.Function1[js.Array[scala.Double], java.lang.String],
     stringToBytes: js.Function1[java.lang.String, js.Array[scala.Double]]
   ): Util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesToHexString")(bytesToHexString)
-    __obj.updateDynamic("bytesToString")(bytesToString)
-    __obj.updateDynamic("stringToBytes")(stringToBytes)
+    val __obj = js.Dynamic.literal(bytesToHexString = bytesToHexString, bytesToString = bytesToString, stringToBytes = stringToBytes)
+  
     __obj.asInstanceOf[Util]
   }
 }

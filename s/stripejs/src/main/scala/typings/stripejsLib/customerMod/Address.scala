@@ -43,13 +43,8 @@ object Address {
     postal_code: java.lang.String,
     state: java.lang.String
   ): Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("line1")(line1)
-    __obj.updateDynamic("line2")(line2)
-    __obj.updateDynamic("postal_code")(postal_code)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(city = city, country = country, line1 = line1, line2 = line2, postal_code = postal_code, state = state)
+  
     __obj.asInstanceOf[Address]
   }
 }

@@ -16,7 +16,8 @@ object RunOnly {
     `type`: RunOnlyType,
     values: js.Array[TagValue] | js.Array[java.lang.String] | RunOnlyObject = null
   ): RunOnly = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOnly]
   }

@@ -12,8 +12,8 @@ trait DeploymentDeploy extends Deployment {
 object DeploymentDeploy {
   @scala.inline
   def apply(message: java.lang.String, `type`: java.lang.String): DeploymentDeploy = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeploymentDeploy]
   }
 }

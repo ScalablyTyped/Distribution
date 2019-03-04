@@ -24,13 +24,8 @@ object Anon_Args {
     lineno: scala.Double,
     name: java.lang.String
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(__type = __type, args = args, column = column, filename = filename, lineno = lineno, name = name)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

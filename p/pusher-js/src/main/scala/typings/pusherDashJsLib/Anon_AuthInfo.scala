@@ -29,8 +29,8 @@ object Anon_AuthInfo {
       scala.Unit
     ]
   ): Anon_AuthInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorize")(authorize)
+    val __obj = js.Dynamic.literal(authorize = authorize)
+  
     __obj.asInstanceOf[Anon_AuthInfo]
   }
 }

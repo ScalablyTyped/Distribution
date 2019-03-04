@@ -44,31 +44,8 @@ object IToolTip {
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): IToolTip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("animated")(animated)
-    __obj.updateDynamic("autoHide")(autoHide)
-    __obj.updateDynamic("autoRedraw")(autoRedraw)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("clicked")(clicked)
-    __obj.updateDynamic("currentIndex")(currentIndex)
-    __obj.updateDynamic("currentSeries")(currentSeries)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("margins")(margins)
-    __obj.updateDynamic("mousedown")(mousedown)
-    __obj.updateDynamic("mousemove")(mousemove)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("transparent")(transparent)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, add = add, animated = animated, autoHide = autoHide, autoRedraw = autoRedraw, bounds = bounds, chart = chart, clicked = clicked, currentIndex = currentIndex, currentSeries = currentSeries, delay = delay, draw = draw, format = format, hide = hide, items = items, margins = margins, mousedown = mousedown, mousemove = mousemove, position = position, refresh = refresh, resize = resize, text = text, transparent = transparent, visible = visible)
+  
     __obj.asInstanceOf[IToolTip]
   }
 }

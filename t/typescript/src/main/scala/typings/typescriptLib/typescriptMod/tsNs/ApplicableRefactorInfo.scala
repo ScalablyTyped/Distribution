@@ -37,10 +37,7 @@ object ApplicableRefactorInfo {
     name: java.lang.String,
     inlineable: js.UndefOr[scala.Boolean] = js.undefined
   ): ApplicableRefactorInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(actions = actions, description = description, name = name)
     if (!js.isUndefined(inlineable)) __obj.updateDynamic("inlineable")(inlineable)
     __obj.asInstanceOf[ApplicableRefactorInfo]
   }

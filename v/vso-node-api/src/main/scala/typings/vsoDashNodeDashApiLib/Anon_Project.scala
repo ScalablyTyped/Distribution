@@ -13,9 +13,8 @@ trait Anon_Project extends js.Object {
 object Anon_Project {
   @scala.inline
   def apply(project: scala.Double, projectCollection: scala.Double): Anon_Project = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("projectCollection")(projectCollection)
+    val __obj = js.Dynamic.literal(project = project, projectCollection = projectCollection)
+  
     __obj.asInstanceOf[Anon_Project]
   }
 }

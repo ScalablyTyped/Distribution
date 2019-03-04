@@ -14,10 +14,8 @@ trait TabMoveInfo extends js.Object {
 object TabMoveInfo {
   @scala.inline
   def apply(fromIndex: scala.Double, toIndex: scala.Double, windowId: scala.Double): TabMoveInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromIndex")(fromIndex)
-    __obj.updateDynamic("toIndex")(toIndex)
-    __obj.updateDynamic("windowId")(windowId)
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex, toIndex = toIndex, windowId = windowId)
+  
     __obj.asInstanceOf[TabMoveInfo]
   }
 }

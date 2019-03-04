@@ -22,12 +22,8 @@ object Advertisement {
     serviceUuids: js.Array[java.lang.String],
     txPowerLevel: scala.Double
   ): Advertisement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localName")(localName)
-    __obj.updateDynamic("manufacturerData")(manufacturerData)
-    __obj.updateDynamic("serviceData")(serviceData)
-    __obj.updateDynamic("serviceUuids")(serviceUuids)
-    __obj.updateDynamic("txPowerLevel")(txPowerLevel)
+    val __obj = js.Dynamic.literal(localName = localName, manufacturerData = manufacturerData, serviceData = serviceData, serviceUuids = serviceUuids, txPowerLevel = txPowerLevel)
+  
     __obj.asInstanceOf[Advertisement]
   }
 }

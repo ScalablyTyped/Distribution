@@ -16,9 +16,8 @@ object Anon_DEFAULTS {
     DEFAULTS: lobiboxLib.LobiboxModuleNs.MessageBoxesDefault,
     OPTIONS: lobiboxLib.LobiboxModuleNs.MessageBoxesOptions
   ): Anon_DEFAULTS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULTS")(DEFAULTS)
-    __obj.updateDynamic("OPTIONS")(OPTIONS)
+    val __obj = js.Dynamic.literal(DEFAULTS = DEFAULTS, OPTIONS = OPTIONS)
+  
     __obj.asInstanceOf[Anon_DEFAULTS]
   }
 }

@@ -27,11 +27,8 @@ object XKeyCollector {
     release: js.Function0[scala.Unit],
     setKeyId: js.Function1[scala.Double, scala.Unit]
   ): XKeyCollector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setKeyId")(setKeyId)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setKeyId = setKeyId)
+  
     __obj.asInstanceOf[XKeyCollector]
   }
 }

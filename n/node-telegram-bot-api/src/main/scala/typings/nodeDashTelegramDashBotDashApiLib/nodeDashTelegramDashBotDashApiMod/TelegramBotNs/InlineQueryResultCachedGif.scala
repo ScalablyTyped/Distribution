@@ -26,9 +26,8 @@ object InlineQueryResultCachedGif {
     reply_markup: InlineKeyboardMarkup = null,
     title: java.lang.String = null
   ): InlineQueryResultCachedGif = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("gif_file_id")(gif_file_id)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(gif_file_id = gif_file_id, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)

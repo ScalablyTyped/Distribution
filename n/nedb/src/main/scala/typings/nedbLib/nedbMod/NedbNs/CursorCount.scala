@@ -17,8 +17,8 @@ object CursorCount {
       scala.Unit
     ]
   ): CursorCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exec")(exec)
+    val __obj = js.Dynamic.literal(exec = exec)
+  
     __obj.asInstanceOf[CursorCount]
   }
 }

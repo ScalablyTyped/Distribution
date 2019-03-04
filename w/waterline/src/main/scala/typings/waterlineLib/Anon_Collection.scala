@@ -13,9 +13,8 @@ trait Anon_Collection extends js.Object {
 object Anon_Collection {
   @scala.inline
   def apply(collection: java.lang.String, via: java.lang.String): Anon_Collection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("via")(via)
+    val __obj = js.Dynamic.literal(collection = collection, via = via)
+  
     __obj.asInstanceOf[Anon_Collection]
   }
 }

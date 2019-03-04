@@ -19,9 +19,8 @@ object ICacheableResponseOptions {
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     statuses: js.Array[scala.Double]
   ): ICacheableResponseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("statuses")(statuses)
+    val __obj = js.Dynamic.literal(headers = headers, statuses = statuses)
+  
     __obj.asInstanceOf[ICacheableResponseOptions]
   }
 }

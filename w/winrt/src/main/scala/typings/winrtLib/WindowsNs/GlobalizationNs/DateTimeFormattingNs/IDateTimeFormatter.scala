@@ -46,24 +46,8 @@ object IDateTimeFormatter {
     resolvedLanguage: java.lang.String,
     template: java.lang.String
   ): IDateTimeFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendar")(calendar)
-    __obj.updateDynamic("clock")(clock)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("geographicRegion")(geographicRegion)
-    __obj.updateDynamic("includeDay")(includeDay)
-    __obj.updateDynamic("includeDayOfWeek")(includeDayOfWeek)
-    __obj.updateDynamic("includeHour")(includeHour)
-    __obj.updateDynamic("includeMinute")(includeMinute)
-    __obj.updateDynamic("includeMonth")(includeMonth)
-    __obj.updateDynamic("includeSecond")(includeSecond)
-    __obj.updateDynamic("includeYear")(includeYear)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("numeralSystem")(numeralSystem)
-    __obj.updateDynamic("patterns")(patterns)
-    __obj.updateDynamic("resolvedGeographicRegion")(resolvedGeographicRegion)
-    __obj.updateDynamic("resolvedLanguage")(resolvedLanguage)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(calendar = calendar, clock = clock, format = format, geographicRegion = geographicRegion, includeDay = includeDay, includeDayOfWeek = includeDayOfWeek, includeHour = includeHour, includeMinute = includeMinute, includeMonth = includeMonth, includeSecond = includeSecond, includeYear = includeYear, languages = languages, numeralSystem = numeralSystem, patterns = patterns, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage, template = template)
+  
     __obj.asInstanceOf[IDateTimeFormatter]
   }
 }

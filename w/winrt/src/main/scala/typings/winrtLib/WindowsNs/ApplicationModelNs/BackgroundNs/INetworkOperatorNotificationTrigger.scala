@@ -12,8 +12,8 @@ trait INetworkOperatorNotificationTrigger extends IBackgroundTrigger {
 object INetworkOperatorNotificationTrigger {
   @scala.inline
   def apply(networkAccountId: java.lang.String): INetworkOperatorNotificationTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkAccountId")(networkAccountId)
+    val __obj = js.Dynamic.literal(networkAccountId = networkAccountId)
+  
     __obj.asInstanceOf[INetworkOperatorNotificationTrigger]
   }
 }

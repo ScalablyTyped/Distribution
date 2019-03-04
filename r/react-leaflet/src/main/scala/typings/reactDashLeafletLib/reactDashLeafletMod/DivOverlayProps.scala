@@ -27,8 +27,7 @@ object DivOverlayProps {
     pane: java.lang.String = null,
     zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
   ): DivOverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

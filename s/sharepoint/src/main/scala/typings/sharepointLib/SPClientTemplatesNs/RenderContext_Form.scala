@@ -46,13 +46,7 @@ object RenderContext_Form {
     Templates: Templates = null,
     onRefreshFailed: js.Any = null
   ): RenderContext_Form = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentItem")(CurrentItem)
-    __obj.updateDynamic("FieldControlModes")(FieldControlModes)
-    __obj.updateDynamic("FormContext")(FormContext)
-    __obj.updateDynamic("FormUniqueId")(FormUniqueId)
-    __obj.updateDynamic("ListData")(ListData)
-    __obj.updateDynamic("ListSchema")(ListSchema)
+    val __obj = js.Dynamic.literal(CurrentItem = CurrentItem, FieldControlModes = FieldControlModes, FormContext = FormContext, FormUniqueId = FormUniqueId, ListData = ListData, ListSchema = ListSchema)
     if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
     if (!js.isUndefined(CSRCustomLayout)) __obj.updateDynamic("CSRCustomLayout")(CSRCustomLayout)
     if (ControlMode != null) __obj.updateDynamic("ControlMode")(ControlMode)

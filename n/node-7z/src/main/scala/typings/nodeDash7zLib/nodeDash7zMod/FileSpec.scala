@@ -20,10 +20,8 @@ object FileSpec {
     physicalSize: scala.Double,
     `type`: java.lang.String
   ): FileSpec = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("physicalSize")(physicalSize)
+    val __obj = js.Dynamic.literal(method = method, path = path, physicalSize = physicalSize)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FileSpec]
   }
 }

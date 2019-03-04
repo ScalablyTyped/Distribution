@@ -37,9 +37,7 @@ object ServoOptions {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null
   ): ServoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin)
-    __obj.updateDynamic("pwm")(pwm)
+    val __obj = js.Dynamic.literal(pin = pin, pwm = pwm)
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

@@ -41,8 +41,7 @@ object TestOptions {
     name: java.lang.String = null,
     params: js.Object = null
   ): TestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(test = test)
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)

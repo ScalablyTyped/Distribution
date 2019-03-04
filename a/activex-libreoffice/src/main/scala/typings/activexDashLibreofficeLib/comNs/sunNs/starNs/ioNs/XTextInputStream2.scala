@@ -44,22 +44,8 @@ object XTextInputStream2 {
     setInputStream: js.Function1[XInputStream, scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): XTextInputStream2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("isEOF")(isEOF)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readLine")(readLine)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("readString")(readString)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEncoding")(setEncoding)
-    __obj.updateDynamic("setInputStream")(setInputStream)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, available = available, closeInput = closeInput, getInputStream = getInputStream, isEOF = isEOF, queryInterface = queryInterface, readBytes = readBytes, readLine = readLine, readSomeBytes = readSomeBytes, readString = readString, release = release, setEncoding = setEncoding, setInputStream = setInputStream, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[XTextInputStream2]
   }
 }

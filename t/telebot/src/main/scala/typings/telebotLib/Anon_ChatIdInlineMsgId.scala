@@ -18,9 +18,7 @@ object Anon_ChatIdInlineMsgId {
     messageId: scala.Double,
     inlineMsgId: scala.Int | scala.Double = null
   ): Anon_ChatIdInlineMsgId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chatId")(chatId.asInstanceOf[js.Any])
-    __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(chatId = chatId.asInstanceOf[js.Any], messageId = messageId)
     if (inlineMsgId != null) __obj.updateDynamic("inlineMsgId")(inlineMsgId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ChatIdInlineMsgId]
   }

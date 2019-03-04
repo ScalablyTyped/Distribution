@@ -22,11 +22,7 @@ object SynthesizedComment {
     text: java.lang.String,
     hasTrailingNewLine: js.UndefOr[scala.Boolean] = js.undefined
   ): SynthesizedComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(end = end, kind = kind, pos = pos, text = text)
     if (!js.isUndefined(hasTrailingNewLine)) __obj.updateDynamic("hasTrailingNewLine")(hasTrailingNewLine)
     __obj.asInstanceOf[SynthesizedComment]
   }

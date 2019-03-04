@@ -28,9 +28,8 @@ object SelectionBookmark {
     ],
     resolve: js.Function1[prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], Selection[S]]
   ): SelectionBookmark[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(map = map, resolve = resolve)
+  
     __obj.asInstanceOf[SelectionBookmark[S]]
   }
 }

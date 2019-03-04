@@ -37,13 +37,8 @@ object FeatureLayerCapabilitiesData {
     supportsM: scala.Boolean,
     supportsZ: scala.Boolean
   ): FeatureLayerCapabilitiesData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsAttachment")(supportsAttachment)
-    __obj.updateDynamic("supportsM")(supportsM)
-    __obj.updateDynamic("supportsZ")(supportsZ)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsAttachment = supportsAttachment, supportsM = supportsM, supportsZ = supportsZ)
+  
     __obj.asInstanceOf[FeatureLayerCapabilitiesData]
   }
 }

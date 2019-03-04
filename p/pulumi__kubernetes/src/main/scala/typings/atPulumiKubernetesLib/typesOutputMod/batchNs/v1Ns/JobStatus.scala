@@ -50,13 +50,8 @@ object JobStatus {
     startTime: java.lang.String,
     succeeded: scala.Double
   ): JobStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("completionTime")(completionTime)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(active = active, completionTime = completionTime, conditions = conditions, failed = failed, startTime = startTime, succeeded = succeeded)
+  
     __obj.asInstanceOf[JobStatus]
   }
 }

@@ -22,12 +22,8 @@ object ICriteriaParts {
     tables: js.Array[nodeDashMysqlDashWrapperLib.TableToSearchPart],
     whereClause: java.lang.String
   ): ICriteriaParts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("noDatabaseProperties")(noDatabaseProperties)
-    __obj.updateDynamic("rawCriteriaObject")(rawCriteriaObject)
-    __obj.updateDynamic("selectFromClause")(selectFromClause)
-    __obj.updateDynamic("tables")(tables)
-    __obj.updateDynamic("whereClause")(whereClause)
+    val __obj = js.Dynamic.literal(noDatabaseProperties = noDatabaseProperties, rawCriteriaObject = rawCriteriaObject, selectFromClause = selectFromClause, tables = tables, whereClause = whereClause)
+  
     __obj.asInstanceOf[ICriteriaParts]
   }
 }

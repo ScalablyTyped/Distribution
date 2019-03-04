@@ -66,15 +66,8 @@ object RenderingParams {
     size: heremapsLib.HNs.mathNs.Size,
     zoom: scala.Double
   ): RenderingParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("cacheOnly")(cacheOnly)
-    __obj.updateDynamic("pixelRatio")(pixelRatio)
-    __obj.updateDynamic("priorityCenter")(priorityCenter)
-    __obj.updateDynamic("projection")(projection)
-    __obj.updateDynamic("screenCenter")(screenCenter)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(bounds = bounds, cacheOnly = cacheOnly, pixelRatio = pixelRatio, priorityCenter = priorityCenter, projection = projection, screenCenter = screenCenter, size = size, zoom = zoom)
+  
     __obj.asInstanceOf[RenderingParams]
   }
 }

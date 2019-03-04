@@ -13,9 +13,8 @@ trait ChampionStatsDto extends js.Object {
 object ChampionStatsDto {
   @scala.inline
   def apply(id: scala.Double, stats: AggregatedStatsDto): ChampionStatsDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(id = id, stats = stats)
+  
     __obj.asInstanceOf[ChampionStatsDto]
   }
 }

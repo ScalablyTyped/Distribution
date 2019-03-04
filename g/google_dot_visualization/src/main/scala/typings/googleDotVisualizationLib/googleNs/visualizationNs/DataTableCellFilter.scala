@@ -15,8 +15,7 @@ trait DataTableCellFilter extends js.Object {
 object DataTableCellFilter {
   @scala.inline
   def apply(column: scala.Double, maxValue: js.Any = null, minValue: js.Any = null, value: js.Any = null): DataTableCellFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
+    val __obj = js.Dynamic.literal(column = column)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
     if (minValue != null) __obj.updateDynamic("minValue")(minValue)
     if (value != null) __obj.updateDynamic("value")(value)

@@ -199,37 +199,8 @@ object XMenu {
     setPopupMenu: js.Function2[scala.Double, XPopupMenu, scala.Unit],
     setTipHelpText: js.Function2[scala.Double, java.lang.String, scala.Unit]
   ): XMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ItemCount")(ItemCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addMenuListener")(addMenuListener)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("enableAutoMnemonics")(enableAutoMnemonics)
-    __obj.updateDynamic("enableItem")(enableItem)
-    __obj.updateDynamic("getCommand")(getCommand)
-    __obj.updateDynamic("getHelpCommand")(getHelpCommand)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getItemCount")(getItemCount)
-    __obj.updateDynamic("getItemId")(getItemId)
-    __obj.updateDynamic("getItemPos")(getItemPos)
-    __obj.updateDynamic("getItemText")(getItemText)
-    __obj.updateDynamic("getItemType")(getItemType)
-    __obj.updateDynamic("getPopupMenu")(getPopupMenu)
-    __obj.updateDynamic("getTipHelpText")(getTipHelpText)
-    __obj.updateDynamic("hideDisabledEntries")(hideDisabledEntries)
-    __obj.updateDynamic("insertItem")(insertItem)
-    __obj.updateDynamic("isItemEnabled")(isItemEnabled)
-    __obj.updateDynamic("isPopupMenu")(isPopupMenu)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("removeMenuListener")(removeMenuListener)
-    __obj.updateDynamic("setCommand")(setCommand)
-    __obj.updateDynamic("setHelpCommand")(setHelpCommand)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setItemText")(setItemText)
-    __obj.updateDynamic("setPopupMenu")(setPopupMenu)
-    __obj.updateDynamic("setTipHelpText")(setTipHelpText)
+    val __obj = js.Dynamic.literal(ItemCount = ItemCount, acquire = acquire, addMenuListener = addMenuListener, clear = clear, enableAutoMnemonics = enableAutoMnemonics, enableItem = enableItem, getCommand = getCommand, getHelpCommand = getHelpCommand, getHelpText = getHelpText, getItemCount = getItemCount, getItemId = getItemId, getItemPos = getItemPos, getItemText = getItemText, getItemType = getItemType, getPopupMenu = getPopupMenu, getTipHelpText = getTipHelpText, hideDisabledEntries = hideDisabledEntries, insertItem = insertItem, isItemEnabled = isItemEnabled, isPopupMenu = isPopupMenu, queryInterface = queryInterface, release = release, removeItem = removeItem, removeMenuListener = removeMenuListener, setCommand = setCommand, setHelpCommand = setHelpCommand, setHelpText = setHelpText, setItemText = setItemText, setPopupMenu = setPopupMenu, setTipHelpText = setTipHelpText)
+  
     __obj.asInstanceOf[XMenu]
   }
 }

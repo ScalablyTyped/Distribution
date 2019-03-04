@@ -23,11 +23,8 @@ object imageAuditResponse {
     data: js.Array[imageAuditdata],
     log_id: java.lang.String
   ): imageAuditResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conclusion")(conclusion)
-    __obj.updateDynamic("conclusionType")(conclusionType)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("log_id")(log_id)
+    val __obj = js.Dynamic.literal(conclusion = conclusion, conclusionType = conclusionType, data = data, log_id = log_id)
+  
     __obj.asInstanceOf[imageAuditResponse]
   }
 }

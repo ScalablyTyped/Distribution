@@ -12,11 +12,8 @@ trait BootstrapChartErrorEventArgs extends BootstrapChartEventArgsBase {
 object BootstrapChartErrorEventArgs {
   @scala.inline
   def apply(component: js.Any, element: js.Any, sender: Control, target: js.Any): BootstrapChartErrorEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(component = component, element = element, sender = sender, target = target)
+  
     __obj.asInstanceOf[BootstrapChartErrorEventArgs]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_FileCoverage extends js.Object {
 object Anon_FileCoverage {
   @scala.inline
   def apply(FileCoverage: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage): Anon_FileCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FileCoverage")(FileCoverage)
+    val __obj = js.Dynamic.literal(FileCoverage = FileCoverage)
+  
     __obj.asInstanceOf[Anon_FileCoverage]
   }
 }

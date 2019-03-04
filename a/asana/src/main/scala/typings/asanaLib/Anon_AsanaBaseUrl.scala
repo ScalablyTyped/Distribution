@@ -22,12 +22,8 @@ object Anon_AsanaBaseUrl {
     requestTimeout: scala.Double,
     retryOnRateLimit: scala.Boolean
   ): Anon_AsanaBaseUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_cachedVersionInfo")(_cachedVersionInfo)
-    __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl)
-    __obj.updateDynamic("authenticator")(authenticator)
-    __obj.updateDynamic("requestTimeout")(requestTimeout)
-    __obj.updateDynamic("retryOnRateLimit")(retryOnRateLimit)
+    val __obj = js.Dynamic.literal(_cachedVersionInfo = _cachedVersionInfo, asanaBaseUrl = asanaBaseUrl, authenticator = authenticator, requestTimeout = requestTimeout, retryOnRateLimit = retryOnRateLimit)
+  
     __obj.asInstanceOf[Anon_AsanaBaseUrl]
   }
 }

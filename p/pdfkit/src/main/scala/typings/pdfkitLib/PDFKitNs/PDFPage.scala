@@ -50,23 +50,8 @@ object PDFPage {
     write: js.Function1[js.Any, scala.Unit],
     xobjects: js.Any
   ): PDFPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("dictionary")(dictionary)
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("ext_gstates")(ext_gstates)
-    __obj.updateDynamic("fonts")(fonts)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("margins")(margins)
-    __obj.updateDynamic("maxY")(maxY)
-    __obj.updateDynamic("patterns")(patterns)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("write")(write)
-    __obj.updateDynamic("xobjects")(xobjects)
+    val __obj = js.Dynamic.literal(annotations = annotations, content = content, dictionary = dictionary, document = document, end = end, ext_gstates = ext_gstates, fonts = fonts, height = height, layout = layout, margins = margins, maxY = maxY, patterns = patterns, size = size, width = width, write = write, xobjects = xobjects)
+  
     __obj.asInstanceOf[PDFPage]
   }
 }

@@ -26,8 +26,7 @@ object MediaProps {
     render: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
     targetWindow: stdLib.Window = null
   ): MediaProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)

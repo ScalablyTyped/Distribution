@@ -128,8 +128,7 @@ object CompletionItem {
     sortText: java.lang.String = null,
     textEdit: TextEdit = null
   ): CompletionItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (additionalTextEdits != null) __obj.updateDynamic("additionalTextEdits")(additionalTextEdits)
     if (command != null) __obj.updateDynamic("command")(command)
     if (commitCharacters != null) __obj.updateDynamic("commitCharacters")(commitCharacters)

@@ -18,8 +18,7 @@ object ojConveyorBeltSettableProperties {
     contentParent: java.lang.String = null,
     translations: js.Object = null
   ): ojConveyorBeltSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
     if (contentParent != null) __obj.updateDynamic("contentParent")(contentParent)
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojConveyorBeltSettableProperties]

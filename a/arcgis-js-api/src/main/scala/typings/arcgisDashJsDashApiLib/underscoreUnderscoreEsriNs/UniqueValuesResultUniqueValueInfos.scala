@@ -30,12 +30,8 @@ object UniqueValuesResultUniqueValueInfos {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     value: java.lang.String | scala.Double
   ): UniqueValuesResultUniqueValueInfos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[UniqueValuesResultUniqueValueInfos]
   }
 }

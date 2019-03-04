@@ -64,9 +64,8 @@ object Anon_Cn {
       activedirectory2Lib.activedirectory2LibStrings.description
     ]
   ): Anon_Cn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(group = group, user = user)
+  
     __obj.asInstanceOf[Anon_Cn]
   }
 }

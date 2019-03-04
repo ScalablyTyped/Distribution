@@ -13,9 +13,8 @@ trait RTCIceGathererEventMap extends js.Object {
 object RTCIceGathererEventMap {
   @scala.inline
   def apply(error: Event, localcandidate: RTCIceGathererEvent): RTCIceGathererEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("localcandidate")(localcandidate)
+    val __obj = js.Dynamic.literal(error = error, localcandidate = localcandidate)
+  
     __obj.asInstanceOf[RTCIceGathererEventMap]
   }
 }

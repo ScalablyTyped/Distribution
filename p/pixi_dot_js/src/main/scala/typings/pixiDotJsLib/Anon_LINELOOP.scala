@@ -26,14 +26,8 @@ object Anon_LINELOOP {
     TRIANGLE_FAN: scala.Double,
     TRIANGLE_STRIP: scala.Double
   ): Anon_LINELOOP = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LINES")(LINES)
-    __obj.updateDynamic("LINE_LOOP")(LINE_LOOP)
-    __obj.updateDynamic("LINE_STRIP")(LINE_STRIP)
-    __obj.updateDynamic("POINTS")(POINTS)
-    __obj.updateDynamic("TRIANGLES")(TRIANGLES)
-    __obj.updateDynamic("TRIANGLE_FAN")(TRIANGLE_FAN)
-    __obj.updateDynamic("TRIANGLE_STRIP")(TRIANGLE_STRIP)
+    val __obj = js.Dynamic.literal(LINES = LINES, LINE_LOOP = LINE_LOOP, LINE_STRIP = LINE_STRIP, POINTS = POINTS, TRIANGLES = TRIANGLES, TRIANGLE_FAN = TRIANGLE_FAN, TRIANGLE_STRIP = TRIANGLE_STRIP)
+  
     __obj.asInstanceOf[Anon_LINELOOP]
   }
 }

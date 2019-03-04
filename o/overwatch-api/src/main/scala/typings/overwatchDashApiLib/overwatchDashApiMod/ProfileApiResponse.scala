@@ -26,15 +26,8 @@ object ProfileApiResponse {
     star: java.lang.String,
     username: java.lang.String
   ): ProfileApiResponse = {
-    val __obj = js.Dynamic.literal(`private` = `private`)
-    __obj.updateDynamic("competitive")(competitive)
-    __obj.updateDynamic("games")(games)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("levelFrame")(levelFrame)
-    __obj.updateDynamic("playtime")(playtime)
-    __obj.updateDynamic("portrait")(portrait)
-    __obj.updateDynamic("star")(star)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(competitive = competitive, games = games, level = level, levelFrame = levelFrame, playtime = playtime, portrait = portrait, star = star, username = username)
+    __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[ProfileApiResponse]
   }
 }

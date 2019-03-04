@@ -24,8 +24,7 @@ object Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation {
     height: scala.Int | scala.Double = null,
     rotation: scala.Int | scala.Double = null
   ): Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rectangle")(rectangle)
+    val __obj = js.Dynamic.literal(rectangle = rectangle)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])

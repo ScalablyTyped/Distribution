@@ -72,19 +72,8 @@ object GetSnapshotResult {
     volumeId: java.lang.String,
     volumeSize: scala.Double
   ): GetSnapshotResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataEncryptionKeyId")(dataEncryptionKeyId)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("encrypted")(encrypted)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("ownerAlias")(ownerAlias)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("snapshotId")(snapshotId)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("volumeId")(volumeId)
-    __obj.updateDynamic("volumeSize")(volumeSize)
+    val __obj = js.Dynamic.literal(dataEncryptionKeyId = dataEncryptionKeyId, description = description, encrypted = encrypted, id = id, kmsKeyId = kmsKeyId, ownerAlias = ownerAlias, ownerId = ownerId, snapshotId = snapshotId, state = state, tags = tags, volumeId = volumeId, volumeSize = volumeSize)
+  
     __obj.asInstanceOf[GetSnapshotResult]
   }
 }

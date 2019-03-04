@@ -108,25 +108,8 @@ object OptionsLB {
     modelsRootDir: java.lang.String,
     normalization: java.lang.String | scala.Boolean | js.Any
   ): OptionsLB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appConfigRootDir")(appConfigRootDir)
-    __obj.updateDynamic("appRootDir")(appRootDir)
-    __obj.updateDynamic("bootDirs")(bootDirs)
-    __obj.updateDynamic("bootScripts")(bootScripts)
-    __obj.updateDynamic("componentRootDir")(componentRootDir)
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("dataSources")(dataSources)
-    __obj.updateDynamic("dsRootDir")(dsRootDir)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("middleware")(middleware)
-    __obj.updateDynamic("middlewareRootDir")(middlewareRootDir)
-    __obj.updateDynamic("mixinDirs")(mixinDirs)
-    __obj.updateDynamic("mixinSources")(mixinSources)
-    __obj.updateDynamic("modelDefinitions")(modelDefinitions)
-    __obj.updateDynamic("modelSources")(modelSources)
-    __obj.updateDynamic("models")(models)
-    __obj.updateDynamic("modelsRootDir")(modelsRootDir)
-    __obj.updateDynamic("normalization")(normalization.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appConfigRootDir = appConfigRootDir, appRootDir = appRootDir, bootDirs = bootDirs, bootScripts = bootScripts, componentRootDir = componentRootDir, components = components, dataSources = dataSources, dsRootDir = dsRootDir, env = env, middleware = middleware, middlewareRootDir = middlewareRootDir, mixinDirs = mixinDirs, mixinSources = mixinSources, modelDefinitions = modelDefinitions, modelSources = modelSources, models = models, modelsRootDir = modelsRootDir, normalization = normalization.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OptionsLB]
   }
 }

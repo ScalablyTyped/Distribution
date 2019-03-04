@@ -37,15 +37,8 @@ object Notify {
     onShowNotification: js.Function1[stdLib.Event, scala.Unit],
     show: js.Function0[scala.Unit]
   ): Notify = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("handleEvent")(handleEvent)
-    __obj.updateDynamic("onClickNotification")(onClickNotification)
-    __obj.updateDynamic("onCloseNotification")(onCloseNotification)
-    __obj.updateDynamic("onErrorNotification")(onErrorNotification)
-    __obj.updateDynamic("onShowNotification")(onShowNotification)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(close = close, destroy = destroy, handleEvent = handleEvent, onClickNotification = onClickNotification, onCloseNotification = onCloseNotification, onErrorNotification = onErrorNotification, onShowNotification = onShowNotification, show = show)
+  
     __obj.asInstanceOf[Notify]
   }
 }

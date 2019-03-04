@@ -18,8 +18,7 @@ object Anon_ItemPriority {
     priority: scala.Int | scala.Double = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ItemPriority[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[Anon_ItemPriority[T]]

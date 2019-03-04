@@ -110,19 +110,8 @@ object XSmartTagRecognizer {
     ],
     release: js.Function0[scala.Unit]
   ): XSmartTagRecognizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SmartTagCount")(SmartTagCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("displayPropertyPage")(displayPropertyPage)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getSmartTagDownloadURL")(getSmartTagDownloadURL)
-    __obj.updateDynamic("getSmartTagName")(getSmartTagName)
-    __obj.updateDynamic("hasPropertyPage")(hasPropertyPage)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("recognize")(recognize)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount, acquire = acquire, displayPropertyPage = displayPropertyPage, getDescription = getDescription, getName = getName, getSmartTagDownloadURL = getSmartTagDownloadURL, getSmartTagName = getSmartTagName, hasPropertyPage = hasPropertyPage, initialize = initialize, queryInterface = queryInterface, recognize = recognize, release = release)
+  
     __obj.asInstanceOf[XSmartTagRecognizer]
   }
 }

@@ -16,9 +16,7 @@ object DecoratorContext {
     story: java.lang.String,
     parameters: stdLib.Record[ParameterName, T] = null
   ): DecoratorContext[ParameterName, T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("story")(story)
+    val __obj = js.Dynamic.literal(kind = kind, story = story)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     __obj.asInstanceOf[DecoratorContext[ParameterName, T]]
   }

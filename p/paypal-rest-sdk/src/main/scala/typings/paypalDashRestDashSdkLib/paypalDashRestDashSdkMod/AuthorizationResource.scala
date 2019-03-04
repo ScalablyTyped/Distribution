@@ -32,11 +32,7 @@ object AuthorizationResource {
     reference_id: java.lang.String = null,
     state: java.lang.String = null
   ): AuthorizationResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("update_time")(update_time)
-    __obj.updateDynamic("valid_until")(valid_until)
+    val __obj = js.Dynamic.literal(amount = amount, id = id, update_time = update_time, valid_until = valid_until)
     if (create_time != null) __obj.updateDynamic("create_time")(create_time)
     if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details)
     if (links != null) __obj.updateDynamic("links")(links)

@@ -12,8 +12,8 @@ trait CountableQuery[T] extends js.Object {
 object CountableQuery {
   @scala.inline
   def apply[T](count: js.Function0[ExecutableQuery[T]]): CountableQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
+    val __obj = js.Dynamic.literal(count = count)
+  
     __obj.asInstanceOf[CountableQuery[T]]
   }
 }

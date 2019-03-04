@@ -25,8 +25,8 @@ trait XPropertyControlFactory extends js.Object {
 object XPropertyControlFactory {
   @scala.inline
   def apply(createPropertyControl: js.Function2[scala.Double, scala.Boolean, XPropertyControl]): XPropertyControlFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPropertyControl")(createPropertyControl)
+    val __obj = js.Dynamic.literal(createPropertyControl = createPropertyControl)
+  
     __obj.asInstanceOf[XPropertyControlFactory]
   }
 }

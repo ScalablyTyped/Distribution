@@ -29,8 +29,7 @@ object SignatureInformation {
     documentation: java.lang.String | MarkupContent = null,
     parameters: js.Array[ParameterInformation] = null
   ): SignatureInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     __obj.asInstanceOf[SignatureInformation]

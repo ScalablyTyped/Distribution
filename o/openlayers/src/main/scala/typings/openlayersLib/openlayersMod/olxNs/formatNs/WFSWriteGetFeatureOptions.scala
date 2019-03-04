@@ -40,10 +40,7 @@ object WFSWriteGetFeatureOptions {
     srsName: java.lang.String = null,
     startIndex: scala.Int | scala.Double = null
   ): WFSWriteGetFeatureOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("featureNS")(featureNS)
-    __obj.updateDynamic("featurePrefix")(featurePrefix)
-    __obj.updateDynamic("featureTypes")(featureTypes)
+    val __obj = js.Dynamic.literal(featureNS = featureNS, featurePrefix = featurePrefix, featureTypes = featureTypes)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter)

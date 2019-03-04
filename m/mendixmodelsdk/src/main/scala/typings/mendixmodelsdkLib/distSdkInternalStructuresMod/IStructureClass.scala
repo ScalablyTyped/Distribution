@@ -12,8 +12,8 @@ trait IStructureClass extends js.Object {
 object IStructureClass {
   @scala.inline
   def apply(versionInfo: mendixmodelsdkLib.distSdkInternalVersionDashChecksMod.StructureVersionInfo): IStructureClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("versionInfo")(versionInfo)
+    val __obj = js.Dynamic.literal(versionInfo = versionInfo)
+  
     __obj.asInstanceOf[IStructureClass]
   }
 }

@@ -57,9 +57,8 @@ object IMarkerLayer {
       heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.Response | heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.TiledResponse
     ]
   ): IMarkerLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestDomMarkers")(requestDomMarkers)
-    __obj.updateDynamic("requestMarkers")(requestMarkers)
+    val __obj = js.Dynamic.literal(requestDomMarkers = requestDomMarkers, requestMarkers = requestMarkers)
+  
     __obj.asInstanceOf[IMarkerLayer]
   }
 }

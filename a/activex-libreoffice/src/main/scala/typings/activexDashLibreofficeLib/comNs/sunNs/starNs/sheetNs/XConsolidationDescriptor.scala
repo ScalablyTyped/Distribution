@@ -82,28 +82,8 @@ object XConsolidationDescriptor {
     setUseColumnHeaders: js.Function1[scala.Boolean, scala.Unit],
     setUseRowHeaders: js.Function1[scala.Boolean, scala.Unit]
   ): XConsolidationDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Function")(Function)
-    __obj.updateDynamic("InsertLinks")(InsertLinks)
-    __obj.updateDynamic("Sources")(Sources)
-    __obj.updateDynamic("StartOutputPosition")(StartOutputPosition)
-    __obj.updateDynamic("UseColumnHeaders")(UseColumnHeaders)
-    __obj.updateDynamic("UseRowHeaders")(UseRowHeaders)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFunction")(getFunction)
-    __obj.updateDynamic("getInsertLinks")(getInsertLinks)
-    __obj.updateDynamic("getSources")(getSources)
-    __obj.updateDynamic("getStartOutputPosition")(getStartOutputPosition)
-    __obj.updateDynamic("getUseColumnHeaders")(getUseColumnHeaders)
-    __obj.updateDynamic("getUseRowHeaders")(getUseRowHeaders)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFunction")(setFunction)
-    __obj.updateDynamic("setInsertLinks")(setInsertLinks)
-    __obj.updateDynamic("setSources")(setSources)
-    __obj.updateDynamic("setStartOutputPosition")(setStartOutputPosition)
-    __obj.updateDynamic("setUseColumnHeaders")(setUseColumnHeaders)
-    __obj.updateDynamic("setUseRowHeaders")(setUseRowHeaders)
+    val __obj = js.Dynamic.literal(Function = Function, InsertLinks = InsertLinks, Sources = Sources, StartOutputPosition = StartOutputPosition, UseColumnHeaders = UseColumnHeaders, UseRowHeaders = UseRowHeaders, acquire = acquire, getFunction = getFunction, getInsertLinks = getInsertLinks, getSources = getSources, getStartOutputPosition = getStartOutputPosition, getUseColumnHeaders = getUseColumnHeaders, getUseRowHeaders = getUseRowHeaders, queryInterface = queryInterface, release = release, setFunction = setFunction, setInsertLinks = setInsertLinks, setSources = setSources, setStartOutputPosition = setStartOutputPosition, setUseColumnHeaders = setUseColumnHeaders, setUseRowHeaders = setUseRowHeaders)
+  
     __obj.asInstanceOf[XConsolidationDescriptor]
   }
 }

@@ -20,9 +20,7 @@ object RadioButtonGroupProps {
     onChange: js.Function1[/* repeated */ js.Any, _] = null,
     value: java.lang.String = null
   ): RadioButtonGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(name = name, options = options)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[RadioButtonGroupProps]

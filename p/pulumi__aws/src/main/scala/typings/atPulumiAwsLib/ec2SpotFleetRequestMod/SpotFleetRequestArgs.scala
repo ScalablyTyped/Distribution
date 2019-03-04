@@ -125,10 +125,7 @@ object SpotFleetRequestArgs {
     validUntil: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     waitForFulfillment: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): SpotFleetRequestArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iamFleetRole")(iamFleetRole.asInstanceOf[js.Any])
-    __obj.updateDynamic("launchSpecifications")(launchSpecifications.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetCapacity")(targetCapacity.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(iamFleetRole = iamFleetRole.asInstanceOf[js.Any], launchSpecifications = launchSpecifications.asInstanceOf[js.Any], targetCapacity = targetCapacity.asInstanceOf[js.Any])
     if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
     if (excessCapacityTerminationPolicy != null) __obj.updateDynamic("excessCapacityTerminationPolicy")(excessCapacityTerminationPolicy.asInstanceOf[js.Any])
     if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])

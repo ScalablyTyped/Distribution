@@ -26,12 +26,8 @@ object Anon_ArgsChildren {
     onSubmit: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   ): Anon_ArgsChildren = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("hideRequiredMark")(hideRequiredMark)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("onSubmit")(onSubmit)
-    __obj.updateDynamic("prefixCls")(prefixCls)
+    val __obj = js.Dynamic.literal(children = children, hideRequiredMark = hideRequiredMark, layout = layout, onSubmit = onSubmit, prefixCls = prefixCls)
+  
     __obj.asInstanceOf[Anon_ArgsChildren]
   }
 }

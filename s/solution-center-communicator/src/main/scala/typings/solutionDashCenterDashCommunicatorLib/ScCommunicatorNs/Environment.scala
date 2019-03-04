@@ -62,10 +62,7 @@ object Environment {
     USER_SERVICE: java.lang.String = null,
     USER_SERVICE_NEW: java.lang.String = null
   ): Environment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DOMAIN")(DOMAIN)
-    __obj.updateDynamic("NAME")(NAME)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(DOMAIN = DOMAIN, NAME = NAME, URL = URL)
     if (GOODDATA_SERVICE != null) __obj.updateDynamic("GOODDATA_SERVICE")(GOODDATA_SERVICE)
     if (MERCHANT_SERVICE != null) __obj.updateDynamic("MERCHANT_SERVICE")(MERCHANT_SERVICE)
     if (MODULE_SERVICE != null) __obj.updateDynamic("MODULE_SERVICE")(MODULE_SERVICE)

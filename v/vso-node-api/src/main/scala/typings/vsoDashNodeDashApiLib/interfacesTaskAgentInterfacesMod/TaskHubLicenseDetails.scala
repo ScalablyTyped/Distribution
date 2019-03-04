@@ -30,16 +30,8 @@ object TaskHubLicenseDetails {
     purchasedLicenseCount: scala.Double,
     totalLicenseCount: scala.Double
   ): TaskHubLicenseDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enterpriseUsersCount")(enterpriseUsersCount)
-    __obj.updateDynamic("freeLicenseCount")(freeLicenseCount)
-    __obj.updateDynamic("hasLicenseCountEverUpdated")(hasLicenseCountEverUpdated)
-    __obj.updateDynamic("hostedAgentMinutesFreeCount")(hostedAgentMinutesFreeCount)
-    __obj.updateDynamic("hostedAgentMinutesUsedCount")(hostedAgentMinutesUsedCount)
-    __obj.updateDynamic("msdnUsersCount")(msdnUsersCount)
-    __obj.updateDynamic("purchasedHostedLicenseCount")(purchasedHostedLicenseCount)
-    __obj.updateDynamic("purchasedLicenseCount")(purchasedLicenseCount)
-    __obj.updateDynamic("totalLicenseCount")(totalLicenseCount)
+    val __obj = js.Dynamic.literal(enterpriseUsersCount = enterpriseUsersCount, freeLicenseCount = freeLicenseCount, hasLicenseCountEverUpdated = hasLicenseCountEverUpdated, hostedAgentMinutesFreeCount = hostedAgentMinutesFreeCount, hostedAgentMinutesUsedCount = hostedAgentMinutesUsedCount, msdnUsersCount = msdnUsersCount, purchasedHostedLicenseCount = purchasedHostedLicenseCount, purchasedLicenseCount = purchasedLicenseCount, totalLicenseCount = totalLicenseCount)
+  
     __obj.asInstanceOf[TaskHubLicenseDetails]
   }
 }

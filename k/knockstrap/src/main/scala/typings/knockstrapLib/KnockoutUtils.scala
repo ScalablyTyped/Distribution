@@ -16,9 +16,8 @@ object KnockoutUtils {
     uniqueId: js.Function1[java.lang.String, java.lang.String],
     unwrapProperties: js.Function1[js.Any, js.Any]
   ): KnockoutUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uniqueId")(uniqueId)
-    __obj.updateDynamic("unwrapProperties")(unwrapProperties)
+    val __obj = js.Dynamic.literal(uniqueId = uniqueId, unwrapProperties = unwrapProperties)
+  
     __obj.asInstanceOf[KnockoutUtils]
   }
 }

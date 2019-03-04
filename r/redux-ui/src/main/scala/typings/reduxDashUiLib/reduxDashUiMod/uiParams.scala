@@ -32,8 +32,7 @@ object uiParams {
     options: reduxDashUiLib.Anon_Pure = null,
     persist: js.UndefOr[scala.Boolean] = js.undefined
   ): uiParams[UIStateShape] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (mergeProps != null) __obj.updateDynamic("mergeProps")(mergeProps)
     if (options != null) __obj.updateDynamic("options")(options)

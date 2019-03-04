@@ -18,10 +18,8 @@ object Anon_AVAILABLE {
     ENABLED: chromeDashAppsLib.chromeDashAppsLibStrings.enabled,
     UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
   ): Anon_AVAILABLE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AVAILABLE")(AVAILABLE)
-    __obj.updateDynamic("ENABLED")(ENABLED)
-    __obj.updateDynamic("UNKNOWN")(UNKNOWN)
+    val __obj = js.Dynamic.literal(AVAILABLE = AVAILABLE, ENABLED = ENABLED, UNKNOWN = UNKNOWN)
+  
     __obj.asInstanceOf[Anon_AVAILABLE]
   }
 }

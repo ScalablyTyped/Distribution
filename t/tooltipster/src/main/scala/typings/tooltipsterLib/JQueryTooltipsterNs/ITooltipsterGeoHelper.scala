@@ -18,10 +18,8 @@ object ITooltipsterGeoHelper {
     origin: tooltipsterLib.Anon_FixedLineage,
     window: tooltipsterLib.Anon_Scroll
   ): ITooltipsterGeoHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(document = document, origin = origin, window = window)
+  
     __obj.asInstanceOf[ITooltipsterGeoHelper]
   }
 }

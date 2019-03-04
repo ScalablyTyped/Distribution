@@ -33,10 +33,7 @@ object IInvocator {
     user: IUserInfo = null,
     workflow: IWorkflowInfo = null
   ): IInvocator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmsBaseUrl")(cmsBaseUrl)
-    __obj.updateDynamic("documentIds")(documentIds)
-    __obj.updateDynamic("editSessionToken")(editSessionToken)
+    val __obj = js.Dynamic.literal(cmsBaseUrl = cmsBaseUrl, documentIds = documentIds, editSessionToken = editSessionToken)
     if (!js.isUndefined(autosave)) __obj.updateDynamic("autosave")(autosave)
     if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user)

@@ -23,8 +23,7 @@ object DataViewMetadata {
     objects: DataViewObjects = null,
     segment: js.Object = null
   ): DataViewMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(columns = columns)
     if (dataReduction != null) __obj.updateDynamic("dataReduction")(dataReduction)
     if (objects != null) __obj.updateDynamic("objects")(objects)
     if (segment != null) __obj.updateDynamic("segment")(segment)

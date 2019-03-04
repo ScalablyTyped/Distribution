@@ -40,19 +40,8 @@ object DateUtils {
     isSameDay: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
     isSameMonth: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean]
   ): DateUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDayToRange")(addDayToRange)
-    __obj.updateDynamic("addMonths")(addMonths)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("isDate")(isDate)
-    __obj.updateDynamic("isDayAfter")(isDayAfter)
-    __obj.updateDynamic("isDayBefore")(isDayBefore)
-    __obj.updateDynamic("isDayBetween")(isDayBetween)
-    __obj.updateDynamic("isDayInRange")(isDayInRange)
-    __obj.updateDynamic("isFutureDay")(isFutureDay)
-    __obj.updateDynamic("isPastDay")(isPastDay)
-    __obj.updateDynamic("isSameDay")(isSameDay)
-    __obj.updateDynamic("isSameMonth")(isSameMonth)
+    val __obj = js.Dynamic.literal(addDayToRange = addDayToRange, addMonths = addMonths, clone = clone, isDate = isDate, isDayAfter = isDayAfter, isDayBefore = isDayBefore, isDayBetween = isDayBetween, isDayInRange = isDayInRange, isFutureDay = isFutureDay, isPastDay = isPastDay, isSameDay = isSameDay, isSameMonth = isSameMonth)
+  
     __obj.asInstanceOf[DateUtils]
   }
 }

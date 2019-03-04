@@ -47,9 +47,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRemoteConfig")(getRemoteConfig)
-    __obj.updateDynamic("updateRemoteConfig")(updateRemoteConfig)
+    val __obj = js.Dynamic.literal(getRemoteConfig = getRemoteConfig, updateRemoteConfig = updateRemoteConfig)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

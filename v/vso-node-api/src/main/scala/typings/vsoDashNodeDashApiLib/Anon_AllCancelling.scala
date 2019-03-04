@@ -26,14 +26,8 @@ object Anon_AllCancelling {
     notStarted: scala.Double,
     postponed: scala.Double
   ): Anon_AllCancelling = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("cancelling")(cancelling)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("notStarted")(notStarted)
-    __obj.updateDynamic("postponed")(postponed)
+    val __obj = js.Dynamic.literal(all = all, cancelling = cancelling, completed = completed, inProgress = inProgress, none = none, notStarted = notStarted, postponed = postponed)
+  
     __obj.asInstanceOf[Anon_AllCancelling]
   }
 }

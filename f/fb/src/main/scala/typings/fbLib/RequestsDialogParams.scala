@@ -40,10 +40,7 @@ object RequestsDialogParams {
     title: java.lang.String = null,
     to: java.lang.String = null
   ): RequestsDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any], message = message, method = method)
     if (action_type != null) __obj.updateDynamic("action_type")(action_type)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (data != null) __obj.updateDynamic("data")(data)

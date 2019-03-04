@@ -58,8 +58,7 @@ object ColumnGroupProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[ColumnGroup] = null
   ): ColumnGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)

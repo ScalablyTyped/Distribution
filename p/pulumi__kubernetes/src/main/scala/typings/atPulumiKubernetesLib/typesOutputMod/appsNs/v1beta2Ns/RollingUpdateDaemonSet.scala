@@ -27,8 +27,8 @@ trait RollingUpdateDaemonSet extends js.Object {
 object RollingUpdateDaemonSet {
   @scala.inline
   def apply(maxUnavailable: scala.Double | java.lang.String): RollingUpdateDaemonSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxUnavailable = maxUnavailable.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RollingUpdateDaemonSet]
   }
 }

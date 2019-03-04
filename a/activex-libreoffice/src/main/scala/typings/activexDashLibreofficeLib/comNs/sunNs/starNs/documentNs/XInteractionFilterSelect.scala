@@ -43,14 +43,8 @@ object XInteractionFilterSelect {
     select: js.Function0[scala.Unit],
     setFilter: js.Function1[java.lang.String, scala.Unit]
   ): XInteractionFilterSelect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFilter")(getFilter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setFilter")(setFilter)
+    val __obj = js.Dynamic.literal(Filter = Filter, acquire = acquire, getFilter = getFilter, queryInterface = queryInterface, release = release, select = select, setFilter = setFilter)
+  
     __obj.asInstanceOf[XInteractionFilterSelect]
   }
 }

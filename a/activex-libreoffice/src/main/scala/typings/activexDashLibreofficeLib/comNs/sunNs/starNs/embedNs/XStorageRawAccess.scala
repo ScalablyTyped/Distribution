@@ -74,10 +74,8 @@ object XStorageRawAccess {
       scala.Unit
     ]
   ): XStorageRawAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPlainRawStreamElement")(getPlainRawStreamElement)
-    __obj.updateDynamic("getRawEncrStreamElement")(getRawEncrStreamElement)
-    __obj.updateDynamic("insertRawEncrStreamElement")(insertRawEncrStreamElement)
+    val __obj = js.Dynamic.literal(getPlainRawStreamElement = getPlainRawStreamElement, getRawEncrStreamElement = getRawEncrStreamElement, insertRawEncrStreamElement = insertRawEncrStreamElement)
+  
     __obj.asInstanceOf[XStorageRawAccess]
   }
 }

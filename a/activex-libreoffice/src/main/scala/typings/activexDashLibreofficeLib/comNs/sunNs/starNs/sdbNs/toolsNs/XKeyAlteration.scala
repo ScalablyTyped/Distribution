@@ -55,14 +55,8 @@ object XKeyAlteration {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XKeyAlteration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addKey")(addKey)
-    __obj.updateDynamic("dropKey")(dropKey)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, addKey = addKey, dropKey = dropKey, initialize = initialize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XKeyAlteration]
   }
 }

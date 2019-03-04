@@ -13,9 +13,8 @@ trait Anon_Location extends js.Object {
 object Anon_Location {
   @scala.inline
   def apply(location: Anon_Height, words: java.lang.String): Anon_Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(location = location, words = words)
+  
     __obj.asInstanceOf[Anon_Location]
   }
 }

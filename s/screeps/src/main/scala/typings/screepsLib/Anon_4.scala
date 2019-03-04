@@ -12,8 +12,8 @@ trait Anon_4 extends js.Object {
 object Anon_4 {
   @scala.inline
   def apply(dismantle: screepsLib.screepsLibNumbers.`4`): Anon_4 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dismantle")(dismantle)
+    val __obj = js.Dynamic.literal(dismantle = dismantle)
+  
     __obj.asInstanceOf[Anon_4]
   }
 }

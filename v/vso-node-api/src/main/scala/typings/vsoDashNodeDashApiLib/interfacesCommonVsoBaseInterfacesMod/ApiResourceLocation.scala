@@ -52,15 +52,8 @@ object ApiResourceLocation {
     resourceVersion: scala.Double,
     routeTemplate: java.lang.String
   ): ApiResourceLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("maxVersion")(maxVersion)
-    __obj.updateDynamic("minVersion")(minVersion)
-    __obj.updateDynamic("releasedVersion")(releasedVersion)
-    __obj.updateDynamic("resourceName")(resourceName)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
-    __obj.updateDynamic("routeTemplate")(routeTemplate)
+    val __obj = js.Dynamic.literal(area = area, id = id, maxVersion = maxVersion, minVersion = minVersion, releasedVersion = releasedVersion, resourceName = resourceName, resourceVersion = resourceVersion, routeTemplate = routeTemplate)
+  
     __obj.asInstanceOf[ApiResourceLocation]
   }
 }

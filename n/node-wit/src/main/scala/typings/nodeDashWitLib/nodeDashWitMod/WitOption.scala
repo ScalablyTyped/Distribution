@@ -18,8 +18,7 @@ object WitOption {
     actions: js.Any = null,
     logger: nodeDashWitLib.nodeDashWitMod.logNs.Logger = null
   ): WitOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken)
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (logger != null) __obj.updateDynamic("logger")(logger)
     __obj.asInstanceOf[WitOption]

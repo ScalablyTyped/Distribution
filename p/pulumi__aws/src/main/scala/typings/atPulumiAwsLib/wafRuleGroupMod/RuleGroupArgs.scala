@@ -33,8 +33,7 @@ object RuleGroupArgs {
     ] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RuleGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any])
     if (activatedRules != null) __obj.updateDynamic("activatedRules")(activatedRules.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupArgs]

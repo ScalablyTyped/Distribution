@@ -20,11 +20,8 @@ object IPanoramaMarker {
     getPosition: js.Function0[js.Array[scala.Double]],
     properties: yandexDashMapsLib.ymapsNs.dataNs.Manager
   ): IPanoramaMarker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIconSet")(getIconSet)
-    __obj.updateDynamic("getPanorama")(getPanorama)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(getIconSet = getIconSet, getPanorama = getPanorama, getPosition = getPosition, properties = properties)
+  
     __obj.asInstanceOf[IPanoramaMarker]
   }
 }

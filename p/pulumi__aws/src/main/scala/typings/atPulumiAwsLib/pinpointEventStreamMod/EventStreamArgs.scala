@@ -27,10 +27,8 @@ object EventStreamArgs {
     destinationStreamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): EventStreamArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    __obj.updateDynamic("destinationStreamArn")(destinationStreamArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], destinationStreamArn = destinationStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[EventStreamArgs]
   }
 }

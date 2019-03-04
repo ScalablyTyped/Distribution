@@ -24,13 +24,8 @@ object ImageryLayerFeatureInfo {
     name: java.lang.String,
     position: Cartographic
   ): ImageryLayerFeatureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configureDescriptionFromProperties")(configureDescriptionFromProperties)
-    __obj.updateDynamic("configureNameFromProperties")(configureNameFromProperties)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(configureDescriptionFromProperties = configureDescriptionFromProperties, configureNameFromProperties = configureNameFromProperties, data = data, description = description, name = name, position = position)
+  
     __obj.asInstanceOf[ImageryLayerFeatureInfo]
   }
 }

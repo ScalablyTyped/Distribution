@@ -20,11 +20,8 @@ object NxPivotPage {
     qLeft: js.Array[NxPivotDimensioncell],
     qTop: js.Array[NxPivotDimensioncell]
   ): NxPivotPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qArea")(qArea)
-    __obj.updateDynamic("qData")(qData)
-    __obj.updateDynamic("qLeft")(qLeft)
-    __obj.updateDynamic("qTop")(qTop)
+    val __obj = js.Dynamic.literal(qArea = qArea, qData = qData, qLeft = qLeft, qTop = qTop)
+  
     __obj.asInstanceOf[NxPivotPage]
   }
 }

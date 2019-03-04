@@ -43,13 +43,8 @@ object ProcessConfiguration {
     ],
     url: java.lang.String
   ): ProcessConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bugWorkItems")(bugWorkItems)
-    __obj.updateDynamic("portfolioBacklogs")(portfolioBacklogs)
-    __obj.updateDynamic("requirementBacklog")(requirementBacklog)
-    __obj.updateDynamic("taskBacklog")(taskBacklog)
-    __obj.updateDynamic("typeFields")(typeFields)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bugWorkItems = bugWorkItems, portfolioBacklogs = portfolioBacklogs, requirementBacklog = requirementBacklog, taskBacklog = taskBacklog, typeFields = typeFields, url = url)
+  
     __obj.asInstanceOf[ProcessConfiguration]
   }
 }

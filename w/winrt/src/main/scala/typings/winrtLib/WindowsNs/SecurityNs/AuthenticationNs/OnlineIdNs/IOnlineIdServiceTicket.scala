@@ -14,10 +14,8 @@ trait IOnlineIdServiceTicket extends js.Object {
 object IOnlineIdServiceTicket {
   @scala.inline
   def apply(errorCode: scala.Double, request: OnlineIdServiceTicketRequest, value: java.lang.String): IOnlineIdServiceTicket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, request = request, value = value)
+  
     __obj.asInstanceOf[IOnlineIdServiceTicket]
   }
 }

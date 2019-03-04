@@ -28,19 +28,8 @@ object TfvcShelveset {
     url: java.lang.String,
     workItems: js.Array[AssociatedWorkItem]
   ): TfvcShelveset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("commentTruncated")(commentTruncated)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("notes")(notes)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("policyOverride")(policyOverride)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(_links = _links, changes = changes, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, id = id, name = name, notes = notes, owner = owner, policyOverride = policyOverride, url = url, workItems = workItems)
+  
     __obj.asInstanceOf[TfvcShelveset]
   }
 }

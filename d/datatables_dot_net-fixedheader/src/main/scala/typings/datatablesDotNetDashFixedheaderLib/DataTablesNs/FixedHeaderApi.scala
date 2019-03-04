@@ -37,12 +37,8 @@ object FixedHeaderApi {
     footerOffset: js.Function1[scala.Double, Api],
     headerOffset: js.Function1[scala.Double, Api]
   ): FixedHeaderApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjust")(adjust)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("footerOffset")(footerOffset)
-    __obj.updateDynamic("headerOffset")(headerOffset)
+    val __obj = js.Dynamic.literal(adjust = adjust, disable = disable, enable = enable, footerOffset = footerOffset, headerOffset = headerOffset)
+  
     __obj.asInstanceOf[FixedHeaderApi]
   }
 }

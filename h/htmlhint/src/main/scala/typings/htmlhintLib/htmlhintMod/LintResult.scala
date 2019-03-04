@@ -22,12 +22,8 @@ object LintResult {
     message: java.lang.String,
     rule: Rule
   ): LintResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("evidence")(evidence)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("rule")(rule)
+    val __obj = js.Dynamic.literal(col = col, evidence = evidence, line = line, message = message, rule = rule)
+  
     __obj.asInstanceOf[LintResult]
   }
 }

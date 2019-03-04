@@ -20,8 +20,8 @@ trait IStaticContentUrl extends js.Object {
 object IStaticContentUrl {
   @scala.inline
   def apply(qUrl: java.lang.String): IStaticContentUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qUrl")(qUrl)
+    val __obj = js.Dynamic.literal(qUrl = qUrl)
+  
     __obj.asInstanceOf[IStaticContentUrl]
   }
 }

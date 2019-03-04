@@ -21,11 +21,11 @@ abstract class ErrorInstance () extends js.Object {
   /**
     * @hidden
     */
-  var `category_`: tstlLib.exceptionErrorCategoryMod.ErrorCategory = js.native
+  var category_ : tstlLib.exceptionErrorCategoryMod.ErrorCategory = js.native
   /**
     * @hidden
     */
-  var `value_`: scala.Double = js.native
+  var value_ : scala.Double = js.native
   /**
     * Assign content.
     *

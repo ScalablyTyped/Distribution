@@ -38,9 +38,8 @@ object GeneralParameterObject {
     required: js.UndefOr[scala.Boolean] = js.undefined,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   ): GeneralParameterObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(in = in, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue)
     if (collectionFormat != null) __obj.updateDynamic("collectionFormat")(collectionFormat)
     if (default != null) __obj.updateDynamic("default")(default)

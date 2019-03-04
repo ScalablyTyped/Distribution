@@ -37,12 +37,8 @@ object _Impl {
     overlay: java.lang.String,
     pusher: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("movedSidebar")(movedSidebar)
-    __obj.updateDynamic("notFound")(notFound)
-    __obj.updateDynamic("overlay")(overlay)
-    __obj.updateDynamic("pusher")(pusher)
+    val __obj = js.Dynamic.literal(method = method, movedSidebar = movedSidebar, notFound = notFound, overlay = overlay, pusher = pusher)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

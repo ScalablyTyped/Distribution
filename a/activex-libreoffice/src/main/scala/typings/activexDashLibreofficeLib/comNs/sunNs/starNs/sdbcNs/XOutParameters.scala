@@ -59,12 +59,8 @@ object XOutParameters {
     registerOutParameter: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XOutParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerNumericOutParameter")(registerNumericOutParameter)
-    __obj.updateDynamic("registerOutParameter")(registerOutParameter)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, registerNumericOutParameter = registerNumericOutParameter, registerOutParameter = registerOutParameter, release = release)
+  
     __obj.asInstanceOf[XOutParameters]
   }
 }

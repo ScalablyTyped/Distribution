@@ -24,13 +24,8 @@ object Anon_Duration {
     url: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
     ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   ): Anon_Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("measurements")(measurements)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(duration = duration, measurements = measurements, name = name, properties = properties, url = url, ver = ver)
+  
     __obj.asInstanceOf[Anon_Duration]
   }
 }

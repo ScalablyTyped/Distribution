@@ -35,12 +35,8 @@ object ASPxClientStrip {
     minValue: js.Object,
     name: java.lang.String
   ): ASPxClientStrip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, maxValue = maxValue, minValue = minValue, name = name)
+  
     __obj.asInstanceOf[ASPxClientStrip]
   }
 }

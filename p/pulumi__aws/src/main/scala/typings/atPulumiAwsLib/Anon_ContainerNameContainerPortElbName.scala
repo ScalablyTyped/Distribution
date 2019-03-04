@@ -20,9 +20,7 @@ object Anon_ContainerNameContainerPortElbName {
     elbName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     targetGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ContainerNameContainerPortElbName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], containerPort = containerPort.asInstanceOf[js.Any])
     if (elbName != null) __obj.updateDynamic("elbName")(elbName.asInstanceOf[js.Any])
     if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContainerNameContainerPortElbName]

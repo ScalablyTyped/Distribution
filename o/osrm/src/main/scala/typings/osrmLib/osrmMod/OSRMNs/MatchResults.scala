@@ -13,9 +13,8 @@ trait MatchResults extends js.Object {
 object MatchResults {
   @scala.inline
   def apply(matchings: js.Array[MatchRoute], tracepoints: js.Array[MatchWaypoint]): MatchResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchings")(matchings)
-    __obj.updateDynamic("tracepoints")(tracepoints)
+    val __obj = js.Dynamic.literal(matchings = matchings, tracepoints = tracepoints)
+  
     __obj.asInstanceOf[MatchResults]
   }
 }

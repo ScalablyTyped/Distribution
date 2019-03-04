@@ -13,9 +13,8 @@ trait Transliterate extends js.Object {
 object Transliterate {
   @scala.inline
   def apply(locale: java.lang.String, replacement: java.lang.String): Transliterate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("replacement")(replacement)
+    val __obj = js.Dynamic.literal(locale = locale, replacement = replacement)
+  
     __obj.asInstanceOf[Transliterate]
   }
 }

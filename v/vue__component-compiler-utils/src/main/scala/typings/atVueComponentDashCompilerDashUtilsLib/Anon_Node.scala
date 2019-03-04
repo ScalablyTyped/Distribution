@@ -17,8 +17,8 @@ object Anon_Node {
       scala.Unit
     ]
   ): Anon_Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postTransformNode")(postTransformNode)
+    val __obj = js.Dynamic.literal(postTransformNode = postTransformNode)
+  
     __obj.asInstanceOf[Anon_Node]
   }
 }

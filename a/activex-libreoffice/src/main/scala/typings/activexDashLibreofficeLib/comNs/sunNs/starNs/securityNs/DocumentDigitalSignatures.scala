@@ -85,35 +85,8 @@ object DocumentDigitalSignatures {
       activexDashInteropLib.SafeArray[DocumentSignatureInformation]
     ]
   ): DocumentDigitalSignatures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DocumentContentSignatureDefaultStreamName")(DocumentContentSignatureDefaultStreamName)
-    __obj.updateDynamic("PackageSignatureDefaultStreamName")(PackageSignatureDefaultStreamName)
-    __obj.updateDynamic("ScriptingContentSignatureDefaultStreamName")(ScriptingContentSignatureDefaultStreamName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addAuthorToTrustedSources")(addAuthorToTrustedSources)
-    __obj.updateDynamic("addLocationToTrustedSources")(addLocationToTrustedSources)
-    __obj.updateDynamic("chooseCertificate")(chooseCertificate)
-    __obj.updateDynamic("createDefault")(createDefault)
-    __obj.updateDynamic("createWithVersion")(createWithVersion)
-    __obj.updateDynamic("createWithVersionAndValidSignature")(createWithVersionAndValidSignature)
-    __obj.updateDynamic("getDocumentContentSignatureDefaultStreamName")(getDocumentContentSignatureDefaultStreamName)
-    __obj.updateDynamic("getPackageSignatureDefaultStreamName")(getPackageSignatureDefaultStreamName)
-    __obj.updateDynamic("getScriptingContentSignatureDefaultStreamName")(getScriptingContentSignatureDefaultStreamName)
-    __obj.updateDynamic("isAuthorTrusted")(isAuthorTrusted)
-    __obj.updateDynamic("isLocationTrusted")(isLocationTrusted)
-    __obj.updateDynamic("manageTrustedSources")(manageTrustedSources)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("showCertificate")(showCertificate)
-    __obj.updateDynamic("showDocumentContentSignatures")(showDocumentContentSignatures)
-    __obj.updateDynamic("showPackageSignatures")(showPackageSignatures)
-    __obj.updateDynamic("showScriptingContentSignatures")(showScriptingContentSignatures)
-    __obj.updateDynamic("signDocumentContent")(signDocumentContent)
-    __obj.updateDynamic("signPackage")(signPackage)
-    __obj.updateDynamic("signScriptingContent")(signScriptingContent)
-    __obj.updateDynamic("verifyDocumentContentSignatures")(verifyDocumentContentSignatures)
-    __obj.updateDynamic("verifyPackageSignatures")(verifyPackageSignatures)
-    __obj.updateDynamic("verifyScriptingContentSignatures")(verifyScriptingContentSignatures)
+    val __obj = js.Dynamic.literal(DocumentContentSignatureDefaultStreamName = DocumentContentSignatureDefaultStreamName, PackageSignatureDefaultStreamName = PackageSignatureDefaultStreamName, ScriptingContentSignatureDefaultStreamName = ScriptingContentSignatureDefaultStreamName, acquire = acquire, addAuthorToTrustedSources = addAuthorToTrustedSources, addLocationToTrustedSources = addLocationToTrustedSources, chooseCertificate = chooseCertificate, createDefault = createDefault, createWithVersion = createWithVersion, createWithVersionAndValidSignature = createWithVersionAndValidSignature, getDocumentContentSignatureDefaultStreamName = getDocumentContentSignatureDefaultStreamName, getPackageSignatureDefaultStreamName = getPackageSignatureDefaultStreamName, getScriptingContentSignatureDefaultStreamName = getScriptingContentSignatureDefaultStreamName, isAuthorTrusted = isAuthorTrusted, isLocationTrusted = isLocationTrusted, manageTrustedSources = manageTrustedSources, queryInterface = queryInterface, release = release, showCertificate = showCertificate, showDocumentContentSignatures = showDocumentContentSignatures, showPackageSignatures = showPackageSignatures, showScriptingContentSignatures = showScriptingContentSignatures, signDocumentContent = signDocumentContent, signPackage = signPackage, signScriptingContent = signScriptingContent, verifyDocumentContentSignatures = verifyDocumentContentSignatures, verifyPackageSignatures = verifyPackageSignatures, verifyScriptingContentSignatures = verifyScriptingContentSignatures)
+  
     __obj.asInstanceOf[DocumentDigitalSignatures]
   }
 }

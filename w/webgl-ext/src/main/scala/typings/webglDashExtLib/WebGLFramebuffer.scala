@@ -12,8 +12,8 @@ trait WebGLFramebuffer extends js.Object {
 object WebGLFramebuffer {
   @scala.inline
   def apply(__WebGLFramebuffer: scala.Unit): WebGLFramebuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__WebGLFramebuffer")(__WebGLFramebuffer)
+    val __obj = js.Dynamic.literal(__WebGLFramebuffer = __WebGLFramebuffer)
+  
     __obj.asInstanceOf[WebGLFramebuffer]
   }
 }

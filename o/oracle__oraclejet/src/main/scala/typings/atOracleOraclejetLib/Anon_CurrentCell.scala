@@ -18,9 +18,7 @@ object Anon_CurrentCell {
     previousCurrentCell: atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.CurrentCell[K],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_CurrentCell[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentCell")(currentCell)
-    __obj.updateDynamic("previousCurrentCell")(previousCurrentCell)
+    val __obj = js.Dynamic.literal(currentCell = currentCell, previousCurrentCell = previousCurrentCell)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CurrentCell[K]]
   }

@@ -18,9 +18,7 @@ object LanguageAriaSettings {
     sortDescending: java.lang.String,
     paginate: LanguagePaginateSettings = null
   ): LanguageAriaSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sortAscending")(sortAscending)
-    __obj.updateDynamic("sortDescending")(sortDescending)
+    val __obj = js.Dynamic.literal(sortAscending = sortAscending, sortDescending = sortDescending)
     if (paginate != null) __obj.updateDynamic("paginate")(paginate)
     __obj.asInstanceOf[LanguageAriaSettings]
   }

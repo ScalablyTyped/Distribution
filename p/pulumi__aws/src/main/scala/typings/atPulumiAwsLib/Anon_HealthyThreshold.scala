@@ -28,15 +28,8 @@ object Anon_HealthyThreshold {
     timeout: scala.Double,
     unhealthyThreshold: scala.Double
   ): Anon_HealthyThreshold = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("healthyThreshold")(healthyThreshold)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("matcher")(matcher)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold)
+    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold, interval = interval, matcher = matcher, path = path, port = port, protocol = protocol, timeout = timeout, unhealthyThreshold = unhealthyThreshold)
+  
     __obj.asInstanceOf[Anon_HealthyThreshold]
   }
 }

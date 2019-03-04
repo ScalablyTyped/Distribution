@@ -42,7 +42,8 @@ object GroupMark {
     transform: js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms] = null,
     zindex: scala.Int | scala.Double = null
   ): GroupMark = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (axes != null) __obj.updateDynamic("axes")(axes)
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)

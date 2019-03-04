@@ -14,8 +14,7 @@ trait Anon_RowIndexRowKey[K]
 object Anon_RowIndexRowKey {
   @scala.inline
   def apply[K](rowKey: K, rowIndex: scala.Int | scala.Double = null): Anon_RowIndexRowKey[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any])
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RowIndexRowKey[K]]
   }

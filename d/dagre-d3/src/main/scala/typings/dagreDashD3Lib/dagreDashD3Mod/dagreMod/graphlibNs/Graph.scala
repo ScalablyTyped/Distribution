@@ -55,12 +55,7 @@ object Graph {
       ]
     ] = null
   ): Graph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("predecessors")(predecessors)
-    __obj.updateDynamic("successors")(successors)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(graph = graph, height = height, predecessors = predecessors, successors = successors, width = width)
     if (transition != null) __obj.updateDynamic("transition")(transition)
     __obj.asInstanceOf[Graph]
   }

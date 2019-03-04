@@ -40,21 +40,8 @@ object Anon_ConnectedServiceKind {
     WebApiConnectedServiceDetails: js.Any,
     WebApiProject: js.Any
   ): Anon_ConnectedServiceKind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectedServiceKind")(ConnectedServiceKind)
-    __obj.updateDynamic("Process")(Process)
-    __obj.updateDynamic("ProcessType")(ProcessType)
-    __obj.updateDynamic("ProjectChangeType")(ProjectChangeType)
-    __obj.updateDynamic("ProjectInfo")(ProjectInfo)
-    __obj.updateDynamic("ProjectMessage")(ProjectMessage)
-    __obj.updateDynamic("ProjectVisibility")(ProjectVisibility)
-    __obj.updateDynamic("SourceControlTypes")(SourceControlTypes)
-    __obj.updateDynamic("TeamProject")(TeamProject)
-    __obj.updateDynamic("TeamProjectReference")(TeamProjectReference)
-    __obj.updateDynamic("TemporaryDataCreatedDTO")(TemporaryDataCreatedDTO)
-    __obj.updateDynamic("WebApiConnectedService")(WebApiConnectedService)
-    __obj.updateDynamic("WebApiConnectedServiceDetails")(WebApiConnectedServiceDetails)
-    __obj.updateDynamic("WebApiProject")(WebApiProject)
+    val __obj = js.Dynamic.literal(ConnectedServiceKind = ConnectedServiceKind, Process = Process, ProcessType = ProcessType, ProjectChangeType = ProjectChangeType, ProjectInfo = ProjectInfo, ProjectMessage = ProjectMessage, ProjectVisibility = ProjectVisibility, SourceControlTypes = SourceControlTypes, TeamProject = TeamProject, TeamProjectReference = TeamProjectReference, TemporaryDataCreatedDTO = TemporaryDataCreatedDTO, WebApiConnectedService = WebApiConnectedService, WebApiConnectedServiceDetails = WebApiConnectedServiceDetails, WebApiProject = WebApiProject)
+  
     __obj.asInstanceOf[Anon_ConnectedServiceKind]
   }
 }

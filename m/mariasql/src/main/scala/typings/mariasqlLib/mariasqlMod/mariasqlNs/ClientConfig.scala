@@ -44,10 +44,7 @@ object ClientConfig {
     ssl: js.Any = null,
     unixSocket: java.lang.String = null
   ): ClientConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(host = host, password = password, user = user)
     if (charset != null) __obj.updateDynamic("charset")(charset)
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])

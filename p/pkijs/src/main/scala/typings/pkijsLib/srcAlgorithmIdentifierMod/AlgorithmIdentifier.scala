@@ -29,13 +29,8 @@ object AlgorithmIdentifier {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): AlgorithmIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithmId")(algorithmId)
-    __obj.updateDynamic("algorithmParams")(algorithmParams)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(algorithmId = algorithmId, algorithmParams = algorithmParams, fromSchema = fromSchema, isEqual = isEqual, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[AlgorithmIdentifier]
   }
 }

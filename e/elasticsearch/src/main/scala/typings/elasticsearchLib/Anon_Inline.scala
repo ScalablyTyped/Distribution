@@ -13,8 +13,8 @@ trait Anon_Inline extends js.Object {
 object Anon_Inline {
   @scala.inline
   def apply(`inline`: java.lang.String, lang: java.lang.String): Anon_Inline = {
-    val __obj = js.Dynamic.literal(`inline` = `inline`)
-    __obj.updateDynamic("lang")(lang)
+    val __obj = js.Dynamic.literal(lang = lang)
+    __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[Anon_Inline]
   }
 }

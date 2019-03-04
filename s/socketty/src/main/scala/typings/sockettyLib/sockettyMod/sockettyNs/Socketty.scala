@@ -31,9 +31,8 @@ object Socketty {
     ],
     createServer: js.Function1[js.Any, SockettyServer]
   ): Socketty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("createServer")(createServer)
+    val __obj = js.Dynamic.literal(connect = connect, createServer = createServer)
+  
     __obj.asInstanceOf[Socketty]
   }
 }

@@ -18,10 +18,8 @@ object Yayson {
     Presenter: yaysonLib.Anon_Adapter,
     Store: org.scalablytyped.runtime.Instantiable0[Store]
   ): Yayson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Adapter")(Adapter)
-    __obj.updateDynamic("Presenter")(Presenter)
-    __obj.updateDynamic("Store")(Store)
+    val __obj = js.Dynamic.literal(Adapter = Adapter, Presenter = Presenter, Store = Store)
+  
     __obj.asInstanceOf[Yayson]
   }
 }

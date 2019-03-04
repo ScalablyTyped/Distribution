@@ -61,19 +61,8 @@ object CellSizeAndPositionManager {
     getVisibleCellRange: js.Function1[GetVisibleCellRangeParams, VisibleCellRange],
     resetCell: js.Function1[scala.Double, scala.Unit]
   ): CellSizeAndPositionManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("areOffsetsAdjusted")(areOffsetsAdjusted)
-    __obj.updateDynamic("configure")(configure)
-    __obj.updateDynamic("getCellCount")(getCellCount)
-    __obj.updateDynamic("getEstimatedCellSize")(getEstimatedCellSize)
-    __obj.updateDynamic("getLastMeasuredIndex")(getLastMeasuredIndex)
-    __obj.updateDynamic("getOffsetAdjustment")(getOffsetAdjustment)
-    __obj.updateDynamic("getSizeAndPositionOfCell")(getSizeAndPositionOfCell)
-    __obj.updateDynamic("getSizeAndPositionOfLastMeasuredCell")(getSizeAndPositionOfLastMeasuredCell)
-    __obj.updateDynamic("getTotalSize")(getTotalSize)
-    __obj.updateDynamic("getUpdatedOffsetForIndex")(getUpdatedOffsetForIndex)
-    __obj.updateDynamic("getVisibleCellRange")(getVisibleCellRange)
-    __obj.updateDynamic("resetCell")(resetCell)
+    val __obj = js.Dynamic.literal(areOffsetsAdjusted = areOffsetsAdjusted, configure = configure, getCellCount = getCellCount, getEstimatedCellSize = getEstimatedCellSize, getLastMeasuredIndex = getLastMeasuredIndex, getOffsetAdjustment = getOffsetAdjustment, getSizeAndPositionOfCell = getSizeAndPositionOfCell, getSizeAndPositionOfLastMeasuredCell = getSizeAndPositionOfLastMeasuredCell, getTotalSize = getTotalSize, getUpdatedOffsetForIndex = getUpdatedOffsetForIndex, getVisibleCellRange = getVisibleCellRange, resetCell = resetCell)
+  
     __obj.asInstanceOf[CellSizeAndPositionManager]
   }
 }

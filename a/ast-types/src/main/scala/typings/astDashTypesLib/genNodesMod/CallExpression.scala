@@ -29,9 +29,8 @@ object CallExpression {
     callee: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.CallExpression
   ): CallExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("callee")(callee)
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CallExpression]
   }
 }

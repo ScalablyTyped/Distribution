@@ -20,9 +20,7 @@ object MultipleMultiArgsOptions {
     resolveImmediately: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null
   ): MultipleMultiArgsOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("multiArgs")(multiArgs)
+    val __obj = js.Dynamic.literal(count = count, multiArgs = multiArgs)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
     if (!js.isUndefined(resolveImmediately)) __obj.updateDynamic("resolveImmediately")(resolveImmediately)

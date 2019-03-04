@@ -33,10 +33,8 @@ object ASPxClientDashboardItemEventArgs {
     IsOthersValue: js.Function1[js.Object, scala.Boolean],
     ItemName: java.lang.String
   ): ASPxClientDashboardItemEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsNullValue")(IsNullValue)
-    __obj.updateDynamic("IsOthersValue")(IsOthersValue)
-    __obj.updateDynamic("ItemName")(ItemName)
+    val __obj = js.Dynamic.literal(IsNullValue = IsNullValue, IsOthersValue = IsOthersValue, ItemName = ItemName)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemEventArgs]
   }
 }

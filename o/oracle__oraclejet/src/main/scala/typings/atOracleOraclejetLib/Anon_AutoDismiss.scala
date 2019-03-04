@@ -34,9 +34,7 @@ object Anon_AutoDismiss {
     modality: atOracleOraclejetLib.atOracleOraclejetLibStrings.modal | atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless = null,
     size: java.lang.String = null
   ): Anon_AutoDismiss = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(content = content, selector = selector)
     if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])

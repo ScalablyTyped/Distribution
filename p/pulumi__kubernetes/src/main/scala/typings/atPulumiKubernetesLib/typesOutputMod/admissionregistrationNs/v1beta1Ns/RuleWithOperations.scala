@@ -48,11 +48,8 @@ object RuleWithOperations {
     operations: js.Array[java.lang.String],
     resources: js.Array[java.lang.String]
   ): RuleWithOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiGroups")(apiGroups)
-    __obj.updateDynamic("apiVersions")(apiVersions)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("resources")(resources)
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, apiVersions = apiVersions, operations = operations, resources = resources)
+  
     __obj.asInstanceOf[RuleWithOperations]
   }
 }

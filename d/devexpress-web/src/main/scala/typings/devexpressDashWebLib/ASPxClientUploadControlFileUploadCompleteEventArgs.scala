@@ -39,11 +39,8 @@ object ASPxClientUploadControlFileUploadCompleteEventArgs {
     inputIndex: scala.Double,
     isValid: scala.Boolean
   ): ASPxClientUploadControlFileUploadCompleteEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackData")(callbackData)
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("inputIndex")(inputIndex)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(callbackData = callbackData, errorText = errorText, inputIndex = inputIndex, isValid = isValid)
+  
     __obj.asInstanceOf[ASPxClientUploadControlFileUploadCompleteEventArgs]
   }
 }

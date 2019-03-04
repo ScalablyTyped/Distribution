@@ -30,15 +30,7 @@ object User {
     username: java.lang.String,
     password: java.lang.String = null
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("displayname")(displayname)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("firstname")(firstname)
-    __obj.updateDynamic("lastname")(lastname)
-    __obj.updateDynamic("toCrowd")(toCrowd)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(active = active, attributes = attributes, displayname = displayname, email = email, firstname = firstname, lastname = lastname, toCrowd = toCrowd, username = username)
     if (password != null) __obj.updateDynamic("password")(password)
     __obj.asInstanceOf[User]
   }

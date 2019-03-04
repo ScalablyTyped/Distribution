@@ -32,17 +32,8 @@ object ElementInfo {
     x: scala.Double,
     y: scala.Double
   ): ElementInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(attributes = attributes, height = height, html = html, nodeName = nodeName, tag = tag, text = text, visible = visible, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[ElementInfo]
   }
 }

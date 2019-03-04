@@ -41,21 +41,8 @@ object LayeredDigraphEdge {
     toVertex: LayoutVertex,
     valid: scala.Boolean
   ): LayeredDigraphEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("forest")(forest)
-    __obj.updateDynamic("fromVertex")(fromVertex)
-    __obj.updateDynamic("getOtherVertex")(getOtherVertex)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("portFromColOffset")(portFromColOffset)
-    __obj.updateDynamic("portFromPos")(portFromPos)
-    __obj.updateDynamic("portToColOffset")(portToColOffset)
-    __obj.updateDynamic("portToPos")(portToPos)
-    __obj.updateDynamic("rev")(rev)
-    __obj.updateDynamic("toVertex")(toVertex)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(commit = commit, data = data, forest = forest, fromVertex = fromVertex, getOtherVertex = getOtherVertex, link = link, network = network, portFromColOffset = portFromColOffset, portFromPos = portFromPos, portToColOffset = portToColOffset, portToPos = portToPos, rev = rev, toVertex = toVertex, valid = valid)
+  
     __obj.asInstanceOf[LayeredDigraphEdge]
   }
 }

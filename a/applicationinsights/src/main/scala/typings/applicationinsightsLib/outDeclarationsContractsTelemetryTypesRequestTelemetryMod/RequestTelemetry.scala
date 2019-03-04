@@ -47,12 +47,7 @@ object RequestTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): RequestTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(duration = duration, name = name, resultCode = resultCode.asInstanceOf[js.Any], success = success, url = url)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (source != null) __obj.updateDynamic("source")(source)

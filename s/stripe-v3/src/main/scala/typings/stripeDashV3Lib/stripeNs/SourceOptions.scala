@@ -40,7 +40,8 @@ object SourceOptions {
     token: java.lang.String = null,
     usage: stripeDashV3Lib.stripeDashV3LibStrings.reusable | stripeDashV3Lib.stripeDashV3LibStrings.single_use = null
   ): SourceOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])

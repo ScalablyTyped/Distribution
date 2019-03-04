@@ -45,15 +45,8 @@ object Duration {
     Seconds: scala.Double,
     Years: scala.Double
   ): Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Days")(Days)
-    __obj.updateDynamic("Hours")(Hours)
-    __obj.updateDynamic("Minutes")(Minutes)
-    __obj.updateDynamic("Months")(Months)
-    __obj.updateDynamic("NanoSeconds")(NanoSeconds)
-    __obj.updateDynamic("Negative")(Negative)
-    __obj.updateDynamic("Seconds")(Seconds)
-    __obj.updateDynamic("Years")(Years)
+    val __obj = js.Dynamic.literal(Days = Days, Hours = Hours, Minutes = Minutes, Months = Months, NanoSeconds = NanoSeconds, Negative = Negative, Seconds = Seconds, Years = Years)
+  
     __obj.asInstanceOf[Duration]
   }
 }

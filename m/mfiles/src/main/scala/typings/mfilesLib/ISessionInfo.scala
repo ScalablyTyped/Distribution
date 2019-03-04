@@ -85,39 +85,8 @@ object ISessionInfo {
     UserID: scala.Double,
     VaultGUID: java.lang.String
   ): ISessionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACLMode")(ACLMode)
-    __obj.updateDynamic("AccountName")(AccountName)
-    __obj.updateDynamic("AuthenticationType")(AuthenticationType)
-    __obj.updateDynamic("CanCreateObjects")(CanCreateObjects)
-    __obj.updateDynamic("CanForceUndoCheckout")(CanForceUndoCheckout)
-    __obj.updateDynamic("CanManageCommonUISettings")(CanManageCommonUISettings)
-    __obj.updateDynamic("CanManageCommonViews")(CanManageCommonViews)
-    __obj.updateDynamic("CanManageTraditionalFolders")(CanManageTraditionalFolders)
-    __obj.updateDynamic("CanMaterializeViews")(CanMaterializeViews)
-    __obj.updateDynamic("CanSeeAllObjects")(CanSeeAllObjects)
-    __obj.updateDynamic("CanSeeDeletedObjects")(CanSeeDeletedObjects)
-    __obj.updateDynamic("CheckObjectAccess")(CheckObjectAccess)
-    __obj.updateDynamic("CheckObjectTypeAccess")(CheckObjectTypeAccess)
-    __obj.updateDynamic("CheckPropertyDefAccess")(CheckPropertyDefAccess)
-    __obj.updateDynamic("CheckVaultAccess")(CheckVaultAccess)
-    __obj.updateDynamic("ClientCulture")(ClientCulture)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("InternalUser")(InternalUser)
-    __obj.updateDynamic("IsLoggedOnUserSubstituteOfUser")(IsLoggedOnUserSubstituteOfUser)
-    __obj.updateDynamic("IsSharingPublicLinksAllowed")(IsSharingPublicLinksAllowed)
-    __obj.updateDynamic("IsSharingPublicLinksToLatestVersionAllowed")(IsSharingPublicLinksToLatestVersionAllowed)
-    __obj.updateDynamic("KeepAliveIntervalInSeconds")(KeepAliveIntervalInSeconds)
-    __obj.updateDynamic("Language")(Language)
-    __obj.updateDynamic("LicenseAllowsModifications")(LicenseAllowsModifications)
-    __obj.updateDynamic("LocalComputerName")(LocalComputerName)
-    __obj.updateDynamic("ProductMode")(ProductMode)
-    __obj.updateDynamic("ServerVersion")(ServerVersion)
-    __obj.updateDynamic("TimeZoneInfo")(TimeZoneInfo)
-    __obj.updateDynamic("UserAndGroupMemberships")(UserAndGroupMemberships)
-    __obj.updateDynamic("UserAndSubstitutedByMe")(UserAndSubstitutedByMe)
-    __obj.updateDynamic("UserID")(UserID)
-    __obj.updateDynamic("VaultGUID")(VaultGUID)
+    val __obj = js.Dynamic.literal(ACLMode = ACLMode, AccountName = AccountName, AuthenticationType = AuthenticationType, CanCreateObjects = CanCreateObjects, CanForceUndoCheckout = CanForceUndoCheckout, CanManageCommonUISettings = CanManageCommonUISettings, CanManageCommonViews = CanManageCommonViews, CanManageTraditionalFolders = CanManageTraditionalFolders, CanMaterializeViews = CanMaterializeViews, CanSeeAllObjects = CanSeeAllObjects, CanSeeDeletedObjects = CanSeeDeletedObjects, CheckObjectAccess = CheckObjectAccess, CheckObjectTypeAccess = CheckObjectTypeAccess, CheckPropertyDefAccess = CheckPropertyDefAccess, CheckVaultAccess = CheckVaultAccess, ClientCulture = ClientCulture, CloneFrom = CloneFrom, InternalUser = InternalUser, IsLoggedOnUserSubstituteOfUser = IsLoggedOnUserSubstituteOfUser, IsSharingPublicLinksAllowed = IsSharingPublicLinksAllowed, IsSharingPublicLinksToLatestVersionAllowed = IsSharingPublicLinksToLatestVersionAllowed, KeepAliveIntervalInSeconds = KeepAliveIntervalInSeconds, Language = Language, LicenseAllowsModifications = LicenseAllowsModifications, LocalComputerName = LocalComputerName, ProductMode = ProductMode, ServerVersion = ServerVersion, TimeZoneInfo = TimeZoneInfo, UserAndGroupMemberships = UserAndGroupMemberships, UserAndSubstitutedByMe = UserAndSubstitutedByMe, UserID = UserID, VaultGUID = VaultGUID)
+  
     __obj.asInstanceOf[ISessionInfo]
   }
 }

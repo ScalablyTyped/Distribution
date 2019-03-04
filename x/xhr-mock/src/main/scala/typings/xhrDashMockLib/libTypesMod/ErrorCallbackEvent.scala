@@ -13,9 +13,8 @@ trait ErrorCallbackEvent extends js.Object {
 object ErrorCallbackEvent {
   @scala.inline
   def apply(err: stdLib.Error, req: xhrDashMockLib.libMockRequestMod.default): ErrorCallbackEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("req")(req)
+    val __obj = js.Dynamic.literal(err = err, req = req)
+  
     __obj.asInstanceOf[ErrorCallbackEvent]
   }
 }

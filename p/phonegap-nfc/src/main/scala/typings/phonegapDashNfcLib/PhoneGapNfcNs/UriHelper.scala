@@ -30,10 +30,8 @@ object UriHelper {
     encodePayload: js.Function1[java.lang.String, js.Array[scala.Double]],
     protocols: js.Array[java.lang.String]
   ): UriHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decodePayload")(decodePayload)
-    __obj.updateDynamic("encodePayload")(encodePayload)
-    __obj.updateDynamic("protocols")(protocols)
+    val __obj = js.Dynamic.literal(decodePayload = decodePayload, encodePayload = encodePayload, protocols = protocols)
+  
     __obj.asInstanceOf[UriHelper]
   }
 }

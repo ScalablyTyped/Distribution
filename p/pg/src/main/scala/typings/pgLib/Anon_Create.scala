@@ -12,8 +12,8 @@ trait Anon_Create extends js.Object {
 object Anon_Create {
   @scala.inline
   def apply(create: js.Function2[js.Any, pgDashTypesLib.pgDashTypesMod.TypeParser, pgDashTypesLib.Anon_Parse]): Anon_Create = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[Anon_Create]
   }
 }

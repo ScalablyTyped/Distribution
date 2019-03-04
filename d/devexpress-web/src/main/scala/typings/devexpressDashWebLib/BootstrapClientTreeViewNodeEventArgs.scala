@@ -19,8 +19,8 @@ trait BootstrapClientTreeViewNodeEventArgs extends ASPxClientEventArgs {
 object BootstrapClientTreeViewNodeEventArgs {
   @scala.inline
   def apply(node: BootstrapClientTreeViewNode): BootstrapClientTreeViewNodeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(node = node)
+  
     __obj.asInstanceOf[BootstrapClientTreeViewNodeEventArgs]
   }
 }

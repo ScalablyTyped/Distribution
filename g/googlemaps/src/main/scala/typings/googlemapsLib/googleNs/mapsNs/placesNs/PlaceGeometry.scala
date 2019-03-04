@@ -16,9 +16,8 @@ object PlaceGeometry {
     location: googlemapsLib.googleNs.mapsNs.LatLng,
     viewport: googlemapsLib.googleNs.mapsNs.LatLngBounds
   ): PlaceGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("viewport")(viewport)
+    val __obj = js.Dynamic.literal(location = location, viewport = viewport)
+  
     __obj.asInstanceOf[PlaceGeometry]
   }
 }

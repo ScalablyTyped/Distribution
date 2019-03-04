@@ -37,12 +37,8 @@ object WorkspaceTemplate {
     mappings: js.Array[WorkspaceMapping],
     workspaceId: scala.Double
   ): WorkspaceTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitionUri")(definitionUri)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("workspaceId")(workspaceId)
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, mappings = mappings, workspaceId = workspaceId)
+  
     __obj.asInstanceOf[WorkspaceTemplate]
   }
 }

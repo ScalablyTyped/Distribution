@@ -20,9 +20,8 @@ trait DetectedLanguage extends js.Object {
 object DetectedLanguage {
   @scala.inline
   def apply(language: kLanguageInfoTable, percentage: chromeDashAppsLib.chromeNs.integer): DetectedLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("percentage")(percentage)
+    val __obj = js.Dynamic.literal(language = language, percentage = percentage)
+  
     __obj.asInstanceOf[DetectedLanguage]
   }
 }

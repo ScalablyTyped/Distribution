@@ -19,9 +19,8 @@ trait BluetoothAdapterState extends js.Object {
 object BluetoothAdapterState {
   @scala.inline
   def apply(available: scala.Boolean, discovering: scala.Boolean): BluetoothAdapterState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("discovering")(discovering)
+    val __obj = js.Dynamic.literal(available = available, discovering = discovering)
+  
     __obj.asInstanceOf[BluetoothAdapterState]
   }
 }

@@ -13,9 +13,8 @@ trait Time extends js.Object {
 object Time {
   @scala.inline
   def apply(epoch: scala.Double, iso: java.lang.String): Time = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("epoch")(epoch)
-    __obj.updateDynamic("iso")(iso)
+    val __obj = js.Dynamic.literal(epoch = epoch, iso = iso)
+  
     __obj.asInstanceOf[Time]
   }
 }

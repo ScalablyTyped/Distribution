@@ -36,11 +36,8 @@ object InlineQueryResultDocument {
     thumb_url: java.lang.String = null,
     thumb_width: scala.Int | scala.Double = null
   ): InlineQueryResultDocument = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("document_url")(document_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mime_type")(mime_type)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(document_url = document_url, id = id, mime_type = mime_type, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (description != null) __obj.updateDynamic("description")(description)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)

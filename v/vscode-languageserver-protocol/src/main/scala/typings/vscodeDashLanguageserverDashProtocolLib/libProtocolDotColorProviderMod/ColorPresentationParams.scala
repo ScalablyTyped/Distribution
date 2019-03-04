@@ -27,10 +27,8 @@ object ColorPresentationParams {
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): ColorPresentationParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(color = color, range = range, textDocument = textDocument)
+  
     __obj.asInstanceOf[ColorPresentationParams]
   }
 }

@@ -49,18 +49,7 @@ object RenderContext_FieldInForm {
     Templates: Templates = null,
     onRefreshFailed: js.Any = null
   ): RenderContext_FieldInForm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentFieldSchema")(CurrentFieldSchema)
-    __obj.updateDynamic("CurrentFieldValue")(CurrentFieldValue)
-    __obj.updateDynamic("CurrentGroup")(CurrentGroup)
-    __obj.updateDynamic("CurrentGroupIdx")(CurrentGroupIdx)
-    __obj.updateDynamic("CurrentItem")(CurrentItem)
-    __obj.updateDynamic("CurrentItems")(CurrentItems)
-    __obj.updateDynamic("FieldControlModes")(FieldControlModes)
-    __obj.updateDynamic("FormContext")(FormContext)
-    __obj.updateDynamic("FormUniqueId")(FormUniqueId)
-    __obj.updateDynamic("ListData")(ListData)
-    __obj.updateDynamic("ListSchema")(ListSchema)
+    val __obj = js.Dynamic.literal(CurrentFieldSchema = CurrentFieldSchema, CurrentFieldValue = CurrentFieldValue, CurrentGroup = CurrentGroup, CurrentGroupIdx = CurrentGroupIdx, CurrentItem = CurrentItem, CurrentItems = CurrentItems, FieldControlModes = FieldControlModes, FormContext = FormContext, FormUniqueId = FormUniqueId, ListData = ListData, ListSchema = ListSchema)
     if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
     if (!js.isUndefined(CSRCustomLayout)) __obj.updateDynamic("CSRCustomLayout")(CSRCustomLayout)
     if (ControlMode != null) __obj.updateDynamic("ControlMode")(ControlMode)

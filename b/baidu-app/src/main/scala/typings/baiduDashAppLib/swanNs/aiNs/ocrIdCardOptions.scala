@@ -33,8 +33,7 @@ object ocrIdCardOptions {
     id_card_side: java.lang.String = null,
     success: js.Function1[/* res */ ocrIdCardResponse, scala.Unit] = null
   ): ocrIdCardOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
     if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk)

@@ -48,9 +48,7 @@ object Anon_AltFieldsKeyLocaleOauthtokenPrettyPrint {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyLocaleOauthtokenPrettyPrint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(rating = rating, volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

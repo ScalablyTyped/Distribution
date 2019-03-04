@@ -16,9 +16,8 @@ object Anon_PostProcess {
     postProcess: i18nextDashSprintfDashPostprocessorLib.i18nextDashSprintfDashPostprocessorLibStrings.sprintf,
     sprintf: js.Array[java.lang.String]
   ): Anon_PostProcess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postProcess")(postProcess)
-    __obj.updateDynamic("sprintf")(sprintf)
+    val __obj = js.Dynamic.literal(postProcess = postProcess, sprintf = sprintf)
+  
     __obj.asInstanceOf[Anon_PostProcess]
   }
 }

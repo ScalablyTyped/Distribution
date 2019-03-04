@@ -30,16 +30,8 @@ object File {
     size: scala.Double,
     uploadDate: stdLib.Date
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName)
-    __obj.updateDynamic("chunkSize")(chunkSize)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("md5")(md5)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uploadDate")(uploadDate)
+    val __obj = js.Dynamic.literal(bucketName = bucketName, chunkSize = chunkSize, contentType = contentType, filename = filename, id = id, md5 = md5, metadata = metadata, size = size, uploadDate = uploadDate)
+  
     __obj.asInstanceOf[File]
   }
 }

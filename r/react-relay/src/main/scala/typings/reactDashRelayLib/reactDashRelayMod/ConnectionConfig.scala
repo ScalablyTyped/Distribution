@@ -43,9 +43,7 @@ object ConnectionConfig {
       relayDashRuntimeLib.relayDashRuntimeMod.Variables
     ] = null
   ): ConnectionConfig[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getVariables")(getVariables)
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getVariables = getVariables, query = query.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (getConnectionFromProps != null) __obj.updateDynamic("getConnectionFromProps")(getConnectionFromProps)
     if (getFragmentVariables != null) __obj.updateDynamic("getFragmentVariables")(getFragmentVariables)

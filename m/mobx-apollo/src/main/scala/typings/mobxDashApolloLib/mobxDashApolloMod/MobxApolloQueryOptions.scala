@@ -30,9 +30,7 @@ object MobxApolloQueryOptions {
     pollInterval: scala.Int | scala.Double = null,
     variables: apolloDashClientLib.coreTypesMod.OperationVariables = null
   ): MobxApolloQueryOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(client = client, query = query)
     if (context != null) __obj.updateDynamic("context")(context)
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)

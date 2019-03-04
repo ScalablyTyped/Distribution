@@ -15,9 +15,8 @@ trait RejectedDescriptor
 object RejectedDescriptor {
   @scala.inline
   def apply(reason: js.Any, state: whenLib.whenLibStrings.rejected): RejectedDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(reason = reason, state = state)
+  
     __obj.asInstanceOf[RejectedDescriptor]
   }
 }

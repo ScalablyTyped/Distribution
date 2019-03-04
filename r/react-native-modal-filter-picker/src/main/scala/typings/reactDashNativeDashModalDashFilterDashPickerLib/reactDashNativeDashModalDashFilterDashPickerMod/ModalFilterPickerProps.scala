@@ -99,10 +99,7 @@ object ModalFilterPickerProps {
     titleTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): ModalFilterPickerProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onSelect")(onSelect)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(onCancel = onCancel, onSelect = onSelect, options = options)
     if (androidUnderlineColor != null) __obj.updateDynamic("androidUnderlineColor")(androidUnderlineColor)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (cancelButtonStyle != null) __obj.updateDynamic("cancelButtonStyle")(cancelButtonStyle.asInstanceOf[js.Any])

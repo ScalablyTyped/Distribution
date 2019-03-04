@@ -12,8 +12,8 @@ trait TableMetadata extends js.Object {
 object TableMetadata {
   @scala.inline
   def apply(columns: js.Array[java.lang.String]): TableMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(columns = columns)
+  
     __obj.asInstanceOf[TableMetadata]
   }
 }

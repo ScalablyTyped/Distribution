@@ -90,14 +90,8 @@ object CachePolicy {
       httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject
     ]
   ): CachePolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("revalidatedPolicy")(revalidatedPolicy)
-    __obj.updateDynamic("revalidationHeaders")(revalidationHeaders)
-    __obj.updateDynamic("satisfiesWithoutRevalidation")(satisfiesWithoutRevalidation)
-    __obj.updateDynamic("storable")(storable)
-    __obj.updateDynamic("timeToLive")(timeToLive)
-    __obj.updateDynamic("toObject")(toObject)
+    val __obj = js.Dynamic.literal(responseHeaders = responseHeaders, revalidatedPolicy = revalidatedPolicy, revalidationHeaders = revalidationHeaders, satisfiesWithoutRevalidation = satisfiesWithoutRevalidation, storable = storable, timeToLive = timeToLive, toObject = toObject)
+  
     __obj.asInstanceOf[CachePolicy]
   }
 }

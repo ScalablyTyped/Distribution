@@ -31,18 +31,8 @@ object HttpPaginatedResponse {
     statusCode: scala.Double,
     success: scala.Boolean
   ): HttpPaginatedResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("isLast")(isLast)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(current = current, errorCode = errorCode, errorMessage = errorMessage, first = first, hasNext = hasNext, headers = headers, isLast = isLast, items = items, next = next, statusCode = statusCode, success = success)
+  
     __obj.asInstanceOf[HttpPaginatedResponse]
   }
 }

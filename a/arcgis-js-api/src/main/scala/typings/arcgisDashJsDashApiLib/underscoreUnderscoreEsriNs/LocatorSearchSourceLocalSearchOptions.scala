@@ -30,10 +30,7 @@ object LocatorSearchSourceLocalSearchOptions {
     distance: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null
   ): LocatorSearchSourceLocalSearchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocatorSearchSourceLocalSearchOptions]

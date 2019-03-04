@@ -13,9 +13,8 @@ trait ListItem extends js.Object {
 object ListItem {
   @scala.inline
   def apply(ContentTypeId: java.lang.String, ID: scala.Double): ListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentTypeId")(ContentTypeId)
-    __obj.updateDynamic("ID")(ID)
+    val __obj = js.Dynamic.literal(ContentTypeId = ContentTypeId, ID = ID)
+  
     __obj.asInstanceOf[ListItem]
   }
 }

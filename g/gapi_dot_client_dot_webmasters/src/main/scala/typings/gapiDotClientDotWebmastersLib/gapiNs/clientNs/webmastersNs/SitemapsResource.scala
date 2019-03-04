@@ -36,11 +36,8 @@ object SitemapsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): SitemapsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("submit")(submit)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, submit = submit)
+  
     __obj.asInstanceOf[SitemapsResource]
   }
 }

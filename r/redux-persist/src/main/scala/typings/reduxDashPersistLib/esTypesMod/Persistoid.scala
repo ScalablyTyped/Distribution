@@ -13,9 +13,8 @@ trait Persistoid extends js.Object {
 object Persistoid {
   @scala.inline
   def apply(flush: js.Function0[js.Promise[_]], update: js.Function1[js.Any, scala.Unit]): Persistoid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(flush = flush, update = update)
+  
     __obj.asInstanceOf[Persistoid]
   }
 }

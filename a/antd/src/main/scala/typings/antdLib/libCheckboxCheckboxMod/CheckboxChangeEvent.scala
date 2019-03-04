@@ -20,11 +20,8 @@ object CheckboxChangeEvent {
     stopPropagation: js.Function0[scala.Unit],
     target: CheckboxChangeEventTarget
   ): CheckboxChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target)
+  
     __obj.asInstanceOf[CheckboxChangeEvent]
   }
 }

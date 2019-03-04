@@ -43,8 +43,7 @@ object RollupWarning {
     sources: js.Array[java.lang.String] = null,
     url: java.lang.String = null
   ): RollupWarning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (code != null) __obj.updateDynamic("code")(code)
     if (exportName != null) __obj.updateDynamic("exportName")(exportName)
     if (exporter != null) __obj.updateDynamic("exporter")(exporter)

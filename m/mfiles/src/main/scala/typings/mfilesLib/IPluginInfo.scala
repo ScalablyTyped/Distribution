@@ -32,17 +32,8 @@ object IPluginInfo {
     IsScopeIndependent: scala.Boolean,
     Name: java.lang.String
   ): IPluginInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AssemblyName")(AssemblyName)
-    __obj.updateDynamic("BridgeClassName")(BridgeClassName)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Configuration")(Configuration)
-    __obj.updateDynamic("ConfigurationScope")(ConfigurationScope)
-    __obj.updateDynamic("ConfigurationSource")(ConfigurationSource)
-    __obj.updateDynamic("ConfigurationVaultGUID")(ConfigurationVaultGUID)
-    __obj.updateDynamic("IsDefault")(IsDefault)
-    __obj.updateDynamic("IsScopeIndependent")(IsScopeIndependent)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(AssemblyName = AssemblyName, BridgeClassName = BridgeClassName, Clone = Clone, Configuration = Configuration, ConfigurationScope = ConfigurationScope, ConfigurationSource = ConfigurationSource, ConfigurationVaultGUID = ConfigurationVaultGUID, IsDefault = IsDefault, IsScopeIndependent = IsScopeIndependent, Name = Name)
+  
     __obj.asInstanceOf[IPluginInfo]
   }
 }

@@ -16,7 +16,8 @@ object SimpleSchemaValidationError {
     `type`: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String] = null
   ): SimpleSchemaValidationError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SimpleSchemaValidationError]
   }

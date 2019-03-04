@@ -12,8 +12,8 @@ trait Destruction extends js.Object {
 object Destruction {
   @scala.inline
   def apply(destructor: js.Function0[scala.Unit]): Destruction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destructor")(destructor)
+    val __obj = js.Dynamic.literal(destructor = destructor)
+  
     __obj.asInstanceOf[Destruction]
   }
 }

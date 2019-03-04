@@ -26,13 +26,7 @@ object Anon_Author {
     updated: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString,
     author: Anon_Name = null
   ): Anon_Author = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentRootElement")(ContentRootElement)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("published")(published)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(ContentRootElement = ContentRootElement, id = id, link = link, published = published, title = title, updated = updated)
     if (author != null) __obj.updateDynamic("author")(author)
     __obj.asInstanceOf[Anon_Author]
   }

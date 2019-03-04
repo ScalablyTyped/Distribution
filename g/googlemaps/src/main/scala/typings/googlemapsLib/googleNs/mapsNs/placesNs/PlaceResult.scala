@@ -58,30 +58,8 @@ object PlaceResult {
     vicinity: java.lang.String,
     website: java.lang.String
   ): PlaceResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address_components")(address_components)
-    __obj.updateDynamic("adr_address")(adr_address)
-    __obj.updateDynamic("aspects")(aspects)
-    __obj.updateDynamic("formatted_address")(formatted_address)
-    __obj.updateDynamic("formatted_phone_number")(formatted_phone_number)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("html_attributions")(html_attributions)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("international_phone_number")(international_phone_number)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("opening_hours")(opening_hours)
-    __obj.updateDynamic("permanently_closed")(permanently_closed)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("place_id")(place_id)
-    __obj.updateDynamic("price_level")(price_level)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("reviews")(reviews)
-    __obj.updateDynamic("types")(types)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("utc_offset")(utc_offset)
-    __obj.updateDynamic("vicinity")(vicinity)
-    __obj.updateDynamic("website")(website)
+    val __obj = js.Dynamic.literal(address_components = address_components, adr_address = adr_address, aspects = aspects, formatted_address = formatted_address, formatted_phone_number = formatted_phone_number, geometry = geometry, html_attributions = html_attributions, icon = icon, id = id, international_phone_number = international_phone_number, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, price_level = price_level, rating = rating, reviews = reviews, types = types, url = url, utc_offset = utc_offset, vicinity = vicinity, website = website)
+  
     __obj.asInstanceOf[PlaceResult]
   }
 }

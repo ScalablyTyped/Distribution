@@ -16,9 +16,8 @@ object SearchQueryRewriter {
     term: java.lang.String,
     termReplacer: js.Function0[java.lang.String | js.Promise[java.lang.String]]
   ): SearchQueryRewriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("term")(term)
-    __obj.updateDynamic("termReplacer")(termReplacer)
+    val __obj = js.Dynamic.literal(term = term, termReplacer = termReplacer)
+  
     __obj.asInstanceOf[SearchQueryRewriter]
   }
 }

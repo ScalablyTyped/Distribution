@@ -24,9 +24,8 @@ object DDEItemInfo {
     Item: java.lang.String,
     Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
   ): DDEItemInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Results")(Results)
+    val __obj = js.Dynamic.literal(Item = Item, Results = Results)
+  
     __obj.asInstanceOf[DDEItemInfo]
   }
 }

@@ -24,13 +24,8 @@ object Torrent {
     time: java.lang.String,
     title: java.lang.String
   ): Torrent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("desc")(desc)
-    __obj.updateDynamic("magnet")(magnet)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(desc = desc, magnet = magnet, provider = provider, size = size, time = time, title = title)
+  
     __obj.asInstanceOf[Torrent]
   }
 }

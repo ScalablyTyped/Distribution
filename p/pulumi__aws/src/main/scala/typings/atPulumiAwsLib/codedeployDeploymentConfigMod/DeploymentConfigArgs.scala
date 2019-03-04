@@ -34,8 +34,7 @@ object DeploymentConfigArgs {
     minimumHealthyHosts: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeValueInput] = null,
     trafficRoutingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TimeBasedCanaryTimeBasedLinear] = null
   ): DeploymentConfigArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
     if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
     if (minimumHealthyHosts != null) __obj.updateDynamic("minimumHealthyHosts")(minimumHealthyHosts.asInstanceOf[js.Any])
     if (trafficRoutingConfig != null) __obj.updateDynamic("trafficRoutingConfig")(trafficRoutingConfig.asInstanceOf[js.Any])

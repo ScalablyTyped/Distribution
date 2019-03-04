@@ -26,8 +26,8 @@ object TypeParameter {
     bound: astDashTypesLib.genKindsMod.TypeAnnotationKind = null,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): TypeParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (bound != null) __obj.updateDynamic("bound")(bound)
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeParameter]

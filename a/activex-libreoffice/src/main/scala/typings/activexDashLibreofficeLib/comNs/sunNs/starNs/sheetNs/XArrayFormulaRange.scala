@@ -29,13 +29,8 @@ object XArrayFormulaRange {
     release: js.Function0[scala.Unit],
     setArrayFormula: js.Function1[java.lang.String, scala.Unit]
   ): XArrayFormulaRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArrayFormula")(ArrayFormula)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getArrayFormula")(getArrayFormula)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setArrayFormula")(setArrayFormula)
+    val __obj = js.Dynamic.literal(ArrayFormula = ArrayFormula, acquire = acquire, getArrayFormula = getArrayFormula, queryInterface = queryInterface, release = release, setArrayFormula = setArrayFormula)
+  
     __obj.asInstanceOf[XArrayFormulaRange]
   }
 }

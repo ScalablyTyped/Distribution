@@ -22,12 +22,8 @@ object ArtyomVoice {
     name: java.lang.String,
     voiceURI: java.lang.String
   ): ArtyomVoice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("localService")(localService)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("voiceURI")(voiceURI)
+    val __obj = js.Dynamic.literal(default = default, lang = lang, localService = localService, name = name, voiceURI = voiceURI)
+  
     __obj.asInstanceOf[ArtyomVoice]
   }
 }

@@ -30,9 +30,7 @@ object WMTSOptions {
     tileSizes: js.Array[scala.Double | openlayersLib.openlayersMod.Size] = null,
     widths: js.Array[scala.Double] = null
   ): WMTSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matrixIds")(matrixIds)
-    __obj.updateDynamic("resolutions")(resolutions)
+    val __obj = js.Dynamic.literal(matrixIds = matrixIds, resolutions = resolutions)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (origins != null) __obj.updateDynamic("origins")(origins)

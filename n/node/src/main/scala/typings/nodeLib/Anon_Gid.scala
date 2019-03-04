@@ -22,12 +22,8 @@ object Anon_Gid {
     uid: scala.Double,
     username: java.lang.String
   ): Anon_Gid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("homedir")(homedir)
-    __obj.updateDynamic("shell")(shell)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(gid = gid, homedir = homedir, shell = shell, uid = uid, username = username)
+  
     __obj.asInstanceOf[Anon_Gid]
   }
 }

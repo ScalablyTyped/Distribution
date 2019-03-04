@@ -11,7 +11,7 @@ trait TagNamesOptions extends js.Object {
   var jpeg: js.UndefOr[java.lang.String] = js.undefined
   var jpg: js.UndefOr[java.lang.String] = js.undefined
   @JSName("js")
-  var `js_`: js.UndefOr[java.lang.String] = js.undefined
+  var js_ : js.UndefOr[java.lang.String] = js.undefined
   var less: js.UndefOr[java.lang.String] = js.undefined
   var png: js.UndefOr[java.lang.String] = js.undefined
   var scss: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +25,7 @@ object TagNamesOptions {
     gif: java.lang.String = null,
     jpeg: java.lang.String = null,
     jpg: java.lang.String = null,
-    `js_`: java.lang.String = null,
+    js_ : java.lang.String = null,
     less: java.lang.String = null,
     png: java.lang.String = null,
     scss: java.lang.String = null,
@@ -36,7 +36,7 @@ object TagNamesOptions {
     if (gif != null) __obj.updateDynamic("gif")(gif)
     if (jpeg != null) __obj.updateDynamic("jpeg")(jpeg)
     if (jpg != null) __obj.updateDynamic("jpg")(jpg)
-    if (`js_` != null) __obj.updateDynamic("js")(`js_`)
+    if (js_ != null) __obj.updateDynamic("js")(js_)
     if (less != null) __obj.updateDynamic("less")(less)
     if (png != null) __obj.updateDynamic("png")(png)
     if (scss != null) __obj.updateDynamic("scss")(scss)

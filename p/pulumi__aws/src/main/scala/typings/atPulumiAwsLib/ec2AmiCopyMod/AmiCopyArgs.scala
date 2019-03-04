@@ -81,9 +81,7 @@ object AmiCopyArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): AmiCopyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceAmiId")(sourceAmiId.asInstanceOf[js.Any])
-    __obj.updateDynamic("sourceAmiRegion")(sourceAmiRegion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sourceAmiId = sourceAmiId.asInstanceOf[js.Any], sourceAmiRegion = sourceAmiRegion.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])

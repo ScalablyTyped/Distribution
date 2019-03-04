@@ -26,8 +26,7 @@ object PortInfo {
     serialNumber: java.lang.String = null,
     vendorId: java.lang.String = null
   ): PortInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comName")(comName)
+    val __obj = js.Dynamic.literal(comName = comName)
     if (locationId != null) __obj.updateDynamic("locationId")(locationId)
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
     if (pnpId != null) __obj.updateDynamic("pnpId")(pnpId)

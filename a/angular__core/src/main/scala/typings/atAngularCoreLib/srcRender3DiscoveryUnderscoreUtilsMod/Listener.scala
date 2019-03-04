@@ -20,10 +20,7 @@ object Listener {
     name: java.lang.String,
     useCapture: js.UndefOr[scala.Boolean] = js.undefined
   ): Listener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(callback = callback, element = element, name = name)
     if (!js.isUndefined(useCapture)) __obj.updateDynamic("useCapture")(useCapture)
     __obj.asInstanceOf[Listener]
   }

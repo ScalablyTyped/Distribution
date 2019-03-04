@@ -46,18 +46,8 @@ object DatabaseReplicationHistoryItem {
     start_last_seq: scala.Double,
     start_time: java.lang.String
   ): DatabaseReplicationHistoryItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doc_write_failures")(doc_write_failures)
-    __obj.updateDynamic("docs_read")(docs_read)
-    __obj.updateDynamic("docs_written")(docs_written)
-    __obj.updateDynamic("end_last_seq")(end_last_seq)
-    __obj.updateDynamic("end_time")(end_time)
-    __obj.updateDynamic("missing_checked")(missing_checked)
-    __obj.updateDynamic("missing_found")(missing_found)
-    __obj.updateDynamic("recorded_seq")(recorded_seq)
-    __obj.updateDynamic("session_id")(session_id)
-    __obj.updateDynamic("start_last_seq")(start_last_seq)
-    __obj.updateDynamic("start_time")(start_time)
+    val __obj = js.Dynamic.literal(doc_write_failures = doc_write_failures, docs_read = docs_read, docs_written = docs_written, end_last_seq = end_last_seq, end_time = end_time, missing_checked = missing_checked, missing_found = missing_found, recorded_seq = recorded_seq, session_id = session_id, start_last_seq = start_last_seq, start_time = start_time)
+  
     __obj.asInstanceOf[DatabaseReplicationHistoryItem]
   }
 }

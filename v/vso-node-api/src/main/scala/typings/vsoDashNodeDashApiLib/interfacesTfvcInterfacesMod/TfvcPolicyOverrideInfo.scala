@@ -13,9 +13,8 @@ trait TfvcPolicyOverrideInfo extends js.Object {
 object TfvcPolicyOverrideInfo {
   @scala.inline
   def apply(comment: java.lang.String, policyFailures: js.Array[TfvcPolicyFailureInfo]): TfvcPolicyOverrideInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("policyFailures")(policyFailures)
+    val __obj = js.Dynamic.literal(comment = comment, policyFailures = policyFailures)
+  
     __obj.asInstanceOf[TfvcPolicyOverrideInfo]
   }
 }

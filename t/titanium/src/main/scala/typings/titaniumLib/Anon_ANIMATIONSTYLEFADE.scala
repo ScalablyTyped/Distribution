@@ -92,23 +92,8 @@ object Anon_ANIMATIONSTYLEFADE {
     removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
     setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
   ): Anon_ANIMATIONSTYLEFADE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANIMATION_STYLE_FADE")(ANIMATION_STYLE_FADE)
-    __obj.updateDynamic("ANIMATION_STYLE_NONE")(ANIMATION_STYLE_NONE)
-    __obj.updateDynamic("ANIMATION_STYLE_SLIDE")(ANIMATION_STYLE_SLIDE)
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("GRAY")(GRAY)
-    __obj.updateDynamic("GREY")(GREY)
-    __obj.updateDynamic("LIGHT_CONTENT")(LIGHT_CONTENT)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("apiName")(apiName)
-    __obj.updateDynamic("applyProperties")(applyProperties)
-    __obj.updateDynamic("bubbleParent")(bubbleParent)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("getApiName")(getApiName)
-    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    val __obj = js.Dynamic.literal(ANIMATION_STYLE_FADE = ANIMATION_STYLE_FADE, ANIMATION_STYLE_NONE = ANIMATION_STYLE_NONE, ANIMATION_STYLE_SLIDE = ANIMATION_STYLE_SLIDE, DEFAULT = DEFAULT, GRAY = GRAY, GREY = GREY, LIGHT_CONTENT = LIGHT_CONTENT, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+  
     __obj.asInstanceOf[Anon_ANIMATIONSTYLEFADE]
   }
 }

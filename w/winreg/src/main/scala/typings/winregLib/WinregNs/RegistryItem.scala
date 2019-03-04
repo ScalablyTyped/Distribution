@@ -54,13 +54,8 @@ object RegistryItem {
     `type`: java.lang.String,
     value: java.lang.String
   ): RegistryItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arch")(arch)
-    __obj.updateDynamic("hive")(hive)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(arch = arch, hive = hive, host = host, key = key, name = name, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RegistryItem]
   }
 }

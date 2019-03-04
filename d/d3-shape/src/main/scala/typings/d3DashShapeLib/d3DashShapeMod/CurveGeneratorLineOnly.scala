@@ -27,10 +27,8 @@ object CurveGeneratorLineOnly {
     lineStart: js.Function0[scala.Unit],
     point: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): CurveGeneratorLineOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineEnd")(lineEnd)
-    __obj.updateDynamic("lineStart")(lineStart)
-    __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(lineEnd = lineEnd, lineStart = lineStart, point = point)
+  
     __obj.asInstanceOf[CurveGeneratorLineOnly]
   }
 }

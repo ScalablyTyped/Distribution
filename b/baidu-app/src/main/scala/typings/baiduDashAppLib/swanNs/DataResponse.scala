@@ -22,11 +22,8 @@ object DataResponse {
     result: java.lang.String,
     statusCode: scala.Double
   ): DataResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], header = header, result = result, statusCode = statusCode)
+  
     __obj.asInstanceOf[DataResponse]
   }
 }

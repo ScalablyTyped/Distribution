@@ -42,13 +42,8 @@ object AdStyle {
     top: scala.Double,
     width: scala.Double
   ): AdStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("realHeight")(realHeight)
-    __obj.updateDynamic("realWidth")(realWidth)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, left = left, realHeight = realHeight, realWidth = realWidth, top = top, width = width)
+  
     __obj.asInstanceOf[AdStyle]
   }
 }

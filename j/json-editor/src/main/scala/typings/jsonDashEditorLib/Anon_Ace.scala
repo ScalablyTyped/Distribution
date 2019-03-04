@@ -20,11 +20,8 @@ object Anon_Ace {
     sceditor: Anon_EmoticonsEnabled,
     selectize: Anon_Enable
   ): Anon_Ace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ace")(ace)
-    __obj.updateDynamic("epiceditor")(epiceditor)
-    __obj.updateDynamic("sceditor")(sceditor)
-    __obj.updateDynamic("selectize")(selectize)
+    val __obj = js.Dynamic.literal(ace = ace, epiceditor = epiceditor, sceditor = sceditor, selectize = selectize)
+  
     __obj.asInstanceOf[Anon_Ace]
   }
 }

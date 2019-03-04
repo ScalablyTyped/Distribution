@@ -15,9 +15,8 @@ trait FulfilledDescriptor[T]
 object FulfilledDescriptor {
   @scala.inline
   def apply[T](state: whenLib.whenLibStrings.fulfilled, value: T): FulfilledDescriptor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FulfilledDescriptor[T]]
   }
 }

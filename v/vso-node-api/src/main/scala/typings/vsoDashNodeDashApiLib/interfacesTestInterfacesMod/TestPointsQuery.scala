@@ -20,11 +20,8 @@ object TestPointsQuery {
     pointsFilter: PointsFilter,
     witFields: js.Array[java.lang.String]
   ): TestPointsQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("pointsFilter")(pointsFilter)
-    __obj.updateDynamic("witFields")(witFields)
+    val __obj = js.Dynamic.literal(orderBy = orderBy, points = points, pointsFilter = pointsFilter, witFields = witFields)
+  
     __obj.asInstanceOf[TestPointsQuery]
   }
 }

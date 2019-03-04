@@ -18,9 +18,8 @@ object OkResult {
       js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
     ]
   ): OkResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("executeAsync")(executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync)
+  
     __obj.asInstanceOf[OkResult]
   }
 }

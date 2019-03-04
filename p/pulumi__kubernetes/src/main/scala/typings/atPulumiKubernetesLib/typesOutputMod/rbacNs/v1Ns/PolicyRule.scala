@@ -50,12 +50,8 @@ object PolicyRule {
     resources: js.Array[java.lang.String],
     verbs: js.Array[java.lang.String]
   ): PolicyRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiGroups")(apiGroups)
-    __obj.updateDynamic("nonResourceURLs")(nonResourceURLs)
-    __obj.updateDynamic("resourceNames")(resourceNames)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("verbs")(verbs)
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, nonResourceURLs = nonResourceURLs, resourceNames = resourceNames, resources = resources, verbs = verbs)
+  
     __obj.asInstanceOf[PolicyRule]
   }
 }

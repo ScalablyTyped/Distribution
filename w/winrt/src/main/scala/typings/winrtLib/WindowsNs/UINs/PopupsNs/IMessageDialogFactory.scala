@@ -16,9 +16,8 @@ object IMessageDialogFactory {
     create: js.Function1[java.lang.String, MessageDialog],
     createWithTitle: js.Function2[java.lang.String, java.lang.String, MessageDialog]
   ): IMessageDialogFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createWithTitle")(createWithTitle)
+    val __obj = js.Dynamic.literal(create = create, createWithTitle = createWithTitle)
+  
     __obj.asInstanceOf[IMessageDialogFactory]
   }
 }

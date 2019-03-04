@@ -20,10 +20,7 @@ object SketchMSAttributedString {
     string: java.lang.String,
     archivedAttributedString: SketchMSKeyValueArchive = null
   ): SketchMSAttributedString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes, string = string)
     if (archivedAttributedString != null) __obj.updateDynamic("archivedAttributedString")(archivedAttributedString)
     __obj.asInstanceOf[SketchMSAttributedString]
   }

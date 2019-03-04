@@ -54,8 +54,7 @@ object Anon_AltFieldsKeyMaxResultsOauthtoken {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyMaxResultsOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

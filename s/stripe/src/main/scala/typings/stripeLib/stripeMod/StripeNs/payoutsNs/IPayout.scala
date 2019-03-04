@@ -115,24 +115,9 @@ object IPayout {
     status: stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.in_transit | stripeLib.stripeLibStrings.paid | stripeLib.stripeLibStrings.pending,
     `type`: PayoutTypes
   ): IPayout = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("arrival_date")(arrival_date)
-    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("failure_balance_transaction")(failure_balance_transaction.asInstanceOf[js.Any])
-    __obj.updateDynamic("failure_code")(failure_code)
-    __obj.updateDynamic("failure_message")(failure_message)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
-    __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, arrival_date = arrival_date, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, description = description, destination = destination.asInstanceOf[js.Any], failure_balance_transaction = failure_balance_transaction.asInstanceOf[js.Any], failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, method = method, source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPayout]
   }
 }

@@ -16,9 +16,8 @@ object Anon_ApiIdStage {
     apiId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     stage: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ApiIdStage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
-    __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ApiIdStage]
   }
 }

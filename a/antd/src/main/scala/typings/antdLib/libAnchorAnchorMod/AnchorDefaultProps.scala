@@ -34,11 +34,7 @@ object AnchorDefaultProps {
     ] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): AnchorDefaultProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("affix")(affix)
-    __obj.updateDynamic("getContainer")(getContainer)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("showInkInFixed")(showInkInFixed)
+    val __obj = js.Dynamic.literal(affix = affix, getContainer = getContainer, prefixCls = prefixCls, showInkInFixed = showInkInFixed)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

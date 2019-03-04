@@ -47,8 +47,8 @@ object SelectFilter {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     withoutEmptyOption: js.UndefOr[scala.Boolean] = js.undefined
   ): SelectFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
+    __obj.updateDynamic("type")(`type`)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (selectText != null) __obj.updateDynamic("selectText")(selectText)

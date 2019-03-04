@@ -32,17 +32,8 @@ object IMobileBroadbandNetwork {
     registrationNetworkError: scala.Double,
     showConnectionUI: js.Function0[scala.Unit]
   ): IMobileBroadbandNetwork = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessPointName")(accessPointName)
-    __obj.updateDynamic("activationNetworkError")(activationNetworkError)
-    __obj.updateDynamic("networkAdapter")(networkAdapter)
-    __obj.updateDynamic("networkRegistrationState")(networkRegistrationState)
-    __obj.updateDynamic("packetAttachNetworkError")(packetAttachNetworkError)
-    __obj.updateDynamic("registeredDataClass")(registeredDataClass)
-    __obj.updateDynamic("registeredProviderId")(registeredProviderId)
-    __obj.updateDynamic("registeredProviderName")(registeredProviderName)
-    __obj.updateDynamic("registrationNetworkError")(registrationNetworkError)
-    __obj.updateDynamic("showConnectionUI")(showConnectionUI)
+    val __obj = js.Dynamic.literal(accessPointName = accessPointName, activationNetworkError = activationNetworkError, networkAdapter = networkAdapter, networkRegistrationState = networkRegistrationState, packetAttachNetworkError = packetAttachNetworkError, registeredDataClass = registeredDataClass, registeredProviderId = registeredProviderId, registeredProviderName = registeredProviderName, registrationNetworkError = registrationNetworkError, showConnectionUI = showConnectionUI)
+  
     __obj.asInstanceOf[IMobileBroadbandNetwork]
   }
 }

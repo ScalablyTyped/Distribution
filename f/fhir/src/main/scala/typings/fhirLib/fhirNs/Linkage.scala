@@ -49,8 +49,7 @@ object Linkage {
     resourceType: code = null,
     text: Narrative = null
   ): Linkage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(item = item)
     if (_active != null) __obj.updateDynamic("_active")(_active)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

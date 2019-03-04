@@ -49,8 +49,7 @@ object RectangleProps {
     stroke: js.UndefOr[scala.Boolean] = js.undefined,
     weight: scala.Int | scala.Double = null
   ): RectangleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

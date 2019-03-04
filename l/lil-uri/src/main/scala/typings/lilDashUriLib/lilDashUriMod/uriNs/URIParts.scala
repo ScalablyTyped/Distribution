@@ -39,19 +39,8 @@ object URIParts {
     uri: java.lang.String,
     user: java.lang.String
   ): URIParts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(auth = auth, hash = hash, host = host, hostname = hostname, password = password, path = path, port = port, protocol = protocol, query = query, search = search, uri = uri, user = user)
+  
     __obj.asInstanceOf[URIParts]
   }
 }

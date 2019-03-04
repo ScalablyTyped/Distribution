@@ -57,10 +57,7 @@ object BaseProps {
     labelHtmlFor: java.lang.String = null,
     shouldConfirmOnEnter: js.UndefOr[scala.Boolean] = js.undefined
   ): BaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onConfirm")(onConfirm)
-    __obj.updateDynamic("readView")(readView)
+    val __obj = js.Dynamic.literal(onCancel = onCancel, onConfirm = onConfirm, readView = readView)
     if (!js.isUndefined(areActionButtonsHidden)) __obj.updateDynamic("areActionButtonsHidden")(areActionButtonsHidden)
     if (!js.isUndefined(disableEditViewFieldBase)) __obj.updateDynamic("disableEditViewFieldBase")(disableEditViewFieldBase)
     if (editView != null) __obj.updateDynamic("editView")(editView)

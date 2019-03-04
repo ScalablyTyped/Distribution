@@ -13,7 +13,8 @@ trait CssNodeCommon extends js.Object {
 object CssNodeCommon {
   @scala.inline
   def apply(`type`: java.lang.String, loc: CssLocation = null): CssNodeCommon = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[CssNodeCommon]
   }

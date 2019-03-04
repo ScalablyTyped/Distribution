@@ -26,14 +26,8 @@ object AffineTransformBuilder {
     setTranslateX: js.Function1[stdLib.Number, AffineTransformBuilder],
     setTranslateY: js.Function1[stdLib.Number, AffineTransformBuilder]
   ): AffineTransformBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setScaleX")(setScaleX)
-    __obj.updateDynamic("setScaleY")(setScaleY)
-    __obj.updateDynamic("setShearX")(setShearX)
-    __obj.updateDynamic("setShearY")(setShearY)
-    __obj.updateDynamic("setTranslateX")(setTranslateX)
-    __obj.updateDynamic("setTranslateY")(setTranslateY)
+    val __obj = js.Dynamic.literal(build = build, setScaleX = setScaleX, setScaleY = setScaleY, setShearX = setShearX, setShearY = setShearY, setTranslateX = setTranslateX, setTranslateY = setTranslateY)
+  
     __obj.asInstanceOf[AffineTransformBuilder]
   }
 }

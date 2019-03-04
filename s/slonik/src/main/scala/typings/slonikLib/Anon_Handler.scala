@@ -12,8 +12,8 @@ trait Anon_Handler extends js.Object {
 object Anon_Handler {
   @scala.inline
   def apply(transaction: js.Function1[slonikLib.slonikMod.TransactionFunctionType, js.Promise[_]]): Anon_Handler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transaction")(transaction)
+    val __obj = js.Dynamic.literal(transaction = transaction)
+  
     __obj.asInstanceOf[Anon_Handler]
   }
 }

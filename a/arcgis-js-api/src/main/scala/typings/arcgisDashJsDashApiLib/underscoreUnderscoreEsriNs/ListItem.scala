@@ -132,23 +132,8 @@ object ListItem {
     visible: scala.Boolean,
     visibleAtCurrentScale: scala.Boolean
   ): ListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionsOpen")(actionsOpen)
-    __obj.updateDynamic("actionsSections")(actionsSections)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("layerView")(layerView)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("panel")(panel)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updating")(updating)
-    __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    __obj.updateDynamic("visibilityMode")(visibilityMode)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("visibleAtCurrentScale")(visibleAtCurrentScale)
+    val __obj = js.Dynamic.literal(actionsOpen = actionsOpen, actionsSections = actionsSections, children = children, clone = clone, error = error, layer = layer, layerView = layerView, open = open, panel = panel, parent = parent, title = title, updating = updating, view = view.asInstanceOf[js.Any], visibilityMode = visibilityMode, visible = visible, visibleAtCurrentScale = visibleAtCurrentScale)
+  
     __obj.asInstanceOf[ListItem]
   }
 }

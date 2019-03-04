@@ -12,8 +12,8 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(jsonrpc: java.lang.String): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonrpc")(jsonrpc)
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc)
+  
     __obj.asInstanceOf[Message]
   }
 }

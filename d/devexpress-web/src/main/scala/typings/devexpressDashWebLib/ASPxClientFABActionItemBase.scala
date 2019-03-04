@@ -22,10 +22,8 @@ object ASPxClientFABActionItemBase {
     GetText: js.Function0[java.lang.String],
     SetText: js.Function1[java.lang.String, scala.Unit]
   ): ASPxClientFABActionItemBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetActionName")(GetActionName)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("SetText")(SetText)
+    val __obj = js.Dynamic.literal(GetActionName = GetActionName, GetText = GetText, SetText = SetText)
+  
     __obj.asInstanceOf[ASPxClientFABActionItemBase]
   }
 }

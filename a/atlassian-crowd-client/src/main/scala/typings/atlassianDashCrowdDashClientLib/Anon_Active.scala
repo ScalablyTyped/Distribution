@@ -20,9 +20,7 @@ object Anon_Active {
     active: js.UndefOr[scala.Boolean] = js.undefined,
     description: java.lang.String = null
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributes = attributes, name = name)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[Anon_Active]

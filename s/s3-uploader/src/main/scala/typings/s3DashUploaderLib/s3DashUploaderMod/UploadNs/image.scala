@@ -30,16 +30,8 @@ object image {
     url: java.lang.String,
     width: scala.Double
   ): image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(etag = etag, format = format, height = height, original = original, path = path, size = size, src = src, url = url, width = width)
+  
     __obj.asInstanceOf[image]
   }
 }

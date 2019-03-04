@@ -36,11 +36,8 @@ object DragHandleDoubleClickEvent {
     rowData: T,
     rowIdx: scala.Double
   ): DragHandleDoubleClickEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("idx")(idx)
-    __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    __obj.updateDynamic("rowIdx")(rowIdx)
+    val __obj = js.Dynamic.literal(e = e, idx = idx, rowData = rowData.asInstanceOf[js.Any], rowIdx = rowIdx)
+  
     __obj.asInstanceOf[DragHandleDoubleClickEvent[T]]
   }
 }

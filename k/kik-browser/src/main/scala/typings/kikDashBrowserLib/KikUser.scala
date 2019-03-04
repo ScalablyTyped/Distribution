@@ -24,13 +24,8 @@ object KikUser {
     thumbnail: java.lang.String,
     username: java.lang.String
   ): KikUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstName")(firstName)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("lastName")(lastName)
-    __obj.updateDynamic("pic")(pic)
-    __obj.updateDynamic("thumbnail")(thumbnail)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(firstName = firstName, fullName = fullName, lastName = lastName, pic = pic, thumbnail = thumbnail, username = username)
+  
     __obj.asInstanceOf[KikUser]
   }
 }

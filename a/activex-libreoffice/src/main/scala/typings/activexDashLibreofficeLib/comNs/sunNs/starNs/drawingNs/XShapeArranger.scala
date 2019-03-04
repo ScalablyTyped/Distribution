@@ -38,16 +38,8 @@ object XShapeArranger {
     setBehindShape: js.Function2[XShapes, XShape, scala.Unit],
     setInFrontOf: js.Function2[XShapes, XShape, scala.Unit]
   ): XShapeArranger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("arrange")(arrange)
-    __obj.updateDynamic("bringToFront")(bringToFront)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reverseOrder")(reverseOrder)
-    __obj.updateDynamic("sendToBack")(sendToBack)
-    __obj.updateDynamic("setBehindShape")(setBehindShape)
-    __obj.updateDynamic("setInFrontOf")(setInFrontOf)
+    val __obj = js.Dynamic.literal(acquire = acquire, arrange = arrange, bringToFront = bringToFront, queryInterface = queryInterface, release = release, reverseOrder = reverseOrder, sendToBack = sendToBack, setBehindShape = setBehindShape, setInFrontOf = setInFrontOf)
+  
     __obj.asInstanceOf[XShapeArranger]
   }
 }

@@ -18,8 +18,8 @@ trait UIViewScrollProvider extends js.Object {
 object UIViewScrollProvider {
   @scala.inline
   def apply(useAnchorScroll: js.Function0[scala.Unit]): UIViewScrollProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("useAnchorScroll")(useAnchorScroll)
+    val __obj = js.Dynamic.literal(useAnchorScroll = useAnchorScroll)
+  
     __obj.asInstanceOf[UIViewScrollProvider]
   }
 }

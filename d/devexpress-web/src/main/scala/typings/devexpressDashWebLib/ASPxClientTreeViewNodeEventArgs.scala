@@ -19,8 +19,8 @@ trait ASPxClientTreeViewNodeEventArgs extends ASPxClientEventArgs {
 object ASPxClientTreeViewNodeEventArgs {
   @scala.inline
   def apply(node: ASPxClientTreeViewNode): ASPxClientTreeViewNodeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(node = node)
+  
     __obj.asInstanceOf[ASPxClientTreeViewNodeEventArgs]
   }
 }

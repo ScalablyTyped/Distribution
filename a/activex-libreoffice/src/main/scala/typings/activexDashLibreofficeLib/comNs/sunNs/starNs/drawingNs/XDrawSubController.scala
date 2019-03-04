@@ -40,20 +40,8 @@ object XDrawSubController {
     setCurrentPage: js.Function1[XDrawPage, scala.Unit],
     setFastPropertyValue: js.Function2[scala.Double, js.Any, scala.Unit]
   ): XDrawSubController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentPage")(CurrentPage)
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
-    __obj.updateDynamic("getFastPropertyValue")(getFastPropertyValue)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setCurrentPage")(setCurrentPage)
-    __obj.updateDynamic("setFastPropertyValue")(setFastPropertyValue)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, Selection = Selection, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getCurrentPage = getCurrentPage, getFastPropertyValue = getFastPropertyValue, getSelection = getSelection, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener, select = select, setCurrentPage = setCurrentPage, setFastPropertyValue = setFastPropertyValue)
+  
     __obj.asInstanceOf[XDrawSubController]
   }
 }

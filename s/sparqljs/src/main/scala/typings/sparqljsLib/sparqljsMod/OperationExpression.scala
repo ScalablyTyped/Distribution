@@ -22,9 +22,8 @@ object OperationExpression {
     `type`: sparqljsLib.sparqljsLibStrings.operation,
     distinct: js.UndefOr[scala.Boolean] = js.undefined
   ): OperationExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("operator")(operator)
+    val __obj = js.Dynamic.literal(args = args, operator = operator)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
     __obj.asInstanceOf[OperationExpression]
   }

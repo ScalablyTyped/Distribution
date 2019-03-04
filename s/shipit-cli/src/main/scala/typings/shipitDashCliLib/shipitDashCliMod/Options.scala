@@ -18,10 +18,8 @@ object Options {
     stderr: nodeLib.fsMod.WriteStream,
     stdout: nodeLib.fsMod.WriteStream
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("stderr")(stderr)
-    __obj.updateDynamic("stdout")(stdout)
+    val __obj = js.Dynamic.literal(environment = environment, stderr = stderr, stdout = stdout)
+  
     __obj.asInstanceOf[Options]
   }
 }

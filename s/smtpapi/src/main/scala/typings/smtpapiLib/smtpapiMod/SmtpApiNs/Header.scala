@@ -32,17 +32,8 @@ object Header {
     to: js.Array[java.lang.String],
     unique_args: js.Object
   ): Header = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asm_group_id")(asm_group_id)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("ip_pool")(ip_pool)
-    __obj.updateDynamic("section")(section)
-    __obj.updateDynamic("send_at")(send_at.asInstanceOf[js.Any])
-    __obj.updateDynamic("send_each_at")(send_each_at)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("unique_args")(unique_args)
+    val __obj = js.Dynamic.literal(asm_group_id = asm_group_id, category = category, filters = filters, ip_pool = ip_pool, section = section, send_at = send_at.asInstanceOf[js.Any], send_each_at = send_each_at, sub = sub, to = to, unique_args = unique_args)
+  
     __obj.asInstanceOf[Header]
   }
 }

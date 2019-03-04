@@ -13,9 +13,8 @@ trait Anon_Count[TInstance] extends js.Object {
 object Anon_Count {
   @scala.inline
   def apply[TInstance](count: scala.Double, rows: js.Array[TInstance]): Anon_Count[TInstance] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(count = count, rows = rows)
+  
     __obj.asInstanceOf[Anon_Count[TInstance]]
   }
 }

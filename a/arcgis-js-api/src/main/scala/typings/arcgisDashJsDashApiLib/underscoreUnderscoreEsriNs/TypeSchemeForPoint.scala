@@ -52,15 +52,8 @@ object TypeSchemeForPoint {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     size: scala.Double
   ): TypeSchemeForPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size)
+  
     __obj.asInstanceOf[TypeSchemeForPoint]
   }
 }

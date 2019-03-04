@@ -12,9 +12,8 @@ trait PlainAuthentication extends Authentication {
 object PlainAuthentication {
   @scala.inline
   def apply(password: java.lang.String, scheme: java.lang.String): PlainAuthentication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(password = password, scheme = scheme)
+  
     __obj.asInstanceOf[PlainAuthentication]
   }
 }

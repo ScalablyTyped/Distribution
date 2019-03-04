@@ -23,8 +23,7 @@ object Anon_CompleteFailKVDataList {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): Anon_CompleteFailKVDataList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KVDataList")(KVDataList)
+    val __obj = js.Dynamic.literal(KVDataList = KVDataList)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

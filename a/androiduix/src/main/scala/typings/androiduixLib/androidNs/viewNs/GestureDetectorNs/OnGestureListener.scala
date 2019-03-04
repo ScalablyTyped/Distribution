@@ -46,13 +46,8 @@ object OnGestureListener {
     onShowPress: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Unit],
     onSingleTapUp: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean]
   ): OnGestureListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDown")(onDown)
-    __obj.updateDynamic("onFling")(onFling)
-    __obj.updateDynamic("onLongPress")(onLongPress)
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("onShowPress")(onShowPress)
-    __obj.updateDynamic("onSingleTapUp")(onSingleTapUp)
+    val __obj = js.Dynamic.literal(onDown = onDown, onFling = onFling, onLongPress = onLongPress, onScroll = onScroll, onShowPress = onShowPress, onSingleTapUp = onSingleTapUp)
+  
     __obj.asInstanceOf[OnGestureListener]
   }
 }

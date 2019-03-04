@@ -72,16 +72,8 @@ object Presentation {
     slides: js.Array[Page],
     title: java.lang.String
   ): Presentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layouts")(layouts)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("masters")(masters)
-    __obj.updateDynamic("notes_master")(notes_master)
-    __obj.updateDynamic("page_size")(page_size)
-    __obj.updateDynamic("presentation_id")(presentation_id)
-    __obj.updateDynamic("revision_id")(revision_id)
-    __obj.updateDynamic("slides")(slides)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(layouts = layouts, locale = locale, masters = masters, notes_master = notes_master, page_size = page_size, presentation_id = presentation_id, revision_id = revision_id, slides = slides, title = title)
+  
     __obj.asInstanceOf[Presentation]
   }
 }

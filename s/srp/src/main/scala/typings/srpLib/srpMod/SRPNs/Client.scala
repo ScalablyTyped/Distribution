@@ -22,12 +22,8 @@ object Client {
     computeM1: js.Function0[nodeLib.Buffer],
     setB: js.Function1[nodeLib.Buffer, scala.Unit]
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkM2")(checkM2)
-    __obj.updateDynamic("computeA")(computeA)
-    __obj.updateDynamic("computeK")(computeK)
-    __obj.updateDynamic("computeM1")(computeM1)
-    __obj.updateDynamic("setB")(setB)
+    val __obj = js.Dynamic.literal(checkM2 = checkM2, computeA = computeA, computeK = computeK, computeM1 = computeM1, setB = setB)
+  
     __obj.asInstanceOf[Client]
   }
 }

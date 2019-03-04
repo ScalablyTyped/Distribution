@@ -18,10 +18,8 @@ object DebugError {
     setText: js.Function1[java.lang.String, DebugError],
     throwException: js.Function0[scala.Unit]
   ): DebugError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("throwException")(throwException)
+    val __obj = js.Dynamic.literal(printJson = printJson, setText = setText, throwException = throwException)
+  
     __obj.asInstanceOf[DebugError]
   }
 }

@@ -20,9 +20,7 @@ object AuthorizationError {
     stack: java.lang.String = null,
     uri: java.lang.String = null
   ): AuthorizationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(code = code, status = status)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     if (uri != null) __obj.updateDynamic("uri")(uri)
     __obj.asInstanceOf[AuthorizationError]

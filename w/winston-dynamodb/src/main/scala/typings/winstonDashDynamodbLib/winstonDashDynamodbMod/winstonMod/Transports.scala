@@ -12,8 +12,8 @@ trait Transports extends js.Object {
 object Transports {
   @scala.inline
   def apply(DynamoDB: winstonDashDynamodbLib.winstonDashDynamodbMod.DynamoDB): Transports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DynamoDB")(DynamoDB)
+    val __obj = js.Dynamic.literal(DynamoDB = DynamoDB)
+  
     __obj.asInstanceOf[Transports]
   }
 }

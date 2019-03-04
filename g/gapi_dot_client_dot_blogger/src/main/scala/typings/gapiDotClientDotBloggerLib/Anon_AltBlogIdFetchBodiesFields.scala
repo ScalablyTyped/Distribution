@@ -51,9 +51,7 @@ object Anon_AltBlogIdFetchBodiesFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBlogIdFetchBodiesFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blogId")(blogId)
-    __obj.updateDynamic("q")(q)
+    val __obj = js.Dynamic.literal(blogId = blogId, q = q)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(fetchBodies)) __obj.updateDynamic("fetchBodies")(fetchBodies)
     if (fields != null) __obj.updateDynamic("fields")(fields)

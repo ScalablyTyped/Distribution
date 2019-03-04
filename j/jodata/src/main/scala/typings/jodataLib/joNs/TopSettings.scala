@@ -19,12 +19,8 @@ object TopSettings {
     reset: js.Function0[scala.Unit],
     toString: js.Function0[java.lang.String]
   ): TopSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultTop")(DefaultTop)
-    __obj.updateDynamic("Top")(Top)
-    __obj.updateDynamic("isSet")(isSet)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(DefaultTop = DefaultTop, Top = Top, isSet = isSet, reset = reset, toString = toString)
+  
     __obj.asInstanceOf[TopSettings]
   }
 }

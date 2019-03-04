@@ -24,13 +24,8 @@ object Anon_Algorithm {
     Type: java.lang.String,
     URI: java.lang.String
   ): Anon_Algorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Algorithm")(Algorithm)
-    __obj.updateDynamic("Encoding")(Encoding)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("MimeType")(MimeType)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("URI")(URI)
+    val __obj = js.Dynamic.literal(Algorithm = Algorithm, Encoding = Encoding, Id = Id, MimeType = MimeType, Type = Type, URI = URI)
+  
     __obj.asInstanceOf[Anon_Algorithm]
   }
 }

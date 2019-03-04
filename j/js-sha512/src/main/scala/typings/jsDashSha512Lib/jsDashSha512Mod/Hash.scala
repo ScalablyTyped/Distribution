@@ -22,12 +22,8 @@ object Hash {
     hex: js.Function0[java.lang.String],
     update: js.Function1[java.lang.String, Hash]
   ): Hash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("arrayBuffer")(arrayBuffer)
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(array = array, arrayBuffer = arrayBuffer, digest = digest, hex = hex, update = update)
+  
     __obj.asInstanceOf[Hash]
   }
 }

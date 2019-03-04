@@ -25,12 +25,8 @@ object InteractiveFileIOException {
     FileName: java.lang.String,
     Message: java.lang.String
   ): InteractiveFileIOException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Code")(Code)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("FileName")(FileName)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Classification = Classification, Code = Code, Context = Context, FileName = FileName, Message = Message)
+  
     __obj.asInstanceOf[InteractiveFileIOException]
   }
 }

@@ -29,10 +29,8 @@ object SuggesterMixin {
     text: js.Function1[java.lang.String, SuggesterMixin],
     toJSON: js.Function0[js.Any]
   ): SuggesterMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, text = text, toJSON = toJSON)
+  
     __obj.asInstanceOf[SuggesterMixin]
   }
 }

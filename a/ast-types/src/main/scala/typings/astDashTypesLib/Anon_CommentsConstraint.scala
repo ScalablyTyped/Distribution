@@ -28,8 +28,7 @@ object Anon_CommentsConstraint {
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Anon_CommentsConstraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (constraint != null) __obj.updateDynamic("constraint")(constraint)
     if (default != null) __obj.updateDynamic("default")(default)

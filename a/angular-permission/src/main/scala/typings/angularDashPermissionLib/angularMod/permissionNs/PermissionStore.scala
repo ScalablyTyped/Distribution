@@ -70,14 +70,8 @@ object PermissionStore {
     hasPermissionDefinition: js.Function1[java.lang.String, scala.Boolean],
     removePermissionDefinition: js.Function1[java.lang.String, scala.Unit]
   ): PermissionStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearStore")(clearStore)
-    __obj.updateDynamic("defineManyPermissions")(defineManyPermissions)
-    __obj.updateDynamic("definePermission")(definePermission)
-    __obj.updateDynamic("getPermissionDefinition")(getPermissionDefinition)
-    __obj.updateDynamic("getStore")(getStore)
-    __obj.updateDynamic("hasPermissionDefinition")(hasPermissionDefinition)
-    __obj.updateDynamic("removePermissionDefinition")(removePermissionDefinition)
+    val __obj = js.Dynamic.literal(clearStore = clearStore, defineManyPermissions = defineManyPermissions, definePermission = definePermission, getPermissionDefinition = getPermissionDefinition, getStore = getStore, hasPermissionDefinition = hasPermissionDefinition, removePermissionDefinition = removePermissionDefinition)
+  
     __obj.asInstanceOf[PermissionStore]
   }
 }

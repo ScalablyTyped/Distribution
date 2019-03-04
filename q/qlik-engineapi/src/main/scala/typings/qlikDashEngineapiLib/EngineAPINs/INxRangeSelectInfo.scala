@@ -19,9 +19,8 @@ trait INxRangeSelectInfo extends IRangeSelectInfo {
 object INxRangeSelectInfo {
   @scala.inline
   def apply(qMeasureIx: scala.Double, qRange: IRange): INxRangeSelectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qMeasureIx")(qMeasureIx)
-    __obj.updateDynamic("qRange")(qRange)
+    val __obj = js.Dynamic.literal(qMeasureIx = qMeasureIx, qRange = qRange)
+  
     __obj.asInstanceOf[INxRangeSelectInfo]
   }
 }

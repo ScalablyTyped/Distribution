@@ -28,8 +28,8 @@ object IndexConfig {
     metadata: js.Any = null,
     properties: js.Array[java.lang.String] = null
   ): IndexConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (keyType != null) __obj.updateDynamic("keyType")(keyType)

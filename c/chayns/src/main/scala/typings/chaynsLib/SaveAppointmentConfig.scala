@@ -29,12 +29,8 @@ object SaveAppointmentConfig {
     name: java.lang.String,
     start: stdLib.Date
   ): SaveAppointmentConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(description = description, end = end, location = location, name = name, start = start)
+  
     __obj.asInstanceOf[SaveAppointmentConfig]
   }
 }

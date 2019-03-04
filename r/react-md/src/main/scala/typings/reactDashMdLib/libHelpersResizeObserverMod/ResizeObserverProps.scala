@@ -22,8 +22,7 @@ object ResizeObserverProps {
     watchHeight: js.UndefOr[scala.Boolean] = js.undefined,
     watchWidth: js.UndefOr[scala.Boolean] = js.undefined
   ): ResizeObserverProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onResize")(onResize)
+    val __obj = js.Dynamic.literal(onResize = onResize)
     if (component != null) __obj.updateDynamic("component")(component)
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (!js.isUndefined(watchHeight)) __obj.updateDynamic("watchHeight")(watchHeight)

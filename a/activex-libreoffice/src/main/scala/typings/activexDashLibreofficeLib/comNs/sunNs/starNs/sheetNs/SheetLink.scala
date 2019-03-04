@@ -65,27 +65,8 @@ object SheetLink {
     setName: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): SheetLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("FilterOptions")(FilterOptions)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Url")(Url)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Filter = Filter, FilterOptions = FilterOptions, Name = Name, PropertySetInfo = PropertySetInfo, Url = Url, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addRefreshListener = addRefreshListener, addVetoableChangeListener = addVetoableChangeListener, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, refresh = refresh, release = release, removePropertyChangeListener = removePropertyChangeListener, removeRefreshListener = removeRefreshListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[SheetLink]
   }
 }

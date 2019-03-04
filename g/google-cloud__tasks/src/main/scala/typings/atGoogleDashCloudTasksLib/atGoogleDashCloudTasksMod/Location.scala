@@ -22,12 +22,8 @@ object Location {
     metadata: js.Object,
     name: java.lang.String
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("locationId")(locationId)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(displayName = displayName, labels = labels, locationId = locationId, metadata = metadata, name = name)
+  
     __obj.asInstanceOf[Location]
   }
 }

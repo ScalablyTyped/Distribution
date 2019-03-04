@@ -88,15 +88,9 @@ object Spreadsheet {
     XSpreadsheet: XSpreadsheet = null,
     XTableChartsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableChartsSupplier = null
   ): Spreadsheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutomaticPrintArea")(AutomaticPrintArea)
-    __obj.updateDynamic("ConditionalFormats")(ConditionalFormats)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("PageStyle")(PageStyle)
+    val __obj = js.Dynamic.literal(AutomaticPrintArea = AutomaticPrintArea, ConditionalFormats = ConditionalFormats, IsVisible = IsVisible, PageStyle = PageStyle, TabColor = TabColor, TableLayout = TableLayout)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, Scenario)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, SheetCellRange)
-    __obj.updateDynamic("TabColor")(TabColor)
-    __obj.updateDynamic("TableLayout")(TableLayout)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellRangeMovement)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDataPilotTablesSupplier)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDrawPageSupplier)

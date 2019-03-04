@@ -54,21 +54,8 @@ object XFixedHyperlink {
     setText: js.Function1[java.lang.String, scala.Unit],
     setURL: js.Function1[java.lang.String, scala.Unit]
   ): XFixedHyperlink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addActionListener")(addActionListener)
-    __obj.updateDynamic("getAlignment")(getAlignment)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getURL")(getURL)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActionListener")(removeActionListener)
-    __obj.updateDynamic("setAlignment")(setAlignment)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setURL")(setURL)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, URL = URL, acquire = acquire, addActionListener = addActionListener, getAlignment = getAlignment, getText = getText, getURL = getURL, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, setAlignment = setAlignment, setText = setText, setURL = setURL)
+  
     __obj.asInstanceOf[XFixedHyperlink]
   }
 }

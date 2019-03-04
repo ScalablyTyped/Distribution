@@ -20,8 +20,7 @@ object Anon_ErrorCachingMinTtl {
     responseCode: scala.Int | scala.Double = null,
     responsePagePath: java.lang.String = null
   ): Anon_ErrorCachingMinTtl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(errorCode = errorCode)
     if (errorCachingMinTtl != null) __obj.updateDynamic("errorCachingMinTtl")(errorCachingMinTtl.asInstanceOf[js.Any])
     if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
     if (responsePagePath != null) __obj.updateDynamic("responsePagePath")(responsePagePath)

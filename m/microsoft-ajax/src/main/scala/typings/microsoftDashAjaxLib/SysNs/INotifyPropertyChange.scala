@@ -30,9 +30,8 @@ object INotifyPropertyChange {
     add_propertyChanged: js.Function1[js.Function, scala.Unit],
     remove_propertyChanged: js.Function1[js.Function, scala.Unit]
   ): INotifyPropertyChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add_propertyChanged")(add_propertyChanged)
-    __obj.updateDynamic("remove_propertyChanged")(remove_propertyChanged)
+    val __obj = js.Dynamic.literal(add_propertyChanged = add_propertyChanged, remove_propertyChanged = remove_propertyChanged)
+  
     __obj.asInstanceOf[INotifyPropertyChange]
   }
 }

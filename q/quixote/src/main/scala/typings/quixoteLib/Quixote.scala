@@ -22,8 +22,8 @@ object Quixote {
       QFrame
     ]
   ): Quixote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFrame")(createFrame)
+    val __obj = js.Dynamic.literal(createFrame = createFrame)
+  
     __obj.asInstanceOf[Quixote]
   }
 }

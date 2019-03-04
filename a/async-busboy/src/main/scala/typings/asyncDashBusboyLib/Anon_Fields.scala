@@ -22,8 +22,7 @@ object Anon_Fields {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify fs.ReadStream */ _
     ] = null
   ): Anon_Fields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(fields = fields)
     if (files != null) __obj.updateDynamic("files")(files)
     __obj.asInstanceOf[Anon_Fields]
   }

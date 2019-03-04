@@ -28,15 +28,8 @@ object Log {
     transactionHash: java.lang.String,
     transactionIndex: scala.Double
   ): Log = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("blockHash")(blockHash)
-    __obj.updateDynamic("blockNumber")(blockNumber)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("logIndex")(logIndex)
-    __obj.updateDynamic("topics")(topics)
-    __obj.updateDynamic("transactionHash")(transactionHash)
-    __obj.updateDynamic("transactionIndex")(transactionIndex)
+    val __obj = js.Dynamic.literal(address = address, blockHash = blockHash, blockNumber = blockNumber, data = data, logIndex = logIndex, topics = topics, transactionHash = transactionHash, transactionIndex = transactionIndex)
+  
     __obj.asInstanceOf[Log]
   }
 }

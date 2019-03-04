@@ -44,13 +44,8 @@ object BitFieldInstance {
     setByte: js.Function2[scala.Double, scala.Double, scala.Boolean],
     toBuffer: js.Function0[nodeLib.Buffer]
   ): BitFieldInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getByte")(getByte)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setByte")(setByte)
-    __obj.updateDynamic("toBuffer")(toBuffer)
+    val __obj = js.Dynamic.literal(get = get, getByte = getByte, pages = pages, set = set, setByte = setByte, toBuffer = toBuffer)
+  
     __obj.asInstanceOf[BitFieldInstance]
   }
 }

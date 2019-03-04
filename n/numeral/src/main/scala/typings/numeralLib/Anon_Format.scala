@@ -13,9 +13,8 @@ trait Anon_Format extends js.Object {
 object Anon_Format {
   @scala.inline
   def apply(format: stdLib.RegExp, unformat: stdLib.RegExp): Anon_Format = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("unformat")(unformat)
+    val __obj = js.Dynamic.literal(format = format, unformat = unformat)
+  
     __obj.asInstanceOf[Anon_Format]
   }
 }

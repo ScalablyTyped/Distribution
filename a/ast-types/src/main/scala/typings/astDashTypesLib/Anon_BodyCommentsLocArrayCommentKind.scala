@@ -18,8 +18,7 @@ object Anon_BodyCommentsLocArrayCommentKind {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_BodyCommentsLocArrayCommentKind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_BodyCommentsLocArrayCommentKind]

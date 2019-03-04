@@ -23,9 +23,8 @@ object FastifyRequest {
       busboyLib.busboyNs.Busboy
     ]
   ): FastifyRequest[HttpRequest] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isMultipart")(isMultipart)
-    __obj.updateDynamic("multipart")(multipart)
+    val __obj = js.Dynamic.literal(isMultipart = isMultipart, multipart = multipart)
+  
     __obj.asInstanceOf[FastifyRequest[HttpRequest]]
   }
 }

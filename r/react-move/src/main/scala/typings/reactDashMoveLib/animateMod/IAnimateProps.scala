@@ -29,9 +29,7 @@ object IAnimateProps {
     show: js.UndefOr[scala.Boolean] = js.undefined,
     update: js.Any = null
   ): IAnimateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(children = children, start = start)
     if (enter != null) __obj.updateDynamic("enter")(enter)
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
     if (leave != null) __obj.updateDynamic("leave")(leave)

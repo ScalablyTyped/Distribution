@@ -28,8 +28,7 @@ object UndecoratedTableProps {
     rowKeyColumn: java.lang.String = null,
     title: java.lang.String = null
   ): UndecoratedTableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(rows = rows)
     js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)

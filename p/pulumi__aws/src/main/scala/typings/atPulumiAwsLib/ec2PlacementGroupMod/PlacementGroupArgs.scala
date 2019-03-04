@@ -22,8 +22,7 @@ object PlacementGroupArgs {
     strategy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PlacementGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementGroupArgs]
   }

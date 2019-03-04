@@ -22,10 +22,8 @@ object IDecompressor {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double]
     ]
   ): IDecompressor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("detachStream")(detachStream)
-    __obj.updateDynamic("readAsync")(readAsync)
+    val __obj = js.Dynamic.literal(close = close, detachStream = detachStream, readAsync = readAsync)
+  
     __obj.asInstanceOf[IDecompressor]
   }
 }

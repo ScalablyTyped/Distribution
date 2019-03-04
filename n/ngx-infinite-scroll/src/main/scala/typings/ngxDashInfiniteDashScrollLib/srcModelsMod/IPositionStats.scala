@@ -14,10 +14,8 @@ trait IPositionStats extends js.Object {
 object IPositionStats {
   @scala.inline
   def apply(height: scala.Double, scrolled: scala.Double, totalToScroll: scala.Double): IPositionStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("scrolled")(scrolled)
-    __obj.updateDynamic("totalToScroll")(totalToScroll)
+    val __obj = js.Dynamic.literal(height = height, scrolled = scrolled, totalToScroll = totalToScroll)
+  
     __obj.asInstanceOf[IPositionStats]
   }
 }

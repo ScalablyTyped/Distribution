@@ -26,14 +26,8 @@ object loggingLevels {
     WARN: scala.Double,
     toString: js.Function1[scala.Double, java.lang.String]
   ): loggingLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FINE")(FINE)
-    __obj.updateDynamic("FINER")(FINER)
-    __obj.updateDynamic("FINEST")(FINEST)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("SEVERE")(SEVERE)
-    __obj.updateDynamic("WARN")(WARN)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(FINE = FINE, FINER = FINER, FINEST = FINEST, INFO = INFO, SEVERE = SEVERE, WARN = WARN, toString = toString)
+  
     __obj.asInstanceOf[loggingLevels]
   }
 }

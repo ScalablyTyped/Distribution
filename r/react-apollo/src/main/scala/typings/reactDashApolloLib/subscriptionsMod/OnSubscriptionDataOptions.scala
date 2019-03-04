@@ -16,9 +16,8 @@ object OnSubscriptionDataOptions {
     client: apolloDashClientLib.apolloDashClientMod.default[js.Object],
     subscriptionData: SubscriptionResult[TData]
   ): OnSubscriptionDataOptions[TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("subscriptionData")(subscriptionData)
+    val __obj = js.Dynamic.literal(client = client, subscriptionData = subscriptionData)
+  
     __obj.asInstanceOf[OnSubscriptionDataOptions[TData]]
   }
 }

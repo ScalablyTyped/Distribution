@@ -29,8 +29,7 @@ object ServiceOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): ServiceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(service = service)
     if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
     if (ctx != null) __obj.updateDynamic("ctx")(ctx)
     if (dc != null) __obj.updateDynamic("dc")(dc)

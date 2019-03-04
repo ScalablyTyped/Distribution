@@ -24,13 +24,8 @@ object Anon_Dashed {
     markerDisplayed: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on,
     markerSize: scala.Double
   ): Anon_Dashed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineColor")(lineColor)
-    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("markerColor")(markerColor)
-    __obj.updateDynamic("markerDisplayed")(markerDisplayed.asInstanceOf[js.Any])
-    __obj.updateDynamic("markerSize")(markerSize)
+    val __obj = js.Dynamic.literal(lineColor = lineColor, lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth, markerColor = markerColor, markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize)
+  
     __obj.asInstanceOf[Anon_Dashed]
   }
 }

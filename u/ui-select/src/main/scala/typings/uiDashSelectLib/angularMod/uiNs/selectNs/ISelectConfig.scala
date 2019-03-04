@@ -14,10 +14,8 @@ trait ISelectConfig extends js.Object {
 object ISelectConfig {
   @scala.inline
   def apply(appendToBody: scala.Boolean, resetSearchInput: scala.Boolean, theme: java.lang.String): ISelectConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendToBody")(appendToBody)
-    __obj.updateDynamic("resetSearchInput")(resetSearchInput)
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(appendToBody = appendToBody, resetSearchInput = resetSearchInput, theme = theme)
+  
     __obj.asInstanceOf[ISelectConfig]
   }
 }

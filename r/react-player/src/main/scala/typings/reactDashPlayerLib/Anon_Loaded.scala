@@ -20,11 +20,8 @@ object Anon_Loaded {
     played: scala.Double,
     playedSeconds: scala.Double
   ): Anon_Loaded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("loadedSeconds")(loadedSeconds)
-    __obj.updateDynamic("played")(played)
-    __obj.updateDynamic("playedSeconds")(playedSeconds)
+    val __obj = js.Dynamic.literal(loaded = loaded, loadedSeconds = loadedSeconds, played = played, playedSeconds = playedSeconds)
+  
     __obj.asInstanceOf[Anon_Loaded]
   }
 }

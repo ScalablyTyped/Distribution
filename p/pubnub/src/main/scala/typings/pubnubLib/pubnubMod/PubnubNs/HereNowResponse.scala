@@ -18,10 +18,8 @@ object HereNowResponse {
     totalChannels: scala.Double,
     totalOccupancy: scala.Double
   ): HereNowResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("totalChannels")(totalChannels)
-    __obj.updateDynamic("totalOccupancy")(totalOccupancy)
+    val __obj = js.Dynamic.literal(channels = channels, totalChannels = totalChannels, totalOccupancy = totalOccupancy)
+  
     __obj.asInstanceOf[HereNowResponse]
   }
 }

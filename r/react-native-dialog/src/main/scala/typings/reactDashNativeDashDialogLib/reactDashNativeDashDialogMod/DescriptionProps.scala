@@ -12,8 +12,8 @@ trait DescriptionProps extends js.Object {
 object DescriptionProps {
   @scala.inline
   def apply(children: java.lang.String): DescriptionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[DescriptionProps]
   }
 }

@@ -35,9 +35,8 @@ object ObjectTypeIndexer {
     trailingComments: js.Array[Comment] = null,
     variance: Variance = null
   ): ObjectTypeIndexer = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

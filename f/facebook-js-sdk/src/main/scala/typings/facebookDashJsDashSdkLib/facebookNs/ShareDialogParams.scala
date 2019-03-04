@@ -25,9 +25,7 @@ object ShareDialogParams {
     quote: java.lang.String = null,
     redirect_uri: java.lang.String = null
   ): ShareDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(href = href, method = method)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)

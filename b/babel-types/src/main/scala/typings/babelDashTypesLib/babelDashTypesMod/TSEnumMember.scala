@@ -25,11 +25,8 @@ object TSEnumMember {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TSEnumMember = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, id = id.asInstanceOf[js.Any], loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

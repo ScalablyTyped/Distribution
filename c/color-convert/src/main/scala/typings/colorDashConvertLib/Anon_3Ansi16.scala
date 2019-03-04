@@ -24,13 +24,8 @@ object Anon_3Ansi16 {
     labels: colorDashConvertLib.colorDashConvertLibStrings.hsv,
     rgb: js.Function1[colorDashConvertLib.conversionsMod.HSV, colorDashConvertLib.conversionsMod.RGB]
   ): Anon_3Ansi16 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ansi16")(ansi16)
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("hcg")(hcg)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(ansi16 = ansi16, channels = channels, hcg = hcg, hsl = hsl, labels = labels, rgb = rgb)
+  
     __obj.asInstanceOf[Anon_3Ansi16]
   }
 }

@@ -20,11 +20,8 @@ object IELangDBDelegates {
     removeHandler: js.Function,
     selectHandler: js.Function
   ): IELangDBDelegates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insertHandler")(insertHandler)
-    __obj.updateDynamic("modifyHandler")(modifyHandler)
-    __obj.updateDynamic("removeHandler")(removeHandler)
-    __obj.updateDynamic("selectHandler")(selectHandler)
+    val __obj = js.Dynamic.literal(insertHandler = insertHandler, modifyHandler = modifyHandler, removeHandler = removeHandler, selectHandler = selectHandler)
+  
     __obj.asInstanceOf[IELangDBDelegates]
   }
 }

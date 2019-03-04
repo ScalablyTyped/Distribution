@@ -19,10 +19,8 @@ object ScannerException {
     Error: ScanError,
     Message: java.lang.String
   ): ScannerException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, Error = Error, Message = Message)
+  
     __obj.asInstanceOf[ScannerException]
   }
 }

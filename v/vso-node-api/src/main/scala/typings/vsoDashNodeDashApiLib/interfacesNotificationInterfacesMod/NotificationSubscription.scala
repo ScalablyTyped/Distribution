@@ -102,25 +102,8 @@ object NotificationSubscription {
     url: java.lang.String,
     userSettings: SubscriptionUserSettings
   ): NotificationSubscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("adminSettings")(adminSettings)
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("diagnostics")(diagnostics)
-    __obj.updateDynamic("extendedProperties")(extendedProperties)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("modifiedDate")(modifiedDate)
-    __obj.updateDynamic("permissions")(permissions)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("subscriber")(subscriber)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("userSettings")(userSettings)
+    val __obj = js.Dynamic.literal(_links = _links, adminSettings = adminSettings, channel = channel, description = description, diagnostics = diagnostics, extendedProperties = extendedProperties, filter = filter, flags = flags, id = id, lastModifiedBy = lastModifiedBy, modifiedDate = modifiedDate, permissions = permissions, scope = scope, status = status, statusMessage = statusMessage, subscriber = subscriber, url = url, userSettings = userSettings)
+  
     __obj.asInstanceOf[NotificationSubscription]
   }
 }

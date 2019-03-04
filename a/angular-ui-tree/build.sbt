@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "angular-ui-tree"
-version := "v2.8.0-dt-20181124Z-e5fd9c"
+version := "v2.8.0-dt-20181124Z-805f17"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-7e4f8a",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-b19f07",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

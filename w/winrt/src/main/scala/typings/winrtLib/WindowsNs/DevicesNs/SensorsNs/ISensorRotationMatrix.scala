@@ -30,16 +30,8 @@ object ISensorRotationMatrix {
     m32: scala.Double,
     m33: scala.Double
   ): ISensorRotationMatrix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("m11")(m11)
-    __obj.updateDynamic("m12")(m12)
-    __obj.updateDynamic("m13")(m13)
-    __obj.updateDynamic("m21")(m21)
-    __obj.updateDynamic("m22")(m22)
-    __obj.updateDynamic("m23")(m23)
-    __obj.updateDynamic("m31")(m31)
-    __obj.updateDynamic("m32")(m32)
-    __obj.updateDynamic("m33")(m33)
+    val __obj = js.Dynamic.literal(m11 = m11, m12 = m12, m13 = m13, m21 = m21, m22 = m22, m23 = m23, m31 = m31, m32 = m32, m33 = m33)
+  
     __obj.asInstanceOf[ISensorRotationMatrix]
   }
 }

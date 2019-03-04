@@ -20,11 +20,8 @@ object KernelEnum {
     lanczos3: sharpLib.sharpLibStrings.lanczos3,
     nearest: sharpLib.sharpLibStrings.nearest
   ): KernelEnum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cubic")(cubic)
-    __obj.updateDynamic("lanczos2")(lanczos2)
-    __obj.updateDynamic("lanczos3")(lanczos3)
-    __obj.updateDynamic("nearest")(nearest)
+    val __obj = js.Dynamic.literal(cubic = cubic, lanczos2 = lanczos2, lanczos3 = lanczos3, nearest = nearest)
+  
     __obj.asInstanceOf[KernelEnum]
   }
 }

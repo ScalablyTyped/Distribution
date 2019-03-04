@@ -53,14 +53,8 @@ object IgPivotViewMethods {
     pivotGrid: js.Function0[js.Object],
     splitter: js.Function0[js.Object]
   ): IgPivotViewMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("dataSelector")(dataSelector)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("pivotGrid")(pivotGrid)
-    __obj.updateDynamic("splitter")(splitter)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, dataSelector = dataSelector, destroy = destroy, pivotGrid = pivotGrid, splitter = splitter)
+  
     __obj.asInstanceOf[IgPivotViewMethods]
   }
 }

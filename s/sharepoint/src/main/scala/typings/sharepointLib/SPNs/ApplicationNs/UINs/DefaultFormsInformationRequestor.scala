@@ -16,9 +16,8 @@ object DefaultFormsInformationRequestor {
     onDefaultFormsInformationRetrieveFailure: js.Function0[scala.Unit],
     onDefaultFormsInformationRetrieveSuccess: js.Function1[DefaultFormsInformation, scala.Unit]
   ): DefaultFormsInformationRequestor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDefaultFormsInformationRetrieveFailure")(onDefaultFormsInformationRetrieveFailure)
-    __obj.updateDynamic("onDefaultFormsInformationRetrieveSuccess")(onDefaultFormsInformationRetrieveSuccess)
+    val __obj = js.Dynamic.literal(onDefaultFormsInformationRetrieveFailure = onDefaultFormsInformationRetrieveFailure, onDefaultFormsInformationRetrieveSuccess = onDefaultFormsInformationRetrieveSuccess)
+  
     __obj.asInstanceOf[DefaultFormsInformationRequestor]
   }
 }

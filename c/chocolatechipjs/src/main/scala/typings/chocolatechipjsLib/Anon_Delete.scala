@@ -22,12 +22,8 @@ object Anon_Delete {
     set: js.Function,
     values: js.Array[_]
   ): Anon_Delete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_delete")(_delete)
-    __obj.updateDynamic("hasKey")(hasKey)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(_delete = _delete, hasKey = hasKey, keys = keys, set = set, values = values)
+  
     __obj.asInstanceOf[Anon_Delete]
   }
 }

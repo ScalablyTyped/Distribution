@@ -29,8 +29,7 @@ object Options {
     pretty: scala.Boolean | java.lang.String = null,
     self: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i18n")(i18n)
+    val __obj = js.Dynamic.literal(i18n = i18n)
     if (basedir != null) __obj.updateDynamic("basedir")(basedir)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug)

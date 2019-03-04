@@ -20,11 +20,8 @@ object MessageEvent {
     message: java.lang.String,
     to: java.lang.String
   ): MessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("hostmask")(hostmask)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, hostmask = hostmask, message = message, to = to)
+  
     __obj.asInstanceOf[MessageEvent]
   }
 }

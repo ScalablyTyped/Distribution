@@ -16,9 +16,8 @@ object MetadataReader {
     getConstructorMetadata: js.Function1[js.Function, ConstructorMetadata],
     getPropertiesMetadata: js.Function1[js.Function, MetadataMap]
   ): MetadataReader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConstructorMetadata")(getConstructorMetadata)
-    __obj.updateDynamic("getPropertiesMetadata")(getPropertiesMetadata)
+    val __obj = js.Dynamic.literal(getConstructorMetadata = getConstructorMetadata, getPropertiesMetadata = getPropertiesMetadata)
+  
     __obj.asInstanceOf[MetadataReader]
   }
 }

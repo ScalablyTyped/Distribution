@@ -26,8 +26,8 @@ object Anon_HandlerPaginationChanged {
       scala.Unit
     ]
   ): Anon_HandlerPaginationChanged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paginationChanged")(paginationChanged)
+    val __obj = js.Dynamic.literal(paginationChanged = paginationChanged)
+  
     __obj.asInstanceOf[Anon_HandlerPaginationChanged]
   }
 }

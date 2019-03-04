@@ -28,11 +28,8 @@ trait TextDocumentItem extends js.Object {
 object TextDocumentItem {
   @scala.inline
   def apply(languageId: java.lang.String, text: java.lang.String, uri: java.lang.String, version: scala.Double): TextDocumentItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languageId")(languageId)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(languageId = languageId, text = text, uri = uri, version = version)
+  
     __obj.asInstanceOf[TextDocumentItem]
   }
 }

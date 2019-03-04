@@ -72,18 +72,8 @@ object WorkflowAnnotationDisplayDetails {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     width: scala.Double
   ): WorkflowAnnotationDisplayDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutlineColor")(OutlineColor)
-    __obj.updateDynamic("centerX")(centerX)
-    __obj.updateDynamic("centerY")(centerY)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelColor")(labelColor)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(OutlineColor = OutlineColor, centerX = centerX, centerY = centerY, constructor = constructor, fillColor = fillColor, hasOwnProperty = hasOwnProperty, height = height, label = label, labelColor = labelColor, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
     __obj.asInstanceOf[WorkflowAnnotationDisplayDetails]
   }
 }

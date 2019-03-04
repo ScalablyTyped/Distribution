@@ -29,8 +29,7 @@ object JQuery {
       JQuery
     ]
   ): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bootpag")(bootpag)
+    val __obj = js.Dynamic.literal(bootpag = bootpag)
     __obj.updateDynamic("on")(on_page)
     __obj.asInstanceOf[JQuery]
   }

@@ -20,11 +20,8 @@ object DataSourceSpec {
     getParameters: js.Function0[js.Array[DataSourceParameter]],
     getType: js.Function0[DataSourceType]
   ): DataSourceSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBigQuery")(asBigQuery)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(asBigQuery = asBigQuery, copy = copy, getParameters = getParameters, getType = getType)
+  
     __obj.asInstanceOf[DataSourceSpec]
   }
 }

@@ -21,8 +21,7 @@ object Thunk {
     sel: java.lang.String = null,
     text: java.lang.String = null
   ): Thunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (children != null) __obj.updateDynamic("children")(children)
     if (elm != null) __obj.updateDynamic("elm")(elm)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

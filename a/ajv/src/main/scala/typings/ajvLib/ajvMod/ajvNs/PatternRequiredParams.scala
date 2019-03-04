@@ -12,8 +12,8 @@ trait PatternRequiredParams extends ErrorParameters {
 object PatternRequiredParams {
   @scala.inline
   def apply(missingPattern: java.lang.String): PatternRequiredParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("missingPattern")(missingPattern)
+    val __obj = js.Dynamic.literal(missingPattern = missingPattern)
+  
     __obj.asInstanceOf[PatternRequiredParams]
   }
 }

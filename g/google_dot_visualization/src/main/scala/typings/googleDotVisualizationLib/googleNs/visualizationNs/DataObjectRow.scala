@@ -13,8 +13,7 @@ trait DataObjectRow extends js.Object {
 object DataObjectRow {
   @scala.inline
   def apply(c: js.Array[DataObjectCell], p: js.Any = null): DataObjectRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
+    val __obj = js.Dynamic.literal(c = c)
     if (p != null) __obj.updateDynamic("p")(p)
     __obj.asInstanceOf[DataObjectRow]
   }

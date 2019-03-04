@@ -13,9 +13,8 @@ trait SitemapXml extends js.Object {
 object SitemapXml {
   @scala.inline
   def apply(fileName: java.lang.String, xml: java.lang.String): SitemapXml = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("xml")(xml)
+    val __obj = js.Dynamic.literal(fileName = fileName, xml = xml)
+  
     __obj.asInstanceOf[SitemapXml]
   }
 }

@@ -37,13 +37,8 @@ object WorkflowTaskSetCurrentStepParams {
     stepId: scala.Double,
     user: java.lang.String
   ): WorkflowTaskSetCurrentStepParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stepId")(stepId)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, stepId = stepId, user = user)
+  
     __obj.asInstanceOf[WorkflowTaskSetCurrentStepParams]
   }
 }

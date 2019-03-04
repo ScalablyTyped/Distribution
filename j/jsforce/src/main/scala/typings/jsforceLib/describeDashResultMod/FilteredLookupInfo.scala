@@ -18,10 +18,8 @@ object FilteredLookupInfo {
     dependent: scala.Boolean,
     optionalFilter: scala.Boolean
   ): FilteredLookupInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controllingFields")(controllingFields)
-    __obj.updateDynamic("dependent")(dependent)
-    __obj.updateDynamic("optionalFilter")(optionalFilter)
+    val __obj = js.Dynamic.literal(controllingFields = controllingFields, dependent = dependent, optionalFilter = optionalFilter)
+  
     __obj.asInstanceOf[FilteredLookupInfo]
   }
 }

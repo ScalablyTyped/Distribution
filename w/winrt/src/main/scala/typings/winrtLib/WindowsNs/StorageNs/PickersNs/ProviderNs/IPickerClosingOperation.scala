@@ -13,9 +13,8 @@ trait IPickerClosingOperation extends js.Object {
 object IPickerClosingOperation {
   @scala.inline
   def apply(deadline: stdLib.Date, getDeferral: js.Function0[PickerClosingDeferral]): IPickerClosingOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deadline")(deadline)
-    __obj.updateDynamic("getDeferral")(getDeferral)
+    val __obj = js.Dynamic.literal(deadline = deadline, getDeferral = getDeferral)
+  
     __obj.asInstanceOf[IPickerClosingOperation]
   }
 }

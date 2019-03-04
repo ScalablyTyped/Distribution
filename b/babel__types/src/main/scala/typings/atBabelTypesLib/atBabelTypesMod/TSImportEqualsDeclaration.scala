@@ -30,9 +30,8 @@ object TSImportEqualsDeclaration {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): TSImportEqualsDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("moduleReference")(moduleReference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, moduleReference = moduleReference.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport)

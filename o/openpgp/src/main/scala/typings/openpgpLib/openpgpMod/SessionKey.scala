@@ -13,9 +13,8 @@ trait SessionKey extends js.Object {
 object SessionKey {
   @scala.inline
   def apply(algorithm: java.lang.String, data: stdLib.Uint8Array): SessionKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, data = data)
+  
     __obj.asInstanceOf[SessionKey]
   }
 }

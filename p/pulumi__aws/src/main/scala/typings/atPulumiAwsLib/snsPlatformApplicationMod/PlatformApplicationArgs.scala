@@ -67,9 +67,7 @@ object PlatformApplicationArgs {
     successFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     successFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PlatformApplicationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    __obj.updateDynamic("platformCredential")(platformCredential.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any], platformCredential = platformCredential.asInstanceOf[js.Any])
     if (eventDeliveryFailureTopicArn != null) __obj.updateDynamic("eventDeliveryFailureTopicArn")(eventDeliveryFailureTopicArn.asInstanceOf[js.Any])
     if (eventEndpointCreatedTopicArn != null) __obj.updateDynamic("eventEndpointCreatedTopicArn")(eventEndpointCreatedTopicArn.asInstanceOf[js.Any])
     if (eventEndpointDeletedTopicArn != null) __obj.updateDynamic("eventEndpointDeletedTopicArn")(eventEndpointDeletedTopicArn.asInstanceOf[js.Any])

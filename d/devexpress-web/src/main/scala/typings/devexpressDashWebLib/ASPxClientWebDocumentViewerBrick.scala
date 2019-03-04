@@ -57,14 +57,8 @@ object ASPxClientWebDocumentViewerBrick {
     top: scala.Double,
     width: scala.Double
   ): ASPxClientWebDocumentViewerBrick = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("rtl")(rtl)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(content = content, height = height, left = left, navigation = navigation, rtl = rtl, top = top, width = width)
+  
     __obj.asInstanceOf[ASPxClientWebDocumentViewerBrick]
   }
 }

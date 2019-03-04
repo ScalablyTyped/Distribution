@@ -19,9 +19,8 @@ trait IValidationResult extends js.Object {
 object IValidationResult {
   @scala.inline
   def apply(errors: js.Array[IFieldValidationError], isValid: scala.Boolean): IValidationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(errors = errors, isValid = isValid)
+  
     __obj.asInstanceOf[IValidationResult]
   }
 }

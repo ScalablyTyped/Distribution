@@ -37,11 +37,8 @@ object GeocodedWaypoint {
     place_id: java.lang.String,
     types: js.Array[AddressType]
   ): GeocodedWaypoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geocoder_status")(geocoder_status)
-    __obj.updateDynamic("partial_match")(partial_match)
-    __obj.updateDynamic("place_id")(place_id)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(geocoder_status = geocoder_status, partial_match = partial_match, place_id = place_id, types = types)
+  
     __obj.asInstanceOf[GeocodedWaypoint]
   }
 }

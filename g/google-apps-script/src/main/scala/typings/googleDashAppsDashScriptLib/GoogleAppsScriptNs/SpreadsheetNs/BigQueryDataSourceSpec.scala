@@ -22,12 +22,8 @@ object BigQueryDataSourceSpec {
     getRawQuery: js.Function0[java.lang.String],
     getType: js.Function0[DataSourceType]
   ): BigQueryDataSourceSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("getProjectId")(getProjectId)
-    __obj.updateDynamic("getRawQuery")(getRawQuery)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(copy = copy, getParameters = getParameters, getProjectId = getProjectId, getRawQuery = getRawQuery, getType = getType)
+  
     __obj.asInstanceOf[BigQueryDataSourceSpec]
   }
 }

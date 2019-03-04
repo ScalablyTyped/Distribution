@@ -24,13 +24,8 @@ object Anon_DefaultProps {
     props: StructProps,
     strict: scala.Boolean
   ): Anon_DefaultProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultProps")(defaultProps)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(defaultProps = defaultProps, identity = identity, kind = kind, name = name, props = props, strict = strict)
+  
     __obj.asInstanceOf[Anon_DefaultProps]
   }
 }

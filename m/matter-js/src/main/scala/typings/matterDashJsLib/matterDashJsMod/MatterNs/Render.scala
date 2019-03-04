@@ -73,14 +73,8 @@ object Render {
     options: IRendererOptions,
     textures: js.Any
   ): Render = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("canvas")(canvas)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("textures")(textures)
+    val __obj = js.Dynamic.literal(bounds = bounds, canvas = canvas, context = context, controller = controller, element = element, options = options, textures = textures)
+  
     __obj.asInstanceOf[Render]
   }
 }

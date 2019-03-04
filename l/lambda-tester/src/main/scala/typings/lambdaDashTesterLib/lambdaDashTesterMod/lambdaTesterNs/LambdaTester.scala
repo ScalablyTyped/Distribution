@@ -36,19 +36,8 @@ object LambdaTester {
     timeout: js.Function1[scala.Double, LambdaTester],
     xray: js.Function0[LambdaTester]
   ): LambdaTester = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientContext")(clientContext)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("expectError")(expectError)
-    __obj.updateDynamic("expectFail")(expectFail)
-    __obj.updateDynamic("expectReject")(expectReject)
-    __obj.updateDynamic("expectResolve")(expectResolve)
-    __obj.updateDynamic("expectResult")(expectResult)
-    __obj.updateDynamic("expectSucceed")(expectSucceed)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("xray")(xray)
+    val __obj = js.Dynamic.literal(clientContext = clientContext, context = context, event = event, expectError = expectError, expectFail = expectFail, expectReject = expectReject, expectResolve = expectResolve, expectResult = expectResult, expectSucceed = expectSucceed, identity = identity, timeout = timeout, xray = xray)
+  
     __obj.asInstanceOf[LambdaTester]
   }
 }

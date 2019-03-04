@@ -19,10 +19,8 @@ object R3ExpressionFactoryMetadata {
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     deps: js.Array[R3DependencyMetadata] = null
   ): R3ExpressionFactoryMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("injectFn")(injectFn)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(expression = expression, injectFn = injectFn, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     __obj.asInstanceOf[R3ExpressionFactoryMetadata]
   }

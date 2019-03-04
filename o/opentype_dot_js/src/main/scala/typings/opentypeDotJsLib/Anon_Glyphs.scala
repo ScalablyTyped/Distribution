@@ -12,8 +12,8 @@ trait Anon_Glyphs extends js.Object {
 object Anon_Glyphs {
   @scala.inline
   def apply(glyphs: js.Array[opentypeDotJsLib.opentypeDotJsMod.Glyph]): Anon_Glyphs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("glyphs")(glyphs)
+    val __obj = js.Dynamic.literal(glyphs = glyphs)
+  
     __obj.asInstanceOf[Anon_Glyphs]
   }
 }

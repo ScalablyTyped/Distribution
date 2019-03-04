@@ -144,15 +144,8 @@ object PayPalMobileStatic {
     ],
     version: js.Function1[js.Function1[/* result */ java.lang.String, scala.Unit], scala.Unit]
   ): PayPalMobileStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationCorrelationIDForEnvironment")(applicationCorrelationIDForEnvironment)
-    __obj.updateDynamic("clientMetadataID")(clientMetadataID)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("prepareToRender")(prepareToRender)
-    __obj.updateDynamic("renderFuturePaymentUI")(renderFuturePaymentUI)
-    __obj.updateDynamic("renderProfileSharingUI")(renderProfileSharingUI)
-    __obj.updateDynamic("renderSinglePaymentUI")(renderSinglePaymentUI)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(applicationCorrelationIDForEnvironment = applicationCorrelationIDForEnvironment, clientMetadataID = clientMetadataID, init = init, prepareToRender = prepareToRender, renderFuturePaymentUI = renderFuturePaymentUI, renderProfileSharingUI = renderProfileSharingUI, renderSinglePaymentUI = renderSinglePaymentUI, version = version)
+  
     __obj.asInstanceOf[PayPalMobileStatic]
   }
 }

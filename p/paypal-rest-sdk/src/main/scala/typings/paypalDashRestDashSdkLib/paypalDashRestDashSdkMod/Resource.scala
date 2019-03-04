@@ -40,9 +40,7 @@ object Resource {
     state: java.lang.String = null,
     update_time: java.lang.String = null
   ): Resource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(amount = amount, id = id)
     if (create_time != null) __obj.updateDynamic("create_time")(create_time)
     if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details)
     if (links != null) __obj.updateDynamic("links")(links)

@@ -22,12 +22,8 @@ object ViewModelContext {
     unique: java.lang.String,
     uniqueId: java.lang.String
   ): ViewModelContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("slotCounts")(slotCounts)
-    __obj.updateDynamic("unique")(unique)
-    __obj.updateDynamic("uniqueId")(uniqueId)
+    val __obj = js.Dynamic.literal(element = element, properties = properties, slotCounts = slotCounts, unique = unique, uniqueId = uniqueId)
+  
     __obj.asInstanceOf[ViewModelContext]
   }
 }

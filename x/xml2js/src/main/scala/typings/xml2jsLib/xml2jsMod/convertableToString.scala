@@ -10,8 +10,8 @@ trait convertableToString extends js.Object
 object convertableToString {
   @scala.inline
   def apply(toString: js.Function0[java.lang.String]): convertableToString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toString = toString)
+  
     __obj.asInstanceOf[convertableToString]
   }
 }

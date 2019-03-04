@@ -16,9 +16,8 @@ object ChangeEmitterOf3 {
     emit: js.Function3[T1, T2, T3, scala.Unit],
     listen: js.Function1[ListenerOf3[T1, T2, T3], Unlisten]
   ): ChangeEmitterOf3[T1, T2, T3] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("listen")(listen)
+    val __obj = js.Dynamic.literal(emit = emit, listen = listen)
+  
     __obj.asInstanceOf[ChangeEmitterOf3[T1, T2, T3]]
   }
 }

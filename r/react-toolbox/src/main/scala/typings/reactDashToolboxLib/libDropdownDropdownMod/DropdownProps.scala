@@ -122,8 +122,7 @@ object DropdownProps {
     value: java.lang.String | scala.Double = null,
     valueKey: java.lang.String = null
   ): DropdownProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank)
     if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
     if (className != null) __obj.updateDynamic("className")(className)

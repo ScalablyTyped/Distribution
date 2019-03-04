@@ -813,7 +813,7 @@ package object sequelizeNs {
   /**
     * Logic of where statement
     */
-  type WhereLogic = stdLib.Partial[sequelizeLib.`Anon_`]
+  type WhereLogic = stdLib.Partial[sequelizeLib.Anon_]
   type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? sequelize.sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.sequelize.Primitives> | sequelize.sequelize.sequelize.WhereLogic | null | sequelize.sequelize.sequelize.col | sequelize.sequelize.sequelize.and | sequelize.sequelize.sequelize.or | sequelize.sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.sequelize.WhereNested | null}
     */ sequelizeLib.sequelizeLibStrings.WhereOptions with js.Any

@@ -43,9 +43,8 @@ object LeadingMarginSpan {
     ],
     getLeadingMargin: js.Function1[scala.Boolean, scala.Double]
   ): LeadingMarginSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawLeadingMargin")(drawLeadingMargin)
-    __obj.updateDynamic("getLeadingMargin")(getLeadingMargin)
+    val __obj = js.Dynamic.literal(drawLeadingMargin = drawLeadingMargin, getLeadingMargin = getLeadingMargin)
+  
     __obj.asInstanceOf[LeadingMarginSpan]
   }
 }

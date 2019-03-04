@@ -35,15 +35,8 @@ object XWindowListener {
     windowResized: js.Function1[WindowEvent, scala.Unit],
     windowShown: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XWindowListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("windowHidden")(windowHidden)
-    __obj.updateDynamic("windowMoved")(windowMoved)
-    __obj.updateDynamic("windowResized")(windowResized)
-    __obj.updateDynamic("windowShown")(windowShown)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, windowHidden = windowHidden, windowMoved = windowMoved, windowResized = windowResized, windowShown = windowShown)
+  
     __obj.asInstanceOf[XWindowListener]
   }
 }

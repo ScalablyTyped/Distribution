@@ -15,7 +15,7 @@ class Impure[F, A, X] protected () extends js.Object {
   val _tag: fpDashTsLib.fpDashTsLibStrings.Impure = js.native
   val fx: fpDashTsLib.libHKTMod.HKT[F, X] = js.native
   def ap[B](fab: Free[F, js.Function1[/* a */ A, B]]): Free[F, B] = js.native
-  def `ap_`[B, C](`this`: Free[F, js.Function1[/* b */ B, C]], fb: Free[F, B]): Free[F, C] = js.native
+  def ap_[B, C](`this`: Free[F, js.Function1[/* b */ B, C]], fb: Free[F, B]): Free[F, C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Free[F, B]]): Free[F, B] = js.native
   def f(x: X): Free[F, A] = js.native
   def inspect(): java.lang.String = js.native

@@ -80,16 +80,8 @@ object XBitmapPalette {
       scala.Boolean
     ]
   ): XBitmapPalette = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColorSpace")(ColorSpace)
-    __obj.updateDynamic("NumberOfEntries")(NumberOfEntries)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColorSpace")(getColorSpace)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getNumberOfEntries")(getNumberOfEntries)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setIndex")(setIndex)
+    val __obj = js.Dynamic.literal(ColorSpace = ColorSpace, NumberOfEntries = NumberOfEntries, acquire = acquire, getColorSpace = getColorSpace, getIndex = getIndex, getNumberOfEntries = getNumberOfEntries, queryInterface = queryInterface, release = release, setIndex = setIndex)
+  
     __obj.asInstanceOf[XBitmapPalette]
   }
 }

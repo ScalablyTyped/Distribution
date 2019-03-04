@@ -53,13 +53,8 @@ object Command {
     options: js.Function1[org.scalablytyped.runtime.StringDictionary[Option], Command],
     usage: js.Function1[java.lang.String, Command]
   ): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("option")(option)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(callback = callback, help = help, name = name, option = option, options = options, usage = usage)
+  
     __obj.asInstanceOf[Command]
   }
 }

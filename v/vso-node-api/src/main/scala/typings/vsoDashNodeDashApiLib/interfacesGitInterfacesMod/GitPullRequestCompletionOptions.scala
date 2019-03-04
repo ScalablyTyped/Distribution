@@ -47,14 +47,8 @@ object GitPullRequestCompletionOptions {
     transitionWorkItems: scala.Boolean,
     triggeredByAutoComplete: scala.Boolean
   ): GitPullRequestCompletionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bypassPolicy")(bypassPolicy)
-    __obj.updateDynamic("bypassReason")(bypassReason)
-    __obj.updateDynamic("deleteSourceBranch")(deleteSourceBranch)
-    __obj.updateDynamic("mergeCommitMessage")(mergeCommitMessage)
-    __obj.updateDynamic("squashMerge")(squashMerge)
-    __obj.updateDynamic("transitionWorkItems")(transitionWorkItems)
-    __obj.updateDynamic("triggeredByAutoComplete")(triggeredByAutoComplete)
+    val __obj = js.Dynamic.literal(bypassPolicy = bypassPolicy, bypassReason = bypassReason, deleteSourceBranch = deleteSourceBranch, mergeCommitMessage = mergeCommitMessage, squashMerge = squashMerge, transitionWorkItems = transitionWorkItems, triggeredByAutoComplete = triggeredByAutoComplete)
+  
     __obj.asInstanceOf[GitPullRequestCompletionOptions]
   }
 }

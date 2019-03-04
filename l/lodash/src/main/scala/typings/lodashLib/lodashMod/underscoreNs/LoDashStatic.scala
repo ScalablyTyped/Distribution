@@ -896,7 +896,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new array of filtered values.
     */
   @JSName("compact")
-  def `compact_`[T](
+  def compact_[T](
     array: List[
       js.UndefOr[
         T | scala.Null | lodashLib.lodashLibNumbers.`false` | lodashLib.lodashLibStrings.Empty | lodashLib.lodashLibNumbers.`0`
@@ -5156,7 +5156,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, R](func: Function2[T1, T2, R], plc1: `__`, arg2: T2): Function1[T1, R] = js.native
+  def partial[T1, T2, R](func: Function2[T1, T2, R], plc1: __, arg2: T2): Function1[T1, R] = js.native
   // arity 3
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
@@ -5202,7 +5202,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: `__`, arg3: T3): Function1[T2, R] = js.native
+  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: __, arg3: T3): Function1[T2, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5211,7 +5211,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: `__`, arg2: T2): Function2[T1, T3, R] = js.native
+  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: __, arg2: T2): Function2[T1, T3, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5220,7 +5220,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: `__`, arg2: T2, arg3: T3): Function1[T1, R] = js.native
+  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: __, arg2: T2, arg3: T3): Function1[T1, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5229,7 +5229,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: `__`, plc2: `__`, arg3: T3): Function2[T1, T2, R] = js.native
+  def partial[T1, T2, T3, R](func: Function3[T1, T2, T3, R], plc1: __, plc2: __, arg3: T3): Function2[T1, T2, R] = js.native
   // arity 4
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
@@ -5284,7 +5284,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: `__`, arg4: T4): Function1[T3, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: __, arg4: T4): Function1[T3, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5293,7 +5293,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, arg3: T3): Function2[T2, T4, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, arg3: T3): Function2[T2, T4, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5302,7 +5302,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, arg3: T3, arg4: T4): Function1[T2, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, arg3: T3, arg4: T4): Function1[T2, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5311,7 +5311,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, plc3: `__`, arg4: T4): Function2[T2, T3, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, plc3: __, arg4: T4): Function2[T2, T3, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5320,7 +5320,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, arg2: T2): Function3[T1, T3, T4, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, arg2: T2): Function3[T1, T3, T4, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5329,7 +5329,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, arg2: T2, arg3: T3): Function2[T1, T4, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, arg2: T2, arg3: T3): Function2[T1, T4, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5338,7 +5338,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, arg2: T2, arg3: T3, arg4: T4): Function1[T1, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, arg2: T2, arg3: T3, arg4: T4): Function1[T1, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5347,7 +5347,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, arg2: T2, plc3: `__`, arg4: T4): Function2[T1, T3, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, arg2: T2, plc3: __, arg4: T4): Function2[T1, T3, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5356,7 +5356,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, plc2: `__`, arg3: T3): Function3[T1, T2, T4, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, plc2: __, arg3: T3): Function3[T1, T2, T4, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5365,7 +5365,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, plc2: `__`, arg3: T3, arg4: T4): Function2[T1, T2, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, plc2: __, arg3: T3, arg4: T4): Function2[T1, T2, R] = js.native
   /**
     * Creates a function that, when called, invokes func with any additional partial arguments
     * prepended to those provided to the new function. This method is similar to _.bind except
@@ -5374,7 +5374,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: `__`, plc2: `__`, plc3: `__`, arg4: T4): Function3[T1, T2, T3, R] = js.native
+  def partial[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], plc1: __, plc2: __, plc3: __, arg4: T4): Function3[T1, T2, T3, R] = js.native
   // catch-all
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
@@ -5434,7 +5434,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, R](func: Function2[T1, T2, R], arg1: T1, plc2: `__`): Function1[T2, R] = js.native
+  def partialRight[T1, T2, R](func: Function2[T1, T2, R], arg1: T1, plc2: __): Function1[T2, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5467,7 +5467,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, arg2: T2, plc3: `__`): Function1[T3, R] = js.native
+  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, arg2: T2, plc3: __): Function1[T3, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5475,7 +5475,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: `__`, arg3: T3): Function1[T2, R] = js.native
+  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: __, arg3: T3): Function1[T2, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5483,7 +5483,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: `__`, plc3: `__`): Function2[T2, T3, R] = js.native
+  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg1: T1, plc2: __, plc3: __): Function2[T2, T3, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5499,7 +5499,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: T2, plc3: `__`): Function2[T1, T3, R] = js.native
+  def partialRight[T1, T2, T3, R](func: Function3[T1, T2, T3, R], arg2: T2, plc3: __): Function2[T1, T3, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5532,7 +5532,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, arg3: T3, plc4: `__`): Function1[T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, arg3: T3, plc4: __): Function1[T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5540,7 +5540,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: `__`, arg4: T4): Function1[T3, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: __, arg4: T4): Function1[T3, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5548,7 +5548,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: `__`, plc4: `__`): Function2[T3, T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, arg2: T2, plc3: __, plc4: __): Function2[T3, T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5556,7 +5556,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, arg3: T3, arg4: T4): Function1[T2, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, arg3: T3, arg4: T4): Function1[T2, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5564,7 +5564,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, arg3: T3, plc4: `__`): Function2[T2, T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, arg3: T3, plc4: __): Function2[T2, T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5572,7 +5572,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, plc3: `__`, arg4: T4): Function2[T2, T3, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, plc3: __, arg4: T4): Function2[T2, T3, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5580,7 +5580,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: `__`, plc3: `__`, plc4: `__`): Function3[T2, T3, T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg1: T1, plc2: __, plc3: __, plc4: __): Function3[T2, T3, T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5596,7 +5596,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, arg3: T3, plc4: `__`): Function2[T1, T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, arg3: T3, plc4: __): Function2[T1, T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5604,7 +5604,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: `__`, arg4: T4): Function2[T1, T3, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: __, arg4: T4): Function2[T1, T3, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5612,7 +5612,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: `__`, plc4: `__`): Function3[T1, T3, T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg2: T2, plc3: __, plc4: __): Function3[T1, T3, T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.
@@ -5628,7 +5628,7 @@ trait LoDashStatic extends js.Object {
     * @param args Arguments to be partially applied.
     * @return The new partially applied function.
     **/
-  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg3: T3, plc4: `__`): Function3[T1, T2, T4, R] = js.native
+  def partialRight[T1, T2, T3, T4, R](func: Function4[T1, T2, T3, T4, R], arg3: T3, plc4: __): Function3[T1, T2, T4, R] = js.native
   /**
     * This method is like _.partial except that partial arguments are appended to those provided
     * to the new function.

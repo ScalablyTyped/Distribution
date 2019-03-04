@@ -24,11 +24,11 @@ trait LodashXorWith extends js.Object {
   ): js.Array[T] = js.native
   def apply[T](
     comparator: lodashLib.lodashMod.underscoreNs.Comparator[T],
-    arrays: lodashLib.lodashMod.underscoreNs.`__`
+    arrays: lodashLib.lodashMod.underscoreNs.__
   ): LodashXorWith1x5[T] = js.native
   def apply[T](
     comparator: lodashLib.lodashMod.underscoreNs.Comparator[T],
-    arrays: lodashLib.lodashMod.underscoreNs.`__`,
+    arrays: lodashLib.lodashMod.underscoreNs.__,
     arrays2: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashXorWith1x5[T] = js.native
   def apply[T](
@@ -36,29 +36,26 @@ trait LodashXorWith extends js.Object {
     arrays: scala.Null,
     arrays2: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.`__`): LodashXorWith1x6[T] = js.native
+  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.__): LodashXorWith1x6[T] = js.native
   def apply[T](
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
+    comparator: lodashLib.lodashMod.underscoreNs.__,
     arrays: js.UndefOr[scala.Nothing],
     arrays2: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashXorWith1x6[T] = js.native
+  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.__, arrays: lodashLib.lodashMod.underscoreNs.List[T]): LodashXorWith1x6[T] = js.native
   def apply[T](
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
-    arrays: lodashLib.lodashMod.underscoreNs.List[T]
-  ): LodashXorWith1x6[T] = js.native
-  def apply[T](
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
+    comparator: lodashLib.lodashMod.underscoreNs.__,
     arrays: lodashLib.lodashMod.underscoreNs.List[T],
     arrays2: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashXorWith1x6[T] = js.native
-  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.`__`, arrays: lodashLib.lodashMod.underscoreNs.`__`): LodashXorWith1x4[T] = js.native
+  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.__, arrays: lodashLib.lodashMod.underscoreNs.__): LodashXorWith1x4[T] = js.native
   def apply[T](
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
-    arrays: lodashLib.lodashMod.underscoreNs.`__`,
+    comparator: lodashLib.lodashMod.underscoreNs.__,
+    arrays: lodashLib.lodashMod.underscoreNs.__,
     arrays2: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashXorWith1x4[T] = js.native
   def apply[T](
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
+    comparator: lodashLib.lodashMod.underscoreNs.__,
     arrays: scala.Null,
     arrays2: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashXorWith1x6[T] = js.native

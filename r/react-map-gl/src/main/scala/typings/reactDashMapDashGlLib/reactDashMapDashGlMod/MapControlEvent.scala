@@ -34,11 +34,8 @@ object MapControlEvent {
     pointerType: java.lang.String = null,
     rightButton: js.UndefOr[scala.Boolean] = js.undefined
   ): MapControlEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("offsetCenter")(offsetCenter)
-    __obj.updateDynamic("srcEvent")(srcEvent)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(center = center, offsetCenter = offsetCenter, srcEvent = srcEvent, target = target)
+    __obj.updateDynamic("type")(`type`)
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (!js.isUndefined(leftButton)) __obj.updateDynamic("leftButton")(leftButton)

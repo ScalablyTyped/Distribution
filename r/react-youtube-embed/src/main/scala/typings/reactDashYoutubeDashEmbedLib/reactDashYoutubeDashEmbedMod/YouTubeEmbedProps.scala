@@ -22,8 +22,7 @@ object YouTubeEmbedProps {
     prependSrc: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): YouTubeEmbedProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (appendSrc != null) __obj.updateDynamic("appendSrc")(appendSrc)
     if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio)
     if (prependSrc != null) __obj.updateDynamic("prependSrc")(prependSrc)

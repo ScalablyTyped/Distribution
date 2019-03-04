@@ -19,9 +19,8 @@ trait InsertPosition extends js.Object {
 object InsertPosition {
   @scala.inline
   def apply(c: java.lang.String, pos: scala.Double): InsertPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(c = c, pos = pos)
+  
     __obj.asInstanceOf[InsertPosition]
   }
 }

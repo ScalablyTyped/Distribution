@@ -24,11 +24,7 @@ object StyleMap {
     global: Props = null,
     imports: js.Array[java.lang.String] = null
   ): StyleMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(aliases = aliases, meta = meta, options = options, props = props)
     if (global != null) __obj.updateDynamic("global")(global)
     if (imports != null) __obj.updateDynamic("imports")(imports)
     __obj.asInstanceOf[StyleMap]

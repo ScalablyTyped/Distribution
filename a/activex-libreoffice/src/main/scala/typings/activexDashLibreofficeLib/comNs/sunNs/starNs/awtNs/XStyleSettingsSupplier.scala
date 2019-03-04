@@ -13,8 +13,8 @@ trait XStyleSettingsSupplier extends js.Object {
 object XStyleSettingsSupplier {
   @scala.inline
   def apply(StyleSettings: XStyleSettings): XStyleSettingsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StyleSettings")(StyleSettings)
+    val __obj = js.Dynamic.literal(StyleSettings = StyleSettings)
+  
     __obj.asInstanceOf[XStyleSettingsSupplier]
   }
 }

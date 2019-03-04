@@ -47,14 +47,8 @@ object Anon_Embeddable {
     rejectionReason: java.lang.String,
     uploadStatus: java.lang.String
   ): Anon_Embeddable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("embeddable")(embeddable)
-    __obj.updateDynamic("failureReason")(failureReason)
-    __obj.updateDynamic("license")(license)
-    __obj.updateDynamic("privacyStatus")(privacyStatus)
-    __obj.updateDynamic("publicStatsViewable")(publicStatsViewable)
-    __obj.updateDynamic("rejectionReason")(rejectionReason)
-    __obj.updateDynamic("uploadStatus")(uploadStatus)
+    val __obj = js.Dynamic.literal(embeddable = embeddable, failureReason = failureReason, license = license, privacyStatus = privacyStatus, publicStatsViewable = publicStatsViewable, rejectionReason = rejectionReason, uploadStatus = uploadStatus)
+  
     __obj.asInstanceOf[Anon_Embeddable]
   }
 }

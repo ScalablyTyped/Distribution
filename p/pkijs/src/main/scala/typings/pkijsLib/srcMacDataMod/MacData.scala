@@ -24,12 +24,7 @@ object MacData {
     toSchema: js.Function0[js.Any],
     iterations: scala.Int | scala.Double = null
   ): MacData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("macSalt")(macSalt)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, mac = mac, macSalt = macSalt, toJSON = toJSON, toSchema = toSchema)
     if (iterations != null) __obj.updateDynamic("iterations")(iterations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MacData]
   }

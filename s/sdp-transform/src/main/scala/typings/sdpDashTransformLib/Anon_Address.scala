@@ -22,12 +22,8 @@ object Anon_Address {
     sessionVersion: scala.Double,
     username: java.lang.String
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("netType")(netType)
-    __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    __obj.updateDynamic("sessionVersion")(sessionVersion)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(address = address, netType = netType, sessionId = sessionId.asInstanceOf[js.Any], sessionVersion = sessionVersion, username = username)
+  
     __obj.asInstanceOf[Anon_Address]
   }
 }

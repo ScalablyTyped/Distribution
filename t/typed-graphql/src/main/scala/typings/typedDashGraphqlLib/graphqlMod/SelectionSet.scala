@@ -14,9 +14,7 @@ trait SelectionSet extends Node {
 object SelectionSet {
   @scala.inline
   def apply(kind: java.lang.String, selections: js.Array[Selection], loc: Location = null): SelectionSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("selections")(selections)
+    val __obj = js.Dynamic.literal(kind = kind, selections = selections)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[SelectionSet]
   }

@@ -19,8 +19,7 @@ trait FluxibleConfiguration extends js.Object {
 object FluxibleConfiguration {
   @scala.inline
   def apply(component: js.Any, componentActionHandler: js.Function0[scala.Unit] = null): FluxibleConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
     if (componentActionHandler != null) __obj.updateDynamic("componentActionHandler")(componentActionHandler)
     __obj.asInstanceOf[FluxibleConfiguration]
   }

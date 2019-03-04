@@ -40,12 +40,8 @@ object TextTrackCue {
     startTime: scala.Double,
     text: java.lang.String
   ): TextTrackCue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pauseOnExit")(pauseOnExit)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(endTime = endTime, id = id, pauseOnExit = pauseOnExit, startTime = startTime, text = text)
+  
     __obj.asInstanceOf[TextTrackCue]
   }
 }

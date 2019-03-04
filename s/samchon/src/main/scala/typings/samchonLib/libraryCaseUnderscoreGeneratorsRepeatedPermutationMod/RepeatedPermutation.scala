@@ -23,15 +23,15 @@ class RepeatedPermutation protected ()
   /**
     * @hidden
     */
-  var `n_`: js.Any = js.native
+  var n_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `r_`: js.Any = js.native
+  var r_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * Get index'th case.
     *

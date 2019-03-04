@@ -20,9 +20,7 @@ object OAuthCredential {
     idToken: java.lang.String = null,
     secret: java.lang.String = null
   ): OAuthCredential = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("providerId")(providerId)
-    __obj.updateDynamic("signInMethod")(signInMethod)
+    val __obj = js.Dynamic.literal(providerId = providerId, signInMethod = signInMethod)
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (idToken != null) __obj.updateDynamic("idToken")(idToken)
     if (secret != null) __obj.updateDynamic("secret")(secret)

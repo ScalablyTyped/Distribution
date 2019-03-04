@@ -89,8 +89,7 @@ object Anon_AdvertiserIdAltFields {
     tagString: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdvertiserIdAltFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

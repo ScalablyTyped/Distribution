@@ -47,12 +47,7 @@ object HeaderRendererContext {
       scala.Unit
     ] = null
   ): HeaderRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headerContext")(headerContext)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, componentElement = componentElement, data = data, headerContext = headerContext, parentElement = parentElement)
     if (columnHeaderDefaultRenderer != null) __obj.updateDynamic("columnHeaderDefaultRenderer")(columnHeaderDefaultRenderer)
     if (columnHeaderSortableIconRenderer != null) __obj.updateDynamic("columnHeaderSortableIconRenderer")(columnHeaderSortableIconRenderer)
     __obj.asInstanceOf[HeaderRendererContext[K, D]]

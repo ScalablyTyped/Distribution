@@ -86,11 +86,7 @@ object SelectInputProps {
     tabIndex: scala.Int | scala.Double = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): SelectInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoWidth")(autoWidth)
-    __obj.updateDynamic("multiple")(multiple)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoWidth = autoWidth, multiple = multiple, native = native, value = value.asInstanceOf[js.Any])
     if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])
     if (MenuProps != null) __obj.updateDynamic("MenuProps")(MenuProps)
     if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps)

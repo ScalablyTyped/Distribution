@@ -35,8 +35,7 @@ object DecodeStringDict {
     length: scala.Int | scala.Double = null,
     position: scala.Int | scala.Double = null
   ): DecodeStringDict = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (charset != null) __obj.updateDynamic("charset")(charset)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

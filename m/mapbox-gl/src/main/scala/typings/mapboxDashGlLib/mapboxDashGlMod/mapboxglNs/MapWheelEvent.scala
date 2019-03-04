@@ -22,11 +22,8 @@ object MapWheelEvent {
     target: Map,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.wheel
   ): MapWheelEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, originalEvent = originalEvent, preventDefault = preventDefault, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MapWheelEvent]
   }
 }

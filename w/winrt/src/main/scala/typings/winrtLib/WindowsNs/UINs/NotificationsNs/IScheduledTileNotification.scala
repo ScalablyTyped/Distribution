@@ -22,12 +22,8 @@ object IScheduledTileNotification {
     id: java.lang.String,
     tag: java.lang.String
   ): IScheduledTileNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("deliveryTime")(deliveryTime)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(content = content, deliveryTime = deliveryTime, expirationTime = expirationTime, id = id, tag = tag)
+  
     __obj.asInstanceOf[IScheduledTileNotification]
   }
 }

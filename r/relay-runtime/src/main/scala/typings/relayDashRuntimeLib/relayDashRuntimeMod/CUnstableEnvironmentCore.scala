@@ -137,17 +137,8 @@ object CUnstableEnvironmentCore {
     ],
     getVariablesFromObject: js.Function3[Variables, CFragmentMap[TFragment], Props, Variables]
   ): CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("areEqualSelectors")(areEqualSelectors)
-    __obj.updateDynamic("createFragmentSpecResolver")(createFragmentSpecResolver)
-    __obj.updateDynamic("createOperationSelector")(createOperationSelector)
-    __obj.updateDynamic("getDataIDsFromObject")(getDataIDsFromObject)
-    __obj.updateDynamic("getFragment")(getFragment)
-    __obj.updateDynamic("getOperation")(getOperation)
-    __obj.updateDynamic("getSelector")(getSelector)
-    __obj.updateDynamic("getSelectorList")(getSelectorList)
-    __obj.updateDynamic("getSelectorsFromObject")(getSelectorsFromObject)
-    __obj.updateDynamic("getVariablesFromObject")(getVariablesFromObject)
+    val __obj = js.Dynamic.literal(areEqualSelectors = areEqualSelectors, createFragmentSpecResolver = createFragmentSpecResolver, createOperationSelector = createOperationSelector, getDataIDsFromObject = getDataIDsFromObject, getFragment = getFragment, getOperation = getOperation, getSelector = getSelector, getSelectorList = getSelectorList, getSelectorsFromObject = getSelectorsFromObject, getVariablesFromObject = getVariablesFromObject)
+  
     __obj.asInstanceOf[CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]]
   }
 }

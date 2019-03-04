@@ -34,18 +34,8 @@ object SpeechRecognitionEventMap {
     speechstart: Event,
     start: Event
   ): SpeechRecognitionEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioend")(audioend)
-    __obj.updateDynamic("audiostart")(audiostart)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("nomatch")(nomatch)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("soundend")(soundend)
-    __obj.updateDynamic("soundstart")(soundstart)
-    __obj.updateDynamic("speechend")(speechend)
-    __obj.updateDynamic("speechstart")(speechstart)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(audioend = audioend, audiostart = audiostart, end = end, error = error, nomatch = nomatch, result = result, soundend = soundend, soundstart = soundstart, speechend = speechend, speechstart = speechstart, start = start)
+  
     __obj.asInstanceOf[SpeechRecognitionEventMap]
   }
 }

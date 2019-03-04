@@ -70,9 +70,7 @@ object ITreeNode {
     nodeData: T = null,
     secondaryLabel: java.lang.String | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null
   ): ITreeNode[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

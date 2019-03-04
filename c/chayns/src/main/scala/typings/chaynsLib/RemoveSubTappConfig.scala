@@ -15,10 +15,8 @@ trait RemoveSubTappConfig extends js.Object {
 object RemoveSubTappConfig {
   @scala.inline
   def apply(close: scala.Boolean, remove: scala.Boolean, tappID: scala.Double): RemoveSubTappConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("tappID")(tappID)
+    val __obj = js.Dynamic.literal(close = close, remove = remove, tappID = tappID)
+  
     __obj.asInstanceOf[RemoveSubTappConfig]
   }
 }

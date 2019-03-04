@@ -24,8 +24,7 @@ object Cors {
     supportsCredentials: js.UndefOr[scala.Boolean] = js.undefined,
     validMethods: js.Array[java.lang.String] = null
   ): Cors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validOrigins")(validOrigins)
+    val __obj = js.Dynamic.literal(validOrigins = validOrigins)
     if (cacheMaxAge != null) __obj.updateDynamic("cacheMaxAge")(cacheMaxAge.asInstanceOf[js.Any])
     if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)

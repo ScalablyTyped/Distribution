@@ -16,7 +16,8 @@ object Anon_ResourceType {
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     resource: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ResourceType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ResourceType]
   }

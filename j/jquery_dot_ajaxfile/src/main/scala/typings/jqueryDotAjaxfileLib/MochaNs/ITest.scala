@@ -24,15 +24,8 @@ object ITest {
     timedOut: scala.Boolean,
     title: java.lang.String
   ): ITest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("fn")(fn)
-    __obj.updateDynamic("fullTitle")(fullTitle)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("sync")(sync)
-    __obj.updateDynamic("timedOut")(timedOut)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(async = async, fn = fn, fullTitle = fullTitle, parent = parent, pending = pending, sync = sync, timedOut = timedOut, title = title)
+  
     __obj.asInstanceOf[ITest]
   }
 }

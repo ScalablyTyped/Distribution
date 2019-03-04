@@ -32,11 +32,7 @@ object Device {
     usage: scala.Int | scala.Double = null,
     usagePage: scala.Int | scala.Double = null
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interface")(interface)
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(interface = interface, productId = productId, release = release, vendorId = vendorId)
     if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
     if (path != null) __obj.updateDynamic("path")(path)
     if (product != null) __obj.updateDynamic("product")(product)

@@ -15,11 +15,8 @@ trait HslaColor extends js.Object {
 object HslaColor {
   @scala.inline
   def apply(alpha: scala.Double, hue: scala.Double, lightness: scala.Double, saturation: scala.Double): HslaColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("hue")(hue)
-    __obj.updateDynamic("lightness")(lightness)
-    __obj.updateDynamic("saturation")(saturation)
+    val __obj = js.Dynamic.literal(alpha = alpha, hue = hue, lightness = lightness, saturation = saturation)
+  
     __obj.asInstanceOf[HslaColor]
   }
 }

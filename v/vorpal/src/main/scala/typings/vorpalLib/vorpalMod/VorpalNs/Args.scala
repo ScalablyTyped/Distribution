@@ -16,8 +16,7 @@ object Args {
     options: org.scalablytyped.runtime.StringDictionary[js.Any],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Args]
   }

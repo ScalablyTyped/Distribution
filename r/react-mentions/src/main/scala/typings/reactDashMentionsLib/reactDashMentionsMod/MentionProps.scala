@@ -48,9 +48,7 @@ object MentionProps {
     style: js.Any = null,
     `type`: java.lang.String = null
   ): MentionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(appendSpaceOnAdd)) __obj.updateDynamic("appendSpaceOnAdd")(appendSpaceOnAdd)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading)

@@ -25,11 +25,8 @@ object DocumentViewResponse {
     total_rows: scala.Double,
     update_seq: js.Any
   ): DocumentViewResponse[V, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("total_rows")(total_rows)
-    __obj.updateDynamic("update_seq")(update_seq)
+    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows, update_seq = update_seq)
+  
     __obj.asInstanceOf[DocumentViewResponse[V, D]]
   }
 }

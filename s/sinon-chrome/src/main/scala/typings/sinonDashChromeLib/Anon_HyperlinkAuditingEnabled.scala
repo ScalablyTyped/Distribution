@@ -18,10 +18,8 @@ object Anon_HyperlinkAuditingEnabled {
     referrersEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting,
     thirdPartyCookiesAllowed: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting
   ): Anon_HyperlinkAuditingEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hyperlinkAuditingEnabled")(hyperlinkAuditingEnabled)
-    __obj.updateDynamic("referrersEnabled")(referrersEnabled)
-    __obj.updateDynamic("thirdPartyCookiesAllowed")(thirdPartyCookiesAllowed)
+    val __obj = js.Dynamic.literal(hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
+  
     __obj.asInstanceOf[Anon_HyperlinkAuditingEnabled]
   }
 }

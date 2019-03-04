@@ -18,9 +18,7 @@ object Anon_Align {
     rowIndex: scala.Double,
     align: reactDashWindowLib.reactDashWindowMod.Align = null
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("rowIndex")(rowIndex)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, rowIndex = rowIndex)
     if (align != null) __obj.updateDynamic("align")(align)
     __obj.asInstanceOf[Anon_Align]
   }

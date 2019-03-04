@@ -18,8 +18,7 @@ object Anon_CommentsLocTypeAnnotationArray {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsLocTypeAnnotationArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CommentsLocTypeAnnotationArray]

@@ -28,15 +28,8 @@ object Anon_Alt {
     shift: scala.Boolean,
     space: scala.Boolean
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("capsLock")(capsLock)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("option")(option)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("space")(space)
+    val __obj = js.Dynamic.literal(alt = alt, capsLock = capsLock, command = command, control = control, meta = meta, option = option, shift = shift, space = space)
+  
     __obj.asInstanceOf[Anon_Alt]
   }
 }

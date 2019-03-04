@@ -12,8 +12,8 @@ trait IBitmapTypedValueFactory extends js.Object {
 object IBitmapTypedValueFactory {
   @scala.inline
   def apply(create: js.Function2[js.Any, winrtLib.WindowsNs.FoundationNs.PropertyType, BitmapTypedValue]): IBitmapTypedValueFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[IBitmapTypedValueFactory]
   }
 }

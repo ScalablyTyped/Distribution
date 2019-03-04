@@ -24,11 +24,8 @@ object Anon_NewExtent {
     oldExtent: atomLib.atomMod.Point,
     start: atomLib.atomMod.Point
   ): Anon_NewExtent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newExtent")(newExtent)
-    __obj.updateDynamic("newText")(newText)
-    __obj.updateDynamic("oldExtent")(oldExtent)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(newExtent = newExtent, newText = newText, oldExtent = oldExtent, start = start)
+  
     __obj.asInstanceOf[Anon_NewExtent]
   }
 }

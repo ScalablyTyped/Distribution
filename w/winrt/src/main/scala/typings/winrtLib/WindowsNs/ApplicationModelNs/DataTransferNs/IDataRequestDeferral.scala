@@ -12,8 +12,8 @@ trait IDataRequestDeferral extends js.Object {
 object IDataRequestDeferral {
   @scala.inline
   def apply(complete: js.Function0[scala.Unit]): IDataRequestDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[IDataRequestDeferral]
   }
 }

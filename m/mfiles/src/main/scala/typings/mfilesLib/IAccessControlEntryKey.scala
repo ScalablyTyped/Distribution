@@ -30,16 +30,8 @@ object IAccessControlEntryKey {
     SetUserOrGroupID: js.Function2[scala.Double, scala.Boolean, scala.Unit],
     UserOrGroupID: scala.Double
   ): IAccessControlEntryKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("GetResolvedPseudoUserOrGroupIDs")(GetResolvedPseudoUserOrGroupIDs)
-    __obj.updateDynamic("HasConcreteUserOrGroupID")(HasConcreteUserOrGroupID)
-    __obj.updateDynamic("IsGroup")(IsGroup)
-    __obj.updateDynamic("IsPseudoUser")(IsPseudoUser)
-    __obj.updateDynamic("PseudoUserID")(PseudoUserID)
-    __obj.updateDynamic("ResetResolvedPseudoUserOrGroupIDs")(ResetResolvedPseudoUserOrGroupIDs)
-    __obj.updateDynamic("SetUserOrGroupID")(SetUserOrGroupID)
-    __obj.updateDynamic("UserOrGroupID")(UserOrGroupID)
+    val __obj = js.Dynamic.literal(Clone = Clone, GetResolvedPseudoUserOrGroupIDs = GetResolvedPseudoUserOrGroupIDs, HasConcreteUserOrGroupID = HasConcreteUserOrGroupID, IsGroup = IsGroup, IsPseudoUser = IsPseudoUser, PseudoUserID = PseudoUserID, ResetResolvedPseudoUserOrGroupIDs = ResetResolvedPseudoUserOrGroupIDs, SetUserOrGroupID = SetUserOrGroupID, UserOrGroupID = UserOrGroupID)
+  
     __obj.asInstanceOf[IAccessControlEntryKey]
   }
 }

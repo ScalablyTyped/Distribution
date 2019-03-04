@@ -16,8 +16,7 @@ object DocumentOnTypeFormattingRegistrationOptions {
     documentSelector: DocumentSelector = null,
     moreTriggerCharacter: js.Array[java.lang.String] = null
   ): DocumentOnTypeFormattingRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstTriggerCharacter")(firstTriggerCharacter)
+    val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter)
     if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector)
     if (moreTriggerCharacter != null) __obj.updateDynamic("moreTriggerCharacter")(moreTriggerCharacter)
     __obj.asInstanceOf[DocumentOnTypeFormattingRegistrationOptions]

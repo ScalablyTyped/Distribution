@@ -21,12 +21,8 @@ object XPaintListener {
     release: js.Function0[scala.Unit],
     windowPaint: js.Function1[PaintEvent, scala.Unit]
   ): XPaintListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("windowPaint")(windowPaint)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, windowPaint = windowPaint)
+  
     __obj.asInstanceOf[XPaintListener]
   }
 }

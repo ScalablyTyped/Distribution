@@ -22,12 +22,8 @@ object STATUS_TYPES {
     success: reapopLib.SUCCESS_STATUS,
     warning: reapopLib.WARNING_STATUS
   ): STATUS_TYPES = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(default = default, error = error, info = info, success = success, warning = warning)
+  
     __obj.asInstanceOf[STATUS_TYPES]
   }
 }

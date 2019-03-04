@@ -42,9 +42,7 @@ object ISubscriptionItemCreationOptions {
     proration_date: scala.Int | scala.Double = null,
     quantity: scala.Int | scala.Double = null
   ): ISubscriptionItemCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(plan = plan, subscription = subscription)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

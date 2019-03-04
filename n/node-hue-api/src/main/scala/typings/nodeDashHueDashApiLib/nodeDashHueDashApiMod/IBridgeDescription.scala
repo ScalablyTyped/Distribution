@@ -24,12 +24,7 @@ object IBridgeDescription {
     version: nodeDashHueDashApiLib.Anon_Major,
     icons: js.Array[IBridgeIcon] = null
   ): IBridgeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(manufacturer = manufacturer, model = model, name = name, url = url, version = version)
     if (icons != null) __obj.updateDynamic("icons")(icons)
     __obj.asInstanceOf[IBridgeDescription]
   }

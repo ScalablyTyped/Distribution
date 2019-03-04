@@ -47,9 +47,7 @@ object CrashReporterStartOptions {
     productName: java.lang.String = null,
     uploadToServer: js.UndefOr[scala.Boolean] = js.undefined
   ): CrashReporterStartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("companyName")(companyName)
-    __obj.updateDynamic("submitURL")(submitURL)
+    val __obj = js.Dynamic.literal(companyName = companyName, submitURL = submitURL)
     if (crashesDirectory != null) __obj.updateDynamic("crashesDirectory")(crashesDirectory)
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (!js.isUndefined(ignoreSystemCrashHandler)) __obj.updateDynamic("ignoreSystemCrashHandler")(ignoreSystemCrashHandler)

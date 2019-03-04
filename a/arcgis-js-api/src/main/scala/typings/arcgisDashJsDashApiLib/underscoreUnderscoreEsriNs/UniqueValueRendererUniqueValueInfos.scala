@@ -37,12 +37,7 @@ object UniqueValueRendererUniqueValueInfos {
     value: java.lang.String | scala.Double,
     label: java.lang.String = null
   ): UniqueValueRendererUniqueValueInfos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol, value = value.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[UniqueValueRendererUniqueValueInfos]
   }

@@ -20,11 +20,8 @@ object Anon_Measurements {
     properties: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
     ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   ): Anon_Measurements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("measurements")(measurements)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(measurements = measurements, name = name, properties = properties, ver = ver)
+  
     __obj.asInstanceOf[Anon_Measurements]
   }
 }

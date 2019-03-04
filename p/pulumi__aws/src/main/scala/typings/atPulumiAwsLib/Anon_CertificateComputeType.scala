@@ -26,9 +26,8 @@ object Anon_CertificateComputeType {
     environmentVariables: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameTypeValue]]] = null,
     privilegedMode: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_CertificateComputeType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("computeType")(computeType.asInstanceOf[js.Any])
-    __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computeType = computeType.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (privilegedMode != null) __obj.updateDynamic("privilegedMode")(privilegedMode.asInstanceOf[js.Any])

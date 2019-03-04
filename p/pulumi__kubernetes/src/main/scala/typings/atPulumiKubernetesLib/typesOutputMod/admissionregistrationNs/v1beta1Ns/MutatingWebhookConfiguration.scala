@@ -43,11 +43,8 @@ object MutatingWebhookConfiguration {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     webhooks: js.Array[Webhook]
   ): MutatingWebhookConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("webhooks")(webhooks)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, webhooks = webhooks)
+  
     __obj.asInstanceOf[MutatingWebhookConfiguration]
   }
 }

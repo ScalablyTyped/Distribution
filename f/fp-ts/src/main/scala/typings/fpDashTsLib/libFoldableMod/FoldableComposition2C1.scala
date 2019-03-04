@@ -23,8 +23,8 @@ object FoldableComposition2C1 {
       js.Any
     ]
   ): FoldableComposition2C1[F, G, LF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reduce")(reduce)
+    val __obj = js.Dynamic.literal(reduce = reduce)
+  
     __obj.asInstanceOf[FoldableComposition2C1[F, G, LF]]
   }
 }

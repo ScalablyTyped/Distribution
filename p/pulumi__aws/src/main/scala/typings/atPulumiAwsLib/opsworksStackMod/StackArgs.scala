@@ -139,10 +139,7 @@ object StackArgs {
     useOpsworksSecurityGroups: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): StackArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultInstanceProfileArn")(defaultInstanceProfileArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultInstanceProfileArn = defaultInstanceProfileArn.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any])
     if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
     if (berkshelfVersion != null) __obj.updateDynamic("berkshelfVersion")(berkshelfVersion.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

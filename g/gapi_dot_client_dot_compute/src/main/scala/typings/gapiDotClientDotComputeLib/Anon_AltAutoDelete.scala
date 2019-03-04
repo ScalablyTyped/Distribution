@@ -63,12 +63,7 @@ object Anon_AltAutoDelete {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAutoDelete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoDelete")(autoDelete)
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(autoDelete = autoDelete, deviceName = deviceName, instance = instance, project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

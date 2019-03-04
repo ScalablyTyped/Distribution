@@ -36,10 +36,8 @@ object Notification {
     vibrate: js.Function1[scala.Double, scala.Unit],
     vibrateWithPattern: js.Function2[js.Array[scala.Double], scala.Double, scala.Unit]
   ): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelVibration")(cancelVibration)
-    __obj.updateDynamic("vibrate")(vibrate)
-    __obj.updateDynamic("vibrateWithPattern")(vibrateWithPattern)
+    val __obj = js.Dynamic.literal(cancelVibration = cancelVibration, vibrate = vibrate, vibrateWithPattern = vibrateWithPattern)
+  
     __obj.asInstanceOf[Notification]
   }
 }

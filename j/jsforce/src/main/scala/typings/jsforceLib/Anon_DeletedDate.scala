@@ -13,9 +13,8 @@ trait Anon_DeletedDate extends js.Object {
 object Anon_DeletedDate {
   @scala.inline
   def apply(deletedDate: java.lang.String, id: java.lang.String): Anon_DeletedDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deletedDate")(deletedDate)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(deletedDate = deletedDate, id = id)
+  
     __obj.asInstanceOf[Anon_DeletedDate]
   }
 }

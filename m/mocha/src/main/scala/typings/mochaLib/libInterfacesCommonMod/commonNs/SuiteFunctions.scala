@@ -27,10 +27,8 @@ object SuiteFunctions {
     only: js.Function1[CreateOptions, mochaLib.MochaNs.Suite],
     skip: js.Function1[CreateOptions, mochaLib.MochaNs.Suite]
   ): SuiteFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("only")(only)
-    __obj.updateDynamic("skip")(skip)
+    val __obj = js.Dynamic.literal(create = create, only = only, skip = skip)
+  
     __obj.asInstanceOf[SuiteFunctions]
   }
 }

@@ -20,11 +20,8 @@ object IManipulationCompletedEventArgs {
     position: winrtLib.WindowsNs.FoundationNs.Point,
     velocities: ManipulationVelocities
   ): IManipulationCompletedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cumulative")(cumulative)
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("velocities")(velocities)
+    val __obj = js.Dynamic.literal(cumulative = cumulative, pointerDeviceType = pointerDeviceType, position = position, velocities = velocities)
+  
     __obj.asInstanceOf[IManipulationCompletedEventArgs]
   }
 }

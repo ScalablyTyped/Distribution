@@ -42,22 +42,8 @@ object GameDto {
     subType: java.lang.String,
     teamId: scala.Double
   ): GameDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("championId")(championId)
-    __obj.updateDynamic("createDate")(createDate)
-    __obj.updateDynamic("fellowPlayers")(fellowPlayers)
-    __obj.updateDynamic("gameId")(gameId)
-    __obj.updateDynamic("gameMode")(gameMode)
-    __obj.updateDynamic("gameType")(gameType)
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("ipEarned")(ipEarned)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("mapId")(mapId)
-    __obj.updateDynamic("spell1")(spell1)
-    __obj.updateDynamic("spell2")(spell2)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("subType")(subType)
-    __obj.updateDynamic("teamId")(teamId)
+    val __obj = js.Dynamic.literal(championId = championId, createDate = createDate, fellowPlayers = fellowPlayers, gameId = gameId, gameMode = gameMode, gameType = gameType, invalid = invalid, ipEarned = ipEarned, level = level, mapId = mapId, spell1 = spell1, spell2 = spell2, stats = stats, subType = subType, teamId = teamId)
+  
     __obj.asInstanceOf[GameDto]
   }
 }

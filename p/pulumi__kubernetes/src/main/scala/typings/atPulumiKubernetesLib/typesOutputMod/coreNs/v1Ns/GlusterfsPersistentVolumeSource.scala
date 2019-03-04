@@ -42,11 +42,8 @@ object GlusterfsPersistentVolumeSource {
     path: java.lang.String,
     readOnly: scala.Boolean
   ): GlusterfsPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("endpointsNamespace")(endpointsNamespace)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(endpoints = endpoints, endpointsNamespace = endpointsNamespace, path = path, readOnly = readOnly)
+  
     __obj.asInstanceOf[GlusterfsPersistentVolumeSource]
   }
 }

@@ -31,15 +31,8 @@ object GetServerCertificateResult {
     path: java.lang.String,
     uploadDate: java.lang.String
   ): GetServerCertificateResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("certificateBody")(certificateBody)
-    __obj.updateDynamic("certificateChain")(certificateChain)
-    __obj.updateDynamic("expirationDate")(expirationDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("uploadDate")(uploadDate)
+    val __obj = js.Dynamic.literal(arn = arn, certificateBody = certificateBody, certificateChain = certificateChain, expirationDate = expirationDate, id = id, name = name, path = path, uploadDate = uploadDate)
+  
     __obj.asInstanceOf[GetServerCertificateResult]
   }
 }

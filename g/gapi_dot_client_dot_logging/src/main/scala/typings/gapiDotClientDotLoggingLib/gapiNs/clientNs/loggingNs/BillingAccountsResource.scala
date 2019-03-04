@@ -14,10 +14,8 @@ trait BillingAccountsResource extends js.Object {
 object BillingAccountsResource {
   @scala.inline
   def apply(exclusions: ExclusionsResource, logs: LogsResource, sinks: SinksResource): BillingAccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exclusions")(exclusions)
-    __obj.updateDynamic("logs")(logs)
-    __obj.updateDynamic("sinks")(sinks)
+    val __obj = js.Dynamic.literal(exclusions = exclusions, logs = logs, sinks = sinks)
+  
     __obj.asInstanceOf[BillingAccountsResource]
   }
 }

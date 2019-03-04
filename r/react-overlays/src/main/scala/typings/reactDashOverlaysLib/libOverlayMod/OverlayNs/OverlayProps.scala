@@ -93,8 +93,7 @@ object OverlayProps {
     target: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
     transition: reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)

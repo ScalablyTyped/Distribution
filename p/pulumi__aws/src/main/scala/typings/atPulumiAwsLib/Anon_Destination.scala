@@ -26,9 +26,7 @@ object Anon_Destination {
     priority: scala.Int | scala.Double = null,
     sourceSelectionCriteria: Anon_SseKmsEncryptedObjects = null
   ): Anon_Destination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(destination = destination, status = status)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (id != null) __obj.updateDynamic("id")(id)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

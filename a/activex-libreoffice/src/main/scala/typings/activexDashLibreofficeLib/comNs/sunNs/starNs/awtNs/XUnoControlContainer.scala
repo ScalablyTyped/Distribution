@@ -32,15 +32,8 @@ object XUnoControlContainer {
     removeTabController: js.Function1[XTabController, scala.Unit],
     setTabControllers: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XTabController], scala.Unit]
   ): XUnoControlContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TabControllers")(TabControllers)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addTabController")(addTabController)
-    __obj.updateDynamic("getTabControllers")(getTabControllers)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTabController")(removeTabController)
-    __obj.updateDynamic("setTabControllers")(setTabControllers)
+    val __obj = js.Dynamic.literal(TabControllers = TabControllers, acquire = acquire, addTabController = addTabController, getTabControllers = getTabControllers, queryInterface = queryInterface, release = release, removeTabController = removeTabController, setTabControllers = setTabControllers)
+  
     __obj.asInstanceOf[XUnoControlContainer]
   }
 }

@@ -12,8 +12,8 @@ trait BookmarkReorderInfo extends js.Object {
 object BookmarkReorderInfo {
   @scala.inline
   def apply(childIds: js.Array[java.lang.String]): BookmarkReorderInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childIds")(childIds)
+    val __obj = js.Dynamic.literal(childIds = childIds)
+  
     __obj.asInstanceOf[BookmarkReorderInfo]
   }
 }

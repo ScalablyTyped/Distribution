@@ -22,8 +22,7 @@ object Anon_CommentsIdLocSuperClass {
     superClass: astDashTypesLib.genKindsMod.ExpressionKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): Anon_CommentsIdLocSuperClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (superClass != null) __obj.updateDynamic("superClass")(superClass)

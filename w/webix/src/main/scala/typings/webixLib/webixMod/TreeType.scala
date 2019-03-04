@@ -20,11 +20,8 @@ object TreeType {
     icon: js.Function2[js.Any, js.Any, java.lang.String],
     space: js.Function2[js.Any, js.Any, java.lang.String]
   ): TreeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("folder")(folder)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("space")(space)
+    val __obj = js.Dynamic.literal(checkbox = checkbox, folder = folder, icon = icon, space = space)
+  
     __obj.asInstanceOf[TreeType]
   }
 }

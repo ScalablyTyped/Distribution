@@ -49,15 +49,8 @@ object IHashTable {
       scala.Boolean
     ]
   ): IHashTable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addOrUpdate")(addOrUpdate)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("every")(every)
-    __obj.updateDynamic("getAllKeys")(getAllKeys)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("some")(some)
+    val __obj = js.Dynamic.literal(add = add, addOrUpdate = addOrUpdate, count = count, every = every, getAllKeys = getAllKeys, lookup = lookup, map = map, some = some)
+  
     __obj.asInstanceOf[IHashTable[T]]
   }
 }

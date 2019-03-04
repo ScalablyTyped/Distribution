@@ -22,8 +22,7 @@ object Anon_IndexOptype {
     routing: java.lang.String = null,
     version_type: java.lang.String = null
   ): Anon_IndexOptype = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(index = index)
     if (op_type != null) __obj.updateDynamic("op_type")(op_type)
     if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline)
     if (routing != null) __obj.updateDynamic("routing")(routing)

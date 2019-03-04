@@ -28,13 +28,7 @@ object PaymentsLiteDialogResponse {
     error_code: scala.Int | scala.Double = null,
     error_message: java.lang.String = null
   ): PaymentsLiteDialogResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app_id")(app_id)
-    __obj.updateDynamic("payment_id")(payment_id)
-    __obj.updateDynamic("product_id")(product_id)
-    __obj.updateDynamic("purchase_time")(purchase_time)
-    __obj.updateDynamic("purchase_token")(purchase_token)
-    __obj.updateDynamic("signed_request")(signed_request)
+    val __obj = js.Dynamic.literal(app_id = app_id, payment_id = payment_id, product_id = product_id, purchase_time = purchase_time, purchase_token = purchase_token, signed_request = signed_request)
     if (developer_payload != null) __obj.updateDynamic("developer_payload")(developer_payload)
     if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
     if (error_message != null) __obj.updateDynamic("error_message")(error_message)

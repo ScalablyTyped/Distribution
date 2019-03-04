@@ -55,27 +55,8 @@ object MediaCommand {
     volume: java.lang.String,
     zoom: java.lang.String
   ): MediaCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioTracks")(audioTracks)
-    __obj.updateDynamic("cast")(cast)
-    __obj.updateDynamic("chapterSkipBack")(chapterSkipBack)
-    __obj.updateDynamic("chapterSkipForward")(chapterSkipForward)
-    __obj.updateDynamic("closedCaptions")(closedCaptions)
-    __obj.updateDynamic("fastForward")(fastForward)
-    __obj.updateDynamic("goToLive")(goToLive)
-    __obj.updateDynamic("nextTrack")(nextTrack)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("playFromBeginning")(playFromBeginning)
-    __obj.updateDynamic("playbackRate")(playbackRate)
-    __obj.updateDynamic("previousTrack")(previousTrack)
-    __obj.updateDynamic("rewind")(rewind)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("timeSkipBack")(timeSkipBack)
-    __obj.updateDynamic("timeSkipForward")(timeSkipForward)
-    __obj.updateDynamic("volume")(volume)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(audioTracks = audioTracks, cast = cast, chapterSkipBack = chapterSkipBack, chapterSkipForward = chapterSkipForward, closedCaptions = closedCaptions, fastForward = fastForward, goToLive = goToLive, nextTrack = nextTrack, pause = pause, play = play, playFromBeginning = playFromBeginning, playbackRate = playbackRate, previousTrack = previousTrack, rewind = rewind, seek = seek, stop = stop, timeSkipBack = timeSkipBack, timeSkipForward = timeSkipForward, volume = volume, zoom = zoom)
+  
     __obj.asInstanceOf[MediaCommand]
   }
 }

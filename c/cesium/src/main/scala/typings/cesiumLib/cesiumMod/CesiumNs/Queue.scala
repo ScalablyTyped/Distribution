@@ -26,14 +26,8 @@ object Queue {
     peek: js.Function0[js.Any],
     sort: js.Function1[cesiumLib.cesiumMod.CesiumNs.QueueNs.Comparator, scala.Unit]
   ): Queue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("dequeue")(dequeue)
-    __obj.updateDynamic("enqueue")(enqueue)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("peek")(peek)
-    __obj.updateDynamic("sort")(sort)
+    val __obj = js.Dynamic.literal(clear = clear, contains = contains, dequeue = dequeue, enqueue = enqueue, length = length, peek = peek, sort = sort)
+  
     __obj.asInstanceOf[Queue]
   }
 }

@@ -37,21 +37,8 @@ object IDataPackagePropertySet {
     thumbnail: winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference,
     title: java.lang.String
   ): IDataPackagePropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationListingUri")(applicationListingUri)
-    __obj.updateDynamic("applicationName")(applicationName)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("fileTypes")(fileTypes)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("getView")(getView)
-    __obj.updateDynamic("hasKey")(hasKey)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("thumbnail")(thumbnail)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri, applicationName = applicationName, clear = clear, description = description, fileTypes = fileTypes, first = first, getView = getView, hasKey = hasKey, insert = insert, lookup = lookup, remove = remove, size = size, thumbnail = thumbnail, title = title)
+  
     __obj.asInstanceOf[IDataPackagePropertySet]
   }
 }

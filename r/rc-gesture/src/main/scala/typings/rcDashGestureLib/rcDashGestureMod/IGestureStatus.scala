@@ -48,13 +48,7 @@ object IGestureStatus {
     startMutliFingerStatus: js.Array[MultiFingerStatus] = null,
     swipe: js.UndefOr[scala.Boolean] = js.undefined
   ): IGestureStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preTouches")(preTouches)
-    __obj.updateDynamic("srcEvent")(srcEvent)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("startTouches")(startTouches)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("touches")(touches)
+    val __obj = js.Dynamic.literal(preTouches = preTouches, srcEvent = srcEvent, startTime = startTime, startTouches = startTouches, time = time, touches = touches)
     if (!js.isUndefined(availablePan)) __obj.updateDynamic("availablePan")(availablePan)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (moveStatus != null) __obj.updateDynamic("moveStatus")(moveStatus)

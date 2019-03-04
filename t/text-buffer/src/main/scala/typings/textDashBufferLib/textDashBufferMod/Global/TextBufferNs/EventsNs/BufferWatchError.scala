@@ -18,9 +18,8 @@ trait BufferWatchError extends js.Object {
 object BufferWatchError {
   @scala.inline
   def apply(error: nodeLib.Error, handle: js.Function0[scala.Unit]): BufferWatchError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("handle")(handle)
+    val __obj = js.Dynamic.literal(error = error, handle = handle)
+  
     __obj.asInstanceOf[BufferWatchError]
   }
 }

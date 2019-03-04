@@ -30,12 +30,8 @@ object FieldValue {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     value: js.Any
   ): FieldValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
     __obj.asInstanceOf[FieldValue]
   }
 }

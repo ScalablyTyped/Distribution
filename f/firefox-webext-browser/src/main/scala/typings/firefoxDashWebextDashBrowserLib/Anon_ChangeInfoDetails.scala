@@ -64,13 +64,8 @@ object Anon_ChangeInfoDetails {
       js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
     ]
   ): Anon_ChangeInfoDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("getAllCookieStores")(getAllCookieStores)
-    __obj.updateDynamic("onChanged")(onChanged)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, getAll = getAll, getAllCookieStores = getAllCookieStores, onChanged = onChanged, remove = remove, set = set)
+  
     __obj.asInstanceOf[Anon_ChangeInfoDetails]
   }
 }

@@ -76,21 +76,8 @@ object XDiagram {
     ],
     setLegend: js.Function1[XLegend, scala.Unit]
   ): XDiagram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultColorScheme")(DefaultColorScheme)
-    __obj.updateDynamic("Floor")(Floor)
-    __obj.updateDynamic("Legend")(Legend)
-    __obj.updateDynamic("Wall")(Wall)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultColorScheme")(getDefaultColorScheme)
-    __obj.updateDynamic("getFloor")(getFloor)
-    __obj.updateDynamic("getLegend")(getLegend)
-    __obj.updateDynamic("getWall")(getWall)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDefaultColorScheme")(setDefaultColorScheme)
-    __obj.updateDynamic("setDiagramData")(setDiagramData)
-    __obj.updateDynamic("setLegend")(setLegend)
+    val __obj = js.Dynamic.literal(DefaultColorScheme = DefaultColorScheme, Floor = Floor, Legend = Legend, Wall = Wall, acquire = acquire, getDefaultColorScheme = getDefaultColorScheme, getFloor = getFloor, getLegend = getLegend, getWall = getWall, queryInterface = queryInterface, release = release, setDefaultColorScheme = setDefaultColorScheme, setDiagramData = setDiagramData, setLegend = setLegend)
+  
     __obj.asInstanceOf[XDiagram]
   }
 }

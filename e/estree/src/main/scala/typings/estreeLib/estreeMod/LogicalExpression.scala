@@ -25,10 +25,8 @@ object LogicalExpression {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): LogicalExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, operator = operator, right = right)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

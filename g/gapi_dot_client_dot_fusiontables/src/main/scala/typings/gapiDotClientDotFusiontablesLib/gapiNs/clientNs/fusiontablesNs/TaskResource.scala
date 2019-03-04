@@ -30,10 +30,8 @@ object TaskResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TaskList]
     ]
   ): TaskResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list)
+  
     __obj.asInstanceOf[TaskResource]
   }
 }

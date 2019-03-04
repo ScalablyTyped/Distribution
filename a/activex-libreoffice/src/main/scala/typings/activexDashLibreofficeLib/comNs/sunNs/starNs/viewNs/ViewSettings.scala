@@ -56,23 +56,8 @@ object ViewSettings {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ViewSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ShowHoriRuler")(ShowHoriRuler)
-    __obj.updateDynamic("ShowHoriScrollBar")(ShowHoriScrollBar)
-    __obj.updateDynamic("ShowVertRuler")(ShowVertRuler)
-    __obj.updateDynamic("ShowVertScrollBar")(ShowVertScrollBar)
-    __obj.updateDynamic("ZoomValue")(ZoomValue)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, ShowHoriRuler = ShowHoriRuler, ShowHoriScrollBar = ShowHoriScrollBar, ShowVertRuler = ShowVertRuler, ShowVertScrollBar = ShowVertScrollBar, ZoomValue = ZoomValue, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[ViewSettings]
   }
 }

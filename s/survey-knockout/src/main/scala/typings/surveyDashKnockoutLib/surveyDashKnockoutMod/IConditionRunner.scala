@@ -12,8 +12,8 @@ trait IConditionRunner extends js.Object {
 object IConditionRunner {
   @scala.inline
   def apply(runCondition: js.Function2[HashTable[_], HashTable[_], js.Any]): IConditionRunner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("runCondition")(runCondition)
+    val __obj = js.Dynamic.literal(runCondition = runCondition)
+  
     __obj.asInstanceOf[IConditionRunner]
   }
 }

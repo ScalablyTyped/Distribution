@@ -28,8 +28,7 @@ object ImageOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): ImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (map != null) __obj.updateDynamic("map")(map)
     if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])

@@ -51,16 +51,8 @@ object MetadataRequestedEventOptions {
     size: scala.Boolean,
     thumbnail: scala.Boolean
   ): MetadataRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entryPath")(entryPath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("modificationTime")(modificationTime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, isDirectory = isDirectory, mimeType = mimeType, modificationTime = modificationTime, name = name, requestId = requestId, size = size, thumbnail = thumbnail)
+  
     __obj.asInstanceOf[MetadataRequestedEventOptions]
   }
 }

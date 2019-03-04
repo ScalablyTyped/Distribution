@@ -29,16 +29,8 @@ object StackFrame {
     source: java.lang.String,
     toString: js.Function0[java.lang.String]
   ): StackFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("columnNumber")(columnNumber)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("isEval")(isEval)
-    __obj.updateDynamic("isNative")(isNative)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(args = args, columnNumber = columnNumber, fileName = fileName, functionName = functionName, isEval = isEval, isNative = isNative, lineNumber = lineNumber, source = source, toString = toString)
+  
     __obj.asInstanceOf[StackFrame]
   }
 }

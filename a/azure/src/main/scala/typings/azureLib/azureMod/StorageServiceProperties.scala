@@ -18,10 +18,8 @@ object StorageServiceProperties {
     Logging: azureLib.Anon_Delete,
     Metrics: azureLib.Anon_Enabled
   ): StorageServiceProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultServiceVersion")(DefaultServiceVersion)
-    __obj.updateDynamic("Logging")(Logging)
-    __obj.updateDynamic("Metrics")(Metrics)
+    val __obj = js.Dynamic.literal(DefaultServiceVersion = DefaultServiceVersion, Logging = Logging, Metrics = Metrics)
+  
     __obj.asInstanceOf[StorageServiceProperties]
   }
 }

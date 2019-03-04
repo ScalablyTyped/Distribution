@@ -38,11 +38,8 @@ object Anon_Command {
     reset: js.Function1[java.lang.String, js.Promise[scala.Unit]],
     update: js.Function1[Anon_Description, js.Promise[scala.Unit]]
   ): Anon_Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("onCommand")(onCommand)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(getAll = getAll, onCommand = onCommand, reset = reset, update = update)
+  
     __obj.asInstanceOf[Anon_Command]
   }
 }

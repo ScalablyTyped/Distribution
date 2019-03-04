@@ -17,8 +17,8 @@ object Anon_ContextRendererAnonInsertAnonPreventDefault {
       Anon_Insert | Anon_PreventDefault
     ]
   ): Anon_ContextRendererAnonInsertAnonPreventDefault[K2, D2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(renderer = renderer)
+  
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefault[K2, D2]]
   }
 }

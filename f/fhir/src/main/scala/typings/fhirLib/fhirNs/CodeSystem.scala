@@ -244,9 +244,7 @@ object CodeSystem {
     version: java.lang.String = null,
     versionNeeded: js.UndefOr[scala.Boolean] = js.undefined
   ): CodeSystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(content = content, status = status)
     if (_caseSensitive != null) __obj.updateDynamic("_caseSensitive")(_caseSensitive)
     if (_compositional != null) __obj.updateDynamic("_compositional")(_compositional)
     if (_content != null) __obj.updateDynamic("_content")(_content)

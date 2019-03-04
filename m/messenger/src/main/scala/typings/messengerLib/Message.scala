@@ -32,11 +32,8 @@ object Message {
     show: js.Function0[scala.Unit],
     update: js.Function1[MessageOptions, scala.Unit]
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(cancel = cancel, hide = hide, show = show, update = update)
+  
     __obj.asInstanceOf[Message]
   }
 }

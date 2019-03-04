@@ -14,10 +14,8 @@ trait URITemplateExpression extends js.Object {
 object URITemplateExpression {
   @scala.inline
   def apply(expression: java.lang.String, operator: java.lang.String, variables: js.Array[URITemplateVariable]): URITemplateExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(expression = expression, operator = operator, variables = variables)
+  
     __obj.asInstanceOf[URITemplateExpression]
   }
 }

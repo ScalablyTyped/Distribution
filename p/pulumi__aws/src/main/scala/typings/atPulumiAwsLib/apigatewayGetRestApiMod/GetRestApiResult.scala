@@ -19,9 +19,8 @@ trait GetRestApiResult extends js.Object {
 object GetRestApiResult {
   @scala.inline
   def apply(id: java.lang.String, rootResourceId: java.lang.String): GetRestApiResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rootResourceId")(rootResourceId)
+    val __obj = js.Dynamic.literal(id = id, rootResourceId = rootResourceId)
+  
     __obj.asInstanceOf[GetRestApiResult]
   }
 }

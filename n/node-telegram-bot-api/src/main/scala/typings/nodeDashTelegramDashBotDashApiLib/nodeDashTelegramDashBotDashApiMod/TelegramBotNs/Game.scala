@@ -24,10 +24,7 @@ object Game {
     text: java.lang.String = null,
     text_entities: js.Array[MessageEntity] = null
   ): Game = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("photo")(photo)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(description = description, photo = photo, title = title)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (text != null) __obj.updateDynamic("text")(text)
     if (text_entities != null) __obj.updateDynamic("text_entities")(text_entities)

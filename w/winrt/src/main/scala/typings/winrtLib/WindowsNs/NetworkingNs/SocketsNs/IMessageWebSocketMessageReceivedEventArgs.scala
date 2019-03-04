@@ -18,10 +18,8 @@ object IMessageWebSocketMessageReceivedEventArgs {
     getDataStream: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream],
     messageType: SocketMessageType
   ): IMessageWebSocketMessageReceivedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDataReader")(getDataReader)
-    __obj.updateDynamic("getDataStream")(getDataStream)
-    __obj.updateDynamic("messageType")(messageType)
+    val __obj = js.Dynamic.literal(getDataReader = getDataReader, getDataStream = getDataStream, messageType = messageType)
+  
     __obj.asInstanceOf[IMessageWebSocketMessageReceivedEventArgs]
   }
 }

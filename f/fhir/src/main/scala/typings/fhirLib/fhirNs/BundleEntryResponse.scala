@@ -66,8 +66,7 @@ object BundleEntryResponse {
     modifierExtension: js.Array[Extension] = null,
     outcome: Resource = null
   ): BundleEntryResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_etag != null) __obj.updateDynamic("_etag")(_etag)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

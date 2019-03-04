@@ -41,8 +41,7 @@ object CapabilityStatementRestResourceInteraction {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementRestResourceInteraction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

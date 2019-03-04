@@ -22,9 +22,8 @@ object WebAclAssociationArgs {
     resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     webAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): WebAclAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], webAclId = webAclId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[WebAclAssociationArgs]
   }
 }

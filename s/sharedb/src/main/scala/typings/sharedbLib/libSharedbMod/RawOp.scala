@@ -26,14 +26,8 @@ object RawOp {
     src: java.lang.String,
     v: scala.Double
   ): RawOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("seq")(seq)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(c = c, d = d, m = m, op = op, seq = seq, src = src, v = v)
+  
     __obj.asInstanceOf[RawOp]
   }
 }

@@ -53,13 +53,8 @@ object XCellRange {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCellRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCellRange]
   }
 }

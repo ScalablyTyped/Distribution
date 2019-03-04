@@ -12,8 +12,8 @@ trait AssertExchange extends js.Object {
 object AssertExchange {
   @scala.inline
   def apply(exchange: java.lang.String): AssertExchange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exchange")(exchange)
+    val __obj = js.Dynamic.literal(exchange = exchange)
+  
     __obj.asInstanceOf[AssertExchange]
   }
 }

@@ -26,9 +26,8 @@ object ASPxClientDashboardItemSelectionChangedEventArgs {
     GetCurrentSelection: js.Function0[js.Array[ASPxClientDashboardItemDataAxisPointTuple]],
     ItemName: java.lang.String
   ): ASPxClientDashboardItemSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCurrentSelection")(GetCurrentSelection)
-    __obj.updateDynamic("ItemName")(ItemName)
+    val __obj = js.Dynamic.literal(GetCurrentSelection = GetCurrentSelection, ItemName = ItemName)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemSelectionChangedEventArgs]
   }
 }

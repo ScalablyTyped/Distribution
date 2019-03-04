@@ -12,8 +12,8 @@ trait Template extends js.Object {
 object Template {
   @scala.inline
   def apply(engine: jsreportDashJsrenderLib.jsreportDashJsrenderLibStrings.jsrender | java.lang.String): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Template]
   }
 }

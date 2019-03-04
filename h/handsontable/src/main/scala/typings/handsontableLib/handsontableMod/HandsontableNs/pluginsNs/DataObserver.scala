@@ -28,15 +28,8 @@ object DataObserver {
     resume: js.Function0[scala.Unit],
     setObservedData: js.Function1[js.Any, scala.Unit]
   ): DataObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isPaused")(isPaused)
-    __obj.updateDynamic("observedData")(observedData)
-    __obj.updateDynamic("observer")(observer)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("setObservedData")(setObservedData)
+    val __obj = js.Dynamic.literal(destroy = destroy, isPaused = isPaused, observedData = observedData, observer = observer, pause = pause, paused = paused, resume = resume, setObservedData = setObservedData)
+  
     __obj.asInstanceOf[DataObserver]
   }
 }

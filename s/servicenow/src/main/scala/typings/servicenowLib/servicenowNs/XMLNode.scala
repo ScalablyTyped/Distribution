@@ -29,16 +29,8 @@ object XMLNode {
     hasAttribute: js.Function1[java.lang.String, scala.Boolean],
     toString: js.Function0[java.lang.String]
   ): XMLNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAttribute")(getAttribute)
-    __obj.updateDynamic("getChildNodeIterator")(getChildNodeIterator)
-    __obj.updateDynamic("getFirstChild")(getFirstChild)
-    __obj.updateDynamic("getLastChild")(getLastChild)
-    __obj.updateDynamic("getNodeName")(getNodeName)
-    __obj.updateDynamic("getNodeValue")(getNodeValue)
-    __obj.updateDynamic("getTextContent")(getTextContent)
-    __obj.updateDynamic("hasAttribute")(hasAttribute)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(getAttribute = getAttribute, getChildNodeIterator = getChildNodeIterator, getFirstChild = getFirstChild, getLastChild = getLastChild, getNodeName = getNodeName, getNodeValue = getNodeValue, getTextContent = getTextContent, hasAttribute = hasAttribute, toString = toString)
+  
     __obj.asInstanceOf[XMLNode]
   }
 }

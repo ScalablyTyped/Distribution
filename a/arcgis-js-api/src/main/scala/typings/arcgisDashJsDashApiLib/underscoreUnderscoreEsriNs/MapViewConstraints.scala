@@ -104,10 +104,7 @@ object MapViewConstraints {
     rotationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     snapToZoom: js.UndefOr[scala.Boolean] = js.undefined
   ): MapViewConstraints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (effectiveLODs != null) __obj.updateDynamic("effectiveLODs")(effectiveLODs)
     if (effectiveMaxScale != null) __obj.updateDynamic("effectiveMaxScale")(effectiveMaxScale.asInstanceOf[js.Any])
     if (effectiveMaxZoom != null) __obj.updateDynamic("effectiveMaxZoom")(effectiveMaxZoom.asInstanceOf[js.Any])

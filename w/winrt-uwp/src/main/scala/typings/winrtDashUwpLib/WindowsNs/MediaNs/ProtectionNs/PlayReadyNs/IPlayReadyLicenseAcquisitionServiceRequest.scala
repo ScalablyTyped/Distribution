@@ -28,17 +28,8 @@ object IPlayReadyLicenseAcquisitionServiceRequest {
     `type`: java.lang.String,
     uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri
   ): IPlayReadyLicenseAcquisitionServiceRequest = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("beginServiceRequest")(beginServiceRequest)
-    __obj.updateDynamic("challengeCustomData")(challengeCustomData)
-    __obj.updateDynamic("contentHeader")(contentHeader)
-    __obj.updateDynamic("domainServiceId")(domainServiceId)
-    __obj.updateDynamic("generateManualEnablingChallenge")(generateManualEnablingChallenge)
-    __obj.updateDynamic("nextServiceRequest")(nextServiceRequest)
-    __obj.updateDynamic("processManualEnablingResponse")(processManualEnablingResponse)
-    __obj.updateDynamic("protectionSystem")(protectionSystem)
-    __obj.updateDynamic("responseCustomData")(responseCustomData)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(beginServiceRequest = beginServiceRequest, challengeCustomData = challengeCustomData, contentHeader = contentHeader, domainServiceId = domainServiceId, generateManualEnablingChallenge = generateManualEnablingChallenge, nextServiceRequest = nextServiceRequest, processManualEnablingResponse = processManualEnablingResponse, protectionSystem = protectionSystem, responseCustomData = responseCustomData, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPlayReadyLicenseAcquisitionServiceRequest]
   }
 }

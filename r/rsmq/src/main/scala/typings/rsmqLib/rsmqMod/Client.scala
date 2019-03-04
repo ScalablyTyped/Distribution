@@ -57,18 +57,8 @@ object Client {
       scala.Unit
     ]
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeMessageVisibility")(changeMessageVisibility)
-    __obj.updateDynamic("createQueue")(createQueue)
-    __obj.updateDynamic("deleteMessage")(deleteMessage)
-    __obj.updateDynamic("deleteQueue")(deleteQueue)
-    __obj.updateDynamic("getQueueAttributes")(getQueueAttributes)
-    __obj.updateDynamic("listQueues")(listQueues)
-    __obj.updateDynamic("quit")(quit)
-    __obj.updateDynamic("receiveMessage")(receiveMessage)
-    __obj.updateDynamic("redis")(redis)
-    __obj.updateDynamic("sendMessage")(sendMessage)
-    __obj.updateDynamic("setQueueAttributes")(setQueueAttributes)
+    val __obj = js.Dynamic.literal(changeMessageVisibility = changeMessageVisibility, createQueue = createQueue, deleteMessage = deleteMessage, deleteQueue = deleteQueue, getQueueAttributes = getQueueAttributes, listQueues = listQueues, quit = quit, receiveMessage = receiveMessage, redis = redis, sendMessage = sendMessage, setQueueAttributes = setQueueAttributes)
+  
     __obj.asInstanceOf[Client]
   }
 }

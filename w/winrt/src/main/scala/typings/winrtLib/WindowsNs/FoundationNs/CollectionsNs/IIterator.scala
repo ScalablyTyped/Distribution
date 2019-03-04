@@ -20,11 +20,8 @@ object IIterator {
     hasCurrent: scala.Boolean,
     moveNext: js.Function0[scala.Boolean]
   ): IIterator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    __obj.updateDynamic("getMany")(getMany)
-    __obj.updateDynamic("hasCurrent")(hasCurrent)
-    __obj.updateDynamic("moveNext")(moveNext)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], getMany = getMany, hasCurrent = hasCurrent, moveNext = moveNext)
+  
     __obj.asInstanceOf[IIterator[T]]
   }
 }

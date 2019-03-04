@@ -28,15 +28,8 @@ object Metrics {
     systemKey: java.lang.String,
     user: APIUser
   ): Metrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("getDBConnections")(getDBConnections)
-    __obj.updateDynamic("getLogs")(getLogs)
-    __obj.updateDynamic("getStatistics")(getStatistics)
-    __obj.updateDynamic("getStatisticsHistory")(getStatisticsHistory)
-    __obj.updateDynamic("setQuery")(setQuery)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, getDBConnections = getDBConnections, getLogs = getLogs, getStatistics = getStatistics, getStatisticsHistory = getStatisticsHistory, setQuery = setQuery, systemKey = systemKey, user = user)
+  
     __obj.asInstanceOf[Metrics]
   }
 }

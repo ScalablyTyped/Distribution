@@ -52,16 +52,8 @@ object ODBCConnectionProperties {
     password: java.lang.String,
     user: java.lang.String
   ): ODBCConnectionProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoRetrievingStatement")(AutoRetrievingStatement)
-    __obj.updateDynamic("CharSet")(CharSet)
-    __obj.updateDynamic("IsAutoRetrievingEnabled")(IsAutoRetrievingEnabled)
-    __obj.updateDynamic("ParameterNameSubstitution")(ParameterNameSubstitution)
-    __obj.updateDynamic("Silent")(Silent)
-    __obj.updateDynamic("Timeout")(Timeout)
-    __obj.updateDynamic("UseCatalog")(UseCatalog)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(AutoRetrievingStatement = AutoRetrievingStatement, CharSet = CharSet, IsAutoRetrievingEnabled = IsAutoRetrievingEnabled, ParameterNameSubstitution = ParameterNameSubstitution, Silent = Silent, Timeout = Timeout, UseCatalog = UseCatalog, password = password, user = user)
+  
     __obj.asInstanceOf[ODBCConnectionProperties]
   }
 }

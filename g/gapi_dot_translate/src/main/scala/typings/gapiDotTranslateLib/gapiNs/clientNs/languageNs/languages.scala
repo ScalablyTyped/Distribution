@@ -20,8 +20,8 @@ object languages {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateLanguageListResponse]
     ]
   ): languages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[languages]
   }
 }

@@ -15,9 +15,8 @@ trait FSInfoResult extends js.Object {
 object FSInfoResult {
   @scala.inline
   def apply(freeSpace: scala.Double, totalSpace: scala.Double): FSInfoResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("freeSpace")(freeSpace)
-    __obj.updateDynamic("totalSpace")(totalSpace)
+    val __obj = js.Dynamic.literal(freeSpace = freeSpace, totalSpace = totalSpace)
+  
     __obj.asInstanceOf[FSInfoResult]
   }
 }

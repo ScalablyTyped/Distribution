@@ -44,11 +44,8 @@ object SubjectRulesReviewStatus {
     nonResourceRules: js.Array[NonResourceRule],
     resourceRules: js.Array[ResourceRule]
   ): SubjectRulesReviewStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluationError")(evaluationError)
-    __obj.updateDynamic("incomplete")(incomplete)
-    __obj.updateDynamic("nonResourceRules")(nonResourceRules)
-    __obj.updateDynamic("resourceRules")(resourceRules)
+    val __obj = js.Dynamic.literal(evaluationError = evaluationError, incomplete = incomplete, nonResourceRules = nonResourceRules, resourceRules = resourceRules)
+  
     __obj.asInstanceOf[SubjectRulesReviewStatus]
   }
 }

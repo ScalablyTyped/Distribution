@@ -22,12 +22,8 @@ object Anon_DEFAULT {
     SUCCESS: reactDashToastifyLib.reactDashToastifyLibStrings.success,
     WARNING: reactDashToastifyLib.reactDashToastifyLibStrings.warning
   ): Anon_DEFAULT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, ERROR = ERROR, INFO = INFO, SUCCESS = SUCCESS, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_DEFAULT]
   }
 }

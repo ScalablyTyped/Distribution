@@ -14,8 +14,8 @@ object CreatePolicyOptionsEn {
   def apply(
     command: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.ALL | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.SELECT | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.INSERT | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.UPDATE | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.DELETE
   ): CreatePolicyOptionsEn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CreatePolicyOptionsEn]
   }
 }

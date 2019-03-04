@@ -75,14 +75,8 @@ object XDispatchRecorderSupplier {
     release: js.Function0[scala.Unit],
     setDispatchRecorder: js.Function1[XDispatchRecorder, scala.Unit]
   ): XDispatchRecorderSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DispatchRecorder")(DispatchRecorder)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("dispatchAndRecord")(dispatchAndRecord)
-    __obj.updateDynamic("getDispatchRecorder")(getDispatchRecorder)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDispatchRecorder")(setDispatchRecorder)
+    val __obj = js.Dynamic.literal(DispatchRecorder = DispatchRecorder, acquire = acquire, dispatchAndRecord = dispatchAndRecord, getDispatchRecorder = getDispatchRecorder, queryInterface = queryInterface, release = release, setDispatchRecorder = setDispatchRecorder)
+  
     __obj.asInstanceOf[XDispatchRecorderSupplier]
   }
 }

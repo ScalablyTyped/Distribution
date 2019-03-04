@@ -24,13 +24,8 @@ object FlashVideoItem {
     sourceFilePath: java.lang.String,
     videoType: java.lang.String
   ): FlashVideoItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exportToFLV")(exportToFLV)
-    __obj.updateDynamic("fileLastModifiedDate")(fileLastModifiedDate)
-    __obj.updateDynamic("sourceFileExists")(sourceFileExists)
-    __obj.updateDynamic("sourceFileIsCurrent")(sourceFileIsCurrent)
-    __obj.updateDynamic("sourceFilePath")(sourceFilePath)
-    __obj.updateDynamic("videoType")(videoType)
+    val __obj = js.Dynamic.literal(exportToFLV = exportToFLV, fileLastModifiedDate = fileLastModifiedDate, sourceFileExists = sourceFileExists, sourceFileIsCurrent = sourceFileIsCurrent, sourceFilePath = sourceFilePath, videoType = videoType)
+  
     __obj.asInstanceOf[FlashVideoItem]
   }
 }

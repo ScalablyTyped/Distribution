@@ -24,10 +24,7 @@ object SignTransactionParams {
     push: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): SignTransactionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coin")(coin)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("outputs")(outputs)
+    val __obj = js.Dynamic.literal(coin = coin, inputs = inputs, outputs = outputs)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (device != null) __obj.updateDynamic("device")(device)
     if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)

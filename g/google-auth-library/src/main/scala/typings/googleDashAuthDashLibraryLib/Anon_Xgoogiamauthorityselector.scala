@@ -16,8 +16,9 @@ object Anon_Xgoogiamauthorityselector {
     `x-goog-iam-authority-selector`: java.lang.String,
     `x-goog-iam-authorization-token`: java.lang.String
   ): Anon_Xgoogiamauthorityselector = {
-    val __obj = js.Dynamic.literal(`x-goog-iam-authority-selector` = `x-goog-iam-authority-selector`, `x-goog-iam-authorization-token` = `x-goog-iam-authorization-token`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x-goog-iam-authority-selector")(`x-goog-iam-authority-selector`)
+    __obj.updateDynamic("x-goog-iam-authorization-token")(`x-goog-iam-authorization-token`)
     __obj.asInstanceOf[Anon_Xgoogiamauthorityselector]
   }
 }

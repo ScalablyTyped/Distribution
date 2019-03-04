@@ -20,11 +20,8 @@ object MultipartUploadCopyResult {
     name: java.lang.String,
     res: NormalSuccessResponse
   ): MultipartUploadCopyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(bucket = bucket, etag = etag, name = name, res = res)
+  
     __obj.asInstanceOf[MultipartUploadCopyResult]
   }
 }

@@ -105,38 +105,8 @@ object Image {
     ],
     setWidth: js.Function1[java.lang.String, Image]
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClickHandler")(addClickHandler)
-    __obj.updateDynamic("addErrorHandler")(addErrorHandler)
-    __obj.updateDynamic("addLoadHandler")(addLoadHandler)
-    __obj.updateDynamic("addMouseDownHandler")(addMouseDownHandler)
-    __obj.updateDynamic("addMouseMoveHandler")(addMouseMoveHandler)
-    __obj.updateDynamic("addMouseOutHandler")(addMouseOutHandler)
-    __obj.updateDynamic("addMouseOverHandler")(addMouseOverHandler)
-    __obj.updateDynamic("addMouseUpHandler")(addMouseUpHandler)
-    __obj.updateDynamic("addMouseWheelHandler")(addMouseWheelHandler)
-    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
-    __obj.updateDynamic("addStyleName")(addStyleName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setLayoutData")(setLayoutData)
-    __obj.updateDynamic("setPixelSize")(setPixelSize)
-    __obj.updateDynamic("setResource")(setResource)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
-    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
-    __obj.updateDynamic("setStyleName")(setStyleName)
-    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
-    __obj.updateDynamic("setTag")(setTag)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setUrl")(setUrl)
-    __obj.updateDynamic("setUrlAndVisibleRect")(setUrlAndVisibleRect)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setVisibleRect")(setVisibleRect)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(addClickHandler = addClickHandler, addErrorHandler = addErrorHandler, addLoadHandler = addLoadHandler, addMouseDownHandler = addMouseDownHandler, addMouseMoveHandler = addMouseMoveHandler, addMouseOutHandler = addMouseOutHandler, addMouseOverHandler = addMouseOverHandler, addMouseUpHandler = addMouseUpHandler, addMouseWheelHandler = addMouseWheelHandler, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setResource = setResource, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setUrl = setUrl, setUrlAndVisibleRect = setUrlAndVisibleRect, setVisible = setVisible, setVisibleRect = setVisibleRect, setWidth = setWidth)
+  
     __obj.asInstanceOf[Image]
   }
 }

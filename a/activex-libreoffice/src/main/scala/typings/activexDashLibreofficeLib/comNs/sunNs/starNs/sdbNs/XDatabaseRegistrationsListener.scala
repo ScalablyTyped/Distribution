@@ -36,14 +36,8 @@ object XDatabaseRegistrationsListener {
     release: js.Function0[scala.Unit],
     revokedDatabaseLocation: js.Function1[DatabaseRegistrationEvent, scala.Unit]
   ): XDatabaseRegistrationsListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("changedDatabaseLocation")(changedDatabaseLocation)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registeredDatabaseLocation")(registeredDatabaseLocation)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("revokedDatabaseLocation")(revokedDatabaseLocation)
+    val __obj = js.Dynamic.literal(acquire = acquire, changedDatabaseLocation = changedDatabaseLocation, disposing = disposing, queryInterface = queryInterface, registeredDatabaseLocation = registeredDatabaseLocation, release = release, revokedDatabaseLocation = revokedDatabaseLocation)
+  
     __obj.asInstanceOf[XDatabaseRegistrationsListener]
   }
 }

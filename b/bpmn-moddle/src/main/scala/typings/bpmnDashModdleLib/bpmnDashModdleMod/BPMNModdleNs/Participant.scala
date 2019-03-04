@@ -53,16 +53,7 @@ object Participant {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Participant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("endPointRefs")(endPointRefs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("incomingConversationLinks")(incomingConversationLinks)
-    __obj.updateDynamic("interfaceRef")(interfaceRef)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outgoingConversationLinks")(outgoingConversationLinks)
-    __obj.updateDynamic("participantMultiplicity")(participantMultiplicity)
-    __obj.updateDynamic("processRef")(processRef)
+    val __obj = js.Dynamic.literal($type = $type, endPointRefs = endPointRefs, id = id, incomingConversationLinks = incomingConversationLinks, interfaceRef = interfaceRef, name = name, outgoingConversationLinks = outgoingConversationLinks, participantMultiplicity = participantMultiplicity, processRef = processRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

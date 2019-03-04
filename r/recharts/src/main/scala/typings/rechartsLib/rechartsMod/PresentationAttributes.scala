@@ -71,36 +71,8 @@ object PresentationAttributes {
     x: X,
     y: Y
   ): PresentationAttributes[X, Y] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("colorInterpolation")(colorInterpolation)
-    __obj.updateDynamic("colorProfile")(colorProfile)
-    __obj.updateDynamic("colorRendering")(colorRendering)
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
-    __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
-    __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
-    __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(angle = angle, colorInterpolation = colorInterpolation, colorProfile = colorProfile, colorRendering = colorRendering, dx = dx, dy = dy, fill = fill, fillOpacity = fillOpacity.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontSizeAdjust = fontSizeAdjust.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], height = height, imageRendering = imageRendering.asInstanceOf[js.Any], kerning = kerning.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], r = r, shapeRendering = shapeRendering.asInstanceOf[js.Any], stopOpacity = stopOpacity.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any], strokeDashoffset = strokeDashoffset.asInstanceOf[js.Any], strokeMiterlimit = strokeMiterlimit.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], style = style, textRendering = textRendering.asInstanceOf[js.Any], width = width, wordSpacing = wordSpacing.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PresentationAttributes[X, Y]]
   }
 }

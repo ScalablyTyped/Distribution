@@ -13,9 +13,8 @@ trait VertexRequest extends js.Object {
 object VertexRequest {
   @scala.inline
   def apply(p: js.Any, u: java.lang.String): VertexRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("u")(u)
+    val __obj = js.Dynamic.literal(p = p, u = u)
+  
     __obj.asInstanceOf[VertexRequest]
   }
 }

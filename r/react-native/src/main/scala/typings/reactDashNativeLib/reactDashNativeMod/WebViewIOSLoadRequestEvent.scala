@@ -28,15 +28,8 @@ object WebViewIOSLoadRequestEvent {
     title: java.lang.String,
     url: java.lang.String
   ): WebViewIOSLoadRequestEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canGoBack")(canGoBack)
-    __obj.updateDynamic("canGoForward")(canGoForward)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("lockIdentifier")(lockIdentifier)
-    __obj.updateDynamic("navigationType")(navigationType.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(canGoBack = canGoBack, canGoForward = canGoForward, loading = loading, lockIdentifier = lockIdentifier, navigationType = navigationType.asInstanceOf[js.Any], target = target, title = title, url = url)
+  
     __obj.asInstanceOf[WebViewIOSLoadRequestEvent]
   }
 }

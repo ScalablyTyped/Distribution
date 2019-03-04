@@ -29,8 +29,7 @@ object IOrderUpdateOptions {
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
     selected_shipping_method: java.lang.String = null
   ): IOrderUpdateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

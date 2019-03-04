@@ -24,13 +24,8 @@ object CursorPositionChangedEvent {
     oldScreenPosition: Point,
     textChanged: scala.Boolean
   ): CursorPositionChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cursor")(cursor)
-    __obj.updateDynamic("newBufferPosition")(newBufferPosition)
-    __obj.updateDynamic("newScreenPosition")(newScreenPosition)
-    __obj.updateDynamic("oldBufferPosition")(oldBufferPosition)
-    __obj.updateDynamic("oldScreenPosition")(oldScreenPosition)
-    __obj.updateDynamic("textChanged")(textChanged)
+    val __obj = js.Dynamic.literal(cursor = cursor, newBufferPosition = newBufferPosition, newScreenPosition = newScreenPosition, oldBufferPosition = oldBufferPosition, oldScreenPosition = oldScreenPosition, textChanged = textChanged)
+  
     __obj.asInstanceOf[CursorPositionChangedEvent]
   }
 }

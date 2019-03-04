@@ -22,12 +22,8 @@ object Anon_ALERTPRIMARYSECONDARY {
     SUCCESS: reactDashFoundationLib.enumsMod.ButtonColors,
     WARNING: reactDashFoundationLib.enumsMod.ButtonColors
   ): Anon_ALERTPRIMARYSECONDARY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALERT")(ALERT)
-    __obj.updateDynamic("PRIMARY")(PRIMARY)
-    __obj.updateDynamic("SECONDARY")(SECONDARY)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(ALERT = ALERT, PRIMARY = PRIMARY, SECONDARY = SECONDARY, SUCCESS = SUCCESS, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_ALERTPRIMARYSECONDARY]
   }
 }

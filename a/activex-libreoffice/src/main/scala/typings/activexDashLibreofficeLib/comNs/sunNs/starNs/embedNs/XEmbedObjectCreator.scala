@@ -101,13 +101,8 @@ object XEmbedObjectCreator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XEmbedObjectCreator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createInstanceInitFromEntry")(createInstanceInitFromEntry)
-    __obj.updateDynamic("createInstanceInitFromMediaDescriptor")(createInstanceInitFromMediaDescriptor)
-    __obj.updateDynamic("createInstanceInitNew")(createInstanceInitNew)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createInstanceInitFromEntry = createInstanceInitFromEntry, createInstanceInitFromMediaDescriptor = createInstanceInitFromMediaDescriptor, createInstanceInitNew = createInstanceInitNew, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XEmbedObjectCreator]
   }
 }

@@ -38,8 +38,7 @@ object PMRMessage {
     username: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): PMRMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageType")(messageType)
+    val __obj = js.Dynamic.literal(messageType = messageType)
     if (canceledQuantity != null) __obj.updateDynamic("canceledQuantity")(canceledQuantity.asInstanceOf[js.Any])
     if (incomingOrderNumber != null) __obj.updateDynamic("incomingOrderNumber")(incomingOrderNumber.asInstanceOf[js.Any])
     if (instrument != null) __obj.updateDynamic("instrument")(instrument)

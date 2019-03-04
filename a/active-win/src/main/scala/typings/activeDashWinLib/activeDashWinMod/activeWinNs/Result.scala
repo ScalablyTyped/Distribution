@@ -22,10 +22,7 @@ object Result {
     bounds: activeDashWinLib.Anon_Height = null,
     memoryUsage: scala.Int | scala.Double = null
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, owner = owner, title = title)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]

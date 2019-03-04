@@ -24,13 +24,8 @@ object Anon_Bindingsversion {
     publisher: java.lang.String,
     uname: java.lang.String
   ): Anon_Bindingsversion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindings_version")(bindings_version)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("lang_version")(lang_version)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("uname")(uname)
+    val __obj = js.Dynamic.literal(bindings_version = bindings_version, lang = lang, lang_version = lang_version, platform = platform, publisher = publisher, uname = uname)
+  
     __obj.asInstanceOf[Anon_Bindingsversion]
   }
 }

@@ -16,9 +16,8 @@ trait ConvertorResult extends js.Object {
 object ConvertorResult {
   @scala.inline
   def apply(info: java.lang.String, locations: js.Array[LngLat]): ConvertorResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("locations")(locations)
+    val __obj = js.Dynamic.literal(info = info, locations = locations)
+  
     __obj.asInstanceOf[ConvertorResult]
   }
 }

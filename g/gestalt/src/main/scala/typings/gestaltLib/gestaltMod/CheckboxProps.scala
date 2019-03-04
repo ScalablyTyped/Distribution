@@ -26,9 +26,7 @@ object CheckboxProps {
     name: java.lang.String = null,
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md = null
   ): CheckboxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(id = id, onChange = onChange)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)

@@ -32,9 +32,8 @@ object IPropertyType {
     ],
     ID: java.lang.String
   ): IPropertyType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginValidateNormalizeConvert")(BeginValidateNormalizeConvert)
-    __obj.updateDynamic("ID")(ID)
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = BeginValidateNormalizeConvert, ID = ID)
+  
     __obj.asInstanceOf[IPropertyType]
   }
 }

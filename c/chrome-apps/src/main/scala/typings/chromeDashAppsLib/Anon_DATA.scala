@@ -27,12 +27,8 @@ object Anon_DATA {
     NOTIFICATION: chromeDashAppsLib.chromeDashAppsLibStrings.notification,
     PERIODIC: chromeDashAppsLib.chromeDashAppsLibStrings.periodic
   ): Anon_DATA = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DATA")(DATA)
-    __obj.updateDynamic("EXPLICIT_FEEDBACK")(EXPLICIT_FEEDBACK)
-    __obj.updateDynamic("FEEDBACK")(FEEDBACK)
-    __obj.updateDynamic("NOTIFICATION")(NOTIFICATION)
-    __obj.updateDynamic("PERIODIC")(PERIODIC)
+    val __obj = js.Dynamic.literal(DATA = DATA, EXPLICIT_FEEDBACK = EXPLICIT_FEEDBACK, FEEDBACK = FEEDBACK, NOTIFICATION = NOTIFICATION, PERIODIC = PERIODIC)
+  
     __obj.asInstanceOf[Anon_DATA]
   }
 }
@@ -40,9 +36,8 @@ object Anon_DATA {
 object Anon_Data {
   @scala.inline
   def apply(data: js.Array[chromeDashAppsLib.chromeNs.integer], id: chromeDashAppsLib.chromeNs.integer): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(data = data, id = id)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

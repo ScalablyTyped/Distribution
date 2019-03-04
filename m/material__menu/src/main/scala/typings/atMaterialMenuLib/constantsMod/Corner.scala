@@ -29,15 +29,8 @@ object Corner {
     TOP_RIGHT: atMaterialMenuLib.atMaterialMenuLibNumbers.`4`,
     TOP_START: atMaterialMenuLib.atMaterialMenuLibNumbers.`8`
   ): Corner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM_END")(BOTTOM_END)
-    __obj.updateDynamic("BOTTOM_LEFT")(BOTTOM_LEFT)
-    __obj.updateDynamic("BOTTOM_RIGHT")(BOTTOM_RIGHT)
-    __obj.updateDynamic("BOTTOM_START")(BOTTOM_START)
-    __obj.updateDynamic("TOP_END")(TOP_END)
-    __obj.updateDynamic("TOP_LEFT")(TOP_LEFT)
-    __obj.updateDynamic("TOP_RIGHT")(TOP_RIGHT)
-    __obj.updateDynamic("TOP_START")(TOP_START)
+    val __obj = js.Dynamic.literal(BOTTOM_END = BOTTOM_END, BOTTOM_LEFT = BOTTOM_LEFT, BOTTOM_RIGHT = BOTTOM_RIGHT, BOTTOM_START = BOTTOM_START, TOP_END = TOP_END, TOP_LEFT = TOP_LEFT, TOP_RIGHT = TOP_RIGHT, TOP_START = TOP_START)
+  
     __obj.asInstanceOf[Corner]
   }
 }

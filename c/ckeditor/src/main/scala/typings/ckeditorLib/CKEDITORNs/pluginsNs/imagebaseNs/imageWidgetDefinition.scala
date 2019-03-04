@@ -48,9 +48,7 @@ object imageWidgetDefinition {
     upcastPriority: scala.Int | scala.Double = null,
     upcasts: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): imageWidgetDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("features")(features)
-    __obj.updateDynamic("upcast")(upcast)
+    val __obj = js.Dynamic.literal(features = features, upcast = upcast)
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button)
     if (contentForms != null) __obj.updateDynamic("contentForms")(contentForms)

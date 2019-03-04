@@ -14,8 +14,8 @@ object IMediaExtension {
   def apply(
     setProperties: js.Function1[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet, scala.Unit]
   ): IMediaExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setProperties")(setProperties)
+    val __obj = js.Dynamic.literal(setProperties = setProperties)
+  
     __obj.asInstanceOf[IMediaExtension]
   }
 }

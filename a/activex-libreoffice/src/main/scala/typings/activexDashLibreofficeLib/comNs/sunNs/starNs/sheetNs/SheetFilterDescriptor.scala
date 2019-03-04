@@ -92,33 +92,8 @@ object SheetFilterDescriptor {
     setFilterFields2: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField2], scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): SheetFilterDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContainsHeader")(ContainsHeader)
-    __obj.updateDynamic("CopyOutputData")(CopyOutputData)
-    __obj.updateDynamic("FilterFields")(FilterFields)
-    __obj.updateDynamic("FilterFields2")(FilterFields2)
-    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
-    __obj.updateDynamic("MaxFieldCount")(MaxFieldCount)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("OutputPosition")(OutputPosition)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SaveOutputPosition")(SaveOutputPosition)
-    __obj.updateDynamic("SkipDuplicates")(SkipDuplicates)
-    __obj.updateDynamic("UseRegularExpressions")(UseRegularExpressions)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getFilterFields")(getFilterFields)
-    __obj.updateDynamic("getFilterFields2")(getFilterFields2)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setFilterFields")(setFilterFields)
-    __obj.updateDynamic("setFilterFields2")(setFilterFields2)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ContainsHeader = ContainsHeader, CopyOutputData = CopyOutputData, FilterFields = FilterFields, FilterFields2 = FilterFields2, IsCaseSensitive = IsCaseSensitive, MaxFieldCount = MaxFieldCount, Orientation = Orientation, OutputPosition = OutputPosition, PropertySetInfo = PropertySetInfo, SaveOutputPosition = SaveOutputPosition, SkipDuplicates = SkipDuplicates, UseRegularExpressions = UseRegularExpressions, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getFilterFields = getFilterFields, getFilterFields2 = getFilterFields2, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setFilterFields = setFilterFields, setFilterFields2 = setFilterFields2, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[SheetFilterDescriptor]
   }
 }

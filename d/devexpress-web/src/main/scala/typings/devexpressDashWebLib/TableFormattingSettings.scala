@@ -75,17 +75,8 @@ object TableFormattingSettings {
     resizeToFitContent: scala.Boolean,
     spacingBetweenCells: scala.Double
   ): TableFormattingSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("allowSpacingBetweenCells")(allowSpacingBetweenCells)
-    __obj.updateDynamic("defaultCellMarginBottom")(defaultCellMarginBottom)
-    __obj.updateDynamic("defaultCellMarginLeft")(defaultCellMarginLeft)
-    __obj.updateDynamic("defaultCellMarginRight")(defaultCellMarginRight)
-    __obj.updateDynamic("defaultCellMarginTop")(defaultCellMarginTop)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("preferredWidth")(preferredWidth)
-    __obj.updateDynamic("resizeToFitContent")(resizeToFitContent)
-    __obj.updateDynamic("spacingBetweenCells")(spacingBetweenCells)
+    val __obj = js.Dynamic.literal(alignment = alignment, allowSpacingBetweenCells = allowSpacingBetweenCells, defaultCellMarginBottom = defaultCellMarginBottom, defaultCellMarginLeft = defaultCellMarginLeft, defaultCellMarginRight = defaultCellMarginRight, defaultCellMarginTop = defaultCellMarginTop, indent = indent, preferredWidth = preferredWidth, resizeToFitContent = resizeToFitContent, spacingBetweenCells = spacingBetweenCells)
+  
     __obj.asInstanceOf[TableFormattingSettings]
   }
 }

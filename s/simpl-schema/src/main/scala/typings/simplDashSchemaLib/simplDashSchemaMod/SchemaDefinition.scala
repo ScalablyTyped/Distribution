@@ -63,7 +63,8 @@ object SchemaDefinition {
     regEx: stdLib.RegExp | js.Array[stdLib.RegExp] = null,
     trim: js.UndefOr[scala.Boolean] = js.undefined
   ): SchemaDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
     if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue)
     if (!js.isUndefined(blackbox)) __obj.updateDynamic("blackbox")(blackbox)

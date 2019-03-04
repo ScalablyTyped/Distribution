@@ -29,15 +29,8 @@ object CodeshipEnv {
     service: envDashCiLib.envDashCiLibStrings.codeship,
     slug: java.lang.String
   ): CodeshipEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildUrl")(buildUrl)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, name = name, service = service, slug = slug)
+  
     __obj.asInstanceOf[CodeshipEnv]
   }
 }

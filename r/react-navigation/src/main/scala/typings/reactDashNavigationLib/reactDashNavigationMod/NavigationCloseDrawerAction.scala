@@ -16,7 +16,8 @@ object NavigationCloseDrawerAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/CLOSE_DRAWER`,
     key: java.lang.String = null
   ): NavigationCloseDrawerAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[NavigationCloseDrawerAction]
   }

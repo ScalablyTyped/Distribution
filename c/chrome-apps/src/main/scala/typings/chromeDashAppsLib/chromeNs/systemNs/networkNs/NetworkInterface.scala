@@ -21,10 +21,8 @@ object NetworkInterface {
     name: java.lang.String,
     prefixLength: chromeDashAppsLib.chromeNs.integer
   ): NetworkInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefixLength")(prefixLength)
+    val __obj = js.Dynamic.literal(address = address, name = name, prefixLength = prefixLength)
+  
     __obj.asInstanceOf[NetworkInterface]
   }
 }

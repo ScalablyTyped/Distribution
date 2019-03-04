@@ -14,8 +14,8 @@ object CookieDefaults {
   def apply(
     whitelist: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | (js.Function1[/* cookie */ js.Any, scala.Boolean])
   ): CookieDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(whitelist = whitelist.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CookieDefaults]
   }
 }

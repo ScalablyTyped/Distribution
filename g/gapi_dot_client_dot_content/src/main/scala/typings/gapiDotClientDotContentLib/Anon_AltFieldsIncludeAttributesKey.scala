@@ -45,9 +45,7 @@ object Anon_AltFieldsIncludeAttributesKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIncludeAttributesKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantId")(merchantId)
-    __obj.updateDynamic("productId")(productId)
+    val __obj = js.Dynamic.literal(merchantId = merchantId, productId = productId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeAttributes)) __obj.updateDynamic("includeAttributes")(includeAttributes)

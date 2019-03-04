@@ -18,10 +18,8 @@ object PushAdminPromise {
     deviceRegistrations: PushDeviceRegistrationsPromise,
     publish: js.Function2[js.Any, js.Any, js.Promise[scala.Unit]]
   ): PushAdminPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channelSubscriptions")(channelSubscriptions)
-    __obj.updateDynamic("deviceRegistrations")(deviceRegistrations)
-    __obj.updateDynamic("publish")(publish)
+    val __obj = js.Dynamic.literal(channelSubscriptions = channelSubscriptions, deviceRegistrations = deviceRegistrations, publish = publish)
+  
     __obj.asInstanceOf[PushAdminPromise]
   }
 }

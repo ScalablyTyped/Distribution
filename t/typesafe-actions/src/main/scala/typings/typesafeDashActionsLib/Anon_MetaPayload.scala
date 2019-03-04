@@ -15,9 +15,8 @@ trait Anon_MetaPayload[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.Str
 object Anon_MetaPayload {
   @scala.inline
   def apply[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.StringType */, P, M](meta: M, payload: P, `type`: T): Anon_MetaPayload[T, P, M] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MetaPayload[T, P, M]]
   }
 }

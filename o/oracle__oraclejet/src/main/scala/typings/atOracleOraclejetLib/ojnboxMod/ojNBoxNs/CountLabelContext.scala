@@ -23,12 +23,8 @@ object CountLabelContext {
     row: java.lang.String,
     totalNodeCount: scala.Double
   ): CountLabelContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("highlightedNodeCount")(highlightedNodeCount)
-    __obj.updateDynamic("nodeCount")(nodeCount)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("totalNodeCount")(totalNodeCount)
+    val __obj = js.Dynamic.literal(column = column, highlightedNodeCount = highlightedNodeCount, nodeCount = nodeCount, row = row, totalNodeCount = totalNodeCount)
+  
     __obj.asInstanceOf[CountLabelContext]
   }
 }

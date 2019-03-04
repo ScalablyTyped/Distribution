@@ -24,9 +24,8 @@ object PlayersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): PlayersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("unhide")(unhide)
+    val __obj = js.Dynamic.literal(hide = hide, unhide = unhide)
+  
     __obj.asInstanceOf[PlayersResource]
   }
 }

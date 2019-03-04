@@ -18,8 +18,7 @@ object Anon_AssignPublicIp {
     assignPublicIp: js.UndefOr[scala.Boolean] = js.undefined,
     securityGroups: js.Array[java.lang.String] = null
   ): Anon_AssignPublicIp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subnets")(subnets)
+    val __obj = js.Dynamic.literal(subnets = subnets)
     if (!js.isUndefined(assignPublicIp)) __obj.updateDynamic("assignPublicIp")(assignPublicIp)
     if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups)
     __obj.asInstanceOf[Anon_AssignPublicIp]

@@ -13,8 +13,7 @@ trait RenderingOptions extends js.Object {
 object RenderingOptions {
   @scala.inline
   def apply(codeSyntaxHighlighting: scala.Boolean, singleLineBreaks: js.UndefOr[scala.Boolean] = js.undefined): RenderingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codeSyntaxHighlighting")(codeSyntaxHighlighting)
+    val __obj = js.Dynamic.literal(codeSyntaxHighlighting = codeSyntaxHighlighting)
     if (!js.isUndefined(singleLineBreaks)) __obj.updateDynamic("singleLineBreaks")(singleLineBreaks)
     __obj.asInstanceOf[RenderingOptions]
   }

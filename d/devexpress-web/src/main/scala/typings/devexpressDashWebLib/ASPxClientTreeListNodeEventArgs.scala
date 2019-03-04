@@ -29,10 +29,8 @@ trait ASPxClientTreeListNodeEventArgs extends ASPxClientEventArgs {
 object ASPxClientTreeListNodeEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, htmlEvent: js.Object, nodeKey: java.lang.String): ASPxClientTreeListNodeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("nodeKey")(nodeKey)
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, nodeKey = nodeKey)
+  
     __obj.asInstanceOf[ASPxClientTreeListNodeEventArgs]
   }
 }

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  val Base64: jsDashBase64Lib.jsDashBase64Mod.`Base64_` = js.native
+  val Base64: jsDashBase64Lib.jsDashBase64Mod.Base64_ = js.native
 }
 

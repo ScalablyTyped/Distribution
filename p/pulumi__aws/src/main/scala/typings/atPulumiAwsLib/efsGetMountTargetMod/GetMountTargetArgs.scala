@@ -15,8 +15,8 @@ trait GetMountTargetArgs extends js.Object {
 object GetMountTargetArgs {
   @scala.inline
   def apply(mountTargetId: java.lang.String): GetMountTargetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mountTargetId")(mountTargetId)
+    val __obj = js.Dynamic.literal(mountTargetId = mountTargetId)
+  
     __obj.asInstanceOf[GetMountTargetArgs]
   }
 }

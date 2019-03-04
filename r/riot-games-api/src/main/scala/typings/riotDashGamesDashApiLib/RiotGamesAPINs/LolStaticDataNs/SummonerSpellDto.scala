@@ -58,30 +58,8 @@ object SummonerSpellDto {
     tooltip: java.lang.String,
     vars: js.Array[SpellVarsDto]
   ): SummonerSpellDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cooldown")(cooldown)
-    __obj.updateDynamic("cooldownBurn")(cooldownBurn)
-    __obj.updateDynamic("cost")(cost)
-    __obj.updateDynamic("costBurn")(costBurn)
-    __obj.updateDynamic("costType")(costType)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("effect")(effect)
-    __obj.updateDynamic("effectBurn")(effectBurn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("leveltip")(leveltip)
-    __obj.updateDynamic("maxrank")(maxrank)
-    __obj.updateDynamic("modes")(modes)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    __obj.updateDynamic("rangeBurn")(rangeBurn)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("sanitizedDescription")(sanitizedDescription)
-    __obj.updateDynamic("sanitizedTooltip")(sanitizedTooltip)
-    __obj.updateDynamic("summonerLevel")(summonerLevel)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(cooldown = cooldown, cooldownBurn = cooldownBurn, cost = cost, costBurn = costBurn, costType = costType, description = description, effect = effect, effectBurn = effectBurn, id = id, image = image, key = key, leveltip = leveltip, maxrank = maxrank, modes = modes, name = name, range = range.asInstanceOf[js.Any], rangeBurn = rangeBurn, resource = resource, sanitizedDescription = sanitizedDescription, sanitizedTooltip = sanitizedTooltip, summonerLevel = summonerLevel, tooltip = tooltip, vars = vars)
+  
     __obj.asInstanceOf[SummonerSpellDto]
   }
 }

@@ -22,11 +22,8 @@ object openssh_DirectStreamLocalChannelInfo {
     `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`direct-streamlocal@opensshDOTcom`,
     window: scala.Double
   ): openssh_DirectStreamLocalChannelInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("packetSize")(packetSize)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(data = data, packetSize = packetSize, sender = sender, window = window)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[openssh_DirectStreamLocalChannelInfo]
   }
 }

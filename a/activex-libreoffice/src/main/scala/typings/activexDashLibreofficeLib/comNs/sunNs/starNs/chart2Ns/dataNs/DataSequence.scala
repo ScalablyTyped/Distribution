@@ -91,41 +91,8 @@ object DataSequence {
     replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): DataSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("HiddenValues")(HiddenValues)
-    __obj.updateDynamic("IncludeHiddenCells")(IncludeHiddenCells)
-    __obj.updateDynamic("NumericalData")(NumericalData)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Role")(Role)
-    __obj.updateDynamic("SourceRangeRepresentation")(SourceRangeRepresentation)
-    __obj.updateDynamic("TextualData")(TextualData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("generateLabel")(generateLabel)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getNumberFormatKeyByIndex")(getNumberFormatKeyByIndex)
-    __obj.updateDynamic("getNumericalData")(getNumericalData)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSourceRangeRepresentation")(getSourceRangeRepresentation)
-    __obj.updateDynamic("getTextualData")(getTextualData)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Count = Count, Data = Data, ElementType = ElementType, HiddenValues = HiddenValues, IncludeHiddenCells = IncludeHiddenCells, NumericalData = NumericalData, PropertySetInfo = PropertySetInfo, Role = Role, SourceRangeRepresentation = SourceRangeRepresentation, TextualData = TextualData, acquire = acquire, addModifyListener = addModifyListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createClone = createClone, generateLabel = generateLabel, getByIndex = getByIndex, getCount = getCount, getData = getData, getElementType = getElementType, getNumberFormatKeyByIndex = getNumberFormatKeyByIndex, getNumericalData = getNumericalData, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSourceRangeRepresentation = getSourceRangeRepresentation, getTextualData = getTextualData, hasElements = hasElements, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, replaceByIndex = replaceByIndex, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[DataSequence]
   }
 }

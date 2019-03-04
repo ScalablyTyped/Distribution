@@ -41,8 +41,7 @@ object AuditEventSource {
     site: java.lang.String = null,
     `type`: js.Array[Coding] = null
   ): AuditEventSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_site != null) __obj.updateDynamic("_site")(_site)

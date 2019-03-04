@@ -19,9 +19,8 @@ trait AccountMyWorkResult extends js.Object {
 object AccountMyWorkResult {
   @scala.inline
   def apply(querySizeLimitExceeded: scala.Boolean, workItemDetails: js.Array[AccountWorkWorkItemModel]): AccountMyWorkResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("querySizeLimitExceeded")(querySizeLimitExceeded)
-    __obj.updateDynamic("workItemDetails")(workItemDetails)
+    val __obj = js.Dynamic.literal(querySizeLimitExceeded = querySizeLimitExceeded, workItemDetails = workItemDetails)
+  
     __obj.asInstanceOf[AccountMyWorkResult]
   }
 }

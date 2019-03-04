@@ -68,8 +68,7 @@ object Anon_AltFieldsId {
     tlang: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

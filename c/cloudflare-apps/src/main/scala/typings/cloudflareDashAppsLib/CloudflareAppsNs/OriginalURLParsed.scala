@@ -22,12 +22,8 @@ object OriginalURLParsed {
     query: URLQuery,
     scheme: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.https | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.http
   ): OriginalURLParsed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fragment = fragment, host = host, path = path, query = query, scheme = scheme.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OriginalURLParsed]
   }
 }

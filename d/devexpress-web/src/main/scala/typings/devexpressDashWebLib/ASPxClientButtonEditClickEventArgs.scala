@@ -19,9 +19,8 @@ trait ASPxClientButtonEditClickEventArgs extends ASPxClientProcessingModeEventAr
 object ASPxClientButtonEditClickEventArgs {
   @scala.inline
   def apply(buttonIndex: scala.Double, processOnServer: scala.Boolean): ASPxClientButtonEditClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonIndex")(buttonIndex)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(buttonIndex = buttonIndex, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientButtonEditClickEventArgs]
   }
 }

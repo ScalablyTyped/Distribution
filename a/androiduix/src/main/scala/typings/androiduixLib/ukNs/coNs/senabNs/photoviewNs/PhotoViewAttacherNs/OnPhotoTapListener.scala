@@ -14,8 +14,8 @@ object OnPhotoTapListener {
   def apply(
     onPhotoTap: js.Function3[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double, scala.Unit]
   ): OnPhotoTapListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPhotoTap")(onPhotoTap)
+    val __obj = js.Dynamic.literal(onPhotoTap = onPhotoTap)
+  
     __obj.asInstanceOf[OnPhotoTapListener]
   }
 }

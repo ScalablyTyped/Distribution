@@ -41,10 +41,7 @@ object ReactHolderProp {
     text: java.lang.String = null,
     theme: java.lang.String = null
   ): ReactHolderProp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("updateOnResize")(updateOnResize)
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], updateOnResize = updateOnResize, width = width.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (align != null) __obj.updateDynamic("align")(align)
     if (bg != null) __obj.updateDynamic("bg")(bg)

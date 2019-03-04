@@ -22,12 +22,8 @@ object EventSegment {
     isStart: scala.Boolean,
     start: momentLib.momentMod.momentNs.Moment
   ): EventSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("isEnd")(isEnd)
-    __obj.updateDynamic("isStart")(isStart)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, event = event, isEnd = isEnd, isStart = isStart, start = start)
+  
     __obj.asInstanceOf[EventSegment]
   }
 }

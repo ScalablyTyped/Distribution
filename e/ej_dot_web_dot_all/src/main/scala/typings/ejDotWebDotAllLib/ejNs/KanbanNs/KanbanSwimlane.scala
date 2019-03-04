@@ -28,10 +28,8 @@ object KanbanSwimlane {
     expandAll: js.Function0[scala.Unit],
     toggle: js.Function1[js.Any, scala.Unit]
   ): KanbanSwimlane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseAll")(collapseAll)
-    __obj.updateDynamic("expandAll")(expandAll)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(collapseAll = collapseAll, expandAll = expandAll, toggle = toggle)
+  
     __obj.asInstanceOf[KanbanSwimlane]
   }
 }

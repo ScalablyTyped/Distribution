@@ -77,8 +77,7 @@ object Column {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): Column = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultHidden)) __obj.updateDynamic("defaultHidden")(defaultHidden)
     if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)

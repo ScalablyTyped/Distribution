@@ -36,19 +36,8 @@ object RegionsMixin {
     removeRegions: js.Any,
     showChildView: js.Any
   ): RegionsMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRegion")(addRegion)
-    __obj.updateDynamic("addRegions")(addRegions)
-    __obj.updateDynamic("detachChildView")(detachChildView)
-    __obj.updateDynamic("emptyRegions")(emptyRegions)
-    __obj.updateDynamic("getChildView")(getChildView)
-    __obj.updateDynamic("getRegion")(getRegion)
-    __obj.updateDynamic("getRegions")(getRegions)
-    __obj.updateDynamic("hasRegion")(hasRegion)
-    __obj.updateDynamic("regionClass")(regionClass)
-    __obj.updateDynamic("removeRegion")(removeRegion)
-    __obj.updateDynamic("removeRegions")(removeRegions)
-    __obj.updateDynamic("showChildView")(showChildView)
+    val __obj = js.Dynamic.literal(addRegion = addRegion, addRegions = addRegions, detachChildView = detachChildView, emptyRegions = emptyRegions, getChildView = getChildView, getRegion = getRegion, getRegions = getRegions, hasRegion = hasRegion, regionClass = regionClass, removeRegion = removeRegion, removeRegions = removeRegions, showChildView = showChildView)
+  
     __obj.asInstanceOf[RegionsMixin]
   }
 }

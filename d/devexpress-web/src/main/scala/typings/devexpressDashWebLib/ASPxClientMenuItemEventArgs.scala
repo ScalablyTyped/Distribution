@@ -19,8 +19,8 @@ trait ASPxClientMenuItemEventArgs extends ASPxClientEventArgs {
 object ASPxClientMenuItemEventArgs {
   @scala.inline
   def apply(item: ASPxClientMenuItem): ASPxClientMenuItemEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(item = item)
+  
     __obj.asInstanceOf[ASPxClientMenuItemEventArgs]
   }
 }

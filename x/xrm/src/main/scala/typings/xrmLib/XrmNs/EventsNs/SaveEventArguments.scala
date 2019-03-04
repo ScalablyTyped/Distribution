@@ -46,10 +46,8 @@ object SaveEventArguments {
     isDefaultPrevented: js.Function0[scala.Boolean],
     preventDefault: js.Function0[scala.Unit]
   ): SaveEventArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSaveMode")(getSaveMode)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
+    val __obj = js.Dynamic.literal(getSaveMode = getSaveMode, isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault)
+  
     __obj.asInstanceOf[SaveEventArguments]
   }
 }

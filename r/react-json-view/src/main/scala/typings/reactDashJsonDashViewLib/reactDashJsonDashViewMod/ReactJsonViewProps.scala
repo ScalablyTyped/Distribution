@@ -198,8 +198,7 @@ object ReactJsonViewProps {
     theme: ThemeKeys | ThemeObject = null,
     validationMessage: java.lang.String = null
   ): ReactJsonViewProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (collapseStringsAfterLength != null) __obj.updateDynamic("collapseStringsAfterLength")(collapseStringsAfterLength.asInstanceOf[js.Any])
     if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])

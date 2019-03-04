@@ -13,9 +13,8 @@ trait Credentials extends js.Object {
 object Credentials {
   @scala.inline
   def apply(client_email: java.lang.String, private_key: java.lang.String): Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_email")(client_email)
-    __obj.updateDynamic("private_key")(private_key)
+    val __obj = js.Dynamic.literal(client_email = client_email, private_key = private_key)
+  
     __obj.asInstanceOf[Credentials]
   }
 }

@@ -18,10 +18,8 @@ object SwiftClickObject {
     replaceNodeNamesToTrack: js.Function1[js.Array[java.lang.String], scala.Unit],
     useCssParser: js.Function1[scala.Boolean, scala.Unit]
   ): SwiftClickObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNodeNamesToTrack")(addNodeNamesToTrack)
-    __obj.updateDynamic("replaceNodeNamesToTrack")(replaceNodeNamesToTrack)
-    __obj.updateDynamic("useCssParser")(useCssParser)
+    val __obj = js.Dynamic.literal(addNodeNamesToTrack = addNodeNamesToTrack, replaceNodeNamesToTrack = replaceNodeNamesToTrack, useCssParser = useCssParser)
+  
     __obj.asInstanceOf[SwiftClickObject]
   }
 }

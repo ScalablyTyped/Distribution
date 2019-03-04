@@ -18,12 +18,8 @@ object IProcedureResult {
     returnValue: js.Any,
     rowsAffected: js.Array[scala.Double]
   ): IProcedureResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("recordset")(recordset)
-    __obj.updateDynamic("recordsets")(recordsets)
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("rowsAffected")(rowsAffected)
+    val __obj = js.Dynamic.literal(output = output, recordset = recordset, recordsets = recordsets, returnValue = returnValue, rowsAffected = rowsAffected)
+  
     __obj.asInstanceOf[IProcedureResult[T]]
   }
 }

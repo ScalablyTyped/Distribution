@@ -58,30 +58,8 @@ object Word {
     symbols: js.Array[Symbol],
     text: java.lang.String
   ): Word = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("bbox")(bbox)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("choices")(choices)
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("font_id")(font_id)
-    __obj.updateDynamic("font_name")(font_name)
-    __obj.updateDynamic("font_size")(font_size)
-    __obj.updateDynamic("in_dictionary")(in_dictionary)
-    __obj.updateDynamic("is_bold")(is_bold)
-    __obj.updateDynamic("is_italic")(is_italic)
-    __obj.updateDynamic("is_monospace")(is_monospace)
-    __obj.updateDynamic("is_numeric")(is_numeric)
-    __obj.updateDynamic("is_serif")(is_serif)
-    __obj.updateDynamic("is_smallcaps")(is_smallcaps)
-    __obj.updateDynamic("is_underlined")(is_underlined)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("paragraph")(paragraph)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, block = block, choices = choices, confidence = confidence, direction = direction, font_id = font_id, font_name = font_name, font_size = font_size, in_dictionary = in_dictionary, is_bold = is_bold, is_italic = is_italic, is_monospace = is_monospace, is_numeric = is_numeric, is_serif = is_serif, is_smallcaps = is_smallcaps, is_underlined = is_underlined, language = language, line = line, page = page, paragraph = paragraph, symbols = symbols, text = text)
+  
     __obj.asInstanceOf[Word]
   }
 }

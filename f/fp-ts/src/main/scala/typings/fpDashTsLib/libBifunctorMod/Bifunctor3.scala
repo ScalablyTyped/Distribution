@@ -25,9 +25,8 @@ object Bifunctor3 {
       fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
     ]
   ): Bifunctor3[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("bimap")(bimap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], bimap = bimap)
+  
     __obj.asInstanceOf[Bifunctor3[F]]
   }
 }

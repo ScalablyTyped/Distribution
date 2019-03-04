@@ -16,8 +16,7 @@ object Anon_CellContext {
     cellContext: atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.CellContext[K, D],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_CellContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellContext")(cellContext)
+    val __obj = js.Dynamic.literal(cellContext = cellContext)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CellContext[K, D]]
   }

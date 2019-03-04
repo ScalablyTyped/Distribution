@@ -24,8 +24,7 @@ object Anon_DataHeaders {
     overrideMimeType: java.lang.String = null,
     responseType: java.lang.String = null
   ): Anon_DataHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)

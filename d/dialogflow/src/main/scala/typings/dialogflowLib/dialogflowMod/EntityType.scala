@@ -22,12 +22,8 @@ object EntityType {
     kind: EntityKind,
     name: java.lang.String
   ): EntityType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoExpansionMode")(autoExpansionMode)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("entities")(entities)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(autoExpansionMode = autoExpansionMode, displayName = displayName, entities = entities, kind = kind, name = name)
+  
     __obj.asInstanceOf[EntityType]
   }
 }

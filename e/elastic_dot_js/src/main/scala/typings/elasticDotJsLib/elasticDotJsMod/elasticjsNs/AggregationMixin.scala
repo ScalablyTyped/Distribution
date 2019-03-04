@@ -38,11 +38,8 @@ object AggregationMixin {
     aggregation: js.Function1[Aggregation, AggregationMixin],
     toJSON: js.Function0[js.Any]
   ): AggregationMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, toJSON = toJSON)
+  
     __obj.asInstanceOf[AggregationMixin]
   }
 }

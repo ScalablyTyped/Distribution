@@ -12,8 +12,8 @@ trait Anon_DelimiterArray extends js.Object {
 object Anon_DelimiterArray {
   @scala.inline
   def apply(delimiter: java.lang.String | nodeLib.Buffer | js.Array[scala.Double]): Anon_DelimiterArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DelimiterArray]
   }
 }

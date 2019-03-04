@@ -35,15 +35,7 @@ object FullMetadata {
     customMetadata: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     md5Hash: java.lang.String = null
   ): FullMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("fullPath")(fullPath)
-    __obj.updateDynamic("generation")(generation)
-    __obj.updateDynamic("metageneration")(metageneration)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("timeCreated")(timeCreated)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(bucket = bucket, fullPath = fullPath, generation = generation, metageneration = metageneration, name = name, size = size, timeCreated = timeCreated, updated = updated)
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
     if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)

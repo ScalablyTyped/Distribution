@@ -22,12 +22,8 @@ object TokenPayload {
     grant_type: java.lang.String,
     redirect_uri: java.lang.String
   ): TokenPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("grant_type")(grant_type)
-    __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, code = code, grant_type = grant_type, redirect_uri = redirect_uri)
+  
     __obj.asInstanceOf[TokenPayload]
   }
 }

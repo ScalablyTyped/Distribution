@@ -40,14 +40,7 @@ object ReqProps {
     strictDN: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null
   ): ReqProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    __obj.updateDynamic("includeMembership")(includeMembership)
-    __obj.updateDynamic("sizeLimit")(sizeLimit)
-    __obj.updateDynamic("timeLimit")(timeLimit)
-    __obj.updateDynamic("tlsOptions")(tlsOptions)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(attributes = attributes, filter = filter.asInstanceOf[js.Any], includeMembership = includeMembership, sizeLimit = sizeLimit, timeLimit = timeLimit, tlsOptions = tlsOptions, url = url)
     if (baseDN != null) __obj.updateDynamic("baseDN")(baseDN)
     if (bindCredentials != null) __obj.updateDynamic("bindCredentials")(bindCredentials)
     if (bindDN != null) __obj.updateDynamic("bindDN")(bindDN)

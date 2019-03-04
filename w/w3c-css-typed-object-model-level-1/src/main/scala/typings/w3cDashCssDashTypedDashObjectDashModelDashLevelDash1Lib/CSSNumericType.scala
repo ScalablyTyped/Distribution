@@ -28,15 +28,8 @@ object CSSNumericType {
     resolution: scala.Double,
     time: scala.Double
   ): CSSNumericType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("flex")(flex)
-    __obj.updateDynamic("frequency")(frequency)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("percentHint")(percentHint)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(angle = angle, flex = flex, frequency = frequency, length = length, percent = percent, percentHint = percentHint, resolution = resolution, time = time)
+  
     __obj.asInstanceOf[CSSNumericType]
   }
 }

@@ -23,11 +23,8 @@ object XStringMapping {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStringMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("mapStrings")(mapStrings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, mapStrings = mapStrings, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStringMapping]
   }
 }

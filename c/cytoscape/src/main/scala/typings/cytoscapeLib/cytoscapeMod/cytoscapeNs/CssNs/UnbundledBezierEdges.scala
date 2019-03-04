@@ -48,8 +48,10 @@ object UnbundledBezierEdges {
     `control-point-weights`: java.lang.String,
     `edge-distances`: scala.Double
   ): UnbundledBezierEdges = {
-    val __obj = js.Dynamic.literal(`control-point-distances` = `control-point-distances`, `control-point-weights` = `control-point-weights`, `edge-distances` = `edge-distances`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("control-point-distances")(`control-point-distances`)
+    __obj.updateDynamic("control-point-weights")(`control-point-weights`)
+    __obj.updateDynamic("edge-distances")(`edge-distances`)
     __obj.asInstanceOf[UnbundledBezierEdges]
   }
 }

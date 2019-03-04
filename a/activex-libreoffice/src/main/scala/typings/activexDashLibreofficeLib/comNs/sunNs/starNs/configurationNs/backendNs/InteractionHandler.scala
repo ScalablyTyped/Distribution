@@ -35,12 +35,8 @@ object InteractionHandler {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): InteractionHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, handle = handle, initialize = initialize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[InteractionHandler]
   }
 }

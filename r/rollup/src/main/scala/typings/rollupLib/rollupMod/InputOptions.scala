@@ -56,8 +56,7 @@ object InputOptions {
     treeshake: scala.Boolean | TreeshakingOptions = null,
     watch: WatcherOptions = null
   ): InputOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     if (acorn != null) __obj.updateDynamic("acorn")(acorn)
     if (acornInjectPlugins != null) __obj.updateDynamic("acornInjectPlugins")(acornInjectPlugins)
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])

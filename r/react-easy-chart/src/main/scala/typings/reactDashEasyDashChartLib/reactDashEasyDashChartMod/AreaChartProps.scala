@@ -38,8 +38,7 @@ object AreaChartProps {
     yTicks: scala.Int | scala.Double = null,
     yType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null
   ): AreaChartProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (axisLabels != null) __obj.updateDynamic("axisLabels")(axisLabels)
     if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)

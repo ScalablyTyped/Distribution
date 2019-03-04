@@ -18,10 +18,8 @@ object IParentElement {
     isReadOnly: scala.Boolean,
     removeElement: js.Function1[IElement, scala.Boolean]
   ): IParentElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addElement")(addElement)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("removeElement")(removeElement)
+    val __obj = js.Dynamic.literal(addElement = addElement, isReadOnly = isReadOnly, removeElement = removeElement)
+  
     __obj.asInstanceOf[IParentElement]
   }
 }

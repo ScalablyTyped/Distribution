@@ -22,12 +22,8 @@ object Anon_Mono {
     sansHebrew: java.lang.String,
     serif: java.lang.String
   ): Anon_Mono = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mono")(mono)
-    __obj.updateDynamic("sans")(sans)
-    __obj.updateDynamic("sansCondensed")(sansCondensed)
-    __obj.updateDynamic("sansHebrew")(sansHebrew)
-    __obj.updateDynamic("serif")(serif)
+    val __obj = js.Dynamic.literal(mono = mono, sans = sans, sansCondensed = sansCondensed, sansHebrew = sansHebrew, serif = serif)
+  
     __obj.asInstanceOf[Anon_Mono]
   }
 }

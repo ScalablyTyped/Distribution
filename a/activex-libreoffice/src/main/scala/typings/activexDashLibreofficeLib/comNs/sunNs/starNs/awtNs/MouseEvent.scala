@@ -49,14 +49,8 @@ object MouseEvent {
     X: scala.Double,
     Y: scala.Double
   ): MouseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Buttons")(Buttons)
-    __obj.updateDynamic("ClickCount")(ClickCount)
-    __obj.updateDynamic("Modifiers")(Modifiers)
-    __obj.updateDynamic("PopupTrigger")(PopupTrigger)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Buttons = Buttons, ClickCount = ClickCount, Modifiers = Modifiers, PopupTrigger = PopupTrigger, Source = Source, X = X, Y = Y)
+  
     __obj.asInstanceOf[MouseEvent]
   }
 }

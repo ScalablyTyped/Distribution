@@ -20,10 +20,8 @@ object InputValidationItem {
     `type`: java.lang.String,
     value: java.lang.String
   ): InputValidationItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isValid = isValid, reason = reason, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InputValidationItem]
   }
 }

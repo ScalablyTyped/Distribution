@@ -22,8 +22,7 @@ object Anon_Autoprovision {
     driverOpts: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     labels: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Anon_Autoprovision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(scope = scope)
     if (!js.isUndefined(autoprovision)) __obj.updateDynamic("autoprovision")(autoprovision)
     if (driver != null) __obj.updateDynamic("driver")(driver)
     if (driverOpts != null) __obj.updateDynamic("driverOpts")(driverOpts)

@@ -12,8 +12,8 @@ trait Anon_PagerItem extends js.Object {
 object Anon_PagerItem {
   @scala.inline
   def apply(PagerItemNs: js.Any): Anon_PagerItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PagerItemNs")(PagerItemNs)
+    val __obj = js.Dynamic.literal(PagerItemNs = PagerItemNs)
+  
     __obj.asInstanceOf[Anon_PagerItem]
   }
 }

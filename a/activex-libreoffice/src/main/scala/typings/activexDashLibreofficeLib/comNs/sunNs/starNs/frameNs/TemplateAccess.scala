@@ -30,23 +30,8 @@ object TemplateAccess {
     storeTemplate: js.Function3[java.lang.String, java.lang.String, XStorable, scala.Boolean],
     update: js.Function0[scala.Unit]
   ): TemplateAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addGroup")(addGroup)
-    __obj.updateDynamic("addTemplate")(addTemplate)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeGroup")(removeGroup)
-    __obj.updateDynamic("removeTemplate")(removeTemplate)
-    __obj.updateDynamic("renameGroup")(renameGroup)
-    __obj.updateDynamic("renameTemplate")(renameTemplate)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("storeTemplate")(storeTemplate)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(Content = Content, Locale = Locale, acquire = acquire, addGroup = addGroup, addTemplate = addTemplate, getContent = getContent, getLocale = getLocale, queryInterface = queryInterface, release = release, removeGroup = removeGroup, removeTemplate = removeTemplate, renameGroup = renameGroup, renameTemplate = renameTemplate, setLocale = setLocale, storeTemplate = storeTemplate, update = update)
+  
     __obj.asInstanceOf[TemplateAccess]
   }
 }

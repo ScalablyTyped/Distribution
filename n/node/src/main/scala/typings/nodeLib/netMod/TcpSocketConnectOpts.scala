@@ -26,8 +26,7 @@ object TcpSocketConnectOpts {
     localPort: scala.Int | scala.Double = null,
     lookup: LookupFunction = null
   ): TcpSocketConnectOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)

@@ -58,15 +58,8 @@ object AOIEvaluator {
     `type`: java.lang.String,
     useJobAOI: scala.Boolean
   ): AOIEvaluator = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aoi")(aoi)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("relation")(relation)
-    __obj.updateDynamic("useJobAOI")(useJobAOI)
+    val __obj = js.Dynamic.literal(aoi = aoi, constructor = constructor, hasOwnProperty = hasOwnProperty, inverse = inverse, name = name, propertyIsEnumerable = propertyIsEnumerable, relation = relation, useJobAOI = useJobAOI)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AOIEvaluator]
   }
 }

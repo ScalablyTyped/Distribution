@@ -12,8 +12,8 @@ trait Anon_UnitOfTime extends js.Object {
 object Anon_UnitOfTime {
   @scala.inline
   def apply(unitOfTimeNs: js.Any): Anon_UnitOfTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unitOfTimeNs")(unitOfTimeNs)
+    val __obj = js.Dynamic.literal(unitOfTimeNs = unitOfTimeNs)
+  
     __obj.asInstanceOf[Anon_UnitOfTime]
   }
 }

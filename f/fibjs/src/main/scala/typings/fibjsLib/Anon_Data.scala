@@ -18,10 +18,8 @@ object Anon_Data {
     encode: js.Function1[Class_Buffer, java.lang.String],
     hexNs: js.Any
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("hexNs")(hexNs)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, hexNs = hexNs)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

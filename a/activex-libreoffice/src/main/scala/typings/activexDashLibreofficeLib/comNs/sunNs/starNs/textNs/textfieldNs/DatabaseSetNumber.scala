@@ -89,40 +89,8 @@ object DatabaseSetNumber {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): DatabaseSetNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("AnchorType")(AnchorType)
-    __obj.updateDynamic("AnchorTypes")(AnchorTypes)
-    __obj.updateDynamic("DataBaseName")(DataBaseName)
-    __obj.updateDynamic("DataBaseResource")(DataBaseResource)
-    __obj.updateDynamic("DataBaseURL")(DataBaseURL)
-    __obj.updateDynamic("DataCommandType")(DataCommandType)
-    __obj.updateDynamic("DataTableName")(DataTableName)
-    __obj.updateDynamic("IsFieldDisplayed")(IsFieldDisplayed)
-    __obj.updateDynamic("IsFieldUsed")(IsFieldUsed)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SetNumber")(SetNumber)
-    __obj.updateDynamic("TextFieldMaster")(TextFieldMaster)
-    __obj.updateDynamic("TextWrap")(TextWrap)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("attachTextFieldMaster")(attachTextFieldMaster)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getPresentation")(getPresentation)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getTextFieldMaster")(getTextFieldMaster)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorType = AnchorType, AnchorTypes = AnchorTypes, DataBaseName = DataBaseName, DataBaseResource = DataBaseResource, DataBaseURL = DataBaseURL, DataCommandType = DataCommandType, DataTableName = DataTableName, IsFieldDisplayed = IsFieldDisplayed, IsFieldUsed = IsFieldUsed, NumberingType = NumberingType, PropertySetInfo = PropertySetInfo, SetNumber = SetNumber, TextFieldMaster = TextFieldMaster, TextWrap = TextWrap, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attach = attach, attachTextFieldMaster = attachTextFieldMaster, dispose = dispose, getAnchor = getAnchor, getPresentation = getPresentation, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getTextFieldMaster = getTextFieldMaster, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[DatabaseSetNumber]
   }
 }

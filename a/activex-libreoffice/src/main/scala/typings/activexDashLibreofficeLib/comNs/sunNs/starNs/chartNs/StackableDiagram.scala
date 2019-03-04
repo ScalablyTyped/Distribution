@@ -20,9 +20,8 @@ trait StackableDiagram extends js.Object {
 object StackableDiagram {
   @scala.inline
   def apply(Percent: scala.Boolean, Stacked: scala.Boolean): StackableDiagram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Percent")(Percent)
-    __obj.updateDynamic("Stacked")(Stacked)
+    val __obj = js.Dynamic.literal(Percent = Percent, Stacked = Stacked)
+  
     __obj.asInstanceOf[StackableDiagram]
   }
 }

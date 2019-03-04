@@ -12,8 +12,8 @@ trait AdviceStatic extends js.Object {
 object AdviceStatic {
   @scala.inline
   def apply(withAdvice: js.Function0[js.Function]): AdviceStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withAdvice")(withAdvice)
+    val __obj = js.Dynamic.literal(withAdvice = withAdvice)
+  
     __obj.asInstanceOf[AdviceStatic]
   }
 }

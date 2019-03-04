@@ -32,11 +32,8 @@ object SendData {
     Key: java.lang.String,
     Location: java.lang.String
   ): SendData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bucket")(Bucket)
-    __obj.updateDynamic("ETag")(ETag)
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("Location")(Location)
+    val __obj = js.Dynamic.literal(Bucket = Bucket, ETag = ETag, Key = Key, Location = Location)
+  
     __obj.asInstanceOf[SendData]
   }
 }

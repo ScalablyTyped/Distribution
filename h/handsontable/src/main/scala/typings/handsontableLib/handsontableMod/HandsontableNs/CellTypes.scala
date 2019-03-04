@@ -30,16 +30,8 @@ object CellTypes {
     text: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Text,
     time: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Time
   ): CellTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocomplete")(autocomplete)
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dropdown")(dropdown)
-    __obj.updateDynamic("handsontable")(handsontable)
-    __obj.updateDynamic("numeric")(numeric)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, checkbox = checkbox, date = date, dropdown = dropdown, handsontable = handsontable, numeric = numeric, password = password, text = text, time = time)
+  
     __obj.asInstanceOf[CellTypes]
   }
 }

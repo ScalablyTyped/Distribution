@@ -26,9 +26,8 @@ object ChangeFloatingObjectAbsolutePositionCommand {
     execute: js.Function1[FloatingObjectAbsolutePositionSettings, scala.Boolean],
     getState: js.Function0[js.Any]
   ): ChangeFloatingObjectAbsolutePositionCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[ChangeFloatingObjectAbsolutePositionCommand]
   }
 }

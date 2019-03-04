@@ -12,8 +12,8 @@ trait SuggestionHighlightedParams extends js.Object {
 object SuggestionHighlightedParams {
   @scala.inline
   def apply(suggestion: js.Any): SuggestionHighlightedParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("suggestion")(suggestion)
+    val __obj = js.Dynamic.literal(suggestion = suggestion)
+  
     __obj.asInstanceOf[SuggestionHighlightedParams]
   }
 }

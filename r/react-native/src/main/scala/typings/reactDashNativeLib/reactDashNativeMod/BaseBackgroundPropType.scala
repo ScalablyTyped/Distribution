@@ -12,8 +12,8 @@ trait BaseBackgroundPropType extends js.Object {
 object BaseBackgroundPropType {
   @scala.inline
   def apply(`type`: java.lang.String): BaseBackgroundPropType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BaseBackgroundPropType]
   }
 }

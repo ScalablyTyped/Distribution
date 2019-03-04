@@ -51,8 +51,7 @@ object Anon_AltFieldsHeight {
     userIp: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): Anon_AltFieldsHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

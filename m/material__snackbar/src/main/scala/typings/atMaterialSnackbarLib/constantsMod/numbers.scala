@@ -13,8 +13,8 @@ trait numbers
 object numbers {
   @scala.inline
   def apply(MESSAGE_TIMEOUT: atMaterialSnackbarLib.atMaterialSnackbarLibNumbers.`2750`): numbers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MESSAGE_TIMEOUT")(MESSAGE_TIMEOUT)
+    val __obj = js.Dynamic.literal(MESSAGE_TIMEOUT = MESSAGE_TIMEOUT)
+  
     __obj.asInstanceOf[numbers]
   }
 }

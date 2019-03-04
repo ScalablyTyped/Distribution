@@ -18,9 +18,7 @@ object Anon_LaunchTemplateId {
     launchTemplateName: java.lang.String,
     version: java.lang.String = null
   ): Anon_LaunchTemplateId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplateId")(launchTemplateId)
-    __obj.updateDynamic("launchTemplateName")(launchTemplateName)
+    val __obj = js.Dynamic.literal(launchTemplateId = launchTemplateId, launchTemplateName = launchTemplateName)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[Anon_LaunchTemplateId]
   }

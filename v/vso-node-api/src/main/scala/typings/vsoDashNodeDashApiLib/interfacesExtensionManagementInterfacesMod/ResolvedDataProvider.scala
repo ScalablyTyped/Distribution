@@ -17,10 +17,8 @@ trait ResolvedDataProvider extends js.Object {
 object ResolvedDataProvider {
   @scala.inline
   def apply(duration: scala.Double, error: java.lang.String, id: java.lang.String): ResolvedDataProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(duration = duration, error = error, id = id)
+  
     __obj.asInstanceOf[ResolvedDataProvider]
   }
 }

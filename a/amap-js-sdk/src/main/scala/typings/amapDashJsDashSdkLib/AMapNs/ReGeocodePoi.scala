@@ -30,15 +30,8 @@ object ReGeocodePoi {
     tel: java.lang.String,
     `type`: java.lang.String
   ): ReGeocodePoi = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("businessArea")(businessArea)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tel")(tel)
+    val __obj = js.Dynamic.literal(address = address, businessArea = businessArea, direction = direction, distance = distance, id = id, location = location, name = name, tel = tel)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ReGeocodePoi]
   }
 }

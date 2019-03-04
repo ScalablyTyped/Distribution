@@ -20,9 +20,7 @@ object CommandMetadataInput {
     `private`: js.UndefOr[scala.Boolean] = js.undefined,
     validators: js.Array[Validator] = null
   ): CommandMetadataInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(name = name, summary = summary)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
     if (validators != null) __obj.updateDynamic("validators")(validators)
     __obj.asInstanceOf[CommandMetadataInput]

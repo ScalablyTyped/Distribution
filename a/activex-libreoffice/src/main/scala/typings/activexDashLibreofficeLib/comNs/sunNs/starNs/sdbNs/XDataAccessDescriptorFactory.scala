@@ -22,8 +22,8 @@ object XDataAccessDescriptorFactory {
   def apply(
     createDataAccessDescriptor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
   ): XDataAccessDescriptorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDataAccessDescriptor")(createDataAccessDescriptor)
+    val __obj = js.Dynamic.literal(createDataAccessDescriptor = createDataAccessDescriptor)
+  
     __obj.asInstanceOf[XDataAccessDescriptorFactory]
   }
 }

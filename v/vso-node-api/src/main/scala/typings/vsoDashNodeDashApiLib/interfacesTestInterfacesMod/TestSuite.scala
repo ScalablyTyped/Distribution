@@ -60,31 +60,8 @@ object TestSuite {
     text: java.lang.String,
     url: java.lang.String
   ): TestSuite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("areaUri")(areaUri)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("defaultConfigurations")(defaultConfigurations)
-    __obj.updateDynamic("defaultTesters")(defaultTesters)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inheritDefaultConfigurations")(inheritDefaultConfigurations)
-    __obj.updateDynamic("lastError")(lastError)
-    __obj.updateDynamic("lastPopulatedDate")(lastPopulatedDate)
-    __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("queryString")(queryString)
-    __obj.updateDynamic("requirementId")(requirementId)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("suiteType")(suiteType)
-    __obj.updateDynamic("suites")(suites)
-    __obj.updateDynamic("testCaseCount")(testCaseCount)
-    __obj.updateDynamic("testCasesUrl")(testCasesUrl)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(areaUri = areaUri, children = children, defaultConfigurations = defaultConfigurations, defaultTesters = defaultTesters, id = id, inheritDefaultConfigurations = inheritDefaultConfigurations, lastError = lastError, lastPopulatedDate = lastPopulatedDate, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, name = name, parent = parent, plan = plan, project = project, queryString = queryString, requirementId = requirementId, revision = revision, state = state, suiteType = suiteType, suites = suites, testCaseCount = testCaseCount, testCasesUrl = testCasesUrl, text = text, url = url)
+  
     __obj.asInstanceOf[TestSuite]
   }
 }

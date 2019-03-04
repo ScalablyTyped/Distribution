@@ -107,14 +107,8 @@ object SpreadsheetsResource {
     sheets: SheetsResource,
     values: ValuesResource
   ): SpreadsheetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchUpdate")(batchUpdate)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("developerMetadata")(developerMetadata)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getByDataFilter")(getByDataFilter)
-    __obj.updateDynamic("sheets")(sheets)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(batchUpdate = batchUpdate, create = create, developerMetadata = developerMetadata, get = get, getByDataFilter = getByDataFilter, sheets = sheets, values = values)
+  
     __obj.asInstanceOf[SpreadsheetsResource]
   }
 }

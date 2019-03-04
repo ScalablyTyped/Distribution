@@ -37,8 +37,7 @@ object PermissionArgs {
     level: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     stackId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PermissionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(userArn = userArn.asInstanceOf[js.Any])
     if (allowSsh != null) __obj.updateDynamic("allowSsh")(allowSsh.asInstanceOf[js.Any])
     if (allowSudo != null) __obj.updateDynamic("allowSudo")(allowSudo.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

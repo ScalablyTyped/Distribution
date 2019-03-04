@@ -16,9 +16,8 @@ trait GoalResult extends js.Object {
 object GoalResult {
   @scala.inline
   def apply(Divergence: scala.Double, Result: scala.Double): GoalResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Divergence")(Divergence)
-    __obj.updateDynamic("Result")(Result)
+    val __obj = js.Dynamic.literal(Divergence = Divergence, Result = Result)
+  
     __obj.asInstanceOf[GoalResult]
   }
 }

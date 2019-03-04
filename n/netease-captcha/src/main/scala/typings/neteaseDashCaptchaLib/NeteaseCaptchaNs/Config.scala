@@ -52,9 +52,7 @@ object Config {
     protocol: neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.http | neteaseDashCaptchaLib.neteaseDashCaptchaLibStrings.https = null,
     width: scala.Double | java.lang.String = null
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("captchaId")(captchaId)
-    __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(captchaId = captchaId, element = element.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (onReady != null) __obj.updateDynamic("onReady")(onReady)

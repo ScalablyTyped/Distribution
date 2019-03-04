@@ -13,8 +13,7 @@ trait Path extends js.Object {
 object Path {
   @scala.inline
   def apply(key: java.lang.String | scala.Double, prev: Path = null): Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev)
     __obj.asInstanceOf[Path]
   }

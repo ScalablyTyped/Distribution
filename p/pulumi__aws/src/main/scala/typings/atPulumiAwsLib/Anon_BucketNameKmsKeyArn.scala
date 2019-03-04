@@ -22,9 +22,7 @@ object Anon_BucketNameKmsKeyArn {
     objectKeyPrefix: java.lang.String = null,
     topicArn: java.lang.String = null
   ): Anon_BucketNameKmsKeyArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(bucketName = bucketName, position = position)
     if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
     if (objectKeyPrefix != null) __obj.updateDynamic("objectKeyPrefix")(objectKeyPrefix)
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn)

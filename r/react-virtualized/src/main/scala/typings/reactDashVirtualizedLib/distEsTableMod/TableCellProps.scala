@@ -28,12 +28,7 @@ object TableCellProps {
     columnData: js.Any = null,
     parent: js.Any = null
   ): TableCellProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("dataKey")(dataKey)
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("rowData")(rowData)
-    __obj.updateDynamic("rowIndex")(rowIndex)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, dataKey = dataKey, isScrolling = isScrolling, rowData = rowData, rowIndex = rowIndex)
     if (cellData != null) __obj.updateDynamic("cellData")(cellData)
     if (columnData != null) __obj.updateDynamic("columnData")(columnData)
     if (parent != null) __obj.updateDynamic("parent")(parent)

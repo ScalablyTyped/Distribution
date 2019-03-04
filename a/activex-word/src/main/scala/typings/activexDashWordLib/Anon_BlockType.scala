@@ -22,12 +22,8 @@ object Anon_BlockType {
     Range: activexDashWordLib.WordNs.Range,
     Template: java.lang.String
   ): Anon_BlockType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BlockType")(BlockType)
-    __obj.updateDynamic("Category")(Category)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Range")(Range)
-    __obj.updateDynamic("Template")(Template)
+    val __obj = js.Dynamic.literal(BlockType = BlockType, Category = Category, Name = Name, Range = Range, Template = Template)
+  
     __obj.asInstanceOf[Anon_BlockType]
   }
 }

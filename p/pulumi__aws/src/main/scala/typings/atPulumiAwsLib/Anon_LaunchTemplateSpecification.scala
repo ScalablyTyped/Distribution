@@ -13,8 +13,7 @@ trait Anon_LaunchTemplateSpecification extends js.Object {
 object Anon_LaunchTemplateSpecification {
   @scala.inline
   def apply(launchTemplateSpecification: Anon_LaunchTemplateId, overrides: js.Array[Anon_InstanceType] = null): Anon_LaunchTemplateSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplateSpecification")(launchTemplateSpecification)
+    val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     __obj.asInstanceOf[Anon_LaunchTemplateSpecification]
   }

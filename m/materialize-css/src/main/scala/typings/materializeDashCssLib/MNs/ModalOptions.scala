@@ -81,18 +81,8 @@ object ModalOptions {
     preventScrolling: scala.Boolean,
     startingTop: java.lang.String
   ): ModalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dismissible")(dismissible)
-    __obj.updateDynamic("endingTop")(endingTop)
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
-    __obj.updateDynamic("onCloseStart")(onCloseStart)
-    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
-    __obj.updateDynamic("onOpenStart")(onOpenStart)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("outDuration")(outDuration)
-    __obj.updateDynamic("preventScrolling")(preventScrolling)
-    __obj.updateDynamic("startingTop")(startingTop)
+    val __obj = js.Dynamic.literal(dismissible = dismissible, endingTop = endingTop, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, opacity = opacity, outDuration = outDuration, preventScrolling = preventScrolling, startingTop = startingTop)
+  
     __obj.asInstanceOf[ModalOptions]
   }
 }

@@ -34,8 +34,18 @@ object Configuration {
     `set-placeholder-key`: scala.Boolean,
     `short-option-groups`: scala.Boolean
   ): Configuration = {
-    val __obj = js.Dynamic.literal(`boolean-negation` = `boolean-negation`, `camel-case-expansion` = `camel-case-expansion`, `combine-arrays` = `combine-arrays`, `dot-notation` = `dot-notation`, `duplicate-arguments-array` = `duplicate-arguments-array`, `flatten-duplicate-arrays` = `flatten-duplicate-arrays`, `negation-prefix` = `negation-prefix`, `parse-numbers` = `parse-numbers`, `populate--` = `populate--`, `set-placeholder-key` = `set-placeholder-key`, `short-option-groups` = `short-option-groups`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boolean-negation")(`boolean-negation`)
+    __obj.updateDynamic("camel-case-expansion")(`camel-case-expansion`)
+    __obj.updateDynamic("combine-arrays")(`combine-arrays`)
+    __obj.updateDynamic("dot-notation")(`dot-notation`)
+    __obj.updateDynamic("duplicate-arguments-array")(`duplicate-arguments-array`)
+    __obj.updateDynamic("flatten-duplicate-arrays")(`flatten-duplicate-arrays`)
+    __obj.updateDynamic("negation-prefix")(`negation-prefix`)
+    __obj.updateDynamic("parse-numbers")(`parse-numbers`)
+    __obj.updateDynamic("populate--")(`populate--`)
+    __obj.updateDynamic("set-placeholder-key")(`set-placeholder-key`)
+    __obj.updateDynamic("short-option-groups")(`short-option-groups`)
     __obj.asInstanceOf[Configuration]
   }
 }

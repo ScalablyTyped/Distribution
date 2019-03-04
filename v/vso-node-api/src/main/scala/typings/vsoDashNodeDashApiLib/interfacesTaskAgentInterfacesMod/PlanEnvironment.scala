@@ -18,10 +18,8 @@ object PlanEnvironment {
     options: org.scalablytyped.runtime.StringDictionary[JobOption],
     variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): PlanEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mask")(mask)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(mask = mask, options = options, variables = variables)
+  
     __obj.asInstanceOf[PlanEnvironment]
   }
 }

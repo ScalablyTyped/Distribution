@@ -16,9 +16,8 @@ object history {
     push: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit],
     track: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): history = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(push = push, track = track)
+  
     __obj.asInstanceOf[history]
   }
 }

@@ -20,8 +20,7 @@ object JSendObject {
     data: js.Any = null,
     message: java.lang.String = null
   ): JSendObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (message != null) __obj.updateDynamic("message")(message)

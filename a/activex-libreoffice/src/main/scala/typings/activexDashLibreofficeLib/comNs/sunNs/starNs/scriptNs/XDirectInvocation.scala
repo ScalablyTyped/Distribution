@@ -27,12 +27,8 @@ object XDirectInvocation {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDirectInvocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("directInvoke")(directInvoke)
-    __obj.updateDynamic("hasMember")(hasMember)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, directInvoke = directInvoke, hasMember = hasMember, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDirectInvocation]
   }
 }

@@ -72,8 +72,7 @@ object NavigatorIOSProps {
     titleTextColor: java.lang.String = null,
     translucent: js.UndefOr[scala.Boolean] = js.undefined
   ): NavigatorIOSProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialRoute")(initialRoute)
+    val __obj = js.Dynamic.literal(initialRoute = initialRoute)
     if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor)
     if (!js.isUndefined(interactivePopGestureEnabled)) __obj.updateDynamic("interactivePopGestureEnabled")(interactivePopGestureEnabled)
     if (itemWrapperStyle != null) __obj.updateDynamic("itemWrapperStyle")(itemWrapperStyle.asInstanceOf[js.Any])

@@ -32,17 +32,8 @@ object IdentityScope {
     securingHostId: java.lang.String,
     subjectDescriptor: java.lang.String
   ): IdentityScope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("administrators")(administrators)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isGlobal")(isGlobal)
-    __obj.updateDynamic("localScopeId")(localScopeId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("scopeType")(scopeType)
-    __obj.updateDynamic("securingHostId")(securingHostId)
-    __obj.updateDynamic("subjectDescriptor")(subjectDescriptor)
+    val __obj = js.Dynamic.literal(administrators = administrators, id = id, isActive = isActive, isGlobal = isGlobal, localScopeId = localScopeId, name = name, parentId = parentId, scopeType = scopeType, securingHostId = securingHostId, subjectDescriptor = subjectDescriptor)
+  
     __obj.asInstanceOf[IdentityScope]
   }
 }

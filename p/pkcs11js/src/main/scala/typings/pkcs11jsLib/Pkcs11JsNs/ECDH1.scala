@@ -19,9 +19,8 @@ object ECDH1 {
     `type`: scala.Double,
     sharedData: nodeLib.Buffer = null
   ): ECDH1 = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kdf")(kdf)
-    __obj.updateDynamic("publicData")(publicData)
+    val __obj = js.Dynamic.literal(kdf = kdf, publicData = publicData)
+    __obj.updateDynamic("type")(`type`)
     if (sharedData != null) __obj.updateDynamic("sharedData")(sharedData)
     __obj.asInstanceOf[ECDH1]
   }

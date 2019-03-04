@@ -20,11 +20,8 @@ object StateTokenBuilder {
     withMethod: js.Function1[java.lang.String, StateTokenBuilder],
     withTimeout: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, StateTokenBuilder]
   ): StateTokenBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createToken")(createToken)
-    __obj.updateDynamic("withArgument")(withArgument)
-    __obj.updateDynamic("withMethod")(withMethod)
-    __obj.updateDynamic("withTimeout")(withTimeout)
+    val __obj = js.Dynamic.literal(createToken = createToken, withArgument = withArgument, withMethod = withMethod, withTimeout = withTimeout)
+  
     __obj.asInstanceOf[StateTokenBuilder]
   }
 }

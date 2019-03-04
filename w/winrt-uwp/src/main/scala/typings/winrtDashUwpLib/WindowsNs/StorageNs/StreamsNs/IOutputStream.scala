@@ -33,10 +33,8 @@ object IOutputStream {
       winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
     ]
   ): IOutputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("flushAsync")(flushAsync)
-    __obj.updateDynamic("writeAsync")(writeAsync)
+    val __obj = js.Dynamic.literal(close = close, flushAsync = flushAsync, writeAsync = writeAsync)
+  
     __obj.asInstanceOf[IOutputStream]
   }
 }

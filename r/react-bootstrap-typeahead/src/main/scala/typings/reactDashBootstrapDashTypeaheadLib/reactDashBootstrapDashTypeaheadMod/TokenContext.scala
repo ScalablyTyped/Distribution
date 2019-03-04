@@ -22,12 +22,8 @@ object TokenContext {
     onFocus: js.Function1[js.Any, scala.Unit],
     onKeyDown: js.Function1[js.Any, scala.Unit]
   ): TokenContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("onBlur")(onBlur)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("onFocus")(onFocus)
-    __obj.updateDynamic("onKeyDown")(onKeyDown)
+    val __obj = js.Dynamic.literal(active = active, onBlur = onBlur, onClick = onClick, onFocus = onFocus, onKeyDown = onKeyDown)
+  
     __obj.asInstanceOf[TokenContext]
   }
 }

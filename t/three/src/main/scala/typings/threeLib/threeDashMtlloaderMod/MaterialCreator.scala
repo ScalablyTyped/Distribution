@@ -20,7 +20,7 @@ class MaterialCreator () extends js.Object {
   var wrap: scala.Double = js.native
   def convert(materialsInfo: js.Any): js.Any = js.native
   def create(materialName: java.lang.String): threeLib.threeDashCoreMod.Material = js.native
-  def `createMaterial_`(materialName: java.lang.String): threeLib.threeDashCoreMod.Material = js.native
+  def createMaterial_(materialName: java.lang.String): threeLib.threeDashCoreMod.Material = js.native
   def getAsArray(): js.Array[threeLib.threeDashCoreMod.Material] = js.native
   def getIndex(materialName: java.lang.String): threeLib.threeDashCoreMod.Material = js.native
   def getTextureParams(value: java.lang.String, matParams: js.Any): js.Any = js.native

@@ -34,18 +34,8 @@ object TimescaleTier {
     verticalBorderColor: js.Any,
     verticalBorderStyle: js.Any
   ): TimescaleTier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("horizontalBorderColor")(horizontalBorderColor)
-    __obj.updateDynamic("horizontalBorderStyle")(horizontalBorderStyle)
-    __obj.updateDynamic("outerBorderColor")(outerBorderColor)
-    __obj.updateDynamic("textColor")(textColor)
-    __obj.updateDynamic("todayLineColor")(todayLineColor)
-    __obj.updateDynamic("verticalBorderColor")(verticalBorderColor)
-    __obj.updateDynamic("verticalBorderStyle")(verticalBorderStyle)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, font = font, fontSize = fontSize, fontWeight = fontWeight, horizontalBorderColor = horizontalBorderColor, horizontalBorderStyle = horizontalBorderStyle, outerBorderColor = outerBorderColor, textColor = textColor, todayLineColor = todayLineColor, verticalBorderColor = verticalBorderColor, verticalBorderStyle = verticalBorderStyle)
+  
     __obj.asInstanceOf[TimescaleTier]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Decorators extends js.Object {
-  var `__decorators__`: js.UndefOr[
+  var __decorators__ : js.UndefOr[
     js.Array[
       js.Function1[
         /* options */ vueLib.typesOptionsMod.ComponentOptions[
@@ -26,7 +26,7 @@ trait Anon_Decorators extends js.Object {
 object Anon_Decorators {
   @scala.inline
   def apply(
-    `__decorators__`: js.Array[
+    __decorators__ : js.Array[
       js.Function1[
         /* options */ vueLib.typesOptionsMod.ComponentOptions[
           vueLib.typesVueMod.Vue, 
@@ -41,7 +41,7 @@ object Anon_Decorators {
     ] = null
   ): Anon_Decorators = {
     val __obj = js.Dynamic.literal()
-    if (`__decorators__` != null) __obj.updateDynamic("__decorators__")(`__decorators__`)
+    if (__decorators__ != null) __obj.updateDynamic("__decorators__")(__decorators__)
     __obj.asInstanceOf[Anon_Decorators]
   }
 }

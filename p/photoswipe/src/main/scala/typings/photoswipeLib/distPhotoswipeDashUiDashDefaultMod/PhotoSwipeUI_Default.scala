@@ -21,9 +21,8 @@ trait PhotoSwipeUI_Default
 object PhotoSwipeUI_Default {
   @scala.inline
   def apply(init: js.Function0[scala.Unit], update: js.Function0[scala.Unit]): PhotoSwipeUI_Default = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(init = init, update = update)
+  
     __obj.asInstanceOf[PhotoSwipeUI_Default]
   }
 }

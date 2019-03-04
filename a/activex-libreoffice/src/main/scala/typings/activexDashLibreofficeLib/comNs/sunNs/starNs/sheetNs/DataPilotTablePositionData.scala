@@ -39,9 +39,8 @@ trait DataPilotTablePositionData extends js.Object {
 object DataPilotTablePositionData {
   @scala.inline
   def apply(PositionData: js.Any, PositionType: scala.Double): DataPilotTablePositionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PositionData")(PositionData)
-    __obj.updateDynamic("PositionType")(PositionType)
+    val __obj = js.Dynamic.literal(PositionData = PositionData, PositionType = PositionType)
+  
     __obj.asInstanceOf[DataPilotTablePositionData]
   }
 }

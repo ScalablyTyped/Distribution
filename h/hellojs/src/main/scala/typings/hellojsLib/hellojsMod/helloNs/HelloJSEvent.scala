@@ -37,12 +37,8 @@ object HelloJSEvent {
       HelloJSStatic
     ]
   ): HelloJSEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("emitAfter")(emitAfter)
-    __obj.updateDynamic("findEvents")(findEvents)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(emit = emit, emitAfter = emitAfter, findEvents = findEvents, off = off, on = on)
+  
     __obj.asInstanceOf[HelloJSEvent]
   }
 }

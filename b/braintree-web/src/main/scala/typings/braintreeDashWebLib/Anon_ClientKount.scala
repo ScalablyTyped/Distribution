@@ -18,10 +18,8 @@ object Anon_ClientKount {
     kount: scala.Boolean,
     paypal: scala.Boolean
   ): Anon_ClientKount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("kount")(kount)
-    __obj.updateDynamic("paypal")(paypal)
+    val __obj = js.Dynamic.literal(client = client, kount = kount, paypal = paypal)
+  
     __obj.asInstanceOf[Anon_ClientKount]
   }
 }

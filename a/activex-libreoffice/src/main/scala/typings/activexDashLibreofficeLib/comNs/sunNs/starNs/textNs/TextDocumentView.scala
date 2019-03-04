@@ -92,32 +92,8 @@ object TextDocumentView {
     select: js.Function1[js.Any, scala.Boolean],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): TextDocumentView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsConstantSpellcheck")(IsConstantSpellcheck)
-    __obj.updateDynamic("IsHideSpellMarks")(IsHideSpellMarks)
-    __obj.updateDynamic("LineCount")(LineCount)
-    __obj.updateDynamic("PageCount")(PageCount)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("ViewCursor")(ViewCursor)
-    __obj.updateDynamic("ViewSettings")(ViewSettings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getViewCursor")(getViewCursor)
-    __obj.updateDynamic("getViewSettings")(getViewSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(IsConstantSpellcheck = IsConstantSpellcheck, IsHideSpellMarks = IsHideSpellMarks, LineCount = LineCount, PageCount = PageCount, PropertySetInfo = PropertySetInfo, Selection = Selection, ViewCursor = ViewCursor, ViewSettings = ViewSettings, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addSelectionChangeListener = addSelectionChangeListener, addVetoableChangeListener = addVetoableChangeListener, getControl = getControl, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSelection = getSelection, getViewCursor = getViewCursor, getViewSettings = getViewSettings, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeSelectionChangeListener = removeSelectionChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, select = select, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[TextDocumentView]
   }
 }

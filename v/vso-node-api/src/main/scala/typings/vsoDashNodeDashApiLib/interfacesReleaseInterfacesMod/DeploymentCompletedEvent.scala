@@ -22,12 +22,8 @@ object DeploymentCompletedEvent {
     environment: ReleaseEnvironment,
     project: ProjectReference
   ): DeploymentCompletedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("deployment")(deployment)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(comment = comment, data = data, deployment = deployment, environment = environment, project = project)
+  
     __obj.asInstanceOf[DeploymentCompletedEvent]
   }
 }

@@ -23,12 +23,8 @@ object ASPxClientFABActionItem {
     SetText: js.Function1[java.lang.String, scala.Unit],
     SetVisible: js.Function1[scala.Boolean, scala.Unit]
   ): ASPxClientFABActionItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetActionName")(GetActionName)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
+    val __obj = js.Dynamic.literal(GetActionName = GetActionName, GetText = GetText, GetVisible = GetVisible, SetText = SetText, SetVisible = SetVisible)
+  
     __obj.asInstanceOf[ASPxClientFABActionItem]
   }
 }

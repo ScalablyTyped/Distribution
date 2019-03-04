@@ -22,12 +22,8 @@ object IAsyncInfo {
     id: scala.Double,
     status: AsyncStatus
   ): IAsyncInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(cancel = cancel, close = close, errorCode = errorCode, id = id, status = status)
+  
     __obj.asInstanceOf[IAsyncInfo]
   }
 }

@@ -23,9 +23,8 @@ trait CollectionPartitionKey extends js.Object {
 object CollectionPartitionKey {
   @scala.inline
   def apply(kind: PartitionKind, paths: js.Array[java.lang.String]): CollectionPartitionKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("paths")(paths)
+    val __obj = js.Dynamic.literal(kind = kind, paths = paths)
+  
     __obj.asInstanceOf[CollectionPartitionKey]
   }
 }

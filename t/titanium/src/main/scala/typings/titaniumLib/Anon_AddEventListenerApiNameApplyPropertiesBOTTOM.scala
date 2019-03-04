@@ -91,22 +91,8 @@ object Anon_AddEventListenerApiNameApplyPropertiesBOTTOM {
     removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
     setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
   ): Anon_AddEventListenerApiNameApplyPropertiesBOTTOM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("FADE")(FADE)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("TOP")(TOP)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("apiName")(apiName)
-    __obj.updateDynamic("applyProperties")(applyProperties)
-    __obj.updateDynamic("bubbleParent")(bubbleParent)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("getApiName")(getApiName)
-    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, FADE = FADE, LEFT = LEFT, NONE = NONE, RIGHT = RIGHT, TOP = TOP, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+  
     __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBOTTOM]
   }
 }

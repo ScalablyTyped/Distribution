@@ -34,18 +34,8 @@ object EventRecurrence {
     addYearlyRule: js.Function0[RecurrenceRule],
     setTimeZone: js.Function1[java.lang.String, EventRecurrence]
   ): EventRecurrence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDailyExclusion")(addDailyExclusion)
-    __obj.updateDynamic("addDailyRule")(addDailyRule)
-    __obj.updateDynamic("addDate")(addDate)
-    __obj.updateDynamic("addDateExclusion")(addDateExclusion)
-    __obj.updateDynamic("addMonthlyExclusion")(addMonthlyExclusion)
-    __obj.updateDynamic("addMonthlyRule")(addMonthlyRule)
-    __obj.updateDynamic("addWeeklyExclusion")(addWeeklyExclusion)
-    __obj.updateDynamic("addWeeklyRule")(addWeeklyRule)
-    __obj.updateDynamic("addYearlyExclusion")(addYearlyExclusion)
-    __obj.updateDynamic("addYearlyRule")(addYearlyRule)
-    __obj.updateDynamic("setTimeZone")(setTimeZone)
+    val __obj = js.Dynamic.literal(addDailyExclusion = addDailyExclusion, addDailyRule = addDailyRule, addDate = addDate, addDateExclusion = addDateExclusion, addMonthlyExclusion = addMonthlyExclusion, addMonthlyRule = addMonthlyRule, addWeeklyExclusion = addWeeklyExclusion, addWeeklyRule = addWeeklyRule, addYearlyExclusion = addYearlyExclusion, addYearlyRule = addYearlyRule, setTimeZone = setTimeZone)
+  
     __obj.asInstanceOf[EventRecurrence]
   }
 }

@@ -12,9 +12,8 @@ trait AesDerivedKeyParams extends Algorithm {
 object AesDerivedKeyParams {
   @scala.inline
   def apply(length: scala.Double, name: java.lang.String): AesDerivedKeyParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(length = length, name = name)
+  
     __obj.asInstanceOf[AesDerivedKeyParams]
   }
 }

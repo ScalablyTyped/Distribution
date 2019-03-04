@@ -24,12 +24,7 @@ object NativeScrollEvent {
     zoomScale: scala.Double,
     velocity: NativeScrollVelocity = null
   ): NativeScrollEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentInset")(contentInset)
-    __obj.updateDynamic("contentOffset")(contentOffset)
-    __obj.updateDynamic("contentSize")(contentSize)
-    __obj.updateDynamic("layoutMeasurement")(layoutMeasurement)
-    __obj.updateDynamic("zoomScale")(zoomScale)
+    val __obj = js.Dynamic.literal(contentInset = contentInset, contentOffset = contentOffset, contentSize = contentSize, layoutMeasurement = layoutMeasurement, zoomScale = zoomScale)
     if (velocity != null) __obj.updateDynamic("velocity")(velocity)
     __obj.asInstanceOf[NativeScrollEvent]
   }

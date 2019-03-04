@@ -13,9 +13,8 @@ trait SerializableNode extends js.Object {
 object SerializableNode {
   @scala.inline
   def apply(path: JSONPath, value: js.Any): SerializableNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(path = path, value = value)
+  
     __obj.asInstanceOf[SerializableNode]
   }
 }

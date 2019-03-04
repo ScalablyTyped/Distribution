@@ -63,8 +63,7 @@ object CipherCCMOptions {
       scala.Unit
     ] = null
   ): CipherCCMOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authTagLength")(authTagLength)
+    val __obj = js.Dynamic.literal(authTagLength = authTagLength)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)

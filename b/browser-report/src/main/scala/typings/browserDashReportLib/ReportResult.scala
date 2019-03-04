@@ -12,7 +12,7 @@ trait ReportResult extends js.Object {
   var flash: Anon_Version
   var ip: java.lang.String
   @JSName("java")
-  var `java_`: Anon_Version
+  var java_ : Anon_Version
   var lang: js.Array[java.lang.String]
   var os: Anon_Name
   var screen: Anon_Colors
@@ -31,7 +31,7 @@ object ReportResult {
     country: Anon_City,
     flash: Anon_Version,
     ip: java.lang.String,
-    `java_`: Anon_Version,
+    java_ : Anon_Version,
     lang: js.Array[java.lang.String],
     os: Anon_Name,
     screen: Anon_Colors,
@@ -41,20 +41,8 @@ object ReportResult {
     viewport: Anon_HeightLayout,
     websockets: scala.Boolean
   ): ReportResult = {
-    val __obj = js.Dynamic.literal(`java_` = `java_`)
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("flash")(flash)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("screen")(screen)
-    __obj.updateDynamic("scripts")(scripts)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("userAgent")(userAgent)
-    __obj.updateDynamic("viewport")(viewport)
-    __obj.updateDynamic("websockets")(websockets)
+    val __obj = js.Dynamic.literal(browser = browser, cookies = cookies, country = country, flash = flash, ip = ip, lang = lang, os = os, screen = screen, scripts = scripts, timestamp = timestamp, userAgent = userAgent, viewport = viewport, websockets = websockets)
+    __obj.updateDynamic("java")(java_)
     __obj.asInstanceOf[ReportResult]
   }
 }

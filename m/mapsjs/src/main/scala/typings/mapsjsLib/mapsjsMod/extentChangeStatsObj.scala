@@ -30,16 +30,8 @@ object extentChangeStatsObj {
     mapUnitsPerPixel: scala.Double,
     zoomLevel: scala.Double
   ): extentChangeStatsObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("centerLat")(centerLat)
-    __obj.updateDynamic("centerLon")(centerLon)
-    __obj.updateDynamic("centerX")(centerX)
-    __obj.updateDynamic("centerY")(centerY)
-    __obj.updateDynamic("extents")(extents)
-    __obj.updateDynamic("mapScale")(mapScale)
-    __obj.updateDynamic("mapScaleProjected")(mapScaleProjected)
-    __obj.updateDynamic("mapUnitsPerPixel")(mapUnitsPerPixel)
-    __obj.updateDynamic("zoomLevel")(zoomLevel)
+    val __obj = js.Dynamic.literal(centerLat = centerLat, centerLon = centerLon, centerX = centerX, centerY = centerY, extents = extents, mapScale = mapScale, mapScaleProjected = mapScaleProjected, mapUnitsPerPixel = mapUnitsPerPixel, zoomLevel = zoomLevel)
+  
     __obj.asInstanceOf[extentChangeStatsObj]
   }
 }

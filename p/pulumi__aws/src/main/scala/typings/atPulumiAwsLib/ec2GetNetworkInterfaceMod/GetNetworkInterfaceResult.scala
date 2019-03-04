@@ -91,24 +91,8 @@ object GetNetworkInterfaceResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetNetworkInterfaceResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associations")(associations)
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("interfaceType")(interfaceType)
-    __obj.updateDynamic("ipv6Addresses")(ipv6Addresses)
-    __obj.updateDynamic("macAddress")(macAddress)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("privateDnsName")(privateDnsName)
-    __obj.updateDynamic("privateIp")(privateIp)
-    __obj.updateDynamic("privateIps")(privateIps)
-    __obj.updateDynamic("requesterId")(requesterId)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("subnetId")(subnetId)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(associations = associations, attachments = attachments, availabilityZone = availabilityZone, description = description, id = id, interfaceType = interfaceType, ipv6Addresses = ipv6Addresses, macAddress = macAddress, ownerId = ownerId, privateDnsName = privateDnsName, privateIp = privateIp, privateIps = privateIps, requesterId = requesterId, securityGroups = securityGroups, subnetId = subnetId, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetNetworkInterfaceResult]
   }
 }

@@ -40,20 +40,8 @@ object Cookie {
     toString: js.Function0[java.lang.String],
     value: java.lang.String
   ): Cookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("httpOnly")(httpOnly)
-    __obj.updateDynamic("maxAge")(maxAge)
-    __obj.updateDynamic("maxage")(maxage)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overwrite")(overwrite)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("sameSite")(sameSite)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("toHeader")(toHeader)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(domain = domain, expires = expires, httpOnly = httpOnly, maxAge = maxAge, maxage = maxage, name = name, overwrite = overwrite, path = path, sameSite = sameSite, secure = secure, toHeader = toHeader, toString = toString, value = value)
+  
     __obj.asInstanceOf[Cookie]
   }
 }

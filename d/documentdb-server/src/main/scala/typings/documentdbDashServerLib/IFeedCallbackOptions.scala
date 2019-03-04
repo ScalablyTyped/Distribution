@@ -22,10 +22,8 @@ object IFeedCallbackOptions {
     currentCollectionSizeInMB: java.lang.String,
     maxCollectionSizeInMB: java.lang.String
   ): IFeedCallbackOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continuation")(continuation)
-    __obj.updateDynamic("currentCollectionSizeInMB")(currentCollectionSizeInMB)
-    __obj.updateDynamic("maxCollectionSizeInMB")(maxCollectionSizeInMB)
+    val __obj = js.Dynamic.literal(continuation = continuation, currentCollectionSizeInMB = currentCollectionSizeInMB, maxCollectionSizeInMB = maxCollectionSizeInMB)
+  
     __obj.asInstanceOf[IFeedCallbackOptions]
   }
 }

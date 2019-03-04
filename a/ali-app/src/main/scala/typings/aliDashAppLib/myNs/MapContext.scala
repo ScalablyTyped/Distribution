@@ -28,9 +28,7 @@ object MapContext {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): MapContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCenterLocation")(getCenterLocation)
-    __obj.updateDynamic("moveToLocation")(moveToLocation)
+    val __obj = js.Dynamic.literal(getCenterLocation = getCenterLocation, moveToLocation = moveToLocation)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

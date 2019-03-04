@@ -77,20 +77,8 @@ object ReviewEventProperties {
     userDisplayName: java.lang.String,
     userId: java.lang.String
   ): ReviewEventProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventOperation")(eventOperation)
-    __obj.updateDynamic("isAdminReply")(isAdminReply)
-    __obj.updateDynamic("isIgnored")(isIgnored)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("replyDate")(replyDate)
-    __obj.updateDynamic("replyText")(replyText)
-    __obj.updateDynamic("replyUserId")(replyUserId)
-    __obj.updateDynamic("resourceType")(resourceType)
-    __obj.updateDynamic("reviewDate")(reviewDate)
-    __obj.updateDynamic("reviewId")(reviewId)
-    __obj.updateDynamic("reviewText")(reviewText)
-    __obj.updateDynamic("userDisplayName")(userDisplayName)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(eventOperation = eventOperation, isAdminReply = isAdminReply, isIgnored = isIgnored, rating = rating, replyDate = replyDate, replyText = replyText, replyUserId = replyUserId, resourceType = resourceType, reviewDate = reviewDate, reviewId = reviewId, reviewText = reviewText, userDisplayName = userDisplayName, userId = userId)
+  
     __obj.asInstanceOf[ReviewEventProperties]
   }
 }

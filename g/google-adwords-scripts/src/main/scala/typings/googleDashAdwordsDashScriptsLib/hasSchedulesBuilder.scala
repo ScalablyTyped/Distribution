@@ -12,8 +12,8 @@ trait hasSchedulesBuilder[B] extends js.Object {
 object hasSchedulesBuilder {
   @scala.inline
   def apply[B](withSchedules: js.Function1[ExtensionScheduleInput, B]): hasSchedulesBuilder[B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withSchedules")(withSchedules)
+    val __obj = js.Dynamic.literal(withSchedules = withSchedules)
+  
     __obj.asInstanceOf[hasSchedulesBuilder[B]]
   }
 }

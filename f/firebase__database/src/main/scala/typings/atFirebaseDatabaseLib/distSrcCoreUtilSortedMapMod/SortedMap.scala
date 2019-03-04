@@ -13,11 +13,11 @@ class SortedMap[K, V] protected () extends js.Object {
     * @param {function(K, K):number} comparator_ Key comparator.
     * @param {LLRBNode=} root_ (Optional) Root node for the map.
     */
-  def this(`comparator_`: Comparator[K]) = this()
-  def this(`comparator_`: Comparator[K], `root_`: LLRBEmptyNode[K, V]) = this()
-  def this(`comparator_`: Comparator[K], `root_`: LLRBNode[K, V]) = this()
-  var `comparator_`: js.Any = js.native
-  var `root_`: js.Any = js.native
+  def this(comparator_ : Comparator[K]) = this()
+  def this(comparator_ : Comparator[K], root_ : LLRBEmptyNode[K, V]) = this()
+  def this(comparator_ : Comparator[K], root_ : LLRBNode[K, V]) = this()
+  var comparator_ : js.Any = js.native
+  var root_ : js.Any = js.native
   /**
     * @return {number} The total number of nodes in the map.
     */

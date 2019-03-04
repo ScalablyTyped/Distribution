@@ -40,9 +40,7 @@ object Province {
     region: java.lang.String = null,
     short: java.lang.String = null
   ): Province = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(country = country, name = name)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (region != null) __obj.updateDynamic("region")(region)
     if (short != null) __obj.updateDynamic("short")(short)

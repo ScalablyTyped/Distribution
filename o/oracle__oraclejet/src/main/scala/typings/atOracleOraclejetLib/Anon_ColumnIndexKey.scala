@@ -20,11 +20,8 @@ object Anon_ColumnIndexKey {
     rowIndex: scala.Double,
     subId: atOracleOraclejetLib.atOracleOraclejetLibStrings.`oj-table-cell`
   ): Anon_ColumnIndexKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, key = key, rowIndex = rowIndex, subId = subId)
+  
     __obj.asInstanceOf[Anon_ColumnIndexKey]
   }
 }

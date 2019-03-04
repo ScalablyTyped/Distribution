@@ -54,13 +54,8 @@ object XCellRangeFormula {
       scala.Unit
     ]
   ): XCellRangeFormula = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FormulaArray")(FormulaArray)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFormulaArray")(getFormulaArray)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFormulaArray")(setFormulaArray)
+    val __obj = js.Dynamic.literal(FormulaArray = FormulaArray, acquire = acquire, getFormulaArray = getFormulaArray, queryInterface = queryInterface, release = release, setFormulaArray = setFormulaArray)
+  
     __obj.asInstanceOf[XCellRangeFormula]
   }
 }

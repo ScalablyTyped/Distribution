@@ -15,8 +15,8 @@ trait StringSet
 object StringSet {
   @scala.inline
   def apply(`type`: awsDashSdkLib.awsDashSdkLibStrings.String, values: js.Array[java.lang.String]): StringSet = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[StringSet]
   }
 }

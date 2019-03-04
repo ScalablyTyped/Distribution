@@ -28,15 +28,8 @@ object PageMethodeModelInfoReturn {
     serverSide: scala.Boolean,
     start: scala.Double
   ): PageMethodeModelInfoReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("recordsDisplay")(recordsDisplay)
-    __obj.updateDynamic("recordsTotal")(recordsTotal)
-    __obj.updateDynamic("serverSide")(serverSide)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, length = length, page = page, pages = pages, recordsDisplay = recordsDisplay, recordsTotal = recordsTotal, serverSide = serverSide, start = start)
+  
     __obj.asInstanceOf[PageMethodeModelInfoReturn]
   }
 }

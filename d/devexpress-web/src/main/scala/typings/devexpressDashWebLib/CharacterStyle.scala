@@ -29,11 +29,8 @@ object CharacterStyle {
     name: java.lang.String,
     parent: CharacterStyle
   ): CharacterStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("linkedStyle")(linkedStyle)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(isDeleted = isDeleted, linkedStyle = linkedStyle, name = name, parent = parent)
+  
     __obj.asInstanceOf[CharacterStyle]
   }
 }

@@ -40,12 +40,8 @@ object PodPresetSpec {
     volumeMounts: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.VolumeMount],
     volumes: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.Volume]
   ): PodPresetSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("envFrom")(envFrom)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("volumeMounts")(volumeMounts)
-    __obj.updateDynamic("volumes")(volumes)
+    val __obj = js.Dynamic.literal(env = env, envFrom = envFrom, selector = selector, volumeMounts = volumeMounts, volumes = volumes)
+  
     __obj.asInstanceOf[PodPresetSpec]
   }
 }

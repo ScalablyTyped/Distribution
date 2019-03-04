@@ -48,12 +48,7 @@ object Intent {
     resetContexts: js.UndefOr[scala.Boolean] = js.undefined,
     trainingPhrases: js.Array[TrainingPhrase] = null
   ): Intent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentFollowupIntentName")(parentFollowupIntentName)
-    __obj.updateDynamic("rootFollowupIntentName")(rootFollowupIntentName)
-    __obj.updateDynamic("webhookState")(webhookState)
+    val __obj = js.Dynamic.literal(displayName = displayName, name = name, parentFollowupIntentName = parentFollowupIntentName, rootFollowupIntentName = rootFollowupIntentName, webhookState = webhookState)
     if (action != null) __obj.updateDynamic("action")(action)
     if (defaultResponsePlatforms != null) __obj.updateDynamic("defaultResponsePlatforms")(defaultResponsePlatforms)
     if (events != null) __obj.updateDynamic("events")(events)

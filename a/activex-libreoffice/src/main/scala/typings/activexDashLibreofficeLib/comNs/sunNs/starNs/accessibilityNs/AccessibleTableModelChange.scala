@@ -56,12 +56,8 @@ object AccessibleTableModelChange {
     LastRow: scala.Double,
     Type: scala.Double
   ): AccessibleTableModelChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FirstColumn")(FirstColumn)
-    __obj.updateDynamic("FirstRow")(FirstRow)
-    __obj.updateDynamic("LastColumn")(LastColumn)
-    __obj.updateDynamic("LastRow")(LastRow)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(FirstColumn = FirstColumn, FirstRow = FirstRow, LastColumn = LastColumn, LastRow = LastRow, Type = Type)
+  
     __obj.asInstanceOf[AccessibleTableModelChange]
   }
 }

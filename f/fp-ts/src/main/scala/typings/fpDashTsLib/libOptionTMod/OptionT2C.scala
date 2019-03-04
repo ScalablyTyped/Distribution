@@ -40,11 +40,8 @@ object OptionT2C {
       fpDashTsLib.libHKTMod.Type2[M, L, fpDashTsLib.libHKTMod.Type[fpDashTsLib.libOptionMod.URI, js.Any]]
     ]
   ): OptionT2C[M, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(ap = ap, chain = chain, map = map, of = of)
+  
     __obj.asInstanceOf[OptionT2C[M, L]]
   }
 }

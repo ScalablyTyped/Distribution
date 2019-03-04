@@ -27,12 +27,8 @@ object TSIndexedAccessType {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TSIndexedAccessType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("indexType")(indexType)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("objectType")(objectType)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, indexType = indexType, loc = loc, objectType = objectType, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

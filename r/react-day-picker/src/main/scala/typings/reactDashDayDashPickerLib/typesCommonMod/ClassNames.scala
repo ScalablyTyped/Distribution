@@ -58,30 +58,8 @@ object ClassNames {
     weekdaysRow: java.lang.String,
     wrapper: java.lang.String
   ): ClassNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("footer")(footer)
-    __obj.updateDynamic("interactionDisabled")(interactionDisabled)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("navBar")(navBar)
-    __obj.updateDynamic("navButtonInteractionDisabled")(navButtonInteractionDisabled)
-    __obj.updateDynamic("navButtonNext")(navButtonNext)
-    __obj.updateDynamic("navButtonPrev")(navButtonPrev)
-    __obj.updateDynamic("outside")(outside)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("today")(today)
-    __obj.updateDynamic("todayButton")(todayButton)
-    __obj.updateDynamic("week")(week)
-    __obj.updateDynamic("weekNumber")(weekNumber)
-    __obj.updateDynamic("weekday")(weekday)
-    __obj.updateDynamic("weekdays")(weekdays)
-    __obj.updateDynamic("weekdaysRow")(weekdaysRow)
-    __obj.updateDynamic("wrapper")(wrapper)
+    val __obj = js.Dynamic.literal(body = body, caption = caption, container = container, day = day, disabled = disabled, footer = footer, interactionDisabled = interactionDisabled, month = month, months = months, navBar = navBar, navButtonInteractionDisabled = navButtonInteractionDisabled, navButtonNext = navButtonNext, navButtonPrev = navButtonPrev, outside = outside, selected = selected, today = today, todayButton = todayButton, week = week, weekNumber = weekNumber, weekday = weekday, weekdays = weekdays, weekdaysRow = weekdaysRow, wrapper = wrapper)
+  
     __obj.asInstanceOf[ClassNames]
   }
 }

@@ -18,10 +18,8 @@ object JdbcSQLXML {
     getString: js.Function0[java.lang.String],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): JdbcSQLXML = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("free")(free)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(free = free, getString = getString, setString = setString)
+  
     __obj.asInstanceOf[JdbcSQLXML]
   }
 }

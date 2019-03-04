@@ -13,9 +13,8 @@ trait Anon_ProductCodeId extends js.Object {
 object Anon_ProductCodeId {
   @scala.inline
   def apply(productCodeId: java.lang.String, productCodeType: java.lang.String): Anon_ProductCodeId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productCodeId")(productCodeId)
-    __obj.updateDynamic("productCodeType")(productCodeType)
+    val __obj = js.Dynamic.literal(productCodeId = productCodeId, productCodeType = productCodeType)
+  
     __obj.asInstanceOf[Anon_ProductCodeId]
   }
 }

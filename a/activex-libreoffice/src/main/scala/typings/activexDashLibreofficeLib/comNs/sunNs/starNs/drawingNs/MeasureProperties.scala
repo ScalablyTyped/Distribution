@@ -70,25 +70,8 @@ object MeasureProperties {
     MeasureTextUpsideDown: scala.Boolean,
     MeasureTextVerticalPosition: MeasureTextVertPos
   ): MeasureProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MeasureBelowReferenceEdge")(MeasureBelowReferenceEdge)
-    __obj.updateDynamic("MeasureDecimalPlaces")(MeasureDecimalPlaces)
-    __obj.updateDynamic("MeasureHelpLine1Length")(MeasureHelpLine1Length)
-    __obj.updateDynamic("MeasureHelpLine2Length")(MeasureHelpLine2Length)
-    __obj.updateDynamic("MeasureHelpLineDistance")(MeasureHelpLineDistance)
-    __obj.updateDynamic("MeasureHelpLineOverhang")(MeasureHelpLineOverhang)
-    __obj.updateDynamic("MeasureKind")(MeasureKind)
-    __obj.updateDynamic("MeasureLineDistance")(MeasureLineDistance)
-    __obj.updateDynamic("MeasureOverhang")(MeasureOverhang)
-    __obj.updateDynamic("MeasureShowUnit")(MeasureShowUnit)
-    __obj.updateDynamic("MeasureTextAutoAngle")(MeasureTextAutoAngle)
-    __obj.updateDynamic("MeasureTextAutoAngleView")(MeasureTextAutoAngleView)
-    __obj.updateDynamic("MeasureTextFixedAngle")(MeasureTextFixedAngle)
-    __obj.updateDynamic("MeasureTextHorizontalPosition")(MeasureTextHorizontalPosition)
-    __obj.updateDynamic("MeasureTextIsFixedAngle")(MeasureTextIsFixedAngle)
-    __obj.updateDynamic("MeasureTextRotate90")(MeasureTextRotate90)
-    __obj.updateDynamic("MeasureTextUpsideDown")(MeasureTextUpsideDown)
-    __obj.updateDynamic("MeasureTextVerticalPosition")(MeasureTextVerticalPosition)
+    val __obj = js.Dynamic.literal(MeasureBelowReferenceEdge = MeasureBelowReferenceEdge, MeasureDecimalPlaces = MeasureDecimalPlaces, MeasureHelpLine1Length = MeasureHelpLine1Length, MeasureHelpLine2Length = MeasureHelpLine2Length, MeasureHelpLineDistance = MeasureHelpLineDistance, MeasureHelpLineOverhang = MeasureHelpLineOverhang, MeasureKind = MeasureKind, MeasureLineDistance = MeasureLineDistance, MeasureOverhang = MeasureOverhang, MeasureShowUnit = MeasureShowUnit, MeasureTextAutoAngle = MeasureTextAutoAngle, MeasureTextAutoAngleView = MeasureTextAutoAngleView, MeasureTextFixedAngle = MeasureTextFixedAngle, MeasureTextHorizontalPosition = MeasureTextHorizontalPosition, MeasureTextIsFixedAngle = MeasureTextIsFixedAngle, MeasureTextRotate90 = MeasureTextRotate90, MeasureTextUpsideDown = MeasureTextUpsideDown, MeasureTextVerticalPosition = MeasureTextVerticalPosition)
+  
     __obj.asInstanceOf[MeasureProperties]
   }
 }

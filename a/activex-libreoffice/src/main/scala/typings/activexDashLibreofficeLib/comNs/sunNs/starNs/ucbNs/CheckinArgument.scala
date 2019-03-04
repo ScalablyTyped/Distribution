@@ -39,13 +39,8 @@ object CheckinArgument {
     TargetURL: java.lang.String,
     VersionComment: java.lang.String
   ): CheckinArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MajorVersion")(MajorVersion)
-    __obj.updateDynamic("MimeType")(MimeType)
-    __obj.updateDynamic("NewTitle")(NewTitle)
-    __obj.updateDynamic("SourceURL")(SourceURL)
-    __obj.updateDynamic("TargetURL")(TargetURL)
-    __obj.updateDynamic("VersionComment")(VersionComment)
+    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MimeType = MimeType, NewTitle = NewTitle, SourceURL = SourceURL, TargetURL = TargetURL, VersionComment = VersionComment)
+  
     __obj.asInstanceOf[CheckinArgument]
   }
 }

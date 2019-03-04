@@ -30,16 +30,8 @@ object Visitor {
     nonTreeEdge: js.Function1[jsgraphLib.Anon_E, scala.Unit],
     startVertex: js.Function1[jsgraphLib.Anon_G, scala.Unit]
   ): Visitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blackTarget")(blackTarget)
-    __obj.updateDynamic("discoverVertex")(discoverVertex)
-    __obj.updateDynamic("examineEdge")(examineEdge)
-    __obj.updateDynamic("examineVertex")(examineVertex)
-    __obj.updateDynamic("finishVertex")(finishVertex)
-    __obj.updateDynamic("grayTarget")(grayTarget)
-    __obj.updateDynamic("initializeVertex")(initializeVertex)
-    __obj.updateDynamic("nonTreeEdge")(nonTreeEdge)
-    __obj.updateDynamic("startVertex")(startVertex)
+    val __obj = js.Dynamic.literal(blackTarget = blackTarget, discoverVertex = discoverVertex, examineEdge = examineEdge, examineVertex = examineVertex, finishVertex = finishVertex, grayTarget = grayTarget, initializeVertex = initializeVertex, nonTreeEdge = nonTreeEdge, startVertex = startVertex)
+  
     __obj.asInstanceOf[Visitor]
   }
 }

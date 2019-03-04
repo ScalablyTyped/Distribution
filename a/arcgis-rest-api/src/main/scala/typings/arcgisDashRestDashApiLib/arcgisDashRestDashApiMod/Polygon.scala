@@ -19,8 +19,7 @@ object Polygon {
     hasZ: js.UndefOr[scala.Boolean] = js.undefined,
     spatialReference: SpatialReference = null
   ): Polygon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rings")(rings)
+    val __obj = js.Dynamic.literal(rings = rings)
     if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
     if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

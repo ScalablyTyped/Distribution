@@ -18,8 +18,7 @@ object Props {
     onCopy: js.Function2[/* a */ java.lang.String, /* b */ scala.Boolean, scala.Unit] = null,
     options: Options = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Props]

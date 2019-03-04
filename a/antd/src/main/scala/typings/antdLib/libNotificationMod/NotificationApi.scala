@@ -30,16 +30,8 @@ object NotificationApi {
     warn: js.Function1[ArgsProps, scala.Unit],
     warning: js.Function1[ArgsProps, scala.Unit]
   ): NotificationApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("warn")(warn)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(close = close, config = config, destroy = destroy, error = error, info = info, open = open, success = success, warn = warn, warning = warning)
+  
     __obj.asInstanceOf[NotificationApi]
   }
 }

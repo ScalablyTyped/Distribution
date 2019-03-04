@@ -96,8 +96,7 @@ object Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("studentId")(studentId)
+    val __obj = js.Dynamic.literal(studentId = studentId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

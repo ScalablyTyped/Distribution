@@ -48,23 +48,8 @@ object ISearchCriteria {
     SearchWithinThisFolder: scala.Boolean,
     SecondCondition: ISearchConditionEx
   ): ISearchCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdditionalConditions")(AdditionalConditions)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ExpandUI")(ExpandUI)
-    __obj.updateDynamic("FacetFilterAsJSON")(FacetFilterAsJSON)
-    __obj.updateDynamic("FacetFilterStatusFlags")(FacetFilterStatusFlags)
-    __obj.updateDynamic("FirstCondition")(FirstCondition)
-    __obj.updateDynamic("FullTextSearchFlags")(FullTextSearchFlags)
-    __obj.updateDynamic("FullTextSearchString")(FullTextSearchString)
-    __obj.updateDynamic("GetAsSearchConditions")(GetAsSearchConditions)
-    __obj.updateDynamic("ObjectTypeCondition")(ObjectTypeCondition)
-    __obj.updateDynamic("PredefinedSearchFilter")(PredefinedSearchFilter)
-    __obj.updateDynamic("PreviousBaseConditions")(PreviousBaseConditions)
-    __obj.updateDynamic("SearchFlags")(SearchFlags)
-    __obj.updateDynamic("SearchRefinement")(SearchRefinement)
-    __obj.updateDynamic("SearchWithinThisFolder")(SearchWithinThisFolder)
-    __obj.updateDynamic("SecondCondition")(SecondCondition)
+    val __obj = js.Dynamic.literal(AdditionalConditions = AdditionalConditions, Clone = Clone, ExpandUI = ExpandUI, FacetFilterAsJSON = FacetFilterAsJSON, FacetFilterStatusFlags = FacetFilterStatusFlags, FirstCondition = FirstCondition, FullTextSearchFlags = FullTextSearchFlags, FullTextSearchString = FullTextSearchString, GetAsSearchConditions = GetAsSearchConditions, ObjectTypeCondition = ObjectTypeCondition, PredefinedSearchFilter = PredefinedSearchFilter, PreviousBaseConditions = PreviousBaseConditions, SearchFlags = SearchFlags, SearchRefinement = SearchRefinement, SearchWithinThisFolder = SearchWithinThisFolder, SecondCondition = SecondCondition)
+  
     __obj.asInstanceOf[ISearchCriteria]
   }
 }

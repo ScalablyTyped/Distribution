@@ -20,11 +20,8 @@ object ImportRepositoryValidation {
     tfvcSource: GitImportTfvcSource,
     username: java.lang.String
   ): ImportRepositoryValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gitSource")(gitSource)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("tfvcSource")(tfvcSource)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(gitSource = gitSource, password = password, tfvcSource = tfvcSource, username = username)
+  
     __obj.asInstanceOf[ImportRepositoryValidation]
   }
 }

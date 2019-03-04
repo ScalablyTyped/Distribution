@@ -14,8 +14,8 @@ object ISyndicationNodeFactory {
   def apply(
     createSyndicationNode: js.Function3[java.lang.String, java.lang.String, java.lang.String, SyndicationNode]
   ): ISyndicationNodeFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationNode")(createSyndicationNode)
+    val __obj = js.Dynamic.literal(createSyndicationNode = createSyndicationNode)
+  
     __obj.asInstanceOf[ISyndicationNodeFactory]
   }
 }

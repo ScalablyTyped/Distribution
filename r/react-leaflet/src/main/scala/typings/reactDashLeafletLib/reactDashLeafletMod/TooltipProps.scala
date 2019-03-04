@@ -31,8 +31,7 @@ object TooltipProps {
     sticky: js.UndefOr[scala.Boolean] = js.undefined,
     zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)

@@ -12,8 +12,8 @@ trait Anon_Helpers extends js.Object {
 object Anon_Helpers {
   @scala.inline
   def apply(helpers: handlebarsLib.hbsNs.ASTNs.helpers): Anon_Helpers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("helpers")(helpers)
+    val __obj = js.Dynamic.literal(helpers = helpers)
+  
     __obj.asInstanceOf[Anon_Helpers]
   }
 }

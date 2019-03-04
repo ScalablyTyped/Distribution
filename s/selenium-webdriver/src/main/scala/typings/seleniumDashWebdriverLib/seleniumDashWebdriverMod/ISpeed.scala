@@ -13,9 +13,8 @@ trait ISpeed extends js.Object {
 object ISpeed {
   @scala.inline
   def apply(xspeed: scala.Double, yspeed: scala.Double): ISpeed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("xspeed")(xspeed)
-    __obj.updateDynamic("yspeed")(yspeed)
+    val __obj = js.Dynamic.literal(xspeed = xspeed, yspeed = yspeed)
+  
     __obj.asInstanceOf[ISpeed]
   }
 }

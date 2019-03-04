@@ -28,15 +28,8 @@ object KnockoutVirtualElements {
     prepend: js.Function2[KnockoutVirtualElement, stdLib.Node, scala.Unit],
     setDomNodeChildren: js.Function2[KnockoutVirtualElement, Anon_Index, scala.Unit]
   ): KnockoutVirtualElements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedBindings")(allowedBindings)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("emptyNode")(emptyNode)
-    __obj.updateDynamic("firstChild")(firstChild)
-    __obj.updateDynamic("insertAfter")(insertAfter)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("prepend")(prepend)
-    __obj.updateDynamic("setDomNodeChildren")(setDomNodeChildren)
+    val __obj = js.Dynamic.literal(allowedBindings = allowedBindings, childNodes = childNodes, emptyNode = emptyNode, firstChild = firstChild, insertAfter = insertAfter, nextSibling = nextSibling, prepend = prepend, setDomNodeChildren = setDomNodeChildren)
+  
     __obj.asInstanceOf[KnockoutVirtualElements]
   }
 }

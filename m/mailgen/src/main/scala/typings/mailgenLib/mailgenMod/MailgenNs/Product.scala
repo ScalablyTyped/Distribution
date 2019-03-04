@@ -20,9 +20,7 @@ object Product {
     copyright: java.lang.String = null,
     logo: java.lang.String = null
   ): Product = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(link = link, name = name)
     if (copyright != null) __obj.updateDynamic("copyright")(copyright)
     if (logo != null) __obj.updateDynamic("logo")(logo)
     __obj.asInstanceOf[Product]

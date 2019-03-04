@@ -14,8 +14,8 @@ trait ExprRef
 object ExprRef {
   @scala.inline
   def apply(expr: Expr): ExprRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expr")(expr)
+    val __obj = js.Dynamic.literal(expr = expr)
+  
     __obj.asInstanceOf[ExprRef]
   }
 }

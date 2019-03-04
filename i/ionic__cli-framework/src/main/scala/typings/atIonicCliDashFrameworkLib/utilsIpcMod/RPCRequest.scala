@@ -20,10 +20,8 @@ object RPCRequest {
     procedure: P,
     `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`rpc-request`
   ): RPCRequest[P, A] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("procedure")(procedure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id, procedure = procedure.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RPCRequest[P, A]]
   }
 }

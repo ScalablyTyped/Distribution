@@ -13,9 +13,8 @@ trait PushSubscription extends js.Object {
 object PushSubscription {
   @scala.inline
   def apply(endpoint: java.lang.String, keys: webDashPushLib.Anon_Auth): PushSubscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(endpoint = endpoint, keys = keys)
+  
     __obj.asInstanceOf[PushSubscription]
   }
 }

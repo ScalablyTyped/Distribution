@@ -13,9 +13,8 @@ trait Widget extends js.Object {
 object Widget {
   @scala.inline
   def apply(getId: js.Function0[java.lang.String], getType: js.Function0[java.lang.String]): Widget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(getId = getId, getType = getType)
+  
     __obj.asInstanceOf[Widget]
   }
 }

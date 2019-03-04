@@ -18,8 +18,8 @@ object IObservable {
       rxDashLiteDashAggregatesLib.RxNs.Observable[T]
     ]
   ): IObservable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("safeApply")(safeApply)
+    val __obj = js.Dynamic.literal(safeApply = safeApply)
+  
     __obj.asInstanceOf[IObservable[T]]
   }
 }

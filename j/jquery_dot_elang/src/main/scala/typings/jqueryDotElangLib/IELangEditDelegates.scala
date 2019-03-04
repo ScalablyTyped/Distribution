@@ -33,17 +33,8 @@ object IELangEditDelegates {
     selectCallback: js.Function,
     selectHandler: js.Function
   ): IELangEditDelegates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("btnAddClickHandler")(btnAddClickHandler)
-    __obj.updateDynamic("btnAddHandler")(btnAddHandler)
-    __obj.updateDynamic("insertCallback")(insertCallback)
-    __obj.updateDynamic("insertHandler")(insertHandler)
-    __obj.updateDynamic("modifyCallback")(modifyCallback)
-    __obj.updateDynamic("modifyHandler")(modifyHandler)
-    __obj.updateDynamic("removeCallback")(removeCallback)
-    __obj.updateDynamic("removeHandler")(removeHandler)
-    __obj.updateDynamic("selectCallback")(selectCallback)
-    __obj.updateDynamic("selectHandler")(selectHandler)
+    val __obj = js.Dynamic.literal(btnAddClickHandler = btnAddClickHandler, btnAddHandler = btnAddHandler, insertCallback = insertCallback, insertHandler = insertHandler, modifyCallback = modifyCallback, modifyHandler = modifyHandler, removeCallback = removeCallback, removeHandler = removeHandler, selectCallback = selectCallback, selectHandler = selectHandler)
+  
     __obj.asInstanceOf[IELangEditDelegates]
   }
 }

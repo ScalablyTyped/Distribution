@@ -13,9 +13,8 @@ trait Anon_BstrWorkerLabel extends js.Object {
 object Anon_BstrWorkerLabel {
   @scala.inline
   def apply(bstrWorkerLabel: java.lang.String, dwUniqueID: scala.Double): Anon_BstrWorkerLabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bstrWorkerLabel")(bstrWorkerLabel)
-    __obj.updateDynamic("dwUniqueID")(dwUniqueID)
+    val __obj = js.Dynamic.literal(bstrWorkerLabel = bstrWorkerLabel, dwUniqueID = dwUniqueID)
+  
     __obj.asInstanceOf[Anon_BstrWorkerLabel]
   }
 }

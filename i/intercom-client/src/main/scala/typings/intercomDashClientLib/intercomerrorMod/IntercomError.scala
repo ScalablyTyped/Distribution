@@ -18,10 +18,8 @@ object IntercomError {
     headers: intercomDashClientLib.Anon_K,
     statusCode: scala.Double
   ): IntercomError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode)
+  
     __obj.asInstanceOf[IntercomError]
   }
 }

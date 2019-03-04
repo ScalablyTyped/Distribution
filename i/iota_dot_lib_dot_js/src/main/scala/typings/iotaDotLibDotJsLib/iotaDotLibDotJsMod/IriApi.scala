@@ -153,21 +153,8 @@ object IriApi {
       scala.Unit
     ]
   ): IriApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNeighbors")(addNeighbors)
-    __obj.updateDynamic("attachToTangle")(attachToTangle)
-    __obj.updateDynamic("broadcastTransactions")(broadcastTransactions)
-    __obj.updateDynamic("findTransactions")(findTransactions)
-    __obj.updateDynamic("getBalances")(getBalances)
-    __obj.updateDynamic("getInclusionStates")(getInclusionStates)
-    __obj.updateDynamic("getNeighbors")(getNeighbors)
-    __obj.updateDynamic("getNodeInfo")(getNodeInfo)
-    __obj.updateDynamic("getTips")(getTips)
-    __obj.updateDynamic("getTransactionsToApprove")(getTransactionsToApprove)
-    __obj.updateDynamic("getTrytes")(getTrytes)
-    __obj.updateDynamic("interruptAttachingToTangle")(interruptAttachingToTangle)
-    __obj.updateDynamic("removeNeighbors")(removeNeighbors)
-    __obj.updateDynamic("storeTransactions")(storeTransactions)
+    val __obj = js.Dynamic.literal(addNeighbors = addNeighbors, attachToTangle = attachToTangle, broadcastTransactions = broadcastTransactions, findTransactions = findTransactions, getBalances = getBalances, getInclusionStates = getInclusionStates, getNeighbors = getNeighbors, getNodeInfo = getNodeInfo, getTips = getTips, getTransactionsToApprove = getTransactionsToApprove, getTrytes = getTrytes, interruptAttachingToTangle = interruptAttachingToTangle, removeNeighbors = removeNeighbors, storeTransactions = storeTransactions)
+  
     __obj.asInstanceOf[IriApi]
   }
 }

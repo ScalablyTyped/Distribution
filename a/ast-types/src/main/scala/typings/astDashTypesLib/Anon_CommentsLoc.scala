@@ -24,8 +24,7 @@ object Anon_CommentsLoc {
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Anon_CommentsLoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)

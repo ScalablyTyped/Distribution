@@ -27,9 +27,7 @@ object StartSoterAuthenticationOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[/* res */ weixinDashAppLib.Anon_AuthMode, scala.Unit] = null
   ): StartSoterAuthenticationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
-    __obj.updateDynamic("requestAuthModes")(requestAuthModes)
+    val __obj = js.Dynamic.literal(challenge = challenge, requestAuthModes = requestAuthModes)
     if (authContent != null) __obj.updateDynamic("authContent")(authContent)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

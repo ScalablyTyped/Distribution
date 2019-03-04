@@ -55,16 +55,8 @@ object WindowEvent {
     X: scala.Double,
     Y: scala.Double
   ): WindowEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomInset")(BottomInset)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("LeftInset")(LeftInset)
-    __obj.updateDynamic("RightInset")(RightInset)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("TopInset")(TopInset)
-    __obj.updateDynamic("Width")(Width)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(BottomInset = BottomInset, Height = Height, LeftInset = LeftInset, RightInset = RightInset, Source = Source, TopInset = TopInset, Width = Width, X = X, Y = Y)
+  
     __obj.asInstanceOf[WindowEvent]
   }
 }

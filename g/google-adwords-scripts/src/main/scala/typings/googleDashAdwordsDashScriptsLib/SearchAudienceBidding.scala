@@ -16,10 +16,8 @@ object SearchAudienceBidding {
     getBidModifier: js.Function0[scala.Double],
     setBidModifier: js.Function1[scala.Double, scala.Unit]
   ): SearchAudienceBidding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearBidModifier")(clearBidModifier)
-    __obj.updateDynamic("getBidModifier")(getBidModifier)
-    __obj.updateDynamic("setBidModifier")(setBidModifier)
+    val __obj = js.Dynamic.literal(clearBidModifier = clearBidModifier, getBidModifier = getBidModifier, setBidModifier = setBidModifier)
+  
     __obj.asInstanceOf[SearchAudienceBidding]
   }
 }

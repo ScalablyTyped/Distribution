@@ -17,8 +17,8 @@ object LocalResolver {
       atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
     ]
   ): LocalResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLocal")(getLocal)
+    val __obj = js.Dynamic.literal(getLocal = getLocal)
+  
     __obj.asInstanceOf[LocalResolver]
   }
 }

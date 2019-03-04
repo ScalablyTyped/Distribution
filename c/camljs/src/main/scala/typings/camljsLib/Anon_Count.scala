@@ -13,8 +13,8 @@ trait Anon_Count
 object Anon_Count {
   @scala.inline
   def apply(count: java.lang.String): Anon_Count = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
+    val __obj = js.Dynamic.literal(count = count)
+  
     __obj.asInstanceOf[Anon_Count]
   }
 }

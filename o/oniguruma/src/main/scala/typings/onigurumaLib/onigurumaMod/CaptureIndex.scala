@@ -19,11 +19,8 @@ trait CaptureIndex extends js.Object {
 object CaptureIndex {
   @scala.inline
   def apply(end: scala.Double, index: scala.Double, length: scala.Double, start: scala.Double): CaptureIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, index = index, length = length, start = start)
+  
     __obj.asInstanceOf[CaptureIndex]
   }
 }

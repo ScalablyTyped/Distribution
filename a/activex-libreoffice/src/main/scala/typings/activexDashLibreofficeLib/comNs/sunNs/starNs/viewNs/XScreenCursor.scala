@@ -23,12 +23,8 @@ object XScreenCursor {
     screenDown: js.Function0[scala.Boolean],
     screenUp: js.Function0[scala.Boolean]
   ): XScreenCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("screenDown")(screenDown)
-    __obj.updateDynamic("screenUp")(screenUp)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, screenDown = screenDown, screenUp = screenUp)
+  
     __obj.asInstanceOf[XScreenCursor]
   }
 }

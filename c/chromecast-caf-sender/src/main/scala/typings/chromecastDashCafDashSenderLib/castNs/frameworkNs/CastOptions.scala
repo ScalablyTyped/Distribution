@@ -20,8 +20,7 @@ object CastOptions {
     receiverApplicationId: java.lang.String = null,
     resumeSavedSession: js.UndefOr[scala.Boolean] = js.undefined
   ): CastOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoJoinPolicy")(autoJoinPolicy)
+    val __obj = js.Dynamic.literal(autoJoinPolicy = autoJoinPolicy)
     if (language != null) __obj.updateDynamic("language")(language)
     if (receiverApplicationId != null) __obj.updateDynamic("receiverApplicationId")(receiverApplicationId)
     if (!js.isUndefined(resumeSavedSession)) __obj.updateDynamic("resumeSavedSession")(resumeSavedSession)

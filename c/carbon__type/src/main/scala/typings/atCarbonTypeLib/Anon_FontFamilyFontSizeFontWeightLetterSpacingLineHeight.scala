@@ -30,12 +30,11 @@ object Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeight {
     letterSpacing: scala.Double,
     lineHeight: java.lang.String
   ): Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeight = {
-    val __obj = js.Dynamic.literal(`@media (min-width: 42rem)` = `@media (min-width: 42rem)`, `@media (min-width: 66rem)` = `@media (min-width: 66rem)`, `@media (min-width: 82rem)` = `@media (min-width: 82rem)`, `@media (min-width: 99rem)` = `@media (min-width: 99rem)`)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("letterSpacing")(letterSpacing)
-    __obj.updateDynamic("lineHeight")(lineHeight)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing, lineHeight = lineHeight)
+    __obj.updateDynamic("@media (min-width: 42rem)")(`@media (min-width: 42rem)`)
+    __obj.updateDynamic("@media (min-width: 66rem)")(`@media (min-width: 66rem)`)
+    __obj.updateDynamic("@media (min-width: 82rem)")(`@media (min-width: 82rem)`)
+    __obj.updateDynamic("@media (min-width: 99rem)")(`@media (min-width: 99rem)`)
     __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeight]
   }
 }

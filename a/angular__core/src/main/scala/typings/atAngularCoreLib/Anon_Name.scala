@@ -18,8 +18,7 @@ object Anon_Name {
     name: java.lang.String = null,
     parent: atAngularCoreLib.srcDiInjectorMod.Injector = null
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("providers")(providers)
+    val __obj = js.Dynamic.literal(providers = providers)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[Anon_Name]

@@ -16,8 +16,8 @@ trait CordovaPluginDeviceName extends js.Object {
 object CordovaPluginDeviceName {
   @scala.inline
   def apply(name: java.lang.String): CordovaPluginDeviceName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[CordovaPluginDeviceName]
   }
 }

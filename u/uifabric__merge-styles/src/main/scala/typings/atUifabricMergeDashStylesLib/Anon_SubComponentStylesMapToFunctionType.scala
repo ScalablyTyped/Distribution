@@ -18,8 +18,8 @@ object Anon_SubComponentStylesMapToFunctionType {
   {[ P in keyof TStyleSet['subComponentStyles'] ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleSet.__MapToFunctionType<TStyleSet['subComponentStyles'][P]>}
     */ atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.Anon_SubComponentStylesMapToFunctionType with TStyleSet
   ): Anon_SubComponentStylesMapToFunctionType[TStyleSet] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subComponentStyles")(subComponentStyles)
+    val __obj = js.Dynamic.literal(subComponentStyles = subComponentStyles)
+  
     __obj.asInstanceOf[Anon_SubComponentStylesMapToFunctionType[TStyleSet]]
   }
 }

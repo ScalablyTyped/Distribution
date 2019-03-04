@@ -16,9 +16,8 @@ object Anon_Options {
     options: Anon_UpdateRoutes,
     routes: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Routes
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(options = options, routes = routes)
+  
     __obj.asInstanceOf[Anon_Options]
   }
 }

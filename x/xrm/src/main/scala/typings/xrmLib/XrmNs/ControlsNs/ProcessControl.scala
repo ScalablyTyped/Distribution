@@ -35,12 +35,8 @@ object ProcessControl {
     setDisplayState: js.Function1[xrmLib.XrmNs.DisplayState, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): ProcessControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisplayState")(getDisplayState)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("reflow")(reflow)
-    __obj.updateDynamic("setDisplayState")(setDisplayState)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(getDisplayState = getDisplayState, getVisible = getVisible, reflow = reflow, setDisplayState = setDisplayState, setVisible = setVisible)
+  
     __obj.asInstanceOf[ProcessControl]
   }
 }

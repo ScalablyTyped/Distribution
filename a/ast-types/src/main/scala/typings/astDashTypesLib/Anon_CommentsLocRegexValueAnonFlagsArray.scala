@@ -20,8 +20,7 @@ object Anon_CommentsLocRegexValueAnonFlagsArray {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     regex: Anon_Flags = null
   ): Anon_CommentsLocRegexValueAnonFlagsArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (regex != null) __obj.updateDynamic("regex")(regex)

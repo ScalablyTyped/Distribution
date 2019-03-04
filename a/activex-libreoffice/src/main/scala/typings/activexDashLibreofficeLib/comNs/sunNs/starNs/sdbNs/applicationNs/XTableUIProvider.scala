@@ -46,9 +46,8 @@ object XTableUIProvider {
       activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic
     ]
   ): XTableUIProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTableEditor")(getTableEditor)
-    __obj.updateDynamic("getTableIcon")(getTableIcon)
+    val __obj = js.Dynamic.literal(getTableEditor = getTableEditor, getTableIcon = getTableIcon)
+  
     __obj.asInstanceOf[XTableUIProvider]
   }
 }

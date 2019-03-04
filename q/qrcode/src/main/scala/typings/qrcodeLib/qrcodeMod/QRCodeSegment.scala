@@ -16,9 +16,8 @@ object QRCodeSegment {
     data: java.lang.String,
     mode: qrcodeLib.qrcodeLibStrings.alphanumeric | qrcodeLib.qrcodeLibStrings.numeric
   ): QRCodeSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data, mode = mode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[QRCodeSegment]
   }
 }

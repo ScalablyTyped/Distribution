@@ -18,9 +18,7 @@ object Anon_PositionScopeTopicArn {
     scope: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_PositionScopeTopicArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PositionScopeTopicArn]
   }

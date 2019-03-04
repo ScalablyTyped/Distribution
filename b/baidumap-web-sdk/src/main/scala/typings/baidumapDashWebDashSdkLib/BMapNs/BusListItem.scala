@@ -12,8 +12,8 @@ trait BusListItem extends js.Object {
 object BusListItem {
   @scala.inline
   def apply(name: java.lang.String): BusListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[BusListItem]
   }
 }

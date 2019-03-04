@@ -52,27 +52,8 @@ object StatsDto {
     spellblock: scala.Double,
     spellblockperlevel: scala.Double
   ): StatsDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("armor")(armor)
-    __obj.updateDynamic("armorperlevel")(armorperlevel)
-    __obj.updateDynamic("attackdamage")(attackdamage)
-    __obj.updateDynamic("attackdamageperlevel")(attackdamageperlevel)
-    __obj.updateDynamic("attackrange")(attackrange)
-    __obj.updateDynamic("attackspeedoffset")(attackspeedoffset)
-    __obj.updateDynamic("attackspeedperlevel")(attackspeedperlevel)
-    __obj.updateDynamic("crit")(crit)
-    __obj.updateDynamic("critperlevel")(critperlevel)
-    __obj.updateDynamic("hp")(hp)
-    __obj.updateDynamic("hpperlevel")(hpperlevel)
-    __obj.updateDynamic("hpregen")(hpregen)
-    __obj.updateDynamic("hpregenperlevel")(hpregenperlevel)
-    __obj.updateDynamic("movespeed")(movespeed)
-    __obj.updateDynamic("mp")(mp)
-    __obj.updateDynamic("mpperlevel")(mpperlevel)
-    __obj.updateDynamic("mpregen")(mpregen)
-    __obj.updateDynamic("mpregenperlevel")(mpregenperlevel)
-    __obj.updateDynamic("spellblock")(spellblock)
-    __obj.updateDynamic("spellblockperlevel")(spellblockperlevel)
+    val __obj = js.Dynamic.literal(armor = armor, armorperlevel = armorperlevel, attackdamage = attackdamage, attackdamageperlevel = attackdamageperlevel, attackrange = attackrange, attackspeedoffset = attackspeedoffset, attackspeedperlevel = attackspeedperlevel, crit = crit, critperlevel = critperlevel, hp = hp, hpperlevel = hpperlevel, hpregen = hpregen, hpregenperlevel = hpregenperlevel, movespeed = movespeed, mp = mp, mpperlevel = mpperlevel, mpregen = mpregen, mpregenperlevel = mpregenperlevel, spellblock = spellblock, spellblockperlevel = spellblockperlevel)
+  
     __obj.asInstanceOf[StatsDto]
   }
 }

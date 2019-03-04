@@ -21,8 +21,8 @@ object LexDialogActionClose {
     message: awsDashLambdaLib.Anon_Content = null,
     responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
   ): LexDialogActionClose = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fulfillmentState")(fulfillmentState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fulfillmentState = fulfillmentState.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (message != null) __obj.updateDynamic("message")(message)
     if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
     __obj.asInstanceOf[LexDialogActionClose]

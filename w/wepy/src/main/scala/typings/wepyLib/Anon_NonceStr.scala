@@ -22,11 +22,8 @@ object Anon_NonceStr {
     signType: java.lang.String,
     timeStamp: java.lang.String
   ): Anon_NonceStr = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("nonceStr")(nonceStr)
-    __obj.updateDynamic("paySign")(paySign)
-    __obj.updateDynamic("signType")(signType)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, signType = signType, timeStamp = timeStamp)
+    __obj.updateDynamic("package")(`package`)
     __obj.asInstanceOf[Anon_NonceStr]
   }
 }

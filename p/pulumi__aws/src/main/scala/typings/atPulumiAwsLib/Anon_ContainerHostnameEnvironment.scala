@@ -20,8 +20,7 @@ object Anon_ContainerHostnameEnvironment {
     environment: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     modelDataUrl: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ContainerHostnameEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (containerHostname != null) __obj.updateDynamic("containerHostname")(containerHostname.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (modelDataUrl != null) __obj.updateDynamic("modelDataUrl")(modelDataUrl.asInstanceOf[js.Any])

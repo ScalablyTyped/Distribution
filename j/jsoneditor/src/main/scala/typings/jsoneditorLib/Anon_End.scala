@@ -16,9 +16,8 @@ object Anon_End {
     end: jsoneditorLib.jsoneditorMod.SerializableNode,
     start: jsoneditorLib.jsoneditorMod.SerializableNode
   ): Anon_End = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[Anon_End]
   }
 }

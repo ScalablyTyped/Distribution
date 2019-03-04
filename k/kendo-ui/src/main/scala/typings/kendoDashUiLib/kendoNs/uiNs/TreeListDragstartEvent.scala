@@ -17,10 +17,7 @@ object TreeListDragstartEvent {
     sender: TreeList,
     source: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null
   ): TreeListDragstartEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[TreeListDragstartEvent]
   }

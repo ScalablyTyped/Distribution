@@ -21,10 +21,8 @@ object RawDraftInlineStyleRange {
     offset: scala.Double,
     style: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftInlineStyleType
   ): RawDraftInlineStyleRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(length = length, offset = offset, style = style)
+  
     __obj.asInstanceOf[RawDraftInlineStyleRange]
   }
 }

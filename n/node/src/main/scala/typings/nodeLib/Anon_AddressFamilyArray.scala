@@ -16,8 +16,7 @@ object Anon_AddressFamilyArray {
     address: java.lang.String | js.Array[nodeLib.dnsMod.LookupAddress],
     family: scala.Int | scala.Double = null
   ): Anon_AddressFamilyArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddressFamilyArray]
   }

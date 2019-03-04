@@ -35,10 +35,7 @@ object AutoCompleteCommand {
     label: java.lang.String,
     icon: java.lang.String = null
   ): AutoCompleteCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(action = action, id = id, label = label)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     __obj.asInstanceOf[AutoCompleteCommand]
   }

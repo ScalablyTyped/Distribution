@@ -26,12 +26,8 @@ object XDefaultsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDefaultsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Defaults")(Defaults)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaults")(getDefaults)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Defaults = Defaults, acquire = acquire, getDefaults = getDefaults, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDefaultsSupplier]
   }
 }

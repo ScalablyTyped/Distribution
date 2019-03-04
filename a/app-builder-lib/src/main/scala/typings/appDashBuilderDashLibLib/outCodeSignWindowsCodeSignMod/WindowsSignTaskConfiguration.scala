@@ -23,11 +23,7 @@ object WindowsSignTaskConfiguration {
     resultOutputPath: java.lang.String = null,
     site: java.lang.String = null
   ): WindowsSignTaskConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("isNest")(isNest)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(hash = hash, isNest = isNest, options = options, path = path)
     if (cscInfo != null) __obj.updateDynamic("cscInfo")(cscInfo.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (resultOutputPath != null) __obj.updateDynamic("resultOutputPath")(resultOutputPath)

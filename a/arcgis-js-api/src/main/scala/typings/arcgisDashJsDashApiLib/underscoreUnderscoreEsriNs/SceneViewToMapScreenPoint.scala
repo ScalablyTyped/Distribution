@@ -30,12 +30,8 @@ object SceneViewToMapScreenPoint {
     x: scala.Double,
     y: scala.Double
   ): SceneViewToMapScreenPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, x = x, y = y)
+  
     __obj.asInstanceOf[SceneViewToMapScreenPoint]
   }
 }

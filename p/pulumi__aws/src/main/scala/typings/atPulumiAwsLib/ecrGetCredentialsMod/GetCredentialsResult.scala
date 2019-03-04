@@ -23,11 +23,8 @@ object GetCredentialsResult {
     id: java.lang.String,
     proxyEndpoint: java.lang.String
   ): GetCredentialsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationToken")(authorizationToken)
-    __obj.updateDynamic("expiresAt")(expiresAt)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("proxyEndpoint")(proxyEndpoint)
+    val __obj = js.Dynamic.literal(authorizationToken = authorizationToken, expiresAt = expiresAt, id = id, proxyEndpoint = proxyEndpoint)
+  
     __obj.asInstanceOf[GetCredentialsResult]
   }
 }

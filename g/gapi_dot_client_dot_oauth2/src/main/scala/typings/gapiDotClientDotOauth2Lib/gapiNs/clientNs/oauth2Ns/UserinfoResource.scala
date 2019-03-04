@@ -19,9 +19,8 @@ object UserinfoResource {
     ],
     v2: V2Resource
   ): UserinfoResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("v2")(v2)
+    val __obj = js.Dynamic.literal(get = get, v2 = v2)
+  
     __obj.asInstanceOf[UserinfoResource]
   }
 }

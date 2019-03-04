@@ -120,8 +120,7 @@ object IconMenuProps {
     useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined,
     value: js.Any | js.Array[_] = null
   ): IconMenuProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconButtonElement")(iconButtonElement)
+    val __obj = js.Dynamic.literal(iconButtonElement = iconButtonElement)
     if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (animation != null) __obj.updateDynamic("animation")(animation)

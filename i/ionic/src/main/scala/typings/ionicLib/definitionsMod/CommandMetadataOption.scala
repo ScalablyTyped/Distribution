@@ -26,9 +26,7 @@ object CommandMetadataOption {
     spec: atIonicCliDashFrameworkLib.Anon_Value = null,
     `type`: atIonicCliDashFrameworkLib.definitionsMod.CommandOptionType = null
   ): CommandMetadataOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(name = name, summary = summary)
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)

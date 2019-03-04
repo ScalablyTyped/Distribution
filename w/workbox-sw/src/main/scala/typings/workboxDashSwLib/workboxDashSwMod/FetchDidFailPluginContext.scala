@@ -14,10 +14,8 @@ trait FetchDidFailPluginContext extends js.Object {
 object FetchDidFailPluginContext {
   @scala.inline
   def apply(error: stdLib.Error, originalRequest: stdLib.Request, request: stdLib.Request): FetchDidFailPluginContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("originalRequest")(originalRequest)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(error = error, originalRequest = originalRequest, request = request)
+  
     __obj.asInstanceOf[FetchDidFailPluginContext]
   }
 }

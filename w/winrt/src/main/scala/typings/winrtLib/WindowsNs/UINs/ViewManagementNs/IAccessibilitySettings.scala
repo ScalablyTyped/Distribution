@@ -14,10 +14,8 @@ trait IAccessibilitySettings extends js.Object {
 object IAccessibilitySettings {
   @scala.inline
   def apply(highContrast: scala.Boolean, highContrastScheme: java.lang.String, onhighcontrastchanged: js.Any): IAccessibilitySettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("highContrast")(highContrast)
-    __obj.updateDynamic("highContrastScheme")(highContrastScheme)
-    __obj.updateDynamic("onhighcontrastchanged")(onhighcontrastchanged)
+    val __obj = js.Dynamic.literal(highContrast = highContrast, highContrastScheme = highContrastScheme, onhighcontrastchanged = onhighcontrastchanged)
+  
     __obj.asInstanceOf[IAccessibilitySettings]
   }
 }

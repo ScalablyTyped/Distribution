@@ -30,9 +30,7 @@ object IChain {
     pathLength: scala.Double,
     endless: js.UndefOr[scala.Boolean] = js.undefined
   ): IChain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("pathLength")(pathLength)
+    val __obj = js.Dynamic.literal(links = links, pathLength = pathLength)
     if (!js.isUndefined(endless)) __obj.updateDynamic("endless")(endless)
     __obj.asInstanceOf[IChain]
   }

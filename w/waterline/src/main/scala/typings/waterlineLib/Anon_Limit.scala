@@ -13,9 +13,8 @@ trait Anon_Limit extends js.Object {
 object Anon_Limit {
   @scala.inline
   def apply(limit: scala.Double, page: scala.Double): Anon_Limit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("page")(page)
+    val __obj = js.Dynamic.literal(limit = limit, page = page)
+  
     __obj.asInstanceOf[Anon_Limit]
   }
 }

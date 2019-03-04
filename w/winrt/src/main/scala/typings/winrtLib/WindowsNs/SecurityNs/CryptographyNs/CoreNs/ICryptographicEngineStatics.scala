@@ -86,14 +86,8 @@ object ICryptographicEngineStatics {
       scala.Boolean
     ]
   ): ICryptographicEngineStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("decryptAndAuthenticate")(decryptAndAuthenticate)
-    __obj.updateDynamic("deriveKeyMaterial")(deriveKeyMaterial)
-    __obj.updateDynamic("encrypt")(encrypt)
-    __obj.updateDynamic("encryptAndAuthenticate")(encryptAndAuthenticate)
-    __obj.updateDynamic("sign")(sign)
-    __obj.updateDynamic("verifySignature")(verifySignature)
+    val __obj = js.Dynamic.literal(decrypt = decrypt, decryptAndAuthenticate = decryptAndAuthenticate, deriveKeyMaterial = deriveKeyMaterial, encrypt = encrypt, encryptAndAuthenticate = encryptAndAuthenticate, sign = sign, verifySignature = verifySignature)
+  
     __obj.asInstanceOf[ICryptographicEngineStatics]
   }
 }

@@ -42,9 +42,8 @@ object WorksheetSelectionChangedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetSelectionChanged,
     worksheetId: java.lang.String
   ): WorksheetSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(address = address, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorksheetSelectionChangedEventArgs]
   }
 }

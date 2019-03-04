@@ -12,8 +12,8 @@ trait Anon_Fn extends js.Object {
 object Anon_Fn {
   @scala.inline
   def apply(fn: momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.Duration): Anon_Fn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fn")(fn)
+    val __obj = js.Dynamic.literal(fn = fn)
+  
     __obj.asInstanceOf[Anon_Fn]
   }
 }

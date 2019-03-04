@@ -44,14 +44,8 @@ object WorkflowConflicts {
     spawnsConcurrency: scala.Boolean,
     stepId: scala.Double
   ): WorkflowConflicts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobID")(jobID)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("spawnsConcurrency")(spawnsConcurrency)
-    __obj.updateDynamic("stepId")(stepId)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobID = jobID, options = options, propertyIsEnumerable = propertyIsEnumerable, spawnsConcurrency = spawnsConcurrency, stepId = stepId)
+  
     __obj.asInstanceOf[WorkflowConflicts]
   }
 }

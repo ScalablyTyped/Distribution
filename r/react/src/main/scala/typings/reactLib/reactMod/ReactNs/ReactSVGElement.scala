@@ -17,9 +17,8 @@ object ReactSVGElement {
     `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
     key: Key = null
   ): ReactSVGElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props, ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactSVGElement]
   }

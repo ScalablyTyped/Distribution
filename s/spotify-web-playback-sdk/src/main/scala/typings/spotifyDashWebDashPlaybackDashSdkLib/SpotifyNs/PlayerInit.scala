@@ -18,9 +18,7 @@ object PlayerInit {
     name: java.lang.String,
     volume: scala.Int | scala.Double = null
   ): PlayerInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getOAuthToken")(getOAuthToken)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(getOAuthToken = getOAuthToken, name = name)
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerInit]
   }

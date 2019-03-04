@@ -37,12 +37,8 @@ object IOperation {
     rootId: java.lang.String,
     syntheticSource: java.lang.String
   ): IOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("rootId")(rootId)
-    __obj.updateDynamic("syntheticSource")(syntheticSource)
+    val __obj = js.Dynamic.literal(id = id, name = name, parentId = parentId, rootId = rootId, syntheticSource = syntheticSource)
+  
     __obj.asInstanceOf[IOperation]
   }
 }

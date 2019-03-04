@@ -46,20 +46,7 @@ object Value {
     startX: scala.Int | scala.Double = null,
     startY: scala.Int | scala.Double = null
   ): Value = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SVGHeight")(SVGHeight)
-    __obj.updateDynamic("SVGWidth")(SVGWidth)
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("viewerHeight")(viewerHeight)
-    __obj.updateDynamic("viewerWidth")(viewerWidth)
+    val __obj = js.Dynamic.literal(SVGHeight = SVGHeight, SVGWidth = SVGWidth, a = a, b = b, c = c, d = d, e = e, f = f, focus = focus, mode = mode, version = version, viewerHeight = viewerHeight, viewerWidth = viewerWidth)
     if (endX != null) __obj.updateDynamic("endX")(endX.asInstanceOf[js.Any])
     if (endY != null) __obj.updateDynamic("endY")(endY.asInstanceOf[js.Any])
     if (startX != null) __obj.updateDynamic("startX")(startX.asInstanceOf[js.Any])

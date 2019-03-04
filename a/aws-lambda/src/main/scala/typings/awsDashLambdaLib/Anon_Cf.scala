@@ -12,8 +12,8 @@ trait Anon_Cf extends js.Object {
 object Anon_Cf {
   @scala.inline
   def apply(cf: awsDashLambdaLib.awsDashLambdaMod.CloudFrontEvent with Anon_Request): Anon_Cf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cf")(cf)
+    val __obj = js.Dynamic.literal(cf = cf)
+  
     __obj.asInstanceOf[Anon_Cf]
   }
 }

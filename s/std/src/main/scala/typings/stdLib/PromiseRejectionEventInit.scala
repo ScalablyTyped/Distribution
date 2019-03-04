@@ -19,8 +19,7 @@ object PromiseRejectionEventInit {
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     reason: js.Any = null
   ): PromiseRejectionEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promise")(promise)
+    val __obj = js.Dynamic.literal(promise = promise)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

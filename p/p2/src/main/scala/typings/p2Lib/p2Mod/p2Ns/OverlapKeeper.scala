@@ -36,19 +36,8 @@ object OverlapKeeper {
     tmpArray1: js.Array[_],
     tmpDict: TupleDictionary
   ): OverlapKeeper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OverlapKeeperRecordPool")(OverlapKeeperRecordPool)
-    __obj.updateDynamic("bodiesAreOverlapping")(bodiesAreOverlapping)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("overlappingShapesCurrentState")(overlappingShapesCurrentState)
-    __obj.updateDynamic("overlappingShapesLastState")(overlappingShapesLastState)
-    __obj.updateDynamic("setOverlapping")(setOverlapping)
-    __obj.updateDynamic("shapeA")(shapeA)
-    __obj.updateDynamic("shapeB")(shapeB)
-    __obj.updateDynamic("tick")(tick)
-    __obj.updateDynamic("tmpArray1")(tmpArray1)
-    __obj.updateDynamic("tmpDict")(tmpDict)
+    val __obj = js.Dynamic.literal(OverlapKeeperRecordPool = OverlapKeeperRecordPool, bodiesAreOverlapping = bodiesAreOverlapping, bodyA = bodyA, bodyB = bodyB, overlappingShapesCurrentState = overlappingShapesCurrentState, overlappingShapesLastState = overlappingShapesLastState, setOverlapping = setOverlapping, shapeA = shapeA, shapeB = shapeB, tick = tick, tmpArray1 = tmpArray1, tmpDict = tmpDict)
+  
     __obj.asInstanceOf[OverlapKeeper]
   }
 }

@@ -22,9 +22,8 @@ object Anon_ActiveIndex {
       reactLib.Event
     ]
   ): Anon_ActiveIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeIndex")(activeIndex)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex, event = event)
+  
     __obj.asInstanceOf[Anon_ActiveIndex]
   }
 }

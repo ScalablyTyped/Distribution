@@ -26,14 +26,7 @@ object CommitSummary {
     author: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null,
     committer: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = null
   ): CommitSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gitCommit")(gitCommit)
-    __obj.updateDynamic("htmlUri")(htmlUri)
-    __obj.updateDynamic("loadAsync")(loadAsync)
-    __obj.updateDynamic("loadGitAsync")(loadGitAsync)
-    __obj.updateDynamic("parents")(parents)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("sha")(sha)
+    val __obj = js.Dynamic.literal(gitCommit = gitCommit, htmlUri = htmlUri, loadAsync = loadAsync, loadGitAsync = loadGitAsync, parents = parents, repository = repository, sha = sha)
     if (author != null) __obj.updateDynamic("author")(author)
     if (committer != null) __obj.updateDynamic("committer")(committer)
     __obj.asInstanceOf[CommitSummary]

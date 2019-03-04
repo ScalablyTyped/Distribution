@@ -12,8 +12,8 @@ trait Anon_AdvancedSecurityModeInput extends js.Object {
 object Anon_AdvancedSecurityModeInput {
   @scala.inline
   def apply(advancedSecurityMode: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_AdvancedSecurityModeInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("advancedSecurityMode")(advancedSecurityMode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(advancedSecurityMode = advancedSecurityMode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AdvancedSecurityModeInput]
   }
 }

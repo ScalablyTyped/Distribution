@@ -43,12 +43,8 @@ object XRubySelection {
       scala.Unit
     ]
   ): XRubySelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRubyList")(getRubyList)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setRubyList")(setRubyList)
+    val __obj = js.Dynamic.literal(acquire = acquire, getRubyList = getRubyList, queryInterface = queryInterface, release = release, setRubyList = setRubyList)
+  
     __obj.asInstanceOf[XRubySelection]
   }
 }

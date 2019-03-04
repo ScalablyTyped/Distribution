@@ -75,30 +75,8 @@ object InstalledExtension {
     serviceInstanceType: java.lang.String,
     version: java.lang.String
   ): InstalledExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("constraints")(constraints)
-    __obj.updateDynamic("contributionTypes")(contributionTypes)
-    __obj.updateDynamic("contributions")(contributions)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("eventCallbacks")(eventCallbacks)
-    __obj.updateDynamic("extensionId")(extensionId)
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("fallbackBaseUri")(fallbackBaseUri)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("installState")(installState)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("lastPublished")(lastPublished)
-    __obj.updateDynamic("licensing")(licensing)
-    __obj.updateDynamic("manifestVersion")(manifestVersion)
-    __obj.updateDynamic("publisherId")(publisherId)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("registrationId")(registrationId)
-    __obj.updateDynamic("restrictedTo")(restrictedTo)
-    __obj.updateDynamic("scopes")(scopes)
-    __obj.updateDynamic("serviceInstanceType")(serviceInstanceType)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(baseUri = baseUri, constraints = constraints, contributionTypes = contributionTypes, contributions = contributions, demands = demands, eventCallbacks = eventCallbacks, extensionId = extensionId, extensionName = extensionName, fallbackBaseUri = fallbackBaseUri, files = files, flags = flags, installState = installState, language = language, lastPublished = lastPublished, licensing = licensing, manifestVersion = manifestVersion, publisherId = publisherId, publisherName = publisherName, registrationId = registrationId, restrictedTo = restrictedTo, scopes = scopes, serviceInstanceType = serviceInstanceType, version = version)
+  
     __obj.asInstanceOf[InstalledExtension]
   }
 }

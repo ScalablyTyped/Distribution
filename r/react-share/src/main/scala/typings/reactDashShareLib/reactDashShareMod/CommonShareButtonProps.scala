@@ -46,8 +46,7 @@ object CommonShareButtonProps {
     windowHeight: scala.Int | scala.Double = null,
     windowWidth: scala.Int | scala.Double = null
   ): CommonShareButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (additionalProps != null) __obj.updateDynamic("additionalProps")(additionalProps)
     if (beforeOnClick != null) __obj.updateDynamic("beforeOnClick")(beforeOnClick)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

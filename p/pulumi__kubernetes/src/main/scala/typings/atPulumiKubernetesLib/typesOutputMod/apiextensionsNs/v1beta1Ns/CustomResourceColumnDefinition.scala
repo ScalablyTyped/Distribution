@@ -53,12 +53,8 @@ object CustomResourceColumnDefinition {
     priority: scala.Double,
     `type`: java.lang.String
   ): CustomResourceColumnDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("JSONPath")(JSONPath)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(JSONPath = JSONPath, description = description, format = format, name = name, priority = priority)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CustomResourceColumnDefinition]
   }
 }

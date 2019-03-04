@@ -12,7 +12,7 @@ sealed trait FindOptions extends js.Object
 @js.native
 object FindOptions extends js.Object {
   @js.native
-  sealed trait `case_`
+  sealed trait case_
     extends winrtLib.WindowsNs.UINs.TextNs.FindOptions
   
   @js.native
@@ -23,7 +23,7 @@ object FindOptions extends js.Object {
   sealed trait word
     extends winrtLib.WindowsNs.UINs.TextNs.FindOptions
   
-  val `case_`: `case_` with java.lang.String = js.native
+  val case_ : case_ with java.lang.String = js.native
   val none: none with java.lang.String = js.native
   val word: word with java.lang.String = js.native
   @JSBracketAccess

@@ -27,13 +27,8 @@ object TestResultParameterModel {
     url: java.lang.String,
     value: java.lang.String
   ): TestResultParameterModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionPath")(actionPath)
-    __obj.updateDynamic("iterationId")(iterationId)
-    __obj.updateDynamic("parameterName")(parameterName)
-    __obj.updateDynamic("stepIdentifier")(stepIdentifier)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(actionPath = actionPath, iterationId = iterationId, parameterName = parameterName, stepIdentifier = stepIdentifier, url = url, value = value)
+  
     __obj.asInstanceOf[TestResultParameterModel]
   }
 }

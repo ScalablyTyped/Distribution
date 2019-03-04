@@ -69,14 +69,8 @@ object IAccount {
     support_url: java.lang.String = null,
     tos_acceptance: stripeLib.Anon_Date = null
   ): IAccount = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("charges_enabled")(charges_enabled)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("details_submitted")(details_submitted)
-    __obj.updateDynamic("display_name")(display_name)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("payouts_enabled")(payouts_enabled)
-    __obj.updateDynamic("verification")(verification)
+    val __obj = js.Dynamic.literal(charges_enabled = charges_enabled, country = country, details_submitted = details_submitted, display_name = display_name, id = id, payouts_enabled = payouts_enabled, verification = verification)
+    __obj.updateDynamic("object")(`object`)
     if (business_logo != null) __obj.updateDynamic("business_logo")(business_logo)
     if (business_name != null) __obj.updateDynamic("business_name")(business_name)
     if (business_primary_color != null) __obj.updateDynamic("business_primary_color")(business_primary_color)

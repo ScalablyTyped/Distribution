@@ -32,8 +32,7 @@ object Anon_AsyncComments {
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind | astDashTypesLib.genKindsMod.NoopKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_AsyncComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(params = params)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)

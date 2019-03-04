@@ -26,8 +26,7 @@ object DotDotDotProps {
     truncationHTML: java.lang.String = null,
     useNativeClamp: js.UndefOr[scala.Boolean] = js.undefined
   ): DotDotDotProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clamp = clamp.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (splitOnChars != null) __obj.updateDynamic("splitOnChars")(splitOnChars)
     if (tagName != null) __obj.updateDynamic("tagName")(tagName)

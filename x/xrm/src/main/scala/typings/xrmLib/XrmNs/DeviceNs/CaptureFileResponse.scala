@@ -35,11 +35,8 @@ object CaptureFileResponse {
     fileSize: scala.Double,
     mimeType: java.lang.String
   ): CaptureFileResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileContent")(fileContent)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(fileContent = fileContent, fileName = fileName, fileSize = fileSize, mimeType = mimeType)
+  
     __obj.asInstanceOf[CaptureFileResponse]
   }
 }

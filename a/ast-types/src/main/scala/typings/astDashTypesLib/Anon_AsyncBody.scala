@@ -40,9 +40,7 @@ object Anon_AsyncBody {
     returnType: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_AsyncBody = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(body = body, params = params)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)

@@ -32,17 +32,8 @@ object DataSource {
     show: scala.Boolean,
     update: js.Function1[JulianDate, scala.Boolean]
   ): DataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changedEvent")(changedEvent)
-    __obj.updateDynamic("clock")(clock)
-    __obj.updateDynamic("clustering")(clustering)
-    __obj.updateDynamic("entities")(entities)
-    __obj.updateDynamic("errorEvent")(errorEvent)
-    __obj.updateDynamic("isLoading")(isLoading)
-    __obj.updateDynamic("loadingEvent")(loadingEvent)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(changedEvent = changedEvent, clock = clock, clustering = clustering, entities = entities, errorEvent = errorEvent, isLoading = isLoading, loadingEvent = loadingEvent, name = name, show = show, update = update)
+  
     __obj.asInstanceOf[DataSource]
   }
 }

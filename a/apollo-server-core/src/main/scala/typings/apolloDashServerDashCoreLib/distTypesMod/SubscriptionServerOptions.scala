@@ -42,8 +42,7 @@ object SubscriptionServerOptions {
       _
     ] = null
   ): SubscriptionServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
     if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(onDisconnect)

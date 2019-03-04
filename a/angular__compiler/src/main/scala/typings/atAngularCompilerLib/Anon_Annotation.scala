@@ -16,9 +16,8 @@ object Anon_Annotation {
     annotation: atAngularCompilerLib.srcCoreMod.Directive,
     metadata: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata
   ): Anon_Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotation")(annotation)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(annotation = annotation, metadata = metadata)
+  
     __obj.asInstanceOf[Anon_Annotation]
   }
 }

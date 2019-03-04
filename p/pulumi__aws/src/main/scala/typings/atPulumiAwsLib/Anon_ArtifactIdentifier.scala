@@ -28,8 +28,8 @@ object Anon_ArtifactIdentifier {
     packaging: java.lang.String = null,
     path: java.lang.String = null
   ): Anon_ArtifactIdentifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("artifactIdentifier")(artifactIdentifier)
+    val __obj = js.Dynamic.literal(artifactIdentifier = artifactIdentifier)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled)
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -65,8 +65,7 @@ object UpdateOptions {
     transaction: Transaction = null,
     validate: js.UndefOr[scala.Boolean] = js.undefined
   ): UpdateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(where = where)
     if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)

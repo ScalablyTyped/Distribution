@@ -20,9 +20,8 @@ object ParameterMetadata {
     `type`: inversifyDashExpressDashUtilsLib.dtsConstantsMod.PARAMETER_TYPE,
     parameterName: java.lang.String = null
   ): ParameterMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("injectRoot")(injectRoot)
+    val __obj = js.Dynamic.literal(index = index, injectRoot = injectRoot)
+    __obj.updateDynamic("type")(`type`)
     if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
     __obj.asInstanceOf[ParameterMetadata]
   }

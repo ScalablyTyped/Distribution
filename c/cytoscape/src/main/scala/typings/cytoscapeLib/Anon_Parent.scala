@@ -12,8 +12,8 @@ trait Anon_Parent extends js.Object {
 object Anon_Parent {
   @scala.inline
   def apply(parent: java.lang.String): Anon_Parent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
+  
     __obj.asInstanceOf[Anon_Parent]
   }
 }

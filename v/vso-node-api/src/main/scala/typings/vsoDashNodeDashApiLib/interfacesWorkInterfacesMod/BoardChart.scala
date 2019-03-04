@@ -24,11 +24,8 @@ object BoardChart {
     settings: org.scalablytyped.runtime.StringDictionary[js.Any],
     url: java.lang.String
   ): BoardChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, name = name, settings = settings, url = url)
+  
     __obj.asInstanceOf[BoardChart]
   }
 }

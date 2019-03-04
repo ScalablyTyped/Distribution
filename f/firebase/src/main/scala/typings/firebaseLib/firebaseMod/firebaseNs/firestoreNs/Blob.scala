@@ -30,10 +30,8 @@ object Blob {
     toBase64: js.Function0[java.lang.String],
     toUint8Array: js.Function0[stdLib.Uint8Array]
   ): Blob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("toBase64")(toBase64)
-    __obj.updateDynamic("toUint8Array")(toUint8Array)
+    val __obj = js.Dynamic.literal(isEqual = isEqual, toBase64 = toBase64, toUint8Array = toUint8Array)
+  
     __obj.asInstanceOf[Blob]
   }
 }

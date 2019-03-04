@@ -13,9 +13,8 @@ trait Anon_KeyResourceType extends js.Object {
 object Anon_KeyResourceType {
   @scala.inline
   def apply(resourceType: java.lang.String, tags: org.scalablytyped.runtime.StringDictionary[js.Any]): Anon_KeyResourceType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceType")(resourceType)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(resourceType = resourceType, tags = tags)
+  
     __obj.asInstanceOf[Anon_KeyResourceType]
   }
 }

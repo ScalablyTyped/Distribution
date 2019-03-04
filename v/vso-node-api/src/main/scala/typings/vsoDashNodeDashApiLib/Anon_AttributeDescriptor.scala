@@ -38,20 +38,8 @@ object Anon_AttributeDescriptor {
     ProfileRegion: Anon_Fields,
     ProfileRegions: Anon_Fields
   ): Anon_AttributeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttributeDescriptor")(AttributeDescriptor)
-    __obj.updateDynamic("AttributesContainer")(AttributesContainer)
-    __obj.updateDynamic("Avatar")(Avatar)
-    __obj.updateDynamic("AvatarSize")(AvatarSize)
-    __obj.updateDynamic("CoreProfileAttribute")(CoreProfileAttribute)
-    __obj.updateDynamic("Country")(Country)
-    __obj.updateDynamic("CreateProfileContext")(CreateProfileContext)
-    __obj.updateDynamic("GeoRegion")(GeoRegion)
-    __obj.updateDynamic("Profile")(Profile)
-    __obj.updateDynamic("ProfileAttribute")(ProfileAttribute)
-    __obj.updateDynamic("ProfileAttributeBase")(ProfileAttributeBase)
-    __obj.updateDynamic("ProfileRegion")(ProfileRegion)
-    __obj.updateDynamic("ProfileRegions")(ProfileRegions)
+    val __obj = js.Dynamic.literal(AttributeDescriptor = AttributeDescriptor, AttributesContainer = AttributesContainer, Avatar = Avatar, AvatarSize = AvatarSize, CoreProfileAttribute = CoreProfileAttribute, Country = Country, CreateProfileContext = CreateProfileContext, GeoRegion = GeoRegion, Profile = Profile, ProfileAttribute = ProfileAttribute, ProfileAttributeBase = ProfileAttributeBase, ProfileRegion = ProfileRegion, ProfileRegions = ProfileRegions)
+  
     __obj.asInstanceOf[Anon_AttributeDescriptor]
   }
 }

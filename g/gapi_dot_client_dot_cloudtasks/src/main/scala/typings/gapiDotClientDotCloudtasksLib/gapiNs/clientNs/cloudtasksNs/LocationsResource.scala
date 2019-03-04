@@ -26,10 +26,8 @@ object LocationsResource {
     ],
     queues: QueuesResource
   ): LocationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("queues")(queues)
+    val __obj = js.Dynamic.literal(get = get, list = list, queues = queues)
+  
     __obj.asInstanceOf[LocationsResource]
   }
 }

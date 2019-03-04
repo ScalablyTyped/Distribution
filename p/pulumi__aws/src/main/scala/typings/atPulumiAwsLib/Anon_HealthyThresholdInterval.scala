@@ -28,10 +28,7 @@ object Anon_HealthyThresholdInterval {
     protocol: java.lang.String = null,
     unhealthyThreshold: scala.Int | scala.Double = null
   ): Anon_HealthyThresholdInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matcher")(matcher)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(matcher = matcher, path = path, timeout = timeout)
     if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port)

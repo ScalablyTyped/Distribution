@@ -72,17 +72,8 @@ object XDataPilotTable2 {
     refresh: js.Function0[scala.Unit],
     release: js.Function0[scala.Unit]
   ): XDataPilotTable2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputRange")(OutputRange)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDrillDownData")(getDrillDownData)
-    __obj.updateDynamic("getOutputRange")(getOutputRange)
-    __obj.updateDynamic("getOutputRangeByType")(getOutputRangeByType)
-    __obj.updateDynamic("getPositionData")(getPositionData)
-    __obj.updateDynamic("insertDrillDownSheet")(insertDrillDownSheet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(OutputRange = OutputRange, acquire = acquire, getDrillDownData = getDrillDownData, getOutputRange = getOutputRange, getOutputRangeByType = getOutputRangeByType, getPositionData = getPositionData, insertDrillDownSheet = insertDrillDownSheet, queryInterface = queryInterface, refresh = refresh, release = release)
+  
     __obj.asInstanceOf[XDataPilotTable2]
   }
 }

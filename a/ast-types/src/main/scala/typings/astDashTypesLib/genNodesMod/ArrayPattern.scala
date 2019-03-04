@@ -25,8 +25,8 @@ object ArrayPattern {
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.ArrayPattern
   ): ArrayPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("elements")(elements)
+    val __obj = js.Dynamic.literal(elements = elements)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArrayPattern]
   }
 }

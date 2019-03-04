@@ -24,13 +24,8 @@ object Anon_AutoCenterEnd {
     showCount: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     svgStyle: js.Object
   ): Anon_AutoCenterEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("maximizedSvgStyle")(maximizedSvgStyle)
-    __obj.updateDynamic("minimizedSvgStyle")(minimizedSvgStyle)
-    __obj.updateDynamic("showCount")(showCount.asInstanceOf[js.Any])
-    __obj.updateDynamic("svgStyle")(svgStyle)
+    val __obj = js.Dynamic.literal(labelHalign = labelHalign.asInstanceOf[js.Any], labelStyle = labelStyle, maximizedSvgStyle = maximizedSvgStyle, minimizedSvgStyle = minimizedSvgStyle, showCount = showCount.asInstanceOf[js.Any], svgStyle = svgStyle)
+  
     __obj.asInstanceOf[Anon_AutoCenterEnd]
   }
 }

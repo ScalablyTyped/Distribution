@@ -40,7 +40,8 @@ object FrameOptionsChrome {
     color: java.lang.String = null,
     inactiveColor: java.lang.String = null
   ): FrameOptionsChrome = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor)
     if (color != null) __obj.updateDynamic("color")(color)
     if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor)

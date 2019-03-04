@@ -53,26 +53,8 @@ object User {
     revokePrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Groups")(Groups)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("changePassword")(changePassword)
-    __obj.updateDynamic("getGrantablePrivileges")(getGrantablePrivileges)
-    __obj.updateDynamic("getGroups")(getGroups)
-    __obj.updateDynamic("getPrivileges")(getPrivileges)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("grantPrivileges")(grantPrivileges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("revokePrivileges")(revokePrivileges)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Groups = Groups, Name = Name, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, changePassword = changePassword, getGrantablePrivileges = getGrantablePrivileges, getGroups = getGroups, getPrivileges = getPrivileges, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, grantPrivileges = grantPrivileges, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, revokePrivileges = revokePrivileges, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[User]
   }
 }

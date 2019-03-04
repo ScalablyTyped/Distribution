@@ -13,9 +13,9 @@ object ^ extends js.Object {
   def asNativeElements(debugEls: js.Array[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement]): js.Any = js.native
   def getAllDebugNodes(): js.Array[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode] = js.native
   def getDebugNode(nativeNode: js.Any): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode | scala.Null = js.native
-  def `getDebugNode__POST_R3__`(): scala.Null = js.native
-  def `getDebugNode__POST_R3__`(nativeNode: stdLib.Element): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.`DebugElement__POST_R3__` = js.native
-  def `getDebugNode__POST_R3__`(nativeNode: stdLib.Node): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.`DebugNode__POST_R3__` = js.native
+  def getDebugNode__POST_R3__(): scala.Null = js.native
+  def getDebugNode__POST_R3__(nativeNode: stdLib.Element): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement__POST_R3__ = js.native
+  def getDebugNode__POST_R3__(nativeNode: stdLib.Node): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode__POST_R3__ = js.native
   def indexDebugNode(node: atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode): scala.Unit = js.native
   def removeDebugNodeFromIndex(node: atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode): scala.Unit = js.native
 }

@@ -25,8 +25,7 @@ object RequestParam {
     method: wepyLib.wepyLibStrings.GET | wepyLib.wepyLibStrings.OPTIONS | wepyLib.wepyLibStrings.HEAD | wepyLib.wepyLibStrings.POST | wepyLib.wepyLibStrings.PUT | wepyLib.wepyLibStrings.DELETE | wepyLib.wepyLibStrings.TRACE | wepyLib.wepyLibStrings.CONNECT = null,
     responseType: wepyLib.wepyLibStrings.text | wepyLib.wepyLibStrings.arraybuffer = null
   ): RequestParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header)

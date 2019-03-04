@@ -17,11 +17,8 @@ object AccordionGroupCancelEventArgs {
     processOnServer: scala.Boolean,
     sender: Control
   ): AccordionGroupCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(cancel = cancel, group = group, processOnServer = processOnServer, sender = sender)
+  
     __obj.asInstanceOf[AccordionGroupCancelEventArgs]
   }
 }

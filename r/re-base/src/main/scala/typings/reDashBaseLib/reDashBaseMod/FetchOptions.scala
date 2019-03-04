@@ -42,8 +42,7 @@ object FetchOptions {
     queries: js.Object = null,
     `then`: js.Function1[/* result */ js.Any, scala.Unit] = null
   ): FetchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
     if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (queries != null) __obj.updateDynamic("queries")(queries)

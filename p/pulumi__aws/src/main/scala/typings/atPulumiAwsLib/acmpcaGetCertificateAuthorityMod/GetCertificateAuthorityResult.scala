@@ -76,17 +76,8 @@ object GetCertificateAuthorityResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     `type`: java.lang.String
   ): GetCertificateAuthorityResult = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("certificate")(certificate)
-    __obj.updateDynamic("certificateChain")(certificateChain)
-    __obj.updateDynamic("certificateSigningRequest")(certificateSigningRequest)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("notAfter")(notAfter)
-    __obj.updateDynamic("notBefore")(notBefore)
-    __obj.updateDynamic("revocationConfigurations")(revocationConfigurations)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(certificate = certificate, certificateChain = certificateChain, certificateSigningRequest = certificateSigningRequest, id = id, notAfter = notAfter, notBefore = notBefore, revocationConfigurations = revocationConfigurations, serial = serial, status = status, tags = tags)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GetCertificateAuthorityResult]
   }
 }

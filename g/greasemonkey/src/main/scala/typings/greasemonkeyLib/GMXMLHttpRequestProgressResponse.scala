@@ -28,17 +28,8 @@ object GMXMLHttpRequestProgressResponse {
     statusText: java.lang.String,
     total: scala.Double
   ): GMXMLHttpRequestProgressResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("finalUrl")(finalUrl)
-    __obj.updateDynamic("lengthComputable")(lengthComputable)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("readyState")(readyState)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("responseText")(responseText)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(context = context, finalUrl = finalUrl, lengthComputable = lengthComputable, loaded = loaded, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText, total = total)
+  
     __obj.asInstanceOf[GMXMLHttpRequestProgressResponse]
   }
 }

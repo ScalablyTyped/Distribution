@@ -20,11 +20,8 @@ object Anon_Attempts {
     response_code: scala.Double,
     ts: java.lang.String
   ): Anon_Attempts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attempts")(attempts)
-    __obj.updateDynamic("batch_id")(batch_id)
-    __obj.updateDynamic("response_code")(response_code)
-    __obj.updateDynamic("ts")(ts)
+    val __obj = js.Dynamic.literal(attempts = attempts, batch_id = batch_id, response_code = response_code, ts = ts)
+  
     __obj.asInstanceOf[Anon_Attempts]
   }
 }

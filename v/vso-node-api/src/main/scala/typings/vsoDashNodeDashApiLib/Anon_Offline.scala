@@ -13,9 +13,8 @@ trait Anon_Offline extends js.Object {
 object Anon_Offline {
   @scala.inline
   def apply(offline: scala.Double, online: scala.Double): Anon_Offline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offline")(offline)
-    __obj.updateDynamic("online")(online)
+    val __obj = js.Dynamic.literal(offline = offline, online = online)
+  
     __obj.asInstanceOf[Anon_Offline]
   }
 }

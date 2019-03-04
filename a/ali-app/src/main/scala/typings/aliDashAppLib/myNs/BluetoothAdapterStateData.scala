@@ -23,10 +23,8 @@ object BluetoothAdapterStateData {
     discovering: scala.Boolean,
     errMsg: aliDashAppLib.aliDashAppLibStrings.ok | java.lang.String
   ): BluetoothAdapterStateData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("discovering")(discovering)
-    __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(available = available, discovering = discovering, errMsg = errMsg.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BluetoothAdapterStateData]
   }
 }

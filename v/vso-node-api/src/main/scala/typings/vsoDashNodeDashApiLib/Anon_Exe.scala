@@ -15,11 +15,8 @@ trait Anon_Exe extends js.Object {
 object Anon_Exe {
   @scala.inline
   def apply(exe: scala.Double, msi: scala.Double, referralLink: scala.Double, vsix: scala.Double): Anon_Exe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exe")(exe)
-    __obj.updateDynamic("msi")(msi)
-    __obj.updateDynamic("referralLink")(referralLink)
-    __obj.updateDynamic("vsix")(vsix)
+    val __obj = js.Dynamic.literal(exe = exe, msi = msi, referralLink = referralLink, vsix = vsix)
+  
     __obj.asInstanceOf[Anon_Exe]
   }
 }

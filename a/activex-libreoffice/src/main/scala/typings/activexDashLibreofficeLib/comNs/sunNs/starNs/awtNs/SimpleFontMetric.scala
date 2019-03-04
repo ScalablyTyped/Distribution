@@ -51,13 +51,8 @@ object SimpleFontMetric {
     Leading: scala.Double,
     Slant: scala.Double
   ): SimpleFontMetric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Ascent")(Ascent)
-    __obj.updateDynamic("Descent")(Descent)
-    __obj.updateDynamic("FirstChar")(FirstChar)
-    __obj.updateDynamic("LastChar")(LastChar)
-    __obj.updateDynamic("Leading")(Leading)
-    __obj.updateDynamic("Slant")(Slant)
+    val __obj = js.Dynamic.literal(Ascent = Ascent, Descent = Descent, FirstChar = FirstChar, LastChar = LastChar, Leading = Leading, Slant = Slant)
+  
     __obj.asInstanceOf[SimpleFontMetric]
   }
 }

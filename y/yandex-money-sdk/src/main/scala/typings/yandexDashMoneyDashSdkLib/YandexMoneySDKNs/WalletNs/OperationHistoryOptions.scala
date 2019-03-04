@@ -26,8 +26,8 @@ object OperationHistoryOptions {
     start_record: java.lang.String = null,
     till: java.lang.String | stdLib.Date = null
   ): OperationHistoryOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(details)) __obj.updateDynamic("details")(details)
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])

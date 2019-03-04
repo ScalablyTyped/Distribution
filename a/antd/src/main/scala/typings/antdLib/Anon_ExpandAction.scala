@@ -13,9 +13,8 @@ trait Anon_ExpandAction extends js.Object {
 object Anon_ExpandAction {
   @scala.inline
   def apply(expandAction: java.lang.String, showIcon: scala.Boolean): Anon_ExpandAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expandAction")(expandAction)
-    __obj.updateDynamic("showIcon")(showIcon)
+    val __obj = js.Dynamic.literal(expandAction = expandAction, showIcon = showIcon)
+  
     __obj.asInstanceOf[Anon_ExpandAction]
   }
 }

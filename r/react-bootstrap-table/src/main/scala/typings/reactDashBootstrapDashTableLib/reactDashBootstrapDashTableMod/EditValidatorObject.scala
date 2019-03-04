@@ -19,9 +19,8 @@ trait EditValidatorObject extends js.Object {
 object EditValidatorObject {
   @scala.inline
   def apply(isValid: scala.Boolean, notification: reactDashBootstrapDashTableLib.Anon_Msg): EditValidatorObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("notification")(notification)
+    val __obj = js.Dynamic.literal(isValid = isValid, notification = notification)
+  
     __obj.asInstanceOf[EditValidatorObject]
   }
 }

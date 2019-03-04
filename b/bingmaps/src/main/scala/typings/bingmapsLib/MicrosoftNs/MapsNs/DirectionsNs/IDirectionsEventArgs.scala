@@ -15,9 +15,8 @@ trait IDirectionsEventArgs extends js.Object {
 object IDirectionsEventArgs {
   @scala.inline
   def apply(route: js.Array[IRoute], routeSummary: js.Array[IRouteSummary]): IDirectionsEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route)
-    __obj.updateDynamic("routeSummary")(routeSummary)
+    val __obj = js.Dynamic.literal(route = route, routeSummary = routeSummary)
+  
     __obj.asInstanceOf[IDirectionsEventArgs]
   }
 }

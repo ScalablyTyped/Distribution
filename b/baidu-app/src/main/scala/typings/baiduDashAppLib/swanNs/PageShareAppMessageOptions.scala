@@ -20,8 +20,7 @@ object PageShareAppMessageOptions {
     from: baiduDashAppLib.baiduDashAppLibStrings.button | baiduDashAppLib.baiduDashAppLibStrings.menu,
     target: js.Object = null
   ): PageShareAppMessageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[PageShareAppMessageOptions]
   }

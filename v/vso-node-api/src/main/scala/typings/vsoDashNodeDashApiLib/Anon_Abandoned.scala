@@ -24,13 +24,8 @@ object Anon_Abandoned {
     succeeded: scala.Double,
     succeededWithIssues: scala.Double
   ): Anon_Abandoned = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abandoned")(abandoned)
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("skipped")(skipped)
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("succeededWithIssues")(succeededWithIssues)
+    val __obj = js.Dynamic.literal(abandoned = abandoned, canceled = canceled, failed = failed, skipped = skipped, succeeded = succeeded, succeededWithIssues = succeededWithIssues)
+  
     __obj.asInstanceOf[Anon_Abandoned]
   }
 }

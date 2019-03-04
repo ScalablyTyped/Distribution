@@ -20,11 +20,8 @@ object Person {
     personId: java.lang.String,
     userData: java.lang.String
   ): Person = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faceIds")(faceIds)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("personId")(personId)
-    __obj.updateDynamic("userData")(userData)
+    val __obj = js.Dynamic.literal(faceIds = faceIds, name = name, personId = personId, userData = userData)
+  
     __obj.asInstanceOf[Person]
   }
 }

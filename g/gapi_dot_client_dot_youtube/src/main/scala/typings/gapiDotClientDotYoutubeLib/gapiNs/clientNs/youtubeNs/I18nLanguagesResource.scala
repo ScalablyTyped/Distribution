@@ -18,8 +18,8 @@ object I18nLanguagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[I18nLanguageListResponse]
     ]
   ): I18nLanguagesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[I18nLanguagesResource]
   }
 }

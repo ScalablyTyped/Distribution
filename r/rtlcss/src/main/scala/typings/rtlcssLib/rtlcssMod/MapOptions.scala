@@ -18,9 +18,7 @@ object MapOptions {
     scope: java.lang.String,
     greedy: js.UndefOr[scala.Boolean] = js.undefined
   ): MapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoreCase")(ignoreCase)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase, scope = scope)
     if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy)
     __obj.asInstanceOf[MapOptions]
   }

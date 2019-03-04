@@ -14,7 +14,8 @@ trait TypeaheadParams extends js.Object {
 object TypeaheadParams {
   @scala.inline
   def apply(`type`: java.lang.String, count: scala.Int | scala.Double = null, query: java.lang.String = null): TypeaheadParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
     __obj.asInstanceOf[TypeaheadParams]

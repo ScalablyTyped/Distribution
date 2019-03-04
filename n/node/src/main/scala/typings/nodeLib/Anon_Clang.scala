@@ -42,22 +42,8 @@ object Anon_Clang {
     v8_use_snapshot: scala.Boolean,
     visibility: java.lang.String
   ): Anon_Clang = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clang")(clang)
-    __obj.updateDynamic("host_arch")(host_arch)
-    __obj.updateDynamic("node_install_npm")(node_install_npm)
-    __obj.updateDynamic("node_install_waf")(node_install_waf)
-    __obj.updateDynamic("node_prefix")(node_prefix)
-    __obj.updateDynamic("node_shared_openssl")(node_shared_openssl)
-    __obj.updateDynamic("node_shared_v8")(node_shared_v8)
-    __obj.updateDynamic("node_shared_zlib")(node_shared_zlib)
-    __obj.updateDynamic("node_use_dtrace")(node_use_dtrace)
-    __obj.updateDynamic("node_use_etw")(node_use_etw)
-    __obj.updateDynamic("node_use_openssl")(node_use_openssl)
-    __obj.updateDynamic("target_arch")(target_arch)
-    __obj.updateDynamic("v8_no_strict_aliasing")(v8_no_strict_aliasing)
-    __obj.updateDynamic("v8_use_snapshot")(v8_use_snapshot)
-    __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(clang = clang, host_arch = host_arch, node_install_npm = node_install_npm, node_install_waf = node_install_waf, node_prefix = node_prefix, node_shared_openssl = node_shared_openssl, node_shared_v8 = node_shared_v8, node_shared_zlib = node_shared_zlib, node_use_dtrace = node_use_dtrace, node_use_etw = node_use_etw, node_use_openssl = node_use_openssl, target_arch = target_arch, v8_no_strict_aliasing = v8_no_strict_aliasing, v8_use_snapshot = v8_use_snapshot, visibility = visibility)
+  
     __obj.asInstanceOf[Anon_Clang]
   }
 }

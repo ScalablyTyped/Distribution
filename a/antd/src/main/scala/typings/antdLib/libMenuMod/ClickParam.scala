@@ -15,11 +15,8 @@ trait ClickParam extends js.Object {
 object ClickParam {
   @scala.inline
   def apply(domEvent: js.Any, item: js.Any, key: java.lang.String, keyPath: js.Array[java.lang.String]): ClickParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domEvent")(domEvent)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyPath")(keyPath)
+    val __obj = js.Dynamic.literal(domEvent = domEvent, item = item, key = key, keyPath = keyPath)
+  
     __obj.asInstanceOf[ClickParam]
   }
 }

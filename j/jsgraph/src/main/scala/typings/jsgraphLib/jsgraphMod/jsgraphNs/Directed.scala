@@ -26,14 +26,8 @@ object Directed {
     directedGraph: DirectedGraph,
     transpose: js.Function1[DirectedGraph, jsgraphLib.Anon_Error]
   ): Directed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breadthFirstTraverse")(breadthFirstTraverse)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createTraversalContext")(createTraversalContext)
-    __obj.updateDynamic("depthFirstTraverse")(depthFirstTraverse)
-    __obj.updateDynamic("directedGraph")(directedGraph)
-    __obj.updateDynamic("transpose")(transpose)
+    val __obj = js.Dynamic.literal(breadthFirstTraverse = breadthFirstTraverse, colors = colors, create = create, createTraversalContext = createTraversalContext, depthFirstTraverse = depthFirstTraverse, directedGraph = directedGraph, transpose = transpose)
+  
     __obj.asInstanceOf[Directed]
   }
 }

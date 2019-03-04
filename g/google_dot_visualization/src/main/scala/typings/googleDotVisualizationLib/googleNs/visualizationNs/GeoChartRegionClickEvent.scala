@@ -12,8 +12,8 @@ trait GeoChartRegionClickEvent extends js.Object {
 object GeoChartRegionClickEvent {
   @scala.inline
   def apply(region: java.lang.String): GeoChartRegionClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(region = region)
+  
     __obj.asInstanceOf[GeoChartRegionClickEvent]
   }
 }

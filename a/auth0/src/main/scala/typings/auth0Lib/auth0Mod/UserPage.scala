@@ -18,12 +18,8 @@ object UserPage {
     total: scala.Double,
     users: js.Array[User]
   ): UserPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(length = length, limit = limit, start = start, total = total, users = users)
+  
     __obj.asInstanceOf[UserPage]
   }
 }

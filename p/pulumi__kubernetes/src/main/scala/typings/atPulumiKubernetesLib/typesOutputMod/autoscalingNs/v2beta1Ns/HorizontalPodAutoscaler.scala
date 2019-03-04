@@ -50,12 +50,8 @@ object HorizontalPodAutoscaler {
     spec: HorizontalPodAutoscalerSpec,
     status: HorizontalPodAutoscalerStatus
   ): HorizontalPodAutoscaler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("spec")(spec)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, spec = spec, status = status)
+  
     __obj.asInstanceOf[HorizontalPodAutoscaler]
   }
 }

@@ -13,8 +13,8 @@ trait SpliceCommand extends js.Object {
 object SpliceCommand {
   @scala.inline
   def apply($splice: js.Array[js.Array[_]]): SpliceCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$splice")($splice)
+    val __obj = js.Dynamic.literal($splice = $splice)
+  
     __obj.asInstanceOf[SpliceCommand]
   }
 }

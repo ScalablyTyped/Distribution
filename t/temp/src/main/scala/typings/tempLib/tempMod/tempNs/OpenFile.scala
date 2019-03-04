@@ -13,9 +13,8 @@ trait OpenFile extends js.Object {
 object OpenFile {
   @scala.inline
   def apply(fd: scala.Double, path: java.lang.String): OpenFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fd")(fd)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(fd = fd, path = path)
+  
     __obj.asInstanceOf[OpenFile]
   }
 }

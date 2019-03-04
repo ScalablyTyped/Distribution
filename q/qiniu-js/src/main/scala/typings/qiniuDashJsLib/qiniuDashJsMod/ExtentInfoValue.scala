@@ -13,8 +13,9 @@ trait ExtentInfoValue extends js.Object {
 object ExtentInfoValue {
   @scala.inline
   def apply(`type`: scala.Double, `val`: java.lang.String): ExtentInfoValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`, `val` = `val`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[ExtentInfoValue]
   }
 }

@@ -22,9 +22,7 @@ object RegistryClientConfig {
     protocol: java.lang.String = null,
     `type`: java.lang.String = null
   ): RegistryClientConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(host = host, port = port)
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

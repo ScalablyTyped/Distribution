@@ -22,8 +22,7 @@ object ProcessRelease {
     lts: java.lang.String = null,
     sourceUrl: java.lang.String = null
   ): ProcessRelease = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (headersUrl != null) __obj.updateDynamic("headersUrl")(headersUrl)
     if (libUrl != null) __obj.updateDynamic("libUrl")(libUrl)
     if (lts != null) __obj.updateDynamic("lts")(lts)

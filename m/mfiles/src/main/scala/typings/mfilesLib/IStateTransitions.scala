@@ -20,11 +20,8 @@ object IStateTransitions {
     Item: js.Function1[scala.Double, IStateTransition],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): IStateTransitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Count = Count, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[IStateTransitions]
   }
 }

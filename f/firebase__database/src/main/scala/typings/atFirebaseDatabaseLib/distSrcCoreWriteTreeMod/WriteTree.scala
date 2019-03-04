@@ -16,20 +16,20 @@ class WriteTree () extends js.Object {
     * @type {!Array.<!WriteRecord>}
     * @private
     */
-  var `allWrites_`: js.Any = js.native
-  var `lastWriteId_`: js.Any = js.native
+  var allWrites_ : js.Any = js.native
+  var lastWriteId_ : js.Any = js.native
   /**
     * @param {!WriteRecord} writeRecord
     * @param {!Path} path
     * @return {boolean}
     * @private
     */
-  var `recordContainsPath_`: js.Any = js.native
+  var recordContainsPath_ : js.Any = js.native
   /**
     * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
     * @private
     */
-  var `resetTree_`: js.Any = js.native
+  var resetTree_ : js.Any = js.native
   /**
     * A tree tracking the result of applying all visible writes.  This does not include transactions with
     * applyLocally=false or writes that are completely shadowed by other writes.
@@ -37,7 +37,7 @@ class WriteTree () extends js.Object {
     * @type {!CompoundWrite}
     * @private
     */
-  var `visibleWrites_`: js.Any = js.native
+  var visibleWrites_ : js.Any = js.native
   /**
     * Record a new merge from user code.
     *
@@ -253,7 +253,7 @@ object WriteTree extends js.Object {
     * @return {boolean}
     * @private
     */
-  var `DefaultFilter_`: js.Any = js.native
+  var DefaultFilter_ : js.Any = js.native
   /**
     * Static method. Given an array of WriteRecords, a filter for which ones to include, and a path, construct the tree of
     * event data at that path.
@@ -264,6 +264,6 @@ object WriteTree extends js.Object {
     * @return {!CompoundWrite}
     * @private
     */
-  var `layerTree_`: js.Any = js.native
+  var layerTree_ : js.Any = js.native
 }
 

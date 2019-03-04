@@ -26,14 +26,8 @@ object StepResultPayload {
     step: cucumberLib.cucumberMod.Step,
     stepDefinition: cucumberLib.cucumberMod.StepDefinition
   ): StepResultPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ambiguousStepDefinitions")(ambiguousStepDefinitions)
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("failureException")(failureException)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("stepDefinition")(stepDefinition)
+    val __obj = js.Dynamic.literal(ambiguousStepDefinitions = ambiguousStepDefinitions, attachments = attachments, duration = duration, failureException = failureException, status = status, step = step, stepDefinition = stepDefinition)
+  
     __obj.asInstanceOf[StepResultPayload]
   }
 }

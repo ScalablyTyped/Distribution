@@ -59,8 +59,7 @@ object ojTreemapNodeSettableProperties {
     svgClassName: java.lang.String = null,
     svgStyle: js.Object = null
   ): ojTreemapNodeSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (color != null) __obj.updateDynamic("color")(color)
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])

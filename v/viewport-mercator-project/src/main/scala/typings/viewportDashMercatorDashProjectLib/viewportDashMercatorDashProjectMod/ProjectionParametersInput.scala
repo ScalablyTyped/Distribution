@@ -22,9 +22,7 @@ object ProjectionParametersInput {
     farZMultiplier: scala.Int | scala.Double = null,
     pitch: scala.Int | scala.Double = null
   ): ProjectionParametersInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (farZMultiplier != null) __obj.updateDynamic("farZMultiplier")(farZMultiplier.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])

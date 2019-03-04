@@ -20,11 +20,8 @@ object RefCountSubscription {
     count: scala.Double,
     unsubscribe: js.Function0[scala.Unit]
   ): RefCountSubscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attemptedToUnsubscribe")(attemptedToUnsubscribe)
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(attemptedToUnsubscribe = attemptedToUnsubscribe, closed = closed, count = count, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[RefCountSubscription]
   }
 }

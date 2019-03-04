@@ -24,13 +24,8 @@ object Anon_Decode {
     ucs2Ns: Anon_Array,
     version: java.lang.String
   ): Anon_Decode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("toASCII")(toASCII)
-    __obj.updateDynamic("toUnicode")(toUnicode)
-    __obj.updateDynamic("ucs2Ns")(ucs2Ns)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, toASCII = toASCII, toUnicode = toUnicode, ucs2Ns = ucs2Ns, version = version)
+  
     __obj.asInstanceOf[Anon_Decode]
   }
 }

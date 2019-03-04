@@ -32,17 +32,8 @@ object ICredentialPickerOptions {
     previousCredential: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
     targetName: java.lang.String
   ): ICredentialPickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysDisplayDialog")(alwaysDisplayDialog)
-    __obj.updateDynamic("authenticationProtocol")(authenticationProtocol)
-    __obj.updateDynamic("callerSavesCredential")(callerSavesCredential)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("credentialSaveOption")(credentialSaveOption)
-    __obj.updateDynamic("customAuthenticationProtocol")(customAuthenticationProtocol)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("previousCredential")(previousCredential)
-    __obj.updateDynamic("targetName")(targetName)
+    val __obj = js.Dynamic.literal(alwaysDisplayDialog = alwaysDisplayDialog, authenticationProtocol = authenticationProtocol, callerSavesCredential = callerSavesCredential, caption = caption, credentialSaveOption = credentialSaveOption, customAuthenticationProtocol = customAuthenticationProtocol, errorCode = errorCode, message = message, previousCredential = previousCredential, targetName = targetName)
+  
     __obj.asInstanceOf[ICredentialPickerOptions]
   }
 }

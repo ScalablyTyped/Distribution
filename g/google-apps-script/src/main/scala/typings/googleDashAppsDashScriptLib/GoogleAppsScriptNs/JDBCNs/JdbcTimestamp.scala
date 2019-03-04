@@ -48,25 +48,8 @@ object JdbcTimestamp {
     setTime: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
     setYear: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
   ): JdbcTimestamp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("getDate")(getDate)
-    __obj.updateDynamic("getHours")(getHours)
-    __obj.updateDynamic("getMinutes")(getMinutes)
-    __obj.updateDynamic("getMonth")(getMonth)
-    __obj.updateDynamic("getNanos")(getNanos)
-    __obj.updateDynamic("getSeconds")(getSeconds)
-    __obj.updateDynamic("getTime")(getTime)
-    __obj.updateDynamic("getYear")(getYear)
-    __obj.updateDynamic("setDate")(setDate)
-    __obj.updateDynamic("setHours")(setHours)
-    __obj.updateDynamic("setMinutes")(setMinutes)
-    __obj.updateDynamic("setMonth")(setMonth)
-    __obj.updateDynamic("setNanos")(setNanos)
-    __obj.updateDynamic("setSeconds")(setSeconds)
-    __obj.updateDynamic("setTime")(setTime)
-    __obj.updateDynamic("setYear")(setYear)
+    val __obj = js.Dynamic.literal(after = after, before = before, getDate = getDate, getHours = getHours, getMinutes = getMinutes, getMonth = getMonth, getNanos = getNanos, getSeconds = getSeconds, getTime = getTime, getYear = getYear, setDate = setDate, setHours = setHours, setMinutes = setMinutes, setMonth = setMonth, setNanos = setNanos, setSeconds = setSeconds, setTime = setTime, setYear = setYear)
+  
     __obj.asInstanceOf[JdbcTimestamp]
   }
 }

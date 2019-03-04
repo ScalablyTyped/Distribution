@@ -54,16 +54,8 @@ object Events {
       ternLib.libInferMod.Type | scala.Unit
     ]
   ): Events = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterLoad")(afterLoad)
-    __obj.updateDynamic("beforeLoad")(beforeLoad)
-    __obj.updateDynamic("completion")(completion)
-    __obj.updateDynamic("postInfer")(postInfer)
-    __obj.updateDynamic("postParse")(postParse)
-    __obj.updateDynamic("preInfer")(preInfer)
-    __obj.updateDynamic("preParse")(preParse)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("typeAt")(typeAt)
+    val __obj = js.Dynamic.literal(afterLoad = afterLoad, beforeLoad = beforeLoad, completion = completion, postInfer = postInfer, postParse = postParse, preInfer = preInfer, preParse = preParse, reset = reset, typeAt = typeAt)
+  
     __obj.asInstanceOf[Events]
   }
 }

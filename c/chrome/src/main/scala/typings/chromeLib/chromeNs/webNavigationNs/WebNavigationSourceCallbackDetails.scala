@@ -27,13 +27,8 @@ object WebNavigationSourceCallbackDetails {
     timeStamp: scala.Double,
     url: java.lang.String
   ): WebNavigationSourceCallbackDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceFrameId")(sourceFrameId)
-    __obj.updateDynamic("sourceProcessId")(sourceProcessId)
-    __obj.updateDynamic("sourceTabId")(sourceTabId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(sourceFrameId = sourceFrameId, sourceProcessId = sourceProcessId, sourceTabId = sourceTabId, tabId = tabId, timeStamp = timeStamp, url = url)
+  
     __obj.asInstanceOf[WebNavigationSourceCallbackDetails]
   }
 }

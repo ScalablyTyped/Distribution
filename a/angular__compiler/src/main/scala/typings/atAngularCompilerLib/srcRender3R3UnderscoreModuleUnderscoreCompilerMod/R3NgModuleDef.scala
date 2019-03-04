@@ -18,9 +18,8 @@ object R3NgModuleDef {
     expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
   ): R3NgModuleDef = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("additionalStatements")(additionalStatements)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(additionalStatements = additionalStatements, expression = expression)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[R3NgModuleDef]
   }
 }

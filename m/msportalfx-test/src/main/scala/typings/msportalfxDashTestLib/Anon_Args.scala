@@ -12,8 +12,8 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(args: js.Array[java.lang.String]): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(args = args)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

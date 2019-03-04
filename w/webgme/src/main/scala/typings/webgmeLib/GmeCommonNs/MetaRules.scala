@@ -22,12 +22,8 @@ object MetaRules {
     constraints: Dictionary[webgmeLib.CoreNs.Constraint],
     pointers: webgmeLib.Anon_Ptr
   ): MetaRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspects")(aspects)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("constraints")(constraints)
-    __obj.updateDynamic("pointers")(pointers)
+    val __obj = js.Dynamic.literal(aspects = aspects, attributes = attributes, children = children, constraints = constraints, pointers = pointers)
+  
     __obj.asInstanceOf[MetaRules]
   }
 }

@@ -17,10 +17,7 @@ trait InputObjectTypeDefinition
 object InputObjectTypeDefinition {
   @scala.inline
   def apply(fields: js.Array[InputValueDefinition], kind: java.lang.String, name: Name, loc: Location = null): InputObjectTypeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[InputObjectTypeDefinition]
   }

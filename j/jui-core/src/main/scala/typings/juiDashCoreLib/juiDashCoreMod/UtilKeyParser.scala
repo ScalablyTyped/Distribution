@@ -22,12 +22,8 @@ object UtilKeyParser {
     getParentIndex: js.Function1[java.lang.String, java.lang.String],
     isIndexDepth: js.Function1[java.lang.String, scala.Boolean]
   ): UtilKeyParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeIndex")(changeIndex)
-    __obj.updateDynamic("getIndexList")(getIndexList)
-    __obj.updateDynamic("getNextIndex")(getNextIndex)
-    __obj.updateDynamic("getParentIndex")(getParentIndex)
-    __obj.updateDynamic("isIndexDepth")(isIndexDepth)
+    val __obj = js.Dynamic.literal(changeIndex = changeIndex, getIndexList = getIndexList, getNextIndex = getNextIndex, getParentIndex = getParentIndex, isIndexDepth = isIndexDepth)
+  
     __obj.asInstanceOf[UtilKeyParser]
   }
 }

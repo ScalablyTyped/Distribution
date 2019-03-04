@@ -12,8 +12,8 @@ trait Anon_RemoveAllListeners extends js.Object {
 object Anon_RemoveAllListeners {
   @scala.inline
   def apply(removeAllListeners: scala.Boolean): Anon_RemoveAllListeners = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeAllListeners")(removeAllListeners)
+    val __obj = js.Dynamic.literal(removeAllListeners = removeAllListeners)
+  
     __obj.asInstanceOf[Anon_RemoveAllListeners]
   }
 }

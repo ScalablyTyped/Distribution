@@ -13,9 +13,8 @@ trait Anon_Leading extends js.Object {
 object Anon_Leading {
   @scala.inline
   def apply(leading: js.Array[estreeLib.estreeMod.Comment], trailing: js.Array[estreeLib.estreeMod.Comment]): Anon_Leading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leading")(leading)
-    __obj.updateDynamic("trailing")(trailing)
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing)
+  
     __obj.asInstanceOf[Anon_Leading]
   }
 }

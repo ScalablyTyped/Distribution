@@ -12,8 +12,8 @@ trait BeginDetails extends js.Object {
 object BeginDetails {
   @scala.inline
   def apply(totalTests: scala.Double): BeginDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("totalTests")(totalTests)
+    val __obj = js.Dynamic.literal(totalTests = totalTests)
+  
     __obj.asInstanceOf[BeginDetails]
   }
 }

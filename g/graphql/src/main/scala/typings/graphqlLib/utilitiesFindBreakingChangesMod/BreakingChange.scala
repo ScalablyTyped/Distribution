@@ -13,8 +13,8 @@ trait BreakingChange extends js.Object {
 object BreakingChange {
   @scala.inline
   def apply(description: java.lang.String, `type`: java.lang.String): BreakingChange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BreakingChange]
   }
 }

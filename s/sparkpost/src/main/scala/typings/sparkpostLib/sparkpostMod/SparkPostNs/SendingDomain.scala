@@ -33,11 +33,7 @@ object SendingDomain {
     dkim_key_length: scala.Int | scala.Double = null,
     generate_dkim: js.UndefOr[scala.Boolean] = js.undefined
   ): SendingDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("shared_with_subaccounts")(shared_with_subaccounts)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tracking_domain")(tracking_domain)
+    val __obj = js.Dynamic.literal(domain = domain, shared_with_subaccounts = shared_with_subaccounts, status = status, tracking_domain = tracking_domain)
     if (dkim != null) __obj.updateDynamic("dkim")(dkim)
     if (dkim_key_length != null) __obj.updateDynamic("dkim_key_length")(dkim_key_length.asInstanceOf[js.Any])
     if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim)

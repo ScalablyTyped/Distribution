@@ -20,11 +20,8 @@ object TrustedTypeInnerPolicy {
     createScriptURL: js.Function1[java.lang.String, java.lang.String],
     createURL: js.Function1[java.lang.String, java.lang.String]
   ): TrustedTypeInnerPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createHTML")(createHTML)
-    __obj.updateDynamic("createScript")(createScript)
-    __obj.updateDynamic("createScriptURL")(createScriptURL)
-    __obj.updateDynamic("createURL")(createURL)
+    val __obj = js.Dynamic.literal(createHTML = createHTML, createScript = createScript, createScriptURL = createScriptURL, createURL = createURL)
+  
     __obj.asInstanceOf[TrustedTypeInnerPolicy]
   }
 }

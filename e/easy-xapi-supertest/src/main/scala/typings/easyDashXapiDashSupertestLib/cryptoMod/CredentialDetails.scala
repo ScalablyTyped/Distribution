@@ -28,14 +28,8 @@ object CredentialDetails {
     passphrase: java.lang.String,
     pfx: java.lang.String
   ): CredentialDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ca")(ca)
-    __obj.updateDynamic("cert")(cert)
-    __obj.updateDynamic("ciphers")(ciphers)
-    __obj.updateDynamic("crl")(crl)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("passphrase")(passphrase)
-    __obj.updateDynamic("pfx")(pfx)
+    val __obj = js.Dynamic.literal(ca = ca, cert = cert, ciphers = ciphers, crl = crl, key = key, passphrase = passphrase, pfx = pfx)
+  
     __obj.asInstanceOf[CredentialDetails]
   }
 }

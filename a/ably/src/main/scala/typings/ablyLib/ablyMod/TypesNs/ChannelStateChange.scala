@@ -15,10 +15,7 @@ trait ChannelStateChange extends js.Object {
 object ChannelStateChange {
   @scala.inline
   def apply(current: ChannelState, previous: ChannelState, resumed: scala.Boolean, reason: ErrorInfo = null): ChannelStateChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
-    __obj.updateDynamic("resumed")(resumed)
+    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any], resumed = resumed)
     if (reason != null) __obj.updateDynamic("reason")(reason)
     __obj.asInstanceOf[ChannelStateChange]
   }

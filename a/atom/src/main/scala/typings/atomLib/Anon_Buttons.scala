@@ -18,8 +18,7 @@ object Anon_Buttons {
     buttons: js.Array[java.lang.String] = null,
     detailedMessage: java.lang.String = null
   ): Anon_Buttons = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage)
     __obj.asInstanceOf[Anon_Buttons]

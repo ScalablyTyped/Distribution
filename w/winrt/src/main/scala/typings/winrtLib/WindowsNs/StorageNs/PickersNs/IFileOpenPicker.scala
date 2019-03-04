@@ -40,17 +40,8 @@ object IFileOpenPicker {
     suggestedStartLocation: PickerLocationId,
     viewMode: PickerViewMode
   ): IFileOpenPicker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitButtonText")(commitButtonText)
-    __obj.updateDynamic("continuationData")(continuationData)
-    __obj.updateDynamic("fileTypeFilter")(fileTypeFilter)
-    __obj.updateDynamic("pickMultipleFilesAndContinue")(pickMultipleFilesAndContinue)
-    __obj.updateDynamic("pickMultipleFilesAsync")(pickMultipleFilesAsync)
-    __obj.updateDynamic("pickSingleFileAndContinue")(pickSingleFileAndContinue)
-    __obj.updateDynamic("pickSingleFileAsync")(pickSingleFileAsync)
-    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
-    __obj.updateDynamic("suggestedStartLocation")(suggestedStartLocation)
-    __obj.updateDynamic("viewMode")(viewMode)
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, continuationData = continuationData, fileTypeFilter = fileTypeFilter, pickMultipleFilesAndContinue = pickMultipleFilesAndContinue, pickMultipleFilesAsync = pickMultipleFilesAsync, pickSingleFileAndContinue = pickSingleFileAndContinue, pickSingleFileAsync = pickSingleFileAsync, settingsIdentifier = settingsIdentifier, suggestedStartLocation = suggestedStartLocation, viewMode = viewMode)
+  
     __obj.asInstanceOf[IFileOpenPicker]
   }
 }

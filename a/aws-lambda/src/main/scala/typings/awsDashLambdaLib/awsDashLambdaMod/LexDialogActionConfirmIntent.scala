@@ -23,9 +23,8 @@ object LexDialogActionConfirmIntent {
     message: awsDashLambdaLib.Anon_Content = null,
     responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
   ): LexDialogActionConfirmIntent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("intentName")(intentName)
-    __obj.updateDynamic("slots")(slots)
+    val __obj = js.Dynamic.literal(intentName = intentName, slots = slots)
+    __obj.updateDynamic("type")(`type`)
     if (message != null) __obj.updateDynamic("message")(message)
     if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
     __obj.asInstanceOf[LexDialogActionConfirmIntent]

@@ -15,8 +15,8 @@ trait Timer extends js.Object {
 object Timer {
   @scala.inline
   def apply(clear: js.Function0[scala.Unit]): Timer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
+    val __obj = js.Dynamic.literal(clear = clear)
+  
     __obj.asInstanceOf[Timer]
   }
 }

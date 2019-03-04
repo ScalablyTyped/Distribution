@@ -39,11 +39,7 @@ object CellTower {
     signalStrength: scala.Int | scala.Double = null,
     timingAdvance: scala.Int | scala.Double = null
   ): CellTower = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellId")(cellId)
-    __obj.updateDynamic("locationAreaCode")(locationAreaCode)
-    __obj.updateDynamic("mobileCountryCode")(mobileCountryCode)
-    __obj.updateDynamic("mobileNetworkCode")(mobileNetworkCode)
+    val __obj = js.Dynamic.literal(cellId = cellId, locationAreaCode = locationAreaCode, mobileCountryCode = mobileCountryCode, mobileNetworkCode = mobileNetworkCode)
     if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
     if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])
     if (timingAdvance != null) __obj.updateDynamic("timingAdvance")(timingAdvance.asInstanceOf[js.Any])

@@ -26,13 +26,7 @@ object Cookie {
     value: java.lang.String,
     expiry: java.lang.String = null
   ): Cookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("httpOnly")(httpOnly)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(domain = domain, httpOnly = httpOnly, name = name, path = path, secure = secure, value = value)
     if (expiry != null) __obj.updateDynamic("expiry")(expiry)
     __obj.asInstanceOf[Cookie]
   }

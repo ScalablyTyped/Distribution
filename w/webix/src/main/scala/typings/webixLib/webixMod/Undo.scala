@@ -18,10 +18,8 @@ object Undo {
     removeUndo: js.Function1[java.lang.String, scala.Unit],
     undo: js.Function1[java.lang.String, scala.Unit]
   ): Undo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoreUndo")(ignoreUndo)
-    __obj.updateDynamic("removeUndo")(removeUndo)
-    __obj.updateDynamic("undo")(undo)
+    val __obj = js.Dynamic.literal(ignoreUndo = ignoreUndo, removeUndo = removeUndo, undo = undo)
+  
     __obj.asInstanceOf[Undo]
   }
 }

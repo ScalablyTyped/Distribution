@@ -79,34 +79,8 @@ object TableAutoFormat {
     setName: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): TableAutoFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("IncludeBackground")(IncludeBackground)
-    __obj.updateDynamic("IncludeBorder")(IncludeBorder)
-    __obj.updateDynamic("IncludeFont")(IncludeFont)
-    __obj.updateDynamic("IncludeJustify")(IncludeJustify)
-    __obj.updateDynamic("IncludeNumberFormat")(IncludeNumberFormat)
-    __obj.updateDynamic("IncludeWidthAndHeight")(IncludeWidthAndHeight)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, IncludeBackground = IncludeBackground, IncludeBorder = IncludeBorder, IncludeFont = IncludeFont, IncludeJustify = IncludeJustify, IncludeNumberFormat = IncludeNumberFormat, IncludeWidthAndHeight = IncludeWidthAndHeight, Name = Name, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createEnumeration = createEnumeration, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasElements = hasElements, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[TableAutoFormat]
   }
 }

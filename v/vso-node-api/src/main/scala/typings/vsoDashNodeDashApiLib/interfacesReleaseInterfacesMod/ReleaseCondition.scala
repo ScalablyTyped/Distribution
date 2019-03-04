@@ -17,11 +17,8 @@ object ReleaseCondition {
     result: scala.Boolean,
     value: java.lang.String
   ): ReleaseCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditionType")(conditionType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(conditionType = conditionType, name = name, result = result, value = value)
+  
     __obj.asInstanceOf[ReleaseCondition]
   }
 }

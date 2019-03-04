@@ -32,17 +32,8 @@ object InfoBoxViewModel {
     showInfo: scala.Boolean,
     titleText: java.lang.String
   ): InfoBoxViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cameraClicked")(cameraClicked)
-    __obj.updateDynamic("cameraIconPath")(cameraIconPath)
-    __obj.updateDynamic("closeClicked")(closeClicked)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enableCamera")(enableCamera)
-    __obj.updateDynamic("isCameraTracking")(isCameraTracking)
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("maxHeightOffset")(maxHeightOffset)
-    __obj.updateDynamic("showInfo")(showInfo)
-    __obj.updateDynamic("titleText")(titleText)
+    val __obj = js.Dynamic.literal(cameraClicked = cameraClicked, cameraIconPath = cameraIconPath, closeClicked = closeClicked, description = description, enableCamera = enableCamera, isCameraTracking = isCameraTracking, maxHeight = maxHeight, maxHeightOffset = maxHeightOffset, showInfo = showInfo, titleText = titleText)
+  
     __obj.asInstanceOf[InfoBoxViewModel]
   }
 }

@@ -75,14 +75,8 @@ object Math {
     radians: js.Function1[scala.Double, scala.Double],
     scale: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
   ): Math = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEG_PER_RAD")(DEG_PER_RAD)
-    __obj.updateDynamic("RAD_PER_DEG")(RAD_PER_DEG)
-    __obj.updateDynamic("clamp")(clamp)
-    __obj.updateDynamic("degrees")(degrees)
-    __obj.updateDynamic("fscale")(fscale)
-    __obj.updateDynamic("radians")(radians)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(DEG_PER_RAD = DEG_PER_RAD, RAD_PER_DEG = RAD_PER_DEG, clamp = clamp, degrees = degrees, fscale = fscale, radians = radians, scale = scale)
+  
     __obj.asInstanceOf[Math]
   }
 }

@@ -26,12 +26,7 @@ object EmotionCache {
     compat: atEmotionUtilsLib.atEmotionUtilsLibNumbers.`true` = null,
     nonce: java.lang.String = null
   ): EmotionCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inserted")(inserted)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("registered")(registered)
-    __obj.updateDynamic("sheet")(sheet)
-    __obj.updateDynamic("stylis")(stylis)
+    val __obj = js.Dynamic.literal(inserted = inserted, key = key, registered = registered, sheet = sheet, stylis = stylis)
     if (compat != null) __obj.updateDynamic("compat")(compat)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     __obj.asInstanceOf[EmotionCache]

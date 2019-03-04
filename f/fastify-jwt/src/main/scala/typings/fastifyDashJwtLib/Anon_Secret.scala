@@ -12,8 +12,8 @@ trait Anon_Secret extends js.Object {
 object Anon_Secret {
   @scala.inline
   def apply(secret: jsonwebtokenLib.jsonwebtokenMod.Secret): Anon_Secret = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Secret]
   }
 }

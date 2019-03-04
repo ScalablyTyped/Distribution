@@ -18,10 +18,8 @@ object Anon_KeyQuoted {
     quoted: scala.Boolean,
     value: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
   ): Anon_KeyQuoted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("quoted")(quoted)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, quoted = quoted, value = value)
+  
     __obj.asInstanceOf[Anon_KeyQuoted]
   }
 }

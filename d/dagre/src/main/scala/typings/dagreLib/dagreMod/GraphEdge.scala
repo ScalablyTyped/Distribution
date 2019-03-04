@@ -16,8 +16,7 @@ object GraphEdge {
     points: js.Array[dagreLib.Anon_X],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GraphEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(points = points)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[GraphEdge]
   }

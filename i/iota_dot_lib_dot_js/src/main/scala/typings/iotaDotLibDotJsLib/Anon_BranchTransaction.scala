@@ -14,10 +14,8 @@ trait Anon_BranchTransaction extends js.Object {
 object Anon_BranchTransaction {
   @scala.inline
   def apply(branchTransaction: java.lang.String, duration: scala.Double, trunkTransaction: java.lang.String): Anon_BranchTransaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchTransaction")(branchTransaction)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("trunkTransaction")(trunkTransaction)
+    val __obj = js.Dynamic.literal(branchTransaction = branchTransaction, duration = duration, trunkTransaction = trunkTransaction)
+  
     __obj.asInstanceOf[Anon_BranchTransaction]
   }
 }

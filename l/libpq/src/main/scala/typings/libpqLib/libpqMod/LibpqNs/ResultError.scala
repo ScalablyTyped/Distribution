@@ -44,13 +44,7 @@ object ResultError {
     statementPosition: java.lang.String = null,
     tableName: java.lang.String = null
   ): ResultError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messagePrimary")(messagePrimary)
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("sourceFile")(sourceFile)
-    __obj.updateDynamic("sourceFunction")(sourceFunction)
-    __obj.updateDynamic("sourceLine")(sourceLine)
-    __obj.updateDynamic("sqlState")(sqlState)
+    val __obj = js.Dynamic.literal(messagePrimary = messagePrimary, severity = severity, sourceFile = sourceFile, sourceFunction = sourceFunction, sourceLine = sourceLine, sqlState = sqlState)
     if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName)
     if (context != null) __obj.updateDynamic("context")(context)
     if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)

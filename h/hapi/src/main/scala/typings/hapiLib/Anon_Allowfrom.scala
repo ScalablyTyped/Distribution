@@ -23,9 +23,8 @@ object Anon_Allowfrom {
     rule: hapiLib.hapiLibStrings.deny | hapiLib.hapiLibStrings.sameorigin | hapiLib.hapiLibStrings.`allow-from`,
     source: java.lang.String
   ): Anon_Allowfrom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], source = source)
+  
     __obj.asInstanceOf[Anon_Allowfrom]
   }
 }

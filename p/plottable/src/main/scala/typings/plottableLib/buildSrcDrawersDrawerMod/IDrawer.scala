@@ -40,11 +40,8 @@ object IDrawer {
     getVisualPrimitives: js.Function0[js.Array[stdLib.Element]],
     remove: js.Function0[scala.Unit]
   ): IDrawer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("getVisualPrimitiveAtIndex")(getVisualPrimitiveAtIndex)
-    __obj.updateDynamic("getVisualPrimitives")(getVisualPrimitives)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(draw = draw, getVisualPrimitiveAtIndex = getVisualPrimitiveAtIndex, getVisualPrimitives = getVisualPrimitives, remove = remove)
+  
     __obj.asInstanceOf[IDrawer]
   }
 }

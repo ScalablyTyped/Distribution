@@ -22,12 +22,8 @@ object ICanvas {
     setPixelRatio: js.Function1[scala.Double, js.Any],
     width: scala.Double
   ): ICanvas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_canvas")(_canvas)
-    __obj.updateDynamic("getPixelRatio")(getPixelRatio)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("setPixelRatio")(setPixelRatio)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(_canvas = _canvas, getPixelRatio = getPixelRatio, height = height, setPixelRatio = setPixelRatio, width = width)
+  
     __obj.asInstanceOf[ICanvas]
   }
 }

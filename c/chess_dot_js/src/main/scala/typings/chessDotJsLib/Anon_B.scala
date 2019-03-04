@@ -33,14 +33,8 @@ object Anon_B {
     PROMOTION: chessDotJsLib.chessDotJsLibStrings.p,
     QSIDE_CASTLE: chessDotJsLib.chessDotJsLibStrings.q
   ): Anon_B = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BIG_PAWN")(BIG_PAWN)
-    __obj.updateDynamic("CAPTURE")(CAPTURE)
-    __obj.updateDynamic("EP_CAPTURE")(EP_CAPTURE)
-    __obj.updateDynamic("KSIDE_CASTLE")(KSIDE_CASTLE)
-    __obj.updateDynamic("NORMAL")(NORMAL)
-    __obj.updateDynamic("PROMOTION")(PROMOTION)
-    __obj.updateDynamic("QSIDE_CASTLE")(QSIDE_CASTLE)
+    val __obj = js.Dynamic.literal(BIG_PAWN = BIG_PAWN, CAPTURE = CAPTURE, EP_CAPTURE = EP_CAPTURE, KSIDE_CASTLE = KSIDE_CASTLE, NORMAL = NORMAL, PROMOTION = PROMOTION, QSIDE_CASTLE = QSIDE_CASTLE)
+  
     __obj.asInstanceOf[Anon_B]
   }
 }

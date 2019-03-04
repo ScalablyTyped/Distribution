@@ -16,9 +16,8 @@ object FullScreen {
     cancel: js.Function1[FullScreenType, scala.Unit],
     request: js.Function1[FullScreenType, scala.Unit]
   ): FullScreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(cancel = cancel, request = request)
+  
     __obj.asInstanceOf[FullScreen]
   }
 }

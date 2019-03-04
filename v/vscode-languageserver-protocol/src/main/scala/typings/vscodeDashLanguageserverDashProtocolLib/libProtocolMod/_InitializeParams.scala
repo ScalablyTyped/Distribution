@@ -52,8 +52,7 @@ object _InitializeParams {
     rootUri: java.lang.String = null,
     trace: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibStrings.off | vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibStrings.messages | vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibStrings.verbose = null
   ): _InitializeParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
+    val __obj = js.Dynamic.literal(capabilities = capabilities)
     if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions)
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)

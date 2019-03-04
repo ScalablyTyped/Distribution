@@ -72,21 +72,8 @@ object XSheetCellCursor {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetCellCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Spreadsheet")(Spreadsheet)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("collapseToCurrentArray")(collapseToCurrentArray)
-    __obj.updateDynamic("collapseToCurrentRegion")(collapseToCurrentRegion)
-    __obj.updateDynamic("collapseToMergedArea")(collapseToMergedArea)
-    __obj.updateDynamic("collapseToSize")(collapseToSize)
-    __obj.updateDynamic("expandToEntireColumns")(expandToEntireColumns)
-    __obj.updateDynamic("expandToEntireRows")(expandToEntireRows)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("getSpreadsheet")(getSpreadsheet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = acquire, collapseToCurrentArray = collapseToCurrentArray, collapseToCurrentRegion = collapseToCurrentRegion, collapseToMergedArea = collapseToMergedArea, collapseToSize = collapseToSize, expandToEntireColumns = expandToEntireColumns, expandToEntireRows = expandToEntireRows, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getSpreadsheet = getSpreadsheet, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetCellCursor]
   }
 }

@@ -54,29 +54,8 @@ object ConversionDictionary {
     setActive: js.Function1[scala.Boolean, scala.Unit],
     setPropertyType: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit]
   ): ConversionDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConversionType")(ConversionType)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEntry")(addEntry)
-    __obj.updateDynamic("addFlushListener")(addFlushListener)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getConversionEntries")(getConversionEntries)
-    __obj.updateDynamic("getConversionType")(getConversionType)
-    __obj.updateDynamic("getConversions")(getConversions)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMaxCharCount")(getMaxCharCount)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertyType")(getPropertyType)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEntry")(removeEntry)
-    __obj.updateDynamic("removeFlushListener")(removeFlushListener)
-    __obj.updateDynamic("setActive")(setActive)
-    __obj.updateDynamic("setPropertyType")(setPropertyType)
+    val __obj = js.Dynamic.literal(ConversionType = ConversionType, Locale = Locale, Name = Name, acquire = acquire, addEntry = addEntry, addFlushListener = addFlushListener, clear = clear, flush = flush, getConversionEntries = getConversionEntries, getConversionType = getConversionType, getConversions = getConversions, getLocale = getLocale, getMaxCharCount = getMaxCharCount, getName = getName, getPropertyType = getPropertyType, isActive = isActive, queryInterface = queryInterface, release = release, removeEntry = removeEntry, removeFlushListener = removeFlushListener, setActive = setActive, setPropertyType = setPropertyType)
+  
     __obj.asInstanceOf[ConversionDictionary]
   }
 }

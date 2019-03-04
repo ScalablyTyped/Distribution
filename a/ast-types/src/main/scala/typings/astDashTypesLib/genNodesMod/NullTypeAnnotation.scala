@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object NullTypeAnnotation {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.NullTypeAnnotation): NullTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NullTypeAnnotation]
   }
 }

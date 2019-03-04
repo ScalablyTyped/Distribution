@@ -26,14 +26,8 @@ object TaskGroupStep {
     task: TaskDefinitionReference,
     timeoutInMinutes: scala.Double
   ): TaskGroupStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysRun")(alwaysRun)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, continueOnError = continueOnError, displayName = displayName, enabled = enabled, inputs = inputs, task = task, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[TaskGroupStep]
   }
 }

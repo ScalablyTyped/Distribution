@@ -20,9 +20,7 @@ object Anon_HeightPreserveAspectRatio {
     preserveAspectRatio: java.lang.String = null,
     viewBox: java.lang.String = null
   ): Anon_HeightPreserveAspectRatio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
     if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
     __obj.asInstanceOf[Anon_HeightPreserveAspectRatio]

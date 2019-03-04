@@ -162,15 +162,7 @@ object ZMCreditBorrowOptions {
     rent_settle_type: aliDashAppLib.aliDashAppLibStrings.merchant | aliDashAppLib.aliDashAppLibStrings.alipay | java.lang.String = null,
     success: js.Function1[/* res */ aliDashAppLib.Anon_4000, scala.Unit] = null
   ): ZMCreditBorrowOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credit_biz")(credit_biz)
-    __obj.updateDynamic("deposit_amount")(deposit_amount)
-    __obj.updateDynamic("expiry_time")(expiry_time)
-    __obj.updateDynamic("goods_name")(goods_name)
-    __obj.updateDynamic("out_order_no")(out_order_no)
-    __obj.updateDynamic("product_code")(product_code)
-    __obj.updateDynamic("rent_amount")(rent_amount)
-    __obj.updateDynamic("rent_unit")(rent_unit)
+    val __obj = js.Dynamic.literal(credit_biz = credit_biz, deposit_amount = deposit_amount, expiry_time = expiry_time, goods_name = goods_name, out_order_no = out_order_no, product_code = product_code, rent_amount = rent_amount, rent_unit = rent_unit)
     if (address != null) __obj.updateDynamic("address")(address)
     if (borrow_shop_name != null) __obj.updateDynamic("borrow_shop_name")(borrow_shop_name)
     if (borrow_time != null) __obj.updateDynamic("borrow_time")(borrow_time)

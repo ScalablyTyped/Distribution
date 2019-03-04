@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/view/EventRegistration", "ChildEventRegistration")
 @js.native
 class ChildEventRegistration () extends EventRegistration {
-  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
+  def this(callbacks_ : org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
@@ -20,33 +20,33 @@ class ChildEventRegistration () extends EventRegistration {
     * @param {?function(Error)} cancelCallback_
     * @param {Object=} context_
     */
-  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
+  def this(callbacks_ : org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
         scala.Unit
       ]
-    ], `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
-  def this(`callbacks_`: scala.Null, `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
-  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
+    ], cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
+  def this(callbacks_ : scala.Null, cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit]) = this()
+  def this(callbacks_ : org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
         scala.Unit
       ]
-    ], `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit], `context_`: js.Object) = this()
-  def this(`callbacks_`: org.scalablytyped.runtime.StringDictionary[
+    ], cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit], context_ : js.Object) = this()
+  def this(callbacks_ : org.scalablytyped.runtime.StringDictionary[
       js.Function2[
         /* d */ atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, 
         /* s */ js.UndefOr[java.lang.String | scala.Null], 
         scala.Unit
       ]
-    ], `cancelCallback_`: scala.Null, `context_`: js.Object) = this()
-  def this(`callbacks_`: scala.Null, `cancelCallback_`: js.Function1[/* e */ stdLib.Error, scala.Unit], `context_`: js.Object) = this()
-  def this(`callbacks_`: scala.Null, `cancelCallback_`: scala.Null, `context_`: js.Object) = this()
-  var `callbacks_`: js.Any = js.native
-  var `cancelCallback_`: js.Any = js.native
-  var `context_`: js.UndefOr[js.Any] = js.native
+    ], cancelCallback_ : scala.Null, context_ : js.Object) = this()
+  def this(callbacks_ : scala.Null, cancelCallback_ : js.Function1[/* e */ stdLib.Error, scala.Unit], context_ : js.Object) = this()
+  def this(callbacks_ : scala.Null, cancelCallback_ : scala.Null, context_ : js.Object) = this()
+  var callbacks_ : js.Any = js.native
+  var cancelCallback_ : js.Any = js.native
+  var context_ : js.UndefOr[js.Any] = js.native
   /**
     * @param {!Error} error
     * @param {!Path} path

@@ -66,16 +66,8 @@ object ZoneViewsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ZoneViewsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addResources")(addResources)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getService")(getService)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listResources")(listResources)
-    __obj.updateDynamic("removeResources")(removeResources)
-    __obj.updateDynamic("setService")(setService)
+    val __obj = js.Dynamic.literal(addResources = addResources, delete = delete, get = get, getService = getService, insert = insert, list = list, listResources = listResources, removeResources = removeResources, setService = setService)
+  
     __obj.asInstanceOf[ZoneViewsResource]
   }
 }

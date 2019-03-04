@@ -24,13 +24,8 @@ object Anon_Color {
     opacity: scala.Double,
     width: scala.Double
   ): Anon_Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("offsetx")(offsetx)
-    __obj.updateDynamic("offsety")(offsety)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(color = color, fill = fill, offsetx = offsetx, offsety = offsety, opacity = opacity, width = width)
+  
     __obj.asInstanceOf[Anon_Color]
   }
 }

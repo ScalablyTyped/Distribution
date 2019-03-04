@@ -20,9 +20,8 @@ object Props {
       scala.Unit
     ]
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("onOutsideClick")(onOutsideClick)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], onOutsideClick = onOutsideClick)
+  
     __obj.asInstanceOf[Props]
   }
 }

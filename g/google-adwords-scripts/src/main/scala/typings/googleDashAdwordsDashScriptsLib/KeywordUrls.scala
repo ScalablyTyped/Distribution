@@ -30,18 +30,8 @@ object KeywordUrls {
     setMobileFinalUrl: js.Function1[java.lang.String, scala.Unit],
     setTrackingTemplate: js.Function1[java.lang.String, scala.Unit]
   ): KeywordUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearFinalUrl")(clearFinalUrl)
-    __obj.updateDynamic("clearMobileFinalUrl")(clearMobileFinalUrl)
-    __obj.updateDynamic("clearTrackingTemplate")(clearTrackingTemplate)
-    __obj.updateDynamic("getCustomParameters")(getCustomParameters)
-    __obj.updateDynamic("getFinalUrl")(getFinalUrl)
-    __obj.updateDynamic("getMobileFinalUrl")(getMobileFinalUrl)
-    __obj.updateDynamic("getTrackingTemplate")(getTrackingTemplate)
-    __obj.updateDynamic("setCustomParameters")(setCustomParameters)
-    __obj.updateDynamic("setFinalUrl")(setFinalUrl)
-    __obj.updateDynamic("setMobileFinalUrl")(setMobileFinalUrl)
-    __obj.updateDynamic("setTrackingTemplate")(setTrackingTemplate)
+    val __obj = js.Dynamic.literal(clearFinalUrl = clearFinalUrl, clearMobileFinalUrl = clearMobileFinalUrl, clearTrackingTemplate = clearTrackingTemplate, getCustomParameters = getCustomParameters, getFinalUrl = getFinalUrl, getMobileFinalUrl = getMobileFinalUrl, getTrackingTemplate = getTrackingTemplate, setCustomParameters = setCustomParameters, setFinalUrl = setFinalUrl, setMobileFinalUrl = setMobileFinalUrl, setTrackingTemplate = setTrackingTemplate)
+  
     __obj.asInstanceOf[KeywordUrls]
   }
 }

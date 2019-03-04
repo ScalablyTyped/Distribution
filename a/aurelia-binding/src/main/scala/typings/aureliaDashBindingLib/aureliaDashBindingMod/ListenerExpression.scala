@@ -12,8 +12,8 @@ trait ListenerExpression extends js.Object {
 object ListenerExpression {
   @scala.inline
   def apply(createBinding: js.Function1[js.Any, Binding]): ListenerExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createBinding")(createBinding)
+    val __obj = js.Dynamic.literal(createBinding = createBinding)
+  
     __obj.asInstanceOf[ListenerExpression]
   }
 }

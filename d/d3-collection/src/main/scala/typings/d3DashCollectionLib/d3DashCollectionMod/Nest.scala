@@ -160,13 +160,8 @@ object Nest {
     ],
     sortValues: js.Function1[js.Function2[/* a */ Datum, /* b */ Datum, scala.Double], Nest[Datum, RollupType]]
   ): Nest[Datum, RollupType] = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("rollup")(rollup)
-    __obj.updateDynamic("sortKeys")(sortKeys)
-    __obj.updateDynamic("sortValues")(sortValues)
+    val __obj = js.Dynamic.literal(entries = entries, key = key, map = map, rollup = rollup, sortKeys = sortKeys, sortValues = sortValues)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Nest[Datum, RollupType]]
   }
 }

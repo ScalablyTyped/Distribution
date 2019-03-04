@@ -126,8 +126,7 @@ object Props {
     width: scala.Int | scala.Double = null,
     wmode: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen)
     if (base != null) __obj.updateDynamic("base")(base)

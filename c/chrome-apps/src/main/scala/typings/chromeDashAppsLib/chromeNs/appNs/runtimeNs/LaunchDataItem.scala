@@ -19,8 +19,7 @@ trait LaunchDataItem extends js.Object {
 object LaunchDataItem {
   @scala.inline
   def apply(entry: filesystemLib.FileEntry, `type`: java.lang.String = null): LaunchDataItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entry")(entry)
+    val __obj = js.Dynamic.literal(entry = entry)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LaunchDataItem]
   }

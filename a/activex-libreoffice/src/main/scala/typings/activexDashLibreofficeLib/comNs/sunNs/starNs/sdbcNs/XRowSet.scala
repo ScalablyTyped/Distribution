@@ -60,33 +60,8 @@ object XRowSet {
     rowInserted: js.Function0[scala.Boolean],
     rowUpdated: js.Function0[scala.Boolean]
   ): XRowSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Row")(Row)
-    __obj.updateDynamic("Statement")(Statement)
-    __obj.updateDynamic("absolute")(absolute)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRowSetListener")(addRowSetListener)
-    __obj.updateDynamic("afterLast")(afterLast)
-    __obj.updateDynamic("beforeFirst")(beforeFirst)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("getRow")(getRow)
-    __obj.updateDynamic("getStatement")(getStatement)
-    __obj.updateDynamic("isAfterLast")(isAfterLast)
-    __obj.updateDynamic("isBeforeFirst")(isBeforeFirst)
-    __obj.updateDynamic("isFirst")(isFirst)
-    __obj.updateDynamic("isLast")(isLast)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refreshRow")(refreshRow)
-    __obj.updateDynamic("relative")(relative)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRowSetListener")(removeRowSetListener)
-    __obj.updateDynamic("rowDeleted")(rowDeleted)
-    __obj.updateDynamic("rowInserted")(rowInserted)
-    __obj.updateDynamic("rowUpdated")(rowUpdated)
+    val __obj = js.Dynamic.literal(Row = Row, Statement = Statement, absolute = absolute, acquire = acquire, addRowSetListener = addRowSetListener, afterLast = afterLast, beforeFirst = beforeFirst, execute = execute, first = first, getRow = getRow, getStatement = getStatement, isAfterLast = isAfterLast, isBeforeFirst = isBeforeFirst, isFirst = isFirst, isLast = isLast, last = last, next = next, previous = previous, queryInterface = queryInterface, refreshRow = refreshRow, relative = relative, release = release, removeRowSetListener = removeRowSetListener, rowDeleted = rowDeleted, rowInserted = rowInserted, rowUpdated = rowUpdated)
+  
     __obj.asInstanceOf[XRowSet]
   }
 }

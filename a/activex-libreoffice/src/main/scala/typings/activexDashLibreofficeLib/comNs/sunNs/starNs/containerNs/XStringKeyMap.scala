@@ -59,13 +59,8 @@ object XStringKeyMap {
     hasValue: js.Function1[java.lang.String, scala.Boolean],
     insertValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XStringKeyMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("getKeyByIndex")(getKeyByIndex)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("getValueByIndex")(getValueByIndex)
-    __obj.updateDynamic("hasValue")(hasValue)
-    __obj.updateDynamic("insertValue")(insertValue)
+    val __obj = js.Dynamic.literal(Count = Count, getKeyByIndex = getKeyByIndex, getValue = getValue, getValueByIndex = getValueByIndex, hasValue = hasValue, insertValue = insertValue)
+  
     __obj.asInstanceOf[XStringKeyMap]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_Lzma extends js.Object {
 object Anon_Lzma {
   @scala.inline
   def apply(lzmaNs: js.Any, zlibNs: js.Any): Anon_Lzma = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lzmaNs")(lzmaNs)
-    __obj.updateDynamic("zlibNs")(zlibNs)
+    val __obj = js.Dynamic.literal(lzmaNs = lzmaNs, zlibNs = zlibNs)
+  
     __obj.asInstanceOf[Anon_Lzma]
   }
 }

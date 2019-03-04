@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueIPlayReadyDomain {
     items: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.IPlayReadyDomain,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueIPlayReadyDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueIPlayReadyDomain]
   }
 }

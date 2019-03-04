@@ -20,11 +20,8 @@ object Anon_BatchFeedback {
     interval: scala.Double,
     port: scala.Double
   ): Anon_BatchFeedback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchFeedback")(batchFeedback)
-    __obj.updateDynamic("gateway")(gateway)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(batchFeedback = batchFeedback, gateway = gateway, interval = interval, port = port)
+  
     __obj.asInstanceOf[Anon_BatchFeedback]
   }
 }

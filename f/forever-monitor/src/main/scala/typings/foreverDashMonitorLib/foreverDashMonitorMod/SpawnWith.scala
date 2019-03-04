@@ -15,11 +15,8 @@ trait SpawnWith extends js.Object {
 object SpawnWith {
   @scala.inline
   def apply(customFds: js.Array[scala.Double], gid: scala.Double, setsid: scala.Boolean, uid: scala.Double): SpawnWith = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customFds")(customFds)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("setsid")(setsid)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(customFds = customFds, gid = gid, setsid = setsid, uid = uid)
+  
     __obj.asInstanceOf[SpawnWith]
   }
 }

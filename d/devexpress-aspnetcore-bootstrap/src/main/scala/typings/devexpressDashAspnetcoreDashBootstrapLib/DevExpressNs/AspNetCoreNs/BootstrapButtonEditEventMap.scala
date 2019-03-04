@@ -29,18 +29,8 @@ object BootstrapButtonEditEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapButtonEditEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonClick")(buttonClick)
-    __obj.updateDynamic("gotFocus")(gotFocus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("keyDown")(keyDown)
-    __obj.updateDynamic("keyPress")(keyPress)
-    __obj.updateDynamic("keyUp")(keyUp)
-    __obj.updateDynamic("lostFocus")(lostFocus)
-    __obj.updateDynamic("textChanged")(textChanged)
-    __obj.updateDynamic("userInput")(userInput)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("valueChanged")(valueChanged)
+    val __obj = js.Dynamic.literal(buttonClick = buttonClick, gotFocus = gotFocus, init = init, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, textChanged = textChanged, userInput = userInput, validation = validation, valueChanged = valueChanged)
+  
     __obj.asInstanceOf[BootstrapButtonEditEventMap]
   }
 }

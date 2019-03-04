@@ -13,9 +13,8 @@ trait IDisplayRequest extends js.Object {
 object IDisplayRequest {
   @scala.inline
   def apply(requestActive: js.Function0[scala.Unit], requestRelease: js.Function0[scala.Unit]): IDisplayRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestActive")(requestActive)
-    __obj.updateDynamic("requestRelease")(requestRelease)
+    val __obj = js.Dynamic.literal(requestActive = requestActive, requestRelease = requestRelease)
+  
     __obj.asInstanceOf[IDisplayRequest]
   }
 }

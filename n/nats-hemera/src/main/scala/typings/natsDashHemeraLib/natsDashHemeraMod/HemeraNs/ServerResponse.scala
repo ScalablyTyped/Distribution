@@ -13,9 +13,8 @@ trait ServerResponse extends js.Object {
 object ServerResponse {
   @scala.inline
   def apply(error: js.Any, payload: js.Any): ServerResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(error = error, payload = payload)
+  
     __obj.asInstanceOf[ServerResponse]
   }
 }

@@ -37,10 +37,8 @@ object TransferMoneyOpts {
     `type`: coinbaseLib.coinbaseLibStrings.transfer,
     description: java.lang.String = null
   ): TransferMoneyOpts = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, to = to)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[TransferMoneyOpts]
   }

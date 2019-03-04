@@ -88,28 +88,8 @@ object XObjectInspector {
     restoreViewData: js.Function1[js.Any, scala.Unit],
     suspend: js.Function1[scala.Boolean, scala.Boolean]
   ): XObjectInspector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("InspectorModel")(InspectorModel)
-    __obj.updateDynamic("InspectorUI")(InspectorUI)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("ViewData")(ViewData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attachFrame")(attachFrame)
-    __obj.updateDynamic("attachModel")(attachModel)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getViewData")(getViewData)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("queryDispatch")(queryDispatch)
-    __obj.updateDynamic("queryDispatches")(queryDispatches)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("restoreViewData")(restoreViewData)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(Frame = Frame, InspectorModel = InspectorModel, InspectorUI = InspectorUI, Model = Model, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getViewData = getViewData, inspect = inspect, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, restoreViewData = restoreViewData, suspend = suspend)
+  
     __obj.asInstanceOf[XObjectInspector]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Default[P] extends js.Object {
 object Anon_Default {
   @scala.inline
   def apply[P](default: reactLib.reactMod.ReactNs.ComponentType[P]): Anon_Default[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Default[P]]
   }
 }

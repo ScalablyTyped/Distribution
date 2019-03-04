@@ -63,16 +63,8 @@ object CommonLogging {
     writeflags: js.Function1[js.Any, T],
     writeln: js.Function1[java.lang.String, T]
   ): CommonLogging[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("errorlns")(errorlns)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("oklns")(oklns)
-    __obj.updateDynamic("subhead")(subhead)
-    __obj.updateDynamic("warn")(warn)
-    __obj.updateDynamic("write")(write)
-    __obj.updateDynamic("writeflags")(writeflags)
-    __obj.updateDynamic("writeln")(writeln)
+    val __obj = js.Dynamic.literal(error = error, errorlns = errorlns, ok = ok, oklns = oklns, subhead = subhead, warn = warn, write = write, writeflags = writeflags, writeln = writeln)
+  
     __obj.asInstanceOf[CommonLogging[T]]
   }
 }

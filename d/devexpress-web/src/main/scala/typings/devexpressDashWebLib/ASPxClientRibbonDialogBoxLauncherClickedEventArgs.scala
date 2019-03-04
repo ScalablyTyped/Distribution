@@ -19,9 +19,8 @@ trait ASPxClientRibbonDialogBoxLauncherClickedEventArgs extends ASPxClientProces
 object ASPxClientRibbonDialogBoxLauncherClickedEventArgs {
   @scala.inline
   def apply(group: ASPxClientRibbonGroup, processOnServer: scala.Boolean): ASPxClientRibbonDialogBoxLauncherClickedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(group = group, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientRibbonDialogBoxLauncherClickedEventArgs]
   }
 }

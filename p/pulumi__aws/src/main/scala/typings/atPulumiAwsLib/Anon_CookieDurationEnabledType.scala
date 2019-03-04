@@ -18,7 +18,8 @@ object Anon_CookieDurationEnabledType {
     cookieDuration: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_CookieDurationEnabledType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cookieDuration != null) __obj.updateDynamic("cookieDuration")(cookieDuration.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CookieDurationEnabledType]

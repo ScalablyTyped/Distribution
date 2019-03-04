@@ -22,8 +22,7 @@ object LocalStateOptions {
     fragmentMatcher: FragmentMatcher = null,
     resolvers: apolloDashClientLib.coreTypesMod.Resolvers | js.Array[apolloDashClientLib.coreTypesMod.Resolvers] = null
   ): LocalStateOptions[TCacheShape] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
+    val __obj = js.Dynamic.literal(cache = cache)
     if (client != null) __obj.updateDynamic("client")(client)
     if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(fragmentMatcher)
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])

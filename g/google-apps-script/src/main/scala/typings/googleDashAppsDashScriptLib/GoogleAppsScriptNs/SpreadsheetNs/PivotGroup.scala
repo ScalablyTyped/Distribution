@@ -65,29 +65,8 @@ object PivotGroup {
     sortDescending: js.Function0[PivotGroup],
     totalsAreShown: js.Function0[scala.Boolean]
   ): PivotGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addManualGroupingRule")(addManualGroupingRule)
-    __obj.updateDynamic("areLabelsRepeated")(areLabelsRepeated)
-    __obj.updateDynamic("clearGroupingRule")(clearGroupingRule)
-    __obj.updateDynamic("clearSort")(clearSort)
-    __obj.updateDynamic("getDimension")(getDimension)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getPivotTable")(getPivotTable)
-    __obj.updateDynamic("getSourceDataColumn")(getSourceDataColumn)
-    __obj.updateDynamic("hideRepeatedLabels")(hideRepeatedLabels)
-    __obj.updateDynamic("isSortAscending")(isSortAscending)
-    __obj.updateDynamic("moveToIndex")(moveToIndex)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeManualGroupingRule")(removeManualGroupingRule)
-    __obj.updateDynamic("resetDisplayName")(resetDisplayName)
-    __obj.updateDynamic("setDisplayName")(setDisplayName)
-    __obj.updateDynamic("setHistogramGroupingRule")(setHistogramGroupingRule)
-    __obj.updateDynamic("showRepeatedLabels")(showRepeatedLabels)
-    __obj.updateDynamic("showTotals")(showTotals)
-    __obj.updateDynamic("sortAscending")(sortAscending)
-    __obj.updateDynamic("sortBy")(sortBy)
-    __obj.updateDynamic("sortDescending")(sortDescending)
-    __obj.updateDynamic("totalsAreShown")(totalsAreShown)
+    val __obj = js.Dynamic.literal(addManualGroupingRule = addManualGroupingRule, areLabelsRepeated = areLabelsRepeated, clearGroupingRule = clearGroupingRule, clearSort = clearSort, getDimension = getDimension, getIndex = getIndex, getPivotTable = getPivotTable, getSourceDataColumn = getSourceDataColumn, hideRepeatedLabels = hideRepeatedLabels, isSortAscending = isSortAscending, moveToIndex = moveToIndex, remove = remove, removeManualGroupingRule = removeManualGroupingRule, resetDisplayName = resetDisplayName, setDisplayName = setDisplayName, setHistogramGroupingRule = setHistogramGroupingRule, showRepeatedLabels = showRepeatedLabels, showTotals = showTotals, sortAscending = sortAscending, sortBy = sortBy, sortDescending = sortDescending, totalsAreShown = totalsAreShown)
+  
     __obj.asInstanceOf[PivotGroup]
   }
 }

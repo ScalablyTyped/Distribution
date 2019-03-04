@@ -12,9 +12,8 @@ trait Help extends js.Object {
 object Help {
   @scala.inline
   def apply(toJSON: js.Function0[java.lang.String], toString: js.Function0[java.lang.String]): Help = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toJSON = toJSON, toString = toString)
+  
     __obj.asInstanceOf[Help]
   }
 }

@@ -24,9 +24,7 @@ object DefinedName {
     Comment: java.lang.String = null,
     Sheet: scala.Int | scala.Double = null
   ): DefinedName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Ref")(Ref)
+    val __obj = js.Dynamic.literal(Name = Name, Ref = Ref)
     if (Comment != null) __obj.updateDynamic("Comment")(Comment)
     if (Sheet != null) __obj.updateDynamic("Sheet")(Sheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinedName]

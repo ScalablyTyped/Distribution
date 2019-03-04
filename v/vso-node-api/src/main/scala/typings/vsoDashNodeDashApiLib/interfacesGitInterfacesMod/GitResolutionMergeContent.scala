@@ -18,10 +18,8 @@ object GitResolutionMergeContent {
     userMergedBlob: GitBlobRef,
     userMergedContent: js.Array[scala.Double]
   ): GitResolutionMergeContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mergeType")(mergeType)
-    __obj.updateDynamic("userMergedBlob")(userMergedBlob)
-    __obj.updateDynamic("userMergedContent")(userMergedContent)
+    val __obj = js.Dynamic.literal(mergeType = mergeType, userMergedBlob = userMergedBlob, userMergedContent = userMergedContent)
+  
     __obj.asInstanceOf[GitResolutionMergeContent]
   }
 }

@@ -24,8 +24,8 @@ object BindExpression {
     `type`: astDashTypesLib.astDashTypesLibStrings.BindExpression,
     `object`: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): BindExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("callee")(callee)
+    val __obj = js.Dynamic.literal(callee = callee)
+    __obj.updateDynamic("type")(`type`)
     if (`object` != null) __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[BindExpression]
   }

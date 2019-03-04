@@ -28,15 +28,8 @@ object Cpu {
     procs_running: java.lang.String,
     softirq: java.lang.String
   ): Cpu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("btime")(btime)
-    __obj.updateDynamic("cpu")(cpu)
-    __obj.updateDynamic("ctxt")(ctxt)
-    __obj.updateDynamic("intr")(intr)
-    __obj.updateDynamic("processes")(processes)
-    __obj.updateDynamic("procs_blocked")(procs_blocked)
-    __obj.updateDynamic("procs_running")(procs_running)
-    __obj.updateDynamic("softirq")(softirq)
+    val __obj = js.Dynamic.literal(btime = btime, cpu = cpu, ctxt = ctxt, intr = intr, processes = processes, procs_blocked = procs_blocked, procs_running = procs_running, softirq = softirq)
+  
     __obj.asInstanceOf[Cpu]
   }
 }

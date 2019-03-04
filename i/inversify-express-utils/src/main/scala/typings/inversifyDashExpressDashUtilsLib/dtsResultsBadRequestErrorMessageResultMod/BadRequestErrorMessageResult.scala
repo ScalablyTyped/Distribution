@@ -20,10 +20,8 @@ object BadRequestErrorMessageResult {
     ],
     message: js.Any
   ): BadRequestErrorMessageResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("executeAsync")(executeAsync)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync, message = message)
+  
     __obj.asInstanceOf[BadRequestErrorMessageResult]
   }
 }

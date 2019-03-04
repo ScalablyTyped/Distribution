@@ -19,10 +19,7 @@ object APIResponsePageTokenMeta {
     next_page_token: java.lang.String = null,
     prev_page_token: java.lang.String = null
   ): APIResponsePageTokenMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request_id")(request_id)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(request_id = request_id, status = status, version = version)
     if (next_page_token != null) __obj.updateDynamic("next_page_token")(next_page_token)
     if (prev_page_token != null) __obj.updateDynamic("prev_page_token")(prev_page_token)
     __obj.asInstanceOf[APIResponsePageTokenMeta]

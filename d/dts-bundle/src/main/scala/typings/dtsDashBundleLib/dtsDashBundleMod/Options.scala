@@ -50,9 +50,7 @@ object Options {
     separator: java.lang.String = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(main = main, name = name)
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
     if (!js.isUndefined(emitOnIncludedFileNotFound)) __obj.updateDynamic("emitOnIncludedFileNotFound")(emitOnIncludedFileNotFound)
     if (!js.isUndefined(emitOnNoIncludedFileNotFound)) __obj.updateDynamic("emitOnNoIncludedFileNotFound")(emitOnNoIncludedFileNotFound)

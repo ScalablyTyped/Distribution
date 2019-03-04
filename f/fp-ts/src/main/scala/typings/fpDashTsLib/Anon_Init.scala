@@ -13,9 +13,8 @@ trait Anon_Init[B /* <: A */, A] extends js.Object {
 object Anon_Init {
   @scala.inline
   def apply[B /* <: A */, A](init: fpDashTsLib.libArrayMod.Global.Array[B], rest: fpDashTsLib.libArrayMod.Global.Array[A]): Anon_Init[B, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("rest")(rest)
+    val __obj = js.Dynamic.literal(init = init, rest = rest)
+  
     __obj.asInstanceOf[Anon_Init[B, A]]
   }
 }

@@ -32,13 +32,8 @@ object Order {
     roomName: java.lang.String = null,
     totalAmount: scala.Int | scala.Double = null
   ): Order = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("remainingAmount")(remainingAmount)
-    __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, created = created, id = id, price = price, remainingAmount = remainingAmount, resourceType = resourceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (roomName != null) __obj.updateDynamic("roomName")(roomName)
     if (totalAmount != null) __obj.updateDynamic("totalAmount")(totalAmount.asInstanceOf[js.Any])

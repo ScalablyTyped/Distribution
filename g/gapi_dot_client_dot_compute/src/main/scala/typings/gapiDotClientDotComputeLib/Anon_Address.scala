@@ -57,10 +57,7 @@ object Anon_Address {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(address = address, project = project, region = region)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

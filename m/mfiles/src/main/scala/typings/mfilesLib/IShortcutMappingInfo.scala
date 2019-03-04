@@ -20,11 +20,8 @@ object IShortcutMappingInfo {
     ObjectTypeName: java.lang.String,
     ObjectTypeSemanticAliases: ISemanticAliases
   ): IShortcutMappingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ObjectTypeGUID")(ObjectTypeGUID)
-    __obj.updateDynamic("ObjectTypeID")(ObjectTypeID)
-    __obj.updateDynamic("ObjectTypeName")(ObjectTypeName)
-    __obj.updateDynamic("ObjectTypeSemanticAliases")(ObjectTypeSemanticAliases)
+    val __obj = js.Dynamic.literal(ObjectTypeGUID = ObjectTypeGUID, ObjectTypeID = ObjectTypeID, ObjectTypeName = ObjectTypeName, ObjectTypeSemanticAliases = ObjectTypeSemanticAliases)
+  
     __obj.asInstanceOf[IShortcutMappingInfo]
   }
 }

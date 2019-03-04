@@ -34,9 +34,8 @@ object ExistsParams {
     requestTimeout: scala.Int | scala.Double = null,
     routing: java.lang.String = null
   ): ExistsParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(id = id, index = index)
+    __obj.updateDynamic("type")(`type`)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

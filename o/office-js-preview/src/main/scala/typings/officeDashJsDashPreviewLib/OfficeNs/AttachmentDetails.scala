@@ -55,13 +55,8 @@ object AttachmentDetails {
     name: java.lang.String,
     size: scala.Double
   ): AttachmentDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentType")(attachmentType)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isInline")(isInline)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType, contentType = contentType, id = id, isInline = isInline, name = name, size = size)
+  
     __obj.asInstanceOf[AttachmentDetails]
   }
 }

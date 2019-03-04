@@ -46,16 +46,8 @@ object XStarBasicModuleInfo {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStarBasicModuleInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Language")(Language)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLanguage")(getLanguage)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getSource")(getSource)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Language = Language, Name = Name, Source = Source, acquire = acquire, getLanguage = getLanguage, getName = getName, getSource = getSource, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStarBasicModuleInfo]
   }
 }

@@ -12,8 +12,8 @@ trait IBodyEvent extends IEvent {
 object IBodyEvent {
   @scala.inline
   def apply(body: Body, `type`: java.lang.String): IBodyEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IBodyEvent]
   }
 }

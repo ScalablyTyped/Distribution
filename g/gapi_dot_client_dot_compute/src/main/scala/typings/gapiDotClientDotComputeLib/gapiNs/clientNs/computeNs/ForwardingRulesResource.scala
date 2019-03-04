@@ -48,13 +48,8 @@ object ForwardingRulesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ForwardingRulesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setTarget")(setTarget)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list, setTarget = setTarget)
+  
     __obj.asInstanceOf[ForwardingRulesResource]
   }
 }

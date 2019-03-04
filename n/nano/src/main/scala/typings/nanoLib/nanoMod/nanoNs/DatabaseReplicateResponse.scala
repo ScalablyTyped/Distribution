@@ -28,12 +28,8 @@ object DatabaseReplicateResponse {
     session_id: java.lang.String,
     source_last_seq: scala.Double
   ): DatabaseReplicateResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("replication_id_version")(replication_id_version)
-    __obj.updateDynamic("session_id")(session_id)
-    __obj.updateDynamic("source_last_seq")(source_last_seq)
+    val __obj = js.Dynamic.literal(history = history, ok = ok, replication_id_version = replication_id_version, session_id = session_id, source_last_seq = source_last_seq)
+  
     __obj.asInstanceOf[DatabaseReplicateResponse]
   }
 }

@@ -24,11 +24,8 @@ trait Acceleration extends js.Object {
 object Acceleration {
   @scala.inline
   def apply(timestamp: scala.Double, x: scala.Double, y: scala.Double, z: scala.Double): Acceleration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(timestamp = timestamp, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[Acceleration]
   }
 }

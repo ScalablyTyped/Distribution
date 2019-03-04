@@ -24,13 +24,8 @@ object SjclEllipticalPoint {
     toBits: js.Function0[BitArray],
     toJac: js.Function0[SjclPointJacobian]
   ): SjclEllipticalPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("mult")(mult)
-    __obj.updateDynamic("mult2")(mult2)
-    __obj.updateDynamic("multiples")(multiples)
-    __obj.updateDynamic("toBits")(toBits)
-    __obj.updateDynamic("toJac")(toJac)
+    val __obj = js.Dynamic.literal(isValid = isValid, mult = mult, mult2 = mult2, multiples = multiples, toBits = toBits, toJac = toJac)
+  
     __obj.asInstanceOf[SjclEllipticalPoint]
   }
 }

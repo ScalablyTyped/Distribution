@@ -30,14 +30,8 @@ object OtherPrimeInfo {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): OtherPrimeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coefficient")(coefficient)
-    __obj.updateDynamic("exponent")(exponent)
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("prime")(prime)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(coefficient = coefficient, exponent = exponent, fromJSON = fromJSON, fromSchema = fromSchema, prime = prime, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[OtherPrimeInfo]
   }
 }

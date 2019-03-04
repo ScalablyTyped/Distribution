@@ -93,18 +93,8 @@ object XDataProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RangeSelection")(RangeSelection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createDataSequenceByRangeRepresentation")(createDataSequenceByRangeRepresentation)
-    __obj.updateDynamic("createDataSequenceByRangeRepresentationPossible")(createDataSequenceByRangeRepresentationPossible)
-    __obj.updateDynamic("createDataSequenceByValueArray")(createDataSequenceByValueArray)
-    __obj.updateDynamic("createDataSource")(createDataSource)
-    __obj.updateDynamic("createDataSourcePossible")(createDataSourcePossible)
-    __obj.updateDynamic("detectArguments")(detectArguments)
-    __obj.updateDynamic("getRangeSelection")(getRangeSelection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(RangeSelection = RangeSelection, acquire = acquire, createDataSequenceByRangeRepresentation = createDataSequenceByRangeRepresentation, createDataSequenceByRangeRepresentationPossible = createDataSequenceByRangeRepresentationPossible, createDataSequenceByValueArray = createDataSequenceByValueArray, createDataSource = createDataSource, createDataSourcePossible = createDataSourcePossible, detectArguments = detectArguments, getRangeSelection = getRangeSelection, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataProvider]
   }
 }

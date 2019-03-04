@@ -26,10 +26,7 @@ object Anon_DefaultResult {
     notificationTargetArn: java.lang.String = null,
     roleArn: java.lang.String = null
   ): Anon_DefaultResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultResult")(defaultResult)
-    __obj.updateDynamic("lifecycleTransition")(lifecycleTransition)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(defaultResult = defaultResult, lifecycleTransition = lifecycleTransition, name = name)
     if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
     if (notificationMetadata != null) __obj.updateDynamic("notificationMetadata")(notificationMetadata)
     if (notificationTargetArn != null) __obj.updateDynamic("notificationTargetArn")(notificationTargetArn)

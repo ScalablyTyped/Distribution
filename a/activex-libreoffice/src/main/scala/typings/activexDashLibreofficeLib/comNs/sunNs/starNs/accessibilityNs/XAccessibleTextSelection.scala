@@ -34,17 +34,8 @@ object XAccessibleTextSelection {
       scala.Boolean
     ]
   ): XAccessibleTextSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SelectedPortionCount")(SelectedPortionCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelection")(addSelection)
-    __obj.updateDynamic("getSelectedPortionCount")(getSelectedPortionCount)
-    __obj.updateDynamic("getSeletedPositionEnd")(getSeletedPositionEnd)
-    __obj.updateDynamic("getSeletedPositionStart")(getSeletedPositionStart)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelection")(removeSelection)
-    __obj.updateDynamic("scrollToPosition")(scrollToPosition)
+    val __obj = js.Dynamic.literal(SelectedPortionCount = SelectedPortionCount, acquire = acquire, addSelection = addSelection, getSelectedPortionCount = getSelectedPortionCount, getSeletedPositionEnd = getSeletedPositionEnd, getSeletedPositionStart = getSeletedPositionStart, queryInterface = queryInterface, release = release, removeSelection = removeSelection, scrollToPosition = scrollToPosition)
+  
     __obj.asInstanceOf[XAccessibleTextSelection]
   }
 }

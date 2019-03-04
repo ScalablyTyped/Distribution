@@ -22,12 +22,8 @@ object Anon_Address {
     local: emailDashAddressesLib.emailAddressesNs.ASTNode,
     name: emailDashAddressesLib.emailAddressesNs.ASTNode
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(address = address, comments = comments, domain = domain, local = local, name = name)
+  
     __obj.asInstanceOf[Anon_Address]
   }
 }

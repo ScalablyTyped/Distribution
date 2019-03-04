@@ -12,8 +12,8 @@ trait Anon_Ciphers extends js.Object {
 object Anon_Ciphers {
   @scala.inline
   def apply(ciphers: java.lang.String): Anon_Ciphers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ciphers")(ciphers)
+    val __obj = js.Dynamic.literal(ciphers = ciphers)
+  
     __obj.asInstanceOf[Anon_Ciphers]
   }
 }

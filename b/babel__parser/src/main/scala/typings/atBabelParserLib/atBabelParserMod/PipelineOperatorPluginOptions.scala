@@ -14,8 +14,8 @@ object PipelineOperatorPluginOptions {
   def apply(
     proposal: atBabelParserLib.atBabelParserLibStrings.minimal | atBabelParserLib.atBabelParserLibStrings.smart
   ): PipelineOperatorPluginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("proposal")(proposal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(proposal = proposal.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PipelineOperatorPluginOptions]
   }
 }

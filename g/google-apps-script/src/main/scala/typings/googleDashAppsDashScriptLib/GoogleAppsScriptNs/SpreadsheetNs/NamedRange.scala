@@ -22,12 +22,8 @@ object NamedRange {
     setName: js.Function1[java.lang.String, NamedRange],
     setRange: js.Function1[Range, NamedRange]
   ): NamedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setRange")(setRange)
+    val __obj = js.Dynamic.literal(getName = getName, getRange = getRange, remove = remove, setName = setName, setRange = setRange)
+  
     __obj.asInstanceOf[NamedRange]
   }
 }

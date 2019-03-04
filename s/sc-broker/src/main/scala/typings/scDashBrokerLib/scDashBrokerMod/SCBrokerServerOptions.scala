@@ -38,8 +38,7 @@ object SCBrokerServerOptions {
     secretKey: java.lang.String = null,
     socketPath: java.lang.String = null
   ): SCBrokerServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downgradeToUser")(downgradeToUser.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
     if (brokerControllerPath != null) __obj.updateDynamic("brokerControllerPath")(brokerControllerPath)
     if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)

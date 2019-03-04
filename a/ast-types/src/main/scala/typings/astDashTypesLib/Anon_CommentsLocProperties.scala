@@ -22,8 +22,7 @@ object Anon_CommentsLocProperties {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsLocProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(properties = properties)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CommentsLocProperties]

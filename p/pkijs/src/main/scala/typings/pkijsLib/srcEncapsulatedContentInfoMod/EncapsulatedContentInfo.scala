@@ -22,12 +22,8 @@ object EncapsulatedContentInfo {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): EncapsulatedContentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eContent")(eContent)
-    __obj.updateDynamic("eContentType")(eContentType)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(eContent = eContent, eContentType = eContentType, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[EncapsulatedContentInfo]
   }
 }

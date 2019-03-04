@@ -27,9 +27,8 @@ object CalculationCache {
     invalidate: js.Function0[scala.Unit],
     result: js.Function2[js.Array[js.Object], js.Function0[Result], Result]
   ): CalculationCache[Result] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invalidate")(invalidate)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(invalidate = invalidate, result = result)
+  
     __obj.asInstanceOf[CalculationCache[Result]]
   }
 }

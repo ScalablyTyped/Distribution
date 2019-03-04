@@ -20,11 +20,8 @@ object Anon_CssPrefix {
     cssTransformStart: java.lang.String,
     nativeTouchScroll: scala.Boolean
   ): Anon_CssPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cssPrefix")(cssPrefix)
-    __obj.updateDynamic("cssTransformEnd")(cssTransformEnd)
-    __obj.updateDynamic("cssTransformStart")(cssTransformStart)
-    __obj.updateDynamic("nativeTouchScroll")(nativeTouchScroll)
+    val __obj = js.Dynamic.literal(cssPrefix = cssPrefix, cssTransformEnd = cssTransformEnd, cssTransformStart = cssTransformStart, nativeTouchScroll = nativeTouchScroll)
+  
     __obj.asInstanceOf[Anon_CssPrefix]
   }
 }

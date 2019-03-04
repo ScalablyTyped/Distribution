@@ -16,9 +16,8 @@ object Anon_Entities {
     entities: js.Array[breezeLib.breezeNs.Entity],
     tempKeyMapping: org.scalablytyped.runtime.StringDictionary[breezeLib.breezeNs.EntityKey]
   ): Anon_Entities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entities")(entities)
-    __obj.updateDynamic("tempKeyMapping")(tempKeyMapping)
+    val __obj = js.Dynamic.literal(entities = entities, tempKeyMapping = tempKeyMapping)
+  
     __obj.asInstanceOf[Anon_Entities]
   }
 }

@@ -41,9 +41,7 @@ object Options {
     stsToken: java.lang.String = null,
     timeout: java.lang.String | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessKeyId")(accessKeyId)
-    __obj.updateDynamic("accessKeySecret")(accessKeySecret)
+    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId, accessKeySecret = accessKeySecret)
     if (bucket != null) __obj.updateDynamic("bucket")(bucket)
     if (!js.isUndefined(cname)) __obj.updateDynamic("cname")(cname)
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)

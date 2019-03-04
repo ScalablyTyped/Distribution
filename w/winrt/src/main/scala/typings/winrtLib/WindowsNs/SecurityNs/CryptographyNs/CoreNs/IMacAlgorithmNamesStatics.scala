@@ -24,13 +24,8 @@ object IMacAlgorithmNamesStatics {
     hmacSha384: java.lang.String,
     hmacSha512: java.lang.String
   ): IMacAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aesCmac")(aesCmac)
-    __obj.updateDynamic("hmacMd5")(hmacMd5)
-    __obj.updateDynamic("hmacSha1")(hmacSha1)
-    __obj.updateDynamic("hmacSha256")(hmacSha256)
-    __obj.updateDynamic("hmacSha384")(hmacSha384)
-    __obj.updateDynamic("hmacSha512")(hmacSha512)
+    val __obj = js.Dynamic.literal(aesCmac = aesCmac, hmacMd5 = hmacMd5, hmacSha1 = hmacSha1, hmacSha256 = hmacSha256, hmacSha384 = hmacSha384, hmacSha512 = hmacSha512)
+  
     __obj.asInstanceOf[IMacAlgorithmNamesStatics]
   }
 }

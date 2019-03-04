@@ -13,8 +13,7 @@ trait Rule extends js.Object {
 object Rule {
   @scala.inline
   def apply(filter: Filter, replacement: ReplacementFunction = null): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     if (replacement != null) __obj.updateDynamic("replacement")(replacement)
     __obj.asInstanceOf[Rule]
   }

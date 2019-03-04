@@ -42,8 +42,7 @@ object Anon_AltAnnotationIdFields {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAnnotationIdFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationId")(annotationId)
+    val __obj = js.Dynamic.literal(annotationId = annotationId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

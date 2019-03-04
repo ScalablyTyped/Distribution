@@ -16,9 +16,8 @@ object Anon_Path {
     path: java.lang.String,
     pkg: normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
   ): Anon_Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pkg")(pkg)
+    val __obj = js.Dynamic.literal(path = path, pkg = pkg)
+  
     __obj.asInstanceOf[Anon_Path]
   }
 }

@@ -18,9 +18,9 @@ trait LodashTransform1x4[T] extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.MemoVoidIteratorCapped[T, lodashLib.lodashMod.underscoreNs.Dictionary[TResult]],
     accumulator: lodashLib.lodashMod.underscoreNs.Dictionary[TResult]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[TResult] = js.native
-  def apply[TResult](iteratee: lodashLib.lodashMod.underscoreNs.`__`, accumulator: js.Array[TResult]): LodashTransform1x6[T, TResult] = js.native
+  def apply[TResult](iteratee: lodashLib.lodashMod.underscoreNs.__, accumulator: js.Array[TResult]): LodashTransform1x6[T, TResult] = js.native
   def apply[TResult](
-    iteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratee: lodashLib.lodashMod.underscoreNs.__,
     accumulator: lodashLib.lodashMod.underscoreNs.Dictionary[TResult]
   ): LodashTransform2x6[T, TResult] = js.native
 }

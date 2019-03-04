@@ -22,12 +22,8 @@ object Anon_BaseRadius {
     heightSegments: scala.Double,
     peakRadius: scala.Double
   ): Anon_BaseRadius = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseRadius")(baseRadius)
-    __obj.updateDynamic("capSegments")(capSegments)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("peakRadius")(peakRadius)
+    val __obj = js.Dynamic.literal(baseRadius = baseRadius, capSegments = capSegments, height = height, heightSegments = heightSegments, peakRadius = peakRadius)
+  
     __obj.asInstanceOf[Anon_BaseRadius]
   }
 }

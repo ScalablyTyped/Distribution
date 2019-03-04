@@ -82,30 +82,8 @@ object ValueBinding {
     setValue: js.Function1[js.Any, scala.Unit],
     supportsType: js.Function1[activexDashLibreofficeLib.`type`, scala.Boolean]
   ): ValueBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ReadOnly")(ReadOnly)
-    __obj.updateDynamic("Relevant")(Relevant)
-    __obj.updateDynamic("SupportedValueTypes")(SupportedValueTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSupportedValueTypes")(getSupportedValueTypes)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("supportsType")(supportsType)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, ReadOnly = ReadOnly, Relevant = Relevant, SupportedValueTypes = SupportedValueTypes, acquire = acquire, addEventListener = addEventListener, addModifyListener = addModifyListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSupportedValueTypes = getSupportedValueTypes, getValue = getValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeModifyListener = removeModifyListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setValue = setValue, supportsType = supportsType)
+  
     __obj.asInstanceOf[ValueBinding]
   }
 }

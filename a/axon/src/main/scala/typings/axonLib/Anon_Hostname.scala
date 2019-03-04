@@ -20,9 +20,7 @@ object Anon_Hostname {
     hostname: java.lang.String = null,
     protocol: java.lang.String = null
   ): Anon_Hostname = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pathname = pathname, port = port.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     __obj.asInstanceOf[Anon_Hostname]

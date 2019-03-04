@@ -38,20 +38,8 @@ object TfvcItem {
     url: java.lang.String,
     version: scala.Double
   ): TfvcItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("changeDate")(changeDate)
-    __obj.updateDynamic("contentMetadata")(contentMetadata)
-    __obj.updateDynamic("deletionId")(deletionId)
-    __obj.updateDynamic("hashValue")(hashValue)
-    __obj.updateDynamic("isBranch")(isBranch)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("isPendingChange")(isPendingChange)
-    __obj.updateDynamic("isSymLink")(isSymLink)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(_links = _links, changeDate = changeDate, contentMetadata = contentMetadata, deletionId = deletionId, hashValue = hashValue, isBranch = isBranch, isFolder = isFolder, isPendingChange = isPendingChange, isSymLink = isSymLink, path = path, size = size, url = url, version = version)
+  
     __obj.asInstanceOf[TfvcItem]
   }
 }

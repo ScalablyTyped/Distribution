@@ -12,8 +12,8 @@ trait DatastoreDouble extends js.Object {
 object DatastoreDouble {
   @scala.inline
   def apply(value: java.lang.String): DatastoreDouble = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[DatastoreDouble]
   }
 }

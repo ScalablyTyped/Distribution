@@ -30,9 +30,7 @@ object Anon_Autostem {
     stem_direction: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): Anon_Autostem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(duration = duration, keys = keys)
     if (!js.isUndefined(auto_stem)) __obj.updateDynamic("auto_stem")(auto_stem)
     if (clef != null) __obj.updateDynamic("clef")(clef)
     if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])

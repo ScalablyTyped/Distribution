@@ -24,12 +24,8 @@ object CompileNgModuleSummary {
     `type`: CompileTypeMetadata,
     summaryKind: CompileSummaryKind = null
   ): CompileNgModuleSummary = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("entryComponents")(entryComponents)
-    __obj.updateDynamic("exportedDirectives")(exportedDirectives)
-    __obj.updateDynamic("exportedPipes")(exportedPipes)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("providers")(providers)
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents, exportedDirectives = exportedDirectives, exportedPipes = exportedPipes, modules = modules, providers = providers)
+    __obj.updateDynamic("type")(`type`)
     if (summaryKind != null) __obj.updateDynamic("summaryKind")(summaryKind)
     __obj.asInstanceOf[CompileNgModuleSummary]
   }

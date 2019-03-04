@@ -14,10 +14,8 @@ trait MUIDataTableTextLabelsSelectedRows extends js.Object {
 object MUIDataTableTextLabelsSelectedRows {
   @scala.inline
   def apply(delete: java.lang.String, deleteAria: java.lang.String, text: java.lang.String): MUIDataTableTextLabelsSelectedRows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deleteAria")(deleteAria)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(delete = delete, deleteAria = deleteAria, text = text)
+  
     __obj.asInstanceOf[MUIDataTableTextLabelsSelectedRows]
   }
 }

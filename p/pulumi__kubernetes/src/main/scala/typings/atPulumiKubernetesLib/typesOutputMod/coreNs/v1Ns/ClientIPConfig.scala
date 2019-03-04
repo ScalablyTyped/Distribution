@@ -20,8 +20,8 @@ trait ClientIPConfig extends js.Object {
 object ClientIPConfig {
   @scala.inline
   def apply(timeoutSeconds: scala.Double): ClientIPConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timeoutSeconds")(timeoutSeconds)
+    val __obj = js.Dynamic.literal(timeoutSeconds = timeoutSeconds)
+  
     __obj.asInstanceOf[ClientIPConfig]
   }
 }

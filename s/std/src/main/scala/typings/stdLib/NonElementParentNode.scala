@@ -15,8 +15,8 @@ trait NonElementParentNode extends js.Object {
 object NonElementParentNode {
   @scala.inline
   def apply(getElementById: js.Function1[java.lang.String, Element | scala.Null]): NonElementParentNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElementById")(getElementById)
+    val __obj = js.Dynamic.literal(getElementById = getElementById)
+  
     __obj.asInstanceOf[NonElementParentNode]
   }
 }

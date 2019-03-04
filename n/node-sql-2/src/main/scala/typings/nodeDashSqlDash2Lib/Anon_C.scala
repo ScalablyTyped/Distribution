@@ -17,8 +17,8 @@ object Anon_C {
       nodeDashSqlDash2Lib.sqlMod.Column[js.Any, java.lang.String]
     ]
   ): Anon_C = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOWER")(LOWER)
+    val __obj = js.Dynamic.literal(LOWER = LOWER)
+  
     __obj.asInstanceOf[Anon_C]
   }
 }

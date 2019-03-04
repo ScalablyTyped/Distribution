@@ -47,14 +47,8 @@ object TimelineTeamIteration {
     status: TimelineIterationStatus,
     workItems: js.Array[js.Array[_]]
   ): TimelineTeamIteration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finishDate")(finishDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partiallyPagedWorkItems")(partiallyPagedWorkItems)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(finishDate = finishDate, name = name, partiallyPagedWorkItems = partiallyPagedWorkItems, path = path, startDate = startDate, status = status, workItems = workItems)
+  
     __obj.asInstanceOf[TimelineTeamIteration]
   }
 }

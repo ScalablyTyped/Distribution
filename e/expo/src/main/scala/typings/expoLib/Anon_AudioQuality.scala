@@ -34,12 +34,7 @@ object Anon_AudioQuality {
     linearPCMIsFloat: js.UndefOr[scala.Boolean] = js.undefined,
     outputFormat: java.lang.String | scala.Double = null
   ): Anon_AudioQuality = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioQuality")(audioQuality)
-    __obj.updateDynamic("bitRate")(bitRate)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("numberOfChannels")(numberOfChannels)
-    __obj.updateDynamic("sampleRate")(sampleRate)
+    val __obj = js.Dynamic.literal(audioQuality = audioQuality, bitRate = bitRate, extension = extension, numberOfChannels = numberOfChannels, sampleRate = sampleRate)
     if (bitDepthHint != null) __obj.updateDynamic("bitDepthHint")(bitDepthHint.asInstanceOf[js.Any])
     if (bitRateStrategy != null) __obj.updateDynamic("bitRateStrategy")(bitRateStrategy.asInstanceOf[js.Any])
     if (linearPCMBitDepth != null) __obj.updateDynamic("linearPCMBitDepth")(linearPCMBitDepth.asInstanceOf[js.Any])

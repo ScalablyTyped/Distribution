@@ -32,17 +32,8 @@ object GravityEnum {
     southwest: scala.Double,
     west: scala.Double
   ): GravityEnum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("centre")(centre)
-    __obj.updateDynamic("east")(east)
-    __obj.updateDynamic("north")(north)
-    __obj.updateDynamic("northeast")(northeast)
-    __obj.updateDynamic("northwest")(northwest)
-    __obj.updateDynamic("south")(south)
-    __obj.updateDynamic("southeast")(southeast)
-    __obj.updateDynamic("southwest")(southwest)
-    __obj.updateDynamic("west")(west)
+    val __obj = js.Dynamic.literal(center = center, centre = centre, east = east, north = north, northeast = northeast, northwest = northwest, south = south, southeast = southeast, southwest = southwest, west = west)
+  
     __obj.asInstanceOf[GravityEnum]
   }
 }

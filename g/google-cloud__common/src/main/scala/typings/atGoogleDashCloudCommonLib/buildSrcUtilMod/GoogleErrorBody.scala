@@ -20,9 +20,7 @@ object GoogleErrorBody {
     errors: js.Array[GoogleInnerError] = null,
     message: java.lang.String = null
   ): GoogleErrorBody = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(code = code, response = response)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[GoogleErrorBody]

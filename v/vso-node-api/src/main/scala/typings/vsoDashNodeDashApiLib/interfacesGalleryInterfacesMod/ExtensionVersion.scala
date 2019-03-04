@@ -32,17 +32,8 @@ object ExtensionVersion {
     version: java.lang.String,
     versionDescription: java.lang.String
   ): ExtensionVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assetUri")(assetUri)
-    __obj.updateDynamic("badges")(badges)
-    __obj.updateDynamic("fallbackAssetUri")(fallbackAssetUri)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("lastUpdated")(lastUpdated)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("validationResultMessage")(validationResultMessage)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionDescription")(versionDescription)
+    val __obj = js.Dynamic.literal(assetUri = assetUri, badges = badges, fallbackAssetUri = fallbackAssetUri, files = files, flags = flags, lastUpdated = lastUpdated, properties = properties, validationResultMessage = validationResultMessage, version = version, versionDescription = versionDescription)
+  
     __obj.asInstanceOf[ExtensionVersion]
   }
 }

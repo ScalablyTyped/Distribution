@@ -18,10 +18,8 @@ object Anon_AlwaysShowFocus {
     isActive: js.Function0[scala.Boolean],
     onlyShowFocusOnTabs: js.Function0[scala.Boolean | scala.Unit]
   ): Anon_AlwaysShowFocus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysShowFocus")(alwaysShowFocus)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("onlyShowFocusOnTabs")(onlyShowFocusOnTabs)
+    val __obj = js.Dynamic.literal(alwaysShowFocus = alwaysShowFocus, isActive = isActive, onlyShowFocusOnTabs = onlyShowFocusOnTabs)
+  
     __obj.asInstanceOf[Anon_AlwaysShowFocus]
   }
 }

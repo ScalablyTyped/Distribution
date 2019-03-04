@@ -23,8 +23,8 @@ trait XAlterView extends js.Object {
 object XAlterView {
   @scala.inline
   def apply(alterCommand: js.Function1[java.lang.String, scala.Unit]): XAlterView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alterCommand")(alterCommand)
+    val __obj = js.Dynamic.literal(alterCommand = alterCommand)
+  
     __obj.asInstanceOf[XAlterView]
   }
 }

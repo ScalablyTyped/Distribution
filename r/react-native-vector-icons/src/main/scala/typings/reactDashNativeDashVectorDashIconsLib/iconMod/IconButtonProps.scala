@@ -136,8 +136,7 @@ object IconButtonProps {
     underlayColor: java.lang.String = null,
     useForeground: js.UndefOr[scala.Boolean] = js.undefined
   ): IconButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)

@@ -69,28 +69,8 @@ object XAnnotation {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("DateTime")(DateTime)
-    __obj.updateDynamic("Initials")(Initials)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("TextRange")(TextRange)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, Author = Author, DateTime = DateTime, Initials = Initials, Position = Position, PropertySetInfo = PropertySetInfo, Size = Size, TextRange = TextRange, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XAnnotation]
   }
 }

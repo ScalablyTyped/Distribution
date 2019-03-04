@@ -15,11 +15,8 @@ trait CoverageSummary extends js.Object {
 object CoverageSummary {
   @scala.inline
   def apply(branches: Totals, functions: Totals, lines: Totals, statements: Totals): CoverageSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branches")(branches)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, statements = statements)
+  
     __obj.asInstanceOf[CoverageSummary]
   }
 }

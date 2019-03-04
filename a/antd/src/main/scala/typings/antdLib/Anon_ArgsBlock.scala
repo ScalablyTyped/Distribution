@@ -42,15 +42,8 @@ object Anon_ArgsBlock {
     ],
     `type`: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   ): Anon_ArgsBlock = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("htmlType")(htmlType)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(block = block, className = className, htmlType = htmlType, icon = icon, loading = loading, onClick = onClick, shape = shape, size = size)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ArgsBlock]
   }
 }

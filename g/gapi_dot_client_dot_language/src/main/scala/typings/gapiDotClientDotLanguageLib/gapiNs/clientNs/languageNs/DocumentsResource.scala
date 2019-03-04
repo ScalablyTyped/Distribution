@@ -56,12 +56,8 @@ object DocumentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AnnotateTextResponse]
     ]
   ): DocumentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analyzeEntities")(analyzeEntities)
-    __obj.updateDynamic("analyzeEntitySentiment")(analyzeEntitySentiment)
-    __obj.updateDynamic("analyzeSentiment")(analyzeSentiment)
-    __obj.updateDynamic("analyzeSyntax")(analyzeSyntax)
-    __obj.updateDynamic("annotateText")(annotateText)
+    val __obj = js.Dynamic.literal(analyzeEntities = analyzeEntities, analyzeEntitySentiment = analyzeEntitySentiment, analyzeSentiment = analyzeSentiment, analyzeSyntax = analyzeSyntax, annotateText = annotateText)
+  
     __obj.asInstanceOf[DocumentsResource]
   }
 }

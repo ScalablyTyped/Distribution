@@ -83,15 +83,8 @@ object SendAsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): SendAsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("smimeInfo")(smimeInfo)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, smimeInfo = smimeInfo, update = update, verify = verify)
+  
     __obj.asInstanceOf[SendAsResource]
   }
 }

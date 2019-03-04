@@ -49,8 +49,7 @@ object LicenseConfigurationArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): LicenseConfigurationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("licenseCountingType")(licenseCountingType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(licenseCountingType = licenseCountingType.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (licenseCount != null) __obj.updateDynamic("licenseCount")(licenseCount.asInstanceOf[js.Any])
     if (licenseCountHardLimit != null) __obj.updateDynamic("licenseCountHardLimit")(licenseCountHardLimit.asInstanceOf[js.Any])

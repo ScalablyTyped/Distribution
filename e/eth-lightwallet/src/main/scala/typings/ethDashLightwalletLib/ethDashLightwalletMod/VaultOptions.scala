@@ -20,10 +20,7 @@ object VaultOptions {
     seedPhrase: java.lang.String,
     salt: java.lang.String = null
   ): VaultOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hdPathString")(hdPathString)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("seedPhrase")(seedPhrase)
+    val __obj = js.Dynamic.literal(hdPathString = hdPathString, password = password, seedPhrase = seedPhrase)
     if (salt != null) __obj.updateDynamic("salt")(salt)
     __obj.asInstanceOf[VaultOptions]
   }

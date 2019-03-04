@@ -38,12 +38,7 @@ object LocalNotificationOptions {
     soundName: java.lang.String = null,
     subtitle: java.lang.String = null
   ): LocalNotificationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildId")(buildId.asInstanceOf[js.Any])
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("fireTime")(fireTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], content = content, fireTime = fireTime, id = id, title = title)
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (soundName != null) __obj.updateDynamic("soundName")(soundName)

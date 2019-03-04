@@ -14,9 +14,8 @@ trait Anon_Message extends js.Object {
 object Anon_Message {
   @scala.inline
   def apply(message: js.Any, number: js.Any, `type`: js.Any): Anon_Message = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(message = message, number = number)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Message]
   }
 }

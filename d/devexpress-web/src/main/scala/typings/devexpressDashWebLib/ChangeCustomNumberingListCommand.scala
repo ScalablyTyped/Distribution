@@ -28,9 +28,8 @@ object ChangeCustomNumberingListCommand {
     execute: js.Function2[scala.Double, js.Array[ListLevelSettings], scala.Boolean],
     getState: js.Function1[scala.Double, js.Any]
   ): ChangeCustomNumberingListCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[ChangeCustomNumberingListCommand]
   }
 }

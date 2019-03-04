@@ -35,11 +35,8 @@ object TSPropertySignature {
     trailingComments: js.Array[Comment] = null,
     typeAnnotation: TSTypeAnnotation = null
   ): TSPropertySignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, key = key, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

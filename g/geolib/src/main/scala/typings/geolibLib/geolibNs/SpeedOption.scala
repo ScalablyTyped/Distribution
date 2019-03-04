@@ -12,8 +12,8 @@ trait SpeedOption extends js.Object {
 object SpeedOption {
   @scala.inline
   def apply(unit: java.lang.String): SpeedOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(unit = unit)
+  
     __obj.asInstanceOf[SpeedOption]
   }
 }

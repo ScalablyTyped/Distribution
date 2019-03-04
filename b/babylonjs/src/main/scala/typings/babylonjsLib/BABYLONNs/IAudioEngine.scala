@@ -82,20 +82,8 @@ object IAudioEngine {
     unlocked: scala.Boolean,
     useCustomUnlockedButton: scala.Boolean
   ): IAudioEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WarnedWebAudioUnsupported")(WarnedWebAudioUnsupported)
-    __obj.updateDynamic("audioContext")(audioContext.asInstanceOf[js.Any])
-    __obj.updateDynamic("canUseWebAudio")(canUseWebAudio)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("isMP3supported")(isMP3supported)
-    __obj.updateDynamic("isOGGsupported")(isOGGsupported)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("masterGain")(masterGain)
-    __obj.updateDynamic("onAudioLockedObservable")(onAudioLockedObservable)
-    __obj.updateDynamic("onAudioUnlockedObservable")(onAudioUnlockedObservable)
-    __obj.updateDynamic("unlock")(unlock)
-    __obj.updateDynamic("unlocked")(unlocked)
-    __obj.updateDynamic("useCustomUnlockedButton")(useCustomUnlockedButton)
+    val __obj = js.Dynamic.literal(WarnedWebAudioUnsupported = WarnedWebAudioUnsupported, audioContext = audioContext.asInstanceOf[js.Any], canUseWebAudio = canUseWebAudio, dispose = dispose, isMP3supported = isMP3supported, isOGGsupported = isOGGsupported, lock = lock, masterGain = masterGain, onAudioLockedObservable = onAudioLockedObservable, onAudioUnlockedObservable = onAudioUnlockedObservable, unlock = unlock, unlocked = unlocked, useCustomUnlockedButton = useCustomUnlockedButton)
+  
     __obj.asInstanceOf[IAudioEngine]
   }
 }

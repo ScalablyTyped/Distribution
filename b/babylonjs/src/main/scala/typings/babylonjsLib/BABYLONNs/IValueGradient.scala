@@ -16,8 +16,8 @@ trait IValueGradient extends js.Object {
 object IValueGradient {
   @scala.inline
   def apply(gradient: scala.Double): IValueGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gradient")(gradient)
+    val __obj = js.Dynamic.literal(gradient = gradient)
+  
     __obj.asInstanceOf[IValueGradient]
   }
 }

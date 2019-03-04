@@ -58,10 +58,7 @@ object VpcAttachmentArgs {
     transitGatewayDefaultRouteTableAssociation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     transitGatewayDefaultRouteTablePropagation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): VpcAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any], transitGatewayId = transitGatewayId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
     if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
     if (ipv6Support != null) __obj.updateDynamic("ipv6Support")(ipv6Support.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

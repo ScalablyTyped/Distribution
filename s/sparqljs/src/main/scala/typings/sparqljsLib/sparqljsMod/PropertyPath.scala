@@ -18,9 +18,8 @@ object PropertyPath {
     pathType: sparqljsLib.sparqljsLibStrings.`|` | sparqljsLib.sparqljsLibStrings.`/` | sparqljsLib.sparqljsLibStrings.`_backtick^_backtick` | sparqljsLib.sparqljsLibStrings.`+` | sparqljsLib.sparqljsLibStrings.`*` | sparqljsLib.sparqljsLibStrings.`!`,
     `type`: sparqljsLib.sparqljsLibStrings.path
   ): PropertyPath = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("pathType")(pathType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(items = items, pathType = pathType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PropertyPath]
   }
 }

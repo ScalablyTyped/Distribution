@@ -18,8 +18,7 @@ object SortColumn {
     field: java.lang.String,
     sortingAlgorithm: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null
   ): SortColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(field = field)
     if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(sortingAlgorithm)
     __obj.asInstanceOf[SortColumn]
   }

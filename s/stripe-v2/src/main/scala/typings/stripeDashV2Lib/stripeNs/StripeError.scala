@@ -20,9 +20,8 @@ object StripeError {
     `type`: java.lang.String,
     param: java.lang.String = null
   ): StripeError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, message = message)
+    __obj.updateDynamic("type")(`type`)
     if (param != null) __obj.updateDynamic("param")(param)
     __obj.asInstanceOf[StripeError]
   }

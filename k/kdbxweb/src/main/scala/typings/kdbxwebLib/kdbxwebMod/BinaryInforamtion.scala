@@ -13,9 +13,8 @@ trait BinaryInforamtion extends js.Object {
 object BinaryInforamtion {
   @scala.inline
   def apply(ref: java.lang.String, value: ProtectedValue | stdLib.ArrayBuffer): BinaryInforamtion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ref = ref, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BinaryInforamtion]
   }
 }

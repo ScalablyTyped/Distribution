@@ -28,7 +28,8 @@ object CustomPropertyNumber {
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyNumber = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (component != null) __obj.updateDynamic("component")(component)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)

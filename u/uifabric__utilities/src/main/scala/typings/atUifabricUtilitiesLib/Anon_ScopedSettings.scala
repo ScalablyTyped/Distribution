@@ -55,9 +55,8 @@ object Anon_ScopedSettings {
     scopedSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction,
     settings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
   ): Anon_ScopedSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopedSettings")(scopedSettings.asInstanceOf[js.Any])
-    __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scopedSettings = scopedSettings.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ScopedSettings]
   }
 }

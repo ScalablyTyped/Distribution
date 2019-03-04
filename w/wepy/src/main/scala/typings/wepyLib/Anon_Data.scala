@@ -14,10 +14,8 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: stdLib.Uint8ClampedArray, height: scala.Double, width: scala.Double): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

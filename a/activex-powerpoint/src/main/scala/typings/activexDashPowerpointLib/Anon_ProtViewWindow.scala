@@ -12,8 +12,8 @@ trait Anon_ProtViewWindow extends js.Object {
 object Anon_ProtViewWindow {
   @scala.inline
   def apply(ProtViewWindow: activexDashPowerpointLib.PowerPointNs.ProtectedViewWindow): Anon_ProtViewWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ProtViewWindow")(ProtViewWindow)
+    val __obj = js.Dynamic.literal(ProtViewWindow = ProtViewWindow)
+  
     __obj.asInstanceOf[Anon_ProtViewWindow]
   }
 }

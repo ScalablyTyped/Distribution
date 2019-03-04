@@ -35,16 +35,8 @@ object SiteTapp {
     sortId: scala.Double,
     userGroupIds: js.Array[scala.Double]
   ): SiteTapp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customUrl")(customUrl)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("internalName")(internalName)
-    __obj.updateDynamic("isExclusiveView")(isExclusiveView)
-    __obj.updateDynamic("isKioskMode")(isKioskMode)
-    __obj.updateDynamic("isSubTapp")(isSubTapp)
-    __obj.updateDynamic("showName")(showName)
-    __obj.updateDynamic("sortId")(sortId)
-    __obj.updateDynamic("userGroupIds")(userGroupIds)
+    val __obj = js.Dynamic.literal(customUrl = customUrl, id = id, internalName = internalName, isExclusiveView = isExclusiveView, isKioskMode = isKioskMode, isSubTapp = isSubTapp, showName = showName, sortId = sortId, userGroupIds = userGroupIds)
+  
     __obj.asInstanceOf[SiteTapp]
   }
 }

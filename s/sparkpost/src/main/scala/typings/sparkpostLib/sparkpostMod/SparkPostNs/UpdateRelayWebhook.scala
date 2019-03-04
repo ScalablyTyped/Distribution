@@ -24,8 +24,7 @@ object UpdateRelayWebhook {
     `match`: Match = null,
     name: java.lang.String = null
   ): UpdateRelayWebhook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token)
     if (`match` != null) __obj.updateDynamic("match")(`match`)
     if (name != null) __obj.updateDynamic("name")(name)

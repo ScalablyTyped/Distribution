@@ -16,9 +16,8 @@ object Anon_Offset {
     offset: makerDotJsLib.MakerJsNs.IPoint,
     path: makerDotJsLib.MakerJsNs.IPath | makerDotJsLib.MakerJsNs.IModel
   ): Anon_Offset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(offset = offset, path = path.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Offset]
   }
 }

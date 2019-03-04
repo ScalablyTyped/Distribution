@@ -24,9 +24,8 @@ trait ASPxClientCallbackCompleteEventArgs extends ASPxClientEventArgs {
 object ASPxClientCallbackCompleteEventArgs {
   @scala.inline
   def apply(parameter: java.lang.String, result: java.lang.String): ASPxClientCallbackCompleteEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameter")(parameter)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(parameter = parameter, result = result)
+  
     __obj.asInstanceOf[ASPxClientCallbackCompleteEventArgs]
   }
 }

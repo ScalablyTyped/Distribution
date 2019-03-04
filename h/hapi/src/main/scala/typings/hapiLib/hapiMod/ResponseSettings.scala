@@ -36,11 +36,8 @@ object ResponseSettings {
     ttl: scala.Double,
     varyEtag: scala.Boolean
   ): ResponseSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passThrough")(passThrough)
-    __obj.updateDynamic("stringify")(stringify)
-    __obj.updateDynamic("ttl")(ttl)
-    __obj.updateDynamic("varyEtag")(varyEtag)
+    val __obj = js.Dynamic.literal(passThrough = passThrough, stringify = stringify, ttl = ttl, varyEtag = varyEtag)
+  
     __obj.asInstanceOf[ResponseSettings]
   }
 }

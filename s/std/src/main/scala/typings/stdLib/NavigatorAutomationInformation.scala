@@ -12,8 +12,8 @@ trait NavigatorAutomationInformation extends js.Object {
 object NavigatorAutomationInformation {
   @scala.inline
   def apply(webdriver: scala.Boolean): NavigatorAutomationInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("webdriver")(webdriver)
+    val __obj = js.Dynamic.literal(webdriver = webdriver)
+  
     __obj.asInstanceOf[NavigatorAutomationInformation]
   }
 }

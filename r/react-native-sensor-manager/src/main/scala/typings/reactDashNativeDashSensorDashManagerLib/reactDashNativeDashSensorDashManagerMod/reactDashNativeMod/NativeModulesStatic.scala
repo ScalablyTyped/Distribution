@@ -14,8 +14,8 @@ object NativeModulesStatic {
   def apply(
     SensorManager: reactDashNativeDashSensorDashManagerLib.reactDashNativeDashSensorDashManagerMod.SensorManager
   ): NativeModulesStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SensorManager")(SensorManager)
+    val __obj = js.Dynamic.literal(SensorManager = SensorManager)
+  
     __obj.asInstanceOf[NativeModulesStatic]
   }
 }

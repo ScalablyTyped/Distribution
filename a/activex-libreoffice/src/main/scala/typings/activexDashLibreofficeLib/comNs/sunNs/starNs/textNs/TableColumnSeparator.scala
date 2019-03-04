@@ -33,9 +33,8 @@ trait TableColumnSeparator extends js.Object {
 object TableColumnSeparator {
   @scala.inline
   def apply(IsVisible: scala.Boolean, Position: scala.Double): TableColumnSeparator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("Position")(Position)
+    val __obj = js.Dynamic.literal(IsVisible = IsVisible, Position = Position)
+  
     __obj.asInstanceOf[TableColumnSeparator]
   }
 }

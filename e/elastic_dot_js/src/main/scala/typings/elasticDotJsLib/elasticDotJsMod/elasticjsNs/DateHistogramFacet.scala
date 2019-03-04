@@ -160,30 +160,8 @@ object DateHistogramFacet {
     valueField: js.Function1[java.lang.String, DateHistogramFacet],
     valueScript: js.Function1[java.lang.String, DateHistogramFacet]
   ): DateHistogramFacet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cacheFilter")(cacheFilter)
-    __obj.updateDynamic("facetFilter")(facetFilter)
-    __obj.updateDynamic("factor")(factor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("keyField")(keyField)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("postOffset")(postOffset)
-    __obj.updateDynamic("postZone")(postZone)
-    __obj.updateDynamic("preOffset")(preOffset)
-    __obj.updateDynamic("preZone")(preZone)
-    __obj.updateDynamic("preZoneAdjustLargeInterval")(preZoneAdjustLargeInterval)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("timeZone")(timeZone)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("valueField")(valueField)
-    __obj.updateDynamic("valueScript")(valueScript)
+    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, factor = factor, field = field, global = global, interval = interval, keyField = keyField, lang = lang, mode = mode, nested = nested, order = order, params = params, postOffset = postOffset, postZone = postZone, preOffset = preOffset, preZone = preZone, preZoneAdjustLargeInterval = preZoneAdjustLargeInterval, scope = scope, timeZone = timeZone, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+  
     __obj.asInstanceOf[DateHistogramFacet]
   }
 }

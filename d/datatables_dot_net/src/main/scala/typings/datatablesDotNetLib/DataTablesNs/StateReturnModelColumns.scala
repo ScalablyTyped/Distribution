@@ -13,9 +13,8 @@ trait StateReturnModelColumns extends js.Object {
 object StateReturnModelColumns {
   @scala.inline
   def apply(search: SearchSettings, visible: scala.Boolean): StateReturnModelColumns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(search = search, visible = visible)
+  
     __obj.asInstanceOf[StateReturnModelColumns]
   }
 }

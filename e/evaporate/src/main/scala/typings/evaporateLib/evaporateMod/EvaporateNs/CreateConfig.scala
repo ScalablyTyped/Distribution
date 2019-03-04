@@ -134,8 +134,7 @@ object CreateConfig {
     timeUrl: java.lang.String = null,
     xhrWithCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (abortCompletionThrottlingMs != null) __obj.updateDynamic("abortCompletionThrottlingMs")(abortCompletionThrottlingMs.asInstanceOf[js.Any])
     if (!js.isUndefined(allowS3ExistenceOptimization)) __obj.updateDynamic("allowS3ExistenceOptimization")(allowS3ExistenceOptimization)
     if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion)

@@ -45,32 +45,8 @@ object IMultipleTextData {
     setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
     setVisibleIndex: js.Function1[scala.Double, scala.Double]
   ): IMultipleTextData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addElement")(addElement)
-    __obj.updateDynamic("elementWidthChanged")(elementWidthChanged)
-    __obj.updateDynamic("getAllValues")(getAllValues)
-    __obj.updateDynamic("getChildrenLayoutType")(getChildrenLayoutType)
-    __obj.updateDynamic("getIsRequiredText")(getIsRequiredText)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
-    __obj.updateDynamic("getMultipleTextValue")(getMultipleTextValue)
-    __obj.updateDynamic("getProcessedText")(getProcessedText)
-    __obj.updateDynamic("getQuestionTitleLocation")(getQuestionTitleLocation)
-    __obj.updateDynamic("getSurvey")(getSurvey)
-    __obj.updateDynamic("getTextProcessor")(getTextProcessor)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isPage")(isPage)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("locStrsChanged")(locStrsChanged)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onFirstRendering")(onFirstRendering)
-    __obj.updateDynamic("onSurveyLoad")(onSurveyLoad)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("removeElement")(removeElement)
-    __obj.updateDynamic("setMultipleTextValue")(setMultipleTextValue)
-    __obj.updateDynamic("setSurveyImpl")(setSurveyImpl)
-    __obj.updateDynamic("setVisibleIndex")(setVisibleIndex)
+    val __obj = js.Dynamic.literal(addElement = addElement, elementWidthChanged = elementWidthChanged, getAllValues = getAllValues, getChildrenLayoutType = getChildrenLayoutType, getIsRequiredText = getIsRequiredText, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getMultipleTextValue = getMultipleTextValue, getProcessedText = getProcessedText, getQuestionTitleLocation = getQuestionTitleLocation, getSurvey = getSurvey, getTextProcessor = getTextProcessor, getType = getType, isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, parent = parent, removeElement = removeElement, setMultipleTextValue = setMultipleTextValue, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex)
+  
     __obj.asInstanceOf[IMultipleTextData]
   }
 }

@@ -29,9 +29,8 @@ object Identifier {
     `type`: astDashTypesLib.astDashTypesLibStrings.Identifier,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Identifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(name = name, optional = optional)
+    __obj.updateDynamic("type")(`type`)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Identifier]
   }

@@ -20,11 +20,8 @@ object MediaUrls {
     getShrunkenMediaUrl: js.Function0[java.lang.String],
     getVideoThumbnailMediaUrl: js.Function0[java.lang.String]
   ): MediaUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFullMediaUrl")(getFullMediaUrl)
-    __obj.updateDynamic("getPreviewMediaUrl")(getPreviewMediaUrl)
-    __obj.updateDynamic("getShrunkenMediaUrl")(getShrunkenMediaUrl)
-    __obj.updateDynamic("getVideoThumbnailMediaUrl")(getVideoThumbnailMediaUrl)
+    val __obj = js.Dynamic.literal(getFullMediaUrl = getFullMediaUrl, getPreviewMediaUrl = getPreviewMediaUrl, getShrunkenMediaUrl = getShrunkenMediaUrl, getVideoThumbnailMediaUrl = getVideoThumbnailMediaUrl)
+  
     __obj.asInstanceOf[MediaUrls]
   }
 }

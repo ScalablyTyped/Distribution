@@ -92,10 +92,7 @@ object EndpointArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EndpointArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpointId")(endpointId.asInstanceOf[js.Any])
-    __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
-    __obj.updateDynamic("engineName")(engineName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endpointId = endpointId.asInstanceOf[js.Any], endpointType = endpointType.asInstanceOf[js.Any], engineName = engineName.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     if (extraConnectionAttributes != null) __obj.updateDynamic("extraConnectionAttributes")(extraConnectionAttributes.asInstanceOf[js.Any])

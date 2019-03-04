@@ -39,9 +39,7 @@ object GraphQLUnionTypeConfig {
       GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]
     ] = null
   ): GraphQLUnionTypeConfig[TSource, TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, types = types.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

@@ -14,10 +14,8 @@ trait RuntimeError extends js.Object {
 object RuntimeError {
   @scala.inline
   def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String): RuntimeError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message, name = name, stack = stack)
+  
     __obj.asInstanceOf[RuntimeError]
   }
 }

@@ -32,11 +32,8 @@ object OptionProvider {
     setOption: js.Function2[java.lang.String, js.Any, scala.Unit],
     setOptions: js.Function1[js.Any, scala.Unit]
   ): OptionProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getOption")(getOption)
-    __obj.updateDynamic("getOptions")(getOptions)
-    __obj.updateDynamic("setOption")(setOption)
-    __obj.updateDynamic("setOptions")(setOptions)
+    val __obj = js.Dynamic.literal(getOption = getOption, getOptions = getOptions, setOption = setOption, setOptions = setOptions)
+  
     __obj.asInstanceOf[OptionProvider]
   }
 }

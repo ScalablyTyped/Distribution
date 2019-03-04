@@ -73,9 +73,7 @@ object AutocompleteProvider {
     onDidInsertSuggestion: js.Function1[/* params */ SuggestionInsertedEvent, scala.Unit] = null,
     suggestionPriority: scala.Int | scala.Double = null
   ): AutocompleteProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSuggestions")(getSuggestions)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(getSuggestions = getSuggestions, selector = selector)
     if (disableForSelector != null) __obj.updateDynamic("disableForSelector")(disableForSelector)
     if (dispose != null) __obj.updateDynamic("dispose")(dispose)
     if (!js.isUndefined(excludeLowerPriority)) __obj.updateDynamic("excludeLowerPriority")(excludeLowerPriority)

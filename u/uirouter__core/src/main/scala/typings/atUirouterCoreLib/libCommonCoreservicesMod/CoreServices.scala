@@ -15,9 +15,8 @@ trait CoreServices extends js.Object {
 object CoreServices {
   @scala.inline
   def apply($injector: $InjectorLike, $q: $QLike): CoreServices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$injector")($injector)
-    __obj.updateDynamic("$q")($q)
+    val __obj = js.Dynamic.literal($injector = $injector, $q = $q)
+  
     __obj.asInstanceOf[CoreServices]
   }
 }

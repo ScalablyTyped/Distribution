@@ -18,10 +18,8 @@ object MentionOrListWithIndices {
     listSlug: java.lang.String,
     screenName: java.lang.String
   ): MentionOrListWithIndices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("listSlug")(listSlug)
-    __obj.updateDynamic("screenName")(screenName)
+    val __obj = js.Dynamic.literal(indices = indices, listSlug = listSlug, screenName = screenName)
+  
     __obj.asInstanceOf[MentionOrListWithIndices]
   }
 }

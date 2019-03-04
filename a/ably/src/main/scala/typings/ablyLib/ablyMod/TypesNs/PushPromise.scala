@@ -12,8 +12,8 @@ trait PushPromise extends js.Object {
 object PushPromise {
   @scala.inline
   def apply(admin: PushAdminPromise): PushPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("admin")(admin)
+    val __obj = js.Dynamic.literal(admin = admin)
+  
     __obj.asInstanceOf[PushPromise]
   }
 }

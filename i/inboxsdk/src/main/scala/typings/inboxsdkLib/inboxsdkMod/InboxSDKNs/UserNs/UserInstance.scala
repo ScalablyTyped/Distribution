@@ -22,12 +22,8 @@ object UserInstance {
     isConversationViewDisabled: js.Function0[scala.Boolean],
     isUsingGmailMaterialUI: js.Function0[scala.Boolean]
   ): UserInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAccountSwitcherContactList")(getAccountSwitcherContactList)
-    __obj.updateDynamic("getEmailAddress")(getEmailAddress)
-    __obj.updateDynamic("getLanguage")(getLanguage)
-    __obj.updateDynamic("isConversationViewDisabled")(isConversationViewDisabled)
-    __obj.updateDynamic("isUsingGmailMaterialUI")(isUsingGmailMaterialUI)
+    val __obj = js.Dynamic.literal(getAccountSwitcherContactList = getAccountSwitcherContactList, getEmailAddress = getEmailAddress, getLanguage = getLanguage, isConversationViewDisabled = isConversationViewDisabled, isUsingGmailMaterialUI = isUsingGmailMaterialUI)
+  
     __obj.asInstanceOf[UserInstance]
   }
 }

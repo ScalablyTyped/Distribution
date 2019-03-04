@@ -28,15 +28,8 @@ object Viewporter {
     ready: js.Function1[stdLib.EventListener, scala.Unit],
     refresh: js.Function0[scala.Unit]
   ): Viewporter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACTIVE")(ACTIVE)
-    __obj.updateDynamic("READY")(READY)
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("forceDetection")(forceDetection)
-    __obj.updateDynamic("isLandscape")(isLandscape)
-    __obj.updateDynamic("preventPageScroll")(preventPageScroll)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("refresh")(refresh)
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, READY = READY, change = change, forceDetection = forceDetection, isLandscape = isLandscape, preventPageScroll = preventPageScroll, ready = ready, refresh = refresh)
+  
     __obj.asInstanceOf[Viewporter]
   }
 }

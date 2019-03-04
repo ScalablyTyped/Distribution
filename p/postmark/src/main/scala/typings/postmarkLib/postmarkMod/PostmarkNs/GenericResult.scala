@@ -14,8 +14,7 @@ trait GenericResult extends js.Object {
 object GenericResult {
   @scala.inline
   def apply(Message: java.lang.String, ErrorCode: scala.Int | scala.Double = null): GenericResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Message = Message)
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericResult]
   }

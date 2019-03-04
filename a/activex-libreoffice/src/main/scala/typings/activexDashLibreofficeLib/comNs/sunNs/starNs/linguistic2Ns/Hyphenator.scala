@@ -52,23 +52,8 @@ object Hyphenator {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     removeLinguServiceEventListener: js.Function1[XLinguServiceEventListener, scala.Boolean]
   ): Hyphenator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addLinguServiceEventListener")(addLinguServiceEventListener)
-    __obj.updateDynamic("createPossibleHyphens")(createPossibleHyphens)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("getServiceDisplayName")(getServiceDisplayName)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("hyphenate")(hyphenate)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryAlternativeSpelling")(queryAlternativeSpelling)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeLinguServiceEventListener")(removeLinguServiceEventListener)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, addEventListener = addEventListener, addLinguServiceEventListener = addLinguServiceEventListener, createPossibleHyphens = createPossibleHyphens, dispose = dispose, getLocales = getLocales, getServiceDisplayName = getServiceDisplayName, hasLocale = hasLocale, hyphenate = hyphenate, initialize = initialize, queryAlternativeSpelling = queryAlternativeSpelling, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeLinguServiceEventListener = removeLinguServiceEventListener)
+  
     __obj.asInstanceOf[Hyphenator]
   }
 }

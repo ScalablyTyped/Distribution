@@ -13,7 +13,7 @@ class Database protected ()
     * The constructor should not be called by users of our public API.
     * @param {!Repo} repo_
     */
-  def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
+  def this(repo_ : atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
   @JSName("INTERNAL")
   var INTERNAL_Database: DatabaseInternals = js.native
   /* CompleteClass */
@@ -21,9 +21,9 @@ class Database protected ()
   /**
     * @param {string} apiName
     */
-  var `checkDeleted_`: js.Any = js.native
-  var `repo_`: js.Any = js.native
-  var `root_`: js.Any = js.native
+  var checkDeleted_ : js.Any = js.native
+  var repo_ : js.Any = js.native
+  var root_ : js.Any = js.native
   def goOffline(): scala.Unit = js.native
   def goOnline(): scala.Unit = js.native
   /**

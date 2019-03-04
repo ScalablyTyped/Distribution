@@ -23,17 +23,8 @@ object Request {
     response: Response,
     url: java.lang.String | jpmLib.FFAddonSDKNs.SDKURL
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, contentType = contentType, delete = delete, get = get, head = head, headers = headers, post = post, put = put, response = response, url = url.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Request]
   }
 }

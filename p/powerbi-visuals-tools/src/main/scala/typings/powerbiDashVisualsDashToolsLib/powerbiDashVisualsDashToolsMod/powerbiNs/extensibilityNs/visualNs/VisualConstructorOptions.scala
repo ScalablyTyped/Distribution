@@ -14,9 +14,7 @@ trait VisualConstructorOptions
 object VisualConstructorOptions {
   @scala.inline
   def apply(element: stdLib.HTMLElement, host: IVisualHost, module: js.Any = null): VisualConstructorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(element = element, host = host)
     if (module != null) __obj.updateDynamic("module")(module)
     __obj.asInstanceOf[VisualConstructorOptions]
   }

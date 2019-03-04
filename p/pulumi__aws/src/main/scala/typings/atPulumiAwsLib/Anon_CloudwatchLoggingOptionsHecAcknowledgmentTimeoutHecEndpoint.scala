@@ -28,9 +28,7 @@ object Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint {
     retryDuration: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     s3BackupMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hecEndpoint")(hecEndpoint.asInstanceOf[js.Any])
-    __obj.updateDynamic("hecToken")(hecToken.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hecEndpoint = hecEndpoint.asInstanceOf[js.Any], hecToken = hecToken.asInstanceOf[js.Any])
     if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])
     if (hecAcknowledgmentTimeout != null) __obj.updateDynamic("hecAcknowledgmentTimeout")(hecAcknowledgmentTimeout.asInstanceOf[js.Any])
     if (hecEndpointType != null) __obj.updateDynamic("hecEndpointType")(hecEndpointType.asInstanceOf[js.Any])

@@ -75,9 +75,7 @@ object EventTargetArgs {
     sqsTarget: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MessageGroupIdInput] = null,
     targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EventTargetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
     if (batchTarget != null) __obj.updateDynamic("batchTarget")(batchTarget.asInstanceOf[js.Any])
     if (ecsTarget != null) __obj.updateDynamic("ecsTarget")(ecsTarget.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])

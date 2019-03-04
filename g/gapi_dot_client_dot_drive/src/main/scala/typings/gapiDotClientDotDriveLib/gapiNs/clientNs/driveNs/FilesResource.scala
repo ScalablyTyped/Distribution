@@ -75,17 +75,8 @@ object FilesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Channel]
     ]
   ): FilesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("emptyTrash")(emptyTrash)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("generateIds")(generateIds)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(copy = copy, create = create, delete = delete, emptyTrash = emptyTrash, export = export, generateIds = generateIds, get = get, list = list, update = update, watch = watch)
+  
     __obj.asInstanceOf[FilesResource]
   }
 }

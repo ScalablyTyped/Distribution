@@ -39,12 +39,8 @@ object KeyValueChanges {
     forEachPreviousItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit],
     forEachRemovedItem: js.Function1[js.Function1[/* r */ KeyValueChangeRecord[K, V], scala.Unit], scala.Unit]
   ): KeyValueChanges[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEachAddedItem")(forEachAddedItem)
-    __obj.updateDynamic("forEachChangedItem")(forEachChangedItem)
-    __obj.updateDynamic("forEachItem")(forEachItem)
-    __obj.updateDynamic("forEachPreviousItem")(forEachPreviousItem)
-    __obj.updateDynamic("forEachRemovedItem")(forEachRemovedItem)
+    val __obj = js.Dynamic.literal(forEachAddedItem = forEachAddedItem, forEachChangedItem = forEachChangedItem, forEachItem = forEachItem, forEachPreviousItem = forEachPreviousItem, forEachRemovedItem = forEachRemovedItem)
+  
     __obj.asInstanceOf[KeyValueChanges[K, V]]
   }
 }

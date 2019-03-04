@@ -18,10 +18,8 @@ object Anon_Default {
     denied: angularDashDesktopDashNotificationLib.angularDashDesktopDashNotificationLibStrings.denied,
     granted: angularDashDesktopDashNotificationLib.angularDashDesktopDashNotificationLibStrings.granted
   ): Anon_Default = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("denied")(denied)
-    __obj.updateDynamic("granted")(granted)
+    val __obj = js.Dynamic.literal(default = default, denied = denied, granted = granted)
+  
     __obj.asInstanceOf[Anon_Default]
   }
 }

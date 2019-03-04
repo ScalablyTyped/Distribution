@@ -36,12 +36,8 @@ object DistanceMatrixResponse {
     rows: js.Array[DistanceMatrixRow],
     status: DistanceMatrixResponseTopLevelStatus
   ): DistanceMatrixResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination_addresses")(destination_addresses)
-    __obj.updateDynamic("error_message")(error_message)
-    __obj.updateDynamic("origin_addresses")(origin_addresses)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(destination_addresses = destination_addresses, error_message = error_message, origin_addresses = origin_addresses, rows = rows, status = status)
+  
     __obj.asInstanceOf[DistanceMatrixResponse]
   }
 }

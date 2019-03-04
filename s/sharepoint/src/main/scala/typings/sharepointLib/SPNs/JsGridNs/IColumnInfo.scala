@@ -51,12 +51,7 @@ object IColumnInfo {
     isSortable: js.UndefOr[scala.Boolean] = js.undefined,
     isVisible: js.UndefOr[scala.Boolean] = js.undefined
   ): IColumnInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnKey")(columnKey)
-    __obj.updateDynamic("fieldKey")(fieldKey)
-    __obj.updateDynamic("fieldKeys")(fieldKeys)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(columnKey = columnKey, fieldKey = fieldKey, fieldKeys = fieldKeys, name = name, width = width)
     if (imgSrc != null) __obj.updateDynamic("imgSrc")(imgSrc)
     if (!js.isUndefined(isAutoFilterable)) __obj.updateDynamic("isAutoFilterable")(isAutoFilterable)
     if (!js.isUndefined(isFooter)) __obj.updateDynamic("isFooter")(isFooter)

@@ -13,8 +13,7 @@ trait DatastoreKeyOptions extends js.Object {
 object DatastoreKeyOptions {
   @scala.inline
   def apply(path: DatastoreKeyPath, namespace: java.lang.String = null): DatastoreKeyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     __obj.asInstanceOf[DatastoreKeyOptions]
   }

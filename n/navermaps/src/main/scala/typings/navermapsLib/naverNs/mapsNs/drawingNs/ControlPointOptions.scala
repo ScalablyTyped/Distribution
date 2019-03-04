@@ -16,9 +16,8 @@ object ControlPointOptions {
     anchorPointOptions: navermapsLib.naverNs.mapsNs.CircleOptions,
     midPointOptions: navermapsLib.naverNs.mapsNs.CircleOptions
   ): ControlPointOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchorPointOptions")(anchorPointOptions)
-    __obj.updateDynamic("midPointOptions")(midPointOptions)
+    val __obj = js.Dynamic.literal(anchorPointOptions = anchorPointOptions, midPointOptions = midPointOptions)
+  
     __obj.asInstanceOf[ControlPointOptions]
   }
 }

@@ -24,13 +24,8 @@ object Anon_AspectRatioFar {
     xOffset: scala.Double,
     yOffset: scala.Double
   ): Anon_AspectRatioFar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspectRatio")(aspectRatio)
-    __obj.updateDynamic("far")(far)
-    __obj.updateDynamic("fov")(fov)
-    __obj.updateDynamic("near")(near)
-    __obj.updateDynamic("xOffset")(xOffset)
-    __obj.updateDynamic("yOffset")(yOffset)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, far = far, fov = fov, near = near, xOffset = xOffset, yOffset = yOffset)
+  
     __obj.asInstanceOf[Anon_AspectRatioFar]
   }
 }

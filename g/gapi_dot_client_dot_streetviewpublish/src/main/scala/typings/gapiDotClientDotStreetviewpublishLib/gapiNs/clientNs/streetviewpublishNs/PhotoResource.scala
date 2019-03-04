@@ -121,12 +121,8 @@ object PhotoResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Photo]
     ]
   ): PhotoResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("startUpload")(startUpload)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, startUpload = startUpload, update = update)
+  
     __obj.asInstanceOf[PhotoResource]
   }
 }

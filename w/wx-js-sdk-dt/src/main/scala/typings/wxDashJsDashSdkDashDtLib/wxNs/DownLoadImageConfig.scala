@@ -28,8 +28,7 @@ object DownLoadImageConfig {
     isShowProgressTips: scala.Int | scala.Double = null,
     success: js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_LocalId, scala.Unit] = null
   ): DownLoadImageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serverId")(serverId)
+    val __obj = js.Dynamic.literal(serverId = serverId)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

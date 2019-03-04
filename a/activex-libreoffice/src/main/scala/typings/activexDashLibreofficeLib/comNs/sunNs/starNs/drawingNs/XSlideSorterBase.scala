@@ -96,29 +96,8 @@ object XSlideSorterBase {
     release: js.Function0[scala.Unit],
     setCurrentPage: js.Function1[XDrawPage, scala.Unit]
   ): XSlideSorterBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackgroundColor")(BackgroundColor)
-    __obj.updateDynamic("CurrentPage")(CurrentPage)
-    __obj.updateDynamic("DocumentSlides")(DocumentSlides)
-    __obj.updateDynamic("HighlightColor")(HighlightColor)
-    __obj.updateDynamic("IsCenterSelection")(IsCenterSelection)
-    __obj.updateDynamic("IsHighlightCurrentSlide")(IsHighlightCurrentSlide)
-    __obj.updateDynamic("IsOrientationVertical")(IsOrientationVertical)
-    __obj.updateDynamic("IsShowFocus")(IsShowFocus)
-    __obj.updateDynamic("IsShowSelection")(IsShowSelection)
-    __obj.updateDynamic("IsSmoothScrolling")(IsSmoothScrolling)
-    __obj.updateDynamic("IsSuspendPreviewUpdatesDuringFullScreenPresentation")(IsSuspendPreviewUpdatesDuringFullScreenPresentation)
-    __obj.updateDynamic("IsUIReadOnly")(IsUIReadOnly)
-    __obj.updateDynamic("ResourceId")(ResourceId)
-    __obj.updateDynamic("SelectionColor")(SelectionColor)
-    __obj.updateDynamic("TextColor")(TextColor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
-    __obj.updateDynamic("getResourceId")(getResourceId)
-    __obj.updateDynamic("isAnchorOnly")(isAnchorOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentPage")(setCurrentPage)
+    val __obj = js.Dynamic.literal(BackgroundColor = BackgroundColor, CurrentPage = CurrentPage, DocumentSlides = DocumentSlides, HighlightColor = HighlightColor, IsCenterSelection = IsCenterSelection, IsHighlightCurrentSlide = IsHighlightCurrentSlide, IsOrientationVertical = IsOrientationVertical, IsShowFocus = IsShowFocus, IsShowSelection = IsShowSelection, IsSmoothScrolling = IsSmoothScrolling, IsSuspendPreviewUpdatesDuringFullScreenPresentation = IsSuspendPreviewUpdatesDuringFullScreenPresentation, IsUIReadOnly = IsUIReadOnly, ResourceId = ResourceId, SelectionColor = SelectionColor, TextColor = TextColor, acquire = acquire, getCurrentPage = getCurrentPage, getResourceId = getResourceId, isAnchorOnly = isAnchorOnly, queryInterface = queryInterface, release = release, setCurrentPage = setCurrentPage)
+  
     __obj.asInstanceOf[XSlideSorterBase]
   }
 }

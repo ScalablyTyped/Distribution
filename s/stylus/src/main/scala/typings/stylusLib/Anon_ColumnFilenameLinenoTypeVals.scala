@@ -22,12 +22,8 @@ object Anon_ColumnFilenameLinenoTypeVals {
     lineno: scala.Double,
     vals: stylusLib.stylusMod.StylusNs.Dictionary[stylusLib.stylusMod.StylusNs.NodesNs.Node]
   ): Anon_ColumnFilenameLinenoTypeVals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("vals")(vals)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, vals = vals)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoTypeVals]
   }
 }

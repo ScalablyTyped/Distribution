@@ -21,8 +21,7 @@ object DirectoryConfig {
     mtime: stdLib.Date = null,
     uid: scala.Int | scala.Double = null
   ): DirectoryConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
     if (atime != null) __obj.updateDynamic("atime")(atime)
     if (birthtime != null) __obj.updateDynamic("birthtime")(birthtime)
     if (ctime != null) __obj.updateDynamic("ctime")(ctime)

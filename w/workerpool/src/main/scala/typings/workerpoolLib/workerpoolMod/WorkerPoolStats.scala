@@ -22,12 +22,8 @@ object WorkerPoolStats {
     pendingTasks: scala.Double,
     totalWorkers: scala.Double
   ): WorkerPoolStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTasks")(activeTasks)
-    __obj.updateDynamic("busyWorkers")(busyWorkers)
-    __obj.updateDynamic("idleWorkers")(idleWorkers)
-    __obj.updateDynamic("pendingTasks")(pendingTasks)
-    __obj.updateDynamic("totalWorkers")(totalWorkers)
+    val __obj = js.Dynamic.literal(activeTasks = activeTasks, busyWorkers = busyWorkers, idleWorkers = idleWorkers, pendingTasks = pendingTasks, totalWorkers = totalWorkers)
+  
     __obj.asInstanceOf[WorkerPoolStats]
   }
 }

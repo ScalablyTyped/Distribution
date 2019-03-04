@@ -15,10 +15,8 @@ trait Anon_CanRecordDurationMillis
 object Anon_CanRecordDurationMillis {
   @scala.inline
   def apply(canRecord: expoLib.expoLibNumbers.`true`, durationMillis: scala.Double, isRecording: scala.Boolean): Anon_CanRecordDurationMillis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canRecord")(canRecord)
-    __obj.updateDynamic("durationMillis")(durationMillis)
-    __obj.updateDynamic("isRecording")(isRecording)
+    val __obj = js.Dynamic.literal(canRecord = canRecord, durationMillis = durationMillis, isRecording = isRecording)
+  
     __obj.asInstanceOf[Anon_CanRecordDurationMillis]
   }
 }

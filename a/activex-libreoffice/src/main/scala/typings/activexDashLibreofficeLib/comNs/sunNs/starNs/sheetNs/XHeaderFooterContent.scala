@@ -57,16 +57,8 @@ object XHeaderFooterContent {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHeaderFooterContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CenterText")(CenterText)
-    __obj.updateDynamic("LeftText")(LeftText)
-    __obj.updateDynamic("RightText")(RightText)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCenterText")(getCenterText)
-    __obj.updateDynamic("getLeftText")(getLeftText)
-    __obj.updateDynamic("getRightText")(getRightText)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(CenterText = CenterText, LeftText = LeftText, RightText = RightText, acquire = acquire, getCenterText = getCenterText, getLeftText = getLeftText, getRightText = getRightText, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHeaderFooterContent]
   }
 }

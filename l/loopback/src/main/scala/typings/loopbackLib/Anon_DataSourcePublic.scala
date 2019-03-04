@@ -18,8 +18,7 @@ object Anon_DataSourcePublic {
     public: js.UndefOr[scala.Boolean] = js.undefined,
     relations: js.Any = null
   ): Anon_DataSourcePublic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
     if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
     if (relations != null) __obj.updateDynamic("relations")(relations)
     __obj.asInstanceOf[Anon_DataSourcePublic]

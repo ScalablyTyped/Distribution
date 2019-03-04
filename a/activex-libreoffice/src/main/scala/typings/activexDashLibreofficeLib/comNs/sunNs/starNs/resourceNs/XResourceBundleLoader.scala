@@ -35,12 +35,8 @@ object XResourceBundleLoader {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XResourceBundleLoader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("loadBundle")(loadBundle)
-    __obj.updateDynamic("loadBundle_Default")(loadBundle_Default)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, loadBundle = loadBundle, loadBundle_Default = loadBundle_Default, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XResourceBundleLoader]
   }
 }

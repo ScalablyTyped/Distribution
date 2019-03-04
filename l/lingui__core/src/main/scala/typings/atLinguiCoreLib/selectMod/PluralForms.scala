@@ -26,8 +26,7 @@ object PluralForms {
     two: java.lang.String = null,
     zero: java.lang.String = null
   ): PluralForms = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("other")(other)
+    val __obj = js.Dynamic.literal(other = other)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     if (few != null) __obj.updateDynamic("few")(few)
     if (many != null) __obj.updateDynamic("many")(many)

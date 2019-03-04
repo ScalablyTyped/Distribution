@@ -16,9 +16,8 @@ object IVaultExtensionMethodOperations {
     DoesActiveVaultExtensionMethodExist: js.Function1[java.lang.String, scala.Boolean],
     ExecuteVaultExtensionMethod: js.Function2[java.lang.String, java.lang.String, java.lang.String]
   ): IVaultExtensionMethodOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DoesActiveVaultExtensionMethodExist")(DoesActiveVaultExtensionMethodExist)
-    __obj.updateDynamic("ExecuteVaultExtensionMethod")(ExecuteVaultExtensionMethod)
+    val __obj = js.Dynamic.literal(DoesActiveVaultExtensionMethodExist = DoesActiveVaultExtensionMethodExist, ExecuteVaultExtensionMethod = ExecuteVaultExtensionMethod)
+  
     __obj.asInstanceOf[IVaultExtensionMethodOperations]
   }
 }

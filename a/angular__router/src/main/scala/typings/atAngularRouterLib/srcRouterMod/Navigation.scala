@@ -55,12 +55,7 @@ object Navigation {
     finalUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = null,
     previousNavigation: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @angular/router.@angular/router/src/router.Navigation */ js.Object = null
   ): Navigation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extractedUrl")(extractedUrl)
-    __obj.updateDynamic("extras")(extras)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("initialUrl")(initialUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extractedUrl = extractedUrl, extras = extras, id = id, initialUrl = initialUrl.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
     if (finalUrl != null) __obj.updateDynamic("finalUrl")(finalUrl)
     if (previousNavigation != null) __obj.updateDynamic("previousNavigation")(previousNavigation)
     __obj.asInstanceOf[Navigation]

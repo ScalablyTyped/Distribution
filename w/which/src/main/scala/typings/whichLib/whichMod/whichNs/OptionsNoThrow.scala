@@ -19,8 +19,7 @@ object OptionsNoThrow {
     path: java.lang.String = null,
     pathExt: java.lang.String = null
   ): OptionsNoThrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nothrow")(nothrow)
+    val __obj = js.Dynamic.literal(nothrow = nothrow)
     if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
     if (path != null) __obj.updateDynamic("path")(path)
     if (pathExt != null) __obj.updateDynamic("pathExt")(pathExt)

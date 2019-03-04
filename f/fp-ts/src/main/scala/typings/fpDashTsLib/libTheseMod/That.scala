@@ -16,7 +16,7 @@ class That[L, A] protected () extends These[L, A] {
   val value: A = js.native
   def bimap[M, B](f: js.Function1[/* l */ L, M], g: js.Function1[/* a */ A, B]): These[M, B] = js.native
   def fold[B](
-    `this_`: js.Function1[/* l */ L, B],
+    this_ : js.Function1[/* l */ L, B],
     that: js.Function1[/* a */ A, B],
     both: js.Function2[/* l */ L, /* a */ A, B]
   ): B = js.native

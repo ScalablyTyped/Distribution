@@ -66,34 +66,8 @@ object Theme {
     sidebarColorTextActive: java.lang.String,
     textColor: java.lang.String
   ): Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("baseFontSize")(baseFontSize)
-    __obj.updateDynamic("bgDark")(bgDark)
-    __obj.updateDynamic("bgLight")(bgLight)
-    __obj.updateDynamic("brandColor")(brandColor)
-    __obj.updateDynamic("checkerboardPatternDark")(checkerboardPatternDark)
-    __obj.updateDynamic("checkerboardPatternLight")(checkerboardPatternLight)
-    __obj.updateDynamic("codeColor")(codeColor)
-    __obj.updateDynamic("codeStyles")(codeStyles)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontHeading")(fontHeading)
-    __obj.updateDynamic("fontMono")(fontMono)
-    __obj.updateDynamic("lightColor")(lightColor)
-    __obj.updateDynamic("linkColor")(linkColor)
-    __obj.updateDynamic("msRatio")(msRatio)
-    __obj.updateDynamic("navBarBackground")(navBarBackground)
-    __obj.updateDynamic("navBarTextColor")(navBarTextColor)
-    __obj.updateDynamic("pageHeadingBackground")(pageHeadingBackground)
-    __obj.updateDynamic("pageHeadingHeight")(pageHeadingHeight)
-    __obj.updateDynamic("pageHeadingTextColor")(pageHeadingTextColor)
-    __obj.updateDynamic("sidebarColor")(sidebarColor)
-    __obj.updateDynamic("sidebarColorActive")(sidebarColorActive)
-    __obj.updateDynamic("sidebarColorHeading")(sidebarColorHeading)
-    __obj.updateDynamic("sidebarColorLine")(sidebarColorLine)
-    __obj.updateDynamic("sidebarColorText")(sidebarColorText)
-    __obj.updateDynamic("sidebarColorTextActive")(sidebarColorTextActive)
-    __obj.updateDynamic("textColor")(textColor)
+    val __obj = js.Dynamic.literal(background = background, baseFontSize = baseFontSize, bgDark = bgDark, bgLight = bgLight, brandColor = brandColor, checkerboardPatternDark = checkerboardPatternDark, checkerboardPatternLight = checkerboardPatternLight, codeColor = codeColor, codeStyles = codeStyles, fontFamily = fontFamily, fontHeading = fontHeading, fontMono = fontMono, lightColor = lightColor, linkColor = linkColor, msRatio = msRatio, navBarBackground = navBarBackground, navBarTextColor = navBarTextColor, pageHeadingBackground = pageHeadingBackground, pageHeadingHeight = pageHeadingHeight, pageHeadingTextColor = pageHeadingTextColor, sidebarColor = sidebarColor, sidebarColorActive = sidebarColorActive, sidebarColorHeading = sidebarColorHeading, sidebarColorLine = sidebarColorLine, sidebarColorText = sidebarColorText, sidebarColorTextActive = sidebarColorTextActive, textColor = textColor)
+  
     __obj.asInstanceOf[Theme]
   }
 }

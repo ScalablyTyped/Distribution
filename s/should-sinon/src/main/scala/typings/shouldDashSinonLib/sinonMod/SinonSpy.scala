@@ -12,8 +12,8 @@ trait SinonSpy extends js.Object {
 object SinonSpy {
   @scala.inline
   def apply(should: ShouldSinonAssertion): SinonSpy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("should")(should)
+    val __obj = js.Dynamic.literal(should = should)
+  
     __obj.asInstanceOf[SinonSpy]
   }
 }

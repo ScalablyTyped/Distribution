@@ -22,12 +22,8 @@ object ProcessingInstruction {
     getTarget: js.Function0[java.lang.String],
     getValue: js.Function0[java.lang.String]
   ): ProcessingInstruction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getParentElement")(getParentElement)
-    __obj.updateDynamic("getTarget")(getTarget)
-    __obj.updateDynamic("getValue")(getValue)
+    val __obj = js.Dynamic.literal(detach = detach, getData = getData, getParentElement = getParentElement, getTarget = getTarget, getValue = getValue)
+  
     __obj.asInstanceOf[ProcessingInstruction]
   }
 }

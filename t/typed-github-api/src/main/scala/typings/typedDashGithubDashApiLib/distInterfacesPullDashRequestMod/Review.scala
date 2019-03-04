@@ -24,13 +24,8 @@ object Review {
     id: scala.Double,
     state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.APPROVED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.CHANGES_REQUESTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.COMMENTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.DISMISSED
   ): Review = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("commitSha")(commitSha)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("htmlUri")(htmlUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, commitSha = commitSha, createdBy = createdBy, htmlUri = htmlUri, id = id, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Review]
   }
 }

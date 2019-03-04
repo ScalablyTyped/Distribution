@@ -16,8 +16,7 @@ object Anon_ContainerInstructionsInitiallyVisible {
     container: stdLib.Element | java.lang.String,
     instructionsInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ContainerInstructionsInitiallyVisible = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (!js.isUndefined(instructionsInitiallyVisible)) __obj.updateDynamic("instructionsInitiallyVisible")(instructionsInitiallyVisible)
     __obj.asInstanceOf[Anon_ContainerInstructionsInitiallyVisible]
   }

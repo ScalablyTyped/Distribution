@@ -37,14 +37,8 @@ object ActivityLifecycleCallbacks {
     onActivityStarted: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit],
     onActivityStopped: js.Function1[androiduixLib.androidNs.appNs.Activity, scala.Unit]
   ): ActivityLifecycleCallbacks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onActivityCreated")(onActivityCreated)
-    __obj.updateDynamic("onActivityDestroyed")(onActivityDestroyed)
-    __obj.updateDynamic("onActivityPaused")(onActivityPaused)
-    __obj.updateDynamic("onActivityResumed")(onActivityResumed)
-    __obj.updateDynamic("onActivitySaveInstanceState")(onActivitySaveInstanceState)
-    __obj.updateDynamic("onActivityStarted")(onActivityStarted)
-    __obj.updateDynamic("onActivityStopped")(onActivityStopped)
+    val __obj = js.Dynamic.literal(onActivityCreated = onActivityCreated, onActivityDestroyed = onActivityDestroyed, onActivityPaused = onActivityPaused, onActivityResumed = onActivityResumed, onActivitySaveInstanceState = onActivitySaveInstanceState, onActivityStarted = onActivityStarted, onActivityStopped = onActivityStopped)
+  
     __obj.asInstanceOf[ActivityLifecycleCallbacks]
   }
 }

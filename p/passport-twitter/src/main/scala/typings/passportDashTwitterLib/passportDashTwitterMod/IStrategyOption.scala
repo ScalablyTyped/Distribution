@@ -24,10 +24,7 @@ object IStrategyOption {
     userAuthorizationURL: java.lang.String = null,
     userProfileURL: java.lang.String = null
   ): IStrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("consumerKey")(consumerKey)
-    __obj.updateDynamic("consumerSecret")(consumerSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, consumerKey = consumerKey, consumerSecret = consumerSecret)
     if (accessTokenURL != null) __obj.updateDynamic("accessTokenURL")(accessTokenURL)
     if (includeEmail != null) __obj.updateDynamic("includeEmail")(includeEmail)
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)

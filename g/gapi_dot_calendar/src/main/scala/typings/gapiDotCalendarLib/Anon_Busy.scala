@@ -13,8 +13,7 @@ trait Anon_Busy extends js.Object {
 object Anon_Busy {
   @scala.inline
   def apply(busy: js.Array[Anon_End], errors: js.Array[Anon_Domain] = null): Anon_Busy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("busy")(busy)
+    val __obj = js.Dynamic.literal(busy = busy)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     __obj.asInstanceOf[Anon_Busy]
   }

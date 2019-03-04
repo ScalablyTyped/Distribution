@@ -28,15 +28,8 @@ object SerialPinTypes {
     RES_TX2: SERIAL_PIN_TYPE,
     RES_TX3: SERIAL_PIN_TYPE
   ): SerialPinTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RES_RX0")(RES_RX0)
-    __obj.updateDynamic("RES_RX1")(RES_RX1)
-    __obj.updateDynamic("RES_RX2")(RES_RX2)
-    __obj.updateDynamic("RES_RX3")(RES_RX3)
-    __obj.updateDynamic("RES_TX0")(RES_TX0)
-    __obj.updateDynamic("RES_TX1")(RES_TX1)
-    __obj.updateDynamic("RES_TX2")(RES_TX2)
-    __obj.updateDynamic("RES_TX3")(RES_TX3)
+    val __obj = js.Dynamic.literal(RES_RX0 = RES_RX0, RES_RX1 = RES_RX1, RES_RX2 = RES_RX2, RES_RX3 = RES_RX3, RES_TX0 = RES_TX0, RES_TX1 = RES_TX1, RES_TX2 = RES_TX2, RES_TX3 = RES_TX3)
+  
     __obj.asInstanceOf[SerialPinTypes]
   }
 }

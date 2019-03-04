@@ -30,16 +30,8 @@ object VueSelectComputed {
     showClearButton: js.Function0[scala.Boolean],
     valueAsArray: js.Function0[js.Array[_]]
   ): VueSelectComputed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearSearchOnBlur")(clearSearchOnBlur)
-    __obj.updateDynamic("dropdownClasses")(dropdownClasses)
-    __obj.updateDynamic("dropdownOpen")(dropdownOpen)
-    __obj.updateDynamic("filteredOptions")(filteredOptions)
-    __obj.updateDynamic("isValueEmpty")(isValueEmpty)
-    __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
-    __obj.updateDynamic("searching")(searching)
-    __obj.updateDynamic("showClearButton")(showClearButton)
-    __obj.updateDynamic("valueAsArray")(valueAsArray)
+    val __obj = js.Dynamic.literal(clearSearchOnBlur = clearSearchOnBlur, dropdownClasses = dropdownClasses, dropdownOpen = dropdownOpen, filteredOptions = filteredOptions, isValueEmpty = isValueEmpty, searchPlaceholder = searchPlaceholder, searching = searching, showClearButton = showClearButton, valueAsArray = valueAsArray)
+  
     __obj.asInstanceOf[VueSelectComputed]
   }
 }

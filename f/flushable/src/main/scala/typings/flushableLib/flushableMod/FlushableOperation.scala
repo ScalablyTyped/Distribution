@@ -21,10 +21,8 @@ object FlushableOperation {
     flush: js.Function0[scala.Unit],
     pending: js.Function0[scala.Boolean]
   ): FlushableOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(cancel = cancel, flush = flush, pending = pending)
+  
     __obj.asInstanceOf[FlushableOperation]
   }
 }

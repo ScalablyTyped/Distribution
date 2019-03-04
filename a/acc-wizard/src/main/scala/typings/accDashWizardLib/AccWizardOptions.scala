@@ -110,24 +110,8 @@ object AccWizardOptions {
     stepClass: java.lang.String,
     todoClass: java.lang.String
   ): AccWizardOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeClass")(activeClass)
-    __obj.updateDynamic("addButtons")(addButtons)
-    __obj.updateDynamic("autoScrolling")(autoScrolling)
-    __obj.updateDynamic("backClasses")(backClasses)
-    __obj.updateDynamic("backText")(backText)
-    __obj.updateDynamic("backType")(backType)
-    __obj.updateDynamic("completedClass")(completedClass)
-    __obj.updateDynamic("nextClasses")(nextClasses)
-    __obj.updateDynamic("nextText")(nextText)
-    __obj.updateDynamic("nextType")(nextType)
-    __obj.updateDynamic("onBack")(onBack)
-    __obj.updateDynamic("onDestroy")(onDestroy)
-    __obj.updateDynamic("onInit")(onInit)
-    __obj.updateDynamic("onNext")(onNext)
-    __obj.updateDynamic("sidebar")(sidebar)
-    __obj.updateDynamic("stepClass")(stepClass)
-    __obj.updateDynamic("todoClass")(todoClass)
+    val __obj = js.Dynamic.literal(activeClass = activeClass, addButtons = addButtons, autoScrolling = autoScrolling, backClasses = backClasses, backText = backText, backType = backType, completedClass = completedClass, nextClasses = nextClasses, nextText = nextText, nextType = nextType, onBack = onBack, onDestroy = onDestroy, onInit = onInit, onNext = onNext, sidebar = sidebar, stepClass = stepClass, todoClass = todoClass)
+  
     __obj.asInstanceOf[AccWizardOptions]
   }
 }

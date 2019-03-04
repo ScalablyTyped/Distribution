@@ -69,10 +69,7 @@ object PopupViewModelOpenOptions {
     title: java.lang.String = null,
     updateLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): PopupViewModelOpenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (content != null) __obj.updateDynamic("content")(content)
     if (features != null) __obj.updateDynamic("features")(features)

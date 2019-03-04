@@ -12,8 +12,8 @@ trait Segment extends js.Object {
 object Segment {
   @scala.inline
   def apply(id: java.lang.String): Segment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[Segment]
   }
 }

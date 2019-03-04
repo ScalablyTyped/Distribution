@@ -76,8 +76,8 @@ object BigJsNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[bigDotJsLib.bigDotJsMod.Global.BigJsNs.RoundingMode with scala.Double] = js.native
   }
   
-  type Big = bigDotJsLib.bigDotJsMod.`Big_`
-  type BigConstructor = bigDotJsLib.bigDotJsMod.`BigConstructor_`
-  type BigSource = bigDotJsLib.bigDotJsMod.`BigSource_`
+  type Big = bigDotJsLib.bigDotJsMod.Big_
+  type BigConstructor = bigDotJsLib.bigDotJsMod.BigConstructor_
+  type BigSource = bigDotJsLib.bigDotJsMod.BigSource_
 }
 

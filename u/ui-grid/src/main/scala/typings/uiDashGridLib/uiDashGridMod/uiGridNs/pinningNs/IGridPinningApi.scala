@@ -32,9 +32,8 @@ object IGridPinningApi {
       scala.Unit
     ]
   ): IGridPinningApi[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnPin")(columnPin)
-    __obj.updateDynamic("pinColumn")(pinColumn)
+    val __obj = js.Dynamic.literal(columnPin = columnPin, pinColumn = pinColumn)
+  
     __obj.asInstanceOf[IGridPinningApi[TEntity]]
   }
 }

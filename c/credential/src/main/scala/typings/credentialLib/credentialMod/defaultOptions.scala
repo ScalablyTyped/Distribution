@@ -14,10 +14,8 @@ trait defaultOptions extends js.Object {
 object defaultOptions {
   @scala.inline
   def apply(hashMethod: java.lang.String, keyLength: scala.Double, work: scala.Double): defaultOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashMethod")(hashMethod)
-    __obj.updateDynamic("keyLength")(keyLength)
-    __obj.updateDynamic("work")(work)
+    val __obj = js.Dynamic.literal(hashMethod = hashMethod, keyLength = keyLength, work = work)
+  
     __obj.asInstanceOf[defaultOptions]
   }
 }

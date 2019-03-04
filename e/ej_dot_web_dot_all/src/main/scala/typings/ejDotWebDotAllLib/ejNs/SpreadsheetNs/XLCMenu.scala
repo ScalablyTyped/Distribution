@@ -68,14 +68,8 @@ object XLCMenu {
     removeItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
     showItem: js.Function2[java.lang.String, js.Array[_], scala.Unit]
   ): XLCMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("changeDataSource")(changeDataSource)
-    __obj.updateDynamic("disableItem")(disableItem)
-    __obj.updateDynamic("enableItem")(enableItem)
-    __obj.updateDynamic("hideItem")(hideItem)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("showItem")(showItem)
+    val __obj = js.Dynamic.literal(addItem = addItem, changeDataSource = changeDataSource, disableItem = disableItem, enableItem = enableItem, hideItem = hideItem, removeItem = removeItem, showItem = showItem)
+  
     __obj.asInstanceOf[XLCMenu]
   }
 }

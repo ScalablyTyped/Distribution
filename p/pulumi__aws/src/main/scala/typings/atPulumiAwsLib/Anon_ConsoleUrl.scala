@@ -14,10 +14,8 @@ trait Anon_ConsoleUrl extends js.Object {
 object Anon_ConsoleUrl {
   @scala.inline
   def apply(consoleUrl: java.lang.String, endpoints: js.Array[java.lang.String], ipAddress: java.lang.String): Anon_ConsoleUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consoleUrl")(consoleUrl)
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("ipAddress")(ipAddress)
+    val __obj = js.Dynamic.literal(consoleUrl = consoleUrl, endpoints = endpoints, ipAddress = ipAddress)
+  
     __obj.asInstanceOf[Anon_ConsoleUrl]
   }
 }

@@ -19,12 +19,8 @@ object FileUpload {
     preview: js.Function0[scala.Unit],
     setFileName: js.Function1[java.lang.String, FileUpload]
   ): FileUpload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("forCampaignManagement")(forCampaignManagement)
-    __obj.updateDynamic("forOfflineConversions")(forOfflineConversions)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("setFileName")(setFileName)
+    val __obj = js.Dynamic.literal(apply = apply, forCampaignManagement = forCampaignManagement, forOfflineConversions = forOfflineConversions, preview = preview, setFileName = setFileName)
+  
     __obj.asInstanceOf[FileUpload]
   }
 }

@@ -22,12 +22,8 @@ object Calendar {
     weeks: js.Array[js.Array[DateObj | dayzedLib.dayzedLibStrings.Empty]],
     year: scala.Double
   ): Calendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstDayOfMonth")(firstDayOfMonth)
-    __obj.updateDynamic("lastDayOfMonth")(lastDayOfMonth)
-    __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    __obj.updateDynamic("weeks")(weeks)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(firstDayOfMonth = firstDayOfMonth, lastDayOfMonth = lastDayOfMonth, month = month.asInstanceOf[js.Any], weeks = weeks, year = year)
+  
     __obj.asInstanceOf[Calendar]
   }
 }

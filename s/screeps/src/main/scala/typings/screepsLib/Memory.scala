@@ -22,11 +22,7 @@ object Memory {
     spawns: org.scalablytyped.runtime.StringDictionary[SpawnMemory],
     StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Memory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creeps")(creeps)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("rooms")(rooms)
-    __obj.updateDynamic("spawns")(spawns)
+    val __obj = js.Dynamic.literal(creeps = creeps, flags = flags, rooms = rooms, spawns = spawns)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Memory]
   }

@@ -16,9 +16,8 @@ object Anon_IN {
     IN: chromeDashAppsLib.chromeDashAppsLibStrings.in,
     OUT: chromeDashAppsLib.chromeDashAppsLibStrings.out
   ): Anon_IN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IN")(IN)
-    __obj.updateDynamic("OUT")(OUT)
+    val __obj = js.Dynamic.literal(IN = IN, OUT = OUT)
+  
     __obj.asInstanceOf[Anon_IN]
   }
 }

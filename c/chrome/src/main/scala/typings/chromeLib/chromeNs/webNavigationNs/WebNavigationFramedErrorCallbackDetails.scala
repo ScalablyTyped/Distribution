@@ -20,13 +20,8 @@ object WebNavigationFramedErrorCallbackDetails {
     timeStamp: scala.Double,
     url: java.lang.String
   ): WebNavigationFramedErrorCallbackDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("processId")(processId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(error = error, frameId = frameId, processId = processId, tabId = tabId, timeStamp = timeStamp, url = url)
+  
     __obj.asInstanceOf[WebNavigationFramedErrorCallbackDetails]
   }
 }

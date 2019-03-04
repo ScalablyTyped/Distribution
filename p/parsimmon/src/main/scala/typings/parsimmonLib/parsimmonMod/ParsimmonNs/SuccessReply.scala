@@ -22,12 +22,8 @@ object SuccessReply {
     status: parsimmonLib.parsimmonLibNumbers.`true`,
     value: T
   ): SuccessReply[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("furthest")(furthest)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expected = expected, furthest = furthest, index = index, status = status, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SuccessReply[T]]
   }
 }

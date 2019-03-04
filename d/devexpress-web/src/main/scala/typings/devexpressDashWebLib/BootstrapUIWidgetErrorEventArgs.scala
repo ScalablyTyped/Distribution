@@ -19,10 +19,8 @@ trait BootstrapUIWidgetErrorEventArgs extends BootstrapUIWidgetEventArgsBase {
 object BootstrapUIWidgetErrorEventArgs {
   @scala.inline
   def apply(component: js.Object, element: js.Object, target: js.Object): BootstrapUIWidgetErrorEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(component = component, element = element, target = target)
+  
     __obj.asInstanceOf[BootstrapUIWidgetErrorEventArgs]
   }
 }

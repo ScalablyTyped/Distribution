@@ -19,8 +19,7 @@ trait GetParameterArgs extends js.Object {
 object GetParameterArgs {
   @scala.inline
   def apply(name: java.lang.String, withDecryption: js.UndefOr[scala.Boolean] = js.undefined): GetParameterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(withDecryption)) __obj.updateDynamic("withDecryption")(withDecryption)
     __obj.asInstanceOf[GetParameterArgs]
   }

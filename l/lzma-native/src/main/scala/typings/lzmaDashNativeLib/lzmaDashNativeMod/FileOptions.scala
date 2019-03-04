@@ -27,9 +27,7 @@ object FileOptions {
     ],
     memlimit: scala.Int | scala.Double = null
   ): FileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(fileSize = fileSize, read = read)
     if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileOptions]
   }

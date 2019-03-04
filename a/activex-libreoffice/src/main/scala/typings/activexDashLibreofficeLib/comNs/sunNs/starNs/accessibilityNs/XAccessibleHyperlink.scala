@@ -91,22 +91,8 @@ object XAccessibleHyperlink {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleHyperlink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessibleActionCount")(AccessibleActionCount)
-    __obj.updateDynamic("EndIndex")(EndIndex)
-    __obj.updateDynamic("StartIndex")(StartIndex)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("doAccessibleAction")(doAccessibleAction)
-    __obj.updateDynamic("getAccessibleActionAnchor")(getAccessibleActionAnchor)
-    __obj.updateDynamic("getAccessibleActionCount")(getAccessibleActionCount)
-    __obj.updateDynamic("getAccessibleActionDescription")(getAccessibleActionDescription)
-    __obj.updateDynamic("getAccessibleActionKeyBinding")(getAccessibleActionKeyBinding)
-    __obj.updateDynamic("getAccessibleActionObject")(getAccessibleActionObject)
-    __obj.updateDynamic("getEndIndex")(getEndIndex)
-    __obj.updateDynamic("getStartIndex")(getStartIndex)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount, EndIndex = EndIndex, StartIndex = StartIndex, acquire = acquire, doAccessibleAction = doAccessibleAction, getAccessibleActionAnchor = getAccessibleActionAnchor, getAccessibleActionCount = getAccessibleActionCount, getAccessibleActionDescription = getAccessibleActionDescription, getAccessibleActionKeyBinding = getAccessibleActionKeyBinding, getAccessibleActionObject = getAccessibleActionObject, getEndIndex = getEndIndex, getStartIndex = getStartIndex, isValid = isValid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleHyperlink]
   }
 }

@@ -81,9 +81,7 @@ object BundleEntryRequest {
     ifNoneMatch: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): BundleEntryRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, url = url)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_ifMatch != null) __obj.updateDynamic("_ifMatch")(_ifMatch)

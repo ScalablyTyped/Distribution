@@ -29,12 +29,8 @@ object XGroupsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XGroupsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Groups")(Groups)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGroups")(getGroups)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Groups = Groups, acquire = acquire, getGroups = getGroups, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XGroupsSupplier]
   }
 }

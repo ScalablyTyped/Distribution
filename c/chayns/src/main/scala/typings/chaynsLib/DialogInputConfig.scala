@@ -23,8 +23,7 @@ object DialogInputConfig {
     placeholderText: java.lang.String = null,
     text: java.lang.String = null
   ): DialogInputConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (message != null) __obj.updateDynamic("message")(message)
     if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)

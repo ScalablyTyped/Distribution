@@ -12,8 +12,8 @@ trait VirtualElement extends js.Object {
 object VirtualElement {
   @scala.inline
   def apply(`type`: java.lang.String): VirtualElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VirtualElement]
   }
 }

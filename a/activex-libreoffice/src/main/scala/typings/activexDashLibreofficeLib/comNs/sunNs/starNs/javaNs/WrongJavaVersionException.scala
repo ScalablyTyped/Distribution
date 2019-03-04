@@ -25,12 +25,8 @@ object WrongJavaVersionException {
     LowestSupportedVersion: java.lang.String,
     Message: java.lang.String
   ): WrongJavaVersionException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DetectedVersion")(DetectedVersion)
-    __obj.updateDynamic("HighestSupportedVersion")(HighestSupportedVersion)
-    __obj.updateDynamic("LowestSupportedVersion")(LowestSupportedVersion)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, DetectedVersion = DetectedVersion, HighestSupportedVersion = HighestSupportedVersion, LowestSupportedVersion = LowestSupportedVersion, Message = Message)
+  
     __obj.asInstanceOf[WrongJavaVersionException]
   }
 }

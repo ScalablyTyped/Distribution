@@ -20,11 +20,8 @@ object Anon_OnloadT {
     startE: chromeDashAppsLib.chromeNs.integer,
     tran: chromeDashAppsLib.chromeNs.integer
   ): Anon_OnloadT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onloadT")(onloadT)
-    __obj.updateDynamic("pageT")(pageT)
-    __obj.updateDynamic("startE")(startE)
-    __obj.updateDynamic("tran")(tran)
+    val __obj = js.Dynamic.literal(onloadT = onloadT, pageT = pageT, startE = startE, tran = tran)
+  
     __obj.asInstanceOf[Anon_OnloadT]
   }
 }

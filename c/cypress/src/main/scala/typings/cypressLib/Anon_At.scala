@@ -13,8 +13,7 @@ trait Anon_At extends js.Object {
 object Anon_At {
   @scala.inline
   def apply(next: java.lang.String, at: scala.Int | scala.Double = null): Anon_At = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(next = next)
     if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_At]
   }

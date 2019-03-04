@@ -45,8 +45,8 @@ object Contributor {
     fhir_comments: js.Array[java.lang.String] = null,
     id: java.lang.String = null
   ): Contributor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_name != null) __obj.updateDynamic("_name")(_name)

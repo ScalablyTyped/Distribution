@@ -21,8 +21,8 @@ object Anon_Parser {
       hapiLib.hapiMod.UtilNs.Dictionary[_]
     ]
   ): Anon_Parser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parser")(parser)
+    val __obj = js.Dynamic.literal(parser = parser)
+  
     __obj.asInstanceOf[Anon_Parser]
   }
 }

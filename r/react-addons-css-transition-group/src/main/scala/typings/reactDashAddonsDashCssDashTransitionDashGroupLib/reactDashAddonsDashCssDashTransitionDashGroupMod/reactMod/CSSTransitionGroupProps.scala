@@ -27,8 +27,7 @@ object CSSTransitionGroupProps {
     transitionLeave: js.UndefOr[scala.Boolean] = js.undefined,
     transitionLeaveTimeout: scala.Int | scala.Double = null
   ): CSSTransitionGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(transitionName = transitionName.asInstanceOf[js.Any])
     if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear)
     if (transitionAppearTimeout != null) __obj.updateDynamic("transitionAppearTimeout")(transitionAppearTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(transitionEnter)) __obj.updateDynamic("transitionEnter")(transitionEnter)

@@ -53,21 +53,7 @@ object ProcessingInstruction {
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): ProcessingInstruction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("apiName")(apiName)
-    __obj.updateDynamic("applyProperties")(applyProperties)
-    __obj.updateDynamic("bubbleParent")(bubbleParent)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("getApiName")(getApiName)
-    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getTarget")(getTarget)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
-    __obj.updateDynamic("setData")(setData)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, data = data, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getData = getData, getTarget = getTarget, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent, setData = setData, target = target)
     if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)

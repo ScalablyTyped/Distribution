@@ -18,10 +18,8 @@ object Anon_CodeMessage {
     message: java.lang.String,
     warning: grammarkdownLib.grammarkdownLibNumbers.`true`
   ): Anon_CodeMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(code = code, message = message, warning = warning)
+  
     __obj.asInstanceOf[Anon_CodeMessage]
   }
 }

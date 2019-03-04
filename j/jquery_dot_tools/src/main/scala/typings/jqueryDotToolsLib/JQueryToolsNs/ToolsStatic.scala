@@ -12,8 +12,8 @@ trait ToolsStatic extends js.Object {
 object ToolsStatic {
   @scala.inline
   def apply(overlay: jqueryDotToolsLib.JQueryToolsNs.overlayNs.OverlayStatic): ToolsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overlay")(overlay)
+    val __obj = js.Dynamic.literal(overlay = overlay)
+  
     __obj.asInstanceOf[ToolsStatic]
   }
 }

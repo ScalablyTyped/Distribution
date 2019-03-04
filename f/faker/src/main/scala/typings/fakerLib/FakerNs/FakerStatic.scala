@@ -50,26 +50,8 @@ object FakerStatic {
     setLocale: js.Function1[java.lang.String, scala.Unit],
     system: fakerLib.Anon_CommonFileExt
   ): FakerStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("commerce")(commerce)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("fake")(fake)
-    __obj.updateDynamic("finance")(finance)
-    __obj.updateDynamic("hacker")(hacker)
-    __obj.updateDynamic("helpers")(helpers)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("internet")(internet)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("lorem")(lorem)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("random")(random)
-    __obj.updateDynamic("seed")(seed)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("system")(system)
+    val __obj = js.Dynamic.literal(address = address, commerce = commerce, company = company, database = database, date = date, fake = fake, finance = finance, hacker = hacker, helpers = helpers, image = image, internet = internet, locale = locale, lorem = lorem, name = name, phone = phone, random = random, seed = seed, setLocale = setLocale, system = system)
+  
     __obj.asInstanceOf[FakerStatic]
   }
 }

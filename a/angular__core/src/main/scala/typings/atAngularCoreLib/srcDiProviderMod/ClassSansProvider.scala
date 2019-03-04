@@ -16,8 +16,8 @@ trait ClassSansProvider
 object ClassSansProvider {
   @scala.inline
   def apply(useClass: atAngularCoreLib.srcTypeMod.Type[_]): ClassSansProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("useClass")(useClass)
+    val __obj = js.Dynamic.literal(useClass = useClass)
+  
     __obj.asInstanceOf[ClassSansProvider]
   }
 }

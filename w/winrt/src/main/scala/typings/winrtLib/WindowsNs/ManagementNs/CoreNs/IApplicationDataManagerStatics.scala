@@ -14,8 +14,8 @@ object IApplicationDataManagerStatics {
   def apply(
     createForPackageFamily: js.Function1[java.lang.String, winrtLib.WindowsNs.StorageNs.ApplicationData]
   ): IApplicationDataManagerStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createForPackageFamily")(createForPackageFamily)
+    val __obj = js.Dynamic.literal(createForPackageFamily = createForPackageFamily)
+  
     __obj.asInstanceOf[IApplicationDataManagerStatics]
   }
 }

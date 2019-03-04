@@ -46,8 +46,7 @@ object CompositionAttester {
     party: Reference = null,
     time: dateTime = null
   ): CompositionAttester = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_mode != null) __obj.updateDynamic("_mode")(_mode)

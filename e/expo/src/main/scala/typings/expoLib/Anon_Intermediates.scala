@@ -12,8 +12,8 @@ trait Anon_Intermediates extends js.Object {
 object Anon_Intermediates {
   @scala.inline
   def apply(intermediates: scala.Boolean): Anon_Intermediates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intermediates")(intermediates)
+    val __obj = js.Dynamic.literal(intermediates = intermediates)
+  
     __obj.asInstanceOf[Anon_Intermediates]
   }
 }

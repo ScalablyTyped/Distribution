@@ -20,9 +20,7 @@ object Anon_Any {
     any: js.Array[java.lang.String] = null,
     `final`: java.lang.String = null
   ): Anon_Any = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("initial")(initial)
+    val __obj = js.Dynamic.literal(attribute = attribute, initial = initial)
     if (any != null) __obj.updateDynamic("any")(any)
     if (`final` != null) __obj.updateDynamic("final")(`final`)
     __obj.asInstanceOf[Anon_Any]

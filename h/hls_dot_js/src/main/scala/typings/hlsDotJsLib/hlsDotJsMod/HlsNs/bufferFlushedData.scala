@@ -13,9 +13,8 @@ trait bufferFlushedData extends js.Object {
 object bufferFlushedData {
   @scala.inline
   def apply(endOffset: scala.Double, startOffset: scala.Double): bufferFlushedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endOffset")(endOffset)
-    __obj.updateDynamic("startOffset")(startOffset)
+    val __obj = js.Dynamic.literal(endOffset = endOffset, startOffset = startOffset)
+  
     __obj.asInstanceOf[bufferFlushedData]
   }
 }

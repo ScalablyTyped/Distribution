@@ -16,8 +16,7 @@ object ProviderProps {
     children: reactLib.reactMod.Global.JSXNs.Element | js.Array[reactLib.reactMod.Global.JSXNs.Element],
     initialState: stdLib.Partial[T] = null
   ): ProviderProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     __obj.asInstanceOf[ProviderProps[T]]
   }

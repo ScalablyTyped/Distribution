@@ -20,10 +20,8 @@ object Delete {
     `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.delete,
     where: js.Any
   ): Delete = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("tables")(tables)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(from = from, tables = tables, where = where)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Delete]
   }
 }

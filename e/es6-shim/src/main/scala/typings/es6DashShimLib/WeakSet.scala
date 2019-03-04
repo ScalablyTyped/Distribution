@@ -18,10 +18,8 @@ object WeakSet {
     delete: js.Function1[T, scala.Boolean],
     has: js.Function1[T, scala.Boolean]
   ): WeakSet[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("has")(has)
+    val __obj = js.Dynamic.literal(add = add, delete = delete, has = has)
+  
     __obj.asInstanceOf[WeakSet[T]]
   }
 }

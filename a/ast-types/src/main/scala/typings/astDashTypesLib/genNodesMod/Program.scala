@@ -24,9 +24,8 @@ object Program {
     `type`: astDashTypesLib.astDashTypesLibStrings.Program,
     interpreter: astDashTypesLib.genKindsMod.InterpreterDirectiveKind = null
   ): Program = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("directives")(directives)
+    val __obj = js.Dynamic.literal(body = body, directives = directives)
+    __obj.updateDynamic("type")(`type`)
     if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter)
     __obj.asInstanceOf[Program]
   }

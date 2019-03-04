@@ -13,9 +13,8 @@ trait widthAndHeight extends js.Object {
 object widthAndHeight {
   @scala.inline
   def apply(height: scala.Double, width: scala.Double): widthAndHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
     __obj.asInstanceOf[widthAndHeight]
   }
 }

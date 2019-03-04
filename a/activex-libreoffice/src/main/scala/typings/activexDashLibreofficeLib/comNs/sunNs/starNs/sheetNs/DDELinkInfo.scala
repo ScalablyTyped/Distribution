@@ -32,10 +32,8 @@ object DDELinkInfo {
     Service: java.lang.String,
     Topic: java.lang.String
   ): DDELinkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Items")(Items)
-    __obj.updateDynamic("Service")(Service)
-    __obj.updateDynamic("Topic")(Topic)
+    val __obj = js.Dynamic.literal(Items = Items, Service = Service, Topic = Topic)
+  
     __obj.asInstanceOf[DDELinkInfo]
   }
 }

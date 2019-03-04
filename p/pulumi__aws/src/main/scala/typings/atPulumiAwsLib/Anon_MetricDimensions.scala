@@ -22,10 +22,7 @@ object Anon_MetricDimensions {
     metricDimensions: js.Array[Anon_Name] = null,
     unit: java.lang.String = null
   ): Anon_MetricDimensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("statistic")(statistic)
+    val __obj = js.Dynamic.literal(metricName = metricName, namespace = namespace, statistic = statistic)
     if (metricDimensions != null) __obj.updateDynamic("metricDimensions")(metricDimensions)
     if (unit != null) __obj.updateDynamic("unit")(unit)
     __obj.asInstanceOf[Anon_MetricDimensions]

@@ -35,12 +35,8 @@ object IchooseWXPay {
     complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IchooseWXPay = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("nonceStr")(nonceStr)
-    __obj.updateDynamic("paySign")(paySign)
-    __obj.updateDynamic("signType")(signType)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, signType = signType, success = success, timestamp = timestamp)
+    __obj.updateDynamic("package")(`package`)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[IchooseWXPay]

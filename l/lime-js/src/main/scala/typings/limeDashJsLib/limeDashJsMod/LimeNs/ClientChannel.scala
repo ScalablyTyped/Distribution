@@ -43,29 +43,8 @@ object ClientChannel {
     state: java.lang.String,
     transport: Transport
   ): ClientChannel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticateSession")(authenticateSession)
-    __obj.updateDynamic("localNode")(localNode)
-    __obj.updateDynamic("negotiateSession")(negotiateSession)
-    __obj.updateDynamic("onCommand")(onCommand)
-    __obj.updateDynamic("onMessage")(onMessage)
-    __obj.updateDynamic("onNotification")(onNotification)
-    __obj.updateDynamic("onSession")(onSession)
-    __obj.updateDynamic("onSessionAuthenticating")(onSessionAuthenticating)
-    __obj.updateDynamic("onSessionEstablished")(onSessionEstablished)
-    __obj.updateDynamic("onSessionFailed")(onSessionFailed)
-    __obj.updateDynamic("onSessionFinished")(onSessionFinished)
-    __obj.updateDynamic("onSessionNegotiating")(onSessionNegotiating)
-    __obj.updateDynamic("remoteNode")(remoteNode)
-    __obj.updateDynamic("sendCommand")(sendCommand)
-    __obj.updateDynamic("sendFinishingSession")(sendFinishingSession)
-    __obj.updateDynamic("sendMessage")(sendMessage)
-    __obj.updateDynamic("sendNotification")(sendNotification)
-    __obj.updateDynamic("sendSession")(sendSession)
-    __obj.updateDynamic("sessionId")(sessionId)
-    __obj.updateDynamic("startNewSession")(startNewSession)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(authenticateSession = authenticateSession, localNode = localNode, negotiateSession = negotiateSession, onCommand = onCommand, onMessage = onMessage, onNotification = onNotification, onSession = onSession, onSessionAuthenticating = onSessionAuthenticating, onSessionEstablished = onSessionEstablished, onSessionFailed = onSessionFailed, onSessionFinished = onSessionFinished, onSessionNegotiating = onSessionNegotiating, remoteNode = remoteNode, sendCommand = sendCommand, sendFinishingSession = sendFinishingSession, sendMessage = sendMessage, sendNotification = sendNotification, sendSession = sendSession, sessionId = sessionId, startNewSession = startNewSession, state = state, transport = transport)
+  
     __obj.asInstanceOf[ClientChannel]
   }
 }

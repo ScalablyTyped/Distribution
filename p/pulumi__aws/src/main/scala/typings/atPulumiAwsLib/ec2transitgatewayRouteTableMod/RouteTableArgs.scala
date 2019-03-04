@@ -28,8 +28,7 @@ object RouteTableArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): RouteTableArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(transitGatewayId = transitGatewayId.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteTableArgs]
   }

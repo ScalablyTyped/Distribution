@@ -28,8 +28,7 @@ object Anon_AdditionalMasterSecurityGroups {
     serviceAccessSecurityGroup: java.lang.String = null,
     subnetId: java.lang.String = null
   ): Anon_AdditionalMasterSecurityGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceProfile")(instanceProfile)
+    val __obj = js.Dynamic.literal(instanceProfile = instanceProfile)
     if (additionalMasterSecurityGroups != null) __obj.updateDynamic("additionalMasterSecurityGroups")(additionalMasterSecurityGroups)
     if (additionalSlaveSecurityGroups != null) __obj.updateDynamic("additionalSlaveSecurityGroups")(additionalSlaveSecurityGroups)
     if (emrManagedMasterSecurityGroup != null) __obj.updateDynamic("emrManagedMasterSecurityGroup")(emrManagedMasterSecurityGroup)

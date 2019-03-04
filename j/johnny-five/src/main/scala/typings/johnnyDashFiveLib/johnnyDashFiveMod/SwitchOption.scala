@@ -18,8 +18,7 @@ object SwitchOption {
     pin: scala.Double | java.lang.String,
     `type`: johnnyDashFiveLib.johnnyDashFiveLibStrings.NO | johnnyDashFiveLib.johnnyDashFiveLibStrings.NC = null
   ): SwitchOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchOption]
   }

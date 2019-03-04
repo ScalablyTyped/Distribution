@@ -13,7 +13,8 @@ trait BaseExpression extends js.Object {
 object BaseExpression {
   @scala.inline
   def apply(`type`: java.lang.String, distinct: js.UndefOr[scala.Boolean] = js.undefined): BaseExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
     __obj.asInstanceOf[BaseExpression]
   }

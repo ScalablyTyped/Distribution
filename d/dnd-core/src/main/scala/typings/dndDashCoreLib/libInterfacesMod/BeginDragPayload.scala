@@ -24,11 +24,7 @@ object BeginDragPayload {
     clientOffset: XYCoord = null,
     sourceClientOffset: XYCoord = null
   ): BeginDragPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSourcePublic")(isSourcePublic)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isSourcePublic = isSourcePublic, item = item, itemType = itemType.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any])
     if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset)
     if (sourceClientOffset != null) __obj.updateDynamic("sourceClientOffset")(sourceClientOffset)
     __obj.asInstanceOf[BeginDragPayload]

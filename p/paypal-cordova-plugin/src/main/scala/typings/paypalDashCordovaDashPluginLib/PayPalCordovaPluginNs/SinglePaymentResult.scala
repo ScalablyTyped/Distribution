@@ -16,10 +16,8 @@ object SinglePaymentResult {
     response: paypalDashCordovaDashPluginLib.Anon_Authorizationid,
     response_type: java.lang.String
   ): SinglePaymentResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("response_type")(response_type)
+    val __obj = js.Dynamic.literal(client = client, response = response, response_type = response_type)
+  
     __obj.asInstanceOf[SinglePaymentResult]
   }
 }

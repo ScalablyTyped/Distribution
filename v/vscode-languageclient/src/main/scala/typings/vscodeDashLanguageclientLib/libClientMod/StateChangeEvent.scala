@@ -13,9 +13,8 @@ trait StateChangeEvent extends js.Object {
 object StateChangeEvent {
   @scala.inline
   def apply(newState: State, oldState: State): StateChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newState")(newState)
-    __obj.updateDynamic("oldState")(oldState)
+    val __obj = js.Dynamic.literal(newState = newState, oldState = oldState)
+  
     __obj.asInstanceOf[StateChangeEvent]
   }
 }

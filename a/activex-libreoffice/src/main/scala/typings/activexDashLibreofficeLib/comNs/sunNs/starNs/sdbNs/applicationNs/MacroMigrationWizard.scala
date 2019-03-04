@@ -24,13 +24,8 @@ object MacroMigrationWizard {
     release: js.Function0[scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): MacroMigrationWizard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createWithDocument")(createWithDocument)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(acquire = acquire, createWithDocument = createWithDocument, execute = execute, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
     __obj.asInstanceOf[MacroMigrationWizard]
   }
 }

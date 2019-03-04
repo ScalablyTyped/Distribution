@@ -34,8 +34,7 @@ object AuditLoggerOptions {
     printLog: js.UndefOr[scala.Boolean] = js.undefined,
     server: restifyLib.restifyMod.Server = null
   ): AuditLoggerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(log = log)
     if (!js.isUndefined(body)) __obj.updateDynamic("body")(body)
     if (logBuffer != null) __obj.updateDynamic("logBuffer")(logBuffer)
     if (!js.isUndefined(printLog)) __obj.updateDynamic("printLog")(printLog)

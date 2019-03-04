@@ -24,9 +24,7 @@ object AppendfileParams {
     fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): AppendfileParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("filePath")(filePath)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filePath = filePath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (fail != null) __obj.updateDynamic("fail")(fail)

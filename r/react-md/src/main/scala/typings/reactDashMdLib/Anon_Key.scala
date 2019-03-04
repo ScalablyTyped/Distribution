@@ -18,9 +18,7 @@ object Anon_Key {
     value: scala.Double | java.lang.String,
     key: scala.Double | java.lang.String = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Key]
   }

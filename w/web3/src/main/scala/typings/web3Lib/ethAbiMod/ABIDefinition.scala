@@ -30,7 +30,8 @@ object ABIDefinition {
     payable: js.UndefOr[scala.Boolean] = js.undefined,
     stateMutability: web3Lib.web3LibStrings.pure | web3Lib.web3LibStrings.view | web3Lib.web3LibStrings.nonpayable | web3Lib.web3LibStrings.payable = null
   ): ABIDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
     if (!js.isUndefined(constant)) __obj.updateDynamic("constant")(constant)
     if (inputs != null) __obj.updateDynamic("inputs")(inputs)

@@ -93,21 +93,8 @@ object WorkflowManagerServiceInfo {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     publicQueries: js.Array[JobQueryContainer]
   ): WorkflowManagerServiceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activityTypes")(activityTypes)
-    __obj.updateDynamic("configProperties")(configProperties)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("currentVersion")(currentVersion)
-    __obj.updateDynamic("dataWorkspaces")(dataWorkspaces)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("holdTypes")(holdTypes)
-    __obj.updateDynamic("jobPriorities")(jobPriorities)
-    __obj.updateDynamic("jobStatuses")(jobStatuses)
-    __obj.updateDynamic("jobTypes")(jobTypes)
-    __obj.updateDynamic("notificationTypes")(notificationTypes)
-    __obj.updateDynamic("privileges")(privileges)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("publicQueries")(publicQueries)
+    val __obj = js.Dynamic.literal(activityTypes = activityTypes, configProperties = configProperties, constructor = constructor, currentVersion = currentVersion, dataWorkspaces = dataWorkspaces, hasOwnProperty = hasOwnProperty, holdTypes = holdTypes, jobPriorities = jobPriorities, jobStatuses = jobStatuses, jobTypes = jobTypes, notificationTypes = notificationTypes, privileges = privileges, propertyIsEnumerable = propertyIsEnumerable, publicQueries = publicQueries)
+  
     __obj.asInstanceOf[WorkflowManagerServiceInfo]
   }
 }

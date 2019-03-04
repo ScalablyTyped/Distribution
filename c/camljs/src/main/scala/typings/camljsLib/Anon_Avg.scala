@@ -13,8 +13,8 @@ trait Anon_Avg
 object Anon_Avg {
   @scala.inline
   def apply(avg: java.lang.String): Anon_Avg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avg")(avg)
+    val __obj = js.Dynamic.literal(avg = avg)
+  
     __obj.asInstanceOf[Anon_Avg]
   }
 }

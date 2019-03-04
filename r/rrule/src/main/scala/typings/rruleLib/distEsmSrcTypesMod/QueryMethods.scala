@@ -20,11 +20,8 @@ object QueryMethods {
     before: js.Function2[stdLib.Date, scala.Boolean, stdLib.Date],
     between: js.Function3[stdLib.Date, stdLib.Date, scala.Boolean, js.Array[stdLib.Date]]
   ): QueryMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("between")(between)
+    val __obj = js.Dynamic.literal(after = after, all = all, before = before, between = between)
+  
     __obj.asInstanceOf[QueryMethods]
   }
 }

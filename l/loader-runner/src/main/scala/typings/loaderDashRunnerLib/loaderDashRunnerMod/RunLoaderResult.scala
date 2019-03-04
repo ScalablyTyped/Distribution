@@ -22,10 +22,7 @@ object RunLoaderResult {
     resourceBuffer: nodeLib.Buffer = null,
     result: js.Array[nodeLib.Buffer | scala.Null] = null
   ): RunLoaderResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheable")(cacheable)
-    __obj.updateDynamic("contextDependencies")(contextDependencies)
-    __obj.updateDynamic("fileDependencies")(fileDependencies)
+    val __obj = js.Dynamic.literal(cacheable = cacheable, contextDependencies = contextDependencies, fileDependencies = fileDependencies)
     if (resourceBuffer != null) __obj.updateDynamic("resourceBuffer")(resourceBuffer)
     if (result != null) __obj.updateDynamic("result")(result)
     __obj.asInstanceOf[RunLoaderResult]

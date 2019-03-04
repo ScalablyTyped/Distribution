@@ -38,18 +38,9 @@ object Tcp {
     tx_queue: java.lang.String,
     uid: java.lang.String
   ): Tcp = {
-    val __obj = js.Dynamic.literal(`_` = `_`, `tm->when` = `tm->when`)
-    __obj.updateDynamic("inode")(inode)
-    __obj.updateDynamic("local_address")(local_address)
-    __obj.updateDynamic("rem_address")(rem_address)
-    __obj.updateDynamic("retrnsmt")(retrnsmt)
-    __obj.updateDynamic("rx_queue")(rx_queue)
-    __obj.updateDynamic("sl")(sl)
-    __obj.updateDynamic("st")(st)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("tr")(tr)
-    __obj.updateDynamic("tx_queue")(tx_queue)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(inode = inode, local_address = local_address, rem_address = rem_address, retrnsmt = retrnsmt, rx_queue = rx_queue, sl = sl, st = st, timeout = timeout, tr = tr, tx_queue = tx_queue, uid = uid)
+    __obj.updateDynamic("_")(`_`)
+    __obj.updateDynamic("tm->when")(`tm->when`)
     __obj.asInstanceOf[Tcp]
   }
 }

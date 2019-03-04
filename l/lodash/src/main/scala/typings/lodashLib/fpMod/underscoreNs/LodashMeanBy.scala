@@ -12,9 +12,9 @@ trait LodashMeanBy extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): scala.Double = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashMeanBy1x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__): LodashMeanBy1x2[T] = js.native
   def apply[T](
-    iteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratee: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashMeanBy1x2[T] = js.native
 }

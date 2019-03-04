@@ -16,8 +16,8 @@ object RouterChildContext {
   def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ reactDashRouterLib.reactDashRouterLibStrings.RouterChildContext with js.Any */](router: reactDashRouterLib.Anon_History[Params]): RouterChildContext[Params] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("router")(router)
+    val __obj = js.Dynamic.literal(router = router)
+  
     __obj.asInstanceOf[RouterChildContext[Params]]
   }
 }

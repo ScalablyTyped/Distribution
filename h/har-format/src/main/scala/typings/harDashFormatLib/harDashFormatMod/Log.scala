@@ -45,10 +45,7 @@ object Log {
     comment: java.lang.String = null,
     pages: js.Array[Page] = null
   ): Log = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creator")(creator)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(creator = creator, entries = entries, version = version)
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (pages != null) __obj.updateDynamic("pages")(pages)

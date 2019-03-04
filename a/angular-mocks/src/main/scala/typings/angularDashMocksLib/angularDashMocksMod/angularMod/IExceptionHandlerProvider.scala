@@ -18,9 +18,8 @@ trait IExceptionHandlerProvider
 object IExceptionHandlerProvider {
   @scala.inline
   def apply($get: js.Any, mode: js.Function1[java.lang.String, scala.Unit]): IExceptionHandlerProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal($get = $get, mode = mode)
+  
     __obj.asInstanceOf[IExceptionHandlerProvider]
   }
 }

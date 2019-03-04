@@ -41,8 +41,7 @@ object Button {
       scala.Unit
     ] = null
   ): Button = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClicked")(onClicked)
+    val __obj = js.Dynamic.literal(onClicked = onClicked)
     if (update != null) __obj.updateDynamic("update")(update)
     __obj.asInstanceOf[Button]
   }

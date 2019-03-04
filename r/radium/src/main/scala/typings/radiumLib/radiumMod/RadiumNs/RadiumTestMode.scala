@@ -31,10 +31,8 @@ object RadiumTestMode {
     disable: js.Function0[scala.Unit],
     enable: js.Function0[scala.Unit]
   ): RadiumTestMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearState")(clearState)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
+    val __obj = js.Dynamic.literal(clearState = clearState, disable = disable, enable = enable)
+  
     __obj.asInstanceOf[RadiumTestMode]
   }
 }

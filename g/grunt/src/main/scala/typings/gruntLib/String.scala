@@ -31,15 +31,8 @@ object String {
     white: java.lang.String,
     yellow: java.lang.String
   ): String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blue")(blue)
-    __obj.updateDynamic("cyan")(cyan)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("grey")(grey)
-    __obj.updateDynamic("magenta")(magenta)
-    __obj.updateDynamic("red")(red)
-    __obj.updateDynamic("white")(white)
-    __obj.updateDynamic("yellow")(yellow)
+    val __obj = js.Dynamic.literal(blue = blue, cyan = cyan, green = green, grey = grey, magenta = magenta, red = red, white = white, yellow = yellow)
+  
     __obj.asInstanceOf[String]
   }
 }

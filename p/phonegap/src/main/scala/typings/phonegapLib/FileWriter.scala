@@ -49,22 +49,8 @@ object FileWriter {
     truncate: js.Function1[scala.Double, scala.Unit],
     write: js.Function1[js.Any, scala.Unit]
   ): FileWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("onabort")(onabort)
-    __obj.updateDynamic("onerror")(onerror)
-    __obj.updateDynamic("onprogress")(onprogress)
-    __obj.updateDynamic("onwrite")(onwrite)
-    __obj.updateDynamic("onwriteend")(onwriteend)
-    __obj.updateDynamic("onwritestart")(onwritestart)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("readyState")(readyState)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("truncate")(truncate)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(abort = abort, error = error, fileName = fileName, length = length, onabort = onabort, onerror = onerror, onprogress = onprogress, onwrite = onwrite, onwriteend = onwriteend, onwritestart = onwritestart, position = position, readyState = readyState, seek = seek, truncate = truncate, write = write)
+  
     __obj.asInstanceOf[FileWriter]
   }
 }

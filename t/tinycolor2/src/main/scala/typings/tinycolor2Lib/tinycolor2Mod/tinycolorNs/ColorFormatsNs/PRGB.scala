@@ -15,10 +15,8 @@ trait PRGB
 object PRGB {
   @scala.inline
   def apply(b: java.lang.String, g: java.lang.String, r: java.lang.String): PRGB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(b = b, g = g, r = r)
+  
     __obj.asInstanceOf[PRGB]
   }
 }

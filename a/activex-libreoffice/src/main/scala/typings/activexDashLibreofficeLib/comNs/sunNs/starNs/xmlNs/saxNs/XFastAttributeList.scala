@@ -79,19 +79,8 @@ object XFastAttributeList {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFastAttributeList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FastAttributes")(FastAttributes)
-    __obj.updateDynamic("UnknownAttributes")(UnknownAttributes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFastAttributes")(getFastAttributes)
-    __obj.updateDynamic("getOptionalValue")(getOptionalValue)
-    __obj.updateDynamic("getOptionalValueToken")(getOptionalValueToken)
-    __obj.updateDynamic("getUnknownAttributes")(getUnknownAttributes)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("getValueToken")(getValueToken)
-    __obj.updateDynamic("hasAttribute")(hasAttribute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(FastAttributes = FastAttributes, UnknownAttributes = UnknownAttributes, acquire = acquire, getFastAttributes = getFastAttributes, getOptionalValue = getOptionalValue, getOptionalValueToken = getOptionalValueToken, getUnknownAttributes = getUnknownAttributes, getValue = getValue, getValueToken = getValueToken, hasAttribute = hasAttribute, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFastAttributeList]
   }
 }

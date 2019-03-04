@@ -34,16 +34,8 @@ object Select2 {
     results: js.Any,
     selection: js.Any
   ): Select2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$container")($container)
-    __obj.updateDynamic("$dropdown")($dropdown)
-    __obj.updateDynamic("$results")($results)
-    __obj.updateDynamic("$selection")($selection)
-    __obj.updateDynamic("dropdown")(dropdown)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("selection")(selection)
+    val __obj = js.Dynamic.literal($container = $container, $dropdown = $dropdown, $results = $results, $selection = $selection, dropdown = dropdown, id = id, options = options, results = results, selection = selection)
+  
     __obj.asInstanceOf[Select2]
   }
 }

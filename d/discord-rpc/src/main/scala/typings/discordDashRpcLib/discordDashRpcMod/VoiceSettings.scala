@@ -32,14 +32,7 @@ object VoiceSettings {
     mode: discordDashRpcLib.Anon_AutoThreshold = null,
     output: discordDashRpcLib.Anon_Device = null
   ): VoiceSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automaticGainControl")(automaticGainControl)
-    __obj.updateDynamic("deaf")(deaf)
-    __obj.updateDynamic("echoCancellation")(echoCancellation)
-    __obj.updateDynamic("mute")(mute)
-    __obj.updateDynamic("noiseSuppression")(noiseSuppression)
-    __obj.updateDynamic("qos")(qos)
-    __obj.updateDynamic("silenceWarning")(silenceWarning)
+    val __obj = js.Dynamic.literal(automaticGainControl = automaticGainControl, deaf = deaf, echoCancellation = echoCancellation, mute = mute, noiseSuppression = noiseSuppression, qos = qos, silenceWarning = silenceWarning)
     if (input != null) __obj.updateDynamic("input")(input)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (output != null) __obj.updateDynamic("output")(output)

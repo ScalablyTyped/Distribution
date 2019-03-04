@@ -18,10 +18,8 @@ object Response {
     rows: js.Array[pouchdbDashMapreduceLib.Anon_Doc[Content]],
     total_rows: scala.Double
   ): Response[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("total_rows")(total_rows)
+    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows)
+  
     __obj.asInstanceOf[Response[Content]]
   }
 }

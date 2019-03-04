@@ -15,8 +15,8 @@ trait ReferenceObject
 object ReferenceObject {
   @scala.inline
   def apply($ref: java.lang.String): ReferenceObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$ref")($ref)
+    val __obj = js.Dynamic.literal($ref = $ref)
+  
     __obj.asInstanceOf[ReferenceObject]
   }
 }

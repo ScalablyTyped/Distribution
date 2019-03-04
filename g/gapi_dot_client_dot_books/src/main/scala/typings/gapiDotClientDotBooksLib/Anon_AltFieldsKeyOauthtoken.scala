@@ -48,9 +48,7 @@ object Anon_AltFieldsKeyOauthtoken {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shelf")(shelf)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(shelf = shelf, volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

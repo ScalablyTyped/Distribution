@@ -14,10 +14,8 @@ trait Anon_Additions extends js.Object {
 object Anon_Additions {
   @scala.inline
   def apply(additions: scala.Double, deletions: scala.Double, total: scala.Double): Anon_Additions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additions")(additions)
-    __obj.updateDynamic("deletions")(deletions)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(additions = additions, deletions = deletions, total = total)
+  
     __obj.asInstanceOf[Anon_Additions]
   }
 }

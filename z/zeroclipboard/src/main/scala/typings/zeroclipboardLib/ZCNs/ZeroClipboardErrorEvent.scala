@@ -40,13 +40,8 @@ object ZeroClipboardErrorEvent {
     swfVersion: java.lang.String = null,
     version: java.lang.String = null
   ): ZeroClipboardErrorEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("relatedTarget")(relatedTarget)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, message = message, name = name, relatedTarget = relatedTarget, target = target, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     if (actualValue != null) __obj.updateDynamic("actualValue")(actualValue)
     if (client != null) __obj.updateDynamic("client")(client)
     if (configuredValue != null) __obj.updateDynamic("configuredValue")(configuredValue)

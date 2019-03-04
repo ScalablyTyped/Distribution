@@ -14,9 +14,7 @@ trait BounceStats extends js.Object {
 object BounceStats {
   @scala.inline
   def apply(Count: scala.Double, Name: java.lang.String, Type: java.lang.String = null): BounceStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Count = Count, Name = Name)
     if (Type != null) __obj.updateDynamic("Type")(Type)
     __obj.asInstanceOf[BounceStats]
   }

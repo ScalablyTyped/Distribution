@@ -20,11 +20,8 @@ object TeamStatDetailDto {
     teamStatType: java.lang.String,
     wins: scala.Double
   ): TeamStatDetailDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("averageGamesPlayed")(averageGamesPlayed)
-    __obj.updateDynamic("losses")(losses)
-    __obj.updateDynamic("teamStatType")(teamStatType)
-    __obj.updateDynamic("wins")(wins)
+    val __obj = js.Dynamic.literal(averageGamesPlayed = averageGamesPlayed, losses = losses, teamStatType = teamStatType, wins = wins)
+  
     __obj.asInstanceOf[TeamStatDetailDto]
   }
 }

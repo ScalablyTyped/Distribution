@@ -26,14 +26,8 @@ object IStroke {
     join: java.lang.String,
     size: scala.Double
   ): IStroke = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cap")(cap)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dash")(dash)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(cap = cap, chart = chart, dash = dash, fill = fill, gradient = gradient, join = join, size = size)
+  
     __obj.asInstanceOf[IStroke]
   }
 }

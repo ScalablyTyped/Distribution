@@ -14,9 +14,8 @@ trait Anon_IdSelectedType extends js.Object {
 object Anon_IdSelectedType {
   @scala.inline
   def apply(id: java.lang.String, selected: scala.Boolean, `type`: java.lang.String): Anon_IdSelectedType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(id = id, selected = selected)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_IdSelectedType]
   }
 }

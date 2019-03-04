@@ -49,8 +49,7 @@ object PaneBackground {
     outerRadius: scala.Double | java.lang.String = null,
     shape: java.lang.String = null
   ): PaneBackground = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

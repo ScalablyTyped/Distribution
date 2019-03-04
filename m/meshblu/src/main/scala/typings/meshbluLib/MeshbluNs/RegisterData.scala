@@ -12,8 +12,8 @@ trait RegisterData extends js.Object {
 object RegisterData {
   @scala.inline
   def apply(`type`: java.lang.String): RegisterData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RegisterData]
   }
 }

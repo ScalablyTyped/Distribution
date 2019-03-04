@@ -20,11 +20,8 @@ object Anon_OverscanStartIndex {
     startIndex: scala.Double,
     stopIndex: scala.Double
   ): Anon_OverscanStartIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overscanStartIndex")(overscanStartIndex)
-    __obj.updateDynamic("overscanStopIndex")(overscanStopIndex)
-    __obj.updateDynamic("startIndex")(startIndex)
-    __obj.updateDynamic("stopIndex")(stopIndex)
+    val __obj = js.Dynamic.literal(overscanStartIndex = overscanStartIndex, overscanStopIndex = overscanStopIndex, startIndex = startIndex, stopIndex = stopIndex)
+  
     __obj.asInstanceOf[Anon_OverscanStartIndex]
   }
 }

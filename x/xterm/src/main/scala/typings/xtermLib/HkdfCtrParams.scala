@@ -19,11 +19,8 @@ object HkdfCtrParams {
     label: stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer,
     name: java.lang.String
   ): HkdfCtrParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name)
+  
     __obj.asInstanceOf[HkdfCtrParams]
   }
 }

@@ -32,12 +32,8 @@ object HostedGitResult {
     name: java.lang.String = null,
     scope: java.lang.String = null
   ): HostedGitResult = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hosted")(hosted)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawSpec")(rawSpec)
-    __obj.updateDynamic("registry")(registry)
-    __obj.updateDynamic("saveSpec")(saveSpec)
+    val __obj = js.Dynamic.literal(hosted = hosted, raw = raw, rawSpec = rawSpec, registry = registry, saveSpec = saveSpec)
+    __obj.updateDynamic("type")(`type`)
     if (escapedName != null) __obj.updateDynamic("escapedName")(escapedName)
     if (fetchSpec != null) __obj.updateDynamic("fetchSpec")(fetchSpec)
     if (gitCommittish != null) __obj.updateDynamic("gitCommittish")(gitCommittish)

@@ -26,11 +26,7 @@ object Credentials {
     realm: java.lang.String = null,
     serviceName: java.lang.String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("serviceType")(serviceType)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(host = host, password = password, serviceType = serviceType, username = username)
     if (authzid != null) __obj.updateDynamic("authzid")(authzid)
     if (realm != null) __obj.updateDynamic("realm")(realm)
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)

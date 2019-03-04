@@ -20,11 +20,8 @@ object GalleryProfile {
     total_gallery_submissions: scala.Double,
     trophies: js.Array[Trophy]
   ): GalleryProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("total_gallery_comments")(total_gallery_comments)
-    __obj.updateDynamic("total_gallery_favorites")(total_gallery_favorites)
-    __obj.updateDynamic("total_gallery_submissions")(total_gallery_submissions)
-    __obj.updateDynamic("trophies")(trophies)
+    val __obj = js.Dynamic.literal(total_gallery_comments = total_gallery_comments, total_gallery_favorites = total_gallery_favorites, total_gallery_submissions = total_gallery_submissions, trophies = trophies)
+  
     __obj.asInstanceOf[GalleryProfile]
   }
 }

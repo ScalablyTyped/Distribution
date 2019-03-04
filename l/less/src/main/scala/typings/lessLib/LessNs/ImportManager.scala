@@ -12,8 +12,8 @@ trait ImportManager extends js.Object {
 object ImportManager {
   @scala.inline
   def apply(contents: org.scalablytyped.runtime.StringDictionary[java.lang.String]): ImportManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
+    val __obj = js.Dynamic.literal(contents = contents)
+  
     __obj.asInstanceOf[ImportManager]
   }
 }

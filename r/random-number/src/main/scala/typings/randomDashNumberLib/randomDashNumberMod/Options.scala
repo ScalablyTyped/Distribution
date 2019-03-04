@@ -14,10 +14,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(integer: scala.Boolean, max: scala.Double, min: scala.Double): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(integer = integer, max = max, min = min)
+  
     __obj.asInstanceOf[Options]
   }
 }

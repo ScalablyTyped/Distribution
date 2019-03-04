@@ -20,8 +20,7 @@ object Anon_Args {
     onClick: js.Function1[/* repeated */ js.Any, _] = null,
     onHover: js.Function1[/* repeated */ js.Any, _] = null
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (onHover != null) __obj.updateDynamic("onHover")(onHover)

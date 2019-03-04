@@ -20,9 +20,7 @@ object PortProps {
     className: java.lang.String = null,
     extraProps: js.Any = null
   ): PortProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(name = name, node = node)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
     if (className != null) __obj.updateDynamic("className")(className)
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)

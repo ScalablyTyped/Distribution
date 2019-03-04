@@ -28,13 +28,7 @@ object IDocumentMeta {
     _etag: java.lang.String = null,
     _rid: java.lang.String = null
   ): IDocumentMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_self")(_self)
-    __obj.updateDynamic("_ts")(_ts)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(_self = _self, _ts = _ts, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable)
     if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
     if (_etag != null) __obj.updateDynamic("_etag")(_etag)
     if (_rid != null) __obj.updateDynamic("_rid")(_rid)

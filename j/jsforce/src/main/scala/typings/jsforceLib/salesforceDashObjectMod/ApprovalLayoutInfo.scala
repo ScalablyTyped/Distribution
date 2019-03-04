@@ -12,8 +12,8 @@ trait ApprovalLayoutInfo extends js.Object {
 object ApprovalLayoutInfo {
   @scala.inline
   def apply(approvalLayouts: js.Array[js.Object]): ApprovalLayoutInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approvalLayouts")(approvalLayouts)
+    val __obj = js.Dynamic.literal(approvalLayouts = approvalLayouts)
+  
     __obj.asInstanceOf[ApprovalLayoutInfo]
   }
 }

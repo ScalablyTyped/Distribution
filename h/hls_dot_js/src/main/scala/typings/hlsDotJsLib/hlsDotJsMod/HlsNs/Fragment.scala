@@ -60,16 +60,8 @@ object Fragment {
     title: java.lang.String,
     url: java.lang.String
   ): Fragment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cc")(cc)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("programDateTime")(programDateTime)
-    __obj.updateDynamic("sn")(sn)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("tagList")(tagList)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(cc = cc, duration = duration, level = level, programDateTime = programDateTime, sn = sn, start = start, tagList = tagList, title = title, url = url)
+  
     __obj.asInstanceOf[Fragment]
   }
 }

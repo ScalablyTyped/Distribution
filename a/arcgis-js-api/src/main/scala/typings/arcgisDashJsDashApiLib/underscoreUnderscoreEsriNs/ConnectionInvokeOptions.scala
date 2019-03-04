@@ -30,10 +30,7 @@ object ConnectionInvokeOptions {
     signal: stdLib.AbortSignal = null,
     transferList: js.Array[_] = null
   ): ConnectionInvokeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (signal != null) __obj.updateDynamic("signal")(signal)
     if (transferList != null) __obj.updateDynamic("transferList")(transferList)
     __obj.asInstanceOf[ConnectionInvokeOptions]

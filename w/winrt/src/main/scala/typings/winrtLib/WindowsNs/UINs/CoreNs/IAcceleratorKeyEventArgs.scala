@@ -19,11 +19,8 @@ object IAcceleratorKeyEventArgs {
     keyStatus: CorePhysicalKeyStatus,
     virtualKey: winrtLib.WindowsNs.SystemNs.VirtualKey
   ): IAcceleratorKeyEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("keyStatus")(keyStatus)
-    __obj.updateDynamic("virtualKey")(virtualKey)
+    val __obj = js.Dynamic.literal(eventType = eventType, handled = handled, keyStatus = keyStatus, virtualKey = virtualKey)
+  
     __obj.asInstanceOf[IAcceleratorKeyEventArgs]
   }
 }

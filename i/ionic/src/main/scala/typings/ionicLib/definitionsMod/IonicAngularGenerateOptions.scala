@@ -13,10 +13,8 @@ trait IonicAngularGenerateOptions extends GenerateOptions {
 object IonicAngularGenerateOptions {
   @scala.inline
   def apply(constants: scala.Boolean, module: scala.Boolean, name: java.lang.String, `type`: java.lang.String): IonicAngularGenerateOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constants")(constants)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(constants = constants, module = module, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IonicAngularGenerateOptions]
   }
 }

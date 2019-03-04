@@ -23,10 +23,8 @@ object ContentCreationException {
     Message: java.lang.String,
     eError: ContentCreationError
   ): ContentCreationException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("eError")(eError)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, eError = eError)
+  
     __obj.asInstanceOf[ContentCreationException]
   }
 }

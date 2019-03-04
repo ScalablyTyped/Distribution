@@ -18,8 +18,7 @@ object TransformSourceDescription {
     dependencies: js.Array[java.lang.String] = null,
     map: java.lang.String | RawSourceMap = null
   ): TransformSourceDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (ast != null) __obj.updateDynamic("ast")(ast)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])

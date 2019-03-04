@@ -19,9 +19,8 @@ trait SubscriptionQuery extends js.Object {
 object SubscriptionQuery {
   @scala.inline
   def apply(conditions: js.Array[SubscriptionQueryCondition], queryFlags: SubscriptionQueryFlags): SubscriptionQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("queryFlags")(queryFlags)
+    val __obj = js.Dynamic.literal(conditions = conditions, queryFlags = queryFlags)
+  
     __obj.asInstanceOf[SubscriptionQuery]
   }
 }

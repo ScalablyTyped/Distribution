@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonCheckBox extends js.Object {
 object Anon_EnumValuesAnonCheckBox {
   @scala.inline
   def apply(enumValues: Anon_CheckBox): Anon_EnumValuesAnonCheckBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonCheckBox]
   }
 }

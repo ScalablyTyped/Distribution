@@ -20,11 +20,8 @@ object PictureFill {
     getContentUrl: js.Function0[java.lang.String],
     getSourceUrl: js.Function0[java.lang.String]
   ): PictureFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getContentUrl")(getContentUrl)
-    __obj.updateDynamic("getSourceUrl")(getSourceUrl)
+    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob, getContentUrl = getContentUrl, getSourceUrl = getSourceUrl)
+  
     __obj.asInstanceOf[PictureFill]
   }
 }

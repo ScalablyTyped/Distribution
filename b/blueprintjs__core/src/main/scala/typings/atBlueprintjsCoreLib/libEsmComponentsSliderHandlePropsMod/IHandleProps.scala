@@ -45,8 +45,7 @@ object IHandleProps {
     onRelease: js.Function1[/* newValue */ scala.Double, scala.Unit] = null,
     `type`: HandleType = null
   ): IHandleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (className != null) __obj.updateDynamic("className")(className)
     if (intentAfter != null) __obj.updateDynamic("intentAfter")(intentAfter)
     if (intentBefore != null) __obj.updateDynamic("intentBefore")(intentBefore)

@@ -18,9 +18,8 @@ object BadRequestResult {
       js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
     ]
   ): BadRequestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("executeAsync")(executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync)
+  
     __obj.asInstanceOf[BadRequestResult]
   }
 }

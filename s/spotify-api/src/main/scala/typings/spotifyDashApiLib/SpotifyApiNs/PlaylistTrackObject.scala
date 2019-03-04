@@ -24,11 +24,8 @@ object PlaylistTrackObject {
     is_local: scala.Boolean,
     track: TrackObjectFull
   ): PlaylistTrackObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added_at")(added_at)
-    __obj.updateDynamic("added_by")(added_by)
-    __obj.updateDynamic("is_local")(is_local)
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(added_at = added_at, added_by = added_by, is_local = is_local, track = track)
+  
     __obj.asInstanceOf[PlaylistTrackObject]
   }
 }

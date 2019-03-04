@@ -69,9 +69,7 @@ object ISignInProperties {
     theme: java.lang.String = null,
     `type`: java.lang.String = null
   ): ISignInProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(element = element, name = name)
     if (brand != null) __obj.updateDynamic("brand")(brand)
     if (onerror != null) __obj.updateDynamic("onerror")(onerror)
     if (onloggedin != null) __obj.updateDynamic("onloggedin")(onloggedin)

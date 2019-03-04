@@ -18,10 +18,8 @@ object Anon_DRIVER {
     FOUR_WIRE: firmataLib.firmataMod.BoardNs.STEPPER_TYPE,
     TWO_WIRE: firmataLib.firmataMod.BoardNs.STEPPER_TYPE
   ): Anon_DRIVER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DRIVER")(DRIVER)
-    __obj.updateDynamic("FOUR_WIRE")(FOUR_WIRE)
-    __obj.updateDynamic("TWO_WIRE")(TWO_WIRE)
+    val __obj = js.Dynamic.literal(DRIVER = DRIVER, FOUR_WIRE = FOUR_WIRE, TWO_WIRE = TWO_WIRE)
+  
     __obj.asInstanceOf[Anon_DRIVER]
   }
 }

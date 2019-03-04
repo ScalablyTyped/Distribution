@@ -44,23 +44,8 @@ object Custompoi {
     title: java.lang.String,
     typeId: scala.Double
   ): Custompoi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("cityCode")(cityCode)
-    __obj.updateDynamic("databoxId")(databoxId)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("districtCode")(districtCode)
-    __obj.updateDynamic("extendedData")(extendedData)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("poiId")(poiId)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("postcode")(postcode)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("provinceCode")(provinceCode)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("typeId")(typeId)
+    val __obj = js.Dynamic.literal(address = address, city = city, cityCode = cityCode, databoxId = databoxId, district = district, districtCode = districtCode, extendedData = extendedData, phoneNumber = phoneNumber, poiId = poiId, point = point, postcode = postcode, province = province, provinceCode = provinceCode, tags = tags, title = title, typeId = typeId)
+  
     __obj.asInstanceOf[Custompoi]
   }
 }

@@ -18,10 +18,8 @@ object Anon_1 {
     LADDER: athenajsLib.athenajsLibNumbers.`3`,
     WALL: athenajsLib.athenajsLibNumbers.`2`
   ): Anon_1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AIR")(AIR)
-    __obj.updateDynamic("LADDER")(LADDER)
-    __obj.updateDynamic("WALL")(WALL)
+    val __obj = js.Dynamic.literal(AIR = AIR, LADDER = LADDER, WALL = WALL)
+  
     __obj.asInstanceOf[Anon_1]
   }
 }

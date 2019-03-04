@@ -76,28 +76,8 @@ object XamlBuildDefinition {
     uri: java.lang.String,
     url: java.lang.String
   ): XamlBuildDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("batchSize")(batchSize)
-    __obj.updateDynamic("buildArgs")(buildArgs)
-    __obj.updateDynamic("continuousIntegrationQuietPeriod")(continuousIntegrationQuietPeriod)
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("defaultDropLocation")(defaultDropLocation)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastBuild")(lastBuild)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("queueStatus")(queueStatus)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("supportedReasons")(supportedReasons)
-    __obj.updateDynamic("triggerType")(triggerType)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, batchSize = batchSize, buildArgs = buildArgs, continuousIntegrationQuietPeriod = continuousIntegrationQuietPeriod, controller = controller, createdDate = createdDate, createdOn = createdOn, defaultDropLocation = defaultDropLocation, description = description, id = id, lastBuild = lastBuild, name = name, path = path, project = project, queueStatus = queueStatus, repository = repository, revision = revision, supportedReasons = supportedReasons, triggerType = triggerType, uri = uri, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[XamlBuildDefinition]
   }
 }

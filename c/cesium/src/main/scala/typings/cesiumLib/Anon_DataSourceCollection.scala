@@ -18,9 +18,7 @@ object Anon_DataSourceCollection {
     scene: cesiumLib.cesiumMod.CesiumNs.Scene,
     visualizersCallback: cesiumLib.cesiumMod.CesiumNs.DataSourceDisplayNs.VisualizersCallback = null
   ): Anon_DataSourceCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSourceCollection")(dataSourceCollection)
-    __obj.updateDynamic("scene")(scene)
+    val __obj = js.Dynamic.literal(dataSourceCollection = dataSourceCollection, scene = scene)
     if (visualizersCallback != null) __obj.updateDynamic("visualizersCallback")(visualizersCallback)
     __obj.asInstanceOf[Anon_DataSourceCollection]
   }

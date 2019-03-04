@@ -45,10 +45,7 @@ object univariateColorSizeCreateContinuousRendererParamsColorOptions {
     legendOptions: univariateColorSizeCreateContinuousRendererParamsColorOptionsLegendOptions = null,
     theme: java.lang.String = null
   ): univariateColorSizeCreateContinuousRendererParamsColorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (theme != null) __obj.updateDynamic("theme")(theme)

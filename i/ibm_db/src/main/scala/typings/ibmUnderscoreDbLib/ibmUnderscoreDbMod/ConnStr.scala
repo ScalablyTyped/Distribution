@@ -24,13 +24,8 @@ object ConnStr {
     PWD: java.lang.String,
     UID: java.lang.String
   ): ConnStr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DATABASE")(DATABASE)
-    __obj.updateDynamic("HOSTNAME")(HOSTNAME)
-    __obj.updateDynamic("PORT")(PORT.asInstanceOf[js.Any])
-    __obj.updateDynamic("PROTOCOL")(PROTOCOL)
-    __obj.updateDynamic("PWD")(PWD)
-    __obj.updateDynamic("UID")(UID)
+    val __obj = js.Dynamic.literal(DATABASE = DATABASE, HOSTNAME = HOSTNAME, PORT = PORT.asInstanceOf[js.Any], PROTOCOL = PROTOCOL, PWD = PWD, UID = UID)
+  
     __obj.asInstanceOf[ConnStr]
   }
 }

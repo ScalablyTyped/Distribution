@@ -77,20 +77,8 @@ object _Impl {
     siblingLabel: java.lang.String,
     text: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addition")(addition)
-    __obj.updateDynamic("dropdown")(dropdown)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("menuIcon")(menuIcon)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("siblingLabel")(siblingLabel)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(addition = addition, dropdown = dropdown, icon = icon, input = input, item = item, label = label, menu = menu, menuIcon = menuIcon, message = message, remove = remove, search = search, siblingLabel = siblingLabel, text = text)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

@@ -28,14 +28,8 @@ object Connection {
     WIFI: scala.Double,
     `type`: scala.Double
   ): Connection = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("CELL_2G")(CELL_2G)
-    __obj.updateDynamic("CELL_3G")(CELL_3G)
-    __obj.updateDynamic("CELL_4G")(CELL_4G)
-    __obj.updateDynamic("ETHERNET")(ETHERNET)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("UNKNOWN")(UNKNOWN)
-    __obj.updateDynamic("WIFI")(WIFI)
+    val __obj = js.Dynamic.literal(CELL_2G = CELL_2G, CELL_3G = CELL_3G, CELL_4G = CELL_4G, ETHERNET = ETHERNET, NONE = NONE, UNKNOWN = UNKNOWN, WIFI = WIFI)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Connection]
   }
 }

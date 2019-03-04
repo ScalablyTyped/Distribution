@@ -32,17 +32,8 @@ object NxDimension {
     qShowAll: scala.Boolean,
     qTotalLabel: java.lang.String
   ): NxDimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
-    __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
-    __obj.updateDynamic("qCalcCond")(qCalcCond)
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
-    __obj.updateDynamic("qNullSuppression")(qNullSuppression)
-    __obj.updateDynamic("qOtherLabel")(qOtherLabel)
-    __obj.updateDynamic("qOtherTotalSpec")(qOtherTotalSpec)
-    __obj.updateDynamic("qShowAll")(qShowAll)
-    __obj.updateDynamic("qTotalLabel")(qTotalLabel)
+    val __obj = js.Dynamic.literal(qAttributeDimensions = qAttributeDimensions, qAttributeExpressions = qAttributeExpressions, qCalcCond = qCalcCond, qDef = qDef, qLibraryId = qLibraryId, qNullSuppression = qNullSuppression, qOtherLabel = qOtherLabel, qOtherTotalSpec = qOtherTotalSpec, qShowAll = qShowAll, qTotalLabel = qTotalLabel)
+  
     __obj.asInstanceOf[NxDimension]
   }
 }

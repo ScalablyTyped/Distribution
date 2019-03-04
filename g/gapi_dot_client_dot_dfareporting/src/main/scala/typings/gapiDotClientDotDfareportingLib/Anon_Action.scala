@@ -77,8 +77,7 @@ object Anon_Action {
     userIp: java.lang.String = null,
     userProfileIds: java.lang.String = null
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (action != null) __obj.updateDynamic("action")(action)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

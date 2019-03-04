@@ -20,11 +20,8 @@ object DistanceScales {
     pixelsPerDegree: js.Tuple3[scala.Double, scala.Double, scala.Double],
     pixelsPerMeter: js.Tuple3[scala.Double, scala.Double, scala.Double]
   ): DistanceScales = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("degreesPerPixel")(degreesPerPixel)
-    __obj.updateDynamic("metersPerPixel")(metersPerPixel)
-    __obj.updateDynamic("pixelsPerDegree")(pixelsPerDegree)
-    __obj.updateDynamic("pixelsPerMeter")(pixelsPerMeter)
+    val __obj = js.Dynamic.literal(degreesPerPixel = degreesPerPixel, metersPerPixel = metersPerPixel, pixelsPerDegree = pixelsPerDegree, pixelsPerMeter = pixelsPerMeter)
+  
     __obj.asInstanceOf[DistanceScales]
   }
 }

@@ -20,9 +20,7 @@ object Anon_FirstindicesFirstnote {
     first_indices: js.Array[scala.Double] = null,
     last_indices: js.Array[scala.Double] = null
   ): Anon_FirstindicesFirstnote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_note")(first_note)
-    __obj.updateDynamic("last_note")(last_note)
+    val __obj = js.Dynamic.literal(first_note = first_note, last_note = last_note)
     if (first_indices != null) __obj.updateDynamic("first_indices")(first_indices)
     if (last_indices != null) __obj.updateDynamic("last_indices")(last_indices)
     __obj.asInstanceOf[Anon_FirstindicesFirstnote]

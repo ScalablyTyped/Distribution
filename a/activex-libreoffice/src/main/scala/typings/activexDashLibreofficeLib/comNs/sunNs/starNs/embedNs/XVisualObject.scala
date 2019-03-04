@@ -63,14 +63,8 @@ object XVisualObject {
     release: js.Function0[scala.Unit],
     setVisualAreaSize: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
   ): XVisualObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMapUnit")(getMapUnit)
-    __obj.updateDynamic("getPreferredVisualRepresentation")(getPreferredVisualRepresentation)
-    __obj.updateDynamic("getVisualAreaSize")(getVisualAreaSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setVisualAreaSize")(setVisualAreaSize)
+    val __obj = js.Dynamic.literal(acquire = acquire, getMapUnit = getMapUnit, getPreferredVisualRepresentation = getPreferredVisualRepresentation, getVisualAreaSize = getVisualAreaSize, queryInterface = queryInterface, release = release, setVisualAreaSize = setVisualAreaSize)
+  
     __obj.asInstanceOf[XVisualObject]
   }
 }

@@ -15,9 +15,8 @@ trait FontName extends js.Object {
 object FontName {
   @scala.inline
   def apply(displayName: java.lang.String, fontId: java.lang.String): FontName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("fontId")(fontId)
+    val __obj = js.Dynamic.literal(displayName = displayName, fontId = fontId)
+  
     __obj.asInstanceOf[FontName]
   }
 }

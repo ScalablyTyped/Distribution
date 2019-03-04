@@ -32,8 +32,7 @@ object WPAPIOptions {
     transport: Transport = null,
     username: java.lang.String = null
   ): WPAPIOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     if (password != null) __obj.updateDynamic("password")(password)
     if (routes != null) __obj.updateDynamic("routes")(routes)

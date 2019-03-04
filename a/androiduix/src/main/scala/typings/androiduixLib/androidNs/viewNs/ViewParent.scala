@@ -51,22 +51,8 @@ object ViewParent {
     requestDisallowInterceptTouchEvent: js.Function1[scala.Boolean, js.Any],
     requestLayout: js.Function0[js.Any]
   ): ViewParent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bringChildToFront")(bringChildToFront)
-    __obj.updateDynamic("childDrawableStateChanged")(childDrawableStateChanged)
-    __obj.updateDynamic("childHasTransientStateChanged")(childHasTransientStateChanged)
-    __obj.updateDynamic("clearChildFocus")(clearChildFocus)
-    __obj.updateDynamic("focusSearch")(focusSearch)
-    __obj.updateDynamic("focusableViewAvailable")(focusableViewAvailable)
-    __obj.updateDynamic("getChildVisibleRect")(getChildVisibleRect)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("invalidateChild")(invalidateChild)
-    __obj.updateDynamic("invalidateChildInParent")(invalidateChildInParent)
-    __obj.updateDynamic("isLayoutRequested")(isLayoutRequested)
-    __obj.updateDynamic("requestChildFocus")(requestChildFocus)
-    __obj.updateDynamic("requestChildRectangleOnScreen")(requestChildRectangleOnScreen)
-    __obj.updateDynamic("requestDisallowInterceptTouchEvent")(requestDisallowInterceptTouchEvent)
-    __obj.updateDynamic("requestLayout")(requestLayout)
+    val __obj = js.Dynamic.literal(bringChildToFront = bringChildToFront, childDrawableStateChanged = childDrawableStateChanged, childHasTransientStateChanged = childHasTransientStateChanged, clearChildFocus = clearChildFocus, focusSearch = focusSearch, focusableViewAvailable = focusableViewAvailable, getChildVisibleRect = getChildVisibleRect, getParent = getParent, invalidateChild = invalidateChild, invalidateChildInParent = invalidateChildInParent, isLayoutRequested = isLayoutRequested, requestChildFocus = requestChildFocus, requestChildRectangleOnScreen = requestChildRectangleOnScreen, requestDisallowInterceptTouchEvent = requestDisallowInterceptTouchEvent, requestLayout = requestLayout)
+  
     __obj.asInstanceOf[ViewParent]
   }
 }

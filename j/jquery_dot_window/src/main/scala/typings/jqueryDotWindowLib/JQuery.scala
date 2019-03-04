@@ -18,8 +18,8 @@ object JQuery {
       jqueryDotWindowLib.JQueryWindowNs.Window
     ]
   ): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(window = window)
+  
     __obj.asInstanceOf[JQuery]
   }
 }

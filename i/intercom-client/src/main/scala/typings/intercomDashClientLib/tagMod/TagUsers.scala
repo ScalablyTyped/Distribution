@@ -13,9 +13,8 @@ trait TagUsers extends TagOper {
 object TagUsers {
   @scala.inline
   def apply(name: java.lang.String, users: js.Array[intercomDashClientLib.userMod.UserIdentifier]): TagUsers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(name = name, users = users)
+  
     __obj.asInstanceOf[TagUsers]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_ExternalId extends js.Object {
 object Anon_ExternalId {
   @scala.inline
   def apply(externalId: java.lang.String, name: java.lang.String, systemId: java.lang.String): Anon_ExternalId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("externalId")(externalId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("systemId")(systemId)
+    val __obj = js.Dynamic.literal(externalId = externalId, name = name, systemId = systemId)
+  
     __obj.asInstanceOf[Anon_ExternalId]
   }
 }

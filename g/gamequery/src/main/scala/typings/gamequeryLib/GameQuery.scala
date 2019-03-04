@@ -40,21 +40,8 @@ object GameQuery {
     tileTypePrefix: java.lang.String,
     tilemapCssClass: java.lang.String
   ): GameQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANIMATION_CALLBACK")(ANIMATION_CALLBACK)
-    __obj.updateDynamic("ANIMATION_HORIZONTAL")(ANIMATION_HORIZONTAL)
-    __obj.updateDynamic("ANIMATION_MULTI")(ANIMATION_MULTI)
-    __obj.updateDynamic("ANIMATION_ONCE")(ANIMATION_ONCE)
-    __obj.updateDynamic("ANIMATION_PINGPONG")(ANIMATION_PINGPONG)
-    __obj.updateDynamic("ANIMATION_VERTICAL")(ANIMATION_VERTICAL)
-    __obj.updateDynamic("Animation")(Animation)
-    __obj.updateDynamic("groupCssClass")(groupCssClass)
-    __obj.updateDynamic("keyTracker")(keyTracker)
-    __obj.updateDynamic("spriteCssClass")(spriteCssClass)
-    __obj.updateDynamic("tileCssClass")(tileCssClass)
-    __obj.updateDynamic("tileIdPrefix")(tileIdPrefix)
-    __obj.updateDynamic("tileTypePrefix")(tileTypePrefix)
-    __obj.updateDynamic("tilemapCssClass")(tilemapCssClass)
+    val __obj = js.Dynamic.literal(ANIMATION_CALLBACK = ANIMATION_CALLBACK, ANIMATION_HORIZONTAL = ANIMATION_HORIZONTAL, ANIMATION_MULTI = ANIMATION_MULTI, ANIMATION_ONCE = ANIMATION_ONCE, ANIMATION_PINGPONG = ANIMATION_PINGPONG, ANIMATION_VERTICAL = ANIMATION_VERTICAL, Animation = Animation, groupCssClass = groupCssClass, keyTracker = keyTracker, spriteCssClass = spriteCssClass, tileCssClass = tileCssClass, tileIdPrefix = tileIdPrefix, tileTypePrefix = tileTypePrefix, tilemapCssClass = tilemapCssClass)
+  
     __obj.asInstanceOf[GameQuery]
   }
 }

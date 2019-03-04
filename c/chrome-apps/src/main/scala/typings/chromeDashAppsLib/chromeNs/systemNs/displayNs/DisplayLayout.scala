@@ -45,11 +45,8 @@ object DisplayLayout {
       ]
     ]
   ): DisplayLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, offset = offset, parentId = parentId, position = position.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DisplayLayout]
   }
 }

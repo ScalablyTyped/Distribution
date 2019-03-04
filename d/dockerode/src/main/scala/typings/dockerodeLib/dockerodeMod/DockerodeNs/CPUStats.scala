@@ -20,11 +20,8 @@ object CPUStats {
     system_cpu_usage: scala.Double,
     throttling_data: dockerodeLib.Anon_Periods
   ): CPUStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpu_usage")(cpu_usage)
-    __obj.updateDynamic("online_cpus")(online_cpus)
-    __obj.updateDynamic("system_cpu_usage")(system_cpu_usage)
-    __obj.updateDynamic("throttling_data")(throttling_data)
+    val __obj = js.Dynamic.literal(cpu_usage = cpu_usage, online_cpus = online_cpus, system_cpu_usage = system_cpu_usage, throttling_data = throttling_data)
+  
     __obj.asInstanceOf[CPUStats]
   }
 }

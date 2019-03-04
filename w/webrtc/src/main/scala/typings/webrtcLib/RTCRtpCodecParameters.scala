@@ -22,8 +22,7 @@ object RTCRtpCodecParameters {
     channels: scala.Int | scala.Double = null,
     sdpFmtpLine: java.lang.String = null
   ): RTCRtpCodecParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(mimeType = mimeType)
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (sdpFmtpLine != null) __obj.updateDynamic("sdpFmtpLine")(sdpFmtpLine)
     __obj.asInstanceOf[RTCRtpCodecParameters]

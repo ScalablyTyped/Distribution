@@ -24,13 +24,8 @@ object ResourceActions {
     save: vueDashResourceLib.Anon_Method,
     update: vueDashResourceLib.Anon_Method
   ): ResourceActions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, query = query, remove = remove, save = save, update = update)
+  
     __obj.asInstanceOf[ResourceActions]
   }
 }

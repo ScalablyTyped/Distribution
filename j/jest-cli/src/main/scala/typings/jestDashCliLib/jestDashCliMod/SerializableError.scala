@@ -20,8 +20,7 @@ object SerializableError {
     stack: java.lang.String = null,
     `type`: java.lang.String = null
   ): SerializableError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (code != null) __obj.updateDynamic("code")(code)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

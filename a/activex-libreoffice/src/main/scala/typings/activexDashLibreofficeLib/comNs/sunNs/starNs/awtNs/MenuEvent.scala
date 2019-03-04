@@ -15,9 +15,8 @@ trait MenuEvent
 object MenuEvent {
   @scala.inline
   def apply(MenuId: scala.Double, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): MenuEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MenuId")(MenuId)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(MenuId = MenuId, Source = Source)
+  
     __obj.asInstanceOf[MenuEvent]
   }
 }

@@ -30,15 +30,8 @@ object Anon_IdIn {
     selected: scala.Boolean,
     `type`: java.lang.String
   ): Anon_IdIn = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("maximumLinks")(maximumLinks)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(id = id, in = in, label = label, links = links, maximumLinks = maximumLinks, name = name, parentNode = parentNode, selected = selected)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_IdIn]
   }
 }

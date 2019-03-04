@@ -40,21 +40,8 @@ object Anon_AndroidStudio {
     visualStudio: scala.Double,
     webStorm: scala.Double
   ): Anon_AndroidStudio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("androidStudio")(androidStudio)
-    __obj.updateDynamic("appCode")(appCode)
-    __obj.updateDynamic("cLion")(cLion)
-    __obj.updateDynamic("dataGrip")(dataGrip)
-    __obj.updateDynamic("eclipse")(eclipse)
-    __obj.updateDynamic("intelliJ")(intelliJ)
-    __obj.updateDynamic("mPS")(mPS)
-    __obj.updateDynamic("phpStorm")(phpStorm)
-    __obj.updateDynamic("pyCharm")(pyCharm)
-    __obj.updateDynamic("rubyMine")(rubyMine)
-    __obj.updateDynamic("tower")(tower)
-    __obj.updateDynamic("unknown")(unknown)
-    __obj.updateDynamic("visualStudio")(visualStudio)
-    __obj.updateDynamic("webStorm")(webStorm)
+    val __obj = js.Dynamic.literal(androidStudio = androidStudio, appCode = appCode, cLion = cLion, dataGrip = dataGrip, eclipse = eclipse, intelliJ = intelliJ, mPS = mPS, phpStorm = phpStorm, pyCharm = pyCharm, rubyMine = rubyMine, tower = tower, unknown = unknown, visualStudio = visualStudio, webStorm = webStorm)
+  
     __obj.asInstanceOf[Anon_AndroidStudio]
   }
 }

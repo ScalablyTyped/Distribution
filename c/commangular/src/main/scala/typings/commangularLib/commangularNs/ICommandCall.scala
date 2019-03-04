@@ -20,8 +20,7 @@ trait ICommandCall extends js.Object {
 object ICommandCall {
   @scala.inline
   def apply(command: java.lang.String, data: js.Any = null): ICommandCall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(command = command)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[ICommandCall]
   }

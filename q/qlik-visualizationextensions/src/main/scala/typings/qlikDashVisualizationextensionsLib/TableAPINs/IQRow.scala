@@ -23,10 +23,8 @@ trait IQRow extends js.Object {
 object IQRow {
   @scala.inline
   def apply(cells: js.Array[_], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cells")(cells)
-    __obj.updateDynamic("dimensions")(dimensions)
-    __obj.updateDynamic("measures")(measures)
+    val __obj = js.Dynamic.literal(cells = cells, dimensions = dimensions, measures = measures)
+  
     __obj.asInstanceOf[IQRow]
   }
 }

@@ -35,11 +35,8 @@ object Receiver {
     amount_received: scala.Double,
     amount_returned: scala.Double
   ): Receiver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("amount_charged")(amount_charged)
-    __obj.updateDynamic("amount_received")(amount_received)
-    __obj.updateDynamic("amount_returned")(amount_returned)
+    val __obj = js.Dynamic.literal(address = address, amount_charged = amount_charged, amount_received = amount_received, amount_returned = amount_returned)
+  
     __obj.asInstanceOf[Receiver]
   }
 }

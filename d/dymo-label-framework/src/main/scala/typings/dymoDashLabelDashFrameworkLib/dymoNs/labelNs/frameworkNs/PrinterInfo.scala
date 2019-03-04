@@ -33,14 +33,8 @@ object PrinterInfo {
     name: java.lang.String,
     printerType: java.lang.String
   ): PrinterInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAutoCutSupported")(isAutoCutSupported)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("isLocal")(isLocal)
-    __obj.updateDynamic("isTwinTurbo")(isTwinTurbo)
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("printerType")(printerType)
+    val __obj = js.Dynamic.literal(isAutoCutSupported = isAutoCutSupported, isConnected = isConnected, isLocal = isLocal, isTwinTurbo = isTwinTurbo, modelName = modelName, name = name, printerType = printerType)
+  
     __obj.asInstanceOf[PrinterInfo]
   }
 }

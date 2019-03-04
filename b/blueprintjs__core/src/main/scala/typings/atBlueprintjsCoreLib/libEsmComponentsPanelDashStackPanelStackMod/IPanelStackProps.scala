@@ -48,8 +48,7 @@ object IPanelStackProps {
       scala.Unit
     ] = null
   ): IPanelStackProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialPanel")(initialPanel)
+    val __obj = js.Dynamic.literal(initialPanel = initialPanel)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onClose != null) __obj.updateDynamic("onClose")(onClose)
     if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)

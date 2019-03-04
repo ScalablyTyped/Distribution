@@ -44,8 +44,7 @@ object SessionOptions {
     duration: scala.Int | scala.Double = null,
     requestKey: java.lang.String = null
   ): SessionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(secret = secret)
     if (activeDuration != null) __obj.updateDynamic("activeDuration")(activeDuration.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName)

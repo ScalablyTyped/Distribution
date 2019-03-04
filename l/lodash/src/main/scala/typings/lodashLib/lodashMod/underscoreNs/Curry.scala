@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Curry extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: `__` = js.native
+  var placeholder_Original: __ = js.native
   /**
     * Creates a function that accepts one or more arguments of func that when called either invokes func returning
     * its result, if all func arguments have been provided, or returns a function that accepts one or more of the

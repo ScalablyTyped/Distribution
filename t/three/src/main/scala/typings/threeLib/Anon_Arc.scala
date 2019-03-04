@@ -22,12 +22,8 @@ object Anon_Arc {
     tube: scala.Double,
     tubularSegments: scala.Double
   ): Anon_Arc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arc")(arc)
-    __obj.updateDynamic("radialSegments")(radialSegments)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("tube")(tube)
-    __obj.updateDynamic("tubularSegments")(tubularSegments)
+    val __obj = js.Dynamic.literal(arc = arc, radialSegments = radialSegments, radius = radius, tube = tube, tubularSegments = tubularSegments)
+  
     __obj.asInstanceOf[Anon_Arc]
   }
 }

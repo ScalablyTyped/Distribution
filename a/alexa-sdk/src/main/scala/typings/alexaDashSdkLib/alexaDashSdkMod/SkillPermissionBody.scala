@@ -12,8 +12,8 @@ trait SkillPermissionBody extends js.Object {
 object SkillPermissionBody {
   @scala.inline
   def apply(acceptedPermissions: js.Array[PermissionScope]): SkillPermissionBody = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptedPermissions")(acceptedPermissions)
+    val __obj = js.Dynamic.literal(acceptedPermissions = acceptedPermissions)
+  
     __obj.asInstanceOf[SkillPermissionBody]
   }
 }

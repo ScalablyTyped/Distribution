@@ -28,12 +28,8 @@ object PolylineEditor {
     enable: js.Function0[MarkerEditor | PolylineEditor | PolygonEditor],
     reset: js.Function0[scala.Unit]
   ): PolylineEditor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continueBackward")(continueBackward)
-    __obj.updateDynamic("continueForward")(continueForward)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(continueBackward = continueBackward, continueForward = continueForward, disable = disable, enable = enable, reset = reset)
+  
     __obj.asInstanceOf[PolylineEditor]
   }
 }

@@ -12,8 +12,8 @@ trait PiiTokenOptions extends js.Object {
 object PiiTokenOptions {
   @scala.inline
   def apply(personal_id_number: java.lang.String): PiiTokenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("personal_id_number")(personal_id_number)
+    val __obj = js.Dynamic.literal(personal_id_number = personal_id_number)
+  
     __obj.asInstanceOf[PiiTokenOptions]
   }
 }

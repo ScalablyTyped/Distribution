@@ -39,8 +39,7 @@ object IModuleConfig {
     xsrfCookieName: java.lang.String = null,
     xsrfHeaderName: java.lang.String = null
   ): IModuleConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(files = files)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)

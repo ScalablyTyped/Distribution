@@ -55,14 +55,8 @@ object StripeCard {
     funding: StripeCardDataFunding = null,
     name: java.lang.String = null
   ): StripeCard = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("createToken")(createToken)
-    __obj.updateDynamic("exp_month")(exp_month)
-    __obj.updateDynamic("exp_year")(exp_year)
-    __obj.updateDynamic("last4")(last4)
-    __obj.updateDynamic("validateCVC")(validateCVC)
-    __obj.updateDynamic("validateCardNumber")(validateCardNumber)
-    __obj.updateDynamic("validateExpiry")(validateExpiry)
+    val __obj = js.Dynamic.literal(createToken = createToken, exp_month = exp_month, exp_year = exp_year, last4 = last4, validateCVC = validateCVC, validateCardNumber = validateCardNumber, validateExpiry = validateExpiry)
+    __obj.updateDynamic("object")(`object`)
     if (address_city != null) __obj.updateDynamic("address_city")(address_city)
     if (address_country != null) __obj.updateDynamic("address_country")(address_country)
     if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1)

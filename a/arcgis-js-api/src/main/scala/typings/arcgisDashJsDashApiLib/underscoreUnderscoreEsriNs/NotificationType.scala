@@ -72,17 +72,8 @@ object NotificationType {
     subscribers: js.Array[java.lang.String],
     `type`: java.lang.String
   ): NotificationType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attachJobAttachments")(attachJobAttachments)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("senderEmail")(senderEmail)
-    __obj.updateDynamic("senderName")(senderName)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("subscribers")(subscribers)
+    val __obj = js.Dynamic.literal(attachJobAttachments = attachJobAttachments, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, message = message, propertyIsEnumerable = propertyIsEnumerable, senderEmail = senderEmail, senderName = senderName, subject = subject, subscribers = subscribers)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NotificationType]
   }
 }

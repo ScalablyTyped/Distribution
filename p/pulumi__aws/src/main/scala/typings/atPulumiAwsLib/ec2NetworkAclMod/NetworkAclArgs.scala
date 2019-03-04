@@ -57,8 +57,7 @@ object NetworkAclArgs {
     subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): NetworkAclArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
     if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
     if (ingress != null) __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])

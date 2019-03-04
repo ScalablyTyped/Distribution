@@ -126,15 +126,8 @@ object FastifyRequest {
       js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
     ])
   ): FastifyRequest[HttpRequest] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("accepts")(accepts)
-    __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    __obj.updateDynamic("charsets")(charsets.asInstanceOf[js.Any])
-    __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    __obj.updateDynamic("encodings")(encodings.asInstanceOf[js.Any])
-    __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accepts = accepts, charset = charset.asInstanceOf[js.Any], charsets = charsets.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], encodings = encodings.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastifyRequest[HttpRequest]]
   }
 }

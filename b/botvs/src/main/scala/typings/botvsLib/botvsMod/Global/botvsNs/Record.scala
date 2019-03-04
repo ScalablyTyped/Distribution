@@ -45,13 +45,8 @@ object Record {
     Time: scala.Double,
     Volume: scala.Double
   ): Record = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("High")(High)
-    __obj.updateDynamic("Low")(Low)
-    __obj.updateDynamic("Open")(Open)
-    __obj.updateDynamic("Time")(Time)
-    __obj.updateDynamic("Volume")(Volume)
+    val __obj = js.Dynamic.literal(Close = Close, High = High, Low = Low, Open = Open, Time = Time, Volume = Volume)
+  
     __obj.asInstanceOf[Record]
   }
 }

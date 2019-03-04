@@ -23,9 +23,7 @@ object SjclCipherEncryptParams {
     ts: scala.Int | scala.Double = null,
     v: scala.Int | scala.Double = null
   ): SjclCipherEncryptParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iv")(iv)
-    __obj.updateDynamic("salt")(salt)
+    val __obj = js.Dynamic.literal(iv = iv, salt = salt)
     if (adata != null) __obj.updateDynamic("adata")(adata)
     if (cipher != null) __obj.updateDynamic("cipher")(cipher)
     if (iter != null) __obj.updateDynamic("iter")(iter.asInstanceOf[js.Any])

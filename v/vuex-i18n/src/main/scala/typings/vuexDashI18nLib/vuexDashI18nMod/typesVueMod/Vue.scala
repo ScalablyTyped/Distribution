@@ -13,8 +13,8 @@ trait Vue extends js.Object {
 object Vue {
   @scala.inline
   def apply($i18n: vuexDashI18nLib.vuexDashI18nMod.Ii18n): Vue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$i18n")($i18n)
+    val __obj = js.Dynamic.literal($i18n = $i18n)
+  
     __obj.asInstanceOf[Vue]
   }
 }

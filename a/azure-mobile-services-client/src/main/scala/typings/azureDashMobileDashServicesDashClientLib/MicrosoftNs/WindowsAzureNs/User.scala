@@ -26,12 +26,8 @@ object User {
     mobileServiceAuthenticationToken: java.lang.String,
     userId: java.lang.String
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessTokens")(accessTokens)
-    __obj.updateDynamic("getIdentities")(getIdentities)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("mobileServiceAuthenticationToken")(mobileServiceAuthenticationToken)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(accessTokens = accessTokens, getIdentities = getIdentities, level = level, mobileServiceAuthenticationToken = mobileServiceAuthenticationToken, userId = userId)
+  
     __obj.asInstanceOf[User]
   }
 }

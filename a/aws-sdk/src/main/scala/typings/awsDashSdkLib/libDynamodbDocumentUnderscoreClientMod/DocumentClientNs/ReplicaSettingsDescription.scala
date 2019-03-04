@@ -52,8 +52,7 @@ object ReplicaSettingsDescription {
     ReplicaProvisionedWriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined,
     ReplicaStatus: ReplicaStatus = null
   ): ReplicaSettingsDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RegionName")(RegionName)
+    val __obj = js.Dynamic.literal(RegionName = RegionName)
     if (ReplicaBillingModeSummary != null) __obj.updateDynamic("ReplicaBillingModeSummary")(ReplicaBillingModeSummary)
     if (ReplicaGlobalSecondaryIndexSettings != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettings")(ReplicaGlobalSecondaryIndexSettings)
     if (ReplicaProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettings")(ReplicaProvisionedReadCapacityAutoScalingSettings)

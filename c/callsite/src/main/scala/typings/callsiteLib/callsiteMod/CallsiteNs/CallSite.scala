@@ -38,20 +38,8 @@ object CallSite {
     isNative: js.Function0[scala.Boolean],
     isToplevel: js.Function0[scala.Boolean]
   ): CallSite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColumnNumber")(getColumnNumber)
-    __obj.updateDynamic("getEvalOrigin")(getEvalOrigin)
-    __obj.updateDynamic("getFileName")(getFileName)
-    __obj.updateDynamic("getFunction")(getFunction)
-    __obj.updateDynamic("getFunctionName")(getFunctionName)
-    __obj.updateDynamic("getLineNumber")(getLineNumber)
-    __obj.updateDynamic("getMethodName")(getMethodName)
-    __obj.updateDynamic("getThis")(getThis)
-    __obj.updateDynamic("getTypeName")(getTypeName)
-    __obj.updateDynamic("isConstructor")(isConstructor)
-    __obj.updateDynamic("isEval")(isEval)
-    __obj.updateDynamic("isNative")(isNative)
-    __obj.updateDynamic("isToplevel")(isToplevel)
+    val __obj = js.Dynamic.literal(getColumnNumber = getColumnNumber, getEvalOrigin = getEvalOrigin, getFileName = getFileName, getFunction = getFunction, getFunctionName = getFunctionName, getLineNumber = getLineNumber, getMethodName = getMethodName, getThis = getThis, getTypeName = getTypeName, isConstructor = isConstructor, isEval = isEval, isNative = isNative, isToplevel = isToplevel)
+  
     __obj.asInstanceOf[CallSite]
   }
 }

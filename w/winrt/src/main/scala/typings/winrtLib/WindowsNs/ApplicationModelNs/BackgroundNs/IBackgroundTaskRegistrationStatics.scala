@@ -14,8 +14,8 @@ object IBackgroundTaskRegistrationStatics {
   def apply(
     allTasks: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, IBackgroundTaskRegistration]
   ): IBackgroundTaskRegistrationStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allTasks")(allTasks)
+    val __obj = js.Dynamic.literal(allTasks = allTasks)
+  
     __obj.asInstanceOf[IBackgroundTaskRegistrationStatics]
   }
 }

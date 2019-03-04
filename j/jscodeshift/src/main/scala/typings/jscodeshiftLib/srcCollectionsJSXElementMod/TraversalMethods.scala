@@ -24,9 +24,8 @@ object TraversalMethods {
     childElements: js.Function0[jscodeshiftLib.srcCollectionMod.Collection[JSXElement]],
     childNodes: js.Function0[jscodeshiftLib.srcCollectionMod.Collection[JSXElementChild]]
   ): TraversalMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childElements")(childElements)
-    __obj.updateDynamic("childNodes")(childNodes)
+    val __obj = js.Dynamic.literal(childElements = childElements, childNodes = childNodes)
+  
     __obj.asInstanceOf[TraversalMethods]
   }
 }

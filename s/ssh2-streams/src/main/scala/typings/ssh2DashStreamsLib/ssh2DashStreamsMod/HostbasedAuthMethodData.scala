@@ -24,11 +24,7 @@ object HostbasedAuthMethodData {
     blob: nodeLib.Buffer = null,
     signature: nodeLib.Buffer = null
   ): HostbasedAuthMethodData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyAlgo")(keyAlgo)
-    __obj.updateDynamic("localHostname")(localHostname)
-    __obj.updateDynamic("localUsername")(localUsername)
+    val __obj = js.Dynamic.literal(key = key, keyAlgo = keyAlgo, localHostname = localHostname, localUsername = localUsername)
     if (blob != null) __obj.updateDynamic("blob")(blob)
     if (signature != null) __obj.updateDynamic("signature")(signature)
     __obj.asInstanceOf[HostbasedAuthMethodData]

@@ -22,12 +22,8 @@ object Anon_DeltaDragDistance {
     dragPlanePoint: babylonjsLib.BABYLONNs.Vector3,
     pointerId: scala.Double
   ): Anon_DeltaDragDistance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("dragDistance")(dragDistance)
-    __obj.updateDynamic("dragPlaneNormal")(dragPlaneNormal)
-    __obj.updateDynamic("dragPlanePoint")(dragPlanePoint)
-    __obj.updateDynamic("pointerId")(pointerId)
+    val __obj = js.Dynamic.literal(delta = delta, dragDistance = dragDistance, dragPlaneNormal = dragPlaneNormal, dragPlanePoint = dragPlanePoint, pointerId = pointerId)
+  
     __obj.asInstanceOf[Anon_DeltaDragDistance]
   }
 }

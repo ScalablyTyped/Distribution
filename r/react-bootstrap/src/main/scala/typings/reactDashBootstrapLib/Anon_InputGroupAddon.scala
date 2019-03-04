@@ -12,8 +12,8 @@ trait Anon_InputGroupAddon extends js.Object {
 object Anon_InputGroupAddon {
   @scala.inline
   def apply(InputGroupAddonNs: js.Any): Anon_InputGroupAddon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputGroupAddonNs")(InputGroupAddonNs)
+    val __obj = js.Dynamic.literal(InputGroupAddonNs = InputGroupAddonNs)
+  
     __obj.asInstanceOf[Anon_InputGroupAddon]
   }
 }

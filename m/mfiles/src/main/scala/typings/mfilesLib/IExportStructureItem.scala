@@ -20,11 +20,8 @@ object IExportStructureItem {
     StructureItemID: scala.Double,
     StructureItemType: mfilesLib.MFilesNs.MFMetadataStructureItem
   ): IExportStructureItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("StructureItemGUID")(StructureItemGUID)
-    __obj.updateDynamic("StructureItemID")(StructureItemID)
-    __obj.updateDynamic("StructureItemType")(StructureItemType)
+    val __obj = js.Dynamic.literal(Clone = Clone, StructureItemGUID = StructureItemGUID, StructureItemID = StructureItemID, StructureItemType = StructureItemType)
+  
     __obj.asInstanceOf[IExportStructureItem]
   }
 }

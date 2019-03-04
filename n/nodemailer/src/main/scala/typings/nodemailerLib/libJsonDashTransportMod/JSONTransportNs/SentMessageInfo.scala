@@ -21,10 +21,8 @@ object SentMessageInfo {
     message: java.lang.String,
     messageId: java.lang.String
   ): SentMessageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("envelope")(envelope)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(envelope = envelope, message = message, messageId = messageId)
+  
     __obj.asInstanceOf[SentMessageInfo]
   }
 }

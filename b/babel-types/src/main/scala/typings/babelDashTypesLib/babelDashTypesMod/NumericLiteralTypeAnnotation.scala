@@ -24,10 +24,8 @@ object NumericLiteralTypeAnnotation {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): NumericLiteralTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

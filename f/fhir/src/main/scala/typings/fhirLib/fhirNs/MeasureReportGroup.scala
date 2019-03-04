@@ -46,8 +46,7 @@ object MeasureReportGroup {
     population: js.Array[MeasureReportGroupPopulation] = null,
     stratifier: js.Array[MeasureReportGroupStratifier] = null
   ): MeasureReportGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_measureScore != null) __obj.updateDynamic("_measureScore")(_measureScore)

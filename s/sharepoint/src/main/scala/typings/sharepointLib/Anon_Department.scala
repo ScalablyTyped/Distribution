@@ -20,11 +20,8 @@ object Anon_Department {
     MobilePhone: java.lang.String,
     Title: java.lang.String
   ): Anon_Department = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Department")(Department)
-    __obj.updateDynamic("Email")(Email)
-    __obj.updateDynamic("MobilePhone")(MobilePhone)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(Department = Department, Email = Email, MobilePhone = MobilePhone, Title = Title)
+  
     __obj.asInstanceOf[Anon_Department]
   }
 }

@@ -13,7 +13,8 @@ trait ReadyStateEvent extends js.Object {
 object ReadyStateEvent {
   @scala.inline
   def apply(`type`: RelayContainerLoadingEventType | RelayContainerErrorEventType, error: stdLib.Error = null): ReadyStateEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[ReadyStateEvent]
   }

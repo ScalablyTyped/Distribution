@@ -12,8 +12,8 @@ trait CircularArc extends JsonCurve {
 object CircularArc {
   @scala.inline
   def apply(c: js.Tuple2[Position, Position2D]): CircularArc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
+    val __obj = js.Dynamic.literal(c = c)
+  
     __obj.asInstanceOf[CircularArc]
   }
 }

@@ -16,9 +16,8 @@ object GetTestability {
     addToWindow: js.Function1[TestabilityRegistry, scala.Unit],
     findTestabilityInTree: js.Function3[TestabilityRegistry, js.Any, scala.Boolean, Testability | scala.Null]
   ): GetTestability = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addToWindow")(addToWindow)
-    __obj.updateDynamic("findTestabilityInTree")(findTestabilityInTree)
+    val __obj = js.Dynamic.literal(addToWindow = addToWindow, findTestabilityInTree = findTestabilityInTree)
+  
     __obj.asInstanceOf[GetTestability]
   }
 }

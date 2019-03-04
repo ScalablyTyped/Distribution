@@ -19,10 +19,8 @@ object Time {
     epoch_time: scala.Double,
     timezone: java.lang.String
   ): Time = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$reql_type$")($reql_type$)
-    __obj.updateDynamic("epoch_time")(epoch_time)
-    __obj.updateDynamic("timezone")(timezone)
+    val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, epoch_time = epoch_time, timezone = timezone)
+  
     __obj.asInstanceOf[Time]
   }
 }

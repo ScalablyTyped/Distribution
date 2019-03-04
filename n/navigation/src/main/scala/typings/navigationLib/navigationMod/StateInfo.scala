@@ -56,8 +56,7 @@ object StateInfo {
     trackCrumbTrail: scala.Boolean | java.lang.String = null,
     trackTypes: js.UndefOr[scala.Boolean] = js.undefined
   ): StateInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (defaultTypes != null) __obj.updateDynamic("defaultTypes")(defaultTypes)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)

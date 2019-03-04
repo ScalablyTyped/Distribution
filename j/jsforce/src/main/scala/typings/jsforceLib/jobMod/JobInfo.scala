@@ -20,10 +20,8 @@ object JobInfo {
     operation: java.lang.String,
     state: java.lang.String
   ): JobInfo = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(id = id, operation = operation, state = state)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[JobInfo]
   }
 }

@@ -20,10 +20,7 @@ object Anon_Key {
     value: js.Any,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("previousValue")(previousValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(path = path, previousValue = previousValue, value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

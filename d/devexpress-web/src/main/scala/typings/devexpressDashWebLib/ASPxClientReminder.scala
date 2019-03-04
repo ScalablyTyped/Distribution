@@ -47,13 +47,8 @@ object ASPxClientReminder {
     GetTimeBeforeStart: js.Function0[stdLib.Date],
     Snooze: js.Function1[scala.Double, scala.Unit]
   ): ASPxClientReminder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dismiss")(Dismiss)
-    __obj.updateDynamic("GetAlertTime")(GetAlertTime)
-    __obj.updateDynamic("GetCustomField")(GetCustomField)
-    __obj.updateDynamic("GetId")(GetId)
-    __obj.updateDynamic("GetTimeBeforeStart")(GetTimeBeforeStart)
-    __obj.updateDynamic("Snooze")(Snooze)
+    val __obj = js.Dynamic.literal(Dismiss = Dismiss, GetAlertTime = GetAlertTime, GetCustomField = GetCustomField, GetId = GetId, GetTimeBeforeStart = GetTimeBeforeStart, Snooze = Snooze)
+  
     __obj.asInstanceOf[ASPxClientReminder]
   }
 }

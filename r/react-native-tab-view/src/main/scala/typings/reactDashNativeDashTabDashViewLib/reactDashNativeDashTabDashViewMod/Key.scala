@@ -12,8 +12,8 @@ trait Key extends js.Object {
 object Key {
   @scala.inline
   def apply(key: java.lang.String): Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+  
     __obj.asInstanceOf[Key]
   }
 }

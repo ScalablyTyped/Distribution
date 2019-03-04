@@ -20,11 +20,8 @@ object Router {
     getStateForAction: js.Function2[js.Object, Nullable[TState], Nullable[TState]],
     getStateForActionOriginal: js.Function2[js.Object, Nullable[TState], Nullable[TState]]
   ): Router[TState] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActionForPathAndParams")(getActionForPathAndParams)
-    __obj.updateDynamic("getPathAndParamsForState")(getPathAndParamsForState)
-    __obj.updateDynamic("getStateForAction")(getStateForAction)
-    __obj.updateDynamic("getStateForActionOriginal")(getStateForActionOriginal)
+    val __obj = js.Dynamic.literal(getActionForPathAndParams = getActionForPathAndParams, getPathAndParamsForState = getPathAndParamsForState, getStateForAction = getStateForAction, getStateForActionOriginal = getStateForActionOriginal)
+  
     __obj.asInstanceOf[Router[TState]]
   }
 }

@@ -12,8 +12,8 @@ trait levelSwitchedData extends js.Object {
 object levelSwitchedData {
   @scala.inline
   def apply(level: scala.Double): levelSwitchedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(level = level)
+  
     __obj.asInstanceOf[levelSwitchedData]
   }
 }

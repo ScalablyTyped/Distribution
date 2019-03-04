@@ -20,10 +20,7 @@ object Node {
     textContext: java.lang.String,
     localName: java.lang.String = null
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TEXT_NODE")(TEXT_NODE)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("textContext")(textContext)
+    val __obj = js.Dynamic.literal(TEXT_NODE = TEXT_NODE, nodeType = nodeType, textContext = textContext)
     if (localName != null) __obj.updateDynamic("localName")(localName)
     __obj.asInstanceOf[Node]
   }

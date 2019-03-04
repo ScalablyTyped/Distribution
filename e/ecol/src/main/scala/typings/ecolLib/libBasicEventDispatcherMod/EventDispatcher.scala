@@ -12,7 +12,7 @@ class EventDispatcher[T, SourceT /* <: tstlLib.baseContainerContainerMod.Contain
   /**
     * @hidden
     */
-  var `listeners_`: js.Any = js.native
+  var listeners_ : js.Any = js.native
   /* CompleteClass */
   override def addEventListener(
     `type`: ecolLib.libBasicCollectionEventMod.CollectionEventNs.Type,

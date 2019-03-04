@@ -12,8 +12,8 @@ trait Anon_Zoom extends js.Object {
 object Anon_Zoom {
   @scala.inline
   def apply(zoom: scala.Double): Anon_Zoom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(zoom = zoom)
+  
     __obj.asInstanceOf[Anon_Zoom]
   }
 }

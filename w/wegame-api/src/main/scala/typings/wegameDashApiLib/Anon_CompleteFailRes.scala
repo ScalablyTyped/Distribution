@@ -23,8 +23,7 @@ object Anon_CompleteFailRes {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function1[/* res */ Anon_Result, scala.Unit] = null
   ): Anon_CompleteFailRes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("todayPlayedTime")(todayPlayedTime)
+    val __obj = js.Dynamic.literal(todayPlayedTime = todayPlayedTime)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

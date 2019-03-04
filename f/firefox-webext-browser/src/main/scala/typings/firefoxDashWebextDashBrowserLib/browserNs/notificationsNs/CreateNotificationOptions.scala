@@ -56,9 +56,8 @@ object CreateNotificationOptions {
     priority: scala.Int | scala.Double = null,
     progress: scala.Int | scala.Double = null
   ): CreateNotificationOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(message = message, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage)

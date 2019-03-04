@@ -64,10 +64,7 @@ object Anon_AbstractAccess {
     static: js.UndefOr[scala.Boolean] = js.undefined,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_AbstractAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(body = body, key = key, params = params)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])

@@ -23,12 +23,8 @@ object XPersist {
     release: js.Function0[scala.Unit],
     write: js.Function1[java.lang.String, scala.Unit]
   ): XPersist = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, read = read, release = release, write = write)
+  
     __obj.asInstanceOf[XPersist]
   }
 }

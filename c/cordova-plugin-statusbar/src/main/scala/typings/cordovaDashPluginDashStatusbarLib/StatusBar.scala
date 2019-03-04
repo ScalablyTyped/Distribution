@@ -73,17 +73,8 @@ object StatusBar {
     styleDefault: js.Function0[scala.Unit],
     styleLightContent: js.Function0[scala.Unit]
   ): StatusBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColorByHexString")(backgroundColorByHexString)
-    __obj.updateDynamic("backgroundColorByName")(backgroundColorByName)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("overlaysWebView")(overlaysWebView)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("styleBlackOpaque")(styleBlackOpaque)
-    __obj.updateDynamic("styleBlackTranslucent")(styleBlackTranslucent)
-    __obj.updateDynamic("styleDefault")(styleDefault)
-    __obj.updateDynamic("styleLightContent")(styleLightContent)
+    val __obj = js.Dynamic.literal(backgroundColorByHexString = backgroundColorByHexString, backgroundColorByName = backgroundColorByName, hide = hide, isVisible = isVisible, overlaysWebView = overlaysWebView, show = show, styleBlackOpaque = styleBlackOpaque, styleBlackTranslucent = styleBlackTranslucent, styleDefault = styleDefault, styleLightContent = styleLightContent)
+  
     __obj.asInstanceOf[StatusBar]
   }
 }

@@ -28,15 +28,8 @@ object IPropertyValueForDisplay {
     PropertyValue: IPropertyValue,
     ReadOnly: scala.Boolean
   ): IPropertyValueForDisplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ContentType")(ContentType)
-    __obj.updateDynamic("DataType")(DataType)
-    __obj.updateDynamic("DisplayValue")(DisplayValue)
-    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
-    __obj.updateDynamic("PropertyDefName")(PropertyDefName)
-    __obj.updateDynamic("PropertyValue")(PropertyValue)
-    __obj.updateDynamic("ReadOnly")(ReadOnly)
+    val __obj = js.Dynamic.literal(Clone = Clone, ContentType = ContentType, DataType = DataType, DisplayValue = DisplayValue, PropertyDef = PropertyDef.asInstanceOf[js.Any], PropertyDefName = PropertyDefName, PropertyValue = PropertyValue, ReadOnly = ReadOnly)
+  
     __obj.asInstanceOf[IPropertyValueForDisplay]
   }
 }

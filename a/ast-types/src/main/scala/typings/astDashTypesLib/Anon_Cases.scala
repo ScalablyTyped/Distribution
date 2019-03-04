@@ -22,9 +22,7 @@ object Anon_Cases {
     lexical: js.UndefOr[scala.Boolean] = js.undefined,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_Cases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cases")(cases)
-    __obj.updateDynamic("discriminant")(discriminant)
+    val __obj = js.Dynamic.literal(cases = cases, discriminant = discriminant)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(lexical)) __obj.updateDynamic("lexical")(lexical)
     if (loc != null) __obj.updateDynamic("loc")(loc)

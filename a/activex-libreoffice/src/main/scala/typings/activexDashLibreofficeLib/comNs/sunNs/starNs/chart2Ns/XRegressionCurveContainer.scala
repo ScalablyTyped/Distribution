@@ -34,15 +34,8 @@ object XRegressionCurveContainer {
     removeRegressionCurve: js.Function1[XRegressionCurve, scala.Unit],
     setRegressionCurves: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XRegressionCurve], scala.Unit]
   ): XRegressionCurveContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RegressionCurves")(RegressionCurves)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRegressionCurve")(addRegressionCurve)
-    __obj.updateDynamic("getRegressionCurves")(getRegressionCurves)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRegressionCurve")(removeRegressionCurve)
-    __obj.updateDynamic("setRegressionCurves")(setRegressionCurves)
+    val __obj = js.Dynamic.literal(RegressionCurves = RegressionCurves, acquire = acquire, addRegressionCurve = addRegressionCurve, getRegressionCurves = getRegressionCurves, queryInterface = queryInterface, release = release, removeRegressionCurve = removeRegressionCurve, setRegressionCurves = setRegressionCurves)
+  
     __obj.asInstanceOf[XRegressionCurveContainer]
   }
 }

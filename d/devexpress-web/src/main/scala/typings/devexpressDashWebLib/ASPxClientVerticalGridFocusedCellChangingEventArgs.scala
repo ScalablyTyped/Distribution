@@ -19,9 +19,8 @@ trait ASPxClientVerticalGridFocusedCellChangingEventArgs extends ASPxClientCance
 object ASPxClientVerticalGridFocusedCellChangingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, cellInfo: ASPxClientVerticalGridCellInfo): ASPxClientVerticalGridFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cellInfo")(cellInfo)
+    val __obj = js.Dynamic.literal(cancel = cancel, cellInfo = cellInfo)
+  
     __obj.asInstanceOf[ASPxClientVerticalGridFocusedCellChangingEventArgs]
   }
 }

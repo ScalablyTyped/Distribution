@@ -22,11 +22,8 @@ object Anon_IdSelected {
     x: scala.Double,
     y: scala.Double
   ): Anon_IdSelected = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(id = id, selected = selected, x = x, y = y)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_IdSelected]
   }
 }

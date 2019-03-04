@@ -12,8 +12,8 @@ trait IMediaProtectionServiceCompletion extends js.Object {
 object IMediaProtectionServiceCompletion {
   @scala.inline
   def apply(complete: js.Function1[scala.Boolean, scala.Unit]): IMediaProtectionServiceCompletion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[IMediaProtectionServiceCompletion]
   }
 }

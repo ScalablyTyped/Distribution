@@ -49,16 +49,8 @@ object TSDeclareMethod {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | Noop = null
   ): TSDeclareMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(async = async, computed = computed, end = end, generator = generator, key = key, kind = kind.asInstanceOf[js.Any], loc = loc, params = params, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])

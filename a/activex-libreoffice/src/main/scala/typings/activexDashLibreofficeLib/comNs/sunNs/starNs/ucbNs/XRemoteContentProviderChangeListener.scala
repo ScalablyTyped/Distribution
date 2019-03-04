@@ -28,12 +28,8 @@ object XRemoteContentProviderChangeListener {
     release: js.Function0[scala.Unit],
     remoteContentProviderChange: js.Function1[RemoteContentProviderChangeEvent, scala.Unit]
   ): XRemoteContentProviderChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remoteContentProviderChange")(remoteContentProviderChange)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, remoteContentProviderChange = remoteContentProviderChange)
+  
     __obj.asInstanceOf[XRemoteContentProviderChangeListener]
   }
 }

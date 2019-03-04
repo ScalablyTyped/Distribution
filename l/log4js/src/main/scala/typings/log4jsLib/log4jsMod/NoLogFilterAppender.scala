@@ -22,9 +22,8 @@ object NoLogFilterAppender {
     exclude: java.lang.String | js.Array[java.lang.String],
     `type`: log4jsLib.log4jsLibStrings.noLogFilter
   ): NoLogFilterAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("appender")(appender)
-    __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appender = appender, exclude = exclude.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NoLogFilterAppender]
   }
 }

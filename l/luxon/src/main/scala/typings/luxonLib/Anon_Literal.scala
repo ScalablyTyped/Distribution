@@ -13,8 +13,8 @@ trait Anon_Literal extends js.Object {
 object Anon_Literal {
   @scala.inline
   def apply(literal: scala.Boolean, `val`: java.lang.String): Anon_Literal = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("literal")(literal)
+    val __obj = js.Dynamic.literal(literal = literal)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_Literal]
   }
 }

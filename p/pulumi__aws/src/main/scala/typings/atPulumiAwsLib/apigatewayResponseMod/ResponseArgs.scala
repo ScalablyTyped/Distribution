@@ -49,9 +49,7 @@ object ResponseArgs {
     ] = null,
     statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ResponseArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(responseType = responseType.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
     if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])

@@ -20,8 +20,7 @@ object HashRouterArgs {
     hashType: java.lang.String = null,
     history: History = null
   ): HashRouterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(routes = routes)
     if (basename != null) __obj.updateDynamic("basename")(basename)
     if (hashType != null) __obj.updateDynamic("hashType")(hashType)
     if (history != null) __obj.updateDynamic("history")(history)

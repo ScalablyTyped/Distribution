@@ -18,8 +18,7 @@ object Anon_CheckEncodingFlags {
     encoding: adoneLib.adoneNs.fsNs.INs.Encoding = null,
     flags: adoneLib.adoneNs.fsNs.INs.Flag = null
   ): Anon_CheckEncodingFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("check")(check)
+    val __obj = js.Dynamic.literal(check = check)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     __obj.asInstanceOf[Anon_CheckEncodingFlags]

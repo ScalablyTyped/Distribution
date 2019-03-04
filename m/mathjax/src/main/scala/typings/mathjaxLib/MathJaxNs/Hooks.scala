@@ -18,10 +18,8 @@ object Hooks {
     Execute: js.Function0[CallbackObject],
     Remove: js.Function1[CallbackObject, scala.Unit]
   ): Hooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Execute")(Execute)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Execute = Execute, Remove = Remove)
+  
     __obj.asInstanceOf[Hooks]
   }
 }

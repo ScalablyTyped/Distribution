@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "ɵangular_packages_core_core_e")
 @js.native
 class ɵangular_packages_core_core_e protected ()
-  extends atAngularCoreLib.srcDiReflectiveUnderscoreInjectorMod.`ReflectiveInjector_` {
+  extends atAngularCoreLib.srcDiReflectiveUnderscoreInjectorMod.ReflectiveInjector_ {
   /**
     * Private
     */

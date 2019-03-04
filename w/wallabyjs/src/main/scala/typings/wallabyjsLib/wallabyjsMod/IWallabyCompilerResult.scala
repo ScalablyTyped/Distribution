@@ -14,10 +14,8 @@ trait IWallabyCompilerResult extends js.Object {
 object IWallabyCompilerResult {
   @scala.inline
   def apply(code: java.lang.String, map: java.lang.String, ranges: js.Any): IWallabyCompilerResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("ranges")(ranges)
+    val __obj = js.Dynamic.literal(code = code, map = map, ranges = ranges)
+  
     __obj.asInstanceOf[IWallabyCompilerResult]
   }
 }

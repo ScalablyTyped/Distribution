@@ -18,8 +18,8 @@ object TripsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TripsSearchResponse]
     ]
   ): TripsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(search = search)
+  
     __obj.asInstanceOf[TripsResource]
   }
 }

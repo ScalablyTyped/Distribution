@@ -32,8 +32,17 @@ object Anon_10 {
     `80`: java.lang.String,
     `90`: java.lang.String
   ): Anon_10 = {
-    val __obj = js.Dynamic.literal(`10` = `10`, `100` = `100`, `20` = `20`, `30` = `30`, `40` = `40`, `50` = `50`, `60` = `60`, `70` = `70`, `80` = `80`, `90` = `90`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("10")(`10`)
+    __obj.updateDynamic("100")(`100`)
+    __obj.updateDynamic("20")(`20`)
+    __obj.updateDynamic("30")(`30`)
+    __obj.updateDynamic("40")(`40`)
+    __obj.updateDynamic("50")(`50`)
+    __obj.updateDynamic("60")(`60`)
+    __obj.updateDynamic("70")(`70`)
+    __obj.updateDynamic("80")(`80`)
+    __obj.updateDynamic("90")(`90`)
     __obj.asInstanceOf[Anon_10]
   }
 }

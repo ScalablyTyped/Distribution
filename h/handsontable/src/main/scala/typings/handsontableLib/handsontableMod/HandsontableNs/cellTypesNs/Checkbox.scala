@@ -16,9 +16,8 @@ object Checkbox {
     editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Checkbox,
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Checkbox
   ): Checkbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(editor = editor, renderer = renderer)
+  
     __obj.asInstanceOf[Checkbox]
   }
 }

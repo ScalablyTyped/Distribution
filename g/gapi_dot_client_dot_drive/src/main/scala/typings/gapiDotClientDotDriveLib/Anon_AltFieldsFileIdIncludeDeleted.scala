@@ -51,8 +51,7 @@ object Anon_AltFieldsFileIdIncludeDeleted {
     startModifiedTime: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFileIdIncludeDeleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted)

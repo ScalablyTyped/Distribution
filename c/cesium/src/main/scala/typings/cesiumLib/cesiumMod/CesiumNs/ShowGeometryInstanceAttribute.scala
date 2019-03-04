@@ -20,11 +20,8 @@ object ShowGeometryInstanceAttribute {
     normalize: scala.Boolean,
     value: stdLib.Uint8Array
   ): ShowGeometryInstanceAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentDatatype")(componentDatatype)
-    __obj.updateDynamic("componentsPerAttribute")(componentsPerAttribute)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(componentDatatype = componentDatatype, componentsPerAttribute = componentsPerAttribute, normalize = normalize, value = value)
+  
     __obj.asInstanceOf[ShowGeometryInstanceAttribute]
   }
 }

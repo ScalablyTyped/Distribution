@@ -17,11 +17,8 @@ object ISearchPaneSuggestionsRequestedEventArgs {
     queryText: java.lang.String,
     request: SearchPaneSuggestionsRequest
   ): ISearchPaneSuggestionsRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("linguisticDetails")(linguisticDetails)
-    __obj.updateDynamic("queryText")(queryText)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(language = language, linguisticDetails = linguisticDetails, queryText = queryText, request = request)
+  
     __obj.asInstanceOf[ISearchPaneSuggestionsRequestedEventArgs]
   }
 }

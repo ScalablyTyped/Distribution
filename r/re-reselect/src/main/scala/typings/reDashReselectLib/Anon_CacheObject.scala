@@ -18,8 +18,7 @@ object Anon_CacheObject {
     cacheObject: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ICacheObject */ js.Any,
     selectorCreator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CreateSelectorInstance */ js.Any = null
   ): Anon_CacheObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheObject")(cacheObject)
+    val __obj = js.Dynamic.literal(cacheObject = cacheObject)
     if (selectorCreator != null) __obj.updateDynamic("selectorCreator")(selectorCreator)
     __obj.asInstanceOf[Anon_CacheObject]
   }

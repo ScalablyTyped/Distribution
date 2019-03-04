@@ -13,9 +13,8 @@ trait IRenderedRange extends js.Object {
 object IRenderedRange {
   @scala.inline
   def apply(bottomRow: scala.Double, topRow: scala.Double): IRenderedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottomRow")(bottomRow)
-    __obj.updateDynamic("topRow")(topRow)
+    val __obj = js.Dynamic.literal(bottomRow = bottomRow, topRow = topRow)
+  
     __obj.asInstanceOf[IRenderedRange]
   }
 }

@@ -42,13 +42,8 @@ object ProcessModel {
     referenceName: java.lang.String,
     typeId: java.lang.String
   ): ProcessModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("projects")(projects)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("typeId")(typeId)
+    val __obj = js.Dynamic.literal(description = description, name = name, projects = projects, properties = properties, referenceName = referenceName, typeId = typeId)
+  
     __obj.asInstanceOf[ProcessModel]
   }
 }

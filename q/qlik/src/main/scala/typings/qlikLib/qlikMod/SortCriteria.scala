@@ -26,14 +26,8 @@ object SortCriteria {
     qSortByNumeric: qlikLib.qlikLibNumbers.`-1` | qlikLib.qlikLibNumbers.`0` | qlikLib.qlikLibNumbers.`1`,
     qSortByState: qlikLib.qlikLibNumbers.`-1` | qlikLib.qlikLibNumbers.`0` | qlikLib.qlikLibNumbers.`1`
   ): SortCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExpression")(qExpression)
-    __obj.updateDynamic("qSortByAscii")(qSortByAscii.asInstanceOf[js.Any])
-    __obj.updateDynamic("qSortByExpression")(qSortByExpression.asInstanceOf[js.Any])
-    __obj.updateDynamic("qSortByFrequency")(qSortByFrequency.asInstanceOf[js.Any])
-    __obj.updateDynamic("qSortByLoadOrder")(qSortByLoadOrder.asInstanceOf[js.Any])
-    __obj.updateDynamic("qSortByNumeric")(qSortByNumeric.asInstanceOf[js.Any])
-    __obj.updateDynamic("qSortByState")(qSortByState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(qExpression = qExpression, qSortByAscii = qSortByAscii.asInstanceOf[js.Any], qSortByExpression = qSortByExpression.asInstanceOf[js.Any], qSortByFrequency = qSortByFrequency.asInstanceOf[js.Any], qSortByLoadOrder = qSortByLoadOrder.asInstanceOf[js.Any], qSortByNumeric = qSortByNumeric.asInstanceOf[js.Any], qSortByState = qSortByState.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SortCriteria]
   }
 }

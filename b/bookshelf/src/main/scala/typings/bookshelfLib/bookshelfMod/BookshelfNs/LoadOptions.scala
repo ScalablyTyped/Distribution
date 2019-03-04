@@ -16,8 +16,7 @@ object LoadOptions {
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     transacting: knexLib.knexMod.KnexNs.Transaction = null
   ): LoadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withRelated")(withRelated)
+    val __obj = js.Dynamic.literal(withRelated = withRelated)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (transacting != null) __obj.updateDynamic("transacting")(transacting)
     __obj.asInstanceOf[LoadOptions]

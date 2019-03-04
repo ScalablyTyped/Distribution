@@ -18,10 +18,8 @@ object Anon_Index {
     previousScene: reactDashNavigationLib.reactDashNavigationMod.TabScene,
     scene: reactDashNavigationLib.reactDashNavigationMod.TabScene
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jumpToIndex")(jumpToIndex)
-    __obj.updateDynamic("previousScene")(previousScene)
-    __obj.updateDynamic("scene")(scene)
+    val __obj = js.Dynamic.literal(jumpToIndex = jumpToIndex, previousScene = previousScene, scene = scene)
+  
     __obj.asInstanceOf[Anon_Index]
   }
 }

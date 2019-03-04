@@ -91,18 +91,8 @@ object WebRequestEventInterface {
     onResponseStarted: WebResponseCacheEvent,
     onSendHeaders: WebRequestHeadersEvent
   ): WebRequestEventInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onAuthRequired")(onAuthRequired)
-    __obj.updateDynamic("onBeforeRedirect")(onBeforeRedirect)
-    __obj.updateDynamic("onBeforeRequest")(onBeforeRequest)
-    __obj.updateDynamic("onBeforeSendHeaders")(onBeforeSendHeaders)
-    __obj.updateDynamic("onCompleted")(onCompleted)
-    __obj.updateDynamic("onErrorOccured")(onErrorOccured)
-    __obj.updateDynamic("onHeadersReceived")(onHeadersReceived)
-    __obj.updateDynamic("onMessage")(onMessage)
-    __obj.updateDynamic("onRequest")(onRequest)
-    __obj.updateDynamic("onResponseStarted")(onResponseStarted)
-    __obj.updateDynamic("onSendHeaders")(onSendHeaders)
+    val __obj = js.Dynamic.literal(onAuthRequired = onAuthRequired, onBeforeRedirect = onBeforeRedirect, onBeforeRequest = onBeforeRequest, onBeforeSendHeaders = onBeforeSendHeaders, onCompleted = onCompleted, onErrorOccured = onErrorOccured, onHeadersReceived = onHeadersReceived, onMessage = onMessage, onRequest = onRequest, onResponseStarted = onResponseStarted, onSendHeaders = onSendHeaders)
+  
     __obj.asInstanceOf[WebRequestEventInterface]
   }
 }

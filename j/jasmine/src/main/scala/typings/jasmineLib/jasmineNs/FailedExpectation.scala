@@ -20,13 +20,8 @@ object FailedExpectation {
     passed: scala.Boolean,
     stack: java.lang.String
   ): FailedExpectation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actual")(actual)
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("matcherName")(matcherName)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("passed")(passed)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, matcherName = matcherName, message = message, passed = passed, stack = stack)
+  
     __obj.asInstanceOf[FailedExpectation]
   }
 }

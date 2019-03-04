@@ -29,12 +29,8 @@ object XColumnsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XColumnsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Columns = Columns, acquire = acquire, getColumns = getColumns, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XColumnsSupplier]
   }
 }

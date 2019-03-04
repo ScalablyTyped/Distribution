@@ -31,10 +31,8 @@ object Delaunator {
     hull: delaunatorLib.delaunatorMod.DelaunatorNs.Node,
     triangles: stdLib.Uint32Array
   ): Delaunator[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("halfedges")(halfedges)
-    __obj.updateDynamic("hull")(hull)
-    __obj.updateDynamic("triangles")(triangles)
+    val __obj = js.Dynamic.literal(halfedges = halfedges, hull = hull, triangles = triangles)
+  
     __obj.asInstanceOf[Delaunator[P]]
   }
 }

@@ -20,10 +20,7 @@ object MUIDataTableProps {
     title: java.lang.String,
     options: MUIDataTableOptions = null
   ): MUIDataTableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(columns = columns, data = data, title = title)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[MUIDataTableProps]
   }

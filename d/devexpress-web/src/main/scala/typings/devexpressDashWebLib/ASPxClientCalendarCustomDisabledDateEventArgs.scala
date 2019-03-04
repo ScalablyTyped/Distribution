@@ -24,9 +24,8 @@ trait ASPxClientCalendarCustomDisabledDateEventArgs extends ASPxClientEventArgs 
 object ASPxClientCalendarCustomDisabledDateEventArgs {
   @scala.inline
   def apply(date: stdLib.Date, isDisabled: scala.Boolean): ASPxClientCalendarCustomDisabledDateEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("isDisabled")(isDisabled)
+    val __obj = js.Dynamic.literal(date = date, isDisabled = isDisabled)
+  
     __obj.asInstanceOf[ASPxClientCalendarCustomDisabledDateEventArgs]
   }
 }

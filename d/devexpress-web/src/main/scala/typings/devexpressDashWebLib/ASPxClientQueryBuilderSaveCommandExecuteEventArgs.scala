@@ -19,8 +19,8 @@ trait ASPxClientQueryBuilderSaveCommandExecuteEventArgs extends ASPxClientEventA
 object ASPxClientQueryBuilderSaveCommandExecuteEventArgs {
   @scala.inline
   def apply(handled: scala.Boolean): ASPxClientQueryBuilderSaveCommandExecuteEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
+    val __obj = js.Dynamic.literal(handled = handled)
+  
     __obj.asInstanceOf[ASPxClientQueryBuilderSaveCommandExecuteEventArgs]
   }
 }

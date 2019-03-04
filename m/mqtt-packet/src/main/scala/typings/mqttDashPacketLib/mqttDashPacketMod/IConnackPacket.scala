@@ -23,10 +23,7 @@ object IConnackPacket {
     length: scala.Int | scala.Double = null,
     messageId: scala.Int | scala.Double = null
   ): IConnackPacket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmd")(cmd)
-    __obj.updateDynamic("returnCode")(returnCode)
-    __obj.updateDynamic("sessionPresent")(sessionPresent)
+    val __obj = js.Dynamic.literal(cmd = cmd, returnCode = returnCode, sessionPresent = sessionPresent)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnackPacket]

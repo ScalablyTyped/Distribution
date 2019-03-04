@@ -16,9 +16,8 @@ object Anon_KinesisStreamArnRoleArn {
     kinesisStreamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_KinesisStreamArnRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kinesisStreamArn")(kinesisStreamArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kinesisStreamArn = kinesisStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_KinesisStreamArnRoleArn]
   }
 }

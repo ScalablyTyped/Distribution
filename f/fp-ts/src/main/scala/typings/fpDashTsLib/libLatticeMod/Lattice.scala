@@ -12,9 +12,8 @@ trait Lattice[A]
 object Lattice {
   @scala.inline
   def apply[A](join: js.Function2[A, A, A], meet: js.Function2[A, A, A]): Lattice[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("meet")(meet)
+    val __obj = js.Dynamic.literal(join = join, meet = meet)
+  
     __obj.asInstanceOf[Lattice[A]]
   }
 }

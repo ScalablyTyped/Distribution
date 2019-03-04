@@ -20,11 +20,8 @@ object Anon_BackgroundColor {
     borderWidth: scala.Double,
     rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
   ): Anon_BackgroundColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderWidth = borderWidth, rendered = rendered.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BackgroundColor]
   }
 }

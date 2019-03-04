@@ -33,12 +33,8 @@ object XApproveActionBroadcaster {
     release: js.Function0[scala.Unit],
     removeApproveActionListener: js.Function1[XApproveActionListener, scala.Unit]
   ): XApproveActionBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addApproveActionListener")(addApproveActionListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeApproveActionListener")(removeApproveActionListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addApproveActionListener = addApproveActionListener, queryInterface = queryInterface, release = release, removeApproveActionListener = removeApproveActionListener)
+  
     __obj.asInstanceOf[XApproveActionBroadcaster]
   }
 }

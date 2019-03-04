@@ -49,28 +49,8 @@ object ChartTwoAxisYSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): ChartTwoAxisYSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HasSecondaryYAxis")(HasSecondaryYAxis)
-    __obj.updateDynamic("HasSecondaryYAxisDescription")(HasSecondaryYAxisDescription)
-    __obj.updateDynamic("HasSecondaryYAxisTitle")(HasSecondaryYAxisTitle)
-    __obj.updateDynamic("HasYAxis")(HasYAxis)
-    __obj.updateDynamic("HasYAxisDescription")(HasYAxisDescription)
-    __obj.updateDynamic("HasYAxisGrid")(HasYAxisGrid)
-    __obj.updateDynamic("HasYAxisHelpGrid")(HasYAxisHelpGrid)
-    __obj.updateDynamic("HasYAxisTitle")(HasYAxisTitle)
-    __obj.updateDynamic("SecondaryYAxis")(SecondaryYAxis)
-    __obj.updateDynamic("YAxis")(YAxis)
-    __obj.updateDynamic("YAxisTitle")(YAxisTitle)
-    __obj.updateDynamic("YHelpGrid")(YHelpGrid)
-    __obj.updateDynamic("YMainGrid")(YMainGrid)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSecondaryYAxis")(getSecondaryYAxis)
-    __obj.updateDynamic("getYAxis")(getYAxis)
-    __obj.updateDynamic("getYAxisTitle")(getYAxisTitle)
-    __obj.updateDynamic("getYHelpGrid")(getYHelpGrid)
-    __obj.updateDynamic("getYMainGrid")(getYMainGrid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(HasSecondaryYAxis = HasSecondaryYAxis, HasSecondaryYAxisDescription = HasSecondaryYAxisDescription, HasSecondaryYAxisTitle = HasSecondaryYAxisTitle, HasYAxis = HasYAxis, HasYAxisDescription = HasYAxisDescription, HasYAxisGrid = HasYAxisGrid, HasYAxisHelpGrid = HasYAxisHelpGrid, HasYAxisTitle = HasYAxisTitle, SecondaryYAxis = SecondaryYAxis, YAxis = YAxis, YAxisTitle = YAxisTitle, YHelpGrid = YHelpGrid, YMainGrid = YMainGrid, acquire = acquire, getSecondaryYAxis = getSecondaryYAxis, getYAxis = getYAxis, getYAxisTitle = getYAxisTitle, getYHelpGrid = getYHelpGrid, getYMainGrid = getYMainGrid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[ChartTwoAxisYSupplier]
   }
 }

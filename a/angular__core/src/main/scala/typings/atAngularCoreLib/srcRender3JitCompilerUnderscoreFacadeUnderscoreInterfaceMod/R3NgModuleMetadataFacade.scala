@@ -24,12 +24,8 @@ object R3NgModuleMetadataFacade {
     imports: js.Array[js.Function],
     `type`: js.Any
   ): R3NgModuleMetadataFacade = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bootstrap")(bootstrap)
-    __obj.updateDynamic("declarations")(declarations)
-    __obj.updateDynamic("emitInline")(emitInline)
-    __obj.updateDynamic("exports")(exports)
-    __obj.updateDynamic("imports")(imports)
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap, declarations = declarations, emitInline = emitInline, exports = exports, imports = imports)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[R3NgModuleMetadataFacade]
   }
 }

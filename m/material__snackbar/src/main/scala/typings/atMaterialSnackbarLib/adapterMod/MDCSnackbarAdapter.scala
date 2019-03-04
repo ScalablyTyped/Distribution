@@ -56,29 +56,8 @@ object MDCSnackbarAdapter {
     unsetAriaHidden: js.Function0[scala.Unit],
     visibilityIsHidden: js.Function0[scala.Boolean]
   ): MDCSnackbarAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterActionClickHandler")(deregisterActionClickHandler)
-    __obj.updateDynamic("deregisterCapturedBlurHandler")(deregisterCapturedBlurHandler)
-    __obj.updateDynamic("deregisterCapturedInteractionHandler")(deregisterCapturedInteractionHandler)
-    __obj.updateDynamic("deregisterTransitionEndHandler")(deregisterTransitionEndHandler)
-    __obj.updateDynamic("deregisterVisibilityChangeHandler")(deregisterVisibilityChangeHandler)
-    __obj.updateDynamic("notifyHide")(notifyHide)
-    __obj.updateDynamic("notifyShow")(notifyShow)
-    __obj.updateDynamic("registerActionClickHandler")(registerActionClickHandler)
-    __obj.updateDynamic("registerCapturedBlurHandler")(registerCapturedBlurHandler)
-    __obj.updateDynamic("registerCapturedInteractionHandler")(registerCapturedInteractionHandler)
-    __obj.updateDynamic("registerTransitionEndHandler")(registerTransitionEndHandler)
-    __obj.updateDynamic("registerVisibilityChangeHandler")(registerVisibilityChangeHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setActionAriaHidden")(setActionAriaHidden)
-    __obj.updateDynamic("setActionText")(setActionText)
-    __obj.updateDynamic("setAriaHidden")(setAriaHidden)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("setMessageText")(setMessageText)
-    __obj.updateDynamic("unsetActionAriaHidden")(unsetActionAriaHidden)
-    __obj.updateDynamic("unsetAriaHidden")(unsetAriaHidden)
-    __obj.updateDynamic("visibilityIsHidden")(visibilityIsHidden)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterActionClickHandler = deregisterActionClickHandler, deregisterCapturedBlurHandler = deregisterCapturedBlurHandler, deregisterCapturedInteractionHandler = deregisterCapturedInteractionHandler, deregisterTransitionEndHandler = deregisterTransitionEndHandler, deregisterVisibilityChangeHandler = deregisterVisibilityChangeHandler, notifyHide = notifyHide, notifyShow = notifyShow, registerActionClickHandler = registerActionClickHandler, registerCapturedBlurHandler = registerCapturedBlurHandler, registerCapturedInteractionHandler = registerCapturedInteractionHandler, registerTransitionEndHandler = registerTransitionEndHandler, registerVisibilityChangeHandler = registerVisibilityChangeHandler, removeClass = removeClass, setActionAriaHidden = setActionAriaHidden, setActionText = setActionText, setAriaHidden = setAriaHidden, setFocus = setFocus, setMessageText = setMessageText, unsetActionAriaHidden = unsetActionAriaHidden, unsetAriaHidden = unsetAriaHidden, visibilityIsHidden = visibilityIsHidden)
+  
     __obj.asInstanceOf[MDCSnackbarAdapter]
   }
 }

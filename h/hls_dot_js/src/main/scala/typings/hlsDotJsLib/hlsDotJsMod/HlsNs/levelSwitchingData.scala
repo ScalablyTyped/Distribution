@@ -38,20 +38,8 @@ object levelSwitchingData {
     videoCodec: java.lang.String,
     width: scala.Double
   ): levelSwitchingData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("audioCodec")(audioCodec)
-    __obj.updateDynamic("bitrate")(bitrate)
-    __obj.updateDynamic("fragmentError")(fragmentError)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("loadError")(loadError)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("unknownCodecs")(unknownCodecs)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("urlId")(urlId)
-    __obj.updateDynamic("videoCodec")(videoCodec)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(attrs = attrs, audioCodec = audioCodec, bitrate = bitrate, fragmentError = fragmentError, height = height, level = level, loadError = loadError, name = name, unknownCodecs = unknownCodecs, url = url, urlId = urlId, videoCodec = videoCodec, width = width)
+  
     __obj.asInstanceOf[levelSwitchingData]
   }
 }

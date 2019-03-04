@@ -26,14 +26,8 @@ object Io {
     wchar: java.lang.String,
     write_bytes: java.lang.String
   ): Io = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelled_write_bytes")(cancelled_write_bytes)
-    __obj.updateDynamic("rchar")(rchar)
-    __obj.updateDynamic("read_bytes")(read_bytes)
-    __obj.updateDynamic("syscr")(syscr)
-    __obj.updateDynamic("syscw")(syscw)
-    __obj.updateDynamic("wchar")(wchar)
-    __obj.updateDynamic("write_bytes")(write_bytes)
+    val __obj = js.Dynamic.literal(cancelled_write_bytes = cancelled_write_bytes, rchar = rchar, read_bytes = read_bytes, syscr = syscr, syscw = syscw, wchar = wchar, write_bytes = write_bytes)
+  
     __obj.asInstanceOf[Io]
   }
 }

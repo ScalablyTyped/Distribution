@@ -30,9 +30,7 @@ object Anon_Cancel {
     proxy: java.lang.String = null,
     query_params: js.Any = null
   ): Anon_Cancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
     if (!js.isUndefined(create_target)) __obj.updateDynamic("create_target")(create_target)

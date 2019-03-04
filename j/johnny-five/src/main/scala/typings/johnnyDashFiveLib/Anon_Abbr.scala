@@ -22,12 +22,8 @@ object Anon_Abbr {
     low: scala.Double,
     name: java.lang.String
   ): Anon_Abbr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbr")(abbr)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(abbr = abbr, heading = heading, high = high, low = low, name = name)
+  
     __obj.asInstanceOf[Anon_Abbr]
   }
 }

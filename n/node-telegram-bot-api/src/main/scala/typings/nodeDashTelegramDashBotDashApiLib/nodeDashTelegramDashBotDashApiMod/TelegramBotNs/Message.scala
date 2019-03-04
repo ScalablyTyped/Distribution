@@ -90,10 +90,7 @@ object Message {
     video_note: VideoNote = null,
     voice: Voice = null
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chat")(chat)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("message_id")(message_id)
+    val __obj = js.Dynamic.literal(chat = chat, date = date, message_id = message_id)
     if (audio != null) __obj.updateDynamic("audio")(audio)
     if (author_signature != null) __obj.updateDynamic("author_signature")(author_signature)
     if (caption != null) __obj.updateDynamic("caption")(caption)

@@ -20,11 +20,8 @@ object Anon_Main {
     routeTableId: java.lang.String,
     subnetId: java.lang.String
   ): Anon_Main = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("routeTableAssociationId")(routeTableAssociationId)
-    __obj.updateDynamic("routeTableId")(routeTableId)
-    __obj.updateDynamic("subnetId")(subnetId)
+    val __obj = js.Dynamic.literal(main = main, routeTableAssociationId = routeTableAssociationId, routeTableId = routeTableId, subnetId = subnetId)
+  
     __obj.asInstanceOf[Anon_Main]
   }
 }

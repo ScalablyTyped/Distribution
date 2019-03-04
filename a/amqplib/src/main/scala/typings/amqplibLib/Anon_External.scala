@@ -16,9 +16,8 @@ object Anon_External {
     external: js.Function0[Anon_Mechanism],
     plain: js.Function2[java.lang.String, java.lang.String, Anon_MechanismPassword]
   ): Anon_External = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("external")(external)
-    __obj.updateDynamic("plain")(plain)
+    val __obj = js.Dynamic.literal(external = external, plain = plain)
+  
     __obj.asInstanceOf[Anon_External]
   }
 }

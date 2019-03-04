@@ -49,22 +49,7 @@ object ojLegendSettableProperties {
     expanded: atOracleOraclejetLib.ojkeysetMod.KeySet[K] = null,
     textStyle: js.Object = null
   ): ojLegendSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    __obj.updateDynamic("halign")(halign.asInstanceOf[js.Any])
-    __obj.updateDynamic("hiddenCategories")(hiddenCategories)
-    __obj.updateDynamic("hideAndShowBehavior")(hideAndShowBehavior.asInstanceOf[js.Any])
-    __obj.updateDynamic("highlightedCategories")(highlightedCategories)
-    __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    __obj.updateDynamic("symbolHeight")(symbolHeight)
-    __obj.updateDynamic("symbolWidth")(symbolWidth)
-    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(as = as, drilling = drilling.asInstanceOf[js.Any], halign = halign.asInstanceOf[js.Any], hiddenCategories = hiddenCategories, hideAndShowBehavior = hideAndShowBehavior.asInstanceOf[js.Any], highlightedCategories = highlightedCategories, hoverBehavior = hoverBehavior.asInstanceOf[js.Any], hoverBehaviorDelay = hoverBehaviorDelay, orientation = orientation.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], symbolHeight = symbolHeight, symbolWidth = symbolWidth, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, valign = valign.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (expanded != null) __obj.updateDynamic("expanded")(expanded)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)

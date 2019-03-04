@@ -27,10 +27,7 @@ object VNode {
     nodeName: ComponentFactory[P] | java.lang.String,
     key: Key = null
   ): VNode[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("nodeName")(nodeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], children = children, nodeName = nodeName.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode[P]]
   }

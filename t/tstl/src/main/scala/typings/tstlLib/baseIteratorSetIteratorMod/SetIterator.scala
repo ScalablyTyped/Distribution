@@ -22,6 +22,6 @@ class SetIterator[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseC
   /**
     * @hidden
     */
-  var `source_`: js.Any = js.native
+  var source_ : js.Any = js.native
 }
 

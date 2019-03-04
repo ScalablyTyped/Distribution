@@ -24,11 +24,8 @@ object TemplateMeta {
     name: java.lang.String,
     published: scala.Boolean
   ): TemplateMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("published")(published)
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, published = published)
+  
     __obj.asInstanceOf[TemplateMeta]
   }
 }

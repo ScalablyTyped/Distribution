@@ -19,10 +19,8 @@ object RTCDtlsTransport {
     onstatechange: DtlsTransportEventHandler,
     transport: RTCIceTransport
   ): RTCDtlsTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRemoteCertificates")(getRemoteCertificates)
-    __obj.updateDynamic("onstatechange")(onstatechange.asInstanceOf[js.Any])
-    __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(getRemoteCertificates = getRemoteCertificates, onstatechange = onstatechange.asInstanceOf[js.Any], transport = transport)
+  
     __obj.asInstanceOf[RTCDtlsTransport]
   }
 }

@@ -26,12 +26,7 @@ object F1Options {
     onState: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     onUpdate: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): F1Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parsers")(parsers)
-    __obj.updateDynamic("states")(states)
-    __obj.updateDynamic("targets")(targets)
-    __obj.updateDynamic("transitions")(transitions)
+    val __obj = js.Dynamic.literal(name = name, parsers = parsers, states = states, targets = targets, transitions = transitions)
     if (onState != null) __obj.updateDynamic("onState")(onState)
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
     __obj.asInstanceOf[F1Options]

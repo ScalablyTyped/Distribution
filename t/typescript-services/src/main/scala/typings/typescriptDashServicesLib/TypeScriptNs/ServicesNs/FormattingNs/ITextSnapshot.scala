@@ -20,11 +20,8 @@ object ITextSnapshot {
     getLineNumberFromPosition: js.Function1[scala.Double, scala.Double],
     getText: js.Function1[typescriptDashServicesLib.TypeScriptNs.TextSpan, java.lang.String]
   ): ITextSnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLineFromLineNumber")(getLineFromLineNumber)
-    __obj.updateDynamic("getLineFromPosition")(getLineFromPosition)
-    __obj.updateDynamic("getLineNumberFromPosition")(getLineNumberFromPosition)
-    __obj.updateDynamic("getText")(getText)
+    val __obj = js.Dynamic.literal(getLineFromLineNumber = getLineFromLineNumber, getLineFromPosition = getLineFromPosition, getLineNumberFromPosition = getLineNumberFromPosition, getText = getText)
+  
     __obj.asInstanceOf[ITextSnapshot]
   }
 }

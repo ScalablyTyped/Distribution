@@ -30,16 +30,8 @@ object MultiPage_BeforeDragOver_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): MultiPage_BeforeDragOver_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Control")(Control)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Index = Index, Shift = Shift, State = State, X = X, Y = Y)
+  
     __obj.asInstanceOf[MultiPage_BeforeDragOver_Parameter]
   }
 }

@@ -24,9 +24,8 @@ object XRowSetChangeBroadcaster {
     addRowSetChangeListener: js.Function1[XRowSetChangeListener, scala.Unit],
     removeRowSetChangeListener: js.Function1[XRowSetChangeListener, scala.Unit]
   ): XRowSetChangeBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRowSetChangeListener")(addRowSetChangeListener)
-    __obj.updateDynamic("removeRowSetChangeListener")(removeRowSetChangeListener)
+    val __obj = js.Dynamic.literal(addRowSetChangeListener = addRowSetChangeListener, removeRowSetChangeListener = removeRowSetChangeListener)
+  
     __obj.asInstanceOf[XRowSetChangeBroadcaster]
   }
 }

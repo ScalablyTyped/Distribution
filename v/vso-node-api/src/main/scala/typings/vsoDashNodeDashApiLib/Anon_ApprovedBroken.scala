@@ -24,13 +24,8 @@ object Anon_ApprovedBroken {
     rejected: scala.Double,
     running: scala.Double
   ): Anon_ApprovedBroken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approved")(approved)
-    __obj.updateDynamic("broken")(broken)
-    __obj.updateDynamic("notApplicable")(notApplicable)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("rejected")(rejected)
-    __obj.updateDynamic("running")(running)
+    val __obj = js.Dynamic.literal(approved = approved, broken = broken, notApplicable = notApplicable, queued = queued, rejected = rejected, running = running)
+  
     __obj.asInstanceOf[Anon_ApprovedBroken]
   }
 }

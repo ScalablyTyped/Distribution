@@ -16,8 +16,8 @@ trait TwitchExtFeatureFlags extends js.Object {
 object TwitchExtFeatureFlags {
   @scala.inline
   def apply(isChatEnabled: scala.Boolean): TwitchExtFeatureFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isChatEnabled")(isChatEnabled)
+    val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled)
+  
     __obj.asInstanceOf[TwitchExtFeatureFlags]
   }
 }

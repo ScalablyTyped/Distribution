@@ -40,17 +40,7 @@ object StructurePortal {
     structureType: STRUCTURE_PORTAL,
     ticksToDecay: scala.Int | scala.Double = null
   ): StructurePortal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("structureType")(structureType)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType)
     if (ticksToDecay != null) __obj.updateDynamic("ticksToDecay")(ticksToDecay.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructurePortal]
   }

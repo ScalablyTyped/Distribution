@@ -38,19 +38,8 @@ object Red {
     util: js.Any,
     version: js.Function0[java.lang.String]
   ): Red = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("comms")(comms)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("httpAdmin")(httpAdmin)
-    __obj.updateDynamic("httpNode")(httpNode)
-    __obj.updateDynamic("library")(library)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("util")(util)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(auth = auth, comms = comms, events = events, httpAdmin = httpAdmin, httpNode = httpNode, library = library, log = log, nodes = nodes, server = server, settings = settings, util = util, version = version)
+  
     __obj.asInstanceOf[Red]
   }
 }

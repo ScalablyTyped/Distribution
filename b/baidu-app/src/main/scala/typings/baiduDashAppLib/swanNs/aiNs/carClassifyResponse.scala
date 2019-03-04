@@ -19,10 +19,8 @@ object carClassifyResponse {
     log_id: scala.Double,
     result: js.Array[baiduDashAppLib.Anon_Name]
   ): carClassifyResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location_result")(location_result)
-    __obj.updateDynamic("log_id")(log_id)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(location_result = location_result, log_id = log_id, result = result)
+  
     __obj.asInstanceOf[carClassifyResponse]
   }
 }

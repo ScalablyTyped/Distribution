@@ -34,17 +34,8 @@ object AngularServeOptions {
     sourcemaps: js.UndefOr[scala.Boolean] = js.undefined,
     ssl: js.UndefOr[scala.Boolean] = js.undefined
   ): AngularServeOptions = {
-    val __obj = js.Dynamic.literal(`--` = `--`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("devapp")(devapp)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("lab")(lab)
-    __obj.updateDynamic("labHost")(labHost)
-    __obj.updateDynamic("labPort")(labPort)
-    __obj.updateDynamic("livereload")(livereload)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("proxy")(proxy)
+    val __obj = js.Dynamic.literal(address = address, devapp = devapp, engine = engine, lab = lab, labHost = labHost, labPort = labPort, livereload = livereload, open = open, port = port, proxy = proxy)
+    __obj.updateDynamic("--")(`--`)
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption)
     if (configuration != null) __obj.updateDynamic("configuration")(configuration)

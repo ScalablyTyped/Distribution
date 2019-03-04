@@ -22,10 +22,7 @@ object Anon_BottomRadiusLength {
     numberOfVerticalLines: scala.Int | scala.Double = null,
     slices: scala.Int | scala.Double = null
   ): Anon_BottomRadiusLength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottomRadius")(bottomRadius)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("topRadius")(topRadius)
+    val __obj = js.Dynamic.literal(bottomRadius = bottomRadius, length = length, topRadius = topRadius)
     if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines.asInstanceOf[js.Any])
     if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BottomRadiusLength]

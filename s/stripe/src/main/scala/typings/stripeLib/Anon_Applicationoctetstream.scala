@@ -18,9 +18,8 @@ object Anon_Applicationoctetstream {
     name: java.lang.String,
     `type`: java.lang.String | stripeLib.stripeLibStrings.`application/octet-stream`
   ): Anon_Applicationoctetstream = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Applicationoctetstream]
   }
 }

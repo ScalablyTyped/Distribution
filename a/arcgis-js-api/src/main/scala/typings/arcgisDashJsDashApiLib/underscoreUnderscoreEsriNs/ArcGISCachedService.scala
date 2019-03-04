@@ -29,10 +29,8 @@ trait ArcGISCachedService extends js.Object {
 object ArcGISCachedService {
   @scala.inline
   def apply(copyright: java.lang.String, spatialReference: SpatialReference, tileInfo: TileInfo): ArcGISCachedService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("spatialReference")(spatialReference)
-    __obj.updateDynamic("tileInfo")(tileInfo)
+    val __obj = js.Dynamic.literal(copyright = copyright, spatialReference = spatialReference, tileInfo = tileInfo)
+  
     __obj.asInstanceOf[ArcGISCachedService]
   }
 }

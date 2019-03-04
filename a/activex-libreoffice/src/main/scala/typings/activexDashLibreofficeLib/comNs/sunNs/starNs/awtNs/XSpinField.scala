@@ -38,17 +38,8 @@ object XSpinField {
     removeSpinListener: js.Function1[XSpinListener, scala.Unit],
     up: js.Function0[scala.Unit]
   ): XSpinField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSpinListener")(addSpinListener)
-    __obj.updateDynamic("down")(down)
-    __obj.updateDynamic("enableRepeat")(enableRepeat)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSpinListener")(removeSpinListener)
-    __obj.updateDynamic("up")(up)
+    val __obj = js.Dynamic.literal(acquire = acquire, addSpinListener = addSpinListener, down = down, enableRepeat = enableRepeat, first = first, last = last, queryInterface = queryInterface, release = release, removeSpinListener = removeSpinListener, up = up)
+  
     __obj.asInstanceOf[XSpinField]
   }
 }

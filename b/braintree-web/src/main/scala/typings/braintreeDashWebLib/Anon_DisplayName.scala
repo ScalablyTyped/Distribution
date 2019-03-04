@@ -18,8 +18,7 @@ object Anon_DisplayName {
     displayName: java.lang.String = null,
     merchantIdentifier: java.lang.String = null
   ): Anon_DisplayName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validationURL")(validationURL)
+    val __obj = js.Dynamic.literal(validationURL = validationURL)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (merchantIdentifier != null) __obj.updateDynamic("merchantIdentifier")(merchantIdentifier)
     __obj.asInstanceOf[Anon_DisplayName]

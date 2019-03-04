@@ -16,9 +16,8 @@ object Anon_EventVolume {
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event],
     volume: scala.Double
   ): Anon_EventVolume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(event = event, volume = volume)
+  
     __obj.asInstanceOf[Anon_EventVolume]
   }
 }

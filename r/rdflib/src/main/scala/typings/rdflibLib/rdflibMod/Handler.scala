@@ -13,9 +13,8 @@ trait Handler extends js.Object {
 object Handler {
   @scala.inline
   def apply(dom: js.Any, response: js.Any): Handler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dom")(dom)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(dom = dom, response = response)
+  
     __obj.asInstanceOf[Handler]
   }
 }

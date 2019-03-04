@@ -27,10 +27,7 @@ object EmbedRequest {
     embedderId: java.lang.String,
     data: js.Any = null
   ): EmbedRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allow")(allow)
-    __obj.updateDynamic("deny")(deny)
-    __obj.updateDynamic("embedderId")(embedderId)
+    val __obj = js.Dynamic.literal(allow = allow, deny = deny, embedderId = embedderId)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[EmbedRequest]
   }

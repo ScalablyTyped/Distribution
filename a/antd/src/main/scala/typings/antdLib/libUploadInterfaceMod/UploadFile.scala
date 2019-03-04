@@ -42,10 +42,8 @@ object UploadFile {
     thumbUrl: java.lang.String = null,
     url: java.lang.String = null
   ): UploadFile = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(name = name, size = size, uid = uid)
+    __obj.updateDynamic("type")(`type`)
     if (error != null) __obj.updateDynamic("error")(error)
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)
     if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])

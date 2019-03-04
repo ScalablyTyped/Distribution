@@ -22,12 +22,8 @@ object KeyboardEvent {
     isEventFromThisApp: scala.Boolean,
     startCoordinates: reactDashNativeLib.ScreenRect
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("endCoordinates")(endCoordinates)
-    __obj.updateDynamic("isEventFromThisApp")(isEventFromThisApp)
-    __obj.updateDynamic("startCoordinates")(startCoordinates)
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing, endCoordinates = endCoordinates, isEventFromThisApp = isEventFromThisApp, startCoordinates = startCoordinates)
+  
     __obj.asInstanceOf[KeyboardEvent]
   }
 }

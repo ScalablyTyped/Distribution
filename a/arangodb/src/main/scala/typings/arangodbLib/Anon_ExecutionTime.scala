@@ -28,15 +28,8 @@ object Anon_ExecutionTime {
     writesExecuted: scala.Double,
     writesIgnored: scala.Double
   ): Anon_ExecutionTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executionTime")(executionTime)
-    __obj.updateDynamic("filtered")(filtered)
-    __obj.updateDynamic("fullCount")(fullCount)
-    __obj.updateDynamic("httpRequests")(httpRequests)
-    __obj.updateDynamic("scannedFull")(scannedFull)
-    __obj.updateDynamic("scannedIndex")(scannedIndex)
-    __obj.updateDynamic("writesExecuted")(writesExecuted)
-    __obj.updateDynamic("writesIgnored")(writesIgnored)
+    val __obj = js.Dynamic.literal(executionTime = executionTime, filtered = filtered, fullCount = fullCount, httpRequests = httpRequests, scannedFull = scannedFull, scannedIndex = scannedIndex, writesExecuted = writesExecuted, writesIgnored = writesIgnored)
+  
     __obj.asInstanceOf[Anon_ExecutionTime]
   }
 }

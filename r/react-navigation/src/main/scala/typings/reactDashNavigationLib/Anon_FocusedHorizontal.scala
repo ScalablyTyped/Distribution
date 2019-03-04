@@ -14,9 +14,7 @@ trait Anon_FocusedHorizontal extends js.Object {
 object Anon_FocusedHorizontal {
   @scala.inline
   def apply(focused: scala.Boolean, horizontal: scala.Boolean, tintColor: java.lang.String = null): Anon_FocusedHorizontal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("horizontal")(horizontal)
+    val __obj = js.Dynamic.literal(focused = focused, horizontal = horizontal)
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
     __obj.asInstanceOf[Anon_FocusedHorizontal]
   }

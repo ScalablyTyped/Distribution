@@ -20,11 +20,8 @@ object IViewLocation {
     Overlapping: scala.Boolean,
     ParentFolder: IFolderDefs
   ): IViewLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("OverlappedFolder")(OverlappedFolder)
-    __obj.updateDynamic("Overlapping")(Overlapping)
-    __obj.updateDynamic("ParentFolder")(ParentFolder)
+    val __obj = js.Dynamic.literal(Clone = Clone, OverlappedFolder = OverlappedFolder, Overlapping = Overlapping, ParentFolder = ParentFolder)
+  
     __obj.asInstanceOf[IViewLocation]
   }
 }

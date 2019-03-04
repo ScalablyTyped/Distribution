@@ -85,22 +85,8 @@ object XSyncDbusSessionHelper {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSyncDbusSessionHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InstallCatalogs")(InstallCatalogs)
-    __obj.updateDynamic("InstallFontconfigResources")(InstallFontconfigResources)
-    __obj.updateDynamic("InstallGStreamerResources")(InstallGStreamerResources)
-    __obj.updateDynamic("InstallMimeTypes")(InstallMimeTypes)
-    __obj.updateDynamic("InstallPackageFiles")(InstallPackageFiles)
-    __obj.updateDynamic("InstallPackageNames")(InstallPackageNames)
-    __obj.updateDynamic("InstallPrinterDrivers")(InstallPrinterDrivers)
-    __obj.updateDynamic("InstallProvideFiles")(InstallProvideFiles)
-    __obj.updateDynamic("InstallResources")(InstallResources)
-    __obj.updateDynamic("IsInstalled")(IsInstalled)
-    __obj.updateDynamic("RemovePackageByFiles")(RemovePackageByFiles)
-    __obj.updateDynamic("SearchFile")(SearchFile)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(InstallCatalogs = InstallCatalogs, InstallFontconfigResources = InstallFontconfigResources, InstallGStreamerResources = InstallGStreamerResources, InstallMimeTypes = InstallMimeTypes, InstallPackageFiles = InstallPackageFiles, InstallPackageNames = InstallPackageNames, InstallPrinterDrivers = InstallPrinterDrivers, InstallProvideFiles = InstallProvideFiles, InstallResources = InstallResources, IsInstalled = IsInstalled, RemovePackageByFiles = RemovePackageByFiles, SearchFile = SearchFile, acquire = acquire, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSyncDbusSessionHelper]
   }
 }

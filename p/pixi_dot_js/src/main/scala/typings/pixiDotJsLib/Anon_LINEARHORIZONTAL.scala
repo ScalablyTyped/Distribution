@@ -13,9 +13,8 @@ trait Anon_LINEARHORIZONTAL extends js.Object {
 object Anon_LINEARHORIZONTAL {
   @scala.inline
   def apply(LINEAR_HORIZONTAL: scala.Double, LINEAR_VERTICAL: scala.Double): Anon_LINEARHORIZONTAL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LINEAR_HORIZONTAL")(LINEAR_HORIZONTAL)
-    __obj.updateDynamic("LINEAR_VERTICAL")(LINEAR_VERTICAL)
+    val __obj = js.Dynamic.literal(LINEAR_HORIZONTAL = LINEAR_HORIZONTAL, LINEAR_VERTICAL = LINEAR_VERTICAL)
+  
     __obj.asInstanceOf[Anon_LINEARHORIZONTAL]
   }
 }

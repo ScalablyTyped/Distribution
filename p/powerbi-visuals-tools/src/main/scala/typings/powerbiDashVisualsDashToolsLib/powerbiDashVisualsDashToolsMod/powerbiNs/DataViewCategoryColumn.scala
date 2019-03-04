@@ -27,9 +27,7 @@ object DataViewCategoryColumn {
     ] = null,
     objects: js.Array[DataViewObjects] = null
   ): DataViewCategoryColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(source = source, values = values)
     if (identity != null) __obj.updateDynamic("identity")(identity)
     if (identityFields != null) __obj.updateDynamic("identityFields")(identityFields)
     if (objects != null) __obj.updateDynamic("objects")(objects)

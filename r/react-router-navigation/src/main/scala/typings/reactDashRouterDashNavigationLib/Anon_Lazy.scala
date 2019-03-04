@@ -12,8 +12,8 @@ trait Anon_Lazy extends js.Object {
 object Anon_Lazy {
   @scala.inline
   def apply(`lazy`: reactDashRouterDashNavigationLib.reactDashRouterDashNavigationLibNumbers.`true`): Anon_Lazy = {
-    val __obj = js.Dynamic.literal(`lazy` = `lazy`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lazy")(`lazy`)
     __obj.asInstanceOf[Anon_Lazy]
   }
 }

@@ -20,11 +20,8 @@ object DataSourceDetails {
     parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     resultSelector: java.lang.String
   ): DataSourceDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSourceName")(dataSourceName)
-    __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("resultSelector")(resultSelector)
+    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName, dataSourceUrl = dataSourceUrl, parameters = parameters, resultSelector = resultSelector)
+  
     __obj.asInstanceOf[DataSourceDetails]
   }
 }

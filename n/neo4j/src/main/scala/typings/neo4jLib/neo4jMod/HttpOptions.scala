@@ -15,11 +15,8 @@ trait HttpOptions extends js.Object {
 object HttpOptions {
   @scala.inline
   def apply(body: js.Any, method: java.lang.String, path: java.lang.String, raw: js.Any): HttpOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(body = body, method = method, path = path, raw = raw)
+  
     __obj.asInstanceOf[HttpOptions]
   }
 }

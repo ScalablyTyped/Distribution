@@ -12,8 +12,8 @@ trait Anon_Wb extends js.Object {
 object Anon_Wb {
   @scala.inline
   def apply(Wb: activexDashExcelLib.ExcelNs.Workbook): Anon_Wb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Wb")(Wb)
+    val __obj = js.Dynamic.literal(Wb = Wb)
+  
     __obj.asInstanceOf[Anon_Wb]
   }
 }

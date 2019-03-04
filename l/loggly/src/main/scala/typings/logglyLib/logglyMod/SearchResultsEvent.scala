@@ -26,14 +26,8 @@ object SearchResultsEvent {
     tags: js.Array[java.lang.String],
     timestamp: scala.Double
   ): SearchResultsEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("logmsg")(logmsg)
-    __obj.updateDynamic("logtypes")(logtypes)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(event = event, id = id, logmsg = logmsg, logtypes = logtypes, raw = raw, tags = tags, timestamp = timestamp)
+  
     __obj.asInstanceOf[SearchResultsEvent]
   }
 }

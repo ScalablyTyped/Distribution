@@ -138,24 +138,8 @@ object SearchSource {
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): SearchSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoNavigate")(autoNavigate)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("maxResults")(maxResults)
-    __obj.updateDynamic("maxSuggestions")(maxSuggestions)
-    __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters)
-    __obj.updateDynamic("outFields")(outFields)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("popupEnabled")(popupEnabled)
-    __obj.updateDynamic("popupTemplate")(popupTemplate)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled)
-    __obj.updateDynamic("resultSymbol")(resultSymbol)
-    __obj.updateDynamic("suffix")(suffix)
-    __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("withinViewEnabled")(withinViewEnabled)
-    __obj.updateDynamic("zoomScale")(zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+  
     __obj.asInstanceOf[SearchSource]
   }
 }

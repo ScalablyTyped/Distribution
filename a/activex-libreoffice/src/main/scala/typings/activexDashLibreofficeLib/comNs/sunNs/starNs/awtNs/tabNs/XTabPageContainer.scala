@@ -65,15 +65,8 @@ object XTabPageContainer {
     isTabPageActive: js.Function1[scala.Double, scala.Boolean],
     removeTabPageContainerListener: js.Function1[XTabPageContainerListener, scala.Unit]
   ): XTabPageContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTabPageID")(ActiveTabPageID)
-    __obj.updateDynamic("TabPageCount")(TabPageCount)
-    __obj.updateDynamic("addTabPageContainerListener")(addTabPageContainerListener)
-    __obj.updateDynamic("getTabPage")(getTabPage)
-    __obj.updateDynamic("getTabPageByID")(getTabPageByID)
-    __obj.updateDynamic("getTabPageCount")(getTabPageCount)
-    __obj.updateDynamic("isTabPageActive")(isTabPageActive)
-    __obj.updateDynamic("removeTabPageContainerListener")(removeTabPageContainerListener)
+    val __obj = js.Dynamic.literal(ActiveTabPageID = ActiveTabPageID, TabPageCount = TabPageCount, addTabPageContainerListener = addTabPageContainerListener, getTabPage = getTabPage, getTabPageByID = getTabPageByID, getTabPageCount = getTabPageCount, isTabPageActive = isTabPageActive, removeTabPageContainerListener = removeTabPageContainerListener)
+  
     __obj.asInstanceOf[XTabPageContainer]
   }
 }

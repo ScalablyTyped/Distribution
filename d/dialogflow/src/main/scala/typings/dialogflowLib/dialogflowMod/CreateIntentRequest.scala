@@ -20,9 +20,7 @@ object CreateIntentRequest {
     intentView: IntentView = null,
     languageCode: java.lang.String = null
   ): CreateIntentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(intent = intent, parent = parent)
     if (intentView != null) __obj.updateDynamic("intentView")(intentView)
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
     __obj.asInstanceOf[CreateIntentRequest]

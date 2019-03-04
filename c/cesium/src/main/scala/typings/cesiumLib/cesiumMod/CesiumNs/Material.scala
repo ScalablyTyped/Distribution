@@ -28,14 +28,8 @@ object Material {
     `type`: java.lang.String,
     uniforms: js.Any
   ): Material = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("isTranslucent")(isTranslucent)
-    __obj.updateDynamic("materials")(materials)
-    __obj.updateDynamic("shaderSource")(shaderSource)
-    __obj.updateDynamic("translucent")(translucent)
-    __obj.updateDynamic("uniforms")(uniforms)
+    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, isTranslucent = isTranslucent, materials = materials, shaderSource = shaderSource, translucent = translucent, uniforms = uniforms)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Material]
   }
 }

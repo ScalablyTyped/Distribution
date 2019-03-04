@@ -334,15 +334,7 @@ object Relay {
     version: java.lang.String = null,
     version_status: onionooLib.onionooLibStrings.recommended | onionooLib.onionooLibStrings.experimental | onionooLib.onionooLibStrings.obsolete | (onionooLib.onionooLibStrings.`new in series`) | onionooLib.onionooLibStrings.unrecommended = null
   ): Relay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consensus_weight")(consensus_weight)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("first_seen")(first_seen)
-    __obj.updateDynamic("last_changed_address_or_port")(last_changed_address_or_port)
-    __obj.updateDynamic("last_seen")(last_seen)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("or_addresses")(or_addresses)
-    __obj.updateDynamic("running")(running)
+    val __obj = js.Dynamic.literal(consensus_weight = consensus_weight, fingerprint = fingerprint, first_seen = first_seen, last_changed_address_or_port = last_changed_address_or_port, last_seen = last_seen, nickname = nickname, or_addresses = or_addresses, running = running)
     if (advertised_bandwidth != null) __obj.updateDynamic("advertised_bandwidth")(advertised_bandwidth.asInstanceOf[js.Any])
     if (alleged_family != null) __obj.updateDynamic("alleged_family")(alleged_family)
     if (as != null) __obj.updateDynamic("as")(as)

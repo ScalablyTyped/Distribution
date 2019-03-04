@@ -43,8 +43,7 @@ object TextfieldProps {
     title: java.lang.String = null,
     value: java.lang.String | scala.Double = null
   ): TextfieldProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

@@ -13,9 +13,8 @@ trait ProducerTopicMessage extends js.Object {
 object ProducerTopicMessage {
   @scala.inline
   def apply(messages: js.Array[ProducerMessage], topic: java.lang.String): ProducerTopicMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(messages = messages, topic = topic)
+  
     __obj.asInstanceOf[ProducerTopicMessage]
   }
 }

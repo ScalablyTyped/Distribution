@@ -40,17 +40,8 @@ object TemplateInstance {
     subscriptionsReady: js.Function0[scala.Boolean],
     view: js.Object
   ): TemplateInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$")($)
-    __obj.updateDynamic("autorun")(autorun)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findAll")(findAll)
-    __obj.updateDynamic("firstNode")(firstNode)
-    __obj.updateDynamic("lastNode")(lastNode)
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("subscriptionsReady")(subscriptionsReady)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal($ = $, autorun = autorun, data = data, find = find, findAll = findAll, firstNode = firstNode, lastNode = lastNode, subscribe = subscribe, subscriptionsReady = subscriptionsReady, view = view)
+  
     __obj.asInstanceOf[TemplateInstance]
   }
 }

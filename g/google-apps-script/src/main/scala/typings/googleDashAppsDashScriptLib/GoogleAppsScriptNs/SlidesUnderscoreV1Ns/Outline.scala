@@ -33,12 +33,8 @@ object Outline {
     solid_fill: SolidFill,
     weight: Dimension
   ): Outline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dash_style")(dash_style)
-    __obj.updateDynamic("outline_fill")(outline_fill)
-    __obj.updateDynamic("property_state")(property_state)
-    __obj.updateDynamic("solid_fill")(solid_fill)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(dash_style = dash_style, outline_fill = outline_fill, property_state = property_state, solid_fill = solid_fill, weight = weight)
+  
     __obj.asInstanceOf[Outline]
   }
 }

@@ -12,8 +12,8 @@ trait SeparatorState extends js.Object {
 object SeparatorState {
   @scala.inline
   def apply(isDisabled: scala.Boolean): SeparatorState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDisabled")(isDisabled)
+    val __obj = js.Dynamic.literal(isDisabled = isDisabled)
+  
     __obj.asInstanceOf[SeparatorState]
   }
 }

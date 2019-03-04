@@ -56,14 +56,8 @@ object PayPalShippingAddress {
     recipientName: java.lang.String,
     state: java.lang.String
   ): PayPalShippingAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("line1")(line1)
-    __obj.updateDynamic("line2")(line2)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("recipientName")(recipientName)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(city = city, countryCode = countryCode, line1 = line1, line2 = line2, postalCode = postalCode, recipientName = recipientName, state = state)
+  
     __obj.asInstanceOf[PayPalShippingAddress]
   }
 }

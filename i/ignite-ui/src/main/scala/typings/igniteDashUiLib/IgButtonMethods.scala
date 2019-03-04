@@ -18,10 +18,8 @@ object IgButtonMethods {
     setTitle: js.Function1[js.Object, scala.Unit],
     widget: js.Function0[scala.Unit]
   ): IgButtonMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(destroy = destroy, setTitle = setTitle, widget = widget)
+  
     __obj.asInstanceOf[IgButtonMethods]
   }
 }

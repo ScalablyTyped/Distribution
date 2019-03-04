@@ -19,11 +19,8 @@ object KeyPair {
     publicKeyArmored: java.lang.String,
     revocationCertificate: java.lang.String
   ): KeyPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("privateKeyArmored")(privateKeyArmored)
-    __obj.updateDynamic("publicKeyArmored")(publicKeyArmored)
-    __obj.updateDynamic("revocationCertificate")(revocationCertificate)
+    val __obj = js.Dynamic.literal(key = key, privateKeyArmored = privateKeyArmored, publicKeyArmored = publicKeyArmored, revocationCertificate = revocationCertificate)
+  
     __obj.asInstanceOf[KeyPair]
   }
 }

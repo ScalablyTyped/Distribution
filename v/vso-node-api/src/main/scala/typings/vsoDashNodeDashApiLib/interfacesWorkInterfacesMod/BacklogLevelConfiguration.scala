@@ -65,16 +65,8 @@ object BacklogLevelConfiguration {
       vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeReference
     ]
   ): BacklogLevelConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPanelFields")(addPanelFields)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("columnFields")(columnFields)
-    __obj.updateDynamic("defaultWorkItemType")(defaultWorkItemType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("workItemCountLimit")(workItemCountLimit)
-    __obj.updateDynamic("workItemTypes")(workItemTypes)
+    val __obj = js.Dynamic.literal(addPanelFields = addPanelFields, color = color, columnFields = columnFields, defaultWorkItemType = defaultWorkItemType, id = id, name = name, rank = rank, workItemCountLimit = workItemCountLimit, workItemTypes = workItemTypes)
+  
     __obj.asInstanceOf[BacklogLevelConfiguration]
   }
 }

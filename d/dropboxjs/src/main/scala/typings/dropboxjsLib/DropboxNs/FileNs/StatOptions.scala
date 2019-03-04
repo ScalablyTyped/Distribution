@@ -30,16 +30,8 @@ object StatOptions {
     version: scala.Double,
     versionTag: java.lang.String
   ): StatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentHash")(contentHash)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("httpCache")(httpCache)
-    __obj.updateDynamic("readDir")(readDir)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("rev")(rev)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionTag")(versionTag)
+    val __obj = js.Dynamic.literal(contentHash = contentHash, deleted = deleted, hash = hash, httpCache = httpCache, readDir = readDir, removed = removed, rev = rev, version = version, versionTag = versionTag)
+  
     __obj.asInstanceOf[StatOptions]
   }
 }

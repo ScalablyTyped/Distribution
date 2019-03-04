@@ -45,33 +45,8 @@ object HierarchyDataReadWriteAccess {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): HierarchyDataReadWriteAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("PendingChanges")(PendingChanges.asInstanceOf[js.Any])
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChangesListener")(addChangesListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("commitChanges")(commitChanges)
-    __obj.updateDynamic("createInstance")(createInstance)
-    __obj.updateDynamic("createInstanceWithArguments")(createInstanceWithArguments)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getPendingChanges")(getPendingChanges)
-    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("hasPendingChanges")(hasPendingChanges)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("removeChangesListener")(removeChangesListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("replaceByName")(replaceByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = acquire, addChangesListener = addChangesListener, addEventListener = addEventListener, commitChanges = commitChanges, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, dispose = dispose, getByHierarchicalName = getByHierarchicalName, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getPendingChanges = getPendingChanges, hasByHierarchicalName = hasByHierarchicalName, hasByName = hasByName, hasElements = hasElements, hasPendingChanges = hasPendingChanges, insertByName = insertByName, queryInterface = queryInterface, release = release, removeByName = removeByName, removeChangesListener = removeChangesListener, removeEventListener = removeEventListener, replaceByName = replaceByName)
+  
     __obj.asInstanceOf[HierarchyDataReadWriteAccess]
   }
 }

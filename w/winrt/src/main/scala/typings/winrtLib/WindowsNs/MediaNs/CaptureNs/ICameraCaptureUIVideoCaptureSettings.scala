@@ -20,11 +20,8 @@ object ICameraCaptureUIVideoCaptureSettings {
     maxDurationInSeconds: scala.Double,
     maxResolution: CameraCaptureUIMaxVideoResolution
   ): ICameraCaptureUIVideoCaptureSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowTrimming")(allowTrimming)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("maxDurationInSeconds")(maxDurationInSeconds)
-    __obj.updateDynamic("maxResolution")(maxResolution)
+    val __obj = js.Dynamic.literal(allowTrimming = allowTrimming, format = format, maxDurationInSeconds = maxDurationInSeconds, maxResolution = maxResolution)
+  
     __obj.asInstanceOf[ICameraCaptureUIVideoCaptureSettings]
   }
 }

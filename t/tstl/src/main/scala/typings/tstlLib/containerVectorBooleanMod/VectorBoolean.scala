@@ -63,11 +63,11 @@ class VectorBoolean ()
   /**
     * @hidden
     */
-  var `data_`: js.Any = js.native
+  var data_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * Flip all values.
     */

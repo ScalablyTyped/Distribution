@@ -16,11 +16,11 @@ abstract class ListIterator[T /* <: Elem */, SourceT /* <: tstlLib.baseContainer
   /**
     * @hidden
     */
-  var `next_`: js.Any = js.native
+  var next_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `prev_`: js.Any = js.native
+  var prev_ : js.Any = js.native
   /**
     * @inheritDoc
     */
@@ -28,7 +28,7 @@ abstract class ListIterator[T /* <: Elem */, SourceT /* <: tstlLib.baseContainer
   /**
     * @hidden
     */
-  var `value_`: T = js.native
+  var value_ : T = js.native
   /**
     * @inheritDoc
     */

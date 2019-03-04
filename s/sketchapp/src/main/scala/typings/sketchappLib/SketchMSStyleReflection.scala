@@ -22,11 +22,7 @@ object SketchMSStyleReflection {
     strength: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSStyleReflection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("strength")(strength)
+    val __obj = js.Dynamic.literal(_class = _class, distance = distance, isEnabled = isEnabled, strength = strength)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyleReflection]
   }

@@ -12,8 +12,8 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(pathsList: js.Array[java.lang.String]): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathsList")(pathsList)
+    val __obj = js.Dynamic.literal(pathsList = pathsList)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

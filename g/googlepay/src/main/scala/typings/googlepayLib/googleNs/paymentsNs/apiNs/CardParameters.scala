@@ -22,9 +22,7 @@ object CardParameters {
     billingAddressParameters: BillingAddressParameters = null,
     billingAddressRequired: js.UndefOr[scala.Boolean] = js.undefined
   ): CardParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedAuthMethods")(allowedAuthMethods)
-    __obj.updateDynamic("allowedCardNetworks")(allowedCardNetworks)
+    val __obj = js.Dynamic.literal(allowedAuthMethods = allowedAuthMethods, allowedCardNetworks = allowedCardNetworks)
     if (!js.isUndefined(allowPrepaidCards)) __obj.updateDynamic("allowPrepaidCards")(allowPrepaidCards)
     if (billingAddressParameters != null) __obj.updateDynamic("billingAddressParameters")(billingAddressParameters)
     if (!js.isUndefined(billingAddressRequired)) __obj.updateDynamic("billingAddressRequired")(billingAddressRequired)

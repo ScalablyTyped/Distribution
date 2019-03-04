@@ -200,40 +200,8 @@ object ASPxClientAppointment {
     resources: js.Array[java.lang.String],
     statusIndex: scala.Double
   ): ASPxClientAppointment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddResource")(AddResource)
-    __obj.updateDynamic("GetAllDay")(GetAllDay)
-    __obj.updateDynamic("GetAppointmentType")(GetAppointmentType)
-    __obj.updateDynamic("GetDescription")(GetDescription)
-    __obj.updateDynamic("GetDuration")(GetDuration)
-    __obj.updateDynamic("GetEnd")(GetEnd)
-    __obj.updateDynamic("GetId")(GetId)
-    __obj.updateDynamic("GetLabelId")(GetLabelId)
-    __obj.updateDynamic("GetLocation")(GetLocation)
-    __obj.updateDynamic("GetRecurrenceInfo")(GetRecurrenceInfo)
-    __obj.updateDynamic("GetRecurrencePattern")(GetRecurrencePattern)
-    __obj.updateDynamic("GetResource")(GetResource)
-    __obj.updateDynamic("GetStart")(GetStart)
-    __obj.updateDynamic("GetStatusId")(GetStatusId)
-    __obj.updateDynamic("GetSubject")(GetSubject)
-    __obj.updateDynamic("SetAllDay")(SetAllDay)
-    __obj.updateDynamic("SetAppointmentType")(SetAppointmentType)
-    __obj.updateDynamic("SetDescription")(SetDescription)
-    __obj.updateDynamic("SetDuration")(SetDuration)
-    __obj.updateDynamic("SetEnd")(SetEnd)
-    __obj.updateDynamic("SetId")(SetId)
-    __obj.updateDynamic("SetLabelId")(SetLabelId)
-    __obj.updateDynamic("SetLocation")(SetLocation)
-    __obj.updateDynamic("SetRecurrenceInfo")(SetRecurrenceInfo)
-    __obj.updateDynamic("SetStart")(SetStart)
-    __obj.updateDynamic("SetStatusId")(SetStatusId)
-    __obj.updateDynamic("SetSubject")(SetSubject)
-    __obj.updateDynamic("appointmentId")(appointmentId)
-    __obj.updateDynamic("appointmentType")(appointmentType)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("labelIndex")(labelIndex)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("statusIndex")(statusIndex)
+    val __obj = js.Dynamic.literal(AddResource = AddResource, GetAllDay = GetAllDay, GetAppointmentType = GetAppointmentType, GetDescription = GetDescription, GetDuration = GetDuration, GetEnd = GetEnd, GetId = GetId, GetLabelId = GetLabelId, GetLocation = GetLocation, GetRecurrenceInfo = GetRecurrenceInfo, GetRecurrencePattern = GetRecurrencePattern, GetResource = GetResource, GetStart = GetStart, GetStatusId = GetStatusId, GetSubject = GetSubject, SetAllDay = SetAllDay, SetAppointmentType = SetAppointmentType, SetDescription = SetDescription, SetDuration = SetDuration, SetEnd = SetEnd, SetId = SetId, SetLabelId = SetLabelId, SetLocation = SetLocation, SetRecurrenceInfo = SetRecurrenceInfo, SetStart = SetStart, SetStatusId = SetStatusId, SetSubject = SetSubject, appointmentId = appointmentId, appointmentType = appointmentType, interval = interval, labelIndex = labelIndex, resources = resources, statusIndex = statusIndex)
+  
     __obj.asInstanceOf[ASPxClientAppointment]
   }
 }

@@ -12,8 +12,8 @@ trait OnGlobalLayoutListener extends js.Object {
 object OnGlobalLayoutListener {
   @scala.inline
   def apply(onGlobalLayout: js.Function0[js.Any]): OnGlobalLayoutListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGlobalLayout")(onGlobalLayout)
+    val __obj = js.Dynamic.literal(onGlobalLayout = onGlobalLayout)
+  
     __obj.asInstanceOf[OnGlobalLayoutListener]
   }
 }

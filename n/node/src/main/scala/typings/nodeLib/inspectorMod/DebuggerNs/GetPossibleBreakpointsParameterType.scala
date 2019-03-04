@@ -28,8 +28,7 @@ object GetPossibleBreakpointsParameterType {
     end: Location = null,
     restrictToFunction: js.UndefOr[scala.Boolean] = js.undefined
   ): GetPossibleBreakpointsParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(start = start)
     if (end != null) __obj.updateDynamic("end")(end)
     if (!js.isUndefined(restrictToFunction)) __obj.updateDynamic("restrictToFunction")(restrictToFunction)
     __obj.asInstanceOf[GetPossibleBreakpointsParameterType]

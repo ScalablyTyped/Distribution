@@ -32,22 +32,8 @@ object CustomPresentationAccess {
     removeByName: js.Function1[java.lang.String, scala.Unit],
     replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): CustomPresentationAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createInstance")(createInstance)
-    __obj.updateDynamic("createInstanceWithArguments")(createInstanceWithArguments)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("replaceByName")(replaceByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, insertByName = insertByName, queryInterface = queryInterface, release = release, removeByName = removeByName, replaceByName = replaceByName)
+  
     __obj.asInstanceOf[CustomPresentationAccess]
   }
 }

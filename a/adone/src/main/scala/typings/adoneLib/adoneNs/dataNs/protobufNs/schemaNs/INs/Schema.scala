@@ -29,12 +29,8 @@ object Schema {
     `package`: java.lang.String = null,
     services: js.Array[Service] = null
   ): Schema = {
-    val __obj = js.Dynamic.literal(`extends` = `extends`)
-    __obj.updateDynamic("enums")(enums)
-    __obj.updateDynamic("imports")(imports)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("syntax")(syntax)
+    val __obj = js.Dynamic.literal(enums = enums, imports = imports, messages = messages, options = options, syntax = syntax)
+    __obj.updateDynamic("extends")(`extends`)
     if (`package` != null) __obj.updateDynamic("package")(`package`)
     if (services != null) __obj.updateDynamic("services")(services)
     __obj.asInstanceOf[Schema]

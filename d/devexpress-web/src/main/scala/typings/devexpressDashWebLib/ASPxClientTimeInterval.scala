@@ -83,19 +83,8 @@ object ASPxClientTimeInterval {
     SetEnd: js.Function1[stdLib.Date, scala.Unit],
     SetStart: js.Function1[stdLib.Date, scala.Unit]
   ): ASPxClientTimeInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Contains")(Contains)
-    __obj.updateDynamic("Equals")(Equals)
-    __obj.updateDynamic("GetAllDay")(GetAllDay)
-    __obj.updateDynamic("GetDuration")(GetDuration)
-    __obj.updateDynamic("GetEnd")(GetEnd)
-    __obj.updateDynamic("GetStart")(GetStart)
-    __obj.updateDynamic("IntersectsWith")(IntersectsWith)
-    __obj.updateDynamic("IntersectsWithExcludingBounds")(IntersectsWithExcludingBounds)
-    __obj.updateDynamic("SetAllDay")(SetAllDay)
-    __obj.updateDynamic("SetDuration")(SetDuration)
-    __obj.updateDynamic("SetEnd")(SetEnd)
-    __obj.updateDynamic("SetStart")(SetStart)
+    val __obj = js.Dynamic.literal(Contains = Contains, Equals = Equals, GetAllDay = GetAllDay, GetDuration = GetDuration, GetEnd = GetEnd, GetStart = GetStart, IntersectsWith = IntersectsWith, IntersectsWithExcludingBounds = IntersectsWithExcludingBounds, SetAllDay = SetAllDay, SetDuration = SetDuration, SetEnd = SetEnd, SetStart = SetStart)
+  
     __obj.asInstanceOf[ASPxClientTimeInterval]
   }
 }

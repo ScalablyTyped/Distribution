@@ -20,8 +20,8 @@ object IBubbleEventHandler {
   def apply(
     onEventBubbled: js.Function1[signalsDotJsLib.libOrgOsflashSignalsEventsIEventMod.IEvent, scala.Boolean]
   ): IBubbleEventHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onEventBubbled")(onEventBubbled)
+    val __obj = js.Dynamic.literal(onEventBubbled = onEventBubbled)
+  
     __obj.asInstanceOf[IBubbleEventHandler]
   }
 }

@@ -17,9 +17,8 @@ object KoliteCommand {
     canExecute: knockoutLib.KnockoutComputed[scala.Boolean],
     execute: js.Function1[/* repeated */ js.Any, js.Any]
   ): KoliteCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canExecute")(canExecute)
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(canExecute = canExecute, execute = execute)
+  
     __obj.asInstanceOf[KoliteCommand]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Batch extends js.Object {
 object Anon_Batch {
   @scala.inline
   def apply(batch: reduxDashBatchedDashActionsLib.reduxDashBatchedDashActionsLibNumbers.`true`): Anon_Batch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batch")(batch)
+    val __obj = js.Dynamic.literal(batch = batch)
+  
     __obj.asInstanceOf[Anon_Batch]
   }
 }

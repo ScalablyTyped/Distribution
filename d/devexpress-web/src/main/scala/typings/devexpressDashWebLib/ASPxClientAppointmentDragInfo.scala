@@ -45,12 +45,8 @@ object ASPxClientAppointmentDragInfo {
     oldInterval: ASPxClientTimeInterval,
     oldResources: js.Array[java.lang.String]
   ): ASPxClientAppointmentDragInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appointmentId")(appointmentId)
-    __obj.updateDynamic("newInterval")(newInterval)
-    __obj.updateDynamic("newResources")(newResources)
-    __obj.updateDynamic("oldInterval")(oldInterval)
-    __obj.updateDynamic("oldResources")(oldResources)
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId, newInterval = newInterval, newResources = newResources, oldInterval = oldInterval, oldResources = oldResources)
+  
     __obj.asInstanceOf[ASPxClientAppointmentDragInfo]
   }
 }

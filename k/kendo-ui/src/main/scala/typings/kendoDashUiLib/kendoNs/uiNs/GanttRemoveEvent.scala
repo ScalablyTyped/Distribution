@@ -19,10 +19,7 @@ object GanttRemoveEvent {
     dependencies: js.Any = null,
     task: kendoDashUiLib.kendoNs.dataNs.GanttTask = null
   ): GanttRemoveEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     if (task != null) __obj.updateDynamic("task")(task)
     __obj.asInstanceOf[GanttRemoveEvent]

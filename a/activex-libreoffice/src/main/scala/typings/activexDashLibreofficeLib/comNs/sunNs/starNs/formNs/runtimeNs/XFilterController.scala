@@ -115,18 +115,8 @@ object XFilterController {
     removeFilterControllerListener: js.Function1[XFilterControllerListener, scala.Unit],
     setPredicateExpression: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit]
   ): XFilterController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTerm")(ActiveTerm)
-    __obj.updateDynamic("DisjunctiveTerms")(DisjunctiveTerms)
-    __obj.updateDynamic("FilterComponents")(FilterComponents)
-    __obj.updateDynamic("PredicateExpressions")(PredicateExpressions)
-    __obj.updateDynamic("addFilterControllerListener")(addFilterControllerListener)
-    __obj.updateDynamic("appendEmptyDisjunctiveTerm")(appendEmptyDisjunctiveTerm)
-    __obj.updateDynamic("getFilterComponent")(getFilterComponent)
-    __obj.updateDynamic("getPredicateExpressions")(getPredicateExpressions)
-    __obj.updateDynamic("removeDisjunctiveTerm")(removeDisjunctiveTerm)
-    __obj.updateDynamic("removeFilterControllerListener")(removeFilterControllerListener)
-    __obj.updateDynamic("setPredicateExpression")(setPredicateExpression)
+    val __obj = js.Dynamic.literal(ActiveTerm = ActiveTerm, DisjunctiveTerms = DisjunctiveTerms, FilterComponents = FilterComponents, PredicateExpressions = PredicateExpressions, addFilterControllerListener = addFilterControllerListener, appendEmptyDisjunctiveTerm = appendEmptyDisjunctiveTerm, getFilterComponent = getFilterComponent, getPredicateExpressions = getPredicateExpressions, removeDisjunctiveTerm = removeDisjunctiveTerm, removeFilterControllerListener = removeFilterControllerListener, setPredicateExpression = setPredicateExpression)
+  
     __obj.asInstanceOf[XFilterController]
   }
 }

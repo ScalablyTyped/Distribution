@@ -29,14 +29,8 @@ object Calendar {
     MinSupportedDateTime: stdLib.Date,
     TwoDigitYearMax: scala.Double
   ): Calendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AlgorithmType")(AlgorithmType)
-    __obj.updateDynamic("CalendarType")(CalendarType)
-    __obj.updateDynamic("Eras")(Eras)
-    __obj.updateDynamic("IsReadOnly")(IsReadOnly)
-    __obj.updateDynamic("MaxSupportedDateTime")(MaxSupportedDateTime)
-    __obj.updateDynamic("MinSupportedDateTime")(MinSupportedDateTime)
-    __obj.updateDynamic("TwoDigitYearMax")(TwoDigitYearMax)
+    val __obj = js.Dynamic.literal(AlgorithmType = AlgorithmType, CalendarType = CalendarType, Eras = Eras, IsReadOnly = IsReadOnly, MaxSupportedDateTime = MaxSupportedDateTime, MinSupportedDateTime = MinSupportedDateTime, TwoDigitYearMax = TwoDigitYearMax)
+  
     __obj.asInstanceOf[Calendar]
   }
 }

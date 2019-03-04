@@ -23,14 +23,8 @@ object Template {
     TemplateId: scala.Double,
     TextBody: java.lang.String
   ): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Active")(Active)
-    __obj.updateDynamic("AssociatedServerId")(AssociatedServerId)
-    __obj.updateDynamic("HtmlBody")(HtmlBody)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("TemplateId")(TemplateId)
-    __obj.updateDynamic("TextBody")(TextBody)
+    val __obj = js.Dynamic.literal(Active = Active, AssociatedServerId = AssociatedServerId, HtmlBody = HtmlBody, Name = Name, Subject = Subject, TemplateId = TemplateId, TextBody = TextBody)
+  
     __obj.asInstanceOf[Template]
   }
 }

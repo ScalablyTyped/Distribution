@@ -24,13 +24,8 @@ object AxeAnalysis {
     url: java.lang.String,
     violations: js.Array[axeDashCoreLib.axeDashCoreMod.axeNs.Result]
   ): AxeAnalysis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inapplicable")(inapplicable)
-    __obj.updateDynamic("incomplete")(incomplete)
-    __obj.updateDynamic("passes")(passes)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("violations")(violations)
+    val __obj = js.Dynamic.literal(inapplicable = inapplicable, incomplete = incomplete, passes = passes, timestamp = timestamp, url = url, violations = violations)
+  
     __obj.asInstanceOf[AxeAnalysis]
   }
 }

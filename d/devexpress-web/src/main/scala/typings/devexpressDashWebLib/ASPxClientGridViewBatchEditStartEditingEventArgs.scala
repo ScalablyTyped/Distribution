@@ -34,11 +34,8 @@ object ASPxClientGridViewBatchEditStartEditingEventArgs {
     rowValues: js.Object,
     visibleIndex: scala.Double
   ): ASPxClientGridViewBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("focusedColumn")(focusedColumn)
-    __obj.updateDynamic("rowValues")(rowValues)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, focusedColumn = focusedColumn, rowValues = rowValues, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientGridViewBatchEditStartEditingEventArgs]
   }
 }

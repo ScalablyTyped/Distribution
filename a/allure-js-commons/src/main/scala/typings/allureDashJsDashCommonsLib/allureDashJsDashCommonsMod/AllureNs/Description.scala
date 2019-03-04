@@ -12,8 +12,8 @@ trait Description extends js.Object {
 object Description {
   @scala.inline
   def apply(toXML: js.Function0[java.lang.String]): Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toXML")(toXML)
+    val __obj = js.Dynamic.literal(toXML = toXML)
+  
     __obj.asInstanceOf[Description]
   }
 }

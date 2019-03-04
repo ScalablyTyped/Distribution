@@ -24,11 +24,7 @@ object AsyncValidateCallback {
     asyncErrors: reduxDashFormLib.reduxDashFormMod.FormErrors[FormData, ErrorType] = null,
     blurredField: java.lang.String = null
   ): AsyncValidateCallback[FormData, ErrorType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("pristine")(pristine)
-    __obj.updateDynamic("syncValidationPasses")(syncValidationPasses)
-    __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(initialized = initialized, pristine = pristine, syncValidationPasses = syncValidationPasses, trigger = trigger.asInstanceOf[js.Any])
     if (asyncErrors != null) __obj.updateDynamic("asyncErrors")(asyncErrors)
     if (blurredField != null) __obj.updateDynamic("blurredField")(blurredField)
     __obj.asInstanceOf[AsyncValidateCallback[FormData, ErrorType]]

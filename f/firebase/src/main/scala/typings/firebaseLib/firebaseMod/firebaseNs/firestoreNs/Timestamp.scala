@@ -41,12 +41,8 @@ object Timestamp {
     toDate: js.Function0[coreDashJsLib.Date],
     toMillis: js.Function0[scala.Double]
   ): Timestamp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("nanoseconds")(nanoseconds)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("toDate")(toDate)
-    __obj.updateDynamic("toMillis")(toMillis)
+    val __obj = js.Dynamic.literal(isEqual = isEqual, nanoseconds = nanoseconds, seconds = seconds, toDate = toDate, toMillis = toMillis)
+  
     __obj.asInstanceOf[Timestamp]
   }
 }

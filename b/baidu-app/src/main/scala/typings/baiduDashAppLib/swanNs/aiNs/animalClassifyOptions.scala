@@ -27,8 +27,7 @@ object animalClassifyOptions {
     success: js.Function1[/* res */ animalClassifyResponse, scala.Unit] = null,
     top_num: scala.Int | scala.Double = null
   ): animalClassifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

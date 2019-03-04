@@ -12,8 +12,8 @@ trait rand extends js.Object {
 object rand {
   @scala.inline
   def apply(getByte: js.Function0[scala.Double]): rand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getByte")(getByte)
+    val __obj = js.Dynamic.literal(getByte = getByte)
+  
     __obj.asInstanceOf[rand]
   }
 }

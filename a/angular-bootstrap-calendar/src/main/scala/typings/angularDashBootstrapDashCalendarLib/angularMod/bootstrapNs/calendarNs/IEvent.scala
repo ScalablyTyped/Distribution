@@ -82,9 +82,7 @@ object IEvent {
     resizable: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null
   ): IEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startsAt")(startsAt)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(startsAt = startsAt, title = title)
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay)
     if (color != null) __obj.updateDynamic("color")(color)

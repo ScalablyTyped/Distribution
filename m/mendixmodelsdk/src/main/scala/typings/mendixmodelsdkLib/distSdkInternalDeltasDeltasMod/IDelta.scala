@@ -15,8 +15,8 @@ trait IDelta extends js.Object {
 object IDelta {
   @scala.inline
   def apply(unitId: java.lang.String): IDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unitId")(unitId)
+    val __obj = js.Dynamic.literal(unitId = unitId)
+  
     __obj.asInstanceOf[IDelta]
   }
 }

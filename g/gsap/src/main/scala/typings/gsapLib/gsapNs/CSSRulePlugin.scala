@@ -15,9 +15,8 @@ object CSSRulePlugin {
     activate: js.Function1[js.Array[_], scala.Boolean],
     getRule: js.Function1[java.lang.String, js.Object]
   ): CSSRulePlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("getRule")(getRule)
+    val __obj = js.Dynamic.literal(activate = activate, getRule = getRule)
+  
     __obj.asInstanceOf[CSSRulePlugin]
   }
 }

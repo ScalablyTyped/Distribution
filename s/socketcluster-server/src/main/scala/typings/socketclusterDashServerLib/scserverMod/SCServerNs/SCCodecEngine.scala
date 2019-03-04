@@ -13,9 +13,8 @@ trait SCCodecEngine extends js.Object {
 object SCCodecEngine {
   @scala.inline
   def apply(decode: js.Function1[js.Any, js.Any], encode: js.Function1[js.Any, js.Any]): SCCodecEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+  
     __obj.asInstanceOf[SCCodecEngine]
   }
 }

@@ -20,11 +20,8 @@ object InteractiveWrongMediumException {
     Medium: js.Any,
     Message: java.lang.String
   ): InteractiveWrongMediumException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Medium")(Medium)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Medium = Medium, Message = Message)
+  
     __obj.asInstanceOf[InteractiveWrongMediumException]
   }
 }

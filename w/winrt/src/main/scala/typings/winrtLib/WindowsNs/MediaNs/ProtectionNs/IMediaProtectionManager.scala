@@ -20,11 +20,8 @@ object IMediaProtectionManager {
     onservicerequested: js.Any,
     properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
   ): IMediaProtectionManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oncomponentloadfailed")(oncomponentloadfailed)
-    __obj.updateDynamic("onrebootneeded")(onrebootneeded)
-    __obj.updateDynamic("onservicerequested")(onservicerequested)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(oncomponentloadfailed = oncomponentloadfailed, onrebootneeded = onrebootneeded, onservicerequested = onservicerequested, properties = properties)
+  
     __obj.asInstanceOf[IMediaProtectionManager]
   }
 }

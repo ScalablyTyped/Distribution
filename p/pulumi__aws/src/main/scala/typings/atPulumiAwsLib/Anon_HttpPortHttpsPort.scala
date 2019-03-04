@@ -24,11 +24,7 @@ object Anon_HttpPortHttpsPort {
     originKeepaliveTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     originReadTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_HttpPortHttpsPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpPort")(httpPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("httpsPort")(httpsPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("originProtocolPolicy")(originProtocolPolicy.asInstanceOf[js.Any])
-    __obj.updateDynamic("originSslProtocols")(originSslProtocols.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpPort = httpPort.asInstanceOf[js.Any], httpsPort = httpsPort.asInstanceOf[js.Any], originProtocolPolicy = originProtocolPolicy.asInstanceOf[js.Any], originSslProtocols = originSslProtocols.asInstanceOf[js.Any])
     if (originKeepaliveTimeout != null) __obj.updateDynamic("originKeepaliveTimeout")(originKeepaliveTimeout.asInstanceOf[js.Any])
     if (originReadTimeout != null) __obj.updateDynamic("originReadTimeout")(originReadTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HttpPortHttpsPort]

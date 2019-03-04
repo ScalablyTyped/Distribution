@@ -18,10 +18,8 @@ object RawObject {
     raw: stdLib.ArrayBufferView | glDashTexture2dLib.InputType | stdLib.ImageBitmap,
     width: scala.Double
   ): RawObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, raw = raw.asInstanceOf[js.Any], width = width)
+  
     __obj.asInstanceOf[RawObject]
   }
 }

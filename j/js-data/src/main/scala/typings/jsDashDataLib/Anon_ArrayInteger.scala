@@ -24,12 +24,8 @@ object Anon_ArrayInteger {
     `object`: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
     string: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]]
   ): Anon_ArrayInteger = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("numeric")(numeric)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(array = array, integer = integer, number = number, numeric = numeric, string = string)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_ArrayInteger]
   }
 }

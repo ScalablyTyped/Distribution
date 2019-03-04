@@ -14,10 +14,8 @@ trait DineroObject extends js.Object {
 object DineroObject {
   @scala.inline
   def apply(amount: scala.Double, currency: java.lang.String, precision: scala.Double): DineroObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("precision")(precision)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, precision = precision)
+  
     __obj.asInstanceOf[DineroObject]
   }
 }

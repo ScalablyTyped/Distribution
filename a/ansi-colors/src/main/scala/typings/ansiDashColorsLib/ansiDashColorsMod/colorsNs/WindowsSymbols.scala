@@ -42,22 +42,8 @@ object WindowsSymbols {
     questionSmall: java.lang.String,
     warning: java.lang.String
   ): WindowsSymbols = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bullet")(bullet)
-    __obj.updateDynamic("check")(check)
-    __obj.updateDynamic("cross")(cross)
-    __obj.updateDynamic("ellipsis")(ellipsis)
-    __obj.updateDynamic("heart")(heart)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("middot")(middot)
-    __obj.updateDynamic("minus")(minus)
-    __obj.updateDynamic("plus")(plus)
-    __obj.updateDynamic("pointer")(pointer)
-    __obj.updateDynamic("pointerSmall")(pointerSmall)
-    __obj.updateDynamic("question")(question)
-    __obj.updateDynamic("questionSmall")(questionSmall)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(bullet = bullet, check = check, cross = cross, ellipsis = ellipsis, heart = heart, info = info, line = line, middot = middot, minus = minus, plus = plus, pointer = pointer, pointerSmall = pointerSmall, question = question, questionSmall = questionSmall, warning = warning)
+  
     __obj.asInstanceOf[WindowsSymbols]
   }
 }

@@ -13,9 +13,8 @@ trait PricingVoiceResource extends js.Object {
 object PricingVoiceResource {
   @scala.inline
   def apply(countries: CountryResource, numbers: NumberResource): PricingVoiceResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countries")(countries)
-    __obj.updateDynamic("numbers")(numbers)
+    val __obj = js.Dynamic.literal(countries = countries, numbers = numbers)
+  
     __obj.asInstanceOf[PricingVoiceResource]
   }
 }

@@ -29,11 +29,8 @@ object ASPxClientAxisBase {
     name: java.lang.String,
     range: ASPxClientAxisRange
   ): ASPxClientAxisBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(chart = chart, diagram = diagram, name = name, range = range)
+  
     __obj.asInstanceOf[ASPxClientAxisBase]
   }
 }

@@ -20,11 +20,8 @@ object VersionControlProjectInfo {
     supportsGit: scala.Boolean,
     supportsTFVC: scala.Boolean
   ): VersionControlProjectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultSourceControlType")(defaultSourceControlType)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("supportsGit")(supportsGit)
-    __obj.updateDynamic("supportsTFVC")(supportsTFVC)
+    val __obj = js.Dynamic.literal(defaultSourceControlType = defaultSourceControlType, project = project, supportsGit = supportsGit, supportsTFVC = supportsTFVC)
+  
     __obj.asInstanceOf[VersionControlProjectInfo]
   }
 }

@@ -120,24 +120,8 @@ object TermStatsFacet {
     valueField: js.Function1[java.lang.String, TermStatsFacet],
     valueScript: js.Function1[java.lang.String, TermStatsFacet]
   ): TermStatsFacet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("allTerms")(allTerms)
-    __obj.updateDynamic("cacheFilter")(cacheFilter)
-    __obj.updateDynamic("facetFilter")(facetFilter)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("keyField")(keyField)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("scriptField")(scriptField)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("valueField")(valueField)
-    __obj.updateDynamic("valueScript")(valueScript)
+    val __obj = js.Dynamic.literal(_type = _type, allTerms = allTerms, cacheFilter = cacheFilter, facetFilter = facetFilter, global = global, keyField = keyField, lang = lang, mode = mode, nested = nested, order = order, params = params, scope = scope, scriptField = scriptField, size = size, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+  
     __obj.asInstanceOf[TermStatsFacet]
   }
 }

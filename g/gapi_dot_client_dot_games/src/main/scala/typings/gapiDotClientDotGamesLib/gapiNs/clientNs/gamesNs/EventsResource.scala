@@ -30,10 +30,8 @@ object EventsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[EventUpdateResponse]
     ]
   ): EventsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listByPlayer")(listByPlayer)
-    __obj.updateDynamic("listDefinitions")(listDefinitions)
-    __obj.updateDynamic("record")(record)
+    val __obj = js.Dynamic.literal(listByPlayer = listByPlayer, listDefinitions = listDefinitions, record = record)
+  
     __obj.asInstanceOf[EventsResource]
   }
 }

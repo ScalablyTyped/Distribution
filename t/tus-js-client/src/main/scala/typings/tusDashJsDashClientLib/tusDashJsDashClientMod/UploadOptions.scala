@@ -60,8 +60,7 @@ object UploadOptions {
     uploadUrl: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): UploadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
     if (headers != null) __obj.updateDynamic("headers")(headers)

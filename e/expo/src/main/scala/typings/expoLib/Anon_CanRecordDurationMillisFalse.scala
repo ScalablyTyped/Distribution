@@ -19,10 +19,8 @@ object Anon_CanRecordDurationMillisFalse {
     durationMillis: scala.Double,
     isDoneRecording: expoLib.expoLibNumbers.`true`
   ): Anon_CanRecordDurationMillisFalse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canRecord")(canRecord)
-    __obj.updateDynamic("durationMillis")(durationMillis)
-    __obj.updateDynamic("isDoneRecording")(isDoneRecording)
+    val __obj = js.Dynamic.literal(canRecord = canRecord, durationMillis = durationMillis, isDoneRecording = isDoneRecording)
+  
     __obj.asInstanceOf[Anon_CanRecordDurationMillisFalse]
   }
 }

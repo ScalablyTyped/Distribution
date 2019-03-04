@@ -26,9 +26,7 @@ object Anon_CenterEllipsoid {
     height: scala.Int | scala.Double = null,
     numberOfVerticalLines: scala.Int | scala.Double = null
   ): Anon_CenterEllipsoid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(center = center, radius = radius)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])

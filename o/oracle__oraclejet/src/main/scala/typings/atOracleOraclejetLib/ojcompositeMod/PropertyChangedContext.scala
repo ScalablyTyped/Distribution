@@ -22,11 +22,7 @@ object PropertyChangedContext {
     value: js.Any,
     subproperty: atOracleOraclejetLib.Anon_Path = null
   ): PropertyChangedContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("previousValue")(previousValue)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("updatedFrom")(updatedFrom.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(previousValue = previousValue, property = property, updatedFrom = updatedFrom.asInstanceOf[js.Any], value = value)
     if (subproperty != null) __obj.updateDynamic("subproperty")(subproperty)
     __obj.asInstanceOf[PropertyChangedContext]
   }

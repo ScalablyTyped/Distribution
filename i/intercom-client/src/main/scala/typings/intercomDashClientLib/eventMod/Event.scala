@@ -23,10 +23,7 @@ object Event {
     id: java.lang.String,
     metadata: js.Any = null
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("event_name")(event_name)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(created_at = created_at, event_name = event_name, id = id)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     __obj.asInstanceOf[Event]
   }

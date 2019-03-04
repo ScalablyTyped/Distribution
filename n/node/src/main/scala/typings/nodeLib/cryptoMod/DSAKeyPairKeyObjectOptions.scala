@@ -19,9 +19,8 @@ trait DSAKeyPairKeyObjectOptions extends js.Object {
 object DSAKeyPairKeyObjectOptions {
   @scala.inline
   def apply(divisorLength: scala.Double, modulusLength: scala.Double): DSAKeyPairKeyObjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("divisorLength")(divisorLength)
-    __obj.updateDynamic("modulusLength")(modulusLength)
+    val __obj = js.Dynamic.literal(divisorLength = divisorLength, modulusLength = modulusLength)
+  
     __obj.asInstanceOf[DSAKeyPairKeyObjectOptions]
   }
 }

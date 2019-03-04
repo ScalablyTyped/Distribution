@@ -45,12 +45,8 @@ object ASPxClientAppointmentResizingEventArgs {
     newInterval: ASPxClientTimeInterval,
     oldInterval: ASPxClientTimeInterval
   ): ASPxClientAppointmentResizingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allow")(allow)
-    __obj.updateDynamic("appointmentId")(appointmentId)
-    __obj.updateDynamic("mouseEvent")(mouseEvent)
-    __obj.updateDynamic("newInterval")(newInterval)
-    __obj.updateDynamic("oldInterval")(oldInterval)
+    val __obj = js.Dynamic.literal(allow = allow, appointmentId = appointmentId, mouseEvent = mouseEvent, newInterval = newInterval, oldInterval = oldInterval)
+  
     __obj.asInstanceOf[ASPxClientAppointmentResizingEventArgs]
   }
 }

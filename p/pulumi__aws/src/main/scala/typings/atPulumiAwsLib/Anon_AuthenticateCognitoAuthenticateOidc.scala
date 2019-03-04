@@ -30,7 +30,8 @@ object Anon_AuthenticateCognitoAuthenticateOidc {
     redirect: atPulumiPulumiLib.outputMod.Input[Anon_HostPathPort] = null,
     targetGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AuthenticateCognitoAuthenticateOidc = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (authenticateCognito != null) __obj.updateDynamic("authenticateCognito")(authenticateCognito.asInstanceOf[js.Any])
     if (authenticateOidc != null) __obj.updateDynamic("authenticateOidc")(authenticateOidc.asInstanceOf[js.Any])
     if (fixedResponse != null) __obj.updateDynamic("fixedResponse")(fixedResponse.asInstanceOf[js.Any])

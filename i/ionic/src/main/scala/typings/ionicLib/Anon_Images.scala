@@ -18,10 +18,8 @@ object Anon_Images {
     nodeAttributes: js.Array[java.lang.String],
     nodeName: java.lang.String
   ): Anon_Images = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("nodeAttributes")(nodeAttributes)
-    __obj.updateDynamic("nodeName")(nodeName)
+    val __obj = js.Dynamic.literal(images = images, nodeAttributes = nodeAttributes, nodeName = nodeName)
+  
     __obj.asInstanceOf[Anon_Images]
   }
 }

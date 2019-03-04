@@ -133,20 +133,8 @@ object XRegressionCurveCalculator {
     setRegressionProperties: js.Function4[scala.Double, scala.Boolean, scala.Double, scala.Double, scala.Unit],
     setXYNames: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XRegressionCurveCalculator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CorrelationCoefficient")(CorrelationCoefficient)
-    __obj.updateDynamic("Representation")(Representation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCorrelationCoefficient")(getCorrelationCoefficient)
-    __obj.updateDynamic("getCurveValue")(getCurveValue)
-    __obj.updateDynamic("getCurveValues")(getCurveValues)
-    __obj.updateDynamic("getFormattedRepresentation")(getFormattedRepresentation)
-    __obj.updateDynamic("getRepresentation")(getRepresentation)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("recalculateRegression")(recalculateRegression)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setRegressionProperties")(setRegressionProperties)
-    __obj.updateDynamic("setXYNames")(setXYNames)
+    val __obj = js.Dynamic.literal(CorrelationCoefficient = CorrelationCoefficient, Representation = Representation, acquire = acquire, getCorrelationCoefficient = getCorrelationCoefficient, getCurveValue = getCurveValue, getCurveValues = getCurveValues, getFormattedRepresentation = getFormattedRepresentation, getRepresentation = getRepresentation, queryInterface = queryInterface, recalculateRegression = recalculateRegression, release = release, setRegressionProperties = setRegressionProperties, setXYNames = setXYNames)
+  
     __obj.asInstanceOf[XRegressionCurveCalculator]
   }
 }

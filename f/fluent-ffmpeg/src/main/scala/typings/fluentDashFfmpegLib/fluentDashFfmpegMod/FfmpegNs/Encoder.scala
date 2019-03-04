@@ -26,13 +26,8 @@ object Encoder {
     sliceMT: scala.Boolean,
     `type`: java.lang.String
   ): Encoder = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("directRendering")(directRendering)
-    __obj.updateDynamic("drawHorizBand")(drawHorizBand)
-    __obj.updateDynamic("experimental")(experimental)
-    __obj.updateDynamic("frameMT")(frameMT)
-    __obj.updateDynamic("sliceMT")(sliceMT)
+    val __obj = js.Dynamic.literal(description = description, directRendering = directRendering, drawHorizBand = drawHorizBand, experimental = experimental, frameMT = frameMT, sliceMT = sliceMT)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Encoder]
   }
 }

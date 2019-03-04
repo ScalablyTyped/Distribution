@@ -18,10 +18,8 @@ object TextStyle {
     asStandalone: js.Function0[TextStyle],
     isStandalone: js.Function0[scala.Boolean]
   ): TextStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asNormal")(asNormal)
-    __obj.updateDynamic("asStandalone")(asStandalone)
-    __obj.updateDynamic("isStandalone")(isStandalone)
+    val __obj = js.Dynamic.literal(asNormal = asNormal, asStandalone = asStandalone, isStandalone = isStandalone)
+  
     __obj.asInstanceOf[TextStyle]
   }
 }

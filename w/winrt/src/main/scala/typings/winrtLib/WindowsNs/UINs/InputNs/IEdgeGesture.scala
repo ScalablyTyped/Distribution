@@ -14,10 +14,8 @@ trait IEdgeGesture extends js.Object {
 object IEdgeGesture {
   @scala.inline
   def apply(oncanceled: js.Any, oncompleted: js.Any, onstarting: js.Any): IEdgeGesture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oncanceled")(oncanceled)
-    __obj.updateDynamic("oncompleted")(oncompleted)
-    __obj.updateDynamic("onstarting")(onstarting)
+    val __obj = js.Dynamic.literal(oncanceled = oncanceled, oncompleted = oncompleted, onstarting = onstarting)
+  
     __obj.asInstanceOf[IEdgeGesture]
   }
 }

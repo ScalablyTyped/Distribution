@@ -19,9 +19,7 @@ object StoreConfig {
     isCacheableValue: js.Function1[/* value */ js.Any, scala.Boolean] = null,
     max: scala.Int | scala.Double = null
   ): StoreConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(store = store, ttl = ttl)
     if (isCacheableValue != null) __obj.updateDynamic("isCacheableValue")(isCacheableValue)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreConfig]

@@ -123,23 +123,8 @@ object InstancesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("failover")(failover)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("promoteReplica")(promoteReplica)
-    __obj.updateDynamic("resetSslConfig")(resetSslConfig)
-    __obj.updateDynamic("restart")(restart)
-    __obj.updateDynamic("restoreBackup")(restoreBackup)
-    __obj.updateDynamic("startReplica")(startReplica)
-    __obj.updateDynamic("stopReplica")(stopReplica)
-    __obj.updateDynamic("truncateLog")(truncateLog)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(clone = clone, delete = delete, export = export, failover = failover, get = get, insert = insert, list = list, patch = patch, promoteReplica = promoteReplica, resetSslConfig = resetSslConfig, restart = restart, restoreBackup = restoreBackup, startReplica = startReplica, stopReplica = stopReplica, truncateLog = truncateLog, update = update)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[InstancesResource]
   }
 }

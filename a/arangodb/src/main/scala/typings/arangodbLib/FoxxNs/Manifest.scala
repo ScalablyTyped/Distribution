@@ -50,10 +50,7 @@ object Manifest {
     thumbnail: java.lang.String = null,
     version: java.lang.String = null
   ): Manifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("lib")(lib)
+    val __obj = js.Dynamic.literal(author = author, description = description, lib = lib)
     if (configuration != null) __obj.updateDynamic("configuration")(configuration)
     if (contributors != null) __obj.updateDynamic("contributors")(contributors)
     if (defaultDocument != null) __obj.updateDynamic("defaultDocument")(defaultDocument)

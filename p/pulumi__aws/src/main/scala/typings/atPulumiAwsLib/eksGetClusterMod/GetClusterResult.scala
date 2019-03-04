@@ -57,16 +57,8 @@ object GetClusterResult {
     version: java.lang.String,
     vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("certificateAuthority")(certificateAuthority)
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("platformVersion")(platformVersion)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("vpcConfig")(vpcConfig)
+    val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, endpoint = endpoint, id = id, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
+  
     __obj.asInstanceOf[GetClusterResult]
   }
 }

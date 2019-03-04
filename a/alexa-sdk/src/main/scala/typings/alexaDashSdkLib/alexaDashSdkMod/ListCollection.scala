@@ -12,8 +12,8 @@ trait ListCollection extends js.Object {
 object ListCollection {
   @scala.inline
   def apply(lists: js.Array[ListObject]): ListCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lists")(lists)
+    val __obj = js.Dynamic.literal(lists = lists)
+  
     __obj.asInstanceOf[ListCollection]
   }
 }

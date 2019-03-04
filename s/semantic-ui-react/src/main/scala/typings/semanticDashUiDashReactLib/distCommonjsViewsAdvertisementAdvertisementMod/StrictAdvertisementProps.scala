@@ -33,8 +33,7 @@ object StrictAdvertisementProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
     test: scala.Boolean | java.lang.String | scala.Double = null
   ): StrictAdvertisementProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

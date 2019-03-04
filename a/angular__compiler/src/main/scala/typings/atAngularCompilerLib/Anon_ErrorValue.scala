@@ -13,9 +13,8 @@ trait Anon_ErrorValue extends js.Object {
 object Anon_ErrorValue {
   @scala.inline
   def apply(error: java.lang.String, value: java.lang.String): Anon_ErrorValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(error = error, value = value)
+  
     __obj.asInstanceOf[Anon_ErrorValue]
   }
 }

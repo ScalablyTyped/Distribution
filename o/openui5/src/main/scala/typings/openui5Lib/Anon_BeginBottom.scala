@@ -72,22 +72,8 @@ object Anon_BeginBottom {
     RightCenter: js.Any,
     RightTop: js.Any
   ): Anon_BeginBottom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginBottom")(BeginBottom)
-    __obj.updateDynamic("BeginCenter")(BeginCenter)
-    __obj.updateDynamic("BeginTop")(BeginTop)
-    __obj.updateDynamic("CenterBottom")(CenterBottom)
-    __obj.updateDynamic("CenterCenter")(CenterCenter)
-    __obj.updateDynamic("CenterTop")(CenterTop)
-    __obj.updateDynamic("EndBottom")(EndBottom)
-    __obj.updateDynamic("EndCenter")(EndCenter)
-    __obj.updateDynamic("EndTop")(EndTop)
-    __obj.updateDynamic("LeftBottom")(LeftBottom)
-    __obj.updateDynamic("LeftCenter")(LeftCenter)
-    __obj.updateDynamic("LeftTop")(LeftTop)
-    __obj.updateDynamic("RightBottom")(RightBottom)
-    __obj.updateDynamic("RightCenter")(RightCenter)
-    __obj.updateDynamic("RightTop")(RightTop)
+    val __obj = js.Dynamic.literal(BeginBottom = BeginBottom, BeginCenter = BeginCenter, BeginTop = BeginTop, CenterBottom = CenterBottom, CenterCenter = CenterCenter, CenterTop = CenterTop, EndBottom = EndBottom, EndCenter = EndCenter, EndTop = EndTop, LeftBottom = LeftBottom, LeftCenter = LeftCenter, LeftTop = LeftTop, RightBottom = RightBottom, RightCenter = RightCenter, RightTop = RightTop)
+  
     __obj.asInstanceOf[Anon_BeginBottom]
   }
 }

@@ -20,11 +20,8 @@ object InputObject {
     keyIndex: scala.Double,
     security: iotaDotLibDotJsLib.Security
   ): InputObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("balance")(balance)
-    __obj.updateDynamic("keyIndex")(keyIndex)
-    __obj.updateDynamic("security")(security)
+    val __obj = js.Dynamic.literal(address = address, balance = balance, keyIndex = keyIndex, security = security)
+  
     __obj.asInstanceOf[InputObject]
   }
 }

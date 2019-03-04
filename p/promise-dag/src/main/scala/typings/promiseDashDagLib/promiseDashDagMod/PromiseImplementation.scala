@@ -18,10 +18,8 @@ object PromiseImplementation {
     reject: js.Function1[js.Any, P],
     resolve: js.Function1[js.Any, P]
   ): PromiseImplementation[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(all = all, reject = reject, resolve = resolve)
+  
     __obj.asInstanceOf[PromiseImplementation[P]]
   }
 }

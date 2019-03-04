@@ -18,8 +18,8 @@ object I18nRegionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[I18nRegionListResponse]
     ]
   ): I18nRegionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[I18nRegionsResource]
   }
 }

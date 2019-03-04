@@ -20,11 +20,8 @@ object ActionMetaLocation {
     kind: Nullable[java.lang.String],
     prev: Location
   ): ActionMetaLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("prev")(prev)
+    val __obj = js.Dynamic.literal(current = current, history = history.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], prev = prev)
+  
     __obj.asInstanceOf[ActionMetaLocation]
   }
 }

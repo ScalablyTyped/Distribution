@@ -16,9 +16,8 @@ object Anon_LngLat {
     lngLat: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Coordinates,
     pos: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Coordinates
   ): Anon_LngLat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lngLat")(lngLat)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(lngLat = lngLat, pos = pos)
+  
     __obj.asInstanceOf[Anon_LngLat]
   }
 }

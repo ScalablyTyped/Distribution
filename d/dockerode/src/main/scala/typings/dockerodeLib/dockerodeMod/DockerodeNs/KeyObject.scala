@@ -13,8 +13,7 @@ trait KeyObject extends js.Object {
 object KeyObject {
   @scala.inline
   def apply(pem: java.lang.String | nodeLib.Buffer, passphrase: java.lang.String = null): KeyObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pem")(pem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pem = pem.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
     __obj.asInstanceOf[KeyObject]
   }

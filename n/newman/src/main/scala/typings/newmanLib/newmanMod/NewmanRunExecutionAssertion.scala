@@ -13,9 +13,8 @@ trait NewmanRunExecutionAssertion extends js.Object {
 object NewmanRunExecutionAssertion {
   @scala.inline
   def apply(assertion: java.lang.String, error: NewmanRunExecutionAssertionError): NewmanRunExecutionAssertion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assertion")(assertion)
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(assertion = assertion, error = error)
+  
     __obj.asInstanceOf[NewmanRunExecutionAssertion]
   }
 }

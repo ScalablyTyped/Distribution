@@ -27,8 +27,7 @@ object DistanceJointData {
     mainPivot: Vector3 = null,
     nativeParams: js.Any = null
   ): DistanceJointData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxDistance")(maxDistance)
+    val __obj = js.Dynamic.literal(maxDistance = maxDistance)
     if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision)
     if (connectedAxis != null) __obj.updateDynamic("connectedAxis")(connectedAxis)
     if (connectedPivot != null) __obj.updateDynamic("connectedPivot")(connectedPivot)

@@ -13,9 +13,8 @@ trait DependsOn extends js.Object {
 object DependsOn {
   @scala.inline
   def apply(input: java.lang.String, map: js.Array[DependencyBinding]): DependsOn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(input = input, map = map)
+  
     __obj.asInstanceOf[DependsOn]
   }
 }

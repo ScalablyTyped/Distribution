@@ -20,11 +20,8 @@ object Anon_BIncomingQueueBlocked {
     bOutgoingQueuePaused: scala.Boolean,
     pFaxServer: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer
   ): Anon_BIncomingQueueBlocked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bIncomingQueueBlocked")(bIncomingQueueBlocked)
-    __obj.updateDynamic("bOutgoingQueueBlocked")(bOutgoingQueueBlocked)
-    __obj.updateDynamic("bOutgoingQueuePaused")(bOutgoingQueuePaused)
-    __obj.updateDynamic("pFaxServer")(pFaxServer)
+    val __obj = js.Dynamic.literal(bIncomingQueueBlocked = bIncomingQueueBlocked, bOutgoingQueueBlocked = bOutgoingQueueBlocked, bOutgoingQueuePaused = bOutgoingQueuePaused, pFaxServer = pFaxServer)
+  
     __obj.asInstanceOf[Anon_BIncomingQueueBlocked]
   }
 }

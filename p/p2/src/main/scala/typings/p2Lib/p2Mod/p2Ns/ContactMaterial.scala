@@ -34,18 +34,8 @@ object ContactMaterial {
     stiffness: scala.Double,
     surfaceVelocity: scala.Double
   ): ContactMaterial = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contactSkinSize")(contactSkinSize)
-    __obj.updateDynamic("friction")(friction)
-    __obj.updateDynamic("frictionRelaxation")(frictionRelaxation)
-    __obj.updateDynamic("frictionStuffness")(frictionStuffness)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("materialA")(materialA)
-    __obj.updateDynamic("materialB")(materialB)
-    __obj.updateDynamic("relaxation")(relaxation)
-    __obj.updateDynamic("restitution")(restitution)
-    __obj.updateDynamic("stiffness")(stiffness)
-    __obj.updateDynamic("surfaceVelocity")(surfaceVelocity)
+    val __obj = js.Dynamic.literal(contactSkinSize = contactSkinSize, friction = friction, frictionRelaxation = frictionRelaxation, frictionStuffness = frictionStuffness, id = id, materialA = materialA, materialB = materialB, relaxation = relaxation, restitution = restitution, stiffness = stiffness, surfaceVelocity = surfaceVelocity)
+  
     __obj.asInstanceOf[ContactMaterial]
   }
 }

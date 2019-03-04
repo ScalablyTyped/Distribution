@@ -15,10 +15,8 @@ trait UnfinishedOperation
 object UnfinishedOperation {
   @scala.inline
   def apply(done: dialogflowLib.dialogflowLibNumbers.`false`, metadata: js.Any, name: java.lang.String): UnfinishedOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(done = done, metadata = metadata, name = name)
+  
     __obj.asInstanceOf[UnfinishedOperation]
   }
 }

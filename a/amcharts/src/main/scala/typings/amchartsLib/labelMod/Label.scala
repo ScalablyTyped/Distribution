@@ -67,18 +67,8 @@ object Label {
     x: scala.Double | java.lang.String,
     y: scala.Double | java.lang.String
   ): Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(align = align, alpha = alpha, bold = bold, color = color, id = id, rotation = rotation, size = size, text = text, url = url, x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Label]
   }
 }

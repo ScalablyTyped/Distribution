@@ -18,8 +18,8 @@ object ErrorFluxStandardAction {
     meta: Meta = null,
     payload: CustomError = null
   ): ErrorFluxStandardAction[CustomError, Meta] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+    __obj.updateDynamic("type")(`type`)
     if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorFluxStandardAction[CustomError, Meta]]

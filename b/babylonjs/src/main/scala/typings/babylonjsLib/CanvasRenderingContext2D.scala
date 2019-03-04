@@ -12,8 +12,8 @@ trait CanvasRenderingContext2D extends js.Object {
 object CanvasRenderingContext2D {
   @scala.inline
   def apply(msImageSmoothingEnabled: scala.Boolean): CanvasRenderingContext2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("msImageSmoothingEnabled")(msImageSmoothingEnabled)
+    val __obj = js.Dynamic.literal(msImageSmoothingEnabled = msImageSmoothingEnabled)
+  
     __obj.asInstanceOf[CanvasRenderingContext2D]
   }
 }

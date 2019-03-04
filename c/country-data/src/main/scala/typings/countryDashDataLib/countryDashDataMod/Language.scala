@@ -20,11 +20,8 @@ object Language {
     bibliographic: java.lang.String,
     name: java.lang.String
   ): Language = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha2")(alpha2)
-    __obj.updateDynamic("alpha3")(alpha3)
-    __obj.updateDynamic("bibliographic")(bibliographic)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(alpha2 = alpha2, alpha3 = alpha3, bibliographic = bibliographic, name = name)
+  
     __obj.asInstanceOf[Language]
   }
 }

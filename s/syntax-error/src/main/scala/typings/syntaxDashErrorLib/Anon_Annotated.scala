@@ -20,11 +20,8 @@ object Anon_Annotated {
     inspect: js.Function0[java.lang.String],
     line: scala.Double
   ): Anon_Annotated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotated")(annotated)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(annotated = annotated, column = column, inspect = inspect, line = line)
+  
     __obj.asInstanceOf[Anon_Annotated]
   }
 }

@@ -30,13 +30,8 @@ object GitTargetVersionDescriptor {
     versionOptions: GitVersionOptions,
     versionType: GitVersionType
   ): GitTargetVersionDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetVersion")(targetVersion)
-    __obj.updateDynamic("targetVersionOptions")(targetVersionOptions)
-    __obj.updateDynamic("targetVersionType")(targetVersionType)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionOptions")(versionOptions)
-    __obj.updateDynamic("versionType")(versionType)
+    val __obj = js.Dynamic.literal(targetVersion = targetVersion, targetVersionOptions = targetVersionOptions, targetVersionType = targetVersionType, version = version, versionOptions = versionOptions, versionType = versionType)
+  
     __obj.asInstanceOf[GitTargetVersionDescriptor]
   }
 }

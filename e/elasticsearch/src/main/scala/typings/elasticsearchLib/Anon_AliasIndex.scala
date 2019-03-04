@@ -18,8 +18,7 @@ object Anon_AliasIndex {
     index: java.lang.String = null,
     indices: js.Array[java.lang.String] = null
   ): Anon_AliasIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
+    val __obj = js.Dynamic.literal(alias = alias)
     if (index != null) __obj.updateDynamic("index")(index)
     if (indices != null) __obj.updateDynamic("indices")(indices)
     __obj.asInstanceOf[Anon_AliasIndex]

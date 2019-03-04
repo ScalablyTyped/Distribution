@@ -72,18 +72,8 @@ object IRefund {
     status: stripeLib.stripeLibStrings.pending | stripeLib.stripeLibStrings.succeeded | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.canceled,
     failure_reason: stripeLib.stripeLibStrings.lost_or_stolen_card | stripeLib.stripeLibStrings.expired_or_canceled_card | stripeLib.stripeLibStrings.unknown = null
   ): IRefund = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
-    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("receipt_number")(receipt_number)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], created = created, currency = currency, description = description, id = id, metadata = metadata, reason = reason, receipt_number = receipt_number, status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefund]
   }

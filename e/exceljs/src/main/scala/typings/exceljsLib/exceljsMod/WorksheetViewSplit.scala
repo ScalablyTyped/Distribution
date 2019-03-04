@@ -48,8 +48,7 @@ object WorksheetViewSplit {
     xSplit: scala.Int | scala.Double = null,
     ySplit: scala.Int | scala.Double = null
   ): WorksheetViewSplit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
     if (activePane != null) __obj.updateDynamic("activePane")(activePane.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (topLeftCell != null) __obj.updateDynamic("topLeftCell")(topLeftCell)

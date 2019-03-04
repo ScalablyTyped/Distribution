@@ -39,11 +39,8 @@ object ValdrMessageProvider {
     setTemplate: js.Function1[java.lang.String, scala.Unit],
     setTemplateUrl: js.Function1[java.lang.String, scala.Unit]
   ): ValdrMessageProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addMessages")(addMessages)
-    __obj.updateDynamic("getMessage")(getMessage)
-    __obj.updateDynamic("setTemplate")(setTemplate)
-    __obj.updateDynamic("setTemplateUrl")(setTemplateUrl)
+    val __obj = js.Dynamic.literal(addMessages = addMessages, getMessage = getMessage, setTemplate = setTemplate, setTemplateUrl = setTemplateUrl)
+  
     __obj.asInstanceOf[ValdrMessageProvider]
   }
 }

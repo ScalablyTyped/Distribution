@@ -38,13 +38,8 @@ object SizeSchemeForPolygon {
     opacity: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): SizeSchemeForPolygon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("marker")(marker)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(background = background, constructor = constructor, hasOwnProperty = hasOwnProperty, marker = marker, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[SizeSchemeForPolygon]
   }
 }

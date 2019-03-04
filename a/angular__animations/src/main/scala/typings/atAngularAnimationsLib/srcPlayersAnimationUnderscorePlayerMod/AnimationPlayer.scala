@@ -103,21 +103,7 @@ object AnimationPlayer {
     beforeDestroy: js.Function0[_] = null,
     parentPlayer: AnimationPlayer = null
   ): AnimationPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("finish")(finish)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("hasStarted")(hasStarted)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("onDestroy")(onDestroy)
-    __obj.updateDynamic("onDone")(onDone)
-    __obj.updateDynamic("onStart")(onStart)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("restart")(restart)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("totalTime")(totalTime)
+    val __obj = js.Dynamic.literal(destroy = destroy, finish = finish, getPosition = getPosition, hasStarted = hasStarted, init = init, onDestroy = onDestroy, onDone = onDone, onStart = onStart, pause = pause, play = play, reset = reset, restart = restart, setPosition = setPosition, totalTime = totalTime)
     if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
     if (parentPlayer != null) __obj.updateDynamic("parentPlayer")(parentPlayer)
     __obj.asInstanceOf[AnimationPlayer]

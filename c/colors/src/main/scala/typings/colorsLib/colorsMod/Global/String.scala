@@ -81,41 +81,8 @@ object String {
     zalgo: java.lang.String,
     zebra: java.lang.String
   ): String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("america")(america)
-    __obj.updateDynamic("bgBlack")(bgBlack)
-    __obj.updateDynamic("bgBlue")(bgBlue)
-    __obj.updateDynamic("bgCyan")(bgCyan)
-    __obj.updateDynamic("bgGreen")(bgGreen)
-    __obj.updateDynamic("bgMagenta")(bgMagenta)
-    __obj.updateDynamic("bgRed")(bgRed)
-    __obj.updateDynamic("bgWhite")(bgWhite)
-    __obj.updateDynamic("bgYellow")(bgYellow)
-    __obj.updateDynamic("black")(black)
-    __obj.updateDynamic("blue")(blue)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("cyan")(cyan)
-    __obj.updateDynamic("dim")(dim)
-    __obj.updateDynamic("gray")(gray)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("grey")(grey)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("magenta")(magenta)
-    __obj.updateDynamic("rainbow")(rainbow)
-    __obj.updateDynamic("random")(random)
-    __obj.updateDynamic("red")(red)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("strikethrough")(strikethrough)
-    __obj.updateDynamic("strip")(strip)
-    __obj.updateDynamic("stripColors")(stripColors)
-    __obj.updateDynamic("trap")(trap)
-    __obj.updateDynamic("underline")(underline)
-    __obj.updateDynamic("white")(white)
-    __obj.updateDynamic("yellow")(yellow)
-    __obj.updateDynamic("zalgo")(zalgo)
-    __obj.updateDynamic("zebra")(zebra)
+    val __obj = js.Dynamic.literal(america = america, bgBlack = bgBlack, bgBlue = bgBlue, bgCyan = bgCyan, bgGreen = bgGreen, bgMagenta = bgMagenta, bgRed = bgRed, bgWhite = bgWhite, bgYellow = bgYellow, black = black, blue = blue, bold = bold, cyan = cyan, dim = dim, gray = gray, green = green, grey = grey, hidden = hidden, inverse = inverse, italic = italic, magenta = magenta, rainbow = rainbow, random = random, red = red, reset = reset, strikethrough = strikethrough, strip = strip, stripColors = stripColors, trap = trap, underline = underline, white = white, yellow = yellow, zalgo = zalgo, zebra = zebra)
+  
     __obj.asInstanceOf[String]
   }
 }

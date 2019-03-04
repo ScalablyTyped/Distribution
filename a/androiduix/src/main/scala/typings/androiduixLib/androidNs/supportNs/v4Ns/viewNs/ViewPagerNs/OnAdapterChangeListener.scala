@@ -21,8 +21,8 @@ object OnAdapterChangeListener {
       scala.Unit
     ]
   ): OnAdapterChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onAdapterChanged")(onAdapterChanged)
+    val __obj = js.Dynamic.literal(onAdapterChanged = onAdapterChanged)
+  
     __obj.asInstanceOf[OnAdapterChangeListener]
   }
 }

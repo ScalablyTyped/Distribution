@@ -36,8 +36,7 @@ object StickyProps {
     style: js.Any = null,
     topOffset: scala.Int | scala.Double = null
   ): StickyProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disableCompensation)) __obj.updateDynamic("disableCompensation")(disableCompensation)

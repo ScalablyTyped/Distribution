@@ -13,9 +13,8 @@ trait Anon_QuotaBytes extends js.Object {
 object Anon_QuotaBytes {
   @scala.inline
   def apply(quotaBytes: chromeDashAppsLib.chromeNs.integer, usageBytes: chromeDashAppsLib.chromeNs.integer): Anon_QuotaBytes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quotaBytes")(quotaBytes)
-    __obj.updateDynamic("usageBytes")(usageBytes)
+    val __obj = js.Dynamic.literal(quotaBytes = quotaBytes, usageBytes = usageBytes)
+  
     __obj.asInstanceOf[Anon_QuotaBytes]
   }
 }

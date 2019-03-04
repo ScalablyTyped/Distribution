@@ -18,7 +18,8 @@ object Anon_FleetIdMessage {
     fleetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     message: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_FleetIdMessage = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (fleetId != null) __obj.updateDynamic("fleetId")(fleetId.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FleetIdMessage]

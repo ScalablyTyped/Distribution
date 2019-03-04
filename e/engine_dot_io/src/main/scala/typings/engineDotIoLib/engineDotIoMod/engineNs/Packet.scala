@@ -14,7 +14,8 @@ trait Packet extends js.Object {
 object Packet {
   @scala.inline
   def apply(`type`: java.lang.String, data: Message = null, options: MessageOptions = null): Packet = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Packet]

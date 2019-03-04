@@ -18,10 +18,8 @@ object Control {
     getType: js.Function0[java.lang.String],
     setId: js.Function1[java.lang.String, Control]
   ): Control = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setId")(setId)
+    val __obj = js.Dynamic.literal(getId = getId, getType = getType, setId = setId)
+  
     __obj.asInstanceOf[Control]
   }
 }

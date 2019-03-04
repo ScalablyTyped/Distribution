@@ -58,16 +58,8 @@ object ChangeRule {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     summarize: scala.Boolean
   ): ChangeRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("evaluators")(evaluators)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("notifier")(notifier)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("summarize")(summarize)
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, evaluators = evaluators, hasOwnProperty = hasOwnProperty, id = id, name = name, notifier = notifier, propertyIsEnumerable = propertyIsEnumerable, summarize = summarize)
+  
     __obj.asInstanceOf[ChangeRule]
   }
 }

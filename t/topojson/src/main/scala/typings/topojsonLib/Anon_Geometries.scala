@@ -20,8 +20,8 @@ object Anon_Geometries {
     ],
     `type`: topojsonLib.topojsonLibStrings.GeometryCollection
   ): Anon_Geometries = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("geometries")(geometries)
+    val __obj = js.Dynamic.literal(geometries = geometries)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Geometries]
   }
 }

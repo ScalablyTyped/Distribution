@@ -24,8 +24,7 @@ object RepoUrlOptions {
     template: java.lang.String = null,
     title: java.lang.String = null
   ): RepoUrlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repoUrl")(repoUrl)
+    val __obj = js.Dynamic.literal(repoUrl = repoUrl)
     if (assignee != null) __obj.updateDynamic("assignee")(assignee)
     if (body != null) __obj.updateDynamic("body")(body)
     if (labels != null) __obj.updateDynamic("labels")(labels)

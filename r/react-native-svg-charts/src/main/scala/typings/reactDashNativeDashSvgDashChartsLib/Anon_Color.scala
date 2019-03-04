@@ -28,15 +28,8 @@ object Anon_Color {
     x: scala.Double,
     y: scala.Double
   ): Anon_Color[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(color = color, height = height, id = id, index = index, key = key, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_Color[T]]
   }
 }

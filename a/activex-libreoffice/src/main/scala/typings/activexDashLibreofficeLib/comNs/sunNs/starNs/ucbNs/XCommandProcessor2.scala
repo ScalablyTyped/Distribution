@@ -28,14 +28,8 @@ object XCommandProcessor2 {
     release: js.Function0[scala.Unit],
     releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit]
   ): XCommandProcessor2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createCommandIdentifier")(createCommandIdentifier)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseCommandIdentifier")(releaseCommandIdentifier)
+    val __obj = js.Dynamic.literal(abort = abort, acquire = acquire, createCommandIdentifier = createCommandIdentifier, execute = execute, queryInterface = queryInterface, release = release, releaseCommandIdentifier = releaseCommandIdentifier)
+  
     __obj.asInstanceOf[XCommandProcessor2]
   }
 }

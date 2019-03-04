@@ -12,9 +12,8 @@ trait IObjectID extends js.Object {
 object IObjectID {
   @scala.inline
   def apply(toHexString: js.Function0[java.lang.String], toString: js.Function0[java.lang.String]): IObjectID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toHexString")(toHexString)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toHexString = toHexString, toString = toString)
+  
     __obj.asInstanceOf[IObjectID]
   }
 }

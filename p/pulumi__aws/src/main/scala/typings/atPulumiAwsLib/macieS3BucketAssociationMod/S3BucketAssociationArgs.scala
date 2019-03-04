@@ -32,8 +32,7 @@ object S3BucketAssociationArgs {
     memberAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): S3BucketAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any])
     if (classificationType != null) __obj.updateDynamic("classificationType")(classificationType.asInstanceOf[js.Any])
     if (memberAccountId != null) __obj.updateDynamic("memberAccountId")(memberAccountId.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])

@@ -57,16 +57,8 @@ object GetStreamResult {
     status: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetStreamResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("closedShards")(closedShards)
-    __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("openShards")(openShards)
-    __obj.updateDynamic("retentionPeriod")(retentionPeriod)
-    __obj.updateDynamic("shardLevelMetrics")(shardLevelMetrics)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(arn = arn, closedShards = closedShards, creationTimestamp = creationTimestamp, id = id, openShards = openShards, retentionPeriod = retentionPeriod, shardLevelMetrics = shardLevelMetrics, status = status, tags = tags)
+  
     __obj.asInstanceOf[GetStreamResult]
   }
 }

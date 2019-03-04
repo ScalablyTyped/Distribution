@@ -37,9 +37,9 @@ class NumberPicker protected () extends LinearLayout {
   var mMaxValue: js.Any = js.native
   var mMaxWidth: js.Any = js.native
   var mMaximumFlingVelocity: js.Any = js.native
-  var `mMinHeight_`: js.Any = js.native
+  var mMinHeight_ : js.Any = js.native
   var mMinValue: js.Any = js.native
-  var `mMinWidth_`: js.Any = js.native
+  var mMinWidth_ : js.Any = js.native
   var mMinimumFlingVelocity: js.Any = js.native
   var mOnScrollListener: js.Any = js.native
   var mOnValueChangeListener: js.Any = js.native

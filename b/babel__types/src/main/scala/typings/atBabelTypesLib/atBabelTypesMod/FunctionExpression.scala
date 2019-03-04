@@ -43,11 +43,8 @@ object FunctionExpression {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
   ): FunctionExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(async = async, body = body, generator = generator, params = params)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

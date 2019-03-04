@@ -22,12 +22,8 @@ object Anon_FileId {
     mimeType: java.lang.String,
     title: java.lang.String
   ): Anon_FileId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("fileUrl")(fileUrl)
-    __obj.updateDynamic("iconLink")(iconLink)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(fileId = fileId, fileUrl = fileUrl, iconLink = iconLink, mimeType = mimeType, title = title)
+  
     __obj.asInstanceOf[Anon_FileId]
   }
 }

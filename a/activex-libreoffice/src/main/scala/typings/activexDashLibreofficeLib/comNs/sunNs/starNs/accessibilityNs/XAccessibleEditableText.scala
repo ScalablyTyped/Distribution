@@ -148,40 +148,8 @@ object XAccessibleEditableText {
     setSelection: js.Function2[scala.Double, scala.Double, scala.Boolean],
     setText: js.Function1[java.lang.String, scala.Boolean]
   ): XAccessibleEditableText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CaretPosition")(CaretPosition)
-    __obj.updateDynamic("CharacterCount")(CharacterCount)
-    __obj.updateDynamic("SelectedText")(SelectedText)
-    __obj.updateDynamic("SelectionEnd")(SelectionEnd)
-    __obj.updateDynamic("SelectionStart")(SelectionStart)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copyText")(copyText)
-    __obj.updateDynamic("cutText")(cutText)
-    __obj.updateDynamic("deleteText")(deleteText)
-    __obj.updateDynamic("getCaretPosition")(getCaretPosition)
-    __obj.updateDynamic("getCharacter")(getCharacter)
-    __obj.updateDynamic("getCharacterAttributes")(getCharacterAttributes)
-    __obj.updateDynamic("getCharacterBounds")(getCharacterBounds)
-    __obj.updateDynamic("getCharacterCount")(getCharacterCount)
-    __obj.updateDynamic("getIndexAtPoint")(getIndexAtPoint)
-    __obj.updateDynamic("getSelectedText")(getSelectedText)
-    __obj.updateDynamic("getSelectionEnd")(getSelectionEnd)
-    __obj.updateDynamic("getSelectionStart")(getSelectionStart)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getTextAtIndex")(getTextAtIndex)
-    __obj.updateDynamic("getTextBeforeIndex")(getTextBeforeIndex)
-    __obj.updateDynamic("getTextBehindIndex")(getTextBehindIndex)
-    __obj.updateDynamic("getTextRange")(getTextRange)
-    __obj.updateDynamic("insertText")(insertText)
-    __obj.updateDynamic("pasteText")(pasteText)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceText")(replaceText)
-    __obj.updateDynamic("setAttributes")(setAttributes)
-    __obj.updateDynamic("setCaretPosition")(setCaretPosition)
-    __obj.updateDynamic("setSelection")(setSelection)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(CaretPosition = CaretPosition, CharacterCount = CharacterCount, SelectedText = SelectedText, SelectionEnd = SelectionEnd, SelectionStart = SelectionStart, Text = Text, acquire = acquire, copyText = copyText, cutText = cutText, deleteText = deleteText, getCaretPosition = getCaretPosition, getCharacter = getCharacter, getCharacterAttributes = getCharacterAttributes, getCharacterBounds = getCharacterBounds, getCharacterCount = getCharacterCount, getIndexAtPoint = getIndexAtPoint, getSelectedText = getSelectedText, getSelectionEnd = getSelectionEnd, getSelectionStart = getSelectionStart, getText = getText, getTextAtIndex = getTextAtIndex, getTextBeforeIndex = getTextBeforeIndex, getTextBehindIndex = getTextBehindIndex, getTextRange = getTextRange, insertText = insertText, pasteText = pasteText, queryInterface = queryInterface, release = release, replaceText = replaceText, setAttributes = setAttributes, setCaretPosition = setCaretPosition, setSelection = setSelection, setText = setText)
+  
     __obj.asInstanceOf[XAccessibleEditableText]
   }
 }

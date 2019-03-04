@@ -32,18 +32,7 @@ object Event {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("auditing")(auditing)
-    __obj.updateDynamic("categoryValueRef")(categoryValueRef)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("incoming")(incoming)
-    __obj.updateDynamic("incomingConversationLinks")(incomingConversationLinks)
-    __obj.updateDynamic("lanes")(lanes)
-    __obj.updateDynamic("monitoring")(monitoring)
-    __obj.updateDynamic("outgoing")(outgoing)
-    __obj.updateDynamic("outgoingConversationLinks")(outgoingConversationLinks)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, id = id, incoming = incoming, incomingConversationLinks = incomingConversationLinks, lanes = lanes, monitoring = monitoring, outgoing = outgoing, outgoingConversationLinks = outgoingConversationLinks, properties = properties)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

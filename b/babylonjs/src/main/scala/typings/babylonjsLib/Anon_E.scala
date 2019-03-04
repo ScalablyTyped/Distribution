@@ -16,9 +16,8 @@ object Anon_E {
     handler: babylonjsLib.BABYLONNs.Nullable[js.Function1[/* e */ stdLib.FocusEvent, _]],
     name: java.lang.String
   ): Anon_E = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], name = name)
+  
     __obj.asInstanceOf[Anon_E]
   }
 }

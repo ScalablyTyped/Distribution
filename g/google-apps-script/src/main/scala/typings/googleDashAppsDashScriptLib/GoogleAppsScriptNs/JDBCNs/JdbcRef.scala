@@ -18,10 +18,8 @@ object JdbcRef {
     getObject: js.Function0[js.Object],
     setObject: js.Function1[js.Object, scala.Unit]
   ): JdbcRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBaseTypeName")(getBaseTypeName)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("setObject")(setObject)
+    val __obj = js.Dynamic.literal(getBaseTypeName = getBaseTypeName, getObject = getObject, setObject = setObject)
+  
     __obj.asInstanceOf[JdbcRef]
   }
 }

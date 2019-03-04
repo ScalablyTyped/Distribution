@@ -12,8 +12,8 @@ trait StripeCheckoutStatic extends js.Object {
 object StripeCheckoutStatic {
   @scala.inline
   def apply(configure: js.Function1[StripeCheckoutOptions, StripeCheckoutHandler]): StripeCheckoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configure")(configure)
+    val __obj = js.Dynamic.literal(configure = configure)
+  
     __obj.asInstanceOf[StripeCheckoutStatic]
   }
 }

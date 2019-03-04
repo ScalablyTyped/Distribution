@@ -16,8 +16,7 @@ object MutationContext {
     operations: lodashLib.lodashMod.Global.Map[java.lang.String, reactDashApolloLib.Anon_Query],
     client: apolloDashClientLib.apolloDashClientMod.default[js.Object] = null
   ): MutationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operations")(operations)
+    val __obj = js.Dynamic.literal(operations = operations)
     if (client != null) __obj.updateDynamic("client")(client)
     __obj.asInstanceOf[MutationContext]
   }

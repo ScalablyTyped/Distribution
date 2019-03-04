@@ -40,8 +40,7 @@ object DialogButtonProps {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
   ): DialogButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)

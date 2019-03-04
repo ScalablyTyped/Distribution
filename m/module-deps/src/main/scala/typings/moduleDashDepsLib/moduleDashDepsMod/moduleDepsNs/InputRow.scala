@@ -22,10 +22,7 @@ object InputRow {
     entry: js.UndefOr[scala.Boolean] = js.undefined,
     noparse: js.UndefOr[scala.Boolean] = js.undefined
   ): InputRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expose")(expose)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(expose = expose, file = file, id = id)
     if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry)
     if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse)
     __obj.asInstanceOf[InputRow]

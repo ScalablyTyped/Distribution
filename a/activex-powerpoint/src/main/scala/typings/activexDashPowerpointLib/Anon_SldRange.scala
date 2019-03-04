@@ -12,8 +12,8 @@ trait Anon_SldRange extends js.Object {
 object Anon_SldRange {
   @scala.inline
   def apply(SldRange: activexDashPowerpointLib.PowerPointNs.SlideRange): Anon_SldRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SldRange")(SldRange)
+    val __obj = js.Dynamic.literal(SldRange = SldRange)
+  
     __obj.asInstanceOf[Anon_SldRange]
   }
 }

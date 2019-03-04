@@ -22,8 +22,7 @@ object Anon_Converter {
     height: scala.Int | scala.Double = null,
     zoomOrder: js.Array[java.lang.String] = null
   ): Anon_Converter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (zoomOrder != null) __obj.updateDynamic("zoomOrder")(zoomOrder)

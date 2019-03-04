@@ -20,11 +20,8 @@ object TransitionerState {
     progress: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value,
     scenes: js.Array[NavigationScene]
   ): TransitionerState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("scenes")(scenes)
+    val __obj = js.Dynamic.literal(layout = layout, position = position, progress = progress, scenes = scenes)
+  
     __obj.asInstanceOf[TransitionerState]
   }
 }

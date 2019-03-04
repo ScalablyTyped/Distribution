@@ -16,9 +16,8 @@ object BloomrunConfig {
     indexing: natsDashHemeraLib.natsDashHemeraLibStrings.insertion | natsDashHemeraLib.natsDashHemeraLibStrings.depth,
     lookupBeforeAdd: scala.Boolean
   ): BloomrunConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexing")(indexing.asInstanceOf[js.Any])
-    __obj.updateDynamic("lookupBeforeAdd")(lookupBeforeAdd)
+    val __obj = js.Dynamic.literal(indexing = indexing.asInstanceOf[js.Any], lookupBeforeAdd = lookupBeforeAdd)
+  
     __obj.asInstanceOf[BloomrunConfig]
   }
 }

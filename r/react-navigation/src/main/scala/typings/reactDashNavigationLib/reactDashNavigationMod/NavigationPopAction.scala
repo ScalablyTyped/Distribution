@@ -18,7 +18,8 @@ object NavigationPopAction {
     immediate: js.UndefOr[scala.Boolean] = js.undefined,
     n: scala.Int | scala.Double = null
   ): NavigationPopAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
     if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPopAction]

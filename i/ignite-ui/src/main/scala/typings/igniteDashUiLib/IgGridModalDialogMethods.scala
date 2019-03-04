@@ -40,16 +40,8 @@ object IgGridModalDialogMethods {
     getFooter: js.Function0[scala.Unit],
     openModalDialog: js.Function0[scala.Unit]
   ): IgGridModalDialogMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("closeModalDialog")(closeModalDialog)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getCaptionButtonContainer")(getCaptionButtonContainer)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getFooter")(getFooter)
-    __obj.updateDynamic("openModalDialog")(openModalDialog)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, closeModalDialog = closeModalDialog, destroy = destroy, getCaptionButtonContainer = getCaptionButtonContainer, getContent = getContent, getFooter = getFooter, openModalDialog = openModalDialog)
+  
     __obj.asInstanceOf[IgGridModalDialogMethods]
   }
 }

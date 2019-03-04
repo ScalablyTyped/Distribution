@@ -26,8 +26,8 @@ object PipeTransport {
       ]
     ]
   ): PipeTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onConnected")(onConnected)
+    val __obj = js.Dynamic.literal(onConnected = onConnected)
+  
     __obj.asInstanceOf[PipeTransport]
   }
 }

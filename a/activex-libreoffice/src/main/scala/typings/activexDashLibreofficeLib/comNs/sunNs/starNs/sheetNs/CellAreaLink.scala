@@ -79,32 +79,8 @@ object CellAreaLink {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     setSourceArea: js.Function1[java.lang.String, scala.Unit]
   ): CellAreaLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DestArea")(DestArea)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("FilterOptions")(FilterOptions)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RefreshDelay")(RefreshDelay)
-    __obj.updateDynamic("RefreshPeriod")(RefreshPeriod)
-    __obj.updateDynamic("SourceArea")(SourceArea)
-    __obj.updateDynamic("Url")(Url)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getDestArea")(getDestArea)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getSourceArea")(getSourceArea)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setDestArea")(setDestArea)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setSourceArea")(setSourceArea)
+    val __obj = js.Dynamic.literal(DestArea = DestArea, Filter = Filter, FilterOptions = FilterOptions, PropertySetInfo = PropertySetInfo, RefreshDelay = RefreshDelay, RefreshPeriod = RefreshPeriod, SourceArea = SourceArea, Url = Url, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addRefreshListener = addRefreshListener, addVetoableChangeListener = addVetoableChangeListener, getDestArea = getDestArea, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getSourceArea = getSourceArea, queryInterface = queryInterface, refresh = refresh, release = release, removePropertyChangeListener = removePropertyChangeListener, removeRefreshListener = removeRefreshListener, removeVetoableChangeListener = removeVetoableChangeListener, setDestArea = setDestArea, setPropertyValue = setPropertyValue, setSourceArea = setSourceArea)
+  
     __obj.asInstanceOf[CellAreaLink]
   }
 }

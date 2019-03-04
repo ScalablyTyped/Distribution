@@ -24,13 +24,8 @@ object NxMeasure {
     qLibraryId: java.lang.String,
     qSortBy: SortCriteria
   ): NxMeasure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
-    __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
-    __obj.updateDynamic("qCalcCond")(qCalcCond)
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
-    __obj.updateDynamic("qSortBy")(qSortBy)
+    val __obj = js.Dynamic.literal(qAttributeDimensions = qAttributeDimensions, qAttributeExpressions = qAttributeExpressions, qCalcCond = qCalcCond, qDef = qDef, qLibraryId = qLibraryId, qSortBy = qSortBy)
+  
     __obj.asInstanceOf[NxMeasure]
   }
 }

@@ -29,19 +29,8 @@ object TableRows {
     release: js.Function0[scala.Unit],
     removeByIndex: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): TableRows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByIndex")(insertByIndex)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, createEnumeration = createEnumeration, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex)
+  
     __obj.asInstanceOf[TableRows]
   }
 }

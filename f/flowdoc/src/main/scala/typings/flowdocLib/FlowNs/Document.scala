@@ -20,10 +20,8 @@ object Document {
     name: java.lang.String,
     `type`: flowdocLib.flowdocLibStrings.DOCUMENT
   ): Document = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(children = children, id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Document]
   }
 }

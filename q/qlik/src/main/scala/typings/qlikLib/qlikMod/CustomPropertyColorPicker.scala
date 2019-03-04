@@ -24,8 +24,8 @@ object CustomPropertyColorPicker {
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyColorPicker = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     if (ref != null) __obj.updateDynamic("ref")(ref)

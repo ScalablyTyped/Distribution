@@ -12,9 +12,8 @@ trait SimplifiedMap extends SimplifiedSet {
 object SimplifiedMap {
   @scala.inline
   def apply(get: js.Function1[js.Any, js.Any], has: js.Function1[js.Any, scala.Boolean]): SimplifiedMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
+    val __obj = js.Dynamic.literal(get = get, has = has)
+  
     __obj.asInstanceOf[SimplifiedMap]
   }
 }

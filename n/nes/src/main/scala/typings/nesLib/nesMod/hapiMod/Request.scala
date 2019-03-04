@@ -12,8 +12,8 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(socket: nesLib.nesMod.nesNs.Socket): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("socket")(socket)
+    val __obj = js.Dynamic.literal(socket = socket)
+  
     __obj.asInstanceOf[Request]
   }
 }

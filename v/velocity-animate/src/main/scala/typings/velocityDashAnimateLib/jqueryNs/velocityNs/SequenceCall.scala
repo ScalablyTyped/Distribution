@@ -14,10 +14,8 @@ trait SequenceCall extends js.Object {
 object SequenceCall {
   @scala.inline
   def apply(e: stdLib.HTMLElement | velocityDashAnimateLib.JQuery, o: SequenceOptions, p: Properties): SequenceCall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    __obj.updateDynamic("o")(o)
-    __obj.updateDynamic("p")(p)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], o = o, p = p)
+  
     __obj.asInstanceOf[SequenceCall]
   }
 }

@@ -26,13 +26,8 @@ object XMergeable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMergeable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsMerged")(IsMerged)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIsMerged")(getIsMerged)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(IsMerged = IsMerged, acquire = acquire, getIsMerged = getIsMerged, merge = merge, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMergeable]
   }
 }

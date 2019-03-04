@@ -13,8 +13,8 @@ trait Anon_WForgottenReturn extends js.Object {
 object Anon_WForgottenReturn {
   @scala.inline
   def apply(wForgottenReturn: scala.Boolean): Anon_WForgottenReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("wForgottenReturn")(wForgottenReturn)
+    val __obj = js.Dynamic.literal(wForgottenReturn = wForgottenReturn)
+  
     __obj.asInstanceOf[Anon_WForgottenReturn]
   }
 }

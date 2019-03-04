@@ -22,11 +22,7 @@ object StrategyOptionsWithRequest {
     passReqToCallback: passportDashGoogleDashOauth2Lib.passportDashGoogleDashOauth2LibNumbers.`true`,
     scope: js.Array[java.lang.String] = null
   ): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }

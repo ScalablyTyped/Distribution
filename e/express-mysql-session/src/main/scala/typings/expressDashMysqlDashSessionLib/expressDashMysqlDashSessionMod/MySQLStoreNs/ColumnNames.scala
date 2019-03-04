@@ -14,10 +14,8 @@ trait ColumnNames extends js.Object {
 object ColumnNames {
   @scala.inline
   def apply(data: java.lang.String, expires: java.lang.String, session_id: java.lang.String): ColumnNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("session_id")(session_id)
+    val __obj = js.Dynamic.literal(data = data, expires = expires, session_id = session_id)
+  
     __obj.asInstanceOf[ColumnNames]
   }
 }

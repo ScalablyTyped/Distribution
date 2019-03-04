@@ -21,11 +21,8 @@ object PrinterInfo {
     name: java.lang.String,
     status: scala.Double
   ): PrinterInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(description = description, isDefault = isDefault, name = name, status = status)
+  
     __obj.asInstanceOf[PrinterInfo]
   }
 }

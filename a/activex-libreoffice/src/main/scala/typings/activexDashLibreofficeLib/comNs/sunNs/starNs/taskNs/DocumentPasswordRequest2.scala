@@ -29,13 +29,8 @@ object DocumentPasswordRequest2 {
     Mode: PasswordRequestMode,
     Name: java.lang.String
   ): DocumentPasswordRequest2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("IsRequestPasswordToModify")(IsRequestPasswordToModify)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, IsRequestPasswordToModify = IsRequestPasswordToModify, Message = Message, Mode = Mode, Name = Name)
+  
     __obj.asInstanceOf[DocumentPasswordRequest2]
   }
 }

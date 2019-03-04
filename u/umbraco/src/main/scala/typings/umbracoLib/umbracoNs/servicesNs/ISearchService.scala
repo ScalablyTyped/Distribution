@@ -73,11 +73,8 @@ object ISearchService {
     searchMedia: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]]],
     searchMembers: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]]
   ): ISearchService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("searchAll")(searchAll)
-    __obj.updateDynamic("searchContent")(searchContent)
-    __obj.updateDynamic("searchMedia")(searchMedia)
-    __obj.updateDynamic("searchMembers")(searchMembers)
+    val __obj = js.Dynamic.literal(searchAll = searchAll, searchContent = searchContent, searchMedia = searchMedia, searchMembers = searchMembers)
+  
     __obj.asInstanceOf[ISearchService]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Show extends js.Object {
 object Anon_Show {
   @scala.inline
   def apply(show: scala.Boolean): Anon_Show = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(show = show)
+  
     __obj.asInstanceOf[Anon_Show]
   }
 }

@@ -44,23 +44,8 @@ object FastClickObject {
     trackingClick: scala.Boolean,
     trackingClickStart: scala.Double
   ): FastClickObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("determineEventType")(determineEventType)
-    __obj.updateDynamic("findControl")(findControl)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("getTargetElementFromEventTarget")(getTargetElementFromEventTarget)
-    __obj.updateDynamic("lastTouchIdentifier")(lastTouchIdentifier)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("needsClick")(needsClick)
-    __obj.updateDynamic("needsFocus")(needsFocus)
-    __obj.updateDynamic("tapDelay")(tapDelay)
-    __obj.updateDynamic("targetElement")(targetElement)
-    __obj.updateDynamic("touchBoundary")(touchBoundary)
-    __obj.updateDynamic("touchStartX")(touchStartX)
-    __obj.updateDynamic("touchStartY")(touchStartY)
-    __obj.updateDynamic("trackingClick")(trackingClick)
-    __obj.updateDynamic("trackingClickStart")(trackingClickStart)
+    val __obj = js.Dynamic.literal(destroy = destroy, determineEventType = determineEventType, findControl = findControl, focus = focus, getTargetElementFromEventTarget = getTargetElementFromEventTarget, lastTouchIdentifier = lastTouchIdentifier, layer = layer, needsClick = needsClick, needsFocus = needsFocus, tapDelay = tapDelay, targetElement = targetElement, touchBoundary = touchBoundary, touchStartX = touchStartX, touchStartY = touchStartY, trackingClick = trackingClick, trackingClickStart = trackingClickStart)
+  
     __obj.asInstanceOf[FastClickObject]
   }
 }

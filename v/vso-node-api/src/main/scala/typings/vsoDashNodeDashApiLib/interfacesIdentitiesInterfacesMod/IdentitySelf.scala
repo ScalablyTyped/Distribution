@@ -20,11 +20,8 @@ object IdentitySelf {
     id: java.lang.String,
     tenants: js.Array[TenantInfo]
   ): IdentitySelf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountName")(accountName)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("tenants")(tenants)
+    val __obj = js.Dynamic.literal(accountName = accountName, displayName = displayName, id = id, tenants = tenants)
+  
     __obj.asInstanceOf[IdentitySelf]
   }
 }

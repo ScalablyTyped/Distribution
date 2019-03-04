@@ -17,8 +17,8 @@ trait EventAction extends js.Object {
 object EventAction {
   @scala.inline
   def apply(name: java.lang.String, `type`: java.lang.String, call: EventCallType = null): EventAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (call != null) __obj.updateDynamic("call")(call)
     __obj.asInstanceOf[EventAction]
   }

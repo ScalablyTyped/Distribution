@@ -40,16 +40,7 @@ object TSTInfo {
     ordering: js.UndefOr[scala.Boolean] = js.undefined,
     tsa: pkijsLib.srcGeneralNameMod.default = null
   ): TSTInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("genTime")(genTime)
-    __obj.updateDynamic("messageImprint")(messageImprint)
-    __obj.updateDynamic("policy")(policy)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("verify")(verify)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, genTime = genTime, messageImprint = messageImprint, policy = policy, serialNumber = serialNumber, toJSON = toJSON, toSchema = toSchema, verify = verify, version = version)
     if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)

@@ -20,9 +20,7 @@ object AbsoluteOptions {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): AbsoluteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbsoluteOptions]

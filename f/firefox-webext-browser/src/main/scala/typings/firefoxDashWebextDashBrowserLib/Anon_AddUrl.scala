@@ -68,16 +68,8 @@ object Anon_AddUrl {
       js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.historyNs.HistoryItem]]
     ]
   ): Anon_AddUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addUrl")(addUrl)
-    __obj.updateDynamic("deleteAll")(deleteAll)
-    __obj.updateDynamic("deleteRange")(deleteRange)
-    __obj.updateDynamic("deleteUrl")(deleteUrl)
-    __obj.updateDynamic("getVisits")(getVisits)
-    __obj.updateDynamic("onTitleChanged")(onTitleChanged)
-    __obj.updateDynamic("onVisitRemoved")(onVisitRemoved)
-    __obj.updateDynamic("onVisited")(onVisited)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(addUrl = addUrl, deleteAll = deleteAll, deleteRange = deleteRange, deleteUrl = deleteUrl, getVisits = getVisits, onTitleChanged = onTitleChanged, onVisitRemoved = onVisitRemoved, onVisited = onVisited, search = search)
+  
     __obj.asInstanceOf[Anon_AddUrl]
   }
 }

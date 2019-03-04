@@ -27,14 +27,8 @@ object XContainerListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContainerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("elementInserted")(elementInserted)
-    __obj.updateDynamic("elementRemoved")(elementRemoved)
-    __obj.updateDynamic("elementReplaced")(elementReplaced)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, elementInserted = elementInserted, elementRemoved = elementRemoved, elementReplaced = elementReplaced, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContainerListener]
   }
 }

@@ -113,8 +113,7 @@ object INxInlineMeasureDef {
     qReverseSort: js.UndefOr[scala.Boolean] = js.undefined,
     qTags: js.Array[java.lang.String] = null
   ): INxInlineMeasureDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDef")(qDef)
+    val __obj = js.Dynamic.literal(qDef = qDef)
     if (qAccumulate != null) __obj.updateDynamic("qAccumulate")(qAccumulate.asInstanceOf[js.Any])
     if (qActiveExpression != null) __obj.updateDynamic("qActiveExpression")(qActiveExpression.asInstanceOf[js.Any])
     if (qAggrFunc != null) __obj.updateDynamic("qAggrFunc")(qAggrFunc)

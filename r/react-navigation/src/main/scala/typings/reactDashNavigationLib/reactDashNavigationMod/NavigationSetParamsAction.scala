@@ -18,8 +18,8 @@ object NavigationSetParamsAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/SET_PARAMS`,
     params: NavigationParams = null
   ): NavigationSetParamsAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+    __obj.updateDynamic("type")(`type`)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[NavigationSetParamsAction]
   }

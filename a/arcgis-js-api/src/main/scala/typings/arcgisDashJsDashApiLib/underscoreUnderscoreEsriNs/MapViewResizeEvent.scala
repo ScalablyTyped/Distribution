@@ -15,11 +15,8 @@ trait MapViewResizeEvent extends js.Object {
 object MapViewResizeEvent {
   @scala.inline
   def apply(height: scala.Double, oldHeight: scala.Double, oldWidth: scala.Double, width: scala.Double): MapViewResizeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("oldHeight")(oldHeight)
-    __obj.updateDynamic("oldWidth")(oldWidth)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, oldHeight = oldHeight, oldWidth = oldWidth, width = width)
+  
     __obj.asInstanceOf[MapViewResizeEvent]
   }
 }

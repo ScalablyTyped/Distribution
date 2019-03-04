@@ -16,9 +16,8 @@ object Anon_FirstSecond {
     first: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _],
     second: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _]
   ): Anon_FirstSecond = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("second")(second)
+    val __obj = js.Dynamic.literal(first = first, second = second)
+  
     __obj.asInstanceOf[Anon_FirstSecond]
   }
 }

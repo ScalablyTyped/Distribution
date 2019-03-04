@@ -12,8 +12,8 @@ trait ChordSheetParserProps extends js.Object {
 object ChordSheetParserProps {
   @scala.inline
   def apply(preserveWhitespace: scala.Boolean): ChordSheetParserProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    val __obj = js.Dynamic.literal(preserveWhitespace = preserveWhitespace)
+  
     __obj.asInstanceOf[ChordSheetParserProps]
   }
 }

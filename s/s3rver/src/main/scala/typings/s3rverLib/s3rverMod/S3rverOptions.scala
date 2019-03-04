@@ -24,8 +24,7 @@ object S3rverOptions {
     port: scala.Int | scala.Double = null,
     silent: js.UndefOr[scala.Boolean] = js.undefined
   ): S3rverOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
+    val __obj = js.Dynamic.literal(directory = directory)
     if (errorDocument != null) __obj.updateDynamic("errorDocument")(errorDocument)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (indexDocument != null) __obj.updateDynamic("indexDocument")(indexDocument)

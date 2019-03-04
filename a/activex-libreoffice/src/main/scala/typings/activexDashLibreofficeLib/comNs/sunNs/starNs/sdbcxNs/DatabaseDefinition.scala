@@ -36,18 +36,8 @@ object DatabaseDefinition {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): DatabaseDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Groups")(Groups)
-    __obj.updateDynamic("Tables")(Tables)
-    __obj.updateDynamic("Users")(Users)
-    __obj.updateDynamic("Views")(Views)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGroups")(getGroups)
-    __obj.updateDynamic("getTables")(getTables)
-    __obj.updateDynamic("getUsers")(getUsers)
-    __obj.updateDynamic("getViews")(getViews)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Groups = Groups, Tables = Tables, Users = Users, Views = Views, acquire = acquire, getGroups = getGroups, getTables = getTables, getUsers = getUsers, getViews = getViews, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[DatabaseDefinition]
   }
 }

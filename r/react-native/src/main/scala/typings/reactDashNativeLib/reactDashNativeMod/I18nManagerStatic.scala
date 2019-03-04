@@ -18,10 +18,8 @@ object I18nManagerStatic {
     forceRTL: js.Function1[scala.Boolean, js.Object],
     isRTL: scala.Boolean
   ): I18nManagerStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowRTL")(allowRTL)
-    __obj.updateDynamic("forceRTL")(forceRTL)
-    __obj.updateDynamic("isRTL")(isRTL)
+    val __obj = js.Dynamic.literal(allowRTL = allowRTL, forceRTL = forceRTL, isRTL = isRTL)
+  
     __obj.asInstanceOf[I18nManagerStatic]
   }
 }

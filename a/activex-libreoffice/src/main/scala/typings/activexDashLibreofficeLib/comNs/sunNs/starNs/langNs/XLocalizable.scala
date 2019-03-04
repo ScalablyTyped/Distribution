@@ -26,13 +26,8 @@ object XLocalizable {
     release: js.Function0[scala.Unit],
     setLocale: js.Function1[Locale, scala.Unit]
   ): XLocalizable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLocale")(setLocale)
+    val __obj = js.Dynamic.literal(Locale = Locale, acquire = acquire, getLocale = getLocale, queryInterface = queryInterface, release = release, setLocale = setLocale)
+  
     __obj.asInstanceOf[XLocalizable]
   }
 }

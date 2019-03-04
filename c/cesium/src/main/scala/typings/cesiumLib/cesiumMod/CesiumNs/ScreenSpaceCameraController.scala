@@ -60,31 +60,8 @@ object ScreenSpaceCameraController {
     translateEventTypes: CameraEventType | js.Array[_],
     zoomEventTypes: CameraEventType | js.Array[_]
   ): ScreenSpaceCameraController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounceAnimationTime")(bounceAnimationTime)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("enableCollisionDetection")(enableCollisionDetection)
-    __obj.updateDynamic("enableInputs")(enableInputs)
-    __obj.updateDynamic("enableLook")(enableLook)
-    __obj.updateDynamic("enableRotate")(enableRotate)
-    __obj.updateDynamic("enableTilt")(enableTilt)
-    __obj.updateDynamic("enableTranslate")(enableTranslate)
-    __obj.updateDynamic("enableZoom")(enableZoom)
-    __obj.updateDynamic("inertiaSpin")(inertiaSpin)
-    __obj.updateDynamic("inertiaTranslate")(inertiaTranslate)
-    __obj.updateDynamic("inertiaZoom")(inertiaZoom)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("lookEventTypes")(lookEventTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("maximumMovementRatio")(maximumMovementRatio)
-    __obj.updateDynamic("maximumZoomDistance")(maximumZoomDistance)
-    __obj.updateDynamic("minimumCollisionTerrainHeight")(minimumCollisionTerrainHeight)
-    __obj.updateDynamic("minimumPickingTerrainHeight")(minimumPickingTerrainHeight)
-    __obj.updateDynamic("minimumTrackBallHeight")(minimumTrackBallHeight)
-    __obj.updateDynamic("minimumZoomDistance")(minimumZoomDistance)
-    __obj.updateDynamic("rotateEventTypes")(rotateEventTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("tiltEventTypes")(tiltEventTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("translateEventTypes")(translateEventTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("zoomEventTypes")(zoomEventTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bounceAnimationTime = bounceAnimationTime, destroy = destroy, enableCollisionDetection = enableCollisionDetection, enableInputs = enableInputs, enableLook = enableLook, enableRotate = enableRotate, enableTilt = enableTilt, enableTranslate = enableTranslate, enableZoom = enableZoom, inertiaSpin = inertiaSpin, inertiaTranslate = inertiaTranslate, inertiaZoom = inertiaZoom, isDestroyed = isDestroyed, lookEventTypes = lookEventTypes.asInstanceOf[js.Any], maximumMovementRatio = maximumMovementRatio, maximumZoomDistance = maximumZoomDistance, minimumCollisionTerrainHeight = minimumCollisionTerrainHeight, minimumPickingTerrainHeight = minimumPickingTerrainHeight, minimumTrackBallHeight = minimumTrackBallHeight, minimumZoomDistance = minimumZoomDistance, rotateEventTypes = rotateEventTypes.asInstanceOf[js.Any], tiltEventTypes = tiltEventTypes.asInstanceOf[js.Any], translateEventTypes = translateEventTypes.asInstanceOf[js.Any], zoomEventTypes = zoomEventTypes.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ScreenSpaceCameraController]
   }
 }

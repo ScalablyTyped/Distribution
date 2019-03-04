@@ -35,13 +35,8 @@ object XValidatable {
     release: js.Function0[scala.Unit],
     setValidator: js.Function1[XValidator, scala.Unit]
   ): XValidatable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Validator")(Validator)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getValidator")(getValidator)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValidator")(setValidator)
+    val __obj = js.Dynamic.literal(Validator = Validator, acquire = acquire, getValidator = getValidator, queryInterface = queryInterface, release = release, setValidator = setValidator)
+  
     __obj.asInstanceOf[XValidatable]
   }
 }

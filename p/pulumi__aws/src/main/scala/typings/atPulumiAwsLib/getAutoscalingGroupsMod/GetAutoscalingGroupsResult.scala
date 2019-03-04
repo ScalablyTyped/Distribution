@@ -23,10 +23,8 @@ trait GetAutoscalingGroupsResult extends js.Object {
 object GetAutoscalingGroupsResult {
   @scala.inline
   def apply(arns: js.Array[java.lang.String], id: java.lang.String, names: js.Array[java.lang.String]): GetAutoscalingGroupsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arns")(arns)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(arns = arns, id = id, names = names)
+  
     __obj.asInstanceOf[GetAutoscalingGroupsResult]
   }
 }

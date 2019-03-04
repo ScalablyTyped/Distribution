@@ -41,8 +41,8 @@ object ReplyFormAttachment {
     itemId: java.lang.String = null,
     url: java.lang.String = null
   ): ReplyFormAttachment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(inLine)) __obj.updateDynamic("inLine")(inLine)
     if (itemId != null) __obj.updateDynamic("itemId")(itemId)
     if (url != null) __obj.updateDynamic("url")(url)

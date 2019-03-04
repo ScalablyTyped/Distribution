@@ -329,8 +329,7 @@ object Measure {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): Measure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_approvalDate != null) __obj.updateDynamic("_approvalDate")(_approvalDate)
     if (_clinicalRecommendationStatement != null) __obj.updateDynamic("_clinicalRecommendationStatement")(_clinicalRecommendationStatement)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)

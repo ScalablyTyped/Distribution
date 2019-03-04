@@ -25,8 +25,7 @@ object RollupError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): RollupError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (code != null) __obj.updateDynamic("code")(code)
     if (frame != null) __obj.updateDynamic("frame")(frame)
     if (hook != null) __obj.updateDynamic("hook")(hook)

@@ -12,8 +12,8 @@ trait Anon_LicenseConfigurationArnInput extends js.Object {
 object Anon_LicenseConfigurationArnInput {
   @scala.inline
   def apply(licenseConfigurationArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_LicenseConfigurationArnInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("licenseConfigurationArn")(licenseConfigurationArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(licenseConfigurationArn = licenseConfigurationArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_LicenseConfigurationArnInput]
   }
 }

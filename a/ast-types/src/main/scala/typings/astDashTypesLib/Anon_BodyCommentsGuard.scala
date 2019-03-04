@@ -22,8 +22,7 @@ object Anon_BodyCommentsGuard {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     param: astDashTypesLib.genKindsMod.PatternKind = null
   ): Anon_BodyCommentsGuard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (guard != null) __obj.updateDynamic("guard")(guard)
     if (loc != null) __obj.updateDynamic("loc")(loc)

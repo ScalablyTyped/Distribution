@@ -12,8 +12,8 @@ trait IdleRequestOptions extends js.Object {
 object IdleRequestOptions {
   @scala.inline
   def apply(timeout: scala.Double): IdleRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(timeout = timeout)
+  
     __obj.asInstanceOf[IdleRequestOptions]
   }
 }

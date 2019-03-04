@@ -46,18 +46,8 @@ object INDTransmitterProperties {
     securityVersion: scala.Double,
     supportedFeatures: NDCertificateFeature
   ): INDTransmitterProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificateType")(certificateType)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("expirationDate")(expirationDate)
-    __obj.updateDynamic("modelDigest")(modelDigest)
-    __obj.updateDynamic("modelManufacturerName")(modelManufacturerName)
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("modelNumber")(modelNumber)
-    __obj.updateDynamic("platformIdentifier")(platformIdentifier)
-    __obj.updateDynamic("securityLevel")(securityLevel)
-    __obj.updateDynamic("securityVersion")(securityVersion)
-    __obj.updateDynamic("supportedFeatures")(supportedFeatures)
+    val __obj = js.Dynamic.literal(certificateType = certificateType, clientID = clientID, expirationDate = expirationDate, modelDigest = modelDigest, modelManufacturerName = modelManufacturerName, modelName = modelName, modelNumber = modelNumber, platformIdentifier = platformIdentifier, securityLevel = securityLevel, securityVersion = securityVersion, supportedFeatures = supportedFeatures)
+  
     __obj.asInstanceOf[INDTransmitterProperties]
   }
 }

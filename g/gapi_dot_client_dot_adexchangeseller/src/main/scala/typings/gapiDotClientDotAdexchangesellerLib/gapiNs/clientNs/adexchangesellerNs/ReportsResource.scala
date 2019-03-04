@@ -23,9 +23,8 @@ object ReportsResource {
     ],
     saved: SavedResource
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generate")(generate)
-    __obj.updateDynamic("saved")(saved)
+    val __obj = js.Dynamic.literal(generate = generate, saved = saved)
+  
     __obj.asInstanceOf[ReportsResource]
   }
 }

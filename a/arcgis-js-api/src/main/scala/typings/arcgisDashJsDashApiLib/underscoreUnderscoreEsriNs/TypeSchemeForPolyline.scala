@@ -45,14 +45,8 @@ object TypeSchemeForPolyline {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     width: scala.Double
   ): TypeSchemeForPolyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
     __obj.asInstanceOf[TypeSchemeForPolyline]
   }
 }

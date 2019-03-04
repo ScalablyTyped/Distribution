@@ -20,11 +20,8 @@ object IMouseWheelParameters {
     deltaScale: scala.Double,
     pageTranslation: winrtLib.WindowsNs.FoundationNs.Point
   ): IMouseWheelParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charTranslation")(charTranslation)
-    __obj.updateDynamic("deltaRotationAngle")(deltaRotationAngle)
-    __obj.updateDynamic("deltaScale")(deltaScale)
-    __obj.updateDynamic("pageTranslation")(pageTranslation)
+    val __obj = js.Dynamic.literal(charTranslation = charTranslation, deltaRotationAngle = deltaRotationAngle, deltaScale = deltaScale, pageTranslation = pageTranslation)
+  
     __obj.asInstanceOf[IMouseWheelParameters]
   }
 }

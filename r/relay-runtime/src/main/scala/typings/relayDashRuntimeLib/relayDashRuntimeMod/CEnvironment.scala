@@ -62,13 +62,8 @@ object CEnvironment {
     ],
     unstable_internal: CUnstableEnvironmentCore[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation]
   ): CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("retain")(retain)
-    __obj.updateDynamic("sendQuery")(sendQuery)
-    __obj.updateDynamic("streamQuery")(streamQuery)
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("unstable_internal")(unstable_internal)
+    val __obj = js.Dynamic.literal(lookup = lookup, retain = retain, sendQuery = sendQuery, streamQuery = streamQuery, subscribe = subscribe, unstable_internal = unstable_internal)
+  
     __obj.asInstanceOf[CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperation, TPayload]]
   }
 }

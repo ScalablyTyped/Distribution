@@ -28,7 +28,8 @@ object Anon_BsSize {
     label: reactLib.reactMod.ReactNs.ReactNode = null,
     valid: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_BsSize = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)

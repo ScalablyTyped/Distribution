@@ -18,8 +18,7 @@ object TokenContent {
     realm_access: keycloakDashConnectLib.Anon_Roles = null,
     resource_access: js.Any = null
   ): TokenContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exp")(exp)
+    val __obj = js.Dynamic.literal(exp = exp)
     if (realm_access != null) __obj.updateDynamic("realm_access")(realm_access)
     if (resource_access != null) __obj.updateDynamic("resource_access")(resource_access)
     __obj.asInstanceOf[TokenContent]

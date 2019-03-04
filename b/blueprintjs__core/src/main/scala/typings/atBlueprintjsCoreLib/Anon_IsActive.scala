@@ -12,8 +12,8 @@ trait Anon_IsActive extends js.Object {
 object Anon_IsActive {
   @scala.inline
   def apply(isActive: scala.Boolean): Anon_IsActive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isActive")(isActive)
+    val __obj = js.Dynamic.literal(isActive = isActive)
+  
     __obj.asInstanceOf[Anon_IsActive]
   }
 }

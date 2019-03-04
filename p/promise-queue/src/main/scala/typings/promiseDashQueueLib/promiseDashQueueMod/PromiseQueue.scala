@@ -34,10 +34,8 @@ object PromiseQueue {
     getPendingLength: js.Function0[scala.Double],
     getQueueLength: js.Function0[scala.Double]
   ): PromiseQueue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("getPendingLength")(getPendingLength)
-    __obj.updateDynamic("getQueueLength")(getQueueLength)
+    val __obj = js.Dynamic.literal(add = add, getPendingLength = getPendingLength, getQueueLength = getQueueLength)
+  
     __obj.asInstanceOf[PromiseQueue]
   }
 }

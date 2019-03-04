@@ -32,11 +32,8 @@ object ParamMap {
     has: js.Function1[java.lang.String, scala.Boolean],
     keys: js.Array[java.lang.String]
   ): ParamMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(get = get, getAll = getAll, has = has, keys = keys)
+  
     __obj.asInstanceOf[ParamMap]
   }
 }

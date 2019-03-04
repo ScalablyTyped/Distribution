@@ -30,16 +30,8 @@ object Anon_FieldModel {
     WorkItemTypeFieldModel: js.Any,
     WorkItemTypeModel: js.Any
   ): Anon_FieldModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FieldModel")(FieldModel)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("FormLayout")(FormLayout)
-    __obj.updateDynamic("GetWorkItemTypeExpand")(GetWorkItemTypeExpand)
-    __obj.updateDynamic("Page")(Page)
-    __obj.updateDynamic("PageType")(PageType)
-    __obj.updateDynamic("WorkItemTypeClass")(WorkItemTypeClass)
-    __obj.updateDynamic("WorkItemTypeFieldModel")(WorkItemTypeFieldModel)
-    __obj.updateDynamic("WorkItemTypeModel")(WorkItemTypeModel)
+    val __obj = js.Dynamic.literal(FieldModel = FieldModel, FieldType = FieldType, FormLayout = FormLayout, GetWorkItemTypeExpand = GetWorkItemTypeExpand, Page = Page, PageType = PageType, WorkItemTypeClass = WorkItemTypeClass, WorkItemTypeFieldModel = WorkItemTypeFieldModel, WorkItemTypeModel = WorkItemTypeModel)
+  
     __obj.asInstanceOf[Anon_FieldModel]
   }
 }

@@ -39,11 +39,8 @@ object RegionInstanceGroupsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): RegionInstanceGroupsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listInstances")(listInstances)
-    __obj.updateDynamic("setNamedPorts")(setNamedPorts)
+    val __obj = js.Dynamic.literal(get = get, list = list, listInstances = listInstances, setNamedPorts = setNamedPorts)
+  
     __obj.asInstanceOf[RegionInstanceGroupsResource]
   }
 }

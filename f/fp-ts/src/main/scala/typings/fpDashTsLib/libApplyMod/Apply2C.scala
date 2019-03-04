@@ -29,11 +29,8 @@ object Apply2C {
       fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
     ]
   ): Apply2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], ap = ap, map = map)
+  
     __obj.asInstanceOf[Apply2C[F, L]]
   }
 }

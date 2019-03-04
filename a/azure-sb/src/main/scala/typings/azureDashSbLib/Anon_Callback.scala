@@ -12,8 +12,8 @@ trait Anon_Callback extends js.Object {
 object Anon_Callback {
   @scala.inline
   def apply(signRequest: js.Function2[js.Any, js.Function0[scala.Unit], scala.Unit]): Anon_Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signRequest")(signRequest)
+    val __obj = js.Dynamic.literal(signRequest = signRequest)
+  
     __obj.asInstanceOf[Anon_Callback]
   }
 }

@@ -38,11 +38,8 @@ object Anon_AllowDuplication {
     defaultProject: java.lang.String,
     enable: scala.Boolean
   ): Anon_AllowDuplication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowDuplication")(allowDuplication)
-    __obj.updateDynamic("basePaths")(basePaths)
-    __obj.updateDynamic("defaultProject")(defaultProject)
-    __obj.updateDynamic("enable")(enable)
+    val __obj = js.Dynamic.literal(allowDuplication = allowDuplication, basePaths = basePaths, defaultProject = defaultProject, enable = enable)
+  
     __obj.asInstanceOf[Anon_AllowDuplication]
   }
 }

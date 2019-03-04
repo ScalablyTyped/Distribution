@@ -13,8 +13,7 @@ trait Ordering extends js.Object {
 object Ordering {
   @scala.inline
   def apply(expression: Expression, descending: js.UndefOr[scala.Boolean] = js.undefined): Ordering = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
     __obj.asInstanceOf[Ordering]
   }

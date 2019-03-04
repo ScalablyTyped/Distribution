@@ -26,9 +26,7 @@ object Anon_CancelColor {
     confirmText: java.lang.String = null,
     showCancel: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CancelColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(content = content, title = title)
     if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
     if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)

@@ -22,10 +22,8 @@ object Condition {
     ],
     name: ConditionName
   ): Condition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("func")(func)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(args = args, func = func, name = name)
+  
     __obj.asInstanceOf[Condition]
   }
 }

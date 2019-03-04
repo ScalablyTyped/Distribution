@@ -46,14 +46,8 @@ object Task {
     setContext: js.Function1[stdLib.Partial[js.Any], scala.Unit],
     toPromise: js.Function0[js.Promise[js.Any]]
   ): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("isCancelled")(isCancelled)
-    __obj.updateDynamic("isRunning")(isRunning)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("setContext")(setContext)
-    __obj.updateDynamic("toPromise")(toPromise)
+    val __obj = js.Dynamic.literal(cancel = cancel, error = error, isCancelled = isCancelled, isRunning = isRunning, result = result, setContext = setContext, toPromise = toPromise)
+  
     __obj.asInstanceOf[Task]
   }
 }

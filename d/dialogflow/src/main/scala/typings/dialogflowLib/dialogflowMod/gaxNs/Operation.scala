@@ -20,10 +20,7 @@ object Operation {
     longrunningDescriptor: js.Any,
     callOptions: CallOptions = null
   ): Operation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backoffSettings")(backoffSettings)
-    __obj.updateDynamic("grpcOp")(grpcOp)
-    __obj.updateDynamic("longrunningDescriptor")(longrunningDescriptor)
+    val __obj = js.Dynamic.literal(backoffSettings = backoffSettings, grpcOp = grpcOp, longrunningDescriptor = longrunningDescriptor)
     if (callOptions != null) __obj.updateDynamic("callOptions")(callOptions)
     __obj.asInstanceOf[Operation]
   }

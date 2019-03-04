@@ -37,13 +37,8 @@ object XTableRename {
       scala.Unit
     ]
   ): XTableRename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("rename")(rename)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, initialize = initialize, queryInterface = queryInterface, release = release, rename = rename)
+  
     __obj.asInstanceOf[XTableRename]
   }
 }

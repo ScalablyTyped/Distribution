@@ -139,13 +139,7 @@ object predominanceCreateRendererParams {
     statistics: SummaryStatisticsResult = null,
     symbolType: java.lang.String = null
   ): predominanceCreateRendererParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, view = view)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
     if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled)

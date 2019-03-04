@@ -38,20 +38,8 @@ object DvtDiagramLayoutContext {
     isLocaleR2L: js.Function0[scala.Boolean],
     setViewport: js.Function1[atOracleOraclejetLib.Anon_H, scala.Unit]
   ): DvtDiagramLayoutContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCommonContainer")(getCommonContainer)
-    __obj.updateDynamic("getComponentSize")(getComponentSize)
-    __obj.updateDynamic("getCurrentViewport")(getCurrentViewport)
-    __obj.updateDynamic("getEventData")(getEventData)
-    __obj.updateDynamic("getLinkById")(getLinkById)
-    __obj.updateDynamic("getLinkByIndex")(getLinkByIndex)
-    __obj.updateDynamic("getLinkCount")(getLinkCount)
-    __obj.updateDynamic("getNodeById")(getNodeById)
-    __obj.updateDynamic("getNodeByIndex")(getNodeByIndex)
-    __obj.updateDynamic("getNodeCount")(getNodeCount)
-    __obj.updateDynamic("getViewport")(getViewport)
-    __obj.updateDynamic("isLocaleR2L")(isLocaleR2L)
-    __obj.updateDynamic("setViewport")(setViewport)
+    val __obj = js.Dynamic.literal(getCommonContainer = getCommonContainer, getComponentSize = getComponentSize, getCurrentViewport = getCurrentViewport, getEventData = getEventData, getLinkById = getLinkById, getLinkByIndex = getLinkByIndex, getLinkCount = getLinkCount, getNodeById = getNodeById, getNodeByIndex = getNodeByIndex, getNodeCount = getNodeCount, getViewport = getViewport, isLocaleR2L = isLocaleR2L, setViewport = setViewport)
+  
     __obj.asInstanceOf[DvtDiagramLayoutContext]
   }
 }

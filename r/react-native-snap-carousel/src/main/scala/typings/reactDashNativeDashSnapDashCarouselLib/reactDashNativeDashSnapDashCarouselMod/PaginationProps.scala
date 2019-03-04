@@ -129,9 +129,7 @@ object PaginationProps {
     tappableDots: js.UndefOr[scala.Boolean] = js.undefined,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): PaginationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeDotIndex")(activeDotIndex)
-    __obj.updateDynamic("dotsLength")(dotsLength)
+    val __obj = js.Dynamic.literal(activeDotIndex = activeDotIndex, dotsLength = dotsLength)
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (carouselRef != null) __obj.updateDynamic("carouselRef")(carouselRef)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])

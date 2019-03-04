@@ -49,9 +49,7 @@ object WebAclArgs {
       ]
     ] = null
   ): WebAclArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], metricName = metricName.asInstanceOf[js.Any])
     if (loggingConfiguration != null) __obj.updateDynamic("loggingConfiguration")(loggingConfiguration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])

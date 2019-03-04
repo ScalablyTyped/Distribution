@@ -22,12 +22,8 @@ object Message {
     severity: java.lang.String,
     text: java.lang.String
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("rule")(rule)
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(column = column, line = line, rule = rule, severity = severity, text = text)
+  
     __obj.asInstanceOf[Message]
   }
 }

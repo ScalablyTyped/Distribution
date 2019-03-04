@@ -42,12 +42,8 @@ object Recipients {
     retrieve: js.Function1[java.lang.String, scala.Unit],
     update: js.Function1[java.lang.String, scala.Unit]
   ): Recipients = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("retrieve")(retrieve)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, del = del, list = list, retrieve = retrieve, update = update)
+  
     __obj.asInstanceOf[Recipients]
   }
 }

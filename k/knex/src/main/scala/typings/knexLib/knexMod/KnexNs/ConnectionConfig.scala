@@ -28,11 +28,7 @@ object ConnectionConfig {
     instanceName: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): ConnectionConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(database = database, host = host, password = password, user = user)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)

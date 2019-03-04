@@ -27,10 +27,8 @@ object ResolvedReflectiveProvider {
     multiProvider: scala.Boolean,
     resolvedFactories: js.Array[ResolvedReflectiveFactory]
   ): ResolvedReflectiveProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("multiProvider")(multiProvider)
-    __obj.updateDynamic("resolvedFactories")(resolvedFactories)
+    val __obj = js.Dynamic.literal(key = key, multiProvider = multiProvider, resolvedFactories = resolvedFactories)
+  
     __obj.asInstanceOf[ResolvedReflectiveProvider]
   }
 }

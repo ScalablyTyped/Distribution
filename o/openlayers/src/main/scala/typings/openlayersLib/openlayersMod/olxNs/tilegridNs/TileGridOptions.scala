@@ -26,8 +26,7 @@ object TileGridOptions {
     tileSize: scala.Double | openlayersLib.openlayersMod.Size = null,
     tileSizes: js.Array[scala.Double | openlayersLib.openlayersMod.Size] = null
   ): TileGridOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolutions")(resolutions)
+    val __obj = js.Dynamic.literal(resolutions = resolutions)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin)

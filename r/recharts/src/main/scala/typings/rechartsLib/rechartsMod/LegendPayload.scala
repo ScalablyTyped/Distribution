@@ -15,9 +15,8 @@ trait LegendPayload extends js.Object {
 object LegendPayload {
   @scala.inline
   def apply(id: js.Any, `type`: LegendType, value: js.Any, color: java.lang.String = null): LegendPayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (color != null) __obj.updateDynamic("color")(color)
     __obj.asInstanceOf[LegendPayload]
   }

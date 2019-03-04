@@ -22,12 +22,8 @@ object SendStatus {
     SubmittedAt: java.lang.String,
     To: java.lang.String
   ): SendStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ErrorCode")(ErrorCode)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("MessageID")(MessageID)
-    __obj.updateDynamic("SubmittedAt")(SubmittedAt)
-    __obj.updateDynamic("To")(To)
+    val __obj = js.Dynamic.literal(ErrorCode = ErrorCode, Message = Message, MessageID = MessageID, SubmittedAt = SubmittedAt, To = To)
+  
     __obj.asInstanceOf[SendStatus]
   }
 }

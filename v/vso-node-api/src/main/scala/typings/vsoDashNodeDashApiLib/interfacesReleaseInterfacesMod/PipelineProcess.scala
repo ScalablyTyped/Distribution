@@ -12,8 +12,8 @@ trait PipelineProcess extends js.Object {
 object PipelineProcess {
   @scala.inline
   def apply(`type`: PipelineProcessTypes): PipelineProcess = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PipelineProcess]
   }
 }

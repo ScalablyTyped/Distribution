@@ -25,9 +25,7 @@ object HighChartsNGChart {
     useHighStocks: js.UndefOr[scala.Boolean] = js.undefined,
     xAxis: highchartsDashNgLib.Anon_CurrentMax = null
   ): HighChartsNGChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getHighcharts")(getHighcharts)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(getHighcharts = getHighcharts, options = options)
     if (func != null) __obj.updateDynamic("func")(func)
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (noData != null) __obj.updateDynamic("noData")(noData)

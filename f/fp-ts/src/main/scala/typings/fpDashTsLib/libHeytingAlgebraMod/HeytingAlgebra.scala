@@ -21,13 +21,8 @@ object HeytingAlgebra {
     one: A,
     zero: A
   ): HeytingAlgebra[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("implies")(implies)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("meet")(meet)
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
-    __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(implies = implies, join = join, meet = meet, not = not, one = one.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[HeytingAlgebra[A]]
   }
 }

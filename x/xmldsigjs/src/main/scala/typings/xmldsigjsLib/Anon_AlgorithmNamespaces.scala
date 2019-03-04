@@ -32,17 +32,8 @@ object Anon_AlgorithmNamespaces {
     NamespaceURIPss: java.lang.String,
     Uri: Anon_Manifest
   ): Anon_AlgorithmNamespaces = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AlgorithmNamespaces")(AlgorithmNamespaces)
-    __obj.updateDynamic("AttributeNames")(AttributeNames)
-    __obj.updateDynamic("DefaultCanonMethod")(DefaultCanonMethod)
-    __obj.updateDynamic("DefaultDigestMethod")(DefaultDigestMethod)
-    __obj.updateDynamic("DefaultPrefix")(DefaultPrefix)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("NamespaceURI")(NamespaceURI)
-    __obj.updateDynamic("NamespaceURIMore")(NamespaceURIMore)
-    __obj.updateDynamic("NamespaceURIPss")(NamespaceURIPss)
-    __obj.updateDynamic("Uri")(Uri)
+    val __obj = js.Dynamic.literal(AlgorithmNamespaces = AlgorithmNamespaces, AttributeNames = AttributeNames, DefaultCanonMethod = DefaultCanonMethod, DefaultDigestMethod = DefaultDigestMethod, DefaultPrefix = DefaultPrefix, ElementNames = ElementNames, NamespaceURI = NamespaceURI, NamespaceURIMore = NamespaceURIMore, NamespaceURIPss = NamespaceURIPss, Uri = Uri)
+  
     __obj.asInstanceOf[Anon_AlgorithmNamespaces]
   }
 }

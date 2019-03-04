@@ -12,8 +12,8 @@ trait KnockoutPageGenerator extends js.Object {
 object KnockoutPageGenerator {
   @scala.inline
   def apply(generate: js.Function1[KnockoutPagedObservableArray[js.Any], js.Array[scala.Double]]): KnockoutPageGenerator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generate")(generate)
+    val __obj = js.Dynamic.literal(generate = generate)
+  
     __obj.asInstanceOf[KnockoutPageGenerator]
   }
 }

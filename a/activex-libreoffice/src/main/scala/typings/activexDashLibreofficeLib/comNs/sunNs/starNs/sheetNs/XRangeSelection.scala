@@ -46,16 +46,8 @@ object XRangeSelection {
       scala.Unit
     ]
   ): XRangeSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abortRangeSelection")(abortRangeSelection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRangeSelectionChangeListener")(addRangeSelectionChangeListener)
-    __obj.updateDynamic("addRangeSelectionListener")(addRangeSelectionListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRangeSelectionChangeListener")(removeRangeSelectionChangeListener)
-    __obj.updateDynamic("removeRangeSelectionListener")(removeRangeSelectionListener)
-    __obj.updateDynamic("startRangeSelection")(startRangeSelection)
+    val __obj = js.Dynamic.literal(abortRangeSelection = abortRangeSelection, acquire = acquire, addRangeSelectionChangeListener = addRangeSelectionChangeListener, addRangeSelectionListener = addRangeSelectionListener, queryInterface = queryInterface, release = release, removeRangeSelectionChangeListener = removeRangeSelectionChangeListener, removeRangeSelectionListener = removeRangeSelectionListener, startRangeSelection = startRangeSelection)
+  
     __obj.asInstanceOf[XRangeSelection]
   }
 }

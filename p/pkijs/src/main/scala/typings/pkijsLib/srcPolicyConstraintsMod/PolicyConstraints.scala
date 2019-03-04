@@ -22,10 +22,7 @@ object PolicyConstraints {
     inhibitPolicyMapping: scala.Int | scala.Double = null,
     requireExplicitPolicy: scala.Int | scala.Double = null
   ): PolicyConstraints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
     if (inhibitPolicyMapping != null) __obj.updateDynamic("inhibitPolicyMapping")(inhibitPolicyMapping.asInstanceOf[js.Any])
     if (requireExplicitPolicy != null) __obj.updateDynamic("requireExplicitPolicy")(requireExplicitPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyConstraints]

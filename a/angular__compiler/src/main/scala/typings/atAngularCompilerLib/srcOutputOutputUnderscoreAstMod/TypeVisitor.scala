@@ -20,11 +20,8 @@ object TypeVisitor {
     visitExpressionType: js.Function2[ExpressionType, js.Any, js.Any],
     visitMapType: js.Function2[MapType, js.Any, js.Any]
   ): TypeVisitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitArrayType")(visitArrayType)
-    __obj.updateDynamic("visitBuiltinType")(visitBuiltinType)
-    __obj.updateDynamic("visitExpressionType")(visitExpressionType)
-    __obj.updateDynamic("visitMapType")(visitMapType)
+    val __obj = js.Dynamic.literal(visitArrayType = visitArrayType, visitBuiltinType = visitBuiltinType, visitExpressionType = visitExpressionType, visitMapType = visitMapType)
+  
     __obj.asInstanceOf[TypeVisitor]
   }
 }

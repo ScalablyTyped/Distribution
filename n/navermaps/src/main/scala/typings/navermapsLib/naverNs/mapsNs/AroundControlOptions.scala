@@ -12,8 +12,8 @@ trait AroundControlOptions extends js.Object {
 object AroundControlOptions {
   @scala.inline
   def apply(position: Position): AroundControlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(position = position)
+  
     __obj.asInstanceOf[AroundControlOptions]
   }
 }

@@ -22,11 +22,8 @@ object Tap {
     stage: scala.Double,
     `type`: tapableLib.TapType
   ): Tap = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("fn")(fn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stage")(stage)
+    val __obj = js.Dynamic.literal(context = context, fn = fn, name = name, stage = stage)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Tap]
   }
 }

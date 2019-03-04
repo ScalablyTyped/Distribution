@@ -28,15 +28,8 @@ object ScatterMarkerLine {
     reversescale: scala.Boolean,
     width: scala.Double | js.Array[scala.Double]
   ): ScatterMarkerLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocolorscale")(autocolorscale)
-    __obj.updateDynamic("cauto")(cauto)
-    __obj.updateDynamic("cmax")(cmax)
-    __obj.updateDynamic("cmin")(cmin)
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    __obj.updateDynamic("colorscale")(colorscale.asInstanceOf[js.Any])
-    __obj.updateDynamic("reversescale")(reversescale)
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autocolorscale = autocolorscale, cauto = cauto, cmax = cmax, cmin = cmin, color = color.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], reversescale = reversescale, width = width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ScatterMarkerLine]
   }
 }

@@ -20,11 +20,8 @@ object GitRepositoryStats {
     commitsCount: scala.Double,
     repositoryId: java.lang.String
   ): GitRepositoryStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activePullRequestsCount")(activePullRequestsCount)
-    __obj.updateDynamic("branchesCount")(branchesCount)
-    __obj.updateDynamic("commitsCount")(commitsCount)
-    __obj.updateDynamic("repositoryId")(repositoryId)
+    val __obj = js.Dynamic.literal(activePullRequestsCount = activePullRequestsCount, branchesCount = branchesCount, commitsCount = commitsCount, repositoryId = repositoryId)
+  
     __obj.asInstanceOf[GitRepositoryStats]
   }
 }

@@ -27,12 +27,8 @@ object Anon_MINEONLY {
     SIMPLE_UPLOAD_ENABLED: java.lang.String,
     SUPPORT_TEAM_DRIVES: java.lang.String
   ): Anon_MINEONLY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MINE_ONLY")(MINE_ONLY)
-    __obj.updateDynamic("MULTISELECT_ENABLED")(MULTISELECT_ENABLED)
-    __obj.updateDynamic("NAV_HIDDEN")(NAV_HIDDEN)
-    __obj.updateDynamic("SIMPLE_UPLOAD_ENABLED")(SIMPLE_UPLOAD_ENABLED)
-    __obj.updateDynamic("SUPPORT_TEAM_DRIVES")(SUPPORT_TEAM_DRIVES)
+    val __obj = js.Dynamic.literal(MINE_ONLY = MINE_ONLY, MULTISELECT_ENABLED = MULTISELECT_ENABLED, NAV_HIDDEN = NAV_HIDDEN, SIMPLE_UPLOAD_ENABLED = SIMPLE_UPLOAD_ENABLED, SUPPORT_TEAM_DRIVES = SUPPORT_TEAM_DRIVES)
+  
     __obj.asInstanceOf[Anon_MINEONLY]
   }
 }

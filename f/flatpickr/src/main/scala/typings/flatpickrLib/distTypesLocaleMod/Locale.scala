@@ -60,18 +60,8 @@ object Locale {
     weekdays: flatpickrLib.Anon_Longhand,
     yearAriaLabel: java.lang.String
   ): Locale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amPM")(amPM)
-    __obj.updateDynamic("daysInMonth")(daysInMonth)
-    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("ordinal")(ordinal)
-    __obj.updateDynamic("rangeSeparator")(rangeSeparator)
-    __obj.updateDynamic("scrollTitle")(scrollTitle)
-    __obj.updateDynamic("toggleTitle")(toggleTitle)
-    __obj.updateDynamic("weekAbbreviation")(weekAbbreviation)
-    __obj.updateDynamic("weekdays")(weekdays)
-    __obj.updateDynamic("yearAriaLabel")(yearAriaLabel)
+    val __obj = js.Dynamic.literal(amPM = amPM, daysInMonth = daysInMonth, firstDayOfWeek = firstDayOfWeek, months = months, ordinal = ordinal, rangeSeparator = rangeSeparator, scrollTitle = scrollTitle, toggleTitle = toggleTitle, weekAbbreviation = weekAbbreviation, weekdays = weekdays, yearAriaLabel = yearAriaLabel)
+  
     __obj.asInstanceOf[Locale]
   }
 }

@@ -19,9 +19,8 @@ trait BuildBadge extends js.Object {
 object BuildBadge {
   @scala.inline
   def apply(buildId: scala.Double, imageUrl: java.lang.String): BuildBadge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildId")(buildId)
-    __obj.updateDynamic("imageUrl")(imageUrl)
+    val __obj = js.Dynamic.literal(buildId = buildId, imageUrl = imageUrl)
+  
     __obj.asInstanceOf[BuildBadge]
   }
 }

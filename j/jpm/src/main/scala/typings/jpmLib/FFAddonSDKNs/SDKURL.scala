@@ -39,21 +39,8 @@ object SDKURL {
     toString: js.Function0[java.lang.String],
     userPass: java.lang.String
   ): SDKURL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("userPass")(userPass)
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, href = href, origin = origin, path = path, pathname = pathname, port = port, protocol = protocol, scheme = scheme, search = search, toJSON = toJSON, toString = toString, userPass = userPass)
+  
     __obj.asInstanceOf[SDKURL]
   }
 }

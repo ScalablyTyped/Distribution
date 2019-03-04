@@ -22,9 +22,8 @@ object TSQualifiedName {
     right: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSQualifiedName
   ): TSQualifiedName = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSQualifiedName]
   }
 }

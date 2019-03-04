@@ -16,12 +16,12 @@ class ChildrenNode protected ()
     * @param {?Node} priorityNode_ The priority of this node (as a snapshot node).
     * @param {!IndexMap} indexMap_
     */
-  def this(`children_`: atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node], `priorityNode_`: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, `indexMap_`: atFirebaseDatabaseLib.distSrcCoreSnapIndexMapMod.IndexMap) = this()
-  def this(`children_`: atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node], `priorityNode_`: scala.Null, `indexMap_`: atFirebaseDatabaseLib.distSrcCoreSnapIndexMapMod.IndexMap) = this()
-  val `children_`: js.Any = js.native
-  var `indexMap_`: js.Any = js.native
-  var `lazyHash_`: js.Any = js.native
-  val `priorityNode_`: js.Any = js.native
+  def this(children_ : atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node], priorityNode_ : atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, indexMap_ : atFirebaseDatabaseLib.distSrcCoreSnapIndexMapMod.IndexMap) = this()
+  def this(children_ : atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node], priorityNode_ : scala.Null, indexMap_ : atFirebaseDatabaseLib.distSrcCoreSnapIndexMapMod.IndexMap) = this()
+  val children_ : js.Any = js.native
+  var indexMap_ : js.Any = js.native
+  var lazyHash_ : js.Any = js.native
+  val priorityNode_ : js.Any = js.native
   /**
     * Returns a SortedMap ordered by index, or null if the default (by-key) ordering can be used
     * instead.
@@ -30,7 +30,7 @@ class ChildrenNode protected ()
     * @param {!Index} indexDefinition
     * @return {?SortedMap.<NamedNode, Node>}
     */
-  var `resolveIndex_`: js.Any = js.native
+  var resolveIndex_ : js.Any = js.native
   /**
     * @inheritDoc
     */
@@ -112,6 +112,6 @@ object ChildrenNode extends js.Object {
     * @private
     * @type {RegExp}
     */
-  var `INTEGER_REGEXP_`: js.Any = js.native
+  var INTEGER_REGEXP_ : js.Any = js.native
 }
 

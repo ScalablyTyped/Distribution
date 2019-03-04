@@ -33,24 +33,8 @@ object GitConflictRenameDelete {
     sourceNewPath: java.lang.String,
     url: java.lang.String
   ): GitConflictRenameDelete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("baseBlob")(baseBlob)
-    __obj.updateDynamic("conflictId")(conflictId)
-    __obj.updateDynamic("conflictPath")(conflictPath)
-    __obj.updateDynamic("conflictType")(conflictType)
-    __obj.updateDynamic("mergeBaseCommit")(mergeBaseCommit)
-    __obj.updateDynamic("mergeOrigin")(mergeOrigin)
-    __obj.updateDynamic("mergeSourceCommit")(mergeSourceCommit)
-    __obj.updateDynamic("mergeTargetCommit")(mergeTargetCommit)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("resolutionError")(resolutionError)
-    __obj.updateDynamic("resolutionStatus")(resolutionStatus)
-    __obj.updateDynamic("resolvedBy")(resolvedBy)
-    __obj.updateDynamic("resolvedDate")(resolvedDate)
-    __obj.updateDynamic("sourceBlob")(sourceBlob)
-    __obj.updateDynamic("sourceNewPath")(sourceNewPath)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, baseBlob = baseBlob, conflictId = conflictId, conflictPath = conflictPath, conflictType = conflictType, mergeBaseCommit = mergeBaseCommit, mergeOrigin = mergeOrigin, mergeSourceCommit = mergeSourceCommit, mergeTargetCommit = mergeTargetCommit, resolution = resolution, resolutionError = resolutionError, resolutionStatus = resolutionStatus, resolvedBy = resolvedBy, resolvedDate = resolvedDate, sourceBlob = sourceBlob, sourceNewPath = sourceNewPath, url = url)
+  
     __obj.asInstanceOf[GitConflictRenameDelete]
   }
 }

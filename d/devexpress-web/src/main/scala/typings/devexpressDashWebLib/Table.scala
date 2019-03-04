@@ -51,13 +51,8 @@ object Table {
     start: scala.Double,
     styleName: java.lang.String
   ): Table = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("styleName")(styleName)
+    val __obj = js.Dynamic.literal(index = index, interval = interval, length = length, rows = rows, start = start, styleName = styleName)
+  
     __obj.asInstanceOf[Table]
   }
 }

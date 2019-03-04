@@ -80,8 +80,7 @@ object CatalogTableArgs {
     viewExpandedText: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     viewOriginalText: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): CatalogTableArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any])
     if (catalogId != null) __obj.updateDynamic("catalogId")(catalogId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

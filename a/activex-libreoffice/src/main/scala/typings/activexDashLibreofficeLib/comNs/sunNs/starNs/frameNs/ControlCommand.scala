@@ -25,9 +25,8 @@ object ControlCommand {
     Arguments: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
     Command: java.lang.String
   ): ControlCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Arguments")(Arguments)
-    __obj.updateDynamic("Command")(Command)
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Command = Command)
+  
     __obj.asInstanceOf[ControlCommand]
   }
 }

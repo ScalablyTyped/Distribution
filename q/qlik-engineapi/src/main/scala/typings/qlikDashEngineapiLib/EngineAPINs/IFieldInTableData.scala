@@ -103,24 +103,8 @@ object IFieldInTableData {
     qnRows: scala.Double,
     qnTotalDistinctValues: scala.Double
   ): IFieldInTableData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qComment")(qComment)
-    __obj.updateDynamic("qDerivedFields")(qDerivedFields)
-    __obj.updateDynamic("qHasDuplicates")(qHasDuplicates)
-    __obj.updateDynamic("qHasNull")(qHasNull)
-    __obj.updateDynamic("qHasWild")(qHasWild)
-    __obj.updateDynamic("qInformationDensity")(qInformationDensity)
-    __obj.updateDynamic("qIsSynthetic")(qIsSynthetic)
-    __obj.updateDynamic("qKeyType")(qKeyType)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qOriginalFields")(qOriginalFields)
-    __obj.updateDynamic("qPresent")(qPresent)
-    __obj.updateDynamic("qSubsetRatio")(qSubsetRatio)
-    __obj.updateDynamic("qTags")(qTags)
-    __obj.updateDynamic("qnNonNulls")(qnNonNulls)
-    __obj.updateDynamic("qnPresentDistinctValues")(qnPresentDistinctValues)
-    __obj.updateDynamic("qnRows")(qnRows)
-    __obj.updateDynamic("qnTotalDistinctValues")(qnTotalDistinctValues)
+    val __obj = js.Dynamic.literal(qComment = qComment, qDerivedFields = qDerivedFields, qHasDuplicates = qHasDuplicates, qHasNull = qHasNull, qHasWild = qHasWild, qInformationDensity = qInformationDensity, qIsSynthetic = qIsSynthetic, qKeyType = qKeyType, qName = qName, qOriginalFields = qOriginalFields, qPresent = qPresent, qSubsetRatio = qSubsetRatio, qTags = qTags, qnNonNulls = qnNonNulls, qnPresentDistinctValues = qnPresentDistinctValues, qnRows = qnRows, qnTotalDistinctValues = qnTotalDistinctValues)
+  
     __obj.asInstanceOf[IFieldInTableData]
   }
 }

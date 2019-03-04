@@ -39,16 +39,7 @@ object Events {
     nextPageToken: java.lang.String = null,
     nextSyncToken: java.lang.String = null
   ): Events = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessRole")(accessRole)
-    __obj.updateDynamic("defaultReminders")(defaultReminders)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("timeZone")(timeZone)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(accessRole = accessRole, defaultReminders = defaultReminders, description = description, etag = etag, items = items, kind = kind, summary = summary, timeZone = timeZone, updated = updated)
     if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
     if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
     __obj.asInstanceOf[Events]

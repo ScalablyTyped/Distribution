@@ -32,11 +32,8 @@ object RoleAssignment {
     identity: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
     role: SecurityRole
   ): RoleAssignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access")(access)
-    __obj.updateDynamic("accessDisplayName")(accessDisplayName)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(access = access, accessDisplayName = accessDisplayName, identity = identity, role = role)
+  
     __obj.asInstanceOf[RoleAssignment]
   }
 }

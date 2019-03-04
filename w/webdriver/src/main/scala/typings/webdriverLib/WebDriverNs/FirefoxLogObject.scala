@@ -12,8 +12,8 @@ trait FirefoxLogObject extends js.Object {
 object FirefoxLogObject {
   @scala.inline
   def apply(level: FirefoxLogLevels): FirefoxLogObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(level = level)
+  
     __obj.asInstanceOf[FirefoxLogObject]
   }
 }

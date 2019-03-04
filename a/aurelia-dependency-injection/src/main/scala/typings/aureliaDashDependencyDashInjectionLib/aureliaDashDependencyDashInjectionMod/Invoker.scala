@@ -34,9 +34,8 @@ object Invoker {
     invoke: js.Function3[Container, js.Function, js.Array[_], js.Any],
     invokeWithDynamicDependencies: js.Function4[Container, js.Function, js.Array[_], js.Array[_], js.Any]
   ): Invoker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("invokeWithDynamicDependencies")(invokeWithDynamicDependencies)
+    val __obj = js.Dynamic.literal(invoke = invoke, invokeWithDynamicDependencies = invokeWithDynamicDependencies)
+  
     __obj.asInstanceOf[Invoker]
   }
 }

@@ -16,18 +16,18 @@ trait LodashUpdate extends js.Object {
   ): js.Any = js.native
   def apply(
     path: lodashLib.lodashMod.underscoreNs.PropertyPath,
-    updater: lodashLib.lodashMod.underscoreNs.`__`,
+    updater: lodashLib.lodashMod.underscoreNs.__,
     `object`: js.Object
   ): LodashUpdate1x5 = js.native
-  def apply(path: lodashLib.lodashMod.underscoreNs.`__`, updater: js.Function1[/* value */ js.Any, _]): LodashUpdate1x2 = js.native
+  def apply(path: lodashLib.lodashMod.underscoreNs.__, updater: js.Function1[/* value */ js.Any, _]): LodashUpdate1x2 = js.native
   def apply(
-    path: lodashLib.lodashMod.underscoreNs.`__`,
+    path: lodashLib.lodashMod.underscoreNs.__,
     updater: js.Function1[/* value */ js.Any, _],
     `object`: js.Object
   ): LodashUpdate1x6 = js.native
   def apply(
-    path: lodashLib.lodashMod.underscoreNs.`__`,
-    updater: lodashLib.lodashMod.underscoreNs.`__`,
+    path: lodashLib.lodashMod.underscoreNs.__,
+    updater: lodashLib.lodashMod.underscoreNs.__,
     `object`: js.Object
   ): LodashUpdate1x4 = js.native
 }

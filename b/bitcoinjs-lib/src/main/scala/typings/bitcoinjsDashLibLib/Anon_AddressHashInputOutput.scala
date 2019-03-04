@@ -24,13 +24,8 @@ object Anon_AddressHashInputOutput {
     redeem: bitcoinjsDashLibLib.bitcoinjsDashLibMod.paymentsNs.Redeem,
     witness: js.Array[nodeLib.Buffer]
   ): Anon_AddressHashInputOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("redeem")(redeem)
-    __obj.updateDynamic("witness")(witness)
+    val __obj = js.Dynamic.literal(address = address, hash = hash, input = input, output = output, redeem = redeem, witness = witness)
+  
     __obj.asInstanceOf[Anon_AddressHashInputOutput]
   }
 }

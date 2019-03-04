@@ -38,23 +38,8 @@ object ICursorTool {
     size: IPoint,
     vertAxis: IAxis
   ): ICursorTool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("clicked")(clicked)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("dragging")(dragging)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("followMouse")(followMouse)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("horizAxis")(horizAxis)
-    __obj.updateDynamic("mousedown")(mousedown)
-    __obj.updateDynamic("mousemove")(mousemove)
-    __obj.updateDynamic("over")(over)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("setRender")(setRender)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("vertAxis")(vertAxis)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = clicked, direction = direction, dragging = dragging, draw = draw, followMouse = followMouse, format = format, horizAxis = horizAxis, mousedown = mousedown, mousemove = mousemove, over = over, render = render, setRender = setRender, size = size, vertAxis = vertAxis)
+  
     __obj.asInstanceOf[ICursorTool]
   }
 }

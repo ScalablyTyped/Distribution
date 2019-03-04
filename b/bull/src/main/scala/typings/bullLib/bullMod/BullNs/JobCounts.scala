@@ -22,12 +22,8 @@ object JobCounts {
     failed: scala.Double,
     waiting: scala.Double
   ): JobCounts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("delayed")(delayed)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("waiting")(waiting)
+    val __obj = js.Dynamic.literal(active = active, completed = completed, delayed = delayed, failed = failed, waiting = waiting)
+  
     __obj.asInstanceOf[JobCounts]
   }
 }

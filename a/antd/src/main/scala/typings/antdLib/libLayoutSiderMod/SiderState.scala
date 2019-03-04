@@ -18,8 +18,7 @@ object SiderState {
     belowShow: js.UndefOr[scala.Boolean] = js.undefined,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined
   ): SiderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("below")(below)
+    val __obj = js.Dynamic.literal(below = below)
     if (!js.isUndefined(belowShow)) __obj.updateDynamic("belowShow")(belowShow)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     __obj.asInstanceOf[SiderState]

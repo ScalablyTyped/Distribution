@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashCurryN extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: lodashLib.lodashMod.underscoreNs.`__` = js.native
-  def apply(arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashCurryN6x2 = js.native
+  var placeholder_Original: lodashLib.lodashMod.underscoreNs.__ = js.native
+  def apply(arity: lodashLib.lodashMod.underscoreNs.__, func: js.Function1[/* repeated */ js.Any, _]): LodashCurryN6x2 = js.native
   def apply(arity: scala.Double): LodashCurryN1x1 = js.native
   def apply(arity: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply[T1, T2, R](arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): LodashCurryN2x2[T1, T2, R] = js.native
+  def apply[T1, T2, R](arity: lodashLib.lodashMod.underscoreNs.__, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): LodashCurryN2x2[T1, T2, R] = js.native
   def apply[T1, T2, R](arity: scala.Double, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction2[T1, T2, R] = js.native
   def apply[T1, T2, T3, R](
-    arity: lodashLib.lodashMod.underscoreNs.`__`,
+    arity: lodashLib.lodashMod.underscoreNs.__,
     func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]
   ): LodashCurryN3x2[T1, T2, T3, R] = js.native
   def apply[T1, T2, T3, R](arity: scala.Double, func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction3[T1, T2, T3, R] = js.native
   def apply[T1, T2, T3, T4, R](
-    arity: lodashLib.lodashMod.underscoreNs.`__`,
+    arity: lodashLib.lodashMod.underscoreNs.__,
     func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]
   ): LodashCurryN4x2[T1, T2, T3, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](arity: scala.Double, func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction4[T1, T2, T3, T4, R] = js.native
   def apply[T1, T2, T3, T4, T5, R](
-    arity: lodashLib.lodashMod.underscoreNs.`__`,
+    arity: lodashLib.lodashMod.underscoreNs.__,
     func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* t5 */ T5, R]
   ): LodashCurryN5x2[T1, T2, T3, T4, T5, R] = js.native
   def apply[T1, T2, T3, T4, T5, R](

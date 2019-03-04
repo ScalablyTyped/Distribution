@@ -30,9 +30,7 @@ object ComposeButtonDescriptor {
     orderHint: scala.Int | scala.Double = null,
     `type`: inboxsdkLib.inboxsdkLibStrings.MODIFIER | inboxsdkLib.inboxsdkLibStrings.SEND_ACTION = null
   ): ComposeButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(onClick = onClick, title = title)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)

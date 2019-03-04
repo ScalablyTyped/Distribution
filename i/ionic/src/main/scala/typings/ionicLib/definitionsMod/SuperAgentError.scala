@@ -13,8 +13,7 @@ trait SuperAgentError
 object SuperAgentError {
   @scala.inline
   def apply(response: superagentLib.superagentMod.requestNs.Response, stack: java.lang.String = null): SuperAgentError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(response = response)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[SuperAgentError]
   }

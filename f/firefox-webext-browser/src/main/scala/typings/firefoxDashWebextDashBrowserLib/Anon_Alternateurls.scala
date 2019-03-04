@@ -58,9 +58,7 @@ object Anon_Alternateurls {
     suggest_url: java.lang.String = null,
     suggest_url_post_params: java.lang.String = null
   ): Anon_Alternateurls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("search_url")(search_url)
+    val __obj = js.Dynamic.literal(name = name, search_url = search_url)
     if (alternate_urls != null) __obj.updateDynamic("alternate_urls")(alternate_urls)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (favicon_url != null) __obj.updateDynamic("favicon_url")(favicon_url)

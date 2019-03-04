@@ -28,15 +28,8 @@ object IPointerPoint {
     rawPosition: winrtLib.WindowsNs.FoundationNs.Point,
     timestamp: scala.Double
   ): IPointerPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("isInContact")(isInContact)
-    __obj.updateDynamic("pointerDevice")(pointerDevice)
-    __obj.updateDynamic("pointerId")(pointerId)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("rawPosition")(rawPosition)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(frameId = frameId, isInContact = isInContact, pointerDevice = pointerDevice, pointerId = pointerId, position = position, properties = properties, rawPosition = rawPosition, timestamp = timestamp)
+  
     __obj.asInstanceOf[IPointerPoint]
   }
 }

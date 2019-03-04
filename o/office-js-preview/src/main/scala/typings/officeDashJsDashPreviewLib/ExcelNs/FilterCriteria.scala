@@ -97,8 +97,7 @@ object FilterCriteria {
     subField: java.lang.String = null,
     values: js.Array[java.lang.String | FilterDatetime] = null
   ): FilterCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filterOn")(filterOn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filterOn = filterOn.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (criterion1 != null) __obj.updateDynamic("criterion1")(criterion1)
     if (criterion2 != null) __obj.updateDynamic("criterion2")(criterion2)

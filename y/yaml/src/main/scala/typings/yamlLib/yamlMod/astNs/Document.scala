@@ -94,17 +94,8 @@ object Document {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     version: java.lang.String = null
   ): Document = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("anchors")(anchors)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("listNonDefaultTags")(listNonDefaultTags)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("setTagPrefix")(setTagPrefix)
-    __obj.updateDynamic("tagPrefixes")(tagPrefixes)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(anchors = anchors, errors = errors, listNonDefaultTags = listNonDefaultTags, parse = parse, schema = schema, setTagPrefix = setTagPrefix, tagPrefixes = tagPrefixes, toJSON = toJSON, toString = toString, warnings = warnings)
+    __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (contents != null) __obj.updateDynamic("contents")(contents)

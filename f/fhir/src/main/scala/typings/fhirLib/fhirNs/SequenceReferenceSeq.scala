@@ -86,9 +86,7 @@ object SequenceReferenceSeq {
     referenceSeqString: java.lang.String = null,
     strand: js.UndefOr[integer] = js.undefined
   ): SequenceReferenceSeq = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("windowEnd")(windowEnd)
-    __obj.updateDynamic("windowStart")(windowStart)
+    val __obj = js.Dynamic.literal(windowEnd = windowEnd, windowStart = windowStart)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_genomeBuild != null) __obj.updateDynamic("_genomeBuild")(_genomeBuild)
     if (_id != null) __obj.updateDynamic("_id")(_id)

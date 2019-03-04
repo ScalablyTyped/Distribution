@@ -34,18 +34,8 @@ object IObjectClass {
     ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double,
     Workflow: scala.Double
   ): IObjectClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("AdditionalClassInfo")(AdditionalClassInfo)
-    __obj.updateDynamic("AssociatedPropertyDefs")(AssociatedPropertyDefs)
-    __obj.updateDynamic("AutomaticPermissionsForObjects")(AutomaticPermissionsForObjects)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ForceWorkflow")(ForceWorkflow)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NamePropertyDef")(NamePropertyDef)
-    __obj.updateDynamic("ObjectType")(ObjectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("Workflow")(Workflow)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AdditionalClassInfo = AdditionalClassInfo, AssociatedPropertyDefs = AssociatedPropertyDefs, AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = Clone, ForceWorkflow = ForceWorkflow, ID = ID, Name = Name, NamePropertyDef = NamePropertyDef, ObjectType = ObjectType.asInstanceOf[js.Any], Workflow = Workflow)
+  
     __obj.asInstanceOf[IObjectClass]
   }
 }

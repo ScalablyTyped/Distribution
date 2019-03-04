@@ -20,11 +20,8 @@ object IPrintTaskConfigurationSaveRequest {
     getDeferral: js.Function0[PrintTaskConfigurationSaveRequestedDeferral],
     save: js.Function1[js.Any, scala.Unit]
   ): IPrintTaskConfigurationSaveRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("deadline")(deadline)
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(cancel = cancel, deadline = deadline, getDeferral = getDeferral, save = save)
+  
     __obj.asInstanceOf[IPrintTaskConfigurationSaveRequest]
   }
 }

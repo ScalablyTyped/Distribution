@@ -26,12 +26,7 @@ object NightwatchAssertion {
     api: NightwatchAPI = null,
     failure: js.Function1[/* repeated */ js.Any, _] = null
   ): NightwatchAssertion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("pass")(pass)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(command = command, expected = expected.asInstanceOf[js.Any], message = message, pass = pass, value = value)
     if (api != null) __obj.updateDynamic("api")(api)
     if (failure != null) __obj.updateDynamic("failure")(failure)
     __obj.asInstanceOf[NightwatchAssertion]

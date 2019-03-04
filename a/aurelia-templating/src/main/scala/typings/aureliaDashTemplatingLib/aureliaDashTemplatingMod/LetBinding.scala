@@ -32,11 +32,8 @@ object LetBinding {
     unbind: js.Function0[scala.Unit],
     updateTarget: js.Function1[js.Any, scala.Unit]
   ): LetBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("sourceExpression")(sourceExpression)
-    __obj.updateDynamic("unbind")(unbind)
-    __obj.updateDynamic("updateTarget")(updateTarget)
+    val __obj = js.Dynamic.literal(bind = bind, sourceExpression = sourceExpression, unbind = unbind, updateTarget = updateTarget)
+  
     __obj.asInstanceOf[LetBinding]
   }
 }

@@ -26,14 +26,8 @@ object AppUser {
     systemSecret: java.lang.String,
     user: APIUser
   ): AppUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("allUsers")(allUsers)
-    __obj.updateDynamic("getUser")(getUser)
-    __obj.updateDynamic("setUser")(setUser)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, allUsers = allUsers, getUser = getUser, setUser = setUser, systemKey = systemKey, systemSecret = systemSecret, user = user)
+  
     __obj.asInstanceOf[AppUser]
   }
 }

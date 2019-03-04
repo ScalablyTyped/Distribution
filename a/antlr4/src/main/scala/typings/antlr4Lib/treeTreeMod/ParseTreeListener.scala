@@ -20,11 +20,8 @@ object ParseTreeListener {
     visitErrorNode: js.Function1[ErrorNode, scala.Unit],
     visitTerminal: js.Function1[TerminalNode, scala.Unit]
   ): ParseTreeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enterEveryRule")(enterEveryRule)
-    __obj.updateDynamic("exitEveryRule")(exitEveryRule)
-    __obj.updateDynamic("visitErrorNode")(visitErrorNode)
-    __obj.updateDynamic("visitTerminal")(visitTerminal)
+    val __obj = js.Dynamic.literal(enterEveryRule = enterEveryRule, exitEveryRule = exitEveryRule, visitErrorNode = visitErrorNode, visitTerminal = visitTerminal)
+  
     __obj.asInstanceOf[ParseTreeListener]
   }
 }

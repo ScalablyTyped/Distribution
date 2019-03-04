@@ -17,11 +17,8 @@ object IProtocolActivatedEventArgs {
     splashScreen: SplashScreen,
     uri: winrtLib.WindowsNs.FoundationNs.Uri
   ): IProtocolActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen, uri = uri)
+  
     __obj.asInstanceOf[IProtocolActivatedEventArgs]
   }
 }

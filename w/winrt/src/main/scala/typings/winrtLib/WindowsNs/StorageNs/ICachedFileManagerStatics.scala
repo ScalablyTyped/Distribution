@@ -19,9 +19,8 @@ object ICachedFileManagerStatics {
     ],
     deferUpdates: js.Function1[IStorageFile, scala.Unit]
   ): ICachedFileManagerStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completeUpdatesAsync")(completeUpdatesAsync)
-    __obj.updateDynamic("deferUpdates")(deferUpdates)
+    val __obj = js.Dynamic.literal(completeUpdatesAsync = completeUpdatesAsync, deferUpdates = deferUpdates)
+  
     __obj.asInstanceOf[ICachedFileManagerStatics]
   }
 }

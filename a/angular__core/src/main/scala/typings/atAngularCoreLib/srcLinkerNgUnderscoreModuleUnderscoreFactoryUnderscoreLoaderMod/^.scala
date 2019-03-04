@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def clearModulesForTest(): scala.Unit = js.native
   def getModuleFactory(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def `getModuleFactory__POST_R3__`(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def `getModuleFactory__PRE_R3__`(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
+  def getModuleFactory__POST_R3__(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
+  def getModuleFactory__PRE_R3__(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
   def registerModuleFactory(
     id: java.lang.String,
     factory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_]

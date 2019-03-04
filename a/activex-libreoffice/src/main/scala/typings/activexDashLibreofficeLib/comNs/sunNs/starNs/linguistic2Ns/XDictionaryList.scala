@@ -153,23 +153,8 @@ object XDictionaryList {
     removeDictionary: js.Function1[XDictionary, scala.Boolean],
     removeDictionaryListEventListener: js.Function1[XDictionaryListEventListener, scala.Boolean]
   ): XDictionaryList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Dictionaries")(Dictionaries)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDictionary")(addDictionary)
-    __obj.updateDynamic("addDictionaryListEventListener")(addDictionaryListEventListener)
-    __obj.updateDynamic("beginCollectEvents")(beginCollectEvents)
-    __obj.updateDynamic("createDictionary")(createDictionary)
-    __obj.updateDynamic("endCollectEvents")(endCollectEvents)
-    __obj.updateDynamic("flushEvents")(flushEvents)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getDictionaries")(getDictionaries)
-    __obj.updateDynamic("getDictionaryByName")(getDictionaryByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDictionary")(removeDictionary)
-    __obj.updateDynamic("removeDictionaryListEventListener")(removeDictionaryListEventListener)
+    val __obj = js.Dynamic.literal(Count = Count, Dictionaries = Dictionaries, acquire = acquire, addDictionary = addDictionary, addDictionaryListEventListener = addDictionaryListEventListener, beginCollectEvents = beginCollectEvents, createDictionary = createDictionary, endCollectEvents = endCollectEvents, flushEvents = flushEvents, getCount = getCount, getDictionaries = getDictionaries, getDictionaryByName = getDictionaryByName, queryInterface = queryInterface, release = release, removeDictionary = removeDictionary, removeDictionaryListEventListener = removeDictionaryListEventListener)
+  
     __obj.asInstanceOf[XDictionaryList]
   }
 }

@@ -24,13 +24,8 @@ object AggregatedResultsAnalysis {
     resultsDifference: AggregatedResultsDifference,
     totalTests: scala.Double
   ): AggregatedResultsAnalysis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("notReportedResultsByOutcome")(notReportedResultsByOutcome)
-    __obj.updateDynamic("previousContext")(previousContext)
-    __obj.updateDynamic("resultsByOutcome")(resultsByOutcome)
-    __obj.updateDynamic("resultsDifference")(resultsDifference)
-    __obj.updateDynamic("totalTests")(totalTests)
+    val __obj = js.Dynamic.literal(duration = duration, notReportedResultsByOutcome = notReportedResultsByOutcome, previousContext = previousContext, resultsByOutcome = resultsByOutcome, resultsDifference = resultsDifference, totalTests = totalTests)
+  
     __obj.asInstanceOf[AggregatedResultsAnalysis]
   }
 }

@@ -18,8 +18,7 @@ object Anon_ContentTypeMessageBodyStatusCode {
     messageBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ContentTypeMessageBodyStatusCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any])
     if (messageBody != null) __obj.updateDynamic("messageBody")(messageBody.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContentTypeMessageBodyStatusCode]

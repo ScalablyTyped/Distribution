@@ -16,8 +16,7 @@ object editingStateDict {
     meta: editingState,
     StringDictionary: /* uuid */ org.scalablytyped.runtime.StringDictionary[editingState] = null
   ): editingStateDict = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(meta = meta)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[editingStateDict]
   }

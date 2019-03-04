@@ -14,10 +14,8 @@ trait GitChanges extends js.Object {
 object GitChanges {
   @scala.inline
   def apply(added: scala.Double, deleted: scala.Double, total: scala.Double): GitChanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(added = added, deleted = deleted, total = total)
+  
     __obj.asInstanceOf[GitChanges]
   }
 }

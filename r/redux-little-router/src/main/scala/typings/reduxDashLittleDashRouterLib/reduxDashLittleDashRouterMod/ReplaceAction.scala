@@ -16,8 +16,8 @@ object ReplaceAction {
     payload: Location,
     `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_REPLACE
   ): ReplaceAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ReplaceAction]
   }
 }

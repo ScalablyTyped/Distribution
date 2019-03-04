@@ -50,8 +50,7 @@ object OptionDefinition {
     `type`: js.Any = null,
     typeLabel: java.lang.String = null
   ): OptionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

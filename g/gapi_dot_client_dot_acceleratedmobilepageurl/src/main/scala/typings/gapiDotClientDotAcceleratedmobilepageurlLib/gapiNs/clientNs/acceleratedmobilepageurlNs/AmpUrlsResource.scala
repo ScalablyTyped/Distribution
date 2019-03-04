@@ -21,8 +21,8 @@ object AmpUrlsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BatchGetAmpUrlsResponse]
     ]
   ): AmpUrlsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchGet")(batchGet)
+    val __obj = js.Dynamic.literal(batchGet = batchGet)
+  
     __obj.asInstanceOf[AmpUrlsResource]
   }
 }

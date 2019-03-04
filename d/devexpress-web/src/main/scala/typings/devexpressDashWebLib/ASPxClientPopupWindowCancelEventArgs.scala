@@ -28,10 +28,8 @@ object ASPxClientPopupWindowCancelEventArgs {
     closeReason: ASPxClientPopupControlCloseReason,
     window: ASPxClientPopupWindow
   ): ASPxClientPopupWindowCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("closeReason")(closeReason)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(cancel = cancel, closeReason = closeReason, window = window)
+  
     __obj.asInstanceOf[ASPxClientPopupWindowCancelEventArgs]
   }
 }

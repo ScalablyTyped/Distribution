@@ -62,16 +62,8 @@ object DefinitionReference {
     uri: java.lang.String,
     url: java.lang.String
   ): DefinitionReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("queueStatus")(queueStatus)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(createdDate = createdDate, id = id, name = name, path = path, project = project, queueStatus = queueStatus, revision = revision, uri = uri, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DefinitionReference]
   }
 }

@@ -12,8 +12,8 @@ trait JsxClosingTagInfo extends js.Object {
 object JsxClosingTagInfo {
   @scala.inline
   def apply(newText: java.lang.String): JsxClosingTagInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newText")(newText)
+    val __obj = js.Dynamic.literal(newText = newText)
+  
     __obj.asInstanceOf[JsxClosingTagInfo]
   }
 }

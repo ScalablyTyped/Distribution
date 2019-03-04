@@ -47,13 +47,8 @@ object Anon_Admitstate {
     out_order_no: java.lang.String,
     user_id: java.lang.String
   ): Anon_Admitstate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("admit_state")(admit_state.asInstanceOf[js.Any])
-    __obj.updateDynamic("callbackData")(callbackData)
-    __obj.updateDynamic("invoke_state")(invoke_state)
-    __obj.updateDynamic("order_no")(order_no)
-    __obj.updateDynamic("out_order_no")(out_order_no)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(admit_state = admit_state.asInstanceOf[js.Any], callbackData = callbackData, invoke_state = invoke_state, order_no = order_no, out_order_no = out_order_no, user_id = user_id)
+  
     __obj.asInstanceOf[Anon_Admitstate]
   }
 }

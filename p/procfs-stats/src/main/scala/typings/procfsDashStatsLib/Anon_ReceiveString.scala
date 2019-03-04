@@ -12,8 +12,8 @@ trait Anon_ReceiveString extends js.Object {
 object Anon_ReceiveString {
   @scala.inline
   def apply(Receive: java.lang.String): Anon_ReceiveString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Receive")(Receive)
+    val __obj = js.Dynamic.literal(Receive = Receive)
+  
     __obj.asInstanceOf[Anon_ReceiveString]
   }
 }

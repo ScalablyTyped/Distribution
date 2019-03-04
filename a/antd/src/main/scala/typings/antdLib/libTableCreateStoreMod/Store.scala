@@ -18,10 +18,8 @@ object Store {
     setState: js.Function1[js.Object, scala.Unit],
     subscribe: js.Function1[js.Function0[scala.Unit], js.Function0[scala.Unit]]
   ): Store = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("setState")(setState)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(getState = getState, setState = setState, subscribe = subscribe)
+  
     __obj.asInstanceOf[Store]
   }
 }

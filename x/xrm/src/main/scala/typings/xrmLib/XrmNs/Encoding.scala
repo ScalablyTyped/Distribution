@@ -30,9 +30,8 @@ object Encoding {
     xmlAttributeEncode: js.Function1[java.lang.String, java.lang.String],
     xmlEncode: js.Function1[java.lang.String, java.lang.String]
   ): Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("xmlAttributeEncode")(xmlAttributeEncode)
-    __obj.updateDynamic("xmlEncode")(xmlEncode)
+    val __obj = js.Dynamic.literal(xmlAttributeEncode = xmlAttributeEncode, xmlEncode = xmlEncode)
+  
     __obj.asInstanceOf[Encoding]
   }
 }

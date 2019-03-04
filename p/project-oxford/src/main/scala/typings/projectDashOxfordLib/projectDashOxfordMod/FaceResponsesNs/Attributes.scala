@@ -14,10 +14,8 @@ trait Attributes extends js.Object {
 object Attributes {
   @scala.inline
   def apply(age: scala.Double, gender: java.lang.String, headPose: projectDashOxfordLib.Anon_Pitch): Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("age")(age)
-    __obj.updateDynamic("gender")(gender)
-    __obj.updateDynamic("headPose")(headPose)
+    val __obj = js.Dynamic.literal(age = age, gender = gender, headPose = headPose)
+  
     __obj.asInstanceOf[Attributes]
   }
 }

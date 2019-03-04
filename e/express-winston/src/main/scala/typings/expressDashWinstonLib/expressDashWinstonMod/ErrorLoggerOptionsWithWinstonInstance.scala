@@ -23,8 +23,7 @@ object ErrorLoggerOptionsWithWinstonInstance {
     requestFilter: RequestFilter = null,
     requestWhitelist: js.Array[java.lang.String] = null
   ): ErrorLoggerOptionsWithWinstonInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("winstonInstance")(winstonInstance)
+    val __obj = js.Dynamic.literal(winstonInstance = winstonInstance)
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

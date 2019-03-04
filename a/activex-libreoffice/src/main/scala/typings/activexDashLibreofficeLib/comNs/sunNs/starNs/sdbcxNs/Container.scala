@@ -50,28 +50,8 @@ object Container {
     release: js.Function0[scala.Unit],
     removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit]
   ): Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("appendByDescriptor")(appendByDescriptor)
-    __obj.updateDynamic("createDataDescriptor")(createDataDescriptor)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("dropByIndex")(dropByIndex)
-    __obj.updateDynamic("dropByName")(dropByName)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addRefreshListener = addRefreshListener, appendByDescriptor = appendByDescriptor, createDataDescriptor = createDataDescriptor, createEnumeration = createEnumeration, dropByIndex = dropByIndex, dropByName = dropByName, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, refresh = refresh, release = release, removeRefreshListener = removeRefreshListener)
+  
     __obj.asInstanceOf[Container]
   }
 }

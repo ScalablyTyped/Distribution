@@ -13,9 +13,8 @@ trait MapData extends js.Object {
 object MapData {
   @scala.inline
   def apply(locationLink: js.Any, locationText: java.lang.String): MapData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locationLink")(locationLink)
-    __obj.updateDynamic("locationText")(locationText)
+    val __obj = js.Dynamic.literal(locationLink = locationLink, locationText = locationText)
+  
     __obj.asInstanceOf[MapData]
   }
 }

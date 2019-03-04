@@ -31,18 +31,8 @@ object ASPxClientHtmlEditorInsertVideoCommandArguments {
     src: java.lang.String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorInsertVideoCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCommandName")(GetCommandName)
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("autoPlay")(autoPlay)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loop")(loop)
-    __obj.updateDynamic("posterUrl")(posterUrl)
-    __obj.updateDynamic("preloadMode")(preloadMode)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("showPlayerControls")(showPlayerControls)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("styleSettings")(styleSettings)
+    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, autoPlay = autoPlay, id = id, loop = loop, posterUrl = posterUrl, preloadMode = preloadMode, selectedElement = selectedElement, showPlayerControls = showPlayerControls, src = src, styleSettings = styleSettings)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertVideoCommandArguments]
   }
 }

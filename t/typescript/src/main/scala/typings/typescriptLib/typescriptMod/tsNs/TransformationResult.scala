@@ -49,11 +49,7 @@ object TransformationResult {
     transformed: js.Array[T],
     diagnostics: js.Array[DiagnosticWithLocation] = null
   ): TransformationResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("emitNodeWithNotification")(emitNodeWithNotification)
-    __obj.updateDynamic("substituteNode")(substituteNode)
-    __obj.updateDynamic("transformed")(transformed)
+    val __obj = js.Dynamic.literal(dispose = dispose, emitNodeWithNotification = emitNodeWithNotification, substituteNode = substituteNode, transformed = transformed)
     if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
     __obj.asInstanceOf[TransformationResult[T]]
   }

@@ -14,10 +14,8 @@ trait Layout extends js.Object {
 object Layout {
   @scala.inline
   def apply(qHyperCube: HyperCube, qInfo: NxInfo, qSelectionInfo: Selectionobject): Layout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qHyperCube")(qHyperCube)
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qSelectionInfo")(qSelectionInfo)
+    val __obj = js.Dynamic.literal(qHyperCube = qHyperCube, qInfo = qInfo, qSelectionInfo = qSelectionInfo)
+  
     __obj.asInstanceOf[Layout]
   }
 }

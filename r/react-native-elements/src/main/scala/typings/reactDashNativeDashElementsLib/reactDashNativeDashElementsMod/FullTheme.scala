@@ -58,30 +58,8 @@ object FullTheme {
     Tooltip: stdLib.Partial[TooltipProps],
     colors: reactDashNativeDashElementsLib.RecursivePartial[Colors]
   ): FullTheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AirbnbRating")(AirbnbRating)
-    __obj.updateDynamic("Avatar")(Avatar)
-    __obj.updateDynamic("Badge")(Badge)
-    __obj.updateDynamic("Button")(Button)
-    __obj.updateDynamic("ButtonGroup")(ButtonGroup)
-    __obj.updateDynamic("Card")(Card)
-    __obj.updateDynamic("CheckBox")(CheckBox)
-    __obj.updateDynamic("Divider")(Divider)
-    __obj.updateDynamic("Header")(Header)
-    __obj.updateDynamic("Icon")(Icon)
-    __obj.updateDynamic("Image")(Image)
-    __obj.updateDynamic("Input")(Input)
-    __obj.updateDynamic("ListItem")(ListItem)
-    __obj.updateDynamic("Overlay")(Overlay)
-    __obj.updateDynamic("PricingCard")(PricingCard)
-    __obj.updateDynamic("Rating")(Rating)
-    __obj.updateDynamic("SearchBar")(SearchBar)
-    __obj.updateDynamic("Slider")(Slider)
-    __obj.updateDynamic("SocialIcon")(SocialIcon)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("Tile")(Tile)
-    __obj.updateDynamic("Tooltip")(Tooltip)
-    __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(AirbnbRating = AirbnbRating, Avatar = Avatar, Badge = Badge, Button = Button, ButtonGroup = ButtonGroup, Card = Card, CheckBox = CheckBox, Divider = Divider, Header = Header, Icon = Icon, Image = Image, Input = Input, ListItem = ListItem, Overlay = Overlay, PricingCard = PricingCard, Rating = Rating, SearchBar = SearchBar, Slider = Slider, SocialIcon = SocialIcon, Text = Text, Tile = Tile, Tooltip = Tooltip, colors = colors)
+  
     __obj.asInstanceOf[FullTheme]
   }
 }

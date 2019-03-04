@@ -46,8 +46,7 @@ object ValueSetComposeIncludeConcept {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): ValueSetComposeIncludeConcept = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_display != null) __obj.updateDynamic("_display")(_display)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

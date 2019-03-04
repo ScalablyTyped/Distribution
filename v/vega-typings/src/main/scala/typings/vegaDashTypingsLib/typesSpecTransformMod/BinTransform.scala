@@ -37,9 +37,8 @@ object BinTransform {
     step: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     steps: (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): BinTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extent = extent.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])

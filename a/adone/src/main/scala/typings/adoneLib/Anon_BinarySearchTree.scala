@@ -26,14 +26,8 @@ object Anon_BinarySearchTree {
     PriorityQueueNs: js.Any,
     RedBlackTreeNs: js.Any
   ): Anon_BinarySearchTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BinarySearchTreeNs")(BinarySearchTreeNs)
-    __obj.updateDynamic("BufferListNs")(BufferListNs)
-    __obj.updateDynamic("ByteArrayNs")(ByteArrayNs)
-    __obj.updateDynamic("LRUNs")(LRUNs)
-    __obj.updateDynamic("LinkedListNs")(LinkedListNs)
-    __obj.updateDynamic("PriorityQueueNs")(PriorityQueueNs)
-    __obj.updateDynamic("RedBlackTreeNs")(RedBlackTreeNs)
+    val __obj = js.Dynamic.literal(BinarySearchTreeNs = BinarySearchTreeNs, BufferListNs = BufferListNs, ByteArrayNs = ByteArrayNs, LRUNs = LRUNs, LinkedListNs = LinkedListNs, PriorityQueueNs = PriorityQueueNs, RedBlackTreeNs = RedBlackTreeNs)
+  
     __obj.asInstanceOf[Anon_BinarySearchTree]
   }
 }

@@ -37,15 +37,8 @@ object TokenInfoDictionary {
     put: js.Function5[scala.Double, scala.Double, scala.Double, java.lang.String, java.lang.String, scala.Double],
     targetMapToBuffer: js.Function0[stdLib.Uint8Array]
   ): TokenInfoDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addMapping")(addMapping)
-    __obj.updateDynamic("buildDictionary")(buildDictionary)
-    __obj.updateDynamic("getFeatures")(getFeatures)
-    __obj.updateDynamic("loadDictionary")(loadDictionary)
-    __obj.updateDynamic("loadPosVector")(loadPosVector)
-    __obj.updateDynamic("loadTargetMap")(loadTargetMap)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("targetMapToBuffer")(targetMapToBuffer)
+    val __obj = js.Dynamic.literal(addMapping = addMapping, buildDictionary = buildDictionary, getFeatures = getFeatures, loadDictionary = loadDictionary, loadPosVector = loadPosVector, loadTargetMap = loadTargetMap, put = put, targetMapToBuffer = targetMapToBuffer)
+  
     __obj.asInstanceOf[TokenInfoDictionary]
   }
 }

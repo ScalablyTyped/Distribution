@@ -51,9 +51,7 @@ object CircleProps {
     stroke: js.UndefOr[scala.Boolean] = js.undefined,
     weight: scala.Int | scala.Double = null
   ): CircleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], radius = radius)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

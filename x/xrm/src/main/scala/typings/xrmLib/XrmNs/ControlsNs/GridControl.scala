@@ -68,20 +68,8 @@ object GridControl {
     removeOnLoad: js.Function1[js.Function0[scala.Unit], scala.Unit],
     setLabel: js.Function1[java.lang.String, scala.Unit]
   ): GridControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOnLoad")(addOnLoad)
-    __obj.updateDynamic("getContextType")(getContextType)
-    __obj.updateDynamic("getControlType")(getControlType)
-    __obj.updateDynamic("getEntityName")(getEntityName)
-    __obj.updateDynamic("getGrid")(getGrid)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getViewSelector")(getViewSelector)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("removeOnLoad")(removeOnLoad)
-    __obj.updateDynamic("setLabel")(setLabel)
+    val __obj = js.Dynamic.literal(addOnLoad = addOnLoad, getContextType = getContextType, getControlType = getControlType, getEntityName = getEntityName, getGrid = getGrid, getLabel = getLabel, getName = getName, getParent = getParent, getViewSelector = getViewSelector, getVisible = getVisible, refresh = refresh, removeOnLoad = removeOnLoad, setLabel = setLabel)
+  
     __obj.asInstanceOf[GridControl]
   }
 }

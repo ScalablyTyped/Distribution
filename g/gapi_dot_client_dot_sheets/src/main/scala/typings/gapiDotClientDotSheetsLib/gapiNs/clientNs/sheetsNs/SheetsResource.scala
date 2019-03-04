@@ -21,8 +21,8 @@ object SheetsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
     ]
   ): SheetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyTo")(copyTo)
+    val __obj = js.Dynamic.literal(copyTo = copyTo)
+  
     __obj.asInstanceOf[SheetsResource]
   }
 }

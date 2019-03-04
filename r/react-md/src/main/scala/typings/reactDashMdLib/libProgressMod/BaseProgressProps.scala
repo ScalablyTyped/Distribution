@@ -75,8 +75,7 @@ object BaseProgressProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: scala.Int | scala.Double = null
   ): BaseProgressProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)

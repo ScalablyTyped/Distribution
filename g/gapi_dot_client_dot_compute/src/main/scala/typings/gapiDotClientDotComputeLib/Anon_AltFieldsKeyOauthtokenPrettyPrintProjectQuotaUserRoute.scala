@@ -42,9 +42,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRoute {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(project = project, route = route)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

@@ -32,10 +32,8 @@ object SupportedTrigger {
     supportedCapabilities: org.scalablytyped.runtime.StringDictionary[SupportLevel],
     `type`: DefinitionTriggerType
   ): SupportedTrigger = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("defaultPollingInterval")(defaultPollingInterval)
-    __obj.updateDynamic("notificationType")(notificationType)
-    __obj.updateDynamic("supportedCapabilities")(supportedCapabilities)
+    val __obj = js.Dynamic.literal(defaultPollingInterval = defaultPollingInterval, notificationType = notificationType, supportedCapabilities = supportedCapabilities)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SupportedTrigger]
   }
 }

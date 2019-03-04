@@ -18,10 +18,8 @@ object GlideServletResponse {
     setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setStatus: js.Function1[scala.Double, scala.Unit]
   ): GlideServletResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setContentType")(setContentType)
-    __obj.updateDynamic("setHeader")(setHeader)
-    __obj.updateDynamic("setStatus")(setStatus)
+    val __obj = js.Dynamic.literal(setContentType = setContentType, setHeader = setHeader, setStatus = setStatus)
+  
     __obj.asInstanceOf[GlideServletResponse]
   }
 }

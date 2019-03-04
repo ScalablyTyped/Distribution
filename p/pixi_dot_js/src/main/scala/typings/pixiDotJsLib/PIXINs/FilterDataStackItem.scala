@@ -14,10 +14,8 @@ trait FilterDataStackItem extends js.Object {
 object FilterDataStackItem {
   @scala.inline
   def apply(bounds: Rectangle, filter: js.Array[_], renderTarget: RenderTarget): FilterDataStackItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("renderTarget")(renderTarget)
+    val __obj = js.Dynamic.literal(bounds = bounds, filter = filter, renderTarget = renderTarget)
+  
     __obj.asInstanceOf[FilterDataStackItem]
   }
 }

@@ -22,10 +22,8 @@ object Unfoldable2C {
       fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
     ]
   ): Unfoldable2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("unfoldr")(unfoldr)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], unfoldr = unfoldr)
+  
     __obj.asInstanceOf[Unfoldable2C[F, L]]
   }
 }

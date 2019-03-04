@@ -24,13 +24,8 @@ object Key {
     prefix: java.lang.String,
     repeat: scala.Boolean
   ): Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delimiter")(delimiter)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("repeat")(repeat)
+    val __obj = js.Dynamic.literal(delimiter = delimiter, name = name.asInstanceOf[js.Any], optional = optional, pattern = pattern, prefix = prefix, repeat = repeat)
+  
     __obj.asInstanceOf[Key]
   }
 }

@@ -18,8 +18,8 @@ trait Extension extends js.Object {
 object Extension {
   @scala.inline
   def apply(`type`: java.lang.String): Extension = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Extension]
   }
 }

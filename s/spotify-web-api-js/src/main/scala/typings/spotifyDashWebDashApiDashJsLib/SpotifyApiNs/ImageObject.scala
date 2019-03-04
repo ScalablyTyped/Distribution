@@ -22,8 +22,7 @@ object ImageObject {
     height: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): ImageObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageObject]

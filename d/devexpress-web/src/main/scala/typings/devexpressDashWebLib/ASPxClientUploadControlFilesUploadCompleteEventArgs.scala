@@ -24,9 +24,8 @@ trait ASPxClientUploadControlFilesUploadCompleteEventArgs extends ASPxClientEven
 object ASPxClientUploadControlFilesUploadCompleteEventArgs {
   @scala.inline
   def apply(callbackData: java.lang.String, errorText: java.lang.String): ASPxClientUploadControlFilesUploadCompleteEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackData")(callbackData)
-    __obj.updateDynamic("errorText")(errorText)
+    val __obj = js.Dynamic.literal(callbackData = callbackData, errorText = errorText)
+  
     __obj.asInstanceOf[ASPxClientUploadControlFilesUploadCompleteEventArgs]
   }
 }

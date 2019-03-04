@@ -22,12 +22,8 @@ object PerformanceWatchdogViewModel {
     scene: Scene,
     showingLowFrameRateMessage: scala.Boolean
   ): PerformanceWatchdogViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dismissMessage")(dismissMessage)
-    __obj.updateDynamic("lowFrameRateMessage")(lowFrameRateMessage)
-    __obj.updateDynamic("lowFrameRateMessageDismissed")(lowFrameRateMessageDismissed)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("showingLowFrameRateMessage")(showingLowFrameRateMessage)
+    val __obj = js.Dynamic.literal(dismissMessage = dismissMessage, lowFrameRateMessage = lowFrameRateMessage, lowFrameRateMessageDismissed = lowFrameRateMessageDismissed, scene = scene, showingLowFrameRateMessage = showingLowFrameRateMessage)
+  
     __obj.asInstanceOf[PerformanceWatchdogViewModel]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Button extends js.Object {
 object Anon_Button {
   @scala.inline
   def apply(button: js.Function1[reactLib.HTMLElement, scala.Unit]): Anon_Button = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
+    val __obj = js.Dynamic.literal(button = button)
+  
     __obj.asInstanceOf[Anon_Button]
   }
 }

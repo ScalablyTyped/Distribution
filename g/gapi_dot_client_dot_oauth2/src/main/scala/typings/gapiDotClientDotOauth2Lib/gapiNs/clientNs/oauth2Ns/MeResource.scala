@@ -17,8 +17,8 @@ object MeResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Userinfoplus]
     ]
   ): MeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[MeResource]
   }
 }

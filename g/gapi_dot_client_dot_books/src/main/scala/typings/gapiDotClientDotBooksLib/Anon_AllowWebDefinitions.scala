@@ -66,11 +66,7 @@ object Anon_AllowWebDefinitions {
     userIp: java.lang.String = null,
     w: scala.Int | scala.Double = null
   ): Anon_AllowWebDefinitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationDataId")(annotationDataId)
-    __obj.updateDynamic("contentVersion")(contentVersion)
-    __obj.updateDynamic("layerId")(layerId)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(annotationDataId = annotationDataId, contentVersion = contentVersion, layerId = layerId, volumeId = volumeId)
     if (!js.isUndefined(allowWebDefinitions)) __obj.updateDynamic("allowWebDefinitions")(allowWebDefinitions)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

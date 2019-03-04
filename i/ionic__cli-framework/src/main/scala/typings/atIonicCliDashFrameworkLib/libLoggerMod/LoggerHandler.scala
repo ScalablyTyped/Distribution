@@ -17,9 +17,7 @@ object LoggerHandler {
     handle: js.Function1[LogRecord, scala.Unit],
     formatter: LoggerFormatter = null
   ): LoggerHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("handle")(handle)
+    val __obj = js.Dynamic.literal(clone = clone, handle = handle)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     __obj.asInstanceOf[LoggerHandler]
   }

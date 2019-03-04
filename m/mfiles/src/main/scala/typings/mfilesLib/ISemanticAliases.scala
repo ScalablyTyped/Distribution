@@ -13,9 +13,8 @@ trait ISemanticAliases extends js.Object {
 object ISemanticAliases {
   @scala.inline
   def apply(Clone: js.Function0[ISemanticAliases], Value: java.lang.String): ISemanticAliases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Clone = Clone, Value = Value)
+  
     __obj.asInstanceOf[ISemanticAliases]
   }
 }

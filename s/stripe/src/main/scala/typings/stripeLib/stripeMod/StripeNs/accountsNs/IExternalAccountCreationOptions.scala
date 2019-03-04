@@ -31,8 +31,7 @@ object IExternalAccountCreationOptions {
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null
   ): IExternalAccountCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("external_account")(external_account)
+    val __obj = js.Dynamic.literal(external_account = external_account)
     if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

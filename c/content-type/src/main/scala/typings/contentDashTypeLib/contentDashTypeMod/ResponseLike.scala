@@ -17,8 +17,8 @@ object ResponseLike {
       js.UndefOr[scala.Double | java.lang.String | js.Array[java.lang.String]]
     ]
   ): ResponseLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getHeader")(getHeader)
+    val __obj = js.Dynamic.literal(getHeader = getHeader)
+  
     __obj.asInstanceOf[ResponseLike]
   }
 }

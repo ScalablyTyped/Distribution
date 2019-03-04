@@ -24,12 +24,7 @@ object Signature {
     toSchema: js.Function0[js.Any],
     certs: js.Array[pkijsLib.srcCertificateMod.default] = null
   ): Signature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, signature = signature, signatureAlgorithm = signatureAlgorithm, toJSON = toJSON, toSchema = toSchema)
     if (certs != null) __obj.updateDynamic("certs")(certs)
     __obj.asInstanceOf[Signature]
   }

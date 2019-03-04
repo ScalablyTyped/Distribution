@@ -19,9 +19,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(beginsWith: java.lang.String, escape: stdLib.RegExp): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginsWith")(beginsWith)
-    __obj.updateDynamic("escape")(escape)
+    val __obj = js.Dynamic.literal(beginsWith = beginsWith, escape = escape)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

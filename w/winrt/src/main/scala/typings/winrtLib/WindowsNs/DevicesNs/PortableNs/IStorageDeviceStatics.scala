@@ -16,9 +16,8 @@ object IStorageDeviceStatics {
     fromId: js.Function1[java.lang.String, winrtLib.WindowsNs.StorageNs.StorageFolder],
     getDeviceSelector: js.Function0[java.lang.String]
   ): IStorageDeviceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromId")(fromId)
-    __obj.updateDynamic("getDeviceSelector")(getDeviceSelector)
+    val __obj = js.Dynamic.literal(fromId = fromId, getDeviceSelector = getDeviceSelector)
+  
     __obj.asInstanceOf[IStorageDeviceStatics]
   }
 }

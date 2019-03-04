@@ -35,8 +35,7 @@ object RequestParameters {
     headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     method: mapboxDashGlLib.mapboxDashGlLibStrings.GET | mapboxDashGlLib.mapboxDashGlLibStrings.POST | mapboxDashGlLib.mapboxDashGlLibStrings.PUT = null
   ): RequestParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(collectResourceTiming)) __obj.updateDynamic("collectResourceTiming")(collectResourceTiming)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)

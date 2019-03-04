@@ -22,12 +22,8 @@ object FuzzySet {
     length: js.Function0[scala.Double],
     values: js.Function0[js.Array[java.lang.String]]
   ): FuzzySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(add = add, get = get, isEmpty = isEmpty, length = length, values = values)
+  
     __obj.asInstanceOf[FuzzySet]
   }
 }

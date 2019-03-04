@@ -32,11 +32,8 @@ object Anon_Compact {
     minimal: java.lang.String,
     none: java.lang.String
   ): Anon_Compact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("minimal")(minimal)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(compact = compact, full = full, minimal = minimal, none = none)
+  
     __obj.asInstanceOf[Anon_Compact]
   }
 }

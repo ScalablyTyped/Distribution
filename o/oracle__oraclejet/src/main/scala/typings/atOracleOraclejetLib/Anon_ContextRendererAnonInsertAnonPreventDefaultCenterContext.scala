@@ -17,8 +17,8 @@ object Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext {
       Anon_Insert | Anon_PreventDefault
     ]
   ): Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(renderer = renderer)
+  
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext]
   }
 }

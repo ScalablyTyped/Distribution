@@ -30,16 +30,8 @@ object Anon_CanceledInProgress {
     succeeded: scala.Double,
     undefined: scala.Double
   ): Anon_CanceledInProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("notStarted")(notStarted)
-    __obj.updateDynamic("partiallySucceeded")(partiallySucceeded)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("rejected")(rejected)
-    __obj.updateDynamic("scheduled")(scheduled)
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(canceled = canceled, inProgress = inProgress, notStarted = notStarted, partiallySucceeded = partiallySucceeded, queued = queued, rejected = rejected, scheduled = scheduled, succeeded = succeeded, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_CanceledInProgress]
   }
 }

@@ -83,9 +83,7 @@ object ReactTagsInputProps {
     tagProps: TagProps = null,
     validationRegex: stdLib.RegExp = null
   ): ReactTagsInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(onChange = onChange, value = value)
     if (addKeys != null) __obj.updateDynamic("addKeys")(addKeys)
     if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur)
     if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste)

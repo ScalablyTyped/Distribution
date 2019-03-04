@@ -42,13 +42,8 @@ object QueryFilter {
     query: js.Function1[js.Object, QueryFilter],
     toJSON: js.Function0[QueryFilter]
   ): QueryFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, query = query, toJSON = toJSON)
+  
     __obj.asInstanceOf[QueryFilter]
   }
 }

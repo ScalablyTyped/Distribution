@@ -28,9 +28,7 @@ object LDAPjsReqProps {
     strictDN: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null
   ): LDAPjsReqProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tlsOptions")(tlsOptions)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(tlsOptions = tlsOptions, url = url)
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(log)

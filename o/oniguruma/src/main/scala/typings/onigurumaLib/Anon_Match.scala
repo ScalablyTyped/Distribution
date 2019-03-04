@@ -12,8 +12,8 @@ trait Anon_Match extends js.Object {
 object Anon_Match {
   @scala.inline
   def apply(`match`: java.lang.String): Anon_Match = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Anon_Match]
   }
 }

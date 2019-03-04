@@ -16,9 +16,8 @@ object Anon_Character {
     character: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike],
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   ): Anon_Character = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
-    __obj.updateDynamic("prefixCls")(prefixCls)
+    val __obj = js.Dynamic.literal(character = character, prefixCls = prefixCls)
+  
     __obj.asInstanceOf[Anon_Character]
   }
 }

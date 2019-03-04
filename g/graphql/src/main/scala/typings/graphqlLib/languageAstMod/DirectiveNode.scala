@@ -20,9 +20,7 @@ object DirectiveNode {
     arguments: js.Array[ArgumentNode] = null,
     loc: Location = null
   ): DirectiveNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[DirectiveNode]

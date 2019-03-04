@@ -26,13 +26,8 @@ object Anon_ColumnFilenameLinenoMixin {
     name: java.lang.String,
     `val`: stylusLib.stylusMod.StylusNs.NodesNs.Node
   ): Anon_ColumnFilenameLinenoMixin = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("mixin")(mixin)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, mixin = mixin, name = name)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoMixin]
   }
 }

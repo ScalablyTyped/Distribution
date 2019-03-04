@@ -18,9 +18,8 @@ object Update {
     `type`: sparqljsLib.sparqljsLibStrings.update,
     updates: js.Array[UpdateOperation]
   ): Update = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("prefixes")(prefixes)
-    __obj.updateDynamic("updates")(updates)
+    val __obj = js.Dynamic.literal(prefixes = prefixes, updates = updates)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Update]
   }
 }

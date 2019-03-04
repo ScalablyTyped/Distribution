@@ -29,11 +29,8 @@ object XSourceInitialization {
     release: js.Function0[scala.Unit],
     setSource: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XSourceInitialization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setSource")(setSource)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setSource = setSource)
+  
     __obj.asInstanceOf[XSourceInitialization]
   }
 }

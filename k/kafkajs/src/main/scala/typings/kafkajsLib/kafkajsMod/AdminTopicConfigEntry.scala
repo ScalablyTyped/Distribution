@@ -13,9 +13,8 @@ trait AdminTopicConfigEntry extends js.Object {
 object AdminTopicConfigEntry {
   @scala.inline
   def apply(name: java.lang.String, value: java.lang.String): AdminTopicConfigEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
     __obj.asInstanceOf[AdminTopicConfigEntry]
   }
 }

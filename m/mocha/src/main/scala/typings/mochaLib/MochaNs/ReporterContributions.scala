@@ -72,34 +72,8 @@ object ReporterContributions {
     tap: scala.Nothing,
     xunit: scala.Nothing
   ): ReporterContributions = {
-    val __obj = js.Dynamic.literal(`json-stream` = `json-stream`)
-    __obj.updateDynamic("Base")(Base)
-    __obj.updateDynamic("Dot")(Dot)
-    __obj.updateDynamic("HTML")(HTML)
-    __obj.updateDynamic("JSON")(JSON)
-    __obj.updateDynamic("JSONStream")(JSONStream)
-    __obj.updateDynamic("Landing")(Landing)
-    __obj.updateDynamic("List")(List)
-    __obj.updateDynamic("Markdown")(Markdown)
-    __obj.updateDynamic("Min")(Min)
-    __obj.updateDynamic("Nyan")(Nyan)
-    __obj.updateDynamic("Progress")(Progress)
-    __obj.updateDynamic("Spec")(Spec)
-    __obj.updateDynamic("TAP")(TAP)
-    __obj.updateDynamic("XUnit")(XUnit)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("dot")(dot)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("landing")(landing)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("markdown")(markdown)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("nyan")(nyan)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("spec")(spec)
-    __obj.updateDynamic("tap")(tap)
-    __obj.updateDynamic("xunit")(xunit)
+    val __obj = js.Dynamic.literal(Base = Base, Dot = Dot, HTML = HTML, JSON = JSON, JSONStream = JSONStream, Landing = Landing, List = List, Markdown = Markdown, Min = Min, Nyan = Nyan, Progress = Progress, Spec = Spec, TAP = TAP, XUnit = XUnit, base = base, dot = dot, html = html, json = json, landing = landing, list = list, markdown = markdown, min = min, nyan = nyan, progress = progress, spec = spec, tap = tap, xunit = xunit)
+    __obj.updateDynamic("json-stream")(`json-stream`)
     __obj.asInstanceOf[ReporterContributions]
   }
 }

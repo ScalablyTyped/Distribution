@@ -12,8 +12,8 @@ trait Header extends js.Object {
 object Header {
   @scala.inline
   def apply(buttons: js.Array[HeaderButton]): Header = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons)
+    val __obj = js.Dynamic.literal(buttons = buttons)
+  
     __obj.asInstanceOf[Header]
   }
 }

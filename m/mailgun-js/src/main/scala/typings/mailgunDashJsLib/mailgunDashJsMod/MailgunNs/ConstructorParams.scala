@@ -34,9 +34,7 @@ object ConstructorParams {
     retry: scala.Double | mailgunDashJsLib.Anon_Interval = null,
     timeout: scala.Int | scala.Double = null
   ): ConstructorParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(apiKey = apiKey, domain = domain)
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)

@@ -22,11 +22,7 @@ object TrackProps {
     srcLang: java.lang.String,
     default: js.UndefOr[scala.Boolean] = js.undefined
   ): TrackProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("srcLang")(srcLang)
+    val __obj = js.Dynamic.literal(kind = kind, label = label, src = src, srcLang = srcLang)
     if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
     __obj.asInstanceOf[TrackProps]
   }

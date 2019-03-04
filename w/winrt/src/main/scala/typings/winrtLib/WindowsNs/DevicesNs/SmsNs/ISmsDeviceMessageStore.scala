@@ -31,12 +31,8 @@ object ISmsDeviceMessageStore {
     ],
     maxMessages: scala.Double
   ): ISmsDeviceMessageStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteMessageAsync")(deleteMessageAsync)
-    __obj.updateDynamic("deleteMessagesAsync")(deleteMessagesAsync)
-    __obj.updateDynamic("getMessageAsync")(getMessageAsync)
-    __obj.updateDynamic("getMessagesAsync")(getMessagesAsync)
-    __obj.updateDynamic("maxMessages")(maxMessages)
+    val __obj = js.Dynamic.literal(deleteMessageAsync = deleteMessageAsync, deleteMessagesAsync = deleteMessagesAsync, getMessageAsync = getMessageAsync, getMessagesAsync = getMessagesAsync, maxMessages = maxMessages)
+  
     __obj.asInstanceOf[ISmsDeviceMessageStore]
   }
 }

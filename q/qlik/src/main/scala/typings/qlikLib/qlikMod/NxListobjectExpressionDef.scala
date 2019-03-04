@@ -13,9 +13,8 @@ trait NxListobjectExpressionDef extends js.Object {
 object NxListobjectExpressionDef {
   @scala.inline
   def apply(qExpr: java.lang.String, qLibraryId: java.lang.String): NxListobjectExpressionDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExpr")(qExpr)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
+    val __obj = js.Dynamic.literal(qExpr = qExpr, qLibraryId = qLibraryId)
+  
     __obj.asInstanceOf[NxListobjectExpressionDef]
   }
 }

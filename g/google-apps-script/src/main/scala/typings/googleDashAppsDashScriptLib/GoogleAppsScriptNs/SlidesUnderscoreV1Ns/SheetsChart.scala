@@ -28,11 +28,8 @@ object SheetsChart {
     sheets_chart_properties: SheetsChartProperties,
     spreadsheet_id: java.lang.String
   ): SheetsChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart_id")(chart_id)
-    __obj.updateDynamic("content_url")(content_url)
-    __obj.updateDynamic("sheets_chart_properties")(sheets_chart_properties)
-    __obj.updateDynamic("spreadsheet_id")(spreadsheet_id)
+    val __obj = js.Dynamic.literal(chart_id = chart_id, content_url = content_url, sheets_chart_properties = sheets_chart_properties, spreadsheet_id = spreadsheet_id)
+  
     __obj.asInstanceOf[SheetsChart]
   }
 }

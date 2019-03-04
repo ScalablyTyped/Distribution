@@ -67,15 +67,8 @@ object RBDVolumeSource {
     secretRef: LocalObjectReference,
     user: java.lang.String
   ): RBDVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("keyring")(keyring)
-    __obj.updateDynamic("monitors")(monitors)
-    __obj.updateDynamic("pool")(pool)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("secretRef")(secretRef)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(fsType = fsType, image = image, keyring = keyring, monitors = monitors, pool = pool, readOnly = readOnly, secretRef = secretRef, user = user)
+  
     __obj.asInstanceOf[RBDVolumeSource]
   }
 }

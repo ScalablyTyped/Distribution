@@ -18,9 +18,7 @@ object Anon_RecordColumns {
     recordFormat: Anon_MappingParameters,
     recordEncoding: java.lang.String = null
   ): Anon_RecordColumns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recordColumns")(recordColumns)
-    __obj.updateDynamic("recordFormat")(recordFormat)
+    val __obj = js.Dynamic.literal(recordColumns = recordColumns, recordFormat = recordFormat)
     if (recordEncoding != null) __obj.updateDynamic("recordEncoding")(recordEncoding)
     __obj.asInstanceOf[Anon_RecordColumns]
   }

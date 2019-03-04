@@ -27,10 +27,8 @@ object GitQueryRefsCriteria {
     refNames: js.Array[java.lang.String],
     searchType: GitRefSearchType
   ): GitQueryRefsCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitIds")(commitIds)
-    __obj.updateDynamic("refNames")(refNames)
-    __obj.updateDynamic("searchType")(searchType)
+    val __obj = js.Dynamic.literal(commitIds = commitIds, refNames = refNames, searchType = searchType)
+  
     __obj.asInstanceOf[GitQueryRefsCriteria]
   }
 }

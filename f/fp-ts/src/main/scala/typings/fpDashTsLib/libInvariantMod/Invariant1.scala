@@ -21,9 +21,8 @@ object Invariant1 {
       fpDashTsLib.libHKTMod.Type[F, js.Any]
     ]
   ): Invariant1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("imap")(imap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], imap = imap)
+  
     __obj.asInstanceOf[Invariant1[F]]
   }
 }

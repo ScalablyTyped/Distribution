@@ -16,9 +16,8 @@ object Anon_ResRules {
     res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse,
     rules: js.Array[aliDashOssLib.aliDashOssMod.OSSNs.LifecycleRule]
   ): Anon_ResRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(res = res, rules = rules)
+  
     __obj.asInstanceOf[Anon_ResRules]
   }
 }

@@ -19,9 +19,8 @@ trait AtomDescription extends js.Object {
 object AtomDescription {
   @scala.inline
   def apply(atom: scala.Double, description: java.lang.String): AtomDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atom")(atom)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(atom = atom, description = description)
+  
     __obj.asInstanceOf[AtomDescription]
   }
 }

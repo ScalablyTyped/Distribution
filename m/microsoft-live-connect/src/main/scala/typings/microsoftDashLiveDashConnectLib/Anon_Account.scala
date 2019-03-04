@@ -41,12 +41,8 @@ object Anon_Account {
     personal: java.lang.String,
     preferred: java.lang.String
   ): Anon_Account = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("business")(business)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("personal")(personal)
-    __obj.updateDynamic("preferred")(preferred)
+    val __obj = js.Dynamic.literal(account = account, business = business, other = other, personal = personal, preferred = preferred)
+  
     __obj.asInstanceOf[Anon_Account]
   }
 }

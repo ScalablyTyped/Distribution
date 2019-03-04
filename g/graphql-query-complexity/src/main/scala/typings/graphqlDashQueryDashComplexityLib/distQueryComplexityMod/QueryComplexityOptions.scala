@@ -30,8 +30,7 @@ object QueryComplexityOptions {
     onComplete: js.Function1[/* complexity */ scala.Double, scala.Unit] = null,
     variables: js.Object = null
   ): QueryComplexityOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maximumComplexity")(maximumComplexity)
+    val __obj = js.Dynamic.literal(maximumComplexity = maximumComplexity)
     if (createError != null) __obj.updateDynamic("createError")(createError)
     if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
     if (variables != null) __obj.updateDynamic("variables")(variables)

@@ -59,10 +59,8 @@ object XDocumentEventBroadcaster {
     ],
     removeDocumentEventListener: js.Function1[XDocumentEventListener, scala.Unit]
   ): XDocumentEventBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDocumentEventListener")(addDocumentEventListener)
-    __obj.updateDynamic("notifyDocumentEvent")(notifyDocumentEvent)
-    __obj.updateDynamic("removeDocumentEventListener")(removeDocumentEventListener)
+    val __obj = js.Dynamic.literal(addDocumentEventListener = addDocumentEventListener, notifyDocumentEvent = notifyDocumentEvent, removeDocumentEventListener = removeDocumentEventListener)
+  
     __obj.asInstanceOf[XDocumentEventBroadcaster]
   }
 }

@@ -30,8 +30,7 @@ object ProtractorLocator {
     row: js.Function1[/* index */ scala.Double, Locator] = null,
     toString: js.Function0[java.lang.String] = null
   ): ProtractorLocator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findElementsOverride")(findElementsOverride)
+    val __obj = js.Dynamic.literal(findElementsOverride = findElementsOverride)
     if (column != null) __obj.updateDynamic("column")(column)
     if (row != null) __obj.updateDynamic("row")(row)
     if (toString != null) __obj.updateDynamic("toString")(toString)

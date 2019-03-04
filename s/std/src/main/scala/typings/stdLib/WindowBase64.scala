@@ -16,9 +16,8 @@ object WindowBase64 {
     atob: js.Function1[java.lang.String, java.lang.String],
     btoa: js.Function1[java.lang.String, java.lang.String]
   ): WindowBase64 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atob")(atob)
-    __obj.updateDynamic("btoa")(btoa)
+    val __obj = js.Dynamic.literal(atob = atob, btoa = btoa)
+  
     __obj.asInstanceOf[WindowBase64]
   }
 }

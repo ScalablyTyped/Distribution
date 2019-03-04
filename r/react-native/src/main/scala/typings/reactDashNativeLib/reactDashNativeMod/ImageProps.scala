@@ -55,8 +55,7 @@ object ImageProps {
     testID: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): ImageProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
     if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)

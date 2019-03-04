@@ -20,8 +20,8 @@ object CopyrightObject {
     text: java.lang.String,
     `type`: spotifyDashApiLib.spotifyDashApiLibStrings.C | spotifyDashApiLib.spotifyDashApiLibStrings.P
   ): CopyrightObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyrightObject]
   }
 }

@@ -20,11 +20,8 @@ object Display {
     placements: js.Function0[AdWordsSelector[Placement]],
     topics: js.Function0[AdWordsSelector[Topic]]
   ): Display = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audiences")(audiences)
-    __obj.updateDynamic("keywords")(keywords)
-    __obj.updateDynamic("placements")(placements)
-    __obj.updateDynamic("topics")(topics)
+    val __obj = js.Dynamic.literal(audiences = audiences, keywords = keywords, placements = placements, topics = topics)
+  
     __obj.asInstanceOf[Display]
   }
 }

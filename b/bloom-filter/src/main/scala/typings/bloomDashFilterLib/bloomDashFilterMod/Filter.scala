@@ -40,21 +40,8 @@ object Filter {
     inspect: js.Function0[java.lang.String],
     toObject: js.Function0[bloomDashFilterLib.bloomDashFilterMod.FilterNs.FilterOptions]
   ): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BLOOM_UPDATE_ALL")(BLOOM_UPDATE_ALL)
-    __obj.updateDynamic("BLOOM_UPDATE_NONE")(BLOOM_UPDATE_NONE)
-    __obj.updateDynamic("BLOOM_UPDATE_P2PUBKEY_ONLY")(BLOOM_UPDATE_P2PUBKEY_ONLY)
-    __obj.updateDynamic("LN2")(LN2)
-    __obj.updateDynamic("LN2SQUARED")(LN2SQUARED)
-    __obj.updateDynamic("MAX_BLOOM_FILTER_SIZE")(MAX_BLOOM_FILTER_SIZE)
-    __obj.updateDynamic("MAX_HASH_FUNCS")(MAX_HASH_FUNCS)
-    __obj.updateDynamic("MIN_HASH_FUNCS")(MIN_HASH_FUNCS)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("toObject")(toObject)
+    val __obj = js.Dynamic.literal(BLOOM_UPDATE_ALL = BLOOM_UPDATE_ALL, BLOOM_UPDATE_NONE = BLOOM_UPDATE_NONE, BLOOM_UPDATE_P2PUBKEY_ONLY = BLOOM_UPDATE_P2PUBKEY_ONLY, LN2 = LN2, LN2SQUARED = LN2SQUARED, MAX_BLOOM_FILTER_SIZE = MAX_BLOOM_FILTER_SIZE, MAX_HASH_FUNCS = MAX_HASH_FUNCS, MIN_HASH_FUNCS = MIN_HASH_FUNCS, clear = clear, contains = contains, hash = hash, insert = insert, inspect = inspect, toObject = toObject)
+  
     __obj.asInstanceOf[Filter]
   }
 }

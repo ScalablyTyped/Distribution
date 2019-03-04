@@ -73,16 +73,8 @@ object XAccessibleImage {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessibleImageDescription")(AccessibleImageDescription)
-    __obj.updateDynamic("AccessibleImageHeight")(AccessibleImageHeight)
-    __obj.updateDynamic("AccessibleImageWidth")(AccessibleImageWidth)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAccessibleImageDescription")(getAccessibleImageDescription)
-    __obj.updateDynamic("getAccessibleImageHeight")(getAccessibleImageHeight)
-    __obj.updateDynamic("getAccessibleImageWidth")(getAccessibleImageWidth)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AccessibleImageDescription = AccessibleImageDescription, AccessibleImageHeight = AccessibleImageHeight, AccessibleImageWidth = AccessibleImageWidth, acquire = acquire, getAccessibleImageDescription = getAccessibleImageDescription, getAccessibleImageHeight = getAccessibleImageHeight, getAccessibleImageWidth = getAccessibleImageWidth, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleImage]
   }
 }

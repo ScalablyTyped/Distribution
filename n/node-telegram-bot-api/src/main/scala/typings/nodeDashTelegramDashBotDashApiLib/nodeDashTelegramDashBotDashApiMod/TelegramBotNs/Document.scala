@@ -20,8 +20,7 @@ object Document {
     mime_type: java.lang.String = null,
     thumb: PhotoSize = null
   ): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file_id")(file_id)
+    val __obj = js.Dynamic.literal(file_id = file_id)
     if (file_name != null) __obj.updateDynamic("file_name")(file_name)
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
     if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type)

@@ -18,10 +18,8 @@ trait OfflineErrorCallbackObject extends ErrorCallbackObject {
 object OfflineErrorCallbackObject {
   @scala.inline
   def apply(debugMessage: java.lang.String, errorCode: scala.Double, message: java.lang.String): OfflineErrorCallbackObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debugMessage")(debugMessage)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(debugMessage = debugMessage, errorCode = errorCode, message = message)
+  
     __obj.asInstanceOf[OfflineErrorCallbackObject]
   }
 }

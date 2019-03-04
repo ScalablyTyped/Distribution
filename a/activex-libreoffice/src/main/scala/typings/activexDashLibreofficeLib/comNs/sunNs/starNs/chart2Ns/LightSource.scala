@@ -23,11 +23,8 @@ object LightSource {
     bSpecular: scala.Boolean,
     nDiffuseColor: scala.Double
   ): LightSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aDirection")(aDirection)
-    __obj.updateDynamic("bIsEnabled")(bIsEnabled)
-    __obj.updateDynamic("bSpecular")(bSpecular)
-    __obj.updateDynamic("nDiffuseColor")(nDiffuseColor)
+    val __obj = js.Dynamic.literal(aDirection = aDirection, bIsEnabled = bIsEnabled, bSpecular = bSpecular, nDiffuseColor = nDiffuseColor)
+  
     __obj.asInstanceOf[LightSource]
   }
 }

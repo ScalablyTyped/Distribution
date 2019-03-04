@@ -38,13 +38,8 @@ object XRowSetSupplier {
     release: js.Function0[scala.Unit],
     setRowSet: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet, scala.Unit]
   ): XRowSetSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RowSet")(RowSet)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRowSet")(getRowSet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setRowSet")(setRowSet)
+    val __obj = js.Dynamic.literal(RowSet = RowSet, acquire = acquire, getRowSet = getRowSet, queryInterface = queryInterface, release = release, setRowSet = setRowSet)
+  
     __obj.asInstanceOf[XRowSetSupplier]
   }
 }

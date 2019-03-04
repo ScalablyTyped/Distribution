@@ -20,11 +20,8 @@ object IResponseInformation {
     isResumable: scala.Boolean,
     statusCode: scala.Double
   ): IResponseInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualUri")(actualUri)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("isResumable")(isResumable)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(actualUri = actualUri, headers = headers, isResumable = isResumable, statusCode = statusCode)
+  
     __obj.asInstanceOf[IResponseInformation]
   }
 }

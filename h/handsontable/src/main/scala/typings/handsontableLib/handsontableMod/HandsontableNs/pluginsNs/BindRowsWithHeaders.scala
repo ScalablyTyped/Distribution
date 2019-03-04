@@ -29,22 +29,8 @@ object BindRowsWithHeaders {
     removeHook: js.Function1[java.lang.String, scala.Unit],
     removeRows: js.Array[_]
   ): BindRowsWithHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("bindStrategy")(bindStrategy)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("removeRows")(removeRows)
+    val __obj = js.Dynamic.literal(addHook = addHook, bindStrategy = bindStrategy, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, removeRows = removeRows)
+  
     __obj.asInstanceOf[BindRowsWithHeaders]
   }
 }

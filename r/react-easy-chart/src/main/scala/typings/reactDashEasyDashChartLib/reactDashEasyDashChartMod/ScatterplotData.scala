@@ -20,9 +20,8 @@ object ScatterplotData {
     y: scala.Double | stdLib.Date | java.lang.String,
     z: scala.Int | scala.Double = null
   ): ScatterplotData = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterplotData]
   }

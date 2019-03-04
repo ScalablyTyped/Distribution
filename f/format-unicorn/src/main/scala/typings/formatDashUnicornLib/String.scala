@@ -12,8 +12,8 @@ trait String extends js.Object {
 object String {
   @scala.inline
   def apply(formatUnicorn: js.Function1[js.Object, java.lang.String]): String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatUnicorn")(formatUnicorn)
+    val __obj = js.Dynamic.literal(formatUnicorn = formatUnicorn)
+  
     __obj.asInstanceOf[String]
   }
 }

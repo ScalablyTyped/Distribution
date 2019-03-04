@@ -53,12 +53,8 @@ object Noise {
     simplex2: js.Function2[scala.Double, scala.Double, scala.Double],
     simplex3: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
   ): Noise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("perlin2")(perlin2)
-    __obj.updateDynamic("perlin3")(perlin3)
-    __obj.updateDynamic("seed")(seed)
-    __obj.updateDynamic("simplex2")(simplex2)
-    __obj.updateDynamic("simplex3")(simplex3)
+    val __obj = js.Dynamic.literal(perlin2 = perlin2, perlin3 = perlin3, seed = seed, simplex2 = simplex2, simplex3 = simplex3)
+  
     __obj.asInstanceOf[Noise]
   }
 }

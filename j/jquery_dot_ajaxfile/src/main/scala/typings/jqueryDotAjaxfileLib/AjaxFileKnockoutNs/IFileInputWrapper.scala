@@ -13,9 +13,8 @@ trait IFileInputWrapper extends js.Object {
 object IFileInputWrapper {
   @scala.inline
   def apply(fileSelected: js.Function0[scala.Boolean], getElement: js.Function0[stdLib.HTMLInputElement]): IFileInputWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSelected")(fileSelected)
-    __obj.updateDynamic("getElement")(getElement)
+    val __obj = js.Dynamic.literal(fileSelected = fileSelected, getElement = getElement)
+  
     __obj.asInstanceOf[IFileInputWrapper]
   }
 }

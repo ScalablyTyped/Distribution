@@ -32,19 +32,8 @@ object ASPxDesignerSaveAsDialog {
     visible: js.Any,
     width: js.Any
   ): ASPxDesignerSaveAsDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("customize")(customize)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("tab")(tab)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(buttons = buttons, cancel = cancel, customize = customize, height = height, model = model, save = save, show = show, tab = tab, template = template, title = title, visible = visible, width = width)
+  
     __obj.asInstanceOf[ASPxDesignerSaveAsDialog]
   }
 }

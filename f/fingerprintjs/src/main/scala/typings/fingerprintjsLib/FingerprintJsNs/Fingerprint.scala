@@ -69,18 +69,8 @@ object Fingerprint {
     isIE: js.Function0[scala.Boolean],
     murmurhash3_32_gc: js.Function2[java.lang.String, scala.Double, scala.Double]
   ): Fingerprint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getCanvasFingerprint")(getCanvasFingerprint)
-    __obj.updateDynamic("getIEPluginsString")(getIEPluginsString)
-    __obj.updateDynamic("getPluginsString")(getPluginsString)
-    __obj.updateDynamic("getRegularPluginsString")(getRegularPluginsString)
-    __obj.updateDynamic("getScreenResolution")(getScreenResolution)
-    __obj.updateDynamic("hasLocalStorage")(hasLocalStorage)
-    __obj.updateDynamic("hasSessionStorage")(hasSessionStorage)
-    __obj.updateDynamic("isCanvasSupported")(isCanvasSupported)
-    __obj.updateDynamic("isIE")(isIE)
-    __obj.updateDynamic("murmurhash3_32_gc")(murmurhash3_32_gc)
+    val __obj = js.Dynamic.literal(get = get, getCanvasFingerprint = getCanvasFingerprint, getIEPluginsString = getIEPluginsString, getPluginsString = getPluginsString, getRegularPluginsString = getRegularPluginsString, getScreenResolution = getScreenResolution, hasLocalStorage = hasLocalStorage, hasSessionStorage = hasSessionStorage, isCanvasSupported = isCanvasSupported, isIE = isIE, murmurhash3_32_gc = murmurhash3_32_gc)
+  
     __obj.asInstanceOf[Fingerprint]
   }
 }

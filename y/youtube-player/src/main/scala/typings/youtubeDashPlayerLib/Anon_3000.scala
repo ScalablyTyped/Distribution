@@ -27,10 +27,8 @@ object Anon_3000 {
     stateChangeRequired: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`true`,
     timeout: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`3000`
   ): Anon_3000 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptableStates")(acceptableStates)
-    __obj.updateDynamic("stateChangeRequired")(stateChangeRequired)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates, stateChangeRequired = stateChangeRequired, timeout = timeout)
+  
     __obj.asInstanceOf[Anon_3000]
   }
 }

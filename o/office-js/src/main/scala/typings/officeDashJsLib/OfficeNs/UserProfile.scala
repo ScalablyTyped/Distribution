@@ -103,11 +103,8 @@ object UserProfile {
     emailAddress: java.lang.String,
     timeZone: java.lang.String
   ): UserProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountType")(accountType)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(accountType = accountType, displayName = displayName, emailAddress = emailAddress, timeZone = timeZone)
+  
     __obj.asInstanceOf[UserProfile]
   }
 }

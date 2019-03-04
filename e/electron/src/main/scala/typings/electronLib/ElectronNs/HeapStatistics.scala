@@ -30,16 +30,8 @@ object HeapStatistics {
     totalPhysicalSize: scala.Double,
     usedHeapSize: scala.Double
   ): HeapStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doesZapGarbage")(doesZapGarbage)
-    __obj.updateDynamic("heapSizeLimit")(heapSizeLimit)
-    __obj.updateDynamic("mallocedMemory")(mallocedMemory)
-    __obj.updateDynamic("peakMallocedMemory")(peakMallocedMemory)
-    __obj.updateDynamic("totalAvailableSize")(totalAvailableSize)
-    __obj.updateDynamic("totalHeapSize")(totalHeapSize)
-    __obj.updateDynamic("totalHeapSizeExecutable")(totalHeapSizeExecutable)
-    __obj.updateDynamic("totalPhysicalSize")(totalPhysicalSize)
-    __obj.updateDynamic("usedHeapSize")(usedHeapSize)
+    val __obj = js.Dynamic.literal(doesZapGarbage = doesZapGarbage, heapSizeLimit = heapSizeLimit, mallocedMemory = mallocedMemory, peakMallocedMemory = peakMallocedMemory, totalAvailableSize = totalAvailableSize, totalHeapSize = totalHeapSize, totalHeapSizeExecutable = totalHeapSizeExecutable, totalPhysicalSize = totalPhysicalSize, usedHeapSize = usedHeapSize)
+  
     __obj.asInstanceOf[HeapStatistics]
   }
 }

@@ -30,16 +30,8 @@ object OnLoadData {
     duration: scala.Double,
     naturalSize: reactDashNativeDashVideoLib.Anon_Height
   ): OnLoadData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canPlayFastForward")(canPlayFastForward)
-    __obj.updateDynamic("canPlayReverse")(canPlayReverse)
-    __obj.updateDynamic("canPlaySlowForward")(canPlaySlowForward)
-    __obj.updateDynamic("canPlaySlowReverse")(canPlaySlowReverse)
-    __obj.updateDynamic("canStepBackward")(canStepBackward)
-    __obj.updateDynamic("canStepForward")(canStepForward)
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("naturalSize")(naturalSize)
+    val __obj = js.Dynamic.literal(canPlayFastForward = canPlayFastForward, canPlayReverse = canPlayReverse, canPlaySlowForward = canPlaySlowForward, canPlaySlowReverse = canPlaySlowReverse, canStepBackward = canStepBackward, canStepForward = canStepForward, currentTime = currentTime, duration = duration, naturalSize = naturalSize)
+  
     __obj.asInstanceOf[OnLoadData]
   }
 }

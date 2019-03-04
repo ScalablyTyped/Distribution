@@ -37,12 +37,8 @@ object CommentThreadContext {
     rightFileEnd: CommentPosition,
     rightFileStart: CommentPosition
   ): CommentThreadContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("leftFileEnd")(leftFileEnd)
-    __obj.updateDynamic("leftFileStart")(leftFileStart)
-    __obj.updateDynamic("rightFileEnd")(rightFileEnd)
-    __obj.updateDynamic("rightFileStart")(rightFileStart)
+    val __obj = js.Dynamic.literal(filePath = filePath, leftFileEnd = leftFileEnd, leftFileStart = leftFileStart, rightFileEnd = rightFileEnd, rightFileStart = rightFileStart)
+  
     __obj.asInstanceOf[CommentThreadContext]
   }
 }

@@ -34,18 +34,8 @@ object MDCIconToggleAdapter {
     setTabIndex: js.Function1[scala.Double, scala.Unit],
     setText: js.Function1[java.lang.String, scala.Unit]
   ): MDCIconToggleAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("getAttr")(getAttr)
-    __obj.updateDynamic("getTabIndex")(getTabIndex)
-    __obj.updateDynamic("notifyChange")(notifyChange)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("rmAttr")(rmAttr)
-    __obj.updateDynamic("setAttr")(setAttr)
-    __obj.updateDynamic("setTabIndex")(setTabIndex)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getAttr = getAttr, getTabIndex = getTabIndex, notifyChange = notifyChange, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass, rmAttr = rmAttr, setAttr = setAttr, setTabIndex = setTabIndex, setText = setText)
+  
     __obj.asInstanceOf[MDCIconToggleAdapter]
   }
 }

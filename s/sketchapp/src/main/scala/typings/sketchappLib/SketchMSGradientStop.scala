@@ -20,10 +20,7 @@ object SketchMSGradientStop {
     position: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSGradientStop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(_class = _class, color = color, position = position)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSGradientStop]
   }

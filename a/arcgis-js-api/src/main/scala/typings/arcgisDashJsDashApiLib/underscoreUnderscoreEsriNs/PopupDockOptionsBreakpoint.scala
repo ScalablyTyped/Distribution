@@ -34,10 +34,7 @@ object PopupDockOptionsBreakpoint {
     height: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): PopupDockOptionsBreakpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupDockOptionsBreakpoint]

@@ -75,10 +75,8 @@ object XDocumentRecovery {
     ],
     wasModifiedSinceLastSave: js.Function0[scala.Boolean]
   ): XDocumentRecovery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recoverFromFile")(recoverFromFile)
-    __obj.updateDynamic("storeToRecoveryFile")(storeToRecoveryFile)
-    __obj.updateDynamic("wasModifiedSinceLastSave")(wasModifiedSinceLastSave)
+    val __obj = js.Dynamic.literal(recoverFromFile = recoverFromFile, storeToRecoveryFile = storeToRecoveryFile, wasModifiedSinceLastSave = wasModifiedSinceLastSave)
+  
     __obj.asInstanceOf[XDocumentRecovery]
   }
 }

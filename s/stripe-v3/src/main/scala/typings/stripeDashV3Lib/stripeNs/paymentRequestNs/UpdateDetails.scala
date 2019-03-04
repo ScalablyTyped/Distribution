@@ -20,8 +20,7 @@ object UpdateDetails {
     shippingOptions: js.Array[ShippingOption] = null,
     total: DisplayItem = null
   ): UpdateDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
     if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
     if (total != null) __obj.updateDynamic("total")(total)

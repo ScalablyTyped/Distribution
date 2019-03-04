@@ -29,8 +29,8 @@ object ObjectPattern {
     decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): ObjectPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(properties = properties)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectPattern]

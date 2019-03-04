@@ -24,13 +24,8 @@ object AnalyzerDescriptor {
     name: java.lang.String,
     patchVersion: scala.Double
   ): AnalyzerDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("majorVersion")(majorVersion)
-    __obj.updateDynamic("minorVersion")(minorVersion)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("patchVersion")(patchVersion)
+    val __obj = js.Dynamic.literal(description = description, id = id, majorVersion = majorVersion, minorVersion = minorVersion, name = name, patchVersion = patchVersion)
+  
     __obj.asInstanceOf[AnalyzerDescriptor]
   }
 }

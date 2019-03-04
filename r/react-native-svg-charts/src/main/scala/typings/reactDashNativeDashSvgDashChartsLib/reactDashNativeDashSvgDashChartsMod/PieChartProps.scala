@@ -41,8 +41,7 @@ object PieChartProps {
     yAccessor: AccessorFunction[T, scala.Double] = null,
     yScale: ScaleFunction = null
   ): PieChartProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)

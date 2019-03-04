@@ -14,10 +14,8 @@ trait BasePrivateKeyEncodingOptions[T /* <: KeyFormat */] extends js.Object {
 object BasePrivateKeyEncodingOptions {
   @scala.inline
   def apply[T /* <: KeyFormat */](cipher: java.lang.String, format: T, passphrase: java.lang.String): BasePrivateKeyEncodingOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cipher")(cipher)
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("passphrase")(passphrase)
+    val __obj = js.Dynamic.literal(cipher = cipher, format = format.asInstanceOf[js.Any], passphrase = passphrase)
+  
     __obj.asInstanceOf[BasePrivateKeyEncodingOptions[T]]
   }
 }

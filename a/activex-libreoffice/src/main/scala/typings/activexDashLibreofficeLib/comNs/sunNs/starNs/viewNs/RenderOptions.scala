@@ -56,12 +56,8 @@ object RenderOptions {
     PageRange: java.lang.String,
     RenderDevice: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XDevice
   ): RenderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsFirstPage")(IsFirstPage)
-    __obj.updateDynamic("IsLastPage")(IsLastPage)
-    __obj.updateDynamic("IsSkipEmptyPages")(IsSkipEmptyPages)
-    __obj.updateDynamic("PageRange")(PageRange)
-    __obj.updateDynamic("RenderDevice")(RenderDevice)
+    val __obj = js.Dynamic.literal(IsFirstPage = IsFirstPage, IsLastPage = IsLastPage, IsSkipEmptyPages = IsSkipEmptyPages, PageRange = PageRange, RenderDevice = RenderDevice)
+  
     __obj.asInstanceOf[RenderOptions]
   }
 }

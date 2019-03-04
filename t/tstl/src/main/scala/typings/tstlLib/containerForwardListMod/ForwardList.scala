@@ -60,11 +60,11 @@ class ForwardList[T] ()
   /**
     * @hidden
     */
-  var `before_begin_`: js.Any = js.native
+  var before_begin_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `end_`: js.Any = js.native
+  var end_ : js.Any = js.native
   /* CompleteClass */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
@@ -76,11 +76,11 @@ class ForwardList[T] ()
   /**
     * @hidden
     */
-  var `ptr_`: js.Any = js.native
+  var ptr_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * Fill Assigner.
     *

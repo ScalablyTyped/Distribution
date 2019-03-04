@@ -24,9 +24,7 @@ object ConnectionInfo {
     expires: scala.Int | scala.Double = null,
     idField: java.lang.String = null
   ): ConnectionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(collection = collection, uri = uri)
     if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions)
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName)
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])

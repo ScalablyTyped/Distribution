@@ -18,8 +18,7 @@ object Anon_ContextName {
     context: nodecredstashLib.nodecredstashMod.CredstashContext = null,
     version: scala.Int | scala.Double = null
   ): Anon_ContextName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (context != null) __obj.updateDynamic("context")(context)
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContextName]

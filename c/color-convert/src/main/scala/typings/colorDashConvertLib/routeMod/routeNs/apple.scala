@@ -49,21 +49,8 @@ object apple {
     rgb: js.Function1[colorDashConvertLib.conversionsMod.APPLE, colorDashConvertLib.conversionsMod.RGB],
     xyz: js.Function1[colorDashConvertLib.conversionsMod.APPLE, colorDashConvertLib.conversionsMod.XYZ]
   ): apple = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ansi16")(ansi16)
-    __obj.updateDynamic("ansi256")(ansi256)
-    __obj.updateDynamic("cmyk")(cmyk)
-    __obj.updateDynamic("gray")(gray)
-    __obj.updateDynamic("hcg")(hcg)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("hsv")(hsv)
-    __obj.updateDynamic("hwb")(hwb)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("lab")(lab)
-    __obj.updateDynamic("lch")(lch)
-    __obj.updateDynamic("rgb")(rgb)
-    __obj.updateDynamic("xyz")(xyz)
+    val __obj = js.Dynamic.literal(ansi16 = ansi16, ansi256 = ansi256, cmyk = cmyk, gray = gray, hcg = hcg, hex = hex, hsl = hsl, hsv = hsv, hwb = hwb, keyword = keyword, lab = lab, lch = lch, rgb = rgb, xyz = xyz)
+  
     __obj.asInstanceOf[apple]
   }
 }

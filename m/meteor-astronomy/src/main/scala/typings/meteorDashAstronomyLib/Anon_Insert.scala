@@ -14,10 +14,8 @@ trait Anon_Insert extends js.Object {
 object Anon_Insert {
   @scala.inline
   def apply(insert: scala.Boolean, remove: scala.Boolean, update: scala.Boolean): Anon_Insert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(insert = insert, remove = remove, update = update)
+  
     __obj.asInstanceOf[Anon_Insert]
   }
 }

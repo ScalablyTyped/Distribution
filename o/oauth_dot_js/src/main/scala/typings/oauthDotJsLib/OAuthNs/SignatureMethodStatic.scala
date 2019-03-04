@@ -50,16 +50,8 @@ object SignatureMethodStatic {
     registerMethodClass: js.Function2[js.Array[java.lang.String], oauthDotJsLib.Anon_SignatureMethod, scala.Unit],
     sign: js.Function2[Message, Accessor, scala.Unit]
   ): SignatureMethodStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("REGISTERED")(REGISTERED)
-    __obj.updateDynamic("getBaseString")(getBaseString)
-    __obj.updateDynamic("makeSubclass")(makeSubclass)
-    __obj.updateDynamic("newMethod")(newMethod)
-    __obj.updateDynamic("normalizeParameters")(normalizeParameters)
-    __obj.updateDynamic("normalizeUrl")(normalizeUrl)
-    __obj.updateDynamic("parseUri")(parseUri)
-    __obj.updateDynamic("registerMethodClass")(registerMethodClass)
-    __obj.updateDynamic("sign")(sign)
+    val __obj = js.Dynamic.literal(REGISTERED = REGISTERED, getBaseString = getBaseString, makeSubclass = makeSubclass, newMethod = newMethod, normalizeParameters = normalizeParameters, normalizeUrl = normalizeUrl, parseUri = parseUri, registerMethodClass = registerMethodClass, sign = sign)
+  
     __obj.asInstanceOf[SignatureMethodStatic]
   }
 }

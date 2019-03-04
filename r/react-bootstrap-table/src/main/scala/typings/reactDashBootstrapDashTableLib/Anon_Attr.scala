@@ -27,8 +27,8 @@ object Anon_Attr {
       reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
     ]
   ): Anon_Attr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElement")(getElement)
+    val __obj = js.Dynamic.literal(getElement = getElement)
+  
     __obj.asInstanceOf[Anon_Attr]
   }
 }

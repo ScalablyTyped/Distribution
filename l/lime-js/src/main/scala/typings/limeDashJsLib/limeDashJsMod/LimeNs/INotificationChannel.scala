@@ -16,9 +16,8 @@ object INotificationChannel {
     onNotification: js.Function1[Notification, js.Any],
     sendNotification: js.Function1[Notification, scala.Unit]
   ): INotificationChannel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onNotification")(onNotification)
-    __obj.updateDynamic("sendNotification")(sendNotification)
+    val __obj = js.Dynamic.literal(onNotification = onNotification, sendNotification = sendNotification)
+  
     __obj.asInstanceOf[INotificationChannel]
   }
 }

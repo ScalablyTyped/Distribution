@@ -37,12 +37,8 @@ object XDecryptionResultBroadcaster {
     release: js.Function0[scala.Unit],
     removeDecryptionResultListener: js.Function1[XDecryptionResultListener, scala.Unit]
   ): XDecryptionResultBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDecryptionResultListener")(addDecryptionResultListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDecryptionResultListener")(removeDecryptionResultListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addDecryptionResultListener = addDecryptionResultListener, queryInterface = queryInterface, release = release, removeDecryptionResultListener = removeDecryptionResultListener)
+  
     __obj.asInstanceOf[XDecryptionResultBroadcaster]
   }
 }

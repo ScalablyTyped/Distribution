@@ -52,18 +52,8 @@ object XCompressedDocumentHandler {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCompressedDocumentHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compressedCharacters")(compressedCharacters)
-    __obj.updateDynamic("compressedEndDocument")(compressedEndDocument)
-    __obj.updateDynamic("compressedEndElement")(compressedEndElement)
-    __obj.updateDynamic("compressedIgnorableWhitespace")(compressedIgnorableWhitespace)
-    __obj.updateDynamic("compressedProcessingInstruction")(compressedProcessingInstruction)
-    __obj.updateDynamic("compressedSetDocumentLocator")(compressedSetDocumentLocator)
-    __obj.updateDynamic("compressedStartDocument")(compressedStartDocument)
-    __obj.updateDynamic("compressedStartElement")(compressedStartElement)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, compressedCharacters = compressedCharacters, compressedEndDocument = compressedEndDocument, compressedEndElement = compressedEndElement, compressedIgnorableWhitespace = compressedIgnorableWhitespace, compressedProcessingInstruction = compressedProcessingInstruction, compressedSetDocumentLocator = compressedSetDocumentLocator, compressedStartDocument = compressedStartDocument, compressedStartElement = compressedStartElement, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCompressedDocumentHandler]
   }
 }

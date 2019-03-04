@@ -32,11 +32,8 @@ object GitConflictUpdateResult {
     updateStatus: GitConflictUpdateStatus,
     updatedConflict: GitConflict
   ): GitConflictUpdateResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conflictId")(conflictId)
-    __obj.updateDynamic("customMessage")(customMessage)
-    __obj.updateDynamic("updateStatus")(updateStatus)
-    __obj.updateDynamic("updatedConflict")(updatedConflict)
+    val __obj = js.Dynamic.literal(conflictId = conflictId, customMessage = customMessage, updateStatus = updateStatus, updatedConflict = updatedConflict)
+  
     __obj.asInstanceOf[GitConflictUpdateResult]
   }
 }

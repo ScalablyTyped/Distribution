@@ -13,9 +13,8 @@ trait Anon_MountPath extends js.Object {
 object Anon_MountPath {
   @scala.inline
   def apply(mount: java.lang.String, path: java.lang.String): Anon_MountPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(mount = mount, path = path)
+  
     __obj.asInstanceOf[Anon_MountPath]
   }
 }

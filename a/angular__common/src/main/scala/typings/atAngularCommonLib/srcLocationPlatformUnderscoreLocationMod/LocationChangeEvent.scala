@@ -13,8 +13,8 @@ trait LocationChangeEvent extends js.Object {
 object LocationChangeEvent {
   @scala.inline
   def apply(state: js.Any, `type`: java.lang.String): LocationChangeEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LocationChangeEvent]
   }
 }

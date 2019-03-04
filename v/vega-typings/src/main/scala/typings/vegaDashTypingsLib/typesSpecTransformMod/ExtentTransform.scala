@@ -18,9 +18,8 @@ object ExtentTransform {
     signal: java.lang.String,
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.extent
   ): ExtentTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], signal = signal)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExtentTransform]
   }
 }

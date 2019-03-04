@@ -42,8 +42,7 @@ object DroppableOption {
     sensorOffsetY: scala.Int | scala.Double = null,
     start: js.Function1[/* e */ js.UndefOr[DroppableEvent], scala.Unit] = null
   ): DroppableOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (always != null) __obj.updateDynamic("always")(always)
     if (before != null) __obj.updateDynamic("before")(before)
     if (beforeDrop != null) __obj.updateDynamic("beforeDrop")(beforeDrop)

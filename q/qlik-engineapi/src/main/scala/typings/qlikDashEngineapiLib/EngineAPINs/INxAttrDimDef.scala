@@ -26,10 +26,8 @@ trait INxAttrDimDef extends js.Object {
 object INxAttrDimDef {
   @scala.inline
   def apply(qDef: java.lang.String, qLibraryId: java.lang.String, qSortBy: ISortCriteria): INxAttrDimDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
-    __obj.updateDynamic("qSortBy")(qSortBy)
+    val __obj = js.Dynamic.literal(qDef = qDef, qLibraryId = qLibraryId, qSortBy = qSortBy)
+  
     __obj.asInstanceOf[INxAttrDimDef]
   }
 }

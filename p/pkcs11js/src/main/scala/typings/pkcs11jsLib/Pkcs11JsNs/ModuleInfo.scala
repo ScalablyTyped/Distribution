@@ -22,12 +22,8 @@ object ModuleInfo {
     libraryVersion: Version,
     manufacturerID: java.lang.String
   ): ModuleInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cryptokiVersion")(cryptokiVersion)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("libraryDescription")(libraryDescription)
-    __obj.updateDynamic("libraryVersion")(libraryVersion)
-    __obj.updateDynamic("manufacturerID")(manufacturerID)
+    val __obj = js.Dynamic.literal(cryptokiVersion = cryptokiVersion, flags = flags, libraryDescription = libraryDescription, libraryVersion = libraryVersion, manufacturerID = manufacturerID)
+  
     __obj.asInstanceOf[ModuleInfo]
   }
 }

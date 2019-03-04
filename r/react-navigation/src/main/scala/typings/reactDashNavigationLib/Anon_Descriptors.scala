@@ -22,9 +22,7 @@ object Anon_Descriptors {
     navigationConfig: O,
     screenProps: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Descriptors[O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descriptors")(descriptors)
-    __obj.updateDynamic("navigationConfig")(navigationConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(descriptors = descriptors, navigationConfig = navigationConfig.asInstanceOf[js.Any])
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
     __obj.asInstanceOf[Anon_Descriptors[O]]
   }

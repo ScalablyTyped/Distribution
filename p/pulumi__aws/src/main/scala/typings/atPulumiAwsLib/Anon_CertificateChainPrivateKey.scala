@@ -18,9 +18,7 @@ object Anon_CertificateChainPrivateKey {
     privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     chain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_CertificateChainPrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CertificateChainPrivateKey]
   }

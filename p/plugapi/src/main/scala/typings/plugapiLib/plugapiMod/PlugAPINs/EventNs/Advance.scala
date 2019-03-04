@@ -26,14 +26,8 @@ object Advance {
     playlistID: scala.Double,
     startTime: java.lang.String
   ): Advance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentDJ")(currentDJ)
-    __obj.updateDynamic("djs")(djs)
-    __obj.updateDynamic("historyID")(historyID)
-    __obj.updateDynamic("lastPlay")(lastPlay)
-    __obj.updateDynamic("media")(media)
-    __obj.updateDynamic("playlistID")(playlistID)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(currentDJ = currentDJ, djs = djs, historyID = historyID, lastPlay = lastPlay, media = media, playlistID = playlistID, startTime = startTime)
+  
     __obj.asInstanceOf[Advance]
   }
 }

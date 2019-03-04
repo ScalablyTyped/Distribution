@@ -41,17 +41,8 @@ object KeyBinding {
     source: java.lang.String,
     specificity: scala.Double
   ): KeyBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("keystrokeArray")(keystrokeArray)
-    __obj.updateDynamic("keystrokeCount")(keystrokeCount)
-    __obj.updateDynamic("keystrokes")(keystrokes)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("specificity")(specificity)
+    val __obj = js.Dynamic.literal(command = command, compare = compare, enabled = enabled, keystrokeArray = keystrokeArray, keystrokeCount = keystrokeCount, keystrokes = keystrokes, matches = matches, selector = selector, source = source, specificity = specificity)
+  
     __obj.asInstanceOf[KeyBinding]
   }
 }

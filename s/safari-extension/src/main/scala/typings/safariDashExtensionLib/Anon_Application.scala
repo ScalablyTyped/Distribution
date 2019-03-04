@@ -18,10 +18,8 @@ object Anon_Application {
     extension: SafariExtension,
     self: SafariExtensionGlobalPage | SafariExtensionBar
   ): Anon_Application = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application")(application)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(application = application, extension = extension, self = self.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Application]
   }
 }

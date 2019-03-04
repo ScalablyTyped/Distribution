@@ -40,20 +40,8 @@ object Anon_Image1alt {
     text4: java.lang.String,
     `type`: java.lang.String
   ): Anon_Image1alt = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("image1alt")(image1alt)
-    __obj.updateDynamic("image1src")(image1src)
-    __obj.updateDynamic("image2alt")(image2alt)
-    __obj.updateDynamic("image2src")(image2src)
-    __obj.updateDynamic("image3alt")(image3alt)
-    __obj.updateDynamic("image3src")(image3src)
-    __obj.updateDynamic("image4alt")(image4alt)
-    __obj.updateDynamic("image4src")(image4src)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("text1")(text1)
-    __obj.updateDynamic("text2")(text2)
-    __obj.updateDynamic("text3")(text3)
-    __obj.updateDynamic("text4")(text4)
+    val __obj = js.Dynamic.literal(image1alt = image1alt, image1src = image1src, image2alt = image2alt, image2src = image2src, image3alt = image3alt, image3src = image3src, image4alt = image4alt, image4src = image4src, lang = lang, text1 = text1, text2 = text2, text3 = text3, text4 = text4)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Image1alt]
   }
 }

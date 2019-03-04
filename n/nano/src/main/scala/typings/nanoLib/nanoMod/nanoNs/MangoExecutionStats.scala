@@ -29,12 +29,8 @@ object MangoExecutionStats {
     total_keys_examined: scala.Double,
     total_quorum_docs_examined: scala.Double
   ): MangoExecutionStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execution_time_ms")(execution_time_ms)
-    __obj.updateDynamic("results_returned")(results_returned)
-    __obj.updateDynamic("total_docs_examined")(total_docs_examined)
-    __obj.updateDynamic("total_keys_examined")(total_keys_examined)
-    __obj.updateDynamic("total_quorum_docs_examined")(total_quorum_docs_examined)
+    val __obj = js.Dynamic.literal(execution_time_ms = execution_time_ms, results_returned = results_returned, total_docs_examined = total_docs_examined, total_keys_examined = total_keys_examined, total_quorum_docs_examined = total_quorum_docs_examined)
+  
     __obj.asInstanceOf[MangoExecutionStats]
   }
 }

@@ -29,13 +29,8 @@ object Anon_Data {
     ],
     onUpdate: js.Function3[js.Object, jssLib.jssMod.Rule, jssLib.jssMod.StyleSheet[_], scala.Unit]
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChangeValue")(onChangeValue)
-    __obj.updateDynamic("onCreateRule")(onCreateRule)
-    __obj.updateDynamic("onProcessRule")(onProcessRule)
-    __obj.updateDynamic("onProcessSheet")(onProcessSheet)
-    __obj.updateDynamic("onProcessStyle")(onProcessStyle)
-    __obj.updateDynamic("onUpdate")(onUpdate)
+    val __obj = js.Dynamic.literal(onChangeValue = onChangeValue, onCreateRule = onCreateRule, onProcessRule = onProcessRule, onProcessSheet = onProcessSheet, onProcessStyle = onProcessStyle, onUpdate = onUpdate)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

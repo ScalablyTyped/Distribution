@@ -20,10 +20,8 @@ object MDCRadioAdapter {
     ],
     removeClass: js.Function1[java.lang.String, scala.Unit]
   ): MDCRadioAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("getNativeControl")(getNativeControl)
-    __obj.updateDynamic("removeClass")(removeClass)
+    val __obj = js.Dynamic.literal(addClass = addClass, getNativeControl = getNativeControl, removeClass = removeClass)
+  
     __obj.asInstanceOf[MDCRadioAdapter]
   }
 }

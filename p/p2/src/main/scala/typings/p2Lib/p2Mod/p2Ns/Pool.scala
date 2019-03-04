@@ -20,11 +20,8 @@ object Pool {
     release: js.Function1[js.Any, Pool],
     resize: js.Function1[scala.Double, Pool]
   ): Pool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resize")(resize)
+    val __obj = js.Dynamic.literal(get = get, objects = objects, release = release, resize = resize)
+  
     __obj.asInstanceOf[Pool]
   }
 }

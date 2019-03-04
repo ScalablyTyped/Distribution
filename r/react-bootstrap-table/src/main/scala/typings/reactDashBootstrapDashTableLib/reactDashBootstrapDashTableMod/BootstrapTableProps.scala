@@ -325,8 +325,7 @@ object BootstrapTableProps {
     version: BootstrapVersion = null,
     withoutTabIndex: js.UndefOr[scala.Boolean] = js.undefined
   ): BootstrapTableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (autoCollapse != null) __obj.updateDynamic("autoCollapse")(autoCollapse)
     if (bodyContainerClass != null) __obj.updateDynamic("bodyContainerClass")(bodyContainerClass)
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)

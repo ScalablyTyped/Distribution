@@ -26,14 +26,8 @@ object Anon_CopyWithin {
     keys: scala.Boolean,
     values: scala.Boolean
   ): Anon_CopyWithin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyWithin")(copyWithin)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findIndex")(findIndex)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(copyWithin = copyWithin, entries = entries, fill = fill, find = find, findIndex = findIndex, keys = keys, values = values)
+  
     __obj.asInstanceOf[Anon_CopyWithin]
   }
 }

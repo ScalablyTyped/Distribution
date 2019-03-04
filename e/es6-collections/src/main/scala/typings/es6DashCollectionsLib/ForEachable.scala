@@ -12,8 +12,8 @@ trait ForEachable[T] extends js.Object {
 object ForEachable {
   @scala.inline
   def apply[T](forEach: js.Function1[js.Function1[/* value */ T, scala.Unit], scala.Unit]): ForEachable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEach")(forEach)
+    val __obj = js.Dynamic.literal(forEach = forEach)
+  
     __obj.asInstanceOf[ForEachable[T]]
   }
 }

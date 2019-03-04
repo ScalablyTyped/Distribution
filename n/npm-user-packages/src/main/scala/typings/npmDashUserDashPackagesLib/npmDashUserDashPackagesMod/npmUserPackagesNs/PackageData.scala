@@ -32,17 +32,8 @@ object PackageData {
     scope: java.lang.String,
     version: java.lang.String
   ): PackageData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("keywords")(keywords)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("maintainers")(maintainers)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(author = author, date = date, description = description, keywords = keywords, links = links, maintainers = maintainers, name = name, publisher = publisher, scope = scope, version = version)
+  
     __obj.asInstanceOf[PackageData]
   }
 }

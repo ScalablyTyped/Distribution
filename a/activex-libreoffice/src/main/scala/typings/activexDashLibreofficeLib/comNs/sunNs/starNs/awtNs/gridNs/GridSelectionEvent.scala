@@ -25,10 +25,8 @@ object GridSelectionEvent {
     SelectedRowIndexes: activexDashInteropLib.SafeArray[scala.Double],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): GridSelectionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SelectedColumnIndexes")(SelectedColumnIndexes)
-    __obj.updateDynamic("SelectedRowIndexes")(SelectedRowIndexes)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(SelectedColumnIndexes = SelectedColumnIndexes, SelectedRowIndexes = SelectedRowIndexes, Source = Source)
+  
     __obj.asInstanceOf[GridSelectionEvent]
   }
 }

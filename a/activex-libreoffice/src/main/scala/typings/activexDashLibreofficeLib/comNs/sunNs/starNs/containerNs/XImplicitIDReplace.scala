@@ -20,11 +20,8 @@ object XImplicitIDReplace {
     release: js.Function0[scala.Unit],
     replaceByUniqueID: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XImplicitIDReplace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceByUniqueID")(replaceByUniqueID)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, replaceByUniqueID = replaceByUniqueID)
+  
     __obj.asInstanceOf[XImplicitIDReplace]
   }
 }

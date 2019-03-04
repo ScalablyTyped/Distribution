@@ -42,28 +42,8 @@ object ConfigurationController {
     unlock: js.Function0[scala.Unit],
     update: js.Function0[scala.Unit]
   ): ConfigurationController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentConfiguration")(CurrentConfiguration)
-    __obj.updateDynamic("RequestedConfiguration")(RequestedConfiguration)
-    __obj.updateDynamic("addConfigurationChangeListener")(addConfigurationChangeListener)
-    __obj.updateDynamic("addResourceFactory")(addResourceFactory)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("getCurrentConfiguration")(getCurrentConfiguration)
-    __obj.updateDynamic("getRequestedConfiguration")(getRequestedConfiguration)
-    __obj.updateDynamic("getResource")(getResource)
-    __obj.updateDynamic("getResourceFactory")(getResourceFactory)
-    __obj.updateDynamic("hasPendingRequests")(hasPendingRequests)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("notifyEvent")(notifyEvent)
-    __obj.updateDynamic("postChangeRequest")(postChangeRequest)
-    __obj.updateDynamic("removeConfigurationChangeListener")(removeConfigurationChangeListener)
-    __obj.updateDynamic("removeResourceFactoryForReference")(removeResourceFactoryForReference)
-    __obj.updateDynamic("removeResourceFactoryForURL")(removeResourceFactoryForURL)
-    __obj.updateDynamic("requestResourceActivation")(requestResourceActivation)
-    __obj.updateDynamic("requestResourceDeactivation")(requestResourceDeactivation)
-    __obj.updateDynamic("restoreConfiguration")(restoreConfiguration)
-    __obj.updateDynamic("unlock")(unlock)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(CurrentConfiguration = CurrentConfiguration, RequestedConfiguration = RequestedConfiguration, addConfigurationChangeListener = addConfigurationChangeListener, addResourceFactory = addResourceFactory, create = create, getCurrentConfiguration = getCurrentConfiguration, getRequestedConfiguration = getRequestedConfiguration, getResource = getResource, getResourceFactory = getResourceFactory, hasPendingRequests = hasPendingRequests, lock = lock, notifyEvent = notifyEvent, postChangeRequest = postChangeRequest, removeConfigurationChangeListener = removeConfigurationChangeListener, removeResourceFactoryForReference = removeResourceFactoryForReference, removeResourceFactoryForURL = removeResourceFactoryForURL, requestResourceActivation = requestResourceActivation, requestResourceDeactivation = requestResourceDeactivation, restoreConfiguration = restoreConfiguration, unlock = unlock, update = update)
+  
     __obj.asInstanceOf[ConfigurationController]
   }
 }

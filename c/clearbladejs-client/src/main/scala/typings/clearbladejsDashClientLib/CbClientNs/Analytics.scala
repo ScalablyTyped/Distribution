@@ -30,16 +30,8 @@ object Analytics {
     systemSecret: java.lang.String,
     user: APIUser
   ): Analytics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getEventList")(getEventList)
-    __obj.updateDynamic("getEventTotals")(getEventTotals)
-    __obj.updateDynamic("getStorage")(getStorage)
-    __obj.updateDynamic("getUserEvents")(getUserEvents)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, getCount = getCount, getEventList = getEventList, getEventTotals = getEventTotals, getStorage = getStorage, getUserEvents = getUserEvents, systemKey = systemKey, systemSecret = systemSecret, user = user)
+  
     __obj.asInstanceOf[Analytics]
   }
 }

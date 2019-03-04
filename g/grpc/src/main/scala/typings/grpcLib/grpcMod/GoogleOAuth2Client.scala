@@ -21,8 +21,8 @@ object GoogleOAuth2Client {
       scala.Unit
     ]
   ): GoogleOAuth2Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRequestMetadata")(getRequestMetadata)
+    val __obj = js.Dynamic.literal(getRequestMetadata = getRequestMetadata)
+  
     __obj.asInstanceOf[GoogleOAuth2Client]
   }
 }

@@ -18,8 +18,7 @@ object Image {
     buffer: nodeLib.Buffer = null,
     filename: java.lang.String = null
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
     if (buffer != null) __obj.updateDynamic("buffer")(buffer)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     __obj.asInstanceOf[Image]

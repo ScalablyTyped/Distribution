@@ -33,8 +33,7 @@ object IconDetails {
     imageData: stdLib.ImageData | org.scalablytyped.runtime.NumberDictionary[stdLib.ImageData] = null,
     path: js.Any = null
   ): IconDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId)
     if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)

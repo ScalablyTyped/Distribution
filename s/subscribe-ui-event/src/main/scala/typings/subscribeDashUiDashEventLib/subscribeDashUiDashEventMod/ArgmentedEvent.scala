@@ -10,7 +10,7 @@ trait ArgmentedEvent[T /* <: EventType */] extends js.Object {
   var resize: subscribeDashUiDashEventLib.Anon_Height
   var scroll: subscribeDashUiDashEventLib.Anon_Delta
   var subType: java.lang.String
-  var touch: subscribeDashUiDashEventLib.`Anon_`
+  var touch: subscribeDashUiDashEventLib.Anon_
   var `type`: T
 }
 
@@ -21,15 +21,11 @@ object ArgmentedEvent {
     resize: subscribeDashUiDashEventLib.Anon_Height,
     scroll: subscribeDashUiDashEventLib.Anon_Delta,
     subType: java.lang.String,
-    touch: subscribeDashUiDashEventLib.`Anon_`,
+    touch: subscribeDashUiDashEventLib.Anon_,
     `type`: T
   ): ArgmentedEvent[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("mainType")(mainType)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("scroll")(scroll)
-    __obj.updateDynamic("subType")(subType)
-    __obj.updateDynamic("touch")(touch)
+    val __obj = js.Dynamic.literal(mainType = mainType, resize = resize, scroll = scroll, subType = subType, touch = touch)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgmentedEvent[T]]
   }
 }

@@ -20,11 +20,8 @@ object CodePathSegment {
     prevSegments: js.Array[CodePathSegment],
     reachable: scala.Boolean
   ): CodePathSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("nextSegments")(nextSegments)
-    __obj.updateDynamic("prevSegments")(prevSegments)
-    __obj.updateDynamic("reachable")(reachable)
+    val __obj = js.Dynamic.literal(id = id, nextSegments = nextSegments, prevSegments = prevSegments, reachable = reachable)
+  
     __obj.asInstanceOf[CodePathSegment]
   }
 }

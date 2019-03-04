@@ -12,8 +12,8 @@ trait Anon_RawResult extends js.Object {
 object Anon_RawResult {
   @scala.inline
   def apply(rawResult: mongooseLib.mongooseLibNumbers.`true`): Anon_RawResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rawResult")(rawResult)
+    val __obj = js.Dynamic.literal(rawResult = rawResult)
+  
     __obj.asInstanceOf[Anon_RawResult]
   }
 }

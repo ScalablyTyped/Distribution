@@ -35,14 +35,8 @@ object VoiceRecognizerTask {
     start: js.Function1[VoiceRecognizerStart, scala.Unit],
     stop: js.Function0[scala.Unit]
   ): VoiceRecognizerTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onFinish")(onFinish)
-    __obj.updateDynamic("onRecognize")(onRecognize)
-    __obj.updateDynamic("onStart")(onStart)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(cancel = cancel, onError = onError, onFinish = onFinish, onRecognize = onRecognize, onStart = onStart, start = start, stop = stop)
+  
     __obj.asInstanceOf[VoiceRecognizerTask]
   }
 }

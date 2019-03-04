@@ -22,9 +22,7 @@ object Anon_CommentsIdIsExport {
     isExport: js.UndefOr[scala.Boolean] = js.undefined,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsIdIsExport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("moduleReference")(moduleReference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, moduleReference = moduleReference.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport)
     if (loc != null) __obj.updateDynamic("loc")(loc)

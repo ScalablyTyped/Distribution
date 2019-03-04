@@ -49,14 +49,8 @@ object XImplementationRegistration {
     release: js.Function0[scala.Unit],
     revokeImplementation: js.Function2[java.lang.String, XSimpleRegistry, scala.Boolean]
   ): XImplementationRegistration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("checkInstantiation")(checkInstantiation)
-    __obj.updateDynamic("getImplementations")(getImplementations)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerImplementation")(registerImplementation)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("revokeImplementation")(revokeImplementation)
+    val __obj = js.Dynamic.literal(acquire = acquire, checkInstantiation = checkInstantiation, getImplementations = getImplementations, queryInterface = queryInterface, registerImplementation = registerImplementation, release = release, revokeImplementation = revokeImplementation)
+  
     __obj.asInstanceOf[XImplementationRegistration]
   }
 }

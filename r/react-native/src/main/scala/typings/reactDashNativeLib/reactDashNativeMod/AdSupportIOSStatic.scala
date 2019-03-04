@@ -30,9 +30,8 @@ object AdSupportIOSStatic {
       scala.Unit
     ]
   ): AdSupportIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdvertisingId")(getAdvertisingId)
-    __obj.updateDynamic("getAdvertisingTrackingEnabled")(getAdvertisingTrackingEnabled)
+    val __obj = js.Dynamic.literal(getAdvertisingId = getAdvertisingId, getAdvertisingTrackingEnabled = getAdvertisingTrackingEnabled)
+  
     __obj.asInstanceOf[AdSupportIOSStatic]
   }
 }

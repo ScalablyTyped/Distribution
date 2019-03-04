@@ -26,14 +26,8 @@ object AlterManager {
     sheet: Sheet,
     triggerAlter: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): AlterManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataProvider")(dataProvider)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hot")(hot)
-    __obj.updateDynamic("matrix")(matrix)
-    __obj.updateDynamic("prepareAlter")(prepareAlter)
-    __obj.updateDynamic("sheet")(sheet)
-    __obj.updateDynamic("triggerAlter")(triggerAlter)
+    val __obj = js.Dynamic.literal(dataProvider = dataProvider, destroy = destroy, hot = hot, matrix = matrix, prepareAlter = prepareAlter, sheet = sheet, triggerAlter = triggerAlter)
+  
     __obj.asInstanceOf[AlterManager]
   }
 }

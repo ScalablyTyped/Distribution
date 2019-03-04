@@ -19,9 +19,8 @@ trait ASPxClientGridViewFocusEventArgs extends ASPxClientProcessingModeEventArgs
 object ASPxClientGridViewFocusEventArgs {
   @scala.inline
   def apply(isChangedOnServer: scala.Boolean, processOnServer: scala.Boolean): ASPxClientGridViewFocusEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isChangedOnServer")(isChangedOnServer)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientGridViewFocusEventArgs]
   }
 }

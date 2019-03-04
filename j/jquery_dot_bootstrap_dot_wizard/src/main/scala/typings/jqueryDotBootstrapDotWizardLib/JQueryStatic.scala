@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(bootstrapWizard: Wizard): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bootstrapWizard")(bootstrapWizard)
+    val __obj = js.Dynamic.literal(bootstrapWizard = bootstrapWizard)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

@@ -29,10 +29,8 @@ trait ASPxClientSchedulerRefreshAction extends js.Object {
 object ASPxClientSchedulerRefreshAction {
   @scala.inline
   def apply(ActiveViewTypeChanged: scala.Double, None: scala.Double, VisibleIntervalChanged: scala.Double): ASPxClientSchedulerRefreshAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveViewTypeChanged")(ActiveViewTypeChanged)
-    __obj.updateDynamic("None")(None)
-    __obj.updateDynamic("VisibleIntervalChanged")(VisibleIntervalChanged)
+    val __obj = js.Dynamic.literal(ActiveViewTypeChanged = ActiveViewTypeChanged, None = None, VisibleIntervalChanged = VisibleIntervalChanged)
+  
     __obj.asInstanceOf[ASPxClientSchedulerRefreshAction]
   }
 }

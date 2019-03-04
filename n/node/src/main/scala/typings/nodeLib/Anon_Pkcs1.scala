@@ -12,8 +12,8 @@ trait Anon_Pkcs1 extends js.Object {
 object Anon_Pkcs1 {
   @scala.inline
   def apply(`type`: nodeLib.nodeLibStrings.pkcs1 | nodeLib.nodeLibStrings.pkcs8): Anon_Pkcs1 = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Pkcs1]
   }
 }

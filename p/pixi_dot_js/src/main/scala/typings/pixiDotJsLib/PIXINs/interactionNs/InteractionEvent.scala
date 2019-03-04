@@ -26,13 +26,8 @@ object InteractionEvent {
     target: pixiDotJsLib.PIXINs.DisplayObject,
     `type`: java.lang.String
   ): InteractionEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("stopped")(stopped)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, data = data, reset = reset, stopPropagation = stopPropagation, stopped = stopped, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InteractionEvent]
   }
 }

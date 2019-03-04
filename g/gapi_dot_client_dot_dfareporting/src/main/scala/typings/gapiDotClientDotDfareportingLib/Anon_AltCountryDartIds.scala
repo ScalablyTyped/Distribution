@@ -51,8 +51,7 @@ object Anon_AltCountryDartIds {
     regionDartIds: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCountryDartIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (countryDartIds != null) __obj.updateDynamic("countryDartIds")(countryDartIds)
     if (dartIds != null) __obj.updateDynamic("dartIds")(dartIds)

@@ -28,10 +28,8 @@ trait ASPxClientSpreadsheetCustomCommandExecutedEventArgs extends ASPxClientEven
 object ASPxClientSpreadsheetCustomCommandExecutedEventArgs {
   @scala.inline
   def apply(commandName: java.lang.String, item: ASPxClientRibbonItem, parameter: java.lang.String): ASPxClientSpreadsheetCustomCommandExecutedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commandName")(commandName)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("parameter")(parameter)
+    val __obj = js.Dynamic.literal(commandName = commandName, item = item, parameter = parameter)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetCustomCommandExecutedEventArgs]
   }
 }

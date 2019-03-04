@@ -147,25 +147,8 @@ object ClustersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ClustersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addons")(addons)
-    __obj.updateDynamic("completeIpRotation")(completeIpRotation)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("legacyAbac")(legacyAbac)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("logging")(logging)
-    __obj.updateDynamic("master")(master)
-    __obj.updateDynamic("monitoring")(monitoring)
-    __obj.updateDynamic("nodePools")(nodePools)
-    __obj.updateDynamic("resourceLabels")(resourceLabels)
-    __obj.updateDynamic("setMaintenancePolicy")(setMaintenancePolicy)
-    __obj.updateDynamic("setMasterAuth")(setMasterAuth)
-    __obj.updateDynamic("setNetworkPolicy")(setNetworkPolicy)
-    __obj.updateDynamic("startIpRotation")(startIpRotation)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(addons = addons, completeIpRotation = completeIpRotation, create = create, delete = delete, get = get, legacyAbac = legacyAbac, list = list, locations = locations, logging = logging, master = master, monitoring = monitoring, nodePools = nodePools, resourceLabels = resourceLabels, setMaintenancePolicy = setMaintenancePolicy, setMasterAuth = setMasterAuth, setNetworkPolicy = setNetworkPolicy, startIpRotation = startIpRotation, update = update)
+  
     __obj.asInstanceOf[ClustersResource]
   }
 }

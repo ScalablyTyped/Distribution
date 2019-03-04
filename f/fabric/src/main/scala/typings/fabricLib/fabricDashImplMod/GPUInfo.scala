@@ -13,9 +13,8 @@ trait GPUInfo extends js.Object {
 object GPUInfo {
   @scala.inline
   def apply(renderer: java.lang.String, vendor: java.lang.String): GPUInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(renderer = renderer, vendor = vendor)
+  
     __obj.asInstanceOf[GPUInfo]
   }
 }

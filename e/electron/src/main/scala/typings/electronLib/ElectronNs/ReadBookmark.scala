@@ -13,9 +13,8 @@ trait ReadBookmark extends js.Object {
 object ReadBookmark {
   @scala.inline
   def apply(title: java.lang.String, url: java.lang.String): ReadBookmark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(title = title, url = url)
+  
     __obj.asInstanceOf[ReadBookmark]
   }
 }

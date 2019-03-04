@@ -35,8 +35,7 @@ object BaseFieldProps {
     warn: Validator | js.Array[Validator] = null,
     withRef: js.UndefOr[scala.Boolean] = js.undefined
   ): BaseFieldProps[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
     if (immutableProps != null) __obj.updateDynamic("immutableProps")(immutableProps)

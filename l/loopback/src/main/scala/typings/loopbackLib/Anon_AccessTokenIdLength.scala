@@ -18,10 +18,8 @@ object Anon_AccessTokenIdLength {
     acls: js.Array[loopbackLib.loopbackMod.lNs.ACL],
     http: Anon_Path
   ): Anon_AccessTokenIdLength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessTokenIdLength")(accessTokenIdLength)
-    __obj.updateDynamic("acls")(acls)
-    __obj.updateDynamic("http")(http)
+    val __obj = js.Dynamic.literal(accessTokenIdLength = accessTokenIdLength, acls = acls, http = http)
+  
     __obj.asInstanceOf[Anon_AccessTokenIdLength]
   }
 }

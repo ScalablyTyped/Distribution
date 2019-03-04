@@ -28,13 +28,8 @@ object BoxModel {
     padding: js.Array[Box],
     width: scala.Double
   ): BoxModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("border")(border)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("margin")(margin)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(border = border, content = content, height = height, margin = margin, padding = padding, width = width)
+  
     __obj.asInstanceOf[BoxModel]
   }
 }

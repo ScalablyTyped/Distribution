@@ -30,15 +30,7 @@ object SketchMSStyleBorder {
     thickness: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSStyleBorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("contextSettings")(contextSettings)
-    __obj.updateDynamic("fillType")(fillType)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("thickness")(thickness)
+    val __obj = js.Dynamic.literal(_class = _class, color = color, contextSettings = contextSettings, fillType = fillType, gradient = gradient, isEnabled = isEnabled, position = position, thickness = thickness)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyleBorder]
   }

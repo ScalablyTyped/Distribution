@@ -61,10 +61,8 @@ object PathParameter {
     title: java.lang.String = null,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   ): PathParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(in = in, name = name, required = required)
+    __obj.updateDynamic("type")(`type`)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (enum != null) __obj.updateDynamic("enum")(enum)

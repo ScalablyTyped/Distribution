@@ -20,8 +20,7 @@ object FancyBoxGroupItem {
     opts: FancyBoxOptions = null,
     `type`: fancyboxLib.fancyboxLibStrings.image | fancyboxLib.fancyboxLibStrings.`inline` | fancyboxLib.fancyboxLibStrings.ajax | fancyboxLib.fancyboxLibStrings.iframe | fancyboxLib.fancyboxLibStrings.html = null
   ): FancyBoxGroupItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (opts != null) __obj.updateDynamic("opts")(opts)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxGroupItem]

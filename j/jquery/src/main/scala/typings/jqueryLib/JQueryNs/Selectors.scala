@@ -34,15 +34,9 @@ object Selectors {
     pseudos: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.PseudoFunctions,
     setFilters: sizzleLib.sizzleMod.SizzleNs.SelectorsNs.SetFilterFunctions
   ): Selectors = {
-    val __obj = js.Dynamic.literal(`:` = `:`, `match` = `match`)
-    __obj.updateDynamic("attrHandle")(attrHandle)
-    __obj.updateDynamic("cacheLength")(cacheLength)
-    __obj.updateDynamic("createPseudo")(createPseudo)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("preFilter")(preFilter)
-    __obj.updateDynamic("pseudos")(pseudos)
-    __obj.updateDynamic("setFilters")(setFilters)
+    val __obj = js.Dynamic.literal(attrHandle = attrHandle, cacheLength = cacheLength, createPseudo = createPseudo, filter = filter, find = find, preFilter = preFilter, pseudos = pseudos, setFilters = setFilters)
+    __obj.updateDynamic(":")(`:`)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Selectors]
   }
 }

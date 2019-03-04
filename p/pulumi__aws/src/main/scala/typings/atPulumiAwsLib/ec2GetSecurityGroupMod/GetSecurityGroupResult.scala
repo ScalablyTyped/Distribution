@@ -30,13 +30,8 @@ object GetSecurityGroupResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetSecurityGroupResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, name = name, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetSecurityGroupResult]
   }
 }

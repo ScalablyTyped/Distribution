@@ -26,9 +26,7 @@ object Anon_DefaultResultHeartbeatTimeout {
     notificationTargetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DefaultResultHeartbeatTimeout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lifecycleTransition")(lifecycleTransition.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lifecycleTransition = lifecycleTransition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (defaultResult != null) __obj.updateDynamic("defaultResult")(defaultResult.asInstanceOf[js.Any])
     if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
     if (notificationMetadata != null) __obj.updateDynamic("notificationMetadata")(notificationMetadata.asInstanceOf[js.Any])

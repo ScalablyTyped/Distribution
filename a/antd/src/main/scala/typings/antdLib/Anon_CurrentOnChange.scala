@@ -20,11 +20,8 @@ object Anon_CurrentOnChange {
     pageSize: scala.Double,
     total: scala.Double
   ): Anon_CurrentOnChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("pageSize")(pageSize)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(current = current, onChange = onChange, pageSize = pageSize, total = total)
+  
     __obj.asInstanceOf[Anon_CurrentOnChange]
   }
 }

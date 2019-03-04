@@ -34,11 +34,8 @@ object EnhancedElementInstance {
     parent: EnhancedPageObject,
     selector: java.lang.String
   ): EnhancedElementInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locateStrategy")(locateStrategy)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(locateStrategy = locateStrategy, name = name, parent = parent, selector = selector)
+  
     __obj.asInstanceOf[EnhancedElementInstance]
   }
 }

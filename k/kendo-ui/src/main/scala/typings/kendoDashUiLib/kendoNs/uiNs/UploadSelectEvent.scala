@@ -19,10 +19,7 @@ object UploadSelectEvent {
     e: js.Any = null,
     files: js.Array[_] = null
   ): UploadSelectEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (e != null) __obj.updateDynamic("e")(e)
     if (files != null) __obj.updateDynamic("files")(files)
     __obj.asInstanceOf[UploadSelectEvent]

@@ -13,9 +13,8 @@ trait WIZ_FILETIME extends js.Object {
 object WIZ_FILETIME {
   @scala.inline
   def apply(dwHighDateTime: scala.Double, dwLowDateTime: scala.Double): WIZ_FILETIME = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dwHighDateTime")(dwHighDateTime)
-    __obj.updateDynamic("dwLowDateTime")(dwLowDateTime)
+    val __obj = js.Dynamic.literal(dwHighDateTime = dwHighDateTime, dwLowDateTime = dwLowDateTime)
+  
     __obj.asInstanceOf[WIZ_FILETIME]
   }
 }

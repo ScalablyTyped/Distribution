@@ -23,12 +23,8 @@ object strings {
     TABS_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar-scroller__scroll-frame__tabs`,
     TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FRAME_SELECTOR")(FRAME_SELECTOR)
-    __obj.updateDynamic("INDICATOR_BACK_SELECTOR")(INDICATOR_BACK_SELECTOR)
-    __obj.updateDynamic("INDICATOR_FORWARD_SELECTOR")(INDICATOR_FORWARD_SELECTOR)
-    __obj.updateDynamic("TABS_SELECTOR")(TABS_SELECTOR)
-    __obj.updateDynamic("TAB_SELECTOR")(TAB_SELECTOR)
+    val __obj = js.Dynamic.literal(FRAME_SELECTOR = FRAME_SELECTOR, INDICATOR_BACK_SELECTOR = INDICATOR_BACK_SELECTOR, INDICATOR_FORWARD_SELECTOR = INDICATOR_FORWARD_SELECTOR, TABS_SELECTOR = TABS_SELECTOR, TAB_SELECTOR = TAB_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

@@ -15,8 +15,8 @@ trait Provider extends js.Object {
 object Provider {
   @scala.inline
   def apply(spellCheck: js.Function1[java.lang.String, scala.Unit]): Provider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("spellCheck")(spellCheck)
+    val __obj = js.Dynamic.literal(spellCheck = spellCheck)
+  
     __obj.asInstanceOf[Provider]
   }
 }

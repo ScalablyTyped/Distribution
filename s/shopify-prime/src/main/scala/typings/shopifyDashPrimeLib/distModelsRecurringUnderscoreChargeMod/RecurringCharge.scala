@@ -68,9 +68,7 @@ object RecurringCharge {
     trial_ends_on: java.lang.String = null,
     updated_at: java.lang.String = null
   ): RecurringCharge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("trial_days")(trial_days)
+    val __obj = js.Dynamic.literal(name = name, trial_days = trial_days)
     if (activated_on != null) __obj.updateDynamic("activated_on")(activated_on)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (balance_remaining != null) __obj.updateDynamic("balance_remaining")(balance_remaining.asInstanceOf[js.Any])

@@ -14,9 +14,8 @@ trait ICollection extends js.Object {
 object ICollection {
   @scala.inline
   def apply(apply: js.Function2[js.Function, js.Any, js.Any], each: js.Function1[js.Function0[_], js.Any]): ICollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("each")(each)
+    val __obj = js.Dynamic.literal(apply = apply, each = each)
+  
     __obj.asInstanceOf[ICollection]
   }
 }

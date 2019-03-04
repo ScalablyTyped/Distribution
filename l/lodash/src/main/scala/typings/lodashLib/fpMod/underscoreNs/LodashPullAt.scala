@@ -13,7 +13,7 @@ trait LodashPullAt extends js.Object {
     indexes: lodashLib.lodashMod.underscoreNs.Many[scala.Double],
     array: lodashLib.lodashMod.underscoreNs.List[T]
   ): lodashLib.lodashMod.underscoreNs.List[T] = js.native
-  def apply[T](indexes: lodashLib.lodashMod.underscoreNs.`__`, array: js.Array[T]): LodashPullAt1x2[T] = js.native
-  def apply[T](indexes: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashPullAt2x2[T] = js.native
+  def apply[T](indexes: lodashLib.lodashMod.underscoreNs.__, array: js.Array[T]): LodashPullAt1x2[T] = js.native
+  def apply[T](indexes: lodashLib.lodashMod.underscoreNs.__, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashPullAt2x2[T] = js.native
 }
 

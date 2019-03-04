@@ -16,9 +16,8 @@ object Anon_Left {
     Left: reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.left,
     Right: reactDashNativeDashDrawerDashLayoutLib.reactDashNativeDashDrawerDashLayoutLibStrings.right
   ): Anon_Left = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Left")(Left)
-    __obj.updateDynamic("Right")(Right)
+    val __obj = js.Dynamic.literal(Left = Left, Right = Right)
+  
     __obj.asInstanceOf[Anon_Left]
   }
 }

@@ -24,10 +24,7 @@ object Anon_DimensionsKey {
     namespace: java.lang.String = null,
     unit: java.lang.String = null
   ): Anon_DimensionsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("period")(period)
-    __obj.updateDynamic("stat")(stat)
+    val __obj = js.Dynamic.literal(metricName = metricName, period = period, stat = stat)
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (unit != null) __obj.updateDynamic("unit")(unit)

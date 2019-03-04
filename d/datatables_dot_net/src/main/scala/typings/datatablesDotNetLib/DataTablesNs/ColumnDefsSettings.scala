@@ -32,8 +32,7 @@ object ColumnDefsSettings {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: java.lang.String = null
   ): ColumnDefsSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     if (cellType != null) __obj.updateDynamic("cellType")(cellType)
     if (className != null) __obj.updateDynamic("className")(className)
     if (contentPadding != null) __obj.updateDynamic("contentPadding")(contentPadding)

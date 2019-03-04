@@ -18,8 +18,8 @@ object OnTouchListener {
       scala.Unit
     ]
   ): OnTouchListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onTouch")(onTouch)
+    val __obj = js.Dynamic.literal(onTouch = onTouch)
+  
     __obj.asInstanceOf[OnTouchListener]
   }
 }

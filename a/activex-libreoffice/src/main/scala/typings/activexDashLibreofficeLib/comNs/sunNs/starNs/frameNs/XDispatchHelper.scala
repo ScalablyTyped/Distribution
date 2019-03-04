@@ -48,11 +48,8 @@ object XDispatchHelper {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDispatchHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("executeDispatch")(executeDispatch)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, executeDispatch = executeDispatch, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDispatchHelper]
   }
 }

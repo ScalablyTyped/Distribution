@@ -50,16 +50,8 @@ object IPrioritySignal {
     removeAll: js.Function0[scala.Unit],
     valueClasses: js.Array[_]
   ): IPrioritySignal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addOnce")(addOnce)
-    __obj.updateDynamic("addOnceWithPriority")(addOnceWithPriority)
-    __obj.updateDynamic("addWithPriority")(addWithPriority)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("numListeners")(numListeners)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
-    __obj.updateDynamic("valueClasses")(valueClasses)
+    val __obj = js.Dynamic.literal(add = add, addOnce = addOnce, addOnceWithPriority = addOnceWithPriority, addWithPriority = addWithPriority, dispatch = dispatch, numListeners = numListeners, remove = remove, removeAll = removeAll, valueClasses = valueClasses)
+  
     __obj.asInstanceOf[IPrioritySignal]
   }
 }

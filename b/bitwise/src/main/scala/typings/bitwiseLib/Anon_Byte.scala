@@ -62,9 +62,8 @@ object Anon_Byte {
       js.Any
     ]
   ): Anon_Byte = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(read = read, write = write)
+  
     __obj.asInstanceOf[Anon_Byte]
   }
 }

@@ -21,10 +21,8 @@ object SentMessageInfo {
     message: nodeLib.Buffer | nodeLib.streamMod.Readable,
     messageId: java.lang.String
   ): SentMessageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("envelope")(envelope)
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(envelope = envelope, message = message.asInstanceOf[js.Any], messageId = messageId)
+  
     __obj.asInstanceOf[SentMessageInfo]
   }
 }

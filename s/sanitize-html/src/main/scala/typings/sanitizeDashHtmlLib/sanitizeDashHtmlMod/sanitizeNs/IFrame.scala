@@ -20,11 +20,8 @@ object IFrame {
     tagPosition: scala.Double,
     text: java.lang.String
   ): IFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribs")(attribs)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("tagPosition")(tagPosition)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(attribs = attribs, tag = tag, tagPosition = tagPosition, text = text)
+  
     __obj.asInstanceOf[IFrame]
   }
 }

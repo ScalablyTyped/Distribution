@@ -14,10 +14,8 @@ trait ILanIdentifier extends js.Object {
 object ILanIdentifier {
   @scala.inline
   def apply(infrastructureId: LanIdentifierData, networkAdapterId: java.lang.String, portId: LanIdentifierData): ILanIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("infrastructureId")(infrastructureId)
-    __obj.updateDynamic("networkAdapterId")(networkAdapterId)
-    __obj.updateDynamic("portId")(portId)
+    val __obj = js.Dynamic.literal(infrastructureId = infrastructureId, networkAdapterId = networkAdapterId, portId = portId)
+  
     __obj.asInstanceOf[ILanIdentifier]
   }
 }

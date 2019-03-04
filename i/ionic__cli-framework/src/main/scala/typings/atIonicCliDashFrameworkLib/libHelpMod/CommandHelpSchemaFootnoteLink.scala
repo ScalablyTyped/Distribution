@@ -20,9 +20,8 @@ object CommandHelpSchemaFootnoteLink {
     url: java.lang.String,
     shortUrl: java.lang.String = null
   ): CommandHelpSchemaFootnoteLink = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url)
+    __obj.updateDynamic("type")(`type`)
     if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl)
     __obj.asInstanceOf[CommandHelpSchemaFootnoteLink]
   }

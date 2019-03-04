@@ -27,8 +27,7 @@ object logoClassifyOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[/* res */ logoClassifyResponse, scala.Unit] = null
   ): logoClassifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (!js.isUndefined(custom_lib)) __obj.updateDynamic("custom_lib")(custom_lib)
     if (fail != null) __obj.updateDynamic("fail")(fail)

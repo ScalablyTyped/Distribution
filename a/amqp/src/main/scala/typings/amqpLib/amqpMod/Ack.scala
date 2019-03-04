@@ -23,16 +23,8 @@ object Ack {
     reject: js.Function1[scala.Boolean, scala.Unit],
     routingKey: java.lang.String
   ): Ack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acknowledge")(acknowledge)
-    __obj.updateDynamic("consumerTag")(consumerTag)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("deliveryTag")(deliveryTag)
-    __obj.updateDynamic("exchange")(exchange)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("redelivered")(redelivered)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("routingKey")(routingKey)
+    val __obj = js.Dynamic.literal(acknowledge = acknowledge, consumerTag = consumerTag, contentType = contentType, deliveryTag = deliveryTag, exchange = exchange, queue = queue, redelivered = redelivered, reject = reject, routingKey = routingKey)
+  
     __obj.asInstanceOf[Ack]
   }
 }

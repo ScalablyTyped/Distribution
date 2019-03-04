@@ -13,8 +13,7 @@ trait Anon_Ramda extends js.Object {
 object Anon_Ramda {
   @scala.inline
   def apply(tail: js.Array[_], ramda: js.Function0[scala.Unit] = null): Anon_Ramda = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tail")(tail)
+    val __obj = js.Dynamic.literal(tail = tail)
     if (ramda != null) __obj.updateDynamic("ramda")(ramda)
     __obj.asInstanceOf[Anon_Ramda]
   }

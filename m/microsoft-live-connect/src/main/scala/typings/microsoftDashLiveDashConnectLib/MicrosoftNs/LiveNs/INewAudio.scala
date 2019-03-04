@@ -50,8 +50,7 @@ object INewAudio {
     genre: java.lang.String = null,
     title: java.lang.String = null
   ): INewAudio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (album != null) __obj.updateDynamic("album")(album)
     if (album_artist != null) __obj.updateDynamic("album_artist")(album_artist)
     if (artist != null) __obj.updateDynamic("artist")(artist)

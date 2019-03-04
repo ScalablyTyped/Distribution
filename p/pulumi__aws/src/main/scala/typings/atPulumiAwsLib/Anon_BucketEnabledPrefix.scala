@@ -18,8 +18,7 @@ object Anon_BucketEnabledPrefix {
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_BucketEnabledPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BucketEnabledPrefix]

@@ -20,9 +20,7 @@ object ButtonInformation {
     title: java.lang.String,
     buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): ButtonInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(icon = icon, title = title)
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonInformation]
   }

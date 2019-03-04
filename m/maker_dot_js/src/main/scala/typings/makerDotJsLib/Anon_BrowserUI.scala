@@ -20,11 +20,8 @@ object Anon_BrowserUI {
     Unknown: java.lang.String,
     WebWorker: java.lang.String
   ): Anon_BrowserUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BrowserUI")(BrowserUI)
-    __obj.updateDynamic("NodeJs")(NodeJs)
-    __obj.updateDynamic("Unknown")(Unknown)
-    __obj.updateDynamic("WebWorker")(WebWorker)
+    val __obj = js.Dynamic.literal(BrowserUI = BrowserUI, NodeJs = NodeJs, Unknown = Unknown, WebWorker = WebWorker)
+  
     __obj.asInstanceOf[Anon_BrowserUI]
   }
 }

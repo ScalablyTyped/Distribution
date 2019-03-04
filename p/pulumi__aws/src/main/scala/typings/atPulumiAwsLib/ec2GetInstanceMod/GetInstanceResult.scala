@@ -169,39 +169,8 @@ object GetInstanceResult {
     userData: java.lang.String,
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetInstanceResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ami")(ami)
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("creditSpecifications")(creditSpecifications)
-    __obj.updateDynamic("disableApiTermination")(disableApiTermination)
-    __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices)
-    __obj.updateDynamic("ebsOptimized")(ebsOptimized)
-    __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices)
-    __obj.updateDynamic("hostId")(hostId)
-    __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instanceState")(instanceState)
-    __obj.updateDynamic("instanceTags")(instanceTags)
-    __obj.updateDynamic("instanceType")(instanceType)
-    __obj.updateDynamic("keyName")(keyName)
-    __obj.updateDynamic("monitoring")(monitoring)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("passwordData")(passwordData)
-    __obj.updateDynamic("placementGroup")(placementGroup)
-    __obj.updateDynamic("privateDns")(privateDns)
-    __obj.updateDynamic("privateIp")(privateIp)
-    __obj.updateDynamic("publicDns")(publicDns)
-    __obj.updateDynamic("publicIp")(publicIp)
-    __obj.updateDynamic("rootBlockDevices")(rootBlockDevices)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("sourceDestCheck")(sourceDestCheck)
-    __obj.updateDynamic("subnetId")(subnetId)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("tenancy")(tenancy)
-    __obj.updateDynamic("userData")(userData)
-    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(ami = ami, arn = arn, associatePublicIpAddress = associatePublicIpAddress, availabilityZone = availabilityZone, creditSpecifications = creditSpecifications, disableApiTermination = disableApiTermination, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, ephemeralBlockDevices = ephemeralBlockDevices, hostId = hostId, iamInstanceProfile = iamInstanceProfile, id = id, instanceState = instanceState, instanceTags = instanceTags, instanceType = instanceType, keyName = keyName, monitoring = monitoring, networkInterfaceId = networkInterfaceId, passwordData = passwordData, placementGroup = placementGroup, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, sourceDestCheck = sourceDestCheck, subnetId = subnetId, tags = tags, tenancy = tenancy, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
     __obj.asInstanceOf[GetInstanceResult]
   }
 }

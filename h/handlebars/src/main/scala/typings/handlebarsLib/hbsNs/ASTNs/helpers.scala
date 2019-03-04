@@ -18,10 +18,8 @@ object helpers {
     scopeId: js.Function1[PathExpression, scala.Boolean],
     simpleId: js.Function1[PathExpression, scala.Boolean]
   ): helpers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("helperExpression")(helperExpression)
-    __obj.updateDynamic("scopeId")(scopeId)
-    __obj.updateDynamic("simpleId")(simpleId)
+    val __obj = js.Dynamic.literal(helperExpression = helperExpression, scopeId = scopeId, simpleId = simpleId)
+  
     __obj.asInstanceOf[helpers]
   }
 }

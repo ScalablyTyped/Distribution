@@ -13,8 +13,8 @@ trait IPreloadContentDescriptor extends js.Object {
 object IPreloadContentDescriptor {
   @scala.inline
   def apply(content: java.lang.String, `type`: java.lang.String): IPreloadContentDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPreloadContentDescriptor]
   }
 }

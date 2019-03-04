@@ -27,9 +27,8 @@ object IfStatement {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): IfStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("consequent")(consequent)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(consequent = consequent, test = test)
+    __obj.updateDynamic("type")(`type`)
     if (alternate != null) __obj.updateDynamic("alternate")(alternate)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

@@ -29,11 +29,8 @@ object XLayer {
     readData: js.Function1[XLayerHandler, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readData")(readData)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readData = readData, release = release)
+  
     __obj.asInstanceOf[XLayer]
   }
 }

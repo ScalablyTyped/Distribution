@@ -22,12 +22,8 @@ object PinState {
     supportedModes: js.Array[scala.Double],
     value: scala.Double
   ): PinState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analogChannel")(analogChannel)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("supportedModes")(supportedModes)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(analogChannel = analogChannel, mode = mode, report = report, supportedModes = supportedModes, value = value)
+  
     __obj.asInstanceOf[PinState]
   }
 }

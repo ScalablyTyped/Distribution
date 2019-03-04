@@ -16,8 +16,8 @@ object Anon_Targets {
     targets: js.Array[scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.Client],
     `type`: java.lang.String
   ): Anon_Targets = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("targets")(targets)
+    val __obj = js.Dynamic.literal(targets = targets)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Targets]
   }
 }

@@ -40,21 +40,8 @@ object Anon_CheckHasPositionalTracking {
     isTablet: js.Function0[scala.Boolean],
     isWebXRAvailable: scala.Boolean
   ): Anon_CheckHasPositionalTracking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PolyfillControls")(PolyfillControls)
-    __obj.updateDynamic("checkHasPositionalTracking")(checkHasPositionalTracking)
-    __obj.updateDynamic("checkHeadsetConnected")(checkHeadsetConnected)
-    __obj.updateDynamic("getVRDisplay")(getVRDisplay)
-    __obj.updateDynamic("isBrowserEnvironment")(isBrowserEnvironment)
-    __obj.updateDynamic("isGearVR")(isGearVR)
-    __obj.updateDynamic("isIOS")(isIOS)
-    __obj.updateDynamic("isLandscape")(isLandscape)
-    __obj.updateDynamic("isMobile")(isMobile)
-    __obj.updateDynamic("isNodeEnvironment")(isNodeEnvironment)
-    __obj.updateDynamic("isOculusGo")(isOculusGo)
-    __obj.updateDynamic("isR7")(isR7)
-    __obj.updateDynamic("isTablet")(isTablet)
-    __obj.updateDynamic("isWebXRAvailable")(isWebXRAvailable)
+    val __obj = js.Dynamic.literal(PolyfillControls = PolyfillControls, checkHasPositionalTracking = checkHasPositionalTracking, checkHeadsetConnected = checkHeadsetConnected, getVRDisplay = getVRDisplay, isBrowserEnvironment = isBrowserEnvironment, isGearVR = isGearVR, isIOS = isIOS, isLandscape = isLandscape, isMobile = isMobile, isNodeEnvironment = isNodeEnvironment, isOculusGo = isOculusGo, isR7 = isR7, isTablet = isTablet, isWebXRAvailable = isWebXRAvailable)
+  
     __obj.asInstanceOf[Anon_CheckHasPositionalTracking]
   }
 }

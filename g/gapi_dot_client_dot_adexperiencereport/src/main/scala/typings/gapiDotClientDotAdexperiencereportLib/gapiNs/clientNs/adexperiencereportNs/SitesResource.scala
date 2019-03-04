@@ -18,8 +18,8 @@ object SitesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SiteSummaryResponse]
     ]
   ): SitesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[SitesResource]
   }
 }

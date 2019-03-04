@@ -18,10 +18,8 @@ object Service {
     getUrl: js.Function0[java.lang.String],
     isEnabled: js.Function0[scala.Boolean]
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("getUrl")(getUrl)
-    __obj.updateDynamic("isEnabled")(isEnabled)
+    val __obj = js.Dynamic.literal(disable = disable, getUrl = getUrl, isEnabled = isEnabled)
+  
     __obj.asInstanceOf[Service]
   }
 }

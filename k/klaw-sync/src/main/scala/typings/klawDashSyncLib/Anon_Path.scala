@@ -16,9 +16,8 @@ object Anon_Path {
     readdirSync: js.Function1[java.lang.String, js.Array[java.lang.String]],
     statSync: js.Function1[java.lang.String, nodeLib.fsMod.Stats]
   ): Anon_Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readdirSync")(readdirSync)
-    __obj.updateDynamic("statSync")(statSync)
+    val __obj = js.Dynamic.literal(readdirSync = readdirSync, statSync = statSync)
+  
     __obj.asInstanceOf[Anon_Path]
   }
 }

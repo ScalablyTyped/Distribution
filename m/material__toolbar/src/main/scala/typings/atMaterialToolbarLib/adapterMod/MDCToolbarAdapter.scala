@@ -44,23 +44,8 @@ object MDCToolbarAdapter {
     setStyleForFlexibleRowElement: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setStyleForTitleElement: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): MDCToolbarAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterResizeHandler")(deregisterResizeHandler)
-    __obj.updateDynamic("deregisterScrollHandler")(deregisterScrollHandler)
-    __obj.updateDynamic("getFirstRowElementOffsetHeight")(getFirstRowElementOffsetHeight)
-    __obj.updateDynamic("getOffsetHeight")(getOffsetHeight)
-    __obj.updateDynamic("getViewportScrollY")(getViewportScrollY)
-    __obj.updateDynamic("getViewportWidth")(getViewportWidth)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("notifyChange")(notifyChange)
-    __obj.updateDynamic("registerResizeHandler")(registerResizeHandler)
-    __obj.updateDynamic("registerScrollHandler")(registerScrollHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setStyle")(setStyle)
-    __obj.updateDynamic("setStyleForFixedAdjustElement")(setStyleForFixedAdjustElement)
-    __obj.updateDynamic("setStyleForFlexibleRowElement")(setStyleForFlexibleRowElement)
-    __obj.updateDynamic("setStyleForTitleElement")(setStyleForTitleElement)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterResizeHandler = deregisterResizeHandler, deregisterScrollHandler = deregisterScrollHandler, getFirstRowElementOffsetHeight = getFirstRowElementOffsetHeight, getOffsetHeight = getOffsetHeight, getViewportScrollY = getViewportScrollY, getViewportWidth = getViewportWidth, hasClass = hasClass, notifyChange = notifyChange, registerResizeHandler = registerResizeHandler, registerScrollHandler = registerScrollHandler, removeClass = removeClass, setStyle = setStyle, setStyleForFixedAdjustElement = setStyleForFixedAdjustElement, setStyleForFlexibleRowElement = setStyleForFlexibleRowElement, setStyleForTitleElement = setStyleForTitleElement)
+  
     __obj.asInstanceOf[MDCToolbarAdapter]
   }
 }

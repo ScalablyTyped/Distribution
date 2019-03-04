@@ -18,15 +18,15 @@ class CartesianProduct protected ()
   /**
     * @hidden
     */
-  var `digits_`: js.Any = js.native
+  var digits_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `dividers_`: js.Any = js.native
+  var dividers_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * Get index'th case.
     *

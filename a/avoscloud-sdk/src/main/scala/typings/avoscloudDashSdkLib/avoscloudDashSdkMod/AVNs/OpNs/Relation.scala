@@ -18,10 +18,8 @@ object Relation {
     removed: js.Array[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object],
     toJSON: js.Function0[js.Any]
   ): Relation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(added = added, removed = removed, toJSON = toJSON)
+  
     __obj.asInstanceOf[Relation]
   }
 }

@@ -18,12 +18,8 @@ object PlacementBuilder {
     withCpm: js.Function1[scala.Double, PlacementBuilder[Placement]],
     withUrl: js.Function1[java.lang.String, PlacementBuilder[Placement]]
   ): PlacementBuilder[Placement] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("withCpc")(withCpc)
-    __obj.updateDynamic("withCpm")(withCpm)
-    __obj.updateDynamic("withUrl")(withUrl)
+    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm, withUrl = withUrl)
+  
     __obj.asInstanceOf[PlacementBuilder[Placement]]
   }
 }

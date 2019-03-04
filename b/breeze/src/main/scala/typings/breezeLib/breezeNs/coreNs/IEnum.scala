@@ -20,11 +20,8 @@ object IEnum {
     getNames: js.Function0[js.Array[java.lang.String]],
     getSymbols: js.Function0[js.Array[EnumSymbol]]
   ): IEnum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("fromName")(fromName)
-    __obj.updateDynamic("getNames")(getNames)
-    __obj.updateDynamic("getSymbols")(getSymbols)
+    val __obj = js.Dynamic.literal(contains = contains, fromName = fromName, getNames = getNames, getSymbols = getSymbols)
+  
     __obj.asInstanceOf[IEnum]
   }
 }

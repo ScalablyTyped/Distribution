@@ -79,14 +79,8 @@ object ScaleDependentIcons {
     normalizationField: java.lang.String = null,
     valueExpression: java.lang.String = null
   ): ScaleDependentIcons = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("maxDataValue")(maxDataValue)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("minDataValue")(minDataValue)
-    __obj.updateDynamic("minSize")(minSize)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxDataValue = maxDataValue, maxSize = maxSize, minDataValue = minDataValue, minSize = minSize, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (field != null) __obj.updateDynamic("field")(field)
     if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField)

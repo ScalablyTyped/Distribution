@@ -16,9 +16,8 @@ object TaskStatus {
     pendingTask: scala.Boolean,
     status: algoliasearchLib.algoliasearchLibStrings.published | algoliasearchLib.algoliasearchLibStrings.notPublished
   ): TaskStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pendingTask")(pendingTask)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pendingTask = pendingTask, status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TaskStatus]
   }
 }

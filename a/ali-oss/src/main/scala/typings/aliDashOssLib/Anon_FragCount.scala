@@ -20,11 +20,8 @@ object Anon_FragCount {
     PlaylistName: java.lang.String,
     Type: java.lang.String
   ): Anon_FragCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FragCount")(FragCount)
-    __obj.updateDynamic("FragDuration")(FragDuration)
-    __obj.updateDynamic("PlaylistName")(PlaylistName)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(FragCount = FragCount, FragDuration = FragDuration, PlaylistName = PlaylistName, Type = Type)
+  
     __obj.asInstanceOf[Anon_FragCount]
   }
 }

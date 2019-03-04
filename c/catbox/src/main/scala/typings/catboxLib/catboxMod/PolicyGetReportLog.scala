@@ -27,11 +27,7 @@ object PolicyGetReportLog {
     ttl: scala.Double,
     error: stdLib.Error = null
   ): PolicyGetReportLog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isStale")(isStale)
-    __obj.updateDynamic("msec")(msec)
-    __obj.updateDynamic("stored")(stored)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(isStale = isStale, msec = msec, stored = stored, ttl = ttl)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[PolicyGetReportLog]
   }

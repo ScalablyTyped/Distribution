@@ -13,9 +13,8 @@ trait DosDateTime extends js.Object {
 object DosDateTime {
   @scala.inline
   def apply(date: scala.Double, time: scala.Double): DosDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(date = date, time = time)
+  
     __obj.asInstanceOf[DosDateTime]
   }
 }

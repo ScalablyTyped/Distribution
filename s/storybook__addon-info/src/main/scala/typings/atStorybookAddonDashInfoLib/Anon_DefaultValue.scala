@@ -23,12 +23,8 @@ object Anon_DefaultValue {
     property: java.lang.String,
     required: scala.Boolean
   ): Anon_DefaultValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("propType")(propType.asInstanceOf[js.Any])
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, description = description, propType = propType.asInstanceOf[js.Any], property = property, required = required)
+  
     __obj.asInstanceOf[Anon_DefaultValue]
   }
 }

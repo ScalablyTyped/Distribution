@@ -30,16 +30,8 @@ object Anon_Haspin {
     signer_name: java.lang.String,
     status_code: java.lang.String
   ): Anon_Haspin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has_pin")(has_pin)
-    __obj.updateDynamic("last_reminded_at")(last_reminded_at)
-    __obj.updateDynamic("last_viewed_at")(last_viewed_at)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("signature_id")(signature_id)
-    __obj.updateDynamic("signed_at")(signed_at)
-    __obj.updateDynamic("signer_email_address")(signer_email_address)
-    __obj.updateDynamic("signer_name")(signer_name)
-    __obj.updateDynamic("status_code")(status_code)
+    val __obj = js.Dynamic.literal(has_pin = has_pin, last_reminded_at = last_reminded_at, last_viewed_at = last_viewed_at, order = order, signature_id = signature_id, signed_at = signed_at, signer_email_address = signer_email_address, signer_name = signer_name, status_code = status_code)
+  
     __obj.asInstanceOf[Anon_Haspin]
   }
 }

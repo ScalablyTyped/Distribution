@@ -34,18 +34,8 @@ object SystemModule {
     stdin: Std,
     stdout: Std
   ): SystemModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("standarderr")(standarderr)
-    __obj.updateDynamic("standardin")(standardin)
-    __obj.updateDynamic("standardout")(standardout)
-    __obj.updateDynamic("stderr")(stderr)
-    __obj.updateDynamic("stdin")(stdin)
-    __obj.updateDynamic("stdout")(stdout)
+    val __obj = js.Dynamic.literal(args = args, env = env, os = os, pid = pid, platform = platform, standarderr = standarderr, standardin = standardin, standardout = standardout, stderr = stderr, stdin = stdin, stdout = stdout)
+  
     __obj.asInstanceOf[SystemModule]
   }
 }

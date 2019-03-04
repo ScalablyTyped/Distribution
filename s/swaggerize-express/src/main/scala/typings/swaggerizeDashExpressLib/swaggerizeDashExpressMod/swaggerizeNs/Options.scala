@@ -18,10 +18,8 @@ object Options {
     docspath: java.lang.String,
     handlers: java.lang.String | RouteSegment
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("docspath")(docspath)
-    __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(api = api, docspath = docspath, handlers = handlers.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Options]
   }
 }

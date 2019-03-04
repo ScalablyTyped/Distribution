@@ -42,22 +42,8 @@ object Anon_AlignXAlignY {
     selfAlignX: propDashTypesLib.propDashTypesMod.Requireable[_],
     selfAlignY: propDashTypesLib.propDashTypesMod.Requireable[_]
   ): Anon_AlignXAlignY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignX")(alignX)
-    __obj.updateDynamic("alignY")(alignY)
-    __obj.updateDynamic("centerAlign")(centerAlign)
-    __obj.updateDynamic("flexChild")(flexChild)
-    __obj.updateDynamic("flexContainer")(flexContainer)
-    __obj.updateDynamic("flexDirCol")(flexDirCol)
-    __obj.updateDynamic("flexDirColRev")(flexDirColRev)
-    __obj.updateDynamic("flexDirRow")(flexDirRow)
-    __obj.updateDynamic("flexDirRowRev")(flexDirRowRev)
-    __obj.updateDynamic("flexOrder")(flexOrder)
-    __obj.updateDynamic("flexOrderLarge")(flexOrderLarge)
-    __obj.updateDynamic("flexOrderMedium")(flexOrderMedium)
-    __obj.updateDynamic("flexOrderSmall")(flexOrderSmall)
-    __obj.updateDynamic("selfAlignX")(selfAlignX)
-    __obj.updateDynamic("selfAlignY")(selfAlignY)
+    val __obj = js.Dynamic.literal(alignX = alignX, alignY = alignY, centerAlign = centerAlign, flexChild = flexChild, flexContainer = flexContainer, flexDirCol = flexDirCol, flexDirColRev = flexDirColRev, flexDirRow = flexDirRow, flexDirRowRev = flexDirRowRev, flexOrder = flexOrder, flexOrderLarge = flexOrderLarge, flexOrderMedium = flexOrderMedium, flexOrderSmall = flexOrderSmall, selfAlignX = selfAlignX, selfAlignY = selfAlignY)
+  
     __obj.asInstanceOf[Anon_AlignXAlignY]
   }
 }

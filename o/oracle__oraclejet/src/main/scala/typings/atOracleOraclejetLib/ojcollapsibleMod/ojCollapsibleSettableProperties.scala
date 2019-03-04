@@ -20,10 +20,7 @@ object ojCollapsibleSettableProperties {
     expanded: scala.Boolean,
     translations: js.Object = null
   ): ojCollapsibleSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("expandArea")(expandArea.asInstanceOf[js.Any])
-    __obj.updateDynamic("expanded")(expanded)
+    val __obj = js.Dynamic.literal(disabled = disabled, expandArea = expandArea.asInstanceOf[js.Any], expanded = expanded)
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojCollapsibleSettableProperties]
   }

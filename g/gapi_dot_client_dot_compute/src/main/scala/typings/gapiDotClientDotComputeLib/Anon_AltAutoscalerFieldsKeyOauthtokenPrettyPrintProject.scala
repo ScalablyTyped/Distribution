@@ -57,9 +57,7 @@ object Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(project = project, region = region)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (autoscaler != null) __obj.updateDynamic("autoscaler")(autoscaler)
     if (fields != null) __obj.updateDynamic("fields")(fields)

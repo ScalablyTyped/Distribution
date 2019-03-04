@@ -30,9 +30,7 @@ object ImageVectorOptions {
     resolutions: js.Array[scala.Double] = null,
     style: openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction = null
   ): ImageVectorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any], source = source)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
     if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])

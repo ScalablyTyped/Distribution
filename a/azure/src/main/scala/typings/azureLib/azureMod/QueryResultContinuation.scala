@@ -12,8 +12,8 @@ trait QueryResultContinuation extends js.Object {
 object QueryResultContinuation {
   @scala.inline
   def apply(tableService: TableService): QueryResultContinuation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tableService")(tableService)
+    val __obj = js.Dynamic.literal(tableService = tableService)
+  
     __obj.asInstanceOf[QueryResultContinuation]
   }
 }

@@ -12,8 +12,8 @@ trait ComposeActionResponse extends js.Object {
 object ComposeActionResponse {
   @scala.inline
   def apply(printJson: js.Function0[java.lang.String]): ComposeActionResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson)
+    val __obj = js.Dynamic.literal(printJson = printJson)
+  
     __obj.asInstanceOf[ComposeActionResponse]
   }
 }

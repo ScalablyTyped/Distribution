@@ -13,8 +13,8 @@ trait IGridResizeColumnsApi extends js.Object {
 object IGridResizeColumnsApi {
   @scala.inline
   def apply(on: uiDashGridLib.Anon_ColumnSizeChanged): IGridResizeColumnsApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(on = on)
+  
     __obj.asInstanceOf[IGridResizeColumnsApi]
   }
 }

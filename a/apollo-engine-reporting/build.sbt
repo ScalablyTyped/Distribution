@@ -1,34 +1,34 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting"
-version := "1.0.7-f7388c"
+version := "1.0.7-deea36"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-9d7ec9",
-  "org.scalablytyped" %%% "apollo-graphql" % "0.1.1-759eb5",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-c8d360",
-  "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-a574cf",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-f9010a",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-f3a537",
-  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190212Z-d37718",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-9f7187",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-da59e9",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-439a87",
-  "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-11ba80",
-  "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-194d25",
-  "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-fcd7c0",
-  "org.scalablytyped" %%% "protobufjs__eventemitter" % "1.1.0-5309c0",
-  "org.scalablytyped" %%% "protobufjs__fetch" % "1.1.0-22d711",
-  "org.scalablytyped" %%% "protobufjs__float" % "1.0.2-b6fcaa",
-  "org.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-dcfcdb",
-  "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-7a72e9",
-  "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-a1c1c6",
-  "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-a2b675",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388",
-  "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180214Z-31fee9")
+  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-32bfe0",
+  "org.scalablytyped" %%% "apollo-graphql" % "0.1.1-91cfc5",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-f08fa1",
+  "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-264097",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-a00511",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
+  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190212Z-b3db39",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-d4ffb6",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-0943d0",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-c3e68e",
+  "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-a03f5d",
+  "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-86ab76",
+  "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-86ed03",
+  "org.scalablytyped" %%% "protobufjs__eventemitter" % "1.1.0-04aaa9",
+  "org.scalablytyped" %%% "protobufjs__fetch" % "1.1.0-a2cc95",
+  "org.scalablytyped" %%% "protobufjs__float" % "1.0.2-4b38c0",
+  "org.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-f020d2",
+  "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-ae7ee1",
+  "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-f0cb50",
+  "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-225760",
+  "org.scalablytyped" %%% "std" % "3.3-05be79",
+  "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180214Z-121af0")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

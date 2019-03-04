@@ -14,10 +14,8 @@ trait IOrientationSensorReading extends js.Object {
 object IOrientationSensorReading {
   @scala.inline
   def apply(quaternion: SensorQuaternion, rotationMatrix: SensorRotationMatrix, timestamp: stdLib.Date): IOrientationSensorReading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quaternion")(quaternion)
-    __obj.updateDynamic("rotationMatrix")(rotationMatrix)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(quaternion = quaternion, rotationMatrix = rotationMatrix, timestamp = timestamp)
+  
     __obj.asInstanceOf[IOrientationSensorReading]
   }
 }

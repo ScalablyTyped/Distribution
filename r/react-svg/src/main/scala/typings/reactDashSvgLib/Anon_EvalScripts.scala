@@ -26,14 +26,8 @@ object Anon_EvalScripts {
     svgClassName: scala.Null,
     wrapper: java.lang.String
   ): Anon_EvalScripts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evalScripts")(evalScripts)
-    __obj.updateDynamic("fallback")(fallback)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("onInjected")(onInjected)
-    __obj.updateDynamic("renumerateIRIElements")(renumerateIRIElements)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("wrapper")(wrapper)
+    val __obj = js.Dynamic.literal(evalScripts = evalScripts, fallback = fallback, loading = loading, onInjected = onInjected, renumerateIRIElements = renumerateIRIElements, svgClassName = svgClassName, wrapper = wrapper)
+  
     __obj.asInstanceOf[Anon_EvalScripts]
   }
 }

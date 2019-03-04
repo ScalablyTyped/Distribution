@@ -29,8 +29,7 @@ object IBoundingHex {
     `type`: java.lang.String = null,
     units: java.lang.String = null
   ): IBoundingHex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(radius = radius)
     if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (models != null) __obj.updateDynamic("models")(models)

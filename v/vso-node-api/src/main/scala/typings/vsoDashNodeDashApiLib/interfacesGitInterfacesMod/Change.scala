@@ -37,12 +37,8 @@ object Change {
     sourceServerItem: java.lang.String,
     url: java.lang.String
   ): Change[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("newContent")(newContent)
-    __obj.updateDynamic("sourceServerItem")(sourceServerItem)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(changeType = changeType, item = item.asInstanceOf[js.Any], newContent = newContent, sourceServerItem = sourceServerItem, url = url)
+  
     __obj.asInstanceOf[Change[T]]
   }
 }

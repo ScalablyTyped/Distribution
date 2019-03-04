@@ -21,11 +21,8 @@ object IChangeKey {
     Release: js.Function0[scala.Unit],
     Reserve: js.Function0[scala.Unit]
   ): IChangeKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CompareTo")(CompareTo)
-    __obj.updateDynamic("GetVersionNumber")(GetVersionNumber)
-    __obj.updateDynamic("Release")(Release)
-    __obj.updateDynamic("Reserve")(Reserve)
+    val __obj = js.Dynamic.literal(CompareTo = CompareTo, GetVersionNumber = GetVersionNumber, Release = Release, Reserve = Reserve)
+  
     __obj.asInstanceOf[IChangeKey]
   }
 }

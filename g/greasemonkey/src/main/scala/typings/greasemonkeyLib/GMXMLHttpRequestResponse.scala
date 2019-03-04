@@ -30,14 +30,8 @@ object GMXMLHttpRequestResponse {
     status: scala.Double,
     statusText: java.lang.String
   ): GMXMLHttpRequestResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("finalUrl")(finalUrl)
-    __obj.updateDynamic("readyState")(readyState)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("responseText")(responseText)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(context = context, finalUrl = finalUrl, readyState = readyState, responseHeaders = responseHeaders, responseText = responseText, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[GMXMLHttpRequestResponse]
   }
 }

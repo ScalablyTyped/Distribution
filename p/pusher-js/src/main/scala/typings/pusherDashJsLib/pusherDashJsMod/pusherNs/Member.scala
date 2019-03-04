@@ -13,9 +13,8 @@ trait Member[T] extends js.Object {
 object Member {
   @scala.inline
   def apply[T](id: java.lang.String, info: T): Member[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, info = info.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Member[T]]
   }
 }

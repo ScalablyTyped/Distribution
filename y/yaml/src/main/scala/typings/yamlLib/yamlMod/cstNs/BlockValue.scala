@@ -39,14 +39,8 @@ object BlockValue {
     value: java.lang.String = null,
     valueRange: Range = null
   ): BlockValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("chomping")(chomping.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(chomping = chomping.asInstanceOf[js.Any], hasComment = hasComment, hasProps = hasProps, header = header, jsonLike = jsonLike, props = props, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (blockIndent != null) __obj.updateDynamic("blockIndent")(blockIndent.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment)

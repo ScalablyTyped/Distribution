@@ -214,10 +214,7 @@ object TestScript {
     variable: js.Array[TestScriptVariable] = null,
     version: java.lang.String = null
   ): TestScript = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(name = name, status = status, url = url)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_description != null) __obj.updateDynamic("_description")(_description)

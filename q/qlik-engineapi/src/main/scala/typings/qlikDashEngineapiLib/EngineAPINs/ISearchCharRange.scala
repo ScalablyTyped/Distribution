@@ -26,10 +26,8 @@ trait ISearchCharRange extends js.Object {
 object ISearchCharRange {
   @scala.inline
   def apply(qCharCount: scala.Double, qCharPos: scala.Double, qTerm: scala.Double): ISearchCharRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCharCount")(qCharCount)
-    __obj.updateDynamic("qCharPos")(qCharPos)
-    __obj.updateDynamic("qTerm")(qTerm)
+    val __obj = js.Dynamic.literal(qCharCount = qCharCount, qCharPos = qCharPos, qTerm = qTerm)
+  
     __obj.asInstanceOf[ISearchCharRange]
   }
 }

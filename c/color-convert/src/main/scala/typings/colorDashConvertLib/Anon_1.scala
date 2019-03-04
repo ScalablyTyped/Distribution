@@ -18,10 +18,8 @@ object Anon_1 {
     labels: js.Array[colorDashConvertLib.colorDashConvertLibStrings.hex],
     rgb: js.Function1[colorDashConvertLib.conversionsMod.HEX, colorDashConvertLib.conversionsMod.RGB]
   ): Anon_1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = rgb)
+  
     __obj.asInstanceOf[Anon_1]
   }
 }

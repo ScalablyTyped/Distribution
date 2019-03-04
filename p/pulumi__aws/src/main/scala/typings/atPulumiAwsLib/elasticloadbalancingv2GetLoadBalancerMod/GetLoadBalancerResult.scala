@@ -47,23 +47,8 @@ object GetLoadBalancerResult {
     vpcId: java.lang.String,
     zoneId: java.lang.String
   ): GetLoadBalancerResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessLogs")(accessLogs)
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("arnSuffix")(arnSuffix)
-    __obj.updateDynamic("dnsName")(dnsName)
-    __obj.updateDynamic("enableDeletionProtection")(enableDeletionProtection)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("idleTimeout")(idleTimeout)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("loadBalancerType")(loadBalancerType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("subnetMappings")(subnetMappings)
-    __obj.updateDynamic("subnets")(subnets)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
-    __obj.updateDynamic("zoneId")(zoneId)
+    val __obj = js.Dynamic.literal(accessLogs = accessLogs, arn = arn, arnSuffix = arnSuffix, dnsName = dnsName, enableDeletionProtection = enableDeletionProtection, id = id, idleTimeout = idleTimeout, internal = internal, loadBalancerType = loadBalancerType, name = name, securityGroups = securityGroups, subnetMappings = subnetMappings, subnets = subnets, tags = tags, vpcId = vpcId, zoneId = zoneId)
+  
     __obj.asInstanceOf[GetLoadBalancerResult]
   }
 }

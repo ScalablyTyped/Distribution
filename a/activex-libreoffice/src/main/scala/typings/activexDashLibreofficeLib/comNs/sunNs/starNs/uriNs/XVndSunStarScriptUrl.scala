@@ -73,16 +73,8 @@ object XVndSunStarScriptUrl {
     setName: js.Function1[java.lang.String, scala.Unit],
     setParameter: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XVndSunStarScriptUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParameter")(getParameter)
-    __obj.updateDynamic("hasParameter")(hasParameter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParameter")(setParameter)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, getName = getName, getParameter = getParameter, hasParameter = hasParameter, queryInterface = queryInterface, release = release, setName = setName, setParameter = setParameter)
+  
     __obj.asInstanceOf[XVndSunStarScriptUrl]
   }
 }

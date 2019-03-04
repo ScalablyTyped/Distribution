@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(allowHttp: scala.Boolean): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowHttp")(allowHttp)
+    val __obj = js.Dynamic.literal(allowHttp = allowHttp)
+  
     __obj.asInstanceOf[Options]
   }
 }

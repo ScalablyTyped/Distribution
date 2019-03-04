@@ -50,12 +50,8 @@ object XTextPortionAppend {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextPortionAppend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendTextPortion")(appendTextPortion)
-    __obj.updateDynamic("insertTextPortion")(insertTextPortion)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, appendTextPortion = appendTextPortion, insertTextPortion = insertTextPortion, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextPortionAppend]
   }
 }

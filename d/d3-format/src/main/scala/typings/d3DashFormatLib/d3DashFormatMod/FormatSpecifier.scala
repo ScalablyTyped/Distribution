@@ -103,15 +103,8 @@ object FormatSpecifier {
     precision: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): FormatSpecifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    __obj.updateDynamic("comma")(comma)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
-    __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("trim")(trim)
-    __obj.updateDynamic("zero")(zero)
+    val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], comma = comma, fill = fill, sign = sign.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], toString = toString, trim = trim, zero = zero)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatSpecifier]

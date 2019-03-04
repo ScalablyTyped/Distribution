@@ -20,9 +20,7 @@ object LogRecordOptions {
     meta: js.Any = null,
     tags: js.Array[java.lang.String] = null
   ): LogRecordOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(level = level, msg = msg)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[LogRecordOptions]

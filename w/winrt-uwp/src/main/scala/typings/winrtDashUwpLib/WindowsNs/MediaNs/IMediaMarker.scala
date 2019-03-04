@@ -18,10 +18,8 @@ trait IMediaMarker extends js.Object {
 object IMediaMarker {
   @scala.inline
   def apply(mediaMarkerType: java.lang.String, text: java.lang.String, time: scala.Double): IMediaMarker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mediaMarkerType")(mediaMarkerType)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(mediaMarkerType = mediaMarkerType, text = text, time = time)
+  
     __obj.asInstanceOf[IMediaMarker]
   }
 }

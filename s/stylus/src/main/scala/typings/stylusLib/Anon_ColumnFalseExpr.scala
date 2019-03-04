@@ -26,14 +26,8 @@ object Anon_ColumnFalseExpr {
     op: java.lang.String,
     trueExpr: stylusLib.stylusMod.StylusNs.NodesNs.Expression
   ): Anon_ColumnFalseExpr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("falseExpr")(falseExpr)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("trueExpr")(trueExpr)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, falseExpr = falseExpr, filename = filename, lineno = lineno, op = op, trueExpr = trueExpr)
+  
     __obj.asInstanceOf[Anon_ColumnFalseExpr]
   }
 }

@@ -26,8 +26,7 @@ trait ResolveParams extends js.Object {
 object ResolveParams {
   @scala.inline
   def apply(reference: Reference, bundle: Resource = null, resource: Resource = null): ResolveParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(reference = reference)
     if (bundle != null) __obj.updateDynamic("bundle")(bundle)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[ResolveParams]

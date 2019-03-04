@@ -36,20 +36,8 @@ object ASPxClientMenuCollection {
     RecalculateAll: js.Function0[scala.Unit],
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]
   ): ASPxClientMenuCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("BrowserWindowResized")(BrowserWindowResized)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("ControlsInitialized")(ControlsInitialized)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("ForEachControl")(ForEachControl)
-    __obj.updateDynamic("Get")(Get)
-    __obj.updateDynamic("GetByName")(GetByName)
-    __obj.updateDynamic("GetControlsByPredicate")(GetControlsByPredicate)
-    __obj.updateDynamic("GetControlsByType")(GetControlsByType)
-    __obj.updateDynamic("HideAll")(HideAll)
-    __obj.updateDynamic("RecalculateAll")(RecalculateAll)
-    __obj.updateDynamic("ValidationCompleted")(ValidationCompleted)
+    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, BrowserWindowResized = BrowserWindowResized, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback, ForEachControl = ForEachControl, Get = Get, GetByName = GetByName, GetControlsByPredicate = GetControlsByPredicate, GetControlsByType = GetControlsByType, HideAll = HideAll, RecalculateAll = RecalculateAll, ValidationCompleted = ValidationCompleted)
+  
     __obj.asInstanceOf[ASPxClientMenuCollection]
   }
 }

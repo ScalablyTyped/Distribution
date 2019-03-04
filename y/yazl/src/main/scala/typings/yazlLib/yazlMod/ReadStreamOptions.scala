@@ -18,12 +18,8 @@ object ReadStreamOptions {
     mtime: stdLib.Date,
     size: scala.Double
   ): ReadStreamOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compress")(compress)
-    __obj.updateDynamic("forceZip64Format")(forceZip64Format)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(compress = compress, forceZip64Format = forceZip64Format, mode = mode, mtime = mtime, size = size)
+  
     __obj.asInstanceOf[ReadStreamOptions]
   }
 }

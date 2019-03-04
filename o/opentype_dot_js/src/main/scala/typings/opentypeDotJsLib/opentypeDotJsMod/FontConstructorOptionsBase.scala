@@ -22,12 +22,8 @@ object FontConstructorOptionsBase {
     styleName: java.lang.String,
     unitsPerEm: scala.Double
   ): FontConstructorOptionsBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascender")(ascender)
-    __obj.updateDynamic("descender")(descender)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("styleName")(styleName)
-    __obj.updateDynamic("unitsPerEm")(unitsPerEm)
+    val __obj = js.Dynamic.literal(ascender = ascender, descender = descender, familyName = familyName, styleName = styleName, unitsPerEm = unitsPerEm)
+  
     __obj.asInstanceOf[FontConstructorOptionsBase]
   }
 }

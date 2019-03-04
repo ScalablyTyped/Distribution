@@ -15,10 +15,8 @@ trait HeadObjectResult extends js.Object {
 object HeadObjectResult {
   @scala.inline
   def apply(meta: UserMeta, res: NormalSuccessResponse, status: scala.Double): HeadObjectResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(meta = meta, res = res, status = status)
+  
     __obj.asInstanceOf[HeadObjectResult]
   }
 }

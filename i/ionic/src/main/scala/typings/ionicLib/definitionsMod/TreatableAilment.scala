@@ -20,12 +20,8 @@ object TreatableAilment {
     treatable: scala.Boolean,
     projects: js.Array[ProjectType] = null
   ): TreatableAilment = {
-    val __obj = js.Dynamic.literal(`implicit` = `implicit`)
-    __obj.updateDynamic("detected")(detected)
-    __obj.updateDynamic("getMessage")(getMessage)
-    __obj.updateDynamic("getTreatmentSteps")(getTreatmentSteps)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("treatable")(treatable)
+    val __obj = js.Dynamic.literal(detected = detected, getMessage = getMessage, getTreatmentSteps = getTreatmentSteps, id = id, treatable = treatable)
+    __obj.updateDynamic("implicit")(`implicit`)
     if (projects != null) __obj.updateDynamic("projects")(projects)
     __obj.asInstanceOf[TreatableAilment]
   }

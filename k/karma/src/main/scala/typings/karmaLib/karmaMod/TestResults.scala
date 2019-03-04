@@ -22,12 +22,8 @@ object TestResults {
     failed: scala.Double,
     success: scala.Double
   ): TestResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disconnected")(disconnected)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("exitCode")(exitCode)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(disconnected = disconnected, error = error, exitCode = exitCode, failed = failed, success = success)
+  
     __obj.asInstanceOf[TestResults]
   }
 }

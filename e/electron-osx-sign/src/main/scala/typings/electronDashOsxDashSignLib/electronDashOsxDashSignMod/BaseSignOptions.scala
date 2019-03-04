@@ -20,8 +20,7 @@ object BaseSignOptions {
     keychain: java.lang.String = null,
     platform: java.lang.String = null
   ): BaseSignOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
+    val __obj = js.Dynamic.literal(app = app)
     if (identity != null) __obj.updateDynamic("identity")(identity)
     if (keychain != null) __obj.updateDynamic("keychain")(keychain)
     if (platform != null) __obj.updateDynamic("platform")(platform)

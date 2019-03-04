@@ -22,12 +22,8 @@ object GitRefUpdate {
     oldObjectId: java.lang.String,
     repositoryId: java.lang.String
   ): GitRefUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLocked")(isLocked)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("newObjectId")(newObjectId)
-    __obj.updateDynamic("oldObjectId")(oldObjectId)
-    __obj.updateDynamic("repositoryId")(repositoryId)
+    val __obj = js.Dynamic.literal(isLocked = isLocked, name = name, newObjectId = newObjectId, oldObjectId = oldObjectId, repositoryId = repositoryId)
+  
     __obj.asInstanceOf[GitRefUpdate]
   }
 }

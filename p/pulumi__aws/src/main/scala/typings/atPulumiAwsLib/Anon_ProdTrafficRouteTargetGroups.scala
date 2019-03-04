@@ -18,9 +18,7 @@ object Anon_ProdTrafficRouteTargetGroups {
     targetGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameInputString]]],
     testTrafficRoute: atPulumiPulumiLib.outputMod.Input[Anon_ListenerArnsArray] = null
   ): Anon_ProdTrafficRouteTargetGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prodTrafficRoute")(prodTrafficRoute.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetGroups")(targetGroups.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(prodTrafficRoute = prodTrafficRoute.asInstanceOf[js.Any], targetGroups = targetGroups.asInstanceOf[js.Any])
     if (testTrafficRoute != null) __obj.updateDynamic("testTrafficRoute")(testTrafficRoute.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ProdTrafficRouteTargetGroups]
   }

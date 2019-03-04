@@ -32,8 +32,7 @@ object SessionOptions {
     store: Store | MemoryStore = null,
     unset: java.lang.String = null
   ): SessionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (genid != null) __obj.updateDynamic("genid")(genid)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -19,10 +19,8 @@ trait DocumentInsertResponse extends js.Object {
 object DocumentInsertResponse {
   @scala.inline
   def apply(id: java.lang.String, ok: scala.Boolean, rev: java.lang.String): DocumentInsertResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("rev")(rev)
+    val __obj = js.Dynamic.literal(id = id, ok = ok, rev = rev)
+  
     __obj.asInstanceOf[DocumentInsertResponse]
   }
 }

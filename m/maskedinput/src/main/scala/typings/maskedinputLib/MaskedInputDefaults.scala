@@ -13,9 +13,8 @@ trait MaskedInputDefaults extends js.Object {
 object MaskedInputDefaults {
   @scala.inline
   def apply(aliases: js.Any, definitions: js.Any): MaskedInputDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("definitions")(definitions)
+    val __obj = js.Dynamic.literal(aliases = aliases, definitions = definitions)
+  
     __obj.asInstanceOf[MaskedInputDefaults]
   }
 }

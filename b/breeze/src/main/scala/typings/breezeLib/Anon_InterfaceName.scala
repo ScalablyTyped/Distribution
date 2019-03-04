@@ -13,9 +13,8 @@ trait Anon_InterfaceName extends js.Object {
 object Anon_InterfaceName {
   @scala.inline
   def apply(interfaceName: java.lang.String, isDefault: scala.Boolean): Anon_InterfaceName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interfaceName")(interfaceName)
-    __obj.updateDynamic("isDefault")(isDefault)
+    val __obj = js.Dynamic.literal(interfaceName = interfaceName, isDefault = isDefault)
+  
     __obj.asInstanceOf[Anon_InterfaceName]
   }
 }

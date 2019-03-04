@@ -19,15 +19,15 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @hidden
     */
-  var `begin_`: IteratorT = js.native
+  var begin_ : IteratorT = js.native
   /**
     * @hidden
     */
-  var `end_`: IteratorT = js.native
+  var end_ : IteratorT = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * @hidden
     */

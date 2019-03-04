@@ -24,9 +24,8 @@ object Anon_GetMeshMixin {
       ]
     ]
   ): Anon_GetMeshMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMeshMixin")(getMeshMixin)
-    __obj.updateDynamic("primitives")(primitives)
+    val __obj = js.Dynamic.literal(getMeshMixin = getMeshMixin, primitives = primitives)
+  
     __obj.asInstanceOf[Anon_GetMeshMixin]
   }
 }

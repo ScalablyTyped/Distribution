@@ -20,11 +20,8 @@ object IMetadataCardUnvalidatedValue {
     IsUnvalidated: scala.Boolean,
     Name: java.lang.String
   ): IMetadataCardUnvalidatedValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("IsMultiValue")(IsMultiValue)
-    __obj.updateDynamic("IsUnvalidated")(IsUnvalidated)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(ID = ID, IsMultiValue = IsMultiValue, IsUnvalidated = IsUnvalidated, Name = Name)
+  
     __obj.asInstanceOf[IMetadataCardUnvalidatedValue]
   }
 }

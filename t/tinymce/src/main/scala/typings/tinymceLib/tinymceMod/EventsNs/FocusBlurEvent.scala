@@ -22,15 +22,8 @@ object FocusBlurEvent {
     target: java.lang.String,
     `type`: java.lang.String
   ): FocusBlurEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("blurredEditor")(blurredEditor)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(blurredEditor = blurredEditor, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FocusBlurEvent]
   }
 }

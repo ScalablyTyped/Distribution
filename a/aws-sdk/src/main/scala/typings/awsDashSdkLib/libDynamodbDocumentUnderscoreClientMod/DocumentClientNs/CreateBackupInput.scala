@@ -19,9 +19,8 @@ trait CreateBackupInput extends js.Object {
 object CreateBackupInput {
   @scala.inline
   def apply(BackupName: BackupName, TableName: TableName): CreateBackupInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupName")(BackupName)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(BackupName = BackupName, TableName = TableName)
+  
     __obj.asInstanceOf[CreateBackupInput]
   }
 }

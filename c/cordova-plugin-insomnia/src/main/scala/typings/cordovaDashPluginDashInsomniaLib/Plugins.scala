@@ -12,8 +12,8 @@ trait Plugins extends js.Object {
 object Plugins {
   @scala.inline
   def apply(insomnia: cordovaDashPluginDashInsomniaLib.InsomniaPluginNs.Insomnia): Plugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insomnia")(insomnia)
+    val __obj = js.Dynamic.literal(insomnia = insomnia)
+  
     __obj.asInstanceOf[Plugins]
   }
 }

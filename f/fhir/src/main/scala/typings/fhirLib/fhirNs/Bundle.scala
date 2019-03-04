@@ -66,7 +66,8 @@ object Bundle {
     signature: Signature = null,
     total: js.UndefOr[unsignedInt] = js.undefined
   ): Bundle = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

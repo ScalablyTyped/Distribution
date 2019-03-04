@@ -18,10 +18,8 @@ object IManipulationStartedEventArgs {
     pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
     position: winrtLib.WindowsNs.FoundationNs.Point
   ): IManipulationStartedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cumulative")(cumulative)
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(cumulative = cumulative, pointerDeviceType = pointerDeviceType, position = position)
+  
     __obj.asInstanceOf[IManipulationStartedEventArgs]
   }
 }

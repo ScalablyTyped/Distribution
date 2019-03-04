@@ -50,26 +50,8 @@ object IRowFactory {
     rowHeight: scala.Double,
     selectionProvider: ISelectionProvider
   ): IRowFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UpdateViewableRange")(UpdateViewableRange)
-    __obj.updateDynamic("aggCache")(aggCache)
-    __obj.updateDynamic("buildAggregateRow")(buildAggregateRow)
-    __obj.updateDynamic("buildEntityRow")(buildEntityRow)
-    __obj.updateDynamic("dataChanged")(dataChanged)
-    __obj.updateDynamic("filteredRowsChanged")(filteredRowsChanged)
-    __obj.updateDynamic("fixRowCache")(fixRowCache)
-    __obj.updateDynamic("getGrouping")(getGrouping)
-    __obj.updateDynamic("groupedData")(groupedData)
-    __obj.updateDynamic("numberOfAggregates")(numberOfAggregates)
-    __obj.updateDynamic("parentCache")(parentCache)
-    __obj.updateDynamic("parseGroupData")(parseGroupData)
-    __obj.updateDynamic("parsedData")(parsedData)
-    __obj.updateDynamic("renderedChange")(renderedChange)
-    __obj.updateDynamic("renderedChangeNoGroups")(renderedChangeNoGroups)
-    __obj.updateDynamic("renderedRange")(renderedRange)
-    __obj.updateDynamic("rowConfig")(rowConfig)
-    __obj.updateDynamic("rowHeight")(rowHeight)
-    __obj.updateDynamic("selectionProvider")(selectionProvider)
+    val __obj = js.Dynamic.literal(UpdateViewableRange = UpdateViewableRange, aggCache = aggCache, buildAggregateRow = buildAggregateRow, buildEntityRow = buildEntityRow, dataChanged = dataChanged, filteredRowsChanged = filteredRowsChanged, fixRowCache = fixRowCache, getGrouping = getGrouping, groupedData = groupedData, numberOfAggregates = numberOfAggregates, parentCache = parentCache, parseGroupData = parseGroupData, parsedData = parsedData, renderedChange = renderedChange, renderedChangeNoGroups = renderedChangeNoGroups, renderedRange = renderedRange, rowConfig = rowConfig, rowHeight = rowHeight, selectionProvider = selectionProvider)
+  
     __obj.asInstanceOf[IRowFactory]
   }
 }

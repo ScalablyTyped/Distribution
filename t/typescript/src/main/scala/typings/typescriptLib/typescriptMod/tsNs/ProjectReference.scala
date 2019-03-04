@@ -24,8 +24,7 @@ object ProjectReference {
     originalPath: java.lang.String = null,
     prepend: js.UndefOr[scala.Boolean] = js.undefined
   ): ProjectReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular)
     if (originalPath != null) __obj.updateDynamic("originalPath")(originalPath)
     if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend)

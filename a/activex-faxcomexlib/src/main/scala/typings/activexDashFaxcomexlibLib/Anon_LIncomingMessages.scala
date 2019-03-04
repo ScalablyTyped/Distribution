@@ -22,12 +22,8 @@ object Anon_LIncomingMessages {
     lRoutingMessages: scala.Double,
     pFaxServer: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer
   ): Anon_LIncomingMessages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lIncomingMessages")(lIncomingMessages)
-    __obj.updateDynamic("lOutgoingMessages")(lOutgoingMessages)
-    __obj.updateDynamic("lQueuedMessages")(lQueuedMessages)
-    __obj.updateDynamic("lRoutingMessages")(lRoutingMessages)
-    __obj.updateDynamic("pFaxServer")(pFaxServer)
+    val __obj = js.Dynamic.literal(lIncomingMessages = lIncomingMessages, lOutgoingMessages = lOutgoingMessages, lQueuedMessages = lQueuedMessages, lRoutingMessages = lRoutingMessages, pFaxServer = pFaxServer)
+  
     __obj.asInstanceOf[Anon_LIncomingMessages]
   }
 }

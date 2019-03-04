@@ -17,9 +17,7 @@ trait RateLimiter extends js.Object {
 object RateLimiter {
   @scala.inline
   def apply(duration: scala.Double, max: scala.Double, bounceBack: js.UndefOr[scala.Boolean] = js.undefined): RateLimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(duration = duration, max = max)
     if (!js.isUndefined(bounceBack)) __obj.updateDynamic("bounceBack")(bounceBack)
     __obj.asInstanceOf[RateLimiter]
   }

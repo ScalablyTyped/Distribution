@@ -20,10 +20,8 @@ object IdentifierTypePredicate {
     parameterName: java.lang.String,
     `type`: Type
   ): IdentifierTypePredicate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("parameterIndex")(parameterIndex)
-    __obj.updateDynamic("parameterName")(parameterName)
+    val __obj = js.Dynamic.literal(kind = kind, parameterIndex = parameterIndex, parameterName = parameterName)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IdentifierTypePredicate]
   }
 }

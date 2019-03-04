@@ -44,10 +44,7 @@ object Instance {
     xs: java.lang.String | js.Array[java.lang.String] = null,
     xt: java.lang.String | js.Array[java.lang.String] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (announce != null) __obj.updateDynamic("announce")(announce)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (dn != null) __obj.updateDynamic("dn")(dn.asInstanceOf[js.Any])

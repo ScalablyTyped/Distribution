@@ -20,11 +20,8 @@ object TimeFormat {
     second: java.lang.String,
     timeZoneName: java.lang.String
   ): TimeFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("timeZoneName")(timeZoneName)
+    val __obj = js.Dynamic.literal(hour = hour, minute = minute, second = second, timeZoneName = timeZoneName)
+  
     __obj.asInstanceOf[TimeFormat]
   }
 }

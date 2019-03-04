@@ -25,10 +25,7 @@ object Update {
     next: Update[State] = null,
     nextEffect: Update[State] = null
   ): Update[State] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expirationTime = expirationTime, payload = payload, tag = tag.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (next != null) __obj.updateDynamic("next")(next)
     if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect)

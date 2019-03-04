@@ -13,8 +13,7 @@ trait ExportAgentRequest extends js.Object {
 object ExportAgentRequest {
   @scala.inline
   def apply(parent: java.lang.String, agentUri: java.lang.String = null): ExportAgentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
     if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri)
     __obj.asInstanceOf[ExportAgentRequest]
   }

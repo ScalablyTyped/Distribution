@@ -22,9 +22,8 @@ object Relationship {
     user: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): Relationship = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("members")(members)
+    val __obj = js.Dynamic.literal(id = id, members = members)
+    __obj.updateDynamic("type")(`type`)
     if (changeset != null) __obj.updateDynamic("changeset")(changeset.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)

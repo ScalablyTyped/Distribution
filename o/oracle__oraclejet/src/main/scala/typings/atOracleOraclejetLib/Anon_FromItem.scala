@@ -22,11 +22,7 @@ object Anon_FromItem {
     toKey: js.Any,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_FromItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromItem")(fromItem)
-    __obj.updateDynamic("fromKey")(fromKey)
-    __obj.updateDynamic("toItem")(toItem)
-    __obj.updateDynamic("toKey")(toKey)
+    val __obj = js.Dynamic.literal(fromItem = fromItem, fromKey = fromKey, toItem = toItem, toKey = toKey)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromItem]
   }

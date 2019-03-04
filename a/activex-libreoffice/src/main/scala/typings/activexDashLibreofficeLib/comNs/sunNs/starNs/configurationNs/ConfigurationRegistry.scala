@@ -29,23 +29,8 @@ object ConfigurationRegistry {
     release: js.Function0[scala.Unit],
     removeFlushListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XFlushListener, scala.Unit]
   ): ConfigurationRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RootKey")(RootKey)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFlushListener")(addFlushListener)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getRootKey")(getRootKey)
-    __obj.updateDynamic("getURL")(getURL)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("mergeKey")(mergeKey)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeFlushListener")(removeFlushListener)
+    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = acquire, addFlushListener = addFlushListener, close = close, destroy = destroy, flush = flush, getRootKey = getRootKey, getURL = getURL, isReadOnly = isReadOnly, isValid = isValid, mergeKey = mergeKey, open = open, queryInterface = queryInterface, release = release, removeFlushListener = removeFlushListener)
+  
     __obj.asInstanceOf[ConfigurationRegistry]
   }
 }

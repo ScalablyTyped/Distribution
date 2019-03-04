@@ -16,9 +16,8 @@ object NotWorkingResult {
     error: proxyDashVerifierLib.Anon_Code,
     ok: proxyDashVerifierLib.proxyDashVerifierLibNumbers.`false`
   ): NotWorkingResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("ok")(ok)
+    val __obj = js.Dynamic.literal(error = error, ok = ok)
+  
     __obj.asInstanceOf[NotWorkingResult]
   }
 }

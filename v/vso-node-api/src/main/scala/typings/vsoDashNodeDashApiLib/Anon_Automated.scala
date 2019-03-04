@@ -15,11 +15,8 @@ trait Anon_Automated extends js.Object {
 object Anon_Automated {
   @scala.inline
   def apply(automated: scala.Double, manual: scala.Double, none: scala.Double, scheduled: scala.Double): Anon_Automated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automated")(automated)
-    __obj.updateDynamic("manual")(manual)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("scheduled")(scheduled)
+    val __obj = js.Dynamic.literal(automated = automated, manual = manual, none = none, scheduled = scheduled)
+  
     __obj.asInstanceOf[Anon_Automated]
   }
 }

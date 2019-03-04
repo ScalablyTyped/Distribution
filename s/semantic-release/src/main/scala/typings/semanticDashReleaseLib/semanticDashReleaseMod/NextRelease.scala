@@ -18,11 +18,8 @@ object NextRelease {
     notes: java.lang.String,
     version: java.lang.String
   ): NextRelease = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gitHead")(gitHead)
-    __obj.updateDynamic("gitTag")(gitTag)
-    __obj.updateDynamic("notes")(notes)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(gitHead = gitHead, gitTag = gitTag, notes = notes, version = version)
+  
     __obj.asInstanceOf[NextRelease]
   }
 }

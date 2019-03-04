@@ -12,8 +12,8 @@ trait IPlugin extends js.Object {
 object IPlugin {
   @scala.inline
   def apply(init: js.Function3[IGridScope, IGridInstance, js.Any, scala.Unit]): IPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(init = init)
+  
     __obj.asInstanceOf[IPlugin]
   }
 }

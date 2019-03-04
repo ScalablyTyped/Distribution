@@ -24,13 +24,8 @@ object FlashMatrix {
     tx: scala.Double,
     ty: scala.Double
   ): FlashMatrix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("tx")(tx)
-    __obj.updateDynamic("ty")(ty)
+    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, tx = tx, ty = ty)
+  
     __obj.asInstanceOf[FlashMatrix]
   }
 }

@@ -14,10 +14,8 @@ trait APIResponseErrorDetails extends js.Object {
 object APIResponseErrorDetails {
   @scala.inline
   def apply(error_type: java.lang.String, errors: js.Array[java.lang.String], parameter: java.lang.String): APIResponseErrorDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error_type")(error_type)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("parameter")(parameter)
+    val __obj = js.Dynamic.literal(error_type = error_type, errors = errors, parameter = parameter)
+  
     __obj.asInstanceOf[APIResponseErrorDetails]
   }
 }

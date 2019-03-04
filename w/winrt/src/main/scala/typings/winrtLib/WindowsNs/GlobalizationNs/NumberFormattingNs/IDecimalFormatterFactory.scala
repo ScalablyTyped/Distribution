@@ -21,8 +21,8 @@ object IDecimalFormatterFactory {
       DecimalFormatter
     ]
   ): IDecimalFormatterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDecimalFormatter")(createDecimalFormatter)
+    val __obj = js.Dynamic.literal(createDecimalFormatter = createDecimalFormatter)
+  
     __obj.asInstanceOf[IDecimalFormatterFactory]
   }
 }

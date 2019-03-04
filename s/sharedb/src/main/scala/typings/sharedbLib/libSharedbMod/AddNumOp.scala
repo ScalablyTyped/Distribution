@@ -13,9 +13,8 @@ trait AddNumOp extends Op {
 object AddNumOp {
   @scala.inline
   def apply(na: scala.Double, p: Path): AddNumOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("na")(na)
-    __obj.updateDynamic("p")(p)
+    val __obj = js.Dynamic.literal(na = na, p = p)
+  
     __obj.asInstanceOf[AddNumOp]
   }
 }

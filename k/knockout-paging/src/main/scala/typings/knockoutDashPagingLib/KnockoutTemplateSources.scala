@@ -16,9 +16,8 @@ object KnockoutTemplateSources {
     anonymousTemplate: Anon_ElementKnockoutTemplateAnonymous,
     domElement: Anon_ElementKnockoutTemplateSourcesDomElement
   ): KnockoutTemplateSources = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anonymousTemplate")(anonymousTemplate)
-    __obj.updateDynamic("domElement")(domElement)
+    val __obj = js.Dynamic.literal(anonymousTemplate = anonymousTemplate, domElement = domElement)
+  
     __obj.asInstanceOf[KnockoutTemplateSources]
   }
 }

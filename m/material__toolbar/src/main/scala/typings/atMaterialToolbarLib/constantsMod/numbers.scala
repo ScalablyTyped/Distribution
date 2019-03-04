@@ -23,12 +23,8 @@ object numbers {
     TOOLBAR_ROW_HEIGHT: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`64`,
     TOOLBAR_ROW_MOBILE_HEIGHT: atMaterialToolbarLib.atMaterialToolbarLibNumbers.`56`
   ): numbers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MAX_TITLE_SIZE")(MAX_TITLE_SIZE)
-    __obj.updateDynamic("MIN_TITLE_SIZE")(MIN_TITLE_SIZE)
-    __obj.updateDynamic("TOOLBAR_MOBILE_BREAKPOINT")(TOOLBAR_MOBILE_BREAKPOINT)
-    __obj.updateDynamic("TOOLBAR_ROW_HEIGHT")(TOOLBAR_ROW_HEIGHT)
-    __obj.updateDynamic("TOOLBAR_ROW_MOBILE_HEIGHT")(TOOLBAR_ROW_MOBILE_HEIGHT)
+    val __obj = js.Dynamic.literal(MAX_TITLE_SIZE = MAX_TITLE_SIZE, MIN_TITLE_SIZE = MIN_TITLE_SIZE, TOOLBAR_MOBILE_BREAKPOINT = TOOLBAR_MOBILE_BREAKPOINT, TOOLBAR_ROW_HEIGHT = TOOLBAR_ROW_HEIGHT, TOOLBAR_ROW_MOBILE_HEIGHT = TOOLBAR_ROW_MOBILE_HEIGHT)
+  
     __obj.asInstanceOf[numbers]
   }
 }

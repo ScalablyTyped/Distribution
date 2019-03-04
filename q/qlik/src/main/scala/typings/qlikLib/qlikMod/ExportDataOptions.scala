@@ -20,10 +20,7 @@ object ExportDataOptions {
     state: qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.P,
     filename: java.lang.String = null
   ): ExportDataOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("download")(download)
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(download = download, format = format.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename)
     __obj.asInstanceOf[ExportDataOptions]
   }

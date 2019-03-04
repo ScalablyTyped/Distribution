@@ -35,12 +35,8 @@ object XConnectionBroadcaster {
     release: js.Function0[scala.Unit],
     removeStreamListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStreamListener, scala.Unit]
   ): XConnectionBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addStreamListener")(addStreamListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeStreamListener")(removeStreamListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addStreamListener = addStreamListener, queryInterface = queryInterface, release = release, removeStreamListener = removeStreamListener)
+  
     __obj.asInstanceOf[XConnectionBroadcaster]
   }
 }

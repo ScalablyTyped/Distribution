@@ -36,10 +36,7 @@ object InfoReceived {
     mimeType: java.lang.String,
     headers: js.Object = null
   ): InfoReceived = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("call")(call)
-    __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(body = body, call = call, mimeType = mimeType)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[InfoReceived]
   }

@@ -26,10 +26,7 @@ object PaginateResult {
     page: scala.Int | scala.Double = null,
     pages: scala.Int | scala.Double = null
   ): PaginateResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("docs")(docs)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(docs = docs, limit = limit, total = total)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

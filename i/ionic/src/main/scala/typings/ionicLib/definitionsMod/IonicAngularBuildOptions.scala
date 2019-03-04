@@ -32,13 +32,9 @@ object IonicAngularBuildOptions {
     project: java.lang.String = null,
     sourcemaps: js.UndefOr[scala.Boolean] = js.undefined
   ): IonicAngularBuildOptions = {
-    val __obj = js.Dynamic.literal(`--` = `--`, `type` = `type`)
-    __obj.updateDynamic("aot")(aot)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("minifycss")(minifycss)
-    __obj.updateDynamic("minifyjs")(minifyjs)
-    __obj.updateDynamic("optimizejs")(optimizejs)
-    __obj.updateDynamic("prod")(prod)
+    val __obj = js.Dynamic.literal(aot = aot, engine = engine, minifycss = minifycss, minifyjs = minifyjs, optimizejs = optimizejs, prod = prod)
+    __obj.updateDynamic("--")(`--`)
+    __obj.updateDynamic("type")(`type`)
     if (env != null) __obj.updateDynamic("env")(env)
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)

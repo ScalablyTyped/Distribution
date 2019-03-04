@@ -14,8 +14,8 @@ object Anon_False {
   def apply(
     forceSync: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreLibNumbers.`false`
   ): Anon_False = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceSync")(forceSync)
+    val __obj = js.Dynamic.literal(forceSync = forceSync)
+  
     __obj.asInstanceOf[Anon_False]
   }
 }

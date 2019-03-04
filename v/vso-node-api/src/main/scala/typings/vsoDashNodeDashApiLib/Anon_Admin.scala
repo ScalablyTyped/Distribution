@@ -36,19 +36,8 @@ object Anon_Admin {
     updateExtension: scala.Double,
     viewPermissions: scala.Double
   ): Anon_Admin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("admin")(admin)
-    __obj.updateDynamic("createPublisher")(createPublisher)
-    __obj.updateDynamic("deleteExtension")(deleteExtension)
-    __obj.updateDynamic("deletePublisher")(deletePublisher)
-    __obj.updateDynamic("editSettings")(editSettings)
-    __obj.updateDynamic("managePermissions")(managePermissions)
-    __obj.updateDynamic("privateRead")(privateRead)
-    __obj.updateDynamic("publishExtension")(publishExtension)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("trustedPartner")(trustedPartner)
-    __obj.updateDynamic("updateExtension")(updateExtension)
-    __obj.updateDynamic("viewPermissions")(viewPermissions)
+    val __obj = js.Dynamic.literal(admin = admin, createPublisher = createPublisher, deleteExtension = deleteExtension, deletePublisher = deletePublisher, editSettings = editSettings, managePermissions = managePermissions, privateRead = privateRead, publishExtension = publishExtension, read = read, trustedPartner = trustedPartner, updateExtension = updateExtension, viewPermissions = viewPermissions)
+  
     __obj.asInstanceOf[Anon_Admin]
   }
 }

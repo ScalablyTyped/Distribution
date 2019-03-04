@@ -37,18 +37,8 @@ object Channel {
     removeAllListeners: js.Function1[atStorybookChannelsLib.EventName, scala.Unit],
     removeListener: js.Function2[atStorybookChannelsLib.EventName, atStorybookChannelsLib.Listener, scala.Unit]
   ): Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("addPeerListener")(addPeerListener)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("eventNames")(eventNames)
-    __obj.updateDynamic("listenerCount")(listenerCount)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("prependListener")(prependListener)
-    __obj.updateDynamic("removeAllListeners")(removeAllListeners)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(addListener = addListener, addPeerListener = addPeerListener, emit = emit, eventNames = eventNames, listenerCount = listenerCount, listeners = listeners, on = on, once = once, prependListener = prependListener, removeAllListeners = removeAllListeners, removeListener = removeListener)
+  
     __obj.asInstanceOf[Channel]
   }
 }

@@ -32,17 +32,8 @@ object StructureRoad {
     structureType: STRUCTURE_ROAD,
     ticksToDecay: scala.Double
   ): StructureRoad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("structureType")(structureType)
-    __obj.updateDynamic("ticksToDecay")(ticksToDecay)
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType, ticksToDecay = ticksToDecay)
+  
     __obj.asInstanceOf[StructureRoad]
   }
 }

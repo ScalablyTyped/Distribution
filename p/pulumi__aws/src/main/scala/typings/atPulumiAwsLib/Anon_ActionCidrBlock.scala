@@ -30,12 +30,7 @@ object Anon_ActionCidrBlock {
     icmpType: scala.Int | scala.Double = null,
     ipv6CidrBlock: java.lang.String = null
   ): Anon_ActionCidrBlock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("fromPort")(fromPort)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("ruleNo")(ruleNo)
-    __obj.updateDynamic("toPort")(toPort)
+    val __obj = js.Dynamic.literal(action = action, fromPort = fromPort, protocol = protocol, ruleNo = ruleNo, toPort = toPort)
     if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock)
     if (icmpCode != null) __obj.updateDynamic("icmpCode")(icmpCode.asInstanceOf[js.Any])
     if (icmpType != null) __obj.updateDynamic("icmpType")(icmpType.asInstanceOf[js.Any])

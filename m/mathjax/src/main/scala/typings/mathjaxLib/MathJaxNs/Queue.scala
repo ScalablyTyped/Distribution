@@ -62,16 +62,8 @@ object Queue {
     running: scala.Double,
     wait: js.Function1[js.Function, js.Function]
   ): Queue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Process")(Process)
-    __obj.updateDynamic("Push")(Push)
-    __obj.updateDynamic("Resume")(Resume)
-    __obj.updateDynamic("Suspend")(Suspend)
-    __obj.updateDynamic("call")(call)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("running")(running)
-    __obj.updateDynamic("wait")(wait)
+    val __obj = js.Dynamic.literal(Process = Process, Push = Push, Resume = Resume, Suspend = Suspend, call = call, pending = pending, queue = queue, running = running, wait = wait)
+  
     __obj.asInstanceOf[Queue]
   }
 }

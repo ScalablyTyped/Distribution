@@ -33,12 +33,8 @@ object XMembersSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMembersSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Members")(Members)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMembers")(getMembers)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Members = Members, acquire = acquire, getMembers = getMembers, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMembersSupplier]
   }
 }

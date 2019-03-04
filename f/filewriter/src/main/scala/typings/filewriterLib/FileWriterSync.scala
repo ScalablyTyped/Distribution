@@ -54,12 +54,8 @@ object FileWriterSync {
     truncate: js.Function1[scala.Double, scala.Unit],
     write: js.Function1[stdLib.Blob, scala.Unit]
   ): FileWriterSync = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("truncate")(truncate)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(length = length, position = position, seek = seek, truncate = truncate, write = write)
+  
     __obj.asInstanceOf[FileWriterSync]
   }
 }

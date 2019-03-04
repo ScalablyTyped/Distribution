@@ -30,8 +30,7 @@ object Anon_Credentials {
     username: java.lang.String = null,
     usernameField: java.lang.String = null
   ): Anon_Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onComplete")(onComplete)
+    val __obj = js.Dynamic.literal(onComplete = onComplete)
     if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL)
     if (onError != null) __obj.updateDynamic("onError")(onError)
     if (password != null) __obj.updateDynamic("password")(password)

@@ -28,10 +28,7 @@ object ImageStaticOptions {
     imageSize: openlayersLib.openlayersMod.Size = null,
     logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null
   ): ImageStaticOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageExtent")(imageExtent)
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(imageExtent = imageExtent, projection = projection.asInstanceOf[js.Any], url = url)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)

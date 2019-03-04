@@ -36,10 +36,7 @@ object Anon_Customglyphcode {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): Anon_Customglyphcode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("x_shift")(x_shift)
+    val __obj = js.Dynamic.literal(duration = duration, line = line, x_shift = x_shift)
     if (custom_glyph_code != null) __obj.updateDynamic("custom_glyph_code")(custom_glyph_code)
     if (!js.isUndefined(displaced)) __obj.updateDynamic("displaced")(displaced)
     if (glyph_font_scale != null) __obj.updateDynamic("glyph_font_scale")(glyph_font_scale.asInstanceOf[js.Any])

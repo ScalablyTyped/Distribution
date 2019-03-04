@@ -22,12 +22,8 @@ object TemplateProps {
     item: I,
     itemSelected: scala.Double
   ): TemplateProps[I, C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anySelected")(anySelected)
-    __obj.updateDynamic("commonProps")(commonProps.asInstanceOf[js.Any])
-    __obj.updateDynamic("dragHandleProps")(dragHandleProps)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemSelected")(itemSelected)
+    val __obj = js.Dynamic.literal(anySelected = anySelected, commonProps = commonProps.asInstanceOf[js.Any], dragHandleProps = dragHandleProps, item = item.asInstanceOf[js.Any], itemSelected = itemSelected)
+  
     __obj.asInstanceOf[TemplateProps[I, C]]
   }
 }

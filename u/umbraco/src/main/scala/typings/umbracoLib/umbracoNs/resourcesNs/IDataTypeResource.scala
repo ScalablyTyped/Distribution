@@ -140,13 +140,8 @@ object IDataTypeResource {
       angularLib.angularMod.angularNs.IPromise[IResourcePromise]
     ]
   ): IDataTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteById")(deleteById)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("getById")(getById)
-    __obj.updateDynamic("getPreValues")(getPreValues)
-    __obj.updateDynamic("getScaffold")(getScaffold)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(deleteById = deleteById, getAll = getAll, getById = getById, getPreValues = getPreValues, getScaffold = getScaffold, save = save)
+  
     __obj.asInstanceOf[IDataTypeResource]
   }
 }

@@ -31,11 +31,8 @@ object DataPointLabel {
     ShowNumber: scala.Boolean,
     ShowNumberInPercent: scala.Boolean
   ): DataPointLabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ShowCategoryName")(ShowCategoryName)
-    __obj.updateDynamic("ShowLegendSymbol")(ShowLegendSymbol)
-    __obj.updateDynamic("ShowNumber")(ShowNumber)
-    __obj.updateDynamic("ShowNumberInPercent")(ShowNumberInPercent)
+    val __obj = js.Dynamic.literal(ShowCategoryName = ShowCategoryName, ShowLegendSymbol = ShowLegendSymbol, ShowNumber = ShowNumber, ShowNumberInPercent = ShowNumberInPercent)
+  
     __obj.asInstanceOf[DataPointLabel]
   }
 }

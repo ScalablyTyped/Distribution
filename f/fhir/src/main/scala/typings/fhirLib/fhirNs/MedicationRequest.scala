@@ -174,9 +174,7 @@ object MedicationRequest {
     supportingInformation: js.Array[Reference] = null,
     text: Narrative = null
   ): MedicationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(intent = intent, subject = subject)
     if (_authoredOn != null) __obj.updateDynamic("_authoredOn")(_authoredOn)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

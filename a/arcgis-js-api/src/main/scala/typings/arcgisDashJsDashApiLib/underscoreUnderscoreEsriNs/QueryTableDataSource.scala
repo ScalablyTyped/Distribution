@@ -58,15 +58,8 @@ object QueryTableDataSource {
     `type`: java.lang.String,
     workspaceId: java.lang.String
   ): QueryTableDataSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("geometryType")(geometryType)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("oidFields")(oidFields)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("spatialReference")(spatialReference)
-    __obj.updateDynamic("workspaceId")(workspaceId)
+    val __obj = js.Dynamic.literal(constructor = constructor, geometryType = geometryType, hasOwnProperty = hasOwnProperty, oidFields = oidFields, propertyIsEnumerable = propertyIsEnumerable, query = query, spatialReference = spatialReference, workspaceId = workspaceId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[QueryTableDataSource]
   }
 }

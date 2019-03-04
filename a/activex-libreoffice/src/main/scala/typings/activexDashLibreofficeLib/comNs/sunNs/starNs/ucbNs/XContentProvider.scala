@@ -39,12 +39,8 @@ object XContentProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContentProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareContentIds")(compareContentIds)
-    __obj.updateDynamic("queryContent")(queryContent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, compareContentIds = compareContentIds, queryContent = queryContent, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContentProvider]
   }
 }

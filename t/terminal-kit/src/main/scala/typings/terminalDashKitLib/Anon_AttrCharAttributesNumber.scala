@@ -16,8 +16,7 @@ object Anon_AttrCharAttributesNumber {
     attr: terminalDashKitLib.screenbufferhdMod.ScreenBufferHDNs.Attributes | scala.Double,
     char: java.lang.String = null
   ): Anon_AttrCharAttributesNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
     if (char != null) __obj.updateDynamic("char")(char)
     __obj.asInstanceOf[Anon_AttrCharAttributesNumber]
   }

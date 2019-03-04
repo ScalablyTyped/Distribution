@@ -25,12 +25,7 @@ object GeneratedSecretWithOtpAuthUrl {
     qr_code_base32: java.lang.String = null,
     qr_code_hex: java.lang.String = null
   ): GeneratedSecretWithOtpAuthUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascii")(ascii)
-    __obj.updateDynamic("base32")(base32)
-    __obj.updateDynamic("google_auth_qr")(google_auth_qr)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("otpauth_url")(otpauth_url)
+    val __obj = js.Dynamic.literal(ascii = ascii, base32 = base32, google_auth_qr = google_auth_qr, hex = hex, otpauth_url = otpauth_url)
     if (qr_code_ascii != null) __obj.updateDynamic("qr_code_ascii")(qr_code_ascii)
     if (qr_code_base32 != null) __obj.updateDynamic("qr_code_base32")(qr_code_base32)
     if (qr_code_hex != null) __obj.updateDynamic("qr_code_hex")(qr_code_hex)

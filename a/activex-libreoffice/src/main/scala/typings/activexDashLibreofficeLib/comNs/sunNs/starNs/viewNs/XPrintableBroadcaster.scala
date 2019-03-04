@@ -29,12 +29,8 @@ object XPrintableBroadcaster {
     release: js.Function0[scala.Unit],
     removePrintableListener: js.Function1[XPrintableListener, scala.Unit]
   ): XPrintableBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPrintableListener")(addPrintableListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePrintableListener")(removePrintableListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addPrintableListener = addPrintableListener, queryInterface = queryInterface, release = release, removePrintableListener = removePrintableListener)
+  
     __obj.asInstanceOf[XPrintableBroadcaster]
   }
 }

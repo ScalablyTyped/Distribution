@@ -40,20 +40,7 @@ object Item {
     title: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enclosures")(enclosures)
-    __obj.updateDynamic("guid")(guid.asInstanceOf[js.Any])
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("origlink")(origlink)
-    __obj.updateDynamic("pubdate")(pubdate)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(author = author, categories = categories, comments = comments, date = date, description = description, enclosures = enclosures, guid = guid.asInstanceOf[js.Any], image = image, link = link, origlink = origlink, pubdate = pubdate, summary = summary, title = title)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Item]
   }

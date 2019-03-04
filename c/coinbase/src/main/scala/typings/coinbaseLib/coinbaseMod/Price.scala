@@ -13,8 +13,7 @@ trait Price extends js.Object {
 object Price {
   @scala.inline
   def apply(data: coinbaseLib.Anon_Amount, warnings: js.Array[coinbaseLib.Anon_Id] = null): Price = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (warnings != null) __obj.updateDynamic("warnings")(warnings)
     __obj.asInstanceOf[Price]
   }

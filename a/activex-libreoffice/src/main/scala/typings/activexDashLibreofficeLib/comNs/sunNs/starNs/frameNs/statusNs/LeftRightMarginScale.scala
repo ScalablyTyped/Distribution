@@ -40,15 +40,8 @@ object LeftRightMarginScale {
     ScaleRight: scala.Double,
     TextLeft: scala.Double
   ): LeftRightMarginScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoFirstLine")(AutoFirstLine)
-    __obj.updateDynamic("FirstLine")(FirstLine)
-    __obj.updateDynamic("Left")(Left)
-    __obj.updateDynamic("Right")(Right)
-    __obj.updateDynamic("ScaleFirstLine")(ScaleFirstLine)
-    __obj.updateDynamic("ScaleLeft")(ScaleLeft)
-    __obj.updateDynamic("ScaleRight")(ScaleRight)
-    __obj.updateDynamic("TextLeft")(TextLeft)
+    val __obj = js.Dynamic.literal(AutoFirstLine = AutoFirstLine, FirstLine = FirstLine, Left = Left, Right = Right, ScaleFirstLine = ScaleFirstLine, ScaleLeft = ScaleLeft, ScaleRight = ScaleRight, TextLeft = TextLeft)
+  
     __obj.asInstanceOf[LeftRightMarginScale]
   }
 }

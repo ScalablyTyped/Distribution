@@ -24,8 +24,7 @@ object Configuration {
     request: js.Function1[/* params */ js.Any, scala.Unit] = null,
     requestDefaults: requestLib.requestMod.requestNs.CoreOptions = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (log != null) __obj.updateDynamic("log")(log)
     if (!js.isUndefined(parseUrl)) __obj.updateDynamic("parseUrl")(parseUrl)

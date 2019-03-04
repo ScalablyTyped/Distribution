@@ -66,19 +66,8 @@ object ReleaseReference {
     url: java.lang.String,
     webAccessUri: java.lang.String
   ): ReleaseReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("modifiedBy")(modifiedBy)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("webAccessUri")(webAccessUri)
+    val __obj = js.Dynamic.literal(_links = _links, artifacts = artifacts, createdBy = createdBy, createdOn = createdOn, description = description, id = id, modifiedBy = modifiedBy, name = name, reason = reason, releaseDefinition = releaseDefinition, url = url, webAccessUri = webAccessUri)
+  
     __obj.asInstanceOf[ReleaseReference]
   }
 }

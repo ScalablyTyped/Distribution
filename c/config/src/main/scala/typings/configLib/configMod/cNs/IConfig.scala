@@ -18,10 +18,8 @@ object IConfig {
     has: js.Function1[java.lang.String, scala.Boolean],
     util: IUtil
   ): IConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("util")(util)
+    val __obj = js.Dynamic.literal(get = get, has = has, util = util)
+  
     __obj.asInstanceOf[IConfig]
   }
 }

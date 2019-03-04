@@ -14,10 +14,8 @@ trait XCompatWriterDocProperties extends js.Object {
 object XCompatWriterDocProperties {
   @scala.inline
   def apply(Category: java.lang.String, Company: java.lang.String, Manager: java.lang.String): XCompatWriterDocProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Category")(Category)
-    __obj.updateDynamic("Company")(Company)
-    __obj.updateDynamic("Manager")(Manager)
+    val __obj = js.Dynamic.literal(Category = Category, Company = Company, Manager = Manager)
+  
     __obj.asInstanceOf[XCompatWriterDocProperties]
   }
 }

@@ -23,17 +23,8 @@ object Update {
     status: scala.Double,
     username: java.lang.String
   ): Update = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatarID")(avatarID)
-    __obj.updateDynamic("curatorPoints")(curatorPoints)
-    __obj.updateDynamic("dateJoined")(dateJoined)
-    __obj.updateDynamic("djPoints")(djPoints)
-    __obj.updateDynamic("fans")(fans)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("listenerPoints")(listenerPoints)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(avatarID = avatarID, curatorPoints = curatorPoints, dateJoined = dateJoined, djPoints = djPoints, fans = fans, id = id, language = language, listenerPoints = listenerPoints, status = status, username = username)
+  
     __obj.asInstanceOf[Update]
   }
 }

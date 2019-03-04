@@ -34,10 +34,7 @@ object LoadBalancerPolicyArgs {
     policyTypeName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     policyAttributes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValueInput]]] = null
   ): LoadBalancerPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
-    __obj.updateDynamic("policyTypeName")(policyTypeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any], policyTypeName = policyTypeName.asInstanceOf[js.Any])
     if (policyAttributes != null) __obj.updateDynamic("policyAttributes")(policyAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerPolicyArgs]
   }

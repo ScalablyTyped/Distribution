@@ -56,8 +56,7 @@ object NetworkInfo {
     SSID: java.lang.String = null,
     Security: chromeDashAppsLib.chromeDashAppsLibStrings.None | chromeDashAppsLib.chromeDashAppsLibStrings.`WEP-PSK` | chromeDashAppsLib.chromeDashAppsLibStrings.`WPA-PSK` | chromeDashAppsLib.chromeDashAppsLibStrings.`WPA-EAP` = null
   ): NetworkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
     if (GUID != null) __obj.updateDynamic("GUID")(GUID)
     if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID)

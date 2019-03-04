@@ -12,8 +12,8 @@ trait Rules extends js.Object {
 object Rules {
   @scala.inline
   def apply(rules: js.Array[Rule]): Rules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(rules = rules)
+  
     __obj.asInstanceOf[Rules]
   }
 }

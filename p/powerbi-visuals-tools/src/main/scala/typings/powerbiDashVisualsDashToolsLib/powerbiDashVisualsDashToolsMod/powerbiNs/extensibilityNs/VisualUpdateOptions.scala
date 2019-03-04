@@ -12,8 +12,8 @@ trait VisualUpdateOptions extends js.Object {
 object VisualUpdateOptions {
   @scala.inline
   def apply(`type`: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualUpdateType): VisualUpdateOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VisualUpdateOptions]
   }
 }

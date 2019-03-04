@@ -22,8 +22,7 @@ object InjectorTypeWithProviders {
       atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.srcDiProviderMod.ValueProvider | atAngularCoreLib.srcDiProviderMod.ExistingProvider | atAngularCoreLib.srcDiProviderMod.FactoryProvider | atAngularCoreLib.srcDiProviderMod.ConstructorProvider | atAngularCoreLib.srcDiProviderMod.StaticClassProvider | atAngularCoreLib.srcDiProviderMod.ClassProvider | js.Array[_]
     ] = null
   ): InjectorTypeWithProviders[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ngModule")(ngModule)
+    val __obj = js.Dynamic.literal(ngModule = ngModule)
     if (providers != null) __obj.updateDynamic("providers")(providers)
     __obj.asInstanceOf[InjectorTypeWithProviders[T]]
   }

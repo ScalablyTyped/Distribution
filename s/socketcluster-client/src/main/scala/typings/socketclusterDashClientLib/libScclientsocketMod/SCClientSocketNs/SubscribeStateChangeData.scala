@@ -20,11 +20,8 @@ object SubscribeStateChangeData {
     oldState: scDashChannelLib.scDashChannelMod.ChannelState,
     subscriptionOptions: scDashChannelLib.scDashChannelMod.SCChannelOptions
   ): SubscribeStateChangeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("newState")(newState)
-    __obj.updateDynamic("oldState")(oldState)
-    __obj.updateDynamic("subscriptionOptions")(subscriptionOptions)
+    val __obj = js.Dynamic.literal(channel = channel, newState = newState, oldState = oldState, subscriptionOptions = subscriptionOptions)
+  
     __obj.asInstanceOf[SubscribeStateChangeData]
   }
 }

@@ -12,8 +12,8 @@ trait WebGLTexture extends js.Object {
 object WebGLTexture {
   @scala.inline
   def apply(__WebGLTexture: scala.Unit): WebGLTexture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__WebGLTexture")(__WebGLTexture)
+    val __obj = js.Dynamic.literal(__WebGLTexture = __WebGLTexture)
+  
     __obj.asInstanceOf[WebGLTexture]
   }
 }

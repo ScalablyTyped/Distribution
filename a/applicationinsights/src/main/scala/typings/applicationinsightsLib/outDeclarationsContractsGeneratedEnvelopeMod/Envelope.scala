@@ -55,15 +55,8 @@ object Envelope {
     time: java.lang.String,
     ver: scala.Double
   ): Envelope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("iKey")(iKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sampleRate")(sampleRate)
-    __obj.updateDynamic("seq")(seq)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(data = data, iKey = iKey, name = name, sampleRate = sampleRate, seq = seq, tags = tags, time = time, ver = ver)
+  
     __obj.asInstanceOf[Envelope]
   }
 }

@@ -14,8 +14,7 @@ trait VaultConstructorOptions extends js.Object {
 object VaultConstructorOptions {
   @scala.inline
   def apply(location: java.lang.String, ValuableClass: js.Object = null): VaultConstructorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(location = location)
     if (ValuableClass != null) __obj.updateDynamic("ValuableClass")(ValuableClass)
     __obj.asInstanceOf[VaultConstructorOptions]
   }

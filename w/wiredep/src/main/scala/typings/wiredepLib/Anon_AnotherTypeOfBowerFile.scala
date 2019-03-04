@@ -23,9 +23,8 @@ object Anon_AnotherTypeOfBowerFile {
     anotherTypeOfBowerFile: js.Function1[java.lang.String, java.lang.String],
     typeOfBowerFile: java.lang.String
   ): Anon_AnotherTypeOfBowerFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anotherTypeOfBowerFile")(anotherTypeOfBowerFile)
-    __obj.updateDynamic("typeOfBowerFile")(typeOfBowerFile)
+    val __obj = js.Dynamic.literal(anotherTypeOfBowerFile = anotherTypeOfBowerFile, typeOfBowerFile = typeOfBowerFile)
+  
     __obj.asInstanceOf[Anon_AnotherTypeOfBowerFile]
   }
 }

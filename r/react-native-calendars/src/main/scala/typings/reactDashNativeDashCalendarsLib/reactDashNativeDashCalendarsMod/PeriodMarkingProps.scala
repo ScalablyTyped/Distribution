@@ -16,9 +16,8 @@ object PeriodMarkingProps {
     markedDates: org.scalablytyped.runtime.StringDictionary[PeriodMarking],
     markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.period
   ): PeriodMarkingProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markedDates")(markedDates)
-    __obj.updateDynamic("markingType")(markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+  
     __obj.asInstanceOf[PeriodMarkingProps]
   }
 }

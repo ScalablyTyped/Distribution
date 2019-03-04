@@ -22,10 +22,7 @@ object Anon_Req {
     url: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Url.URL */ js.Any,
     res: js.Any = null
   ): Anon_Req = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(req = req, start = start, url = url)
     if (res != null) __obj.updateDynamic("res")(res)
     __obj.asInstanceOf[Anon_Req]
   }

@@ -20,11 +20,8 @@ object KnockoutMemoization {
     unmemoize: js.Function2[java.lang.String, js.Array[_], scala.Boolean],
     unmemoizeDomNodeAndDescendants: js.Function2[js.Any, js.Array[_], scala.Boolean]
   ): KnockoutMemoization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("memoize")(memoize)
-    __obj.updateDynamic("parseMemoText")(parseMemoText)
-    __obj.updateDynamic("unmemoize")(unmemoize)
-    __obj.updateDynamic("unmemoizeDomNodeAndDescendants")(unmemoizeDomNodeAndDescendants)
+    val __obj = js.Dynamic.literal(memoize = memoize, parseMemoText = parseMemoText, unmemoize = unmemoize, unmemoizeDomNodeAndDescendants = unmemoizeDomNodeAndDescendants)
+  
     __obj.asInstanceOf[KnockoutMemoization]
   }
 }

@@ -34,11 +34,8 @@ object XLDragFill {
     hideAutoFillOptions: js.Function0[scala.Unit],
     positionAutoFillElement: js.Function1[scala.Boolean, scala.Unit]
   ): XLDragFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoFill")(autoFill)
-    __obj.updateDynamic("hideAutoFillElement")(hideAutoFillElement)
-    __obj.updateDynamic("hideAutoFillOptions")(hideAutoFillOptions)
-    __obj.updateDynamic("positionAutoFillElement")(positionAutoFillElement)
+    val __obj = js.Dynamic.literal(autoFill = autoFill, hideAutoFillElement = hideAutoFillElement, hideAutoFillOptions = hideAutoFillOptions, positionAutoFillElement = positionAutoFillElement)
+  
     __obj.asInstanceOf[XLDragFill]
   }
 }

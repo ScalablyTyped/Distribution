@@ -40,21 +40,8 @@ object ByteBuffer {
     shrink: js.Function0[stdLib.Uint8Array],
     size: js.Function0[scala.Double]
   ): ByteBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getInt")(getInt)
-    __obj.updateDynamic("getShort")(getShort)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("putInt")(putInt)
-    __obj.updateDynamic("putShort")(putShort)
-    __obj.updateDynamic("putString")(putString)
-    __obj.updateDynamic("readInt")(readInt)
-    __obj.updateDynamic("reallocate")(reallocate)
-    __obj.updateDynamic("shrink")(shrink)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(buffer = buffer, get = get, getInt = getInt, getShort = getShort, getString = getString, position = position, put = put, putInt = putInt, putShort = putShort, putString = putString, readInt = readInt, reallocate = reallocate, shrink = shrink, size = size)
+  
     __obj.asInstanceOf[ByteBuffer]
   }
 }

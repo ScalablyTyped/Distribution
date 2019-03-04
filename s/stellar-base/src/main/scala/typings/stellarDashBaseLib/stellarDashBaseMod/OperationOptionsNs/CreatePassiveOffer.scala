@@ -23,11 +23,7 @@ object CreatePassiveOffer {
     selling: stellarDashBaseLib.stellarDashBaseMod.Asset,
     source: java.lang.String = null
   ): CreatePassiveOffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("buying")(buying)
-    __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    __obj.updateDynamic("selling")(selling)
+    val __obj = js.Dynamic.literal(amount = amount, buying = buying, price = price.asInstanceOf[js.Any], selling = selling)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[CreatePassiveOffer]
   }

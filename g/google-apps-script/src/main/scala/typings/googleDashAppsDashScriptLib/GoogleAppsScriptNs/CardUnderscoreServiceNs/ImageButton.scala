@@ -28,15 +28,8 @@ object ImageButton {
     setOnClickOpenLinkAction: js.Function1[Action, ImageButton],
     setOpenLink: js.Function1[OpenLink, ImageButton]
   ): ImageButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAltText")(setAltText)
-    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
-    __obj.updateDynamic("setComposeAction")(setComposeAction)
-    __obj.updateDynamic("setIcon")(setIcon)
-    __obj.updateDynamic("setIconUrl")(setIconUrl)
-    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
-    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
+    val __obj = js.Dynamic.literal(setAltText = setAltText, setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setIcon = setIcon, setIconUrl = setIconUrl, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink)
+  
     __obj.asInstanceOf[ImageButton]
   }
 }

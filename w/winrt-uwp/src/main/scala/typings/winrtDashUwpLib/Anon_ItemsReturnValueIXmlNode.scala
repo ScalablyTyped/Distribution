@@ -13,9 +13,8 @@ trait Anon_ItemsReturnValueIXmlNode extends js.Object {
 object Anon_ItemsReturnValueIXmlNode {
   @scala.inline
   def apply(items: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.IXmlNode, returnValue: scala.Double): Anon_ItemsReturnValueIXmlNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueIXmlNode]
   }
 }

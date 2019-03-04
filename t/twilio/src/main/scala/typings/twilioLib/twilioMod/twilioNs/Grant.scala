@@ -12,8 +12,8 @@ trait Grant extends js.Object {
 object Grant {
   @scala.inline
   def apply(toPayload: js.Function0[GrantPayload]): Grant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toPayload")(toPayload)
+    val __obj = js.Dynamic.literal(toPayload = toPayload)
+  
     __obj.asInstanceOf[Grant]
   }
 }

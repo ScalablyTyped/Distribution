@@ -24,10 +24,7 @@ object IscanQRCode {
     complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IscanQRCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("needResult")(needResult.asInstanceOf[js.Any])
-    __obj.updateDynamic("scanType")(scanType)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(needResult = needResult.asInstanceOf[js.Any], scanType = scanType, success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[IscanQRCode]

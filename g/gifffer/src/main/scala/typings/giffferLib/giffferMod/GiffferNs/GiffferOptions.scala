@@ -19,9 +19,8 @@ object GiffferOptions {
     playButtonIconStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     playButtonStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): GiffferOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("playButtonIconStyles")(playButtonIconStyles)
-    __obj.updateDynamic("playButtonStyles")(playButtonStyles)
+    val __obj = js.Dynamic.literal(playButtonIconStyles = playButtonIconStyles, playButtonStyles = playButtonStyles)
+  
     __obj.asInstanceOf[GiffferOptions]
   }
 }

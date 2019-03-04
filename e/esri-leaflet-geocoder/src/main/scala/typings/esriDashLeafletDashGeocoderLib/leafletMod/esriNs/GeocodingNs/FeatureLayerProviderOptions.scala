@@ -24,8 +24,7 @@ object FeatureLayerProviderOptions {
     searchFields: java.lang.String | js.Array[java.lang.String] = null,
     token: java.lang.String = null
   ): FeatureLayerProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bufferRadius != null) __obj.updateDynamic("bufferRadius")(bufferRadius.asInstanceOf[js.Any])
     if (formatSuggestion != null) __obj.updateDynamic("formatSuggestion")(formatSuggestion)

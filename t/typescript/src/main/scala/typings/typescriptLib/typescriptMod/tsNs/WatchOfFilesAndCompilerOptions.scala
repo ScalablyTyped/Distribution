@@ -19,9 +19,8 @@ object WatchOfFilesAndCompilerOptions {
     getProgram: js.Function0[T],
     updateRootFileNames: js.Function1[js.Array[java.lang.String], scala.Unit]
   ): WatchOfFilesAndCompilerOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getProgram")(getProgram)
-    __obj.updateDynamic("updateRootFileNames")(updateRootFileNames)
+    val __obj = js.Dynamic.literal(getProgram = getProgram, updateRootFileNames = updateRootFileNames)
+  
     __obj.asInstanceOf[WatchOfFilesAndCompilerOptions[T]]
   }
 }

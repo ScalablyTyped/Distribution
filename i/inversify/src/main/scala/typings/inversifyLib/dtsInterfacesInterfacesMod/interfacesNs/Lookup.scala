@@ -30,15 +30,8 @@ object Lookup {
       scala.Unit
     ]
   ): Lookup[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getMap")(getMap)
-    __obj.updateDynamic("hasKey")(hasKey)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeByCondition")(removeByCondition)
-    __obj.updateDynamic("traverse")(traverse)
+    val __obj = js.Dynamic.literal(add = add, clone = clone, get = get, getMap = getMap, hasKey = hasKey, remove = remove, removeByCondition = removeByCondition, traverse = traverse)
+  
     __obj.asInstanceOf[Lookup[T]]
   }
 }

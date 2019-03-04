@@ -16,9 +16,8 @@ object Anon_Request {
     request: axiosLib.axiosMod.AxiosInterceptorManager[axiosLib.axiosMod.AxiosRequestConfig],
     response: axiosLib.axiosMod.AxiosInterceptorManager[axiosLib.axiosMod.AxiosResponse[_]]
   ): Anon_Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
     __obj.asInstanceOf[Anon_Request]
   }
 }

@@ -13,9 +13,8 @@ trait MapReduceResult[Key, Val] extends js.Object {
 object MapReduceResult {
   @scala.inline
   def apply[Key, Val](_id: Key, value: Val): MapReduceResult[Key, Val] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MapReduceResult[Key, Val]]
   }
 }

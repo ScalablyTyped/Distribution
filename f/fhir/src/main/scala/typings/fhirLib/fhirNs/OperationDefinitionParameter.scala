@@ -106,11 +106,7 @@ object OperationDefinitionParameter {
     searchType: code = null,
     `type`: code = null
   ): OperationDefinitionParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(max = max, min = min, name = name, use = use)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -34,13 +34,8 @@ object BorderLine2 {
     LineWidth: scala.Double,
     OuterLineWidth: scala.Double
   ): BorderLine2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("InnerLineWidth")(InnerLineWidth)
-    __obj.updateDynamic("LineDistance")(LineDistance)
-    __obj.updateDynamic("LineStyle")(LineStyle)
-    __obj.updateDynamic("LineWidth")(LineWidth)
-    __obj.updateDynamic("OuterLineWidth")(OuterLineWidth)
+    val __obj = js.Dynamic.literal(Color = Color, InnerLineWidth = InnerLineWidth, LineDistance = LineDistance, LineStyle = LineStyle, LineWidth = LineWidth, OuterLineWidth = OuterLineWidth)
+  
     __obj.asInstanceOf[BorderLine2]
   }
 }

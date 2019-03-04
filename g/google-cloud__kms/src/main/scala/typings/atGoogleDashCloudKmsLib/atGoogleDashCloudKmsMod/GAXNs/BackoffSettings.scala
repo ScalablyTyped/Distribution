@@ -25,13 +25,8 @@ object BackoffSettings {
     retryDelayMultiplier: scala.Double,
     totalTimeoutMillis: scala.Double
   ): BackoffSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialRetryDelayMillis")(initialRetryDelayMillis)
-    __obj.updateDynamic("initialRpcTimeoutMillis")(initialRpcTimeoutMillis)
-    __obj.updateDynamic("maxRetryDelayMillis")(maxRetryDelayMillis)
-    __obj.updateDynamic("maxRpcTimeoutMillis")(maxRpcTimeoutMillis)
-    __obj.updateDynamic("retryDelayMultiplier")(retryDelayMultiplier)
-    __obj.updateDynamic("totalTimeoutMillis")(totalTimeoutMillis)
+    val __obj = js.Dynamic.literal(initialRetryDelayMillis = initialRetryDelayMillis, initialRpcTimeoutMillis = initialRpcTimeoutMillis, maxRetryDelayMillis = maxRetryDelayMillis, maxRpcTimeoutMillis = maxRpcTimeoutMillis, retryDelayMultiplier = retryDelayMultiplier, totalTimeoutMillis = totalTimeoutMillis)
+  
     __obj.asInstanceOf[BackoffSettings]
   }
 }

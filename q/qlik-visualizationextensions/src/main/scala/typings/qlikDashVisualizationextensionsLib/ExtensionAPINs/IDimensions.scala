@@ -18,8 +18,7 @@ object IDimensions {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null
   ): IDimensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(uses = uses)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDimensions]

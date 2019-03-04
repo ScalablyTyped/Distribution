@@ -26,14 +26,8 @@ object IShape {
     scale: js.Function1[scala.Double, IShape],
     shift: js.Function1[js.Array[scala.Double], IShape]
   ): IShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getGeometry")(getGeometry)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(contains = contains, equals = equals, getBounds = getBounds, getGeometry = getGeometry, getType = getType, scale = scale, shift = shift)
+  
     __obj.asInstanceOf[IShape]
   }
 }

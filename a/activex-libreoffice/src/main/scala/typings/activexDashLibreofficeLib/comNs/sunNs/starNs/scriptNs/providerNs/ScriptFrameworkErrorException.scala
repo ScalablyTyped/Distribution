@@ -25,12 +25,8 @@ object ScriptFrameworkErrorException {
     language: java.lang.String,
     scriptName: java.lang.String
   ): ScriptFrameworkErrorException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("errorType")(errorType)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("scriptName")(scriptName)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, errorType = errorType, language = language, scriptName = scriptName)
+  
     __obj.asInstanceOf[ScriptFrameworkErrorException]
   }
 }

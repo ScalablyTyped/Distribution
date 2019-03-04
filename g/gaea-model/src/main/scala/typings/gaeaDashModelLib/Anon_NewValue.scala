@@ -16,9 +16,8 @@ object Anon_NewValue {
     newValue: gaeaDashModelLib.FitGaeaNs.ComponentProps,
     oldValue: gaeaDashModelLib.FitGaeaNs.ComponentProps
   ): Anon_NewValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newValue")(newValue)
-    __obj.updateDynamic("oldValue")(oldValue)
+    val __obj = js.Dynamic.literal(newValue = newValue, oldValue = oldValue)
+  
     __obj.asInstanceOf[Anon_NewValue]
   }
 }

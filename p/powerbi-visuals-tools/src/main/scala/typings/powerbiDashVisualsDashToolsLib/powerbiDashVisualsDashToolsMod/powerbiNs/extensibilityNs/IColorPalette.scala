@@ -17,8 +17,8 @@ object IColorPalette {
       powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.IColorInfo
     ]
   ): IColorPalette = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColor")(getColor)
+    val __obj = js.Dynamic.literal(getColor = getColor)
+  
     __obj.asInstanceOf[IColorPalette]
   }
 }

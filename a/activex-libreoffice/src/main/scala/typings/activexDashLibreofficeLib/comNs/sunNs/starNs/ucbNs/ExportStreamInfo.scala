@@ -19,9 +19,8 @@ object ExportStreamInfo {
     ForceBodies: scala.Boolean,
     Target: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream
   ): ExportStreamInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ForceBodies")(ForceBodies)
-    __obj.updateDynamic("Target")(Target)
+    val __obj = js.Dynamic.literal(ForceBodies = ForceBodies, Target = Target)
+  
     __obj.asInstanceOf[ExportStreamInfo]
   }
 }

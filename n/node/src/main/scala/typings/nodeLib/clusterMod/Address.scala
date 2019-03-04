@@ -18,10 +18,8 @@ object Address {
     addressType: scala.Double | nodeLib.nodeLibStrings.udp4 | nodeLib.nodeLibStrings.udp6,
     port: scala.Double
   ): Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("addressType")(addressType.asInstanceOf[js.Any])
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(address = address, addressType = addressType.asInstanceOf[js.Any], port = port)
+  
     __obj.asInstanceOf[Address]
   }
 }

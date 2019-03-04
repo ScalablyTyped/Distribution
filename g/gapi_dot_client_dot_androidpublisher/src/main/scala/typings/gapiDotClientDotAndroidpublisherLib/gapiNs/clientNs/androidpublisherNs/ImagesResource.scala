@@ -36,11 +36,8 @@ object ImagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ImagesUploadResponse]
     ]
   ): ImagesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deleteall")(deleteall)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(delete = delete, deleteall = deleteall, list = list, upload = upload)
+  
     __obj.asInstanceOf[ImagesResource]
   }
 }

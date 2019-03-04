@@ -12,8 +12,8 @@ trait IActivatedDeferral extends js.Object {
 object IActivatedDeferral {
   @scala.inline
   def apply(complete: js.Function0[scala.Unit]): IActivatedDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[IActivatedDeferral]
   }
 }

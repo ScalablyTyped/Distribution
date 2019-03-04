@@ -13,9 +13,8 @@ trait Anon_Dispatch extends js.Object {
 object Anon_Dispatch {
   @scala.inline
   def apply(dispatch: js.Any, getState: js.Any): Anon_Dispatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(dispatch = dispatch, getState = getState)
+  
     __obj.asInstanceOf[Anon_Dispatch]
   }
 }

@@ -13,8 +13,7 @@ trait BaseOptions extends js.Object {
 object BaseOptions {
   @scala.inline
   def apply(rating: giphyDashApiLib.Rating, fmt: giphyDashApiLib.Format = null): BaseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rating")(rating)
+    val __obj = js.Dynamic.literal(rating = rating)
     if (fmt != null) __obj.updateDynamic("fmt")(fmt)
     __obj.asInstanceOf[BaseOptions]
   }

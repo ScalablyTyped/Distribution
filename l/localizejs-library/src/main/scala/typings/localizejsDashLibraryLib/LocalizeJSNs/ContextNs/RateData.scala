@@ -14,10 +14,8 @@ trait RateData extends js.Object {
 object RateData {
   @scala.inline
   def apply(fromCurrency: java.lang.String, rate: java.lang.String, toCurrency: java.lang.String): RateData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromCurrency")(fromCurrency)
-    __obj.updateDynamic("rate")(rate)
-    __obj.updateDynamic("toCurrency")(toCurrency)
+    val __obj = js.Dynamic.literal(fromCurrency = fromCurrency, rate = rate, toCurrency = toCurrency)
+  
     __obj.asInstanceOf[RateData]
   }
 }

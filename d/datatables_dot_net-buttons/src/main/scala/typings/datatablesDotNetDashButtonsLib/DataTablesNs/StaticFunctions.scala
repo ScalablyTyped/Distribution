@@ -12,8 +12,8 @@ trait StaticFunctions extends js.Object {
 object StaticFunctions {
   @scala.inline
   def apply(Buttons: ButtonStaticFunctions): StaticFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Buttons")(Buttons)
+    val __obj = js.Dynamic.literal(Buttons = Buttons)
+  
     __obj.asInstanceOf[StaticFunctions]
   }
 }

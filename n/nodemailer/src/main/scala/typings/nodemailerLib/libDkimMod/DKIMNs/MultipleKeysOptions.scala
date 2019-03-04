@@ -22,8 +22,7 @@ object MultipleKeysOptions {
     headerFieldNames: java.lang.String = null,
     skipFields: java.lang.String = null
   ): MultipleKeysOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(keys = keys)
     if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir.asInstanceOf[js.Any])
     if (cacheTreshold != null) __obj.updateDynamic("cacheTreshold")(cacheTreshold.asInstanceOf[js.Any])
     if (hashAlgo != null) __obj.updateDynamic("hashAlgo")(hashAlgo)

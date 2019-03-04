@@ -87,32 +87,8 @@ object FlashStroke {
     waveHeight: java.lang.String,
     waveLength: java.lang.String
   ): FlashStroke = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakAtCorners")(breakAtCorners)
-    __obj.updateDynamic("capType")(capType)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("curve")(curve)
-    __obj.updateDynamic("dash1")(dash1)
-    __obj.updateDynamic("dash2")(dash2)
-    __obj.updateDynamic("density")(density)
-    __obj.updateDynamic("dotSize")(dotSize)
-    __obj.updateDynamic("dotSpace")(dotSpace)
-    __obj.updateDynamic("hatchThickness")(hatchThickness)
-    __obj.updateDynamic("jiggle")(jiggle)
-    __obj.updateDynamic("joinType")(joinType)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("miterLimit")(miterLimit)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("scaleType")(scaleType)
-    __obj.updateDynamic("shapeFill")(shapeFill)
-    __obj.updateDynamic("space")(space)
-    __obj.updateDynamic("strokeHinting")(strokeHinting)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("thickness")(thickness)
-    __obj.updateDynamic("variation")(variation)
-    __obj.updateDynamic("waveHeight")(waveHeight)
-    __obj.updateDynamic("waveLength")(waveLength)
+    val __obj = js.Dynamic.literal(breakAtCorners = breakAtCorners, capType = capType, color = color, curve = curve, dash1 = dash1, dash2 = dash2, density = density, dotSize = dotSize, dotSpace = dotSpace, hatchThickness = hatchThickness, jiggle = jiggle, joinType = joinType, length = length, miterLimit = miterLimit, pattern = pattern, rotate = rotate, scaleType = scaleType, shapeFill = shapeFill, space = space, strokeHinting = strokeHinting, style = style, thickness = thickness, variation = variation, waveHeight = waveHeight, waveLength = waveLength)
+  
     __obj.asInstanceOf[FlashStroke]
   }
 }

@@ -19,8 +19,7 @@ object Permissions {
     consentToken: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Permissions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consentToken")(consentToken)
+    val __obj = js.Dynamic.literal(consentToken = consentToken)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Permissions]
   }

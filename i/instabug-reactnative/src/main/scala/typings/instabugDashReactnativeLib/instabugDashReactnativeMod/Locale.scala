@@ -44,23 +44,8 @@ object Locale {
     swedish: java.lang.String,
     turkish: java.lang.String
   ): Locale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arabic")(arabic)
-    __obj.updateDynamic("chineseSimplified")(chineseSimplified)
-    __obj.updateDynamic("chineseTraditional")(chineseTraditional)
-    __obj.updateDynamic("czech")(czech)
-    __obj.updateDynamic("danish")(danish)
-    __obj.updateDynamic("english")(english)
-    __obj.updateDynamic("french")(french)
-    __obj.updateDynamic("german")(german)
-    __obj.updateDynamic("italian")(italian)
-    __obj.updateDynamic("japanese")(japanese)
-    __obj.updateDynamic("polish")(polish)
-    __obj.updateDynamic("portugueseBrazil")(portugueseBrazil)
-    __obj.updateDynamic("russian")(russian)
-    __obj.updateDynamic("spanish")(spanish)
-    __obj.updateDynamic("swedish")(swedish)
-    __obj.updateDynamic("turkish")(turkish)
+    val __obj = js.Dynamic.literal(arabic = arabic, chineseSimplified = chineseSimplified, chineseTraditional = chineseTraditional, czech = czech, danish = danish, english = english, french = french, german = german, italian = italian, japanese = japanese, polish = polish, portugueseBrazil = portugueseBrazil, russian = russian, spanish = spanish, swedish = swedish, turkish = turkish)
+  
     __obj.asInstanceOf[Locale]
   }
 }

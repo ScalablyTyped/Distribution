@@ -194,8 +194,7 @@ object Condition {
     text: Narrative = null,
     verificationStatus: code = null
   ): Condition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(subject = subject)
     if (_abatementBoolean != null) __obj.updateDynamic("_abatementBoolean")(_abatementBoolean)
     if (_abatementDateTime != null) __obj.updateDynamic("_abatementDateTime")(_abatementDateTime)
     if (_abatementString != null) __obj.updateDynamic("_abatementString")(_abatementString)

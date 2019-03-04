@@ -22,8 +22,7 @@ object PortalProps {
     disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
     onRendered: js.Function0[scala.Unit] = null
   ): PortalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal)
     if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered)

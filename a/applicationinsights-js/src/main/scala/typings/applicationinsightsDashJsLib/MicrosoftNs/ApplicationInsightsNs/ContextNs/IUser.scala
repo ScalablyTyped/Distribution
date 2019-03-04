@@ -47,14 +47,8 @@ object IUser {
     id: java.lang.String,
     storeRegion: java.lang.String
   ): IUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountAcquisitionDate")(accountAcquisitionDate)
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("authenticatedId")(authenticatedId)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("storeRegion")(storeRegion)
+    val __obj = js.Dynamic.literal(accountAcquisitionDate = accountAcquisitionDate, accountId = accountId, agent = agent, authenticatedId = authenticatedId, config = config, id = id, storeRegion = storeRegion)
+  
     __obj.asInstanceOf[IUser]
   }
 }

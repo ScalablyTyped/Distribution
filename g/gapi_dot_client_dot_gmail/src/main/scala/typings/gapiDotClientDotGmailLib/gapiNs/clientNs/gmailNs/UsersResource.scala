@@ -42,16 +42,8 @@ object UsersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
     ]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drafts")(drafts)
-    __obj.updateDynamic("getProfile")(getProfile)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("threads")(threads)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(drafts = drafts, getProfile = getProfile, history = history, labels = labels, messages = messages, settings = settings, stop = stop, threads = threads, watch = watch)
+  
     __obj.asInstanceOf[UsersResource]
   }
 }

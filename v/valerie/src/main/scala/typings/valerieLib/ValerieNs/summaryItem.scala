@@ -13,9 +13,8 @@ trait summaryItem extends js.Object {
 object summaryItem {
   @scala.inline
   def apply(message: java.lang.String, name: java.lang.String): summaryItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(message = message, name = name)
+  
     __obj.asInstanceOf[summaryItem]
   }
 }

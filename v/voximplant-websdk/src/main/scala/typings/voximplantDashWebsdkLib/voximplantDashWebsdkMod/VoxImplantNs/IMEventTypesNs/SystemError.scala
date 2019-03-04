@@ -26,9 +26,8 @@ object SystemError {
     errorData: js.Object,
     errorType: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMErrorType
   ): SystemError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorData")(errorData)
-    __obj.updateDynamic("errorType")(errorType)
+    val __obj = js.Dynamic.literal(errorData = errorData, errorType = errorType)
+  
     __obj.asInstanceOf[SystemError]
   }
 }

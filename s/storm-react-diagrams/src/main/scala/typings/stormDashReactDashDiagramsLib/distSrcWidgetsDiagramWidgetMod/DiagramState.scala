@@ -24,12 +24,7 @@ object DiagramState {
     windowListener: js.Any,
     action: stormDashReactDashDiagramsLib.distSrcActionsBaseActionMod.BaseAction = null
   ): DiagramState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagramEngineListener")(diagramEngineListener)
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("renderedNodes")(renderedNodes)
-    __obj.updateDynamic("wasMoved")(wasMoved)
-    __obj.updateDynamic("windowListener")(windowListener)
+    val __obj = js.Dynamic.literal(diagramEngineListener = diagramEngineListener, document = document, renderedNodes = renderedNodes, wasMoved = wasMoved, windowListener = windowListener)
     if (action != null) __obj.updateDynamic("action")(action)
     __obj.asInstanceOf[DiagramState]
   }

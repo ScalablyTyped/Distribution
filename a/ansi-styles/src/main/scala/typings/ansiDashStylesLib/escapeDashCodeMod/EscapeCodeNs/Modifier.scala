@@ -34,15 +34,8 @@ object Modifier {
     strikethrough: CodePair,
     underline: CodePair
   ): Modifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("dim")(dim)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("strikethrough")(strikethrough)
-    __obj.updateDynamic("underline")(underline)
+    val __obj = js.Dynamic.literal(bold = bold, dim = dim, hidden = hidden, inverse = inverse, italic = italic, reset = reset, strikethrough = strikethrough, underline = underline)
+  
     __obj.asInstanceOf[Modifier]
   }
 }

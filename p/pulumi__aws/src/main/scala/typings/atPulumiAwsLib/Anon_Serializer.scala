@@ -12,8 +12,8 @@ trait Anon_Serializer extends js.Object {
 object Anon_Serializer {
   @scala.inline
   def apply(serializer: Anon_OrcSerDe): Anon_Serializer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serializer")(serializer)
+    val __obj = js.Dynamic.literal(serializer = serializer)
+  
     __obj.asInstanceOf[Anon_Serializer]
   }
 }

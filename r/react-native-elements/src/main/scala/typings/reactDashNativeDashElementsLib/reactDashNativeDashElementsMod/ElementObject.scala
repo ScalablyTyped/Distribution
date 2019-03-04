@@ -14,8 +14,8 @@ object ElementObject {
   def apply(
     element: reactLib.reactMod.ReactNs.ReactElement[js.Object] | reactLib.reactMod.ReactNs.ReactType[_]
   ): ElementObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ElementObject]
   }
 }

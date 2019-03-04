@@ -24,10 +24,7 @@ object AsObject {
     ],
     parameter: java.lang.String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compilerVersion")(compilerVersion)
-    __obj.updateDynamic("fileToGenerateList")(fileToGenerateList)
-    __obj.updateDynamic("protoFileList")(protoFileList)
+    val __obj = js.Dynamic.literal(compilerVersion = compilerVersion, fileToGenerateList = fileToGenerateList, protoFileList = protoFileList)
     if (parameter != null) __obj.updateDynamic("parameter")(parameter)
     __obj.asInstanceOf[AsObject]
   }

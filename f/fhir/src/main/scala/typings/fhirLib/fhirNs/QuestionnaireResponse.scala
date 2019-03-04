@@ -94,8 +94,7 @@ object QuestionnaireResponse {
     subject: Reference = null,
     text: Narrative = null
   ): QuestionnaireResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_authored != null) __obj.updateDynamic("_authored")(_authored)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

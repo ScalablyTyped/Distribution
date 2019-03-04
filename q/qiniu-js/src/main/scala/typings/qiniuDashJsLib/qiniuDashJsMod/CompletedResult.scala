@@ -30,14 +30,7 @@ object CompletedResult {
     avinfo: AvAudioInfo = null,
     imageInfo: AvImageInfo = null
   ): CompletedResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("persistentid")(persistentid)
-    __obj.updateDynamic("sec")(sec)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(bucket = bucket, ext = ext, key = key, name = name, persistentid = persistentid, sec = sec, size = size)
     if (avinfo != null) __obj.updateDynamic("avinfo")(avinfo)
     if (imageInfo != null) __obj.updateDynamic("imageInfo")(imageInfo)
     __obj.asInstanceOf[CompletedResult]

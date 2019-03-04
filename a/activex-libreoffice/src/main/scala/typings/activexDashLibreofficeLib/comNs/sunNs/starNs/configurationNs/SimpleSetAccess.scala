@@ -46,23 +46,8 @@ object SimpleSetAccess {
     ],
     unescapeString: js.Function1[java.lang.String, java.lang.String]
   ): SimpleSetAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementTemplateName")(ElementTemplateName)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("escapeString")(escapeString)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementTemplateName")(getElementTemplateName)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("unescapeString")(unescapeString)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementTemplateName = ElementTemplateName, ElementType = ElementType, acquire = acquire, addContainerListener = addContainerListener, escapeString = escapeString, getByName = getByName, getElementNames = getElementNames, getElementTemplateName = getElementTemplateName, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, queryInterface = queryInterface, release = release, removeContainerListener = removeContainerListener, unescapeString = unescapeString)
+  
     __obj.asInstanceOf[SimpleSetAccess]
   }
 }

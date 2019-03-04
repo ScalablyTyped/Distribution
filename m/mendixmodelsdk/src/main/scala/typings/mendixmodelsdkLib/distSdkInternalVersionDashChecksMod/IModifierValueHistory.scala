@@ -14,8 +14,7 @@ trait IModifierValueHistory extends js.Object {
 object IModifierValueHistory {
   @scala.inline
   def apply(currentValue: scala.Boolean, changedIn: js.Array[java.lang.String] = null): IModifierValueHistory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentValue")(currentValue)
+    val __obj = js.Dynamic.literal(currentValue = currentValue)
     if (changedIn != null) __obj.updateDynamic("changedIn")(changedIn)
     __obj.asInstanceOf[IModifierValueHistory]
   }

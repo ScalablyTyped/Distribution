@@ -27,8 +27,7 @@ object IAsAsyncOptions {
     onError: js.Function1[/* error */ nodeLib.Error, scala.Unit] = null,
     onLoad: js.Function0[scala.Unit] = null
   ): IAsAsyncOptions[TProps] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(load = load)
     if (onError != null) __obj.updateDynamic("onError")(onError)
     if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
     __obj.asInstanceOf[IAsAsyncOptions[TProps]]

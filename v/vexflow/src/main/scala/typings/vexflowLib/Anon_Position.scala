@@ -22,9 +22,7 @@ object Anon_Position {
     superscript: java.lang.String = null,
     text: java.lang.String = null
   ): Anon_Position = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(start = start, stop = stop)
     if (position != null) __obj.updateDynamic("position")(position)
     if (superscript != null) __obj.updateDynamic("superscript")(superscript)
     if (text != null) __obj.updateDynamic("text")(text)

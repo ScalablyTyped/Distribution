@@ -16,9 +16,8 @@ object Plugin {
     print: js.Function5[js.Any, Print, Indent, Options, Colors, java.lang.String],
     test: js.Function1[js.Any, scala.Boolean]
   ): Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("print")(print)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(print = print, test = test)
+  
     __obj.asInstanceOf[Plugin]
   }
 }

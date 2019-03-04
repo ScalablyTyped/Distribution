@@ -22,12 +22,8 @@ object Renderer {
     resize: js.Function0[Sigma],
     settings: js.Function1[Settings, scala.Unit]
   ): Renderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(container = container, refresh = refresh, render = render, resize = resize, settings = settings)
+  
     __obj.asInstanceOf[Renderer]
   }
 }

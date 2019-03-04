@@ -155,9 +155,7 @@ object Axis {
     values: js.Array[_] | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     zindex: scala.Int | scala.Double = null
   ): Axis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orient")(orient)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(orient = orient, scale = scale)
     if (bandPosition != null) __obj.updateDynamic("bandPosition")(bandPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(domain)) __obj.updateDynamic("domain")(domain)
     if (domainColor != null) __obj.updateDynamic("domainColor")(domainColor.asInstanceOf[js.Any])

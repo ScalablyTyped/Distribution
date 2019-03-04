@@ -20,11 +20,8 @@ object Anon_ClientIDOrigins {
     steps: js.Array[prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S]],
     version: scala.Double
   ): Anon_ClientIDOrigins[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
-    __obj.updateDynamic("origins")(origins)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], origins = origins, steps = steps, version = version)
+  
     __obj.asInstanceOf[Anon_ClientIDOrigins[S]]
   }
 }

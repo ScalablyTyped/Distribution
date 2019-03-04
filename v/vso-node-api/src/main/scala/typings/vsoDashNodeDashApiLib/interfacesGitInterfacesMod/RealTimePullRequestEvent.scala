@@ -19,9 +19,8 @@ trait RealTimePullRequestEvent extends js.Object {
 object RealTimePullRequestEvent {
   @scala.inline
   def apply(eventId: java.lang.String, pullRequestId: scala.Double): RealTimePullRequestEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventId")(eventId)
-    __obj.updateDynamic("pullRequestId")(pullRequestId)
+    val __obj = js.Dynamic.literal(eventId = eventId, pullRequestId = pullRequestId)
+  
     __obj.asInstanceOf[RealTimePullRequestEvent]
   }
 }

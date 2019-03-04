@@ -22,12 +22,8 @@ object Anon_Authorizationid {
     intent: java.lang.String,
     state: java.lang.String
   ): Anon_Authorizationid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorization_id")(authorization_id)
-    __obj.updateDynamic("create_time")(create_time)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(authorization_id = authorization_id, create_time = create_time, id = id, intent = intent, state = state)
+  
     __obj.asInstanceOf[Anon_Authorizationid]
   }
 }

@@ -28,15 +28,8 @@ object BudgetOrder {
     getStartDateTime: js.Function0[AdWordsDate],
     getTotalAdjustments: js.Function0[scala.Double]
   ): BudgetOrder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBillingAccount")(getBillingAccount)
-    __obj.updateDynamic("getEndDatetime")(getEndDatetime)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPoNumber")(getPoNumber)
-    __obj.updateDynamic("getSpendingLimit")(getSpendingLimit)
-    __obj.updateDynamic("getStartDateTime")(getStartDateTime)
-    __obj.updateDynamic("getTotalAdjustments")(getTotalAdjustments)
+    val __obj = js.Dynamic.literal(getBillingAccount = getBillingAccount, getEndDatetime = getEndDatetime, getId = getId, getName = getName, getPoNumber = getPoNumber, getSpendingLimit = getSpendingLimit, getStartDateTime = getStartDateTime, getTotalAdjustments = getTotalAdjustments)
+  
     __obj.asInstanceOf[BudgetOrder]
   }
 }

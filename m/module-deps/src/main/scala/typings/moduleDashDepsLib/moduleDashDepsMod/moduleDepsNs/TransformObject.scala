@@ -24,13 +24,8 @@ object TransformObject {
     id: java.lang.String,
     source: java.lang.String
   ): TransformObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deps")(deps)
-    __obj.updateDynamic("entry")(entry)
-    __obj.updateDynamic("expose")(expose)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(deps = deps, entry = entry, expose = expose, file = file, id = id, source = source)
+  
     __obj.asInstanceOf[TransformObject]
   }
 }

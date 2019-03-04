@@ -18,13 +18,8 @@ object ResultBuilder {
     rowCount: scala.Double,
     rows: js.Array[_]
   ): ResultBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRow")(addRow)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("oid")(oid)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(addRow = addRow, command = command, fields = fields, oid = oid, rowCount = rowCount, rows = rows)
+  
     __obj.asInstanceOf[ResultBuilder]
   }
 }

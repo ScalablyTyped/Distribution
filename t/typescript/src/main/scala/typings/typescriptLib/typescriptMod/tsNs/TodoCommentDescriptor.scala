@@ -13,9 +13,8 @@ trait TodoCommentDescriptor extends js.Object {
 object TodoCommentDescriptor {
   @scala.inline
   def apply(priority: scala.Double, text: java.lang.String): TodoCommentDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(priority = priority, text = text)
+  
     __obj.asInstanceOf[TodoCommentDescriptor]
   }
 }

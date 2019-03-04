@@ -28,11 +28,7 @@ object ElementChangeResponse {
     error: stripeDashV3Lib.stripeNs.Error = null,
     value: stripeDashV3Lib.Anon_PostalCode = null
   ): ElementChangeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brand")(brand)
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("elementType")(elementType)
-    __obj.updateDynamic("empty")(empty)
+    val __obj = js.Dynamic.literal(brand = brand, complete = complete, elementType = elementType, empty = empty)
     if (bankName != null) __obj.updateDynamic("bankName")(bankName)
     if (country != null) __obj.updateDynamic("country")(country)
     if (error != null) __obj.updateDynamic("error")(error)

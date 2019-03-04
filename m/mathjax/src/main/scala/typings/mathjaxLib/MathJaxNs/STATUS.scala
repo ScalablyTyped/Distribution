@@ -15,9 +15,8 @@ trait STATUS extends js.Object {
 object STATUS {
   @scala.inline
   def apply(ERROR: java.lang.String, OK: java.lang.String): STATUS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("OK")(OK)
+    val __obj = js.Dynamic.literal(ERROR = ERROR, OK = OK)
+  
     __obj.asInstanceOf[STATUS]
   }
 }

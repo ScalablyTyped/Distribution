@@ -99,22 +99,8 @@ object XTreeNode {
     getParent: js.Function0[XTreeNode],
     hasChildrenOnDemand: js.Function0[scala.Boolean]
   ): XTreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChildCount")(ChildCount)
-    __obj.updateDynamic("CollapsedGraphicURL")(CollapsedGraphicURL)
-    __obj.updateDynamic("DisplayValue")(DisplayValue)
-    __obj.updateDynamic("ExpandedGraphicURL")(ExpandedGraphicURL)
-    __obj.updateDynamic("NodeGraphicURL")(NodeGraphicURL)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("getChildAt")(getChildAt)
-    __obj.updateDynamic("getChildCount")(getChildCount)
-    __obj.updateDynamic("getCollapsedGraphicURL")(getCollapsedGraphicURL)
-    __obj.updateDynamic("getDisplayValue")(getDisplayValue)
-    __obj.updateDynamic("getExpandedGraphicURL")(getExpandedGraphicURL)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getNodeGraphicURL")(getNodeGraphicURL)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("hasChildrenOnDemand")(hasChildrenOnDemand)
+    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, getChildAt = getChildAt, getChildCount = getChildCount, getCollapsedGraphicURL = getCollapsedGraphicURL, getDisplayValue = getDisplayValue, getExpandedGraphicURL = getExpandedGraphicURL, getIndex = getIndex, getNodeGraphicURL = getNodeGraphicURL, getParent = getParent, hasChildrenOnDemand = hasChildrenOnDemand)
+  
     __obj.asInstanceOf[XTreeNode]
   }
 }

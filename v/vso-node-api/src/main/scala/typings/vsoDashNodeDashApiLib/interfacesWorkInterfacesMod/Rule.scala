@@ -22,12 +22,8 @@ object Rule {
     name: java.lang.String,
     settings: attribute
   ): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clauses")(clauses)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(clauses = clauses, filter = filter, isEnabled = isEnabled, name = name, settings = settings)
+  
     __obj.asInstanceOf[Rule]
   }
 }

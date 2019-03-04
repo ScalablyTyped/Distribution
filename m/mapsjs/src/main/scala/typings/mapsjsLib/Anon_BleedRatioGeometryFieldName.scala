@@ -18,9 +18,7 @@ object Anon_BleedRatioGeometryFieldName {
     valueFieldNames: js.Array[java.lang.String],
     bleedRatio: scala.Int | scala.Double = null
   ): Anon_BleedRatioGeometryFieldName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geometryFieldName")(geometryFieldName)
-    __obj.updateDynamic("valueFieldNames")(valueFieldNames)
+    val __obj = js.Dynamic.literal(geometryFieldName = geometryFieldName, valueFieldNames = valueFieldNames)
     if (bleedRatio != null) __obj.updateDynamic("bleedRatio")(bleedRatio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BleedRatioGeometryFieldName]
   }

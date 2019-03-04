@@ -74,33 +74,8 @@ object BootstrapClientMenuItem {
     name: java.lang.String,
     parent: BootstrapClientMenuItem
   ): BootstrapClientMenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBadgeIconCssClass")(GetBadgeIconCssClass)
-    __obj.updateDynamic("GetBadgeText")(GetBadgeText)
-    __obj.updateDynamic("GetChecked")(GetChecked)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetIconCssClass")(GetIconCssClass)
-    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
-    __obj.updateDynamic("GetItem")(GetItem)
-    __obj.updateDynamic("GetItemByName")(GetItemByName)
-    __obj.updateDynamic("GetItemCount")(GetItemCount)
-    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetBadgeIconCssClass")(SetBadgeIconCssClass)
-    __obj.updateDynamic("SetBadgeText")(SetBadgeText)
-    __obj.updateDynamic("SetChecked")(SetChecked)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetIconCssClass")(SetIconCssClass)
-    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
-    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("indexPath")(indexPath)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetChecked = GetChecked, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetChecked = SetChecked, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, indexPath = indexPath, menu = menu, name = name, parent = parent)
+  
     __obj.asInstanceOf[BootstrapClientMenuItem]
   }
 }

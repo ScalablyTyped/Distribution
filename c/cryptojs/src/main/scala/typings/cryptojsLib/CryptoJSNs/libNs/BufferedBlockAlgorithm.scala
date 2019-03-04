@@ -19,13 +19,8 @@ object BufferedBlockAlgorithm {
     mixIn: js.Function1[js.Object, scala.Unit],
     reset: js.Function0[scala.Unit]
   ): BufferedBlockAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("mixIn")(mixIn)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(clone = clone, create = create, extend = extend, init = init, mixIn = mixIn, reset = reset)
+  
     __obj.asInstanceOf[BufferedBlockAlgorithm]
   }
 }

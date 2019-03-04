@@ -52,7 +52,8 @@ object MarkdownAbstractSyntaxTree {
     value: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): MarkdownAbstractSyntaxTree = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (align != null) __obj.updateDynamic("align")(align)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)

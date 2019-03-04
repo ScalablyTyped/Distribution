@@ -15,8 +15,8 @@ trait GetOpts extends js.Object {
 object GetOpts {
   @scala.inline
   def apply(doNotParse: scala.Boolean): GetOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doNotParse")(doNotParse)
+    val __obj = js.Dynamic.literal(doNotParse = doNotParse)
+  
     __obj.asInstanceOf[GetOpts]
   }
 }

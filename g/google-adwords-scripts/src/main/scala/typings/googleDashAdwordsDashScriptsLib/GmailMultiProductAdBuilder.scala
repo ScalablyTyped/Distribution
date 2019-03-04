@@ -47,27 +47,8 @@ object GmailMultiProductAdBuilder {
     withSubject: js.Function1[java.lang.String, GmailMultiProductAdBuilder[GmailMultiProductAd]],
     withTrackingTemplate: js.Function1[java.lang.String, GmailMultiProductAdBuilder[GmailImageAd]]
   ): GmailMultiProductAdBuilder[GmailMultiProductAd] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withAdvertiser")(withAdvertiser)
-    __obj.updateDynamic("withContent")(withContent)
-    __obj.updateDynamic("withCustomParameters")(withCustomParameters)
-    __obj.updateDynamic("withDescription")(withDescription)
-    __obj.updateDynamic("withFinalUrl")(withFinalUrl)
-    __obj.updateDynamic("withHeader")(withHeader)
-    __obj.updateDynamic("withHeadline")(withHeadline)
-    __obj.updateDynamic("withHeadlineColor")(withHeadlineColor)
-    __obj.updateDynamic("withItemButtonCallsToAction")(withItemButtonCallsToAction)
-    __obj.updateDynamic("withItemButtonFinalMobileUrls")(withItemButtonFinalMobileUrls)
-    __obj.updateDynamic("withItemButtonFinalUrls")(withItemButtonFinalUrls)
-    __obj.updateDynamic("withItemButtonTrackingTemplates")(withItemButtonTrackingTemplates)
-    __obj.updateDynamic("withItemImages")(withItemImages)
-    __obj.updateDynamic("withItemTitle")(withItemTitle)
-    __obj.updateDynamic("withLogo")(withLogo)
-    __obj.updateDynamic("withMobileFinalUrl")(withMobileFinalUrl)
-    __obj.updateDynamic("withName")(withName)
-    __obj.updateDynamic("withSubject")(withSubject)
-    __obj.updateDynamic("withTrackingTemplate")(withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = build, withAdvertiser = withAdvertiser, withContent = withContent, withCustomParameters = withCustomParameters, withDescription = withDescription, withFinalUrl = withFinalUrl, withHeader = withHeader, withHeadline = withHeadline, withHeadlineColor = withHeadlineColor, withItemButtonCallsToAction = withItemButtonCallsToAction, withItemButtonFinalMobileUrls = withItemButtonFinalMobileUrls, withItemButtonFinalUrls = withItemButtonFinalUrls, withItemButtonTrackingTemplates = withItemButtonTrackingTemplates, withItemImages = withItemImages, withItemTitle = withItemTitle, withLogo = withLogo, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withSubject = withSubject, withTrackingTemplate = withTrackingTemplate)
+  
     __obj.asInstanceOf[GmailMultiProductAdBuilder[GmailMultiProductAd]]
   }
 }

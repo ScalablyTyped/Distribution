@@ -22,12 +22,8 @@ object Anon_AccessType {
     principals: js.Array[_],
     property: java.lang.String
   ): Anon_AccessType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessType")(accessType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    __obj.updateDynamic("principals")(principals)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(accessType = accessType, id = id, model = model.asInstanceOf[js.Any], principals = principals, property = property)
+  
     __obj.asInstanceOf[Anon_AccessType]
   }
 }

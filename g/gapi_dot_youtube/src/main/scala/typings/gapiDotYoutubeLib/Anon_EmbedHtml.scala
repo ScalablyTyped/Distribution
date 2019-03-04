@@ -15,8 +15,8 @@ trait Anon_EmbedHtml extends js.Object {
 object Anon_EmbedHtml {
   @scala.inline
   def apply(embedHtml: java.lang.String): Anon_EmbedHtml = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("embedHtml")(embedHtml)
+    val __obj = js.Dynamic.literal(embedHtml = embedHtml)
+  
     __obj.asInstanceOf[Anon_EmbedHtml]
   }
 }

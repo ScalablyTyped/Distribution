@@ -30,16 +30,8 @@ object Response {
     status: scala.Double,
     statusText: java.lang.String
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allRequestResponses")(allRequestResponses)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("isOkStatusCode")(isOkStatusCode)
-    __obj.updateDynamic("redirectedToUrl")(redirectedToUrl)
-    __obj.updateDynamic("requestHeaders")(requestHeaders)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(allRequestResponses = allRequestResponses, body = body, duration = duration, headers = headers, isOkStatusCode = isOkStatusCode, redirectedToUrl = redirectedToUrl, requestHeaders = requestHeaders, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[Response]
   }
 }

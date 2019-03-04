@@ -12,8 +12,8 @@ trait IconToggleEvent extends js.Object {
 object IconToggleEvent {
   @scala.inline
   def apply(isOn: scala.Boolean): IconToggleEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOn")(isOn)
+    val __obj = js.Dynamic.literal(isOn = isOn)
+  
     __obj.asInstanceOf[IconToggleEvent]
   }
 }

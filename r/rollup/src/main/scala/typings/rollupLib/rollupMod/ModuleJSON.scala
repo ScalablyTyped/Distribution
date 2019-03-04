@@ -35,17 +35,7 @@ object ModuleJSON {
     transformAssets: js.Array[Asset] | scala.Unit,
     transformDependencies: js.Array[java.lang.String] = null
   ): ModuleJSON = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("customTransformCache")(customTransformCache)
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("originalCode")(originalCode)
-    __obj.updateDynamic("originalSourcemap")(originalSourcemap.asInstanceOf[js.Any])
-    __obj.updateDynamic("resolvedIds")(resolvedIds)
-    __obj.updateDynamic("sourcemapChain")(sourcemapChain)
-    __obj.updateDynamic("transformAssets")(transformAssets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ast = ast, code = code, customTransformCache = customTransformCache, dependencies = dependencies, id = id, originalCode = originalCode, originalSourcemap = originalSourcemap.asInstanceOf[js.Any], resolvedIds = resolvedIds, sourcemapChain = sourcemapChain, transformAssets = transformAssets.asInstanceOf[js.Any])
     if (transformDependencies != null) __obj.updateDynamic("transformDependencies")(transformDependencies)
     __obj.asInstanceOf[ModuleJSON]
   }

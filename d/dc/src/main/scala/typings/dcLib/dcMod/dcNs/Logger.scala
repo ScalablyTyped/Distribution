@@ -20,11 +20,8 @@ object Logger {
     enableDebugLog: scala.Boolean,
     warn: js.Function1[java.lang.String, scala.Unit]
   ): Logger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("deprecate")(deprecate)
-    __obj.updateDynamic("enableDebugLog")(enableDebugLog)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, deprecate = deprecate, enableDebugLog = enableDebugLog, warn = warn)
+  
     __obj.asInstanceOf[Logger]
   }
 }

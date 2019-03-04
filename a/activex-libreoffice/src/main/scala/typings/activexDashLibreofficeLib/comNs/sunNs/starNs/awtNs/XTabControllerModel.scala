@@ -73,21 +73,8 @@ object XTabControllerModel {
     ],
     setGroupControl: js.Function1[scala.Boolean, scala.Unit]
   ): XTabControllerModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ControlModels")(ControlModels)
-    __obj.updateDynamic("GroupControl")(GroupControl)
-    __obj.updateDynamic("GroupCount")(GroupCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControlModels")(getControlModels)
-    __obj.updateDynamic("getGroup")(getGroup)
-    __obj.updateDynamic("getGroupByName")(getGroupByName)
-    __obj.updateDynamic("getGroupControl")(getGroupControl)
-    __obj.updateDynamic("getGroupCount")(getGroupCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setControlModels")(setControlModels)
-    __obj.updateDynamic("setGroup")(setGroup)
-    __obj.updateDynamic("setGroupControl")(setGroupControl)
+    val __obj = js.Dynamic.literal(ControlModels = ControlModels, GroupControl = GroupControl, GroupCount = GroupCount, acquire = acquire, getControlModels = getControlModels, getGroup = getGroup, getGroupByName = getGroupByName, getGroupControl = getGroupControl, getGroupCount = getGroupCount, queryInterface = queryInterface, release = release, setControlModels = setControlModels, setGroup = setGroup, setGroupControl = setGroupControl)
+  
     __obj.asInstanceOf[XTabControllerModel]
   }
 }

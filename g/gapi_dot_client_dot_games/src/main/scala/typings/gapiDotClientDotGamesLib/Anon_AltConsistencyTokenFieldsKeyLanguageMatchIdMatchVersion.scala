@@ -54,9 +54,7 @@ object Anon_AltConsistencyTokenFieldsKeyLanguageMatchIdMatchVersion {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltConsistencyTokenFieldsKeyLanguageMatchIdMatchVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchId")(matchId)
-    __obj.updateDynamic("matchVersion")(matchVersion)
+    val __obj = js.Dynamic.literal(matchId = matchId, matchVersion = matchVersion)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

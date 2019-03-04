@@ -167,8 +167,7 @@ object ExpansionPanelProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null
   ): ExpansionPanelProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(animateContent)) __obj.updateDynamic("animateContent")(animateContent)
     if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])

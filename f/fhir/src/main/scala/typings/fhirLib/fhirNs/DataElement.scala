@@ -159,9 +159,7 @@ object DataElement {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): DataElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(element = element, status = status)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)

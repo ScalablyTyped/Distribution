@@ -20,9 +20,7 @@ object ISubResource {
     plural: java.lang.String = null,
     populate: java.lang.String = null
   ): ISubResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentResource")(parentResource)
+    val __obj = js.Dynamic.literal(name = name, parentResource = parentResource)
     if (plural != null) __obj.updateDynamic("plural")(plural)
     if (populate != null) __obj.updateDynamic("populate")(populate)
     __obj.asInstanceOf[ISubResource]

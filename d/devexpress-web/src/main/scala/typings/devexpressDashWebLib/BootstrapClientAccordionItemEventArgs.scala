@@ -34,11 +34,8 @@ object BootstrapClientAccordionItemEventArgs {
     item: BootstrapClientAccordionItem,
     processOnServer: scala.Boolean
   ): BootstrapClientAccordionItemEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, item = item, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[BootstrapClientAccordionItemEventArgs]
   }
 }

@@ -18,8 +18,7 @@ object Config {
     frequency: scala.Int | scala.Double = null,
     range: scala.Int | scala.Double = null
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]

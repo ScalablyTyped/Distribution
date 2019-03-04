@@ -12,8 +12,8 @@ trait IWebErrorStatics extends js.Object {
 object IWebErrorStatics {
   @scala.inline
   def apply(getStatus: js.Function1[scala.Double, WebErrorStatus]): IWebErrorStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(getStatus)
+    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  
     __obj.asInstanceOf[IWebErrorStatics]
   }
 }

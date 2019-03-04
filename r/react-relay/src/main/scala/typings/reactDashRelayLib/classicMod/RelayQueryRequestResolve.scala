@@ -12,8 +12,8 @@ trait RelayQueryRequestResolve extends js.Object {
 object RelayQueryRequestResolve {
   @scala.inline
   def apply(response: js.Any): RelayQueryRequestResolve = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(response = response)
+  
     __obj.asInstanceOf[RelayQueryRequestResolve]
   }
 }

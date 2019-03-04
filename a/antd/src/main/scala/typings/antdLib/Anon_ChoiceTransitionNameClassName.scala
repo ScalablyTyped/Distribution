@@ -34,16 +34,8 @@ object Anon_ChoiceTransitionNameClassName {
     ],
     transitionName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   ): Anon_ChoiceTransitionNameClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("choiceTransitionName")(choiceTransitionName)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("notFoundContent")(notFoundContent)
-    __obj.updateDynamic("optionLabelProp")(optionLabelProp)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("showSearch")(showSearch)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("transitionName")(transitionName)
+    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName, className = className, id = id, notFoundContent = notFoundContent, optionLabelProp = optionLabelProp, prefixCls = prefixCls, showSearch = showSearch, size = size, transitionName = transitionName)
+  
     __obj.asInstanceOf[Anon_ChoiceTransitionNameClassName]
   }
 }

@@ -24,12 +24,8 @@ object Anon_Basedir {
     global: js.Function0[java.lang.String],
     process: js.Function1[java.lang.String, java.lang.String]
   ): Anon_Basedir = {
-    val __obj = js.Dynamic.literal(`Buffer.isBuffer` = `Buffer.isBuffer`)
-    __obj.updateDynamic("Buffer")(Buffer)
-    __obj.updateDynamic("__dirname")(__dirname)
-    __obj.updateDynamic("__filename")(__filename)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("process")(process)
+    val __obj = js.Dynamic.literal(Buffer = Buffer, __dirname = __dirname, __filename = __filename, global = global, process = process)
+    __obj.updateDynamic("Buffer.isBuffer")(`Buffer.isBuffer`)
     __obj.asInstanceOf[Anon_Basedir]
   }
 }

@@ -53,17 +53,8 @@ object HidDeviceInfo {
     serialNumber: java.lang.String,
     vendorId: chromeDashAppsLib.chromeNs.integer
   ): HidDeviceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collections")(collections)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("maxFeatureReportSize")(maxFeatureReportSize)
-    __obj.updateDynamic("maxInputReportSize")(maxInputReportSize)
-    __obj.updateDynamic("maxOutputReportSize")(maxOutputReportSize)
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("productName")(productName)
-    __obj.updateDynamic("reportDescriptor")(reportDescriptor)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(collections = collections, deviceId = deviceId, maxFeatureReportSize = maxFeatureReportSize, maxInputReportSize = maxInputReportSize, maxOutputReportSize = maxOutputReportSize, productId = productId, productName = productName, reportDescriptor = reportDescriptor, serialNumber = serialNumber, vendorId = vendorId)
+  
     __obj.asInstanceOf[HidDeviceInfo]
   }
 }

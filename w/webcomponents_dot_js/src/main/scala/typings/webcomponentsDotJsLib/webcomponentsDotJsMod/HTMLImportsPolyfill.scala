@@ -26,14 +26,8 @@ object HTMLImportsPolyfill {
     useNative: scala.Boolean,
     whenReady: js.Function1[js.Function0[scala.Unit], scala.Unit]
   ): HTMLImportsPolyfill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IMPORT_LINK_TYPE")(IMPORT_LINK_TYPE)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("isIE")(isIE)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("rootDocument")(rootDocument)
-    __obj.updateDynamic("useNative")(useNative)
-    __obj.updateDynamic("whenReady")(whenReady)
+    val __obj = js.Dynamic.literal(IMPORT_LINK_TYPE = IMPORT_LINK_TYPE, flags = flags, isIE = isIE, ready = ready, rootDocument = rootDocument, useNative = useNative, whenReady = whenReady)
+  
     __obj.asInstanceOf[HTMLImportsPolyfill]
   }
 }

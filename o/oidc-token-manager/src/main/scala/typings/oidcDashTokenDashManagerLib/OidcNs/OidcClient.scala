@@ -36,19 +36,8 @@ object OidcClient {
     validateIdTokenAndAccessTokenAsync: js.Function3[java.lang.String, java.lang.String, java.lang.String, DefaultPromise],
     validateIdTokenAsync: js.Function3[java.lang.String, java.lang.String, java.lang.String, DefaultPromise]
   ): OidcClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createLogoutRequestAsync")(createLogoutRequestAsync)
-    __obj.updateDynamic("createTokenRequestAsync")(createTokenRequestAsync)
-    __obj.updateDynamic("isOAuth")(isOAuth)
-    __obj.updateDynamic("isOidc")(isOidc)
-    __obj.updateDynamic("loadAuthorizationEndpoint")(loadAuthorizationEndpoint)
-    __obj.updateDynamic("loadMetadataAsync")(loadMetadataAsync)
-    __obj.updateDynamic("loadUserProfile")(loadUserProfile)
-    __obj.updateDynamic("loadX509SigningKeyAsync")(loadX509SigningKeyAsync)
-    __obj.updateDynamic("processResponseAsync")(processResponseAsync)
-    __obj.updateDynamic("validateAccessTokenAsync")(validateAccessTokenAsync)
-    __obj.updateDynamic("validateIdTokenAndAccessTokenAsync")(validateIdTokenAndAccessTokenAsync)
-    __obj.updateDynamic("validateIdTokenAsync")(validateIdTokenAsync)
+    val __obj = js.Dynamic.literal(createLogoutRequestAsync = createLogoutRequestAsync, createTokenRequestAsync = createTokenRequestAsync, isOAuth = isOAuth, isOidc = isOidc, loadAuthorizationEndpoint = loadAuthorizationEndpoint, loadMetadataAsync = loadMetadataAsync, loadUserProfile = loadUserProfile, loadX509SigningKeyAsync = loadX509SigningKeyAsync, processResponseAsync = processResponseAsync, validateAccessTokenAsync = validateAccessTokenAsync, validateIdTokenAndAccessTokenAsync = validateIdTokenAndAccessTokenAsync, validateIdTokenAsync = validateIdTokenAsync)
+  
     __obj.asInstanceOf[OidcClient]
   }
 }

@@ -24,13 +24,8 @@ object Anon_AttrMisc {
     x: scala.Double,
     y: scala.Double
   ): Anon_AttrMisc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr)
-    __obj.updateDynamic("misc")(misc)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(attr = attr, misc = misc, offset = offset, text = text, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_AttrMisc]
   }
 }

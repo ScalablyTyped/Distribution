@@ -13,8 +13,7 @@ trait GeneratorResult extends js.Object {
 object GeneratorResult {
   @scala.inline
   def apply(code: java.lang.String, map: atBabelGeneratorLib.Anon_File = null): GeneratorResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (map != null) __obj.updateDynamic("map")(map)
     __obj.asInstanceOf[GeneratorResult]
   }

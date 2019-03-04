@@ -12,8 +12,8 @@ trait IELangSearchEvents extends js.Object {
 object IELangSearchEvents {
   @scala.inline
   def apply(select: jqueryLib.JQueryDeferred[_]): IELangSearchEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(select = select)
+  
     __obj.asInstanceOf[IELangSearchEvents]
   }
 }

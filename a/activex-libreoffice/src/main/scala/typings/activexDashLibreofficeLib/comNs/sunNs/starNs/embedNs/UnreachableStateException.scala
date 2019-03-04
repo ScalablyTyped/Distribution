@@ -22,11 +22,8 @@ object UnreachableStateException {
     Message: java.lang.String,
     NextState: scala.Double
   ): UnreachableStateException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("CurrentState")(CurrentState)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("NextState")(NextState)
+    val __obj = js.Dynamic.literal(Context = Context, CurrentState = CurrentState, Message = Message, NextState = NextState)
+  
     __obj.asInstanceOf[UnreachableStateException]
   }
 }

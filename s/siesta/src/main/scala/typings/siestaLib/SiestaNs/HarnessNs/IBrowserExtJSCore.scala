@@ -21,10 +21,8 @@ object IBrowserExtJSCore {
     excludeCoverageUnits: stdLib.RegExp,
     installLoaderInstrumentationHook: scala.Boolean
   ): IBrowserExtJSCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coverageUnit")(coverageUnit)
-    __obj.updateDynamic("excludeCoverageUnits")(excludeCoverageUnits)
-    __obj.updateDynamic("installLoaderInstrumentationHook")(installLoaderInstrumentationHook)
+    val __obj = js.Dynamic.literal(coverageUnit = coverageUnit, excludeCoverageUnits = excludeCoverageUnits, installLoaderInstrumentationHook = installLoaderInstrumentationHook)
+  
     __obj.asInstanceOf[IBrowserExtJSCore]
   }
 }

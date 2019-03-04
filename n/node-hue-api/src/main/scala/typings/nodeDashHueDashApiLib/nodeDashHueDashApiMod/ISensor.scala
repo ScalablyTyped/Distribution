@@ -30,13 +30,8 @@ object ISensor {
     id: java.lang.String = null,
     uniqueid: java.lang.String = null
   ): ISensor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("manufacturername")(manufacturername)
-    __obj.updateDynamic("modelid")(modelid)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("swversion")(swversion)
+    val __obj = js.Dynamic.literal(config = config, manufacturername = manufacturername, modelid = modelid, name = name, state = state, swversion = swversion)
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (uniqueid != null) __obj.updateDynamic("uniqueid")(uniqueid)
     __obj.asInstanceOf[ISensor]

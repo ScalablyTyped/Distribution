@@ -31,9 +31,7 @@ object IFieldInfo {
     multiValue: js.UndefOr[scala.Boolean] = js.undefined,
     textDirection: TextDirection = null
   ): IFieldInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldKey")(fieldKey)
-    __obj.updateDynamic("propertyTypeId")(propertyTypeId)
+    val __obj = js.Dynamic.literal(fieldKey = fieldKey, propertyTypeId = propertyTypeId)
     if (!js.isUndefined(dateOnly)) __obj.updateDynamic("dateOnly")(dateOnly)
     if (defaultCellStyleId != null) __obj.updateDynamic("defaultCellStyleId")(defaultCellStyleId)
     if (editMode != null) __obj.updateDynamic("editMode")(editMode)

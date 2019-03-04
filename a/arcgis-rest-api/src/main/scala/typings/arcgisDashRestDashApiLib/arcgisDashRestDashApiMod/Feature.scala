@@ -13,9 +13,8 @@ trait Feature extends js.Object {
 object Feature {
   @scala.inline
   def apply(attributes: js.Any, geometry: Geometry): Feature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("geometry")(geometry)
+    val __obj = js.Dynamic.literal(attributes = attributes, geometry = geometry)
+  
     __obj.asInstanceOf[Feature]
   }
 }

@@ -19,10 +19,8 @@ trait BootstrapClientAccordionGroupCancelEventArgs extends ASPxClientProcessingM
 object BootstrapClientAccordionGroupCancelEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, group: BootstrapClientAccordionGroup, processOnServer: scala.Boolean): BootstrapClientAccordionGroupCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(cancel = cancel, group = group, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[BootstrapClientAccordionGroupCancelEventArgs]
   }
 }

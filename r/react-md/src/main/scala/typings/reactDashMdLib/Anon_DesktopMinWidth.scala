@@ -24,13 +24,8 @@ object Anon_DesktopMinWidth {
     tabletMinWidth: scala.Double,
     tabletType: reactDashMdLib.libDrawersDrawerMod.DrawerType
   ): Anon_DesktopMinWidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("desktopMinWidth")(desktopMinWidth)
-    __obj.updateDynamic("desktopType")(desktopType)
-    __obj.updateDynamic("mobileMinWidth")(mobileMinWidth)
-    __obj.updateDynamic("mobileType")(mobileType)
-    __obj.updateDynamic("tabletMinWidth")(tabletMinWidth)
-    __obj.updateDynamic("tabletType")(tabletType)
+    val __obj = js.Dynamic.literal(desktopMinWidth = desktopMinWidth, desktopType = desktopType, mobileMinWidth = mobileMinWidth, mobileType = mobileType, tabletMinWidth = tabletMinWidth, tabletType = tabletType)
+  
     __obj.asInstanceOf[Anon_DesktopMinWidth]
   }
 }

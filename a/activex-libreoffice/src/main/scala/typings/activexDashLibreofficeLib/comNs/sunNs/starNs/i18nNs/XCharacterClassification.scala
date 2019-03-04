@@ -162,20 +162,8 @@ object XCharacterClassification {
       java.lang.String
     ]
   ): XCharacterClassification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCharacterDirection")(getCharacterDirection)
-    __obj.updateDynamic("getCharacterType")(getCharacterType)
-    __obj.updateDynamic("getScript")(getScript)
-    __obj.updateDynamic("getStringType")(getStringType)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("parseAnyToken")(parseAnyToken)
-    __obj.updateDynamic("parsePredefinedToken")(parsePredefinedToken)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("toLower")(toLower)
-    __obj.updateDynamic("toTitle")(toTitle)
-    __obj.updateDynamic("toUpper")(toUpper)
+    val __obj = js.Dynamic.literal(acquire = acquire, getCharacterDirection = getCharacterDirection, getCharacterType = getCharacterType, getScript = getScript, getStringType = getStringType, getType = getType, parseAnyToken = parseAnyToken, parsePredefinedToken = parsePredefinedToken, queryInterface = queryInterface, release = release, toLower = toLower, toTitle = toTitle, toUpper = toUpper)
+  
     __obj.asInstanceOf[XCharacterClassification]
   }
 }

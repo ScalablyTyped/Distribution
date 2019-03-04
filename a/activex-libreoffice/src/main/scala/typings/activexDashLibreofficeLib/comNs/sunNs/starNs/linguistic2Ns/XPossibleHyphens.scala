@@ -54,18 +54,8 @@ object XPossibleHyphens {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPossibleHyphens = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HyphenationPositions")(HyphenationPositions)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("PossibleHyphens")(PossibleHyphens)
-    __obj.updateDynamic("Word")(Word)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getHyphenationPositions")(getHyphenationPositions)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getPossibleHyphens")(getPossibleHyphens)
-    __obj.updateDynamic("getWord")(getWord)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(HyphenationPositions = HyphenationPositions, Locale = Locale, PossibleHyphens = PossibleHyphens, Word = Word, acquire = acquire, getHyphenationPositions = getHyphenationPositions, getLocale = getLocale, getPossibleHyphens = getPossibleHyphens, getWord = getWord, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPossibleHyphens]
   }
 }

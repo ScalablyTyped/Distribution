@@ -44,18 +44,10 @@ object Meta {
     date: stdLib.Date = null,
     pubdate: stdLib.Date = null
   ): Meta = {
-    val __obj = js.Dynamic.literal(`#ns` = `#ns`, `#type` = `#type`, `#version` = `#version`)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("favicon")(favicon)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("xmlurl")(xmlurl)
+    val __obj = js.Dynamic.literal(author = author, categories = categories, copyright = copyright, description = description, favicon = favicon, generator = generator, image = image, language = language, link = link, title = title, xmlurl = xmlurl)
+    __obj.updateDynamic("#ns")(`#ns`)
+    __obj.updateDynamic("#type")(`#type`)
+    __obj.updateDynamic("#version")(`#version`)
     if (date != null) __obj.updateDynamic("date")(date)
     if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate)
     __obj.asInstanceOf[Meta]

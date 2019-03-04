@@ -26,9 +26,8 @@ object InputValueDefinitionNode {
     directives: js.Array[DirectiveNode] = null,
     loc: Location = null
   ): InputValueDefinitionNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (description != null) __obj.updateDynamic("description")(description)
     if (directives != null) __obj.updateDynamic("directives")(directives)

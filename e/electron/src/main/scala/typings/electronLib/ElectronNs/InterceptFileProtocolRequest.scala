@@ -20,11 +20,8 @@ object InterceptFileProtocolRequest {
     uploadData: js.Array[UploadData],
     url: java.lang.String
   ): InterceptFileProtocolRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("referrer")(referrer)
-    __obj.updateDynamic("uploadData")(uploadData)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
     __obj.asInstanceOf[InterceptFileProtocolRequest]
   }
 }

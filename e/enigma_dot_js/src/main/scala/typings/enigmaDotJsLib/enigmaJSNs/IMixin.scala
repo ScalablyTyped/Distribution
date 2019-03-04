@@ -34,9 +34,7 @@ object IMixin {
     extend: js.Any = null,
     `override`: js.Any = null
   ): IMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(init = init, types = types)
     if (extend != null) __obj.updateDynamic("extend")(extend)
     if (`override` != null) __obj.updateDynamic("override")(`override`)
     __obj.asInstanceOf[IMixin]

@@ -31,10 +31,8 @@ object CategoryConfiguration {
       vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeReference
     ]
   ): CategoryConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("workItemTypes")(workItemTypes)
+    val __obj = js.Dynamic.literal(name = name, referenceName = referenceName, workItemTypes = workItemTypes)
+  
     __obj.asInstanceOf[CategoryConfiguration]
   }
 }

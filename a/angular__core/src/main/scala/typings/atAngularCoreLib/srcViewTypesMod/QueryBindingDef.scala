@@ -13,9 +13,8 @@ trait QueryBindingDef extends js.Object {
 object QueryBindingDef {
   @scala.inline
   def apply(bindingType: QueryBindingType, propName: java.lang.String): QueryBindingDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingType")(bindingType)
-    __obj.updateDynamic("propName")(propName)
+    val __obj = js.Dynamic.literal(bindingType = bindingType, propName = propName)
+  
     __obj.asInstanceOf[QueryBindingDef]
   }
 }

@@ -16,7 +16,7 @@ class Reader[E, A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: Reader[E, js.Function1[/* b */ B, C]], fb: Reader[E, B]): Reader[E, C] = js.native
+  def ap_[B, C](`this`: Reader[E, js.Function1[/* b */ B, C]], fb: Reader[E, B]): Reader[E, C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Reader[E, B]]): Reader[E, B] = js.native
   /**
     * @since 1.6.1

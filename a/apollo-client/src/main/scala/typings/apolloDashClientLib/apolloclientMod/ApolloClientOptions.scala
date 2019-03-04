@@ -40,8 +40,7 @@ object ApolloClientOptions {
     typeDefs: java.lang.String | js.Array[java.lang.String] | graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode] = null,
     version: java.lang.String = null
   ): ApolloClientOptions[TCacheShape] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
+    val __obj = js.Dynamic.literal(cache = cache)
     if (!js.isUndefined(connectToDevTools)) __obj.updateDynamic("connectToDevTools")(connectToDevTools)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
     if (fragmentMatcher != null) __obj.updateDynamic("fragmentMatcher")(fragmentMatcher)

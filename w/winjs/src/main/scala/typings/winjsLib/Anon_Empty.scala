@@ -18,8 +18,7 @@ object Anon_Empty {
     empty: js.UndefOr[scala.Boolean] = js.undefined,
     lang: java.lang.String = null
   ): Anon_Empty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     __obj.asInstanceOf[Anon_Empty]

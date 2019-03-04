@@ -30,15 +30,8 @@ object Anon_Class {
     shared: js.Array[openjscadLib.CSGNs.PolygonNs.Shared],
     vertexData: stdLib.Float64Array
   ): Anon_Class = {
-    val __obj = js.Dynamic.literal(`class` = `class`)
-    __obj.updateDynamic("numPolygons")(numPolygons)
-    __obj.updateDynamic("numVerticesPerPolygon")(numVerticesPerPolygon)
-    __obj.updateDynamic("planeData")(planeData)
-    __obj.updateDynamic("polygonPlaneIndexes")(polygonPlaneIndexes)
-    __obj.updateDynamic("polygonSharedIndexes")(polygonSharedIndexes)
-    __obj.updateDynamic("polygonVertices")(polygonVertices)
-    __obj.updateDynamic("shared")(shared)
-    __obj.updateDynamic("vertexData")(vertexData)
+    val __obj = js.Dynamic.literal(numPolygons = numPolygons, numVerticesPerPolygon = numVerticesPerPolygon, planeData = planeData, polygonPlaneIndexes = polygonPlaneIndexes, polygonSharedIndexes = polygonSharedIndexes, polygonVertices = polygonVertices, shared = shared, vertexData = vertexData)
+    __obj.updateDynamic("class")(`class`)
     __obj.asInstanceOf[Anon_Class]
   }
 }

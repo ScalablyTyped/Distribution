@@ -134,32 +134,8 @@ object ReleaseDefinition {
     variableGroups: js.Array[scala.Double],
     variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
   ): ReleaseDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("lastRelease")(lastRelease)
-    __obj.updateDynamic("modifiedBy")(modifiedBy)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pipelineProcess")(pipelineProcess)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("releaseNameFormat")(releaseNameFormat)
-    __obj.updateDynamic("retentionPolicy")(retentionPolicy)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("triggers")(triggers)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("variableGroups")(variableGroups)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(_links = _links, artifacts = artifacts, comment = comment, createdBy = createdBy, createdOn = createdOn, description = description, environments = environments, id = id, isDeleted = isDeleted, lastRelease = lastRelease, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, path = path, pipelineProcess = pipelineProcess, properties = properties, releaseNameFormat = releaseNameFormat, retentionPolicy = retentionPolicy, revision = revision, source = source, tags = tags, triggers = triggers, url = url, variableGroups = variableGroups, variables = variables)
+  
     __obj.asInstanceOf[ReleaseDefinition]
   }
 }

@@ -27,8 +27,7 @@ object GetDocumentArgs {
     documentFormat: java.lang.String = null,
     documentVersion: java.lang.String = null
   ): GetDocumentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (documentFormat != null) __obj.updateDynamic("documentFormat")(documentFormat)
     if (documentVersion != null) __obj.updateDynamic("documentVersion")(documentVersion)
     __obj.asInstanceOf[GetDocumentArgs]

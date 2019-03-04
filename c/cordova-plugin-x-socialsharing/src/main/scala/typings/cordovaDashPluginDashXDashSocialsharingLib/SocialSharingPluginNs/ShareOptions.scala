@@ -22,8 +22,7 @@ object ShareOptions {
     subject: java.lang.String = null,
     url: java.lang.String = null
   ): ShareOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (chooserTitle != null) __obj.updateDynamic("chooserTitle")(chooserTitle)
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject)

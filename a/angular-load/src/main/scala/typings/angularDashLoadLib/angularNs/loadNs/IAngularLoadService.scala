@@ -16,9 +16,8 @@ object IAngularLoadService {
     loadCSS: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
     loadScript: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]]
   ): IAngularLoadService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadCSS")(loadCSS)
-    __obj.updateDynamic("loadScript")(loadScript)
+    val __obj = js.Dynamic.literal(loadCSS = loadCSS, loadScript = loadScript)
+  
     __obj.asInstanceOf[IAngularLoadService]
   }
 }

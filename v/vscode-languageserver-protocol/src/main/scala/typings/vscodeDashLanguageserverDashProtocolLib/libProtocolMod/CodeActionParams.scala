@@ -27,10 +27,8 @@ object CodeActionParams {
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): CodeActionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(context = context, range = range, textDocument = textDocument)
+  
     __obj.asInstanceOf[CodeActionParams]
   }
 }

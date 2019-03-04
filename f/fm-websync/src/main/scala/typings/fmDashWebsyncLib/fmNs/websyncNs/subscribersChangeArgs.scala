@@ -26,11 +26,7 @@ object subscribersChangeArgs {
     change: subscribersChange = null,
     channel: java.lang.String = null
   ): subscribersChangeArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, meta = meta, timestamp = timestamp)
     if (change != null) __obj.updateDynamic("change")(change)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     __obj.asInstanceOf[subscribersChangeArgs]

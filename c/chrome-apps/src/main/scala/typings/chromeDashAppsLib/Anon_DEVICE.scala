@@ -20,11 +20,8 @@ object Anon_DEVICE {
     INTERFACE: chromeDashAppsLib.chromeDashAppsLibStrings.interface,
     OTHER: chromeDashAppsLib.chromeDashAppsLibStrings.other
   ): Anon_DEVICE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEVICE")(DEVICE)
-    __obj.updateDynamic("ENDPOINT")(ENDPOINT)
-    __obj.updateDynamic("INTERFACE")(INTERFACE)
-    __obj.updateDynamic("OTHER")(OTHER)
+    val __obj = js.Dynamic.literal(DEVICE = DEVICE, ENDPOINT = ENDPOINT, INTERFACE = INTERFACE, OTHER = OTHER)
+  
     __obj.asInstanceOf[Anon_DEVICE]
   }
 }

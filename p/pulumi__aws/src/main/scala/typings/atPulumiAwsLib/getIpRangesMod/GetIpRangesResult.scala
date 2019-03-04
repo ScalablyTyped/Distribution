@@ -38,12 +38,8 @@ object GetIpRangesResult {
     ipv6CidrBlocks: js.Array[java.lang.String],
     syncToken: scala.Double
   ): GetIpRangesResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cidrBlocks")(cidrBlocks)
-    __obj.updateDynamic("createDate")(createDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks)
-    __obj.updateDynamic("syncToken")(syncToken)
+    val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, createDate = createDate, id = id, ipv6CidrBlocks = ipv6CidrBlocks, syncToken = syncToken)
+  
     __obj.asInstanceOf[GetIpRangesResult]
   }
 }

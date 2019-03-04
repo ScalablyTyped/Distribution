@@ -16,9 +16,8 @@ object CP$Conv {
     dec: org.scalablytyped.runtime.NumberDictionary[java.lang.String],
     enc: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): CP$Conv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dec")(dec)
-    __obj.updateDynamic("enc")(enc)
+    val __obj = js.Dynamic.literal(dec = dec, enc = enc)
+  
     __obj.asInstanceOf[CP$Conv]
   }
 }

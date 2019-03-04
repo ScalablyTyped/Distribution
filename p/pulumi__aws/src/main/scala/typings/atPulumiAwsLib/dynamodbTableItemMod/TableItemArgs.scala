@@ -33,10 +33,7 @@ object TableItemArgs {
     tableName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     rangeKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): TableItemArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashKey")(hashKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
     if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableItemArgs]
   }

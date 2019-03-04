@@ -24,12 +24,8 @@ object FsSizeData {
     use: scala.Double,
     used: scala.Double
   ): FsSizeData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fs")(fs)
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("use")(use)
-    __obj.updateDynamic("used")(used)
+    val __obj = js.Dynamic.literal(fs = fs, mount = mount, size = size, use = use, used = used)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FsSizeData]
   }
 }

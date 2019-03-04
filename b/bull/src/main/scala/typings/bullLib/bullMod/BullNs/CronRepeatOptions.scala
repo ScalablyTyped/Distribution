@@ -25,8 +25,7 @@ object CronRepeatOptions {
     startDate: stdLib.Date | java.lang.String | scala.Double = null,
     tz: java.lang.String = null
   ): CronRepeatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cron")(cron)
+    val __obj = js.Dynamic.literal(cron = cron)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])

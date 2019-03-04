@@ -43,10 +43,8 @@ object DispatchDescriptor {
     FrameName: java.lang.String,
     SearchFlags: scala.Double
   ): DispatchDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FeatureURL")(FeatureURL)
-    __obj.updateDynamic("FrameName")(FrameName)
-    __obj.updateDynamic("SearchFlags")(SearchFlags)
+    val __obj = js.Dynamic.literal(FeatureURL = FeatureURL, FrameName = FrameName, SearchFlags = SearchFlags)
+  
     __obj.asInstanceOf[DispatchDescriptor]
   }
 }

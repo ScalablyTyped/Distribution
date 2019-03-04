@@ -24,12 +24,7 @@ object PasswordRealmResponse {
     tokenType: reactDashNativeDashAuth0Lib.reactDashNativeDashAuth0LibStrings.Bearer,
     refreshToken: java.lang.String = null
   ): PasswordRealmResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("expiresIn")(expiresIn)
-    __obj.updateDynamic("idToken")(idToken)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("tokenType")(tokenType)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, idToken = idToken, scope = scope, tokenType = tokenType)
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
     __obj.asInstanceOf[PasswordRealmResponse]
   }

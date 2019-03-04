@@ -14,10 +14,8 @@ trait SendResult extends js.Object {
 object SendResult {
   @scala.inline
   def apply(body: java.lang.String, headers: Headers, statusCode: scala.Double): SendResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode)
+  
     __obj.asInstanceOf[SendResult]
   }
 }

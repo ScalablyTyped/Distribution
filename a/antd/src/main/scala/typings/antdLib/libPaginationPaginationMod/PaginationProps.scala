@@ -29,7 +29,7 @@ trait PaginationProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var selectPrefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var showQuickJumper: js.UndefOr[scala.Boolean] = js.undefined
+  var showQuickJumper: js.UndefOr[scala.Boolean | antdLib.Anon_GoButton] = js.undefined
   var showSizeChanger: js.UndefOr[scala.Boolean] = js.undefined
   var showTotal: js.UndefOr[
     js.Function2[
@@ -66,7 +66,7 @@ object PaginationProps {
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
     selectPrefixCls: java.lang.String = null,
-    showQuickJumper: js.UndefOr[scala.Boolean] = js.undefined,
+    showQuickJumper: scala.Boolean | antdLib.Anon_GoButton = null,
     showSizeChanger: js.UndefOr[scala.Boolean] = js.undefined,
     showTotal: js.Function2[
       /* total */ scala.Double, 
@@ -93,7 +93,7 @@ object PaginationProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)
     if (selectPrefixCls != null) __obj.updateDynamic("selectPrefixCls")(selectPrefixCls)
-    if (!js.isUndefined(showQuickJumper)) __obj.updateDynamic("showQuickJumper")(showQuickJumper)
+    if (showQuickJumper != null) __obj.updateDynamic("showQuickJumper")(showQuickJumper.asInstanceOf[js.Any])
     if (!js.isUndefined(showSizeChanger)) __obj.updateDynamic("showSizeChanger")(showSizeChanger)
     if (showTotal != null) __obj.updateDynamic("showTotal")(showTotal)
     if (!js.isUndefined(simple)) __obj.updateDynamic("simple")(simple)

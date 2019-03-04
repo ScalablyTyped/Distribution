@@ -62,35 +62,8 @@ object XDatabaseContext {
     revokeDatabaseLocation: js.Function1[java.lang.String, scala.Unit],
     revokeObject: js.Function1[java.lang.String, scala.Unit]
   ): XDatabaseContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("RegistrationNames")(RegistrationNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("addDatabaseRegistrationsListener")(addDatabaseRegistrationsListener)
-    __obj.updateDynamic("changeDatabaseLocation")(changeDatabaseLocation)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("createInstance")(createInstance)
-    __obj.updateDynamic("createInstanceWithArguments")(createInstanceWithArguments)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getDatabaseLocation")(getDatabaseLocation)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getRegisteredObject")(getRegisteredObject)
-    __obj.updateDynamic("getRegistrationNames")(getRegistrationNames)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("hasRegisteredDatabase")(hasRegisteredDatabase)
-    __obj.updateDynamic("isDatabaseRegistrationReadOnly")(isDatabaseRegistrationReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerDatabaseLocation")(registerDatabaseLocation)
-    __obj.updateDynamic("registerObject")(registerObject)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("removeDatabaseRegistrationsListener")(removeDatabaseRegistrationsListener)
-    __obj.updateDynamic("revokeDatabaseLocation")(revokeDatabaseLocation)
-    __obj.updateDynamic("revokeObject")(revokeObject)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, RegistrationNames = RegistrationNames, acquire = acquire, addContainerListener = addContainerListener, addDatabaseRegistrationsListener = addDatabaseRegistrationsListener, changeDatabaseLocation = changeDatabaseLocation, createEnumeration = createEnumeration, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, getByName = getByName, getDatabaseLocation = getDatabaseLocation, getElementNames = getElementNames, getElementType = getElementType, getRegisteredObject = getRegisteredObject, getRegistrationNames = getRegistrationNames, hasByName = hasByName, hasElements = hasElements, hasRegisteredDatabase = hasRegisteredDatabase, isDatabaseRegistrationReadOnly = isDatabaseRegistrationReadOnly, queryInterface = queryInterface, registerDatabaseLocation = registerDatabaseLocation, registerObject = registerObject, release = release, removeContainerListener = removeContainerListener, removeDatabaseRegistrationsListener = removeDatabaseRegistrationsListener, revokeDatabaseLocation = revokeDatabaseLocation, revokeObject = revokeObject)
+  
     __obj.asInstanceOf[XDatabaseContext]
   }
 }

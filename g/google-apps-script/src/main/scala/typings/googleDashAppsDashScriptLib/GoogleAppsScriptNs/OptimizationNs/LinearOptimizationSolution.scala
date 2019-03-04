@@ -20,11 +20,8 @@ object LinearOptimizationSolution {
     getVariableValue: js.Function1[java.lang.String, stdLib.Number],
     isValid: js.Function0[scala.Boolean]
   ): LinearOptimizationSolution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getObjectiveValue")(getObjectiveValue)
-    __obj.updateDynamic("getStatus")(getStatus)
-    __obj.updateDynamic("getVariableValue")(getVariableValue)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(getObjectiveValue = getObjectiveValue, getStatus = getStatus, getVariableValue = getVariableValue, isValid = isValid)
+  
     __obj.asInstanceOf[LinearOptimizationSolution]
   }
 }

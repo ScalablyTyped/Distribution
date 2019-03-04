@@ -12,8 +12,8 @@ trait FastifyReply[HttpResponse] extends js.Object {
 object FastifyReply {
   @scala.inline
   def apply[HttpResponse](sendFile: js.Function1[java.lang.String, FastifyReply[HttpResponse]]): FastifyReply[HttpResponse] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sendFile")(sendFile)
+    val __obj = js.Dynamic.literal(sendFile = sendFile)
+  
     __obj.asInstanceOf[FastifyReply[HttpResponse]]
   }
 }

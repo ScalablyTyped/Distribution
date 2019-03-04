@@ -21,8 +21,8 @@ object TSArrayType {
     elementType: astDashTypesLib.genKindsMod.TSTypeKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSArrayType
   ): TSArrayType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("elementType")(elementType)
+    val __obj = js.Dynamic.literal(elementType = elementType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSArrayType]
   }
 }

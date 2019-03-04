@@ -13,9 +13,9 @@ class ViewCache protected () extends js.Object {
     * @param {!CacheNode} eventCache_
     * @param {!CacheNode} serverCache_
     */
-  def this(`eventCache_`: atFirebaseDatabaseLib.distSrcCoreViewCacheNodeMod.CacheNode, `serverCache_`: atFirebaseDatabaseLib.distSrcCoreViewCacheNodeMod.CacheNode) = this()
-  val `eventCache_`: js.Any = js.native
-  val `serverCache_`: js.Any = js.native
+  def this(eventCache_ : atFirebaseDatabaseLib.distSrcCoreViewCacheNodeMod.CacheNode, serverCache_ : atFirebaseDatabaseLib.distSrcCoreViewCacheNodeMod.CacheNode) = this()
+  val eventCache_ : js.Any = js.native
+  val serverCache_ : js.Any = js.native
   /**
     * @return {?Node}
     */

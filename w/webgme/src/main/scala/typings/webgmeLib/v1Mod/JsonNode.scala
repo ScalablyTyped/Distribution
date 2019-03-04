@@ -28,15 +28,8 @@ object JsonNode {
     registry: js.Any,
     sets: js.Any
   ): JsonNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("constratints")(constratints)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("pointers")(pointers)
-    __obj.updateDynamic("registry")(registry)
-    __obj.updateDynamic("sets")(sets)
+    val __obj = js.Dynamic.literal(attributes = attributes, base = base, constratints = constratints, meta = meta, parent = parent, pointers = pointers, registry = registry, sets = sets)
+  
     __obj.asInstanceOf[JsonNode]
   }
 }

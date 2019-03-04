@@ -20,11 +20,8 @@ object IScrollspy {
     trackElement: js.Function2[js.Any, js.Any, scala.Unit],
     untrackElement: js.Function2[js.Any, js.Any, scala.Unit]
   ): IScrollspy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("checkOffsets")(checkOffsets)
-    __obj.updateDynamic("trackElement")(trackElement)
-    __obj.updateDynamic("untrackElement")(untrackElement)
+    val __obj = js.Dynamic.literal(activate = activate, checkOffsets = checkOffsets, trackElement = trackElement, untrackElement = untrackElement)
+  
     __obj.asInstanceOf[IScrollspy]
   }
 }

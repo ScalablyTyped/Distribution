@@ -22,9 +22,8 @@ object MessageEntity {
     url: java.lang.String = null,
     user: User = null
   ): MessageEntity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(length = length, offset = offset)
+    __obj.updateDynamic("type")(`type`)
     if (url != null) __obj.updateDynamic("url")(url)
     if (user != null) __obj.updateDynamic("user")(user)
     __obj.asInstanceOf[MessageEntity]

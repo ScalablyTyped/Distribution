@@ -40,19 +40,7 @@ object Item {
     date: stdLib.Date = null,
     pubdate: stdLib.Date = null
   ): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enclosures")(enclosures)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("origlink")(origlink)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(author = author, categories = categories, comments = comments, description = description, enclosures = enclosures, guid = guid, image = image, link = link, meta = meta, origlink = origlink, summary = summary, title = title)
     if (date != null) __obj.updateDynamic("date")(date)
     if (pubdate != null) __obj.updateDynamic("pubdate")(pubdate)
     __obj.asInstanceOf[Item]

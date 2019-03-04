@@ -23,7 +23,7 @@ abstract class DistributedSystemArray[System /* <: samchonLib.templatesDistribut
   /**
     * @hidden
     */
-  var `process_map_`: js.Any = js.native
+  var process_map_ : js.Any = js.native
   /**
     * Factory method creating a child {@link DistributedProcess process} object.
     *

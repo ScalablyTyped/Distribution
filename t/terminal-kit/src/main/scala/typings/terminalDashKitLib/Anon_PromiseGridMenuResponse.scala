@@ -12,8 +12,8 @@ trait Anon_PromiseGridMenuResponse extends js.Object {
 object Anon_PromiseGridMenuResponse {
   @scala.inline
   def apply(promise: js.Promise[terminalDashKitLib.terminalMod.TerminalNs.GridMenuResponse]): Anon_PromiseGridMenuResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promise")(promise)
+    val __obj = js.Dynamic.literal(promise = promise)
+  
     __obj.asInstanceOf[Anon_PromiseGridMenuResponse]
   }
 }

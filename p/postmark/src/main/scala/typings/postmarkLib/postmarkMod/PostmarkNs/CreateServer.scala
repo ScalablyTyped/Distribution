@@ -40,8 +40,7 @@ object CreateServer {
     TrackLinks: java.lang.String = null,
     TrackOpens: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Name = Name)
     if (BounceHookUrl != null) __obj.updateDynamic("BounceHookUrl")(BounceHookUrl)
     if (Color != null) __obj.updateDynamic("Color")(Color)
     if (DeliveryHookUrl != null) __obj.updateDynamic("DeliveryHookUrl")(DeliveryHookUrl)

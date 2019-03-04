@@ -21,8 +21,8 @@ trait Mobile extends js.Object {
 object Mobile {
   @scala.inline
   def apply(offline: MobileOffline): Mobile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offline")(offline)
+    val __obj = js.Dynamic.literal(offline = offline)
+  
     __obj.asInstanceOf[Mobile]
   }
 }

@@ -18,10 +18,8 @@ object HistoryAdapter {
     onDomLoad: js.Function1[js.Function0[scala.Unit], scala.Unit],
     trigger: js.Function2[js.Any, java.lang.String, scala.Unit]
   ): HistoryAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("onDomLoad")(onDomLoad)
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(bind = bind, onDomLoad = onDomLoad, trigger = trigger)
+  
     __obj.asInstanceOf[HistoryAdapter]
   }
 }

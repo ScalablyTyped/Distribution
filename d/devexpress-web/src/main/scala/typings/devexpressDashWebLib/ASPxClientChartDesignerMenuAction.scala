@@ -63,15 +63,8 @@ object ASPxClientChartDesignerMenuAction {
     text: java.lang.String,
     visible: scala.Boolean
   ): ASPxClientChartDesignerMenuAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clickAction")(clickAction)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("hasSeparator")(hasSeparator)
-    __obj.updateDynamic("hotKey")(hotKey)
-    __obj.updateDynamic("imageClassName")(imageClassName)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(clickAction = clickAction, container = container, disabled = disabled, hasSeparator = hasSeparator, hotKey = hotKey, imageClassName = imageClassName, text = text, visible = visible)
+  
     __obj.asInstanceOf[ASPxClientChartDesignerMenuAction]
   }
 }

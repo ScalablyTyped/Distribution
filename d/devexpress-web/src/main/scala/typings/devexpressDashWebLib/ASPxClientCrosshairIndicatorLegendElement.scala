@@ -19,12 +19,8 @@ object ASPxClientCrosshairIndicatorLegendElement {
     Point: ASPxClientIndicatorPoint,
     visible: scala.Boolean
   ): ASPxClientCrosshairIndicatorLegendElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AxisLabelElement")(AxisLabelElement)
-    __obj.updateDynamic("Indicator")(Indicator)
-    __obj.updateDynamic("LineElement")(LineElement)
-    __obj.updateDynamic("Point")(Point)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(AxisLabelElement = AxisLabelElement, Indicator = Indicator, LineElement = LineElement, Point = Point, visible = visible)
+  
     __obj.asInstanceOf[ASPxClientCrosshairIndicatorLegendElement]
   }
 }

@@ -13,9 +13,8 @@ trait IEditDropdown extends js.Object {
 object IEditDropdown {
   @scala.inline
   def apply(id: scala.Double | java.lang.String, value: js.Any): IEditDropdown = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value)
+  
     __obj.asInstanceOf[IEditDropdown]
   }
 }

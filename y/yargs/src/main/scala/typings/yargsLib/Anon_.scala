@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_`
+trait Anon_
   extends /** All remaining options */
 /* argName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** The script name or node command */
@@ -15,18 +15,18 @@ trait `Anon_`
   var `_`: js.Array[java.lang.String]
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     $0: java.lang.String,
     `_`: js.Array[java.lang.String],
     StringDictionary: /** All remaining options */
   /* argName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
-    __obj.updateDynamic("$0")($0)
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal($0 = $0)
+    __obj.updateDynamic("_")(`_`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[`Anon_`]
+    __obj.asInstanceOf[Anon_]
   }
 }
 

@@ -97,23 +97,8 @@ object XLinePolyPolygon2D {
       scala.Unit
     ]
   ): XLinePolyPolygon2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FillRule")(FillRule)
-    __obj.updateDynamic("NumberOfPolygons")(NumberOfPolygons)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPolyPolygon")(addPolyPolygon)
-    __obj.updateDynamic("getFillRule")(getFillRule)
-    __obj.updateDynamic("getNumberOfPolygonPoints")(getNumberOfPolygonPoints)
-    __obj.updateDynamic("getNumberOfPolygons")(getNumberOfPolygons)
-    __obj.updateDynamic("getPoint")(getPoint)
-    __obj.updateDynamic("getPoints")(getPoints)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setClosed")(setClosed)
-    __obj.updateDynamic("setFillRule")(setFillRule)
-    __obj.updateDynamic("setPoint")(setPoint)
-    __obj.updateDynamic("setPoints")(setPoints)
+    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = acquire, addPolyPolygon = addPolyPolygon, getFillRule = getFillRule, getNumberOfPolygonPoints = getNumberOfPolygonPoints, getNumberOfPolygons = getNumberOfPolygons, getPoint = getPoint, getPoints = getPoints, isClosed = isClosed, queryInterface = queryInterface, release = release, setClosed = setClosed, setFillRule = setFillRule, setPoint = setPoint, setPoints = setPoints)
+  
     __obj.asInstanceOf[XLinePolyPolygon2D]
   }
 }

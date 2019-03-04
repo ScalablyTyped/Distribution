@@ -44,13 +44,7 @@ object PlaceReview {
     time: java.lang.String,
     author_url: java.lang.String = null
   ): PlaceReview = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspects")(aspects)
-    __obj.updateDynamic("author_name")(author_name)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(aspects = aspects, author_name = author_name, language = language, rating = rating, text = text, time = time)
     if (author_url != null) __obj.updateDynamic("author_url")(author_url)
     __obj.asInstanceOf[PlaceReview]
   }

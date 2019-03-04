@@ -26,7 +26,7 @@ class Cluster protected () extends js.Object {
   /**
     * Calculates the extended bounds of the cluster with the grid.
     */
-  def `calculateBounds_`(): scala.Unit = js.native
+  def calculateBounds_(): scala.Unit = js.native
   /**
     * Returns the bounds of the cluster.
     *
@@ -78,7 +78,7 @@ class Cluster protected () extends js.Object {
     * @param marker The marker to check.
     * @return True if the marker has already been added.
     */
-  def `isMarkerAlreadyAdded_`(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Boolean = js.native
+  def isMarkerAlreadyAdded_(marker: googlemapsLib.googleNs.mapsNs.Marker): scala.Boolean = js.native
   /**
     * Determines if a marker lies within the cluster's bounds.
     *
@@ -96,6 +96,6 @@ class Cluster protected () extends js.Object {
   /**
     * Updates the cluster icon.
     */
-  def `updateIcon_`(): scala.Unit = js.native
+  def updateIcon_(): scala.Unit = js.native
 }
 

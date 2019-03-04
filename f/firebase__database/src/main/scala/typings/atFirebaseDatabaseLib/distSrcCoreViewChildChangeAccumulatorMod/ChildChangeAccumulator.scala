@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/view/ChildChangeAccumulator", "ChildChangeAccumulator")
 @js.native
 class ChildChangeAccumulator () extends js.Object {
-  var `changeMap_`: js.Any = js.native
+  var changeMap_ : js.Any = js.native
   /**
     * @return {!Array.<!Change>}
     */

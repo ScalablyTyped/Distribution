@@ -26,8 +26,7 @@ object VNodeDirective {
     oldValue: js.Any = null,
     value: js.Any = null
   ): VNodeDirective = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (arg != null) __obj.updateDynamic("arg")(arg)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)

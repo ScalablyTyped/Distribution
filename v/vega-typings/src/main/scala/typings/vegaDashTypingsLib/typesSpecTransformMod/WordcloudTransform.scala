@@ -46,7 +46,8 @@ object WordcloudTransform {
     spiral: vegaDashTypingsLib.vegaDashTypingsLibStrings.archimedian | vegaDashTypingsLib.vegaDashTypingsLibStrings.rectangular = null,
     text: java.lang.String | TransformField = null
   ): WordcloudTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

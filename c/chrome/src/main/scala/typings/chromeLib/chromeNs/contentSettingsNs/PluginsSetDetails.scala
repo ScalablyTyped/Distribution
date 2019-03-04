@@ -19,9 +19,7 @@ object PluginsSetDetails {
     scope: ScopeEnum = null,
     secondaryPattern: java.lang.String = null
   ): PluginsSetDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("primaryPattern")(primaryPattern)
-    __obj.updateDynamic("setting")(setting.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(primaryPattern = primaryPattern, setting = setting.asInstanceOf[js.Any])
     if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern)

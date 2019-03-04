@@ -20,11 +20,8 @@ object Static {
     nfkc: js.Function1[java.lang.String, java.lang.String],
     nfkd: js.Function1[java.lang.String, java.lang.String]
   ): Static = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nfc")(nfc)
-    __obj.updateDynamic("nfd")(nfd)
-    __obj.updateDynamic("nfkc")(nfkc)
-    __obj.updateDynamic("nfkd")(nfkd)
+    val __obj = js.Dynamic.literal(nfc = nfc, nfd = nfd, nfkc = nfkc, nfkd = nfkd)
+  
     __obj.asInstanceOf[Static]
   }
 }

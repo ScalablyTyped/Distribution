@@ -22,8 +22,7 @@ object AxiosError {
     response: AxiosResponse[_] = null,
     stack: java.lang.String = null
   ): AxiosError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(config = config)
     if (code != null) __obj.updateDynamic("code")(code)
     if (request != null) __obj.updateDynamic("request")(request)
     if (response != null) __obj.updateDynamic("response")(response)

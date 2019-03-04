@@ -44,13 +44,8 @@ object IGridPaginationApi {
     previousPage: js.Function0[scala.Unit],
     seek: js.Function1[scala.Double, scala.Unit]
   ): IGridPaginationApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPage")(getPage)
-    __obj.updateDynamic("getTotalPages")(getTotalPages)
-    __obj.updateDynamic("nextPage")(nextPage)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("previousPage")(previousPage)
-    __obj.updateDynamic("seek")(seek)
+    val __obj = js.Dynamic.literal(getPage = getPage, getTotalPages = getTotalPages, nextPage = nextPage, on = on, previousPage = previousPage, seek = seek)
+  
     __obj.asInstanceOf[IGridPaginationApi]
   }
 }

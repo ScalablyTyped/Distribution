@@ -22,9 +22,8 @@ trait AttachedVolume extends js.Object {
 object AttachedVolume {
   @scala.inline
   def apply(devicePath: java.lang.String, name: java.lang.String): AttachedVolume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("devicePath")(devicePath)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(devicePath = devicePath, name = name)
+  
     __obj.asInstanceOf[AttachedVolume]
   }
 }

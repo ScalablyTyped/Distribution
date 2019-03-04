@@ -12,8 +12,8 @@ trait ICopyVaultJobOutputInfo extends js.Object {
 object ICopyVaultJobOutputInfo {
   @scala.inline
   def apply(VaultProperties: IVaultProperties): ICopyVaultJobOutputInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VaultProperties")(VaultProperties)
+    val __obj = js.Dynamic.literal(VaultProperties = VaultProperties)
+  
     __obj.asInstanceOf[ICopyVaultJobOutputInfo]
   }
 }

@@ -16,8 +16,7 @@ object Anon_EndpointRegion {
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     region: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_EndpointRegion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EndpointRegion]
   }

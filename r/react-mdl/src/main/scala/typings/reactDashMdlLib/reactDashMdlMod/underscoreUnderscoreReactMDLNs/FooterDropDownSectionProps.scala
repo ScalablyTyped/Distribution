@@ -20,8 +20,7 @@ object FooterDropDownSectionProps {
     MDLHTMLAttributes: MDLHTMLAttributes = null,
     size: java.lang.String = null
   ): FooterDropDownSectionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (size != null) __obj.updateDynamic("size")(size)

@@ -18,10 +18,8 @@ object Anon_AutoLineColor {
     lineWidth: scala.Double,
     rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
   ): Anon_AutoLineColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineColor")(lineColor)
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lineColor = lineColor, lineWidth = lineWidth, rendered = rendered.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AutoLineColor]
   }
 }

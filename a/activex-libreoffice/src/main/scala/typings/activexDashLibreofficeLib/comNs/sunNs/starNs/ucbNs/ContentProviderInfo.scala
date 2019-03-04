@@ -19,9 +19,8 @@ trait ContentProviderInfo extends js.Object {
 object ContentProviderInfo {
   @scala.inline
   def apply(ContentProvider: XContentProvider, Scheme: java.lang.String): ContentProviderInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentProvider")(ContentProvider)
-    __obj.updateDynamic("Scheme")(Scheme)
+    val __obj = js.Dynamic.literal(ContentProvider = ContentProvider, Scheme = Scheme)
+  
     __obj.asInstanceOf[ContentProviderInfo]
   }
 }

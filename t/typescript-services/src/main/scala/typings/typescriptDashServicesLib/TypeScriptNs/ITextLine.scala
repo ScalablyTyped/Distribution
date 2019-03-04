@@ -25,14 +25,8 @@ object ITextLine {
     start: js.Function0[scala.Double],
     toString: js.Function0[java.lang.String]
   ): ITextLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endIncludingLineBreak")(endIncludingLineBreak)
-    __obj.updateDynamic("extent")(extent)
-    __obj.updateDynamic("extentIncludingLineBreak")(extentIncludingLineBreak)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(end = end, endIncludingLineBreak = endIncludingLineBreak, extent = extent, extentIncludingLineBreak = extentIncludingLineBreak, lineNumber = lineNumber, start = start, toString = toString)
+  
     __obj.asInstanceOf[ITextLine]
   }
 }

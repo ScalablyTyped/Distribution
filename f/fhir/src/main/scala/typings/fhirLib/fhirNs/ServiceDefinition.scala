@@ -224,8 +224,7 @@ object ServiceDefinition {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): ServiceDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_approvalDate != null) __obj.updateDynamic("_approvalDate")(_approvalDate)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)

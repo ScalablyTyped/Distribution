@@ -20,10 +20,8 @@ object Anon_BucketConfigurationId {
     `object`: Anon_ETag,
     s3SchemaVersion: java.lang.String
   ): Anon_BucketConfigurationId = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("configurationId")(configurationId)
-    __obj.updateDynamic("s3SchemaVersion")(s3SchemaVersion)
+    val __obj = js.Dynamic.literal(bucket = bucket, configurationId = configurationId, s3SchemaVersion = s3SchemaVersion)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_BucketConfigurationId]
   }
 }

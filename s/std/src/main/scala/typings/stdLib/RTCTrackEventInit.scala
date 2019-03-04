@@ -23,10 +23,7 @@ object RTCTrackEventInit {
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     streams: js.Array[MediaStream] = null
   ): RTCTrackEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("receiver")(receiver)
-    __obj.updateDynamic("track")(track)
-    __obj.updateDynamic("transceiver")(transceiver)
+    val __obj = js.Dynamic.literal(receiver = receiver, track = track, transceiver = transceiver)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

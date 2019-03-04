@@ -28,15 +28,8 @@ object Contact {
     state: java.lang.String,
     zip: java.lang.String
   ): Contact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address1")(address1)
-    __obj.updateDynamic("address2")(address2)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("fax")(fax)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("zip")(zip)
+    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, email = email, fax = fax, phone = phone, state = state, zip = zip)
+  
     __obj.asInstanceOf[Contact]
   }
 }

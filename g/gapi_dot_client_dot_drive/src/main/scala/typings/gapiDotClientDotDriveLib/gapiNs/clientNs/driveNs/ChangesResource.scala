@@ -30,10 +30,8 @@ object ChangesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Channel]
     ]
   ): ChangesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStartPageToken")(getStartPageToken)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(getStartPageToken = getStartPageToken, list = list, watch = watch)
+  
     __obj.asInstanceOf[ChangesResource]
   }
 }

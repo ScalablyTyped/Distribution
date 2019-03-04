@@ -27,9 +27,7 @@ object SetDetails {
     scope: ScopeEnum = null,
     secondaryPattern: java.lang.String = null
   ): SetDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("primaryPattern")(primaryPattern)
-    __obj.updateDynamic("setting")(setting)
+    val __obj = js.Dynamic.literal(primaryPattern = primaryPattern, setting = setting)
     if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern)

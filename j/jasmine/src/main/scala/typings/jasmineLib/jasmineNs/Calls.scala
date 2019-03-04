@@ -36,15 +36,8 @@ object Calls {
     mostRecent: js.Function0[CallInfo],
     reset: js.Function0[scala.Unit]
   ): Calls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("allArgs")(allArgs)
-    __obj.updateDynamic("any")(any)
-    __obj.updateDynamic("argsFor")(argsFor)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("mostRecent")(mostRecent)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(all = all, allArgs = allArgs, any = any, argsFor = argsFor, count = count, first = first, mostRecent = mostRecent, reset = reset)
+  
     __obj.asInstanceOf[Calls]
   }
 }

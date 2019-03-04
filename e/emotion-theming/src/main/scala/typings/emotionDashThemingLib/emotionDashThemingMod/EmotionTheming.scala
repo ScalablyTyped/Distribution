@@ -29,9 +29,8 @@ object EmotionTheming {
       ]
     ]
   ): EmotionTheming[Theme] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ThemeProvider")(ThemeProvider)
-    __obj.updateDynamic("withTheme")(withTheme)
+    val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider, withTheme = withTheme)
+  
     __obj.asInstanceOf[EmotionTheming[Theme]]
   }
 }

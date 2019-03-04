@@ -35,21 +35,8 @@ object BootstrapDropDownEditEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapDropDownEditEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonClick")(buttonClick)
-    __obj.updateDynamic("closeUp")(closeUp)
-    __obj.updateDynamic("dropDown")(dropDown)
-    __obj.updateDynamic("gotFocus")(gotFocus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("keyDown")(keyDown)
-    __obj.updateDynamic("keyPress")(keyPress)
-    __obj.updateDynamic("keyUp")(keyUp)
-    __obj.updateDynamic("lostFocus")(lostFocus)
-    __obj.updateDynamic("queryCloseUp")(queryCloseUp)
-    __obj.updateDynamic("textChanged")(textChanged)
-    __obj.updateDynamic("userInput")(userInput)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("valueChanged")(valueChanged)
+    val __obj = js.Dynamic.literal(buttonClick = buttonClick, closeUp = closeUp, dropDown = dropDown, gotFocus = gotFocus, init = init, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, queryCloseUp = queryCloseUp, textChanged = textChanged, userInput = userInput, validation = validation, valueChanged = valueChanged)
+  
     __obj.asInstanceOf[BootstrapDropDownEditEventMap]
   }
 }

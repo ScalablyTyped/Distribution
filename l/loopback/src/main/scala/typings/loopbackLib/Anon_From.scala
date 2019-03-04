@@ -22,12 +22,8 @@ object Anon_From {
     text: java.lang.String,
     to: java.lang.String
   ): Anon_From = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, html = html, subject = subject, text = text, to = to)
+  
     __obj.asInstanceOf[Anon_From]
   }
 }

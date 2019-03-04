@@ -12,8 +12,8 @@ trait RequestSMSOptions extends js.Object {
 object RequestSMSOptions {
   @scala.inline
   def apply(phone_number: java.lang.String): RequestSMSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("phone_number")(phone_number)
+    val __obj = js.Dynamic.literal(phone_number = phone_number)
+  
     __obj.asInstanceOf[RequestSMSOptions]
   }
 }

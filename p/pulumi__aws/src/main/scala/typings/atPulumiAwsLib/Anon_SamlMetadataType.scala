@@ -16,8 +16,8 @@ object Anon_SamlMetadataType {
     samlMetadata: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_SamlMetadataType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("samlMetadata")(samlMetadata.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(samlMetadata = samlMetadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_SamlMetadataType]
   }
 }

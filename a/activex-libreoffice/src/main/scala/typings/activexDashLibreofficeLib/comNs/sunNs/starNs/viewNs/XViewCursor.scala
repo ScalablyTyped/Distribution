@@ -54,14 +54,8 @@ object XViewCursor {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XViewCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("goDown")(goDown)
-    __obj.updateDynamic("goLeft")(goLeft)
-    __obj.updateDynamic("goRight")(goRight)
-    __obj.updateDynamic("goUp")(goUp)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, goDown = goDown, goLeft = goLeft, goRight = goRight, goUp = goUp, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XViewCursor]
   }
 }

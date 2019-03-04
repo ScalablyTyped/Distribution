@@ -47,15 +47,8 @@ object XRoot {
     startDocument: js.Function1[XNamespaceMapping, scala.Unit],
     startRootElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
   ): XRoot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("endDocument")(endDocument)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
-    __obj.updateDynamic("startDocument")(startDocument)
-    __obj.updateDynamic("startRootElement")(startRootElement)
+    val __obj = js.Dynamic.literal(acquire = acquire, endDocument = endDocument, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startRootElement = startRootElement)
+  
     __obj.asInstanceOf[XRoot]
   }
 }

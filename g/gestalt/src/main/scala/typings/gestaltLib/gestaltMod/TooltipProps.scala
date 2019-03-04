@@ -28,9 +28,7 @@ object TooltipProps {
     positionRelativeToAnchor: js.UndefOr[scala.Boolean] = js.undefined,
     size: gestaltLib.gestaltLibStrings.xs | gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg | gestaltLib.gestaltLibStrings.xl = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("onDismiss")(onDismiss)
+    val __obj = js.Dynamic.literal(anchor = anchor, onDismiss = onDismiss)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
     if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor)

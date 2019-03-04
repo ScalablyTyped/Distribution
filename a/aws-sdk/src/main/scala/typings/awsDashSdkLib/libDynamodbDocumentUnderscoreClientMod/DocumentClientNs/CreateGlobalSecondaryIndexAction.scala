@@ -32,10 +32,7 @@ object CreateGlobalSecondaryIndexAction {
     Projection: Projection,
     ProvisionedThroughput: ProvisionedThroughput = null
   ): CreateGlobalSecondaryIndexAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IndexName")(IndexName)
-    __obj.updateDynamic("KeySchema")(KeySchema)
-    __obj.updateDynamic("Projection")(Projection)
+    val __obj = js.Dynamic.literal(IndexName = IndexName, KeySchema = KeySchema, Projection = Projection)
     if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
     __obj.asInstanceOf[CreateGlobalSecondaryIndexAction]
   }

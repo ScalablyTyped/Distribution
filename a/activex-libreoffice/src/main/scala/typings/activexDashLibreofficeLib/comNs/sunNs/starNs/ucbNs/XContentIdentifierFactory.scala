@@ -29,11 +29,8 @@ object XContentIdentifierFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContentIdentifierFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createContentIdentifier")(createContentIdentifier)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createContentIdentifier = createContentIdentifier, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContentIdentifierFactory]
   }
 }

@@ -35,10 +35,8 @@ object Rule {
     Parameter: java.lang.String,
     Terms: activexDashInteropLib.SafeArray[RuleTerm]
   ): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Parameter")(Parameter)
-    __obj.updateDynamic("Terms")(Terms)
+    val __obj = js.Dynamic.literal(Action = Action, Parameter = Parameter, Terms = Terms)
+  
     __obj.asInstanceOf[Rule]
   }
 }

@@ -26,13 +26,7 @@ object Visitor {
     visitText: js.Function2[Text, js.Any, js.Any],
     visit: js.Function2[/* node */ Node, /* context */ js.Any, _] = null
   ): Visitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitAttribute")(visitAttribute)
-    __obj.updateDynamic("visitComment")(visitComment)
-    __obj.updateDynamic("visitElement")(visitElement)
-    __obj.updateDynamic("visitExpansion")(visitExpansion)
-    __obj.updateDynamic("visitExpansionCase")(visitExpansionCase)
-    __obj.updateDynamic("visitText")(visitText)
+    val __obj = js.Dynamic.literal(visitAttribute = visitAttribute, visitComment = visitComment, visitElement = visitElement, visitExpansion = visitExpansion, visitExpansionCase = visitExpansionCase, visitText = visitText)
     if (visit != null) __obj.updateDynamic("visit")(visit)
     __obj.asInstanceOf[Visitor]
   }

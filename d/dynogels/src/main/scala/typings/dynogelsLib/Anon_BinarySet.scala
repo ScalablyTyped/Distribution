@@ -22,12 +22,8 @@ object Anon_BinarySet {
     timeUUID: js.Function0[joiLib.joiMod.AnySchema],
     uuid: js.Function0[joiLib.joiMod.AnySchema]
   ): Anon_BinarySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binarySet")(binarySet)
-    __obj.updateDynamic("numberSet")(numberSet)
-    __obj.updateDynamic("stringSet")(stringSet)
-    __obj.updateDynamic("timeUUID")(timeUUID)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(binarySet = binarySet, numberSet = numberSet, stringSet = stringSet, timeUUID = timeUUID, uuid = uuid)
+  
     __obj.asInstanceOf[Anon_BinarySet]
   }
 }

@@ -16,9 +16,8 @@ object ColorDescriptor {
     model: colorDashStringLib.colorDashStringLibStrings.rgb | colorDashStringLib.colorDashStringLibStrings.hsl | colorDashStringLib.colorDashStringLibStrings.hwb,
     value: Color
   ): ColorDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], value = value)
+  
     __obj.asInstanceOf[ColorDescriptor]
   }
 }

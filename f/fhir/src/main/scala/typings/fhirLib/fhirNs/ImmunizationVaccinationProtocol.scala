@@ -81,9 +81,7 @@ object ImmunizationVaccinationProtocol {
     series: java.lang.String = null,
     seriesDoses: js.UndefOr[positiveInt] = js.undefined
   ): ImmunizationVaccinationProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doseStatus")(doseStatus)
-    __obj.updateDynamic("targetDisease")(targetDisease)
+    val __obj = js.Dynamic.literal(doseStatus = doseStatus, targetDisease = targetDisease)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_doseSequence != null) __obj.updateDynamic("_doseSequence")(_doseSequence)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

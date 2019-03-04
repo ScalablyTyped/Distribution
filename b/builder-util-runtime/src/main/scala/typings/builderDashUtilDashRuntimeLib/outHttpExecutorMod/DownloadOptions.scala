@@ -30,8 +30,7 @@ object DownloadOptions {
     sha2: java.lang.String = null,
     sha512: java.lang.String = null
   ): DownloadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancellationToken")(cancellationToken)
+    val __obj = js.Dynamic.literal(cancellationToken = cancellationToken)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
     if (sha2 != null) __obj.updateDynamic("sha2")(sha2)

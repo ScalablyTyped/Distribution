@@ -30,12 +30,8 @@ object AreaMeasurement2DViewModelMeasurementLabel {
     perimeter: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): AreaMeasurement2DViewModelMeasurementLabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("perimeter")(perimeter)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = hasOwnProperty, perimeter = perimeter, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[AreaMeasurement2DViewModelMeasurementLabel]
   }
 }

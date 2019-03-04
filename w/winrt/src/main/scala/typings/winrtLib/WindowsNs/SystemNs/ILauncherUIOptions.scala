@@ -18,10 +18,8 @@ object ILauncherUIOptions {
     preferredPlacement: winrtLib.WindowsNs.UINs.PopupsNs.Placement,
     selectionRect: winrtLib.WindowsNs.FoundationNs.Rect
   ): ILauncherUIOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invocationPoint")(invocationPoint)
-    __obj.updateDynamic("preferredPlacement")(preferredPlacement)
-    __obj.updateDynamic("selectionRect")(selectionRect)
+    val __obj = js.Dynamic.literal(invocationPoint = invocationPoint, preferredPlacement = preferredPlacement, selectionRect = selectionRect)
+  
     __obj.asInstanceOf[ILauncherUIOptions]
   }
 }

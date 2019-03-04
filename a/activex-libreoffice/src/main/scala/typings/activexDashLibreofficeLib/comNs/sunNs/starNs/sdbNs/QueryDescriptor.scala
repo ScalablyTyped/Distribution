@@ -76,35 +76,8 @@ object QueryDescriptor {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): QueryDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApplyFilter")(ApplyFilter)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("Command")(Command)
-    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
-    __obj.updateDynamic("GroupBy")(GroupBy)
-    __obj.updateDynamic("HavingClause")(HavingClause)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RowHeight")(RowHeight)
-    __obj.updateDynamic("TextColor")(TextColor)
-    __obj.updateDynamic("UpdateCatalogName")(UpdateCatalogName)
-    __obj.updateDynamic("UpdateSchemaName")(UpdateSchemaName)
-    __obj.updateDynamic("UpdateTableName")(UpdateTableName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createDataDescriptor")(createDataDescriptor)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ApplyFilter = ApplyFilter, Columns = Columns, Command = Command, EscapeProcessing = EscapeProcessing, Filter = Filter, FontDescriptor = FontDescriptor, GroupBy = GroupBy, HavingClause = HavingClause, Name = Name, Order = Order, PropertySetInfo = PropertySetInfo, RowHeight = RowHeight, TextColor = TextColor, UpdateCatalogName = UpdateCatalogName, UpdateSchemaName = UpdateSchemaName, UpdateTableName = UpdateTableName, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createDataDescriptor = createDataDescriptor, getColumns = getColumns, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[QueryDescriptor]
   }
 }

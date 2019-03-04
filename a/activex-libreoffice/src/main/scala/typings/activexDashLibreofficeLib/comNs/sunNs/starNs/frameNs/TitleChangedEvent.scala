@@ -15,9 +15,8 @@ trait TitleChangedEvent
 object TitleChangedEvent {
   @scala.inline
   def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, Title: java.lang.String): TitleChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(Source = Source, Title = Title)
+  
     __obj.asInstanceOf[TitleChangedEvent]
   }
 }

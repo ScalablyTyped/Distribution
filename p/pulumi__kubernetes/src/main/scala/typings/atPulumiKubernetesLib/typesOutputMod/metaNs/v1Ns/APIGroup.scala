@@ -58,13 +58,8 @@ object APIGroup {
     serverAddressByClientCIDRs: js.Array[ServerAddressByClientCIDR],
     versions: js.Array[GroupVersionForDiscovery]
   ): APIGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("preferredVersion")(preferredVersion)
-    __obj.updateDynamic("serverAddressByClientCIDRs")(serverAddressByClientCIDRs)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, name = name, preferredVersion = preferredVersion, serverAddressByClientCIDRs = serverAddressByClientCIDRs, versions = versions)
+  
     __obj.asInstanceOf[APIGroup]
   }
 }

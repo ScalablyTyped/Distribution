@@ -14,9 +14,7 @@ trait Background extends js.Object {
 object Background {
   @scala.inline
   def apply(name: java.lang.String, value: java.lang.String, default: js.UndefOr[scala.Boolean] = js.undefined): Background = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
     __obj.asInstanceOf[Background]
   }

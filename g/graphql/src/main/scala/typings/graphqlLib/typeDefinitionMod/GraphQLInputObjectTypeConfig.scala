@@ -26,9 +26,7 @@ object GraphQLInputObjectTypeConfig {
     description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null,
     extensionASTNodes: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.InputObjectTypeExtensionNode]] = null
   ): GraphQLInputObjectTypeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

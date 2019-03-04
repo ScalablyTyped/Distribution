@@ -68,11 +68,8 @@ object BreakpointsOwner {
     orientation: java.lang.String,
     widthBreakpoint: java.lang.String
   ): BreakpointsOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakpoints")(breakpoints)
-    __obj.updateDynamic("heightBreakpoint")(heightBreakpoint)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("widthBreakpoint")(widthBreakpoint)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints, heightBreakpoint = heightBreakpoint, orientation = orientation, widthBreakpoint = widthBreakpoint)
+  
     __obj.asInstanceOf[BreakpointsOwner]
   }
 }

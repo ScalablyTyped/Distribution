@@ -37,14 +37,8 @@ object XPrinterServer {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPrinterServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrinterNames")(PrinterNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createInfoPrinter")(createInfoPrinter)
-    __obj.updateDynamic("createPrinter")(createPrinter)
-    __obj.updateDynamic("getPrinterNames")(getPrinterNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(PrinterNames = PrinterNames, acquire = acquire, createInfoPrinter = createInfoPrinter, createPrinter = createPrinter, getPrinterNames = getPrinterNames, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPrinterServer]
   }
 }

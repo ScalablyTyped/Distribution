@@ -12,8 +12,8 @@ trait Anon_Records[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseRes
 object Anon_Records {
   @scala.inline
   def apply[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */](records: js.Array[T]): Anon_Records[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("records")(records)
+    val __obj = js.Dynamic.literal(records = records)
+  
     __obj.asInstanceOf[Anon_Records[T]]
   }
 }

@@ -29,14 +29,8 @@ object XStream {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, OutputStream = OutputStream, acquire = acquire, getInputStream = getInputStream, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStream]
   }
 }

@@ -26,14 +26,8 @@ object Dependency {
     getWarnings: js.Function0[js.Any],
     updateHash: js.Function1[js.Any, scala.Unit]
   ): Dependency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("getErrors")(getErrors)
-    __obj.updateDynamic("getExports")(getExports)
-    __obj.updateDynamic("getReference")(getReference)
-    __obj.updateDynamic("getResourceIdentifier")(getResourceIdentifier)
-    __obj.updateDynamic("getWarnings")(getWarnings)
-    __obj.updateDynamic("updateHash")(updateHash)
+    val __obj = js.Dynamic.literal(disconnect = disconnect, getErrors = getErrors, getExports = getExports, getReference = getReference, getResourceIdentifier = getResourceIdentifier, getWarnings = getWarnings, updateHash = updateHash)
+  
     __obj.asInstanceOf[Dependency]
   }
 }

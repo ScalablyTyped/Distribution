@@ -42,8 +42,7 @@ object Anon_AltFieldsFileIdKey {
     supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFileIdKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

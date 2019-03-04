@@ -109,17 +109,8 @@ object XDriver {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDriver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MajorVersion")(MajorVersion)
-    __obj.updateDynamic("MinorVersion")(MinorVersion)
-    __obj.updateDynamic("acceptsURL")(acceptsURL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("getMajorVersion")(getMajorVersion)
-    __obj.updateDynamic("getMinorVersion")(getMinorVersion)
-    __obj.updateDynamic("getPropertyInfo")(getPropertyInfo)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(MajorVersion = MajorVersion, MinorVersion = MinorVersion, acceptsURL = acceptsURL, acquire = acquire, connect = connect, getMajorVersion = getMajorVersion, getMinorVersion = getMinorVersion, getPropertyInfo = getPropertyInfo, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDriver]
   }
 }

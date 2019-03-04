@@ -40,20 +40,8 @@ object XDependentTextField {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): XDependentTextField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("TextFieldMaster")(TextFieldMaster)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("attachTextFieldMaster")(attachTextFieldMaster)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getPresentation")(getPresentation)
-    __obj.updateDynamic("getTextFieldMaster")(getTextFieldMaster)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, TextFieldMaster = TextFieldMaster, acquire = acquire, addEventListener = addEventListener, attach = attach, attachTextFieldMaster = attachTextFieldMaster, dispose = dispose, getAnchor = getAnchor, getPresentation = getPresentation, getTextFieldMaster = getTextFieldMaster, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XDependentTextField]
   }
 }

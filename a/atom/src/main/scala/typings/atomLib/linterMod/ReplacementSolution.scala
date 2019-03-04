@@ -22,9 +22,7 @@ object ReplacementSolution {
     priority: scala.Int | scala.Double = null,
     title: java.lang.String = null
   ): ReplacementSolution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("replaceWith")(replaceWith)
+    val __obj = js.Dynamic.literal(position = position, replaceWith = replaceWith)
     if (currentText != null) __obj.updateDynamic("currentText")(currentText)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)

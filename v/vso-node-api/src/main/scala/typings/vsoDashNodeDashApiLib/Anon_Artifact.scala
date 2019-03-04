@@ -20,11 +20,8 @@ object Anon_Artifact {
     event: scala.Double,
     undefined: scala.Double
   ): Anon_Artifact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifact")(artifact)
-    __obj.updateDynamic("environmentState")(environmentState)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(artifact = artifact, environmentState = environmentState, event = event, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_Artifact]
   }
 }

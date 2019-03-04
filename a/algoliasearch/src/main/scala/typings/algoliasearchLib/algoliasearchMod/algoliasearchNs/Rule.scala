@@ -38,10 +38,7 @@ object Rule {
     objectID: java.lang.String,
     description: java.lang.String = null
   ): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("consequence")(consequence)
-    __obj.updateDynamic("objectID")(objectID)
+    val __obj = js.Dynamic.literal(condition = condition, consequence = consequence, objectID = objectID)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[Rule]
   }

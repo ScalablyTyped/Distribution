@@ -42,8 +42,7 @@ object Options {
     username: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (appending != null) __obj.updateDynamic("appending")(appending)
     if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat)
     if (error != null) __obj.updateDynamic("error")(error)

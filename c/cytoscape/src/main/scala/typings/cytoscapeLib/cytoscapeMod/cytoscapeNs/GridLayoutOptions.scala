@@ -46,12 +46,7 @@ object GridLayoutOptions {
     spacingFactor: scala.Int | scala.Double = null,
     stop: LayoutHandler = null
   ): GridLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condense")(condense)
-    __obj.updateDynamic("fit")(fit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(condense = condense, fit = fit, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, position = position)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

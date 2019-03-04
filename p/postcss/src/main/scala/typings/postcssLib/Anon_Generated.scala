@@ -23,10 +23,7 @@ object Anon_Generated {
     source: java.lang.String,
     name: java.lang.String = null
   ): Anon_Generated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generated")(generated)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(generated = generated, original = original, source = source)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Anon_Generated]
   }

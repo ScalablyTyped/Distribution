@@ -23,8 +23,8 @@ trait IIntervalService extends js.Object {
 object IIntervalService {
   @scala.inline
   def apply(flush: js.Function1[scala.Double, scala.Double]): IIntervalService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
+    val __obj = js.Dynamic.literal(flush = flush)
+  
     __obj.asInstanceOf[IIntervalService]
   }
 }

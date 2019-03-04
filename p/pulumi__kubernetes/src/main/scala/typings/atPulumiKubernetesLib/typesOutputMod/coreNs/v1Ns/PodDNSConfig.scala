@@ -35,10 +35,8 @@ object PodDNSConfig {
     options: js.Array[PodDNSConfigOption],
     searches: js.Array[java.lang.String]
   ): PodDNSConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nameservers")(nameservers)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("searches")(searches)
+    val __obj = js.Dynamic.literal(nameservers = nameservers, options = options, searches = searches)
+  
     __obj.asInstanceOf[PodDNSConfig]
   }
 }

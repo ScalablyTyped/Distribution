@@ -22,8 +22,7 @@ object Anon_Globe {
     selectedTerrainProviderViewModel: cesiumLib.cesiumMod.CesiumNs.ProviderViewModel = null,
     terrainProviderViewModels: js.Array[cesiumLib.cesiumMod.CesiumNs.ProviderViewModel] = null
   ): Anon_Globe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("globe")(globe)
+    val __obj = js.Dynamic.literal(globe = globe)
     if (imageryProviderViewModels != null) __obj.updateDynamic("imageryProviderViewModels")(imageryProviderViewModels)
     if (selectedImageryProviderViewModel != null) __obj.updateDynamic("selectedImageryProviderViewModel")(selectedImageryProviderViewModel)
     if (selectedTerrainProviderViewModel != null) __obj.updateDynamic("selectedTerrainProviderViewModel")(selectedTerrainProviderViewModel)

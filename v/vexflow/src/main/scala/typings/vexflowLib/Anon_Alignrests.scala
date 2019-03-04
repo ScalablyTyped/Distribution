@@ -13,9 +13,8 @@ trait Anon_Alignrests extends js.Object {
 object Anon_Alignrests {
   @scala.inline
   def apply(align_rests: scala.Boolean, auto_beam: scala.Boolean): Anon_Alignrests = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align_rests")(align_rests)
-    __obj.updateDynamic("auto_beam")(auto_beam)
+    val __obj = js.Dynamic.literal(align_rests = align_rests, auto_beam = auto_beam)
+  
     __obj.asInstanceOf[Anon_Alignrests]
   }
 }

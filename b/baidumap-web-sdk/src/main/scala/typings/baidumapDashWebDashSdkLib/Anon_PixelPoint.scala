@@ -22,11 +22,8 @@ object Anon_PixelPoint {
     `type`: java.lang.String,
     zoom: scala.Double
   ): Anon_PixelPoint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pixel")(pixel)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(pixel = pixel, point = point, target = target, zoom = zoom)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_PixelPoint]
   }
 }

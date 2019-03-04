@@ -25,12 +25,8 @@ object XModeChangeListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XModeChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("modeChanged")(modeChanged)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, modeChanged = modeChanged, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XModeChangeListener]
   }
 }

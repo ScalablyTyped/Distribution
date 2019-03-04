@@ -18,9 +18,8 @@ object Definition {
     items: qlikLib.Anon_DataDimensions,
     `type`: qlikLib.qlikLibStrings.items
   ): Definition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(component = component, items = items)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Definition]
   }
 }

@@ -25,8 +25,8 @@ trait TextUserDefinedAttributesSupplier extends js.Object {
 object TextUserDefinedAttributesSupplier {
   @scala.inline
   def apply(TextUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer): TextUserDefinedAttributesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TextUserDefinedAttributes")(TextUserDefinedAttributes)
+    val __obj = js.Dynamic.literal(TextUserDefinedAttributes = TextUserDefinedAttributes)
+  
     __obj.asInstanceOf[TextUserDefinedAttributesSupplier]
   }
 }

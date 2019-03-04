@@ -24,13 +24,8 @@ object IntersectionObserverEntryInit {
     target: Element,
     time: scala.Double
   ): IntersectionObserverEntryInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingClientRect")(boundingClientRect)
-    __obj.updateDynamic("intersectionRect")(intersectionRect)
-    __obj.updateDynamic("isIntersecting")(isIntersecting)
-    __obj.updateDynamic("rootBounds")(rootBounds)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect, intersectionRect = intersectionRect, isIntersecting = isIntersecting, rootBounds = rootBounds, target = target, time = time)
+  
     __obj.asInstanceOf[IntersectionObserverEntryInit]
   }
 }

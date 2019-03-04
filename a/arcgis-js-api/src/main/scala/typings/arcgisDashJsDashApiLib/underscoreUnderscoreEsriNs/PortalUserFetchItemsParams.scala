@@ -41,10 +41,7 @@ object PortalUserFetchItemsParams {
     num: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null
   ): PortalUserFetchItemsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (folder != null) __obj.updateDynamic("folder")(folder)
     if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

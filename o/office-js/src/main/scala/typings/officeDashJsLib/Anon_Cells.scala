@@ -13,9 +13,8 @@ trait Anon_Cells extends js.Object {
 object Anon_Cells {
   @scala.inline
   def apply(cells: js.Any, format: js.Any): Anon_Cells = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cells")(cells)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(cells = cells, format = format)
+  
     __obj.asInstanceOf[Anon_Cells]
   }
 }

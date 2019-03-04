@@ -36,19 +36,8 @@ object Logger {
     setParent: js.Function1[Logger, scala.Unit],
     warn: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): Logger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fine")(fine)
-    __obj.updateDynamic("getLogLevel")(getLogLevel)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getWatchers")(getWatchers)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("isLoggable")(isLoggable)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("registerWatcher")(registerWatcher)
-    __obj.updateDynamic("setLogLevel")(setLogLevel)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(error = error, fine = fine, getLogLevel = getLogLevel, getParent = getParent, getWatchers = getWatchers, info = info, isLoggable = isLoggable, log = log, registerWatcher = registerWatcher, setLogLevel = setLogLevel, setParent = setParent, warn = warn)
+  
     __obj.asInstanceOf[Logger]
   }
 }

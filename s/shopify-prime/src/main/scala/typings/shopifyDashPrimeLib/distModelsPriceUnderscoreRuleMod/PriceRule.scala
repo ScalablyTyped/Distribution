@@ -128,16 +128,7 @@ object PriceRule {
     updated_at: java.lang.String = null,
     usage_limit: scala.Int | scala.Double = null
   ): PriceRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocation_method")(allocation_method.asInstanceOf[js.Any])
-    __obj.updateDynamic("customer_selection")(customer_selection.asInstanceOf[js.Any])
-    __obj.updateDynamic("once_per_customer")(once_per_customer)
-    __obj.updateDynamic("starts_at")(starts_at)
-    __obj.updateDynamic("target_selection")(target_selection.asInstanceOf[js.Any])
-    __obj.updateDynamic("target_type")(target_type.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allocation_method = allocation_method.asInstanceOf[js.Any], customer_selection = customer_selection.asInstanceOf[js.Any], once_per_customer = once_per_customer, starts_at = starts_at, target_selection = target_selection.asInstanceOf[js.Any], target_type = target_type.asInstanceOf[js.Any], title = title, value = value, value_type = value_type.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)
     if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at)

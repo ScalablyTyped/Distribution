@@ -14,10 +14,8 @@ trait Anon_NameRos extends js.Object {
 object Anon_NameRos {
   @scala.inline
   def apply(name: java.lang.String, ros: roslibLib.roslibMod.ROSLIBNs.Ros, serviceType: java.lang.String): Anon_NameRos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ros")(ros)
-    __obj.updateDynamic("serviceType")(serviceType)
+    val __obj = js.Dynamic.literal(name = name, ros = ros, serviceType = serviceType)
+  
     __obj.asInstanceOf[Anon_NameRos]
   }
 }

@@ -20,11 +20,7 @@ object GRPCError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): GRPCError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(code = code, message = message, metadata = metadata, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[GRPCError]
   }

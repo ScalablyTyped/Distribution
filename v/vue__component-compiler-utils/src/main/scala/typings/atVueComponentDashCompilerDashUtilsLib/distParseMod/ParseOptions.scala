@@ -26,9 +26,7 @@ object ParseOptions {
     needMap: js.UndefOr[scala.Boolean] = js.undefined,
     sourceRoot: java.lang.String = null
   ): ParseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(compiler = compiler, source = source)
     if (compilerParseOptions != null) __obj.updateDynamic("compilerParseOptions")(compilerParseOptions)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (!js.isUndefined(needMap)) __obj.updateDynamic("needMap")(needMap)

@@ -48,8 +48,7 @@ object JQueryContextMenuOptions {
     trigger: java.lang.String = null,
     zIndex: scala.Int | scala.Double = null
   ): JQueryContextMenuOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(selector = selector)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)

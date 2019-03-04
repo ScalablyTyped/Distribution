@@ -15,8 +15,9 @@ trait IObjectChange[T, R] extends js.Object {
 object IObjectChange {
   @scala.inline
   def apply[T, R](name: java.lang.String, `object`: R, `type`: java.lang.String, oldValue: T = null): IObjectChange[T, R] = {
-    val __obj = js.Dynamic.literal(`object` = `object`.asInstanceOf[js.Any], `type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IObjectChange[T, R]]
   }

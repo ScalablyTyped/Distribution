@@ -30,9 +30,7 @@ object WallpaperDetails {
     thumbnail: js.UndefOr[scala.Boolean] = js.undefined,
     url: java.lang.String = null
   ): WallpaperDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filename = filename, layout = layout.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail)
     if (url != null) __obj.updateDynamic("url")(url)

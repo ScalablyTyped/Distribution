@@ -20,11 +20,8 @@ object Anon_Claim {
     roleArn: java.lang.String,
     value: java.lang.String
   ): Anon_Claim = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("claim")(claim)
-    __obj.updateDynamic("matchType")(matchType)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(claim = claim, matchType = matchType, roleArn = roleArn, value = value)
+  
     __obj.asInstanceOf[Anon_Claim]
   }
 }

@@ -20,10 +20,7 @@ object MDCSelectionControlState {
     indeterminate: scala.Boolean,
     value: java.lang.String = null
   ): MDCSelectionControlState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("indeterminate")(indeterminate)
+    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, indeterminate = indeterminate)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[MDCSelectionControlState]
   }

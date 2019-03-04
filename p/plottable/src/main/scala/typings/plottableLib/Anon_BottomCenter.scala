@@ -18,10 +18,8 @@ object Anon_BottomCenter {
     center: plottableLib.plottableLibStrings.center,
     top: plottableLib.plottableLibStrings.top
   ): Anon_BottomCenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, center = center, top = top)
+  
     __obj.asInstanceOf[Anon_BottomCenter]
   }
 }

@@ -29,8 +29,7 @@ object ContainerProps {
     headerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): ContainerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (blurComponentIOS != null) __obj.updateDynamic("blurComponentIOS")(blurComponentIOS.asInstanceOf[js.Any])
     if (buttonSeparatorStyle != null) __obj.updateDynamic("buttonSeparatorStyle")(buttonSeparatorStyle)
     if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)

@@ -17,10 +17,7 @@ object ColorPickerSelectEvent {
     sender: ColorPicker,
     value: java.lang.String = null
   ): ColorPickerSelectEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ColorPickerSelectEvent]
   }

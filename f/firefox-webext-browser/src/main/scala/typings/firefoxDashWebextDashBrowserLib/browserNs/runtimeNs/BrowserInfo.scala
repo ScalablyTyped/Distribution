@@ -25,11 +25,8 @@ object BrowserInfo {
     vendor: java.lang.String,
     version: java.lang.String
   ): BrowserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildID")(buildID)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("vendor")(vendor)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(buildID = buildID, name = name, vendor = vendor, version = version)
+  
     __obj.asInstanceOf[BrowserInfo]
   }
 }

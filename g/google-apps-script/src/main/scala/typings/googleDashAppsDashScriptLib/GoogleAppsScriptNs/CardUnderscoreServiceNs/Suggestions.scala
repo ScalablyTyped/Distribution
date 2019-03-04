@@ -16,9 +16,8 @@ object Suggestions {
     addSuggestion: js.Function1[java.lang.String, Suggestions],
     addSuggestions: js.Function1[js.Array[js.Object], Suggestions]
   ): Suggestions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addSuggestion")(addSuggestion)
-    __obj.updateDynamic("addSuggestions")(addSuggestions)
+    val __obj = js.Dynamic.literal(addSuggestion = addSuggestion, addSuggestions = addSuggestions)
+  
     __obj.asInstanceOf[Suggestions]
   }
 }

@@ -12,8 +12,8 @@ trait NO_CHANGE extends js.Object {
 object NO_CHANGE {
   @scala.inline
   def apply(brand: atAngularCoreLib.atAngularCoreLibStrings.NO_CHANGE): NO_CHANGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brand")(brand)
+    val __obj = js.Dynamic.literal(brand = brand)
+  
     __obj.asInstanceOf[NO_CHANGE]
   }
 }

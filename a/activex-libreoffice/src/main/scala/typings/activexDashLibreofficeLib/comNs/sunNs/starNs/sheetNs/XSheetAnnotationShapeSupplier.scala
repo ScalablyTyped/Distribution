@@ -27,12 +27,8 @@ object XSheetAnnotationShapeSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetAnnotationShapeSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AnnotationShape")(AnnotationShape)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAnnotationShape")(getAnnotationShape)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape, acquire = acquire, getAnnotationShape = getAnnotationShape, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetAnnotationShapeSupplier]
   }
 }

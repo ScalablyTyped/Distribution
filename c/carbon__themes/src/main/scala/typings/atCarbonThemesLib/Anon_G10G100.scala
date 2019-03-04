@@ -22,12 +22,8 @@ object Anon_G10G100 {
     themes: Anon_G10,
     white: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Theme */ js.Any
   ): Anon_G10G100 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("g10")(g10)
-    __obj.updateDynamic("g100")(g100)
-    __obj.updateDynamic("g90")(g90)
-    __obj.updateDynamic("themes")(themes)
-    __obj.updateDynamic("white")(white)
+    val __obj = js.Dynamic.literal(g10 = g10, g100 = g100, g90 = g90, themes = themes, white = white)
+  
     __obj.asInstanceOf[Anon_G10G100]
   }
 }

@@ -12,8 +12,8 @@ trait IPeerInformation extends js.Object {
 object IPeerInformation {
   @scala.inline
   def apply(displayName: java.lang.String): IPeerInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(displayName = displayName)
+  
     __obj.asInstanceOf[IPeerInformation]
   }
 }

@@ -42,13 +42,8 @@ object GetServiceResult {
     schedulingStrategy: java.lang.String,
     taskDefinition: java.lang.String
   ): GetServiceResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("desiredCount")(desiredCount)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("launchType")(launchType)
-    __obj.updateDynamic("schedulingStrategy")(schedulingStrategy)
-    __obj.updateDynamic("taskDefinition")(taskDefinition)
+    val __obj = js.Dynamic.literal(arn = arn, desiredCount = desiredCount, id = id, launchType = launchType, schedulingStrategy = schedulingStrategy, taskDefinition = taskDefinition)
+  
     __obj.asInstanceOf[GetServiceResult]
   }
 }

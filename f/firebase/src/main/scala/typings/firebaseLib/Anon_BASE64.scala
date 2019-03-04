@@ -20,11 +20,8 @@ object Anon_BASE64 {
     DATA_URL: firebaseLib.firebaseMod.firebaseNs.storageNs.StringFormat,
     RAW: firebaseLib.firebaseMod.firebaseNs.storageNs.StringFormat
   ): Anon_BASE64 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BASE64")(BASE64)
-    __obj.updateDynamic("BASE64URL")(BASE64URL)
-    __obj.updateDynamic("DATA_URL")(DATA_URL)
-    __obj.updateDynamic("RAW")(RAW)
+    val __obj = js.Dynamic.literal(BASE64 = BASE64, BASE64URL = BASE64URL, DATA_URL = DATA_URL, RAW = RAW)
+  
     __obj.asInstanceOf[Anon_BASE64]
   }
 }

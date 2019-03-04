@@ -12,8 +12,8 @@ trait Anon_PrefixInput extends js.Object {
 object Anon_PrefixInput {
   @scala.inline
   def apply(prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_PrefixInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PrefixInput]
   }
 }

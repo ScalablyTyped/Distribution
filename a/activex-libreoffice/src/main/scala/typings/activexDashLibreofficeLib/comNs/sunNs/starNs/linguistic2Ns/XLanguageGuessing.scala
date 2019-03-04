@@ -102,16 +102,8 @@ object XLanguageGuessing {
       activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
     ]
   ): XLanguageGuessing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableLanguages")(AvailableLanguages)
-    __obj.updateDynamic("DisabledLanguages")(DisabledLanguages)
-    __obj.updateDynamic("EnabledLanguages")(EnabledLanguages)
-    __obj.updateDynamic("disableLanguages")(disableLanguages)
-    __obj.updateDynamic("enableLanguages")(enableLanguages)
-    __obj.updateDynamic("getAvailableLanguages")(getAvailableLanguages)
-    __obj.updateDynamic("getDisabledLanguages")(getDisabledLanguages)
-    __obj.updateDynamic("getEnabledLanguages")(getEnabledLanguages)
-    __obj.updateDynamic("guessPrimaryLanguage")(guessPrimaryLanguage)
+    val __obj = js.Dynamic.literal(AvailableLanguages = AvailableLanguages, DisabledLanguages = DisabledLanguages, EnabledLanguages = EnabledLanguages, disableLanguages = disableLanguages, enableLanguages = enableLanguages, getAvailableLanguages = getAvailableLanguages, getDisabledLanguages = getDisabledLanguages, getEnabledLanguages = getEnabledLanguages, guessPrimaryLanguage = guessPrimaryLanguage)
+  
     __obj.asInstanceOf[XLanguageGuessing]
   }
 }

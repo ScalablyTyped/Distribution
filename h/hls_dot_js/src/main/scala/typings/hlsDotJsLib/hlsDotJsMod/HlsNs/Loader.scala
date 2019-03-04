@@ -27,10 +27,8 @@ object Loader {
     destroy: js.Function0[scala.Unit],
     load: js.Function3[LoaderContext, LoaderConfig, LoaderCallbacks, scala.Unit]
   ): Loader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(abort = abort, destroy = destroy, load = load)
+  
     __obj.asInstanceOf[Loader]
   }
 }

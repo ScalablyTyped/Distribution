@@ -20,8 +20,7 @@ object DownloadSpecimenProps {
     subtitle: java.lang.String = null,
     title: java.lang.String = null
   ): DownloadSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
     if (title != null) __obj.updateDynamic("title")(title)

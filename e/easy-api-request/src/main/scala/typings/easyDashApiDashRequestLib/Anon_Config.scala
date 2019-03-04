@@ -13,9 +13,8 @@ trait Anon_Config extends js.Object {
 object Anon_Config {
   @scala.inline
   def apply(config: Anon_Cookies, name: js.Any): Anon_Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(config = config, name = name)
+  
     __obj.asInstanceOf[Anon_Config]
   }
 }

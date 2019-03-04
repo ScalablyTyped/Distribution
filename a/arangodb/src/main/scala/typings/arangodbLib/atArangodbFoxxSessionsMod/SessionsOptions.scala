@@ -18,9 +18,7 @@ object SessionsOptions {
     transport: arangodbLib.FoxxNs.SessionTransport | js.Array[arangodbLib.FoxxNs.SessionTransport] | arangodbLib.arangodbLibStrings.cookie | arangodbLib.arangodbLibStrings.header,
     autoCreate: js.UndefOr[scala.Boolean] = js.undefined
   ): SessionsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
-    __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(storage = storage.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate)
     __obj.asInstanceOf[SessionsOptions]
   }

@@ -30,16 +30,8 @@ object NavigatorID {
     vendor: java.lang.String,
     vendorSub: java.lang.String
   ): NavigatorID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appCodeName")(appCodeName)
-    __obj.updateDynamic("appName")(appName)
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("productSub")(productSub)
-    __obj.updateDynamic("userAgent")(userAgent)
-    __obj.updateDynamic("vendor")(vendor)
-    __obj.updateDynamic("vendorSub")(vendorSub)
+    val __obj = js.Dynamic.literal(appCodeName = appCodeName, appName = appName, appVersion = appVersion, platform = platform, product = product, productSub = productSub, userAgent = userAgent, vendor = vendor, vendorSub = vendorSub)
+  
     __obj.asInstanceOf[NavigatorID]
   }
 }

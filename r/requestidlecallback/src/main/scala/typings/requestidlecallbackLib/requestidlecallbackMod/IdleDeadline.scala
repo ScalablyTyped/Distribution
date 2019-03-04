@@ -13,9 +13,8 @@ trait IdleDeadline extends js.Object {
 object IdleDeadline {
   @scala.inline
   def apply(didTimeout: scala.Boolean, timeRemaining: js.Function0[DOMHighResTimeStamp]): IdleDeadline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("didTimeout")(didTimeout)
-    __obj.updateDynamic("timeRemaining")(timeRemaining)
+    val __obj = js.Dynamic.literal(didTimeout = didTimeout, timeRemaining = timeRemaining)
+  
     __obj.asInstanceOf[IdleDeadline]
   }
 }

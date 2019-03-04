@@ -16,9 +16,8 @@ object CellFormatter {
     fromRaw: js.Function2[js.Any, backboneLib.backboneMod.Model, js.Any],
     toRaw: js.Function2[js.Any, backboneLib.backboneMod.Model, js.Any]
   ): CellFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromRaw")(fromRaw)
-    __obj.updateDynamic("toRaw")(toRaw)
+    val __obj = js.Dynamic.literal(fromRaw = fromRaw, toRaw = toRaw)
+  
     __obj.asInstanceOf[CellFormatter]
   }
 }

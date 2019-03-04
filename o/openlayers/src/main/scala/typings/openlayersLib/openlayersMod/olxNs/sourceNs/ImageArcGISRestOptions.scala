@@ -32,8 +32,7 @@ object ImageArcGISRestOptions {
     resolutions: js.Array[scala.Double] = null,
     url: java.lang.String = null
   ): ImageArcGISRestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions)
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)

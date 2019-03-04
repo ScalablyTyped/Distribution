@@ -50,10 +50,7 @@ object ArrowKeyStepperProps {
     scrollToColumn: scala.Int | scala.Double = null,
     scrollToRow: scala.Int | scala.Double = null
   ): ArrowKeyStepperProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("columnCount")(columnCount)
-    __obj.updateDynamic("rowCount")(rowCount)
+    val __obj = js.Dynamic.literal(children = children, columnCount = columnCount, rowCount = rowCount)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

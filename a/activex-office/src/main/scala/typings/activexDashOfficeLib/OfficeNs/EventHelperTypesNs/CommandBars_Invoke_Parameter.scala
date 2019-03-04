@@ -28,15 +28,8 @@ object CommandBars_Invoke_Parameter {
     riid: activexDashStdoleLib.stdoleNs.GUID,
     wFlags: scala.Double
   ): CommandBars_Invoke_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispidMember")(dispidMember)
-    __obj.updateDynamic("lcid")(lcid)
-    __obj.updateDynamic("pdispparams")(pdispparams)
-    __obj.updateDynamic("pexcepinfo")(pexcepinfo)
-    __obj.updateDynamic("puArgErr")(puArgErr)
-    __obj.updateDynamic("pvarResult")(pvarResult)
-    __obj.updateDynamic("riid")(riid)
-    __obj.updateDynamic("wFlags")(wFlags)
+    val __obj = js.Dynamic.literal(dispidMember = dispidMember, lcid = lcid, pdispparams = pdispparams, pexcepinfo = pexcepinfo, puArgErr = puArgErr, pvarResult = pvarResult, riid = riid, wFlags = wFlags)
+  
     __obj.asInstanceOf[CommandBars_Invoke_Parameter]
   }
 }

@@ -67,8 +67,7 @@ object ITooltipProps {
     usePortal: js.UndefOr[scala.Boolean] = js.undefined,
     wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
   ): ITooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (boundary != null) __obj.updateDynamic("boundary")(boundary)
     if (!js.isUndefined(canEscapeKeyClose)) __obj.updateDynamic("canEscapeKeyClose")(canEscapeKeyClose)

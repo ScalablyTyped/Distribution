@@ -34,11 +34,8 @@ object ASPxClientVerticalGridBatchEditStartEditingEventArgs {
     recordValues: js.Object,
     visibleIndex: scala.Double
   ): ASPxClientVerticalGridBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("focusedRow")(focusedRow)
-    __obj.updateDynamic("recordValues")(recordValues)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, focusedRow = focusedRow, recordValues = recordValues, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditStartEditingEventArgs]
   }
 }

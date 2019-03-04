@@ -28,14 +28,8 @@ object DatetimeObjectOutput {
     seconds: scala.Double,
     years: scala.Double
   ): DatetimeObjectOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("milliseconds")(milliseconds)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("years")(years)
+    val __obj = js.Dynamic.literal(date = date, hours = hours, milliseconds = milliseconds, minutes = minutes, months = months, seconds = seconds, years = years)
+  
     __obj.asInstanceOf[DatetimeObjectOutput]
   }
 }

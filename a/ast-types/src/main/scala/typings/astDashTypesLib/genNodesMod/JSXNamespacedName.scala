@@ -22,9 +22,8 @@ object JSXNamespacedName {
     namespace: astDashTypesLib.genKindsMod.JSXIdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.JSXNamespacedName
   ): JSXNamespacedName = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSXNamespacedName]
   }
 }

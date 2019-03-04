@@ -131,39 +131,8 @@ object XCalendar {
     setMinimumNumberOfDaysForFirstWeek: js.Function1[scala.Double, scala.Unit],
     setValue: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XCalendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DateTime")(DateTime)
-    __obj.updateDynamic("Days")(Days)
-    __obj.updateDynamic("FirstDayOfWeek")(FirstDayOfWeek)
-    __obj.updateDynamic("LoadedCalendar")(LoadedCalendar)
-    __obj.updateDynamic("MinimumNumberOfDaysForFirstWeek")(MinimumNumberOfDaysForFirstWeek)
-    __obj.updateDynamic("Months")(Months)
-    __obj.updateDynamic("NumberOfDaysInWeek")(NumberOfDaysInWeek)
-    __obj.updateDynamic("NumberOfMonthsInYear")(NumberOfMonthsInYear)
-    __obj.updateDynamic("UniqueID")(UniqueID)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addValue")(addValue)
-    __obj.updateDynamic("getAllCalendars")(getAllCalendars)
-    __obj.updateDynamic("getDateTime")(getDateTime)
-    __obj.updateDynamic("getDays")(getDays)
-    __obj.updateDynamic("getDisplayName")(getDisplayName)
-    __obj.updateDynamic("getFirstDayOfWeek")(getFirstDayOfWeek)
-    __obj.updateDynamic("getLoadedCalendar")(getLoadedCalendar)
-    __obj.updateDynamic("getMinimumNumberOfDaysForFirstWeek")(getMinimumNumberOfDaysForFirstWeek)
-    __obj.updateDynamic("getMonths")(getMonths)
-    __obj.updateDynamic("getNumberOfDaysInWeek")(getNumberOfDaysInWeek)
-    __obj.updateDynamic("getNumberOfMonthsInYear")(getNumberOfMonthsInYear)
-    __obj.updateDynamic("getUniqueID")(getUniqueID)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("loadCalendar")(loadCalendar)
-    __obj.updateDynamic("loadDefaultCalendar")(loadDefaultCalendar)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDateTime")(setDateTime)
-    __obj.updateDynamic("setFirstDayOfWeek")(setFirstDayOfWeek)
-    __obj.updateDynamic("setMinimumNumberOfDaysForFirstWeek")(setMinimumNumberOfDaysForFirstWeek)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(DateTime = DateTime, Days = Days, FirstDayOfWeek = FirstDayOfWeek, LoadedCalendar = LoadedCalendar, MinimumNumberOfDaysForFirstWeek = MinimumNumberOfDaysForFirstWeek, Months = Months, NumberOfDaysInWeek = NumberOfDaysInWeek, NumberOfMonthsInYear = NumberOfMonthsInYear, UniqueID = UniqueID, acquire = acquire, addValue = addValue, getAllCalendars = getAllCalendars, getDateTime = getDateTime, getDays = getDays, getDisplayName = getDisplayName, getFirstDayOfWeek = getFirstDayOfWeek, getLoadedCalendar = getLoadedCalendar, getMinimumNumberOfDaysForFirstWeek = getMinimumNumberOfDaysForFirstWeek, getMonths = getMonths, getNumberOfDaysInWeek = getNumberOfDaysInWeek, getNumberOfMonthsInYear = getNumberOfMonthsInYear, getUniqueID = getUniqueID, getValue = getValue, isValid = isValid, loadCalendar = loadCalendar, loadDefaultCalendar = loadDefaultCalendar, queryInterface = queryInterface, release = release, setDateTime = setDateTime, setFirstDayOfWeek = setFirstDayOfWeek, setMinimumNumberOfDaysForFirstWeek = setMinimumNumberOfDaysForFirstWeek, setValue = setValue)
+  
     __obj.asInstanceOf[XCalendar]
   }
 }

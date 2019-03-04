@@ -24,13 +24,8 @@ object ChampionDto {
     id: scala.Double,
     rankedPlayEnabled: scala.Boolean
   ): ChampionDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("botEnabled")(botEnabled)
-    __obj.updateDynamic("botMmEnabled")(botMmEnabled)
-    __obj.updateDynamic("freeToPlay")(freeToPlay)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rankedPlayEnabled")(rankedPlayEnabled)
+    val __obj = js.Dynamic.literal(active = active, botEnabled = botEnabled, botMmEnabled = botMmEnabled, freeToPlay = freeToPlay, id = id, rankedPlayEnabled = rankedPlayEnabled)
+  
     __obj.asInstanceOf[ChampionDto]
   }
 }

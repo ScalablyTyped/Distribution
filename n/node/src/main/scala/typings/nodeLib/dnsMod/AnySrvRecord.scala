@@ -20,11 +20,8 @@ object AnySrvRecord {
     `type`: nodeLib.nodeLibStrings.SRV,
     weight: scala.Double
   ): AnySrvRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(name = name, port = port, priority = priority, weight = weight)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnySrvRecord]
   }
 }

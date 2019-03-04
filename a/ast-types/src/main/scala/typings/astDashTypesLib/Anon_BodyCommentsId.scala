@@ -34,8 +34,7 @@ object Anon_BodyCommentsId {
     superTypeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_BodyCommentsId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (id != null) __obj.updateDynamic("id")(id)
     if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])

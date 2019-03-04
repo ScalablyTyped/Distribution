@@ -15,10 +15,7 @@ object ojMenuButtonSettableProperties {
     display: atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.icons,
     translations: js.Object = null
   ): ojMenuButtonSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chroming")(chroming.asInstanceOf[js.Any])
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any], disabled = disabled, display = display.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojMenuButtonSettableProperties]
   }

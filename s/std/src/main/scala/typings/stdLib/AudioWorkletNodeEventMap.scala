@@ -12,8 +12,8 @@ trait AudioWorkletNodeEventMap extends js.Object {
 object AudioWorkletNodeEventMap {
   @scala.inline
   def apply(processorerror: Event): AudioWorkletNodeEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("processorerror")(processorerror)
+    val __obj = js.Dynamic.literal(processorerror = processorerror)
+  
     __obj.asInstanceOf[AudioWorkletNodeEventMap]
   }
 }

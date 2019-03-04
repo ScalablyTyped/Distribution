@@ -26,14 +26,8 @@ object Anon_AllFailed {
     succeeded: scala.Double,
     undefined: scala.Double
   ): Anon_AllFailed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("notDeployed")(notDeployed)
-    __obj.updateDynamic("partiallySucceeded")(partiallySucceeded)
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(all = all, failed = failed, inProgress = inProgress, notDeployed = notDeployed, partiallySucceeded = partiallySucceeded, succeeded = succeeded, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_AllFailed]
   }
 }

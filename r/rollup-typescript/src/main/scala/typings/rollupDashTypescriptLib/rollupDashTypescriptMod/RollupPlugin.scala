@@ -18,10 +18,8 @@ object RollupPlugin {
     resolveId: js.Function2[java.lang.String, java.lang.String, js.Any],
     transform: js.Function2[java.lang.String, java.lang.String, rollupDashTypescriptLib.Anon_Code]
   ): RollupPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("resolveId")(resolveId)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(load = load, resolveId = resolveId, transform = transform)
+  
     __obj.asInstanceOf[RollupPlugin]
   }
 }

@@ -12,8 +12,8 @@ trait INumberFormatter extends js.Object {
 object INumberFormatter {
   @scala.inline
   def apply(format: js.Function1[scala.Double, java.lang.String]): INumberFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[INumberFormatter]
   }
 }

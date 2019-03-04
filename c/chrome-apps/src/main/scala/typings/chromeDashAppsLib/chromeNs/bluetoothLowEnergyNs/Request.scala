@@ -21,9 +21,7 @@ object Request {
     requestId: chromeDashAppsLib.chromeNs.integer,
     value: stdLib.ArrayBuffer = null
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(device = device, requestId = requestId)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Request]
   }

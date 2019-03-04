@@ -14,10 +14,8 @@ trait Preset extends js.Object {
 object Preset {
   @scala.inline
   def apply(barCompleteChar: java.lang.String, barIncompleteChar: java.lang.String, format: java.lang.String): Preset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("barCompleteChar")(barCompleteChar)
-    __obj.updateDynamic("barIncompleteChar")(barIncompleteChar)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(barCompleteChar = barCompleteChar, barIncompleteChar = barIncompleteChar, format = format)
+  
     __obj.asInstanceOf[Preset]
   }
 }

@@ -61,31 +61,8 @@ object CellInfo {
     viewIndex: scala.Double,
     width: scala.Double
   ): CellInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregated")(aggregated)
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("columnProps")(columnProps)
-    __obj.updateDynamic("expander")(expander)
-    __obj.updateDynamic("groupedByPivot")(groupedByPivot)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isExpanded")(isExpanded)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("maxWidth")(maxWidth)
-    __obj.updateDynamic("nestingPath")(nestingPath)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("pageSize")(pageSize)
-    __obj.updateDynamic("pivoted")(pivoted)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("rowValues")(rowValues)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("styles")(styles)
-    __obj.updateDynamic("subRows")(subRows)
-    __obj.updateDynamic("tdProps")(tdProps)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("viewIndex")(viewIndex)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(aggregated = aggregated, classes = classes, column = column, columnProps = columnProps, expander = expander, groupedByPivot = groupedByPivot, index = index, isExpanded = isExpanded, level = level, maxWidth = maxWidth, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, pivoted = pivoted, row = row, rowValues = rowValues, show = show, styles = styles, subRows = subRows, tdProps = tdProps, value = value, viewIndex = viewIndex, width = width)
+  
     __obj.asInstanceOf[CellInfo]
   }
 }

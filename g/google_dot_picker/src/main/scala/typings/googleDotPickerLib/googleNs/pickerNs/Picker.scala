@@ -20,11 +20,8 @@ object Picker {
     setRelayUrl: js.Function1[java.lang.String, Picker],
     setVisible: js.Function1[scala.Boolean, Picker]
   ): Picker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("setCallback")(setCallback)
-    __obj.updateDynamic("setRelayUrl")(setRelayUrl)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(isVisible = isVisible, setCallback = setCallback, setRelayUrl = setRelayUrl, setVisible = setVisible)
+  
     __obj.asInstanceOf[Picker]
   }
 }

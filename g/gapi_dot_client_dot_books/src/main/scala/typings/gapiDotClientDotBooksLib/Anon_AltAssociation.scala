@@ -51,8 +51,7 @@ object Anon_AltAssociation {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (association != null) __obj.updateDynamic("association")(association)
     if (fields != null) __obj.updateDynamic("fields")(fields)

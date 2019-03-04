@@ -30,16 +30,8 @@ object Credit {
     showOnScreen: scala.Boolean,
     text: java.lang.String
   ): Credit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("hasImage")(hasImage)
-    __obj.updateDynamic("hasLink")(hasLink)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("showOnScreen")(showOnScreen)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(element = element, equals = equals, hasImage = hasImage, hasLink = hasLink, html = html, imageUrl = imageUrl, link = link, showOnScreen = showOnScreen, text = text)
+  
     __obj.asInstanceOf[Credit]
   }
 }

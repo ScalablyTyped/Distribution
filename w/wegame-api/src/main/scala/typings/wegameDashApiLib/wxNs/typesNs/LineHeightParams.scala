@@ -32,9 +32,7 @@ object LineHeightParams {
     fontWeight: wegameDashApiLib.wegameDashApiLibStrings.normal | wegameDashApiLib.wegameDashApiLibStrings.bold = null,
     success: js.Function1[/* res */ wegameDashApiLib.Anon_LineHeight, scala.Unit] = null
   ): LineHeightParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, text = text)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

@@ -13,9 +13,8 @@ trait Anon_1 extends js.Object {
 object Anon_1 {
   @scala.inline
   def apply(max: webgmeLib.webgmeLibNumbers.`1`, min: webgmeLib.webgmeLibNumbers.`1`): Anon_1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, min = min)
+  
     __obj.asInstanceOf[Anon_1]
   }
 }

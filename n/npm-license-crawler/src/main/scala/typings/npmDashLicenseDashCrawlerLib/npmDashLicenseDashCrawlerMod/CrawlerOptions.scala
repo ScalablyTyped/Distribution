@@ -45,8 +45,7 @@ object CrawlerOptions {
     relativeLicensePath: js.UndefOr[scala.Boolean] = js.undefined,
     unknown: js.UndefOr[scala.Boolean] = js.undefined
   ): CrawlerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     if (csv != null) __obj.updateDynamic("csv")(csv)
     if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies)
     if (!js.isUndefined(development)) __obj.updateDynamic("development")(development)

@@ -32,9 +32,8 @@ object ProductionBiblioEntry {
     term: java.lang.String = null,
     title: java.lang.String = null
   ): ProductionBiblioEntry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("referencingIds")(referencingIds)
+    val __obj = js.Dynamic.literal(name = name, referencingIds = referencingIds)
+    __obj.updateDynamic("type")(`type`)
     if (aoid != null) __obj.updateDynamic("aoid")(aoid)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId)

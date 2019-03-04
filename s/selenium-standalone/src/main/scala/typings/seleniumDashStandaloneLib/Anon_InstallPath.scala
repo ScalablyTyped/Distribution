@@ -16,8 +16,7 @@ object Anon_InstallPath {
     installPath: java.lang.String,
     StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_InstallPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("installPath")(installPath)
+    val __obj = js.Dynamic.literal(installPath = installPath)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_InstallPath]
   }

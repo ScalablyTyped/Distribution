@@ -38,8 +38,7 @@ object TabInstance {
     url: java.lang.String = null,
     websiteUrl: java.lang.String = null
   ): TabInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabName")(tabName)
+    val __obj = js.Dynamic.literal(tabName = tabName)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (!js.isUndefined(channelIsFavorite)) __obj.updateDynamic("channelIsFavorite")(channelIsFavorite)
     if (channelName != null) __obj.updateDynamic("channelName")(channelName)

@@ -30,8 +30,7 @@ object CreateOperatorOptions {
     restrict: Name = null,
     right: Name = null
   ): CreateOperatorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("procedure")(procedure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(procedure = procedure.asInstanceOf[js.Any])
     if (commutator != null) __obj.updateDynamic("commutator")(commutator.asInstanceOf[js.Any])
     if (!js.isUndefined(hashes)) __obj.updateDynamic("hashes")(hashes)
     if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])

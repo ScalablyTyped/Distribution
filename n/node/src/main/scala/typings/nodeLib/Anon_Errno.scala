@@ -20,11 +20,8 @@ object Anon_Errno {
     priority: Anon_PRIORITYABOVENORMAL,
     signals: Anon_SIGABRT
   ): Anon_Errno = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UV_UDP_REUSEADDR")(UV_UDP_REUSEADDR)
-    __obj.updateDynamic("errno")(errno)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("signals")(signals)
+    val __obj = js.Dynamic.literal(UV_UDP_REUSEADDR = UV_UDP_REUSEADDR, errno = errno, priority = priority, signals = signals)
+  
     __obj.asInstanceOf[Anon_Errno]
   }
 }

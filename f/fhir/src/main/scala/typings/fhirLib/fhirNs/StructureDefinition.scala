@@ -269,11 +269,9 @@ object StructureDefinition {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): StructureDefinition = {
-    val __obj = js.Dynamic.literal(`abstract` = `abstract`, `type` = `type`)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(kind = kind, name = name, status = status, url = url)
+    __obj.updateDynamic("abstract")(`abstract`)
+    __obj.updateDynamic("type")(`type`)
     if (_abstract != null) __obj.updateDynamic("_abstract")(_abstract)
     if (_baseDefinition != null) __obj.updateDynamic("_baseDefinition")(_baseDefinition)
     if (_context != null) __obj.updateDynamic("_context")(_context)

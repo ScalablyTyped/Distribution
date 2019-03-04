@@ -24,13 +24,8 @@ object IMetadataCardAction {
     IsEnabled: js.Function0[scala.Boolean],
     IsVisible: js.Function0[scala.Boolean]
   ): IMetadataCardAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Activate")(Activate)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("GetExplanation")(GetExplanation)
-    __obj.updateDynamic("GetName")(GetName)
-    __obj.updateDynamic("IsEnabled")(IsEnabled)
-    __obj.updateDynamic("IsVisible")(IsVisible)
+    val __obj = js.Dynamic.literal(Activate = Activate, Events = Events, GetExplanation = GetExplanation, GetName = GetName, IsEnabled = IsEnabled, IsVisible = IsVisible)
+  
     __obj.asInstanceOf[IMetadataCardAction]
   }
 }

@@ -61,8 +61,7 @@ object MeasureGroupPopulation {
     modifierExtension: js.Array[Extension] = null,
     name: java.lang.String = null
   ): MeasureGroupPopulation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("criteria")(criteria)
+    val __obj = js.Dynamic.literal(criteria = criteria)
     if (_criteria != null) __obj.updateDynamic("_criteria")(_criteria)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

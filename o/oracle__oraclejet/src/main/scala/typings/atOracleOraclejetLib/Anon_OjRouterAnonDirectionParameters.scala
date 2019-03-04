@@ -12,8 +12,8 @@ trait Anon_OjRouterAnonDirectionParameters extends js.Object {
 object Anon_OjRouterAnonDirectionParameters {
   @scala.inline
   def apply(ojRouter: Anon_DirectionParameters): Anon_OjRouterAnonDirectionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ojRouter")(ojRouter)
+    val __obj = js.Dynamic.literal(ojRouter = ojRouter)
+  
     __obj.asInstanceOf[Anon_OjRouterAnonDirectionParameters]
   }
 }

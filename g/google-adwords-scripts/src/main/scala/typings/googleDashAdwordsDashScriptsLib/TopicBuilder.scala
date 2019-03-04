@@ -18,12 +18,8 @@ object TopicBuilder {
     withCpm: js.Function1[scala.Double, TopicBuilder[Topic]],
     withTopicId: js.Function1[scala.Double, TopicBuilder[Topic]]
   ): TopicBuilder[Topic] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("withCpc")(withCpc)
-    __obj.updateDynamic("withCpm")(withCpm)
-    __obj.updateDynamic("withTopicId")(withTopicId)
+    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm, withTopicId = withTopicId)
+  
     __obj.asInstanceOf[TopicBuilder[Topic]]
   }
 }

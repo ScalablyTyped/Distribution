@@ -12,10 +12,7 @@ trait DocumentResponseRow[D] extends DocumentResponseRowMeta {
 object DocumentResponseRow {
   @scala.inline
   def apply[D](id: java.lang.String, key: java.lang.String, value: nanoLib.Anon_Rev, doc: D with Document = null): DocumentResponseRow[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, key = key, value = value)
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentResponseRow[D]]
   }

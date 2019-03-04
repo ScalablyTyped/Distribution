@@ -63,8 +63,7 @@ object Printer {
     ] = null,
     willPrintOwnComments: js.Function1[/* path */ FastPath[_], scala.Boolean] = null
   ): Printer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("print")(print)
+    val __obj = js.Dynamic.literal(print = print)
     if (canAttachComment != null) __obj.updateDynamic("canAttachComment")(canAttachComment)
     if (embed != null) __obj.updateDynamic("embed")(embed)
     if (handleComments != null) __obj.updateDynamic("handleComments")(handleComments)

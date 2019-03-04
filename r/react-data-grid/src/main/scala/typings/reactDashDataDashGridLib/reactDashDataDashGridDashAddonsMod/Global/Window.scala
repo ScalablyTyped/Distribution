@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(ReactDataGridPlugins: reactDashDataDashGridLib.Anon_Data): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ReactDataGridPlugins")(ReactDataGridPlugins)
+    val __obj = js.Dynamic.literal(ReactDataGridPlugins = ReactDataGridPlugins)
+  
     __obj.asInstanceOf[Window]
   }
 }

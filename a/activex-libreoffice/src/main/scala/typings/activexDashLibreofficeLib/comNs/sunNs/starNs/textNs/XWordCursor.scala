@@ -68,32 +68,8 @@ object XWordCursor {
     release: js.Function0[scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): XWordCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("collapseToEnd")(collapseToEnd)
-    __obj.updateDynamic("collapseToStart")(collapseToStart)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("goLeft")(goLeft)
-    __obj.updateDynamic("goRight")(goRight)
-    __obj.updateDynamic("gotoEnd")(gotoEnd)
-    __obj.updateDynamic("gotoEndOfWord")(gotoEndOfWord)
-    __obj.updateDynamic("gotoNextWord")(gotoNextWord)
-    __obj.updateDynamic("gotoPreviousWord")(gotoPreviousWord)
-    __obj.updateDynamic("gotoRange")(gotoRange)
-    __obj.updateDynamic("gotoStart")(gotoStart)
-    __obj.updateDynamic("gotoStartOfWord")(gotoStartOfWord)
-    __obj.updateDynamic("isCollapsed")(isCollapsed)
-    __obj.updateDynamic("isEndOfWord")(isEndOfWord)
-    __obj.updateDynamic("isStartOfWord")(isStartOfWord)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, collapseToEnd = collapseToEnd, collapseToStart = collapseToStart, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, goLeft = goLeft, goRight = goRight, gotoEnd = gotoEnd, gotoEndOfWord = gotoEndOfWord, gotoNextWord = gotoNextWord, gotoPreviousWord = gotoPreviousWord, gotoRange = gotoRange, gotoStart = gotoStart, gotoStartOfWord = gotoStartOfWord, isCollapsed = isCollapsed, isEndOfWord = isEndOfWord, isStartOfWord = isStartOfWord, queryInterface = queryInterface, release = release, setString = setString)
+  
     __obj.asInstanceOf[XWordCursor]
   }
 }

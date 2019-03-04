@@ -44,9 +44,7 @@ object ChatMember {
     can_send_other_messages: js.UndefOr[scala.Boolean] = js.undefined,
     until_date: scala.Int | scala.Double = null
   ): ChatMember = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(status = status, user = user)
     if (!js.isUndefined(can_add_web_page_previews)) __obj.updateDynamic("can_add_web_page_previews")(can_add_web_page_previews)
     if (!js.isUndefined(can_be_edited)) __obj.updateDynamic("can_be_edited")(can_be_edited)
     if (!js.isUndefined(can_change_info)) __obj.updateDynamic("can_change_info")(can_change_info)

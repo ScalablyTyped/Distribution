@@ -17,10 +17,8 @@ object ModifyingQuery {
     toQuery: js.Function0[QueryLike],
     where: js.Function1[/* repeated */ js.Any, ModifyingQuery]
   ): ModifyingQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("returning")(returning)
-    __obj.updateDynamic("toQuery")(toQuery)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(returning = returning, toQuery = toQuery, where = where)
+  
     __obj.asInstanceOf[ModifyingQuery]
   }
 }

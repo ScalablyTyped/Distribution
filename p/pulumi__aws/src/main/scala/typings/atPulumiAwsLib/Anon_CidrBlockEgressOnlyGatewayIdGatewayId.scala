@@ -30,16 +30,8 @@ object Anon_CidrBlockEgressOnlyGatewayIdGatewayId {
     transitGatewayId: java.lang.String,
     vpcPeeringConnectionId: java.lang.String
   ): Anon_CidrBlockEgressOnlyGatewayIdGatewayId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cidrBlock")(cidrBlock)
-    __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId)
-    __obj.updateDynamic("gatewayId")(gatewayId)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock)
-    __obj.updateDynamic("natGatewayId")(natGatewayId)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("transitGatewayId")(transitGatewayId)
-    __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId)
+    val __obj = js.Dynamic.literal(cidrBlock = cidrBlock, egressOnlyGatewayId = egressOnlyGatewayId, gatewayId = gatewayId, instanceId = instanceId, ipv6CidrBlock = ipv6CidrBlock, natGatewayId = natGatewayId, networkInterfaceId = networkInterfaceId, transitGatewayId = transitGatewayId, vpcPeeringConnectionId = vpcPeeringConnectionId)
+  
     __obj.asInstanceOf[Anon_CidrBlockEgressOnlyGatewayIdGatewayId]
   }
 }

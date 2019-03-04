@@ -33,16 +33,8 @@ object XColorScaleEntry {
     setFormula: js.Function1[java.lang.String, scala.Unit],
     setType: js.Function1[scala.Double, scala.Unit]
   ): XColorScaleEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("Formula")(Formula)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("getColor")(getColor)
-    __obj.updateDynamic("getFormula")(getFormula)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setColor")(setColor)
-    __obj.updateDynamic("setFormula")(setFormula)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(Color = Color, Formula = Formula, Type = Type, getColor = getColor, getFormula = getFormula, getType = getType, setColor = setColor, setFormula = setFormula, setType = setType)
+  
     __obj.asInstanceOf[XColorScaleEntry]
   }
 }

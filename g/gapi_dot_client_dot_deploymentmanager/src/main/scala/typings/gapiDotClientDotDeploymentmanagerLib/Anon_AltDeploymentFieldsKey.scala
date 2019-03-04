@@ -45,10 +45,7 @@ object Anon_AltDeploymentFieldsKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDeploymentFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deployment")(deployment)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(deployment = deployment, project = project, resource = resource)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

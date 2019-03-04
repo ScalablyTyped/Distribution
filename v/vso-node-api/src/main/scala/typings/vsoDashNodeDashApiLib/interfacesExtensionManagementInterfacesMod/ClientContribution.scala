@@ -42,12 +42,8 @@ object ClientContribution {
     targets: js.Array[java.lang.String],
     `type`: java.lang.String
   ): ClientContribution = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("includes")(includes)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("targets")(targets)
+    val __obj = js.Dynamic.literal(description = description, id = id, includes = includes, properties = properties, targets = targets)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ClientContribution]
   }
 }

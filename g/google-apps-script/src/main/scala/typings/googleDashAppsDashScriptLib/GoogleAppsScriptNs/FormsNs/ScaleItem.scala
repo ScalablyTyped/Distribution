@@ -61,28 +61,8 @@ object ScaleItem {
     setRequired: js.Function1[scala.Boolean, ScaleItem],
     setTitle: js.Function1[java.lang.String, ScaleItem]
   ): ScaleItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createResponse")(createResponse)
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getGeneralFeedback")(getGeneralFeedback)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getLeftLabel")(getLeftLabel)
-    __obj.updateDynamic("getLowerBound")(getLowerBound)
-    __obj.updateDynamic("getPoints")(getPoints)
-    __obj.updateDynamic("getRightLabel")(getRightLabel)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getUpperBound")(getUpperBound)
-    __obj.updateDynamic("isRequired")(isRequired)
-    __obj.updateDynamic("setBounds")(setBounds)
-    __obj.updateDynamic("setGeneralFeedback")(setGeneralFeedback)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setLabels")(setLabels)
-    __obj.updateDynamic("setPoints")(setPoints)
-    __obj.updateDynamic("setRequired")(setRequired)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getLeftLabel = getLeftLabel, getLowerBound = getLowerBound, getPoints = getPoints, getRightLabel = getRightLabel, getTitle = getTitle, getType = getType, getUpperBound = getUpperBound, isRequired = isRequired, setBounds = setBounds, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setLabels = setLabels, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle)
+  
     __obj.asInstanceOf[ScaleItem]
   }
 }

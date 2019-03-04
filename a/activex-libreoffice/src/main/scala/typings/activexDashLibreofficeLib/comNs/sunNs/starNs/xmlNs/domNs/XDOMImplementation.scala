@@ -39,13 +39,8 @@ object XDOMImplementation {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDOMImplementation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createDocument")(createDocument)
-    __obj.updateDynamic("createDocumentType")(createDocumentType)
-    __obj.updateDynamic("hasFeature")(hasFeature)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createDocument = createDocument, createDocumentType = createDocumentType, hasFeature = hasFeature, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDOMImplementation]
   }
 }

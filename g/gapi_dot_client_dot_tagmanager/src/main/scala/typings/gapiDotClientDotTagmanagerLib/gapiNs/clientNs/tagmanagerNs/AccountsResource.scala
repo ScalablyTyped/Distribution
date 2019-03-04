@@ -34,12 +34,8 @@ object AccountsResource {
     ],
     user_permissions: User_permissionsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containers")(containers)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("user_permissions")(user_permissions)
+    val __obj = js.Dynamic.literal(containers = containers, get = get, list = list, update = update, user_permissions = user_permissions)
+  
     __obj.asInstanceOf[AccountsResource]
   }
 }

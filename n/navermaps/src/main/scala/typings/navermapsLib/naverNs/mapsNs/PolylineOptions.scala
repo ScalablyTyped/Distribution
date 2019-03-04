@@ -42,8 +42,7 @@ object PolylineOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): PolylineOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon)
     if (endIconSize != null) __obj.updateDynamic("endIconSize")(endIconSize.asInstanceOf[js.Any])

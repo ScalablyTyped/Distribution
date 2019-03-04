@@ -24,13 +24,8 @@ object Danmaku {
     send: js.Function2[DPlayerDanmakuItem, js.Function0[scala.Unit], scala.Unit],
     show: js.Function0[scala.Unit]
   ): Danmaku = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(clear = clear, draw = draw, hide = hide, opacity = opacity, send = send, show = show)
+  
     __obj.asInstanceOf[Danmaku]
   }
 }

@@ -31,15 +31,8 @@ object GetListenerResult {
     protocol: java.lang.String,
     sslPolicy: java.lang.String
   ): GetListenerResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("certificateArn")(certificateArn)
-    __obj.updateDynamic("defaultActions")(defaultActions)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loadBalancerArn")(loadBalancerArn)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("sslPolicy")(sslPolicy)
+    val __obj = js.Dynamic.literal(arn = arn, certificateArn = certificateArn, defaultActions = defaultActions, id = id, loadBalancerArn = loadBalancerArn, port = port, protocol = protocol, sslPolicy = sslPolicy)
+  
     __obj.asInstanceOf[GetListenerResult]
   }
 }

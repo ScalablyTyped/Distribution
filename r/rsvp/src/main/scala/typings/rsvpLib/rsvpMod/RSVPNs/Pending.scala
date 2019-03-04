@@ -13,8 +13,8 @@ trait Pending
 object Pending {
   @scala.inline
   def apply(state: State): Pending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
+  
     __obj.asInstanceOf[Pending]
   }
 }

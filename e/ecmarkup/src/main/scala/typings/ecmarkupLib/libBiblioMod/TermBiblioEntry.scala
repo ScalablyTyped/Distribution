@@ -34,10 +34,8 @@ object TermBiblioEntry {
     number: java.lang.String | scala.Double = null,
     title: java.lang.String = null
   ): TermBiblioEntry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("refId")(refId)
-    __obj.updateDynamic("referencingIds")(referencingIds)
-    __obj.updateDynamic("term")(term)
+    val __obj = js.Dynamic.literal(refId = refId, referencingIds = referencingIds, term = term)
+    __obj.updateDynamic("type")(`type`)
     if (aoid != null) __obj.updateDynamic("aoid")(aoid)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId)

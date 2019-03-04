@@ -21,11 +21,8 @@ object strings {
     LINE_RIPPLE_SELECTOR: atMaterialSelectLib.atMaterialSelectLibStrings.`DOTmdc-line-ripple`,
     NATIVE_CONTROL_SELECTOR: atMaterialSelectLib.atMaterialSelectLibStrings.`DOTmdc-select__native-control`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHANGE_EVENT")(CHANGE_EVENT)
-    __obj.updateDynamic("LABEL_SELECTOR")(LABEL_SELECTOR)
-    __obj.updateDynamic("LINE_RIPPLE_SELECTOR")(LINE_RIPPLE_SELECTOR)
-    __obj.updateDynamic("NATIVE_CONTROL_SELECTOR")(NATIVE_CONTROL_SELECTOR)
+    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, LABEL_SELECTOR = LABEL_SELECTOR, LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR, NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

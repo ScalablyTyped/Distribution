@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mysql"
-version := "2.15-dt-20181219Z-05e38f"
+version := "2.15-dt-20181219Z-8b0a53"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

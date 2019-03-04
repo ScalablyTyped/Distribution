@@ -18,8 +18,8 @@ object IRejectReason {
   def apply(
     reason: stripeLib.stripeLibStrings.fraud | stripeLib.stripeLibStrings.terms_of_service | stripeLib.stripeLibStrings.other
   ): IRejectReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IRejectReason]
   }
 }

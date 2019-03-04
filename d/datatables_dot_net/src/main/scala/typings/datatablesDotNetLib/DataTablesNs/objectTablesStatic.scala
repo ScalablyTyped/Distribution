@@ -19,9 +19,8 @@ trait objectTablesStatic extends js.Object {
 object objectTablesStatic {
   @scala.inline
   def apply(api: scala.Boolean, visible: scala.Boolean): objectTablesStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(api = api, visible = visible)
+  
     __obj.asInstanceOf[objectTablesStatic]
   }
 }

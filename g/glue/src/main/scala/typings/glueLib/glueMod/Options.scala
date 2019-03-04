@@ -38,8 +38,7 @@ object Options {
       scala.Unit
     ] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("relativeTo")(relativeTo)
+    val __obj = js.Dynamic.literal(relativeTo = relativeTo)
     if (preConnections != null) __obj.updateDynamic("preConnections")(preConnections)
     if (preRegister != null) __obj.updateDynamic("preRegister")(preRegister)
     __obj.asInstanceOf[Options]

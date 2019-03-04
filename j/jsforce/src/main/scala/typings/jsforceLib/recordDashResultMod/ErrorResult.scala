@@ -13,9 +13,8 @@ trait ErrorResult extends RecordResult {
 object ErrorResult {
   @scala.inline
   def apply(errors: js.Array[java.lang.String], success: jsforceLib.jsforceLibNumbers.`false`): ErrorResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(errors = errors, success = success)
+  
     __obj.asInstanceOf[ErrorResult]
   }
 }

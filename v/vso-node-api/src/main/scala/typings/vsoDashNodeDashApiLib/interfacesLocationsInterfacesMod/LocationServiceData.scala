@@ -52,15 +52,8 @@ object LocationServiceData {
     serviceDefinitions: js.Array[ServiceDefinition],
     serviceOwner: java.lang.String
   ): LocationServiceData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessMappings")(accessMappings)
-    __obj.updateDynamic("clientCacheFresh")(clientCacheFresh)
-    __obj.updateDynamic("clientCacheTimeToLive")(clientCacheTimeToLive)
-    __obj.updateDynamic("defaultAccessMappingMoniker")(defaultAccessMappingMoniker)
-    __obj.updateDynamic("lastChangeId")(lastChangeId)
-    __obj.updateDynamic("lastChangeId64")(lastChangeId64)
-    __obj.updateDynamic("serviceDefinitions")(serviceDefinitions)
-    __obj.updateDynamic("serviceOwner")(serviceOwner)
+    val __obj = js.Dynamic.literal(accessMappings = accessMappings, clientCacheFresh = clientCacheFresh, clientCacheTimeToLive = clientCacheTimeToLive, defaultAccessMappingMoniker = defaultAccessMappingMoniker, lastChangeId = lastChangeId, lastChangeId64 = lastChangeId64, serviceDefinitions = serviceDefinitions, serviceOwner = serviceOwner)
+  
     __obj.asInstanceOf[LocationServiceData]
   }
 }

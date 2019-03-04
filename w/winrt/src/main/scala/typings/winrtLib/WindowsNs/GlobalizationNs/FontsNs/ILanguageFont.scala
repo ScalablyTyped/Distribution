@@ -22,12 +22,8 @@ object ILanguageFont {
     fontWeight: winrtLib.WindowsNs.UINs.TextNs.FontWeight,
     scaleFactor: scala.Double
   ): ILanguageFont = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontStretch")(fontStretch)
-    __obj.updateDynamic("fontStyle")(fontStyle)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontStretch = fontStretch, fontStyle = fontStyle, fontWeight = fontWeight, scaleFactor = scaleFactor)
+  
     __obj.asInstanceOf[ILanguageFont]
   }
 }

@@ -18,10 +18,8 @@ object IKeyStorageProviderNamesStatics {
     smartcardKeyStorageProvider: java.lang.String,
     softwareKeyStorageProvider: java.lang.String
   ): IKeyStorageProviderNamesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("platformKeyStorageProvider")(platformKeyStorageProvider)
-    __obj.updateDynamic("smartcardKeyStorageProvider")(smartcardKeyStorageProvider)
-    __obj.updateDynamic("softwareKeyStorageProvider")(softwareKeyStorageProvider)
+    val __obj = js.Dynamic.literal(platformKeyStorageProvider = platformKeyStorageProvider, smartcardKeyStorageProvider = smartcardKeyStorageProvider, softwareKeyStorageProvider = softwareKeyStorageProvider)
+  
     __obj.asInstanceOf[IKeyStorageProviderNamesStatics]
   }
 }

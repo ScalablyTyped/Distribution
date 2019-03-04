@@ -13,9 +13,8 @@ trait ValidateResults extends js.Object {
 object ValidateResults {
   @scala.inline
   def apply(msg: java.lang.String, valid: scala.Boolean): ValidateResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(msg = msg, valid = valid)
+  
     __obj.asInstanceOf[ValidateResults]
   }
 }

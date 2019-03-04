@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mz/dns", "resolveAny")
 @js.native
 object resolveAnyNs extends js.Object {
-  def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
+  def __promisify__(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.AnyRecord]] = js.native
 }
 

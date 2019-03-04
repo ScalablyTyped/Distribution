@@ -17,9 +17,8 @@ object ojLabelValueSettableProperties {
     labelEdge: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit,
     labelWidth: java.lang.String
   ): ojLabelValueSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelEdge")(labelEdge.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelWidth")(labelWidth)
+    val __obj = js.Dynamic.literal(labelEdge = labelEdge.asInstanceOf[js.Any], labelWidth = labelWidth)
+  
     __obj.asInstanceOf[ojLabelValueSettableProperties]
   }
 }

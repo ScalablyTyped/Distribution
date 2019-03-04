@@ -13,9 +13,8 @@ trait ProviderProps[T] extends js.Object {
 object ProviderProps {
   @scala.inline
   def apply[T](children: reactLib.reactMod.ReactNs.ReactNode, value: T): ProviderProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ProviderProps[T]]
   }
 }

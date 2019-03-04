@@ -30,19 +30,8 @@ object ZoneOffset {
     toString: js.Function0[java.lang.String],
     totalSeconds: js.Function0[scala.Double]
   ): ZoneOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustInto")(adjustInto)
-    __obj.updateDynamic("compareTo")(compareTo)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getLong")(getLong)
-    __obj.updateDynamic("hashCode")(hashCode)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("normalized")(normalized)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("totalSeconds")(totalSeconds)
+    val __obj = js.Dynamic.literal(adjustInto = adjustInto, compareTo = compareTo, equals = equals, get = get, getLong = getLong, hashCode = hashCode, id = id, normalized = normalized, query = query, rules = rules, toString = toString, totalSeconds = totalSeconds)
+  
     __obj.asInstanceOf[ZoneOffset]
   }
 }

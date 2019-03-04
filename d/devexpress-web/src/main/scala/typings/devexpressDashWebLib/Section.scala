@@ -45,12 +45,8 @@ object Section {
     length: scala.Double,
     start: scala.Double
   ): Section = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("footers")(footers)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(footers = footers, headers = headers, interval = interval, length = length, start = start)
+  
     __obj.asInstanceOf[Section]
   }
 }

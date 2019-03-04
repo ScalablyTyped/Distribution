@@ -42,22 +42,8 @@ object EventsResponseObject {
     sku: java.lang.String,
     start: java.lang.String
   ): EventsResponseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("divisions")(divisions)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("loc_address1")(loc_address1)
-    __obj.updateDynamic("loc_address2")(loc_address2)
-    __obj.updateDynamic("loc_city")(loc_city)
-    __obj.updateDynamic("loc_country")(loc_country)
-    __obj.updateDynamic("loc_postcode")(loc_postcode)
-    __obj.updateDynamic("loc_region")(loc_region)
-    __obj.updateDynamic("loc_venue")(loc_venue)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("season")(season)
-    __obj.updateDynamic("sku")(sku)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(divisions = divisions, end = end, key = key, loc_address1 = loc_address1, loc_address2 = loc_address2, loc_city = loc_city, loc_country = loc_country, loc_postcode = loc_postcode, loc_region = loc_region, loc_venue = loc_venue, name = name, program = program, season = season, sku = sku, start = start)
+  
     __obj.asInstanceOf[EventsResponseObject]
   }
 }

@@ -22,10 +22,7 @@ object buttonDefinition {
     icon: java.lang.String = null,
     iconOffset: scala.Int | scala.Double = null
   ): buttonDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("toolbar")(toolbar)
+    val __obj = js.Dynamic.literal(command = command, label = label, toolbar = toolbar)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconOffset != null) __obj.updateDynamic("iconOffset")(iconOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[buttonDefinition]

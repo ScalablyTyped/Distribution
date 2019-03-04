@@ -37,19 +37,8 @@ object Anon_Ascender {
     underlinePosition: scala.Double,
     underlineThickness: scala.Double
   ): Anon_Ascender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascender")(ascender)
-    __obj.updateDynamic("boundingBox")(boundingBox)
-    __obj.updateDynamic("cssFontStyle")(cssFontStyle)
-    __obj.updateDynamic("cssFontWeight")(cssFontWeight)
-    __obj.updateDynamic("descender")(descender)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("glyphs")(glyphs)
-    __obj.updateDynamic("lineHeight")(lineHeight)
-    __obj.updateDynamic("original_font_information")(original_font_information)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("underlinePosition")(underlinePosition)
-    __obj.updateDynamic("underlineThickness")(underlineThickness)
+    val __obj = js.Dynamic.literal(ascender = ascender, boundingBox = boundingBox, cssFontStyle = cssFontStyle, cssFontWeight = cssFontWeight, descender = descender, familyName = familyName, glyphs = glyphs, lineHeight = lineHeight, original_font_information = original_font_information, resolution = resolution, underlinePosition = underlinePosition, underlineThickness = underlineThickness)
+  
     __obj.asInstanceOf[Anon_Ascender]
   }
 }

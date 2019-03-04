@@ -34,9 +34,7 @@ object GroupPolicyArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): GroupPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupPolicyArgs]

@@ -29,8 +29,8 @@ object InterfaceTypeAnnotation {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): InterfaceTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

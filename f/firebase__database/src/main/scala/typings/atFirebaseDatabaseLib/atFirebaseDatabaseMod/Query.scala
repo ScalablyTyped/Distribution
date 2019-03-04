@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Query protected ()
   extends atFirebaseDatabaseLib.distSrcApiQueryMod.Query {
-  def this(repo: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, `queryParams_`: atFirebaseDatabaseLib.distSrcCoreViewQueryParamsMod.QueryParams, `orderByCalled_`: scala.Boolean) = this()
+  def this(repo: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, queryParams_ : atFirebaseDatabaseLib.distSrcCoreViewQueryParamsMod.QueryParams, orderByCalled_ : scala.Boolean) = this()
 }
 
 /* static members */
@@ -25,18 +25,18 @@ object Query extends js.Object {
     * @return {{cancel: ?function(Error), context: ?Object}}
     * @private
     */
-  var `getCancelAndContextArgs_`: js.Any = js.native
+  var getCancelAndContextArgs_ : js.Any = js.native
   /**
     * Validates that limit* has been called with the correct combination of parameters
     * @param {!QueryParams} params
     * @private
     */
-  var `validateLimit_`: js.Any = js.native
+  var validateLimit_ : js.Any = js.native
   /**
     * Validates start/end values for queries.
     * @param {!QueryParams} params
     * @private
     */
-  var `validateQueryEndpoints_`: js.Any = js.native
+  var validateQueryEndpoints_ : js.Any = js.native
 }
 

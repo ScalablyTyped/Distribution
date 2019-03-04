@@ -119,8 +119,7 @@ object RelayWeights {
       ]
     ] = null
   ): RelayWeights = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
     if (consensus_weight != null) __obj.updateDynamic("consensus_weight")(consensus_weight)
     if (consensus_weight_fraction != null) __obj.updateDynamic("consensus_weight_fraction")(consensus_weight_fraction)
     if (exit_probability != null) __obj.updateDynamic("exit_probability")(exit_probability)

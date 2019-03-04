@@ -16,8 +16,7 @@ object Anon_MaximumIndividualPlayerLatencyMilliseconds {
     maximumIndividualPlayerLatencyMilliseconds: scala.Double,
     policyDurationSeconds: scala.Int | scala.Double = null
   ): Anon_MaximumIndividualPlayerLatencyMilliseconds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maximumIndividualPlayerLatencyMilliseconds")(maximumIndividualPlayerLatencyMilliseconds)
+    val __obj = js.Dynamic.literal(maximumIndividualPlayerLatencyMilliseconds = maximumIndividualPlayerLatencyMilliseconds)
     if (policyDurationSeconds != null) __obj.updateDynamic("policyDurationSeconds")(policyDurationSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MaximumIndividualPlayerLatencyMilliseconds]
   }

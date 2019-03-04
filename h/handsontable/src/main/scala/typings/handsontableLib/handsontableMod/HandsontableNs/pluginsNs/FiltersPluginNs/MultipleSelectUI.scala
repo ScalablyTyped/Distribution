@@ -43,30 +43,8 @@ object MultipleSelectUI {
     show: js.Function0[scala.Unit],
     update: js.Function0[scala.Unit]
   ): MultipleSelectUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildState")(buildState)
-    __obj.updateDynamic("clearAllUI")(clearAllUI)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("getItems")(getItems)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("hot")(hot)
-    __obj.updateDynamic("isBuilt")(isBuilt)
-    __obj.updateDynamic("isSelectedAllValues")(isSelectedAllValues)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("itemsBox")(itemsBox)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("searchInput")(searchInput)
-    __obj.updateDynamic("selectAllUI")(selectAllUI)
-    __obj.updateDynamic("setItems")(setItems)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(build = build, buildState = buildState, clearAllUI = clearAllUI, destroy = destroy, element = element, eventManager = eventManager, focus = focus, getItems = getItems, getValue = getValue, hide = hide, hot = hot, isBuilt = isBuilt, isSelectedAllValues = isSelectedAllValues, items = items, itemsBox = itemsBox, options = options, reset = reset, searchInput = searchInput, selectAllUI = selectAllUI, setItems = setItems, setValue = setValue, show = show, update = update)
+  
     __obj.asInstanceOf[MultipleSelectUI]
   }
 }

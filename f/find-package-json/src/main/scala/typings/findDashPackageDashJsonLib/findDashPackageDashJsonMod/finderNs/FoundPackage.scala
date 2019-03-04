@@ -18,10 +18,8 @@ object FoundPackage {
     filename: java.lang.String,
     value: Package
   ): FoundPackage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(done = done, filename = filename, value = value)
+  
     __obj.asInstanceOf[FoundPackage]
   }
 }

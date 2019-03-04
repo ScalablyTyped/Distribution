@@ -24,13 +24,8 @@ object Location {
     labelShort: java.lang.String,
     location: java.lang.String
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Browsers")(Browsers)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("PendingTests")(PendingTests)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("labelShort")(labelShort)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(Browsers = Browsers, Label = Label, PendingTests = PendingTests, id = id, labelShort = labelShort, location = location)
+  
     __obj.asInstanceOf[Location]
   }
 }

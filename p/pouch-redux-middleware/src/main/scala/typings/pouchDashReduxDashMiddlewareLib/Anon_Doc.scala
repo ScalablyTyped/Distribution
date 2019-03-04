@@ -27,10 +27,8 @@ object Anon_Doc {
       reduxLib.reduxMod.Action[_]
     ]
   ): Anon_Doc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(insert = insert, remove = remove, update = update)
+  
     __obj.asInstanceOf[Anon_Doc]
   }
 }

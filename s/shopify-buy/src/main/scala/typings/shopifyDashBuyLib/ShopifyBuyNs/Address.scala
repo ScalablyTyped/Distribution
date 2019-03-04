@@ -32,17 +32,8 @@ object Address {
     province: java.lang.String,
     zip: java.lang.String
   ): Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address1")(address1)
-    __obj.updateDynamic("address2")(address2)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("firstName")(firstName)
-    __obj.updateDynamic("lastName")(lastName)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("zip")(zip)
+    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, company = company, country = country, firstName = firstName, lastName = lastName, phone = phone, province = province, zip = zip)
+  
     __obj.asInstanceOf[Address]
   }
 }

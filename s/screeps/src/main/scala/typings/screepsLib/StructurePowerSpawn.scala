@@ -60,24 +60,8 @@ object StructurePowerSpawn {
     room: Room,
     structureType: STRUCTURE_POWER_SPAWN
   ): StructurePowerSpawn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPowerCreep")(createPowerCreep)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("energy")(energy)
-    __obj.updateDynamic("energyCapacity")(energyCapacity)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("my")(my)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("power")(power)
-    __obj.updateDynamic("powerCapacity")(powerCapacity)
-    __obj.updateDynamic("processPower")(processPower)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("structureType")(structureType)
+    val __obj = js.Dynamic.literal(createPowerCreep = createPowerCreep, destroy = destroy, energy = energy, energyCapacity = energyCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, power = power, powerCapacity = powerCapacity, processPower = processPower, room = room, structureType = structureType)
+  
     __obj.asInstanceOf[StructurePowerSpawn]
   }
 }

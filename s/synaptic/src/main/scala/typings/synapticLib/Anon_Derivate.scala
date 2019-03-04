@@ -22,12 +22,8 @@ object Anon_Derivate {
     ReLU: js.Function2[scala.Double, scala.Boolean, scala.Double],
     TANH: js.Function2[scala.Double, scala.Boolean, scala.Double]
   ): Anon_Derivate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HLIM")(HLIM)
-    __obj.updateDynamic("IDENTITY")(IDENTITY)
-    __obj.updateDynamic("LOGISTIC")(LOGISTIC)
-    __obj.updateDynamic("ReLU")(ReLU)
-    __obj.updateDynamic("TANH")(TANH)
+    val __obj = js.Dynamic.literal(HLIM = HLIM, IDENTITY = IDENTITY, LOGISTIC = LOGISTIC, ReLU = ReLU, TANH = TANH)
+  
     __obj.asInstanceOf[Anon_Derivate]
   }
 }

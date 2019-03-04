@@ -21,11 +21,8 @@ object IPointerEventArgs {
     handled: scala.Boolean,
     keyModifiers: winrtLib.WindowsNs.SystemNs.VirtualKeyModifiers
   ): IPointerEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentPoint")(currentPoint)
-    __obj.updateDynamic("getIntermediatePoints")(getIntermediatePoints)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("keyModifiers")(keyModifiers)
+    val __obj = js.Dynamic.literal(currentPoint = currentPoint, getIntermediatePoints = getIntermediatePoints, handled = handled, keyModifiers = keyModifiers)
+  
     __obj.asInstanceOf[IPointerEventArgs]
   }
 }

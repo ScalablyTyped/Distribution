@@ -36,9 +36,7 @@ object PropsType {
     ] = null,
     rowSize: rmcDashCalendarLib.rmcDashCalendarLibStrings.normal | rmcDashCalendarLib.rmcDashCalendarLibStrings.xl = null
   ): PropsType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("monthData")(monthData)
+    val __obj = js.Dynamic.literal(locale = locale, monthData = monthData)
     if (getDateExtra != null) __obj.updateDynamic("getDateExtra")(getDateExtra)
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
     if (rowSize != null) __obj.updateDynamic("rowSize")(rowSize.asInstanceOf[js.Any])

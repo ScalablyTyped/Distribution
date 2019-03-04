@@ -31,15 +31,7 @@ object CellContext {
     parentElement: stdLib.Element,
     datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): CellContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("extents")(extents)
-    __obj.updateDynamic("indexes")(indexes)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], componentElement = componentElement, data = data.asInstanceOf[js.Any], extents = extents, indexes = indexes, keys = keys, mode = mode.asInstanceOf[js.Any], parentElement = parentElement)
     if (datasource != null) __obj.updateDynamic("datasource")(datasource)
     __obj.asInstanceOf[CellContext[K, D]]
   }

@@ -22,9 +22,7 @@ object IRequestOptions {
     headers: js.Object = null,
     longTimeout: js.UndefOr[scala.Boolean] = js.undefined
   ): IRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, url = url)
     if (body != null) __obj.updateDynamic("body")(body)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(longTimeout)) __obj.updateDynamic("longTimeout")(longTimeout)

@@ -40,9 +40,8 @@ object TypeQuery {
     preferFunction: js.UndefOr[scala.Boolean] = js.undefined,
     start: scala.Double | Position = null
   ): TypeQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file)
+    __obj.updateDynamic("type")(`type`)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
     if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)

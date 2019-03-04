@@ -32,16 +32,7 @@ object TagDefinition {
     requiredParents: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     implicitNamespacePrefix: java.lang.String = null
   ): TagDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canSelfClose")(canSelfClose)
-    __obj.updateDynamic("closedByParent")(closedByParent)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("ignoreFirstLf")(ignoreFirstLf)
-    __obj.updateDynamic("isClosedByChild")(isClosedByChild)
-    __obj.updateDynamic("isVoid")(isVoid)
-    __obj.updateDynamic("parentToAdd")(parentToAdd)
-    __obj.updateDynamic("requireExtraParent")(requireExtraParent)
-    __obj.updateDynamic("requiredParents")(requiredParents)
+    val __obj = js.Dynamic.literal(canSelfClose = canSelfClose, closedByParent = closedByParent, contentType = contentType, ignoreFirstLf = ignoreFirstLf, isClosedByChild = isClosedByChild, isVoid = isVoid, parentToAdd = parentToAdd, requireExtraParent = requireExtraParent, requiredParents = requiredParents)
     if (implicitNamespacePrefix != null) __obj.updateDynamic("implicitNamespacePrefix")(implicitNamespacePrefix)
     __obj.asInstanceOf[TagDefinition]
   }

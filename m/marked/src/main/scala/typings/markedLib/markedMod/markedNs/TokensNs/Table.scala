@@ -25,10 +25,8 @@ object Table {
     header: js.Array[java.lang.String],
     `type`: markedLib.markedLibStrings.table
   ): Table = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("cells")(cells)
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(align = align, cells = cells, header = header)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Table]
   }
 }

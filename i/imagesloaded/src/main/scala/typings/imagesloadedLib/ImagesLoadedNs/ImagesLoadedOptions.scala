@@ -12,8 +12,8 @@ trait ImagesLoadedOptions extends js.Object {
 object ImagesLoadedOptions {
   @scala.inline
   def apply(background: imagesloadedLib.imagesloadedLibNumbers.`true` | java.lang.String): ImagesLoadedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ImagesLoadedOptions]
   }
 }

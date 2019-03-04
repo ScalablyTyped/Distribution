@@ -43,12 +43,8 @@ object Lifetimes {
     moved: js.Function0[scala.Unit],
     ready: js.Function0[scala.Unit]
   ): Lifetimes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attached")(attached)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("detached")(detached)
-    __obj.updateDynamic("moved")(moved)
-    __obj.updateDynamic("ready")(ready)
+    val __obj = js.Dynamic.literal(attached = attached, created = created, detached = detached, moved = moved, ready = ready)
+  
     __obj.asInstanceOf[Lifetimes]
   }
 }

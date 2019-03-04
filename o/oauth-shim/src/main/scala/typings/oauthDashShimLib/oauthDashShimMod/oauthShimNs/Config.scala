@@ -20,11 +20,8 @@ object Config {
     domain: java.lang.String,
     grant_url: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("grant_url")(grant_url)
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, domain = domain, grant_url = grant_url)
+  
     __obj.asInstanceOf[Config]
   }
 }

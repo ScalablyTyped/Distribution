@@ -13,9 +13,8 @@ trait Anon_Contents extends js.Object {
 object Anon_Contents {
   @scala.inline
   def apply(contents: phantomLib.phantomMod.IPhantomCallback, height: java.lang.String): Anon_Contents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
-    __obj.updateDynamic("height")(height)
+    val __obj = js.Dynamic.literal(contents = contents, height = height)
+  
     __obj.asInstanceOf[Anon_Contents]
   }
 }

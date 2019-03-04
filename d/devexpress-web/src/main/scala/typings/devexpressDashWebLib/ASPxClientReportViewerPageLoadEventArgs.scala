@@ -37,11 +37,8 @@ object ASPxClientReportViewerPageLoadEventArgs {
     PageCount: scala.Double,
     PageIndex: scala.Double
   ): ASPxClientReportViewerPageLoadEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsFirstPage")(IsFirstPage)
-    __obj.updateDynamic("IsLastPage")(IsLastPage)
-    __obj.updateDynamic("PageCount")(PageCount)
-    __obj.updateDynamic("PageIndex")(PageIndex)
+    val __obj = js.Dynamic.literal(IsFirstPage = IsFirstPage, IsLastPage = IsLastPage, PageCount = PageCount, PageIndex = PageIndex)
+  
     __obj.asInstanceOf[ASPxClientReportViewerPageLoadEventArgs]
   }
 }

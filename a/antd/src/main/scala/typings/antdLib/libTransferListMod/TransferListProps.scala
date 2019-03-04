@@ -56,21 +56,7 @@ object TransferListProps {
     showSearch: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TransferListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkedKeys")(checkedKeys)
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("handleClear")(handleClear)
-    __obj.updateDynamic("handleFilter")(handleFilter)
-    __obj.updateDynamic("handleSelect")(handleSelect)
-    __obj.updateDynamic("handleSelectAll")(handleSelectAll)
-    __obj.updateDynamic("itemUnit")(itemUnit)
-    __obj.updateDynamic("itemsUnit")(itemsUnit)
-    __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
-    __obj.updateDynamic("titleText")(titleText)
+    val __obj = js.Dynamic.literal(checkedKeys = checkedKeys, dataSource = dataSource, filter = filter, handleClear = handleClear, handleFilter = handleFilter, handleSelect = handleSelect, handleSelectAll = handleSelectAll, itemUnit = itemUnit, itemsUnit = itemsUnit, notFoundContent = notFoundContent.asInstanceOf[js.Any], onScroll = onScroll, prefixCls = prefixCls, searchPlaceholder = searchPlaceholder, titleText = titleText)
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption)

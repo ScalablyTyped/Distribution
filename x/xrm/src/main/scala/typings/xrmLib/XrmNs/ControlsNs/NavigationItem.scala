@@ -31,13 +31,8 @@ object NavigationItem {
     setLabel: js.Function1[java.lang.String, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): NavigationItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(getId = getId, getLabel = getLabel, getVisible = getVisible, setFocus = setFocus, setLabel = setLabel, setVisible = setVisible)
+  
     __obj.asInstanceOf[NavigationItem]
   }
 }

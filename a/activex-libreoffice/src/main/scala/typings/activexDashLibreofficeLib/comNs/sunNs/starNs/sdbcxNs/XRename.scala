@@ -28,11 +28,8 @@ object XRename {
     release: js.Function0[scala.Unit],
     rename: js.Function1[java.lang.String, scala.Unit]
   ): XRename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("rename")(rename)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, rename = rename)
+  
     __obj.asInstanceOf[XRename]
   }
 }

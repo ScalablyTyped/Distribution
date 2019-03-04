@@ -23,8 +23,7 @@ object AllDocsWithKeysOptions {
     limit: scala.Int | scala.Double = null,
     skip: scala.Int | scala.Double = null
   ): AllDocsWithKeysOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(keys = keys)
     if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
     if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)

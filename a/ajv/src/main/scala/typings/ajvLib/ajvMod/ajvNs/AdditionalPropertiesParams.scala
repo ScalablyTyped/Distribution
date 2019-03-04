@@ -12,8 +12,8 @@ trait AdditionalPropertiesParams extends ErrorParameters {
 object AdditionalPropertiesParams {
   @scala.inline
   def apply(additionalProperty: java.lang.String): AdditionalPropertiesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalProperty")(additionalProperty)
+    val __obj = js.Dynamic.literal(additionalProperty = additionalProperty)
+  
     __obj.asInstanceOf[AdditionalPropertiesParams]
   }
 }

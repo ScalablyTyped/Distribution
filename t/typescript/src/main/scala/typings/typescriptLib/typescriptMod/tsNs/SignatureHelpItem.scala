@@ -33,14 +33,8 @@ object SignatureHelpItem {
     suffixDisplayParts: js.Array[SymbolDisplayPart],
     tags: js.Array[JSDocTagInfo]
   ): SignatureHelpItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("documentation")(documentation)
-    __obj.updateDynamic("isVariadic")(isVariadic)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("prefixDisplayParts")(prefixDisplayParts)
-    __obj.updateDynamic("separatorDisplayParts")(separatorDisplayParts)
-    __obj.updateDynamic("suffixDisplayParts")(suffixDisplayParts)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(documentation = documentation, isVariadic = isVariadic, parameters = parameters, prefixDisplayParts = prefixDisplayParts, separatorDisplayParts = separatorDisplayParts, suffixDisplayParts = suffixDisplayParts, tags = tags)
+  
     __obj.asInstanceOf[SignatureHelpItem]
   }
 }

@@ -20,11 +20,8 @@ object TestAttachmentRequestModel {
     fileName: java.lang.String,
     stream: java.lang.String
   ): TestAttachmentRequestModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentType")(attachmentType)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType, comment = comment, fileName = fileName, stream = stream)
+  
     __obj.asInstanceOf[TestAttachmentRequestModel]
   }
 }

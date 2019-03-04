@@ -16,9 +16,8 @@ object Signature {
     toBuffer: js.Function1[java.lang.String, nodeLib.Buffer],
     toString: js.Function1[java.lang.String, java.lang.String]
   ): Signature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toBuffer")(toBuffer)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toBuffer = toBuffer, toString = toString)
+  
     __obj.asInstanceOf[Signature]
   }
 }

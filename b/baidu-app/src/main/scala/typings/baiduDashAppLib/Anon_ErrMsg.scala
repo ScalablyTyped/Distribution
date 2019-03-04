@@ -12,8 +12,8 @@ trait Anon_ErrMsg extends js.Object {
 object Anon_ErrMsg {
   @scala.inline
   def apply(errMsg: java.lang.String): Anon_ErrMsg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errMsg")(errMsg)
+    val __obj = js.Dynamic.literal(errMsg = errMsg)
+  
     __obj.asInstanceOf[Anon_ErrMsg]
   }
 }

@@ -27,11 +27,8 @@ object TSConditionalType {
     trueType: astDashTypesLib.genKindsMod.TSTypeKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSConditionalType
   ): TSConditionalType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("checkType")(checkType)
-    __obj.updateDynamic("extendsType")(extendsType)
-    __obj.updateDynamic("falseType")(falseType)
-    __obj.updateDynamic("trueType")(trueType)
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, trueType = trueType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSConditionalType]
   }
 }

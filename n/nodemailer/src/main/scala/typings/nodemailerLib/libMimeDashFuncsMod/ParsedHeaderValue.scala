@@ -13,9 +13,8 @@ trait ParsedHeaderValue extends HeaderValue {
 object ParsedHeaderValue {
   @scala.inline
   def apply(params: org.scalablytyped.runtime.StringDictionary[java.lang.String], value: java.lang.String): ParsedHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(params = params, value = value)
+  
     __obj.asInstanceOf[ParsedHeaderValue]
   }
 }

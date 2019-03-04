@@ -25,12 +25,8 @@ object Cursor {
     skip: js.Function1[scala.Double, Cursor[T]],
     sort: js.Function1[js.Any, Cursor[T]]
   ): Cursor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("projection")(projection)
-    __obj.updateDynamic("skip")(skip)
-    __obj.updateDynamic("sort")(sort)
+    val __obj = js.Dynamic.literal(exec = exec, limit = limit, projection = projection, skip = skip, sort = sort)
+  
     __obj.asInstanceOf[Cursor[T]]
   }
 }

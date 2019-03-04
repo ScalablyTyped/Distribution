@@ -138,26 +138,8 @@ object Config {
     tls: nodeDashIpcLib.Anon_Private,
     unlink: scala.Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appspace")(appspace)
-    __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("interfaces")(interfaces)
-    __obj.updateDynamic("logDepth")(logDepth)
-    __obj.updateDynamic("logInColor")(logInColor)
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("maxConnections")(maxConnections)
-    __obj.updateDynamic("maxRetries")(maxRetries)
-    __obj.updateDynamic("networkHost")(networkHost)
-    __obj.updateDynamic("networkPort")(networkPort)
-    __obj.updateDynamic("rawBuffer")(rawBuffer)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("socketRoot")(socketRoot)
-    __obj.updateDynamic("stopRetrying")(stopRetrying)
-    __obj.updateDynamic("sync")(sync)
-    __obj.updateDynamic("tls")(tls)
-    __obj.updateDynamic("unlink")(unlink)
+    val __obj = js.Dynamic.literal(appspace = appspace, encoding = encoding.asInstanceOf[js.Any], id = id, interfaces = interfaces, logDepth = logDepth, logInColor = logInColor, logger = logger, maxConnections = maxConnections, maxRetries = maxRetries, networkHost = networkHost, networkPort = networkPort, rawBuffer = rawBuffer, retry = retry, silent = silent, socketRoot = socketRoot, stopRetrying = stopRetrying, sync = sync, tls = tls, unlink = unlink)
+  
     __obj.asInstanceOf[Config]
   }
 }

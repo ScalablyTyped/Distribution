@@ -38,8 +38,7 @@ object Style {
     transition: Transition = null,
     zoom: scala.Int | scala.Double = null
   ): Style = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(version = version)
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center)
     if (glyphs != null) __obj.updateDynamic("glyphs")(glyphs)

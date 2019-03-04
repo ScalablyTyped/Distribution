@@ -14,9 +14,8 @@ trait Anon_AllHistory extends js.Object {
 object Anon_AllHistory {
   @scala.inline
   def apply(allHistory: scala.Boolean, urls: js.Array[java.lang.String]): Anon_AllHistory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allHistory")(allHistory)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(allHistory = allHistory, urls = urls)
+  
     __obj.asInstanceOf[Anon_AllHistory]
   }
 }

@@ -115,29 +115,8 @@ object PropertyHierarchy {
       scala.Unit
     ]
   ): PropertyHierarchy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HierarchicalPropertySetInfo")(HierarchicalPropertySetInfo)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
-    __obj.updateDynamic("getHierarchicalPropertySetInfo")(getHierarchicalPropertySetInfo)
-    __obj.updateDynamic("getHierarchicalPropertyValue")(getHierarchicalPropertyValue)
-    __obj.updateDynamic("getHierarchicalPropertyValues")(getHierarchicalPropertyValues)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setHierarchicalPropertyValue")(setHierarchicalPropertyValue)
-    __obj.updateDynamic("setHierarchicalPropertyValues")(setHierarchicalPropertyValues)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertiesChangeListener = addPropertiesChangeListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, firePropertiesChangeEvent = firePropertiesChangeEvent, getHierarchicalPropertySetInfo = getHierarchicalPropertySetInfo, getHierarchicalPropertyValue = getHierarchicalPropertyValue, getHierarchicalPropertyValues = getHierarchicalPropertyValues, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, removePropertiesChangeListener = removePropertiesChangeListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setHierarchicalPropertyValue = setHierarchicalPropertyValue, setHierarchicalPropertyValues = setHierarchicalPropertyValues, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues)
+  
     __obj.asInstanceOf[PropertyHierarchy]
   }
 }

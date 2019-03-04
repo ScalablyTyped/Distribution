@@ -18,8 +18,8 @@ object MobileFriendlyTestResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RunMobileFriendlyTestResponse]
     ]
   ): MobileFriendlyTestResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(run = run)
+  
     __obj.asInstanceOf[MobileFriendlyTestResource]
   }
 }

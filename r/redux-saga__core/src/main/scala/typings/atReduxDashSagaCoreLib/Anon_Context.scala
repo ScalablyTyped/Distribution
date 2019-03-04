@@ -17,9 +17,8 @@ object Anon_Context {
   def apply[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
     */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.Anon_Context with js.Any */, Name /* <: java.lang.String */](context: Ctx, fn: Name): Anon_Context[Ctx, Name] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("fn")(fn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Context[Ctx, Name]]
   }
 }

@@ -45,14 +45,8 @@ object CFB$Entry {
     mt: stdLib.Date = null,
     storage: java.lang.String = null
   ): CFB$Entry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clsid")(clsid)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(clsid = clsid, color = color, content = content.asInstanceOf[js.Any], name = name, size = size, start = start, state = state)
+    __obj.updateDynamic("type")(`type`)
     if (ct != null) __obj.updateDynamic("ct")(ct)
     if (mt != null) __obj.updateDynamic("mt")(mt)
     if (storage != null) __obj.updateDynamic("storage")(storage)

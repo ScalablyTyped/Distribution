@@ -22,12 +22,8 @@ object CurrentLoadCpuData {
     load_system: scala.Double,
     load_user: scala.Double
   ): CurrentLoadCpuData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("load_irq")(load_irq)
-    __obj.updateDynamic("load_nice")(load_nice)
-    __obj.updateDynamic("load_system")(load_system)
-    __obj.updateDynamic("load_user")(load_user)
+    val __obj = js.Dynamic.literal(load = load, load_irq = load_irq, load_nice = load_nice, load_system = load_system, load_user = load_user)
+  
     __obj.asInstanceOf[CurrentLoadCpuData]
   }
 }

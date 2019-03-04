@@ -21,10 +21,7 @@ object MapPanEndEvent {
     origin: kendoDashUiLib.kendoNs.datavizNs.mapNs.Location = null,
     originalEvent: js.Any = null
   ): MapPanEndEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (center != null) __obj.updateDynamic("center")(center)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)

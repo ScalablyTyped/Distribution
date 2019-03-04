@@ -19,8 +19,8 @@ object MeshbluStatic {
   def apply(
     createConnection: js.Function1[meshbluLib.MeshbluNs.ConnectionOptions, meshbluLib.MeshbluNs.Connection]
   ): MeshbluStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createConnection")(createConnection)
+    val __obj = js.Dynamic.literal(createConnection = createConnection)
+  
     __obj.asInstanceOf[MeshbluStatic]
   }
 }

@@ -22,12 +22,8 @@ object PBES2Params {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): PBES2Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptionScheme")(encryptionScheme)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("keyDerivationFunc")(keyDerivationFunc)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(encryptionScheme = encryptionScheme, fromSchema = fromSchema, keyDerivationFunc = keyDerivationFunc, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[PBES2Params]
   }
 }

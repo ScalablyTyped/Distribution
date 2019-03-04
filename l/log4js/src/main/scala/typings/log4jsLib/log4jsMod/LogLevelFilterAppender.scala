@@ -23,9 +23,8 @@ object LogLevelFilterAppender {
     `type`: log4jsLib.log4jsLibStrings.logLevelFilter,
     maxLevel: java.lang.String = null
   ): LogLevelFilterAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("appender")(appender)
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(appender = appender, level = level)
+    __obj.updateDynamic("type")(`type`)
     if (maxLevel != null) __obj.updateDynamic("maxLevel")(maxLevel)
     __obj.asInstanceOf[LogLevelFilterAppender]
   }

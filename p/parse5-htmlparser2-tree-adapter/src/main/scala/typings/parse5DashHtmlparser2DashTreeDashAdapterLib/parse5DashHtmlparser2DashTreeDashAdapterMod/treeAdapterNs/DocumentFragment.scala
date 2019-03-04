@@ -37,19 +37,8 @@ object DocumentFragment {
     previousSibling: Node,
     `type`: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.root
   ): DocumentFragment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("firstChild")(firstChild)
-    __obj.updateDynamic("lastChild")(lastChild)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("previousSibling")(previousSibling)
+    val __obj = js.Dynamic.literal(childNodes = childNodes, children = children, firstChild = firstChild, lastChild = lastChild, name = name, next = next, nextSibling = nextSibling, nodeType = nodeType, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DocumentFragment]
   }
 }

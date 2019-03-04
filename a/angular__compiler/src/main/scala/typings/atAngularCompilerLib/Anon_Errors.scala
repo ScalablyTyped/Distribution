@@ -16,8 +16,7 @@ object Anon_Errors {
     nodes: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node],
     errors: js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError] = null
   ): Anon_Errors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(nodes = nodes)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     __obj.asInstanceOf[Anon_Errors]
   }

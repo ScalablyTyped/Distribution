@@ -54,8 +54,7 @@ object Anon_ActivityIdAlt {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_ActivityIdAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activityId")(activityId)
+    val __obj = js.Dynamic.literal(activityId = activityId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

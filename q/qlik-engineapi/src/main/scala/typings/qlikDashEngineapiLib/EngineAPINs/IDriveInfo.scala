@@ -39,11 +39,8 @@ object IDriveInfo {
     qType: java.lang.String,
     qTypeIdentifier: DriveType
   ): IDriveInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDrive")(qDrive)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qType")(qType)
-    __obj.updateDynamic("qTypeIdentifier")(qTypeIdentifier)
+    val __obj = js.Dynamic.literal(qDrive = qDrive, qName = qName, qType = qType, qTypeIdentifier = qTypeIdentifier)
+  
     __obj.asInstanceOf[IDriveInfo]
   }
 }

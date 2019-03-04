@@ -38,12 +38,8 @@ object SpanNotQuery {
     include: js.Function1[js.Object, SpanNotQuery],
     toJSON: js.Function0[js.Any]
   ): SpanNotQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("include")(include)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, exclude = exclude, include = include, toJSON = toJSON)
+  
     __obj.asInstanceOf[SpanNotQuery]
   }
 }

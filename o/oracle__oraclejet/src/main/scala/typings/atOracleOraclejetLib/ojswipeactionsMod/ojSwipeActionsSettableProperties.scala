@@ -14,8 +14,8 @@ trait ojSwipeActionsSettableProperties
 object ojSwipeActionsSettableProperties {
   @scala.inline
   def apply(translations: atOracleOraclejetLib.Anon_AriaHideActionsDescription): ojSwipeActionsSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(translations = translations)
+  
     __obj.asInstanceOf[ojSwipeActionsSettableProperties]
   }
 }

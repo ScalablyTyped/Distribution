@@ -46,24 +46,8 @@ object Anon_BADDATE {
     REQUIRED: java.lang.String,
     VALUE_NOT_ALLOWED: java.lang.String
   ): Anon_BADDATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BAD_DATE")(BAD_DATE)
-    __obj.updateDynamic("EXPECTED_TYPE")(EXPECTED_TYPE)
-    __obj.updateDynamic("FAILED_REGULAR_EXPRESSION")(FAILED_REGULAR_EXPRESSION)
-    __obj.updateDynamic("KEY_NOT_IN_SCHEMA")(KEY_NOT_IN_SCHEMA)
-    __obj.updateDynamic("MAX_COUNT")(MAX_COUNT)
-    __obj.updateDynamic("MAX_DATE")(MAX_DATE)
-    __obj.updateDynamic("MAX_NUMBER")(MAX_NUMBER)
-    __obj.updateDynamic("MAX_NUMBER_EXCLUSIVE")(MAX_NUMBER_EXCLUSIVE)
-    __obj.updateDynamic("MAX_STRING")(MAX_STRING)
-    __obj.updateDynamic("MIN_COUNT")(MIN_COUNT)
-    __obj.updateDynamic("MIN_DATE")(MIN_DATE)
-    __obj.updateDynamic("MIN_NUMBER")(MIN_NUMBER)
-    __obj.updateDynamic("MIN_NUMBER_EXCLUSIVE")(MIN_NUMBER_EXCLUSIVE)
-    __obj.updateDynamic("MIN_STRING")(MIN_STRING)
-    __obj.updateDynamic("MUST_BE_INTEGER")(MUST_BE_INTEGER)
-    __obj.updateDynamic("REQUIRED")(REQUIRED)
-    __obj.updateDynamic("VALUE_NOT_ALLOWED")(VALUE_NOT_ALLOWED)
+    val __obj = js.Dynamic.literal(BAD_DATE = BAD_DATE, EXPECTED_TYPE = EXPECTED_TYPE, FAILED_REGULAR_EXPRESSION = FAILED_REGULAR_EXPRESSION, KEY_NOT_IN_SCHEMA = KEY_NOT_IN_SCHEMA, MAX_COUNT = MAX_COUNT, MAX_DATE = MAX_DATE, MAX_NUMBER = MAX_NUMBER, MAX_NUMBER_EXCLUSIVE = MAX_NUMBER_EXCLUSIVE, MAX_STRING = MAX_STRING, MIN_COUNT = MIN_COUNT, MIN_DATE = MIN_DATE, MIN_NUMBER = MIN_NUMBER, MIN_NUMBER_EXCLUSIVE = MIN_NUMBER_EXCLUSIVE, MIN_STRING = MIN_STRING, MUST_BE_INTEGER = MUST_BE_INTEGER, REQUIRED = REQUIRED, VALUE_NOT_ALLOWED = VALUE_NOT_ALLOWED)
+  
     __obj.asInstanceOf[Anon_BADDATE]
   }
 }

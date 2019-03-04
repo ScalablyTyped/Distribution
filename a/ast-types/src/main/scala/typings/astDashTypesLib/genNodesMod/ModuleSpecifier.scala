@@ -21,7 +21,8 @@ object ModuleSpecifier {
     local: astDashTypesLib.genKindsMod.IdentifierKind = null,
     name: astDashTypesLib.genKindsMod.IdentifierKind = null
   ): ModuleSpecifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (id != null) __obj.updateDynamic("id")(id)
     if (loc != null) __obj.updateDynamic("loc")(loc)

@@ -43,11 +43,8 @@ object Eviction {
     kind: java.lang.String,
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
   ): Eviction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("deleteOptions")(deleteOptions)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, deleteOptions = deleteOptions, kind = kind, metadata = metadata)
+  
     __obj.asInstanceOf[Eviction]
   }
 }

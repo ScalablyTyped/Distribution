@@ -14,8 +14,8 @@ object IAtomPubClientFactory {
   def apply(
     createAtomPubClientWithCredentials: js.Function1[winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential, AtomPubClient]
   ): IAtomPubClientFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAtomPubClientWithCredentials")(createAtomPubClientWithCredentials)
+    val __obj = js.Dynamic.literal(createAtomPubClientWithCredentials = createAtomPubClientWithCredentials)
+  
     __obj.asInstanceOf[IAtomPubClientFactory]
   }
 }

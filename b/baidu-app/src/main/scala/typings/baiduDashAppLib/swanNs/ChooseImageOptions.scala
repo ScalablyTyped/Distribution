@@ -28,8 +28,7 @@ object ChooseImageOptions {
     sizeType: js.Array[ImageSizeType] = null,
     sourceType: js.Array[ImageSourceType] = null
   ): ChooseImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

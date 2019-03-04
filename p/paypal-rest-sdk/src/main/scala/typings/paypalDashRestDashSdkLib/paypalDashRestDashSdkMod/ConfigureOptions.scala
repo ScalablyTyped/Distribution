@@ -36,10 +36,7 @@ object ConfigureOptions {
     port: java.lang.String = null,
     schema: java.lang.String = null
   ): ConfigureOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, mode = mode)
     if (authorize_url != null) __obj.updateDynamic("authorize_url")(authorize_url)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (host != null) __obj.updateDynamic("host")(host)

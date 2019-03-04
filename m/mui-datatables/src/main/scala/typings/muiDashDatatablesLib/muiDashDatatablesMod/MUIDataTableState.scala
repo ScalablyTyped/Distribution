@@ -32,14 +32,7 @@ object MUIDataTableState {
     announceText: java.lang.String = null,
     searchText: java.lang.String = null
   ): MUIDataTableState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expandedRows")(expandedRows)
-    __obj.updateDynamic("filterList")(filterList)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("rowsPerPage")(rowsPerPage)
-    __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions)
-    __obj.updateDynamic("selectedRows")(selectedRows)
-    __obj.updateDynamic("showResponsive")(showResponsive)
+    val __obj = js.Dynamic.literal(expandedRows = expandedRows, filterList = filterList, page = page, rowsPerPage = rowsPerPage, rowsPerPageOptions = rowsPerPageOptions, selectedRows = selectedRows, showResponsive = showResponsive)
     if (activeColumn != null) __obj.updateDynamic("activeColumn")(activeColumn)
     if (announceText != null) __obj.updateDynamic("announceText")(announceText)
     if (searchText != null) __obj.updateDynamic("searchText")(searchText)

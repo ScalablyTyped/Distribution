@@ -22,12 +22,8 @@ object Anon_AbandonedActive {
     completed: scala.Double,
     notSet: scala.Double
   ): Anon_AbandonedActive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abandoned")(abandoned)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("notSet")(notSet)
+    val __obj = js.Dynamic.literal(abandoned = abandoned, active = active, all = all, completed = completed, notSet = notSet)
+  
     __obj.asInstanceOf[Anon_AbandonedActive]
   }
 }

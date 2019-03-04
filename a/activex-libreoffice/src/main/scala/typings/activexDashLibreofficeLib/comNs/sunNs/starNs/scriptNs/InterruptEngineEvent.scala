@@ -61,16 +61,8 @@ object InterruptEngineEvent {
     StartColumn: scala.Double,
     StartLine: scala.Double
   ): InterruptEngineEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndColumn")(EndColumn)
-    __obj.updateDynamic("EndLine")(EndLine)
-    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Reason")(Reason)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("SourceCode")(SourceCode)
-    __obj.updateDynamic("StartColumn")(StartColumn)
-    __obj.updateDynamic("StartLine")(StartLine)
+    val __obj = js.Dynamic.literal(EndColumn = EndColumn, EndLine = EndLine, ErrorMessage = ErrorMessage, Name = Name, Reason = Reason, Source = Source, SourceCode = SourceCode, StartColumn = StartColumn, StartLine = StartLine)
+  
     __obj.asInstanceOf[InterruptEngineEvent]
   }
 }

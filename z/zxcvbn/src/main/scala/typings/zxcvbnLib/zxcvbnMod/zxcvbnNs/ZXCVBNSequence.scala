@@ -112,27 +112,8 @@ object ZXCVBNSequence {
     token: java.lang.String,
     uppercase_variations: scala.Double
   ): ZXCVBNSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascending")(ascending)
-    __obj.updateDynamic("base_guesses")(base_guesses)
-    __obj.updateDynamic("base_matches")(base_matches)
-    __obj.updateDynamic("base_token")(base_token)
-    __obj.updateDynamic("dictionary_name")(dictionary_name)
-    __obj.updateDynamic("guesses")(guesses)
-    __obj.updateDynamic("guesses_log10")(guesses_log10)
-    __obj.updateDynamic("i")(i)
-    __obj.updateDynamic("j")(j)
-    __obj.updateDynamic("l33t")(l33t)
-    __obj.updateDynamic("l33t_variations")(l33t_variations)
-    __obj.updateDynamic("matched_word")(matched_word)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("repeat_count")(repeat_count)
-    __obj.updateDynamic("reversed")(reversed)
-    __obj.updateDynamic("sequence_name")(sequence_name)
-    __obj.updateDynamic("sequence_space")(sequence_space)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("uppercase_variations")(uppercase_variations)
+    val __obj = js.Dynamic.literal(ascending = ascending, base_guesses = base_guesses, base_matches = base_matches, base_token = base_token, dictionary_name = dictionary_name, guesses = guesses, guesses_log10 = guesses_log10, i = i, j = j, l33t = l33t, l33t_variations = l33t_variations, matched_word = matched_word, pattern = pattern, rank = rank, repeat_count = repeat_count, reversed = reversed, sequence_name = sequence_name, sequence_space = sequence_space, token = token, uppercase_variations = uppercase_variations)
+  
     __obj.asInstanceOf[ZXCVBNSequence]
   }
 }

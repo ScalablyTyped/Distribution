@@ -48,8 +48,7 @@ object Options {
     validateRequest: js.UndefOr[scala.Boolean] = js.undefined,
     validateResponse: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (!js.isUndefined(allowNullable)) __obj.updateDynamic("allowNullable")(allowNullable)
     if (requestValidationFn != null) __obj.updateDynamic("requestValidationFn")(requestValidationFn)
     if (responseValidationFn != null) __obj.updateDynamic("responseValidationFn")(responseValidationFn)

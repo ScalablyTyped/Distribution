@@ -24,12 +24,8 @@ object CompletionEntryDetails {
     name: java.lang.String,
     `type`: java.lang.String
   ): CompletionEntryDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("docComment")(docComment)
-    __obj.updateDynamic("fullSymbolName")(fullSymbolName)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("kindModifiers")(kindModifiers)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(docComment = docComment, fullSymbolName = fullSymbolName, kind = kind, kindModifiers = kindModifiers, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CompletionEntryDetails]
   }
 }

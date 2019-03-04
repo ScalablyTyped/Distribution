@@ -149,10 +149,7 @@ object CarePlan {
     text: Narrative = null,
     title: java.lang.String = null
   ): CarePlan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(intent = intent, status = status, subject = subject)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

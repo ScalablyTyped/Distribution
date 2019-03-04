@@ -99,22 +99,8 @@ object ASPxClientTab {
     name: java.lang.String,
     tabControl: ASPxClientTabControlBase
   ): ASPxClientTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetActiveImageUrl")(GetActiveImageUrl)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
-    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetActiveImageUrl")(SetActiveImageUrl)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
-    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tabControl")(tabControl)
+    val __obj = js.Dynamic.literal(GetActiveImageUrl = GetActiveImageUrl, GetEnabled = GetEnabled, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetActiveImageUrl = SetActiveImageUrl, SetEnabled = SetEnabled, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, tabControl = tabControl)
+  
     __obj.asInstanceOf[ASPxClientTab]
   }
 }

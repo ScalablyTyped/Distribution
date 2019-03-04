@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- atAngularCoreLib.srcCodegenUnderscorePrivateUnderscoreExportsMod.ɵCodegenComponentFactoryResolver because Inheritance from two classes */ @JSImport("@angular/core/src/core", "ɵCodegenComponentFactoryResolver")
+- atAngularCoreLib.srcCodegenUnderscorePrivateUnderscoreExportsMod.ɵCodegenComponentFactoryResolver because Inheritance from two classes. Inlined  */ @JSImport("@angular/core/src/core", "ɵCodegenComponentFactoryResolver")
 @js.native
 class ɵCodegenComponentFactoryResolver protected ()
   extends atAngularCoreLib.srcCoreUnderscorePrivateUnderscoreExportMod.ɵCodegenComponentFactoryResolver {

@@ -28,15 +28,8 @@ object Touch {
     screenY: scala.Double,
     target: reactLib.EventTarget
   ): Touch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientX")(clientX)
-    __obj.updateDynamic("clientY")(clientY)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("pageX")(pageX)
-    __obj.updateDynamic("pageY")(pageY)
-    __obj.updateDynamic("screenX")(screenX)
-    __obj.updateDynamic("screenY")(screenY)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, identifier = identifier, pageX = pageX, pageY = pageY, screenX = screenX, screenY = screenY, target = target)
+  
     __obj.asInstanceOf[Touch]
   }
 }

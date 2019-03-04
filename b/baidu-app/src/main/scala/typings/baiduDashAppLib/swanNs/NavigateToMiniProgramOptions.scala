@@ -30,8 +30,7 @@ object NavigateToMiniProgramOptions {
     path: java.lang.String = null,
     success: js.Function1[/* res */ baiduDashAppLib.Anon_ErrMsg, scala.Unit] = null
   ): NavigateToMiniProgramOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
+    val __obj = js.Dynamic.literal(appId = appId)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion)
     if (extraData != null) __obj.updateDynamic("extraData")(extraData)

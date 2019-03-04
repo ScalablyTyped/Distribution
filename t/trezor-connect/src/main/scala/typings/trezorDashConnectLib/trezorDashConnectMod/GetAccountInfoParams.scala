@@ -24,8 +24,7 @@ object GetAccountInfoParams {
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined,
     xpub: java.lang.String = null
   ): GetAccountInfoParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coin")(coin)
+    val __obj = js.Dynamic.literal(coin = coin)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (device != null) __obj.updateDynamic("device")(device)
     if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)

@@ -38,13 +38,8 @@ object ProcessingIndicator {
     position: js.Function0[dynatableLib.JQuery],
     show: js.Function0[scala.Unit]
   ): ProcessingIndicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(attach = attach, create = create, hide = hide, init = init, position = position, show = show)
+  
     __obj.asInstanceOf[ProcessingIndicator]
   }
 }

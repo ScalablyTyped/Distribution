@@ -22,12 +22,8 @@ object Anon_Idlength {
     modes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     types: java.lang.String
   ): Anon_Idlength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idlength")(idlength)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("modes")(modes)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(idlength = idlength, length = length, limit = limit, modes = modes, types = types)
+  
     __obj.asInstanceOf[Anon_Idlength]
   }
 }

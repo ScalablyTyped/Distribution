@@ -26,14 +26,8 @@ object Anon_Action {
     query: js.Any,
     req: js.Any
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("req")(req)
+    val __obj = js.Dynamic.literal(action = action, agent = agent, collection = collection, id = id, op = op, query = query, req = req)
+  
     __obj.asInstanceOf[Anon_Action]
   }
 }

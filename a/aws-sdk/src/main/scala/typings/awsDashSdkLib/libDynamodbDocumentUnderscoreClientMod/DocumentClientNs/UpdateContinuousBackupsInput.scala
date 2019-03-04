@@ -19,9 +19,8 @@ trait UpdateContinuousBackupsInput extends js.Object {
 object UpdateContinuousBackupsInput {
   @scala.inline
   def apply(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: TableName): UpdateContinuousBackupsInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PointInTimeRecoverySpecification")(PointInTimeRecoverySpecification)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(PointInTimeRecoverySpecification = PointInTimeRecoverySpecification, TableName = TableName)
+  
     __obj.asInstanceOf[UpdateContinuousBackupsInput]
   }
 }

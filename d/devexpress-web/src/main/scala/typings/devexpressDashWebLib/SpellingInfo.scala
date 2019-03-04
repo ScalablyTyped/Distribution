@@ -24,9 +24,8 @@ trait SpellingInfo extends js.Object {
 object SpellingInfo {
   @scala.inline
   def apply(misspelledIntervals: js.Array[MisspelledInterval], spellCheckerState: js.Any): SpellingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("misspelledIntervals")(misspelledIntervals)
-    __obj.updateDynamic("spellCheckerState")(spellCheckerState)
+    val __obj = js.Dynamic.literal(misspelledIntervals = misspelledIntervals, spellCheckerState = spellCheckerState)
+  
     __obj.asInstanceOf[SpellingInfo]
   }
 }

@@ -20,11 +20,8 @@ object ChannelOpenFailureInfo {
     reasonCode: scala.Double,
     recipient: scala.Double
   ): ChannelOpenFailureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("reasonCode")(reasonCode)
-    __obj.updateDynamic("recipient")(recipient)
+    val __obj = js.Dynamic.literal(description = description, reason = reason, reasonCode = reasonCode, recipient = recipient)
+  
     __obj.asInstanceOf[ChannelOpenFailureInfo]
   }
 }

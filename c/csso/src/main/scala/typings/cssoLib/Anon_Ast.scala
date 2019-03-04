@@ -12,8 +12,8 @@ trait Anon_Ast extends js.Object {
 object Anon_Ast {
   @scala.inline
   def apply(ast: cssDashTreeLib.cssDashTreeMod.CssNode): Anon_Ast = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast)
+    val __obj = js.Dynamic.literal(ast = ast)
+  
     __obj.asInstanceOf[Anon_Ast]
   }
 }

@@ -21,10 +21,8 @@ object Entitlement {
     sku: java.lang.String,
     skuType: java.lang.String
   ): Entitlement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inAppDetails")(inAppDetails)
-    __obj.updateDynamic("sku")(sku)
-    __obj.updateDynamic("skuType")(skuType)
+    val __obj = js.Dynamic.literal(inAppDetails = inAppDetails, sku = sku, skuType = skuType)
+  
     __obj.asInstanceOf[Entitlement]
   }
 }

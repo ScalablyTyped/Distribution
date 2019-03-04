@@ -182,37 +182,8 @@ object AxisBase {
     titleColor: java.lang.String,
     titlefontSize: java.lang.String
   ): AxisBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addGuide")(addGuide)
-    __obj.updateDynamic("autoGridCount")(autoGridCount)
-    __obj.updateDynamic("axisAlpha")(axisAlpha)
-    __obj.updateDynamic("axisColor")(axisColor)
-    __obj.updateDynamic("axisThickness")(axisThickness)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("dashLength")(dashLength)
-    __obj.updateDynamic("fillAlpha")(fillAlpha)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("gridAlpha")(gridAlpha)
-    __obj.updateDynamic("gridColor")(gridColor)
-    __obj.updateDynamic("gridCount")(gridCount)
-    __obj.updateDynamic("gridThickness")(gridThickness)
-    __obj.updateDynamic("guides")(guides)
-    __obj.updateDynamic("ignoreAxisWidth")(ignoreAxisWidth)
-    __obj.updateDynamic("inside")(inside)
-    __obj.updateDynamic("labelFrequency")(labelFrequency)
-    __obj.updateDynamic("labelRotation")(labelRotation)
-    __obj.updateDynamic("labelsEnabled")(labelsEnabled)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("removeGuide")(removeGuide)
-    __obj.updateDynamic("showFirstLabel")(showFirstLabel)
-    __obj.updateDynamic("showLastLabel")(showLastLabel)
-    __obj.updateDynamic("tickLength")(tickLength)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleBold")(titleBold)
-    __obj.updateDynamic("titleColor")(titleColor)
-    __obj.updateDynamic("titlefontSize")(titlefontSize)
+    val __obj = js.Dynamic.literal(addGuide = addGuide, autoGridCount = autoGridCount, axisAlpha = axisAlpha, axisColor = axisColor, axisThickness = axisThickness, color = color, dashLength = dashLength, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, gridThickness = gridThickness, guides = guides, ignoreAxisWidth = ignoreAxisWidth, inside = inside, labelFrequency = labelFrequency, labelRotation = labelRotation, labelsEnabled = labelsEnabled, offset = offset, position = position, removeGuide = removeGuide, showFirstLabel = showFirstLabel, showLastLabel = showLastLabel, tickLength = tickLength, title = title, titleBold = titleBold, titleColor = titleColor, titlefontSize = titlefontSize)
+  
     __obj.asInstanceOf[AxisBase]
   }
 }

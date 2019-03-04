@@ -24,11 +24,8 @@ object Service {
     serviceHostPort: java.lang.String,
     serviceName: java.lang.String
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ipAddress")(ipAddress)
-    __obj.updateDynamic("serviceData")(serviceData)
-    __obj.updateDynamic("serviceHostPort")(serviceHostPort)
-    __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(ipAddress = ipAddress, serviceData = serviceData, serviceHostPort = serviceHostPort, serviceName = serviceName)
+  
     __obj.asInstanceOf[Service]
   }
 }

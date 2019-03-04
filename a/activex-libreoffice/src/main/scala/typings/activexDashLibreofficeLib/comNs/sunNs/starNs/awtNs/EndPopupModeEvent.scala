@@ -24,10 +24,8 @@ object EndPopupModeEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     bTearoff: scala.Boolean
   ): EndPopupModeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FloatingPosition")(FloatingPosition)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("bTearoff")(bTearoff)
+    val __obj = js.Dynamic.literal(FloatingPosition = FloatingPosition, Source = Source, bTearoff = bTearoff)
+  
     __obj.asInstanceOf[EndPopupModeEvent]
   }
 }

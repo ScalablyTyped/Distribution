@@ -22,11 +22,7 @@ object Anon_CancelPDisp {
     pDisp: js.Any,
     TargetFrameName: java.lang.String = null
   ): Anon_CancelPDisp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("StatusCode")(StatusCode)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("pDisp")(pDisp)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, StatusCode = StatusCode, URL = URL, pDisp = pDisp)
     if (TargetFrameName != null) __obj.updateDynamic("TargetFrameName")(TargetFrameName)
     __obj.asInstanceOf[Anon_CancelPDisp]
   }

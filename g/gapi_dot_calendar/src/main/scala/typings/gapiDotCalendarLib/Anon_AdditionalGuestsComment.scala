@@ -32,13 +32,7 @@ object Anon_AdditionalGuestsComment {
     displayName: java.lang.String = null,
     optional: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AdditionalGuestsComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("organizer")(organizer)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("responseStatus")(responseStatus)
-    __obj.updateDynamic("self")(self)
+    val __obj = js.Dynamic.literal(email = email, id = id, organizer = organizer, resource = resource, responseStatus = responseStatus, self = self)
     if (!js.isUndefined(additionalGuests)) __obj.updateDynamic("additionalGuests")(additionalGuests)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)

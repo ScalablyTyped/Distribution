@@ -32,17 +32,8 @@ object Anon_BorderedClassName {
     sortDirections: js.Array[java.lang.String],
     useFixedHeader: scala.Boolean
   ): Anon_BorderedClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bordered")(bordered)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("indentSize")(indentSize)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("rowKey")(rowKey)
-    __obj.updateDynamic("showHeader")(showHeader)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("sortDirections")(sortDirections)
-    __obj.updateDynamic("useFixedHeader")(useFixedHeader)
+    val __obj = js.Dynamic.literal(bordered = bordered, className = className, dataSource = dataSource, indentSize = indentSize, loading = loading, rowKey = rowKey, showHeader = showHeader, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
+  
     __obj.asInstanceOf[Anon_BorderedClassName]
   }
 }

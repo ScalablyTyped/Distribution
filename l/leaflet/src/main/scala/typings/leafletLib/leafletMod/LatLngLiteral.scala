@@ -13,9 +13,8 @@ trait LatLngLiteral extends _LatLngExpression {
 object LatLngLiteral {
   @scala.inline
   def apply(lat: scala.Double, lng: scala.Double): LatLngLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
+  
     __obj.asInstanceOf[LatLngLiteral]
   }
 }

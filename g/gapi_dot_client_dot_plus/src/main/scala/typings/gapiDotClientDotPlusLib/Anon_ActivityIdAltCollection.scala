@@ -54,9 +54,7 @@ object Anon_ActivityIdAltCollection {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_ActivityIdAltCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activityId")(activityId)
-    __obj.updateDynamic("collection")(collection)
+    val __obj = js.Dynamic.literal(activityId = activityId, collection = collection)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

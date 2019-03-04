@@ -18,10 +18,8 @@ object State {
     menuIsOpen: scala.Boolean,
     value: reactDashSelectLib.libTypesMod.ValueType[OptionType]
   ): State[OptionType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputValue")(inputValue)
-    __obj.updateDynamic("menuIsOpen")(menuIsOpen)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inputValue = inputValue, menuIsOpen = menuIsOpen, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[State[OptionType]]
   }
 }

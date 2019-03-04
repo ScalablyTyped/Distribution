@@ -26,10 +26,8 @@ trait FunctionCoverage extends js.Object {
 object FunctionCoverage {
   @scala.inline
   def apply(functionName: java.lang.String, isBlockCoverage: scala.Boolean, ranges: js.Array[CoverageRange]): FunctionCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("isBlockCoverage")(isBlockCoverage)
-    __obj.updateDynamic("ranges")(ranges)
+    val __obj = js.Dynamic.literal(functionName = functionName, isBlockCoverage = isBlockCoverage, ranges = ranges)
+  
     __obj.asInstanceOf[FunctionCoverage]
   }
 }

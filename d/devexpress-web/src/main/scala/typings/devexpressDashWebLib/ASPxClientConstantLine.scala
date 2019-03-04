@@ -35,12 +35,8 @@ object ASPxClientConstantLine {
     title: java.lang.String,
     value: js.Object
   ): ASPxClientConstantLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, name = name, title = title, value = value)
+  
     __obj.asInstanceOf[ASPxClientConstantLine]
   }
 }

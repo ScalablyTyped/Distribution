@@ -19,9 +19,8 @@ trait Anon_AdUnitId extends js.Object {
 object Anon_AdUnitId {
   @scala.inline
   def apply(adUnitId: java.lang.String, style: wegameDashApiLib.wxNs.typesNs.AdStyle): Anon_AdUnitId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adUnitId")(adUnitId)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(adUnitId = adUnitId, style = style)
+  
     __obj.asInstanceOf[Anon_AdUnitId]
   }
 }

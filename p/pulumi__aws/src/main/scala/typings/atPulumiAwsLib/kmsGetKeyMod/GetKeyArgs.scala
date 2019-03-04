@@ -23,8 +23,7 @@ trait GetKeyArgs extends js.Object {
 object GetKeyArgs {
   @scala.inline
   def apply(keyId: java.lang.String, grantTokens: js.Array[java.lang.String] = null): GetKeyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyId")(keyId)
+    val __obj = js.Dynamic.literal(keyId = keyId)
     if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens)
     __obj.asInstanceOf[GetKeyArgs]
   }

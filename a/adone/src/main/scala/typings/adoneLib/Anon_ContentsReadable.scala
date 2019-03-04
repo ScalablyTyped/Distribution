@@ -12,8 +12,8 @@ trait Anon_ContentsReadable extends js.Object {
 object Anon_ContentsReadable {
   @scala.inline
   def apply(contents: nodeLib.streamMod.Readable): Anon_ContentsReadable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
+    val __obj = js.Dynamic.literal(contents = contents)
+  
     __obj.asInstanceOf[Anon_ContentsReadable]
   }
 }

@@ -22,12 +22,8 @@ object KnockstrapModalDefaults {
     footerTemplate: KnockstrapModalDefaultsFooterTemplate,
     headerTemplate: KnockstrapDefaultsTemplateBase
   ): KnockstrapModalDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("bodyTemplate")(bodyTemplate)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("footerTemplate")(footerTemplate)
-    __obj.updateDynamic("headerTemplate")(headerTemplate)
+    val __obj = js.Dynamic.literal(attributes = attributes, bodyTemplate = bodyTemplate, css = css, footerTemplate = footerTemplate, headerTemplate = headerTemplate)
+  
     __obj.asInstanceOf[KnockstrapModalDefaults]
   }
 }

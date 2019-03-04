@@ -19,8 +19,7 @@ object IValidator {
     expression: java.lang.String | IExpressionFunction,
     message: java.lang.String | IExpressionFunction = null
   ): IValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidator]
   }

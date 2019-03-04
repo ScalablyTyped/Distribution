@@ -23,8 +23,7 @@ trait Fix extends js.Object {
 object Fix {
   @scala.inline
   def apply(changes: js.Array[ArtifactChange], description: Message = null, properties: PropertyBag = null): Fix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
+    val __obj = js.Dynamic.literal(changes = changes)
     if (description != null) __obj.updateDynamic("description")(description)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[Fix]

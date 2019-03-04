@@ -18,10 +18,8 @@ object Anon_AllowEmpty {
     referers: js.Array[java.lang.String],
     res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
   ): Anon_AllowEmpty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowEmpty")(allowEmpty)
-    __obj.updateDynamic("referers")(referers)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(allowEmpty = allowEmpty, referers = referers, res = res)
+  
     __obj.asInstanceOf[Anon_AllowEmpty]
   }
 }

@@ -26,8 +26,7 @@ object DefineCommandFromSubsystemOptions {
     name: java.lang.String = null,
     transpile: js.UndefOr[scala.Boolean] = js.undefined
   ): DefineCommandFromSubsystemOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subsystem")(subsystem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(subsystem = subsystem.asInstanceOf[js.Any])
     if (configureArgs != null) __obj.updateDynamic("configureArgs")(configureArgs)
     if (description != null) __obj.updateDynamic("description")(description)
     if (group != null) __obj.updateDynamic("group")(group)

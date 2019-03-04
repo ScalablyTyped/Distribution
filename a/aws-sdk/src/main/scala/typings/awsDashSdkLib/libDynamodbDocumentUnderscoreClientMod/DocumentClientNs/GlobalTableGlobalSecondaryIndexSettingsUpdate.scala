@@ -27,8 +27,7 @@ object GlobalTableGlobalSecondaryIndexSettingsUpdate {
     ProvisionedWriteCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
     ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   ): GlobalTableGlobalSecondaryIndexSettingsUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IndexName")(IndexName)
+    val __obj = js.Dynamic.literal(IndexName = IndexName)
     if (ProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettingsUpdate")(ProvisionedWriteCapacityAutoScalingSettingsUpdate)
     if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits)
     __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]

@@ -22,7 +22,8 @@ object Action {
     payload: Payload = null,
     query: js.Object = null
   ): Action = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
     if (payload != null) __obj.updateDynamic("payload")(payload)

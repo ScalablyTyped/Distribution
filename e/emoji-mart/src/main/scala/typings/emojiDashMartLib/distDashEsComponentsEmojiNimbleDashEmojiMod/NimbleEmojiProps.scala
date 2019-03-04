@@ -47,10 +47,7 @@ object NimbleEmojiProps {
     skin: emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin = null,
     tooltip: js.UndefOr[scala.Boolean] = js.undefined
   ): NimbleEmojiProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(data = data, emoji = emoji.asInstanceOf[js.Any], size = size)
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(backgroundImageFn)
     if (fallback != null) __obj.updateDynamic("fallback")(fallback)
     if (!js.isUndefined(forceSize)) __obj.updateDynamic("forceSize")(forceSize)

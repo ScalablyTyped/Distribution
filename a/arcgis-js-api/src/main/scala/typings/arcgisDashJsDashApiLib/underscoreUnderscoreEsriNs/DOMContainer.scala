@@ -83,16 +83,8 @@ object DOMContainer {
     ui: DefaultUI,
     width: scala.Double
   ): DOMContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("popup")(popup)
-    __obj.updateDynamic("resizing")(resizing)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("suspended")(suspended)
-    __obj.updateDynamic("ui")(ui)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(container = container, focused = focused, height = height, popup = popup, resizing = resizing, size = size, suspended = suspended, ui = ui, width = width)
+  
     __obj.asInstanceOf[DOMContainer]
   }
 }

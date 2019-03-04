@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashCurryRight extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: lodashLib.lodashMod.underscoreNs.`__` = js.native
+  var placeholder_Original: lodashLib.lodashMod.underscoreNs.__ = js.native
   def apply(func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def apply[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction2[T1, T2, R] = js.native
   def apply[T1, T2, T3, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction3[T1, T2, T3, R] = js.native

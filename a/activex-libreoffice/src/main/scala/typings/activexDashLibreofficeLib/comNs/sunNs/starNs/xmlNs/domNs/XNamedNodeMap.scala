@@ -62,19 +62,8 @@ object XNamedNodeMap {
     setNamedItem: js.Function1[XNode, XNode],
     setNamedItemNS: js.Function1[XNode, XNode]
   ): XNamedNodeMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getNamedItem")(getNamedItem)
-    __obj.updateDynamic("getNamedItemNS")(getNamedItemNS)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeNamedItem")(removeNamedItem)
-    __obj.updateDynamic("removeNamedItemNS")(removeNamedItemNS)
-    __obj.updateDynamic("setNamedItem")(setNamedItem)
-    __obj.updateDynamic("setNamedItemNS")(setNamedItemNS)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getLength = getLength, getNamedItem = getNamedItem, getNamedItemNS = getNamedItemNS, item = item, queryInterface = queryInterface, release = release, removeNamedItem = removeNamedItem, removeNamedItemNS = removeNamedItemNS, setNamedItem = setNamedItem, setNamedItemNS = setNamedItemNS)
+  
     __obj.asInstanceOf[XNamedNodeMap]
   }
 }

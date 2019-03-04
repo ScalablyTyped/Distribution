@@ -20,11 +20,8 @@ object IDatagramSocketInformation {
     remoteAddress: winrtLib.WindowsNs.NetworkingNs.HostName,
     remotePort: java.lang.String
   ): IDatagramSocketInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("localPort")(localPort)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("remotePort")(remotePort)
+    val __obj = js.Dynamic.literal(localAddress = localAddress, localPort = localPort, remoteAddress = remoteAddress, remotePort = remotePort)
+  
     __obj.asInstanceOf[IDatagramSocketInformation]
   }
 }

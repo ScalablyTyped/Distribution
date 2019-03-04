@@ -14,10 +14,8 @@ trait Anon_HeightUrl extends js.Object {
 object Anon_HeightUrl {
   @scala.inline
   def apply(height: scala.Double, url: java.lang.String, width: scala.Double): Anon_HeightUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, url = url, width = width)
+  
     __obj.asInstanceOf[Anon_HeightUrl]
   }
 }

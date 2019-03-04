@@ -33,12 +33,8 @@ object Uik {
     Data4: scala.Double,
     Data5: scala.Double
   ): Uik = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data1")(Data1)
-    __obj.updateDynamic("Data2")(Data2)
-    __obj.updateDynamic("Data3")(Data3)
-    __obj.updateDynamic("Data4")(Data4)
-    __obj.updateDynamic("Data5")(Data5)
+    val __obj = js.Dynamic.literal(Data1 = Data1, Data2 = Data2, Data3 = Data3, Data4 = Data4, Data5 = Data5)
+  
     __obj.asInstanceOf[Uik]
   }
 }

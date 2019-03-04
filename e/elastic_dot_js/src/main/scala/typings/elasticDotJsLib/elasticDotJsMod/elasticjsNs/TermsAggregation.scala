@@ -123,25 +123,8 @@ object TermsAggregation {
     toJSON: js.Function0[js.Any],
     valueType: js.Function1[java.lang.String, TermsAggregation]
   ): TermsAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("executionHint")(executionHint)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("include")(include)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("minDocCount")(minDocCount)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("scriptValuesUnique")(scriptValuesUnique)
-    __obj.updateDynamic("shardSize")(shardSize)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("valueType")(valueType)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, exclude = exclude, executionHint = executionHint, field = field, format = format, include = include, lang = lang, minDocCount = minDocCount, order = order, params = params, script = script, scriptValuesUnique = scriptValuesUnique, shardSize = shardSize, size = size, toJSON = toJSON, valueType = valueType)
+  
     __obj.asInstanceOf[TermsAggregation]
   }
 }

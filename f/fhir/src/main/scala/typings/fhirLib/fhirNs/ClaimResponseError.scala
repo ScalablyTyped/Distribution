@@ -56,8 +56,7 @@ object ClaimResponseError {
     sequenceLinkId: js.UndefOr[positiveInt] = js.undefined,
     subdetailSequenceLinkId: js.UndefOr[positiveInt] = js.undefined
   ): ClaimResponseError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_detailSequenceLinkId != null) __obj.updateDynamic("_detailSequenceLinkId")(_detailSequenceLinkId)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

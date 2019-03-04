@@ -30,11 +30,8 @@ object CompletionsQueryResult {
     isProperty: scala.Boolean,
     start: scala.Double | Position
   ): CompletionsQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completions")(completions.asInstanceOf[js.Any])
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("isProperty")(isProperty)
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(completions = completions.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], isProperty = isProperty, start = start.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CompletionsQueryResult]
   }
 }

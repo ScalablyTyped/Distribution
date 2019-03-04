@@ -15,9 +15,8 @@ trait Anon_ChildrenInnerPropsAnonEventOnKeyDown extends js.Object {
 object Anon_ChildrenInnerPropsAnonEventOnKeyDown {
   @scala.inline
   def apply(children: reactLib.reactMod.ReactNs.ReactNode, innerProps: Anon_EventOnKeyDown): Anon_ChildrenInnerPropsAnonEventOnKeyDown = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("innerProps")(innerProps)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerProps = innerProps)
+  
     __obj.asInstanceOf[Anon_ChildrenInnerPropsAnonEventOnKeyDown]
   }
 }

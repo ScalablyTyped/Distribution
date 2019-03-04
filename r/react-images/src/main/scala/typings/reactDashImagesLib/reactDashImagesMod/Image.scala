@@ -32,8 +32,7 @@ object Image {
     caption: java.lang.String = null,
     srcSet: java.lang.String | js.Array[java.lang.String] = null
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])

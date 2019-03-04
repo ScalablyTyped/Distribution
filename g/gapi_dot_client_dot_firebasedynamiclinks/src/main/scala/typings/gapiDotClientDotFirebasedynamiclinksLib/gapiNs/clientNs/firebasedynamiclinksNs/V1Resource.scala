@@ -28,9 +28,8 @@ object V1Resource {
       gapiDotClientLib.gapiNs.clientNs.Request[GetIosPostInstallAttributionResponse]
     ]
   ): V1Resource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLinkStats")(getLinkStats)
-    __obj.updateDynamic("installAttribution")(installAttribution)
+    val __obj = js.Dynamic.literal(getLinkStats = getLinkStats, installAttribution = installAttribution)
+  
     __obj.asInstanceOf[V1Resource]
   }
 }

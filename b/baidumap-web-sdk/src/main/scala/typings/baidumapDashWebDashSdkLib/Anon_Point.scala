@@ -14,9 +14,8 @@ trait Anon_Point extends js.Object {
 object Anon_Point {
   @scala.inline
   def apply(point: baidumapDashWebDashSdkLib.BMapNs.Point, target: js.Any, `type`: java.lang.String): Anon_Point = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(point = point, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Point]
   }
 }

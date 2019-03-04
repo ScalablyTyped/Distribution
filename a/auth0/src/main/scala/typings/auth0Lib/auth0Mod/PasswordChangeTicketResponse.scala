@@ -12,8 +12,8 @@ trait PasswordChangeTicketResponse extends js.Object {
 object PasswordChangeTicketResponse {
   @scala.inline
   def apply(ticket: java.lang.String): PasswordChangeTicketResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ticket")(ticket)
+    val __obj = js.Dynamic.literal(ticket = ticket)
+  
     __obj.asInstanceOf[PasswordChangeTicketResponse]
   }
 }

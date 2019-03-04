@@ -12,8 +12,8 @@ trait Anon_TrackingId extends js.Object {
 object Anon_TrackingId {
   @scala.inline
   def apply(trackingId: java.lang.String): Anon_TrackingId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trackingId")(trackingId)
+    val __obj = js.Dynamic.literal(trackingId = trackingId)
+  
     __obj.asInstanceOf[Anon_TrackingId]
   }
 }

@@ -16,12 +16,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(cache: js.Any, config: js.Any, section: js.Any, sections: js.Any, utilities: js.Any): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("section")(section)
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("utilities")(utilities)
+    val __obj = js.Dynamic.literal(cache = cache, config = config, section = section, sections = sections, utilities = utilities)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

@@ -22,12 +22,8 @@ object QueryableString {
     startsWith: js.Function1[java.lang.String, scala.Boolean],
     value: js.Function0[java.lang.String]
   ): QueryableString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("endsWith")(endsWith)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("startsWith")(startsWith)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(contains = contains, endsWith = endsWith, equals = equals, startsWith = startsWith, value = value)
+  
     __obj.asInstanceOf[QueryableString]
   }
 }

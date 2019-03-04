@@ -45,12 +45,8 @@ object ASPxClientDashboardItemDataMeasure {
     Name: java.lang.String,
     SummaryType: java.lang.String
   ): ASPxClientDashboardItemDataMeasure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataMember")(DataMember)
-    __obj.updateDynamic("Format")(Format)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("SummaryType")(SummaryType)
+    val __obj = js.Dynamic.literal(DataMember = DataMember, Format = Format, Id = Id, Name = Name, SummaryType = SummaryType)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemDataMeasure]
   }
 }

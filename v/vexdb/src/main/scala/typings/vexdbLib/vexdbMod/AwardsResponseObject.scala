@@ -22,12 +22,8 @@ object AwardsResponseObject {
     sku: java.lang.String,
     team: java.lang.String
   ): AwardsResponseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("qualifies")(qualifies)
-    __obj.updateDynamic("sku")(sku)
-    __obj.updateDynamic("team")(team)
+    val __obj = js.Dynamic.literal(name = name, order = order, qualifies = qualifies, sku = sku, team = team)
+  
     __obj.asInstanceOf[AwardsResponseObject]
   }
 }

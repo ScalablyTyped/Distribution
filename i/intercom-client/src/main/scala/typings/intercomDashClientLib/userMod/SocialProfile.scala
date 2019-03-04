@@ -20,8 +20,7 @@ object SocialProfile {
     url: java.lang.String = null,
     username: java.lang.String = null
   ): SocialProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (id != null) __obj.updateDynamic("id")(id)
     if (url != null) __obj.updateDynamic("url")(url)
     if (username != null) __obj.updateDynamic("username")(username)

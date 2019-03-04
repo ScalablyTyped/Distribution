@@ -20,8 +20,7 @@ object CustomPropertyText {
     show: scala.Boolean | ShowFunction = null,
     `type`: qlikLib.qlikLibStrings.string | qlikLib.qlikLibStrings.integer | qlikLib.qlikLibStrings.number | qlikLib.qlikLibStrings.array | qlikLib.qlikLibStrings.boolean | qlikLib.qlikLibStrings.items = null
   ): CustomPropertyText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
     if (label != null) __obj.updateDynamic("label")(label)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])

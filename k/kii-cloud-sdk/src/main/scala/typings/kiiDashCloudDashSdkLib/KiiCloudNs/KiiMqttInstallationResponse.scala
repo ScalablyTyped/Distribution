@@ -13,9 +13,8 @@ trait KiiMqttInstallationResponse extends js.Object {
 object KiiMqttInstallationResponse {
   @scala.inline
   def apply(installationID: java.lang.String, installationRegistrationID: java.lang.String): KiiMqttInstallationResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("installationID")(installationID)
-    __obj.updateDynamic("installationRegistrationID")(installationRegistrationID)
+    val __obj = js.Dynamic.literal(installationID = installationID, installationRegistrationID = installationRegistrationID)
+  
     __obj.asInstanceOf[KiiMqttInstallationResponse]
   }
 }

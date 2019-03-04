@@ -27,7 +27,8 @@ object PropObjectType {
     reflectToAttribute: js.UndefOr[scala.Boolean] = js.undefined,
     value: scala.Boolean | scala.Double | java.lang.String | js.Function | js.Object = null
   ): PropObjectType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (computed != null) __obj.updateDynamic("computed")(computed)
     if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
     if (observer != null) __obj.updateDynamic("observer")(observer)

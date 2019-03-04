@@ -18,10 +18,8 @@ object TabsProps {
     onChange: js.Function1[gestaltLib.Anon_ActiveTabIndex, scala.Unit],
     tabs: js.Array[gestaltLib.Anon_Href]
   ): TabsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTabIndex")(activeTabIndex)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("tabs")(tabs)
+    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex, onChange = onChange, tabs = tabs)
+  
     __obj.asInstanceOf[TabsProps]
   }
 }

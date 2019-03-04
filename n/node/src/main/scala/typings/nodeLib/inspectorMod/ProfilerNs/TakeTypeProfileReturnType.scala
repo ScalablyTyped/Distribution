@@ -15,8 +15,8 @@ trait TakeTypeProfileReturnType extends js.Object {
 object TakeTypeProfileReturnType {
   @scala.inline
   def apply(result: js.Array[ScriptTypeProfile]): TakeTypeProfileReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[TakeTypeProfileReturnType]
   }
 }

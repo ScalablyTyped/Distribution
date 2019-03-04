@@ -12,8 +12,8 @@ trait ImageErrorEventData extends js.Object {
 object ImageErrorEventData {
   @scala.inline
   def apply(error: js.Any): ImageErrorEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[ImageErrorEventData]
   }
 }

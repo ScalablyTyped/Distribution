@@ -66,13 +66,7 @@ object OptionsWithState {
     tmplRegex: java.lang.String = null,
     updateView: scala.Int | scala.Double = null
   ): OptionsWithState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("busy")(busy)
-    __obj.updateDynamic("currSlide")(currSlide)
-    __obj.updateDynamic("nextSlide")(nextSlide)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("slideCount")(slideCount)
-    __obj.updateDynamic("slideNum")(slideNum)
+    val __obj = js.Dynamic.literal(busy = busy, currSlide = currSlide, nextSlide = nextSlide, paused = paused, slideCount = slideCount, slideNum = slideNum)
     if (!js.isUndefined(allowWrap)) __obj.updateDynamic("allowWrap")(allowWrap)
     if (autoHeight != null) __obj.updateDynamic("autoHeight")(autoHeight)
     if (autoSelector != null) __obj.updateDynamic("autoSelector")(autoSelector)

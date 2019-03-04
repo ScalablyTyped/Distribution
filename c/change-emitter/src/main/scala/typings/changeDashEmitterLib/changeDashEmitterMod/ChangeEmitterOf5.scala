@@ -16,9 +16,8 @@ object ChangeEmitterOf5 {
     emit: js.Function5[T1, T2, T3, T4, T5, scala.Unit],
     listen: js.Function1[ListenerOf5[T1, T2, T3, T4, T5], Unlisten]
   ): ChangeEmitterOf5[T1, T2, T3, T4, T5] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("listen")(listen)
+    val __obj = js.Dynamic.literal(emit = emit, listen = listen)
+  
     __obj.asInstanceOf[ChangeEmitterOf5[T1, T2, T3, T4, T5]]
   }
 }

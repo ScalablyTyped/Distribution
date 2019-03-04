@@ -51,18 +51,8 @@ object ASPxClientHtmlEditorInsertFlashCommandArguments {
     src: java.lang.String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorInsertFlashCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCommandName")(GetCommandName)
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("allowFullscreen")(allowFullscreen)
-    __obj.updateDynamic("autoPlay")(autoPlay)
-    __obj.updateDynamic("enableFlashMenu")(enableFlashMenu)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loop")(loop)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("styleSettings")(styleSettings)
+    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, allowFullscreen = allowFullscreen, autoPlay = autoPlay, enableFlashMenu = enableFlashMenu, id = id, loop = loop, quality = quality, selectedElement = selectedElement, src = src, styleSettings = styleSettings)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertFlashCommandArguments]
   }
 }

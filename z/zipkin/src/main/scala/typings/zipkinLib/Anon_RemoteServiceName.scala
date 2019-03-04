@@ -18,9 +18,7 @@ object Anon_RemoteServiceName {
     tracer: zipkinLib.zipkinMod.zipkinNs.Tracer,
     remoteServiceName: java.lang.String = null
   ): Anon_RemoteServiceName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("tracer")(tracer)
+    val __obj = js.Dynamic.literal(serviceName = serviceName, tracer = tracer)
     if (remoteServiceName != null) __obj.updateDynamic("remoteServiceName")(remoteServiceName)
     __obj.asInstanceOf[Anon_RemoteServiceName]
   }

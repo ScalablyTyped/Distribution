@@ -28,7 +28,8 @@ object FrameOptions {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.none,
     alphaEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): FrameOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled)
     __obj.asInstanceOf[FrameOptions]
   }

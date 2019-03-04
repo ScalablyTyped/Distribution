@@ -21,10 +21,7 @@ object TryNextPlugin {
     target: java.lang.String,
     message: java.lang.String = null
   ): TryNextPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, source = source, target = target)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[TryNextPlugin]
   }

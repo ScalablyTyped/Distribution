@@ -128,10 +128,7 @@ object Manifest {
     version_name: java.lang.String = null,
     web_accessible_resources: js.Array[java.lang.String] = null
   ): Manifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manifest_version")(manifest_version)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(manifest_version = manifest_version, name = name, version = version)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (author != null) __obj.updateDynamic("author")(author)
     if (automation != null) __obj.updateDynamic("automation")(automation)

@@ -155,8 +155,7 @@ object DrawerLayoutAndroidProps {
     style: StyleProp[ViewStyle] = null,
     testID: java.lang.String = null
   ): DrawerLayoutAndroidProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderNavigationView")(renderNavigationView)
+    val __obj = js.Dynamic.literal(renderNavigationView = renderNavigationView)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

@@ -79,17 +79,8 @@ object ASPxClientXYDiagram2D {
     secondaryAxesX: js.Array[ASPxClientAxis],
     secondaryAxesY: js.Array[ASPxClientAxis]
   ): ASPxClientXYDiagram2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DiagramToPoint")(DiagramToPoint)
-    __obj.updateDynamic("PointToDiagram")(PointToDiagram)
-    __obj.updateDynamic("ShowCrosshair")(ShowCrosshair)
-    __obj.updateDynamic("axisX")(axisX)
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("defaultPane")(defaultPane)
-    __obj.updateDynamic("panes")(panes)
-    __obj.updateDynamic("secondaryAxesX")(secondaryAxesX)
-    __obj.updateDynamic("secondaryAxesY")(secondaryAxesY)
+    val __obj = js.Dynamic.literal(DiagramToPoint = DiagramToPoint, PointToDiagram = PointToDiagram, ShowCrosshair = ShowCrosshair, axisX = axisX, axisY = axisY, chart = chart, defaultPane = defaultPane, panes = panes, secondaryAxesX = secondaryAxesX, secondaryAxesY = secondaryAxesY)
+  
     __obj.asInstanceOf[ASPxClientXYDiagram2D]
   }
 }

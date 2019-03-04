@@ -31,12 +31,8 @@ object Time {
     NanoSeconds: scala.Double,
     Seconds: scala.Double
   ): Time = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hours")(Hours)
-    __obj.updateDynamic("IsUTC")(IsUTC)
-    __obj.updateDynamic("Minutes")(Minutes)
-    __obj.updateDynamic("NanoSeconds")(NanoSeconds)
-    __obj.updateDynamic("Seconds")(Seconds)
+    val __obj = js.Dynamic.literal(Hours = Hours, IsUTC = IsUTC, Minutes = Minutes, NanoSeconds = NanoSeconds, Seconds = Seconds)
+  
     __obj.asInstanceOf[Time]
   }
 }

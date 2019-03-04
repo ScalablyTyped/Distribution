@@ -89,8 +89,7 @@ object Props {
     style: Styles = null,
     testId: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (appElement != null) __obj.updateDynamic("appElement")(appElement.asInstanceOf[js.Any])
     if (aria != null) __obj.updateDynamic("aria")(aria)
     if (!js.isUndefined(ariaHideApp)) __obj.updateDynamic("ariaHideApp")(ariaHideApp)

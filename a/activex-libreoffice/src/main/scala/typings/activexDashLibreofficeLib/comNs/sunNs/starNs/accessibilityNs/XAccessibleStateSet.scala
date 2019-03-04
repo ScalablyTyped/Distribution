@@ -61,15 +61,8 @@ object XAccessibleStateSet {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleStateSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("States")(States)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("containsAll")(containsAll)
-    __obj.updateDynamic("getStates")(getStates)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(States = States, acquire = acquire, contains = contains, containsAll = containsAll, getStates = getStates, isEmpty = isEmpty, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleStateSet]
   }
 }

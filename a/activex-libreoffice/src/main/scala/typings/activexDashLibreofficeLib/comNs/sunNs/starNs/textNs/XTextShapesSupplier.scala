@@ -29,12 +29,8 @@ object XTextShapesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextShapesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Shapes")(Shapes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getShapes")(getShapes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Shapes = Shapes, acquire = acquire, getShapes = getShapes, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextShapesSupplier]
   }
 }

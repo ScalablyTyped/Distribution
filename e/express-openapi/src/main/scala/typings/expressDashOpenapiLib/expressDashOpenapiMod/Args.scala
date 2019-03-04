@@ -28,15 +28,8 @@ object Args {
     routes: java.lang.String,
     validateApiDoc: scala.Boolean
   ): Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiDoc")(apiDoc)
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("customFormats")(customFormats)
-    __obj.updateDynamic("docPath")(docPath)
-    __obj.updateDynamic("errorTransformer")(errorTransformer)
-    __obj.updateDynamic("exposeApiDocs")(exposeApiDocs)
-    __obj.updateDynamic("routes")(routes)
-    __obj.updateDynamic("validateApiDoc")(validateApiDoc)
+    val __obj = js.Dynamic.literal(apiDoc = apiDoc, app = app, customFormats = customFormats, docPath = docPath, errorTransformer = errorTransformer, exposeApiDocs = exposeApiDocs, routes = routes, validateApiDoc = validateApiDoc)
+  
     __obj.asInstanceOf[Args]
   }
 }

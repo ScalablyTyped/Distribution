@@ -77,20 +77,8 @@ object Anon_CssResponsebytes {
     textResponseBytes: java.lang.String,
     totalRequestBytes: java.lang.String
   ): Anon_CssResponsebytes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cssResponsebytes")(cssResponsebytes)
-    __obj.updateDynamic("flashResponseBytes")(flashResponseBytes)
-    __obj.updateDynamic("htmlResponseBytes")(htmlResponseBytes)
-    __obj.updateDynamic("imageResponseBytes")(imageResponseBytes)
-    __obj.updateDynamic("javascriptResponsebytes")(javascriptResponsebytes)
-    __obj.updateDynamic("numberCssResources")(numberCssResources)
-    __obj.updateDynamic("numberHosts")(numberHosts)
-    __obj.updateDynamic("numberJsResources")(numberJsResources)
-    __obj.updateDynamic("numberResources")(numberResources)
-    __obj.updateDynamic("numberStaticResources")(numberStaticResources)
-    __obj.updateDynamic("otherResponsebytes")(otherResponsebytes)
-    __obj.updateDynamic("textResponseBytes")(textResponseBytes)
-    __obj.updateDynamic("totalRequestBytes")(totalRequestBytes)
+    val __obj = js.Dynamic.literal(cssResponsebytes = cssResponsebytes, flashResponseBytes = flashResponseBytes, htmlResponseBytes = htmlResponseBytes, imageResponseBytes = imageResponseBytes, javascriptResponsebytes = javascriptResponsebytes, numberCssResources = numberCssResources, numberHosts = numberHosts, numberJsResources = numberJsResources, numberResources = numberResources, numberStaticResources = numberStaticResources, otherResponsebytes = otherResponsebytes, textResponseBytes = textResponseBytes, totalRequestBytes = totalRequestBytes)
+  
     __obj.asInstanceOf[Anon_CssResponsebytes]
   }
 }

@@ -32,17 +32,7 @@ object ImageVariant {
     attrs: js.Any = null,
     onlineStoreUrl: java.lang.String = null
   ): ImageVariant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("dimensions")(dimensions)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("imageForSize")(imageForSize)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("product_id")(product_id)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("variant_ids")(variant_ids)
+    val __obj = js.Dynamic.literal(created_at = created_at, dimensions = dimensions, id = id.asInstanceOf[js.Any], imageForSize = imageForSize, name = name, position = position, product_id = product_id, src = src, updated_at = updated_at, variant_ids = variant_ids)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
     __obj.asInstanceOf[ImageVariant]

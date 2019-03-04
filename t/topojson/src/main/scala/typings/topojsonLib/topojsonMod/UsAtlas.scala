@@ -27,11 +27,7 @@ object UsAtlas {
     type_Topology: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Topology,
     `type`: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Topology | geojsonLib.geojsonMod.GeoJsonGeometryTypes = null
   ): UsAtlas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arcs")(arcs)
-    __obj.updateDynamic("bbox")(bbox)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(arcs = arcs, bbox = bbox, objects = objects, transform = transform)
     __obj.updateDynamic("type")(type_Topology)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsAtlas]

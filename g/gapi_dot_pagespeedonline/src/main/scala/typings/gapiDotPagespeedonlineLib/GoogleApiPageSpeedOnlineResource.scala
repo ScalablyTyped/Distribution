@@ -57,16 +57,8 @@ object GoogleApiPageSpeedOnlineResource {
     title: java.lang.String,
     version: Anon_Major
   ): GoogleApiPageSpeedOnlineResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formattedResults")(formattedResults)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("invalidRules")(invalidRules)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("pageStats")(pageStats)
-    __obj.updateDynamic("responseCode")(responseCode)
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(formattedResults = formattedResults, id = id, invalidRules = invalidRules, kind = kind, pageStats = pageStats, responseCode = responseCode, score = score, title = title, version = version)
+  
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineResource]
   }
 }

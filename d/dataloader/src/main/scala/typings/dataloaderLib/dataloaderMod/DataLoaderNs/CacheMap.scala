@@ -20,11 +20,8 @@ object CacheMap {
     get: js.Function1[K, V | scala.Unit],
     set: js.Function2[K, V, js.Any]
   ): CacheMap[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, set = set)
+  
     __obj.asInstanceOf[CacheMap[K, V]]
   }
 }

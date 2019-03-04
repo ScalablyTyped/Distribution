@@ -20,11 +20,8 @@ object JQueryColorpickerInstance {
     open: js.Function0[scala.Unit],
     setColor: js.Function1[js.Any, scala.Unit]
   ): JQueryColorpickerInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("setColor")(setColor)
+    val __obj = js.Dynamic.literal(close = close, destroy = destroy, open = open, setColor = setColor)
+  
     __obj.asInstanceOf[JQueryColorpickerInstance]
   }
 }

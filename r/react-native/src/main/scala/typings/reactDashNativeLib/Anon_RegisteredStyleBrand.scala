@@ -12,8 +12,8 @@ trait Anon_RegisteredStyleBrand[T] extends js.Object {
 object Anon_RegisteredStyleBrand {
   @scala.inline
   def apply[T](__registeredStyleBrand: T): Anon_RegisteredStyleBrand[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__registeredStyleBrand")(__registeredStyleBrand.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(__registeredStyleBrand = __registeredStyleBrand.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_RegisteredStyleBrand[T]]
   }
 }

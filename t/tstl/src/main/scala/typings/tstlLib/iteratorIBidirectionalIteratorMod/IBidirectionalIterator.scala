@@ -23,11 +23,8 @@ object IBidirectionalIterator {
     prev: js.Function0[Iterator],
     value: T
   ): IBidirectionalIterator[T, Iterator] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(equals = equals, next = next, prev = prev, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IBidirectionalIterator[T, Iterator]]
   }
 }

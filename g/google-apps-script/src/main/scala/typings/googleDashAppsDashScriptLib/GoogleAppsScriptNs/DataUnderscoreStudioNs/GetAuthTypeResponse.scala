@@ -20,11 +20,8 @@ object GetAuthTypeResponse {
     setAuthType: js.Function1[AuthType, GetAuthTypeResponse],
     setHelpUrl: js.Function1[java.lang.String, GetAuthTypeResponse]
   ): GetAuthTypeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("printJson")(printJson)
-    __obj.updateDynamic("setAuthType")(setAuthType)
-    __obj.updateDynamic("setHelpUrl")(setHelpUrl)
+    val __obj = js.Dynamic.literal(build = build, printJson = printJson, setAuthType = setAuthType, setHelpUrl = setHelpUrl)
+  
     __obj.asInstanceOf[GetAuthTypeResponse]
   }
 }

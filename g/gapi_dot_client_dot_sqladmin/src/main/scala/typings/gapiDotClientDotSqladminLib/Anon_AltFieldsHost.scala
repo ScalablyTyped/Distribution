@@ -48,11 +48,7 @@ object Anon_AltFieldsHost {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(host = host, instance = instance, name = name, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

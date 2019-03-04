@@ -14,10 +14,8 @@ trait NodeFileData extends FileData {
 object NodeFileData {
   @scala.inline
   def apply(body: nodeLib.streamMod.PassThrough, filename: java.lang.String, url: java.lang.String): NodeFileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, filename = filename, url = url)
+  
     __obj.asInstanceOf[NodeFileData]
   }
 }

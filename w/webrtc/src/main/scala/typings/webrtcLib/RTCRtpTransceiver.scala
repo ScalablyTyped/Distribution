@@ -29,14 +29,7 @@ object RTCRtpTransceiver {
     stopped: scala.Boolean,
     mid: java.lang.String = null
   ): RTCRtpTransceiver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("receiver")(receiver)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("setCodecPreferences")(setCodecPreferences)
-    __obj.updateDynamic("setDirection")(setDirection)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("stopped")(stopped)
+    val __obj = js.Dynamic.literal(direction = direction, receiver = receiver, sender = sender, setCodecPreferences = setCodecPreferences, setDirection = setDirection, stop = stop, stopped = stopped)
     if (mid != null) __obj.updateDynamic("mid")(mid)
     __obj.asInstanceOf[RTCRtpTransceiver]
   }

@@ -40,21 +40,8 @@ object Name {
     phoneticHonorificSuffix: java.lang.String,
     phoneticMiddleName: java.lang.String
   ): Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("displayNameLastFirst")(displayNameLastFirst)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("givenName")(givenName)
-    __obj.updateDynamic("honorificPrefix")(honorificPrefix)
-    __obj.updateDynamic("honorificSuffix")(honorificSuffix)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("middleName")(middleName)
-    __obj.updateDynamic("phoneticFamilyName")(phoneticFamilyName)
-    __obj.updateDynamic("phoneticFullName")(phoneticFullName)
-    __obj.updateDynamic("phoneticGivenName")(phoneticGivenName)
-    __obj.updateDynamic("phoneticHonorificPrefix")(phoneticHonorificPrefix)
-    __obj.updateDynamic("phoneticHonorificSuffix")(phoneticHonorificSuffix)
-    __obj.updateDynamic("phoneticMiddleName")(phoneticMiddleName)
+    val __obj = js.Dynamic.literal(displayName = displayName, displayNameLastFirst = displayNameLastFirst, familyName = familyName, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, metadata = metadata, middleName = middleName, phoneticFamilyName = phoneticFamilyName, phoneticFullName = phoneticFullName, phoneticGivenName = phoneticGivenName, phoneticHonorificPrefix = phoneticHonorificPrefix, phoneticHonorificSuffix = phoneticHonorificSuffix, phoneticMiddleName = phoneticMiddleName)
+  
     __obj.asInstanceOf[Name]
   }
 }

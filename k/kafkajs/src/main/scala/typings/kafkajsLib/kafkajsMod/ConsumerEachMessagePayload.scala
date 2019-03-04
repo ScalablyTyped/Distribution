@@ -14,10 +14,8 @@ trait ConsumerEachMessagePayload extends js.Object {
 object ConsumerEachMessagePayload {
   @scala.inline
   def apply(message: ConsumerMessage, partition: scala.Double, topic: java.lang.String): ConsumerEachMessagePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(message = message, partition = partition, topic = topic)
+  
     __obj.asInstanceOf[ConsumerEachMessagePayload]
   }
 }

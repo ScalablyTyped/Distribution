@@ -68,35 +68,8 @@ object Anon_AvoidBadRequests {
     SpecifyImageDimensions: GoogleApiPageSpeedOnlineRuleResource,
     SpriteImages: GoogleApiPageSpeedOnlineRuleResource
   ): Anon_AvoidBadRequests = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvoidBadRequests")(AvoidBadRequests)
-    __obj.updateDynamic("AvoidCharsetInMetaTag")(AvoidCharsetInMetaTag)
-    __obj.updateDynamic("AvoidCssImport")(AvoidCssImport)
-    __obj.updateDynamic("AvoidLandingPageRedirects")(AvoidLandingPageRedirects)
-    __obj.updateDynamic("AvoidLongRunningScripts")(AvoidLongRunningScripts)
-    __obj.updateDynamic("DeferParsingJavaScript")(DeferParsingJavaScript)
-    __obj.updateDynamic("EnableGzipCompression")(EnableGzipCompression)
-    __obj.updateDynamic("InlineSmallCss")(InlineSmallCss)
-    __obj.updateDynamic("InlineSmallJavaScript")(InlineSmallJavaScript)
-    __obj.updateDynamic("LeverageBrowserCaching")(LeverageBrowserCaching)
-    __obj.updateDynamic("MinifyCss")(MinifyCss)
-    __obj.updateDynamic("MinifyHTML")(MinifyHTML)
-    __obj.updateDynamic("MinifyJavaScript")(MinifyJavaScript)
-    __obj.updateDynamic("MinimizeRedirects")(MinimizeRedirects)
-    __obj.updateDynamic("MinimizeRequestSize")(MinimizeRequestSize)
-    __obj.updateDynamic("OptimizeImages")(OptimizeImages)
-    __obj.updateDynamic("OptimizeTheOrderOfStylesAndScripts")(OptimizeTheOrderOfStylesAndScripts)
-    __obj.updateDynamic("PreferAsyncResources")(PreferAsyncResources)
-    __obj.updateDynamic("PutCssInTheDocumentHead")(PutCssInTheDocumentHead)
-    __obj.updateDynamic("RemoveQueryStringsFromStaticResources")(RemoveQueryStringsFromStaticResources)
-    __obj.updateDynamic("ServeResponseTime")(ServeResponseTime)
-    __obj.updateDynamic("ServerResourcesFromAConsistentUrl")(ServerResourcesFromAConsistentUrl)
-    __obj.updateDynamic("ServerScaledImages")(ServerScaledImages)
-    __obj.updateDynamic("SpecifyACacheValidator")(SpecifyACacheValidator)
-    __obj.updateDynamic("SpecifyAVaryAcceptEncodingHeader")(SpecifyAVaryAcceptEncodingHeader)
-    __obj.updateDynamic("SpecifyCharsetEarly")(SpecifyCharsetEarly)
-    __obj.updateDynamic("SpecifyImageDimensions")(SpecifyImageDimensions)
-    __obj.updateDynamic("SpriteImages")(SpriteImages)
+    val __obj = js.Dynamic.literal(AvoidBadRequests = AvoidBadRequests, AvoidCharsetInMetaTag = AvoidCharsetInMetaTag, AvoidCssImport = AvoidCssImport, AvoidLandingPageRedirects = AvoidLandingPageRedirects, AvoidLongRunningScripts = AvoidLongRunningScripts, DeferParsingJavaScript = DeferParsingJavaScript, EnableGzipCompression = EnableGzipCompression, InlineSmallCss = InlineSmallCss, InlineSmallJavaScript = InlineSmallJavaScript, LeverageBrowserCaching = LeverageBrowserCaching, MinifyCss = MinifyCss, MinifyHTML = MinifyHTML, MinifyJavaScript = MinifyJavaScript, MinimizeRedirects = MinimizeRedirects, MinimizeRequestSize = MinimizeRequestSize, OptimizeImages = OptimizeImages, OptimizeTheOrderOfStylesAndScripts = OptimizeTheOrderOfStylesAndScripts, PreferAsyncResources = PreferAsyncResources, PutCssInTheDocumentHead = PutCssInTheDocumentHead, RemoveQueryStringsFromStaticResources = RemoveQueryStringsFromStaticResources, ServeResponseTime = ServeResponseTime, ServerResourcesFromAConsistentUrl = ServerResourcesFromAConsistentUrl, ServerScaledImages = ServerScaledImages, SpecifyACacheValidator = SpecifyACacheValidator, SpecifyAVaryAcceptEncodingHeader = SpecifyAVaryAcceptEncodingHeader, SpecifyCharsetEarly = SpecifyCharsetEarly, SpecifyImageDimensions = SpecifyImageDimensions, SpriteImages = SpriteImages)
+  
     __obj.asInstanceOf[Anon_AvoidBadRequests]
   }
 }

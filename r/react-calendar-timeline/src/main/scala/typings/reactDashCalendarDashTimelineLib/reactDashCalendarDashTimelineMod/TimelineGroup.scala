@@ -18,9 +18,7 @@ object TimelineGroup {
     title: reactLib.reactMod.ReactNs.ReactNode,
     rightTitle: reactLib.reactMod.ReactNs.ReactNode = null
   ): TimelineGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
     if (rightTitle != null) __obj.updateDynamic("rightTitle")(rightTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineGroup]
   }

@@ -18,10 +18,8 @@ object Frame {
     group: reactDashPlotlyDotJsLib.reactDashPlotlyDotJsLibStrings.lower | reactDashPlotlyDotJsLib.reactDashPlotlyDotJsLibStrings.upper,
     name: java.lang.String
   ): Frame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data, group = group.asInstanceOf[js.Any], name = name)
+  
     __obj.asInstanceOf[Frame]
   }
 }

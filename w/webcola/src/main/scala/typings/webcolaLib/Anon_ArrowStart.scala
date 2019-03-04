@@ -18,10 +18,8 @@ object Anon_ArrowStart {
     sourceIntersection: webcolaLib.distSrcGeomMod.Point,
     targetIntersection: webcolaLib.distSrcGeomMod.Point
   ): Anon_ArrowStart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrowStart")(arrowStart)
-    __obj.updateDynamic("sourceIntersection")(sourceIntersection)
-    __obj.updateDynamic("targetIntersection")(targetIntersection)
+    val __obj = js.Dynamic.literal(arrowStart = arrowStart, sourceIntersection = sourceIntersection, targetIntersection = targetIntersection)
+  
     __obj.asInstanceOf[Anon_ArrowStart]
   }
 }

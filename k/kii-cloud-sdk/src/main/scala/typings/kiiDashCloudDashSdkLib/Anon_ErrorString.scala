@@ -16,9 +16,8 @@ object Anon_ErrorString {
     failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, java.lang.String, js.Any],
     success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, js.Any]
   ): Anon_ErrorString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_ErrorString]
   }
 }

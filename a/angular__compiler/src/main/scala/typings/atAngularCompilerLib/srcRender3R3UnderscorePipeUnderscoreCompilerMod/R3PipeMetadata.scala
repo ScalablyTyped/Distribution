@@ -22,10 +22,8 @@ object R3PipeMetadata {
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null
   ): R3PipeMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pipeName")(pipeName)
-    __obj.updateDynamic("pure")(pure)
+    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     __obj.asInstanceOf[R3PipeMetadata]
   }

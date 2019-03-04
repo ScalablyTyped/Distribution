@@ -18,8 +18,7 @@ object TokenInfo {
     index: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null
   ): TokenInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenInfo]

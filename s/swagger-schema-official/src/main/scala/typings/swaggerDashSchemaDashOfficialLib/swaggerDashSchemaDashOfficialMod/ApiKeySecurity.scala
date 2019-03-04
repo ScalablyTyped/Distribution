@@ -20,9 +20,8 @@ object ApiKeySecurity {
     `type`: java.lang.String,
     description: java.lang.String = null
   ): ApiKeySecurity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(in = in, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[ApiKeySecurity]
   }

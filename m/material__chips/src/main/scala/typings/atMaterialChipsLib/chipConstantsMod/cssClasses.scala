@@ -29,15 +29,8 @@ object cssClasses {
     TEXT: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__text`,
     TRAILING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--trailing`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHECKMARK")(CHECKMARK)
-    __obj.updateDynamic("CHIP")(CHIP)
-    __obj.updateDynamic("CHIP_EXIT")(CHIP_EXIT)
-    __obj.updateDynamic("HIDDEN_LEADING_ICON")(HIDDEN_LEADING_ICON)
-    __obj.updateDynamic("LEADING_ICON")(LEADING_ICON)
-    __obj.updateDynamic("SELECTED")(SELECTED)
-    __obj.updateDynamic("TEXT")(TEXT)
-    __obj.updateDynamic("TRAILING_ICON")(TRAILING_ICON)
+    val __obj = js.Dynamic.literal(CHECKMARK = CHECKMARK, CHIP = CHIP, CHIP_EXIT = CHIP_EXIT, HIDDEN_LEADING_ICON = HIDDEN_LEADING_ICON, LEADING_ICON = LEADING_ICON, SELECTED = SELECTED, TEXT = TEXT, TRAILING_ICON = TRAILING_ICON)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

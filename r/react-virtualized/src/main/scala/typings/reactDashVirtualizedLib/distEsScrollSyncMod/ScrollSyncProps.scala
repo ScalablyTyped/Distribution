@@ -35,8 +35,7 @@ object ScrollSyncProps {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ScrollSyncProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ScrollSyncProps]
   }

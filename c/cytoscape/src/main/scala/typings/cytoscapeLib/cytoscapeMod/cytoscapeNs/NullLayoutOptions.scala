@@ -15,8 +15,8 @@ trait NullLayoutOptions extends LayoutOptions {
 object NullLayoutOptions {
   @scala.inline
   def apply(name: cytoscapeLib.cytoscapeLibStrings.`null`): NullLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[NullLayoutOptions]
   }
 }

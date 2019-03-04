@@ -20,11 +20,8 @@ object ILookup {
     get: js.Function1[TKey, IEnumerable[TElement]],
     toEnumerable: js.Function0[IEnumerable[IGrouping[TKey, TElement]]]
   ): ILookup[TKey, TElement] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("toEnumerable")(toEnumerable)
+    val __obj = js.Dynamic.literal(contains = contains, count = count, get = get, toEnumerable = toEnumerable)
+  
     __obj.asInstanceOf[ILookup[TKey, TElement]]
   }
 }

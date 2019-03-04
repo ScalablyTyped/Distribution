@@ -21,8 +21,8 @@ object TSOptionalType {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSOptionalType,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
   ): TSOptionalType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSOptionalType]
   }
 }

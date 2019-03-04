@@ -22,12 +22,8 @@ object XVbaMethodParameter {
     release: js.Function0[scala.Unit],
     setVbaMethodParameter: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XVbaMethodParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getVbaMethodParameter")(getVbaMethodParameter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setVbaMethodParameter")(setVbaMethodParameter)
+    val __obj = js.Dynamic.literal(acquire = acquire, getVbaMethodParameter = getVbaMethodParameter, queryInterface = queryInterface, release = release, setVbaMethodParameter = setVbaMethodParameter)
+  
     __obj.asInstanceOf[XVbaMethodParameter]
   }
 }

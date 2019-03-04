@@ -24,9 +24,8 @@ object Token {
     `type`: jjuLib.jjuLibStrings.whitespace | jjuLib.jjuLibStrings.comment | jjuLib.jjuLibStrings.key | jjuLib.jjuLibStrings.literal | jjuLib.jjuLibStrings.separator | jjuLib.jjuLibStrings.newline,
     value: js.Any = null
   ): Token = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(raw = raw, stack = stack)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Token]
   }

@@ -22,9 +22,8 @@ object Anon_BusinessPersonal {
     business: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress,
     personal: microsoftDashLiveDashConnectLib.MicrosoftNs.LiveNs.IPostalAddress
   ): Anon_BusinessPersonal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("business")(business)
-    __obj.updateDynamic("personal")(personal)
+    val __obj = js.Dynamic.literal(business = business, personal = personal)
+  
     __obj.asInstanceOf[Anon_BusinessPersonal]
   }
 }

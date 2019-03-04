@@ -12,8 +12,8 @@ trait PullUpOption extends js.Object {
 object PullUpOption {
   @scala.inline
   def apply(threshold: scala.Double): PullUpOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(threshold = threshold)
+  
     __obj.asInstanceOf[PullUpOption]
   }
 }

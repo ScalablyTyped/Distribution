@@ -45,12 +45,8 @@ object ASPxClientSpreadsheetCellCancelEditEventArgs {
     sheetName: java.lang.String,
     value: java.lang.String
   ): ASPxClientSpreadsheetCellCancelEditEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("formula")(formula)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("sheetName")(sheetName)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, formula = formula, rowIndex = rowIndex, sheetName = sheetName, value = value)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetCellCancelEditEventArgs]
   }
 }

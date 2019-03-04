@@ -67,13 +67,8 @@ object XTolerantMultiPropertySet {
       activexDashInteropLib.SafeArray[SetPropertyTolerantFailed]
     ]
   ): XTolerantMultiPropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDirectPropertyValuesTolerant")(getDirectPropertyValuesTolerant)
-    __obj.updateDynamic("getPropertyValuesTolerant")(getPropertyValuesTolerant)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPropertyValuesTolerant")(setPropertyValuesTolerant)
+    val __obj = js.Dynamic.literal(acquire = acquire, getDirectPropertyValuesTolerant = getDirectPropertyValuesTolerant, getPropertyValuesTolerant = getPropertyValuesTolerant, queryInterface = queryInterface, release = release, setPropertyValuesTolerant = setPropertyValuesTolerant)
+  
     __obj.asInstanceOf[XTolerantMultiPropertySet]
   }
 }

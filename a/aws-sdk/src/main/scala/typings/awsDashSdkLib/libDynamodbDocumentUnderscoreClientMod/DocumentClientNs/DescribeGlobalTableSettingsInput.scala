@@ -15,8 +15,8 @@ trait DescribeGlobalTableSettingsInput extends js.Object {
 object DescribeGlobalTableSettingsInput {
   @scala.inline
   def apply(GlobalTableName: TableName): DescribeGlobalTableSettingsInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName)
+  
     __obj.asInstanceOf[DescribeGlobalTableSettingsInput]
   }
 }

@@ -19,10 +19,8 @@ object MalformedNumberFormatException {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String
   ): MalformedNumberFormatException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CheckPos")(CheckPos)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(CheckPos = CheckPos, Context = Context, Message = Message)
+  
     __obj.asInstanceOf[MalformedNumberFormatException]
   }
 }

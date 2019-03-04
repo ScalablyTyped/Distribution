@@ -27,9 +27,7 @@ object RadioGroupProps {
     label: java.lang.String = null,
     onChange: reactLib.reactMod.ReactNs.FormEventHandler[RadioGroup] = null
   ): RadioGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer)

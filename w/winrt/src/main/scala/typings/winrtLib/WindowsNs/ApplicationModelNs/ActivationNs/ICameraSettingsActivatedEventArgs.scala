@@ -19,12 +19,8 @@ object ICameraSettingsActivatedEventArgs {
     videoDeviceController: js.Any,
     videoDeviceExtension: js.Any
   ): ICameraSettingsActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
-    __obj.updateDynamic("videoDeviceController")(videoDeviceController)
-    __obj.updateDynamic("videoDeviceExtension")(videoDeviceExtension)
+    val __obj = js.Dynamic.literal(kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen, videoDeviceController = videoDeviceController, videoDeviceExtension = videoDeviceExtension)
+  
     __obj.asInstanceOf[ICameraSettingsActivatedEventArgs]
   }
 }

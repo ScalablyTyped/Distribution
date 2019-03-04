@@ -28,15 +28,8 @@ object Anon_Debug {
     tls_sni: scala.Boolean,
     uv: scala.Boolean
   ): Anon_Debug = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("inspector")(inspector)
-    __obj.updateDynamic("ipv6")(ipv6)
-    __obj.updateDynamic("tls")(tls)
-    __obj.updateDynamic("tls_alpn")(tls_alpn)
-    __obj.updateDynamic("tls_ocsp")(tls_ocsp)
-    __obj.updateDynamic("tls_sni")(tls_sni)
-    __obj.updateDynamic("uv")(uv)
+    val __obj = js.Dynamic.literal(debug = debug, inspector = inspector, ipv6 = ipv6, tls = tls, tls_alpn = tls_alpn, tls_ocsp = tls_ocsp, tls_sni = tls_sni, uv = uv)
+  
     __obj.asInstanceOf[Anon_Debug]
   }
 }

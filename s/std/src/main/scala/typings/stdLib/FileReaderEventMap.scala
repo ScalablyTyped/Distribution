@@ -24,13 +24,8 @@ object FileReaderEventMap {
     loadstart: ProgressEvent,
     progress: ProgressEvent
   ): FileReaderEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadend")(loadend)
-    __obj.updateDynamic("loadstart")(loadstart)
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress)
+  
     __obj.asInstanceOf[FileReaderEventMap]
   }
 }

@@ -27,8 +27,7 @@ object GetSecretVersionArgs {
     versionId: java.lang.String = null,
     versionStage: java.lang.String = null
   ): GetSecretVersionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secretId")(secretId)
+    val __obj = js.Dynamic.literal(secretId = secretId)
     if (versionId != null) __obj.updateDynamic("versionId")(versionId)
     if (versionStage != null) __obj.updateDynamic("versionStage")(versionStage)
     __obj.asInstanceOf[GetSecretVersionArgs]

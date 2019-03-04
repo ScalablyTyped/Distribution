@@ -16,9 +16,8 @@ object Anon_AnchorHead {
     anchor: codemirrorLib.codemirrorMod.CodeMirrorNs.Position,
     head: codemirrorLib.codemirrorMod.CodeMirrorNs.Position
   ): Anon_AnchorHead = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("head")(head)
+    val __obj = js.Dynamic.literal(anchor = anchor, head = head)
+  
     __obj.asInstanceOf[Anon_AnchorHead]
   }
 }

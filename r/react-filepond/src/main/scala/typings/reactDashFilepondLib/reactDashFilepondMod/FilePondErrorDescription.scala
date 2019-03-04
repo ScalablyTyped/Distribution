@@ -13,9 +13,8 @@ trait FilePondErrorDescription extends js.Object {
 object FilePondErrorDescription {
   @scala.inline
   def apply(main: java.lang.String, sub: java.lang.String): FilePondErrorDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("sub")(sub)
+    val __obj = js.Dynamic.literal(main = main, sub = sub)
+  
     __obj.asInstanceOf[FilePondErrorDescription]
   }
 }

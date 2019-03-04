@@ -20,10 +20,7 @@ object ForeignKeySpec {
     table: java.lang.String,
     rules: ForeignKeyRules = null
   ): ForeignKeySpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("table")(table)
+    val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any], name = name, table = table)
     if (rules != null) __obj.updateDynamic("rules")(rules)
     __obj.asInstanceOf[ForeignKeySpec]
   }

@@ -42,30 +42,8 @@ object PrivateUserOrOrg {
     updated_at: stdLib.Date,
     url: java.lang.String
   ): PrivateUserOrOrg = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("blog")(blog)
-    __obj.updateDynamic("collaborators")(collaborators)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("disk_usage")(disk_usage)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("events_url")(events_url)
-    __obj.updateDynamic("followers")(followers)
-    __obj.updateDynamic("following")(following)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owned_private_repos")(owned_private_repos)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("private_gists")(private_gists)
-    __obj.updateDynamic("public_gists")(public_gists)
-    __obj.updateDynamic("public_repos")(public_repos)
-    __obj.updateDynamic("repos_url")(repos_url)
-    __obj.updateDynamic("total_private_repos")(total_private_repos)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, blog = blog, collaborators = collaborators, company = company, created_at = created_at, disk_usage = disk_usage, email = email, events_url = events_url, followers = followers, following = following, id = id, location = location, login = login, name = name, owned_private_repos = owned_private_repos, plan = plan, private_gists = private_gists, public_gists = public_gists, public_repos = public_repos, repos_url = repos_url, total_private_repos = total_private_repos, updated_at = updated_at, url = url)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateUserOrOrg]
   }
 }

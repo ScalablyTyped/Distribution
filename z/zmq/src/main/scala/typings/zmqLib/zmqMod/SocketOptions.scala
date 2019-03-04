@@ -48,25 +48,8 @@ object SocketOptions {
     sndbuf: scala.Double,
     swap: scala.Double
   ): SocketOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_fd")(_fd)
-    __obj.updateDynamic("_ioevents")(_ioevents)
-    __obj.updateDynamic("_receiveMore")(_receiveMore)
-    __obj.updateDynamic("_subscribe")(_subscribe)
-    __obj.updateDynamic("_unsubscribe")(_unsubscribe)
-    __obj.updateDynamic("affinity")(affinity)
-    __obj.updateDynamic("backlog")(backlog)
-    __obj.updateDynamic("hwm")(hwm)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("last_endpoint")(last_endpoint)
-    __obj.updateDynamic("linger")(linger)
-    __obj.updateDynamic("mcast_loop")(mcast_loop)
-    __obj.updateDynamic("rate")(rate)
-    __obj.updateDynamic("rcvbuf")(rcvbuf)
-    __obj.updateDynamic("reconnect_ivl")(reconnect_ivl)
-    __obj.updateDynamic("recovery_ivl")(recovery_ivl)
-    __obj.updateDynamic("sndbuf")(sndbuf)
-    __obj.updateDynamic("swap")(swap)
+    val __obj = js.Dynamic.literal(_fd = _fd, _ioevents = _ioevents, _receiveMore = _receiveMore, _subscribe = _subscribe, _unsubscribe = _unsubscribe, affinity = affinity, backlog = backlog, hwm = hwm, identity = identity, last_endpoint = last_endpoint, linger = linger, mcast_loop = mcast_loop, rate = rate, rcvbuf = rcvbuf, reconnect_ivl = reconnect_ivl, recovery_ivl = recovery_ivl, sndbuf = sndbuf, swap = swap)
+  
     __obj.asInstanceOf[SocketOptions]
   }
 }

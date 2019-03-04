@@ -18,10 +18,8 @@ object FormatDiagnosticsHost {
     getCurrentDirectory: js.Function0[java.lang.String],
     getNewLine: js.Function0[java.lang.String]
   ): FormatDiagnosticsHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCanonicalFileName")(getCanonicalFileName)
-    __obj.updateDynamic("getCurrentDirectory")(getCurrentDirectory)
-    __obj.updateDynamic("getNewLine")(getNewLine)
+    val __obj = js.Dynamic.literal(getCanonicalFileName = getCanonicalFileName, getCurrentDirectory = getCurrentDirectory, getNewLine = getNewLine)
+  
     __obj.asInstanceOf[FormatDiagnosticsHost]
   }
 }

@@ -48,8 +48,8 @@ object classBreaks {
   def apply(
     classBreaks: js.Function1[classBreaksClassBreaksParams, arcgisDashJsDashApiLib.IPromise[ClassBreaksResult]]
   ): classBreaks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classBreaks")(classBreaks)
+    val __obj = js.Dynamic.literal(classBreaks = classBreaks)
+  
     __obj.asInstanceOf[classBreaks]
   }
 }

@@ -13,8 +13,8 @@ trait EthAbiDecodeParametersType extends js.Object {
 object EthAbiDecodeParametersType {
   @scala.inline
   def apply(name: java.lang.String, `type`: java.lang.String): EthAbiDecodeParametersType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EthAbiDecodeParametersType]
   }
 }

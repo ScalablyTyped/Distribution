@@ -13,9 +13,8 @@ trait ActionCodeInfo extends js.Object {
 object ActionCodeInfo {
   @scala.inline
   def apply(data: atFirebaseAuthDashTypesLib.Anon_Email, operation: java.lang.String): ActionCodeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(data = data, operation = operation)
+  
     __obj.asInstanceOf[ActionCodeInfo]
   }
 }

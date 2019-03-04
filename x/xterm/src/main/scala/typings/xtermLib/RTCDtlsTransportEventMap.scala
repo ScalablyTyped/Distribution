@@ -13,9 +13,8 @@ trait RTCDtlsTransportEventMap extends js.Object {
 object RTCDtlsTransportEventMap {
   @scala.inline
   def apply(error: RTCErrorEvent, statechange: Event): RTCDtlsTransportEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("statechange")(statechange)
+    val __obj = js.Dynamic.literal(error = error, statechange = statechange)
+  
     __obj.asInstanceOf[RTCDtlsTransportEventMap]
   }
 }

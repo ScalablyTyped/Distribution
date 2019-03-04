@@ -42,12 +42,8 @@ object VolumeMount {
     readOnly: scala.Boolean,
     subPath: java.lang.String
   ): VolumeMount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mountPath")(mountPath)
-    __obj.updateDynamic("mountPropagation")(mountPropagation)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("subPath")(subPath)
+    val __obj = js.Dynamic.literal(mountPath = mountPath, mountPropagation = mountPropagation, name = name, readOnly = readOnly, subPath = subPath)
+  
     __obj.asInstanceOf[VolumeMount]
   }
 }

@@ -20,8 +20,7 @@ object LinkProps {
     innerRef: js.Function1[/* node */ reactLib.HTMLAnchorElement | scala.Null, scala.Unit] = null,
     replace: js.UndefOr[scala.Boolean] = js.undefined
   ): LinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, AnchorHTMLAttributes)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)

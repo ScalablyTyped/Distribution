@@ -43,12 +43,8 @@ object XDropTargetDragContext {
     rejectDrag: js.Function0[scala.Unit],
     release: js.Function0[scala.Unit]
   ): XDropTargetDragContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptDrag")(acceptDrag)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rejectDrag")(rejectDrag)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acceptDrag = acceptDrag, acquire = acquire, queryInterface = queryInterface, rejectDrag = rejectDrag, release = release)
+  
     __obj.asInstanceOf[XDropTargetDragContext]
   }
 }

@@ -36,17 +36,7 @@ object Theme {
     overrides: atMaterialDashUiCoreLib.stylesOverridesMod.Overrides = null,
     props: atMaterialDashUiCoreLib.stylesPropsMod.ComponentsProps = null
   ): Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakpoints")(breakpoints)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("mixins")(mixins)
-    __obj.updateDynamic("palette")(palette)
-    __obj.updateDynamic("shadows")(shadows)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("spacing")(spacing)
-    __obj.updateDynamic("transitions")(transitions)
-    __obj.updateDynamic("typography")(typography)
-    __obj.updateDynamic("zIndex")(zIndex)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints, direction = direction, mixins = mixins, palette = palette, shadows = shadows, shape = shape, spacing = spacing, transitions = transitions, typography = typography, zIndex = zIndex)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     if (props != null) __obj.updateDynamic("props")(props)
     __obj.asInstanceOf[Theme]

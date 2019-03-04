@@ -12,8 +12,8 @@ trait Anon_Feature extends js.Object {
 object Anon_Feature {
   @scala.inline
   def apply(feature: vegaDashTypingsLib.vegaDashTypingsLibStrings.string): Anon_Feature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("feature")(feature)
+    val __obj = js.Dynamic.literal(feature = feature)
+  
     __obj.asInstanceOf[Anon_Feature]
   }
 }

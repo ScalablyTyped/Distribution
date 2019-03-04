@@ -33,23 +33,8 @@ object DateAttribute {
     setSubmitMode: js.Function1[xrmLib.XrmNs.SubmitMode, scala.Unit],
     setValue: js.Function1[stdLib.Date, scala.Unit]
   ): DateAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOnChange")(addOnChange)
-    __obj.updateDynamic("controls")(controls)
-    __obj.updateDynamic("fireOnChange")(fireOnChange)
-    __obj.updateDynamic("getAttributeType")(getAttributeType)
-    __obj.updateDynamic("getFormat")(getFormat)
-    __obj.updateDynamic("getIsDirty")(getIsDirty)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getRequiredLevel")(getRequiredLevel)
-    __obj.updateDynamic("getSubmitMode")(getSubmitMode)
-    __obj.updateDynamic("getUserPrivilege")(getUserPrivilege)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("removeOnChange")(removeOnChange)
-    __obj.updateDynamic("setRequiredLevel")(setRequiredLevel)
-    __obj.updateDynamic("setSubmitMode")(setSubmitMode)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(addOnChange = addOnChange, controls = controls, fireOnChange = fireOnChange, getAttributeType = getAttributeType, getFormat = getFormat, getIsDirty = getIsDirty, getName = getName, getParent = getParent, getRequiredLevel = getRequiredLevel, getSubmitMode = getSubmitMode, getUserPrivilege = getUserPrivilege, getValue = getValue, removeOnChange = removeOnChange, setRequiredLevel = setRequiredLevel, setSubmitMode = setSubmitMode, setValue = setValue)
+  
     __obj.asInstanceOf[DateAttribute]
   }
 }

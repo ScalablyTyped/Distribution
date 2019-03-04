@@ -16,9 +16,8 @@ object IUssdSessionStatics {
     createFromNetworkAccountId: js.Function1[java.lang.String, UssdSession],
     createFromNetworkInterfaceId: js.Function1[java.lang.String, UssdSession]
   ): IUssdSessionStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFromNetworkAccountId")(createFromNetworkAccountId)
-    __obj.updateDynamic("createFromNetworkInterfaceId")(createFromNetworkInterfaceId)
+    val __obj = js.Dynamic.literal(createFromNetworkAccountId = createFromNetworkAccountId, createFromNetworkInterfaceId = createFromNetworkInterfaceId)
+  
     __obj.asInstanceOf[IUssdSessionStatics]
   }
 }

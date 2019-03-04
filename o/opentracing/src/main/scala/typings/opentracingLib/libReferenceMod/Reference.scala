@@ -28,10 +28,8 @@ object Reference {
     referencedContext: js.Function0[opentracingLib.libSpanUnderscoreContextMod.default],
     `type`: js.Function0[java.lang.String]
   ): Reference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_referencedContext")(_referencedContext)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("referencedContext")(referencedContext)
+    val __obj = js.Dynamic.literal(_referencedContext = _referencedContext, _type = _type, referencedContext = referencedContext)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Reference]
   }
 }

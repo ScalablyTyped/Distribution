@@ -141,13 +141,7 @@ object LanguageServiceHost {
     useCaseSensitiveFileNames: js.Function0[scala.Boolean] = null,
     writeFile: js.Function2[/* fileName */ java.lang.String, /* content */ java.lang.String, scala.Unit] = null
   ): LanguageServiceHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCompilationSettings")(getCompilationSettings)
-    __obj.updateDynamic("getCurrentDirectory")(getCurrentDirectory)
-    __obj.updateDynamic("getDefaultLibFileName")(getDefaultLibFileName)
-    __obj.updateDynamic("getScriptFileNames")(getScriptFileNames)
-    __obj.updateDynamic("getScriptSnapshot")(getScriptSnapshot)
-    __obj.updateDynamic("getScriptVersion")(getScriptVersion)
+    val __obj = js.Dynamic.literal(getCompilationSettings = getCompilationSettings, getCurrentDirectory = getCurrentDirectory, getDefaultLibFileName = getDefaultLibFileName, getScriptFileNames = getScriptFileNames, getScriptSnapshot = getScriptSnapshot, getScriptVersion = getScriptVersion)
     if (directoryExists != null) __obj.updateDynamic("directoryExists")(directoryExists)
     if (error != null) __obj.updateDynamic("error")(error)
     if (fileExists != null) __obj.updateDynamic("fileExists")(fileExists)

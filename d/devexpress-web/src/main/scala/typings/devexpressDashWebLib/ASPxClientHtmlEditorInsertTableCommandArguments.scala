@@ -41,18 +41,8 @@ object ASPxClientHtmlEditorInsertTableCommandArguments {
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     summary: java.lang.String
   ): ASPxClientHtmlEditorInsertTableCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("cellPadding")(cellPadding)
-    __obj.updateDynamic("cellSpacing")(cellSpacing)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("isEqualColumnWidth")(isEqualColumnWidth)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("styleSettings")(styleSettings)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(align = align, caption = caption, cellPadding = cellPadding, cellSpacing = cellSpacing, columns = columns, headers = headers, isEqualColumnWidth = isEqualColumnWidth, rows = rows, selectedElement = selectedElement, styleSettings = styleSettings, summary = summary)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertTableCommandArguments]
   }
 }

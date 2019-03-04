@@ -18,10 +18,8 @@ object Deferred {
     reject: js.Function1[js.Any, scala.Unit],
     resolve: js.Function1[R, scala.Unit]
   ): Deferred[R] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promise")(promise)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(promise = promise, reject = reject, resolve = resolve)
+  
     __obj.asInstanceOf[Deferred[R]]
   }
 }

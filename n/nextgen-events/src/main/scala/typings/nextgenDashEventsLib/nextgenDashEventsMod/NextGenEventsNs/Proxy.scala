@@ -26,14 +26,8 @@ object Proxy {
     remoteServices: org.scalablytyped.runtime.StringDictionary[nextgenDashEventsLib.nextgenDashEventsMod.NextGenEvents],
     send: js.Function1[js.Any, scala.Unit]
   ): Proxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addLocalService")(addLocalService)
-    __obj.updateDynamic("addRemoteService")(addRemoteService)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("receive")(receive)
-    __obj.updateDynamic("remoteServices")(remoteServices)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(addLocalService = addLocalService, addRemoteService = addRemoteService, destroy = destroy, push = push, receive = receive, remoteServices = remoteServices, send = send)
+  
     __obj.asInstanceOf[Proxy]
   }
 }

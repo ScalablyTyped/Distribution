@@ -51,11 +51,7 @@ object GraphicsLayerElevationInfo {
     offset: scala.Int | scala.Double = null,
     unit: java.lang.String = null
   ): GraphicsLayerElevationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, mode = mode, propertyIsEnumerable = propertyIsEnumerable)
     if (featureExpressionInfo != null) __obj.updateDynamic("featureExpressionInfo")(featureExpressionInfo)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit)

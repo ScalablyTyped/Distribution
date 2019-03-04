@@ -102,21 +102,8 @@ object XAnimatedImages {
       scala.Unit
     ]
   ): XAnimatedImages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoRepeat")(AutoRepeat)
-    __obj.updateDynamic("ImageSetCount")(ImageSetCount)
-    __obj.updateDynamic("ScaleMode")(ScaleMode)
-    __obj.updateDynamic("StepTime")(StepTime)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("getImageSet")(getImageSet)
-    __obj.updateDynamic("getImageSetCount")(getImageSetCount)
-    __obj.updateDynamic("insertImageSet")(insertImageSet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("removeImageSet")(removeImageSet)
-    __obj.updateDynamic("replaceImageSet")(replaceImageSet)
+    val __obj = js.Dynamic.literal(AutoRepeat = AutoRepeat, ImageSetCount = ImageSetCount, ScaleMode = ScaleMode, StepTime = StepTime, acquire = acquire, addContainerListener = addContainerListener, getImageSet = getImageSet, getImageSetCount = getImageSetCount, insertImageSet = insertImageSet, queryInterface = queryInterface, release = release, removeContainerListener = removeContainerListener, removeImageSet = removeImageSet, replaceImageSet = replaceImageSet)
+  
     __obj.asInstanceOf[XAnimatedImages]
   }
 }

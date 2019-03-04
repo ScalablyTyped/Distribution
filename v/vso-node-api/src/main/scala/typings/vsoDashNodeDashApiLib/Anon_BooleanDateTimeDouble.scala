@@ -26,14 +26,8 @@ object Anon_BooleanDateTimeDouble {
     string: scala.Double,
     treePath: scala.Double
   ): Anon_BooleanDateTimeDouble = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("dateTime")(dateTime)
-    __obj.updateDynamic("double")(double)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("plainText")(plainText)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("treePath")(treePath)
+    val __obj = js.Dynamic.literal(boolean = boolean, dateTime = dateTime, double = double, integer = integer, plainText = plainText, string = string, treePath = treePath)
+  
     __obj.asInstanceOf[Anon_BooleanDateTimeDouble]
   }
 }

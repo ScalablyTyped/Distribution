@@ -22,12 +22,8 @@ object IObjectVersionAndProperties {
     Vault: IVault,
     VersionData: IObjectVersion
   ): IObjectVersionAndProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ObjVer")(ObjVer)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("Vault")(Vault)
-    __obj.updateDynamic("VersionData")(VersionData)
+    val __obj = js.Dynamic.literal(Clone = Clone, ObjVer = ObjVer, Properties = Properties, Vault = Vault, VersionData = VersionData)
+  
     __obj.asInstanceOf[IObjectVersionAndProperties]
   }
 }

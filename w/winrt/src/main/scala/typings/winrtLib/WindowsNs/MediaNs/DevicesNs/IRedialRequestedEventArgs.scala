@@ -12,8 +12,8 @@ trait IRedialRequestedEventArgs extends js.Object {
 object IRedialRequestedEventArgs {
   @scala.inline
   def apply(handled: js.Function0[scala.Unit]): IRedialRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
+    val __obj = js.Dynamic.literal(handled = handled)
+  
     __obj.asInstanceOf[IRedialRequestedEventArgs]
   }
 }

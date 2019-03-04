@@ -22,11 +22,7 @@ object BluetoothRemoteGATTDescriptor {
     writeValue: js.Function1[stdLib.BufferSource, js.Promise[scala.Unit]],
     value: stdLib.DataView = null
   ): BluetoothRemoteGATTDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("characteristic")(characteristic)
-    __obj.updateDynamic("readValue")(readValue)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("writeValue")(writeValue)
+    val __obj = js.Dynamic.literal(characteristic = characteristic, readValue = readValue, uuid = uuid, writeValue = writeValue)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[BluetoothRemoteGATTDescriptor]
   }

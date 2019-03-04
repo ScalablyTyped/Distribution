@@ -11,6 +11,7 @@ trait DrawerProps extends js.Object {
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var getContainer: js.UndefOr[java.lang.String | reactLib.HTMLElement | getContainerFunc] = js.undefined
+  var handler: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
@@ -35,6 +36,7 @@ object DrawerProps {
     closable: js.UndefOr[scala.Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     getContainer: java.lang.String | reactLib.HTMLElement | getContainerFunc = null,
+    handler: reactLib.reactMod.ReactNs.ReactNode = null,
     height: scala.Double | java.lang.String = null,
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -56,6 +58,7 @@ object DrawerProps {
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)

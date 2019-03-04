@@ -18,10 +18,8 @@ object ISymmetricKeyAlgorithmProvider {
     blockLength: scala.Double,
     createSymmetricKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey]
   ): ISymmetricKeyAlgorithmProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithmName")(algorithmName)
-    __obj.updateDynamic("blockLength")(blockLength)
-    __obj.updateDynamic("createSymmetricKey")(createSymmetricKey)
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, blockLength = blockLength, createSymmetricKey = createSymmetricKey)
+  
     __obj.asInstanceOf[ISymmetricKeyAlgorithmProvider]
   }
 }

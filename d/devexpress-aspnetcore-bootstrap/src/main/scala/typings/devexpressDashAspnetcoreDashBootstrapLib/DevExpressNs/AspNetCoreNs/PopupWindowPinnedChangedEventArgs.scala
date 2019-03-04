@@ -12,10 +12,8 @@ trait PopupWindowPinnedChangedEventArgs extends PopupWindowEventArgs {
 object PopupWindowPinnedChangedEventArgs {
   @scala.inline
   def apply(pinned: scala.Boolean, sender: Control, window: BootstrapPopupWindow): PopupWindowPinnedChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pinned")(pinned)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(pinned = pinned, sender = sender, window = window)
+  
     __obj.asInstanceOf[PopupWindowPinnedChangedEventArgs]
   }
 }

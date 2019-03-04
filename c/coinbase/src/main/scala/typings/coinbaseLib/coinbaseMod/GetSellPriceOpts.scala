@@ -15,8 +15,8 @@ trait GetSellPriceOpts extends js.Object {
 object GetSellPriceOpts {
   @scala.inline
   def apply(currencyPair: java.lang.String): GetSellPriceOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currencyPair")(currencyPair)
+    val __obj = js.Dynamic.literal(currencyPair = currencyPair)
+  
     __obj.asInstanceOf[GetSellPriceOpts]
   }
 }

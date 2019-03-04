@@ -34,11 +34,8 @@ object DataPilotFieldReference {
     ReferenceItemType: scala.Double,
     ReferenceType: scala.Double
   ): DataPilotFieldReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ReferenceField")(ReferenceField)
-    __obj.updateDynamic("ReferenceItemName")(ReferenceItemName)
-    __obj.updateDynamic("ReferenceItemType")(ReferenceItemType)
-    __obj.updateDynamic("ReferenceType")(ReferenceType)
+    val __obj = js.Dynamic.literal(ReferenceField = ReferenceField, ReferenceItemName = ReferenceItemName, ReferenceItemType = ReferenceItemType, ReferenceType = ReferenceType)
+  
     __obj.asInstanceOf[DataPilotFieldReference]
   }
 }

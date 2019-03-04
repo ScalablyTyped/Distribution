@@ -16,9 +16,8 @@ object Anon_ProductInfoHeaderValue {
     productInfoHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpProductInfoHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ProductInfoHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productInfoHeaderValue")(productInfoHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(productInfoHeaderValue = productInfoHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ProductInfoHeaderValue]
   }
 }

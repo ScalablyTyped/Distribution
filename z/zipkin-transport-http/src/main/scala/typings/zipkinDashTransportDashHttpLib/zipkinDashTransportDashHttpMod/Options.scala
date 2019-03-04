@@ -20,8 +20,7 @@ object Options {
     httpInterval: scala.Int | scala.Double = null,
     jsonEncoder: zipkinLib.zipkinMod.zipkinNs.JsonEncoder = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (httpInterval != null) __obj.updateDynamic("httpInterval")(httpInterval.asInstanceOf[js.Any])
     if (jsonEncoder != null) __obj.updateDynamic("jsonEncoder")(jsonEncoder)

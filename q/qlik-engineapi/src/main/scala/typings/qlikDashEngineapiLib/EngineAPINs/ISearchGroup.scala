@@ -52,12 +52,8 @@ object ISearchGroup {
     qSearchTermsMatched: js.Array[scala.Double],
     qTotalNumberOfItems: scala.Double
   ): ISearchGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qGroupType")(qGroupType)
-    __obj.updateDynamic("qId")(qId)
-    __obj.updateDynamic("qItems")(qItems)
-    __obj.updateDynamic("qSearchTermsMatched")(qSearchTermsMatched)
-    __obj.updateDynamic("qTotalNumberOfItems")(qTotalNumberOfItems)
+    val __obj = js.Dynamic.literal(qGroupType = qGroupType, qId = qId, qItems = qItems, qSearchTermsMatched = qSearchTermsMatched, qTotalNumberOfItems = qTotalNumberOfItems)
+  
     __obj.asInstanceOf[ISearchGroup]
   }
 }

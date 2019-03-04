@@ -57,13 +57,8 @@ object XSheetPastable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetPastable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("paste")(paste)
-    __obj.updateDynamic("pasteCellRange")(pasteCellRange)
-    __obj.updateDynamic("pasteFormat")(pasteFormat)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, paste = paste, pasteCellRange = pasteCellRange, pasteFormat = pasteFormat, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetPastable]
   }
 }

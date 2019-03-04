@@ -19,8 +19,7 @@ object SectionListData {
     keyExtractor: js.Function2[ItemT, /* index */ scala.Double, java.lang.String] = null,
     renderItem: SectionListRenderItem[ItemT] = null
   ): SectionListData[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (key != null) __obj.updateDynamic("key")(key)

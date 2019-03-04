@@ -45,10 +45,8 @@ object SnapshotsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
     ]
   ): SnapshotsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(getIamPolicy = getIamPolicy, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[SnapshotsResource]
   }
 }

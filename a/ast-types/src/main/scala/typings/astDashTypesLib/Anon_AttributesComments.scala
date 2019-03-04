@@ -28,8 +28,7 @@ object Anon_AttributesComments {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     selfClosing: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AttributesComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

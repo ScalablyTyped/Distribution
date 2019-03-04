@@ -62,8 +62,7 @@ object BucketNotificationArgs {
       ]
     ] = null
   ): BucketNotificationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (lambdaFunctions != null) __obj.updateDynamic("lambdaFunctions")(lambdaFunctions.asInstanceOf[js.Any])
     if (queues != null) __obj.updateDynamic("queues")(queues.asInstanceOf[js.Any])
     if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])

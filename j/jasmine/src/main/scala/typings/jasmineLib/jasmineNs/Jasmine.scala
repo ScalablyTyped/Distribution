@@ -14,10 +14,8 @@ trait Jasmine extends js.Object {
 object Jasmine {
   @scala.inline
   def apply(Spec: Spec, clock: Clock, util: Util): Jasmine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Spec")(Spec)
-    __obj.updateDynamic("clock")(clock)
-    __obj.updateDynamic("util")(util)
+    val __obj = js.Dynamic.literal(Spec = Spec, clock = clock, util = util)
+  
     __obj.asInstanceOf[Jasmine]
   }
 }

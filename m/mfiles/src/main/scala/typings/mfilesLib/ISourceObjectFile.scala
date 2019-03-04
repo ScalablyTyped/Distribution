@@ -20,11 +20,8 @@ object ISourceObjectFile {
     SourceFilePath: java.lang.String,
     Title: java.lang.String
   ): ISourceObjectFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Extension")(Extension)
-    __obj.updateDynamic("SourceFilePath")(SourceFilePath)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(Clone = Clone, Extension = Extension, SourceFilePath = SourceFilePath, Title = Title)
+  
     __obj.asInstanceOf[ISourceObjectFile]
   }
 }

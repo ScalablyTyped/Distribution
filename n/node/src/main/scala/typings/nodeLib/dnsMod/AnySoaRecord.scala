@@ -23,14 +23,8 @@ object AnySoaRecord {
     serial: scala.Double,
     `type`: nodeLib.nodeLibStrings.SOA
   ): AnySoaRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expire")(expire)
-    __obj.updateDynamic("hostmaster")(hostmaster)
-    __obj.updateDynamic("minttl")(minttl)
-    __obj.updateDynamic("nsname")(nsname)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("serial")(serial)
+    val __obj = js.Dynamic.literal(expire = expire, hostmaster = hostmaster, minttl = minttl, nsname = nsname, refresh = refresh, retry = retry, serial = serial)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnySoaRecord]
   }
 }

@@ -22,12 +22,8 @@ object Anon_CanvasId {
     x: scala.Double,
     y: scala.Double
   ): Anon_CanvasId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvasId")(canvasId)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(canvasId = canvasId, height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_CanvasId]
   }
 }

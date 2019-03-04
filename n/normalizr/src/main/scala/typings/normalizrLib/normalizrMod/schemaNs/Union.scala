@@ -13,8 +13,8 @@ trait Union
 object Union {
   @scala.inline
   def apply(define: js.Function1[normalizrLib.normalizrMod.Schema, scala.Unit]): Union = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("define")(define)
+    val __obj = js.Dynamic.literal(define = define)
+  
     __obj.asInstanceOf[Union]
   }
 }

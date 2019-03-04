@@ -19,9 +19,7 @@ object Anon_Eol {
     text: java.lang.String,
     eol: monacoDashEditorLib.monacoDashEditorMod.editorNs.EndOfLineSequence = null
   ): Anon_Eol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(range = range, text = text)
     if (eol != null) __obj.updateDynamic("eol")(eol)
     __obj.asInstanceOf[Anon_Eol]
   }

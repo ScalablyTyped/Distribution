@@ -12,8 +12,8 @@ trait Anon_WIFI extends js.Object {
 object Anon_WIFI {
   @scala.inline
   def apply(WI_FI: chromeDashAppsLib.chromeDashAppsLibStrings.WiFi): Anon_WIFI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WI_FI")(WI_FI)
+    val __obj = js.Dynamic.literal(WI_FI = WI_FI)
+  
     __obj.asInstanceOf[Anon_WIFI]
   }
 }

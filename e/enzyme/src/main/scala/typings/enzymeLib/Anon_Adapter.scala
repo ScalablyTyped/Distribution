@@ -23,8 +23,7 @@ object Anon_Adapter {
     adapter: enzymeLib.enzymeMod.EnzymeAdapter,
     disableLifecycleMethods: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Adapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapter")(adapter)
+    val __obj = js.Dynamic.literal(adapter = adapter)
     if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods)
     __obj.asInstanceOf[Anon_Adapter]
   }

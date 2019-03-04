@@ -12,8 +12,8 @@ trait IAsideProvider extends js.Object {
 object IAsideProvider {
   @scala.inline
   def apply(defaults: IAsideOptions): IAsideProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[IAsideProvider]
   }
 }

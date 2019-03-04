@@ -48,12 +48,8 @@ object XDefaultProperty {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDefaultProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultPropertyName")(DefaultPropertyName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultPropertyName")(getDefaultPropertyName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DefaultPropertyName = DefaultPropertyName, acquire = acquire, getDefaultPropertyName = getDefaultPropertyName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDefaultProperty]
   }
 }

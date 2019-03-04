@@ -209,10 +209,7 @@ object MessageDefinition {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): MessageDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(date = date, event = event, status = status)
     if (_category != null) __obj.updateDynamic("_category")(_category)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)

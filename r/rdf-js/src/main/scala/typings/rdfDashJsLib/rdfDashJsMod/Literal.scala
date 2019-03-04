@@ -43,12 +43,8 @@ object Literal {
     termType: rdfDashJsLib.rdfDashJsLibStrings.Literal,
     value: java.lang.String
   ): Literal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datatype")(datatype)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("termType")(termType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(datatype = datatype, equals = equals, language = language, termType = termType, value = value)
+  
     __obj.asInstanceOf[Literal]
   }
 }

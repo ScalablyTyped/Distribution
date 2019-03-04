@@ -32,11 +32,8 @@ object GitItemRequestData {
     itemDescriptors: js.Array[GitItemDescriptor],
     latestProcessedChange: scala.Boolean
   ): GitItemRequestData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeContentMetadata")(includeContentMetadata)
-    __obj.updateDynamic("includeLinks")(includeLinks)
-    __obj.updateDynamic("itemDescriptors")(itemDescriptors)
-    __obj.updateDynamic("latestProcessedChange")(latestProcessedChange)
+    val __obj = js.Dynamic.literal(includeContentMetadata = includeContentMetadata, includeLinks = includeLinks, itemDescriptors = itemDescriptors, latestProcessedChange = latestProcessedChange)
+  
     __obj.asInstanceOf[GitItemRequestData]
   }
 }

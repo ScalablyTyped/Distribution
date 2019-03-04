@@ -37,12 +37,8 @@ object TaskAgentUpdate {
     sourceVersion: PackageVersion,
     targetVersion: PackageVersion
   ): TaskAgentUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentState")(currentState)
-    __obj.updateDynamic("requestTime")(requestTime)
-    __obj.updateDynamic("requestedBy")(requestedBy)
-    __obj.updateDynamic("sourceVersion")(sourceVersion)
-    __obj.updateDynamic("targetVersion")(targetVersion)
+    val __obj = js.Dynamic.literal(currentState = currentState, requestTime = requestTime, requestedBy = requestedBy, sourceVersion = sourceVersion, targetVersion = targetVersion)
+  
     __obj.asInstanceOf[TaskAgentUpdate]
   }
 }

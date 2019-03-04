@@ -28,15 +28,8 @@ object IVaultScheduledJobManagementOperations {
     RemoveScheduledJob: js.Function1[scala.Double, scala.Unit],
     StartScheduledJob: js.Function1[scala.Double, scala.Unit]
   ): IVaultScheduledJobManagementOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddScheduledJob")(AddScheduledJob)
-    __obj.updateDynamic("CancelScheduledJob")(CancelScheduledJob)
-    __obj.updateDynamic("GetScheduledJob")(GetScheduledJob)
-    __obj.updateDynamic("GetScheduledJobRunInfo")(GetScheduledJobRunInfo)
-    __obj.updateDynamic("GetScheduledJobs")(GetScheduledJobs)
-    __obj.updateDynamic("ModifyScheduledJob")(ModifyScheduledJob)
-    __obj.updateDynamic("RemoveScheduledJob")(RemoveScheduledJob)
-    __obj.updateDynamic("StartScheduledJob")(StartScheduledJob)
+    val __obj = js.Dynamic.literal(AddScheduledJob = AddScheduledJob, CancelScheduledJob = CancelScheduledJob, GetScheduledJob = GetScheduledJob, GetScheduledJobRunInfo = GetScheduledJobRunInfo, GetScheduledJobs = GetScheduledJobs, ModifyScheduledJob = ModifyScheduledJob, RemoveScheduledJob = RemoveScheduledJob, StartScheduledJob = StartScheduledJob)
+  
     __obj.asInstanceOf[IVaultScheduledJobManagementOperations]
   }
 }

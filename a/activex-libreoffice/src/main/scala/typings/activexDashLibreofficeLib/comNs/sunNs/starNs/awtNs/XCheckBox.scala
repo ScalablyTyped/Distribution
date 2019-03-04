@@ -47,17 +47,8 @@ object XCheckBox {
     setLabel: js.Function1[java.lang.String, scala.Unit],
     setState: js.Function1[scala.Double, scala.Unit]
   ): XCheckBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addItemListener")(addItemListener)
-    __obj.updateDynamic("enableTriState")(enableTriState)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeItemListener")(removeItemListener)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setState")(setState)
+    val __obj = js.Dynamic.literal(State = State, acquire = acquire, addItemListener = addItemListener, enableTriState = enableTriState, getState = getState, queryInterface = queryInterface, release = release, removeItemListener = removeItemListener, setLabel = setLabel, setState = setState)
+  
     __obj.asInstanceOf[XCheckBox]
   }
 }

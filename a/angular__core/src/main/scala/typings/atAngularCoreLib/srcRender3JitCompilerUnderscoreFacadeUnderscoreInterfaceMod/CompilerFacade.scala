@@ -26,14 +26,8 @@ object CompilerFacade {
     compileNgModule: js.Function3[CoreEnvironment, java.lang.String, R3NgModuleMetadataFacade, js.Any],
     compilePipe: js.Function3[CoreEnvironment, java.lang.String, R3PipeMetadataFacade, js.Any]
   ): CompilerFacade = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("R3ResolvedDependencyType")(R3ResolvedDependencyType)
-    __obj.updateDynamic("compileComponent")(compileComponent)
-    __obj.updateDynamic("compileDirective")(compileDirective)
-    __obj.updateDynamic("compileInjectable")(compileInjectable)
-    __obj.updateDynamic("compileInjector")(compileInjector)
-    __obj.updateDynamic("compileNgModule")(compileNgModule)
-    __obj.updateDynamic("compilePipe")(compilePipe)
+    val __obj = js.Dynamic.literal(R3ResolvedDependencyType = R3ResolvedDependencyType, compileComponent = compileComponent, compileDirective = compileDirective, compileInjectable = compileInjectable, compileInjector = compileInjector, compileNgModule = compileNgModule, compilePipe = compilePipe)
+  
     __obj.asInstanceOf[CompilerFacade]
   }
 }

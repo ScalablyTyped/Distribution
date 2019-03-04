@@ -12,8 +12,8 @@ trait Anon_Async extends js.Object {
 object Anon_Async {
   @scala.inline
   def apply(async: scala.Boolean): Anon_Async = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
+    val __obj = js.Dynamic.literal(async = async)
+  
     __obj.asInstanceOf[Anon_Async]
   }
 }

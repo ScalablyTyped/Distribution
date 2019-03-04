@@ -23,10 +23,8 @@ trait SupportedExtension extends js.Object {
 object SupportedExtension {
   @scala.inline
   def apply(extension: java.lang.String, publisher: java.lang.String, version: java.lang.String): SupportedExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(extension = extension, publisher = publisher, version = version)
+  
     __obj.asInstanceOf[SupportedExtension]
   }
 }

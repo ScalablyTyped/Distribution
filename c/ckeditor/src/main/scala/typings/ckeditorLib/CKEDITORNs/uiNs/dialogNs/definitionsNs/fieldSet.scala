@@ -13,8 +13,7 @@ trait fieldSet extends js.Object {
 object fieldSet {
   @scala.inline
   def apply(children: js.Array[_], label: java.lang.String = null): fieldSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[fieldSet]
   }

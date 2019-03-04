@@ -22,12 +22,8 @@ object MUIDataTableTextLabelsToolbar {
     search: java.lang.String,
     viewColumns: java.lang.String
   ): MUIDataTableTextLabelsToolbar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downloadCsv")(downloadCsv)
-    __obj.updateDynamic("filterTable")(filterTable)
-    __obj.updateDynamic("print")(print)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("viewColumns")(viewColumns)
+    val __obj = js.Dynamic.literal(downloadCsv = downloadCsv, filterTable = filterTable, print = print, search = search, viewColumns = viewColumns)
+  
     __obj.asInstanceOf[MUIDataTableTextLabelsToolbar]
   }
 }

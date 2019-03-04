@@ -22,12 +22,8 @@ object WordNetLookupResults {
     synonyms: js.Array[java.lang.String],
     synsetOffset: scala.Double
   ): WordNetLookupResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gloss")(gloss)
-    __obj.updateDynamic("lemma")(lemma)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("synonyms")(synonyms)
-    __obj.updateDynamic("synsetOffset")(synsetOffset)
+    val __obj = js.Dynamic.literal(gloss = gloss, lemma = lemma, pos = pos, synonyms = synonyms, synsetOffset = synsetOffset)
+  
     __obj.asInstanceOf[WordNetLookupResults]
   }
 }

@@ -62,12 +62,8 @@ object TriggersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
     ]
   ): TriggersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch)
+  
     __obj.asInstanceOf[TriggersResource]
   }
 }

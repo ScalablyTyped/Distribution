@@ -18,8 +18,8 @@ object ReportsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ResultTable]
     ]
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[ReportsResource]
   }
 }

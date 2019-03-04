@@ -55,27 +55,8 @@ object TorrentProvider {
     supportTokenAuthentification: scala.Boolean,
     torrentDetailsSelector: java.lang.String
   ): TorrentProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoFixUnstableUrl")(autoFixUnstableUrl)
-    __obj.updateDynamic("baseUrl")(baseUrl)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("defaultCategory")(defaultCategory)
-    __obj.updateDynamic("enableCloudFareBypass")(enableCloudFareBypass)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("itemSelectors")(itemSelectors)
-    __obj.updateDynamic("itemsSelector")(itemsSelector)
-    __obj.updateDynamic("loginQueryString")(loginQueryString)
-    __obj.updateDynamic("loginUrl")(loginUrl)
-    __obj.updateDynamic("magnetSelector")(magnetSelector)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("paginateSelector")(paginateSelector)
-    __obj.updateDynamic("requireAuthentification")(requireAuthentification)
-    __obj.updateDynamic("resultsPerPageCount")(resultsPerPageCount)
-    __obj.updateDynamic("searchUrl")(searchUrl)
-    __obj.updateDynamic("supportCookiesAuthentification")(supportCookiesAuthentification)
-    __obj.updateDynamic("supportCredentialsAuthentification")(supportCredentialsAuthentification)
-    __obj.updateDynamic("supportTokenAuthentification")(supportTokenAuthentification)
-    __obj.updateDynamic("torrentDetailsSelector")(torrentDetailsSelector)
+    val __obj = js.Dynamic.literal(autoFixUnstableUrl = autoFixUnstableUrl, baseUrl = baseUrl, categories = categories, defaultCategory = defaultCategory, enableCloudFareBypass = enableCloudFareBypass, headers = headers, itemSelectors = itemSelectors, itemsSelector = itemsSelector, loginQueryString = loginQueryString, loginUrl = loginUrl, magnetSelector = magnetSelector, name = name, paginateSelector = paginateSelector, requireAuthentification = requireAuthentification, resultsPerPageCount = resultsPerPageCount, searchUrl = searchUrl, supportCookiesAuthentification = supportCookiesAuthentification, supportCredentialsAuthentification = supportCredentialsAuthentification, supportTokenAuthentification = supportTokenAuthentification, torrentDetailsSelector = torrentDetailsSelector)
+  
     __obj.asInstanceOf[TorrentProvider]
   }
 }

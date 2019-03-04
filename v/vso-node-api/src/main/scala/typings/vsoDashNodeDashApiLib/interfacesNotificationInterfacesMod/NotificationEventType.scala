@@ -54,19 +54,8 @@ object NotificationEventType {
     supportedScopes: js.Array[java.lang.String],
     url: java.lang.String
   ): NotificationEventType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("customSubscriptionsAllowed")(customSubscriptionsAllowed)
-    __obj.updateDynamic("eventPublisher")(eventPublisher)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("hasInitiator")(hasInitiator)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("roles")(roles)
-    __obj.updateDynamic("supportedScopes")(supportedScopes)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(category = category, color = color, customSubscriptionsAllowed = customSubscriptionsAllowed, eventPublisher = eventPublisher, fields = fields, hasInitiator = hasInitiator, icon = icon, id = id, name = name, roles = roles, supportedScopes = supportedScopes, url = url)
+  
     __obj.asInstanceOf[NotificationEventType]
   }
 }

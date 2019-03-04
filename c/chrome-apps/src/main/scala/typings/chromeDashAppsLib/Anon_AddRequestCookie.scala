@@ -217,25 +217,8 @@ object Anon_AddRequestCookie {
       chromeDashAppsLib.chromeNs.webViewRequestNs.SetRequestHeader
     ]
   ): Anon_AddRequestCookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddRequestCookie")(AddRequestCookie)
-    __obj.updateDynamic("AddResponseCookie")(AddResponseCookie)
-    __obj.updateDynamic("AddResponseHeader")(AddResponseHeader)
-    __obj.updateDynamic("CancelRequest")(CancelRequest)
-    __obj.updateDynamic("EditRequestCookie")(EditRequestCookie)
-    __obj.updateDynamic("EditResponseCookie")(EditResponseCookie)
-    __obj.updateDynamic("IgnoreRules")(IgnoreRules)
-    __obj.updateDynamic("RedirectByRegEx")(RedirectByRegEx)
-    __obj.updateDynamic("RedirectRequest")(RedirectRequest)
-    __obj.updateDynamic("RedirectToEmptyDocument")(RedirectToEmptyDocument)
-    __obj.updateDynamic("RedirectToTransparentImage")(RedirectToTransparentImage)
-    __obj.updateDynamic("RemoveRequestCookie")(RemoveRequestCookie)
-    __obj.updateDynamic("RemoveRequestHeader")(RemoveRequestHeader)
-    __obj.updateDynamic("RemoveResponseCookie")(RemoveResponseCookie)
-    __obj.updateDynamic("RemoveResponseHeader")(RemoveResponseHeader)
-    __obj.updateDynamic("RequestMatcher")(RequestMatcher)
-    __obj.updateDynamic("SendMessageToExtension")(SendMessageToExtension)
-    __obj.updateDynamic("SetRequestHeader")(SetRequestHeader)
+    val __obj = js.Dynamic.literal(AddRequestCookie = AddRequestCookie, AddResponseCookie = AddResponseCookie, AddResponseHeader = AddResponseHeader, CancelRequest = CancelRequest, EditRequestCookie = EditRequestCookie, EditResponseCookie = EditResponseCookie, IgnoreRules = IgnoreRules, RedirectByRegEx = RedirectByRegEx, RedirectRequest = RedirectRequest, RedirectToEmptyDocument = RedirectToEmptyDocument, RedirectToTransparentImage = RedirectToTransparentImage, RemoveRequestCookie = RemoveRequestCookie, RemoveRequestHeader = RemoveRequestHeader, RemoveResponseCookie = RemoveResponseCookie, RemoveResponseHeader = RemoveResponseHeader, RequestMatcher = RequestMatcher, SendMessageToExtension = SendMessageToExtension, SetRequestHeader = SetRequestHeader)
+  
     __obj.asInstanceOf[Anon_AddRequestCookie]
   }
 }

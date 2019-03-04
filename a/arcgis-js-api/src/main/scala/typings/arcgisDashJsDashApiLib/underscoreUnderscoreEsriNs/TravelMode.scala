@@ -51,10 +51,7 @@ object TravelMode {
     name: java.lang.String = null,
     timeAttributeName: java.lang.String = null
   ): TravelMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)
     if (impedanceAttributeName != null) __obj.updateDynamic("impedanceAttributeName")(impedanceAttributeName)

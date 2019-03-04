@@ -52,25 +52,8 @@ object LocaleDataItem {
     timeSeparator: java.lang.String,
     unoID: java.lang.String
   ): LocaleDataItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LongDateDayOfWeekSeparator")(LongDateDayOfWeekSeparator)
-    __obj.updateDynamic("LongDateDaySeparator")(LongDateDaySeparator)
-    __obj.updateDynamic("LongDateMonthSeparator")(LongDateMonthSeparator)
-    __obj.updateDynamic("LongDateYearSeparator")(LongDateYearSeparator)
-    __obj.updateDynamic("dateSeparator")(dateSeparator)
-    __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    __obj.updateDynamic("doubleQuotationEnd")(doubleQuotationEnd)
-    __obj.updateDynamic("doubleQuotationStart")(doubleQuotationStart)
-    __obj.updateDynamic("listSeparator")(listSeparator)
-    __obj.updateDynamic("measurementSystem")(measurementSystem)
-    __obj.updateDynamic("quotationEnd")(quotationEnd)
-    __obj.updateDynamic("quotationStart")(quotationStart)
-    __obj.updateDynamic("thousandSeparator")(thousandSeparator)
-    __obj.updateDynamic("time100SecSeparator")(time100SecSeparator)
-    __obj.updateDynamic("timeAM")(timeAM)
-    __obj.updateDynamic("timePM")(timePM)
-    __obj.updateDynamic("timeSeparator")(timeSeparator)
-    __obj.updateDynamic("unoID")(unoID)
+    val __obj = js.Dynamic.literal(LongDateDayOfWeekSeparator = LongDateDayOfWeekSeparator, LongDateDaySeparator = LongDateDaySeparator, LongDateMonthSeparator = LongDateMonthSeparator, LongDateYearSeparator = LongDateYearSeparator, dateSeparator = dateSeparator, decimalSeparator = decimalSeparator, doubleQuotationEnd = doubleQuotationEnd, doubleQuotationStart = doubleQuotationStart, listSeparator = listSeparator, measurementSystem = measurementSystem, quotationEnd = quotationEnd, quotationStart = quotationStart, thousandSeparator = thousandSeparator, time100SecSeparator = time100SecSeparator, timeAM = timeAM, timePM = timePM, timeSeparator = timeSeparator, unoID = unoID)
+  
     __obj.asInstanceOf[LocaleDataItem]
   }
 }

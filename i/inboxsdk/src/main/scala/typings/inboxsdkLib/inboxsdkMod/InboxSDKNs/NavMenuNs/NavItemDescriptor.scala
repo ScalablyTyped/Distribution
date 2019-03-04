@@ -36,8 +36,7 @@ object NavItemDescriptor {
     routeParams: js.Object = null,
     `type`: NavItemTypes = null
   ): NavItemDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (accessory != null) __obj.updateDynamic("accessory")(accessory.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (expanderForegroundColor != null) __obj.updateDynamic("expanderForegroundColor")(expanderForegroundColor)

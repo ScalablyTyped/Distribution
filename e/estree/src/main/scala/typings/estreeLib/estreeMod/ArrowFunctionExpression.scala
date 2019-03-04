@@ -27,10 +27,8 @@ object ArrowFunctionExpression {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): ArrowFunctionExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expression = expression, params = params)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

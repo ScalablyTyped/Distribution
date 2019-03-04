@@ -28,15 +28,8 @@ object DropdownClasses {
     single: scala.Boolean,
     unsearchable: scala.Boolean
   ): DropdownClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("rtl")(rtl)
-    __obj.updateDynamic("searchable")(searchable)
-    __obj.updateDynamic("searching")(searching)
-    __obj.updateDynamic("single")(single)
-    __obj.updateDynamic("unsearchable")(unsearchable)
+    val __obj = js.Dynamic.literal(disabled = disabled, loading = loading, open = open, rtl = rtl, searchable = searchable, searching = searching, single = single, unsearchable = unsearchable)
+  
     __obj.asInstanceOf[DropdownClasses]
   }
 }

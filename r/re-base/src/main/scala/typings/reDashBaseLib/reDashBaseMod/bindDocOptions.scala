@@ -35,8 +35,7 @@ object bindDocOptions {
     state: java.lang.String = null,
     `then`: js.Function0[scala.Unit] = null
   ): bindDocOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (state != null) __obj.updateDynamic("state")(state)
     if (`then` != null) __obj.updateDynamic("then")(`then`)

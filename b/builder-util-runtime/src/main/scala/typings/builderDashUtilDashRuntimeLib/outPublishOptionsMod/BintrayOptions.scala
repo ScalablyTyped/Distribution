@@ -57,8 +57,7 @@ object BintrayOptions {
     updaterCacheDirName: java.lang.String = null,
     user: java.lang.String = null
   ): BintrayOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(provider = provider)
     if (component != null) __obj.updateDynamic("component")(component)
     if (distribution != null) __obj.updateDynamic("distribution")(distribution)
     if (owner != null) __obj.updateDynamic("owner")(owner)

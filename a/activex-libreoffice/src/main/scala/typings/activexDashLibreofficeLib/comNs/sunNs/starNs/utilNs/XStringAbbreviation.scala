@@ -36,11 +36,8 @@ object XStringAbbreviation {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStringAbbreviation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviateString")(abbreviateString)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(abbreviateString = abbreviateString, acquire = acquire, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStringAbbreviation]
   }
 }

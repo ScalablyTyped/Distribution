@@ -36,14 +36,7 @@ object AudioDeviceInfo {
     streamType: StreamType,
     stableDeviceId: java.lang.String = null
   ): AudioDeviceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("deviceType")(deviceType)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("streamType")(streamType)
+    val __obj = js.Dynamic.literal(deviceName = deviceName, deviceType = deviceType, displayName = displayName, id = id, isActive = isActive, level = level, streamType = streamType)
     if (stableDeviceId != null) __obj.updateDynamic("stableDeviceId")(stableDeviceId)
     __obj.asInstanceOf[AudioDeviceInfo]
   }

@@ -34,12 +34,8 @@ object SQLException {
     NextException: js.Any,
     SQLState: java.lang.String
   ): SQLException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrorCode")(ErrorCode)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("NextException")(NextException)
-    __obj.updateDynamic("SQLState")(SQLState)
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, Message = Message, NextException = NextException, SQLState = SQLState)
+  
     __obj.asInstanceOf[SQLException]
   }
 }

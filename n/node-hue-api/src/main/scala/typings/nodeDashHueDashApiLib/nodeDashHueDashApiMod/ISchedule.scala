@@ -20,11 +20,8 @@ object ISchedule {
     name: java.lang.String,
     time: stdLib.Date
   ): ISchedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(command = command, description = description, name = name, time = time)
+  
     __obj.asInstanceOf[ISchedule]
   }
 }

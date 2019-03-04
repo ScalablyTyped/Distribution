@@ -30,16 +30,8 @@ object FieldStatsResponseField {
     sum_doc_freq: scala.Double,
     sum_total_term_freq: scala.Double
   ): FieldStatsResponseField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("density")(density)
-    __obj.updateDynamic("doc_count")(doc_count)
-    __obj.updateDynamic("is_aggregatable")(is_aggregatable)
-    __obj.updateDynamic("is_searchable")(is_searchable)
-    __obj.updateDynamic("max_doc")(max_doc)
-    __obj.updateDynamic("max_value")(max_value)
-    __obj.updateDynamic("min_value")(min_value)
-    __obj.updateDynamic("sum_doc_freq")(sum_doc_freq)
-    __obj.updateDynamic("sum_total_term_freq")(sum_total_term_freq)
+    val __obj = js.Dynamic.literal(density = density, doc_count = doc_count, is_aggregatable = is_aggregatable, is_searchable = is_searchable, max_doc = max_doc, max_value = max_value, min_value = min_value, sum_doc_freq = sum_doc_freq, sum_total_term_freq = sum_total_term_freq)
+  
     __obj.asInstanceOf[FieldStatsResponseField]
   }
 }

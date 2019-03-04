@@ -38,9 +38,7 @@ object FileStatusInfo {
     ],
     error: java.lang.String = null
   ): FileStatusInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileEntry")(fileEntry)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fileEntry = fileEntry, status = status.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[FileStatusInfo]
   }

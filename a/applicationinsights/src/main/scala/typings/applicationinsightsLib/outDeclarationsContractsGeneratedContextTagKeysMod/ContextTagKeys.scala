@@ -135,30 +135,8 @@ object ContextTagKeys {
     userAuthUserId: java.lang.String,
     userId: java.lang.String
   ): ContextTagKeys = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationVersion")(applicationVersion)
-    __obj.updateDynamic("cloudRole")(cloudRole)
-    __obj.updateDynamic("cloudRoleInstance")(cloudRoleInstance)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("deviceLocale")(deviceLocale)
-    __obj.updateDynamic("deviceModel")(deviceModel)
-    __obj.updateDynamic("deviceOEMName")(deviceOEMName)
-    __obj.updateDynamic("deviceOSVersion")(deviceOSVersion)
-    __obj.updateDynamic("deviceType")(deviceType)
-    __obj.updateDynamic("internalAgentVersion")(internalAgentVersion)
-    __obj.updateDynamic("internalNodeName")(internalNodeName)
-    __obj.updateDynamic("internalSdkVersion")(internalSdkVersion)
-    __obj.updateDynamic("locationIp")(locationIp)
-    __obj.updateDynamic("operationCorrelationVector")(operationCorrelationVector)
-    __obj.updateDynamic("operationId")(operationId)
-    __obj.updateDynamic("operationName")(operationName)
-    __obj.updateDynamic("operationParentId")(operationParentId)
-    __obj.updateDynamic("operationSyntheticSource")(operationSyntheticSource)
-    __obj.updateDynamic("sessionId")(sessionId)
-    __obj.updateDynamic("sessionIsFirst")(sessionIsFirst)
-    __obj.updateDynamic("userAccountId")(userAccountId)
-    __obj.updateDynamic("userAuthUserId")(userAuthUserId)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(applicationVersion = applicationVersion, cloudRole = cloudRole, cloudRoleInstance = cloudRoleInstance, deviceId = deviceId, deviceLocale = deviceLocale, deviceModel = deviceModel, deviceOEMName = deviceOEMName, deviceOSVersion = deviceOSVersion, deviceType = deviceType, internalAgentVersion = internalAgentVersion, internalNodeName = internalNodeName, internalSdkVersion = internalSdkVersion, locationIp = locationIp, operationCorrelationVector = operationCorrelationVector, operationId = operationId, operationName = operationName, operationParentId = operationParentId, operationSyntheticSource = operationSyntheticSource, sessionId = sessionId, sessionIsFirst = sessionIsFirst, userAccountId = userAccountId, userAuthUserId = userAuthUserId, userId = userId)
+  
     __obj.asInstanceOf[ContextTagKeys]
   }
 }

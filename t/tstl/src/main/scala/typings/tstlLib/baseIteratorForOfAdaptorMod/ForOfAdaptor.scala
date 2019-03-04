@@ -19,10 +19,10 @@ class ForOfAdaptor[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwa
   /**
     * @hidden
     */
-  var `it_`: js.Any = js.native
+  var it_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `last_`: js.Any = js.native
+  var last_ : js.Any = js.native
 }
 

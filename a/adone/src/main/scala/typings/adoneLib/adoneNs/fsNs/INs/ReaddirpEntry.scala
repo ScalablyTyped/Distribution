@@ -42,13 +42,8 @@ object ReaddirpEntry {
     path: java.lang.String,
     stat: Stats
   ): ReaddirpEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullParentDir")(fullParentDir)
-    __obj.updateDynamic("fullPath")(fullPath)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentDir")(parentDir)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("stat")(stat)
+    val __obj = js.Dynamic.literal(fullParentDir = fullParentDir, fullPath = fullPath, name = name, parentDir = parentDir, path = path, stat = stat)
+  
     __obj.asInstanceOf[ReaddirpEntry]
   }
 }

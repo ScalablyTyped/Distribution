@@ -124,12 +124,8 @@ object Composition {
     section: js.Array[CompositionSection] = null,
     text: Narrative = null
   ): Composition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(author = author, date = date, status = status, subject = subject, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (_confidentiality != null) __obj.updateDynamic("_confidentiality")(_confidentiality)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_id != null) __obj.updateDynamic("_id")(_id)

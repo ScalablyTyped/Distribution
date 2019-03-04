@@ -21,8 +21,8 @@ trait MediaTrackCapabilities extends js.Object {
 object MediaTrackCapabilities {
   @scala.inline
   def apply(latency: scala.Double | webrtcLib.W3CNs.DoubleRange): MediaTrackCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(latency = latency.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MediaTrackCapabilities]
   }
 }

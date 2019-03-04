@@ -20,11 +20,8 @@ object IpMessagingGrantPayload {
     push_credential_sid: java.lang.String,
     service_sid: java.lang.String
   ): IpMessagingGrantPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deployment_role_sid")(deployment_role_sid)
-    __obj.updateDynamic("endpoint_id")(endpoint_id)
-    __obj.updateDynamic("push_credential_sid")(push_credential_sid)
-    __obj.updateDynamic("service_sid")(service_sid)
+    val __obj = js.Dynamic.literal(deployment_role_sid = deployment_role_sid, endpoint_id = endpoint_id, push_credential_sid = push_credential_sid, service_sid = service_sid)
+  
     __obj.asInstanceOf[IpMessagingGrantPayload]
   }
 }

@@ -24,13 +24,8 @@ object RawEventNames {
     fullscreenerror: java.lang.String,
     requestFullscreen: java.lang.String
   ): RawEventNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exitFullscreen")(exitFullscreen)
-    __obj.updateDynamic("fullscreenElement")(fullscreenElement)
-    __obj.updateDynamic("fullscreenEnabled")(fullscreenEnabled)
-    __obj.updateDynamic("fullscreenchange")(fullscreenchange)
-    __obj.updateDynamic("fullscreenerror")(fullscreenerror)
-    __obj.updateDynamic("requestFullscreen")(requestFullscreen)
+    val __obj = js.Dynamic.literal(exitFullscreen = exitFullscreen, fullscreenElement = fullscreenElement, fullscreenEnabled = fullscreenEnabled, fullscreenchange = fullscreenchange, fullscreenerror = fullscreenerror, requestFullscreen = requestFullscreen)
+  
     __obj.asInstanceOf[RawEventNames]
   }
 }

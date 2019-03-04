@@ -24,10 +24,7 @@ object App {
     org: Org = null,
     repo_url: java.lang.String = null
   ): App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(id = id, name = name, slug = slug)
     if (association != null) __obj.updateDynamic("association")(association)
     if (org != null) __obj.updateDynamic("org")(org)
     if (repo_url != null) __obj.updateDynamic("repo_url")(repo_url)

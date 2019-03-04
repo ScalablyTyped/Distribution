@@ -19,9 +19,8 @@ trait GetAccountAliasResult extends js.Object {
 object GetAccountAliasResult {
   @scala.inline
   def apply(accountAlias: java.lang.String, id: java.lang.String): GetAccountAliasResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountAlias")(accountAlias)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(accountAlias = accountAlias, id = id)
+  
     __obj.asInstanceOf[GetAccountAliasResult]
   }
 }

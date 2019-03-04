@@ -22,12 +22,8 @@ object IDatagramSocketMessageReceivedEventArgs {
     remoteAddress: winrtLib.WindowsNs.NetworkingNs.HostName,
     remotePort: java.lang.String
   ): IDatagramSocketMessageReceivedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDataReader")(getDataReader)
-    __obj.updateDynamic("getDataStream")(getDataStream)
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("remotePort")(remotePort)
+    val __obj = js.Dynamic.literal(getDataReader = getDataReader, getDataStream = getDataStream, localAddress = localAddress, remoteAddress = remoteAddress, remotePort = remotePort)
+  
     __obj.asInstanceOf[IDatagramSocketMessageReceivedEventArgs]
   }
 }

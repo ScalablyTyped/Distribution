@@ -18,9 +18,7 @@ object Summary {
     symbol: T,
     `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeSummary = null
   ): Summary[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metadata = metadata, symbol = symbol.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Summary[T]]
   }

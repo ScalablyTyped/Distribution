@@ -25,11 +25,8 @@ object ObjectExpression {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): ObjectExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, properties = properties, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

@@ -58,18 +58,8 @@ object XFolderPicker {
     setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XFolderPicker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Directory")(Directory)
-    __obj.updateDynamic("DisplayDirectory")(DisplayDirectory)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getDirectory")(getDirectory)
-    __obj.updateDynamic("getDisplayDirectory")(getDisplayDirectory)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDescription")(setDescription)
-    __obj.updateDynamic("setDisplayDirectory")(setDisplayDirectory)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(Directory = Directory, DisplayDirectory = DisplayDirectory, acquire = acquire, execute = execute, getDirectory = getDirectory, getDisplayDirectory = getDisplayDirectory, queryInterface = queryInterface, release = release, setDescription = setDescription, setDisplayDirectory = setDisplayDirectory, setTitle = setTitle)
+  
     __obj.asInstanceOf[XFolderPicker]
   }
 }

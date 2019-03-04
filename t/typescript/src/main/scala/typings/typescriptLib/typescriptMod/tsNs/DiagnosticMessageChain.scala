@@ -26,10 +26,7 @@ object DiagnosticMessageChain {
     messageText: java.lang.String,
     next: DiagnosticMessageChain = null
   ): DiagnosticMessageChain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("messageText")(messageText)
+    val __obj = js.Dynamic.literal(category = category, code = code, messageText = messageText)
     if (next != null) __obj.updateDynamic("next")(next)
     __obj.asInstanceOf[DiagnosticMessageChain]
   }

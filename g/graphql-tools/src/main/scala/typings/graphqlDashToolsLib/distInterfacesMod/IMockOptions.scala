@@ -18,8 +18,7 @@ object IMockOptions {
     mocks: IMocks = null,
     preserveResolvers: js.UndefOr[scala.Boolean] = js.undefined
   ): IMockOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (mocks != null) __obj.updateDynamic("mocks")(mocks)
     if (!js.isUndefined(preserveResolvers)) __obj.updateDynamic("preserveResolvers")(preserveResolvers)
     __obj.asInstanceOf[IMockOptions]

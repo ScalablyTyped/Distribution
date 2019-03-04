@@ -51,12 +51,7 @@ object IdentityManagerRegisterTokenProperties {
     ssl: js.UndefOr[scala.Boolean] = js.undefined,
     userId: java.lang.String = null
   ): IdentityManagerRegisterTokenProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, server = server, token = token)
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
     if (userId != null) __obj.updateDynamic("userId")(userId)

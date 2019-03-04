@@ -20,10 +20,8 @@ object Tag {
     techTypes: js.Array[java.lang.String],
     `type`: java.lang.String
   ): Tag = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("techTypes")(techTypes)
+    val __obj = js.Dynamic.literal(date = date, id = id, techTypes = techTypes)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Tag]
   }
 }

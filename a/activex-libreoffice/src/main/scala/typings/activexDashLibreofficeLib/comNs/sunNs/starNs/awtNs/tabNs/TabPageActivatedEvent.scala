@@ -18,9 +18,8 @@ trait TabPageActivatedEvent
 object TabPageActivatedEvent {
   @scala.inline
   def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, TabPageID: scala.Double): TabPageActivatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("TabPageID")(TabPageID)
+    val __obj = js.Dynamic.literal(Source = Source, TabPageID = TabPageID)
+  
     __obj.asInstanceOf[TabPageActivatedEvent]
   }
 }

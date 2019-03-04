@@ -22,12 +22,8 @@ object RotateAnimation {
     rotateY: js.Function1[scala.Double, Animation],
     rotateZ: js.Function1[scala.Double, Animation]
   ): RotateAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("rotate3d")(rotate3d)
-    __obj.updateDynamic("rotateX")(rotateX)
-    __obj.updateDynamic("rotateY")(rotateY)
-    __obj.updateDynamic("rotateZ")(rotateZ)
+    val __obj = js.Dynamic.literal(rotate = rotate, rotate3d = rotate3d, rotateX = rotateX, rotateY = rotateY, rotateZ = rotateZ)
+  
     __obj.asInstanceOf[RotateAnimation]
   }
 }

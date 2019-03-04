@@ -71,18 +71,8 @@ object FuzzyLikeThisFieldQuery {
     prefixLength: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
     toJSON: js.Function0[js.Any]
   ): FuzzyLikeThisFieldQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("failOnUnsupportedField")(failOnUnsupportedField)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("ignoreTf")(ignoreTf)
-    __obj.updateDynamic("likeText")(likeText)
-    __obj.updateDynamic("maxQueryTerms")(maxQueryTerms)
-    __obj.updateDynamic("minSimilarity")(minSimilarity)
-    __obj.updateDynamic("prefixLength")(prefixLength)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, failOnUnsupportedField = failOnUnsupportedField, field = field, ignoreTf = ignoreTf, likeText = likeText, maxQueryTerms = maxQueryTerms, minSimilarity = minSimilarity, prefixLength = prefixLength, toJSON = toJSON)
+  
     __obj.asInstanceOf[FuzzyLikeThisFieldQuery]
   }
 }

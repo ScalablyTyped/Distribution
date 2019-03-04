@@ -24,13 +24,8 @@ object Folder {
     lastChangedDate: stdLib.Date,
     path: java.lang.String
   ): Folder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("lastChangedBy")(lastChangedBy)
-    __obj.updateDynamic("lastChangedDate")(lastChangedDate)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(createdBy = createdBy, createdOn = createdOn, description = description, lastChangedBy = lastChangedBy, lastChangedDate = lastChangedDate, path = path)
+  
     __obj.asInstanceOf[Folder]
   }
 }

@@ -65,21 +65,8 @@ object Anon_AllowPopupsForUserEvents {
     useDocumentFonts: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
     webNotificationsDisabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
   ): Anon_AllowPopupsForUserEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowPopupsForUserEvents")(allowPopupsForUserEvents)
-    __obj.updateDynamic("cacheEnabled")(cacheEnabled)
-    __obj.updateDynamic("closeTabsByDoubleClick")(closeTabsByDoubleClick)
-    __obj.updateDynamic("contextMenuShowEvent")(contextMenuShowEvent)
-    __obj.updateDynamic("homepageOverride")(homepageOverride)
-    __obj.updateDynamic("imageAnimationBehavior")(imageAnimationBehavior)
-    __obj.updateDynamic("newTabPageOverride")(newTabPageOverride)
-    __obj.updateDynamic("newTabPosition")(newTabPosition)
-    __obj.updateDynamic("openBookmarksInNewTabs")(openBookmarksInNewTabs)
-    __obj.updateDynamic("openSearchResultsInNewTabs")(openSearchResultsInNewTabs)
-    __obj.updateDynamic("openUrlbarResultsInNewTabs")(openUrlbarResultsInNewTabs)
-    __obj.updateDynamic("overrideDocumentColors")(overrideDocumentColors)
-    __obj.updateDynamic("useDocumentFonts")(useDocumentFonts)
-    __obj.updateDynamic("webNotificationsDisabled")(webNotificationsDisabled)
+    val __obj = js.Dynamic.literal(allowPopupsForUserEvents = allowPopupsForUserEvents, cacheEnabled = cacheEnabled, closeTabsByDoubleClick = closeTabsByDoubleClick, contextMenuShowEvent = contextMenuShowEvent, homepageOverride = homepageOverride, imageAnimationBehavior = imageAnimationBehavior, newTabPageOverride = newTabPageOverride, newTabPosition = newTabPosition, openBookmarksInNewTabs = openBookmarksInNewTabs, openSearchResultsInNewTabs = openSearchResultsInNewTabs, openUrlbarResultsInNewTabs = openUrlbarResultsInNewTabs, overrideDocumentColors = overrideDocumentColors, useDocumentFonts = useDocumentFonts, webNotificationsDisabled = webNotificationsDisabled)
+  
     __obj.asInstanceOf[Anon_AllowPopupsForUserEvents]
   }
 }

@@ -15,11 +15,8 @@ trait TileDesc extends js.Object {
 object TileDesc {
   @scala.inline
   def apply(height: scala.Double, offsetX: scala.Double, offsetY: scala.Double, width: scala.Double): TileDesc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, offsetX = offsetX, offsetY = offsetY, width = width)
+  
     __obj.asInstanceOf[TileDesc]
   }
 }

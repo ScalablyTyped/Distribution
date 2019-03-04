@@ -28,10 +28,7 @@ object Anon_Compression {
     queue_size: scala.Int | scala.Double = null,
     throttle_rate: scala.Int | scala.Double = null
   ): Anon_Compression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageType")(messageType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ros")(ros)
+    val __obj = js.Dynamic.literal(messageType = messageType, name = name, ros = ros)
     if (compression != null) __obj.updateDynamic("compression")(compression)
     if (!js.isUndefined(latch)) __obj.updateDynamic("latch")(latch)
     if (queue_length != null) __obj.updateDynamic("queue_length")(queue_length.asInstanceOf[js.Any])

@@ -34,10 +34,8 @@ object JSXElement {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): JSXElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("openingElement")(openingElement)
-    __obj.updateDynamic("selfClosing")(selfClosing)
+    val __obj = js.Dynamic.literal(children = children, openingElement = openingElement, selfClosing = selfClosing)
+    __obj.updateDynamic("type")(`type`)
     if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

@@ -22,12 +22,8 @@ object OpeningHoursTime {
     nextDate: scala.Double,
     time: java.lang.String
   ): OpeningHoursTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("nextDate")(nextDate)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(day = day, hours = hours, minutes = minutes, nextDate = nextDate, time = time)
+  
     __obj.asInstanceOf[OpeningHoursTime]
   }
 }

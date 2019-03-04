@@ -18,10 +18,8 @@ object Anon_BstrMessageIdFRemovedFromReceiveFolder {
     fRemovedFromReceiveFolder: scala.Boolean,
     pFaxAccount: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount
   ): Anon_BstrMessageIdFRemovedFromReceiveFolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bstrMessageId")(bstrMessageId)
-    __obj.updateDynamic("fRemovedFromReceiveFolder")(fRemovedFromReceiveFolder)
-    __obj.updateDynamic("pFaxAccount")(pFaxAccount)
+    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId, fRemovedFromReceiveFolder = fRemovedFromReceiveFolder, pFaxAccount = pFaxAccount)
+  
     __obj.asInstanceOf[Anon_BstrMessageIdFRemovedFromReceiveFolder]
   }
 }

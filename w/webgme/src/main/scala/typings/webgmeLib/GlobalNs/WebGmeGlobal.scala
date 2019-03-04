@@ -36,9 +36,7 @@ object WebGmeGlobal {
     userInfo: UserInfo = null,
     version: java.lang.String = null
   ): WebGmeGlobal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConfig")(getConfig)
-    __obj.updateDynamic("gmeConfig")(gmeConfig)
+    val __obj = js.Dynamic.literal(getConfig = getConfig, gmeConfig = gmeConfig)
     if (GitHubVersion != null) __obj.updateDynamic("GitHubVersion")(GitHubVersion)
     if (KeyboardManager != null) __obj.updateDynamic("KeyboardManager")(KeyboardManager)
     if (LayoutManager != null) __obj.updateDynamic("LayoutManager")(LayoutManager)

@@ -37,15 +37,8 @@ object GlobalizationNumberPattern {
     rounding: scala.Double,
     symbol: java.lang.String
   ): GlobalizationNumberPattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decimal")(decimal)
-    __obj.updateDynamic("fraction")(fraction)
-    __obj.updateDynamic("grouping")(grouping)
-    __obj.updateDynamic("negative")(negative)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("positive")(positive)
-    __obj.updateDynamic("rounding")(rounding)
-    __obj.updateDynamic("symbol")(symbol)
+    val __obj = js.Dynamic.literal(decimal = decimal, fraction = fraction, grouping = grouping, negative = negative, pattern = pattern, positive = positive, rounding = rounding, symbol = symbol)
+  
     __obj.asInstanceOf[GlobalizationNumberPattern]
   }
 }

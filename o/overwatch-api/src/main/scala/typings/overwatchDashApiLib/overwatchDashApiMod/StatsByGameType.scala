@@ -13,9 +13,8 @@ trait StatsByGameType[T] extends js.Object {
 object StatsByGameType {
   @scala.inline
   def apply[T](competitive: js.Array[T], quickplay: js.Array[T]): StatsByGameType[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("competitive")(competitive)
-    __obj.updateDynamic("quickplay")(quickplay)
+    val __obj = js.Dynamic.literal(competitive = competitive, quickplay = quickplay)
+  
     __obj.asInstanceOf[StatsByGameType[T]]
   }
 }

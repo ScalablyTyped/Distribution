@@ -34,8 +34,8 @@ trait XAsyncOutputMonitor extends js.Object {
 object XAsyncOutputMonitor {
   @scala.inline
   def apply(waitForCompletion: js.Function0[scala.Unit]): XAsyncOutputMonitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("waitForCompletion")(waitForCompletion)
+    val __obj = js.Dynamic.literal(waitForCompletion = waitForCompletion)
+  
     __obj.asInstanceOf[XAsyncOutputMonitor]
   }
 }

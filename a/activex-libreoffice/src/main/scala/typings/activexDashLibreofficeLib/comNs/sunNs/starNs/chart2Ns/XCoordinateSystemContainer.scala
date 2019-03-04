@@ -34,15 +34,8 @@ object XCoordinateSystemContainer {
     removeCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
     setCoordinateSystems: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XCoordinateSystem], scala.Unit]
   ): XCoordinateSystemContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CoordinateSystems")(CoordinateSystems)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addCoordinateSystem")(addCoordinateSystem)
-    __obj.updateDynamic("getCoordinateSystems")(getCoordinateSystems)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeCoordinateSystem")(removeCoordinateSystem)
-    __obj.updateDynamic("setCoordinateSystems")(setCoordinateSystems)
+    val __obj = js.Dynamic.literal(CoordinateSystems = CoordinateSystems, acquire = acquire, addCoordinateSystem = addCoordinateSystem, getCoordinateSystems = getCoordinateSystems, queryInterface = queryInterface, release = release, removeCoordinateSystem = removeCoordinateSystem, setCoordinateSystems = setCoordinateSystems)
+  
     __obj.asInstanceOf[XCoordinateSystemContainer]
   }
 }

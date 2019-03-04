@@ -21,8 +21,8 @@ object Anon_CallbackOptions {
       scala.Unit
     ]
   ): Anon_CallbackOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scan")(scan)
+    val __obj = js.Dynamic.literal(scan = scan)
+  
     __obj.asInstanceOf[Anon_CallbackOptions]
   }
 }

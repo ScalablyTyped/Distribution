@@ -12,8 +12,8 @@ trait BulkFetchDocsWrapper extends js.Object {
 object BulkFetchDocsWrapper {
   @scala.inline
   def apply(keys: js.Array[java.lang.String]): BulkFetchDocsWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(keys = keys)
+  
     __obj.asInstanceOf[BulkFetchDocsWrapper]
   }
 }

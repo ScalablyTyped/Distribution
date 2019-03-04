@@ -12,8 +12,8 @@ trait CordovaPlugins extends js.Object {
 object CordovaPlugins {
   @scala.inline
   def apply(socialsharing: cordovaDashPluginDashXDashSocialsharingLib.SocialSharingPluginNs.SocialSharing): CordovaPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("socialsharing")(socialsharing)
+    val __obj = js.Dynamic.literal(socialsharing = socialsharing)
+  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

@@ -21,9 +21,8 @@ object VideoSource {
     coordinates: js.Array[js.Array[scala.Double]] = null,
     urls: js.Array[java.lang.String] = null
   ): VideoSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("getVideo")(getVideo)
-    __obj.updateDynamic("setCoordinates")(setCoordinates)
+    val __obj = js.Dynamic.literal(getVideo = getVideo, setCoordinates = setCoordinates)
+    __obj.updateDynamic("type")(`type`)
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
     if (urls != null) __obj.updateDynamic("urls")(urls)
     __obj.asInstanceOf[VideoSource]

@@ -71,12 +71,8 @@ object WorksheetFormatChangedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetFormatChanged,
     worksheetId: java.lang.String
   ): WorksheetFormatChangedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("getRangeOrNullObject")(getRangeOrNullObject)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(address = address, getRange = getRange, getRangeOrNullObject = getRangeOrNullObject, source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorksheetFormatChangedEventArgs]
   }
 }

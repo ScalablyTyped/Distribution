@@ -26,14 +26,8 @@ object Anon_DefaultValue {
     snapToValue: scala.Boolean,
     step: scala.Double
   ): Anon_DefaultValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("showValue")(showValue)
-    __obj.updateDynamic("snapToValue")(snapToValue)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, disabled = disabled, max = max, min = min, showValue = showValue, snapToValue = snapToValue, step = step)
+  
     __obj.asInstanceOf[Anon_DefaultValue]
   }
 }

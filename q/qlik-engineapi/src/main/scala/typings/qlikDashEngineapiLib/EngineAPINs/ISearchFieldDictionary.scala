@@ -24,9 +24,8 @@ trait ISearchFieldDictionary extends js.Object {
 object ISearchFieldDictionary {
   @scala.inline
   def apply(qField: scala.Double, qResult: js.Array[ISearchTermResult]): ISearchFieldDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qField")(qField)
-    __obj.updateDynamic("qResult")(qResult)
+    val __obj = js.Dynamic.literal(qField = qField, qResult = qResult)
+  
     __obj.asInstanceOf[ISearchFieldDictionary]
   }
 }

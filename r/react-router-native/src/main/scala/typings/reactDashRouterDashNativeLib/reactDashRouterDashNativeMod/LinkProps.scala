@@ -22,8 +22,7 @@ object LinkProps {
     replace: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Any = null
   ): LinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)

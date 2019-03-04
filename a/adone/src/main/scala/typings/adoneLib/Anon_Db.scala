@@ -17,10 +17,8 @@ trait Anon_Db extends js.Object {
 object Anon_Db {
   @scala.inline
   def apply($db: java.lang.String, $id: adoneLib.adoneNs.dataNs.bsonNs.ObjectId, $ref: java.lang.String): Anon_Db = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$db")($db)
-    __obj.updateDynamic("$id")($id)
-    __obj.updateDynamic("$ref")($ref)
+    val __obj = js.Dynamic.literal($db = $db, $id = $id, $ref = $ref)
+  
     __obj.asInstanceOf[Anon_Db]
   }
 }

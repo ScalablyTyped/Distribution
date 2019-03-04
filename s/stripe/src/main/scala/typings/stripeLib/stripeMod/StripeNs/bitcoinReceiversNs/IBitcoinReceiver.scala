@@ -108,28 +108,8 @@ object IBitcoinReceiver {
     uncaptured_funds: scala.Boolean,
     used_for_payment: scala.Boolean
   ): IBitcoinReceiver = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("amount_received")(amount_received)
-    __obj.updateDynamic("bitcoin_amount")(bitcoin_amount)
-    __obj.updateDynamic("bitcoin_amount_received")(bitcoin_amount_received)
-    __obj.updateDynamic("bitcoin_uri")(bitcoin_uri)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("customer")(customer)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("filled")(filled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inbound_address")(inbound_address)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("payment")(payment)
-    __obj.updateDynamic("refund_address")(refund_address)
-    __obj.updateDynamic("transactions")(transactions)
-    __obj.updateDynamic("uncaptured_funds")(uncaptured_funds)
-    __obj.updateDynamic("used_for_payment")(used_for_payment)
+    val __obj = js.Dynamic.literal(active = active, amount = amount, amount_received = amount_received, bitcoin_amount = bitcoin_amount, bitcoin_amount_received = bitcoin_amount_received, bitcoin_uri = bitcoin_uri, created = created, currency = currency, customer = customer, description = description, email = email, filled = filled, id = id, inbound_address = inbound_address, livemode = livemode, metadata = metadata, payment = payment, refund_address = refund_address, transactions = transactions, uncaptured_funds = uncaptured_funds, used_for_payment = used_for_payment)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IBitcoinReceiver]
   }
 }

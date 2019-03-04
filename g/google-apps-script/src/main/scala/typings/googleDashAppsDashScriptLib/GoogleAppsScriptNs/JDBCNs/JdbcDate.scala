@@ -32,17 +32,8 @@ object JdbcDate {
     setTime: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
     setYear: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
   ): JdbcDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("getDate")(getDate)
-    __obj.updateDynamic("getMonth")(getMonth)
-    __obj.updateDynamic("getTime")(getTime)
-    __obj.updateDynamic("getYear")(getYear)
-    __obj.updateDynamic("setDate")(setDate)
-    __obj.updateDynamic("setMonth")(setMonth)
-    __obj.updateDynamic("setTime")(setTime)
-    __obj.updateDynamic("setYear")(setYear)
+    val __obj = js.Dynamic.literal(after = after, before = before, getDate = getDate, getMonth = getMonth, getTime = getTime, getYear = getYear, setDate = setDate, setMonth = setMonth, setTime = setTime, setYear = setYear)
+  
     __obj.asInstanceOf[JdbcDate]
   }
 }

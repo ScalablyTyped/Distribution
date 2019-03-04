@@ -24,10 +24,8 @@ object InstallException {
     Message: java.lang.String,
     displayName: java.lang.String
   ): InstallException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, displayName = displayName)
+  
     __obj.asInstanceOf[InstallException]
   }
 }

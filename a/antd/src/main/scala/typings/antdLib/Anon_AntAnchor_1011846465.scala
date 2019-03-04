@@ -12,8 +12,8 @@ trait Anon_AntAnchor_1011846465 extends js.Object {
 object Anon_AntAnchor_1011846465 {
   @scala.inline
   def apply(antAnchor: antdLib.libAnchorAnchorMod.AntAnchor): Anon_AntAnchor_1011846465 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antAnchor")(antAnchor)
+    val __obj = js.Dynamic.literal(antAnchor = antAnchor)
+  
     __obj.asInstanceOf[Anon_AntAnchor_1011846465]
   }
 }

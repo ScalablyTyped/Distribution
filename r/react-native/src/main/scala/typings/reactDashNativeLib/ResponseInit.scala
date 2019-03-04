@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResponseInit extends js.Object {
-  var headers: js.UndefOr[`HeadersInit_`] = js.undefined
+  var headers: js.UndefOr[HeadersInit_] = js.undefined
   var status: js.UndefOr[scala.Double] = js.undefined
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -14,7 +14,7 @@ trait ResponseInit extends js.Object {
 object ResponseInit {
   @scala.inline
   def apply(
-    headers: `HeadersInit_` = null,
+    headers: HeadersInit_ = null,
     status: scala.Int | scala.Double = null,
     statusText: java.lang.String = null
   ): ResponseInit = {

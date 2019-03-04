@@ -38,8 +38,8 @@ object XLShape {
       java.lang.String
     ]
   ): XLShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setPicture")(setPicture)
+    val __obj = js.Dynamic.literal(setPicture = setPicture)
+  
     __obj.asInstanceOf[XLShape]
   }
 }

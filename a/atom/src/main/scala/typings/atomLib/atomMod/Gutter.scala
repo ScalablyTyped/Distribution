@@ -40,14 +40,8 @@ object Gutter {
     onDidDestroy: js.Function1[js.Function0[scala.Unit], Disposable],
     show: js.Function0[scala.Unit]
   ): Gutter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decorateMarker")(decorateMarker)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("onDidChangeVisible")(onDidChangeVisible)
-    __obj.updateDynamic("onDidDestroy")(onDidDestroy)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(decorateMarker = decorateMarker, destroy = destroy, hide = hide, isVisible = isVisible, onDidChangeVisible = onDidChangeVisible, onDidDestroy = onDidDestroy, show = show)
+  
     __obj.asInstanceOf[Gutter]
   }
 }

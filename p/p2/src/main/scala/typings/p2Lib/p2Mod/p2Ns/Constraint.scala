@@ -28,14 +28,8 @@ object Constraint {
     `type`: scala.Double,
     update: js.Function0[scala.Unit]
   ): Constraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("collideConnected")(collideConnected)
-    __obj.updateDynamic("equeations")(equeations)
-    __obj.updateDynamic("setRelaxation")(setRelaxation)
-    __obj.updateDynamic("setStiffness")(setStiffness)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Constraint]
   }
 }

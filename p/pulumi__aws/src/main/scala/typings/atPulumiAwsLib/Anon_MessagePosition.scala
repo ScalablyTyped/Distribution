@@ -24,11 +24,7 @@ object Anon_MessagePosition {
     statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_MessagePosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("smtpReplyCode")(smtpReplyCode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], smtpReplyCode = smtpReplyCode.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MessagePosition]

@@ -22,8 +22,7 @@ object Options {
     session: js.Object | java.lang.String = null,
     value: java.lang.String | nodeLib.Buffer = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (lockretrytime != null) __obj.updateDynamic("lockretrytime")(lockretrytime)
     if (lockwaittime != null) __obj.updateDynamic("lockwaittime")(lockwaittime)
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])

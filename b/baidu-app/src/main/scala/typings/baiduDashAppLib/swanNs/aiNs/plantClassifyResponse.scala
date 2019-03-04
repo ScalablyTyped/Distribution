@@ -14,9 +14,8 @@ trait plantClassifyResponse extends js.Object {
 object plantClassifyResponse {
   @scala.inline
   def apply(log_id: scala.Double, result: js.Array[baiduDashAppLib.Anon_NameScore]): plantClassifyResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log_id")(log_id)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(log_id = log_id, result = result)
+  
     __obj.asInstanceOf[plantClassifyResponse]
   }
 }

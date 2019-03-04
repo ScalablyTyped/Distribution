@@ -20,11 +20,8 @@ object Anon_HAdjustmentFactor {
     vAdjustmentFactor: scala.Double,
     width: scala.Double
   ): Anon_HAdjustmentFactor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hAdjustmentFactor")(hAdjustmentFactor)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("vAdjustmentFactor")(vAdjustmentFactor)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(hAdjustmentFactor = hAdjustmentFactor, height = height, vAdjustmentFactor = vAdjustmentFactor, width = width)
+  
     __obj.asInstanceOf[Anon_HAdjustmentFactor]
   }
 }

@@ -30,9 +30,8 @@ object InventoryResource {
       gapiDotClientLib.gapiNs.clientNs.Request[InventorySetResponse]
     ]
   ): InventoryResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custombatch")(custombatch)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(custombatch = custombatch, set = set)
+  
     __obj.asInstanceOf[InventoryResource]
   }
 }

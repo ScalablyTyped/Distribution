@@ -96,11 +96,7 @@ object ClusterArgs {
     subnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
-    __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], iamRoleArn = iamRoleArn.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], replicationFactor = replicationFactor.asInstanceOf[js.Any])
     if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])

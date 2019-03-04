@@ -26,13 +26,7 @@ object FileStats {
     size: scala.Double,
     permissions: js.Any = null
   ): FileStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessTime")(accessTime)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("modifyTime")(modifyTime)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(accessTime = accessTime, group = group, mode = mode, modifyTime = modifyTime, owner = owner, size = size)
     if (permissions != null) __obj.updateDynamic("permissions")(permissions)
     __obj.asInstanceOf[FileStats]
   }

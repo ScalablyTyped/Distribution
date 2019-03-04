@@ -24,9 +24,8 @@ object Version_headersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
     ]
   ): Version_headersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latest")(latest)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(latest = latest, list = list)
+  
     __obj.asInstanceOf[Version_headersResource]
   }
 }

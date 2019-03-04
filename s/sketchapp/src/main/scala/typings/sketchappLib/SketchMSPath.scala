@@ -18,10 +18,8 @@ object SketchMSPath {
     isClosed: scala.Boolean,
     points: js.Array[SketchMSCurvePoint]
   ): SketchMSPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(_class = _class, isClosed = isClosed, points = points)
+  
     __obj.asInstanceOf[SketchMSPath]
   }
 }

@@ -38,10 +38,7 @@ object S3LocationArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): S3LocationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3BucketArn")(s3BucketArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("s3Config")(s3Config.asInstanceOf[js.Any])
-    __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Config = s3Config.asInstanceOf[js.Any], subdirectory = subdirectory.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LocationArgs]
   }

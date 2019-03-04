@@ -37,12 +37,8 @@ object MeasurementValue {
     state: java.lang.String,
     text: java.lang.String
   ): MeasurementValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, state = state, text = text)
+  
     __obj.asInstanceOf[MeasurementValue]
   }
 }

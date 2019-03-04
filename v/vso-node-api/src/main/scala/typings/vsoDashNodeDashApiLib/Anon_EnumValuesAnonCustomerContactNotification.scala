@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonCustomerContactNotification extends js.Object {
 object Anon_EnumValuesAnonCustomerContactNotification {
   @scala.inline
   def apply(enumValues: Anon_CustomerContactNotification): Anon_EnumValuesAnonCustomerContactNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonCustomerContactNotification]
   }
 }

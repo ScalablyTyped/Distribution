@@ -36,9 +36,7 @@ object CapabilityStatementRestOperation {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementRestOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(definition = definition, name = name)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_name != null) __obj.updateDynamic("_name")(_name)

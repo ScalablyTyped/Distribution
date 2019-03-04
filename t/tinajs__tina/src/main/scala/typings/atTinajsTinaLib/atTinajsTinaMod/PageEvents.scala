@@ -20,11 +20,8 @@ object PageEvents {
     onReachBottom: js.Function1[Page, scala.Unit],
     onShareAppMessage: js.Function1[Page, scala.Unit]
   ): PageEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPageScroll")(onPageScroll)
-    __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
-    __obj.updateDynamic("onReachBottom")(onReachBottom)
-    __obj.updateDynamic("onShareAppMessage")(onShareAppMessage)
+    val __obj = js.Dynamic.literal(onPageScroll = onPageScroll, onPullDownRefresh = onPullDownRefresh, onReachBottom = onReachBottom, onShareAppMessage = onShareAppMessage)
+  
     __obj.asInstanceOf[PageEvents]
   }
 }

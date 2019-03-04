@@ -24,13 +24,8 @@ object TestAttachment {
     id: scala.Double,
     url: java.lang.String
   ): TestAttachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentType")(attachmentType)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType, comment = comment, createdDate = createdDate, fileName = fileName, id = id, url = url)
+  
     __obj.asInstanceOf[TestAttachment]
   }
 }

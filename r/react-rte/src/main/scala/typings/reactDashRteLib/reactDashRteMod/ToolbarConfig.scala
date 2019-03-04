@@ -22,11 +22,7 @@ object ToolbarConfig {
     display: js.Array[reactDashRteLib.GroupName],
     extraProps: js.Object = null
   ): ToolbarConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BLOCK_TYPE_BUTTONS")(BLOCK_TYPE_BUTTONS)
-    __obj.updateDynamic("BLOCK_TYPE_DROPDOWN")(BLOCK_TYPE_DROPDOWN)
-    __obj.updateDynamic("INLINE_STYLE_BUTTONS")(INLINE_STYLE_BUTTONS)
-    __obj.updateDynamic("display")(display)
+    val __obj = js.Dynamic.literal(BLOCK_TYPE_BUTTONS = BLOCK_TYPE_BUTTONS, BLOCK_TYPE_DROPDOWN = BLOCK_TYPE_DROPDOWN, INLINE_STYLE_BUTTONS = INLINE_STYLE_BUTTONS, display = display)
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)
     __obj.asInstanceOf[ToolbarConfig]
   }

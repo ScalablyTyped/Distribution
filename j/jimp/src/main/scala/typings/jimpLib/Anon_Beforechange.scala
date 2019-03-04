@@ -19,9 +19,7 @@ object Anon_Beforechange {
     methodName: T,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Beforechange[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Beforechange[T]]
   }

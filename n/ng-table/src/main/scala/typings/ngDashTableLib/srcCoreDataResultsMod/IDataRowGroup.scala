@@ -15,10 +15,8 @@ trait IDataRowGroup[T] extends js.Object {
 object IDataRowGroup {
   @scala.inline
   def apply[T]($hideRows: scala.Boolean, data: js.Array[T], value: java.lang.String): IDataRowGroup[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$hideRows")($hideRows)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal($hideRows = $hideRows, data = data, value = value)
+  
     __obj.asInstanceOf[IDataRowGroup[T]]
   }
 }

@@ -47,20 +47,7 @@ object DateFormatMasks {
     shortTime: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): DateFormatMasks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("expiresHeaderFormat")(expiresHeaderFormat)
-    __obj.updateDynamic("fullDate")(fullDate)
-    __obj.updateDynamic("isoDate")(isoDate)
-    __obj.updateDynamic("isoDateTime")(isoDateTime)
-    __obj.updateDynamic("isoTime")(isoTime)
-    __obj.updateDynamic("isoUtcDateTime")(isoUtcDateTime)
-    __obj.updateDynamic("longDate")(longDate)
-    __obj.updateDynamic("longTime")(longTime)
-    __obj.updateDynamic("mediumDate")(mediumDate)
-    __obj.updateDynamic("mediumTime")(mediumTime)
-    __obj.updateDynamic("shortDate")(shortDate)
-    __obj.updateDynamic("shortTime")(shortTime)
+    val __obj = js.Dynamic.literal(default = default, expiresHeaderFormat = expiresHeaderFormat, fullDate = fullDate, isoDate = isoDate, isoDateTime = isoDateTime, isoTime = isoTime, isoUtcDateTime = isoUtcDateTime, longDate = longDate, longTime = longTime, mediumDate = mediumDate, mediumTime = mediumTime, shortDate = shortDate, shortTime = shortTime)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DateFormatMasks]
   }

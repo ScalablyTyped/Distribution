@@ -24,13 +24,8 @@ object Anon_ArrowPointAtCenter {
     placement: antdLib.libTooltipMod.TooltipPlacement,
     transitionName: java.lang.String
   ): Anon_ArrowPointAtCenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter)
-    __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow)
-    __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay)
-    __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("transitionName")(transitionName)
+    val __obj = js.Dynamic.literal(arrowPointAtCenter = arrowPointAtCenter, autoAdjustOverflow = autoAdjustOverflow, mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement, transitionName = transitionName)
+  
     __obj.asInstanceOf[Anon_ArrowPointAtCenter]
   }
 }

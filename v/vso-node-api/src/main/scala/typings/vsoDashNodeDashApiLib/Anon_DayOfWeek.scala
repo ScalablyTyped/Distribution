@@ -12,8 +12,8 @@ trait Anon_DayOfWeek extends js.Object {
 object Anon_DayOfWeek {
   @scala.inline
   def apply(DayOfWeek: Anon_EnumValuesAnonFriday): Anon_DayOfWeek = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DayOfWeek")(DayOfWeek)
+    val __obj = js.Dynamic.literal(DayOfWeek = DayOfWeek)
+  
     __obj.asInstanceOf[Anon_DayOfWeek]
   }
 }

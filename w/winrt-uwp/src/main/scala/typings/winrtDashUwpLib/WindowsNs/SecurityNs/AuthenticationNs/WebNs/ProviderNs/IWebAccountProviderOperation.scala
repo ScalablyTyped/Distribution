@@ -14,8 +14,8 @@ trait IWebAccountProviderOperation extends js.Object {
 object IWebAccountProviderOperation {
   @scala.inline
   def apply(kind: WebAccountProviderOperationKind): IWebAccountProviderOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+  
     __obj.asInstanceOf[IWebAccountProviderOperation]
   }
 }

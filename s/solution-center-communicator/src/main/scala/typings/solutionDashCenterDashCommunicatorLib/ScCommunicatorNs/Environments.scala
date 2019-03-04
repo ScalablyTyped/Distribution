@@ -42,13 +42,8 @@ object Environments {
     STAGE: Environment,
     TESTING: Environment
   ): Environments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEVELOPMENT")(DEVELOPMENT)
-    __obj.updateDynamic("INTEGRATION")(INTEGRATION)
-    __obj.updateDynamic("LOCAL")(LOCAL)
-    __obj.updateDynamic("PRODUCTION")(PRODUCTION)
-    __obj.updateDynamic("STAGE")(STAGE)
-    __obj.updateDynamic("TESTING")(TESTING)
+    val __obj = js.Dynamic.literal(DEVELOPMENT = DEVELOPMENT, INTEGRATION = INTEGRATION, LOCAL = LOCAL, PRODUCTION = PRODUCTION, STAGE = STAGE, TESTING = TESTING)
+  
     __obj.asInstanceOf[Environments]
   }
 }

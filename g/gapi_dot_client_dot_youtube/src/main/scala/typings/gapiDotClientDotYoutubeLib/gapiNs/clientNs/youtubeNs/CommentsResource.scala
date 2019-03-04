@@ -51,13 +51,8 @@ object CommentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Comment]
     ]
   ): CommentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("markAsSpam")(markAsSpam)
-    __obj.updateDynamic("setModerationStatus")(setModerationStatus)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, markAsSpam = markAsSpam, setModerationStatus = setModerationStatus, update = update)
+  
     __obj.asInstanceOf[CommentsResource]
   }
 }

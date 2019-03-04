@@ -22,9 +22,8 @@ object ReceivedActionMeta {
     navKey: Nullable[java.lang.String] = null,
     query: js.Object = null
   ): ReceivedActionMeta = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(meta = meta, payload = payload)
+    __obj.updateDynamic("type")(`type`)
     if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
     __obj.asInstanceOf[ReceivedActionMeta]

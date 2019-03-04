@@ -23,13 +23,8 @@ object WebNavigationParentedCallbackDetails {
     timeStamp: scala.Double,
     url: java.lang.String
   ): WebNavigationParentedCallbackDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("processId")(processId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, processId = processId, tabId = tabId, timeStamp = timeStamp, url = url)
+  
     __obj.asInstanceOf[WebNavigationParentedCallbackDetails]
   }
 }

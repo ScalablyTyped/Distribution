@@ -24,13 +24,8 @@ object IVaultConnections {
     Item: js.Function1[scala.Double, IVaultConnection],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): IVaultConnections = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetVaultConnectionByName")(GetVaultConnectionByName)
-    __obj.updateDynamic("GetVaultConnectionIndexByName")(GetVaultConnectionIndexByName)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Count = Count, GetVaultConnectionByName = GetVaultConnectionByName, GetVaultConnectionIndexByName = GetVaultConnectionIndexByName, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[IVaultConnections]
   }
 }

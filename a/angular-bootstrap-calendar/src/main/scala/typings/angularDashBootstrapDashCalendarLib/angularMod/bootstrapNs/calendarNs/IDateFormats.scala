@@ -24,13 +24,8 @@ object IDateFormats {
     time: java.lang.String,
     weekDay: java.lang.String
   ): IDateFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("weekDay")(weekDay)
+    val __obj = js.Dynamic.literal(datetime = datetime, day = day, hour = hour, month = month, time = time, weekDay = weekDay)
+  
     __obj.asInstanceOf[IDateFormats]
   }
 }

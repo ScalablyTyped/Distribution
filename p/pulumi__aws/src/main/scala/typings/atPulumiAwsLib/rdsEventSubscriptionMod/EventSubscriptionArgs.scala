@@ -56,8 +56,7 @@ object EventSubscriptionArgs {
     sourceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): EventSubscriptionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("snsTopic")(snsTopic.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(snsTopic = snsTopic.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (eventCategories != null) __obj.updateDynamic("eventCategories")(eventCategories.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

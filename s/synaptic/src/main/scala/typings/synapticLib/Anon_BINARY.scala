@@ -18,10 +18,8 @@ object Anon_BINARY {
     CROSS_ENTROPY: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double],
     MSE: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Double]
   ): Anon_BINARY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BINARY")(BINARY)
-    __obj.updateDynamic("CROSS_ENTROPY")(CROSS_ENTROPY)
-    __obj.updateDynamic("MSE")(MSE)
+    val __obj = js.Dynamic.literal(BINARY = BINARY, CROSS_ENTROPY = CROSS_ENTROPY, MSE = MSE)
+  
     __obj.asInstanceOf[Anon_BINARY]
   }
 }

@@ -30,16 +30,8 @@ object SubnetInfo {
     subnetMask: java.lang.String,
     subnetMaskLength: scala.Double
   ): SubnetInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("broadcastAddress")(broadcastAddress)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("firstAddress")(firstAddress)
-    __obj.updateDynamic("lastAddress")(lastAddress)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("networkAddress")(networkAddress)
-    __obj.updateDynamic("numHosts")(numHosts)
-    __obj.updateDynamic("subnetMask")(subnetMask)
-    __obj.updateDynamic("subnetMaskLength")(subnetMaskLength)
+    val __obj = js.Dynamic.literal(broadcastAddress = broadcastAddress, contains = contains, firstAddress = firstAddress, lastAddress = lastAddress, length = length, networkAddress = networkAddress, numHosts = numHosts, subnetMask = subnetMask, subnetMaskLength = subnetMaskLength)
+  
     __obj.asInstanceOf[SubnetInfo]
   }
 }

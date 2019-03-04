@@ -26,14 +26,8 @@ object IStorageQueryResultBase {
     oncontentschanged: js.Any,
     onoptionschanged: js.Any
   ): IStorageQueryResultBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyNewQueryOptions")(applyNewQueryOptions)
-    __obj.updateDynamic("findStartIndexAsync")(findStartIndexAsync)
-    __obj.updateDynamic("folder")(folder)
-    __obj.updateDynamic("getCurrentQueryOptions")(getCurrentQueryOptions)
-    __obj.updateDynamic("getItemCountAsync")(getItemCountAsync)
-    __obj.updateDynamic("oncontentschanged")(oncontentschanged)
-    __obj.updateDynamic("onoptionschanged")(onoptionschanged)
+    val __obj = js.Dynamic.literal(applyNewQueryOptions = applyNewQueryOptions, findStartIndexAsync = findStartIndexAsync, folder = folder, getCurrentQueryOptions = getCurrentQueryOptions, getItemCountAsync = getItemCountAsync, oncontentschanged = oncontentschanged, onoptionschanged = onoptionschanged)
+  
     __obj.asInstanceOf[IStorageQueryResultBase]
   }
 }

@@ -25,11 +25,8 @@ object Anon_ArgsCache {
     ],
     removeMatchingSelector: js.Function3[S, P, /* repeated */ js.Any, scala.Unit]
   ): Anon_ArgsCache[C, R, P, S, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("clearCache")(clearCache)
-    __obj.updateDynamic("getMatchingSelector")(getMatchingSelector)
-    __obj.updateDynamic("removeMatchingSelector")(removeMatchingSelector)
+    val __obj = js.Dynamic.literal(cache = cache, clearCache = clearCache, getMatchingSelector = getMatchingSelector, removeMatchingSelector = removeMatchingSelector)
+  
     __obj.asInstanceOf[Anon_ArgsCache[C, R, P, S, D]]
   }
 }

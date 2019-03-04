@@ -164,19 +164,8 @@ object ILabel {
     setAddressText: js.Function2[scala.Double, java.lang.String, ILabel],
     setObjectText: js.Function2[java.lang.String, java.lang.String, ILabel]
   ): ILabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAddressBarcodePosition")(getAddressBarcodePosition)
-    __obj.updateDynamic("getAddressObjectCount")(getAddressObjectCount)
-    __obj.updateDynamic("getAddressText")(getAddressText)
-    __obj.updateDynamic("getLabelXml")(getLabelXml)
-    __obj.updateDynamic("getObjectNames")(getObjectNames)
-    __obj.updateDynamic("getObjectText")(getObjectText)
-    __obj.updateDynamic("print")(print)
-    __obj.updateDynamic("printAndPollStatus")(printAndPollStatus)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("setAddressBarcodePosition")(setAddressBarcodePosition)
-    __obj.updateDynamic("setAddressText")(setAddressText)
-    __obj.updateDynamic("setObjectText")(setObjectText)
+    val __obj = js.Dynamic.literal(getAddressBarcodePosition = getAddressBarcodePosition, getAddressObjectCount = getAddressObjectCount, getAddressText = getAddressText, getLabelXml = getLabelXml, getObjectNames = getObjectNames, getObjectText = getObjectText, print = print, printAndPollStatus = printAndPollStatus, render = render, setAddressBarcodePosition = setAddressBarcodePosition, setAddressText = setAddressText, setObjectText = setObjectText)
+  
     __obj.asInstanceOf[ILabel]
   }
 }

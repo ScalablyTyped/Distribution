@@ -12,8 +12,8 @@ trait PluginRemoveScriptElement extends js.Object {
 object PluginRemoveScriptElement {
   @scala.inline
   def apply(removeScriptElement: scala.Boolean | js.Object): PluginRemoveScriptElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeScriptElement")(removeScriptElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeScriptElement = removeScriptElement.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveScriptElement]
   }
 }

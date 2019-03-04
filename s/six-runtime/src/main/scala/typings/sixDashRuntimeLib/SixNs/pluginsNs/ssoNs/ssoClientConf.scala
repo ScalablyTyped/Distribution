@@ -26,14 +26,8 @@ object ssoClientConf {
     secret: java.lang.String,
     token: token
   ): ssoClientConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackUrl")(callbackUrl)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("errorHook")(errorHook)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(callbackUrl = callbackUrl, clientId = clientId, env = env, errorHook = errorHook, protocol = protocol, secret = secret, token = token)
+  
     __obj.asInstanceOf[ssoClientConf]
   }
 }

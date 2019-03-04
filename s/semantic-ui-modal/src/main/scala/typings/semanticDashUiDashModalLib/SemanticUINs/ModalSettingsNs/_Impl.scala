@@ -187,34 +187,8 @@ object _Impl {
     transition: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowMultiple")(allowMultiple)
-    __obj.updateDynamic("autofocus")(autofocus)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("closable")(closable)
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("detachable")(detachable)
-    __obj.updateDynamic("dimmerSettings")(dimmerSettings.asInstanceOf[js.Any])
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("observeChanges")(observeChanges)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("onApprove")(onApprove)
-    __obj.updateDynamic("onDeny")(onDeny)
-    __obj.updateDynamic("onHidden")(onHidden)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("onVisible")(onVisible)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple, autofocus = autofocus, className = className.asInstanceOf[js.Any], closable = closable, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration, error = error, keyboardShortcuts = keyboardShortcuts, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onApprove = onApprove, onDeny = onDeny, onHidden = onHidden, onHide = onHide, onShow = onShow, onVisible = onVisible, performance = performance, queue = queue, selector = selector.asInstanceOf[js.Any], silent = silent, transition = transition, verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

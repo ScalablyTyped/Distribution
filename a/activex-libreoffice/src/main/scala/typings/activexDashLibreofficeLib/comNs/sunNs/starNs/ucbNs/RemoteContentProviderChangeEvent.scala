@@ -25,10 +25,8 @@ object RemoteContentProviderChangeEvent {
     Identifier: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): RemoteContentProviderChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Action = Action, Identifier = Identifier, Source = Source)
+  
     __obj.asInstanceOf[RemoteContentProviderChangeEvent]
   }
 }

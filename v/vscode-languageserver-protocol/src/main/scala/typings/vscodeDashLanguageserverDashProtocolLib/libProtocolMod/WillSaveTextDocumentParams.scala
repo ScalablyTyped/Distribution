@@ -22,9 +22,8 @@ object WillSaveTextDocumentParams {
     reason: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentSaveReason,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): WillSaveTextDocumentParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(reason = reason, textDocument = textDocument)
+  
     __obj.asInstanceOf[WillSaveTextDocumentParams]
   }
 }

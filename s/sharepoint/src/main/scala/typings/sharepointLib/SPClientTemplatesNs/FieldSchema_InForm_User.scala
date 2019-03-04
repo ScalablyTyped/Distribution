@@ -47,30 +47,8 @@ object FieldSchema_InForm_User {
     WithPicture: scala.Boolean,
     WithPictureDetail: scala.Boolean
   ): FieldSchema_InForm_User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("DefaultRender")(DefaultRender)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Direction")(Direction)
-    __obj.updateDynamic("EntitySeparator")(EntitySeparator)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("IMEMode")(IMEMode)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("ListFormUrl")(ListFormUrl)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PictureOnly")(PictureOnly)
-    __obj.updateDynamic("PictureSize")(PictureSize)
-    __obj.updateDynamic("Presence")(Presence)
-    __obj.updateDynamic("ReadOnlyField")(ReadOnlyField)
-    __obj.updateDynamic("Required")(Required)
-    __obj.updateDynamic("RestrictedMode")(RestrictedMode)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UseMinWidth")(UseMinWidth)
-    __obj.updateDynamic("UserDisplayUrl")(UserDisplayUrl)
-    __obj.updateDynamic("WithPicture")(WithPicture)
-    __obj.updateDynamic("WithPictureDetail")(WithPictureDetail)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, DefaultRender = DefaultRender, Description = Description, Direction = Direction, EntitySeparator = EntitySeparator, FieldType = FieldType, Hidden = Hidden, IMEMode = IMEMode, Id = Id, ListFormUrl = ListFormUrl, Name = Name, PictureOnly = PictureOnly, PictureSize = PictureSize, Presence = Presence, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, Title = Title, Type = Type, UseMinWidth = UseMinWidth, UserDisplayUrl = UserDisplayUrl, WithPicture = WithPicture, WithPictureDetail = WithPictureDetail)
+  
     __obj.asInstanceOf[FieldSchema_InForm_User]
   }
 }

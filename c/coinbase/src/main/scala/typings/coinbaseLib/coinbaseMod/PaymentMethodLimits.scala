@@ -20,11 +20,8 @@ object PaymentMethodLimits {
     instant_buy: js.Array[PaymentMethodLimit],
     sell: js.Array[PaymentMethodLimit]
   ): PaymentMethodLimits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buy")(buy)
-    __obj.updateDynamic("deposit")(deposit)
-    __obj.updateDynamic("instant_buy")(instant_buy)
-    __obj.updateDynamic("sell")(sell)
+    val __obj = js.Dynamic.literal(buy = buy, deposit = deposit, instant_buy = instant_buy, sell = sell)
+  
     __obj.asInstanceOf[PaymentMethodLimits]
   }
 }

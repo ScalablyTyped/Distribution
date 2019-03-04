@@ -18,9 +18,7 @@ object AnimationTimeline {
     play: js.Function1[stdLib.KeyframeEffect, Animation],
     currentTime: scala.Int | scala.Double = null
   ): AnimationTimeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAnimations")(getAnimations)
-    __obj.updateDynamic("play")(play)
+    val __obj = js.Dynamic.literal(getAnimations = getAnimations, play = play)
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTimeline]
   }

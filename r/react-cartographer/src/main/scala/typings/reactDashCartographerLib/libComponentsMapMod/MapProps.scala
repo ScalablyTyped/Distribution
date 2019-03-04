@@ -44,14 +44,7 @@ object MapProps {
     longitude: scala.Int | scala.Double = null,
     state: java.lang.String = null
   ): MapProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("mapId")(mapId)
-    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    __obj.updateDynamic("providerKey")(providerKey)
-    __obj.updateDynamic("useBackgroundImageStyle")(useBackgroundImageStyle)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(height = height, mapId = mapId, provider = provider.asInstanceOf[js.Any], providerKey = providerKey, useBackgroundImageStyle = useBackgroundImageStyle, width = width, zoom = zoom)
     if (addressLine1 != null) __obj.updateDynamic("addressLine1")(addressLine1)
     if (city != null) __obj.updateDynamic("city")(city)
     if (country != null) __obj.updateDynamic("country")(country)

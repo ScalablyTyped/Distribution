@@ -32,10 +32,7 @@ object Options {
     size: java.lang.String,
     compress: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("keep")(keep)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(file = file, keep = keep, size = size)
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     __obj.asInstanceOf[Options]
   }

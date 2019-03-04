@@ -22,10 +22,8 @@ object ExecutionContext {
     evaluateHandle: js.Function2[EvaluateFn, /* repeated */ SerializableOrJSHandle, js.Promise[JSHandle]],
     queryObjects: js.Function1[JSHandle, JSHandle]
   ): ExecutionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluate")(evaluate)
-    __obj.updateDynamic("evaluateHandle")(evaluateHandle)
-    __obj.updateDynamic("queryObjects")(queryObjects)
+    val __obj = js.Dynamic.literal(evaluate = evaluate, evaluateHandle = evaluateHandle, queryObjects = queryObjects)
+  
     __obj.asInstanceOf[ExecutionContext]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Definitions {
     formContext: js.Any,
     widgets: org.scalablytyped.runtime.StringDictionary[reactDashJsonschemaDashFormLib.reactDashJsonschemaDashFormMod.Widget]
   ): Anon_Definitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitions")(definitions)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("formContext")(formContext)
-    __obj.updateDynamic("widgets")(widgets)
+    val __obj = js.Dynamic.literal(definitions = definitions, fields = fields, formContext = formContext, widgets = widgets)
+  
     __obj.asInstanceOf[Anon_Definitions]
   }
 }

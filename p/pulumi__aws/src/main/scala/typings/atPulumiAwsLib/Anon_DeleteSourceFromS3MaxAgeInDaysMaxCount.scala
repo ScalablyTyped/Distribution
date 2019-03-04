@@ -20,11 +20,8 @@ object Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount {
     maxCount: scala.Double,
     serviceRole: java.lang.String
   ): Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteSourceFromS3")(deleteSourceFromS3)
-    __obj.updateDynamic("maxAgeInDays")(maxAgeInDays)
-    __obj.updateDynamic("maxCount")(maxCount)
-    __obj.updateDynamic("serviceRole")(serviceRole)
+    val __obj = js.Dynamic.literal(deleteSourceFromS3 = deleteSourceFromS3, maxAgeInDays = maxAgeInDays, maxCount = maxCount, serviceRole = serviceRole)
+  
     __obj.asInstanceOf[Anon_DeleteSourceFromS3MaxAgeInDaysMaxCount]
   }
 }

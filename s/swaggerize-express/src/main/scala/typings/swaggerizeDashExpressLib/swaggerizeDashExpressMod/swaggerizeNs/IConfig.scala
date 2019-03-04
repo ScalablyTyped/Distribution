@@ -16,9 +16,8 @@ object IConfig {
     api: swaggerizeDashExpressLib.swaggerizeDashExpressMod.swaggerizeNs.SwaggerNs.ApiDefinition,
     routes: js.Array[expressLib.expressMod.eNs.IRoute]
   ): IConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(api = api, routes = routes)
+  
     __obj.asInstanceOf[IConfig]
   }
 }

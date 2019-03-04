@@ -20,9 +20,7 @@ object ArtyomCommand {
     description: java.lang.String = null,
     smart: js.UndefOr[scala.Boolean] = js.undefined
   ): ArtyomCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("indexes")(indexes)
+    val __obj = js.Dynamic.literal(action = action, indexes = indexes)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart)
     __obj.asInstanceOf[ArtyomCommand]

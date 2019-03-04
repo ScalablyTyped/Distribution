@@ -59,8 +59,7 @@ object CopyPattern {
     toType: copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.file | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.dir | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.template = null,
     transform: js.Function2[/* content */ java.lang.String, /* path */ java.lang.String, java.lang.String] = null
   ): CopyPattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
     if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten)

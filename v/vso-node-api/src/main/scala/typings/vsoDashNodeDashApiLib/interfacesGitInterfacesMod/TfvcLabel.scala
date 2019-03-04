@@ -22,16 +22,8 @@ object TfvcLabel {
     owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
     url: java.lang.String
   ): TfvcLabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("labelScope")(labelScope)
-    __obj.updateDynamic("modifiedDate")(modifiedDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, description = description, id = id, items = items, labelScope = labelScope, modifiedDate = modifiedDate, name = name, owner = owner, url = url)
+  
     __obj.asInstanceOf[TfvcLabel]
   }
 }

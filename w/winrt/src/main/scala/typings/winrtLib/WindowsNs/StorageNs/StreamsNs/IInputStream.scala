@@ -21,9 +21,8 @@ object IInputStream {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[IBuffer, scala.Double]
     ]
   ): IInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("readAsync")(readAsync)
+    val __obj = js.Dynamic.literal(close = close, readAsync = readAsync)
+  
     __obj.asInstanceOf[IInputStream]
   }
 }

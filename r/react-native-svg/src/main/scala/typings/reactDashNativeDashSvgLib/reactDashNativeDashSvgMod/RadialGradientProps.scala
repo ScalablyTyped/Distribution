@@ -30,8 +30,7 @@ object RadialGradientProps {
     rx: reactDashNativeDashSvgLib.NumberProp = null,
     ry: reactDashNativeDashSvgLib.NumberProp = null
   ): RadialGradientProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
     if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])

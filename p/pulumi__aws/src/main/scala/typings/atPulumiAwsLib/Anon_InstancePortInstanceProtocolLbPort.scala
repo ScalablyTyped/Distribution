@@ -22,11 +22,7 @@ object Anon_InstancePortInstanceProtocolLbPort {
     lbProtocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     sslCertificateId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_InstancePortInstanceProtocolLbPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instancePort")(instancePort.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceProtocol")(instanceProtocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("lbPort")(lbPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("lbProtocol")(lbProtocol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instancePort = instancePort.asInstanceOf[js.Any], instanceProtocol = instanceProtocol.asInstanceOf[js.Any], lbPort = lbPort.asInstanceOf[js.Any], lbProtocol = lbProtocol.asInstanceOf[js.Any])
     if (sslCertificateId != null) __obj.updateDynamic("sslCertificateId")(sslCertificateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_InstancePortInstanceProtocolLbPort]
   }

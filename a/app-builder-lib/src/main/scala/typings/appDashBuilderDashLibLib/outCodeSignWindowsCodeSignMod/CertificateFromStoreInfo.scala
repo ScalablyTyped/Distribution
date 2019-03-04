@@ -20,11 +20,8 @@ object CertificateFromStoreInfo {
     subject: java.lang.String,
     thumbprint: java.lang.String
   ): CertificateFromStoreInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLocalMachineStore")(isLocalMachineStore)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("thumbprint")(thumbprint)
+    val __obj = js.Dynamic.literal(isLocalMachineStore = isLocalMachineStore, store = store, subject = subject, thumbprint = thumbprint)
+  
     __obj.asInstanceOf[CertificateFromStoreInfo]
   }
 }

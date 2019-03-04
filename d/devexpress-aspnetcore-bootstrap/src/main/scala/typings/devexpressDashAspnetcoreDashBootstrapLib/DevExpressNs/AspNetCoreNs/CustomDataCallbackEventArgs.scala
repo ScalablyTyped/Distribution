@@ -12,9 +12,8 @@ trait CustomDataCallbackEventArgs extends EventArgs {
 object CustomDataCallbackEventArgs {
   @scala.inline
   def apply(result: java.lang.String, sender: Control): CustomDataCallbackEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(result = result, sender = sender)
+  
     __obj.asInstanceOf[CustomDataCallbackEventArgs]
   }
 }

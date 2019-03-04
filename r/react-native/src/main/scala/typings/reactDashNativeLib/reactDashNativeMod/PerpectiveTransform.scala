@@ -12,8 +12,8 @@ trait PerpectiveTransform extends js.Object {
 object PerpectiveTransform {
   @scala.inline
   def apply(perspective: scala.Double): PerpectiveTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("perspective")(perspective)
+    val __obj = js.Dynamic.literal(perspective = perspective)
+  
     __obj.asInstanceOf[PerpectiveTransform]
   }
 }

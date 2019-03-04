@@ -20,11 +20,8 @@ object Numeric {
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Numeric,
     validator: js.Function2[js.Any, js.Function1[/* valid */ scala.Boolean, scala.Unit], scala.Unit]
   ): Numeric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataType")(dataType)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("validator")(validator)
+    val __obj = js.Dynamic.literal(dataType = dataType, editor = editor, renderer = renderer, validator = validator)
+  
     __obj.asInstanceOf[Numeric]
   }
 }

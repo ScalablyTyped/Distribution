@@ -26,17 +26,8 @@ object ContentEvent {
     target: java.lang.String,
     `type`: java.lang.String
   ): ContentEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(content = content, format = format, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, set = set, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ContentEvent]
   }
 }

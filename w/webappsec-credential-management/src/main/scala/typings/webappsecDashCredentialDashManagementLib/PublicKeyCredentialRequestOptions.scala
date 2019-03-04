@@ -27,8 +27,7 @@ object PublicKeyCredentialRequestOptions {
     timeout: scala.Int | scala.Double = null,
     userVerification: UserVerificationRequirement = null
   ): PublicKeyCredentialRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
+    val __obj = js.Dynamic.literal(challenge = challenge)
     if (allowCredentials != null) __obj.updateDynamic("allowCredentials")(allowCredentials)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (rpId != null) __obj.updateDynamic("rpId")(rpId)

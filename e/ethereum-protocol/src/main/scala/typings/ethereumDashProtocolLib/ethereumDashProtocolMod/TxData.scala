@@ -20,8 +20,7 @@ object TxData {
     to: java.lang.String = null,
     value: scala.Double | java.lang.String | bignumberDotJsLib.bignumberDotJsMod.default = null
   ): TxData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(from = from)
     if (data != null) __obj.updateDynamic("data")(data)
     if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])

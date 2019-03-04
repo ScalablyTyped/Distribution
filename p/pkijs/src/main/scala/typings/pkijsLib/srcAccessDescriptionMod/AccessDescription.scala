@@ -22,12 +22,8 @@ object AccessDescription {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): AccessDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessLocation")(accessLocation)
-    __obj.updateDynamic("accessMethod")(accessMethod)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(accessLocation = accessLocation, accessMethod = accessMethod, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[AccessDescription]
   }
 }

@@ -18,9 +18,7 @@ object Anon_Index {
     node: atBabelTypesLib.atBabelTypesMod.Node,
     index: scala.Int | scala.Double = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, node = node.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Index]
   }

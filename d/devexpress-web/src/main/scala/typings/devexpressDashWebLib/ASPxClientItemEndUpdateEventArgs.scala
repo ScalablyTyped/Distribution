@@ -19,8 +19,8 @@ trait ASPxClientItemEndUpdateEventArgs extends ASPxClientEventArgs {
 object ASPxClientItemEndUpdateEventArgs {
   @scala.inline
   def apply(ItemName: java.lang.String): ASPxClientItemEndUpdateEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ItemName")(ItemName)
+    val __obj = js.Dynamic.literal(ItemName = ItemName)
+  
     __obj.asInstanceOf[ASPxClientItemEndUpdateEventArgs]
   }
 }

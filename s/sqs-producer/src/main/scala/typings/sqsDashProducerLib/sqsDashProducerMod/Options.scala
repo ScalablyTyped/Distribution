@@ -20,8 +20,7 @@ object Options {
     region: java.lang.String = null,
     sqs: awsDashSdkLib.awsDashSdkMod.SQS = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queueUrl")(queueUrl)
+    val __obj = js.Dynamic.literal(queueUrl = queueUrl)
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region)
     if (sqs != null) __obj.updateDynamic("sqs")(sqs)

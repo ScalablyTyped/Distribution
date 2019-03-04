@@ -30,15 +30,8 @@ object PDFPageViewport {
     transforms: js.Array[scala.Double],
     width: scala.Double
   ): PDFPageViewport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("convertToPdfPoint")(convertToPdfPoint)
-    __obj.updateDynamic("convertToViewportPoint")(convertToViewportPoint)
-    __obj.updateDynamic("convertToViewportRectangle")(convertToViewportRectangle)
-    __obj.updateDynamic("fontScale")(fontScale)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("transforms")(transforms)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(clone = clone, convertToPdfPoint = convertToPdfPoint, convertToViewportPoint = convertToViewportPoint, convertToViewportRectangle = convertToViewportRectangle, fontScale = fontScale, height = height, transforms = transforms, width = width)
+  
     __obj.asInstanceOf[PDFPageViewport]
   }
 }

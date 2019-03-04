@@ -18,10 +18,8 @@ object DeviceMapping {
     PathInContainer: java.lang.String,
     PathOnHost: java.lang.String
   ): DeviceMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CgroupPermissions")(CgroupPermissions)
-    __obj.updateDynamic("PathInContainer")(PathInContainer)
-    __obj.updateDynamic("PathOnHost")(PathOnHost)
+    val __obj = js.Dynamic.literal(CgroupPermissions = CgroupPermissions, PathInContainer = PathInContainer, PathOnHost = PathOnHost)
+  
     __obj.asInstanceOf[DeviceMapping]
   }
 }

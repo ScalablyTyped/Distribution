@@ -86,8 +86,7 @@ object MessageBoxOptions {
     title: java.lang.String = null,
     `type`: java.lang.String = null
   ): MessageBoxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (cancelId != null) __obj.updateDynamic("cancelId")(cancelId.asInstanceOf[js.Any])
     if (!js.isUndefined(checkboxChecked)) __obj.updateDynamic("checkboxChecked")(checkboxChecked)

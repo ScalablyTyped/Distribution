@@ -28,7 +28,8 @@ trait RegexReplaceExtension extends Extension {
 object RegexReplaceExtension {
   @scala.inline
   def apply(`type`: java.lang.String, regex: java.lang.String | stdLib.RegExp = null, replace: js.Any = null): RegexReplaceExtension = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
     if (replace != null) __obj.updateDynamic("replace")(replace)
     __obj.asInstanceOf[RegexReplaceExtension]

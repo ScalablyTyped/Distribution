@@ -39,13 +39,8 @@ object XSAXEventKeeperStatusChangeListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSAXEventKeeperStatusChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("blockingStatusChanged")(blockingStatusChanged)
-    __obj.updateDynamic("bufferStatusChanged")(bufferStatusChanged)
-    __obj.updateDynamic("collectionStatusChanged")(collectionStatusChanged)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, blockingStatusChanged = blockingStatusChanged, bufferStatusChanged = bufferStatusChanged, collectionStatusChanged = collectionStatusChanged, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeListener]
   }
 }

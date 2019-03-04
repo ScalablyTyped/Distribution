@@ -18,8 +18,7 @@ object FileData {
     content_type: java.lang.String = null,
     filename: java.lang.String = null
   ): FileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (content_type != null) __obj.updateDynamic("content_type")(content_type)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     __obj.asInstanceOf[FileData]

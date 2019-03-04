@@ -20,10 +20,8 @@ object StorageAdapter {
     get: js.Function2[java.lang.String, AdapterCallback, scala.Unit],
     put: js.Function3[java.lang.String, js.Any, AdapterCallback, scala.Unit]
   ): StorageAdapter[A] = {
-    val __obj = js.Dynamic.literal(`0` = `0`.asInstanceOf[js.Any])
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("put")(put)
+    val __obj = js.Dynamic.literal(del = del, get = get, put = put)
+    __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageAdapter[A]]
   }
 }

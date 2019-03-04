@@ -73,8 +73,7 @@ object OptionsTopBarButton {
     testID: java.lang.String = null,
     text: java.lang.String = null
   ): OptionsTopBarButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (color != null) __obj.updateDynamic("color")(color)
     if (component != null) __obj.updateDynamic("component")(component)
     if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint)

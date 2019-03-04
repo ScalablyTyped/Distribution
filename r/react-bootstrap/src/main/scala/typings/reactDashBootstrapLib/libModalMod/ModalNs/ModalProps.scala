@@ -61,8 +61,7 @@ object ModalProps {
     show: js.UndefOr[scala.Boolean] = js.undefined,
     transition: reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onHide")(onHide)
+    val __obj = js.Dynamic.literal(onHide = onHide)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)

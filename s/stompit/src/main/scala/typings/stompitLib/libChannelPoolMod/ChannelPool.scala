@@ -29,9 +29,8 @@ object ChannelPool {
     ],
     close: js.Function0[scala.Unit]
   ): ChannelPool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("close")(close)
+    val __obj = js.Dynamic.literal(channel = channel, close = close)
+  
     __obj.asInstanceOf[ChannelPool]
   }
 }

@@ -18,8 +18,7 @@ object Context {
     StringDictionary: /* data */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     callback: SassRenderCallback = null
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     __obj.asInstanceOf[Context]

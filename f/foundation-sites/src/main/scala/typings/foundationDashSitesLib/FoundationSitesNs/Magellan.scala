@@ -21,11 +21,8 @@ object Magellan {
     reflow: js.Function0[scala.Unit],
     scrollToLoc: js.Function1[java.lang.String, scala.Unit]
   ): Magellan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calcPoints")(calcPoints)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("reflow")(reflow)
-    __obj.updateDynamic("scrollToLoc")(scrollToLoc)
+    val __obj = js.Dynamic.literal(calcPoints = calcPoints, destroy = destroy, reflow = reflow, scrollToLoc = scrollToLoc)
+  
     __obj.asInstanceOf[Magellan]
   }
 }

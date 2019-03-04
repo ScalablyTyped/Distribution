@@ -18,8 +18,8 @@ object UserEventsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
     ]
   ): UserEventsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(log = log)
+  
     __obj.asInstanceOf[UserEventsResource]
   }
 }

@@ -18,10 +18,8 @@ object KnockoutAMDTemplate {
     defaultRequireTextPluginName: java.lang.String,
     defaultSuffix: java.lang.String
   ): KnockoutAMDTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultPath")(defaultPath)
-    __obj.updateDynamic("defaultRequireTextPluginName")(defaultRequireTextPluginName)
-    __obj.updateDynamic("defaultSuffix")(defaultSuffix)
+    val __obj = js.Dynamic.literal(defaultPath = defaultPath, defaultRequireTextPluginName = defaultRequireTextPluginName, defaultSuffix = defaultSuffix)
+  
     __obj.asInstanceOf[KnockoutAMDTemplate]
   }
 }

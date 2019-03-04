@@ -27,9 +27,8 @@ trait FilePermission extends js.Object {
 object FilePermission {
   @scala.inline
   def apply(Actions: java.lang.String, URL: java.lang.String): FilePermission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Actions")(Actions)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(Actions = Actions, URL = URL)
+  
     __obj.asInstanceOf[FilePermission]
   }
 }

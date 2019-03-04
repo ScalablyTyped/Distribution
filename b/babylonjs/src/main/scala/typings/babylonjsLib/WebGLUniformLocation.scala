@@ -12,8 +12,8 @@ trait WebGLUniformLocation extends js.Object {
 object WebGLUniformLocation {
   @scala.inline
   def apply(_currentState: js.Any): WebGLUniformLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_currentState")(_currentState)
+    val __obj = js.Dynamic.literal(_currentState = _currentState)
+  
     __obj.asInstanceOf[WebGLUniformLocation]
   }
 }

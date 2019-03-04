@@ -26,8 +26,7 @@ object VRPose {
     orientation: stdLib.Float32Array = null,
     position: stdLib.Float32Array = null
   ): VRPose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(timestamp = timestamp)
     if (angularAcceleration != null) __obj.updateDynamic("angularAcceleration")(angularAcceleration)
     if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity)
     if (linearAcceleration != null) __obj.updateDynamic("linearAcceleration")(linearAcceleration)

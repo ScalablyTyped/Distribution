@@ -24,8 +24,7 @@ object IOptions {
     pkg: IPackage = null,
     trackingProvider: java.lang.String = null
   ): IOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trackingCode")(trackingCode)
+    val __obj = js.Dynamic.literal(trackingCode = trackingCode)
     if (config != null) __obj.updateDynamic("config")(config)
     if (packageName != null) __obj.updateDynamic("packageName")(packageName)
     if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion)

@@ -27,14 +27,8 @@ object MessageBase {
     Subject: java.lang.String,
     Tag: java.lang.String
   ): MessageBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachments")(Attachments)
-    __obj.updateDynamic("Cc")(Cc)
-    __obj.updateDynamic("From")(From)
-    __obj.updateDynamic("MessageID")(MessageID)
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("Tag")(Tag)
+    val __obj = js.Dynamic.literal(Attachments = Attachments, Cc = Cc, From = From, MessageID = MessageID, Status = Status, Subject = Subject, Tag = Tag)
+  
     __obj.asInstanceOf[MessageBase]
   }
 }

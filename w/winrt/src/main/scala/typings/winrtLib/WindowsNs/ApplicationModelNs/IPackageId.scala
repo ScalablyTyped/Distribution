@@ -28,15 +28,8 @@ object IPackageId {
     resourceId: java.lang.String,
     version: PackageVersion
   ): IPackageId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("architecture")(architecture)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("publisherId")(publisherId)
-    __obj.updateDynamic("resourceId")(resourceId)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(architecture = architecture, familyName = familyName, fullName = fullName, name = name, publisher = publisher, publisherId = publisherId, resourceId = resourceId, version = version)
+  
     __obj.asInstanceOf[IPackageId]
   }
 }

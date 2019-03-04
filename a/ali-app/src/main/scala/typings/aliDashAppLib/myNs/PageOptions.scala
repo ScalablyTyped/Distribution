@@ -37,12 +37,7 @@ object PageOptions {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     onPullDownRefresh: js.ThisFunction0[/* this */ Page, scala.Unit] = null
   ): PageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onLaunch")(onLaunch)
-    __obj.updateDynamic("onShow")(onShow)
+    val __obj = js.Dynamic.literal(data = data, onError = onError, onHide = onHide, onLaunch = onLaunch, onShow = onShow)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
     __obj.asInstanceOf[PageOptions]

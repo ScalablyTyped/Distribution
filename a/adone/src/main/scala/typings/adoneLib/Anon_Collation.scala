@@ -20,10 +20,8 @@ object Anon_Collation {
     engine: js.Function0[java.lang.String],
     `type`: js.Function0[java.lang.String]
   ): Anon_Collation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("collation")(collation)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("engine")(engine)
+    val __obj = js.Dynamic.literal(collation = collation, column = column, engine = engine)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Collation]
   }
 }

@@ -13,9 +13,8 @@ trait SubDomain extends js.Object {
 object SubDomain {
   @scala.inline
   def apply(allow: js.Array[crossDashStorageLib.CrossStorageMethod], origin: stdLib.RegExp): SubDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allow")(allow)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(allow = allow, origin = origin)
+  
     __obj.asInstanceOf[SubDomain]
   }
 }

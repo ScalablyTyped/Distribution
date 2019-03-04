@@ -35,17 +35,8 @@ object Anon_P127 {
     p384: sjclLib.sjclMod.sjclNs.PseudoMersennePrimeStatic,
     p521: sjclLib.sjclMod.sjclNs.PseudoMersennePrimeStatic
   ): Anon_P127 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("p127")(p127)
-    __obj.updateDynamic("p192")(p192)
-    __obj.updateDynamic("p192k")(p192k)
-    __obj.updateDynamic("p224")(p224)
-    __obj.updateDynamic("p224k")(p224k)
-    __obj.updateDynamic("p25519")(p25519)
-    __obj.updateDynamic("p256")(p256)
-    __obj.updateDynamic("p256k")(p256k)
-    __obj.updateDynamic("p384")(p384)
-    __obj.updateDynamic("p521")(p521)
+    val __obj = js.Dynamic.literal(p127 = p127, p192 = p192, p192k = p192k, p224 = p224, p224k = p224k, p25519 = p25519, p256 = p256, p256k = p256k, p384 = p384, p521 = p521)
+  
     __obj.asInstanceOf[Anon_P127]
   }
 }

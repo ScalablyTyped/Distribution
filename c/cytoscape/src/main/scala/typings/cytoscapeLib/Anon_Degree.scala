@@ -12,8 +12,8 @@ trait Anon_Degree extends js.Object {
 object Anon_Degree {
   @scala.inline
   def apply(degree: js.Function0[scala.Double]): Anon_Degree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("degree")(degree)
+    val __obj = js.Dynamic.literal(degree = degree)
+  
     __obj.asInstanceOf[Anon_Degree]
   }
 }

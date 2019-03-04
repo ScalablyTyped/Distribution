@@ -166,22 +166,8 @@ object ServicesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configs")(configs)
-    __obj.updateDynamic("consumers")(consumers)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("generateConfigReport")(generateConfigReport)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getConfig")(getConfig)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("rollouts")(rollouts)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("undelete")(undelete)
+    val __obj = js.Dynamic.literal(configs = configs, consumers = consumers, create = create, delete = delete, disable = disable, enable = enable, generateConfigReport = generateConfigReport, get = get, getConfig = getConfig, getIamPolicy = getIamPolicy, list = list, rollouts = rollouts, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, undelete = undelete)
+  
     __obj.asInstanceOf[ServicesResource]
   }
 }

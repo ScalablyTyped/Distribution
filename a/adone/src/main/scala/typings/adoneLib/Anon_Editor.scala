@@ -28,15 +28,8 @@ object Anon_Editor {
     tmpdir: js.Function0[java.lang.String],
     user: js.Function0[java.lang.String]
   ): Anon_Editor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("home")(home)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("prompt")(prompt)
-    __obj.updateDynamic("shell")(shell)
-    __obj.updateDynamic("tmpdir")(tmpdir)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(editor = editor, home = home, hostname = hostname, path = path, prompt = prompt, shell = shell, tmpdir = tmpdir, user = user)
+  
     __obj.asInstanceOf[Anon_Editor]
   }
 }

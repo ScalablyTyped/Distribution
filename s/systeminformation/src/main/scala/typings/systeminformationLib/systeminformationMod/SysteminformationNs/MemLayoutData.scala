@@ -32,16 +32,8 @@ object MemLayoutData {
     voltageMax: scala.Double,
     voltageMin: scala.Double
   ): MemLayoutData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bank")(bank)
-    __obj.updateDynamic("clockSpeed")(clockSpeed)
-    __obj.updateDynamic("formFactor")(formFactor)
-    __obj.updateDynamic("partNum")(partNum)
-    __obj.updateDynamic("serialNum")(serialNum)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("voltageConfigured")(voltageConfigured)
-    __obj.updateDynamic("voltageMax")(voltageMax)
-    __obj.updateDynamic("voltageMin")(voltageMin)
+    val __obj = js.Dynamic.literal(bank = bank, clockSpeed = clockSpeed, formFactor = formFactor, partNum = partNum, serialNum = serialNum, size = size, voltageConfigured = voltageConfigured, voltageMax = voltageMax, voltageMin = voltageMin)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MemLayoutData]
   }
 }

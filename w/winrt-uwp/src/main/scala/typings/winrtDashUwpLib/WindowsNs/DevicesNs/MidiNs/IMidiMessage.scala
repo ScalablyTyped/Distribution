@@ -22,9 +22,8 @@ object IMidiMessage {
     timestamp: scala.Double,
     `type`: MidiMessageType
   ): IMidiMessage = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("rawData")(rawData)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(rawData = rawData, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IMidiMessage]
   }
 }

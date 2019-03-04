@@ -22,11 +22,7 @@ object QDimensionCell {
     select: js.Function0[scala.Unit],
     qNum: scala.Int | scala.Double = null
   ): QDimensionCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qElemNumber")(qElemNumber)
-    __obj.updateDynamic("qState")(qState)
-    __obj.updateDynamic("qText")(qText)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(qElemNumber = qElemNumber, qState = qState, qText = qText, select = select)
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[QDimensionCell]
   }

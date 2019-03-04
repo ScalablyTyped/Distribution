@@ -25,8 +25,7 @@ object StyleProps {
     rules: reactLib.reactMod.ReactNs.CSSProperties | StyleRules,
     scopeSelector: java.lang.String = null
   ): StyleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     if (scopeSelector != null) __obj.updateDynamic("scopeSelector")(scopeSelector)
     __obj.asInstanceOf[StyleProps]
   }

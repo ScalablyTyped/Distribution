@@ -16,8 +16,8 @@ trait Anon_Easing
 object Anon_Easing {
   @scala.inline
   def apply(easing: java.lang.String): Anon_Easing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("easing")(easing)
+    val __obj = js.Dynamic.literal(easing = easing)
+  
     __obj.asInstanceOf[Anon_Easing]
   }
 }

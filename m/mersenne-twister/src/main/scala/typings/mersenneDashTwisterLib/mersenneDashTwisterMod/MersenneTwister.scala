@@ -47,14 +47,8 @@ object MersenneTwister {
     random_int31: js.Function0[scala.Double],
     random_long: js.Function0[scala.Double]
   ): MersenneTwister = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init_seed")(init_seed)
-    __obj.updateDynamic("random")(random)
-    __obj.updateDynamic("random_excl")(random_excl)
-    __obj.updateDynamic("random_incl")(random_incl)
-    __obj.updateDynamic("random_int")(random_int)
-    __obj.updateDynamic("random_int31")(random_int31)
-    __obj.updateDynamic("random_long")(random_long)
+    val __obj = js.Dynamic.literal(init_seed = init_seed, random = random, random_excl = random_excl, random_incl = random_incl, random_int = random_int, random_int31 = random_int31, random_long = random_long)
+  
     __obj.asInstanceOf[MersenneTwister]
   }
 }

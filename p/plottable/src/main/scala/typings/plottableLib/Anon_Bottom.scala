@@ -20,11 +20,8 @@ object Anon_Bottom {
     right: plottableLib.plottableLibStrings.right,
     top: plottableLib.plottableLibStrings.top
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, left = left, right = right, top = top)
+  
     __obj.asInstanceOf[Anon_Bottom]
   }
 }

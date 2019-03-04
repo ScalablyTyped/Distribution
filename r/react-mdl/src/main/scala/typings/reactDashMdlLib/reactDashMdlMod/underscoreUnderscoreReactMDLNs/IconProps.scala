@@ -14,8 +14,7 @@ trait IconProps
 object IconProps {
   @scala.inline
   def apply(name: java.lang.String, HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null): IconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     __obj.asInstanceOf[IconProps]
   }

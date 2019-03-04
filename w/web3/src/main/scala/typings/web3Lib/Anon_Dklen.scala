@@ -16,12 +16,8 @@ trait Anon_Dklen extends js.Object {
 object Anon_Dklen {
   @scala.inline
   def apply(dklen: scala.Double, n: scala.Double, p: scala.Double, r: scala.Double, salt: java.lang.String): Anon_Dklen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dklen")(dklen)
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("salt")(salt)
+    val __obj = js.Dynamic.literal(dklen = dklen, n = n, p = p, r = r, salt = salt)
+  
     __obj.asInstanceOf[Anon_Dklen]
   }
 }

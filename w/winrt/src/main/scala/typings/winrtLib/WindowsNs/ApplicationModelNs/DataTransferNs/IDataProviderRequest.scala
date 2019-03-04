@@ -20,11 +20,8 @@ object IDataProviderRequest {
     getDeferral: js.Function0[DataProviderDeferral],
     setData: js.Function1[js.Any, scala.Unit]
   ): IDataProviderRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deadline")(deadline)
-    __obj.updateDynamic("formatId")(formatId)
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("setData")(setData)
+    val __obj = js.Dynamic.literal(deadline = deadline, formatId = formatId, getDeferral = getDeferral, setData = setData)
+  
     __obj.asInstanceOf[IDataProviderRequest]
   }
 }

@@ -14,10 +14,8 @@ trait TraversalContext extends js.Object {
 object TraversalContext {
   @scala.inline
   def apply(colorMap: js.Any, searchStatus: java.lang.String, undiscoveredMap: js.Any): TraversalContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorMap")(colorMap)
-    __obj.updateDynamic("searchStatus")(searchStatus)
-    __obj.updateDynamic("undiscoveredMap")(undiscoveredMap)
+    val __obj = js.Dynamic.literal(colorMap = colorMap, searchStatus = searchStatus, undiscoveredMap = undiscoveredMap)
+  
     __obj.asInstanceOf[TraversalContext]
   }
 }

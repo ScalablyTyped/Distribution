@@ -30,13 +30,8 @@ object Program {
     leadingComments: js.Array[estreeLib.estreeMod.Comment] = null,
     trailingComments: js.Array[estreeLib.estreeMod.Comment] = null
   ): Program = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(body = body, comments = comments, loc = loc, range = range, sourceType = sourceType.asInstanceOf[js.Any], tokens = tokens)
+    __obj.updateDynamic("type")(`type`)
     __obj.updateDynamic("type")(type_Program)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

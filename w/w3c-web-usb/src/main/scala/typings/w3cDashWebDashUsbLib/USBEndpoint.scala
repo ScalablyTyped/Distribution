@@ -20,10 +20,8 @@ object USBEndpoint {
     packetSize: scala.Double,
     `type`: USBEndpointType
   ): USBEndpoint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("endpointNumber")(endpointNumber)
-    __obj.updateDynamic("packetSize")(packetSize)
+    val __obj = js.Dynamic.literal(direction = direction, endpointNumber = endpointNumber, packetSize = packetSize)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[USBEndpoint]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Clear {
     getAll: js.Function2[stdLib.Element, scala.Boolean, js.Any],
     set: js.Function3[stdLib.Element, java.lang.String, js.Any, scala.Unit]
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, getAll = getAll, set = set)
+  
     __obj.asInstanceOf[Anon_Clear]
   }
 }

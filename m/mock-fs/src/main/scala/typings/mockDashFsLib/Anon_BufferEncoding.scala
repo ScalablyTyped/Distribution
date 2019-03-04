@@ -14,10 +14,10 @@ trait Anon_BufferEncoding extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     * @param encoding The expected string encoding.
     */
-  def `__promisify__`(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
-  def `__promisify__`(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def __promisify__(fd: scala.Double, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def __promisify__(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def __promisify__(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -25,11 +25,11 @@ trait Anon_BufferEncoding extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,
     offset: scala.Double,

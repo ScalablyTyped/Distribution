@@ -18,9 +18,7 @@ object Factory {
     destroy: js.Function1[T, js.Thenable[scala.Unit]],
     validate: js.Function1[/* client */ T, js.Thenable[scala.Boolean]] = null
   ): Factory[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("destroy")(destroy)
+    val __obj = js.Dynamic.literal(create = create, destroy = destroy)
     if (validate != null) __obj.updateDynamic("validate")(validate)
     __obj.asInstanceOf[Factory[T]]
   }

@@ -20,11 +20,8 @@ object IInclinometerReading {
     timestamp: stdLib.Date,
     yawDegrees: scala.Double
   ): IInclinometerReading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pitchDegrees")(pitchDegrees)
-    __obj.updateDynamic("rollDegrees")(rollDegrees)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("yawDegrees")(yawDegrees)
+    val __obj = js.Dynamic.literal(pitchDegrees = pitchDegrees, rollDegrees = rollDegrees, timestamp = timestamp, yawDegrees = yawDegrees)
+  
     __obj.asInstanceOf[IInclinometerReading]
   }
 }

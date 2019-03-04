@@ -28,10 +28,7 @@ object CustomIconComponentProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     viewBox: java.lang.String = null
   ): CustomIconComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fill = fill, height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
     if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)

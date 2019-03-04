@@ -23,10 +23,8 @@ object Foldable2C {
       js.Any
     ]
   ): Foldable2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("reduce")(reduce)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], reduce = reduce)
+  
     __obj.asInstanceOf[Foldable2C[F, L]]
   }
 }

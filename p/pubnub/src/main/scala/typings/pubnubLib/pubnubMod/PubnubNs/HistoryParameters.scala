@@ -27,9 +27,7 @@ object HistoryParameters {
     start: scala.Int | scala.Double = null,
     stringifiedTimeToken: js.UndefOr[scala.Boolean] = js.undefined
   ): HistoryParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("count")(count)
+    val __obj = js.Dynamic.literal(channel = channel, count = count)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (!js.isUndefined(includeTimetoken)) __obj.updateDynamic("includeTimetoken")(includeTimetoken)
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)

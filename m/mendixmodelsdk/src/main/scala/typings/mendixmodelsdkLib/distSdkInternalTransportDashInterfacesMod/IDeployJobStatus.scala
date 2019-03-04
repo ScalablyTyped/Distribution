@@ -36,11 +36,8 @@ object IDeployJobStatus {
     buildstatus: java.lang.String = null,
     consistencyErrors: js.Array[IProblem] = null
   ): IDeployJobStatus = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("jobid")(jobid)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("trace")(trace)
+    val __obj = js.Dynamic.literal(jobid = jobid, startTime = startTime, status = status, trace = trace)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (appUrl != null) __obj.updateDynamic("appUrl")(appUrl)
     if (buildErrors != null) __obj.updateDynamic("buildErrors")(buildErrors)
     if (buildstatus != null) __obj.updateDynamic("buildstatus")(buildstatus)

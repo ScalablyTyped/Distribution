@@ -30,8 +30,7 @@ object ProxyConfig {
     socksUsername: java.lang.String = null,
     sslProxy: java.lang.String = null
   ): ProxyConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("proxyType")(proxyType)
+    val __obj = js.Dynamic.literal(proxyType = proxyType)
     if (ftpProxy != null) __obj.updateDynamic("ftpProxy")(ftpProxy)
     if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy)
     if (noProxy != null) __obj.updateDynamic("noProxy")(noProxy)

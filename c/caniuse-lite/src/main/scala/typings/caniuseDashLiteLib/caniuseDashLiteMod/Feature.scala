@@ -23,10 +23,8 @@ trait Feature extends js.Object {
 object Feature {
   @scala.inline
   def apply(stats: StatsByAgentID, status: FeatureStatus, title: java.lang.String): Feature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(stats = stats, status = status.asInstanceOf[js.Any], title = title)
+  
     __obj.asInstanceOf[Feature]
   }
 }

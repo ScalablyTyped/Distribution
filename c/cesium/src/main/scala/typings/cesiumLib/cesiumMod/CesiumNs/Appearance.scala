@@ -30,16 +30,8 @@ object Appearance {
     translucent: scala.Boolean,
     vertexShaderSource: java.lang.String
   ): Appearance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
-    __obj.updateDynamic("getFragmentShaderSource")(getFragmentShaderSource)
-    __obj.updateDynamic("getRenderState")(getRenderState)
-    __obj.updateDynamic("isTranslucent")(isTranslucent)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("renderState")(renderState)
-    __obj.updateDynamic("translucent")(translucent)
-    __obj.updateDynamic("vertexShaderSource")(vertexShaderSource)
+    val __obj = js.Dynamic.literal(closed = closed, fragmentShaderSource = fragmentShaderSource, getFragmentShaderSource = getFragmentShaderSource, getRenderState = getRenderState, isTranslucent = isTranslucent, material = material, renderState = renderState, translucent = translucent, vertexShaderSource = vertexShaderSource)
+  
     __obj.asInstanceOf[Appearance]
   }
 }

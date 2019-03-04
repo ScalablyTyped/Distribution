@@ -42,9 +42,7 @@ object LinkAggregationGroupArgs {
     numberOfConnections: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): LinkAggregationGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionsBandwidth")(connectionsBandwidth.asInstanceOf[js.Any])
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectionsBandwidth = connectionsBandwidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (numberOfConnections != null) __obj.updateDynamic("numberOfConnections")(numberOfConnections.asInstanceOf[js.Any])

@@ -46,24 +46,8 @@ object ChampionDto {
     tags: js.Array[java.lang.String],
     title: java.lang.String
   ): ChampionDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allytips")(allytips)
-    __obj.updateDynamic("blurb")(blurb)
-    __obj.updateDynamic("enemytips")(enemytips)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("lore")(lore)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partype")(partype)
-    __obj.updateDynamic("passive")(passive)
-    __obj.updateDynamic("recommended")(recommended)
-    __obj.updateDynamic("skins")(skins)
-    __obj.updateDynamic("spells")(spells)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(allytips = allytips, blurb = blurb, enemytips = enemytips, id = id, image = image, info = info, key = key, lore = lore, name = name, partype = partype, passive = passive, recommended = recommended, skins = skins, spells = spells, stats = stats, tags = tags, title = title)
+  
     __obj.asInstanceOf[ChampionDto]
   }
 }

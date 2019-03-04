@@ -22,12 +22,8 @@ object KeyboardCommandOptions {
     meta: scala.Boolean,
     shift: scala.Boolean
   ): KeyboardCommandOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(alt = alt, command = command, key = key, meta = meta, shift = shift)
+  
     __obj.asInstanceOf[KeyboardCommandOptions]
   }
 }

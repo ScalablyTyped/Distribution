@@ -49,15 +49,8 @@ object BacklogConfiguration {
     url: java.lang.String,
     workItemTypeMappedStates: js.Array[WorkItemTypeStateInfo]
   ): BacklogConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backlogFields")(backlogFields)
-    __obj.updateDynamic("bugsBehavior")(bugsBehavior)
-    __obj.updateDynamic("hiddenBacklogs")(hiddenBacklogs)
-    __obj.updateDynamic("portfolioBacklogs")(portfolioBacklogs)
-    __obj.updateDynamic("requirementBacklog")(requirementBacklog)
-    __obj.updateDynamic("taskBacklog")(taskBacklog)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItemTypeMappedStates")(workItemTypeMappedStates)
+    val __obj = js.Dynamic.literal(backlogFields = backlogFields, bugsBehavior = bugsBehavior, hiddenBacklogs = hiddenBacklogs, portfolioBacklogs = portfolioBacklogs, requirementBacklog = requirementBacklog, taskBacklog = taskBacklog, url = url, workItemTypeMappedStates = workItemTypeMappedStates)
+  
     __obj.asInstanceOf[BacklogConfiguration]
   }
 }

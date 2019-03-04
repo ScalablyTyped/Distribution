@@ -55,23 +55,8 @@ object SingleBackend {
     release: js.Function0[scala.Unit],
     supportsEntity: js.Function1[java.lang.String, scala.Boolean]
   ): SingleBackend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdminEntity")(AdminEntity)
-    __obj.updateDynamic("OwnerEntity")(OwnerEntity)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAdminEntity")(getAdminEntity)
-    __obj.updateDynamic("getComponentSchema")(getComponentSchema)
-    __obj.updateDynamic("getLayer")(getLayer)
-    __obj.updateDynamic("getLayers")(getLayers)
-    __obj.updateDynamic("getMultipleLayers")(getMultipleLayers)
-    __obj.updateDynamic("getOwnerEntity")(getOwnerEntity)
-    __obj.updateDynamic("getUpdatableLayer")(getUpdatableLayer)
-    __obj.updateDynamic("getUpdateLayerId")(getUpdateLayerId)
-    __obj.updateDynamic("isEqualEntity")(isEqualEntity)
-    __obj.updateDynamic("listLayerIds")(listLayerIds)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("supportsEntity")(supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getComponentSchema = getComponentSchema, getLayer = getLayer, getLayers = getLayers, getMultipleLayers = getMultipleLayers, getOwnerEntity = getOwnerEntity, getUpdatableLayer = getUpdatableLayer, getUpdateLayerId = getUpdateLayerId, isEqualEntity = isEqualEntity, listLayerIds = listLayerIds, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+  
     __obj.asInstanceOf[SingleBackend]
   }
 }

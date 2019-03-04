@@ -22,10 +22,7 @@ object ILockData {
     duration: scala.Int | scala.Double = null,
     lockId: java.lang.String = null
   ): ILockData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lockType")(lockType)
-    __obj.updateDynamic("requestedBy")(requestedBy)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(lockType = lockType, requestedBy = requestedBy, timestamp = timestamp)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (lockId != null) __obj.updateDynamic("lockId")(lockId)
     __obj.asInstanceOf[ILockData]

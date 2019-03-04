@@ -42,20 +42,7 @@ object Browser {
     ANDROID_VERSION: scala.Int | scala.Double = null,
     IOS_VERSION: scala.Int | scala.Double = null
   ): Browser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHROME_VERSION")(CHROME_VERSION)
-    __obj.updateDynamic("IE_VERSION")(IE_VERSION)
-    __obj.updateDynamic("IS_ANDROID")(IS_ANDROID)
-    __obj.updateDynamic("IS_ANY_SAFARI")(IS_ANY_SAFARI)
-    __obj.updateDynamic("IS_CHROME")(IS_CHROME)
-    __obj.updateDynamic("IS_EDGE")(IS_EDGE)
-    __obj.updateDynamic("IS_IOS")(IS_IOS)
-    __obj.updateDynamic("IS_IPAD")(IS_IPAD)
-    __obj.updateDynamic("IS_IPHONE")(IS_IPHONE)
-    __obj.updateDynamic("IS_IPOD")(IS_IPOD)
-    __obj.updateDynamic("IS_NATIVE_ANDROID")(IS_NATIVE_ANDROID)
-    __obj.updateDynamic("IS_SAFARI")(IS_SAFARI)
-    __obj.updateDynamic("TOUCH_ENABLED")(TOUCH_ENABLED)
+    val __obj = js.Dynamic.literal(CHROME_VERSION = CHROME_VERSION, IE_VERSION = IE_VERSION, IS_ANDROID = IS_ANDROID, IS_ANY_SAFARI = IS_ANY_SAFARI, IS_CHROME = IS_CHROME, IS_EDGE = IS_EDGE, IS_IOS = IS_IOS, IS_IPAD = IS_IPAD, IS_IPHONE = IS_IPHONE, IS_IPOD = IS_IPOD, IS_NATIVE_ANDROID = IS_NATIVE_ANDROID, IS_SAFARI = IS_SAFARI, TOUCH_ENABLED = TOUCH_ENABLED)
     if (ANDROID_VERSION != null) __obj.updateDynamic("ANDROID_VERSION")(ANDROID_VERSION.asInstanceOf[js.Any])
     if (IOS_VERSION != null) __obj.updateDynamic("IOS_VERSION")(IOS_VERSION.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]

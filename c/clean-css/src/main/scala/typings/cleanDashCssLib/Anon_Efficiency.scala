@@ -32,11 +32,8 @@ object Anon_Efficiency {
     originalSize: scala.Double,
     timeSpent: scala.Double
   ): Anon_Efficiency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("efficiency")(efficiency)
-    __obj.updateDynamic("minifiedSize")(minifiedSize)
-    __obj.updateDynamic("originalSize")(originalSize)
-    __obj.updateDynamic("timeSpent")(timeSpent)
+    val __obj = js.Dynamic.literal(efficiency = efficiency, minifiedSize = minifiedSize, originalSize = originalSize, timeSpent = timeSpent)
+  
     __obj.asInstanceOf[Anon_Efficiency]
   }
 }

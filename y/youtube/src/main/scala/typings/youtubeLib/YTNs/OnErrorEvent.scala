@@ -15,9 +15,8 @@ trait OnErrorEvent extends PlayerEvent {
 object OnErrorEvent {
   @scala.inline
   def apply(data: PlayerError, target: Player): OnErrorEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(data = data, target = target)
+  
     __obj.asInstanceOf[OnErrorEvent]
   }
 }

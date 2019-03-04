@@ -18,8 +18,8 @@ object JSONSchemaArrayType {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.array,
     id: java.lang.String = null
   ): JSONSchemaArrayType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[JSONSchemaArrayType]
   }

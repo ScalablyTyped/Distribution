@@ -22,9 +22,8 @@ object StepperOption {
     direction: scala.Int | scala.Double = null,
     rpm: scala.Int | scala.Double = null
   ): StepperOption = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pins")(pins)
-    __obj.updateDynamic("stepsPerRev")(stepsPerRev)
+    val __obj = js.Dynamic.literal(pins = pins, stepsPerRev = stepsPerRev)
+    __obj.updateDynamic("type")(`type`)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (rpm != null) __obj.updateDynamic("rpm")(rpm.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperOption]

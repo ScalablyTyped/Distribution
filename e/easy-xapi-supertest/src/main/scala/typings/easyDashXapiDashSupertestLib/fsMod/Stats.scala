@@ -52,27 +52,8 @@ object Stats {
     size: scala.Double,
     uid: scala.Double
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atime")(atime)
-    __obj.updateDynamic("blksize")(blksize)
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("dev")(dev)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("ino")(ino)
-    __obj.updateDynamic("isBlockDevice")(isBlockDevice)
-    __obj.updateDynamic("isCharacterDevice")(isCharacterDevice)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("isFIFO")(isFIFO)
-    __obj.updateDynamic("isFile")(isFile)
-    __obj.updateDynamic("isSocket")(isSocket)
-    __obj.updateDynamic("isSymbolicLink")(isSymbolicLink)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("nlink")(nlink)
-    __obj.updateDynamic("rdev")(rdev)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(atime = atime, blksize = blksize, blocks = blocks, ctime = ctime, dev = dev, gid = gid, ino = ino, isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink, mode = mode, mtime = mtime, nlink = nlink, rdev = rdev, size = size, uid = uid)
+  
     __obj.asInstanceOf[Stats]
   }
 }

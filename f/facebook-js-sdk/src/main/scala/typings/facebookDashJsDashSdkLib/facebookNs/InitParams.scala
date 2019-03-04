@@ -28,8 +28,7 @@ object InitParams {
     version: java.lang.String = null,
     xfbml: js.UndefOr[scala.Boolean] = js.undefined
   ): InitParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
+    val __obj = js.Dynamic.literal(appId = appId)
     if (!js.isUndefined(autoLogAppEvents)) __obj.updateDynamic("autoLogAppEvents")(autoLogAppEvents)
     if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie)
     if (!js.isUndefined(frictionlessRequests)) __obj.updateDynamic("frictionlessRequests")(frictionlessRequests)

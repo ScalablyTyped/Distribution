@@ -12,8 +12,8 @@ trait Polyline extends js.Object {
 object Polyline {
   @scala.inline
   def apply(pm: leafletDotPmLib.leafletMod.PMNs.EditNs.Line): Polyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pm")(pm)
+    val __obj = js.Dynamic.literal(pm = pm)
+  
     __obj.asInstanceOf[Polyline]
   }
 }

@@ -12,9 +12,9 @@ class OnDisconnect protected () extends js.Object {
     * @param {!Repo} repo_
     * @param {!Path} path_
     */
-  def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, `path_`: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path) = this()
-  var `path_`: js.Any = js.native
-  var `repo_`: js.Any = js.native
+  def this(repo_ : atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path_ : atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path) = this()
+  var path_ : js.Any = js.native
+  var repo_ : js.Any = js.native
   /**
     * @param {function(?Error)=} onComplete
     * @return {!firebase.Promise}

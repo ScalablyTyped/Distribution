@@ -33,8 +33,7 @@ object DownloadOptions {
     method: java.lang.String = null,
     saveAs: js.UndefOr[scala.Boolean] = js.undefined
   ): DownloadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body)
     if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction)
     if (filename != null) __obj.updateDynamic("filename")(filename)

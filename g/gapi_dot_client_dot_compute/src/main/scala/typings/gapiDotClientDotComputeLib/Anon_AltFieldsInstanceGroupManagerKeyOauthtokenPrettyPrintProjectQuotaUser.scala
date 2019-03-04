@@ -60,11 +60,7 @@ object Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrintProjectQuotaUse
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrintProjectQuotaUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceGroupManager")(instanceGroupManager)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(instanceGroupManager = instanceGroupManager, project = project, region = region, size = size)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

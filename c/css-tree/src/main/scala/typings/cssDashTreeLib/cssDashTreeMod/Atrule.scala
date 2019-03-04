@@ -24,8 +24,8 @@ object Atrule {
     loc: CssLocation = null,
     prelude: AtrulePrelude | Raw = null
   ): Atrule = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (block != null) __obj.updateDynamic("block")(block)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (prelude != null) __obj.updateDynamic("prelude")(prelude.asInstanceOf[js.Any])

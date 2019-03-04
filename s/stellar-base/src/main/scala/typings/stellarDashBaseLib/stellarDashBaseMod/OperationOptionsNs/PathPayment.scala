@@ -27,12 +27,7 @@ object PathPayment {
     path: js.Array[stellarDashBaseLib.stellarDashBaseMod.Asset] = null,
     source: java.lang.String = null
   ): PathPayment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destAmount")(destAmount)
-    __obj.updateDynamic("destAsset")(destAsset)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("sendAsset")(sendAsset)
-    __obj.updateDynamic("sendMax")(sendMax)
+    val __obj = js.Dynamic.literal(destAmount = destAmount, destAsset = destAsset, destination = destination, sendAsset = sendAsset, sendMax = sendMax)
     if (path != null) __obj.updateDynamic("path")(path)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[PathPayment]

@@ -25,13 +25,8 @@ object SenderSignatureBase {
     Name: java.lang.String,
     ReplyToEmailAddress: java.lang.String
   ): SenderSignatureBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Confirmed")(Confirmed)
-    __obj.updateDynamic("Domain")(Domain)
-    __obj.updateDynamic("EmailAddress")(EmailAddress)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReplyToEmailAddress")(ReplyToEmailAddress)
+    val __obj = js.Dynamic.literal(Confirmed = Confirmed, Domain = Domain, EmailAddress = EmailAddress, ID = ID, Name = Name, ReplyToEmailAddress = ReplyToEmailAddress)
+  
     __obj.asInstanceOf[SenderSignatureBase]
   }
 }

@@ -30,8 +30,8 @@ object CustomPropertyRangeSlider {
     show: scala.Boolean | ShowFunction = null,
     step: scala.Int | scala.Double = null
   ): CustomPropertyRangeSlider = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

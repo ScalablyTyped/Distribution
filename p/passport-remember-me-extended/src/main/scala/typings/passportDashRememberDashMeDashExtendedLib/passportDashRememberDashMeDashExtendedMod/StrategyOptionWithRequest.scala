@@ -16,8 +16,7 @@ object StrategyOptionWithRequest {
     cookie: expressLib.expressMod.eNs.CookieOptions = null,
     key: java.lang.String = null
   ): StrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[StrategyOptionWithRequest]

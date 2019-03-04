@@ -12,8 +12,8 @@ trait Anon_AntdMenuTheme extends js.Object {
 object Anon_AntdMenuTheme {
   @scala.inline
   def apply(antdMenuTheme: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]): Anon_AntdMenuTheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antdMenuTheme")(antdMenuTheme)
+    val __obj = js.Dynamic.literal(antdMenuTheme = antdMenuTheme)
+  
     __obj.asInstanceOf[Anon_AntdMenuTheme]
   }
 }

@@ -24,8 +24,7 @@ object DbStorageOptions {
       _
     ] = null
   ): DbStorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     __obj.asInstanceOf[DbStorageOptions]
   }

@@ -13,8 +13,8 @@ trait IdentifierTokenType extends _ValueExpressionType {
 object IdentifierTokenType {
   @scala.inline
   def apply(names: js.Array[java.lang.String], `type`: js.Symbol): IdentifierTokenType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(names = names)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IdentifierTokenType]
   }
 }

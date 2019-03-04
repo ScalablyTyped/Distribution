@@ -18,10 +18,8 @@ object Bookmark {
     getPosition: js.Function0[Position],
     remove: js.Function0[scala.Unit]
   ): Bookmark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getId = getId, getPosition = getPosition, remove = remove)
+  
     __obj.asInstanceOf[Bookmark]
   }
 }

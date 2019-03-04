@@ -59,16 +59,8 @@ object IndexInfo {
     store_id: java.lang.String,
     using: couchbaseLib.couchbaseLibStrings.gsi
   ): IndexInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index_key")(index_key)
-    __obj.updateDynamic("is_primary")(is_primary)
-    __obj.updateDynamic("keyspace_id")(keyspace_id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace_id")(namespace_id)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("store_id")(store_id)
-    __obj.updateDynamic("using")(using)
+    val __obj = js.Dynamic.literal(id = id, index_key = index_key, is_primary = is_primary, keyspace_id = keyspace_id, name = name, namespace_id = namespace_id, state = state, store_id = store_id, using = using)
+  
     __obj.asInstanceOf[IndexInfo]
   }
 }

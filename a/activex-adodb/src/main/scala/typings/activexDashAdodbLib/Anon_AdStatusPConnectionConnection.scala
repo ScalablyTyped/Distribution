@@ -16,9 +16,8 @@ object Anon_AdStatusPConnectionConnection {
     adStatus: activexDashAdodbLib.ADODBNs.EventStatusEnum,
     pConnection: activexDashAdodbLib.ADODBNs.Connection
   ): Anon_AdStatusPConnectionConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adStatus")(adStatus)
-    __obj.updateDynamic("pConnection")(pConnection)
+    val __obj = js.Dynamic.literal(adStatus = adStatus, pConnection = pConnection)
+  
     __obj.asInstanceOf[Anon_AdStatusPConnectionConnection]
   }
 }

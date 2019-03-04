@@ -16,9 +16,8 @@ object Anon_CONNECTEDConnectedFAILURE {
     CONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.connected,
     FAILURE: chromeDashAppsLib.chromeDashAppsLibStrings.failure
   ): Anon_CONNECTEDConnectedFAILURE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CONNECTED")(CONNECTED)
-    __obj.updateDynamic("FAILURE")(FAILURE)
+    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED, FAILURE = FAILURE)
+  
     __obj.asInstanceOf[Anon_CONNECTEDConnectedFAILURE]
   }
 }

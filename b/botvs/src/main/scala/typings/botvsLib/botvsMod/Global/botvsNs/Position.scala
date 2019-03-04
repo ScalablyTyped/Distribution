@@ -59,15 +59,8 @@ object Position {
     Profit: scala.Double,
     Type: VPositionType
   ): Position = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Amount")(Amount)
-    __obj.updateDynamic("CanCover")(CanCover)
-    __obj.updateDynamic("ContractType")(ContractType)
-    __obj.updateDynamic("FrozenAmount")(FrozenAmount)
-    __obj.updateDynamic("MarginLevel")(MarginLevel)
-    __obj.updateDynamic("Price")(Price)
-    __obj.updateDynamic("Profit")(Profit)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Amount = Amount, CanCover = CanCover, ContractType = ContractType, FrozenAmount = FrozenAmount, MarginLevel = MarginLevel, Price = Price, Profit = Profit, Type = Type)
+  
     __obj.asInstanceOf[Position]
   }
 }

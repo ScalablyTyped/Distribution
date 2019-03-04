@@ -32,8 +32,7 @@ object ModelConfiguration {
     updatedAt: java.lang.String = null,
     validation: joiLib.joiMod.ValidationOptions = null
   ): ModelConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashKey")(hashKey)
+    val __obj = js.Dynamic.literal(hashKey = hashKey)
     if (!js.isUndefined(createdAt)) __obj.updateDynamic("createdAt")(createdAt)
     if (indexes != null) __obj.updateDynamic("indexes")(indexes)
     if (log != null) __obj.updateDynamic("log")(log)

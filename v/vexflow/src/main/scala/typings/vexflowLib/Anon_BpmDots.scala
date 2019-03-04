@@ -15,10 +15,7 @@ trait Anon_BpmDots extends js.Object {
 object Anon_BpmDots {
   @scala.inline
   def apply(bpm: scala.Double, dots: scala.Double, duration: java.lang.String, name: java.lang.String = null): Anon_BpmDots = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bpm")(bpm)
-    __obj.updateDynamic("dots")(dots)
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(bpm = bpm, dots = dots, duration = duration)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Anon_BpmDots]
   }

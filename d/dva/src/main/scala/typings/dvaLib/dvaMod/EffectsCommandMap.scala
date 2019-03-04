@@ -24,12 +24,7 @@ object EffectsCommandMap {
     take: js.Function,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): EffectsCommandMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("call")(call)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("take")(take)
+    val __obj = js.Dynamic.literal(call = call, cancel = cancel, put = put, select = select, take = take)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[EffectsCommandMap]
   }

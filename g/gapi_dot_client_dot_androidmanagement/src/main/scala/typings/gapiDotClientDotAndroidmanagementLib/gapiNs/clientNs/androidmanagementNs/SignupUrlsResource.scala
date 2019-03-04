@@ -18,8 +18,8 @@ object SignupUrlsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SignupUrl]
     ]
   ): SignupUrlsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[SignupUrlsResource]
   }
 }

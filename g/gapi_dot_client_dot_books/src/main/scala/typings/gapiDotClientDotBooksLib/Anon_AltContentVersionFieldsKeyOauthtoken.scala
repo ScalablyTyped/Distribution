@@ -45,8 +45,7 @@ object Anon_AltContentVersionFieldsKeyOauthtoken {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltContentVersionFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
     if (fields != null) __obj.updateDynamic("fields")(fields)

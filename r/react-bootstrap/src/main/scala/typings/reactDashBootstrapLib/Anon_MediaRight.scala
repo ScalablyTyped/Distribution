@@ -12,8 +12,8 @@ trait Anon_MediaRight extends js.Object {
 object Anon_MediaRight {
   @scala.inline
   def apply(MediaRightNs: js.Any): Anon_MediaRight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MediaRightNs")(MediaRightNs)
+    val __obj = js.Dynamic.literal(MediaRightNs = MediaRightNs)
+  
     __obj.asInstanceOf[Anon_MediaRight]
   }
 }

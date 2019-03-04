@@ -24,13 +24,8 @@ object Anon_CompressedSizeDisknum {
     signature: scala.Double,
     uncompressedSize: scala.Double
   ): Anon_CompressedSizeDisknum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressedSize")(compressedSize)
-    __obj.updateDynamic("disknum")(disknum)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("partsize")(partsize)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("uncompressedSize")(uncompressedSize)
+    val __obj = js.Dynamic.literal(compressedSize = compressedSize, disknum = disknum, offset = offset, partsize = partsize, signature = signature, uncompressedSize = uncompressedSize)
+  
     __obj.asInstanceOf[Anon_CompressedSizeDisknum]
   }
 }

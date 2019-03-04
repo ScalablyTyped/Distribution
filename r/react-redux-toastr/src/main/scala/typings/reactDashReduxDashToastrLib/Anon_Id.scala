@@ -20,11 +20,8 @@ object Anon_Id {
     options: reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ConfirmToastrOptions | reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.ConfirmToastrCustomOptions,
     show: scala.Boolean
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(id = id, message = message, options = options.asInstanceOf[js.Any], show = show)
+  
     __obj.asInstanceOf[Anon_Id]
   }
 }

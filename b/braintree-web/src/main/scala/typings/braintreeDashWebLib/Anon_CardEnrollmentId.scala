@@ -20,11 +20,8 @@ object Anon_CardEnrollmentId {
     hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields,
     smsCode: java.lang.String
   ): Anon_CardEnrollmentId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("card")(card)
-    __obj.updateDynamic("enrollmentId")(enrollmentId)
-    __obj.updateDynamic("hostedFields")(hostedFields)
-    __obj.updateDynamic("smsCode")(smsCode)
+    val __obj = js.Dynamic.literal(card = card, enrollmentId = enrollmentId, hostedFields = hostedFields, smsCode = smsCode)
+  
     __obj.asInstanceOf[Anon_CardEnrollmentId]
   }
 }

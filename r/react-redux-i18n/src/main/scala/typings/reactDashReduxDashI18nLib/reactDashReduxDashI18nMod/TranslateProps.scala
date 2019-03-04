@@ -24,8 +24,7 @@ object TranslateProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null
   ): TranslateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(dangerousHTML)) __obj.updateDynamic("dangerousHTML")(dangerousHTML)

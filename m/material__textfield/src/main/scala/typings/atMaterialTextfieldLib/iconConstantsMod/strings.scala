@@ -17,9 +17,8 @@ object strings {
     ICON_EVENT: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`MDCTextField:icon`,
     ICON_ROLE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.button
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ICON_EVENT")(ICON_EVENT)
-    __obj.updateDynamic("ICON_ROLE")(ICON_ROLE)
+    val __obj = js.Dynamic.literal(ICON_EVENT = ICON_EVENT, ICON_ROLE = ICON_ROLE)
+  
     __obj.asInstanceOf[strings]
   }
 }

@@ -13,8 +13,8 @@ trait Har extends js.Object {
 object Har {
   @scala.inline
   def apply(log: Log): Har = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(log = log)
+  
     __obj.asInstanceOf[Har]
   }
 }

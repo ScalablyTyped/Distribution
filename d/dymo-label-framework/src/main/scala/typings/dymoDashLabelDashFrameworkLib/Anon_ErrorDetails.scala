@@ -21,10 +21,8 @@ object Anon_ErrorDetails {
     isBrowserSupported: scala.Boolean,
     isFrameworkInstalled: scala.Boolean
   ): Anon_ErrorDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorDetails")(errorDetails)
-    __obj.updateDynamic("isBrowserSupported")(isBrowserSupported)
-    __obj.updateDynamic("isFrameworkInstalled")(isFrameworkInstalled)
+    val __obj = js.Dynamic.literal(errorDetails = errorDetails, isBrowserSupported = isBrowserSupported, isFrameworkInstalled = isFrameworkInstalled)
+  
     __obj.asInstanceOf[Anon_ErrorDetails]
   }
 }

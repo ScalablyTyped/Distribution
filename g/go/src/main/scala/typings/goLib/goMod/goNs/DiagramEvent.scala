@@ -40,12 +40,8 @@ object DiagramEvent {
     parameter: js.Any,
     subject: js.Any
   ): DiagramEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parameter")(parameter)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(cancel = cancel, diagram = diagram, name = name, parameter = parameter, subject = subject)
+  
     __obj.asInstanceOf[DiagramEvent]
   }
 }

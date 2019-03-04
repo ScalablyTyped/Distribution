@@ -22,9 +22,8 @@ object QualifiedTypeIdentifier {
     qualification: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.QualifiedTypeIdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.QualifiedTypeIdentifier
   ): QualifiedTypeIdentifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("qualification")(qualification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, qualification = qualification.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[QualifiedTypeIdentifier]
   }
 }

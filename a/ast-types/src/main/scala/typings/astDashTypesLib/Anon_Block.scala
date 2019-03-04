@@ -26,8 +26,7 @@ object Anon_Block {
     handlers: js.Array[astDashTypesLib.genKindsMod.CatchClauseKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_Block = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("block")(block)
+    val __obj = js.Dynamic.literal(block = block)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer)
     if (guardedHandlers != null) __obj.updateDynamic("guardedHandlers")(guardedHandlers)

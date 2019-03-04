@@ -19,10 +19,7 @@ object TouchTouchstartEvent {
     event: kendoDashUiLib.JQueryEventObject = null,
     touch: kendoDashUiLib.kendoNs.mobileNs.uiNs.TouchEventOptions = null
   ): TouchTouchstartEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (event != null) __obj.updateDynamic("event")(event)
     if (touch != null) __obj.updateDynamic("touch")(touch)
     __obj.asInstanceOf[TouchTouchstartEvent]

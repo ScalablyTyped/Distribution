@@ -40,10 +40,8 @@ object DataPilotTableResultData {
     FieldFilters: activexDashInteropLib.SafeArray[DataPilotFieldFilter],
     Result: DataResult
   ): DataPilotTableResultData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataFieldIndex")(DataFieldIndex)
-    __obj.updateDynamic("FieldFilters")(FieldFilters)
-    __obj.updateDynamic("Result")(Result)
+    val __obj = js.Dynamic.literal(DataFieldIndex = DataFieldIndex, FieldFilters = FieldFilters, Result = Result)
+  
     __obj.asInstanceOf[DataPilotTableResultData]
   }
 }

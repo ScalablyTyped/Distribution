@@ -13,9 +13,8 @@ trait IRange extends js.Object {
 object IRange {
   @scala.inline
   def apply(max: scala.Double, min: scala.Double): IRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, min = min)
+  
     __obj.asInstanceOf[IRange]
   }
 }

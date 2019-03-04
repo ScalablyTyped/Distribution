@@ -20,10 +20,7 @@ object Anon_EnabledInputFormatConfiguration {
     schemaConfiguration: Anon_CatalogId,
     enabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EnabledInputFormatConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputFormatConfiguration")(inputFormatConfiguration)
-    __obj.updateDynamic("outputFormatConfiguration")(outputFormatConfiguration)
-    __obj.updateDynamic("schemaConfiguration")(schemaConfiguration)
+    val __obj = js.Dynamic.literal(inputFormatConfiguration = inputFormatConfiguration, outputFormatConfiguration = outputFormatConfiguration, schemaConfiguration = schemaConfiguration)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     __obj.asInstanceOf[Anon_EnabledInputFormatConfiguration]
   }

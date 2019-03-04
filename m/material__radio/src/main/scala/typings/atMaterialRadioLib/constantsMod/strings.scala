@@ -15,8 +15,8 @@ object strings {
   def apply(
     NATIVE_CONTROL_SELECTOR: atMaterialRadioLib.atMaterialRadioLibStrings.`DOTmdc-radio__native-control`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NATIVE_CONTROL_SELECTOR")(NATIVE_CONTROL_SELECTOR)
+    val __obj = js.Dynamic.literal(NATIVE_CONTROL_SELECTOR = NATIVE_CONTROL_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

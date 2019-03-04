@@ -13,9 +13,8 @@ trait Anon_ScriptSnapshot extends js.Object {
 object Anon_ScriptSnapshot {
   @scala.inline
   def apply(ScriptSnapshotNs: js.Any, serverNs: js.Any): Anon_ScriptSnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ScriptSnapshotNs")(ScriptSnapshotNs)
-    __obj.updateDynamic("serverNs")(serverNs)
+    val __obj = js.Dynamic.literal(ScriptSnapshotNs = ScriptSnapshotNs, serverNs = serverNs)
+  
     __obj.asInstanceOf[Anon_ScriptSnapshot]
   }
 }

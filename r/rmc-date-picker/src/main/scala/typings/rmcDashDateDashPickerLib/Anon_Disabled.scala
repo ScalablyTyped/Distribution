@@ -28,15 +28,8 @@ object Anon_Disabled {
     prefixCls: java.lang.String,
     use12Hours: scala.Boolean
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("minuteStep")(minuteStep)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("onDateChange")(onDateChange)
-    __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("use12Hours")(use12Hours)
+    val __obj = js.Dynamic.literal(disabled = disabled, locale = locale, minuteStep = minuteStep, mode = mode, onDateChange = onDateChange, pickerPrefixCls = pickerPrefixCls, prefixCls = prefixCls, use12Hours = use12Hours)
+  
     __obj.asInstanceOf[Anon_Disabled]
   }
 }

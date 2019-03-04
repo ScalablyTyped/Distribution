@@ -22,8 +22,7 @@ object LedOption {
     isAnode: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null
   ): LedOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin)
+    val __obj = js.Dynamic.literal(pin = pin)
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller)
     if (!js.isUndefined(isAnode)) __obj.updateDynamic("isAnode")(isAnode)

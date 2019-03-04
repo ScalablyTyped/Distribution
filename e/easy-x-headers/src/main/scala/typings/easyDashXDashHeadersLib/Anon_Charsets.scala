@@ -22,12 +22,8 @@ object Anon_Charsets {
     load: js.Function1[java.lang.String, scala.Unit],
     lookup: js.Function1[java.lang.String, java.lang.String]
   ): Anon_Charsets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charsets")(charsets)
-    __obj.updateDynamic("define")(define)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("lookup")(lookup)
+    val __obj = js.Dynamic.literal(charsets = charsets, define = define, extension = extension, load = load, lookup = lookup)
+  
     __obj.asInstanceOf[Anon_Charsets]
   }
 }

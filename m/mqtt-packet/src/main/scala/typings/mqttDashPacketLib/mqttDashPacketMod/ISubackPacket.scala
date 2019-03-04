@@ -21,9 +21,7 @@ object ISubackPacket {
     length: scala.Int | scala.Double = null,
     messageId: scala.Int | scala.Double = null
   ): ISubackPacket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmd")(cmd)
-    __obj.updateDynamic("granted")(granted)
+    val __obj = js.Dynamic.literal(cmd = cmd, granted = granted)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubackPacket]

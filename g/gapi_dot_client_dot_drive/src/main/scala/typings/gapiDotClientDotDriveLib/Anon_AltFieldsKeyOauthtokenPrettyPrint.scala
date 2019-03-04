@@ -45,8 +45,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrint {
     useDomainAdminAccess: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("teamDriveId")(teamDriveId)
+    val __obj = js.Dynamic.literal(teamDriveId = teamDriveId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

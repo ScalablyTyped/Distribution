@@ -32,17 +32,8 @@ object Anon_AlphaFilter {
     subdivisions: scala.Double,
     width: scala.Double
   ): Anon_AlphaFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alphaFilter")(alphaFilter)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("bufferHeight")(bufferHeight)
-    __obj.updateDynamic("bufferWidth")(bufferWidth)
-    __obj.updateDynamic("colorFilter")(colorFilter)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("minHeight")(minHeight)
-    __obj.updateDynamic("subdivisions")(subdivisions)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(alphaFilter = alphaFilter, buffer = buffer, bufferHeight = bufferHeight, bufferWidth = bufferWidth, colorFilter = colorFilter, height = height, maxHeight = maxHeight, minHeight = minHeight, subdivisions = subdivisions, width = width)
+  
     __obj.asInstanceOf[Anon_AlphaFilter]
   }
 }

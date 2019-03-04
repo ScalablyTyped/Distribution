@@ -40,8 +40,8 @@ object FileAppender {
     mode: scala.Int | scala.Double = null,
     numBackups: scala.Int | scala.Double = null
   ): FileAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(filename = filename)
+    __obj.updateDynamic("type")(`type`)
     if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

@@ -12,8 +12,8 @@ trait Anon_Filters extends js.Object {
 object Anon_Filters {
   @scala.inline
   def apply(filters: js.Array[ldapjsLib.ldapjsMod.Filter]): Anon_Filters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(filters = filters)
+  
     __obj.asInstanceOf[Anon_Filters]
   }
 }

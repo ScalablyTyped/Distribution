@@ -30,16 +30,8 @@ object MemData {
     total: scala.Double,
     used: scala.Double
   ): MemData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("buffcache")(buffcache)
-    __obj.updateDynamic("free")(free)
-    __obj.updateDynamic("swapfree")(swapfree)
-    __obj.updateDynamic("swaptotal")(swaptotal)
-    __obj.updateDynamic("swapused")(swapused)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("used")(used)
+    val __obj = js.Dynamic.literal(active = active, available = available, buffcache = buffcache, free = free, swapfree = swapfree, swaptotal = swaptotal, swapused = swapused, total = total, used = used)
+  
     __obj.asInstanceOf[MemData]
   }
 }

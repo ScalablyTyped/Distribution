@@ -61,15 +61,8 @@ object XDragSourceContext {
     setImage: js.Function1[scala.Double, scala.Unit],
     transferablesFlavorsChanged: js.Function0[scala.Unit]
   ): XDragSourceContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentCursor")(CurrentCursor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCurrentCursor")(getCurrentCursor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCursor")(setCursor)
-    __obj.updateDynamic("setImage")(setImage)
-    __obj.updateDynamic("transferablesFlavorsChanged")(transferablesFlavorsChanged)
+    val __obj = js.Dynamic.literal(CurrentCursor = CurrentCursor, acquire = acquire, getCurrentCursor = getCurrentCursor, queryInterface = queryInterface, release = release, setCursor = setCursor, setImage = setImage, transferablesFlavorsChanged = transferablesFlavorsChanged)
+  
     __obj.asInstanceOf[XDragSourceContext]
   }
 }

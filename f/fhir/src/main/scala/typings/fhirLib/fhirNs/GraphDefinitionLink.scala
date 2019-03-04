@@ -76,9 +76,7 @@ object GraphDefinitionLink {
     modifierExtension: js.Array[Extension] = null,
     sliceName: java.lang.String = null
   ): GraphDefinitionLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(path = path, target = target)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

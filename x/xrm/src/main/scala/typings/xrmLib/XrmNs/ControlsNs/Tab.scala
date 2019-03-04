@@ -54,17 +54,8 @@ object Tab {
     setLabel: js.Function1[java.lang.String, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): Tab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisplayState")(getDisplayState)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("sections")(sections)
-    __obj.updateDynamic("setDisplayState")(setDisplayState)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(getDisplayState = getDisplayState, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, sections = sections, setDisplayState = setDisplayState, setFocus = setFocus, setLabel = setLabel, setVisible = setVisible)
+  
     __obj.asInstanceOf[Tab]
   }
 }

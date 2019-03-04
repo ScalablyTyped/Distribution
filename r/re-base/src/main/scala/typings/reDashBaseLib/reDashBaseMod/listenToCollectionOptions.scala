@@ -47,8 +47,8 @@ object listenToCollectionOptions {
     withIds: js.UndefOr[scala.Boolean] = js.undefined,
     withRefs: js.UndefOr[scala.Boolean] = js.undefined
   ): listenToCollectionOptions = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
+    __obj.updateDynamic("then")(`then`)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (query != null) __obj.updateDynamic("query")(query)
     if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds)

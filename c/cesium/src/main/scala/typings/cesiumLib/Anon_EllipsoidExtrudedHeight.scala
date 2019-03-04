@@ -28,8 +28,7 @@ object Anon_EllipsoidExtrudedHeight {
     stRotation: scala.Int | scala.Double = null,
     vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
   ): Anon_EllipsoidExtrudedHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("polygonHierarchy")(polygonHierarchy)
+    val __obj = js.Dynamic.literal(polygonHierarchy = polygonHierarchy)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])

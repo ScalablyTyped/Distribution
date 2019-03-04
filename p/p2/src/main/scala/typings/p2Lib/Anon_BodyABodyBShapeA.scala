@@ -22,11 +22,8 @@ object Anon_BodyABodyBShapeA {
     shapeB: p2Lib.p2Mod.p2Ns.Shape,
     `type`: java.lang.String
   ): Anon_BodyABodyBShapeA = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("shapeA")(shapeA)
-    __obj.updateDynamic("shapeB")(shapeB)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, shapeA = shapeA, shapeB = shapeB)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_BodyABodyBShapeA]
   }
 }

@@ -16,9 +16,8 @@ object Anon_Id {
     id: java.lang.String | nodeLib.Buffer | adoneLib.adoneNs.dataNs.bsonNs.ObjectId,
     toHexString: js.Function0[java.lang.String]
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("toHexString")(toHexString)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], toHexString = toHexString)
+  
     __obj.asInstanceOf[Anon_Id]
   }
 }

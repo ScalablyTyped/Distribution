@@ -40,20 +40,7 @@ object MultiInstanceLoopCharacteristics {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): MultiInstanceLoopCharacteristics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("behavior")(behavior)
-    __obj.updateDynamic("completionCondition")(completionCondition)
-    __obj.updateDynamic("complexBehaviorDefinition")(complexBehaviorDefinition)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputDataItem")(inputDataItem)
-    __obj.updateDynamic("isSequential")(isSequential)
-    __obj.updateDynamic("loopCardinality")(loopCardinality)
-    __obj.updateDynamic("loopDataInputRef")(loopDataInputRef)
-    __obj.updateDynamic("loopDataOutputRef")(loopDataOutputRef)
-    __obj.updateDynamic("noneBehaviorEventRef")(noneBehaviorEventRef)
-    __obj.updateDynamic("oneBehaviorEventRef")(oneBehaviorEventRef)
-    __obj.updateDynamic("outputDataItem")(outputDataItem)
+    val __obj = js.Dynamic.literal($type = $type, behavior = behavior, completionCondition = completionCondition, complexBehaviorDefinition = complexBehaviorDefinition, id = id, inputDataItem = inputDataItem, isSequential = isSequential, loopCardinality = loopCardinality, loopDataInputRef = loopDataInputRef, loopDataOutputRef = loopDataOutputRef, noneBehaviorEventRef = noneBehaviorEventRef, oneBehaviorEventRef = oneBehaviorEventRef, outputDataItem = outputDataItem)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

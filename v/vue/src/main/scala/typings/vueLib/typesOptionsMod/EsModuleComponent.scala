@@ -24,8 +24,8 @@ object EsModuleComponent {
       DefaultProps
     ]
   ): EsModuleComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[EsModuleComponent]
   }
 }

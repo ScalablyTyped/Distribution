@@ -31,12 +31,8 @@ object XTextTablesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextTablesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TextTables")(TextTables)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTextTables")(getTextTables)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(TextTables = TextTables, acquire = acquire, getTextTables = getTextTables, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextTablesSupplier]
   }
 }

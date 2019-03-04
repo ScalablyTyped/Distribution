@@ -20,8 +20,7 @@ object FetchListParameters {
     filterCriterion: FilterOperator[D] = null,
     sortCriteria: js.Array[SortCriterion[D]] = null
   ): FetchListParameters[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(size = size)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (filterCriterion != null) __obj.updateDynamic("filterCriterion")(filterCriterion)
     if (sortCriteria != null) __obj.updateDynamic("sortCriteria")(sortCriteria)

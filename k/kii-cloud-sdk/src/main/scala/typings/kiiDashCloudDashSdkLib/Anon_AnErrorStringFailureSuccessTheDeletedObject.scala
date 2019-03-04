@@ -16,9 +16,8 @@ object Anon_AnErrorStringFailureSuccessTheDeletedObject {
     failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, java.lang.String, js.Any],
     success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, js.Any]
   ): Anon_AnErrorStringFailureSuccessTheDeletedObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessTheDeletedObject]
   }
 }

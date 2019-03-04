@@ -74,38 +74,8 @@ object Eases {
     sineInOut: js.Function1[scala.Double, scala.Double],
     sineOut: js.Function1[scala.Double, scala.Double]
   ): Eases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backIn")(backIn)
-    __obj.updateDynamic("backInOut")(backInOut)
-    __obj.updateDynamic("backOut")(backOut)
-    __obj.updateDynamic("bounceIn")(bounceIn)
-    __obj.updateDynamic("bounceInOut")(bounceInOut)
-    __obj.updateDynamic("bounceOut")(bounceOut)
-    __obj.updateDynamic("circIn")(circIn)
-    __obj.updateDynamic("circInOut")(circInOut)
-    __obj.updateDynamic("circOut")(circOut)
-    __obj.updateDynamic("cubicIn")(cubicIn)
-    __obj.updateDynamic("cubicInOut")(cubicInOut)
-    __obj.updateDynamic("cubicOut")(cubicOut)
-    __obj.updateDynamic("elasticIn")(elasticIn)
-    __obj.updateDynamic("elasticInOut")(elasticInOut)
-    __obj.updateDynamic("elasticOut")(elasticOut)
-    __obj.updateDynamic("expoIn")(expoIn)
-    __obj.updateDynamic("expoInOut")(expoInOut)
-    __obj.updateDynamic("expoOut")(expoOut)
-    __obj.updateDynamic("linear")(linear)
-    __obj.updateDynamic("quadIn")(quadIn)
-    __obj.updateDynamic("quadInOut")(quadInOut)
-    __obj.updateDynamic("quadOut")(quadOut)
-    __obj.updateDynamic("quartIn")(quartIn)
-    __obj.updateDynamic("quartInOut")(quartInOut)
-    __obj.updateDynamic("quartOut")(quartOut)
-    __obj.updateDynamic("quintIn")(quintIn)
-    __obj.updateDynamic("quintInOut")(quintInOut)
-    __obj.updateDynamic("quintOut")(quintOut)
-    __obj.updateDynamic("sineIn")(sineIn)
-    __obj.updateDynamic("sineInOut")(sineInOut)
-    __obj.updateDynamic("sineOut")(sineOut)
+    val __obj = js.Dynamic.literal(backIn = backIn, backInOut = backInOut, backOut = backOut, bounceIn = bounceIn, bounceInOut = bounceInOut, bounceOut = bounceOut, circIn = circIn, circInOut = circInOut, circOut = circOut, cubicIn = cubicIn, cubicInOut = cubicInOut, cubicOut = cubicOut, elasticIn = elasticIn, elasticInOut = elasticInOut, elasticOut = elasticOut, expoIn = expoIn, expoInOut = expoInOut, expoOut = expoOut, linear = linear, quadIn = quadIn, quadInOut = quadInOut, quadOut = quadOut, quartIn = quartIn, quartInOut = quartInOut, quartOut = quartOut, quintIn = quintIn, quintInOut = quintInOut, quintOut = quintOut, sineIn = sineIn, sineInOut = sineInOut, sineOut = sineOut)
+  
     __obj.asInstanceOf[Eases]
   }
 }

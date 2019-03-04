@@ -197,15 +197,8 @@ object AppointmentForm {
     start: stdLib.Date,
     subject: java.lang.String
   ): AppointmentForm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("optionalAttendees")(optionalAttendees.asInstanceOf[js.Any])
-    __obj.updateDynamic("requiredAttendees")(requiredAttendees.asInstanceOf[js.Any])
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(body = body, end = end, location = location, optionalAttendees = optionalAttendees.asInstanceOf[js.Any], requiredAttendees = requiredAttendees.asInstanceOf[js.Any], resources = resources, start = start, subject = subject)
+  
     __obj.asInstanceOf[AppointmentForm]
   }
 }

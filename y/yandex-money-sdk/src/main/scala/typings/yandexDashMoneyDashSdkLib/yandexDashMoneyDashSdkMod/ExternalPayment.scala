@@ -30,9 +30,8 @@ object ExternalPayment {
       scala.Unit
     ]
   ): ExternalPayment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("process")(process)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(process = process, request = request)
+  
     __obj.asInstanceOf[ExternalPayment]
   }
 }

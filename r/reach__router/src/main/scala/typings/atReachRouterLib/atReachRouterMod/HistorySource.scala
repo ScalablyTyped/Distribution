@@ -20,11 +20,8 @@ object HistorySource {
     location: WindowLocation,
     removeEventListener: js.Function2[java.lang.String, js.Function1[/* event */ reactLib.Event, scala.Unit], scala.Unit]
   ): HistorySource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, history = history, location = location, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[HistorySource]
   }
 }

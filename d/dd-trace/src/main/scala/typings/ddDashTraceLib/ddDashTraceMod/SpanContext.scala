@@ -20,9 +20,8 @@ import scala.scalajs.js.annotation._
 object SpanContext {
   @scala.inline
   def apply(toSpanId: js.Function0[java.lang.String], toTraceId: js.Function0[java.lang.String]): SpanContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toSpanId")(toSpanId)
-    __obj.updateDynamic("toTraceId")(toTraceId)
+    val __obj = js.Dynamic.literal(toSpanId = toSpanId, toTraceId = toTraceId)
+  
     __obj.asInstanceOf[SpanContext]
   }
 }

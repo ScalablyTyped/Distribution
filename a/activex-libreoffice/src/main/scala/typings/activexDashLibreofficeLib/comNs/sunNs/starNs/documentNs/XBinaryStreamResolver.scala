@@ -39,13 +39,8 @@ object XBinaryStreamResolver {
     release: js.Function0[scala.Unit],
     resolveOutputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, java.lang.String]
   ): XBinaryStreamResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createOutputStream")(createOutputStream)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resolveOutputStream")(resolveOutputStream)
+    val __obj = js.Dynamic.literal(acquire = acquire, createOutputStream = createOutputStream, getInputStream = getInputStream, queryInterface = queryInterface, release = release, resolveOutputStream = resolveOutputStream)
+  
     __obj.asInstanceOf[XBinaryStreamResolver]
   }
 }

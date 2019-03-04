@@ -43,12 +43,8 @@ object XModuleUIConfigurationManager {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XModuleUIConfigurationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultSettings")(getDefaultSettings)
-    __obj.updateDynamic("isDefaultSettings")(isDefaultSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultSettings = getDefaultSettings, isDefaultSettings = isDefaultSettings, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XModuleUIConfigurationManager]
   }
 }

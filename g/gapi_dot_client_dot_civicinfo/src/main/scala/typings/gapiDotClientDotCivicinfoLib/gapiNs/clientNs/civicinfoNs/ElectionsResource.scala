@@ -24,9 +24,8 @@ object ElectionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[VoterInfoResponse]
     ]
   ): ElectionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("electionQuery")(electionQuery)
-    __obj.updateDynamic("voterInfoQuery")(voterInfoQuery)
+    val __obj = js.Dynamic.literal(electionQuery = electionQuery, voterInfoQuery = voterInfoQuery)
+  
     __obj.asInstanceOf[ElectionsResource]
   }
 }

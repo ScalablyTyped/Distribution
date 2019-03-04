@@ -13,9 +13,8 @@ trait PaginatorState extends js.Object {
 object PaginatorState {
   @scala.inline
   def apply(done: scala.Boolean, loaded: scala.Double): PaginatorState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("loaded")(loaded)
+    val __obj = js.Dynamic.literal(done = done, loaded = loaded)
+  
     __obj.asInstanceOf[PaginatorState]
   }
 }

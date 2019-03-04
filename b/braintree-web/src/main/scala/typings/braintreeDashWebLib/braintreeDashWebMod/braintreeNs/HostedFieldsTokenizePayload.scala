@@ -20,10 +20,8 @@ object HostedFieldsTokenizePayload {
     nonce: java.lang.String,
     `type`: java.lang.String
   ): HostedFieldsTokenizePayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(description = description, details = details, nonce = nonce)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[HostedFieldsTokenizePayload]
   }
 }

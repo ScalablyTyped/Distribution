@@ -24,8 +24,8 @@ object ListItem {
     position: unistLib.unistMod.Position = null,
     spread: js.UndefOr[scala.Boolean] = js.undefined
   ): ListItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)

@@ -42,22 +42,8 @@ object EntityCollection {
     suspendEvents: js.Function0[scala.Unit],
     values: js.Array[Entity]
   ): EntityCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("collectionChanged")(collectionChanged)
-    __obj.updateDynamic("computeAvailability")(computeAvailability)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("getById")(getById)
-    __obj.updateDynamic("getOrCreateEntity")(getOrCreateEntity)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
-    __obj.updateDynamic("removeById")(removeById)
-    __obj.updateDynamic("resumeEvents")(resumeEvents)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("suspendEvents")(suspendEvents)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(add = add, collectionChanged = collectionChanged, computeAvailability = computeAvailability, contains = contains, getById = getById, getOrCreateEntity = getOrCreateEntity, id = id, owner = owner.asInstanceOf[js.Any], remove = remove, removeAll = removeAll, removeById = removeById, resumeEvents = resumeEvents, show = show, suspendEvents = suspendEvents, values = values)
+  
     __obj.asInstanceOf[EntityCollection]
   }
 }

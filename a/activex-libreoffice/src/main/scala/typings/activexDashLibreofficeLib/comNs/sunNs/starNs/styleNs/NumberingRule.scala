@@ -31,20 +31,8 @@ object NumberingRule {
     TextMarginDistance: scala.Double,
     TextNumberingDistance: scala.Double
   ): NumberingRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("BulletFontName")(BulletFontName)
-    __obj.updateDynamic("BulletId")(BulletId)
-    __obj.updateDynamic("CharStyleName")(CharStyleName)
-    __obj.updateDynamic("GraphicURL")(GraphicURL)
-    __obj.updateDynamic("Insertion")(Insertion)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("ParentNumbering")(ParentNumbering)
-    __obj.updateDynamic("Prefix")(Prefix)
-    __obj.updateDynamic("StartWith")(StartWith)
-    __obj.updateDynamic("Suffix")(Suffix)
-    __obj.updateDynamic("TextMarginDistance")(TextMarginDistance)
-    __obj.updateDynamic("TextNumberingDistance")(TextNumberingDistance)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, BulletFontName = BulletFontName, BulletId = BulletId, CharStyleName = CharStyleName, GraphicURL = GraphicURL, Insertion = Insertion, NumberingType = NumberingType, ParentNumbering = ParentNumbering, Prefix = Prefix, StartWith = StartWith, Suffix = Suffix, TextMarginDistance = TextMarginDistance, TextNumberingDistance = TextNumberingDistance)
+  
     __obj.asInstanceOf[NumberingRule]
   }
 }

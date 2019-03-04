@@ -41,11 +41,8 @@ object Property {
     Name: java.lang.String,
     Type: activexDashLibreofficeLib.`type`
   ): Property = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attributes")(Attributes)
-    __obj.updateDynamic("Handle")(Handle)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Attributes = Attributes, Handle = Handle, Name = Name, Type = Type)
+  
     __obj.asInstanceOf[Property]
   }
 }

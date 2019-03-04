@@ -134,23 +134,8 @@ object XDocumentRepository {
       scala.Unit
     ]
   ): XDocumentRepository = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GraphNames")(GraphNames)
-    __obj.updateDynamic("createBlankNode")(createBlankNode)
-    __obj.updateDynamic("createGraph")(createGraph)
-    __obj.updateDynamic("destroyGraph")(destroyGraph)
-    __obj.updateDynamic("exportGraph")(exportGraph)
-    __obj.updateDynamic("getGraph")(getGraph)
-    __obj.updateDynamic("getGraphNames")(getGraphNames)
-    __obj.updateDynamic("getStatementRDFa")(getStatementRDFa)
-    __obj.updateDynamic("getStatements")(getStatements)
-    __obj.updateDynamic("getStatementsRDFa")(getStatementsRDFa)
-    __obj.updateDynamic("importGraph")(importGraph)
-    __obj.updateDynamic("queryAsk")(queryAsk)
-    __obj.updateDynamic("queryConstruct")(queryConstruct)
-    __obj.updateDynamic("querySelect")(querySelect)
-    __obj.updateDynamic("removeStatementRDFa")(removeStatementRDFa)
-    __obj.updateDynamic("setStatementRDFa")(setStatementRDFa)
+    val __obj = js.Dynamic.literal(GraphNames = GraphNames, createBlankNode = createBlankNode, createGraph = createGraph, destroyGraph = destroyGraph, exportGraph = exportGraph, getGraph = getGraph, getGraphNames = getGraphNames, getStatementRDFa = getStatementRDFa, getStatements = getStatements, getStatementsRDFa = getStatementsRDFa, importGraph = importGraph, queryAsk = queryAsk, queryConstruct = queryConstruct, querySelect = querySelect, removeStatementRDFa = removeStatementRDFa, setStatementRDFa = setStatementRDFa)
+  
     __obj.asInstanceOf[XDocumentRepository]
   }
 }

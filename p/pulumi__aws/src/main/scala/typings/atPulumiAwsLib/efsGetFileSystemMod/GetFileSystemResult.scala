@@ -51,16 +51,8 @@ object GetFileSystemResult {
     performanceMode: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetFileSystemResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("creationToken")(creationToken)
-    __obj.updateDynamic("dnsName")(dnsName)
-    __obj.updateDynamic("encrypted")(encrypted)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("performanceMode")(performanceMode)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(arn = arn, creationToken = creationToken, dnsName = dnsName, encrypted = encrypted, fileSystemId = fileSystemId, id = id, kmsKeyId = kmsKeyId, performanceMode = performanceMode, tags = tags)
+  
     __obj.asInstanceOf[GetFileSystemResult]
   }
 }

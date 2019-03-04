@@ -24,9 +24,8 @@ object MetagameResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CategoryListResponse]
     ]
   ): MetagameResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMetagameConfig")(getMetagameConfig)
-    __obj.updateDynamic("listCategoriesByPlayer")(listCategoriesByPlayer)
+    val __obj = js.Dynamic.literal(getMetagameConfig = getMetagameConfig, listCategoriesByPlayer = listCategoriesByPlayer)
+  
     __obj.asInstanceOf[MetagameResource]
   }
 }

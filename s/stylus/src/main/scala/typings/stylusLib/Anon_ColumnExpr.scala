@@ -28,13 +28,7 @@ object Anon_ColumnExpr {
     expr: stylusLib.stylusMod.StylusNs.NodesNs.Expression = null,
     literal: stylusLib.stylusMod.StylusNs.NodesNs.Literal = null
   ): Anon_ColumnExpr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, name = name, segments = segments)
     if (expr != null) __obj.updateDynamic("expr")(expr)
     if (literal != null) __obj.updateDynamic("literal")(literal)
     __obj.asInstanceOf[Anon_ColumnExpr]

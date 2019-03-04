@@ -21,8 +21,7 @@ object ColumnReorderEndEvent {
     columnAfter: java.lang.String = null,
     columnBefore: java.lang.String = null
   ): ColumnReorderEndEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reorderColumn")(reorderColumn)
+    val __obj = js.Dynamic.literal(reorderColumn = reorderColumn)
     if (columnAfter != null) __obj.updateDynamic("columnAfter")(columnAfter)
     if (columnBefore != null) __obj.updateDynamic("columnBefore")(columnBefore)
     __obj.asInstanceOf[ColumnReorderEndEvent]

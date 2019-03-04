@@ -21,12 +21,8 @@ object XTextListener {
     release: js.Function0[scala.Unit],
     textChanged: js.Function1[TextEvent, scala.Unit]
   ): XTextListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("textChanged")(textChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, textChanged = textChanged)
+  
     __obj.asInstanceOf[XTextListener]
   }
 }

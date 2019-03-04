@@ -15,11 +15,8 @@ trait Anon_Abort extends js.Object {
 object Anon_Abort {
   @scala.inline
   def apply(abort: js.Array[_], error: js.Array[_], load: js.Array[_], progress: js.Array[_]): Anon_Abort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, progress = progress)
+  
     __obj.asInstanceOf[Anon_Abort]
   }
 }

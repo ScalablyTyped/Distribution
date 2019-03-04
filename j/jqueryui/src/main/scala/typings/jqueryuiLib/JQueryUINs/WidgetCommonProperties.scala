@@ -28,15 +28,8 @@ object WidgetCommonProperties {
     widgetFullName: java.lang.String,
     window: stdLib.Window
   ): WidgetCommonProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultElement")(defaultElement)
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("widgetEventPrefix")(widgetEventPrefix)
-    __obj.updateDynamic("widgetFullName")(widgetFullName)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(defaultElement = defaultElement, document = document, element = element, namespace = namespace, uuid = uuid, widgetEventPrefix = widgetEventPrefix, widgetFullName = widgetFullName, window = window)
+  
     __obj.asInstanceOf[WidgetCommonProperties]
   }
 }

@@ -14,8 +14,8 @@ object Navigator {
   def apply(
     screenshot: comDotDarktalkerDotCordovaDotScreenshotLib.comNs.darktalkerNs.cordovaNs.screenshotNs.Plugin
   ): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("screenshot")(screenshot)
+    val __obj = js.Dynamic.literal(screenshot = screenshot)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

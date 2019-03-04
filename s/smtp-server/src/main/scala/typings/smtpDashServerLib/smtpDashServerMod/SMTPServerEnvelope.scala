@@ -22,9 +22,8 @@ object SMTPServerEnvelope {
     mailFrom: SMTPServerAddress | smtpDashServerLib.smtpDashServerLibNumbers.`false`,
     rcptTo: js.Array[SMTPServerAddress]
   ): SMTPServerEnvelope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mailFrom")(mailFrom.asInstanceOf[js.Any])
-    __obj.updateDynamic("rcptTo")(rcptTo)
+    val __obj = js.Dynamic.literal(mailFrom = mailFrom.asInstanceOf[js.Any], rcptTo = rcptTo)
+  
     __obj.asInstanceOf[SMTPServerEnvelope]
   }
 }

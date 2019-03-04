@@ -27,12 +27,8 @@ object MediaRecorder {
     start: js.Function1[scala.Double, scala.Unit],
     stop: js.Function0[scala.Unit]
   ): MediaRecorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ondataavailable")(ondataavailable)
-    __obj.updateDynamic("onerror")(onerror)
-    __obj.updateDynamic("onstop")(onstop)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(ondataavailable = ondataavailable, onerror = onerror, onstop = onstop, start = start, stop = stop)
+  
     __obj.asInstanceOf[MediaRecorder]
   }
 }

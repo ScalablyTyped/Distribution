@@ -14,10 +14,8 @@ trait DocumentMetadata extends js.Object {
 object DocumentMetadata {
   @scala.inline
   def apply(_id: java.lang.String, _key: java.lang.String, _rev: java.lang.String): DocumentMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_key")(_key)
-    __obj.updateDynamic("_rev")(_rev)
+    val __obj = js.Dynamic.literal(_id = _id, _key = _key, _rev = _rev)
+  
     __obj.asInstanceOf[DocumentMetadata]
   }
 }

@@ -16,10 +16,8 @@ object BaseHighPrecisionDistanceScalesInput {
     latitude: scala.Double,
     longitude: scala.Double
   ): BaseHighPrecisionDistanceScalesInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("highPrecision")(highPrecision)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(highPrecision = highPrecision, latitude = latitude, longitude = longitude)
+  
     __obj.asInstanceOf[BaseHighPrecisionDistanceScalesInput]
   }
 }

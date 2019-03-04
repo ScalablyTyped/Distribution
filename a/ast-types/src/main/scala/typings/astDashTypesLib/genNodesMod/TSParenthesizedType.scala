@@ -21,8 +21,8 @@ object TSParenthesizedType {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSParenthesizedType,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
   ): TSParenthesizedType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSParenthesizedType]
   }
 }

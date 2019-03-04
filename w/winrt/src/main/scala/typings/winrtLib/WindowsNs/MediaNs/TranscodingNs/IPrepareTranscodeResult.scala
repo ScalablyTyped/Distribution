@@ -18,10 +18,8 @@ object IPrepareTranscodeResult {
     failureReason: TranscodeFailureReason,
     transcodeAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[scala.Double]]
   ): IPrepareTranscodeResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canTranscode")(canTranscode)
-    __obj.updateDynamic("failureReason")(failureReason)
-    __obj.updateDynamic("transcodeAsync")(transcodeAsync)
+    val __obj = js.Dynamic.literal(canTranscode = canTranscode, failureReason = failureReason, transcodeAsync = transcodeAsync)
+  
     __obj.asInstanceOf[IPrepareTranscodeResult]
   }
 }

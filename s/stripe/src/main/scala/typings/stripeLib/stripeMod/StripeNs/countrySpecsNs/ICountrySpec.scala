@@ -42,12 +42,8 @@ object ICountrySpec {
     supported_payment_methods: js.Array[java.lang.String],
     verification_fields: stripeLib.Anon_Company
   ): ICountrySpec = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("default_currency")(default_currency)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("supported_payment_currencies")(supported_payment_currencies)
-    __obj.updateDynamic("supported_payment_methods")(supported_payment_methods)
-    __obj.updateDynamic("verification_fields")(verification_fields)
+    val __obj = js.Dynamic.literal(default_currency = default_currency, id = id, supported_payment_currencies = supported_payment_currencies, supported_payment_methods = supported_payment_methods, verification_fields = verification_fields)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ICountrySpec]
   }
 }

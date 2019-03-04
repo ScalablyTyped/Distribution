@@ -44,12 +44,8 @@ object ASPxClientRibbonGroup {
     ribbon: ASPxClientRibbon,
     tab: ASPxClientRibbonTab
   ): ASPxClientRibbonGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ribbon")(ribbon)
-    __obj.updateDynamic("tab")(tab)
+    val __obj = js.Dynamic.literal(GetVisible = GetVisible, index = index, name = name, ribbon = ribbon, tab = tab)
+  
     __obj.asInstanceOf[ASPxClientRibbonGroup]
   }
 }

@@ -14,9 +14,7 @@ trait Notification extends js.Object {
 object Notification {
   @scala.inline
   def apply(channel: java.lang.String, processId: scala.Double, payload: java.lang.String = null): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("processId")(processId)
+    val __obj = js.Dynamic.literal(channel = channel, processId = processId)
     if (payload != null) __obj.updateDynamic("payload")(payload)
     __obj.asInstanceOf[Notification]
   }

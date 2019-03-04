@@ -12,8 +12,8 @@ trait Anon_QFolder extends js.Object {
 object Anon_QFolder {
   @scala.inline
   def apply(qFolder: java.lang.String): Anon_QFolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFolder")(qFolder)
+    val __obj = js.Dynamic.literal(qFolder = qFolder)
+  
     __obj.asInstanceOf[Anon_QFolder]
   }
 }

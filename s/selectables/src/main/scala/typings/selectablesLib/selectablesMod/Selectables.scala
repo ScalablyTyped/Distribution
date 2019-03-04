@@ -18,10 +18,8 @@ object Selectables {
     enable: js.Function0[scala.Unit],
     options: selectablesLib.selectablesMod.SelectablesNs.Options
   ): Selectables = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, options = options)
+  
     __obj.asInstanceOf[Selectables]
   }
 }

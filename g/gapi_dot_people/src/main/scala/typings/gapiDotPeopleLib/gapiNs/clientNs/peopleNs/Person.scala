@@ -70,13 +70,7 @@ object Person {
     taglines: js.Array[Tagline] = null,
     urls: js.Array[Url] = null
   ): Person = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coverPhotos")(coverPhotos)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("locales")(locales)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("resourceName")(resourceName)
+    val __obj = js.Dynamic.literal(coverPhotos = coverPhotos, etag = etag, locales = locales, metadata = metadata, names = names, resourceName = resourceName)
     if (BraggingRights != null) __obj.updateDynamic("BraggingRights")(BraggingRights)
     if (addresses != null) __obj.updateDynamic("addresses")(addresses)
     if (ageRange != null) __obj.updateDynamic("ageRange")(ageRange)

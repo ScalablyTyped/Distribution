@@ -13,9 +13,8 @@ trait ICharacterSequence extends js.Object {
 object ICharacterSequence {
   @scala.inline
   def apply(charCodeAt: js.Function1[scala.Double, scala.Double], length: scala.Double): ICharacterSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charCodeAt")(charCodeAt)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(charCodeAt = charCodeAt, length = length)
+  
     __obj.asInstanceOf[ICharacterSequence]
   }
 }

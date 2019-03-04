@@ -28,12 +28,8 @@ object TaskAgentPoolReference {
     poolType: TaskAgentPoolType,
     scope: java.lang.String
   ): TaskAgentPoolReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isHosted")(isHosted)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("poolType")(poolType)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(id = id, isHosted = isHosted, name = name, poolType = poolType, scope = scope)
+  
     __obj.asInstanceOf[TaskAgentPoolReference]
   }
 }

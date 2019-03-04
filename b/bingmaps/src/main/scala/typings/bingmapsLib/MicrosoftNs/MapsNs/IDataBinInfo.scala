@@ -15,9 +15,8 @@ trait IDataBinInfo extends js.Object {
 object IDataBinInfo {
   @scala.inline
   def apply(containedPushpins: js.Array[Pushpin], metrics: IDataBinMetrics): IDataBinInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containedPushpins")(containedPushpins)
-    __obj.updateDynamic("metrics")(metrics)
+    val __obj = js.Dynamic.literal(containedPushpins = containedPushpins, metrics = metrics)
+  
     __obj.asInstanceOf[IDataBinInfo]
   }
 }

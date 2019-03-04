@@ -27,9 +27,8 @@ object JobTemplateSpec {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     spec: atPulumiKubernetesLib.typesOutputMod.batchNs.v1Ns.JobSpec
   ): JobTemplateSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("spec")(spec)
+    val __obj = js.Dynamic.literal(metadata = metadata, spec = spec)
+  
     __obj.asInstanceOf[JobTemplateSpec]
   }
 }

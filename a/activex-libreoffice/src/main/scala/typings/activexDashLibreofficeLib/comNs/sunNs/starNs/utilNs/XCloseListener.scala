@@ -66,13 +66,8 @@ object XCloseListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCloseListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("notifyClosing")(notifyClosing)
-    __obj.updateDynamic("queryClosing")(queryClosing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, notifyClosing = notifyClosing, queryClosing = queryClosing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCloseListener]
   }
 }

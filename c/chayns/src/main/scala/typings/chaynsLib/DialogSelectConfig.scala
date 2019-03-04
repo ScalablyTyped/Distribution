@@ -26,9 +26,7 @@ object DialogSelectConfig {
     multiselect: js.UndefOr[scala.Boolean] = js.undefined,
     quickfind: js.UndefOr[scala.Boolean] = js.undefined
   ): DialogSelectConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(list = list, title = title)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (message != null) __obj.updateDynamic("message")(message)
     if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)

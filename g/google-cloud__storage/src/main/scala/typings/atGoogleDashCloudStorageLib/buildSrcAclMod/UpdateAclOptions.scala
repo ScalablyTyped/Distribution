@@ -20,9 +20,7 @@ object UpdateAclOptions {
     generation: scala.Int | scala.Double = null,
     userProject: java.lang.String = null
   ): UpdateAclOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(entity = entity, role = role)
     if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
     if (userProject != null) __obj.updateDynamic("userProject")(userProject)
     __obj.asInstanceOf[UpdateAclOptions]

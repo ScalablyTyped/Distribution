@@ -393,7 +393,7 @@ object reactDashNativeLibStrings {
   sealed trait baseline extends FlexAlignType
   
   @js.native
-  sealed trait basic extends `ResponseType_`
+  sealed trait basic extends ResponseType_
   
   @js.native
   sealed trait bevel extends js.Object
@@ -491,8 +491,8 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait cors
-    extends `RequestMode_`
-       with `ResponseType_`
+    extends RequestMode_
+       with ResponseType_
   
   @js.native
   sealed trait countryName extends js.Object
@@ -531,7 +531,7 @@ object reactDashNativeLibStrings {
   sealed trait default
     extends reactDashNativeLib.reactDashNativeMod.KeyboardType
        with reactDashNativeLib.reactDashNativeMod.AlertType
-       with `ResponseType_`
+       with ResponseType_
        with reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
        with reactDashNativeLib.reactDashNativeMod.StatusBarStyle
   
@@ -602,7 +602,7 @@ object reactDashNativeLibStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait error extends `ResponseType_`
+  sealed trait error extends ResponseType_
   
   @js.native
   sealed trait extend
@@ -722,7 +722,7 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.AppStateStatus
   
   @js.native
-  sealed trait include extends `RequestCredentials_`
+  sealed trait include extends RequestCredentials_
   
   @js.native
   sealed trait inherit extends js.Object
@@ -901,7 +901,7 @@ object reactDashNativeLibStrings {
   sealed trait nameSuffix extends js.Object
   
   @js.native
-  sealed trait navigate extends `RequestMode_`
+  sealed trait navigate extends RequestMode_
   
   @js.native
   sealed trait never extends js.Object
@@ -924,7 +924,7 @@ object reactDashNativeLibStrings {
   sealed trait no extends js.Object
   
   @js.native
-  sealed trait `no-cors` extends `RequestMode_`
+  sealed trait `no-cors` extends RequestMode_
   
   @js.native
   sealed trait `no-hide-descendants` extends js.Object
@@ -961,7 +961,7 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.KeyboardType
   
   @js.native
-  sealed trait omit extends `RequestCredentials_`
+  sealed trait omit extends RequestCredentials_
   
   @js.native
   sealed trait `on-drag` extends js.Object
@@ -973,10 +973,10 @@ object reactDashNativeLibStrings {
   sealed trait `only-if-cached` extends js.Object
   
   @js.native
-  sealed trait opaque extends `ResponseType_`
+  sealed trait opaque extends ResponseType_
   
   @js.native
-  sealed trait opaqueredirect extends `ResponseType_`
+  sealed trait opaqueredirect extends ResponseType_
   
   @js.native
   sealed trait organizationName extends js.Object
@@ -1095,8 +1095,8 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait `same-origin`
-    extends `RequestCredentials_`
-       with `RequestMode_`
+    extends RequestCredentials_
+       with RequestMode_
   
   @js.native
   sealed trait satellite extends js.Object

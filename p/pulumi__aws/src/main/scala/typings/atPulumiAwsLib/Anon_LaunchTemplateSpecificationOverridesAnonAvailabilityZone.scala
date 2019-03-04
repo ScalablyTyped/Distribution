@@ -16,8 +16,7 @@ object Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone {
     launchTemplateSpecification: Anon_LaunchTemplateIdLaunchTemplateNameVersion,
     overrides: js.Array[Anon_AvailabilityZone] = null
   ): Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplateSpecification")(launchTemplateSpecification)
+    val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     __obj.asInstanceOf[Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone]
   }

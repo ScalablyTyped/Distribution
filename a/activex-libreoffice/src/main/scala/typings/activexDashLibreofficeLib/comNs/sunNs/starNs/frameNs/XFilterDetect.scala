@@ -24,12 +24,8 @@ object XFilterDetect {
     release: js.Function0[scala.Unit],
     useExternBrowser: js.Function1[java.lang.String, scala.Boolean]
   ): XFilterDetect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("useExternBrowser")(useExternBrowser)
+    val __obj = js.Dynamic.literal(acquire = acquire, getContentType = getContentType, queryInterface = queryInterface, release = release, useExternBrowser = useExternBrowser)
+  
     __obj.asInstanceOf[XFilterDetect]
   }
 }

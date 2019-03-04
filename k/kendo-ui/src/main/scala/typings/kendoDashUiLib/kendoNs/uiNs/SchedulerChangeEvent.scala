@@ -25,10 +25,7 @@ object SchedulerChangeEvent {
     slots: js.Any = null,
     start: stdLib.Date = null
   ): SchedulerChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (end != null) __obj.updateDynamic("end")(end)
     if (events != null) __obj.updateDynamic("events")(events)
     if (resources != null) __obj.updateDynamic("resources")(resources)

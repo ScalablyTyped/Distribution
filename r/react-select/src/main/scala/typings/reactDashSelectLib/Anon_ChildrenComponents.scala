@@ -28,15 +28,8 @@ object Anon_ChildrenComponents {
     isFocused: scala.Boolean,
     removeProps: Anon_EventOnClick
   ): Anon_ChildrenComponents[OptionType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("cropWithEllipsis")(cropWithEllipsis)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("innerProps")(innerProps)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("removeProps")(removeProps)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], components = components, cropWithEllipsis = cropWithEllipsis, data = data.asInstanceOf[js.Any], innerProps = innerProps, isDisabled = isDisabled, isFocused = isFocused, removeProps = removeProps)
+  
     __obj.asInstanceOf[Anon_ChildrenComponents[OptionType]]
   }
 }

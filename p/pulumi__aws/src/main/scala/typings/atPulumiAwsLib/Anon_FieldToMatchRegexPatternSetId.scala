@@ -18,10 +18,8 @@ object Anon_FieldToMatchRegexPatternSetId {
     regexPatternSetId: java.lang.String,
     textTransformation: java.lang.String
   ): Anon_FieldToMatchRegexPatternSetId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldToMatch")(fieldToMatch)
-    __obj.updateDynamic("regexPatternSetId")(regexPatternSetId)
-    __obj.updateDynamic("textTransformation")(textTransformation)
+    val __obj = js.Dynamic.literal(fieldToMatch = fieldToMatch, regexPatternSetId = regexPatternSetId, textTransformation = textTransformation)
+  
     __obj.asInstanceOf[Anon_FieldToMatchRegexPatternSetId]
   }
 }

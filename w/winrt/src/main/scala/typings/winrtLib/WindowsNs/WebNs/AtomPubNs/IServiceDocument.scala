@@ -26,16 +26,8 @@ object IServiceDocument {
     nodeValue: java.lang.String,
     workspaces: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[Workspace]
   ): IServiceDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("workspaces")(workspaces)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, workspaces = workspaces)
+  
     __obj.asInstanceOf[IServiceDocument]
   }
 }

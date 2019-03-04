@@ -12,8 +12,8 @@ trait VideoState extends js.Object {
 object VideoState {
   @scala.inline
   def apply(showPoster: scala.Boolean): VideoState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("showPoster")(showPoster)
+    val __obj = js.Dynamic.literal(showPoster = showPoster)
+  
     __obj.asInstanceOf[VideoState]
   }
 }

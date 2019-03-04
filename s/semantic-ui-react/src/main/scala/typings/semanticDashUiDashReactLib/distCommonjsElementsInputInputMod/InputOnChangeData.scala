@@ -39,8 +39,7 @@ object InputOnChangeData {
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null
   ): InputOnChangeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (actionPosition != null) __obj.updateDynamic("actionPosition")(actionPosition)
     if (as != null) __obj.updateDynamic("as")(as)

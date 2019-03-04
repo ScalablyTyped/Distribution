@@ -22,8 +22,7 @@ trait GetSolutionStackArgs extends js.Object {
 object GetSolutionStackArgs {
   @scala.inline
   def apply(nameRegex: java.lang.String, mostRecent: js.UndefOr[scala.Boolean] = js.undefined): GetSolutionStackArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nameRegex")(nameRegex)
+    val __obj = js.Dynamic.literal(nameRegex = nameRegex)
     if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
     __obj.asInstanceOf[GetSolutionStackArgs]
   }

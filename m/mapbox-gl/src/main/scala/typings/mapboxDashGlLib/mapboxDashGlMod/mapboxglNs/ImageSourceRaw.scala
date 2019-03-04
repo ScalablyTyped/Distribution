@@ -20,7 +20,8 @@ object ImageSourceRaw {
     coordinates: js.Array[js.Array[scala.Double]] = null,
     url: java.lang.String = null
   ): ImageSourceRaw = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[ImageSourceRaw]

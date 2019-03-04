@@ -24,11 +24,8 @@ object Anon_ChildrenInnerPropsIsFocused {
     isFocused: scala.Boolean,
     isRtl: scala.Boolean
   ): Anon_ChildrenInnerPropsIsFocused = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("innerProps")(innerProps)
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("isRtl")(isRtl)
+    val __obj = js.Dynamic.literal(children = children, innerProps = innerProps, isFocused = isFocused, isRtl = isRtl)
+  
     __obj.asInstanceOf[Anon_ChildrenInnerPropsIsFocused]
   }
 }

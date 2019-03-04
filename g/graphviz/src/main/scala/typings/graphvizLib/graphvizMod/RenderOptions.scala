@@ -29,12 +29,8 @@ object RenderOptions {
     `type`: java.lang.String,
     use: java.lang.String
   ): RenderOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("E")(E)
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("N")(N)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(E = E, G = G, N = N, path = path, use = use)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RenderOptions]
   }
 }

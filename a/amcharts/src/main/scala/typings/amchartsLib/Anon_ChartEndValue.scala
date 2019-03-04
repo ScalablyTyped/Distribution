@@ -20,8 +20,8 @@ object Anon_ChartEndValue {
     endValue: stdLib.Date = null,
     startValue: stdLib.Date = null
   ): Anon_ChartEndValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chart")(chart)
+    val __obj = js.Dynamic.literal(chart = chart)
+    __obj.updateDynamic("type")(`type`)
     if (endValue != null) __obj.updateDynamic("endValue")(endValue)
     if (startValue != null) __obj.updateDynamic("startValue")(startValue)
     __obj.asInstanceOf[Anon_ChartEndValue]

@@ -25,13 +25,8 @@ object DomainBase {
     SPFVerified: scala.Boolean,
     WeakDKIM: scala.Boolean
   ): DomainBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DKIMVerified")(DKIMVerified)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReturnPathDomainVerified")(ReturnPathDomainVerified)
-    __obj.updateDynamic("SPFVerified")(SPFVerified)
-    __obj.updateDynamic("WeakDKIM")(WeakDKIM)
+    val __obj = js.Dynamic.literal(DKIMVerified = DKIMVerified, ID = ID, Name = Name, ReturnPathDomainVerified = ReturnPathDomainVerified, SPFVerified = SPFVerified, WeakDKIM = WeakDKIM)
+  
     __obj.asInstanceOf[DomainBase]
   }
 }

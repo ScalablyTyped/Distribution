@@ -12,8 +12,8 @@ trait Anon_AGC extends js.Object {
 object Anon_AGC {
   @scala.inline
   def apply(AGC: scala.Boolean): Anon_AGC = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AGC")(AGC)
+    val __obj = js.Dynamic.literal(AGC = AGC)
+  
     __obj.asInstanceOf[Anon_AGC]
   }
 }

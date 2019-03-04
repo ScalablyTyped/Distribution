@@ -13,8 +13,8 @@ trait RetryOption extends js.Object {
 object RetryOption {
   @scala.inline
   def apply(wait: scala.Double): RetryOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("wait")(wait)
+    val __obj = js.Dynamic.literal(wait = wait)
+  
     __obj.asInstanceOf[RetryOption]
   }
 }

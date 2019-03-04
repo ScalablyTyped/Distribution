@@ -18,10 +18,8 @@ object Results {
     latlng: leafletLib.leafletMod.LatLngExpression,
     results: js.Array[ResultObject]
   ): Results = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    __obj.updateDynamic("latlng")(latlng.asInstanceOf[js.Any])
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any], results = results)
+  
     __obj.asInstanceOf[Results]
   }
 }

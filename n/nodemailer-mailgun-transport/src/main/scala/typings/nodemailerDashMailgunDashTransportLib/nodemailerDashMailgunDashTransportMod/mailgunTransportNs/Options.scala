@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(auth: AuthOptions): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
+    val __obj = js.Dynamic.literal(auth = auth)
+  
     __obj.asInstanceOf[Options]
   }
 }

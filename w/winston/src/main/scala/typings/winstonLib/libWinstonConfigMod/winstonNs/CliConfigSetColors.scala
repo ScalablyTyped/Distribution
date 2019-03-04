@@ -32,17 +32,8 @@ object CliConfigSetColors {
     verbose: java.lang.String | js.Array[java.lang.String],
     warn: java.lang.String | js.Array[java.lang.String]
   ): CliConfigSetColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    __obj.updateDynamic("silly")(silly.asInstanceOf[js.Any])
-    __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
-    __obj.updateDynamic("warn")(warn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], silly = silly.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CliConfigSetColors]
   }
 }

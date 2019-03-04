@@ -12,8 +12,8 @@ trait Anon_TopicsArrayTopicMetadata extends js.Object {
 object Anon_TopicsArrayTopicMetadata {
   @scala.inline
   def apply(topics: js.Array[kafkajsLib.kafkajsMod.TopicMetadata]): Anon_TopicsArrayTopicMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topics")(topics)
+    val __obj = js.Dynamic.literal(topics = topics)
+  
     __obj.asInstanceOf[Anon_TopicsArrayTopicMetadata]
   }
 }

@@ -27,9 +27,7 @@ object VirtualNodeArgs {
     spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BackendsListener],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VirtualNodeArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meshName")(meshName.asInstanceOf[js.Any])
-    __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeArgs]
   }

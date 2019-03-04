@@ -24,9 +24,8 @@ object Anon_Enabled {
       activedirectory2Lib.activedirectory2LibStrings.`ldaps?://DOT*/CN=Configuration,DOT*`
     ]
   ): Anon_Enabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("exclude")(exclude)
+    val __obj = js.Dynamic.literal(enabled = enabled, exclude = exclude)
+  
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

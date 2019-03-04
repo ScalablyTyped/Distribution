@@ -18,11 +18,8 @@ object OpenFileRequestedEventOptions {
     mode: java.lang.String,
     requestId: scala.Double
   ): OpenFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, mode = mode, requestId = requestId)
+  
     __obj.asInstanceOf[OpenFileRequestedEventOptions]
   }
 }

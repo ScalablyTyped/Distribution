@@ -61,9 +61,7 @@ object StructureMapGroupRule {
     rule: js.Array[StructureMapGroupRule] = null,
     target: js.Array[StructureMapGroupRuleTarget] = null
   ): StructureMapGroupRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(name = name, source = source)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -46,8 +46,7 @@ object FaceFeature {
     smilingProbability: scala.Int | scala.Double = null,
     yawAngle: scala.Int | scala.Double = null
   ): FaceFeature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
+    val __obj = js.Dynamic.literal(bounds = bounds)
     if (bottomMouthPosition != null) __obj.updateDynamic("bottomMouthPosition")(bottomMouthPosition)
     if (leftCheekPosition != null) __obj.updateDynamic("leftCheekPosition")(leftCheekPosition)
     if (leftEarPosition != null) __obj.updateDynamic("leftEarPosition")(leftEarPosition)

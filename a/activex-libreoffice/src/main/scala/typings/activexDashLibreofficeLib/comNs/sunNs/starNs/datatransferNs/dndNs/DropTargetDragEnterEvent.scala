@@ -29,15 +29,8 @@ object DropTargetDragEnterEvent {
     SourceActions: scala.Double,
     SupportedDataFlavors: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor]
   ): DropTargetDragEnterEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DropAction")(DropAction)
-    __obj.updateDynamic("Dummy")(Dummy)
-    __obj.updateDynamic("LocationX")(LocationX)
-    __obj.updateDynamic("LocationY")(LocationY)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("SourceActions")(SourceActions)
-    __obj.updateDynamic("SupportedDataFlavors")(SupportedDataFlavors)
+    val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions, SupportedDataFlavors = SupportedDataFlavors)
+  
     __obj.asInstanceOf[DropTargetDragEnterEvent]
   }
 }

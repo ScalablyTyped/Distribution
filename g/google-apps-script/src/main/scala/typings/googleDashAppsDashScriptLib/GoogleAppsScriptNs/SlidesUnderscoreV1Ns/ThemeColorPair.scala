@@ -15,8 +15,8 @@ trait ThemeColorPair extends js.Object {
 object ThemeColorPair {
   @scala.inline
   def apply(color: RgbColor, `type`: ThemeColorType): ThemeColorPair = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(color = color)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ThemeColorPair]
   }
 }

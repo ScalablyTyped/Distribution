@@ -42,14 +42,7 @@ object NavigationTransitionProps {
     scenes: js.Array[NavigationScene],
     screenProps: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): NavigationTransitionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("scenes")(scenes)
+    val __obj = js.Dynamic.literal(index = index, layout = layout, navigation = navigation, position = position, progress = progress, scene = scene, scenes = scenes)
     if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
     __obj.asInstanceOf[NavigationTransitionProps]
   }

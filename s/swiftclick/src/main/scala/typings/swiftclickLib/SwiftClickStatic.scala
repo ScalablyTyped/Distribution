@@ -12,8 +12,8 @@ trait SwiftClickStatic extends js.Object {
 object SwiftClickStatic {
   @scala.inline
   def apply(attach: js.Function1[stdLib.Element, SwiftClickObject]): SwiftClickStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
+    val __obj = js.Dynamic.literal(attach = attach)
+  
     __obj.asInstanceOf[SwiftClickStatic]
   }
 }

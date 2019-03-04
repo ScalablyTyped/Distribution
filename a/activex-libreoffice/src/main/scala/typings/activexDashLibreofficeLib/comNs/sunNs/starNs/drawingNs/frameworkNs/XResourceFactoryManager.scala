@@ -49,11 +49,8 @@ object XResourceFactoryManager {
     removeResourceFactoryForReference: js.Function1[XResourceFactory, scala.Unit],
     removeResourceFactoryForURL: js.Function1[java.lang.String, scala.Unit]
   ): XResourceFactoryManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addResourceFactory")(addResourceFactory)
-    __obj.updateDynamic("getResourceFactory")(getResourceFactory)
-    __obj.updateDynamic("removeResourceFactoryForReference")(removeResourceFactoryForReference)
-    __obj.updateDynamic("removeResourceFactoryForURL")(removeResourceFactoryForURL)
+    val __obj = js.Dynamic.literal(addResourceFactory = addResourceFactory, getResourceFactory = getResourceFactory, removeResourceFactoryForReference = removeResourceFactoryForReference, removeResourceFactoryForURL = removeResourceFactoryForURL)
+  
     __obj.asInstanceOf[XResourceFactoryManager]
   }
 }

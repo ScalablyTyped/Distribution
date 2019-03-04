@@ -24,13 +24,8 @@ object Anon_AllSelected {
     partSelected: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Header,
     partSelectedHover: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Header
   ): Anon_AllSelected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allSelected")(allSelected)
-    __obj.updateDynamic("allSelectedHover")(allSelectedHover)
-    __obj.updateDynamic("normal")(normal)
-    __obj.updateDynamic("normalHover")(normalHover)
-    __obj.updateDynamic("partSelected")(partSelected)
-    __obj.updateDynamic("partSelectedHover")(partSelectedHover)
+    val __obj = js.Dynamic.literal(allSelected = allSelected, allSelectedHover = allSelectedHover, normal = normal, normalHover = normalHover, partSelected = partSelected, partSelectedHover = partSelectedHover)
+  
     __obj.asInstanceOf[Anon_AllSelected]
   }
 }

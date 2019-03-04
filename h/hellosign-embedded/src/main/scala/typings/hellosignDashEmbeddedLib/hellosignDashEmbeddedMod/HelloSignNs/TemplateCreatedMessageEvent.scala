@@ -18,10 +18,8 @@ object TemplateCreatedMessageEvent {
     template_id: java.lang.String,
     template_info: hellosignDashEmbeddedLib.Anon_Ccroles
   ): TemplateCreatedMessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("template_id")(template_id)
-    __obj.updateDynamic("template_info")(template_info)
+    val __obj = js.Dynamic.literal(event = event, template_id = template_id, template_info = template_info)
+  
     __obj.asInstanceOf[TemplateCreatedMessageEvent]
   }
 }

@@ -12,8 +12,8 @@ trait SVGOptions extends js.Object {
 object SVGOptions {
   @scala.inline
   def apply(includeNamespace: scala.Boolean): SVGOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeNamespace")(includeNamespace)
+    val __obj = js.Dynamic.literal(includeNamespace = includeNamespace)
+  
     __obj.asInstanceOf[SVGOptions]
   }
 }

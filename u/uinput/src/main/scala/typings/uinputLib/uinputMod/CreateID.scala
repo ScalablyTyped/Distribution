@@ -30,11 +30,7 @@ object CreateID {
     absmin: js.Array[scala.Double] = null,
     ff_effects_max: scala.Int | scala.Double = null
   ): CreateID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bustype")(bustype)
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("vendor")(vendor)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(bustype = bustype, product = product, vendor = vendor, version = version)
     if (absflat != null) __obj.updateDynamic("absflat")(absflat)
     if (absfuzz != null) __obj.updateDynamic("absfuzz")(absfuzz)
     if (absmax != null) __obj.updateDynamic("absmax")(absmax)

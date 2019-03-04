@@ -66,9 +66,7 @@ object Anon_AltDimension {
     startIndex: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AltDimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("startDate")(startDate)
+    val __obj = js.Dynamic.literal(endDate = endDate, startDate = startDate)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (dimension != null) __obj.updateDynamic("dimension")(dimension)
     if (fields != null) __obj.updateDynamic("fields")(fields)

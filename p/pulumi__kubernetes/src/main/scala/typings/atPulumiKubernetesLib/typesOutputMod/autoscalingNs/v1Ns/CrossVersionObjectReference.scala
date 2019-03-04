@@ -28,10 +28,8 @@ trait CrossVersionObjectReference extends js.Object {
 object CrossVersionObjectReference {
   @scala.inline
   def apply(apiVersion: java.lang.String, kind: java.lang.String, name: java.lang.String): CrossVersionObjectReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, name = name)
+  
     __obj.asInstanceOf[CrossVersionObjectReference]
   }
 }

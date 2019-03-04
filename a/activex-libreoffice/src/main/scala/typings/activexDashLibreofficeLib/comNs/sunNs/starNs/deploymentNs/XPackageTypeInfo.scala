@@ -74,16 +74,8 @@ object XPackageTypeInfo {
     getMediaType: js.Function0[java.lang.String],
     getShortDescription: js.Function0[java.lang.String]
   ): XPackageTypeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("FileFilter")(FileFilter)
-    __obj.updateDynamic("MediaType")(MediaType)
-    __obj.updateDynamic("ShortDescription")(ShortDescription)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getFileFilter")(getFileFilter)
-    __obj.updateDynamic("getIcon")(getIcon)
-    __obj.updateDynamic("getMediaType")(getMediaType)
-    __obj.updateDynamic("getShortDescription")(getShortDescription)
+    val __obj = js.Dynamic.literal(Description = Description, FileFilter = FileFilter, MediaType = MediaType, ShortDescription = ShortDescription, getDescription = getDescription, getFileFilter = getFileFilter, getIcon = getIcon, getMediaType = getMediaType, getShortDescription = getShortDescription)
+  
     __obj.asInstanceOf[XPackageTypeInfo]
   }
 }

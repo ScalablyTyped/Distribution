@@ -34,11 +34,8 @@ object Service {
     read: js.Function1[java.lang.String, js.Any],
     set: js.Function1[java.lang.String, scala.Unit]
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, is = is, read = read, set = set)
+  
     __obj.asInstanceOf[Service]
   }
 }

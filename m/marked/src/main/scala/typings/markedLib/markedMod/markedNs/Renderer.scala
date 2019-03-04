@@ -50,26 +50,8 @@ object Renderer {
     tablerow: js.Function1[java.lang.String, java.lang.String],
     text: js.Function1[java.lang.String, java.lang.String]
   ): Renderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockquote")(blockquote)
-    __obj.updateDynamic("br")(br)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("codespan")(codespan)
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("em")(em)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("hr")(hr)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listitem")(listitem)
-    __obj.updateDynamic("paragraph")(paragraph)
-    __obj.updateDynamic("strong")(strong)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("tablecell")(tablecell)
-    __obj.updateDynamic("tablerow")(tablerow)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(blockquote = blockquote, br = br, code = code, codespan = codespan, del = del, em = em, heading = heading, hr = hr, html = html, image = image, link = link, list = list, listitem = listitem, paragraph = paragraph, strong = strong, table = table, tablecell = tablecell, tablerow = tablerow, text = text)
+  
     __obj.asInstanceOf[Renderer]
   }
 }

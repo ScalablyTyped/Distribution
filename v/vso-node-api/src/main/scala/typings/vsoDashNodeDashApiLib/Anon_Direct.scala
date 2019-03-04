@@ -22,12 +22,8 @@ object Anon_Direct {
     expandedUp: scala.Double,
     none: scala.Double
   ): Anon_Direct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direct")(direct)
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("expandedDown")(expandedDown)
-    __obj.updateDynamic("expandedUp")(expandedUp)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(direct = direct, expanded = expanded, expandedDown = expandedDown, expandedUp = expandedUp, none = none)
+  
     __obj.asInstanceOf[Anon_Direct]
   }
 }

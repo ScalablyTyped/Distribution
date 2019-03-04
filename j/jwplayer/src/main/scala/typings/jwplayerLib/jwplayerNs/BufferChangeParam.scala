@@ -15,11 +15,8 @@ trait BufferChangeParam extends js.Object {
 object BufferChangeParam {
   @scala.inline
   def apply(bufferPercent: scala.Double, duration: scala.Double, metadata: js.Any, position: scala.Double): BufferChangeParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferPercent")(bufferPercent)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(bufferPercent = bufferPercent, duration = duration, metadata = metadata, position = position)
+  
     __obj.asInstanceOf[BufferChangeParam]
   }
 }

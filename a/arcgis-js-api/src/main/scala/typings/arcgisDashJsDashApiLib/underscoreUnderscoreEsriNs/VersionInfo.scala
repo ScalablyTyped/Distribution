@@ -37,13 +37,8 @@ object VersionInfo {
     parent: java.lang.String,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): VersionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access")(access)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(access = access, constructor = constructor, hasOwnProperty = hasOwnProperty, name = name, parent = parent, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[VersionInfo]
   }
 }

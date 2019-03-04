@@ -18,10 +18,8 @@ object Program {
     loc: SourceLocation,
     `type`: java.lang.String
   ): Program = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("blockParams")(blockParams)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("loc")(loc)
+    val __obj = js.Dynamic.literal(blockParams = blockParams, body = body, loc = loc)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Program]
   }
 }

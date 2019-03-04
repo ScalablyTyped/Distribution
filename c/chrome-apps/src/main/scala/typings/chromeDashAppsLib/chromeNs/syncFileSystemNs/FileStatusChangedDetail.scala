@@ -86,9 +86,7 @@ object FileStatusChangedDetail {
       ]
     ] = null
   ): FileStatusChangedDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileEntry")(fileEntry)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fileEntry = fileEntry, status = status.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStatusChangedDetail]

@@ -20,11 +20,8 @@ object IEndpointPair {
     remoteHostName: HostName,
     remoteServiceName: java.lang.String
   ): IEndpointPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localHostName")(localHostName)
-    __obj.updateDynamic("localServiceName")(localServiceName)
-    __obj.updateDynamic("remoteHostName")(remoteHostName)
-    __obj.updateDynamic("remoteServiceName")(remoteServiceName)
+    val __obj = js.Dynamic.literal(localHostName = localHostName, localServiceName = localServiceName, remoteHostName = remoteHostName, remoteServiceName = remoteServiceName)
+  
     __obj.asInstanceOf[IEndpointPair]
   }
 }

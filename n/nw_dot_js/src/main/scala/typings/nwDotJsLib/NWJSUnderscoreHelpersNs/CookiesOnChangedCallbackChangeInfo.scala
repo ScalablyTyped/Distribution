@@ -30,10 +30,8 @@ object CookiesOnChangedCallbackChangeInfo {
     cookie: Cookie,
     removed: scala.Boolean
   ): CookiesOnChangedCallbackChangeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cause")(cause.asInstanceOf[js.Any])
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], cookie = cookie, removed = removed)
+  
     __obj.asInstanceOf[CookiesOnChangedCallbackChangeInfo]
   }
 }

@@ -20,10 +20,7 @@ object PluginStore {
     modelClass: ModelClass,
     model: Model = null
   ): PluginStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("modelClass")(modelClass)
+    val __obj = js.Dynamic.literal(dispatch = dispatch, getState = getState, modelClass = modelClass)
     if (model != null) __obj.updateDynamic("model")(model)
     __obj.asInstanceOf[PluginStore]
   }

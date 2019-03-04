@@ -28,15 +28,8 @@ object SyslogConfigSetColors {
     notice: java.lang.String | js.Array[java.lang.String],
     warning: java.lang.String | js.Array[java.lang.String]
   ): SyslogConfigSetColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
-    __obj.updateDynamic("crit")(crit.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    __obj.updateDynamic("emerg")(emerg.asInstanceOf[js.Any])
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    __obj.updateDynamic("notice")(notice.asInstanceOf[js.Any])
-    __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any], crit = crit.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], emerg = emerg.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], notice = notice.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SyslogConfigSetColors]
   }
 }

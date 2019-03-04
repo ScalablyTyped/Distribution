@@ -23,10 +23,8 @@ trait AppGroupCreationContent extends js.Object {
 object AppGroupCreationContent {
   @scala.inline
   def apply(description: java.lang.String, name: java.lang.String, privacy: AppGroupPrivacy): AppGroupCreationContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("privacy")(privacy)
+    val __obj = js.Dynamic.literal(description = description, name = name, privacy = privacy)
+  
     __obj.asInstanceOf[AppGroupCreationContent]
   }
 }

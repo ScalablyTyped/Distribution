@@ -20,11 +20,8 @@ object Session {
     toCrowd: js.Function0[SessionObj],
     token: java.lang.String
   ): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("expiresAt")(expiresAt)
-    __obj.updateDynamic("toCrowd")(toCrowd)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(createdAt = createdAt, expiresAt = expiresAt, toCrowd = toCrowd, token = token)
+  
     __obj.asInstanceOf[Session]
   }
 }

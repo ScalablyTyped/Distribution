@@ -27,8 +27,8 @@ object GoogleServiceAccountsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GoogleServiceAccount]
     ]
   ): GoogleServiceAccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[GoogleServiceAccountsResource]
   }
 }

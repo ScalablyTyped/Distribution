@@ -19,10 +19,7 @@ object ValidatorValidateInputEvent {
     input: kendoDashUiLib.JQuery = null,
     valid: js.UndefOr[scala.Boolean] = js.undefined
   ): ValidatorValidateInputEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (input != null) __obj.updateDynamic("input")(input)
     if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
     __obj.asInstanceOf[ValidatorValidateInputEvent]

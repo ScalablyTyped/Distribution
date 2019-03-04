@@ -61,8 +61,8 @@ object CodeSystemProperty {
     modifierExtension: js.Array[Extension] = null,
     uri: uri = null
   ): CodeSystemProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
+    __obj.updateDynamic("type")(`type`)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

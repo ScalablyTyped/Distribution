@@ -32,17 +32,8 @@ object ColorSpaces {
     rgb: js.Tuple3[scala.Double, scala.Double, scala.Double],
     rgba: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
   ): ColorSpaces = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmyk")(cmyk)
-    __obj.updateDynamic("gl")(gl)
-    __obj.updateDynamic("hcl")(hcl)
-    __obj.updateDynamic("hsi")(hsi)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("hsv")(hsv)
-    __obj.updateDynamic("lab")(lab)
-    __obj.updateDynamic("lch")(lch)
-    __obj.updateDynamic("rgb")(rgb)
-    __obj.updateDynamic("rgba")(rgba)
+    val __obj = js.Dynamic.literal(cmyk = cmyk, gl = gl, hcl = hcl, hsi = hsi, hsl = hsl, hsv = hsv, lab = lab, lch = lch, rgb = rgb, rgba = rgba)
+  
     __obj.asInstanceOf[ColorSpaces]
   }
 }

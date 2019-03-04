@@ -17,8 +17,8 @@ object GlobalInstance {
       inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.ContentPanelView
     ]
   ): GlobalInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addSidebarContentPanel")(addSidebarContentPanel)
+    val __obj = js.Dynamic.literal(addSidebarContentPanel = addSidebarContentPanel)
+  
     __obj.asInstanceOf[GlobalInstance]
   }
 }

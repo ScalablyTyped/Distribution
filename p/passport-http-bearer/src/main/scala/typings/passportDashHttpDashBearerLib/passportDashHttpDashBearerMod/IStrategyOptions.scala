@@ -18,10 +18,8 @@ object IStrategyOptions {
     realm: java.lang.String,
     scope: java.lang.String | js.Array[java.lang.String]
   ): IStrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    __obj.updateDynamic("realm")(realm)
-    __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback, realm = realm, scope = scope.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IStrategyOptions]
   }
 }

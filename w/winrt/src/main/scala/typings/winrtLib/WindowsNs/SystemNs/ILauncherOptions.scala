@@ -28,15 +28,8 @@ object ILauncherOptions {
     treatAsUntrusted: scala.Boolean,
     uI: LauncherUIOptions
   ): ILauncherOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("desiredRemainingView")(desiredRemainingView)
-    __obj.updateDynamic("displayApplicationPicker")(displayApplicationPicker)
-    __obj.updateDynamic("fallbackUri")(fallbackUri)
-    __obj.updateDynamic("preferredApplicationDisplayName")(preferredApplicationDisplayName)
-    __obj.updateDynamic("preferredApplicationPackageFamilyName")(preferredApplicationPackageFamilyName)
-    __obj.updateDynamic("treatAsUntrusted")(treatAsUntrusted)
-    __obj.updateDynamic("uI")(uI)
+    val __obj = js.Dynamic.literal(contentType = contentType, desiredRemainingView = desiredRemainingView, displayApplicationPicker = displayApplicationPicker, fallbackUri = fallbackUri, preferredApplicationDisplayName = preferredApplicationDisplayName, preferredApplicationPackageFamilyName = preferredApplicationPackageFamilyName, treatAsUntrusted = treatAsUntrusted, uI = uI)
+  
     __obj.asInstanceOf[ILauncherOptions]
   }
 }

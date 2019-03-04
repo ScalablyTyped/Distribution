@@ -208,40 +208,8 @@ object XSimpleCanvas {
     ],
     setTransformation: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit]
   ): XSimpleCanvas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Canvas")(Canvas)
-    __obj.updateDynamic("CurrentClipRect")(CurrentClipRect)
-    __obj.updateDynamic("CurrentFillColor")(CurrentFillColor)
-    __obj.updateDynamic("CurrentFont")(CurrentFont)
-    __obj.updateDynamic("CurrentPenColor")(CurrentPenColor)
-    __obj.updateDynamic("CurrentTransformation")(CurrentTransformation)
-    __obj.updateDynamic("CurrentViewState")(CurrentViewState)
-    __obj.updateDynamic("Device")(Device)
-    __obj.updateDynamic("FontMetrics")(FontMetrics)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("drawBitmap")(drawBitmap)
-    __obj.updateDynamic("drawLine")(drawLine)
-    __obj.updateDynamic("drawPixel")(drawPixel)
-    __obj.updateDynamic("drawPolyPolygon")(drawPolyPolygon)
-    __obj.updateDynamic("drawRect")(drawRect)
-    __obj.updateDynamic("drawText")(drawText)
-    __obj.updateDynamic("getCanvas")(getCanvas)
-    __obj.updateDynamic("getCurrentClipRect")(getCurrentClipRect)
-    __obj.updateDynamic("getCurrentFillColor")(getCurrentFillColor)
-    __obj.updateDynamic("getCurrentFont")(getCurrentFont)
-    __obj.updateDynamic("getCurrentPenColor")(getCurrentPenColor)
-    __obj.updateDynamic("getCurrentRenderState")(getCurrentRenderState)
-    __obj.updateDynamic("getCurrentTransformation")(getCurrentTransformation)
-    __obj.updateDynamic("getCurrentViewState")(getCurrentViewState)
-    __obj.updateDynamic("getDevice")(getDevice)
-    __obj.updateDynamic("getFontMetrics")(getFontMetrics)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("selectFont")(selectFont)
-    __obj.updateDynamic("setFillColor")(setFillColor)
-    __obj.updateDynamic("setPenColor")(setPenColor)
-    __obj.updateDynamic("setRectClip")(setRectClip)
-    __obj.updateDynamic("setTransformation")(setTransformation)
+    val __obj = js.Dynamic.literal(Canvas = Canvas, CurrentClipRect = CurrentClipRect, CurrentFillColor = CurrentFillColor, CurrentFont = CurrentFont, CurrentPenColor = CurrentPenColor, CurrentTransformation = CurrentTransformation, CurrentViewState = CurrentViewState, Device = Device, FontMetrics = FontMetrics, acquire = acquire, drawBitmap = drawBitmap, drawLine = drawLine, drawPixel = drawPixel, drawPolyPolygon = drawPolyPolygon, drawRect = drawRect, drawText = drawText, getCanvas = getCanvas, getCurrentClipRect = getCurrentClipRect, getCurrentFillColor = getCurrentFillColor, getCurrentFont = getCurrentFont, getCurrentPenColor = getCurrentPenColor, getCurrentRenderState = getCurrentRenderState, getCurrentTransformation = getCurrentTransformation, getCurrentViewState = getCurrentViewState, getDevice = getDevice, getFontMetrics = getFontMetrics, queryInterface = queryInterface, release = release, selectFont = selectFont, setFillColor = setFillColor, setPenColor = setPenColor, setRectClip = setRectClip, setTransformation = setTransformation)
+  
     __obj.asInstanceOf[XSimpleCanvas]
   }
 }

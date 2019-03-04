@@ -22,10 +22,7 @@ object Anon_Hooks {
     name: java.lang.String = null,
     params: Params = null
   ): Anon_Hooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hooks")(hooks)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(hooks = hooks, query = query, url = url)
     if (name != null) __obj.updateDynamic("name")(name)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[Anon_Hooks]

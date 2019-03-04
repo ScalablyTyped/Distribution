@@ -20,8 +20,7 @@ object IteratorMultiArgsOptions {
     resolutionEvents: js.Array[java.lang.String | js.Symbol] = null,
     timeout: scala.Int | scala.Double = null
   ): IteratorMultiArgsOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("multiArgs")(multiArgs)
+    val __obj = js.Dynamic.literal(multiArgs = multiArgs)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)

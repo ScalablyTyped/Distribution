@@ -51,8 +51,7 @@ object ConfigurationTemplateArgs {
     ] = null,
     solutionStackName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ConfigurationTemplateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

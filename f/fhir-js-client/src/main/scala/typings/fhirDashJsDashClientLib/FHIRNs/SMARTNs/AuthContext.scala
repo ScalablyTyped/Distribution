@@ -35,7 +35,8 @@ object AuthContext {
     token: java.lang.String = null,
     username: java.lang.String = null
   ): AuthContext = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (password != null) __obj.updateDynamic("password")(password)
     if (token != null) __obj.updateDynamic("token")(token)
     if (username != null) __obj.updateDynamic("username")(username)

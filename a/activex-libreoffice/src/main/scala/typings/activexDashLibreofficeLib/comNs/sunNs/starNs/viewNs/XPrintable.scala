@@ -56,14 +56,8 @@ object XPrintable {
       scala.Unit
     ]
   ): XPrintable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Printer")(Printer)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPrinter")(getPrinter)
-    __obj.updateDynamic("print")(print)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPrinter")(setPrinter)
+    val __obj = js.Dynamic.literal(Printer = Printer, acquire = acquire, getPrinter = getPrinter, print = print, queryInterface = queryInterface, release = release, setPrinter = setPrinter)
+  
     __obj.asInstanceOf[XPrintable]
   }
 }

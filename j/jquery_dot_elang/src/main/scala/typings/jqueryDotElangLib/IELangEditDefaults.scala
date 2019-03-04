@@ -38,27 +38,8 @@ object IELangEditDefaults {
     resultHtml: java.lang.String,
     submitButtonHtml: java.lang.String
   ): IELangEditDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addButtonHtml")(addButtonHtml)
-    __obj.updateDynamic("addButtonLabel")(addButtonLabel)
-    __obj.updateDynamic("contentCSS")(contentCSS)
-    __obj.updateDynamic("contentInnerCSS")(contentInnerCSS)
-    __obj.updateDynamic("contentInnerHtml")(contentInnerHtml)
-    __obj.updateDynamic("editFieldHtml")(editFieldHtml)
-    __obj.updateDynamic("editFormHtml")(editFormHtml)
-    __obj.updateDynamic("editKeyLabel")(editKeyLabel)
-    __obj.updateDynamic("editValueLabel")(editValueLabel)
-    __obj.updateDynamic("fluidRowHtml")(fluidRowHtml)
-    __obj.updateDynamic("headLabel")(headLabel)
-    __obj.updateDynamic("headLabelHtml")(headLabelHtml)
-    __obj.updateDynamic("radioButtonHtml")(radioButtonHtml)
-    __obj.updateDynamic("radioGroupHtml")(radioGroupHtml)
-    __obj.updateDynamic("resultCSS")(resultCSS)
-    __obj.updateDynamic("resultHeadCSS")(resultHeadCSS)
-    __obj.updateDynamic("resultHeadLabel")(resultHeadLabel)
-    __obj.updateDynamic("resultHeadLabelHtml")(resultHeadLabelHtml)
-    __obj.updateDynamic("resultHtml")(resultHtml)
-    __obj.updateDynamic("submitButtonHtml")(submitButtonHtml)
+    val __obj = js.Dynamic.literal(addButtonHtml = addButtonHtml, addButtonLabel = addButtonLabel, contentCSS = contentCSS, contentInnerCSS = contentInnerCSS, contentInnerHtml = contentInnerHtml, editFieldHtml = editFieldHtml, editFormHtml = editFormHtml, editKeyLabel = editKeyLabel, editValueLabel = editValueLabel, fluidRowHtml = fluidRowHtml, headLabel = headLabel, headLabelHtml = headLabelHtml, radioButtonHtml = radioButtonHtml, radioGroupHtml = radioGroupHtml, resultCSS = resultCSS, resultHeadCSS = resultHeadCSS, resultHeadLabel = resultHeadLabel, resultHeadLabelHtml = resultHeadLabelHtml, resultHtml = resultHtml, submitButtonHtml = submitButtonHtml)
+  
     __obj.asInstanceOf[IELangEditDefaults]
   }
 }

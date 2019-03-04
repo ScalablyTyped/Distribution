@@ -22,12 +22,8 @@ object Anon_ContentEncryptionAlgorithm {
     iterationCount: scala.Double,
     password: java.lang.String
   ): Anon_ContentEncryptionAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentEncryptionAlgorithm")(contentEncryptionAlgorithm)
-    __obj.updateDynamic("contentToEncrypt")(contentToEncrypt)
-    __obj.updateDynamic("hmacHashAlgorithm")(hmacHashAlgorithm)
-    __obj.updateDynamic("iterationCount")(iterationCount)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(contentEncryptionAlgorithm = contentEncryptionAlgorithm, contentToEncrypt = contentToEncrypt, hmacHashAlgorithm = hmacHashAlgorithm, iterationCount = iterationCount, password = password)
+  
     __obj.asInstanceOf[Anon_ContentEncryptionAlgorithm]
   }
 }

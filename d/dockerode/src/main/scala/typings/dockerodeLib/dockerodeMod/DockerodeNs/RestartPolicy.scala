@@ -13,8 +13,7 @@ trait RestartPolicy extends js.Object {
 object RestartPolicy {
   @scala.inline
   def apply(Name: java.lang.String, MaximumRetryCount: scala.Int | scala.Double = null): RestartPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Name = Name)
     if (MaximumRetryCount != null) __obj.updateDynamic("MaximumRetryCount")(MaximumRetryCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestartPolicy]
   }

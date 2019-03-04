@@ -15,8 +15,8 @@ object Anon_Event {
   def apply[TTarget](
     preDispatch: js.Function2[TTarget, jqueryLib.JQueryNs.Event, jqueryLib.jqueryLibNumbers.`false` | scala.Unit]
   ): Anon_Event[TTarget] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preDispatch")(preDispatch)
+    val __obj = js.Dynamic.literal(preDispatch = preDispatch)
+  
     __obj.asInstanceOf[Anon_Event[TTarget]]
   }
 }

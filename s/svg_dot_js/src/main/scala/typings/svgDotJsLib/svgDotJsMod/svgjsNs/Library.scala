@@ -59,7 +59,7 @@ trait Library extends js.Object {
   var ViewBox: ViewBox = js.native
   var defaults: svgDotJsLib.Anon_Attrs = js.native
   var did: scala.Double = js.native
-  var easing: svgDotJsLib.`Anon_` = js.native
+  var easing: svgDotJsLib.Anon_ = js.native
   var ns: java.lang.String = js.native
   var regex: svgDotJsLib.Anon_Delimiter = js.native
   var supported: scala.Boolean = js.native

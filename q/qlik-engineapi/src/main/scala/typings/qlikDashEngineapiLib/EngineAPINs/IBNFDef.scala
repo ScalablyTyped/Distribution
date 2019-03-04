@@ -122,15 +122,7 @@ object IBNFDef {
     qQvFunc: js.UndefOr[scala.Boolean] = js.undefined,
     qScriptStatement: js.UndefOr[scala.Boolean] = js.undefined
   ): IBNFDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qBnf")(qBnf)
-    __obj.updateDynamic("qFG")(qFG)
-    __obj.updateDynamic("qHelpId")(qHelpId)
-    __obj.updateDynamic("qMT")(qMT)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qNbr")(qNbr)
-    __obj.updateDynamic("qPNbr")(qPNbr)
-    __obj.updateDynamic("qStr")(qStr)
+    val __obj = js.Dynamic.literal(qBnf = qBnf, qFG = qFG, qHelpId = qHelpId, qMT = qMT, qName = qName, qNbr = qNbr, qPNbr = qPNbr, qStr = qStr)
     if (!js.isUndefined(qAggrFunc)) __obj.updateDynamic("qAggrFunc")(qAggrFunc)
     if (!js.isUndefined(qBnfLiteral)) __obj.updateDynamic("qBnfLiteral")(qBnfLiteral)
     if (!js.isUndefined(qControlStatement)) __obj.updateDynamic("qControlStatement")(qControlStatement)

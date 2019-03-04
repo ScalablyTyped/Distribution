@@ -39,8 +39,8 @@ object LineBackgroundSpan {
       scala.Unit
     ]
   ): LineBackgroundSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawBackground")(drawBackground)
+    val __obj = js.Dynamic.literal(drawBackground = drawBackground)
+  
     __obj.asInstanceOf[LineBackgroundSpan]
   }
 }

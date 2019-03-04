@@ -66,10 +66,7 @@ object ReactJsPaginationProps {
     pageRangeDisplayed: scala.Int | scala.Double = null,
     prevPageText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): ReactJsPaginationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activePage")(activePage)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("totalItemsCount")(totalItemsCount)
+    val __obj = js.Dynamic.literal(activePage = activePage, onChange = onChange, totalItemsCount = totalItemsCount)
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
     if (activeLinkClass != null) __obj.updateDynamic("activeLinkClass")(activeLinkClass)
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)

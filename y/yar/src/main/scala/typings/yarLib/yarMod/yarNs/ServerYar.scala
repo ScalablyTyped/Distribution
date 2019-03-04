@@ -12,8 +12,8 @@ trait ServerYar extends js.Object {
 object ServerYar {
   @scala.inline
   def apply(revoke: js.Function1[catboxLib.catboxMod.Id, js.Promise[scala.Unit]]): ServerYar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("revoke")(revoke)
+    val __obj = js.Dynamic.literal(revoke = revoke)
+  
     __obj.asInstanceOf[ServerYar]
   }
 }

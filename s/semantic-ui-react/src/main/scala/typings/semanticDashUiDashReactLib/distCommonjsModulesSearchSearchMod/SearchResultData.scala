@@ -71,8 +71,7 @@ object SearchResultData {
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.big | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.massive = null,
     value: java.lang.String = null
   ): SearchResultData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
     if (aligned != null) __obj.updateDynamic("aligned")(aligned)
     if (as != null) __obj.updateDynamic("as")(as)
     if (!js.isUndefined(category)) __obj.updateDynamic("category")(category)

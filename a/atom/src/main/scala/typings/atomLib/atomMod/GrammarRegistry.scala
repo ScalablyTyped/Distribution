@@ -185,25 +185,8 @@ object GrammarRegistry {
     removeGrammarForScopeName: js.Function1[java.lang.String, js.UndefOr[Grammar]],
     selectGrammar: js.Function2[java.lang.String, java.lang.String, Grammar]
   ): GrammarRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addGrammar")(addGrammar)
-    __obj.updateDynamic("assignLanguageMode")(assignLanguageMode)
-    __obj.updateDynamic("autoAssignLanguageMode")(autoAssignLanguageMode)
-    __obj.updateDynamic("decodeTokens")(decodeTokens)
-    __obj.updateDynamic("getGrammarScore")(getGrammarScore)
-    __obj.updateDynamic("getGrammars")(getGrammars)
-    __obj.updateDynamic("grammarForScopeName")(grammarForScopeName)
-    __obj.updateDynamic("loadGrammar")(loadGrammar)
-    __obj.updateDynamic("loadGrammarSync")(loadGrammarSync)
-    __obj.updateDynamic("maintainLanguageMode")(maintainLanguageMode)
-    __obj.updateDynamic("onDidAddGrammar")(onDidAddGrammar)
-    __obj.updateDynamic("onDidRemoveGrammar")(onDidRemoveGrammar)
-    __obj.updateDynamic("onDidUpdateGrammar")(onDidUpdateGrammar)
-    __obj.updateDynamic("readGrammar")(readGrammar)
-    __obj.updateDynamic("readGrammarSync")(readGrammarSync)
-    __obj.updateDynamic("removeGrammar")(removeGrammar)
-    __obj.updateDynamic("removeGrammarForScopeName")(removeGrammarForScopeName)
-    __obj.updateDynamic("selectGrammar")(selectGrammar)
+    val __obj = js.Dynamic.literal(addGrammar = addGrammar, assignLanguageMode = assignLanguageMode, autoAssignLanguageMode = autoAssignLanguageMode, decodeTokens = decodeTokens, getGrammarScore = getGrammarScore, getGrammars = getGrammars, grammarForScopeName = grammarForScopeName, loadGrammar = loadGrammar, loadGrammarSync = loadGrammarSync, maintainLanguageMode = maintainLanguageMode, onDidAddGrammar = onDidAddGrammar, onDidRemoveGrammar = onDidRemoveGrammar, onDidUpdateGrammar = onDidUpdateGrammar, readGrammar = readGrammar, readGrammarSync = readGrammarSync, removeGrammar = removeGrammar, removeGrammarForScopeName = removeGrammarForScopeName, selectGrammar = selectGrammar)
+  
     __obj.asInstanceOf[GrammarRegistry]
   }
 }

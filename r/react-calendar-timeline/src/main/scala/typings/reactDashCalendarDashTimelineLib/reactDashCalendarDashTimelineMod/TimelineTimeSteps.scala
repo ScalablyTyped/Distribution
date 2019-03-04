@@ -24,13 +24,8 @@ object TimelineTimeSteps {
     second: scala.Double,
     year: scala.Double
   ): TimelineTimeSteps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(day = day, hour = hour, minute = minute, month = month, second = second, year = year)
+  
     __obj.asInstanceOf[TimelineTimeSteps]
   }
 }

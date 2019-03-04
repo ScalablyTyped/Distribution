@@ -21,7 +21,7 @@ class ListCollection[T] ()
   /**
     * @hidden
     */
-  var `dispatcher_`: js.Any = js.native
+  var dispatcher_ : js.Any = js.native
   /**
     * @inheritdoc
     */

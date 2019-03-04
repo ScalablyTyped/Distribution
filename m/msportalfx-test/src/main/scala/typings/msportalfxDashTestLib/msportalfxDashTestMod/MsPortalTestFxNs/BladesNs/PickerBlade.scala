@@ -35,22 +35,8 @@ object PickerBlade {
     sendKeys: js.Function1[/* repeated */ java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]],
     title: java.lang.String
   ): PickerBlade = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseLocator")(baseLocator)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("clickCommand")(clickCommand)
-    __obj.updateDynamic("getAttribute")(getAttribute)
-    __obj.updateDynamic("getLocator")(getLocator)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getTiles")(getTiles)
-    __obj.updateDynamic("isDisplayed")(isDisplayed)
-    __obj.updateDynamic("isElementPresent")(isElementPresent)
-    __obj.updateDynamic("isPresent")(isPresent)
-    __obj.updateDynamic("parentLocator")(parentLocator)
-    __obj.updateDynamic("pickItem")(pickItem)
-    __obj.updateDynamic("rightClick")(rightClick)
-    __obj.updateDynamic("sendKeys")(sendKeys)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = click, clickCommand = clickCommand, getAttribute = getAttribute, getLocator = getLocator, getText = getText, getTiles = getTiles, isDisplayed = isDisplayed, isElementPresent = isElementPresent, isPresent = isPresent, parentLocator = parentLocator, pickItem = pickItem, rightClick = rightClick, sendKeys = sendKeys, title = title)
+  
     __obj.asInstanceOf[PickerBlade]
   }
 }

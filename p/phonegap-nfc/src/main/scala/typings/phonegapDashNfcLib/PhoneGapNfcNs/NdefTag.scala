@@ -24,14 +24,8 @@ object NdefTag {
     techTypes: js.Array[java.lang.String],
     `type`: java.lang.String
   ): NdefTag = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("canMakeReadOnly")(canMakeReadOnly)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isWritable")(isWritable)
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("ndefMessage")(ndefMessage)
-    __obj.updateDynamic("techTypes")(techTypes)
+    val __obj = js.Dynamic.literal(canMakeReadOnly = canMakeReadOnly, date = date, id = id, isWritable = isWritable, maxSize = maxSize, ndefMessage = ndefMessage, techTypes = techTypes)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NdefTag]
   }
 }

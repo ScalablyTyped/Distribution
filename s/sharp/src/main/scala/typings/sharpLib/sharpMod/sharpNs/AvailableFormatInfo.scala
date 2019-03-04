@@ -14,10 +14,8 @@ trait AvailableFormatInfo extends js.Object {
 object AvailableFormatInfo {
   @scala.inline
   def apply(id: java.lang.String, input: sharpLib.Anon_Buffer, output: sharpLib.Anon_Buffer): AvailableFormatInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(id = id, input = input, output = output)
+  
     __obj.asInstanceOf[AvailableFormatInfo]
   }
 }

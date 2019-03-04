@@ -82,34 +82,8 @@ object TextSortDescriptor {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): TextSortDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CollatorAlgorithm")(CollatorAlgorithm)
-    __obj.updateDynamic("CollatorLocale")(CollatorLocale)
-    __obj.updateDynamic("Delimiter")(Delimiter)
-    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
-    __obj.updateDynamic("IsSortAscending0")(IsSortAscending0)
-    __obj.updateDynamic("IsSortAscending1")(IsSortAscending1)
-    __obj.updateDynamic("IsSortAscending2")(IsSortAscending2)
-    __obj.updateDynamic("IsSortInTable")(IsSortInTable)
-    __obj.updateDynamic("IsSortNumeric0")(IsSortNumeric0)
-    __obj.updateDynamic("IsSortNumeric1")(IsSortNumeric1)
-    __obj.updateDynamic("IsSortNumeric2")(IsSortNumeric2)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SortAscending")(SortAscending)
-    __obj.updateDynamic("SortColumns")(SortColumns)
-    __obj.updateDynamic("SortRowOrColumnNo0")(SortRowOrColumnNo0)
-    __obj.updateDynamic("SortRowOrColumnNo1")(SortRowOrColumnNo1)
-    __obj.updateDynamic("SortRowOrColumnNo2")(SortRowOrColumnNo2)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(CollatorAlgorithm = CollatorAlgorithm, CollatorLocale = CollatorLocale, Delimiter = Delimiter, IsCaseSensitive = IsCaseSensitive, IsSortAscending0 = IsSortAscending0, IsSortAscending1 = IsSortAscending1, IsSortAscending2 = IsSortAscending2, IsSortInTable = IsSortInTable, IsSortNumeric0 = IsSortNumeric0, IsSortNumeric1 = IsSortNumeric1, IsSortNumeric2 = IsSortNumeric2, PropertySetInfo = PropertySetInfo, SortAscending = SortAscending, SortColumns = SortColumns, SortRowOrColumnNo0 = SortRowOrColumnNo0, SortRowOrColumnNo1 = SortRowOrColumnNo1, SortRowOrColumnNo2 = SortRowOrColumnNo2, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[TextSortDescriptor]
   }
 }

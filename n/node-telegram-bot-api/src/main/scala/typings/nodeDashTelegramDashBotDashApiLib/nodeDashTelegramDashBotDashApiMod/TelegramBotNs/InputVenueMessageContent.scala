@@ -20,11 +20,7 @@ object InputVenueMessageContent {
     title: java.lang.String,
     foursquare_id: java.lang.String = null
   ): InputVenueMessageContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(address = address, latitude = latitude, longitude = longitude, title = title)
     if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id)
     __obj.asInstanceOf[InputVenueMessageContent]
   }

@@ -31,14 +31,8 @@ object JasmineJQueryEvents {
     wasTriggered: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
     wasTriggeredWith: js.Function4[java.lang.String, java.lang.String, js.Any, jasmineLib.jasmineNs.Env, scala.Boolean]
   ): JasmineJQueryEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("cleanUp")(cleanUp)
-    __obj.updateDynamic("spyOn")(spyOn)
-    __obj.updateDynamic("wasPrevented")(wasPrevented)
-    __obj.updateDynamic("wasStopped")(wasStopped)
-    __obj.updateDynamic("wasTriggered")(wasTriggered)
-    __obj.updateDynamic("wasTriggeredWith")(wasTriggeredWith)
+    val __obj = js.Dynamic.literal(args = args, cleanUp = cleanUp, spyOn = spyOn, wasPrevented = wasPrevented, wasStopped = wasStopped, wasTriggered = wasTriggered, wasTriggeredWith = wasTriggeredWith)
+  
     __obj.asInstanceOf[JasmineJQueryEvents]
   }
 }

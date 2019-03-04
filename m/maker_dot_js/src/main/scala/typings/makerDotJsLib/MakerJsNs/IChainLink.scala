@@ -35,11 +35,8 @@ object IChainLink {
     reversed: scala.Boolean,
     walkedPath: IWalkPath
   ): IChainLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endPoints")(endPoints)
-    __obj.updateDynamic("pathLength")(pathLength)
-    __obj.updateDynamic("reversed")(reversed)
-    __obj.updateDynamic("walkedPath")(walkedPath)
+    val __obj = js.Dynamic.literal(endPoints = endPoints, pathLength = pathLength, reversed = reversed, walkedPath = walkedPath)
+  
     __obj.asInstanceOf[IChainLink]
   }
 }

@@ -35,20 +35,8 @@ object UIElement {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     update: js.Function0[scala.Unit]
   ): UIElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("RealInterface")(RealInterface)
-    __obj.updateDynamic("ResourceURL")(ResourceURL)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getRealInterface")(getRealInterface)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(Frame = Frame, RealInterface = RealInterface, ResourceURL = ResourceURL, Type = Type, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getRealInterface = getRealInterface, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, update = update)
+  
     __obj.asInstanceOf[UIElement]
   }
 }

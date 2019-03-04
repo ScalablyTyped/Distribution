@@ -30,9 +30,7 @@ object IBaseStrategyOption {
     loggingNoPII: js.UndefOr[scala.Boolean] = js.undefined,
     validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
   ): IBaseStrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("identityMetadata")(identityMetadata)
+    val __obj = js.Dynamic.literal(clientID = clientID, identityMetadata = identityMetadata)
     if (clockSkew != null) __obj.updateDynamic("clockSkew")(clockSkew.asInstanceOf[js.Any])
     if (!js.isUndefined(isB2C)) __obj.updateDynamic("isB2C")(isB2C)
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])

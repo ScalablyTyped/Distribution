@@ -29,11 +29,8 @@ object ASPxClientTreeViewNodeClickEventArgs {
     node: ASPxClientTreeViewNode,
     processOnServer: scala.Boolean
   ): ASPxClientTreeViewNodeClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, node = node, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientTreeViewNodeClickEventArgs]
   }
 }

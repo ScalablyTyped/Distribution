@@ -26,11 +26,8 @@ object CallbackType {
     name: java.lang.String,
     `type`: webidl2Lib.webidl2LibStrings.callback
   ): CallbackType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(arguments = arguments, extAttrs = extAttrs, idlType = idlType, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CallbackType]
   }
 }

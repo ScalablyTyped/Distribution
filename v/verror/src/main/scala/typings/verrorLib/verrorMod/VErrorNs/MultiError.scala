@@ -25,11 +25,7 @@ object MultiError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): MultiError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cause")(cause)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(cause = cause, errors = errors, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[MultiError]
   }

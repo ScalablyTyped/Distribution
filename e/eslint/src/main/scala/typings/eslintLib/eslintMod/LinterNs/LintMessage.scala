@@ -34,12 +34,7 @@ object LintMessage {
     ruleId: java.lang.String = null,
     source: java.lang.String = null
   ): LintMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(column = column, line = line, message = message, nodeType = nodeType, severity = severity)
     if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
     if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
     if (fatal != null) __obj.updateDynamic("fatal")(fatal)

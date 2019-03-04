@@ -37,10 +37,7 @@ object ShareOpenGraphContent {
     commonParameters: ShareContentCommonParameters = null,
     contentUrl: java.lang.String = null
   ): ShareOpenGraphContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("previewPropertyName")(previewPropertyName)
+    val __obj = js.Dynamic.literal(action = action, contentType = contentType, previewPropertyName = previewPropertyName)
     if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
     if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
     __obj.asInstanceOf[ShareOpenGraphContent]

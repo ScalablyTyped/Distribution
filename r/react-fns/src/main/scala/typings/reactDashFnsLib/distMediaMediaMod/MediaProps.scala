@@ -12,8 +12,8 @@ trait MediaProps extends js.Object {
 object MediaProps {
   @scala.inline
   def apply(matches: scala.Boolean): MediaProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(matches = matches)
+  
     __obj.asInstanceOf[MediaProps]
   }
 }

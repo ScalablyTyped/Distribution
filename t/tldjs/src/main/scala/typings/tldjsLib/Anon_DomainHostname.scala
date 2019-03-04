@@ -50,14 +50,8 @@ object Anon_DomainHostname {
       /* import warning: ImportType.apply Failed type conversion: typeof tldExists */ js.Any
     ]
   ): Anon_DomainHostname = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("isIp")(isIp)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("publicSuffix")(publicSuffix)
-    __obj.updateDynamic("subdomain")(subdomain)
-    __obj.updateDynamic("tldExists")(tldExists)
+    val __obj = js.Dynamic.literal(domain = domain, hostname = hostname, isIp = isIp, isValid = isValid, publicSuffix = publicSuffix, subdomain = subdomain, tldExists = tldExists)
+  
     __obj.asInstanceOf[Anon_DomainHostname]
   }
 }

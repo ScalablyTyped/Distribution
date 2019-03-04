@@ -24,14 +24,7 @@ object WsdlBinding {
     xmlKey: java.lang.String,
     xmlns: WsdlXmlns = null
   ): WsdlBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("topElements")(topElements)
-    __obj.updateDynamic("transport")(transport)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
+    val __obj = js.Dynamic.literal(ignoredNamespaces = ignoredNamespaces, methods = methods, style = style, topElements = topElements, transport = transport, valueKey = valueKey, xmlKey = xmlKey)
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
     __obj.asInstanceOf[WsdlBinding]
   }

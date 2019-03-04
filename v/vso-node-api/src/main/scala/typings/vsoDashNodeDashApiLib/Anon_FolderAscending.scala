@@ -14,10 +14,8 @@ trait Anon_FolderAscending extends js.Object {
 object Anon_FolderAscending {
   @scala.inline
   def apply(folderAscending: scala.Double, folderDescending: scala.Double, none: scala.Double): Anon_FolderAscending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("folderAscending")(folderAscending)
-    __obj.updateDynamic("folderDescending")(folderDescending)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(folderAscending = folderAscending, folderDescending = folderDescending, none = none)
+  
     __obj.asInstanceOf[Anon_FolderAscending]
   }
 }

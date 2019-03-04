@@ -36,11 +36,8 @@ object IDialogProvider {
     setForceBodyReload: js.Function1[scala.Boolean, scala.Unit],
     setForceHtmlReload: js.Function1[scala.Boolean, scala.Unit]
   ): IDialogProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("setDefaults")(setDefaults)
-    __obj.updateDynamic("setForceBodyReload")(setForceBodyReload)
-    __obj.updateDynamic("setForceHtmlReload")(setForceHtmlReload)
+    val __obj = js.Dynamic.literal($get = $get, setDefaults = setDefaults, setForceBodyReload = setForceBodyReload, setForceHtmlReload = setForceHtmlReload)
+  
     __obj.asInstanceOf[IDialogProvider]
   }
 }

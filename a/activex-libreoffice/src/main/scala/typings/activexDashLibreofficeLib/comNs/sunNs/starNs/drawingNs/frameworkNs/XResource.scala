@@ -28,10 +28,8 @@ object XResource {
     getResourceId: js.Function0[XResourceId],
     isAnchorOnly: js.Function0[scala.Boolean]
   ): XResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ResourceId")(ResourceId)
-    __obj.updateDynamic("getResourceId")(getResourceId)
-    __obj.updateDynamic("isAnchorOnly")(isAnchorOnly)
+    val __obj = js.Dynamic.literal(ResourceId = ResourceId, getResourceId = getResourceId, isAnchorOnly = isAnchorOnly)
+  
     __obj.asInstanceOf[XResource]
   }
 }

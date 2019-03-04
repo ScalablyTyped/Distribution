@@ -12,8 +12,8 @@ trait Anon_Notifications extends js.Object {
 object Anon_Notifications {
   @scala.inline
   def apply(notifications: js.Array[Anon_MethodType]): Anon_Notifications = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notifications")(notifications)
+    val __obj = js.Dynamic.literal(notifications = notifications)
+  
     __obj.asInstanceOf[Anon_Notifications]
   }
 }

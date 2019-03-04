@@ -82,21 +82,8 @@ object TimelineTeamData {
     teamFieldValues: js.Array[TeamFieldValue],
     workItemTypeColors: js.Array[WorkItemColor]
   ): TimelineTeamData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backlog")(backlog)
-    __obj.updateDynamic("fieldReferenceNames")(fieldReferenceNames)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isExpanded")(isExpanded)
-    __obj.updateDynamic("iterations")(iterations)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("orderByField")(orderByField)
-    __obj.updateDynamic("partiallyPagedFieldReferenceNames")(partiallyPagedFieldReferenceNames)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("teamFieldDefaultValue")(teamFieldDefaultValue)
-    __obj.updateDynamic("teamFieldName")(teamFieldName)
-    __obj.updateDynamic("teamFieldValues")(teamFieldValues)
-    __obj.updateDynamic("workItemTypeColors")(workItemTypeColors)
+    val __obj = js.Dynamic.literal(backlog = backlog, fieldReferenceNames = fieldReferenceNames, id = id, isExpanded = isExpanded, iterations = iterations, name = name, orderByField = orderByField, partiallyPagedFieldReferenceNames = partiallyPagedFieldReferenceNames, projectId = projectId, status = status, teamFieldDefaultValue = teamFieldDefaultValue, teamFieldName = teamFieldName, teamFieldValues = teamFieldValues, workItemTypeColors = workItemTypeColors)
+  
     __obj.asInstanceOf[TimelineTeamData]
   }
 }

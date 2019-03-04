@@ -18,10 +18,8 @@ object Callback {
     onKeyLongPress: js.Function2[scala.Double, androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean],
     onKeyUp: js.Function2[scala.Double, androiduixLib.androidNs.viewNs.KeyEvent, scala.Boolean]
   ): Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onKeyDown")(onKeyDown)
-    __obj.updateDynamic("onKeyLongPress")(onKeyLongPress)
-    __obj.updateDynamic("onKeyUp")(onKeyUp)
+    val __obj = js.Dynamic.literal(onKeyDown = onKeyDown, onKeyLongPress = onKeyLongPress, onKeyUp = onKeyUp)
+  
     __obj.asInstanceOf[Callback]
   }
 }

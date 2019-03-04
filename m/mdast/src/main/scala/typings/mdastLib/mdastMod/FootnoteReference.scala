@@ -22,8 +22,8 @@ object FootnoteReference {
     label: java.lang.String = null,
     position: unistLib.unistMod.Position = null
   ): FootnoteReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (label != null) __obj.updateDynamic("label")(label)
     if (position != null) __obj.updateDynamic("position")(position)

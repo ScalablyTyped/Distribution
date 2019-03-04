@@ -27,8 +27,8 @@ object ParenthesizedExpression {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): ParenthesizedExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(expression = expression)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

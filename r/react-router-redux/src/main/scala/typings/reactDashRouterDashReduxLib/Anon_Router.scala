@@ -12,8 +12,8 @@ trait Anon_Router extends js.Object {
 object Anon_Router {
   @scala.inline
   def apply(router: reactDashRouterDashReduxLib.reactDashRouterDashReduxMod.RouterState): Anon_Router = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("router")(router)
+    val __obj = js.Dynamic.literal(router = router)
+  
     __obj.asInstanceOf[Anon_Router]
   }
 }

@@ -14,10 +14,8 @@ trait IColumn extends ISqlType {
 object IColumn {
   @scala.inline
   def apply(name: java.lang.String, nullable: scala.Boolean, primary: scala.Boolean, `type`: ISqlTypeFactory): IColumn = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nullable")(nullable)
-    __obj.updateDynamic("primary")(primary)
+    val __obj = js.Dynamic.literal(name = name, nullable = nullable, primary = primary)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IColumn]
   }
 }

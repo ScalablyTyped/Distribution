@@ -13,9 +13,8 @@ trait WorkerClusterReadyInfo extends js.Object {
 object WorkerClusterReadyInfo {
   @scala.inline
   def apply(childProcess: nodeLib.childUnderscoreProcessMod.ChildProcess, pid: scala.Double): WorkerClusterReadyInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childProcess")(childProcess)
-    __obj.updateDynamic("pid")(pid)
+    val __obj = js.Dynamic.literal(childProcess = childProcess, pid = pid)
+  
     __obj.asInstanceOf[WorkerClusterReadyInfo]
   }
 }

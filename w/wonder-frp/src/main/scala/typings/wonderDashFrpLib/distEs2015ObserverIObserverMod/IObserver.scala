@@ -20,11 +20,8 @@ object IObserver {
     error: js.Function1[js.Any, js.Any],
     next: js.Function1[js.Any, js.Any]
   ): IObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(completed = completed, dispose = dispose, error = error, next = next)
+  
     __obj.asInstanceOf[IObserver]
   }
 }

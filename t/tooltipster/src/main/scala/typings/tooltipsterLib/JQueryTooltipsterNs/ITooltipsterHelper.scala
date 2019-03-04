@@ -31,8 +31,7 @@ object ITooltipsterHelper {
     tooltip: stdLib.HTMLElement = null,
     tooltipClone: stdLib.HTMLElement = null
   ): ITooltipsterHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(origin = origin)
     if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
     if (geo != null) __obj.updateDynamic("geo")(geo)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

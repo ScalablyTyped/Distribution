@@ -22,12 +22,8 @@ object Response {
     onclose: js.Function0[scala.Unit],
     status: scala.Double
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("onclose")(onclose)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, node = node, onclose = onclose, status = status)
+  
     __obj.asInstanceOf[Response]
   }
 }

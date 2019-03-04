@@ -18,9 +18,8 @@ object Anon_Dep {
     `package`: js.Any,
     source: java.lang.String
   ): Anon_Dep = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("deps")(deps)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(deps = deps, source = source)
+    __obj.updateDynamic("package")(`package`)
     __obj.asInstanceOf[Anon_Dep]
   }
 }

@@ -68,35 +68,8 @@ object Config {
     verbose: scala.Boolean,
     xhr_headers: XhrHeadersDef
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api_host")(api_host)
-    __obj.updateDynamic("app_host")(app_host)
-    __obj.updateDynamic("autrotrack")(autrotrack)
-    __obj.updateDynamic("cdn")(cdn)
-    __obj.updateDynamic("cookie_expiration")(cookie_expiration)
-    __obj.updateDynamic("cookie_name")(cookie_name)
-    __obj.updateDynamic("cross_subdomain_cookie")(cross_subdomain_cookie)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("disable_cookie")(disable_cookie)
-    __obj.updateDynamic("disable_persistence")(disable_persistence)
-    __obj.updateDynamic("img")(img)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("opt_out_tracking_by_default")(opt_out_tracking_by_default)
-    __obj.updateDynamic("opt_out_tracking_cookie_prefix")(opt_out_tracking_cookie_prefix)
-    __obj.updateDynamic("opt_out_tracking_persistence_type")(opt_out_tracking_persistence_type)
-    __obj.updateDynamic("persistence")(persistence)
-    __obj.updateDynamic("persistence_name")(persistence_name)
-    __obj.updateDynamic("property_blacklist")(property_blacklist)
-    __obj.updateDynamic("save_referrer")(save_referrer)
-    __obj.updateDynamic("secure_cookie")(secure_cookie)
-    __obj.updateDynamic("store_google")(store_google)
-    __obj.updateDynamic("test")(test)
-    __obj.updateDynamic("track_links_timeout")(track_links_timeout)
-    __obj.updateDynamic("track_pageview")(track_pageview)
-    __obj.updateDynamic("upgrade")(upgrade)
-    __obj.updateDynamic("verbose")(verbose)
-    __obj.updateDynamic("xhr_headers")(xhr_headers)
+    val __obj = js.Dynamic.literal(api_host = api_host, app_host = app_host, autrotrack = autrotrack, cdn = cdn, cookie_expiration = cookie_expiration, cookie_name = cookie_name, cross_subdomain_cookie = cross_subdomain_cookie, debug = debug, disable_cookie = disable_cookie, disable_persistence = disable_persistence, img = img, ip = ip, loaded = loaded, opt_out_tracking_by_default = opt_out_tracking_by_default, opt_out_tracking_cookie_prefix = opt_out_tracking_cookie_prefix, opt_out_tracking_persistence_type = opt_out_tracking_persistence_type, persistence = persistence, persistence_name = persistence_name, property_blacklist = property_blacklist, save_referrer = save_referrer, secure_cookie = secure_cookie, store_google = store_google, test = test, track_links_timeout = track_links_timeout, track_pageview = track_pageview, upgrade = upgrade, verbose = verbose, xhr_headers = xhr_headers)
+  
     __obj.asInstanceOf[Config]
   }
 }

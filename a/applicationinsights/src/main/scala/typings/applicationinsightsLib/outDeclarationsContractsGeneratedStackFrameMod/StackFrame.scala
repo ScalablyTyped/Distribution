@@ -37,12 +37,8 @@ object StackFrame {
     line: scala.Double,
     method: java.lang.String
   ): StackFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assembly")(assembly)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(assembly = assembly, fileName = fileName, level = level, line = line, method = method)
+  
     __obj.asInstanceOf[StackFrame]
   }
 }

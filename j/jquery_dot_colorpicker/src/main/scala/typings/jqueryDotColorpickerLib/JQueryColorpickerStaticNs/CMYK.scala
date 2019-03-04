@@ -15,11 +15,8 @@ trait CMYK extends js.Object {
 object CMYK {
   @scala.inline
   def apply(c: scala.Double, k: scala.Double, m: scala.Double, y: scala.Double): CMYK = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("k")(k)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(c = c, k = k, m = m, y = y)
+  
     __obj.asInstanceOf[CMYK]
   }
 }

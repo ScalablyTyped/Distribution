@@ -26,11 +26,8 @@ object BaseDeploymentInput {
     overrideInputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     timeoutInMinutes: scala.Double
   ): BaseDeploymentInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
-    __obj.updateDynamic("overrideInputs")(overrideInputs)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(condition = condition, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, overrideInputs = overrideInputs, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[BaseDeploymentInput]
   }
 }

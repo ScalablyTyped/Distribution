@@ -122,24 +122,8 @@ object Math {
     tanh: js.Function1[scala.Double, scala.Double],
     trunc: js.Function1[scala.Double, scala.Double]
   ): Math = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acosh")(acosh)
-    __obj.updateDynamic("asinh")(asinh)
-    __obj.updateDynamic("atanh")(atanh)
-    __obj.updateDynamic("cbrt")(cbrt)
-    __obj.updateDynamic("clz32")(clz32)
-    __obj.updateDynamic("cosh")(cosh)
-    __obj.updateDynamic("expm1")(expm1)
-    __obj.updateDynamic("fround")(fround)
-    __obj.updateDynamic("hypot")(hypot)
-    __obj.updateDynamic("imul")(imul)
-    __obj.updateDynamic("log10")(log10)
-    __obj.updateDynamic("log1p")(log1p)
-    __obj.updateDynamic("log2")(log2)
-    __obj.updateDynamic("sign")(sign)
-    __obj.updateDynamic("sinh")(sinh)
-    __obj.updateDynamic("tanh")(tanh)
-    __obj.updateDynamic("trunc")(trunc)
+    val __obj = js.Dynamic.literal(acosh = acosh, asinh = asinh, atanh = atanh, cbrt = cbrt, clz32 = clz32, cosh = cosh, expm1 = expm1, fround = fround, hypot = hypot, imul = imul, log10 = log10, log1p = log1p, log2 = log2, sign = sign, sinh = sinh, tanh = tanh, trunc = trunc)
+  
     __obj.asInstanceOf[Math]
   }
 }

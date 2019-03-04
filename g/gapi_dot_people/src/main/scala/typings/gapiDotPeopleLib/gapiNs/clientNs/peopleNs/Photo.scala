@@ -13,9 +13,8 @@ trait Photo extends js.Object {
 object Photo {
   @scala.inline
   def apply(metadata: FieldMetadata, url: java.lang.String): Photo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(metadata = metadata, url = url)
+  
     __obj.asInstanceOf[Photo]
   }
 }

@@ -18,11 +18,8 @@ object CardViewCustomButtonEventArgs {
     sender: Control,
     visibleIndex: scala.Double
   ): CardViewCustomButtonEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonID")(buttonID)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(buttonID = buttonID, processOnServer = processOnServer, sender = sender, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[CardViewCustomButtonEventArgs]
   }
 }

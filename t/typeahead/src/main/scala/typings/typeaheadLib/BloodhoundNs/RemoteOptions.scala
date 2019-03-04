@@ -79,8 +79,7 @@ object RemoteOptions {
     transform: js.Function1[/* response */ T, T] = null,
     wildcard: java.lang.String = null
   ): RemoteOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (prepare != null) __obj.updateDynamic("prepare")(prepare)
     if (rateLimitWait != null) __obj.updateDynamic("rateLimitWait")(rateLimitWait.asInstanceOf[js.Any])

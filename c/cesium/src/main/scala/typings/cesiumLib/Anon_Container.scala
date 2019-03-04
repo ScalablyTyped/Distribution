@@ -22,9 +22,7 @@ object Anon_Container {
     key: java.lang.String = null,
     url: java.lang.String = null
   ): Anon_Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    __obj.updateDynamic("scene")(scene)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], scene = scene)
     if (flightDuration != null) __obj.updateDynamic("flightDuration")(flightDuration.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (url != null) __obj.updateDynamic("url")(url)

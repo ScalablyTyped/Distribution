@@ -18,8 +18,7 @@ object SubscriptionState {
     data: TData = null,
     error: apolloDashClientLib.apolloDashClientMod.ApolloError = null
   ): SubscriptionState[TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(loading = loading)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[SubscriptionState[TData]]

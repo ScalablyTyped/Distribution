@@ -37,7 +37,8 @@ object RegexFilter {
     placeholder: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): RegexFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

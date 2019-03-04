@@ -43,10 +43,8 @@ object Anon_Attach {
       scala.Unit
     ]
   ): Anon_Attach = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("createMultiMaterialObject")(createMultiMaterialObject)
-    __obj.updateDynamic("detach")(detach)
+    val __obj = js.Dynamic.literal(attach = attach, createMultiMaterialObject = createMultiMaterialObject, detach = detach)
+  
     __obj.asInstanceOf[Anon_Attach]
   }
 }

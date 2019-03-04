@@ -53,11 +53,7 @@ object TI18n {
     vars: scala.Double,
     icus: js.Array[TIcu] = null
   ): TI18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("expandoStartIndex")(expandoStartIndex)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(create = create, expandoStartIndex = expandoStartIndex, update = update, vars = vars)
     if (icus != null) __obj.updateDynamic("icus")(icus)
     __obj.asInstanceOf[TI18n]
   }

@@ -24,11 +24,7 @@ object Anon_CheckType {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CheckType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkType")(checkType)
-    __obj.updateDynamic("extendsType")(extendsType)
-    __obj.updateDynamic("falseType")(falseType)
-    __obj.updateDynamic("trueType")(trueType)
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, trueType = trueType)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CheckType]

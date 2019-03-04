@@ -16,8 +16,8 @@ object Anon_Taglist {
     tags: js.Array[intercomDashClientLib.userMod.Tag],
     `type`: intercomDashClientLib.intercomDashClientLibStrings.tagDOTlist
   ): Anon_Taglist = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(tags = tags)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Taglist]
   }
 }

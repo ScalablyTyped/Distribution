@@ -44,20 +44,7 @@ object RSAPrivateKey {
     version: scala.Double,
     otherPrimeInfos: js.Array[pkijsLib.srcOtherPrimeInfoMod.default] = null
   ): RSAPrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coefficient")(coefficient)
-    __obj.updateDynamic("exponent1")(exponent1)
-    __obj.updateDynamic("exponent2")(exponent2)
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("modulus")(modulus)
-    __obj.updateDynamic("prime1")(prime1)
-    __obj.updateDynamic("prime2")(prime2)
-    __obj.updateDynamic("privateExponent")(privateExponent)
-    __obj.updateDynamic("publicExponent")(publicExponent)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(coefficient = coefficient, exponent1 = exponent1, exponent2 = exponent2, fromJSON = fromJSON, fromSchema = fromSchema, modulus = modulus, prime1 = prime1, prime2 = prime2, privateExponent = privateExponent, publicExponent = publicExponent, toJSON = toJSON, toSchema = toSchema, version = version)
     if (otherPrimeInfos != null) __obj.updateDynamic("otherPrimeInfos")(otherPrimeInfos)
     __obj.asInstanceOf[RSAPrivateKey]
   }

@@ -18,9 +18,7 @@ object LifecycleRule {
     condition: org.scalablytyped.runtime.StringDictionary[scala.Boolean | stdLib.Date | scala.Double | java.lang.String],
     storageClass: java.lang.String = null
   ): LifecycleRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("condition")(condition)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], condition = condition)
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass)
     __obj.asInstanceOf[LifecycleRule]
   }

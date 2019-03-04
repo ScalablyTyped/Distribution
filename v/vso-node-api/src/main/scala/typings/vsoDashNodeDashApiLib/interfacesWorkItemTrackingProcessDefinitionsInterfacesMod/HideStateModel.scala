@@ -12,8 +12,8 @@ trait HideStateModel extends js.Object {
 object HideStateModel {
   @scala.inline
   def apply(hidden: scala.Boolean): HideStateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hidden")(hidden)
+    val __obj = js.Dynamic.literal(hidden = hidden)
+  
     __obj.asInstanceOf[HideStateModel]
   }
 }

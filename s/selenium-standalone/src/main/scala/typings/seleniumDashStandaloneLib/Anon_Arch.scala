@@ -18,9 +18,7 @@ object Anon_Arch {
     baseURL: java.lang.String,
     version: java.lang.String = null
   ): Anon_Arch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    __obj.updateDynamic("baseURL")(baseURL)
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], baseURL = baseURL)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[Anon_Arch]
   }

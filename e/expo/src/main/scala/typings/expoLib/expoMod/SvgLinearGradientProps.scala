@@ -49,11 +49,7 @@ object SvgLinearGradientProps {
     x: scala.Double | java.lang.String = null,
     y: scala.Double | java.lang.String = null
   ): SvgLinearGradientProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])

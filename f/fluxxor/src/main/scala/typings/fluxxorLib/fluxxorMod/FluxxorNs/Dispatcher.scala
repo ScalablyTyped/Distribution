@@ -20,11 +20,8 @@ object Dispatcher {
     doDispatchLoop: js.Function1[js.Function, scala.Unit],
     waitForStores: js.Function3[Store, js.Array[java.lang.String], js.Function, scala.Unit]
   ): Dispatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addStore")(addStore)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("doDispatchLoop")(doDispatchLoop)
-    __obj.updateDynamic("waitForStores")(waitForStores)
+    val __obj = js.Dynamic.literal(addStore = addStore, dispatch = dispatch, doDispatchLoop = doDispatchLoop, waitForStores = waitForStores)
+  
     __obj.asInstanceOf[Dispatcher]
   }
 }

@@ -40,13 +40,8 @@ object ClauseBiblioEntry {
     refId: java.lang.String = null,
     term: java.lang.String = null
   ): ClauseBiblioEntry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aoid")(aoid)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    __obj.updateDynamic("referencingIds")(referencingIds)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleHTML")(titleHTML)
+    val __obj = js.Dynamic.literal(aoid = aoid, id = id, number = number.asInstanceOf[js.Any], referencingIds = referencingIds, title = title, titleHTML = titleHTML)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId)
     if (key != null) __obj.updateDynamic("key")(key)

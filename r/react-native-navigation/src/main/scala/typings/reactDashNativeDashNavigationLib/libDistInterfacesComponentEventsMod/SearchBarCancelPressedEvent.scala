@@ -12,8 +12,7 @@ trait SearchBarCancelPressedEvent extends ComponentEvent {
 object SearchBarCancelPressedEvent {
   @scala.inline
   def apply(componentId: java.lang.String, componentName: java.lang.String = null): SearchBarCancelPressedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentId")(componentId)
+    val __obj = js.Dynamic.literal(componentId = componentId)
     if (componentName != null) __obj.updateDynamic("componentName")(componentName)
     __obj.asInstanceOf[SearchBarCancelPressedEvent]
   }

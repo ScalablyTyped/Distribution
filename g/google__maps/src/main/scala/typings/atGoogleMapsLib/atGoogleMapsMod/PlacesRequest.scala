@@ -85,8 +85,7 @@ object PlacesRequest {
     region: java.lang.String = null,
     `type`: PlaceType1 = null
   ): PlacesRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (language != null) __obj.updateDynamic("language")(language)
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])

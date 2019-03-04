@@ -31,9 +31,7 @@ object GetBucketObjectArgs {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     versionId: java.lang.String = null
   ): GetBucketObjectArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(bucket = bucket, key = key)
     if (range != null) __obj.updateDynamic("range")(range)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (versionId != null) __obj.updateDynamic("versionId")(versionId)

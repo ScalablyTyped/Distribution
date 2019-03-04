@@ -13,9 +13,8 @@ trait Anon_Columns extends js.Object {
 object Anon_Columns {
   @scala.inline
   def apply(columns: js.Array[nodalLib.nodalMod.IColumn], table: java.lang.String): Anon_Columns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("table")(table)
+    val __obj = js.Dynamic.literal(columns = columns, table = table)
+  
     __obj.asInstanceOf[Anon_Columns]
   }
 }

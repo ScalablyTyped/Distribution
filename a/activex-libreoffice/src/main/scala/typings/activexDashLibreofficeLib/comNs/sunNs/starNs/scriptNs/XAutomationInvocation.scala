@@ -54,19 +54,8 @@ object XAutomationInvocation {
     release: js.Function0[scala.Unit],
     setValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XAutomationInvocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Introspection")(Introspection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIntrospection")(getIntrospection)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hasMethod")(hasMethod)
-    __obj.updateDynamic("hasProperty")(hasProperty)
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("invokeGetProperty")(invokeGetProperty)
-    __obj.updateDynamic("invokePutProperty")(invokePutProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(Introspection = Introspection, acquire = acquire, getIntrospection = getIntrospection, getValue = getValue, hasMethod = hasMethod, hasProperty = hasProperty, invoke = invoke, invokeGetProperty = invokeGetProperty, invokePutProperty = invokePutProperty, queryInterface = queryInterface, release = release, setValue = setValue)
+  
     __obj.asInstanceOf[XAutomationInvocation]
   }
 }

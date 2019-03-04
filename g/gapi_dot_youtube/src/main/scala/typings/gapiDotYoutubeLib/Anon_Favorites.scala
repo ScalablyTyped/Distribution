@@ -37,12 +37,8 @@ object Anon_Favorites {
     watchHistory: java.lang.String,
     watchLater: java.lang.String
   ): Anon_Favorites = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("favorites")(favorites)
-    __obj.updateDynamic("likes")(likes)
-    __obj.updateDynamic("uploads")(uploads)
-    __obj.updateDynamic("watchHistory")(watchHistory)
-    __obj.updateDynamic("watchLater")(watchLater)
+    val __obj = js.Dynamic.literal(favorites = favorites, likes = likes, uploads = uploads, watchHistory = watchHistory, watchLater = watchLater)
+  
     __obj.asInstanceOf[Anon_Favorites]
   }
 }

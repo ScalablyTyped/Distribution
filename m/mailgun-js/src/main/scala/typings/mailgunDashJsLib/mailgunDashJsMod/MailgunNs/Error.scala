@@ -13,9 +13,8 @@ trait Error extends js.Object {
 object Error {
   @scala.inline
   def apply(message: java.lang.String, statusCode: scala.Double): Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(message = message, statusCode = statusCode)
+  
     __obj.asInstanceOf[Error]
   }
 }

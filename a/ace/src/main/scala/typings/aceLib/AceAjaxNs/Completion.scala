@@ -28,9 +28,7 @@ object Completion {
     snippet: js.Any = null,
     `type`: java.lang.String = null
   ): Completion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(meta = meta, value = value)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (docHTML != null) __obj.updateDynamic("docHTML")(docHTML)
     if (exactMatch != null) __obj.updateDynamic("exactMatch")(exactMatch.asInstanceOf[js.Any])

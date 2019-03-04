@@ -126,27 +126,8 @@ object GeoDistanceFacet {
     valueField: js.Function1[java.lang.String, GeoDistanceFacet],
     valueScript: js.Function1[java.lang.String, GeoDistanceFacet]
   ): GeoDistanceFacet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("addRange")(addRange)
-    __obj.updateDynamic("addUnboundedFrom")(addUnboundedFrom)
-    __obj.updateDynamic("addUnboundedTo")(addUnboundedTo)
-    __obj.updateDynamic("cacheFilter")(cacheFilter)
-    __obj.updateDynamic("distanceType")(distanceType)
-    __obj.updateDynamic("facetFilter")(facetFilter)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("valueField")(valueField)
-    __obj.updateDynamic("valueScript")(valueScript)
+    val __obj = js.Dynamic.literal(_type = _type, addRange = addRange, addUnboundedFrom = addUnboundedFrom, addUnboundedTo = addUnboundedTo, cacheFilter = cacheFilter, distanceType = distanceType, facetFilter = facetFilter, field = field, global = global, lang = lang, mode = mode, nested = nested, normalize = normalize, params = params, point = point, scope = scope, toJSON = toJSON, unit = unit, valueField = valueField, valueScript = valueScript)
+  
     __obj.asInstanceOf[GeoDistanceFacet]
   }
 }

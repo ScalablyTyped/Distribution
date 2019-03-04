@@ -12,8 +12,8 @@ trait Anon_Viewport extends js.Object {
 object Anon_Viewport {
   @scala.inline
   def apply(viewport: atStorybookAddonDashViewportLib.atStorybookAddonDashViewportMod.ViewportProperties): Anon_Viewport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("viewport")(viewport)
+    val __obj = js.Dynamic.literal(viewport = viewport)
+  
     __obj.asInstanceOf[Anon_Viewport]
   }
 }

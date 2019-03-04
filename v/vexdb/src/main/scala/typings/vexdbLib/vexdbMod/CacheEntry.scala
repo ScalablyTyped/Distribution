@@ -13,9 +13,8 @@ trait CacheEntry[T] extends js.Object {
 object CacheEntry {
   @scala.inline
   def apply[T](expiry: scala.Double, value: vexdbLib.Anon_0[T]): CacheEntry[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expiry")(expiry)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(expiry = expiry, value = value)
+  
     __obj.asInstanceOf[CacheEntry[T]]
   }
 }

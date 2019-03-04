@@ -28,9 +28,7 @@ object ContourGenerateOptions {
     nodata: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null
   ): ContourGenerateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dst")(dst)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(dst = dst, src = src)
     if (elevField != null) __obj.updateDynamic("elevField")(elevField.asInstanceOf[js.Any])
     if (fixedLevels != null) __obj.updateDynamic("fixedLevels")(fixedLevels)
     if (idField != null) __obj.updateDynamic("idField")(idField.asInstanceOf[js.Any])

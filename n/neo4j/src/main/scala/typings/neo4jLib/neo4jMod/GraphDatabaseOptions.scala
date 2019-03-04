@@ -42,9 +42,7 @@ object GraphDatabaseOptions {
     headers: js.Object = null,
     proxy: java.lang.String = null
   ): GraphDatabaseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], url = url)
     if (agent != null) __obj.updateDynamic("agent")(agent)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)

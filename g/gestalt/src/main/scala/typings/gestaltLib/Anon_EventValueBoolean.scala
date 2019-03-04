@@ -16,9 +16,8 @@ object Anon_EventValueBoolean {
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement, reactLib.Event],
     value: scala.Boolean
   ): Anon_EventValueBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(event = event, value = value)
+  
     __obj.asInstanceOf[Anon_EventValueBoolean]
   }
 }

@@ -12,8 +12,8 @@ trait VueConstructor[V /* <: Vue */] extends js.Object {
 object VueConstructor {
   @scala.inline
   def apply[V /* <: Vue */](i18n: vuexDashI18nLib.vuexDashI18nMod.Ii18n): VueConstructor[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i18n")(i18n)
+    val __obj = js.Dynamic.literal(i18n = i18n)
+  
     __obj.asInstanceOf[VueConstructor[V]]
   }
 }

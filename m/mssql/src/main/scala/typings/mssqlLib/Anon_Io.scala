@@ -28,14 +28,8 @@ object Anon_Io {
     `type`: js.Function0[mssqlLib.mssqlMod.ISqlType] | mssqlLib.mssqlMod.ISqlType,
     value: js.Any
   ): Anon_Io = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("io")(io)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("precision")(precision)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("tvpType")(tvpType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(io = io, length = length, name = name, precision = precision, scale = scale, tvpType = tvpType, value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Io]
   }
 }

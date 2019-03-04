@@ -21,10 +21,8 @@ object ECKeyPairOptions {
     privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_Pkcs8Sec1,
     publicKeyEncoding: nodeLib.Anon_Format[PubF]
   ): ECKeyPairOptions[PubF, PrivF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("namedCurve")(namedCurve)
-    __obj.updateDynamic("privateKeyEncoding")(privateKeyEncoding)
-    __obj.updateDynamic("publicKeyEncoding")(publicKeyEncoding)
+    val __obj = js.Dynamic.literal(namedCurve = namedCurve, privateKeyEncoding = privateKeyEncoding, publicKeyEncoding = publicKeyEncoding)
+  
     __obj.asInstanceOf[ECKeyPairOptions[PubF, PrivF]]
   }
 }

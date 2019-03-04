@@ -34,14 +34,8 @@ object EventObject {
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
     target: js.Any = null
   ): EventObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("cy")(cy)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("renderedPosition")(renderedPosition)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(cy = cy, layout = layout, namespace = namespace, originalEvent = originalEvent, position = position, renderedPosition = renderedPosition, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[EventObject]
   }

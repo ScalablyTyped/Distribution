@@ -35,13 +35,7 @@ object Client {
     setCookie: js.Function2[java.lang.String, java.lang.String, Client],
     cookies: xmlrpcLib.xmlrpcMod.Cookies = null
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCookie")(getCookie)
-    __obj.updateDynamic("headersProcessors")(headersProcessors)
-    __obj.updateDynamic("isSecure")(isSecure)
-    __obj.updateDynamic("methodCall")(methodCall)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("setCookie")(setCookie)
+    val __obj = js.Dynamic.literal(getCookie = getCookie, headersProcessors = headersProcessors, isSecure = isSecure, methodCall = methodCall, options = options, setCookie = setCookie)
     if (cookies != null) __obj.updateDynamic("cookies")(cookies)
     __obj.asInstanceOf[Client]
   }

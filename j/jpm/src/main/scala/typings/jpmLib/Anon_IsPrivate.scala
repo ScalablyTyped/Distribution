@@ -24,8 +24,7 @@ object Anon_IsPrivate {
     onDeactivate: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _] = null,
     onOpen: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _] = null
   ): Anon_IsPrivate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(isPrivate)) __obj.updateDynamic("isPrivate")(isPrivate)
     if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
     if (onClose != null) __obj.updateDynamic("onClose")(onClose)

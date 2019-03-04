@@ -28,10 +28,8 @@ object Anon_AttributenameAttributes {
       js.Promise[atlassianDashCrowdDashClientLib.libModelsAttributesMod.namespaced]
     ]
   ): Anon_AttributenameAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(list = list, remove = remove, set = set)
+  
     __obj.asInstanceOf[Anon_AttributenameAttributes]
   }
 }

@@ -52,27 +52,8 @@ object Anon_0x0 {
     kFSEventStreamEventFlagUnmount: fseventsLib.fseventsLibNumbers.`0x80`,
     kFSEventStreamEventFlagUserDropped: fseventsLib.fseventsLibNumbers.`0x2`
   ): Anon_0x0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kFSEventStreamEventFlagEventIdsWrapped")(kFSEventStreamEventFlagEventIdsWrapped)
-    __obj.updateDynamic("kFSEventStreamEventFlagHistoryDone")(kFSEventStreamEventFlagHistoryDone)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemChangeOwner")(kFSEventStreamEventFlagItemChangeOwner)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemCreated")(kFSEventStreamEventFlagItemCreated)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemFinderInfoMod")(kFSEventStreamEventFlagItemFinderInfoMod)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemInodeMetaMod")(kFSEventStreamEventFlagItemInodeMetaMod)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemIsDir")(kFSEventStreamEventFlagItemIsDir)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemIsFile")(kFSEventStreamEventFlagItemIsFile)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemIsSymlink")(kFSEventStreamEventFlagItemIsSymlink)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemModified")(kFSEventStreamEventFlagItemModified)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemRemoved")(kFSEventStreamEventFlagItemRemoved)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemRenamed")(kFSEventStreamEventFlagItemRenamed)
-    __obj.updateDynamic("kFSEventStreamEventFlagItemXattrMod")(kFSEventStreamEventFlagItemXattrMod)
-    __obj.updateDynamic("kFSEventStreamEventFlagKernelDropped")(kFSEventStreamEventFlagKernelDropped)
-    __obj.updateDynamic("kFSEventStreamEventFlagMount")(kFSEventStreamEventFlagMount)
-    __obj.updateDynamic("kFSEventStreamEventFlagMustScanSubDirs")(kFSEventStreamEventFlagMustScanSubDirs)
-    __obj.updateDynamic("kFSEventStreamEventFlagNone")(kFSEventStreamEventFlagNone)
-    __obj.updateDynamic("kFSEventStreamEventFlagRootChanged")(kFSEventStreamEventFlagRootChanged)
-    __obj.updateDynamic("kFSEventStreamEventFlagUnmount")(kFSEventStreamEventFlagUnmount)
-    __obj.updateDynamic("kFSEventStreamEventFlagUserDropped")(kFSEventStreamEventFlagUserDropped)
+    val __obj = js.Dynamic.literal(kFSEventStreamEventFlagEventIdsWrapped = kFSEventStreamEventFlagEventIdsWrapped, kFSEventStreamEventFlagHistoryDone = kFSEventStreamEventFlagHistoryDone, kFSEventStreamEventFlagItemChangeOwner = kFSEventStreamEventFlagItemChangeOwner, kFSEventStreamEventFlagItemCreated = kFSEventStreamEventFlagItemCreated, kFSEventStreamEventFlagItemFinderInfoMod = kFSEventStreamEventFlagItemFinderInfoMod, kFSEventStreamEventFlagItemInodeMetaMod = kFSEventStreamEventFlagItemInodeMetaMod, kFSEventStreamEventFlagItemIsDir = kFSEventStreamEventFlagItemIsDir, kFSEventStreamEventFlagItemIsFile = kFSEventStreamEventFlagItemIsFile, kFSEventStreamEventFlagItemIsSymlink = kFSEventStreamEventFlagItemIsSymlink, kFSEventStreamEventFlagItemModified = kFSEventStreamEventFlagItemModified, kFSEventStreamEventFlagItemRemoved = kFSEventStreamEventFlagItemRemoved, kFSEventStreamEventFlagItemRenamed = kFSEventStreamEventFlagItemRenamed, kFSEventStreamEventFlagItemXattrMod = kFSEventStreamEventFlagItemXattrMod, kFSEventStreamEventFlagKernelDropped = kFSEventStreamEventFlagKernelDropped, kFSEventStreamEventFlagMount = kFSEventStreamEventFlagMount, kFSEventStreamEventFlagMustScanSubDirs = kFSEventStreamEventFlagMustScanSubDirs, kFSEventStreamEventFlagNone = kFSEventStreamEventFlagNone, kFSEventStreamEventFlagRootChanged = kFSEventStreamEventFlagRootChanged, kFSEventStreamEventFlagUnmount = kFSEventStreamEventFlagUnmount, kFSEventStreamEventFlagUserDropped = kFSEventStreamEventFlagUserDropped)
+  
     __obj.asInstanceOf[Anon_0x0]
   }
 }

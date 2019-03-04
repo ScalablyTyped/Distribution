@@ -86,9 +86,7 @@ object Context {
     tid: java.lang.String = null,
     upn: java.lang.String = null
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityId")(entityId)
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(entityId = entityId, locale = locale)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (channelName != null) __obj.updateDynamic("channelName")(channelName)
     if (groupId != null) __obj.updateDynamic("groupId")(groupId)

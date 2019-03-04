@@ -33,9 +33,8 @@ object XFormulaParser {
       java.lang.String
     ]
   ): XFormulaParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parseFormula")(parseFormula)
-    __obj.updateDynamic("printFormula")(printFormula)
+    val __obj = js.Dynamic.literal(parseFormula = parseFormula, printFormula = printFormula)
+  
     __obj.asInstanceOf[XFormulaParser]
   }
 }

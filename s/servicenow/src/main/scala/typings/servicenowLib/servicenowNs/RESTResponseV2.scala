@@ -34,18 +34,8 @@ object RESTResponseV2 {
     haveError: js.Function0[scala.Boolean],
     waitForResponse: js.Function1[scala.Double, scala.Unit]
   ): RESTResponseV2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBody")(getBody)
-    __obj.updateDynamic("getCookies")(getCookies)
-    __obj.updateDynamic("getErrorCode")(getErrorCode)
-    __obj.updateDynamic("getErrorMessage")(getErrorMessage)
-    __obj.updateDynamic("getHeader")(getHeader)
-    __obj.updateDynamic("getHeaders")(getHeaders)
-    __obj.updateDynamic("getQueryString")(getQueryString)
-    __obj.updateDynamic("getResponseAttachmentSysid")(getResponseAttachmentSysid)
-    __obj.updateDynamic("getStatusCode")(getStatusCode)
-    __obj.updateDynamic("haveError")(haveError)
-    __obj.updateDynamic("waitForResponse")(waitForResponse)
+    val __obj = js.Dynamic.literal(getBody = getBody, getCookies = getCookies, getErrorCode = getErrorCode, getErrorMessage = getErrorMessage, getHeader = getHeader, getHeaders = getHeaders, getQueryString = getQueryString, getResponseAttachmentSysid = getResponseAttachmentSysid, getStatusCode = getStatusCode, haveError = haveError, waitForResponse = waitForResponse)
+  
     __obj.asInstanceOf[RESTResponseV2]
   }
 }

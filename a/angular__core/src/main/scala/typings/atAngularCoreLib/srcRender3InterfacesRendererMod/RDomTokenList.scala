@@ -16,9 +16,8 @@ object RDomTokenList {
     add: js.Function1[java.lang.String, scala.Unit],
     remove: js.Function1[java.lang.String, scala.Unit]
   ): RDomTokenList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, remove = remove)
+  
     __obj.asInstanceOf[RDomTokenList]
   }
 }

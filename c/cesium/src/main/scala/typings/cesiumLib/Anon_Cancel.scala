@@ -34,8 +34,7 @@ object Anon_Cancel {
     orientation: js.Any = null,
     pitchAdjustHeight: scala.Int | scala.Double = null
   ): Anon_Cancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

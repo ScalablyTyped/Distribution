@@ -24,8 +24,8 @@ trait SelectionChangedEventArgs extends js.Object {
 object SelectionChangedEventArgs {
   @scala.inline
   def apply(workbook: Workbook): SelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("workbook")(workbook)
+    val __obj = js.Dynamic.literal(workbook = workbook)
+  
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
 }

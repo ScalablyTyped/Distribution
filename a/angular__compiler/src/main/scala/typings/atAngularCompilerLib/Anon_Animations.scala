@@ -36,14 +36,7 @@ object Anon_Animations {
     template: java.lang.String = null,
     templateUrl: java.lang.String = null
   ): Anon_Animations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animations")(animations)
-    __obj.updateDynamic("externalStylesheets")(externalStylesheets)
-    __obj.updateDynamic("isInline")(isInline)
-    __obj.updateDynamic("ngContentSelectors")(ngContentSelectors)
-    __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)
-    __obj.updateDynamic("styleUrls")(styleUrls)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(animations = animations, externalStylesheets = externalStylesheets, isInline = isInline, ngContentSelectors = ngContentSelectors, preserveWhitespaces = preserveWhitespaces, styleUrls = styleUrls, styles = styles)
     if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
     if (htmlAst != null) __obj.updateDynamic("htmlAst")(htmlAst)
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)

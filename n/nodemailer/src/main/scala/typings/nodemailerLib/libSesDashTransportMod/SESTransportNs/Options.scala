@@ -53,8 +53,7 @@ object Options {
     to: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.MailNs.Address]) = null,
     watchHtml: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SES")(SES)
+    val __obj = js.Dynamic.literal(SES = SES)
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])

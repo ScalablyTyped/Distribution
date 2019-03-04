@@ -12,9 +12,8 @@ trait AsyncRefOperationCompletedNotification extends AsyncGitOperationNotificati
 object AsyncRefOperationCompletedNotification {
   @scala.inline
   def apply(newRefName: java.lang.String, operationId: scala.Double): AsyncRefOperationCompletedNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newRefName")(newRefName)
-    __obj.updateDynamic("operationId")(operationId)
+    val __obj = js.Dynamic.literal(newRefName = newRefName, operationId = operationId)
+  
     __obj.asInstanceOf[AsyncRefOperationCompletedNotification]
   }
 }

@@ -18,8 +18,8 @@ object Anon_PublicKey {
     `type`: stellarDashBaseLib.stellarDashBaseMod.KeypairType,
     publicKey: java.lang.String = null
   ): Anon_PublicKey = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("secretKey")(secretKey)
+    val __obj = js.Dynamic.literal(secretKey = secretKey)
+    __obj.updateDynamic("type")(`type`)
     if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
     __obj.asInstanceOf[Anon_PublicKey]
   }

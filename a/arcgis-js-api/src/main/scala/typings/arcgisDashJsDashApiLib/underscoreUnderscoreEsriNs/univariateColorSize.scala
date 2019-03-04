@@ -82,9 +82,8 @@ object univariateColorSize {
       arcgisDashJsDashApiLib.IPromise[VisualVariablesResult]
     ]
   ): univariateColorSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createContinuousRenderer")(createContinuousRenderer)
-    __obj.updateDynamic("createVisualVariables")(createVisualVariables)
+    val __obj = js.Dynamic.literal(createContinuousRenderer = createContinuousRenderer, createVisualVariables = createVisualVariables)
+  
     __obj.asInstanceOf[univariateColorSize]
   }
 }

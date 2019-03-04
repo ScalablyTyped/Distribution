@@ -43,13 +43,8 @@ object Source {
     room: Room,
     ticksToRegeneration: scala.Double
   ): Source = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("energy")(energy)
-    __obj.updateDynamic("energyCapacity")(energyCapacity)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("ticksToRegeneration")(ticksToRegeneration)
+    val __obj = js.Dynamic.literal(energy = energy, energyCapacity = energyCapacity, id = id, pos = pos, room = room, ticksToRegeneration = ticksToRegeneration)
+  
     __obj.asInstanceOf[Source]
   }
 }

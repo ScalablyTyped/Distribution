@@ -43,8 +43,7 @@ object ArgumentInfo {
     `type`: ArgumentType | js.Array[ArgumentType] = null,
     verify: js.Function2[/* args */ js.Any, /* opts */ js.Any, scala.Boolean] = null
   ): ArgumentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (!js.isUndefined(appendChoicesHelpMessage)) __obj.updateDynamic("appendChoicesHelpMessage")(appendChoicesHelpMessage)
     if (!js.isUndefined(appendDefaultMessage)) __obj.updateDynamic("appendDefaultMessage")(appendDefaultMessage)

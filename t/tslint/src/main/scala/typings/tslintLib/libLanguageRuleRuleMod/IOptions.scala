@@ -25,11 +25,8 @@ object IOptions {
     ruleName: java.lang.String,
     ruleSeverity: RuleSeverity
   ): IOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabledIntervals")(disabledIntervals)
-    __obj.updateDynamic("ruleArguments")(ruleArguments)
-    __obj.updateDynamic("ruleName")(ruleName)
-    __obj.updateDynamic("ruleSeverity")(ruleSeverity)
+    val __obj = js.Dynamic.literal(disabledIntervals = disabledIntervals, ruleArguments = ruleArguments, ruleName = ruleName, ruleSeverity = ruleSeverity)
+  
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -43,11 +43,8 @@ object IXmlNodeSelector {
     selectSingleNode: js.Function1[java.lang.String, IXmlNode],
     selectSingleNodeNS: js.Function2[java.lang.String, js.Any, IXmlNode]
   ): IXmlNodeSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectNodes")(selectNodes)
-    __obj.updateDynamic("selectNodesNS")(selectNodesNS)
-    __obj.updateDynamic("selectSingleNode")(selectSingleNode)
-    __obj.updateDynamic("selectSingleNodeNS")(selectSingleNodeNS)
+    val __obj = js.Dynamic.literal(selectNodes = selectNodes, selectNodesNS = selectNodesNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS)
+  
     __obj.asInstanceOf[IXmlNodeSelector]
   }
 }

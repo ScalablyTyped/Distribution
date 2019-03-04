@@ -51,23 +51,8 @@ object ASPxClientHtmlEditorYouTubeDialog {
     GetShowVideoNameCheckBox: js.Function0[ASPxClientCheckBox],
     GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
   ): ASPxClientHtmlEditorYouTubeDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAllowFullscreenCheckBox")(GetAllowFullscreenCheckBox)
-    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
-    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
-    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
-    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetConfidentModeCheckBox")(GetConfidentModeCheckBox)
-    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
-    __obj.updateDynamic("GetShowPlayerControlsCheckBox")(GetShowPlayerControlsCheckBox)
-    __obj.updateDynamic("GetShowSameVideosCheckBox")(GetShowSameVideosCheckBox)
-    __obj.updateDynamic("GetShowVideoNameCheckBox")(GetShowVideoNameCheckBox)
-    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
+    val __obj = js.Dynamic.literal(GetAllowFullscreenCheckBox = GetAllowFullscreenCheckBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetConfidentModeCheckBox = GetConfidentModeCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetLeftMarginTextBox = GetLeftMarginTextBox, GetOkButton = GetOkButton, GetRightMarginTextBox = GetRightMarginTextBox, GetShowPlayerControlsCheckBox = GetShowPlayerControlsCheckBox, GetShowSameVideosCheckBox = GetShowSameVideosCheckBox, GetShowVideoNameCheckBox = GetShowVideoNameCheckBox, GetTopMarginTextBox = GetTopMarginTextBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorYouTubeDialog]
   }
 }

@@ -20,11 +20,8 @@ object BootstrapResult {
     root: reactLib.reactMod.Global.JSXNs.Element,
     store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]
   ): BootstrapResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(history = history, output = output, root = root, store = store)
+  
     __obj.asInstanceOf[BootstrapResult]
   }
 }

@@ -20,11 +20,8 @@ object Number {
     numToStr: js.Function1[js.Any, webixLib.WebixCallback],
     parse: js.Function2[java.lang.String, js.Any, scala.Double]
   ): Number = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("getConfig")(getConfig)
-    __obj.updateDynamic("numToStr")(numToStr)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(format = format, getConfig = getConfig, numToStr = numToStr, parse = parse)
+  
     __obj.asInstanceOf[Number]
   }
 }

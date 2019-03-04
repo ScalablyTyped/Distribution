@@ -24,13 +24,8 @@ object Anon_AddCopy {
     replace: scala.Double,
     test: scala.Double
   ): Anon_AddCopy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(add = add, copy = copy, move = move, remove = remove, replace = replace, test = test)
+  
     __obj.asInstanceOf[Anon_AddCopy]
   }
 }

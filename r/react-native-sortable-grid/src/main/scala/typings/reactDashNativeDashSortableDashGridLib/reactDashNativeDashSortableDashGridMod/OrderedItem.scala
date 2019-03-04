@@ -18,9 +18,7 @@ object OrderedItem {
     order: scala.Double,
     ref: reactDashNativeDashSortableDashGridLib.SortableGridItem = null
   ): OrderedItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(key = key, order = order)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     __obj.asInstanceOf[OrderedItem]
   }

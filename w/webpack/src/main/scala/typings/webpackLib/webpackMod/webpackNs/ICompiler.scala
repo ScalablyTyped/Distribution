@@ -24,9 +24,8 @@ object ICompiler {
       Watching
     ]
   ): ICompiler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(run = run, watch = watch)
+  
     __obj.asInstanceOf[ICompiler]
   }
 }

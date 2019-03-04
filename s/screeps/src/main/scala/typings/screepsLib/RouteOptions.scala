@@ -15,8 +15,8 @@ trait RouteOptions extends js.Object {
 object RouteOptions {
   @scala.inline
   def apply(routeCallback: js.Function2[java.lang.String, java.lang.String, js.Any]): RouteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routeCallback")(routeCallback)
+    val __obj = js.Dynamic.literal(routeCallback = routeCallback)
+  
     __obj.asInstanceOf[RouteOptions]
   }
 }

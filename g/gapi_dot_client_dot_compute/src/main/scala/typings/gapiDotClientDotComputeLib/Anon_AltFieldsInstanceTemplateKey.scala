@@ -42,9 +42,7 @@ object Anon_AltFieldsInstanceTemplateKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsInstanceTemplateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceTemplate")(instanceTemplate)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(instanceTemplate = instanceTemplate, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

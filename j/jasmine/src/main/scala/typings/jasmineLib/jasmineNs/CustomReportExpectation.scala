@@ -20,11 +20,8 @@ object CustomReportExpectation {
     passed: scala.Boolean,
     stack: java.lang.String
   ): CustomReportExpectation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matcherName")(matcherName)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("passed")(passed)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(matcherName = matcherName, message = message, passed = passed, stack = stack)
+  
     __obj.asInstanceOf[CustomReportExpectation]
   }
 }

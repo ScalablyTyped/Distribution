@@ -16,9 +16,8 @@ object Anon_EndStart {
     end: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.stringOrDate,
     start: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.stringOrDate
   ): Anon_EndStart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EndStart]
   }
 }

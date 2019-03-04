@@ -20,11 +20,8 @@ object RouterEvent {
     sender: Router,
     url: java.lang.String
   ): RouterEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender, url = url)
+  
     __obj.asInstanceOf[RouterEvent]
   }
 }

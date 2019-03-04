@@ -71,25 +71,8 @@ object XLocaleData3 {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLocaleData3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllInstalledLocaleNames")(AllInstalledLocaleNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAllCalendars")(getAllCalendars)
-    __obj.updateDynamic("getAllCalendars2")(getAllCalendars2)
-    __obj.updateDynamic("getAllCurrencies")(getAllCurrencies)
-    __obj.updateDynamic("getAllCurrencies2")(getAllCurrencies2)
-    __obj.updateDynamic("getAllFormats")(getAllFormats)
-    __obj.updateDynamic("getAllInstalledLocaleNames")(getAllInstalledLocaleNames)
-    __obj.updateDynamic("getCollationOptions")(getCollationOptions)
-    __obj.updateDynamic("getCollatorImplementations")(getCollatorImplementations)
-    __obj.updateDynamic("getForbiddenCharacters")(getForbiddenCharacters)
-    __obj.updateDynamic("getLanguageCountryInfo")(getLanguageCountryInfo)
-    __obj.updateDynamic("getLocaleItem")(getLocaleItem)
-    __obj.updateDynamic("getReservedWord")(getReservedWord)
-    __obj.updateDynamic("getSearchOptions")(getSearchOptions)
-    __obj.updateDynamic("getTransliterations")(getTransliterations)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AllInstalledLocaleNames = AllInstalledLocaleNames, acquire = acquire, getAllCalendars = getAllCalendars, getAllCalendars2 = getAllCalendars2, getAllCurrencies = getAllCurrencies, getAllCurrencies2 = getAllCurrencies2, getAllFormats = getAllFormats, getAllInstalledLocaleNames = getAllInstalledLocaleNames, getCollationOptions = getCollationOptions, getCollatorImplementations = getCollatorImplementations, getForbiddenCharacters = getForbiddenCharacters, getLanguageCountryInfo = getLanguageCountryInfo, getLocaleItem = getLocaleItem, getReservedWord = getReservedWord, getSearchOptions = getSearchOptions, getTransliterations = getTransliterations, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLocaleData3]
   }
 }

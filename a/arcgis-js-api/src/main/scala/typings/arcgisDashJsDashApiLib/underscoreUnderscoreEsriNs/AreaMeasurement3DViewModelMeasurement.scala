@@ -37,13 +37,8 @@ object AreaMeasurement3DViewModelMeasurement {
     perimeterLength: MeasurementValue,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): AreaMeasurement3DViewModelMeasurement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("measurementMode")(measurementMode)
-    __obj.updateDynamic("perimeterLength")(perimeterLength)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(area = area, constructor = constructor, hasOwnProperty = hasOwnProperty, measurementMode = measurementMode, perimeterLength = perimeterLength, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[AreaMeasurement3DViewModelMeasurement]
   }
 }

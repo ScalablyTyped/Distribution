@@ -32,12 +32,8 @@ object ASPxClientRadarDiagram {
     axisY: ASPxClientAxisBase,
     chart: ASPxClientWebChart
   ): ASPxClientRadarDiagram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DiagramToPoint")(DiagramToPoint)
-    __obj.updateDynamic("PointToDiagram")(PointToDiagram)
-    __obj.updateDynamic("axisX")(axisX)
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
+    val __obj = js.Dynamic.literal(DiagramToPoint = DiagramToPoint, PointToDiagram = PointToDiagram, axisX = axisX, axisY = axisY, chart = chart)
+  
     __obj.asInstanceOf[ASPxClientRadarDiagram]
   }
 }

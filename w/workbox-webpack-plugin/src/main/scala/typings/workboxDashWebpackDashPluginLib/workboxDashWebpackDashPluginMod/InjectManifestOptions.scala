@@ -47,8 +47,7 @@ object InjectManifestOptions {
     templatedUrls: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null,
     test: js.Array[java.lang.String | stdLib.RegExp] = null
   ): InjectManifestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("swSrc")(swSrc)
+    val __obj = js.Dynamic.literal(swSrc = swSrc)
     if (chunks != null) __obj.updateDynamic("chunks")(chunks)
     if (dontCacheBustUrlsMatching != null) __obj.updateDynamic("dontCacheBustUrlsMatching")(dontCacheBustUrlsMatching)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)

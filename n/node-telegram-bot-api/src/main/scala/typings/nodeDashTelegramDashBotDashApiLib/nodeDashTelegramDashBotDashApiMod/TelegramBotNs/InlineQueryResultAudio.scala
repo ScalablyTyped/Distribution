@@ -30,10 +30,8 @@ object InlineQueryResultAudio {
     performer: java.lang.String = null,
     reply_markup: InlineKeyboardMarkup = null
   ): InlineQueryResultAudio = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("audio_url")(audio_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(audio_url = audio_url, id = id, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (audio_duration != null) __obj.updateDynamic("audio_duration")(audio_duration.asInstanceOf[js.Any])
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)

@@ -26,14 +26,8 @@ object EditorCore {
     setState: js.Function0[js.Any],
     state: js.Any
   ): EditorCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("forceUpdate")(forceUpdate)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("refs")(refs)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("setState")(setState)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(context = context, forceUpdate = forceUpdate, props = props, refs = refs, render = render, setState = setState, state = state)
+  
     __obj.asInstanceOf[EditorCore]
   }
 }

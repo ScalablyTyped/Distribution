@@ -25,17 +25,8 @@ object IPixelLineStringGeometry {
     scale: js.Function1[scala.Double, IPixelGeometry],
     shift: js.Function1[js.Array[scala.Double], IPixelGeometry]
   ): IPixelLineStringGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getClosest")(getClosest)
-    __obj.updateDynamic("getCoordinates")(getCoordinates)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getMetaData")(getMetaData)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(equals = equals, events = events, getBounds = getBounds, getClosest = getClosest, getCoordinates = getCoordinates, getLength = getLength, getMetaData = getMetaData, getType = getType, scale = scale, shift = shift)
+  
     __obj.asInstanceOf[IPixelLineStringGeometry]
   }
 }

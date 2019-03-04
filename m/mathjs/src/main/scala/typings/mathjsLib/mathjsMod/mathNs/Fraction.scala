@@ -15,10 +15,8 @@ trait Fraction extends _MathType {
 object Fraction {
   @scala.inline
   def apply(d: scala.Double, n: scala.Double, s: scala.Double): Fraction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("s")(s)
+    val __obj = js.Dynamic.literal(d = d, n = n, s = s)
+  
     __obj.asInstanceOf[Fraction]
   }
 }

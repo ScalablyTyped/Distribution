@@ -74,18 +74,7 @@ object UISortableProperties {
     sourceModel: js.Array[T],
     moved: T = null
   ): UISortableProperties[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("dropindex")(dropindex)
-    __obj.updateDynamic("droptarget")(droptarget)
-    __obj.updateDynamic("droptargetModel")(droptargetModel)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isCanceled")(isCanceled)
-    __obj.updateDynamic("isCustomHelperUsed")(isCustomHelperUsed)
-    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    __obj.updateDynamic("received")(received)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceModel")(sourceModel)
+    val __obj = js.Dynamic.literal(cancel = cancel, dropindex = dropindex, droptarget = droptarget, droptargetModel = droptargetModel, index = index, isCanceled = isCanceled, isCustomHelperUsed = isCustomHelperUsed, model = model.asInstanceOf[js.Any], received = received, source = source, sourceModel = sourceModel)
     if (moved != null) __obj.updateDynamic("moved")(moved.asInstanceOf[js.Any])
     __obj.asInstanceOf[UISortableProperties[T]]
   }

@@ -22,9 +22,8 @@ trait INxListObjectExpressionDef extends js.Object {
 object INxListObjectExpressionDef {
   @scala.inline
   def apply(qExpr: java.lang.String, qLibraryId: java.lang.String): INxListObjectExpressionDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExpr")(qExpr)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
+    val __obj = js.Dynamic.literal(qExpr = qExpr, qLibraryId = qLibraryId)
+  
     __obj.asInstanceOf[INxListObjectExpressionDef]
   }
 }

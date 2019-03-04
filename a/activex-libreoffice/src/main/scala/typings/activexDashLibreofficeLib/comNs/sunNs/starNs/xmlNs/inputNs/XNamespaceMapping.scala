@@ -31,12 +31,8 @@ object XNamespaceMapping {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNamespaceMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getUidByUri")(getUidByUri)
-    __obj.updateDynamic("getUriByUid")(getUriByUid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getUidByUri = getUidByUri, getUriByUid = getUriByUid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNamespaceMapping]
   }
 }

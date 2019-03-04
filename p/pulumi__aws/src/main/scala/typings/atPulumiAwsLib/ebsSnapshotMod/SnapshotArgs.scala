@@ -27,8 +27,7 @@ object SnapshotArgs {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): SnapshotArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(volumeId = volumeId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotArgs]

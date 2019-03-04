@@ -13,9 +13,8 @@ trait IROOM_NAME_CHANGE extends js.Object {
 object IROOM_NAME_CHANGE {
   @scala.inline
   def apply(oldName: java.lang.String, room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom): IROOM_NAME_CHANGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldName")(oldName)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(oldName = oldName, room = room)
+  
     __obj.asInstanceOf[IROOM_NAME_CHANGE]
   }
 }

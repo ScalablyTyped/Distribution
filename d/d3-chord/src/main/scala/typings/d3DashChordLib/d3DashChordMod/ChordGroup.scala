@@ -27,11 +27,8 @@ trait ChordGroup extends js.Object {
 object ChordGroup {
   @scala.inline
   def apply(endAngle: scala.Double, index: scala.Double, startAngle: scala.Double, value: scala.Double): ChordGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endAngle")(endAngle)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("startAngle")(startAngle)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(endAngle = endAngle, index = index, startAngle = startAngle, value = value)
+  
     __obj.asInstanceOf[ChordGroup]
   }
 }

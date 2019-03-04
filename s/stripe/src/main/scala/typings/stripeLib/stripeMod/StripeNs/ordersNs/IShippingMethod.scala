@@ -35,12 +35,8 @@ object IShippingMethod {
     description: java.lang.String,
     id: java.lang.String
   ): IShippingMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("delivery_estimate")(delivery_estimate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, delivery_estimate = delivery_estimate, description = description, id = id)
+  
     __obj.asInstanceOf[IShippingMethod]
   }
 }

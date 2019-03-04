@@ -44,12 +44,7 @@ object Service {
     retry: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
-    __obj.updateDynamic("pack")(pack)
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("unpack")(unpack)
+    val __obj = js.Dynamic.literal(balance = balance.asInstanceOf[js.Any], pack = pack, protocol = protocol.asInstanceOf[js.Any], server = server, unpack = unpack)
     if (data != null) __obj.updateDynamic("data")(data)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)

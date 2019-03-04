@@ -28,7 +28,8 @@ object GeoJSONSourceRaw {
     maxzoom: scala.Int | scala.Double = null,
     tolerance: scala.Int | scala.Double = null
   ): GeoJSONSourceRaw = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])

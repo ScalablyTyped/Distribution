@@ -60,30 +60,8 @@ object PersistentPropertySet {
       scala.Unit
     ]
   ): PersistentPropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("PropertyValues")(PropertyValues)
-    __obj.updateDynamic("Registry")(Registry)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getKey")(getKey)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("getRegistry")(getRegistry)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeProperty")(removeProperty)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    val __obj = js.Dynamic.literal(Key = Key, Name = Name, PropertySetInfo = PropertySetInfo, PropertyValues = PropertyValues, Registry = Registry, acquire = acquire, addProperty = addProperty, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getKey = getKey, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, getRegistry = getRegistry, queryInterface = queryInterface, release = release, removeProperty = removeProperty, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues)
+  
     __obj.asInstanceOf[PersistentPropertySet]
   }
 }

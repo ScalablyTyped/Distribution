@@ -38,11 +38,8 @@ object Tracing {
     enable: js.Function0[scala.Unit],
     enabled: scala.Boolean
   ): Tracing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(categories = categories, disable = disable, enable = enable, enabled = enabled)
+  
     __obj.asInstanceOf[Tracing]
   }
 }

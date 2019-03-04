@@ -42,16 +42,8 @@ object SearchOptions {
     searchString: java.lang.String,
     transliterateFlags: scala.Double
   ): SearchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("algorithmType")(algorithmType)
-    __obj.updateDynamic("changedChars")(changedChars)
-    __obj.updateDynamic("deletedChars")(deletedChars)
-    __obj.updateDynamic("insertedChars")(insertedChars)
-    __obj.updateDynamic("replaceString")(replaceString)
-    __obj.updateDynamic("searchFlag")(searchFlag)
-    __obj.updateDynamic("searchString")(searchString)
-    __obj.updateDynamic("transliterateFlags")(transliterateFlags)
+    val __obj = js.Dynamic.literal(Locale = Locale, algorithmType = algorithmType, changedChars = changedChars, deletedChars = deletedChars, insertedChars = insertedChars, replaceString = replaceString, searchFlag = searchFlag, searchString = searchString, transliterateFlags = transliterateFlags)
+  
     __obj.asInstanceOf[SearchOptions]
   }
 }

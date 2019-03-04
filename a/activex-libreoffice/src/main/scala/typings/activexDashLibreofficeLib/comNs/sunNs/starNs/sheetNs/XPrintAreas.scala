@@ -115,25 +115,8 @@ object XPrintAreas {
     setTitleColumns: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
     setTitleRows: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
   ): XPrintAreas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrintAreas")(PrintAreas)
-    __obj.updateDynamic("PrintTitleColumns")(PrintTitleColumns)
-    __obj.updateDynamic("PrintTitleRows")(PrintTitleRows)
-    __obj.updateDynamic("TitleColumns")(TitleColumns)
-    __obj.updateDynamic("TitleRows")(TitleRows)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPrintAreas")(getPrintAreas)
-    __obj.updateDynamic("getPrintTitleColumns")(getPrintTitleColumns)
-    __obj.updateDynamic("getPrintTitleRows")(getPrintTitleRows)
-    __obj.updateDynamic("getTitleColumns")(getTitleColumns)
-    __obj.updateDynamic("getTitleRows")(getTitleRows)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPrintAreas")(setPrintAreas)
-    __obj.updateDynamic("setPrintTitleColumns")(setPrintTitleColumns)
-    __obj.updateDynamic("setPrintTitleRows")(setPrintTitleRows)
-    __obj.updateDynamic("setTitleColumns")(setTitleColumns)
-    __obj.updateDynamic("setTitleRows")(setTitleRows)
+    val __obj = js.Dynamic.literal(PrintAreas = PrintAreas, PrintTitleColumns = PrintTitleColumns, PrintTitleRows = PrintTitleRows, TitleColumns = TitleColumns, TitleRows = TitleRows, acquire = acquire, getPrintAreas = getPrintAreas, getPrintTitleColumns = getPrintTitleColumns, getPrintTitleRows = getPrintTitleRows, getTitleColumns = getTitleColumns, getTitleRows = getTitleRows, queryInterface = queryInterface, release = release, setPrintAreas = setPrintAreas, setPrintTitleColumns = setPrintTitleColumns, setPrintTitleRows = setPrintTitleRows, setTitleColumns = setTitleColumns, setTitleRows = setTitleRows)
+  
     __obj.asInstanceOf[XPrintAreas]
   }
 }

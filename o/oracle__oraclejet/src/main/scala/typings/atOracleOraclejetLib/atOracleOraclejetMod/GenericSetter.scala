@@ -23,9 +23,8 @@ object GenericSetter {
     ],
     unset: js.Function1[java.lang.String, scala.Unit]
   ): GenericSetter[SP] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("unset")(unset)
+    val __obj = js.Dynamic.literal(set = set, unset = unset)
+  
     __obj.asInstanceOf[GenericSetter[SP]]
   }
 }

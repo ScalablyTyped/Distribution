@@ -44,14 +44,8 @@ object ReportDataGroup {
     row: js.Array[java.lang.String],
     value: java.lang.String
   ): ReportDataGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregateLabel")(aggregateLabel)
-    __obj.updateDynamic("aggregateValue")(aggregateValue)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(aggregateLabel = aggregateLabel, aggregateValue = aggregateValue, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, row = row, value = value)
+  
     __obj.asInstanceOf[ReportDataGroup]
   }
 }

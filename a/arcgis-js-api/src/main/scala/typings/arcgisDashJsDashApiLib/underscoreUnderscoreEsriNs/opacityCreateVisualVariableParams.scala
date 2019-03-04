@@ -100,11 +100,7 @@ object opacityCreateVisualVariableParams {
     valueExpressionTitle: java.lang.String = null,
     view: View = null
   ): opacityCreateVisualVariableParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
     if (field != null) __obj.updateDynamic("field")(field)
     if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])

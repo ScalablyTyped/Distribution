@@ -12,8 +12,8 @@ trait AuthorizeUrlBundle[InputData] extends js.Object {
 object AuthorizeUrlBundle {
   @scala.inline
   def apply[InputData](inputData: InputData): AuthorizeUrlBundle[InputData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputData")(inputData.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inputData = inputData.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AuthorizeUrlBundle[InputData]]
   }
 }

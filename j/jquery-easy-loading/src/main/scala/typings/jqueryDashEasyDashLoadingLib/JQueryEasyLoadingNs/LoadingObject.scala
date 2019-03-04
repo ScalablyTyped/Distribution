@@ -71,17 +71,8 @@ object LoadingObject {
     stop: js.Function0[scala.Unit],
     toggle: js.Function0[scala.Unit]
   ): LoadingObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("attachMethodsToExternalEvents")(attachMethodsToExternalEvents)
-    __obj.updateDynamic("attachOptionsHandlers")(attachOptionsHandlers)
-    __obj.updateDynamic("calcZIndex")(calcZIndex)
-    __obj.updateDynamic("createOerlay")(createOerlay)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(active = active, attachMethodsToExternalEvents = attachMethodsToExternalEvents, attachOptionsHandlers = attachOptionsHandlers, calcZIndex = calcZIndex, createOerlay = createOerlay, init = init, resize = resize, start = start, stop = stop, toggle = toggle)
+  
     __obj.asInstanceOf[LoadingObject]
   }
 }

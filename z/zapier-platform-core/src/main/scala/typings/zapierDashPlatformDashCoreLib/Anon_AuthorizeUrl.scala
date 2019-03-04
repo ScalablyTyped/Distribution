@@ -48,10 +48,7 @@ object Anon_AuthorizeUrl {
     ]) | zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.HttpRequestOptions = null,
     scope: java.lang.String = null
   ): Anon_AuthorizeUrl[InputData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizeUrl")(authorizeUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("autoRefresh")(autoRefresh)
-    __obj.updateDynamic("getAccessToken")(getAccessToken.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authorizeUrl = authorizeUrl.asInstanceOf[js.Any], autoRefresh = autoRefresh, getAccessToken = getAccessToken.asInstanceOf[js.Any])
     if (refreshAccessToken != null) __obj.updateDynamic("refreshAccessToken")(refreshAccessToken.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[Anon_AuthorizeUrl[InputData]]

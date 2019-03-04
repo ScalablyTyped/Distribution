@@ -18,10 +18,8 @@ object BufferParam {
     oldstate: java.lang.String,
     reason: jwplayerLib.jwplayerLibStrings.loading | jwplayerLib.jwplayerLibStrings.complete | jwplayerLib.jwplayerLibStrings.stalled | jwplayerLib.jwplayerLibStrings.error
   ): BufferParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newstate")(newstate)
-    __obj.updateDynamic("oldstate")(oldstate)
-    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(newstate = newstate, oldstate = oldstate, reason = reason.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BufferParam]
   }
 }

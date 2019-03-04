@@ -21,11 +21,8 @@ object BillingAccount {
     getPrimaryBillingId: js.Function0[java.lang.String],
     getSecondaryBillingId: js.Function0[java.lang.String]
   ): BillingAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPrimaryBillingId")(getPrimaryBillingId)
-    __obj.updateDynamic("getSecondaryBillingId")(getSecondaryBillingId)
+    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getPrimaryBillingId = getPrimaryBillingId, getSecondaryBillingId = getSecondaryBillingId)
+  
     __obj.asInstanceOf[BillingAccount]
   }
 }

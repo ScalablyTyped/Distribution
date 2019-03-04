@@ -13,9 +13,8 @@ trait RelatedNode extends js.Object {
 object RelatedNode {
   @scala.inline
   def apply(html: java.lang.String, target: js.Array[java.lang.String]): RelatedNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(html = html, target = target)
+  
     __obj.asInstanceOf[RelatedNode]
   }
 }

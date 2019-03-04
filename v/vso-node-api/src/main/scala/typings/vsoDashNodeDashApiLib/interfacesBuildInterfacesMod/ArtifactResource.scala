@@ -39,12 +39,8 @@ object ArtifactResource {
     `type`: java.lang.String,
     url: java.lang.String
   ): ArtifactResource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("downloadUrl")(downloadUrl)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, data = data, downloadUrl = downloadUrl, properties = properties, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArtifactResource]
   }
 }

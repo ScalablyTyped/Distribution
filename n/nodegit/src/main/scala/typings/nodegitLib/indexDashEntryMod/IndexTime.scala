@@ -13,9 +13,8 @@ trait IndexTime extends js.Object {
 object IndexTime {
   @scala.inline
   def apply(nanoseconds: scala.Double, seconds: scala.Double): IndexTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nanoseconds")(nanoseconds)
-    __obj.updateDynamic("seconds")(seconds)
+    val __obj = js.Dynamic.literal(nanoseconds = nanoseconds, seconds = seconds)
+  
     __obj.asInstanceOf[IndexTime]
   }
 }

@@ -27,9 +27,7 @@ object IPoint {
     alt: js.UndefOr[Altitude] = js.undefined,
     ctx: AltitudeContext = null
   ): IPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
     if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt)
     if (ctx != null) __obj.updateDynamic("ctx")(ctx)
     __obj.asInstanceOf[IPoint]

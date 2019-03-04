@@ -12,8 +12,8 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(stringTemplateEngine: Anon_Instance): KnockoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stringTemplateEngine")(stringTemplateEngine)
+    val __obj = js.Dynamic.literal(stringTemplateEngine = stringTemplateEngine)
+  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

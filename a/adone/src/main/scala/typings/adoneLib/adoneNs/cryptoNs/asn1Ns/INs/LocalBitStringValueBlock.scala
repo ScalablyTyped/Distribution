@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlock because Inheritance from two classes */ @JSGlobal("adone.crypto.asn1.I.LocalBitStringValueBlock")
+- adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlock because Inheritance from two classes. Inlined isHexOnly, valueHex, fromBER, toBER, toBER, toJSON */ @JSGlobal("adone.crypto.asn1.I.LocalBitStringValueBlock")
 @js.native
 class LocalBitStringValueBlock () extends LocalConstructedValueBlock {
   def this(params: LocalBitStringValueBlockParams) = this()

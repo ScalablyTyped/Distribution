@@ -20,11 +20,8 @@ object Checkbox {
     setId: js.Function1[java.lang.String, Checkbox],
     setName: js.Function1[java.lang.String, Checkbox]
   ): Checkbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAllowOverride")(setAllowOverride)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName)
+  
     __obj.asInstanceOf[Checkbox]
   }
 }

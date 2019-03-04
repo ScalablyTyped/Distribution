@@ -20,11 +20,8 @@ object TriggerInstance {
     name: java.lang.String,
     systemKey: java.lang.String
   ): TriggerInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Delete")(Delete)
-    __obj.updateDynamic("Update")(Update)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("systemKey")(systemKey)
+    val __obj = js.Dynamic.literal(Delete = Delete, Update = Update, name = name, systemKey = systemKey)
+  
     __obj.asInstanceOf[TriggerInstance]
   }
 }

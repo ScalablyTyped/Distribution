@@ -24,10 +24,7 @@ object Anon_BufferChildTileMask {
     createdByUpsampling: js.UndefOr[scala.Boolean] = js.undefined,
     credits: js.Array[cesiumLib.cesiumMod.CesiumNs.Credit] = null
   ): Anon_BufferChildTileMask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("negativeAltitudeExponentBias")(negativeAltitudeExponentBias)
-    __obj.updateDynamic("negativeElevationThreshold")(negativeElevationThreshold)
+    val __obj = js.Dynamic.literal(buffer = buffer, negativeAltitudeExponentBias = negativeAltitudeExponentBias, negativeElevationThreshold = negativeElevationThreshold)
     if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
     if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
     if (credits != null) __obj.updateDynamic("credits")(credits)

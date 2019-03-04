@@ -18,10 +18,8 @@ object TMap {
     size: scala.Double,
     vtype: thriftLib.thriftMod.ThriftNs.Type
   ): TMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ktype")(ktype)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("vtype")(vtype)
+    val __obj = js.Dynamic.literal(ktype = ktype, size = size, vtype = vtype)
+  
     __obj.asInstanceOf[TMap]
   }
 }

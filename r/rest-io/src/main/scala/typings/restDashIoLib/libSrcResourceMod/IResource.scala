@@ -24,9 +24,7 @@ object IResource {
     plural: java.lang.String = null,
     populate: java.lang.String = null
   ): IResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(model = model, name = name)
     if (parentRef != null) __obj.updateDynamic("parentRef")(parentRef)
     if (parentResource != null) __obj.updateDynamic("parentResource")(parentResource)
     if (plural != null) __obj.updateDynamic("plural")(plural)

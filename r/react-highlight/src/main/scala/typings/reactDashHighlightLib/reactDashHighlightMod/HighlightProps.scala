@@ -15,8 +15,8 @@ trait HighlightProps extends js.Object {
 object HighlightProps {
   @scala.inline
   def apply(className: java.lang.String): HighlightProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(className = className)
+  
     __obj.asInstanceOf[HighlightProps]
   }
 }

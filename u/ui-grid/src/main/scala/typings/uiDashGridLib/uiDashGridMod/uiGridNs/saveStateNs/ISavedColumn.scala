@@ -24,8 +24,7 @@ object ISavedColumn {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): ISavedColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (pinned != null) __obj.updateDynamic("pinned")(pinned)
     if (sort != null) __obj.updateDynamic("sort")(sort)

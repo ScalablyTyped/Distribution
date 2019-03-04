@@ -15,8 +15,8 @@ trait ASPxClientVerticalGridCallbackCommandStatic extends js.Object {
 object ASPxClientVerticalGridCallbackCommandStatic {
   @scala.inline
   def apply(ExpandRow: java.lang.String): ASPxClientVerticalGridCallbackCommandStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExpandRow")(ExpandRow)
+    val __obj = js.Dynamic.literal(ExpandRow = ExpandRow)
+  
     __obj.asInstanceOf[ASPxClientVerticalGridCallbackCommandStatic]
   }
 }

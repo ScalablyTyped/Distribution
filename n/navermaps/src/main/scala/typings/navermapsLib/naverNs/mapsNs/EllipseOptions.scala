@@ -38,8 +38,7 @@ object EllipseOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): EllipseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

@@ -51,17 +51,8 @@ object Cookies {
     parse: js.Function1[java.lang.String, nodemailerLib.libFetchCookiesMod.CookiesNs.Cookie],
     set: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
   ): Cookies = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("isExpired")(isExpired)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(add = add, compare = compare, cookies = cookies, get = get, getPath = getPath, isExpired = isExpired, list = list, options = options, parse = parse, set = set)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Cookies]
   }
 }

@@ -14,8 +14,8 @@ object Anon_BackwardClipDirection {
   def apply(
     clipDirection: atomLib.atomLibStrings.backward | atomLib.atomLibStrings.forward | atomLib.atomLibStrings.closest
   ): Anon_BackwardClipDirection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clipDirection")(clipDirection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BackwardClipDirection]
   }
 }

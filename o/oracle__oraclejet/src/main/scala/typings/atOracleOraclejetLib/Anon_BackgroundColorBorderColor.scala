@@ -36,19 +36,8 @@ object Anon_BackgroundColorBorderColor {
     selectedOuterColor: java.lang.String,
     useNodeColor: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off
   ): Anon_BackgroundColorBorderColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("hoverBackgroundColor")(hoverBackgroundColor)
-    __obj.updateDynamic("hoverInnerColor")(hoverInnerColor)
-    __obj.updateDynamic("hoverOuterColor")(hoverOuterColor)
-    __obj.updateDynamic("isolate")(isolate.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("selectedBackgroundColor")(selectedBackgroundColor)
-    __obj.updateDynamic("selectedInnerColor")(selectedInnerColor)
-    __obj.updateDynamic("selectedOuterColor")(selectedOuterColor)
-    __obj.updateDynamic("useNodeColor")(useNodeColor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, hoverBackgroundColor = hoverBackgroundColor, hoverInnerColor = hoverInnerColor, hoverOuterColor = hoverOuterColor, isolate = isolate.asInstanceOf[js.Any], labelHalign = labelHalign.asInstanceOf[js.Any], labelStyle = labelStyle, selectedBackgroundColor = selectedBackgroundColor, selectedInnerColor = selectedInnerColor, selectedOuterColor = selectedOuterColor, useNodeColor = useNodeColor.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BackgroundColorBorderColor]
   }
 }

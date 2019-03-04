@@ -48,17 +48,8 @@ object XFileDialog {
     ],
     setPath: js.Function1[java.lang.String, scala.Unit]
   ): XFileDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentFilter")(CurrentFilter)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCurrentFilter")(getCurrentFilter)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentFilter")(setCurrentFilter)
-    __obj.updateDynamic("setFilters")(setFilters)
-    __obj.updateDynamic("setPath")(setPath)
+    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, Path = Path, acquire = acquire, getCurrentFilter = getCurrentFilter, getPath = getPath, queryInterface = queryInterface, release = release, setCurrentFilter = setCurrentFilter, setFilters = setFilters, setPath = setPath)
+  
     __obj.asInstanceOf[XFileDialog]
   }
 }

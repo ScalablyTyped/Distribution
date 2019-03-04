@@ -39,11 +39,8 @@ object TextBoxRelativeSizeSettings {
     relativeWidth: scala.Double,
     relativeWidthType: js.Any
   ): TextBoxRelativeSizeSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("relativeHeight")(relativeHeight)
-    __obj.updateDynamic("relativeHeightType")(relativeHeightType)
-    __obj.updateDynamic("relativeWidth")(relativeWidth)
-    __obj.updateDynamic("relativeWidthType")(relativeWidthType)
+    val __obj = js.Dynamic.literal(relativeHeight = relativeHeight, relativeHeightType = relativeHeightType, relativeWidth = relativeWidth, relativeWidthType = relativeWidthType)
+  
     __obj.asInstanceOf[TextBoxRelativeSizeSettings]
   }
 }

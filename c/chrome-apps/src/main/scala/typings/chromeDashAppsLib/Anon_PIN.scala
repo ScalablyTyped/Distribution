@@ -16,9 +16,8 @@ object Anon_PIN {
     PIN: chromeDashAppsLib.chromeDashAppsLibStrings.PIN,
     PUK: chromeDashAppsLib.chromeDashAppsLibStrings.PUK
   ): Anon_PIN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PIN")(PIN)
-    __obj.updateDynamic("PUK")(PUK)
+    val __obj = js.Dynamic.literal(PIN = PIN, PUK = PUK)
+  
     __obj.asInstanceOf[Anon_PIN]
   }
 }

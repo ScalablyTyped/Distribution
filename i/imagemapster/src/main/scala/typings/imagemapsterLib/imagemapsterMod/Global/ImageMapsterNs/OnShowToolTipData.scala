@@ -29,11 +29,8 @@ object OnShowToolTipData {
     selected: scala.Boolean,
     toolTip: imagemapsterLib.imagemapsterMod.Global.JQuery
   ): OnShowToolTipData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("areaOptions")(areaOptions)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("toolTip")(toolTip)
+    val __obj = js.Dynamic.literal(areaOptions = areaOptions, key = key, selected = selected, toolTip = toolTip)
+  
     __obj.asInstanceOf[OnShowToolTipData]
   }
 }

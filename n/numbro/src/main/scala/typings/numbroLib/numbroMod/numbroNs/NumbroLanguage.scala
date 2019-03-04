@@ -34,13 +34,7 @@ object NumbroLanguage {
     ordinalFormat: Format = null,
     percentageFormat: Format = null
   ): NumbroLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviations")(abbreviations)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("delimiters")(delimiters)
-    __obj.updateDynamic("formats")(formats)
-    __obj.updateDynamic("languageTag")(languageTag)
-    __obj.updateDynamic("ordinal")(ordinal)
+    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, formats = formats, languageTag = languageTag, ordinal = ordinal)
     if (byteFormat != null) __obj.updateDynamic("byteFormat")(byteFormat)
     if (currencyFormat != null) __obj.updateDynamic("currencyFormat")(currencyFormat)
     if (defaults != null) __obj.updateDynamic("defaults")(defaults)

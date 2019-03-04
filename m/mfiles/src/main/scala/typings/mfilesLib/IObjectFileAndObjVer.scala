@@ -20,11 +20,8 @@ object IObjectFileAndObjVer {
     ObjectFile: IObjectFile,
     ToJSON: js.Function0[java.lang.String]
   ): IObjectFileAndObjVer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ObjVer")(ObjVer)
-    __obj.updateDynamic("ObjectFile")(ObjectFile)
-    __obj.updateDynamic("ToJSON")(ToJSON)
+    val __obj = js.Dynamic.literal(Clone = Clone, ObjVer = ObjVer, ObjectFile = ObjectFile, ToJSON = ToJSON)
+  
     __obj.asInstanceOf[IObjectFileAndObjVer]
   }
 }

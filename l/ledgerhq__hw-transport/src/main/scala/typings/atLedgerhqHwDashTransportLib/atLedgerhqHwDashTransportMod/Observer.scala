@@ -18,10 +18,8 @@ object Observer {
     error: js.Function1[js.Any, js.Any],
     next: js.Function1[Ev, js.Any]
   ): Observer[Ev] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(complete = complete, error = error, next = next)
+  
     __obj.asInstanceOf[Observer[Ev]]
   }
 }

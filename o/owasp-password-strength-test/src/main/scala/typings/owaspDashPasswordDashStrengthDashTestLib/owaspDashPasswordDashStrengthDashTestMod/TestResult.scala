@@ -40,15 +40,8 @@ object TestResult {
     requiredTestErrors: js.Array[java.lang.String],
     strong: scala.Boolean
   ): TestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("failedTests")(failedTests)
-    __obj.updateDynamic("isPassphrase")(isPassphrase)
-    __obj.updateDynamic("optionalTestErrors")(optionalTestErrors)
-    __obj.updateDynamic("optionalTestsPassed")(optionalTestsPassed)
-    __obj.updateDynamic("passedTests")(passedTests)
-    __obj.updateDynamic("requiredTestErrors")(requiredTestErrors)
-    __obj.updateDynamic("strong")(strong)
+    val __obj = js.Dynamic.literal(errors = errors, failedTests = failedTests, isPassphrase = isPassphrase, optionalTestErrors = optionalTestErrors, optionalTestsPassed = optionalTestsPassed, passedTests = passedTests, requiredTestErrors = requiredTestErrors, strong = strong)
+  
     __obj.asInstanceOf[TestResult]
   }
 }

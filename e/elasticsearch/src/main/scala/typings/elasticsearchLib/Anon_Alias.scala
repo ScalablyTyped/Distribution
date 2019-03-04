@@ -22,8 +22,7 @@ object Anon_Alias {
     indices: js.Array[java.lang.String] = null,
     routing: java.lang.String = null
   ): Anon_Alias = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
+    val __obj = js.Dynamic.literal(alias = alias)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (index != null) __obj.updateDynamic("index")(index)
     if (indices != null) __obj.updateDynamic("indices")(indices)

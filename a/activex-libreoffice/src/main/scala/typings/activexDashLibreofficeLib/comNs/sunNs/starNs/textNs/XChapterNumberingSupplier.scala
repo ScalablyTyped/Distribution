@@ -23,12 +23,8 @@ object XChapterNumberingSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XChapterNumberingSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChapterNumberingRules")(ChapterNumberingRules)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getChapterNumberingRules")(getChapterNumberingRules)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ChapterNumberingRules = ChapterNumberingRules, acquire = acquire, getChapterNumberingRules = getChapterNumberingRules, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XChapterNumberingSupplier]
   }
 }

@@ -32,9 +32,7 @@ object ConnectionArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ConnectionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bandwidth = bandwidth.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionArgs]

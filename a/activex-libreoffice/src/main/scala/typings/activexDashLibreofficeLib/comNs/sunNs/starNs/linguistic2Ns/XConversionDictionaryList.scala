@@ -109,15 +109,8 @@ object XConversionDictionaryList {
     ],
     release: js.Function0[scala.Unit]
   ): XConversionDictionaryList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DictionaryContainer")(DictionaryContainer)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addNewDictionary")(addNewDictionary)
-    __obj.updateDynamic("getDictionaryContainer")(getDictionaryContainer)
-    __obj.updateDynamic("queryConversions")(queryConversions)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryMaxCharCount")(queryMaxCharCount)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DictionaryContainer = DictionaryContainer, acquire = acquire, addNewDictionary = addNewDictionary, getDictionaryContainer = getDictionaryContainer, queryConversions = queryConversions, queryInterface = queryInterface, queryMaxCharCount = queryMaxCharCount, release = release)
+  
     __obj.asInstanceOf[XConversionDictionaryList]
   }
 }

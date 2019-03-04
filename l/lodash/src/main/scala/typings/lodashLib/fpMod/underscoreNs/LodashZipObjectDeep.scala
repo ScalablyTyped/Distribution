@@ -12,6 +12,6 @@ trait LodashZipObjectDeep extends js.Object {
     paths: lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.PropertyPath],
     values: lodashLib.lodashMod.underscoreNs.List[_]
   ): js.Object = js.native
-  def apply(paths: lodashLib.lodashMod.underscoreNs.`__`, values: lodashLib.lodashMod.underscoreNs.List[_]): LodashZipObjectDeep1x2 = js.native
+  def apply(paths: lodashLib.lodashMod.underscoreNs.__, values: lodashLib.lodashMod.underscoreNs.List[_]): LodashZipObjectDeep1x2 = js.native
 }
 

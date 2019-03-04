@@ -28,15 +28,8 @@ object IStorageItemInformation {
     thumbnail: winrtLib.WindowsNs.StorageNs.FilePropertiesNs.StorageItemThumbnail,
     videoProperties: winrtLib.WindowsNs.StorageNs.FilePropertiesNs.VideoProperties
   ): IStorageItemInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basicProperties")(basicProperties)
-    __obj.updateDynamic("documentProperties")(documentProperties)
-    __obj.updateDynamic("imageProperties")(imageProperties)
-    __obj.updateDynamic("musicProperties")(musicProperties)
-    __obj.updateDynamic("onpropertiesupdated")(onpropertiesupdated)
-    __obj.updateDynamic("onthumbnailupdated")(onthumbnailupdated)
-    __obj.updateDynamic("thumbnail")(thumbnail)
-    __obj.updateDynamic("videoProperties")(videoProperties)
+    val __obj = js.Dynamic.literal(basicProperties = basicProperties, documentProperties = documentProperties, imageProperties = imageProperties, musicProperties = musicProperties, onpropertiesupdated = onpropertiesupdated, onthumbnailupdated = onthumbnailupdated, thumbnail = thumbnail, videoProperties = videoProperties)
+  
     __obj.asInstanceOf[IStorageItemInformation]
   }
 }

@@ -41,10 +41,7 @@ object NotifyBLECharacteristicValueChangeOptions {
     state: js.UndefOr[scala.Boolean] = js.undefined,
     success: js.Function1[js.Any, scala.Unit] = null
   ): NotifyBLECharacteristicValueChangeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("characteristicId")(characteristicId)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("serviceId")(serviceId)
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (descriptorId != null) __obj.updateDynamic("descriptorId")(descriptorId)
     if (fail != null) __obj.updateDynamic("fail")(fail)

@@ -16,9 +16,8 @@ object Anon_LOCALTOREMOTE {
     LOCAL_TO_REMOTE: chromeDashAppsLib.chromeDashAppsLibStrings.local_to_remote,
     REMOTE_TO_LOCAL: chromeDashAppsLib.chromeDashAppsLibStrings.remote_to_local
   ): Anon_LOCALTOREMOTE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOCAL_TO_REMOTE")(LOCAL_TO_REMOTE)
-    __obj.updateDynamic("REMOTE_TO_LOCAL")(REMOTE_TO_LOCAL)
+    val __obj = js.Dynamic.literal(LOCAL_TO_REMOTE = LOCAL_TO_REMOTE, REMOTE_TO_LOCAL = REMOTE_TO_LOCAL)
+  
     __obj.asInstanceOf[Anon_LOCALTOREMOTE]
   }
 }

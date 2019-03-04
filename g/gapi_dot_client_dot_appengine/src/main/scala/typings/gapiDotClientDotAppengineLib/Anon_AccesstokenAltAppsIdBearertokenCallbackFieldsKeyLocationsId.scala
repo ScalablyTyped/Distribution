@@ -58,9 +58,7 @@ object Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyLocationsId {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyLocationsId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appsId")(appsId)
-    __obj.updateDynamic("locationsId")(locationsId)
+    val __obj = js.Dynamic.literal(appsId = appsId, locationsId = locationsId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

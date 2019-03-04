@@ -22,12 +22,8 @@ object Anon_ColumnFilenameLinenoSegments {
     lineno: scala.Double,
     segments: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
   ): Anon_ColumnFilenameLinenoSegments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, segments = segments)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoSegments]
   }
 }

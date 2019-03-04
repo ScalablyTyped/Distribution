@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonKeepBothFiles extends js.Object {
 object Anon_EnumValuesAnonKeepBothFiles {
   @scala.inline
   def apply(enumValues: Anon_KeepBothFiles): Anon_EnumValuesAnonKeepBothFiles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonKeepBothFiles]
   }
 }

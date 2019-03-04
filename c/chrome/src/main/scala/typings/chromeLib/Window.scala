@@ -15,8 +15,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(chrome: Anon_AccessibilityFeatures): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chrome")(chrome)
+    val __obj = js.Dynamic.literal(chrome = chrome)
+  
     __obj.asInstanceOf[Window]
   }
 }

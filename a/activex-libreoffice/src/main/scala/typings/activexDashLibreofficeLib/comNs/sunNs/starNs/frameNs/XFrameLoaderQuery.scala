@@ -54,14 +54,8 @@ object XFrameLoaderQuery {
       java.lang.String
     ]
   ): XFrameLoaderQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AvailableFilterNames")(AvailableFilterNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAvailableFilterNames")(getAvailableFilterNames)
-    __obj.updateDynamic("getLoaderProperties")(getLoaderProperties)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("searchFilter")(searchFilter)
+    val __obj = js.Dynamic.literal(AvailableFilterNames = AvailableFilterNames, acquire = acquire, getAvailableFilterNames = getAvailableFilterNames, getLoaderProperties = getLoaderProperties, queryInterface = queryInterface, release = release, searchFilter = searchFilter)
+  
     __obj.asInstanceOf[XFrameLoaderQuery]
   }
 }

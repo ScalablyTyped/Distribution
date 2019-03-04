@@ -22,9 +22,7 @@ object Anon_CornerTypeEllipsoidGranularityPolylinePositions {
     ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
     granularity: scala.Int | scala.Double = null
   ): Anon_CornerTypeEllipsoidGranularityPolylinePositions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("polylinePositions")(polylinePositions)
-    __obj.updateDynamic("shapePositions")(shapePositions)
+    val __obj = js.Dynamic.literal(polylinePositions = polylinePositions, shapePositions = shapePositions)
     if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])

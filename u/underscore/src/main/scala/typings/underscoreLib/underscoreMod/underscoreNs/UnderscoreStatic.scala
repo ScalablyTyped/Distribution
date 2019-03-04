@@ -153,7 +153,7 @@ trait UnderscoreStatic extends js.Object {
     * @return Copy of `array` without false values.
     **/
   @JSName("compact")
-  def `compact_`[T](
+  def compact_[T](
     array: List[
       js.UndefOr[
         T | scala.Null | underscoreLib.underscoreLibNumbers.`false` | underscoreLib.underscoreLibStrings.Empty | underscoreLib.underscoreLibNumbers.`0`

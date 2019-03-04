@@ -79,16 +79,8 @@ object XClob {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XClob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharacterStream")(CharacterStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCharacterStream")(getCharacterStream)
-    __obj.updateDynamic("getSubString")(getSubString)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("positionOfClob")(positionOfClob)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(CharacterStream = CharacterStream, acquire = acquire, getCharacterStream = getCharacterStream, getSubString = getSubString, length = length, position = position, positionOfClob = positionOfClob, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XClob]
   }
 }

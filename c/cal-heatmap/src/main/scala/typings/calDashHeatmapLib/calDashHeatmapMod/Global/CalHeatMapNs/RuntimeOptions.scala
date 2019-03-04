@@ -77,11 +77,7 @@ object RuntimeOptions {
     verticalOrientation: js.UndefOr[scala.Boolean] = js.undefined,
     weekStartOnMonday: js.UndefOr[scala.Boolean] = js.undefined
   ): RuntimeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainMargin")(domainMargin)
-    __obj.updateDynamic("highlight")(highlight)
-    __obj.updateDynamic("itemName")(itemName)
-    __obj.updateDynamic("legendMargin")(legendMargin)
+    val __obj = js.Dynamic.literal(domainMargin = domainMargin, highlight = highlight, itemName = itemName, legendMargin = legendMargin)
     if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
     if (afterLoadData != null) __obj.updateDynamic("afterLoadData")(afterLoadData)
     if (afterLoadNextDomain != null) __obj.updateDynamic("afterLoadNextDomain")(afterLoadNextDomain)

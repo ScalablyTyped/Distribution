@@ -13,8 +13,8 @@ trait DragRowContext[K, D] extends js.Object {
 object DragRowContext {
   @scala.inline
   def apply[K, D](rows: js.Array[atOracleOraclejetLib.Anon_DataIndex[D, K]]): DragRowContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(rows = rows)
+  
     __obj.asInstanceOf[DragRowContext[K, D]]
   }
 }

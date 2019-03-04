@@ -22,12 +22,8 @@ object ModuleDoneDetails {
     runtime: scala.Double,
     total: scala.Double
   ): ModuleDoneDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("passed")(passed)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(failed = failed, name = name, passed = passed, runtime = runtime, total = total)
+  
     __obj.asInstanceOf[ModuleDoneDetails]
   }
 }

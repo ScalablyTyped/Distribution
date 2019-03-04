@@ -15,11 +15,8 @@ trait FunctionMapping extends js.Object {
 object FunctionMapping {
   @scala.inline
   def apply(decl: Range, line: scala.Double, loc: Range, name: java.lang.String): FunctionMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decl")(decl)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(decl = decl, line = line, loc = loc, name = name)
+  
     __obj.asInstanceOf[FunctionMapping]
   }
 }

@@ -37,21 +37,8 @@ object Dim3DDiagram {
     setDefaultIllumination: js.Function0[scala.Unit],
     setDefaultRotation: js.Function0[scala.Unit]
   ): Dim3DDiagram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dim3D")(Dim3D)
-    __obj.updateDynamic("Floor")(Floor)
-    __obj.updateDynamic("Perspective")(Perspective)
-    __obj.updateDynamic("RotationHorizontal")(RotationHorizontal)
-    __obj.updateDynamic("RotationVertical")(RotationVertical)
-    __obj.updateDynamic("Wall")(Wall)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFloor")(getFloor)
-    __obj.updateDynamic("getWall")(getWall)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("set3DSettingsToDefault")(set3DSettingsToDefault)
-    __obj.updateDynamic("setDefaultIllumination")(setDefaultIllumination)
-    __obj.updateDynamic("setDefaultRotation")(setDefaultRotation)
+    val __obj = js.Dynamic.literal(Dim3D = Dim3D, Floor = Floor, Perspective = Perspective, RotationHorizontal = RotationHorizontal, RotationVertical = RotationVertical, Wall = Wall, acquire = acquire, getFloor = getFloor, getWall = getWall, queryInterface = queryInterface, release = release, set3DSettingsToDefault = set3DSettingsToDefault, setDefaultIllumination = setDefaultIllumination, setDefaultRotation = setDefaultRotation)
+  
     __obj.asInstanceOf[Dim3DDiagram]
   }
 }

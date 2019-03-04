@@ -22,12 +22,8 @@ object MessageSpan {
     startCol: scala.Double,
     startLine: scala.Double
   ): MessageSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endCol")(endCol)
-    __obj.updateDynamic("endLine")(endLine)
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("startCol")(startCol)
-    __obj.updateDynamic("startLine")(startLine)
+    val __obj = js.Dynamic.literal(endCol = endCol, endLine = endLine, filePath = filePath, startCol = startCol, startLine = startLine)
+  
     __obj.asInstanceOf[MessageSpan]
   }
 }

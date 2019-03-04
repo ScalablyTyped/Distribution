@@ -20,11 +20,8 @@ object Anon_AssetsHtml {
     outputName: java.lang.String,
     plugin: htmlDashWebpackDashPluginLib.htmlDashWebpackDashPluginMod.HtmlWebpackPlugin
   ): Anon_AssetsHtml = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assets")(assets)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("outputName")(outputName)
-    __obj.updateDynamic("plugin")(plugin)
+    val __obj = js.Dynamic.literal(assets = assets, html = html, outputName = outputName, plugin = plugin)
+  
     __obj.asInstanceOf[Anon_AssetsHtml]
   }
 }

@@ -60,10 +60,7 @@ object GrantArgs {
     retireOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     retiringPrincipal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): GrantArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("granteePrincipal")(granteePrincipal.asInstanceOf[js.Any])
-    __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
-    __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(granteePrincipal = granteePrincipal.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
     if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
     if (grantCreationTokens != null) __obj.updateDynamic("grantCreationTokens")(grantCreationTokens.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

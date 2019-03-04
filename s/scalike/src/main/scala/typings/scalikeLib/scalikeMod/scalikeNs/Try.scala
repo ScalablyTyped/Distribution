@@ -52,25 +52,8 @@ object Try {
       Try[js.Any]
     ]
   ): Try[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply1")(apply1)
-    __obj.updateDynamic("apply2")(apply2)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("flatMap")(flatMap)
-    __obj.updateDynamic("fold")(fold)
-    __obj.updateDynamic("foreach")(foreach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getError")(getError)
-    __obj.updateDynamic("getOrElse")(getOrElse)
-    __obj.updateDynamic("isFailure")(isFailure)
-    __obj.updateDynamic("isSuccess")(isSuccess)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("orElse")(orElse)
-    __obj.updateDynamic("recover")(recover)
-    __obj.updateDynamic("toOptional")(toOptional)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(apply1 = apply1, apply2 = apply2, chain = chain, failed = failed, filter = filter, flatMap = flatMap, fold = fold, foreach = foreach, get = get, getError = getError, getOrElse = getOrElse, isFailure = isFailure, isSuccess = isSuccess, map = map, orElse = orElse, recover = recover, toOptional = toOptional, transform = transform)
+  
     __obj.asInstanceOf[Try[A]]
   }
 }

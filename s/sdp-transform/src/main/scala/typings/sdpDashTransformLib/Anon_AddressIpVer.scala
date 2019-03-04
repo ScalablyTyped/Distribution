@@ -20,8 +20,7 @@ object Anon_AddressIpVer {
     ipVer: scala.Int | scala.Double = null,
     netType: java.lang.String = null
   ): Anon_AddressIpVer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
     if (address != null) __obj.updateDynamic("address")(address)
     if (ipVer != null) __obj.updateDynamic("ipVer")(ipVer.asInstanceOf[js.Any])
     if (netType != null) __obj.updateDynamic("netType")(netType)

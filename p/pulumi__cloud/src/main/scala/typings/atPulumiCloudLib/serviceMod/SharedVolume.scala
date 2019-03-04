@@ -12,9 +12,8 @@ trait SharedVolume extends Volume {
 object SharedVolume {
   @scala.inline
   def apply(kind: VolumeKind, name: java.lang.String): SharedVolume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+  
     __obj.asInstanceOf[SharedVolume]
   }
 }

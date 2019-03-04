@@ -24,11 +24,8 @@ object ASPxClientStandardDeviationErrorBars {
     name: java.lang.String,
     series: ASPxClientSeries
   ): ASPxClientStandardDeviationErrorBars = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("multiplier")(multiplier)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(chart = chart, multiplier = multiplier, name = name, series = series)
+  
     __obj.asInstanceOf[ASPxClientStandardDeviationErrorBars]
   }
 }

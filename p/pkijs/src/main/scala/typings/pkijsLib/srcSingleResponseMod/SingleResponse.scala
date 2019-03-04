@@ -28,14 +28,7 @@ object SingleResponse {
     toSchema: js.Function0[js.Any],
     nextUpdate: stdLib.Date = null
   ): SingleResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certID")(certID)
-    __obj.updateDynamic("certStatus")(certStatus)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("singleExtensions")(singleExtensions)
-    __obj.updateDynamic("thisUpdate")(thisUpdate)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(certID = certID, certStatus = certStatus, fromSchema = fromSchema, singleExtensions = singleExtensions, thisUpdate = thisUpdate, toJSON = toJSON, toSchema = toSchema)
     if (nextUpdate != null) __obj.updateDynamic("nextUpdate")(nextUpdate)
     __obj.asInstanceOf[SingleResponse]
   }

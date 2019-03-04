@@ -30,16 +30,8 @@ object MomentZone {
     untils: js.Array[scala.Double],
     utcOffset: js.Function1[scala.Double, scala.Double]
   ): MomentZone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbr")(abbr)
-    __obj.updateDynamic("abbrs")(abbrs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("offsets")(offsets)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("population")(population)
-    __obj.updateDynamic("untils")(untils)
-    __obj.updateDynamic("utcOffset")(utcOffset)
+    val __obj = js.Dynamic.literal(abbr = abbr, abbrs = abbrs, name = name, offset = offset, offsets = offsets, parse = parse, population = population, untils = untils, utcOffset = utcOffset)
+  
     __obj.asInstanceOf[MomentZone]
   }
 }

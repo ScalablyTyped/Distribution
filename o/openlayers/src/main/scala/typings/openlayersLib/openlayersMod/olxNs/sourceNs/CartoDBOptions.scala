@@ -34,9 +34,7 @@ object CartoDBOptions {
     minZoom: scala.Int | scala.Double = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): CartoDBOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(account = account, projection = projection.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config)

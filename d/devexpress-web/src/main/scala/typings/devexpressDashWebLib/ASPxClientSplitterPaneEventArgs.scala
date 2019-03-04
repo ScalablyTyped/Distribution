@@ -19,8 +19,8 @@ trait ASPxClientSplitterPaneEventArgs extends ASPxClientEventArgs {
 object ASPxClientSplitterPaneEventArgs {
   @scala.inline
   def apply(pane: ASPxClientSplitterPane): ASPxClientSplitterPaneEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pane")(pane)
+    val __obj = js.Dynamic.literal(pane = pane)
+  
     __obj.asInstanceOf[ASPxClientSplitterPaneEventArgs]
   }
 }

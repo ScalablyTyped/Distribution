@@ -18,10 +18,8 @@ object StatusBarItem {
     defaultValue: js.Function1[stdLib.HTMLElement, scala.Unit],
     onUpdate: js.Function1[stdLib.HTMLElement, scala.Unit]
   ): StatusBarItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("onUpdate")(onUpdate)
+    val __obj = js.Dynamic.literal(className = className, defaultValue = defaultValue, onUpdate = onUpdate)
+  
     __obj.asInstanceOf[StatusBarItem]
   }
 }

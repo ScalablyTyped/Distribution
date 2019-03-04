@@ -18,10 +18,8 @@ object IconTree {
     child: js.Array[IconTree],
     tag: java.lang.String
   ): IconTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr)
-    __obj.updateDynamic("child")(child)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(attr = attr, child = child, tag = tag)
+  
     __obj.asInstanceOf[IconTree]
   }
 }

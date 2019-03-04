@@ -22,9 +22,7 @@ object IWaitForConfig {
     scope: js.Any = null,
     timeout: scala.Int | scala.Double = null
   ): IWaitForConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(callback = callback, method = method)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

@@ -42,20 +42,8 @@ object Serverless {
     version: java.lang.String,
     yamlParser: serverlessLib.classesYamlParserMod.namespaced
   ): Serverless = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cli")(cli)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("getProvider")(getProvider)
-    __obj.updateDynamic("getVersion")(getVersion)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("pluginManager")(pluginManager)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("serverlessDirPath")(serverlessDirPath)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("setProvider")(setProvider)
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("yamlParser")(yamlParser)
+    val __obj = js.Dynamic.literal(cli = cli, config = config, getProvider = getProvider, getVersion = getVersion, init = init, pluginManager = pluginManager, run = run, serverlessDirPath = serverlessDirPath, service = service, setProvider = setProvider, utils = utils, version = version, yamlParser = yamlParser)
+  
     __obj.asInstanceOf[Serverless]
   }
 }

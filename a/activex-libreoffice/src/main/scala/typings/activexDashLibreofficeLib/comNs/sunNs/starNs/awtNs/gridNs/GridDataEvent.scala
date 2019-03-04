@@ -42,12 +42,8 @@ object GridDataEvent {
     LastRow: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): GridDataEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FirstColumn")(FirstColumn)
-    __obj.updateDynamic("FirstRow")(FirstRow)
-    __obj.updateDynamic("LastColumn")(LastColumn)
-    __obj.updateDynamic("LastRow")(LastRow)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(FirstColumn = FirstColumn, FirstRow = FirstRow, LastColumn = LastColumn, LastRow = LastRow, Source = Source)
+  
     __obj.asInstanceOf[GridDataEvent]
   }
 }

@@ -49,13 +49,8 @@ object AzureDiskVolumeSource {
     kind: java.lang.String,
     readOnly: scala.Boolean
   ): AzureDiskVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cachingMode")(cachingMode)
-    __obj.updateDynamic("diskName")(diskName)
-    __obj.updateDynamic("diskURI")(diskURI)
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(cachingMode = cachingMode, diskName = diskName, diskURI = diskURI, fsType = fsType, kind = kind, readOnly = readOnly)
+  
     __obj.asInstanceOf[AzureDiskVolumeSource]
   }
 }

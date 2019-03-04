@@ -13,9 +13,8 @@ trait MorphTarget extends js.Object {
 object MorphTarget {
   @scala.inline
   def apply(name: java.lang.String, vertices: js.Array[Vector3]): MorphTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(name = name, vertices = vertices)
+  
     __obj.asInstanceOf[MorphTarget]
   }
 }

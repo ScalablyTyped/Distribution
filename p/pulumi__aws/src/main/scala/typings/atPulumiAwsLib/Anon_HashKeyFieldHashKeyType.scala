@@ -30,11 +30,7 @@ object Anon_HashKeyFieldHashKeyType {
     rangeKeyType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     rangeKeyValue: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_HashKeyFieldHashKeyType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashKeyField")(hashKeyField.asInstanceOf[js.Any])
-    __obj.updateDynamic("hashKeyValue")(hashKeyValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hashKeyField = hashKeyField.asInstanceOf[js.Any], hashKeyValue = hashKeyValue.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
     if (hashKeyType != null) __obj.updateDynamic("hashKeyType")(hashKeyType.asInstanceOf[js.Any])
     if (payloadField != null) __obj.updateDynamic("payloadField")(payloadField.asInstanceOf[js.Any])
     if (rangeKeyField != null) __obj.updateDynamic("rangeKeyField")(rangeKeyField.asInstanceOf[js.Any])

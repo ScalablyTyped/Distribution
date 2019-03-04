@@ -27,16 +27,8 @@ object IScaleAnimation {
     normalizedOrigin: winrtLib.WindowsNs.FoundationNs.Point,
     `type`: PropertyAnimationType
   ): IScaleAnimation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("control1")(control1)
-    __obj.updateDynamic("control2")(control2)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("finalScaleX")(finalScaleX)
-    __obj.updateDynamic("finalScaleY")(finalScaleY)
-    __obj.updateDynamic("initialScaleX")(initialScaleX)
-    __obj.updateDynamic("initialScaleY")(initialScaleY)
-    __obj.updateDynamic("normalizedOrigin")(normalizedOrigin)
+    val __obj = js.Dynamic.literal(control1 = control1, control2 = control2, delay = delay, duration = duration, finalScaleX = finalScaleX, finalScaleY = finalScaleY, initialScaleX = initialScaleX, initialScaleY = initialScaleY, normalizedOrigin = normalizedOrigin)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IScaleAnimation]
   }
 }

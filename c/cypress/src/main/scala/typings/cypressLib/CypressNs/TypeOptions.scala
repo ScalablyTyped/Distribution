@@ -42,12 +42,8 @@ object TypeOptions {
     release: scala.Boolean,
     timeout: scala.Double
   ): TypeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("force")(force)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(delay = delay, force = force, log = log, release = release, timeout = timeout)
+  
     __obj.asInstanceOf[TypeOptions]
   }
 }

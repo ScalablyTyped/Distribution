@@ -28,12 +28,8 @@ object BackgroundAudioPlayerState {
     duration: scala.Double,
     status: scala.Double
   ): BackgroundAudioPlayerState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentPosition")(currentPosition)
-    __obj.updateDynamic("dataUrl")(dataUrl)
-    __obj.updateDynamic("downloadPercent")(downloadPercent)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(currentPosition = currentPosition, dataUrl = dataUrl, downloadPercent = downloadPercent, duration = duration, status = status)
+  
     __obj.asInstanceOf[BackgroundAudioPlayerState]
   }
 }

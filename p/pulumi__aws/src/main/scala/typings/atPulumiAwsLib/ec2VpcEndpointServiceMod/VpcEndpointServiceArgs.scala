@@ -29,9 +29,7 @@ object VpcEndpointServiceArgs {
     networkLoadBalancerArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     allowedPrincipals: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): VpcEndpointServiceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptanceRequired")(acceptanceRequired.asInstanceOf[js.Any])
-    __obj.updateDynamic("networkLoadBalancerArns")(networkLoadBalancerArns.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired.asInstanceOf[js.Any], networkLoadBalancerArns = networkLoadBalancerArns.asInstanceOf[js.Any])
     if (allowedPrincipals != null) __obj.updateDynamic("allowedPrincipals")(allowedPrincipals.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointServiceArgs]
   }

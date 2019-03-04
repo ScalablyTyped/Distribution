@@ -23,13 +23,8 @@ object RadialGradient {
     spread: java.lang.String,
     stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
   ): RadialGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("focal")(focal)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("spread")(spread)
-    __obj.updateDynamic("stops")(stops)
+    val __obj = js.Dynamic.literal(center = center, clone = clone, focal = focal, radius = radius, spread = spread, stops = stops)
+  
     __obj.asInstanceOf[RadialGradient]
   }
 }

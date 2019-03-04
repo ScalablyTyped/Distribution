@@ -12,8 +12,8 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(cookieAuth: hapiDashAuthDashCookieLib.Anon_Clear): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookieAuth")(cookieAuth)
+    val __obj = js.Dynamic.literal(cookieAuth = cookieAuth)
+  
     __obj.asInstanceOf[Request]
   }
 }

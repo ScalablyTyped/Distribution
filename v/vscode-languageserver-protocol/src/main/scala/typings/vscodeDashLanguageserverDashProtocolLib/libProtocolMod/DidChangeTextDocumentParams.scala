@@ -30,9 +30,8 @@ object DidChangeTextDocumentParams {
     ],
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.VersionedTextDocumentIdentifier
   ): DidChangeTextDocumentParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentChanges")(contentChanges)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(contentChanges = contentChanges, textDocument = textDocument)
+  
     __obj.asInstanceOf[DidChangeTextDocumentParams]
   }
 }

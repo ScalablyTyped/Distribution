@@ -25,13 +25,8 @@ object ItemContext {
     selected: scala.Boolean,
     tooltip: java.lang.String
   ): ItemContext[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(color = color, count = count, id = id.asInstanceOf[js.Any], name = name, selected = selected, tooltip = tooltip)
+  
     __obj.asInstanceOf[ItemContext[K]]
   }
 }

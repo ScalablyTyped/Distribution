@@ -36,12 +36,8 @@ object HostedFieldsHostedFieldsFieldData {
     isPotentiallyValid: scala.Boolean,
     isValid: scala.Boolean
   ): HostedFieldsHostedFieldsFieldData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("isPotentiallyValid")(isPotentiallyValid)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(container = container, isEmpty = isEmpty, isFocused = isFocused, isPotentiallyValid = isPotentiallyValid, isValid = isValid)
+  
     __obj.asInstanceOf[HostedFieldsHostedFieldsFieldData]
   }
 }

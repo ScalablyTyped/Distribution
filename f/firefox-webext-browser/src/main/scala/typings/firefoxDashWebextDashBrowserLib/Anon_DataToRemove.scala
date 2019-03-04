@@ -117,21 +117,8 @@ object Anon_DataToRemove {
     ],
     settings: js.Function0[js.Promise[Anon_DataRemovalPermitted]]
   ): Anon_DataToRemove = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAppcache")(removeAppcache)
-    __obj.updateDynamic("removeCache")(removeCache)
-    __obj.updateDynamic("removeCookies")(removeCookies)
-    __obj.updateDynamic("removeDownloads")(removeDownloads)
-    __obj.updateDynamic("removeFileSystems")(removeFileSystems)
-    __obj.updateDynamic("removeFormData")(removeFormData)
-    __obj.updateDynamic("removeHistory")(removeHistory)
-    __obj.updateDynamic("removeIndexedDB")(removeIndexedDB)
-    __obj.updateDynamic("removeLocalStorage")(removeLocalStorage)
-    __obj.updateDynamic("removePasswords")(removePasswords)
-    __obj.updateDynamic("removePluginData")(removePluginData)
-    __obj.updateDynamic("removeWebSQL")(removeWebSQL)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(remove = remove, removeAppcache = removeAppcache, removeCache = removeCache, removeCookies = removeCookies, removeDownloads = removeDownloads, removeFileSystems = removeFileSystems, removeFormData = removeFormData, removeHistory = removeHistory, removeIndexedDB = removeIndexedDB, removeLocalStorage = removeLocalStorage, removePasswords = removePasswords, removePluginData = removePluginData, removeWebSQL = removeWebSQL, settings = settings)
+  
     __obj.asInstanceOf[Anon_DataToRemove]
   }
 }

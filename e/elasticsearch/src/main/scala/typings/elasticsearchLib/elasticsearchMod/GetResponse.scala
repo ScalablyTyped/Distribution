@@ -26,13 +26,7 @@ object GetResponse {
     found: scala.Boolean,
     _routing: java.lang.String = null
   ): GetResponse[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_index")(_index)
-    __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("_version")(_version)
-    __obj.updateDynamic("found")(found)
+    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _source = _source.asInstanceOf[js.Any], _type = _type, _version = _version, found = found)
     if (_routing != null) __obj.updateDynamic("_routing")(_routing)
     __obj.asInstanceOf[GetResponse[T]]
   }

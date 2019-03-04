@@ -126,21 +126,8 @@ object ISubscription {
     trial_end: scala.Int | scala.Double = null,
     trial_start: scala.Int | scala.Double = null
   ): ISubscription = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("application_fee_percent")(application_fee_percent)
-    __obj.updateDynamic("billing")(billing)
-    __obj.updateDynamic("cancel_at_period_end")(cancel_at_period_end)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("current_period_end")(current_period_end)
-    __obj.updateDynamic("current_period_start")(current_period_start)
-    __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("quantity")(quantity)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tax_percent")(tax_percent)
+    val __obj = js.Dynamic.literal(application_fee_percent = application_fee_percent, billing = billing, cancel_at_period_end = cancel_at_period_end, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], id = id, items = items, metadata = metadata, quantity = quantity, start = start, status = status, tax_percent = tax_percent)
+    __obj.updateDynamic("object")(`object`)
     if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (ended_at != null) __obj.updateDynamic("ended_at")(ended_at.asInstanceOf[js.Any])

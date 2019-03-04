@@ -42,21 +42,7 @@ object QueryResult {
     webhookSource: java.lang.String,
     sentimentAnalysisResult: dialogflowLib.Anon_QueryTextSentiment = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("allRequiredParamsSent")(allRequiredParamsSent)
-    __obj.updateDynamic("diagnosticInfo")(diagnosticInfo)
-    __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages)
-    __obj.updateDynamic("fulfillmentText")(fulfillmentText)
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("intentDetectionConfidence")(intentDetectionConfidence)
-    __obj.updateDynamic("languageCode")(languageCode)
-    __obj.updateDynamic("outputContexts")(outputContexts)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("queryText")(queryText)
-    __obj.updateDynamic("speechRecognitionConfidence")(speechRecognitionConfidence)
-    __obj.updateDynamic("webhookPayload")(webhookPayload)
-    __obj.updateDynamic("webhookSource")(webhookSource)
+    val __obj = js.Dynamic.literal(action = action, allRequiredParamsSent = allRequiredParamsSent, diagnosticInfo = diagnosticInfo, fulfillmentMessages = fulfillmentMessages, fulfillmentText = fulfillmentText, intent = intent, intentDetectionConfidence = intentDetectionConfidence, languageCode = languageCode, outputContexts = outputContexts, parameters = parameters, queryText = queryText, speechRecognitionConfidence = speechRecognitionConfidence, webhookPayload = webhookPayload, webhookSource = webhookSource)
     if (sentimentAnalysisResult != null) __obj.updateDynamic("sentimentAnalysisResult")(sentimentAnalysisResult)
     __obj.asInstanceOf[QueryResult]
   }

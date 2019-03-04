@@ -54,28 +54,8 @@ object Anon_ActionSheet {
     View: Anon_ElementExtendFnOptionsProtoObjectView,
     Widget: org.scalablytyped.runtime.Instantiable0[kendoDashUiLib.kendoNs.mobileNs.uiNs.Widget]
   ): Anon_ActionSheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActionSheet")(ActionSheet)
-    __obj.updateDynamic("BackButton")(BackButton)
-    __obj.updateDynamic("Button")(Button)
-    __obj.updateDynamic("ButtonGroup")(ButtonGroup)
-    __obj.updateDynamic("Collapsible")(Collapsible)
-    __obj.updateDynamic("DetailButton")(DetailButton)
-    __obj.updateDynamic("Drawer")(Drawer)
-    __obj.updateDynamic("Layout")(Layout)
-    __obj.updateDynamic("ListView")(ListView)
-    __obj.updateDynamic("Loader")(Loader)
-    __obj.updateDynamic("ModalView")(ModalView)
-    __obj.updateDynamic("NavBar")(NavBar)
-    __obj.updateDynamic("Pane")(Pane)
-    __obj.updateDynamic("PopOver")(PopOver)
-    __obj.updateDynamic("ScrollView")(ScrollView)
-    __obj.updateDynamic("Scroller")(Scroller)
-    __obj.updateDynamic("SplitView")(SplitView)
-    __obj.updateDynamic("Switch")(Switch)
-    __obj.updateDynamic("TabStrip")(TabStrip)
-    __obj.updateDynamic("View")(View)
-    __obj.updateDynamic("Widget")(Widget)
+    val __obj = js.Dynamic.literal(ActionSheet = ActionSheet, BackButton = BackButton, Button = Button, ButtonGroup = ButtonGroup, Collapsible = Collapsible, DetailButton = DetailButton, Drawer = Drawer, Layout = Layout, ListView = ListView, Loader = Loader, ModalView = ModalView, NavBar = NavBar, Pane = Pane, PopOver = PopOver, ScrollView = ScrollView, Scroller = Scroller, SplitView = SplitView, Switch = Switch, TabStrip = TabStrip, View = View, Widget = Widget)
+  
     __obj.asInstanceOf[Anon_ActionSheet]
   }
 }

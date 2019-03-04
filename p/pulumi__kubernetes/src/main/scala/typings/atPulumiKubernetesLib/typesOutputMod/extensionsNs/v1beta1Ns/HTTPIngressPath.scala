@@ -27,9 +27,8 @@ trait HTTPIngressPath extends js.Object {
 object HTTPIngressPath {
   @scala.inline
   def apply(backend: IngressBackend, path: java.lang.String): HTTPIngressPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backend")(backend)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(backend = backend, path = path)
+  
     __obj.asInstanceOf[HTTPIngressPath]
   }
 }

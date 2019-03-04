@@ -41,8 +41,7 @@ object AuthResult {
     key: java.lang.String = null,
     options: js.Object = null
   ): AuthResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (key != null) __obj.updateDynamic("key")(key)

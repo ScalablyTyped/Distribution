@@ -22,12 +22,8 @@ object TfvcItemDescriptor {
     versionOption: TfvcVersionOption,
     versionType: TfvcVersionType
   ): TfvcItemDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("recursionLevel")(recursionLevel)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionOption")(versionOption)
-    __obj.updateDynamic("versionType")(versionType)
+    val __obj = js.Dynamic.literal(path = path, recursionLevel = recursionLevel, version = version, versionOption = versionOption, versionType = versionType)
+  
     __obj.asInstanceOf[TfvcItemDescriptor]
   }
 }

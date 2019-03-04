@@ -13,8 +13,7 @@ trait SearchOptions extends js.Object {
 object SearchOptions {
   @scala.inline
   def apply(query: java.lang.String, language: java.lang.String = null): SearchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (language != null) __obj.updateDynamic("language")(language)
     __obj.asInstanceOf[SearchOptions]
   }

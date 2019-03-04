@@ -20,11 +20,8 @@ object DependenciesParams {
     missingProperty: java.lang.String,
     property: java.lang.String
   ): DependenciesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deps")(deps)
-    __obj.updateDynamic("depsCount")(depsCount)
-    __obj.updateDynamic("missingProperty")(missingProperty)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(deps = deps, depsCount = depsCount, missingProperty = missingProperty, property = property)
+  
     __obj.asInstanceOf[DependenciesParams]
   }
 }

@@ -24,11 +24,7 @@ object HttpResponse {
     error: js.Any = null,
     saveContext: js.Any = null
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("getHeaders")(getHeaders)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(config = config, data = data, getHeaders = getHeaders, status = status)
     if (error != null) __obj.updateDynamic("error")(error)
     if (saveContext != null) __obj.updateDynamic("saveContext")(saveContext)
     __obj.asInstanceOf[HttpResponse]

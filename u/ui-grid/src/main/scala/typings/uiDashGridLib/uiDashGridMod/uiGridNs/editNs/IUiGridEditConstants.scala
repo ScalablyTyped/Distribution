@@ -18,10 +18,8 @@ object IUiGridEditConstants {
     EDITABLE_CELL_TEMPLATE: java.lang.String,
     events: uiDashGridLib.Anon_BEGINCELLEDIT
   ): IUiGridEditConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EDITABLE_CELL_DIRECTIVE")(EDITABLE_CELL_DIRECTIVE)
-    __obj.updateDynamic("EDITABLE_CELL_TEMPLATE")(EDITABLE_CELL_TEMPLATE)
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(EDITABLE_CELL_DIRECTIVE = EDITABLE_CELL_DIRECTIVE, EDITABLE_CELL_TEMPLATE = EDITABLE_CELL_TEMPLATE, events = events)
+  
     __obj.asInstanceOf[IUiGridEditConstants]
   }
 }

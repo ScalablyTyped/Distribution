@@ -18,10 +18,8 @@ object IWebSocketInformation {
     localAddress: winrtLib.WindowsNs.NetworkingNs.HostName,
     protocol: java.lang.String
   ): IWebSocketInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bandwidthStatistics")(bandwidthStatistics)
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(bandwidthStatistics = bandwidthStatistics, localAddress = localAddress, protocol = protocol)
+  
     __obj.asInstanceOf[IWebSocketInformation]
   }
 }

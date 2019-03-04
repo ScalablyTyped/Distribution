@@ -24,13 +24,8 @@ object Anon_Depth {
     width: scala.Double,
     widthSegments: scala.Double
   ): Anon_Depth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("depthSegments")(depthSegments)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("widthSegments")(widthSegments)
+    val __obj = js.Dynamic.literal(depth = depth, depthSegments = depthSegments, height = height, heightSegments = heightSegments, width = width, widthSegments = widthSegments)
+  
     __obj.asInstanceOf[Anon_Depth]
   }
 }

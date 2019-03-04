@@ -45,25 +45,8 @@ object Unit {
     toString: js.Function0[java.lang.String],
     valueOf: js.Function0[java.lang.String]
   ): Unit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abs")(abs)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("divide")(divide)
-    __obj.updateDynamic("equalBase")(equalBase)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("formatUnits")(formatUnits)
-    __obj.updateDynamic("hasBase")(hasBase)
-    __obj.updateDynamic("multiply")(multiply)
-    __obj.updateDynamic("pow")(pow)
-    __obj.updateDynamic("splitUnit")(splitUnit)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toNumber")(toNumber)
-    __obj.updateDynamic("toNumeric")(toNumeric)
-    __obj.updateDynamic("toSI")(toSI)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(abs = abs, clone = clone, divide = divide, equalBase = equalBase, equals = equals, format = format, formatUnits = formatUnits, hasBase = hasBase, multiply = multiply, pow = pow, splitUnit = splitUnit, to = to, toJSON = toJSON, toNumber = toNumber, toNumeric = toNumeric, toSI = toSI, toString = toString, valueOf = valueOf)
+  
     __obj.asInstanceOf[Unit]
   }
 }

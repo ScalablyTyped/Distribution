@@ -31,13 +31,8 @@ object HttpProgress {
     totalBytesToReceive: scala.Double,
     totalBytesToSend: scala.Double
   ): HttpProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesReceived")(bytesReceived)
-    __obj.updateDynamic("bytesSent")(bytesSent)
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("totalBytesToReceive")(totalBytesToReceive)
-    __obj.updateDynamic("totalBytesToSend")(totalBytesToSend)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, bytesSent = bytesSent, retries = retries, stage = stage, totalBytesToReceive = totalBytesToReceive, totalBytesToSend = totalBytesToSend)
+  
     __obj.asInstanceOf[HttpProgress]
   }
 }

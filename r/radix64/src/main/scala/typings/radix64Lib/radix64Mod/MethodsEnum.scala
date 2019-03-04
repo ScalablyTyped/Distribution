@@ -22,12 +22,8 @@ object MethodsEnum {
     BASE64URL: radix64Lib.MethodsString,
     DEFAULT: radix64Lib.MethodsString
   ): MethodsEnum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BASE64")(BASE64)
-    __obj.updateDynamic("BASE64ASCII")(BASE64ASCII)
-    __obj.updateDynamic("BASE64NATURAL")(BASE64NATURAL)
-    __obj.updateDynamic("BASE64URL")(BASE64URL)
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
+    val __obj = js.Dynamic.literal(BASE64 = BASE64, BASE64ASCII = BASE64ASCII, BASE64NATURAL = BASE64NATURAL, BASE64URL = BASE64URL, DEFAULT = DEFAULT)
+  
     __obj.asInstanceOf[MethodsEnum]
   }
 }

@@ -26,11 +26,7 @@ object JobInformation {
     id: java.lang.String = null,
     tz: java.lang.String = null
   ): JobInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cron")(cron)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(cron = cron, key = key, name = name, next = next)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (tz != null) __obj.updateDynamic("tz")(tz)

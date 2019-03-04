@@ -20,10 +20,8 @@ object Anon_Pixel {
     target: js.Any,
     `type`: java.lang.String
   ): Anon_Pixel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pixel")(pixel)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(pixel = pixel, point = point, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Pixel]
   }
 }

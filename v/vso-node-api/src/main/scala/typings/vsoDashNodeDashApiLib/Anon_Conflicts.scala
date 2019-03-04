@@ -24,13 +24,8 @@ object Anon_Conflicts {
     rejectedByPolicy: scala.Double,
     succeeded: scala.Double
   ): Anon_Conflicts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conflicts")(conflicts)
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("notSet")(notSet)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("rejectedByPolicy")(rejectedByPolicy)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(conflicts = conflicts, failure = failure, notSet = notSet, queued = queued, rejectedByPolicy = rejectedByPolicy, succeeded = succeeded)
+  
     __obj.asInstanceOf[Anon_Conflicts]
   }
 }

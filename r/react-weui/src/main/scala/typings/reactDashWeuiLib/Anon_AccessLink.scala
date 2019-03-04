@@ -13,9 +13,8 @@ trait Anon_AccessLink extends js.Object {
 object Anon_AccessLink {
   @scala.inline
   def apply(access: scala.Boolean, link: scala.Boolean): Anon_AccessLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access")(access)
-    __obj.updateDynamic("link")(link)
+    val __obj = js.Dynamic.literal(access = access, link = link)
+  
     __obj.asInstanceOf[Anon_AccessLink]
   }
 }

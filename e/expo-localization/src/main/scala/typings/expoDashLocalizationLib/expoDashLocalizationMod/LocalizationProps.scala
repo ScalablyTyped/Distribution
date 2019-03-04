@@ -42,11 +42,7 @@ object LocalizationProps {
     country: java.lang.String = null,
     isoCurrencyCodes: js.Array[java.lang.String] = null
   ): LocalizationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRTL")(isRTL)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("locales")(locales)
-    __obj.updateDynamic("timezone")(timezone)
+    val __obj = js.Dynamic.literal(isRTL = isRTL, locale = locale, locales = locales, timezone = timezone)
     if (country != null) __obj.updateDynamic("country")(country)
     if (isoCurrencyCodes != null) __obj.updateDynamic("isoCurrencyCodes")(isoCurrencyCodes)
     __obj.asInstanceOf[LocalizationProps]

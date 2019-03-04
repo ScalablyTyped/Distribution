@@ -11,3 +11,12 @@ trait FullTextCatalog extends js.Object {
   var sources: js.Array[FullTextSource]
 }
 
+object FullTextCatalog {
+  @scala.inline
+  def apply(lang: java.lang.String, name: java.lang.String, sources: js.Array[FullTextSource]): FullTextCatalog = {
+    val __obj = js.Dynamic.literal(lang = lang, name = name, sources = sources)
+  
+    __obj.asInstanceOf[FullTextCatalog]
+  }
+}
+

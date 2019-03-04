@@ -186,36 +186,8 @@ object XStringResourceManager {
       scala.Unit
     ]
   ): XStringResourceManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentLocale")(CurrentLocale)
-    __obj.updateDynamic("DefaultLocale")(DefaultLocale)
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("ResourceIDs")(ResourceIDs)
-    __obj.updateDynamic("UniqueNumericId")(UniqueNumericId)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("getCurrentLocale")(getCurrentLocale)
-    __obj.updateDynamic("getDefaultLocale")(getDefaultLocale)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("getResourceIDs")(getResourceIDs)
-    __obj.updateDynamic("getResourceIDsForLocale")(getResourceIDsForLocale)
-    __obj.updateDynamic("getUniqueNumericId")(getUniqueNumericId)
-    __obj.updateDynamic("hasEntryForId")(hasEntryForId)
-    __obj.updateDynamic("hasEntryForIdAndLocale")(hasEntryForIdAndLocale)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("newLocale")(newLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeId")(removeId)
-    __obj.updateDynamic("removeIdForLocale")(removeIdForLocale)
-    __obj.updateDynamic("removeLocale")(removeLocale)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("resolveString")(resolveString)
-    __obj.updateDynamic("resolveStringForLocale")(resolveStringForLocale)
-    __obj.updateDynamic("setCurrentLocale")(setCurrentLocale)
-    __obj.updateDynamic("setDefaultLocale")(setDefaultLocale)
-    __obj.updateDynamic("setString")(setString)
-    __obj.updateDynamic("setStringForLocale")(setStringForLocale)
+    val __obj = js.Dynamic.literal(CurrentLocale = CurrentLocale, DefaultLocale = DefaultLocale, Locales = Locales, ResourceIDs = ResourceIDs, UniqueNumericId = UniqueNumericId, acquire = acquire, addModifyListener = addModifyListener, getCurrentLocale = getCurrentLocale, getDefaultLocale = getDefaultLocale, getLocales = getLocales, getResourceIDs = getResourceIDs, getResourceIDsForLocale = getResourceIDsForLocale, getUniqueNumericId = getUniqueNumericId, hasEntryForId = hasEntryForId, hasEntryForIdAndLocale = hasEntryForIdAndLocale, isReadOnly = isReadOnly, newLocale = newLocale, queryInterface = queryInterface, release = release, removeId = removeId, removeIdForLocale = removeIdForLocale, removeLocale = removeLocale, removeModifyListener = removeModifyListener, resolveString = resolveString, resolveStringForLocale = resolveStringForLocale, setCurrentLocale = setCurrentLocale, setDefaultLocale = setDefaultLocale, setString = setString, setStringForLocale = setStringForLocale)
+  
     __obj.asInstanceOf[XStringResourceManager]
   }
 }

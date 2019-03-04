@@ -21,8 +21,8 @@ object Anon_App {
       atFrctlFractalLib.atFrctlFractalMod.Adapter[TEngine]
     ]
   ): Anon_App[T, TEngine] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(register = register)
+  
     __obj.asInstanceOf[Anon_App[T, TEngine]]
   }
 }

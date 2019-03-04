@@ -12,8 +12,8 @@ trait Anon_Badge extends js.Object {
 object Anon_Badge {
   @scala.inline
   def apply(badge: CordovaPluginBadge): Anon_Badge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badge")(badge)
+    val __obj = js.Dynamic.literal(badge = badge)
+  
     __obj.asInstanceOf[Anon_Badge]
   }
 }

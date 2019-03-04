@@ -30,16 +30,8 @@ object XDomainRequest {
     send: js.Function1[java.lang.String, scala.Unit],
     timeout: scala.Double
   ): XDomainRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("onerror")(onerror)
-    __obj.updateDynamic("onload")(onload)
-    __obj.updateDynamic("onprogress")(onprogress)
-    __obj.updateDynamic("ontimeout")(ontimeout)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("responseText")(responseText)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(abort = abort, onerror = onerror, onload = onload, onprogress = onprogress, ontimeout = ontimeout, open = open, responseText = responseText, send = send, timeout = timeout)
+  
     __obj.asInstanceOf[XDomainRequest]
   }
 }

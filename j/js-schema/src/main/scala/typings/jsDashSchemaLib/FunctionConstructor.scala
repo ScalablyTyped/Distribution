@@ -12,8 +12,8 @@ trait FunctionConstructor extends js.Object {
 object FunctionConstructor {
   @scala.inline
   def apply(reference: js.Function1[js.Function, FunctionConstructor]): FunctionConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(reference = reference)
+  
     __obj.asInstanceOf[FunctionConstructor]
   }
 }

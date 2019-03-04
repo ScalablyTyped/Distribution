@@ -20,10 +20,8 @@ object ConstructorAbi {
     stateMutability: ConstructorStateMutability,
     `type`: AbiType
   ): ConstructorAbi = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("payable")(payable)
-    __obj.updateDynamic("stateMutability")(stateMutability)
+    val __obj = js.Dynamic.literal(inputs = inputs, payable = payable, stateMutability = stateMutability)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ConstructorAbi]
   }
 }

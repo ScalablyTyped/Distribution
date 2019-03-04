@@ -22,12 +22,8 @@ object Anon_Format {
     styles: java.lang.String,
     version: java.lang.String
   ): Anon_Format = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("styles")(styles)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(format = format, request = request, service = service, styles = styles, version = version)
+  
     __obj.asInstanceOf[Anon_Format]
   }
 }

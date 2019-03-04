@@ -18,10 +18,8 @@ object Anon_CancelCloseReason {
     CloseReason: scala.Double,
     PvWindow: activexDashWordLib.WordNs.ProtectedViewWindow
   ): Anon_CancelCloseReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("CloseReason")(CloseReason)
-    __obj.updateDynamic("PvWindow")(PvWindow)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, CloseReason = CloseReason, PvWindow = PvWindow)
+  
     __obj.asInstanceOf[Anon_CancelCloseReason]
   }
 }

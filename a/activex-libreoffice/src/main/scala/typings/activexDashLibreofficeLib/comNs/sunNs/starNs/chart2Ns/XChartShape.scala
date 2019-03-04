@@ -47,20 +47,8 @@ object XChartShape {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
   ): XChartShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("ShapeType")(ShapeType)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getShapeType")(getShapeType)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setSize")(setSize)
+    val __obj = js.Dynamic.literal(Position = Position, ShapeType = ShapeType, Size = Size, acquire = acquire, getPosition = getPosition, getPropertyValue = getPropertyValue, getShapeType = getShapeType, getSize = getSize, queryInterface = queryInterface, release = release, setPosition = setPosition, setPropertyValue = setPropertyValue, setSize = setSize)
+  
     __obj.asInstanceOf[XChartShape]
   }
 }

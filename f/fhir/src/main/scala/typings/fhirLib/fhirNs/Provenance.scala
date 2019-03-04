@@ -89,10 +89,7 @@ object Provenance {
     signature: js.Array[Signature] = null,
     text: Narrative = null
   ): Provenance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("recorded")(recorded)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(agent = agent, recorded = recorded, target = target)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

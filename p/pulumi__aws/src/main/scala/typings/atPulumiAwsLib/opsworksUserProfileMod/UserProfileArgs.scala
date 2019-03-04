@@ -32,9 +32,7 @@ object UserProfileArgs {
     allowSelfManagement: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     sshPublicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): UserProfileArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sshUsername")(sshUsername.asInstanceOf[js.Any])
-    __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sshUsername = sshUsername.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     if (allowSelfManagement != null) __obj.updateDynamic("allowSelfManagement")(allowSelfManagement.asInstanceOf[js.Any])
     if (sshPublicKey != null) __obj.updateDynamic("sshPublicKey")(sshPublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserProfileArgs]

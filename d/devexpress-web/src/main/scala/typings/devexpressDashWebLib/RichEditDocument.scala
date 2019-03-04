@@ -75,17 +75,8 @@ object RichEditDocument {
     subDocuments: js.Array[SubDocument],
     tableStylesInfo: js.Array[TableStyle]
   ): RichEditDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abstractNumberingListsInfo")(abstractNumberingListsInfo)
-    __obj.updateDynamic("activeSubDocument")(activeSubDocument)
-    __obj.updateDynamic("characterStylesInfo")(characterStylesInfo)
-    __obj.updateDynamic("getSubDocumentById")(getSubDocumentById)
-    __obj.updateDynamic("mainSubDocument")(mainSubDocument)
-    __obj.updateDynamic("paragraphStylesInfo")(paragraphStylesInfo)
-    __obj.updateDynamic("sectionsInfo")(sectionsInfo)
-    __obj.updateDynamic("spellingInfo")(spellingInfo)
-    __obj.updateDynamic("subDocuments")(subDocuments)
-    __obj.updateDynamic("tableStylesInfo")(tableStylesInfo)
+    val __obj = js.Dynamic.literal(abstractNumberingListsInfo = abstractNumberingListsInfo, activeSubDocument = activeSubDocument, characterStylesInfo = characterStylesInfo, getSubDocumentById = getSubDocumentById, mainSubDocument = mainSubDocument, paragraphStylesInfo = paragraphStylesInfo, sectionsInfo = sectionsInfo, spellingInfo = spellingInfo, subDocuments = subDocuments, tableStylesInfo = tableStylesInfo)
+  
     __obj.asInstanceOf[RichEditDocument]
   }
 }

@@ -31,9 +31,8 @@ object IHttpFilter {
       ]
     ]
   ): IHttpFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("sendRequestAsync")(sendRequestAsync)
+    val __obj = js.Dynamic.literal(close = close, sendRequestAsync = sendRequestAsync)
+  
     __obj.asInstanceOf[IHttpFilter]
   }
 }

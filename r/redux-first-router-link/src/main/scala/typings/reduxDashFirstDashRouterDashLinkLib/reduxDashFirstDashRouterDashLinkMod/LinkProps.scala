@@ -28,8 +28,7 @@ object LinkProps {
     tagName: java.lang.String = null,
     target: java.lang.String = null
   ): LinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (!js.isUndefined(down)) __obj.updateDynamic("down")(down)
     if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)

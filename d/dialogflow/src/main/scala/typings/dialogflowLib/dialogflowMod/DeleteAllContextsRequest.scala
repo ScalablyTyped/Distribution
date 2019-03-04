@@ -12,8 +12,8 @@ trait DeleteAllContextsRequest extends js.Object {
 object DeleteAllContextsRequest {
   @scala.inline
   def apply(parent: java.lang.String): DeleteAllContextsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
+  
     __obj.asInstanceOf[DeleteAllContextsRequest]
   }
 }

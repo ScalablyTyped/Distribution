@@ -47,24 +47,8 @@ object Bounce {
     Type: java.lang.String,
     TypeCode: scala.Double
   ): Bounce = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BouncedAt")(BouncedAt)
-    __obj.updateDynamic("CanActivate")(CanActivate)
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Details")(Details)
-    __obj.updateDynamic("DumpAvailable")(DumpAvailable)
-    __obj.updateDynamic("Email")(Email)
-    __obj.updateDynamic("From")(From)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Inactive")(Inactive)
-    __obj.updateDynamic("MessageID")(MessageID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ServerID")(ServerID)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("TypeCode")(TypeCode)
+    val __obj = js.Dynamic.literal(BouncedAt = BouncedAt, CanActivate = CanActivate, Content = Content, Description = Description, Details = Details, DumpAvailable = DumpAvailable, Email = Email, From = From, ID = ID, Inactive = Inactive, MessageID = MessageID, Name = Name, ServerID = ServerID, Subject = Subject, Tag = Tag, Type = Type, TypeCode = TypeCode)
+  
     __obj.asInstanceOf[Bounce]
   }
 }

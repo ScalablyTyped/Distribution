@@ -30,12 +30,8 @@ object XNSSInitializer {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNSSInitializer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCipherContext")(getCipherContext)
-    __obj.updateDynamic("getDigestContext")(getDigestContext)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getCipherContext = getCipherContext, getDigestContext = getDigestContext, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNSSInitializer]
   }
 }

@@ -29,9 +29,8 @@ object SinonStub {
     rejects: js.Function1[js.Any, sinonLib.sinonMod.SinonNs.SinonStub],
     resolves: js.Function1[js.Any, sinonLib.sinonMod.SinonNs.SinonStub]
   ): SinonStub = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rejects")(rejects)
-    __obj.updateDynamic("resolves")(resolves)
+    val __obj = js.Dynamic.literal(rejects = rejects, resolves = resolves)
+  
     __obj.asInstanceOf[SinonStub]
   }
 }

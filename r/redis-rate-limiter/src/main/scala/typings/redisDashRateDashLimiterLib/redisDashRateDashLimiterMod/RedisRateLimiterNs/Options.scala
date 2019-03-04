@@ -26,9 +26,7 @@ object Options {
     rate: java.lang.String = null,
     window: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("redis")(redis)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], redis = redis)
     if (!js.isUndefined(deleteImmediatelyIfRaceCondition)) __obj.updateDynamic("deleteImmediatelyIfRaceCondition")(deleteImmediatelyIfRaceCondition)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (onPossibleRaceCondition != null) __obj.updateDynamic("onPossibleRaceCondition")(onPossibleRaceCondition)

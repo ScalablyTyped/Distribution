@@ -32,10 +32,8 @@ object NdefRecord {
     tnf: scala.Double,
     `type`: js.Array[scala.Double]
   ): NdefRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("tnf")(tnf)
+    val __obj = js.Dynamic.literal(id = id, payload = payload, tnf = tnf)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NdefRecord]
   }
 }

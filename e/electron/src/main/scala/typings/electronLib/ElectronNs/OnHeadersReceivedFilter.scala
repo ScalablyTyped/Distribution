@@ -16,8 +16,8 @@ trait OnHeadersReceivedFilter extends js.Object {
 object OnHeadersReceivedFilter {
   @scala.inline
   def apply(urls: js.Array[java.lang.String]): OnHeadersReceivedFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(urls = urls)
+  
     __obj.asInstanceOf[OnHeadersReceivedFilter]
   }
 }

@@ -37,10 +37,8 @@ object IPreviewerActiveXCtrl {
       scala.Double
     ]
   ): IPreviewerActiveXCtrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClearPreview")(ClearPreview)
-    __obj.updateDynamic("ShowFilePreview")(ShowFilePreview)
-    __obj.updateDynamic("ShowHitHighlightedFilePreview")(ShowHitHighlightedFilePreview)
+    val __obj = js.Dynamic.literal(ClearPreview = ClearPreview, ShowFilePreview = ShowFilePreview, ShowHitHighlightedFilePreview = ShowHitHighlightedFilePreview)
+  
     __obj.asInstanceOf[IPreviewerActiveXCtrl]
   }
 }

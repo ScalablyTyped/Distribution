@@ -38,13 +38,8 @@ object XCompositeLayer {
     readSubLayerData: js.Function2[XLayerHandler, java.lang.String, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XCompositeLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("listSubLayerIds")(listSubLayerIds)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readData")(readData)
-    __obj.updateDynamic("readSubLayerData")(readSubLayerData)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, listSubLayerIds = listSubLayerIds, queryInterface = queryInterface, readData = readData, readSubLayerData = readSubLayerData, release = release)
+  
     __obj.asInstanceOf[XCompositeLayer]
   }
 }

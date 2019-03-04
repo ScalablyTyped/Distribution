@@ -14,8 +14,7 @@ trait VerifyParams extends js.Object {
 object VerifyParams {
   @scala.inline
   def apply(data: stdLib.BufferSource, notAfter: stdLib.Date = null, notBefore: stdLib.Date = null): VerifyParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter)
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore)
     __obj.asInstanceOf[VerifyParams]

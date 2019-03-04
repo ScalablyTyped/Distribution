@@ -32,12 +32,8 @@ object XUpdatableLayer {
     release: js.Function0[scala.Unit],
     replaceWith: js.Function1[XLayer, scala.Unit]
   ): XUpdatableLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readData")(readData)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceWith")(replaceWith)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readData = readData, release = release, replaceWith = replaceWith)
+  
     __obj.asInstanceOf[XUpdatableLayer]
   }
 }

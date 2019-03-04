@@ -49,6 +49,7 @@ trait Options extends js.Object {
     (js.Function1[/* schema */ js.Object | scala.Boolean, _]) | ajvLib.ajvLibNumbers.`false`
   ] = js.undefined
   var sourceCode: js.UndefOr[scala.Boolean] = js.undefined
+  var strictDefaults: js.UndefOr[scala.Boolean | ajvLib.ajvLibStrings.log] = js.undefined
   var transpile: js.UndefOr[java.lang.String | (js.Function1[/* code */ java.lang.String, java.lang.String])] = js.undefined
   var unicode: js.UndefOr[scala.Boolean] = js.undefined
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
@@ -95,6 +96,7 @@ object Options {
     schemas: js.Array[js.Object] | js.Object = null,
     serialize: (js.Function1[/* schema */ js.Object | scala.Boolean, _]) | ajvLib.ajvLibNumbers.`false` = null,
     sourceCode: js.UndefOr[scala.Boolean] = js.undefined,
+    strictDefaults: scala.Boolean | ajvLib.ajvLibStrings.log = null,
     transpile: java.lang.String | (js.Function1[/* code */ java.lang.String, java.lang.String]) = null,
     unicode: js.UndefOr[scala.Boolean] = js.undefined,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined,
@@ -132,6 +134,7 @@ object Options {
     if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
     if (!js.isUndefined(sourceCode)) __obj.updateDynamic("sourceCode")(sourceCode)
+    if (strictDefaults != null) __obj.updateDynamic("strictDefaults")(strictDefaults.asInstanceOf[js.Any])
     if (transpile != null) __obj.updateDynamic("transpile")(transpile.asInstanceOf[js.Any])
     if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
     if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems)

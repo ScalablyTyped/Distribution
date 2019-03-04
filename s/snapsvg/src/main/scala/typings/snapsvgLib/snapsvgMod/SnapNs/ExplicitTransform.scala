@@ -26,14 +26,8 @@ object ExplicitTransform {
     scaley: scala.Double,
     shear: scala.Double
   ): ExplicitTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("isSimple")(isSimple)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("scalex")(scalex)
-    __obj.updateDynamic("scaley")(scaley)
-    __obj.updateDynamic("shear")(shear)
+    val __obj = js.Dynamic.literal(dx = dx, dy = dy, isSimple = isSimple, rotate = rotate, scalex = scalex, scaley = scaley, shear = shear)
+  
     __obj.asInstanceOf[ExplicitTransform]
   }
 }

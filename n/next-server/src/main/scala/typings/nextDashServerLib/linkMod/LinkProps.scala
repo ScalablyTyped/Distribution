@@ -30,8 +30,7 @@ object LinkProps {
     scroll: js.UndefOr[scala.Boolean] = js.undefined,
     shallow: js.UndefOr[scala.Boolean] = js.undefined
   ): LinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError)

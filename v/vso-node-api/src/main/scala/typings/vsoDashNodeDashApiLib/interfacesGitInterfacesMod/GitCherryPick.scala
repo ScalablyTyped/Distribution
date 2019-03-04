@@ -19,13 +19,8 @@ object GitCherryPick {
     status: GitAsyncOperationStatus,
     url: java.lang.String
   ): GitCherryPick = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("cherryPickId")(cherryPickId)
-    __obj.updateDynamic("detailedStatus")(detailedStatus)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, cherryPickId = cherryPickId, detailedStatus = detailedStatus, parameters = parameters, status = status, url = url)
+  
     __obj.asInstanceOf[GitCherryPick]
   }
 }

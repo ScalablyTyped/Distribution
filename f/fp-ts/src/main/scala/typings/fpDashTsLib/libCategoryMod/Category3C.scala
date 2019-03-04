@@ -22,11 +22,8 @@ object Category3C {
     ],
     id: js.Function0[fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]]
   ): Category3C[F, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compose = compose, id = id)
+  
     __obj.asInstanceOf[Category3C[F, U]]
   }
 }

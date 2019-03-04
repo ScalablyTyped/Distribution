@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(plugins: CordovaPlugins): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(plugins = plugins)
+  
     __obj.asInstanceOf[Window]
   }
 }

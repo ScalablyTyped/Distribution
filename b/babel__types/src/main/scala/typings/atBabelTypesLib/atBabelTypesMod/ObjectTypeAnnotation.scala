@@ -37,9 +37,8 @@ object ObjectTypeAnnotation {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): ObjectTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("exact")(exact)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(exact = exact, properties = properties)
+    __obj.updateDynamic("type")(`type`)
     if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (indexers != null) __obj.updateDynamic("indexers")(indexers)

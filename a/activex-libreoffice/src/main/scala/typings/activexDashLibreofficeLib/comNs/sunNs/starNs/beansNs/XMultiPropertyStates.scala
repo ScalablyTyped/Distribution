@@ -60,14 +60,8 @@ object XMultiPropertyStates {
     setAllPropertiesToDefault: js.Function0[scala.Unit],
     setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit]
   ): XMultiPropertyStates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
-    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
-    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
+    val __obj = js.Dynamic.literal(acquire = acquire, getPropertyDefaults = getPropertyDefaults, getPropertyStates = getPropertyStates, queryInterface = queryInterface, release = release, setAllPropertiesToDefault = setAllPropertiesToDefault, setPropertiesToDefault = setPropertiesToDefault)
+  
     __obj.asInstanceOf[XMultiPropertyStates]
   }
 }

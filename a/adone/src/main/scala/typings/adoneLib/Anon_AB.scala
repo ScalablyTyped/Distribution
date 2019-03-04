@@ -74,19 +74,8 @@ object Anon_AB {
     vec3Ns: Anon_AAddAngle,
     vec4Ns: Anon_AAddArg
   ): Anon_AB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EPSILON")(EPSILON)
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("mat2Ns")(mat2Ns)
-    __obj.updateDynamic("mat2dNs")(mat2dNs)
-    __obj.updateDynamic("mat3Ns")(mat3Ns)
-    __obj.updateDynamic("mat4Ns")(mat4Ns)
-    __obj.updateDynamic("quatNs")(quatNs)
-    __obj.updateDynamic("toRadian")(toRadian)
-    __obj.updateDynamic("vec2Ns")(vec2Ns)
-    __obj.updateDynamic("vec3Ns")(vec3Ns)
-    __obj.updateDynamic("vec4Ns")(vec4Ns)
+    val __obj = js.Dynamic.literal(EPSILON = EPSILON, INs = INs, equals = equals, mat2Ns = mat2Ns, mat2dNs = mat2dNs, mat3Ns = mat3Ns, mat4Ns = mat4Ns, quatNs = quatNs, toRadian = toRadian, vec2Ns = vec2Ns, vec3Ns = vec3Ns, vec4Ns = vec4Ns)
+  
     __obj.asInstanceOf[Anon_AB]
   }
 }

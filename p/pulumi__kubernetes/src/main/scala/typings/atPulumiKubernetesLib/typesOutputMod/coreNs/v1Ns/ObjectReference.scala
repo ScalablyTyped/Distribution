@@ -61,14 +61,8 @@ object ObjectReference {
     resourceVersion: java.lang.String,
     uid: java.lang.String
   ): ObjectReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("fieldPath")(fieldPath)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, fieldPath = fieldPath, kind = kind, name = name, namespace = namespace, resourceVersion = resourceVersion, uid = uid)
+  
     __obj.asInstanceOf[ObjectReference]
   }
 }

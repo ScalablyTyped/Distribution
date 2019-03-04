@@ -23,8 +23,7 @@ object TabIndicatorProps {
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     style: atMaterialDashUiCoreLib.Anon_Left with reactLib.reactMod.ReactNs.CSSProperties = null
   ): TabIndicatorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])

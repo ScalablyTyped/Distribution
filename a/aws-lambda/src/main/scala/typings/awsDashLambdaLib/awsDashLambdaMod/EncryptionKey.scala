@@ -13,8 +13,8 @@ trait EncryptionKey extends js.Object {
 object EncryptionKey {
   @scala.inline
   def apply(id: java.lang.String, `type`: java.lang.String): EncryptionKey = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EncryptionKey]
   }
 }

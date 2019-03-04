@@ -28,8 +28,7 @@ object BuilderProgramHost {
     createHash: js.Function1[/* data */ java.lang.String, java.lang.String] = null,
     writeFile: WriteFileCallback = null
   ): BuilderProgramHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("useCaseSensitiveFileNames")(useCaseSensitiveFileNames)
+    val __obj = js.Dynamic.literal(useCaseSensitiveFileNames = useCaseSensitiveFileNames)
     if (createHash != null) __obj.updateDynamic("createHash")(createHash)
     if (writeFile != null) __obj.updateDynamic("writeFile")(writeFile)
     __obj.asInstanceOf[BuilderProgramHost]

@@ -26,8 +26,7 @@ object CreateUserData {
     username: java.lang.String = null,
     verify_email: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateUserData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
+    val __obj = js.Dynamic.literal(connection = connection)
     if (app_metadata != null) __obj.updateDynamic("app_metadata")(app_metadata)
     if (email != null) __obj.updateDynamic("email")(email)
     if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)

@@ -54,8 +54,7 @@ object Anon_AltFieldsForceCreate {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsForceCreate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(forceCreate)) __obj.updateDynamic("forceCreate")(forceCreate)

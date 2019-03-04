@@ -12,8 +12,8 @@ trait Anon_NavbarBrand extends js.Object {
 object Anon_NavbarBrand {
   @scala.inline
   def apply(NavbarBrandNs: js.Any): Anon_NavbarBrand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NavbarBrandNs")(NavbarBrandNs)
+    val __obj = js.Dynamic.literal(NavbarBrandNs = NavbarBrandNs)
+  
     __obj.asInstanceOf[Anon_NavbarBrand]
   }
 }

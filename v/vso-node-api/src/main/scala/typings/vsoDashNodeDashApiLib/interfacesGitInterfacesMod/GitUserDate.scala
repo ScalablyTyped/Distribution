@@ -23,10 +23,8 @@ trait GitUserDate extends js.Object {
 object GitUserDate {
   @scala.inline
   def apply(date: stdLib.Date, email: java.lang.String, name: java.lang.String): GitUserDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(date = date, email = email, name = name)
+  
     __obj.asInstanceOf[GitUserDate]
   }
 }

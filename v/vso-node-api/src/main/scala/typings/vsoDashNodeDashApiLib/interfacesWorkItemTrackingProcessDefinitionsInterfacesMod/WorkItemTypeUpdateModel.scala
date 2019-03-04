@@ -32,11 +32,8 @@ object WorkItemTypeUpdateModel {
     icon: java.lang.String,
     isDisabled: scala.Boolean
   ): WorkItemTypeUpdateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("isDisabled")(isDisabled)
+    val __obj = js.Dynamic.literal(color = color, description = description, icon = icon, isDisabled = isDisabled)
+  
     __obj.asInstanceOf[WorkItemTypeUpdateModel]
   }
 }

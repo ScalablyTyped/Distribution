@@ -46,24 +46,8 @@ object Attachment {
     setTitle: js.Function1[java.lang.String, Attachment],
     setUrl: js.Function1[java.lang.String, Attachment]
   ): Attachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteAttachment")(deleteAttachment)
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getAttachmentType")(getAttachmentType)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getDatePublished")(getDatePublished)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getLastUpdated")(getLastUpdated)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getUrl")(getUrl)
-    __obj.updateDynamic("setContentType")(setContentType)
-    __obj.updateDynamic("setDescription")(setDescription)
-    __obj.updateDynamic("setFrom")(setFrom)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setUrl")(setUrl)
+    val __obj = js.Dynamic.literal(deleteAttachment = deleteAttachment, getAs = getAs, getAttachmentType = getAttachmentType, getBlob = getBlob, getContentType = getContentType, getDatePublished = getDatePublished, getDescription = getDescription, getLastUpdated = getLastUpdated, getParent = getParent, getTitle = getTitle, getUrl = getUrl, setContentType = setContentType, setDescription = setDescription, setFrom = setFrom, setParent = setParent, setTitle = setTitle, setUrl = setUrl)
+  
     __obj.asInstanceOf[Attachment]
   }
 }

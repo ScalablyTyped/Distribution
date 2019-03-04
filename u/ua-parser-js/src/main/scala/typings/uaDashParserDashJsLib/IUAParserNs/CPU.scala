@@ -12,8 +12,8 @@ trait CPU extends js.Object {
 object CPU {
   @scala.inline
   def apply(ARCHITECTURE: java.lang.String): CPU = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARCHITECTURE")(ARCHITECTURE)
+    val __obj = js.Dynamic.literal(ARCHITECTURE = ARCHITECTURE)
+  
     __obj.asInstanceOf[CPU]
   }
 }

@@ -34,18 +34,8 @@ object ILanguageFontGroup {
     uITextFont: LanguageFont,
     uITitleFont: LanguageFont
   ): ILanguageFontGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("documentAlternate1Font")(documentAlternate1Font)
-    __obj.updateDynamic("documentAlternate2Font")(documentAlternate2Font)
-    __obj.updateDynamic("documentHeadingFont")(documentHeadingFont)
-    __obj.updateDynamic("fixedWidthTextFont")(fixedWidthTextFont)
-    __obj.updateDynamic("modernDocumentFont")(modernDocumentFont)
-    __obj.updateDynamic("traditionalDocumentFont")(traditionalDocumentFont)
-    __obj.updateDynamic("uICaptionFont")(uICaptionFont)
-    __obj.updateDynamic("uIHeadingFont")(uIHeadingFont)
-    __obj.updateDynamic("uINotificationHeadingFont")(uINotificationHeadingFont)
-    __obj.updateDynamic("uITextFont")(uITextFont)
-    __obj.updateDynamic("uITitleFont")(uITitleFont)
+    val __obj = js.Dynamic.literal(documentAlternate1Font = documentAlternate1Font, documentAlternate2Font = documentAlternate2Font, documentHeadingFont = documentHeadingFont, fixedWidthTextFont = fixedWidthTextFont, modernDocumentFont = modernDocumentFont, traditionalDocumentFont = traditionalDocumentFont, uICaptionFont = uICaptionFont, uIHeadingFont = uIHeadingFont, uINotificationHeadingFont = uINotificationHeadingFont, uITextFont = uITextFont, uITitleFont = uITitleFont)
+  
     __obj.asInstanceOf[ILanguageFontGroup]
   }
 }

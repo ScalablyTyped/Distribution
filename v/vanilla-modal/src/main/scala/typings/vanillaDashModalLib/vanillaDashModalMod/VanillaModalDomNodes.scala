@@ -20,11 +20,8 @@ object VanillaModalDomNodes {
     modalInner: stdLib.HTMLElement,
     page: stdLib.HTMLElement
   ): VanillaModalDomNodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modal")(modal)
-    __obj.updateDynamic("modalContent")(modalContent)
-    __obj.updateDynamic("modalInner")(modalInner)
-    __obj.updateDynamic("page")(page)
+    val __obj = js.Dynamic.literal(modal = modal, modalContent = modalContent, modalInner = modalInner, page = page)
+  
     __obj.asInstanceOf[VanillaModalDomNodes]
   }
 }

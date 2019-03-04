@@ -77,20 +77,8 @@ object ManualIntervention {
     taskInstanceId: java.lang.String,
     url: java.lang.String
   ): ManualIntervention = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approver")(approver)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instructions")(instructions)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
-    __obj.updateDynamic("releaseEnvironment")(releaseEnvironment)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("taskInstanceId")(taskInstanceId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(approver = approver, comments = comments, createdOn = createdOn, id = id, instructions = instructions, modifiedOn = modifiedOn, name = name, release = release, releaseDefinition = releaseDefinition, releaseEnvironment = releaseEnvironment, status = status, taskInstanceId = taskInstanceId, url = url)
+  
     __obj.asInstanceOf[ManualIntervention]
   }
 }

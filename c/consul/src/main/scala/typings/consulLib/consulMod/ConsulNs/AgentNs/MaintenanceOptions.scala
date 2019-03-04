@@ -25,8 +25,7 @@ object MaintenanceOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): MaintenanceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enable")(enable)
+    val __obj = js.Dynamic.literal(enable = enable)
     if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
     if (ctx != null) __obj.updateDynamic("ctx")(ctx)
     if (dc != null) __obj.updateDynamic("dc")(dc)

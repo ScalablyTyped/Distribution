@@ -47,12 +47,8 @@ object XUniqueCellFormatRangesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XUniqueCellFormatRangesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UniqueCellFormatRanges")(UniqueCellFormatRanges)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getUniqueCellFormatRanges")(getUniqueCellFormatRanges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(UniqueCellFormatRanges = UniqueCellFormatRanges, acquire = acquire, getUniqueCellFormatRanges = getUniqueCellFormatRanges, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XUniqueCellFormatRangesSupplier]
   }
 }

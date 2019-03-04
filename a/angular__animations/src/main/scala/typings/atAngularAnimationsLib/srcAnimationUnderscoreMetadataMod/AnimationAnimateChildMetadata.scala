@@ -17,7 +17,8 @@ trait AnimationAnimateChildMetadata extends AnimationMetadata {
 object AnimationAnimateChildMetadata {
   @scala.inline
   def apply(`type`: AnimationMetadataType, options: AnimationOptions = null): AnimationAnimateChildMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AnimationAnimateChildMetadata]
   }

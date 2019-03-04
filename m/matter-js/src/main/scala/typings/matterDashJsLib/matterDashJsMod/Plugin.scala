@@ -55,7 +55,7 @@ object Plugin extends js.Object {
     * @param module {} The module.
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
-  def isFor(plugin: matterDashJsLib.matterDashJsMod.MatterNs.Plugin, module: matterDashJsLib.`Anon_`): scala.Boolean = js.native
+  def isFor(plugin: matterDashJsLib.matterDashJsMod.MatterNs.Plugin, module: matterDashJsLib.Anon_): scala.Boolean = js.native
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
     * This means it must define the following properties:

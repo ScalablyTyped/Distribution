@@ -13,9 +13,8 @@ trait IReturnMessage extends js.Object {
 object IReturnMessage {
   @scala.inline
   def apply(errors: js.Array[IErrrorProperty], valid: scala.Boolean): IReturnMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(errors = errors, valid = valid)
+  
     __obj.asInstanceOf[IReturnMessage]
   }
 }

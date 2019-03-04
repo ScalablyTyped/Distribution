@@ -26,14 +26,8 @@ object SnekfetchResponse {
     status: scala.Double,
     statusText: java.lang.String
   ): SnekfetchResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, ok = ok, raw = raw, request = request, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[SnekfetchResponse]
   }
 }

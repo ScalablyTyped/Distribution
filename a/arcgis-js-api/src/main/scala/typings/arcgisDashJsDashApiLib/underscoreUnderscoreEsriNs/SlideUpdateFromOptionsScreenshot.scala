@@ -52,10 +52,7 @@ object SlideUpdateFromOptionsScreenshot {
     quality: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): SlideUpdateFromOptionsScreenshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (format != null) __obj.updateDynamic("format")(format)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])

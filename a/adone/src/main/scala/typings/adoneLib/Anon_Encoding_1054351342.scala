@@ -12,8 +12,8 @@ trait Anon_Encoding_1054351342 extends js.Object {
 object Anon_Encoding_1054351342 {
   @scala.inline
   def apply(encoding: adoneLib.adoneNs.fsNs.INs.Encoding): Anon_Encoding_1054351342 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
+  
     __obj.asInstanceOf[Anon_Encoding_1054351342]
   }
 }

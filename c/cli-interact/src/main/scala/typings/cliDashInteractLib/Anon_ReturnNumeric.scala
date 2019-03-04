@@ -12,8 +12,8 @@ trait Anon_ReturnNumeric extends js.Object {
 object Anon_ReturnNumeric {
   @scala.inline
   def apply(returnNumeric: cliDashInteractLib.cliDashInteractLibNumbers.`true`): Anon_ReturnNumeric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("returnNumeric")(returnNumeric)
+    val __obj = js.Dynamic.literal(returnNumeric = returnNumeric)
+  
     __obj.asInstanceOf[Anon_ReturnNumeric]
   }
 }

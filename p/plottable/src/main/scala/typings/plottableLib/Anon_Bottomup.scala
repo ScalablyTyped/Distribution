@@ -16,9 +16,8 @@ object Anon_Bottomup {
     bottomup: plottableLib.plottableLibStrings.bottomup,
     topdown: plottableLib.plottableLibStrings.topdown
   ): Anon_Bottomup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottomup")(bottomup)
-    __obj.updateDynamic("topdown")(topdown)
+    val __obj = js.Dynamic.literal(bottomup = bottomup, topdown = topdown)
+  
     __obj.asInstanceOf[Anon_Bottomup]
   }
 }

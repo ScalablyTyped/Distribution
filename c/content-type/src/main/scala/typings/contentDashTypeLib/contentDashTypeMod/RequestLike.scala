@@ -14,8 +14,8 @@ object RequestLike {
   def apply(
     headers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]]
   ): RequestLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
+  
     __obj.asInstanceOf[RequestLike]
   }
 }

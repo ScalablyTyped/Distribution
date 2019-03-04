@@ -13,9 +13,8 @@ trait IItunesCategory extends js.Object {
 object IItunesCategory {
   @scala.inline
   def apply(name: java.lang.String, subcats: js.Array[IItunesSubCategory]): IItunesCategory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subcats")(subcats)
+    val __obj = js.Dynamic.literal(name = name, subcats = subcats)
+  
     __obj.asInstanceOf[IItunesCategory]
   }
 }

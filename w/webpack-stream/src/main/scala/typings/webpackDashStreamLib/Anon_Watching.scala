@@ -12,8 +12,8 @@ trait Anon_Watching extends js.Object {
 object Anon_Watching {
   @scala.inline
   def apply(WatchingNs: js.Any): Anon_Watching = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WatchingNs")(WatchingNs)
+    val __obj = js.Dynamic.literal(WatchingNs = WatchingNs)
+  
     __obj.asInstanceOf[Anon_Watching]
   }
 }

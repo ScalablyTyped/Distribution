@@ -12,8 +12,8 @@ trait CustomerInfoOptions extends js.Object {
 object CustomerInfoOptions {
   @scala.inline
   def apply(customerInfoProperties: js.Array[java.lang.String]): CustomerInfoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customerInfoProperties")(customerInfoProperties)
+    val __obj = js.Dynamic.literal(customerInfoProperties = customerInfoProperties)
+  
     __obj.asInstanceOf[CustomerInfoOptions]
   }
 }

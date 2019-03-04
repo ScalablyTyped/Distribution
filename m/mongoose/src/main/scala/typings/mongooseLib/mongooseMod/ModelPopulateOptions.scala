@@ -30,8 +30,7 @@ object ModelPopulateOptions {
     populate: ModelPopulateOptions | js.Array[ModelPopulateOptions] = null,
     select: js.Any = null
   ): ModelPopulateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (`match` != null) __obj.updateDynamic("match")(`match`)
     if (model != null) __obj.updateDynamic("model")(model)
     if (options != null) __obj.updateDynamic("options")(options)

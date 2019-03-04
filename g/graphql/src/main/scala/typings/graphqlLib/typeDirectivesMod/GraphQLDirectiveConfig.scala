@@ -26,9 +26,7 @@ object GraphQLDirectiveConfig {
     astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.DirectiveDefinitionNode] = null,
     description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
   ): GraphQLDirectiveConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(locations = locations, name = name)
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

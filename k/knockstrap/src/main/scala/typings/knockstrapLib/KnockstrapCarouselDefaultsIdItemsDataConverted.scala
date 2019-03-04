@@ -12,9 +12,8 @@ trait KnockstrapCarouselDefaultsIdItemsDataConverted extends KnockstrapCarouselD
 object KnockstrapCarouselDefaultsIdItemsDataConverted {
   @scala.inline
   def apply(id: knockoutLib.KnockoutComputed[java.lang.String], items: js.Any): KnockstrapCarouselDefaultsIdItemsDataConverted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(id = id, items = items)
+  
     __obj.asInstanceOf[KnockstrapCarouselDefaultsIdItemsDataConverted]
   }
 }

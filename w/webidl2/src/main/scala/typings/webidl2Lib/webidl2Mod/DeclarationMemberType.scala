@@ -23,10 +23,8 @@ object DeclarationMemberType {
     readonly: scala.Boolean,
     `type`: webidl2Lib.webidl2LibStrings.iterable | webidl2Lib.webidl2LibStrings.legacyiterable | webidl2Lib.webidl2LibStrings.setlike | webidl2Lib.webidl2LibStrings.maplike
   ): DeclarationMemberType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, readonly = readonly)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationMemberType]
   }
 }

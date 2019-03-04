@@ -27,10 +27,8 @@ trait FavoriteItem extends js.Object {
 object FavoriteItem {
   @scala.inline
   def apply(data: java.lang.String, id: java.lang.String, name: java.lang.String, `type`: java.lang.String): FavoriteItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data, id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FavoriteItem]
   }
 }

@@ -29,9 +29,8 @@ object RTCTransportStats {
     rtcpTransportStatsId: java.lang.String = null,
     selectedCandidatePairId: java.lang.String = null
   ): RTCTransportStats = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(activeConnection)) __obj.updateDynamic("activeConnection")(activeConnection)
     if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
     if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])

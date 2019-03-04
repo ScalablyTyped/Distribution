@@ -44,11 +44,8 @@ object DevicesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DeviceState]
     ]
   ): DevicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setState")(setState)
+    val __obj = js.Dynamic.literal(get = get, getState = getState, list = list, setState = setState)
+  
     __obj.asInstanceOf[DevicesResource]
   }
 }

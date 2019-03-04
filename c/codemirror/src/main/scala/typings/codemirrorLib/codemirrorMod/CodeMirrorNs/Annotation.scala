@@ -24,8 +24,7 @@ object Annotation {
     severity: java.lang.String = null,
     to: Position = null
   ): Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(from = from)
     if (message != null) __obj.updateDynamic("message")(message)
     if (severity != null) __obj.updateDynamic("severity")(severity)
     if (to != null) __obj.updateDynamic("to")(to)

@@ -38,8 +38,7 @@ object LabelListProps {
     position: PositionType = null,
     valueAccessor: RechartsFunction = null
   ): LabelListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

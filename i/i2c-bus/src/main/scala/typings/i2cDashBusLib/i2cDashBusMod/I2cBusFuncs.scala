@@ -46,24 +46,8 @@ object I2cBusFuncs {
     smbusWriteWord: scala.Boolean,
     tenBitAddr: scala.Boolean
   ): I2cBusFuncs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i2c")(i2c)
-    __obj.updateDynamic("protocolMangling")(protocolMangling)
-    __obj.updateDynamic("smbusBlockProcCall")(smbusBlockProcCall)
-    __obj.updateDynamic("smbusPec")(smbusPec)
-    __obj.updateDynamic("smbusProcCall")(smbusProcCall)
-    __obj.updateDynamic("smbusQuick")(smbusQuick)
-    __obj.updateDynamic("smbusReadBlock")(smbusReadBlock)
-    __obj.updateDynamic("smbusReadByte")(smbusReadByte)
-    __obj.updateDynamic("smbusReadI2cBlock")(smbusReadI2cBlock)
-    __obj.updateDynamic("smbusReadWord")(smbusReadWord)
-    __obj.updateDynamic("smbusReceiveByte")(smbusReceiveByte)
-    __obj.updateDynamic("smbusSendByte")(smbusSendByte)
-    __obj.updateDynamic("smbusWriteBlock")(smbusWriteBlock)
-    __obj.updateDynamic("smbusWriteByte")(smbusWriteByte)
-    __obj.updateDynamic("smbusWriteI2cBlock")(smbusWriteI2cBlock)
-    __obj.updateDynamic("smbusWriteWord")(smbusWriteWord)
-    __obj.updateDynamic("tenBitAddr")(tenBitAddr)
+    val __obj = js.Dynamic.literal(i2c = i2c, protocolMangling = protocolMangling, smbusBlockProcCall = smbusBlockProcCall, smbusPec = smbusPec, smbusProcCall = smbusProcCall, smbusQuick = smbusQuick, smbusReadBlock = smbusReadBlock, smbusReadByte = smbusReadByte, smbusReadI2cBlock = smbusReadI2cBlock, smbusReadWord = smbusReadWord, smbusReceiveByte = smbusReceiveByte, smbusSendByte = smbusSendByte, smbusWriteBlock = smbusWriteBlock, smbusWriteByte = smbusWriteByte, smbusWriteI2cBlock = smbusWriteI2cBlock, smbusWriteWord = smbusWriteWord, tenBitAddr = tenBitAddr)
+  
     __obj.asInstanceOf[I2cBusFuncs]
   }
 }

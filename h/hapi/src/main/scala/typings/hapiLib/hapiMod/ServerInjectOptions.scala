@@ -41,8 +41,7 @@ object ServerInjectOptions {
     simulate: shotLib.Anon_Close = null,
     validate: js.UndefOr[scala.Boolean] = js.undefined
   ): ServerInjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(allowInternals)) __obj.updateDynamic("allowInternals")(allowInternals)
     if (app != null) __obj.updateDynamic("app")(app)
     if (auth != null) __obj.updateDynamic("auth")(auth)

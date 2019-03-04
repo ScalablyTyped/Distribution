@@ -24,13 +24,8 @@ object ISharedFileInfo {
     LogicalSize_32bit: scala.Double,
     Title: java.lang.String
   ): ISharedFileInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChangeTimeUtc")(ChangeTimeUtc)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Extension")(Extension)
-    __obj.updateDynamic("LogicalSize")(LogicalSize)
-    __obj.updateDynamic("LogicalSize_32bit")(LogicalSize_32bit)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc, Clone = Clone, Extension = Extension, LogicalSize = LogicalSize, LogicalSize_32bit = LogicalSize_32bit, Title = Title)
+  
     __obj.asInstanceOf[ISharedFileInfo]
   }
 }

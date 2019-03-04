@@ -24,12 +24,7 @@ object Table {
     tables: js.Array[Table],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Table = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("sizeOf")(sizeOf)
-    __obj.updateDynamic("tableName")(tableName)
-    __obj.updateDynamic("tables")(tables)
+    val __obj = js.Dynamic.literal(encode = encode, fields = fields, sizeOf = sizeOf, tableName = tableName, tables = tables)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Table]
   }

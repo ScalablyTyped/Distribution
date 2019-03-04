@@ -23,10 +23,8 @@ trait LocalSecondaryIndex extends js.Object {
 object LocalSecondaryIndex {
   @scala.inline
   def apply(IndexName: IndexName, KeySchema: KeySchema, Projection: Projection): LocalSecondaryIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IndexName")(IndexName)
-    __obj.updateDynamic("KeySchema")(KeySchema)
-    __obj.updateDynamic("Projection")(Projection)
+    val __obj = js.Dynamic.literal(IndexName = IndexName, KeySchema = KeySchema, Projection = Projection)
+  
     __obj.asInstanceOf[LocalSecondaryIndex]
   }
 }

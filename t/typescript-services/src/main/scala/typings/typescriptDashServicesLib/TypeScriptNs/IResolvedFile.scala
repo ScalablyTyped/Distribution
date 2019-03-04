@@ -18,10 +18,8 @@ object IResolvedFile {
     path: java.lang.String,
     referencedFiles: js.Array[java.lang.String]
   ): IResolvedFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("importedFiles")(importedFiles)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("referencedFiles")(referencedFiles)
+    val __obj = js.Dynamic.literal(importedFiles = importedFiles, path = path, referencedFiles = referencedFiles)
+  
     __obj.asInstanceOf[IResolvedFile]
   }
 }

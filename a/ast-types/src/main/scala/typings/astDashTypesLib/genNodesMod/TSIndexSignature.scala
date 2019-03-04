@@ -27,9 +27,8 @@ object TSIndexSignature {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSIndexSignature,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): TSIndexSignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(parameters = parameters, readonly = readonly)
+    __obj.updateDynamic("type")(`type`)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
     __obj.asInstanceOf[TSIndexSignature]
   }

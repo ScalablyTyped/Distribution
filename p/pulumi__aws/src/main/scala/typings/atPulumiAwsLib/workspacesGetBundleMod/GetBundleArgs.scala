@@ -15,8 +15,8 @@ trait GetBundleArgs extends js.Object {
 object GetBundleArgs {
   @scala.inline
   def apply(bundleId: java.lang.String): GetBundleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bundleId")(bundleId)
+    val __obj = js.Dynamic.literal(bundleId = bundleId)
+  
     __obj.asInstanceOf[GetBundleArgs]
   }
 }

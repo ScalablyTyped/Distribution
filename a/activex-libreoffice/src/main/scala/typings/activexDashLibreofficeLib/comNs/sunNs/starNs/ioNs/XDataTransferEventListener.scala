@@ -24,13 +24,8 @@ object XDataTransferEventListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataTransferEventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancelled")(cancelled)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("finished")(finished)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, cancelled = cancelled, disposing = disposing, finished = finished, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataTransferEventListener]
   }
 }

@@ -27,9 +27,9 @@ object JSXMemberExpression {
     property: astDashTypesLib.genKindsMod.JSXIdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.JSXMemberExpression
   ): JSXMemberExpression = {
-    val __obj = js.Dynamic.literal(`object` = `object`.asInstanceOf[js.Any], `type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(computed = computed, property = property)
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSXMemberExpression]
   }
 }

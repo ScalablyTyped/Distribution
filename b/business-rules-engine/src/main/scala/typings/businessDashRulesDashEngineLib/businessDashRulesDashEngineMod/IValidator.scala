@@ -18,10 +18,8 @@ object IValidator {
     Validate: js.Function1[js.Any, IValidationFailure],
     ValidateAsync: js.Function1[js.Any, qLib.qMod.QNs.Promise[IValidationFailure]]
   ): IValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Validate")(Validate)
-    __obj.updateDynamic("ValidateAsync")(ValidateAsync)
+    val __obj = js.Dynamic.literal(Error = Error, Validate = Validate, ValidateAsync = ValidateAsync)
+  
     __obj.asInstanceOf[IValidator]
   }
 }

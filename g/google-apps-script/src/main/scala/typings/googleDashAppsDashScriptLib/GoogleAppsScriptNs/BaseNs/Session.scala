@@ -26,14 +26,8 @@ object Session {
     getTimeZone: js.Function0[java.lang.String],
     getUser: js.Function0[User]
   ): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActiveUser")(getActiveUser)
-    __obj.updateDynamic("getActiveUserLocale")(getActiveUserLocale)
-    __obj.updateDynamic("getEffectiveUser")(getEffectiveUser)
-    __obj.updateDynamic("getScriptTimeZone")(getScriptTimeZone)
-    __obj.updateDynamic("getTemporaryActiveUserKey")(getTemporaryActiveUserKey)
-    __obj.updateDynamic("getTimeZone")(getTimeZone)
-    __obj.updateDynamic("getUser")(getUser)
+    val __obj = js.Dynamic.literal(getActiveUser = getActiveUser, getActiveUserLocale = getActiveUserLocale, getEffectiveUser = getEffectiveUser, getScriptTimeZone = getScriptTimeZone, getTemporaryActiveUserKey = getTemporaryActiveUserKey, getTimeZone = getTimeZone, getUser = getUser)
+  
     __obj.asInstanceOf[Session]
   }
 }

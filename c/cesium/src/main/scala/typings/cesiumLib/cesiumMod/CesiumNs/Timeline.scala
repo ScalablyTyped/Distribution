@@ -22,12 +22,8 @@ object Timeline {
     resize: js.Function0[scala.Unit],
     zoomTo: js.Function2[JulianDate, JulianDate, scala.Unit]
   ): Timeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("zoomTo")(zoomTo)
+    val __obj = js.Dynamic.literal(container = container, destroy = destroy, isDestroyed = isDestroyed, resize = resize, zoomTo = zoomTo)
+  
     __obj.asInstanceOf[Timeline]
   }
 }

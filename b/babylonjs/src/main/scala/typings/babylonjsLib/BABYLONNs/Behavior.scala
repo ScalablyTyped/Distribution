@@ -34,11 +34,8 @@ object Behavior {
     init: js.Function0[scala.Unit],
     name: java.lang.String
   ): Behavior[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attach = attach, detach = detach, init = init, name = name)
+  
     __obj.asInstanceOf[Behavior[T]]
   }
 }

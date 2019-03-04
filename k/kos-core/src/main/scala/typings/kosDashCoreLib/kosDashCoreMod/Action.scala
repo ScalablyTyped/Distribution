@@ -13,7 +13,8 @@ trait Action[T] extends js.Object {
 object Action {
   @scala.inline
   def apply[T](`type`: java.lang.String, payload: stdLib.Partial[T] = null): Action[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (payload != null) __obj.updateDynamic("payload")(payload)
     __obj.asInstanceOf[Action[T]]
   }

@@ -39,20 +39,8 @@ object IAxisLabels {
     visible: scala.Boolean,
     width: js.Function1[scala.Double, scala.Double]
   ): IAxisLabels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alternate")(alternate)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dateFormat")(dateFormat)
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("maxWidth")(maxWidth)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("separation")(separation)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(alternate = alternate, chart = chart, dateFormat = dateFormat, decimals = decimals, format = format, getLabel = getLabel, labelStyle = labelStyle, maxWidth = maxWidth, padding = padding, rotation = rotation, separation = separation, visible = visible, width = width)
+  
     __obj.asInstanceOf[IAxisLabels]
   }
 }

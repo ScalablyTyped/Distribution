@@ -18,8 +18,7 @@ object Anon_MetricIntervalLowerBoundMetricIntervalUpperBound {
     metricIntervalLowerBound: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     metricIntervalUpperBound: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_MetricIntervalLowerBoundMetricIntervalUpperBound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scalingAdjustment")(scalingAdjustment.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scalingAdjustment = scalingAdjustment.asInstanceOf[js.Any])
     if (metricIntervalLowerBound != null) __obj.updateDynamic("metricIntervalLowerBound")(metricIntervalLowerBound.asInstanceOf[js.Any])
     if (metricIntervalUpperBound != null) __obj.updateDynamic("metricIntervalUpperBound")(metricIntervalUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]

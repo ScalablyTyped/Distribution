@@ -13,8 +13,8 @@ trait FilterTransform extends _Transforms {
 object FilterTransform {
   @scala.inline
   def apply(expr: java.lang.String, `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.filter): FilterTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expr")(expr)
+    val __obj = js.Dynamic.literal(expr = expr)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FilterTransform]
   }
 }

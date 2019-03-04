@@ -55,15 +55,8 @@ object Queries {
     runSearch: js.Function1[js.Any, scala.Unit],
     setupInputs: js.Function0[scala.Unit]
   ): Queries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("runSearch")(runSearch)
-    __obj.updateDynamic("setupInputs")(setupInputs)
+    val __obj = js.Dynamic.literal(add = add, functions = functions, init = init, initOnLoad = initOnLoad, remove = remove, run = run, runSearch = runSearch, setupInputs = setupInputs)
+  
     __obj.asInstanceOf[Queries]
   }
 }

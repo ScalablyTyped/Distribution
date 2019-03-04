@@ -46,23 +46,8 @@ object Anon_AreaBack {
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.area | atOracleOraclejetLib.atOracleOraclejetLibStrings.line,
     value: scala.Double
   ): Anon_AreaBack = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("displayInLegend")(displayInLegend.asInstanceOf[js.Any])
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineType")(lineType.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("shortDesc")(shortDesc)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(categories = categories, color = color, displayInLegend = displayInLegend.asInstanceOf[js.Any], high = high, id = id, items = items, lineStyle = lineStyle.asInstanceOf[js.Any], lineType = lineType.asInstanceOf[js.Any], lineWidth = lineWidth, location = location.asInstanceOf[js.Any], low = low, shortDesc = shortDesc, svgClassName = svgClassName, svgStyle = svgStyle, text = text, value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AreaBack]
   }
 }

@@ -14,8 +14,7 @@ trait Sha256Hash
 object Sha256Hash {
   @scala.inline
   def apply(sha256Hash: nodeLib.Buffer | java.lang.String, weight: scala.Double | java.lang.String = null): Sha256Hash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sha256Hash")(sha256Hash.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(sha256Hash = sha256Hash.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sha256Hash]
   }

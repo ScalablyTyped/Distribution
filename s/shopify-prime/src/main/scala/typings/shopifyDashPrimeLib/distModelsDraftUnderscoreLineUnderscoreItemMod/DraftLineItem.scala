@@ -46,8 +46,7 @@ object DraftLineItem {
     variant_title: java.lang.String = null,
     vendor: java.lang.String = null
   ): DraftLineItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applied_discount")(applied_discount)
+    val __obj = js.Dynamic.literal(applied_discount = applied_discount)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom)
     if (fulfillable_quantity != null) __obj.updateDynamic("fulfillable_quantity")(fulfillable_quantity.asInstanceOf[js.Any])

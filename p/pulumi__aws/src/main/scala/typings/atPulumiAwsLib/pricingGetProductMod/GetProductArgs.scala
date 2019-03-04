@@ -19,9 +19,8 @@ trait GetProductArgs extends js.Object {
 object GetProductArgs {
   @scala.inline
   def apply(filters: js.Array[atPulumiAwsLib.Anon_FieldValue], serviceCode: java.lang.String): GetProductArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("serviceCode")(serviceCode)
+    val __obj = js.Dynamic.literal(filters = filters, serviceCode = serviceCode)
+  
     __obj.asInstanceOf[GetProductArgs]
   }
 }

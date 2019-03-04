@@ -25,9 +25,8 @@ object Anon_BackgroundColorExcludeComponents {
     `type`: java.lang.String,
     excludeComponents: js.Array[java.lang.String] = null
   ): Anon_BackgroundColorExcludeComponents = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("pixelRatio")(pixelRatio)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, pixelRatio = pixelRatio)
+    __obj.updateDynamic("type")(`type`)
     if (excludeComponents != null) __obj.updateDynamic("excludeComponents")(excludeComponents)
     __obj.asInstanceOf[Anon_BackgroundColorExcludeComponents]
   }

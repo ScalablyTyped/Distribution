@@ -12,8 +12,8 @@ trait Transition extends js.Object {
 object Transition {
   @scala.inline
   def apply(before: js.Function4[Options, stdLib.Element, stdLib.Element, scala.Boolean, scala.Unit]): Transition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("before")(before)
+    val __obj = js.Dynamic.literal(before = before)
+  
     __obj.asInstanceOf[Transition]
   }
 }

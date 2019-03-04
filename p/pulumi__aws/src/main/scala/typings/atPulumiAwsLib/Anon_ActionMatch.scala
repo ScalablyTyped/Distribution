@@ -16,8 +16,8 @@ object Anon_ActionMatch {
     action: atPulumiPulumiLib.outputMod.Input[Anon_WeightedTargetsAnonVirtualNodeWeight],
     `match`: atPulumiPulumiLib.outputMod.Input[Anon_PrefixInput]
   ): Anon_ActionMatch = {
-    val __obj = js.Dynamic.literal(`match` = `match`.asInstanceOf[js.Any])
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ActionMatch]
   }
 }

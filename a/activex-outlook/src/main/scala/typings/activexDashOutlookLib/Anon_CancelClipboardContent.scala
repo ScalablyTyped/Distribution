@@ -14,10 +14,8 @@ trait Anon_CancelClipboardContent extends js.Object {
 object Anon_CancelClipboardContent {
   @scala.inline
   def apply(Cancel: scala.Boolean, ClipboardContent: js.Any, Target: activexDashOutlookLib.OutlookNs.Folder): Anon_CancelClipboardContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("ClipboardContent")(ClipboardContent)
-    __obj.updateDynamic("Target")(Target)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, ClipboardContent = ClipboardContent, Target = Target)
+  
     __obj.asInstanceOf[Anon_CancelClipboardContent]
   }
 }

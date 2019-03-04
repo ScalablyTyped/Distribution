@@ -32,9 +32,7 @@ object RequestOptions {
     useUser: js.UndefOr[scala.Boolean] = js.undefined,
     user: APIUser = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
+    val __obj = js.Dynamic.literal(systemKey = systemKey, systemSecret = systemSecret)
     if (URI != null) __obj.updateDynamic("URI")(URI)
     if (authToken != null) __obj.updateDynamic("authToken")(authToken)
     if (body != null) __obj.updateDynamic("body")(body)

@@ -48,14 +48,8 @@ object ConstantScoreQuery {
     query: js.Function1[js.Object, ConstantScoreQuery],
     toJSON: js.Function0[js.Any]
   ): ConstantScoreQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, cache = cache, cacheKey = cacheKey, filter = filter, query = query, toJSON = toJSON)
+  
     __obj.asInstanceOf[ConstantScoreQuery]
   }
 }

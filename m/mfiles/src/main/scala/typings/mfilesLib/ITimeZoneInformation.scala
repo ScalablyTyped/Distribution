@@ -18,10 +18,8 @@ object ITimeZoneInformation {
     LoadWithCurrentTimeZone: js.Function0[scala.Unit],
     StandardName: java.lang.String
   ): ITimeZoneInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LoadTimeZoneByName")(LoadTimeZoneByName)
-    __obj.updateDynamic("LoadWithCurrentTimeZone")(LoadWithCurrentTimeZone)
-    __obj.updateDynamic("StandardName")(StandardName)
+    val __obj = js.Dynamic.literal(LoadTimeZoneByName = LoadTimeZoneByName, LoadWithCurrentTimeZone = LoadWithCurrentTimeZone, StandardName = StandardName)
+  
     __obj.asInstanceOf[ITimeZoneInformation]
   }
 }

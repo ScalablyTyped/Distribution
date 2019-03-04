@@ -11,8 +11,8 @@ trait ServerRecv
 object ServerRecv {
   @scala.inline
   def apply(annotationType: java.lang.String): ServerRecv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
+    val __obj = js.Dynamic.literal(annotationType = annotationType)
+  
     __obj.asInstanceOf[ServerRecv]
   }
 }

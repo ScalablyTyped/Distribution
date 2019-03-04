@@ -13,9 +13,8 @@ trait Anon_Colon extends js.Object {
 object Anon_Colon {
   @scala.inline
   def apply(colon: scala.Boolean, hasFeedback: scala.Boolean): Anon_Colon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colon")(colon)
-    __obj.updateDynamic("hasFeedback")(hasFeedback)
+    val __obj = js.Dynamic.literal(colon = colon, hasFeedback = hasFeedback)
+  
     __obj.asInstanceOf[Anon_Colon]
   }
 }

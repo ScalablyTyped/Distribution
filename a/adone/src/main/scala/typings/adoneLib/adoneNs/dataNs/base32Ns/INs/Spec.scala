@@ -16,9 +16,8 @@ object Spec {
     alphabet: java.lang.String,
     charmap: /* import warning: ImportType.apply Failed type conversion: {[c: string] : number, [c: string] : number} */ js.Any
   ): Spec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alphabet")(alphabet)
-    __obj.updateDynamic("charmap")(charmap)
+    val __obj = js.Dynamic.literal(alphabet = alphabet, charmap = charmap)
+  
     __obj.asInstanceOf[Spec]
   }
 }

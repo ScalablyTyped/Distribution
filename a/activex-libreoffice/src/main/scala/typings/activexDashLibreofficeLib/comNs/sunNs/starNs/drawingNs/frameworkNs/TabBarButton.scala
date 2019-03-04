@@ -32,10 +32,8 @@ trait TabBarButton extends js.Object {
 object TabBarButton {
   @scala.inline
   def apply(ButtonLabel: java.lang.String, HelpText: java.lang.String, ResourceId: XResourceId): TabBarButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ButtonLabel")(ButtonLabel)
-    __obj.updateDynamic("HelpText")(HelpText)
-    __obj.updateDynamic("ResourceId")(ResourceId)
+    val __obj = js.Dynamic.literal(ButtonLabel = ButtonLabel, HelpText = HelpText, ResourceId = ResourceId)
+  
     __obj.asInstanceOf[TabBarButton]
   }
 }

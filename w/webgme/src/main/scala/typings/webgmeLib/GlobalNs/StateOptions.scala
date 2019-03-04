@@ -12,8 +12,8 @@ trait StateOptions extends js.Object {
 object StateOptions {
   @scala.inline
   def apply(silent: scala.Boolean): StateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("silent")(silent)
+    val __obj = js.Dynamic.literal(silent = silent)
+  
     __obj.asInstanceOf[StateOptions]
   }
 }

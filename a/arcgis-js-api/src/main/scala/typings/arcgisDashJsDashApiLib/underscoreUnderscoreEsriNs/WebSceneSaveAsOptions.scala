@@ -30,10 +30,7 @@ object WebSceneSaveAsOptions {
     folder: PortalFolder = null,
     ignoreUnsupported: js.UndefOr[scala.Boolean] = js.undefined
   ): WebSceneSaveAsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (folder != null) __obj.updateDynamic("folder")(folder)
     if (!js.isUndefined(ignoreUnsupported)) __obj.updateDynamic("ignoreUnsupported")(ignoreUnsupported)
     __obj.asInstanceOf[WebSceneSaveAsOptions]

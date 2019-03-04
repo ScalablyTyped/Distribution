@@ -13,9 +13,8 @@ trait MisspelledLocation extends js.Object {
 object MisspelledLocation {
   @scala.inline
   def apply(end: scala.Double, start: scala.Double): MisspelledLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[MisspelledLocation]
   }
 }

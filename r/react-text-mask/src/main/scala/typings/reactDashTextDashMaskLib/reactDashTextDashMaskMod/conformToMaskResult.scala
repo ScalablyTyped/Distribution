@@ -13,9 +13,8 @@ trait conformToMaskResult extends js.Object {
 object conformToMaskResult {
   @scala.inline
   def apply(conformedValue: java.lang.String, meta: reactDashTextDashMaskLib.Anon_SomeCharsRejected): conformToMaskResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conformedValue")(conformedValue)
-    __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(conformedValue = conformedValue, meta = meta)
+  
     __obj.asInstanceOf[conformToMaskResult]
   }
 }

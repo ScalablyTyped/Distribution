@@ -12,8 +12,7 @@ trait MenuOptions extends ComponentOptions {
 object MenuOptions {
   @scala.inline
   def apply(menuButton: MenuButton, children: js.Array[Child] = null): MenuOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("menuButton")(menuButton)
+    val __obj = js.Dynamic.literal(menuButton = menuButton)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[MenuOptions]
   }

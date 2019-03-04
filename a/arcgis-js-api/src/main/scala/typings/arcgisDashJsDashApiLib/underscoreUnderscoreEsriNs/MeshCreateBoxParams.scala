@@ -44,10 +44,7 @@ object MeshCreateBoxParams {
     material: MeshCreateBoxParamsMaterial = null,
     size: scala.Double | MeshCreateBoxParamsSize = null
   ): MeshCreateBoxParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (imageFace != null) __obj.updateDynamic("imageFace")(imageFace)
     if (material != null) __obj.updateDynamic("material")(material)

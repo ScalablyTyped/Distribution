@@ -30,16 +30,8 @@ object Dirs {
     PictureDir: java.lang.String,
     SDCardDir: java.lang.String
   ): Dirs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CacheDir")(CacheDir)
-    __obj.updateDynamic("DCIMDir")(DCIMDir)
-    __obj.updateDynamic("DocumentDir")(DocumentDir)
-    __obj.updateDynamic("DownloadDir")(DownloadDir)
-    __obj.updateDynamic("MainBundleDir")(MainBundleDir)
-    __obj.updateDynamic("MovieDir")(MovieDir)
-    __obj.updateDynamic("MusicDir")(MusicDir)
-    __obj.updateDynamic("PictureDir")(PictureDir)
-    __obj.updateDynamic("SDCardDir")(SDCardDir)
+    val __obj = js.Dynamic.literal(CacheDir = CacheDir, DCIMDir = DCIMDir, DocumentDir = DocumentDir, DownloadDir = DownloadDir, MainBundleDir = MainBundleDir, MovieDir = MovieDir, MusicDir = MusicDir, PictureDir = PictureDir, SDCardDir = SDCardDir)
+  
     __obj.asInstanceOf[Dirs]
   }
 }

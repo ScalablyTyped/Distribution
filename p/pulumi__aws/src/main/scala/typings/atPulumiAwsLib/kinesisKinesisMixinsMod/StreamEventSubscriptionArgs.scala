@@ -34,8 +34,7 @@ object StreamEventSubscriptionArgs {
     batchSize: scala.Int | scala.Double = null,
     startingPositionTimestamp: java.lang.String = null
   ): StreamEventSubscriptionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(startingPosition = startingPosition.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     if (startingPositionTimestamp != null) __obj.updateDynamic("startingPositionTimestamp")(startingPositionTimestamp)
     __obj.asInstanceOf[StreamEventSubscriptionArgs]

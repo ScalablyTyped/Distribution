@@ -48,9 +48,8 @@ object XAccessibleTextAttributes {
       activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
     ]
   ): XAccessibleTextAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDefaultAttributes")(getDefaultAttributes)
-    __obj.updateDynamic("getRunAttributes")(getRunAttributes)
+    val __obj = js.Dynamic.literal(getDefaultAttributes = getDefaultAttributes, getRunAttributes = getRunAttributes)
+  
     __obj.asInstanceOf[XAccessibleTextAttributes]
   }
 }

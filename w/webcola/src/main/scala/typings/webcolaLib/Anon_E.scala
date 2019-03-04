@@ -16,9 +16,8 @@ object Anon_E {
     E: js.Array[webcolaLib.distSrcGeomMod.VisibilityEdge],
     V: js.Array[webcolaLib.distSrcGeomMod.VisibilityVertex]
   ): Anon_E = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("E")(E)
-    __obj.updateDynamic("V")(V)
+    val __obj = js.Dynamic.literal(E = E, V = V)
+  
     __obj.asInstanceOf[Anon_E]
   }
 }

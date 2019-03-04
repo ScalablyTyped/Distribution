@@ -20,11 +20,8 @@ object IAccelerometerReading {
     accelerationZ: scala.Double,
     timestamp: stdLib.Date
   ): IAccelerometerReading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accelerationX")(accelerationX)
-    __obj.updateDynamic("accelerationY")(accelerationY)
-    __obj.updateDynamic("accelerationZ")(accelerationZ)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(accelerationX = accelerationX, accelerationY = accelerationY, accelerationZ = accelerationZ, timestamp = timestamp)
+  
     __obj.asInstanceOf[IAccelerometerReading]
   }
 }

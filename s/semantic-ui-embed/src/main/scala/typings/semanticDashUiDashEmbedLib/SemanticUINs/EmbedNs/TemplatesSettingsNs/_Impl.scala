@@ -22,9 +22,8 @@ object _Impl {
     iframe: js.Function2[java.lang.String, java.lang.String, java.lang.String],
     placeholder: js.Function2[java.lang.String, java.lang.String, java.lang.String]
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iframe")(iframe)
-    __obj.updateDynamic("placeholder")(placeholder)
+    val __obj = js.Dynamic.literal(iframe = iframe, placeholder = placeholder)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

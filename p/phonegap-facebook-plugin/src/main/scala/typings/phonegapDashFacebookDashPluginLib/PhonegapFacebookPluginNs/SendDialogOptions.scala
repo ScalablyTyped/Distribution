@@ -26,10 +26,8 @@ trait SendDialogOptions extends BaseDialogOptions {
 object SendDialogOptions {
   @scala.inline
   def apply(link: java.lang.String, method: java.lang.String, to: java.lang.String): SendDialogOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(link = link, method = method, to = to)
+  
     __obj.asInstanceOf[SendDialogOptions]
   }
 }

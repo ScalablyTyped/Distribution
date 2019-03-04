@@ -13,9 +13,8 @@ trait EditRequestCookie extends js.Object {
 object EditRequestCookie {
   @scala.inline
   def apply(filter: RequestCookie, modification: RequestCookie): EditRequestCookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("modification")(modification)
+    val __obj = js.Dynamic.literal(filter = filter, modification = modification)
+  
     __obj.asInstanceOf[EditRequestCookie]
   }
 }

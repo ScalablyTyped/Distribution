@@ -24,13 +24,8 @@ object DataSourceDisplay {
     scene: Scene,
     update: js.Function1[JulianDate, scala.Boolean]
   ): DataSourceDisplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSources")(dataSources)
-    __obj.updateDynamic("defaultDataSource")(defaultDataSource)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(dataSources = dataSources, defaultDataSource = defaultDataSource, destroy = destroy, isDestroyed = isDestroyed, scene = scene, update = update)
+  
     __obj.asInstanceOf[DataSourceDisplay]
   }
 }

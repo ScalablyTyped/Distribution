@@ -30,15 +30,8 @@ object IPath {
     root: js.Function1[java.lang.String, scala.Unit],
     routes: IPathRoutes
   ): IPath = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("core")(core)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("rescue")(rescue)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(core = core, dispatch = dispatch, history = history, listen = listen, map = map, rescue = rescue, root = root, routes = routes)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[IPath]
   }
 }

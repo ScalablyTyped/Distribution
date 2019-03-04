@@ -20,10 +20,7 @@ object Anon_Header {
     oldDimensions: Anon_Height,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Header = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    __obj.updateDynamic("newDimensions")(newDimensions)
-    __obj.updateDynamic("oldDimensions")(oldDimensions)
+    val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], newDimensions = newDimensions, oldDimensions = oldDimensions)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Header]
   }

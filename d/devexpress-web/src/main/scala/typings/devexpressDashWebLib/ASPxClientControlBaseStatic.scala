@@ -16,8 +16,8 @@ trait ASPxClientControlBaseStatic extends js.Object {
 object ASPxClientControlBaseStatic {
   @scala.inline
   def apply(Cast: js.Function1[js.Object, ASPxClientControlBase]): ASPxClientControlBaseStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cast")(Cast)
+    val __obj = js.Dynamic.literal(Cast = Cast)
+  
     __obj.asInstanceOf[ASPxClientControlBaseStatic]
   }
 }

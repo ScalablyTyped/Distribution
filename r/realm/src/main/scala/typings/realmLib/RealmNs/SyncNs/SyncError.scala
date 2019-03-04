@@ -22,11 +22,7 @@ object SyncError {
     name: java.lang.String,
     category: java.lang.String = null
   ): SyncError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("isFatal")(isFatal)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(code = code, isFatal = isFatal, message = message, name = name)
     if (category != null) __obj.updateDynamic("category")(category)
     __obj.asInstanceOf[SyncError]
   }

@@ -12,8 +12,8 @@ trait IAMFStringOptions extends js.Object {
 object IAMFStringOptions {
   @scala.inline
   def apply(unit: java.lang.String): IAMFStringOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(unit = unit)
+  
     __obj.asInstanceOf[IAMFStringOptions]
   }
 }

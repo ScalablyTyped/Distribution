@@ -26,12 +26,8 @@ object ISearchCondition {
     Set: js.Function3[IExpression, mfilesLib.MFilesNs.MFConditionType, ITypedValue, scala.Unit],
     TypedValue: ITypedValue
   ): ISearchCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ConditionType")(ConditionType)
-    __obj.updateDynamic("Expression")(Expression)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("TypedValue")(TypedValue)
+    val __obj = js.Dynamic.literal(Clone = Clone, ConditionType = ConditionType, Expression = Expression, Set = Set, TypedValue = TypedValue)
+  
     __obj.asInstanceOf[ISearchCondition]
   }
 }

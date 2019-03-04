@@ -113,36 +113,8 @@ object Config {
     staticPlot: scala.Boolean,
     topojsonURL: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autosizable")(autosizable)
-    __obj.updateDynamic("displayModeBar")(displayModeBar.asInstanceOf[js.Any])
-    __obj.updateDynamic("displaylogo")(displaylogo)
-    __obj.updateDynamic("doubleClick")(doubleClick.asInstanceOf[js.Any])
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("edits")(edits)
-    __obj.updateDynamic("fillFrame")(fillFrame)
-    __obj.updateDynamic("frameMargins")(frameMargins)
-    __obj.updateDynamic("globalTransforms")(globalTransforms)
-    __obj.updateDynamic("linkText")(linkText)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    __obj.updateDynamic("mapboxAccessToken")(mapboxAccessToken)
-    __obj.updateDynamic("modeBarButtons")(modeBarButtons.asInstanceOf[js.Any])
-    __obj.updateDynamic("modeBarButtonsToAdd")(modeBarButtonsToAdd.asInstanceOf[js.Any])
-    __obj.updateDynamic("modeBarButtonsToRemove")(modeBarButtonsToRemove)
-    __obj.updateDynamic("plotGlPixelRatio")(plotGlPixelRatio)
-    __obj.updateDynamic("queueLength")(queueLength)
-    __obj.updateDynamic("responsive")(responsive)
-    __obj.updateDynamic("scrollZoom")(scrollZoom)
-    __obj.updateDynamic("sendData")(sendData)
-    __obj.updateDynamic("setBackground")(setBackground.asInstanceOf[js.Any])
-    __obj.updateDynamic("showAxisDragHandles")(showAxisDragHandles)
-    __obj.updateDynamic("showAxisRangeEntryBoxes")(showAxisRangeEntryBoxes)
-    __obj.updateDynamic("showLink")(showLink)
-    __obj.updateDynamic("showSources")(showSources)
-    __obj.updateDynamic("showTips")(showTips)
-    __obj.updateDynamic("staticPlot")(staticPlot)
-    __obj.updateDynamic("topojsonURL")(topojsonURL)
+    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = setBackground.asInstanceOf[js.Any], showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
+  
     __obj.asInstanceOf[Config]
   }
 }

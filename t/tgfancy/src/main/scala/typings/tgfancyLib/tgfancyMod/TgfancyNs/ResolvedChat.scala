@@ -20,10 +20,8 @@ object ResolvedChat {
     username: java.lang.String,
     when: java.lang.String
   ): ResolvedChat = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("username")(username)
-    __obj.updateDynamic("when")(when)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], username = username, when = when)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ResolvedChat]
   }
 }

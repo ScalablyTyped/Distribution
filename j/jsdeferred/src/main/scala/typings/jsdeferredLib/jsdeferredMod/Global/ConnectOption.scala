@@ -20,8 +20,7 @@ object ConnectOption {
     ng: scala.Int | scala.Double = null,
     ok: scala.Int | scala.Double = null
   ): ConnectOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     if (args != null) __obj.updateDynamic("args")(args)
     if (ng != null) __obj.updateDynamic("ng")(ng.asInstanceOf[js.Any])
     if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])

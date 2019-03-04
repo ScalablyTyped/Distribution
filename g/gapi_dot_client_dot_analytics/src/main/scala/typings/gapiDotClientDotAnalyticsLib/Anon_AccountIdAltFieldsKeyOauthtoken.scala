@@ -42,9 +42,7 @@ object Anon_AccountIdAltFieldsKeyOauthtoken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    val __obj = js.Dynamic.literal(accountId = accountId, webPropertyId = webPropertyId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

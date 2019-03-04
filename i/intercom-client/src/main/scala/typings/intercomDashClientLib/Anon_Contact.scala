@@ -16,9 +16,8 @@ object Anon_Contact {
     contact: intercomDashClientLib.leadMod.LeadIdentifier,
     user: intercomDashClientLib.userMod.UserIdentifier
   ): Anon_Contact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contact")(contact)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(contact = contact, user = user)
+  
     __obj.asInstanceOf[Anon_Contact]
   }
 }

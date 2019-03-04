@@ -29,9 +29,7 @@ object DeepLinkParameters {
     subEntityLabel: java.lang.String,
     subEntityWebUrl: java.lang.String = null
   ): DeepLinkParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subEntityId")(subEntityId)
-    __obj.updateDynamic("subEntityLabel")(subEntityLabel)
+    val __obj = js.Dynamic.literal(subEntityId = subEntityId, subEntityLabel = subEntityLabel)
     if (subEntityWebUrl != null) __obj.updateDynamic("subEntityWebUrl")(subEntityWebUrl)
     __obj.asInstanceOf[DeepLinkParameters]
   }

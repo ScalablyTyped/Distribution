@@ -28,15 +28,8 @@ object RESTAPIResponse {
     setLocation: js.Function1[java.lang.String, scala.Unit],
     setStatus: js.Function1[scala.Double, scala.Unit]
   ): RESTAPIResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStreamWriter")(getStreamWriter)
-    __obj.updateDynamic("setBody")(setBody)
-    __obj.updateDynamic("setContentType")(setContentType)
-    __obj.updateDynamic("setError")(setError)
-    __obj.updateDynamic("setHeader")(setHeader)
-    __obj.updateDynamic("setHeaders")(setHeaders)
-    __obj.updateDynamic("setLocation")(setLocation)
-    __obj.updateDynamic("setStatus")(setStatus)
+    val __obj = js.Dynamic.literal(getStreamWriter = getStreamWriter, setBody = setBody, setContentType = setContentType, setError = setError, setHeader = setHeader, setHeaders = setHeaders, setLocation = setLocation, setStatus = setStatus)
+  
     __obj.asInstanceOf[RESTAPIResponse]
   }
 }

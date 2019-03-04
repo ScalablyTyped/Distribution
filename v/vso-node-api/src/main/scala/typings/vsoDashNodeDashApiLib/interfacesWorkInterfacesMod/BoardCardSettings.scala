@@ -12,8 +12,8 @@ trait BoardCardSettings extends js.Object {
 object BoardCardSettings {
   @scala.inline
   def apply(cards: org.scalablytyped.runtime.StringDictionary[js.Array[FieldSetting]]): BoardCardSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cards")(cards)
+    val __obj = js.Dynamic.literal(cards = cards)
+  
     __obj.asInstanceOf[BoardCardSettings]
   }
 }

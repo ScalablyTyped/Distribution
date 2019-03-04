@@ -16,7 +16,8 @@ object Anon_Attrs {
     `type`: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Attrs[S] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     __obj.asInstanceOf[Anon_Attrs[S]]
   }

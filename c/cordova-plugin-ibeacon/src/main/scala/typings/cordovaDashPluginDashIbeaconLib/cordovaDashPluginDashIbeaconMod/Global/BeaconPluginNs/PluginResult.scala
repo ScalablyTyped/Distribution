@@ -24,13 +24,8 @@ object PluginResult {
     region: Region,
     state: java.lang.String
   ): PluginResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationStatus")(authorizationStatus)
-    __obj.updateDynamic("beacons")(beacons)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(authorizationStatus = authorizationStatus, beacons = beacons, error = error, eventType = eventType, region = region, state = state)
+  
     __obj.asInstanceOf[PluginResult]
   }
 }

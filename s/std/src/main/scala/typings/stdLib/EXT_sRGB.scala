@@ -20,11 +20,8 @@ object EXT_sRGB {
     SRGB_ALPHA_EXT: GLenum,
     SRGB_EXT: GLenum
   ): EXT_sRGB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT")(FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT)
-    __obj.updateDynamic("SRGB8_ALPHA8_EXT")(SRGB8_ALPHA8_EXT)
-    __obj.updateDynamic("SRGB_ALPHA_EXT")(SRGB_ALPHA_EXT)
-    __obj.updateDynamic("SRGB_EXT")(SRGB_EXT)
+    val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT = FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT, SRGB8_ALPHA8_EXT = SRGB8_ALPHA8_EXT, SRGB_ALPHA_EXT = SRGB_ALPHA_EXT, SRGB_EXT = SRGB_EXT)
+  
     __obj.asInstanceOf[EXT_sRGB]
   }
 }

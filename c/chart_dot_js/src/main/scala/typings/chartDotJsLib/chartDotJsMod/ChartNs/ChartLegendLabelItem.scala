@@ -24,8 +24,7 @@ object ChartLegendLabelItem {
     strokeStyle: java.lang.String = null,
     text: java.lang.String = null
   ): ChartLegendLabelItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datasetIndex")(datasetIndex)
+    val __obj = js.Dynamic.literal(datasetIndex = datasetIndex)
     if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])

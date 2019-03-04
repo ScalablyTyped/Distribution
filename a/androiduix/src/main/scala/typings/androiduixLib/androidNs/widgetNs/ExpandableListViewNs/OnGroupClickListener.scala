@@ -25,8 +25,8 @@ object OnGroupClickListener {
       scala.Boolean
     ]
   ): OnGroupClickListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGroupClick")(onGroupClick)
+    val __obj = js.Dynamic.literal(onGroupClick = onGroupClick)
+  
     __obj.asInstanceOf[OnGroupClickListener]
   }
 }

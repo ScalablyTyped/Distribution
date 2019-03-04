@@ -14,10 +14,8 @@ trait GeocodeResult extends js.Object {
 object GeocodeResult {
   @scala.inline
   def apply(geocodes: js.Array[LngLat], info: java.lang.String, resultNum: scala.Double): GeocodeResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geocodes")(geocodes)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("resultNum")(resultNum)
+    val __obj = js.Dynamic.literal(geocodes = geocodes, info = info, resultNum = resultNum)
+  
     __obj.asInstanceOf[GeocodeResult]
   }
 }

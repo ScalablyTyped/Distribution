@@ -12,8 +12,8 @@ trait FloatingLabel extends js.Object {
 object FloatingLabel {
   @scala.inline
   def apply(refresh: js.Function0[scala.Unit]): FloatingLabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("refresh")(refresh)
+    val __obj = js.Dynamic.literal(refresh = refresh)
+  
     __obj.asInstanceOf[FloatingLabel]
   }
 }

@@ -20,8 +20,8 @@ object Variance {
     kind: astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus,
     `type`: astDashTypesLib.astDashTypesLibStrings.Variance
   ): Variance = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Variance]
   }
 }

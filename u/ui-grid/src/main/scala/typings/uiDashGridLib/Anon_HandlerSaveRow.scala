@@ -32,8 +32,8 @@ object Anon_HandlerSaveRow {
       scala.Unit
     ]
   ): Anon_HandlerSaveRow[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("saveRow")(saveRow)
+    val __obj = js.Dynamic.literal(saveRow = saveRow)
+  
     __obj.asInstanceOf[Anon_HandlerSaveRow[TEntity]]
   }
 }

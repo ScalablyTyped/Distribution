@@ -16,9 +16,8 @@ object XCodeNameQuery {
     getCodeNameForContainer: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, java.lang.String],
     getCodeNameForObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, java.lang.String]
   ): XCodeNameQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCodeNameForContainer")(getCodeNameForContainer)
-    __obj.updateDynamic("getCodeNameForObject")(getCodeNameForObject)
+    val __obj = js.Dynamic.literal(getCodeNameForContainer = getCodeNameForContainer, getCodeNameForObject = getCodeNameForObject)
+  
     __obj.asInstanceOf[XCodeNameQuery]
   }
 }

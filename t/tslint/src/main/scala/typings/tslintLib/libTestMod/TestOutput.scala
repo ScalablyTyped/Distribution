@@ -26,14 +26,8 @@ object TestOutput {
     markupFromMarkup: java.lang.String,
     skipped: tslintLib.tslintLibNumbers.`false`
   ): TestOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorsFromLinter")(errorsFromLinter)
-    __obj.updateDynamic("errorsFromMarkup")(errorsFromMarkup)
-    __obj.updateDynamic("fixesFromLinter")(fixesFromLinter)
-    __obj.updateDynamic("fixesFromMarkup")(fixesFromMarkup)
-    __obj.updateDynamic("markupFromLinter")(markupFromLinter)
-    __obj.updateDynamic("markupFromMarkup")(markupFromMarkup)
-    __obj.updateDynamic("skipped")(skipped)
+    val __obj = js.Dynamic.literal(errorsFromLinter = errorsFromLinter, errorsFromMarkup = errorsFromMarkup, fixesFromLinter = fixesFromLinter, fixesFromMarkup = fixesFromMarkup, markupFromLinter = markupFromLinter, markupFromMarkup = markupFromMarkup, skipped = skipped)
+  
     __obj.asInstanceOf[TestOutput]
   }
 }

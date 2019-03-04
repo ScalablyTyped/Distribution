@@ -62,16 +62,8 @@ object Size {
     setTo: js.Function2[scala.Double, scala.Double, Size],
     width: scala.Double
   ): Size = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("equalTo")(equalTo)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("equalsApprox")(equalsApprox)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("isReal")(isReal)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setTo")(setTo)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(copy = copy, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, height = height, isReal = isReal, set = set, setTo = setTo, width = width)
+  
     __obj.asInstanceOf[Size]
   }
 }

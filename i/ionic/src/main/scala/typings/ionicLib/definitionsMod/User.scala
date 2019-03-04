@@ -14,9 +14,7 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(email: java.lang.String, id: scala.Double, oauth_identities: OAuthIdentity = null): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(email = email, id = id)
     if (oauth_identities != null) __obj.updateDynamic("oauth_identities")(oauth_identities)
     __obj.asInstanceOf[User]
   }

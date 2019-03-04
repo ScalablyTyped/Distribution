@@ -35,17 +35,8 @@ object OptionMetadata {
     TransitionData: js.Any,
     Value: scala.Double
   ): OptionMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("ExternalValue")(ExternalValue)
-    __obj.updateDynamic("HasChanged")(HasChanged)
-    __obj.updateDynamic("IsManaged")(IsManaged)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("MetadataId")(MetadataId)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("TransitionData")(TransitionData)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Color = Color, Description = Description, ExternalValue = ExternalValue, HasChanged = HasChanged, IsManaged = IsManaged, Label = Label, MetadataId = MetadataId, State = State, TransitionData = TransitionData, Value = Value)
+  
     __obj.asInstanceOf[OptionMetadata]
   }
 }

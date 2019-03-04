@@ -13,9 +13,8 @@ trait TestAlt extends js.Object {
 object TestAlt {
   @scala.inline
   def apply(it: SkipOnlyTest, test: SkipOnlyTest): TestAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("it")(it)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(it = it, test = test)
+  
     __obj.asInstanceOf[TestAlt]
   }
 }

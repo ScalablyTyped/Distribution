@@ -32,9 +32,7 @@ object Options {
     proxyHttpsOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     sockets: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(host = host, port = port)
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
     if (originHttpsOptions != null) __obj.updateDynamic("originHttpsOptions")(originHttpsOptions)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])

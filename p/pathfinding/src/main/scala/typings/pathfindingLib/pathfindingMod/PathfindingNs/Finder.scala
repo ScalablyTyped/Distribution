@@ -21,8 +21,8 @@ object Finder {
       js.Array[js.Array[scala.Double]]
     ]
   ): Finder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findPath")(findPath)
+    val __obj = js.Dynamic.literal(findPath = findPath)
+  
     __obj.asInstanceOf[Finder]
   }
 }

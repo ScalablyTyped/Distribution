@@ -12,8 +12,8 @@ trait BluetoothDeviceEventHandlers extends js.Object {
 object BluetoothDeviceEventHandlers {
   @scala.inline
   def apply(ongattserverdisconnected: js.Function2[BluetoothDeviceEventHandlers, stdLib.Event, js.Any]): BluetoothDeviceEventHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ongattserverdisconnected")(ongattserverdisconnected)
+    val __obj = js.Dynamic.literal(ongattserverdisconnected = ongattserverdisconnected)
+  
     __obj.asInstanceOf[BluetoothDeviceEventHandlers]
   }
 }

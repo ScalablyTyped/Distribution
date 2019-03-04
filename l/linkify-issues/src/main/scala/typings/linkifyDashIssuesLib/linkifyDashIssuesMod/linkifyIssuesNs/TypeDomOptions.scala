@@ -20,9 +20,8 @@ object TypeDomOptions {
     ] = null,
     baseUrl: java.lang.String = null
   ): TypeDomOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("repo")(repo)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(repo = repo, user = user)
+    __obj.updateDynamic("type")(`type`)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     __obj.asInstanceOf[TypeDomOptions]

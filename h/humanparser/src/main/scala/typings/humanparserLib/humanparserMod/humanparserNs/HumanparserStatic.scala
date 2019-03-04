@@ -18,10 +18,8 @@ object HumanparserStatic {
     parseAddress: js.Function1[java.lang.String, AddressOutput],
     parseName: js.Function1[java.lang.String, NameOutput]
   ): HumanparserStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFullestName")(getFullestName)
-    __obj.updateDynamic("parseAddress")(parseAddress)
-    __obj.updateDynamic("parseName")(parseName)
+    val __obj = js.Dynamic.literal(getFullestName = getFullestName, parseAddress = parseAddress, parseName = parseName)
+  
     __obj.asInstanceOf[HumanparserStatic]
   }
 }

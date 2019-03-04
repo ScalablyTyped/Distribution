@@ -21,11 +21,8 @@ object strings {
     ICON_SELECTOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`DOTmdc-toolbar__icon`,
     TITLE_SELECTOR: atMaterialToolbarLib.atMaterialToolbarLibStrings.`DOTmdc-toolbar__title`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHANGE_EVENT")(CHANGE_EVENT)
-    __obj.updateDynamic("FIRST_ROW_SELECTOR")(FIRST_ROW_SELECTOR)
-    __obj.updateDynamic("ICON_SELECTOR")(ICON_SELECTOR)
-    __obj.updateDynamic("TITLE_SELECTOR")(TITLE_SELECTOR)
+    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, FIRST_ROW_SELECTOR = FIRST_ROW_SELECTOR, ICON_SELECTOR = ICON_SELECTOR, TITLE_SELECTOR = TITLE_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

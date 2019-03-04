@@ -19,8 +19,7 @@ trait RSAKeyPairKeyObjectOptions extends js.Object {
 object RSAKeyPairKeyObjectOptions {
   @scala.inline
   def apply(modulusLength: scala.Double, publicExponent: scala.Int | scala.Double = null): RSAKeyPairKeyObjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modulusLength")(modulusLength)
+    val __obj = js.Dynamic.literal(modulusLength = modulusLength)
     if (publicExponent != null) __obj.updateDynamic("publicExponent")(publicExponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[RSAKeyPairKeyObjectOptions]
   }

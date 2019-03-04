@@ -22,10 +22,7 @@ object INotifyConfig {
     template: java.lang.String = null,
     templateName: java.lang.String = null
   ): INotifyConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namedDefaults")(namedDefaults)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(name = name, namedDefaults = namedDefaults, options = options)
     if (template != null) __obj.updateDynamic("template")(template)
     if (templateName != null) __obj.updateDynamic("templateName")(templateName)
     __obj.asInstanceOf[INotifyConfig]

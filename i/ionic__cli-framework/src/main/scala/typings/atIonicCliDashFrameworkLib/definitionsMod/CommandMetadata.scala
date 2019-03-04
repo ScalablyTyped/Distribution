@@ -23,9 +23,7 @@ object CommandMetadata {
     inputs: js.Array[I] = null,
     options: js.Array[O] = null
   ): CommandMetadata[I, O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(name = name, summary = summary)
     if (description != null) __obj.updateDynamic("description")(description)
     if (exampleCommands != null) __obj.updateDynamic("exampleCommands")(exampleCommands)
     if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes)

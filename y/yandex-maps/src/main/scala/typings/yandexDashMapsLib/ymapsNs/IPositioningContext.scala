@@ -18,10 +18,8 @@ object IPositioningContext {
     getZoom: js.Function0[scala.Double],
     toClientPixels: js.Function1[js.Array[scala.Double], js.Array[scala.Double]]
   ): IPositioningContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromClientPixels")(fromClientPixels)
-    __obj.updateDynamic("getZoom")(getZoom)
-    __obj.updateDynamic("toClientPixels")(toClientPixels)
+    val __obj = js.Dynamic.literal(fromClientPixels = fromClientPixels, getZoom = getZoom, toClientPixels = toClientPixels)
+  
     __obj.asInstanceOf[IPositioningContext]
   }
 }

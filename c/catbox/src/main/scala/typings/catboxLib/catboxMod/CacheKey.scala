@@ -15,9 +15,8 @@ trait CacheKey extends js.Object {
 object CacheKey {
   @scala.inline
   def apply(id: java.lang.String, segment: java.lang.String): CacheKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("segment")(segment)
+    val __obj = js.Dynamic.literal(id = id, segment = segment)
+  
     __obj.asInstanceOf[CacheKey]
   }
 }

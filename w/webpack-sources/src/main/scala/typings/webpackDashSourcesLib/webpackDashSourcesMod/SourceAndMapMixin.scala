@@ -16,9 +16,8 @@ object SourceAndMapMixin {
     map: js.Function1[webpackDashSourcesLib.Anon_Columns, sourceDashMapLib.sourceDashMapMod.RawSourceMap],
     sourceAndMap: js.Function1[webpackDashSourcesLib.Anon_Columns, webpackDashSourcesLib.Anon_Map]
   ): SourceAndMapMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("sourceAndMap")(sourceAndMap)
+    val __obj = js.Dynamic.literal(map = map, sourceAndMap = sourceAndMap)
+  
     __obj.asInstanceOf[SourceAndMapMixin]
   }
 }

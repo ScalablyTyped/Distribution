@@ -28,8 +28,7 @@ object Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups {
     serviceAccessSecurityGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceProfile")(instanceProfile.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instanceProfile = instanceProfile.asInstanceOf[js.Any])
     if (additionalMasterSecurityGroups != null) __obj.updateDynamic("additionalMasterSecurityGroups")(additionalMasterSecurityGroups.asInstanceOf[js.Any])
     if (additionalSlaveSecurityGroups != null) __obj.updateDynamic("additionalSlaveSecurityGroups")(additionalSlaveSecurityGroups.asInstanceOf[js.Any])
     if (emrManagedMasterSecurityGroup != null) __obj.updateDynamic("emrManagedMasterSecurityGroup")(emrManagedMasterSecurityGroup.asInstanceOf[js.Any])

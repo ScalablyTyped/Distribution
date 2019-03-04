@@ -26,14 +26,8 @@ object EncStatic {
     Utf16LE: ICoder,
     Utf8: ICoder
   ): EncStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Base64")(Base64)
-    __obj.updateDynamic("Hex")(Hex)
-    __obj.updateDynamic("Latin1")(Latin1)
-    __obj.updateDynamic("Utf16")(Utf16)
-    __obj.updateDynamic("Utf16BE")(Utf16BE)
-    __obj.updateDynamic("Utf16LE")(Utf16LE)
-    __obj.updateDynamic("Utf8")(Utf8)
+    val __obj = js.Dynamic.literal(Base64 = Base64, Hex = Hex, Latin1 = Latin1, Utf16 = Utf16, Utf16BE = Utf16BE, Utf16LE = Utf16LE, Utf8 = Utf8)
+  
     __obj.asInstanceOf[EncStatic]
   }
 }

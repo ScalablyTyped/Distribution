@@ -24,11 +24,7 @@ object Anon_Device {
     device: java.lang.String = null,
     os: java.lang.String = null
   ): Anon_Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("patch")(patch)
+    val __obj = js.Dynamic.literal(family = family, major = major, minor = minor, patch = patch)
     if (device != null) __obj.updateDynamic("device")(device)
     if (os != null) __obj.updateDynamic("os")(os)
     __obj.asInstanceOf[Anon_Device]

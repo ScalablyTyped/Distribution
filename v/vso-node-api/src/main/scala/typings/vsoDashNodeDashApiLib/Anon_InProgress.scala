@@ -14,10 +14,8 @@ trait Anon_InProgress extends js.Object {
 object Anon_InProgress {
   @scala.inline
   def apply(inProgress: scala.Double, incoming: scala.Double, outgoing: scala.Double): Anon_InProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("incoming")(incoming)
-    __obj.updateDynamic("outgoing")(outgoing)
+    val __obj = js.Dynamic.literal(inProgress = inProgress, incoming = incoming, outgoing = outgoing)
+  
     __obj.asInstanceOf[Anon_InProgress]
   }
 }

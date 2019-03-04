@@ -24,13 +24,8 @@ object Anon_AllPermissions {
     none: scala.Double,
     view: scala.Double
   ): Anon_AllPermissions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allPermissions")(allPermissions)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("edit")(edit)
-    __obj.updateDynamic("manage")(manage)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(allPermissions = allPermissions, delete = delete, edit = edit, manage = manage, none = none, view = view)
+  
     __obj.asInstanceOf[Anon_AllPermissions]
   }
 }

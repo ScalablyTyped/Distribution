@@ -14,8 +14,8 @@ object FetchByKeysCapability {
   def apply[D](
     implementation: atOracleOraclejetLib.atOracleOraclejetLibStrings.iteration | atOracleOraclejetLib.atOracleOraclejetLibStrings.lookup
   ): FetchByKeysCapability[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(implementation = implementation.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FetchByKeysCapability[D]]
   }
 }

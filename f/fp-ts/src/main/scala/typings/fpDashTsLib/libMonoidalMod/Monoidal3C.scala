@@ -29,13 +29,8 @@ object Monoidal3C {
     ],
     unit: js.Function0[fpDashTsLib.libHKTMod.Type3[F, U, L, scala.Unit]]
   ): Monoidal3C[F, U, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mult")(mult)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], map = map, mult = mult, unit = unit)
+  
     __obj.asInstanceOf[Monoidal3C[F, U, L]]
   }
 }

@@ -25,10 +25,8 @@ object XAnimation {
     startAnimation: js.Function0[scala.Unit],
     stopAnimation: js.Function0[scala.Unit]
   ): XAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAnimationRunning")(isAnimationRunning)
-    __obj.updateDynamic("startAnimation")(startAnimation)
-    __obj.updateDynamic("stopAnimation")(stopAnimation)
+    val __obj = js.Dynamic.literal(isAnimationRunning = isAnimationRunning, startAnimation = startAnimation, stopAnimation = stopAnimation)
+  
     __obj.asInstanceOf[XAnimation]
   }
 }

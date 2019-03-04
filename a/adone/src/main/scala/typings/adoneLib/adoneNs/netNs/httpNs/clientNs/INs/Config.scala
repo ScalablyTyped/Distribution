@@ -64,33 +64,8 @@ object Config {
     xsrfCookieName: java.lang.String,
     xsrfHeaderName: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapter")(adapter)
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("baseURL")(baseURL)
-    __obj.updateDynamic("cancelToken")(cancelToken)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("formData")(formData)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("httpAgent")(httpAgent)
-    __obj.updateDynamic("httpsAgent")(httpsAgent)
-    __obj.updateDynamic("maxContentLength")(maxContentLength)
-    __obj.updateDynamic("maxRedirects")(maxRedirects)
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("onUploadProgress")(onUploadProgress)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("paramsSerializer")(paramsSerializer)
-    __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
-    __obj.updateDynamic("responseEncoding")(responseEncoding)
-    __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("transformRequest")(transformRequest)
-    __obj.updateDynamic("transformResponse")(transformResponse)
-    __obj.updateDynamic("transport")(transport)
-    __obj.updateDynamic("validateStatus")(validateStatus)
-    __obj.updateDynamic("xsrfCookieName")(xsrfCookieName)
-    __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName)
+    val __obj = js.Dynamic.literal(adapter = adapter, auth = auth, baseURL = baseURL, cancelToken = cancelToken, data = data.asInstanceOf[js.Any], formData = formData, headers = headers, httpAgent = httpAgent, httpsAgent = httpsAgent, maxContentLength = maxContentLength, maxRedirects = maxRedirects, method = method.asInstanceOf[js.Any], onUploadProgress = onUploadProgress, params = params, paramsSerializer = paramsSerializer, proxy = proxy.asInstanceOf[js.Any], rejectUnauthorized = rejectUnauthorized, responseEncoding = responseEncoding, responseType = responseType.asInstanceOf[js.Any], timeout = timeout, transformRequest = transformRequest, transformResponse = transformResponse, transport = transport, validateStatus = validateStatus, xsrfCookieName = xsrfCookieName, xsrfHeaderName = xsrfHeaderName)
+  
     __obj.asInstanceOf[Config]
   }
 }

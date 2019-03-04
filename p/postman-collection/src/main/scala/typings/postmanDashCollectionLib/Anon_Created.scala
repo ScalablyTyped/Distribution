@@ -18,10 +18,8 @@ object Anon_Created {
     deleted: js.Array[java.lang.String],
     updated: js.Array[java.lang.String]
   ): Anon_Created = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(created = created, deleted = deleted, updated = updated)
+  
     __obj.asInstanceOf[Anon_Created]
   }
 }

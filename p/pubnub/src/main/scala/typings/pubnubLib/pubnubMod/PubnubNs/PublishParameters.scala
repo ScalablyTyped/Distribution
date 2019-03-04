@@ -25,9 +25,7 @@ object PublishParameters {
     storeInHistory: js.UndefOr[scala.Boolean] = js.undefined,
     ttl: scala.Int | scala.Double = null
   ): PublishParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(channel = channel, message = message)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost)
     if (!js.isUndefined(storeInHistory)) __obj.updateDynamic("storeInHistory")(storeInHistory)

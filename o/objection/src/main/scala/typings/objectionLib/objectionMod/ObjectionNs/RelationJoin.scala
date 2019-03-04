@@ -18,9 +18,7 @@ object RelationJoin {
     to: java.lang.String | Reference | (js.Array[java.lang.String | Reference]),
     through: RelationThrough = null
   ): RelationJoin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (through != null) __obj.updateDynamic("through")(through)
     __obj.asInstanceOf[RelationJoin]
   }

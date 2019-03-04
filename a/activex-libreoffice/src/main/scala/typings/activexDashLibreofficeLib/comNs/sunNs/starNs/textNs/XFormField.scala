@@ -27,15 +27,8 @@ object XFormField {
     release: js.Function0[scala.Unit],
     setFieldType: js.Function1[java.lang.String, scala.Unit]
   ): XFormField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("Parameters")(Parameters)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFieldType")(getFieldType)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFieldType")(setFieldType)
+    val __obj = js.Dynamic.literal(FieldType = FieldType, Parameters = Parameters, acquire = acquire, getFieldType = getFieldType, getParameters = getParameters, queryInterface = queryInterface, release = release, setFieldType = setFieldType)
+  
     __obj.asInstanceOf[XFormField]
   }
 }

@@ -20,10 +20,7 @@ object Node {
     name: java.lang.String,
     content: java.lang.String = null
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name)
     if (content != null) __obj.updateDynamic("content")(content)
     __obj.asInstanceOf[Node]
   }

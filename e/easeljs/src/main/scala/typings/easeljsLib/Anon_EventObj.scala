@@ -12,8 +12,8 @@ trait Anon_EventObj extends js.Object {
 object Anon_EventObj {
   @scala.inline
   def apply(handleEvent: js.Function1[js.Object, scala.Boolean]): Anon_EventObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleEvent")(handleEvent)
+    val __obj = js.Dynamic.literal(handleEvent = handleEvent)
+  
     __obj.asInstanceOf[Anon_EventObj]
   }
 }

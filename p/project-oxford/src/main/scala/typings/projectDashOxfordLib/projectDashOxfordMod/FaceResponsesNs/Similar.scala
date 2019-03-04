@@ -12,8 +12,8 @@ trait Similar extends js.Object {
 object Similar {
   @scala.inline
   def apply(faceIds: js.Array[java.lang.String]): Similar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faceIds")(faceIds)
+    val __obj = js.Dynamic.literal(faceIds = faceIds)
+  
     __obj.asInstanceOf[Similar]
   }
 }

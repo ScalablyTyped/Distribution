@@ -20,9 +20,7 @@ object Anon_ArraySize {
     arraySize: scala.Int | scala.Double = null,
     jobAttempts: scala.Int | scala.Double = null
   ): Anon_ArraySize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobDefinition")(jobDefinition)
-    __obj.updateDynamic("jobName")(jobName)
+    val __obj = js.Dynamic.literal(jobDefinition = jobDefinition, jobName = jobName)
     if (arraySize != null) __obj.updateDynamic("arraySize")(arraySize.asInstanceOf[js.Any])
     if (jobAttempts != null) __obj.updateDynamic("jobAttempts")(jobAttempts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArraySize]

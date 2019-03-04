@@ -24,11 +24,8 @@ object CorrelationProperty {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("correlationPropertyRetrievalExpression")(correlationPropertyRetrievalExpression)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($type = $type, correlationPropertyRetrievalExpression = correlationPropertyRetrievalExpression, id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

@@ -18,10 +18,8 @@ object ReInterval {
     destroy: js.Function0[scala.Unit],
     reschedule: js.Function1[scala.Double, scala.Unit]
   ): ReInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("reschedule")(reschedule)
+    val __obj = js.Dynamic.literal(clear = clear, destroy = destroy, reschedule = reschedule)
+  
     __obj.asInstanceOf[ReInterval]
   }
 }

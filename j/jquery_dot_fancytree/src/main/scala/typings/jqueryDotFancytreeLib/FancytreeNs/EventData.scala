@@ -39,15 +39,8 @@ object EventData {
     tree: Fancytree,
     widget: js.Any
   ): EventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("targetType")(targetType)
-    __obj.updateDynamic("tree")(tree)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(node = node, options = options, originalEvent = originalEvent, response = response, result = result, targetType = targetType, tree = tree, widget = widget)
+  
     __obj.asInstanceOf[EventData]
   }
 }

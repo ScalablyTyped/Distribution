@@ -27,9 +27,8 @@ object ParserBlock {
     ],
     ruler: markdownDashItLib.libMod.MarkdownItNs.RulerBlock
   ): ParserBlock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("ruler")(ruler)
+    val __obj = js.Dynamic.literal(parse = parse, ruler = ruler)
+  
     __obj.asInstanceOf[ParserBlock]
   }
 }

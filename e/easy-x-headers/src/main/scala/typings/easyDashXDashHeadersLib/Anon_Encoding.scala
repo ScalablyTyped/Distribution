@@ -13,8 +13,7 @@ trait Anon_Encoding extends js.Object {
 object Anon_Encoding {
   @scala.inline
   def apply(encoding: java.lang.String, flag: java.lang.String = null): Anon_Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (flag != null) __obj.updateDynamic("flag")(flag)
     __obj.asInstanceOf[Anon_Encoding]
   }

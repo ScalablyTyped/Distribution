@@ -63,21 +63,8 @@ object EditsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
     ]
   ): EditsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apklistings")(apklistings)
-    __obj.updateDynamic("apks")(apks)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deobfuscationfiles")(deobfuscationfiles)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("expansionfiles")(expansionfiles)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("listings")(listings)
-    __obj.updateDynamic("testers")(testers)
-    __obj.updateDynamic("tracks")(tracks)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(apklistings = apklistings, apks = apks, commit = commit, delete = delete, deobfuscationfiles = deobfuscationfiles, details = details, expansionfiles = expansionfiles, get = get, images = images, insert = insert, listings = listings, testers = testers, tracks = tracks, validate = validate)
+  
     __obj.asInstanceOf[EditsResource]
   }
 }

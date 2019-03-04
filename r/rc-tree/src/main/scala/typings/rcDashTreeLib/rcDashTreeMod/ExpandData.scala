@@ -13,9 +13,8 @@ trait ExpandData extends js.Object {
 object ExpandData {
   @scala.inline
   def apply(expanded: scala.Boolean, node: InternalTreeNode): ExpandData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(expanded = expanded, node = node)
+  
     __obj.asInstanceOf[ExpandData]
   }
 }

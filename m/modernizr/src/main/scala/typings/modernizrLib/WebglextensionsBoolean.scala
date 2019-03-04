@@ -63,32 +63,8 @@ object WebglextensionsBoolean {
     WEBKIT_WEBGL_depth_texture: scala.Boolean,
     WEBKIT_WEBGL_lose_context: scala.Boolean
   ): WebglextensionsBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANGLE_instanced_arrays")(ANGLE_instanced_arrays)
-    __obj.updateDynamic("EXT_blend_minmax")(EXT_blend_minmax)
-    __obj.updateDynamic("EXT_disjoint_timer_query")(EXT_disjoint_timer_query)
-    __obj.updateDynamic("EXT_frag_depth")(EXT_frag_depth)
-    __obj.updateDynamic("EXT_sRGB")(EXT_sRGB)
-    __obj.updateDynamic("EXT_shader_texture_lod")(EXT_shader_texture_lod)
-    __obj.updateDynamic("EXT_texture_filter_anisotropic")(EXT_texture_filter_anisotropic)
-    __obj.updateDynamic("OES_element_index_uint")(OES_element_index_uint)
-    __obj.updateDynamic("OES_standard_derivatives")(OES_standard_derivatives)
-    __obj.updateDynamic("OES_texture_float")(OES_texture_float)
-    __obj.updateDynamic("OES_texture_float_linear")(OES_texture_float_linear)
-    __obj.updateDynamic("OES_texture_half_float")(OES_texture_half_float)
-    __obj.updateDynamic("OES_texture_half_float_linear")(OES_texture_half_float_linear)
-    __obj.updateDynamic("OES_vertex_array_object")(OES_vertex_array_object)
-    __obj.updateDynamic("WEBGL_compressed_texture_etc1")(WEBGL_compressed_texture_etc1)
-    __obj.updateDynamic("WEBGL_compressed_texture_s3tc")(WEBGL_compressed_texture_s3tc)
-    __obj.updateDynamic("WEBGL_debug_renderer_info")(WEBGL_debug_renderer_info)
-    __obj.updateDynamic("WEBGL_debug_shaders")(WEBGL_debug_shaders)
-    __obj.updateDynamic("WEBGL_depth_texture")(WEBGL_depth_texture)
-    __obj.updateDynamic("WEBGL_draw_buffers")(WEBGL_draw_buffers)
-    __obj.updateDynamic("WEBGL_lose_context")(WEBGL_lose_context)
-    __obj.updateDynamic("WEBKIT_EXT_texture_filter_anisotropic")(WEBKIT_EXT_texture_filter_anisotropic)
-    __obj.updateDynamic("WEBKIT_WEBGL_compressed_texture_s3tc")(WEBKIT_WEBGL_compressed_texture_s3tc)
-    __obj.updateDynamic("WEBKIT_WEBGL_depth_texture")(WEBKIT_WEBGL_depth_texture)
-    __obj.updateDynamic("WEBKIT_WEBGL_lose_context")(WEBKIT_WEBGL_lose_context)
+    val __obj = js.Dynamic.literal(ANGLE_instanced_arrays = ANGLE_instanced_arrays, EXT_blend_minmax = EXT_blend_minmax, EXT_disjoint_timer_query = EXT_disjoint_timer_query, EXT_frag_depth = EXT_frag_depth, EXT_sRGB = EXT_sRGB, EXT_shader_texture_lod = EXT_shader_texture_lod, EXT_texture_filter_anisotropic = EXT_texture_filter_anisotropic, OES_element_index_uint = OES_element_index_uint, OES_standard_derivatives = OES_standard_derivatives, OES_texture_float = OES_texture_float, OES_texture_float_linear = OES_texture_float_linear, OES_texture_half_float = OES_texture_half_float, OES_texture_half_float_linear = OES_texture_half_float_linear, OES_vertex_array_object = OES_vertex_array_object, WEBGL_compressed_texture_etc1 = WEBGL_compressed_texture_etc1, WEBGL_compressed_texture_s3tc = WEBGL_compressed_texture_s3tc, WEBGL_debug_renderer_info = WEBGL_debug_renderer_info, WEBGL_debug_shaders = WEBGL_debug_shaders, WEBGL_depth_texture = WEBGL_depth_texture, WEBGL_draw_buffers = WEBGL_draw_buffers, WEBGL_lose_context = WEBGL_lose_context, WEBKIT_EXT_texture_filter_anisotropic = WEBKIT_EXT_texture_filter_anisotropic, WEBKIT_WEBGL_compressed_texture_s3tc = WEBKIT_WEBGL_compressed_texture_s3tc, WEBKIT_WEBGL_depth_texture = WEBKIT_WEBGL_depth_texture, WEBKIT_WEBGL_lose_context = WEBKIT_WEBGL_lose_context)
+  
     __obj.asInstanceOf[WebglextensionsBoolean]
   }
 }

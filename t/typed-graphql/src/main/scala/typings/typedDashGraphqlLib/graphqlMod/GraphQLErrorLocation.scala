@@ -13,9 +13,8 @@ trait GraphQLErrorLocation extends js.Object {
 object GraphQLErrorLocation {
   @scala.inline
   def apply(column: scala.Double, line: scala.Double): GraphQLErrorLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(column = column, line = line)
+  
     __obj.asInstanceOf[GraphQLErrorLocation]
   }
 }

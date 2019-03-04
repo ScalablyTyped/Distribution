@@ -16,9 +16,8 @@ object DiscardMissingTileImagePolicy {
     isReady: js.Function0[scala.Boolean],
     shouldDiscardImage: js.Function1[stdLib.HTMLImageElement, scala.Boolean]
   ): DiscardMissingTileImagePolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isReady")(isReady)
-    __obj.updateDynamic("shouldDiscardImage")(shouldDiscardImage)
+    val __obj = js.Dynamic.literal(isReady = isReady, shouldDiscardImage = shouldDiscardImage)
+  
     __obj.asInstanceOf[DiscardMissingTileImagePolicy]
   }
 }

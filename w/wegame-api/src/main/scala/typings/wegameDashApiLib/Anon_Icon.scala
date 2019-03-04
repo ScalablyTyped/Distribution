@@ -25,8 +25,8 @@ object Anon_Icon {
     image: java.lang.String = null,
     text: java.lang.String = null
   ): Anon_Icon = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
+    __obj.updateDynamic("type")(`type`)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (image != null) __obj.updateDynamic("image")(image)
     if (text != null) __obj.updateDynamic("text")(text)

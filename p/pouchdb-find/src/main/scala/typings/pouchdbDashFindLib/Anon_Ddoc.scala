@@ -24,8 +24,7 @@ object Anon_Ddoc {
     name: java.lang.String = null,
     `type`: java.lang.String = null
   ): Anon_Ddoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(fields = fields)
     if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc)
     if (name != null) __obj.updateDynamic("name")(name)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

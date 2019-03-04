@@ -24,11 +24,7 @@ object CaptionElementProps {
     months: js.Array[java.lang.String] = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement] = null
   ): CaptionElementProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classNames")(classNames)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("localeUtils")(localeUtils)
+    val __obj = js.Dynamic.literal(classNames = classNames, date = date, locale = locale, localeUtils = localeUtils)
     if (months != null) __obj.updateDynamic("months")(months)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     __obj.asInstanceOf[CaptionElementProps]

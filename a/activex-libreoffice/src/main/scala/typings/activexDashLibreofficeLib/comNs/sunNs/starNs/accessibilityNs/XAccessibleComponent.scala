@@ -158,25 +158,8 @@ object XAccessibleComponent {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Background")(Background)
-    __obj.updateDynamic("Bounds")(Bounds)
-    __obj.updateDynamic("Foreground")(Foreground)
-    __obj.updateDynamic("Location")(Location)
-    __obj.updateDynamic("LocationOnScreen")(LocationOnScreen)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("containsPoint")(containsPoint)
-    __obj.updateDynamic("getAccessibleAtPoint")(getAccessibleAtPoint)
-    __obj.updateDynamic("getBackground")(getBackground)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getForeground")(getForeground)
-    __obj.updateDynamic("getLocation")(getLocation)
-    __obj.updateDynamic("getLocationOnScreen")(getLocationOnScreen)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("grabFocus")(grabFocus)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Background = Background, Bounds = Bounds, Foreground = Foreground, Location = Location, LocationOnScreen = LocationOnScreen, Size = Size, acquire = acquire, containsPoint = containsPoint, getAccessibleAtPoint = getAccessibleAtPoint, getBackground = getBackground, getBounds = getBounds, getForeground = getForeground, getLocation = getLocation, getLocationOnScreen = getLocationOnScreen, getSize = getSize, grabFocus = grabFocus, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleComponent]
   }
 }

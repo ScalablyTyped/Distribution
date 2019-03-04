@@ -13,9 +13,8 @@ trait Anon_QueryResultFilesQuery extends js.Object {
 object Anon_QueryResultFilesQuery {
   @scala.inline
   def apply(query: ternLib.libTernMod.FilesQuery, result: ternLib.libTernMod.FilesQueryResult): Anon_QueryResultFilesQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(query = query, result = result)
+  
     __obj.asInstanceOf[Anon_QueryResultFilesQuery]
   }
 }

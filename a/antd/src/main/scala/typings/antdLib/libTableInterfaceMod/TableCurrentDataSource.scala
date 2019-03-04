@@ -12,8 +12,8 @@ trait TableCurrentDataSource[T] extends js.Object {
 object TableCurrentDataSource {
   @scala.inline
   def apply[T](currentDataSource: js.Array[T]): TableCurrentDataSource[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentDataSource")(currentDataSource)
+    val __obj = js.Dynamic.literal(currentDataSource = currentDataSource)
+  
     __obj.asInstanceOf[TableCurrentDataSource[T]]
   }
 }

@@ -15,11 +15,8 @@ trait HasTaskState extends js.Object {
 object HasTaskState {
   @scala.inline
   def apply(change: TaskType, eventTask: scala.Boolean, macroTask: scala.Boolean, microTask: scala.Boolean): HasTaskState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("eventTask")(eventTask)
-    __obj.updateDynamic("macroTask")(macroTask)
-    __obj.updateDynamic("microTask")(microTask)
+    val __obj = js.Dynamic.literal(change = change, eventTask = eventTask, macroTask = macroTask, microTask = microTask)
+  
     __obj.asInstanceOf[HasTaskState]
   }
 }

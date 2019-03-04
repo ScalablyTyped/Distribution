@@ -13,9 +13,8 @@ trait Out extends js.Object {
 object Out {
   @scala.inline
   def apply(script: nodeLib.Buffer, value: scala.Double): Out = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(script = script, value = value)
+  
     __obj.asInstanceOf[Out]
   }
 }

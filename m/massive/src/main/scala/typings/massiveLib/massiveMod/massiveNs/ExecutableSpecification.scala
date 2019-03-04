@@ -39,16 +39,8 @@ object ExecutableSpecification {
     singleValue: scala.Boolean,
     sql: js.Any
   ): ExecutableSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("enhancedFunctions")(enhancedFunctions)
-    __obj.updateDynamic("isVariadic")(isVariadic)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("paramCount")(paramCount)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("singleRow")(singleRow)
-    __obj.updateDynamic("singleValue")(singleValue)
-    __obj.updateDynamic("sql")(sql)
+    val __obj = js.Dynamic.literal(db = db, enhancedFunctions = enhancedFunctions, isVariadic = isVariadic, name = name, paramCount = paramCount, schema = schema, singleRow = singleRow, singleValue = singleValue, sql = sql)
+  
     __obj.asInstanceOf[ExecutableSpecification]
   }
 }

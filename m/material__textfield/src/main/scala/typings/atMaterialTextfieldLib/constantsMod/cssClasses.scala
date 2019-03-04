@@ -29,15 +29,8 @@ object cssClasses {
     ROOT: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field`,
     UPGRADED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--upgraded`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOX")(BOX)
-    __obj.updateDynamic("DENSE")(DENSE)
-    __obj.updateDynamic("DISABLED")(DISABLED)
-    __obj.updateDynamic("FOCUSED")(FOCUSED)
-    __obj.updateDynamic("INVALID")(INVALID)
-    __obj.updateDynamic("OUTLINED")(OUTLINED)
-    __obj.updateDynamic("ROOT")(ROOT)
-    __obj.updateDynamic("UPGRADED")(UPGRADED)
+    val __obj = js.Dynamic.literal(BOX = BOX, DENSE = DENSE, DISABLED = DISABLED, FOCUSED = FOCUSED, INVALID = INVALID, OUTLINED = OUTLINED, ROOT = ROOT, UPGRADED = UPGRADED)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

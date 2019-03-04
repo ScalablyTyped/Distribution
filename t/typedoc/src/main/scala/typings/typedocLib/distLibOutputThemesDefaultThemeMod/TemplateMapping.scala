@@ -20,11 +20,8 @@ object TemplateMapping {
     kind: js.Array[typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind],
     template: java.lang.String
   ): TemplateMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("isLeaf")(isLeaf)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(directory = directory, isLeaf = isLeaf, kind = kind, template = template)
+  
     __obj.asInstanceOf[TemplateMapping]
   }
 }

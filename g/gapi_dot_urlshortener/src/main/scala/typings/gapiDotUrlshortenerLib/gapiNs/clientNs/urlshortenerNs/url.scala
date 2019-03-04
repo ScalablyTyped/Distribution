@@ -36,10 +36,8 @@ object url {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
     ]
   ): url = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+  
     __obj.asInstanceOf[url]
   }
 }

@@ -24,9 +24,8 @@ object $breadcrumbService {
       js.Array[angularDashBreadcrumbLib.angularDashBreadcrumbMod.angularMod.uiNs.IState]
     ]
   ): $breadcrumbService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLastStep")(getLastStep)
-    __obj.updateDynamic("getStatesChain")(getStatesChain)
+    val __obj = js.Dynamic.literal(getLastStep = getLastStep, getStatesChain = getStatesChain)
+  
     __obj.asInstanceOf[$breadcrumbService]
   }
 }

@@ -31,13 +31,8 @@ object Matrix3x2 {
     m31: scala.Double,
     m32: scala.Double
   ): Matrix3x2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("m11")(m11)
-    __obj.updateDynamic("m12")(m12)
-    __obj.updateDynamic("m21")(m21)
-    __obj.updateDynamic("m22")(m22)
-    __obj.updateDynamic("m31")(m31)
-    __obj.updateDynamic("m32")(m32)
+    val __obj = js.Dynamic.literal(m11 = m11, m12 = m12, m21 = m21, m22 = m22, m31 = m31, m32 = m32)
+  
     __obj.asInstanceOf[Matrix3x2]
   }
 }

@@ -71,36 +71,8 @@ object FormComponent {
     ],
     write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
   ): FormComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("PropertyValues")(PropertyValues)
-    __obj.updateDynamic("ServiceName")(ServiceName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("getServiceName")(getServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeProperty")(removeProperty)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(Name = Name, Parent = Parent, PropertySetInfo = PropertySetInfo, PropertyValues = PropertyValues, ServiceName = ServiceName, acquire = acquire, addEventListener = addEventListener, addProperty = addProperty, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getName = getName, getParent = getParent, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, getServiceName = getServiceName, queryInterface = queryInterface, read = read, release = release, removeEventListener = removeEventListener, removeProperty = removeProperty, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setParent = setParent, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues, write = write)
+  
     __obj.asInstanceOf[FormComponent]
   }
 }

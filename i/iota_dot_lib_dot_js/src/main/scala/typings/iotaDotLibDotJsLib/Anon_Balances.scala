@@ -20,11 +20,8 @@ object Anon_Balances {
     milestone: java.lang.String,
     milestoneIndex: scala.Double
   ): Anon_Balances = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("balances")(balances)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("milestone")(milestone)
-    __obj.updateDynamic("milestoneIndex")(milestoneIndex)
+    val __obj = js.Dynamic.literal(balances = balances, duration = duration, milestone = milestone, milestoneIndex = milestoneIndex)
+  
     __obj.asInstanceOf[Anon_Balances]
   }
 }

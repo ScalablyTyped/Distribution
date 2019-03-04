@@ -12,8 +12,8 @@ trait IDropdownProvider extends js.Object {
 object IDropdownProvider {
   @scala.inline
   def apply(defaults: IDropdownOptions): IDropdownProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[IDropdownProvider]
   }
 }

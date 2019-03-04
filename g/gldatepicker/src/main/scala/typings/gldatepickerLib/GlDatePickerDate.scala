@@ -18,8 +18,7 @@ object GlDatePickerDate {
     repeatMonth: js.UndefOr[scala.Boolean] = js.undefined,
     repeatYear: js.UndefOr[scala.Boolean] = js.undefined
   ): GlDatePickerDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
+    val __obj = js.Dynamic.literal(date = date)
     if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth)
     if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear)
     __obj.asInstanceOf[GlDatePickerDate]

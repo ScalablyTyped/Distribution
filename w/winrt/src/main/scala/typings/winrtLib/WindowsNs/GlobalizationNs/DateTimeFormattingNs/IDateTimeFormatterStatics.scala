@@ -20,11 +20,8 @@ object IDateTimeFormatterStatics {
     shortDate: DateTimeFormatter,
     shortTime: DateTimeFormatter
   ): IDateTimeFormatterStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("longDate")(longDate)
-    __obj.updateDynamic("longTime")(longTime)
-    __obj.updateDynamic("shortDate")(shortDate)
-    __obj.updateDynamic("shortTime")(shortTime)
+    val __obj = js.Dynamic.literal(longDate = longDate, longTime = longTime, shortDate = shortDate, shortTime = shortTime)
+  
     __obj.asInstanceOf[IDateTimeFormatterStatics]
   }
 }

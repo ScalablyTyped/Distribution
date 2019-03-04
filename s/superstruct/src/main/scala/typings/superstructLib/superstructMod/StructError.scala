@@ -28,14 +28,8 @@ object StructError {
     value: js.Any,
     stack: java.lang.String = null
   ): StructError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(data = data, errors = errors, message = message, name = name, path = path, reason = reason, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[StructError]
   }

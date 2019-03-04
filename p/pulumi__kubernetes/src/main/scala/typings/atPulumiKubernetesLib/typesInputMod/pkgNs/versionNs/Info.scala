@@ -33,16 +33,8 @@ object Info {
     minor: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     platform: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildDate")(buildDate.asInstanceOf[js.Any])
-    __obj.updateDynamic("compiler")(compiler.asInstanceOf[js.Any])
-    __obj.updateDynamic("gitCommit")(gitCommit.asInstanceOf[js.Any])
-    __obj.updateDynamic("gitTreeState")(gitTreeState.asInstanceOf[js.Any])
-    __obj.updateDynamic("gitVersion")(gitVersion.asInstanceOf[js.Any])
-    __obj.updateDynamic("goVersion")(goVersion.asInstanceOf[js.Any])
-    __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
-    __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
-    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buildDate = buildDate.asInstanceOf[js.Any], compiler = compiler.asInstanceOf[js.Any], gitCommit = gitCommit.asInstanceOf[js.Any], gitTreeState = gitTreeState.asInstanceOf[js.Any], gitVersion = gitVersion.asInstanceOf[js.Any], goVersion = goVersion.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Info]
   }
 }

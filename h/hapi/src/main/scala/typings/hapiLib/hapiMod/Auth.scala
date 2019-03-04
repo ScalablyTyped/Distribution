@@ -18,8 +18,7 @@ object Auth {
     data: AuthenticationData = null,
     error: nodeLib.Error = null
   ): Auth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAuth")(isAuth)
+    val __obj = js.Dynamic.literal(isAuth = isAuth)
     if (data != null) __obj.updateDynamic("data")(data)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[Auth]

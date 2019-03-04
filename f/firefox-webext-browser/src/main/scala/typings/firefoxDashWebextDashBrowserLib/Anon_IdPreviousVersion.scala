@@ -31,9 +31,7 @@ object Anon_IdPreviousVersion {
     id: java.lang.String = null,
     previousVersion: java.lang.String = null
   ): Anon_IdPreviousVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("temporary")(temporary)
+    val __obj = js.Dynamic.literal(reason = reason, temporary = temporary)
     if (id != null) __obj.updateDynamic("id")(id)
     if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion)
     __obj.asInstanceOf[Anon_IdPreviousVersion]

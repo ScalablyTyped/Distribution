@@ -29,18 +29,8 @@ object RendererInterface {
     webFrame: WebFrame,
     webviewTag: WebviewTag
   ): RendererInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BrowserWindowProxy")(BrowserWindowProxy)
-    __obj.updateDynamic("clipboard")(clipboard)
-    __obj.updateDynamic("crashReporter")(crashReporter)
-    __obj.updateDynamic("desktopCapturer")(desktopCapturer)
-    __obj.updateDynamic("ipcRenderer")(ipcRenderer)
-    __obj.updateDynamic("nativeImage")(nativeImage)
-    __obj.updateDynamic("remote")(remote)
-    __obj.updateDynamic("screen")(screen)
-    __obj.updateDynamic("shell")(shell)
-    __obj.updateDynamic("webFrame")(webFrame)
-    __obj.updateDynamic("webviewTag")(webviewTag)
+    val __obj = js.Dynamic.literal(BrowserWindowProxy = BrowserWindowProxy, clipboard = clipboard, crashReporter = crashReporter, desktopCapturer = desktopCapturer, ipcRenderer = ipcRenderer, nativeImage = nativeImage, remote = remote, screen = screen, shell = shell, webFrame = webFrame, webviewTag = webviewTag)
+  
     __obj.asInstanceOf[RendererInterface]
   }
 }

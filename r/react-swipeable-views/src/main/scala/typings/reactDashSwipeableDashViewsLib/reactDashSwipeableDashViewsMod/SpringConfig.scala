@@ -14,10 +14,8 @@ trait SpringConfig extends js.Object {
 object SpringConfig {
   @scala.inline
   def apply(delay: java.lang.String, duration: java.lang.String, easeFunction: java.lang.String): SpringConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easeFunction")(easeFunction)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration, easeFunction = easeFunction)
+  
     __obj.asInstanceOf[SpringConfig]
   }
 }

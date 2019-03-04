@@ -13,8 +13,7 @@ trait SharedAccessPolicy extends js.Object {
 object SharedAccessPolicy {
   @scala.inline
   def apply(AccessPolicy: azureLib.Anon_Expiry, Id: java.lang.String = null): SharedAccessPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessPolicy")(AccessPolicy)
+    val __obj = js.Dynamic.literal(AccessPolicy = AccessPolicy)
     if (Id != null) __obj.updateDynamic("Id")(Id)
     __obj.asInstanceOf[SharedAccessPolicy]
   }

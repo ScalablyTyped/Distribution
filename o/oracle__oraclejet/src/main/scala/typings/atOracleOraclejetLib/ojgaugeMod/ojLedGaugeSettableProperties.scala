@@ -44,22 +44,8 @@ object ojLedGaugeSettableProperties {
     visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     value: scala.Int | scala.Double = null
   ): ojLedGaugeSettableProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("metricLabel")(metricLabel)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
-    __obj.updateDynamic("thresholds")(thresholds)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(borderColor = borderColor, color = color, label = label, max = max, metricLabel = metricLabel, min = min, rotation = rotation.asInstanceOf[js.Any], size = size, svgClassName = svgClassName, svgStyle = svgStyle, thresholds = thresholds, tooltip = tooltip, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, visualEffects = visualEffects.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojLedGaugeSettableProperties]
   }

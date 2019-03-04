@@ -36,11 +36,8 @@ object HoriOrientationFormat {
     PositionToggle: scala.Boolean,
     XPos: scala.Double
   ): HoriOrientationFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HorizontalOrientation")(HorizontalOrientation)
-    __obj.updateDynamic("HorizontalRelation")(HorizontalRelation)
-    __obj.updateDynamic("PositionToggle")(PositionToggle)
-    __obj.updateDynamic("XPos")(XPos)
+    val __obj = js.Dynamic.literal(HorizontalOrientation = HorizontalOrientation, HorizontalRelation = HorizontalRelation, PositionToggle = PositionToggle, XPos = XPos)
+  
     __obj.asInstanceOf[HoriOrientationFormat]
   }
 }

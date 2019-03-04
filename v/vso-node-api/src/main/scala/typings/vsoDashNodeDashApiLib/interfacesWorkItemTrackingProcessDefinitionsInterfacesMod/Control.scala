@@ -74,20 +74,8 @@ object Control {
     visible: scala.Boolean,
     watermark: java.lang.String
   ): Control = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contribution")(contribution)
-    __obj.updateDynamic("controlType")(controlType)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inherited")(inherited)
-    __obj.updateDynamic("isContribution")(isContribution)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("overridden")(overridden)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("watermark")(watermark)
+    val __obj = js.Dynamic.literal(contribution = contribution, controlType = controlType, height = height, id = id, inherited = inherited, isContribution = isContribution, label = label, metadata = metadata, order = order, overridden = overridden, readOnly = readOnly, visible = visible, watermark = watermark)
+  
     __obj.asInstanceOf[Control]
   }
 }

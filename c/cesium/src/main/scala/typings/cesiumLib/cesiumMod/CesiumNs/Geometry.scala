@@ -20,11 +20,8 @@ object Geometry {
     indices: js.Array[_],
     primitiveType: PrimitiveType
   ): Geometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("boundingSphere")(boundingSphere)
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("primitiveType")(primitiveType)
+    val __obj = js.Dynamic.literal(attributes = attributes, boundingSphere = boundingSphere, indices = indices, primitiveType = primitiveType)
+  
     __obj.asInstanceOf[Geometry]
   }
 }

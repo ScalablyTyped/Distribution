@@ -59,15 +59,8 @@ object InputJax {
     needsUpdate: js.Function1[js.Any, scala.Boolean],
     version: java.lang.String
   ): InputJax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Process")(Process)
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Translate")(Translate)
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("elementJax")(elementJax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("needsUpdate")(needsUpdate)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(Process = Process, Register = Register, Translate = Translate, directory = directory, elementJax = elementJax, id = id, needsUpdate = needsUpdate, version = version)
+  
     __obj.asInstanceOf[InputJax]
   }
 }

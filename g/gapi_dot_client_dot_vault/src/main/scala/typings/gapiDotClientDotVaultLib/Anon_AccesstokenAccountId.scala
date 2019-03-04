@@ -61,10 +61,7 @@ object Anon_AccesstokenAccountId {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAccountId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("holdId")(holdId)
-    __obj.updateDynamic("matterId")(matterId)
+    val __obj = js.Dynamic.literal(accountId = accountId, holdId = holdId, matterId = matterId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

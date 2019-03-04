@@ -32,17 +32,8 @@ object FrameBus {
     unsub: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean],
     unsubscribe: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Boolean]
   ): FrameBus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("pub")(pub)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("trigger")(trigger)
-    __obj.updateDynamic("unsub")(unsub)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(emit = emit, off = off, on = on, pub = pub, publish = publish, sub = sub, subscribe = subscribe, trigger = trigger, unsub = unsub, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[FrameBus]
   }
 }

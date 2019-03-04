@@ -62,23 +62,7 @@ object dtdDefinition {
     $transparent: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`],
     StringDictionary: /* outerTagName */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]] = null
   ): dtdDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$block")($block)
-    __obj.updateDynamic("$blockLimit")($blockLimit)
-    __obj.updateDynamic("$cdata")($cdata)
-    __obj.updateDynamic("$editable")($editable)
-    __obj.updateDynamic("$empty")($empty)
-    __obj.updateDynamic("$inline")($inline)
-    __obj.updateDynamic("$intermediate")($intermediate)
-    __obj.updateDynamic("$list")($list)
-    __obj.updateDynamic("$listItem")($listItem)
-    __obj.updateDynamic("$nonBodyContent")($nonBodyContent)
-    __obj.updateDynamic("$nonEditable")($nonEditable)
-    __obj.updateDynamic("$object")($object)
-    __obj.updateDynamic("$removeEmpty")($removeEmpty)
-    __obj.updateDynamic("$tabIndex")($tabIndex)
-    __obj.updateDynamic("$tableContent")($tableContent)
-    __obj.updateDynamic("$transparent")($transparent)
+    val __obj = js.Dynamic.literal($block = $block, $blockLimit = $blockLimit, $cdata = $cdata, $editable = $editable, $empty = $empty, $inline = $inline, $intermediate = $intermediate, $list = $list, $listItem = $listItem, $nonBodyContent = $nonBodyContent, $nonEditable = $nonEditable, $object = $object, $removeEmpty = $removeEmpty, $tabIndex = $tabIndex, $tableContent = $tableContent, $transparent = $transparent)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[dtdDefinition]
   }

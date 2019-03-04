@@ -44,11 +44,7 @@ object IdentityProviderArgs {
     attributeMapping: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     idpIdentifiers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): IdentityProviderArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("providerDetails")(providerDetails.asInstanceOf[js.Any])
-    __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("providerType")(providerType.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(providerDetails = providerDetails.asInstanceOf[js.Any], providerName = providerName.asInstanceOf[js.Any], providerType = providerType.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
     if (attributeMapping != null) __obj.updateDynamic("attributeMapping")(attributeMapping.asInstanceOf[js.Any])
     if (idpIdentifiers != null) __obj.updateDynamic("idpIdentifiers")(idpIdentifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityProviderArgs]

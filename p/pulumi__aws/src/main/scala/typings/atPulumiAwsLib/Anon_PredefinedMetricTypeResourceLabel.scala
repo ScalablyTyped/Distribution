@@ -16,8 +16,7 @@ object Anon_PredefinedMetricTypeResourceLabel {
     predefinedMetricType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     resourceLabel: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_PredefinedMetricTypeResourceLabel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("predefinedMetricType")(predefinedMetricType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(predefinedMetricType = predefinedMetricType.asInstanceOf[js.Any])
     if (resourceLabel != null) __obj.updateDynamic("resourceLabel")(resourceLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PredefinedMetricTypeResourceLabel]
   }

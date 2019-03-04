@@ -20,9 +20,7 @@ object Anon_CalculateItemHeight {
     length: scala.Int | scala.Double = null,
     modifier: java.lang.String = null
   ): Anon_CalculateItemHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculateItemHeight")(calculateItemHeight)
-    __obj.updateDynamic("renderRow")(renderRow)
+    val __obj = js.Dynamic.literal(calculateItemHeight = calculateItemHeight, renderRow = renderRow)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (modifier != null) __obj.updateDynamic("modifier")(modifier)
     __obj.asInstanceOf[Anon_CalculateItemHeight]

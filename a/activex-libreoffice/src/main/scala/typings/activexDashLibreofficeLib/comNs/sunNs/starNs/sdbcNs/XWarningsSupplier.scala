@@ -45,13 +45,8 @@ object XWarningsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XWarningsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Warnings")(Warnings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearWarnings")(clearWarnings)
-    __obj.updateDynamic("getWarnings")(getWarnings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Warnings = Warnings, acquire = acquire, clearWarnings = clearWarnings, getWarnings = getWarnings, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XWarningsSupplier]
   }
 }

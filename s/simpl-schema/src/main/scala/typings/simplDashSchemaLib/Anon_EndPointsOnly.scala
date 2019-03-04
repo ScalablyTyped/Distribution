@@ -12,8 +12,8 @@ trait Anon_EndPointsOnly extends js.Object {
 object Anon_EndPointsOnly {
   @scala.inline
   def apply(endPointsOnly: scala.Boolean): Anon_EndPointsOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endPointsOnly")(endPointsOnly)
+    val __obj = js.Dynamic.literal(endPointsOnly = endPointsOnly)
+  
     __obj.asInstanceOf[Anon_EndPointsOnly]
   }
 }

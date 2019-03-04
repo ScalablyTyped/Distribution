@@ -22,10 +22,8 @@ object ojProgressSettableProperties {
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.bar | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle,
     value: scala.Double
   ): ojProgressSettableProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(max = max, translations = translations, value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojProgressSettableProperties]
   }
 }

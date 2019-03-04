@@ -18,8 +18,8 @@ object EntitlementsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[EntitlementsListResponse]
     ]
   ): EntitlementsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[EntitlementsResource]
   }
 }

@@ -19,8 +19,8 @@ trait ChatRoomCreated
 object ChatRoomCreated {
   @scala.inline
   def apply(room: java.lang.String): ChatRoomCreated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(room = room)
+  
     __obj.asInstanceOf[ChatRoomCreated]
   }
 }

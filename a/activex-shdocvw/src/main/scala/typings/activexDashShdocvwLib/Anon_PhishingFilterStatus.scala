@@ -12,8 +12,8 @@ trait Anon_PhishingFilterStatus extends js.Object {
 object Anon_PhishingFilterStatus {
   @scala.inline
   def apply(PhishingFilterStatus: scala.Double): Anon_PhishingFilterStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PhishingFilterStatus")(PhishingFilterStatus)
+    val __obj = js.Dynamic.literal(PhishingFilterStatus = PhishingFilterStatus)
+  
     __obj.asInstanceOf[Anon_PhishingFilterStatus]
   }
 }

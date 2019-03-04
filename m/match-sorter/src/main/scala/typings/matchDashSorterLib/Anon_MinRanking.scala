@@ -12,8 +12,8 @@ trait Anon_MinRanking extends js.Object {
 object Anon_MinRanking {
   @scala.inline
   def apply(minRanking: scala.Double): Anon_MinRanking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minRanking")(minRanking)
+    val __obj = js.Dynamic.literal(minRanking = minRanking)
+  
     __obj.asInstanceOf[Anon_MinRanking]
   }
 }

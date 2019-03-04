@@ -20,8 +20,7 @@ object Anon_ContainerNameContainerPort {
     containerPort: scala.Int | scala.Double = null,
     port: scala.Int | scala.Double = null
   ): Anon_ContainerNameContainerPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registryArn")(registryArn)
+    val __obj = js.Dynamic.literal(registryArn = registryArn)
     if (containerName != null) __obj.updateDynamic("containerName")(containerName)
     if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

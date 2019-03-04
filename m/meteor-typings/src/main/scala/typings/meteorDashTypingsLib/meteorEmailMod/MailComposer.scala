@@ -20,11 +20,8 @@ object MailComposer {
     setMessageOption: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     streamMessage: js.Function0[scala.Unit]
   ): MailComposer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHeader")(addHeader)
-    __obj.updateDynamic("pipe")(pipe)
-    __obj.updateDynamic("setMessageOption")(setMessageOption)
-    __obj.updateDynamic("streamMessage")(streamMessage)
+    val __obj = js.Dynamic.literal(addHeader = addHeader, pipe = pipe, setMessageOption = setMessageOption, streamMessage = streamMessage)
+  
     __obj.asInstanceOf[MailComposer]
   }
 }

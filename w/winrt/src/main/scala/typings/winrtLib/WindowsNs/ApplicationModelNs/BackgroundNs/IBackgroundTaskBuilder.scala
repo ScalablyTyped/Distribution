@@ -22,12 +22,8 @@ object IBackgroundTaskBuilder {
     setTrigger: js.Function1[IBackgroundTrigger, scala.Unit],
     taskEntryPoint: java.lang.String
   ): IBackgroundTaskBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCondition")(addCondition)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("setTrigger")(setTrigger)
-    __obj.updateDynamic("taskEntryPoint")(taskEntryPoint)
+    val __obj = js.Dynamic.literal(addCondition = addCondition, name = name, register = register, setTrigger = setTrigger, taskEntryPoint = taskEntryPoint)
+  
     __obj.asInstanceOf[IBackgroundTaskBuilder]
   }
 }

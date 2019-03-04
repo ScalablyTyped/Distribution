@@ -42,11 +42,7 @@ object SocketInfo {
     peerAddress: java.lang.String = null,
     peerPort: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("persistent")(persistent)
-    __obj.updateDynamic("socketId")(socketId)
+    val __obj = js.Dynamic.literal(connected = connected, paused = paused, persistent = persistent, socketId = socketId)
     if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (!js.isUndefined(localPort)) __obj.updateDynamic("localPort")(localPort)

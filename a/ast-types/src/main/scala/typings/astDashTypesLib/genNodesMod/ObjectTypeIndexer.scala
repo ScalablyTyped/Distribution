@@ -26,10 +26,8 @@ object ObjectTypeIndexer {
     value: astDashTypesLib.genKindsMod.FlowTypeKind,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): ObjectTypeIndexer = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, key = key, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectTypeIndexer]
   }

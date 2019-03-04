@@ -13,9 +13,8 @@ trait PlotPoint extends js.Object {
 object PlotPoint {
   @scala.inline
   def apply(plotX: scala.Double, plotY: scala.Double): PlotPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plotX")(plotX)
-    __obj.updateDynamic("plotY")(plotY)
+    val __obj = js.Dynamic.literal(plotX = plotX, plotY = plotY)
+  
     __obj.asInstanceOf[PlotPoint]
   }
 }

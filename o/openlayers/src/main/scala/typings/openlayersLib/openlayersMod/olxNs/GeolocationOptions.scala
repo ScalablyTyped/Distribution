@@ -18,8 +18,7 @@ object GeolocationOptions {
     tracking: js.UndefOr[scala.Boolean] = js.undefined,
     trackingOptions: stdLib.PositionOptions = null
   ): GeolocationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (!js.isUndefined(tracking)) __obj.updateDynamic("tracking")(tracking)
     if (trackingOptions != null) __obj.updateDynamic("trackingOptions")(trackingOptions)
     __obj.asInstanceOf[GeolocationOptions]

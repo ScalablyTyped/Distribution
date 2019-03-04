@@ -20,12 +20,8 @@ object ExcludedPlacement {
     getUrl: js.Function0[java.lang.String],
     remove: js.Function0[scala.Unit]
   ): ExcludedPlacement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdGroup")(getAdGroup)
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getUrl")(getUrl)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign, getId = getId, getUrl = getUrl, remove = remove)
+  
     __obj.asInstanceOf[ExcludedPlacement]
   }
 }

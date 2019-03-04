@@ -26,10 +26,7 @@ object Anon_CascadeColumns {
     onDelete: nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.restrict | nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.cascade | (nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.`no action`) | (nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.`set null`) | (nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.`set default`) = null,
     onUpdate: nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.restrict | nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.cascade | (nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.`no action`) | (nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.`set null`) | (nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.`set default`) = null
   ): Anon_CascadeColumns[Row] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("refColumns")(refColumns)
-    __obj.updateDynamic("table")(table)
+    val __obj = js.Dynamic.literal(columns = columns, refColumns = refColumns, table = table)
     if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
     if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CascadeColumns[Row]]

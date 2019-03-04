@@ -26,8 +26,8 @@ object uiElement {
     style: java.lang.String = null,
     title: java.lang.String = null
   ): uiElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)

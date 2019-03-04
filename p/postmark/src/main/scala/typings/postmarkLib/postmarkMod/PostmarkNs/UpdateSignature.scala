@@ -18,8 +18,7 @@ object UpdateSignature {
     ReplyToEmail: java.lang.String = null,
     ReturnPathDomain: java.lang.String = null
   ): UpdateSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Name = Name)
     if (ReplyToEmail != null) __obj.updateDynamic("ReplyToEmail")(ReplyToEmail)
     if (ReturnPathDomain != null) __obj.updateDynamic("ReturnPathDomain")(ReturnPathDomain)
     __obj.asInstanceOf[UpdateSignature]

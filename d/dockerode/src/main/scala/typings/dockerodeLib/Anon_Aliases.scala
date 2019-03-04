@@ -36,16 +36,7 @@ object Anon_Aliases {
     IPAMConfig: js.Any = null,
     Links: js.Any = null
   ): Anon_Aliases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndpointID")(EndpointID)
-    __obj.updateDynamic("Gateway")(Gateway)
-    __obj.updateDynamic("GlobalIPv6Address")(GlobalIPv6Address)
-    __obj.updateDynamic("GlobalIPv6PrefixLen")(GlobalIPv6PrefixLen)
-    __obj.updateDynamic("IPAddress")(IPAddress)
-    __obj.updateDynamic("IPPrefixLen")(IPPrefixLen)
-    __obj.updateDynamic("IPv6Gateway")(IPv6Gateway)
-    __obj.updateDynamic("MacAddress")(MacAddress)
-    __obj.updateDynamic("NetworkID")(NetworkID)
+    val __obj = js.Dynamic.literal(EndpointID = EndpointID, Gateway = Gateway, GlobalIPv6Address = GlobalIPv6Address, GlobalIPv6PrefixLen = GlobalIPv6PrefixLen, IPAddress = IPAddress, IPPrefixLen = IPPrefixLen, IPv6Gateway = IPv6Gateway, MacAddress = MacAddress, NetworkID = NetworkID)
     if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases)
     if (IPAMConfig != null) __obj.updateDynamic("IPAMConfig")(IPAMConfig)
     if (Links != null) __obj.updateDynamic("Links")(Links)

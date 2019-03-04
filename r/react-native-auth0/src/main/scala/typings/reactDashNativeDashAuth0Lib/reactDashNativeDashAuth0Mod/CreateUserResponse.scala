@@ -14,10 +14,8 @@ trait CreateUserResponse extends js.Object {
 object CreateUserResponse {
   @scala.inline
   def apply(Id: java.lang.String, email: java.lang.String, emailVerified: scala.Boolean): CreateUserResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("emailVerified")(emailVerified)
+    val __obj = js.Dynamic.literal(Id = Id, email = email, emailVerified = emailVerified)
+  
     __obj.asInstanceOf[CreateUserResponse]
   }
 }

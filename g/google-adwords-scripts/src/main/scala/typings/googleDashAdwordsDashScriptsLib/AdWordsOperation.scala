@@ -18,10 +18,8 @@ object AdWordsOperation {
     getResult: js.Function0[E],
     isSuccessful: js.Function0[scala.Boolean]
   ): AdWordsOperation[E] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getErrors")(getErrors)
-    __obj.updateDynamic("getResult")(getResult)
-    __obj.updateDynamic("isSuccessful")(isSuccessful)
+    val __obj = js.Dynamic.literal(getErrors = getErrors, getResult = getResult, isSuccessful = isSuccessful)
+  
     __obj.asInstanceOf[AdWordsOperation[E]]
   }
 }

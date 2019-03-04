@@ -42,7 +42,8 @@ object GraticuleTransform {
     stepMajor: (vegaDashTypingsLib.typesSpecUtilMod.Vector2[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     stepMinor: (vegaDashTypingsLib.typesSpecUtilMod.Vector2[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): GraticuleTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (extentMajor != null) __obj.updateDynamic("extentMajor")(extentMajor.asInstanceOf[js.Any])
     if (extentMinor != null) __obj.updateDynamic("extentMinor")(extentMinor.asInstanceOf[js.Any])

@@ -34,9 +34,7 @@ object DataItem {
     title: java.lang.String = null,
     `type`: java.lang.String = null
   ): DataItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, start = start.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

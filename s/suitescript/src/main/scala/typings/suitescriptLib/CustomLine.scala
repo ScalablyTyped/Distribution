@@ -30,16 +30,8 @@ object CustomLine {
     setLocationId: js.Function1[scala.Double, scala.Unit],
     setMemo: js.Function1[java.lang.String, scala.Unit]
   ): CustomLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isBookSpecific")(isBookSpecific)
-    __obj.updateDynamic("setAccountId")(setAccountId)
-    __obj.updateDynamic("setBookSpecific")(setBookSpecific)
-    __obj.updateDynamic("setClassId")(setClassId)
-    __obj.updateDynamic("setCreditAmount")(setCreditAmount)
-    __obj.updateDynamic("setDebitAmount")(setDebitAmount)
-    __obj.updateDynamic("setDepartmentId")(setDepartmentId)
-    __obj.updateDynamic("setLocationId")(setLocationId)
-    __obj.updateDynamic("setMemo")(setMemo)
+    val __obj = js.Dynamic.literal(isBookSpecific = isBookSpecific, setAccountId = setAccountId, setBookSpecific = setBookSpecific, setClassId = setClassId, setCreditAmount = setCreditAmount, setDebitAmount = setDebitAmount, setDepartmentId = setDepartmentId, setLocationId = setLocationId, setMemo = setMemo)
+  
     __obj.asInstanceOf[CustomLine]
   }
 }

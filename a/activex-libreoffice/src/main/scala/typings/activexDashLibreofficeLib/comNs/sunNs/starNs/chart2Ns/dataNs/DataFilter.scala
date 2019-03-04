@@ -23,13 +23,8 @@ object DataFilter {
     release: js.Function0[scala.Unit],
     setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XLabeledDataSequence], scala.Unit]
   ): DataFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSequences")(DataSequences)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataSequences")(getDataSequences)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setData")(setData)
+    val __obj = js.Dynamic.literal(DataSequences = DataSequences, acquire = acquire, getDataSequences = getDataSequences, queryInterface = queryInterface, release = release, setData = setData)
+  
     __obj.asInstanceOf[DataFilter]
   }
 }

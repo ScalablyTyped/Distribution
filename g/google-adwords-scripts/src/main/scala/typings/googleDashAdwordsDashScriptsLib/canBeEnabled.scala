@@ -21,11 +21,8 @@ object canBeEnabled {
     isPaused: js.Function0[scala.Boolean],
     pause: js.Function0[scala.Unit]
   ): canBeEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isPaused")(isPaused)
-    __obj.updateDynamic("pause")(pause)
+    val __obj = js.Dynamic.literal(enable = enable, isEnabled = isEnabled, isPaused = isPaused, pause = pause)
+  
     __obj.asInstanceOf[canBeEnabled]
   }
 }

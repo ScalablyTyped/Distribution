@@ -73,22 +73,8 @@ object GetVpcResult {
     state: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetVpcResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("cidrBlock")(cidrBlock)
-    __obj.updateDynamic("cidrBlockAssociations")(cidrBlockAssociations)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId)
-    __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames)
-    __obj.updateDynamic("enableDnsSupport")(enableDnsSupport)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instanceTenancy")(instanceTenancy)
-    __obj.updateDynamic("ipv6AssociationId")(ipv6AssociationId)
-    __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock)
-    __obj.updateDynamic("mainRouteTableId")(mainRouteTableId)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(arn = arn, cidrBlock = cidrBlock, cidrBlockAssociations = cidrBlockAssociations, default = default, dhcpOptionsId = dhcpOptionsId, enableDnsHostnames = enableDnsHostnames, enableDnsSupport = enableDnsSupport, id = id, instanceTenancy = instanceTenancy, ipv6AssociationId = ipv6AssociationId, ipv6CidrBlock = ipv6CidrBlock, mainRouteTableId = mainRouteTableId, ownerId = ownerId, state = state, tags = tags)
+  
     __obj.asInstanceOf[GetVpcResult]
   }
 }

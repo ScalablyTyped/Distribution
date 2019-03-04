@@ -24,9 +24,7 @@ object Anon_CustomHeaders {
     originPath: java.lang.String = null,
     s3OriginConfig: Anon_OriginAccessIdentity = null
   ): Anon_CustomHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainName")(domainName)
-    __obj.updateDynamic("originId")(originId)
+    val __obj = js.Dynamic.literal(domainName = domainName, originId = originId)
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
     if (customOriginConfig != null) __obj.updateDynamic("customOriginConfig")(customOriginConfig)
     if (originPath != null) __obj.updateDynamic("originPath")(originPath)

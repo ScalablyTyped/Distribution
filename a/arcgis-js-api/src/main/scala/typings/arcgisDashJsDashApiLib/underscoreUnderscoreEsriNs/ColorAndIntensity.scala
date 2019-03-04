@@ -30,12 +30,8 @@ object ColorAndIntensity {
     intensity: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): ColorAndIntensity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("intensity")(intensity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, intensity = intensity, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[ColorAndIntensity]
   }
 }

@@ -46,9 +46,7 @@ object ModelMapReduceOption {
     sort: js.Any = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): ModelMapReduceOption[T, Key, Val] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    __obj.updateDynamic("reduce")(reduce)
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], reduce = reduce)
     if (finalize != null) __obj.updateDynamic("finalize")(finalize)
     if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode)
     if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp)

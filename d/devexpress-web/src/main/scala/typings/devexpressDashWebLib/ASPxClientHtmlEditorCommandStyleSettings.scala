@@ -93,20 +93,8 @@ object ASPxClientHtmlEditorCommandStyleSettings {
     verticalAlign: java.lang.String,
     width: java.lang.String
   ): ASPxClientHtmlEditorCommandStyleSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderStyle")(borderStyle)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("marginBottom")(marginBottom)
-    __obj.updateDynamic("marginLeft")(marginLeft)
-    __obj.updateDynamic("marginRight")(marginRight)
-    __obj.updateDynamic("marginTop")(marginTop)
-    __obj.updateDynamic("textAlign")(textAlign)
-    __obj.updateDynamic("verticalAlign")(verticalAlign)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderStyle = borderStyle, borderWidth = borderWidth, className = className, height = height, marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, textAlign = textAlign, verticalAlign = verticalAlign, width = width)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandStyleSettings]
   }
 }

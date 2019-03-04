@@ -132,17 +132,8 @@ object ValuesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UpdateValuesResponse]
     ]
   ): ValuesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("batchClear")(batchClear)
-    __obj.updateDynamic("batchClearByDataFilter")(batchClearByDataFilter)
-    __obj.updateDynamic("batchGet")(batchGet)
-    __obj.updateDynamic("batchGetByDataFilter")(batchGetByDataFilter)
-    __obj.updateDynamic("batchUpdate")(batchUpdate)
-    __obj.updateDynamic("batchUpdateByDataFilter")(batchUpdateByDataFilter)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(append = append, batchClear = batchClear, batchClearByDataFilter = batchClearByDataFilter, batchGet = batchGet, batchGetByDataFilter = batchGetByDataFilter, batchUpdate = batchUpdate, batchUpdateByDataFilter = batchUpdateByDataFilter, clear = clear, get = get, update = update)
+  
     __obj.asInstanceOf[ValuesResource]
   }
 }

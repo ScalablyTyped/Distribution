@@ -16,9 +16,8 @@ object FileUploadTransport {
     flush: js.Function0[scala.Unit],
     queue: js.Function1[stdLib.FileList, js.Array[atOracleOraclejetLib.ojprogresslistMod.ProgressItem]]
   ): FileUploadTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("queue")(queue)
+    val __obj = js.Dynamic.literal(flush = flush, queue = queue)
+  
     __obj.asInstanceOf[FileUploadTransport]
   }
 }

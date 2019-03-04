@@ -20,11 +20,8 @@ object ConnectionStates {
     disconnected: scala.Double,
     reconnecting: scala.Double
   ): ConnectionStates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("connecting")(connecting)
-    __obj.updateDynamic("disconnected")(disconnected)
-    __obj.updateDynamic("reconnecting")(reconnecting)
+    val __obj = js.Dynamic.literal(connected = connected, connecting = connecting, disconnected = disconnected, reconnecting = reconnecting)
+  
     __obj.asInstanceOf[ConnectionStates]
   }
 }

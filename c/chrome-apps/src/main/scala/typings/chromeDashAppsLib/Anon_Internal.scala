@@ -17,8 +17,8 @@ trait Anon_Internal extends js.Object {
 object Anon_Internal {
   @scala.inline
   def apply(underscoreInternalUnderscoreNs: js.Any): Anon_Internal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("underscoreInternalUnderscoreNs")(underscoreInternalUnderscoreNs)
+    val __obj = js.Dynamic.literal(underscoreInternalUnderscoreNs = underscoreInternalUnderscoreNs)
+  
     __obj.asInstanceOf[Anon_Internal]
   }
 }

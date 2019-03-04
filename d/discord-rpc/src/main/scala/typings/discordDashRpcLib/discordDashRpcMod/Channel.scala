@@ -53,9 +53,8 @@ object Channel {
     user_limit: scala.Int | scala.Double = null,
     voice_states: js.Array[_] = null
   ): Channel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
     if (guild_id != null) __obj.updateDynamic("guild_id")(guild_id)
     if (messages != null) __obj.updateDynamic("messages")(messages)

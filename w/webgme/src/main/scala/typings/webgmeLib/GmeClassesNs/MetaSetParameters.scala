@@ -31,7 +31,8 @@ object MetaSetParameters {
     multiplicity: js.UndefOr[scala.Boolean] = js.undefined,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined
   ): MetaSetParameters = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
     if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity)
     if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
     __obj.asInstanceOf[MetaSetParameters]

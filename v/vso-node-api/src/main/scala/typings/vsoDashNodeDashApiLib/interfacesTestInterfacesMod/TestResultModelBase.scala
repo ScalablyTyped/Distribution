@@ -24,13 +24,8 @@ object TestResultModelBase {
     outcome: java.lang.String,
     startedDate: stdLib.Date
   ): TestResultModelBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("completedDate")(completedDate)
-    __obj.updateDynamic("durationInMs")(durationInMs)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("startedDate")(startedDate)
+    val __obj = js.Dynamic.literal(comment = comment, completedDate = completedDate, durationInMs = durationInMs, errorMessage = errorMessage, outcome = outcome, startedDate = startedDate)
+  
     __obj.asInstanceOf[TestResultModelBase]
   }
 }

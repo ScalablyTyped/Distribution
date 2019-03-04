@@ -20,10 +20,8 @@ object MapBoxZoomEvent {
     target: Map,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomstart | mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomend | mapboxDashGlLib.mapboxDashGlLibStrings.boxzoomcancel
   ): MapBoxZoomEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("boxZoomBounds")(boxZoomBounds)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(boxZoomBounds = boxZoomBounds, originalEvent = originalEvent, target = target)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapBoxZoomEvent]
   }
 }

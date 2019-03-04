@@ -47,12 +47,8 @@ object ToolbarAndroidProps {
     navIconName: java.lang.String,
     overflowIconName: java.lang.String
   ): ToolbarAndroidProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconColor")(iconColor)
-    __obj.updateDynamic("iconSize")(iconSize)
-    __obj.updateDynamic("logoName")(logoName)
-    __obj.updateDynamic("navIconName")(navIconName)
-    __obj.updateDynamic("overflowIconName")(overflowIconName)
+    val __obj = js.Dynamic.literal(iconColor = iconColor, iconSize = iconSize, logoName = logoName, navIconName = navIconName, overflowIconName = overflowIconName)
+  
     __obj.asInstanceOf[ToolbarAndroidProps]
   }
 }

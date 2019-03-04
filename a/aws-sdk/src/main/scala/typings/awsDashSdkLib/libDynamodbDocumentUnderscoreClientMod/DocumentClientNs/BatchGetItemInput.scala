@@ -16,8 +16,7 @@ trait BatchGetItemInput extends js.Object {
 object BatchGetItemInput {
   @scala.inline
   def apply(RequestItems: BatchGetRequestMap, ReturnConsumedCapacity: ReturnConsumedCapacity = null): BatchGetItemInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RequestItems")(RequestItems)
+    val __obj = js.Dynamic.literal(RequestItems = RequestItems)
     if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetItemInput]
   }

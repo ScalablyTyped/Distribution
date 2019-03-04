@@ -18,10 +18,8 @@ object Encoding {
     charset: java.lang.String,
     font: Font
   ): Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charToGlyphIndex")(charToGlyphIndex)
-    __obj.updateDynamic("charset")(charset)
-    __obj.updateDynamic("font")(font)
+    val __obj = js.Dynamic.literal(charToGlyphIndex = charToGlyphIndex, charset = charset, font = font)
+  
     __obj.asInstanceOf[Encoding]
   }
 }

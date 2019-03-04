@@ -54,19 +54,8 @@ object Anon_ChangeDetection {
     rendererType: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | js.Object = null,
     selector: java.lang.String = null
   ): Anon_ChangeDetection = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("entryComponents")(entryComponents)
-    __obj.updateDynamic("guards")(guards)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("isComponent")(isComponent)
-    __obj.updateDynamic("isHost")(isHost)
-    __obj.updateDynamic("outputs")(outputs)
-    __obj.updateDynamic("providers")(providers)
-    __obj.updateDynamic("queries")(queries)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("viewProviders")(viewProviders)
-    __obj.updateDynamic("viewQueries")(viewQueries)
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents, guards = guards, host = host, inputs = inputs, isComponent = isComponent, isHost = isHost, outputs = outputs, providers = providers, queries = queries, template = template, viewProviders = viewProviders, viewQueries = viewQueries)
+    __obj.updateDynamic("type")(`type`)
     if (changeDetection != null) __obj.updateDynamic("changeDetection")(changeDetection)
     if (componentFactory != null) __obj.updateDynamic("componentFactory")(componentFactory.asInstanceOf[js.Any])
     if (componentViewType != null) __obj.updateDynamic("componentViewType")(componentViewType.asInstanceOf[js.Any])

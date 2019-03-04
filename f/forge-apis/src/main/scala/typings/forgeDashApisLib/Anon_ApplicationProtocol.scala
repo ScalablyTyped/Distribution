@@ -13,9 +13,8 @@ trait Anon_ApplicationProtocol extends js.Object {
 object Anon_ApplicationProtocol {
   @scala.inline
   def apply(applicationProtocol: java.lang.String, tolerance: scala.Double): Anon_ApplicationProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationProtocol")(applicationProtocol)
-    __obj.updateDynamic("tolerance")(tolerance)
+    val __obj = js.Dynamic.literal(applicationProtocol = applicationProtocol, tolerance = tolerance)
+  
     __obj.asInstanceOf[Anon_ApplicationProtocol]
   }
 }

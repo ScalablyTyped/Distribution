@@ -12,8 +12,8 @@ trait SceneLegendItem extends js.Object {
 object SceneLegendItem {
   @scala.inline
   def apply(datum: vegaDashTypingsLib.Anon_Index): SceneLegendItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datum")(datum)
+    val __obj = js.Dynamic.literal(datum = datum)
+  
     __obj.asInstanceOf[SceneLegendItem]
   }
 }

@@ -20,11 +20,8 @@ object Anon_File {
     raw: java.lang.String,
     urlencoded: java.lang.String
   ): Anon_File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("formdata")(formdata)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("urlencoded")(urlencoded)
+    val __obj = js.Dynamic.literal(file = file, formdata = formdata, raw = raw, urlencoded = urlencoded)
+  
     __obj.asInstanceOf[Anon_File]
   }
 }

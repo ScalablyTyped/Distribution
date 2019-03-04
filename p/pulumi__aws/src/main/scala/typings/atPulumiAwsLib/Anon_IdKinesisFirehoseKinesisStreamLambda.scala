@@ -24,9 +24,7 @@ object Anon_IdKinesisFirehoseKinesisStreamLambda {
     kinesisStream: atPulumiPulumiLib.outputMod.Input[Anon_ResourceArnRoleArn] = null,
     lambda: atPulumiPulumiLib.outputMod.Input[Anon_ResourceArnRoleArn] = null
   ): Anon_IdKinesisFirehoseKinesisStreamLambda = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose.asInstanceOf[js.Any])
     if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream.asInstanceOf[js.Any])

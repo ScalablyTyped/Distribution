@@ -46,8 +46,7 @@ object SVGInlineProps {
     height: java.lang.String = null,
     width: java.lang.String = null
   ): SVGInlineProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("svg")(svg)
+    val __obj = js.Dynamic.literal(svg = svg)
     if (accessibilityDesc != null) __obj.updateDynamic("accessibilityDesc")(accessibilityDesc)
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
     if (className != null) __obj.updateDynamic("className")(className)

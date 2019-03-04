@@ -30,12 +30,8 @@ object IMenuState {
     showMenu: scala.Boolean,
     showMenuDialog: scala.Boolean
   ): IMenuState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentNode")(currentNode)
-    __obj.updateDynamic("dialogTitle")(dialogTitle)
-    __obj.updateDynamic("menuActions")(menuActions)
-    __obj.updateDynamic("showMenu")(showMenu)
-    __obj.updateDynamic("showMenuDialog")(showMenuDialog)
+    val __obj = js.Dynamic.literal(currentNode = currentNode, dialogTitle = dialogTitle, menuActions = menuActions, showMenu = showMenu, showMenuDialog = showMenuDialog)
+  
     __obj.asInstanceOf[IMenuState]
   }
 }

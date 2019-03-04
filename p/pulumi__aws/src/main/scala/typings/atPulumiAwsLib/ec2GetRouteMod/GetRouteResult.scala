@@ -35,17 +35,8 @@ object GetRouteResult {
     transitGatewayId: java.lang.String,
     vpcPeeringConnectionId: java.lang.String
   ): GetRouteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock)
-    __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock)
-    __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId)
-    __obj.updateDynamic("gatewayId")(gatewayId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("natGatewayId")(natGatewayId)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("transitGatewayId")(transitGatewayId)
-    __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId)
+    val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock, destinationIpv6CidrBlock = destinationIpv6CidrBlock, egressOnlyGatewayId = egressOnlyGatewayId, gatewayId = gatewayId, id = id, instanceId = instanceId, natGatewayId = natGatewayId, networkInterfaceId = networkInterfaceId, transitGatewayId = transitGatewayId, vpcPeeringConnectionId = vpcPeeringConnectionId)
+  
     __obj.asInstanceOf[GetRouteResult]
   }
 }

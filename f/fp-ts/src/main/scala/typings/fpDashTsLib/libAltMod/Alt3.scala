@@ -25,10 +25,8 @@ object Alt3 {
       fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
     ]
   ): Alt3[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = alt, map = map)
+  
     __obj.asInstanceOf[Alt3[F]]
   }
 }

@@ -37,9 +37,8 @@ object ToastMap {
     optionsOverride: ToastrOptions = null,
     title: java.lang.String = null
   ): ToastMap = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("iconClass")(iconClass)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(iconClass = iconClass, message = message)
+    __obj.updateDynamic("type")(`type`)
     if (optionsOverride != null) __obj.updateDynamic("optionsOverride")(optionsOverride)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ToastMap]

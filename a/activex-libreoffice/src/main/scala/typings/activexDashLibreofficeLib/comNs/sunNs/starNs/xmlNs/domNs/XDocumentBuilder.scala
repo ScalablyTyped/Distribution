@@ -47,19 +47,8 @@ object XDocumentBuilder {
     ],
     setErrorHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler, scala.Unit]
   ): XDocumentBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DOMImplementation")(DOMImplementation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDOMImplementation")(getDOMImplementation)
-    __obj.updateDynamic("isNamespaceAware")(isNamespaceAware)
-    __obj.updateDynamic("isValidating")(isValidating)
-    __obj.updateDynamic("newDocument")(newDocument)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("parseURI")(parseURI)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEntityResolver")(setEntityResolver)
-    __obj.updateDynamic("setErrorHandler")(setErrorHandler)
+    val __obj = js.Dynamic.literal(DOMImplementation = DOMImplementation, acquire = acquire, getDOMImplementation = getDOMImplementation, isNamespaceAware = isNamespaceAware, isValidating = isValidating, newDocument = newDocument, parse = parse, parseURI = parseURI, queryInterface = queryInterface, release = release, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler)
+  
     __obj.asInstanceOf[XDocumentBuilder]
   }
 }

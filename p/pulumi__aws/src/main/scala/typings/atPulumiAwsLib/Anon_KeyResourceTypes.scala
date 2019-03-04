@@ -18,10 +18,8 @@ object Anon_KeyResourceTypes {
     schedules: js.Array[Anon_CopyTags],
     targetTags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Anon_KeyResourceTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceTypes")(resourceTypes)
-    __obj.updateDynamic("schedules")(schedules)
-    __obj.updateDynamic("targetTags")(targetTags)
+    val __obj = js.Dynamic.literal(resourceTypes = resourceTypes, schedules = schedules, targetTags = targetTags)
+  
     __obj.asInstanceOf[Anon_KeyResourceTypes]
   }
 }

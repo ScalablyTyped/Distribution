@@ -34,7 +34,8 @@ object VectorSource {
     tiles: js.Array[java.lang.String] = null,
     url: java.lang.String = null
   ): VectorSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])

@@ -28,15 +28,8 @@ object Bezier {
     startPoint: Point,
     startWidth: scala.Double
   ): Bezier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_point")(_point)
-    __obj.updateDynamic("control1")(control1)
-    __obj.updateDynamic("control2")(control2)
-    __obj.updateDynamic("endPoint")(endPoint)
-    __obj.updateDynamic("endWidth")(endWidth)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("startPoint")(startPoint)
-    __obj.updateDynamic("startWidth")(startWidth)
+    val __obj = js.Dynamic.literal(_point = _point, control1 = control1, control2 = control2, endPoint = endPoint, endWidth = endWidth, length = length, startPoint = startPoint, startWidth = startWidth)
+  
     __obj.asInstanceOf[Bezier]
   }
 }

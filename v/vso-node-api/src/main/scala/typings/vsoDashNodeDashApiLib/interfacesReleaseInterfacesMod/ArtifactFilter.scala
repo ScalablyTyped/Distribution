@@ -18,10 +18,8 @@ object ArtifactFilter {
     tags: js.Array[java.lang.String],
     useBuildDefinitionBranch: scala.Boolean
   ): ArtifactFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceBranch")(sourceBranch)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("useBuildDefinitionBranch")(useBuildDefinitionBranch)
+    val __obj = js.Dynamic.literal(sourceBranch = sourceBranch, tags = tags, useBuildDefinitionBranch = useBuildDefinitionBranch)
+  
     __obj.asInstanceOf[ArtifactFilter]
   }
 }

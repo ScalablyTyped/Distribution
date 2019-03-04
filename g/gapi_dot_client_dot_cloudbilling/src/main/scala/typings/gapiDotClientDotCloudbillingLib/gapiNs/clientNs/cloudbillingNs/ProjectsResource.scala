@@ -71,10 +71,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBillingInfo")(getBillingInfo)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("updateBillingInfo")(updateBillingInfo)
+    val __obj = js.Dynamic.literal(getBillingInfo = getBillingInfo, list = list, updateBillingInfo = updateBillingInfo)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

@@ -38,11 +38,8 @@ object IgWidgetMethods {
     changeLocale: js.Function1[js.Object, scala.Unit],
     destroy: js.Function0[scala.Unit]
   ): IgWidgetMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy)
+  
     __obj.asInstanceOf[IgWidgetMethods]
   }
 }

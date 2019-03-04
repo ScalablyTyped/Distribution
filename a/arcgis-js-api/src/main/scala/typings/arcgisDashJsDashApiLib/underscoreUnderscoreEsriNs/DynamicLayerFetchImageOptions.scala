@@ -30,10 +30,7 @@ object DynamicLayerFetchImageOptions {
     pixelRatio: scala.Int | scala.Double = null,
     rotation: scala.Int | scala.Double = null
   ): DynamicLayerFetchImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicLayerFetchImageOptions]

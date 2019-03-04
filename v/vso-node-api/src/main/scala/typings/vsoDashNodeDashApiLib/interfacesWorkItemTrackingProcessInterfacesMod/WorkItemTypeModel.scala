@@ -39,18 +39,8 @@ object WorkItemTypeModel {
     states: js.Array[WorkItemStateResultModel],
     url: java.lang.String
   ): WorkItemTypeModel = {
-    val __obj = js.Dynamic.literal(`class` = `class`)
-    __obj.updateDynamic("behaviors")(behaviors)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inherits")(inherits)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("states")(states)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(behaviors = behaviors, color = color, description = description, icon = icon, id = id, inherits = inherits, isDisabled = isDisabled, layout = layout, name = name, states = states, url = url)
+    __obj.updateDynamic("class")(`class`)
     __obj.asInstanceOf[WorkItemTypeModel]
   }
 }

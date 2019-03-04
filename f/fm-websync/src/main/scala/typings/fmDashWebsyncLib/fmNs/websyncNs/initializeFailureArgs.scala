@@ -15,8 +15,8 @@ trait initializeFailureArgs extends baseArgs {
 object initializeFailureArgs {
   @scala.inline
   def apply(error: java.lang.String): initializeFailureArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[initializeFailureArgs]
   }
 }

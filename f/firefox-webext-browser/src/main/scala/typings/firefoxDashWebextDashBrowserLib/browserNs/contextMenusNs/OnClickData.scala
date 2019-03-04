@@ -75,11 +75,7 @@ object OnClickData {
     viewType: firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType = null,
     wasChecked: js.UndefOr[scala.Boolean] = js.undefined
   ): OnClickData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bookmarkId")(bookmarkId)
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("menuItemId")(menuItemId.asInstanceOf[js.Any])
-    __obj.updateDynamic("modifiers")(modifiers)
+    val __obj = js.Dynamic.literal(bookmarkId = bookmarkId, editable = editable, menuItemId = menuItemId.asInstanceOf[js.Any], modifiers = modifiers)
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])

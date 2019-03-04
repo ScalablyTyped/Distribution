@@ -18,11 +18,8 @@ trait Firmware extends js.Object {
 object Firmware {
   @scala.inline
   def apply(major: scala.Double, minor: scala.Double, patch: scala.Double, suffix: java.lang.String): Firmware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("suffix")(suffix)
+    val __obj = js.Dynamic.literal(major = major, minor = minor, patch = patch, suffix = suffix)
+  
     __obj.asInstanceOf[Firmware]
   }
 }

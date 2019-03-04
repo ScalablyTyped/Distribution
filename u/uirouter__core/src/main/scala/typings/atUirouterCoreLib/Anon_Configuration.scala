@@ -20,11 +20,8 @@ object Anon_Configuration {
     name: java.lang.String,
     service: atUirouterCoreLib.libCommonCoreservicesMod.LocationServices
   ): Anon_Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configuration")(configuration)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(configuration = configuration, dispose = dispose, name = name, service = service)
+  
     __obj.asInstanceOf[Anon_Configuration]
   }
 }

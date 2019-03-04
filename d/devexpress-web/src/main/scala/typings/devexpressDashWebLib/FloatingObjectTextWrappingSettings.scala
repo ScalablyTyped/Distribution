@@ -51,13 +51,8 @@ object FloatingObjectTextWrappingSettings {
     rightDistance: scala.Double,
     topDistance: scala.Double
   ): FloatingObjectTextWrappingSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottomDistance")(bottomDistance)
-    __obj.updateDynamic("floatingObjectTextWrapSide")(floatingObjectTextWrapSide)
-    __obj.updateDynamic("floatingObjectTextWrapType")(floatingObjectTextWrapType)
-    __obj.updateDynamic("leftDistance")(leftDistance)
-    __obj.updateDynamic("rightDistance")(rightDistance)
-    __obj.updateDynamic("topDistance")(topDistance)
+    val __obj = js.Dynamic.literal(bottomDistance = bottomDistance, floatingObjectTextWrapSide = floatingObjectTextWrapSide, floatingObjectTextWrapType = floatingObjectTextWrapType, leftDistance = leftDistance, rightDistance = rightDistance, topDistance = topDistance)
+  
     __obj.asInstanceOf[FloatingObjectTextWrappingSettings]
   }
 }

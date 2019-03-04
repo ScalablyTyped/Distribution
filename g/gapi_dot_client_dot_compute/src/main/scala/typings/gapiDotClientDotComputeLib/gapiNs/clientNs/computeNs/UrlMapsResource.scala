@@ -71,15 +71,8 @@ object UrlMapsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UrlMapsValidateResponse]
     ]
   ): UrlMapsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("invalidateCache")(invalidateCache)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, invalidateCache = invalidateCache, list = list, patch = patch, update = update, validate = validate)
+  
     __obj.asInstanceOf[UrlMapsResource]
   }
 }

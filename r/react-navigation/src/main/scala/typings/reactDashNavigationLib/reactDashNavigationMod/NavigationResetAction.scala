@@ -19,9 +19,8 @@ object NavigationResetAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/RESET`,
     key: java.lang.String = null
   ): NavigationResetAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(actions = actions, index = index)
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[NavigationResetAction]
   }

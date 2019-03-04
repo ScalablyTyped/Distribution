@@ -15,10 +15,8 @@ trait Response[T] extends js.Object {
 object Response {
   @scala.inline
   def apply[T](data: js.Any, status: scala.Double, success: scala.Boolean): Response[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(data = data, status = status, success = success)
+  
     __obj.asInstanceOf[Response[T]]
   }
 }

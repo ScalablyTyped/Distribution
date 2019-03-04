@@ -12,8 +12,8 @@ trait PatternParams extends ErrorParameters {
 object PatternParams {
   @scala.inline
   def apply(pattern: java.lang.String): PatternParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern)
+  
     __obj.asInstanceOf[PatternParams]
   }
 }

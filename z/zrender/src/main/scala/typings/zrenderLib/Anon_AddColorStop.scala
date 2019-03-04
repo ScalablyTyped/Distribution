@@ -28,14 +28,8 @@ object Anon_AddColorStop {
     y: zrenderLib.zrenderNs.Y,
     y2: zrenderLib.zrenderNs.Y2
   ): Anon_AddColorStop = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addColorStop")(addColorStop)
-    __obj.updateDynamic("colorStops")(colorStops)
-    __obj.updateDynamic("globalCoord")(globalCoord)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("x2")(x2)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("y2")(y2)
+    val __obj = js.Dynamic.literal(addColorStop = addColorStop, colorStops = colorStops, globalCoord = globalCoord, x = x, x2 = x2, y = y, y2 = y2)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AddColorStop]
   }
 }

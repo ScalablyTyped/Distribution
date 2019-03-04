@@ -18,8 +18,7 @@ object Anon_BucketIncludeCookies {
     includeCookies: js.UndefOr[scala.Boolean] = js.undefined,
     prefix: java.lang.String = null
   ): Anon_BucketIncludeCookies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (!js.isUndefined(includeCookies)) __obj.updateDynamic("includeCookies")(includeCookies)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     __obj.asInstanceOf[Anon_BucketIncludeCookies]

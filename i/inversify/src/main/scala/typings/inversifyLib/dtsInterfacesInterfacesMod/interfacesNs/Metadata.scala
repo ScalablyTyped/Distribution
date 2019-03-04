@@ -13,9 +13,8 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(key: java.lang.String | scala.Double | js.Symbol, value: js.Any): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value)
+  
     __obj.asInstanceOf[Metadata]
   }
 }

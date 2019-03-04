@@ -19,10 +19,10 @@ trait LodashFindLast extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.UndefOr[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashFindLast1x2[T] = js.native
-  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashFindLast3x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__): LodashFindLast1x2[T] = js.native
+  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashFindLast3x2[T] = js.native
   def apply[T](
-    predicate: lodashLib.lodashMod.underscoreNs.`__`,
+    predicate: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindLast1x2[T] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](

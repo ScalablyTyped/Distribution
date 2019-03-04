@@ -20,10 +20,7 @@ object ResolveError {
     recursion: scala.Boolean,
     stack: java.lang.String = null
   ): ResolveError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("missing")(missing)
-    __obj.updateDynamic("recursion")(recursion)
+    val __obj = js.Dynamic.literal(details = details, missing = missing, recursion = recursion)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[ResolveError]
   }

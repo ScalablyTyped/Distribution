@@ -28,15 +28,8 @@ object Message {
     name: java.lang.String,
     timestamp: scala.Double
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("connectionId")(connectionId)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("extras")(extras)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(clientId = clientId, connectionId = connectionId, data = data, encoding = encoding, extras = extras, id = id, name = name, timestamp = timestamp)
+  
     __obj.asInstanceOf[Message]
   }
 }

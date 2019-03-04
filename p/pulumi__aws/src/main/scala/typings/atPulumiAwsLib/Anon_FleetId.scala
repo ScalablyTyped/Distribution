@@ -14,7 +14,8 @@ trait Anon_FleetId extends js.Object {
 object Anon_FleetId {
   @scala.inline
   def apply(`type`: java.lang.String, fleetId: java.lang.String = null, message: java.lang.String = null): Anon_FleetId = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (fleetId != null) __obj.updateDynamic("fleetId")(fleetId)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[Anon_FleetId]

@@ -12,9 +12,8 @@ trait UploadControlFilesUploadStartEventArgs extends EventArgs {
 object UploadControlFilesUploadStartEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, sender: Control): UploadControlFilesUploadStartEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(cancel = cancel, sender = sender)
+  
     __obj.asInstanceOf[UploadControlFilesUploadStartEventArgs]
   }
 }

@@ -38,8 +38,7 @@ object PolicyArgs {
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])

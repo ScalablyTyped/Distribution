@@ -27,9 +27,7 @@ object UserPoolDomainArgs {
     userPoolId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): UserPoolDomainArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolDomainArgs]
   }

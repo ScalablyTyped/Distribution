@@ -25,9 +25,7 @@ object ConnectWiFiOptions {
     password: java.lang.String = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): ConnectWiFiOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BSSID")(BSSID)
-    __obj.updateDynamic("SSID")(SSID)
+    val __obj = js.Dynamic.literal(BSSID = BSSID, SSID = SSID)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (password != null) __obj.updateDynamic("password")(password)

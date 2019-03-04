@@ -51,18 +51,8 @@ object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
     src: java.lang.String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCommandName")(GetCommandName)
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("allowFullscreen")(allowFullscreen)
-    __obj.updateDynamic("enablePrivacyEnhancedMode")(enablePrivacyEnhancedMode)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("showPlayerControls")(showPlayerControls)
-    __obj.updateDynamic("showRelatedVideos")(showRelatedVideos)
-    __obj.updateDynamic("showVideoInfo")(showVideoInfo)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("styleSettings")(styleSettings)
+    val __obj = js.Dynamic.literal(GetCommandName = GetCommandName, align = align, allowFullscreen = allowFullscreen, enablePrivacyEnhancedMode = enablePrivacyEnhancedMode, id = id, selectedElement = selectedElement, showPlayerControls = showPlayerControls, showRelatedVideos = showRelatedVideos, showVideoInfo = showVideoInfo, src = src, styleSettings = styleSettings)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments]
   }
 }

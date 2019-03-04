@@ -47,10 +47,8 @@ object JQuery {
     ],
     unmousewheel: js.Function0[JQuery]
   ): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mousewheel")(mousewheel)
+    val __obj = js.Dynamic.literal(mousewheel = mousewheel, unmousewheel = unmousewheel)
     __obj.updateDynamic("on")(on_mousewheel)
-    __obj.updateDynamic("unmousewheel")(unmousewheel)
     __obj.asInstanceOf[JQuery]
   }
 }

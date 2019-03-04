@@ -22,12 +22,8 @@ object Anon_CANCELED {
     RUNNING: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState,
     SUCCESS: firebaseLib.firebaseMod.firebaseNs.storageNs.TaskState
   ): Anon_CANCELED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CANCELED")(CANCELED)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("PAUSED")(PAUSED)
-    __obj.updateDynamic("RUNNING")(RUNNING)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    val __obj = js.Dynamic.literal(CANCELED = CANCELED, ERROR = ERROR, PAUSED = PAUSED, RUNNING = RUNNING, SUCCESS = SUCCESS)
+  
     __obj.asInstanceOf[Anon_CANCELED]
   }
 }

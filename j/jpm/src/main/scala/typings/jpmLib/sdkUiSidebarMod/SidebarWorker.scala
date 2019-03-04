@@ -12,8 +12,8 @@ trait SidebarWorker extends js.Object {
 object SidebarWorker {
   @scala.inline
   def apply(port: jpmLib.FFAddonSDKNs.Port): SidebarWorker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
+  
     __obj.asInstanceOf[SidebarWorker]
   }
 }

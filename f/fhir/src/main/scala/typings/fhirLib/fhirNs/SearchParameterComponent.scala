@@ -36,9 +36,7 @@ object SearchParameterComponent {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): SearchParameterComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(definition = definition, expression = expression)
     if (_expression != null) __obj.updateDynamic("_expression")(_expression)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

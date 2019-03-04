@@ -26,14 +26,8 @@ object LabelLayout {
     x: scala.Double,
     y: scala.Double
   ): LabelLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("halign")(halign)
-    __obj.updateDynamic("rotationPointX")(rotationPointX)
-    __obj.updateDynamic("rotationPointY")(rotationPointY)
-    __obj.updateDynamic("valign")(valign)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(angle = angle, halign = halign, rotationPointX = rotationPointX, rotationPointY = rotationPointY, valign = valign, x = x, y = y)
+  
     __obj.asInstanceOf[LabelLayout]
   }
 }

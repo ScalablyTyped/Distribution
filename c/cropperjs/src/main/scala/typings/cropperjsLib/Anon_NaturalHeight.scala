@@ -19,9 +19,8 @@ trait Anon_NaturalHeight extends js.Object {
 object Anon_NaturalHeight {
   @scala.inline
   def apply(naturalHeight: scala.Double, naturalWidth: scala.Double): Anon_NaturalHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("naturalHeight")(naturalHeight)
-    __obj.updateDynamic("naturalWidth")(naturalWidth)
+    val __obj = js.Dynamic.literal(naturalHeight = naturalHeight, naturalWidth = naturalWidth)
+  
     __obj.asInstanceOf[Anon_NaturalHeight]
   }
 }

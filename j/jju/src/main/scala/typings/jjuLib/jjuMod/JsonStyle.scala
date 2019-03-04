@@ -36,15 +36,8 @@ object JsonStyle {
     quote: java.lang.String,
     quote_keys: scala.Boolean
   ): JsonStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has_comments")(has_comments)
-    __obj.updateDynamic("has_newlines")(has_newlines)
-    __obj.updateDynamic("has_trailing_comma")(has_trailing_comma)
-    __obj.updateDynamic("has_whitespace")(has_whitespace)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("newline")(newline)
-    __obj.updateDynamic("quote")(quote)
-    __obj.updateDynamic("quote_keys")(quote_keys)
+    val __obj = js.Dynamic.literal(has_comments = has_comments, has_newlines = has_newlines, has_trailing_comma = has_trailing_comma, has_whitespace = has_whitespace, indent = indent, newline = newline, quote = quote, quote_keys = quote_keys)
+  
     __obj.asInstanceOf[JsonStyle]
   }
 }

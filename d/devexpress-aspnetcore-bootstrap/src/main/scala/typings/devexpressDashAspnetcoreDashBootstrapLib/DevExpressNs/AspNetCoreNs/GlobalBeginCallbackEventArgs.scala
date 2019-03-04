@@ -12,10 +12,8 @@ trait GlobalBeginCallbackEventArgs extends BeginCallbackEventArgs {
 object GlobalBeginCallbackEventArgs {
   @scala.inline
   def apply(command: java.lang.String, control: Control, sender: Control): GlobalBeginCallbackEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(command = command, control = control, sender = sender)
+  
     __obj.asInstanceOf[GlobalBeginCallbackEventArgs]
   }
 }

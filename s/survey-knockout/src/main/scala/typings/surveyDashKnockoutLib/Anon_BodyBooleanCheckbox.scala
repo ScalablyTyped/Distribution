@@ -78,40 +78,8 @@ object Anon_BodyBooleanCheckbox {
     text: java.lang.String,
     window: Anon_Body
   ): Anon_BodyBooleanCheckbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("completedPage")(completedPage)
-    __obj.updateDynamic("dropdown")(dropdown)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("footer")(footer)
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("imagepicker")(imagepicker)
-    __obj.updateDynamic("matrix")(matrix)
-    __obj.updateDynamic("matrixdropdown")(matrixdropdown)
-    __obj.updateDynamic("matrixdynamic")(matrixdynamic)
-    __obj.updateDynamic("multipletext")(multipletext)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("navigationButton")(navigationButton)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("pageDescription")(pageDescription)
-    __obj.updateDynamic("pageTitle")(pageTitle)
-    __obj.updateDynamic("panel")(panel)
-    __obj.updateDynamic("paneldynamic")(paneldynamic)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("progressBar")(progressBar)
-    __obj.updateDynamic("question")(question)
-    __obj.updateDynamic("radiogroup")(radiogroup)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("saveData")(saveData)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(body = body, boolean = boolean, checkbox = checkbox, comment = comment, completedPage = completedPage, dropdown = dropdown, error = error, expression = expression, file = file, footer = footer, header = header, imagepicker = imagepicker, matrix = matrix, matrixdropdown = matrixdropdown, matrixdynamic = matrixdynamic, multipletext = multipletext, navigation = navigation, navigationButton = navigationButton, page = page, pageDescription = pageDescription, pageTitle = pageTitle, panel = panel, paneldynamic = paneldynamic, progress = progress, progressBar = progressBar, question = question, radiogroup = radiogroup, rating = rating, root = root, row = row, saveData = saveData, text = text, window = window)
+  
     __obj.asInstanceOf[Anon_BodyBooleanCheckbox]
   }
 }

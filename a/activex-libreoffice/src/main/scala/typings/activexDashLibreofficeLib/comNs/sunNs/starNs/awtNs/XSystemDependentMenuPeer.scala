@@ -33,11 +33,8 @@ object XSystemDependentMenuPeer {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSystemDependentMenuPeer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMenuHandle")(getMenuHandle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getMenuHandle = getMenuHandle, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSystemDependentMenuPeer]
   }
 }

@@ -28,15 +28,8 @@ object INgProgress {
     status: js.Function0[scala.Double],
     stop: js.Function0[scala.Unit]
   ): INgProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(color = color, complete = complete, height = height, reset = reset, set = set, start = start, status = status, stop = stop)
+  
     __obj.asInstanceOf[INgProgress]
   }
 }

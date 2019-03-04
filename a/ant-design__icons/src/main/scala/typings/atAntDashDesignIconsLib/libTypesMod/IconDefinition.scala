@@ -26,10 +26,8 @@ object IconDefinition {
     name: java.lang.String,
     theme: ThemeType
   ): IconDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], name = name, theme = theme)
+  
     __obj.asInstanceOf[IconDefinition]
   }
 }

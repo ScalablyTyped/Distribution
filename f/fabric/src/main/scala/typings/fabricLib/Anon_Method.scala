@@ -15,8 +15,7 @@ trait Anon_Method extends js.Object {
 object Anon_Method {
   @scala.inline
   def apply(onComplete: js.Function, method: java.lang.String = null): Anon_Method = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onComplete")(onComplete)
+    val __obj = js.Dynamic.literal(onComplete = onComplete)
     if (method != null) __obj.updateDynamic("method")(method)
     __obj.asInstanceOf[Anon_Method]
   }

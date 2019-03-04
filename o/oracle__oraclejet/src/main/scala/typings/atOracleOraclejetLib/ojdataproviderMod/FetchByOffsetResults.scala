@@ -14,10 +14,8 @@ trait FetchByOffsetResults[K, D] extends js.Object {
 object FetchByOffsetResults {
   @scala.inline
   def apply[K, D](done: scala.Boolean, fetchParameters: FetchByOffsetParameters[D], results: js.Array[Item[K, D]]): FetchByOffsetResults[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("fetchParameters")(fetchParameters)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(done = done, fetchParameters = fetchParameters, results = results)
+  
     __obj.asInstanceOf[FetchByOffsetResults[K, D]]
   }
 }

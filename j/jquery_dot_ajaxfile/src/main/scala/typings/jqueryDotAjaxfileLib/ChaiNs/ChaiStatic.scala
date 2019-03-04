@@ -25,12 +25,8 @@ object ChaiStatic {
     should: js.Function0[Should],
     use: js.Function1[js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit], js.Any]
   ): ChaiStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assert")(assert)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("expect")(expect)
-    __obj.updateDynamic("should")(should)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(assert = assert, config = config, expect = expect, should = should, use = use)
+  
     __obj.asInstanceOf[ChaiStatic]
   }
 }

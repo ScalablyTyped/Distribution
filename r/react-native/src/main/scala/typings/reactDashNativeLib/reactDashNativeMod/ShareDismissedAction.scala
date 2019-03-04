@@ -12,8 +12,8 @@ trait ShareDismissedAction extends ShareAction {
 object ShareDismissedAction {
   @scala.inline
   def apply(action: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction): ShareDismissedAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
+  
     __obj.asInstanceOf[ShareDismissedAction]
   }
 }

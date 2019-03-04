@@ -200,26 +200,8 @@ object IListDataAdapter {
     remove: js.Function3[java.lang.String, T, scala.Double, winjsLib.WinJSNs.Promise[scala.Unit]],
     setNotificationHandler: js.Function1[IListDataNotificationHandler[T], scala.Unit]
   ): IListDataAdapter[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("compareByIdentity")(compareByIdentity)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("insertAfter")(insertAfter)
-    __obj.updateDynamic("insertAtEnd")(insertAtEnd)
-    __obj.updateDynamic("insertAtStart")(insertAtStart)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("itemSignature")(itemSignature)
-    __obj.updateDynamic("itemsFromDescription")(itemsFromDescription)
-    __obj.updateDynamic("itemsFromEnd")(itemsFromEnd)
-    __obj.updateDynamic("itemsFromIndex")(itemsFromIndex)
-    __obj.updateDynamic("itemsFromKey")(itemsFromKey)
-    __obj.updateDynamic("itemsFromStart")(itemsFromStart)
-    __obj.updateDynamic("moveAfter")(moveAfter)
-    __obj.updateDynamic("moveBefore")(moveBefore)
-    __obj.updateDynamic("moveToEnd")(moveToEnd)
-    __obj.updateDynamic("moveToStart")(moveToStart)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setNotificationHandler")(setNotificationHandler)
+    val __obj = js.Dynamic.literal(change = change, compareByIdentity = compareByIdentity, getCount = getCount, insertAfter = insertAfter, insertAtEnd = insertAtEnd, insertAtStart = insertAtStart, insertBefore = insertBefore, itemSignature = itemSignature, itemsFromDescription = itemsFromDescription, itemsFromEnd = itemsFromEnd, itemsFromIndex = itemsFromIndex, itemsFromKey = itemsFromKey, itemsFromStart = itemsFromStart, moveAfter = moveAfter, moveBefore = moveBefore, moveToEnd = moveToEnd, moveToStart = moveToStart, remove = remove, setNotificationHandler = setNotificationHandler)
+  
     __obj.asInstanceOf[IListDataAdapter[T]]
   }
 }

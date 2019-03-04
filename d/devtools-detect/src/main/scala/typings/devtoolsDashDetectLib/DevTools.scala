@@ -16,9 +16,8 @@ object DevTools {
     open: scala.Boolean,
     orientation: devtoolsDashDetectLib.devtoolsDashDetectLibStrings.vertical | devtoolsDashDetectLib.devtoolsDashDetectLibStrings.horizontal
   ): DevTools = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(open = open, orientation = orientation.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DevTools]
   }
 }

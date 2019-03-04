@@ -57,8 +57,7 @@ object Anon_AltEndTime {
     startTime: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEndTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     if (fields != null) __obj.updateDynamic("fields")(fields)

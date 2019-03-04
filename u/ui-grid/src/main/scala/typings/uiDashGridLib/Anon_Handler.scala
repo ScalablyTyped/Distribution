@@ -58,10 +58,8 @@ object Anon_Handler {
       scala.Unit
     ]
   ): Anon_Handler[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigate")(navigate)
-    __obj.updateDynamic("viewPortKeyDown")(viewPortKeyDown)
-    __obj.updateDynamic("viewPortKeyPress")(viewPortKeyPress)
+    val __obj = js.Dynamic.literal(navigate = navigate, viewPortKeyDown = viewPortKeyDown, viewPortKeyPress = viewPortKeyPress)
+  
     __obj.asInstanceOf[Anon_Handler[TEntity]]
   }
 }

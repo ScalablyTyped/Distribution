@@ -76,39 +76,8 @@ object Anon_AcquisitionAssignmentType {
     LicensingOverride: js.Any,
     RequestedExtension: js.Any
   ): Anon_AcquisitionAssignmentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AcquisitionAssignmentType")(AcquisitionAssignmentType)
-    __obj.updateDynamic("AcquisitionOperation")(AcquisitionOperation)
-    __obj.updateDynamic("AcquisitionOperationState")(AcquisitionOperationState)
-    __obj.updateDynamic("AcquisitionOperationType")(AcquisitionOperationType)
-    __obj.updateDynamic("AcquisitionOptions")(AcquisitionOptions)
-    __obj.updateDynamic("ContributionLicensingBehaviorType")(ContributionLicensingBehaviorType)
-    __obj.updateDynamic("ContributionNodeQuery")(ContributionNodeQuery)
-    __obj.updateDynamic("ContributionPropertyDescription")(ContributionPropertyDescription)
-    __obj.updateDynamic("ContributionPropertyType")(ContributionPropertyType)
-    __obj.updateDynamic("ContributionQueryOptions")(ContributionQueryOptions)
-    __obj.updateDynamic("ContributionType")(ContributionType)
-    __obj.updateDynamic("ExtensionAcquisitionRequest")(ExtensionAcquisitionRequest)
-    __obj.updateDynamic("ExtensionAuditLog")(ExtensionAuditLog)
-    __obj.updateDynamic("ExtensionAuditLogEntry")(ExtensionAuditLogEntry)
-    __obj.updateDynamic("ExtensionEvent")(ExtensionEvent)
-    __obj.updateDynamic("ExtensionFlags")(ExtensionFlags)
-    __obj.updateDynamic("ExtensionLicensing")(ExtensionLicensing)
-    __obj.updateDynamic("ExtensionManifest")(ExtensionManifest)
-    __obj.updateDynamic("ExtensionRequest")(ExtensionRequest)
-    __obj.updateDynamic("ExtensionRequestEvent")(ExtensionRequestEvent)
-    __obj.updateDynamic("ExtensionRequestState")(ExtensionRequestState)
-    __obj.updateDynamic("ExtensionRequestUpdateType")(ExtensionRequestUpdateType)
-    __obj.updateDynamic("ExtensionRequestsEvent")(ExtensionRequestsEvent)
-    __obj.updateDynamic("ExtensionState")(ExtensionState)
-    __obj.updateDynamic("ExtensionStateFlags")(ExtensionStateFlags)
-    __obj.updateDynamic("ExtensionUpdateType")(ExtensionUpdateType)
-    __obj.updateDynamic("InstalledExtension")(InstalledExtension)
-    __obj.updateDynamic("InstalledExtensionState")(InstalledExtensionState)
-    __obj.updateDynamic("InstalledExtensionStateIssue")(InstalledExtensionStateIssue)
-    __obj.updateDynamic("InstalledExtensionStateIssueType")(InstalledExtensionStateIssueType)
-    __obj.updateDynamic("LicensingOverride")(LicensingOverride)
-    __obj.updateDynamic("RequestedExtension")(RequestedExtension)
+    val __obj = js.Dynamic.literal(AcquisitionAssignmentType = AcquisitionAssignmentType, AcquisitionOperation = AcquisitionOperation, AcquisitionOperationState = AcquisitionOperationState, AcquisitionOperationType = AcquisitionOperationType, AcquisitionOptions = AcquisitionOptions, ContributionLicensingBehaviorType = ContributionLicensingBehaviorType, ContributionNodeQuery = ContributionNodeQuery, ContributionPropertyDescription = ContributionPropertyDescription, ContributionPropertyType = ContributionPropertyType, ContributionQueryOptions = ContributionQueryOptions, ContributionType = ContributionType, ExtensionAcquisitionRequest = ExtensionAcquisitionRequest, ExtensionAuditLog = ExtensionAuditLog, ExtensionAuditLogEntry = ExtensionAuditLogEntry, ExtensionEvent = ExtensionEvent, ExtensionFlags = ExtensionFlags, ExtensionLicensing = ExtensionLicensing, ExtensionManifest = ExtensionManifest, ExtensionRequest = ExtensionRequest, ExtensionRequestEvent = ExtensionRequestEvent, ExtensionRequestState = ExtensionRequestState, ExtensionRequestUpdateType = ExtensionRequestUpdateType, ExtensionRequestsEvent = ExtensionRequestsEvent, ExtensionState = ExtensionState, ExtensionStateFlags = ExtensionStateFlags, ExtensionUpdateType = ExtensionUpdateType, InstalledExtension = InstalledExtension, InstalledExtensionState = InstalledExtensionState, InstalledExtensionStateIssue = InstalledExtensionStateIssue, InstalledExtensionStateIssueType = InstalledExtensionStateIssueType, LicensingOverride = LicensingOverride, RequestedExtension = RequestedExtension)
+  
     __obj.asInstanceOf[Anon_AcquisitionAssignmentType]
   }
 }

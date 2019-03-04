@@ -142,16 +142,8 @@ object IMediaHelper {
     resolveFileFromEntity: js.Function2[IMediaEntity, scala.Boolean, java.lang.String],
     scaleToMaxSize: js.Function3[scala.Double, scala.Double, scala.Double, js.Any]
   ): IMediaHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detectIfImageByExtension")(detectIfImageByExtension)
-    __obj.updateDynamic("formatFileTypes")(formatFileTypes)
-    __obj.updateDynamic("getImagePropertyValue")(getImagePropertyValue)
-    __obj.updateDynamic("getMediaPropertyValue")(getMediaPropertyValue)
-    __obj.updateDynamic("getThumbnail")(getThumbnail)
-    __obj.updateDynamic("getThumbnailFromPath")(getThumbnailFromPath)
-    __obj.updateDynamic("resolveFile")(resolveFile)
-    __obj.updateDynamic("resolveFileFromEntity")(resolveFileFromEntity)
-    __obj.updateDynamic("scaleToMaxSize")(scaleToMaxSize)
+    val __obj = js.Dynamic.literal(detectIfImageByExtension = detectIfImageByExtension, formatFileTypes = formatFileTypes, getImagePropertyValue = getImagePropertyValue, getMediaPropertyValue = getMediaPropertyValue, getThumbnail = getThumbnail, getThumbnailFromPath = getThumbnailFromPath, resolveFile = resolveFile, resolveFileFromEntity = resolveFileFromEntity, scaleToMaxSize = scaleToMaxSize)
+  
     __obj.asInstanceOf[IMediaHelper]
   }
 }

@@ -21,10 +21,8 @@ object GraphemeSplitter {
     iterateGraphemes: js.Function1[java.lang.String, stdLib.IterableIterator[java.lang.String]],
     splitGraphemes: js.Function1[java.lang.String, js.Array[java.lang.String]]
   ): GraphemeSplitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countGraphemes")(countGraphemes)
-    __obj.updateDynamic("iterateGraphemes")(iterateGraphemes)
-    __obj.updateDynamic("splitGraphemes")(splitGraphemes)
+    val __obj = js.Dynamic.literal(countGraphemes = countGraphemes, iterateGraphemes = iterateGraphemes, splitGraphemes = splitGraphemes)
+  
     __obj.asInstanceOf[GraphemeSplitter]
   }
 }

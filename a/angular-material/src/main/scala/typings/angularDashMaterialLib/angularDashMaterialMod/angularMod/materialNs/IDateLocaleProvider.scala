@@ -36,19 +36,8 @@ object IDateLocaleProvider {
     shortMonths: js.Array[java.lang.String],
     weekNumberFormatter: js.Function1[scala.Double, java.lang.String]
   ): IDateLocaleProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dates")(dates)
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
-    __obj.updateDynamic("formatDate")(formatDate)
-    __obj.updateDynamic("monthHeaderFormatter")(monthHeaderFormatter)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("msgCalendar")(msgCalendar)
-    __obj.updateDynamic("msgOpenCalendar")(msgOpenCalendar)
-    __obj.updateDynamic("parseDate")(parseDate)
-    __obj.updateDynamic("shortDays")(shortDays)
-    __obj.updateDynamic("shortMonths")(shortMonths)
-    __obj.updateDynamic("weekNumberFormatter")(weekNumberFormatter)
+    val __obj = js.Dynamic.literal(dates = dates, days = days, firstDayOfWeek = firstDayOfWeek, formatDate = formatDate, monthHeaderFormatter = monthHeaderFormatter, months = months, msgCalendar = msgCalendar, msgOpenCalendar = msgOpenCalendar, parseDate = parseDate, shortDays = shortDays, shortMonths = shortMonths, weekNumberFormatter = weekNumberFormatter)
+  
     __obj.asInstanceOf[IDateLocaleProvider]
   }
 }

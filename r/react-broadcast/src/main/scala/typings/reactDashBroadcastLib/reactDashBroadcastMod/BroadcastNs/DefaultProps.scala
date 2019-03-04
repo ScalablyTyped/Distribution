@@ -12,8 +12,8 @@ trait DefaultProps[T] extends js.Object {
 object DefaultProps {
   @scala.inline
   def apply[T](compareValues: js.Function2[T, T, scala.Boolean]): DefaultProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compareValues")(compareValues)
+    val __obj = js.Dynamic.literal(compareValues = compareValues)
+  
     __obj.asInstanceOf[DefaultProps[T]]
   }
 }

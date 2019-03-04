@@ -22,12 +22,8 @@ object SkyBox {
     sources: js.Any,
     update: js.Function0[scala.Unit]
   ): SkyBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, show = show, sources = sources, update = update)
+  
     __obj.asInstanceOf[SkyBox]
   }
 }

@@ -122,15 +122,8 @@ object XPresenterHelper {
     releaseMouse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
     toTop: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit]
   ): XPresenterHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("captureMouse")(captureMouse)
-    __obj.updateDynamic("createCanvas")(createCanvas)
-    __obj.updateDynamic("createSharedCanvas")(createSharedCanvas)
-    __obj.updateDynamic("createWindow")(createWindow)
-    __obj.updateDynamic("getWindowExtentsRelative")(getWindowExtentsRelative)
-    __obj.updateDynamic("loadBitmap")(loadBitmap)
-    __obj.updateDynamic("releaseMouse")(releaseMouse)
-    __obj.updateDynamic("toTop")(toTop)
+    val __obj = js.Dynamic.literal(captureMouse = captureMouse, createCanvas = createCanvas, createSharedCanvas = createSharedCanvas, createWindow = createWindow, getWindowExtentsRelative = getWindowExtentsRelative, loadBitmap = loadBitmap, releaseMouse = releaseMouse, toTop = toTop)
+  
     __obj.asInstanceOf[XPresenterHelper]
   }
 }

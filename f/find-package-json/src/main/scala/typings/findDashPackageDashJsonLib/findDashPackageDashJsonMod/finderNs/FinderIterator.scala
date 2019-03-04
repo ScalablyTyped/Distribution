@@ -12,8 +12,8 @@ trait FinderIterator extends js.Object {
 object FinderIterator {
   @scala.inline
   def apply(next: js.Function0[FindResult]): FinderIterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(next = next)
+  
     __obj.asInstanceOf[FinderIterator]
   }
 }

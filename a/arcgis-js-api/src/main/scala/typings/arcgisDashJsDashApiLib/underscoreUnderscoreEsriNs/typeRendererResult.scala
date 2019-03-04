@@ -51,15 +51,8 @@ object typeRendererResult {
     typeScheme: TypeScheme,
     uniqueValueInfos: js.Array[UniqueValueInfo]
   ): typeRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("excludedUniqueValueInfos")(excludedUniqueValueInfos)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("typeScheme")(typeScheme)
-    __obj.updateDynamic("uniqueValueInfos")(uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, excludedUniqueValueInfos = excludedUniqueValueInfos, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, typeScheme = typeScheme, uniqueValueInfos = uniqueValueInfos)
+  
     __obj.asInstanceOf[typeRendererResult]
   }
 }

@@ -40,12 +40,8 @@ object MetricsCallbackOptions {
     path: java.lang.String,
     statusCode: scala.Double
   ): MetricsCallbackOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionState")(connectionState.asInstanceOf[js.Any])
-    __obj.updateDynamic("latency")(latency)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(connectionState = connectionState.asInstanceOf[js.Any], latency = latency, method = method, path = path, statusCode = statusCode)
+  
     __obj.asInstanceOf[MetricsCallbackOptions]
   }
 }

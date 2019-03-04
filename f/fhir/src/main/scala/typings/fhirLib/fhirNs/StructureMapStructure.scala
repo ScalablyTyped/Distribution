@@ -61,9 +61,7 @@ object StructureMapStructure {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): StructureMapStructure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(mode = mode, url = url)
     if (_alias != null) __obj.updateDynamic("_alias")(_alias)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

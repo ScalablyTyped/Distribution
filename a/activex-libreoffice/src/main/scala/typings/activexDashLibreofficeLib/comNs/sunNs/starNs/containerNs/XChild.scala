@@ -33,13 +33,8 @@ object XChild {
     release: js.Function0[scala.Unit],
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XChild = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setParent")(setParent)
+    val __obj = js.Dynamic.literal(Parent = Parent, acquire = acquire, getParent = getParent, queryInterface = queryInterface, release = release, setParent = setParent)
+  
     __obj.asInstanceOf[XChild]
   }
 }

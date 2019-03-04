@@ -20,9 +20,7 @@ object defaultOptions {
     historyMode: java.lang.String = null,
     initialState: js.Object = null
   ): defaultOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEffect")(addEffect)
-    __obj.updateDynamic("middlewares")(middlewares)
+    val __obj = js.Dynamic.literal(addEffect = addEffect, middlewares = middlewares)
     if (historyMode != null) __obj.updateDynamic("historyMode")(historyMode)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     __obj.asInstanceOf[defaultOptions]

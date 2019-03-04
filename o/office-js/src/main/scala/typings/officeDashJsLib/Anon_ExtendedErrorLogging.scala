@@ -23,8 +23,8 @@ trait Anon_ExtendedErrorLogging extends js.Object {
 object Anon_ExtendedErrorLogging {
   @scala.inline
   def apply(extendedErrorLogging: scala.Boolean): Anon_ExtendedErrorLogging = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extendedErrorLogging")(extendedErrorLogging)
+    val __obj = js.Dynamic.literal(extendedErrorLogging = extendedErrorLogging)
+  
     __obj.asInstanceOf[Anon_ExtendedErrorLogging]
   }
 }

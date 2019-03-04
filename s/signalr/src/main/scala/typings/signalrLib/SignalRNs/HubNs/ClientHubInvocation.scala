@@ -15,11 +15,8 @@ trait ClientHubInvocation extends js.Object {
 object ClientHubInvocation {
   @scala.inline
   def apply(Args: java.lang.String, Hub: java.lang.String, Method: java.lang.String, State: java.lang.String): ClientHubInvocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Args")(Args)
-    __obj.updateDynamic("Hub")(Hub)
-    __obj.updateDynamic("Method")(Method)
-    __obj.updateDynamic("State")(State)
+    val __obj = js.Dynamic.literal(Args = Args, Hub = Hub, Method = Method, State = State)
+  
     __obj.asInstanceOf[ClientHubInvocation]
   }
 }

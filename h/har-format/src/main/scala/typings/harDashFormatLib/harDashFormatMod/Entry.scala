@@ -301,13 +301,7 @@ object Entry {
     pageref: java.lang.String = null,
     serverIPAddress: java.lang.String = null
   ): Entry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("startedDateTime")(startedDateTime)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("timings")(timings)
+    val __obj = js.Dynamic.literal(cache = cache, request = request, response = response, startedDateTime = startedDateTime, time = time, timings = timings)
     if (_all_end != null) __obj.updateDynamic("_all_end")(_all_end.asInstanceOf[js.Any])
     if (_all_ms != null) __obj.updateDynamic("_all_ms")(_all_ms.asInstanceOf[js.Any])
     if (_all_start != null) __obj.updateDynamic("_all_start")(_all_start.asInstanceOf[js.Any])

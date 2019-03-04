@@ -38,11 +38,7 @@ object AnimProps {
     route: js.Object = null,
     style: CSSProperties = null
   ): AnimProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("fromStyle")(fromStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("toStyle")(toStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("transitionDuration")(transitionDuration)
+    val __obj = js.Dynamic.literal(easing = easing, fromStyle = fromStyle.asInstanceOf[js.Any], toStyle = toStyle.asInstanceOf[js.Any], transitionDuration = transitionDuration)
     if (onAnim != null) __obj.updateDynamic("onAnim")(onAnim)
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route)

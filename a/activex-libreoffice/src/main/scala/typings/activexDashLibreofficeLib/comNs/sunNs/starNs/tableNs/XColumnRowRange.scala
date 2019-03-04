@@ -44,14 +44,8 @@ object XColumnRowRange {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XColumnRowRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("Rows")(Rows)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getRows")(getRows)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Columns = Columns, Rows = Rows, acquire = acquire, getColumns = getColumns, getRows = getRows, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XColumnRowRange]
   }
 }

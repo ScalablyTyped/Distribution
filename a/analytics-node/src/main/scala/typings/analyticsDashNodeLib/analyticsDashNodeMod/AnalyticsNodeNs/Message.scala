@@ -26,9 +26,8 @@ object Message {
     timestamp: stdLib.Date = null,
     userId: java.lang.String | scala.Double = null
   ): Message = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_metadata")(_metadata)
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(_metadata = _metadata, context = context)
+    __obj.updateDynamic("type")(`type`)
     if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)

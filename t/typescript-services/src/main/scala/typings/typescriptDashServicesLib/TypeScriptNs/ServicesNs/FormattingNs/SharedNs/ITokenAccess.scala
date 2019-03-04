@@ -16,9 +16,8 @@ object ITokenAccess {
     Contains: js.Function1[typescriptDashServicesLib.TypeScriptNs.SyntaxKind, scala.Boolean],
     GetTokens: js.Function0[js.Array[typescriptDashServicesLib.TypeScriptNs.SyntaxKind]]
   ): ITokenAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Contains")(Contains)
-    __obj.updateDynamic("GetTokens")(GetTokens)
+    val __obj = js.Dynamic.literal(Contains = Contains, GetTokens = GetTokens)
+  
     __obj.asInstanceOf[ITokenAccess]
   }
 }

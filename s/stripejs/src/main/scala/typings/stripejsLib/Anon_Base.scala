@@ -20,9 +20,7 @@ object Anon_Base {
     base: java.lang.String = null,
     complete: java.lang.String = null
   ): Anon_Base = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("invalid")(invalid)
+    val __obj = js.Dynamic.literal(focus = focus, invalid = invalid)
     if (base != null) __obj.updateDynamic("base")(base)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     __obj.asInstanceOf[Anon_Base]

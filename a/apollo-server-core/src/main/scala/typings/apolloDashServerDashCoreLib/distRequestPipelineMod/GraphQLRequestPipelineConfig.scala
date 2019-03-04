@@ -74,8 +74,7 @@ object GraphQLRequestPipelineConfig {
     tracing: js.UndefOr[scala.Boolean] = js.undefined,
     validationRules: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.ValidationRule] = null
   ): GraphQLRequestPipelineConfig[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
     if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources)
     if (documentStore != null) __obj.updateDynamic("documentStore")(documentStore)

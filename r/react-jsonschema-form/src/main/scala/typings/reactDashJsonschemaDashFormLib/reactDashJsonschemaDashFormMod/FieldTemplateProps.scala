@@ -50,26 +50,8 @@ object FieldTemplateProps {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
     uiSchema: UiSchema
   ): FieldTemplateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("classNames")(classNames)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayLabel")(displayLabel)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("formContext")(formContext)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("rawDescription")(rawDescription)
-    __obj.updateDynamic("rawErrors")(rawErrors)
-    __obj.updateDynamic("rawHelp")(rawHelp)
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("uiSchema")(uiSchema)
+    val __obj = js.Dynamic.literal(children = children, classNames = classNames, description = description, disabled = disabled, displayLabel = displayLabel, errors = errors, fields = fields, formContext = formContext, help = help, hidden = hidden, id = id, label = label, rawDescription = rawDescription, rawErrors = rawErrors, rawHelp = rawHelp, readonly = readonly, required = required, schema = schema, uiSchema = uiSchema)
+  
     __obj.asInstanceOf[FieldTemplateProps]
   }
 }

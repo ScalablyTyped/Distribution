@@ -13,8 +13,7 @@ trait Anon_LogDestination extends js.Object {
 object Anon_LogDestination {
   @scala.inline
   def apply(logDestination: java.lang.String, redactedFields: Anon_FieldToMatches = null): Anon_LogDestination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logDestination")(logDestination)
+    val __obj = js.Dynamic.literal(logDestination = logDestination)
     if (redactedFields != null) __obj.updateDynamic("redactedFields")(redactedFields)
     __obj.asInstanceOf[Anon_LogDestination]
   }

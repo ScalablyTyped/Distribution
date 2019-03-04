@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Blob extends `_BodyInit_`
+trait Blob extends _BodyInit_
 

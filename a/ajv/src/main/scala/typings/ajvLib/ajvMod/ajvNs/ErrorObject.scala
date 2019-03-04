@@ -33,11 +33,7 @@ object ErrorObject {
     propertyName: java.lang.String = null,
     schema: js.Any = null
   ): ErrorObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataPath")(dataPath)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("schemaPath")(schemaPath)
+    val __obj = js.Dynamic.literal(dataPath = dataPath, keyword = keyword, params = params, schemaPath = schemaPath)
     if (data != null) __obj.updateDynamic("data")(data)
     if (message != null) __obj.updateDynamic("message")(message)
     if (parentSchema != null) __obj.updateDynamic("parentSchema")(parentSchema)

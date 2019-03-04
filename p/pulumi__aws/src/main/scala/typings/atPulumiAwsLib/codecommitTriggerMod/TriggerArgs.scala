@@ -23,9 +23,8 @@ object TriggerArgs {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
     ]
   ): TriggerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
-    __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TriggerArgs]
   }
 }

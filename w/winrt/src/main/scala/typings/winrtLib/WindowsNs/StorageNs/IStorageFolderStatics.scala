@@ -14,8 +14,8 @@ object IStorageFolderStatics {
   def apply(
     getFolderFromPathAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFolder]]
   ): IStorageFolderStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFolderFromPathAsync")(getFolderFromPathAsync)
+    val __obj = js.Dynamic.literal(getFolderFromPathAsync = getFolderFromPathAsync)
+  
     __obj.asInstanceOf[IStorageFolderStatics]
   }
 }

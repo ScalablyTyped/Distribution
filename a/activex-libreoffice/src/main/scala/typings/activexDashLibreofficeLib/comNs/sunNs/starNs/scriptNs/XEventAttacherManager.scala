@@ -144,21 +144,8 @@ object XEventAttacherManager {
     revokeScriptEvent: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     revokeScriptEvents: js.Function1[scala.Double, scala.Unit]
   ): XEventAttacherManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addScriptListener")(addScriptListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("getScriptEvents")(getScriptEvents)
-    __obj.updateDynamic("insertEntry")(insertEntry)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerScriptEvent")(registerScriptEvent)
-    __obj.updateDynamic("registerScriptEvents")(registerScriptEvents)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEntry")(removeEntry)
-    __obj.updateDynamic("removeScriptListener")(removeScriptListener)
-    __obj.updateDynamic("revokeScriptEvent")(revokeScriptEvent)
-    __obj.updateDynamic("revokeScriptEvents")(revokeScriptEvents)
+    val __obj = js.Dynamic.literal(acquire = acquire, addScriptListener = addScriptListener, attach = attach, detach = detach, getScriptEvents = getScriptEvents, insertEntry = insertEntry, queryInterface = queryInterface, registerScriptEvent = registerScriptEvent, registerScriptEvents = registerScriptEvents, release = release, removeEntry = removeEntry, removeScriptListener = removeScriptListener, revokeScriptEvent = revokeScriptEvent, revokeScriptEvents = revokeScriptEvents)
+  
     __obj.asInstanceOf[XEventAttacherManager]
   }
 }

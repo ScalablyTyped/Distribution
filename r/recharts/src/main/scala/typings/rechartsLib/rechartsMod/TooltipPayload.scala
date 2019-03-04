@@ -28,9 +28,7 @@ object TooltipPayload {
     payload: js.Any = null,
     unit: java.lang.String = null
   ): TooltipPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, value = value.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)

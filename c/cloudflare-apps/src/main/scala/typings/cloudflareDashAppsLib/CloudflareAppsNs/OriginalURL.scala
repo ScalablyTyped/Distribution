@@ -13,9 +13,8 @@ trait OriginalURL extends js.Object {
 object OriginalURL {
   @scala.inline
   def apply(parsed: OriginalURLParsed, raw: java.lang.String): OriginalURL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parsed")(parsed)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(parsed = parsed, raw = raw)
+  
     __obj.asInstanceOf[OriginalURL]
   }
 }

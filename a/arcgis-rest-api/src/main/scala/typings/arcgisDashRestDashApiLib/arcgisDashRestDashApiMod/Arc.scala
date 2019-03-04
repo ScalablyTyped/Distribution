@@ -14,8 +14,8 @@ object Arc {
   def apply(
     a: js.Tuple7[Position, Position2D, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
   ): Arc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
+    val __obj = js.Dynamic.literal(a = a)
+  
     __obj.asInstanceOf[Arc]
   }
 }

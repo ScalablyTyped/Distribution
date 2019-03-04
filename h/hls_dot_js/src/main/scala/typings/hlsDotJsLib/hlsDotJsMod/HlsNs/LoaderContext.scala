@@ -53,11 +53,8 @@ object LoaderContext {
     rangeEnd: scala.Int | scala.Double = null,
     rangeStart: scala.Int | scala.Double = null
   ): LoaderContext = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frag")(frag)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("responseType")(responseType)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frag = frag, level = level, responseType = responseType, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData)
     if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
     if (rangeStart != null) __obj.updateDynamic("rangeStart")(rangeStart.asInstanceOf[js.Any])

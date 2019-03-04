@@ -13,9 +13,8 @@ trait SimpleState extends js.Object {
 object SimpleState {
   @scala.inline
   def apply(name: java.lang.String, params: Params): SimpleState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(name = name, params = params)
+  
     __obj.asInstanceOf[SimpleState]
   }
 }

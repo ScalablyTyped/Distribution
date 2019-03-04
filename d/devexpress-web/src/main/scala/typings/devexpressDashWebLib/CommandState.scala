@@ -19,10 +19,8 @@ trait CommandState[T] extends SimpleCommandState {
 object CommandState {
   @scala.inline
   def apply[T](enabled: scala.Boolean, value: T, visible: scala.Boolean): CommandState[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(enabled = enabled, value = value.asInstanceOf[js.Any], visible = visible)
+  
     __obj.asInstanceOf[CommandState[T]]
   }
 }

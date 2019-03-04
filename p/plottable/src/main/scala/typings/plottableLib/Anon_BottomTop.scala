@@ -13,9 +13,8 @@ trait Anon_BottomTop extends js.Object {
 object Anon_BottomTop {
   @scala.inline
   def apply(bottom: plottableLib.plottableLibStrings.bottom, top: plottableLib.plottableLibStrings.top): Anon_BottomTop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, top = top)
+  
     __obj.asInstanceOf[Anon_BottomTop]
   }
 }

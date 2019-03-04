@@ -28,11 +28,7 @@ object HydratedParseArgsOptions {
     stopEarly: js.UndefOr[scala.Boolean] = js.undefined,
     unknown: js.Function1[/* arg */ java.lang.String, scala.Boolean] = null
   ): HydratedParseArgsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(alias = alias, boolean = boolean, default = default, string = string)
     if (!js.isUndefined(`--`)) __obj.updateDynamic("--")(`--`)
     if (!js.isUndefined(stopEarly)) __obj.updateDynamic("stopEarly")(stopEarly)
     if (unknown != null) __obj.updateDynamic("unknown")(unknown)

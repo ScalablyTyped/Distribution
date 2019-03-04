@@ -25,16 +25,7 @@ object TransactionReceiptWithDecodedLogs {
     contractAddress: java.lang.String = null,
     status: java.lang.String | ethereumDashProtocolLib.ethereumDashProtocolLibNumbers.`0` | ethereumDashProtocolLib.ethereumDashProtocolLibNumbers.`1` = null
   ): TransactionReceiptWithDecodedLogs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockHash")(blockHash)
-    __obj.updateDynamic("blockNumber")(blockNumber)
-    __obj.updateDynamic("cumulativeGasUsed")(cumulativeGasUsed)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("gasUsed")(gasUsed)
-    __obj.updateDynamic("logs")(logs)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("transactionHash")(transactionHash)
-    __obj.updateDynamic("transactionIndex")(transactionIndex)
+    val __obj = js.Dynamic.literal(blockHash = blockHash, blockNumber = blockNumber, cumulativeGasUsed = cumulativeGasUsed, from = from, gasUsed = gasUsed, logs = logs, to = to, transactionHash = transactionHash, transactionIndex = transactionIndex)
     if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionReceiptWithDecodedLogs]

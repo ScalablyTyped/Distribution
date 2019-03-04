@@ -107,13 +107,8 @@ object Anon_CallbackCertificates {
       scala.Unit
     ]
   ): Anon_CallbackCertificates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PinRequestErrorType")(PinRequestErrorType)
-    __obj.updateDynamic("PinRequestType")(PinRequestType)
-    __obj.updateDynamic("onCertificatesRequested")(onCertificatesRequested)
-    __obj.updateDynamic("onSignDigestRequested")(onSignDigestRequested)
-    __obj.updateDynamic("requestPin")(requestPin)
-    __obj.updateDynamic("stopPinRequest")(stopPinRequest)
+    val __obj = js.Dynamic.literal(PinRequestErrorType = PinRequestErrorType, PinRequestType = PinRequestType, onCertificatesRequested = onCertificatesRequested, onSignDigestRequested = onSignDigestRequested, requestPin = requestPin, stopPinRequest = stopPinRequest)
+  
     __obj.asInstanceOf[Anon_CallbackCertificates]
   }
 }

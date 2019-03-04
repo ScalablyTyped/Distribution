@@ -22,12 +22,8 @@ object Road {
     location: LngLat,
     name: java.lang.String
   ): Road = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(direction = direction, distance = distance, id = id, location = location, name = name)
+  
     __obj.asInstanceOf[Road]
   }
 }

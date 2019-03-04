@@ -36,14 +36,8 @@ object Label {
     x: scala.Double,
     y: scala.Double
   ): Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(angle = angle, color = color, font = font, size = size, text = text, x = x, y = y)
+  
     __obj.asInstanceOf[Label]
   }
 }

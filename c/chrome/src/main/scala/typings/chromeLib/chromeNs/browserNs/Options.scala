@@ -13,8 +13,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(url: java.lang.String): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[Options]
   }
 }

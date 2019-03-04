@@ -12,8 +12,8 @@ trait Symlink extends js.Object {
 object Symlink {
   @scala.inline
   def apply(_symlink: js.Any): Symlink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_symlink")(_symlink)
+    val __obj = js.Dynamic.literal(_symlink = _symlink)
+  
     __obj.asInstanceOf[Symlink]
   }
 }

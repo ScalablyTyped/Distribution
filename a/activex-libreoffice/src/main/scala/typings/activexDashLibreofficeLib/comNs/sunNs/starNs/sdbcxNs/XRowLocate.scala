@@ -88,17 +88,8 @@ object XRowLocate {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XRowLocate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bookmark")(Bookmark)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareBookmarks")(compareBookmarks)
-    __obj.updateDynamic("getBookmark")(getBookmark)
-    __obj.updateDynamic("hasOrderedBookmarks")(hasOrderedBookmarks)
-    __obj.updateDynamic("hashBookmark")(hashBookmark)
-    __obj.updateDynamic("moveRelativeToBookmark")(moveRelativeToBookmark)
-    __obj.updateDynamic("moveToBookmark")(moveToBookmark)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Bookmark = Bookmark, acquire = acquire, compareBookmarks = compareBookmarks, getBookmark = getBookmark, hasOrderedBookmarks = hasOrderedBookmarks, hashBookmark = hashBookmark, moveRelativeToBookmark = moveRelativeToBookmark, moveToBookmark = moveToBookmark, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XRowLocate]
   }
 }

@@ -19,9 +19,8 @@ trait ASPxClientTreeListFocusedCellChangingEventArgs extends ASPxClientCancelEve
 object ASPxClientTreeListFocusedCellChangingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, cellInfo: ASPxClientTreeListCellInfo): ASPxClientTreeListFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cellInfo")(cellInfo)
+    val __obj = js.Dynamic.literal(cancel = cancel, cellInfo = cellInfo)
+  
     __obj.asInstanceOf[ASPxClientTreeListFocusedCellChangingEventArgs]
   }
 }

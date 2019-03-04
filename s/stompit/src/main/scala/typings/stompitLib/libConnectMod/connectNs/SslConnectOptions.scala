@@ -65,8 +65,7 @@ object SslConnectOptions {
     timeout: scala.Int | scala.Double = null,
     unknownCommand: js.Function0[scala.Unit] = null
   ): SslConnectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ssl")(ssl)
+    val __obj = js.Dynamic.literal(ssl = ssl)
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])

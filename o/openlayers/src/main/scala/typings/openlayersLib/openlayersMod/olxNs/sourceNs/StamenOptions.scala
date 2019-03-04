@@ -28,8 +28,7 @@ object StamenOptions {
     tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
     url: java.lang.String = null
   ): StamenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
+    val __obj = js.Dynamic.literal(layer = layer)
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])

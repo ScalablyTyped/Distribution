@@ -18,11 +18,8 @@ object Options {
     numberOfParsedAddIterations: scala.Double,
     strategy: java.lang.String
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addBufferSize")(addBufferSize)
-    __obj.updateDynamic("escapeAmp")(escapeAmp)
-    __obj.updateDynamic("numberOfParsedAddIterations")(numberOfParsedAddIterations)
-    __obj.updateDynamic("strategy")(strategy)
+    val __obj = js.Dynamic.literal(addBufferSize = addBufferSize, escapeAmp = escapeAmp, numberOfParsedAddIterations = numberOfParsedAddIterations, strategy = strategy)
+  
     __obj.asInstanceOf[Options]
   }
 }

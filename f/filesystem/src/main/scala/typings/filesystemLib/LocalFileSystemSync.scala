@@ -40,12 +40,8 @@ object LocalFileSystemSync {
     resolveLocalFileSystemSyncURL: js.Function1[java.lang.String, EntrySync],
     webkitRequestFileSystemSync: js.Function2[scala.Double, scala.Double, FileSystemSync]
   ): LocalFileSystemSync = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PERSISTENT")(PERSISTENT)
-    __obj.updateDynamic("TEMPORARY")(TEMPORARY)
-    __obj.updateDynamic("requestFileSystemSync")(requestFileSystemSync)
-    __obj.updateDynamic("resolveLocalFileSystemSyncURL")(resolveLocalFileSystemSyncURL)
-    __obj.updateDynamic("webkitRequestFileSystemSync")(webkitRequestFileSystemSync)
+    val __obj = js.Dynamic.literal(PERSISTENT = PERSISTENT, TEMPORARY = TEMPORARY, requestFileSystemSync = requestFileSystemSync, resolveLocalFileSystemSyncURL = resolveLocalFileSystemSyncURL, webkitRequestFileSystemSync = webkitRequestFileSystemSync)
+  
     __obj.asInstanceOf[LocalFileSystemSync]
   }
 }

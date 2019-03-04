@@ -18,10 +18,8 @@ object ToImgopts {
     height: scala.Double,
     width: scala.Double
   ): ToImgopts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], height = height, width = width)
+  
     __obj.asInstanceOf[ToImgopts]
   }
 }

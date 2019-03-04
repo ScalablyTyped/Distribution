@@ -24,11 +24,8 @@ object XDrawPageDuplicator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDrawPageDuplicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, duplicate = duplicate, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDrawPageDuplicator]
   }
 }

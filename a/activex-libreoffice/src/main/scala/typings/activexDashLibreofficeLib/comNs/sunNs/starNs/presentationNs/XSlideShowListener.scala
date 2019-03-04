@@ -62,21 +62,8 @@ object XSlideShowListener {
     slideTransitionEnded: js.Function0[scala.Unit],
     slideTransitionStarted: js.Function0[scala.Unit]
   ): XSlideShowListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("beginEvent")(beginEvent)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("endEvent")(endEvent)
-    __obj.updateDynamic("hyperLinkClicked")(hyperLinkClicked)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("repeat")(repeat)
-    __obj.updateDynamic("resumed")(resumed)
-    __obj.updateDynamic("slideAnimationsEnded")(slideAnimationsEnded)
-    __obj.updateDynamic("slideEnded")(slideEnded)
-    __obj.updateDynamic("slideTransitionEnded")(slideTransitionEnded)
-    __obj.updateDynamic("slideTransitionStarted")(slideTransitionStarted)
+    val __obj = js.Dynamic.literal(acquire = acquire, beginEvent = beginEvent, disposing = disposing, endEvent = endEvent, hyperLinkClicked = hyperLinkClicked, paused = paused, queryInterface = queryInterface, release = release, repeat = repeat, resumed = resumed, slideAnimationsEnded = slideAnimationsEnded, slideEnded = slideEnded, slideTransitionEnded = slideTransitionEnded, slideTransitionStarted = slideTransitionStarted)
+  
     __obj.asInstanceOf[XSlideShowListener]
   }
 }

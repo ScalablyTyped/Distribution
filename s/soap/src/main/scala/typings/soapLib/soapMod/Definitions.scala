@@ -38,19 +38,8 @@ object Definitions {
     xmlKey: java.lang.String,
     xmlns: WsdlXmlns
   ): Definitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$name")($name)
-    __obj.updateDynamic("$targetNamespace")($targetNamespace)
-    __obj.updateDynamic("bindings")(bindings)
-    __obj.updateDynamic("descriptions")(descriptions)
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("portTypes")(portTypes)
-    __obj.updateDynamic("schemas")(schemas)
-    __obj.updateDynamic("services")(services)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
-    __obj.updateDynamic("xmlns")(xmlns)
+    val __obj = js.Dynamic.literal($name = $name, $targetNamespace = $targetNamespace, bindings = bindings, descriptions = descriptions, ignoredNamespaces = ignoredNamespaces, messages = messages, portTypes = portTypes, schemas = schemas, services = services, valueKey = valueKey, xmlKey = xmlKey, xmlns = xmlns)
+  
     __obj.asInstanceOf[Definitions]
   }
 }

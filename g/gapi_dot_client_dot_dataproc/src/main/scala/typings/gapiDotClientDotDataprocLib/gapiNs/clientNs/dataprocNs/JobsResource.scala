@@ -48,13 +48,8 @@ object JobsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Job]
     ]
   ): JobsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("submit")(submit)
+    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, get = get, list = list, patch = patch, submit = submit)
+  
     __obj.asInstanceOf[JobsResource]
   }
 }

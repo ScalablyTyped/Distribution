@@ -32,12 +32,7 @@ object Anon_AssetPrefix {
     nextExport: js.UndefOr[scala.Boolean] = js.undefined,
     runtimeConfig: js.Any = null
   ): Anon_AssetPrefix[Q] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildId")(buildId)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buildId = buildId, page = page, pathname = pathname, props = props, query = query.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
     if (err != null) __obj.updateDynamic("err")(err)

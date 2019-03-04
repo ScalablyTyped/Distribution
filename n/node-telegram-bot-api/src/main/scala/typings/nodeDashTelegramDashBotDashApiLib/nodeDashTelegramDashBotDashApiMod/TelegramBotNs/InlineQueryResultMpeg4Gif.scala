@@ -34,9 +34,8 @@ object InlineQueryResultMpeg4Gif {
     thumb_url: java.lang.String = null,
     title: java.lang.String = null
   ): InlineQueryResultMpeg4Gif = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mpeg4_url")(mpeg4_url)
+    val __obj = js.Dynamic.literal(id = id, mpeg4_url = mpeg4_url)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
     if (mpeg4_duration != null) __obj.updateDynamic("mpeg4_duration")(mpeg4_duration.asInstanceOf[js.Any])

@@ -42,9 +42,7 @@ object Anon_AltApplicationIdFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltApplicationIdFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId)
-    __obj.updateDynamic("playerId")(playerId)
+    val __obj = js.Dynamic.literal(applicationId = applicationId, playerId = playerId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

@@ -48,12 +48,8 @@ object INxDerivedField {
     qName: java.lang.String,
     qTags: js.Array[java.lang.String]
   ): INxDerivedField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExpr")(qExpr)
-    __obj.updateDynamic("qId")(qId)
-    __obj.updateDynamic("qMethod")(qMethod)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qTags")(qTags)
+    val __obj = js.Dynamic.literal(qExpr = qExpr, qId = qId, qMethod = qMethod, qName = qName, qTags = qTags)
+  
     __obj.asInstanceOf[INxDerivedField]
   }
 }

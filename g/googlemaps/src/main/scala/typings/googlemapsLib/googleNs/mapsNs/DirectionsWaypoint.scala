@@ -25,9 +25,8 @@ trait DirectionsWaypoint extends js.Object {
 object DirectionsWaypoint {
   @scala.inline
   def apply(location: LatLng | LatLngLiteral | java.lang.String, stopover: scala.Boolean): DirectionsWaypoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.updateDynamic("stopover")(stopover)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], stopover = stopover)
+  
     __obj.asInstanceOf[DirectionsWaypoint]
   }
 }

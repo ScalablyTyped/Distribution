@@ -24,13 +24,8 @@ object OAuth2 {
     transactionID: java.lang.String,
     user: js.Any
   ): OAuth2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("redirectURI")(redirectURI)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("transactionID")(transactionID)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(client = client, info = info, redirectURI = redirectURI, req = req, transactionID = transactionID, user = user)
+  
     __obj.asInstanceOf[OAuth2]
   }
 }

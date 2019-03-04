@@ -20,11 +20,8 @@ object RangeElement {
     getStartOffset: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     isPartial: js.Function0[scala.Boolean]
   ): RangeElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("getEndOffsetInclusive")(getEndOffsetInclusive)
-    __obj.updateDynamic("getStartOffset")(getStartOffset)
-    __obj.updateDynamic("isPartial")(isPartial)
+    val __obj = js.Dynamic.literal(getElement = getElement, getEndOffsetInclusive = getEndOffsetInclusive, getStartOffset = getStartOffset, isPartial = isPartial)
+  
     __obj.asInstanceOf[RangeElement]
   }
 }

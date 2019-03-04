@@ -22,12 +22,8 @@ object Anon_LinkDefaults {
     nodes: Anon_IdLabelLayout,
     viewport: Anon_H
   ): Anon_LinkDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linkDefaults")(linkDefaults)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("nodeDefaults")(nodeDefaults)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("viewport")(viewport)
+    val __obj = js.Dynamic.literal(linkDefaults = linkDefaults, links = links, nodeDefaults = nodeDefaults, nodes = nodes, viewport = viewport)
+  
     __obj.asInstanceOf[Anon_LinkDefaults]
   }
 }

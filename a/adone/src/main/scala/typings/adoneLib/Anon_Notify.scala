@@ -12,8 +12,8 @@ trait Anon_Notify extends js.Object {
 object Anon_Notify {
   @scala.inline
   def apply(notifyNs: Anon_Error): Anon_Notify = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notifyNs")(notifyNs)
+    val __obj = js.Dynamic.literal(notifyNs = notifyNs)
+  
     __obj.asInstanceOf[Anon_Notify]
   }
 }

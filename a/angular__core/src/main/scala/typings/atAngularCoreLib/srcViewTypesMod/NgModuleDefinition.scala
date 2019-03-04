@@ -21,11 +21,7 @@ object NgModuleDefinition {
     providersByKey: org.scalablytyped.runtime.StringDictionary[NgModuleProviderDef],
     factory: NgModuleDefinitionFactory = null
   ): NgModuleDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRoot")(isRoot)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("providers")(providers)
-    __obj.updateDynamic("providersByKey")(providersByKey)
+    val __obj = js.Dynamic.literal(isRoot = isRoot, modules = modules, providers = providers, providersByKey = providersByKey)
     if (factory != null) __obj.updateDynamic("factory")(factory)
     __obj.asInstanceOf[NgModuleDefinition]
   }

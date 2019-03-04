@@ -30,9 +30,7 @@ object Anon_AbortIncompleteMultipartUploadDays {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     transitions: js.Array[Anon_DateDays] = null
   ): Anon_AbortIncompleteMultipartUploadDays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(enabled = enabled, id = id)
     if (abortIncompleteMultipartUploadDays != null) __obj.updateDynamic("abortIncompleteMultipartUploadDays")(abortIncompleteMultipartUploadDays.asInstanceOf[js.Any])
     if (expiration != null) __obj.updateDynamic("expiration")(expiration)
     if (noncurrentVersionExpiration != null) __obj.updateDynamic("noncurrentVersionExpiration")(noncurrentVersionExpiration)

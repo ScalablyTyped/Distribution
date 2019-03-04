@@ -114,8 +114,7 @@ object Options {
     ttl: scala.Int | scala.Double = null,
     validateFunc: ValidateFunction = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(password = password)
     if (appendNext != null) __obj.updateDynamic("appendNext")(appendNext.asInstanceOf[js.Any])
     if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)

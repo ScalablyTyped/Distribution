@@ -20,11 +20,8 @@ object Anon_Del {
     get: js.Function1[nodeLib.String, js.Function | scala.Null],
     set: js.Function2[nodeLib.String, js.Function, scala.Unit]
   ): Anon_Del = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(del = del, empty = empty, get = get, set = set)
+  
     __obj.asInstanceOf[Anon_Del]
   }
 }

@@ -50,10 +50,7 @@ object Props {
     springConfig: js.Object = null,
     unsetZIndex: js.UndefOr[scala.Boolean] = js.undefined
   ): Props[I, C, T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemKey")(itemKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(itemKey = itemKey.asInstanceOf[js.Any], list = list, template = template)
     if (autoScrollMaxSpeed != null) __obj.updateDynamic("autoScrollMaxSpeed")(autoScrollMaxSpeed.asInstanceOf[js.Any])
     if (autoScrollRegionSize != null) __obj.updateDynamic("autoScrollRegionSize")(autoScrollRegionSize.asInstanceOf[js.Any])
     if (commonProps != null) __obj.updateDynamic("commonProps")(commonProps.asInstanceOf[js.Any])

@@ -22,9 +22,8 @@ object SnapshotCreateVolumePermissionArgs {
     accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     snapshotId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): SnapshotCreateVolumePermissionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SnapshotCreateVolumePermissionArgs]
   }
 }

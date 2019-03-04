@@ -32,10 +32,7 @@ object AntAnchor {
       scala.Unit
     ] = null
   ): AntAnchor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerLink")(registerLink)
-    __obj.updateDynamic("scrollTo")(scrollTo)
-    __obj.updateDynamic("unregisterLink")(unregisterLink)
+    val __obj = js.Dynamic.literal(registerLink = registerLink, scrollTo = scrollTo, unregisterLink = unregisterLink)
     if (activeLink != null) __obj.updateDynamic("activeLink")(activeLink)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     __obj.asInstanceOf[AntAnchor]

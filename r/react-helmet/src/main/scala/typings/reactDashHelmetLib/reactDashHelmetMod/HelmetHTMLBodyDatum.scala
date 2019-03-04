@@ -15,9 +15,8 @@ object HelmetHTMLBodyDatum {
     toComponent: js.Function0[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLBodyElement]],
     toString: js.Function0[java.lang.String]
   ): HelmetHTMLBodyDatum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toComponent")(toComponent)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toComponent = toComponent, toString = toString)
+  
     __obj.asInstanceOf[HelmetHTMLBodyDatum]
   }
 }

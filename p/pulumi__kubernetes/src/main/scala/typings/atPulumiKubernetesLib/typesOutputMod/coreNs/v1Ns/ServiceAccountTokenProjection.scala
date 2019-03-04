@@ -34,10 +34,8 @@ trait ServiceAccountTokenProjection extends js.Object {
 object ServiceAccountTokenProjection {
   @scala.inline
   def apply(audience: java.lang.String, expirationSeconds: scala.Double, path: java.lang.String): ServiceAccountTokenProjection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audience")(audience)
-    __obj.updateDynamic("expirationSeconds")(expirationSeconds)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(audience = audience, expirationSeconds = expirationSeconds, path = path)
+  
     __obj.asInstanceOf[ServiceAccountTokenProjection]
   }
 }

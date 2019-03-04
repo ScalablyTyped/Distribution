@@ -90,18 +90,8 @@ object JSTreeStaticDefaultsDragNDrop {
     touch: scala.Boolean,
     use_html5: scala.Boolean
   ): JSTreeStaticDefaultsDragNDrop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("always_copy")(always_copy)
-    __obj.updateDynamic("check_while_dragging")(check_while_dragging)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("drag_selection")(drag_selection)
-    __obj.updateDynamic("inside_pos")(inside_pos)
-    __obj.updateDynamic("is_draggable")(is_draggable)
-    __obj.updateDynamic("large_drag_target")(large_drag_target)
-    __obj.updateDynamic("large_drop_target")(large_drop_target)
-    __obj.updateDynamic("open_timeout")(open_timeout)
-    __obj.updateDynamic("touch")(touch)
-    __obj.updateDynamic("use_html5")(use_html5)
+    val __obj = js.Dynamic.literal(always_copy = always_copy, check_while_dragging = check_while_dragging, copy = copy, drag_selection = drag_selection, inside_pos = inside_pos, is_draggable = is_draggable, large_drag_target = large_drag_target, large_drop_target = large_drop_target, open_timeout = open_timeout, touch = touch, use_html5 = use_html5)
+  
     __obj.asInstanceOf[JSTreeStaticDefaultsDragNDrop]
   }
 }

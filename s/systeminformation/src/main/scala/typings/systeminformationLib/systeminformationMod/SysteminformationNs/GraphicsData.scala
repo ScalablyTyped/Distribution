@@ -13,9 +13,8 @@ trait GraphicsData extends js.Object {
 object GraphicsData {
   @scala.inline
   def apply(controllers: js.Array[GraphicsControllerInfo], displays: js.Array[GraphicsDisplayInfo]): GraphicsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controllers")(controllers)
-    __obj.updateDynamic("displays")(displays)
+    val __obj = js.Dynamic.literal(controllers = controllers, displays = displays)
+  
     __obj.asInstanceOf[GraphicsData]
   }
 }

@@ -22,7 +22,8 @@ object FilesQuery {
     docFormat: js.UndefOr[scala.Nothing] = js.undefined,
     lineCharPositions: js.UndefOr[scala.Nothing] = js.undefined
   ): FilesQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(docFormat)) __obj.updateDynamic("docFormat")(docFormat)
     if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
     __obj.asInstanceOf[FilesQuery]

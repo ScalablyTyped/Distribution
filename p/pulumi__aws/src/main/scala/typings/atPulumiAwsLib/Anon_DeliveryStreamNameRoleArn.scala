@@ -18,9 +18,7 @@ object Anon_DeliveryStreamNameRoleArn {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     separator: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DeliveryStreamNameRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryStreamName")(deliveryStreamName.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deliveryStreamName = deliveryStreamName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DeliveryStreamNameRoleArn]
   }

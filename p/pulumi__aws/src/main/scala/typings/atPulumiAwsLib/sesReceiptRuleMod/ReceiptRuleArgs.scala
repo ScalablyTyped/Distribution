@@ -130,8 +130,7 @@ object ReceiptRuleArgs {
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OrganizationArnPosition]]
     ] = null
   ): ReceiptRuleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ruleSetName")(ruleSetName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ruleSetName = ruleSetName.asInstanceOf[js.Any])
     if (addHeaderActions != null) __obj.updateDynamic("addHeaderActions")(addHeaderActions.asInstanceOf[js.Any])
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (bounceActions != null) __obj.updateDynamic("bounceActions")(bounceActions.asInstanceOf[js.Any])

@@ -25,12 +25,8 @@ object PolicyType {
     id: java.lang.String,
     url: java.lang.String
   ): PolicyType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, description = description, displayName = displayName, id = id, url = url)
+  
     __obj.asInstanceOf[PolicyType]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_MergeInfo extends js.Object {
 object Anon_MergeInfo {
   @scala.inline
   def apply(mergeInfo: graphqlDashToolsLib.distInterfacesMod.MergeInfo): Anon_MergeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mergeInfo")(mergeInfo)
+    val __obj = js.Dynamic.literal(mergeInfo = mergeInfo)
+  
     __obj.asInstanceOf[Anon_MergeInfo]
   }
 }

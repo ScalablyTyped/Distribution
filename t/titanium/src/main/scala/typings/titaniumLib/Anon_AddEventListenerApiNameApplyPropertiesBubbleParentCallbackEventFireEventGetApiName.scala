@@ -84,21 +84,8 @@ object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireE
     requestUserNotificationSettings: js.Function1[js.Function1[/* param0 */ GetUserNotificationSettings, _], scala.Unit],
     setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
   ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("apiName")(apiName)
-    __obj.updateDynamic("applyProperties")(applyProperties)
-    __obj.updateDynamic("bubbleParent")(bubbleParent)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("getApiName")(getApiName)
-    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
-    __obj.updateDynamic("getDeliveredNotifications")(getDeliveredNotifications)
-    __obj.updateDynamic("getPendingNotifications")(getPendingNotifications)
-    __obj.updateDynamic("removeDeliveredNotifications")(removeDeliveredNotifications)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePendingNotifications")(removePendingNotifications)
-    __obj.updateDynamic("requestUserNotificationSettings")(requestUserNotificationSettings)
-    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, getDeliveredNotifications = getDeliveredNotifications, getPendingNotifications = getPendingNotifications, removeDeliveredNotifications = removeDeliveredNotifications, removeEventListener = removeEventListener, removePendingNotifications = removePendingNotifications, requestUserNotificationSettings = requestUserNotificationSettings, setBubbleParent = setBubbleParent)
+  
     __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName]
   }
 }

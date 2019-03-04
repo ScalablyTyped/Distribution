@@ -16,8 +16,7 @@ object Anon_NameQuiet {
     quiet: scala.Boolean,
     StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_NameQuiet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quiet")(quiet)
+    val __obj = js.Dynamic.literal(quiet = quiet)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_NameQuiet]
   }

@@ -46,7 +46,8 @@ object DrawOptions {
     style: openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): DrawOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (features != null) __obj.updateDynamic("features")(features)

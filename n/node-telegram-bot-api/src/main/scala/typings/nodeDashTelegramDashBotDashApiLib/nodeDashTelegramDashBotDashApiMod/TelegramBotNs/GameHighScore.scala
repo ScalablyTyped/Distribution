@@ -14,10 +14,8 @@ trait GameHighScore extends js.Object {
 object GameHighScore {
   @scala.inline
   def apply(position: scala.Double, score: scala.Double, user: User): GameHighScore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(position = position, score = score, user = user)
+  
     __obj.asInstanceOf[GameHighScore]
   }
 }

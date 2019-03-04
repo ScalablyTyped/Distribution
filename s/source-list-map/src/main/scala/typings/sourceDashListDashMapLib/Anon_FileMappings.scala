@@ -22,12 +22,8 @@ object Anon_FileMappings {
     sourcesContent: js.Array[java.lang.String],
     version: scala.Double
   ): Anon_FileMappings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("sourcesContent")(sourcesContent)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(file = file, mappings = mappings, sources = sources, sourcesContent = sourcesContent, version = version)
+  
     __obj.asInstanceOf[Anon_FileMappings]
   }
 }

@@ -26,9 +26,8 @@ object ServiceOptions {
     subtypes: js.Array[java.lang.String] = null,
     txt: js.Object = null
   ): ServiceOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(name = name, port = port)
+    __obj.updateDynamic("type")(`type`)
     if (host != null) __obj.updateDynamic("host")(host)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (subtypes != null) __obj.updateDynamic("subtypes")(subtypes)

@@ -75,10 +75,7 @@ object Anon_AltAnnotationDataId {
     userIp: java.lang.String = null,
     w: scala.Int | scala.Double = null
   ): Anon_AltAnnotationDataId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentVersion")(contentVersion)
-    __obj.updateDynamic("layerId")(layerId)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(contentVersion = contentVersion, layerId = layerId, volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (annotationDataId != null) __obj.updateDynamic("annotationDataId")(annotationDataId)
     if (fields != null) __obj.updateDynamic("fields")(fields)

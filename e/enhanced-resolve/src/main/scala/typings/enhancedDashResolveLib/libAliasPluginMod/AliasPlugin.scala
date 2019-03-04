@@ -27,14 +27,8 @@ object AliasPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): AliasPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onlyModule")(onlyModule)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(alias = alias, apply = apply, name = name, onlyModule = onlyModule, options = options, source = source, target = target)
+  
     __obj.asInstanceOf[AliasPlugin]
   }
 }

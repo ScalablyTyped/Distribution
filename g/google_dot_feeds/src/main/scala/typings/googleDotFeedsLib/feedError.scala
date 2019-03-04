@@ -13,9 +13,8 @@ trait feedError extends js.Object {
 object feedError {
   @scala.inline
   def apply(code: java.lang.String, message: java.lang.String): feedError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, message = message)
+  
     __obj.asInstanceOf[feedError]
   }
 }

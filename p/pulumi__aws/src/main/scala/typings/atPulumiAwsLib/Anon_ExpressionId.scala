@@ -22,8 +22,7 @@ object Anon_ExpressionId {
     metric: atPulumiPulumiLib.outputMod.Input[Anon_DimensionsKeyMetricName] = null,
     returnData: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_ExpressionId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])

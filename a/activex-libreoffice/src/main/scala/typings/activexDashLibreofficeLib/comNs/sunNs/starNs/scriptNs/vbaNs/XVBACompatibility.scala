@@ -24,13 +24,8 @@ object XVBACompatibility {
     broadcastVBAScriptEvent: js.Function2[scala.Double, java.lang.String, scala.Unit],
     removeVBAScriptListener: js.Function1[XVBAScriptListener, scala.Unit]
   ): XVBACompatibility = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ProjectName")(ProjectName)
-    __obj.updateDynamic("RunningVBAScripts")(RunningVBAScripts)
-    __obj.updateDynamic("VBACompatibilityMode")(VBACompatibilityMode)
-    __obj.updateDynamic("addVBAScriptListener")(addVBAScriptListener)
-    __obj.updateDynamic("broadcastVBAScriptEvent")(broadcastVBAScriptEvent)
-    __obj.updateDynamic("removeVBAScriptListener")(removeVBAScriptListener)
+    val __obj = js.Dynamic.literal(ProjectName = ProjectName, RunningVBAScripts = RunningVBAScripts, VBACompatibilityMode = VBACompatibilityMode, addVBAScriptListener = addVBAScriptListener, broadcastVBAScriptEvent = broadcastVBAScriptEvent, removeVBAScriptListener = removeVBAScriptListener)
+  
     __obj.asInstanceOf[XVBACompatibility]
   }
 }

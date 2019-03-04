@@ -24,12 +24,8 @@ object KnockstrapProgressDefaults {
     textHidden: scala.Boolean,
     `type`: java.lang.String
   ): KnockstrapProgressDefaults = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("animated")(animated)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("striped")(striped)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("textHidden")(textHidden)
+    val __obj = js.Dynamic.literal(animated = animated, css = css, striped = striped, text = text, textHidden = textHidden)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[KnockstrapProgressDefaults]
   }
 }

@@ -53,14 +53,8 @@ object Spawning {
     ],
     spawn: StructureSpawn
   ): Spawning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("directions")(directions)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("needTime")(needTime)
-    __obj.updateDynamic("remainingTime")(remainingTime)
-    __obj.updateDynamic("setDirections")(setDirections)
-    __obj.updateDynamic("spawn")(spawn)
+    val __obj = js.Dynamic.literal(cancel = cancel, directions = directions, name = name, needTime = needTime, remainingTime = remainingTime, setDirections = setDirections, spawn = spawn)
+  
     __obj.asInstanceOf[Spawning]
   }
 }

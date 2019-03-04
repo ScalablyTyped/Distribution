@@ -22,12 +22,8 @@ object Anon_ColumnFilenameLinenoPath {
     lineno: scala.Double,
     path: stylusLib.stylusMod.StylusNs.NodesNs.Expression
   ): Anon_ColumnFilenameLinenoPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, path = path)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoPath]
   }
 }

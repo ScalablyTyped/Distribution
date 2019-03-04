@@ -42,13 +42,8 @@ object _Impl {
     title: java.lang.String,
     variation: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("variation")(variation)
+    val __obj = js.Dynamic.literal(content = content, html = html, offset = offset, position = position, title = title, variation = variation)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

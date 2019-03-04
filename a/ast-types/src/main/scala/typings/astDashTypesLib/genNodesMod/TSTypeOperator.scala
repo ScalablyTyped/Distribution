@@ -23,9 +23,8 @@ object TSTypeOperator {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeOperator,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
   ): TSTypeOperator = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(operator = operator, typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypeOperator]
   }
 }

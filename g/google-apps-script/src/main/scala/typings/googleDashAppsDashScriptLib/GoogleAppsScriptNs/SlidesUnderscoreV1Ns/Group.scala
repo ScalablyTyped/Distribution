@@ -13,8 +13,8 @@ trait Group extends js.Object {
 object Group {
   @scala.inline
   def apply(children: js.Array[PageElement]): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[Group]
   }
 }

@@ -26,14 +26,8 @@ object IInkStrokeRenderingSegment {
     tiltY: scala.Double,
     twist: scala.Double
   ): IInkStrokeRenderingSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bezierControlPoint1")(bezierControlPoint1)
-    __obj.updateDynamic("bezierControlPoint2")(bezierControlPoint2)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("pressure")(pressure)
-    __obj.updateDynamic("tiltX")(tiltX)
-    __obj.updateDynamic("tiltY")(tiltY)
-    __obj.updateDynamic("twist")(twist)
+    val __obj = js.Dynamic.literal(bezierControlPoint1 = bezierControlPoint1, bezierControlPoint2 = bezierControlPoint2, position = position, pressure = pressure, tiltX = tiltX, tiltY = tiltY, twist = twist)
+  
     __obj.asInstanceOf[IInkStrokeRenderingSegment]
   }
 }

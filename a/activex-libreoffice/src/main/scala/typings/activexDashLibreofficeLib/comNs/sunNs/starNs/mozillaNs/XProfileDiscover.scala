@@ -74,16 +74,8 @@ object XProfileDiscover {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XProfileDiscover = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultProfile")(getDefaultProfile)
-    __obj.updateDynamic("getProfileCount")(getProfileCount)
-    __obj.updateDynamic("getProfileExists")(getProfileExists)
-    __obj.updateDynamic("getProfileList")(getProfileList)
-    __obj.updateDynamic("getProfilePath")(getProfilePath)
-    __obj.updateDynamic("isProfileLocked")(isProfileLocked)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getDefaultProfile = getDefaultProfile, getProfileCount = getProfileCount, getProfileExists = getProfileExists, getProfileList = getProfileList, getProfilePath = getProfilePath, isProfileLocked = isProfileLocked, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XProfileDiscover]
   }
 }

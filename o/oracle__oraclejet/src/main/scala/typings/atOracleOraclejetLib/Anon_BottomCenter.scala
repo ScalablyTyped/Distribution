@@ -32,17 +32,8 @@ object Anon_BottomCenter {
     selectedInnerColor: java.lang.String,
     selectedOuterColor: java.lang.String
   ): Anon_BottomCenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupLabelDisplay")(groupLabelDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("hoverColor")(hoverColor)
-    __obj.updateDynamic("labelDisplay")(labelDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelMinLength")(labelMinLength)
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("labelValign")(labelValign.asInstanceOf[js.Any])
-    __obj.updateDynamic("selectedInnerColor")(selectedInnerColor)
-    __obj.updateDynamic("selectedOuterColor")(selectedOuterColor)
+    val __obj = js.Dynamic.literal(groupLabelDisplay = groupLabelDisplay.asInstanceOf[js.Any], header = header, hoverColor = hoverColor, labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHalign = labelHalign.asInstanceOf[js.Any], labelMinLength = labelMinLength, labelStyle = labelStyle, labelValign = labelValign.asInstanceOf[js.Any], selectedInnerColor = selectedInnerColor, selectedOuterColor = selectedOuterColor)
+  
     __obj.asInstanceOf[Anon_BottomCenter]
   }
 }

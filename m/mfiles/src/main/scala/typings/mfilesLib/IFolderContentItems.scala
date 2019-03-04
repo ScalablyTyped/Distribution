@@ -18,10 +18,8 @@ object IFolderContentItems {
     Item: js.Function1[scala.Double, IFolderContentItem],
     MoreResults: scala.Boolean
   ): IFolderContentItems = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("MoreResults")(MoreResults)
+    val __obj = js.Dynamic.literal(Count = Count, Item = Item, MoreResults = MoreResults)
+  
     __obj.asInstanceOf[IFolderContentItems]
   }
 }

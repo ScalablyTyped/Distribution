@@ -240,36 +240,8 @@ object XIntegerBitmapColorSpace {
     getRenderingIntent: js.Function0[scala.Double],
     getType: js.Function0[scala.Double]
   ): XIntegerBitmapColorSpace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BitsPerPixel")(BitsPerPixel)
-    __obj.updateDynamic("ComponentBitCounts")(ComponentBitCounts)
-    __obj.updateDynamic("ComponentTags")(ComponentTags)
-    __obj.updateDynamic("Endianness")(Endianness)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("RenderingIntent")(RenderingIntent)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("convertColorSpace")(convertColorSpace)
-    __obj.updateDynamic("convertFromARGB")(convertFromARGB)
-    __obj.updateDynamic("convertFromIntegerColorSpace")(convertFromIntegerColorSpace)
-    __obj.updateDynamic("convertFromPARGB")(convertFromPARGB)
-    __obj.updateDynamic("convertFromRGB")(convertFromRGB)
-    __obj.updateDynamic("convertIntegerFromARGB")(convertIntegerFromARGB)
-    __obj.updateDynamic("convertIntegerFromPARGB")(convertIntegerFromPARGB)
-    __obj.updateDynamic("convertIntegerFromRGB")(convertIntegerFromRGB)
-    __obj.updateDynamic("convertIntegerToARGB")(convertIntegerToARGB)
-    __obj.updateDynamic("convertIntegerToPARGB")(convertIntegerToPARGB)
-    __obj.updateDynamic("convertIntegerToRGB")(convertIntegerToRGB)
-    __obj.updateDynamic("convertToARGB")(convertToARGB)
-    __obj.updateDynamic("convertToIntegerColorSpace")(convertToIntegerColorSpace)
-    __obj.updateDynamic("convertToPARGB")(convertToPARGB)
-    __obj.updateDynamic("convertToRGB")(convertToRGB)
-    __obj.updateDynamic("getBitsPerPixel")(getBitsPerPixel)
-    __obj.updateDynamic("getComponentBitCounts")(getComponentBitCounts)
-    __obj.updateDynamic("getComponentTags")(getComponentTags)
-    __obj.updateDynamic("getEndianness")(getEndianness)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getRenderingIntent")(getRenderingIntent)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(BitsPerPixel = BitsPerPixel, ComponentBitCounts = ComponentBitCounts, ComponentTags = ComponentTags, Endianness = Endianness, Properties = Properties, RenderingIntent = RenderingIntent, Type = Type, convertColorSpace = convertColorSpace, convertFromARGB = convertFromARGB, convertFromIntegerColorSpace = convertFromIntegerColorSpace, convertFromPARGB = convertFromPARGB, convertFromRGB = convertFromRGB, convertIntegerFromARGB = convertIntegerFromARGB, convertIntegerFromPARGB = convertIntegerFromPARGB, convertIntegerFromRGB = convertIntegerFromRGB, convertIntegerToARGB = convertIntegerToARGB, convertIntegerToPARGB = convertIntegerToPARGB, convertIntegerToRGB = convertIntegerToRGB, convertToARGB = convertToARGB, convertToIntegerColorSpace = convertToIntegerColorSpace, convertToPARGB = convertToPARGB, convertToRGB = convertToRGB, getBitsPerPixel = getBitsPerPixel, getComponentBitCounts = getComponentBitCounts, getComponentTags = getComponentTags, getEndianness = getEndianness, getProperties = getProperties, getRenderingIntent = getRenderingIntent, getType = getType)
+  
     __obj.asInstanceOf[XIntegerBitmapColorSpace]
   }
 }

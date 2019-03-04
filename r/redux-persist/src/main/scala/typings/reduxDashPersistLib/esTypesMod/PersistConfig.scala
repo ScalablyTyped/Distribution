@@ -56,9 +56,7 @@ object PersistConfig {
     version: scala.Int | scala.Double = null,
     whitelist: js.Array[java.lang.String] = null
   ): PersistConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, storage = storage.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (getStoredState != null) __obj.updateDynamic("getStoredState")(getStoredState)

@@ -32,11 +32,8 @@ object ButtonGroupProps {
     insertBtn: reactLib.reactMod.ReactNs.ReactElement[_],
     showSelectedOnlyBtn: reactLib.reactMod.ReactNs.ReactElement[_]
   ): ButtonGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteBtn")(deleteBtn)
-    __obj.updateDynamic("exportCSVBtn")(exportCSVBtn)
-    __obj.updateDynamic("insertBtn")(insertBtn)
-    __obj.updateDynamic("showSelectedOnlyBtn")(showSelectedOnlyBtn)
+    val __obj = js.Dynamic.literal(deleteBtn = deleteBtn, exportCSVBtn = exportCSVBtn, insertBtn = insertBtn, showSelectedOnlyBtn = showSelectedOnlyBtn)
+  
     __obj.asInstanceOf[ButtonGroupProps]
   }
 }

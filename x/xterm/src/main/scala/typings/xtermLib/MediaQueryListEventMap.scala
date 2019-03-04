@@ -12,8 +12,8 @@ trait MediaQueryListEventMap extends js.Object {
 object MediaQueryListEventMap {
   @scala.inline
   def apply(change: MediaQueryListEvent): MediaQueryListEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
+    val __obj = js.Dynamic.literal(change = change)
+  
     __obj.asInstanceOf[MediaQueryListEventMap]
   }
 }

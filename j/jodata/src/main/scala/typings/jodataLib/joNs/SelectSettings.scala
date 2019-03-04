@@ -19,12 +19,8 @@ object SelectSettings {
     reset: js.Function0[scala.Unit],
     toString: js.Function0[java.lang.String]
   ): SelectSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultSelect")(DefaultSelect)
-    __obj.updateDynamic("Select")(Select)
-    __obj.updateDynamic("isSet")(isSet)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(DefaultSelect = DefaultSelect, Select = Select, isSet = isSet, reset = reset, toString = toString)
+  
     __obj.asInstanceOf[SelectSettings]
   }
 }

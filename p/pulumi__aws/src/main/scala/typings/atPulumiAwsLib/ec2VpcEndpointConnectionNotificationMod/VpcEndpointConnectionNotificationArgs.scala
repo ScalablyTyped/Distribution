@@ -32,9 +32,7 @@ object VpcEndpointConnectionNotificationArgs {
     vpcEndpointId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcEndpointServiceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VpcEndpointConnectionNotificationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionEvents")(connectionEvents.asInstanceOf[js.Any])
-    __obj.updateDynamic("connectionNotificationArn")(connectionNotificationArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectionEvents = connectionEvents.asInstanceOf[js.Any], connectionNotificationArn = connectionNotificationArn.asInstanceOf[js.Any])
     if (vpcEndpointId != null) __obj.updateDynamic("vpcEndpointId")(vpcEndpointId.asInstanceOf[js.Any])
     if (vpcEndpointServiceId != null) __obj.updateDynamic("vpcEndpointServiceId")(vpcEndpointServiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointConnectionNotificationArgs]

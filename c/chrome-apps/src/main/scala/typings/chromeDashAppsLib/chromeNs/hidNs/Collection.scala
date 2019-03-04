@@ -21,10 +21,8 @@ object Collection {
     usage: chromeDashAppsLib.chromeNs.integer,
     usagePage: chromeDashAppsLib.chromeNs.integer
   ): Collection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reportIds")(reportIds)
-    __obj.updateDynamic("usage")(usage)
-    __obj.updateDynamic("usagePage")(usagePage)
+    val __obj = js.Dynamic.literal(reportIds = reportIds, usage = usage, usagePage = usagePage)
+  
     __obj.asInstanceOf[Collection]
   }
 }

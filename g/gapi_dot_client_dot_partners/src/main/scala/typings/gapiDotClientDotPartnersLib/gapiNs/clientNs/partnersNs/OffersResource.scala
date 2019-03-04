@@ -20,9 +20,8 @@ object OffersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListOffersResponse]
     ]
   ): OffersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(history = history, list = list)
+  
     __obj.asInstanceOf[OffersResource]
   }
 }

@@ -12,8 +12,8 @@ trait INgMapOptions extends js.Object {
 object INgMapOptions {
   @scala.inline
   def apply(marker: ngmapLib.Anon_AnchorPoint): INgMapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(marker = marker)
+  
     __obj.asInstanceOf[INgMapOptions]
   }
 }

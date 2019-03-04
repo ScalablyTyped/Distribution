@@ -24,9 +24,7 @@ object Anon_Lean {
     lean: js.UndefOr[scala.Boolean] = js.undefined,
     limit: scala.Int | scala.Double = null
   ): Anon_Lean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxDistance")(maxDistance)
-    __obj.updateDynamic("near")(near)
+    val __obj = js.Dynamic.literal(maxDistance = maxDistance, near = near)
     if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Lean]

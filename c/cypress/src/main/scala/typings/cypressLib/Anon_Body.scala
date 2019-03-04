@@ -13,9 +13,8 @@ trait Anon_Body extends js.Object {
 object Anon_Body {
   @scala.inline
   def apply(body: java.lang.String | cypressLib.CypressNs.ObjectLike, headers: cypressLib.CypressNs.ObjectLike): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

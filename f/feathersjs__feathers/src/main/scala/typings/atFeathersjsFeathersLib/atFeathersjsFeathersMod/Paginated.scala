@@ -15,11 +15,8 @@ trait Paginated[T] extends js.Object {
 object Paginated {
   @scala.inline
   def apply[T](data: js.Array[T], limit: scala.Double, skip: scala.Double, total: scala.Double): Paginated[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("skip")(skip)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(data = data, limit = limit, skip = skip, total = total)
+  
     __obj.asInstanceOf[Paginated[T]]
   }
 }

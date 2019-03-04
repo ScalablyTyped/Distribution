@@ -16,8 +16,7 @@ object Anon_Interactive {
     url: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.HttpURL,
     interactive: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Interactive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
     __obj.asInstanceOf[Anon_Interactive]
   }

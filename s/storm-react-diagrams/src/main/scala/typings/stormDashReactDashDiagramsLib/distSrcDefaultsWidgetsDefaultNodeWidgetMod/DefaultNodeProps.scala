@@ -20,9 +20,7 @@ object DefaultNodeProps {
     className: java.lang.String = null,
     extraProps: js.Any = null
   ): DefaultNodeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagramEngine")(diagramEngine)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine, node = node)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
     if (className != null) __obj.updateDynamic("className")(className)
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)

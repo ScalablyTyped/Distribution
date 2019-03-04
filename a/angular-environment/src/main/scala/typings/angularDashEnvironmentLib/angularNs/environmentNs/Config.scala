@@ -22,9 +22,8 @@ object Config {
     domains: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
     vars: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domains")(domains)
-    __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(domains = domains, vars = vars)
+  
     __obj.asInstanceOf[Config]
   }
 }

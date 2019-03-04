@@ -14,10 +14,8 @@ trait VideoTrackListEventMap extends js.Object {
 object VideoTrackListEventMap {
   @scala.inline
   def apply(addtrack: TrackEvent, change: Event, removetrack: TrackEvent): VideoTrackListEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addtrack")(addtrack)
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("removetrack")(removetrack)
+    val __obj = js.Dynamic.literal(addtrack = addtrack, change = change, removetrack = removetrack)
+  
     __obj.asInstanceOf[VideoTrackListEventMap]
   }
 }

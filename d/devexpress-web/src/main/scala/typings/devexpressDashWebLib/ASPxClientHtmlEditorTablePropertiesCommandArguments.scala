@@ -58,15 +58,8 @@ object ASPxClientHtmlEditorTablePropertiesCommandArguments {
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     summary: java.lang.String
   ): ASPxClientHtmlEditorTablePropertiesCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("cellPadding")(cellPadding)
-    __obj.updateDynamic("cellSpacing")(cellSpacing)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("styleSettings")(styleSettings)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(align = align, caption = caption, cellPadding = cellPadding, cellSpacing = cellSpacing, headers = headers, selectedElement = selectedElement, styleSettings = styleSettings, summary = summary)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorTablePropertiesCommandArguments]
   }
 }

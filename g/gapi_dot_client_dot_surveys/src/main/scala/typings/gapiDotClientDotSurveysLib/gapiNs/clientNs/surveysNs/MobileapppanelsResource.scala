@@ -30,10 +30,8 @@ object MobileapppanelsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[MobileAppPanel]
     ]
   ): MobileapppanelsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, list = list, update = update)
+  
     __obj.asInstanceOf[MobileapppanelsResource]
   }
 }

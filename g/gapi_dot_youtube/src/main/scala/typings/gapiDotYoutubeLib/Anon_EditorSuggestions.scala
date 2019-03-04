@@ -37,12 +37,8 @@ object Anon_EditorSuggestions {
     processingWarnings: js.Array[java.lang.String],
     tagSuggestions: js.Array[Anon_CategoryRestricts]
   ): Anon_EditorSuggestions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editorSuggestions")(editorSuggestions)
-    __obj.updateDynamic("processingErrors")(processingErrors)
-    __obj.updateDynamic("processingHints")(processingHints)
-    __obj.updateDynamic("processingWarnings")(processingWarnings)
-    __obj.updateDynamic("tagSuggestions")(tagSuggestions)
+    val __obj = js.Dynamic.literal(editorSuggestions = editorSuggestions, processingErrors = processingErrors, processingHints = processingHints, processingWarnings = processingWarnings, tagSuggestions = tagSuggestions)
+  
     __obj.asInstanceOf[Anon_EditorSuggestions]
   }
 }

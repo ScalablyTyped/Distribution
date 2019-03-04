@@ -50,14 +50,8 @@ object BaseBrowserFlow {
     run: js.Function0[scala.Unit],
     startAuthorization: js.Function2[java.lang.String, java.lang.String, js.Any]
   ): BaseBrowserFlow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl)
-    __obj.updateDynamic("authorizeUrl")(authorizeUrl)
-    __obj.updateDynamic("finishAuthorization")(finishAuthorization)
-    __obj.updateDynamic("getStateParam")(getStateParam)
-    __obj.updateDynamic("receiverUrl")(receiverUrl)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("startAuthorization")(startAuthorization)
+    val __obj = js.Dynamic.literal(asanaBaseUrl = asanaBaseUrl, authorizeUrl = authorizeUrl, finishAuthorization = finishAuthorization, getStateParam = getStateParam, receiverUrl = receiverUrl, run = run, startAuthorization = startAuthorization)
+  
     __obj.asInstanceOf[BaseBrowserFlow]
   }
 }

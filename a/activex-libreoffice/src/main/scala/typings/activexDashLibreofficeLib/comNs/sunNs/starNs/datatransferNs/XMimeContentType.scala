@@ -84,20 +84,8 @@ object XMimeContentType {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMimeContentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FullMediaType")(FullMediaType)
-    __obj.updateDynamic("MediaSubtype")(MediaSubtype)
-    __obj.updateDynamic("MediaType")(MediaType)
-    __obj.updateDynamic("Parameters")(Parameters)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFullMediaType")(getFullMediaType)
-    __obj.updateDynamic("getMediaSubtype")(getMediaSubtype)
-    __obj.updateDynamic("getMediaType")(getMediaType)
-    __obj.updateDynamic("getParameterValue")(getParameterValue)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("hasParameter")(hasParameter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(FullMediaType = FullMediaType, MediaSubtype = MediaSubtype, MediaType = MediaType, Parameters = Parameters, acquire = acquire, getFullMediaType = getFullMediaType, getMediaSubtype = getMediaSubtype, getMediaType = getMediaType, getParameterValue = getParameterValue, getParameters = getParameters, hasParameter = hasParameter, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMimeContentType]
   }
 }

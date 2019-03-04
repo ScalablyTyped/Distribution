@@ -25,10 +25,8 @@ object IxMonad {
     ],
     iof: js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT3[F, js.Any, js.Any, js.Any]]
   ): IxMonad[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("ichain")(ichain)
-    __obj.updateDynamic("iof")(iof)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ichain = ichain, iof = iof)
+  
     __obj.asInstanceOf[IxMonad[F]]
   }
 }

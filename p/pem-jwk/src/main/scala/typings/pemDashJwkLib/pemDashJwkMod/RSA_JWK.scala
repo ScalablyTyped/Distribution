@@ -30,10 +30,7 @@ object RSA_JWK {
     q: java.lang.String = null,
     qi: java.lang.String = null
   ): RSA_JWK = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("kty")(kty)
-    __obj.updateDynamic("n")(n)
+    val __obj = js.Dynamic.literal(e = e, kty = kty, n = n)
     if (d != null) __obj.updateDynamic("d")(d)
     if (dp != null) __obj.updateDynamic("dp")(dp)
     if (dq != null) __obj.updateDynamic("dq")(dq)

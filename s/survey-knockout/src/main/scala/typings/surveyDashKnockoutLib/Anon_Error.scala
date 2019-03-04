@@ -22,12 +22,8 @@ object Anon_Error {
     saving: java.lang.String,
     success: java.lang.String
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("saveAgainButton")(saveAgainButton)
-    __obj.updateDynamic("saving")(saving)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(error = error, root = root, saveAgainButton = saveAgainButton, saving = saving, success = success)
+  
     __obj.asInstanceOf[Anon_Error]
   }
 }

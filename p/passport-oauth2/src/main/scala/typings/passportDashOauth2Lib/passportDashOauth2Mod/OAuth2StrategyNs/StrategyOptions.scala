@@ -25,11 +25,7 @@ object StrategyOptions {
     state: js.Any = null,
     store: StateStore = null
   ): StrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationURL")(authorizationURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("tokenURL")(tokenURL)
+    val __obj = js.Dynamic.literal(authorizationURL = authorizationURL, clientID = clientID, clientSecret = clientSecret, tokenURL = tokenURL)
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)

@@ -12,8 +12,8 @@ trait Api extends js.Object {
 object Api {
   @scala.inline
   def apply(colReorder: datatablesDotNetDashColreorderLib.Anon_Direction): Api = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colReorder")(colReorder)
+    val __obj = js.Dynamic.literal(colReorder = colReorder)
+  
     __obj.asInstanceOf[Api]
   }
 }

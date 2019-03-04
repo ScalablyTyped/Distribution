@@ -35,10 +35,8 @@ object Graphic {
     clipPointsByRect: js.Function2[js.Array[js.Array[scala.Double]], ERectangle, js.Array[js.Array[scala.Double]]],
     clipRectByRect: js.Function2[ERectangle, ERectangle, ERectangle]
   ): Graphic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LinearGradient")(LinearGradient)
-    __obj.updateDynamic("clipPointsByRect")(clipPointsByRect)
-    __obj.updateDynamic("clipRectByRect")(clipRectByRect)
+    val __obj = js.Dynamic.literal(LinearGradient = LinearGradient, clipPointsByRect = clipPointsByRect, clipRectByRect = clipRectByRect)
+  
     __obj.asInstanceOf[Graphic]
   }
 }

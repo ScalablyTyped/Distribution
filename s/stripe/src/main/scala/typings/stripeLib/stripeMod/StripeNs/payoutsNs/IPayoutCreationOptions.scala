@@ -61,9 +61,7 @@ object IPayoutCreationOptions {
     source_type: stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.card = null,
     statement_descriptor: java.lang.String = null
   ): IPayoutCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
     if (description != null) __obj.updateDynamic("description")(description)
     if (destination != null) __obj.updateDynamic("destination")(destination)
     if (expand != null) __obj.updateDynamic("expand")(expand)

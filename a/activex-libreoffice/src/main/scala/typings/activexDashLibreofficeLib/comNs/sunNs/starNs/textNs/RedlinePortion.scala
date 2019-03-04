@@ -91,16 +91,7 @@ object RedlinePortion {
     RedlineType: java.lang.String,
     TextPortion: TextPortion = null
   ): RedlinePortion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsInHeaderFooter")(IsInHeaderFooter)
-    __obj.updateDynamic("MergeLastPara")(MergeLastPara)
-    __obj.updateDynamic("RedlineAuthor")(RedlineAuthor)
-    __obj.updateDynamic("RedlineComment")(RedlineComment)
-    __obj.updateDynamic("RedlineDateTime")(RedlineDateTime)
-    __obj.updateDynamic("RedlineIdentifier")(RedlineIdentifier)
-    __obj.updateDynamic("RedlineSuccessorData")(RedlineSuccessorData.asInstanceOf[js.Any])
-    __obj.updateDynamic("RedlineText")(RedlineText)
-    __obj.updateDynamic("RedlineType")(RedlineType)
+    val __obj = js.Dynamic.literal(IsInHeaderFooter = IsInHeaderFooter, MergeLastPara = MergeLastPara, RedlineAuthor = RedlineAuthor, RedlineComment = RedlineComment, RedlineDateTime = RedlineDateTime, RedlineIdentifier = RedlineIdentifier, RedlineSuccessorData = RedlineSuccessorData.asInstanceOf[js.Any], RedlineText = RedlineText, RedlineType = RedlineType)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, TextPortion)
     __obj.asInstanceOf[RedlinePortion]
   }

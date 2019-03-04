@@ -30,16 +30,8 @@ object WrappedException {
     typeKey: java.lang.String,
     typeName: java.lang.String
   ): WrappedException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customProperties")(customProperties)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("eventId")(eventId)
-    __obj.updateDynamic("helpLink")(helpLink)
-    __obj.updateDynamic("innerException")(innerException)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stackTrace")(stackTrace)
-    __obj.updateDynamic("typeKey")(typeKey)
-    __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(customProperties = customProperties, errorCode = errorCode, eventId = eventId, helpLink = helpLink, innerException = innerException, message = message, stackTrace = stackTrace, typeKey = typeKey, typeName = typeName)
+  
     __obj.asInstanceOf[WrappedException]
   }
 }

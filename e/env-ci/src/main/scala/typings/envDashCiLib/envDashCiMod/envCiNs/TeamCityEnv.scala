@@ -29,13 +29,7 @@ object TeamCityEnv {
     branch: java.lang.String = null,
     root: java.lang.String = null
   ): TeamCityEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(build = build, commit = commit, isCi = isCi, name = name, service = service, slug = slug)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (root != null) __obj.updateDynamic("root")(root)
     __obj.asInstanceOf[TeamCityEnv]

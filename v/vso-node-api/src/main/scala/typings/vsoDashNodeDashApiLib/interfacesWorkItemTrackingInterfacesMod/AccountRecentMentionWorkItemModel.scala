@@ -47,14 +47,8 @@ object AccountRecentMentionWorkItemModel {
     title: java.lang.String,
     workItemType: java.lang.String
   ): AccountRecentMentionWorkItemModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mentionedDateField")(mentionedDateField)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("teamProject")(teamProject)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("workItemType")(workItemType)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, id = id, mentionedDateField = mentionedDateField, state = state, teamProject = teamProject, title = title, workItemType = workItemType)
+  
     __obj.asInstanceOf[AccountRecentMentionWorkItemModel]
   }
 }

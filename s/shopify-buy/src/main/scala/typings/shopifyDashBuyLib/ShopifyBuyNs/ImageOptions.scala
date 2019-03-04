@@ -13,9 +13,8 @@ trait ImageOptions extends js.Object {
 object ImageOptions {
   @scala.inline
   def apply(maxHeight: scala.Double, maxWidth: scala.Double): ImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("maxWidth")(maxWidth)
+    val __obj = js.Dynamic.literal(maxHeight = maxHeight, maxWidth = maxWidth)
+  
     __obj.asInstanceOf[ImageOptions]
   }
 }

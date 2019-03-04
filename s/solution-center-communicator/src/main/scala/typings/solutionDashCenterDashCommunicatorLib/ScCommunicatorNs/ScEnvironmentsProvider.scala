@@ -45,11 +45,8 @@ object ScEnvironmentsProvider {
     getSpecificEnvironment: js.Function1[java.lang.String, Environment],
     setCurrentEnvironment: js.Function1[js.Any, Environment]
   ): ScEnvironmentsProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("getCurrentEnvironment")(getCurrentEnvironment)
-    __obj.updateDynamic("getSpecificEnvironment")(getSpecificEnvironment)
-    __obj.updateDynamic("setCurrentEnvironment")(setCurrentEnvironment)
+    val __obj = js.Dynamic.literal($get = $get, getCurrentEnvironment = getCurrentEnvironment, getSpecificEnvironment = getSpecificEnvironment, setCurrentEnvironment = setCurrentEnvironment)
+  
     __obj.asInstanceOf[ScEnvironmentsProvider]
   }
 }

@@ -18,8 +18,7 @@ object CustomListDescriptor {
     hasMore: js.UndefOr[scala.Boolean] = js.undefined,
     total: scala.Int | scala.Double = null
   ): CustomListDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("threads")(threads)
+    val __obj = js.Dynamic.literal(threads = threads)
     if (!js.isUndefined(hasMore)) __obj.updateDynamic("hasMore")(hasMore)
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomListDescriptor]

@@ -30,12 +30,8 @@ object ContinuousRendererResultColor {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     visualVariable: ColorVariable
   ): ContinuousRendererResultColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorScheme")(colorScheme)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("visualVariable")(visualVariable)
+    val __obj = js.Dynamic.literal(colorScheme = colorScheme, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, visualVariable = visualVariable)
+  
     __obj.asInstanceOf[ContinuousRendererResultColor]
   }
 }

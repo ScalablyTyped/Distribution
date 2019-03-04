@@ -13,9 +13,8 @@ trait ChannelHistoryResult extends js.Object {
 object ChannelHistoryResult {
   @scala.inline
   def apply(records: ChannelHistory, res: NormalSuccessResponse): ChannelHistoryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("records")(records)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(records = records, res = res)
+  
     __obj.asInstanceOf[ChannelHistoryResult]
   }
 }

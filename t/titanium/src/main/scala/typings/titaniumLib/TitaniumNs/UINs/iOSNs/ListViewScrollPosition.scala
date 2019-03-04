@@ -52,20 +52,7 @@ object ListViewScrollPosition {
     lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
     setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
   ): ListViewScrollPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("MIDDLE")(MIDDLE)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("TOP")(TOP)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("apiName")(apiName)
-    __obj.updateDynamic("applyProperties")(applyProperties)
-    __obj.updateDynamic("bubbleParent")(bubbleParent)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("getApiName")(getApiName)
-    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, MIDDLE = MIDDLE, NONE = NONE, TOP = TOP, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
     if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
     if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
     if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)

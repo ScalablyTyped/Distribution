@@ -38,12 +38,7 @@ object ICreateElementTreeDelta {
     unitId: java.lang.String,
     additionIndex: scala.Int | scala.Double = null
   ): ICreateElementTreeDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deltaType")(deltaType)
-    __obj.updateDynamic("elementTree")(elementTree)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("parentPropertyName")(parentPropertyName)
-    __obj.updateDynamic("unitId")(unitId)
+    val __obj = js.Dynamic.literal(deltaType = deltaType, elementTree = elementTree, parentId = parentId, parentPropertyName = parentPropertyName, unitId = unitId)
     if (additionIndex != null) __obj.updateDynamic("additionIndex")(additionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICreateElementTreeDelta]
   }

@@ -20,9 +20,8 @@ object Anon_Detail {
       aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
     ])
   ): Anon_Detail[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(detail = detail.asInstanceOf[js.Any], target = target)
+  
     __obj.asInstanceOf[Anon_Detail[D]]
   }
 }

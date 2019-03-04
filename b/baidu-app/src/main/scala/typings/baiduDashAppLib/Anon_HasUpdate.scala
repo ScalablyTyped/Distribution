@@ -12,8 +12,8 @@ trait Anon_HasUpdate extends js.Object {
 object Anon_HasUpdate {
   @scala.inline
   def apply(hasUpdate: scala.Boolean): Anon_HasUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasUpdate")(hasUpdate)
+    val __obj = js.Dynamic.literal(hasUpdate = hasUpdate)
+  
     __obj.asInstanceOf[Anon_HasUpdate]
   }
 }

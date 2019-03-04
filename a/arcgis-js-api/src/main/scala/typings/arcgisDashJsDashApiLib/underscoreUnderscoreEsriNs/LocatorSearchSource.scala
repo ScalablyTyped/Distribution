@@ -88,33 +88,8 @@ object LocatorSearchSource {
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): LocatorSearchSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoNavigate")(autoNavigate)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("localSearchOptions")(localSearchOptions)
-    __obj.updateDynamic("locationToAddressDistance")(locationToAddressDistance)
-    __obj.updateDynamic("locator")(locator)
-    __obj.updateDynamic("maxResults")(maxResults)
-    __obj.updateDynamic("maxSuggestions")(maxSuggestions)
-    __obj.updateDynamic("minSuggestCharacters")(minSuggestCharacters)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outFields")(outFields)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("popupEnabled")(popupEnabled)
-    __obj.updateDynamic("popupTemplate")(popupTemplate)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("resultGraphicEnabled")(resultGraphicEnabled)
-    __obj.updateDynamic("resultSymbol")(resultSymbol)
-    __obj.updateDynamic("searchTemplate")(searchTemplate)
-    __obj.updateDynamic("singleLineFieldName")(singleLineFieldName)
-    __obj.updateDynamic("suffix")(suffix)
-    __obj.updateDynamic("suggestionsEnabled")(suggestionsEnabled)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("withinViewEnabled")(withinViewEnabled)
-    __obj.updateDynamic("zoomScale")(zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, categories = categories, clone = clone, countryCode = countryCode, filter = filter, localSearchOptions = localSearchOptions, locationToAddressDistance = locationToAddressDistance, locator = locator, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, name = name, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, searchTemplate = searchTemplate, singleLineFieldName = singleLineFieldName, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = toJSON, withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+  
     __obj.asInstanceOf[LocatorSearchSource]
   }
 }

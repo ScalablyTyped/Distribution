@@ -14,10 +14,8 @@ trait IScene extends js.Object {
 object IScene {
   @scala.inline
   def apply(id: java.lang.String, lights: js.Array[scala.Double], name: java.lang.String): IScene = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lights")(lights)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, lights = lights, name = name)
+  
     __obj.asInstanceOf[IScene]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_ContentType extends js.Object {
 object Anon_ContentType {
   @scala.inline
   def apply(`Content-Type`: java.lang.String): Anon_ContentType = {
-    val __obj = js.Dynamic.literal(`Content-Type` = `Content-Type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Content-Type")(`Content-Type`)
     __obj.asInstanceOf[Anon_ContentType]
   }
 }

@@ -20,8 +20,7 @@ object OffsetRequest {
     partition: scala.Int | scala.Double = null,
     time: scala.Int | scala.Double = null
   ): OffsetRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(topic = topic)
     if (maxNum != null) __obj.updateDynamic("maxNum")(maxNum.asInstanceOf[js.Any])
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])

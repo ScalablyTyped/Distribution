@@ -24,12 +24,8 @@ object Anon_Href {
     title: java.lang.String,
     `type`: java.lang.String
   ): Anon_Href = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("hreflang")(hreflang)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("rel")(rel)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(href = href, hreflang = hreflang, length = length, rel = rel, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Href]
   }
 }

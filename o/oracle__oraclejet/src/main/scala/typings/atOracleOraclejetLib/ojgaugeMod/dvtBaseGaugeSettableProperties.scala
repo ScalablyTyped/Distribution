@@ -17,9 +17,8 @@ object dvtBaseGaugeSettableProperties {
     trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
     translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue
   ): dvtBaseGaugeSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
+  
     __obj.asInstanceOf[dvtBaseGaugeSettableProperties]
   }
 }

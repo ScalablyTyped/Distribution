@@ -46,13 +46,8 @@ object IFetchResult {
     offset: scala.Double,
     totalCount: scala.Double
   ): IFetchResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absoluteIndex")(absoluteIndex)
-    __obj.updateDynamic("atEnd")(atEnd)
-    __obj.updateDynamic("atStart")(atStart)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("totalCount")(totalCount)
+    val __obj = js.Dynamic.literal(absoluteIndex = absoluteIndex, atEnd = atEnd, atStart = atStart, items = items, offset = offset, totalCount = totalCount)
+  
     __obj.asInstanceOf[IFetchResult[T]]
   }
 }

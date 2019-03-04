@@ -43,16 +43,8 @@ object XConnectable {
     setPredecessor: js.Function1[XConnectable, scala.Unit],
     setSuccessor: js.Function1[XConnectable, scala.Unit]
   ): XConnectable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Predecessor")(Predecessor)
-    __obj.updateDynamic("Successor")(Successor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPredecessor")(getPredecessor)
-    __obj.updateDynamic("getSuccessor")(getSuccessor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPredecessor")(setPredecessor)
-    __obj.updateDynamic("setSuccessor")(setSuccessor)
+    val __obj = js.Dynamic.literal(Predecessor = Predecessor, Successor = Successor, acquire = acquire, getPredecessor = getPredecessor, getSuccessor = getSuccessor, queryInterface = queryInterface, release = release, setPredecessor = setPredecessor, setSuccessor = setSuccessor)
+  
     __obj.asInstanceOf[XConnectable]
   }
 }

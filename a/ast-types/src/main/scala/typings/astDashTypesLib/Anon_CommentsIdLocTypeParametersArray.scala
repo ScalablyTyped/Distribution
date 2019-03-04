@@ -20,8 +20,7 @@ object Anon_CommentsIdLocTypeParametersArray {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): Anon_CommentsIdLocTypeParametersArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)

@@ -19,8 +19,8 @@ trait TransferFailed
 object TransferFailed {
   @scala.inline
   def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): TransferFailed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("call")(call)
+    val __obj = js.Dynamic.literal(call = call)
+  
     __obj.asInstanceOf[TransferFailed]
   }
 }

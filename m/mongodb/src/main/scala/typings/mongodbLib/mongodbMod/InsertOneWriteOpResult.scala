@@ -22,12 +22,8 @@ object InsertOneWriteOpResult {
     ops: js.Array[_],
     result: mongodbLib.Anon_NOk
   ): InsertOneWriteOpResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("insertedCount")(insertedCount)
-    __obj.updateDynamic("insertedId")(insertedId)
-    __obj.updateDynamic("ops")(ops)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(connection = connection, insertedCount = insertedCount, insertedId = insertedId, ops = ops, result = result)
+  
     __obj.asInstanceOf[InsertOneWriteOpResult]
   }
 }

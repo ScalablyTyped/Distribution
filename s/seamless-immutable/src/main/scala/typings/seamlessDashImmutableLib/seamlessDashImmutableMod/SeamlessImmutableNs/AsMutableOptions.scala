@@ -12,8 +12,8 @@ trait AsMutableOptions extends js.Object {
 object AsMutableOptions {
   @scala.inline
   def apply(deep: scala.Boolean): AsMutableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deep")(deep)
+    val __obj = js.Dynamic.literal(deep = deep)
+  
     __obj.asInstanceOf[AsMutableOptions]
   }
 }

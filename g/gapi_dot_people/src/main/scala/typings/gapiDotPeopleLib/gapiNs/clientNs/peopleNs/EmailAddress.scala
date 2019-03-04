@@ -22,11 +22,8 @@ object EmailAddress {
     `type`: java.lang.String,
     value: java.lang.String
   ): EmailAddress = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("formattedType")(formattedType)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(displayName = displayName, formattedType = formattedType, metadata = metadata, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EmailAddress]
   }
 }

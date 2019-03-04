@@ -23,10 +23,8 @@ object TypedefType {
     name: java.lang.String,
     `type`: webidl2Lib.webidl2LibStrings.typedef
   ): TypedefType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypedefType]
   }
 }

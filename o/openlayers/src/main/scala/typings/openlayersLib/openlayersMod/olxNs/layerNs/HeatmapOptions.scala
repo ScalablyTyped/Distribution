@@ -36,9 +36,7 @@ object HeatmapOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): HeatmapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source, weight = weight.asInstanceOf[js.Any])
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (gradient != null) __obj.updateDynamic("gradient")(gradient)

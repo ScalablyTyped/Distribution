@@ -22,12 +22,8 @@ object Anon_EXTENSION {
     PACKAGED_APP: chromeDashAppsLib.chromeDashAppsLibStrings.packaged_app,
     THEME: chromeDashAppsLib.chromeDashAppsLibStrings.theme
   ): Anon_EXTENSION = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EXTENSION")(EXTENSION)
-    __obj.updateDynamic("HOSTED_APP")(HOSTED_APP)
-    __obj.updateDynamic("LEGACY_PACKAGED_APP")(LEGACY_PACKAGED_APP)
-    __obj.updateDynamic("PACKAGED_APP")(PACKAGED_APP)
-    __obj.updateDynamic("THEME")(THEME)
+    val __obj = js.Dynamic.literal(EXTENSION = EXTENSION, HOSTED_APP = HOSTED_APP, LEGACY_PACKAGED_APP = LEGACY_PACKAGED_APP, PACKAGED_APP = PACKAGED_APP, THEME = THEME)
+  
     __obj.asInstanceOf[Anon_EXTENSION]
   }
 }

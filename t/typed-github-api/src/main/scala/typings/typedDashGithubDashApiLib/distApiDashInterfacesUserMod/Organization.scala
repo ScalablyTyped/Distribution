@@ -53,32 +53,8 @@ object Organization {
     updated_at: stdLib.Date,
     url: java.lang.String
   ): Organization = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("blog")(blog)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("events_url")(events_url)
-    __obj.updateDynamic("followers")(followers)
-    __obj.updateDynamic("following")(following)
-    __obj.updateDynamic("has_organization_projects")(has_organization_projects)
-    __obj.updateDynamic("has_repository_projects")(has_repository_projects)
-    __obj.updateDynamic("hooks_url")(hooks_url)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("issues_url")(issues_url)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("members_url")(members_url)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("public_gists")(public_gists)
-    __obj.updateDynamic("public_members_url")(public_members_url)
-    __obj.updateDynamic("public_repos")(public_repos)
-    __obj.updateDynamic("repos_url")(repos_url)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, blog = blog, company = company, created_at = created_at, description = description, email = email, events_url = events_url, followers = followers, following = following, has_organization_projects = has_organization_projects, has_repository_projects = has_repository_projects, hooks_url = hooks_url, html_url = html_url, id = id, issues_url = issues_url, location = location, login = login, members_url = members_url, name = name, public_gists = public_gists, public_members_url = public_members_url, public_repos = public_repos, repos_url = repos_url, updated_at = updated_at, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Organization]
   }
 }

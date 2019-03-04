@@ -25,13 +25,7 @@ object JWR {
     toString: js.Function0[java.lang.String],
     error: stdLib.Error = null
   ): JWR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("pipe")(pipe)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("toPOJO")(toPOJO)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, pipe = pipe, statusCode = statusCode, toPOJO = toPOJO, toString = toString)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[JWR]
   }

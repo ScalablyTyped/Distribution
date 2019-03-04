@@ -29,7 +29,8 @@ object TSTypeParameter {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): TSTypeParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (constraint != null) __obj.updateDynamic("constraint")(constraint)
     if (default != null) __obj.updateDynamic("default")(default)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

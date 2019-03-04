@@ -12,8 +12,8 @@ trait GithubBranch extends js.Object {
 object GithubBranch {
   @scala.inline
   def apply(name: java.lang.String): GithubBranch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[GithubBranch]
   }
 }

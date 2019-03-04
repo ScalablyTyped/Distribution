@@ -12,9 +12,8 @@ trait DragEndEvent extends LeafletEvent {
 object DragEndEvent {
   @scala.inline
   def apply(distance: scala.Double, target: js.Any, `type`: java.lang.String): DragEndEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(distance = distance, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DragEndEvent]
   }
 }

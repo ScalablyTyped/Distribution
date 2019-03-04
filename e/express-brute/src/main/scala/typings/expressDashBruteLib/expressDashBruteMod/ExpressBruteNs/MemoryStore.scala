@@ -53,10 +53,8 @@ object MemoryStore {
       scala.Unit
     ]
   ): MemoryStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, reset = reset, set = set)
+  
     __obj.asInstanceOf[MemoryStore]
   }
 }

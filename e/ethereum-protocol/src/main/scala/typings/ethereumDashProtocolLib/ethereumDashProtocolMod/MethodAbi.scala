@@ -26,13 +26,8 @@ object MethodAbi {
     stateMutability: StateMutability,
     `type`: AbiType
   ): MethodAbi = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constant")(constant)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outputs")(outputs)
-    __obj.updateDynamic("payable")(payable)
-    __obj.updateDynamic("stateMutability")(stateMutability)
+    val __obj = js.Dynamic.literal(constant = constant, inputs = inputs, name = name, outputs = outputs, payable = payable, stateMutability = stateMutability)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MethodAbi]
   }
 }

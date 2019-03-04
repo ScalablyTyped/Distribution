@@ -30,16 +30,8 @@ object Anon_Breaks {
     typographer: scala.Boolean,
     xhtmlOut: scala.Boolean
   ): Anon_Breaks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breaks")(breaks)
-    __obj.updateDynamic("highlight")(highlight)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("langPrefix")(langPrefix)
-    __obj.updateDynamic("linkify")(linkify)
-    __obj.updateDynamic("maxNesting")(maxNesting)
-    __obj.updateDynamic("quotes")(quotes)
-    __obj.updateDynamic("typographer")(typographer)
-    __obj.updateDynamic("xhtmlOut")(xhtmlOut)
+    val __obj = js.Dynamic.literal(breaks = breaks, highlight = highlight, html = html, langPrefix = langPrefix, linkify = linkify, maxNesting = maxNesting, quotes = quotes, typographer = typographer, xhtmlOut = xhtmlOut)
+  
     __obj.asInstanceOf[Anon_Breaks]
   }
 }

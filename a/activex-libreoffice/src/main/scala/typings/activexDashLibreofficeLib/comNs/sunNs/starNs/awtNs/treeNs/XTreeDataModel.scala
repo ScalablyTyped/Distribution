@@ -55,17 +55,8 @@ object XTreeDataModel {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     removeTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit]
   ): XTreeDataModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Root")(Root)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addTreeDataModelListener")(addTreeDataModelListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getRoot")(getRoot)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeTreeDataModelListener")(removeTreeDataModelListener)
+    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEventListener = addEventListener, addTreeDataModelListener = addTreeDataModelListener, dispose = dispose, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeTreeDataModelListener = removeTreeDataModelListener)
+  
     __obj.asInstanceOf[XTreeDataModel]
   }
 }

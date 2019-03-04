@@ -39,13 +39,8 @@ object GitAnnotatedTag {
     taggedObject: GitObject,
     url: java.lang.String
   ): GitAnnotatedTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("taggedBy")(taggedBy)
-    __obj.updateDynamic("taggedObject")(taggedObject)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(message = message, name = name, objectId = objectId, taggedBy = taggedBy, taggedObject = taggedObject, url = url)
+  
     __obj.asInstanceOf[GitAnnotatedTag]
   }
 }

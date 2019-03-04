@@ -22,12 +22,8 @@ object ProjectLanguageAnalytics {
     resultPhase: ResultPhase,
     url: java.lang.String
   ): ProjectLanguageAnalytics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("languageBreakdown")(languageBreakdown)
-    __obj.updateDynamic("repositoryLanguageAnalytics")(repositoryLanguageAnalytics)
-    __obj.updateDynamic("resultPhase")(resultPhase)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, languageBreakdown = languageBreakdown, repositoryLanguageAnalytics = repositoryLanguageAnalytics, resultPhase = resultPhase, url = url)
+  
     __obj.asInstanceOf[ProjectLanguageAnalytics]
   }
 }

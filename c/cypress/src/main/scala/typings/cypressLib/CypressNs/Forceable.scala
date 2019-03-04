@@ -21,8 +21,8 @@ trait Forceable extends js.Object {
 object Forceable {
   @scala.inline
   def apply(force: scala.Boolean): Forceable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("force")(force)
+    val __obj = js.Dynamic.literal(force = force)
+  
     __obj.asInstanceOf[Forceable]
   }
 }

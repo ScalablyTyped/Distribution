@@ -20,13 +20,8 @@ object Update {
     toSql: js.Function0[java.lang.String],
     where: js.Function1[lovefieldLib.lovefieldMod.lfNs.Predicate, Update]
   ): Update = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("explain")(explain)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("toSql")(toSql)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(bind = bind, exec = exec, explain = explain, set = set, toSql = toSql, where = where)
+  
     __obj.asInstanceOf[Update]
   }
 }

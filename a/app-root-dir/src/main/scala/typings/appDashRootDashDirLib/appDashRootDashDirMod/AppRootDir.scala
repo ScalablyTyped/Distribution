@@ -20,9 +20,8 @@ trait AppRootDir extends js.Object {
 object AppRootDir {
   @scala.inline
   def apply(get: js.Function0[java.lang.String], set: js.Function1[java.lang.String, scala.Unit]): AppRootDir = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, set = set)
+  
     __obj.asInstanceOf[AppRootDir]
   }
 }

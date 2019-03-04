@@ -22,12 +22,8 @@ object PathExpression {
     parts: js.Array[java.lang.String],
     `type`: java.lang.String
   ): PathExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("parts")(parts)
+    val __obj = js.Dynamic.literal(data = data, depth = depth, loc = loc, original = original, parts = parts)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PathExpression]
   }
 }

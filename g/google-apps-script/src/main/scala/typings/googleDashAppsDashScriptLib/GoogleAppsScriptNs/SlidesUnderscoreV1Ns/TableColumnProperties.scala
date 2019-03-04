@@ -13,8 +13,8 @@ trait TableColumnProperties extends js.Object {
 object TableColumnProperties {
   @scala.inline
   def apply(column_width: Dimension): TableColumnProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column_width")(column_width)
+    val __obj = js.Dynamic.literal(column_width = column_width)
+  
     __obj.asInstanceOf[TableColumnProperties]
   }
 }

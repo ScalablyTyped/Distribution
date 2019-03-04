@@ -55,8 +55,7 @@ object Anon_Block {
       overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior
     ]) = null
   ): Anon_Block = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])

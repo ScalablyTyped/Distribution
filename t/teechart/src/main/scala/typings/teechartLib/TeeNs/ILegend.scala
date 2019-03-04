@@ -60,31 +60,8 @@ object ILegend {
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): ILegend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("availRows")(availRows)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dividing")(dividing)
-    __obj.updateDynamic("fontColor")(fontColor)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("innerOff")(innerOff)
-    __obj.updateDynamic("inverted")(inverted)
-    __obj.updateDynamic("isVertical")(isVertical)
-    __obj.updateDynamic("itemHeight")(itemHeight)
-    __obj.updateDynamic("itemText")(itemText)
-    __obj.updateDynamic("itemsCount")(itemsCount)
-    __obj.updateDynamic("legendStyle")(legendStyle)
-    __obj.updateDynamic("over")(over)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("showValues")(showValues)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("textStyle")(textStyle)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("totalWidth")(totalWidth)
-    __obj.updateDynamic("transparent")(transparent)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(align = align, availRows = availRows, bounds = bounds, chart = chart, dividing = dividing, fontColor = fontColor, format = format, innerOff = innerOff, inverted = inverted, isVertical = isVertical, itemHeight = itemHeight, itemText = itemText, itemsCount = itemsCount, legendStyle = legendStyle, over = over, padding = padding, position = position, showValues = showValues, symbol = symbol, textStyle = textStyle, title = title, totalWidth = totalWidth, transparent = transparent, visible = visible)
+  
     __obj.asInstanceOf[ILegend]
   }
 }

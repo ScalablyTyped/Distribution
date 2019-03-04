@@ -57,16 +57,8 @@ object GetContainerDefinitionResult {
     memory: scala.Double,
     memoryReservation: scala.Double
   ): GetContainerDefinitionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpu")(cpu)
-    __obj.updateDynamic("disableNetworking")(disableNetworking)
-    __obj.updateDynamic("dockerLabels")(dockerLabels)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("imageDigest")(imageDigest)
-    __obj.updateDynamic("memory")(memory)
-    __obj.updateDynamic("memoryReservation")(memoryReservation)
+    val __obj = js.Dynamic.literal(cpu = cpu, disableNetworking = disableNetworking, dockerLabels = dockerLabels, environment = environment, id = id, image = image, imageDigest = imageDigest, memory = memory, memoryReservation = memoryReservation)
+  
     __obj.asInstanceOf[GetContainerDefinitionResult]
   }
 }

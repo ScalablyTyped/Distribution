@@ -34,12 +34,8 @@ object XXMLEncryption {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XXMLEncryption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("encrypt")(encrypt)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, decrypt = decrypt, encrypt = encrypt, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XXMLEncryption]
   }
 }

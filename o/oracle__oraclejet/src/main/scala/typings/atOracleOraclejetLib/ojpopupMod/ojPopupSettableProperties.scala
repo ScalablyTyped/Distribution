@@ -28,14 +28,8 @@ object ojPopupSettableProperties {
     tail: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.simple,
     translations: atOracleOraclejetLib.Anon_AriaCloseSkipLink
   ): ojPopupSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
-    __obj.updateDynamic("chrome")(chrome.asInstanceOf[js.Any])
-    __obj.updateDynamic("initialFocus")(initialFocus.asInstanceOf[js.Any])
-    __obj.updateDynamic("modality")(modality.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("tail")(tail.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(autoDismiss = autoDismiss.asInstanceOf[js.Any], chrome = chrome.asInstanceOf[js.Any], initialFocus = initialFocus.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position, tail = tail.asInstanceOf[js.Any], translations = translations)
+  
     __obj.asInstanceOf[ojPopupSettableProperties]
   }
 }

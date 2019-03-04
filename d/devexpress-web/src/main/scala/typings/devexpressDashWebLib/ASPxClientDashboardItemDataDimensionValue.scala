@@ -30,10 +30,8 @@ object ASPxClientDashboardItemDataDimensionValue {
     GetUniqueValue: js.Function0[js.Object],
     GetValue: js.Function0[js.Object]
   ): ASPxClientDashboardItemDataDimensionValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDisplayText")(GetDisplayText)
-    __obj.updateDynamic("GetUniqueValue")(GetUniqueValue)
-    __obj.updateDynamic("GetValue")(GetValue)
+    val __obj = js.Dynamic.literal(GetDisplayText = GetDisplayText, GetUniqueValue = GetUniqueValue, GetValue = GetValue)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimensionValue]
   }
 }

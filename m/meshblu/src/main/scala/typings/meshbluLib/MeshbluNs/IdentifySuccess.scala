@@ -14,10 +14,8 @@ trait IdentifySuccess extends js.Object {
 object IdentifySuccess {
   @scala.inline
   def apply(status: java.lang.String, token: java.lang.String, uuid: java.lang.String): IdentifySuccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(status = status, token = token, uuid = uuid)
+  
     __obj.asInstanceOf[IdentifySuccess]
   }
 }

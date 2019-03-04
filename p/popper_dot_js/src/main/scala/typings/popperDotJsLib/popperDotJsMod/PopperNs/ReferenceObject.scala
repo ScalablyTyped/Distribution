@@ -18,10 +18,8 @@ object ReferenceObject {
     clientWidth: scala.Double,
     getBoundingClientRect: js.Function0[stdLib.ClientRect]
   ): ReferenceObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHeight")(clientHeight)
-    __obj.updateDynamic("clientWidth")(clientWidth)
-    __obj.updateDynamic("getBoundingClientRect")(getBoundingClientRect)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, getBoundingClientRect = getBoundingClientRect)
+  
     __obj.asInstanceOf[ReferenceObject]
   }
 }

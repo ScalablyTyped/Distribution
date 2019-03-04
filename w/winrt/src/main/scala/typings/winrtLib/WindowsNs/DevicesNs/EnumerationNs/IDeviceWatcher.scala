@@ -28,15 +28,8 @@ object IDeviceWatcher {
     status: DeviceWatcherStatus,
     stop: js.Function0[scala.Unit]
   ): IDeviceWatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onadded")(onadded)
-    __obj.updateDynamic("onenumerationcompleted")(onenumerationcompleted)
-    __obj.updateDynamic("onremoved")(onremoved)
-    __obj.updateDynamic("onstopped")(onstopped)
-    __obj.updateDynamic("onupdated")(onupdated)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(onadded = onadded, onenumerationcompleted = onenumerationcompleted, onremoved = onremoved, onstopped = onstopped, onupdated = onupdated, start = start, status = status, stop = stop)
+  
     __obj.asInstanceOf[IDeviceWatcher]
   }
 }

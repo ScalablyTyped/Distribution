@@ -24,10 +24,7 @@ object MountSettings {
     Consistency: MountConsistency = null,
     ReadOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): MountSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Target")(Target)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Source = Source, Target = Target, Type = Type)
     if (BindOptions != null) __obj.updateDynamic("BindOptions")(BindOptions)
     if (Consistency != null) __obj.updateDynamic("Consistency")(Consistency)
     if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly)

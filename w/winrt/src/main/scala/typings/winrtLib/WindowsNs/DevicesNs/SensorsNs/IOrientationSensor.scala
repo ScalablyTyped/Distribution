@@ -20,11 +20,8 @@ object IOrientationSensor {
     onreadingchanged: js.Any,
     reportInterval: scala.Double
   ): IOrientationSensor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentReading")(getCurrentReading)
-    __obj.updateDynamic("minimumReportInterval")(minimumReportInterval)
-    __obj.updateDynamic("onreadingchanged")(onreadingchanged)
-    __obj.updateDynamic("reportInterval")(reportInterval)
+    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading, minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, reportInterval = reportInterval)
+  
     __obj.asInstanceOf[IOrientationSensor]
   }
 }

@@ -18,8 +18,7 @@ object CipherKeyValue {
     keepSession: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): CipherKeyValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (device != null) __obj.updateDynamic("device")(device)
     if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)

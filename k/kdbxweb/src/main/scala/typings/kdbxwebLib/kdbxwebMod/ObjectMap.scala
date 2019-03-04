@@ -14,10 +14,8 @@ trait ObjectMap extends js.Object {
 object ObjectMap {
   @scala.inline
   def apply(deleted: js.Array[KdbxObject], objects: js.Array[KdbxObject], remote: js.Array[KdbxObject]): ObjectMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("remote")(remote)
+    val __obj = js.Dynamic.literal(deleted = deleted, objects = objects, remote = remote)
+  
     __obj.asInstanceOf[ObjectMap]
   }
 }

@@ -22,12 +22,8 @@ object IotaClass {
     valid: IotaValid,
     version: java.lang.String
   ): IotaClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("multisig")(multisig)
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("valid")(valid)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(api = api, multisig = multisig, utils = utils, valid = valid, version = version)
+  
     __obj.asInstanceOf[IotaClass]
   }
 }

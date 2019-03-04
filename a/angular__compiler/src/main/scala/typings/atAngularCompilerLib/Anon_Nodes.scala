@@ -15,8 +15,8 @@ trait Anon_Nodes extends js.Object {
 object Anon_Nodes {
   @scala.inline
   def apply(nodes: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node]): Anon_Nodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(nodes = nodes)
+  
     __obj.asInstanceOf[Anon_Nodes]
   }
 }

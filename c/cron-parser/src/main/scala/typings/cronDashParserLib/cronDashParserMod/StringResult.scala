@@ -18,10 +18,8 @@ object StringResult {
     expressions: js.Array[CronExpression],
     variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): StringResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("expressions")(expressions)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(errors = errors, expressions = expressions, variables = variables)
+  
     __obj.asInstanceOf[StringResult]
   }
 }

@@ -37,12 +37,8 @@ object DataSetEvaluator {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     `type`: java.lang.String
   ): DataSetEvaluator = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataSetConfigurations")(dataSetConfigurations)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSetConfigurations = dataSetConfigurations, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DataSetEvaluator]
   }
 }

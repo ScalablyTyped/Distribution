@@ -12,8 +12,8 @@ trait Anon_Express extends js.Object {
 object Anon_Express {
   @scala.inline
   def apply(express: js.Function0[js.Any]): Anon_Express = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("express")(express)
+    val __obj = js.Dynamic.literal(express = express)
+  
     __obj.asInstanceOf[Anon_Express]
   }
 }

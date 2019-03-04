@@ -34,18 +34,8 @@ object Wifi {
     retry: procfsDashStatsLib.Anon_Discardedpackets,
     status: java.lang.String
   ): Wifi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Interface")(Interface)
-    __obj.updateDynamic("beacon")(beacon)
-    __obj.updateDynamic("crypt")(crypt)
-    __obj.updateDynamic("frag")(frag)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("misc")(misc)
-    __obj.updateDynamic("noise")(noise)
-    __obj.updateDynamic("nwid")(nwid)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(Interface = Interface, beacon = beacon, crypt = crypt, frag = frag, level = level, link = link, misc = misc, noise = noise, nwid = nwid, retry = retry, status = status)
+  
     __obj.asInstanceOf[Wifi]
   }
 }

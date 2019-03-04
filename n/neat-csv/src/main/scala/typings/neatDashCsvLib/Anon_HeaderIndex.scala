@@ -14,10 +14,8 @@ trait Anon_HeaderIndex extends js.Object {
 object Anon_HeaderIndex {
   @scala.inline
   def apply(header: java.lang.String, index: scala.Double, value: js.Any): Anon_HeaderIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(header = header, index = index, value = value)
+  
     __obj.asInstanceOf[Anon_HeaderIndex]
   }
 }

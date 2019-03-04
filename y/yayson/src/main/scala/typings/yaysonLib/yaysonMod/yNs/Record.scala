@@ -15,10 +15,8 @@ trait Record extends js.Object {
 object Record {
   @scala.inline
   def apply(attributes: js.Any, id: js.Any, relationships: js.Any, `type`: java.lang.String): Record = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("relationships")(relationships)
+    val __obj = js.Dynamic.literal(attributes = attributes, id = id, relationships = relationships)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Record]
   }
 }

@@ -20,11 +20,8 @@ object ConsumerBatch {
     partition: scala.Double,
     topic: java.lang.String
   ): ConsumerBatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("highWatermark")(highWatermark)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(highWatermark = highWatermark, messages = messages, partition = partition, topic = topic)
+  
     __obj.asInstanceOf[ConsumerBatch]
   }
 }

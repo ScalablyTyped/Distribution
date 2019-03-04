@@ -30,8 +30,8 @@ object TryStatement {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): TryStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("block")(block)
+    val __obj = js.Dynamic.literal(block = block)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer)
     if (handler != null) __obj.updateDynamic("handler")(handler)

@@ -38,17 +38,8 @@ object XPatternField {
     setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): XPatternField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMasks")(getMasks)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setMasks")(setMasks)
-    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(String = String, acquire = acquire, getMasks = getMasks, getString = getString, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setMasks = setMasks, setStrictFormat = setStrictFormat, setString = setString)
+  
     __obj.asInstanceOf[XPatternField]
   }
 }

@@ -34,11 +34,8 @@ object XJobExecutor {
     release: js.Function0[scala.Unit],
     trigger: js.Function1[java.lang.String, scala.Unit]
   ): XJobExecutor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, trigger = trigger)
+  
     __obj.asInstanceOf[XJobExecutor]
   }
 }

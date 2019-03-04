@@ -12,8 +12,8 @@ trait FXInstance extends js.Object {
 object FXInstance {
   @scala.inline
   def apply(addFX: js.Function2[java.lang.String, athenajsLib.Anon_Display, scala.Unit]): FXInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFX")(addFX)
+    val __obj = js.Dynamic.literal(addFX = addFX)
+  
     __obj.asInstanceOf[FXInstance]
   }
 }

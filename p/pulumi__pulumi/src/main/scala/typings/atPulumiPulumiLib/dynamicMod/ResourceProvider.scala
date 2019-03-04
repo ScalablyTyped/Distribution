@@ -104,8 +104,7 @@ object ResourceProvider {
       js.Promise[UpdateResult]
     ] = null
   ): ResourceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
     if (check != null) __obj.updateDynamic("check")(check)
     if (delete != null) __obj.updateDynamic("delete")(delete)
     if (diff != null) __obj.updateDynamic("diff")(diff)

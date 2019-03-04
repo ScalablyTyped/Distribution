@@ -12,8 +12,8 @@ trait Anon_LicenseConfigurationArn extends js.Object {
 object Anon_LicenseConfigurationArn {
   @scala.inline
   def apply(licenseConfigurationArn: java.lang.String): Anon_LicenseConfigurationArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("licenseConfigurationArn")(licenseConfigurationArn)
+    val __obj = js.Dynamic.literal(licenseConfigurationArn = licenseConfigurationArn)
+  
     __obj.asInstanceOf[Anon_LicenseConfigurationArn]
   }
 }

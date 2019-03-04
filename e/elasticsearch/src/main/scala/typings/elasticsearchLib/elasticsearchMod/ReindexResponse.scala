@@ -30,20 +30,7 @@ object ReindexResponse {
     version_conflicts: scala.Double,
     slices: js.Array[ReindexOrByQueryResponseSlice] = null
   ): ReindexResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batches")(batches)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("noops")(noops)
-    __obj.updateDynamic("requests_per_second")(requests_per_second)
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("throttled_millis")(throttled_millis)
-    __obj.updateDynamic("throttled_until_millis")(throttled_until_millis)
-    __obj.updateDynamic("timed_out")(timed_out)
-    __obj.updateDynamic("took")(took)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("updated")(updated)
-    __obj.updateDynamic("version_conflicts")(version_conflicts)
+    val __obj = js.Dynamic.literal(batches = batches, deleted = deleted, failures = failures, noops = noops, requests_per_second = requests_per_second, retries = retries, throttled_millis = throttled_millis, throttled_until_millis = throttled_until_millis, timed_out = timed_out, took = took, total = total, updated = updated, version_conflicts = version_conflicts)
     if (slices != null) __obj.updateDynamic("slices")(slices)
     __obj.asInstanceOf[ReindexResponse]
   }

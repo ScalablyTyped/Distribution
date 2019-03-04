@@ -31,11 +31,8 @@ trait Waypoint extends js.Object {
 object Waypoint {
   @scala.inline
   def apply(distance: scala.Double, hint: java.lang.String, location: Coordinate, name: java.lang.String): Waypoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("hint")(hint)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(distance = distance, hint = hint, location = location, name = name)
+  
     __obj.asInstanceOf[Waypoint]
   }
 }

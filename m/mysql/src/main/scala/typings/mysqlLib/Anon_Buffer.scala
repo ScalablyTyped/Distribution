@@ -22,11 +22,8 @@ object Anon_Buffer {
     string: js.Function0[java.lang.String],
     `type`: java.lang.String
   ): Anon_Buffer = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(buffer = buffer, geometry = geometry, length = length, string = string)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Buffer]
   }
 }

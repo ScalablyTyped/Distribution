@@ -13,9 +13,8 @@ trait GithubRepo extends js.Object {
 object GithubRepo {
   @scala.inline
   def apply(full_name: java.lang.String, id: scala.Double): GithubRepo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("full_name")(full_name)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(full_name = full_name, id = id)
+  
     __obj.asInstanceOf[GithubRepo]
   }
 }

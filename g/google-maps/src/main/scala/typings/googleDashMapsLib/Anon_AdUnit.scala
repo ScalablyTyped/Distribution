@@ -22,8 +22,8 @@ object Anon_AdUnit {
       googlemapsLib.googleNs.mapsNs.adsenseNs.AdUnit
     ]
   ): Anon_AdUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdUnit")(AdUnit)
+    val __obj = js.Dynamic.literal(AdUnit = AdUnit)
+  
     __obj.asInstanceOf[Anon_AdUnit]
   }
 }

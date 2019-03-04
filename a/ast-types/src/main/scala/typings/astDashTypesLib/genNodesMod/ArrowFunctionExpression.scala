@@ -28,10 +28,8 @@ object ArrowFunctionExpression {
     id: scala.Null,
     `type`: astDashTypesLib.astDashTypesLibStrings.ArrowFunctionExpression
   ): ArrowFunctionExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], generator = generator, id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArrowFunctionExpression]
   }
 }

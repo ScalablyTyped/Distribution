@@ -22,11 +22,8 @@ object SecurityProfile {
     tag: java.lang.String,
     `type`: ionicLib.ionicLibStrings.development | ionicLib.ionicLibStrings.production
   ): SecurityProfile = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("credentials")(credentials)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(created = created, credentials = credentials, name = name, tag = tag)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityProfile]
   }
 }

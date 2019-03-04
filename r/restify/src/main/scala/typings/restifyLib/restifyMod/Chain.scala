@@ -30,13 +30,8 @@ object Chain {
     run: js.Function3[Request, Response, js.Function0[_], scala.Unit],
     strictNext: scala.Boolean
   ): Chain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("getHandlers")(getHandlers)
-    __obj.updateDynamic("onceNext")(onceNext)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("strictNext")(strictNext)
+    val __obj = js.Dynamic.literal(add = add, count = count, getHandlers = getHandlers, onceNext = onceNext, run = run, strictNext = strictNext)
+  
     __obj.asInstanceOf[Chain]
   }
 }

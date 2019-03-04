@@ -74,17 +74,8 @@ object ColorSchemeForPolyline {
     theme: java.lang.String,
     width: scala.Double
   ): ColorSchemeForPolyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("colorsForClassBreaks")(colorsForClassBreaks)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("theme")(theme)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, theme = theme, width = width)
+  
     __obj.asInstanceOf[ColorSchemeForPolyline]
   }
 }

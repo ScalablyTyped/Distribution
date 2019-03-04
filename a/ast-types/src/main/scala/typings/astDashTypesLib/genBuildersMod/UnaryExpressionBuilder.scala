@@ -70,6 +70,6 @@ trait UnaryExpressionBuilder extends js.Object {
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
   ): astDashTypesLib.genNodesMod.UnaryExpression = js.native
-  def from(params: astDashTypesLib.`Anon_`): astDashTypesLib.genNodesMod.UnaryExpression = js.native
+  def from(params: astDashTypesLib.Anon_): astDashTypesLib.genNodesMod.UnaryExpression = js.native
 }
 

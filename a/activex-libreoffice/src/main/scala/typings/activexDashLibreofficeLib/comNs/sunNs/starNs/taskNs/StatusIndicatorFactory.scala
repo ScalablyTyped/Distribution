@@ -39,13 +39,8 @@ object StatusIndicatorFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): StatusIndicatorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createStatusIndicator")(createStatusIndicator)
-    __obj.updateDynamic("createWithFrame")(createWithFrame)
-    __obj.updateDynamic("createWithWindow")(createWithWindow)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createStatusIndicator = createStatusIndicator, createWithFrame = createWithFrame, createWithWindow = createWithWindow, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[StatusIndicatorFactory]
   }
 }

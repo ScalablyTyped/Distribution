@@ -14,10 +14,8 @@ trait Anon_Cts extends js.Object {
 object Anon_Cts {
   @scala.inline
   def apply(cts: scala.Boolean, dcd: scala.Boolean, dsr: scala.Boolean): Anon_Cts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cts")(cts)
-    __obj.updateDynamic("dcd")(dcd)
-    __obj.updateDynamic("dsr")(dsr)
+    val __obj = js.Dynamic.literal(cts = cts, dcd = dcd, dsr = dsr)
+  
     __obj.asInstanceOf[Anon_Cts]
   }
 }

@@ -61,15 +61,7 @@ object ConcentricLayoutOptions {
     sweep: scala.Int | scala.Double = null,
     width: js.UndefOr[scala.Nothing] = js.undefined
   ): ConcentricLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("concentric")(concentric)
-    __obj.updateDynamic("equidistant")(equidistant)
-    __obj.updateDynamic("fit")(fit)
-    __obj.updateDynamic("levelWidth")(levelWidth)
-    __obj.updateDynamic("minNodeSpacing")(minNodeSpacing)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
-    __obj.updateDynamic("startAngle")(startAngle)
+    val __obj = js.Dynamic.literal(concentric = concentric, equidistant = equidistant, fit = fit, levelWidth = levelWidth, minNodeSpacing = minNodeSpacing, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, startAngle = startAngle)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

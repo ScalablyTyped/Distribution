@@ -19,9 +19,8 @@ trait RedirectOptions extends js.Object {
 object RedirectOptions {
   @scala.inline
   def apply(path: java.lang.String, target: java.lang.String): RedirectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(path = path, target = target)
+  
     __obj.asInstanceOf[RedirectOptions]
   }
 }

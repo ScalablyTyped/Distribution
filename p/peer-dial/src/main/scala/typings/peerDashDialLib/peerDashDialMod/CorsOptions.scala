@@ -18,10 +18,8 @@ object CorsOptions {
     methods: js.Array[java.lang.String],
     origin: scala.Boolean
   ): CorsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exposedHeaders")(exposedHeaders)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(exposedHeaders = exposedHeaders, methods = methods, origin = origin)
+  
     __obj.asInstanceOf[CorsOptions]
   }
 }

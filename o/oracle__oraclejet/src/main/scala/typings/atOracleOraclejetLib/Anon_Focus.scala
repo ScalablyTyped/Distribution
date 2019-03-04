@@ -18,10 +18,8 @@ object Anon_Focus {
     showOn: atOracleOraclejetLib.atOracleOraclejetLibStrings.focus | atOracleOraclejetLib.atOracleOraclejetLibStrings.image,
     timeIncrement: java.lang.String
   ): Anon_Focus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("footerLayout")(footerLayout.asInstanceOf[js.Any])
-    __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeIncrement")(timeIncrement)
+    val __obj = js.Dynamic.literal(footerLayout = footerLayout.asInstanceOf[js.Any], showOn = showOn.asInstanceOf[js.Any], timeIncrement = timeIncrement)
+  
     __obj.asInstanceOf[Anon_Focus]
   }
 }

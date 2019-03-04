@@ -26,8 +26,7 @@ object LoggerOptions {
     stream: nodeLib.NodeJSNs.WritableStream = null,
     streams: js.Array[Stream] = null
   ): LoggerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (serializers != null) __obj.updateDynamic("serializers")(serializers)

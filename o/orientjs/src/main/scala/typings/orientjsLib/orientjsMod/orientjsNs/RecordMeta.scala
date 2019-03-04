@@ -13,8 +13,9 @@ trait RecordMeta extends js.Object {
 object RecordMeta {
   @scala.inline
   def apply(`@rid`: RID, `@version`: Version): RecordMeta = {
-    val __obj = js.Dynamic.literal(`@rid` = `@rid`, `@version` = `@version`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("@rid")(`@rid`)
+    __obj.updateDynamic("@version")(`@version`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordMeta]
   }
 }

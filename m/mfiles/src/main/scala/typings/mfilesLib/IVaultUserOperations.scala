@@ -32,17 +32,8 @@ object IVaultUserOperations {
     ModifyUserAccount: js.Function1[IUserAccount, scala.Unit],
     RemoveUserAccount: js.Function1[scala.Double, scala.Unit]
   ): IVaultUserOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddOrUndeleteUserAccount")(AddOrUndeleteUserAccount)
-    __obj.updateDynamic("AddUserAccount")(AddUserAccount)
-    __obj.updateDynamic("GetLoginAccountOfUser")(GetLoginAccountOfUser)
-    __obj.updateDynamic("GetLoginAccounts")(GetLoginAccounts)
-    __obj.updateDynamic("GetUserAccount")(GetUserAccount)
-    __obj.updateDynamic("GetUserAccounts")(GetUserAccounts)
-    __obj.updateDynamic("GetUserIDByGUID")(GetUserIDByGUID)
-    __obj.updateDynamic("GetUserList")(GetUserList)
-    __obj.updateDynamic("ModifyUserAccount")(ModifyUserAccount)
-    __obj.updateDynamic("RemoveUserAccount")(RemoveUserAccount)
+    val __obj = js.Dynamic.literal(AddOrUndeleteUserAccount = AddOrUndeleteUserAccount, AddUserAccount = AddUserAccount, GetLoginAccountOfUser = GetLoginAccountOfUser, GetLoginAccounts = GetLoginAccounts, GetUserAccount = GetUserAccount, GetUserAccounts = GetUserAccounts, GetUserIDByGUID = GetUserIDByGUID, GetUserList = GetUserList, ModifyUserAccount = ModifyUserAccount, RemoveUserAccount = RemoveUserAccount)
+  
     __obj.asInstanceOf[IVaultUserOperations]
   }
 }

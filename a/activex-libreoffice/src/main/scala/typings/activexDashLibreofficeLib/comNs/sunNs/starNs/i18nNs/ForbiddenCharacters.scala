@@ -18,9 +18,8 @@ trait ForbiddenCharacters extends js.Object {
 object ForbiddenCharacters {
   @scala.inline
   def apply(beginLine: java.lang.String, endLine: java.lang.String): ForbiddenCharacters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginLine")(beginLine)
-    __obj.updateDynamic("endLine")(endLine)
+    val __obj = js.Dynamic.literal(beginLine = beginLine, endLine = endLine)
+  
     __obj.asInstanceOf[ForbiddenCharacters]
   }
 }

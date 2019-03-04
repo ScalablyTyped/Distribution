@@ -45,8 +45,7 @@ object MsgPackUploadOption {
     timeout: scala.Int | scala.Double = null,
     worker: js.UndefOr[scala.Boolean] = js.undefined
   ): MsgPackUploadOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (after != null) __obj.updateDynamic("after")(after)
     if (before != null) __obj.updateDynamic("before")(before)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

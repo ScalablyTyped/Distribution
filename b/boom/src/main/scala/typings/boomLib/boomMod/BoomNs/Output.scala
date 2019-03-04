@@ -29,10 +29,8 @@ object Output {
     payload: Payload,
     statusCode: scala.Double
   ): Output = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(headers = headers, payload = payload, statusCode = statusCode)
+  
     __obj.asInstanceOf[Output]
   }
 }

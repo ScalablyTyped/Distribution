@@ -16,8 +16,8 @@ trait ObjectType extends js.Object {
 object ObjectType {
   @scala.inline
   def apply(`type`: ObjectClass): ObjectType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ObjectType]
   }
 }

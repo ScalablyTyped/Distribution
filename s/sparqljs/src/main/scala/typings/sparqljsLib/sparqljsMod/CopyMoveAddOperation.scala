@@ -20,10 +20,8 @@ object CopyMoveAddOperation {
     source: GraphOrDefault,
     `type`: sparqljsLib.sparqljsLibStrings.copy | sparqljsLib.sparqljsLibStrings.move | sparqljsLib.sparqljsLibStrings.add
   ): CopyMoveAddOperation = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination, silent = silent, source = source)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyMoveAddOperation]
   }
 }

@@ -25,6 +25,7 @@ trait PickerProps extends js.Object {
   var id: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var inputPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var locale: js.UndefOr[js.Any] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var onOpenChange: js.UndefOr[js.Function1[/* status */ scala.Boolean, scala.Unit]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var popupStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -55,6 +56,7 @@ object PickerProps {
     id: scala.Double | java.lang.String = null,
     inputPrefixCls: java.lang.String = null,
     locale: js.Any = null,
+    name: java.lang.String = null,
     onOpenChange: js.Function1[/* status */ scala.Boolean, scala.Unit] = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     popupStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -76,6 +78,7 @@ object PickerProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle)

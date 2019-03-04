@@ -131,23 +131,8 @@ object IScheduler {
       rxDashCoreLib.RxNs.IDisposable
     ]
   ): IScheduler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isScheduler")(isScheduler)
-    __obj.updateDynamic("now")(now)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("schedulePeriodic")(schedulePeriodic)
-    __obj.updateDynamic("schedulePeriodicWithState")(schedulePeriodicWithState)
-    __obj.updateDynamic("scheduleRecursive")(scheduleRecursive)
-    __obj.updateDynamic("scheduleRecursiveWithAbsolute")(scheduleRecursiveWithAbsolute)
-    __obj.updateDynamic("scheduleRecursiveWithAbsoluteAndState")(scheduleRecursiveWithAbsoluteAndState)
-    __obj.updateDynamic("scheduleRecursiveWithRelative")(scheduleRecursiveWithRelative)
-    __obj.updateDynamic("scheduleRecursiveWithRelativeAndState")(scheduleRecursiveWithRelativeAndState)
-    __obj.updateDynamic("scheduleRecursiveWithState")(scheduleRecursiveWithState)
-    __obj.updateDynamic("scheduleWithAbsolute")(scheduleWithAbsolute)
-    __obj.updateDynamic("scheduleWithAbsoluteAndState")(scheduleWithAbsoluteAndState)
-    __obj.updateDynamic("scheduleWithRelative")(scheduleWithRelative)
-    __obj.updateDynamic("scheduleWithRelativeAndState")(scheduleWithRelativeAndState)
-    __obj.updateDynamic("scheduleWithState")(scheduleWithState)
+    val __obj = js.Dynamic.literal(isScheduler = isScheduler, now = now, schedule = schedule, schedulePeriodic = schedulePeriodic, schedulePeriodicWithState = schedulePeriodicWithState, scheduleRecursive = scheduleRecursive, scheduleRecursiveWithAbsolute = scheduleRecursiveWithAbsolute, scheduleRecursiveWithAbsoluteAndState = scheduleRecursiveWithAbsoluteAndState, scheduleRecursiveWithRelative = scheduleRecursiveWithRelative, scheduleRecursiveWithRelativeAndState = scheduleRecursiveWithRelativeAndState, scheduleRecursiveWithState = scheduleRecursiveWithState, scheduleWithAbsolute = scheduleWithAbsolute, scheduleWithAbsoluteAndState = scheduleWithAbsoluteAndState, scheduleWithRelative = scheduleWithRelative, scheduleWithRelativeAndState = scheduleWithRelativeAndState, scheduleWithState = scheduleWithState)
+  
     __obj.asInstanceOf[IScheduler]
   }
 }

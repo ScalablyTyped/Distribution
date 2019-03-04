@@ -20,11 +20,8 @@ object Anon_Ict {
     nict: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.NonInviteClientTransaction],
     nist: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.NonInviteServerTransaction]
   ): Anon_Ict = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ict")(ict)
-    __obj.updateDynamic("ist")(ist)
-    __obj.updateDynamic("nict")(nict)
-    __obj.updateDynamic("nist")(nist)
+    val __obj = js.Dynamic.literal(ict = ict, ist = ist, nict = nict, nist = nist)
+  
     __obj.asInstanceOf[Anon_Ict]
   }
 }

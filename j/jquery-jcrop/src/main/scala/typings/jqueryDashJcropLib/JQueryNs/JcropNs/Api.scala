@@ -36,15 +36,8 @@ object Api {
     tellScaled: js.Function0[SelectionInfo],
     tellSelect: js.Function0[SelectionInfo]
   ): Api = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animateTo")(animateTo)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setSelect")(setSelect)
-    __obj.updateDynamic("tellScaled")(tellScaled)
-    __obj.updateDynamic("tellSelect")(tellSelect)
+    val __obj = js.Dynamic.literal(animateTo = animateTo, disable = disable, enable = enable, release = release, remove = remove, setSelect = setSelect, tellScaled = tellScaled, tellSelect = tellSelect)
+  
     __obj.asInstanceOf[Api]
   }
 }

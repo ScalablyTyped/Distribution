@@ -18,10 +18,8 @@ object IPropertyValidationRule {
     ValidateAsync: js.Function1[IValidationContext[T], qLib.qMod.QNs.Promise[js.Array[IValidationFailure]]],
     Validators: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): IPropertyValidationRule[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Validate")(Validate)
-    __obj.updateDynamic("ValidateAsync")(ValidateAsync)
-    __obj.updateDynamic("Validators")(Validators)
+    val __obj = js.Dynamic.literal(Validate = Validate, ValidateAsync = ValidateAsync, Validators = Validators)
+  
     __obj.asInstanceOf[IPropertyValidationRule[T]]
   }
 }

@@ -20,11 +20,8 @@ object IReportAccessCredentials {
     Password: java.lang.String,
     UserName: java.lang.String
   ): IReportAccessCredentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Domain")(Domain)
-    __obj.updateDynamic("ExtAccount")(ExtAccount)
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("UserName")(UserName)
+    val __obj = js.Dynamic.literal(Domain = Domain, ExtAccount = ExtAccount, Password = Password, UserName = UserName)
+  
     __obj.asInstanceOf[IReportAccessCredentials]
   }
 }

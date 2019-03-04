@@ -30,16 +30,8 @@ object Suggestion {
     terms: js.Array[googlemapsLib.googleNs.mapsNs.placesNs.PredictionTerm],
     types: js.Array[java.lang.String]
   ): Suggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("formattedSuggestion")(formattedSuggestion)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("matchedSubstrings")(matchedSubstrings)
-    __obj.updateDynamic("placeId")(placeId)
-    __obj.updateDynamic("terms")(terms)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(active = active, description = description, formattedSuggestion = formattedSuggestion, id = id, index = index, matchedSubstrings = matchedSubstrings, placeId = placeId, terms = terms, types = types)
+  
     __obj.asInstanceOf[Suggestion]
   }
 }

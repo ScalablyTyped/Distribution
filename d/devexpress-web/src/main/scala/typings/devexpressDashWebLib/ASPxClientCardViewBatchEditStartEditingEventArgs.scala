@@ -34,11 +34,8 @@ object ASPxClientCardViewBatchEditStartEditingEventArgs {
     focusedColumn: ASPxClientCardViewColumn,
     visibleIndex: scala.Double
   ): ASPxClientCardViewBatchEditStartEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cardValues")(cardValues)
-    __obj.updateDynamic("focusedColumn")(focusedColumn)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, focusedColumn = focusedColumn, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientCardViewBatchEditStartEditingEventArgs]
   }
 }

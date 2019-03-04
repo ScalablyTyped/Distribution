@@ -22,11 +22,7 @@ object ojRefresherSettableProperties {
     threshold: scala.Double,
     translations: js.Object = null
   ): ojRefresherSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("refreshContent")(refreshContent)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(refreshContent = refreshContent, target = target, text = text, threshold = threshold)
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojRefresherSettableProperties]
   }

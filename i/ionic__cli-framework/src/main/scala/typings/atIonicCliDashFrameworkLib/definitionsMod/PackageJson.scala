@@ -28,9 +28,7 @@ object PackageJson {
     main: java.lang.String = null,
     scripts: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null
   ): PackageJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, version = version)
     if (bin != null) __obj.updateDynamic("bin")(bin)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     if (description != null) __obj.updateDynamic("description")(description)

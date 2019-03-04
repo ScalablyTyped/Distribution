@@ -12,8 +12,8 @@ trait IPlayToSourceRequestedEventArgs extends js.Object {
 object IPlayToSourceRequestedEventArgs {
   @scala.inline
   def apply(sourceRequest: PlayToSourceRequest): IPlayToSourceRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceRequest")(sourceRequest)
+    val __obj = js.Dynamic.literal(sourceRequest = sourceRequest)
+  
     __obj.asInstanceOf[IPlayToSourceRequestedEventArgs]
   }
 }

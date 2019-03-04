@@ -18,9 +18,7 @@ object TableDefinition {
     name: java.lang.String,
     has: anydbDashSqlLib.anydbDashSqlMod.Dictionary[anydbDashSqlLib.Anon_From] = null
   ): TableDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(columns = columns, name = name)
     if (has != null) __obj.updateDynamic("has")(has)
     __obj.asInstanceOf[TableDefinition]
   }

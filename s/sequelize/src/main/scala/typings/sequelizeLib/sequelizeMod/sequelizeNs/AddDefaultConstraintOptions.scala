@@ -18,7 +18,8 @@ object AddDefaultConstraintOptions {
     defaultValue: js.Any = null,
     name: java.lang.String = null
   ): AddDefaultConstraintOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[AddDefaultConstraintOptions]

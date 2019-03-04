@@ -37,19 +37,8 @@ object MomentParsingFlags {
     unusedTokens: js.Array[java.lang.String],
     userInvalidated: scala.Boolean
   ): MomentParsingFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charsLeftOver")(charsLeftOver)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("invalidFormat")(invalidFormat)
-    __obj.updateDynamic("invalidMonth")(invalidMonth.asInstanceOf[js.Any])
-    __obj.updateDynamic("iso")(iso)
-    __obj.updateDynamic("meridiem")(meridiem.asInstanceOf[js.Any])
-    __obj.updateDynamic("nullInput")(nullInput)
-    __obj.updateDynamic("overflow")(overflow)
-    __obj.updateDynamic("parsedDateParts")(parsedDateParts)
-    __obj.updateDynamic("unusedInput")(unusedInput)
-    __obj.updateDynamic("unusedTokens")(unusedTokens)
-    __obj.updateDynamic("userInvalidated")(userInvalidated)
+    val __obj = js.Dynamic.literal(charsLeftOver = charsLeftOver, empty = empty, invalidFormat = invalidFormat, invalidMonth = invalidMonth.asInstanceOf[js.Any], iso = iso, meridiem = meridiem.asInstanceOf[js.Any], nullInput = nullInput, overflow = overflow, parsedDateParts = parsedDateParts, unusedInput = unusedInput, unusedTokens = unusedTokens, userInvalidated = userInvalidated)
+  
     __obj.asInstanceOf[MomentParsingFlags]
   }
 }

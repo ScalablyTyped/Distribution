@@ -248,10 +248,7 @@ object TableProps {
     scrollToRow: scala.Int | scala.Double = null,
     scrollTop: scala.Int | scala.Double = null
   ): TableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowHeight")(rowHeight)
-    __obj.updateDynamic("rowsCount")(rowsCount)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(rowHeight = rowHeight, rowsCount = rowsCount, width = width)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (footerHeight != null) __obj.updateDynamic("footerHeight")(footerHeight.asInstanceOf[js.Any])
     if (groupHeaderHeight != null) __obj.updateDynamic("groupHeaderHeight")(groupHeaderHeight.asInstanceOf[js.Any])

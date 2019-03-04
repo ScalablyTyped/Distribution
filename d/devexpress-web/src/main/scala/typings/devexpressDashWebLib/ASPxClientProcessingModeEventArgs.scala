@@ -19,8 +19,8 @@ trait ASPxClientProcessingModeEventArgs extends ASPxClientEventArgs {
 object ASPxClientProcessingModeEventArgs {
   @scala.inline
   def apply(processOnServer: scala.Boolean): ASPxClientProcessingModeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientProcessingModeEventArgs]
   }
 }

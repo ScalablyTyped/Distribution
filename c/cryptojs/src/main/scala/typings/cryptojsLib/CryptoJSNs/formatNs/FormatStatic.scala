@@ -13,9 +13,8 @@ trait FormatStatic extends js.Object {
 object FormatStatic {
   @scala.inline
   def apply(Hex: IFormatter, OpenSSL: IFormatter): FormatStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hex")(Hex)
-    __obj.updateDynamic("OpenSSL")(OpenSSL)
+    val __obj = js.Dynamic.literal(Hex = Hex, OpenSSL = OpenSSL)
+  
     __obj.asInstanceOf[FormatStatic]
   }
 }

@@ -13,9 +13,8 @@ trait I18nState extends js.Object {
 object I18nState {
   @scala.inline
   def apply(locale: java.lang.String, translations: TranslationObjects): I18nState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(locale = locale, translations = translations)
+  
     __obj.asInstanceOf[I18nState]
   }
 }

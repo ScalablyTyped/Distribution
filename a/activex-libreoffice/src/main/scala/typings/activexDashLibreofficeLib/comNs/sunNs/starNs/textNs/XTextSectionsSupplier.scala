@@ -23,12 +23,8 @@ object XTextSectionsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextSectionsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TextSections")(TextSections)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTextSections")(getTextSections)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(TextSections = TextSections, acquire = acquire, getTextSections = getTextSections, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextSectionsSupplier]
   }
 }

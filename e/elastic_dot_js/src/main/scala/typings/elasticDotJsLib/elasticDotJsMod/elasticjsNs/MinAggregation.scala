@@ -49,14 +49,8 @@ object MinAggregation {
     scriptValuesSorted: js.Function1[scala.Boolean, MinAggregation],
     toJSON: js.Function0[js.Any]
   ): MinAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
     __obj.asInstanceOf[MinAggregation]
   }
 }

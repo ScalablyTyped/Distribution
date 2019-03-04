@@ -71,8 +71,7 @@ object Options {
     sourceMapEmbed: js.UndefOr[scala.Boolean] = js.undefined,
     sourceMapRoot: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (dest != null) __obj.updateDynamic("dest")(dest)

@@ -49,15 +49,8 @@ object XSheetCellRange {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetCellRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Spreadsheet")(Spreadsheet)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("getSpreadsheet")(getSpreadsheet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Spreadsheet = Spreadsheet, acquire = acquire, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getSpreadsheet = getSpreadsheet, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetCellRange]
   }
 }

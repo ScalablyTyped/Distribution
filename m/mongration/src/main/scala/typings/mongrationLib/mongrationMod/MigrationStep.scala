@@ -32,9 +32,7 @@ object MigrationStep {
       scala.Unit
     ] = null
   ): MigrationStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("up")(up)
+    val __obj = js.Dynamic.literal(id = id, up = up)
     if (down != null) __obj.updateDynamic("down")(down)
     __obj.asInstanceOf[MigrationStep]
   }

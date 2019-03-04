@@ -32,11 +32,8 @@ object Anon_ContentTransition {
     insert: java.lang.String,
     remove: java.lang.String
   ): Anon_ContentTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentTransition")(contentTransition)
-    __obj.updateDynamic("entrance")(entrance)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(contentTransition = contentTransition, entrance = entrance, insert = insert, remove = remove)
+  
     __obj.asInstanceOf[Anon_ContentTransition]
   }
 }

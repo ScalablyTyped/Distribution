@@ -18,10 +18,8 @@ object NewmanRun {
     failures: js.Array[NewmanRunFailure],
     stats: newmanLib.Anon_Assertions
   ): NewmanRun = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executions")(executions)
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(executions = executions, failures = failures, stats = stats)
+  
     __obj.asInstanceOf[NewmanRun]
   }
 }

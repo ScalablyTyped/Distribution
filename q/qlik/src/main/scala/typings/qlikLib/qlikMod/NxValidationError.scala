@@ -14,10 +14,8 @@ trait NxValidationError extends js.Object {
 object NxValidationError {
   @scala.inline
   def apply(qContext: java.lang.String, qErrorCode: scala.Double, qExtendedMessage: java.lang.String): NxValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qContext")(qContext)
-    __obj.updateDynamic("qErrorCode")(qErrorCode)
-    __obj.updateDynamic("qExtendedMessage")(qExtendedMessage)
+    val __obj = js.Dynamic.literal(qContext = qContext, qErrorCode = qErrorCode, qExtendedMessage = qExtendedMessage)
+  
     __obj.asInstanceOf[NxValidationError]
   }
 }

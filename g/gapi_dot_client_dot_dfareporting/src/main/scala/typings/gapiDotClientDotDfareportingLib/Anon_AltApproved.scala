@@ -74,9 +74,7 @@ object Anon_AltApproved {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltApproved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(profileId = profileId, projectId = projectId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(approved)) __obj.updateDynamic("approved")(approved)
     if (fields != null) __obj.updateDynamic("fields")(fields)

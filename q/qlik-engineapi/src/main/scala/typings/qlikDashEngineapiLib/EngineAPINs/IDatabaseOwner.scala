@@ -18,8 +18,8 @@ trait IDatabaseOwner extends js.Object {
 object IDatabaseOwner {
   @scala.inline
   def apply(qName: java.lang.String): IDatabaseOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(qName = qName)
+  
     __obj.asInstanceOf[IDatabaseOwner]
   }
 }

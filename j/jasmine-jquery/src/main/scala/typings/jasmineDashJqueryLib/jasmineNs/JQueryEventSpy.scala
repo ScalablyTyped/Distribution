@@ -20,11 +20,8 @@ object JQueryEventSpy {
     reset: js.Function0[js.Any],
     selector: java.lang.String
   ): JQueryEventSpy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(eventName = eventName, handler = handler, reset = reset, selector = selector)
+  
     __obj.asInstanceOf[JQueryEventSpy]
   }
 }

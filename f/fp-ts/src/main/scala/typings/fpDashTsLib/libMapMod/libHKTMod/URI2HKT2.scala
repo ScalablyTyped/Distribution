@@ -12,8 +12,8 @@ trait URI2HKT2[L, A] extends js.Object {
 object URI2HKT2 {
   @scala.inline
   def apply[L, A](Map: stdLib.Map[L, A]): URI2HKT2[L, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Map")(Map)
+    val __obj = js.Dynamic.literal(Map = Map)
+  
     __obj.asInstanceOf[URI2HKT2[L, A]]
   }
 }

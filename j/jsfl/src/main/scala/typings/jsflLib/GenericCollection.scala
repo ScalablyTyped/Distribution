@@ -41,14 +41,8 @@ object GenericCollection {
     toGrid: js.Function2[scala.Double, scala.Double, GenericCollection[T]],
     update: js.Function0[GenericCollection[T]]
   ): GenericCollection[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("elements")(elements)
-    __obj.updateDynamic("randomize")(randomize)
-    __obj.updateDynamic("rename")(rename)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("toGrid")(toGrid)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(each = each, elements = elements, randomize = randomize, rename = rename, select = select, toGrid = toGrid, update = update)
+  
     __obj.asInstanceOf[GenericCollection[T]]
   }
 }

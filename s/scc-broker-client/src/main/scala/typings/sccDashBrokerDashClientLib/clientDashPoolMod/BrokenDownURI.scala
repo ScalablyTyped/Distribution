@@ -18,8 +18,7 @@ object BrokenDownURI {
     port: java.lang.String = null,
     secure: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibNumbers.`true` = null
   ): BrokenDownURI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
+    val __obj = js.Dynamic.literal(hostname = hostname)
     if (port != null) __obj.updateDynamic("port")(port)
     if (secure != null) __obj.updateDynamic("secure")(secure)
     __obj.asInstanceOf[BrokenDownURI]

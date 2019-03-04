@@ -18,10 +18,8 @@ object IApplicationLanguagesStatics {
     manifestLanguages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
     primaryLanguageOverride: java.lang.String
   ): IApplicationLanguagesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("manifestLanguages")(manifestLanguages)
-    __obj.updateDynamic("primaryLanguageOverride")(primaryLanguageOverride)
+    val __obj = js.Dynamic.literal(languages = languages, manifestLanguages = manifestLanguages, primaryLanguageOverride = primaryLanguageOverride)
+  
     __obj.asInstanceOf[IApplicationLanguagesStatics]
   }
 }

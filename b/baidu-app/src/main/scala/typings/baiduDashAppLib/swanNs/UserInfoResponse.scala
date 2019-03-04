@@ -28,13 +28,8 @@ object UserInfoResponse {
     signature: java.lang.String,
     userInfo: UserInfo
   ): UserInfoResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("encryptData")(encryptData)
-    __obj.updateDynamic("iv")(iv)
-    __obj.updateDynamic("rawData")(rawData)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("userInfo")(userInfo)
+    val __obj = js.Dynamic.literal(data = data, encryptData = encryptData, iv = iv, rawData = rawData, signature = signature, userInfo = userInfo)
+  
     __obj.asInstanceOf[UserInfoResponse]
   }
 }

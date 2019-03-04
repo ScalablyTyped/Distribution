@@ -20,9 +20,7 @@ object InitializeOptions {
     base: java.lang.String = null,
     updateMethod: java.lang.String = null
   ): InitializeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("sequelize")(sequelize)
+    val __obj = js.Dynamic.literal(app = app, sequelize = sequelize)
     if (base != null) __obj.updateDynamic("base")(base)
     if (updateMethod != null) __obj.updateDynamic("updateMethod")(updateMethod)
     __obj.asInstanceOf[InitializeOptions]

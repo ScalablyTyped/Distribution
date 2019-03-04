@@ -29,11 +29,8 @@ trait ASPxClientTitleIndexItemEventArgs extends ASPxClientProcessingModeEventArg
 object ASPxClientTitleIndexItemEventArgs {
   @scala.inline
   def apply(htmlElement: js.Object, htmlEvent: js.Object, name: js.Object, processOnServer: scala.Boolean): ASPxClientTitleIndexItemEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, name = name, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientTitleIndexItemEventArgs]
   }
 }

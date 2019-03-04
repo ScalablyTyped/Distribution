@@ -18,10 +18,8 @@ object IINVITATION_REPLY {
     invitee: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser,
     reply: scala.Double
   ): IINVITATION_REPLY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("invitee")(invitee)
-    __obj.updateDynamic("reply")(reply)
+    val __obj = js.Dynamic.literal(data = data, invitee = invitee, reply = reply)
+  
     __obj.asInstanceOf[IINVITATION_REPLY]
   }
 }

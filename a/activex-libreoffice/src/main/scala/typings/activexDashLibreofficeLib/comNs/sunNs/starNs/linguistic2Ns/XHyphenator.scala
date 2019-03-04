@@ -107,16 +107,8 @@ object XHyphenator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHyphenator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createPossibleHyphens")(createPossibleHyphens)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("hyphenate")(hyphenate)
-    __obj.updateDynamic("queryAlternativeSpelling")(queryAlternativeSpelling)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, createPossibleHyphens = createPossibleHyphens, getLocales = getLocales, hasLocale = hasLocale, hyphenate = hyphenate, queryAlternativeSpelling = queryAlternativeSpelling, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHyphenator]
   }
 }

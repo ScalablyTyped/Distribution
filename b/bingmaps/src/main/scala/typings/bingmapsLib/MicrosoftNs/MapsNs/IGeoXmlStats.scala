@@ -39,16 +39,8 @@ object IGeoXmlStats {
     numScreenOverlays: scala.Double,
     processingTime: scala.Double
   ): IGeoXmlStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("numGroundOverlays")(numGroundOverlays)
-    __obj.updateDynamic("numLocations")(numLocations)
-    __obj.updateDynamic("numNetworkLinks")(numNetworkLinks)
-    __obj.updateDynamic("numPolygons")(numPolygons)
-    __obj.updateDynamic("numPolylines")(numPolylines)
-    __obj.updateDynamic("numPushpins")(numPushpins)
-    __obj.updateDynamic("numScreenOverlays")(numScreenOverlays)
-    __obj.updateDynamic("processingTime")(processingTime)
+    val __obj = js.Dynamic.literal(fileSize = fileSize, numGroundOverlays = numGroundOverlays, numLocations = numLocations, numNetworkLinks = numNetworkLinks, numPolygons = numPolygons, numPolylines = numPolylines, numPushpins = numPushpins, numScreenOverlays = numScreenOverlays, processingTime = processingTime)
+  
     __obj.asInstanceOf[IGeoXmlStats]
   }
 }

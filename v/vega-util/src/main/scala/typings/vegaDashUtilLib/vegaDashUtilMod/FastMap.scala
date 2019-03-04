@@ -26,14 +26,8 @@ object FastMap {
     set: js.Function2[java.lang.String, js.Any, scala.Unit],
     size: scala.Double
   ): FastMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clean")(clean)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(clean = clean, delete = delete, empty = empty, get = get, has = has, set = set, size = size)
+  
     __obj.asInstanceOf[FastMap]
   }
 }

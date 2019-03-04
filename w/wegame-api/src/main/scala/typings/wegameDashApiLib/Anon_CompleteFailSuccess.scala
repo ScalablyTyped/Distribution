@@ -23,8 +23,7 @@ object Anon_CompleteFailSuccess {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): Anon_CompleteFailSuccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withShareTicket")(withShareTicket)
+    val __obj = js.Dynamic.literal(withShareTicket = withShareTicket)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

@@ -13,9 +13,8 @@ trait Anon_ColumnId extends js.Object {
 object Anon_ColumnId {
   @scala.inline
   def apply(columnId: java.lang.String, sortAsc: scala.Boolean): Anon_ColumnId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnId")(columnId)
-    __obj.updateDynamic("sortAsc")(sortAsc)
+    val __obj = js.Dynamic.literal(columnId = columnId, sortAsc = sortAsc)
+  
     __obj.asInstanceOf[Anon_ColumnId]
   }
 }

@@ -12,8 +12,8 @@ trait SNSEvent extends js.Object {
 object SNSEvent {
   @scala.inline
   def apply(Records: js.Array[SNSEventRecord]): SNSEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Records")(Records)
+    val __obj = js.Dynamic.literal(Records = Records)
+  
     __obj.asInstanceOf[SNSEvent]
   }
 }

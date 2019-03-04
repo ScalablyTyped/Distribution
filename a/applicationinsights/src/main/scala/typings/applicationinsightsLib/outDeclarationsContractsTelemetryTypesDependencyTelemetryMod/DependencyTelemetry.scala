@@ -54,13 +54,7 @@ object DependencyTelemetry {
     target: java.lang.String = null,
     time: stdLib.Date = null
   ): DependencyTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dependencyTypeName")(dependencyTypeName)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(data = data, dependencyTypeName = dependencyTypeName, duration = duration, name = name, resultCode = resultCode.asInstanceOf[js.Any], success = success)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)

@@ -22,12 +22,8 @@ object ConsumerMessage {
     timestamp: scala.Double,
     value: nodeLib.Buffer
   ): ConsumerMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(headers = headers, key = key, offset = offset, timestamp = timestamp, value = value)
+  
     __obj.asInstanceOf[ConsumerMessage]
   }
 }

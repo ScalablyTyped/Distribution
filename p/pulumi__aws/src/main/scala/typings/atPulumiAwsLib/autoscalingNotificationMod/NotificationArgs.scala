@@ -36,10 +36,8 @@ object NotificationArgs {
     ],
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): NotificationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupNames")(groupNames.asInstanceOf[js.Any])
-    __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
-    __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(groupNames = groupNames.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], topicArn = topicArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NotificationArgs]
   }
 }

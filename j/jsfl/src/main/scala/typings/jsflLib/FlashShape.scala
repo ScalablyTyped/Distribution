@@ -49,24 +49,8 @@ object FlashShape {
     startAngle: scala.Double,
     vertices: js.Array[FlashVertex]
   ): FlashShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginEdit")(beginEdit)
-    __obj.updateDynamic("closePath")(closePath)
-    __obj.updateDynamic("contours")(contours)
-    __obj.updateDynamic("deleteEdge")(deleteEdge)
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("endAngle")(endAngle)
-    __obj.updateDynamic("endEdit")(endEdit)
-    __obj.updateDynamic("getCubicSegmentPoints")(getCubicSegmentPoints)
-    __obj.updateDynamic("innerRadius")(innerRadius)
-    __obj.updateDynamic("isDrawingObject")(isDrawingObject)
-    __obj.updateDynamic("isGroup")(isGroup)
-    __obj.updateDynamic("isOvalObject")(isOvalObject)
-    __obj.updateDynamic("isRectangleObject")(isRectangleObject)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("numCubicSegments")(numCubicSegments)
-    __obj.updateDynamic("startAngle")(startAngle)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(beginEdit = beginEdit, closePath = closePath, contours = contours, deleteEdge = deleteEdge, edges = edges, endAngle = endAngle, endEdit = endEdit, getCubicSegmentPoints = getCubicSegmentPoints, innerRadius = innerRadius, isDrawingObject = isDrawingObject, isGroup = isGroup, isOvalObject = isOvalObject, isRectangleObject = isRectangleObject, members = members, numCubicSegments = numCubicSegments, startAngle = startAngle, vertices = vertices)
+  
     __obj.asInstanceOf[FlashShape]
   }
 }

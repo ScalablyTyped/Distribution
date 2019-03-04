@@ -19,7 +19,8 @@ object NavigationInitAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/INIT`,
     params: NavigationParams = null
   ): NavigationInitAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[NavigationInitAction]
   }

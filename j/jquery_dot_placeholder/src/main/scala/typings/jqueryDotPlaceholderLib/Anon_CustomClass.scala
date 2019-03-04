@@ -12,8 +12,8 @@ trait Anon_CustomClass extends js.Object {
 object Anon_CustomClass {
   @scala.inline
   def apply(customClass: java.lang.String): Anon_CustomClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customClass")(customClass)
+    val __obj = js.Dynamic.literal(customClass = customClass)
+  
     __obj.asInstanceOf[Anon_CustomClass]
   }
 }

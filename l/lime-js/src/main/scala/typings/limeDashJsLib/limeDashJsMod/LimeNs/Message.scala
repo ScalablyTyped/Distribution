@@ -21,8 +21,8 @@ object Message {
     pp: java.lang.String = null,
     to: java.lang.String = null
   ): Message = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+    __obj.updateDynamic("type")(`type`)
     if (from != null) __obj.updateDynamic("from")(from)
     if (id != null) __obj.updateDynamic("id")(id)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

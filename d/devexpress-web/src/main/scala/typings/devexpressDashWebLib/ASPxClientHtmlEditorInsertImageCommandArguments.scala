@@ -46,13 +46,8 @@ object ASPxClientHtmlEditorInsertImageCommandArguments {
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
     useFloat: scala.Boolean
   ): ASPxClientHtmlEditorInsertImageCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("styleSettings")(styleSettings)
-    __obj.updateDynamic("useFloat")(useFloat)
+    val __obj = js.Dynamic.literal(align = align, alt = alt, selectedElement = selectedElement, src = src, styleSettings = styleSettings, useFloat = useFloat)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertImageCommandArguments]
   }
 }

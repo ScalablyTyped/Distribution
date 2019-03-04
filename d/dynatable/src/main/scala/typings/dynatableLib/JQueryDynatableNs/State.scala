@@ -36,11 +36,8 @@ object State {
     pop: js.Function1[stdLib.Event, scala.Unit],
     push: js.Function1[js.Object, scala.Unit]
   ): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(init = init, initOnLoad = initOnLoad, pop = pop, push = push)
+  
     __obj.asInstanceOf[State]
   }
 }

@@ -23,9 +23,8 @@ trait PreferredSchedulingTerm extends js.Object {
 object PreferredSchedulingTerm {
   @scala.inline
   def apply(preference: NodeSelectorTerm, weight: scala.Double): PreferredSchedulingTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preference")(preference)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(preference = preference, weight = weight)
+  
     __obj.asInstanceOf[PreferredSchedulingTerm]
   }
 }

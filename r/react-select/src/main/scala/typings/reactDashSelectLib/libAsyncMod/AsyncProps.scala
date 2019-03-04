@@ -33,8 +33,7 @@ object AsyncProps {
     cacheOptions: js.Any = null,
     defaultOptions: reactDashSelectLib.libTypesMod.OptionsType[OptionType] | scala.Boolean = null
   ): AsyncProps[OptionType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadOptions")(loadOptions)
+    val __obj = js.Dynamic.literal(loadOptions = loadOptions)
     if (cacheOptions != null) __obj.updateDynamic("cacheOptions")(cacheOptions)
     if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncProps[OptionType]]

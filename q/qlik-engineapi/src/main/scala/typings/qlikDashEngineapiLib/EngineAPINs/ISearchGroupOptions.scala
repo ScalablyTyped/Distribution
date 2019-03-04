@@ -33,10 +33,8 @@ trait ISearchGroupOptions extends js.Object {
 object ISearchGroupOptions {
   @scala.inline
   def apply(qCount: scala.Double, qGroupType: js.Any, qOffset: scala.Double): ISearchGroupOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCount")(qCount)
-    __obj.updateDynamic("qGroupType")(qGroupType)
-    __obj.updateDynamic("qOffset")(qOffset)
+    val __obj = js.Dynamic.literal(qCount = qCount, qGroupType = qGroupType, qOffset = qOffset)
+  
     __obj.asInstanceOf[ISearchGroupOptions]
   }
 }

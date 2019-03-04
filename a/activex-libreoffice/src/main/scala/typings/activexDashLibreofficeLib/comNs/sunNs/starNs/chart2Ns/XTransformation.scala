@@ -43,15 +43,8 @@ object XTransformation {
       activexDashInteropLib.SafeArray[scala.Double]
     ]
   ): XTransformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SourceDimension")(SourceDimension)
-    __obj.updateDynamic("TargetDimension")(TargetDimension)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSourceDimension")(getSourceDimension)
-    __obj.updateDynamic("getTargetDimension")(getTargetDimension)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(SourceDimension = SourceDimension, TargetDimension = TargetDimension, acquire = acquire, getSourceDimension = getSourceDimension, getTargetDimension = getTargetDimension, queryInterface = queryInterface, release = release, transform = transform)
+  
     __obj.asInstanceOf[XTransformation]
   }
 }

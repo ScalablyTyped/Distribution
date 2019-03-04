@@ -39,12 +39,8 @@ object ParserInline {
       scala.Unit
     ]
   ): ParserInline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("ruler")(ruler)
-    __obj.updateDynamic("ruler2")(ruler2)
-    __obj.updateDynamic("skipToken")(skipToken)
-    __obj.updateDynamic("tokenize")(tokenize)
+    val __obj = js.Dynamic.literal(parse = parse, ruler = ruler, ruler2 = ruler2, skipToken = skipToken, tokenize = tokenize)
+  
     __obj.asInstanceOf[ParserInline]
   }
 }

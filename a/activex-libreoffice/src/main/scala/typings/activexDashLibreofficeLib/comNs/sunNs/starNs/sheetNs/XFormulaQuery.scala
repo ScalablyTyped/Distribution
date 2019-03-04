@@ -41,12 +41,8 @@ object XFormulaQuery {
     queryPrecedents: js.Function1[scala.Boolean, XSheetCellRanges],
     release: js.Function0[scala.Unit]
   ): XFormulaQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryDependents")(queryDependents)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryPrecedents")(queryPrecedents)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryDependents = queryDependents, queryInterface = queryInterface, queryPrecedents = queryPrecedents, release = release)
+  
     __obj.asInstanceOf[XFormulaQuery]
   }
 }

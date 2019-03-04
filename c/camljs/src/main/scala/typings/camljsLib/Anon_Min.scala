@@ -13,8 +13,8 @@ trait Anon_Min
 object Anon_Min {
   @scala.inline
   def apply(min: java.lang.String): Anon_Min = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(min = min)
+  
     __obj.asInstanceOf[Anon_Min]
   }
 }

@@ -23,17 +23,8 @@ object WaterMarkFopOptions2 {
     mode: qiniuDashJsLib.qiniuDashJsLibNumbers.`2`,
     text: java.lang.String
   ): WaterMarkFopOptions2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dissolve")(dissolve)
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("fontsize")(fontsize)
-    __obj.updateDynamic("fop")(fop)
-    __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(dissolve = dissolve, dx = dx, dy = dy, fill = fill, font = font, fontsize = fontsize, fop = fop, gravity = gravity.asInstanceOf[js.Any], mode = mode, text = text)
+  
     __obj.asInstanceOf[WaterMarkFopOptions2]
   }
 }

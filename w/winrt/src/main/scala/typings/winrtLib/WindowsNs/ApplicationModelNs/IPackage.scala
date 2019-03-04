@@ -34,18 +34,8 @@ object IPackage {
     logo: winrtLib.WindowsNs.FoundationNs.Uri,
     publisherDisplayName: java.lang.String
   ): IPackage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("installedLocation")(installedLocation)
-    __obj.updateDynamic("isBundle")(isBundle)
-    __obj.updateDynamic("isDevelopmentMode")(isDevelopmentMode)
-    __obj.updateDynamic("isFramework")(isFramework)
-    __obj.updateDynamic("isResourcePackage")(isResourcePackage)
-    __obj.updateDynamic("logo")(logo)
-    __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
+    val __obj = js.Dynamic.literal(dependencies = dependencies, description = description, displayName = displayName, id = id, installedLocation = installedLocation, isBundle = isBundle, isDevelopmentMode = isDevelopmentMode, isFramework = isFramework, isResourcePackage = isResourcePackage, logo = logo, publisherDisplayName = publisherDisplayName)
+  
     __obj.asInstanceOf[IPackage]
   }
 }

@@ -47,14 +47,8 @@ object _Impl {
     serverError: java.lang.String,
     source: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logging")(logging)
-    __obj.updateDynamic("maxResults")(maxResults)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("noResults")(noResults)
-    __obj.updateDynamic("noTemplate")(noTemplate)
-    __obj.updateDynamic("serverError")(serverError)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(logging = logging, maxResults = maxResults, method = method, noResults = noResults, noTemplate = noTemplate, serverError = serverError, source = source)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

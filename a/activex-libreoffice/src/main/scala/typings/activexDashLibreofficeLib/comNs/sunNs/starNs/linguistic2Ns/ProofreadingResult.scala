@@ -36,17 +36,8 @@ object ProofreadingResult {
     xFlatParagraph: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XFlatParagraph,
     xProofreader: XProofreader
   ): ProofreadingResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aDocumentIdentifier")(aDocumentIdentifier)
-    __obj.updateDynamic("aErrors")(aErrors)
-    __obj.updateDynamic("aLocale")(aLocale)
-    __obj.updateDynamic("aProperties")(aProperties)
-    __obj.updateDynamic("aText")(aText)
-    __obj.updateDynamic("nBehindEndOfSentencePosition")(nBehindEndOfSentencePosition)
-    __obj.updateDynamic("nStartOfNextSentencePosition")(nStartOfNextSentencePosition)
-    __obj.updateDynamic("nStartOfSentencePosition")(nStartOfSentencePosition)
-    __obj.updateDynamic("xFlatParagraph")(xFlatParagraph)
-    __obj.updateDynamic("xProofreader")(xProofreader)
+    val __obj = js.Dynamic.literal(aDocumentIdentifier = aDocumentIdentifier, aErrors = aErrors, aLocale = aLocale, aProperties = aProperties, aText = aText, nBehindEndOfSentencePosition = nBehindEndOfSentencePosition, nStartOfNextSentencePosition = nStartOfNextSentencePosition, nStartOfSentencePosition = nStartOfSentencePosition, xFlatParagraph = xFlatParagraph, xProofreader = xProofreader)
+  
     __obj.asInstanceOf[ProofreadingResult]
   }
 }

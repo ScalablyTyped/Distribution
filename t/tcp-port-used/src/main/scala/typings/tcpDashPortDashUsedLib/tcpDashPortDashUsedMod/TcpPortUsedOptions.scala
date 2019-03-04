@@ -22,12 +22,8 @@ object TcpPortUsedOptions {
     status: scala.Boolean,
     timeOutMs: scala.Double
   ): TcpPortUsedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("retryTimeMs")(retryTimeMs)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("timeOutMs")(timeOutMs)
+    val __obj = js.Dynamic.literal(host = host, port = port, retryTimeMs = retryTimeMs, status = status, timeOutMs = timeOutMs)
+  
     __obj.asInstanceOf[TcpPortUsedOptions]
   }
 }

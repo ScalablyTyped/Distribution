@@ -19,8 +19,8 @@ trait ASPxClientSpreadsheetSelectionChangedEventArgs extends ASPxClientEventArgs
 object ASPxClientSpreadsheetSelectionChangedEventArgs {
   @scala.inline
   def apply(selection: ASPxClientSpreadsheetSelection): ASPxClientSpreadsheetSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selection")(selection)
+    val __obj = js.Dynamic.literal(selection = selection)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetSelectionChangedEventArgs]
   }
 }

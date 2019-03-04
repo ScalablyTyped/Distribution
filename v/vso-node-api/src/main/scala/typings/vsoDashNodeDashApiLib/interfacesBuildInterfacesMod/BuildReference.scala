@@ -59,17 +59,8 @@ object BuildReference {
     startTime: stdLib.Date,
     status: BuildStatus
   ): BuildReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("buildNumber")(buildNumber)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("queueTime")(queueTime)
-    __obj.updateDynamic("requestedFor")(requestedFor)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(_links = _links, buildNumber = buildNumber, deleted = deleted, finishTime = finishTime, id = id, queueTime = queueTime, requestedFor = requestedFor, result = result, startTime = startTime, status = status)
+  
     __obj.asInstanceOf[BuildReference]
   }
 }

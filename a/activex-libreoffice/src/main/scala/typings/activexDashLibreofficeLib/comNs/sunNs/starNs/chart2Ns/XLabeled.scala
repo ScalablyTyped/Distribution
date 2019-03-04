@@ -36,19 +36,8 @@ object XLabeled {
     setOffset: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
     setOwnAnchor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint, scala.Unit]
   ): XLabeled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("LabelAnchor")(LabelAnchor)
-    __obj.updateDynamic("Offset")(Offset)
-    __obj.updateDynamic("OwnAnchor")(OwnAnchor)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getLabelAnchor")(getLabelAnchor)
-    __obj.updateDynamic("getOffset")(getOffset)
-    __obj.updateDynamic("getOwnAnchor")(getOwnAnchor)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setLabelAnchor")(setLabelAnchor)
-    __obj.updateDynamic("setOffset")(setOffset)
-    __obj.updateDynamic("setOwnAnchor")(setOwnAnchor)
+    val __obj = js.Dynamic.literal(Label = Label, LabelAnchor = LabelAnchor, Offset = Offset, OwnAnchor = OwnAnchor, getLabel = getLabel, getLabelAnchor = getLabelAnchor, getOffset = getOffset, getOwnAnchor = getOwnAnchor, setLabel = setLabel, setLabelAnchor = setLabelAnchor, setOffset = setOffset, setOwnAnchor = setOwnAnchor)
+  
     __obj.asInstanceOf[XLabeled]
   }
 }

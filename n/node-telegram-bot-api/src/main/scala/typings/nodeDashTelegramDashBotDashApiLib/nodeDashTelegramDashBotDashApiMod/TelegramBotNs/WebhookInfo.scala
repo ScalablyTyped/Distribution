@@ -26,10 +26,7 @@ object WebhookInfo {
     last_error_message: java.lang.String = null,
     max_connections: scala.Int | scala.Double = null
   ): WebhookInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has_custom_certificate")(has_custom_certificate)
-    __obj.updateDynamic("pending_update_count")(pending_update_count)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(has_custom_certificate = has_custom_certificate, pending_update_count = pending_update_count, url = url)
     if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates)
     if (last_error_date != null) __obj.updateDynamic("last_error_date")(last_error_date.asInstanceOf[js.Any])
     if (last_error_message != null) __obj.updateDynamic("last_error_message")(last_error_message)

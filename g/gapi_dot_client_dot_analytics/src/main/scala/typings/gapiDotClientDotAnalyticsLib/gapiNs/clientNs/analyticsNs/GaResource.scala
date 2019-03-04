@@ -18,8 +18,8 @@ object GaResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GaData]
     ]
   ): GaResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[GaResource]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_JsonPathInput extends js.Object {
 object Anon_JsonPathInput {
   @scala.inline
   def apply(jsonPath: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_JsonPathInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonPath")(jsonPath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_JsonPathInput]
   }
 }

@@ -42,22 +42,8 @@ object Pet {
     size: java.lang.String,
     status: java.lang.String
   ): Pet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("age")(age)
-    __obj.updateDynamic("animal")(animal)
-    __obj.updateDynamic("breeds")(breeds)
-    __obj.updateDynamic("contact")(contact)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("media")(media)
-    __obj.updateDynamic("mix")(mix)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("sex")(sex)
-    __obj.updateDynamic("shelterId")(shelterId)
-    __obj.updateDynamic("shelterPetId")(shelterPetId)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(age = age, animal = animal, breeds = breeds, contact = contact, description = description, id = id, media = media, mix = mix, name = name, options = options, sex = sex, shelterId = shelterId, shelterPetId = shelterPetId, size = size, status = status)
+  
     __obj.asInstanceOf[Pet]
   }
 }

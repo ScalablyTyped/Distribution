@@ -86,20 +86,8 @@ object Split {
     setSession: js.Function2[IEditSession, scala.Double, scala.Unit],
     setTheme: js.Function1[java.lang.String, scala.Unit]
   ): Split = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blur")(blur)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("getCurrentEditor")(getCurrentEditor)
-    __obj.updateDynamic("getEditor")(getEditor)
-    __obj.updateDynamic("getOrientation")(getOrientation)
-    __obj.updateDynamic("getSplits")(getSplits)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("setFontSize")(setFontSize)
-    __obj.updateDynamic("setKeyboardHandler")(setKeyboardHandler)
-    __obj.updateDynamic("setOrientation")(setOrientation)
-    __obj.updateDynamic("setSession")(setSession)
-    __obj.updateDynamic("setTheme")(setTheme)
+    val __obj = js.Dynamic.literal(blur = blur, focus = focus, forEach = forEach, getCurrentEditor = getCurrentEditor, getEditor = getEditor, getOrientation = getOrientation, getSplits = getSplits, resize = resize, setFontSize = setFontSize, setKeyboardHandler = setKeyboardHandler, setOrientation = setOrientation, setSession = setSession, setTheme = setTheme)
+  
     __obj.asInstanceOf[Split]
   }
 }

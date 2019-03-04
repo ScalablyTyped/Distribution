@@ -60,15 +60,8 @@ object CirclesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Circle]
     ]
   ): CirclesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPeople")(addPeople)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removePeople")(removePeople)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(addPeople = addPeople, get = get, insert = insert, list = list, patch = patch, remove = remove, removePeople = removePeople, update = update)
+  
     __obj.asInstanceOf[CirclesResource]
   }
 }

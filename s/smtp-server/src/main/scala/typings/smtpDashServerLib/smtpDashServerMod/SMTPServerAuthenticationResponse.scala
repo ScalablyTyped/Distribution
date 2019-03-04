@@ -22,8 +22,7 @@ trait SMTPServerAuthenticationResponse extends js.Object {
 object SMTPServerAuthenticationResponse {
   @scala.inline
   def apply(user: js.Any, data: js.Object = null): SMTPServerAuthenticationResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(user = user)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[SMTPServerAuthenticationResponse]
   }

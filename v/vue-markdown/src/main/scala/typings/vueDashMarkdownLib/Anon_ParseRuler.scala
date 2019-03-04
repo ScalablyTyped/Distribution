@@ -24,13 +24,8 @@ object Anon_ParseRuler {
     skipToken: js.Any,
     tokenize: js.Any
   ): Anon_ParseRuler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("ruler")(ruler)
-    __obj.updateDynamic("ruler2")(ruler2)
-    __obj.updateDynamic("skipToken")(skipToken)
-    __obj.updateDynamic("tokenize")(tokenize)
+    val __obj = js.Dynamic.literal(State = State, parse = parse, ruler = ruler, ruler2 = ruler2, skipToken = skipToken, tokenize = tokenize)
+  
     __obj.asInstanceOf[Anon_ParseRuler]
   }
 }

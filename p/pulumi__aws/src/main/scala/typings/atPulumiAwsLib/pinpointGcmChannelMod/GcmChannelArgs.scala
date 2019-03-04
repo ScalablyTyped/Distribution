@@ -27,9 +27,7 @@ object GcmChannelArgs {
     applicationId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): GcmChannelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], applicationId = applicationId.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GcmChannelArgs]
   }

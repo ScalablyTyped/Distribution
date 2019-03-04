@@ -12,8 +12,8 @@ trait OnClickListener extends js.Object {
 object OnClickListener {
   @scala.inline
   def apply(onClick: js.Function1[androiduixLib.androidNs.viewNs.View, scala.Unit]): OnClickListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClick")(onClick)
+    val __obj = js.Dynamic.literal(onClick = onClick)
+  
     __obj.asInstanceOf[OnClickListener]
   }
 }

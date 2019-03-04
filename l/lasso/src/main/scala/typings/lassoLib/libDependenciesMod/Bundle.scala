@@ -13,9 +13,8 @@ trait Bundle extends js.Object {
 object Bundle {
   @scala.inline
   def apply(dependencies: js.Array[DependencyConfig | java.lang.String], name: java.lang.String): Bundle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(dependencies = dependencies, name = name)
+  
     __obj.asInstanceOf[Bundle]
   }
 }

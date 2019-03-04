@@ -50,14 +50,8 @@ object ExceptionDetails {
     stack: java.lang.String,
     typeName: java.lang.String
   ): ExceptionDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasFullStack")(hasFullStack)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("outerId")(outerId)
-    __obj.updateDynamic("parsedStack")(parsedStack)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(hasFullStack = hasFullStack, id = id, message = message, outerId = outerId, parsedStack = parsedStack, stack = stack, typeName = typeName)
+  
     __obj.asInstanceOf[ExceptionDetails]
   }
 }

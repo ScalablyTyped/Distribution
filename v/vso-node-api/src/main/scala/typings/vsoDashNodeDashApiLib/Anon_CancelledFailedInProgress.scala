@@ -24,13 +24,8 @@ object Anon_CancelledFailedInProgress {
     queued: scala.Double,
     succeeded: scala.Double
   ): Anon_CancelledFailedInProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelled")(cancelled)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("notSet")(notSet)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(cancelled = cancelled, failed = failed, inProgress = inProgress, notSet = notSet, queued = queued, succeeded = succeeded)
+  
     __obj.asInstanceOf[Anon_CancelledFailedInProgress]
   }
 }

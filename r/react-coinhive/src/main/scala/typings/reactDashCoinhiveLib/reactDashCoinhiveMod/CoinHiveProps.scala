@@ -32,8 +32,7 @@ object CoinHiveProps {
     throttle: scala.Int | scala.Double = null,
     userName: java.lang.String = null
   ): CoinHiveProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("siteKey")(siteKey)
+    val __obj = js.Dynamic.literal(siteKey = siteKey)
     if (!js.isUndefined(autoThreads)) __obj.updateDynamic("autoThreads")(autoThreads)
     if (onInit != null) __obj.updateDynamic("onInit")(onInit)
     if (onStart != null) __obj.updateDynamic("onStart")(onStart)

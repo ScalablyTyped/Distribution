@@ -28,9 +28,7 @@ object ExplainedFormat {
     result: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     zone: Zone = null
   ): ExplainedFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(input = input, tokens = tokens)
     if (invalidReason != null) __obj.updateDynamic("invalidReason")(invalidReason)
     if (matches != null) __obj.updateDynamic("matches")(matches)
     if (rawMatches != null) __obj.updateDynamic("rawMatches")(rawMatches)

@@ -32,14 +32,8 @@ object XButton {
     setActionCommand: js.Function1[java.lang.String, scala.Unit],
     setLabel: js.Function1[java.lang.String, scala.Unit]
   ): XButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addActionListener")(addActionListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActionListener")(removeActionListener)
-    __obj.updateDynamic("setActionCommand")(setActionCommand)
-    __obj.updateDynamic("setLabel")(setLabel)
+    val __obj = js.Dynamic.literal(acquire = acquire, addActionListener = addActionListener, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, setActionCommand = setActionCommand, setLabel = setLabel)
+  
     __obj.asInstanceOf[XButton]
   }
 }

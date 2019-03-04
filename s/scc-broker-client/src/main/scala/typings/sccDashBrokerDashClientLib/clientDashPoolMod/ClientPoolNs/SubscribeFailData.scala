@@ -17,11 +17,8 @@ object SubscribeFailData {
     poolIndex: scala.Double,
     targetURI: java.lang.String
   ): SubscribeFailData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("poolIndex")(poolIndex)
-    __obj.updateDynamic("targetURI")(targetURI)
+    val __obj = js.Dynamic.literal(channel = channel, error = error, poolIndex = poolIndex, targetURI = targetURI)
+  
     __obj.asInstanceOf[SubscribeFailData]
   }
 }

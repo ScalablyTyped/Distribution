@@ -26,10 +26,7 @@ object ConsoleProfileFinishedEventDataType {
     profile: Profile,
     title: java.lang.String = null
   ): ConsoleProfileFinishedEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(id = id, location = location, profile = profile)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ConsoleProfileFinishedEventDataType]
   }

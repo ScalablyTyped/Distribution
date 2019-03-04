@@ -32,17 +32,8 @@ object Media {
     getUrls: js.Function0[MediaUrls],
     getYouTubeVideoId: js.Function0[java.lang.String | scala.Unit]
   ): Media = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDimensions")(getDimensions)
-    __obj.updateDynamic("getFileSize")(getFileSize)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getMimeType")(getMimeType)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getReferenceId")(getReferenceId)
-    __obj.updateDynamic("getSourceUrl")(getSourceUrl)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getUrls")(getUrls)
-    __obj.updateDynamic("getYouTubeVideoId")(getYouTubeVideoId)
+    val __obj = js.Dynamic.literal(getDimensions = getDimensions, getFileSize = getFileSize, getId = getId, getMimeType = getMimeType, getName = getName, getReferenceId = getReferenceId, getSourceUrl = getSourceUrl, getType = getType, getUrls = getUrls, getYouTubeVideoId = getYouTubeVideoId)
+  
     __obj.asInstanceOf[Media]
   }
 }

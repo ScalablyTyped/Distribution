@@ -36,18 +36,8 @@ object Address {
     streetAddress: java.lang.String,
     `type`: java.lang.String
   ): Address = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("extendedAddress")(extendedAddress)
-    __obj.updateDynamic("formattedType")(formattedType)
-    __obj.updateDynamic("formattedValue")(formattedValue)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("poBox")(poBox)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("streetAddress")(streetAddress)
+    val __obj = js.Dynamic.literal(city = city, country = country, countryCode = countryCode, extendedAddress = extendedAddress, formattedType = formattedType, formattedValue = formattedValue, metadata = metadata, poBox = poBox, postalCode = postalCode, region = region, streetAddress = streetAddress)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Address]
   }
 }

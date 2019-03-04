@@ -55,8 +55,7 @@ object Anon_AltCount {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields)

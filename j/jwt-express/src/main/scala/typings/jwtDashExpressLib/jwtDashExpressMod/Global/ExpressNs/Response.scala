@@ -19,8 +19,8 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(jwt: js.Function1[js.Any, jwtDashExpressLib.jwtDashExpressMod.JWT]): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jwt")(jwt)
+    val __obj = js.Dynamic.literal(jwt = jwt)
+  
     __obj.asInstanceOf[Response]
   }
 }

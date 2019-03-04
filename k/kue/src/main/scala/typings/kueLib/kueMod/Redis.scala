@@ -24,13 +24,8 @@ object Redis {
     pubsubClient: js.Function0[redisLib.redisMod.RedisClient],
     reset: js.Function0[scala.Unit]
   ): Redis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("configureFactory")(configureFactory)
-    __obj.updateDynamic("createClient")(createClient)
-    __obj.updateDynamic("createClientFactory")(createClientFactory)
-    __obj.updateDynamic("pubsubClient")(pubsubClient)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(client = client, configureFactory = configureFactory, createClient = createClient, createClientFactory = createClientFactory, pubsubClient = pubsubClient, reset = reset)
+  
     __obj.asInstanceOf[Redis]
   }
 }

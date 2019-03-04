@@ -28,11 +28,8 @@ object TemplateCompileResult {
       java.lang.String | atVueComponentDashCompilerDashUtilsLib.distTypesMod.ErrorWithRange
     ]
   ): TemplateCompileResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("tips")(tips)
+    val __obj = js.Dynamic.literal(code = code, errors = errors, source = source, tips = tips)
+  
     __obj.asInstanceOf[TemplateCompileResult]
   }
 }

@@ -31,8 +31,7 @@ object Hint {
     render: js.Function3[/* element */ stdLib.HTMLLIElement, /* data */ Hints, /* cur */ Hint, scala.Unit] = null,
     to: Position = null
   ): Hint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (className != null) __obj.updateDynamic("className")(className)
     if (displayText != null) __obj.updateDynamic("displayText")(displayText)
     if (from != null) __obj.updateDynamic("from")(from)

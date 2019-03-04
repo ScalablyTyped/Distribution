@@ -20,9 +20,7 @@ object PluralOptions {
     count: scala.Int | scala.Double = null,
     locale: java.lang.String = null
   ): PluralOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plural")(plural)
-    __obj.updateDynamic("singular")(singular)
+    val __obj = js.Dynamic.literal(plural = plural, singular = singular)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
     __obj.asInstanceOf[PluralOptions]

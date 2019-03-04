@@ -20,11 +20,8 @@ object Bucket {
     name: java.lang.String,
     region: java.lang.String
   ): Bucket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StorageClass")(StorageClass)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(StorageClass = StorageClass, creationDate = creationDate, name = name, region = region)
+  
     __obj.asInstanceOf[Bucket]
   }
 }

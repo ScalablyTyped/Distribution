@@ -16,9 +16,8 @@ object SuggestionsResponseBuilder {
     build: js.Function0[SuggestionsResponse],
     setSuggestions: js.Function1[Suggestions, SuggestionsResponseBuilder]
   ): SuggestionsResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setSuggestions")(setSuggestions)
+    val __obj = js.Dynamic.literal(build = build, setSuggestions = setSuggestions)
+  
     __obj.asInstanceOf[SuggestionsResponseBuilder]
   }
 }

@@ -42,13 +42,8 @@ object Certificate {
     OU: java.lang.String,
     ST: java.lang.String
   ): Certificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("C")(C)
-    __obj.updateDynamic("CN")(CN)
-    __obj.updateDynamic("L")(L)
-    __obj.updateDynamic("O")(O)
-    __obj.updateDynamic("OU")(OU)
-    __obj.updateDynamic("ST")(ST)
+    val __obj = js.Dynamic.literal(C = C, CN = CN, L = L, O = O, OU = OU, ST = ST)
+  
     __obj.asInstanceOf[Certificate]
   }
 }

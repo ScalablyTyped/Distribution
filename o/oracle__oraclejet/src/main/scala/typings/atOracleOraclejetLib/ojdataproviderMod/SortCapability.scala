@@ -14,8 +14,8 @@ object SortCapability {
   def apply[D](
     attributes: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple
   ): SortCapability[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SortCapability[D]]
   }
 }

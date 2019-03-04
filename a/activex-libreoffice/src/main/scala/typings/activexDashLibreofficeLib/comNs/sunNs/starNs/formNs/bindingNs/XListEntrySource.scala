@@ -54,17 +54,8 @@ object XListEntrySource {
     release: js.Function0[scala.Unit],
     removeListEntryListener: js.Function1[XListEntryListener, scala.Unit]
   ): XListEntrySource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllListEntries")(AllListEntries)
-    __obj.updateDynamic("ListEntryCount")(ListEntryCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addListEntryListener")(addListEntryListener)
-    __obj.updateDynamic("getAllListEntries")(getAllListEntries)
-    __obj.updateDynamic("getListEntry")(getListEntry)
-    __obj.updateDynamic("getListEntryCount")(getListEntryCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeListEntryListener")(removeListEntryListener)
+    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, ListEntryCount = ListEntryCount, acquire = acquire, addListEntryListener = addListEntryListener, getAllListEntries = getAllListEntries, getListEntry = getListEntry, getListEntryCount = getListEntryCount, queryInterface = queryInterface, release = release, removeListEntryListener = removeListEntryListener)
+  
     __obj.asInstanceOf[XListEntrySource]
   }
 }

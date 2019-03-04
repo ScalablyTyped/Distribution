@@ -24,8 +24,8 @@ object Anon_Builder {
       seleniumDashWebdriverLib.remoteMod.DriverServiceNs.Builder
     ]
   ): Anon_Builder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Builder")(Builder)
+    val __obj = js.Dynamic.literal(Builder = Builder)
+  
     __obj.asInstanceOf[Anon_Builder]
   }
 }

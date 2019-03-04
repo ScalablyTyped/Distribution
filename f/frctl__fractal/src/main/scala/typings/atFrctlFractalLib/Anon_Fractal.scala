@@ -12,8 +12,8 @@ trait Anon_Fractal extends js.Object {
 object Anon_Fractal {
   @scala.inline
   def apply(fractal: atFrctlFractalLib.atFrctlFractalMod.Fractal): Anon_Fractal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fractal")(fractal)
+    val __obj = js.Dynamic.literal(fractal = fractal)
+  
     __obj.asInstanceOf[Anon_Fractal]
   }
 }

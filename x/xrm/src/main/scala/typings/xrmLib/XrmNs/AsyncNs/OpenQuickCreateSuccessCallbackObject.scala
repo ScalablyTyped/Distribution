@@ -18,8 +18,8 @@ trait OpenQuickCreateSuccessCallbackObject extends js.Object {
 object OpenQuickCreateSuccessCallbackObject {
   @scala.inline
   def apply(savedEntityReference: xrmLib.XrmNs.LookupValue): OpenQuickCreateSuccessCallbackObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("savedEntityReference")(savedEntityReference)
+    val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference)
+  
     __obj.asInstanceOf[OpenQuickCreateSuccessCallbackObject]
   }
 }

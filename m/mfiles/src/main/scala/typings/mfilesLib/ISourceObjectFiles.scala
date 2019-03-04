@@ -24,13 +24,8 @@ object ISourceObjectFiles {
     Item: js.Function1[scala.Double, ISourceObjectFile],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): ISourceObjectFiles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("AddEmptyFile")(AddEmptyFile)
-    __obj.updateDynamic("AddFile")(AddFile)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, AddEmptyFile = AddEmptyFile, AddFile = AddFile, Count = Count, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[ISourceObjectFiles]
   }
 }

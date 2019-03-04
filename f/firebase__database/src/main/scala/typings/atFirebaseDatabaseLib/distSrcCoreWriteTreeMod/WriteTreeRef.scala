@@ -21,7 +21,7 @@ class WriteTreeRef protected () extends js.Object {
     * @private
     * @const
     */
-  val `treePath_`: js.Any = js.native
+  val treePath_ : js.Any = js.native
   /**
     * * A reference to the actual tree of write data. All methods are pass-through to the tree, but with the appropriate
     * path prefixed.
@@ -33,7 +33,7 @@ class WriteTreeRef protected () extends js.Object {
     * @private
     * @const
     */
-  val `writeTree_`: js.Any = js.native
+  val writeTree_ : js.Any = js.native
   /**
     * Returns a complete child for a given server snap after applying all user writes or null if there is no
     * complete child for this ChildKey.

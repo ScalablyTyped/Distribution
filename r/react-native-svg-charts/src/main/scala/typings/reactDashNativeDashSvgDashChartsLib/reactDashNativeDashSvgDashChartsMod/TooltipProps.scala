@@ -24,8 +24,7 @@ object TooltipProps {
     stroke: java.lang.String = null,
     value: scala.Int | scala.Double = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (pointStroke != null) __obj.updateDynamic("pointStroke")(pointStroke)

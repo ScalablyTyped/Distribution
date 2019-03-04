@@ -16,8 +16,7 @@ object AutomationDesktop {
     desktop: chromeDashAppsLib.chromeDashAppsLibNumbers.`true`,
     interact: chromeDashAppsLib.chromeDashAppsLibNumbers.`true` = null
   ): AutomationDesktop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("desktop")(desktop)
+    val __obj = js.Dynamic.literal(desktop = desktop)
     if (interact != null) __obj.updateDynamic("interact")(interact)
     __obj.asInstanceOf[AutomationDesktop]
   }

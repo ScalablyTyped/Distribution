@@ -49,13 +49,7 @@ object CalendarListEntry {
     summaryOverride: java.lang.String = null,
     timeZone: java.lang.String = null
   ): CalendarListEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessRole")(accessRole)
-    __obj.updateDynamic("defaultReminders")(defaultReminders)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(accessRole = accessRole, defaultReminders = defaultReminders, etag = etag, id = id, kind = kind, summary = summary)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (colorId != null) __obj.updateDynamic("colorId")(colorId)
     if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)

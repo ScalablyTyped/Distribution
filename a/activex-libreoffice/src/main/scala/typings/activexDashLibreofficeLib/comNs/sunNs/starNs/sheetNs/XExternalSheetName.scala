@@ -33,11 +33,8 @@ object XExternalSheetName {
     release: js.Function0[scala.Unit],
     setExternalName: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XExternalSheetName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setExternalName")(setExternalName)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setExternalName = setExternalName)
+  
     __obj.asInstanceOf[XExternalSheetName]
   }
 }

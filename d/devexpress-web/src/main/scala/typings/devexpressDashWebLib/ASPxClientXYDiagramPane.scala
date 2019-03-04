@@ -25,11 +25,8 @@ object ASPxClientXYDiagramPane {
     name: java.lang.String,
     title: ASPxClientPaneTitle
   ): ASPxClientXYDiagramPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(chart = chart, diagram = diagram, name = name, title = title)
+  
     __obj.asInstanceOf[ASPxClientXYDiagramPane]
   }
 }

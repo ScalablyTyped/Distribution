@@ -26,9 +26,8 @@ object TSTypeAssertion {
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
     extra: astDashTypesLib.Anon_Parenthesized = null
   ): TSTypeAssertion = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(expression = expression, typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     if (extra != null) __obj.updateDynamic("extra")(extra)
     __obj.asInstanceOf[TSTypeAssertion]
   }

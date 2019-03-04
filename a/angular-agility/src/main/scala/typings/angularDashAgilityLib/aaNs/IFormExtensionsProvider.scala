@@ -46,24 +46,8 @@ object IFormExtensionsProvider {
     validIconStrategy: IValidIconStrategy,
     validationMessages: IValidationMessages
   ): IFormExtensionsProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("confirmResetStrategy")(confirmResetStrategy)
-    __obj.updateDynamic("defaultFieldGroupStrategy")(defaultFieldGroupStrategy)
-    __obj.updateDynamic("defaultLabelStrategy")(defaultLabelStrategy)
-    __obj.updateDynamic("defaultNotifyTarget")(defaultNotifyTarget)
-    __obj.updateDynamic("defaultOnNavigateAwayStrategy")(defaultOnNavigateAwayStrategy)
-    __obj.updateDynamic("defaultSpinnerClickStrategy")(defaultSpinnerClickStrategy)
-    __obj.updateDynamic("defaultValMsgPlacementStrategy")(defaultValMsgPlacementStrategy)
-    __obj.updateDynamic("fieldGroupStrategies")(fieldGroupStrategies)
-    __obj.updateDynamic("globalSettings")(globalSettings)
-    __obj.updateDynamic("labelStrategies")(labelStrategies)
-    __obj.updateDynamic("onNavigateAwayStrategies")(onNavigateAwayStrategies)
-    __obj.updateDynamic("spinnerClickStrategies")(spinnerClickStrategies)
-    __obj.updateDynamic("valMsgForTemplate")(valMsgForTemplate)
-    __obj.updateDynamic("valMsgPlacementStrategies")(valMsgPlacementStrategies)
-    __obj.updateDynamic("validIconStrategy")(validIconStrategy)
-    __obj.updateDynamic("validationMessages")(validationMessages)
+    val __obj = js.Dynamic.literal($get = $get, confirmResetStrategy = confirmResetStrategy, defaultFieldGroupStrategy = defaultFieldGroupStrategy, defaultLabelStrategy = defaultLabelStrategy, defaultNotifyTarget = defaultNotifyTarget, defaultOnNavigateAwayStrategy = defaultOnNavigateAwayStrategy, defaultSpinnerClickStrategy = defaultSpinnerClickStrategy, defaultValMsgPlacementStrategy = defaultValMsgPlacementStrategy, fieldGroupStrategies = fieldGroupStrategies, globalSettings = globalSettings, labelStrategies = labelStrategies, onNavigateAwayStrategies = onNavigateAwayStrategies, spinnerClickStrategies = spinnerClickStrategies, valMsgForTemplate = valMsgForTemplate, valMsgPlacementStrategies = valMsgPlacementStrategies, validIconStrategy = validIconStrategy, validationMessages = validationMessages)
+  
     __obj.asInstanceOf[IFormExtensionsProvider]
   }
 }

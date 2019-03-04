@@ -14,8 +14,8 @@ object Anon_Plugins {
   def apply(
     plugins: js.Array[java.lang.String] | js.Array[glueLib.glueMod.Plugin] | (js.Array[java.lang.String | glueLib.glueMod.Plugin])
   ): Anon_Plugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(plugins = plugins.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Plugins]
   }
 }

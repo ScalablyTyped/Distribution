@@ -30,8 +30,7 @@ object MultipleOptions {
     `type`: java.lang.String = null,
     url: java.lang.String = null
   ): MultipleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(urls = urls)
     if (excludedActivityTypes != null) __obj.updateDynamic("excludedActivityTypes")(excludedActivityTypes)
     if (!js.isUndefined(failOnCancel)) __obj.updateDynamic("failOnCancel")(failOnCancel)
     if (message != null) __obj.updateDynamic("message")(message)

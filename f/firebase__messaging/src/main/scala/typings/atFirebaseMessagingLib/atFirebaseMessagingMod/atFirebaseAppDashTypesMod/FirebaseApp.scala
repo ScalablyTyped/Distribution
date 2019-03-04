@@ -16,8 +16,8 @@ object FirebaseApp {
       atFirebaseMessagingDashTypesLib.atFirebaseMessagingDashTypesMod.FirebaseMessaging
     ]
   ): FirebaseApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messaging")(messaging)
+    val __obj = js.Dynamic.literal(messaging = messaging)
+  
     __obj.asInstanceOf[FirebaseApp]
   }
 }

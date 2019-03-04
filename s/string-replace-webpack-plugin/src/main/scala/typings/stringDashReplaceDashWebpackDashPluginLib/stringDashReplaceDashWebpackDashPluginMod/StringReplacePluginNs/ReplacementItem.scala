@@ -23,9 +23,8 @@ object ReplacementItem {
     pattern: stdLib.RegExp,
     replacement: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): ReplacementItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("replacement")(replacement)
+    val __obj = js.Dynamic.literal(pattern = pattern, replacement = replacement)
+  
     __obj.asInstanceOf[ReplacementItem]
   }
 }

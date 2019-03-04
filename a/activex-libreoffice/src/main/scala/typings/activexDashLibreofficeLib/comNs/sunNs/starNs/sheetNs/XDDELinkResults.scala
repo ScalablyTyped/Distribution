@@ -44,13 +44,8 @@ object XDDELinkResults {
       scala.Unit
     ]
   ): XDDELinkResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Results")(Results)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getResults")(getResults)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setResults")(setResults)
+    val __obj = js.Dynamic.literal(Results = Results, acquire = acquire, getResults = getResults, queryInterface = queryInterface, release = release, setResults = setResults)
+  
     __obj.asInstanceOf[XDDELinkResults]
   }
 }

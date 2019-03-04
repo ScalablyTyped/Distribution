@@ -60,8 +60,7 @@ object HighlightOptions {
     snippets: scala.Int | scala.Double = null,
     usePhraseHighlighter: js.UndefOr[scala.Boolean] = js.undefined
   ): HighlightOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(on = on)
     if (alternateField != null) __obj.updateDynamic("alternateField")(alternateField)
     if (fl != null) __obj.updateDynamic("fl")(fl.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)

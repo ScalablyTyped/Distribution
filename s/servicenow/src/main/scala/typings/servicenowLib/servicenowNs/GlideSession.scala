@@ -32,17 +32,8 @@ object GlideSession {
     isLoggedIn: js.Function0[scala.Boolean],
     putClientData: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): GlideSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClientData")(getClientData)
-    __obj.updateDynamic("getClientIP")(getClientIP)
-    __obj.updateDynamic("getCurrentApplicationId")(getCurrentApplicationId)
-    __obj.updateDynamic("getLanguage")(getLanguage)
-    __obj.updateDynamic("getSessionToken")(getSessionToken)
-    __obj.updateDynamic("getTimeZoneName")(getTimeZoneName)
-    __obj.updateDynamic("getUrlOnStack")(getUrlOnStack)
-    __obj.updateDynamic("isInteractive")(isInteractive)
-    __obj.updateDynamic("isLoggedIn")(isLoggedIn)
-    __obj.updateDynamic("putClientData")(putClientData)
+    val __obj = js.Dynamic.literal(getClientData = getClientData, getClientIP = getClientIP, getCurrentApplicationId = getCurrentApplicationId, getLanguage = getLanguage, getSessionToken = getSessionToken, getTimeZoneName = getTimeZoneName, getUrlOnStack = getUrlOnStack, isInteractive = isInteractive, isLoggedIn = isLoggedIn, putClientData = putClientData)
+  
     __obj.asInstanceOf[GlideSession]
   }
 }

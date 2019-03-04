@@ -12,9 +12,8 @@ trait CreateQuery extends Executable {
 object CreateQuery {
   @scala.inline
   def apply(ifNotExists: js.Function0[Executable], toQuery: js.Function0[QueryLike]): CreateQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ifNotExists")(ifNotExists)
-    __obj.updateDynamic("toQuery")(toQuery)
+    val __obj = js.Dynamic.literal(ifNotExists = ifNotExists, toQuery = toQuery)
+  
     __obj.asInstanceOf[CreateQuery]
   }
 }

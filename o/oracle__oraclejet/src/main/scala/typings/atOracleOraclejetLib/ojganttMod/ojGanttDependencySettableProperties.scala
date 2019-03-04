@@ -25,11 +25,8 @@ object ojGanttDependencySettableProperties {
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish,
     shortDesc: java.lang.String = null
   ): ojGanttDependencySettableProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("predecessorTaskId")(predecessorTaskId)
-    __obj.updateDynamic("successorTaskId")(successorTaskId)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
+    val __obj = js.Dynamic.literal(predecessorTaskId = predecessorTaskId, successorTaskId = successorTaskId, svgClassName = svgClassName, svgStyle = svgStyle)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
     __obj.asInstanceOf[ojGanttDependencySettableProperties]
   }

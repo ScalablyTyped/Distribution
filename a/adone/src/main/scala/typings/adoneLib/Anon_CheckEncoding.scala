@@ -13,9 +13,8 @@ trait Anon_CheckEncoding extends js.Object {
 object Anon_CheckEncoding {
   @scala.inline
   def apply(check: adoneLib.adoneLibNumbers.`true`, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): Anon_CheckEncoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("check")(check)
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(check = check, encoding = encoding)
+  
     __obj.asInstanceOf[Anon_CheckEncoding]
   }
 }

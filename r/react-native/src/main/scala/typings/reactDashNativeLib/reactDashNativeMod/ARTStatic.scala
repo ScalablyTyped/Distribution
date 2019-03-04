@@ -22,12 +22,8 @@ object ARTStatic {
     Surface: org.scalablytyped.runtime.Instantiable0[Surface],
     Text: org.scalablytyped.runtime.Instantiable0[ARTText]
   ): ARTStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClippingRectangle")(ClippingRectangle)
-    __obj.updateDynamic("Group")(Group)
-    __obj.updateDynamic("Shape")(Shape)
-    __obj.updateDynamic("Surface")(Surface)
-    __obj.updateDynamic("Text")(Text)
+    val __obj = js.Dynamic.literal(ClippingRectangle = ClippingRectangle, Group = Group, Shape = Shape, Surface = Surface, Text = Text)
+  
     __obj.asInstanceOf[ARTStatic]
   }
 }

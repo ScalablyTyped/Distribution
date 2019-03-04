@@ -14,10 +14,8 @@ trait JsonOtherPrimeInfo extends js.Object {
 object JsonOtherPrimeInfo {
   @scala.inline
   def apply(d: java.lang.String, r: java.lang.String, t: java.lang.String): JsonOtherPrimeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(d = d, r = r, t = t)
+  
     __obj.asInstanceOf[JsonOtherPrimeInfo]
   }
 }

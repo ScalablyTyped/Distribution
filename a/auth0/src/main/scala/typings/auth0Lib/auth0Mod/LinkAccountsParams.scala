@@ -18,8 +18,7 @@ object LinkAccountsParams {
     connection_id: java.lang.String = null,
     provider: java.lang.String = null
   ): LinkAccountsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(user_id = user_id)
     if (connection_id != null) __obj.updateDynamic("connection_id")(connection_id)
     if (provider != null) __obj.updateDynamic("provider")(provider)
     __obj.asInstanceOf[LinkAccountsParams]

@@ -42,11 +42,8 @@ object ClassMethod {
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     static: js.UndefOr[scala.Boolean] = js.undefined
   ): ClassMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, computed = computed, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])

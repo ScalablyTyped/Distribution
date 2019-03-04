@@ -19,9 +19,8 @@ trait ASPxClientVerticalGridRowExpandingEventArgs extends ASPxClientVerticalGrid
 object ASPxClientVerticalGridRowExpandingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridRowExpandingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(cancel = cancel, row = row)
+  
     __obj.asInstanceOf[ASPxClientVerticalGridRowExpandingEventArgs]
   }
 }

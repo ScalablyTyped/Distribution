@@ -57,8 +57,7 @@ object DataObject {
     lineStyle: echartsLib.Anon_ColorCurvenessOpacityShadowBlur = null,
     name: java.lang.String = null
   ): DataObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (coords != null) __obj.updateDynamic("coords")(coords)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (label != null) __obj.updateDynamic("label")(label)

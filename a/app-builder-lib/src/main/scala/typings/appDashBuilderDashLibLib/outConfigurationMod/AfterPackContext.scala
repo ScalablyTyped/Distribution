@@ -24,13 +24,8 @@ object AfterPackContext {
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     targets: js.Array[appDashBuilderDashLibLib.outCoreMod.Target]
   ): AfterPackContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appOutDir")(appOutDir)
-    __obj.updateDynamic("arch")(arch)
-    __obj.updateDynamic("electronPlatformName")(electronPlatformName)
-    __obj.updateDynamic("outDir")(outDir)
-    __obj.updateDynamic("packager")(packager)
-    __obj.updateDynamic("targets")(targets)
+    val __obj = js.Dynamic.literal(appOutDir = appOutDir, arch = arch, electronPlatformName = electronPlatformName, outDir = outDir, packager = packager, targets = targets)
+  
     __obj.asInstanceOf[AfterPackContext]
   }
 }

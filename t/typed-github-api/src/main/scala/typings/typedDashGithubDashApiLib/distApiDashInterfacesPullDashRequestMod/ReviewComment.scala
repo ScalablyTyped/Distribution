@@ -36,22 +36,8 @@ object ReviewComment {
     url: java.lang.String,
     user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
   ): ReviewComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("commit_id")(commit_id)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("diff_hunk")(diff_hunk)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("original_commit_id")(original_commit_id)
-    __obj.updateDynamic("original_position")(original_position)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("pull_request_review_id")(pull_request_review_id)
-    __obj.updateDynamic("pull_request_url")(pull_request_url)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(body = body, commit_id = commit_id, created_at = created_at, diff_hunk = diff_hunk, html_url = html_url, id = id, original_commit_id = original_commit_id, original_position = original_position, path = path, position = position, pull_request_review_id = pull_request_review_id, pull_request_url = pull_request_url, updated_at = updated_at, url = url, user = user)
+  
     __obj.asInstanceOf[ReviewComment]
   }
 }

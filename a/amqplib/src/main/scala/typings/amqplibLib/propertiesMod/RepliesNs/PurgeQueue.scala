@@ -12,8 +12,8 @@ trait PurgeQueue extends js.Object {
 object PurgeQueue {
   @scala.inline
   def apply(messageCount: scala.Double): PurgeQueue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageCount")(messageCount)
+    val __obj = js.Dynamic.literal(messageCount = messageCount)
+  
     __obj.asInstanceOf[PurgeQueue]
   }
 }

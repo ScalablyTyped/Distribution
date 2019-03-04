@@ -16,9 +16,8 @@ object TableInput {
     headers: js.Array[java.lang.String],
     rows: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] | js.Array[js.Array[java.lang.String]]
   ): TableInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(headers = headers, rows = rows.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TableInput]
   }
 }

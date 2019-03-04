@@ -63,14 +63,7 @@ object IHighlightLayerOptions {
     isStroke: js.UndefOr[scala.Boolean] = js.undefined,
     mainTextureFixedSize: scala.Int | scala.Double = null
   ): IHighlightLayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alphaBlendingMode")(alphaBlendingMode)
-    __obj.updateDynamic("blurHorizontalSize")(blurHorizontalSize)
-    __obj.updateDynamic("blurTextureSizeRatio")(blurTextureSizeRatio)
-    __obj.updateDynamic("blurVerticalSize")(blurVerticalSize)
-    __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    __obj.updateDynamic("mainTextureRatio")(mainTextureRatio)
-    __obj.updateDynamic("renderingGroupId")(renderingGroupId)
+    val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode, blurHorizontalSize = blurHorizontalSize, blurTextureSizeRatio = blurTextureSizeRatio, blurVerticalSize = blurVerticalSize, camera = camera.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio, renderingGroupId = renderingGroupId)
     if (!js.isUndefined(isStroke)) __obj.updateDynamic("isStroke")(isStroke)
     if (mainTextureFixedSize != null) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHighlightLayerOptions]

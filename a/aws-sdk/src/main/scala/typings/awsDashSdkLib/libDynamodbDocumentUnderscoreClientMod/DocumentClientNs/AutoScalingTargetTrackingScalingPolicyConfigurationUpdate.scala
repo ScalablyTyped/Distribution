@@ -32,8 +32,7 @@ object AutoScalingTargetTrackingScalingPolicyConfigurationUpdate {
     ScaleInCooldown: js.UndefOr[IntegerObject] = js.undefined,
     ScaleOutCooldown: js.UndefOr[IntegerObject] = js.undefined
   ): AutoScalingTargetTrackingScalingPolicyConfigurationUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TargetValue")(TargetValue)
+    val __obj = js.Dynamic.literal(TargetValue = TargetValue)
     if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn)
     if (!js.isUndefined(ScaleInCooldown)) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown)
     if (!js.isUndefined(ScaleOutCooldown)) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown)

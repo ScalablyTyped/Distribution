@@ -16,8 +16,7 @@ object GraphQLSchemaModule {
     typeDefs: graphqlLib.languageAstMod.DocumentNode,
     resolvers: atApollographqlApolloDashToolsLib.libSchemaResolverMapMod.GraphQLResolverMap[_] = null
   ): GraphQLSchemaModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeDefs")(typeDefs)
+    val __obj = js.Dynamic.literal(typeDefs = typeDefs)
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
     __obj.asInstanceOf[GraphQLSchemaModule]
   }

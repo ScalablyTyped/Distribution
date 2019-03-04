@@ -18,10 +18,8 @@ object Anon_EndMiddle {
     middle: plottableLib.plottableLibStrings.middle,
     start: plottableLib.plottableLibStrings.start
   ): Anon_EndMiddle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("middle")(middle)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, middle = middle, start = start)
+  
     __obj.asInstanceOf[Anon_EndMiddle]
   }
 }

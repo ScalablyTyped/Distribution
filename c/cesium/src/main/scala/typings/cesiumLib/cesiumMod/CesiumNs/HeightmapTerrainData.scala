@@ -41,13 +41,8 @@ object HeightmapTerrainData {
     wasCreatedByUpsampling: js.Function0[scala.Boolean],
     waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement
   ): HeightmapTerrainData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createMesh")(createMesh)
-    __obj.updateDynamic("interpolateHeight")(interpolateHeight)
-    __obj.updateDynamic("isChildAvailable")(isChildAvailable)
-    __obj.updateDynamic("upsample")(upsample)
-    __obj.updateDynamic("wasCreatedByUpsampling")(wasCreatedByUpsampling)
-    __obj.updateDynamic("waterMask")(waterMask.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createMesh = createMesh, interpolateHeight = interpolateHeight, isChildAvailable = isChildAvailable, upsample = upsample, wasCreatedByUpsampling = wasCreatedByUpsampling, waterMask = waterMask.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[HeightmapTerrainData]
   }
 }

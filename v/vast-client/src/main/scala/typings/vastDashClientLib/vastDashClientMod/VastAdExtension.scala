@@ -13,9 +13,8 @@ trait VastAdExtension extends js.Object {
 object VastAdExtension {
   @scala.inline
   def apply(attributes: VastAdAttributes, children: js.Array[VastAdExtensionChild]): VastAdExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children)
+  
     __obj.asInstanceOf[VastAdExtension]
   }
 }

@@ -42,11 +42,8 @@ object ContentEvent {
     Id: XContentIdentifier,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ContentEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Action = Action, Content = Content, Id = Id, Source = Source)
+  
     __obj.asInstanceOf[ContentEvent]
   }
 }

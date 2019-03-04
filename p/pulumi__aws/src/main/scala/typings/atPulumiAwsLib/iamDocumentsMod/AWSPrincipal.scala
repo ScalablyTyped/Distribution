@@ -12,8 +12,8 @@ trait AWSPrincipal extends Principal {
 object AWSPrincipal {
   @scala.inline
   def apply(AWS: java.lang.String | js.Array[java.lang.String]): AWSPrincipal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AWS")(AWS.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AWS = AWS.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AWSPrincipal]
   }
 }

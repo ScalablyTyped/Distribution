@@ -24,13 +24,8 @@ object ISQLDatabase {
     Name: java.lang.String,
     Server: java.lang.String
   ): ISQLDatabase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdminUser")(AdminUser)
-    __obj.updateDynamic("BasicUser")(BasicUser)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Engine")(Engine)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Server")(Server)
+    val __obj = js.Dynamic.literal(AdminUser = AdminUser, BasicUser = BasicUser, Clone = Clone, Engine = Engine, Name = Name, Server = Server)
+  
     __obj.asInstanceOf[ISQLDatabase]
   }
 }

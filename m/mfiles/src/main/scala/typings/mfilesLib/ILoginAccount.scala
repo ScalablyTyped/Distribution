@@ -53,19 +53,8 @@ object ILoginAccount {
     ],
     UserName: java.lang.String
   ): ILoginAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountName")(AccountName)
-    __obj.updateDynamic("AccountType")(AccountType)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("DomainName")(DomainName)
-    __obj.updateDynamic("EmailAddress")(EmailAddress)
-    __obj.updateDynamic("Enabled")(Enabled)
-    __obj.updateDynamic("FullName")(FullName)
-    __obj.updateDynamic("LicenseType")(LicenseType)
-    __obj.updateDynamic("ServerRoles")(ServerRoles)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("UserName")(UserName)
+    val __obj = js.Dynamic.literal(AccountName = AccountName, AccountType = AccountType, Clone = Clone, CloneFrom = CloneFrom, DomainName = DomainName, EmailAddress = EmailAddress, Enabled = Enabled, FullName = FullName, LicenseType = LicenseType, ServerRoles = ServerRoles, Set = Set, UserName = UserName)
+  
     __obj.asInstanceOf[ILoginAccount]
   }
 }

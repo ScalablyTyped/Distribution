@@ -16,9 +16,8 @@ object Anon_CENTERRIGHT {
     CENTER: reactDashFoundationLib.enumsMod.MenuAlignments,
     RIGHT: reactDashFoundationLib.enumsMod.MenuAlignments
   ): Anon_CENTERRIGHT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("RIGHT")(RIGHT)
+    val __obj = js.Dynamic.literal(CENTER = CENTER, RIGHT = RIGHT)
+  
     __obj.asInstanceOf[Anon_CENTERRIGHT]
   }
 }

@@ -18,9 +18,8 @@ object DeleteChange {
     index: scala.Double,
     `type`: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.delete
   ): DeleteChange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("howMany")(howMany)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(howMany = howMany, index = index)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeleteChange]
   }
 }

@@ -20,11 +20,8 @@ object GetFileMatchersOptions {
     globalOutDir: java.lang.String,
     macroExpander: js.Function1[java.lang.String, java.lang.String]
   ): GetFileMatchersOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customBuildOptions")(customBuildOptions)
-    __obj.updateDynamic("defaultSrc")(defaultSrc)
-    __obj.updateDynamic("globalOutDir")(globalOutDir)
-    __obj.updateDynamic("macroExpander")(macroExpander)
+    val __obj = js.Dynamic.literal(customBuildOptions = customBuildOptions, defaultSrc = defaultSrc, globalOutDir = globalOutDir, macroExpander = macroExpander)
+  
     __obj.asInstanceOf[GetFileMatchersOptions]
   }
 }

@@ -40,21 +40,8 @@ object Anon_AtimeCharset {
     uid: scala.Boolean,
     uname: scala.Boolean
   ): Anon_AtimeCharset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atime")(atime)
-    __obj.updateDynamic("charset")(charset)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("gname")(gname)
-    __obj.updateDynamic("linkpat")(linkpat)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("realtime")(realtime)
-    __obj.updateDynamic("security")(security)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("uname")(uname)
+    val __obj = js.Dynamic.literal(atime = atime, charset = charset, comment = comment, ctime = ctime, gid = gid, gname = gname, linkpat = linkpat, mtime = mtime, path = path, realtime = realtime, security = security, size = size, uid = uid, uname = uname)
+  
     __obj.asInstanceOf[Anon_AtimeCharset]
   }
 }

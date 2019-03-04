@@ -19,9 +19,8 @@ trait IntegerSize2D extends js.Object {
 object IntegerSize2D {
   @scala.inline
   def apply(Height: scala.Double, Width: scala.Double): IntegerSize2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Height = Height, Width = Width)
+  
     __obj.asInstanceOf[IntegerSize2D]
   }
 }

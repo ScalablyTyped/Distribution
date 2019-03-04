@@ -20,11 +20,8 @@ object Anon_IgnoreElementEnd {
     singleCharacters: scala.Boolean,
     startPosition: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Position
   ): Anon_IgnoreElementEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoreElementEnd")(ignoreElementEnd)
-    __obj.updateDynamic("shallow")(shallow)
-    __obj.updateDynamic("singleCharacters")(singleCharacters)
-    __obj.updateDynamic("startPosition")(startPosition)
+    val __obj = js.Dynamic.literal(ignoreElementEnd = ignoreElementEnd, shallow = shallow, singleCharacters = singleCharacters, startPosition = startPosition)
+  
     __obj.asInstanceOf[Anon_IgnoreElementEnd]
   }
 }

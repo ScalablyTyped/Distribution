@@ -29,10 +29,8 @@ trait PropertyCategoryDescriptor extends js.Object {
 object PropertyCategoryDescriptor {
   @scala.inline
   def apply(HelpURL: java.lang.String, ProgrammaticName: java.lang.String, UIName: java.lang.String): PropertyCategoryDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HelpURL")(HelpURL)
-    __obj.updateDynamic("ProgrammaticName")(ProgrammaticName)
-    __obj.updateDynamic("UIName")(UIName)
+    val __obj = js.Dynamic.literal(HelpURL = HelpURL, ProgrammaticName = ProgrammaticName, UIName = UIName)
+  
     __obj.asInstanceOf[PropertyCategoryDescriptor]
   }
 }

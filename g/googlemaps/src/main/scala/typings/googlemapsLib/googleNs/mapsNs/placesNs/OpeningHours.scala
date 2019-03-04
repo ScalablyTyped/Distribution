@@ -18,10 +18,8 @@ object OpeningHours {
     periods: js.Array[OpeningPeriod],
     weekday_text: js.Array[java.lang.String]
   ): OpeningHours = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open_now")(open_now)
-    __obj.updateDynamic("periods")(periods)
-    __obj.updateDynamic("weekday_text")(weekday_text)
+    val __obj = js.Dynamic.literal(open_now = open_now, periods = periods, weekday_text = weekday_text)
+  
     __obj.asInstanceOf[OpeningHours]
   }
 }

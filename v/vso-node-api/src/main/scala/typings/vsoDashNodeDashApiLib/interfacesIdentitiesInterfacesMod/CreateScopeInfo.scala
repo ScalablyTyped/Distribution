@@ -24,13 +24,8 @@ object CreateScopeInfo {
     scopeName: java.lang.String,
     scopeType: GroupScopeType
   ): CreateScopeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adminGroupDescription")(adminGroupDescription)
-    __obj.updateDynamic("adminGroupName")(adminGroupName)
-    __obj.updateDynamic("creatorId")(creatorId)
-    __obj.updateDynamic("parentScopeId")(parentScopeId)
-    __obj.updateDynamic("scopeName")(scopeName)
-    __obj.updateDynamic("scopeType")(scopeType)
+    val __obj = js.Dynamic.literal(adminGroupDescription = adminGroupDescription, adminGroupName = adminGroupName, creatorId = creatorId, parentScopeId = parentScopeId, scopeName = scopeName, scopeType = scopeType)
+  
     __obj.asInstanceOf[CreateScopeInfo]
   }
 }

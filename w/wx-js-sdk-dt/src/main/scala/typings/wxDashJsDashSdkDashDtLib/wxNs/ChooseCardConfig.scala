@@ -56,11 +56,7 @@ object ChooseCardConfig {
     shopId: java.lang.String = null,
     success: js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit] = null
   ): ChooseCardConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardSign")(cardSign)
-    __obj.updateDynamic("nonceStr")(nonceStr)
-    __obj.updateDynamic("signType")(signType)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(cardSign = cardSign, nonceStr = nonceStr, signType = signType, timestamp = timestamp)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (cardId != null) __obj.updateDynamic("cardId")(cardId)
     if (cardType != null) __obj.updateDynamic("cardType")(cardType)

@@ -22,12 +22,8 @@ object FilterCriteria {
     getHiddenValues: js.Function0[js.Array[java.lang.String]],
     getVisibleValues: js.Function0[js.Array[java.lang.String]]
   ): FilterCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getCriteriaType")(getCriteriaType)
-    __obj.updateDynamic("getCriteriaValues")(getCriteriaValues)
-    __obj.updateDynamic("getHiddenValues")(getHiddenValues)
-    __obj.updateDynamic("getVisibleValues")(getVisibleValues)
+    val __obj = js.Dynamic.literal(copy = copy, getCriteriaType = getCriteriaType, getCriteriaValues = getCriteriaValues, getHiddenValues = getHiddenValues, getVisibleValues = getVisibleValues)
+  
     __obj.asInstanceOf[FilterCriteria]
   }
 }

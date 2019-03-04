@@ -16,9 +16,8 @@ object Anon_IsCreatedLink {
     isCreated: scala.Boolean,
     link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
   ): Anon_IsCreatedLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCreated")(isCreated)
-    __obj.updateDynamic("link")(link)
+    val __obj = js.Dynamic.literal(isCreated = isCreated, link = link)
+  
     __obj.asInstanceOf[Anon_IsCreatedLink]
   }
 }

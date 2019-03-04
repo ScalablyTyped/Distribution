@@ -35,14 +35,7 @@ object Refund {
     processed_at: java.lang.String = null,
     restock: js.Any = null
   ): Refund = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("note")(note)
-    __obj.updateDynamic("order_adjustments")(order_adjustments)
-    __obj.updateDynamic("order_id")(order_id)
-    __obj.updateDynamic("refund_line_items")(refund_line_items)
-    __obj.updateDynamic("transactions")(transactions)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(id = id, note = note, order_adjustments = order_adjustments, order_id = order_id, refund_line_items = refund_line_items, transactions = transactions, user_id = user_id)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)
     if (processed_at != null) __obj.updateDynamic("processed_at")(processed_at)

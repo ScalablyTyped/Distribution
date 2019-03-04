@@ -13,8 +13,7 @@ trait IdConfig extends js.Object {
 object IdConfig {
   @scala.inline
   def apply(id: java.lang.String, typename: java.lang.String = null): IdConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (typename != null) __obj.updateDynamic("typename")(typename)
     __obj.asInstanceOf[IdConfig]
   }

@@ -52,14 +52,8 @@ object ASPxClientWebChartControlCustomDrawCrosshairEventArgs {
     cursorCrosshairLineElement: ASPxClientCrosshairLineElement,
     processOnServer: scala.Boolean
   ): ASPxClientWebChartControlCustomDrawCrosshairEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("crosshairElementGroups")(crosshairElementGroups)
-    __obj.updateDynamic("crosshairElements")(crosshairElements)
-    __obj.updateDynamic("crosshairGroupHeaderElements")(crosshairGroupHeaderElements)
-    __obj.updateDynamic("crosshairLegendElements")(crosshairLegendElements)
-    __obj.updateDynamic("cursorCrosshairAxisLabelElements")(cursorCrosshairAxisLabelElements)
-    __obj.updateDynamic("cursorCrosshairLineElement")(cursorCrosshairLineElement)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(crosshairElementGroups = crosshairElementGroups, crosshairElements = crosshairElements, crosshairGroupHeaderElements = crosshairGroupHeaderElements, crosshairLegendElements = crosshairLegendElements, cursorCrosshairAxisLabelElements = cursorCrosshairAxisLabelElements, cursorCrosshairLineElement = cursorCrosshairLineElement, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientWebChartControlCustomDrawCrosshairEventArgs]
   }
 }

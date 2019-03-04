@@ -56,20 +56,8 @@ object QueryTypes {
     UPSERT: java.lang.String,
     VERSION: java.lang.String
   ): QueryTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BULKDELETE")(BULKDELETE)
-    __obj.updateDynamic("BULKUPDATE")(BULKUPDATE)
-    __obj.updateDynamic("DELETE")(DELETE)
-    __obj.updateDynamic("DESCRIBE")(DESCRIBE)
-    __obj.updateDynamic("FOREIGNKEYS")(FOREIGNKEYS)
-    __obj.updateDynamic("INSERT")(INSERT)
-    __obj.updateDynamic("RAW")(RAW)
-    __obj.updateDynamic("SELECT")(SELECT)
-    __obj.updateDynamic("SHOWINDEXES")(SHOWINDEXES)
-    __obj.updateDynamic("SHOWTABLES")(SHOWTABLES)
-    __obj.updateDynamic("UPDATE")(UPDATE)
-    __obj.updateDynamic("UPSERT")(UPSERT)
-    __obj.updateDynamic("VERSION")(VERSION)
+    val __obj = js.Dynamic.literal(BULKDELETE = BULKDELETE, BULKUPDATE = BULKUPDATE, DELETE = DELETE, DESCRIBE = DESCRIBE, FOREIGNKEYS = FOREIGNKEYS, INSERT = INSERT, RAW = RAW, SELECT = SELECT, SHOWINDEXES = SHOWINDEXES, SHOWTABLES = SHOWTABLES, UPDATE = UPDATE, UPSERT = UPSERT, VERSION = VERSION)
+  
     __obj.asInstanceOf[QueryTypes]
   }
 }

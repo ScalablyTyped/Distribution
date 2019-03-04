@@ -16,9 +16,8 @@ object OnAttachStateChangeListener {
     onViewAttachedToWindow: js.Function1[androiduixLib.androidNs.viewNs.View, js.Any],
     onViewDetachedFromWindow: js.Function1[androiduixLib.androidNs.viewNs.View, js.Any]
   ): OnAttachStateChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onViewAttachedToWindow")(onViewAttachedToWindow)
-    __obj.updateDynamic("onViewDetachedFromWindow")(onViewDetachedFromWindow)
+    val __obj = js.Dynamic.literal(onViewAttachedToWindow = onViewAttachedToWindow, onViewDetachedFromWindow = onViewDetachedFromWindow)
+  
     __obj.asInstanceOf[OnAttachStateChangeListener]
   }
 }

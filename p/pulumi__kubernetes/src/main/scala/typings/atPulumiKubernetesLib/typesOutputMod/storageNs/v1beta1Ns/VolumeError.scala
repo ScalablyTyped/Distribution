@@ -23,9 +23,8 @@ trait VolumeError extends js.Object {
 object VolumeError {
   @scala.inline
   def apply(message: java.lang.String, time: java.lang.String): VolumeError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(message = message, time = time)
+  
     __obj.asInstanceOf[VolumeError]
   }
 }

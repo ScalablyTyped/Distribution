@@ -12,8 +12,8 @@ trait Anon_True extends js.Object {
 object Anon_True {
   @scala.inline
   def apply(withFileTypes: nodeLib.nodeLibNumbers.`true`): Anon_True = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withFileTypes")(withFileTypes)
+    val __obj = js.Dynamic.literal(withFileTypes = withFileTypes)
+  
     __obj.asInstanceOf[Anon_True]
   }
 }

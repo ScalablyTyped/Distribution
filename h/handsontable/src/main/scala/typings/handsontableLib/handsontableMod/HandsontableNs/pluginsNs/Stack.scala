@@ -24,13 +24,8 @@ object Stack {
     push: js.Function1[js.Any, scala.Unit],
     size: js.Function0[scala.Double]
   ): Stack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("peek")(peek)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(isEmpty = isEmpty, items = items, peek = peek, pop = pop, push = push, size = size)
+  
     __obj.asInstanceOf[Stack]
   }
 }

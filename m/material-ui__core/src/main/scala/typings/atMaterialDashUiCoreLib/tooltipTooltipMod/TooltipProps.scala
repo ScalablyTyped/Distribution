@@ -65,9 +65,7 @@ object TooltipProps {
     placement: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`bottom-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`bottom-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`left-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`left-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`right-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`right-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`top-end` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`top-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children, title = title.asInstanceOf[js.Any])
     if (PopperProps != null) __obj.updateDynamic("PopperProps")(PopperProps)
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)

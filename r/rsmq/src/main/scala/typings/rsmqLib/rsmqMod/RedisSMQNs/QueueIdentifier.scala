@@ -12,8 +12,8 @@ trait QueueIdentifier extends js.Object {
 object QueueIdentifier {
   @scala.inline
   def apply(qname: java.lang.String): QueueIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qname")(qname)
+    val __obj = js.Dynamic.literal(qname = qname)
+  
     __obj.asInstanceOf[QueueIdentifier]
   }
 }

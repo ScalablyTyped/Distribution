@@ -16,9 +16,8 @@ object Anon_Javascript {
     javascript: webpackLib.webpackMod.webpackNs.compilationNs.ModuleTemplate,
     webassembly: webpackLib.webpackMod.webpackNs.compilationNs.ModuleTemplate
   ): Anon_Javascript = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("javascript")(javascript)
-    __obj.updateDynamic("webassembly")(webassembly)
+    val __obj = js.Dynamic.literal(javascript = javascript, webassembly = webassembly)
+  
     __obj.asInstanceOf[Anon_Javascript]
   }
 }

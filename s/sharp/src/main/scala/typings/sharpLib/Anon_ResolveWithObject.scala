@@ -12,8 +12,8 @@ trait Anon_ResolveWithObject extends js.Object {
 object Anon_ResolveWithObject {
   @scala.inline
   def apply(resolveWithObject: sharpLib.sharpLibNumbers.`true`): Anon_ResolveWithObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolveWithObject")(resolveWithObject)
+    val __obj = js.Dynamic.literal(resolveWithObject = resolveWithObject)
+  
     __obj.asInstanceOf[Anon_ResolveWithObject]
   }
 }

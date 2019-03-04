@@ -39,8 +39,7 @@ object Options {
     title: java.lang.String = null,
     url: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (!js.isUndefined(delayOnHover)) __obj.updateDynamic("delayOnHover")(delayOnHover)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)

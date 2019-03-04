@@ -36,12 +36,8 @@ object DriverPropertyInfo {
     Name: java.lang.String,
     Value: java.lang.String
   ): DriverPropertyInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Choices")(Choices)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("IsRequired")(IsRequired)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Choices = Choices, Description = Description, IsRequired = IsRequired, Name = Name, Value = Value)
+  
     __obj.asInstanceOf[DriverPropertyInfo]
   }
 }

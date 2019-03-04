@@ -64,8 +64,7 @@ object Anon_ActiveAltFields {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_ActiveAltFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

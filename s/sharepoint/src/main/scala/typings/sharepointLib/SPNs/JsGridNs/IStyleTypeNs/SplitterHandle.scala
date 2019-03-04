@@ -25,13 +25,8 @@ object SplitterHandle {
     leftInnerBorderColor: js.Any,
     outerBorderColor: js.Any
   ): SplitterHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("gripLowerColor")(gripLowerColor)
-    __obj.updateDynamic("gripUpperColor")(gripUpperColor)
-    __obj.updateDynamic("innerBorderColor")(innerBorderColor)
-    __obj.updateDynamic("leftInnerBorderColor")(leftInnerBorderColor)
-    __obj.updateDynamic("outerBorderColor")(outerBorderColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, gripLowerColor = gripLowerColor, gripUpperColor = gripUpperColor, innerBorderColor = innerBorderColor, leftInnerBorderColor = leftInnerBorderColor, outerBorderColor = outerBorderColor)
+  
     __obj.asInstanceOf[SplitterHandle]
   }
 }

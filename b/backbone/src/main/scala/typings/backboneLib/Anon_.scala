@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   @JSName("$")
   var $_Original: jqueryLib.JQueryStatic = js.native
   var Collection: Anon_ClassProperties = js.native

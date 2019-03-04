@@ -24,13 +24,8 @@ object CommandManager {
     exec: js.Function3[java.lang.String, Editor, js.Any, scala.Unit],
     platform: java.lang.String
   ): CommandManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCommand")(addCommand)
-    __obj.updateDynamic("addCommands")(addCommands)
-    __obj.updateDynamic("byName")(byName)
-    __obj.updateDynamic("commands")(commands)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(addCommand = addCommand, addCommands = addCommands, byName = byName, commands = commands, exec = exec, platform = platform)
+  
     __obj.asInstanceOf[CommandManager]
   }
 }

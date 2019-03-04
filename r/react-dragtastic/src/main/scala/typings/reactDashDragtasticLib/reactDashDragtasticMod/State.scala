@@ -42,13 +42,7 @@ object State {
     currentlyHoveredDroppableId: Id = null,
     `type`: Type = null
   ): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("isDragging")(isDragging)
-    __obj.updateDynamic("startingX")(startingX)
-    __obj.updateDynamic("startingY")(startingY)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(data = data, isDragging = isDragging, startingX = startingX, startingY = startingY, x = x, y = y)
     if (currentlyDraggingId != null) __obj.updateDynamic("currentlyDraggingId")(currentlyDraggingId.asInstanceOf[js.Any])
     if (currentlyHoveredDroppableAccepts != null) __obj.updateDynamic("currentlyHoveredDroppableAccepts")(currentlyHoveredDroppableAccepts.asInstanceOf[js.Any])
     if (currentlyHoveredDroppableId != null) __obj.updateDynamic("currentlyHoveredDroppableId")(currentlyHoveredDroppableId.asInstanceOf[js.Any])

@@ -31,9 +31,7 @@ object Auth0Error {
     statusCode: scala.Int | scala.Double = null,
     statusText: java.lang.String = null
   ): Auth0Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("errorDescription")(errorDescription)
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorDescription = errorDescription)
     if (code != null) __obj.updateDynamic("code")(code)
     if (description != null) __obj.updateDynamic("description")(description)
     if (name != null) __obj.updateDynamic("name")(name)

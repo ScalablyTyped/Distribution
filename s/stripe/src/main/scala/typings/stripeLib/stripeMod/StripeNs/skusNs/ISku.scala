@@ -63,20 +63,8 @@ object ISku {
     product: java.lang.String | stripeLib.stripeMod.StripeNs.productsNs.IProduct,
     updated: scala.Double
   ): ISku = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("inventory")(inventory)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("package_dimensions")(package_dimensions)
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(active = active, attributes = attributes, created = created, currency = currency, id = id, image = image, inventory = inventory, livemode = livemode, metadata = metadata, package_dimensions = package_dimensions, price = price, product = product.asInstanceOf[js.Any], updated = updated)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ISku]
   }
 }

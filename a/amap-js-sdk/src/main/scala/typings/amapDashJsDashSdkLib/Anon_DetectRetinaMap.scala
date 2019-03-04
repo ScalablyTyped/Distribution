@@ -22,8 +22,7 @@ object Anon_DetectRetinaMap {
     zIndex: scala.Int | scala.Double = null,
     zooms: js.Array[scala.Double] = null
   ): Anon_DetectRetinaMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(map = map)
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

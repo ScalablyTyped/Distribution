@@ -31,14 +31,8 @@ object State {
     step: Step,
     `type`: EventType
   ): State = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("controlled")(controlled)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("lifecycle")(lifecycle)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(action = action, controlled = controlled, index = index, lifecycle = lifecycle, size = size, status = status, step = step)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[State]
   }
 }

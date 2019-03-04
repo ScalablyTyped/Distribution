@@ -19,9 +19,8 @@ trait GetCipherTextResult extends js.Object {
 object GetCipherTextResult {
   @scala.inline
   def apply(ciphertextBlob: java.lang.String, id: java.lang.String): GetCipherTextResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ciphertextBlob")(ciphertextBlob)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(ciphertextBlob = ciphertextBlob, id = id)
+  
     __obj.asInstanceOf[GetCipherTextResult]
   }
 }

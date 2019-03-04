@@ -22,9 +22,8 @@ object RolePolicyAttachmentArgs {
     policyArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN],
     role: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]
   ): RolePolicyAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policyArn = policyArn.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RolePolicyAttachmentArgs]
   }
 }

@@ -22,13 +22,8 @@ object ParameterReflectionObject {
     `type`: TypeObject,
     originalName: java.lang.String = null
   ): ParameterReflectionObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("kindString")(kindString)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, flags = flags, id = id, kind = kind, kindString = kindString, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (originalName != null) __obj.updateDynamic("originalName")(originalName)
     __obj.asInstanceOf[ParameterReflectionObject]
   }

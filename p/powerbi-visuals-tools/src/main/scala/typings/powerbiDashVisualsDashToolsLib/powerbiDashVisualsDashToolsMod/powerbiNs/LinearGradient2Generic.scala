@@ -18,9 +18,7 @@ object LinearGradient2Generic {
     min: RuleColorStopGeneric[TColor, TValue],
     nullColoringStrategy: NullColoringStrategyGeneric[TStrategy, TColor] = null
   ): LinearGradient2Generic[TColor, TValue, TStrategy] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, min = min)
     if (nullColoringStrategy != null) __obj.updateDynamic("nullColoringStrategy")(nullColoringStrategy)
     __obj.asInstanceOf[LinearGradient2Generic[TColor, TValue, TStrategy]]
   }

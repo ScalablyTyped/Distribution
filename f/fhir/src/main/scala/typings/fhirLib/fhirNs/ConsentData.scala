@@ -36,9 +36,7 @@ object ConsentData {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): ConsentData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meaning")(meaning)
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(meaning = meaning, reference = reference)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_meaning != null) __obj.updateDynamic("_meaning")(_meaning)

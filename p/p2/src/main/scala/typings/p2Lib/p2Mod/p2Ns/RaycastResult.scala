@@ -44,20 +44,8 @@ object RaycastResult {
     shouldStop: js.Function1[Ray, scala.Boolean],
     stop: js.Function0[scala.Unit]
   ): RaycastResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("faceIndex")(faceIndex)
-    __obj.updateDynamic("fraction")(fraction)
-    __obj.updateDynamic("getHitDistance")(getHitDistance)
-    __obj.updateDynamic("getHitPoint")(getHitPoint)
-    __obj.updateDynamic("hasHit")(hasHit)
-    __obj.updateDynamic("isStopped")(isStopped)
-    __obj.updateDynamic("normal")(normal)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("shouldStop")(shouldStop)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(body = body, faceIndex = faceIndex, fraction = fraction, getHitDistance = getHitDistance, getHitPoint = getHitPoint, hasHit = hasHit, isStopped = isStopped, normal = normal, reset = reset, set = set, shape = shape, shouldStop = shouldStop, stop = stop)
+  
     __obj.asInstanceOf[RaycastResult]
   }
 }

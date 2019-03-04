@@ -15,8 +15,7 @@ trait DataViewKpiColumnMetadata extends js.Object {
 object DataViewKpiColumnMetadata {
   @scala.inline
   def apply(graphic: java.lang.String, normalizedFiveStateKpiRange: js.UndefOr[scala.Boolean] = js.undefined): DataViewKpiColumnMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graphic")(graphic)
+    val __obj = js.Dynamic.literal(graphic = graphic)
     if (!js.isUndefined(normalizedFiveStateKpiRange)) __obj.updateDynamic("normalizedFiveStateKpiRange")(normalizedFiveStateKpiRange)
     __obj.asInstanceOf[DataViewKpiColumnMetadata]
   }

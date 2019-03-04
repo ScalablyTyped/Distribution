@@ -24,8 +24,8 @@ object Anon_PasswordRevisionSshKeyTypeUrl {
     sshKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_PasswordRevisionSshKeyTypeUrl = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
     if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey.asInstanceOf[js.Any])

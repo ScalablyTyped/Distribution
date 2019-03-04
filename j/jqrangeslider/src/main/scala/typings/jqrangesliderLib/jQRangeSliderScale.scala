@@ -38,8 +38,7 @@ object jQRangeSliderScale {
     label: js.Function2[/* value */ js.Any, /* nextValue */ js.Any, java.lang.String] = null,
     stop: js.Function1[/* value */ js.Any, scala.Boolean] = null
   ): jQRangeSliderScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(next = next)
     if (first != null) __obj.updateDynamic("first")(first)
     if (format != null) __obj.updateDynamic("format")(format)
     if (label != null) __obj.updateDynamic("label")(label)

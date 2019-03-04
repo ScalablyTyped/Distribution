@@ -177,8 +177,7 @@ object BasePickerProps {
     `type`: reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): BasePickerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (DateTimeFormat != null) __obj.updateDynamic("DateTimeFormat")(DateTimeFormat)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(animateInline)) __obj.updateDynamic("animateInline")(animateInline)

@@ -34,8 +34,7 @@ object RequestPaymentResult {
     recipient_account_type: java.lang.String = null,
     request_id: java.lang.String = null
   ): RequestPaymentResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (account_unblock_uri != null) __obj.updateDynamic("account_unblock_uri")(account_unblock_uri)
     if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
     if (contract_amount != null) __obj.updateDynamic("contract_amount")(contract_amount.asInstanceOf[js.Any])

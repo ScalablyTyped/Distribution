@@ -12,8 +12,8 @@ trait Anon_RegionName extends js.Object {
 object Anon_RegionName {
   @scala.inline
   def apply(regionName: java.lang.String): Anon_RegionName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("regionName")(regionName)
+    val __obj = js.Dynamic.literal(regionName = regionName)
+  
     __obj.asInstanceOf[Anon_RegionName]
   }
 }

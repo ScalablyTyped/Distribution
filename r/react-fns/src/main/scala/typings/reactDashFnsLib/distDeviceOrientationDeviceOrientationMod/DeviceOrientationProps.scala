@@ -20,8 +20,7 @@ object DeviceOrientationProps {
     beta: scala.Int | scala.Double = null,
     gamma: scala.Int | scala.Double = null
   ): DeviceOrientationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absolute")(absolute)
+    val __obj = js.Dynamic.literal(absolute = absolute)
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
     if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])

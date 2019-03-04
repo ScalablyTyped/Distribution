@@ -24,8 +24,7 @@ object StrategyOptionsWithRequest {
     tokenParams: java.lang.String = null,
     tokenQuery: java.lang.String = null
   ): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)
     if (!js.isUndefined(failedOnMissing)) __obj.updateDynamic("failedOnMissing")(failedOnMissing)
     if (tokenField != null) __obj.updateDynamic("tokenField")(tokenField)
     if (tokenHeader != null) __obj.updateDynamic("tokenHeader")(tokenHeader)

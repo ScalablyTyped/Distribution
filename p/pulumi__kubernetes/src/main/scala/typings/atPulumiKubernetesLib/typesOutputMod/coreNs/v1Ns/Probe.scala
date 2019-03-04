@@ -62,15 +62,8 @@ object Probe {
     tcpSocket: TCPSocketAction,
     timeoutSeconds: scala.Double
   ): Probe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("failureThreshold")(failureThreshold)
-    __obj.updateDynamic("httpGet")(httpGet)
-    __obj.updateDynamic("initialDelaySeconds")(initialDelaySeconds)
-    __obj.updateDynamic("periodSeconds")(periodSeconds)
-    __obj.updateDynamic("successThreshold")(successThreshold)
-    __obj.updateDynamic("tcpSocket")(tcpSocket)
-    __obj.updateDynamic("timeoutSeconds")(timeoutSeconds)
+    val __obj = js.Dynamic.literal(exec = exec, failureThreshold = failureThreshold, httpGet = httpGet, initialDelaySeconds = initialDelaySeconds, periodSeconds = periodSeconds, successThreshold = successThreshold, tcpSocket = tcpSocket, timeoutSeconds = timeoutSeconds)
+  
     __obj.asInstanceOf[Probe]
   }
 }

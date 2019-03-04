@@ -18,8 +18,7 @@ object Anon_IntervalIntervalUnitTimes {
     intervalUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     times: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_IntervalIntervalUnitTimes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     if (intervalUnit != null) __obj.updateDynamic("intervalUnit")(intervalUnit.asInstanceOf[js.Any])
     if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IntervalIntervalUnitTimes]

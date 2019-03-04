@@ -26,14 +26,8 @@ object TaskGroupRevision {
     revision: scala.Double,
     taskGroupId: java.lang.String
   ): TaskGroupRevision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("changedBy")(changedBy)
-    __obj.updateDynamic("changedDate")(changedDate)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("taskGroupId")(taskGroupId)
+    val __obj = js.Dynamic.literal(changeType = changeType, changedBy = changedBy, changedDate = changedDate, comment = comment, fileId = fileId, revision = revision, taskGroupId = taskGroupId)
+  
     __obj.asInstanceOf[TaskGroupRevision]
   }
 }

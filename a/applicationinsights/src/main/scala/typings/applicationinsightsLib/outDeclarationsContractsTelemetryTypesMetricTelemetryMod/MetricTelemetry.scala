@@ -47,9 +47,7 @@ object MetricTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): MetricTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

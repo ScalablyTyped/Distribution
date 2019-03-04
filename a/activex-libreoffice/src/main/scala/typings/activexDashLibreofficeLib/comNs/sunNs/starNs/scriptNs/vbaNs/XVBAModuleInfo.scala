@@ -27,11 +27,8 @@ object XVBAModuleInfo {
     ],
     removeModuleInfo: js.Function1[java.lang.String, scala.Unit]
   ): XVBAModuleInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getModuleInfo")(getModuleInfo)
-    __obj.updateDynamic("hasModuleInfo")(hasModuleInfo)
-    __obj.updateDynamic("insertModuleInfo")(insertModuleInfo)
-    __obj.updateDynamic("removeModuleInfo")(removeModuleInfo)
+    val __obj = js.Dynamic.literal(getModuleInfo = getModuleInfo, hasModuleInfo = hasModuleInfo, insertModuleInfo = insertModuleInfo, removeModuleInfo = removeModuleInfo)
+  
     __obj.asInstanceOf[XVBAModuleInfo]
   }
 }

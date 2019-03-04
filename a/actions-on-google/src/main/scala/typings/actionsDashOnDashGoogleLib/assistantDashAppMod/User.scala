@@ -37,12 +37,8 @@ object User {
     userName: UserName,
     userStorage: java.lang.String
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("lastSeen")(lastSeen)
-    __obj.updateDynamic("userId")(userId)
-    __obj.updateDynamic("userName")(userName)
-    __obj.updateDynamic("userStorage")(userStorage)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, lastSeen = lastSeen, userId = userId, userName = userName, userStorage = userStorage)
+  
     __obj.asInstanceOf[User]
   }
 }

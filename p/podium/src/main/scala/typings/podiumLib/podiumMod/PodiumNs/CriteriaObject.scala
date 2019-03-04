@@ -45,8 +45,7 @@ object CriteriaObject {
     spread: js.UndefOr[scala.Boolean] = js.undefined,
     tags: js.UndefOr[scala.Boolean] = js.undefined
   ): CriteriaObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)

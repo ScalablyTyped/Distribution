@@ -40,12 +40,8 @@ object ASPxClientGridToolbarItemClickEventArgs {
     toolbarName: java.lang.String,
     usePostBack: scala.Boolean
   ): ASPxClientGridToolbarItemClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("toolbarIndex")(toolbarIndex)
-    __obj.updateDynamic("toolbarName")(toolbarName)
-    __obj.updateDynamic("usePostBack")(usePostBack)
+    val __obj = js.Dynamic.literal(item = item, processOnServer = processOnServer, toolbarIndex = toolbarIndex, toolbarName = toolbarName, usePostBack = usePostBack)
+  
     __obj.asInstanceOf[ASPxClientGridToolbarItemClickEventArgs]
   }
 }

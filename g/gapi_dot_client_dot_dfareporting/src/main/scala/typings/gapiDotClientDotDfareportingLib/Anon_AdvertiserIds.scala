@@ -64,8 +64,7 @@ object Anon_AdvertiserIds {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdvertiserIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

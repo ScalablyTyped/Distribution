@@ -13,9 +13,8 @@ trait TripResults extends js.Object {
 object TripResults {
   @scala.inline
   def apply(trips: js.Array[Route], waypoints: js.Array[TripWaypoint]): TripResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trips")(trips)
-    __obj.updateDynamic("waypoints")(waypoints)
+    val __obj = js.Dynamic.literal(trips = trips, waypoints = waypoints)
+  
     __obj.asInstanceOf[TripResults]
   }
 }

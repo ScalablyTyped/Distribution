@@ -25,9 +25,7 @@ object DNSRecord {
     isTRR: java.lang.String,
     canonicalName: java.lang.String = null
   ): DNSRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("isTRR")(isTRR)
+    val __obj = js.Dynamic.literal(addresses = addresses, isTRR = isTRR)
     if (canonicalName != null) __obj.updateDynamic("canonicalName")(canonicalName)
     __obj.asInstanceOf[DNSRecord]
   }

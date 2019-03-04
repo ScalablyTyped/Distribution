@@ -28,14 +28,7 @@ object UserArgs {
     pre: cwiseDashParserLib.cwiseDashParserMod.cwiseUnderscoreParserNs.CompiledRoutine,
     printCode: js.UndefOr[scala.Boolean] = js.undefined
   ): UserArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("blockSize")(blockSize)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("funcName")(funcName)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("pre")(pre)
+    val __obj = js.Dynamic.literal(args = args, blockSize = blockSize, body = body, debug = debug, funcName = funcName, post = post, pre = pre)
     if (!js.isUndefined(printCode)) __obj.updateDynamic("printCode")(printCode)
     __obj.asInstanceOf[UserArgs]
   }

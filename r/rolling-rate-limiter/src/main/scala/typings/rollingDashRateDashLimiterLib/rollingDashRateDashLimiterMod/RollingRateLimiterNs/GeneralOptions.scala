@@ -18,9 +18,7 @@ object GeneralOptions {
     maxInInterval: scala.Double,
     minDifference: scala.Int | scala.Double = null
   ): GeneralOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("maxInInterval")(maxInInterval)
+    val __obj = js.Dynamic.literal(interval = interval, maxInInterval = maxInInterval)
     if (minDifference != null) __obj.updateDynamic("minDifference")(minDifference.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralOptions]
   }

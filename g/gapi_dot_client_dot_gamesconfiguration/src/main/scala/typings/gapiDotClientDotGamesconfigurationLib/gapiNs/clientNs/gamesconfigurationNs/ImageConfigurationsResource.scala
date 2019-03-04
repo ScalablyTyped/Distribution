@@ -18,8 +18,8 @@ object ImageConfigurationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ImageConfiguration]
     ]
   ): ImageConfigurationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(upload = upload)
+  
     __obj.asInstanceOf[ImageConfigurationsResource]
   }
 }

@@ -13,9 +13,8 @@ trait KnockstrapModalDefaultsFooterData extends js.Object {
 object KnockstrapModalDefaultsFooterData {
   @scala.inline
   def apply(closeLabel: java.lang.String, primaryLabel: java.lang.String): KnockstrapModalDefaultsFooterData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeLabel")(closeLabel)
-    __obj.updateDynamic("primaryLabel")(primaryLabel)
+    val __obj = js.Dynamic.literal(closeLabel = closeLabel, primaryLabel = primaryLabel)
+  
     __obj.asInstanceOf[KnockstrapModalDefaultsFooterData]
   }
 }

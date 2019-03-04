@@ -26,14 +26,8 @@ object ResizableUIParams {
     position: js.Any,
     size: js.Any
   ): ResizableUIParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("helper")(helper)
-    __obj.updateDynamic("originalElement")(originalElement)
-    __obj.updateDynamic("originalPosition")(originalPosition)
-    __obj.updateDynamic("originalSize")(originalSize)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(element = element, helper = helper, originalElement = originalElement, originalPosition = originalPosition, originalSize = originalSize, position = position, size = size)
+  
     __obj.asInstanceOf[ResizableUIParams]
   }
 }

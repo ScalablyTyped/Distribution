@@ -26,14 +26,8 @@ object CirctuiBreakerConfig {
     commandGroup: java.lang.String,
     commandKey: java.lang.String
   ): CirctuiBreakerConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circuitBreakerErrorThresholdPercentage")(circuitBreakerErrorThresholdPercentage)
-    __obj.updateDynamic("circuitBreakerForceClosed")(circuitBreakerForceClosed)
-    __obj.updateDynamic("circuitBreakerForceOpened")(circuitBreakerForceOpened)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThreshold")(circuitBreakerRequestVolumeThreshold)
-    __obj.updateDynamic("circuitBreakerSleepWindowInMilliseconds")(circuitBreakerSleepWindowInMilliseconds)
-    __obj.updateDynamic("commandGroup")(commandGroup)
-    __obj.updateDynamic("commandKey")(commandKey)
+    val __obj = js.Dynamic.literal(circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage, circuitBreakerForceClosed = circuitBreakerForceClosed, circuitBreakerForceOpened = circuitBreakerForceOpened, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds, commandGroup = commandGroup, commandKey = commandKey)
+  
     __obj.asInstanceOf[CirctuiBreakerConfig]
   }
 }

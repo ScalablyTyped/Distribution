@@ -54,22 +54,8 @@ object TaskAgent {
     userCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     version: java.lang.String
   ): TaskAgent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("assignedRequest")(assignedRequest)
-    __obj.updateDynamic("authorization")(authorization)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("maxParallelism")(maxParallelism)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pendingUpdate")(pendingUpdate)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusChangedOn")(statusChangedOn)
-    __obj.updateDynamic("systemCapabilities")(systemCapabilities)
-    __obj.updateDynamic("userCapabilities")(userCapabilities)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(_links = _links, assignedRequest = assignedRequest, authorization = authorization, createdOn = createdOn, enabled = enabled, id = id, maxParallelism = maxParallelism, name = name, pendingUpdate = pendingUpdate, properties = properties, status = status, statusChangedOn = statusChangedOn, systemCapabilities = systemCapabilities, userCapabilities = userCapabilities, version = version)
+  
     __obj.asInstanceOf[TaskAgent]
   }
 }

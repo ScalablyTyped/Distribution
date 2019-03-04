@@ -13,8 +13,7 @@ trait WebSocketOptions extends js.Object {
 object WebSocketOptions {
   @scala.inline
   def apply(url: java.lang.String, autoOpen: js.UndefOr[scala.Boolean] = js.undefined): WebSocketOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
     __obj.asInstanceOf[WebSocketOptions]
   }

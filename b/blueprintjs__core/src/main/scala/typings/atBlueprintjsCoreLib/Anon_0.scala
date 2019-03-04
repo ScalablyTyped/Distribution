@@ -22,12 +22,8 @@ object Anon_0 {
     TWO: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`2`,
     ZERO: atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`0`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FOUR")(FOUR)
-    __obj.updateDynamic("ONE")(ONE)
-    __obj.updateDynamic("THREE")(THREE)
-    __obj.updateDynamic("TWO")(TWO)
-    __obj.updateDynamic("ZERO")(ZERO)
+    val __obj = js.Dynamic.literal(FOUR = FOUR, ONE = ONE, THREE = THREE, TWO = TWO, ZERO = ZERO)
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

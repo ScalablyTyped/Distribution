@@ -42,8 +42,7 @@ object IAppConfig {
     openWithoutData: js.UndefOr[scala.Boolean] = js.undefined,
     prefix: java.lang.String = null
   ): IAppConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)
     if (identity != null) __obj.updateDynamic("identity")(identity)
     if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure)

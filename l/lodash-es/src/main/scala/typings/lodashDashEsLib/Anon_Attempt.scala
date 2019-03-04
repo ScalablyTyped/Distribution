@@ -76,39 +76,8 @@ object Anon_Attempt {
     toPath: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toPath */ js.Any,
     uniqueId: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof uniqueId */ js.Any
   ): Anon_Attempt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attempt")(attempt)
-    __obj.updateDynamic("bindAll")(bindAll)
-    __obj.updateDynamic("cond")(cond)
-    __obj.updateDynamic("conforms")(conforms)
-    __obj.updateDynamic("constant")(constant)
-    __obj.updateDynamic("defaultTo")(defaultTo)
-    __obj.updateDynamic("flow")(flow)
-    __obj.updateDynamic("flowRight")(flowRight)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("iteratee")(iteratee)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("matchesProperty")(matchesProperty)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("methodOf")(methodOf)
-    __obj.updateDynamic("mixin")(mixin)
-    __obj.updateDynamic("noop")(noop)
-    __obj.updateDynamic("nthArg")(nthArg)
-    __obj.updateDynamic("over")(over)
-    __obj.updateDynamic("overEvery")(overEvery)
-    __obj.updateDynamic("overSome")(overSome)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("propertyOf")(propertyOf)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("rangeRight")(rangeRight)
-    __obj.updateDynamic("stubArray")(stubArray)
-    __obj.updateDynamic("stubFalse")(stubFalse)
-    __obj.updateDynamic("stubObject")(stubObject)
-    __obj.updateDynamic("stubString")(stubString)
-    __obj.updateDynamic("stubTrue")(stubTrue)
-    __obj.updateDynamic("times")(times)
-    __obj.updateDynamic("toPath")(toPath)
-    __obj.updateDynamic("uniqueId")(uniqueId)
+    val __obj = js.Dynamic.literal(attempt = attempt, bindAll = bindAll, cond = cond, conforms = conforms, constant = constant, defaultTo = defaultTo, flow = flow, flowRight = flowRight, identity = identity, iteratee = iteratee, matches = matches, matchesProperty = matchesProperty, method = method, methodOf = methodOf, mixin = mixin, noop = noop, nthArg = nthArg, over = over, overEvery = overEvery, overSome = overSome, property = property, propertyOf = propertyOf, range = range, rangeRight = rangeRight, stubArray = stubArray, stubFalse = stubFalse, stubObject = stubObject, stubString = stubString, stubTrue = stubTrue, times = times, toPath = toPath, uniqueId = uniqueId)
+  
     __obj.asInstanceOf[Anon_Attempt]
   }
 }

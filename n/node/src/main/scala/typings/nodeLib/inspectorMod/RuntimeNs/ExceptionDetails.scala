@@ -61,11 +61,7 @@ object ExceptionDetails {
     stackTrace: StackTrace = null,
     url: java.lang.String = null
   ): ExceptionDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnNumber")(columnNumber)
-    __obj.updateDynamic("exceptionId")(exceptionId)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber, exceptionId = exceptionId, lineNumber = lineNumber, text = text)
     if (exception != null) __obj.updateDynamic("exception")(exception)
     if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
     if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId)

@@ -32,10 +32,8 @@ trait APIGroupList extends js.Object {
 object APIGroupList {
   @scala.inline
   def apply(apiVersion: java.lang.String, groups: js.Array[APIGroup], kind: java.lang.String): APIGroupList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, groups = groups, kind = kind)
+  
     __obj.asInstanceOf[APIGroupList]
   }
 }

@@ -16,9 +16,8 @@ object GraphQLConnectionDefinitions {
     connectionType: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     edgeType: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): GraphQLConnectionDefinitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionType")(connectionType)
-    __obj.updateDynamic("edgeType")(edgeType)
+    val __obj = js.Dynamic.literal(connectionType = connectionType, edgeType = edgeType)
+  
     __obj.asInstanceOf[GraphQLConnectionDefinitions]
   }
 }

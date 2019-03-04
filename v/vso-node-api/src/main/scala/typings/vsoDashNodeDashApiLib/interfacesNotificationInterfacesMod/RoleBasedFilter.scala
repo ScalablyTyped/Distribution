@@ -19,11 +19,8 @@ object RoleBasedFilter {
     inclusions: js.Array[java.lang.String],
     `type`: java.lang.String
   ): RoleBasedFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("criteria")(criteria)
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("exclusions")(exclusions)
-    __obj.updateDynamic("inclusions")(inclusions)
+    val __obj = js.Dynamic.literal(criteria = criteria, eventType = eventType, exclusions = exclusions, inclusions = inclusions)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RoleBasedFilter]
   }
 }

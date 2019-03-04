@@ -12,9 +12,8 @@ trait MessageIdentifier extends QueueIdentifier {
 object MessageIdentifier {
   @scala.inline
   def apply(id: java.lang.String, qname: java.lang.String): MessageIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("qname")(qname)
+    val __obj = js.Dynamic.literal(id = id, qname = qname)
+  
     __obj.asInstanceOf[MessageIdentifier]
   }
 }

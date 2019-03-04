@@ -25,10 +25,7 @@ object SchedulerMoveEndEvent {
     slot: js.Any = null,
     start: stdLib.Date = null
   ): SchedulerMoveEndEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (end != null) __obj.updateDynamic("end")(end)
     if (event != null) __obj.updateDynamic("event")(event)
     if (resources != null) __obj.updateDynamic("resources")(resources)

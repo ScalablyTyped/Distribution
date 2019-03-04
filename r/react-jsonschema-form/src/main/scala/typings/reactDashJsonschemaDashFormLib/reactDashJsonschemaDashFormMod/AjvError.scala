@@ -22,12 +22,8 @@ object AjvError {
     property: java.lang.String,
     stack: java.lang.String
   ): AjvError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message, name = name, params = params, property = property, stack = stack)
+  
     __obj.asInstanceOf[AjvError]
   }
 }

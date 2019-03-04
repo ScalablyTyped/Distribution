@@ -61,10 +61,8 @@ object ITileLayer {
       heremapsLib.HNs.mapNs.layerNs.ITileLayerNs.Response
     ]
   ): ITileLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelTile")(cancelTile)
-    __obj.updateDynamic("requestTile")(requestTile)
-    __obj.updateDynamic("requestTiles")(requestTiles)
+    val __obj = js.Dynamic.literal(cancelTile = cancelTile, requestTile = requestTile, requestTiles = requestTiles)
+  
     __obj.asInstanceOf[ITileLayer]
   }
 }

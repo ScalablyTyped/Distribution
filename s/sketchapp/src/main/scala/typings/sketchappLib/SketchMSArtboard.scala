@@ -28,10 +28,7 @@ object SketchMSArtboard {
     isFlowHome: js.UndefOr[scala.Boolean] = js.undefined,
     verticalRulerData: SketchMSRulerData = null
   ): SketchMSArtboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("frame")(frame)
-    __obj.updateDynamic("hasBackgroundColor")(hasBackgroundColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, frame = frame, hasBackgroundColor = hasBackgroundColor)
     if (horizontalRulerData != null) __obj.updateDynamic("horizontalRulerData")(horizontalRulerData)
     if (!js.isUndefined(includeBackgroundColorInExport)) __obj.updateDynamic("includeBackgroundColorInExport")(includeBackgroundColorInExport)
     if (!js.isUndefined(includeInCloudUpload)) __obj.updateDynamic("includeInCloudUpload")(includeInCloudUpload)

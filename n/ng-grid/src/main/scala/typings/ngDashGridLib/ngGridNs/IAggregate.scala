@@ -46,24 +46,8 @@ object IAggregate {
     rowHeight: scala.Double,
     rowIndex: scala.Double
   ): IAggregate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggChildren")(aggChildren)
-    __obj.updateDynamic("aggIndex")(aggIndex)
-    __obj.updateDynamic("aggLabelFilter")(aggLabelFilter)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("collapsed")(collapsed)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("groupInitState")(groupInitState)
-    __obj.updateDynamic("isAggRow")(isAggRow)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("offsetLeft")(offsetLeft)
-    __obj.updateDynamic("offsetTop")(offsetTop)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("rowFactory")(rowFactory)
-    __obj.updateDynamic("rowHeight")(rowHeight)
-    __obj.updateDynamic("rowIndex")(rowIndex)
+    val __obj = js.Dynamic.literal(aggChildren = aggChildren, aggIndex = aggIndex, aggLabelFilter = aggLabelFilter, children = children, collapsed = collapsed, depth = depth, entity = entity, field = field, groupInitState = groupInitState, isAggRow = isAggRow, label = label, offsetLeft = offsetLeft, offsetTop = offsetTop, parent = parent, rowFactory = rowFactory, rowHeight = rowHeight, rowIndex = rowIndex)
+  
     __obj.asInstanceOf[IAggregate]
   }
 }

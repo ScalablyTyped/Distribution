@@ -20,8 +20,7 @@ object Topic {
     encoding: java.lang.String = null,
     offset: scala.Int | scala.Double = null
   ): Topic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(topic = topic)
     if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

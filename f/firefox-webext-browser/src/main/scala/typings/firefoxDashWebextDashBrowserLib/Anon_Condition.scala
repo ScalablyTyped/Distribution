@@ -31,8 +31,7 @@ object Anon_Condition {
     purpose: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose = null,
     value: java.lang.String = null
   ): Anon_Condition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (pref != null) __obj.updateDynamic("pref")(pref)
     if (purpose != null) __obj.updateDynamic("purpose")(purpose)

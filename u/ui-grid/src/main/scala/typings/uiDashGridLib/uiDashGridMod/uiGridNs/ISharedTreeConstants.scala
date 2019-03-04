@@ -20,11 +20,8 @@ object ISharedTreeConstants {
     aggregation: uiDashGridLib.Anon_AVG,
     rowHeaderColName: java.lang.String
   ): ISharedTreeConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("COLLAPSED")(COLLAPSED)
-    __obj.updateDynamic("EXPANDED")(EXPANDED)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("rowHeaderColName")(rowHeaderColName)
+    val __obj = js.Dynamic.literal(COLLAPSED = COLLAPSED, EXPANDED = EXPANDED, aggregation = aggregation, rowHeaderColName = rowHeaderColName)
+  
     __obj.asInstanceOf[ISharedTreeConstants]
   }
 }

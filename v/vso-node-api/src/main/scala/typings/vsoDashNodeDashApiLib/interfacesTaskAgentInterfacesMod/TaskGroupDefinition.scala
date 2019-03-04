@@ -22,12 +22,8 @@ object TaskGroupDefinition {
     tags: js.Array[java.lang.String],
     visibleRule: java.lang.String
   ): TaskGroupDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("isExpanded")(isExpanded)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("visibleRule")(visibleRule)
+    val __obj = js.Dynamic.literal(displayName = displayName, isExpanded = isExpanded, name = name, tags = tags, visibleRule = visibleRule)
+  
     __obj.asInstanceOf[TaskGroupDefinition]
   }
 }

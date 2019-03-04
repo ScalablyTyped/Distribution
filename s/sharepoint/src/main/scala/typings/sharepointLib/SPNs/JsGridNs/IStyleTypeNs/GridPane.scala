@@ -48,25 +48,8 @@ object GridPane {
     verticalBorderStyle: js.Any,
     visitedLinkColor: js.Any
   ): GridPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("changeHighlightCellBgColor")(changeHighlightCellBgColor)
-    __obj.updateDynamic("columnDropIndicatorColor")(columnDropIndicatorColor)
-    __obj.updateDynamic("copyRectBackBorderColor")(copyRectBackBorderColor)
-    __obj.updateDynamic("copyRectForeBorderColor")(copyRectForeBorderColor)
-    __obj.updateDynamic("errorRectBorderColor")(errorRectBorderColor)
-    __obj.updateDynamic("fillRectBorderColor")(fillRectBorderColor)
-    __obj.updateDynamic("focusRectBorderColor")(focusRectBorderColor)
-    __obj.updateDynamic("horizontalBorderColor")(horizontalBorderColor)
-    __obj.updateDynamic("horizontalBorderStyle")(horizontalBorderStyle)
-    __obj.updateDynamic("linkColor")(linkColor)
-    __obj.updateDynamic("readonlySelectionRectBorderColor")(readonlySelectionRectBorderColor)
-    __obj.updateDynamic("rowDropIndicatorColor")(rowDropIndicatorColor)
-    __obj.updateDynamic("selectedCellBgColor")(selectedCellBgColor)
-    __obj.updateDynamic("selectionRectBorderColor")(selectionRectBorderColor)
-    __obj.updateDynamic("verticalBorderColor")(verticalBorderColor)
-    __obj.updateDynamic("verticalBorderStyle")(verticalBorderStyle)
-    __obj.updateDynamic("visitedLinkColor")(visitedLinkColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, changeHighlightCellBgColor = changeHighlightCellBgColor, columnDropIndicatorColor = columnDropIndicatorColor, copyRectBackBorderColor = copyRectBackBorderColor, copyRectForeBorderColor = copyRectForeBorderColor, errorRectBorderColor = errorRectBorderColor, fillRectBorderColor = fillRectBorderColor, focusRectBorderColor = focusRectBorderColor, horizontalBorderColor = horizontalBorderColor, horizontalBorderStyle = horizontalBorderStyle, linkColor = linkColor, readonlySelectionRectBorderColor = readonlySelectionRectBorderColor, rowDropIndicatorColor = rowDropIndicatorColor, selectedCellBgColor = selectedCellBgColor, selectionRectBorderColor = selectionRectBorderColor, verticalBorderColor = verticalBorderColor, verticalBorderStyle = verticalBorderStyle, visitedLinkColor = visitedLinkColor)
+  
     __obj.asInstanceOf[GridPane]
   }
 }

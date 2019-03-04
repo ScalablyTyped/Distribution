@@ -63,14 +63,8 @@ object Intersection {
     location: Coordinate,
     out: scala.Double
   ): Intersection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bearings")(bearings)
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("entry")(entry)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("lanes")(lanes)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("out")(out)
+    val __obj = js.Dynamic.literal(bearings = bearings, classes = classes, entry = entry, in = in, lanes = lanes, location = location, out = out)
+  
     __obj.asInstanceOf[Intersection]
   }
 }

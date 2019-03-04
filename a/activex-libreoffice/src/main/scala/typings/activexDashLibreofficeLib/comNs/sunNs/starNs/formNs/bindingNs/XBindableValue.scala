@@ -35,13 +35,8 @@ object XBindableValue {
     release: js.Function0[scala.Unit],
     setValueBinding: js.Function1[XValueBinding, scala.Unit]
   ): XBindableValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ValueBinding")(ValueBinding)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getValueBinding")(getValueBinding)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValueBinding")(setValueBinding)
+    val __obj = js.Dynamic.literal(ValueBinding = ValueBinding, acquire = acquire, getValueBinding = getValueBinding, queryInterface = queryInterface, release = release, setValueBinding = setValueBinding)
+  
     __obj.asInstanceOf[XBindableValue]
   }
 }

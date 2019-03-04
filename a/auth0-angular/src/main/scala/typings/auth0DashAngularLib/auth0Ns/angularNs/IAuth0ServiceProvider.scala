@@ -24,9 +24,8 @@ object IAuth0ServiceProvider {
     init: js.Function1[IAuth0ClientOptions, scala.Unit],
     on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Unit]
   ): IAuth0ServiceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(init = init, on = on)
+  
     __obj.asInstanceOf[IAuth0ServiceProvider]
   }
 }

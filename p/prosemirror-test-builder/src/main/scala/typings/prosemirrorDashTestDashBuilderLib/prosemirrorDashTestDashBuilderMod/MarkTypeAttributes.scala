@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 object MarkTypeAttributes {
   @scala.inline
   def apply(markType: java.lang.String): MarkTypeAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markType")(markType)
+    val __obj = js.Dynamic.literal(markType = markType)
+  
     __obj.asInstanceOf[MarkTypeAttributes]
   }
 }

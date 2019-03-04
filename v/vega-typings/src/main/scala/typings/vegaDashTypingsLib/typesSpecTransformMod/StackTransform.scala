@@ -26,7 +26,8 @@ object StackTransform {
     offset: StackOffset = null,
     sort: vegaDashTypingsLib.typesSpecMarkMod.Compare = null
   ): StackTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby)

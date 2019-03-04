@@ -20,10 +20,8 @@ object WhereBinary {
     quantifier: java.lang.String,
     `val`: js.Any
   ): WhereBinary = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("quantifier")(quantifier)
+    val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op, quantifier = quantifier)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[WhereBinary]
   }
 }

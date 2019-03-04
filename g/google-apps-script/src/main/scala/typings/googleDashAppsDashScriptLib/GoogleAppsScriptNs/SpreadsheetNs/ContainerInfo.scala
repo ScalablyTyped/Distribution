@@ -20,11 +20,8 @@ object ContainerInfo {
     getOffsetX: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     getOffsetY: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer]
   ): ContainerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAnchorColumn")(getAnchorColumn)
-    __obj.updateDynamic("getAnchorRow")(getAnchorRow)
-    __obj.updateDynamic("getOffsetX")(getOffsetX)
-    __obj.updateDynamic("getOffsetY")(getOffsetY)
+    val __obj = js.Dynamic.literal(getAnchorColumn = getAnchorColumn, getAnchorRow = getAnchorRow, getOffsetX = getOffsetX, getOffsetY = getOffsetY)
+  
     __obj.asInstanceOf[ContainerInfo]
   }
 }

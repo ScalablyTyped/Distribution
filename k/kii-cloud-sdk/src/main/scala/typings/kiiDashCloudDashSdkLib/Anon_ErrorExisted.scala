@@ -13,9 +13,8 @@ trait Anon_ErrorExisted extends js.Object {
 object Anon_ErrorExisted {
   @scala.inline
   def apply(failure: js.Function1[stdLib.Error, js.Any], success: js.Function1[scala.Boolean, js.Any]): Anon_ErrorExisted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_ErrorExisted]
   }
 }

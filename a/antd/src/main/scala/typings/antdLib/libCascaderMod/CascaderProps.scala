@@ -106,8 +106,7 @@ object CascaderProps {
     suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
     value: js.Array[java.lang.String] = null
   ): CascaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
     if (!js.isUndefined(changeOnSelect)) __obj.updateDynamic("changeOnSelect")(changeOnSelect)
     if (className != null) __obj.updateDynamic("className")(className)

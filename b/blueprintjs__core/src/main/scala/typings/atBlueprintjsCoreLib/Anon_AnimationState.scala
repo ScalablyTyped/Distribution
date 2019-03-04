@@ -16,9 +16,8 @@ object Anon_AnimationState {
     animationState: atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.AnimationStates,
     height: java.lang.String
   ): Anon_AnimationState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationState")(animationState)
-    __obj.updateDynamic("height")(height)
+    val __obj = js.Dynamic.literal(animationState = animationState, height = height)
+  
     __obj.asInstanceOf[Anon_AnimationState]
   }
 }

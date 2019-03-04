@@ -27,14 +27,8 @@ object cssClasses {
     ROOT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar`,
     TEXT: atMaterialSnackbarLib.atMaterialSnackbarLibStrings.`mdc-snackbar__text`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACTION_BUTTON")(ACTION_BUTTON)
-    __obj.updateDynamic("ACTION_ON_BOTTOM")(ACTION_ON_BOTTOM)
-    __obj.updateDynamic("ACTION_WRAPPER")(ACTION_WRAPPER)
-    __obj.updateDynamic("ACTIVE")(ACTIVE)
-    __obj.updateDynamic("MULTILINE")(MULTILINE)
-    __obj.updateDynamic("ROOT")(ROOT)
-    __obj.updateDynamic("TEXT")(TEXT)
+    val __obj = js.Dynamic.literal(ACTION_BUTTON = ACTION_BUTTON, ACTION_ON_BOTTOM = ACTION_ON_BOTTOM, ACTION_WRAPPER = ACTION_WRAPPER, ACTIVE = ACTIVE, MULTILINE = MULTILINE, ROOT = ROOT, TEXT = TEXT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

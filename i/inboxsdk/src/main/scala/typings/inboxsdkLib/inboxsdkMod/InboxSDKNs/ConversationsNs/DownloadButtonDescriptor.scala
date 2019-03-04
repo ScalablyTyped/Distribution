@@ -20,9 +20,7 @@ object DownloadButtonDescriptor {
     downloadFilename: java.lang.String = null,
     openInNewTab: js.UndefOr[scala.Boolean] = js.undefined
   ): DownloadButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downloadUrl")(downloadUrl)
-    __obj.updateDynamic("onClick")(onClick)
+    val __obj = js.Dynamic.literal(downloadUrl = downloadUrl, onClick = onClick)
     if (downloadFilename != null) __obj.updateDynamic("downloadFilename")(downloadFilename)
     if (!js.isUndefined(openInNewTab)) __obj.updateDynamic("openInNewTab")(openInNewTab)
     __obj.asInstanceOf[DownloadButtonDescriptor]

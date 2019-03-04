@@ -20,10 +20,7 @@ object Anon_After {
     reference: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_After = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(item = item, position = position.asInstanceOf[js.Any], reference = reference)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_After]
   }

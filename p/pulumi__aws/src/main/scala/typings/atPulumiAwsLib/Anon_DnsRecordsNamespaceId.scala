@@ -18,9 +18,7 @@ object Anon_DnsRecordsNamespaceId {
     namespaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     routingPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DnsRecordsNamespaceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dnsRecords")(dnsRecords.asInstanceOf[js.Any])
-    __obj.updateDynamic("namespaceId")(namespaceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dnsRecords = dnsRecords.asInstanceOf[js.Any], namespaceId = namespaceId.asInstanceOf[js.Any])
     if (routingPolicy != null) __obj.updateDynamic("routingPolicy")(routingPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DnsRecordsNamespaceId]
   }

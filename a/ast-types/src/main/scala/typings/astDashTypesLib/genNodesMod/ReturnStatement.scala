@@ -21,7 +21,8 @@ object ReturnStatement {
     `type`: astDashTypesLib.astDashTypesLibStrings.ReturnStatement,
     argument: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): ReturnStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (argument != null) __obj.updateDynamic("argument")(argument)
     __obj.asInstanceOf[ReturnStatement]
   }

@@ -20,11 +20,8 @@ object IgSliderMethods {
     value: js.Function1[js.Object, scala.Unit],
     widget: js.Function0[scala.Unit]
   ): IgSliderMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearBookmarks")(clearBookmarks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(clearBookmarks = clearBookmarks, destroy = destroy, value = value, widget = widget)
+  
     __obj.asInstanceOf[IgSliderMethods]
   }
 }

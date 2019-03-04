@@ -24,11 +24,7 @@ object PlatformClientResponse {
     data: T = null,
     request: js.Any = null
   ): PlatformClientResponse[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(config = config, headers = headers, status = status, statusText = statusText)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request)
     __obj.asInstanceOf[PlatformClientResponse[T]]

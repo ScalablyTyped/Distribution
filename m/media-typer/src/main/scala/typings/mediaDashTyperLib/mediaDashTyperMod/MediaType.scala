@@ -14,8 +14,8 @@ trait MediaType extends js.Object {
 object MediaType {
   @scala.inline
   def apply(subtype: java.lang.String, `type`: java.lang.String, suffix: java.lang.String = null): MediaType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("subtype")(subtype)
+    val __obj = js.Dynamic.literal(subtype = subtype)
+    __obj.updateDynamic("type")(`type`)
     if (suffix != null) __obj.updateDynamic("suffix")(suffix)
     __obj.asInstanceOf[MediaType]
   }

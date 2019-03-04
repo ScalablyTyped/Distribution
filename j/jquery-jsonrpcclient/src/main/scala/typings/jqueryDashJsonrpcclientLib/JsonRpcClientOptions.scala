@@ -68,8 +68,7 @@ object JsonRpcClientOptions {
     xhr: js.Function0[stdLib.XMLHttpRequest] = null,
     xhrFields: jqueryLib.JQueryNs.AjaxNs.XHRFields = null
   ): JsonRpcClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ajaxUrl")(ajaxUrl)
+    val __obj = js.Dynamic.literal(ajaxUrl = ajaxUrl)
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)

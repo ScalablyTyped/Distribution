@@ -12,7 +12,7 @@ trait LodashUniqBy extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     array: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashUniqBy1x2[T] = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashUniqBy1x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__): LodashUniqBy1x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashUniqBy1x2[T] = js.native
 }
 

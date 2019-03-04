@@ -27,10 +27,8 @@ object UseBackupException {
     Message: java.lang.String,
     TemporaryFileURL: java.lang.String
   ): UseBackupException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("TemporaryFileURL")(TemporaryFileURL)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, TemporaryFileURL = TemporaryFileURL)
+  
     __obj.asInstanceOf[UseBackupException]
   }
 }

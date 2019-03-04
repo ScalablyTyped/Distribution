@@ -23,9 +23,8 @@ object AclOptions {
       scala.Unit
     ]
   ): AclOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathPrefix")(pathPrefix)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(pathPrefix = pathPrefix, request = request)
+  
     __obj.asInstanceOf[AclOptions]
   }
 }

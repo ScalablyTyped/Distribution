@@ -24,11 +24,8 @@ object Anon_Area {
       js.Array[js.Array[scala.Double]]
     ]
   ): Anon_Area = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("isClockWise")(isClockWise)
-    __obj.updateDynamic("triangulate")(triangulate)
-    __obj.updateDynamic("triangulateShape")(triangulateShape)
+    val __obj = js.Dynamic.literal(area = area, isClockWise = isClockWise, triangulate = triangulate, triangulateShape = triangulateShape)
+  
     __obj.asInstanceOf[Anon_Area]
   }
 }

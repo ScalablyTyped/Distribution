@@ -12,8 +12,8 @@ trait Anon_DecodeStrings extends js.Object {
 object Anon_DecodeStrings {
   @scala.inline
   def apply(decodeStrings: adoneLib.adoneLibNumbers.`false`): Anon_DecodeStrings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decodeStrings")(decodeStrings)
+    val __obj = js.Dynamic.literal(decodeStrings = decodeStrings)
+  
     __obj.asInstanceOf[Anon_DecodeStrings]
   }
 }

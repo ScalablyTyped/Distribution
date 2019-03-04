@@ -40,21 +40,8 @@ object PositionedImage {
     setTopOffset: js.Function1[stdLib.Number, PositionedImage],
     setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, PositionedImage]
   ): PositionedImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getLayout")(getLayout)
-    __obj.updateDynamic("getLeftOffset")(getLeftOffset)
-    __obj.updateDynamic("getParagraph")(getParagraph)
-    __obj.updateDynamic("getTopOffset")(getTopOffset)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setLayout")(setLayout)
-    __obj.updateDynamic("setLeftOffset")(setLeftOffset)
-    __obj.updateDynamic("setTopOffset")(setTopOffset)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob, getHeight = getHeight, getId = getId, getLayout = getLayout, getLeftOffset = getLeftOffset, getParagraph = getParagraph, getTopOffset = getTopOffset, getWidth = getWidth, setHeight = setHeight, setLayout = setLayout, setLeftOffset = setLeftOffset, setTopOffset = setTopOffset, setWidth = setWidth)
+  
     __obj.asInstanceOf[PositionedImage]
   }
 }

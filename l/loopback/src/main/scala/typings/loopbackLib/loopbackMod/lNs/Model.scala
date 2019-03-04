@@ -131,11 +131,8 @@ object Model {
     ],
     settings: Settings
   ): Model = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterRemote")(afterRemote)
-    __obj.updateDynamic("afterRemoteError")(afterRemoteError)
-    __obj.updateDynamic("beforeRemote")(beforeRemote)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(afterRemote = afterRemote, afterRemoteError = afterRemoteError, beforeRemote = beforeRemote, settings = settings)
+  
     __obj.asInstanceOf[Model]
   }
 }

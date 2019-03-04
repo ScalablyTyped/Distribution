@@ -13,8 +13,8 @@ trait FlexLayout extends js.Object {
 object FlexLayout {
   @scala.inline
   def apply($getSize: js.Array[_]): FlexLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$getSize")($getSize)
+    val __obj = js.Dynamic.literal($getSize = $getSize)
+  
     __obj.asInstanceOf[FlexLayout]
   }
 }

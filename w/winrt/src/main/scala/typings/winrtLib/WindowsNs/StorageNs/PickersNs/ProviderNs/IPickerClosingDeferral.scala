@@ -12,8 +12,8 @@ trait IPickerClosingDeferral extends js.Object {
 object IPickerClosingDeferral {
   @scala.inline
   def apply(complete: js.Function0[scala.Unit]): IPickerClosingDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[IPickerClosingDeferral]
   }
 }

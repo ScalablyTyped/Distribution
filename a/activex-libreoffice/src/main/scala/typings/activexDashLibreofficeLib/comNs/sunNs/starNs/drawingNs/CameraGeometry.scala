@@ -18,10 +18,8 @@ trait CameraGeometry extends js.Object {
 object CameraGeometry {
   @scala.inline
   def apply(vpn: Direction3D, vrp: Position3D, vup: Direction3D): CameraGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vpn")(vpn)
-    __obj.updateDynamic("vrp")(vrp)
-    __obj.updateDynamic("vup")(vup)
+    val __obj = js.Dynamic.literal(vpn = vpn, vrp = vrp, vup = vup)
+  
     __obj.asInstanceOf[CameraGeometry]
   }
 }

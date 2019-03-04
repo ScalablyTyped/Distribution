@@ -35,11 +35,8 @@ object IErrorData {
     qLine: java.lang.String,
     qLineEnd: java.lang.String
   ): IErrorData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qErrorDataCode")(qErrorDataCode)
-    __obj.updateDynamic("qErrorString")(qErrorString)
-    __obj.updateDynamic("qLine")(qLine)
-    __obj.updateDynamic("qLineEnd")(qLineEnd)
+    val __obj = js.Dynamic.literal(qErrorDataCode = qErrorDataCode, qErrorString = qErrorString, qLine = qLine, qLineEnd = qLineEnd)
+  
     __obj.asInstanceOf[IErrorData]
   }
 }

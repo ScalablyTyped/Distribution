@@ -13,9 +13,8 @@ trait Anon_ItemsReturnValue extends js.Object {
 object Anon_ItemsReturnValue {
   @scala.inline
   def apply(items: winrtDashUwpLib.WindowsNs.FoundationNs.IWwwFormUrlDecoderEntry, returnValue: scala.Double): Anon_ItemsReturnValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValue]
   }
 }

@@ -122,18 +122,8 @@ object CoursesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Course]
     ]
   ): CoursesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("announcements")(announcements)
-    __obj.updateDynamic("courseWork")(courseWork)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("students")(students)
-    __obj.updateDynamic("teachers")(teachers)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(aliases = aliases, announcements = announcements, courseWork = courseWork, create = create, delete = delete, get = get, list = list, patch = patch, students = students, teachers = teachers, update = update)
+  
     __obj.asInstanceOf[CoursesResource]
   }
 }

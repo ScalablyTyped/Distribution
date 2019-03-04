@@ -28,15 +28,8 @@ object GeoTrackingInfo {
     RegionISOCode: java.lang.String,
     Zip: java.lang.String
   ): GeoTrackingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("City")(City)
-    __obj.updateDynamic("Coords")(Coords)
-    __obj.updateDynamic("Country")(Country)
-    __obj.updateDynamic("CountryISOCode")(CountryISOCode)
-    __obj.updateDynamic("IP")(IP)
-    __obj.updateDynamic("Region")(Region)
-    __obj.updateDynamic("RegionISOCode")(RegionISOCode)
-    __obj.updateDynamic("Zip")(Zip)
+    val __obj = js.Dynamic.literal(City = City, Coords = Coords, Country = Country, CountryISOCode = CountryISOCode, IP = IP, Region = Region, RegionISOCode = RegionISOCode, Zip = Zip)
+  
     __obj.asInstanceOf[GeoTrackingInfo]
   }
 }

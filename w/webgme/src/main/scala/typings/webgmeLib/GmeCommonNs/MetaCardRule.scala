@@ -14,10 +14,8 @@ trait MetaCardRule extends js.Object {
 object MetaCardRule {
   @scala.inline
   def apply(items: js.Array[Path], maxItems: js.Array[scala.Double], minItems: js.Array[scala.Double]): MetaCardRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("maxItems")(maxItems)
-    __obj.updateDynamic("minItems")(minItems)
+    val __obj = js.Dynamic.literal(items = items, maxItems = maxItems, minItems = minItems)
+  
     __obj.asInstanceOf[MetaCardRule]
   }
 }

@@ -75,16 +75,8 @@ object Anon_Actual {
     useColors: scala.Boolean,
     window: Anon_Width
   ): Anon_Actual = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("cursorNs")(cursorNs)
-    __obj.updateDynamic("generateDiff")(generateDiff)
-    __obj.updateDynamic("inlineDiffs")(inlineDiffs)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("useColors")(useColors)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(color = color, colors = colors, cursorNs = cursorNs, generateDiff = generateDiff, inlineDiffs = inlineDiffs, list = list, symbols = symbols, useColors = useColors, window = window)
+  
     __obj.asInstanceOf[Anon_Actual]
   }
 }

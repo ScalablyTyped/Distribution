@@ -34,9 +34,7 @@ object ImageWMSOptions {
     serverType: openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType | java.lang.String = null,
     url: java.lang.String = null
   ): ImageWMSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(params = params, projection = projection.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
     if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)

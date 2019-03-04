@@ -15,10 +15,8 @@ trait NodeContext extends js.Object {
 object NodeContext {
   @scala.inline
   def apply(itemIndex: scala.Double, sectionIndexPath: js.Array[scala.Double], subId: java.lang.String): NodeContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemIndex")(itemIndex)
-    __obj.updateDynamic("sectionIndexPath")(sectionIndexPath)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(itemIndex = itemIndex, sectionIndexPath = sectionIndexPath, subId = subId)
+  
     __obj.asInstanceOf[NodeContext]
   }
 }

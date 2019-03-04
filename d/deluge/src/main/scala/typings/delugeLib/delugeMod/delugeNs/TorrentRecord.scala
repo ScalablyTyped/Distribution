@@ -20,11 +20,8 @@ object TorrentRecord {
     stats: DelugeStats,
     torrents: org.scalablytyped.runtime.StringDictionary[Torrent]
   ): TorrentRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("torrents")(torrents)
+    val __obj = js.Dynamic.literal(connected = connected, filters = filters, stats = stats, torrents = torrents)
+  
     __obj.asInstanceOf[TorrentRecord]
   }
 }

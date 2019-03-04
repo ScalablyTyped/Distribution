@@ -30,16 +30,8 @@ object Task {
     scheduleTime: java.lang.String,
     view: View
   ): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest)
-    __obj.updateDynamic("createTime")(createTime)
-    __obj.updateDynamic("dispatchCount")(dispatchCount)
-    __obj.updateDynamic("firstAttempt")(firstAttempt)
-    __obj.updateDynamic("lastAttempt")(lastAttempt)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("responseCount")(responseCount)
-    __obj.updateDynamic("scheduleTime")(scheduleTime)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(appEngineHttpRequest = appEngineHttpRequest, createTime = createTime, dispatchCount = dispatchCount, firstAttempt = firstAttempt, lastAttempt = lastAttempt, name = name, responseCount = responseCount, scheduleTime = scheduleTime, view = view)
+  
     __obj.asInstanceOf[Task]
   }
 }

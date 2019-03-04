@@ -42,22 +42,8 @@ object HyperCube {
     qStackedDataPages: js.Array[NxStackPage],
     qStateName: java.lang.String
   ): HyperCube = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDataPages")(qDataPages)
-    __obj.updateDynamic("qDimensionInfo")(qDimensionInfo)
-    __obj.updateDynamic("qEffectiveInterColumnSortOrder")(qEffectiveInterColumnSortOrder)
-    __obj.updateDynamic("qError")(qError)
-    __obj.updateDynamic("qGrandTotalRow")(qGrandTotalRow)
-    __obj.updateDynamic("qHasOtherValues")(qHasOtherValues)
-    __obj.updateDynamic("qIndentMode")(qIndentMode)
-    __obj.updateDynamic("qLastExpandedPos")(qLastExpandedPos)
-    __obj.updateDynamic("qMeasureInfo")(qMeasureInfo)
-    __obj.updateDynamic("qMode")(qMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("qNoOfLeftDims")(qNoOfLeftDims)
-    __obj.updateDynamic("qPivotDataPages")(qPivotDataPages)
-    __obj.updateDynamic("qSize")(qSize)
-    __obj.updateDynamic("qStackedDataPages")(qStackedDataPages)
-    __obj.updateDynamic("qStateName")(qStateName)
+    val __obj = js.Dynamic.literal(qDataPages = qDataPages, qDimensionInfo = qDimensionInfo, qEffectiveInterColumnSortOrder = qEffectiveInterColumnSortOrder, qError = qError, qGrandTotalRow = qGrandTotalRow, qHasOtherValues = qHasOtherValues, qIndentMode = qIndentMode, qLastExpandedPos = qLastExpandedPos, qMeasureInfo = qMeasureInfo, qMode = qMode.asInstanceOf[js.Any], qNoOfLeftDims = qNoOfLeftDims, qPivotDataPages = qPivotDataPages, qSize = qSize, qStackedDataPages = qStackedDataPages, qStateName = qStateName)
+  
     __obj.asInstanceOf[HyperCube]
   }
 }

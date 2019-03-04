@@ -21,9 +21,8 @@ object Anon_Classic {
       relayDashRuntimeLib.relayDashRuntimeMod.ConcreteFragment | relayDashRuntimeLib.relayDashRuntimeMod.RequestNode
     ]
   ): Anon_Classic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classic")(classic)
-    __obj.updateDynamic("modern")(modern)
+    val __obj = js.Dynamic.literal(classic = classic, modern = modern)
+  
     __obj.asInstanceOf[Anon_Classic]
   }
 }

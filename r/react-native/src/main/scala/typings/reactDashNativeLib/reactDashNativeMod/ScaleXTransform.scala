@@ -12,8 +12,8 @@ trait ScaleXTransform extends js.Object {
 object ScaleXTransform {
   @scala.inline
   def apply(scaleX: scala.Double): ScaleXTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scaleX")(scaleX)
+    val __obj = js.Dynamic.literal(scaleX = scaleX)
+  
     __obj.asInstanceOf[ScaleXTransform]
   }
 }

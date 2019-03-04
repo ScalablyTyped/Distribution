@@ -47,34 +47,8 @@ object Footnote {
     setLabel: js.Function1[java.lang.String, scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): Footnote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("ReferenceId")(ReferenceId)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("createTextCursor")(createTextCursor)
-    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
-    __obj.updateDynamic("insertString")(insertString)
-    __obj.updateDynamic("insertTextContent")(insertTextContent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeTextContent")(removeTextContent)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, End = End, Label = Label, ReferenceId = ReferenceId, Start = Start, String = String, acquire = acquire, addEventListener = addEventListener, attach = attach, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, dispose = dispose, getAnchor = getAnchor, getEnd = getEnd, getLabel = getLabel, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeTextContent = removeTextContent, setLabel = setLabel, setString = setString)
+  
     __obj.asInstanceOf[Footnote]
   }
 }

@@ -26,14 +26,8 @@ object Anon_Awards {
     skills: js.Array[java.lang.String],
     teams: js.Array[java.lang.String]
   ): Anon_Awards = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awards")(awards)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("rankings")(rankings)
-    __obj.updateDynamic("season_rankings")(season_rankings)
-    __obj.updateDynamic("skills")(skills)
-    __obj.updateDynamic("teams")(teams)
+    val __obj = js.Dynamic.literal(awards = awards, events = events, matches = matches, rankings = rankings, season_rankings = season_rankings, skills = skills, teams = teams)
+  
     __obj.asInstanceOf[Anon_Awards]
   }
 }

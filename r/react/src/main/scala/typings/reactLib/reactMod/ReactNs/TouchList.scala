@@ -20,10 +20,7 @@ object TouchList {
     length: scala.Double,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Touch] = null
   ): TouchList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifiedTouch")(identifiedTouch)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(identifiedTouch = identifiedTouch, item = item, length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[TouchList]
   }

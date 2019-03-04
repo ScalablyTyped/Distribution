@@ -8,20 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RevealComponent
   extends reactLib.reactMod.ReactNs.FunctionComponent[RevealProps] {
-  @JSName("Content")
-  var Content_Original: reactLib.reactMod.ReactNs.StatelessComponent[
+  var Content: reactLib.reactMod.ReactNs.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps
   ] = js.native
-  def Content(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[
-      semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps
-    ]
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def Content(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[
-      semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps
-    ],
-    context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

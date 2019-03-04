@@ -36,9 +36,7 @@ object ResourceOptions {
     sort: ResourceSortOption = null,
     updateMethod: java.lang.String = null
   ): ResourceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(endpoints = endpoints, model = model)
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (associations != null) __obj.updateDynamic("associations")(associations)
     if (excludeAttributes != null) __obj.updateDynamic("excludeAttributes")(excludeAttributes)

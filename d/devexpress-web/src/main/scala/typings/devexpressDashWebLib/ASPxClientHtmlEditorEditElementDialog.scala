@@ -58,18 +58,8 @@ object ASPxClientHtmlEditorEditElementDialog {
     GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
     GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
   ): ASPxClientHtmlEditorEditElementDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
-    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
-    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
-    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
-    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
+    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetLeftMarginTextBox = GetLeftMarginTextBox, GetOkButton = GetOkButton, GetRightMarginTextBox = GetRightMarginTextBox, GetTopMarginTextBox = GetTopMarginTextBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorEditElementDialog]
   }
 }

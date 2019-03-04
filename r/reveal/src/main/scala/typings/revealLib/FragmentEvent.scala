@@ -13,8 +13,8 @@ trait FragmentEvent extends js.Object {
 object FragmentEvent {
   @scala.inline
   def apply(fragment: stdLib.Element): FragmentEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragment")(fragment)
+    val __obj = js.Dynamic.literal(fragment = fragment)
+  
     __obj.asInstanceOf[FragmentEvent]
   }
 }

@@ -83,9 +83,7 @@ object Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOptionFields {
     upload_protocol: java.lang.String = null,
     valueRenderOption: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOptionFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    val __obj = js.Dynamic.literal(range = range, spreadsheetId = spreadsheetId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

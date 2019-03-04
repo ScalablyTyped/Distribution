@@ -16,8 +16,7 @@ trait CalendarListInsertParameters extends js.Object {
 object CalendarListInsertParameters {
   @scala.inline
   def apply(resource: CalendarListInput, colorRgbFormat: js.UndefOr[scala.Boolean] = js.undefined): CalendarListInsertParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(resource = resource)
     if (!js.isUndefined(colorRgbFormat)) __obj.updateDynamic("colorRgbFormat")(colorRgbFormat)
     __obj.asInstanceOf[CalendarListInsertParameters]
   }

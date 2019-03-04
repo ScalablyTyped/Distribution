@@ -62,32 +62,8 @@ object MDCSliderAdapter {
     setThumbContainerStyleProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setTrackStyleProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): MDCSliderAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("appendTrackMarkers")(appendTrackMarkers)
-    __obj.updateDynamic("computeBoundingRect")(computeBoundingRect)
-    __obj.updateDynamic("deregisterBodyInteractionHandler")(deregisterBodyInteractionHandler)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("deregisterResizeHandler")(deregisterResizeHandler)
-    __obj.updateDynamic("deregisterThumbContainerInteractionHandler")(deregisterThumbContainerInteractionHandler)
-    __obj.updateDynamic("getAttribute")(getAttribute)
-    __obj.updateDynamic("getTabIndex")(getTabIndex)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("isRTL")(isRTL)
-    __obj.updateDynamic("notifyChange")(notifyChange)
-    __obj.updateDynamic("notifyInput")(notifyInput)
-    __obj.updateDynamic("registerBodyInteractionHandler")(registerBodyInteractionHandler)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("registerResizeHandler")(registerResizeHandler)
-    __obj.updateDynamic("registerThumbContainerInteractionHandler")(registerThumbContainerInteractionHandler)
-    __obj.updateDynamic("removeAttribute")(removeAttribute)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("removeTrackMarkers")(removeTrackMarkers)
-    __obj.updateDynamic("setAttribute")(setAttribute)
-    __obj.updateDynamic("setLastTrackMarkersStyleProperty")(setLastTrackMarkersStyleProperty)
-    __obj.updateDynamic("setMarkerValue")(setMarkerValue)
-    __obj.updateDynamic("setThumbContainerStyleProperty")(setThumbContainerStyleProperty)
-    __obj.updateDynamic("setTrackStyleProperty")(setTrackStyleProperty)
+    val __obj = js.Dynamic.literal(addClass = addClass, appendTrackMarkers = appendTrackMarkers, computeBoundingRect = computeBoundingRect, deregisterBodyInteractionHandler = deregisterBodyInteractionHandler, deregisterInteractionHandler = deregisterInteractionHandler, deregisterResizeHandler = deregisterResizeHandler, deregisterThumbContainerInteractionHandler = deregisterThumbContainerInteractionHandler, getAttribute = getAttribute, getTabIndex = getTabIndex, hasClass = hasClass, isRTL = isRTL, notifyChange = notifyChange, notifyInput = notifyInput, registerBodyInteractionHandler = registerBodyInteractionHandler, registerInteractionHandler = registerInteractionHandler, registerResizeHandler = registerResizeHandler, registerThumbContainerInteractionHandler = registerThumbContainerInteractionHandler, removeAttribute = removeAttribute, removeClass = removeClass, removeTrackMarkers = removeTrackMarkers, setAttribute = setAttribute, setLastTrackMarkersStyleProperty = setLastTrackMarkersStyleProperty, setMarkerValue = setMarkerValue, setThumbContainerStyleProperty = setThumbContainerStyleProperty, setTrackStyleProperty = setTrackStyleProperty)
+  
     __obj.asInstanceOf[MDCSliderAdapter]
   }
 }

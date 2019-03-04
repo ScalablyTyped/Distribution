@@ -22,12 +22,8 @@ object IPasswordCredential {
     retrievePassword: js.Function0[scala.Unit],
     userName: java.lang.String
   ): IPasswordCredential = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("retrievePassword")(retrievePassword)
-    __obj.updateDynamic("userName")(userName)
+    val __obj = js.Dynamic.literal(password = password, properties = properties, resource = resource, retrievePassword = retrievePassword, userName = userName)
+  
     __obj.asInstanceOf[IPasswordCredential]
   }
 }

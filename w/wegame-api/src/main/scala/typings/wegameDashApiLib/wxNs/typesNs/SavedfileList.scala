@@ -12,8 +12,8 @@ trait SavedfileList extends js.Object {
 object SavedfileList {
   @scala.inline
   def apply(fileList: wegameDashApiLib.Anon_CreateTime): SavedfileList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileList")(fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList)
+  
     __obj.asInstanceOf[SavedfileList]
   }
 }

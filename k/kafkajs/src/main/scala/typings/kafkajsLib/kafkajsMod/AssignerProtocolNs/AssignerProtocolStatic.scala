@@ -13,9 +13,8 @@ trait AssignerProtocolStatic extends js.Object {
 object AssignerProtocolStatic {
   @scala.inline
   def apply(MemberAssignment: MemberAssignment, MemberMetadata: MemberMetadata): AssignerProtocolStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MemberAssignment")(MemberAssignment)
-    __obj.updateDynamic("MemberMetadata")(MemberMetadata)
+    val __obj = js.Dynamic.literal(MemberAssignment = MemberAssignment, MemberMetadata = MemberMetadata)
+  
     __obj.asInstanceOf[AssignerProtocolStatic]
   }
 }

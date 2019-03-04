@@ -24,11 +24,8 @@ trait ASPxClientCrosshairFreePosition extends ASPxClientCrosshairPosition {
 object ASPxClientCrosshairFreePosition {
   @scala.inline
   def apply(dockPosition: java.lang.String, offsetX: scala.Double, offsetY: scala.Double, paneID: scala.Double): ASPxClientCrosshairFreePosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dockPosition")(dockPosition)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("paneID")(paneID)
+    val __obj = js.Dynamic.literal(dockPosition = dockPosition, offsetX = offsetX, offsetY = offsetY, paneID = paneID)
+  
     __obj.asInstanceOf[ASPxClientCrosshairFreePosition]
   }
 }

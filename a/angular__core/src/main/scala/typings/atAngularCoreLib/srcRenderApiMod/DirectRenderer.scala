@@ -22,12 +22,8 @@ object DirectRenderer {
     parentElement: js.Function1[js.Any, js.Any],
     remove: js.Function1[js.Any, scala.Unit]
   ): DirectRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(appendChild = appendChild, insertBefore = insertBefore, nextSibling = nextSibling, parentElement = parentElement, remove = remove)
+  
     __obj.asInstanceOf[DirectRenderer]
   }
 }

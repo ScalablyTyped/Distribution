@@ -40,8 +40,8 @@ object summaryStatistics {
       arcgisDashJsDashApiLib.IPromise[SummaryStatisticsResult]
     ]
   ): summaryStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("summaryStatistics")(summaryStatistics)
+    val __obj = js.Dynamic.literal(summaryStatistics = summaryStatistics)
+  
     __obj.asInstanceOf[summaryStatistics]
   }
 }

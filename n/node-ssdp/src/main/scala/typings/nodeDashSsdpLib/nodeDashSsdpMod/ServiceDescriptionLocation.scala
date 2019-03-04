@@ -24,9 +24,7 @@ trait ServiceDescriptionLocation extends js.Object {
 object ServiceDescriptionLocation {
   @scala.inline
   def apply(path: java.lang.String, port: scala.Double, protocol: java.lang.String = null): ServiceDescriptionLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(path = path, port = port)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     __obj.asInstanceOf[ServiceDescriptionLocation]
   }

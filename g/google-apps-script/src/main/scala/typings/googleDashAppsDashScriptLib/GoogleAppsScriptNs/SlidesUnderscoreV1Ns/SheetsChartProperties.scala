@@ -13,8 +13,8 @@ trait SheetsChartProperties extends js.Object {
 object SheetsChartProperties {
   @scala.inline
   def apply(kind: googleDashAppsDashScriptLib.Anon_Chartimageproperties): SheetsChartProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+  
     __obj.asInstanceOf[SheetsChartProperties]
   }
 }

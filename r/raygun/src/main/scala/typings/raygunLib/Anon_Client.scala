@@ -32,12 +32,7 @@ object Anon_Client {
     userCustomData: raygunLib.raygunMod.raygunNs.KeyValueObject = null,
     version: java.lang.String = null
   ): Anon_Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("machineName")(machineName)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(client = client, environment = environment, error = error, machineName = machineName, tags = tags)
     if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey)
     if (request != null) __obj.updateDynamic("request")(request)
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait Toolbar extends js.Object {
 object Toolbar {
   @scala.inline
   def apply(getTabs: js.Function0[js.Array[ToolbarTab]]): Toolbar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTabs")(getTabs)
+    val __obj = js.Dynamic.literal(getTabs = getTabs)
+  
     __obj.asInstanceOf[Toolbar]
   }
 }

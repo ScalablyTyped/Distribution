@@ -18,7 +18,8 @@ trait Anon_Object extends js.Object {
 object Anon_Object {
   @scala.inline
   def apply(`object`: stripeLib.stripeMod.StripeNs.IObject, previous_attributes: js.Object = null): Anon_Object = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
     if (previous_attributes != null) __obj.updateDynamic("previous_attributes")(previous_attributes)
     __obj.asInstanceOf[Anon_Object]
   }

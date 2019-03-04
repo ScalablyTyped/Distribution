@@ -13,8 +13,8 @@ trait Anon_MessageId
 object Anon_MessageId {
   @scala.inline
   def apply(messageId: java.lang.String): Anon_MessageId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(messageId = messageId)
+  
     __obj.asInstanceOf[Anon_MessageId]
   }
 }

@@ -26,12 +26,8 @@ object cssClasses {
     ROOT: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded`,
     UNBOUNDED: atMaterialRippleLib.atMaterialRippleLibStrings.`mdc-ripple-upgraded--unbounded`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BG_FOCUSED")(BG_FOCUSED)
-    __obj.updateDynamic("FG_ACTIVATION")(FG_ACTIVATION)
-    __obj.updateDynamic("FG_DEACTIVATION")(FG_DEACTIVATION)
-    __obj.updateDynamic("ROOT")(ROOT)
-    __obj.updateDynamic("UNBOUNDED")(UNBOUNDED)
+    val __obj = js.Dynamic.literal(BG_FOCUSED = BG_FOCUSED, FG_ACTIVATION = FG_ACTIVATION, FG_DEACTIVATION = FG_DEACTIVATION, ROOT = ROOT, UNBOUNDED = UNBOUNDED)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

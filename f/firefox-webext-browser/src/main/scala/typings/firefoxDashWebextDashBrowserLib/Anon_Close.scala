@@ -43,15 +43,8 @@ object Anon_Close {
     setPanel: js.Function1[Anon_Panel, js.Promise[scala.Unit]],
     setTitle: js.Function1[Anon_TabIdTitle, js.Promise[scala.Unit]]
   ): Anon_Close = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("getPanel")(getPanel)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("setIcon")(setIcon)
-    __obj.updateDynamic("setPanel")(setPanel)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(close = close, getPanel = getPanel, getTitle = getTitle, isOpen = isOpen, open = open, setIcon = setIcon, setPanel = setPanel, setTitle = setTitle)
+  
     __obj.asInstanceOf[Anon_Close]
   }
 }

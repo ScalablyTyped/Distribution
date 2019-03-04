@@ -79,12 +79,7 @@ object ILoadingBarProvider {
     spinnerTemplate: java.lang.String = null,
     startSize: scala.Int | scala.Double = null
   ): ILoadingBarProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("inc")(inc)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(complete = complete, inc = inc, set = set, start = start, status = status)
     if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
     if (!js.isUndefined(includeBar)) __obj.updateDynamic("includeBar")(includeBar)
     if (!js.isUndefined(includeSpinner)) __obj.updateDynamic("includeSpinner")(includeSpinner)

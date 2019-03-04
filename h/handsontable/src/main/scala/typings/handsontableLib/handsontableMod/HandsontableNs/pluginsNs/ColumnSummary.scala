@@ -45,30 +45,8 @@ object ColumnSummary {
     pluginsInitializedCallback: js.Array[_],
     removeHook: js.Function1[java.lang.String, scala.Unit]
   ): ColumnSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("calculate")(calculate)
-    __obj.updateDynamic("calculateAverage")(calculateAverage)
-    __obj.updateDynamic("calculateMinMax")(calculateMinMax)
-    __obj.updateDynamic("calculateSum")(calculateSum)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("countEmpty")(countEmpty)
-    __obj.updateDynamic("countEntries")(countEntries)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
-    __obj.updateDynamic("getCellValue")(getCellValue)
-    __obj.updateDynamic("getPartialMinMax")(getPartialMinMax)
-    __obj.updateDynamic("getPartialSum")(getPartialSum)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
+    val __obj = js.Dynamic.literal(addHook = addHook, calculate = calculate, calculateAverage = calculateAverage, calculateMinMax = calculateMinMax, calculateSum = calculateSum, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, countEmpty = countEmpty, countEntries = countEntries, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, endpoints = endpoints.asInstanceOf[js.Any], getCellValue = getCellValue, getPartialMinMax = getPartialMinMax, getPartialSum = getPartialSum, init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+  
     __obj.asInstanceOf[ColumnSummary]
   }
 }

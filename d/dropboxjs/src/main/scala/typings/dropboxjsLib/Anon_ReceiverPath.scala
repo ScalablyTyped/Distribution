@@ -13,9 +13,8 @@ trait Anon_ReceiverPath extends js.Object {
 object Anon_ReceiverPath {
   @scala.inline
   def apply(receiverPath: java.lang.String, scope: java.lang.String): Anon_ReceiverPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("receiverPath")(receiverPath)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(receiverPath = receiverPath, scope = scope)
+  
     __obj.asInstanceOf[Anon_ReceiverPath]
   }
 }

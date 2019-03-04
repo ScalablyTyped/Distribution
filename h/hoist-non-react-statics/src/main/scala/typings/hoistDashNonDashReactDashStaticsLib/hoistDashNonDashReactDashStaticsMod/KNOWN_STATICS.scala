@@ -24,13 +24,8 @@ object KNOWN_STATICS {
     length: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`,
     name: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`
   ): KNOWN_STATICS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("arity")(arity)
-    __obj.updateDynamic("callee")(callee)
-    __obj.updateDynamic("caller")(caller)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(arguments = arguments, arity = arity, callee = callee, caller = caller, length = length, name = name)
+  
     __obj.asInstanceOf[KNOWN_STATICS]
   }
 }

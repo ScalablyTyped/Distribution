@@ -18,10 +18,8 @@ object Anon_OFFLINENOTNECESSARY {
     SAVE_FOR_OFFLINE: chromeDashAppsLib.chromeDashAppsLibStrings.SAVE_FOR_OFFLINE,
     SHARE: chromeDashAppsLib.chromeDashAppsLibStrings.SHARE
   ): Anon_OFFLINENOTNECESSARY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OFFLINE_NOT_NECESSARY")(OFFLINE_NOT_NECESSARY)
-    __obj.updateDynamic("SAVE_FOR_OFFLINE")(SAVE_FOR_OFFLINE)
-    __obj.updateDynamic("SHARE")(SHARE)
+    val __obj = js.Dynamic.literal(OFFLINE_NOT_NECESSARY = OFFLINE_NOT_NECESSARY, SAVE_FOR_OFFLINE = SAVE_FOR_OFFLINE, SHARE = SHARE)
+  
     __obj.asInstanceOf[Anon_OFFLINENOTNECESSARY]
   }
 }

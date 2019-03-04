@@ -18,8 +18,8 @@ object Options {
       java.lang.String | stdLib.RegExp | (js.Function1[/* queryDepths */ js.Array[_], scala.Boolean])
     ]
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignore")(ignore)
+    val __obj = js.Dynamic.literal(ignore = ignore)
+  
     __obj.asInstanceOf[Options]
   }
 }

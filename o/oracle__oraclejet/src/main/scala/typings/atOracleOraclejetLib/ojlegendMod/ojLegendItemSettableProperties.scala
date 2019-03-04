@@ -59,9 +59,7 @@ object ojLegendItemSettableProperties {
     svgStyle: js.Object = null,
     symbolType: atOracleOraclejetLib.atOracleOraclejetLibStrings.line | atOracleOraclejetLib.atOracleOraclejetLibStrings.lineWithMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.image | atOracleOraclejetLib.atOracleOraclejetLibStrings.marker = null
   ): ojLegendItemSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(markerShape = markerShape.asInstanceOf[js.Any], text = text)
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (categoryVisibility != null) __obj.updateDynamic("categoryVisibility")(categoryVisibility.asInstanceOf[js.Any])

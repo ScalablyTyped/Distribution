@@ -49,13 +49,8 @@ object ChangesOptions {
     includeTypes: scala.Boolean,
     squash: scala.Boolean | scala.Double
   ): ChangesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changefeedQueueSize")(changefeedQueueSize)
-    __obj.updateDynamic("includeInitial")(includeInitial)
-    __obj.updateDynamic("includeOffsets")(includeOffsets)
-    __obj.updateDynamic("includeStates")(includeStates)
-    __obj.updateDynamic("includeTypes")(includeTypes)
-    __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changefeedQueueSize = changefeedQueueSize, includeInitial = includeInitial, includeOffsets = includeOffsets, includeStates = includeStates, includeTypes = includeTypes, squash = squash.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ChangesOptions]
   }
 }

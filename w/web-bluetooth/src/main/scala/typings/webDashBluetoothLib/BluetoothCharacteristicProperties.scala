@@ -31,16 +31,8 @@ object BluetoothCharacteristicProperties {
     write: scala.Boolean,
     writeWithoutResponse: scala.Boolean
   ): BluetoothCharacteristicProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticatedSignedWrites")(authenticatedSignedWrites)
-    __obj.updateDynamic("broadcast")(broadcast)
-    __obj.updateDynamic("indicate")(indicate)
-    __obj.updateDynamic("notify")(notify)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("reliableWrite")(reliableWrite)
-    __obj.updateDynamic("writableAuxiliaries")(writableAuxiliaries)
-    __obj.updateDynamic("write")(write)
-    __obj.updateDynamic("writeWithoutResponse")(writeWithoutResponse)
+    val __obj = js.Dynamic.literal(authenticatedSignedWrites = authenticatedSignedWrites, broadcast = broadcast, indicate = indicate, notify = notify, read = read, reliableWrite = reliableWrite, writableAuxiliaries = writableAuxiliaries, write = write, writeWithoutResponse = writeWithoutResponse)
+  
     __obj.asInstanceOf[BluetoothCharacteristicProperties]
   }
 }

@@ -14,9 +14,8 @@ trait UploadFileResponse extends js.Object {
 object UploadFileResponse {
   @scala.inline
   def apply(data: java.lang.String, statusCode: scala.Double): UploadFileResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(data = data, statusCode = statusCode)
+  
     __obj.asInstanceOf[UploadFileResponse]
   }
 }

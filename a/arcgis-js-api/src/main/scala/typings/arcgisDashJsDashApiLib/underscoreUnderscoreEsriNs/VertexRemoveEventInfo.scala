@@ -31,11 +31,8 @@ object VertexRemoveEventInfo {
     removed: js.Array[Graphic],
     `type`: java.lang.String
   ): VertexRemoveEventInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, removed = removed)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VertexRemoveEventInfo]
   }
 }

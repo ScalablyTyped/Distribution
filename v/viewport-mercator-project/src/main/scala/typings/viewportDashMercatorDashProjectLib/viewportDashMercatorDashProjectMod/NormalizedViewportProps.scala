@@ -21,14 +21,8 @@ object NormalizedViewportProps {
     width: scala.Double,
     zoom: scala.Double
   ): NormalizedViewportProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bearing")(bearing)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("pitch")(pitch)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(bearing = bearing, height = height, latitude = latitude, longitude = longitude, pitch = pitch, width = width, zoom = zoom)
+  
     __obj.asInstanceOf[NormalizedViewportProps]
   }
 }

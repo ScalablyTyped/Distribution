@@ -67,28 +67,8 @@ object Entry {
     versionMadeBy: scala.Double,
     versionNeededToExtract: scala.Double
   ): Entry[StringType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressedSize")(compressedSize)
-    __obj.updateDynamic("compressionMethod")(compressionMethod)
-    __obj.updateDynamic("crc32")(crc32)
-    __obj.updateDynamic("externalFileAttributes")(externalFileAttributes)
-    __obj.updateDynamic("extraFieldLength")(extraFieldLength)
-    __obj.updateDynamic("extraFields")(extraFields)
-    __obj.updateDynamic("fileComment")(fileComment.asInstanceOf[js.Any])
-    __obj.updateDynamic("fileCommentLength")(fileCommentLength)
-    __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    __obj.updateDynamic("fileNameLength")(fileNameLength)
-    __obj.updateDynamic("generalPurposeBitFlag")(generalPurposeBitFlag)
-    __obj.updateDynamic("getLastModDate")(getLastModDate)
-    __obj.updateDynamic("internalFileAttributes")(internalFileAttributes)
-    __obj.updateDynamic("isCompressed")(isCompressed)
-    __obj.updateDynamic("isEncrypted")(isEncrypted)
-    __obj.updateDynamic("lastModFileDate")(lastModFileDate)
-    __obj.updateDynamic("lastModFileTime")(lastModFileTime)
-    __obj.updateDynamic("relativeOffsetOfLocalHeader")(relativeOffsetOfLocalHeader)
-    __obj.updateDynamic("uncompressedSize")(uncompressedSize)
-    __obj.updateDynamic("versionMadeBy")(versionMadeBy)
-    __obj.updateDynamic("versionNeededToExtract")(versionNeededToExtract)
+    val __obj = js.Dynamic.literal(compressedSize = compressedSize, compressionMethod = compressionMethod, crc32 = crc32, externalFileAttributes = externalFileAttributes, extraFieldLength = extraFieldLength, extraFields = extraFields, fileComment = fileComment.asInstanceOf[js.Any], fileCommentLength = fileCommentLength, fileName = fileName.asInstanceOf[js.Any], fileNameLength = fileNameLength, generalPurposeBitFlag = generalPurposeBitFlag, getLastModDate = getLastModDate, internalFileAttributes = internalFileAttributes, isCompressed = isCompressed, isEncrypted = isEncrypted, lastModFileDate = lastModFileDate, lastModFileTime = lastModFileTime, relativeOffsetOfLocalHeader = relativeOffsetOfLocalHeader, uncompressedSize = uncompressedSize, versionMadeBy = versionMadeBy, versionNeededToExtract = versionNeededToExtract)
+  
     __obj.asInstanceOf[Entry[StringType]]
   }
 }

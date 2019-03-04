@@ -30,16 +30,8 @@ object Dom {
     toggleClass: js.Function2[reactLib.Element, java.lang.String, scala.Unit],
     withoutTransition: js.Function2[reactLib.HTMLElement, js.Function0[scala.Unit], scala.Unit]
   ): Dom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("forceRedraw")(forceRedraw)
-    __obj.updateDynamic("getStyleAttributeAsNumber")(getStyleAttributeAsNumber)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("isDescendant")(isDescendant)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("toggleClass")(toggleClass)
-    __obj.updateDynamic("withoutTransition")(withoutTransition)
+    val __obj = js.Dynamic.literal(addClass = addClass, forceRedraw = forceRedraw, getStyleAttributeAsNumber = getStyleAttributeAsNumber, hasClass = hasClass, isDescendant = isDescendant, offset = offset, removeClass = removeClass, toggleClass = toggleClass, withoutTransition = withoutTransition)
+  
     __obj.asInstanceOf[Dom]
   }
 }

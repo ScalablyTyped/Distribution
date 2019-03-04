@@ -20,11 +20,8 @@ object rules {
     isNotEmpty: js.Function0[scala.Boolean],
     isNumber: js.Function0[scala.Boolean]
   ): rules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isChecked")(isChecked)
-    __obj.updateDynamic("isEmail")(isEmail)
-    __obj.updateDynamic("isNotEmpty")(isNotEmpty)
-    __obj.updateDynamic("isNumber")(isNumber)
+    val __obj = js.Dynamic.literal(isChecked = isChecked, isEmail = isEmail, isNotEmpty = isNotEmpty, isNumber = isNumber)
+  
     __obj.asInstanceOf[rules]
   }
 }

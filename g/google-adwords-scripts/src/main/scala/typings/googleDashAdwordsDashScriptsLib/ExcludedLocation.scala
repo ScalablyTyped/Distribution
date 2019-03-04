@@ -33,16 +33,7 @@ object ExcludedLocation {
     remove: js.Function0[scala.Unit],
     getEntityType: js.Function0[java.lang.String] = null
   ): ExcludedLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getCampaignType")(getCampaignType)
-    __obj.updateDynamic("getCountryCode")(getCountryCode)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getTargetType")(getTargetType)
-    __obj.updateDynamic("getTargetingStatus")(getTargetingStatus)
-    __obj.updateDynamic("getVideoCampaign")(getVideoCampaign)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getCampaign = getCampaign, getCampaignType = getCampaignType, getCountryCode = getCountryCode, getId = getId, getName = getName, getTargetType = getTargetType, getTargetingStatus = getTargetingStatus, getVideoCampaign = getVideoCampaign, remove = remove)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[ExcludedLocation]
   }

@@ -20,11 +20,8 @@ object findEntry {
     title: java.lang.String,
     url: java.lang.String
   ): findEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentSnippet")(contentSnippet)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(contentSnippet = contentSnippet, link = link, title = title, url = url)
+  
     __obj.asInstanceOf[findEntry]
   }
 }

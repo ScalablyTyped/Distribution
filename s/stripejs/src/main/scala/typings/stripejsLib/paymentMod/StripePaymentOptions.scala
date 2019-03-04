@@ -47,10 +47,7 @@ object StripePaymentOptions {
     requestShipping: js.UndefOr[scala.Boolean] = js.undefined,
     shippingOptions: js.Array[stripejsLib.shippingMod.ShippingOption] = null
   ): StripePaymentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(country = country, currency = currency, total = total)
     if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
     if (!js.isUndefined(requestPayerEmail)) __obj.updateDynamic("requestPayerEmail")(requestPayerEmail)
     if (!js.isUndefined(requestPayerName)) __obj.updateDynamic("requestPayerName")(requestPayerName)

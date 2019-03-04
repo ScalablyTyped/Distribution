@@ -40,21 +40,8 @@ object DataProvider {
     t: RecordTranslator,
     updateSourceData: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
   ): DataProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("clearChanges")(clearChanges)
-    __obj.updateDynamic("collectChanges")(collectChanges)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getDataAtCell")(getDataAtCell)
-    __obj.updateDynamic("getDataByRange")(getDataByRange)
-    __obj.updateDynamic("getRawDataAtCell")(getRawDataAtCell)
-    __obj.updateDynamic("getRawDataByRange")(getRawDataByRange)
-    __obj.updateDynamic("getSourceDataAtCell")(getSourceDataAtCell)
-    __obj.updateDynamic("getSourceDataByRange")(getSourceDataByRange)
-    __obj.updateDynamic("hot")(hot)
-    __obj.updateDynamic("isInDataRange")(isInDataRange)
-    __obj.updateDynamic("t")(t)
-    __obj.updateDynamic("updateSourceData")(updateSourceData)
+    val __obj = js.Dynamic.literal(changes = changes, clearChanges = clearChanges, collectChanges = collectChanges, destroy = destroy, getDataAtCell = getDataAtCell, getDataByRange = getDataByRange, getRawDataAtCell = getRawDataAtCell, getRawDataByRange = getRawDataByRange, getSourceDataAtCell = getSourceDataAtCell, getSourceDataByRange = getSourceDataByRange, hot = hot, isInDataRange = isInDataRange, t = t, updateSourceData = updateSourceData)
+  
     __obj.asInstanceOf[DataProvider]
   }
 }

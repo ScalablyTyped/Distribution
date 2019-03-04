@@ -31,18 +31,8 @@ object Legend {
     y: scala.Double,
     yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom
   ): Legend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bgcolor")(bgcolor)
-    __obj.updateDynamic("bordercolor")(bordercolor)
-    __obj.updateDynamic("borderwidth")(borderwidth)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("tracegroupgap")(tracegroupgap)
-    __obj.updateDynamic("traceorder")(traceorder.asInstanceOf[js.Any])
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bgcolor = bgcolor, bordercolor = bordercolor, borderwidth = borderwidth, font = font, orientation = orientation.asInstanceOf[js.Any], tracegroupgap = tracegroupgap, traceorder = traceorder.asInstanceOf[js.Any], x = x, xanchor = xanchor.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Legend]
   }
 }

@@ -57,13 +57,7 @@ object ReplicationTaskArgs {
     replicationTaskSettings: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ReplicationTaskArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("migrationType")(migrationType.asInstanceOf[js.Any])
-    __obj.updateDynamic("replicationInstanceArn")(replicationInstanceArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("replicationTaskId")(replicationTaskId.asInstanceOf[js.Any])
-    __obj.updateDynamic("sourceEndpointArn")(sourceEndpointArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("tableMappings")(tableMappings.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetEndpointArn")(targetEndpointArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(migrationType = migrationType.asInstanceOf[js.Any], replicationInstanceArn = replicationInstanceArn.asInstanceOf[js.Any], replicationTaskId = replicationTaskId.asInstanceOf[js.Any], sourceEndpointArn = sourceEndpointArn.asInstanceOf[js.Any], tableMappings = tableMappings.asInstanceOf[js.Any], targetEndpointArn = targetEndpointArn.asInstanceOf[js.Any])
     if (cdcStartTime != null) __obj.updateDynamic("cdcStartTime")(cdcStartTime.asInstanceOf[js.Any])
     if (replicationTaskSettings != null) __obj.updateDynamic("replicationTaskSettings")(replicationTaskSettings.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

@@ -79,21 +79,8 @@ object TaskAgentPoolMaintenanceJob {
     targetAgents: js.Array[TaskAgentReference],
     warningCount: scala.Double
   ): TaskAgentPoolMaintenanceJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitionId")(definitionId)
-    __obj.updateDynamic("errorCount")(errorCount)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("logsDownloadUrl")(logsDownloadUrl)
-    __obj.updateDynamic("orchestrationId")(orchestrationId)
-    __obj.updateDynamic("pool")(pool)
-    __obj.updateDynamic("queueTime")(queueTime)
-    __obj.updateDynamic("requestedBy")(requestedBy)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("targetAgents")(targetAgents)
-    __obj.updateDynamic("warningCount")(warningCount)
+    val __obj = js.Dynamic.literal(definitionId = definitionId, errorCount = errorCount, finishTime = finishTime, jobId = jobId, logsDownloadUrl = logsDownloadUrl, orchestrationId = orchestrationId, pool = pool, queueTime = queueTime, requestedBy = requestedBy, result = result, startTime = startTime, status = status, targetAgents = targetAgents, warningCount = warningCount)
+  
     __obj.asInstanceOf[TaskAgentPoolMaintenanceJob]
   }
 }

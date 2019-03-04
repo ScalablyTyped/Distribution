@@ -22,11 +22,7 @@ object FourRedToBlackSet {
     redCircle: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): FourRedToBlackSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blackCircle")(blackCircle)
-    __obj.updateDynamic("grayCircle")(grayCircle)
-    __obj.updateDynamic("pinkCircle")(pinkCircle)
-    __obj.updateDynamic("redCircle")(redCircle)
+    val __obj = js.Dynamic.literal(blackCircle = blackCircle, grayCircle = grayCircle, pinkCircle = pinkCircle, redCircle = redCircle)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FourRedToBlackSet]
   }

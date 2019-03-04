@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashSetWith1x4 extends js.Object {
   def apply(
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
     path: lodashLib.lodashMod.underscoreNs.PropertyPath
   ): LodashSetWith1x6 = js.native
   def apply[T /* <: js.Object */](customizer: lodashLib.lodashMod.underscoreNs.SetWithCustomizer[T]): LodashSetWith1x5[T] = js.native
@@ -23,17 +23,17 @@ trait LodashSetWith1x4 extends js.Object {
   ): T = js.native
   def apply[T /* <: js.Object */](
     customizer: lodashLib.lodashMod.underscoreNs.SetWithCustomizer[T],
-    path: lodashLib.lodashMod.underscoreNs.`__`,
+    path: lodashLib.lodashMod.underscoreNs.__,
     `object`: T
   ): LodashSetWith1x13[T] = js.native
   def apply[T /* <: js.Object */](
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
     path: lodashLib.lodashMod.underscoreNs.PropertyPath,
     `object`: T
   ): LodashSetWith1x14[T] = js.native
   def apply[T /* <: js.Object */](
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
-    path: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
+    path: lodashLib.lodashMod.underscoreNs.__,
     `object`: T
   ): LodashSetWith1x12[T] = js.native
 }

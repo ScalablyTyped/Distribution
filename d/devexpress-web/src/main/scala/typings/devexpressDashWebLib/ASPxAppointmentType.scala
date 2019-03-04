@@ -45,12 +45,8 @@ object ASPxAppointmentType {
     Occurrence: java.lang.String,
     Pattern: java.lang.String
   ): ASPxAppointmentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChangedOccurrence")(ChangedOccurrence)
-    __obj.updateDynamic("DeletedOccurrence")(DeletedOccurrence)
-    __obj.updateDynamic("Normal")(Normal)
-    __obj.updateDynamic("Occurrence")(Occurrence)
-    __obj.updateDynamic("Pattern")(Pattern)
+    val __obj = js.Dynamic.literal(ChangedOccurrence = ChangedOccurrence, DeletedOccurrence = DeletedOccurrence, Normal = Normal, Occurrence = Occurrence, Pattern = Pattern)
+  
     __obj.asInstanceOf[ASPxAppointmentType]
   }
 }

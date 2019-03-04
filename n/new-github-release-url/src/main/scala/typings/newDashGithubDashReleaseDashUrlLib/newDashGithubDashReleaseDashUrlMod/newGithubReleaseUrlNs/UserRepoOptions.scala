@@ -27,9 +27,7 @@ object UserRepoOptions {
     target: java.lang.String = null,
     title: java.lang.String = null
   ): UserRepoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repo")(repo)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(repo = repo, user = user)
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(isPrerelease)) __obj.updateDynamic("isPrerelease")(isPrerelease)
     if (tag != null) __obj.updateDynamic("tag")(tag)

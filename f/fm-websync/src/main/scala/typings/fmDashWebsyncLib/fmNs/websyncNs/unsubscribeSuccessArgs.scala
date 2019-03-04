@@ -26,13 +26,8 @@ object unsubscribeSuccessArgs {
     meta: js.Any,
     timestamp: stdLib.Date
   ): unsubscribeSuccessArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel, channels = channels, client = client, clientId = clientId, meta = meta, timestamp = timestamp)
+  
     __obj.asInstanceOf[unsubscribeSuccessArgs]
   }
 }

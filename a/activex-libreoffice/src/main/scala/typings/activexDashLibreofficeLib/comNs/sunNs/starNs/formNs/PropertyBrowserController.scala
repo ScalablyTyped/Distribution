@@ -126,40 +126,8 @@ object PropertyBrowserController {
     ],
     suspend: js.Function1[scala.Boolean, scala.Boolean]
   ): PropertyBrowserController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentPage")(CurrentPage)
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("IntrospectedObject")(IntrospectedObject)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ViewData")(ViewData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("attachFrame")(attachFrame)
-    __obj.updateDynamic("attachModel")(attachModel)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
-    __obj.updateDynamic("getFastPropertyValue")(getFastPropertyValue)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("getViewData")(getViewData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("restoreViewData")(restoreViewData)
-    __obj.updateDynamic("setFastPropertyValue")(setFastPropertyValue)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, Frame = Frame, IntrospectedObject = IntrospectedObject, Model = Model, PropertySetInfo = PropertySetInfo, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, addPropertiesChangeListener = addPropertiesChangeListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, firePropertiesChangeEvent = firePropertiesChangeEvent, getFastPropertyValue = getFastPropertyValue, getFrame = getFrame, getModel = getModel, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getPropertyValues = getPropertyValues, getViewData = getViewData, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertiesChangeListener = removePropertiesChangeListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, restoreViewData = restoreViewData, setFastPropertyValue = setFastPropertyValue, setPropertyValue = setPropertyValue, setPropertyValues = setPropertyValues, suspend = suspend)
+  
     __obj.asInstanceOf[PropertyBrowserController]
   }
 }

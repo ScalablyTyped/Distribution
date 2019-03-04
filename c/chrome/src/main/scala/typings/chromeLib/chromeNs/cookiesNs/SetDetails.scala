@@ -39,8 +39,7 @@ object SetDetails {
     storeId: java.lang.String = null,
     value: java.lang.String = null
   ): SetDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)

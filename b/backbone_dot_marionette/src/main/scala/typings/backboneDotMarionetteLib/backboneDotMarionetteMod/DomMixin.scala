@@ -30,16 +30,8 @@ object DomMixin {
     replaceEl: js.Any,
     setInnerContent: js.Any
   ): DomMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendChildren")(appendChildren)
-    __obj.updateDynamic("beforeEl")(beforeEl)
-    __obj.updateDynamic("createBuffer")(createBuffer)
-    __obj.updateDynamic("detachContents")(detachContents)
-    __obj.updateDynamic("detachEl")(detachEl)
-    __obj.updateDynamic("findEls")(findEls)
-    __obj.updateDynamic("removeEl")(removeEl)
-    __obj.updateDynamic("replaceEl")(replaceEl)
-    __obj.updateDynamic("setInnerContent")(setInnerContent)
+    val __obj = js.Dynamic.literal(appendChildren = appendChildren, beforeEl = beforeEl, createBuffer = createBuffer, detachContents = detachContents, detachEl = detachEl, findEls = findEls, removeEl = removeEl, replaceEl = replaceEl, setInnerContent = setInnerContent)
+  
     __obj.asInstanceOf[DomMixin]
   }
 }

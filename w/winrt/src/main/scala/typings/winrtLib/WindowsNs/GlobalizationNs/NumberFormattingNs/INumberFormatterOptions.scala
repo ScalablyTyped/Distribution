@@ -30,16 +30,8 @@ object INumberFormatterOptions {
     resolvedGeographicRegion: java.lang.String,
     resolvedLanguage: java.lang.String
   ): INumberFormatterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fractionDigits")(fractionDigits)
-    __obj.updateDynamic("geographicRegion")(geographicRegion)
-    __obj.updateDynamic("integerDigits")(integerDigits)
-    __obj.updateDynamic("isDecimalPointAlwaysDisplayed")(isDecimalPointAlwaysDisplayed)
-    __obj.updateDynamic("isGrouped")(isGrouped)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("numeralSystem")(numeralSystem)
-    __obj.updateDynamic("resolvedGeographicRegion")(resolvedGeographicRegion)
-    __obj.updateDynamic("resolvedLanguage")(resolvedLanguage)
+    val __obj = js.Dynamic.literal(fractionDigits = fractionDigits, geographicRegion = geographicRegion, integerDigits = integerDigits, isDecimalPointAlwaysDisplayed = isDecimalPointAlwaysDisplayed, isGrouped = isGrouped, languages = languages, numeralSystem = numeralSystem, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage)
+  
     __obj.asInstanceOf[INumberFormatterOptions]
   }
 }

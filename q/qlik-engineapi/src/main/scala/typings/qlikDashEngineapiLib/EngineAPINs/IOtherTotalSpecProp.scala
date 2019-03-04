@@ -125,19 +125,8 @@ object IOtherTotalSpecProp {
     qSuppressOther: scala.Boolean,
     qTotalMode: TotalModeType
   ): IOtherTotalSpecProp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qApplyEvenWhenPossiblyWrongResult")(qApplyEvenWhenPossiblyWrongResult)
-    __obj.updateDynamic("qForceBadValueKeeping")(qForceBadValueKeeping)
-    __obj.updateDynamic("qGlobalOtherGrouping")(qGlobalOtherGrouping)
-    __obj.updateDynamic("qOtherCollapseInnerDimensions")(qOtherCollapseInnerDimensions)
-    __obj.updateDynamic("qOtherCounted")(qOtherCounted)
-    __obj.updateDynamic("qOtherLimit")(qOtherLimit)
-    __obj.updateDynamic("qOtherLimitMode")(qOtherLimitMode)
-    __obj.updateDynamic("qOtherMode")(qOtherMode)
-    __obj.updateDynamic("qOtherSortMode")(qOtherSortMode)
-    __obj.updateDynamic("qReferencedExpression")(qReferencedExpression)
-    __obj.updateDynamic("qSuppressOther")(qSuppressOther)
-    __obj.updateDynamic("qTotalMode")(qTotalMode)
+    val __obj = js.Dynamic.literal(qApplyEvenWhenPossiblyWrongResult = qApplyEvenWhenPossiblyWrongResult, qForceBadValueKeeping = qForceBadValueKeeping, qGlobalOtherGrouping = qGlobalOtherGrouping, qOtherCollapseInnerDimensions = qOtherCollapseInnerDimensions, qOtherCounted = qOtherCounted, qOtherLimit = qOtherLimit, qOtherLimitMode = qOtherLimitMode, qOtherMode = qOtherMode, qOtherSortMode = qOtherSortMode, qReferencedExpression = qReferencedExpression, qSuppressOther = qSuppressOther, qTotalMode = qTotalMode)
+  
     __obj.asInstanceOf[IOtherTotalSpecProp]
   }
 }

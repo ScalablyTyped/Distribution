@@ -18,8 +18,7 @@ object MerchantInfo {
     merchantName: java.lang.String = null,
     merchantOrigin: java.lang.String = null
   ): MerchantInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(merchantId = merchantId)
     if (merchantName != null) __obj.updateDynamic("merchantName")(merchantName)
     if (merchantOrigin != null) __obj.updateDynamic("merchantOrigin")(merchantOrigin)
     __obj.asInstanceOf[MerchantInfo]

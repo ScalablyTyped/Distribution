@@ -26,14 +26,8 @@ object Rect {
     intersect: js.Function2[Rect, Rect, Rect],
     relativePosition: js.Function3[Rect, Rect, java.lang.String, scala.Unit]
   ): Rect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clamp")(clamp)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("findBestRelativePosition")(findBestRelativePosition)
-    __obj.updateDynamic("fromClientRect")(fromClientRect)
-    __obj.updateDynamic("inflate")(inflate)
-    __obj.updateDynamic("intersect")(intersect)
-    __obj.updateDynamic("relativePosition")(relativePosition)
+    val __obj = js.Dynamic.literal(clamp = clamp, create = create, findBestRelativePosition = findBestRelativePosition, fromClientRect = fromClientRect, inflate = inflate, intersect = intersect, relativePosition = relativePosition)
+  
     __obj.asInstanceOf[Rect]
   }
 }

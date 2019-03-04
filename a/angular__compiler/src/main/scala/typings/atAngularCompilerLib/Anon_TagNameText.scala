@@ -14,8 +14,7 @@ trait Anon_TagNameText
 object Anon_TagNameText {
   @scala.inline
   def apply(text: java.lang.String, tagName: js.UndefOr[scala.Nothing] = js.undefined): Anon_TagNameText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (!js.isUndefined(tagName)) __obj.updateDynamic("tagName")(tagName)
     __obj.asInstanceOf[Anon_TagNameText]
   }

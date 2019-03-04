@@ -51,16 +51,8 @@ object XMasterPasswordHandling {
     release: js.Function0[scala.Unit],
     removeMasterPassword: js.Function0[scala.Unit]
   ): XMasterPasswordHandling = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("allowPersistentStoring")(allowPersistentStoring)
-    __obj.updateDynamic("authorizateWithMasterPassword")(authorizateWithMasterPassword)
-    __obj.updateDynamic("changeMasterPassword")(changeMasterPassword)
-    __obj.updateDynamic("hasMasterPassword")(hasMasterPassword)
-    __obj.updateDynamic("isPersistentStoringAllowed")(isPersistentStoringAllowed)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeMasterPassword")(removeMasterPassword)
+    val __obj = js.Dynamic.literal(acquire = acquire, allowPersistentStoring = allowPersistentStoring, authorizateWithMasterPassword = authorizateWithMasterPassword, changeMasterPassword = changeMasterPassword, hasMasterPassword = hasMasterPassword, isPersistentStoringAllowed = isPersistentStoringAllowed, queryInterface = queryInterface, release = release, removeMasterPassword = removeMasterPassword)
+  
     __obj.asInstanceOf[XMasterPasswordHandling]
   }
 }

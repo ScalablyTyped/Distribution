@@ -40,20 +40,7 @@ object Definitions {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Definitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("diagrams")(diagrams)
-    __obj.updateDynamic("er")(er)
-    __obj.updateDynamic("erVersion")(erVersion)
-    __obj.updateDynamic("expressionLanguage")(expressionLanguage)
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imports")(imports)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("relationship")(relationship)
-    __obj.updateDynamic("rootElements")(rootElements)
-    __obj.updateDynamic("targetNamespace")(targetNamespace)
-    __obj.updateDynamic("typeLanguage")(typeLanguage)
+    val __obj = js.Dynamic.literal($type = $type, diagrams = diagrams, er = er, erVersion = erVersion, expressionLanguage = expressionLanguage, extensions = extensions, id = id, imports = imports, name = name, relationship = relationship, rootElements = rootElements, targetNamespace = targetNamespace, typeLanguage = typeLanguage)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

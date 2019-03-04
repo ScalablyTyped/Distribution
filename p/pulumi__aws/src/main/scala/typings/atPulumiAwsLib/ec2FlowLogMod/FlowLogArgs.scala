@@ -52,8 +52,7 @@ object FlowLogArgs {
     subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): FlowLogArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trafficType")(trafficType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(trafficType = trafficType.asInstanceOf[js.Any])
     if (eniId != null) __obj.updateDynamic("eniId")(eniId.asInstanceOf[js.Any])
     if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
     if (logDestination != null) __obj.updateDynamic("logDestination")(logDestination.asInstanceOf[js.Any])

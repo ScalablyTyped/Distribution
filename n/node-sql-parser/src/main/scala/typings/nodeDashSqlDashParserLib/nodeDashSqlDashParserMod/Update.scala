@@ -22,10 +22,8 @@ object Update {
     where: js.Any,
     db: java.lang.String = null
   ): Update = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(set = set, table = table, where = where)
+    __obj.updateDynamic("type")(`type`)
     if (db != null) __obj.updateDynamic("db")(db)
     __obj.asInstanceOf[Update]
   }

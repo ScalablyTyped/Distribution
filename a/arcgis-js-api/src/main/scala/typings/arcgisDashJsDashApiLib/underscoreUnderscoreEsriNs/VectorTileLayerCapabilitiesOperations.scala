@@ -30,12 +30,8 @@ object VectorTileLayerCapabilitiesOperations {
     supportsExportTiles: scala.Boolean,
     supportsTileMap: scala.Boolean
   ): VectorTileLayerCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsExportTiles")(supportsExportTiles)
-    __obj.updateDynamic("supportsTileMap")(supportsTileMap)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsExportTiles = supportsExportTiles, supportsTileMap = supportsTileMap)
+  
     __obj.asInstanceOf[VectorTileLayerCapabilitiesOperations]
   }
 }

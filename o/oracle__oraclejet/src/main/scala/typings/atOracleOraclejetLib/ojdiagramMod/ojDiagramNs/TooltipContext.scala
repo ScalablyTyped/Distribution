@@ -27,13 +27,8 @@ object TooltipContext {
     parentElement: stdLib.Element,
     `type`: java.lang.String
   ): TooltipContext[K1, K2, D1, D2] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TooltipContext[K1, K2, D1, D2]]
   }
 }

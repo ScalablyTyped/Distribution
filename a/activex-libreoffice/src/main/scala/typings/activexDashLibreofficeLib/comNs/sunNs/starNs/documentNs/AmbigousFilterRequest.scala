@@ -32,12 +32,8 @@ object AmbigousFilterRequest {
     SelectedFilter: java.lang.String,
     URL: java.lang.String
   ): AmbigousFilterRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DetectedFilter")(DetectedFilter)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("SelectedFilter")(SelectedFilter)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(Context = Context, DetectedFilter = DetectedFilter, Message = Message, SelectedFilter = SelectedFilter, URL = URL)
+  
     __obj.asInstanceOf[AmbigousFilterRequest]
   }
 }

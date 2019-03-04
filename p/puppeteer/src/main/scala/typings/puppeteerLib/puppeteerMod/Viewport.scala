@@ -42,9 +42,7 @@ object Viewport {
     isLandscape: js.UndefOr[scala.Boolean] = js.undefined,
     isMobile: js.UndefOr[scala.Boolean] = js.undefined
   ): Viewport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (deviceScaleFactor != null) __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTouch)) __obj.updateDynamic("hasTouch")(hasTouch)
     if (!js.isUndefined(isLandscape)) __obj.updateDynamic("isLandscape")(isLandscape)

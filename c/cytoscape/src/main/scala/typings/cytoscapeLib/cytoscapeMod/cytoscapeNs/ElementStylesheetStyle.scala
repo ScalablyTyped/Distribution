@@ -20,10 +20,8 @@ object ElementStylesheetStyle {
     selector: java.lang.String,
     style: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Node | cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Edge
   ): ElementStylesheetStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(json = json, selector = selector, style = style.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ElementStylesheetStyle]
   }
 }

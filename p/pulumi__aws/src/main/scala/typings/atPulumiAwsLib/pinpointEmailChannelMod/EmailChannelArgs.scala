@@ -37,11 +37,7 @@ object EmailChannelArgs {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): EmailChannelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    __obj.updateDynamic("fromAddress")(fromAddress.asInstanceOf[js.Any])
-    __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], fromAddress = fromAddress.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelArgs]
   }

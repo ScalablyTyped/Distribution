@@ -30,11 +30,7 @@ object GoToParameters {
     target: js.Any,
     options: js.Any = null
   ): GoToParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, target = target)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[GoToParameters]
   }

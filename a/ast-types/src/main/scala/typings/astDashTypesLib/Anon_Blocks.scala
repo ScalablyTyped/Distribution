@@ -22,9 +22,7 @@ object Anon_Blocks {
     filter: astDashTypesLib.genKindsMod.ExpressionKind = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_Blocks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(blocks = blocks, body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (loc != null) __obj.updateDynamic("loc")(loc)

@@ -20,7 +20,8 @@ object DefIntegerObject {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null
   ): DefIntegerObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (enum != null) __obj.updateDynamic("enum")(enum)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

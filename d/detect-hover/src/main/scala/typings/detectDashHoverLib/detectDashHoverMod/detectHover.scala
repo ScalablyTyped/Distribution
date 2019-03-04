@@ -22,12 +22,8 @@ object detectHover {
     none: scala.Boolean,
     update: js.Function0[scala.Unit]
   ): detectHover = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anyHover")(anyHover)
-    __obj.updateDynamic("anyNone")(anyNone)
-    __obj.updateDynamic("hover")(hover)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(anyHover = anyHover, anyNone = anyNone, hover = hover, none = none, update = update)
+  
     __obj.asInstanceOf[detectHover]
   }
 }

@@ -17,11 +17,8 @@ object IFileOpenPickerActivatedEventArgs {
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
   ): IFileOpenPickerActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileOpenPickerUI")(fileOpenPickerUI)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
+    val __obj = js.Dynamic.literal(fileOpenPickerUI = fileOpenPickerUI, kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen)
+  
     __obj.asInstanceOf[IFileOpenPickerActivatedEventArgs]
   }
 }

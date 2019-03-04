@@ -30,10 +30,8 @@ object ImportDeclaration {
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.ImportDeclaration
   ): ImportDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("importKind")(importKind.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("specifiers")(specifiers)
+    val __obj = js.Dynamic.literal(importKind = importKind.asInstanceOf[js.Any], source = source, specifiers = specifiers)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ImportDeclaration]
   }
 }

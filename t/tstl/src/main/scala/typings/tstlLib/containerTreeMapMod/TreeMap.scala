@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerITreeMapMod.ITreeMap because var conflicts: `data_`, iterator. Inlined  */ @JSImport("tstl/container/TreeMap", "TreeMap")
+- tstlLib.baseContainerITreeMapMod.ITreeMap because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/TreeMap", "TreeMap")
 @js.native
 /**
   * Default Constructor.
@@ -62,7 +62,7 @@ class TreeMap[Key, T] ()
   /**
     * @hidden
     */
-  var `tree_`: js.Any = js.native
+  var tree_ : js.Any = js.native
   /**
     * @inheritDoc
     */

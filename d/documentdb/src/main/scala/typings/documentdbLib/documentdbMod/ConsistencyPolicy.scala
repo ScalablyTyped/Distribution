@@ -18,10 +18,8 @@ object ConsistencyPolicy {
     maxStalenessIntervalInSeconds: scala.Double,
     maxStalenessPrefix: scala.Double
   ): ConsistencyPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultConsistencyLevel")(defaultConsistencyLevel)
-    __obj.updateDynamic("maxStalenessIntervalInSeconds")(maxStalenessIntervalInSeconds)
-    __obj.updateDynamic("maxStalenessPrefix")(maxStalenessPrefix)
+    val __obj = js.Dynamic.literal(defaultConsistencyLevel = defaultConsistencyLevel, maxStalenessIntervalInSeconds = maxStalenessIntervalInSeconds, maxStalenessPrefix = maxStalenessPrefix)
+  
     __obj.asInstanceOf[ConsistencyPolicy]
   }
 }

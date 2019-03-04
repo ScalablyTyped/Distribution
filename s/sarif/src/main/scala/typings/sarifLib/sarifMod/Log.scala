@@ -33,9 +33,7 @@ object Log {
     $schema: java.lang.String = null,
     properties: PropertyBag = null
   ): Log = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("runs")(runs)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(runs = runs, version = version)
     if ($schema != null) __obj.updateDynamic("$schema")($schema)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[Log]

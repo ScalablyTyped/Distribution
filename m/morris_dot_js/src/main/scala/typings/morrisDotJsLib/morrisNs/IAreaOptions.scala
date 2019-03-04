@@ -61,12 +61,7 @@ object IAreaOptions {
     ymax: scala.Double | java.lang.String = null,
     ymin: scala.Double | java.lang.String = null
   ): IAreaOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("xkey")(xkey)
-    __obj.updateDynamic("ykeys")(ykeys)
+    val __obj = js.Dynamic.literal(data = data, element = element, labels = labels, xkey = xkey, ykeys = ykeys)
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (!js.isUndefined(behaveLikeLine)) __obj.updateDynamic("behaveLikeLine")(behaveLikeLine)
     if (!js.isUndefined(continuousLine)) __obj.updateDynamic("continuousLine")(continuousLine)

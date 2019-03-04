@@ -33,9 +33,8 @@ object Synonym {
     synonyms: js.Array[java.lang.String],
     `type`: algoliasearchLib.algoliasearchLibStrings.synonym | algoliasearchLib.algoliasearchLibStrings.oneWaySynonym
   ): Synonym = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("objectID")(objectID)
-    __obj.updateDynamic("synonyms")(synonyms)
+    val __obj = js.Dynamic.literal(objectID = objectID, synonyms = synonyms)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Synonym]
   }
 }

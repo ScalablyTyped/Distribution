@@ -36,15 +36,8 @@ object sqlite3 {
     cached: sqlite3Lib.Anon_Callback,
     verbose: js.Function0[sqlite3]
   ): sqlite3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Database")(Database)
-    __obj.updateDynamic("OPEN_CREATE")(OPEN_CREATE)
-    __obj.updateDynamic("OPEN_READONLY")(OPEN_READONLY)
-    __obj.updateDynamic("OPEN_READWRITE")(OPEN_READWRITE)
-    __obj.updateDynamic("RunResult")(RunResult)
-    __obj.updateDynamic("Statement")(Statement)
-    __obj.updateDynamic("cached")(cached)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(Database = Database, OPEN_CREATE = OPEN_CREATE, OPEN_READONLY = OPEN_READONLY, OPEN_READWRITE = OPEN_READWRITE, RunResult = RunResult, Statement = Statement, cached = cached, verbose = verbose)
+  
     __obj.asInstanceOf[sqlite3]
   }
 }

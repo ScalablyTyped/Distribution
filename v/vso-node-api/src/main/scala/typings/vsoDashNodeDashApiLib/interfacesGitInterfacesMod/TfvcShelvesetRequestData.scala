@@ -47,14 +47,8 @@ object TfvcShelvesetRequestData {
     name: java.lang.String,
     owner: java.lang.String
   ): TfvcShelvesetRequestData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeDetails")(includeDetails)
-    __obj.updateDynamic("includeLinks")(includeLinks)
-    __obj.updateDynamic("includeWorkItems")(includeWorkItems)
-    __obj.updateDynamic("maxChangeCount")(maxChangeCount)
-    __obj.updateDynamic("maxCommentLength")(maxCommentLength)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
+    val __obj = js.Dynamic.literal(includeDetails = includeDetails, includeLinks = includeLinks, includeWorkItems = includeWorkItems, maxChangeCount = maxChangeCount, maxCommentLength = maxCommentLength, name = name, owner = owner)
+  
     __obj.asInstanceOf[TfvcShelvesetRequestData]
   }
 }

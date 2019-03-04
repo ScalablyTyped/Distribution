@@ -42,8 +42,7 @@ object Anon_AchievementIdAlt {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AchievementIdAlt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("achievementId")(achievementId)
+    val __obj = js.Dynamic.literal(achievementId = achievementId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

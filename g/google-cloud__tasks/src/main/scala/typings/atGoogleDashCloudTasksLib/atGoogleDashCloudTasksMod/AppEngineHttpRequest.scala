@@ -22,12 +22,8 @@ object AppEngineHttpRequest {
     httpMethod: java.lang.String,
     relativeUri: java.lang.String
   ): AppEngineHttpRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appEngineRouting")(appEngineRouting)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("httpMethod")(httpMethod)
-    __obj.updateDynamic("relativeUri")(relativeUri)
+    val __obj = js.Dynamic.literal(appEngineRouting = appEngineRouting, body = body, headers = headers, httpMethod = httpMethod, relativeUri = relativeUri)
+  
     __obj.asInstanceOf[AppEngineHttpRequest]
   }
 }

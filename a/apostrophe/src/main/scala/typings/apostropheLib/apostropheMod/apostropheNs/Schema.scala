@@ -88,33 +88,8 @@ object Schema {
     toGroups: js.Function1[Fields, scala.Unit],
     validate: js.Function2[Schema, js.Any, scala.Unit]
   ): Schema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFieldType")(addFieldType)
-    __obj.updateDynamic("addFilters")(addFilters)
-    __obj.updateDynamic("addJoinSlugFilter")(addJoinSlugFilter)
-    __obj.updateDynamic("afterInit")(afterInit)
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("convert")(convert)
-    __obj.updateDynamic("createRoutes")(createRoutes)
-    __obj.updateDynamic("cursorFilterInterested")(cursorFilterInterested)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("getFieldType")(getFieldType)
-    __obj.updateDynamic("indexFields")(indexFields)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("joinDriver")(joinDriver)
-    __obj.updateDynamic("joinFilterChoices")(joinFilterChoices)
-    __obj.updateDynamic("newInstance")(newInstance)
-    __obj.updateDynamic("pageServe")(pageServe)
-    __obj.updateDynamic("pushAssets")(pushAssets)
-    __obj.updateDynamic("pushCreateSingleton")(pushCreateSingleton)
-    __obj.updateDynamic("refine")(refine)
-    __obj.updateDynamic("sortedDistinct")(sortedDistinct)
-    __obj.updateDynamic("subset")(subset)
-    __obj.updateDynamic("subsetInstance")(subsetInstance)
-    __obj.updateDynamic("toGroups")(toGroups)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(addFieldType = addFieldType, addFilters = addFilters, addJoinSlugFilter = addJoinSlugFilter, afterInit = afterInit, compose = compose, convert = convert, createRoutes = createRoutes, cursorFilterInterested = cursorFilterInterested, empty = empty, export = export, getFieldType = getFieldType, indexFields = indexFields, isVisible = isVisible, join = join, joinDriver = joinDriver, joinFilterChoices = joinFilterChoices, newInstance = newInstance, pageServe = pageServe, pushAssets = pushAssets, pushCreateSingleton = pushCreateSingleton, refine = refine, sortedDistinct = sortedDistinct, subset = subset, subsetInstance = subsetInstance, toGroups = toGroups, validate = validate)
+  
     __obj.asInstanceOf[Schema]
   }
 }

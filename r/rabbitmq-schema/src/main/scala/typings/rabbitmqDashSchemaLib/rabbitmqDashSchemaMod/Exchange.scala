@@ -19,9 +19,8 @@ object Exchange {
     `type`: java.lang.String,
     options: js.Object = null
   ): Exchange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bindings")(bindings)
-    __obj.updateDynamic("exchange")(exchange)
+    val __obj = js.Dynamic.literal(bindings = bindings, exchange = exchange)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Exchange]
   }

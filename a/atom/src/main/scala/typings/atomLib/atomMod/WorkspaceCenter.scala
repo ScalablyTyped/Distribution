@@ -117,34 +117,8 @@ object WorkspaceCenter {
     paneForURI: js.Function1[java.lang.String, js.UndefOr[Pane]],
     saveAll: js.Function0[scala.Unit]
   ): WorkspaceCenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activateNextPane")(activateNextPane)
-    __obj.updateDynamic("activatePreviousPane")(activatePreviousPane)
-    __obj.updateDynamic("destroyActivePane")(destroyActivePane)
-    __obj.updateDynamic("getActivePane")(getActivePane)
-    __obj.updateDynamic("getActivePaneItem")(getActivePaneItem)
-    __obj.updateDynamic("getActiveTextEditor")(getActiveTextEditor)
-    __obj.updateDynamic("getPaneItems")(getPaneItems)
-    __obj.updateDynamic("getPanes")(getPanes)
-    __obj.updateDynamic("getTextEditors")(getTextEditors)
-    __obj.updateDynamic("observeActivePane")(observeActivePane)
-    __obj.updateDynamic("observeActivePaneItem")(observeActivePaneItem)
-    __obj.updateDynamic("observePaneItems")(observePaneItems)
-    __obj.updateDynamic("observePanes")(observePanes)
-    __obj.updateDynamic("observeTextEditors")(observeTextEditors)
-    __obj.updateDynamic("onDidAddPane")(onDidAddPane)
-    __obj.updateDynamic("onDidAddPaneItem")(onDidAddPaneItem)
-    __obj.updateDynamic("onDidAddTextEditor")(onDidAddTextEditor)
-    __obj.updateDynamic("onDidChangeActivePane")(onDidChangeActivePane)
-    __obj.updateDynamic("onDidChangeActivePaneItem")(onDidChangeActivePaneItem)
-    __obj.updateDynamic("onDidDestroyPane")(onDidDestroyPane)
-    __obj.updateDynamic("onDidDestroyPaneItem")(onDidDestroyPaneItem)
-    __obj.updateDynamic("onDidStopChangingActivePaneItem")(onDidStopChangingActivePaneItem)
-    __obj.updateDynamic("onWillDestroyPane")(onWillDestroyPane)
-    __obj.updateDynamic("onWillDestroyPaneItem")(onWillDestroyPaneItem)
-    __obj.updateDynamic("paneForItem")(paneForItem)
-    __obj.updateDynamic("paneForURI")(paneForURI)
-    __obj.updateDynamic("saveAll")(saveAll)
+    val __obj = js.Dynamic.literal(activateNextPane = activateNextPane, activatePreviousPane = activatePreviousPane, destroyActivePane = destroyActivePane, getActivePane = getActivePane, getActivePaneItem = getActivePaneItem, getActiveTextEditor = getActiveTextEditor, getPaneItems = getPaneItems, getPanes = getPanes, getTextEditors = getTextEditors, observeActivePane = observeActivePane, observeActivePaneItem = observeActivePaneItem, observePaneItems = observePaneItems, observePanes = observePanes, observeTextEditors = observeTextEditors, onDidAddPane = onDidAddPane, onDidAddPaneItem = onDidAddPaneItem, onDidAddTextEditor = onDidAddTextEditor, onDidChangeActivePane = onDidChangeActivePane, onDidChangeActivePaneItem = onDidChangeActivePaneItem, onDidDestroyPane = onDidDestroyPane, onDidDestroyPaneItem = onDidDestroyPaneItem, onDidStopChangingActivePaneItem = onDidStopChangingActivePaneItem, onWillDestroyPane = onWillDestroyPane, onWillDestroyPaneItem = onWillDestroyPaneItem, paneForItem = paneForItem, paneForURI = paneForURI, saveAll = saveAll)
+  
     __obj.asInstanceOf[WorkspaceCenter]
   }
 }

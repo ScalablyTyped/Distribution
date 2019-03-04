@@ -18,10 +18,8 @@ object IConfig {
     requires: js.Array[java.lang.String],
     use: js.Array[java.lang.String]
   ): IConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("requires")(requires)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(optional = optional, requires = requires, use = use)
+  
     __obj.asInstanceOf[IConfig]
   }
 }

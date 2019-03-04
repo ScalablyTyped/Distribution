@@ -27,9 +27,8 @@ object ASPxClientCustomizeMenuActionsEventArgs {
     Actions: js.Array[ASPxClientMenuAction],
     GetById: js.Function1[java.lang.String, ASPxClientMenuAction]
   ): ASPxClientCustomizeMenuActionsEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Actions")(Actions)
-    __obj.updateDynamic("GetById")(GetById)
+    val __obj = js.Dynamic.literal(Actions = Actions, GetById = GetById)
+  
     __obj.asInstanceOf[ASPxClientCustomizeMenuActionsEventArgs]
   }
 }

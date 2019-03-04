@@ -47,10 +47,7 @@ object Update {
     ExpressionAttributeValues: ExpressionAttributeValueMap = null,
     ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
   ): Update = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("TableName")(TableName)
-    __obj.updateDynamic("UpdateExpression")(UpdateExpression)
+    val __obj = js.Dynamic.literal(Key = Key, TableName = TableName, UpdateExpression = UpdateExpression)
     if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
     if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)

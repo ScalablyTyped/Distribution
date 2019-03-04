@@ -16,8 +16,8 @@ trait MappingMethods extends js.Object {
 object MappingMethods {
   @scala.inline
   def apply(getRootName: js.Function1[ASTPath[_], java.lang.String]): MappingMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRootName")(getRootName)
+    val __obj = js.Dynamic.literal(getRootName = getRootName)
+  
     __obj.asInstanceOf[MappingMethods]
   }
 }

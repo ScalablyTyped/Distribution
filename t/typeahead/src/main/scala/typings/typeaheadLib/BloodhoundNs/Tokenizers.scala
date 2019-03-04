@@ -30,10 +30,8 @@ object Tokenizers {
     obj: ObjTokenizer,
     whitespace: js.Function1[java.lang.String, js.Array[java.lang.String]]
   ): Tokenizers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nonword")(nonword)
-    __obj.updateDynamic("obj")(obj)
-    __obj.updateDynamic("whitespace")(whitespace)
+    val __obj = js.Dynamic.literal(nonword = nonword, obj = obj, whitespace = whitespace)
+  
     __obj.asInstanceOf[Tokenizers]
   }
 }

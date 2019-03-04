@@ -18,9 +18,7 @@ object Link {
     url: java.lang.String,
     StringDictionary: /* queryParam */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rel")(rel)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(rel = rel, url = url)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Link]
   }

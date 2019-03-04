@@ -22,12 +22,8 @@ object Anon_DOWN {
     RIGHT: java.lang.String,
     UP: java.lang.String
   ): Anon_DOWN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DOWN")(DOWN)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("UP")(UP)
+    val __obj = js.Dynamic.literal(DOWN = DOWN, LEFT = LEFT, NONE = NONE, RIGHT = RIGHT, UP = UP)
+  
     __obj.asInstanceOf[Anon_DOWN]
   }
 }

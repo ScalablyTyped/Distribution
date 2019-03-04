@@ -12,8 +12,8 @@ trait Date extends js.Object {
 object Date {
   @scala.inline
   def apply(should: chaiDashDatetimeLib.chaiDashDatetimeMod.Global.ChaiNs.Assertion): Date = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("should")(should)
+    val __obj = js.Dynamic.literal(should = should)
+  
     __obj.asInstanceOf[Date]
   }
 }

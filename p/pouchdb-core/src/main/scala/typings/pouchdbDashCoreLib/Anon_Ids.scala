@@ -13,9 +13,8 @@ trait Anon_Ids extends js.Object {
 object Anon_Ids {
   @scala.inline
   def apply(ids: js.Array[pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId], start: scala.Double): Anon_Ids = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(ids = ids, start = start)
+  
     __obj.asInstanceOf[Anon_Ids]
   }
 }

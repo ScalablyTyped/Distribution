@@ -47,12 +47,8 @@ object ICommAngularProvider {
     findCommand: js.Function1[java.lang.String, ICommAngularDescriptor],
     mapTo: js.Function1[java.lang.String, ICommAngularDescriptor]
   ): ICommAngularProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asFlow")(asFlow)
-    __obj.updateDynamic("asParallel")(asParallel)
-    __obj.updateDynamic("asSequence")(asSequence)
-    __obj.updateDynamic("findCommand")(findCommand)
-    __obj.updateDynamic("mapTo")(mapTo)
+    val __obj = js.Dynamic.literal(asFlow = asFlow, asParallel = asParallel, asSequence = asSequence, findCommand = findCommand, mapTo = mapTo)
+  
     __obj.asInstanceOf[ICommAngularProvider]
   }
 }

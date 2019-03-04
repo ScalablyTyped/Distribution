@@ -49,28 +49,8 @@ object XTextAppend {
     removeTextContent: js.Function1[XTextContent, scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): XTextAppend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendTextPortion")(appendTextPortion)
-    __obj.updateDynamic("createTextCursor")(createTextCursor)
-    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
-    __obj.updateDynamic("finishParagraph")(finishParagraph)
-    __obj.updateDynamic("finishParagraphInsert")(finishParagraphInsert)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
-    __obj.updateDynamic("insertString")(insertString)
-    __obj.updateDynamic("insertTextContent")(insertTextContent)
-    __obj.updateDynamic("insertTextPortion")(insertTextPortion)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTextContent")(removeTextContent)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, appendTextPortion = appendTextPortion, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, finishParagraph = finishParagraph, finishParagraphInsert = finishParagraphInsert, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, insertTextPortion = insertTextPortion, queryInterface = queryInterface, release = release, removeTextContent = removeTextContent, setString = setString)
+  
     __obj.asInstanceOf[XTextAppend]
   }
 }

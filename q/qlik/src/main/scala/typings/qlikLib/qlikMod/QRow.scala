@@ -18,10 +18,8 @@ object QRow {
     dimensions: js.Array[QDimensionCell],
     measures: js.Array[QMeasureCell]
   ): QRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cells")(cells)
-    __obj.updateDynamic("dimensions")(dimensions)
-    __obj.updateDynamic("measures")(measures)
+    val __obj = js.Dynamic.literal(cells = cells, dimensions = dimensions, measures = measures)
+  
     __obj.asInstanceOf[QRow]
   }
 }

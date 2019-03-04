@@ -33,8 +33,7 @@ object Tool {
     language: java.lang.String = null,
     properties: PropertyBag = null
   ): Tool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("driver")(driver)
+    val __obj = js.Dynamic.literal(driver = driver)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (language != null) __obj.updateDynamic("language")(language)
     if (properties != null) __obj.updateDynamic("properties")(properties)

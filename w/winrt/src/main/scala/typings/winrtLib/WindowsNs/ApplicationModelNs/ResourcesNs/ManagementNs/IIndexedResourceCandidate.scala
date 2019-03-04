@@ -24,12 +24,8 @@ object IIndexedResourceCandidate {
     uri: winrtLib.WindowsNs.FoundationNs.Uri,
     valueAsString: java.lang.String
   ): IIndexedResourceCandidate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("getQualifierValue")(getQualifierValue)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("qualifiers")(qualifiers)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("valueAsString")(valueAsString)
+    val __obj = js.Dynamic.literal(getQualifierValue = getQualifierValue, metadata = metadata, qualifiers = qualifiers, uri = uri, valueAsString = valueAsString)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IIndexedResourceCandidate]
   }
 }

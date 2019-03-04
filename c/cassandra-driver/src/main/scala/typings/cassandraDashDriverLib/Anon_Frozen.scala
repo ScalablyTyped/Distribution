@@ -13,9 +13,8 @@ trait Anon_Frozen extends js.Object {
 object Anon_Frozen {
   @scala.inline
   def apply(frozen: scala.Boolean, reversed: scala.Boolean): Anon_Frozen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frozen")(frozen)
-    __obj.updateDynamic("reversed")(reversed)
+    val __obj = js.Dynamic.literal(frozen = frozen, reversed = reversed)
+  
     __obj.asInstanceOf[Anon_Frozen]
   }
 }

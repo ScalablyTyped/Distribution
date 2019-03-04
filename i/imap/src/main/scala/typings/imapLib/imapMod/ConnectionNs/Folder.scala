@@ -24,11 +24,8 @@ object Folder {
     delimiter: java.lang.String,
     parent: Folder
   ): Folder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribs")(attribs)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("delimiter")(delimiter)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(attribs = attribs, children = children, delimiter = delimiter, parent = parent)
+  
     __obj.asInstanceOf[Folder]
   }
 }

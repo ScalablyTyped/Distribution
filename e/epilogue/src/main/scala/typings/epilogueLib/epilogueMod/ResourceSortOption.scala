@@ -13,9 +13,8 @@ trait ResourceSortOption extends js.Object {
 object ResourceSortOption {
   @scala.inline
   def apply(default: java.lang.String, param: java.lang.String): ResourceSortOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("param")(param)
+    val __obj = js.Dynamic.literal(default = default, param = param)
+  
     __obj.asInstanceOf[ResourceSortOption]
   }
 }

@@ -13,9 +13,8 @@ trait IPrintCustomItemDetails extends js.Object {
 object IPrintCustomItemDetails {
   @scala.inline
   def apply(itemDisplayName: java.lang.String, itemId: java.lang.String): IPrintCustomItemDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemDisplayName")(itemDisplayName)
-    __obj.updateDynamic("itemId")(itemId)
+    val __obj = js.Dynamic.literal(itemDisplayName = itemDisplayName, itemId = itemId)
+  
     __obj.asInstanceOf[IPrintCustomItemDetails]
   }
 }

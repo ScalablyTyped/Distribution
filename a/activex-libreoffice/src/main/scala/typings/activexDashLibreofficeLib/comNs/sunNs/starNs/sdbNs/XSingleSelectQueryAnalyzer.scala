@@ -251,32 +251,8 @@ object XSingleSelectQueryAnalyzer {
     setCommand: js.Function2[java.lang.String, scala.Double, scala.Unit],
     setQuery: js.Function1[java.lang.String, scala.Unit]
   ): XSingleSelectQueryAnalyzer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("Group")(Group)
-    __obj.updateDynamic("GroupColumns")(GroupColumns)
-    __obj.updateDynamic("HavingClause")(HavingClause)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("OrderColumns")(OrderColumns)
-    __obj.updateDynamic("Query")(Query)
-    __obj.updateDynamic("QueryWithSubstitution")(QueryWithSubstitution)
-    __obj.updateDynamic("StructuredFilter")(StructuredFilter)
-    __obj.updateDynamic("StructuredHavingClause")(StructuredHavingClause)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFilter")(getFilter)
-    __obj.updateDynamic("getGroup")(getGroup)
-    __obj.updateDynamic("getGroupColumns")(getGroupColumns)
-    __obj.updateDynamic("getHavingClause")(getHavingClause)
-    __obj.updateDynamic("getOrder")(getOrder)
-    __obj.updateDynamic("getOrderColumns")(getOrderColumns)
-    __obj.updateDynamic("getQuery")(getQuery)
-    __obj.updateDynamic("getQueryWithSubstitution")(getQueryWithSubstitution)
-    __obj.updateDynamic("getStructuredFilter")(getStructuredFilter)
-    __obj.updateDynamic("getStructuredHavingClause")(getStructuredHavingClause)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCommand")(setCommand)
-    __obj.updateDynamic("setQuery")(setQuery)
+    val __obj = js.Dynamic.literal(Filter = Filter, Group = Group, GroupColumns = GroupColumns, HavingClause = HavingClause, Order = Order, OrderColumns = OrderColumns, Query = Query, QueryWithSubstitution = QueryWithSubstitution, StructuredFilter = StructuredFilter, StructuredHavingClause = StructuredHavingClause, acquire = acquire, getFilter = getFilter, getGroup = getGroup, getGroupColumns = getGroupColumns, getHavingClause = getHavingClause, getOrder = getOrder, getOrderColumns = getOrderColumns, getQuery = getQuery, getQueryWithSubstitution = getQueryWithSubstitution, getStructuredFilter = getStructuredFilter, getStructuredHavingClause = getStructuredHavingClause, queryInterface = queryInterface, release = release, setCommand = setCommand, setQuery = setQuery)
+  
     __obj.asInstanceOf[XSingleSelectQueryAnalyzer]
   }
 }

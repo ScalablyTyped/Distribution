@@ -30,12 +30,8 @@ object NotificationTaskAddChangeRuleParams {
     rule: ChangeRule,
     user: java.lang.String
   ): NotificationTaskAddChangeRuleParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("rule")(rule)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, rule = rule, user = user)
+  
     __obj.asInstanceOf[NotificationTaskAddChangeRuleParams]
   }
 }

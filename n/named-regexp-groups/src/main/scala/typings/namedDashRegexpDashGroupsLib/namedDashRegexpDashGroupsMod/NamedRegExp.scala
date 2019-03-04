@@ -45,13 +45,8 @@ object NamedRegExp {
     test: js.Function1[java.lang.String, scala.Boolean],
     toString: js.Function0[java.lang.String]
   ): NamedRegExp = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("split")(split)
-    __obj.updateDynamic("test")(test)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(exec = exec, replace = replace, search = search, split = split, test = test, toString = toString)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[NamedRegExp]
   }
 }

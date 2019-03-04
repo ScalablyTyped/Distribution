@@ -49,11 +49,7 @@ object BroccoliPlugin {
     outputPath: java.lang.String,
     cachePath: java.lang.String = null
   ): BroccoliPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("getCallbackObject")(getCallbackObject)
-    __obj.updateDynamic("inputPaths")(inputPaths)
-    __obj.updateDynamic("outputPath")(outputPath)
+    val __obj = js.Dynamic.literal(build = build, getCallbackObject = getCallbackObject, inputPaths = inputPaths, outputPath = outputPath)
     if (cachePath != null) __obj.updateDynamic("cachePath")(cachePath)
     __obj.asInstanceOf[BroccoliPlugin]
   }

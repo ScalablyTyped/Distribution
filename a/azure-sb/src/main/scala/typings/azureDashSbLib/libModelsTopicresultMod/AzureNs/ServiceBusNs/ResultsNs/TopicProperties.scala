@@ -28,15 +28,8 @@ object TopicProperties {
     SizeInBytes: scala.Double,
     SupportOrdering: scala.Boolean
   ): TopicProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive)
-    __obj.updateDynamic("DuplicateDetectionHistoryTimeWindow")(DuplicateDetectionHistoryTimeWindow)
-    __obj.updateDynamic("EnableBatchedOperations")(EnableBatchedOperations)
-    __obj.updateDynamic("EnablePartitioning")(EnablePartitioning)
-    __obj.updateDynamic("MaxSizeInMegabytes")(MaxSizeInMegabytes)
-    __obj.updateDynamic("RequiresDuplicateDetection")(RequiresDuplicateDetection)
-    __obj.updateDynamic("SizeInBytes")(SizeInBytes)
-    __obj.updateDynamic("SupportOrdering")(SupportOrdering)
+    val __obj = js.Dynamic.literal(DefaultMessageTimeToLive = DefaultMessageTimeToLive, DuplicateDetectionHistoryTimeWindow = DuplicateDetectionHistoryTimeWindow, EnableBatchedOperations = EnableBatchedOperations, EnablePartitioning = EnablePartitioning, MaxSizeInMegabytes = MaxSizeInMegabytes, RequiresDuplicateDetection = RequiresDuplicateDetection, SizeInBytes = SizeInBytes, SupportOrdering = SupportOrdering)
+  
     __obj.asInstanceOf[TopicProperties]
   }
 }

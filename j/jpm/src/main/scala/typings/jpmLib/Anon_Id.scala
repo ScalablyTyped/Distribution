@@ -28,9 +28,7 @@ object Anon_Id {
     onReady: js.Function1[/* worker */ jpmLib.sdkUiSidebarMod.SidebarWorker, _] = null,
     onShow: js.Function0[_] = null
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(title = title, url = url)
     if (id != null) __obj.updateDynamic("id")(id)
     if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
     if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)

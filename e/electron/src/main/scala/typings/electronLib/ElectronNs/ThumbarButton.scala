@@ -31,9 +31,7 @@ object ThumbarButton {
     flags: js.Array[java.lang.String] = null,
     tooltip: java.lang.String = null
   ): ThumbarButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(click = click, icon = icon)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     __obj.asInstanceOf[ThumbarButton]

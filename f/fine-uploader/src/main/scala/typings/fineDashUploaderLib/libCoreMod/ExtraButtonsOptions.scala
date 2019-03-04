@@ -51,8 +51,7 @@ object ExtraButtonsOptions {
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     validation: js.Any = null
   ): ExtraButtonsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(element = element)
     if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
     if (!js.isUndefined(folders)) __obj.updateDynamic("folders")(folders)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)

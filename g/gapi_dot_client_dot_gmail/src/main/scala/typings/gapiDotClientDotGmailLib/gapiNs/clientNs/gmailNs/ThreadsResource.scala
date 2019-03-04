@@ -48,13 +48,8 @@ object ThreadsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Thread]
     ]
   ): ThreadsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("modify")(modify)
-    __obj.updateDynamic("trash")(trash)
-    __obj.updateDynamic("untrash")(untrash)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, modify = modify, trash = trash, untrash = untrash)
+  
     __obj.asInstanceOf[ThreadsResource]
   }
 }

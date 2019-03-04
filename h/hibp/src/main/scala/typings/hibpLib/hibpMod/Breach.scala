@@ -42,22 +42,8 @@ object Breach {
     PwnCount: scala.Double,
     Title: java.lang.String
   ): Breach = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddedDate")(AddedDate)
-    __obj.updateDynamic("BreachDate")(BreachDate)
-    __obj.updateDynamic("DataClasses")(DataClasses)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Domain")(Domain)
-    __obj.updateDynamic("IsFabricated")(IsFabricated)
-    __obj.updateDynamic("IsRetired")(IsRetired)
-    __obj.updateDynamic("IsSensitive")(IsSensitive)
-    __obj.updateDynamic("IsSpamList")(IsSpamList)
-    __obj.updateDynamic("IsVerified")(IsVerified)
-    __obj.updateDynamic("LogoPath")(LogoPath)
-    __obj.updateDynamic("ModifiedDate")(ModifiedDate)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PwnCount")(PwnCount)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(AddedDate = AddedDate, BreachDate = BreachDate, DataClasses = DataClasses, Description = Description, Domain = Domain, IsFabricated = IsFabricated, IsRetired = IsRetired, IsSensitive = IsSensitive, IsSpamList = IsSpamList, IsVerified = IsVerified, LogoPath = LogoPath, ModifiedDate = ModifiedDate, Name = Name, PwnCount = PwnCount, Title = Title)
+  
     __obj.asInstanceOf[Breach]
   }
 }

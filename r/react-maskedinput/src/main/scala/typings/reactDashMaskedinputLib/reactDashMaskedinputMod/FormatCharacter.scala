@@ -16,8 +16,7 @@ object FormatCharacter {
     validate: js.Function1[java.lang.String, java.lang.String],
     transform: js.Function1[/* char */ java.lang.String, java.lang.String] = null
   ): FormatCharacter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(validate = validate)
     if (transform != null) __obj.updateDynamic("transform")(transform)
     __obj.asInstanceOf[FormatCharacter]
   }

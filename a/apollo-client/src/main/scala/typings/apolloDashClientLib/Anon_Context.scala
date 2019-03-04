@@ -22,8 +22,7 @@ object Anon_Context {
     onlyRunForcedResolvers: js.UndefOr[scala.Boolean] = js.undefined,
     variables: stdLib.Record[java.lang.String, _] = null
   ): Anon_Context[TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remoteResult")(remoteResult)
+    val __obj = js.Dynamic.literal(remoteResult = remoteResult)
     if (context != null) __obj.updateDynamic("context")(context)
     if (document != null) __obj.updateDynamic("document")(document)
     if (!js.isUndefined(onlyRunForcedResolvers)) __obj.updateDynamic("onlyRunForcedResolvers")(onlyRunForcedResolvers)

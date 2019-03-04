@@ -20,10 +20,8 @@ object RedirectResult {
     ],
     location: js.Any
   ): RedirectResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("executeAsync")(executeAsync)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync, location = location)
+  
     __obj.asInstanceOf[RedirectResult]
   }
 }

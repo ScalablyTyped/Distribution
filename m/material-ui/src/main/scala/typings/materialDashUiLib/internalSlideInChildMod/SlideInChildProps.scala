@@ -24,8 +24,7 @@ object SlideInChildProps {
     ref: reactLib.reactMod.ReactNs.LegacyRef[SlideInChild] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): SlideInChildProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLeaveDirection")(getLeaveDirection)
+    val __obj = js.Dynamic.literal(getLeaveDirection = getLeaveDirection)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (enterDelay != null) __obj.updateDynamic("enterDelay")(enterDelay.asInstanceOf[js.Any])

@@ -21,10 +21,8 @@ object RsaOAEP {
     `type`: scala.Double,
     sourceData: nodeLib.Buffer = null
   ): RsaOAEP = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hashAlg")(hashAlg)
-    __obj.updateDynamic("mgf")(mgf)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(hashAlg = hashAlg, mgf = mgf, source = source)
+    __obj.updateDynamic("type")(`type`)
     if (sourceData != null) __obj.updateDynamic("sourceData")(sourceData)
     __obj.asInstanceOf[RsaOAEP]
   }

@@ -61,16 +61,8 @@ object SingularPosition {
     renderedWidth: js.Function0[scala.Double],
     width: js.Function0[scala.Double]
   ): SingularPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("outerHeight")(outerHeight)
-    __obj.updateDynamic("outerWidth")(outerWidth)
-    __obj.updateDynamic("renderedHeight")(renderedHeight)
-    __obj.updateDynamic("renderedOuterHeight")(renderedOuterHeight)
-    __obj.updateDynamic("renderedOuterWidth")(renderedOuterWidth)
-    __obj.updateDynamic("renderedWidth")(renderedWidth)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(active = active, height = height, outerHeight = outerHeight, outerWidth = outerWidth, renderedHeight = renderedHeight, renderedOuterHeight = renderedOuterHeight, renderedOuterWidth = renderedOuterWidth, renderedWidth = renderedWidth, width = width)
+  
     __obj.asInstanceOf[SingularPosition]
   }
 }

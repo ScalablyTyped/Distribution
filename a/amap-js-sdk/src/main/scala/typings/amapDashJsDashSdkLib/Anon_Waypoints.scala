@@ -12,8 +12,8 @@ trait Anon_Waypoints extends js.Object {
 object Anon_Waypoints {
   @scala.inline
   def apply(waypoints: js.Array[amapDashJsDashSdkLib.AMapNs.LngLat]): Anon_Waypoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("waypoints")(waypoints)
+    val __obj = js.Dynamic.literal(waypoints = waypoints)
+  
     __obj.asInstanceOf[Anon_Waypoints]
   }
 }

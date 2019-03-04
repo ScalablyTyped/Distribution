@@ -15,8 +15,8 @@ trait AgentTargetExecutionOptions extends js.Object {
 object AgentTargetExecutionOptions {
   @scala.inline
   def apply(`type`: scala.Double): AgentTargetExecutionOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AgentTargetExecutionOptions]
   }
 }

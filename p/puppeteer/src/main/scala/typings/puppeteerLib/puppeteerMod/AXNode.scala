@@ -142,33 +142,8 @@ object AXNode {
     valuemin: scala.Double,
     valuetext: java.lang.String
   ): AXNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocomplete")(autocomplete)
-    __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("haspopup")(haspopup)
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("keyshortcuts")(keyshortcuts)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("modal")(modal)
-    __obj.updateDynamic("multiline")(multiline)
-    __obj.updateDynamic("multiselectable")(multiselectable)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("roledescription")(roledescription)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.updateDynamic("valuemax")(valuemax)
-    __obj.updateDynamic("valuemin")(valuemin)
-    __obj.updateDynamic("valuetext")(valuetext)
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, checked = checked.asInstanceOf[js.Any], children = children, description = description, disabled = disabled, expanded = expanded, focused = focused, haspopup = haspopup, invalid = invalid, keyshortcuts = keyshortcuts, level = level, modal = modal, multiline = multiline, multiselectable = multiselectable, name = name, orientation = orientation, pressed = pressed.asInstanceOf[js.Any], readonly = readonly, required = required, role = role, roledescription = roledescription, selected = selected, value = value.asInstanceOf[js.Any], valuemax = valuemax, valuemin = valuemin, valuetext = valuetext)
+  
     __obj.asInstanceOf[AXNode]
   }
 }

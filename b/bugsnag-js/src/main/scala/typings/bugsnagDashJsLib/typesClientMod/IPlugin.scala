@@ -18,8 +18,7 @@ object IPlugin {
     configSchema: org.scalablytyped.runtime.StringDictionary[IConfigSchemaEntry] = null,
     destroy: js.Function0[scala.Unit] = null
   ): IPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(init = init)
     if (configSchema != null) __obj.updateDynamic("configSchema")(configSchema)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     __obj.asInstanceOf[IPlugin]

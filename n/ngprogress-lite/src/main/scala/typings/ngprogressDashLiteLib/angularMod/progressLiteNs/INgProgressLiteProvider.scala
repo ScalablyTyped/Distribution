@@ -12,8 +12,8 @@ trait INgProgressLiteProvider extends js.Object {
 object INgProgressLiteProvider {
   @scala.inline
   def apply(settings: IConfigurationOptions): INgProgressLiteProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(settings = settings)
+  
     __obj.asInstanceOf[INgProgressLiteProvider]
   }
 }

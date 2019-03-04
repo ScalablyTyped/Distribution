@@ -27,11 +27,8 @@ object XAction {
     release: js.Function0[scala.Unit],
     run: js.Function0[js.Any]
   ): XAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, run = run)
+  
     __obj.asInstanceOf[XAction]
   }
 }

@@ -24,13 +24,8 @@ object TracekitStackTrace {
     url: java.lang.String,
     useragent: java.lang.String
   ): TracekitStackTrace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("useragent")(useragent)
+    val __obj = js.Dynamic.literal(message = message, mode = mode, name = name, stack = stack, url = url, useragent = useragent)
+  
     __obj.asInstanceOf[TracekitStackTrace]
   }
 }

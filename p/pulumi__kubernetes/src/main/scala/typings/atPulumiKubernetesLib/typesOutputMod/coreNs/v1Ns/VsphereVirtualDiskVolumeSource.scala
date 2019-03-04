@@ -36,11 +36,8 @@ object VsphereVirtualDiskVolumeSource {
     storagePolicyName: java.lang.String,
     volumePath: java.lang.String
   ): VsphereVirtualDiskVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("storagePolicyID")(storagePolicyID)
-    __obj.updateDynamic("storagePolicyName")(storagePolicyName)
-    __obj.updateDynamic("volumePath")(volumePath)
+    val __obj = js.Dynamic.literal(fsType = fsType, storagePolicyID = storagePolicyID, storagePolicyName = storagePolicyName, volumePath = volumePath)
+  
     __obj.asInstanceOf[VsphereVirtualDiskVolumeSource]
   }
 }

@@ -24,8 +24,7 @@ object IRefundCreationOptionsWithCharge {
     refund_application_fee: js.UndefOr[scala.Boolean] = js.undefined,
     reverse_transfer: js.UndefOr[scala.Boolean] = js.undefined
   ): IRefundCreationOptionsWithCharge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charge")(charge)
+    val __obj = js.Dynamic.literal(charge = charge)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

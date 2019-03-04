@@ -22,15 +22,8 @@ object CreateQuery {
     ifNotExists: js.Function0[Executable[scala.Unit]],
     toQuery: js.Function0[QueryLike]
   ): CreateQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("allWithin")(allWithin)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("execWithin")(execWithin)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getWithin")(getWithin)
-    __obj.updateDynamic("ifNotExists")(ifNotExists)
-    __obj.updateDynamic("toQuery")(toQuery)
+    val __obj = js.Dynamic.literal(all = all, allWithin = allWithin, exec = exec, execWithin = execWithin, get = get, getWithin = getWithin, ifNotExists = ifNotExists, toQuery = toQuery)
+  
     __obj.asInstanceOf[CreateQuery]
   }
 }

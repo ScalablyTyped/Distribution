@@ -14,10 +14,8 @@ trait SearchViewModelSelectResultEvent extends js.Object {
 object SearchViewModelSelectResultEvent {
   @scala.inline
   def apply(result: SearchViewModelSelectResultEventResult, source: js.Any, sourceIndex: scala.Double): SearchViewModelSelectResultEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceIndex")(sourceIndex)
+    val __obj = js.Dynamic.literal(result = result, source = source, sourceIndex = sourceIndex)
+  
     __obj.asInstanceOf[SearchViewModelSelectResultEvent]
   }
 }

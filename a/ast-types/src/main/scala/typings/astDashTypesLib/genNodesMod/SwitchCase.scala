@@ -22,8 +22,8 @@ object SwitchCase {
     `type`: astDashTypesLib.astDashTypesLibStrings.SwitchCase,
     test: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): SwitchCase = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("consequent")(consequent)
+    val __obj = js.Dynamic.literal(consequent = consequent)
+    __obj.updateDynamic("type")(`type`)
     if (test != null) __obj.updateDynamic("test")(test)
     __obj.asInstanceOf[SwitchCase]
   }

@@ -71,11 +71,7 @@ object StructureMapGroup {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): StructureMapGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rule")(rule)
-    __obj.updateDynamic("typeMode")(typeMode)
+    val __obj = js.Dynamic.literal(input = input, name = name, rule = rule, typeMode = typeMode)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_extends != null) __obj.updateDynamic("_extends")(_extends)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

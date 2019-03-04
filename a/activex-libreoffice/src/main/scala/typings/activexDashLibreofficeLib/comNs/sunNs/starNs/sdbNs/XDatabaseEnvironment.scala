@@ -33,17 +33,8 @@ object XDatabaseEnvironment {
     release: js.Function0[scala.Unit],
     setLoginTimeout: js.Function1[scala.Double, scala.Unit]
   ): XDatabaseEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createDatabaseAccess")(createDatabaseAccess)
-    __obj.updateDynamic("getConnection")(getConnection)
-    __obj.updateDynamic("getConnectionWithInfo")(getConnectionWithInfo)
-    __obj.updateDynamic("getDatabaseAccess")(getDatabaseAccess)
-    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
+    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = acquire, createDatabaseAccess = createDatabaseAccess, getConnection = getConnection, getConnectionWithInfo = getConnectionWithInfo, getDatabaseAccess = getDatabaseAccess, getLoginTimeout = getLoginTimeout, queryInterface = queryInterface, release = release, setLoginTimeout = setLoginTimeout)
+  
     __obj.asInstanceOf[XDatabaseEnvironment]
   }
 }

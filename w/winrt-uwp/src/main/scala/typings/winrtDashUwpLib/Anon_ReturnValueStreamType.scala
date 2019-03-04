@@ -16,9 +16,8 @@ object Anon_ReturnValueStreamType {
     returnValue: scala.Double,
     streamType: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDMediaStreamType
   ): Anon_ReturnValueStreamType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("streamType")(streamType)
+    val __obj = js.Dynamic.literal(returnValue = returnValue, streamType = streamType)
+  
     __obj.asInstanceOf[Anon_ReturnValueStreamType]
   }
 }

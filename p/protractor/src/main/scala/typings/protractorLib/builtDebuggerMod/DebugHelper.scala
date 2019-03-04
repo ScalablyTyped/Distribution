@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/debugger", "DebugHelper")
 @js.native
 class DebugHelper protected () extends js.Object {
-  def this(`browserUnderDebug_`: protractorLib.builtBrowserMod.ProtractorBrowser) = this()
-  var `browserUnderDebug_`: js.Any = js.native
+  def this(browserUnderDebug_ : protractorLib.builtBrowserMod.ProtractorBrowser) = this()
+  var browserUnderDebug_ : js.Any = js.native
   var dbgCodeExecutor: js.Any = js.native
   /**
     * Set to true when we validate that the debug port is open. Since the debug
     * port is held open forever once the debugger is attached, it's important
     * we only do validation once.
     */
-  var `debuggerValidated_`: scala.Boolean = js.native
+  var debuggerValidated_ : scala.Boolean = js.native
   def init(debuggerClientPath: java.lang.String, onStartFn: js.Function): scala.Unit = js.native
   def init(debuggerClientPath: java.lang.String, onStartFn: js.Function, opt_debugPort: scala.Double): scala.Unit = js.native
   def initBlocking(debuggerClientPath: java.lang.String, onStartFn: js.Function): scala.Unit = js.native
@@ -39,8 +39,8 @@ class DebugHelper protected () extends js.Object {
     * @return {Promise} If blockUntilExit, a promise resolved when the debugger process
     *     exits. Otherwise, resolved when the debugger process is ready to begin.
     */
-  def `init_`(debuggerClientPath: java.lang.String, blockUntilExit: scala.Boolean, onStartFn: js.Function): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Object] = js.native
-  def `init_`(
+  def init_(debuggerClientPath: java.lang.String, blockUntilExit: scala.Boolean, onStartFn: js.Function): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Object] = js.native
+  def init_(
     debuggerClientPath: java.lang.String,
     blockUntilExit: scala.Boolean,
     onStartFn: js.Function,
@@ -58,6 +58,6 @@ class DebugHelper protected () extends js.Object {
     *     is done. The promise will resolve to a boolean which represents whether
     *     this is the first time that the debugger is called.
     */
-  /* private */ def `validatePortAvailability_`(port: js.Any): js.Any = js.native
+  /* private */ def validatePortAvailability_(port: js.Any): js.Any = js.native
 }
 

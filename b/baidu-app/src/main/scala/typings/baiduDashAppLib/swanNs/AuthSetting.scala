@@ -32,7 +32,14 @@ object AuthSetting {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function1[/* res */ ErrMsgResponse, scala.Unit] = null
   ): AuthSetting = {
-    val __obj = js.Dynamic.literal(`scope.address` = `scope.address`, `scope.invoiceTitle` = `scope.invoiceTitle`, `scope.record` = `scope.record`, `scope.userInfo` = `scope.userInfo`, `scope.userLocation` = `scope.userLocation`, `scope.werun` = `scope.werun`, `scope.writePhotosAlbum` = `scope.writePhotosAlbum`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope.address")(`scope.address`)
+    __obj.updateDynamic("scope.invoiceTitle")(`scope.invoiceTitle`)
+    __obj.updateDynamic("scope.record")(`scope.record`)
+    __obj.updateDynamic("scope.userInfo")(`scope.userInfo`)
+    __obj.updateDynamic("scope.userLocation")(`scope.userLocation`)
+    __obj.updateDynamic("scope.werun")(`scope.werun`)
+    __obj.updateDynamic("scope.writePhotosAlbum")(`scope.writePhotosAlbum`)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

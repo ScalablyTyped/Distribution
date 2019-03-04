@@ -31,12 +31,8 @@ object XSheetDataProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetDataProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createDataSequenceByFormulaTokens")(createDataSequenceByFormulaTokens)
-    __obj.updateDynamic("createDataSequenceByFormulaTokensPossible")(createDataSequenceByFormulaTokensPossible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createDataSequenceByFormulaTokens = createDataSequenceByFormulaTokens, createDataSequenceByFormulaTokensPossible = createDataSequenceByFormulaTokensPossible, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetDataProvider]
   }
 }

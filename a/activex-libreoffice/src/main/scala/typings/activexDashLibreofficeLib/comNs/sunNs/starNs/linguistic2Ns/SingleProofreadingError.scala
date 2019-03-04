@@ -32,15 +32,8 @@ object SingleProofreadingError {
     nErrorStart: scala.Double,
     nErrorType: scala.Double
   ): SingleProofreadingError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aFullComment")(aFullComment)
-    __obj.updateDynamic("aProperties")(aProperties)
-    __obj.updateDynamic("aRuleIdentifier")(aRuleIdentifier)
-    __obj.updateDynamic("aShortComment")(aShortComment)
-    __obj.updateDynamic("aSuggestions")(aSuggestions)
-    __obj.updateDynamic("nErrorLength")(nErrorLength)
-    __obj.updateDynamic("nErrorStart")(nErrorStart)
-    __obj.updateDynamic("nErrorType")(nErrorType)
+    val __obj = js.Dynamic.literal(aFullComment = aFullComment, aProperties = aProperties, aRuleIdentifier = aRuleIdentifier, aShortComment = aShortComment, aSuggestions = aSuggestions, nErrorLength = nErrorLength, nErrorStart = nErrorStart, nErrorType = nErrorType)
+  
     __obj.asInstanceOf[SingleProofreadingError]
   }
 }

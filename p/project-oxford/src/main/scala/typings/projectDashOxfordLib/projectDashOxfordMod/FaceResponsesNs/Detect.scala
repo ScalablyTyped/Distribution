@@ -20,11 +20,8 @@ object Detect {
     faceLandmarks: FaceLandmarks,
     faceRectangle: FaceRectangle
   ): Detect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("faceId")(faceId)
-    __obj.updateDynamic("faceLandmarks")(faceLandmarks)
-    __obj.updateDynamic("faceRectangle")(faceRectangle)
+    val __obj = js.Dynamic.literal(attributes = attributes, faceId = faceId, faceLandmarks = faceLandmarks, faceRectangle = faceRectangle)
+  
     __obj.asInstanceOf[Detect]
   }
 }

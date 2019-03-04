@@ -34,18 +34,7 @@ object StructureKeeperLair {
     structureType: STRUCTURE_KEEPER_LAIR,
     ticksToSpawn: scala.Int | scala.Double = null
   ): StructureKeeperLair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("my")(my)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("structureType")(structureType)
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, structureType = structureType)
     if (ticksToSpawn != null) __obj.updateDynamic("ticksToSpawn")(ticksToSpawn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructureKeeperLair]
   }

@@ -32,8 +32,7 @@ object ProgressCircleProps {
     strokeWidth: scala.Int | scala.Double = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): ProgressCircleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(progress = progress)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animateDuration != null) __obj.updateDynamic("animateDuration")(animateDuration.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)

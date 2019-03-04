@@ -13,10 +13,8 @@ trait CryptoEx
 object CryptoEx {
   @scala.inline
   def apply(getRandomValues: js.Function1[js.Any, js.Any], name: java.lang.String, subtle: stdLib.SubtleCrypto): CryptoEx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRandomValues")(getRandomValues)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subtle")(subtle)
+    val __obj = js.Dynamic.literal(getRandomValues = getRandomValues, name = name, subtle = subtle)
+  
     __obj.asInstanceOf[CryptoEx]
   }
 }

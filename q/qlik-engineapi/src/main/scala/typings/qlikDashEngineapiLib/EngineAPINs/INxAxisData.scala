@@ -18,8 +18,8 @@ trait INxAxisData extends js.Object {
 object INxAxisData {
   @scala.inline
   def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAxis")(qAxis)
+    val __obj = js.Dynamic.literal(qAxis = qAxis)
+  
     __obj.asInstanceOf[INxAxisData]
   }
 }

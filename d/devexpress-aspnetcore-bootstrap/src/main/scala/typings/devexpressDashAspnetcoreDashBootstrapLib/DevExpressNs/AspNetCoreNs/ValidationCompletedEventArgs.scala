@@ -25,14 +25,8 @@ object ValidationCompletedEventArgs {
     sender: Control,
     validationGroup: java.lang.String
   ): ValidationCompletedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("firstInvalidControl")(firstInvalidControl)
-    __obj.updateDynamic("firstVisibleInvalidControl")(firstVisibleInvalidControl)
-    __obj.updateDynamic("invisibleControlsValidated")(invisibleControlsValidated)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("validationGroup")(validationGroup)
+    val __obj = js.Dynamic.literal(container = container, firstInvalidControl = firstInvalidControl, firstVisibleInvalidControl = firstVisibleInvalidControl, invisibleControlsValidated = invisibleControlsValidated, isValid = isValid, sender = sender, validationGroup = validationGroup)
+  
     __obj.asInstanceOf[ValidationCompletedEventArgs]
   }
 }

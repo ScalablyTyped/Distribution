@@ -39,19 +39,8 @@ object XParameter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isIn")(isIn)
-    __obj.updateDynamic("isOut")(isOut)
-    __obj.updateDynamic("isRestParameter")(isRestParameter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Name = Name, Position = Position, Type = Type, acquire = acquire, getName = getName, getPosition = getPosition, getType = getType, isIn = isIn, isOut = isOut, isRestParameter = isRestParameter, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XParameter]
   }
 }

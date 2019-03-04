@@ -20,11 +20,8 @@ object Anon_Controller {
     controllerParameter: java.lang.String,
     httpContext: java.lang.String
   ): Anon_Controller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("controllerMethod")(controllerMethod)
-    __obj.updateDynamic("controllerParameter")(controllerParameter)
-    __obj.updateDynamic("httpContext")(httpContext)
+    val __obj = js.Dynamic.literal(controller = controller, controllerMethod = controllerMethod, controllerParameter = controllerParameter, httpContext = httpContext)
+  
     __obj.asInstanceOf[Anon_Controller]
   }
 }

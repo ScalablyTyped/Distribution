@@ -31,12 +31,8 @@ object NotificationEventFieldType {
     subscriptionFieldType: SubscriptionFieldType,
     value: ValueDefinition
   ): NotificationEventFieldType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("operatorConstraints")(operatorConstraints)
-    __obj.updateDynamic("operators")(operators)
-    __obj.updateDynamic("subscriptionFieldType")(subscriptionFieldType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, operatorConstraints = operatorConstraints, operators = operators, subscriptionFieldType = subscriptionFieldType, value = value)
+  
     __obj.asInstanceOf[NotificationEventFieldType]
   }
 }

@@ -36,22 +36,8 @@ object XTempFile {
     release: js.Function0[scala.Unit],
     seek: js.Function1[scala.Double, scala.Unit]
   ): XTempFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("RemoveFile")(RemoveFile)
-    __obj.updateDynamic("ResourceName")(ResourceName)
-    __obj.updateDynamic("Uri")(Uri)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("seek")(seek)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, Length = Length, OutputStream = OutputStream, Position = Position, RemoveFile = RemoveFile, ResourceName = ResourceName, Uri = Uri, acquire = acquire, getInputStream = getInputStream, getLength = getLength, getOutputStream = getOutputStream, getPosition = getPosition, queryInterface = queryInterface, release = release, seek = seek)
+  
     __obj.asInstanceOf[XTempFile]
   }
 }

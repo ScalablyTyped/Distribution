@@ -23,9 +23,8 @@ trait ChangeFontForeColorCommand extends CommandBase {
 object ChangeFontForeColorCommand {
   @scala.inline
   def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[js.Any]): ChangeFontForeColorCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[ChangeFontForeColorCommand]
   }
 }

@@ -26,14 +26,8 @@ object Anon_GridSize {
     offsetY: scala.Double,
     zoom: scala.Double
   ): Anon_GridSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gridSize")(gridSize)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(gridSize = gridSize, id = id, links = links, nodes = nodes, offsetX = offsetX, offsetY = offsetY, zoom = zoom)
+  
     __obj.asInstanceOf[Anon_GridSize]
   }
 }

@@ -16,9 +16,8 @@ object Anon_RFC1738 {
     RFC1738: js.Function1[java.lang.String, java.lang.String],
     RFC3986: js.Function1[java.lang.String, java.lang.String]
   ): Anon_RFC1738 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RFC1738")(RFC1738)
-    __obj.updateDynamic("RFC3986")(RFC3986)
+    val __obj = js.Dynamic.literal(RFC1738 = RFC1738, RFC3986 = RFC3986)
+  
     __obj.asInstanceOf[Anon_RFC1738]
   }
 }

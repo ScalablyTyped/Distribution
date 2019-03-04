@@ -30,8 +30,8 @@ object Anon_DataEventHandle {
       scala.Unit
     ]
   ): Anon_DataEventHandle[TTarget, TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handle")(handle)
+    val __obj = js.Dynamic.literal(handle = handle)
+  
     __obj.asInstanceOf[Anon_DataEventHandle[TTarget, TData]]
   }
 }

@@ -21,11 +21,8 @@ object Site {
     locationId: scala.Double,
     siteId: java.lang.String
   ): Site = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appstoreName")(appstoreName)
-    __obj.updateDynamic("facebookId")(facebookId)
-    __obj.updateDynamic("locationId")(locationId)
-    __obj.updateDynamic("siteId")(siteId)
+    val __obj = js.Dynamic.literal(appstoreName = appstoreName, facebookId = facebookId, locationId = locationId, siteId = siteId)
+  
     __obj.asInstanceOf[Site]
   }
 }

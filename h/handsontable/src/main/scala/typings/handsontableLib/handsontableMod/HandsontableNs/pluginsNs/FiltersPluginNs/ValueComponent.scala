@@ -29,19 +29,8 @@ object ValueComponent {
     show: js.Function0[scala.Unit],
     updateState: js.Function1[js.Object, scala.Unit]
   ): ValueComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("elements")(elements)
-    __obj.updateDynamic("getMenuItemDescriptor")(getMenuItemDescriptor)
-    __obj.updateDynamic("getMultipleSelectElement")(getMultipleSelectElement)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isHidden")(isHidden)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setState")(setState)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("updateState")(updateState)
+    val __obj = js.Dynamic.literal(destroy = destroy, elements = elements, getMenuItemDescriptor = getMenuItemDescriptor, getMultipleSelectElement = getMultipleSelectElement, getState = getState, hidden = hidden, hide = hide, isHidden = isHidden, reset = reset, setState = setState, show = show, updateState = updateState)
+  
     __obj.asInstanceOf[ValueComponent]
   }
 }

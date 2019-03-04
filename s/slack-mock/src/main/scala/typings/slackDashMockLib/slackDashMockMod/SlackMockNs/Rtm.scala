@@ -25,13 +25,8 @@ object Rtm {
     startServer: js.Function1[java.lang.String, scala.Unit],
     stopServer: js.Function1[java.lang.String, scala.Unit]
   ): Rtm[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("clients")(clients)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("startServer")(startServer)
-    __obj.updateDynamic("stopServer")(stopServer)
+    val __obj = js.Dynamic.literal(calls = calls, clients = clients, reset = reset, send = send, startServer = startServer, stopServer = stopServer)
+  
     __obj.asInstanceOf[Rtm[T]]
   }
 }

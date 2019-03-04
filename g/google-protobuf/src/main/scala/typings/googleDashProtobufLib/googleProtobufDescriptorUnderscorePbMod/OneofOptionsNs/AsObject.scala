@@ -18,8 +18,8 @@ object AsObject {
       googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uninterpretedOptionList")(uninterpretedOptionList)
+    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

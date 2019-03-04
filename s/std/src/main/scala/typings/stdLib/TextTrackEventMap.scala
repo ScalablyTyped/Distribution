@@ -14,10 +14,8 @@ trait TextTrackEventMap extends js.Object {
 object TextTrackEventMap {
   @scala.inline
   def apply(cuechange: Event, error: Event, load: Event): TextTrackEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cuechange")(cuechange)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(cuechange = cuechange, error = error, load = load)
+  
     __obj.asInstanceOf[TextTrackEventMap]
   }
 }

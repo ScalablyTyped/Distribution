@@ -94,15 +94,8 @@ object Anon_ChangeInfo {
       ]
     ]
   ): Anon_ChangeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("onCreated")(onCreated)
-    __obj.updateDynamic("onRemoved")(onRemoved)
-    __obj.updateDynamic("onUpdated")(onUpdated)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, get = get, onCreated = onCreated, onRemoved = onRemoved, onUpdated = onUpdated, query = query, remove = remove, update = update)
+  
     __obj.asInstanceOf[Anon_ChangeInfo]
   }
 }

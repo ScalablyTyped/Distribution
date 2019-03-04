@@ -12,8 +12,8 @@ trait CallExpression extends js.Object {
 object CallExpression {
   @scala.inline
   def apply(createBinding: js.Function1[js.Any, Binding]): CallExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createBinding")(createBinding)
+    val __obj = js.Dynamic.literal(createBinding = createBinding)
+  
     __obj.asInstanceOf[CallExpression]
   }
 }

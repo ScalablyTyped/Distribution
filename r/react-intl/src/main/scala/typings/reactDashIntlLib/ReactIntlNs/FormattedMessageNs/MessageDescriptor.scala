@@ -18,8 +18,7 @@ object MessageDescriptor {
     defaultMessage: java.lang.String = null,
     description: java.lang.String = null
   ): MessageDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[MessageDescriptor]

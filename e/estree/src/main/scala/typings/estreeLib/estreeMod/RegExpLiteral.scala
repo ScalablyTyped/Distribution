@@ -27,8 +27,8 @@ object RegExpLiteral {
     trailingComments: js.Array[Comment] = null,
     value: stdLib.RegExp = null
   ): RegExpLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(regex = regex)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

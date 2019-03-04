@@ -52,14 +52,8 @@ object XIndexAlteration {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIndexAlteration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addIndex")(addIndex)
-    __obj.updateDynamic("dropIndex")(dropIndex)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, addIndex = addIndex, dropIndex = dropIndex, initialize = initialize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIndexAlteration]
   }
 }

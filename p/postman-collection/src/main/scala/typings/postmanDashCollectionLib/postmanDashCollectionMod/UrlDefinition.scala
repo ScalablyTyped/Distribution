@@ -29,8 +29,7 @@ object UrlDefinition {
     query: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | java.lang.String = null,
     variable: js.Array[VariableDefinition] = null
   ): UrlDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (hash != null) __obj.updateDynamic("hash")(hash)

@@ -15,8 +15,8 @@ trait GetClusterArgs extends js.Object {
 object GetClusterArgs {
   @scala.inline
   def apply(clusterName: java.lang.String): GetClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterName")(clusterName)
+    val __obj = js.Dynamic.literal(clusterName = clusterName)
+  
     __obj.asInstanceOf[GetClusterArgs]
   }
 }

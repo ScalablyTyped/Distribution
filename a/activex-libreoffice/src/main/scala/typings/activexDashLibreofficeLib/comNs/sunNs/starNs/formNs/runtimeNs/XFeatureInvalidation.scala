@@ -34,9 +34,8 @@ object XFeatureInvalidation {
     invalidateAllFeatures: js.Function0[scala.Unit],
     invalidateFeatures: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): XFeatureInvalidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invalidateAllFeatures")(invalidateAllFeatures)
-    __obj.updateDynamic("invalidateFeatures")(invalidateFeatures)
+    val __obj = js.Dynamic.literal(invalidateAllFeatures = invalidateAllFeatures, invalidateFeatures = invalidateFeatures)
+  
     __obj.asInstanceOf[XFeatureInvalidation]
   }
 }

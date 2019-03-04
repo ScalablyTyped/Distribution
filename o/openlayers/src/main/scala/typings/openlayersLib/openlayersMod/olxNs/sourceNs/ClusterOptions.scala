@@ -38,8 +38,7 @@ object ClusterOptions {
     projection: openlayersLib.openlayersMod.ProjectionLike = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): ClusterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)

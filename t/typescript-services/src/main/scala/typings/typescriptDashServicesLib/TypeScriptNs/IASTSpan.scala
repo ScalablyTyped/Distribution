@@ -20,11 +20,8 @@ object IASTSpan {
     end: js.Function0[scala.Double],
     start: js.Function0[scala.Double]
   ): IASTSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_end")(_end)
-    __obj.updateDynamic("_start")(_start)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(_end = _end, _start = _start, end = end, start = start)
+  
     __obj.asInstanceOf[IASTSpan]
   }
 }

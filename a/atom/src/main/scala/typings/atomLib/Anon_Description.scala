@@ -20,8 +20,7 @@ object Anon_Description {
     displayName: java.lang.String = null,
     hiddenInCommandPalette: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Description[TargetType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("didDispatch")(didDispatch)
+    val __obj = js.Dynamic.literal(didDispatch = didDispatch)
     if (description != null) __obj.updateDynamic("description")(description)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (!js.isUndefined(hiddenInCommandPalette)) __obj.updateDynamic("hiddenInCommandPalette")(hiddenInCommandPalette)

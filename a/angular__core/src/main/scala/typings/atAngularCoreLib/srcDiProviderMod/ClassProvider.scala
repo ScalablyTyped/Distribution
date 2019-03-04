@@ -27,9 +27,7 @@ object ClassProvider {
     useClass: atAngularCoreLib.srcTypeMod.Type[_],
     multi: js.UndefOr[scala.Boolean] = js.undefined
   ): ClassProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provide")(provide)
-    __obj.updateDynamic("useClass")(useClass)
+    val __obj = js.Dynamic.literal(provide = provide, useClass = useClass)
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
     __obj.asInstanceOf[ClassProvider]
   }

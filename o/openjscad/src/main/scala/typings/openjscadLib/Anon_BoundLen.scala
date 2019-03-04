@@ -14,10 +14,8 @@ trait Anon_BoundLen extends js.Object {
 object Anon_BoundLen {
   @scala.inline
   def apply(boundLen: scala.Double, colorMesh: threeLib.threeMod.Mesh, wireframe: threeLib.threeMod.Mesh): Anon_BoundLen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundLen")(boundLen)
-    __obj.updateDynamic("colorMesh")(colorMesh)
-    __obj.updateDynamic("wireframe")(wireframe)
+    val __obj = js.Dynamic.literal(boundLen = boundLen, colorMesh = colorMesh, wireframe = wireframe)
+  
     __obj.asInstanceOf[Anon_BoundLen]
   }
 }

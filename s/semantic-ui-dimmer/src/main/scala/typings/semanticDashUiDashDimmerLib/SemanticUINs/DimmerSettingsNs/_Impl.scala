@@ -144,28 +144,8 @@ object _Impl {
     variation: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibNumbers.`false` | java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("dimmerName")(dimmerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("useCSS")(useCSS)
-    __obj.updateDynamic("variation")(variation.asInstanceOf[js.Any])
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], debug = debug, dimmerName = dimmerName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onChange = onChange, onHide = onHide, onShow = onShow, opacity = opacity.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, template = template, transition = transition, useCSS = useCSS, variation = variation.asInstanceOf[js.Any], verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

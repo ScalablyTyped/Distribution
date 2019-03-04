@@ -200,9 +200,7 @@ object ReactCalendarTimelineProps {
     visibleTimeEnd: js.Any = null,
     visibleTimeStart: js.Any = null
   ): ReactCalendarTimelineProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(groups = groups, items = items)
     if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup)
     if (!js.isUndefined(canMove)) __obj.updateDynamic("canMove")(canMove)
     if (canResize != null) __obj.updateDynamic("canResize")(canResize.asInstanceOf[js.Any])

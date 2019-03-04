@@ -14,8 +14,8 @@ object CMD {
   def apply(
     SHUTDOWN: strongDashClusterDashControlLib.strongDashClusterDashControlLibStrings.CLUSTER_CONTROL_shutdown
   ): CMD = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SHUTDOWN")(SHUTDOWN)
+    val __obj = js.Dynamic.literal(SHUTDOWN = SHUTDOWN)
+  
     __obj.asInstanceOf[CMD]
   }
 }

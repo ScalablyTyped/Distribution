@@ -14,8 +14,7 @@ trait UriOptions extends js.Object {
 object UriOptions {
   @scala.inline
   def apply(pathname: java.lang.String, intermediatePath: java.lang.String = null, query: Query = null): UriOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathname")(pathname)
+    val __obj = js.Dynamic.literal(pathname = pathname)
     if (intermediatePath != null) __obj.updateDynamic("intermediatePath")(intermediatePath)
     if (query != null) __obj.updateDynamic("query")(query)
     __obj.asInstanceOf[UriOptions]

@@ -20,11 +20,8 @@ object Anon_BucketBucketPrefix {
     enabled: scala.Boolean,
     interval: scala.Double
   ): Anon_BucketBucketPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("bucketPrefix")(bucketPrefix)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("interval")(interval)
+    val __obj = js.Dynamic.literal(bucket = bucket, bucketPrefix = bucketPrefix, enabled = enabled, interval = interval)
+  
     __obj.asInstanceOf[Anon_BucketBucketPrefix]
   }
 }

@@ -20,11 +20,8 @@ object Anon_GetHeight {
     height: scala.Double,
     width: scala.Double
   ): Anon_GetHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(getHeight = getHeight, getWidth = getWidth, height = height, width = width)
+  
     __obj.asInstanceOf[Anon_GetHeight]
   }
 }

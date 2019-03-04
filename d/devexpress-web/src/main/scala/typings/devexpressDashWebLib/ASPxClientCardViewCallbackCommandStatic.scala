@@ -12,8 +12,8 @@ trait ASPxClientCardViewCallbackCommandStatic extends js.Object {
 object ASPxClientCardViewCallbackCommandStatic {
   @scala.inline
   def apply(GroupBySelectorValue: java.lang.String): ASPxClientCardViewCallbackCommandStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GroupBySelectorValue")(GroupBySelectorValue)
+    val __obj = js.Dynamic.literal(GroupBySelectorValue = GroupBySelectorValue)
+  
     __obj.asInstanceOf[ASPxClientCardViewCallbackCommandStatic]
   }
 }

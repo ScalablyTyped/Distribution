@@ -13,9 +13,8 @@ trait MoneyObjectOut extends js.Object {
 object MoneyObjectOut {
   @scala.inline
   def apply(amount: scala.Double, currency: java.lang.String): MoneyObjectOut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
+  
     __obj.asInstanceOf[MoneyObjectOut]
   }
 }

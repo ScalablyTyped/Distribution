@@ -44,8 +44,7 @@ object AuthOptions {
     scopes: js.Array[java.lang.String] = null,
     userAgent: java.lang.String = null
   ): AuthOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configName")(configName)
+    val __obj = js.Dynamic.literal(configName = configName)
     if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl)
     if (!js.isUndefined(noSave)) __obj.updateDynamic("noSave")(noSave)
     if (note != null) __obj.updateDynamic("note")(note)

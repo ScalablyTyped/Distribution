@@ -13,9 +13,8 @@ trait Anon_Result extends js.Object {
 object Anon_Result {
   @scala.inline
   def apply(result: winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Matrix4x4, returnValue: scala.Boolean): Anon_Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(result = result, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_Result]
   }
 }

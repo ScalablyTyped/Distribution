@@ -62,17 +62,8 @@ object Cropbox {
     zoomIn: js.Function0[scala.Unit],
     zoomOut: js.Function0[scala.Unit]
   ): Cropbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drag")(drag)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getDataURL")(getDataURL)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setCrop")(setCrop)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("zoom")(zoom)
-    __obj.updateDynamic("zoomIn")(zoomIn)
-    __obj.updateDynamic("zoomOut")(zoomOut)
+    val __obj = js.Dynamic.literal(drag = drag, getBlob = getBlob, getDataURL = getDataURL, on = on, remove = remove, setCrop = setCrop, update = update, zoom = zoom, zoomIn = zoomIn, zoomOut = zoomOut)
+  
     __obj.asInstanceOf[Cropbox]
   }
 }

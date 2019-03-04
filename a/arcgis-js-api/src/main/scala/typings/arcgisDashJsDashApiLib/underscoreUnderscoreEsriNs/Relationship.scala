@@ -107,8 +107,8 @@ object relationship {
       arcgisDashJsDashApiLib.IPromise[relationshipRendererResult]
     ]
   ): relationship = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createRenderer")(createRenderer)
+    val __obj = js.Dynamic.literal(createRenderer = createRenderer)
+  
     __obj.asInstanceOf[relationship]
   }
 }

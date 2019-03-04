@@ -15,11 +15,8 @@ trait BoundingBoxWH extends js.Object {
 object BoundingBoxWH {
   @scala.inline
   def apply(h: scala.Double, w: scala.Double, x1: scala.Double, y1: scala.Double): BoundingBoxWH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x1")(x1)
-    __obj.updateDynamic("y1")(y1)
+    val __obj = js.Dynamic.literal(h = h, w = w, x1 = x1, y1 = y1)
+  
     __obj.asInstanceOf[BoundingBoxWH]
   }
 }

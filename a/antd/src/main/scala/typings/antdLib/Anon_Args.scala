@@ -18,10 +18,8 @@ object Anon_Args {
     offsetTop: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
     target: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offsetBottom")(offsetBottom)
-    __obj.updateDynamic("offsetTop")(offsetTop)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(offsetBottom = offsetBottom, offsetTop = offsetTop, target = target)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

@@ -26,8 +26,7 @@ object DbConfig {
     replicaSet: java.lang.String = null,
     user: java.lang.String = null
   ): DbConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("migrationCollection")(migrationCollection)
+    val __obj = js.Dynamic.literal(migrationCollection = migrationCollection)
     if (db != null) __obj.updateDynamic("db")(db)
     if (hosts != null) __obj.updateDynamic("hosts")(hosts)
     if (mongoUri != null) __obj.updateDynamic("mongoUri")(mongoUri)

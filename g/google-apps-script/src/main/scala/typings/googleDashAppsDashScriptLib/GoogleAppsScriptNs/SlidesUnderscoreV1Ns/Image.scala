@@ -21,10 +21,8 @@ trait Image extends js.Object {
 object Image {
   @scala.inline
   def apply(content_url: java.lang.String, image_properties: ImageProperties, source_url: java.lang.String): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_url")(content_url)
-    __obj.updateDynamic("image_properties")(image_properties)
-    __obj.updateDynamic("source_url")(source_url)
+    val __obj = js.Dynamic.literal(content_url = content_url, image_properties = image_properties, source_url = source_url)
+  
     __obj.asInstanceOf[Image]
   }
 }

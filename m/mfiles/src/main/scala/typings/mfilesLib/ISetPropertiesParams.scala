@@ -53,17 +53,8 @@ object ISetPropertiesParams {
       scala.Unit
     ]
   ): ISetPropertiesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlListEnforcingMode")(AccessControlListEnforcingMode)
-    __obj.updateDynamic("AccessControlListProvidedForEnforcing")(AccessControlListProvidedForEnforcing)
-    __obj.updateDynamic("AllowModifyingCheckedInObject")(AllowModifyingCheckedInObject)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("FailIfNotLatestCheckedInVersion")(FailIfNotLatestCheckedInVersion)
-    __obj.updateDynamic("FullSet")(FullSet)
-    __obj.updateDynamic("ObjVer")(ObjVer)
-    __obj.updateDynamic("PropertyValuesToRemove")(PropertyValuesToRemove)
-    __obj.updateDynamic("PropertyValuesToSet")(PropertyValuesToSet)
-    __obj.updateDynamic("SetWithPermissions")(SetWithPermissions)
+    val __obj = js.Dynamic.literal(AccessControlListEnforcingMode = AccessControlListEnforcingMode, AccessControlListProvidedForEnforcing = AccessControlListProvidedForEnforcing, AllowModifyingCheckedInObject = AllowModifyingCheckedInObject, Clone = Clone, FailIfNotLatestCheckedInVersion = FailIfNotLatestCheckedInVersion, FullSet = FullSet, ObjVer = ObjVer, PropertyValuesToRemove = PropertyValuesToRemove, PropertyValuesToSet = PropertyValuesToSet, SetWithPermissions = SetWithPermissions)
+  
     __obj.asInstanceOf[ISetPropertiesParams]
   }
 }

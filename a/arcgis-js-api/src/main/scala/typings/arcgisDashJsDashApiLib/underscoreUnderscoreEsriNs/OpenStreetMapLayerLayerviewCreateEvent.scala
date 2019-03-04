@@ -13,9 +13,8 @@ trait OpenStreetMapLayerLayerviewCreateEvent extends js.Object {
 object OpenStreetMapLayerLayerviewCreateEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): OpenStreetMapLayerLayerviewCreateEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerView")(layerView)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
     __obj.asInstanceOf[OpenStreetMapLayerLayerviewCreateEvent]
   }
 }

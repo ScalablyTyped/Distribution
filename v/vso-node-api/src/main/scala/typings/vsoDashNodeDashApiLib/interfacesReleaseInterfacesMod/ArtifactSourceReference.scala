@@ -13,9 +13,8 @@ trait ArtifactSourceReference extends js.Object {
 object ArtifactSourceReference {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String): ArtifactSourceReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
     __obj.asInstanceOf[ArtifactSourceReference]
   }
 }

@@ -22,10 +22,7 @@ object NameConstraints {
     excludedSubtrees: js.Array[pkijsLib.srcGeneralSubtreeMod.default] = null,
     permittedSubtrees: js.Array[pkijsLib.srcGeneralSubtreeMod.default] = null
   ): NameConstraints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
     if (excludedSubtrees != null) __obj.updateDynamic("excludedSubtrees")(excludedSubtrees)
     if (permittedSubtrees != null) __obj.updateDynamic("permittedSubtrees")(permittedSubtrees)
     __obj.asInstanceOf[NameConstraints]

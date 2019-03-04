@@ -107,26 +107,8 @@ object _Impl {
     upward: java.lang.String,
     visible: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("addition")(addition)
-    __obj.updateDynamic("animating")(animating)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("dropdown")(dropdown)
-    __obj.updateDynamic("filtered")(filtered)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("multiple")(multiple)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("upward")(upward)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, addition = addition, animating = animating, disabled = disabled, dropdown = dropdown, filtered = filtered, hidden = hidden, item = item, label = label, loading = loading, menu = menu, message = message, multiple = multiple, placeholder = placeholder, search = search, selected = selected, selection = selection, upward = upward, visible = visible)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

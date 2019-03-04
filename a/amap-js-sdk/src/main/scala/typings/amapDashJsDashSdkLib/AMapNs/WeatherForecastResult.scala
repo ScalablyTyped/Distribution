@@ -24,13 +24,8 @@ object WeatherForecastResult {
     province: java.lang.String,
     reportTime: java.lang.String
   ): WeatherForecastResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("forecasts")(forecasts)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("reportTime")(reportTime)
+    val __obj = js.Dynamic.literal(adcode = adcode, city = city, forecasts = forecasts, info = info, province = province, reportTime = reportTime)
+  
     __obj.asInstanceOf[WeatherForecastResult]
   }
 }

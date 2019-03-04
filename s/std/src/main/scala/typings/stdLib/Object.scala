@@ -31,14 +31,8 @@ object Object {
     toString: js.Function0[java.lang.String],
     valueOf: js.Function0[js.Object]
   ): Object = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("isPrototypeOf")(isPrototypeOf)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("toLocaleString")(toLocaleString)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, isPrototypeOf = isPrototypeOf, propertyIsEnumerable = propertyIsEnumerable, toLocaleString = toLocaleString, toString = toString, valueOf = valueOf)
+  
     __obj.asInstanceOf[Object]
   }
 }

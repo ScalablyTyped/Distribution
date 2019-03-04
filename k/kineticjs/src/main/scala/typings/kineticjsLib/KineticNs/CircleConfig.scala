@@ -38,8 +38,7 @@ object CircleConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): CircleConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(radius = radius)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)
     if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint)

@@ -17,10 +17,7 @@ object AggregateError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): AggregateError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(iterator = iterator, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[AggregateError]
   }

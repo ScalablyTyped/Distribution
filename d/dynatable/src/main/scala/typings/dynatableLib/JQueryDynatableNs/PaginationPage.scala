@@ -29,10 +29,8 @@ object PaginationPage {
     initOnLoad: js.Function0[scala.Boolean],
     set: js.Function1[scala.Double, scala.Unit]
   ): PaginationPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(init = init, initOnLoad = initOnLoad, set = set)
+  
     __obj.asInstanceOf[PaginationPage]
   }
 }

@@ -20,8 +20,7 @@ trait SetBreakpointOnFunctionCallParameterType extends js.Object {
 object SetBreakpointOnFunctionCallParameterType {
   @scala.inline
   def apply(objectId: nodeLib.inspectorMod.RuntimeNs.RemoteObjectId, condition: java.lang.String = null): SetBreakpointOnFunctionCallParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectId")(objectId)
+    val __obj = js.Dynamic.literal(objectId = objectId)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     __obj.asInstanceOf[SetBreakpointOnFunctionCallParameterType]
   }

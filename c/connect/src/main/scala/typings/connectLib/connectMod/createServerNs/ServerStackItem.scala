@@ -13,9 +13,8 @@ trait ServerStackItem extends js.Object {
 object ServerStackItem {
   @scala.inline
   def apply(handle: ServerHandle, route: java.lang.String): ServerStackItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], route = route)
+  
     __obj.asInstanceOf[ServerStackItem]
   }
 }

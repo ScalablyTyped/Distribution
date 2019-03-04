@@ -14,10 +14,8 @@ trait tcs34725HSV extends js.Object {
 object tcs34725HSV {
   @scala.inline
   def apply(h: scala.Double, s: scala.Double, v: scala.Double): tcs34725HSV = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(h = h, s = s, v = v)
+  
     __obj.asInstanceOf[tcs34725HSV]
   }
 }

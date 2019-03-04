@@ -21,8 +21,8 @@ object TSUnionType {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSUnionType,
     types: js.Array[astDashTypesLib.genKindsMod.TSTypeKind]
   ): TSUnionType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(types = types)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSUnionType]
   }
 }

@@ -22,11 +22,8 @@ object Item {
     relationships: forgeDashApisLib.Anon_Derivatives,
     `type`: java.lang.String
   ): Item = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("relationships")(relationships)
+    val __obj = js.Dynamic.literal(attributes = attributes, id = id, links = links, relationships = relationships)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Item]
   }
 }

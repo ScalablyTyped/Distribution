@@ -24,13 +24,8 @@ object ProjectActivityMetrics {
     pullRequestsCompletedCount: scala.Double,
     pullRequestsCreatedCount: scala.Double
   ): ProjectActivityMetrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorsCount")(authorsCount)
-    __obj.updateDynamic("codeChangesCount")(codeChangesCount)
-    __obj.updateDynamic("codeChangesTrend")(codeChangesTrend)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("pullRequestsCompletedCount")(pullRequestsCompletedCount)
-    __obj.updateDynamic("pullRequestsCreatedCount")(pullRequestsCreatedCount)
+    val __obj = js.Dynamic.literal(authorsCount = authorsCount, codeChangesCount = codeChangesCount, codeChangesTrend = codeChangesTrend, projectId = projectId, pullRequestsCompletedCount = pullRequestsCompletedCount, pullRequestsCreatedCount = pullRequestsCreatedCount)
+  
     __obj.asInstanceOf[ProjectActivityMetrics]
   }
 }

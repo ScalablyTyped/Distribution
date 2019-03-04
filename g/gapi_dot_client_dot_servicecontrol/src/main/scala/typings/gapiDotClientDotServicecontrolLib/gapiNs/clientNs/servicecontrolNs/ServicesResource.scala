@@ -134,13 +134,8 @@ object ServicesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[StartReconciliationResponse]
     ]
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocateQuota")(allocateQuota)
-    __obj.updateDynamic("check")(check)
-    __obj.updateDynamic("endReconciliation")(endReconciliation)
-    __obj.updateDynamic("releaseQuota")(releaseQuota)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("startReconciliation")(startReconciliation)
+    val __obj = js.Dynamic.literal(allocateQuota = allocateQuota, check = check, endReconciliation = endReconciliation, releaseQuota = releaseQuota, report = report, startReconciliation = startReconciliation)
+  
     __obj.asInstanceOf[ServicesResource]
   }
 }

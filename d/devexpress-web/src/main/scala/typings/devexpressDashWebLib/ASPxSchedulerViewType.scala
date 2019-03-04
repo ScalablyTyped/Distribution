@@ -57,14 +57,8 @@ object ASPxSchedulerViewType {
     Week: java.lang.String,
     WorkWeek: java.lang.String
   ): ASPxSchedulerViewType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Agenda")(Agenda)
-    __obj.updateDynamic("Day")(Day)
-    __obj.updateDynamic("FullWeek")(FullWeek)
-    __obj.updateDynamic("Month")(Month)
-    __obj.updateDynamic("Timeline")(Timeline)
-    __obj.updateDynamic("Week")(Week)
-    __obj.updateDynamic("WorkWeek")(WorkWeek)
+    val __obj = js.Dynamic.literal(Agenda = Agenda, Day = Day, FullWeek = FullWeek, Month = Month, Timeline = Timeline, Week = Week, WorkWeek = WorkWeek)
+  
     __obj.asInstanceOf[ASPxSchedulerViewType]
   }
 }

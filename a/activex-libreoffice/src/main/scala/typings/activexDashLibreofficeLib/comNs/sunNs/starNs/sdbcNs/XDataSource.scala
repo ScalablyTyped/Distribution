@@ -59,14 +59,8 @@ object XDataSource {
     release: js.Function0[scala.Unit],
     setLoginTimeout: js.Function1[scala.Double, scala.Unit]
   ): XDataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getConnection")(getConnection)
-    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
+    val __obj = js.Dynamic.literal(LoginTimeout = LoginTimeout, acquire = acquire, getConnection = getConnection, getLoginTimeout = getLoginTimeout, queryInterface = queryInterface, release = release, setLoginTimeout = setLoginTimeout)
+  
     __obj.asInstanceOf[XDataSource]
   }
 }

@@ -28,12 +28,8 @@ object XProperty {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AsProperty")(AsProperty)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAsProperty")(getAsProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, acquire = acquire, getAsProperty = getAsProperty, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XProperty]
   }
 }

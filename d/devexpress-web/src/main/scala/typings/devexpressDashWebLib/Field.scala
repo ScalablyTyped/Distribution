@@ -81,18 +81,8 @@ object Field {
     showCode: scala.Boolean,
     start: scala.Double
   ): Field = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codeInterval")(codeInterval)
-    __obj.updateDynamic("hyperlinkAnchor")(hyperlinkAnchor)
-    __obj.updateDynamic("hyperlinkTip")(hyperlinkTip)
-    __obj.updateDynamic("hyperlinkUri")(hyperlinkUri)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("isHyperlink")(isHyperlink)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("resultInterval")(resultInterval)
-    __obj.updateDynamic("showCode")(showCode)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(codeInterval = codeInterval, hyperlinkAnchor = hyperlinkAnchor, hyperlinkTip = hyperlinkTip, hyperlinkUri = hyperlinkUri, index = index, interval = interval, isHyperlink = isHyperlink, length = length, resultInterval = resultInterval, showCode = showCode, start = start)
+  
     __obj.asInstanceOf[Field]
   }
 }

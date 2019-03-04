@@ -144,8 +144,7 @@ object Options {
     title: java.lang.String = null,
     version: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appDirectory")(appDirectory)
+    val __obj = js.Dynamic.literal(appDirectory = appDirectory)
     if (authors != null) __obj.updateDynamic("authors")(authors)
     if (certificateFile != null) __obj.updateDynamic("certificateFile")(certificateFile)
     if (certificatePassword != null) __obj.updateDynamic("certificatePassword")(certificatePassword)

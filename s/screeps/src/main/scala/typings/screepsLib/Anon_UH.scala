@@ -14,10 +14,8 @@ trait Anon_UH extends js.Object {
 object Anon_UH {
   @scala.inline
   def apply(UH: Anon_2Attack, UH2O: Anon_3Attack, XUH2O: Anon_4Attack): Anon_UH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UH")(UH)
-    __obj.updateDynamic("UH2O")(UH2O)
-    __obj.updateDynamic("XUH2O")(XUH2O)
+    val __obj = js.Dynamic.literal(UH = UH, UH2O = UH2O, XUH2O = XUH2O)
+  
     __obj.asInstanceOf[Anon_UH]
   }
 }

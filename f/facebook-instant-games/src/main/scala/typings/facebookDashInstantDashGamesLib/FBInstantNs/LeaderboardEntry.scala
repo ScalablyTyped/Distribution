@@ -50,13 +50,8 @@ object LeaderboardEntry {
     getScore: js.Function0[scala.Double],
     getTimestamp: js.Function0[scala.Double]
   ): LeaderboardEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getExtraData")(getExtraData)
-    __obj.updateDynamic("getFormattedScore")(getFormattedScore)
-    __obj.updateDynamic("getPlayer")(getPlayer)
-    __obj.updateDynamic("getRank")(getRank)
-    __obj.updateDynamic("getScore")(getScore)
-    __obj.updateDynamic("getTimestamp")(getTimestamp)
+    val __obj = js.Dynamic.literal(getExtraData = getExtraData, getFormattedScore = getFormattedScore, getPlayer = getPlayer, getRank = getRank, getScore = getScore, getTimestamp = getTimestamp)
+  
     __obj.asInstanceOf[LeaderboardEntry]
   }
 }

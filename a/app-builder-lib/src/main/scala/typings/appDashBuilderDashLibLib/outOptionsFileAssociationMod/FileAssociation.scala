@@ -50,8 +50,7 @@ object FileAssociation {
     name: java.lang.String = null,
     role: java.lang.String = null
   ): FileAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (!js.isUndefined(isPackage)) __obj.updateDynamic("isPackage")(isPackage)

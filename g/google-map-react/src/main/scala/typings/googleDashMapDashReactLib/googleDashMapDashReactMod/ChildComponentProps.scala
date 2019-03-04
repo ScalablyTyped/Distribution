@@ -13,9 +13,7 @@ trait ChildComponentProps extends Coords {
 object ChildComponentProps {
   @scala.inline
   def apply(lat: scala.Double, lng: scala.Double, $hover: js.UndefOr[scala.Boolean] = js.undefined): ChildComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
     if (!js.isUndefined($hover)) __obj.updateDynamic("$hover")($hover)
     __obj.asInstanceOf[ChildComponentProps]
   }

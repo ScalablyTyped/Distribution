@@ -56,21 +56,8 @@ object DeprecatablePropTypes {
     ],
     string: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
   ): DeprecatablePropTypes = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("any")(any)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("arrayOf")(arrayOf)
-    __obj.updateDynamic("bool")(bool)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("func")(func)
-    __obj.updateDynamic("instanceOf")(instanceOf)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("objectOf")(objectOf)
-    __obj.updateDynamic("oneOf")(oneOf)
-    __obj.updateDynamic("oneOfType")(oneOfType)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(any = any, array = array, arrayOf = arrayOf, bool = bool, element = element, func = func, instanceOf = instanceOf, node = node, number = number, objectOf = objectOf, oneOf = oneOf, oneOfType = oneOfType, shape = shape, string = string)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[DeprecatablePropTypes]
   }
 }

@@ -28,9 +28,7 @@ object Anon_Center {
     stRotation: scala.Int | scala.Double = null,
     vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
   ): Anon_Center = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(center = center, radius = radius)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])

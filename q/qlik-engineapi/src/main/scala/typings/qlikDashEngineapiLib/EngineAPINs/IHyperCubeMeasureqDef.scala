@@ -35,8 +35,7 @@ object IHyperCubeMeasureqDef {
     qReverseSort: js.UndefOr[scala.Boolean] = js.undefined,
     qTags: js.Array[java.lang.String] = null
   ): IHyperCubeMeasureqDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDef")(qDef)
+    val __obj = js.Dynamic.literal(qDef = qDef)
     if (!js.isUndefined(autoSort)) __obj.updateDynamic("autoSort")(autoSort)
     if (cId != null) __obj.updateDynamic("cId")(cId)
     if (!js.isUndefined(numFormatFromTemplate)) __obj.updateDynamic("numFormatFromTemplate")(numFormatFromTemplate)

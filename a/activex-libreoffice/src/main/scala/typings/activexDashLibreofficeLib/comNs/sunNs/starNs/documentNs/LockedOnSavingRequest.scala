@@ -25,11 +25,8 @@ object LockedOnSavingRequest {
     Message: java.lang.String,
     UserInfo: java.lang.String
   ): LockedOnSavingRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DocumentURL")(DocumentURL)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("UserInfo")(UserInfo)
+    val __obj = js.Dynamic.literal(Context = Context, DocumentURL = DocumentURL, Message = Message, UserInfo = UserInfo)
+  
     __obj.asInstanceOf[LockedOnSavingRequest]
   }
 }

@@ -21,11 +21,8 @@ object Websites {
     referrersEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
     thirdPartyCookiesAllowed: chromeLib.chromeNs.typesNs.ChromeSetting
   ): Websites = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hyperlinkAuditingEnabled")(hyperlinkAuditingEnabled)
-    __obj.updateDynamic("protectedContentEnabled")(protectedContentEnabled)
-    __obj.updateDynamic("referrersEnabled")(referrersEnabled)
-    __obj.updateDynamic("thirdPartyCookiesAllowed")(thirdPartyCookiesAllowed)
+    val __obj = js.Dynamic.literal(hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, protectedContentEnabled = protectedContentEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
+  
     __obj.asInstanceOf[Websites]
   }
 }

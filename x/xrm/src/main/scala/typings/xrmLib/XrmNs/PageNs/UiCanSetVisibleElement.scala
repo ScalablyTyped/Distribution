@@ -15,8 +15,8 @@ trait UiCanSetVisibleElement
 object UiCanSetVisibleElement {
   @scala.inline
   def apply(setVisible: js.Function1[scala.Boolean, scala.Unit]): UiCanSetVisibleElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(setVisible = setVisible)
+  
     __obj.asInstanceOf[UiCanSetVisibleElement]
   }
 }

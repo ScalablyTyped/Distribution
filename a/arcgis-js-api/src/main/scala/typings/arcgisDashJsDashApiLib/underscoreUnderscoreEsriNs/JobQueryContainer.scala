@@ -44,14 +44,8 @@ object JobQueryContainer {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     queries: js.Array[JobQuery]
   ): JobQueryContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("containers")(containers)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("queries")(queries)
+    val __obj = js.Dynamic.literal(constructor = constructor, containers = containers, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, queries = queries)
+  
     __obj.asInstanceOf[JobQueryContainer]
   }
 }

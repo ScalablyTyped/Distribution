@@ -26,8 +26,7 @@ object XmlElementType {
     parser: IXmlSerializableConstructor = null,
     prefix: java.lang.String = null
   ): XmlElementType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localName")(localName)
+    val __obj = js.Dynamic.literal(localName = localName)
     if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI)
     if (parser != null) __obj.updateDynamic("parser")(parser)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

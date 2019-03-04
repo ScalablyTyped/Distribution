@@ -15,8 +15,8 @@ trait ExtensionQueryResult extends js.Object {
 object ExtensionQueryResult {
   @scala.inline
   def apply(results: js.Array[ExtensionFilterResult]): ExtensionQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(results = results)
+  
     __obj.asInstanceOf[ExtensionQueryResult]
   }
 }

@@ -50,15 +50,8 @@ object PackageManagerDialog {
       scala.Unit
     ]
   ): PackageManagerDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createAndInstall")(createAndInstall)
-    __obj.updateDynamic("createDefault")(createDefault)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDialogTitle")(setDialogTitle)
-    __obj.updateDynamic("startExecuteModal")(startExecuteModal)
+    val __obj = js.Dynamic.literal(acquire = acquire, create = create, createAndInstall = createAndInstall, createDefault = createDefault, queryInterface = queryInterface, release = release, setDialogTitle = setDialogTitle, startExecuteModal = startExecuteModal)
+  
     __obj.asInstanceOf[PackageManagerDialog]
   }
 }

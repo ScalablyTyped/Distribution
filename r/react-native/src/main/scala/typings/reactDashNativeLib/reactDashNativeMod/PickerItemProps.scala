@@ -20,8 +20,7 @@ object PickerItemProps {
     testID: java.lang.String = null,
     value: js.Any = null
   ): PickerItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (color != null) __obj.updateDynamic("color")(color)
     if (testID != null) __obj.updateDynamic("testID")(testID)
     if (value != null) __obj.updateDynamic("value")(value)

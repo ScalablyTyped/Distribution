@@ -42,22 +42,8 @@ object Anon_ACTIONCHANNEL {
     SET_CONTEXT: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.SET_CONTEXT,
     TAKE: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.TAKE
   ): Anon_ACTIONCHANNEL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACTION_CHANNEL")(ACTION_CHANNEL)
-    __obj.updateDynamic("ALL")(ALL)
-    __obj.updateDynamic("CALL")(CALL)
-    __obj.updateDynamic("CANCEL")(CANCEL)
-    __obj.updateDynamic("CANCELLED")(CANCELLED)
-    __obj.updateDynamic("CPS")(CPS)
-    __obj.updateDynamic("FLUSH")(FLUSH)
-    __obj.updateDynamic("FORK")(FORK)
-    __obj.updateDynamic("GET_CONTEXT")(GET_CONTEXT)
-    __obj.updateDynamic("JOIN")(JOIN)
-    __obj.updateDynamic("PUT")(PUT)
-    __obj.updateDynamic("RACE")(RACE)
-    __obj.updateDynamic("SELECT")(SELECT)
-    __obj.updateDynamic("SET_CONTEXT")(SET_CONTEXT)
-    __obj.updateDynamic("TAKE")(TAKE)
+    val __obj = js.Dynamic.literal(ACTION_CHANNEL = ACTION_CHANNEL, ALL = ALL, CALL = CALL, CANCEL = CANCEL, CANCELLED = CANCELLED, CPS = CPS, FLUSH = FLUSH, FORK = FORK, GET_CONTEXT = GET_CONTEXT, JOIN = JOIN, PUT = PUT, RACE = RACE, SELECT = SELECT, SET_CONTEXT = SET_CONTEXT, TAKE = TAKE)
+  
     __obj.asInstanceOf[Anon_ACTIONCHANNEL]
   }
 }

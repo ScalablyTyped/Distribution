@@ -22,9 +22,8 @@ object ContributionNodeQueryResult {
     nodes: org.scalablytyped.runtime.StringDictionary[ClientContributionNode],
     providerDetails: org.scalablytyped.runtime.StringDictionary[ClientContributionProviderDetails]
   ): ContributionNodeQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("providerDetails")(providerDetails)
+    val __obj = js.Dynamic.literal(nodes = nodes, providerDetails = providerDetails)
+  
     __obj.asInstanceOf[ContributionNodeQueryResult]
   }
 }

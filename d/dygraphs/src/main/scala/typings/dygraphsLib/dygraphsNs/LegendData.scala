@@ -32,11 +32,8 @@ object LegendData {
     x: scala.Double,
     xHTML: java.lang.String
   ): LegendData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dygraph")(dygraph)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xHTML")(xHTML)
+    val __obj = js.Dynamic.literal(dygraph = dygraph, series = series, x = x, xHTML = xHTML)
+  
     __obj.asInstanceOf[LegendData]
   }
 }

@@ -27,8 +27,8 @@ object Advertisement {
     serviceUuids: js.Array[java.lang.String] = null,
     solicitUuids: js.Array[java.lang.String] = null
   ): Advertisement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("serviceData")(serviceData)
+    val __obj = js.Dynamic.literal(serviceData = serviceData)
+    __obj.updateDynamic("type")(`type`)
     if (manufacturerData != null) __obj.updateDynamic("manufacturerData")(manufacturerData)
     if (serviceUuids != null) __obj.updateDynamic("serviceUuids")(serviceUuids)
     if (solicitUuids != null) __obj.updateDynamic("solicitUuids")(solicitUuids)

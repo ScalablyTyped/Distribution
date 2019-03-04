@@ -24,13 +24,8 @@ object CoverageMap {
     getCoverageSummary: js.Function0[FileCoverage],
     merge: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ): CoverageMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFileCoverage")(addFileCoverage)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("fileCoverageFor")(fileCoverageFor)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("getCoverageSummary")(getCoverageSummary)
-    __obj.updateDynamic("merge")(merge)
+    val __obj = js.Dynamic.literal(addFileCoverage = addFileCoverage, data = data, fileCoverageFor = fileCoverageFor, files = files, getCoverageSummary = getCoverageSummary, merge = merge)
+  
     __obj.asInstanceOf[CoverageMap]
   }
 }

@@ -26,9 +26,8 @@ object ComprehensionExpression {
     `type`: astDashTypesLib.astDashTypesLibStrings.ComprehensionExpression,
     filter: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): ComprehensionExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(blocks = blocks, body = body)
+    __obj.updateDynamic("type")(`type`)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[ComprehensionExpression]
   }

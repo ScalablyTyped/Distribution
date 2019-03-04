@@ -34,13 +34,7 @@ object TableRowProps {
     onRowMouseOver: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null,
     onRowRightClick: js.Function1[/* params */ RowMouseEventHandlerParams, scala.Unit] = null
   ): TableRowProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("rowData")(rowData)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(className = className, columns = columns, index = index, isScrolling = isScrolling, rowData = rowData, style = style)
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
     if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
     if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(onRowMouseOut)

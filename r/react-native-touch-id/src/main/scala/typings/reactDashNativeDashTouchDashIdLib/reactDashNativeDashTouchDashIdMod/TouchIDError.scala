@@ -18,10 +18,8 @@ object TouchIDError {
     message: java.lang.String,
     name: reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorAuthenticationFailed | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorUserCancel | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorUserFallback | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorSystemCancel | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorPasscodeNotSet | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorTouchIDNotAvailable | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorTouchIDNotEnrolled | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.RCTTouchIDUnknownError | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.RCTTouchIDNotSupported
   ): TouchIDError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(details = details, message = message, name = name.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TouchIDError]
   }
 }

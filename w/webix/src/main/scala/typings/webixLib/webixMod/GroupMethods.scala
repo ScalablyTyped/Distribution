@@ -24,13 +24,8 @@ object GroupMethods {
     string: js.Function2[java.lang.String, js.Any, scala.Unit],
     sum: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): GroupMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("any")(any)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("sum")(sum)
+    val __obj = js.Dynamic.literal(any = any, count = count, max = max, min = min, string = string, sum = sum)
+  
     __obj.asInstanceOf[GroupMethods]
   }
 }

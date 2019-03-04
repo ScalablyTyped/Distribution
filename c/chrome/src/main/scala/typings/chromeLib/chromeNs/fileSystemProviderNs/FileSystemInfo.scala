@@ -46,13 +46,7 @@ object FileSystemInfo {
     writable: scala.Boolean,
     supportsNotifyTag: js.UndefOr[scala.Boolean] = js.undefined
   ): FileSystemInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("openedFiles")(openedFiles)
-    __obj.updateDynamic("openedFilesLimit")(openedFilesLimit)
-    __obj.updateDynamic("watchers")(watchers)
-    __obj.updateDynamic("writable")(writable)
+    val __obj = js.Dynamic.literal(displayName = displayName, fileSystemId = fileSystemId, openedFiles = openedFiles, openedFilesLimit = openedFilesLimit, watchers = watchers, writable = writable)
     if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag)
     __obj.asInstanceOf[FileSystemInfo]
   }

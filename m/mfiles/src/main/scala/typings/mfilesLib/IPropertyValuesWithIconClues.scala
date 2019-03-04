@@ -20,11 +20,8 @@ object IPropertyValuesWithIconClues {
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues
   ): IPropertyValuesWithIconClues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("IconClues")(IconClues)
-    __obj.updateDynamic("ObjVer")(ObjVer)
-    __obj.updateDynamic("PropertyValues")(PropertyValues)
+    val __obj = js.Dynamic.literal(Clone = Clone, IconClues = IconClues, ObjVer = ObjVer, PropertyValues = PropertyValues)
+  
     __obj.asInstanceOf[IPropertyValuesWithIconClues]
   }
 }

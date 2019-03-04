@@ -27,9 +27,7 @@ object GetCipherTextArgs {
     plaintext: java.lang.String,
     context: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): GetCipherTextArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyId")(keyId)
-    __obj.updateDynamic("plaintext")(plaintext)
+    val __obj = js.Dynamic.literal(keyId = keyId, plaintext = plaintext)
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[GetCipherTextArgs]
   }

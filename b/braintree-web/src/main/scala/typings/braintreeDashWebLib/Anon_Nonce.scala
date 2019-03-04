@@ -12,8 +12,8 @@ trait Anon_Nonce extends js.Object {
 object Anon_Nonce {
   @scala.inline
   def apply(nonce: java.lang.String): Anon_Nonce = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(nonce = nonce)
+  
     __obj.asInstanceOf[Anon_Nonce]
   }
 }

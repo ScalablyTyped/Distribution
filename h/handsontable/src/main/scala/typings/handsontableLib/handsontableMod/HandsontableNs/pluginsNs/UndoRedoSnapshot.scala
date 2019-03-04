@@ -22,12 +22,8 @@ object UndoRedoSnapshot {
     sheet: Sheet,
     stack: Stack
   ): UndoRedoSnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("restore")(restore)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("sheet")(sheet)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(destroy = destroy, restore = restore, save = save, sheet = sheet, stack = stack)
+  
     __obj.asInstanceOf[UndoRedoSnapshot]
   }
 }

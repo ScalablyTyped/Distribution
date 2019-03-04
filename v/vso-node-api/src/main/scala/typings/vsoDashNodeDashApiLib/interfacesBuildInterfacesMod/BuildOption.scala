@@ -24,10 +24,8 @@ object BuildOption {
     enabled: scala.Boolean,
     inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): BuildOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("inputs")(inputs)
+    val __obj = js.Dynamic.literal(definition = definition, enabled = enabled, inputs = inputs)
+  
     __obj.asInstanceOf[BuildOption]
   }
 }

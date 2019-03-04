@@ -45,11 +45,7 @@ object Product {
     description: java.lang.String = null,
     imageURI: java.lang.String = null
   ): Product = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode)
-    __obj.updateDynamic("productID")(productID)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(price = price, priceCurrencyCode = priceCurrencyCode, productID = productID, title = title)
     if (description != null) __obj.updateDynamic("description")(description)
     if (imageURI != null) __obj.updateDynamic("imageURI")(imageURI)
     __obj.asInstanceOf[Product]

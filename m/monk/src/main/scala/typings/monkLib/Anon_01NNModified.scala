@@ -18,10 +18,8 @@ object Anon_01NNModified {
     nModified: scala.Double,
     ok: monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`0`
   ): Anon_01NNModified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("nModified")(nModified)
-    __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(n = n, nModified = nModified, ok = ok.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_01NNModified]
   }
 }

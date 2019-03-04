@@ -22,12 +22,8 @@ object ContentInfo {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): ContentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(content = content, contentType = contentType, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[ContentInfo]
   }
 }

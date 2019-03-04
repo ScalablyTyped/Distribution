@@ -32,10 +32,7 @@ object TagCloudProps {
     renderer: js.Function = null,
     shuffle: js.UndefOr[scala.Boolean] = js.undefined
   ): TagCloudProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxSize")(maxSize)
-    __obj.updateDynamic("minSize")(minSize)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(maxSize = maxSize, minSize = minSize, tags = tags)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disableRandomColor)) __obj.updateDynamic("disableRandomColor")(disableRandomColor)

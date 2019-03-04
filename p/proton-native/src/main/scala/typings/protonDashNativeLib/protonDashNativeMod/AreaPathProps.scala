@@ -40,9 +40,7 @@ object AreaPathProps {
     strokeWidth: scala.Int | scala.Double = null,
     transform: java.lang.String = null
   ): AreaPathProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("fillMode")(fillMode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(d = d, fillMode = fillMode.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)

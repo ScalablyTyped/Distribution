@@ -18,6 +18,6 @@ class BackInsertIterator[T, Source /* <: tstlLib.baseDisposableIPartialContainer
   /**
     * @hidden
     */
-  var `source_`: js.Any = js.native
+  var source_ : js.Any = js.native
 }
 

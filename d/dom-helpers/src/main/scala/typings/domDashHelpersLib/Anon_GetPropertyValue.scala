@@ -12,8 +12,8 @@ trait Anon_GetPropertyValue extends js.Object {
 object Anon_GetPropertyValue {
   @scala.inline
   def apply(getPropertyValue: js.Function1[java.lang.String, java.lang.String]): Anon_GetPropertyValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    val __obj = js.Dynamic.literal(getPropertyValue = getPropertyValue)
+  
     __obj.asInstanceOf[Anon_GetPropertyValue]
   }
 }

@@ -16,8 +16,7 @@ object HeaderValue {
     value: java.lang.String,
     params: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): HeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[HeaderValue]
   }

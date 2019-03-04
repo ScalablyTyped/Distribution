@@ -34,18 +34,8 @@ object IDataFunctionCall {
     SetDataYear: js.Function0[scala.Unit],
     SetDataYearAndMonth: js.Function0[scala.Unit]
   ): IDataFunctionCall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataFunction")(DataFunction)
-    __obj.updateDynamic("SetDataDate")(SetDataDate)
-    __obj.updateDynamic("SetDataDaysFrom")(SetDataDaysFrom)
-    __obj.updateDynamic("SetDataDaysTo")(SetDataDaysTo)
-    __obj.updateDynamic("SetDataInitialCharGroup")(SetDataInitialCharGroup)
-    __obj.updateDynamic("SetDataIntegerSegment")(SetDataIntegerSegment)
-    __obj.updateDynamic("SetDataLeftChars")(SetDataLeftChars)
-    __obj.updateDynamic("SetDataMonth")(SetDataMonth)
-    __obj.updateDynamic("SetDataNoOp")(SetDataNoOp)
-    __obj.updateDynamic("SetDataYear")(SetDataYear)
-    __obj.updateDynamic("SetDataYearAndMonth")(SetDataYearAndMonth)
+    val __obj = js.Dynamic.literal(DataFunction = DataFunction, SetDataDate = SetDataDate, SetDataDaysFrom = SetDataDaysFrom, SetDataDaysTo = SetDataDaysTo, SetDataInitialCharGroup = SetDataInitialCharGroup, SetDataIntegerSegment = SetDataIntegerSegment, SetDataLeftChars = SetDataLeftChars, SetDataMonth = SetDataMonth, SetDataNoOp = SetDataNoOp, SetDataYear = SetDataYear, SetDataYearAndMonth = SetDataYearAndMonth)
+  
     __obj.asInstanceOf[IDataFunctionCall]
   }
 }

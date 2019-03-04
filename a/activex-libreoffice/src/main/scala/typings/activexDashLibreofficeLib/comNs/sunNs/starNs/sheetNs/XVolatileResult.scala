@@ -27,12 +27,8 @@ object XVolatileResult {
     release: js.Function0[scala.Unit],
     removeResultListener: js.Function1[XResultListener, scala.Unit]
   ): XVolatileResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addResultListener")(addResultListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeResultListener")(removeResultListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addResultListener = addResultListener, queryInterface = queryInterface, release = release, removeResultListener = removeResultListener)
+  
     __obj.asInstanceOf[XVolatileResult]
   }
 }

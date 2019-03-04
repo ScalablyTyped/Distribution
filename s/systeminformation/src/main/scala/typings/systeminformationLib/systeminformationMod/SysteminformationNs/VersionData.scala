@@ -24,13 +24,8 @@ object VersionData {
     pm2: java.lang.String,
     v8: java.lang.String
   ): VersionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kernel")(kernel)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("npm")(npm)
-    __obj.updateDynamic("openssl")(openssl)
-    __obj.updateDynamic("pm2")(pm2)
-    __obj.updateDynamic("v8")(v8)
+    val __obj = js.Dynamic.literal(kernel = kernel, node = node, npm = npm, openssl = openssl, pm2 = pm2, v8 = v8)
+  
     __obj.asInstanceOf[VersionData]
   }
 }

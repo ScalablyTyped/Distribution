@@ -81,8 +81,7 @@ object InfiniteScrollProps {
     useCapture: js.UndefOr[scala.Boolean] = js.undefined,
     useWindow: js.UndefOr[scala.Boolean] = js.undefined
   ): InfiniteScrollProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadMore")(loadMore)
+    val __obj = js.Dynamic.literal(loadMore = loadMore)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (element != null) __obj.updateDynamic("element")(element)
     if (getScrollParent != null) __obj.updateDynamic("getScrollParent")(getScrollParent)

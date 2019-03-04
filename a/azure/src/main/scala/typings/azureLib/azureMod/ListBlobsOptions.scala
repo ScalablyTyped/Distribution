@@ -21,8 +21,7 @@ object ListBlobsOptions {
     prefix: java.lang.String = null,
     timeoutIntervalInMs: scala.Int | scala.Double = null
   ): ListBlobsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(marker = marker)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (include != null) __obj.updateDynamic("include")(include)
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)

@@ -30,12 +30,8 @@ object WorkflowTaskGetStepDescriptionParams {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     stepId: scala.Double
   ): WorkflowTaskGetStepDescriptionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stepId")(stepId)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, stepId = stepId)
+  
     __obj.asInstanceOf[WorkflowTaskGetStepDescriptionParams]
   }
 }

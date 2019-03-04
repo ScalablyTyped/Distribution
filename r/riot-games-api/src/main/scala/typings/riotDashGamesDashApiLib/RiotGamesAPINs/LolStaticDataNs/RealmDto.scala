@@ -30,16 +30,8 @@ object RealmDto {
     storage: java.lang.String,
     v: java.lang.String
   ): RealmDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cdn")(cdn)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("dd")(dd)
-    __obj.updateDynamic("l")(l)
-    __obj.updateDynamic("lg")(lg)
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("profileiconmax")(profileiconmax)
-    __obj.updateDynamic("storage")(storage)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(cdn = cdn, css = css, dd = dd, l = l, lg = lg, n = n, profileiconmax = profileiconmax, storage = storage, v = v)
+  
     __obj.asInstanceOf[RealmDto]
   }
 }

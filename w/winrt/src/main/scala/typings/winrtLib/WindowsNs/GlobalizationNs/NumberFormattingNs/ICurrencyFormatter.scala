@@ -34,24 +34,8 @@ object ICurrencyFormatter {
     resolvedGeographicRegion: java.lang.String,
     resolvedLanguage: java.lang.String
   ): ICurrencyFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("formatDouble")(formatDouble)
-    __obj.updateDynamic("formatInt")(formatInt)
-    __obj.updateDynamic("formatUInt")(formatUInt)
-    __obj.updateDynamic("fractionDigits")(fractionDigits)
-    __obj.updateDynamic("geographicRegion")(geographicRegion)
-    __obj.updateDynamic("integerDigits")(integerDigits)
-    __obj.updateDynamic("isDecimalPointAlwaysDisplayed")(isDecimalPointAlwaysDisplayed)
-    __obj.updateDynamic("isGrouped")(isGrouped)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("numeralSystem")(numeralSystem)
-    __obj.updateDynamic("parseDouble")(parseDouble)
-    __obj.updateDynamic("parseInt")(parseInt)
-    __obj.updateDynamic("parseUInt")(parseUInt)
-    __obj.updateDynamic("resolvedGeographicRegion")(resolvedGeographicRegion)
-    __obj.updateDynamic("resolvedLanguage")(resolvedLanguage)
+    val __obj = js.Dynamic.literal(currency = currency, format = format, formatDouble = formatDouble, formatInt = formatInt, formatUInt = formatUInt, fractionDigits = fractionDigits, geographicRegion = geographicRegion, integerDigits = integerDigits, isDecimalPointAlwaysDisplayed = isDecimalPointAlwaysDisplayed, isGrouped = isGrouped, languages = languages, numeralSystem = numeralSystem, parseDouble = parseDouble, parseInt = parseInt, parseUInt = parseUInt, resolvedGeographicRegion = resolvedGeographicRegion, resolvedLanguage = resolvedLanguage)
+  
     __obj.asInstanceOf[ICurrencyFormatter]
   }
 }

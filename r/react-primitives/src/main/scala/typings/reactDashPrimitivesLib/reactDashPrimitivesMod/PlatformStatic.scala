@@ -28,9 +28,7 @@ object PlatformStatic {
       js.Any
     ]
   ): PlatformStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OS")(OS.asInstanceOf[js.Any])
-    __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(OS = OS.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.updateDynamic("select")(select_default)
     __obj.asInstanceOf[PlatformStatic]
   }

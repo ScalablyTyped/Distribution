@@ -18,10 +18,8 @@ object ICustomSwitch {
     defaultValue: scala.Boolean,
     options: valueOrfunc[ICustomControlOption]
   ): ICustomSwitch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, options = options.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ICustomSwitch]
   }
 }

@@ -13,8 +13,7 @@ trait Anon_BucketStorageClass extends js.Object {
 object Anon_BucketStorageClass {
   @scala.inline
   def apply(bucket: java.lang.String, storageClass: java.lang.String = null): Anon_BucketStorageClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass)
     __obj.asInstanceOf[Anon_BucketStorageClass]
   }

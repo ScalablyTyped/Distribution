@@ -23,9 +23,8 @@ trait PhotonPersistentDiskVolumeSource extends js.Object {
 object PhotonPersistentDiskVolumeSource {
   @scala.inline
   def apply(fsType: java.lang.String, pdID: java.lang.String): PhotonPersistentDiskVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("pdID")(pdID)
+    val __obj = js.Dynamic.literal(fsType = fsType, pdID = pdID)
+  
     __obj.asInstanceOf[PhotonPersistentDiskVolumeSource]
   }
 }

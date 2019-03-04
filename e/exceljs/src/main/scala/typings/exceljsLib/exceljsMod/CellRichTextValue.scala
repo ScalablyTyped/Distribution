@@ -12,8 +12,8 @@ trait CellRichTextValue extends _CellValue {
 object CellRichTextValue {
   @scala.inline
   def apply(richText: js.Array[RichText]): CellRichTextValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("richText")(richText)
+    val __obj = js.Dynamic.literal(richText = richText)
+  
     __obj.asInstanceOf[CellRichTextValue]
   }
 }

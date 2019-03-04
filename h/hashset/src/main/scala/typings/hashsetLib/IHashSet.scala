@@ -37,20 +37,8 @@ object IHashSet {
     union: js.Function1[IHashSet[TValue], IHashSet[TValue]],
     values: js.Function0[js.Array[TValue]]
   ): IHashSet[TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addAll")(addAll)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("complement")(complement)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("intersection")(intersection)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isSubsetOf")(isSubsetOf)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("union")(union)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(add = add, addAll = addAll, clear = clear, clone = clone, complement = complement, contains = contains, intersection = intersection, isEmpty = isEmpty, isSubsetOf = isSubsetOf, remove = remove, size = size, union = union, values = values)
+  
     __obj.asInstanceOf[IHashSet[TValue]]
   }
 }

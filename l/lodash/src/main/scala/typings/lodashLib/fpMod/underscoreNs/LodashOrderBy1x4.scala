@@ -17,7 +17,7 @@ trait LodashOrderBy1x4[T] extends js.Object {
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
   ): js.Array[T] = js.native
   def apply(
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
   ): LodashOrderBy1x6[T] = js.native
 }

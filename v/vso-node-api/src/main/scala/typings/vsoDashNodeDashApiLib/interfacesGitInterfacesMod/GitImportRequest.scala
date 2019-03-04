@@ -47,14 +47,8 @@ object GitImportRequest {
     status: GitAsyncOperationStatus,
     url: java.lang.String
   ): GitImportRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("detailedStatus")(detailedStatus)
-    __obj.updateDynamic("importRequestId")(importRequestId)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, detailedStatus = detailedStatus, importRequestId = importRequestId, parameters = parameters, repository = repository, status = status, url = url)
+  
     __obj.asInstanceOf[GitImportRequest]
   }
 }

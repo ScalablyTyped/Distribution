@@ -19,8 +19,8 @@ trait ASPxClientUploadControlDropZoneEnterEventArgs extends ASPxClientEventArgs 
 object ASPxClientUploadControlDropZoneEnterEventArgs {
   @scala.inline
   def apply(dropZone: js.Object): ASPxClientUploadControlDropZoneEnterEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropZone")(dropZone)
+    val __obj = js.Dynamic.literal(dropZone = dropZone)
+  
     __obj.asInstanceOf[ASPxClientUploadControlDropZoneEnterEventArgs]
   }
 }

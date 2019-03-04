@@ -63,13 +63,8 @@ object IStorageFileStatics {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperation[StorageFile]
     ]
   ): IStorageFileStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createStreamedFileAsync")(createStreamedFileAsync)
-    __obj.updateDynamic("createStreamedFileFromUriAsync")(createStreamedFileFromUriAsync)
-    __obj.updateDynamic("getFileFromApplicationUriAsync")(getFileFromApplicationUriAsync)
-    __obj.updateDynamic("getFileFromPathAsync")(getFileFromPathAsync)
-    __obj.updateDynamic("replaceWithStreamedFileAsync")(replaceWithStreamedFileAsync)
-    __obj.updateDynamic("replaceWithStreamedFileFromUriAsync")(replaceWithStreamedFileFromUriAsync)
+    val __obj = js.Dynamic.literal(createStreamedFileAsync = createStreamedFileAsync, createStreamedFileFromUriAsync = createStreamedFileFromUriAsync, getFileFromApplicationUriAsync = getFileFromApplicationUriAsync, getFileFromPathAsync = getFileFromPathAsync, replaceWithStreamedFileAsync = replaceWithStreamedFileAsync, replaceWithStreamedFileFromUriAsync = replaceWithStreamedFileFromUriAsync)
+  
     __obj.asInstanceOf[IStorageFileStatics]
   }
 }

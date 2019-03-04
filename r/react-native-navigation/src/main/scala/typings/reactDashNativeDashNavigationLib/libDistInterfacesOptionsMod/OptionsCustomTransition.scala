@@ -13,8 +13,7 @@ trait OptionsCustomTransition extends js.Object {
 object OptionsCustomTransition {
   @scala.inline
   def apply(animations: js.Array[OptionsCustomTransitionAnimation], duration: scala.Int | scala.Double = null): OptionsCustomTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animations")(animations)
+    val __obj = js.Dynamic.literal(animations = animations)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsCustomTransition]
   }

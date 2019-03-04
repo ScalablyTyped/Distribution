@@ -20,10 +20,7 @@ object INotifyOptions {
     messageType: java.lang.String,
     cssClasses: java.lang.String = null
   ): INotifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowHtml")(allowHtml)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("messageType")(messageType)
+    val __obj = js.Dynamic.literal(allowHtml = allowHtml, message = message, messageType = messageType)
     if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses)
     __obj.asInstanceOf[INotifyOptions]
   }

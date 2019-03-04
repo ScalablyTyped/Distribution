@@ -52,11 +52,8 @@ object IAssociationScore {
     qFieldPairName: java.lang.String,
     qScoreSummary: scala.Double
   ): IAssociationScore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qField1Scores")(qField1Scores)
-    __obj.updateDynamic("qField2Scores")(qField2Scores)
-    __obj.updateDynamic("qFieldPairName")(qFieldPairName)
-    __obj.updateDynamic("qScoreSummary")(qScoreSummary)
+    val __obj = js.Dynamic.literal(qField1Scores = qField1Scores, qField2Scores = qField2Scores, qFieldPairName = qFieldPairName, qScoreSummary = qScoreSummary)
+  
     __obj.asInstanceOf[IAssociationScore]
   }
 }

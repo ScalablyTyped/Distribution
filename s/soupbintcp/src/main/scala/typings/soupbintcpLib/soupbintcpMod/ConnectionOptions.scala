@@ -20,8 +20,7 @@ object ConnectionOptions {
     rxTimeoutMillis: scala.Int | scala.Double = null,
     txIntervalMillis: scala.Int | scala.Double = null
   ): ConnectionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("heartbeatPacketType")(heartbeatPacketType)
+    val __obj = js.Dynamic.literal(heartbeatPacketType = heartbeatPacketType)
     if (keepAliveMillis != null) __obj.updateDynamic("keepAliveMillis")(keepAliveMillis.asInstanceOf[js.Any])
     if (rxTimeoutMillis != null) __obj.updateDynamic("rxTimeoutMillis")(rxTimeoutMillis.asInstanceOf[js.Any])
     if (txIntervalMillis != null) __obj.updateDynamic("txIntervalMillis")(txIntervalMillis.asInstanceOf[js.Any])

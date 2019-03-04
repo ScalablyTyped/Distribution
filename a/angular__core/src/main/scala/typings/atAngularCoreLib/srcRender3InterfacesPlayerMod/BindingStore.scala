@@ -12,8 +12,8 @@ trait BindingStore extends js.Object {
 object BindingStore {
   @scala.inline
   def apply(setValue: js.Function2[java.lang.String, js.Any, scala.Unit]): BindingStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(setValue = setValue)
+  
     __obj.asInstanceOf[BindingStore]
   }
 }

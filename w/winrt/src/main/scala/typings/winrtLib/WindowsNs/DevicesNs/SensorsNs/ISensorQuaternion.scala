@@ -15,11 +15,8 @@ trait ISensorQuaternion extends js.Object {
 object ISensorQuaternion {
   @scala.inline
   def apply(w: scala.Double, x: scala.Double, y: scala.Double, z: scala.Double): ISensorQuaternion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(w = w, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[ISensorQuaternion]
   }
 }

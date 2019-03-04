@@ -28,15 +28,8 @@ object Anon_AdditionsBloburl {
     raw_url: java.lang.String,
     status: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.modified
   ): Anon_AdditionsBloburl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additions")(additions)
-    __obj.updateDynamic("blob_url")(blob_url)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("deletions")(deletions)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("raw_url")(raw_url)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(additions = additions, blob_url = blob_url, changes = changes, deletions = deletions, filename = filename, patch = patch, raw_url = raw_url, status = status)
+  
     __obj.asInstanceOf[Anon_AdditionsBloburl]
   }
 }

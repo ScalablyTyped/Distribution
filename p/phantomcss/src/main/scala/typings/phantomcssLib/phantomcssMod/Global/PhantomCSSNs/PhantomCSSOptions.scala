@@ -120,8 +120,7 @@ object PhantomCSSOptions {
     rebase: js.Any = null,
     screenshotRoot: java.lang.String = null
   ): PhantomCSSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addIteratorToImage")(addIteratorToImage)
+    val __obj = js.Dynamic.literal(addIteratorToImage = addIteratorToImage)
     if (!js.isUndefined(addLabelToFailedImage)) __obj.updateDynamic("addLabelToFailedImage")(addLabelToFailedImage)
     if (casper != null) __obj.updateDynamic("casper")(casper)
     if (!js.isUndefined(cleanupComparisonImages)) __obj.updateDynamic("cleanupComparisonImages")(cleanupComparisonImages)

@@ -24,13 +24,8 @@ object Other {
     firefox: scala.Boolean,
     opera: scala.Boolean
   ): Other = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blackberry")(blackberry)
-    __obj.updateDynamic("blackberry_10")(blackberry_10)
-    __obj.updateDynamic("chrome")(chrome)
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("firefox")(firefox)
-    __obj.updateDynamic("opera")(opera)
+    val __obj = js.Dynamic.literal(blackberry = blackberry, blackberry_10 = blackberry_10, chrome = chrome, device = device, firefox = firefox, opera = opera)
+  
     __obj.asInstanceOf[Other]
   }
 }

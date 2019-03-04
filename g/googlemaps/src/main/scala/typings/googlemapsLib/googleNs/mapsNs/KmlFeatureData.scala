@@ -24,13 +24,8 @@ object KmlFeatureData {
     name: java.lang.String,
     snippet: java.lang.String
   ): KmlFeatureData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("infoWindowHtml")(infoWindowHtml)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("snippet")(snippet)
+    val __obj = js.Dynamic.literal(author = author, description = description, id = id, infoWindowHtml = infoWindowHtml, name = name, snippet = snippet)
+  
     __obj.asInstanceOf[KmlFeatureData]
   }
 }

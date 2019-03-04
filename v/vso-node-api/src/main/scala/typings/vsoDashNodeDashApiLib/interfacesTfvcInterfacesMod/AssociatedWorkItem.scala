@@ -32,14 +32,8 @@ object AssociatedWorkItem {
     webUrl: java.lang.String,
     workItemType: java.lang.String
   ): AssociatedWorkItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("webUrl")(webUrl)
-    __obj.updateDynamic("workItemType")(workItemType)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, id = id, state = state, title = title, url = url, webUrl = webUrl, workItemType = workItemType)
+  
     __obj.asInstanceOf[AssociatedWorkItem]
   }
 }

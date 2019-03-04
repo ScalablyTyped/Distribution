@@ -33,11 +33,8 @@ object KanbanFilter {
     filterCards: js.Function0[scala.Unit],
     searchCards: js.Function1[java.lang.String, scala.Unit]
   ): KanbanFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearFilter")(clearFilter)
-    __obj.updateDynamic("clearSearch")(clearSearch)
-    __obj.updateDynamic("filterCards")(filterCards)
-    __obj.updateDynamic("searchCards")(searchCards)
+    val __obj = js.Dynamic.literal(clearFilter = clearFilter, clearSearch = clearSearch, filterCards = filterCards, searchCards = searchCards)
+  
     __obj.asInstanceOf[KanbanFilter]
   }
 }

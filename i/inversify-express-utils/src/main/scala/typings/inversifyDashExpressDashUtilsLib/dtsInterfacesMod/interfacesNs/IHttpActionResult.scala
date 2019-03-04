@@ -16,8 +16,8 @@ object IHttpActionResult {
       js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
     ]
   ): IHttpActionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executeAsync")(executeAsync)
+    val __obj = js.Dynamic.literal(executeAsync = executeAsync)
+  
     __obj.asInstanceOf[IHttpActionResult]
   }
 }

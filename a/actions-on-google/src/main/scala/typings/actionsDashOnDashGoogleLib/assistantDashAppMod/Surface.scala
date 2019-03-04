@@ -13,8 +13,8 @@ trait Surface extends js.Object {
 object Surface {
   @scala.inline
   def apply(capabilities: js.Array[Capability]): Surface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
+    val __obj = js.Dynamic.literal(capabilities = capabilities)
+  
     __obj.asInstanceOf[Surface]
   }
 }

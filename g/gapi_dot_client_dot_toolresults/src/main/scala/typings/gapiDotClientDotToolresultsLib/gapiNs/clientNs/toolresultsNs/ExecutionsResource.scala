@@ -72,13 +72,8 @@ object ExecutionsResource {
     ],
     steps: StepsResource
   ): ExecutionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusters")(clusters)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(clusters = clusters, create = create, get = get, list = list, patch = patch, steps = steps)
+  
     __obj.asInstanceOf[ExecutionsResource]
   }
 }

@@ -31,9 +31,7 @@ object WorkBook {
     Workbook: WBProps = null,
     vbaraw: js.Any = null
   ): WorkBook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SheetNames")(SheetNames)
-    __obj.updateDynamic("Sheets")(Sheets)
+    val __obj = js.Dynamic.literal(SheetNames = SheetNames, Sheets = Sheets)
     if (Custprops != null) __obj.updateDynamic("Custprops")(Custprops)
     if (Props != null) __obj.updateDynamic("Props")(Props)
     if (Workbook != null) __obj.updateDynamic("Workbook")(Workbook)

@@ -22,12 +22,8 @@ object SpreadsheetTriggerBuilder {
     onFormSubmit: js.Function0[SpreadsheetTriggerBuilder],
     onOpen: js.Function0[SpreadsheetTriggerBuilder]
   ): SpreadsheetTriggerBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onEdit")(onEdit)
-    __obj.updateDynamic("onFormSubmit")(onFormSubmit)
-    __obj.updateDynamic("onOpen")(onOpen)
+    val __obj = js.Dynamic.literal(create = create, onChange = onChange, onEdit = onEdit, onFormSubmit = onFormSubmit, onOpen = onOpen)
+  
     __obj.asInstanceOf[SpreadsheetTriggerBuilder]
   }
 }

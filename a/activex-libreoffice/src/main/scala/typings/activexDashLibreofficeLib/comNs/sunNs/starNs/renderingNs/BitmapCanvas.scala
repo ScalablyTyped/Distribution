@@ -109,35 +109,8 @@ object BitmapCanvas {
       XCachedPrimitive
     ]
   ): BitmapCanvas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Device")(Device)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("copyRect")(copyRect)
-    __obj.updateDynamic("createFont")(createFont)
-    __obj.updateDynamic("drawBezier")(drawBezier)
-    __obj.updateDynamic("drawBitmap")(drawBitmap)
-    __obj.updateDynamic("drawBitmapModulated")(drawBitmapModulated)
-    __obj.updateDynamic("drawLine")(drawLine)
-    __obj.updateDynamic("drawPoint")(drawPoint)
-    __obj.updateDynamic("drawPolyPolygon")(drawPolyPolygon)
-    __obj.updateDynamic("drawText")(drawText)
-    __obj.updateDynamic("drawTextLayout")(drawTextLayout)
-    __obj.updateDynamic("fillPolyPolygon")(fillPolyPolygon)
-    __obj.updateDynamic("fillTextureMappedPolyPolygon")(fillTextureMappedPolyPolygon)
-    __obj.updateDynamic("fillTexturedPolyPolygon")(fillTexturedPolyPolygon)
-    __obj.updateDynamic("getDevice")(getDevice)
-    __obj.updateDynamic("getScaledBitmap")(getScaledBitmap)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("hasAlpha")(hasAlpha)
-    __obj.updateDynamic("queryAvailableFonts")(queryAvailableFonts)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryStrokeShapes")(queryStrokeShapes)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("strokePolyPolygon")(strokePolyPolygon)
-    __obj.updateDynamic("strokeTextureMappedPolyPolygon")(strokeTextureMappedPolyPolygon)
-    __obj.updateDynamic("strokeTexturedPolyPolygon")(strokeTexturedPolyPolygon)
+    val __obj = js.Dynamic.literal(Device = Device, Size = Size, acquire = acquire, clear = clear, copyRect = copyRect, createFont = createFont, drawBezier = drawBezier, drawBitmap = drawBitmap, drawBitmapModulated = drawBitmapModulated, drawLine = drawLine, drawPoint = drawPoint, drawPolyPolygon = drawPolyPolygon, drawText = drawText, drawTextLayout = drawTextLayout, fillPolyPolygon = fillPolyPolygon, fillTextureMappedPolyPolygon = fillTextureMappedPolyPolygon, fillTexturedPolyPolygon = fillTexturedPolyPolygon, getDevice = getDevice, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, queryAvailableFonts = queryAvailableFonts, queryInterface = queryInterface, queryStrokeShapes = queryStrokeShapes, release = release, strokePolyPolygon = strokePolyPolygon, strokeTextureMappedPolyPolygon = strokeTextureMappedPolyPolygon, strokeTexturedPolyPolygon = strokeTexturedPolyPolygon)
+  
     __obj.asInstanceOf[BitmapCanvas]
   }
 }

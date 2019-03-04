@@ -95,20 +95,8 @@ object DocumentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[WriteResponse]
     ]
   ): DocumentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchGet")(batchGet)
-    __obj.updateDynamic("beginTransaction")(beginTransaction)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("createDocument")(createDocument)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listCollectionIds")(listCollectionIds)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("runQuery")(runQuery)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(batchGet = batchGet, beginTransaction = beginTransaction, commit = commit, createDocument = createDocument, delete = delete, get = get, list = list, listCollectionIds = listCollectionIds, listen = listen, patch = patch, rollback = rollback, runQuery = runQuery, write = write)
+  
     __obj.asInstanceOf[DocumentsResource]
   }
 }

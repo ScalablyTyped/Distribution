@@ -24,8 +24,8 @@ object RelayWebhook {
     auth_token: java.lang.String = null,
     name: java.lang.String = null
   ): RelayWebhook = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
+    __obj.updateDynamic("match")(`match`)
     if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[RelayWebhook]

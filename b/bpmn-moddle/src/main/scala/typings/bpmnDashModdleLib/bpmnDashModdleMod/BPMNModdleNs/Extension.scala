@@ -16,10 +16,8 @@ trait Extension extends TypeDerived {
 object Extension {
   @scala.inline
   def apply($type: ElementType, definition: ExtensionDefinition, mustUnderstand: scala.Boolean): Extension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("mustUnderstand")(mustUnderstand)
+    val __obj = js.Dynamic.literal($type = $type, definition = definition, mustUnderstand = mustUnderstand)
+  
     __obj.asInstanceOf[Extension]
   }
 }

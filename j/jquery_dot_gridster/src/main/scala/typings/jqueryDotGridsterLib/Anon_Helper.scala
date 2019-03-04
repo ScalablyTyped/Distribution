@@ -12,8 +12,8 @@ trait Anon_Helper extends js.Object {
 object Anon_Helper {
   @scala.inline
   def apply(helper: JQuery): Anon_Helper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("helper")(helper)
+    val __obj = js.Dynamic.literal(helper = helper)
+  
     __obj.asInstanceOf[Anon_Helper]
   }
 }

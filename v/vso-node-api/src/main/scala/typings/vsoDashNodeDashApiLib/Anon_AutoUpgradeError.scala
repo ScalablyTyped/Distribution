@@ -34,18 +34,8 @@ object Anon_AutoUpgradeError {
     versionCheckError: scala.Double,
     warning: scala.Double
   ): Anon_AutoUpgradeError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoUpgradeError")(autoUpgradeError)
-    __obj.updateDynamic("builtIn")(builtIn)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("multiVersion")(multiVersion)
-    __obj.updateDynamic("needsReauthorization")(needsReauthorization)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("trusted")(trusted)
-    __obj.updateDynamic("unInstalled")(unInstalled)
-    __obj.updateDynamic("versionCheckError")(versionCheckError)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(autoUpgradeError = autoUpgradeError, builtIn = builtIn, disabled = disabled, error = error, multiVersion = multiVersion, needsReauthorization = needsReauthorization, none = none, trusted = trusted, unInstalled = unInstalled, versionCheckError = versionCheckError, warning = warning)
+  
     __obj.asInstanceOf[Anon_AutoUpgradeError]
   }
 }

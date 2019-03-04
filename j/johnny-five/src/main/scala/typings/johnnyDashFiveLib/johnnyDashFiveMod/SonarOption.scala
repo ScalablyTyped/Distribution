@@ -20,9 +20,7 @@ object SonarOption {
     freq: scala.Int | scala.Double = null,
     threshold: scala.Int | scala.Double = null
   ): SonarOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(device = device, pin = pin.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
     __obj.asInstanceOf[SonarOption]

@@ -55,18 +55,8 @@ object MarkerChanged {
     textChanged: scala.Boolean,
     wasValid: scala.Boolean
   ): MarkerChanged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hadTail")(hadTail)
-    __obj.updateDynamic("hasTail")(hasTail)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("newHeadPosition")(newHeadPosition)
-    __obj.updateDynamic("newProperties")(newProperties)
-    __obj.updateDynamic("newTailPosition")(newTailPosition)
-    __obj.updateDynamic("oldHeadPosition")(oldHeadPosition)
-    __obj.updateDynamic("oldProperties")(oldProperties)
-    __obj.updateDynamic("oldTailPosition")(oldTailPosition)
-    __obj.updateDynamic("textChanged")(textChanged)
-    __obj.updateDynamic("wasValid")(wasValid)
+    val __obj = js.Dynamic.literal(hadTail = hadTail, hasTail = hasTail, isValid = isValid, newHeadPosition = newHeadPosition, newProperties = newProperties, newTailPosition = newTailPosition, oldHeadPosition = oldHeadPosition, oldProperties = oldProperties, oldTailPosition = oldTailPosition, textChanged = textChanged, wasValid = wasValid)
+  
     __obj.asInstanceOf[MarkerChanged]
   }
 }

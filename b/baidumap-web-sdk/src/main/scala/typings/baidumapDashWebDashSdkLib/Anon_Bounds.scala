@@ -18,9 +18,8 @@ object Anon_Bounds {
     target: js.Any,
     `type`: java.lang.String
   ): Anon_Bounds = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(bounds = bounds, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Bounds]
   }
 }

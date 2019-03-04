@@ -13,8 +13,7 @@ trait License extends js.Object {
 object License {
   @scala.inline
   def apply(name: java.lang.String, url: java.lang.String = null): License = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[License]
   }

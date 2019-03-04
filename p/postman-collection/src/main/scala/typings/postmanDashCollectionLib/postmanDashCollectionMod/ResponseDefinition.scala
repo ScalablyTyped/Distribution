@@ -30,9 +30,7 @@ object ResponseDefinition {
     originalRequest: RequestDefinition = null,
     stream: nodeLib.Buffer | stdLib.Uint8Array = null
   ): ResponseDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("responseTime")(responseTime)
+    val __obj = js.Dynamic.literal(code = code, responseTime = responseTime)
     if (body != null) __obj.updateDynamic("body")(body)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

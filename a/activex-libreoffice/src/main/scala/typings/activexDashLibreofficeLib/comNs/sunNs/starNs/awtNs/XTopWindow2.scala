@@ -38,18 +38,8 @@ object XTopWindow2 {
     toBack: js.Function0[scala.Unit],
     toFront: js.Function0[scala.Unit]
   ): XTopWindow2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Display")(Display)
-    __obj.updateDynamic("IsMaximized")(IsMaximized)
-    __obj.updateDynamic("IsMinimized")(IsMinimized)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addTopWindowListener")(addTopWindowListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTopWindowListener")(removeTopWindowListener)
-    __obj.updateDynamic("setMenuBar")(setMenuBar)
-    __obj.updateDynamic("toBack")(toBack)
-    __obj.updateDynamic("toFront")(toFront)
+    val __obj = js.Dynamic.literal(Display = Display, IsMaximized = IsMaximized, IsMinimized = IsMinimized, acquire = acquire, addTopWindowListener = addTopWindowListener, queryInterface = queryInterface, release = release, removeTopWindowListener = removeTopWindowListener, setMenuBar = setMenuBar, toBack = toBack, toFront = toFront)
+  
     __obj.asInstanceOf[XTopWindow2]
   }
 }

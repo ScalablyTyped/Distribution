@@ -19,8 +19,7 @@ object GenericMapping {
     StringDictionary: /* opt */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     `type`: java.lang.String = null
   ): GenericMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keypath")(keypath)
+    val __obj = js.Dynamic.literal(keypath = keypath)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GenericMapping]

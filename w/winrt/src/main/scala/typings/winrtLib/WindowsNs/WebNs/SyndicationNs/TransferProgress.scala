@@ -20,11 +20,8 @@ object TransferProgress {
     totalBytesToRetrieve: scala.Double,
     totalBytesToSend: scala.Double
   ): TransferProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesRetrieved")(bytesRetrieved)
-    __obj.updateDynamic("bytesSent")(bytesSent)
-    __obj.updateDynamic("totalBytesToRetrieve")(totalBytesToRetrieve)
-    __obj.updateDynamic("totalBytesToSend")(totalBytesToSend)
+    val __obj = js.Dynamic.literal(bytesRetrieved = bytesRetrieved, bytesSent = bytesSent, totalBytesToRetrieve = totalBytesToRetrieve, totalBytesToSend = totalBytesToSend)
+  
     __obj.asInstanceOf[TransferProgress]
   }
 }

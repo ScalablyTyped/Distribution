@@ -24,13 +24,8 @@ object Anon_HTMLHandler {
     XHTMLHandler: rdflibLib.rdflibMod.Handler,
     XMLHandler: rdflibLib.rdflibMod.Handler
   ): Anon_HTMLHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HTMLHandler")(HTMLHandler)
-    __obj.updateDynamic("N3Handler")(N3Handler)
-    __obj.updateDynamic("RDFXMLHandler")(RDFXMLHandler)
-    __obj.updateDynamic("TextHandler")(TextHandler)
-    __obj.updateDynamic("XHTMLHandler")(XHTMLHandler)
-    __obj.updateDynamic("XMLHandler")(XMLHandler)
+    val __obj = js.Dynamic.literal(HTMLHandler = HTMLHandler, N3Handler = N3Handler, RDFXMLHandler = RDFXMLHandler, TextHandler = TextHandler, XHTMLHandler = XHTMLHandler, XMLHandler = XMLHandler)
+  
     __obj.asInstanceOf[Anon_HTMLHandler]
   }
 }

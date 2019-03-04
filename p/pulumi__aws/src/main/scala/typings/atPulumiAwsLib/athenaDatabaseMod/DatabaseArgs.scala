@@ -32,8 +32,7 @@ object DatabaseArgs {
     forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DatabaseArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (encryptionConfiguration != null) __obj.updateDynamic("encryptionConfiguration")(encryptionConfiguration.asInstanceOf[js.Any])
     if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

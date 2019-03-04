@@ -60,40 +60,8 @@ object Connection {
     setTransactionIsolation: js.Function1[scala.Double, scala.Unit],
     setTypeMap: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, scala.Unit]
   ): Connection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoCommit")(AutoCommit)
-    __obj.updateDynamic("Catalog")(Catalog)
-    __obj.updateDynamic("MetaData")(MetaData)
-    __obj.updateDynamic("TransactionIsolation")(TransactionIsolation)
-    __obj.updateDynamic("TypeMap")(TypeMap)
-    __obj.updateDynamic("Warnings")(Warnings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("clearWarnings")(clearWarnings)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("createStatement")(createStatement)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAutoCommit")(getAutoCommit)
-    __obj.updateDynamic("getCatalog")(getCatalog)
-    __obj.updateDynamic("getMetaData")(getMetaData)
-    __obj.updateDynamic("getTransactionIsolation")(getTransactionIsolation)
-    __obj.updateDynamic("getTypeMap")(getTypeMap)
-    __obj.updateDynamic("getWarnings")(getWarnings)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("nativeSQL")(nativeSQL)
-    __obj.updateDynamic("prepareCall")(prepareCall)
-    __obj.updateDynamic("prepareStatement")(prepareStatement)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("setAutoCommit")(setAutoCommit)
-    __obj.updateDynamic("setCatalog")(setCatalog)
-    __obj.updateDynamic("setReadOnly")(setReadOnly)
-    __obj.updateDynamic("setTransactionIsolation")(setTransactionIsolation)
-    __obj.updateDynamic("setTypeMap")(setTypeMap)
+    val __obj = js.Dynamic.literal(AutoCommit = AutoCommit, Catalog = Catalog, MetaData = MetaData, TransactionIsolation = TransactionIsolation, TypeMap = TypeMap, Warnings = Warnings, acquire = acquire, addEventListener = addEventListener, clearWarnings = clearWarnings, close = close, commit = commit, createStatement = createStatement, dispose = dispose, getAutoCommit = getAutoCommit, getCatalog = getCatalog, getMetaData = getMetaData, getTransactionIsolation = getTransactionIsolation, getTypeMap = getTypeMap, getWarnings = getWarnings, isClosed = isClosed, isReadOnly = isReadOnly, nativeSQL = nativeSQL, prepareCall = prepareCall, prepareStatement = prepareStatement, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, rollback = rollback, setAutoCommit = setAutoCommit, setCatalog = setCatalog, setReadOnly = setReadOnly, setTransactionIsolation = setTransactionIsolation, setTypeMap = setTypeMap)
+  
     __obj.asInstanceOf[Connection]
   }
 }

@@ -21,10 +21,7 @@ object FirehoseTransformationEventRecord {
     recordId: java.lang.String,
     kinesisRecordMetadata: FirehoseRecordMetadata = null
   ): FirehoseTransformationEventRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approximateArrivalTimestamp")(approximateArrivalTimestamp)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("recordId")(recordId)
+    val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp, data = data, recordId = recordId)
     if (kinesisRecordMetadata != null) __obj.updateDynamic("kinesisRecordMetadata")(kinesisRecordMetadata)
     __obj.asInstanceOf[FirehoseTransformationEventRecord]
   }

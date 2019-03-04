@@ -22,9 +22,8 @@ trait ASPxClientDashboardParameterValue extends js.Object {
 object ASPxClientDashboardParameterValue {
   @scala.inline
   def apply(GetDisplayText: js.Function0[java.lang.String], GetValue: js.Function0[js.Object]): ASPxClientDashboardParameterValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDisplayText")(GetDisplayText)
-    __obj.updateDynamic("GetValue")(GetValue)
+    val __obj = js.Dynamic.literal(GetDisplayText = GetDisplayText, GetValue = GetValue)
+  
     __obj.asInstanceOf[ASPxClientDashboardParameterValue]
   }
 }

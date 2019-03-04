@@ -22,12 +22,8 @@ object CheckData {
     halfCheckedKeys: js.Array[java.lang.String],
     node: InternalTreeNode
   ): CheckData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("checkedNodes")(checkedNodes)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("halfCheckedKeys")(halfCheckedKeys)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(checked = checked, checkedNodes = checkedNodes, event = event, halfCheckedKeys = halfCheckedKeys, node = node)
+  
     __obj.asInstanceOf[CheckData]
   }
 }

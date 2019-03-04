@@ -30,11 +30,8 @@ object AgentPoolQueueTarget {
     queue: AgentPoolQueue,
     `type`: scala.Double
   ): AgentPoolQueueTarget = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("allowScriptsAuthAccessOption")(allowScriptsAuthAccessOption)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("executionOptions")(executionOptions)
-    __obj.updateDynamic("queue")(queue)
+    val __obj = js.Dynamic.literal(allowScriptsAuthAccessOption = allowScriptsAuthAccessOption, demands = demands, executionOptions = executionOptions, queue = queue)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AgentPoolQueueTarget]
   }
 }

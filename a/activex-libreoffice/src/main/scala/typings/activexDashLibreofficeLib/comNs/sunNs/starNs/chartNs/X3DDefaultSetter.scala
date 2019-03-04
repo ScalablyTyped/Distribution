@@ -32,13 +32,8 @@ object X3DDefaultSetter {
     setDefaultIllumination: js.Function0[scala.Unit],
     setDefaultRotation: js.Function0[scala.Unit]
   ): X3DDefaultSetter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("set3DSettingsToDefault")(set3DSettingsToDefault)
-    __obj.updateDynamic("setDefaultIllumination")(setDefaultIllumination)
-    __obj.updateDynamic("setDefaultRotation")(setDefaultRotation)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, set3DSettingsToDefault = set3DSettingsToDefault, setDefaultIllumination = setDefaultIllumination, setDefaultRotation = setDefaultRotation)
+  
     __obj.asInstanceOf[X3DDefaultSetter]
   }
 }

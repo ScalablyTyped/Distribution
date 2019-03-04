@@ -27,8 +27,8 @@ object ChooseMultipleFilesEntryOptions {
     acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
     suggestedName: java.lang.String = null
   ): ChooseMultipleFilesEntryOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("acceptsMultiple")(acceptsMultiple)
+    val __obj = js.Dynamic.literal(acceptsMultiple = acceptsMultiple)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
     if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)

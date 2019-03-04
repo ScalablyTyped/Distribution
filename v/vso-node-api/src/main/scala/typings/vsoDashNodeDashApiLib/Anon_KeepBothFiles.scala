@@ -20,11 +20,8 @@ object Anon_KeepBothFiles {
     keepTargetPath: scala.Double,
     undecided: scala.Double
   ): Anon_KeepBothFiles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keepBothFiles")(keepBothFiles)
-    __obj.updateDynamic("keepSourcePath")(keepSourcePath)
-    __obj.updateDynamic("keepTargetPath")(keepTargetPath)
-    __obj.updateDynamic("undecided")(undecided)
+    val __obj = js.Dynamic.literal(keepBothFiles = keepBothFiles, keepSourcePath = keepSourcePath, keepTargetPath = keepTargetPath, undecided = undecided)
+  
     __obj.asInstanceOf[Anon_KeepBothFiles]
   }
 }

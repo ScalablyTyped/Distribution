@@ -20,9 +20,7 @@ object Animation {
     callback: js.Function0[scala.Unit] = null,
     easing: js.Function1[/* num */ scala.Double, scala.Double] = null
   ): Animation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr)
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(attr = attr, duration = duration)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (easing != null) __obj.updateDynamic("easing")(easing)
     __obj.asInstanceOf[Animation]

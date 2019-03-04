@@ -28,9 +28,7 @@ object BingMapsOptions {
     tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): BingMapsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imagerySet")(imagerySet)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(imagerySet = imagerySet, key = key)
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])

@@ -13,9 +13,8 @@ trait Anon_Range extends js.Object {
 object Anon_Range {
   @scala.inline
   def apply(range: grammarkdownLib.distCoreMod.Range, text: java.lang.String): Anon_Range = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(range = range, text = text)
+  
     __obj.asInstanceOf[Anon_Range]
   }
 }

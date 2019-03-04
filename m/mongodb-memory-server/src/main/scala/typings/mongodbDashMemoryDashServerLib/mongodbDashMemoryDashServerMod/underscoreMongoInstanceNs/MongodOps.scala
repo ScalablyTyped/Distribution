@@ -25,8 +25,7 @@ object MongodOps {
     debug: scala.Boolean | (js.Function1[/* repeated */ js.Any, _]) = null,
     spawn: mongodbDashMemoryDashServerLib.Anon_Argv0 = null
   ): MongodOps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(instance = instance)
     if (binary != null) __obj.updateDynamic("binary")(binary)
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (spawn != null) __obj.updateDynamic("spawn")(spawn)

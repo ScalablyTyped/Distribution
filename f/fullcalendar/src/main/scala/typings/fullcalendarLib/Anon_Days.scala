@@ -12,8 +12,8 @@ trait Anon_Days extends js.Object {
 object Anon_Days {
   @scala.inline
   def apply(days: scala.Double): Anon_Days = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
+    val __obj = js.Dynamic.literal(days = days)
+  
     __obj.asInstanceOf[Anon_Days]
   }
 }

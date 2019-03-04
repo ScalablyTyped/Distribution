@@ -18,9 +18,8 @@ object ClearDropOperation {
     silent: scala.Boolean,
     `type`: sparqljsLib.sparqljsLibStrings.clear | sparqljsLib.sparqljsLibStrings.drop
   ): ClearDropOperation = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("silent")(silent)
+    val __obj = js.Dynamic.literal(graph = graph, silent = silent)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearDropOperation]
   }
 }

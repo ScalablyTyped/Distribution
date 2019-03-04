@@ -24,13 +24,8 @@ object NavigationScene {
     key: java.lang.String,
     route: NavigationRoute[NavigationParams]
   ): NavigationScene = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descriptor")(descriptor)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isStale")(isStale)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(descriptor = descriptor, index = index, isActive = isActive, isStale = isStale, key = key, route = route.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NavigationScene]
   }
 }

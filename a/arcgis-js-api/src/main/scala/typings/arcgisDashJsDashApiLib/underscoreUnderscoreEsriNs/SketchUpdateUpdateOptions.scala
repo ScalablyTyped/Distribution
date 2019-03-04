@@ -66,10 +66,7 @@ object SketchUpdateUpdateOptions {
     toggleToolOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     tool: java.lang.String = null
   ): SketchUpdateUpdateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation)
     if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling)
     if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)

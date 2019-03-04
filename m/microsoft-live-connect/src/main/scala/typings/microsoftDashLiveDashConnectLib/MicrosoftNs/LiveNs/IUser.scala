@@ -95,22 +95,8 @@ object IUser {
     updated_time: java.lang.String,
     work: js.Array[IWorkInfo]
   ): IUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("birth_day")(birth_day)
-    __obj.updateDynamic("birth_month")(birth_month)
-    __obj.updateDynamic("birth_year")(birth_year)
-    __obj.updateDynamic("emails")(emails)
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("gender")(gender)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("last_name")(last_name)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phones")(phones)
-    __obj.updateDynamic("updated_time")(updated_time)
-    __obj.updateDynamic("work")(work)
+    val __obj = js.Dynamic.literal(addresses = addresses, birth_day = birth_day, birth_month = birth_month, birth_year = birth_year, emails = emails, first_name = first_name, gender = gender, id = id, last_name = last_name, link = link, locale = locale, name = name, phones = phones, updated_time = updated_time, work = work)
+  
     __obj.asInstanceOf[IUser]
   }
 }

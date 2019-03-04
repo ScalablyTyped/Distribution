@@ -26,14 +26,8 @@ object Anon_Africa {
     oceania: countryDashDataLib.countryDashDataMod.Continent,
     southAmerica: countryDashDataLib.countryDashDataMod.Continent
   ): Anon_Africa = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("africa")(africa)
-    __obj.updateDynamic("antarctica")(antarctica)
-    __obj.updateDynamic("asia")(asia)
-    __obj.updateDynamic("europe")(europe)
-    __obj.updateDynamic("northAmerica")(northAmerica)
-    __obj.updateDynamic("oceania")(oceania)
-    __obj.updateDynamic("southAmerica")(southAmerica)
+    val __obj = js.Dynamic.literal(africa = africa, antarctica = antarctica, asia = asia, europe = europe, northAmerica = northAmerica, oceania = oceania, southAmerica = southAmerica)
+  
     __obj.asInstanceOf[Anon_Africa]
   }
 }

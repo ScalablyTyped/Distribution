@@ -20,10 +20,8 @@ object MediaBundleBuilder {
     ],
     withName: js.Function1[java.lang.String, MediaBundleBuilder[Media]]
   ): MediaBundleBuilder[Media] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withData")(withData)
-    __obj.updateDynamic("withName")(withName)
+    val __obj = js.Dynamic.literal(build = build, withData = withData, withName = withName)
+  
     __obj.asInstanceOf[MediaBundleBuilder[Media]]
   }
 }

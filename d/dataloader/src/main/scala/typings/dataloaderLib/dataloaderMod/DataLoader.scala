@@ -51,12 +51,8 @@ object DataLoader {
     loadMany: js.Function1[js.Array[K], js.Promise[js.Array[V]]],
     prime: js.Function2[K, V, DataLoader[K, V]]
   ): DataLoader[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("clearAll")(clearAll)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadMany")(loadMany)
-    __obj.updateDynamic("prime")(prime)
+    val __obj = js.Dynamic.literal(clear = clear, clearAll = clearAll, load = load, loadMany = loadMany, prime = prime)
+  
     __obj.asInstanceOf[DataLoader[K, V]]
   }
 }

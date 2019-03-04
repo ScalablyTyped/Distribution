@@ -20,10 +20,7 @@ object Anon_DataMethod {
     path: java.lang.String,
     regex: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DataMethod[TPayload] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], method = method, path = path)
     if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
     __obj.asInstanceOf[Anon_DataMethod[TPayload]]
   }

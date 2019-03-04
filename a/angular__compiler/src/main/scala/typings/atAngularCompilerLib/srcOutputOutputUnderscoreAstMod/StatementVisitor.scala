@@ -32,17 +32,8 @@ object StatementVisitor {
     visitThrowStmt: js.Function2[ThrowStmt, js.Any, js.Any],
     visitTryCatchStmt: js.Function2[TryCatchStmt, js.Any, js.Any]
   ): StatementVisitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitCommentStmt")(visitCommentStmt)
-    __obj.updateDynamic("visitDeclareClassStmt")(visitDeclareClassStmt)
-    __obj.updateDynamic("visitDeclareFunctionStmt")(visitDeclareFunctionStmt)
-    __obj.updateDynamic("visitDeclareVarStmt")(visitDeclareVarStmt)
-    __obj.updateDynamic("visitExpressionStmt")(visitExpressionStmt)
-    __obj.updateDynamic("visitIfStmt")(visitIfStmt)
-    __obj.updateDynamic("visitJSDocCommentStmt")(visitJSDocCommentStmt)
-    __obj.updateDynamic("visitReturnStmt")(visitReturnStmt)
-    __obj.updateDynamic("visitThrowStmt")(visitThrowStmt)
-    __obj.updateDynamic("visitTryCatchStmt")(visitTryCatchStmt)
+    val __obj = js.Dynamic.literal(visitCommentStmt = visitCommentStmt, visitDeclareClassStmt = visitDeclareClassStmt, visitDeclareFunctionStmt = visitDeclareFunctionStmt, visitDeclareVarStmt = visitDeclareVarStmt, visitExpressionStmt = visitExpressionStmt, visitIfStmt = visitIfStmt, visitJSDocCommentStmt = visitJSDocCommentStmt, visitReturnStmt = visitReturnStmt, visitThrowStmt = visitThrowStmt, visitTryCatchStmt = visitTryCatchStmt)
+  
     __obj.asInstanceOf[StatementVisitor]
   }
 }

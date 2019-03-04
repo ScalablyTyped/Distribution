@@ -13,9 +13,8 @@ trait AttributeDescriptor extends js.Object {
 object AttributeDescriptor {
   @scala.inline
   def apply(attributeName: java.lang.String, containerName: java.lang.String): AttributeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName)
-    __obj.updateDynamic("containerName")(containerName)
+    val __obj = js.Dynamic.literal(attributeName = attributeName, containerName = containerName)
+  
     __obj.asInstanceOf[AttributeDescriptor]
   }
 }

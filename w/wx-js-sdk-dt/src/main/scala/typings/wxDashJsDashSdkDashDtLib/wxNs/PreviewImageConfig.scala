@@ -29,9 +29,7 @@ object PreviewImageConfig {
     fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
     success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null
   ): PreviewImageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(current = current, urls = urls)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

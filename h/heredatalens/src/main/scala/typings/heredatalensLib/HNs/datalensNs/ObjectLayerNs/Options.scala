@@ -54,8 +54,7 @@ object Options {
       ObjectStyleOptions
     ] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowToMapObject")(rowToMapObject)
+    val __obj = js.Dynamic.literal(rowToMapObject = rowToMapObject)
     if (clustering != null) __obj.updateDynamic("clustering")(clustering)
     if (dataDomains != null) __obj.updateDynamic("dataDomains")(dataDomains)
     if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)

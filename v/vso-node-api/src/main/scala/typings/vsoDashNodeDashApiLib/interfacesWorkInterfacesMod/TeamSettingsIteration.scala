@@ -34,13 +34,8 @@ object TeamSettingsIteration {
     path: java.lang.String,
     url: java.lang.String
   ): TeamSettingsIteration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, attributes = attributes, id = id, name = name, path = path, url = url)
+  
     __obj.asInstanceOf[TeamSettingsIteration]
   }
 }

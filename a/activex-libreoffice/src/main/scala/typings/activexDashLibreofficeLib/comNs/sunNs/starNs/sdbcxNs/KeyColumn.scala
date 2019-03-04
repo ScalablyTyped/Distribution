@@ -55,31 +55,8 @@ object KeyColumn {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): KeyColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultValue")(DefaultValue)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("IsAutoIncrement")(IsAutoIncrement)
-    __obj.updateDynamic("IsCurrency")(IsCurrency)
-    __obj.updateDynamic("IsNullable")(IsNullable)
-    __obj.updateDynamic("IsRowVersion")(IsRowVersion)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Precision")(Precision)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RelatedColumn")(RelatedColumn)
-    __obj.updateDynamic("Scale")(Scale)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("TypeName")(TypeName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createDataDescriptor")(createDataDescriptor)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(DefaultValue = DefaultValue, Description = Description, IsAutoIncrement = IsAutoIncrement, IsCurrency = IsCurrency, IsNullable = IsNullable, IsRowVersion = IsRowVersion, Name = Name, Precision = Precision, PropertySetInfo = PropertySetInfo, RelatedColumn = RelatedColumn, Scale = Scale, Type = Type, TypeName = TypeName, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createDataDescriptor = createDataDescriptor, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[KeyColumn]
   }
 }

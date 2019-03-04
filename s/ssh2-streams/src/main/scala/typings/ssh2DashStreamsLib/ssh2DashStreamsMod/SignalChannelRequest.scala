@@ -18,10 +18,8 @@ object SignalChannelRequest {
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.signal,
     signal: java.lang.String
   ): SignalChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request, signal = signal)
+  
     __obj.asInstanceOf[SignalChannelRequest]
   }
 }

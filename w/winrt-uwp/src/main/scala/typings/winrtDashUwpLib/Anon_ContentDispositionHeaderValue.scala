@@ -16,9 +16,8 @@ object Anon_ContentDispositionHeaderValue {
     contentDispositionHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentDispositionHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ContentDispositionHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentDispositionHeaderValue")(contentDispositionHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(contentDispositionHeaderValue = contentDispositionHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ContentDispositionHeaderValue]
   }
 }

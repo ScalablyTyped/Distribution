@@ -100,9 +100,7 @@ object TaskDefinitionArgs {
       ]
     ] = null
   ): TaskDefinitionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerDefinitions")(containerDefinitions.asInstanceOf[js.Any])
-    __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerDefinitions = containerDefinitions.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any])
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
     if (ipcMode != null) __obj.updateDynamic("ipcMode")(ipcMode.asInstanceOf[js.Any])

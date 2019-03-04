@@ -75,23 +75,8 @@ object AddIn {
     release: js.Function0[scala.Unit],
     setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
   ): AddIn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("ServiceName")(ServiceName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getArgumentDescription")(getArgumentDescription)
-    __obj.updateDynamic("getCompatibilityNames")(getCompatibilityNames)
-    __obj.updateDynamic("getDisplayArgumentName")(getDisplayArgumentName)
-    __obj.updateDynamic("getDisplayCategoryName")(getDisplayCategoryName)
-    __obj.updateDynamic("getDisplayFunctionName")(getDisplayFunctionName)
-    __obj.updateDynamic("getFunctionDescription")(getFunctionDescription)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getProgrammaticCategoryName")(getProgrammaticCategoryName)
-    __obj.updateDynamic("getProgrammaticFuntionName")(getProgrammaticFuntionName)
-    __obj.updateDynamic("getServiceName")(getServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLocale")(setLocale)
+    val __obj = js.Dynamic.literal(Locale = Locale, ServiceName = ServiceName, acquire = acquire, getArgumentDescription = getArgumentDescription, getCompatibilityNames = getCompatibilityNames, getDisplayArgumentName = getDisplayArgumentName, getDisplayCategoryName = getDisplayCategoryName, getDisplayFunctionName = getDisplayFunctionName, getFunctionDescription = getFunctionDescription, getLocale = getLocale, getProgrammaticCategoryName = getProgrammaticCategoryName, getProgrammaticFuntionName = getProgrammaticFuntionName, getServiceName = getServiceName, queryInterface = queryInterface, release = release, setLocale = setLocale)
+  
     __obj.asInstanceOf[AddIn]
   }
 }

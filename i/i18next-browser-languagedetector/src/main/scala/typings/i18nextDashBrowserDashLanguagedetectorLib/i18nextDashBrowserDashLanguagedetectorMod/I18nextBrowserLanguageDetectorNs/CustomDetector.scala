@@ -20,9 +20,7 @@ object CustomDetector {
     name: java.lang.String,
     cacheUserLanguage: js.Function2[/* lng */ java.lang.String, /* options */ DetectorOptions, scala.Unit] = null
   ): CustomDetector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(lookup = lookup, name = name)
     if (cacheUserLanguage != null) __obj.updateDynamic("cacheUserLanguage")(cacheUserLanguage)
     __obj.asInstanceOf[CustomDetector]
   }

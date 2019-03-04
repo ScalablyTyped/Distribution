@@ -13,9 +13,8 @@ trait Anon_Acl extends js.Object {
 object Anon_Acl {
   @scala.inline
   def apply(acl: java.lang.String, res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse): Anon_Acl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acl")(acl)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(acl = acl, res = res)
+  
     __obj.asInstanceOf[Anon_Acl]
   }
 }

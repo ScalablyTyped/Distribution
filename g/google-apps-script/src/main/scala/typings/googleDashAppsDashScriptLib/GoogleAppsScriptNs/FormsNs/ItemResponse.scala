@@ -24,13 +24,8 @@ object ItemResponse {
     setFeedback: js.Function1[js.Object, ItemResponse],
     setScore: js.Function1[js.Object, ItemResponse]
   ): ItemResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFeedback")(getFeedback)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getResponse")(getResponse)
-    __obj.updateDynamic("getScore")(getScore)
-    __obj.updateDynamic("setFeedback")(setFeedback)
-    __obj.updateDynamic("setScore")(setScore)
+    val __obj = js.Dynamic.literal(getFeedback = getFeedback, getItem = getItem, getResponse = getResponse, getScore = getScore, setFeedback = setFeedback, setScore = setScore)
+  
     __obj.asInstanceOf[ItemResponse]
   }
 }

@@ -17,10 +17,8 @@ trait IRefModelInModel extends js.Object {
 object IRefModelInModel {
   @scala.inline
   def apply(childId: java.lang.String, childModel: IModel, parentModel: IModel): IRefModelInModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childId")(childId)
-    __obj.updateDynamic("childModel")(childModel)
-    __obj.updateDynamic("parentModel")(parentModel)
+    val __obj = js.Dynamic.literal(childId = childId, childModel = childModel, parentModel = parentModel)
+  
     __obj.asInstanceOf[IRefModelInModel]
   }
 }

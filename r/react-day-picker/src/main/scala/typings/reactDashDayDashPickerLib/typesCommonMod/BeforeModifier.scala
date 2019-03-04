@@ -12,8 +12,8 @@ trait BeforeModifier extends js.Object {
 object BeforeModifier {
   @scala.inline
   def apply(before: stdLib.Date): BeforeModifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("before")(before)
+    val __obj = js.Dynamic.literal(before = before)
+  
     __obj.asInstanceOf[BeforeModifier]
   }
 }

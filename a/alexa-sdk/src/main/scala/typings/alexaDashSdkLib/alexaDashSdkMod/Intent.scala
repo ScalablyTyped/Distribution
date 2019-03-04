@@ -18,9 +18,7 @@ object Intent {
     slots: stdLib.Record[java.lang.String, SlotValue],
     confirmationStatus: ConfirmationStatuses = null
   ): Intent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("slots")(slots)
+    val __obj = js.Dynamic.literal(name = name, slots = slots)
     if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus)
     __obj.asInstanceOf[Intent]
   }

@@ -21,10 +21,8 @@ object Anon_Error {
     params: expoLib.expoMod.HashMap,
     `type`: expoLib.expoLibStrings.error
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, event = event, params = params)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Error]
   }
 }

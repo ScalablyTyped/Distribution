@@ -18,10 +18,8 @@ object Recorder {
     start: js.Function0[js.Promise[js.UndefOr[stdLib.MediaStream]]],
     stop: js.Function0[js.Promise[recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderResult]]
   ): Recorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(init = init, start = start, stop = stop)
+  
     __obj.asInstanceOf[Recorder]
   }
 }

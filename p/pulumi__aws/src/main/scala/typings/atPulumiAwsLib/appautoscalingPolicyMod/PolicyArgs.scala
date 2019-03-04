@@ -82,10 +82,7 @@ object PolicyArgs {
     ] = null,
     targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CustomizedMetricSpecificationDisableScaleIn] = null
   ): PolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], scalableDimension = scalableDimension.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
     if (adjustmentType != null) __obj.updateDynamic("adjustmentType")(adjustmentType.asInstanceOf[js.Any])
     if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
     if (cooldown != null) __obj.updateDynamic("cooldown")(cooldown.asInstanceOf[js.Any])

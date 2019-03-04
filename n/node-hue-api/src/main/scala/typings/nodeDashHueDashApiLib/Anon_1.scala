@@ -28,8 +28,15 @@ object Anon_1 {
     `7`: java.lang.String,
     `8`: java.lang.String
   ): Anon_1 = {
-    val __obj = js.Dynamic.literal(`1` = `1`, `2` = `2`, `3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`, `8` = `8`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("6")(`6`)
+    __obj.updateDynamic("7")(`7`)
+    __obj.updateDynamic("8")(`8`)
     __obj.asInstanceOf[Anon_1]
   }
 }

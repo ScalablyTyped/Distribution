@@ -52,27 +52,8 @@ object RunTimeSetting {
     mTextureDetectionSensitivity: scala.Double,
     mTimeout: scala.Double
   ): RunTimeSetting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mAntiDamageLevel")(mAntiDamageLevel)
-    __obj.updateDynamic("mBarcodeFormatIds")(mBarcodeFormatIds)
-    __obj.updateDynamic("mBarcodeInvertMode")(mBarcodeInvertMode)
-    __obj.updateDynamic("mBinarizationBlockSize")(mBinarizationBlockSize)
-    __obj.updateDynamic("mColourImageConvertMode")(mColourImageConvertMode)
-    __obj.updateDynamic("mDeblurLevel")(mDeblurLevel)
-    __obj.updateDynamic("mEnableFillBinaryVacancy")(mEnableFillBinaryVacancy)
-    __obj.updateDynamic("mExpectedBarcodesCount")(mExpectedBarcodesCount)
-    __obj.updateDynamic("mGrayEqualizationSensitivity")(mGrayEqualizationSensitivity)
-    __obj.updateDynamic("mLocalizationAlgorithmPriority")(mLocalizationAlgorithmPriority)
-    __obj.updateDynamic("mMaxAlgorithmThreadCount")(mMaxAlgorithmThreadCount)
-    __obj.updateDynamic("mMaxBarcodesCount")(mMaxBarcodesCount)
-    __obj.updateDynamic("mMaxDimOfFullImageAsBarcodeZone")(mMaxDimOfFullImageAsBarcodeZone)
-    __obj.updateDynamic("mPDFRasterDPI")(mPDFRasterDPI)
-    __obj.updateDynamic("mRegionPredetectionMode")(mRegionPredetectionMode)
-    __obj.updateDynamic("mReserved")(mReserved)
-    __obj.updateDynamic("mScaleDownThreshold")(mScaleDownThreshold)
-    __obj.updateDynamic("mTextFilterMode")(mTextFilterMode)
-    __obj.updateDynamic("mTextureDetectionSensitivity")(mTextureDetectionSensitivity)
-    __obj.updateDynamic("mTimeout")(mTimeout)
+    val __obj = js.Dynamic.literal(mAntiDamageLevel = mAntiDamageLevel, mBarcodeFormatIds = mBarcodeFormatIds, mBarcodeInvertMode = mBarcodeInvertMode, mBinarizationBlockSize = mBinarizationBlockSize, mColourImageConvertMode = mColourImageConvertMode, mDeblurLevel = mDeblurLevel, mEnableFillBinaryVacancy = mEnableFillBinaryVacancy, mExpectedBarcodesCount = mExpectedBarcodesCount, mGrayEqualizationSensitivity = mGrayEqualizationSensitivity, mLocalizationAlgorithmPriority = mLocalizationAlgorithmPriority, mMaxAlgorithmThreadCount = mMaxAlgorithmThreadCount, mMaxBarcodesCount = mMaxBarcodesCount, mMaxDimOfFullImageAsBarcodeZone = mMaxDimOfFullImageAsBarcodeZone, mPDFRasterDPI = mPDFRasterDPI, mRegionPredetectionMode = mRegionPredetectionMode, mReserved = mReserved, mScaleDownThreshold = mScaleDownThreshold, mTextFilterMode = mTextFilterMode, mTextureDetectionSensitivity = mTextureDetectionSensitivity, mTimeout = mTimeout)
+  
     __obj.asInstanceOf[RunTimeSetting]
   }
 }

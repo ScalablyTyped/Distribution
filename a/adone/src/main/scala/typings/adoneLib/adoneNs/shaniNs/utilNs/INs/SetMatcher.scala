@@ -24,11 +24,8 @@ object SetMatcher {
     deepEquals: js.Function1[nodeLib.Set[_], Matcher],
     or: js.Function1[Matcher, Matcher]
   ): SetMatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("deepEquals")(deepEquals)
-    __obj.updateDynamic("or")(or)
+    val __obj = js.Dynamic.literal(and = and, contains = contains, deepEquals = deepEquals, or = or)
+  
     __obj.asInstanceOf[SetMatcher]
   }
 }

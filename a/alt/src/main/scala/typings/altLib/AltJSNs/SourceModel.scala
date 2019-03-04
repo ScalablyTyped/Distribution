@@ -30,10 +30,7 @@ object SourceModel {
     local: js.Function2[/* state */ js.Any, /* repeated */ js.Any, _] = null,
     shouldFetch: js.Function1[/* fetchFn */ js.Function1[/* repeated */ js.Any, scala.Boolean], scala.Unit] = null
   ): SourceModel[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("remote")(remote)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(error = error, remote = remote, success = success)
     if (interceptResponse != null) __obj.updateDynamic("interceptResponse")(interceptResponse)
     if (loading != null) __obj.updateDynamic("loading")(loading)
     if (local != null) __obj.updateDynamic("local")(local)

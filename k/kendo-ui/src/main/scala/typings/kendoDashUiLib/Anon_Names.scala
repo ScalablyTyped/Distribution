@@ -18,10 +18,8 @@ object Anon_Names {
     namesAbbr: js.Array[java.lang.String],
     namesShort: js.Array[java.lang.String]
   ): Anon_Names = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("namesAbbr")(namesAbbr)
-    __obj.updateDynamic("namesShort")(namesShort)
+    val __obj = js.Dynamic.literal(names = names, namesAbbr = namesAbbr, namesShort = namesShort)
+  
     __obj.asInstanceOf[Anon_Names]
   }
 }

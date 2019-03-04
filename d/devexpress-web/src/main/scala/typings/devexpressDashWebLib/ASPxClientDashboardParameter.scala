@@ -63,16 +63,8 @@ object ASPxClientDashboardParameter {
     SetValue: js.Function1[js.Object, scala.Unit],
     Value: js.Object
   ): ASPxClientDashboardParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDefaultValue")(GetDefaultValue)
-    __obj.updateDynamic("GetDescription")(GetDescription)
-    __obj.updateDynamic("GetName")(GetName)
-    __obj.updateDynamic("GetType")(GetType)
-    __obj.updateDynamic("GetValue")(GetValue)
-    __obj.updateDynamic("GetValues")(GetValues)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("SetValue")(SetValue)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(GetDefaultValue = GetDefaultValue, GetDescription = GetDescription, GetName = GetName, GetType = GetType, GetValue = GetValue, GetValues = GetValues, Name = Name, SetValue = SetValue, Value = Value)
+  
     __obj.asInstanceOf[ASPxClientDashboardParameter]
   }
 }

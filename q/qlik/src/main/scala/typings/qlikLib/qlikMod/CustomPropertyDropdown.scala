@@ -28,9 +28,8 @@ object CustomPropertyDropdown {
     options: CustomPropertyOptions = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyDropdown = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(component = component, ref = ref)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (label != null) __obj.updateDynamic("label")(label)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

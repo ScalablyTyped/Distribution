@@ -24,13 +24,8 @@ object SQLParsingError {
     position: IErrorPosition,
     stack: java.lang.String
   ): SQLParsingError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(code = code, error = error, message = message, name = name, position = position, stack = stack)
+  
     __obj.asInstanceOf[SQLParsingError]
   }
 }

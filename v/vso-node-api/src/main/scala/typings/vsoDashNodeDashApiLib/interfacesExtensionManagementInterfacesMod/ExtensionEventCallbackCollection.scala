@@ -47,14 +47,8 @@ object ExtensionEventCallbackCollection {
     preInstall: ExtensionEventCallback,
     versionCheck: ExtensionEventCallback
   ): ExtensionEventCallbackCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postDisable")(postDisable)
-    __obj.updateDynamic("postEnable")(postEnable)
-    __obj.updateDynamic("postInstall")(postInstall)
-    __obj.updateDynamic("postUninstall")(postUninstall)
-    __obj.updateDynamic("postUpdate")(postUpdate)
-    __obj.updateDynamic("preInstall")(preInstall)
-    __obj.updateDynamic("versionCheck")(versionCheck)
+    val __obj = js.Dynamic.literal(postDisable = postDisable, postEnable = postEnable, postInstall = postInstall, postUninstall = postUninstall, postUpdate = postUpdate, preInstall = preInstall, versionCheck = versionCheck)
+  
     __obj.asInstanceOf[ExtensionEventCallbackCollection]
   }
 }

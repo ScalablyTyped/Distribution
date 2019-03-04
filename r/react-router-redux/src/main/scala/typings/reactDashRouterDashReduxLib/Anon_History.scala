@@ -18,9 +18,8 @@ object Anon_History {
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState],
     `match`: Anon_IsExact
   ): Anon_History = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(history = history, location = location)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Anon_History]
   }
 }

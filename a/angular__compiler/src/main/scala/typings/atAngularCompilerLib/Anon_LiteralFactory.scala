@@ -16,9 +16,8 @@ object Anon_LiteralFactory {
     literalFactory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     literalFactoryArguments: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression]
   ): Anon_LiteralFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("literalFactory")(literalFactory)
-    __obj.updateDynamic("literalFactoryArguments")(literalFactoryArguments)
+    val __obj = js.Dynamic.literal(literalFactory = literalFactory, literalFactoryArguments = literalFactoryArguments)
+  
     __obj.asInstanceOf[Anon_LiteralFactory]
   }
 }

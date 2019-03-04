@@ -13,9 +13,8 @@ trait ISelectOption extends js.Object {
 object ISelectOption {
   @scala.inline
   def apply(label: java.lang.String, value: scala.Double | java.lang.String): ISelectOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ISelectOption]
   }
 }

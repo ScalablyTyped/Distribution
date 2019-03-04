@@ -21,12 +21,8 @@ object XTitleChangeListener {
     release: js.Function0[scala.Unit],
     titleChanged: js.Function1[TitleChangedEvent, scala.Unit]
   ): XTitleChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("titleChanged")(titleChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, titleChanged = titleChanged)
+  
     __obj.asInstanceOf[XTitleChangeListener]
   }
 }

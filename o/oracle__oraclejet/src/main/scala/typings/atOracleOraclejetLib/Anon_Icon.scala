@@ -18,10 +18,8 @@ object Anon_Icon {
     labelStyle: js.Object,
     showDisclosure: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
   ): Anon_Icon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("showDisclosure")(showDisclosure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(icon = icon, labelStyle = labelStyle, showDisclosure = showDisclosure.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Icon]
   }
 }

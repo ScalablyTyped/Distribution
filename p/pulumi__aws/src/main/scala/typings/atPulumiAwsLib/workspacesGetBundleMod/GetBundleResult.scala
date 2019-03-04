@@ -47,14 +47,8 @@ object GetBundleResult {
     rootStorages: js.Array[atPulumiAwsLib.Anon_Capacity],
     userStorages: js.Array[atPulumiAwsLib.Anon_Capacity]
   ): GetBundleResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeTypes")(computeTypes)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("rootStorages")(rootStorages)
-    __obj.updateDynamic("userStorages")(userStorages)
+    val __obj = js.Dynamic.literal(computeTypes = computeTypes, description = description, id = id, name = name, owner = owner, rootStorages = rootStorages, userStorages = userStorages)
+  
     __obj.asInstanceOf[GetBundleResult]
   }
 }

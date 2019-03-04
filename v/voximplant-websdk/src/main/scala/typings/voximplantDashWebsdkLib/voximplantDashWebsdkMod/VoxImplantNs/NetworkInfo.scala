@@ -18,8 +18,8 @@ trait NetworkInfo extends js.Object {
 object NetworkInfo {
   @scala.inline
   def apply(packetLoss: scala.Double): NetworkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packetLoss")(packetLoss)
+    val __obj = js.Dynamic.literal(packetLoss = packetLoss)
+  
     __obj.asInstanceOf[NetworkInfo]
   }
 }

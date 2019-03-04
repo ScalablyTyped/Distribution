@@ -20,11 +20,8 @@ object CardSection {
     setHeader: js.Function1[java.lang.String, CardSection],
     setNumUncollapsibleWidgets: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, CardSection]
   ): CardSection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addWidget")(addWidget)
-    __obj.updateDynamic("setCollapsible")(setCollapsible)
-    __obj.updateDynamic("setHeader")(setHeader)
-    __obj.updateDynamic("setNumUncollapsibleWidgets")(setNumUncollapsibleWidgets)
+    val __obj = js.Dynamic.literal(addWidget = addWidget, setCollapsible = setCollapsible, setHeader = setHeader, setNumUncollapsibleWidgets = setNumUncollapsibleWidgets)
+  
     __obj.asInstanceOf[CardSection]
   }
 }

@@ -15,8 +15,8 @@ trait ReferenceContext extends js.Object {
 object ReferenceContext {
   @scala.inline
   def apply(includeDeclaration: scala.Boolean): ReferenceContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeDeclaration")(includeDeclaration)
+    val __obj = js.Dynamic.literal(includeDeclaration = includeDeclaration)
+  
     __obj.asInstanceOf[ReferenceContext]
   }
 }

@@ -69,21 +69,7 @@ object ojComboboxManySettableProperties {
     value: js.Array[_] = null,
     valueOptions: js.Array[atOracleOraclejetLib.Anon_LabelValue] = null
   ): ojComboboxManySettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncValidators")(asyncValidators)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("minLength")(minLength)
-    __obj.updateDynamic("optionsKeys")(optionsKeys)
-    __obj.updateDynamic("pickerAttributes")(pickerAttributes)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, minLength = minLength, optionsKeys = optionsKeys, pickerAttributes = pickerAttributes, readOnly = readOnly, required = required, translations = translations, valid = valid.asInstanceOf[js.Any])
     if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)

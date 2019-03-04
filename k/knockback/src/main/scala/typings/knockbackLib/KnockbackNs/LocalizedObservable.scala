@@ -18,10 +18,8 @@ object LocalizedObservable {
     observedValue: js.Function1[js.Any, js.Any],
     resetToCurrent: js.Function0[js.Any]
   ): LocalizedObservable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("observedValue")(observedValue)
-    __obj.updateDynamic("resetToCurrent")(resetToCurrent)
+    val __obj = js.Dynamic.literal(destroy = destroy, observedValue = observedValue, resetToCurrent = resetToCurrent)
+  
     __obj.asInstanceOf[LocalizedObservable]
   }
 }

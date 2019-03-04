@@ -17,8 +17,8 @@ object FormatDSV {
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.csv | vegaDashTypingsLib.vegaDashTypingsLibStrings.tsv,
     parse: Parse = null
   ): FormatDSV = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("delimiter")(delimiter)
+    val __obj = js.Dynamic.literal(delimiter = delimiter)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatDSV]
   }

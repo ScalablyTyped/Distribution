@@ -30,9 +30,7 @@ object DataGroup {
     subgroupStack: SubGroupStackOptions | scala.Boolean = null,
     title: java.lang.String = null
   ): DataGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, id = id.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (nestedGroups != null) __obj.updateDynamic("nestedGroups")(nestedGroups)
     if (options != null) __obj.updateDynamic("options")(options)

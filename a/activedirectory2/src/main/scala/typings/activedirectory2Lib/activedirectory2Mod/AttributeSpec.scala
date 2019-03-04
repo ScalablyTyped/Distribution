@@ -16,9 +16,8 @@ object AttributeSpec {
     group: js.Array[activedirectory2Lib.GroupAttributes],
     user: js.Array[activedirectory2Lib.UserAttributes]
   ): AttributeSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(group = group, user = user)
+  
     __obj.asInstanceOf[AttributeSpec]
   }
 }

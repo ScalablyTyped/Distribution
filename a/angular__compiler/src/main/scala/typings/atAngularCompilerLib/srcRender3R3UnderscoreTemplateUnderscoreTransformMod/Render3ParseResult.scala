@@ -16,9 +16,8 @@ object Render3ParseResult {
     errors: js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError],
     nodes: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Node]
   ): Render3ParseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(errors = errors, nodes = nodes)
+  
     __obj.asInstanceOf[Render3ParseResult]
   }
 }

@@ -16,8 +16,8 @@ object ArrayFilterData {
     `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.ArrayFilter,
     value: js.Array[java.lang.String] | js.Array[scala.Double]
   ): ArrayFilterData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArrayFilterData]
   }
 }

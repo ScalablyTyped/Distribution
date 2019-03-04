@@ -32,17 +32,8 @@ object Anon_Browser {
     touch: scala.Boolean,
     zoomLevel: scala.Double
   ): Anon_Browser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("devicePixelRatio")(devicePixelRatio)
-    __obj.updateDynamic("hasHW3D")(hasHW3D)
-    __obj.updateDynamic("hasNativeScrolling")(hasNativeScrolling)
-    __obj.updateDynamic("mobileOS")(mobileOS)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("pointers")(pointers)
-    __obj.updateDynamic("scrollbar")(scrollbar)
-    __obj.updateDynamic("touch")(touch)
-    __obj.updateDynamic("zoomLevel")(zoomLevel)
+    val __obj = js.Dynamic.literal(browser = browser, devicePixelRatio = devicePixelRatio, hasHW3D = hasHW3D, hasNativeScrolling = hasNativeScrolling, mobileOS = mobileOS, placeholder = placeholder, pointers = pointers, scrollbar = scrollbar, touch = touch, zoomLevel = zoomLevel)
+  
     __obj.asInstanceOf[Anon_Browser]
   }
 }

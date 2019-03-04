@@ -28,15 +28,8 @@ object AvFormat {
     start_time: java.lang.String,
     tags: qiniuDashJsLib.Anon_Creationtime
   ): AvFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bit_rate")(bit_rate)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("format_long_name")(format_long_name)
-    __obj.updateDynamic("format_name")(format_name)
-    __obj.updateDynamic("nb_streams")(nb_streams)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(bit_rate = bit_rate, duration = duration, format_long_name = format_long_name, format_name = format_name, nb_streams = nb_streams, size = size, start_time = start_time, tags = tags)
+  
     __obj.asInstanceOf[AvFormat]
   }
 }

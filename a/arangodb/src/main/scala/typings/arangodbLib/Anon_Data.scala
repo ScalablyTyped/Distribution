@@ -16,9 +16,8 @@ object Anon_Data {
     data: java.lang.String,
     headers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(data = data, headers = headers)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

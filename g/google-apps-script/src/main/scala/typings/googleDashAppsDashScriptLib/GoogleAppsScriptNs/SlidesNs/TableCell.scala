@@ -38,20 +38,8 @@ object TableCell {
     getText: js.Function0[TextRange],
     setContentAlignment: js.Function1[ContentAlignment, TableCell]
   ): TableCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColumnIndex")(getColumnIndex)
-    __obj.updateDynamic("getColumnSpan")(getColumnSpan)
-    __obj.updateDynamic("getContentAlignment")(getContentAlignment)
-    __obj.updateDynamic("getFill")(getFill)
-    __obj.updateDynamic("getHeadCell")(getHeadCell)
-    __obj.updateDynamic("getMergeState")(getMergeState)
-    __obj.updateDynamic("getParentColumn")(getParentColumn)
-    __obj.updateDynamic("getParentRow")(getParentRow)
-    __obj.updateDynamic("getParentTable")(getParentTable)
-    __obj.updateDynamic("getRowIndex")(getRowIndex)
-    __obj.updateDynamic("getRowSpan")(getRowSpan)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("setContentAlignment")(setContentAlignment)
+    val __obj = js.Dynamic.literal(getColumnIndex = getColumnIndex, getColumnSpan = getColumnSpan, getContentAlignment = getContentAlignment, getFill = getFill, getHeadCell = getHeadCell, getMergeState = getMergeState, getParentColumn = getParentColumn, getParentRow = getParentRow, getParentTable = getParentTable, getRowIndex = getRowIndex, getRowSpan = getRowSpan, getText = getText, setContentAlignment = setContentAlignment)
+  
     __obj.asInstanceOf[TableCell]
   }
 }

@@ -23,12 +23,8 @@ object CachedStorage {
     removeItem: js.Function1[java.lang.String, scala.Unit],
     setItem: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): CachedStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clead")(clead)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("setItem")(setItem)
+    val __obj = js.Dynamic.literal(clead = clead, getItem = getItem, length = length, removeItem = removeItem, setItem = setItem)
+  
     __obj.asInstanceOf[CachedStorage]
   }
 }

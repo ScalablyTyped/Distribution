@@ -16,8 +16,8 @@ trait ILazyLoadProvider extends js.Object {
 object ILazyLoadProvider {
   @scala.inline
   def apply(config: js.Function1[IProviderConfig, scala.Unit]): ILazyLoadProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(config = config)
+  
     __obj.asInstanceOf[ILazyLoadProvider]
   }
 }

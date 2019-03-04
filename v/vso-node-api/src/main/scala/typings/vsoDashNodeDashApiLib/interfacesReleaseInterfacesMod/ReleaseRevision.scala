@@ -26,14 +26,8 @@ object ReleaseRevision {
     definitionSnapshotRevision: scala.Double,
     releaseId: scala.Double
   ): ReleaseRevision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeDetails")(changeDetails)
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("changedBy")(changedBy)
-    __obj.updateDynamic("changedDate")(changedDate)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("definitionSnapshotRevision")(definitionSnapshotRevision)
-    __obj.updateDynamic("releaseId")(releaseId)
+    val __obj = js.Dynamic.literal(changeDetails = changeDetails, changeType = changeType, changedBy = changedBy, changedDate = changedDate, comment = comment, definitionSnapshotRevision = definitionSnapshotRevision, releaseId = releaseId)
+  
     __obj.asInstanceOf[ReleaseRevision]
   }
 }

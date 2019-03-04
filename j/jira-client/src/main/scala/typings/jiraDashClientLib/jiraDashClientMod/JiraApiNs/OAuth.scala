@@ -22,11 +22,7 @@ object OAuth {
     consumer_secret: java.lang.String,
     signature_method: java.lang.String = null
   ): OAuth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("access_token_secret")(access_token_secret)
-    __obj.updateDynamic("consumer_key")(consumer_key)
-    __obj.updateDynamic("consumer_secret")(consumer_secret)
+    val __obj = js.Dynamic.literal(access_token = access_token, access_token_secret = access_token_secret, consumer_key = consumer_key, consumer_secret = consumer_secret)
     if (signature_method != null) __obj.updateDynamic("signature_method")(signature_method)
     __obj.asInstanceOf[OAuth]
   }

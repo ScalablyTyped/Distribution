@@ -22,11 +22,8 @@ object ModuleTemplateHooks {
     `package`: tapableLib.tapableMod.SyncWaterfallHook[_, _, _],
     render: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
   ): ModuleTemplateHooks = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(content = content, hash = hash, module = module, render = render)
+    __obj.updateDynamic("package")(`package`)
     __obj.asInstanceOf[ModuleTemplateHooks]
   }
 }

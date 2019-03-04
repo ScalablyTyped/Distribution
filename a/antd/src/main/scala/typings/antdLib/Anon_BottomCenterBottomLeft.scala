@@ -18,10 +18,8 @@ object Anon_BottomCenterBottomLeft {
     mouseLeaveDelay: scala.Double,
     placement: antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter
   ): Anon_BottomCenterBottomLeft = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay)
-    __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay)
-    __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BottomCenterBottomLeft]
   }
 }

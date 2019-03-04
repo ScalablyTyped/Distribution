@@ -24,13 +24,8 @@ object Anon_Layout01 {
     margin02: java.lang.String,
     margin03: java.lang.String
   ): Anon_Layout01 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layout01")(layout01)
-    __obj.updateDynamic("layout02")(layout02)
-    __obj.updateDynamic("layout03")(layout03)
-    __obj.updateDynamic("margin01")(margin01)
-    __obj.updateDynamic("margin02")(margin02)
-    __obj.updateDynamic("margin03")(margin03)
+    val __obj = js.Dynamic.literal(layout01 = layout01, layout02 = layout02, layout03 = layout03, margin01 = margin01, margin02 = margin02, margin03 = margin03)
+  
     __obj.asInstanceOf[Anon_Layout01]
   }
 }

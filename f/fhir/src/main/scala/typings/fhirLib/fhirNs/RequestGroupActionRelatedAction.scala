@@ -51,9 +51,7 @@ object RequestGroupActionRelatedAction {
     offsetDuration: Duration = null,
     offsetRange: Range = null
   ): RequestGroupActionRelatedAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionId")(actionId)
-    __obj.updateDynamic("relationship")(relationship)
+    val __obj = js.Dynamic.literal(actionId = actionId, relationship = relationship)
     if (_actionId != null) __obj.updateDynamic("_actionId")(_actionId)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

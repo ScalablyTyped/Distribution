@@ -13,9 +13,8 @@ trait Image extends js.Object {
 object Image {
   @scala.inline
   def apply(contentDescription: java.lang.String, sources: js.Array[ImageSource]): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentDescription")(contentDescription)
-    __obj.updateDynamic("sources")(sources)
+    val __obj = js.Dynamic.literal(contentDescription = contentDescription, sources = sources)
+  
     __obj.asInstanceOf[Image]
   }
 }

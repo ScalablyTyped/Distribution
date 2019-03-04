@@ -60,15 +60,8 @@ object TooltipOptions {
     position: materializeDashCssLib.materializeDashCssLibStrings.top | materializeDashCssLib.materializeDashCssLibStrings.right | materializeDashCssLib.materializeDashCssLibStrings.bottom | materializeDashCssLib.materializeDashCssLibStrings.left,
     transitionMovement: scala.Double
   ): TooltipOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enterDelay")(enterDelay)
-    __obj.updateDynamic("exitDelay")(exitDelay)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("margin")(margin)
-    __obj.updateDynamic("outDuration")(outDuration)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("transitionMovement")(transitionMovement)
+    val __obj = js.Dynamic.literal(enterDelay = enterDelay, exitDelay = exitDelay, html = html, inDuration = inDuration, margin = margin, outDuration = outDuration, position = position.asInstanceOf[js.Any], transitionMovement = transitionMovement)
+  
     __obj.asInstanceOf[TooltipOptions]
   }
 }

@@ -19,9 +19,8 @@ trait TeamSettingsDataContractBase extends js.Object {
 object TeamSettingsDataContractBase {
   @scala.inline
   def apply(_links: js.Any, url: java.lang.String): TeamSettingsDataContractBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, url = url)
+  
     __obj.asInstanceOf[TeamSettingsDataContractBase]
   }
 }

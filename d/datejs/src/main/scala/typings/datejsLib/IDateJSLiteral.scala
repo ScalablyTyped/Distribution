@@ -27,14 +27,8 @@ object IDateJSLiteral {
     seconds: scala.Double,
     years: scala.Double
   ): IDateJSLiteral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("milliseconds")(milliseconds)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("years")(years)
+    val __obj = js.Dynamic.literal(days = days, hours = hours, milliseconds = milliseconds, minutes = minutes, months = months, seconds = seconds, years = years)
+  
     __obj.asInstanceOf[IDateJSLiteral]
   }
 }

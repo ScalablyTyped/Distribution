@@ -31,16 +31,8 @@ object TooltipContext {
     row: java.lang.String,
     secondaryLabel: java.lang.String
   ): TooltipContext[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("indicatorColor")(indicatorColor)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("secondaryLabel")(secondaryLabel)
+    val __obj = js.Dynamic.literal(color = color, column = column, componentElement = componentElement, id = id.asInstanceOf[js.Any], indicatorColor = indicatorColor, label = label, parentElement = parentElement, row = row, secondaryLabel = secondaryLabel)
+  
     __obj.asInstanceOf[TooltipContext[K]]
   }
 }

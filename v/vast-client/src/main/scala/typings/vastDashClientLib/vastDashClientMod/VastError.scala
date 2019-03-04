@@ -28,8 +28,7 @@ object VastError {
     extensions: js.Array[VastAdExtension] = null,
     system: VastSystem | java.lang.String = null
   ): VastError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ERRORCODE")(ERRORCODE.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ERRORCODE = ERRORCODE.asInstanceOf[js.Any])
     if (ERRORMESSAGE != null) __obj.updateDynamic("ERRORMESSAGE")(ERRORMESSAGE)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])

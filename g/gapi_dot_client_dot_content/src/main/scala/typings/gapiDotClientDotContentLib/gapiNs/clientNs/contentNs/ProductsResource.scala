@@ -45,12 +45,8 @@ object ProductsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ProductsListResponse]
     ]
   ): ProductsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custombatch")(custombatch)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(custombatch = custombatch, delete = delete, get = get, insert = insert, list = list)
+  
     __obj.asInstanceOf[ProductsResource]
   }
 }

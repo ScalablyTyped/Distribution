@@ -42,13 +42,8 @@ object ExtensionAcquisitionRequest {
     properties: js.Any,
     quantity: scala.Double
   ): ExtensionAcquisitionRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignmentType")(assignmentType)
-    __obj.updateDynamic("billingId")(billingId)
-    __obj.updateDynamic("itemId")(itemId)
-    __obj.updateDynamic("operationType")(operationType)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("quantity")(quantity)
+    val __obj = js.Dynamic.literal(assignmentType = assignmentType, billingId = billingId, itemId = itemId, operationType = operationType, properties = properties, quantity = quantity)
+  
     __obj.asInstanceOf[ExtensionAcquisitionRequest]
   }
 }

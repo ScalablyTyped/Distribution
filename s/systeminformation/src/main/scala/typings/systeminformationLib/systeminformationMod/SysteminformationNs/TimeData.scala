@@ -20,11 +20,8 @@ object TimeData {
     timezoneName: java.lang.String,
     uptime: java.lang.String
   ): TimeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("timezone")(timezone)
-    __obj.updateDynamic("timezoneName")(timezoneName)
-    __obj.updateDynamic("uptime")(uptime)
+    val __obj = js.Dynamic.literal(current = current, timezone = timezone, timezoneName = timezoneName, uptime = uptime)
+  
     __obj.asInstanceOf[TimeData]
   }
 }

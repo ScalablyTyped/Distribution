@@ -13,9 +13,8 @@ trait ElevationLayerLayerviewDestroyEvent extends js.Object {
 object ElevationLayerLayerviewDestroyEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): ElevationLayerLayerviewDestroyEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerView")(layerView)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
     __obj.asInstanceOf[ElevationLayerLayerviewDestroyEvent]
   }
 }

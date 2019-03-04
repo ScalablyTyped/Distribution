@@ -48,8 +48,7 @@ object Options {
     tileSize: scala.Int | scala.Double = null,
     uri: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getURL")(getURL)
+    val __obj = js.Dynamic.literal(getURL = getURL)
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (getCopyrights != null) __obj.updateDynamic("getCopyrights")(getCopyrights)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

@@ -20,11 +20,8 @@ object ConditionalFormatRule {
     getGradientCondition: js.Function0[GradientCondition],
     getRanges: js.Function0[js.Array[Range]]
   ): ConditionalFormatRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getBooleanCondition")(getBooleanCondition)
-    __obj.updateDynamic("getGradientCondition")(getGradientCondition)
-    __obj.updateDynamic("getRanges")(getRanges)
+    val __obj = js.Dynamic.literal(copy = copy, getBooleanCondition = getBooleanCondition, getGradientCondition = getGradientCondition, getRanges = getRanges)
+  
     __obj.asInstanceOf[ConditionalFormatRule]
   }
 }

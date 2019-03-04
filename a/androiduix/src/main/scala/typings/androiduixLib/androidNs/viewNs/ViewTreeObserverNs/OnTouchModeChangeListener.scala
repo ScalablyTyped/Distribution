@@ -12,8 +12,8 @@ trait OnTouchModeChangeListener extends js.Object {
 object OnTouchModeChangeListener {
   @scala.inline
   def apply(onTouchModeChanged: js.Function1[scala.Boolean, js.Any]): OnTouchModeChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onTouchModeChanged")(onTouchModeChanged)
+    val __obj = js.Dynamic.literal(onTouchModeChanged = onTouchModeChanged)
+  
     __obj.asInstanceOf[OnTouchModeChangeListener]
   }
 }

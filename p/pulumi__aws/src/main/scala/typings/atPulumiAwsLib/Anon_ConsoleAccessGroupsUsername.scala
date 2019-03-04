@@ -14,10 +14,8 @@ trait Anon_ConsoleAccessGroupsUsername extends js.Object {
 object Anon_ConsoleAccessGroupsUsername {
   @scala.inline
   def apply(consoleAccess: scala.Boolean, groups: js.Array[java.lang.String], username: java.lang.String): Anon_ConsoleAccessGroupsUsername = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consoleAccess")(consoleAccess)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(consoleAccess = consoleAccess, groups = groups, username = username)
+  
     __obj.asInstanceOf[Anon_ConsoleAccessGroupsUsername]
   }
 }

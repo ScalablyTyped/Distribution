@@ -40,21 +40,8 @@ object Utils {
     writeFileDir: js.Function1[java.lang.String, scala.Unit],
     writeFileSync: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): Utils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendFileSync")(appendFileSync)
-    __obj.updateDynamic("copyDirContentsSync")(copyDirContentsSync)
-    __obj.updateDynamic("dirExistsSync")(dirExistsSync)
-    __obj.updateDynamic("fileExistsSync")(fileExistsSync)
-    __obj.updateDynamic("findServicePath")(findServicePath)
-    __obj.updateDynamic("generateShortId")(generateShortId)
-    __obj.updateDynamic("getVersion")(getVersion)
-    __obj.updateDynamic("logStat")(logStat)
-    __obj.updateDynamic("readFile")(readFile)
-    __obj.updateDynamic("readFileSync")(readFileSync)
-    __obj.updateDynamic("walkDirSync")(walkDirSync)
-    __obj.updateDynamic("writeFile")(writeFile)
-    __obj.updateDynamic("writeFileDir")(writeFileDir)
-    __obj.updateDynamic("writeFileSync")(writeFileSync)
+    val __obj = js.Dynamic.literal(appendFileSync = appendFileSync, copyDirContentsSync = copyDirContentsSync, dirExistsSync = dirExistsSync, fileExistsSync = fileExistsSync, findServicePath = findServicePath, generateShortId = generateShortId, getVersion = getVersion, logStat = logStat, readFile = readFile, readFileSync = readFileSync, walkDirSync = walkDirSync, writeFile = writeFile, writeFileDir = writeFileDir, writeFileSync = writeFileSync)
+  
     __obj.asInstanceOf[Utils]
   }
 }

@@ -32,17 +32,8 @@ object SwalOptions {
     timer: scala.Double,
     title: java.lang.String
   ): SwalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("closeOnClickOutside")(closeOnClickOutside)
-    __obj.updateDynamic("closeOnEsc")(closeOnEsc)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("dangerMode")(dangerMode)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("timer")(timer)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], className = className, closeOnClickOutside = closeOnClickOutside, closeOnEsc = closeOnEsc, content = content, dangerMode = dangerMode, icon = icon, text = text, timer = timer, title = title)
+  
     __obj.asInstanceOf[SwalOptions]
   }
 }

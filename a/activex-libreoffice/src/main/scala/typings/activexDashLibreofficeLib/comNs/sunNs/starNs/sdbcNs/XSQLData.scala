@@ -71,14 +71,8 @@ object XSQLData {
     release: js.Function0[scala.Unit],
     writeSQL: js.Function1[XSQLOutput, scala.Unit]
   ): XSQLData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SQLTypeName")(SQLTypeName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSQLTypeName")(getSQLTypeName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readSQL")(readSQL)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("writeSQL")(writeSQL)
+    val __obj = js.Dynamic.literal(SQLTypeName = SQLTypeName, acquire = acquire, getSQLTypeName = getSQLTypeName, queryInterface = queryInterface, readSQL = readSQL, release = release, writeSQL = writeSQL)
+  
     __obj.asInstanceOf[XSQLData]
   }
 }

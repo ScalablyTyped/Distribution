@@ -26,11 +26,7 @@ object Sod {
     qfn: js.Array[_] = null,
     reset: js.UndefOr[scala.Boolean] = js.undefined
   ): Sod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(key = key, loaded = loaded, state = state, url = url)
     if (depkeys != null) __obj.updateDynamic("depkeys")(depkeys)
     if (qfn != null) __obj.updateDynamic("qfn")(qfn)
     if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset)

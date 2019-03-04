@@ -24,13 +24,8 @@ object NoticeType {
     severity: java.lang.String,
     where: java.lang.String
   ): NoticeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(code = code, length = length, message = message, name = name, severity = severity, where = where)
+  
     __obj.asInstanceOf[NoticeType]
   }
 }

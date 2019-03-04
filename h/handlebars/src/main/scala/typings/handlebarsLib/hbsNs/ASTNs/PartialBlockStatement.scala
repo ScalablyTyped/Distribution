@@ -26,14 +26,8 @@ object PartialBlockStatement {
     program: Program,
     `type`: java.lang.String
   ): PartialBlockStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("closeStrip")(closeStrip)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("openStrip")(openStrip)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("program")(program)
+    val __obj = js.Dynamic.literal(closeStrip = closeStrip, hash = hash, loc = loc, name = name.asInstanceOf[js.Any], openStrip = openStrip, params = params, program = program)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PartialBlockStatement]
   }
 }

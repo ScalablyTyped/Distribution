@@ -22,9 +22,8 @@ object RouteTableAssociationArgs {
     transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): RouteTableAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
-    __obj.updateDynamic("transitGatewayRouteTableId")(transitGatewayRouteTableId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(transitGatewayAttachmentId = transitGatewayAttachmentId.asInstanceOf[js.Any], transitGatewayRouteTableId = transitGatewayRouteTableId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RouteTableAssociationArgs]
   }
 }

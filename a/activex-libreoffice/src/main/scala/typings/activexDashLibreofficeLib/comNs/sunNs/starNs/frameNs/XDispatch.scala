@@ -66,13 +66,8 @@ object XDispatch {
     release: js.Function0[scala.Unit],
     removeStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit]
   ): XDispatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addStatusListener")(addStatusListener)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeStatusListener")(removeStatusListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addStatusListener = addStatusListener, dispatch = dispatch, queryInterface = queryInterface, release = release, removeStatusListener = removeStatusListener)
+  
     __obj.asInstanceOf[XDispatch]
   }
 }

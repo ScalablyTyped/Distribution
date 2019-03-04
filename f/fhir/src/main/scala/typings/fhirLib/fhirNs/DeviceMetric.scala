@@ -94,9 +94,8 @@ object DeviceMetric {
     text: Narrative = null,
     unit: CodeableConcept = null
   ): DeviceMetric = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(category = category, identifier = identifier)
+    __obj.updateDynamic("type")(`type`)
     if (_category != null) __obj.updateDynamic("_category")(_category)
     if (_color != null) __obj.updateDynamic("_color")(_color)
     if (_id != null) __obj.updateDynamic("_id")(_id)

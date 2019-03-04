@@ -34,7 +34,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(component, text-field)) [id => @ember/component, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibraryScoped(ember,Some(component)) [id => @ember/component, phase => typescript] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/-private/core-view) / TsDeclInterface(CoreView))] 
-[info ] ExpandCallables.scala:51 Expanded $ into 18 methods [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/-private/view-mixin) / TsDeclInterface(ViewMixin))] 
+[info ] ExpandCallables.scala:48 Expanded $ into 18 methods [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/-private/view-mixin) / TsDeclInterface(ViewMixin))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/checkbox) / TsDeclInterface(Checkbox))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => @ember/component, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@ember/component/text-area) / TsDeclInterface(TextArea))] 
 [debug] PhaseRunner.scala:82 Success [id => @ember/component, phase => typescript] 

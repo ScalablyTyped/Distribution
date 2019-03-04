@@ -18,10 +18,8 @@ object Anon_APPUPDATE {
     OS_UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.os_update,
     PERIODIC: chromeDashAppsLib.chromeDashAppsLibStrings.periodic
   ): Anon_APPUPDATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("APP_UPDATE")(APP_UPDATE)
-    __obj.updateDynamic("OS_UPDATE")(OS_UPDATE)
-    __obj.updateDynamic("PERIODIC")(PERIODIC)
+    val __obj = js.Dynamic.literal(APP_UPDATE = APP_UPDATE, OS_UPDATE = OS_UPDATE, PERIODIC = PERIODIC)
+  
     __obj.asInstanceOf[Anon_APPUPDATE]
   }
 }

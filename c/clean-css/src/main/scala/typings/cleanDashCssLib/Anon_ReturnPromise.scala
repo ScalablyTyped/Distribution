@@ -15,8 +15,8 @@ trait Anon_ReturnPromise extends js.Object {
 object Anon_ReturnPromise {
   @scala.inline
   def apply(returnPromise: cleanDashCssLib.cleanDashCssLibNumbers.`true`): Anon_ReturnPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("returnPromise")(returnPromise)
+    val __obj = js.Dynamic.literal(returnPromise = returnPromise)
+  
     __obj.asInstanceOf[Anon_ReturnPromise]
   }
 }

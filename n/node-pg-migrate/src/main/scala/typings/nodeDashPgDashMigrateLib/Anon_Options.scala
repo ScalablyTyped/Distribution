@@ -16,8 +16,7 @@ object Anon_Options {
     table: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Name,
     options: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.LikeOptions = null
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Anon_Options]
   }

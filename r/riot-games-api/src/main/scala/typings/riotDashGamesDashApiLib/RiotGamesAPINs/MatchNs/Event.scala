@@ -54,28 +54,8 @@ object Event {
     victimId: scala.Double,
     wardType: java.lang.String
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascendedType")(ascendedType)
-    __obj.updateDynamic("assistingParticipantIds")(assistingParticipantIds)
-    __obj.updateDynamic("buildingType")(buildingType)
-    __obj.updateDynamic("creatorId")(creatorId)
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("itemAfter")(itemAfter)
-    __obj.updateDynamic("itemBefore")(itemBefore)
-    __obj.updateDynamic("itemId")(itemId)
-    __obj.updateDynamic("killerId")(killerId)
-    __obj.updateDynamic("laneType")(laneType)
-    __obj.updateDynamic("levelUpType")(levelUpType)
-    __obj.updateDynamic("monsterType")(monsterType)
-    __obj.updateDynamic("participantId")(participantId)
-    __obj.updateDynamic("pointCaptured")(pointCaptured)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("skillSlot")(skillSlot)
-    __obj.updateDynamic("teamId")(teamId)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("towerType")(towerType)
-    __obj.updateDynamic("victimId")(victimId)
-    __obj.updateDynamic("wardType")(wardType)
+    val __obj = js.Dynamic.literal(ascendedType = ascendedType, assistingParticipantIds = assistingParticipantIds, buildingType = buildingType, creatorId = creatorId, eventType = eventType, itemAfter = itemAfter, itemBefore = itemBefore, itemId = itemId, killerId = killerId, laneType = laneType, levelUpType = levelUpType, monsterType = monsterType, participantId = participantId, pointCaptured = pointCaptured, position = position, skillSlot = skillSlot, teamId = teamId, timestamp = timestamp, towerType = towerType, victimId = victimId, wardType = wardType)
+  
     __obj.asInstanceOf[Event]
   }
 }

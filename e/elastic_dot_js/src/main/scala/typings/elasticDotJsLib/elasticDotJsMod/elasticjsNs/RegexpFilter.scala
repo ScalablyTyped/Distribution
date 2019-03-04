@@ -67,16 +67,8 @@ object RegexpFilter {
     toJSON: js.Function0[RegexpFilter],
     value: js.Function1[java.lang.String, RegexpFilter]
   ): RegexpFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("flagsValue")(flagsValue)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, flags = flags, flagsValue = flagsValue, name = name, toJSON = toJSON, value = value)
+  
     __obj.asInstanceOf[RegexpFilter]
   }
 }

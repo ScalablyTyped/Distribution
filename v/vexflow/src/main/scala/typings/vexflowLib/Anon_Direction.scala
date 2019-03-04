@@ -22,12 +22,8 @@ object Anon_Direction {
     last_x: scala.Double,
     last_y: scala.Double
   ): Anon_Direction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("first_x")(first_x)
-    __obj.updateDynamic("first_y")(first_y)
-    __obj.updateDynamic("last_x")(last_x)
-    __obj.updateDynamic("last_y")(last_y)
+    val __obj = js.Dynamic.literal(direction = direction, first_x = first_x, first_y = first_y, last_x = last_x, last_y = last_y)
+  
     __obj.asInstanceOf[Anon_Direction]
   }
 }

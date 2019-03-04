@@ -20,11 +20,8 @@ object GraphQLEnumValueDefinition {
     name: java.lang.String,
     value: js.Any
   ): GraphQLEnumValueDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deprecationReason")(deprecationReason)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(deprecationReason = deprecationReason, description = description, name = name, value = value)
+  
     __obj.asInstanceOf[GraphQLEnumValueDefinition]
   }
 }

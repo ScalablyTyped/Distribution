@@ -16,8 +16,7 @@ object EvaluateArg {
     elements: stdLib.NodeList | js.Array[ElementNullable],
     reevaluate: js.UndefOr[scala.Boolean] = js.undefined
   ): EvaluateArg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     if (!js.isUndefined(reevaluate)) __obj.updateDynamic("reevaluate")(reevaluate)
     __obj.asInstanceOf[EvaluateArg]
   }

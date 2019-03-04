@@ -28,9 +28,7 @@ object ViewportComponentInfo {
     props: ComponentProps,
     layoutChilds: js.Array[java.lang.String] = null
   ): ViewportComponentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parentMapUniqueKey")(parentMapUniqueKey)
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(parentMapUniqueKey = parentMapUniqueKey, props = props)
     if (layoutChilds != null) __obj.updateDynamic("layoutChilds")(layoutChilds)
     __obj.asInstanceOf[ViewportComponentInfo]
   }

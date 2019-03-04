@@ -48,8 +48,7 @@ object IConvertOptions {
     trimFuzz: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): IConvertOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("srcData")(srcData)
+    val __obj = js.Dynamic.literal(srcData = srcData)
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])

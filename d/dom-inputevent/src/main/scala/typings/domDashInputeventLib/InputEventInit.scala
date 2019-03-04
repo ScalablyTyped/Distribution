@@ -22,8 +22,7 @@ object InputEventInit {
     detail: scala.Int | scala.Double = null,
     view: stdLib.Window = null
   ): InputEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isComposing")(isComposing)
+    val __obj = js.Dynamic.literal(isComposing = isComposing)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

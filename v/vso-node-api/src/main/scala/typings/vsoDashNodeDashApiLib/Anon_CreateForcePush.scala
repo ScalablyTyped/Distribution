@@ -22,12 +22,8 @@ object Anon_CreateForcePush {
     rebase: scala.Double,
     unknown: scala.Double
   ): Anon_CreateForcePush = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("forcePush")(forcePush)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("rebase")(rebase)
-    __obj.updateDynamic("unknown")(unknown)
+    val __obj = js.Dynamic.literal(create = create, forcePush = forcePush, push = push, rebase = rebase, unknown = unknown)
+  
     __obj.asInstanceOf[Anon_CreateForcePush]
   }
 }

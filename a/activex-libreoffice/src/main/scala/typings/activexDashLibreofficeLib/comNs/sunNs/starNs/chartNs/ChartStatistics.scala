@@ -120,29 +120,8 @@ object ChartStatistics {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ChartStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConstantErrorHigh")(ConstantErrorHigh)
-    __obj.updateDynamic("ConstantErrorLow")(ConstantErrorLow)
-    __obj.updateDynamic("ErrorBarRangeNegative")(ErrorBarRangeNegative)
-    __obj.updateDynamic("ErrorBarRangePositive")(ErrorBarRangePositive)
-    __obj.updateDynamic("ErrorBarStyle")(ErrorBarStyle)
-    __obj.updateDynamic("ErrorCategory")(ErrorCategory)
-    __obj.updateDynamic("ErrorIndicator")(ErrorIndicator)
-    __obj.updateDynamic("ErrorMargin")(ErrorMargin)
-    __obj.updateDynamic("MeanValue")(MeanValue)
-    __obj.updateDynamic("PercentageError")(PercentageError)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RegressionCurves")(RegressionCurves)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ConstantErrorHigh = ConstantErrorHigh, ConstantErrorLow = ConstantErrorLow, ErrorBarRangeNegative = ErrorBarRangeNegative, ErrorBarRangePositive = ErrorBarRangePositive, ErrorBarStyle = ErrorBarStyle, ErrorCategory = ErrorCategory, ErrorIndicator = ErrorIndicator, ErrorMargin = ErrorMargin, MeanValue = MeanValue, PercentageError = PercentageError, PropertySetInfo = PropertySetInfo, RegressionCurves = RegressionCurves, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[ChartStatistics]
   }
 }

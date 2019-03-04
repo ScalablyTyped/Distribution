@@ -24,10 +24,8 @@ object IContext {
     getRequest: js.Function0[IRequest],
     getResponse: js.Function0[IResponse]
   ): IContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCollection")(getCollection)
-    __obj.updateDynamic("getRequest")(getRequest)
-    __obj.updateDynamic("getResponse")(getResponse)
+    val __obj = js.Dynamic.literal(getCollection = getCollection, getRequest = getRequest, getResponse = getResponse)
+  
     __obj.asInstanceOf[IContext]
   }
 }

@@ -32,11 +32,8 @@ object StructuredSource {
       structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation
     ]
   ): StructuredSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexToPosition")(indexToPosition)
-    __obj.updateDynamic("locationToRange")(locationToRange)
-    __obj.updateDynamic("positionToIndex")(positionToIndex)
-    __obj.updateDynamic("rangeToLocation")(rangeToLocation)
+    val __obj = js.Dynamic.literal(indexToPosition = indexToPosition, locationToRange = locationToRange, positionToIndex = positionToIndex, rangeToLocation = rangeToLocation)
+  
     __obj.asInstanceOf[StructuredSource]
   }
 }

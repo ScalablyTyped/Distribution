@@ -22,12 +22,8 @@ object TestPlanHubData {
     testSuites: js.Array[TestSuite],
     totalTestPoints: scala.Double
   ): TestPlanHubData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectedSuiteId")(selectedSuiteId)
-    __obj.updateDynamic("testPlan")(testPlan)
-    __obj.updateDynamic("testPoints")(testPoints)
-    __obj.updateDynamic("testSuites")(testSuites)
-    __obj.updateDynamic("totalTestPoints")(totalTestPoints)
+    val __obj = js.Dynamic.literal(selectedSuiteId = selectedSuiteId, testPlan = testPlan, testPoints = testPoints, testSuites = testSuites, totalTestPoints = totalTestPoints)
+  
     __obj.asInstanceOf[TestPlanHubData]
   }
 }

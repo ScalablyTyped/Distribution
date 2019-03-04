@@ -20,10 +20,7 @@ object WebhookRequest {
     session: java.lang.String,
     originalDetectIntentRequest: js.Any = null
   ): WebhookRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryResult")(queryResult)
-    __obj.updateDynamic("responseId")(responseId)
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(queryResult = queryResult, responseId = responseId, session = session)
     if (originalDetectIntentRequest != null) __obj.updateDynamic("originalDetectIntentRequest")(originalDetectIntentRequest)
     __obj.asInstanceOf[WebhookRequest]
   }

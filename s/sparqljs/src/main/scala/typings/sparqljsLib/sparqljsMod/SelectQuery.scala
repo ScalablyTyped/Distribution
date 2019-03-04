@@ -40,10 +40,8 @@ object SelectQuery {
     values: js.Array[ValuePatternRow] = null,
     where: js.Array[Pattern] = null
   ): SelectQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("prefixes")(prefixes)
-    __obj.updateDynamic("queryType")(queryType)
-    __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(prefixes = prefixes, queryType = queryType, variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (base != null) __obj.updateDynamic("base")(base)
     if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
     if (from != null) __obj.updateDynamic("from")(from)

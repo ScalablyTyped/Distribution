@@ -23,15 +23,8 @@ object TreeEdge {
     relativePoint: Point,
     toVertex: LayoutVertex
   ): TreeEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("fromVertex")(fromVertex)
-    __obj.updateDynamic("getOtherVertex")(getOtherVertex)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("relativePoint")(relativePoint)
-    __obj.updateDynamic("toVertex")(toVertex)
+    val __obj = js.Dynamic.literal(commit = commit, data = data, fromVertex = fromVertex, getOtherVertex = getOtherVertex, link = link, network = network, relativePoint = relativePoint, toVertex = toVertex)
+  
     __obj.asInstanceOf[TreeEdge]
   }
 }

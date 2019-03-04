@@ -22,12 +22,8 @@ object Touch {
     limit: js.Function1[scala.Boolean, scala.Unit],
     scrollTo: js.Function4[stdLib.HTMLElement, scala.Double, scala.Double, java.lang.String, scala.Unit]
   ): Touch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("scrollTo")(scrollTo)
+    val __obj = js.Dynamic.literal(config = config, disable = disable, enable = enable, limit = limit, scrollTo = scrollTo)
+  
     __obj.asInstanceOf[Touch]
   }
 }

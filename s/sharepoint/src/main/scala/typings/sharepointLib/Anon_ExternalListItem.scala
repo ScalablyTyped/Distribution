@@ -15,11 +15,8 @@ trait Anon_ExternalListItem extends js.Object {
 object Anon_ExternalListItem {
   @scala.inline
   def apply(ExternalListItem: scala.Boolean, FsObjType: scala.Double, Id: scala.Double, Url: java.lang.String): Anon_ExternalListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExternalListItem")(ExternalListItem)
-    __obj.updateDynamic("FsObjType")(FsObjType)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Url")(Url)
+    val __obj = js.Dynamic.literal(ExternalListItem = ExternalListItem, FsObjType = FsObjType, Id = Id, Url = Url)
+  
     __obj.asInstanceOf[Anon_ExternalListItem]
   }
 }

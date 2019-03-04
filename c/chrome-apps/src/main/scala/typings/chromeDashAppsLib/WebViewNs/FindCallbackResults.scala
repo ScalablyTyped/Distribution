@@ -25,11 +25,8 @@ object FindCallbackResults {
     numberOfMatches: chromeDashAppsLib.chromeNs.integer,
     selectionRect: SelectionRect
   ): FindCallbackResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeMatchOrdinal")(activeMatchOrdinal)
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("numberOfMatches")(numberOfMatches)
-    __obj.updateDynamic("selectionRect")(selectionRect)
+    val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal, canceled = canceled, numberOfMatches = numberOfMatches, selectionRect = selectionRect)
+  
     __obj.asInstanceOf[FindCallbackResults]
   }
 }

@@ -20,8 +20,7 @@ object UpdateIntentRequest {
     languageCode: java.lang.String = null,
     updateMask: js.Any = null
   ): UpdateIntentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
+    val __obj = js.Dynamic.literal(intent = intent)
     if (intentView != null) __obj.updateDynamic("intentView")(intentView)
     if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
     if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)

@@ -36,11 +36,8 @@ object MVCxClientGlobalEventsStatic {
     AddControlsInitializedEventHandler: js.Function1[ASPxClientControlsInitializedEventHandler[_], scala.Unit],
     AddEndCallbackEventHandler: js.Function1[ASPxClientEndCallbackEventHandler[_], scala.Unit]
   ): MVCxClientGlobalEventsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddBeginCallbackEventHandler")(AddBeginCallbackEventHandler)
-    __obj.updateDynamic("AddCallbackErrorHandler")(AddCallbackErrorHandler)
-    __obj.updateDynamic("AddControlsInitializedEventHandler")(AddControlsInitializedEventHandler)
-    __obj.updateDynamic("AddEndCallbackEventHandler")(AddEndCallbackEventHandler)
+    val __obj = js.Dynamic.literal(AddBeginCallbackEventHandler = AddBeginCallbackEventHandler, AddCallbackErrorHandler = AddCallbackErrorHandler, AddControlsInitializedEventHandler = AddControlsInitializedEventHandler, AddEndCallbackEventHandler = AddEndCallbackEventHandler)
+  
     __obj.asInstanceOf[MVCxClientGlobalEventsStatic]
   }
 }

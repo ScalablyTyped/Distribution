@@ -21,14 +21,8 @@ object CustomRouteView {
     on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit],
     setFullWidth: js.Function1[scala.Boolean, scala.Unit]
   ): CustomRouteView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroyed")(destroyed)
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("getParams")(getParams)
-    __obj.updateDynamic("getRouteID")(getRouteID)
-    __obj.updateDynamic("getRouteType")(getRouteType)
+    val __obj = js.Dynamic.literal(destroyed = destroyed, getElement = getElement, getParams = getParams, getRouteID = getRouteID, getRouteType = getRouteType, setFullWidth = setFullWidth)
     __obj.updateDynamic("on")(on_destroy)
-    __obj.updateDynamic("setFullWidth")(setFullWidth)
     __obj.asInstanceOf[CustomRouteView]
   }
 }

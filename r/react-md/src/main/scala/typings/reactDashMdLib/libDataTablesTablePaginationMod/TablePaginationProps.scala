@@ -125,9 +125,7 @@ object TablePaginationProps {
     simplifiedMenu: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TablePaginationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPagination")(onPagination)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(onPagination = onPagination, rows = rows)
     if (className != null) __obj.updateDynamic("className")(className)
     if (decrementIcon != null) __obj.updateDynamic("decrementIcon")(decrementIcon)
     if (decrementIconChildren != null) __obj.updateDynamic("decrementIconChildren")(decrementIconChildren.asInstanceOf[js.Any])

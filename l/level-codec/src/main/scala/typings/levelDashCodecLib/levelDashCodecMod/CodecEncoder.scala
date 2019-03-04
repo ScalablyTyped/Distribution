@@ -20,10 +20,8 @@ object CodecEncoder {
     encode: js.Function1[js.Any, js.Any],
     `type`: java.lang.String
   ): CodecEncoder = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(buffer = buffer, decode = decode, encode = encode)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CodecEncoder]
   }
 }

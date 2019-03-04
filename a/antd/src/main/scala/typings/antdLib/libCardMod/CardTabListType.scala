@@ -18,9 +18,7 @@ object CardTabListType {
     tab: reactLib.reactMod.ReactNs.ReactNode,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): CardTabListType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, tab = tab.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[CardTabListType]
   }

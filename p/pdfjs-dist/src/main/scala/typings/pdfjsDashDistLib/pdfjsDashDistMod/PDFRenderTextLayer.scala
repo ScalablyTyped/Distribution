@@ -18,10 +18,8 @@ object PDFRenderTextLayer {
     beginLayout: js.Function0[scala.Unit],
     endLayout: js.Function0[scala.Unit]
   ): PDFRenderTextLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendText")(appendText)
-    __obj.updateDynamic("beginLayout")(beginLayout)
-    __obj.updateDynamic("endLayout")(endLayout)
+    val __obj = js.Dynamic.literal(appendText = appendText, beginLayout = beginLayout, endLayout = endLayout)
+  
     __obj.asInstanceOf[PDFRenderTextLayer]
   }
 }

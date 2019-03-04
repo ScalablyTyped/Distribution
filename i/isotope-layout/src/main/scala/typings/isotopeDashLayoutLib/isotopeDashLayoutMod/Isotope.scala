@@ -117,25 +117,8 @@ object Isotope {
     unstamp: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
     updateSortData: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit]
   ): Isotope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItems")(addItems)
-    __obj.updateDynamic("appended")(appended)
-    __obj.updateDynamic("arrange")(arrange)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getFilteredItemElements")(getFilteredItemElements)
-    __obj.updateDynamic("getItemElements")(getItemElements)
-    __obj.updateDynamic("hideItemElements")(hideItemElements)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("layoutItems")(layoutItems)
-    __obj.updateDynamic("prepended")(prepended)
-    __obj.updateDynamic("reloadItems")(reloadItems)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("revealItemElements")(revealItemElements)
-    __obj.updateDynamic("shuffle")(shuffle)
-    __obj.updateDynamic("stamp")(stamp)
-    __obj.updateDynamic("unstamp")(unstamp)
-    __obj.updateDynamic("updateSortData")(updateSortData)
+    val __obj = js.Dynamic.literal(addItems = addItems, appended = appended, arrange = arrange, destroy = destroy, getFilteredItemElements = getFilteredItemElements, getItemElements = getItemElements, hideItemElements = hideItemElements, insert = insert, layout = layout, layoutItems = layoutItems, prepended = prepended, reloadItems = reloadItems, remove = remove, revealItemElements = revealItemElements, shuffle = shuffle, stamp = stamp, unstamp = unstamp, updateSortData = updateSortData)
+  
     __obj.asInstanceOf[Isotope]
   }
 }

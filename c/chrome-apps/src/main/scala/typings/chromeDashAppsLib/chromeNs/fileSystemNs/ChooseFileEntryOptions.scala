@@ -27,7 +27,8 @@ object ChooseFileEntryOptions {
     acceptsMultiple: chromeDashAppsLib.chromeDashAppsLibNumbers.`false` = null,
     suggestedName: java.lang.String = null
   ): ChooseFileEntryOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
     if (acceptsMultiple != null) __obj.updateDynamic("acceptsMultiple")(acceptsMultiple)

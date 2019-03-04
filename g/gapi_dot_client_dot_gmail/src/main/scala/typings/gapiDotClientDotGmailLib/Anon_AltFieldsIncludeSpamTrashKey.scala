@@ -57,8 +57,7 @@ object Anon_AltFieldsIncludeSpamTrashKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIncludeSpamTrashKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeSpamTrash)) __obj.updateDynamic("includeSpamTrash")(includeSpamTrash)

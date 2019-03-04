@@ -12,8 +12,8 @@ trait ConnectionStringParseOptions extends js.Object {
 object ConnectionStringParseOptions {
   @scala.inline
   def apply(skipLowerCase: scala.Boolean): ConnectionStringParseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("skipLowerCase")(skipLowerCase)
+    val __obj = js.Dynamic.literal(skipLowerCase = skipLowerCase)
+  
     __obj.asInstanceOf[ConnectionStringParseOptions]
   }
 }

@@ -40,19 +40,8 @@ object XFootnote {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     setLabel: js.Function1[java.lang.String, scala.Unit]
   ): XFootnote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setLabel")(setLabel)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, Label = Label, acquire = acquire, addEventListener = addEventListener, attach = attach, dispose = dispose, getAnchor = getAnchor, getLabel = getLabel, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setLabel = setLabel)
+  
     __obj.asInstanceOf[XFootnote]
   }
 }

@@ -24,13 +24,8 @@ object IThemeConfig {
     nonce: java.lang.String,
     registeredStyles: js.Array[java.lang.String]
   ): IThemeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysWatchTheme")(alwaysWatchTheme)
-    __obj.updateDynamic("defaultTheme")(defaultTheme)
-    __obj.updateDynamic("disableTheming")(disableTheming)
-    __obj.updateDynamic("generateOnDemand")(generateOnDemand)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("registeredStyles")(registeredStyles)
+    val __obj = js.Dynamic.literal(alwaysWatchTheme = alwaysWatchTheme, defaultTheme = defaultTheme, disableTheming = disableTheming, generateOnDemand = generateOnDemand, nonce = nonce, registeredStyles = registeredStyles)
+  
     __obj.asInstanceOf[IThemeConfig]
   }
 }

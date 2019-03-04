@@ -95,14 +95,8 @@ object IDateTimeFormatterFactory {
     ],
     createDateTimeFormatterTime: js.Function3[HourFormat, MinuteFormat, SecondFormat, DateTimeFormatter]
   ): IDateTimeFormatterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDateTimeFormatter")(createDateTimeFormatter)
-    __obj.updateDynamic("createDateTimeFormatterContext")(createDateTimeFormatterContext)
-    __obj.updateDynamic("createDateTimeFormatterDate")(createDateTimeFormatterDate)
-    __obj.updateDynamic("createDateTimeFormatterDateTimeContext")(createDateTimeFormatterDateTimeContext)
-    __obj.updateDynamic("createDateTimeFormatterDateTimeLanguages")(createDateTimeFormatterDateTimeLanguages)
-    __obj.updateDynamic("createDateTimeFormatterLanguages")(createDateTimeFormatterLanguages)
-    __obj.updateDynamic("createDateTimeFormatterTime")(createDateTimeFormatterTime)
+    val __obj = js.Dynamic.literal(createDateTimeFormatter = createDateTimeFormatter, createDateTimeFormatterContext = createDateTimeFormatterContext, createDateTimeFormatterDate = createDateTimeFormatterDate, createDateTimeFormatterDateTimeContext = createDateTimeFormatterDateTimeContext, createDateTimeFormatterDateTimeLanguages = createDateTimeFormatterDateTimeLanguages, createDateTimeFormatterLanguages = createDateTimeFormatterLanguages, createDateTimeFormatterTime = createDateTimeFormatterTime)
+  
     __obj.asInstanceOf[IDateTimeFormatterFactory]
   }
 }

@@ -28,15 +28,8 @@ object TabStrip_BeforeDropOrPaste_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): TabStrip_BeforeDropOrPaste_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Data = Data, Effect = Effect, Index = Index, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[TabStrip_BeforeDropOrPaste_Parameter]
   }
 }

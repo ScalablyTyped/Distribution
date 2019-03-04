@@ -40,10 +40,7 @@ object ListenerRuleArgs {
     listenerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     priority: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): ListenerRuleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    __obj.updateDynamic("listenerArn")(listenerArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any], listenerArn = listenerArn.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleArgs]
   }

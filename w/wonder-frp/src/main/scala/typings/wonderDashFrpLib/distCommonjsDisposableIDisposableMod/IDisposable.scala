@@ -12,8 +12,8 @@ trait IDisposable extends js.Object {
 object IDisposable {
   @scala.inline
   def apply(dispose: js.Function0[scala.Unit]): IDisposable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
+    val __obj = js.Dynamic.literal(dispose = dispose)
+  
     __obj.asInstanceOf[IDisposable]
   }
 }

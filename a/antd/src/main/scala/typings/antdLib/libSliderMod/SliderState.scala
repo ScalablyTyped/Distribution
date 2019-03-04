@@ -12,8 +12,8 @@ trait SliderState extends js.Object {
 object SliderState {
   @scala.inline
   def apply(visibles: org.scalablytyped.runtime.NumberDictionary[scala.Boolean]): SliderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visibles")(visibles)
+    val __obj = js.Dynamic.literal(visibles = visibles)
+  
     __obj.asInstanceOf[SliderState]
   }
 }

@@ -88,19 +88,8 @@ object IDispute {
     status: stripeLib.stripeLibStrings.warning_needs_response | stripeLib.stripeLibStrings.warning_under_review | stripeLib.stripeLibStrings.warning_closed | stripeLib.stripeLibStrings.needs_response | stripeLib.stripeLibStrings.response_disabled | stripeLib.stripeLibStrings.under_review | stripeLib.stripeLibStrings.charge_refunded | stripeLib.stripeLibStrings.won | stripeLib.stripeLibStrings.lost,
     evidence_details: stripeLib.Anon_Dueby = null
   ): IDispute = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("balance_transactions")(balance_transactions)
-    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("evidence")(evidence)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_charge_refundable")(is_charge_refundable)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, balance_transactions = balance_transactions, charge = charge.asInstanceOf[js.Any], created = created, currency = currency, evidence = evidence, id = id, is_charge_refundable = is_charge_refundable, livemode = livemode, metadata = metadata, reason = reason.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     if (evidence_details != null) __obj.updateDynamic("evidence_details")(evidence_details)
     __obj.asInstanceOf[IDispute]
   }

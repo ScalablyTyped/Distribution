@@ -27,13 +27,7 @@ object DiagnosticWithLocation {
     reportsUnnecessary: js.Object = null,
     source: java.lang.String = null
   ): DiagnosticWithLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(category = category, code = code, file = file, length = length, messageText = messageText.asInstanceOf[js.Any], start = start)
     if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
     if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary)
     if (source != null) __obj.updateDynamic("source")(source)

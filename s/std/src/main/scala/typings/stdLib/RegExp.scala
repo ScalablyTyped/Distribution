@@ -137,22 +137,8 @@ object RegExp {
     test: js.Function1[java.lang.String, scala.Boolean],
     unicode: scala.Boolean
   ): RegExp = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("compile")(compile)
-    __obj.updateDynamic("dotAll")(dotAll)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("ignoreCase")(ignoreCase)
-    __obj.updateDynamic("lastIndex")(lastIndex)
-    __obj.updateDynamic("multiline")(multiline)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("split")(split)
-    __obj.updateDynamic("sticky")(sticky)
-    __obj.updateDynamic("test")(test)
-    __obj.updateDynamic("unicode")(unicode)
+    val __obj = js.Dynamic.literal(compile = compile, dotAll = dotAll, exec = exec, flags = flags, global = global, ignoreCase = ignoreCase, lastIndex = lastIndex, multiline = multiline, replace = replace, search = search, source = source, split = split, sticky = sticky, test = test, unicode = unicode)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[RegExp]
   }
 }

@@ -18,8 +18,8 @@ trait FancyBoxImageOption extends js.Object {
 object FancyBoxImageOption {
   @scala.inline
   def apply(preload: scala.Boolean): FancyBoxImageOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preload")(preload)
+    val __obj = js.Dynamic.literal(preload = preload)
+  
     __obj.asInstanceOf[FancyBoxImageOption]
   }
 }

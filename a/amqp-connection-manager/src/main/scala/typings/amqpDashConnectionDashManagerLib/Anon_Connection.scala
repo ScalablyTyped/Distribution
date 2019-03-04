@@ -13,9 +13,8 @@ trait Anon_Connection extends js.Object {
 object Anon_Connection {
   @scala.inline
   def apply(connection: amqplibLib.amqplibMod.Connection, url: java.lang.String): Anon_Connection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(connection = connection, url = url)
+  
     __obj.asInstanceOf[Anon_Connection]
   }
 }

@@ -22,12 +22,8 @@ object Anon_AckClientTransaction {
     NonInviteClientTransaction: js.Any,
     NonInviteServerTransaction: js.Any
   ): Anon_AckClientTransaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AckClientTransaction")(AckClientTransaction)
-    __obj.updateDynamic("InviteClientTransaction")(InviteClientTransaction)
-    __obj.updateDynamic("InviteServerTransaction")(InviteServerTransaction)
-    __obj.updateDynamic("NonInviteClientTransaction")(NonInviteClientTransaction)
-    __obj.updateDynamic("NonInviteServerTransaction")(NonInviteServerTransaction)
+    val __obj = js.Dynamic.literal(AckClientTransaction = AckClientTransaction, InviteClientTransaction = InviteClientTransaction, InviteServerTransaction = InviteServerTransaction, NonInviteClientTransaction = NonInviteClientTransaction, NonInviteServerTransaction = NonInviteServerTransaction)
+  
     __obj.asInstanceOf[Anon_AckClientTransaction]
   }
 }

@@ -28,8 +28,7 @@ object Query {
     user_id: java.lang.String = null,
     user_name: java.lang.String = null
   ): Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (channel_id != null) __obj.updateDynamic("channel_id")(channel_id)
     if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name)
     if (team_id != null) __obj.updateDynamic("team_id")(team_id)

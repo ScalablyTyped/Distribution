@@ -16,9 +16,8 @@ trait IVectorChangedEventArgs extends js.Object {
 object IVectorChangedEventArgs {
   @scala.inline
   def apply(collectionChange: CollectionChange, index: scala.Double): IVectorChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collectionChange")(collectionChange)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(collectionChange = collectionChange, index = index)
+  
     __obj.asInstanceOf[IVectorChangedEventArgs]
   }
 }

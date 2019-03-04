@@ -32,8 +32,8 @@ object Pair {
     tag: java.lang.String = null,
     value: AstNode = null
   ): Pair = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (!js.isUndefined(cstNode)) __obj.updateDynamic("cstNode")(cstNode)

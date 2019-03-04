@@ -19,13 +19,8 @@ object Tile {
     reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
     stop: js.Function0[Tile]
   ): Tile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(add = add, direction = direction, duration = duration, play = play, reverse = reverse, stop = stop)
+  
     __obj.asInstanceOf[Tile]
   }
 }

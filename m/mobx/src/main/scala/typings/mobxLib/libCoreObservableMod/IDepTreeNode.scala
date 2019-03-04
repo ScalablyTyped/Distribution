@@ -13,8 +13,7 @@ trait IDepTreeNode extends js.Object {
 object IDepTreeNode {
   @scala.inline
   def apply(name: java.lang.String, observing: js.Array[IObservable] = null): IDepTreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (observing != null) __obj.updateDynamic("observing")(observing)
     __obj.asInstanceOf[IDepTreeNode]
   }

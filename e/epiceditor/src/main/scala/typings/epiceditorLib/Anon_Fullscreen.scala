@@ -14,10 +14,8 @@ trait Anon_Fullscreen extends js.Object {
 object Anon_Fullscreen {
   @scala.inline
   def apply(fullscreen: scala.Double, modifier: scala.Double, preview: scala.Double): Anon_Fullscreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullscreen")(fullscreen)
-    __obj.updateDynamic("modifier")(modifier)
-    __obj.updateDynamic("preview")(preview)
+    val __obj = js.Dynamic.literal(fullscreen = fullscreen, modifier = modifier, preview = preview)
+  
     __obj.asInstanceOf[Anon_Fullscreen]
   }
 }

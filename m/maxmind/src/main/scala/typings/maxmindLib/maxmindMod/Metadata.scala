@@ -36,19 +36,8 @@ object Metadata {
     searchTreeSize: scala.Double,
     treeDepth: scala.Double
   ): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binaryFormatMajorVersion")(binaryFormatMajorVersion)
-    __obj.updateDynamic("binaryFormatMinorVersion")(binaryFormatMinorVersion)
-    __obj.updateDynamic("buildEpoch")(buildEpoch)
-    __obj.updateDynamic("databaseType")(databaseType)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("ipVersion")(ipVersion)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("nodeByteSize")(nodeByteSize)
-    __obj.updateDynamic("nodeCount")(nodeCount)
-    __obj.updateDynamic("recordSize")(recordSize)
-    __obj.updateDynamic("searchTreeSize")(searchTreeSize)
-    __obj.updateDynamic("treeDepth")(treeDepth)
+    val __obj = js.Dynamic.literal(binaryFormatMajorVersion = binaryFormatMajorVersion, binaryFormatMinorVersion = binaryFormatMinorVersion, buildEpoch = buildEpoch, databaseType = databaseType, description = description, ipVersion = ipVersion, languages = languages, nodeByteSize = nodeByteSize, nodeCount = nodeCount, recordSize = recordSize, searchTreeSize = searchTreeSize, treeDepth = treeDepth)
+  
     __obj.asInstanceOf[Metadata]
   }
 }

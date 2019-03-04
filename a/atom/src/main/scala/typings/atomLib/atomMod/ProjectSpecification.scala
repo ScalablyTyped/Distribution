@@ -14,9 +14,7 @@ trait ProjectSpecification extends js.Object {
 object ProjectSpecification {
   @scala.inline
   def apply(originPath: java.lang.String, paths: js.Array[java.lang.String], config: ConfigValues = null): ProjectSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("originPath")(originPath)
-    __obj.updateDynamic("paths")(paths)
+    val __obj = js.Dynamic.literal(originPath = originPath, paths = paths)
     if (config != null) __obj.updateDynamic("config")(config)
     __obj.asInstanceOf[ProjectSpecification]
   }

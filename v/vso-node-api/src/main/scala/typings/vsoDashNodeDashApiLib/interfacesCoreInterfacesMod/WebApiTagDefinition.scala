@@ -27,11 +27,8 @@ trait WebApiTagDefinition extends js.Object {
 object WebApiTagDefinition {
   @scala.inline
   def apply(active: scala.Boolean, id: java.lang.String, name: java.lang.String, url: java.lang.String): WebApiTagDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(active = active, id = id, name = name, url = url)
+  
     __obj.asInstanceOf[WebApiTagDefinition]
   }
 }

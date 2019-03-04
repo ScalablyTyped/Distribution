@@ -24,9 +24,7 @@ object DialogFacebookOptions {
     multiselect: scala.Int | scala.Double = null,
     quickfind: scala.Int | scala.Double = null
   ): DialogFacebookOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preSelected")(preSelected)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(preSelected = preSelected, title = title)
     if (button != null) __obj.updateDynamic("button")(button)
     if (message != null) __obj.updateDynamic("message")(message)
     if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])

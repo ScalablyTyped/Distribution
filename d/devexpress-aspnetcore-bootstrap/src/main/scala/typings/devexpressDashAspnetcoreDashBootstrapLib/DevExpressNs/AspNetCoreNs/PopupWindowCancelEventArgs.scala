@@ -18,11 +18,8 @@ object PopupWindowCancelEventArgs {
     sender: Control,
     window: BootstrapPopupWindow
   ): PopupWindowCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("closeReason")(closeReason)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(cancel = cancel, closeReason = closeReason, sender = sender, window = window)
+  
     __obj.asInstanceOf[PopupWindowCancelEventArgs]
   }
 }

@@ -40,21 +40,8 @@ object MediaTrackSupportedConstraints {
     whiteBalanceMode: scala.Boolean,
     zoom: scala.Boolean
   ): MediaTrackSupportedConstraints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brightness")(brightness)
-    __obj.updateDynamic("colorTemperature")(colorTemperature)
-    __obj.updateDynamic("contrast")(contrast)
-    __obj.updateDynamic("exposureCompensation")(exposureCompensation)
-    __obj.updateDynamic("exposureMode")(exposureMode)
-    __obj.updateDynamic("focusDistance")(focusDistance)
-    __obj.updateDynamic("focusMode")(focusMode)
-    __obj.updateDynamic("iso")(iso)
-    __obj.updateDynamic("pointsOfInterest")(pointsOfInterest)
-    __obj.updateDynamic("saturation")(saturation)
-    __obj.updateDynamic("sharpness")(sharpness)
-    __obj.updateDynamic("torch")(torch)
-    __obj.updateDynamic("whiteBalanceMode")(whiteBalanceMode)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(brightness = brightness, colorTemperature = colorTemperature, contrast = contrast, exposureCompensation = exposureCompensation, exposureMode = exposureMode, focusDistance = focusDistance, focusMode = focusMode, iso = iso, pointsOfInterest = pointsOfInterest, saturation = saturation, sharpness = sharpness, torch = torch, whiteBalanceMode = whiteBalanceMode, zoom = zoom)
+  
     __obj.asInstanceOf[MediaTrackSupportedConstraints]
   }
 }

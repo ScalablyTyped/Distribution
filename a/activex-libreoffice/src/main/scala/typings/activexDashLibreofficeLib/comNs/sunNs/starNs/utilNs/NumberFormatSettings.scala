@@ -57,22 +57,8 @@ object NumberFormatSettings {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): NumberFormatSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NoZero")(NoZero)
-    __obj.updateDynamic("NullDate")(NullDate)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("StandardDecimals")(StandardDecimals)
-    __obj.updateDynamic("TwoDigitDateStart")(TwoDigitDateStart)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(NoZero = NoZero, NullDate = NullDate, PropertySetInfo = PropertySetInfo, StandardDecimals = StandardDecimals, TwoDigitDateStart = TwoDigitDateStart, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[NumberFormatSettings]
   }
 }

@@ -22,12 +22,8 @@ object Anon_Decrement {
     none: scala.Double,
     set: scala.Double
   ): Anon_Decrement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrement")(decrement)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("increment")(increment)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(decrement = decrement, delete = delete, increment = increment, none = none, set = set)
+  
     __obj.asInstanceOf[Anon_Decrement]
   }
 }

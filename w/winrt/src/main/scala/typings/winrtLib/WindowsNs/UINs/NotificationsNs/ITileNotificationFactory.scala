@@ -14,8 +14,8 @@ object ITileNotificationFactory {
   def apply(
     createTileNotification: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, TileNotification]
   ): ITileNotificationFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createTileNotification")(createTileNotification)
+    val __obj = js.Dynamic.literal(createTileNotification = createTileNotification)
+  
     __obj.asInstanceOf[ITileNotificationFactory]
   }
 }

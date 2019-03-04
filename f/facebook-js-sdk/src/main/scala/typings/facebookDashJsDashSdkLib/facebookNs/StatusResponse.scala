@@ -16,9 +16,8 @@ object StatusResponse {
     authResponse: AuthResponse,
     status: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.authorization_expired | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.connected | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.not_authorized | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.unknown
   ): StatusResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authResponse")(authResponse)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authResponse = authResponse, status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[StatusResponse]
   }
 }

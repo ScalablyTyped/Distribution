@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(seamless: seamlessLib.SeamlessNs.Static): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("seamless")(seamless)
+    val __obj = js.Dynamic.literal(seamless = seamless)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

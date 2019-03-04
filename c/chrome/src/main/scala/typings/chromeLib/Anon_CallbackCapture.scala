@@ -30,10 +30,8 @@ object Anon_CallbackCapture {
     ],
     onStatusChanged: chromeLib.chromeNs.tabCaptureNs.CaptureStatusChangedEvent
   ): Anon_CallbackCapture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capture")(capture)
-    __obj.updateDynamic("getCapturedTabs")(getCapturedTabs)
-    __obj.updateDynamic("onStatusChanged")(onStatusChanged)
+    val __obj = js.Dynamic.literal(capture = capture, getCapturedTabs = getCapturedTabs, onStatusChanged = onStatusChanged)
+  
     __obj.asInstanceOf[Anon_CallbackCapture]
   }
 }

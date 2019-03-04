@@ -31,11 +31,8 @@ object ContainerEvent {
     ReplacedElement: js.Any,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ContainerEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Accessor")(Accessor)
-    __obj.updateDynamic("Element")(Element)
-    __obj.updateDynamic("ReplacedElement")(ReplacedElement)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Accessor = Accessor, Element = Element, ReplacedElement = ReplacedElement, Source = Source)
+  
     __obj.asInstanceOf[ContainerEvent]
   }
 }

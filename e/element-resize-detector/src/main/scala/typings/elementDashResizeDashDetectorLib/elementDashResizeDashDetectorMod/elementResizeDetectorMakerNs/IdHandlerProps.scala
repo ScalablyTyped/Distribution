@@ -16,9 +16,8 @@ object IdHandlerProps {
     get: js.Function2[stdLib.HTMLElement, scala.Boolean, java.lang.String],
     set: js.Function1[stdLib.HTMLElement, java.lang.String]
   ): IdHandlerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, set = set)
+  
     __obj.asInstanceOf[IdHandlerProps]
   }
 }

@@ -127,19 +127,8 @@ object TextStyle {
     underline: scala.Boolean,
     weighted_font_family: TextStyleWeightedFontFamily
   ): TextStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background_color")(background_color)
-    __obj.updateDynamic("baseline_offset")(baseline_offset)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("font_family")(font_family)
-    __obj.updateDynamic("font_size")(font_size)
-    __obj.updateDynamic("foreground_color")(foreground_color)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("small_caps")(small_caps)
-    __obj.updateDynamic("strikethrough")(strikethrough)
-    __obj.updateDynamic("underline")(underline)
-    __obj.updateDynamic("weighted_font_family")(weighted_font_family)
+    val __obj = js.Dynamic.literal(background_color = background_color, baseline_offset = baseline_offset, bold = bold, font_family = font_family, font_size = font_size, foreground_color = foreground_color, italic = italic, link = link, small_caps = small_caps, strikethrough = strikethrough, underline = underline, weighted_font_family = weighted_font_family)
+  
     __obj.asInstanceOf[TextStyle]
   }
 }

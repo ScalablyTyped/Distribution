@@ -24,8 +24,7 @@ object CertificateValidationArgs {
     certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     validationRecordFqdns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): CertificateValidationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
     if (validationRecordFqdns != null) __obj.updateDynamic("validationRecordFqdns")(validationRecordFqdns.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateValidationArgs]
   }

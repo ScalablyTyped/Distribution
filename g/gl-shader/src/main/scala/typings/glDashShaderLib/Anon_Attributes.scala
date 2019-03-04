@@ -20,9 +20,7 @@ object Anon_Attributes {
     attributes: js.Array[glDashShaderLib.glDashShaderMod.Parameter] = null,
     uniforms: js.Array[glDashShaderLib.glDashShaderMod.Parameter] = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("vertex")(vertex)
+    val __obj = js.Dynamic.literal(fragment = fragment, vertex = vertex)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
     __obj.asInstanceOf[Anon_Attributes]

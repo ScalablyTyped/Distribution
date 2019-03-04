@@ -20,9 +20,7 @@ object DetectIntentRequest {
     inputAudio: js.Any = null,
     queryParams: QueryParams = null
   ): DetectIntentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryInput")(queryInput)
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(queryInput = queryInput, session = session)
     if (inputAudio != null) __obj.updateDynamic("inputAudio")(inputAudio)
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
     __obj.asInstanceOf[DetectIntentRequest]

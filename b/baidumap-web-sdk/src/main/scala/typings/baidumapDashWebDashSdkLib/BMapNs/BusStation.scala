@@ -13,9 +13,8 @@ trait BusStation extends js.Object {
 object BusStation {
   @scala.inline
   def apply(name: java.lang.String, position: Point): BusStation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(name = name, position = position)
+  
     __obj.asInstanceOf[BusStation]
   }
 }

@@ -26,12 +26,9 @@ object Anon_Array {
     `object`: js.Function1[js.Any, scala.Boolean],
     string: js.Function1[js.Any, scala.Boolean]
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal(`null` = `null`, `object` = `object`)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(array = array, boolean = boolean, integer = integer, number = number, string = string)
+    __obj.updateDynamic("null")(`null`)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Array]
   }
 }

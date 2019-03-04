@@ -32,11 +32,8 @@ object XCachedDynamicResultSetFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCachedDynamicResultSetFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createCachedDynamicResultSet")(createCachedDynamicResultSet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createCachedDynamicResultSet = createCachedDynamicResultSet, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCachedDynamicResultSetFactory]
   }
 }

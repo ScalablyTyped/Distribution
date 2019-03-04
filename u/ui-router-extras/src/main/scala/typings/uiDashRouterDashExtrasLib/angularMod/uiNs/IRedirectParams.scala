@@ -18,8 +18,7 @@ object IRedirectParams {
     state: java.lang.String,
     params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IStateParamsService */ js.Any = null
   ): IRedirectParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[IRedirectParams]
   }

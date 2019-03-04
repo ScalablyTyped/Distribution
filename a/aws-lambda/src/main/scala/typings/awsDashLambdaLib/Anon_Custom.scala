@@ -17,8 +17,7 @@ object Anon_Custom {
     s3: awsDashLambdaLib.awsDashLambdaMod.CloudFrontS3Origin,
     custom: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Custom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3")(s3)
+    val __obj = js.Dynamic.literal(s3 = s3)
     if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom)
     __obj.asInstanceOf[Anon_Custom]
   }

@@ -20,11 +20,8 @@ object IPhantomCallback {
     target: js.Function,
     transform: phantomLib.phantomLibNumbers.`true`
   ): IPhantomCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(method = method, parent = parent, target = target, transform = transform)
+  
     __obj.asInstanceOf[IPhantomCallback]
   }
 }

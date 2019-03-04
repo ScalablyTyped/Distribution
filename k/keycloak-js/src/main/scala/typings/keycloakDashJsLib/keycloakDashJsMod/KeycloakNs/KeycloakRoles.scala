@@ -12,8 +12,8 @@ trait KeycloakRoles extends js.Object {
 object KeycloakRoles {
   @scala.inline
   def apply(roles: js.Array[java.lang.String]): KeycloakRoles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roles")(roles)
+    val __obj = js.Dynamic.literal(roles = roles)
+  
     __obj.asInstanceOf[KeycloakRoles]
   }
 }

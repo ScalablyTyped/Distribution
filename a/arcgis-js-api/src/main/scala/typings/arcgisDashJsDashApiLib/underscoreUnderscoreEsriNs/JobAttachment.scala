@@ -44,14 +44,8 @@ object JobAttachment {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     storageType: java.lang.String
   ): JobAttachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("folder")(folder)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("storageType")(storageType)
+    val __obj = js.Dynamic.literal(constructor = constructor, filename = filename, folder = folder, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable, storageType = storageType)
+  
     __obj.asInstanceOf[JobAttachment]
   }
 }

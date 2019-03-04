@@ -66,25 +66,8 @@ object XComboBox {
     removeItems: js.Function2[scala.Double, scala.Double, scala.Unit],
     setDropDownLineCount: js.Function1[scala.Double, scala.Unit]
   ): XComboBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DropDownLineCount")(DropDownLineCount)
-    __obj.updateDynamic("ItemCount")(ItemCount)
-    __obj.updateDynamic("Items")(Items)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addActionListener")(addActionListener)
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("addItemListener")(addItemListener)
-    __obj.updateDynamic("addItems")(addItems)
-    __obj.updateDynamic("getDropDownLineCount")(getDropDownLineCount)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getItemCount")(getItemCount)
-    __obj.updateDynamic("getItems")(getItems)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActionListener")(removeActionListener)
-    __obj.updateDynamic("removeItemListener")(removeItemListener)
-    __obj.updateDynamic("removeItems")(removeItems)
-    __obj.updateDynamic("setDropDownLineCount")(setDropDownLineCount)
+    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, acquire = acquire, addActionListener = addActionListener, addItem = addItem, addItemListener = addItemListener, addItems = addItems, getDropDownLineCount = getDropDownLineCount, getItem = getItem, getItemCount = getItemCount, getItems = getItems, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, removeItemListener = removeItemListener, removeItems = removeItems, setDropDownLineCount = setDropDownLineCount)
+  
     __obj.asInstanceOf[XComboBox]
   }
 }

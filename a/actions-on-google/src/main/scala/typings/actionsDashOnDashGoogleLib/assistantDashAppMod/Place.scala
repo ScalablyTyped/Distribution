@@ -22,12 +22,8 @@ object Place {
     placeId: java.lang.String,
     zipCode: java.lang.String
   ): Place = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("placeId")(placeId)
-    __obj.updateDynamic("zipCode")(zipCode)
+    val __obj = js.Dynamic.literal(address = address, city = city, coordinates = coordinates, placeId = placeId, zipCode = zipCode)
+  
     __obj.asInstanceOf[Place]
   }
 }

@@ -34,11 +34,7 @@ object Anon_AfterTransform {
     writecb: js.Function1[/* err */ js.Any, _] = null,
     writeencoding: java.lang.String = null
   ): Anon_AfterTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterTransform")(afterTransform)
-    __obj.updateDynamic("needTransform")(needTransform)
-    __obj.updateDynamic("transforming")(transforming)
-    __obj.updateDynamic("writechunk")(writechunk)
+    val __obj = js.Dynamic.literal(afterTransform = afterTransform, needTransform = needTransform, transforming = transforming, writechunk = writechunk)
     if (writecb != null) __obj.updateDynamic("writecb")(writecb)
     if (writeencoding != null) __obj.updateDynamic("writeencoding")(writeencoding)
     __obj.asInstanceOf[Anon_AfterTransform]

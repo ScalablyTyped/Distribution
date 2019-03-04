@@ -62,8 +62,7 @@ object Anon_CategoryId {
     onBehalfOfContentOwner: java.lang.String = null,
     pageToken: java.lang.String = null
   ): Anon_CategoryId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId)
     if (forUsername != null) __obj.updateDynamic("forUsername")(forUsername)
     if (id != null) __obj.updateDynamic("id")(id)

@@ -16,7 +16,8 @@ object DecoderOptions {
     `type`: adoneLib.adoneLibStrings.rfc4648 | adoneLib.adoneLibStrings.crockford | adoneLib.adoneLibStrings.base32hex,
     charmap: js.Object = null
   ): DecoderOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (charmap != null) __obj.updateDynamic("charmap")(charmap)
     __obj.asInstanceOf[DecoderOptions]
   }

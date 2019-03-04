@@ -18,7 +18,8 @@ object ValueDescription {
     negative: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String | js.Array[_] = null
   ): ValueDescription = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueDescription]

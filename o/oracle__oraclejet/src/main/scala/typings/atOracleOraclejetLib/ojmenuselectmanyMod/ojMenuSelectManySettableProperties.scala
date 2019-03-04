@@ -19,9 +19,7 @@ object ojMenuSelectManySettableProperties {
     value: js.Array[_],
     options: js.Array[atOracleOraclejetLib.ojmenuselectmanyMod.ojMenuSelectManyNs.Option] | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[_, _]) = null
   ): ojMenuSelectManySettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(disabled = disabled, value = value)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojMenuSelectManySettableProperties]
   }

@@ -36,13 +36,8 @@ object ResembleComparisonResult {
     isSameDimensions: scala.Boolean,
     misMatchPercentage: scala.Double
   ): ResembleComparisonResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analysisTime")(analysisTime)
-    __obj.updateDynamic("diffBounds")(diffBounds)
-    __obj.updateDynamic("dimensionDifference")(dimensionDifference)
-    __obj.updateDynamic("getImageDataUrl")(getImageDataUrl)
-    __obj.updateDynamic("isSameDimensions")(isSameDimensions)
-    __obj.updateDynamic("misMatchPercentage")(misMatchPercentage)
+    val __obj = js.Dynamic.literal(analysisTime = analysisTime, diffBounds = diffBounds, dimensionDifference = dimensionDifference, getImageDataUrl = getImageDataUrl, isSameDimensions = isSameDimensions, misMatchPercentage = misMatchPercentage)
+  
     __obj.asInstanceOf[ResembleComparisonResult]
   }
 }

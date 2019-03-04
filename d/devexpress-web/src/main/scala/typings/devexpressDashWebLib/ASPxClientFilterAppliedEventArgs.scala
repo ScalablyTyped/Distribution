@@ -19,8 +19,8 @@ trait ASPxClientFilterAppliedEventArgs extends ASPxClientEventArgs {
 object ASPxClientFilterAppliedEventArgs {
   @scala.inline
   def apply(filterExpression: java.lang.String): ASPxClientFilterAppliedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filterExpression")(filterExpression)
+    val __obj = js.Dynamic.literal(filterExpression = filterExpression)
+  
     __obj.asInstanceOf[ASPxClientFilterAppliedEventArgs]
   }
 }

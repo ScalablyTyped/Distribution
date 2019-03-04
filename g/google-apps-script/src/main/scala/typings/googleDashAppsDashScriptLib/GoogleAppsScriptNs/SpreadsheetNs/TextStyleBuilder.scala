@@ -28,15 +28,8 @@ object TextStyleBuilder {
     setStrikethrough: js.Function1[scala.Boolean, TextStyleBuilder],
     setUnderline: js.Function1[scala.Boolean, TextStyleBuilder]
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setBold")(setBold)
-    __obj.updateDynamic("setFontFamily")(setFontFamily)
-    __obj.updateDynamic("setFontSize")(setFontSize)
-    __obj.updateDynamic("setForegroundColor")(setForegroundColor)
-    __obj.updateDynamic("setItalic")(setItalic)
-    __obj.updateDynamic("setStrikethrough")(setStrikethrough)
-    __obj.updateDynamic("setUnderline")(setUnderline)
+    val __obj = js.Dynamic.literal(build = build, setBold = setBold, setFontFamily = setFontFamily, setFontSize = setFontSize, setForegroundColor = setForegroundColor, setItalic = setItalic, setStrikethrough = setStrikethrough, setUnderline = setUnderline)
+  
     __obj.asInstanceOf[TextStyleBuilder]
   }
 }

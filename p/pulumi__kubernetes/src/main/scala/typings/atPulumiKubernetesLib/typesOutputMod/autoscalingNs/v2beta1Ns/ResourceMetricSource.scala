@@ -39,10 +39,8 @@ object ResourceMetricSource {
     targetAverageUtilization: scala.Double,
     targetAverageValue: java.lang.String
   ): ResourceMetricSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("targetAverageUtilization")(targetAverageUtilization)
-    __obj.updateDynamic("targetAverageValue")(targetAverageValue)
+    val __obj = js.Dynamic.literal(name = name, targetAverageUtilization = targetAverageUtilization, targetAverageValue = targetAverageValue)
+  
     __obj.asInstanceOf[ResourceMetricSource]
   }
 }

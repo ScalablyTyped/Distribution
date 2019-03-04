@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ConnectorList protected () extends js.Object {
   def this(connectors: js.Array[Connector]) = this()
   var closed: scala.Boolean = js.native
-  var `connectors_`: js.Array[Connector] = js.native
+  var connectors_ : js.Array[Connector] = js.native
   def appendConnector(conn: Connector): scala.Unit = js.native
   def followWith(cagish: js.Any): openjscadLib.CSG = js.native
   def setClosed(bool: scala.Boolean): scala.Unit = js.native

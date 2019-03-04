@@ -35,10 +35,8 @@ object TreeDataModelEvent {
     ParentNode: XTreeNode,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): TreeDataModelEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Nodes")(Nodes)
-    __obj.updateDynamic("ParentNode")(ParentNode)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Nodes = Nodes, ParentNode = ParentNode, Source = Source)
+  
     __obj.asInstanceOf[TreeDataModelEvent]
   }
 }

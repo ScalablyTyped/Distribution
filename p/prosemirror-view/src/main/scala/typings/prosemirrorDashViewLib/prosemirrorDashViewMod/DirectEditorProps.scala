@@ -150,8 +150,7 @@ object DirectEditorProps {
     transformPastedHTML: js.Function1[/* html */ java.lang.String, java.lang.String] = null,
     transformPastedText: js.Function1[/* text */ java.lang.String, java.lang.String] = null
   ): DirectEditorProps[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (clipboardParser != null) __obj.updateDynamic("clipboardParser")(clipboardParser)
     if (clipboardSerializer != null) __obj.updateDynamic("clipboardSerializer")(clipboardSerializer)

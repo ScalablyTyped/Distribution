@@ -21,8 +21,7 @@ object GetCertificateAuthorityArgs {
     revocationConfigurations: js.Array[atPulumiAwsLib.Anon_CrlConfigurations] = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GetCertificateAuthorityArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
+    val __obj = js.Dynamic.literal(arn = arn)
     if (revocationConfigurations != null) __obj.updateDynamic("revocationConfigurations")(revocationConfigurations)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetCertificateAuthorityArgs]

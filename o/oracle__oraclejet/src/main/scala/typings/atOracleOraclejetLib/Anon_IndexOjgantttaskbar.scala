@@ -18,10 +18,8 @@ object Anon_IndexOjgantttaskbar {
     rowIndex: scala.Double,
     subId: atOracleOraclejetLib.atOracleOraclejetLibStrings.`oj-gantt-taskbar`
   ): Anon_IndexOjgantttaskbar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(index = index, rowIndex = rowIndex, subId = subId)
+  
     __obj.asInstanceOf[Anon_IndexOjgantttaskbar]
   }
 }

@@ -12,8 +12,8 @@ trait IMuteChangeRequestedEventArgs extends js.Object {
 object IMuteChangeRequestedEventArgs {
   @scala.inline
   def apply(mute: scala.Boolean): IMuteChangeRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mute")(mute)
+    val __obj = js.Dynamic.literal(mute = mute)
+  
     __obj.asInstanceOf[IMuteChangeRequestedEventArgs]
   }
 }

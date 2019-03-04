@@ -14,8 +14,7 @@ trait PreAuthTx
 object PreAuthTx {
   @scala.inline
   def apply(preAuthTx: nodeLib.Buffer | java.lang.String, weight: scala.Double | java.lang.String = null): PreAuthTx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preAuthTx")(preAuthTx.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(preAuthTx = preAuthTx.asInstanceOf[js.Any])
     if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreAuthTx]
   }

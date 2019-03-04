@@ -19,9 +19,8 @@ trait WidgetSize extends js.Object {
 object WidgetSize {
   @scala.inline
   def apply(columnSpan: scala.Double, rowSpan: scala.Double): WidgetSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnSpan")(columnSpan)
-    __obj.updateDynamic("rowSpan")(rowSpan)
+    val __obj = js.Dynamic.literal(columnSpan = columnSpan, rowSpan = rowSpan)
+  
     __obj.asInstanceOf[WidgetSize]
   }
 }

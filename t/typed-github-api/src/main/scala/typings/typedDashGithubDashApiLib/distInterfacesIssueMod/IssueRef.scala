@@ -18,10 +18,8 @@ object IssueRef {
     loadRepositoryAsync: js.Function0[js.Promise[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]],
     number: scala.Double
   ): IssueRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadAsync")(loadAsync)
-    __obj.updateDynamic("loadRepositoryAsync")(loadRepositoryAsync)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(loadAsync = loadAsync, loadRepositoryAsync = loadRepositoryAsync, number = number)
+  
     __obj.asInstanceOf[IssueRef]
   }
 }

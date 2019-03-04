@@ -47,8 +47,7 @@ object PropTypes {
     shouldFetchSuggestions: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String = null
   ): PropTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (googleCallbackName != null) __obj.updateDynamic("googleCallbackName")(googleCallbackName)
     if (!js.isUndefined(highlightFirstSuggestion)) __obj.updateDynamic("highlightFirstSuggestion")(highlightFirstSuggestion)

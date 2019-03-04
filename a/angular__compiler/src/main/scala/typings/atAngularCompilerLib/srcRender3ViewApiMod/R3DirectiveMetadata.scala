@@ -85,16 +85,8 @@ object R3DirectiveMetadata {
     providers: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     selector: java.lang.String = null
   ): R3DirectiveMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("lifecycle")(lifecycle)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outputs")(outputs)
-    __obj.updateDynamic("queries")(queries)
-    __obj.updateDynamic("typeArgumentCount")(typeArgumentCount)
-    __obj.updateDynamic("typeSourceSpan")(typeSourceSpan)
-    __obj.updateDynamic("usesInheritance")(usesInheritance)
+    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, queries = queries, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
     if (providers != null) __obj.updateDynamic("providers")(providers)

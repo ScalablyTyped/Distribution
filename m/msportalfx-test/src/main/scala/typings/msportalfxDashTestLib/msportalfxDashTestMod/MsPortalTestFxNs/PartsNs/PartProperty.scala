@@ -31,20 +31,8 @@ object PartProperty {
     rightClick: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
     sendKeys: js.Function1[/* repeated */ java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]]
   ): PartProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseLocator")(baseLocator)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("getAttribute")(getAttribute)
-    __obj.updateDynamic("getLocator")(getLocator)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("isDisplayed")(isDisplayed)
-    __obj.updateDynamic("isElementPresent")(isElementPresent)
-    __obj.updateDynamic("isPresent")(isPresent)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentLocator")(parentLocator)
-    __obj.updateDynamic("rightClick")(rightClick)
-    __obj.updateDynamic("sendKeys")(sendKeys)
+    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = click, getAttribute = getAttribute, getLocator = getLocator, getText = getText, getValue = getValue, isDisplayed = isDisplayed, isElementPresent = isElementPresent, isPresent = isPresent, name = name, parentLocator = parentLocator, rightClick = rightClick, sendKeys = sendKeys)
+  
     __obj.asInstanceOf[PartProperty]
   }
 }

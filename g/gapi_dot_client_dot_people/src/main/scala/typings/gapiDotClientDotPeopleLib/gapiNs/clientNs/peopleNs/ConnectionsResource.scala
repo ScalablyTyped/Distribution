@@ -23,8 +23,8 @@ object ConnectionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListConnectionsResponse]
     ]
   ): ConnectionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[ConnectionsResource]
   }
 }

@@ -25,8 +25,8 @@ object OnItemClickListener {
       scala.Unit
     ]
   ): OnItemClickListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onItemClick")(onItemClick)
+    val __obj = js.Dynamic.literal(onItemClick = onItemClick)
+  
     __obj.asInstanceOf[OnItemClickListener]
   }
 }

@@ -38,15 +38,8 @@ object XStreamListener {
     started: js.Function0[scala.Unit],
     terminated: js.Function0[scala.Unit]
   ): XStreamListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("started")(started)
-    __obj.updateDynamic("terminated")(terminated)
+    val __obj = js.Dynamic.literal(acquire = acquire, closed = closed, disposing = disposing, error = error, queryInterface = queryInterface, release = release, started = started, terminated = terminated)
+  
     __obj.asInstanceOf[XStreamListener]
   }
 }

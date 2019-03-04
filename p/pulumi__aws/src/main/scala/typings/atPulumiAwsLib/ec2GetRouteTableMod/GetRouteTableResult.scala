@@ -40,15 +40,8 @@ object GetRouteTableResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetRouteTableResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associations")(associations)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("routeTableId")(routeTableId)
-    __obj.updateDynamic("routes")(routes)
-    __obj.updateDynamic("subnetId")(subnetId)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(associations = associations, id = id, ownerId = ownerId, routeTableId = routeTableId, routes = routes, subnetId = subnetId, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetRouteTableResult]
   }
 }

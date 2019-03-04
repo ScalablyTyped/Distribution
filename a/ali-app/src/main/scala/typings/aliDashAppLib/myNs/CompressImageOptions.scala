@@ -38,8 +38,7 @@ object CompressImageOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[/* res */ aliDashAppLib.Anon_ApFilePaths, scala.Unit] = null
   ): CompressImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apFilePaths")(apFilePaths)
+    val __obj = js.Dynamic.literal(apFilePaths = apFilePaths)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (compressLevel != null) __obj.updateDynamic("compressLevel")(compressLevel.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

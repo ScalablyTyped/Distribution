@@ -50,12 +50,8 @@ object XTransitionFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTransitionFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createTransition")(createTransition)
-    __obj.updateDynamic("hasTransition")(hasTransition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createTransition = createTransition, hasTransition = hasTransition, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTransitionFactory]
   }
 }

@@ -58,20 +58,17 @@ object Anon_Cx {
     x: scala.Double,
     y: scala.Double
   ): Anon_Cx = {
-    val __obj = js.Dynamic.literal(`fill-opacity` = `fill-opacity`, `font-family` = `font-family`, `font-size` = `font-size`, `stop-color` = `stop-color`, `stop-opacity` = `stop-opacity`, `stroke-linecap` = `stroke-linecap`, `stroke-linejoin` = `stroke-linejoin`, `stroke-opacity` = `stroke-opacity`, `stroke-width` = `stroke-width`, `text-anchor` = `text-anchor`)
-    __obj.updateDynamic("cx")(cx)
-    __obj.updateDynamic("cy")(cy)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("rx")(rx)
-    __obj.updateDynamic("ry")(ry)
-    __obj.updateDynamic("stroke")(stroke)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(cx = cx, cy = cy, fill = fill, height = height, offset = offset, opacity = opacity, r = r, rx = rx, ry = ry, stroke = stroke, width = width, x = x, y = y)
+    __obj.updateDynamic("fill-opacity")(`fill-opacity`)
+    __obj.updateDynamic("font-family")(`font-family`)
+    __obj.updateDynamic("font-size")(`font-size`)
+    __obj.updateDynamic("stop-color")(`stop-color`)
+    __obj.updateDynamic("stop-opacity")(`stop-opacity`)
+    __obj.updateDynamic("stroke-linecap")(`stroke-linecap`)
+    __obj.updateDynamic("stroke-linejoin")(`stroke-linejoin`)
+    __obj.updateDynamic("stroke-opacity")(`stroke-opacity`)
+    __obj.updateDynamic("stroke-width")(`stroke-width`)
+    __obj.updateDynamic("text-anchor")(`text-anchor`)
     __obj.asInstanceOf[Anon_Cx]
   }
 }

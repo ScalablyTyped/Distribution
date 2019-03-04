@@ -28,14 +28,7 @@ object Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId {
     volumeType: java.lang.String,
     deleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("encrypted")(encrypted)
-    __obj.updateDynamic("iops")(iops)
-    __obj.updateDynamic("snapshotId")(snapshotId)
-    __obj.updateDynamic("volumeId")(volumeId)
-    __obj.updateDynamic("volumeSize")(volumeSize)
-    __obj.updateDynamic("volumeType")(volumeType)
+    val __obj = js.Dynamic.literal(deviceName = deviceName, encrypted = encrypted, iops = iops, snapshotId = snapshotId, volumeId = volumeId, volumeSize = volumeSize, volumeType = volumeType)
     if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
     __obj.asInstanceOf[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId]
   }

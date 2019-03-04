@@ -44,25 +44,8 @@ object XMergeableCell {
     setFormula: js.Function1[java.lang.String, scala.Unit],
     setValue: js.Function1[scala.Double, scala.Unit]
   ): XMergeableCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnSpan")(ColumnSpan)
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Formula")(Formula)
-    __obj.updateDynamic("RowSpan")(RowSpan)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnSpan")(getColumnSpan)
-    __obj.updateDynamic("getError")(getError)
-    __obj.updateDynamic("getFormula")(getFormula)
-    __obj.updateDynamic("getRowSpan")(getRowSpan)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("isMerged")(isMerged)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFormula")(setFormula)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(ColumnSpan = ColumnSpan, Error = Error, Formula = Formula, RowSpan = RowSpan, Type = Type, Value = Value, acquire = acquire, getColumnSpan = getColumnSpan, getError = getError, getFormula = getFormula, getRowSpan = getRowSpan, getType = getType, getValue = getValue, isMerged = isMerged, queryInterface = queryInterface, release = release, setFormula = setFormula, setValue = setValue)
+  
     __obj.asInstanceOf[XMergeableCell]
   }
 }

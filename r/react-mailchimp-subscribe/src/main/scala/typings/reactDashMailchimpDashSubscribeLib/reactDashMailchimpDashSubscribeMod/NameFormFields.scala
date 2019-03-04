@@ -13,10 +13,8 @@ trait NameFormFields extends EmailFormFields {
 object NameFormFields {
   @scala.inline
   def apply(EMAIL: java.lang.String, FNAME: java.lang.String, LNAME: java.lang.String): NameFormFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EMAIL")(EMAIL)
-    __obj.updateDynamic("FNAME")(FNAME)
-    __obj.updateDynamic("LNAME")(LNAME)
+    val __obj = js.Dynamic.literal(EMAIL = EMAIL, FNAME = FNAME, LNAME = LNAME)
+  
     __obj.asInstanceOf[NameFormFields]
   }
 }

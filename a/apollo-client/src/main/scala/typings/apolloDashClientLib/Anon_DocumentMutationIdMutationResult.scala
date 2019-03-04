@@ -34,12 +34,7 @@ object Anon_DocumentMutationIdMutationResult {
       scala.Unit
     ] = null
   ): Anon_DocumentMutationIdMutationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("mutationId")(mutationId)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("updateQueries")(updateQueries)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(document = document, mutationId = mutationId, result = result, updateQueries = updateQueries, variables = variables)
     if (update != null) __obj.updateDynamic("update")(update)
     __obj.asInstanceOf[Anon_DocumentMutationIdMutationResult]
   }

@@ -64,9 +64,7 @@ object Anon_AltFieldsIdKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIdKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(part = part, videoId = videoId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (id != null) __obj.updateDynamic("id")(id)

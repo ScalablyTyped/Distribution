@@ -13,8 +13,8 @@ trait Anon_Route extends js.Object {
 object Anon_Route {
   @scala.inline
   def apply(route: Anon_Prefix): Anon_Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(route = route)
+  
     __obj.asInstanceOf[Anon_Route]
   }
 }

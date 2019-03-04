@@ -32,9 +32,8 @@ object IGridExporterApi {
     csvExport: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     pdfExport: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): IGridExporterApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("csvExport")(csvExport)
-    __obj.updateDynamic("pdfExport")(pdfExport)
+    val __obj = js.Dynamic.literal(csvExport = csvExport, pdfExport = pdfExport)
+  
     __obj.asInstanceOf[IGridExporterApi]
   }
 }

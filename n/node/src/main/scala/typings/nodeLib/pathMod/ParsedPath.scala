@@ -40,12 +40,8 @@ object ParsedPath {
     name: java.lang.String,
     root: java.lang.String
   ): ParsedPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(base = base, dir = dir, ext = ext, name = name, root = root)
+  
     __obj.asInstanceOf[ParsedPath]
   }
 }

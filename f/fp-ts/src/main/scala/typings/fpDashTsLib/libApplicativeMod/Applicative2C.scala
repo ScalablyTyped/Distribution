@@ -27,12 +27,8 @@ object Applicative2C {
     ],
     of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[F, L, js.Any]]
   ): Applicative2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], ap = ap, map = map, of = of)
+  
     __obj.asInstanceOf[Applicative2C[F, L]]
   }
 }

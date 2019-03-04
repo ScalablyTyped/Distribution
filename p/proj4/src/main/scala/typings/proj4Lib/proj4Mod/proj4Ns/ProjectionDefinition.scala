@@ -72,8 +72,7 @@ object ProjectionDefinition {
     y0: scala.Int | scala.Double = null,
     zone: scala.Int | scala.Double = null
   ): ProjectionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (R_A != null) __obj.updateDynamic("R_A")(R_A)
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])

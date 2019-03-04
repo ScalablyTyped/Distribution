@@ -26,14 +26,8 @@ object Anon_CheckBox {
     textArea: scala.Double,
     textBox: scala.Double
   ): Anon_CheckBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkBox")(checkBox)
-    __obj.updateDynamic("combo")(combo)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("passwordBox")(passwordBox)
-    __obj.updateDynamic("radioButtons")(radioButtons)
-    __obj.updateDynamic("textArea")(textArea)
-    __obj.updateDynamic("textBox")(textBox)
+    val __obj = js.Dynamic.literal(checkBox = checkBox, combo = combo, none = none, passwordBox = passwordBox, radioButtons = radioButtons, textArea = textArea, textBox = textBox)
+  
     __obj.asInstanceOf[Anon_CheckBox]
   }
 }

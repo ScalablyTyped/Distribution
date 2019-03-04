@@ -76,8 +76,7 @@ object Anon_AltFieldsIdKeyMaxResultsOauthtoken {
     userIp: java.lang.String = null,
     videoId: java.lang.String = null
   ): Anon_AltFieldsIdKeyMaxResultsOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (id != null) __obj.updateDynamic("id")(id)

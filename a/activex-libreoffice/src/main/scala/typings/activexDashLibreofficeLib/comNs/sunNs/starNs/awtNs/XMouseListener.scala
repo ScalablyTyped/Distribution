@@ -37,15 +37,8 @@ object XMouseListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMouseListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("mouseEntered")(mouseEntered)
-    __obj.updateDynamic("mouseExited")(mouseExited)
-    __obj.updateDynamic("mousePressed")(mousePressed)
-    __obj.updateDynamic("mouseReleased")(mouseReleased)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, mouseEntered = mouseEntered, mouseExited = mouseExited, mousePressed = mousePressed, mouseReleased = mouseReleased, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMouseListener]
   }
 }

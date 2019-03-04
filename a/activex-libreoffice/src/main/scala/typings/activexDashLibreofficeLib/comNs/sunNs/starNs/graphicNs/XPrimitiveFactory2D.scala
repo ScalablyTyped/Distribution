@@ -51,12 +51,8 @@ object XPrimitiveFactory2D {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPrimitiveFactory2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createPrimitivesFromXDrawPage")(createPrimitivesFromXDrawPage)
-    __obj.updateDynamic("createPrimitivesFromXShape")(createPrimitivesFromXShape)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createPrimitivesFromXDrawPage = createPrimitivesFromXDrawPage, createPrimitivesFromXShape = createPrimitivesFromXShape, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPrimitiveFactory2D]
   }
 }

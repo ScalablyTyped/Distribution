@@ -20,11 +20,8 @@ object SizedColumnProps {
     getColumnWidth: js.Function0[scala.Double],
     registerChild: js.Any
   ): SizedColumnProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustedWidth")(adjustedWidth)
-    __obj.updateDynamic("columnWidth")(columnWidth)
-    __obj.updateDynamic("getColumnWidth")(getColumnWidth)
-    __obj.updateDynamic("registerChild")(registerChild)
+    val __obj = js.Dynamic.literal(adjustedWidth = adjustedWidth, columnWidth = columnWidth, getColumnWidth = getColumnWidth, registerChild = registerChild)
+  
     __obj.asInstanceOf[SizedColumnProps]
   }
 }

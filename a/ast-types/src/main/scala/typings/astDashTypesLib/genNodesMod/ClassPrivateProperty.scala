@@ -25,8 +25,8 @@ object ClassPrivateProperty {
     `type`: astDashTypesLib.astDashTypesLibStrings.ClassPrivateProperty,
     value: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): ClassPrivateProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+    __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ClassPrivateProperty]
   }

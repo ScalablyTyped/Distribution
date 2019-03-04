@@ -18,7 +18,8 @@ object NavigationBackAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/BACK`,
     key: java.lang.String = null
   ): NavigationBackAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[NavigationBackAction]
   }

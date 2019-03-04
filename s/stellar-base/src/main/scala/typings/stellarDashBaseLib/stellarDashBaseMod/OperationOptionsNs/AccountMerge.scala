@@ -14,8 +14,7 @@ trait AccountMerge
 object AccountMerge {
   @scala.inline
   def apply(destination: java.lang.String, source: java.lang.String = null): AccountMerge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination)
+    val __obj = js.Dynamic.literal(destination = destination)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[AccountMerge]
   }

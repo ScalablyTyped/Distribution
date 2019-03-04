@@ -12,8 +12,8 @@ trait CustomShapes extends js.Object {
 object CustomShapes {
   @scala.inline
   def apply(init: js.Function1[Sigma, scala.Unit]): CustomShapes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(init = init)
+  
     __obj.asInstanceOf[CustomShapes]
   }
 }

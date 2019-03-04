@@ -45,8 +45,7 @@ object Anon_AcknowledgeAbuse {
     supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AcknowledgeAbuse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (!js.isUndefined(acknowledgeAbuse)) __obj.updateDynamic("acknowledgeAbuse")(acknowledgeAbuse)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

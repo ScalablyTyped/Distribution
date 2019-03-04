@@ -32,17 +32,8 @@ object Anon_AutoBasePath {
     trackRoutes: scala.Boolean,
     trackStates: scala.Boolean
   ): Anon_AutoBasePath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoBasePath")(autoBasePath)
-    __obj.updateDynamic("autoTrackingFirstPage")(autoTrackingFirstPage)
-    __obj.updateDynamic("autoTrackingVirtualPages")(autoTrackingVirtualPages)
-    __obj.updateDynamic("basePath")(basePath)
-    __obj.updateDynamic("excludedRoutes")(excludedRoutes)
-    __obj.updateDynamic("queryKeysBlacklisted")(queryKeysBlacklisted)
-    __obj.updateDynamic("queryKeysWhitelisted")(queryKeysWhitelisted)
-    __obj.updateDynamic("trackRelativePath")(trackRelativePath)
-    __obj.updateDynamic("trackRoutes")(trackRoutes)
-    __obj.updateDynamic("trackStates")(trackStates)
+    val __obj = js.Dynamic.literal(autoBasePath = autoBasePath, autoTrackingFirstPage = autoTrackingFirstPage, autoTrackingVirtualPages = autoTrackingVirtualPages, basePath = basePath, excludedRoutes = excludedRoutes, queryKeysBlacklisted = queryKeysBlacklisted, queryKeysWhitelisted = queryKeysWhitelisted, trackRelativePath = trackRelativePath, trackRoutes = trackRoutes, trackStates = trackStates)
+  
     __obj.asInstanceOf[Anon_AutoBasePath]
   }
 }

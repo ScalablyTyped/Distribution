@@ -24,8 +24,7 @@ object GetFileInfoOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[/* options */ GetFileInfoSuccess, scala.Unit] = null
   ): GetFileInfoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apFilePath")(apFilePath)
+    val __obj = js.Dynamic.literal(apFilePath = apFilePath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

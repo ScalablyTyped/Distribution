@@ -12,8 +12,8 @@ trait IFrameworkViewSource extends js.Object {
 object IFrameworkViewSource {
   @scala.inline
   def apply(createView: js.Function0[IFrameworkView]): IFrameworkViewSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createView")(createView)
+    val __obj = js.Dynamic.literal(createView = createView)
+  
     __obj.asInstanceOf[IFrameworkViewSource]
   }
 }

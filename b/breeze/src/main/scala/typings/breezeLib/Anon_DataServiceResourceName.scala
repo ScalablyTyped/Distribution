@@ -13,9 +13,8 @@ trait Anon_DataServiceResourceName extends js.Object {
 object Anon_DataServiceResourceName {
   @scala.inline
   def apply(dataService: breezeLib.breezeNs.DataService, resourceName: java.lang.String): Anon_DataServiceResourceName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataService")(dataService)
-    __obj.updateDynamic("resourceName")(resourceName)
+    val __obj = js.Dynamic.literal(dataService = dataService, resourceName = resourceName)
+  
     __obj.asInstanceOf[Anon_DataServiceResourceName]
   }
 }

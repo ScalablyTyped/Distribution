@@ -38,13 +38,8 @@ object XActivateListener {
     windowActivated: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     windowDeactivated: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XActivateListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("windowActivated")(windowActivated)
-    __obj.updateDynamic("windowDeactivated")(windowDeactivated)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, windowActivated = windowActivated, windowDeactivated = windowDeactivated)
+  
     __obj.asInstanceOf[XActivateListener]
   }
 }

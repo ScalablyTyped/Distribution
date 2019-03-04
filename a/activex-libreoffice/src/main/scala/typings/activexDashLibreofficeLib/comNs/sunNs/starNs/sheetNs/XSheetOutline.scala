@@ -82,17 +82,8 @@ object XSheetOutline {
       scala.Unit
     ]
   ): XSheetOutline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("autoOutline")(autoOutline)
-    __obj.updateDynamic("clearOutline")(clearOutline)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("hideDetail")(hideDetail)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("showDetail")(showDetail)
-    __obj.updateDynamic("showLevel")(showLevel)
-    __obj.updateDynamic("ungroup")(ungroup)
+    val __obj = js.Dynamic.literal(acquire = acquire, autoOutline = autoOutline, clearOutline = clearOutline, group = group, hideDetail = hideDetail, queryInterface = queryInterface, release = release, showDetail = showDetail, showLevel = showLevel, ungroup = ungroup)
+  
     __obj.asInstanceOf[XSheetOutline]
   }
 }

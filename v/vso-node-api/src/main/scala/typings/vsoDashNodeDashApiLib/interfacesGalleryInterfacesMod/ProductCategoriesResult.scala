@@ -12,8 +12,8 @@ trait ProductCategoriesResult extends js.Object {
 object ProductCategoriesResult {
   @scala.inline
   def apply(categories: js.Array[ProductCategory]): ProductCategoriesResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(categories = categories)
+  
     __obj.asInstanceOf[ProductCategoriesResult]
   }
 }

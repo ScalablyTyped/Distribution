@@ -19,10 +19,8 @@ object strings {
     INDICATOR_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab-bar__indicator`,
     TAB_SELECTOR: atMaterialTabsLib.atMaterialTabsLibStrings.`DOTmdc-tab`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHANGE_EVENT")(CHANGE_EVENT)
-    __obj.updateDynamic("INDICATOR_SELECTOR")(INDICATOR_SELECTOR)
-    __obj.updateDynamic("TAB_SELECTOR")(TAB_SELECTOR)
+    val __obj = js.Dynamic.literal(CHANGE_EVENT = CHANGE_EVENT, INDICATOR_SELECTOR = INDICATOR_SELECTOR, TAB_SELECTOR = TAB_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

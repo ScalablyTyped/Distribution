@@ -20,9 +20,8 @@ object StarterTemplate {
     `type`: ProjectType,
     description: java.lang.String = null
   ): StarterTemplate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[StarterTemplate]
   }

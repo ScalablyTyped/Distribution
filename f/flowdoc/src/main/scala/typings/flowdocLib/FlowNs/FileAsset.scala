@@ -13,9 +13,8 @@ trait FileAsset extends js.Object {
 object FileAsset {
   @scala.inline
   def apply(dirPath: java.lang.String, fileName: java.lang.String): FileAsset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirPath")(dirPath)
-    __obj.updateDynamic("fileName")(fileName)
+    val __obj = js.Dynamic.literal(dirPath = dirPath, fileName = fileName)
+  
     __obj.asInstanceOf[FileAsset]
   }
 }

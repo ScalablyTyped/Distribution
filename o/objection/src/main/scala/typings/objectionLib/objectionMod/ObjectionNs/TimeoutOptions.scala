@@ -12,8 +12,8 @@ trait TimeoutOptions extends js.Object {
 object TimeoutOptions {
   @scala.inline
   def apply(cancel: scala.Boolean): TimeoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(cancel = cancel)
+  
     __obj.asInstanceOf[TimeoutOptions]
   }
 }

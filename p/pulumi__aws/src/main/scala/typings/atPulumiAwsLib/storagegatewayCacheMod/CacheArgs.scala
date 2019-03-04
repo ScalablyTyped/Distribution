@@ -22,9 +22,8 @@ object CacheArgs {
     diskId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     gatewayArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): CacheArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diskId")(diskId.asInstanceOf[js.Any])
-    __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CacheArgs]
   }
 }

@@ -16,8 +16,7 @@ object Header {
     alg: Algorithm,
     StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Header = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alg")(alg)
+    val __obj = js.Dynamic.literal(alg = alg)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Header]
   }

@@ -20,11 +20,8 @@ object DictionaryMemberType {
     `type`: webidl2Lib.webidl2LibStrings.field,
     default: ValueDescription = null
   ): DictionaryMemberType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name, required = required)
+    __obj.updateDynamic("type")(`type`)
     if (default != null) __obj.updateDynamic("default")(default)
     __obj.asInstanceOf[DictionaryMemberType]
   }

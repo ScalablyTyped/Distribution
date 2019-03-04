@@ -12,8 +12,8 @@ trait ResolutionValueContainer extends js.Object {
 object ResolutionValueContainer {
   @scala.inline
   def apply(value: ResolutionValue): ResolutionValueContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[ResolutionValueContainer]
   }
 }

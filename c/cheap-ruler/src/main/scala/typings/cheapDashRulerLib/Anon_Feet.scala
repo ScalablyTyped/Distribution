@@ -28,15 +28,8 @@ object Anon_Feet {
     nauticalmiles: scala.Double,
     yards: scala.Double
   ): Anon_Feet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("feet")(feet)
-    __obj.updateDynamic("inches")(inches)
-    __obj.updateDynamic("kilometers")(kilometers)
-    __obj.updateDynamic("meters")(meters)
-    __obj.updateDynamic("metres")(metres)
-    __obj.updateDynamic("miles")(miles)
-    __obj.updateDynamic("nauticalmiles")(nauticalmiles)
-    __obj.updateDynamic("yards")(yards)
+    val __obj = js.Dynamic.literal(feet = feet, inches = inches, kilometers = kilometers, meters = meters, metres = metres, miles = miles, nauticalmiles = nauticalmiles, yards = yards)
+  
     __obj.asInstanceOf[Anon_Feet]
   }
 }

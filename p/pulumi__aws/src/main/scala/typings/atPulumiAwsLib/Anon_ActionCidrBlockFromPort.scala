@@ -30,12 +30,7 @@ object Anon_ActionCidrBlockFromPort {
     icmpType: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     ipv6CidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ActionCidrBlockFromPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("ruleNo")(ruleNo.asInstanceOf[js.Any])
-    __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], fromPort = fromPort.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], ruleNo = ruleNo.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
     if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
     if (icmpCode != null) __obj.updateDynamic("icmpCode")(icmpCode.asInstanceOf[js.Any])
     if (icmpType != null) __obj.updateDynamic("icmpType")(icmpType.asInstanceOf[js.Any])

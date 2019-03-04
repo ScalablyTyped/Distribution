@@ -20,8 +20,7 @@ object Anon_Attributes {
     indices: stdLib.Uint16Array | stdLib.Uint32Array = null,
     primitiveType: cesiumLib.cesiumMod.CesiumNs.PrimitiveType = null
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(attributes = attributes)
     if (boundingSphere != null) __obj.updateDynamic("boundingSphere")(boundingSphere)
     if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
     if (primitiveType != null) __obj.updateDynamic("primitiveType")(primitiveType)

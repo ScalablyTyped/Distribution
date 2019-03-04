@@ -181,8 +181,7 @@ object MapboxOptions {
     transformRequest: TransformRequestFunction = null,
     zoom: scala.Int | scala.Double = null
   ): MapboxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (bearingSnap != null) __obj.updateDynamic("bearingSnap")(bearingSnap.asInstanceOf[js.Any])

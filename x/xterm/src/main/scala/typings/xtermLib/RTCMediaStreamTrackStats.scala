@@ -43,9 +43,8 @@ object RTCMediaStreamTrackStats {
     ssrcIds: js.Array[java.lang.String] = null,
     trackIdentifier: java.lang.String = null
   ): RTCMediaStreamTrackStats = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     if (audioLevel != null) __obj.updateDynamic("audioLevel")(audioLevel.asInstanceOf[js.Any])
     if (echoReturnLoss != null) __obj.updateDynamic("echoReturnLoss")(echoReturnLoss.asInstanceOf[js.Any])
     if (echoReturnLossEnhancement != null) __obj.updateDynamic("echoReturnLossEnhancement")(echoReturnLossEnhancement.asInstanceOf[js.Any])

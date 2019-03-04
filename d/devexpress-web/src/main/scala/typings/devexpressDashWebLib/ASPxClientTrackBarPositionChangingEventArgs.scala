@@ -58,15 +58,8 @@ object ASPxClientTrackBarPositionChangingEventArgs {
     newPositionStart: scala.Double,
     processOnServer: scala.Boolean
   ): ASPxClientTrackBarPositionChangingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("currentPosition")(currentPosition)
-    __obj.updateDynamic("currentPositionEnd")(currentPositionEnd)
-    __obj.updateDynamic("currentPositionStart")(currentPositionStart)
-    __obj.updateDynamic("newPosition")(newPosition)
-    __obj.updateDynamic("newPositionEnd")(newPositionEnd)
-    __obj.updateDynamic("newPositionStart")(newPositionStart)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(cancel = cancel, currentPosition = currentPosition, currentPositionEnd = currentPositionEnd, currentPositionStart = currentPositionStart, newPosition = newPosition, newPositionEnd = newPositionEnd, newPositionStart = newPositionStart, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientTrackBarPositionChangingEventArgs]
   }
 }

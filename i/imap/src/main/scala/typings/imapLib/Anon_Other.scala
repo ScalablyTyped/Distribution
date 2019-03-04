@@ -17,10 +17,8 @@ trait Anon_Other extends js.Object {
 object Anon_Other {
   @scala.inline
   def apply(other: js.Array[_], personal: js.Array[_], shared: js.Array[_]): Anon_Other = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("personal")(personal)
-    __obj.updateDynamic("shared")(shared)
+    val __obj = js.Dynamic.literal(other = other, personal = personal, shared = shared)
+  
     __obj.asInstanceOf[Anon_Other]
   }
 }

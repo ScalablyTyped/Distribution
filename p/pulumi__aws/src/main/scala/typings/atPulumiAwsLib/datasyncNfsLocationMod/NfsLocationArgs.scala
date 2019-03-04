@@ -38,10 +38,7 @@ object NfsLocationArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): NfsLocationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPremConfig")(onPremConfig.asInstanceOf[js.Any])
-    __obj.updateDynamic("serverHostname")(serverHostname.asInstanceOf[js.Any])
-    __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onPremConfig = onPremConfig.asInstanceOf[js.Any], serverHostname = serverHostname.asInstanceOf[js.Any], subdirectory = subdirectory.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NfsLocationArgs]
   }

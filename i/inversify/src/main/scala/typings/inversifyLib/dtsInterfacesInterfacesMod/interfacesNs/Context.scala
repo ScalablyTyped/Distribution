@@ -24,13 +24,8 @@ object Context {
     plan: Plan,
     setCurrentRequest: js.Function1[Request, scala.Unit]
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPlan")(addPlan)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("currentRequest")(currentRequest)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("setCurrentRequest")(setCurrentRequest)
+    val __obj = js.Dynamic.literal(addPlan = addPlan, container = container, currentRequest = currentRequest, id = id, plan = plan, setCurrentRequest = setCurrentRequest)
+  
     __obj.asInstanceOf[Context]
   }
 }

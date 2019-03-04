@@ -32,11 +32,8 @@ object PlanMetadata {
     modifiedDate: stdLib.Date,
     userPermissions: PlanUserPermissions
   ): PlanMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdByIdentity")(createdByIdentity)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("modifiedDate")(modifiedDate)
-    __obj.updateDynamic("userPermissions")(userPermissions)
+    val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity, description = description, modifiedDate = modifiedDate, userPermissions = userPermissions)
+  
     __obj.asInstanceOf[PlanMetadata]
   }
 }

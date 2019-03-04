@@ -20,9 +20,8 @@ trait ClipboardService extends js.Object {
 object ClipboardService {
   @scala.inline
   def apply(copyText: js.Function1[java.lang.String, scala.Unit], supported: scala.Boolean): ClipboardService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyText")(copyText)
-    __obj.updateDynamic("supported")(supported)
+    val __obj = js.Dynamic.literal(copyText = copyText, supported = supported)
+  
     __obj.asInstanceOf[ClipboardService]
   }
 }

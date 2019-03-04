@@ -16,9 +16,8 @@ object Anon_FromToNumber {
     from: codemirrorLib.codemirrorMod.CodeMirrorNs.Position | scala.Double,
     to: codemirrorLib.codemirrorMod.CodeMirrorNs.Position | scala.Double
   ): Anon_FromToNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FromToNumber]
   }
 }

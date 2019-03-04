@@ -45,13 +45,8 @@ object RealRectangle3D {
     Z1: scala.Double,
     Z2: scala.Double
   ): RealRectangle3D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("X1")(X1)
-    __obj.updateDynamic("X2")(X2)
-    __obj.updateDynamic("Y1")(Y1)
-    __obj.updateDynamic("Y2")(Y2)
-    __obj.updateDynamic("Z1")(Z1)
-    __obj.updateDynamic("Z2")(Z2)
+    val __obj = js.Dynamic.literal(X1 = X1, X2 = X2, Y1 = Y1, Y2 = Y2, Z1 = Z1, Z2 = Z2)
+  
     __obj.asInstanceOf[RealRectangle3D]
   }
 }

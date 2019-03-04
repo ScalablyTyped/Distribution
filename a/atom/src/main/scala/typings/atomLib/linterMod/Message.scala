@@ -44,10 +44,7 @@ object Message {
     solutions: js.Array[ReplacementSolution | CallbackSolution] = null,
     url: java.lang.String = null
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("excerpt")(excerpt)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(excerpt = excerpt, location = location, severity = severity.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (linterName != null) __obj.updateDynamic("linterName")(linterName)

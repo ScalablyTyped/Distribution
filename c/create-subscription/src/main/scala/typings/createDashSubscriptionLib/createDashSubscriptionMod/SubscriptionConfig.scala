@@ -28,9 +28,8 @@ object SubscriptionConfig {
     getCurrentValue: js.Function1[S, T],
     subscribe: js.Function2[S, js.Function1[/* newValue */ T, scala.Unit], Unsubscribe]
   ): SubscriptionConfig[S, T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentValue")(getCurrentValue)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(getCurrentValue = getCurrentValue, subscribe = subscribe)
+  
     __obj.asInstanceOf[SubscriptionConfig[S, T]]
   }
 }

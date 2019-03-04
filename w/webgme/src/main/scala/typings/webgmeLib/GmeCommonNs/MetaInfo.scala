@@ -15,11 +15,8 @@ trait MetaInfo extends js.Object {
 object MetaInfo {
   @scala.inline
   def apply(owner: webgmeLib.CoreNs.Node, ownerPath: Path, target: webgmeLib.CoreNs.Node, targetPath: Path): MetaInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("ownerPath")(ownerPath)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("targetPath")(targetPath)
+    val __obj = js.Dynamic.literal(owner = owner, ownerPath = ownerPath, target = target, targetPath = targetPath)
+  
     __obj.asInstanceOf[MetaInfo]
   }
 }

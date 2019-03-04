@@ -71,8 +71,7 @@ object RequestPinDetails {
       ]
     ] = null
   ): RequestPinDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signRequestId")(signRequestId)
+    val __obj = js.Dynamic.literal(signRequestId = signRequestId)
     if (attemptsLeft != null) __obj.updateDynamic("attemptsLeft")(attemptsLeft.asInstanceOf[js.Any])
     if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
     if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])

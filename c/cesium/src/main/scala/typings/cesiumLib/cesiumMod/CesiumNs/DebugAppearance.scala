@@ -25,18 +25,8 @@ object DebugAppearance {
     translucent: scala.Boolean,
     vertexShaderSource: java.lang.String
   ): DebugAppearance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName)
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
-    __obj.updateDynamic("getFragmentShaderSource")(getFragmentShaderSource)
-    __obj.updateDynamic("getRenderState")(getRenderState)
-    __obj.updateDynamic("glslDatatype")(glslDatatype)
-    __obj.updateDynamic("isTranslucent")(isTranslucent)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("renderState")(renderState)
-    __obj.updateDynamic("translucent")(translucent)
-    __obj.updateDynamic("vertexShaderSource")(vertexShaderSource)
+    val __obj = js.Dynamic.literal(attributeName = attributeName, closed = closed, fragmentShaderSource = fragmentShaderSource, getFragmentShaderSource = getFragmentShaderSource, getRenderState = getRenderState, glslDatatype = glslDatatype, isTranslucent = isTranslucent, material = material, renderState = renderState, translucent = translucent, vertexShaderSource = vertexShaderSource)
+  
     __obj.asInstanceOf[DebugAppearance]
   }
 }

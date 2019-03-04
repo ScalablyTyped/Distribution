@@ -20,9 +20,8 @@ object OperatorListDefinition {
     `type`: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.function | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.operator,
     params: js.Array[FunctionParam] = null
   ): OperatorListDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[OperatorListDefinition]
   }

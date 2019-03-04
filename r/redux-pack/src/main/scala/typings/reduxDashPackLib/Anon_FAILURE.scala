@@ -18,10 +18,8 @@ object Anon_FAILURE {
     START: reduxDashPackLib.reduxDashPackLibStrings.start,
     SUCCESS: reduxDashPackLib.reduxDashPackLibStrings.success
   ): Anon_FAILURE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FAILURE")(FAILURE)
-    __obj.updateDynamic("START")(START)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    val __obj = js.Dynamic.literal(FAILURE = FAILURE, START = START, SUCCESS = SUCCESS)
+  
     __obj.asInstanceOf[Anon_FAILURE]
   }
 }

@@ -65,8 +65,7 @@ object IdyllDocumentProps {
     onError: js.Function1[/* err */ stdLib.Error, scala.Unit] = null,
     theme: java.lang.String = null
   ): IdyllDocumentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("components")(components)
+    val __obj = js.Dynamic.literal(components = components)
     if (ast != null) __obj.updateDynamic("ast")(ast)
     if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
     if (context != null) __obj.updateDynamic("context")(context)

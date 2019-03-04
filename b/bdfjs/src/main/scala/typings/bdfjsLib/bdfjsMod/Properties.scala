@@ -64,10 +64,7 @@ object Properties {
     weightName: java.lang.String = null,
     xHeight: scala.Int | scala.Double = null
   ): Properties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultChar")(defaultChar)
-    __obj.updateDynamic("fontAscent")(fontAscent)
-    __obj.updateDynamic("fontDescent")(fontDescent)
+    val __obj = js.Dynamic.literal(defaultChar = defaultChar, fontAscent = fontAscent, fontDescent = fontDescent)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (addStyleName != null) __obj.updateDynamic("addStyleName")(addStyleName)
     if (averageWidth != null) __obj.updateDynamic("averageWidth")(averageWidth.asInstanceOf[js.Any])

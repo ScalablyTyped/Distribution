@@ -232,9 +232,7 @@ object GroupArgs {
     waitForCapacityTimeout: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     waitForElbCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): GroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
-    __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any])
     if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
     if (defaultCooldown != null) __obj.updateDynamic("defaultCooldown")(defaultCooldown.asInstanceOf[js.Any])
     if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])

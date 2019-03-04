@@ -22,10 +22,7 @@ object Anon_Alpha {
     antiAlias: js.UndefOr[scala.Boolean] = js.undefined,
     preseveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Alpha = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
-    __obj.updateDynamic("stencil")(stencil)
+    val __obj = js.Dynamic.literal(alpha = alpha, premultipliedAlpha = premultipliedAlpha, stencil = stencil)
     if (!js.isUndefined(antiAlias)) __obj.updateDynamic("antiAlias")(antiAlias)
     if (!js.isUndefined(preseveDrawingBuffer)) __obj.updateDynamic("preseveDrawingBuffer")(preseveDrawingBuffer)
     __obj.asInstanceOf[Anon_Alpha]

@@ -87,33 +87,8 @@ object XPropertyReplace {
     setSearchString: js.Function1[java.lang.String, scala.Unit],
     setValueSearch: js.Function1[scala.Boolean, scala.Unit]
   ): XPropertyReplace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ReplaceAttributes")(ReplaceAttributes)
-    __obj.updateDynamic("ReplaceString")(ReplaceString)
-    __obj.updateDynamic("SearchAttributes")(SearchAttributes)
-    __obj.updateDynamic("SearchString")(SearchString)
-    __obj.updateDynamic("ValueSearch")(ValueSearch)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getReplaceAttributes")(getReplaceAttributes)
-    __obj.updateDynamic("getReplaceString")(getReplaceString)
-    __obj.updateDynamic("getSearchAttributes")(getSearchAttributes)
-    __obj.updateDynamic("getSearchString")(getSearchString)
-    __obj.updateDynamic("getValueSearch")(getValueSearch)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setReplaceAttributes")(setReplaceAttributes)
-    __obj.updateDynamic("setReplaceString")(setReplaceString)
-    __obj.updateDynamic("setSearchAttributes")(setSearchAttributes)
-    __obj.updateDynamic("setSearchString")(setSearchString)
-    __obj.updateDynamic("setValueSearch")(setValueSearch)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, ReplaceAttributes = ReplaceAttributes, ReplaceString = ReplaceString, SearchAttributes = SearchAttributes, SearchString = SearchString, ValueSearch = ValueSearch, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getReplaceAttributes = getReplaceAttributes, getReplaceString = getReplaceString, getSearchAttributes = getSearchAttributes, getSearchString = getSearchString, getValueSearch = getValueSearch, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setReplaceAttributes = setReplaceAttributes, setReplaceString = setReplaceString, setSearchAttributes = setSearchAttributes, setSearchString = setSearchString, setValueSearch = setValueSearch)
+  
     __obj.asInstanceOf[XPropertyReplace]
   }
 }

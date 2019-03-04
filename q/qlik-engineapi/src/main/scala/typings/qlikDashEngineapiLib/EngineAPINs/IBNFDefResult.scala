@@ -22,9 +22,8 @@ trait IBNFDefResult extends js.Object {
 object IBNFDefResult {
   @scala.inline
   def apply(qBnfDefs: js.Array[IBNFDef], qBnfHash: java.lang.String): IBNFDefResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qBnfDefs")(qBnfDefs)
-    __obj.updateDynamic("qBnfHash")(qBnfHash)
+    val __obj = js.Dynamic.literal(qBnfDefs = qBnfDefs, qBnfHash = qBnfHash)
+  
     __obj.asInstanceOf[IBNFDefResult]
   }
 }

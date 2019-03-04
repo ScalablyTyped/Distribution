@@ -27,9 +27,7 @@ object Client {
     redirectUris: java.lang.String | js.Array[java.lang.String] = null,
     refreshTokenLifetime: scala.Int | scala.Double = null
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grants")(grants.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(grants = grants.asInstanceOf[js.Any], id = id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (accessTokenLifetime != null) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.asInstanceOf[js.Any])
     if (redirectUris != null) __obj.updateDynamic("redirectUris")(redirectUris.asInstanceOf[js.Any])

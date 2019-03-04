@@ -24,10 +24,8 @@ object ElevationResponse {
     results: js.Array[ElevationResult],
     status: ElevationResponseStatus
   ): ElevationResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error_message")(error_message)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(error_message = error_message, results = results, status = status)
+  
     __obj.asInstanceOf[ElevationResponse]
   }
 }

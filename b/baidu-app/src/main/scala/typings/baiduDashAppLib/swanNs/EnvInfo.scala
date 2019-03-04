@@ -26,12 +26,8 @@ object EnvInfo {
     scheme: java.lang.String,
     sdkVersion: java.lang.String
   ): EnvInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appKey")(appKey)
-    __obj.updateDynamic("appName")(appName)
-    __obj.updateDynamic("lastAppURL")(lastAppURL)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("sdkVersion")(sdkVersion)
+    val __obj = js.Dynamic.literal(appKey = appKey, appName = appName, lastAppURL = lastAppURL, scheme = scheme, sdkVersion = sdkVersion)
+  
     __obj.asInstanceOf[EnvInfo]
   }
 }

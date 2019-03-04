@@ -117,8 +117,8 @@ object ApplicationArgs {
       ]
     ] = null
   ): ApplicationArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (appSources != null) __obj.updateDynamic("appSources")(appSources.asInstanceOf[js.Any])
     if (autoBundleOnDeploy != null) __obj.updateDynamic("autoBundleOnDeploy")(autoBundleOnDeploy.asInstanceOf[js.Any])
     if (awsFlowRubySettings != null) __obj.updateDynamic("awsFlowRubySettings")(awsFlowRubySettings.asInstanceOf[js.Any])

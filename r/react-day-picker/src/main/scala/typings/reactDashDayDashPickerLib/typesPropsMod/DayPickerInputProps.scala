@@ -103,8 +103,7 @@ object DayPickerInputProps {
     showOverlay: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String | stdLib.Date = null
   ): DayPickerInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames)
     if (!js.isUndefined(clickUnselectsDay)) __obj.updateDynamic("clickUnselectsDay")(clickUnselectsDay)
     if (component != null) __obj.updateDynamic("component")(component)

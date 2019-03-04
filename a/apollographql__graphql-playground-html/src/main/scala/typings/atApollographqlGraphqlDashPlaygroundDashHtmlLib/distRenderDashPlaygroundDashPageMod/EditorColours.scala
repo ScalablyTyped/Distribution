@@ -54,27 +54,8 @@ object EditorColours {
     variable: java.lang.String,
     ws: java.lang.String
   ): EditorColours = {
-    val __obj = js.Dynamic.literal(`def` = `def`)
-    __obj.updateDynamic("atom")(atom)
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("builtin")(builtin)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("cursorColor")(cursorColor)
-    __obj.updateDynamic("editorBackground")(editorBackground)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("leftDrawerBackground")(leftDrawerBackground)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("punctuation")(punctuation)
-    __obj.updateDynamic("qualifier")(qualifier)
-    __obj.updateDynamic("resultBackground")(resultBackground)
-    __obj.updateDynamic("rightDrawerBackground")(rightDrawerBackground)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("string2")(string2)
-    __obj.updateDynamic("variable")(variable)
-    __obj.updateDynamic("ws")(ws)
+    val __obj = js.Dynamic.literal(atom = atom, attribute = attribute, builtin = builtin, comment = comment, cursorColor = cursorColor, editorBackground = editorBackground, keyword = keyword, leftDrawerBackground = leftDrawerBackground, meta = meta, number = number, property = property, punctuation = punctuation, qualifier = qualifier, resultBackground = resultBackground, rightDrawerBackground = rightDrawerBackground, selection = selection, string = string, string2 = string2, variable = variable, ws = ws)
+    __obj.updateDynamic("def")(`def`)
     __obj.asInstanceOf[EditorColours]
   }
 }

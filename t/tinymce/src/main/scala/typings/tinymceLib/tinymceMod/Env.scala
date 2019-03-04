@@ -40,21 +40,8 @@ object Env {
     transparentSrc: scala.Boolean,
     webKit: scala.Boolean
   ): Env = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("android")(android)
-    __obj.updateDynamic("ceFalse")(ceFalse)
-    __obj.updateDynamic("contentEditable")(contentEditable)
-    __obj.updateDynamic("documentMode")(documentMode)
-    __obj.updateDynamic("fileApi")(fileApi)
-    __obj.updateDynamic("gecko")(gecko)
-    __obj.updateDynamic("iOS")(iOS)
-    __obj.updateDynamic("ie")(ie)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("noCaretAfter")(noCaretAfter)
-    __obj.updateDynamic("opera")(opera)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("transparentSrc")(transparentSrc)
-    __obj.updateDynamic("webKit")(webKit)
+    val __obj = js.Dynamic.literal(android = android, ceFalse = ceFalse, contentEditable = contentEditable, documentMode = documentMode, fileApi = fileApi, gecko = gecko, iOS = iOS, ie = ie, mac = mac, noCaretAfter = noCaretAfter, opera = opera, range = range, transparentSrc = transparentSrc, webKit = webKit)
+  
     __obj.asInstanceOf[Env]
   }
 }

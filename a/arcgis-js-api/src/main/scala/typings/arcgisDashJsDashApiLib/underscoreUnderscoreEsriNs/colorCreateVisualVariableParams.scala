@@ -138,11 +138,7 @@ object colorCreateVisualVariableParams {
     view: View = null,
     worldScale: js.UndefOr[scala.Boolean] = js.undefined
   ): colorCreateVisualVariableParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
     if (field != null) __obj.updateDynamic("field")(field)

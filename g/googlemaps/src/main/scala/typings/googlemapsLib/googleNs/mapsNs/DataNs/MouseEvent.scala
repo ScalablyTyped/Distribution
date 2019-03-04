@@ -13,10 +13,8 @@ trait MouseEvent
 object MouseEvent {
   @scala.inline
   def apply(feature: Feature, latLng: googlemapsLib.googleNs.mapsNs.LatLng, stop: js.Function0[scala.Unit]): MouseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("feature")(feature)
-    __obj.updateDynamic("latLng")(latLng)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(feature = feature, latLng = latLng, stop = stop)
+  
     __obj.asInstanceOf[MouseEvent]
   }
 }

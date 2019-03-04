@@ -19,9 +19,8 @@ trait MapObj extends js.Object {
 object MapObj {
   @scala.inline
   def apply(geoJson: js.Object, specialAreas: js.Object): MapObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geoJson")(geoJson)
-    __obj.updateDynamic("specialAreas")(specialAreas)
+    val __obj = js.Dynamic.literal(geoJson = geoJson, specialAreas = specialAreas)
+  
     __obj.asInstanceOf[MapObj]
   }
 }

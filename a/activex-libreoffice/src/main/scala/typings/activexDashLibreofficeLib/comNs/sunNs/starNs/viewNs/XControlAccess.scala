@@ -26,11 +26,8 @@ object XControlAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XControlAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getControl = getControl, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XControlAccess]
   }
 }

@@ -13,9 +13,8 @@ trait TextChangeRange extends js.Object {
 object TextChangeRange {
   @scala.inline
   def apply(newLength: scala.Double, span: TextSpan): TextChangeRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newLength")(newLength)
-    __obj.updateDynamic("span")(span)
+    val __obj = js.Dynamic.literal(newLength = newLength, span = span)
+  
     __obj.asInstanceOf[TextChangeRange]
   }
 }

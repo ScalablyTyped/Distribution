@@ -18,10 +18,8 @@ object Anon_CONFLICTING {
     PENDING: chromeDashAppsLib.chromeDashAppsLibStrings.pending,
     SYNCED: chromeDashAppsLib.chromeDashAppsLibStrings.synced
   ): Anon_CONFLICTING = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CONFLICTING")(CONFLICTING)
-    __obj.updateDynamic("PENDING")(PENDING)
-    __obj.updateDynamic("SYNCED")(SYNCED)
+    val __obj = js.Dynamic.literal(CONFLICTING = CONFLICTING, PENDING = PENDING, SYNCED = SYNCED)
+  
     __obj.asInstanceOf[Anon_CONFLICTING]
   }
 }

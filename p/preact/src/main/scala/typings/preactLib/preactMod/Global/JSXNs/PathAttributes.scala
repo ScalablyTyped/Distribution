@@ -12,8 +12,8 @@ trait PathAttributes extends js.Object {
 object PathAttributes {
   @scala.inline
   def apply(d: java.lang.String): PathAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
+    val __obj = js.Dynamic.literal(d = d)
+  
     __obj.asInstanceOf[PathAttributes]
   }
 }

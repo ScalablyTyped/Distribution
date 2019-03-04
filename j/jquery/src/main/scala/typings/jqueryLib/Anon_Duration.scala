@@ -16,8 +16,8 @@ trait Anon_Duration
 object Anon_Duration {
   @scala.inline
   def apply(duration: jqueryLib.JQueryNs.Duration): Anon_Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Duration]
   }
 }

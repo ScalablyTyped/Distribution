@@ -26,10 +26,8 @@ trait SurvivalGameInfo extends js.Object {
 object SurvivalGameInfo {
   @scala.inline
   def apply(score: scala.Double, timeToWave: scala.Double, wave: scala.Double): SurvivalGameInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("timeToWave")(timeToWave)
-    __obj.updateDynamic("wave")(wave)
+    val __obj = js.Dynamic.literal(score = score, timeToWave = timeToWave, wave = wave)
+  
     __obj.asInstanceOf[SurvivalGameInfo]
   }
 }

@@ -28,15 +28,8 @@ object Device {
     uuid: java.lang.String,
     version: java.lang.String
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("capture")(capture)
-    __obj.updateDynamic("cordova")(cordova)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(available = available, capture = capture, cordova = cordova, model = model, name = name, platform = platform, uuid = uuid, version = version)
+  
     __obj.asInstanceOf[Device]
   }
 }

@@ -21,8 +21,7 @@ trait Anon_Account extends js.Object {
 object Anon_Account {
   @scala.inline
   def apply(account: java.lang.String, amount: scala.Int | scala.Double = null): Anon_Account = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account")(account)
+    val __obj = js.Dynamic.literal(account = account)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Account]
   }

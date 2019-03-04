@@ -18,8 +18,7 @@ object OffsetFetchRequest {
     offset: scala.Int | scala.Double = null,
     partition: scala.Int | scala.Double = null
   ): OffsetFetchRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(topic = topic)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
     __obj.asInstanceOf[OffsetFetchRequest]

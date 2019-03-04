@@ -34,13 +34,8 @@ object AliasResult {
     name: java.lang.String = null,
     scope: java.lang.String = null
   ): AliasResult = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fetchSpec")(fetchSpec)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawSpec")(rawSpec)
-    __obj.updateDynamic("registry")(registry)
-    __obj.updateDynamic("saveSpec")(saveSpec)
-    __obj.updateDynamic("subSpec")(subSpec)
+    val __obj = js.Dynamic.literal(fetchSpec = fetchSpec, raw = raw, rawSpec = rawSpec, registry = registry, saveSpec = saveSpec, subSpec = subSpec)
+    __obj.updateDynamic("type")(`type`)
     if (escapedName != null) __obj.updateDynamic("escapedName")(escapedName)
     if (gitCommittish != null) __obj.updateDynamic("gitCommittish")(gitCommittish)
     if (gitRange != null) __obj.updateDynamic("gitRange")(gitRange)

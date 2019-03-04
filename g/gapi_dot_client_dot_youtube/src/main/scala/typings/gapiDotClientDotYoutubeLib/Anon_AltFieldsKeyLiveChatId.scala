@@ -51,9 +51,7 @@ object Anon_AltFieldsKeyLiveChatId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyLiveChatId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("liveChatId")(liveChatId)
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(liveChatId = liveChatId, part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

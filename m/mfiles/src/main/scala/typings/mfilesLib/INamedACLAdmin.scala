@@ -20,11 +20,8 @@ object INamedACLAdmin {
     NamedACL: INamedACL,
     SemanticAliases: ISemanticAliases
   ): INamedACLAdmin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlListForNamedACL")(AccessControlListForNamedACL)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("NamedACL")(NamedACL)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
+    val __obj = js.Dynamic.literal(AccessControlListForNamedACL = AccessControlListForNamedACL, Clone = Clone, NamedACL = NamedACL, SemanticAliases = SemanticAliases)
+  
     __obj.asInstanceOf[INamedACLAdmin]
   }
 }

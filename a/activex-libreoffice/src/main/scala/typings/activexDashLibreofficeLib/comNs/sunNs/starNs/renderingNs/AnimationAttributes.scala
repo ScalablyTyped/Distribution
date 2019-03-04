@@ -35,10 +35,8 @@ object AnimationAttributes {
     RepeatMode: scala.Double,
     UntransformedSize: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D
   ): AnimationAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Duration")(Duration)
-    __obj.updateDynamic("RepeatMode")(RepeatMode)
-    __obj.updateDynamic("UntransformedSize")(UntransformedSize)
+    val __obj = js.Dynamic.literal(Duration = Duration, RepeatMode = RepeatMode, UntransformedSize = UntransformedSize)
+  
     __obj.asInstanceOf[AnimationAttributes]
   }
 }

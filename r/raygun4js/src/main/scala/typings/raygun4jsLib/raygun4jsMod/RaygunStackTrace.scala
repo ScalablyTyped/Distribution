@@ -22,12 +22,8 @@ object RaygunStackTrace {
     LineNumber: scala.Double,
     MethodName: java.lang.String
   ): RaygunStackTrace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClassName")(ClassName)
-    __obj.updateDynamic("ColumnNumber")(ColumnNumber)
-    __obj.updateDynamic("FileName")(FileName)
-    __obj.updateDynamic("LineNumber")(LineNumber)
-    __obj.updateDynamic("MethodName")(MethodName)
+    val __obj = js.Dynamic.literal(ClassName = ClassName, ColumnNumber = ColumnNumber, FileName = FileName, LineNumber = LineNumber, MethodName = MethodName)
+  
     __obj.asInstanceOf[RaygunStackTrace]
   }
 }

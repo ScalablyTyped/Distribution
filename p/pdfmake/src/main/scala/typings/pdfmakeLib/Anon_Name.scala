@@ -16,8 +16,7 @@ object Anon_Name {
     vfs: js.Any,
     StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vfs")(vfs)
+    val __obj = js.Dynamic.literal(vfs = vfs)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Name]
   }

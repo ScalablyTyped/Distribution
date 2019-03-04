@@ -17,7 +17,7 @@ trait WikitudePlugin extends js.Object {
   var FeatureGeo: java.lang.String = js.native
   var _sdkKey: java.lang.String = js.native
   // test type ok?
-  def callJavaScript(`js_`: js.Any): scala.Unit = js.native
+  def callJavaScript(js_ : js.Any): scala.Unit = js.native
   def captureScreen(
     successCallback: js.Function1[/* success */ java.lang.String, scala.Unit],
     errorCallback: js.Function1[/* message */ java.lang.String, scala.Unit],

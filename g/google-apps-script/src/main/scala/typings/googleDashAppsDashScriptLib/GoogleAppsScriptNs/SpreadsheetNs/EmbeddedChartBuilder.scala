@@ -76,29 +76,8 @@ object EmbeddedChartBuilder {
     ],
     setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder]
   ): EmbeddedChartBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRange")(addRange)
-    __obj.updateDynamic("asAreaChart")(asAreaChart)
-    __obj.updateDynamic("asBarChart")(asBarChart)
-    __obj.updateDynamic("asColumnChart")(asColumnChart)
-    __obj.updateDynamic("asComboChart")(asComboChart)
-    __obj.updateDynamic("asHistogramChart")(asHistogramChart)
-    __obj.updateDynamic("asLineChart")(asLineChart)
-    __obj.updateDynamic("asPieChart")(asPieChart)
-    __obj.updateDynamic("asScatterChart")(asScatterChart)
-    __obj.updateDynamic("asTableChart")(asTableChart)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("getChartType")(getChartType)
-    __obj.updateDynamic("getContainer")(getContainer)
-    __obj.updateDynamic("getRanges")(getRanges)
-    __obj.updateDynamic("removeRange")(removeRange)
-    __obj.updateDynamic("setChartType")(setChartType)
-    __obj.updateDynamic("setHiddenDimensionStrategy")(setHiddenDimensionStrategy)
-    __obj.updateDynamic("setMergeStrategy")(setMergeStrategy)
-    __obj.updateDynamic("setNumHeaders")(setNumHeaders)
-    __obj.updateDynamic("setOption")(setOption)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setTransposeRowsAndColumns")(setTransposeRowsAndColumns)
+    val __obj = js.Dynamic.literal(addRange = addRange, asAreaChart = asAreaChart, asBarChart = asBarChart, asColumnChart = asColumnChart, asComboChart = asComboChart, asHistogramChart = asHistogramChart, asLineChart = asLineChart, asPieChart = asPieChart, asScatterChart = asScatterChart, asTableChart = asTableChart, build = build, getChartType = getChartType, getContainer = getContainer, getRanges = getRanges, removeRange = removeRange, setChartType = setChartType, setHiddenDimensionStrategy = setHiddenDimensionStrategy, setMergeStrategy = setMergeStrategy, setNumHeaders = setNumHeaders, setOption = setOption, setPosition = setPosition, setTransposeRowsAndColumns = setTransposeRowsAndColumns)
+  
     __obj.asInstanceOf[EmbeddedChartBuilder]
   }
 }

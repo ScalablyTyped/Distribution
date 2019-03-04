@@ -14,9 +14,8 @@ trait ICustomControlOption extends js.Object {
 object ICustomControlOption {
   @scala.inline
   def apply(label: java.lang.String, value: java.lang.String): ICustomControlOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(label = label, value = value)
+  
     __obj.asInstanceOf[ICustomControlOption]
   }
 }

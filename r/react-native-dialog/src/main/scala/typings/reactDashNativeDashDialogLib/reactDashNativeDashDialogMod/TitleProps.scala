@@ -12,8 +12,8 @@ trait TitleProps extends js.Object {
 object TitleProps {
   @scala.inline
   def apply(children: java.lang.String): TitleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[TitleProps]
   }
 }

@@ -21,13 +21,8 @@ object CsvUpload {
     preview: js.Function0[scala.Unit],
     setFileName: js.Function1[java.lang.String, CsvUpload]
   ): CsvUpload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("forCampaignManagement")(forCampaignManagement)
-    __obj.updateDynamic("forOfflineConversions")(forOfflineConversions)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("setFileName")(setFileName)
+    val __obj = js.Dynamic.literal(append = append, apply = apply, forCampaignManagement = forCampaignManagement, forOfflineConversions = forOfflineConversions, preview = preview, setFileName = setFileName)
+  
     __obj.asInstanceOf[CsvUpload]
   }
 }

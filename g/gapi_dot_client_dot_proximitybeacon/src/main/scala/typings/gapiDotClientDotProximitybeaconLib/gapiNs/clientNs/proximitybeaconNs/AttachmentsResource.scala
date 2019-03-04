@@ -87,11 +87,8 @@ object AttachmentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
     ]
   ): AttachmentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchDelete")(batchDelete)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(batchDelete = batchDelete, create = create, delete = delete, list = list)
+  
     __obj.asInstanceOf[AttachmentsResource]
   }
 }

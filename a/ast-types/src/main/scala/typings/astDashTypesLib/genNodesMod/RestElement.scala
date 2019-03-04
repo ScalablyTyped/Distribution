@@ -23,8 +23,8 @@ object RestElement {
     `type`: astDashTypesLib.astDashTypesLibStrings.RestElement,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): RestElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
+    __obj.updateDynamic("type")(`type`)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestElement]
   }

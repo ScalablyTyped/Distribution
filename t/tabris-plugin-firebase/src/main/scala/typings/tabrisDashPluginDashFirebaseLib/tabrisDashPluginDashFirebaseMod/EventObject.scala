@@ -15,9 +15,8 @@ trait EventObject[T] extends js.Object {
 object EventObject {
   @scala.inline
   def apply[T](target: T, timeStamp: scala.Double, `type`: java.lang.String): EventObject[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any], timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EventObject[T]]
   }
 }

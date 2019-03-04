@@ -13,9 +13,8 @@ trait DeploymentJob extends js.Object {
 object DeploymentJob {
   @scala.inline
   def apply(job: ReleaseTask, tasks: js.Array[ReleaseTask]): DeploymentJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("job")(job)
-    __obj.updateDynamic("tasks")(tasks)
+    val __obj = js.Dynamic.literal(job = job, tasks = tasks)
+  
     __obj.asInstanceOf[DeploymentJob]
   }
 }

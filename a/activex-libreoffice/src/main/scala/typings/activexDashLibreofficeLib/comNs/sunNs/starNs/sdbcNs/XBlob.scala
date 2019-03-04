@@ -82,16 +82,8 @@ object XBlob {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XBlob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BinaryStream")(BinaryStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getBinaryStream")(getBinaryStream)
-    __obj.updateDynamic("getBytes")(getBytes)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("positionOfBlob")(positionOfBlob)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(BinaryStream = BinaryStream, acquire = acquire, getBinaryStream = getBinaryStream, getBytes = getBytes, length = length, position = position, positionOfBlob = positionOfBlob, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XBlob]
   }
 }

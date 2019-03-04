@@ -13,9 +13,8 @@ trait Anon_Locals extends js.Object {
 object Anon_Locals {
   @scala.inline
   def apply(locals: js.Any, view: java.lang.String): Anon_Locals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locals")(locals)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(locals = locals, view = view)
+  
     __obj.asInstanceOf[Anon_Locals]
   }
 }

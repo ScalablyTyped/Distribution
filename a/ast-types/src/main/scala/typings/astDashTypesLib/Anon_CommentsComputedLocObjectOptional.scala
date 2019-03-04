@@ -24,8 +24,8 @@ object Anon_CommentsComputedLocObjectOptional {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     optional: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CommentsComputedLocObjectOptional = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (loc != null) __obj.updateDynamic("loc")(loc)

@@ -40,21 +40,8 @@ object IExportContentJob {
     UseIgnoreChangesBefore: scala.Boolean,
     UseSearchConditions: scala.Boolean
   ): IExportContentJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ExportContent")(ExportContent)
-    __obj.updateDynamic("ExportStructureItems")(ExportStructureItems)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("IgnoreChangesBefore")(IgnoreChangesBefore)
-    __obj.updateDynamic("Impersonation")(Impersonation)
-    __obj.updateDynamic("IncludePrivateUISettingsWithStructure")(IncludePrivateUISettingsWithStructure)
-    __obj.updateDynamic("IncludeValueListItemsWithStructure")(IncludeValueListItemsWithStructure)
-    __obj.updateDynamic("SearchConditions")(SearchConditions)
-    __obj.updateDynamic("SetExportAllStructureItems")(SetExportAllStructureItems)
-    __obj.updateDynamic("StructureItems")(StructureItems)
-    __obj.updateDynamic("TargetLocation")(TargetLocation)
-    __obj.updateDynamic("UseIgnoreChangesBefore")(UseIgnoreChangesBefore)
-    __obj.updateDynamic("UseSearchConditions")(UseSearchConditions)
+    val __obj = js.Dynamic.literal(Clone = Clone, ExportContent = ExportContent, ExportStructureItems = ExportStructureItems, Flags = Flags, IgnoreChangesBefore = IgnoreChangesBefore, Impersonation = Impersonation, IncludePrivateUISettingsWithStructure = IncludePrivateUISettingsWithStructure, IncludeValueListItemsWithStructure = IncludeValueListItemsWithStructure, SearchConditions = SearchConditions, SetExportAllStructureItems = SetExportAllStructureItems, StructureItems = StructureItems, TargetLocation = TargetLocation, UseIgnoreChangesBefore = UseIgnoreChangesBefore, UseSearchConditions = UseSearchConditions)
+  
     __obj.asInstanceOf[IExportContentJob]
   }
 }

@@ -41,8 +41,7 @@ object ISpatialFilterOptions {
     radius: scala.Int | scala.Double = null,
     start: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null
   ): ISpatialFilterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("spatialFilterType")(spatialFilterType)
+    val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])

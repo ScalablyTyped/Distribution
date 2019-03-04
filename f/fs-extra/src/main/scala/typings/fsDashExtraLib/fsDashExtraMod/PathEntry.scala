@@ -13,9 +13,8 @@ trait PathEntry extends js.Object {
 object PathEntry {
   @scala.inline
   def apply(path: java.lang.String, stats: nodeLib.fsMod.Stats): PathEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(path = path, stats = stats)
+  
     __obj.asInstanceOf[PathEntry]
   }
 }

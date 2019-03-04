@@ -26,14 +26,8 @@ object ISearchDef {
     ReturnLatestVisibleVersion: scala.Boolean,
     SearchFlags: mfilesLib.MFilesNs.MFSearchFlags
   ): ISearchDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Conditions")(Conditions)
-    __obj.updateDynamic("IsIndirectionUsed")(IsIndirectionUsed)
-    __obj.updateDynamic("Levels")(Levels)
-    __obj.updateDynamic("LookInAllVersions")(LookInAllVersions)
-    __obj.updateDynamic("ReturnLatestVisibleVersion")(ReturnLatestVisibleVersion)
-    __obj.updateDynamic("SearchFlags")(SearchFlags)
+    val __obj = js.Dynamic.literal(Clone = Clone, Conditions = Conditions, IsIndirectionUsed = IsIndirectionUsed, Levels = Levels, LookInAllVersions = LookInAllVersions, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchFlags = SearchFlags)
+  
     __obj.asInstanceOf[ISearchDef]
   }
 }

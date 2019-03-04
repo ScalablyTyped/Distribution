@@ -37,13 +37,8 @@ object ThemeManager {
     getLoadedThemes: js.Function0[js.UndefOr[js.Array[Package]]],
     onDidChangeActiveThemes: js.Function1[js.Function0[scala.Unit], Disposable]
   ): ThemeManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActiveThemeNames")(getActiveThemeNames)
-    __obj.updateDynamic("getActiveThemes")(getActiveThemes)
-    __obj.updateDynamic("getEnabledThemeNames")(getEnabledThemeNames)
-    __obj.updateDynamic("getLoadedThemeNames")(getLoadedThemeNames)
-    __obj.updateDynamic("getLoadedThemes")(getLoadedThemes)
-    __obj.updateDynamic("onDidChangeActiveThemes")(onDidChangeActiveThemes)
+    val __obj = js.Dynamic.literal(getActiveThemeNames = getActiveThemeNames, getActiveThemes = getActiveThemes, getEnabledThemeNames = getEnabledThemeNames, getLoadedThemeNames = getLoadedThemeNames, getLoadedThemes = getLoadedThemes, onDidChangeActiveThemes = onDidChangeActiveThemes)
+  
     __obj.asInstanceOf[ThemeManager]
   }
 }

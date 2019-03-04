@@ -18,10 +18,8 @@ object Anon_Acls {
     defaultPermission: loopbackLib.loopbackLibStrings.DENY,
     http: Anon_Path
   ): Anon_Acls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acls")(acls)
-    __obj.updateDynamic("defaultPermission")(defaultPermission)
-    __obj.updateDynamic("http")(http)
+    val __obj = js.Dynamic.literal(acls = acls, defaultPermission = defaultPermission, http = http)
+  
     __obj.asInstanceOf[Anon_Acls]
   }
 }

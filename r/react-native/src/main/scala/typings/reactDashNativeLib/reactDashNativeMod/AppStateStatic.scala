@@ -25,10 +25,8 @@ object AppStateStatic {
     currentState: AppStateStatus,
     removeEventListener: js.Function2[AppStateEvent, js.Function1[/* state */ AppStateStatus, scala.Unit], scala.Unit]
   ): AppStateStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("currentState")(currentState)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, currentState = currentState, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[AppStateStatic]
   }
 }

@@ -36,9 +36,8 @@ object MessageStatus {
     `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.MessageEventType,
     resource: java.lang.String = null
   ): MessageStatus = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message_id")(message_id)
+    val __obj = js.Dynamic.literal(id = id, message_id = message_id)
+    __obj.updateDynamic("type")(`type`)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[MessageStatus]
   }

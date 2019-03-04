@@ -22,9 +22,7 @@ object CP$Module {
     NumberDictionary: /** Codepage Converters */
   /* cp */ org.scalablytyped.runtime.NumberDictionary[CP$Conv] = null
   ): CP$Module = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(utils = utils, version = version)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[CP$Module]
   }

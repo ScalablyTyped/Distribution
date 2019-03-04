@@ -104,18 +104,8 @@ object XConnectionPoint {
     release: js.Function0[scala.Unit],
     unadvise: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XConnectionPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectionPointContainer")(ConnectionPointContainer)
-    __obj.updateDynamic("ConnectionType")(ConnectionType)
-    __obj.updateDynamic("Connections")(Connections)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("advise")(advise)
-    __obj.updateDynamic("getConnectionPointContainer")(getConnectionPointContainer)
-    __obj.updateDynamic("getConnectionType")(getConnectionType)
-    __obj.updateDynamic("getConnections")(getConnections)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("unadvise")(unadvise)
+    val __obj = js.Dynamic.literal(ConnectionPointContainer = ConnectionPointContainer, ConnectionType = ConnectionType, Connections = Connections, acquire = acquire, advise = advise, getConnectionPointContainer = getConnectionPointContainer, getConnectionType = getConnectionType, getConnections = getConnections, queryInterface = queryInterface, release = release, unadvise = unadvise)
+  
     __obj.asInstanceOf[XConnectionPoint]
   }
 }

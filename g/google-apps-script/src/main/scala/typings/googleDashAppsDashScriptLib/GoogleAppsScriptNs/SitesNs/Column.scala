@@ -20,11 +20,8 @@ object Column {
     getParent: js.Function0[Page],
     setName: js.Function1[java.lang.String, Column]
   ): Column = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteColumn")(deleteColumn)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(deleteColumn = deleteColumn, getName = getName, getParent = getParent, setName = setName)
+  
     __obj.asInstanceOf[Column]
   }
 }

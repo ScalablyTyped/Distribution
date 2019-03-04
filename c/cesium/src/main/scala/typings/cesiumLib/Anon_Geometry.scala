@@ -18,8 +18,7 @@ object Anon_Geometry {
     length: scala.Int | scala.Double = null,
     modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null
   ): Anon_Geometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geometry")(geometry)
+    val __obj = js.Dynamic.literal(geometry = geometry)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
     __obj.asInstanceOf[Anon_Geometry]

@@ -16,8 +16,7 @@ trait CurrencyFormat extends js.Object {
 object CurrencyFormat {
   @scala.inline
   def apply(pos: java.lang.String, neg: java.lang.String = null, zero: java.lang.String = null): CurrencyFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(pos = pos)
     if (neg != null) __obj.updateDynamic("neg")(neg)
     if (zero != null) __obj.updateDynamic("zero")(zero)
     __obj.asInstanceOf[CurrencyFormat]

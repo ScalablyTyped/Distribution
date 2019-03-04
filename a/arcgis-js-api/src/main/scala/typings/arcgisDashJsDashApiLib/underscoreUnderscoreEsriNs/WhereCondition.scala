@@ -37,13 +37,8 @@ object WhereCondition {
     operator: java.lang.String,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): WhereCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compareValue")(compareValue)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(compareValue = compareValue, constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, operator = operator, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[WhereCondition]
   }
 }

@@ -14,8 +14,7 @@ trait Anon_Contents
 object Anon_Contents {
   @scala.inline
   def apply(contents: java.lang.String, file: java.lang.String = null): Anon_Contents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
+    val __obj = js.Dynamic.literal(contents = contents)
     if (file != null) __obj.updateDynamic("file")(file)
     __obj.asInstanceOf[Anon_Contents]
   }

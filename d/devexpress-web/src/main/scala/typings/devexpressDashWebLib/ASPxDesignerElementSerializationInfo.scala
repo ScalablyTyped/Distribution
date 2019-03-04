@@ -87,19 +87,8 @@ object ASPxDesignerElementSerializationInfo {
     valuesArray: js.Array[ASPxDesignerElementEditorItem],
     visible: js.Object
   ): ASPxDesignerElementSerializationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("defaultVal")(defaultVal)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("propertyName")(propertyName)
-    __obj.updateDynamic("validationRules")(validationRules)
-    __obj.updateDynamic("valuesArray")(valuesArray)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(array = array, defaultVal = defaultVal, disabled = disabled, displayName = displayName, editor = editor, info = info, link = link, modelName = modelName, propertyName = propertyName, validationRules = validationRules, valuesArray = valuesArray, visible = visible)
+  
     __obj.asInstanceOf[ASPxDesignerElementSerializationInfo]
   }
 }

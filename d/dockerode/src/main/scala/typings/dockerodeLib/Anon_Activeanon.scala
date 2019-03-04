@@ -70,36 +70,8 @@ object Anon_Activeanon {
     unevictable: scala.Double,
     writeback: scala.Double
   ): Anon_Activeanon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active_anon")(active_anon)
-    __obj.updateDynamic("active_file")(active_file)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("hierarchical_memory_limit")(hierarchical_memory_limit)
-    __obj.updateDynamic("inactive_anon")(inactive_anon)
-    __obj.updateDynamic("inactive_file")(inactive_file)
-    __obj.updateDynamic("mapped_file")(mapped_file)
-    __obj.updateDynamic("pgfault")(pgfault)
-    __obj.updateDynamic("pgmajfault")(pgmajfault)
-    __obj.updateDynamic("pgpgin")(pgpgin)
-    __obj.updateDynamic("pgpgout")(pgpgout)
-    __obj.updateDynamic("rss")(rss)
-    __obj.updateDynamic("rss_huge")(rss_huge)
-    __obj.updateDynamic("total_active_anon")(total_active_anon)
-    __obj.updateDynamic("total_active_file")(total_active_file)
-    __obj.updateDynamic("total_cache")(total_cache)
-    __obj.updateDynamic("total_inactive_anon")(total_inactive_anon)
-    __obj.updateDynamic("total_inactive_file")(total_inactive_file)
-    __obj.updateDynamic("total_mapped_file")(total_mapped_file)
-    __obj.updateDynamic("total_pgfault")(total_pgfault)
-    __obj.updateDynamic("total_pgmajfault")(total_pgmajfault)
-    __obj.updateDynamic("total_pgpgin")(total_pgpgin)
-    __obj.updateDynamic("total_pgpgout")(total_pgpgout)
-    __obj.updateDynamic("total_rss")(total_rss)
-    __obj.updateDynamic("total_rss_huge")(total_rss_huge)
-    __obj.updateDynamic("total_unevictable")(total_unevictable)
-    __obj.updateDynamic("total_writeback")(total_writeback)
-    __obj.updateDynamic("unevictable")(unevictable)
-    __obj.updateDynamic("writeback")(writeback)
+    val __obj = js.Dynamic.literal(active_anon = active_anon, active_file = active_file, cache = cache, hierarchical_memory_limit = hierarchical_memory_limit, inactive_anon = inactive_anon, inactive_file = inactive_file, mapped_file = mapped_file, pgfault = pgfault, pgmajfault = pgmajfault, pgpgin = pgpgin, pgpgout = pgpgout, rss = rss, rss_huge = rss_huge, total_active_anon = total_active_anon, total_active_file = total_active_file, total_cache = total_cache, total_inactive_anon = total_inactive_anon, total_inactive_file = total_inactive_file, total_mapped_file = total_mapped_file, total_pgfault = total_pgfault, total_pgmajfault = total_pgmajfault, total_pgpgin = total_pgpgin, total_pgpgout = total_pgpgout, total_rss = total_rss, total_rss_huge = total_rss_huge, total_unevictable = total_unevictable, total_writeback = total_writeback, unevictable = unevictable, writeback = writeback)
+  
     __obj.asInstanceOf[Anon_Activeanon]
   }
 }

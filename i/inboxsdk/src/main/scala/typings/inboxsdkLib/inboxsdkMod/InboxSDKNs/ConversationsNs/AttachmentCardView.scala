@@ -30,13 +30,7 @@ object AttachmentCardView {
     getTitle: js.Function0[java.lang.String],
     on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit]
   ): AttachmentCardView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addButton")(addButton)
-    __obj.updateDynamic("destroyed")(destroyed)
-    __obj.updateDynamic("getAttachmentType")(getAttachmentType)
-    __obj.updateDynamic("getDownloadURL")(getDownloadURL)
-    __obj.updateDynamic("getMessageView")(getMessageView)
-    __obj.updateDynamic("getTitle")(getTitle)
+    val __obj = js.Dynamic.literal(addButton = addButton, destroyed = destroyed, getAttachmentType = getAttachmentType, getDownloadURL = getDownloadURL, getMessageView = getMessageView, getTitle = getTitle)
     __obj.updateDynamic("on")(on_destroy)
     __obj.asInstanceOf[AttachmentCardView]
   }

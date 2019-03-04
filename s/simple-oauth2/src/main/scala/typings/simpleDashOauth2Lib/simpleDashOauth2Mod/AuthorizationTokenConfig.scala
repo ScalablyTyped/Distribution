@@ -15,9 +15,8 @@ trait AuthorizationTokenConfig extends js.Object {
 object AuthorizationTokenConfig {
   @scala.inline
   def apply(code: AuthorizationCode, redirect_uri: java.lang.String): AuthorizationTokenConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("redirect_uri")(redirect_uri)
+    val __obj = js.Dynamic.literal(code = code, redirect_uri = redirect_uri)
+  
     __obj.asInstanceOf[AuthorizationTokenConfig]
   }
 }

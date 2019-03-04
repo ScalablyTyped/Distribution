@@ -24,16 +24,8 @@ object LockConstraint {
     `type`: scala.Double,
     update: js.Function0[scala.Unit]
   ): LockConstraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("collideConnected")(collideConnected)
-    __obj.updateDynamic("equeations")(equeations)
-    __obj.updateDynamic("getMaxForce")(getMaxForce)
-    __obj.updateDynamic("setMaxForce")(setMaxForce)
-    __obj.updateDynamic("setRelaxation")(setRelaxation)
-    __obj.updateDynamic("setStiffness")(setStiffness)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, getMaxForce = getMaxForce, setMaxForce = setMaxForce, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LockConstraint]
   }
 }

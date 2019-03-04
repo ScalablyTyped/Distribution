@@ -31,11 +31,8 @@ object GluePoint {
     Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
     PositionAbsolute: scala.Boolean
   ): GluePoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("EscapeDirection")(EscapeDirection)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PositionAbsolute")(PositionAbsolute)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, EscapeDirection = EscapeDirection, Position = Position, PositionAbsolute = PositionAbsolute)
+  
     __obj.asInstanceOf[GluePoint]
   }
 }

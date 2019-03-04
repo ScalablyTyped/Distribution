@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- ecolLib.libBasicICollectionMod.ICollection because Inheritance from two classes */ @JSImport("ecol/lib/sets/HashMultiSetCollection", "HashMultiSetCollection")
+- ecolLib.libBasicICollectionMod.ICollection because Inheritance from two classes. Inlined refresh, refresh, refresh */ @JSImport("ecol/lib/sets/HashMultiSetCollection", "HashMultiSetCollection")
 @js.native
 class HashMultiSetCollection[T] ()
   extends tstlLib.containerHashMultiSetMod.HashMultiSet[T] {
   /**
     * @hidden
     */
-  var `dispatcher_`: js.Any = js.native
+  var dispatcher_ : js.Any = js.native
   /**
     * @inheritDoc
     */

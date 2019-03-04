@@ -26,9 +26,8 @@ object ChatRoomParticipants {
     participants: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatRoomParticipant],
     room: java.lang.String
   ): ChatRoomParticipants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("participants")(participants)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(participants = participants, room = room)
+  
     __obj.asInstanceOf[ChatRoomParticipants]
   }
 }

@@ -25,14 +25,8 @@ object ICustomArray {
     ref: java.lang.String,
     `type`: java.lang.String
   ): ICustomArray = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addTranslation")(addTranslation)
-    __obj.updateDynamic("allowAdd")(allowAdd)
-    __obj.updateDynamic("allowMove")(allowMove)
-    __obj.updateDynamic("allowRemove")(allowRemove)
-    __obj.updateDynamic("itemTitleRef")(itemTitleRef)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(addTranslation = addTranslation, allowAdd = allowAdd, allowMove = allowMove, allowRemove = allowRemove, itemTitleRef = itemTitleRef, label = label, ref = ref)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomArray]
   }
 }

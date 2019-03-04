@@ -32,17 +32,8 @@ object Metadata {
     track: NoOf,
     year: java.lang.String
   ): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("album")(album)
-    __obj.updateDynamic("albumartist")(albumartist)
-    __obj.updateDynamic("artist")(artist)
-    __obj.updateDynamic("disk")(disk)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("genre")(genre)
-    __obj.updateDynamic("picture")(picture)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("track")(track)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(album = album, albumartist = albumartist, artist = artist, disk = disk, duration = duration, genre = genre, picture = picture, title = title, track = track, year = year)
+  
     __obj.asInstanceOf[Metadata]
   }
 }

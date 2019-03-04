@@ -25,9 +25,7 @@ object Proxy {
     protocol: Protocol = null,
     protocols: js.Array[Protocol] = null
   ): Proxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ipAddress")(ipAddress)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(ipAddress = ipAddress, port = port)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     if (protocols != null) __obj.updateDynamic("protocols")(protocols)

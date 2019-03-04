@@ -24,8 +24,7 @@ object ServerRegistration {
     onHealthCheck: js.Function1[/* req */ expressLib.expressMod.eNs.Request, js.Promise[_]] = null,
     path: java.lang.String = null
   ): ServerRegistration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
+    val __obj = js.Dynamic.literal(app = app)
     if (bodyParserConfig != null) __obj.updateDynamic("bodyParserConfig")(bodyParserConfig.asInstanceOf[js.Any])
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
     if (!js.isUndefined(disableHealthCheck)) __obj.updateDynamic("disableHealthCheck")(disableHealthCheck)

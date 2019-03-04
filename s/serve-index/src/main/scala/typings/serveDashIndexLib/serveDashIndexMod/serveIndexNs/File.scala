@@ -13,9 +13,8 @@ trait File extends js.Object {
 object File {
   @scala.inline
   def apply(name: java.lang.String, stat: nodeLib.fsMod.Stats): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stat")(stat)
+    val __obj = js.Dynamic.literal(name = name, stat = stat)
+  
     __obj.asInstanceOf[File]
   }
 }

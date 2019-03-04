@@ -43,20 +43,8 @@ object IAbstractUnit {
     traversePublicParts: js.Function1[js.Function1[IAbstractUnit, scala.Unit], scala.Unit],
     unit: IAbstractUnit
   ): IAbstractUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allProperties")(allProperties)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isLoaded")(isLoaded)
-    __obj.updateDynamic("loadedProperties")(loadedProperties)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("publicProperties")(publicProperties)
-    __obj.updateDynamic("structureTypeName")(structureTypeName)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("traverse")(traverse)
-    __obj.updateDynamic("traverseFind")(traverseFind)
-    __obj.updateDynamic("traversePublicParts")(traversePublicParts)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(allProperties = allProperties, container = container, id = id, isLoaded = isLoaded, loadedProperties = loadedProperties, model = model, publicProperties = publicProperties, structureTypeName = structureTypeName, toJSON = toJSON, traverse = traverse, traverseFind = traverseFind, traversePublicParts = traversePublicParts, unit = unit)
+  
     __obj.asInstanceOf[IAbstractUnit]
   }
 }

@@ -20,8 +20,7 @@ object Anon_ErrorCachingMinTtlErrorCode {
     responseCode: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     responsePagePath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ErrorCachingMinTtlErrorCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any])
     if (errorCachingMinTtl != null) __obj.updateDynamic("errorCachingMinTtl")(errorCachingMinTtl.asInstanceOf[js.Any])
     if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
     if (responsePagePath != null) __obj.updateDynamic("responsePagePath")(responsePagePath.asInstanceOf[js.Any])

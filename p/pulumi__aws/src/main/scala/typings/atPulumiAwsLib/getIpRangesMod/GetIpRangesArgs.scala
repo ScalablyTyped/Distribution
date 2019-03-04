@@ -30,8 +30,7 @@ object GetIpRangesArgs {
     regions: js.Array[java.lang.String] = null,
     url: java.lang.String = null
   ): GetIpRangesArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("services")(services)
+    val __obj = js.Dynamic.literal(services = services)
     if (regions != null) __obj.updateDynamic("regions")(regions)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[GetIpRangesArgs]

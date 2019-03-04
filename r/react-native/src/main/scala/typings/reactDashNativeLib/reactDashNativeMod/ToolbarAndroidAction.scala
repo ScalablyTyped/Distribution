@@ -34,8 +34,7 @@ object ToolbarAndroidAction {
     show: reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.ifRoom | reactDashNativeLib.reactDashNativeLibStrings.never = null,
     showWithText: js.UndefOr[scala.Boolean] = js.undefined
   ): ToolbarAndroidAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (!js.isUndefined(showWithText)) __obj.updateDynamic("showWithText")(showWithText)

@@ -20,8 +20,7 @@ object BottomNavigationProps {
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerViewStyle = null
   ): BottomNavigationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (active != null) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (style != null) __obj.updateDynamic("style")(style)

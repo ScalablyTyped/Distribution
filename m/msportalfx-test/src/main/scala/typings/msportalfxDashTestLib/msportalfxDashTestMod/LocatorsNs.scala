@@ -54,7 +54,7 @@ object LocatorsNs extends js.Object {
     def css(value: java.lang.String): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
     def id(value: java.lang.String): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
     @JSName("js")
-    def `js_`(script: js.Any, var_args: js.Any*): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
+    def js_(script: js.Any, var_args: js.Any*): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
     def linkText(value: java.lang.String): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
     def name(value: java.lang.String): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native
     def partialLinkText(value: java.lang.String): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native

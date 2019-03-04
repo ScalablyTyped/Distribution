@@ -32,8 +32,7 @@ object NumericScale {
     `type`: ScaleType = null,
     zero: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): NumericScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])

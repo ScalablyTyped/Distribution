@@ -26,8 +26,7 @@ object MotorOption {
     invertPWM: js.UndefOr[scala.Boolean] = js.undefined,
     register: js.Any = null
   ): MotorOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pins")(pins)
+    val __obj = js.Dynamic.literal(pins = pins)
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (bits != null) __obj.updateDynamic("bits")(bits)
     if (controller != null) __obj.updateDynamic("controller")(controller)

@@ -23,8 +23,7 @@ object MergedStream {
     marktype: vegaDashTypingsLib.typesSpecMarktypeMod.MarkType = null,
     throttle: scala.Int | scala.Double = null
   ): MergedStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merge")(merge)
+    val __obj = js.Dynamic.literal(merge = merge)
     if (between != null) __obj.updateDynamic("between")(between)
     if (!js.isUndefined(consume)) __obj.updateDynamic("consume")(consume)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])

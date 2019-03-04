@@ -65,17 +65,8 @@ object sizeAgeRendererResult {
     unit: java.lang.String,
     visualVariables: js.Array[SizeVariable]
   ): sizeAgeRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("sizeScheme")(sizeScheme)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("visualVariables")(visualVariables)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, sizeScheme = sizeScheme, statistics = statistics, unit = unit, visualVariables = visualVariables)
+  
     __obj.asInstanceOf[sizeAgeRendererResult]
   }
 }

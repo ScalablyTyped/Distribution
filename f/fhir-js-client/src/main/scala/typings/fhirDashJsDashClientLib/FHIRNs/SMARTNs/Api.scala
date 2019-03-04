@@ -172,27 +172,8 @@ object Api {
     validate: js.Function1[Entry, js.Promise[Response]],
     vread: js.Function1[VersionReadParams, js.Promise[Response]]
   ): Api = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conformance")(conformance)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("drain")(drain)
-    __obj.updateDynamic("fetchAll")(fetchAll)
-    __obj.updateDynamic("fetchAllWithReferences")(fetchAllWithReferences)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("nextPage")(nextPage)
-    __obj.updateDynamic("prevPage")(prevPage)
-    __obj.updateDynamic("profile")(profile)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("resolve")(resolve)
-    __obj.updateDynamic("resourceHistory")(resourceHistory)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("transaction")(transaction)
-    __obj.updateDynamic("typeHistory")(typeHistory)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("validate")(validate)
-    __obj.updateDynamic("vread")(vread)
+    val __obj = js.Dynamic.literal(conformance = conformance, create = create, delete = delete, document = document, drain = drain, fetchAll = fetchAll, fetchAllWithReferences = fetchAllWithReferences, history = history, nextPage = nextPage, prevPage = prevPage, profile = profile, read = read, resolve = resolve, resourceHistory = resourceHistory, search = search, transaction = transaction, typeHistory = typeHistory, update = update, validate = validate, vread = vread)
+  
     __obj.asInstanceOf[Api]
   }
 }

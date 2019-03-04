@@ -109,8 +109,7 @@ object Link {
     title: java.lang.String = null,
     `type`: java.lang.String = null
   ): Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(href = href)
     if (deprecation != null) __obj.updateDynamic("deprecation")(deprecation)
     if (hreflang != null) __obj.updateDynamic("hreflang")(hreflang)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -32,9 +32,7 @@ object CreateCardOptions {
     sandbox: Sandbox = null,
     xhr: davLib.davMod.transportNs.Transport = null
   ): CreateCardOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(data = data, filename = filename)
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
     if (xhr != null) __obj.updateDynamic("xhr")(xhr)
     __obj.asInstanceOf[CreateCardOptions]

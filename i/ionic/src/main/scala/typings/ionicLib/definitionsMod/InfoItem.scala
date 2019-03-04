@@ -22,10 +22,7 @@ object InfoItem {
     flair: java.lang.String = null,
     path: java.lang.String = null
   ): InfoItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(group = group, key = key, value = value)
     if (flair != null) __obj.updateDynamic("flair")(flair)
     if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[InfoItem]

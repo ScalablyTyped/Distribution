@@ -32,17 +32,8 @@ object TokenType {
     startsExpr: scala.Boolean,
     updateContext: js.Function1[TokenType, scala.Unit]
   ): TokenType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeExpr")(beforeExpr)
-    __obj.updateDynamic("binop")(binop)
-    __obj.updateDynamic("isAssign")(isAssign)
-    __obj.updateDynamic("isLoop")(isLoop)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("postfix")(postfix)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("startsExpr")(startsExpr)
-    __obj.updateDynamic("updateContext")(updateContext)
+    val __obj = js.Dynamic.literal(beforeExpr = beforeExpr, binop = binop, isAssign = isAssign, isLoop = isLoop, keyword = keyword, label = label, postfix = postfix, prefix = prefix, startsExpr = startsExpr, updateContext = updateContext)
+  
     __obj.asInstanceOf[TokenType]
   }
 }

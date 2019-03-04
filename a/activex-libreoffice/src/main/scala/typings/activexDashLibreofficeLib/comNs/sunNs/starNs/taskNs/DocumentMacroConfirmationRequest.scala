@@ -38,14 +38,8 @@ object DocumentMacroConfirmationRequest {
     DocumentVersion: java.lang.String,
     Message: java.lang.String
   ): DocumentMacroConfirmationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DocumentSignatureInformation")(DocumentSignatureInformation)
-    __obj.updateDynamic("DocumentStorage")(DocumentStorage)
-    __obj.updateDynamic("DocumentURL")(DocumentURL)
-    __obj.updateDynamic("DocumentVersion")(DocumentVersion)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, DocumentSignatureInformation = DocumentSignatureInformation, DocumentStorage = DocumentStorage, DocumentURL = DocumentURL, DocumentVersion = DocumentVersion, Message = Message)
+  
     __obj.asInstanceOf[DocumentMacroConfirmationRequest]
   }
 }

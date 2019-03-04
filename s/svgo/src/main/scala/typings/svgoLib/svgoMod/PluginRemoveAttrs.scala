@@ -12,8 +12,8 @@ trait PluginRemoveAttrs extends js.Object {
 object PluginRemoveAttrs {
   @scala.inline
   def apply(removeAttrs: scala.Boolean | js.Object): PluginRemoveAttrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeAttrs")(removeAttrs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeAttrs = removeAttrs.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveAttrs]
   }
 }

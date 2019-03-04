@@ -14,9 +14,7 @@ trait BrowserFileData extends FileData {
 object BrowserFileData {
   @scala.inline
   def apply(body: js.Any, url: java.lang.String, blob: js.Function0[js.Promise[stdLib.Blob]] = null): BrowserFileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, url = url)
     if (blob != null) __obj.updateDynamic("blob")(blob)
     __obj.asInstanceOf[BrowserFileData]
   }

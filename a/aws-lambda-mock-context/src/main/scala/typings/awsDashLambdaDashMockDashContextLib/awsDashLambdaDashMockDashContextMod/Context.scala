@@ -40,21 +40,8 @@ object Context {
     memoryLimitInMB: java.lang.String,
     succeed: js.Function1[js.Any, js.Promise[_]]
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Promise")(Promise)
-    __obj.updateDynamic("awsRequestId")(awsRequestId)
-    __obj.updateDynamic("callbackWaitsForEmptyEventLoop")(callbackWaitsForEmptyEventLoop)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("fail")(fail)
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("functionVersion")(functionVersion)
-    __obj.updateDynamic("getRemainingTimeInMillis")(getRemainingTimeInMillis)
-    __obj.updateDynamic("invokedFunctionArn")(invokedFunctionArn)
-    __obj.updateDynamic("invokeid")(invokeid)
-    __obj.updateDynamic("logGroupName")(logGroupName)
-    __obj.updateDynamic("logStreamName")(logStreamName)
-    __obj.updateDynamic("memoryLimitInMB")(memoryLimitInMB)
-    __obj.updateDynamic("succeed")(succeed)
+    val __obj = js.Dynamic.literal(Promise = Promise, awsRequestId = awsRequestId, callbackWaitsForEmptyEventLoop = callbackWaitsForEmptyEventLoop, done = done, fail = fail, functionName = functionName, functionVersion = functionVersion, getRemainingTimeInMillis = getRemainingTimeInMillis, invokedFunctionArn = invokedFunctionArn, invokeid = invokeid, logGroupName = logGroupName, logStreamName = logStreamName, memoryLimitInMB = memoryLimitInMB, succeed = succeed)
+  
     __obj.asInstanceOf[Context]
   }
 }

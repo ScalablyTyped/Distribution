@@ -19,10 +19,7 @@ object GridFilterEvent {
     field: java.lang.String = null,
     filter: js.Any = null
   ): GridFilterEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (field != null) __obj.updateDynamic("field")(field)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[GridFilterEvent]

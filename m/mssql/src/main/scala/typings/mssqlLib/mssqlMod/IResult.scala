@@ -20,11 +20,8 @@ object IResult {
     recordsets: js.Array[IRecordSet[T]],
     rowsAffected: js.Array[scala.Double]
   ): IResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("recordset")(recordset)
-    __obj.updateDynamic("recordsets")(recordsets)
-    __obj.updateDynamic("rowsAffected")(rowsAffected)
+    val __obj = js.Dynamic.literal(output = output, recordset = recordset, recordsets = recordsets, rowsAffected = rowsAffected)
+  
     __obj.asInstanceOf[IResult[T]]
   }
 }

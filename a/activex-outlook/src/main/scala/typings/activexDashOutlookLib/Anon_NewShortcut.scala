@@ -12,8 +12,8 @@ trait Anon_NewShortcut extends js.Object {
 object Anon_NewShortcut {
   @scala.inline
   def apply(NewShortcut: activexDashOutlookLib.OutlookNs.OutlookBarShortcut): Anon_NewShortcut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NewShortcut")(NewShortcut)
+    val __obj = js.Dynamic.literal(NewShortcut = NewShortcut)
+  
     __obj.asInstanceOf[Anon_NewShortcut]
   }
 }

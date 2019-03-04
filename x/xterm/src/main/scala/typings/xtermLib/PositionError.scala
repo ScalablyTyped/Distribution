@@ -22,12 +22,8 @@ object PositionError {
     code: scala.Double,
     message: java.lang.String
   ): PositionError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PERMISSION_DENIED")(PERMISSION_DENIED)
-    __obj.updateDynamic("POSITION_UNAVAILABLE")(POSITION_UNAVAILABLE)
-    __obj.updateDynamic("TIMEOUT")(TIMEOUT)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(PERMISSION_DENIED = PERMISSION_DENIED, POSITION_UNAVAILABLE = POSITION_UNAVAILABLE, TIMEOUT = TIMEOUT, code = code, message = message)
+  
     __obj.asInstanceOf[PositionError]
   }
 }

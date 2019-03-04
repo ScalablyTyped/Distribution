@@ -42,13 +42,8 @@ object GoogleApiYouTubePaginationInfo {
     pageInfo: Anon_ResultsPerPage,
     prevPageToken: java.lang.String
   ): GoogleApiYouTubePaginationInfo[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("nextPageToken")(nextPageToken)
-    __obj.updateDynamic("pageInfo")(pageInfo)
-    __obj.updateDynamic("prevPageToken")(prevPageToken)
+    val __obj = js.Dynamic.literal(etag = etag, items = items, kind = kind, nextPageToken = nextPageToken, pageInfo = pageInfo, prevPageToken = prevPageToken)
+  
     __obj.asInstanceOf[GoogleApiYouTubePaginationInfo[T]]
   }
 }

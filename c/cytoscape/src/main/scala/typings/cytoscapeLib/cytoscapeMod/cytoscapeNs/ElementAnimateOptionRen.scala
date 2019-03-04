@@ -21,8 +21,7 @@ object ElementAnimateOptionRen {
     step: js.Function0[scala.Unit] = null,
     style: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ElementAnimateOptionRen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderedPosition")(renderedPosition)
+    val __obj = js.Dynamic.literal(renderedPosition = renderedPosition)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)

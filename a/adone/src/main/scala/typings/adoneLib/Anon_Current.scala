@@ -12,8 +12,8 @@ trait Anon_Current extends js.Object {
 object Anon_Current {
   @scala.inline
   def apply(current: scala.Double): Anon_Current = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
+    val __obj = js.Dynamic.literal(current = current)
+  
     __obj.asInstanceOf[Anon_Current]
   }
 }

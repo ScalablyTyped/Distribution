@@ -32,8 +32,8 @@ object TSCallSignatureDeclaration {
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): TSCallSignatureDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSCallSignatureDeclaration]

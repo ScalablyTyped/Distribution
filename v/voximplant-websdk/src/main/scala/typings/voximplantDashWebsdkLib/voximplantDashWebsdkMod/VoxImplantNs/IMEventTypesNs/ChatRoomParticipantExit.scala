@@ -23,9 +23,8 @@ trait ChatRoomParticipantExit
 object ChatRoomParticipantExit {
   @scala.inline
   def apply(participant: java.lang.String, room: java.lang.String): ChatRoomParticipantExit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("participant")(participant)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(participant = participant, room = room)
+  
     __obj.asInstanceOf[ChatRoomParticipantExit]
   }
 }

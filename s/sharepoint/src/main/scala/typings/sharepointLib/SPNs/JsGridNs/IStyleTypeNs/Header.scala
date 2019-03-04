@@ -54,28 +54,8 @@ object Header {
     resizeHoverColor: js.Any,
     textColor: js.Any
   ): Header = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("elementClickBorderColor")(elementClickBorderColor)
-    __obj.updateDynamic("elementClickColor")(elementClickColor)
-    __obj.updateDynamic("eyeBrowBorderColor")(eyeBrowBorderColor)
-    __obj.updateDynamic("eyeBrowColor")(eyeBrowColor)
-    __obj.updateDynamic("eyeBrowHoverBorderColor")(eyeBrowHoverBorderColor)
-    __obj.updateDynamic("eyeBrowHoverColor")(eyeBrowHoverColor)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("innerBorderColor")(innerBorderColor)
-    __obj.updateDynamic("menuBorderColor")(menuBorderColor)
-    __obj.updateDynamic("menuColor")(menuColor)
-    __obj.updateDynamic("menuHoverBorderColor")(menuHoverBorderColor)
-    __obj.updateDynamic("menuHoverColor")(menuHoverColor)
-    __obj.updateDynamic("outerBorderColor")(outerBorderColor)
-    __obj.updateDynamic("resizeBorderColor")(resizeBorderColor)
-    __obj.updateDynamic("resizeColor")(resizeColor)
-    __obj.updateDynamic("resizeHoverBorderColor")(resizeHoverBorderColor)
-    __obj.updateDynamic("resizeHoverColor")(resizeHoverColor)
-    __obj.updateDynamic("textColor")(textColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, elementClickBorderColor = elementClickBorderColor, elementClickColor = elementClickColor, eyeBrowBorderColor = eyeBrowBorderColor, eyeBrowColor = eyeBrowColor, eyeBrowHoverBorderColor = eyeBrowHoverBorderColor, eyeBrowHoverColor = eyeBrowHoverColor, font = font, fontSize = fontSize, fontWeight = fontWeight, innerBorderColor = innerBorderColor, menuBorderColor = menuBorderColor, menuColor = menuColor, menuHoverBorderColor = menuHoverBorderColor, menuHoverColor = menuHoverColor, outerBorderColor = outerBorderColor, resizeBorderColor = resizeBorderColor, resizeColor = resizeColor, resizeHoverBorderColor = resizeHoverBorderColor, resizeHoverColor = resizeHoverColor, textColor = textColor)
+  
     __obj.asInstanceOf[Header]
   }
 }

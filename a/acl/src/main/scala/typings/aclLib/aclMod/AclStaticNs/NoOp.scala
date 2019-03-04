@@ -13,9 +13,8 @@ trait NoOp extends js.Object {
 object NoOp {
   @scala.inline
   def apply(end: js.Function0[scala.Unit], params: js.Function1[/* repeated */ java.lang.String, NoOp]): NoOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(end = end, params = params)
+  
     __obj.asInstanceOf[NoOp]
   }
 }

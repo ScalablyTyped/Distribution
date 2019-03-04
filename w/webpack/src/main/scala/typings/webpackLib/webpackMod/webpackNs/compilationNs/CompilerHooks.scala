@@ -60,31 +60,8 @@ object CompilerHooks {
     watchClose: tapableLib.tapableMod.SyncHook[_, _, _],
     watchRun: tapableLib.tapableMod.AsyncSeriesHook[webpackLib.webpackMod.webpackNs.Compiler, _, _]
   ): CompilerHooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalPass")(additionalPass)
-    __obj.updateDynamic("afterCompile")(afterCompile)
-    __obj.updateDynamic("afterEmit")(afterEmit)
-    __obj.updateDynamic("afterEnvironment")(afterEnvironment)
-    __obj.updateDynamic("afterPlugins")(afterPlugins)
-    __obj.updateDynamic("afterResolvers")(afterResolvers)
-    __obj.updateDynamic("beforeCompile")(beforeCompile)
-    __obj.updateDynamic("beforeRun")(beforeRun)
-    __obj.updateDynamic("compilation")(compilation)
-    __obj.updateDynamic("compile")(compile)
-    __obj.updateDynamic("contextModuleFactory")(contextModuleFactory)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("entryOption")(entryOption)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("make")(make)
-    __obj.updateDynamic("normalModuleFactory")(normalModuleFactory)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("shouldEmit")(shouldEmit)
-    __obj.updateDynamic("thisCompilation")(thisCompilation)
-    __obj.updateDynamic("watchClose")(watchClose)
-    __obj.updateDynamic("watchRun")(watchRun)
+    val __obj = js.Dynamic.literal(additionalPass = additionalPass, afterCompile = afterCompile, afterEmit = afterEmit, afterEnvironment = afterEnvironment, afterPlugins = afterPlugins, afterResolvers = afterResolvers, beforeCompile = beforeCompile, beforeRun = beforeRun, compilation = compilation, compile = compile, contextModuleFactory = contextModuleFactory, done = done, emit = emit, entryOption = entryOption, environment = environment, failed = failed, invalid = invalid, make = make, normalModuleFactory = normalModuleFactory, run = run, shouldEmit = shouldEmit, thisCompilation = thisCompilation, watchClose = watchClose, watchRun = watchRun)
+  
     __obj.asInstanceOf[CompilerHooks]
   }
 }

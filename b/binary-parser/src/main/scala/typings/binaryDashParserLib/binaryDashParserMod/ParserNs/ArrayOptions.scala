@@ -28,7 +28,8 @@ object ArrayOptions {
     lengthInBytes: scala.Double | java.lang.String | (js.ThisFunction0[/* this */ binaryDashParserLib.binaryDashParserMod.Parser[_], scala.Double]) = null,
     readUntil: java.lang.String | (js.Function2[/* item */ scala.Double, /* buffer */ nodeLib.Buffer, scala.Boolean]) = null
   ): ArrayOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

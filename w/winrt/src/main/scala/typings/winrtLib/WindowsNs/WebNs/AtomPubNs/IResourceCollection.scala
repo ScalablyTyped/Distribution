@@ -32,19 +32,8 @@ object IResourceCollection {
     title: winrtLib.WindowsNs.WebNs.SyndicationNs.ISyndicationText,
     uri: winrtLib.WindowsNs.FoundationNs.Uri
   ): IResourceCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accepts")(accepts)
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(accepts = accepts, attributeExtensions = attributeExtensions, baseUri = baseUri, categories = categories, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, title = title, uri = uri)
+  
     __obj.asInstanceOf[IResourceCollection]
   }
 }

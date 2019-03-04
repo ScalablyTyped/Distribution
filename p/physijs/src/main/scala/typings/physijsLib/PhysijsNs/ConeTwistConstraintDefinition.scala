@@ -28,14 +28,8 @@ object ConeTwistConstraintDefinition {
     positionb: threeLib.threeMod.Vector3,
     `type`: java.lang.String
   ): ConeTwistConstraintDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("axisa")(axisa)
-    __obj.updateDynamic("axisb")(axisb)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("objecta")(objecta)
-    __obj.updateDynamic("objectb")(objectb)
-    __obj.updateDynamic("positiona")(positiona)
-    __obj.updateDynamic("positionb")(positionb)
+    val __obj = js.Dynamic.literal(axisa = axisa, axisb = axisb, id = id, objecta = objecta, objectb = objectb, positiona = positiona, positionb = positionb)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ConeTwistConstraintDefinition]
   }
 }

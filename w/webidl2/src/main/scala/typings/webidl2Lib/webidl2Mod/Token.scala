@@ -16,8 +16,8 @@ object Token {
     `type`: webidl2Lib.webidl2LibStrings.float | webidl2Lib.webidl2LibStrings.integer | webidl2Lib.webidl2LibStrings.identifier | webidl2Lib.webidl2LibStrings.string | webidl2Lib.webidl2LibStrings.whitespace | webidl2Lib.webidl2LibStrings.other,
     value: java.lang.String
   ): Token = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
 }

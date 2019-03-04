@@ -13,10 +13,8 @@ trait CardViewBatchEditCardValidatingEventArgs extends EventArgs {
 object CardViewBatchEditCardValidatingEventArgs {
   @scala.inline
   def apply(sender: Control, validationInfo: js.Any, visibleIndex: scala.Double): CardViewBatchEditCardValidatingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("validationInfo")(validationInfo)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(sender = sender, validationInfo = validationInfo, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[CardViewBatchEditCardValidatingEventArgs]
   }
 }

@@ -35,10 +35,8 @@ object ObjectConstructor {
     is: js.Function2[js.Any, js.Any, scala.Boolean],
     setPrototypeOf: js.Function2[js.Any, js.Any, js.Any]
   ): ObjectConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assign")(assign)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("setPrototypeOf")(setPrototypeOf)
+    val __obj = js.Dynamic.literal(assign = assign, is = is, setPrototypeOf = setPrototypeOf)
+  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

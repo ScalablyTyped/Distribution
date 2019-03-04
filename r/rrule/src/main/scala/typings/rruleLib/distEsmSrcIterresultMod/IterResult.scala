@@ -49,15 +49,7 @@ object IterResult {
     maxDate: stdLib.Date = null,
     minDate: stdLib.Date = null
   ): IterResult[M] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_result")(_result)
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(_result = _result, accept = accept, add = add, args = args, clone = clone, getValue = getValue, method = method.asInstanceOf[js.Any], total = total)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     __obj.asInstanceOf[IterResult[M]]

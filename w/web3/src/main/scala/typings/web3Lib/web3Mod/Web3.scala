@@ -35,18 +35,8 @@ object Web3 {
     utils: web3Lib.utilsMod.Utils,
     version: java.lang.String
   ): Web3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BatchRequest")(BatchRequest)
-    __obj.updateDynamic("bzz")(bzz)
-    __obj.updateDynamic("currentProvider")(currentProvider)
-    __obj.updateDynamic("eth")(eth)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("givenProvider")(givenProvider)
-    __obj.updateDynamic("providers")(providers)
-    __obj.updateDynamic("setProvider")(setProvider)
-    __obj.updateDynamic("shh")(shh)
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(BatchRequest = BatchRequest, bzz = bzz, currentProvider = currentProvider, eth = eth, extend = extend, givenProvider = givenProvider, providers = providers, setProvider = setProvider, shh = shh, utils = utils, version = version)
+  
     __obj.asInstanceOf[Web3]
   }
 }

@@ -28,8 +28,8 @@ object CustomPropertyTextArea {
     rows: scala.Int | scala.Double = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyTextArea = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (label != null) __obj.updateDynamic("label")(label)
     if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])

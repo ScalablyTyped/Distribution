@@ -18,8 +18,7 @@ object Anon_Column {
     $columns: js.Array[ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef],
     $column: ngDashTableLib.srcBrowserPublicDashInterfacesMod.IColumnDef = null
   ): Anon_Column = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$columns")($columns)
+    val __obj = js.Dynamic.literal($columns = $columns)
     if ($column != null) __obj.updateDynamic("$column")($column)
     __obj.asInstanceOf[Anon_Column]
   }

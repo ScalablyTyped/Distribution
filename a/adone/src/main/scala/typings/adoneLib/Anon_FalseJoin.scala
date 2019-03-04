@@ -12,8 +12,8 @@ trait Anon_FalseJoin extends js.Object {
 object Anon_FalseJoin {
   @scala.inline
   def apply(join: adoneLib.adoneLibNumbers.`false`): Anon_FalseJoin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
+    val __obj = js.Dynamic.literal(join = join)
+  
     __obj.asInstanceOf[Anon_FalseJoin]
   }
 }

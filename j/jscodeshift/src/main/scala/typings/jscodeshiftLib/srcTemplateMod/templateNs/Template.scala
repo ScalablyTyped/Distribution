@@ -21,10 +21,8 @@ object Template {
     statement: js.Function1[/* repeated */ js.Any, js.Any],
     statements: js.Function1[/* repeated */ js.Any, js.Any]
   ): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("statement")(statement)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(expression = expression, statement = statement, statements = statements)
+  
     __obj.asInstanceOf[Template]
   }
 }

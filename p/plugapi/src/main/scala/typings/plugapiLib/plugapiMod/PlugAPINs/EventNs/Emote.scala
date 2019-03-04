@@ -22,11 +22,8 @@ object Emote {
     message: java.lang.String,
     `type`: java.lang.String
   ): Emote = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chatID")(chatID)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("fromID")(fromID)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(chatID = chatID, from = from, fromID = fromID, message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Emote]
   }
 }

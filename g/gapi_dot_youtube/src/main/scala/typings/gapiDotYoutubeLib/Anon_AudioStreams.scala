@@ -62,17 +62,8 @@ object Anon_AudioStreams {
     recordingLocation: Anon_Elevation,
     videoStreams: js.Array[Anon_AspectRatio]
   ): Anon_AudioStreams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioStreams")(audioStreams)
-    __obj.updateDynamic("bitrateBps")(bitrateBps)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("creationTime")(creationTime)
-    __obj.updateDynamic("durationMs")(durationMs)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("fileType")(fileType)
-    __obj.updateDynamic("recordingLocation")(recordingLocation)
-    __obj.updateDynamic("videoStreams")(videoStreams)
+    val __obj = js.Dynamic.literal(audioStreams = audioStreams, bitrateBps = bitrateBps, container = container, creationTime = creationTime, durationMs = durationMs, fileName = fileName, fileSize = fileSize, fileType = fileType, recordingLocation = recordingLocation, videoStreams = videoStreams)
+  
     __obj.asInstanceOf[Anon_AudioStreams]
   }
 }

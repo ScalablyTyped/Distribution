@@ -24,13 +24,8 @@ object Anon_Delay {
     timing: java.lang.String,
     transform: java.lang.String
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("timing")(timing)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration, end = end, property = property, timing = timing, transform = transform)
+  
     __obj.asInstanceOf[Anon_Delay]
   }
 }

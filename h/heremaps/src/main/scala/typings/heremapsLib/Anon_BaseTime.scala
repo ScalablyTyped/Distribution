@@ -24,13 +24,8 @@ object Anon_BaseTime {
     trafficTime: scala.Double,
     travelTime: scala.Double
   ): Anon_BaseTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseTime")(baseTime)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("trafficTime")(trafficTime)
-    __obj.updateDynamic("travelTime")(travelTime)
+    val __obj = js.Dynamic.literal(baseTime = baseTime, distance = distance, flags = flags, text = text, trafficTime = trafficTime, travelTime = travelTime)
+  
     __obj.asInstanceOf[Anon_BaseTime]
   }
 }

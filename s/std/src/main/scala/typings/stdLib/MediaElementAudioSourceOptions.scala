@@ -12,8 +12,8 @@ trait MediaElementAudioSourceOptions extends js.Object {
 object MediaElementAudioSourceOptions {
   @scala.inline
   def apply(mediaElement: HTMLMediaElement): MediaElementAudioSourceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mediaElement")(mediaElement)
+    val __obj = js.Dynamic.literal(mediaElement = mediaElement)
+  
     __obj.asInstanceOf[MediaElementAudioSourceOptions]
   }
 }

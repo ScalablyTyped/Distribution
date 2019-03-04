@@ -13,8 +13,8 @@ trait Anon_AddArray[T] extends SetSpec[T] {
 object Anon_AddArray {
   @scala.inline
   def apply[T]($add: js.Array[T]): Anon_AddArray[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$add")($add)
+    val __obj = js.Dynamic.literal($add = $add)
+  
     __obj.asInstanceOf[Anon_AddArray[T]]
   }
 }

@@ -38,20 +38,8 @@ object Image {
     yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom,
     yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("sizex")(sizex)
-    __obj.updateDynamic("sizey")(sizey)
-    __obj.updateDynamic("sizing")(sizing.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], opacity = opacity, sizex = sizex, sizey = sizey, sizing = sizing.asInstanceOf[js.Any], source = source, visible = visible, x = x.asInstanceOf[js.Any], xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Image]
   }
 }

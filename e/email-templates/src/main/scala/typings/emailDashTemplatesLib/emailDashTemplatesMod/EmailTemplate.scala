@@ -30,10 +30,8 @@ object EmailTemplate {
     render: js.Function2[java.lang.String, js.Any, js.Promise[java.lang.String]],
     send: js.Function1[EmailOptions, js.Any]
   ): EmailTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("juiceResources")(juiceResources)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(juiceResources = juiceResources, render = render, send = send)
+  
     __obj.asInstanceOf[EmailTemplate]
   }
 }

@@ -17,8 +17,8 @@ object RegExpValidatorFactory {
       RegExpValidator
     ]
   ): RegExpValidatorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createValidator")(createValidator)
+    val __obj = js.Dynamic.literal(createValidator = createValidator)
+  
     __obj.asInstanceOf[RegExpValidatorFactory]
   }
 }

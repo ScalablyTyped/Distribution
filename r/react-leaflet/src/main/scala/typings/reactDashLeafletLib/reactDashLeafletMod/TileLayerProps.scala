@@ -57,8 +57,7 @@ object TileLayerProps {
     zoomOffset: scala.Int | scala.Double = null,
     zoomReverse: js.UndefOr[scala.Boolean] = js.undefined
   ): TileLayerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

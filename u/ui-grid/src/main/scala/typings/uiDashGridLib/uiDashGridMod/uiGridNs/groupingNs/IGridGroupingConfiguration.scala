@@ -27,9 +27,7 @@ object IGridGroupingConfiguration {
     treeAggregations: js.Array[IGridTreeAggregations],
     expandedState: IGridExpandedHash = null
   ): IGridGroupingConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grouping")(grouping)
-    __obj.updateDynamic("treeAggregations")(treeAggregations)
+    val __obj = js.Dynamic.literal(grouping = grouping, treeAggregations = treeAggregations)
     if (expandedState != null) __obj.updateDynamic("expandedState")(expandedState)
     __obj.asInstanceOf[IGridGroupingConfiguration]
   }

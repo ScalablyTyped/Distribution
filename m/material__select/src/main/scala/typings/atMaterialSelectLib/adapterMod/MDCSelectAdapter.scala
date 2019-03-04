@@ -36,19 +36,8 @@ object MDCSelectAdapter {
     setSelectedIndex: js.Function1[scala.Double, scala.Unit],
     setValue: js.Function1[java.lang.String, scala.Unit]
   ): MDCSelectAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activateBottomLine")(activateBottomLine)
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deactivateBottomLine")(deactivateBottomLine)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("floatLabel")(floatLabel)
-    __obj.updateDynamic("getSelectedIndex")(getSelectedIndex)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setDisabled")(setDisabled)
-    __obj.updateDynamic("setSelectedIndex")(setSelectedIndex)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(activateBottomLine = activateBottomLine, addClass = addClass, deactivateBottomLine = deactivateBottomLine, deregisterInteractionHandler = deregisterInteractionHandler, floatLabel = floatLabel, getSelectedIndex = getSelectedIndex, getValue = getValue, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass, setDisabled = setDisabled, setSelectedIndex = setSelectedIndex, setValue = setValue)
+  
     __obj.asInstanceOf[MDCSelectAdapter]
   }
 }

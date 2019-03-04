@@ -32,10 +32,7 @@ object IPostgresInterval {
     seconds: scala.Int | scala.Double = null,
     years: scala.Int | scala.Double = null
   ): IPostgresInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toISO")(toISO)
-    __obj.updateDynamic("toISOString")(toISOString)
-    __obj.updateDynamic("toPostgres")(toPostgres)
+    val __obj = js.Dynamic.literal(toISO = toISO, toISOString = toISOString, toPostgres = toPostgres)
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
     if (milliseconds != null) __obj.updateDynamic("milliseconds")(milliseconds.asInstanceOf[js.Any])

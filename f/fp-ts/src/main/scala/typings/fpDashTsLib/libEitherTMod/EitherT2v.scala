@@ -42,11 +42,8 @@ object EitherT2v {
       fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[fpDashTsLib.libEitherMod.URI, js.Any]]
     ]
   ): EitherT2v[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(ap = ap, chain = chain, map = map, of = of)
+  
     __obj.asInstanceOf[EitherT2v[F]]
   }
 }

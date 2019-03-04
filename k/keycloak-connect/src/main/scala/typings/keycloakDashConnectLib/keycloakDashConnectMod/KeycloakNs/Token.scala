@@ -32,14 +32,7 @@ object Token {
     signature: nodeLib.Buffer = null,
     signed: java.lang.String = null
   ): Token = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("hasApplicationRole")(hasApplicationRole)
-    __obj.updateDynamic("hasRealmRole")(hasRealmRole)
-    __obj.updateDynamic("hasRole")(hasRole)
-    __obj.updateDynamic("isExpired")(isExpired)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(clientId = clientId, content = content, hasApplicationRole = hasApplicationRole, hasRealmRole = hasRealmRole, hasRole = hasRole, isExpired = isExpired, token = token)
     if (header != null) __obj.updateDynamic("header")(header)
     if (signature != null) __obj.updateDynamic("signature")(signature)
     if (signed != null) __obj.updateDynamic("signed")(signed)

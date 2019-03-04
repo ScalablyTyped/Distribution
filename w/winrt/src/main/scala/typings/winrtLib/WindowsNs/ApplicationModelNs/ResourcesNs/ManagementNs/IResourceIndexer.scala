@@ -23,9 +23,8 @@ object IResourceIndexer {
     ],
     indexFilePath: js.Function1[winrtLib.WindowsNs.FoundationNs.Uri, IndexedResourceCandidate]
   ): IResourceIndexer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexFileContentsAsync")(indexFileContentsAsync)
-    __obj.updateDynamic("indexFilePath")(indexFilePath)
+    val __obj = js.Dynamic.literal(indexFileContentsAsync = indexFileContentsAsync, indexFilePath = indexFilePath)
+  
     __obj.asInstanceOf[IResourceIndexer]
   }
 }

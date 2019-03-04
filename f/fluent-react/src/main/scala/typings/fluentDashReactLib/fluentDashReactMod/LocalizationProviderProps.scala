@@ -16,8 +16,7 @@ object LocalizationProviderProps {
     bundles: stdLib.IterableIterator[fluentLib.fluentMod.FluentBundle],
     parseMarkup: MarkupParser = null
   ): LocalizationProviderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bundles")(bundles)
+    val __obj = js.Dynamic.literal(bundles = bundles)
     if (parseMarkup != null) __obj.updateDynamic("parseMarkup")(parseMarkup)
     __obj.asInstanceOf[LocalizationProviderProps]
   }

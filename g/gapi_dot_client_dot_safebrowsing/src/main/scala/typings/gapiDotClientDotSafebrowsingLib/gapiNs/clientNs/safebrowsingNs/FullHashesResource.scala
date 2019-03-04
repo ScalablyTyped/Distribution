@@ -18,8 +18,8 @@ object FullHashesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[FindFullHashesResponse]
     ]
   ): FullHashesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("find")(find)
+    val __obj = js.Dynamic.literal(find = find)
+  
     __obj.asInstanceOf[FullHashesResource]
   }
 }

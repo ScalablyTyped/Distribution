@@ -24,8 +24,7 @@ object CookieOptions {
     secure: scala.Boolean | expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreLibStrings.auto = null,
     signed: js.UndefOr[scala.Boolean] = js.undefined
   ): CookieOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (encode != null) __obj.updateDynamic("encode")(encode)
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])

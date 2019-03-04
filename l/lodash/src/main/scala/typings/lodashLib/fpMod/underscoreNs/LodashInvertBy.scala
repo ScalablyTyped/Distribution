@@ -24,18 +24,15 @@ trait LodashInvertBy extends js.Object {
     interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]] = js.native
-  def apply[T](interatee: lodashLib.lodashMod.underscoreNs.`__`): LodashInvertBy1x2[T] = js.native
-  def apply[T /* <: js.Object */](interatee: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashInvertBy2x2[T] = js.native
+  def apply[T](interatee: lodashLib.lodashMod.underscoreNs.__): LodashInvertBy1x2[T] = js.native
+  def apply[T /* <: js.Object */](interatee: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashInvertBy2x2[T] = js.native
   def apply[T](
-    interatee: lodashLib.lodashMod.underscoreNs.`__`,
+    interatee: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): LodashInvertBy1x2[T] = js.native
+  def apply[T](interatee: lodashLib.lodashMod.underscoreNs.__, `object`: lodashLib.lodashMod.underscoreNs.List[T]): LodashInvertBy1x2[T] = js.native
   def apply[T](
-    interatee: lodashLib.lodashMod.underscoreNs.`__`,
-    `object`: lodashLib.lodashMod.underscoreNs.List[T]
-  ): LodashInvertBy1x2[T] = js.native
-  def apply[T](
-    interatee: lodashLib.lodashMod.underscoreNs.`__`,
+    interatee: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashInvertBy1x2[T] = js.native
 }

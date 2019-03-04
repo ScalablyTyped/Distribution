@@ -32,17 +32,8 @@ object Mouse {
     scale: IMousePoint,
     wheelDelta: scala.Double
   ): Mouse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absolute")(absolute)
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("mousedownPosition")(mousedownPosition)
-    __obj.updateDynamic("mouseupPosition")(mouseupPosition)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("pixelRatio")(pixelRatio)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("wheelDelta")(wheelDelta)
+    val __obj = js.Dynamic.literal(absolute = absolute, button = button, element = element, mousedownPosition = mousedownPosition, mouseupPosition = mouseupPosition, offset = offset, pixelRatio = pixelRatio, position = position, scale = scale, wheelDelta = wheelDelta)
+  
     __obj.asInstanceOf[Mouse]
   }
 }

@@ -12,8 +12,8 @@ trait LocationElevationRequest extends js.Object {
 object LocationElevationRequest {
   @scala.inline
   def apply(locations: js.Array[LatLng]): LocationElevationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locations")(locations)
+    val __obj = js.Dynamic.literal(locations = locations)
+  
     __obj.asInstanceOf[LocationElevationRequest]
   }
 }

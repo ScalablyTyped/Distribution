@@ -13,9 +13,8 @@ trait IObjectFileAndVersion extends js.Object {
 object IObjectFileAndVersion {
   @scala.inline
   def apply(ObjectFile: IObjectFile, ObjectVersion: IObjectVersionAndProperties): IObjectFileAndVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ObjectFile")(ObjectFile)
-    __obj.updateDynamic("ObjectVersion")(ObjectVersion)
+    val __obj = js.Dynamic.literal(ObjectFile = ObjectFile, ObjectVersion = ObjectVersion)
+  
     __obj.asInstanceOf[IObjectFileAndVersion]
   }
 }

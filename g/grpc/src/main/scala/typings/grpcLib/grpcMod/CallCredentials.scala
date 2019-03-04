@@ -26,9 +26,8 @@ object CallCredentials {
     compose: js.Function1[CallCredentials, CallCredentials],
     generateMetadata: js.Function1[js.Object, js.Promise[Metadata]]
   ): CallCredentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("generateMetadata")(generateMetadata)
+    val __obj = js.Dynamic.literal(compose = compose, generateMetadata = generateMetadata)
+  
     __obj.asInstanceOf[CallCredentials]
   }
 }

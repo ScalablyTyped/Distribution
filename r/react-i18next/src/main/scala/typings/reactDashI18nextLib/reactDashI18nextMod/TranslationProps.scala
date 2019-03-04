@@ -25,8 +25,7 @@ object TranslationProps {
     i18n: i18nextLib.i18nextMod.i18nextNs.i18n = null,
     ns: Namespace = null
   ): TranslationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (i18n != null) __obj.updateDynamic("i18n")(i18n)
     if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslationProps]

@@ -86,13 +86,8 @@ object ICustomer {
       stripeLib.stripeMod.StripeNs.cardsNs.ICard | stripeLib.stripeMod.StripeNs.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount
     ] = null
   ): ICustomer = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("delinquent")(delinquent)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("subscriptions")(subscriptions)
+    val __obj = js.Dynamic.literal(created = created, delinquent = delinquent, id = id, livemode = livemode, metadata = metadata, subscriptions = subscriptions)
+    __obj.updateDynamic("object")(`object`)
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
     if (cards != null) __obj.updateDynamic("cards")(cards)
     if (currency != null) __obj.updateDynamic("currency")(currency)

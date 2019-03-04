@@ -20,11 +20,8 @@ object IMysqlData {
     err: stdLib.Error,
     query: diagnosticDashChannelDashPublishersLib.Anon_Connection
   ): IMysqlData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackArgs")(callbackArgs)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(callbackArgs = callbackArgs, duration = duration, err = err, query = query)
+  
     __obj.asInstanceOf[IMysqlData]
   }
 }

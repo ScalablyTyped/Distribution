@@ -16,9 +16,8 @@ object Anon_OptionsShippingOption {
     shippingOption: stripeDashV3Lib.stripeNs.paymentRequestNs.ShippingOption,
     updateWith: js.Function1[stripeDashV3Lib.stripeNs.paymentRequestNs.UpdateDetails, scala.Unit]
   ): Anon_OptionsShippingOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shippingOption")(shippingOption)
-    __obj.updateDynamic("updateWith")(updateWith)
+    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = updateWith)
+  
     __obj.asInstanceOf[Anon_OptionsShippingOption]
   }
 }

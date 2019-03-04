@@ -18,8 +18,7 @@ object TracingStartOptions {
     categories: js.Array[java.lang.String] = null,
     screenshots: js.UndefOr[scala.Boolean] = js.undefined
   ): TracingStartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (!js.isUndefined(screenshots)) __obj.updateDynamic("screenshots")(screenshots)
     __obj.asInstanceOf[TracingStartOptions]

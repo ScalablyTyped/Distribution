@@ -36,19 +36,8 @@ object FormResponse {
     withItemGrade: js.Function1[ItemResponse, FormResponse],
     withItemResponse: js.Function1[ItemResponse, FormResponse]
   ): FormResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEditResponseUrl")(getEditResponseUrl)
-    __obj.updateDynamic("getGradableItemResponses")(getGradableItemResponses)
-    __obj.updateDynamic("getGradableResponseForItem")(getGradableResponseForItem)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getItemResponses")(getItemResponses)
-    __obj.updateDynamic("getRespondentEmail")(getRespondentEmail)
-    __obj.updateDynamic("getResponseForItem")(getResponseForItem)
-    __obj.updateDynamic("getTimestamp")(getTimestamp)
-    __obj.updateDynamic("submit")(submit)
-    __obj.updateDynamic("toPrefilledUrl")(toPrefilledUrl)
-    __obj.updateDynamic("withItemGrade")(withItemGrade)
-    __obj.updateDynamic("withItemResponse")(withItemResponse)
+    val __obj = js.Dynamic.literal(getEditResponseUrl = getEditResponseUrl, getGradableItemResponses = getGradableItemResponses, getGradableResponseForItem = getGradableResponseForItem, getId = getId, getItemResponses = getItemResponses, getRespondentEmail = getRespondentEmail, getResponseForItem = getResponseForItem, getTimestamp = getTimestamp, submit = submit, toPrefilledUrl = toPrefilledUrl, withItemGrade = withItemGrade, withItemResponse = withItemResponse)
+  
     __obj.asInstanceOf[FormResponse]
   }
 }

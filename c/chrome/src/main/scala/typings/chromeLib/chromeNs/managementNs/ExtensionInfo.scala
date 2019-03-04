@@ -125,20 +125,8 @@ object ExtensionInfo {
     launchType: java.lang.String = null,
     updateUrl: java.lang.String = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("hostPermissions")(hostPermissions)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("installType")(installType)
-    __obj.updateDynamic("isApp")(isApp)
-    __obj.updateDynamic("mayDisable")(mayDisable)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offlineEnabled")(offlineEnabled)
-    __obj.updateDynamic("optionsUrl")(optionsUrl)
-    __obj.updateDynamic("permissions")(permissions)
-    __obj.updateDynamic("shortName")(shortName)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(description = description, enabled = enabled, hostPermissions = hostPermissions, id = id, installType = installType, isApp = isApp, mayDisable = mayDisable, name = name, offlineEnabled = offlineEnabled, optionsUrl = optionsUrl, permissions = permissions, shortName = shortName, version = version)
+    __obj.updateDynamic("type")(`type`)
     if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl)
     if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes)
     if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)

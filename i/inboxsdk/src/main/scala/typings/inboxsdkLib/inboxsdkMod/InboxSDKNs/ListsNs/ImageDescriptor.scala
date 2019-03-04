@@ -20,8 +20,7 @@ object ImageDescriptor {
     orderHint: scala.Int | scala.Double = null,
     tooltip: java.lang.String = null
   ): ImageDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageUrl")(imageUrl)
+    val __obj = js.Dynamic.literal(imageUrl = imageUrl)
     if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
     if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)

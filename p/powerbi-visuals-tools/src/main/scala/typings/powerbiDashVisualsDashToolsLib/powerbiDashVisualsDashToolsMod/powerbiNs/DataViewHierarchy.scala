@@ -13,9 +13,8 @@ trait DataViewHierarchy extends js.Object {
 object DataViewHierarchy {
   @scala.inline
   def apply(levels: js.Array[DataViewHierarchyLevel], root: DataViewMatrixNode): DataViewHierarchy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("levels")(levels)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(levels = levels, root = root)
+  
     __obj.asInstanceOf[DataViewHierarchy]
   }
 }

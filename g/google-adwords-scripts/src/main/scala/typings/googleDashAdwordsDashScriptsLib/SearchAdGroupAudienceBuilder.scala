@@ -21,12 +21,8 @@ object SearchAdGroupAudienceBuilder {
     withAudienceId: js.Function1[scala.Double, SearchAdGroupAudienceBuilder[SearchAdGroupAudience]],
     withBidModifier: js.Function1[scala.Double, SearchAdGroupAudienceBuilder[SearchAdGroupAudience]]
   ): SearchAdGroupAudienceBuilder[SearchAdGroupAudience] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("withAudience")(withAudience)
-    __obj.updateDynamic("withAudienceId")(withAudienceId)
-    __obj.updateDynamic("withBidModifier")(withBidModifier)
+    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withAudience = withAudience, withAudienceId = withAudienceId, withBidModifier = withBidModifier)
+  
     __obj.asInstanceOf[SearchAdGroupAudienceBuilder[SearchAdGroupAudience]]
   }
 }

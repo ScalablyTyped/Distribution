@@ -25,11 +25,8 @@ object IIndexableContent {
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
     streamContentType: java.lang.String
   ): IIndexableContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("stream")(stream)
-    __obj.updateDynamic("streamContentType")(streamContentType)
+    val __obj = js.Dynamic.literal(id = id, properties = properties, stream = stream, streamContentType = streamContentType)
+  
     __obj.asInstanceOf[IIndexableContent]
   }
 }

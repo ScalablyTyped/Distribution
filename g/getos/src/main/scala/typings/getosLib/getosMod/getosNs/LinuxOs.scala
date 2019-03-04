@@ -20,10 +20,7 @@ object LinuxOs {
     release: java.lang.String,
     codename: java.lang.String = null
   ): LinuxOs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dist")(dist)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(dist = dist, os = os, release = release)
     if (codename != null) __obj.updateDynamic("codename")(codename)
     __obj.asInstanceOf[LinuxOs]
   }

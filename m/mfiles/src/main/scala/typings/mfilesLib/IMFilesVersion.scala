@@ -28,15 +28,8 @@ object IMFilesVersion {
     Patch: scala.Double,
     SoftwarePlatform: mfilesLib.MFilesNs.MFSoftwarePlatformType
   ): IMFilesVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Build")(Build)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CompareTo")(CompareTo)
-    __obj.updateDynamic("Display")(Display)
-    __obj.updateDynamic("Major")(Major)
-    __obj.updateDynamic("Minor")(Minor)
-    __obj.updateDynamic("Patch")(Patch)
-    __obj.updateDynamic("SoftwarePlatform")(SoftwarePlatform)
+    val __obj = js.Dynamic.literal(Build = Build, Clone = Clone, CompareTo = CompareTo, Display = Display, Major = Major, Minor = Minor, Patch = Patch, SoftwarePlatform = SoftwarePlatform)
+  
     __obj.asInstanceOf[IMFilesVersion]
   }
 }

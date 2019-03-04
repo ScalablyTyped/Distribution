@@ -31,13 +31,8 @@ object XListEntrySink {
     release: js.Function0[scala.Unit],
     setListEntrySource: js.Function1[XListEntrySource, scala.Unit]
   ): XListEntrySink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ListEntrySource")(ListEntrySource)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getListEntrySource")(getListEntrySource)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setListEntrySource")(setListEntrySource)
+    val __obj = js.Dynamic.literal(ListEntrySource = ListEntrySource, acquire = acquire, getListEntrySource = getListEntrySource, queryInterface = queryInterface, release = release, setListEntrySource = setListEntrySource)
+  
     __obj.asInstanceOf[XListEntrySink]
   }
 }

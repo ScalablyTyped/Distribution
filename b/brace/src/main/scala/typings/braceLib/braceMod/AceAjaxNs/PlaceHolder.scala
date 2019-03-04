@@ -56,15 +56,8 @@ object PlaceHolder {
     setup: js.Function0[scala.Unit],
     showOtherMarkers: js.Function0[scala.Unit]
   ): PlaceHolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("hideOtherMarkers")(hideOtherMarkers)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("onCursorChange")(onCursorChange)
-    __obj.updateDynamic("onUpdate")(onUpdate)
-    __obj.updateDynamic("setup")(setup)
-    __obj.updateDynamic("showOtherMarkers")(showOtherMarkers)
+    val __obj = js.Dynamic.literal(cancel = cancel, detach = detach, hideOtherMarkers = hideOtherMarkers, on = on, onCursorChange = onCursorChange, onUpdate = onUpdate, setup = setup, showOtherMarkers = showOtherMarkers)
+  
     __obj.asInstanceOf[PlaceHolder]
   }
 }

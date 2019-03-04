@@ -117,19 +117,9 @@ object Source {
     receiver: Receiver = null,
     redirect: Redirect = null
   ): Source = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(amount = amount, client_secret = client_secret, created = created, currency = currency, flow = flow.asInstanceOf[js.Any], id = id, livemode = livemode, metadata = metadata, owner = owner, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], usage = usage)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification)
     if (receiver != null) __obj.updateDynamic("receiver")(receiver)

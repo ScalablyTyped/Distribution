@@ -45,9 +45,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProfileId {
     synchronous: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProfileId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
-    __obj.updateDynamic("reportId")(reportId)
+    val __obj = js.Dynamic.literal(profileId = profileId, reportId = reportId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

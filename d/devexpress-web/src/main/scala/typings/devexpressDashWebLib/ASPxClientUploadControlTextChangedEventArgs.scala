@@ -19,8 +19,8 @@ trait ASPxClientUploadControlTextChangedEventArgs extends ASPxClientEventArgs {
 object ASPxClientUploadControlTextChangedEventArgs {
   @scala.inline
   def apply(inputIndex: scala.Double): ASPxClientUploadControlTextChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputIndex")(inputIndex)
+    val __obj = js.Dynamic.literal(inputIndex = inputIndex)
+  
     __obj.asInstanceOf[ASPxClientUploadControlTextChangedEventArgs]
   }
 }

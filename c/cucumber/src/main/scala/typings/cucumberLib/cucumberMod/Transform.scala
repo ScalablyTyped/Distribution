@@ -24,9 +24,7 @@ object Transform {
     typeName: java.lang.String = null,
     useForSnippets: js.UndefOr[scala.Boolean] = js.undefined
   ): Transform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("regexp")(regexp)
-    __obj.updateDynamic("transformer")(transformer)
+    val __obj = js.Dynamic.literal(regexp = regexp, transformer = transformer)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(preferForRegexpMatch)) __obj.updateDynamic("preferForRegexpMatch")(preferForRegexpMatch)
     if (typeName != null) __obj.updateDynamic("typeName")(typeName)

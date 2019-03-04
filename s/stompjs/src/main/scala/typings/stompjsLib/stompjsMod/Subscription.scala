@@ -13,9 +13,8 @@ trait Subscription extends js.Object {
 object Subscription {
   @scala.inline
   def apply(id: java.lang.String, unsubscribe: js.Function0[scala.Unit]): Subscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(id = id, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[Subscription]
   }
 }

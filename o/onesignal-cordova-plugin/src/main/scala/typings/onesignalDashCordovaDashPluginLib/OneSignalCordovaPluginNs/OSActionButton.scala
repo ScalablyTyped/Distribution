@@ -14,10 +14,8 @@ trait OSActionButton extends js.Object {
 object OSActionButton {
   @scala.inline
   def apply(icon: java.lang.String, id: java.lang.String, text: java.lang.String): OSActionButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(icon = icon, id = id, text = text)
+  
     __obj.asInstanceOf[OSActionButton]
   }
 }

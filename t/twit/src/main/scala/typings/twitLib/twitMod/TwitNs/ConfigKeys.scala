@@ -20,9 +20,7 @@ object ConfigKeys {
     access_token: java.lang.String = null,
     access_token_secret: java.lang.String = null
   ): ConfigKeys = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consumer_key")(consumer_key)
-    __obj.updateDynamic("consumer_secret")(consumer_secret)
+    val __obj = js.Dynamic.literal(consumer_key = consumer_key, consumer_secret = consumer_secret)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (access_token_secret != null) __obj.updateDynamic("access_token_secret")(access_token_secret)
     __obj.asInstanceOf[ConfigKeys]

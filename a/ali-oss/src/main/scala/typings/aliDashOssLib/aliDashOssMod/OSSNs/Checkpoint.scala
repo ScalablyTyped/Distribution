@@ -26,13 +26,8 @@ object Checkpoint {
     partSize: scala.Double,
     uploadId: java.lang.String
   ): Checkpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doneParts")(doneParts)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partSize")(partSize)
-    __obj.updateDynamic("uploadId")(uploadId)
+    val __obj = js.Dynamic.literal(doneParts = doneParts, file = file, fileSize = fileSize, name = name, partSize = partSize, uploadId = uploadId)
+  
     __obj.asInstanceOf[Checkpoint]
   }
 }

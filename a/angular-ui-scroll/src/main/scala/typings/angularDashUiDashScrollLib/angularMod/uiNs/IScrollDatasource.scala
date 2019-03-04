@@ -28,8 +28,8 @@ object IScrollDatasource {
   def apply[T](
     get: js.Function3[scala.Double, scala.Double, js.Function1[/* results */ js.Array[T], _], scala.Unit]
   ): IScrollDatasource[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[IScrollDatasource[T]]
   }
 }

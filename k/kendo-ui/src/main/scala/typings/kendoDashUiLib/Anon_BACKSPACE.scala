@@ -54,28 +54,8 @@ object Anon_BACKSPACE {
     TAB: scala.Double,
     UP: scala.Double
   ): Anon_BACKSPACE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BACKSPACE")(BACKSPACE)
-    __obj.updateDynamic("DELETE")(DELETE)
-    __obj.updateDynamic("DOWN")(DOWN)
-    __obj.updateDynamic("END")(END)
-    __obj.updateDynamic("ENTER")(ENTER)
-    __obj.updateDynamic("ESC")(ESC)
-    __obj.updateDynamic("F10")(F10)
-    __obj.updateDynamic("F12")(F12)
-    __obj.updateDynamic("F2")(F2)
-    __obj.updateDynamic("HOME")(HOME)
-    __obj.updateDynamic("INSERT")(INSERT)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("NUMPAD_DOT")(NUMPAD_DOT)
-    __obj.updateDynamic("NUMPAD_MINUS")(NUMPAD_MINUS)
-    __obj.updateDynamic("NUMPAD_PLUS")(NUMPAD_PLUS)
-    __obj.updateDynamic("PAGEDOWN")(PAGEDOWN)
-    __obj.updateDynamic("PAGEUP")(PAGEUP)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("SPACEBAR")(SPACEBAR)
-    __obj.updateDynamic("TAB")(TAB)
-    __obj.updateDynamic("UP")(UP)
+    val __obj = js.Dynamic.literal(BACKSPACE = BACKSPACE, DELETE = DELETE, DOWN = DOWN, END = END, ENTER = ENTER, ESC = ESC, F10 = F10, F12 = F12, F2 = F2, HOME = HOME, INSERT = INSERT, LEFT = LEFT, NUMPAD_DOT = NUMPAD_DOT, NUMPAD_MINUS = NUMPAD_MINUS, NUMPAD_PLUS = NUMPAD_PLUS, PAGEDOWN = PAGEDOWN, PAGEUP = PAGEUP, RIGHT = RIGHT, SPACEBAR = SPACEBAR, TAB = TAB, UP = UP)
+  
     __obj.asInstanceOf[Anon_BACKSPACE]
   }
 }

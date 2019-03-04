@@ -12,8 +12,8 @@ trait IAccelerometerShakenEventArgs extends js.Object {
 object IAccelerometerShakenEventArgs {
   @scala.inline
   def apply(timestamp: stdLib.Date): IAccelerometerShakenEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(timestamp = timestamp)
+  
     __obj.asInstanceOf[IAccelerometerShakenEventArgs]
   }
 }

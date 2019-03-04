@@ -16,9 +16,8 @@ object DefaultWebGLRendererPlugins {
     extract: pixiDotJsLib.PIXINs.extractNs.WebGLExtract,
     prepare: pixiDotJsLib.PIXINs.prepareNs.WebGLPrepare
   ): DefaultWebGLRendererPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extract")(extract)
-    __obj.updateDynamic("prepare")(prepare)
+    val __obj = js.Dynamic.literal(extract = extract, prepare = prepare)
+  
     __obj.asInstanceOf[DefaultWebGLRendererPlugins]
   }
 }

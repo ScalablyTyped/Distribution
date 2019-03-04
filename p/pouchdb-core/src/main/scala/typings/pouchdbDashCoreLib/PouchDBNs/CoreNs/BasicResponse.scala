@@ -13,8 +13,8 @@ trait BasicResponse extends js.Object {
 object BasicResponse {
   @scala.inline
   def apply(ok: scala.Boolean): BasicResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ok")(ok)
+    val __obj = js.Dynamic.literal(ok = ok)
+  
     __obj.asInstanceOf[BasicResponse]
   }
 }

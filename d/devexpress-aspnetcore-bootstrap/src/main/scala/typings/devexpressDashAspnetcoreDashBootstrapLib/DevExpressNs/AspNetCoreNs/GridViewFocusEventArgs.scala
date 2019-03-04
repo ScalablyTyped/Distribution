@@ -12,10 +12,8 @@ trait GridViewFocusEventArgs extends ProcessingModeEventArgs {
 object GridViewFocusEventArgs {
   @scala.inline
   def apply(isChangedOnServer: scala.Boolean, processOnServer: scala.Boolean, sender: Control): GridViewFocusEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isChangedOnServer")(isChangedOnServer)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isChangedOnServer = isChangedOnServer, processOnServer = processOnServer, sender = sender)
+  
     __obj.asInstanceOf[GridViewFocusEventArgs]
   }
 }

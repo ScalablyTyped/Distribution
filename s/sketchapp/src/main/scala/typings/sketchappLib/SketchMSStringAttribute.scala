@@ -13,9 +13,8 @@ trait SketchMSStringAttribute extends js.Object {
 object SketchMSStringAttribute {
   @scala.inline
   def apply(_class: sketchappLib.sketchappLibStrings.stringAttribute, attributes: Anon_ForegroundColor): SketchMSStringAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
+  
     __obj.asInstanceOf[SketchMSStringAttribute]
   }
 }

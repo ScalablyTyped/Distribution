@@ -92,11 +92,8 @@ object Anon_Capabilities {
       ]
     ]
   ): Anon_Capabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGetCapabilityRequested")(onGetCapabilityRequested)
-    __obj.updateDynamic("onGetPrintersRequested")(onGetPrintersRequested)
-    __obj.updateDynamic("onGetUsbPrinterInfoRequested")(onGetUsbPrinterInfoRequested)
-    __obj.updateDynamic("onPrintRequested")(onPrintRequested)
+    val __obj = js.Dynamic.literal(onGetCapabilityRequested = onGetCapabilityRequested, onGetPrintersRequested = onGetPrintersRequested, onGetUsbPrinterInfoRequested = onGetUsbPrinterInfoRequested, onPrintRequested = onPrintRequested)
+  
     __obj.asInstanceOf[Anon_Capabilities]
   }
 }

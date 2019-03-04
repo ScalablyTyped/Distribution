@@ -37,8 +37,7 @@ object CustomEditor {
     ],
     customEditorParameters: js.Object = null
   ): CustomEditor[TRow, K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElement")(getElement)
+    val __obj = js.Dynamic.literal(getElement = getElement)
     if (customEditorParameters != null) __obj.updateDynamic("customEditorParameters")(customEditorParameters)
     __obj.asInstanceOf[CustomEditor[TRow, K]]
   }

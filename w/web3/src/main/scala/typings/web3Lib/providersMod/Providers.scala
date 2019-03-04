@@ -34,10 +34,8 @@ object Providers {
       WebsocketProvider
     ]
   ): Providers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HttpProvider")(HttpProvider)
-    __obj.updateDynamic("IpcProvider")(IpcProvider)
-    __obj.updateDynamic("WebsocketProvider")(WebsocketProvider)
+    val __obj = js.Dynamic.literal(HttpProvider = HttpProvider, IpcProvider = IpcProvider, WebsocketProvider = WebsocketProvider)
+  
     __obj.asInstanceOf[Providers]
   }
 }

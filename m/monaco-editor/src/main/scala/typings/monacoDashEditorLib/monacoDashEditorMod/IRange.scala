@@ -32,11 +32,8 @@ object IRange {
     startColumn: scala.Double,
     startLineNumber: scala.Double
   ): IRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endColumn")(endColumn)
-    __obj.updateDynamic("endLineNumber")(endLineNumber)
-    __obj.updateDynamic("startColumn")(startColumn)
-    __obj.updateDynamic("startLineNumber")(startLineNumber)
+    val __obj = js.Dynamic.literal(endColumn = endColumn, endLineNumber = endLineNumber, startColumn = startColumn, startLineNumber = startLineNumber)
+  
     __obj.asInstanceOf[IRange]
   }
 }

@@ -31,10 +31,8 @@ object ApksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Apk]
     ]
   ): ApksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addexternallyhosted")(addexternallyhosted)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(addexternallyhosted = addexternallyhosted, list = list, upload = upload)
+  
     __obj.asInstanceOf[ApksResource]
   }
 }

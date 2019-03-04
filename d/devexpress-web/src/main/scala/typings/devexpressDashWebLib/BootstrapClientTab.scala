@@ -74,30 +74,8 @@ object BootstrapClientTab {
     name: java.lang.String,
     tabControl: ASPxClientTabControlBase
   ): BootstrapClientTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetActiveIconCssClass")(GetActiveIconCssClass)
-    __obj.updateDynamic("GetActiveImageUrl")(GetActiveImageUrl)
-    __obj.updateDynamic("GetBadgeIconCssClass")(GetBadgeIconCssClass)
-    __obj.updateDynamic("GetBadgeText")(GetBadgeText)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetIconCssClass")(GetIconCssClass)
-    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
-    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetActiveIconCssClass")(SetActiveIconCssClass)
-    __obj.updateDynamic("SetActiveImageUrl")(SetActiveImageUrl)
-    __obj.updateDynamic("SetBadgeIconCssClass")(SetBadgeIconCssClass)
-    __obj.updateDynamic("SetBadgeText")(SetBadgeText)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetIconCssClass")(SetIconCssClass)
-    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
-    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tabControl")(tabControl)
+    val __obj = js.Dynamic.literal(GetActiveIconCssClass = GetActiveIconCssClass, GetActiveImageUrl = GetActiveImageUrl, GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetActiveIconCssClass = SetActiveIconCssClass, SetActiveImageUrl = SetActiveImageUrl, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, tabControl = tabControl)
+  
     __obj.asInstanceOf[BootstrapClientTab]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerITreeSetMod.ITreeSet because var conflicts: `data_`, iterator. Inlined  */ @JSImport("tstl/container/TreeSet", "TreeSet")
+- tstlLib.baseContainerITreeSetMod.ITreeSet because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/TreeSet", "TreeSet")
 @js.native
 /**
   * Default Constructor.
@@ -50,7 +50,7 @@ class TreeSet[Key] ()
   /**
     * @hidden
     */
-  var `tree_`: js.Any = js.native
+  var tree_ : js.Any = js.native
   /**
     * @inheritDoc
     */

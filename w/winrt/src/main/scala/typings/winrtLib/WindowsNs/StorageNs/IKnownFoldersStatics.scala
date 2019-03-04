@@ -26,14 +26,8 @@ object IKnownFoldersStatics {
     removableDevices: StorageFolder,
     videosLibrary: StorageFolder
   ): IKnownFoldersStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("documentsLibrary")(documentsLibrary)
-    __obj.updateDynamic("homeGroup")(homeGroup)
-    __obj.updateDynamic("mediaServerDevices")(mediaServerDevices)
-    __obj.updateDynamic("musicLibrary")(musicLibrary)
-    __obj.updateDynamic("picturesLibrary")(picturesLibrary)
-    __obj.updateDynamic("removableDevices")(removableDevices)
-    __obj.updateDynamic("videosLibrary")(videosLibrary)
+    val __obj = js.Dynamic.literal(documentsLibrary = documentsLibrary, homeGroup = homeGroup, mediaServerDevices = mediaServerDevices, musicLibrary = musicLibrary, picturesLibrary = picturesLibrary, removableDevices = removableDevices, videosLibrary = videosLibrary)
+  
     __obj.asInstanceOf[IKnownFoldersStatics]
   }
 }

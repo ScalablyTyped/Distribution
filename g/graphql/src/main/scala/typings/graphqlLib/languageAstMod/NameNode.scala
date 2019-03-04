@@ -14,9 +14,7 @@ trait NameNode extends ASTNode {
 object NameNode {
   @scala.inline
   def apply(kind: graphqlLib.graphqlLibStrings.Name, value: java.lang.String, loc: Location = null): NameNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[NameNode]
   }

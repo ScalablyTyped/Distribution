@@ -20,11 +20,8 @@ object Anon_Action {
     logByName: js.Function1[java.lang.String, scala.Unit],
     logNone: js.Function0[scala.Unit]
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logAll")(logAll)
-    __obj.updateDynamic("logByAction")(logByAction)
-    __obj.updateDynamic("logByName")(logByName)
-    __obj.updateDynamic("logNone")(logNone)
+    val __obj = js.Dynamic.literal(logAll = logAll, logByAction = logByAction, logByName = logByName, logNone = logNone)
+  
     __obj.asInstanceOf[Anon_Action]
   }
 }

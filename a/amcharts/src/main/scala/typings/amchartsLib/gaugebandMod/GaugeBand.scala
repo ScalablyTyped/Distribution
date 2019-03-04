@@ -76,19 +76,8 @@ object GaugeBand {
     startValue: scala.Double,
     url: java.lang.String
   ): GaugeBand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("balloonText")(balloonText)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("endValue")(endValue)
-    __obj.updateDynamic("gradientRatio")(gradientRatio)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("innerRadius")(innerRadius)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("setEndValue")(setEndValue)
-    __obj.updateDynamic("setStartValue")(setStartValue)
-    __obj.updateDynamic("startValue")(startValue)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(alpha = alpha, balloonText = balloonText, color = color, endValue = endValue, gradientRatio = gradientRatio, id = id, innerRadius = innerRadius, radius = radius, setEndValue = setEndValue, setStartValue = setStartValue, startValue = startValue, url = url)
+  
     __obj.asInstanceOf[GaugeBand]
   }
 }

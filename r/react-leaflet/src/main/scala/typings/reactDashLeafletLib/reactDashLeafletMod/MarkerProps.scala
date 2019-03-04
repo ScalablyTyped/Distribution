@@ -51,8 +51,7 @@ object MarkerProps {
     title: java.lang.String = null,
     zIndexOffset: scala.Int | scala.Double = null
   ): MarkerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan)

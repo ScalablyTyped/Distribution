@@ -64,9 +64,7 @@ object Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("guardianId")(guardianId)
-    __obj.updateDynamic("studentId")(studentId)
+    val __obj = js.Dynamic.literal(guardianId = guardianId, studentId = studentId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

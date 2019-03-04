@@ -44,22 +44,8 @@ object Groupbuy {
     type_code: java.lang.String,
     url: java.lang.String
   ): Groupbuy = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("discount")(discount)
-    __obj.updateDynamic("etime")(etime)
-    __obj.updateDynamic("groupbuy_price")(groupbuy_price)
-    __obj.updateDynamic("original_price")(original_price)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("sold_num")(sold_num)
-    __obj.updateDynamic("stime")(stime)
-    __obj.updateDynamic("ticket_address")(ticket_address)
-    __obj.updateDynamic("ticket_tel")(ticket_tel)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("type_code")(type_code)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(count = count, detail = detail, discount = discount, etime = etime, groupbuy_price = groupbuy_price, original_price = original_price, photos = photos, provider = provider, sold_num = sold_num, stime = stime, ticket_address = ticket_address, ticket_tel = ticket_tel, title = title, type_code = type_code, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Groupbuy]
   }
 }

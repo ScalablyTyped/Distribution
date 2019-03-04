@@ -16,7 +16,8 @@ object MergeTypeCandidate {
     `type`: graphqlLib.typeDefinitionMod.GraphQLNamedType,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null
   ): MergeTypeCandidate = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema)
     __obj.asInstanceOf[MergeTypeCandidate]
   }

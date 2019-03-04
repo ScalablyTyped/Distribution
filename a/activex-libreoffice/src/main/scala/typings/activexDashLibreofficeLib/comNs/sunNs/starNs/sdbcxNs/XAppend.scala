@@ -25,11 +25,8 @@ object XAppend {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAppend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendByDescriptor")(appendByDescriptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, appendByDescriptor = appendByDescriptor, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAppend]
   }
 }

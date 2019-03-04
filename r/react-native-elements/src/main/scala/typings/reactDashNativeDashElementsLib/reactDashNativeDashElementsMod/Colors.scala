@@ -44,23 +44,8 @@ object Colors {
     success: java.lang.String,
     warning: java.lang.String
   ): Colors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("divider")(divider)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("grey0")(grey0)
-    __obj.updateDynamic("grey1")(grey1)
-    __obj.updateDynamic("grey2")(grey2)
-    __obj.updateDynamic("grey3")(grey3)
-    __obj.updateDynamic("grey4")(grey4)
-    __obj.updateDynamic("grey5")(grey5)
-    __obj.updateDynamic("greyOutline")(greyOutline)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("primary")(primary)
-    __obj.updateDynamic("searchBg")(searchBg)
-    __obj.updateDynamic("secondary")(secondary)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(disabled = disabled, divider = divider, error = error, grey0 = grey0, grey1 = grey1, grey2 = grey2, grey3 = grey3, grey4 = grey4, grey5 = grey5, greyOutline = greyOutline, platform = platform, primary = primary, searchBg = searchBg, secondary = secondary, success = success, warning = warning)
+  
     __obj.asInstanceOf[Colors]
   }
 }

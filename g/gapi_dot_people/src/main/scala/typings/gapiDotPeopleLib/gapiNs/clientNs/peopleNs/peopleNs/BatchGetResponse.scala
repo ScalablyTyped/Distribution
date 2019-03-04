@@ -12,8 +12,8 @@ trait BatchGetResponse extends js.Object {
 object BatchGetResponse {
   @scala.inline
   def apply(responses: js.Array[PersonResponse]): BatchGetResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responses")(responses)
+    val __obj = js.Dynamic.literal(responses = responses)
+  
     __obj.asInstanceOf[BatchGetResponse]
   }
 }

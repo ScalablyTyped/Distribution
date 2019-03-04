@@ -96,8 +96,7 @@ object AuditEventAgent {
     role: js.Array[CodeableConcept] = null,
     userId: Identifier = null
   ): AuditEventAgent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestor")(requestor)
+    val __obj = js.Dynamic.literal(requestor = requestor)
     if (_altId != null) __obj.updateDynamic("_altId")(_altId)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

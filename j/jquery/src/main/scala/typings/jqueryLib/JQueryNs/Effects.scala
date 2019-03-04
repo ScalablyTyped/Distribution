@@ -135,13 +135,8 @@ object Effects {
     tick: js.Function0[scala.Unit],
     timer: js.Function1[TickFunction[_], scala.Unit]
   ): Effects = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("tick")(tick)
-    __obj.updateDynamic("timer")(timer)
+    val __obj = js.Dynamic.literal(interval = interval, off = off, step = step, stop = stop, tick = tick, timer = timer)
+  
     __obj.asInstanceOf[Effects]
   }
 }

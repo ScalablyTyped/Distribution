@@ -51,15 +51,8 @@ object relationshipRendererResult {
     renderer: UniqueValueRenderer,
     uniqueValueInfos: js.Array[UniqueValueInfo]
   ): relationshipRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("classBreaks")(classBreaks)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("relationshipScheme")(relationshipScheme)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("uniqueValueInfos")(uniqueValueInfos)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, classBreaks = classBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, relationshipScheme = relationshipScheme, renderer = renderer, uniqueValueInfos = uniqueValueInfos)
+  
     __obj.asInstanceOf[relationshipRendererResult]
   }
 }

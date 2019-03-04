@@ -99,20 +99,8 @@ object TurnBasedMatchesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
     ]
   ): TurnBasedMatchesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("decline")(decline)
-    __obj.updateDynamic("dismiss")(dismiss)
-    __obj.updateDynamic("finish")(finish)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("leave")(leave)
-    __obj.updateDynamic("leaveTurn")(leaveTurn)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("rematch")(rematch)
-    __obj.updateDynamic("sync")(sync)
-    __obj.updateDynamic("takeTurn")(takeTurn)
+    val __obj = js.Dynamic.literal(cancel = cancel, create = create, decline = decline, dismiss = dismiss, finish = finish, get = get, join = join, leave = leave, leaveTurn = leaveTurn, list = list, rematch = rematch, sync = sync, takeTurn = takeTurn)
+  
     __obj.asInstanceOf[TurnBasedMatchesResource]
   }
 }

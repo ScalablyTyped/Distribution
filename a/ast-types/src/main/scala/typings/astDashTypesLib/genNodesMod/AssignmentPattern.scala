@@ -23,9 +23,8 @@ object AssignmentPattern {
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.AssignmentPattern
   ): AssignmentPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, right = right)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AssignmentPattern]
   }
 }

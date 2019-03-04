@@ -18,9 +18,7 @@ object Anon_FromCollapsible {
     toCollapsible: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_FromCollapsible = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromCollapsible")(fromCollapsible)
-    __obj.updateDynamic("toCollapsible")(toCollapsible)
+    val __obj = js.Dynamic.literal(fromCollapsible = fromCollapsible, toCollapsible = toCollapsible)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromCollapsible]
   }

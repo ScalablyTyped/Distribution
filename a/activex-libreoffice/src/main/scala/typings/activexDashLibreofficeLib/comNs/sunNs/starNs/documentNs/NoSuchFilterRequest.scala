@@ -31,10 +31,8 @@ object NoSuchFilterRequest {
     Message: java.lang.String,
     URL: java.lang.String
   ): NoSuchFilterRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, URL = URL)
+  
     __obj.asInstanceOf[NoSuchFilterRequest]
   }
 }

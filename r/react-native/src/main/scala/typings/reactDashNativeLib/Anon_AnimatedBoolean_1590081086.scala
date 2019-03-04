@@ -12,8 +12,8 @@ trait Anon_AnimatedBoolean_1590081086 extends js.Object {
 object Anon_AnimatedBoolean_1590081086 {
   @scala.inline
   def apply(animated: scala.Boolean): Anon_AnimatedBoolean_1590081086 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animated")(animated)
+    val __obj = js.Dynamic.literal(animated = animated)
+  
     __obj.asInstanceOf[Anon_AnimatedBoolean_1590081086]
   }
 }

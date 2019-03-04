@@ -73,19 +73,8 @@ object CarouselSlideRenderControlProps {
     slidesToShow: scala.Double,
     wrapAround: scala.Boolean
   ): CarouselSlideRenderControlProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellAlign")(cellAlign)
-    __obj.updateDynamic("cellSpacing")(cellSpacing)
-    __obj.updateDynamic("currentSlide")(currentSlide)
-    __obj.updateDynamic("frameWidth")(frameWidth)
-    __obj.updateDynamic("goToSlide")(goToSlide)
-    __obj.updateDynamic("nextSlide")(nextSlide)
-    __obj.updateDynamic("previousSlide")(previousSlide)
-    __obj.updateDynamic("slideCount")(slideCount)
-    __obj.updateDynamic("slideWidth")(slideWidth)
-    __obj.updateDynamic("slidesToScroll")(slidesToScroll)
-    __obj.updateDynamic("slidesToShow")(slidesToShow)
-    __obj.updateDynamic("wrapAround")(wrapAround)
+    val __obj = js.Dynamic.literal(cellAlign = cellAlign, cellSpacing = cellSpacing, currentSlide = currentSlide, frameWidth = frameWidth, goToSlide = goToSlide, nextSlide = nextSlide, previousSlide = previousSlide, slideCount = slideCount, slideWidth = slideWidth, slidesToScroll = slidesToScroll, slidesToShow = slidesToShow, wrapAround = wrapAround)
+  
     __obj.asInstanceOf[CarouselSlideRenderControlProps]
   }
 }

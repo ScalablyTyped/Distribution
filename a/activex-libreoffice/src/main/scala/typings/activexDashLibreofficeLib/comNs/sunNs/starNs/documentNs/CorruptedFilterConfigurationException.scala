@@ -22,10 +22,8 @@ object CorruptedFilterConfigurationException {
     Details: java.lang.String,
     Message: java.lang.String
   ): CorruptedFilterConfigurationException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Details")(Details)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, Details = Details, Message = Message)
+  
     __obj.asInstanceOf[CorruptedFilterConfigurationException]
   }
 }

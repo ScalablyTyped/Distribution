@@ -13,9 +13,8 @@ trait GridLine extends js.Object {
 object GridLine {
   @scala.inline
   def apply(nodes: js.Array[NodeWrapper], pos: scala.Double): GridLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("pos")(pos)
+    val __obj = js.Dynamic.literal(nodes = nodes, pos = pos)
+  
     __obj.asInstanceOf[GridLine]
   }
 }

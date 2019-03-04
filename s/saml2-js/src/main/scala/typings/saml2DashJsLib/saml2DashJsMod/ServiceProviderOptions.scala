@@ -34,11 +34,7 @@ object ServiceProviderOptions {
     nameid_format: java.lang.String = null,
     sign_get_request: js.UndefOr[scala.Boolean] = js.undefined
   ): ServiceProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assert_endpoint")(assert_endpoint)
-    __obj.updateDynamic("certificate")(certificate)
-    __obj.updateDynamic("entity_id")(entity_id)
-    __obj.updateDynamic("private_key")(private_key)
+    val __obj = js.Dynamic.literal(assert_endpoint = assert_endpoint, certificate = certificate, entity_id = entity_id, private_key = private_key)
     if (!js.isUndefined(allow_unencrypted_assertion)) __obj.updateDynamic("allow_unencrypted_assertion")(allow_unencrypted_assertion)
     if (alt_certs != null) __obj.updateDynamic("alt_certs")(alt_certs)
     if (alt_private_keys != null) __obj.updateDynamic("alt_private_keys")(alt_private_keys)

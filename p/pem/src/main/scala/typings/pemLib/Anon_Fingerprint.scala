@@ -12,8 +12,8 @@ trait Anon_Fingerprint extends js.Object {
 object Anon_Fingerprint {
   @scala.inline
   def apply(fingerprint: java.lang.String): Anon_Fingerprint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
+  
     __obj.asInstanceOf[Anon_Fingerprint]
   }
 }

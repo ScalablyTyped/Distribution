@@ -44,10 +44,7 @@ object WebSceneUpdateFromOptions {
     thumbnailSize: WebSceneUpdateFromOptionsThumbnailSize = null,
     viewpointExcluded: js.UndefOr[scala.Boolean] = js.undefined
   ): WebSceneUpdateFromOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(environmentExcluded)) __obj.updateDynamic("environmentExcluded")(environmentExcluded)
     if (!js.isUndefined(thumbnailExcluded)) __obj.updateDynamic("thumbnailExcluded")(thumbnailExcluded)
     if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize)

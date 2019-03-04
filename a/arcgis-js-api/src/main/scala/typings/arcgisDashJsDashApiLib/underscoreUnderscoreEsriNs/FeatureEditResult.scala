@@ -30,12 +30,8 @@ object FeatureEditResult {
     objectId: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): FeatureEditResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, error = error, hasOwnProperty = hasOwnProperty, objectId = objectId, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[FeatureEditResult]
   }
 }

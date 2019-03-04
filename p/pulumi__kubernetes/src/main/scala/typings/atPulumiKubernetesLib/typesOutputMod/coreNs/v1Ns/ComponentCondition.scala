@@ -36,10 +36,8 @@ object ComponentCondition {
     status: java.lang.String,
     `type`: java.lang.String
   ): ComponentCondition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(error = error, message = message, status = status)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ComponentCondition]
   }
 }

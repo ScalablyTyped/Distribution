@@ -33,10 +33,8 @@ object Anon_Location {
     originalIndex: scala.Double,
     placeId: java.lang.String
   ): Anon_Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("originalIndex")(originalIndex)
-    __obj.updateDynamic("placeId")(placeId)
+    val __obj = js.Dynamic.literal(location = location, originalIndex = originalIndex, placeId = placeId)
+  
     __obj.asInstanceOf[Anon_Location]
   }
 }

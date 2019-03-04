@@ -18,8 +18,7 @@ object Anon_DeviceNameNoDevice {
     noDevice: js.UndefOr[scala.Boolean] = js.undefined,
     virtualName: java.lang.String = null
   ): Anon_DeviceNameNoDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName)
+    val __obj = js.Dynamic.literal(deviceName = deviceName)
     if (!js.isUndefined(noDevice)) __obj.updateDynamic("noDevice")(noDevice)
     if (virtualName != null) __obj.updateDynamic("virtualName")(virtualName)
     __obj.asInstanceOf[Anon_DeviceNameNoDevice]

@@ -12,8 +12,8 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(postbox: KnockoutPostBox): KnockoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postbox")(postbox)
+    val __obj = js.Dynamic.literal(postbox = postbox)
+  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

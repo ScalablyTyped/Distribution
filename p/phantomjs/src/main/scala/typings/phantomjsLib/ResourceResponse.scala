@@ -32,15 +32,7 @@ object ResourceResponse {
     contentType: java.lang.String = null,
     redirectURL: java.lang.String = null
   ): ResourceResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bodySize")(bodySize)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bodySize = bodySize, headers = headers, id = id, stage = stage, status = status, statusText = statusText, time = time, url = url)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
     __obj.asInstanceOf[ResourceResponse]

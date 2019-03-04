@@ -22,9 +22,7 @@ object DatastoreKey {
     name: java.lang.String = null,
     parent: DatastoreKey = null
   ): DatastoreKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(kind = kind, path = path)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parent != null) __obj.updateDynamic("parent")(parent)

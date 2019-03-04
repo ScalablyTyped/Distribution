@@ -45,12 +45,8 @@ object ASPxSchedulerDateTimeHelperStatic {
     ToDayTime: js.Function1[stdLib.Date, js.Any],
     TruncToDate: js.Function1[stdLib.Date, stdLib.Date]
   ): ASPxSchedulerDateTimeHelperStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddDays")(AddDays)
-    __obj.updateDynamic("AddTimeSpan")(AddTimeSpan)
-    __obj.updateDynamic("CeilDateTime")(CeilDateTime)
-    __obj.updateDynamic("ToDayTime")(ToDayTime)
-    __obj.updateDynamic("TruncToDate")(TruncToDate)
+    val __obj = js.Dynamic.literal(AddDays = AddDays, AddTimeSpan = AddTimeSpan, CeilDateTime = CeilDateTime, ToDayTime = ToDayTime, TruncToDate = TruncToDate)
+  
     __obj.asInstanceOf[ASPxSchedulerDateTimeHelperStatic]
   }
 }

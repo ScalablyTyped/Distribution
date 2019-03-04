@@ -17,8 +17,7 @@ object FlagProps {
     as: js.Any = null,
     className: java.lang.String = null
   ): FlagProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (as != null) __obj.updateDynamic("as")(as)
     if (className != null) __obj.updateDynamic("className")(className)

@@ -21,9 +21,8 @@ object Anon_GetSearch {
     ],
     search: js.Function1[Anon_Engine, js.Promise[_]]
   ): Anon_GetSearch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(get = get, search = search)
+  
     __obj.asInstanceOf[Anon_GetSearch]
   }
 }

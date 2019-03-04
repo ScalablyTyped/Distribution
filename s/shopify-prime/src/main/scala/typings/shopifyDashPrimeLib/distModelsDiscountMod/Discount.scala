@@ -96,9 +96,7 @@ object Discount {
     usage_limit: scala.Int | scala.Double = null,
     value: java.lang.String = null
   ): Discount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("discount_type")(discount_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code, discount_type = discount_type.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (!js.isUndefined(applies_once)) __obj.updateDynamic("applies_once")(applies_once)
     if (!js.isUndefined(applies_once_per_customer)) __obj.updateDynamic("applies_once_per_customer")(applies_once_per_customer)

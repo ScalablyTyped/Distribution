@@ -15,11 +15,8 @@ trait RunePageDto extends js.Object {
 object RunePageDto {
   @scala.inline
   def apply(current: scala.Boolean, id: scala.Double, name: java.lang.String, slots: js.Array[RuneSlotDto]): RunePageDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("slots")(slots)
+    val __obj = js.Dynamic.literal(current = current, id = id, name = name, slots = slots)
+  
     __obj.asInstanceOf[RunePageDto]
   }
 }

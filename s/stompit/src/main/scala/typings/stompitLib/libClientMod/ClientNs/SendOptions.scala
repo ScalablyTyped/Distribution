@@ -44,9 +44,7 @@ object SendOptions {
       scala.Unit
     ] = null
   ): SendOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onReceipt")(onReceipt)
+    val __obj = js.Dynamic.literal(onError = onError, onReceipt = onReceipt)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (`final` != null) __obj.updateDynamic("final")(`final`)

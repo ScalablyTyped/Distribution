@@ -22,8 +22,7 @@ object Anon_CaFile {
     keyFile: java.lang.String = null,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CaFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(enabled = enabled)
     if (caFile != null) __obj.updateDynamic("caFile")(caFile)
     if (certFile != null) __obj.updateDynamic("certFile")(certFile)
     if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)

@@ -228,8 +228,7 @@ object DraggableFlatListProps {
     windowSize: scala.Int | scala.Double = null,
     zoomScale: scala.Int | scala.Double = null
   ): DraggableFlatListProps[Item] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderItem")(renderItem)
+    val __obj = js.Dynamic.literal(renderItem = renderItem)
     if (ListEmptyComponent != null) __obj.updateDynamic("ListEmptyComponent")(ListEmptyComponent.asInstanceOf[js.Any])
     if (ListFooterComponent != null) __obj.updateDynamic("ListFooterComponent")(ListFooterComponent.asInstanceOf[js.Any])
     if (ListHeaderComponent != null) __obj.updateDynamic("ListHeaderComponent")(ListHeaderComponent.asInstanceOf[js.Any])

@@ -28,15 +28,8 @@ object UserInfo {
     uniqueId: java.lang.String,
     userId: java.lang.String
   ): UserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayableId")(displayableId)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("givenName")(givenName)
-    __obj.updateDynamic("identityProvider")(identityProvider)
-    __obj.updateDynamic("passwordChangeUrl")(passwordChangeUrl)
-    __obj.updateDynamic("passwordExpiresOn")(passwordExpiresOn)
-    __obj.updateDynamic("uniqueId")(uniqueId)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(displayableId = displayableId, familyName = familyName, givenName = givenName, identityProvider = identityProvider, passwordChangeUrl = passwordChangeUrl, passwordExpiresOn = passwordExpiresOn, uniqueId = uniqueId, userId = userId)
+  
     __obj.asInstanceOf[UserInfo]
   }
 }

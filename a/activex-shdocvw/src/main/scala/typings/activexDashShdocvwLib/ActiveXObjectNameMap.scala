@@ -20,8 +20,11 @@ object ActiveXObjectNameMap {
     `Shell.UIHelper`: activexDashShdocvwLib.SHDocVwNs.ShellUIHelper,
     `ShellNameSpace.ShellNameSpace`: activexDashShdocvwLib.SHDocVwNs.ShellNameSpace
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`InternetExplorer.Application` = `InternetExplorer.Application`, `Shell.Explorer` = `Shell.Explorer`, `Shell.UIHelper` = `Shell.UIHelper`, `ShellNameSpace.ShellNameSpace` = `ShellNameSpace.ShellNameSpace`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("InternetExplorer.Application")(`InternetExplorer.Application`)
+    __obj.updateDynamic("Shell.Explorer")(`Shell.Explorer`)
+    __obj.updateDynamic("Shell.UIHelper")(`Shell.UIHelper`)
+    __obj.updateDynamic("ShellNameSpace.ShellNameSpace")(`ShellNameSpace.ShellNameSpace`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

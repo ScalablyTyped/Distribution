@@ -87,22 +87,8 @@ object GraphDataItem {
     x: scala.Double,
     y: scala.Double
   ): GraphDataItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("bullet")(bullet)
-    __obj.updateDynamic("bulletSize")(bulletSize)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("customBullet")(customBullet)
-    __obj.updateDynamic("dataContext")(dataContext)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("fillColors")(fillColors)
-    __obj.updateDynamic("percents")(percents)
-    __obj.updateDynamic("serialDataItem")(serialDataItem)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("values")(values)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(alpha = alpha, bullet = bullet, bulletSize = bulletSize, category = category, color = color, customBullet = customBullet, dataContext = dataContext, description = description, fillColors = fillColors, percents = percents, serialDataItem = serialDataItem, url = url, values = values, x = x, y = y)
+  
     __obj.asInstanceOf[GraphDataItem]
   }
 }

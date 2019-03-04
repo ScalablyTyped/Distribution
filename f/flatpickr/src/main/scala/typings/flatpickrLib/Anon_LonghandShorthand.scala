@@ -68,9 +68,8 @@ object Anon_LonghandShorthand {
       java.lang.String
     ]
   ): Anon_LonghandShorthand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("longhand")(longhand)
-    __obj.updateDynamic("shorthand")(shorthand)
+    val __obj = js.Dynamic.literal(longhand = longhand, shorthand = shorthand)
+  
     __obj.asInstanceOf[Anon_LonghandShorthand]
   }
 }

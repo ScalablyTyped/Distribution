@@ -13,9 +13,8 @@ trait Anon_CharIndex extends js.Object {
 object Anon_CharIndex {
   @scala.inline
   def apply(charIndex: scala.Double, lineIndex: scala.Double): Anon_CharIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charIndex")(charIndex)
-    __obj.updateDynamic("lineIndex")(lineIndex)
+    val __obj = js.Dynamic.literal(charIndex = charIndex, lineIndex = lineIndex)
+  
     __obj.asInstanceOf[Anon_CharIndex]
   }
 }

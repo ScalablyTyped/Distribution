@@ -86,8 +86,7 @@ object TestScriptMetadataCapability {
     required: js.UndefOr[scala.Boolean] = js.undefined,
     validated: js.UndefOr[scala.Boolean] = js.undefined
   ): TestScriptMetadataCapability = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
+    val __obj = js.Dynamic.literal(capabilities = capabilities)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_destination != null) __obj.updateDynamic("_destination")(_destination)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

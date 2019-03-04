@@ -23,8 +23,7 @@ object RequestBodyDefinition {
     raw: java.lang.String = null,
     urlencoded: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | java.lang.String = null
   ): RequestBodyDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (formdata != null) __obj.updateDynamic("formdata")(formdata.asInstanceOf[js.Any])

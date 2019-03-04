@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashOrderBy extends js.Object {
   def apply(
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
   ): LodashOrderBy1x2 = js.native
   def apply[T](
@@ -37,39 +37,39 @@ trait LodashOrderBy extends js.Object {
   ): js.Array[T] = js.native
   def apply[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.ValueIteratee[T]],
-    orders: lodashLib.lodashMod.underscoreNs.`__`
+    orders: lodashLib.lodashMod.underscoreNs.__
   ): LodashOrderBy2x5[T] = js.native
   def apply[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ],
-    orders: lodashLib.lodashMod.underscoreNs.`__`,
+    orders: lodashLib.lodashMod.underscoreNs.__,
     collection: T
   ): LodashOrderBy4x5[T] = js.native
   def apply[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.ValueIteratee[T]],
-    orders: lodashLib.lodashMod.underscoreNs.`__`,
+    orders: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashOrderBy2x5[T] = js.native
   def apply[T /* <: js.Object */](
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc],
     collection: T
   ): LodashOrderBy3x6[T] = js.native
   def apply[T](
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashOrderBy1x6[T] = js.native
-  def apply[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.`__`, orders: lodashLib.lodashMod.underscoreNs.`__`): LodashOrderBy3x4[T] = js.native
+  def apply[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.__, orders: lodashLib.lodashMod.underscoreNs.__): LodashOrderBy3x4[T] = js.native
   def apply[T /* <: js.Object */](
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
-    orders: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
+    orders: lodashLib.lodashMod.underscoreNs.__,
     collection: T
   ): LodashOrderBy3x4[T] = js.native
   def apply[T](
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
-    orders: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
+    orders: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashOrderBy1x4[T] = js.native
 }

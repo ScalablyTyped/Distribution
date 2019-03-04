@@ -31,9 +31,8 @@ object FunctionDeclaration {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): FunctionDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(body = body, params = params)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator)
     if (id != null) __obj.updateDynamic("id")(id)

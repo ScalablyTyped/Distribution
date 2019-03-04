@@ -22,10 +22,8 @@ object Anon_Cards {
     key: scala.Double,
     navigationState: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.NavigationState[Anon_Params]
   ): Anon_Cards = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cards")(cards)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("navigationState")(navigationState)
+    val __obj = js.Dynamic.literal(cards = cards, key = key, navigationState = navigationState)
+  
     __obj.asInstanceOf[Anon_Cards]
   }
 }

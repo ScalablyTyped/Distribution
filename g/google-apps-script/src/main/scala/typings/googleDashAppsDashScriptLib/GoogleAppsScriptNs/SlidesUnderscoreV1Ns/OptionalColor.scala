@@ -14,8 +14,8 @@ trait OptionalColor extends js.Object {
 object OptionalColor {
   @scala.inline
   def apply(opaque_color: OpaqueColor): OptionalColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("opaque_color")(opaque_color)
+    val __obj = js.Dynamic.literal(opaque_color = opaque_color)
+  
     __obj.asInstanceOf[OptionalColor]
   }
 }

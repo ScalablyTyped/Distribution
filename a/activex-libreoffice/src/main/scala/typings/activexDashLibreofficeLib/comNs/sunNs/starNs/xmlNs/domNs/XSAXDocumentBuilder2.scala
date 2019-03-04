@@ -41,27 +41,8 @@ object XSAXDocumentBuilder2 {
       scala.Unit
     ]
   ): XSAXDocumentBuilder2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Document")(Document)
-    __obj.updateDynamic("DocumentFragment")(DocumentFragment)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("endDocument")(endDocument)
-    __obj.updateDynamic("endDocumentFragment")(endDocumentFragment)
-    __obj.updateDynamic("endElement")(endElement)
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("getDocumentFragment")(getDocumentFragment)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
-    __obj.updateDynamic("startDocument")(startDocument)
-    __obj.updateDynamic("startDocumentFragment")(startDocumentFragment)
-    __obj.updateDynamic("startElement")(startElement)
+    val __obj = js.Dynamic.literal(Document = Document, DocumentFragment = DocumentFragment, State = State, acquire = acquire, characters = characters, endDocument = endDocument, endDocumentFragment = endDocumentFragment, endElement = endElement, getDocument = getDocument, getDocumentFragment = getDocumentFragment, getState = getState, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, reset = reset, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startDocumentFragment = startDocumentFragment, startElement = startElement)
+  
     __obj.asInstanceOf[XSAXDocumentBuilder2]
   }
 }

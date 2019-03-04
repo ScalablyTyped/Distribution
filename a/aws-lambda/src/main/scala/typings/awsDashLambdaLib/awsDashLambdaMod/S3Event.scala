@@ -12,8 +12,8 @@ trait S3Event extends js.Object {
 object S3Event {
   @scala.inline
   def apply(Records: js.Array[S3EventRecord]): S3Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Records")(Records)
+    val __obj = js.Dynamic.literal(Records = Records)
+  
     __obj.asInstanceOf[S3Event]
   }
 }

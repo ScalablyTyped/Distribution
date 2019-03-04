@@ -63,11 +63,7 @@ object Anon_AltFieldsInstanceGroupManagerKeyOauthtoken {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsInstanceGroupManagerKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceGroupManager")(instanceGroupManager)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(instanceGroupManager = instanceGroupManager, project = project, size = size, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

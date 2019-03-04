@@ -17,8 +17,8 @@ trait CreateTracingOptions extends js.Object {
 object CreateTracingOptions {
   @scala.inline
   def apply(categories: js.Array[java.lang.String]): CreateTracingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(categories = categories)
+  
     __obj.asInstanceOf[CreateTracingOptions]
   }
 }

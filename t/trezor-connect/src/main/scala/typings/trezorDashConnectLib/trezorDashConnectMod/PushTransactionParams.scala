@@ -20,9 +20,7 @@ object PushTransactionParams {
     keepSession: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): PushTransactionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coin")(coin)
-    __obj.updateDynamic("tx")(tx)
+    val __obj = js.Dynamic.literal(coin = coin, tx = tx)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (device != null) __obj.updateDynamic("device")(device)
     if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)

@@ -34,24 +34,8 @@ object LayerManager {
     release: js.Function0[scala.Unit],
     remove: js.Function1[XLayer, scala.Unit]
   ): LayerManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("attachShapeToLayer")(attachShapeToLayer)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLayerForShape")(getLayerForShape)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertNewByIndex")(insertNewByIndex)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, attachShapeToLayer = attachShapeToLayer, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, getLayerForShape = getLayerForShape, hasByName = hasByName, hasElements = hasElements, insertNewByIndex = insertNewByIndex, queryInterface = queryInterface, release = release, remove = remove)
+  
     __obj.asInstanceOf[LayerManager]
   }
 }

@@ -22,9 +22,7 @@ object TableState {
     sortColumn: ColumnProps[T] = null,
     sortOrder: SortOrder = null
   ): TableState[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("pagination")(pagination)
+    val __obj = js.Dynamic.literal(filters = filters, pagination = pagination)
     if (pivot != null) __obj.updateDynamic("pivot")(pivot.asInstanceOf[js.Any])
     if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)

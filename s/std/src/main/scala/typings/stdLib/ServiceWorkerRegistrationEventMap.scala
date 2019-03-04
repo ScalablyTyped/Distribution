@@ -12,8 +12,8 @@ trait ServiceWorkerRegistrationEventMap extends js.Object {
 object ServiceWorkerRegistrationEventMap {
   @scala.inline
   def apply(updatefound: Event): ServiceWorkerRegistrationEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("updatefound")(updatefound)
+    val __obj = js.Dynamic.literal(updatefound = updatefound)
+  
     __obj.asInstanceOf[ServiceWorkerRegistrationEventMap]
   }
 }

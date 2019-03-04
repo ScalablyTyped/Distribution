@@ -20,11 +20,8 @@ object Anon_BuildNumber {
     platform: java.lang.String,
     userInterfaceIdiom: java.lang.String
   ): Anon_BuildNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildNumber")(buildNumber)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("userInterfaceIdiom")(userInterfaceIdiom)
+    val __obj = js.Dynamic.literal(buildNumber = buildNumber, model = model, platform = platform, userInterfaceIdiom = userInterfaceIdiom)
+  
     __obj.asInstanceOf[Anon_BuildNumber]
   }
 }

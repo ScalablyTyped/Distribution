@@ -13,9 +13,8 @@ trait Screen extends js.Object {
 object Screen {
   @scala.inline
   def apply(mozOrientation: java.lang.String, orientation: java.lang.String): Screen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mozOrientation")(mozOrientation)
-    __obj.updateDynamic("orientation")(orientation)
+    val __obj = js.Dynamic.literal(mozOrientation = mozOrientation, orientation = orientation)
+  
     __obj.asInstanceOf[Screen]
   }
 }

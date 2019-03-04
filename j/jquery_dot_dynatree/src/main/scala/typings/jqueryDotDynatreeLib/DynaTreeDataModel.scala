@@ -60,8 +60,7 @@ object DynaTreeDataModel {
     tooltip: java.lang.String = null,
     unselectable: js.UndefOr[scala.Boolean] = js.undefined
   ): DynaTreeDataModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
     if (addClass != null) __obj.updateDynamic("addClass")(addClass)
     if (children != null) __obj.updateDynamic("children")(children)

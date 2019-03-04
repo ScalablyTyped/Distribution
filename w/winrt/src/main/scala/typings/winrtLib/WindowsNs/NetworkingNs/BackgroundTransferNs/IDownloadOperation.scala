@@ -35,20 +35,8 @@ object IDownloadOperation {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]
     ]
   ): IDownloadOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachAsync")(attachAsync)
-    __obj.updateDynamic("costPolicy")(costPolicy)
-    __obj.updateDynamic("getResponseInformation")(getResponseInformation)
-    __obj.updateDynamic("getResultStreamAt")(getResultStreamAt)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("requestedUri")(requestedUri)
-    __obj.updateDynamic("resultFile")(resultFile)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("startAsync")(startAsync)
+    val __obj = js.Dynamic.literal(attachAsync = attachAsync, costPolicy = costPolicy, getResponseInformation = getResponseInformation, getResultStreamAt = getResultStreamAt, group = group, guid = guid, method = method, pause = pause, progress = progress, requestedUri = requestedUri, resultFile = resultFile, resume = resume, startAsync = startAsync)
+  
     __obj.asInstanceOf[IDownloadOperation]
   }
 }

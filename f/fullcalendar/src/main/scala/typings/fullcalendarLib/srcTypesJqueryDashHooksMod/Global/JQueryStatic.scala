@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(fullCalendar: js.Object): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullCalendar")(fullCalendar)
+    val __obj = js.Dynamic.literal(fullCalendar = fullCalendar)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

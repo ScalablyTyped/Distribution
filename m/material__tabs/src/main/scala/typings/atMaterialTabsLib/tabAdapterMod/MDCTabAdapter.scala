@@ -26,14 +26,8 @@ object MDCTabAdapter {
     registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
     removeClass: js.Function1[java.lang.String, scala.Unit]
   ): MDCTabAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("getOffsetLeft")(getOffsetLeft)
-    __obj.updateDynamic("getOffsetWidth")(getOffsetWidth)
-    __obj.updateDynamic("notifySelected")(notifySelected)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterInteractionHandler = deregisterInteractionHandler, getOffsetLeft = getOffsetLeft, getOffsetWidth = getOffsetWidth, notifySelected = notifySelected, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass)
+  
     __obj.asInstanceOf[MDCTabAdapter]
   }
 }

@@ -12,8 +12,8 @@ trait ISettingsPaneCommandsRequest extends js.Object {
 object ISettingsPaneCommandsRequest {
   @scala.inline
   def apply(applicationCommands: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SettingsCommand]): ISettingsPaneCommandsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationCommands")(applicationCommands)
+    val __obj = js.Dynamic.literal(applicationCommands = applicationCommands)
+  
     __obj.asInstanceOf[ISettingsPaneCommandsRequest]
   }
 }

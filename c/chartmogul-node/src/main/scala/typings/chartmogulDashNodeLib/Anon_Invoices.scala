@@ -12,8 +12,8 @@ trait Anon_Invoices extends js.Object {
 object Anon_Invoices {
   @scala.inline
   def apply(invoices: js.Array[chartmogulDashNodeLib.chartmogulDashNodeMod.InvoiceNs.Invoice]): Anon_Invoices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invoices")(invoices)
+    val __obj = js.Dynamic.literal(invoices = invoices)
+  
     __obj.asInstanceOf[Anon_Invoices]
   }
 }

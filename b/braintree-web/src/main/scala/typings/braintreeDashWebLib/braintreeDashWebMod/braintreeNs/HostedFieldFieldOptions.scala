@@ -34,9 +34,7 @@ object HostedFieldFieldOptions {
     expirationYear: HostedFieldsField = null,
     postalCode: HostedFieldsField = null
   ): HostedFieldFieldOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cvv")(cvv)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(cvv = cvv, number = number)
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
     if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
     if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)

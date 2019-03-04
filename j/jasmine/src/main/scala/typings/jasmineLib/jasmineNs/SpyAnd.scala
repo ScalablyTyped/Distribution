@@ -32,14 +32,8 @@ object SpyAnd {
     stub: js.Function0[Spy],
     throwError: js.Function1[java.lang.String, Spy]
   ): SpyAnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callFake")(callFake)
-    __obj.updateDynamic("callThrough")(callThrough)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("returnValues")(returnValues)
-    __obj.updateDynamic("stub")(stub)
-    __obj.updateDynamic("throwError")(throwError)
+    val __obj = js.Dynamic.literal(callFake = callFake, callThrough = callThrough, identity = identity, returnValue = returnValue, returnValues = returnValues, stub = stub, throwError = throwError)
+  
     __obj.asInstanceOf[SpyAnd]
   }
 }

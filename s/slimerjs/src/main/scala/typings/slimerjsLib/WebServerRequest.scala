@@ -24,13 +24,8 @@ object WebServerRequest {
     postRaw: java.lang.String,
     url: java.lang.String
   ): WebServerRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("httpVersion")(httpVersion)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("postRaw")(postRaw)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(headers = headers, httpVersion = httpVersion, method = method, post = post, postRaw = postRaw, url = url)
+  
     __obj.asInstanceOf[WebServerRequest]
   }
 }

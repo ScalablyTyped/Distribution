@@ -23,10 +23,8 @@ trait GlobalControlLevel extends js.Object {
 object GlobalControlLevel {
   @scala.inline
   def apply(level: scala.Double, progress: scala.Double, progressTotal: scala.Double): GlobalControlLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("progressTotal")(progressTotal)
+    val __obj = js.Dynamic.literal(level = level, progress = progress, progressTotal = progressTotal)
+  
     __obj.asInstanceOf[GlobalControlLevel]
   }
 }

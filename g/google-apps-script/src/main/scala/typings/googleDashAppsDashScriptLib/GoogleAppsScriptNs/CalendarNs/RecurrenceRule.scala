@@ -68,32 +68,8 @@ object RecurrenceRule {
     until: js.Function1[stdLib.Date, RecurrenceRule],
     weekStartsOn: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday, RecurrenceRule]
   ): RecurrenceRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDailyExclusion")(addDailyExclusion)
-    __obj.updateDynamic("addDailyRule")(addDailyRule)
-    __obj.updateDynamic("addDate")(addDate)
-    __obj.updateDynamic("addDateExclusion")(addDateExclusion)
-    __obj.updateDynamic("addMonthlyExclusion")(addMonthlyExclusion)
-    __obj.updateDynamic("addMonthlyRule")(addMonthlyRule)
-    __obj.updateDynamic("addWeeklyExclusion")(addWeeklyExclusion)
-    __obj.updateDynamic("addWeeklyRule")(addWeeklyRule)
-    __obj.updateDynamic("addYearlyExclusion")(addYearlyExclusion)
-    __obj.updateDynamic("addYearlyRule")(addYearlyRule)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("onlyInMonth")(onlyInMonth)
-    __obj.updateDynamic("onlyInMonths")(onlyInMonths)
-    __obj.updateDynamic("onlyOnMonthDay")(onlyOnMonthDay)
-    __obj.updateDynamic("onlyOnMonthDays")(onlyOnMonthDays)
-    __obj.updateDynamic("onlyOnWeek")(onlyOnWeek)
-    __obj.updateDynamic("onlyOnWeekday")(onlyOnWeekday)
-    __obj.updateDynamic("onlyOnWeekdays")(onlyOnWeekdays)
-    __obj.updateDynamic("onlyOnWeeks")(onlyOnWeeks)
-    __obj.updateDynamic("onlyOnYearDay")(onlyOnYearDay)
-    __obj.updateDynamic("onlyOnYearDays")(onlyOnYearDays)
-    __obj.updateDynamic("setTimeZone")(setTimeZone)
-    __obj.updateDynamic("times")(times)
-    __obj.updateDynamic("until")(until)
-    __obj.updateDynamic("weekStartsOn")(weekStartsOn)
+    val __obj = js.Dynamic.literal(addDailyExclusion = addDailyExclusion, addDailyRule = addDailyRule, addDate = addDate, addDateExclusion = addDateExclusion, addMonthlyExclusion = addMonthlyExclusion, addMonthlyRule = addMonthlyRule, addWeeklyExclusion = addWeeklyExclusion, addWeeklyRule = addWeeklyRule, addYearlyExclusion = addYearlyExclusion, addYearlyRule = addYearlyRule, interval = interval, onlyInMonth = onlyInMonth, onlyInMonths = onlyInMonths, onlyOnMonthDay = onlyOnMonthDay, onlyOnMonthDays = onlyOnMonthDays, onlyOnWeek = onlyOnWeek, onlyOnWeekday = onlyOnWeekday, onlyOnWeekdays = onlyOnWeekdays, onlyOnWeeks = onlyOnWeeks, onlyOnYearDay = onlyOnYearDay, onlyOnYearDays = onlyOnYearDays, setTimeZone = setTimeZone, times = times, until = until, weekStartsOn = weekStartsOn)
+  
     __obj.asInstanceOf[RecurrenceRule]
   }
 }

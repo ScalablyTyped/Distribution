@@ -20,11 +20,8 @@ object State {
     queries: js.Any,
     search: historyLib.historyMod.Search
   ): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("queries")(queries)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(hash = hash, pathname = pathname, queries = queries, search = search)
+  
     __obj.asInstanceOf[State]
   }
 }

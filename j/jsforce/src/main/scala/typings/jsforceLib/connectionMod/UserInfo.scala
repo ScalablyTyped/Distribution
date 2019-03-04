@@ -14,10 +14,8 @@ trait UserInfo extends js.Object {
 object UserInfo {
   @scala.inline
   def apply(id: java.lang.String, organizationId: java.lang.String, url: java.lang.String): UserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("organizationId")(organizationId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, organizationId = organizationId, url = url)
+  
     __obj.asInstanceOf[UserInfo]
   }
 }

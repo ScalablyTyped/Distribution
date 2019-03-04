@@ -17,9 +17,8 @@ object DatePeriod {
     endDate: dialogflowLib.dialogflowMod.entitiesNs.Date,
     startDate: dialogflowLib.dialogflowMod.entitiesNs.Date
   ): DatePeriod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("startDate")(startDate)
+    val __obj = js.Dynamic.literal(endDate = endDate, startDate = startDate)
+  
     __obj.asInstanceOf[DatePeriod]
   }
 }

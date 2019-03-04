@@ -20,11 +20,8 @@ object IGyrometerReading {
     angularVelocityZ: scala.Double,
     timestamp: stdLib.Date
   ): IGyrometerReading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angularVelocityX")(angularVelocityX)
-    __obj.updateDynamic("angularVelocityY")(angularVelocityY)
-    __obj.updateDynamic("angularVelocityZ")(angularVelocityZ)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(angularVelocityX = angularVelocityX, angularVelocityY = angularVelocityY, angularVelocityZ = angularVelocityZ, timestamp = timestamp)
+  
     __obj.asInstanceOf[IGyrometerReading]
   }
 }

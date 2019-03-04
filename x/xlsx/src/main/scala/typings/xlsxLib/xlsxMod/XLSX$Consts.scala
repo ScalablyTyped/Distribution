@@ -22,10 +22,8 @@ object XLSX$Consts {
     SHEET_VERYHIDDEN: xlsxLib.xlsxLibNumbers.`2`,
     SHEET_VISIBLE: xlsxLib.xlsxLibNumbers.`0`
   ): XLSX$Consts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SHEET_HIDDEN")(SHEET_HIDDEN)
-    __obj.updateDynamic("SHEET_VERYHIDDEN")(SHEET_VERYHIDDEN)
-    __obj.updateDynamic("SHEET_VISIBLE")(SHEET_VISIBLE)
+    val __obj = js.Dynamic.literal(SHEET_HIDDEN = SHEET_HIDDEN, SHEET_VERYHIDDEN = SHEET_VERYHIDDEN, SHEET_VISIBLE = SHEET_VISIBLE)
+  
     __obj.asInstanceOf[XLSX$Consts]
   }
 }

@@ -42,8 +42,7 @@ object Anon_AltDataTypeName {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDataTypeName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
     if (fields != null) __obj.updateDynamic("fields")(fields)

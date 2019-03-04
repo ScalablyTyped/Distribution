@@ -79,40 +79,8 @@ object PluginsCollection {
     touchScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TouchScroll,
     trimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows
   ): PluginsCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoColumnSize")(autoColumnSize)
-    __obj.updateDynamic("autoRowSize")(autoRowSize)
-    __obj.updateDynamic("autofill")(autofill)
-    __obj.updateDynamic("bindRowsWithHeaders")(bindRowsWithHeaders)
-    __obj.updateDynamic("collapsibleColumns")(collapsibleColumns)
-    __obj.updateDynamic("columnSorting")(columnSorting)
-    __obj.updateDynamic("columnSummary")(columnSummary)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("contextMenu")(contextMenu)
-    __obj.updateDynamic("copyPaste")(copyPaste)
-    __obj.updateDynamic("dragToScroll")(dragToScroll)
-    __obj.updateDynamic("dropdownMenu")(dropdownMenu)
-    __obj.updateDynamic("exportFile")(exportFile)
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("formulas")(formulas)
-    __obj.updateDynamic("ganttChart")(ganttChart)
-    __obj.updateDynamic("headerTooltips")(headerTooltips)
-    __obj.updateDynamic("hiddenColumns")(hiddenColumns)
-    __obj.updateDynamic("hiddenRows")(hiddenRows)
-    __obj.updateDynamic("manualColumnFreeze")(manualColumnFreeze)
-    __obj.updateDynamic("manualColumnMove")(manualColumnMove)
-    __obj.updateDynamic("manualColumnResize")(manualColumnResize)
-    __obj.updateDynamic("manualRowMove")(manualRowMove)
-    __obj.updateDynamic("manualRowResize")(manualRowResize)
-    __obj.updateDynamic("mergeCells")(mergeCells)
-    __obj.updateDynamic("multiColumnSorting")(multiColumnSorting)
-    __obj.updateDynamic("multipleSelectionHandles")(multipleSelectionHandles)
-    __obj.updateDynamic("nestedHeaders")(nestedHeaders)
-    __obj.updateDynamic("nestedRows")(nestedRows)
-    __obj.updateDynamic("observeChanges")(observeChanges)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("touchScroll")(touchScroll)
-    __obj.updateDynamic("trimRows")(trimRows)
+    val __obj = js.Dynamic.literal(autoColumnSize = autoColumnSize, autoRowSize = autoRowSize, autofill = autofill, bindRowsWithHeaders = bindRowsWithHeaders, collapsibleColumns = collapsibleColumns, columnSorting = columnSorting, columnSummary = columnSummary, comments = comments, contextMenu = contextMenu, copyPaste = copyPaste, dragToScroll = dragToScroll, dropdownMenu = dropdownMenu, exportFile = exportFile, filters = filters, formulas = formulas, ganttChart = ganttChart, headerTooltips = headerTooltips, hiddenColumns = hiddenColumns, hiddenRows = hiddenRows, manualColumnFreeze = manualColumnFreeze, manualColumnMove = manualColumnMove, manualColumnResize = manualColumnResize, manualRowMove = manualRowMove, manualRowResize = manualRowResize, mergeCells = mergeCells, multiColumnSorting = multiColumnSorting, multipleSelectionHandles = multipleSelectionHandles, nestedHeaders = nestedHeaders, nestedRows = nestedRows, observeChanges = observeChanges, search = search, touchScroll = touchScroll, trimRows = trimRows)
+  
     __obj.asInstanceOf[PluginsCollection]
   }
 }

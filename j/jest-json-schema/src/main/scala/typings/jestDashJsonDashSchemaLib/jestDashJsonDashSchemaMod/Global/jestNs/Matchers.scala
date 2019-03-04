@@ -12,8 +12,8 @@ trait Matchers[R] extends js.Object {
 object Matchers {
   @scala.inline
   def apply[R](toMatchSchema: js.Function1[js.Object, R]): Matchers[R] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toMatchSchema")(toMatchSchema)
+    val __obj = js.Dynamic.literal(toMatchSchema = toMatchSchema)
+  
     __obj.asInstanceOf[Matchers[R]]
   }
 }

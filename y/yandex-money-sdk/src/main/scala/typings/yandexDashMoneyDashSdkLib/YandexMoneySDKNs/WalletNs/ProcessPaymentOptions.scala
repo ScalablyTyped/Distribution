@@ -28,8 +28,7 @@ object ProcessPaymentOptions {
     test_payment: js.UndefOr[scala.Boolean] = js.undefined,
     test_result: java.lang.String = null
   ): ProcessPaymentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request_id")(request_id)
+    val __obj = js.Dynamic.literal(request_id = request_id)
     if (csc != null) __obj.updateDynamic("csc")(csc)
     if (ext_auth_fail_uri != null) __obj.updateDynamic("ext_auth_fail_uri")(ext_auth_fail_uri)
     if (ext_auth_success_uri != null) __obj.updateDynamic("ext_auth_success_uri")(ext_auth_success_uri)

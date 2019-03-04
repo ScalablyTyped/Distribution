@@ -22,12 +22,8 @@ object ParseMsResult {
     minutes: scala.Double,
     seconds: scala.Double
   ): ParseMsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("milliseconds")(milliseconds)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("seconds")(seconds)
+    val __obj = js.Dynamic.literal(days = days, hours = hours, milliseconds = milliseconds, minutes = minutes, seconds = seconds)
+  
     __obj.asInstanceOf[ParseMsResult]
   }
 }

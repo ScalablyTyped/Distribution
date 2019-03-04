@@ -24,13 +24,8 @@ object QueueCallback {
     options: QueueOptions,
     state: java.lang.String
   ): QueueCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("consumerTagListeners")(consumerTagListeners)
-    __obj.updateDynamic("consumerTagOptions")(consumerTagOptions)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(channel = channel, consumerTagListeners = consumerTagListeners, consumerTagOptions = consumerTagOptions, name = name, options = options, state = state)
+  
     __obj.asInstanceOf[QueueCallback]
   }
 }

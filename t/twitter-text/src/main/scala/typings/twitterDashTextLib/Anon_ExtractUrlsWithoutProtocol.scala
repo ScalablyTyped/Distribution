@@ -12,8 +12,8 @@ trait Anon_ExtractUrlsWithoutProtocol extends js.Object {
 object Anon_ExtractUrlsWithoutProtocol {
   @scala.inline
   def apply(extractUrlsWithoutProtocol: scala.Boolean): Anon_ExtractUrlsWithoutProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extractUrlsWithoutProtocol")(extractUrlsWithoutProtocol)
+    val __obj = js.Dynamic.literal(extractUrlsWithoutProtocol = extractUrlsWithoutProtocol)
+  
     __obj.asInstanceOf[Anon_ExtractUrlsWithoutProtocol]
   }
 }

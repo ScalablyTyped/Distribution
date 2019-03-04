@@ -18,10 +18,8 @@ object BlockList {
     LatestBlocks: js.Array[java.lang.String],
     UncommittedBlocks: js.Array[java.lang.String]
   ): BlockList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CommittedBlocks")(CommittedBlocks)
-    __obj.updateDynamic("LatestBlocks")(LatestBlocks)
-    __obj.updateDynamic("UncommittedBlocks")(UncommittedBlocks)
+    val __obj = js.Dynamic.literal(CommittedBlocks = CommittedBlocks, LatestBlocks = LatestBlocks, UncommittedBlocks = UncommittedBlocks)
+  
     __obj.asInstanceOf[BlockList]
   }
 }

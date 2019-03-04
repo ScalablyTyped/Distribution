@@ -19,9 +19,7 @@ object AddControlNotificationOptions {
     actions: js.Array[xrmLib.XrmNs.ControlsNs.ControlNotificationAction] = null,
     notificationLevel: xrmLib.XrmNs.ControlsNs.NotificationLevel = null
   ): AddControlNotificationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("uniqueId")(uniqueId)
+    val __obj = js.Dynamic.literal(messages = messages, uniqueId = uniqueId)
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (notificationLevel != null) __obj.updateDynamic("notificationLevel")(notificationLevel)
     __obj.asInstanceOf[AddControlNotificationOptions]

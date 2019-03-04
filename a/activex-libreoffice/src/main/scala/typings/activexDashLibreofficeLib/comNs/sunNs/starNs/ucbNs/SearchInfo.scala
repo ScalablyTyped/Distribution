@@ -37,13 +37,8 @@ object SearchInfo {
     RespectDocViewRestrictions: scala.Boolean,
     RespectFolderViewRestrictions: scala.Boolean
   ): SearchInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Criteria")(Criteria)
-    __obj.updateDynamic("FollowIndirections")(FollowIndirections)
-    __obj.updateDynamic("IncludeBase")(IncludeBase)
-    __obj.updateDynamic("Recursion")(Recursion)
-    __obj.updateDynamic("RespectDocViewRestrictions")(RespectDocViewRestrictions)
-    __obj.updateDynamic("RespectFolderViewRestrictions")(RespectFolderViewRestrictions)
+    val __obj = js.Dynamic.literal(Criteria = Criteria, FollowIndirections = FollowIndirections, IncludeBase = IncludeBase, Recursion = Recursion, RespectDocViewRestrictions = RespectDocViewRestrictions, RespectFolderViewRestrictions = RespectFolderViewRestrictions)
+  
     __obj.asInstanceOf[SearchInfo]
   }
 }

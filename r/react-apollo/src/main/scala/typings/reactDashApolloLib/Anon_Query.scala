@@ -13,9 +13,8 @@ trait Anon_Query extends js.Object {
 object Anon_Query {
   @scala.inline
   def apply(query: graphqlLib.languageAstMod.DocumentNode, variables: js.Any): Anon_Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(query = query, variables = variables)
+  
     __obj.asInstanceOf[Anon_Query]
   }
 }

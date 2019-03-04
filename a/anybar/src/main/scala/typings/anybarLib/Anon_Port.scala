@@ -12,8 +12,8 @@ trait Anon_Port extends js.Object {
 object Anon_Port {
   @scala.inline
   def apply(port: scala.Double): Anon_Port = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
+  
     __obj.asInstanceOf[Anon_Port]
   }
 }

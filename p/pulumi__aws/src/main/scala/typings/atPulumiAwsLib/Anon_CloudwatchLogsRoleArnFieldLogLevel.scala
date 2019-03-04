@@ -16,9 +16,8 @@ object Anon_CloudwatchLogsRoleArnFieldLogLevel {
     cloudwatchLogsRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     fieldLogLevel: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_CloudwatchLogsRoleArnFieldLogLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloudwatchLogsRoleArn")(cloudwatchLogsRoleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("fieldLogLevel")(fieldLogLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cloudwatchLogsRoleArn = cloudwatchLogsRoleArn.asInstanceOf[js.Any], fieldLogLevel = fieldLogLevel.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_CloudwatchLogsRoleArnFieldLogLevel]
   }
 }

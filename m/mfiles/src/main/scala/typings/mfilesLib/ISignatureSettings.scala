@@ -36,19 +36,8 @@ object ISignatureSettings {
     SignaturePromptInfoMetadataBased: ISignaturePromptInfoMetadataBased,
     SignaturePromptInfoSelectable: ISignaturePromptInfoSelectable
   ): ISignatureSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdditionalInfo")(AdditionalInfo)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("FreeFormTextPropertyID")(FreeFormTextPropertyID)
-    __obj.updateDynamic("IsFreeFormTextPrompted")(IsFreeFormTextPrompted)
-    __obj.updateDynamic("IsRequired")(IsRequired)
-    __obj.updateDynamic("IsSeparateSignatureObject")(IsSeparateSignatureObject)
-    __obj.updateDynamic("ManifestationPropertyID")(ManifestationPropertyID)
-    __obj.updateDynamic("PromptInfoType")(PromptInfoType)
-    __obj.updateDynamic("SignatureIdentifier")(SignatureIdentifier)
-    __obj.updateDynamic("SignaturePromptInfoFixed")(SignaturePromptInfoFixed)
-    __obj.updateDynamic("SignaturePromptInfoMetadataBased")(SignaturePromptInfoMetadataBased)
-    __obj.updateDynamic("SignaturePromptInfoSelectable")(SignaturePromptInfoSelectable)
+    val __obj = js.Dynamic.literal(AdditionalInfo = AdditionalInfo, Clone = Clone, FreeFormTextPropertyID = FreeFormTextPropertyID, IsFreeFormTextPrompted = IsFreeFormTextPrompted, IsRequired = IsRequired, IsSeparateSignatureObject = IsSeparateSignatureObject, ManifestationPropertyID = ManifestationPropertyID, PromptInfoType = PromptInfoType, SignatureIdentifier = SignatureIdentifier, SignaturePromptInfoFixed = SignaturePromptInfoFixed, SignaturePromptInfoMetadataBased = SignaturePromptInfoMetadataBased, SignaturePromptInfoSelectable = SignaturePromptInfoSelectable)
+  
     __obj.asInstanceOf[ISignatureSettings]
   }
 }

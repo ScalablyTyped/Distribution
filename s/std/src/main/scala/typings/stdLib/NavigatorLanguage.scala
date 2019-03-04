@@ -13,9 +13,8 @@ trait NavigatorLanguage extends js.Object {
 object NavigatorLanguage {
   @scala.inline
   def apply(language: java.lang.String, languages: js.Array[java.lang.String]): NavigatorLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("languages")(languages)
+    val __obj = js.Dynamic.literal(language = language, languages = languages)
+  
     __obj.asInstanceOf[NavigatorLanguage]
   }
 }

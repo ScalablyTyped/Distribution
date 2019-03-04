@@ -30,16 +30,8 @@ object DockerContainerData {
     ports: js.Array[scala.Double],
     state: java.lang.String
   ): DockerContainerData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("imageID")(imageID)
-    __obj.updateDynamic("mounts")(mounts)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ports")(ports)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(command = command, created = created, id = id, image = image, imageID = imageID, mounts = mounts, name = name, ports = ports, state = state)
+  
     __obj.asInstanceOf[DockerContainerData]
   }
 }

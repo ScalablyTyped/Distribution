@@ -16,9 +16,8 @@ object hasSetFinalUrl {
     setFinalUrl: js.Function1[java.lang.String, scala.Unit],
     setMobileFinalUrl: js.Function1[java.lang.String, scala.Unit]
   ): hasSetFinalUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFinalUrl")(setFinalUrl)
-    __obj.updateDynamic("setMobileFinalUrl")(setMobileFinalUrl)
+    val __obj = js.Dynamic.literal(setFinalUrl = setFinalUrl, setMobileFinalUrl = setMobileFinalUrl)
+  
     __obj.asInstanceOf[hasSetFinalUrl]
   }
 }

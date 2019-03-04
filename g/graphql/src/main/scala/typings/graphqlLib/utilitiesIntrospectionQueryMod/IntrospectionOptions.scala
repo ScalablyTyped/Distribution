@@ -14,8 +14,8 @@ trait IntrospectionOptions extends js.Object {
 object IntrospectionOptions {
   @scala.inline
   def apply(descriptions: scala.Boolean): IntrospectionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descriptions")(descriptions)
+    val __obj = js.Dynamic.literal(descriptions = descriptions)
+  
     __obj.asInstanceOf[IntrospectionOptions]
   }
 }

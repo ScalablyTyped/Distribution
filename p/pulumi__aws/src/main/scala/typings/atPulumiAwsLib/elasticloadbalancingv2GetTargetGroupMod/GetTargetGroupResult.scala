@@ -39,19 +39,8 @@ object GetTargetGroupResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetTargetGroupResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("arnSuffix")(arnSuffix)
-    __obj.updateDynamic("deregistrationDelay")(deregistrationDelay)
-    __obj.updateDynamic("healthCheck")(healthCheck)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("slowStart")(slowStart)
-    __obj.updateDynamic("stickiness")(stickiness)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(arn = arn, arnSuffix = arnSuffix, deregistrationDelay = deregistrationDelay, healthCheck = healthCheck, id = id, name = name, port = port, protocol = protocol, slowStart = slowStart, stickiness = stickiness, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetTargetGroupResult]
   }
 }

@@ -13,9 +13,8 @@ trait PolarCoordinates extends js.Object {
 object PolarCoordinates {
   @scala.inline
   def apply(phi: scala.Double, r: scala.Double): PolarCoordinates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("phi")(phi)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(phi = phi, r = r)
+  
     __obj.asInstanceOf[PolarCoordinates]
   }
 }

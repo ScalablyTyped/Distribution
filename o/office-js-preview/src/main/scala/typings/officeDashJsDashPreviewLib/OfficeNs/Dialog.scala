@@ -34,10 +34,8 @@ object Dialog {
     close: js.Function0[scala.Unit],
     sendMessage: js.Function1[java.lang.String, scala.Unit]
   ): Dialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventHandler")(addEventHandler)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("sendMessage")(sendMessage)
+    val __obj = js.Dynamic.literal(addEventHandler = addEventHandler, close = close, sendMessage = sendMessage)
+  
     __obj.asInstanceOf[Dialog]
   }
 }

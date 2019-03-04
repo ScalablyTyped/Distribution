@@ -36,10 +36,7 @@ object Anon_Context {
     queryString: java.lang.String = null,
     variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Context[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestContext")(requestContext)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], request = request, requestContext = requestContext)
     if (operationName != null) __obj.updateDynamic("operationName")(operationName)
     if (parsedQuery != null) __obj.updateDynamic("parsedQuery")(parsedQuery)
     if (!js.isUndefined(persistedQueryHit)) __obj.updateDynamic("persistedQueryHit")(persistedQueryHit)

@@ -13,8 +13,8 @@ trait ClipboardData extends js.Object {
 object ClipboardData {
   @scala.inline
   def apply(data: java.lang.String): ClipboardData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+  
     __obj.asInstanceOf[ClipboardData]
   }
 }

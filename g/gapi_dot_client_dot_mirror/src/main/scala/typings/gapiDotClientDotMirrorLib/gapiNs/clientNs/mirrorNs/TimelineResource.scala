@@ -50,14 +50,8 @@ object TimelineResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TimelineItem]
     ]
   ): TimelineResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(attachments = attachments, delete = delete, get = get, insert = insert, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[TimelineResource]
   }
 }

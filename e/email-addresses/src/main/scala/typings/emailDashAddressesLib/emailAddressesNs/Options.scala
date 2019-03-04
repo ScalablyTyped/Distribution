@@ -28,8 +28,7 @@ object Options {
     startAt: java.lang.String = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
     if (!js.isUndefined(oneResult)) __obj.updateDynamic("oneResult")(oneResult)
     if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
     if (!js.isUndefined(rejectTLD)) __obj.updateDynamic("rejectTLD")(rejectTLD)

@@ -27,9 +27,7 @@ object GetScriptArgs {
     dagNodes: js.Array[atPulumiAwsLib.Anon_ArgsId],
     language: java.lang.String = null
   ): GetScriptArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dagEdges")(dagEdges)
-    __obj.updateDynamic("dagNodes")(dagNodes)
+    val __obj = js.Dynamic.literal(dagEdges = dagEdges, dagNodes = dagNodes)
     if (language != null) __obj.updateDynamic("language")(language)
     __obj.asInstanceOf[GetScriptArgs]
   }

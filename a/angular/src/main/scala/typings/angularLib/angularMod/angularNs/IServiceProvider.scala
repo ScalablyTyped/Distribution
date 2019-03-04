@@ -14,8 +14,8 @@ trait IServiceProvider extends js.Object {
 object IServiceProvider {
   @scala.inline
   def apply($get: js.Any): IServiceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
+    val __obj = js.Dynamic.literal($get = $get)
+  
     __obj.asInstanceOf[IServiceProvider]
   }
 }

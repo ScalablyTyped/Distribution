@@ -18,10 +18,8 @@ object NavigationScreenDetails {
     options: T,
     state: NavigationRoute[NavigationParams]
   ): NavigationScreenDetails[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(navigation = navigation, options = options.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NavigationScreenDetails[T]]
   }
 }

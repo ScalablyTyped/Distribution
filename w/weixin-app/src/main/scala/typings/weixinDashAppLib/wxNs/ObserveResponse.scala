@@ -27,14 +27,8 @@ object ObserveResponse {
     relativeRect: RectArea,
     time: scala.Double
   ): ObserveResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingClientRect")(boundingClientRect)
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("intersectionRatio")(intersectionRatio)
-    __obj.updateDynamic("intersectionRect")(intersectionRect)
-    __obj.updateDynamic("relativeRect")(relativeRect)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(boundingClientRect = boundingClientRect, dataset = dataset, id = id, intersectionRatio = intersectionRatio, intersectionRect = intersectionRect, relativeRect = relativeRect, time = time)
+  
     __obj.asInstanceOf[ObserveResponse]
   }
 }

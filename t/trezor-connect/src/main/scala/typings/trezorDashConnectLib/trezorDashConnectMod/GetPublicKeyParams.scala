@@ -22,8 +22,7 @@ object GetPublicKeyParams {
     keepSession: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): GetPublicKeyParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (coin != null) __obj.updateDynamic("coin")(coin)
     if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain)

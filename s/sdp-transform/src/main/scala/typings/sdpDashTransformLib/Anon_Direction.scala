@@ -14,9 +14,7 @@ trait Anon_Direction extends js.Object {
 object Anon_Direction {
   @scala.inline
   def apply(direction: java.lang.String, id: scala.Double | java.lang.String, params: java.lang.String = null): Anon_Direction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(direction = direction, id = id.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[Anon_Direction]
   }

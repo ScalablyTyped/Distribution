@@ -20,11 +20,8 @@ object Anon_CustomerContactNotification {
     qnaNotification: scala.Double,
     reviewNotification: scala.Double
   ): Anon_CustomerContactNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customerContactNotification")(customerContactNotification)
-    __obj.updateDynamic("publisherMemberUpdateNotification")(publisherMemberUpdateNotification)
-    __obj.updateDynamic("qnaNotification")(qnaNotification)
-    __obj.updateDynamic("reviewNotification")(reviewNotification)
+    val __obj = js.Dynamic.literal(customerContactNotification = customerContactNotification, publisherMemberUpdateNotification = publisherMemberUpdateNotification, qnaNotification = qnaNotification, reviewNotification = reviewNotification)
+  
     __obj.asInstanceOf[Anon_CustomerContactNotification]
   }
 }

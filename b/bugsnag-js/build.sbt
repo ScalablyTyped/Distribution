@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "bugsnag-js"
-version := "4.7.3-7ffad4"
+version := "4.7.3-e32769"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "error-stack-parser" % "2.0.2-9c91b7",
-  "org.scalablytyped" %%% "stackframe" % "1.0.4-04d856",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "error-stack-parser" % "2.0.2-d46540",
+  "org.scalablytyped" %%% "stackframe" % "1.0.4-f98faf",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

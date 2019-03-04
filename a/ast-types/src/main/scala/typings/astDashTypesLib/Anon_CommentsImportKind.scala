@@ -30,8 +30,7 @@ object Anon_CommentsImportKind {
       astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
     ] = null
   ): Anon_CommentsImportKind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (importKind != null) __obj.updateDynamic("importKind")(importKind.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc)

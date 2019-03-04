@@ -14,10 +14,8 @@ trait EntityByKeyResult extends js.Object {
 object EntityByKeyResult {
   @scala.inline
   def apply(entity: Entity, entityKey: EntityKey, fromCache: scala.Boolean): EntityByKeyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("entityKey")(entityKey)
-    __obj.updateDynamic("fromCache")(fromCache)
+    val __obj = js.Dynamic.literal(entity = entity, entityKey = entityKey, fromCache = fromCache)
+  
     __obj.asInstanceOf[EntityByKeyResult]
   }
 }

@@ -32,16 +32,7 @@ object RouteOptions {
     url: java.lang.String | stdLib.RegExp,
     headers: js.Object = null
   ): RouteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("force404")(force404)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("onAbort")(onAbort)
-    __obj.updateDynamic("onRequest")(onRequest)
-    __obj.updateDynamic("onResponse")(onResponse)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delay = delay, force404 = force404, method = method, onAbort = onAbort, onRequest = onRequest, onResponse = onResponse, response = response, status = status, url = url.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[RouteOptions]
   }

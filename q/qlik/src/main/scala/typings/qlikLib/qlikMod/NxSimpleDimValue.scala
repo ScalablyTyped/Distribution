@@ -13,9 +13,8 @@ trait NxSimpleDimValue extends js.Object {
 object NxSimpleDimValue {
   @scala.inline
   def apply(qElemNo: scala.Double, qText: java.lang.String): NxSimpleDimValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qElemNo")(qElemNo)
-    __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(qElemNo = qElemNo, qText = qText)
+  
     __obj.asInstanceOf[NxSimpleDimValue]
   }
 }

@@ -12,8 +12,8 @@ trait locale extends js.Object {
 object locale {
   @scala.inline
   def apply(pager: js.Any): locale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pager")(pager)
+    val __obj = js.Dynamic.literal(pager = pager)
+  
     __obj.asInstanceOf[locale]
   }
 }

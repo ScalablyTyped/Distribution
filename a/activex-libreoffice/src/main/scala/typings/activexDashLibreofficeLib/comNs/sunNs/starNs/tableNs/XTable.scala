@@ -81,38 +81,8 @@ object XTable {
     setModified: js.Function1[scala.Boolean, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RowCount")(RowCount)
-    __obj.updateDynamic("Rows")(Rows)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createCursor")(createCursor)
-    __obj.updateDynamic("createCursorByRange")(createCursorByRange)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
-    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
-    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getFastPropertyValue")(getFastPropertyValue)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getRows")(getRows)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setFastPropertyValue")(setFastPropertyValue)
-    __obj.updateDynamic("setModified")(setModified)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, PropertySetInfo = PropertySetInfo, RowCount = RowCount, Rows = Rows, acquire = acquire, addEventListener = addEventListener, addModifyListener = addModifyListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createCursor = createCursor, createCursorByRange = createCursorByRange, dispose = dispose, getCellByPosition = getCellByPosition, getCellRangeByName = getCellRangeByName, getCellRangeByPosition = getCellRangeByPosition, getColumns = getColumns, getFastPropertyValue = getFastPropertyValue, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getRows = getRows, isModified = isModified, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeModifyListener = removeModifyListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setFastPropertyValue = setFastPropertyValue, setModified = setModified, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XTable]
   }
 }

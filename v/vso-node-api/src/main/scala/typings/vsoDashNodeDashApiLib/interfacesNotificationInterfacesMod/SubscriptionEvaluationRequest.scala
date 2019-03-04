@@ -22,9 +22,8 @@ object SubscriptionEvaluationRequest {
     minEventsCreatedDate: stdLib.Date,
     subscriptionCreateParameters: NotificationSubscriptionCreateParameters
   ): SubscriptionEvaluationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minEventsCreatedDate")(minEventsCreatedDate)
-    __obj.updateDynamic("subscriptionCreateParameters")(subscriptionCreateParameters)
+    val __obj = js.Dynamic.literal(minEventsCreatedDate = minEventsCreatedDate, subscriptionCreateParameters = subscriptionCreateParameters)
+  
     __obj.asInstanceOf[SubscriptionEvaluationRequest]
   }
 }

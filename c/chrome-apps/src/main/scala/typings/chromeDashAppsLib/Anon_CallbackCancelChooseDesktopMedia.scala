@@ -55,10 +55,8 @@ object Anon_CallbackCancelChooseDesktopMedia {
       chromeDashAppsLib.chromeNs.integer
     ]
   ): Anon_CallbackCancelChooseDesktopMedia = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DesktopCaptureSourceType")(DesktopCaptureSourceType)
-    __obj.updateDynamic("cancelChooseDesktopMedia")(cancelChooseDesktopMedia)
-    __obj.updateDynamic("chooseDesktopMedia")(chooseDesktopMedia)
+    val __obj = js.Dynamic.literal(DesktopCaptureSourceType = DesktopCaptureSourceType, cancelChooseDesktopMedia = cancelChooseDesktopMedia, chooseDesktopMedia = chooseDesktopMedia)
+  
     __obj.asInstanceOf[Anon_CallbackCancelChooseDesktopMedia]
   }
 }

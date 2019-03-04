@@ -61,8 +61,7 @@ object PipsOptions {
     stepped: js.UndefOr[scala.Boolean] = js.undefined,
     values: scala.Double | js.Array[scala.Double] = null
   ): PipsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])

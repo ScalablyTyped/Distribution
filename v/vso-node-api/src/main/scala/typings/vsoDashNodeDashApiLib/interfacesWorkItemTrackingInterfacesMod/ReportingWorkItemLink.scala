@@ -30,16 +30,8 @@ object ReportingWorkItemLink {
     sourceId: scala.Double,
     targetId: scala.Double
   ): ReportingWorkItemLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changedBy")(changedBy)
-    __obj.updateDynamic("changedDate")(changedDate)
-    __obj.updateDynamic("changedOperation")(changedOperation)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("linkType")(linkType)
-    __obj.updateDynamic("rel")(rel)
-    __obj.updateDynamic("sourceId")(sourceId)
-    __obj.updateDynamic("targetId")(targetId)
+    val __obj = js.Dynamic.literal(changedBy = changedBy, changedDate = changedDate, changedOperation = changedOperation, comment = comment, isActive = isActive, linkType = linkType, rel = rel, sourceId = sourceId, targetId = targetId)
+  
     __obj.asInstanceOf[ReportingWorkItemLink]
   }
 }

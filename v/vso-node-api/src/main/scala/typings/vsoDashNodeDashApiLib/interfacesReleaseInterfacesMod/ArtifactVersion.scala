@@ -22,12 +22,8 @@ object ArtifactVersion {
     sourceId: java.lang.String,
     versions: js.Array[BuildVersion]
   ): ArtifactVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("defaultVersion")(defaultVersion)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("sourceId")(sourceId)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(alias = alias, defaultVersion = defaultVersion, errorMessage = errorMessage, sourceId = sourceId, versions = versions)
+  
     __obj.asInstanceOf[ArtifactVersion]
   }
 }

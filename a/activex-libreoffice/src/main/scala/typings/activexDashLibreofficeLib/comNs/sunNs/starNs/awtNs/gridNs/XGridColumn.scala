@@ -109,27 +109,8 @@ object XGridColumn {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     removeGridColumnListener: js.Function1[XGridColumnListener, scala.Unit]
   ): XGridColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnWidth")(ColumnWidth)
-    __obj.updateDynamic("DataColumnIndex")(DataColumnIndex)
-    __obj.updateDynamic("Flexibility")(Flexibility)
-    __obj.updateDynamic("HelpText")(HelpText)
-    __obj.updateDynamic("HorizontalAlign")(HorizontalAlign)
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("MaxWidth")(MaxWidth)
-    __obj.updateDynamic("MinWidth")(MinWidth)
-    __obj.updateDynamic("Resizeable")(Resizeable)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addGridColumnListener")(addGridColumnListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeGridColumnListener")(removeGridColumnListener)
+    val __obj = js.Dynamic.literal(ColumnWidth = ColumnWidth, DataColumnIndex = DataColumnIndex, Flexibility = Flexibility, HelpText = HelpText, HorizontalAlign = HorizontalAlign, Identifier = Identifier, Index = Index, MaxWidth = MaxWidth, MinWidth = MinWidth, Resizeable = Resizeable, Title = Title, acquire = acquire, addEventListener = addEventListener, addGridColumnListener = addGridColumnListener, createClone = createClone, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeGridColumnListener = removeGridColumnListener)
+  
     __obj.asInstanceOf[XGridColumn]
   }
 }

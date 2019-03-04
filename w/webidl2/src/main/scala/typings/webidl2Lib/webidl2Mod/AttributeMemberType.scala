@@ -37,14 +37,8 @@ object AttributeMemberType {
     stringifier: scala.Boolean,
     `type`: webidl2Lib.webidl2LibStrings.attribute
   ): AttributeMemberType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("inherit")(inherit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("stringifier")(stringifier)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, inherit = inherit, name = name, readonly = readonly, static = static, stringifier = stringifier)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AttributeMemberType]
   }
 }

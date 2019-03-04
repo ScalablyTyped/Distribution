@@ -12,8 +12,8 @@ trait Noise extends js.Object {
 object Noise {
   @scala.inline
   def apply(get: js.Function2[scala.Double, scala.Double, scala.Double]): Noise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[Noise]
   }
 }

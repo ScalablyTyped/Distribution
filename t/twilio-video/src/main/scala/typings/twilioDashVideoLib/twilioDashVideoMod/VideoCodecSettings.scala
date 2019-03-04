@@ -12,8 +12,8 @@ trait VideoCodecSettings extends js.Object {
 object VideoCodecSettings {
   @scala.inline
   def apply(codec: VideoCodec): VideoCodecSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codec")(codec)
+    val __obj = js.Dynamic.literal(codec = codec)
+  
     __obj.asInstanceOf[VideoCodecSettings]
   }
 }

@@ -63,8 +63,7 @@ object LinkedStateMixin {
     ] = null,
     statics: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): LinkedStateMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linkState")(linkState)
+    val __obj = js.Dynamic.literal(linkState = linkState)
     if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(UNSAFE_componentWillMount)
     if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(UNSAFE_componentWillReceiveProps)
     if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(UNSAFE_componentWillUpdate)

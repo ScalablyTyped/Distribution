@@ -63,15 +63,8 @@ object IParticleEmitterType {
     startDirectionFunction: js.Function3[Matrix, Vector3, Particle, scala.Unit],
     startPositionFunction: js.Function3[Matrix, Vector3, Particle, scala.Unit]
   ): IParticleEmitterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyToShader")(applyToShader)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("getClassName")(getClassName)
-    __obj.updateDynamic("getEffectDefines")(getEffectDefines)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("serialize")(serialize)
-    __obj.updateDynamic("startDirectionFunction")(startDirectionFunction)
-    __obj.updateDynamic("startPositionFunction")(startPositionFunction)
+    val __obj = js.Dynamic.literal(applyToShader = applyToShader, clone = clone, getClassName = getClassName, getEffectDefines = getEffectDefines, parse = parse, serialize = serialize, startDirectionFunction = startDirectionFunction, startPositionFunction = startPositionFunction)
+  
     __obj.asInstanceOf[IParticleEmitterType]
   }
 }

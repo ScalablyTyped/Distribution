@@ -18,11 +18,8 @@ object ComboComponentInfo {
     mapUniqueKey: java.lang.String,
     name: java.lang.String
   ): ComboComponentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childs")(childs)
-    __obj.updateDynamic("componentInfo")(componentInfo)
-    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(childs = childs, componentInfo = componentInfo, mapUniqueKey = mapUniqueKey, name = name)
+  
     __obj.asInstanceOf[ComboComponentInfo]
   }
 }

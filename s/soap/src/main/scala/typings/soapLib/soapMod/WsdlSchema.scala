@@ -34,16 +34,7 @@ object WsdlSchema {
     elements: WsdlElements = null,
     types: WsdlElements = null
   ): WsdlSchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("includes")(includes)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nsName")(nsName)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
-    __obj.updateDynamic("xmlns")(xmlns)
+    val __obj = js.Dynamic.literal(children = children, ignoredNamespaces = ignoredNamespaces, includes = includes, name = name, nsName = nsName, prefix = prefix, valueKey = valueKey, xmlKey = xmlKey, xmlns = xmlns)
     if (complexTypes != null) __obj.updateDynamic("complexTypes")(complexTypes)
     if (elements != null) __obj.updateDynamic("elements")(elements)
     if (types != null) __obj.updateDynamic("types")(types)

@@ -13,8 +13,7 @@ trait Anon_PpvObj extends js.Object {
 object Anon_PpvObj {
   @scala.inline
   def apply(riid: activexDashStdoleLib.stdoleNs.GUID, ppvObj: js.UndefOr[scala.Nothing] = js.undefined): Anon_PpvObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("riid")(riid)
+    val __obj = js.Dynamic.literal(riid = riid)
     if (!js.isUndefined(ppvObj)) __obj.updateDynamic("ppvObj")(ppvObj)
     __obj.asInstanceOf[Anon_PpvObj]
   }

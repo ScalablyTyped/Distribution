@@ -18,10 +18,8 @@ object Checkable {
     setChecked: js.Function1[scala.Boolean, scala.Unit],
     toggle: js.Function0[scala.Unit]
   ): Checkable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isChecked")(isChecked)
-    __obj.updateDynamic("setChecked")(setChecked)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(isChecked = isChecked, setChecked = setChecked, toggle = toggle)
+  
     __obj.asInstanceOf[Checkable]
   }
 }

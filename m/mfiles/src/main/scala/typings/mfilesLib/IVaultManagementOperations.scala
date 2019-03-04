@@ -38,20 +38,8 @@ object IVaultManagementOperations {
     VerifyVault: js.Function1[IVerifyVaultJob, IVerifyVaultJobOutput],
     WaitAsyncJob: js.Function1[scala.Double, scala.Unit]
   ): IVaultManagementOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArchiveOldVersions")(ArchiveOldVersions)
-    __obj.updateDynamic("ExportContent")(ExportContent)
-    __obj.updateDynamic("GetEventHandlers")(GetEventHandlers)
-    __obj.updateDynamic("GetVaultProperties")(GetVaultProperties)
-    __obj.updateDynamic("ImportContent")(ImportContent)
-    __obj.updateDynamic("ImportContentAsync")(ImportContentAsync)
-    __obj.updateDynamic("IsAsyncJobRunning")(IsAsyncJobRunning)
-    __obj.updateDynamic("PreviewImportContent")(PreviewImportContent)
-    __obj.updateDynamic("RebuildFullTextSearchIndex")(RebuildFullTextSearchIndex)
-    __obj.updateDynamic("SetEventHandlers")(SetEventHandlers)
-    __obj.updateDynamic("UpdateVaultProperties")(UpdateVaultProperties)
-    __obj.updateDynamic("VerifyVault")(VerifyVault)
-    __obj.updateDynamic("WaitAsyncJob")(WaitAsyncJob)
+    val __obj = js.Dynamic.literal(ArchiveOldVersions = ArchiveOldVersions, ExportContent = ExportContent, GetEventHandlers = GetEventHandlers, GetVaultProperties = GetVaultProperties, ImportContent = ImportContent, ImportContentAsync = ImportContentAsync, IsAsyncJobRunning = IsAsyncJobRunning, PreviewImportContent = PreviewImportContent, RebuildFullTextSearchIndex = RebuildFullTextSearchIndex, SetEventHandlers = SetEventHandlers, UpdateVaultProperties = UpdateVaultProperties, VerifyVault = VerifyVault, WaitAsyncJob = WaitAsyncJob)
+  
     __obj.asInstanceOf[IVaultManagementOperations]
   }
 }

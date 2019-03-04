@@ -42,22 +42,8 @@ object Request {
     url: java.lang.String,
     version: js.Array[java.lang.String]
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pathInfo")(pathInfo)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("remoteHost")(remoteHost)
-    __obj.updateDynamic("remotePort")(remotePort)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("scriptName")(scriptName)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(agent = agent, body = body, headers = headers, host = host, method = method, node = node, path = path, pathInfo = pathInfo, port = port, remoteHost = remoteHost, remotePort = remotePort, scheme = scheme, scriptName = scriptName, url = url, version = version)
+  
     __obj.asInstanceOf[Request]
   }
 }

@@ -13,9 +13,8 @@ trait streamStateTransitionData extends js.Object {
 object streamStateTransitionData {
   @scala.inline
   def apply(nextState: js.Any, previousState: js.Any): streamStateTransitionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nextState")(nextState)
-    __obj.updateDynamic("previousState")(previousState)
+    val __obj = js.Dynamic.literal(nextState = nextState, previousState = previousState)
+  
     __obj.asInstanceOf[streamStateTransitionData]
   }
 }

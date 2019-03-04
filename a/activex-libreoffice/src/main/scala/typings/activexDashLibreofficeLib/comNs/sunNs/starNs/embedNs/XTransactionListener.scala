@@ -30,15 +30,8 @@ object XTransactionListener {
     release: js.Function0[scala.Unit],
     reverted: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XTransactionListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("commited")(commited)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("preCommit")(preCommit)
-    __obj.updateDynamic("preRevert")(preRevert)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reverted")(reverted)
+    val __obj = js.Dynamic.literal(acquire = acquire, commited = commited, disposing = disposing, preCommit = preCommit, preRevert = preRevert, queryInterface = queryInterface, release = release, reverted = reverted)
+  
     __obj.asInstanceOf[XTransactionListener]
   }
 }

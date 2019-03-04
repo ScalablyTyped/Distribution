@@ -32,11 +32,8 @@ object InputsSearch {
     init: js.Function0[scala.Unit],
     initOnLoad: js.Function0[scala.Boolean]
   ): InputsSearch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
+    val __obj = js.Dynamic.literal(attach = attach, create = create, init = init, initOnLoad = initOnLoad)
+  
     __obj.asInstanceOf[InputsSearch]
   }
 }

@@ -14,9 +14,8 @@ trait ojGanttRowSettableProperties
 object ojGanttRowSettableProperties {
   @scala.inline
   def apply(label: java.lang.String, labelStyle: js.Object): ojGanttRowSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelStyle")(labelStyle)
+    val __obj = js.Dynamic.literal(label = label, labelStyle = labelStyle)
+  
     __obj.asInstanceOf[ojGanttRowSettableProperties]
   }
 }

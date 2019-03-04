@@ -15,11 +15,8 @@ trait ScaledSize extends js.Object {
 object ScaledSize {
   @scala.inline
   def apply(fontScale: scala.Double, height: scala.Double, scale: scala.Double, width: scala.Double): ScaledSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontScale")(fontScale)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(fontScale = fontScale, height = height, scale = scale, width = width)
+  
     __obj.asInstanceOf[ScaledSize]
   }
 }

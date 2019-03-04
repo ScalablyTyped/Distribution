@@ -36,9 +36,8 @@ object Classifier {
     getClassificationsForLine: js.Function3[java.lang.String, EndOfLineState, scala.Boolean, ClassificationResult],
     getEncodedLexicalClassifications: js.Function3[java.lang.String, EndOfLineState, scala.Boolean, Classifications]
   ): Classifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClassificationsForLine")(getClassificationsForLine)
-    __obj.updateDynamic("getEncodedLexicalClassifications")(getEncodedLexicalClassifications)
+    val __obj = js.Dynamic.literal(getClassificationsForLine = getClassificationsForLine, getEncodedLexicalClassifications = getEncodedLexicalClassifications)
+  
     __obj.asInstanceOf[Classifier]
   }
 }

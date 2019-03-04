@@ -13,9 +13,8 @@ trait MapViewBlurEvent extends js.Object {
 object MapViewBlurEvent {
   @scala.inline
   def apply(native: js.Any, target: View): MapViewBlurEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(native = native, target = target)
+  
     __obj.asInstanceOf[MapViewBlurEvent]
   }
 }

@@ -12,8 +12,8 @@ trait ISanitizer extends js.Object {
 object ISanitizer {
   @scala.inline
   def apply(sanitize: js.Function1[java.lang.String, java.lang.String]): ISanitizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sanitize")(sanitize)
+    val __obj = js.Dynamic.literal(sanitize = sanitize)
+  
     __obj.asInstanceOf[ISanitizer]
   }
 }

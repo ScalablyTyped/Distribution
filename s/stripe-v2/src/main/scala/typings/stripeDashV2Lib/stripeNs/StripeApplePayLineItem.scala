@@ -19,9 +19,8 @@ object StripeApplePayLineItem {
     label: java.lang.String,
     `type`: stripeDashV2Lib.stripeDashV2LibStrings.pending | stripeDashV2Lib.stripeDashV2LibStrings.`final`
   ): StripeApplePayLineItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(amount = amount, label = label)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeApplePayLineItem]
   }
 }

@@ -18,9 +18,8 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(tiles: js.Array[heremapsLib.HNs.mapNs.providerNs.Tile], total: scala.Double): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tiles")(tiles)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(tiles = tiles, total = total)
+  
     __obj.asInstanceOf[Response]
   }
 }

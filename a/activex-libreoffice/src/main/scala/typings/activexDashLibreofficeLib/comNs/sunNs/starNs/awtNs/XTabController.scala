@@ -50,21 +50,8 @@ object XTabController {
     setContainer: js.Function1[XControlContainer, scala.Unit],
     setModel: js.Function1[XTabControllerModel, scala.Unit]
   ): XTabController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Container")(Container)
-    __obj.updateDynamic("Controls")(Controls)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activateFirst")(activateFirst)
-    __obj.updateDynamic("activateLast")(activateLast)
-    __obj.updateDynamic("activateTabOrder")(activateTabOrder)
-    __obj.updateDynamic("autoTabOrder")(autoTabOrder)
-    __obj.updateDynamic("getContainer")(getContainer)
-    __obj.updateDynamic("getControls")(getControls)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setContainer")(setContainer)
-    __obj.updateDynamic("setModel")(setModel)
+    val __obj = js.Dynamic.literal(Container = Container, Controls = Controls, acquire = acquire, activateFirst = activateFirst, activateLast = activateLast, activateTabOrder = activateTabOrder, autoTabOrder = autoTabOrder, getContainer = getContainer, getControls = getControls, getModel = getModel, queryInterface = queryInterface, release = release, setContainer = setContainer, setModel = setModel)
+  
     __obj.asInstanceOf[XTabController]
   }
 }

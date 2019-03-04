@@ -102,17 +102,8 @@ object Engine {
     velocityIterations: scala.Double,
     world: World
   ): Engine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("broadphase")(broadphase)
-    __obj.updateDynamic("constraintIterations")(constraintIterations)
-    __obj.updateDynamic("enableSleeping")(enableSleeping)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("pairs")(pairs)
-    __obj.updateDynamic("positionIterations")(positionIterations)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("timing")(timing)
-    __obj.updateDynamic("velocityIterations")(velocityIterations)
-    __obj.updateDynamic("world")(world)
+    val __obj = js.Dynamic.literal(broadphase = broadphase, constraintIterations = constraintIterations, enableSleeping = enableSleeping, enabled = enabled, pairs = pairs, positionIterations = positionIterations, render = render, timing = timing, velocityIterations = velocityIterations, world = world)
+  
     __obj.asInstanceOf[Engine]
   }
 }

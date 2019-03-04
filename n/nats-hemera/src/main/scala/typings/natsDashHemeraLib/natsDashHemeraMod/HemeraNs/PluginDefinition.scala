@@ -20,11 +20,8 @@ object PluginDefinition {
     parentPluginName: java.lang.String,
     register: js.Any
   ): PluginDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("parentPluginName")(parentPluginName)
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(attributes = attributes, options = options, parentPluginName = parentPluginName, register = register)
+  
     __obj.asInstanceOf[PluginDefinition]
   }
 }

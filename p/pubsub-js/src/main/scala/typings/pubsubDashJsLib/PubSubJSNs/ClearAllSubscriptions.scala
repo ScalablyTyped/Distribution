@@ -12,8 +12,8 @@ trait ClearAllSubscriptions extends js.Object {
 object ClearAllSubscriptions {
   @scala.inline
   def apply(clearAllSubscriptions: js.Function0[js.Any]): ClearAllSubscriptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearAllSubscriptions")(clearAllSubscriptions)
+    val __obj = js.Dynamic.literal(clearAllSubscriptions = clearAllSubscriptions)
+  
     __obj.asInstanceOf[ClearAllSubscriptions]
   }
 }

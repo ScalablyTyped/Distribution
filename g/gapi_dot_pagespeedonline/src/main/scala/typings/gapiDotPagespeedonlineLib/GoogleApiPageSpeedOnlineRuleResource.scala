@@ -32,11 +32,8 @@ object GoogleApiPageSpeedOnlineRuleResource {
     ruleScore: scala.Double,
     urlBlocks: js.Array[Anon_Header]
   ): GoogleApiPageSpeedOnlineRuleResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localizedRuleName")(localizedRuleName)
-    __obj.updateDynamic("ruleImpact")(ruleImpact)
-    __obj.updateDynamic("ruleScore")(ruleScore)
-    __obj.updateDynamic("urlBlocks")(urlBlocks)
+    val __obj = js.Dynamic.literal(localizedRuleName = localizedRuleName, ruleImpact = ruleImpact, ruleScore = ruleScore, urlBlocks = urlBlocks)
+  
     __obj.asInstanceOf[GoogleApiPageSpeedOnlineRuleResource]
   }
 }

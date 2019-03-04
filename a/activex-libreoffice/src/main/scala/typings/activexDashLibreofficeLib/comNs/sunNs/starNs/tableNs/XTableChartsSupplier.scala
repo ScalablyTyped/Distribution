@@ -29,12 +29,8 @@ object XTableChartsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTableChartsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Charts")(Charts)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCharts")(getCharts)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Charts = Charts, acquire = acquire, getCharts = getCharts, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTableChartsSupplier]
   }
 }

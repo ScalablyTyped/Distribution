@@ -22,12 +22,8 @@ object Anon_Fixed64 {
     sint64: scala.Double,
     uint64: scala.Double
   ): Anon_Fixed64 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fixed64")(fixed64)
-    __obj.updateDynamic("int64")(int64)
-    __obj.updateDynamic("sfixed64")(sfixed64)
-    __obj.updateDynamic("sint64")(sint64)
-    __obj.updateDynamic("uint64")(uint64)
+    val __obj = js.Dynamic.literal(fixed64 = fixed64, int64 = int64, sfixed64 = sfixed64, sint64 = sint64, uint64 = uint64)
+  
     __obj.asInstanceOf[Anon_Fixed64]
   }
 }

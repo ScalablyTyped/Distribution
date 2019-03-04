@@ -56,14 +56,8 @@ object XContentIdentifierMapping {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContentIdentifierMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("mapContent")(mapContent)
-    __obj.updateDynamic("mapContentIdentifier")(mapContentIdentifier)
-    __obj.updateDynamic("mapContentIdentifierString")(mapContentIdentifierString)
-    __obj.updateDynamic("mapRow")(mapRow)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, mapContent = mapContent, mapContentIdentifier = mapContentIdentifier, mapContentIdentifierString = mapContentIdentifierString, mapRow = mapRow, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContentIdentifierMapping]
   }
 }

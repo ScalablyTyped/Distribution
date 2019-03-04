@@ -21,12 +21,8 @@ object PropertyValueInfo {
     Value: js.Any,
     ValueState: PropertyValueState
   ): PropertyValueInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Handle")(Handle)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("ValueState")(ValueState)
+    val __obj = js.Dynamic.literal(Handle = Handle, Name = Name, State = State, Value = Value, ValueState = ValueState)
+  
     __obj.asInstanceOf[PropertyValueInfo]
   }
 }

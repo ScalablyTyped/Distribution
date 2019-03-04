@@ -50,8 +50,7 @@ object DropdownMenuProps {
     show: js.UndefOr[scala.Boolean] = js.undefined,
     usePopper: js.UndefOr[scala.Boolean] = js.undefined
   ): DropdownMenuProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd)
     if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
     if (popperConfig != null) __obj.updateDynamic("popperConfig")(popperConfig)

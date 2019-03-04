@@ -12,8 +12,8 @@ trait IAlertProvider extends js.Object {
 object IAlertProvider {
   @scala.inline
   def apply(defaults: IAlertOptions): IAlertProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[IAlertProvider]
   }
 }

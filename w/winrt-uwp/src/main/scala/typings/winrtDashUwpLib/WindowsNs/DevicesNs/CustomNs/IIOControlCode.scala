@@ -28,12 +28,8 @@ object IIOControlCode {
     deviceType: scala.Double,
     function: scala.Double
   ): IIOControlCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessMode")(accessMode)
-    __obj.updateDynamic("bufferingMethod")(bufferingMethod)
-    __obj.updateDynamic("controlCode")(controlCode)
-    __obj.updateDynamic("deviceType")(deviceType)
-    __obj.updateDynamic("function")(function)
+    val __obj = js.Dynamic.literal(accessMode = accessMode, bufferingMethod = bufferingMethod, controlCode = controlCode, deviceType = deviceType, function = function)
+  
     __obj.asInstanceOf[IIOControlCode]
   }
 }

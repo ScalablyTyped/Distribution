@@ -20,9 +20,7 @@ object SourceRepositoryInfo {
     domain: java.lang.String = null,
     `type`: java.lang.String = null
   ): SourceRepositoryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(project = project, user = user)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SourceRepositoryInfo]

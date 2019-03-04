@@ -12,8 +12,8 @@ trait RedirectRequest extends js.Object {
 object RedirectRequest {
   @scala.inline
   def apply(redirectUrl: java.lang.String): RedirectRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redirectUrl")(redirectUrl)
+    val __obj = js.Dynamic.literal(redirectUrl = redirectUrl)
+  
     __obj.asInstanceOf[RedirectRequest]
   }
 }

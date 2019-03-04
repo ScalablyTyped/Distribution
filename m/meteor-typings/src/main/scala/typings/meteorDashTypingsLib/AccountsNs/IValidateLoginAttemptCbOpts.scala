@@ -26,13 +26,8 @@ object IValidateLoginAttemptCbOpts {
     `type`: java.lang.String,
     user: meteorDashTypingsLib.MeteorNs.User
   ): IValidateLoginAttemptCbOpts = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("allowed")(allowed)
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("methodArguments")(methodArguments)
-    __obj.updateDynamic("methodName")(methodName)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(allowed = allowed, connection = connection, error = error, methodArguments = methodArguments, methodName = methodName, user = user)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
   }
 }

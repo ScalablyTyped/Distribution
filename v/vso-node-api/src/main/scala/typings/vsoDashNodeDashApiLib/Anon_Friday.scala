@@ -26,14 +26,8 @@ object Anon_Friday {
     tuesday: scala.Double,
     wednesday: scala.Double
   ): Anon_Friday = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("friday")(friday)
-    __obj.updateDynamic("monday")(monday)
-    __obj.updateDynamic("saturday")(saturday)
-    __obj.updateDynamic("sunday")(sunday)
-    __obj.updateDynamic("thursday")(thursday)
-    __obj.updateDynamic("tuesday")(tuesday)
-    __obj.updateDynamic("wednesday")(wednesday)
+    val __obj = js.Dynamic.literal(friday = friday, monday = monday, saturday = saturday, sunday = sunday, thursday = thursday, tuesday = tuesday, wednesday = wednesday)
+  
     __obj.asInstanceOf[Anon_Friday]
   }
 }

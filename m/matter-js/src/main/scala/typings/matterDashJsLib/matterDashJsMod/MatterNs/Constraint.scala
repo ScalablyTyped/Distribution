@@ -115,17 +115,8 @@ object Constraint {
     stiffness: scala.Double,
     `type`: java.lang.String
   ): Constraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("damping")(damping)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("pointA")(pointA)
-    __obj.updateDynamic("pointB")(pointB)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("stiffness")(stiffness)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, damping = damping, id = id, label = label, length = length, pointA = pointA, pointB = pointB, render = render, stiffness = stiffness)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Constraint]
   }
 }

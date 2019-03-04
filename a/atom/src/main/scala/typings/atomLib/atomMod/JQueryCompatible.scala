@@ -13,8 +13,8 @@ trait JQueryCompatible[Element /* <: stdLib.Node */]
 object JQueryCompatible {
   @scala.inline
   def apply[Element /* <: stdLib.Node */](jquery: java.lang.String): JQueryCompatible[Element] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jquery")(jquery)
+    val __obj = js.Dynamic.literal(jquery = jquery)
+  
     __obj.asInstanceOf[JQueryCompatible[Element]]
   }
 }

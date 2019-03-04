@@ -29,9 +29,8 @@ object XVBAMacroResolver {
     resolveScriptURLtoVBAMacro: js.Function1[java.lang.String, java.lang.String],
     resolveVBAMacroToScriptURL: js.Function1[java.lang.String, java.lang.String]
   ): XVBAMacroResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolveScriptURLtoVBAMacro")(resolveScriptURLtoVBAMacro)
-    __obj.updateDynamic("resolveVBAMacroToScriptURL")(resolveVBAMacroToScriptURL)
+    val __obj = js.Dynamic.literal(resolveScriptURLtoVBAMacro = resolveScriptURLtoVBAMacro, resolveVBAMacroToScriptURL = resolveVBAMacroToScriptURL)
+  
     __obj.asInstanceOf[XVBAMacroResolver]
   }
 }

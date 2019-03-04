@@ -31,18 +31,8 @@ object OrganizationSummary {
     `type`: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.Organization,
     url: java.lang.String
   ): OrganizationSummary = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("events_url")(events_url)
-    __obj.updateDynamic("hooks_url")(hooks_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("issues_url")(issues_url)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("members_url")(members_url)
-    __obj.updateDynamic("public_members_url")(public_members_url)
-    __obj.updateDynamic("repos_url")(repos_url)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, description = description, events_url = events_url, hooks_url = hooks_url, id = id, issues_url = issues_url, login = login, members_url = members_url, public_members_url = public_members_url, repos_url = repos_url, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OrganizationSummary]
   }
 }

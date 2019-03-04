@@ -66,34 +66,8 @@ object IPropertyDef {
     ValueList: mfilesLib.MFilesNs.MFBuiltInValueList | scala.Double,
     ValueListSortingType: mfilesLib.MFilesNs.MFValueListSortingType
   ): IPropertyDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("AllObjectTypes")(AllObjectTypes)
-    __obj.updateDynamic("AllowedAsGroupingLevel")(AllowedAsGroupingLevel)
-    __obj.updateDynamic("AutomaticValueDefinition")(AutomaticValueDefinition)
-    __obj.updateDynamic("AutomaticValueType")(AutomaticValueType)
-    __obj.updateDynamic("BasedOnValueList")(BasedOnValueList)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ContentType")(ContentType)
-    __obj.updateDynamic("DataType")(DataType)
-    __obj.updateDynamic("DependencyPD")(DependencyPD)
-    __obj.updateDynamic("DependencyRelation")(DependencyRelation)
-    __obj.updateDynamic("FormattingType")(FormattingType)
-    __obj.updateDynamic("GUID")(GUID)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ObjectType")(ObjectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("OwnerPropertyDef")(OwnerPropertyDef)
-    __obj.updateDynamic("Predefined")(Predefined)
-    __obj.updateDynamic("SortAscending")(SortAscending)
-    __obj.updateDynamic("StaticFilter")(StaticFilter)
-    __obj.updateDynamic("ThisIsConflictPD")(ThisIsConflictPD)
-    __obj.updateDynamic("ThisIsDefaultPD")(ThisIsDefaultPD)
-    __obj.updateDynamic("ThisIsOwnerPD")(ThisIsOwnerPD)
-    __obj.updateDynamic("UpdateType")(UpdateType)
-    __obj.updateDynamic("ValidationType")(ValidationType)
-    __obj.updateDynamic("ValueList")(ValueList.asInstanceOf[js.Any])
-    __obj.updateDynamic("ValueListSortingType")(ValueListSortingType)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AllObjectTypes = AllObjectTypes, AllowedAsGroupingLevel = AllowedAsGroupingLevel, AutomaticValueDefinition = AutomaticValueDefinition, AutomaticValueType = AutomaticValueType, BasedOnValueList = BasedOnValueList, Clone = Clone, ContentType = ContentType, DataType = DataType, DependencyPD = DependencyPD, DependencyRelation = DependencyRelation, FormattingType = FormattingType, GUID = GUID, ID = ID, Name = Name, ObjectType = ObjectType.asInstanceOf[js.Any], OwnerPropertyDef = OwnerPropertyDef, Predefined = Predefined, SortAscending = SortAscending, StaticFilter = StaticFilter, ThisIsConflictPD = ThisIsConflictPD, ThisIsDefaultPD = ThisIsDefaultPD, ThisIsOwnerPD = ThisIsOwnerPD, UpdateType = UpdateType, ValidationType = ValidationType, ValueList = ValueList.asInstanceOf[js.Any], ValueListSortingType = ValueListSortingType)
+  
     __obj.asInstanceOf[IPropertyDef]
   }
 }

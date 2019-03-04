@@ -17,8 +17,8 @@ object DidOpenTextDocumentParams {
   def apply(
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentItem
   ): DidOpenTextDocumentParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument)
+  
     __obj.asInstanceOf[DidOpenTextDocumentParams]
   }
 }

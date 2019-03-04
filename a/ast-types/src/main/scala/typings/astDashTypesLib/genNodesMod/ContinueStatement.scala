@@ -21,7 +21,8 @@ object ContinueStatement {
     `type`: astDashTypesLib.astDashTypesLibStrings.ContinueStatement,
     label: astDashTypesLib.genKindsMod.IdentifierKind = null
   ): ContinueStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[ContinueStatement]
   }

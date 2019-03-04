@@ -13,9 +13,8 @@ trait Anon_FaceId extends js.Object {
 object Anon_FaceId {
   @scala.inline
   def apply(faceId: scala.Double, idx: scala.Double): Anon_FaceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faceId")(faceId)
-    __obj.updateDynamic("idx")(idx)
+    val __obj = js.Dynamic.literal(faceId = faceId, idx = idx)
+  
     __obj.asInstanceOf[Anon_FaceId]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_Identity extends js.Object {
 object Anon_Identity {
   @scala.inline
   def apply(identity: scala.Boolean, kind: java.lang.String, name: java.lang.String): Anon_Identity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(identity = identity, kind = kind, name = name)
+  
     __obj.asInstanceOf[Anon_Identity]
   }
 }

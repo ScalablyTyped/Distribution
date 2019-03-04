@@ -89,22 +89,8 @@ object SystemInfo {
     windowHeight: scala.Double,
     windowWidth: scala.Double
   ): SystemInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    __obj.updateDynamic("brand")(brand)
-    __obj.updateDynamic("currentBattery")(currentBattery)
-    __obj.updateDynamic("fontSizeSetting")(fontSizeSetting)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("pixelRatio")(pixelRatio)
-    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    __obj.updateDynamic("screenHeight")(screenHeight)
-    __obj.updateDynamic("screenWidth")(screenWidth)
-    __obj.updateDynamic("storage")(storage)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("windowHeight")(windowHeight)
-    __obj.updateDynamic("windowWidth")(windowWidth)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], brand = brand, currentBattery = currentBattery, fontSizeSetting = fontSizeSetting, language = language, model = model, pixelRatio = pixelRatio, platform = platform.asInstanceOf[js.Any], screenHeight = screenHeight, screenWidth = screenWidth, storage = storage, system = system, version = version, windowHeight = windowHeight, windowWidth = windowWidth)
+  
     __obj.asInstanceOf[SystemInfo]
   }
 }

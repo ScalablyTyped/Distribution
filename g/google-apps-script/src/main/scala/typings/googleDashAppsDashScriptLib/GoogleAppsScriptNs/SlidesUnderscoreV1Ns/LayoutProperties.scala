@@ -17,10 +17,8 @@ trait LayoutProperties extends js.Object {
 object LayoutProperties {
   @scala.inline
   def apply(display_name: java.lang.String, master_object_id: java.lang.String, name: java.lang.String): LayoutProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("display_name")(display_name)
-    __obj.updateDynamic("master_object_id")(master_object_id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(display_name = display_name, master_object_id = master_object_id, name = name)
+  
     __obj.asInstanceOf[LayoutProperties]
   }
 }

@@ -38,11 +38,8 @@ object ImagePickerIOSStatic {
       scala.Unit
     ]
   ): ImagePickerIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canRecordVideos")(canRecordVideos)
-    __obj.updateDynamic("canUseCamera")(canUseCamera)
-    __obj.updateDynamic("openCameraDialog")(openCameraDialog)
-    __obj.updateDynamic("openSelectDialog")(openSelectDialog)
+    val __obj = js.Dynamic.literal(canRecordVideos = canRecordVideos, canUseCamera = canUseCamera, openCameraDialog = openCameraDialog, openSelectDialog = openSelectDialog)
+  
     __obj.asInstanceOf[ImagePickerIOSStatic]
   }
 }

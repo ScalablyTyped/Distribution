@@ -22,8 +22,7 @@ object SpotDatafeedSubscriptionArgs {
     bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): SpotDatafeedSubscriptionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotDatafeedSubscriptionArgs]
   }

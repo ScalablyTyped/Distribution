@@ -18,9 +18,7 @@ object IIconRecords {
     __remapped: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[IIconRecord | js.Object] = null
   ): IIconRecords = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__options")(__options)
-    __obj.updateDynamic("__remapped")(__remapped)
+    val __obj = js.Dynamic.literal(__options = __options, __remapped = __remapped)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IIconRecords]
   }

@@ -17,8 +17,8 @@ trait _IPushBack[T] extends js.Object {
 object _IPushBack {
   @scala.inline
   def apply[T](push_back: js.Function1[T, scala.Unit]): _IPushBack[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("push_back")(push_back)
+    val __obj = js.Dynamic.literal(push_back = push_back)
+  
     __obj.asInstanceOf[_IPushBack[T]]
   }
 }

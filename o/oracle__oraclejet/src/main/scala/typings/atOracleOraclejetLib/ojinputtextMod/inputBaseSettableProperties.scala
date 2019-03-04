@@ -45,23 +45,7 @@ object inputBaseSettableProperties {
       atOracleOraclejetLib.ojvalidationDashBaseMod.Validator[V] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
     ] = null
   ): inputBaseSettableProperties[V, SV, RV] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncValidators")(asyncValidators)
-    __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    __obj.updateDynamic("autofocus")(autofocus)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus, disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, placeholder = placeholder, rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly, required = required, translations = translations, valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (validators != null) __obj.updateDynamic("validators")(validators)
     __obj.asInstanceOf[inputBaseSettableProperties[V, SV, RV]]

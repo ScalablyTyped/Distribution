@@ -156,8 +156,7 @@ object CheckBoxProps {
     uncheckedIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
     wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): CheckBoxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
+    val __obj = js.Dynamic.literal(checked = checked)
     if (Component != null) __obj.updateDynamic("Component")(Component)
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (checkedColor != null) __obj.updateDynamic("checkedColor")(checkedColor)

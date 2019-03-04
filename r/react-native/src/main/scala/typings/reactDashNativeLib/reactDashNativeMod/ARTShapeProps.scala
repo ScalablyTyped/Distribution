@@ -34,8 +34,7 @@ object ARTShapeProps {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): ARTShapeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
+    val __obj = js.Dynamic.literal(d = d)
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

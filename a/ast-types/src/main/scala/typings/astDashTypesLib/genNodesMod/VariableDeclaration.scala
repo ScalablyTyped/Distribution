@@ -28,9 +28,8 @@ object VariableDeclaration {
     kind: astDashTypesLib.astDashTypesLibStrings.`var` | astDashTypesLib.astDashTypesLibStrings.let | astDashTypesLib.astDashTypesLibStrings.const,
     `type`: astDashTypesLib.astDashTypesLibStrings.VariableDeclaration
   ): VariableDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("declarations")(declarations)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(declarations = declarations, kind = kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VariableDeclaration]
   }
 }

@@ -32,9 +32,7 @@ object ISimplificationSettings {
     quality: scala.Double,
     optimizeMesh: js.UndefOr[scala.Boolean] = js.undefined
   ): ISimplificationSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("quality")(quality)
+    val __obj = js.Dynamic.literal(distance = distance, quality = quality)
     if (!js.isUndefined(optimizeMesh)) __obj.updateDynamic("optimizeMesh")(optimizeMesh)
     __obj.asInstanceOf[ISimplificationSettings]
   }

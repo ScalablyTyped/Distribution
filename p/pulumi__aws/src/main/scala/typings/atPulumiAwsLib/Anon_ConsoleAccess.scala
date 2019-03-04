@@ -20,9 +20,7 @@ object Anon_ConsoleAccess {
     consoleAccess: js.UndefOr[scala.Boolean] = js.undefined,
     groups: js.Array[java.lang.String] = null
   ): Anon_ConsoleAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, username = username)
     if (!js.isUndefined(consoleAccess)) __obj.updateDynamic("consoleAccess")(consoleAccess)
     if (groups != null) __obj.updateDynamic("groups")(groups)
     __obj.asInstanceOf[Anon_ConsoleAccess]

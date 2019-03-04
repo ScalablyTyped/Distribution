@@ -117,33 +117,8 @@ object XDataPilotDescriptor {
     setSourceRange: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
     setTag: js.Function1[java.lang.String, scala.Unit]
   ): XDataPilotDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnFields")(ColumnFields)
-    __obj.updateDynamic("DataFields")(DataFields)
-    __obj.updateDynamic("DataPilotFields")(DataPilotFields)
-    __obj.updateDynamic("FilterDescriptor")(FilterDescriptor)
-    __obj.updateDynamic("HiddenFields")(HiddenFields)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PageFields")(PageFields)
-    __obj.updateDynamic("RowFields")(RowFields)
-    __obj.updateDynamic("SourceRange")(SourceRange)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnFields")(getColumnFields)
-    __obj.updateDynamic("getDataFields")(getDataFields)
-    __obj.updateDynamic("getDataPilotFields")(getDataPilotFields)
-    __obj.updateDynamic("getFilterDescriptor")(getFilterDescriptor)
-    __obj.updateDynamic("getHiddenFields")(getHiddenFields)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPageFields")(getPageFields)
-    __obj.updateDynamic("getRowFields")(getRowFields)
-    __obj.updateDynamic("getSourceRange")(getSourceRange)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setSourceRange")(setSourceRange)
-    __obj.updateDynamic("setTag")(setTag)
+    val __obj = js.Dynamic.literal(ColumnFields = ColumnFields, DataFields = DataFields, DataPilotFields = DataPilotFields, FilterDescriptor = FilterDescriptor, HiddenFields = HiddenFields, Name = Name, PageFields = PageFields, RowFields = RowFields, SourceRange = SourceRange, Tag = Tag, acquire = acquire, getColumnFields = getColumnFields, getDataFields = getDataFields, getDataPilotFields = getDataPilotFields, getFilterDescriptor = getFilterDescriptor, getHiddenFields = getHiddenFields, getName = getName, getPageFields = getPageFields, getRowFields = getRowFields, getSourceRange = getSourceRange, getTag = getTag, queryInterface = queryInterface, release = release, setName = setName, setSourceRange = setSourceRange, setTag = setTag)
+  
     __obj.asInstanceOf[XDataPilotDescriptor]
   }
 }

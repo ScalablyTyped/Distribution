@@ -36,9 +36,7 @@ object Anon_Calendar {
     Transfer: js.Object = null,
     Upload: js.Object = null
   ): Anon_Calendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exist")(exist)
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(exist = exist, locale = locale)
     if (Calendar != null) __obj.updateDynamic("Calendar")(Calendar)
     if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker)
     if (Modal != null) __obj.updateDynamic("Modal")(Modal)

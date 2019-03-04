@@ -36,8 +36,7 @@ object StripeCardTokenData {
     exp_year: scala.Int | scala.Double = null,
     name: java.lang.String = null
   ): StripeCardTokenData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(number = number)
     if (address_city != null) __obj.updateDynamic("address_city")(address_city)
     if (address_country != null) __obj.updateDynamic("address_country")(address_country)
     if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1)

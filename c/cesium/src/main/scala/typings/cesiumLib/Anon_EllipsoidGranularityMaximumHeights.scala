@@ -22,8 +22,7 @@ object Anon_EllipsoidGranularityMaximumHeights {
     maximumHeights: js.Array[scala.Double] = null,
     minimumHeights: js.Array[scala.Double] = null
   ): Anon_EllipsoidGranularityMaximumHeights = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(positions = positions)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
     if (maximumHeights != null) __obj.updateDynamic("maximumHeights")(maximumHeights)

@@ -27,15 +27,15 @@ abstract class WebServer ()
   /**
     * @hidden
     */
-  var `http_server_`: js.Any = js.native
+  var http_server_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `my_port_`: js.Any = js.native
+  var my_port_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `sequence_`: js.Any = js.native
+  var sequence_ : js.Any = js.native
   /**
     * @inheritdoc
     */

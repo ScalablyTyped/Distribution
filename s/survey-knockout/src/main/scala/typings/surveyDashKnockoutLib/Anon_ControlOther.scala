@@ -14,10 +14,8 @@ trait Anon_ControlOther extends js.Object {
 object Anon_ControlOther {
   @scala.inline
   def apply(control: java.lang.String, other: java.lang.String, root: java.lang.String): Anon_ControlOther = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(control = control, other = other, root = root)
+  
     __obj.asInstanceOf[Anon_ControlOther]
   }
 }

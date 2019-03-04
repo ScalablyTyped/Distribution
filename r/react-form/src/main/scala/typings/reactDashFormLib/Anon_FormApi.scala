@@ -12,8 +12,8 @@ trait Anon_FormApi extends js.Object {
 object Anon_FormApi {
   @scala.inline
   def apply(formApi: reactDashFormLib.reactDashFormMod.FormApi): Anon_FormApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formApi")(formApi)
+    val __obj = js.Dynamic.literal(formApi = formApi)
+  
     __obj.asInstanceOf[Anon_FormApi]
   }
 }

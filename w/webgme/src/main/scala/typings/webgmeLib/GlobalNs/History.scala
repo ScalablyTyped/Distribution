@@ -20,11 +20,8 @@ object History {
     value: scala.Boolean,
     writable: scala.Boolean
   ): History = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configurable")(configurable)
-    __obj.updateDynamic("enumerable")(enumerable)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("writable")(writable)
+    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, value = value, writable = writable)
+  
     __obj.asInstanceOf[History]
   }
 }

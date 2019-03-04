@@ -13,9 +13,8 @@ trait Anon_ColumnLine extends js.Object {
 object Anon_ColumnLine {
   @scala.inline
   def apply(column: scala.Double, line: scala.Double): Anon_ColumnLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(column = column, line = line)
+  
     __obj.asInstanceOf[Anon_ColumnLine]
   }
 }

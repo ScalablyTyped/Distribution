@@ -45,12 +45,8 @@ object IndexedShape {
     toJSON: js.Function0[js.Any],
     `type`: js.Function1[java.lang.String, IndexedShape]
   ): IndexedShape = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("shapeFieldName")(shapeFieldName)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, id = id, index = index, shapeFieldName = shapeFieldName, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IndexedShape]
   }
 }

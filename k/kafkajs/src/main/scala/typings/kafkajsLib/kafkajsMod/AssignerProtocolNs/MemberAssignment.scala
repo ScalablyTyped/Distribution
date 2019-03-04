@@ -16,9 +16,8 @@ object MemberAssignment {
     decode: js.Function1[nodeLib.Buffer, MemberAssignmentOptions],
     encode: js.Function1[MemberAssignmentOptions, nodeLib.Buffer]
   ): MemberAssignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+  
     __obj.asInstanceOf[MemberAssignment]
   }
 }

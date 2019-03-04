@@ -52,16 +52,7 @@ object AsObject {
     `package`: java.lang.String = null,
     syntax: java.lang.String = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencyList")(dependencyList)
-    __obj.updateDynamic("enumTypeList")(enumTypeList)
-    __obj.updateDynamic("extensionList")(extensionList)
-    __obj.updateDynamic("messageTypeList")(messageTypeList)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("publicDependencyList")(publicDependencyList)
-    __obj.updateDynamic("serviceList")(serviceList)
-    __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo)
-    __obj.updateDynamic("weakDependencyList")(weakDependencyList)
+    val __obj = js.Dynamic.literal(dependencyList = dependencyList, enumTypeList = enumTypeList, extensionList = extensionList, messageTypeList = messageTypeList, options = options, publicDependencyList = publicDependencyList, serviceList = serviceList, sourceCodeInfo = sourceCodeInfo, weakDependencyList = weakDependencyList)
     if (name != null) __obj.updateDynamic("name")(name)
     if (`package` != null) __obj.updateDynamic("package")(`package`)
     if (syntax != null) __obj.updateDynamic("syntax")(syntax)

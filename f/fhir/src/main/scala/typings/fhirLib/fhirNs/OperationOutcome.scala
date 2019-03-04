@@ -34,8 +34,7 @@ object OperationOutcome {
     resourceType: code = null,
     text: Narrative = null
   ): OperationOutcome = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("issue")(issue)
+    val __obj = js.Dynamic.literal(issue = issue)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

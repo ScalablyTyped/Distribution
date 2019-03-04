@@ -12,8 +12,8 @@ trait Anon_OutputAnonCheck extends js.Object {
 object Anon_OutputAnonCheck {
   @scala.inline
   def apply(output: Anon_Check): Anon_OutputAnonCheck = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(output = output)
+  
     __obj.asInstanceOf[Anon_OutputAnonCheck]
   }
 }

@@ -37,12 +37,8 @@ object Config {
     truncateThreshold: scala.Double,
     useProxy: scala.Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeStack")(includeStack)
-    __obj.updateDynamic("proxyExcludedKeys")(proxyExcludedKeys)
-    __obj.updateDynamic("showDiff")(showDiff)
-    __obj.updateDynamic("truncateThreshold")(truncateThreshold)
-    __obj.updateDynamic("useProxy")(useProxy)
+    val __obj = js.Dynamic.literal(includeStack = includeStack, proxyExcludedKeys = proxyExcludedKeys, showDiff = showDiff, truncateThreshold = truncateThreshold, useProxy = useProxy)
+  
     __obj.asInstanceOf[Config]
   }
 }

@@ -18,10 +18,8 @@ object LockService {
     getScriptLock: js.Function0[Lock],
     getUserLock: js.Function0[Lock]
   ): LockService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDocumentLock")(getDocumentLock)
-    __obj.updateDynamic("getScriptLock")(getScriptLock)
-    __obj.updateDynamic("getUserLock")(getUserLock)
+    val __obj = js.Dynamic.literal(getDocumentLock = getDocumentLock, getScriptLock = getScriptLock, getUserLock = getUserLock)
+  
     __obj.asInstanceOf[LockService]
   }
 }

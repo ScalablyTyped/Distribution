@@ -25,9 +25,8 @@ object Anon_AnErrorStringFailureSuccessTheSrcObject {
     ],
     success: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, java.lang.String, js.Any]
   ): Anon_AnErrorStringFailureSuccessTheSrcObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessTheSrcObject]
   }
 }

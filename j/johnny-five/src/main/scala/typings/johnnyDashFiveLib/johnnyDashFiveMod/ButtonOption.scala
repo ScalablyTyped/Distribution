@@ -22,8 +22,7 @@ object ButtonOption {
     isPulldown: js.UndefOr[scala.Boolean] = js.undefined,
     isPullup: js.UndefOr[scala.Boolean] = js.undefined
   ): ButtonOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (holdtime != null) __obj.updateDynamic("holdtime")(holdtime.asInstanceOf[js.Any])
     if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
     if (!js.isUndefined(isPulldown)) __obj.updateDynamic("isPulldown")(isPulldown)

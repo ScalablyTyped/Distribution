@@ -38,18 +38,7 @@ object IpadicFeatures {
     pronunciation: java.lang.String = null,
     reading: java.lang.String = null
   ): IpadicFeatures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basic_form")(basic_form)
-    __obj.updateDynamic("conjugated_form")(conjugated_form)
-    __obj.updateDynamic("conjugated_type")(conjugated_type)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("pos_detail_1")(pos_detail_1)
-    __obj.updateDynamic("pos_detail_2")(pos_detail_2)
-    __obj.updateDynamic("pos_detail_3")(pos_detail_3)
-    __obj.updateDynamic("surface_form")(surface_form)
-    __obj.updateDynamic("word_id")(word_id)
-    __obj.updateDynamic("word_position")(word_position)
-    __obj.updateDynamic("word_type")(word_type)
+    val __obj = js.Dynamic.literal(basic_form = basic_form, conjugated_form = conjugated_form, conjugated_type = conjugated_type, pos = pos, pos_detail_1 = pos_detail_1, pos_detail_2 = pos_detail_2, pos_detail_3 = pos_detail_3, surface_form = surface_form, word_id = word_id, word_position = word_position, word_type = word_type)
     if (pronunciation != null) __obj.updateDynamic("pronunciation")(pronunciation)
     if (reading != null) __obj.updateDynamic("reading")(reading)
     __obj.asInstanceOf[IpadicFeatures]

@@ -20,9 +20,7 @@ object MotorPins {
     brake: scala.Int | scala.Double = null,
     cdir: scala.Int | scala.Double = null
   ): MotorPins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("pwm")(pwm)
+    val __obj = js.Dynamic.literal(dir = dir, pwm = pwm)
     if (brake != null) __obj.updateDynamic("brake")(brake.asInstanceOf[js.Any])
     if (cdir != null) __obj.updateDynamic("cdir")(cdir.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorPins]

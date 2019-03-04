@@ -23,12 +23,7 @@ object CloudFormationCustomResourceSuccessResponse {
     Data: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     Reason: java.lang.String = null
   ): CloudFormationCustomResourceSuccessResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LogicalResourceId")(LogicalResourceId)
-    __obj.updateDynamic("PhysicalResourceId")(PhysicalResourceId)
-    __obj.updateDynamic("RequestId")(RequestId)
-    __obj.updateDynamic("StackId")(StackId)
-    __obj.updateDynamic("Status")(Status)
+    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, PhysicalResourceId = PhysicalResourceId, RequestId = RequestId, StackId = StackId, Status = Status)
     if (Data != null) __obj.updateDynamic("Data")(Data)
     if (Reason != null) __obj.updateDynamic("Reason")(Reason)
     __obj.asInstanceOf[CloudFormationCustomResourceSuccessResponse]

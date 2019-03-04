@@ -16,9 +16,8 @@ object OptionBuilder {
     setLabel: js.Function1[java.lang.String, OptionBuilder],
     setValue: js.Function1[java.lang.String, OptionBuilder]
   ): OptionBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(setLabel = setLabel, setValue = setValue)
+  
     __obj.asInstanceOf[OptionBuilder]
   }
 }

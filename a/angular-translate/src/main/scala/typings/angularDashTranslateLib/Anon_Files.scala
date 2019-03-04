@@ -18,8 +18,8 @@ object Anon_Files {
       angularDashTranslateLib.angularDashTranslateMod.angularMod.translateNs.IStaticFilesLoaderOptions
     ]
   ): Anon_Files = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(files = files)
+  
     __obj.asInstanceOf[Anon_Files]
   }
 }

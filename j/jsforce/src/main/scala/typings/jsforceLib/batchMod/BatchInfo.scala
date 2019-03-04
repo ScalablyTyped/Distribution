@@ -20,11 +20,8 @@ object BatchInfo {
     state: java.lang.String,
     stateMessage: java.lang.String
   ): BatchInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("stateMessage")(stateMessage)
+    val __obj = js.Dynamic.literal(id = id, jobId = jobId, state = state, stateMessage = stateMessage)
+  
     __obj.asInstanceOf[BatchInfo]
   }
 }

@@ -18,10 +18,8 @@ object NextAppContext {
     ctx: nextLib.nextMod.nextNs.NextContext[Q],
     router: nextDashServerLib.routerMod.RouterProps[Q]
   ): NextAppContext[Q] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    __obj.updateDynamic("ctx")(ctx)
-    __obj.updateDynamic("router")(router)
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], ctx = ctx, router = router)
+  
     __obj.asInstanceOf[NextAppContext[Q]]
   }
 }

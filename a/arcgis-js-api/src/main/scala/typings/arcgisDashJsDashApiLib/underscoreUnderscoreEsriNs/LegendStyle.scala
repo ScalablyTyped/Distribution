@@ -45,10 +45,8 @@ object LegendStyle {
     `type`: java.lang.String,
     layout: java.lang.String = null
   ): LegendStyle = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     __obj.asInstanceOf[LegendStyle]
   }

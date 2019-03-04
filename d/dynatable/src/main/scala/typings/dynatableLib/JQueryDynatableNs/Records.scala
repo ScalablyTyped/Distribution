@@ -65,16 +65,8 @@ object Records {
     sort: js.Function0[scala.Double],
     updateFromJson: js.Function1[js.Any, scala.Unit]
   ): Records = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("getFromTable")(getFromTable)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
-    __obj.updateDynamic("pageBounds")(pageBounds)
-    __obj.updateDynamic("paginate")(paginate)
-    __obj.updateDynamic("resetOriginal")(resetOriginal)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("updateFromJson")(updateFromJson)
+    val __obj = js.Dynamic.literal(count = count, getFromTable = getFromTable, init = init, initOnLoad = initOnLoad, pageBounds = pageBounds, paginate = paginate, resetOriginal = resetOriginal, sort = sort, updateFromJson = updateFromJson)
+  
     __obj.asInstanceOf[Records]
   }
 }

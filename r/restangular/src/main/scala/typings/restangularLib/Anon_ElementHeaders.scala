@@ -20,11 +20,8 @@ object Anon_ElementHeaders {
     httpConfig: angularLib.angularMod.angularNs.IRequestShortcutConfig,
     params: js.Any
   ): Anon_ElementHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("httpConfig")(httpConfig)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(element = element, headers = headers, httpConfig = httpConfig, params = params)
+  
     __obj.asInstanceOf[Anon_ElementHeaders]
   }
 }

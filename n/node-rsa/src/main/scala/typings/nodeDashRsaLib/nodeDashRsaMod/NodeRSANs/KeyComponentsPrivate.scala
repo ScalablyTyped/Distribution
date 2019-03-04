@@ -28,15 +28,8 @@ object KeyComponentsPrivate {
     p: nodeLib.Buffer,
     q: nodeLib.Buffer
   ): KeyComponentsPrivate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coeff")(coeff)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("dmp1")(dmp1)
-    __obj.updateDynamic("dmq1")(dmq1)
-    __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("q")(q)
+    val __obj = js.Dynamic.literal(coeff = coeff, d = d, dmp1 = dmp1, dmq1 = dmq1, e = e.asInstanceOf[js.Any], n = n, p = p, q = q)
+  
     __obj.asInstanceOf[KeyComponentsPrivate]
   }
 }

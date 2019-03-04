@@ -32,10 +32,7 @@ object SshKeyArgs {
     username: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): SshKeyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SshKeyArgs]
   }

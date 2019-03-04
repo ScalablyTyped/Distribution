@@ -18,7 +18,8 @@ object LexDialogActionBase {
     message: awsDashLambdaLib.Anon_Content = null,
     responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
   ): LexDialogActionBase = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
     if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
     __obj.asInstanceOf[LexDialogActionBase]

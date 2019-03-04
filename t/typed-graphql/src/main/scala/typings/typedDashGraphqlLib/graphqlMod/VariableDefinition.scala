@@ -22,9 +22,8 @@ object VariableDefinition {
     defaultValue: Value = null,
     loc: Location = null
   ): VariableDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("variable")(variable)
+    val __obj = js.Dynamic.literal(kind = kind, variable = variable)
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[VariableDefinition]

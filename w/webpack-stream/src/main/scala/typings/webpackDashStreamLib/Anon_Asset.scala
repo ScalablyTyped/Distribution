@@ -44,23 +44,8 @@ object Anon_Asset {
     Record: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.compilationNs.Record],
     RuntimeTemplate: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.compilationNs.RuntimeTemplate]
   ): Anon_Asset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Asset")(Asset)
-    __obj.updateDynamic("Chunk")(Chunk)
-    __obj.updateDynamic("ChunkGroup")(ChunkGroup)
-    __obj.updateDynamic("ChunkHash")(ChunkHash)
-    __obj.updateDynamic("ChunkTemplate")(ChunkTemplate)
-    __obj.updateDynamic("Compilation")(Compilation)
-    __obj.updateDynamic("ContextModuleFactory")(ContextModuleFactory)
-    __obj.updateDynamic("Dependency")(Dependency)
-    __obj.updateDynamic("DllModuleFactory")(DllModuleFactory)
-    __obj.updateDynamic("HotUpdateChunkTemplate")(HotUpdateChunkTemplate)
-    __obj.updateDynamic("MainTemplate")(MainTemplate)
-    __obj.updateDynamic("Module")(Module)
-    __obj.updateDynamic("ModuleTemplate")(ModuleTemplate)
-    __obj.updateDynamic("NormalModuleFactory")(NormalModuleFactory)
-    __obj.updateDynamic("Record")(Record)
-    __obj.updateDynamic("RuntimeTemplate")(RuntimeTemplate)
+    val __obj = js.Dynamic.literal(Asset = Asset, Chunk = Chunk, ChunkGroup = ChunkGroup, ChunkHash = ChunkHash, ChunkTemplate = ChunkTemplate, Compilation = Compilation, ContextModuleFactory = ContextModuleFactory, Dependency = Dependency, DllModuleFactory = DllModuleFactory, HotUpdateChunkTemplate = HotUpdateChunkTemplate, MainTemplate = MainTemplate, Module = Module, ModuleTemplate = ModuleTemplate, NormalModuleFactory = NormalModuleFactory, Record = Record, RuntimeTemplate = RuntimeTemplate)
+  
     __obj.asInstanceOf[Anon_Asset]
   }
 }

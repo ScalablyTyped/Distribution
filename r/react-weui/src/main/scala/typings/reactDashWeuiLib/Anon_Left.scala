@@ -13,9 +13,8 @@ trait Anon_Left extends js.Object {
 object Anon_Left {
   @scala.inline
   def apply(left: java.lang.String, right: java.lang.String): Anon_Left = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, right = right)
+  
     __obj.asInstanceOf[Anon_Left]
   }
 }

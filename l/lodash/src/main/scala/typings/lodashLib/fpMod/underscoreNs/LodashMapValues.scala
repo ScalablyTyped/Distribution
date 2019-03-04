@@ -10,15 +10,15 @@ trait LodashMapValues extends js.Object {
   def apply(iteratee: java.lang.String): LodashMapValues6x1 = js.native
   def apply(iteratee: js.Object): LodashMapValues3x1 = js.native
   def apply[T](
-    callbackOrIterateeOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    callbackOrIterateeOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.__,
     obj: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): LodashMapValues1x2[T] = js.native
   def apply[T](
-    callbackOrIterateeOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    callbackOrIterateeOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.__,
     obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashMapValues1x2[T] = js.native
-  def apply[T /* <: js.Object */](callbackOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashMapValues2x2[T] = js.native
-  def apply[T /* <: js.Object */](callbackOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.`__`, obj: T): LodashMapValues2x2[T] = js.native
+  def apply[T /* <: js.Object */](callbackOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.__): LodashMapValues2x2[T] = js.native
+  def apply[T /* <: js.Object */](callbackOrIterateeOrIteratee: lodashLib.lodashMod.underscoreNs.__, obj: T): LodashMapValues2x2[T] = js.native
   def apply[T /* <: js.Object */](iteratee: java.lang.String, obj: T): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ lodashLib.lodashLibStrings.LodashMapValues with js.Any = js.native

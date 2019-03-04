@@ -22,8 +22,7 @@ object MapViewOverlay {
     lineWidth: scala.Int | scala.Double = null,
     strokeColor: java.lang.String = null
   ): MapViewOverlay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coordinates")(coordinates)
+    val __obj = js.Dynamic.literal(coordinates = coordinates)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (id != null) __obj.updateDynamic("id")(id)
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])

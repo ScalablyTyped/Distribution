@@ -27,12 +27,8 @@ object XModifyBroadcaster {
     release: js.Function0[scala.Unit],
     removeModifyListener: js.Function1[XModifyListener, scala.Unit]
   ): XModifyBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addModifyListener = addModifyListener, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener)
+  
     __obj.asInstanceOf[XModifyBroadcaster]
   }
 }

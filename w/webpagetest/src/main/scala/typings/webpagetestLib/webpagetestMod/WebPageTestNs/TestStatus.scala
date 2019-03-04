@@ -44,23 +44,8 @@ object TestStatus {
     testsCompleted: scala.Double,
     testsExpected: scala.Double
   ): TestStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completeTime")(completeTime)
-    __obj.updateDynamic("elapsed")(elapsed)
-    __obj.updateDynamic("fvRunsCompleted")(fvRunsCompleted)
-    __obj.updateDynamic("fvonly")(fvonly)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("remote")(remote)
-    __obj.updateDynamic("runs")(runs)
-    __obj.updateDynamic("rvRunsCompleted")(rvRunsCompleted)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("testId")(testId)
-    __obj.updateDynamic("testInfo")(testInfo)
-    __obj.updateDynamic("testsCompleted")(testsCompleted)
-    __obj.updateDynamic("testsExpected")(testsExpected)
+    val __obj = js.Dynamic.literal(completeTime = completeTime, elapsed = elapsed, fvRunsCompleted = fvRunsCompleted, fvonly = fvonly, id = id, location = location, remote = remote, runs = runs, rvRunsCompleted = rvRunsCompleted, startTime = startTime, statusCode = statusCode, statusText = statusText, testId = testId, testInfo = testInfo, testsCompleted = testsCompleted, testsExpected = testsExpected)
+  
     __obj.asInstanceOf[TestStatus]
   }
 }

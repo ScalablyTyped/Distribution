@@ -14,10 +14,8 @@ trait Anon_ErrorPlotter extends js.Object {
 object Anon_ErrorPlotter {
   @scala.inline
   def apply(errorPlotter: js.Any, fillPlotter: js.Any, linePlotter: js.Any): Anon_ErrorPlotter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorPlotter")(errorPlotter)
-    __obj.updateDynamic("fillPlotter")(fillPlotter)
-    __obj.updateDynamic("linePlotter")(linePlotter)
+    val __obj = js.Dynamic.literal(errorPlotter = errorPlotter, fillPlotter = fillPlotter, linePlotter = linePlotter)
+  
     __obj.asInstanceOf[Anon_ErrorPlotter]
   }
 }

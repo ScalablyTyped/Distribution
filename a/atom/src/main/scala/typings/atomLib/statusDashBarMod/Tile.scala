@@ -21,10 +21,8 @@ object Tile {
     getItem: js.Function0[js.Object],
     getPriority: js.Function0[scala.Double]
   ): Tile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getPriority")(getPriority)
+    val __obj = js.Dynamic.literal(destroy = destroy, getItem = getItem, getPriority = getPriority)
+  
     __obj.asInstanceOf[Tile]
   }
 }

@@ -32,10 +32,8 @@ object ProtocolHandler {
     protocol: java.lang.String | _ProtocolHandlerProtocol,
     uriTemplate: ExtensionURL | HttpURL
   ): ProtocolHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("uriTemplate")(uriTemplate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, protocol = protocol.asInstanceOf[js.Any], uriTemplate = uriTemplate.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ProtocolHandler]
   }
 }

@@ -31,13 +31,8 @@ object ObjectMeta {
     storageClass: StorageType,
     `type`: java.lang.String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("storageClass")(storageClass)
+    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, name = name, owner = owner, size = size, storageClass = storageClass)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ObjectMeta]
   }
 }

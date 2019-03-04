@@ -24,13 +24,8 @@ object NamespaceHelpSchema {
     name: java.lang.String,
     summary: java.lang.String
   ): NamespaceHelpSchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("commands")(commands)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(aliases = aliases, commands = commands, description = description, groups = groups, name = name, summary = summary)
+  
     __obj.asInstanceOf[NamespaceHelpSchema]
   }
 }

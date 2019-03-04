@@ -72,19 +72,8 @@ object ParsedPath {
     root: java.lang.String,
     stem: java.lang.String
   ): ParsedPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absolute")(absolute)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("basename")(basename)
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("dirname")(dirname)
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("extname")(extname)
-    __obj.updateDynamic("isAbsolute")(isAbsolute)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("stem")(stem)
+    val __obj = js.Dynamic.literal(absolute = absolute, base = base, basename = basename, dir = dir, dirname = dirname, ext = ext, extname = extname, isAbsolute = isAbsolute, name = name, path = path, root = root, stem = stem)
+  
     __obj.asInstanceOf[ParsedPath]
   }
 }

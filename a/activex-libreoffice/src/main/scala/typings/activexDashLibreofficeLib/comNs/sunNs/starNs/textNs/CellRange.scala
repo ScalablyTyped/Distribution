@@ -58,18 +58,10 @@ object CellRange {
     XCellRangeData: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XCellRangeData = null,
     XChartDataArray: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataArray = null
   ): CellRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackColor")(BackColor)
-    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
-    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
-    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
-    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    val __obj = js.Dynamic.literal(BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, ChartColumnAsLabel = ChartColumnAsLabel, ChartRowAsLabel = ChartRowAsLabel, NumberFormat = NumberFormat)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
-    __obj.updateDynamic("ChartColumnAsLabel")(ChartColumnAsLabel)
-    __obj.updateDynamic("ChartRowAsLabel")(ChartRowAsLabel)
-    __obj.updateDynamic("NumberFormat")(NumberFormat)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)

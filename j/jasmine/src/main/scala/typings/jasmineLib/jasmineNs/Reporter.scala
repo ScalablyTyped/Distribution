@@ -24,13 +24,8 @@ object Reporter {
     reportSpecStarting: js.Function1[Spec, scala.Unit],
     reportSuiteResults: js.Function1[Suite, scala.Unit]
   ): Reporter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("reportRunnerResults")(reportRunnerResults)
-    __obj.updateDynamic("reportRunnerStarting")(reportRunnerStarting)
-    __obj.updateDynamic("reportSpecResults")(reportSpecResults)
-    __obj.updateDynamic("reportSpecStarting")(reportSpecStarting)
-    __obj.updateDynamic("reportSuiteResults")(reportSuiteResults)
+    val __obj = js.Dynamic.literal(log = log, reportRunnerResults = reportRunnerResults, reportRunnerStarting = reportRunnerStarting, reportSpecResults = reportSpecResults, reportSpecStarting = reportSpecStarting, reportSuiteResults = reportSuiteResults)
+  
     __obj.asInstanceOf[Reporter]
   }
 }

@@ -34,14 +34,8 @@ object XRangeHighlighter {
       scala.Unit
     ]
   ): XRangeHighlighter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SelectedRanges")(SelectedRanges)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("getSelectedRanges")(getSelectedRanges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
+    val __obj = js.Dynamic.literal(SelectedRanges = SelectedRanges, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getSelectedRanges = getSelectedRanges, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener)
+  
     __obj.asInstanceOf[XRangeHighlighter]
   }
 }

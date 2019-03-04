@@ -18,10 +18,8 @@ object OutgoingWebhooks {
     reset: js.Function0[scala.Unit],
     send: js.Function2[OutgoingWebhookUrl, T, js.Promise[scala.Unit]]
   ): OutgoingWebhooks[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(calls = calls, reset = reset, send = send)
+  
     __obj.asInstanceOf[OutgoingWebhooks[T]]
   }
 }

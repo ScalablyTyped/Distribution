@@ -36,10 +36,8 @@ object Anon_Es2015Es2016 {
       scala.Boolean
     ]
   ): Anon_Es2015Es2016 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("es2015")(es2015)
-    __obj.updateDynamic("es2016")(es2016)
-    __obj.updateDynamic("es2017")(es2017)
+    val __obj = js.Dynamic.literal(es2015 = es2015, es2016 = es2016, es2017 = es2017)
+  
     __obj.asInstanceOf[Anon_Es2015Es2016]
   }
 }

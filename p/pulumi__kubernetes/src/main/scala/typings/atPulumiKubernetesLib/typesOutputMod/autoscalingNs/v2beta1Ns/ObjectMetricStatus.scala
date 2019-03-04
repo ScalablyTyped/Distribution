@@ -45,12 +45,8 @@ object ObjectMetricStatus {
     selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
     target: CrossVersionObjectReference
   ): ObjectMetricStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("averageValue")(averageValue)
-    __obj.updateDynamic("currentValue")(currentValue)
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(averageValue = averageValue, currentValue = currentValue, metricName = metricName, selector = selector, target = target)
+  
     __obj.asInstanceOf[ObjectMetricStatus]
   }
 }

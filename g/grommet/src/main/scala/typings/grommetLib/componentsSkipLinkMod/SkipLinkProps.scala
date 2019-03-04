@@ -13,8 +13,7 @@ trait SkipLinkProps extends js.Object {
 object SkipLinkProps {
   @scala.inline
   def apply(id: java.lang.String, label: reactLib.reactMod.ReactNs.ReactNode = null): SkipLinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkipLinkProps]
   }

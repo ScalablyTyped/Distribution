@@ -21,8 +21,8 @@ object TSTypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeAnnotation,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): TSTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypeAnnotation]
   }
 }

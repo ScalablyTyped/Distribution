@@ -26,12 +26,8 @@ object TextMarkupDescriptor {
     nType: scala.Double,
     xMarkupInfoContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap
   ): TextMarkupDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aIdentifier")(aIdentifier)
-    __obj.updateDynamic("nLength")(nLength)
-    __obj.updateDynamic("nOffset")(nOffset)
-    __obj.updateDynamic("nType")(nType)
-    __obj.updateDynamic("xMarkupInfoContainer")(xMarkupInfoContainer)
+    val __obj = js.Dynamic.literal(aIdentifier = aIdentifier, nLength = nLength, nOffset = nOffset, nType = nType, xMarkupInfoContainer = xMarkupInfoContainer)
+  
     __obj.asInstanceOf[TextMarkupDescriptor]
   }
 }

@@ -22,12 +22,8 @@ object PolicyMapping {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): PolicyMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("issuerDomainPolicy")(issuerDomainPolicy)
-    __obj.updateDynamic("subjectDomainPolicy")(subjectDomainPolicy)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, issuerDomainPolicy = issuerDomainPolicy, subjectDomainPolicy = subjectDomainPolicy, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[PolicyMapping]
   }
 }

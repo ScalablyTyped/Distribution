@@ -20,11 +20,8 @@ object Anon_AlarmName {
     stateReason: java.lang.String,
     stateValue: java.lang.String
   ): Anon_AlarmName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alarmName")(alarmName)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("stateReason")(stateReason)
-    __obj.updateDynamic("stateValue")(stateValue)
+    val __obj = js.Dynamic.literal(alarmName = alarmName, roleArn = roleArn, stateReason = stateReason, stateValue = stateValue)
+  
     __obj.asInstanceOf[Anon_AlarmName]
   }
 }

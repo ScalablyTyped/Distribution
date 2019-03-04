@@ -15,8 +15,8 @@ trait IVariableList extends js.Object {
 object IVariableList {
   @scala.inline
   def apply(qItems: js.Array[INxVariableListItem]): IVariableList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qItems")(qItems)
+    val __obj = js.Dynamic.literal(qItems = qItems)
+  
     __obj.asInstanceOf[IVariableList]
   }
 }

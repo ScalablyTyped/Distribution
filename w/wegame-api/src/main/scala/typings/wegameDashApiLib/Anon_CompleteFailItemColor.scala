@@ -28,8 +28,7 @@ object Anon_CompleteFailItemColor {
     itemColor: java.lang.String = null,
     success: js.Function0[scala.Unit] = null
   ): Anon_CompleteFailItemColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemList")(itemList)
+    val __obj = js.Dynamic.literal(itemList = itemList)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)

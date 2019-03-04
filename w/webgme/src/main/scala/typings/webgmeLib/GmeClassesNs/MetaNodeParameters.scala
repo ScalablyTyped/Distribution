@@ -38,7 +38,8 @@ object MetaNodeParameters {
     multiplicity: js.UndefOr[scala.Boolean] = js.undefined,
     sensitive: js.UndefOr[scala.Boolean] = js.undefined
   ): MetaNodeParameters = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
     if (aspect != null) __obj.updateDynamic("aspect")(aspect)
     if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity)
     if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)

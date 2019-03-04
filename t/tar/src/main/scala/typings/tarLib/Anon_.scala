@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var Empty: java.lang.String
   var `0`: java.lang.String
   var `1`: java.lang.String
@@ -48,7 +48,7 @@ trait `Anon_` extends js.Object {
   var x: java.lang.String
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     Empty: java.lang.String,
@@ -91,40 +91,18 @@ object `Anon_` {
     X: java.lang.String,
     g: java.lang.String,
     x: java.lang.String
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal(Empty = Empty, `0` = `0`, `1` = `1`, `2` = `2`, `3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`)
-    __obj.updateDynamic("A")(A)
-    __obj.updateDynamic("BlockDevice")(BlockDevice)
-    __obj.updateDynamic("CharacterDevice")(CharacterDevice)
-    __obj.updateDynamic("ContiguousFile")(ContiguousFile)
-    __obj.updateDynamic("ContinuationFile")(ContinuationFile)
-    __obj.updateDynamic("D")(D)
-    __obj.updateDynamic("Directory")(Directory)
-    __obj.updateDynamic("ExtendedHeader")(ExtendedHeader)
-    __obj.updateDynamic("FIFO")(FIFO)
-    __obj.updateDynamic("File")(File)
-    __obj.updateDynamic("GNUDumpDir")(GNUDumpDir)
-    __obj.updateDynamic("GlobalExtendedHeader")(GlobalExtendedHeader)
-    __obj.updateDynamic("I")(I)
-    __obj.updateDynamic("INode")(INode)
-    __obj.updateDynamic("K")(K)
-    __obj.updateDynamic("L")(L)
-    __obj.updateDynamic("Link")(Link)
-    __obj.updateDynamic("M")(M)
-    __obj.updateDynamic("N")(N)
-    __obj.updateDynamic("NextFileHasLonLinkPath")(NextFileHasLonLinkPath)
-    __obj.updateDynamic("NextFileHasLongPath")(NextFileHasLongPath)
-    __obj.updateDynamic("OldExtendedHeader")(OldExtendedHeader)
-    __obj.updateDynamic("OldFile")(OldFile)
-    __obj.updateDynamic("S")(S)
-    __obj.updateDynamic("SolarisACL")(SolarisACL)
-    __obj.updateDynamic("SymbolicLick")(SymbolicLick)
-    __obj.updateDynamic("TapeVolumeHeader")(TapeVolumeHeader)
-    __obj.updateDynamic("V")(V)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("x")(x)
-    __obj.asInstanceOf[`Anon_`]
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal(A = A, BlockDevice = BlockDevice, CharacterDevice = CharacterDevice, ContiguousFile = ContiguousFile, ContinuationFile = ContinuationFile, D = D, Directory = Directory, ExtendedHeader = ExtendedHeader, FIFO = FIFO, File = File, GNUDumpDir = GNUDumpDir, GlobalExtendedHeader = GlobalExtendedHeader, I = I, INode = INode, K = K, L = L, Link = Link, M = M, N = N, NextFileHasLonLinkPath = NextFileHasLonLinkPath, NextFileHasLongPath = NextFileHasLongPath, OldExtendedHeader = OldExtendedHeader, OldFile = OldFile, S = S, SolarisACL = SolarisACL, SymbolicLick = SymbolicLick, TapeVolumeHeader = TapeVolumeHeader, V = V, X = X, g = g, x = x)
+    __obj.updateDynamic("")(Empty)
+    __obj.updateDynamic("0")(`0`)
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("6")(`6`)
+    __obj.updateDynamic("7")(`7`)
+    __obj.asInstanceOf[Anon_]
   }
 }
 

@@ -13,9 +13,8 @@ trait Anon_Northeast extends js.Object {
 object Anon_Northeast {
   @scala.inline
   def apply(northeast: Anon_LatitudeLongitude, southwest: Anon_LatitudeLongitude): Anon_Northeast = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("northeast")(northeast)
-    __obj.updateDynamic("southwest")(southwest)
+    val __obj = js.Dynamic.literal(northeast = northeast, southwest = southwest)
+  
     __obj.asInstanceOf[Anon_Northeast]
   }
 }

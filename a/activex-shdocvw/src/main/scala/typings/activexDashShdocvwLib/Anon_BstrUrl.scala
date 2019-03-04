@@ -22,12 +22,8 @@ object Anon_BstrUrl {
     dwFlags: scala.Double,
     ppDisp: js.Any
   ): Anon_BstrUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("bstrUrl")(bstrUrl)
-    __obj.updateDynamic("bstrUrlContext")(bstrUrlContext)
-    __obj.updateDynamic("dwFlags")(dwFlags)
-    __obj.updateDynamic("ppDisp")(ppDisp)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, bstrUrl = bstrUrl, bstrUrlContext = bstrUrlContext, dwFlags = dwFlags, ppDisp = ppDisp)
+  
     __obj.asInstanceOf[Anon_BstrUrl]
   }
 }

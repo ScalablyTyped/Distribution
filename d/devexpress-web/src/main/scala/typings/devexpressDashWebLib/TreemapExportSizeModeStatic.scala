@@ -19,9 +19,8 @@ trait TreemapExportSizeModeStatic extends js.Object {
 object TreemapExportSizeModeStatic {
   @scala.inline
   def apply(none: java.lang.String, zoom: java.lang.String): TreemapExportSizeModeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(none = none, zoom = zoom)
+  
     __obj.asInstanceOf[TreemapExportSizeModeStatic]
   }
 }

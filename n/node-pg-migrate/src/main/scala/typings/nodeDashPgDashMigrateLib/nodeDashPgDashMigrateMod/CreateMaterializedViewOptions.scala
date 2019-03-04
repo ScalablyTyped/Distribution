@@ -22,8 +22,7 @@ object CreateMaterializedViewOptions {
     ifNotExists: js.UndefOr[scala.Boolean] = js.undefined,
     tablespace: java.lang.String = null
   ): CreateMaterializedViewOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("storageParameters")(storageParameters)
+    val __obj = js.Dynamic.literal(storageParameters = storageParameters)
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
     if (!js.isUndefined(data)) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists)

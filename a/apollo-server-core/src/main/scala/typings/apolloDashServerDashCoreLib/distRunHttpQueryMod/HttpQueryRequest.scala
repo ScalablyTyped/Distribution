@@ -36,11 +36,8 @@ object HttpQueryRequest {
       apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.url | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.method | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.headers
     ]
   ): HttpQueryRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(method = method, options = options.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], request = request)
+  
     __obj.asInstanceOf[HttpQueryRequest]
   }
 }

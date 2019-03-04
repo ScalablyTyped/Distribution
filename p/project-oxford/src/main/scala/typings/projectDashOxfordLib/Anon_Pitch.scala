@@ -14,10 +14,8 @@ trait Anon_Pitch extends js.Object {
 object Anon_Pitch {
   @scala.inline
   def apply(pitch: scala.Double, roll: scala.Double, yaw: scala.Double): Anon_Pitch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pitch")(pitch)
-    __obj.updateDynamic("roll")(roll)
-    __obj.updateDynamic("yaw")(yaw)
+    val __obj = js.Dynamic.literal(pitch = pitch, roll = roll, yaw = yaw)
+  
     __obj.asInstanceOf[Anon_Pitch]
   }
 }

@@ -16,9 +16,8 @@ object Anon_AppContent {
     appContent: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.AppContent,
     user: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User
   ): Anon_AppContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appContent")(appContent)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(appContent = appContent, user = user)
+  
     __obj.asInstanceOf[Anon_AppContent]
   }
 }

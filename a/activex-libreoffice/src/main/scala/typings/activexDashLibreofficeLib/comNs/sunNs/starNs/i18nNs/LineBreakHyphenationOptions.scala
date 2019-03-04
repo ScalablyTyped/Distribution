@@ -21,10 +21,8 @@ object LineBreakHyphenationOptions {
     hyphenIndex: scala.Double,
     rHyphenator: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.XHyphenator
   ): LineBreakHyphenationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aHyphenationOptions")(aHyphenationOptions.asInstanceOf[js.Any])
-    __obj.updateDynamic("hyphenIndex")(hyphenIndex)
-    __obj.updateDynamic("rHyphenator")(rHyphenator)
+    val __obj = js.Dynamic.literal(aHyphenationOptions = aHyphenationOptions.asInstanceOf[js.Any], hyphenIndex = hyphenIndex, rHyphenator = rHyphenator)
+  
     __obj.asInstanceOf[LineBreakHyphenationOptions]
   }
 }

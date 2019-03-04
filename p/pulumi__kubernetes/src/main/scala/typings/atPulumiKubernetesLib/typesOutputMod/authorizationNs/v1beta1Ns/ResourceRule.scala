@@ -43,11 +43,8 @@ object ResourceRule {
     resources: js.Array[java.lang.String],
     verbs: js.Array[java.lang.String]
   ): ResourceRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiGroups")(apiGroups)
-    __obj.updateDynamic("resourceNames")(resourceNames)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("verbs")(verbs)
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, resourceNames = resourceNames, resources = resources, verbs = verbs)
+  
     __obj.asInstanceOf[ResourceRule]
   }
 }

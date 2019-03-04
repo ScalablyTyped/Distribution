@@ -30,16 +30,8 @@ object ILicenseStatus {
     NumOfReadonlyLicenses: scala.Double,
     SerialNumber: java.lang.String
   ): ILicenseStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClearLicenseCode")(ClearLicenseCode)
-    __obj.updateDynamic("EvaluationDaysLeft")(EvaluationDaysLeft)
-    __obj.updateDynamic("EvaluationMode")(EvaluationMode)
-    __obj.updateDynamic("Expired")(Expired)
-    __obj.updateDynamic("LicenseCode")(LicenseCode)
-    __obj.updateDynamic("NumOfConcurrentUserLicenses")(NumOfConcurrentUserLicenses)
-    __obj.updateDynamic("NumOfNamedUserLicenses")(NumOfNamedUserLicenses)
-    __obj.updateDynamic("NumOfReadonlyLicenses")(NumOfReadonlyLicenses)
-    __obj.updateDynamic("SerialNumber")(SerialNumber)
+    val __obj = js.Dynamic.literal(ClearLicenseCode = ClearLicenseCode, EvaluationDaysLeft = EvaluationDaysLeft, EvaluationMode = EvaluationMode, Expired = Expired, LicenseCode = LicenseCode, NumOfConcurrentUserLicenses = NumOfConcurrentUserLicenses, NumOfNamedUserLicenses = NumOfNamedUserLicenses, NumOfReadonlyLicenses = NumOfReadonlyLicenses, SerialNumber = SerialNumber)
+  
     __obj.asInstanceOf[ILicenseStatus]
   }
 }

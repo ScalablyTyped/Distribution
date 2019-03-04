@@ -22,12 +22,8 @@ object Anon_ABCompare {
     gt: js.Function2[nodeLib.Buffer, nodeLib.Buffer, scala.Boolean],
     lt: js.Function2[nodeLib.Buffer, nodeLib.Buffer, scala.Boolean]
   ): Anon_ABCompare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("eq")(eq)
-    __obj.updateDynamic("gt")(gt)
-    __obj.updateDynamic("lt")(lt)
+    val __obj = js.Dynamic.literal(compare = compare, create = create, eq = eq, gt = gt, lt = lt)
+  
     __obj.asInstanceOf[Anon_ABCompare]
   }
 }

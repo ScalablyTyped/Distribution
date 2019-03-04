@@ -22,8 +22,7 @@ object Anon_ArgsJarKey {
     mainClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     properties: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): Anon_ArgsJarKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jar = jar.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

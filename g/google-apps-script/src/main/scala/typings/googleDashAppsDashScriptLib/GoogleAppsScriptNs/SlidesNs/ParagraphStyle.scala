@@ -48,25 +48,8 @@ object ParagraphStyle {
     setSpacingMode: js.Function1[SpacingMode, ParagraphStyle],
     setTextDirection: js.Function1[TextDirection, ParagraphStyle]
   ): ParagraphStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIndentEnd")(getIndentEnd)
-    __obj.updateDynamic("getIndentFirstLine")(getIndentFirstLine)
-    __obj.updateDynamic("getIndentStart")(getIndentStart)
-    __obj.updateDynamic("getLineSpacing")(getLineSpacing)
-    __obj.updateDynamic("getParagraphAlignment")(getParagraphAlignment)
-    __obj.updateDynamic("getSpaceAbove")(getSpaceAbove)
-    __obj.updateDynamic("getSpaceBelow")(getSpaceBelow)
-    __obj.updateDynamic("getSpacingMode")(getSpacingMode)
-    __obj.updateDynamic("getTextDirection")(getTextDirection)
-    __obj.updateDynamic("setIndentEnd")(setIndentEnd)
-    __obj.updateDynamic("setIndentFirstLine")(setIndentFirstLine)
-    __obj.updateDynamic("setIndentStart")(setIndentStart)
-    __obj.updateDynamic("setLineSpacing")(setLineSpacing)
-    __obj.updateDynamic("setParagraphAlignment")(setParagraphAlignment)
-    __obj.updateDynamic("setSpaceAbove")(setSpaceAbove)
-    __obj.updateDynamic("setSpaceBelow")(setSpaceBelow)
-    __obj.updateDynamic("setSpacingMode")(setSpacingMode)
-    __obj.updateDynamic("setTextDirection")(setTextDirection)
+    val __obj = js.Dynamic.literal(getIndentEnd = getIndentEnd, getIndentFirstLine = getIndentFirstLine, getIndentStart = getIndentStart, getLineSpacing = getLineSpacing, getParagraphAlignment = getParagraphAlignment, getSpaceAbove = getSpaceAbove, getSpaceBelow = getSpaceBelow, getSpacingMode = getSpacingMode, getTextDirection = getTextDirection, setIndentEnd = setIndentEnd, setIndentFirstLine = setIndentFirstLine, setIndentStart = setIndentStart, setLineSpacing = setLineSpacing, setParagraphAlignment = setParagraphAlignment, setSpaceAbove = setSpaceAbove, setSpaceBelow = setSpaceBelow, setSpacingMode = setSpacingMode, setTextDirection = setTextDirection)
+  
     __obj.asInstanceOf[ParagraphStyle]
   }
 }

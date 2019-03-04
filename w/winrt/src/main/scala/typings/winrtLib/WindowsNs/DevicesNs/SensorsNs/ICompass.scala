@@ -20,11 +20,8 @@ object ICompass {
     onreadingchanged: js.Any,
     reportInterval: scala.Double
   ): ICompass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentReading")(getCurrentReading)
-    __obj.updateDynamic("minimumReportInterval")(minimumReportInterval)
-    __obj.updateDynamic("onreadingchanged")(onreadingchanged)
-    __obj.updateDynamic("reportInterval")(reportInterval)
+    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading, minimumReportInterval = minimumReportInterval, onreadingchanged = onreadingchanged, reportInterval = reportInterval)
+  
     __obj.asInstanceOf[ICompass]
   }
 }

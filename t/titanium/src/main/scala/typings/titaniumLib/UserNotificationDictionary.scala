@@ -84,8 +84,7 @@ object UserNotificationDictionary {
     timezone: java.lang.String = null,
     userInfo: js.Any = null
   ): UserNotificationDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction)
     if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody)
     if (alertLaunchImage != null) __obj.updateDynamic("alertLaunchImage")(alertLaunchImage)

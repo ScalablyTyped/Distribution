@@ -22,9 +22,8 @@ object RouteTableAssociationArgs {
     routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): RouteTableAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
-    __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RouteTableAssociationArgs]
   }
 }

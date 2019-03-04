@@ -13,9 +13,8 @@ trait BucketItemCopy extends js.Object {
 object BucketItemCopy {
   @scala.inline
   def apply(etag: java.lang.String, lastModified: stdLib.Date): BucketItemCopy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("lastModified")(lastModified)
+    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified)
+  
     __obj.asInstanceOf[BucketItemCopy]
   }
 }

@@ -28,13 +28,7 @@ object PutOptions {
     y: scala.Double,
     direction: terminalDashKitLib.terminalDashKitLibStrings.right | terminalDashKitLib.terminalDashKitLibStrings.left | terminalDashKitLib.terminalDashKitLibStrings.up | terminalDashKitLib.terminalDashKitLibStrings.down = null
   ): PutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("wrap")(wrap)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], dx = dx, dy = dy, wrap = wrap, x = x, y = y)
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutOptions]
   }

@@ -12,8 +12,8 @@ trait ThemeConsumerProps extends js.Object {
 object ThemeConsumerProps {
   @scala.inline
   def apply(children: js.Function1[ThemeProps, reactLib.reactMod.ReactNs.ReactElement[_]]): ThemeConsumerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[ThemeConsumerProps]
   }
 }

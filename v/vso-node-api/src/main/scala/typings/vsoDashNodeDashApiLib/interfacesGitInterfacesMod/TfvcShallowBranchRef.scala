@@ -15,8 +15,8 @@ trait TfvcShallowBranchRef extends js.Object {
 object TfvcShallowBranchRef {
   @scala.inline
   def apply(path: java.lang.String): TfvcShallowBranchRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
+  
     __obj.asInstanceOf[TfvcShallowBranchRef]
   }
 }

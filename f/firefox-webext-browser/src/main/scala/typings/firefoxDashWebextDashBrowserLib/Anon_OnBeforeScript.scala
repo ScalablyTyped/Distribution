@@ -30,9 +30,8 @@ object Anon_OnBeforeScript {
       js.Promise[firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.RegisteredUserScript]
     ]
   ): Anon_OnBeforeScript = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onBeforeScript")(onBeforeScript)
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(onBeforeScript = onBeforeScript, register = register)
+  
     __obj.asInstanceOf[Anon_OnBeforeScript]
   }
 }

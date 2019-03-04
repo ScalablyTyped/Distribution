@@ -12,8 +12,8 @@ trait ChatWorkInitOptions extends js.Object {
 object ChatWorkInitOptions {
   @scala.inline
   def apply(token: java.lang.String): ChatWorkInitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
+  
     __obj.asInstanceOf[ChatWorkInitOptions]
   }
 }

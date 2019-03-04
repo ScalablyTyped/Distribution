@@ -39,12 +39,8 @@ object XLinguServiceEventBroadcaster {
     release: js.Function0[scala.Unit],
     removeLinguServiceEventListener: js.Function1[XLinguServiceEventListener, scala.Boolean]
   ): XLinguServiceEventBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addLinguServiceEventListener")(addLinguServiceEventListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLinguServiceEventListener")(removeLinguServiceEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addLinguServiceEventListener = addLinguServiceEventListener, queryInterface = queryInterface, release = release, removeLinguServiceEventListener = removeLinguServiceEventListener)
+  
     __obj.asInstanceOf[XLinguServiceEventBroadcaster]
   }
 }

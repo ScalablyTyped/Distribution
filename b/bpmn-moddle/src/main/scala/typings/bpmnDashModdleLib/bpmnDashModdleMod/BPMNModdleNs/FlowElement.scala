@@ -26,12 +26,7 @@ object FlowElement {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): FlowElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("auditing")(auditing)
-    __obj.updateDynamic("categoryValueRef")(categoryValueRef)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("monitoring")(monitoring)
+    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, id = id, monitoring = monitoring)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

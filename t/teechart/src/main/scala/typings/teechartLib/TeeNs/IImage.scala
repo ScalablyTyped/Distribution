@@ -14,10 +14,8 @@ trait IImage extends js.Object {
 object IImage {
   @scala.inline
   def apply(chart: IChart, url: java.lang.String, visible: scala.Boolean): IImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(chart = chart, url = url, visible = visible)
+  
     __obj.asInstanceOf[IImage]
   }
 }

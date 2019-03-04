@@ -12,8 +12,8 @@ trait ForEachIterable[T] extends js.Object {
 object ForEachIterable {
   @scala.inline
   def apply[T](forEach: js.Function1[js.Function1[/* item */ T, scala.Unit], scala.Unit]): ForEachIterable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEach")(forEach)
+    val __obj = js.Dynamic.literal(forEach = forEach)
+  
     __obj.asInstanceOf[ForEachIterable[T]]
   }
 }

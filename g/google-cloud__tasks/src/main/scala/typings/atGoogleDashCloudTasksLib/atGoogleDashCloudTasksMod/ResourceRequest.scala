@@ -15,8 +15,8 @@ trait ResourceRequest extends js.Object {
 object ResourceRequest {
   @scala.inline
   def apply(resource: java.lang.String): ResourceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(resource = resource)
+  
     __obj.asInstanceOf[ResourceRequest]
   }
 }

@@ -18,8 +18,8 @@ trait IFilePickerResult extends js.Object {
 object IFilePickerResult {
   @scala.inline
   def apply(data: microsoftDashLiveDashConnectLib.Anon_Files): IFilePickerResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+  
     __obj.asInstanceOf[IFilePickerResult]
   }
 }

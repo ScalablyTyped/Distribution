@@ -43,9 +43,7 @@ object BadgeCreationParams {
     iconWidth: scala.Int | scala.Double = null,
     style: badgenLib.badgenLibStrings.flat = null
   ): BadgeCreationParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(status = status, subject = subject)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (iconWidth != null) __obj.updateDynamic("iconWidth")(iconWidth.asInstanceOf[js.Any])

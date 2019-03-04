@@ -20,11 +20,8 @@ object Anon_AlarmNameRoleArn {
     stateReason: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     stateValue: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_AlarmNameRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alarmName")(alarmName.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("stateReason")(stateReason.asInstanceOf[js.Any])
-    __obj.updateDynamic("stateValue")(stateValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alarmName = alarmName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateReason = stateReason.asInstanceOf[js.Any], stateValue = stateValue.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AlarmNameRoleArn]
   }
 }

@@ -20,11 +20,8 @@ object AccordionUIParams {
     oldHeader: jqueryuiLib.JQuery,
     oldPanel: jqueryuiLib.JQuery
   ): AccordionUIParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newHeader")(newHeader)
-    __obj.updateDynamic("newPanel")(newPanel)
-    __obj.updateDynamic("oldHeader")(oldHeader)
-    __obj.updateDynamic("oldPanel")(oldPanel)
+    val __obj = js.Dynamic.literal(newHeader = newHeader, newPanel = newPanel, oldHeader = oldHeader, oldPanel = oldPanel)
+  
     __obj.asInstanceOf[AccordionUIParams]
   }
 }

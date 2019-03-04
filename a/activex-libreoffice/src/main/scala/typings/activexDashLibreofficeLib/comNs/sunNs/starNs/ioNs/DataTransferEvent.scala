@@ -18,9 +18,8 @@ trait DataTransferEvent
 object DataTransferEvent {
   @scala.inline
   def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, aException: js.Any): DataTransferEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("aException")(aException)
+    val __obj = js.Dynamic.literal(Source = Source, aException = aException)
+  
     __obj.asInstanceOf[DataTransferEvent]
   }
 }

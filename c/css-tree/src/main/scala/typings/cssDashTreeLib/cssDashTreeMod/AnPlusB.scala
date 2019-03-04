@@ -23,7 +23,8 @@ object AnPlusB {
     b: java.lang.String = null,
     loc: CssLocation = null
   ): AnPlusB = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (a != null) __obj.updateDynamic("a")(a)
     if (b != null) __obj.updateDynamic("b")(b)
     if (loc != null) __obj.updateDynamic("loc")(loc)

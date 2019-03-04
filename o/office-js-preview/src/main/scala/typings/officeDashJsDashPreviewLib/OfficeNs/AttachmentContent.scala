@@ -43,9 +43,8 @@ object AttachmentContent {
     content: java.lang.String,
     format: officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.AttachmentContentFormat
   ): AttachmentContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(content = content, format = format)
+  
     __obj.asInstanceOf[AttachmentContent]
   }
 }

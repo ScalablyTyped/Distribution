@@ -58,17 +58,8 @@ object Anon_DetailsGetPopup {
     setTitle: js.Function1[Anon_TabIdTitleNull, scala.Unit],
     show: js.Function1[scala.Double, js.Promise[scala.Unit]]
   ): Anon_DetailsGetPopup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPopup")(getPopup)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isShown")(isShown)
-    __obj.updateDynamic("onClicked")(onClicked)
-    __obj.updateDynamic("openPopup")(openPopup)
-    __obj.updateDynamic("setIcon")(setIcon)
-    __obj.updateDynamic("setPopup")(setPopup)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(getPopup = getPopup, getTitle = getTitle, hide = hide, isShown = isShown, onClicked = onClicked, openPopup = openPopup, setIcon = setIcon, setPopup = setPopup, setTitle = setTitle, show = show)
+  
     __obj.asInstanceOf[Anon_DetailsGetPopup]
   }
 }

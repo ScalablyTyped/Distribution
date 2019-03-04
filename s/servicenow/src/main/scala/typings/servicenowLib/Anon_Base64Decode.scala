@@ -20,11 +20,8 @@ object Anon_Base64Decode {
     escapeHTML: js.Function1[java.lang.String, java.lang.String],
     getStringFromStream: js.Function1[js.Object, java.lang.String]
   ): Anon_Base64Decode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base64Decode")(base64Decode)
-    __obj.updateDynamic("base64DecodeAsBytes")(base64DecodeAsBytes)
-    __obj.updateDynamic("escapeHTML")(escapeHTML)
-    __obj.updateDynamic("getStringFromStream")(getStringFromStream)
+    val __obj = js.Dynamic.literal(base64Decode = base64Decode, base64DecodeAsBytes = base64DecodeAsBytes, escapeHTML = escapeHTML, getStringFromStream = getStringFromStream)
+  
     __obj.asInstanceOf[Anon_Base64Decode]
   }
 }

@@ -22,8 +22,8 @@ trait ReadParams extends js.Object {
 object ReadParams {
   @scala.inline
   def apply(id: java.lang.String, `type`: java.lang.String): ReadParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ReadParams]
   }
 }

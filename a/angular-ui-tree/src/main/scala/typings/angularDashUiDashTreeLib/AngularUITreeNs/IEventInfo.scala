@@ -20,11 +20,8 @@ object IEventInfo {
     pos: IPosition,
     source: IEventSourceInfo
   ): IEventInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dest")(dest)
-    __obj.updateDynamic("elements")(elements)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(dest = dest, elements = elements, pos = pos, source = source)
+  
     __obj.asInstanceOf[IEventInfo]
   }
 }

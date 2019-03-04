@@ -30,8 +30,7 @@ object Anon_Autohide {
     modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
     placement: popperDotJsLib.popperDotJsMod.Placement = null
   ): Anon_Autohide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
     if (className != null) __obj.updateDynamic("className")(className)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])

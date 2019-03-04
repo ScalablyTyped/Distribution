@@ -24,10 +24,7 @@ object ConnectionParameters {
     DatabaseFile: java.lang.String = null,
     Host: java.lang.String = null
   ): ConnectionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("Server")(Server)
-    __obj.updateDynamic("UserId")(UserId)
+    val __obj = js.Dynamic.literal(Password = Password, Server = Server, UserId = UserId)
     if (AutoStart != null) __obj.updateDynamic("AutoStart")(AutoStart)
     if (DatabaseFile != null) __obj.updateDynamic("DatabaseFile")(DatabaseFile)
     if (Host != null) __obj.updateDynamic("Host")(Host)

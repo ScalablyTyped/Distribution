@@ -13,9 +13,8 @@ trait Resp extends js.Object {
 object Resp {
   @scala.inline
   def apply(error: js.Function1[js.Any, scala.Nothing], success: js.Function1[js.Any, scala.Nothing]): Resp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(error = error, success = success)
+  
     __obj.asInstanceOf[Resp]
   }
 }

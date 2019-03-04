@@ -18,10 +18,8 @@ object ITransportStateListener {
     onError: js.Function1[java.lang.String, scala.Unit],
     onOpen: js.Function0[scala.Unit]
   ): ITransportStateListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onOpen")(onOpen)
+    val __obj = js.Dynamic.literal(onClose = onClose, onError = onError, onOpen = onOpen)
+  
     __obj.asInstanceOf[ITransportStateListener]
   }
 }

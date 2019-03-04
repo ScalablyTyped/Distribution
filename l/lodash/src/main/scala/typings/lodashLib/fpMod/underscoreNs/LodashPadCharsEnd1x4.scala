@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait LodashPadCharsEnd1x4 extends js.Object {
   def apply(chars: java.lang.String): LodashPadCharsEnd1x5 = js.native
   def apply(chars: java.lang.String, length: scala.Double): java.lang.String = js.native
-  def apply(chars: lodashLib.lodashMod.underscoreNs.`__`, length: scala.Double): LodashPadCharsEnd1x6 = js.native
+  def apply(chars: lodashLib.lodashMod.underscoreNs.__, length: scala.Double): LodashPadCharsEnd1x6 = js.native
 }
 

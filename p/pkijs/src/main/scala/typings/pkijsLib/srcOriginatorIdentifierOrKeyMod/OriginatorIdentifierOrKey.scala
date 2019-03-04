@@ -22,11 +22,7 @@ object OriginatorIdentifierOrKey {
     variant: scala.Double,
     value: js.Any = null
   ): OriginatorIdentifierOrKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("variant")(variant)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, variant = variant)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[OriginatorIdentifierOrKey]
   }

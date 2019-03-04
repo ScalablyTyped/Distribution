@@ -20,9 +20,7 @@ object HOCProps {
     cellStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): HOCProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellClassName")(cellClassName)
-    __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(cellClassName = cellClassName, className = className)
     if (cellStyle != null) __obj.updateDynamic("cellStyle")(cellStyle)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[HOCProps]

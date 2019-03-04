@@ -18,8 +18,8 @@ object MediaGalleriesPermission {
       chromeDashAppsLib.chromeDashAppsLibStrings.read | chromeDashAppsLib.chromeDashAppsLibStrings.allAutoDetected
     ]
   ): MediaGalleriesPermission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mediaGalleries")(mediaGalleries)
+    val __obj = js.Dynamic.literal(mediaGalleries = mediaGalleries)
+  
     __obj.asInstanceOf[MediaGalleriesPermission]
   }
 }

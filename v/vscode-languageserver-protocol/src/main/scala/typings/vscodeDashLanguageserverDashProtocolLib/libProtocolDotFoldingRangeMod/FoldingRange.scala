@@ -39,9 +39,7 @@ object FoldingRange {
     kind: java.lang.String = null,
     startCharacter: scala.Int | scala.Double = null
   ): FoldingRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endLine")(endLine)
-    __obj.updateDynamic("startLine")(startLine)
+    val __obj = js.Dynamic.literal(endLine = endLine, startLine = startLine)
     if (endCharacter != null) __obj.updateDynamic("endCharacter")(endCharacter.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (startCharacter != null) __obj.updateDynamic("startCharacter")(startCharacter.asInstanceOf[js.Any])

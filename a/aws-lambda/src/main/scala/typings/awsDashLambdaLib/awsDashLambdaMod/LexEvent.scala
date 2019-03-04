@@ -30,15 +30,7 @@ object LexEvent {
     userId: java.lang.String,
     requestAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): LexEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bot")(bot)
-    __obj.updateDynamic("currentIntent")(currentIntent)
-    __obj.updateDynamic("inputTranscript")(inputTranscript)
-    __obj.updateDynamic("invocationSource")(invocationSource.asInstanceOf[js.Any])
-    __obj.updateDynamic("messageVersion")(messageVersion)
-    __obj.updateDynamic("outputDialogMode")(outputDialogMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("sessionAttributes")(sessionAttributes)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(bot = bot, currentIntent = currentIntent, inputTranscript = inputTranscript, invocationSource = invocationSource.asInstanceOf[js.Any], messageVersion = messageVersion, outputDialogMode = outputDialogMode.asInstanceOf[js.Any], sessionAttributes = sessionAttributes, userId = userId)
     if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes)
     __obj.asInstanceOf[LexEvent]
   }

@@ -48,21 +48,8 @@ object XInterfaceAttributeTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInterfaceAttributeTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MemberName")(MemberName)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMemberName")(getMemberName)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(MemberName = MemberName, Name = Name, Position = Position, Type = Type, TypeClass = TypeClass, acquire = acquire, getMemberName = getMemberName, getName = getName, getPosition = getPosition, getType = getType, getTypeClass = getTypeClass, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInterfaceAttributeTypeDescription]
   }
 }

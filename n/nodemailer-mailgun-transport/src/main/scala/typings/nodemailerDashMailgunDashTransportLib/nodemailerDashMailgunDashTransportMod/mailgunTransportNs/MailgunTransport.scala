@@ -29,10 +29,7 @@ object MailgunTransport {
       scala.Unit
     ]) with js.Function0[js.Promise[nodemailerLib.nodemailerLibNumbers.`true`]] = null
   ): MailgunTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, send = send, version = version)
     if (close != null) __obj.updateDynamic("close")(close)
     if (mailer != null) __obj.updateDynamic("mailer")(mailer)
     if (verify != null) __obj.updateDynamic("verify")(verify)

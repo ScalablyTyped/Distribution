@@ -20,11 +20,8 @@ object XLinkUpdate {
     release: js.Function0[scala.Unit],
     updateLinks: js.Function0[scala.Unit]
   ): XLinkUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateLinks")(updateLinks)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateLinks = updateLinks)
+  
     __obj.asInstanceOf[XLinkUpdate]
   }
 }

@@ -46,13 +46,8 @@ object PieArcDatum {
     startAngle: scala.Double,
     value: scala.Double
   ): PieArcDatum[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("endAngle")(endAngle)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("padAngle")(padAngle)
-    __obj.updateDynamic("startAngle")(startAngle)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], endAngle = endAngle, index = index, padAngle = padAngle, startAngle = startAngle, value = value)
+  
     __obj.asInstanceOf[PieArcDatum[T]]
   }
 }

@@ -12,8 +12,8 @@ trait IframeApiType extends js.Object {
 object IframeApiType {
   @scala.inline
   def apply(Player: youtubeDashPlayerLib.Anon_ElementId): IframeApiType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Player")(Player)
+    val __obj = js.Dynamic.literal(Player = Player)
+  
     __obj.asInstanceOf[IframeApiType]
   }
 }

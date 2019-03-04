@@ -18,99 +18,99 @@ class PersistentConnection protected ()
     * @param authTokenProvider_
     * @param authOverride_
     */
-  def this(`repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, `onDataUpdate_`: js.Function4[
+  def this(repoInfo_ : atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, onDataUpdate_ : js.Function4[
       /* a */ java.lang.String, 
       /* b */ js.Any, 
       /* c */ scala.Boolean, 
       /* d */ scala.Double | scala.Null, 
       scala.Unit
-    ], `onConnectStatus_`: js.Function1[/* a */ scala.Boolean, scala.Unit], `onServerInfoUpdate_`: js.Function1[/* a */ js.Any, scala.Unit], `authTokenProvider_`: atFirebaseDatabaseLib.distSrcCoreAuthTokenProviderMod.AuthTokenProvider) = this()
-  def this(`repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, `onDataUpdate_`: js.Function4[
+    ], onConnectStatus_ : js.Function1[/* a */ scala.Boolean, scala.Unit], onServerInfoUpdate_ : js.Function1[/* a */ js.Any, scala.Unit], authTokenProvider_ : atFirebaseDatabaseLib.distSrcCoreAuthTokenProviderMod.AuthTokenProvider) = this()
+  def this(repoInfo_ : atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, onDataUpdate_ : js.Function4[
       /* a */ java.lang.String, 
       /* b */ js.Any, 
       /* c */ scala.Boolean, 
       /* d */ scala.Double | scala.Null, 
       scala.Unit
-    ], `onConnectStatus_`: js.Function1[/* a */ scala.Boolean, scala.Unit], `onServerInfoUpdate_`: js.Function1[/* a */ js.Any, scala.Unit], `authTokenProvider_`: atFirebaseDatabaseLib.distSrcCoreAuthTokenProviderMod.AuthTokenProvider, `authOverride_`: js.Object) = this()
-  var `authOverride_`: js.UndefOr[js.Any] = js.native
-  var `authTokenProvider_`: js.Any = js.native
+    ], onConnectStatus_ : js.Function1[/* a */ scala.Boolean, scala.Unit], onServerInfoUpdate_ : js.Function1[/* a */ js.Any, scala.Unit], authTokenProvider_ : atFirebaseDatabaseLib.distSrcCoreAuthTokenProviderMod.AuthTokenProvider, authOverride_ : js.Object) = this()
+  var authOverride_ : js.UndefOr[js.Any] = js.native
+  var authTokenProvider_ : js.Any = js.native
   /** @private {string|null} */
-  var `authToken_`: js.Any = js.native
-  var `cancelSentTransactions_`: js.Any = js.native
-  var `connected_`: js.Any = js.native
+  var authToken_ : js.Any = js.native
+  var cancelSentTransactions_ : js.Any = js.native
+  var connected_ : js.Any = js.native
   /** @private {number|null} */
-  var `establishConnectionTimer_`: js.Any = js.native
-  var `establishConnection_`: js.Any = js.native
-  var `firstConnection_`: js.Any = js.native
-  var `forceTokenRefresh_`: js.Any = js.native
-  var `handleTimestamp_`: js.Any = js.native
+  var establishConnectionTimer_ : js.Any = js.native
+  var establishConnection_ : js.Any = js.native
+  var firstConnection_ : js.Any = js.native
+  var forceTokenRefresh_ : js.Any = js.native
+  var handleTimestamp_ : js.Any = js.native
   var id: scala.Double = js.native
   /** @private {Object} */
-  var `interruptReasons_`: js.Any = js.native
-  var `invalidAuthTokenCount_`: js.Any = js.native
-  var `lastConnectionAttemptTime_`: js.Any = js.native
-  var `lastConnectionEstablishedTime_`: js.Any = js.native
+  var interruptReasons_ : js.Any = js.native
+  var invalidAuthTokenCount_ : js.Any = js.native
+  var lastConnectionAttemptTime_ : js.Any = js.native
+  var lastConnectionEstablishedTime_ : js.Any = js.native
   var lastSessionId: java.lang.String | scala.Null = js.native
-  var `listens_`: js.Any = js.native
-  var `log_`: js.Any = js.native
-  var `maxReconnectDelay_`: js.Any = js.native
-  var `onAuthRevoked_`: js.Any = js.native
-  var `onConnectStatus_`: js.Any = js.native
+  var listens_ : js.Any = js.native
+  var log_ : js.Any = js.native
+  var maxReconnectDelay_ : js.Any = js.native
+  var onAuthRevoked_ : js.Any = js.native
+  var onConnectStatus_ : js.Any = js.native
   /**
     * @param {*} message
     * @private
     */
-  var `onDataMessage_`: js.Any = js.native
-  var `onDataPush_`: js.Any = js.native
-  var `onDataUpdate_`: js.Any = js.native
-  var `onDisconnectRequestQueue_`: js.Any = js.native
+  var onDataMessage_ : js.Any = js.native
+  var onDataPush_ : js.Any = js.native
+  var onDataUpdate_ : js.Any = js.native
+  var onDisconnectRequestQueue_ : js.Any = js.native
   /**
     * @param {!string} pathString
     * @param {Array.<*>=} query
     * @private
     */
-  var `onListenRevoked_`: js.Any = js.native
-  var `onOnline_`: js.Any = js.native
-  var `onReady_`: js.Any = js.native
-  var `onRealtimeDisconnect_`: js.Any = js.native
-  var `onSecurityDebugPacket_`: js.Any = js.native
-  var `onServerInfoUpdate_`: js.Any = js.native
+  var onListenRevoked_ : js.Any = js.native
+  var onOnline_ : js.Any = js.native
+  var onReady_ : js.Any = js.native
+  var onRealtimeDisconnect_ : js.Any = js.native
+  var onSecurityDebugPacket_ : js.Any = js.native
+  var onServerInfoUpdate_ : js.Any = js.native
   /**
     * @param {boolean} visible
     * @private
     */
-  var `onVisible_`: js.Any = js.native
-  var `outstandingPutCount_`: js.Any = js.native
-  var `outstandingPuts_`: js.Any = js.native
+  var onVisible_ : js.Any = js.native
+  var outstandingPutCount_ : js.Any = js.native
+  var outstandingPuts_ : js.Any = js.native
   /** @private {?{
     *   sendRequest(Object),
     *   close()
     * }} */
-  var `realtime_`: js.Any = js.native
-  var `reconnectDelay_`: js.Any = js.native
+  var realtime_ : js.Any = js.native
+  var reconnectDelay_ : js.Any = js.native
   /**
     * @param {!string} credential
     * @private
     */
-  var `reduceReconnectDelayIfAdminCredential_`: js.Any = js.native
+  var reduceReconnectDelayIfAdminCredential_ : js.Any = js.native
   /**
     * @param {!string} pathString
     * @param {!string} queryId
     * @return {{queries:Array.<Query>, onComplete:function(string)}}
     * @private
     */
-  var `removeListen_`: js.Any = js.native
-  var `repoInfo_`: js.Any = js.native
-  var `requestCBHash_`: js.Any = js.native
-  var `requestNumber_`: js.Any = js.native
-  var `restoreState_`: js.Any = js.native
-  var `scheduleConnect_`: js.Any = js.native
-  var `securityDebugCallback_`: js.Any = js.native
+  var removeListen_ : js.Any = js.native
+  var repoInfo_ : js.Any = js.native
+  var requestCBHash_ : js.Any = js.native
+  var requestNumber_ : js.Any = js.native
+  var restoreState_ : js.Any = js.native
+  var scheduleConnect_ : js.Any = js.native
+  var securityDebugCallback_ : js.Any = js.native
   /**
     * Sends client stats for first connection
     * @private
     */
-  var `sendConnectStats_`: js.Any = js.native
+  var sendConnectStats_ : js.Any = js.native
   /**
     * @param {!{onComplete(),
     *           hashFn():!string,
@@ -118,17 +118,17 @@ class PersistentConnection protected ()
     *           tag: ?number}} listenSpec
     * @private
     */
-  var `sendListen_`: js.Any = js.native
-  var `sendOnDisconnect_`: js.Any = js.native
-  var `sendPut_`: js.Any = js.native
-  var `sendUnlisten_`: js.Any = js.native
+  var sendListen_ : js.Any = js.native
+  var sendOnDisconnect_ : js.Any = js.native
+  var sendPut_ : js.Any = js.native
+  var sendUnlisten_ : js.Any = js.native
   /**
     * @return {boolean}
     * @private
     */
-  var `shouldReconnect_`: js.Any = js.native
+  var shouldReconnect_ : js.Any = js.native
   /** @private {boolean} */
-  var `visible_`: js.Any = js.native
+  var visible_ : js.Any = js.native
   /**
     * @param {string} reason
     */
@@ -174,16 +174,16 @@ object PersistentConnection extends js.Object {
     * @type {number}
     * @private
     */
-  var `nextConnectionId_`: js.Any = js.native
+  var nextConnectionId_ : js.Any = js.native
   /**
     * @private
     */
-  var `nextPersistentConnectionId_`: js.Any = js.native
+  var nextPersistentConnectionId_ : js.Any = js.native
   /**
     * @param {*} payload
     * @param {!Query} query
     * @private
     */
-  var `warnOnListenWarnings_`: js.Any = js.native
+  var warnOnListenWarnings_ : js.Any = js.native
 }
 

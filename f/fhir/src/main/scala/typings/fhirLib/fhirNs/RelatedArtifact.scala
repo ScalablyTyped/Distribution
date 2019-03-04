@@ -70,7 +70,8 @@ object RelatedArtifact {
     resource: Reference = null,
     url: uri = null
   ): RelatedArtifact = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_citation != null) __obj.updateDynamic("_citation")(_citation)
     if (_display != null) __obj.updateDynamic("_display")(_display)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

@@ -31,8 +31,7 @@ object ProcessRequestItem {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): ProcessRequestItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sequenceLinkId")(sequenceLinkId)
+    val __obj = js.Dynamic.literal(sequenceLinkId = sequenceLinkId)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_sequenceLinkId != null) __obj.updateDynamic("_sequenceLinkId")(_sequenceLinkId)

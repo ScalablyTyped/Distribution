@@ -22,8 +22,7 @@ object AudioParamDescriptor {
     maxValue: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null
   ): AudioParamDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (automationRate != null) __obj.updateDynamic("automationRate")(automationRate)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])

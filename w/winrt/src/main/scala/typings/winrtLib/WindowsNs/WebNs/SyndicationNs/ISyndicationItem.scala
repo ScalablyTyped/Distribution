@@ -58,34 +58,8 @@ object ISyndicationItem {
     summary: ISyndicationText,
     title: ISyndicationText
   ): ISyndicationItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("authors")(authors)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("commentsUri")(commentsUri)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contributors")(contributors)
-    __obj.updateDynamic("eTag")(eTag)
-    __obj.updateDynamic("editMediaUri")(editMediaUri)
-    __obj.updateDynamic("editUri")(editUri)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("itemUri")(itemUri)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadFromXml")(loadFromXml)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("rights")(rights)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, authors = authors, baseUri = baseUri, categories = categories, commentsUri = commentsUri, content = content, contributors = contributors, eTag = eTag, editMediaUri = editMediaUri, editUri = editUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, id = id, itemUri = itemUri, language = language, lastUpdatedTime = lastUpdatedTime, links = links, load = load, loadFromXml = loadFromXml, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, publishedDate = publishedDate, rights = rights, source = source, summary = summary, title = title)
+  
     __obj.asInstanceOf[ISyndicationItem]
   }
 }

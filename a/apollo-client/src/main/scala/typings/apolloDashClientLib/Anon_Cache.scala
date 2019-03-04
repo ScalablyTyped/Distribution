@@ -16,9 +16,8 @@ object Anon_Cache {
     cache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape],
     getCacheKey: js.Function1[Anon_Id, js.Any]
   ): Anon_Cache[TCacheShape] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("getCacheKey")(getCacheKey)
+    val __obj = js.Dynamic.literal(cache = cache, getCacheKey = getCacheKey)
+  
     __obj.asInstanceOf[Anon_Cache[TCacheShape]]
   }
 }

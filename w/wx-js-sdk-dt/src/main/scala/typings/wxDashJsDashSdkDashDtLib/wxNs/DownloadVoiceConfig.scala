@@ -31,9 +31,7 @@ object DownloadVoiceConfig {
     fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
     isShowProgressTips: scala.Int | scala.Double = null
   ): DownloadVoiceConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serverId")(serverId)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(serverId = serverId, success = success)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

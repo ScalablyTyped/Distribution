@@ -13,9 +13,8 @@ trait MagicStringOptions extends js.Object {
 object MagicStringOptions {
   @scala.inline
   def apply(filename: java.lang.String, indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange]): MagicStringOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("indentExclusionRanges")(indentExclusionRanges.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filename = filename, indentExclusionRanges = indentExclusionRanges.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MagicStringOptions]
   }
 }

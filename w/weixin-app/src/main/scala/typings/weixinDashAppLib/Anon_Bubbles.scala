@@ -14,10 +14,8 @@ trait Anon_Bubbles extends js.Object {
 object Anon_Bubbles {
   @scala.inline
   def apply(bubbles: scala.Boolean, capturePhase: scala.Boolean, composed: scala.Boolean): Anon_Bubbles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("capturePhase")(capturePhase)
-    __obj.updateDynamic("composed")(composed)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, capturePhase = capturePhase, composed = composed)
+  
     __obj.asInstanceOf[Anon_Bubbles]
   }
 }

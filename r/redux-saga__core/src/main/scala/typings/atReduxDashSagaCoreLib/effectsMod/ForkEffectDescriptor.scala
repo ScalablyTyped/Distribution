@@ -17,10 +17,7 @@ object ForkEffectDescriptor {
     fn: js.Function,
     detached: js.UndefOr[scala.Boolean] = js.undefined
   ): ForkEffectDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("fn")(fn)
+    val __obj = js.Dynamic.literal(args = args, context = context, fn = fn)
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
     __obj.asInstanceOf[ForkEffectDescriptor]
   }

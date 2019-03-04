@@ -30,16 +30,8 @@ object Styles {
     bmMorphShape: stdLib.Partial[stdLib.CSSStyleDeclaration],
     bmOverlay: stdLib.Partial[stdLib.CSSStyleDeclaration]
   ): Styles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bmBurgerBars")(bmBurgerBars)
-    __obj.updateDynamic("bmBurgerButton")(bmBurgerButton)
-    __obj.updateDynamic("bmCross")(bmCross)
-    __obj.updateDynamic("bmCrossButton")(bmCrossButton)
-    __obj.updateDynamic("bmItemList")(bmItemList)
-    __obj.updateDynamic("bmMenu")(bmMenu)
-    __obj.updateDynamic("bmMenuWrap")(bmMenuWrap)
-    __obj.updateDynamic("bmMorphShape")(bmMorphShape)
-    __obj.updateDynamic("bmOverlay")(bmOverlay)
+    val __obj = js.Dynamic.literal(bmBurgerBars = bmBurgerBars, bmBurgerButton = bmBurgerButton, bmCross = bmCross, bmCrossButton = bmCrossButton, bmItemList = bmItemList, bmMenu = bmMenu, bmMenuWrap = bmMenuWrap, bmMorphShape = bmMorphShape, bmOverlay = bmOverlay)
+  
     __obj.asInstanceOf[Styles]
   }
 }

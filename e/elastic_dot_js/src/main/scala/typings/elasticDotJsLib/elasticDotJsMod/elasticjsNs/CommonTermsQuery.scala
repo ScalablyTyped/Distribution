@@ -85,20 +85,8 @@ object CommonTermsQuery {
     query: js.Function1[java.lang.String, CommonTermsQuery],
     toJSON: js.Function0[js.Any]
   ): CommonTermsQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("cutoffFrequency")(cutoffFrequency)
-    __obj.updateDynamic("disableCoord")(disableCoord)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("highFreqOperator")(highFreqOperator)
-    __obj.updateDynamic("lowFreqOperator")(lowFreqOperator)
-    __obj.updateDynamic("minimumShouldMatch")(minimumShouldMatch)
-    __obj.updateDynamic("minimumShouldMatchHighFreq")(minimumShouldMatchHighFreq)
-    __obj.updateDynamic("minimumShouldMatchLowFreq")(minimumShouldMatchLowFreq)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, cutoffFrequency = cutoffFrequency, disableCoord = disableCoord, field = field, highFreqOperator = highFreqOperator, lowFreqOperator = lowFreqOperator, minimumShouldMatch = minimumShouldMatch, minimumShouldMatchHighFreq = minimumShouldMatchHighFreq, minimumShouldMatchLowFreq = minimumShouldMatchLowFreq, query = query, toJSON = toJSON)
+  
     __obj.asInstanceOf[CommonTermsQuery]
   }
 }

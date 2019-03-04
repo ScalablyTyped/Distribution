@@ -18,8 +18,7 @@ object AutoCompleteTokensEditorProps {
     column: reactDashDataDashGridLib.AdazzleReactDataGridNs.ExcelColumn = null,
     value: js.Array[_] = null
   ): AutoCompleteTokensEditorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (column != null) __obj.updateDynamic("column")(column)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[AutoCompleteTokensEditorProps]

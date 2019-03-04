@@ -100,8 +100,7 @@ object TrailArgs {
     snsTopicName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): TrailArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
     if (cloudWatchLogsGroupArn != null) __obj.updateDynamic("cloudWatchLogsGroupArn")(cloudWatchLogsGroupArn.asInstanceOf[js.Any])
     if (cloudWatchLogsRoleArn != null) __obj.updateDynamic("cloudWatchLogsRoleArn")(cloudWatchLogsRoleArn.asInstanceOf[js.Any])
     if (enableLogFileValidation != null) __obj.updateDynamic("enableLogFileValidation")(enableLogFileValidation.asInstanceOf[js.Any])

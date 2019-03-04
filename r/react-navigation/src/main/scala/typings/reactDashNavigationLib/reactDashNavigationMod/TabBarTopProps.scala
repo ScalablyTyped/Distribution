@@ -48,21 +48,7 @@ object TabBarTopProps {
     iconStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     labelStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null
   ): TabBarTopProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTintColor")(activeTintColor)
-    __obj.updateDynamic("allowFontScaling")(allowFontScaling)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getOnPress")(getOnPress)
-    __obj.updateDynamic("inactiveTintColor")(inactiveTintColor)
-    __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("jumpToIndex")(jumpToIndex)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("renderIcon")(renderIcon)
-    __obj.updateDynamic("showIcon")(showIcon)
-    __obj.updateDynamic("showLabel")(showLabel)
-    __obj.updateDynamic("tabBarPosition")(tabBarPosition)
-    __obj.updateDynamic("upperCaseLabel")(upperCaseLabel)
+    val __obj = js.Dynamic.literal(activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = getLabel, getOnPress = getOnPress, inactiveTintColor = inactiveTintColor, indicatorStyle = indicatorStyle.asInstanceOf[js.Any], jumpToIndex = jumpToIndex, navigation = navigation, position = position, renderIcon = renderIcon, showIcon = showIcon, showLabel = showLabel, tabBarPosition = tabBarPosition, upperCaseLabel = upperCaseLabel)
     if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
     __obj.asInstanceOf[TabBarTopProps]

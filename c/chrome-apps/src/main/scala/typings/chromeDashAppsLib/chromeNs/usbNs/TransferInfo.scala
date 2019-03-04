@@ -96,13 +96,7 @@ object TransferInfo {
     length: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     timeout: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): TransferInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], index = index, recipient = recipient.asInstanceOf[js.Any], request = request, requestType = requestType.asInstanceOf[js.Any], value = value)
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
     if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)

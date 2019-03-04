@@ -30,16 +30,8 @@ object S3EventRecord {
     s3: awsDashLambdaLib.Anon_Bucket,
     userIdentity: awsDashLambdaLib.Anon_PrincipalId
   ): S3EventRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsRegion")(awsRegion)
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("eventSource")(eventSource)
-    __obj.updateDynamic("eventTime")(eventTime)
-    __obj.updateDynamic("eventVersion")(eventVersion)
-    __obj.updateDynamic("requestParameters")(requestParameters)
-    __obj.updateDynamic("responseElements")(responseElements)
-    __obj.updateDynamic("s3")(s3)
-    __obj.updateDynamic("userIdentity")(userIdentity)
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion, eventName = eventName, eventSource = eventSource, eventTime = eventTime, eventVersion = eventVersion, requestParameters = requestParameters, responseElements = responseElements, s3 = s3, userIdentity = userIdentity)
+  
     __obj.asInstanceOf[S3EventRecord]
   }
 }

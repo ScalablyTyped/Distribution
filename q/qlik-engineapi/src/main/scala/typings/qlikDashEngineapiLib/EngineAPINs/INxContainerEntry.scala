@@ -26,10 +26,8 @@ trait INxContainerEntry[T] extends js.Object {
 object INxContainerEntry {
   @scala.inline
   def apply[T](qData: T, qInfo: INxInfo, qMeta: INxMeta): INxContainerEntry[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qData")(qData.asInstanceOf[js.Any])
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qMeta")(qMeta)
+    val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qInfo = qInfo, qMeta = qMeta)
+  
     __obj.asInstanceOf[INxContainerEntry[T]]
   }
 }

@@ -72,37 +72,8 @@ object MKColorStatic {
     palette_red_500: java.lang.String,
     palette_yellow_600: java.lang.String
   ): MKColorStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Amber")(Amber)
-    __obj.updateDynamic("Blue")(Blue)
-    __obj.updateDynamic("BlueGrey")(BlueGrey)
-    __obj.updateDynamic("Brown")(Brown)
-    __obj.updateDynamic("Cyan")(Cyan)
-    __obj.updateDynamic("DeepOrange")(DeepOrange)
-    __obj.updateDynamic("DeepPurple")(DeepPurple)
-    __obj.updateDynamic("Green")(Green)
-    __obj.updateDynamic("Grey")(Grey)
-    __obj.updateDynamic("Indigo")(Indigo)
-    __obj.updateDynamic("LightBlue")(LightBlue)
-    __obj.updateDynamic("LightGreen")(LightGreen)
-    __obj.updateDynamic("Lime")(Lime)
-    __obj.updateDynamic("Orange")(Orange)
-    __obj.updateDynamic("Pink")(Pink)
-    __obj.updateDynamic("Purple")(Purple)
-    __obj.updateDynamic("RGBIndigo")(RGBIndigo)
-    __obj.updateDynamic("RGBPink")(RGBPink)
-    __obj.updateDynamic("RGBPurple")(RGBPurple)
-    __obj.updateDynamic("RGBTeal")(RGBTeal)
-    __obj.updateDynamic("Red")(Red)
-    __obj.updateDynamic("Silver")(Silver)
-    __obj.updateDynamic("Teal")(Teal)
-    __obj.updateDynamic("Transparent")(Transparent)
-    __obj.updateDynamic("Yellow")(Yellow)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("palette_blue_400")(palette_blue_400)
-    __obj.updateDynamic("palette_green_500")(palette_green_500)
-    __obj.updateDynamic("palette_red_500")(palette_red_500)
-    __obj.updateDynamic("palette_yellow_600")(palette_yellow_600)
+    val __obj = js.Dynamic.literal(Amber = Amber, Blue = Blue, BlueGrey = BlueGrey, Brown = Brown, Cyan = Cyan, DeepOrange = DeepOrange, DeepPurple = DeepPurple, Green = Green, Grey = Grey, Indigo = Indigo, LightBlue = LightBlue, LightGreen = LightGreen, Lime = Lime, Orange = Orange, Pink = Pink, Purple = Purple, RGBIndigo = RGBIndigo, RGBPink = RGBPink, RGBPurple = RGBPurple, RGBTeal = RGBTeal, Red = Red, Silver = Silver, Teal = Teal, Transparent = Transparent, Yellow = Yellow, default = default, palette_blue_400 = palette_blue_400, palette_green_500 = palette_green_500, palette_red_500 = palette_red_500, palette_yellow_600 = palette_yellow_600)
+  
     __obj.asInstanceOf[MKColorStatic]
   }
 }

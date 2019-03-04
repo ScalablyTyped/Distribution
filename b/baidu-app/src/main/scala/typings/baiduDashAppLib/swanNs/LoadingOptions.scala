@@ -28,8 +28,7 @@ object LoadingOptions {
     mask: scala.Boolean | baiduDashAppLib.baiduDashAppLibStrings.`true` | baiduDashAppLib.baiduDashAppLibStrings.`false` = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): LoadingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])

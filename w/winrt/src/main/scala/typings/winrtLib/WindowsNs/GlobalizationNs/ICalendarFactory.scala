@@ -28,9 +28,8 @@ object ICalendarFactory {
       Calendar
     ]
   ): ICalendarFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createCalendar")(createCalendar)
-    __obj.updateDynamic("createCalendarDefaultCalendarAndClock")(createCalendarDefaultCalendarAndClock)
+    val __obj = js.Dynamic.literal(createCalendar = createCalendar, createCalendarDefaultCalendarAndClock = createCalendarDefaultCalendarAndClock)
+  
     __obj.asInstanceOf[ICalendarFactory]
   }
 }

@@ -22,12 +22,8 @@ object SeriesProperties {
     name: java.lang.String,
     visible: scala.Boolean
   ): SeriesProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(axis = axis, color = color, column = column, name = name, visible = visible)
+  
     __obj.asInstanceOf[SeriesProperties]
   }
 }

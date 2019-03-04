@@ -20,11 +20,8 @@ object IRoutePanel {
     state: IDataManager,
     switchPoints: js.Function0[scala.Unit]
   ): IRoutePanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRoute")(getRoute)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("switchPoints")(switchPoints)
+    val __obj = js.Dynamic.literal(getRoute = getRoute, options = options, state = state, switchPoints = switchPoints)
+  
     __obj.asInstanceOf[IRoutePanel]
   }
 }

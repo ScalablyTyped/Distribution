@@ -25,9 +25,8 @@ trait ScaleStatus extends js.Object {
 object ScaleStatus {
   @scala.inline
   def apply(replicas: scala.Double, selector: java.lang.String): ScaleStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replicas")(replicas)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(replicas = replicas, selector = selector)
+  
     __obj.asInstanceOf[ScaleStatus]
   }
 }

@@ -63,15 +63,8 @@ object InlinePictureInfo {
     scaleX: scala.Double,
     scaleY: scala.Double
   ): InlinePictureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualHeight")(actualHeight)
-    __obj.updateDynamic("actualWidth")(actualWidth)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("initialHeight")(initialHeight)
-    __obj.updateDynamic("initialWidth")(initialWidth)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
+    val __obj = js.Dynamic.literal(actualHeight = actualHeight, actualWidth = actualWidth, id = id, initialHeight = initialHeight, initialWidth = initialWidth, position = position, scaleX = scaleX, scaleY = scaleY)
+  
     __obj.asInstanceOf[InlinePictureInfo]
   }
 }

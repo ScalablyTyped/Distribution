@@ -12,8 +12,8 @@ trait DOML2DeprecatedColorProperty extends js.Object {
 object DOML2DeprecatedColorProperty {
   @scala.inline
   def apply(color: java.lang.String): DOML2DeprecatedColorProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(color = color)
+  
     __obj.asInstanceOf[DOML2DeprecatedColorProperty]
   }
 }

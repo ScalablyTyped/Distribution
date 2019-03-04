@@ -22,10 +22,8 @@ object IComparable {
     hashCode: js.Function0[scala.Double],
     less: js.Function1[T, scala.Boolean]
   ): IComparable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("hashCode")(hashCode)
-    __obj.updateDynamic("less")(less)
+    val __obj = js.Dynamic.literal(equals = equals, hashCode = hashCode, less = less)
+  
     __obj.asInstanceOf[IComparable[T]]
   }
 }

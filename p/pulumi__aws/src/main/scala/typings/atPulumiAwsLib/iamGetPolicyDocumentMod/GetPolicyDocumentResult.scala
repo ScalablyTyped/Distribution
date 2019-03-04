@@ -19,9 +19,8 @@ trait GetPolicyDocumentResult extends js.Object {
 object GetPolicyDocumentResult {
   @scala.inline
   def apply(id: java.lang.String, json: java.lang.String): GetPolicyDocumentResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("json")(json)
+    val __obj = js.Dynamic.literal(id = id, json = json)
+  
     __obj.asInstanceOf[GetPolicyDocumentResult]
   }
 }

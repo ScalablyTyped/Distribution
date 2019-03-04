@@ -13,8 +13,7 @@ trait Google extends js.Object {
 object Google {
   @scala.inline
   def apply(families: js.Array[java.lang.String], text: java.lang.String = null): Google = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("families")(families)
+    val __obj = js.Dynamic.literal(families = families)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Google]
   }

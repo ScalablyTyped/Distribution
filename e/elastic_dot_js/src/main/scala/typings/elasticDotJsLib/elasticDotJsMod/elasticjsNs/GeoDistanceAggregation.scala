@@ -83,19 +83,8 @@ object GeoDistanceAggregation {
     toJSON: js.Function0[js.Any],
     unit: js.Function1[java.lang.String, GeoDistanceAggregation]
   ): GeoDistanceAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("distanceType")(distanceType)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("keyed")(keyed)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, center = center, distanceType = distanceType, field = field, keyed = keyed, origin = origin, point = point, range = range, toJSON = toJSON, unit = unit)
+  
     __obj.asInstanceOf[GeoDistanceAggregation]
   }
 }

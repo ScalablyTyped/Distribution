@@ -20,11 +20,8 @@ object Transports {
     serverSentEvents: Transport,
     webSockets: Transport
   ): Transports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foreverFrame")(foreverFrame)
-    __obj.updateDynamic("longPolling")(longPolling)
-    __obj.updateDynamic("serverSentEvents")(serverSentEvents)
-    __obj.updateDynamic("webSockets")(webSockets)
+    val __obj = js.Dynamic.literal(foreverFrame = foreverFrame, longPolling = longPolling, serverSentEvents = serverSentEvents, webSockets = webSockets)
+  
     __obj.asInstanceOf[Transports]
   }
 }

@@ -25,12 +25,8 @@ object ICoreDispatcher {
     ],
     runIdleAsync: js.Function1[IdleDispatchedHandler, winrtLib.WindowsNs.FoundationNs.IAsyncAction]
   ): ICoreDispatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasThreadAccess")(hasThreadAccess)
-    __obj.updateDynamic("onacceleratorkeyactivated")(onacceleratorkeyactivated)
-    __obj.updateDynamic("processEvents")(processEvents)
-    __obj.updateDynamic("runAsync")(runAsync)
-    __obj.updateDynamic("runIdleAsync")(runIdleAsync)
+    val __obj = js.Dynamic.literal(hasThreadAccess = hasThreadAccess, onacceleratorkeyactivated = onacceleratorkeyactivated, processEvents = processEvents, runAsync = runAsync, runIdleAsync = runIdleAsync)
+  
     __obj.asInstanceOf[ICoreDispatcher]
   }
 }

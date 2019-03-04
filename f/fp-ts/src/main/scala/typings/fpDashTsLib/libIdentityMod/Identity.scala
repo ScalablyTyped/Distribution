@@ -17,7 +17,7 @@ class Identity[A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: Identity[js.Function1[/* b */ B, C]], fb: Identity[B]): Identity[C] = js.native
+  def ap_[B, C](`this`: Identity[js.Function1[/* b */ B, C]], fb: Identity[B]): Identity[C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Identity[B]]): Identity[B] = js.native
   def extend[B](f: js.Function1[/* ea */ Identity[A], B]): Identity[B] = js.native
   def extract(): A = js.native

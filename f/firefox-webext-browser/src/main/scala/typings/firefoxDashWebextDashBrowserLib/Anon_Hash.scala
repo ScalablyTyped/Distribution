@@ -18,8 +18,7 @@ object Anon_Hash {
     url: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.HttpURL,
     hash: java.lang.String = null
   ): Anon_Hash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     __obj.asInstanceOf[Anon_Hash]
   }

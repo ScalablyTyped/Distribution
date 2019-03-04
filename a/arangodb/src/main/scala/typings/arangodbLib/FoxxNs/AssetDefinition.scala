@@ -18,8 +18,7 @@ object AssetDefinition {
     gzip: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null
   ): AssetDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AssetDefinition]

@@ -44,15 +44,8 @@ object TeamSetting {
     url: java.lang.String,
     workingDays: js.Array[vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek]
   ): TeamSetting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("backlogIteration")(backlogIteration)
-    __obj.updateDynamic("backlogVisibilities")(backlogVisibilities)
-    __obj.updateDynamic("bugsBehavior")(bugsBehavior)
-    __obj.updateDynamic("defaultIteration")(defaultIteration)
-    __obj.updateDynamic("defaultIterationMacro")(defaultIterationMacro)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workingDays")(workingDays)
+    val __obj = js.Dynamic.literal(_links = _links, backlogIteration = backlogIteration, backlogVisibilities = backlogVisibilities, bugsBehavior = bugsBehavior, defaultIteration = defaultIteration, defaultIterationMacro = defaultIterationMacro, url = url, workingDays = workingDays)
+  
     __obj.asInstanceOf[TeamSetting]
   }
 }

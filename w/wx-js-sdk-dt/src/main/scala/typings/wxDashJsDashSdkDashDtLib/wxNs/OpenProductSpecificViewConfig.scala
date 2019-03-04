@@ -26,8 +26,7 @@ object OpenProductSpecificViewConfig {
     success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
     viewType: scala.Int | scala.Double = null
   ): OpenProductSpecificViewConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productId")(productId)
+    val __obj = js.Dynamic.literal(productId = productId)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

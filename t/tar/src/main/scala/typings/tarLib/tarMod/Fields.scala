@@ -46,23 +46,8 @@ object Fields {
     ustar: scala.Double,
     ustarvar: scala.Double
   ): Fields = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cksum")(cksum)
-    __obj.updateDynamic("devmaj")(devmaj)
-    __obj.updateDynamic("devmin")(devmin)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("gname")(gname)
-    __obj.updateDynamic("linkpath")(linkpath)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("uname")(uname)
-    __obj.updateDynamic("ustar")(ustar)
-    __obj.updateDynamic("ustarvar")(ustarvar)
+    val __obj = js.Dynamic.literal(cksum = cksum, devmaj = devmaj, devmin = devmin, fill = fill, gid = gid, gname = gname, linkpath = linkpath, mode = mode, mtime = mtime, path = path, prefix = prefix, size = size, uid = uid, uname = uname, ustar = ustar, ustarvar = ustarvar)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Fields]
   }
 }

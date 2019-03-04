@@ -22,10 +22,8 @@ object IActivatedEventArgs {
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
   ): IActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
+    val __obj = js.Dynamic.literal(kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen)
+  
     __obj.asInstanceOf[IActivatedEventArgs]
   }
 }

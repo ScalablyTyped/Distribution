@@ -24,13 +24,8 @@ object GetVpnGatewayResult {
     state: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetVpnGatewayResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amazonSideAsn")(amazonSideAsn)
-    __obj.updateDynamic("attachedVpcId")(attachedVpcId)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, attachedVpcId = attachedVpcId, availabilityZone = availabilityZone, id = id, state = state, tags = tags)
+  
     __obj.asInstanceOf[GetVpnGatewayResult]
   }
 }

@@ -20,11 +20,8 @@ object RunStatistic {
     resolutionState: TestResolutionState,
     state: java.lang.String
   ): RunStatistic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("resolutionState")(resolutionState)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(count = count, outcome = outcome, resolutionState = resolutionState, state = state)
+  
     __obj.asInstanceOf[RunStatistic]
   }
 }

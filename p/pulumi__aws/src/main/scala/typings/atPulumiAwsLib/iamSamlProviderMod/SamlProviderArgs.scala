@@ -22,8 +22,7 @@ object SamlProviderArgs {
     samlMetadataDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): SamlProviderArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("samlMetadataDocument")(samlMetadataDocument.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(samlMetadataDocument = samlMetadataDocument.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamlProviderArgs]
   }

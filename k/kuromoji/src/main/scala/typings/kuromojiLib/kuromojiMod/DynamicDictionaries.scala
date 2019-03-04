@@ -22,12 +22,8 @@ object DynamicDictionaries {
     trie: doublearrayLib.doublearrayNs.DoubleArray,
     unknown_dictionary: UnknownDictionary
   ): DynamicDictionaries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection_costs")(connection_costs)
-    __obj.updateDynamic("loadTrie")(loadTrie)
-    __obj.updateDynamic("token_info_dictionary")(token_info_dictionary)
-    __obj.updateDynamic("trie")(trie)
-    __obj.updateDynamic("unknown_dictionary")(unknown_dictionary)
+    val __obj = js.Dynamic.literal(connection_costs = connection_costs, loadTrie = loadTrie, token_info_dictionary = token_info_dictionary, trie = trie, unknown_dictionary = unknown_dictionary)
+  
     __obj.asInstanceOf[DynamicDictionaries]
   }
 }

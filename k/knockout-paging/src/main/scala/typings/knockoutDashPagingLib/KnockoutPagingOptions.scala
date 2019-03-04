@@ -13,9 +13,8 @@ trait KnockoutPagingOptions extends js.Object {
 object KnockoutPagingOptions {
   @scala.inline
   def apply(defaults: KnockoutPagingDefaultOptions, generators: Anon_Name): KnockoutPagingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
-    __obj.updateDynamic("generators")(generators)
+    val __obj = js.Dynamic.literal(defaults = defaults, generators = generators)
+  
     __obj.asInstanceOf[KnockoutPagingOptions]
   }
 }

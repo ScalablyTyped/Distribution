@@ -22,12 +22,8 @@ object Anon_IncludeInheritedDefinitionsOnly {
     includeServices: scala.Double,
     none: scala.Double
   ): Anon_IncludeInheritedDefinitionsOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeInheritedDefinitionsOnly")(includeInheritedDefinitionsOnly)
-    __obj.updateDynamic("includeLastUserAccess")(includeLastUserAccess)
-    __obj.updateDynamic("includeNonInheritedDefinitionsOnly")(includeNonInheritedDefinitionsOnly)
-    __obj.updateDynamic("includeServices")(includeServices)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(includeInheritedDefinitionsOnly = includeInheritedDefinitionsOnly, includeLastUserAccess = includeLastUserAccess, includeNonInheritedDefinitionsOnly = includeNonInheritedDefinitionsOnly, includeServices = includeServices, none = none)
+  
     __obj.asInstanceOf[Anon_IncludeInheritedDefinitionsOnly]
   }
 }

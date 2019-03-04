@@ -19,8 +19,8 @@ object ISyndicationItemFactory {
       SyndicationItem
     ]
   ): ISyndicationItemFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationItem")(createSyndicationItem)
+    val __obj = js.Dynamic.literal(createSyndicationItem = createSyndicationItem)
+  
     __obj.asInstanceOf[ISyndicationItemFactory]
   }
 }

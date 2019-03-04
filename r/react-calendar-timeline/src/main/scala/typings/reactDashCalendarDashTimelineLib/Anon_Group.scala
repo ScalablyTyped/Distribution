@@ -16,9 +16,8 @@ object Anon_Group {
     group: reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.TimelineGroup,
     isRightSidebar: scala.Boolean
   ): Anon_Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("isRightSidebar")(isRightSidebar)
+    val __obj = js.Dynamic.literal(group = group, isRightSidebar = isRightSidebar)
+  
     __obj.asInstanceOf[Anon_Group]
   }
 }

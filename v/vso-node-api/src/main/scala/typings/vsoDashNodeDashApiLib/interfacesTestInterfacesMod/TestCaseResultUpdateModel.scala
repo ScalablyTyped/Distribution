@@ -48,25 +48,8 @@ object TestCaseResultUpdateModel {
     testCasePriority: java.lang.String,
     testResult: ShallowReference
   ): TestCaseResultUpdateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associatedWorkItems")(associatedWorkItems)
-    __obj.updateDynamic("automatedTestTypeId")(automatedTestTypeId)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("completedDate")(completedDate)
-    __obj.updateDynamic("computerName")(computerName)
-    __obj.updateDynamic("customFields")(customFields)
-    __obj.updateDynamic("durationInMs")(durationInMs)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("failureType")(failureType)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("resolutionState")(resolutionState)
-    __obj.updateDynamic("runBy")(runBy)
-    __obj.updateDynamic("stackTrace")(stackTrace)
-    __obj.updateDynamic("startedDate")(startedDate)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("testCasePriority")(testCasePriority)
-    __obj.updateDynamic("testResult")(testResult)
+    val __obj = js.Dynamic.literal(associatedWorkItems = associatedWorkItems, automatedTestTypeId = automatedTestTypeId, comment = comment, completedDate = completedDate, computerName = computerName, customFields = customFields, durationInMs = durationInMs, errorMessage = errorMessage, failureType = failureType, outcome = outcome, owner = owner, resolutionState = resolutionState, runBy = runBy, stackTrace = stackTrace, startedDate = startedDate, state = state, testCasePriority = testCasePriority, testResult = testResult)
+  
     __obj.asInstanceOf[TestCaseResultUpdateModel]
   }
 }

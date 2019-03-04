@@ -28,11 +28,8 @@ object ToolbarsInstance {
     registerToolbarButtonForList: js.Function1[ToolbarButtonDescriptor, js.Function0[scala.Unit]],
     registerToolbarButtonForThreadView: js.Function1[ToolbarButtonDescriptor, js.Function0[scala.Unit]]
   ): ToolbarsInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addToolbarButtonForApp")(addToolbarButtonForApp)
-    __obj.updateDynamic("registerThreadButton")(registerThreadButton)
-    __obj.updateDynamic("registerToolbarButtonForList")(registerToolbarButtonForList)
-    __obj.updateDynamic("registerToolbarButtonForThreadView")(registerToolbarButtonForThreadView)
+    val __obj = js.Dynamic.literal(addToolbarButtonForApp = addToolbarButtonForApp, registerThreadButton = registerThreadButton, registerToolbarButtonForList = registerToolbarButtonForList, registerToolbarButtonForThreadView = registerToolbarButtonForThreadView)
+  
     __obj.asInstanceOf[ToolbarsInstance]
   }
 }

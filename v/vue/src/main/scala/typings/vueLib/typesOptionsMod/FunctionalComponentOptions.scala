@@ -36,8 +36,7 @@ object FunctionalComponentOptions {
       vueLib.typesVnodeMod.VNode | js.Array[vueLib.typesVnodeMod.VNode]
     ] = null
   ): FunctionalComponentOptions[Props, PropDefs] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functional")(functional)
+    val __obj = js.Dynamic.literal(functional = functional)
     if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
     if (model != null) __obj.updateDynamic("model")(model)
     if (name != null) __obj.updateDynamic("name")(name)

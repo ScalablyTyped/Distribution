@@ -21,10 +21,8 @@ object Anon_Cause {
     cookie: firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie,
     removed: scala.Boolean
   ): Anon_Cause = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cause")(cause)
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(cause = cause, cookie = cookie, removed = removed)
+  
     __obj.asInstanceOf[Anon_Cause]
   }
 }

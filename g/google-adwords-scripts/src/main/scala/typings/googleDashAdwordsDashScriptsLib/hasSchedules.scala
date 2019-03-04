@@ -16,9 +16,8 @@ object hasSchedules {
     getSchedules: js.Function0[ExtensionSchedule],
     setSchedules: js.Function1[ExtensionScheduleInput, scala.Unit]
   ): hasSchedules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSchedules")(getSchedules)
-    __obj.updateDynamic("setSchedules")(setSchedules)
+    val __obj = js.Dynamic.literal(getSchedules = getSchedules, setSchedules = setSchedules)
+  
     __obj.asInstanceOf[hasSchedules]
   }
 }

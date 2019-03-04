@@ -28,9 +28,8 @@ object AnimationQueryMetadata {
     `type`: AnimationMetadataType,
     options: AnimationQueryOptions = null
   ): AnimationQueryMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], selector = selector)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AnimationQueryMetadata]
   }

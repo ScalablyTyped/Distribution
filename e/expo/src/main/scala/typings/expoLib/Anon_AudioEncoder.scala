@@ -26,10 +26,7 @@ object Anon_AudioEncoder {
     numberOfChannels: scala.Int | scala.Double = null,
     sampleRate: scala.Int | scala.Double = null
   ): Anon_AudioEncoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioEncoder")(audioEncoder)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("outputFormat")(outputFormat)
+    val __obj = js.Dynamic.literal(audioEncoder = audioEncoder, extension = extension, outputFormat = outputFormat)
     if (bitRate != null) __obj.updateDynamic("bitRate")(bitRate.asInstanceOf[js.Any])
     if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
     if (numberOfChannels != null) __obj.updateDynamic("numberOfChannels")(numberOfChannels.asInstanceOf[js.Any])

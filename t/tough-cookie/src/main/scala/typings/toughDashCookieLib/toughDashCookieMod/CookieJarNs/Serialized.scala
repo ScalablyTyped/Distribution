@@ -20,11 +20,8 @@ object Serialized {
     storeType: java.lang.String,
     version: java.lang.String
   ): Serialized = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("rejectPublicSuffixes")(rejectPublicSuffixes)
-    __obj.updateDynamic("storeType")(storeType)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(cookies = cookies, rejectPublicSuffixes = rejectPublicSuffixes, storeType = storeType, version = version)
+  
     __obj.asInstanceOf[Serialized]
   }
 }

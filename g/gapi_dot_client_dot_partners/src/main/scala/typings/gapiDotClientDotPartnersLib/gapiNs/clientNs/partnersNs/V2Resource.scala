@@ -36,10 +36,8 @@ object V2Resource {
       gapiDotClientLib.gapiNs.clientNs.Request[Lead]
     ]
   ): V2Resource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPartnersstatus")(getPartnersstatus)
-    __obj.updateDynamic("updateCompanies")(updateCompanies)
-    __obj.updateDynamic("updateLeads")(updateLeads)
+    val __obj = js.Dynamic.literal(getPartnersstatus = getPartnersstatus, updateCompanies = updateCompanies, updateLeads = updateLeads)
+  
     __obj.asInstanceOf[V2Resource]
   }
 }

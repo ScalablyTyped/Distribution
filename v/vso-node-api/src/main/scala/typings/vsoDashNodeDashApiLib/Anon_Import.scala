@@ -13,8 +13,8 @@ trait Anon_Import extends js.Object {
 object Anon_Import {
   @scala.inline
   def apply(`import`: scala.Double, validate: scala.Double): Anon_Import = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(validate = validate)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[Anon_Import]
   }
 }

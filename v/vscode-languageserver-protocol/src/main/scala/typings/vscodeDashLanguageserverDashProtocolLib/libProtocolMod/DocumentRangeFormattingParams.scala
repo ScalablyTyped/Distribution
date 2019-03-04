@@ -27,10 +27,8 @@ object DocumentRangeFormattingParams {
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): DocumentRangeFormattingParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(options = options, range = range, textDocument = textDocument)
+  
     __obj.asInstanceOf[DocumentRangeFormattingParams]
   }
 }

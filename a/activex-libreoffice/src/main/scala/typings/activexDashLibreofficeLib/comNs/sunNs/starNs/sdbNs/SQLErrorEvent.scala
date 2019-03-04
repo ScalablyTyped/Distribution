@@ -15,9 +15,8 @@ trait SQLErrorEvent
 object SQLErrorEvent {
   @scala.inline
   def apply(Reason: js.Any, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): SQLErrorEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Reason")(Reason)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Reason = Reason, Source = Source)
+  
     __obj.asInstanceOf[SQLErrorEvent]
   }
 }

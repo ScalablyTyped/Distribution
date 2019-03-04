@@ -18,9 +18,7 @@ object VastAdExtensionChild {
     value: java.lang.String | scala.Double,
     name: java.lang.String = null
   ): VastAdExtensionChild = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes, value = value.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[VastAdExtensionChild]
   }

@@ -19,13 +19,8 @@ object MtfRenderer {
     release: js.Function0[scala.Unit],
     setMetafile: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): MtfRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createWithBitmapCanvas")(createWithBitmapCanvas)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setMetafile")(setMetafile)
+    val __obj = js.Dynamic.literal(acquire = acquire, createWithBitmapCanvas = createWithBitmapCanvas, draw = draw, queryInterface = queryInterface, release = release, setMetafile = setMetafile)
+  
     __obj.asInstanceOf[MtfRenderer]
   }
 }

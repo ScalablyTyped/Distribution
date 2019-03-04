@@ -12,8 +12,8 @@ trait Tile[C, P] extends js.Object {
 object Tile {
   @scala.inline
   def apply[C, P](features: js.Array[TileFeature[C, P]]): Tile[C, P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("features")(features)
+    val __obj = js.Dynamic.literal(features = features)
+  
     __obj.asInstanceOf[Tile[C, P]]
   }
 }

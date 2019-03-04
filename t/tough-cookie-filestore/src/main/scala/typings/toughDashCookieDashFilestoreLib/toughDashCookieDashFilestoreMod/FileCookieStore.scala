@@ -132,19 +132,8 @@ object FileCookieStore {
       scala.Unit
     ]
   ): FileCookieStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("findCookie")(findCookie)
-    __obj.updateDynamic("findCookies")(findCookies)
-    __obj.updateDynamic("idx")(idx)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("loadFromFile")(loadFromFile)
-    __obj.updateDynamic("putCookie")(putCookie)
-    __obj.updateDynamic("removeCookie")(removeCookie)
-    __obj.updateDynamic("removeCookies")(removeCookies)
-    __obj.updateDynamic("saveToFile")(saveToFile)
-    __obj.updateDynamic("synchronous")(synchronous)
-    __obj.updateDynamic("updateCookie")(updateCookie)
+    val __obj = js.Dynamic.literal(filePath = filePath, findCookie = findCookie, findCookies = findCookies, idx = idx, inspect = inspect, loadFromFile = loadFromFile, putCookie = putCookie, removeCookie = removeCookie, removeCookies = removeCookies, saveToFile = saveToFile, synchronous = synchronous, updateCookie = updateCookie)
+  
     __obj.asInstanceOf[FileCookieStore]
   }
 }

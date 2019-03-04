@@ -20,11 +20,8 @@ object ConnectionCosts {
     loadConnectionCosts: js.Function1[stdLib.Int16Array, scala.Unit],
     put: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
   ): ConnectionCosts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("loadConnectionCosts")(loadConnectionCosts)
-    __obj.updateDynamic("put")(put)
+    val __obj = js.Dynamic.literal(buffer = buffer, get = get, loadConnectionCosts = loadConnectionCosts, put = put)
+  
     __obj.asInstanceOf[ConnectionCosts]
   }
 }

@@ -26,14 +26,8 @@ object Anon_Approvals {
     tags: scala.Double,
     variables: scala.Double
   ): Anon_Approvals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approvals")(approvals)
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("manualInterventions")(manualInterventions)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(approvals = approvals, artifacts = artifacts, environments = environments, manualInterventions = manualInterventions, none = none, tags = tags, variables = variables)
+  
     __obj.asInstanceOf[Anon_Approvals]
   }
 }

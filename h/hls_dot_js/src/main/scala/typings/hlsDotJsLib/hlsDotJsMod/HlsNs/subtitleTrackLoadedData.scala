@@ -14,10 +14,8 @@ trait subtitleTrackLoadedData extends js.Object {
 object subtitleTrackLoadedData {
   @scala.inline
   def apply(details: LevelDetails, id: java.lang.String, stats: Stats): subtitleTrackLoadedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(details = details, id = id, stats = stats)
+  
     __obj.asInstanceOf[subtitleTrackLoadedData]
   }
 }

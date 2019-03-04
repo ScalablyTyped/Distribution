@@ -24,10 +24,7 @@ object Anon_Active {
     loaded: stdLib.Date = null,
     retain: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coords")(coords)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("el")(el)
+    val __obj = js.Dynamic.literal(coords = coords, current = current, el = el)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (loaded != null) __obj.updateDynamic("loaded")(loaded)
     if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)

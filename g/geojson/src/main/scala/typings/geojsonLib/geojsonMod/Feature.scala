@@ -32,9 +32,8 @@ object Feature {
     bbox: BBox = null,
     id: java.lang.String | scala.Double = null
   ): Feature[G, P] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature[G, P]]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashFlatMapDepth2x4[T] extends js.Object {
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`, depth: scala.Double): LodashFlatMapDepth2x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__, depth: scala.Double): LodashFlatMapDepth2x6[T] = js.native
   def apply[TResult](
     iteratee: js.Function1[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 

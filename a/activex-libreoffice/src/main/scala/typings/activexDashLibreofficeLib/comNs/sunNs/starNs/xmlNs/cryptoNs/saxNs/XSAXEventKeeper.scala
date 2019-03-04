@@ -115,21 +115,8 @@ object XSAXEventKeeper {
       activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler
     ]
   ): XSAXEventKeeper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentBlockingNode")(CurrentBlockingNode)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addBlocker")(addBlocker)
-    __obj.updateDynamic("addElementCollector")(addElementCollector)
-    __obj.updateDynamic("getCurrentBlockingNode")(getCurrentBlockingNode)
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("isBlocking")(isBlocking)
-    __obj.updateDynamic("printBufferNodeTree")(printBufferNodeTree)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeBlocker")(removeBlocker)
-    __obj.updateDynamic("removeElementCollector")(removeElementCollector)
-    __obj.updateDynamic("setElement")(setElement)
-    __obj.updateDynamic("setNextHandler")(setNextHandler)
+    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = acquire, addBlocker = addBlocker, addElementCollector = addElementCollector, getCurrentBlockingNode = getCurrentBlockingNode, getElement = getElement, isBlocking = isBlocking, printBufferNodeTree = printBufferNodeTree, queryInterface = queryInterface, release = release, removeBlocker = removeBlocker, removeElementCollector = removeElementCollector, setElement = setElement, setNextHandler = setNextHandler)
+  
     __obj.asInstanceOf[XSAXEventKeeper]
   }
 }

@@ -24,15 +24,8 @@ object NodesRefRect {
     top: scala.Double,
     width: scala.Double
   ): NodesRefRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bottom = bottom, dataset = dataset, height = height, id = id, left = left, right = right, top = top, width = width)
+  
     __obj.asInstanceOf[NodesRefRect]
   }
 }

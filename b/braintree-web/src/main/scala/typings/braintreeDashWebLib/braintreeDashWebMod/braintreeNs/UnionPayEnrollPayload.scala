@@ -19,9 +19,8 @@ trait UnionPayEnrollPayload extends js.Object {
 object UnionPayEnrollPayload {
   @scala.inline
   def apply(enrollmentId: java.lang.String, smsCodeRequired: scala.Boolean): UnionPayEnrollPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enrollmentId")(enrollmentId)
-    __obj.updateDynamic("smsCodeRequired")(smsCodeRequired)
+    val __obj = js.Dynamic.literal(enrollmentId = enrollmentId, smsCodeRequired = smsCodeRequired)
+  
     __obj.asInstanceOf[UnionPayEnrollPayload]
   }
 }

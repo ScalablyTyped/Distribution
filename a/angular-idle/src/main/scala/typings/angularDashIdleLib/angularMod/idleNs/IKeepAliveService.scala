@@ -39,11 +39,8 @@ object IKeepAliveService {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): IKeepAliveService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ping")(ping)
-    __obj.updateDynamic("setInterval")(setInterval)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(ping = ping, setInterval = setInterval, start = start, stop = stop)
+  
     __obj.asInstanceOf[IKeepAliveService]
   }
 }

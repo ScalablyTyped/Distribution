@@ -13,8 +13,7 @@ trait Anon_EncryptionOption extends js.Object {
 object Anon_EncryptionOption {
   @scala.inline
   def apply(encryptionOption: java.lang.String, kmsKey: java.lang.String = null): Anon_EncryptionOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptionOption")(encryptionOption)
+    val __obj = js.Dynamic.literal(encryptionOption = encryptionOption)
     if (kmsKey != null) __obj.updateDynamic("kmsKey")(kmsKey)
     __obj.asInstanceOf[Anon_EncryptionOption]
   }

@@ -19,10 +19,8 @@ object GraphLink {
     target: java.lang.String | GraphNode,
     `type`: java.lang.String
   ): GraphLink = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GraphLink]
   }
 }

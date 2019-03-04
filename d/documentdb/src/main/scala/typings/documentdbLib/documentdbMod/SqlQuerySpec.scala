@@ -15,9 +15,8 @@ trait SqlQuerySpec extends js.Object {
 object SqlQuerySpec {
   @scala.inline
   def apply(parameters: js.Array[SqlParameter], query: java.lang.String): SqlQuerySpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(parameters = parameters, query = query)
+  
     __obj.asInstanceOf[SqlQuerySpec]
   }
 }

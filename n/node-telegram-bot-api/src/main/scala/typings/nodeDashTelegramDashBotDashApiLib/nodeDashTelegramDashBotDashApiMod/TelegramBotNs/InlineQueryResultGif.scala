@@ -34,9 +34,8 @@ object InlineQueryResultGif {
     thumb_url: java.lang.String = null,
     title: java.lang.String = null
   ): InlineQueryResultGif = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("gif_url")(gif_url)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(gif_url = gif_url, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (gif_duration != null) __obj.updateDynamic("gif_duration")(gif_duration.asInstanceOf[js.Any])
     if (gif_height != null) __obj.updateDynamic("gif_height")(gif_height.asInstanceOf[js.Any])

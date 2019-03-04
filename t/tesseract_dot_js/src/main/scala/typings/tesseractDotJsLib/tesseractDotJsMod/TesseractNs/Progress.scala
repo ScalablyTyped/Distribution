@@ -14,9 +14,7 @@ trait Progress extends js.Object {
 object Progress {
   @scala.inline
   def apply(progress: scala.Double, status: java.lang.String, loaded: scala.Int | scala.Double = null): Progress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(progress = progress, status = status)
     if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }

@@ -20,11 +20,8 @@ object PublisherFacts {
     publisherId: java.lang.String,
     publisherName: java.lang.String
   ): PublisherFacts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("publisherId")(publisherId)
-    __obj.updateDynamic("publisherName")(publisherName)
+    val __obj = js.Dynamic.literal(displayName = displayName, flags = flags, publisherId = publisherId, publisherName = publisherName)
+  
     __obj.asInstanceOf[PublisherFacts]
   }
 }

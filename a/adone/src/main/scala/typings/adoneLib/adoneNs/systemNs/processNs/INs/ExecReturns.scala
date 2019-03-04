@@ -52,14 +52,7 @@ object ExecReturns {
     timedOut: scala.Boolean,
     signal: java.lang.String = null
   ): ExecReturns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmd")(cmd)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("killed")(killed)
-    __obj.updateDynamic("stderr")(stderr)
-    __obj.updateDynamic("stdout")(stdout)
-    __obj.updateDynamic("timedOut")(timedOut)
+    val __obj = js.Dynamic.literal(cmd = cmd, code = code, failed = failed, killed = killed, stderr = stderr, stdout = stdout, timedOut = timedOut)
     if (signal != null) __obj.updateDynamic("signal")(signal)
     __obj.asInstanceOf[ExecReturns]
   }
